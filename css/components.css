@@ -1,0 +1,51 @@
+/* Navigatie & Footer Components */
+
+/* Header & Nav */
+header {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+}
+
+nav.container {
+    display: flex;
+    align-items: center;
+}
+
+.language-left { margin-right: 2rem; }
+
+.nav-right-group {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    margin-left: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--medium-text);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.nav-links a:hover, .nav-links a.active { color: var(--bright-green); }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 3rem 0;
+    color: #999;
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border-color);
+    background: var(--white);
+}

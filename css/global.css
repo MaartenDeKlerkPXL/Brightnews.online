@@ -1,0 +1,75 @@
+/* Bright News - Global Styles & Variables */
+
+:root {
+    /* Kleurenpalet */
+    --bright-yellow: #FFD700;
+    --bright-green: #32CD32;
+    --white: #FFFFFF;
+    --light-bg: #F9F9F9;
+    --border-color: #EEEEEE;
+    --dark-text: #222222;
+    --medium-text: #555555;
+
+    /* Design Tokens */
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    --transition: all 0.3s ease;
+    --radius-lg: 20px;
+    --radius-md: 12px;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Algemene Tekst & Knoppen */
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background: var(--bright-green);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: var(--radius-md);
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background: #28a428;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: var(--white);
+    color: var(--dark-text);
+    border: 1px solid var(--border-color);
+    padding: 12px 25px;
+    border-radius: var(--radius-md);
+    font-weight: bold;
+    cursor: pointer;
+}
