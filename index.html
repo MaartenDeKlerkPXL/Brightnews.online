@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright News | Jouw Dagelijkse Dosis Positiviteit</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+<header>
+    <nav class="container">
+        <div class="logo">Bright<span>News</span></div>
+
+        <div class="nav-right-group">
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="over-ons.html">Over Ons</a></li>
+                <li><a href="abonnementen.html">Abonnementen</a></li>
+            </ul>
+                <a href="profiel.html" class="profile-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a>
+            </div>
+        <div class="nav-actions">
+            <div class="dropdown">
+                <button class="dropbtn">🌐 Taal</button>
+                <div class="dropdown-content">
+                    <a href="#" data-lang="nl">🇳🇱 Nederlands</a>
+                    <a href="#" data-lang="en">🇺🇸 English</a>
+                    <a href="#" data-lang="de">🇩🇪 Deutsch</a>
+                    <a href="#" data-lang="fr">🇫🇷 Français</a>
+                    <a href="#" data-lang="es">🇪🇸 Español</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="container">
+    <section id="hero">
+        <h1>Positief nieuws, elke dag om 12:00.</h1>
+        <p id="update-timer">Volgende update verschijnt om 12:00 uur (Amsterdam tijd).</p>
+    </section>
+
+    <section id="news-grid" class="grid">
+        <div class="loader">Laden van positief nieuws...</div>
+    </section>
+</main>
+
+<footer class="container">
+    <p>&copy; 2024 Bright News - Lead AI & Frontend Architectuur.</p>
+</footer>
+
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
