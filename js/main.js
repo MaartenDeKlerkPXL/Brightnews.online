@@ -58,18 +58,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     console.log('Navigatie geïnitialiseerd 🚀');
 });
-//js/main.js
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Happy developing ✨');
-
+    // Taal selectie afhandelen
     const langLinks = document.querySelectorAll('.dropdown-content a');
-
     langLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
-            const selectedLang = link.getAttribute('data-lang');
-            console.log(`Taal gewijzigd naar: ${selectedLang}`);
-            // Hier kun je de fetch aanroepen voor je JSON data
+            const lang = link.getAttribute('data-lang');
+            console.log('Geselecteerde taal:', lang);
+            // Hier kun je de logica toevoegen om de juiste news.json te laden
         });
     });
+
+    console.log('Navigatie succesvol aangepast: Taal links, Nav wit. 🚀');
 });

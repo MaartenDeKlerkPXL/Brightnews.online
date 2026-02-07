@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account ✨ Bright News</title>
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+<header>
+    <nav class="container">
+        <div class="dropdown language-left">
+            <button class="dropbtn">🌐 Taal</button>
+            <div class="dropdown-content">
+                <a href="#" data-lang="nl">🇳🇱 Nederlands</a>
+                <a href="#" data-lang="en">🇺🇸 English</a>
+                <a href="#" data-lang="de">🇩🇪 Deutsch</a>
+                <a href="#" data-lang="fr">🇫🇷 Français</a>
+                <a href="#" data-lang="es">🇪🇸 Español</a>
+            </div>
+        </div>
+        <div class="logo">Bright<span>News</span></div>
+        <div class="nav-right-group">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="over-ons.html">Over Ons</a></li>
+                <li><a href="abonnementen.html">Abonnementen</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="profiel.html" class="profile-icon active-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="auth-container">
+    <div class="auth-box">
+        <div id="login-form" class="form-container">
+            <h2>Welkom terug! 😊</h2>
+            <p>Log in voor jouw persoonlijke dosis positiviteit.</p>
+            <form>
+                <div class="input-group">
+                    <label>E-mailadres</label>
+                    <input type="email" placeholder="naam@voorbeeld.nl" required>
+                </div>
+                <div class="input-group">
+                    <label>Wachtwoord</label>
+                    <input type="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn-primary full-width">Inloggen</button>
+            </form>
+            <p class="auth-switch">Nog geen account? <a href="#" id="show-register">Maak er eentje aan</a></p>
+        </div>
+
+        <div id="register-form" class="form-container hidden">
+            <h2>Word een Bright Member! ✨</h2>
+            <p>Sluit je aan bij de community van optimisten.</p>
+            <form>
+                <div class="input-group">
+                    <label>Naam</label>
+                    <input type="text" placeholder="Jouw naam" required>
+                </div>
+                <div class="input-group">
+                    <label>E-mailadres</label>
+                    <input type="email" placeholder="naam@voorbeeld.nl" required>
+                </div>
+                <div class="input-group">
+                    <label>Wachtwoord</label>
+                    <input type="password" placeholder="Kies een sterk wachtwoord" required>
+                </div>
+                <button type="submit" class="btn-primary full-width">Account aanmaken</button>
+            </form>
+            <p class="auth-switch">Al een account? <a href="#" id="show-login">Log hier in</a></p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>Happy developing ✨ | Bright News 2026</p>
+</footer>
+
+<script src="js/auth.js"></script>
+</body>
+</html>
