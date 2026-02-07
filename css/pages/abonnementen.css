@@ -1,0 +1,186 @@
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Zorgt dat de middelste kaart 'omhoog' springt */
+    gap: 24px;
+    padding: 80px 0;
+    flex-wrap: wrap;
+}
+.pricing-intro {
+    padding: 150px 0 40px;
+    text-align: center;
+}
+
+.price-card {
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 48px 32px;
+    width: 340px;
+    text-align: center;
+    position: relative;
+    transition: var(--transition);
+}
+
+/* Populair pakket accent */
+.price-card.popular {
+    border: 2.5px solid var(--bright-green);
+    box-shadow: var(--shadow-md);
+    padding: 60px 32px; /* Iets groter */
+}
+
+.popular-badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bright-green);
+    color: var(--white);
+    padding: 6px 18px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.price-amount {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 20px 0 30px;
+}
+
+.price-amount span {
+    font-size: 1.1rem;
+    color: var(--medium-text);
+    font-weight: 400;
+}
+
+.feature-list {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.feature-list li {
+    padding: 8px 0;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature-list li.disabled {
+    color: #C0C0C0;
+    text-decoration: line-through;
+}
+.pricing-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 160px); /* Nav (80px) + Footer (80px) */
+    padding: 20px 0;
+}
+
+.pricing-intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pricing-intro h1 {
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
+}
+
+/* De Kaarten (Compact & Netjes) */
+.price-card {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 30px 25px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.price-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.price-amount {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: var(--dark-text);
+}
+
+.price-amount span {
+    font-size: 0.9rem;
+    color: var(--medium-text);
+}
+
+/* Lijstjes opschonen (geen bolletjes meer) */
+.feature-list {
+    list-style: none; /* Verwijdert de bolletjes uit je screenshot */
+    padding: 0;
+    margin: 0 0 30px 0;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.feature-list li {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature-list li.disabled {
+    color: #bbb;
+    opacity: 0.7;
+}
+
+/* Knoppen onderin uitlijnen */
+.price-card button {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.9rem;
+}
+
+/* Populair Accent */
+.price-card.popular {
+    border: 2px solid var(--bright-green);
+    background-color: #fafffa;
+}
+
+.popular-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bright-green);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    white-space: nowrap;
+}

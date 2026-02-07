@@ -1,75 +1,122 @@
-/* Bright News - Global Styles & Variables */
+/* =========================================
+   Bright News - Global Foundation
+   Bevat variabelen, resets en basisstijlen.
+   Happy developing ✨
+   ========================================= */
 
+/* 1. Design Tokens (Variabelen) */
 :root {
-    /* Kleurenpalet */
-    --bright-yellow: #FFD700;
-    --bright-green: #32CD32;
+    /* Kleurenpalet - Positief & Fris */
+    --bright-green: #32CD32;      /* De kleur van groei en positiviteit */
+    --bright-yellow: #FFD700;     /* De kleur van de zon */
     --white: #FFFFFF;
-    --light-bg: #F9F9F9;
-    --border-color: #EEEEEE;
-    --dark-text: #222222;
-    --medium-text: #555555;
+    --light-bg: #F8FBF8;          /* Hele zachte groene tint in de achtergrond */
+    --border-color: #E8EEE8;
+    --dark-text: #1A1A1A;         /* Bijna zwart voor optimaal leescomfort */
+    --medium-text: #505F50;       /* Donkergrijs met een vleugje groen */
 
-    /* Design Tokens */
-    --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    --transition: all 0.3s ease;
-    --radius-lg: 20px;
+    /* Spatiëring & Vormen */
+    --radius-lg: 24px;
     --radius-md: 12px;
+    --radius-sm: 8px;
+
+    /* Effecten */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+    --shadow-md: 0 10px 25px rgba(50, 205, 50, 0.08);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Reset */
-* {
+/* 2. De Grote Schoonmaak (Reset) */
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 3. Basis Instellingen */
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Inter', -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     background-color: var(--light-bg);
     color: var(--dark-text);
     line-height: 1.6;
     overflow-x: hidden;
 }
 
+/* 4. Layout Container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 24px;
 }
 
-/* Algemene Tekst & Knoppen */
-h1, h2, h3 {
+/* 5. Typografie */
+h1, h2, h3, h4 {
+    color: var(--dark-text);
+    font-weight: 800;
     line-height: 1.2;
+    margin-bottom: 1rem;
 }
 
-a {
-    text-decoration: none;
-    transition: var(--transition);
+p {
+    margin-bottom: 1.5rem;
 }
 
+/* 6. Algemene Knoppen */
 .btn-primary {
-    background: var(--bright-green);
-    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bright-green);
+    color: var(--white);
     border: none;
-    padding: 12px 25px;
+    padding: 14px 28px;
     border-radius: var(--radius-md);
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 1rem;
     cursor: pointer;
     transition: var(--transition);
+    text-align: center;
 }
 
 .btn-primary:hover {
-    background: #28a428;
+    background-color: #2BB52B;
     transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(50, 205, 50, 0.3);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
 }
 
 .btn-secondary {
-    background: var(--white);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
     color: var(--dark-text);
-    border: 1px solid var(--border-color);
-    padding: 12px 25px;
+    border: 2px solid var(--border-color);
+    padding: 12px 26px;
     border-radius: var(--radius-md);
-    font-weight: bold;
+    font-weight: 600;
     cursor: pointer;
+    transition: var(--transition);
 }
+
+.btn-secondary:hover {
+    background-color: var(--white);
+    border-color: var(--bright-green);
+    color: var(--bright-green);
+}
+
+/* 7. Utility Classes */
+.text-center { text-align: center; }
+.mt-1 { margin-top: 1rem; }
+.mt-2 { margin-top: 2rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }

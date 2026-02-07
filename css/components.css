@@ -1,6 +1,11 @@
-/* Navigatie & Footer Components */
+/* =========================================
+   Bright News - Shared Components
+   Navigation (Header) & Footer
+   Happy developing ✨
+   ========================================= */
 
-/* Header & Nav */
+/* --- 1. NAVIGATIE (HEADER) --- */
+
 header {
     background-color: var(--white);
     border-bottom: 1px solid var(--border-color);
@@ -8,44 +13,182 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-sm);
 }
 
 nav.container {
     display: flex;
     align-items: center;
+    justify-content: flex-start; /* Essentieel voor de taal-switcher links */
 }
 
-.language-left { margin-right: 2rem; }
+/* Taal Dropdown (Helemaal links) */
+.language-left {
+    margin-right: 2rem;
+}
 
+.dropbtn {
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    padding: 8px 14px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition);
+}
+
+.dropbtn:hover {
+    background-color: #EEF5EE;
+    border-color: var(--bright-green);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--white);
+    min-width: 170px;
+    box-shadow: var(--shadow-md);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    margin-top: 8px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.dropdown-content a {
+    color: var(--dark-text);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--light-bg);
+    color: var(--bright-green);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--dark-text);
+    letter-spacing: -1px;
+    user-select: none;
+}
+
+.logo span {
+    color: var(--bright-green);
+}
+
+/* Rechtergroep (Links + Profiel) */
 .nav-right-group {
     display: flex;
     align-items: center;
     gap: 2.5rem;
-    margin-left: auto;
+    margin-left: auto; /* Push alles naar de rechterkant */
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 1.5rem;
+    gap: 1.8rem;
 }
 
 .nav-links a {
     text-decoration: none;
     color: var(--medium-text);
     font-weight: 600;
+    font-size: 0.95rem;
+    transition: var(--transition);
+    position: relative;
+}
+
+/* Hover effect voor nav links */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--bright-green);
     transition: var(--transition);
 }
 
-.nav-links a:hover, .nav-links a.active { color: var(--bright-green); }
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
 
-/* Footer */
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--bright-green);
+}
+
+/* Profiel Icoon */
+.profile-icon {
+    color: var(--dark-text);
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.profile-icon:hover {
+    color: var(--bright-green);
+    transform: scale(1.1);
+}
+
+/* --- 2. FOOTER --- */
+
 footer {
-    text-align: center;
-    padding: 3rem 0;
-    color: #999;
-    font-size: 0.9rem;
+    background-color: var(--white);
     border-top: 1px solid var(--border-color);
-    background: var(--white);
+    padding: 40px 0;
+    text-align: center;
+    margin-top: auto; /* Handig voor 'sticky footers' */
+}
+
+footer p {
+    color: #99A199;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* --- 3. RESPONSIVE NAV --- */
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Op mobiel zou je hier een hamburger-menu kunnen toevoegen */
+    }
+
+    .nav-right-group {
+        gap: 1rem;
+    }
+
+    .language-left {
+        margin-right: 1rem;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
 }

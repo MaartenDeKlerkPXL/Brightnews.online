@@ -1,0 +1,65 @@
+.home-hero {
+    /* Ruimte boven verhoogd van 100px naar 150px voor meer afstand van de nav */
+    padding: 150px 0 80px;
+    text-align: center;
+    background: linear-gradient(180deg, var(--white) 0%, #FFFDE7 100%);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.home-hero h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem); /* Schaaalt mee met schermgrootte */
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.home-hero p {
+    font-size: 1.25rem;
+    color: var(--medium-text);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* News Grid */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 32px;
+    padding: 60px 0;
+}
+
+.news-card {
+    background-color: var(--white);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.news-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--bright-green);
+}
+
+.news-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+.news-card p {
+    font-size: 0.95rem;
+    color: var(--medium-text);
+    flex-grow: 1;
+}
+
+.card-tag {
+    display: inline-block;
+    color: var(--bright-green);
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}

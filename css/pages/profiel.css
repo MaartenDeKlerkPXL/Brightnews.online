@@ -1,0 +1,128 @@
+/* =========================================
+   Bright News - Auth (Login & Register)
+   Onderdeel van de modulaire CSS-structuur
+   ========================================= */
+
+/* 1. Container & Layout */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 160px); /* Vult scherm minus nav/footer */
+    padding: 40px 20px;
+    background: linear-gradient(180deg, var(--white) 0%, #f0fff0 100%); /* Zachte groene gloed onderin */
+}
+
+.auth-box {
+    background: var(--white);
+    padding: 50px 40px;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 480px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* 2. Tekst & Koppen */
+.form-container h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+    color: var(--dark-text);
+    letter-spacing: -0.5px;
+}
+
+.form-container p {
+    color: var(--medium-text);
+    margin-bottom: 35px;
+    font-size: 1rem;
+}
+
+/* 3. Formulier Elementen */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--dark-text);
+    padding-left: 4px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1.5px solid var(--border-color);
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    font-family: inherit;
+    transition: var(--transition);
+    background-color: #fafafa;
+}
+
+/* Interactie: Focus op input */
+.input-group input:focus {
+    outline: none;
+    border-color: var(--bright-green);
+    background-color: var(--white);
+    box-shadow: 0 0 0 4px rgba(50, 205, 50, 0.1);
+}
+
+/* 4. Knoppen */
+.full-width {
+    width: 100%;
+    margin-top: 10px;
+    padding: 16px;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+/* 5. Wisselen tussen Login/Register */
+.auth-switch {
+    margin-top: 30px;
+    font-size: 0.95rem;
+    color: var(--medium-text);
+}
+
+.auth-switch a {
+    color: var(--bright-green);
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 5px;
+    border-bottom: 2px solid transparent;
+    transition: var(--transition);
+}
+
+.auth-switch a:hover {
+    border-bottom: 2px solid var(--bright-green);
+}
+
+/* 6. Utility Classes */
+.hidden {
+    display: none;
+}
+
+/* 7. Mobiele Aanpassingen */
+@media (max-width: 480px) {
+    .auth-box {
+        padding: 40px 25px;
+        box-shadow: none; /* Cleaner op mobiel */
+        border: none;
+        background: transparent;
+    }
+
+    .auth-container {
+        background: var(--white);
+        align-items: flex-start;
+    }
+}
