@@ -3,6 +3,7 @@
     "@google/generative-ai": "^0.24.1",
     "axios": "^1.13.5",
     "dotenv": "^17.2.4",
+    "fs-extra": "^11.3.3",
     "rss-parser": "^3.13.0",
     "sentiment": "^5.0.2"
   }
