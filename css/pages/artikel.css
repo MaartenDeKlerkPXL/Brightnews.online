@@ -1,0 +1,113 @@
+/* =========================================
+   Bright News - Artikel Detail Pagina
+   Gefocust op rust, leesbaarheid en design
+   ========================================= */
+
+/* 1. Container & Layout */
+.article-container {
+    max-width: 850px; /* Iets breder voor een rustige witruimte */
+    margin: 0 auto;
+    padding: 140px 20px 80px; /* 140px boven zorgt voor ruimte onder de nav */
+    position: relative; /* Zorgt dat alles normaal scrollt */
+}
+
+/* 2. Het Witte Vlak (De Artikel Kaart) */
+.full-article {
+    background-color: var(--white);
+    padding: 60px; /* Ruime padding voor een luxe gevoel */
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-md);
+    position: relative;
+    z-index: 1; /* Zorgt dat het niet over de nav heen gaat */
+}
+
+/* 3. Artikel Header (Bovenzijde) */
+.article-header {
+    margin-bottom: 40px;
+    text-align: left;
+    position: static; /* Forceert dat de titel gewoon mee naar boven scrollt */
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--medium-text);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    transition: var(--transition);
+}
+
+.back-link:hover {
+    color: var(--bright-green);
+    transform: translateX(-5px);
+}
+
+.article-header h1 {
+    font-size: clamp(2.2rem, 6vw, 3.2rem);
+    line-height: 1.15;
+    margin-bottom: 24px;
+    color: var(--dark-text);
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: var(--medium-text);
+    border-top: 1px solid var(--border-color);
+    padding-top: 25px;
+}
+
+/* 4. De Body Tekst */
+.article-body {
+    font-size: 1.15rem;
+    line-height: 1.85;
+    color: var(--dark-text);
+}
+
+.article-body .lead {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    color: #111;
+}
+
+.article-body p {
+    margin-bottom: 28px;
+}
+
+/* 5. Blockquote (Het inspirerende citaat) */
+.article-body blockquote {
+    margin: 50px 0;
+    padding: 20px 0 20px 40px;
+    border-left: 5px solid var(--bright-green);
+    font-size: 1.7rem;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--dark-text);
+    line-height: 1.4;
+    background-color: #f9fff9; /* Heel lichtgroene glans achter de quote */
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+/* 6. Mobiele Aanpassingen */
+@media (max-width: 768px) {
+    .article-container {
+        padding-top: 100px;
+    }
+
+    .full-article {
+        padding: 40px 25px;
+        border-radius: 0; /* Op mobiel vaak mooier zonder ronde hoeken */
+        border: none;
+        box-shadow: none;
+    }
+
+    .article-header h1 {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,44 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "category": "Innovatie",
+      "title": "Oceanen sneller schoon dan ooit",
+      "summary": "Een nieuwe technologie uit Nederland zorgt ervoor dat we plastic sneller kunnen opruimen dan ooit tevoren.",
+      "source": "nu.nl",
+      "url": "artikel.html"
+    },
+    {
+      "id": 2,
+      "category": "Natuur",
+      "title": "Recordaantal jonge zeehonden geteld",
+      "summary": "In de Waddenzee zijn dit jaar meer jonge zeehonden geboren dan in de afgelopen tien jaar.",
+      "source": "nos.nl",
+      "url": "artikel.html"
+    },
+    {
+      "id": 3,
+      "category": "Energie",
+      "title": "Zonne-energie nu goedkoopste stroombron",
+      "summary": "Nieuwe cijfers tonen aan dat investeren in zonneparken nu rendabeler is dan fossiele brandstoffen.",
+      "source": "rtlnieuws.nl",
+      "url": "artikel.html"
+    },
+    {
+      "id": 4,
+      "category": "Samenleving",
+      "title": "Buurtinitiatief vermindert eenzaamheid",
+      "summary": "In Eindhoven heeft een simpel 'koffie-uurtje' geleid tot sterke sociale banden in de hele wijk.",
+      "source": "ed.nl",
+      "url": "artikel.html"
+    },
+    {
+      "id": 5,
+      "category": "Techniek",
+      "title": "Slimme bril helpt slechtzienden weer zien",
+      "summary": "Een nieuwe wearable maakt gebruik van AI om de omgeving live te beschrijven voor de gebruiker.",
+      "source": "bright.nl",
+      "url": "artikel.html"
+    }
+  ]
+}

@@ -26,9 +26,9 @@
 
         <div class="nav-right-group">
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="over-ons.html">Over Ons</a></li>
-                <li><a href="abonnementen.html">Abonnementen</a></li>
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="over-ons.html" data-i18n="nav_about">Over Ons</a></li>
+                    <li><a href="abonnementen.html" data-i18n="nav_subs">Abonnementen</a></li>
             </ul>
 
             <div class="nav-actions">
@@ -44,14 +44,10 @@
 </header>
 
 <main class="container">
-    <section id="hero">
-        <h1>Positief nieuws, elke dag om 12:00.</h1>
-        <p id="update-timer">Volgende update verschijnt om 12:00 uur (Amsterdam tijd).</p>
+    <section class="news-grid container" id="news-grid">
     </section>
 
-    <section id="news-grid" class="grid">
-        <div class="loader">Laden van positief nieuws...</div>
-    </section>
+    <script src="js/main.js"></script>
 </main>
 
 <footer class="container">
