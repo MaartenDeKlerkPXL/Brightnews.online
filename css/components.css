@@ -93,6 +93,7 @@ nav.container {
     color: var(--dark-text);
     letter-spacing: -1px;
     user-select: none;
+    margin-left: 2rem;
 }
 
 .logo span {
@@ -192,66 +193,75 @@ footer p {
         font-size: 1.3rem;
     }
 }
-/* De container */
+
+/* De wrapper */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-/* De knop in de 'oude' ronde styling */
+/* De knop: kleiner en rond (pill-vorm) */
 .dropbtn {
     background-color: white;
     color: #0284c7;
-    padding: 10px 25px; /* Iets breder voor de ronde look */
-    font-size: 16px;
-    font-weight: bold;
+    padding: 6px 16px; /* Kleiner gemaakt voor nav-bar look */
+    font-size: 14px;   /* Iets kleiner font */
+    font-weight: 600;
     border: 2px solid #0284c7;
-    border-radius: 30px; /* Mooie ronde pill-vorm */
+    border-radius: 20px; /* Mooie ronde vorm */
     cursor: pointer;
-    transition: all 0.3s ease;
-    min-width: 160px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.arrow {
+    font-size: 10px; /* Pijltje iets subtieler */
+    transition: transform 0.3s;
+}
+
+/* Draai het pijltje als je eroverheen hovert */
+.dropdown:hover .arrow {
+    transform: rotate(180deg);
 }
 
 .dropbtn:hover {
     background-color: #f0f9ff;
-    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.15);
 }
 
-/* De lijst met talen */
+/* De dropdown inhoud */
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: white;
-    min-width: 180px;
-    box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
     z-index: 100;
-    border-radius: 15px; /* Ook ronde hoeken voor de lijst */
+    border-radius: 12px;
 
-    /* DE FIX: Dit zorgt dat de lijst strak tegen de knop aan zit */
-    top: 100%;
+    /* DE FIX: Plaats hem iets hoger zodat hij de knop overlapt */
+    top: calc(100% - 2px);
     left: 0;
-    padding: 10px 0; /* Ruimte binnen de lijst */
-    margin-top: 0;   /* Geen gat meer! */
+    padding: 8px 0;
 }
 
-/* Een extra onzichtbare brug voor de veiligheid */
+/* Extra onzichtbaar blokje om de hover-brug te garanderen */
 .dropdown-content::before {
     content: "";
     position: absolute;
-    top: -15px;
+    top: -10px;
     left: 0;
     width: 100%;
-    height: 15px;
-    background: transparent;
+    height: 10px;
 }
 
 .dropdown-content a {
     color: #333;
-    padding: 12px 20px;
+    padding: 10px 16px;
     text-decoration: none;
     display: block;
-    font-size: 15px;
-    transition: 0.2s;
+    font-size: 14px;
 }
 
 .dropdown-content a:hover {
@@ -259,7 +269,63 @@ footer p {
     color: #0284c7;
 }
 
-/* Menu tonen bij hover */
+/* Tonen bij hover op de container */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content {
+    /* ... je andere styles ... */
+    top: 90%; /* Zet hem iets hoger zodat hij de knop overlapt */
+    padding-top: 10px; /* Maak een onzichtbaar gebied voor je muis */
+}
+/* De hoofdcontainer die alles bij elkaar houdt */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Compacte ronde knop */
+.dropbtn {
+    background-color: white;
+    color: #0284c7;
+    padding: 6px 14px; /* Nav-bar formaat */
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid #0284c7;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* De dropdown inhoud */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    z-index: 100;
+    border-radius: 12px;
+    top: 100%; /* Direct onder de knop */
+    left: 0;
+    margin-top: 0;
+    padding: 8px 0;
+}
+
+/* DE CRUCIALE FIX: De onzichtbare brug */
+.dropdown-content::before {
+    content: "";
+    position: absolute;
+    top: -15px; /* Dit vult het gat boven het menu op */
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: transparent;
+}
+
+/* Zorg dat het menu open blijft zolang je in de .dropdown container bent */
 .dropdown:hover .dropdown-content {
     display: block;
 }
