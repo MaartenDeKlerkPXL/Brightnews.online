@@ -5,79 +5,80 @@ require('dotenv').config();
 
 const parser = new RSSParser();
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-
-// We gebruiken 'gemini-flash-latest' uit jouw lijst voor een stabielere quota
 const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-// Alleen de NU.nl Goed Nieuws feed
+// Voeg hier zoveel feeds toe als je wilt!
 const FEEDS = [
-    'https://www.nu.nl/rss/goed-nieuws'
+    'https://www.nu.nl/rss/goed-nieuws',
+    'http://feeds.bbci.co.uk/news/world/rss.xml',
+    'https://www.positive.news/feed/'
 ];
 
 async function processNews() {
-    let allBrightNews = [];
+    // We maken aparte lijsten voor elke taal
+    let languages = {
+        nl: [],
+        en: [],
+        fr: [],
+        de: []
+    };
+
+    const seenLinks = new Set(); // Om dubbele artikelen te voorkomen
 
     for (const url of FEEDS) {
-        console.log(`\n\x1b[36m%s\x1b[0m`, `--- Bron: ${url} ---`);
+        console.log(`\n--- Scannen: ${url} ---`);
         try {
             const feed = await parser.parseURL(url);
 
-            // We pakken de 10 nieuwste artikelen
-            for (const item of feed.items.slice(0, 10)) {
-                console.log(`Analyse: ${item.title.substring(0, 60)}...`);
+            for (const item of feed.items.slice(0, 5)) {
+                if (seenLinks.has(item.link)) continue;
+                seenLinks.add(item.link);
+
+                console.log(`Analyse: ${item.title.substring(0, 50)}...`);
 
                 const prompt = `
-                    Je bent de redacteur van Bright News. Analyseer dit bericht:
-                    Titel: "${item.title}"
-                    Beschrijving: "${item.contentSnippet || ''}"
-                    
-                    Vraag: Is dit positief of hoopgevend? 
-                    Antwoord strikt in JSON: {"isBright": true, "summary": "Korte NL samenvatting max 15 woorden"}
+                    Analyseer dit bericht: "${item.title}"
+                    Is dit positief of hoopgevend? 
+                    Zo ja, maak een samenvatting (max 15 woorden) in 4 talen.
+                    Antwoord strikt in JSON: 
+                    {"isBright": true, "nl": "..", "en": "..", "fr": "..", "de": ".."}
+                    Indien niet positief: {"isBright": false}
                 `;
 
                 try {
                     const result = await model.generateContent(prompt);
                     const response = await result.response;
-                    const text = response.text().replace(/```json|```/g, "").trim();
-                    const aiResponse = JSON.parse(text);
+                    const data = JSON.parse(response.text().replace(/```json|```/g, "").trim());
 
-                    if (aiResponse.isBright) {
-                        console.log(`  ✅ Bright News!`);
-                        allBrightNews.push({
-                            date: new Date().toISOString(),
-                            link: item.link,
-                            title: aiResponse.summary
+                    if (data.isBright) {
+                        console.log("  ✅ Toegevoegd in 4 talen!");
+                        // Voeg de vertaling toe aan de juiste lijst
+                        Object.keys(languages).forEach(lang => {
+                            languages[lang].push({
+                                date: new Date().toISOString(),
+                                title: data[lang],
+                                link: item.link
+                            });
                         });
-                    } else {
-                        console.log(`  ❌ Filter: Niet positief genoeg.`);
                     }
                 } catch (err) {
-                    // Hier printen we nu de ECHTE foutmelding voor debugging
-                    console.error(`  ⚠️ AI Fout: ${err.message.substring(0, 100)}`);
-
-                    if (err.message.includes("429")) {
-                        console.log("  (Quota bereikt, we wachten 30 seconden...)");
-                        await sleep(30000);
-                    }
+                    console.error("  ⚠️ Overslaan wegens fout of limiet.");
                 }
-
-                // Altijd 4 seconden wachten om de 429-fout te voorkomen
-                await sleep(4000);
+                await sleep(4000); // Respecteer de rate limit
             }
         } catch (err) {
-            console.error(`Kon feed niet laden: ${err.message}`);
+            console.error(`  ❌ Feed kon niet worden geladen.`);
         }
     }
 
-    if (allBrightNews.length > 0) {
-        await fs.ensureDir('./data');
-        await fs.outputJson('./data/news_nl.json', allBrightNews, { spaces: 2 });
-        console.log(`\n\x1b[32mKlaar! ${allBrightNews.length} artikelen opgeslagen in news_nl.json\x1b[0m`);
-    } else {
-        console.log("\nGeen nieuwe artikelen kunnen verwerken.");
+    // Sla voor elke taal een apart bestand op
+    for (const [lang, news] of Object.entries(languages)) {
+        await fs.outputJson(`./data/news_${lang}.json`, news, { spaces: 2 });
     }
+
+    console.log(`\n🚀 Klaar! Bestanden bijgewerkt voor NL, EN, FR en DE.`);
 }
 
 processNews();
