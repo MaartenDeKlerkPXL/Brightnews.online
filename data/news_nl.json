@@ -1,44 +1,42 @@
-{
-  "articles": [
-    {
-      "id": 1,
-      "category": "Innovatie",
-      "title": "Oceanen sneller schoon dan ooit",
-      "summary": "Een nieuwe technologie uit Nederland zorgt ervoor dat we plastic sneller kunnen opruimen dan ooit tevoren.",
-      "source": "nu.nl",
-      "url": "artikel.html"
-    },
-    {
-      "id": 2,
-      "category": "Natuur",
-      "title": "Recordaantal jonge zeehonden geteld",
-      "summary": "In de Waddenzee zijn dit jaar meer jonge zeehonden geboren dan in de afgelopen tien jaar.",
-      "source": "nos.nl",
-      "url": "artikel.html"
-    },
-    {
-      "id": 3,
-      "category": "Energie",
-      "title": "Zonne-energie nu goedkoopste stroombron",
-      "summary": "Nieuwe cijfers tonen aan dat investeren in zonneparken nu rendabeler is dan fossiele brandstoffen.",
-      "source": "rtlnieuws.nl",
-      "url": "artikel.html"
-    },
-    {
-      "id": 4,
-      "category": "Samenleving",
-      "title": "Buurtinitiatief vermindert eenzaamheid",
-      "summary": "In Eindhoven heeft een simpel 'koffie-uurtje' geleid tot sterke sociale banden in de hele wijk.",
-      "source": "ed.nl",
-      "url": "artikel.html"
-    },
-    {
-      "id": 5,
-      "category": "Techniek",
-      "title": "Slimme bril helpt slechtzienden weer zien",
-      "summary": "Een nieuwe wearable maakt gebruik van AI om de omgeving live te beschrijven voor de gebruiker.",
-      "source": "bright.nl",
-      "url": "artikel.html"
-    }
-  ]
-}
+[
+  {
+    "date": "2026-02-08T20:43:19.810Z",
+    "link": "https://www.nu.nl/binnenland/6384800/dankzij-bevolkingsonderzoek-krijgen-minder-mensen-de-diagnose-darmkanker.html",
+    "title": "Succesvol bevolkingsonderzoek leidt tot onverwachte daling diagnoses darmkanker."
+  },
+  {
+    "date": "2026-02-08T20:43:27.336Z",
+    "link": "https://www.nu.nl/wetenschap/6383996/universiteit-doet-test-met-ai-hologram-als-docent-rechtsgeschiedenis.html",
+    "title": "AI-hologram fungeert als virtuele docent rechtsgeschiedenis: een veelbelovende educatieve test."
+  },
+  {
+    "date": "2026-02-08T20:43:34.545Z",
+    "link": "https://www.nu.nl/goed-nieuws/6383451/nfi-kan-fatale-overdosis-morfine-nu-ook-opsporen-bij-wie-al-maanden-dood-is.html",
+    "title": "NFI-doorbraak: forensische wetenschap spoort morfine-overdosis nu maanden na overlijden op."
+  },
+  {
+    "date": "2026-02-08T20:43:41.586Z",
+    "link": "https://www.nu.nl/goed-nieuws/6383464/smartwatches-kunnen-helpen-bij-opsporen-hartritmestoornissen-sneller-ingrijpen.html",
+    "title": "Smartwatches sporen vroegtijdig hartritmestoornissen op, wat snelle medische interventie mogelijk maakt."
+  },
+  {
+    "date": "2026-02-08T20:43:48.785Z",
+    "link": "https://www.nu.nl/gezondheid/6382862/ziekenhuis-in-geldrop-plaatst-als-eerste-ter-wereld-3d-geprinte-heup-bij-mens.html",
+    "title": "Eerste 3D-geprinte heupimplantatie ter wereld is een doorbraak voor heupdysplasiepatiënten."
+  },
+  {
+    "date": "2026-02-08T20:43:55.755Z",
+    "link": "https://www.nu.nl/binnenland/6382719/crematorium-enschede-gaat-eerste-crematies-met-waterstof-ter-wereld-uitvoeren.html",
+    "title": "Crematorium Enschede is wereldwijd de eerste met schone crematies op waterstof."
+  },
+  {
+    "date": "2026-02-08T20:44:38.021Z",
+    "link": "https://www.nu.nl/goed-nieuws/6382717/aantal-woninginbraken-op-laagste-niveau-sinds-start-metingen.html",
+    "title": "Het aantal woninginbraken bereikte in 2025 een historisch dieptepunt sinds de start van de metingen."
+  },
+  {
+    "date": "2026-02-08T20:44:53.142Z",
+    "link": "https://www.nu.nl/goed-nieuws/6381831/waarom-taakstraf-soms-beter-is-dan-cel-vertrekken-als-ander-persoon.html",
+    "title": "Taakstraf is vaak beter dan cel, gericht op re-integratie en persoonlijke verbetering."
+  }
+]

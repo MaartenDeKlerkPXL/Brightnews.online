@@ -5,67 +5,79 @@ require('dotenv').config();
 
 const parser = new RSSParser();
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
+// We gebruiken 'gemini-flash-latest' uit jouw lijst voor een stabielere quota
+const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
+
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+// Alleen de NU.nl Goed Nieuws feed
 const FEEDS = [
-    'https://feeds.nos.nl/nosnieuwsalgemeen',
-    'http://feeds.bbci.co.uk/news/rss.xml'
+    'https://www.nu.nl/rss/goed-nieuws'
 ];
 
 async function processNews() {
     let allBrightNews = [];
 
     for (const url of FEEDS) {
-        console.log(`\x1b[36m%s\x1b[0m`, `Bezig met ophalen: ${url}`);
+        console.log(`\n\x1b[36m%s\x1b[0m`, `--- Bron: ${url} ---`);
         try {
             const feed = await parser.parseURL(url);
 
-            for (const item of feed.items.slice(0, 10)) { // We checken de top 10 voor meer kans op succes
+            // We pakken de 10 nieuwste artikelen
+            for (const item of feed.items.slice(0, 10)) {
+                console.log(`Analyse: ${item.title.substring(0, 60)}...`);
+
                 const prompt = `
-                    Analyseer dit nieuwsbericht: "${item.title} - ${item.contentSnippet}"
-                    Is dit positief, hoopgevend of constructief nieuws? 
-                    Zo ja, maak een korte samenvatting (max 20 woorden) en vertaal deze naar NL, EN, DE, FR.
-                    Antwoord strikt en uitsluitend in dit JSON formaat: 
-                    {"isBright": true, "nl": "...", "en": "...", "de": "...", "fr": "..."}
-                    Indien niet positief, antwoord dan: {"isBright": false}
+                    Je bent de redacteur van Bright News. Analyseer dit bericht:
+                    Titel: "${item.title}"
+                    Beschrijving: "${item.contentSnippet || ''}"
+                    
+                    Vraag: Is dit positief of hoopgevend? 
+                    Antwoord strikt in JSON: {"isBright": true, "summary": "Korte NL samenvatting max 15 woorden"}
                 `;
 
                 try {
                     const result = await model.generateContent(prompt);
-                    let text = result.response.text();
-
-                    // Schoonmaken van Gemini output (verwijdert eventuele markdown code blocks)
-                    text = text.replace(/```json|```/g, "").trim();
-
+                    const response = await result.response;
+                    const text = response.text().replace(/```json|```/g, "").trim();
                     const aiResponse = JSON.parse(text);
 
                     if (aiResponse.isBright) {
-                        console.log(`✅ Bright News gevonden: ${item.title}`);
+                        console.log(`  ✅ Bright News!`);
                         allBrightNews.push({
                             date: new Date().toISOString(),
-                            originalTitle: item.title,
                             link: item.link,
-                            content: aiResponse
+                            title: aiResponse.summary
                         });
+                    } else {
+                        console.log(`  ❌ Filter: Niet positief genoeg.`);
                     }
                 } catch (err) {
-                    console.error("Fout bij AI verwerking voor dit artikel.");
+                    // Hier printen we nu de ECHTE foutmelding voor debugging
+                    console.error(`  ⚠️ AI Fout: ${err.message.substring(0, 100)}`);
+
+                    if (err.message.includes("429")) {
+                        console.log("  (Quota bereikt, we wachten 30 seconden...)");
+                        await sleep(30000);
+                    }
                 }
+
+                // Altijd 4 seconden wachten om de 429-fout te voorkomen
+                await sleep(4000);
             }
         } catch (err) {
-            console.error(`Kon feed ${url} niet laden.`);
+            console.error(`Kon feed niet laden: ${err.message}`);
         }
     }
 
-    // Bestandsverwerking binnen de functie zodat 'allBrightNews' beschikbaar is
     if (allBrightNews.length > 0) {
-        await fs.ensureDir('./data'); // Zorgt dat de map bestaat
+        await fs.ensureDir('./data');
         await fs.outputJson('./data/news_nl.json', allBrightNews, { spaces: 2 });
-        console.log(`\x1b[32m%s\x1b[0m`, `Succes! ${allBrightNews.length} artikelen opgeslagen in news_nl.json`);
+        console.log(`\n\x1b[32mKlaar! ${allBrightNews.length} artikelen opgeslagen in news_nl.json\x1b[0m`);
     } else {
-        console.log("\x1b[33m%s\x1b[0m", "Proces voltooid, maar geen 'Bright' nieuws gevonden vandaag.");
+        console.log("\nGeen nieuwe artikelen kunnen verwerken.");
     }
 }
 
-// Start het proces
 processNews();
