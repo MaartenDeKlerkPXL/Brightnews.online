@@ -54,3 +54,34 @@ function renderLijst(artikelen) {
 
 // Start de eerste laadbeurt en vang eventuele errors op
 toonNieuws().catch(err => console.error(err));
+
+function renderLijst(artikelen) {
+    const container = document.getElementById('news-container');
+    const timeDisplay = document.getElementById('update-time');
+
+    container.innerHTML = '';
+
+    if (artikelen.length > 0) {
+        // Pak de datum van het nieuwste artikel
+        const laatsteUpdate = new Date(artikelen[0].date);
+        const tijdString = laatsteUpdate.toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' });
+        const datumString = laatsteUpdate.toLocaleDateString('nl-NL', { day: 'numeric', month: 'long' });
+
+        timeDisplay.innerHTML = `✨ Laatste scan: ${datumString} om ${tijdString}`;
+
+        artikelen.forEach(artikel => {
+            const card = document.createElement('div');
+            card.className = 'news-card';
+            card.innerHTML = `
+                <div class="card-tag">Bright News</div>
+                <h3>${artikel.title}</h3>
+                <div class="card-footer">
+                    <a href="${artikel.link}" target="_blank" class="read-more">Lees meer →</a>
+                </div>
+            `;
+            container.appendChild(card);
+        });
+    } else {
+        timeDisplay.innerHTML = "❌ Geen nieuws gevonden voor deze taal.";
+    }
+}

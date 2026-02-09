@@ -35,5 +35,6 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add data/*.json
-          git commit -m "🤖 Automatische nieuws update: $(date)" || echo "Geen wijzigingen om te committen"
+        # VOEG [skip ci] TOE AAN HET BERICHT - dit voorkomt dat Netlify gaat builden
+          git commit -m "🤖 Automatische nieuws update [skip ci]" || echo "Geen wijzigingen"
           git push

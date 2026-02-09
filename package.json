@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
+    "@mistralai/mistralai": "^1.14.0",
     "axios": "^1.13.5",
     "dotenv": "^17.2.4",
     "fs-extra": "^11.3.3",

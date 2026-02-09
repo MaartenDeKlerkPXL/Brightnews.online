@@ -1,26 +1,14 @@
+const { GoogleGenerativeAI } = require("@google/generative-ai");
 require('dotenv').config();
 
-async function check() {
-    const key = process.env.GEMINI_API_KEY;
-    console.log("Sleutel gevonden:", key ? "Ja (begint met " + key.substring(0,4) + ")" : "Nee");
-
+async function test() {
+    const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
     try {
-        const url = `https://generativelanguage.googleapis.com/v1beta/models?key=${key}`;
-        const response = await fetch(url);
-        const data = await response.json();
-
-        if (data.error) {
-            console.error("API Fout:", data.error.message);
-        } else {
-            console.log("--- JOUW BESCHIKBARE MODELLEN ---");
-            data.models.forEach(m => {
-                console.log("- " + m.name.replace("models/", ""));
-            });
-            console.log("---------------------------------");
-        }
-    } catch (err) {
-        console.error("Netwerkfout:", err.message);
+        const result = await model.generateContent("Hallo, leef je nog?");
+        console.log("✅ ANTWOORD VAN AI:", result.response.text());
+    } catch (e) {
+        console.error("❌ NOG STEEDS GEEN TOEGANG:", e.message);
     }
 }
-
-check();
+test();
