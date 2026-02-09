@@ -1,14 +1,9 @@
-/* =========================================
-   Bright News - Home Page Styles
-   Bevat de Hero sectie en de Nieuwskaarten
-   ========================================= */
 
-/* --- 1. Hero Sectie --- */
 .home-hero {
     /* 150px ruimte boven voor een mooie afstand van de witte nav */
     padding: 150px 0 80px;
     text-align: center;
-    background: linear-gradient(180deg, var(--white) 0%, #FFFDE7 100%);
+    background: var(--bright-green);
     border-bottom: 1px solid var(--border-color);
     position: relative;
     z-index: 1;
@@ -39,7 +34,7 @@
 
 /* --- 3. De "Beautiful" Artikel Kaarten --- */
 .news-card {
-    background-color: var(--white);
+    background-color: var(--bright-green);
     border-radius: var(--radius-lg);
     padding: 32px;
     border: 1px solid var(--border-color);
