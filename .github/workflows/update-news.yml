@@ -1,0 +1,39 @@
+name: 🚀 Dagelijkse Nieuws Update
+
+on:
+  schedule:
+    # Dit draait elke ochtend om 08:00 UTC (9:00 Nederlandse tijd)
+    - cron: '0 8 * * *'
+  workflow_dispatch: # Hiermee kun je de update ook handmatig starten in GitHub
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write # Cruciaal: hiermee mag GitHub de JSON bestanden aanpassen
+
+    steps:
+      - name: 📂 Code ophalen
+        uses: actions/checkout@v4
+
+      - name: 🟢 Node.js instellen
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 📦 Dependencies installeren
+        run: npm install
+
+      - name: 🤖 Mistral AI de kranten laten lezen
+        env:
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+        run: node backend/processor.js
+
+      - name: 💾 Wijzigingen opslaan en pushen
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/*.json
+          git commit -m "🤖 Automatische nieuws update: $(date)" || echo "Geen wijzigingen om te committen"
+          git push
