@@ -329,3 +329,32 @@ footer p {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+/* 1. De Navigatie/Header (De 'vader' van de dropdown) */
+/* Deze MOET een hogere z-index hebben dan de Hero */
+header, .navbar, nav {
+    position: relative; /* Noodzakelijk voor z-index */
+    z-index: 2000 !important;
+    overflow: visible !important; /* CRUCIAAL: als dit op 'hidden' staat, zie je de dropdown nooit! */
+}
+
+/* 2. De Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 2001; /* Hoger dan de header */
+}
+
+/* 3. De Dropdown Content (De talenlijst) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Direct onder de knop */
+    left: 0;
+    z-index: 9999 !important;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 12px;
+}
+
+
