@@ -13,13 +13,16 @@
 <header>
     <nav class="container">
         <div class="dropdown language-left">
-            <button class="dropbtn">🌐 Taal</button>
-            <div class="dropdown-content">
-                <a href="#" data-lang="nl">🇳🇱 Nederlands</a>
-                <a href="#" data-lang="en">🇺🇸 English</a>
-                <a href="#" data-lang="de">🇩🇪 Deutsch</a>
-                <a href="#" data-lang="fr">🇫🇷 Français</a>
-                <a href="#" data-lang="es">🇪🇸 Español</a>
+
+            <div class="dropdown">
+                <button class="dropbtn" id="current-lang">🇳🇱 Nederlands</button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="wisselTaal('nl', '🇳🇱 Nederlands')">🇳🇱 Nederlands</a>
+                    <a href="#" onclick="wisselTaal('en', '🇺🇸 English')">🇺🇸 English</a>
+                    <a href="#" onclick="wisselTaal('de', '🇩🇪 Deutsch')">🇩🇪 Deutsch</a>
+                    <a href="#" onclick="wisselTaal('fr', '🇫🇷 Français')">🇫🇷 Français</a>
+                    <a href="#" onclick="wisselTaal('es', '🇪🇸 Español')">🇪🇸 Español</a>
+                </div>
             </div>
         </div>
 

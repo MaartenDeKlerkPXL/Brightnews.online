@@ -17,12 +17,8 @@ const FEEDS = [
 ];
 
 async function processNews() {
-    // We maken aparte lijsten voor elke taal
     let languages = {
-        nl: [],
-        en: [],
-        fr: [],
-        de: []
+        nl: [], en: [], fr: [], de: [], es: [] // 'es' toegevoegd
     };
 
     const seenLinks = new Set(); // Om dubbele artikelen te voorkomen
@@ -39,13 +35,13 @@ async function processNews() {
                 console.log(`Analyse: ${item.title.substring(0, 50)}...`);
 
                 const prompt = `
-                    Analyseer dit bericht: "${item.title}"
-                    Is dit positief of hoopgevend? 
-                    Zo ja, maak een samenvatting (max 15 woorden) in 4 talen.
-                    Antwoord strikt in JSON: 
-                    {"isBright": true, "nl": "..", "en": "..", "fr": "..", "de": ".."}
-                    Indien niet positief: {"isBright": false}
-                `;
+        Analyseer dit bericht: "${item.title}"
+        Is dit positief of hoopgevend? 
+        Zo ja, maak een samenvatting (max 15 woorden) in 5 talen.
+        Antwoord strikt in JSON: 
+        {"isBright": true, "nl": "..", "en": "..", "fr": "..", "de": "..", "es": ".."}
+        Indien niet positief: {"isBright": false}
+    `;
 
                 try {
                     const result = await model.generateContent(prompt);
@@ -66,7 +62,7 @@ async function processNews() {
                 } catch (err) {
                     console.error("  ⚠️ Overslaan wegens fout of limiet.");
                 }
-                await sleep(4000); // Respecteer de rate limit
+                await sleep(6000); // Respecteer de rate limit
             }
         } catch (err) {
             console.error(`  ❌ Feed kon niet worden geladen.`);
