@@ -48,6 +48,7 @@ async function processNews() {
                                 link: item.link,
                                 date: new Date().toISOString()
                             });
+                            if (languages[lang].length > 50) languages[lang].pop();
                         });
                     } else {
                         console.log("      ❌ Overgeslagen.");
@@ -69,3 +70,18 @@ async function processNews() {
 }
 
 processNews();
+
+const tweeDagenGeleden = new Date();
+tweeDagenGeleden.setDate(tweeDagenGeleden.getDate() - 2);
+
+Object.keys(languages).forEach(lang => {
+    languages[lang] = languages[lang].filter(artikel => {
+        const artikelDatum = new Date(artikel.date);
+        return artikelDatum > tweeDagenGeleden;
+    });
+});
+
+// STAP 3: Alles weer opslaan
+for (const [lang, items] of Object.entries(languages)) {
+    await fs.outputJson(`./data/news_${lang}.json`, items, { spaces: 2 });
+}
