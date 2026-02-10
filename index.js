@@ -1,87 +1,67 @@
-// index.js - Gecorrigeerde versie
+let huidigeTaal = 'nl';
+let alleArtikelen = [];
 
-// Gebruik async om await mogelijk te maken
-async function toonNieuws() {
-    const container = document.getElementById('news-container');
-    if (!container) return;
+async function laadNieuws(taal) {
+    huidigeTaal = taal;
+    const res = await fetch(`data/news_${taal}.json?t=${Date.now()}`);
+    alleArtikelen = await res.json();
 
-    try {
-        const response = await fetch('./data/news_nl.json');
-        const artikelen = await response.json();
+    // Check of we naar een detailpagina moeten kijken
+    const urlParams = new URLSearchParams(window.location.search);
+    const artikelId = urlParams.get('id');
 
-        renderLijst(artikelen);
-    } catch (fout) {
-        console.error("Fout bij laden:", fout);
+    if (artikelId) {
+        toonDetail(artikelId);
+    } else {
+        renderLijst(alleArtikelen);
     }
 }
 
-// Nieuwe async functie voor het wisselen van taal
-async function wisselTaal(lang, label, event) {
-    // Voorkom 'Deprecated symbol' waarschuwing door het event netjes af te handelen
-    if (event) event.preventDefault();
-
-    const langBtn = document.getElementById('current-lang');
-    if (langBtn) {
-        langBtn.innerHTML = `${label} <span class="arrow">▼</span>`;
-    }
-
-    const container = document.getElementById('news-container');
-    container.innerHTML = '<p>Laden...</p>';
-
-    try {
-        const response = await fetch(`./data/news_${lang}.json`);
-        if (!response.ok) throw new Error("Taalbestand niet gevonden");
-
-        const artikelen = await response.json();
-        renderLijst(artikelen);
-    } catch (fout) {
-        console.error(fout);
-        container.innerHTML = `<p>Nieuws voor ${label} is nog niet klaar.</p>`;
-    }
+function getAfbeelding(artikel, index) {
+    if (artikel.image) return artikel.image;
+    // Gebruik een unieke vrolijke foto van Unsplash op basis van index
+    return `https://images.unsplash.com/photo-${1500000000000 + index}?auto=format&fit=crop&w=800&q=80&sig=${index}`;
 }
 
 function renderLijst(artikelen) {
+    document.getElementById('detail-view').style.display = 'none';
     const container = document.getElementById('news-container');
+    container.style.display = 'grid';
     container.innerHTML = '';
 
-    artikelen.forEach(artikel => {
+    artikelen.forEach((artikel, index) => {
         const card = document.createElement('div');
         card.className = 'news-card';
-        card.innerHTML = `<h3>${artikel.title}</h3><a href="${artikel.link}" target="_blank">Lees meer</a>`;
+        card.onclick = () => { window.location.search = `?id=${artikel.id}`; };
+
+        card.innerHTML = `
+            <img src="${getAfbeelding(artikel, index)}" class="card-img" alt="news">
+            <div class="card-content">
+                <span class="source-tag">${artikel.source}</span>
+                <h3>${artikel.title}</h3>
+                <p>${artikel.summary.substring(0, 80)}...</p>
+            </div>
+        `;
         container.appendChild(card);
     });
 }
 
-// Start de eerste laadbeurt en vang eventuele errors op
-toonNieuws().catch(err => console.error(err));
+function toonDetail(id) {
+    const artikel = alleArtikelen.find(a => a.id === id);
+    if (!artikel) return;
 
-function renderLijst(artikelen) {
-    const container = document.getElementById('news-container');
-    const timeDisplay = document.getElementById('update-time');
+    document.getElementById('news-container').style.display = 'none';
+    const detail = document.getElementById('detail-view');
+    detail.style.display = 'block';
 
-    container.innerHTML = '';
-
-    if (artikelen.length > 0) {
-        // Pak de datum van het nieuwste artikel
-        const laatsteUpdate = new Date(artikelen[0].date);
-        const tijdString = laatsteUpdate.toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' });
-        const datumString = laatsteUpdate.toLocaleDateString('nl-NL', { day: 'numeric', month: 'long' });
-
-        timeDisplay.innerHTML = `✨ Laatste scan: ${datumString} om ${tijdString}`;
-
-        artikelen.forEach(artikel => {
-            const card = document.createElement('div');
-            card.className = 'news-card';
-            card.innerHTML = `
-                <div class="card-tag">Bright News</div>
-                <h3>${artikel.title}</h3>
-                <div class="card-footer">
-                    <a href="${artikel.link}" target="_blank" class="read-more">Lees meer →</a>
-                </div>
-            `;
-            container.appendChild(card);
-        });
-    } else {
-        timeDisplay.innerHTML = "❌ Geen nieuws gevonden voor deze taal.";
-    }
+    detail.innerHTML = `
+        <button onclick="window.location.search=''" class="back-btn">← Terug</button>
+        <img src="${getAfbeelding(artikel, 99)}" class="detail-img">
+        <h1>${artikel.title}</h1>
+        <p class="detail-source">Bron: <strong>${artikel.source}</strong></p>
+        <div class="detail-text">
+            <p>${artikel.summary}</p>
+        </div>
+        <a href="${artikel.link}" target="_blank" class="read-original">Lees het originele artikel op ${artikel.source} →</a>
+    `;
 }

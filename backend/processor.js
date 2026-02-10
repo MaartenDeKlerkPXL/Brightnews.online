@@ -7,81 +7,77 @@ const parser = new RSSParser();
 const client = new Mistral({ apiKey: process.env.MISTRAL_API_KEY });
 
 const FEEDS = [
-    'https://www.nu.nl/rss/goed-nieuws',
-    'https://www.positive.news/feed/',
-    'https://www.optimist.nl/feed/'
+    { name: 'NU.nl', url: 'https://www.nu.nl/rss/goed-nieuws' },
+    { name: 'Positive.News', url: 'https://www.positive.news/feed/' },
+    { name: 'GoodNewsNetwork.org', url: 'https://www.goodnewsnetwork.org/category/news/feed/' },
+    { name: 'CNTraveler.com', url: 'https://www.cntraveler.com/feed/rss' },
+    { name: 'Adventure-Journal.com', url: 'https://www.adventure-journal.com/feed/' }
 ];
 
 async function processNews() {
     let languages = { nl: [], en: [], de: [], fr: [], es: [] };
-    console.log("🚀 Bright News Engine (Mistral Edition) start...");
 
-    for (const url of FEEDS) {
+    for (const lang of Object.keys(languages)) {
         try {
-            console.log(`\n📡 Scannen: ${url}`);
-            const feed = await parser.parseURL(url);
+            languages[lang] = await fs.readJson(`./data/news_${lang}.json`);
+        } catch (e) { languages[lang] = []; }
+    }
 
-            for (const item of feed.items.slice(0, 3)) { // Top 3 per bron
-                console.log(`   🧐 Analyse: ${item.title.substring(0, 50)}...`);
+    for (const feedInfo of FEEDS) {
+        try {
+            console.log(`📡 Scannen: ${feedInfo.name}`);
+            const feed = await parser.parseURL(feedInfo.url);
+
+            for (const item of feed.items.slice(0, 5)) {
+                if (languages.nl.some(art => art.link === item.link)) continue;
+
+                // Pak de afbeelding uit de RSS (verschillende tags mogelijk)
+                const imageUrl = item.enclosure?.url ||
+                    (item.content?.match(/src="([^"]+)"/)?.[1]) ||
+                    null;
 
                 try {
                     const chatResponse = await client.chat.complete({
                         model: 'mistral-small-latest',
                         messages: [{
                             role: 'user',
-                            content: `Is dit positief nieuws? "${item.title}". 
-                            Zo ja, vertaal kort naar NL, EN, DE, FR en ES.
-                            Antwoord ALTIJD en ALLEEN met dit JSON formaat:
-                            {"isBright": true, "nl": "...", "en": "...", "de": "...", "fr": "...", "es": "..."}
-                            Indien niet positief: {"isBright": false}`
+                            content: `Analyseer: "${item.title}". Als het positief is, vertaal de titel EN maak een samenvatting van max 30 woorden in NL, EN, DE, FR en ES.
+                            Antwoord enkel in dit JSON formaat:
+                            {"isBright": true, 
+                             "nl": {"t": "titel", "s": "samenvatting"},
+                             "en": {"t": "...", "s": "..."}, 
+                             "de": {"t": "...", "s": "..."}, 
+                             "fr": {"t": "...", "s": "..."}, 
+                             "es": {"t": "...", "s": "..."}}
+                            Niet positief? {"isBright": false}`
                         }],
-                        responseFormat: { type: 'json_object' } // Dwingt JSON af
+                        responseFormat: { type: 'json_object' }
                     });
 
                     const data = JSON.parse(chatResponse.choices[0].message.content);
 
                     if (data.isBright) {
-                        console.log("      ✅ Succes! Mistral heeft het vertaald.");
+                        const articleId = Date.now() + Math.random().toString(36).substr(2, 9);
                         Object.keys(languages).forEach(lang => {
-                            languages[lang].push({
-                                title: data[lang],
+                            languages[lang].unshift({
+                                id: articleId,
+                                title: data[lang].t,
+                                summary: data[lang].s,
                                 link: item.link,
+                                source: feedInfo.name,
+                                image: imageUrl,
                                 date: new Date().toISOString()
                             });
                             if (languages[lang].length > 50) languages[lang].pop();
                         });
-                    } else {
-                        console.log("      ❌ Overgeslagen.");
                     }
-                } catch (aiErr) {
-                    console.error("      ⚠️ Mistral Fout:", aiErr.message);
-                }
+                } catch (aiErr) { console.error("AI Fout:", aiErr.message); }
             }
-        } catch (feedErr) {
-            console.error(`   ❌ Kon feed niet laden.`);
-        }
+        } catch (feedErr) { console.error("Feed Fout:", feedInfo.name); }
     }
 
-    // Opslaan naar de data map
     for (const [lang, items] of Object.entries(languages)) {
         await fs.outputJson(`./data/news_${lang}.json`, items, { spaces: 2 });
     }
-    console.log("\n✨ De Franse slag werkt! Je JSON bestanden zijn gevuld.");
 }
-
 processNews();
-
-const tweeDagenGeleden = new Date();
-tweeDagenGeleden.setDate(tweeDagenGeleden.getDate() - 2);
-
-Object.keys(languages).forEach(lang => {
-    languages[lang] = languages[lang].filter(artikel => {
-        const artikelDatum = new Date(artikel.date);
-        return artikelDatum > tweeDagenGeleden;
-    });
-});
-
-// STAP 3: Alles weer opslaan
-for (const [lang, items] of Object.entries(languages)) {
-    await fs.outputJson(`./data/news_${lang}.json`, items, { spaces: 2 });
-}
