@@ -39,19 +39,25 @@ async function processNews() {
                     null;
 
                 try {
+                    // Zoek dit stukje in je processor.js en vervang de prompt:
                     const chatResponse = await client.chat.complete({
                         model: 'mistral-small-latest',
                         messages: [{
                             role: 'user',
-                            content: `Analyseer: "${item.title}". Als het positief is, vertaal de titel EN maak een samenvatting van max 30 woorden in NL, EN, DE, FR en ES.
-                            Antwoord enkel in dit JSON formaat:
-                            {"isBright": true, 
-                             "nl": {"t": "titel", "s": "samenvatting"},
-                             "en": {"t": "...", "s": "..."}, 
-                             "de": {"t": "...", "s": "..."}, 
-                             "fr": {"t": "...", "s": "..."}, 
-                             "es": {"t": "...", "s": "..."}}
-                            Niet positief? {"isBright": false}`
+                            content: `Analyseer dit nieuws: "${item.title} - ${item.contentSnippet}". 
+        Als het positief is, schrijf dan een inspirerend en gedetailleerd artikel van minimaal 500 woorden. 
+        Vertaal dit volledige artikel en de titel naar NL, EN, DE, FR en ES.
+        
+        Antwoord enkel in dit JSON formaat:
+        {
+         "isBright": true, 
+         "nl": {"t": "titel", "s": "artikel van 500+ woorden"},
+         "en": {"t": "...", "s": "..."}, 
+         "de": {"t": "...", "s": "..."}, 
+         "fr": {"t": "...", "s": "..."}, 
+         "es": {"t": "...", "s": "..."}
+        }
+        Niet positief? {"isBright": false}`
                         }],
                         responseFormat: { type: 'json_object' }
                     });

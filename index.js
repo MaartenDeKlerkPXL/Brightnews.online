@@ -42,13 +42,13 @@ function renderLijst(artikelen) {
         const knopTekst = huidigeTaal === 'nl' ? 'Lees meer' : 'Read more';
 
         card.innerHTML = `
-            <img src="${imgSrc}" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1546422904-90eabf3cab3a?w=800'">
-            <div class="card-content">
-                <div class="source-tag">${artikel.source}</div>
-                <h3>${artikel.title}</h3>
-                <p>${artikel.summary ? artikel.summary.substring(0, 85) + '...' : knopTekst + '...'}</p>
-            </div>
-        `;
+    <img src="${imgSrc}" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1546422904-90eabf3cab3a?w=800'">
+    <div class="card-content">
+        <div class="source-tag">${artikel.source}</div>
+        <h3>${artikel.title}</h3>
+        <p>${artikel.summary ? artikel.summary : (huidigeTaal === 'nl' ? 'Lees het volledige verhaal.' : 'Read the full story.')}</p>
+    </div>
+`;
 
         card.addEventListener('click', () => {
             window.history.pushState({}, '', `?id=${veiligId}`);
