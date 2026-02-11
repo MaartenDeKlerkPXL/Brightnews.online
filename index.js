@@ -3,14 +3,27 @@
 let huidigeTaal = 'en';
 let alleArtikelen = [];
 
-// 1. Controleer of er een actieve sessie is
+// index.js
+
+// index.js
+
 async function checkUser() {
     try {
-        const { data: { session } } = await supabase.auth.getSession();
-        return session !== null;
+        if (!window.supabaseClient) return { ingelogd: false, premium: false };
+
+        const { data: { session } } = await window.supabaseClient.auth.getSession();
+
+        // Als er geen sessie is, ben je sowieso niet premium
+        if (!session) return { ingelogd: false, premium: false };
+
+        // De gouden check: Alleen als 'is_premium' EXACT gelijk is aan true
+        const isPremium = session.user.user_metadata?.is_premium === true;
+
+        console.log("Check resultaat:", { ingelogd: true, premium: isPremium });
+        return { ingelogd: true, premium: isPremium };
     } catch (e) {
-        console.error("Supabase checkUser fout:", e);
-        return false;
+        console.error("CheckUser fout:", e);
+        return { ingelogd: false, premium: false };
     }
 }
 
@@ -86,9 +99,11 @@ async function toonDetail(id) {
         return;
     }
 
-    // Inlog-status ophalen
-    const isIngelogd = await checkUser();
+    // 1. Haal de uitgebreide status op (bevat .ingelogd en .premium)
+    const userStatus = await checkUser();
+    console.log("Huidige User Status:", userStatus);
 
+    // 2. Scherm klaarmaken
     container.style.display = 'none';
     if (updateTime) updateTime.style.display = 'none';
     detailView.style.display = 'block';
@@ -99,32 +114,42 @@ async function toonDetail(id) {
         month: 'long'
     });
 
-    // Paywall Logica
+    // 3. Paywall Logica: Alleen Premium krijgt de volle hap
     let displayContent = artikel.summary;
     let paywallHTML = "";
 
-    if (!isIngelogd) {
+    // Check: Als je NIET premium bent, dan krijg je de paywall bij lange artikelen
+    if (userStatus.premium !== true) {
         const woorden = artikel.summary.split(' ');
         if (woorden.length > 60) {
             displayContent = woorden.slice(0, 60).join(' ') + "...";
-            // Zoek dit stukje in je toonDetail functie in index.js:
+
+            // Tekst afhankelijk van of iemand wel/niet is ingelogd maar geen premium heeft
+            const paywallTitel = huidigeTaal === 'nl' ? '✨ Bright Premium Content' : '✨ Bright Premium Content';
+            const paywallBericht = userStatus.ingelogd
+                ? (huidigeTaal === 'nl' ? 'Upgrade je account naar Premium om dit artikel te lezen.' : 'Upgrade to Premium to read the full article.')
+                : (huidigeTaal === 'nl' ? 'Log in of word Premium lid om verder te lezen.' : 'Log in or become a Premium member to read more.');
+            const knopTekst = userStatus.ingelogd
+                ? (huidigeTaal === 'nl' ? 'Word nu Premium' : 'Go Premium')
+                : (huidigeTaal === 'nl' ? 'Gratis inloggen' : 'Login for Free');
+
             paywallHTML = `
                 <div class="paywall-overlay">
                     <div class="paywall-content">
-                        <h3>✨ ${huidigeTaal === 'nl' ? 'Lees het volledige artikel' : 'Read the full 500+ word article'}</h3>
-                        <p>${huidigeTaal === 'nl' ? 'Log in op je Bright account om verder te lezen.' : 'Log in to your Bright account to continue.'}</p>
-                        
+                        <h3>${paywallTitel}</h3>
+                        <p>${paywallBericht}</p>
                         <button onclick="window.location.href='profiel.html'" class="btn-primary-editorial">
-                            ${huidigeTaal === 'nl' ? 'Gratis inloggen' : 'Login for Free'}
+                            ${knopTekst}
                         </button>
                     </div>
                 </div>`;
         }
     }
 
+    // 4. De HTML opbouwen
     detailView.innerHTML = `
-            <button onclick="terugNaarOverzicht()" class="back-btn-float">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            <button onclick="terugNaarOverzicht()" class="back-btn-pill">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
                 ${huidigeTaal === 'nl' ? 'Terug' : 'Back'}
             </button>
 
@@ -133,7 +158,9 @@ async function toonDetail(id) {
             </div>
             
             <header class="detail-header">
-                <div class="detail-meta"><span class="detail-date">${datum}</span></div>
+                <div class="detail-meta">
+                    <span class="detail-date">${datum}</span>
+                </div>
                 <h1>${artikel.title}</h1>
             </header>
             
@@ -142,7 +169,7 @@ async function toonDetail(id) {
                 ${paywallHTML}
             </section>
             
-            ${isIngelogd ? `
+            ${userStatus.premium ? `
             <footer class="detail-footer">
                 <a href="${artikel.link}" target="_blank" class="source-link">
                     ${huidigeTaal === 'nl' ? 'Lees origineel op' : 'Read full article on'} ${artikel.source}

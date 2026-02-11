@@ -10,12 +10,16 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/pages/artikel.css">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-
     <script>
-        const SUPABASE_URL = 'https://rquuqypgaannrakdrabj.supabase.co';
-        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJxdXVxeXBnYWFubnJha2RyYWJqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA4MTQyODUsImV4cCI6MjA4NjM5MDI4NX0.-H5ZIcLXBflqKvC0VQGlVGIX29G-nceC9ak5IrhJCzg';
-        const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+        if (!window.supabaseClient) {
+            const SB_URL = 'https://rquuqypgaannrakdrabj.supabase.co';
+            const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJxdXVxeXBnYWFubnJha2RyYWJqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA4MTQyODUsImV4cCI6MjA4NjM5MDI4NX0.-H5ZIcLXBflqKvC0VQGlVGIX29G-nceC9ak5IrhJCzg';
+            window.supabaseClient = supabase.createClient(SB_URL, SB_KEY);
+        }
     </script>
+
+    <script src="js/auth.js"></script>
+    <script src="index.js"></script>
 </head>
 <body>
 <header>
@@ -62,7 +66,7 @@
 </main>
 
 <script src="index.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script type="module" src="js/auth.js"></script>
 <footer>
     <p>Verspreid het licht. ✨ Bright News 2026</p>
 </footer>

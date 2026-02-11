@@ -191,3 +191,34 @@
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
+
+/* De mooie 'Pill' knop op de artikelpagina */
+.back-btn-pill {
+    background: #ffffff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 50px; /* Zorgt voor de ronde vorm */
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #1a1a1a;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Geeft diepte */
+    transition: all 0.2s ease;
+    margin-bottom: 20px; /* Ruimte onder de knop */
+    width: fit-content; /* Zorgt dat de knop niet de hele breedte pakt */
+}
+
+.back-btn-pill:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    background: #fcfcfc;
+}
+
+/* Zorg dat de SVG (het pijltje) goed uitlijnt */
+.back-btn-pill svg {
+    display: inline-block;
+    vertical-align: middle;
+}

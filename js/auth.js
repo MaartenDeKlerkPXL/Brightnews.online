@@ -5,22 +5,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const showRegister = document.getElementById('show-register');
     const showLogin = document.getElementById('show-login');
 
-    // Wissel naar Registratie
-    showRegister.addEventListener('click', (e) => {
-        e.preventDefault();
-        loginForm.classList.add('hidden');
-        registerForm.classList.remove('hidden');
-    });
+    // Alleen listener toevoegen als de 'show-register' knop bestaat
+    if (showRegister && loginForm && registerForm) {
+        showRegister.addEventListener('click', (e) => {
+            e.preventDefault();
+            loginForm.classList.add('hidden');
+            registerForm.classList.remove('hidden');
+        });
+    }
 
-    // Wissel naar Login
-    showLogin.addEventListener('click', (e) => {
-        e.preventDefault();
-        registerForm.classList.add('hidden');
-        loginForm.classList.remove('hidden');
-    });
+    // Alleen listener toevoegen als de 'show-login' knop bestaat
+    if (showLogin && loginForm && registerForm) {
+        showLogin.addEventListener('click', (e) => {
+            e.preventDefault();
+            registerForm.classList.add('hidden');
+            loginForm.classList.remove('hidden');
+        });
+    }
 
-
-    console.log('Auth module geladen ✨');
+    console.log('Auth module veilig geladen ✨');
 });
 export const auth = {
     isIngelogd: () => localStorage.getItem('user_session') !== null,
