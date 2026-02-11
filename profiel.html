@@ -101,131 +101,100 @@
 
         <div id="profile-view" class="form-container hidden">
             <div class="auth-header">
-                <h2>Your Bright Profile ✨</h2>
-                <p>You are a <strong>Premium Member</strong>.</p>
+                <h2>Jouw Profiel</h2>
+                <p id="user-email-display"></p>
             </div>
-            <div class="user-info-card">
-                <p><strong>Email:</strong> <span id="user-email-display"></span></p>
+
+            <div class="status-card">
+                <div class="status-info">
+                    <span class="status-label">Account Status</span>
+                    <span id="premium-status-badge" class="badge">Gratis Account</span>
+                </div>
+
+                <div id="upgrade-section">
+                    <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+                    <p>Krijg onbeperkt toegang tot alle 500+ woorden artikelen.</p>
+                    <button onclick="startUpgrade()" class="btn-upgrade-premium">
+                        ✨ Upgrade naar Premium
+                    </button>
+                </div>
             </div>
-            <button onclick="handleLogout()" class="btn-logout-editorial">Logout</button>
+
+            <button onclick="handleLogout()" class="btn-logout-editorial">Uitloggen</button>
         </div>
+
     </div>
 </main>
+
+<script src="js/auth.js"></script>
+<script src="https://cdn.npm.js/npm/@supabase/supabase-js@2"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
 <script>
-    // 1. Initialiseer DIRECT
     const SUPABASE_URL = 'https://rquuqypgaannrakdrabj.supabase.co';
-    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJxdXVxeXBnYWFubnJha2RyYWJqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA4MTQyODUsImV4cCI6MjA4NjM5MDI4NX0.-H5ZIcLXBflqKvC0VQGlVGIX29G-nceC9ak5IrhJCzg'; // Gebruik je volledige sleutel
-    const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJxdXVxeXBnYWFubnJha2RyYWJqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA4MTQyODUsImV4cCI6MjA4NjM5MDI4NX0.-H5ZIcLXBflqKvC0VQGlVGIX29G-nceC9ak5IrhJCzg';
 
-    // 2. Wachtwoord zichtbaarheid (nu met de juiste variabelen)
-    function togglePassword(event, inputId) {
-        event.preventDefault(); // Voorkom dat het formulier verzendt
-        const input = document.getElementById(inputId);
-        const icon = event.target;
-        if (input.type === "password") {
-            input.type = "text";
-            icon.innerText = "🔒";
-        } else {
-            input.type = "password";
-            icon.innerText = "👁️";
-        }
-    }
+    // Maak de client globaal aan
+    window.supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    console.log("Supabase Client succesvol gekoppeld! 🚀");
+</script>
 
-    // 3. Auth handling met foutmelding-ondersteuning
-    async function handleAuth(event, type) {
-        event.preventDefault();
+<script src="js/auth.js"></script>
 
-        const email = type === 'login' ? document.getElementById('login-email').value : document.getElementById('reg-email').value;
-        const password = type === 'login' ? document.getElementById('login-password').value : document.getElementById('reg-password').value;
-
-        try {
-            if (type === 'register') {
-                const name = document.getElementById('reg-name').value;
-                const { error } = await supabaseClient.auth.signUp({
-                    email,
-                    password,
-                    options: { data: { full_name: name } }
-                });
-                if (error) throw error;
-                setToast('Account aangemaakt! Check je mail ✨', 'success');
-            } else {
-                const { error } = await supabaseClient.auth.signInWithPassword({ email, password });
-                if (error) throw error;
-                setToast('Succesvol ingelogd! 😊', 'success');
-            }
-            // Bij succes: stuur naar home
-            window.location.href = 'index.html';
-        } catch (error) {
-            console.error("Auth fout:", error.message);
-            // Specifieke melding voor verkeerde inloggegevens
-            const displayMsg = error.message === "Invalid login credentials"
-                ? "Oeps! Wachtwoord of e-mail is onjuist ❌"
-                : error.message;
-
-            // Toon de foutmelding direct op deze pagina
-            showLocalError(displayMsg);
-        }
-    }
-
-    function setToast(msg, type) {
-        localStorage.setItem('showLoginToast', 'true');
-        localStorage.setItem('toastMessage', msg);
-        localStorage.setItem('toastType', type);
-    }
-
-    function showLocalError(msg) {
-        const errorDiv = document.createElement('div');
-        errorDiv.className = 'bright-toast error';
-        errorDiv.innerHTML = `<div class="toast-content"><p>${msg}</p></div>`;
-        document.body.appendChild(errorDiv);
-        setTimeout(() => errorDiv.remove(), 4000);
-    }
-
+<script>
+    // Deze functie moet BUITEN de DOMContentLoaded staan om door onclick gevonden te worden
     async function handleLogout() {
-        await supabaseClient.auth.signOut();
-        window.location.href = 'index.html';
+        console.log("Uitloggen gestart...");
+        try {
+            await window.supabaseClient.auth.signOut();
+            window.location.href = 'index.html';
+        } catch (err) {
+            console.error("Uitloggen mislukt:", err.message);
+        }
     }
 
-    function toggleAuth() {
-        document.getElementById('login-form').classList.toggle('hidden');
-        document.getElementById('register-form').classList.toggle('hidden');
+    // Zorg dat deze ook globaal is
+    function startUpgrade() {
+        window.location.href = 'abonnementen.html';
     }
 
-    // Check sessie bij laden
-    (async () => {
-        const { data: { session } } = await supabaseClient.auth.getSession();
-        if (session) {
-            document.getElementById('login-form').classList.add('hidden');
-            document.getElementById('profile-view').classList.remove('hidden');
-            document.getElementById('user-email-display').innerText = session.user.email;
+    document.addEventListener('DOMContentLoaded', async () => {
+        // Korte pauze voor stabiliteit
+        setTimeout(async () => {
+            try {
+                const { data: { user } } = await window.supabaseClient.auth.getUser();
+                if (user) {
+                    document.getElementById('login-form').classList.add('hidden');
+                    document.getElementById('profile-view').classList.remove('hidden');
+                    updateProfileUI(user);
+                } else {
+                    document.getElementById('login-form').classList.remove('hidden');
+                }
+            } catch (err) {
+                console.error("Fout bij laden profiel:", err);
+            }
+        }, 150);
+    });
+
+    async function updateProfileUI(user) {
+        const emailDisplay = document.getElementById('user-email-display');
+        const badge = document.getElementById('premium-status-badge');
+        const upgradeSection = document.getElementById('upgrade-section');
+
+        if (emailDisplay) emailDisplay.innerText = user.email;
+        const isPremium = user.user_metadata?.is_premium === true;
+
+        if (badge) {
+            badge.innerText = isPremium ? "Bright Premium" : "Gratis Account";
+            badge.className = isPremium ? "badge badge-premium" : "badge badge-free";
         }
-    })();
-    async function handleForgotPassword(event) {
-        event.preventDefault();
-        const email = document.getElementById('login-email').value;
 
-        if (!email) {
-            showLocalError("Vul eerst je e-mailadres in hierboven 📧");
-            return;
-        }
-
-        const { error } = await supabaseClient.auth.resetPasswordForEmail(email, {
-            redirectTo: window.location.origin + '/profiel.html', // Waar ze heen gaan na de klik in hun mail
-        });
-
-        if (error) {
-            showLocalError(error.message);
-        } else {
-            // Gebruik de nieuwe gecentreerde toast!
-            setToast('Check je inbox! We hebben een herstellink gestuurd 📩', 'success');
-            window.location.reload();
+        if (upgradeSection) {
+            upgradeSection.style.display = isPremium ? 'none' : 'block';
         }
     }
 </script>
-<script type="module" src="js/auth.js"></script>
 <script src="index.js"></script>
 </body>
 </html>

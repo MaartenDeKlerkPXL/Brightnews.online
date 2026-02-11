@@ -480,3 +480,203 @@ form {
     cursor: pointer;
     transition: 0.3s;
 }
+
+/* De 'Pill' knop opmaak */
+.back-btn-pill {
+    background: #ffffff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #1a1a1a;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.2s ease;
+}
+
+.back-btn-pill:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* Zorg dat de navigatie-container de knop links uitlijnt */
+.top-nav-alignment {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Status Kaart */
+.status-card {
+    background: #f8f9fa;
+    border: 1px solid #eee;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.status-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+
+/* Badges */
+.badge {
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.badge-free {
+    background: #e9ecef;
+    color: #495057;
+}
+
+.badge-premium {
+    background: #fff3cd; /* Goud-achtige gloed */
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+
+/* Upgrade Knop */
+.btn-upgrade-premium {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #000 0%, #333 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: transform 0.2s;
+}
+
+.btn-upgrade-premium:hover {
+    transform: scale(1.02);
+}
+
+/* De Container om de status heen */
+.status-card {
+    background: #ffffff;
+    border: 1px solid #eef0f2;
+    border-radius: 20px;
+    padding: 24px;
+    margin: 20px 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    text-align: center;
+}
+
+.status-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.status-label {
+    font-size: 0.85rem;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+/* Badges Verbeterd */
+.badge {
+    padding: 8px 18px;
+    border-radius: 100px;
+    font-size: 0.9rem;
+    font-weight: 800;
+    display: inline-block;
+}
+
+.badge-free {
+    background: #f1f3f5;
+    color: #495057;
+    border: 1px solid #dee2e6;
+}
+
+.badge-premium {
+    background: #fff9db;
+    color: #f59f00;
+    border: 1px solid #ffe066;
+    box-shadow: 0 2px 10px rgba(245, 159, 0, 0.1);
+}
+
+/* Upgrade Sectie Tekst */
+#upgrade-section p {
+    font-size: 0.95rem;
+    color: #495057;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+/* De Status Card */
+.status-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 30px;
+    margin: 25px 0;
+    border: 1px solid #f0f2f5;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+}
+
+.status-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.status-label {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #888;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+/* Badges */
+.badge {
+    display: inline-block;
+    padding: 10px 24px;
+    border-radius: 100px;
+    font-weight: 800;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.badge-free {
+    background: #f4f6f8;
+    color: #555;
+    border: 1px solid #e1e4e8;
+}
+
+.badge-premium {
+    background: linear-gradient(135deg, #fff9db 0%, #fff3bf 100%);
+    color: #947600;
+    border: 1px solid #ffe066;
+    box-shadow: 0 4px 15px rgba(255, 224, 102, 0.3);
+}
+
+/* Upgrade Sectie */
+.upgrade-promo {
+    background: #fafafa;
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.upgrade-promo p {
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 15px;
+}

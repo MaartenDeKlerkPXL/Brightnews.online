@@ -49,6 +49,8 @@ async function laadNieuws(taal) {
 }
 
 function renderLijst(artikelen) {
+    const detailNav = document.getElementById('detail-navigation');
+    if (detailNav) detailNav.style.display = 'none';
     const container = document.getElementById('news-container');
     const detailView = document.getElementById('detail-view');
     const updateTime = document.getElementById('update-time');
@@ -89,6 +91,14 @@ function renderLijst(artikelen) {
 
 
 async function toonDetail(id) {
+    const detailNav = document.getElementById('detail-navigation');
+    if (detailNav) detailNav.style.display = 'block';
+
+    // Zet de juiste tekst op de knop
+    const backBtnText = document.getElementById('back-btn-text');
+    if (backBtnText) {
+        backBtnText.innerText = huidigeTaal === 'nl' ? 'Terug' : 'Back';
+    }
     const artikel = alleArtikelen.find(a => String(a.id) === String(id));
     const container = document.getElementById('news-container');
     const detailView = document.getElementById('detail-view');
@@ -146,12 +156,16 @@ async function toonDetail(id) {
         }
     }
 
-    // 4. De HTML opbouwen
+    function terugNaarOverzicht() {
+        // Verberg de navigatie weer
+        const detailNav = document.getElementById('detail-navigation');
+        if (detailNav) detailNav.classList.add('hidden');
+
+        window.history.pushState({}, '', window.location.pathname);
+        renderLijst(alleArtikelen);
+    }
+
     detailView.innerHTML = `
-            <button onclick="terugNaarOverzicht()" class="back-btn-pill">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-                ${huidigeTaal === 'nl' ? 'Terug' : 'Back'}
-            </button>
 
             <div class="detail-hero">
                 <img src="${artikel.image || 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200'}" class="detail-img" alt="${artikel.title}">
