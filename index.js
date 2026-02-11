@@ -1,6 +1,11 @@
 let huidigeTaal = 'en'; // 1. Start nu standaard in het Engels
 let alleArtikelen = [];
 
+// Controleer of er een actieve sessie is in Supabase
+async function checkUser() {
+    const { data: { session } } = await supabase.auth.getSession();
+    return session !== null;
+}
 async function laadNieuws(taal) {
     try {
         huidigeTaal = taal;
@@ -59,56 +64,56 @@ function renderLijst(artikelen) {
     });
 }
 
-function toonDetail(id) {
+async function toonDetail(id) {
     const artikel = alleArtikelen.find(a => a.id == id);
     const container = document.getElementById('news-container');
     const detailView = document.getElementById('detail-view');
-    const updateTime = document.getElementById('update-time');
 
-    if (!artikel) {
-        window.history.pushState({}, '', window.location.pathname);
-        renderLijst(alleArtikelen);
-        return;
-    }
+    // Check of de gebruiker echt is ingelogd via Supabase
+    const { data: { session } } = await supabase.auth.getSession();
+    const isIngelogd = session !== null;
+
+    if (!artikel) return;
 
     container.style.display = 'none';
-    if (updateTime) updateTime.style.display = 'none';
-
     detailView.style.display = 'block';
     window.scrollTo(0, 0);
 
-    const datum = new Date(artikel.date).toLocaleDateString(huidigeTaal === 'nl' ? 'nl-NL' : 'en-US', { day: 'numeric', month: 'long' });
-    const terugTekst = huidigeTaal === 'nl' ? 'Terug' : 'Back';
-    const leesMeerTekst = huidigeTaal === 'nl' ? 'Lees het volledige artikel op' : 'Read the full article on';
+    let displayContent = artikel.summary;
+    let paywallHTML = "";
+
+    // Paywall: Als je niet bent ingelogd, zie je maar 15% van de tekst
+    if (!isIngelogd) {
+        const woorden = artikel.summary.split(' ');
+        if (woorden.length > 60) {
+            displayContent = woorden.slice(0, 60).join(' ') + "...";
+            paywallHTML = `
+                <div class="paywall-overlay">
+                    <h3>✨ Unlock the full story</h3>
+                    <p>Become a Bright Member to read the full 500+ word article.</p>
+                    <button onclick="window.location.href='profiel.html'" class="btn-primary-editorial">Join for Free</button>
+                </div>
+            `;
+        }
+    }
 
     detailView.innerHTML = `
+        <article class="detail-container">
             <button onclick="terugNaarOverzicht()" class="back-btn-float">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-                ${terugTekst}
+                Back
             </button>
-
             <div class="detail-hero">
-                <img src="${artikel.image || 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200'}" class="detail-img">
+                <img src="${artikel.image}" class="detail-img">
             </div>
-            
-            <header class="detail-header">
-                <div class="detail-meta">
-                    <span class="detail-date">${datum}</span>
-                </div>
+            <div class="detail-header">
                 <h1>${artikel.title}</h1>
-            </header>
-            
-            <section class="article-body">
-                <p>${artikel.summary}</p>
-            </section>
-            
-            <footer class="detail-footer">
-                <a href="${artikel.link}" target="_blank" class="source-link">
-                    ${leesMeerTekst} ${artikel.source}
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-                </a>
-            </footer>
-       
+            </div>
+            <div class="article-body">
+                <p>${displayContent}</p>
+                ${paywallHTML}
+            </div>
+        </article>
     `;
 }
 

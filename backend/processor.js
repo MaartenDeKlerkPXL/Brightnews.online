@@ -45,19 +45,22 @@ async function processNews() {
                         messages: [{
                             role: 'user',
                             content: `Analyseer dit nieuws: "${item.title} - ${item.contentSnippet}". 
-        Als het positief is, schrijf dan een inspirerend en gedetailleerd artikel van minimaal 500 woorden. 
-        Vertaal dit volledige artikel en de titel naar NL, EN, DE, FR en ES.
-        
-        Antwoord enkel in dit JSON formaat:
-        {
-         "isBright": true, 
-         "nl": {"t": "titel", "s": "artikel van 500+ woorden"},
-         "en": {"t": "...", "s": "..."}, 
-         "de": {"t": "...", "s": "..."}, 
-         "fr": {"t": "...", "s": "..."}, 
-         "es": {"t": "...", "s": "..."}
-        }
-        Niet positief? {"isBright": false}`
+                                    Als het positief is, schrijf dan een uitgebreid, meeslepend artikel van MINIMAAL 500 woorden. 
+                                    Gebruik een professionele journalistieke stijl. 
+                                    Vertaal dit volledige artikel naar NL, EN, DE, FR en ES.
+                                    
+                                    BELANGRIJK: De "s" waarde in de JSON MOET meer dan 3000 tekens bevatten om de 500 woorden te halen.
+                                    
+                                    Antwoord enkel in dit JSON formaat:
+                                    {
+                                     "isBright": true, 
+                                     "nl": {"t": "titel", "s": "artikel van 500+ woorden..."},
+                                     "en": {"t": "...", "s": "..."}, 
+                                     "de": {"t": "...", "s": "..."}, 
+                                     "fr": {"t": "...", "s": "..."}, 
+                                     "es": {"t": "...", "s": "..."}
+                                    }
+                                    Niet positief? {"isBright": false}`
                         }],
                         responseFormat: { type: 'json_object' }
                     });

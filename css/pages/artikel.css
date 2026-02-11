@@ -124,3 +124,22 @@
     .detail-header, .article-body, .detail-footer { padding: 30px 25px; }
     .detail-header h1 { font-size: 2rem; }
 }
+.paywall-overlay {
+    margin-top: 20px;
+    padding: 40px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), #f9f9f9 40%);
+    border-radius: 12px;
+    text-align: center;
+    border: 1px dashed #ddd;
+}
+
+.paywall-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.paywall-content p {
+    color: #666;
+    margin-bottom: 20px;
+}

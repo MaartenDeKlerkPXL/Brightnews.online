@@ -42,52 +42,97 @@
     </nav>
 </header>
 
-<main class="auth-container">
+<main class="auth-page-container">
+    <button onclick="window.location.href='index.html'" class="back-btn-float">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Back to Home
+    </button>
+
     <div class="auth-box">
         <div id="login-form" class="form-container">
-            <h2>Welkom terug! 😊</h2>
-            <p>Log in voor jouw persoonlijke dosis positiviteit.</p>
-            <form>
+            <div class="auth-header">
+                <h2>Welcome back! 😊</h2>
+                <p>Log in for your daily dose of positivity.</p>
+            </div>
+
+            <form onsubmit="handleAuth(event, 'login')">
                 <div class="input-group">
-                    <label>E-mailadres</label>
-                    <input type="email" placeholder="naam@voorbeeld.nl" required>
+                    <label>Email Address</label>
+                    <input type="email" id="login-email" placeholder="name@example.com" required>
                 </div>
                 <div class="input-group">
-                    <label>Wachtwoord</label>
-                    <input type="password" placeholder="••••••••" required>
+                    <label>Password</label>
+                    <input type="password" id="login-password" placeholder="••••••••" required>
                 </div>
-                <button type="submit" class="btn-primary full-width">Inloggen</button>
+                <button type="submit" class="btn-primary-editorial">Login</button>
             </form>
-            <p class="auth-switch">Nog geen account? <a href="#" id="show-register">Maak er eentje aan</a></p>
+
+            <p class="auth-switch">New here? <a href="#" onclick="toggleAuth()">Create an account</a></p>
         </div>
 
         <div id="register-form" class="form-container hidden">
-            <h2>Word een Bright Member! ✨</h2>
-            <p>Sluit je aan bij de community van optimisten.</p>
-            <form>
+            <div class="auth-header">
+                <h2>Become a Bright Member! ✨</h2>
+                <p>Join the community of optimists.</p>
+            </div>
+
+            <form onsubmit="handleAuth(event, 'register')">
                 <div class="input-group">
-                    <label>Naam</label>
-                    <input type="text" placeholder="Jouw naam" required>
+                    <label>Full Name</label>
+                    <input type="text" id="reg-name" placeholder="Your name" required>
                 </div>
                 <div class="input-group">
-                    <label>E-mailadres</label>
-                    <input type="email" placeholder="naam@voorbeeld.nl" required>
+                    <label>Email Address</label>
+                    <input type="email" id="reg-email" placeholder="name@example.com" required>
                 </div>
                 <div class="input-group">
-                    <label>Wachtwoord</label>
-                    <input type="password" placeholder="Kies een sterk wachtwoord" required>
+                    <label>Choose Password</label>
+                    <input type="password" id="reg-password" placeholder="Choose a strong password" required>
                 </div>
-                <button type="submit" class="btn-primary full-width">Account aanmaken</button>
+                <button type="submit" class="btn-primary-editorial">Create Account</button>
             </form>
-            <p class="auth-switch">Al een account? <a href="#" id="show-login">Log hier in</a></p>
+
+            <p class="auth-switch">Already have an account? <a href="#" onclick="toggleAuth()">Log in here</a></p>
         </div>
     </div>
 </main>
 
 <footer>
-    <p>Happy developing ✨ | Bright News 2026</p>
+    <p>Spread the light. ✨ Bright News 2026</p>
 </footer>
 
+<script>
+    // Jouw specifieke projectgegevens
+    const SUPABASE_URL = 'https://rquuqypgaannrakdrabj.supabase.co';
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJxdXVxeXBnYWFubnJha2RyYWJqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA4MTQyODUsImV4cCI6MjA4NjM5MDI4NX0.-H5ZIcLXBflqKvC0VQGlVGIX29G-nceC9ak5IrhJCzg';
+
+    const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+    function toggleAuth() {
+        document.getElementById('login-form').classList.toggle('hidden');
+        document.getElementById('register-form').classList.toggle('hidden');
+    }
+
+    function handleAuth(event, type) {
+        event.preventDefault();
+
+        // 1. Pak de gegevens (voor nu simuleren we alleen)
+        const email = type === 'login' ? document.getElementById('login-email').value : document.getElementById('reg-email').value;
+
+        // 2. Sla de "sessie" op in de browser (localStorage)
+        localStorage.setItem('user_session', JSON.stringify({
+            email: email,
+            isLoggedIn: true,
+            name: type === 'register' ? document.getElementById('reg-name').value : 'Bright Member'
+        }));
+
+        // 3. Geef feedback
+        alert(type === 'login' ? `Welkom terug, ${email}!` : 'Account aangemaakt!');
+
+        // 4. Stuur de gebruiker terug naar de homepagina
+        window.location.href = 'index.html';
+    }
+</script>
 <script src="js/auth.js"></script>
 </body>
 </html>
