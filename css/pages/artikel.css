@@ -1,149 +1,126 @@
-/* =========================================
-   Bright News - Artikel Detail Pagina
-   Gefocust op rust, leesbaarheid en design
-   ========================================= */
+/* css/pages/detail.css */
 
-/* 1. Container & Layout */
-.article-container {
-    max-width: 850px; /* Iets breder voor een rustige witruimte */
-    margin: 0 auto;
-    padding: 140px 20px 80px; /* 140px boven zorgt voor ruimte onder de nav */
-    position: relative; /* Zorgt dat alles normaal scrollt */
-}
-
-/* 2. Het Witte Vlak (De Artikel Kaart) */
-.full-article {
-    background-color: var(--white);
-    padding: 60px; /* Ruime padding voor een luxe gevoel */
-    border-radius: var(--radius-lg);
-    border: 1px solid var(--border-color);
-    box-shadow: var(--shadow-md);
-    position: relative;
-    z-index: 1; /* Zorgt dat het niet over de nav heen gaat */
-}
-
-/* 3. Artikel Header (Bovenzijde) */
-.article-header {
-    margin-bottom: 40px;
-    text-align: left;
-    position: static; /* Forceert dat de titel gewoon mee naar boven scrollt */
-}
-
-.back-link {
-    display: inline-flex;
-    align-items: center;
-    color: var(--medium-text);
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-bottom: 25px;
-    transition: var(--transition);
-}
-
-.back-link:hover {
-    color: var(--bright-green);
-    transform: translateX(-5px);
-}
-
-.article-header h1 {
-    font-size: clamp(2.2rem, 6vw, 3.2rem);
-    line-height: 1.15;
-    margin-bottom: 24px;
-    color: var(--dark-text);
-}
-
-.article-meta {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    font-size: 0.9rem;
-    color: var(--medium-text);
-    border-top: 1px solid var(--border-color);
-    padding-top: 25px;
-}
-
-/* 4. De Body Tekst */
-.article-body {
-    font-size: 1.15rem;
-    line-height: 1.85;
-    color: var(--dark-text);
-}
-
-.article-body .lead {
-    font-size: 1.4rem;
-    font-weight: 700;
-    line-height: 1.6;
-    margin-bottom: 35px;
-    color: #111;
-}
-
-.article-body p {
-    margin-bottom: 28px;
-}
-
-/* 5. Blockquote (Het inspirerende citaat) */
-.article-body blockquote {
-    margin: 50px 0;
-    padding: 20px 0 20px 40px;
-    border-left: 5px solid var(--bright-green);
-    font-size: 1.7rem;
-    font-style: italic;
-    font-weight: 500;
-    color: var(--dark-text);
-    line-height: 1.4;
-    background-color: #f9fff9; /* Heel lichtgroene glans achter de quote */
-    border-radius: 0 var(--radius-md) var(--radius-md) 0;
-}
-
-/* 6. Mobiele Aanpassingen */
-@media (max-width: 768px) {
-    .article-container {
-        padding-top: 100px;
-    }
-
-    .full-article {
-        padding: 40px 25px;
-        border-radius: 0; /* Op mobiel vaak mooier zonder ronde hoeken */
-        border: none;
-        box-shadow: none;
-    }
-
-    .article-header h1 {
-        font-size: 2rem;
-    }
-}
-/* Foto's op de kaartjes */
-.card-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover; /* Zorgt dat de foto mooi vult zonder te vervormen */
-    border-bottom: 2px solid var(--light-bg);
-}
-
-/* De Detailpagina layout */
 .detail-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 850px;
+    margin: 40px auto 60px;
+    background: #ffffff;
+    border-radius: 24px; /* Afronding overal */
+    overflow: hidden; /* DIT zorgt ervoor dat de foto bovenin de ronding volgt */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    animation: fadeIn 0.6s ease-out;
+    position: relative;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.detail-hero {
+    width: 100%;
+    height: 450px;
+    position: relative;
 }
 
 .detail-img {
     width: 100%;
-    max-height: 400px;
+    height: 100%;
     object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    display: block; /* Voorkomt witte kiertjes onder de foto */
 }
 
-.back-btn {
-    background: var(--light-bg);
-    color: white;
+.back-btn-float {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
     border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: 12px 22px;
+    border-radius: 50px;
     cursor: pointer;
-    margin-bottom: 20px;
-    font-weight: bold;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: all 0.2s ease;
+}
+
+.back-btn-float:hover {
+    transform: scale(1.05);
+    background: #ffffff;
+}
+
+.detail-header {
+    padding: 45px 60px 10px;
+}
+
+.detail-meta {
+    margin-bottom: 15px;
+}
+
+.detail-date {
+    color: #888;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.detail-header h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    color: #1a1a1a;
+    margin: 0;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.article-body {
+    padding: 20px 60px 40px;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.article-body p {
+    margin-bottom: 25px;
+}
+
+/* Footer: Geen balken, geen lijnen, alleen de knop */
+.detail-footer {
+    padding: 10px 60px 60px;
+    background: transparent;
+    border: none;
+    display: flex;
+    justify-content: center; /* Mooi gecentreerd */
+}
+
+.source-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 36px;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.source-link:hover {
+    background: #333;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    .detail-container { margin: 20px; border-radius: 20px; }
+    .detail-hero { height: 300px; }
+    .detail-header, .article-body, .detail-footer { padding: 30px 25px; }
+    .detail-header h1 { font-size: 2rem; }
 }

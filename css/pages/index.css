@@ -31,6 +31,15 @@
     gap: 32px;
     padding: 60px 0;
 }
+.news-card {
+    pointer-events: auto; /* Zorgt dat de kaart klikbaar is */
+    position: relative;
+    z-index: 1;
+}
+
+#detail-view:empty {
+    display: none !important; /* Als hij leeg is, mag hij nooit ruimte innemen */
+}
 
 /* --- 3. De "Beautiful" Artikel Kaarten --- */
 .news-card {
