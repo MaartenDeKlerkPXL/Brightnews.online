@@ -2,66 +2,104 @@ let huidigeTaal = 'nl';
 let alleArtikelen = [];
 
 async function laadNieuws(taal) {
-    huidigeTaal = taal;
-    const res = await fetch(`data/news_${taal}.json?t=${Date.now()}`);
-    alleArtikelen = await res.json();
+    try {
+        huidigeTaal = taal;
+        // De ?v=... zorgt dat we altijd de allernieuwste data van GitHub trekken
+        const res = await fetch(`data/news_${taal}.json?v=${Date.now()}`);
+        alleArtikelen = await res.json();
 
-    // Check of we naar een detailpagina moeten kijken
-    const urlParams = new URLSearchParams(window.location.search);
-    const artikelId = urlParams.get('id');
+        console.log("Artikelen ingeladen:", alleArtikelen.length);
 
-    if (artikelId) {
-        toonDetail(artikelId);
-    } else {
-        renderLijst(alleArtikelen);
+        const urlParams = new URLSearchParams(window.location.search);
+        const artikelId = urlParams.get('id');
+
+        if (artikelId) {
+            toonDetail(artikelId);
+        } else {
+            renderLijst(alleArtikelen);
+        }
+    } catch (err) {
+        console.error("Fout bij laden:", err);
     }
 }
 
-function getAfbeelding(artikel, index) {
-    if (artikel.image) return artikel.image;
-    // Gebruik een unieke vrolijke foto van Unsplash op basis van index
-    return `https://images.unsplash.com/photo-${1500000000000 + index}?auto=format&fit=crop&w=800&q=80&sig=${index}`;
-}
-
 function renderLijst(artikelen) {
-    document.getElementById('detail-view').style.display = 'none';
     const container = document.getElementById('news-container');
+    const detailView = document.getElementById('detail-view');
+
     container.style.display = 'grid';
+    detailView.style.display = 'none';
     container.innerHTML = '';
 
     artikelen.forEach((artikel, index) => {
         const card = document.createElement('div');
         card.className = 'news-card';
-        card.onclick = () => { window.location.search = `?id=${artikel.id}`; };
+
+        // Foto logica: RSS foto > Unsplash reserve > grijze placeholder
+        const imgSrc = artikel.image || `https://images.unsplash.com/photo-${1500000000000 + index}?w=800&auto=format&fit=crop&q=60&sig=${index}`;
 
         card.innerHTML = `
-            <img src="${getAfbeelding(artikel, index)}" class="card-img" alt="news">
+            <img src="${imgSrc}" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800'">
             <div class="card-content">
-                <span class="source-tag">${artikel.source}</span>
+                <div class="source-tag">${artikel.source}</div>
                 <h3>${artikel.title}</h3>
-                <p>${artikel.summary.substring(0, 80)}...</p>
+                <p>${artikel.summary ? artikel.summary.substring(0, 85) + '...' : 'Klik voor het hele verhaal.'}</p>
             </div>
         `;
+        // Klikken gaat naar de detailpagina, NIET direct naar de externe link
+        card.onclick = () => {
+            window.history.pushState({}, '', `?id=${artikel.id}`);
+            toonDetail(artikel.id);
+        };
         container.appendChild(card);
     });
 }
 
 function toonDetail(id) {
-    const artikel = alleArtikelen.find(a => a.id === id);
-    if (!artikel) return;
+    const artikel = alleArtikelen.find(a => a.id == id);
+    const container = document.getElementById('news-container');
+    const detailView = document.getElementById('detail-view');
 
-    document.getElementById('news-container').style.display = 'none';
-    const detail = document.getElementById('detail-view');
-    detail.style.display = 'block';
+    if (!artikel) return renderLijst(alleArtikelen);
 
-    detail.innerHTML = `
-        <button onclick="window.location.search=''" class="back-btn">← Terug</button>
-        <img src="${getAfbeelding(artikel, 99)}" class="detail-img">
-        <h1>${artikel.title}</h1>
-        <p class="detail-source">Bron: <strong>${artikel.source}</strong></p>
-        <div class="detail-text">
-            <p>${artikel.summary}</p>
-        </div>
-        <a href="${artikel.link}" target="_blank" class="read-original">Lees het originele artikel op ${artikel.source} →</a>
+    container.style.display = 'none';
+    detailView.style.display = 'block';
+
+    detailView.innerHTML = `
+        <button onclick="window.location.search=''" class="back-btn">← Terug naar overzicht</button>
+        <article class="full-article">
+            <img src="${artikel.image || 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800'}" class="detail-img">
+            <div class="source-tag">${artikel.source}</div>
+            <h1>${artikel.title}</h1>
+            <div class="article-body">
+                <p>${artikel.summary}</p>
+            </div>
+            <hr>
+            <p>Wil je het volledige verhaal lezen?</p>
+            <a href="${artikel.link}" target="_blank" class="source-link">Lees origineel op ${artikel.source} →</a>
+        </article>
     `;
 }
+
+// Deze functie koppelt jouw knoppen aan de lader
+function wisselTaal(taal, vlagTekst, event) {
+    if (event) event.preventDefault();
+
+    // Update de knop tekst
+    document.getElementById('current-lang').innerHTML = `${vlagTekst} <span class="arrow">▼</span>`;
+
+    // Laad het nieuws in de juiste taal
+    laadNieuws(taal);
+}
+
+// Zorg dat de tijdstempel ook wordt getoond
+function updateTijdstempel(artikelen) {
+    if (artikelen.length > 0) {
+        const datum = new Date(artikelen[0].date);
+        const opties = { day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' };
+        document.getElementById('update-time').innerText = `✨ Laatste scan: ${datum.toLocaleDateString('nl-NL', opties)}`;
+    }
+}
+
+// Start de boel
+laadNieuws('nl');

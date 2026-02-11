@@ -11,7 +11,9 @@ const FEEDS = [
     { name: 'Positive.News', url: 'https://www.positive.news/feed/' },
     { name: 'GoodNewsNetwork.org', url: 'https://www.goodnewsnetwork.org/category/news/feed/' },
     { name: 'CNTraveler.com', url: 'https://www.cntraveler.com/feed/rss' },
-    { name: 'Adventure-Journal.com', url: 'https://www.adventure-journal.com/feed/' }
+    { name: 'Adventure-Journal.com', url: 'https://www.adventure-journal.com/feed/' },
+    { name: 'Bright.nl', url: 'https://www.bright.nl/rss' },
+    { name: 'BusinessInsider.com', url: 'https://www.businessinsider.com/rss' }
 ];
 
 async function processNews() {
