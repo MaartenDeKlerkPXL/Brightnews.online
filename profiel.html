@@ -86,10 +86,12 @@
                 <h2>Your Bright Profile ✨</h2>
                 <p>You are currently a <strong>Premium Member</strong>.</p>
             </div>
-            <div class="user-info-card">
+            <div class="user-info-card" style="margin-bottom: 20px; padding: 20px; background: #f9f9f9; border-radius: 12px;">
                 <p><strong>Email:</strong> <span id="user-email-display"></span></p>
             </div>
-            <button onclick="handleLogout()" class="btn-primary-editorial" style="background: #ff4757;">Logout</button>
+            <button onclick="handleLogout()" class="btn-primary-editorial" style="background: #ff4757;">
+                Logout
+            </button>
         </div>
     </div>
 </main>
@@ -99,13 +101,11 @@
 </footer>
 
 <script>
-    // Jouw specifieke projectgegevens
     const SUPABASE_URL = 'https://rquuqypgaannrakdrabj.supabase.co';
     const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJxdXVxeXBnYWFubnJha2RyYWJqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA4MTQyODUsImV4cCI6MjA4NjM5MDI4NX0.-H5ZIcLXBflqKvC0VQGlVGIX29G-nceC9ak5IrhJCzg';
 
     const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
-    // Check status bij het laden van de pagina
     async function checkCurrentSession() {
         const { data: { session } } = await supabase.auth.getSession();
 
@@ -113,26 +113,38 @@
         const registerForm = document.getElementById('register-form');
         const profileView = document.getElementById('profile-view');
         const emailDisplay = document.getElementById('user-email-display');
+        const navLogout = document.getElementById('nav-logout');
 
         if (session) {
             // Gebruiker IS ingelogd
-            loginForm.classList.add('hidden');
-            registerForm.classList.add('hidden');
-            profileView.classList.remove('hidden');
-            emailDisplay.innerText = session.user.email;
+            if (loginForm) loginForm.classList.add('hidden');
+            if (registerForm) registerForm.classList.add('hidden');
+            if (profileView) profileView.classList.remove('hidden');
+            if (emailDisplay) emailDisplay.innerText = session.user.email;
+            if (navLogout) navLogout.classList.remove('hidden'); // Toon logout in nav
         } else {
             // Gebruiker is NIET ingelogd
-            loginForm.classList.remove('hidden');
-            profileView.classList.add('hidden');
+            if (loginForm) loginForm.classList.remove('hidden');
+            if (profileView) profileView.classList.add('hidden');
+            if (navLogout) navLogout.classList.add('hidden'); // Verberg logout in nav
         }
     }
 
+    // Eén duidelijke logout functie
     async function handleLogout() {
-        await supabase.auth.signOut();
-        window.location.reload();
+        console.log("Uitloggen...");
+        const { error } = await supabase.auth.signOut();
+
+        if (error) {
+            console.error("Logout error:", error.message);
+        } else {
+            // Wis lokale sporen en stuur naar home
+            localStorage.removeItem('supabase.auth.token');
+            window.location.href = 'index.html';
+        }
     }
 
-    // Start de check
+    // Start de check direct
     checkCurrentSession();
 </script>
 <script src="js/auth.js"></script>
