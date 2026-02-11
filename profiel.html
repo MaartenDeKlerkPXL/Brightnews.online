@@ -54,7 +54,6 @@
                 <h2>Welcome back! 😊</h2>
                 <p>Log in for your daily dose of positivity.</p>
             </div>
-
             <form onsubmit="handleAuth(event, 'login')">
                 <div class="input-group">
                     <label>Email Address</label>
@@ -66,33 +65,31 @@
                 </div>
                 <button type="submit" class="btn-primary-editorial">Login</button>
             </form>
-
             <p class="auth-switch">New here? <a href="#" onclick="toggleAuth()">Create an account</a></p>
         </div>
 
         <div id="register-form" class="form-container hidden">
             <div class="auth-header">
-                <h2>Become a Bright Member! ✨</h2>
-                <p>Join the community of optimists.</p>
+                <h2>Join the Bright Community ✨</h2>
             </div>
-
             <form onsubmit="handleAuth(event, 'register')">
-                <div class="input-group">
-                    <label>Full Name</label>
-                    <input type="text" id="reg-name" placeholder="Your name" required>
-                </div>
-                <div class="input-group">
-                    <label>Email Address</label>
-                    <input type="email" id="reg-email" placeholder="name@example.com" required>
-                </div>
-                <div class="input-group">
-                    <label>Choose Password</label>
-                    <input type="password" id="reg-password" placeholder="Choose a strong password" required>
-                </div>
+                <div class="input-group"><label>Full Name</label><input type="text" id="reg-name" required></div>
+                <div class="input-group"><label>Email</label><input type="email" id="reg-email" required></div>
+                <div class="input-group"><label>Password</label><input type="password" id="reg-password" required></div>
                 <button type="submit" class="btn-primary-editorial">Create Account</button>
             </form>
+            <p class="auth-switch"><a href="#" onclick="toggleAuth()">Back to Login</a></p>
+        </div>
 
-            <p class="auth-switch">Already have an account? <a href="#" onclick="toggleAuth()">Log in here</a></p>
+        <div id="profile-view" class="form-container hidden">
+            <div class="auth-header">
+                <h2>Your Bright Profile ✨</h2>
+                <p>You are currently a <strong>Premium Member</strong>.</p>
+            </div>
+            <div class="user-info-card">
+                <p><strong>Email:</strong> <span id="user-email-display"></span></p>
+            </div>
+            <button onclick="handleLogout()" class="btn-primary-editorial" style="background: #ff4757;">Logout</button>
         </div>
     </div>
 </main>
@@ -108,30 +105,35 @@
 
     const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
-    function toggleAuth() {
-        document.getElementById('login-form').classList.toggle('hidden');
-        document.getElementById('register-form').classList.toggle('hidden');
+    // Check status bij het laden van de pagina
+    async function checkCurrentSession() {
+        const { data: { session } } = await supabase.auth.getSession();
+
+        const loginForm = document.getElementById('login-form');
+        const registerForm = document.getElementById('register-form');
+        const profileView = document.getElementById('profile-view');
+        const emailDisplay = document.getElementById('user-email-display');
+
+        if (session) {
+            // Gebruiker IS ingelogd
+            loginForm.classList.add('hidden');
+            registerForm.classList.add('hidden');
+            profileView.classList.remove('hidden');
+            emailDisplay.innerText = session.user.email;
+        } else {
+            // Gebruiker is NIET ingelogd
+            loginForm.classList.remove('hidden');
+            profileView.classList.add('hidden');
+        }
     }
 
-    function handleAuth(event, type) {
-        event.preventDefault();
-
-        // 1. Pak de gegevens (voor nu simuleren we alleen)
-        const email = type === 'login' ? document.getElementById('login-email').value : document.getElementById('reg-email').value;
-
-        // 2. Sla de "sessie" op in de browser (localStorage)
-        localStorage.setItem('user_session', JSON.stringify({
-            email: email,
-            isLoggedIn: true,
-            name: type === 'register' ? document.getElementById('reg-name').value : 'Bright Member'
-        }));
-
-        // 3. Geef feedback
-        alert(type === 'login' ? `Welkom terug, ${email}!` : 'Account aangemaakt!');
-
-        // 4. Stuur de gebruiker terug naar de homepagina
-        window.location.href = 'index.html';
+    async function handleLogout() {
+        await supabase.auth.signOut();
+        window.location.reload();
     }
+
+    // Start de check
+    checkCurrentSession();
 </script>
 <script src="js/auth.js"></script>
 </body>
