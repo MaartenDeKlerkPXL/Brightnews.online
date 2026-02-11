@@ -120,3 +120,99 @@ p {
 .mt-2 { margin-top: 2rem; }
 .mb-1 { margin-bottom: 1rem; }
 .mb-2 { margin-bottom: 2rem; }
+
+.bright-toast {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #ffffff;
+    padding: 16px 28px;
+    border-radius: 50px; /* Mooie ronde vorm zoals je knoppen */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    z-index: 1000;
+    animation: slideInRight 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-left: 4px solid #000; /* Een subtiel accent */
+}
+
+.toast-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.toast-icon {
+    font-size: 1.2rem;
+}
+
+.bright-toast p {
+    margin: 0;
+    font-weight: 700;
+    color: #1a1a1a;
+    font-size: 0.95rem;
+}
+
+.bright-toast.fade-out {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.5s ease;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* Wachtwoord oogje */
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.password-wrapper input { padding-right: 45px; }
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* Brede 'Back' button */
+.btn-back-full {
+    width: 100%;
+    padding: 14px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background 0.2s;
+}
+.btn-back-full:hover { background: #e5e5e5; }
+
+/* Logout knop styling */
+.btn-logout-editorial {
+    width: 100%;
+    padding: 16px;
+    background: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+/* Error Toast Styling (in global.css) */
+.bright-toast.error {
+    border-left: 4px solid #ff4757;
+    background: #fffafa;
+}

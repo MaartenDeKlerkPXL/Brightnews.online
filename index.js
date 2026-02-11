@@ -1,12 +1,17 @@
-/* global supabase */ // Voorkomt "unresolved" waarschuwingen voor supabase
+/* global supabase */
 
 let huidigeTaal = 'en';
 let alleArtikelen = [];
 
-// Controleer of er een actieve sessie is in Supabase
+// 1. Controleer of er een actieve sessie is
 async function checkUser() {
-    const { data: { session } } = await supabase.auth.getSession();
-    return session !== null;
+    try {
+        const { data: { session } } = await supabase.auth.getSession();
+        return session !== null;
+    } catch (e) {
+        console.error("Supabase checkUser fout:", e);
+        return false;
+    }
 }
 
 async function laadNieuws(taal) {
@@ -48,8 +53,6 @@ function renderLijst(artikelen) {
         card.className = 'news-card';
 
         const imgSrc = artikel.image || `https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&sig=${index}`;
-
-        // Gebruik de knopTekst variabele om de waarschuwing op te lossen
         const knopTekst = huidigeTaal === 'nl' ? 'Lees het volledige verhaal.' : 'Read the full story.';
 
         card.innerHTML = `
@@ -70,6 +73,8 @@ function renderLijst(artikelen) {
     });
 }
 
+
+
 async function toonDetail(id) {
     const artikel = alleArtikelen.find(a => String(a.id) === String(id));
     const container = document.getElementById('news-container');
@@ -81,9 +86,8 @@ async function toonDetail(id) {
         return;
     }
 
-    // 1. Check de inlog-status
+    // Inlog-status ophalen
     const isIngelogd = await checkUser();
-    console.log("Status check - Ingelogd:", isIngelogd);
 
     container.style.display = 'none';
     if (updateTime) updateTime.style.display = 'none';
@@ -95,7 +99,7 @@ async function toonDetail(id) {
         month: 'long'
     });
 
-    // 2. Logica voor de "Betaalmuur"
+    // Paywall Logica
     let displayContent = artikel.summary;
     let paywallHTML = "";
 
@@ -103,38 +107,33 @@ async function toonDetail(id) {
         const woorden = artikel.summary.split(' ');
         if (woorden.length > 60) {
             displayContent = woorden.slice(0, 60).join(' ') + "...";
+            // Zoek dit stukje in je toonDetail functie in index.js:
             paywallHTML = `
-            <div class="paywall-overlay">
-                <div class="paywall-content">
-                    <h3>✨ ${huidigeTaal === 'nl' ? 'Lees het volledige artikel' : 'Read the full 500+ word article'}</h3>
-                    <p>${huidigeTaal === 'nl' ? 'Log in op je Bright account om verder te lezen.' : 'Log in to your Bright account to continue.'}</p>
-                    <button onclick="window.location.href='profiel.html'" class="btn-primary-editorial">
-                        ${huidigeTaal === 'nl' ? 'Gratis inloggen' : 'Login for Free'}
-                    </button>
-                </div>
-            </div>`;
+                <div class="paywall-overlay">
+                    <div class="paywall-content">
+                        <h3>✨ ${huidigeTaal === 'nl' ? 'Lees het volledige artikel' : 'Read the full 500+ word article'}</h3>
+                        <p>${huidigeTaal === 'nl' ? 'Log in op je Bright account om verder te lezen.' : 'Log in to your Bright account to continue.'}</p>
+                        
+                        <button onclick="window.location.href='profiel.html'" class="btn-primary-editorial">
+                            ${huidigeTaal === 'nl' ? 'Gratis inloggen' : 'Login for Free'}
+                        </button>
+                    </div>
+                </div>`;
         }
     }
 
-    // 3. Bouw de HTML op (één keer toewijzen!)
     detailView.innerHTML = `
-        <article class="detail-container">
             <button onclick="terugNaarOverzicht()" class="back-btn-float">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <path d="M19 12H5M12 19l-7-7 7-7"/>
-                </svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
                 ${huidigeTaal === 'nl' ? 'Terug' : 'Back'}
             </button>
 
             <div class="detail-hero">
-                <img src="${artikel.image || 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200'}" 
-                     class="detail-img" alt="${artikel.title}">
+                <img src="${artikel.image || 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200'}" class="detail-img" alt="${artikel.title}">
             </div>
             
             <header class="detail-header">
-                <div class="detail-meta">
-                    <span class="detail-date">${datum}</span>
-                </div>
+                <div class="detail-meta"><span class="detail-date">${datum}</span></div>
                 <h1>${artikel.title}</h1>
             </header>
             
@@ -149,7 +148,6 @@ async function toonDetail(id) {
                     ${huidigeTaal === 'nl' ? 'Lees origineel op' : 'Read full article on'} ${artikel.source}
                 </a>
             </footer>` : ''}
-        </article>
     `;
 }
 
@@ -165,11 +163,35 @@ function wisselTaal(taal, vlagTekst, event) {
     laadNieuws(taal);
 }
 
-// Global scope binding
+// Global scope
 window.laadNieuws = laadNieuws;
 window.toonDetail = toonDetail;
 window.wisselTaal = wisselTaal;
 window.terugNaarOverzicht = terugNaarOverzicht;
 
-// Start de app
 laadNieuws('en');
+
+function showToast() {
+    const shouldShow = localStorage.getItem('showLoginToast');
+    const message = localStorage.getItem('toastMessage');
+    const type = localStorage.getItem('toastType'); // 'success' of 'error'
+
+    if (shouldShow === 'true' && message) {
+        const toast = document.createElement('div');
+        toast.className = `bright-toast ${type}`;
+        toast.innerHTML = `<div class="toast-content"><p>${message}</p></div>`;
+        document.body.appendChild(toast);
+
+        localStorage.removeItem('showLoginToast');
+        localStorage.removeItem('toastMessage');
+        localStorage.removeItem('toastType');
+
+        setTimeout(() => {
+            toast.classList.add('fade-out');
+            setTimeout(() => toast.remove(), 500);
+        }, 4000);
+    }
+}
+
+// Roep de functie aan bij het starten
+showToast();

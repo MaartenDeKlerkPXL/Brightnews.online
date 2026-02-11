@@ -43,10 +43,12 @@
 </header>
 
 <main class="auth-page-container">
-    <button onclick="window.location.href='index.html'" class="back-btn-float">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-        Back to Home
-    </button>
+    <div class="container" style="max-width: 450px; margin-bottom: 20px; padding: 0;">
+        <button onclick="window.location.href='index.html'" class="btn-back-full">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Back to Home
+        </button>
+    </div>
 
     <div class="auth-box">
         <div id="login-form" class="form-container">
@@ -61,7 +63,10 @@
                 </div>
                 <div class="input-group">
                     <label>Password</label>
-                    <input type="password" id="login-password" placeholder="••••••••" required>
+                    <div class="password-wrapper">
+                        <input type="password" id="login-password" placeholder="••••••••" required>
+                        <span class="toggle-password" onclick="togglePassword('login-password')">👁️</span>
+                    </div>
                 </div>
                 <button type="submit" class="btn-primary-editorial">Login</button>
             </form>
@@ -70,12 +75,18 @@
 
         <div id="register-form" class="form-container hidden">
             <div class="auth-header">
-                <h2>Join the Bright Community ✨</h2>
+                <h2>Join the Community! ✨</h2>
             </div>
             <form onsubmit="handleAuth(event, 'register')">
                 <div class="input-group"><label>Full Name</label><input type="text" id="reg-name" required></div>
                 <div class="input-group"><label>Email</label><input type="email" id="reg-email" required></div>
-                <div class="input-group"><label>Password</label><input type="password" id="reg-password" required></div>
+                <div class="input-group">
+                    <label>Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="reg-password" required>
+                        <span class="toggle-password" onclick="togglePassword('reg-password')">👁️</span>
+                    </div>
+                </div>
                 <button type="submit" class="btn-primary-editorial">Create Account</button>
             </form>
             <p class="auth-switch"><a href="#" onclick="toggleAuth()">Back to Login</a></p>
@@ -84,14 +95,12 @@
         <div id="profile-view" class="form-container hidden">
             <div class="auth-header">
                 <h2>Your Bright Profile ✨</h2>
-                <p>You are currently a <strong>Premium Member</strong>.</p>
+                <p>You are a <strong>Premium Member</strong>.</p>
             </div>
-            <div class="user-info-card" style="margin-bottom: 20px; padding: 20px; background: #f9f9f9; border-radius: 12px;">
+            <div class="user-info-card">
                 <p><strong>Email:</strong> <span id="user-email-display"></span></p>
             </div>
-            <button onclick="handleLogout()" class="btn-primary-editorial" style="background: #ff4757;">
-                Logout
-            </button>
+            <button onclick="handleLogout()" class="btn-logout-editorial">Logout</button>
         </div>
     </div>
 </main>
@@ -99,12 +108,23 @@
 <footer>
     <p>Spread the light. ✨ Bright News 2026</p>
 </footer>
-
+<!--<script>-->
+<!--    const SUPABASE_URL = 'https://rquuqypgaannrakdrabj.supabase.co';-->
+<!--    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJxdXVxeXBnYWFubnJha2RyYWJqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA4MTQyODUsImV4cCI6MjA4NjM5MDI4NX0.-H5ZIcLXBflqKvC0VQGlVGIX29G-nceC9ak5IrhJCzg'; // Zorg dat deze goed staat!-->
+<!--    const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);-->
+<!--</script>-->
 <script>
     const SUPABASE_URL = 'https://rquuqypgaannrakdrabj.supabase.co';
-    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJxdXVxeXBnYWFubnJha2RyYWJqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA4MTQyODUsImV4cCI6MjA4NjM5MDI4NX0.-H5ZIcLXBflqKvC0VQGlVGIX29G-nceC9ak5IrhJCzg';
-
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJxdXVxeXBnYWFubnJha2RyYWJqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA4MTQyODUsImV4cCI6MjA4NjM5MDI4NX0.-H5ZIcLXBflqKvC0VQGlVGIX29G-nceC9ak5IrhJCzg'; // Zorg dat deze goed staat!
     const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+    // Wisselen tussen Login en Registratie
+    function toggleAuth() {
+        const loginForm = document.getElementById('login-form');
+        const registerForm = document.getElementById('register-form');
+        loginForm.classList.toggle('hidden');
+        registerForm.classList.toggle('hidden');
+    }
 
     async function checkCurrentSession() {
         const { data: { session } } = await supabase.auth.getSession();
@@ -113,38 +133,55 @@
         const registerForm = document.getElementById('register-form');
         const profileView = document.getElementById('profile-view');
         const emailDisplay = document.getElementById('user-email-display');
-        const navLogout = document.getElementById('nav-logout');
 
         if (session) {
-            // Gebruiker IS ingelogd
-            if (loginForm) loginForm.classList.add('hidden');
-            if (registerForm) registerForm.classList.add('hidden');
-            if (profileView) profileView.classList.remove('hidden');
-            if (emailDisplay) emailDisplay.innerText = session.user.email;
-            if (navLogout) navLogout.classList.remove('hidden'); // Toon logout in nav
+            loginForm.classList.add('hidden');
+            registerForm.classList.add('hidden');
+            profileView.classList.remove('hidden');
+            emailDisplay.innerText = session.user.email;
         } else {
-            // Gebruiker is NIET ingelogd
-            if (loginForm) loginForm.classList.remove('hidden');
-            if (profileView) profileView.classList.add('hidden');
-            if (navLogout) navLogout.classList.add('hidden'); // Verberg logout in nav
+            loginForm.classList.remove('hidden');
+            registerForm.classList.add('hidden'); // Zorg dat deze altijd start op hidden
+            profileView.classList.add('hidden');
         }
     }
 
-    // Eén duidelijke logout functie
+    async function handleAuth(event, type) {
+        event.preventDefault();
+        const email = type === 'login' ? document.getElementById('login-email').value : document.getElementById('reg-email').value;
+        const password = type === 'login' ? document.getElementById('login-password').value : document.getElementById('reg-password').value;
+
+        if (type === 'register') {
+            const name = document.getElementById('reg-name').value;
+            const { data, error } = await supabase.auth.signUp({
+                email, password, options: { data: { full_name: name } }
+            });
+            if (error) {
+                alert(error.message);
+            } else {
+                // Zet de vlag voor de melding op de homepagina
+                localStorage.setItem('showLoginToast', 'true');
+                localStorage.setItem('toastMessage', 'Account aangemaakt! Welkom bij Bright News ✨');
+                window.location.href = 'index.html';
+            }
+        } else {
+            const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+            if (error) {
+                alert(error.message);
+            } else {
+                // Zet de vlag voor de melding op de homepagina
+                localStorage.setItem('showLoginToast', 'true');
+                localStorage.setItem('toastMessage', 'Succesvol ingelogd! Veel leesplezier 😊');
+                window.location.href = 'index.html';
+            }
+        }
+    }
+
     async function handleLogout() {
-        console.log("Uitloggen...");
-        const { error } = await supabase.auth.signOut();
-
-        if (error) {
-            console.error("Logout error:", error.message);
-        } else {
-            // Wis lokale sporen en stuur naar home
-            localStorage.removeItem('supabase.auth.token');
-            window.location.href = 'index.html';
-        }
+        await supabase.auth.signOut();
+        window.location.href = 'index.html';
     }
 
-    // Start de check direct
     checkCurrentSession();
 </script>
 <script src="js/auth.js"></script>
