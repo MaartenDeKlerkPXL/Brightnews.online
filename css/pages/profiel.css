@@ -282,23 +282,6 @@ form {
     font-size: 1.2rem;
 }
 
-/* Brede 'Back' button */
-.btn-back-full {
-    width: 100%;
-    padding: 14px;
-    background: #f0f0f0;
-    border: none;
-    border-radius: 12px;
-    font-weight: 700;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    transition: background 0.2s;
-}
-.btn-back-full:hover { background: #e5e5e5; }
-
 /* Logout knop styling */
 .btn-logout-editorial {
     width: 100%;
@@ -316,4 +299,184 @@ form {
 .bright-toast.error {
     border-left: 4px solid #ff4757;
     background: #fffafa;
+}
+/* Wachtwoord wrapper voor het oogje */
+.password-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding-right: 45px; /* Ruimte voor het oogje */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+    user-select: none;
+}
+
+/* De brede 'Back to Home' knop */
+.btn-back-full {
+    width: 100%;
+    padding: 16px;
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #1a1a1a;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.btn-back-full:hover {
+    background: #fcfcfc;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+/* Logout knop rood accent */
+.btn-logout-editorial {
+    width: 100%;
+    padding: 16px;
+    background: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-logout-editorial:hover {
+    background: #ff2e44;
+}
+.forgot-password {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 0.85rem;
+}
+
+.forgot-password a {
+    color: #888;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.forgot-password a:hover {
+    color: #000;
+}
+/* De hoofdcontainer die alles verticaal stapelt */
+.auth-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centreert de auth-box horizontaal */
+    min-height: 80vh;
+    padding: 20px;
+}
+
+/* De verfijnde Back knop, precies onder de taal-button */
+.btn-back-minimal {
+    background: transparent;
+    border: none;
+    color: #888;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 10px 0;
+    transition: color 0.2s;
+    font-size: 0.9rem;
+}
+
+.btn-back-minimal:hover {
+    color: #000;
+}
+
+/* De gecentreerde auth-box */
+.auth-box-centered {
+    background: #ffffff;
+    width: 100%;
+    max-width: 450px; /* De breedte van je inlogformulier */
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    overflow: hidden;
+    /* Geen floats meer nodig, flexbox centreert dit nu */
+}
+/* De hoofdcontainer die alles verticaal stapelt */
+.auth-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px; /* Zo hoog mogelijk onder de nav */
+    min-height: 80vh;
+}
+
+/* De 'onzichtbare' balk die de knop links houdt */
+.top-nav-alignment {
+    width: 100%;
+    max-width: 1200px; /* Match dit met je navigatie-breedte */
+    display: flex;
+    justify-content: flex-start; /* Knop naar links */
+    padding: 0 20px;
+    margin: 3rem auto 0 auto;
+
+}
+
+/* De Oude Opmaak: Witte Pill-button met schaduw */
+.btn-back-pill {
+    background: #ffffff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #1a1a1a;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* De diepte die je mooi vond */
+    transition: all 0.2s ease;
+}
+
+.btn-back-pill:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* De gecentreerde auth-box */
+.auth-box-centered {
+    background: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    overflow: hidden;
+    margin: 0 auto; /* Extra zekerheid voor centrering */
+}
+
+/* Zorg dat de knoppen binnen de box de Bright Green kleur hebben */
+.btn-primary-editorial {
+    background: var(--bright-green); /* Jouw variabele uit de CSS */
+    color: white;
+    border-radius: 50px;
+    padding: 16px;
+    border: none;
+    font-weight: 700;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
 }

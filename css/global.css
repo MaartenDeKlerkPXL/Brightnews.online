@@ -123,16 +123,36 @@ p {
 
 .bright-toast {
     position: fixed;
-    top: 30px;
-    right: 30px;
+    /* 100px van de bovenkant, zodat hij onder de nav (meestal 60-80px) valt */
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%); /* Dit centreert hem horizontaal */
     background: #ffffff;
     padding: 16px 28px;
-    border-radius: 50px; /* Mooie ronde vorm zoals je knoppen */
+    border-radius: 50px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-    z-index: 1000;
-    animation: slideInRight 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border-left: 4px solid #000; /* Een subtiel accent */
+    z-index: 9999; /* Zorg dat hij overal bovenop ligt */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-left: 4px solid #000;
+    min-width: 300px;
+    justify-content: center;
+    /* Pas de animatie aan voor een 'drop-down' effect vanuit het midden */
+    animation: slideDownFade 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
+@keyframes slideDownFade {
+    from {
+        transform: translateX(-50%) translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+    }
+}
+
 
 .toast-content {
     display: flex;
@@ -215,4 +235,13 @@ p {
 .bright-toast.error {
     border-left: 4px solid #ff4757;
     background: #fffafa;
+}
+/* Rode variant voor foutmeldingen */
+.bright-toast.error {
+    border-left: 4px solid #ff4757 !important;
+    background: #fff5f5;
+}
+
+.bright-toast.error p {
+    color: #d63031;
 }
