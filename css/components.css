@@ -984,5 +984,19 @@ nav.container {
 .notification.success { border-bottom: 3px solid #2ecc71; }
 .notification.error { border-bottom: 3px solid #e74c3c; }
 .notification.info { border-bottom: 3px solid #3498db; }
+.logo {
+    text-decoration: none; /* Verwijdert de onderstreping */
+    color: inherit;        /* Zorgt dat "Bright" zwart blijft (of je ingestelde kleur) */
+    display: inline-block; /* Zorgt dat de link goed klikbaar is */
+}
+
+.logo:hover {
+    opacity: 0.9;          /* Subtiele feedback als je eroverheen hovert */
+}
+
+/* Zorg dat de span (News) zijn eigen kleur behoudt */
+.logo span {
+    color: var(--bright-green); /* Of de kleur die je eerder had ingesteld */
+}
 
 

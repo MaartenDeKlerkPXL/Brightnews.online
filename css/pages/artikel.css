@@ -243,3 +243,108 @@
     margin-bottom: 20px;
     box-sizing: border-box;
 }
+/* Deel-sectie container */
+.share-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    padding: 30px 0;
+    border-top: 1px solid #eee;
+    width: 100%;
+}
+
+.share-title {
+    font-size: 0.85rem;
+    color: #999;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+.share-wrapper {
+    position: relative; /* Cruciaal voor de zwevende dropdown */
+    display: flex;
+    justify-content: center;
+}
+
+.share-main-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 30px;
+    border-radius: 50px;
+    border: 1px solid #e0e0e0;
+    background: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.share-main-btn:hover {
+    background: #f8f8f8;
+    transform: translateY(-2px);
+}
+
+/* De Dropdown (De 'Pill' uit je afbeelding) */
+.share-dropdown {
+    position: absolute;
+    bottom: 80px; /* Iets hoger zodat hij niet over de knop valt */
+    left: 50%;
+    transform: translateX(-50%) translateY(15px);
+    display: flex;
+    gap: 20px;
+    background: white;
+    padding: 15px 25px;
+    border-radius: 100px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    border: 1px solid #eee;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    z-index: 9999; /* Zorg dat hij nergens achter verdwijnt */
+}
+
+.share-dropdown.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.share-dropdown a, .share-dropdown button {
+    color: #444;
+    font-size: 1.3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.share-dropdown a:hover, .share-dropdown button:hover {
+    color: #4CAF50;
+    transform: scale(1.2);
+}
+#notification-container {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    /* DIT IS CRUCIAAL: */
+    pointer-events: none;
+}
+
+.notification {
+    /* Zorg dat de melding zelf WEL klikbaar is indien nodig */
+    pointer-events: auto;
+}

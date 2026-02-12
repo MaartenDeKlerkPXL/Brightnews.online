@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/pages/artikel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
     <script>
@@ -32,7 +33,7 @@
                 </div>
             </div>
 
-            <div class="logo">Bright<span>News</span></div>
+            <a href="index.html" class="logo">Bright<span>News</span></a>
         </div>
         <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu openen">
             <span></span><span></span><span></span>
@@ -94,8 +95,125 @@
             <p>Onderzoekers verwachten dat we met deze snelheid de meest kritieke 'plastic soep' gebieden binnen enkele jaren volledig kunnen herstellen. Het is een prachtig voorbeeld van wat er gebeurt als creativiteit en techniek samenkomen.</p>
         </section>
     </article>
-</main>
+    <div class="share-wrapper">
+        <button onclick="toggleShareMenu(event)" class="share-main-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M16 6l-4-4-4 4M12 2v13"/></svg>
+            Deel dit artikel
+        </button>
 
+        <div id="shareMenu" class="share-dropdown">
+            <a href="#" id="share-wa" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" id="share-fb" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" id="share-x" target="_blank" title="X"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" id="share-li" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" id="share-pi" target="_blank" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" id="share-mail" title="Email"><i class="fas fa-envelope"></i></a>
+            <button onclick="copyLink(event)" title="Kopieer Link"><i class="fas fa-link"></i></button>
+        </div>
+    </div>
+</main>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const url = encodeURIComponent(window.location.href);
+        const title = encodeURIComponent(document.title);
+
+        // Vul de links in
+        document.getElementById('share-wa').href = `https://api.whatsapp.com/send?text=${title}%20${url}`;
+        document.getElementById('share-li').href = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+        document.getElementById('share-x').href = `https://twitter.com/intent/tweet?url=${url}&text=${title}`;
+
+        // Verberg de native share knop als de browser het niet ondersteunt (zoals oude desktop browsers)
+        if (!navigator.share) {
+            document.getElementById('nativeShareBtn').style.display = 'none';
+        }
+    });
+
+    // De 'Magische' mobiele deelknop
+    async function shareNative() {
+        try {
+            await navigator.share({
+                title: document.title,
+                text: 'Check dit artikel op Bright News!',
+                url: window.location.href,
+            });
+        } catch (err) {
+            console.log("Deel-actie geannuleerd");
+        }
+    }
+
+    // Link kopiëren functie
+    function copyToClipboard() {
+        navigator.clipboard.writeText(window.location.href);
+        showNotification("Link gekopieerd naar klembord! 📋", "success");
+    }
+    // 1. Functie om het menu te tonen/verbergen
+    function toggleShareMenu(event) {
+        event.stopPropagation();
+        const menu = document.getElementById('shareMenu');
+        menu.classList.toggle('active');
+
+        // Als we het menu openen, vullen we direct de links in
+        if (menu.classList.contains('active')) {
+            updateShareLinks();
+        }
+    }
+
+    // 2. Functie die de links vult (werkt ook op ingeladen artikelen)
+    function updateShareLinks() {
+        const url = encodeURIComponent(window.location.href);
+        const title = encodeURIComponent(document.title);
+
+        const wa = document.getElementById('share-wa');
+        const li = document.getElementById('share-li');
+
+        if (wa) wa.href = `https://api.whatsapp.com/send?text=${title}%20${url}`;
+        if (li) li.href = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+    }
+
+    // 3. Link kopiëren
+    function copyLink() {
+        navigator.clipboard.writeText(window.location.href);
+        showNotification("Link gekopieerd! 📋", "success");
+        document.getElementById('shareMenu').classList.remove('active');
+    }
+
+    // Klik buiten het menu = menu sluiten
+    document.addEventListener('click', () => {
+        const menu = document.getElementById('shareMenu');
+        if (menu) menu.classList.remove('active');
+    });
+    // 1. Zorg dat de links gevuld worden voor het huidige artikel
+    function updateShareLinks() {
+        const url = encodeURIComponent(window.location.href);
+        const title = encodeURIComponent(document.title);
+
+        if(document.getElementById('share-wa')) document.getElementById('share-wa').href = `https://api.whatsapp.com/send?text=${title}%20${url}`;
+        if(document.getElementById('share-fb')) document.getElementById('share-fb').href = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+        if(document.getElementById('share-x')) document.getElementById('share-x').href = `https://twitter.com/intent/tweet?url=${url}&text=${title}`;
+        if(document.getElementById('share-li')) document.getElementById('share-li').href = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+        if(document.getElementById('share-pi')) document.getElementById('share-pi').href = `https://pinterest.com/pin/create/button/?url=${url}&description=${title}`;
+        if(document.getElementById('share-mail')) document.getElementById('share-mail').href = `mailto:?subject=${title}&body=Check dit artikel: ${url}`;
+    }
+
+    // 2. Het menu tonen
+    function toggleShareMenu(event) {
+        event.stopPropagation();
+        const menu = document.getElementById('shareMenu');
+        menu.classList.toggle('active');
+        updateShareLinks();
+    }
+
+    // 3. Bevestiging bij kopiëren (met jouw showNotification systeem)
+    function copyLink(event) {
+        event.preventDefault();
+        navigator.clipboard.writeText(window.location.href);
+
+        // Jouw eigen melding systeem!
+        showNotification("Link gekopieerd naar klembord! 📋", "success");
+
+        document.getElementById('shareMenu').classList.remove('active');
+    }
+</script>
 <footer>
     <p>Happy developing ✨ | Bright News 2026</p>
 </footer>
