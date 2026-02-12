@@ -938,5 +938,51 @@ nav.container {
         border-top: 1px solid #eee;
     }
 }
+/* Container voor alle meldingen */
+#notification-container {
+    position: fixed;
+    top: 150px; /* Net onder de navigatiebalk van 80px */
+    left: 50%;
+    transform: translateX(-50%); /* Zorgt voor de horizontale centrering */
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Zorgt dat de tekstblokjes zelf ook gecentreerd zijn */
+    gap: 12px;
+    width: 100%; /* Nodig om binnen de 100% te kunnen centreren */
+    pointer-events: none; /* Zorgt dat je nog steeds op knoppen onder de container kunt klikken */
+}
+
+.notification {
+    pointer-events: auto; /* Zorgt dat je de melding wel kunt wegklikken indien nodig */
+    min-width: 320px;
+    max-width: 90%;
+    padding: 14px 24px;
+    border-radius: 50px; /* Een moderne 'pill' vorm */
+    background: white;
+    color: #333;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Tekst in het midden van de pill */
+
+    /* Animatie: Begin iets hoger en onzichtbaar */
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid #eee;
+}
+
+.notification.show {
+    opacity: 1;
+    transform: translateY(0); /* Schuif naar de eindpositie */
+}
+
+/* Subtiele kleuraccenten aan de onderkant in plaats van de zijkant */
+.notification.success { border-bottom: 3px solid #2ecc71; }
+.notification.error { border-bottom: 3px solid #e74c3c; }
+.notification.info { border-bottom: 3px solid #3498db; }
 
 

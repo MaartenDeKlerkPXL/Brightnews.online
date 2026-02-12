@@ -680,3 +680,7 @@ form {
     color: #444;
     margin-bottom: 15px;
 }
+.toggle-password {
+    cursor: pointer;
+    user-select: none; /* Voorkomt dat je de emoji per ongeluk selecteert */
+}

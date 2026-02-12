@@ -57,7 +57,7 @@
 
     </nav>
 </header>
-
+<div id="notification-container"></div>
     <div class="top-nav-alignment">
         <button onclick="window.location.href='index.html'" class="btn-back-pill">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
@@ -87,9 +87,8 @@
                 </div>
                 <button type="submit" class="btn-primary-editorial">Login</button>
             </form>
-            <p class="auth-switch">New here? <a href="#" onclick="toggleAuth()">Create an account</a></p>
+            <p class="auth-switch">New here? <a href="#" onclick="toggleAuth(event)">Create an account</a></p>
         </div>
-
         <div id="register-form" class="form-container hidden">
             <div class="auth-header">
                 <h2>Join the Community! ✨</h2>
@@ -112,7 +111,7 @@
                 </div>
                 <button type="submit" class="btn-primary-editorial">Create Account</button>
             </form>
-            <p class="auth-switch"><a href="#" onclick="toggleAuth()">Back to Login</a></p>
+                <p class="auth-switch"><a href="#" onclick="toggleAuth(event)">Back to Login</a></p>
         </div>
 
         <div id="profile-view" class="form-container hidden">
@@ -159,18 +158,33 @@
 <script src="js/auth.js"></script>
 
 <script>
-    // Deze functie moet BUITEN de DOMContentLoaded staan om door onclick gevonden te worden
+    function togglePassword(event, inputId) {
+        // Voorkom dat het formulier verzendt of verspringt
+        if (event) event.preventDefault();
+
+        const passwordInput = document.getElementById(inputId);
+        const toggleIcon = event.target;
+
+        if (passwordInput.type === 'password') {
+            // Maak het wachtwoord zichtbaar
+            passwordInput.type = 'text';
+            toggleIcon.innerText = '🙈'; // Verander icoon naar 'aapje' of 'doorstreept oog'
+        } else {
+            // Maak het wachtwoord weer onzichtbaar
+            passwordInput.type = 'password';
+            toggleIcon.innerText = '👁️'; // Verander terug naar normaal oog
+        }
+    }
     async function handleLogout() {
-        console.log("Uitloggen gestart...");
         try {
             await window.supabaseClient.auth.signOut();
-            window.location.href = 'index.html';
+            showNotification("Succesvol uitgelogd. Tot ziens! 👋", "success");
+            setTimeout(() => window.location.href = 'index.html', 1500);
         } catch (err) {
-            console.error("Uitloggen mislukt:", err.message);
+            showNotification("Uitloggen mislukt.", "error");
         }
     }
 
-    // Zorg dat deze ook globaal is
     function startUpgrade() {
         window.location.href = 'abonnementen.html';
     }
@@ -209,6 +223,64 @@
         if (upgradeSection) {
             upgradeSection.style.display = isPremium ? 'none' : 'block';
         }
+    }
+    function toggleAuth(event) {
+        if (event) event.preventDefault(); // Voorkomt dat de pagina naar boven springt
+
+        const loginForm = document.getElementById('login-form');
+        const registerForm = document.getElementById('register-form');
+
+        // Toggle de 'hidden' klasse op beide formulieren
+        loginForm.classList.toggle('hidden');
+        registerForm.classList.toggle('hidden');
+    }
+    async function handleForgotPassword(event) {
+        event.preventDefault();
+        const email = document.getElementById('login-email').value;
+
+        if (!email) {
+            showNotification("Vul eerst je e-mailadres in.", "info");
+            return;
+        }
+
+        // DYNAMISCHE URL: Pakt de huidige mapnaam mee (belangrijk voor GitHub)
+        const currentPath = window.location.pathname;
+        const folderPath = currentPath.substring(0, currentPath.lastIndexOf('/'));
+        const resetUrl = window.location.origin + folderPath + '/wachtwoord-vergeten.html';
+
+        console.log("Reset link gaat naar:", resetUrl);
+
+        try {
+            const { error } = await window.supabaseClient.auth.resetPasswordForEmail(email, {
+                redirectTo: resetUrl,
+            });
+
+            if (error) throw error;
+            showNotification("Check je inbox! De herstelmail is onderweg. 📩", "success");
+        } catch (error) {
+            showNotification("Fout: " + error.message, "error");
+        }
+    }
+    function showNotification(message, type = 'success') {
+        const container = document.getElementById('notification-container');
+        const notification = document.createElement('div');
+
+        // Bepaal icoon op basis van type
+        const icon = type === 'success' ? '✅ ' : (type === 'error' ? '❌ ' : 'ℹ️ ');
+
+        notification.className = `notification ${type}`;
+        notification.innerText = icon + message;
+
+        container.appendChild(notification);
+
+        // Animatie in
+        setTimeout(() => notification.classList.add('show'), 10);
+
+        // Verwijder na 4 seconden
+        setTimeout(() => {
+            notification.classList.remove('show');
+            setTimeout(() => notification.remove(), 500);
+        }, 4000);
     }
 </script>
 <script>

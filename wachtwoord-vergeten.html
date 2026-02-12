@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wachtwoord Instellen ✨ Bright News</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages/profiel.css">
+</head>
+<body>
+<header>
+    <nav class="container">
+        <div class="nav-left-group">
+            <div class="dropdown language-picker">
+                <button class="dropbtn" id="current-lang">🇺🇸 English <span class="arrow">▼</span></button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="wisselTaal('en', '🇺🇸 English', event)">🇺🇸 English</a>
+                    <a href="#" onclick="wisselTaal('nl', '🇳🇱 Nederlands', event)">🇳🇱 Nederlands</a>
+                </div>
+            </div>
+            <div class="logo">Bright<span>News</span></div>
+        </div>
+        <button class="hamburger" onclick="toggleMobileMenu()">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="mobileMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="over-ons.html">Over Ons</a></li>
+            <li><a href="abonnementen.html">Abonnementen</a></li>
+            <li class="nav-profile-desktop">
+                <a href="profiel.html" class="profile-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="auth-page-container">
+    <div class="auth-box auth-box-centered">
+        <div class="form-container">
+            <div class="auth-header">
+                <h2>Nieuw wachtwoord 🔐</h2>
+                <p>Kies een sterk wachtwoord dat je goed kunt onthouden.</p>
+            </div>
+
+            <form onsubmit="updatePassword(event)">
+                <div class="input-group">
+                    <label>Nieuw Wachtwoord</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="new-password" placeholder="••••••••" required>
+                        <span class="toggle-password" onclick="togglePassword(event, 'new-password')">👁️</span>
+                    </div>
+                </div>
+                <button type="submit" class="btn-primary-editorial">Wachtwoord Opslaan</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<div id="notification-container"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+    const SUPABASE_URL = 'https://rquuqypgaannrakdrabj.supabase.co';
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJxdXVxeXBnYWFubnJha2RyYWJqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA4MTQyODUsImV4cCI6MjA4NjM5MDI4NX0.-H5ZIcLXBflqKvC0VQGlVGIX29G-nceC9ak5IrhJCzg';
+    window.supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+    function showNotification(message, type = 'success') {
+        const container = document.getElementById('notification-container');
+        const n = document.createElement('div');
+        n.className = `notification ${type}`;
+        n.innerText = (type === 'success' ? '✅ ' : '❌ ') + message;
+        container.appendChild(n);
+        setTimeout(() => n.classList.add('show'), 10);
+        setTimeout(() => { n.classList.remove('show'); setTimeout(() => n.remove(), 500); }, 4000);
+    }
+
+    function togglePassword(event, id) {
+        const input = document.getElementById(id);
+        input.type = input.type === 'password' ? 'text' : 'password';
+        event.target.innerText = input.type === 'password' ? '👁️' : '🙈';
+    }
+
+    async function updatePassword(event) {
+        event.preventDefault();
+        const newPassword = document.getElementById('new-password').value;
+
+        const { error } = await window.supabaseClient.auth.updateUser({
+            password: newPassword
+        });
+
+        if (error) {
+            showNotification("Fout: " + error.message, "error");
+        } else {
+            showNotification("Wachtwoord succesvol gewijzigd! Je wordt doorgestuurd...", "success");
+            setTimeout(() => window.location.href = 'profiel.html', 2000);
+        }
+    }
+</script>
+</body>
+</html>
