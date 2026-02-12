@@ -11,34 +11,50 @@
 <body>
 <header>
     <nav class="container">
-        <div class="dropdown language-picker">
-            <button class="dropbtn" id="current-lang">
-                🇺🇸 English <span class="arrow">▼</span>
-            </button>
-            <div class="dropdown-content">
-                <a href="#" onclick="wisselTaal('en', '🇺🇸 English', event)">🇺🇸 English</a>
-                <a href="#" onclick="wisselTaal('nl', '🇳🇱 Nederlands', event)">🇳🇱 Nederlands</a>
-                <a href="#" onclick="wisselTaal('de', '🇩🇪 Deutsch', event)">🇩🇪 Deutsch</a>
-                <a href="#" onclick="wisselTaal('fr', '🇫🇷 Français', event)">🇫🇷 Français</a>
-                <a href="#" onclick="wisselTaal('es', '🇪🇸 Español', event)">🇪🇸 Español</a>
+        <div class="nav-left-group">
+            <div class="dropdown language-picker">
+                <button class="dropbtn" id="current-lang">
+                    🇺🇸 English <span class="arrow">▼</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="wisselTaal('en', '🇺🇸 English', event)">🇺🇸 English</a>
+                    <a href="#" onclick="wisselTaal('nl', '🇳🇱 Nederlands', event)">🇳🇱 Nederlands</a>
+                    <a href="#" onclick="wisselTaal('de', '🇩🇪 Deutsch', event)">🇩🇪 Deutsch</a>
+                    <a href="#" onclick="wisselTaal('fr', '🇫🇷 Français', event)">🇫🇷 Français</a>
+                    <a href="#" onclick="wisselTaal('es', '🇪🇸 Español', event)">🇪🇸 Español</a>
+                </div>
             </div>
+
+            <div class="logo">Bright<span>News</span></div>
         </div>
-        <div class="logo">Bright<span>News</span></div>
-        <div class="nav-right-group">
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="over-ons.html">Over Ons</a></li>
-                <li><a href="abonnementen.html" class="active">Abonnementen</a></li>
-            </ul>
-            <div class="nav-actions">
+        <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu openen">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="mobileMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="over-ons.html">Over Ons</a></li>
+            <li><a href="abonnementen.html">Abonnementen</a></li>
+
+            <li class="nav-profile-desktop">
                 <a href="profiel.html" class="profile-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                         <circle cx="12" cy="7" r="4"></circle>
                     </svg>
                 </a>
-            </div>
-        </div>
+            </li>
+
+            <li class="nav-profile-mobile">
+                <a href="profiel.html" class="profile-link-text">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    Mijn Profiel
+                </a>
+            </li>
+        </ul>
+
     </nav>
 </header>
 
@@ -127,6 +143,19 @@
             window.location.href = finalUrl;
         } else {
             console.error("Geen Stripe link gevonden voor dit plan.");
+        }
+    }
+</script>
+<script>
+    function toggleMobileMenu() {
+        const menu = document.getElementById('mobileMenu');
+        const hamburger = document.querySelector('.hamburger');
+
+        if (menu) {
+            menu.classList.toggle('active');
+            console.log("Menu status:", menu.classList.contains('active') ? "Open" : "Dicht");
+        } else {
+            console.error("Fout: Element #mobileMenu niet gevonden!");
         }
     }
 </script>

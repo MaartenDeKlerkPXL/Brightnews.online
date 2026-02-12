@@ -865,5 +865,78 @@ nav.container {
         display: flex !important;
     }
 }
+@media (max-width: 768px) {
+    /* Het menu dat uitklapt */
+    .nav-links {
+        display: none; /* Standaard uit */
+        flex-direction: column !important; /* Dwing alles onder elkaar */
+        position: absolute;
+        top: 70px; /* Moet gelijk zijn aan de hoogte van je header */
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 40px 0; /* Ruimte aan boven- en onderkant */
+        gap: 25px; /* Gelijke ruimte tussen elk menu-item */
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        z-index: 999;
+        list-style: none;
+        margin: 0;
+    }
+
+    /* Zorg dat de linkjes zelf ook mooi gecentreerd zijn */
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        font-size: 1.2rem; /* Iets groter op mobiel voor dikke vingers */
+        font-weight: 700;
+        display: block;
+        width: 100%;
+    }
+
+    /* --- HET PROFIEL GEDEELTE --- */
+    .nav-profile-mobile {
+        display: flex !important; /* Zorg dat hij ECHT zichtbaar is op mobiel */
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        padding-top: 25px;
+        border-top: 1px solid #eee; /* Scheidingslijn tussen menu en profiel */
+    }
+
+    .profile-link-text {
+        color: var(--bright-green) !important;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+/* --- Desktop Instellingen --- */
+.nav-profile-desktop {
+    display: flex; /* Zichtbaar op desktop */
+    align-items: center;
+}
+
+.nav-profile-mobile {
+    display: none !important; /* Verberg de tekstversie op desktop */
+}
+
+/* --- Mobiele Instellingen (< 768px) --- */
+@media (max-width: 768px) {
+    .nav-profile-desktop {
+        display: none !important; /* Verberg het losse icoontje in het menu */
+    }
+
+    .nav-profile-mobile {
+        display: flex !important; /* Toon de tekstversie 'Mijn Profiel' */
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+    }
+}
 
 
