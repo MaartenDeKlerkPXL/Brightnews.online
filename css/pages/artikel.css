@@ -222,3 +222,24 @@
     display: inline-block;
     vertical-align: middle;
 }
+/* De buitenste wrapper die de knop verbergt/toont */
+#detail-navigation {
+    width: 100%;
+    display: block; /* Of 'none' via JS, maar als hij zichtbaar is moet hij breed zijn */
+}
+
+/* De container die de knop uitlijnt op de artikelbreedte */
+.top-nav-alignment {
+    max-width: 890px !important; /* Exact de breedte van je artikel */
+    margin-left: auto !important;  /* Magneet links */
+    margin-right: auto !important; /* Magneet rechts */
+    width: 100%;
+
+    padding: 0 20px; /* Zorgt dat de knop op mobiel niet tegen de rand plakt */
+    display: flex;
+    justify-content: flex-start; /* De knop zelf staat links binnen de 890px */
+
+    /* Ruimte onder de knop voordat het artikel begint */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}

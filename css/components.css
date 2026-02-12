@@ -27,7 +27,6 @@ header {
 nav.container {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Essentieel voor de taal-switcher links */
 }
 
 /* Taal Dropdown (Helemaal links) */
@@ -101,7 +100,6 @@ nav.container {
     color: var(--dark-text);
     letter-spacing: -1px;
     user-select: none;
-    margin-left: 2rem;
 }
 
 .logo span {
@@ -206,20 +204,12 @@ footer {
 /* --- 3. RESPONSIVE NAV --- */
 
 @media (max-width: 768px) {
-    .nav-links {
-        display: none; /* Op mobiel zou je hier een hamburger-menu kunnen toevoegen */
-    }
-
     .nav-right-group {
         gap: 1rem;
     }
 
     .language-left {
         margin-right: 1rem;
-    }
-
-    .logo {
-        font-size: 1.3rem;
     }
 }
 
@@ -384,6 +374,496 @@ header, .navbar, nav {
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
     border-radius: 12px;
+}
+/* Verberg hamburger standaard op desktop */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--dark-text);
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    nav.container {
+        justify-content: space-between;
+        position: relative; /* Nodig voor centreren logo */
+        padding: 0 15px;
+    }
+
+    /* Logo Perfect in het Midden */
+    .logo {
+        margin: 0;
+        font-size: 1.2rem;
+        z-index: 10;
+    }
+
+    /* Talenkiezer Links */
+    .language-picker {
+        z-index: 11;
+    }
+
+    .dropbtn { padding: 6px 10px; }
+
+    /* Hamburger & Profiel Rechts */
+    .nav-right-group {
+        z-index: 11;
+    }
+
+    .hamburger { display: flex; }
+
+    /* Het uitklapmenu */
+    .nav-links {
+        display: none; /* Standaard dicht */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        border-bottom: 1px solid var(--border-color);
+        box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex; /* Open als active class aanwezig is */
+    }
+
+    .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+}
+@media (max-width: 768px) {
+    nav.container {
+        justify-content: space-between;
+        position: relative;
+        height: 70px; /* Vaste hoogte voor de nav */
+    }
+
+    /* Het menu dat uitklapt */
+    .nav-links {
+        display: none; /* Standaard uit */
+        position: absolute;
+        top: 70px; /* Precies onder de nav bar */
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 20px;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        z-index: 1000;
+        border-top: 1px solid #eee;
+    }
+
+    /* Wanneer het menu 'active' is, tonen we het */
+    .nav-links.active {
+        display: flex !important;
+    }
+
+    /* Styling voor de profielknop binnen de lijst */
+    .nav-profile-mobile {
+        margin-top: 10px;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+        width: 100%;
+    }
+
+    .profile-link-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        color: var(--bright-green) !important;
+    }
+}
+/* --- Desktop Fix --- */
+
+nav.container {
+    display: flex;
+    align-items: center;
+    /* Verander flex-start naar space-between voor een goede verdeling */
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.8rem;
+    /* Duw de links naar rechts, weg van het logo */
+    margin-left: auto;
+    margin-right: 2.5rem;
+}
+
+/* Verberg de mobiele profiel-link op desktop */
+.nav-profile-mobile {
+    display: none !important;
+}
+
+/* --- Mobiele Media Query Aanpassing --- */
+
+@media (max-width: 768px) {
+    .nav-links {
+        margin-left: 0; /* Reset de margin op mobiel */
+        margin-right: 0;
+        /* Je bestaande mobiele styles blijven hier staan... */
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .nav-links.active {
+        display: flex !important;
+    }
+
+    /* Toon de profiel-link ALLEEN op mobiel */
+    .nav-profile-mobile {
+        display: block !important;
+        margin-top: 10px;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+    }
+}
+/* --- Desktop Instellingen --- */
+
+/* Het icoontje naast de links op desktop */
+.desktop-profile {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Ruimte tussen icoon en hamburger (als die er is) */
+}
+
+/* Verberg de tekst-link die in de mobiele lijst staat */
+.nav-profile-mobile {
+    display: none !important;
+}
+
+/* --- Mobiele Instellingen --- */
+
+@media (max-width: 768px) {
+    /* Verberg het losse icoontje op mobiel */
+    .desktop-profile {
+        display: none !important;
+    }
+
+    /* Toon de tekst-link IN het hamburger menu */
+    .nav-profile-mobile {
+        display: block !important;
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #eee;
+    }
+}
+/* --- Desktop Layout (Basis) --- */
+nav.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Verdeelt links en rechts */
+    position: relative; /* Cruciaal voor het centreren van het logo */
+    height: 70px;
+}
+
+/* Logo: Altijd in het midden, ongeacht de rest */
+.logo {
+    margin: 0 !important;
+    z-index: 10;
+}
+
+/* Rechtergroep: Duwt alles naar de rechterkant */
+.nav-right-group {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: auto;
+}
+
+/* Verberg mobiele elementen op desktop */
+.nav-profile-mobile, .hamburger {
+    display: none !important;
+}
+
+/* --- Mobiele Layout (< 768px) --- */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Verberg standaard op mobiel */
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: var(--shadow-md);
+    }
+
+    /* Toon menu bij klik */
+    .nav-links.active {
+        display: flex !important;
+    }
+
+    /* Toon hamburger en mobiel profiel */
+    .hamburger {
+        display: flex !important;
+    }
+
+    .nav-profile-mobile {
+        display: block !important;
+        border-top: 1px solid #eee;
+        padding-top: 15px;
+    }
+
+    /* Verberg desktop profiel-icoon op mobiel */
+    .desktop-profile {
+        display: none !important;
+    }
+}
+.nav-right-group {
+    margin-left: auto; /* De magneet die alles naar rechts duwt */
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Ruimte tussen je menu-links en het profiel-icoon */
+}
+
+/* --- Desktop Navigatie --- */
+
+nav.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Logo links, Menu rechts */
+    height: 80px;
+    position: relative;
+}
+
+/* 1. Verwijder de absolute positie van het logo */
+.logo {
+    position: static; /* Zet hem terug in de normale volgorde */
+    transform: none;
+    margin-left: 1rem;
+    font-size: 1.6rem;
+}
+
+/* 2. Groepeer taal en logo aan de linkerkant */
+.nav-left-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* 3. Lijn de links en het icoon rechts uit */
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2rem; /* Ruimte tussen de woorden en het icoon */
+}
+
+/* Styling voor het profiel icoon in de lijst */
+.desktop-profile-li {
+    display: flex;
+    align-items: center;
+}
+
+.desktop-profile-li .profile-icon {
+    display: flex;
+    color: var(--dark-text);
+    transition: 0.2s;
+}
+
+/* Verberg mobiele elementen op desktop */
+.nav-profile-mobile, .hamburger {
+    display: none !important;
+}
+
+/* --- Mobiele Media Query --- */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Verberg menu standaard */
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav-links.active { display: flex !important; }
+
+    /* Verberg het icoon op mobiel, toon de tekst "Mijn Profiel" */
+    .desktop-profile-li { display: none !important; }
+    .nav-profile-mobile { display: block !important; border-top: 1px solid #eee; margin-top: 10px; }
+
+    .hamburger { display: flex !important; flex-direction: column; gap: 5px; }
+}
+
+/* 1. De Navigatie Container */
+nav.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Houdt links en rechts maximaal uit elkaar */
+    padding: 0 20px; /* Pas dit aan naar 0 als hij écht tegen de rand moet plakken */
+    height: 80px;
+    width: 100%;
+}
+
+/* 2. De Linkerkant (Talen + Logo) */
+.nav-left-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* DIT IS DE RUIMTE: Vergroot dit voor meer plek tussen taal en logo */
+}
+
+/* 3. De Rechterkant (Menu + Profiel) */
+.nav-right-group {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Extra zekerheid dat alles naar rechts wordt geduwd */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem; /* Ruimte tussen de linkjes onderling */
+    margin: 0;
+    padding: 0;
+}
+
+/* Zorg dat de profiel-li geen extra padding aan de rechterkant heeft */
+.desktop-profile-li {
+    display: flex;
+    align-items: center;
+    padding-right: 0;
+}
+
+/* De hoofdcontainer die alles verdeelt */
+nav.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Houdt links en rechts uit elkaar */
+    padding: 0 20px;
+    height: 80px;
+}
+
+/* De linker groep: Talen + Logo */
+.nav-left-group {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* DIT IS DE FIX: Precies 20px tussen taal en logo */
+}
+
+/* Zorg dat het logo geen gekke margins meer heeft */
+.logo {
+    position: static; /* Zet hem terug in de normale rij */
+    transform: none;
+    margin: 0;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+}
+
+/* De rechter groep: Menu + Profiel */
+.nav-right-group {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem; /* Ruimte tussen de links onderling */
+    margin-left: auto; /* Duwt alles extra naar rechts */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+}
+/* --- DE NIEUWE NAVIGATIE BASIS --- */
+
+nav.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Houdt links en rechts uit elkaar */
+    height: 80px;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* Groepeer taal en logo aan de linkerkant */
+.nav-left-group {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* EXACT 20px tussen vlag en logo */
+}
+
+.logo {
+    /* Reset alles! */
+    position: static !important;
+    transform: none !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+/* Groepeer links en profiel aan de rechterkant */
+.nav-right-group {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Zorgt dat de groep rechts blijft */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2rem; /* Ruimte tussen Home, Over ons, etc. */
+}
+
+/* Zorg dat het profiel-icoon netjes aansluit in de rij */
+.desktop-profile-li {
+    display: flex;
+    align-items: center;
+}
+
+/* Verberg mobiele elementen op desktop */
+.hamburger, .nav-profile-mobile {
+    display: none !important;
+}
+
+/* --- MOBIEL (Alleen voor telefoons) --- */
+@media (max-width: 768px) {
+    .logo {
+        position: absolute !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+    .nav-links {
+        display: none; /* Jouw bestaande mobiele menu logica */
+    }
+    .hamburger {
+        display: flex !important;
+    }
 }
 
 

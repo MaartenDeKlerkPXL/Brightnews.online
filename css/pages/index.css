@@ -82,3 +82,24 @@
 }
 /* Voeg dit toe of pas dit aan */
 /* Voeg dit toe of pas dit aan */
+/* Mobiele optimalisatie voor artikelen */
+@media (max-width: 600px) {
+    .grid-container {
+        /* Zet alle artikelen onder elkaar */
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 10px 15px; /* Geef de zijkanten wat ademruimte */
+    }
+
+    .news-card {
+        border-radius: 16px; /* Iets minder ronde hoeken op mobiel oogt strakker */
+    }
+
+    .card-img {
+        height: 180px; /* Iets lagere afbeelding zodat de tekst sneller in beeld komt */
+    }
+
+    .card-content h3 {
+        font-size: 1.25rem; /* Iets kleinere titels voor betere leesbaarheid */
+    }
+}
