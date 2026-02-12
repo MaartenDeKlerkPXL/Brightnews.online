@@ -243,12 +243,8 @@
             return;
         }
 
-        // DYNAMISCHE URL: Pakt de huidige mapnaam mee (belangrijk voor GitHub)
-        const currentPath = window.location.pathname;
-        const folderPath = currentPath.substring(0, currentPath.lastIndexOf('/'));
-        const resetUrl = window.location.origin + folderPath + '/wachtwoord-vergeten.html';
-
-        console.log("Reset link gaat naar:", resetUrl);
+        // We hardcoderen de link naar je live site zodat de mail altijd klopt
+        const resetUrl = "https://maartendeklerkpxl.github.io/Brightnews-HTML/wachtwoord-vergeten.html";
 
         try {
             const { error } = await window.supabaseClient.auth.resetPasswordForEmail(email, {
@@ -256,7 +252,7 @@
             });
 
             if (error) throw error;
-            showNotification("Check je inbox! De herstelmail is onderweg. 📩", "success");
+            showNotification("Check je inbox! De link stuurt je naar de live site. 📩", "success");
         } catch (error) {
             showNotification("Fout: " + error.message, "error");
         }
