@@ -243,17 +243,6 @@
     margin-bottom: 20px;
     box-sizing: border-box;
 }
-/* Deel-sectie container */
-.share-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 40px auto;
-    padding: 30px 0;
-    border-top: 1px solid #eee;
-    width: 100%;
-}
 
 .share-title {
     font-size: 0.85rem;
@@ -264,48 +253,103 @@
     font-weight: 700;
 }
 
+.notification {
+    /* Zorg dat de melding zelf WEL klikbaar is indien nodig */
+    pointer-events: auto;
+}
+
+.paywall-overlay {
+    position: relative;
+    margin-top: -100px; /* Trekt de paywall over de laatste regels tekst */
+    padding-top: 120px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 40%);
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+}
+
+.paywall-content {
+    background: #fdfdfd;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 -10px 40px rgba(0,0,0,0.05);
+    border: 1px solid #f0f0f0;
+}
+
+.paywall-content h3 {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.paywall-content p {
+    color: #666;
+    margin-bottom: 25px;
+}
+/* --- SCHONE MASTER SHARE STYLING --- */
+.share-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 60px auto 30px;
+    padding-top: 30px;
+    border-top: 1px solid #eee;
+    width: 100%;
+}
+
+.share-title {
+    font-size: 0.85rem;
+    color: #999;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
 .share-wrapper {
-    position: relative; /* Cruciaal voor de zwevende dropdown */
+    position: relative;
     display: flex;
     justify-content: center;
 }
 
 .share-main-btn {
+    background: #1a1a1a !important; /* Forceert zwart voor alle gebruikers */
+    color: white !important;
+    padding: 14px 35px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 14px 30px;
-    border-radius: 50px;
-    border: 1px solid #e0e0e0;
-    background: white;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .share-main-btn:hover {
-    background: #f8f8f8;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    background: #333 !important;
 }
 
-/* De Dropdown (De 'Pill' uit je afbeelding) */
 .share-dropdown {
     position: absolute;
-    bottom: 80px; /* Iets hoger zodat hij niet over de knop valt */
+    bottom: 85px;
     left: 50%;
     transform: translateX(-50%) translateY(15px);
     display: flex;
-    gap: 20px;
-    background: white;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
     padding: 15px 25px;
     border-radius: 100px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-    border: 1px solid #eee;
+    border: 1px solid rgba(0,0,0,0.05);
     opacity: 0;
     visibility: hidden;
     transition: all 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-    z-index: 9999; /* Zorg dat hij nergens achter verdwijnt */
+    z-index: 9999;
 }
 
 .share-dropdown.active {
@@ -314,37 +358,54 @@
     transform: translateX(-50%) translateY(0);
 }
 
+/* De ronde icoon-knoppen binnen het menu */
 .share-dropdown a, .share-dropdown button {
-    color: #444;
-    font-size: 1.3rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.2s, color 0.2s;
+    width: 45px;
+    height: 45px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #f5f5f5;
+    color: #333;
+    font-size: 1.2rem;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
 }
 
 .share-dropdown a:hover, .share-dropdown button:hover {
-    color: #4CAF50;
-    transform: scale(1.2);
-}
-#notification-container {
-    position: fixed;
-    top: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    width: 100%;
-    /* DIT IS CRUCIAAL: */
-    pointer-events: none;
+    background: #4CAF50; /* Jouw Bright-Green */
+    color: white;
+    transform: scale(1.1);
 }
 
-.notification {
-    /* Zorg dat de melding zelf WEL klikbaar is indien nodig */
-    pointer-events: auto;
+/* Succes-flash voor kopiëren */
+.share-main-btn.copy-success {
+    background: #2ecc71 !important;
+    transform: scale(1.05);
+}
+/* Zorg dat de link een flex-container is voor perfecte centrering */
+#share-x {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+/* De SVG zelf schalen naar de grootte van FontAwesome icoontjes */
+.x-icon-svg {
+    width: 1.2rem; /* Exact dezelfde visuele grootte als fa-whatsapp etc. */
+    height: 1.2rem;
+    fill: currentColor; /* Zorgt dat de kleur veranderd bij hover, net als de rest */
+    display: block;
+}
+
+/* Specifieke hover voor X (optioneel, als je hem zwart wilt houden ipv groen) */
+#share-x:hover {
+    background: #000 !important;
+    color: #fff !important;
+}
+.share-dropdown a, .share-dropdown button {
+    background: #f5f5f5;
+    text-decoration: none !important; /* Dit haalt het grijze cirkelrandje weg */
 }

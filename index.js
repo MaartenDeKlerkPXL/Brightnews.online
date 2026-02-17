@@ -64,7 +64,7 @@ function renderLijst(artikelen) {
         card.innerHTML = `
             <img src="${imgSrc}" class="card-img" alt="${artikel.title}">
             <div class="card-content">
-                <div class="source-tag">${artikel.source}</div>
+                    <!-- <div class="source-tag">${artikel.source}</div> -->
                 <h3>${artikel.title}</h3>
                 <p>${artikel.summary ? artikel.summary.substring(0, 85) + '...' : ''}</p>
             </div>
@@ -87,87 +87,112 @@ function renderLijst(artikelen) {
 }
 
 async function toonDetail(id) {
-    // VOEG DEZE REGELS TOE: haal de elementen op uit de HTML
     const detailView = document.getElementById('detail-view');
     const container = document.getElementById('news-container');
     const detailNav = document.getElementById('detail-navigation');
     const updateTime = document.getElementById('update-time');
 
-    // Controleer of de elementen wel bestaan in je HTML
-    if (!detailView || !container) {
-        console.error("Kritieke fout: detail-view of news-container niet gevonden!");
-        return;
-    }
-
-    // De rest van je code...
-    if (detailNav) detailNav.style.display = 'block';
-    window.history.pushState({}, '', `?id=${id}`);
+    if (!detailView || !container) return;
 
     const artikel = alleArtikelen.find(a => String(a.id) === String(id));
     if (!artikel) return;
 
     const userStatus = await checkUser();
 
-    // Scherm wisselen
+    // UI klaarmaken
+    if (detailNav) detailNav.style.display = 'block';
     container.style.display = 'none';
     if (updateTime) updateTime.style.display = 'none';
     detailView.style.display = 'block';
     window.scrollTo(0, 0);
+    window.history.pushState({}, '', `?id=${id}`);
 
-    // Bouw de HTML op (inclusief share knop)...
+    // --- PAYWALL LOGICA ---
+    let displayContent = artikel.summary;
+    let paywallHTML = "";
+
+    if (userStatus.premium !== true) {
+        const woorden = artikel.summary.split(' ');
+        if (woorden.length > 60) {
+            displayContent = woorden.slice(0, 60).join(' ') + "...";
+
+            const knopTekst = userStatus.ingelogd ? 'Upgrade naar Premium' : 'Gratis inloggen';
+
+            paywallHTML = `
+                <div class="paywall-overlay">
+                    <div class="paywall-content">
+                        <h3>✨ Bright Premium Content</h3>
+                        <p>Upgrade je account om het volledige artikel te lezen.</p>
+                        <button onclick="window.location.href='profiel.html'" class="btn-primary-editorial">
+                            ${knopTekst}
+                        </button>
+                    </div>
+                </div>`;
+        }
+    }
+
+    // --- SHARE BUTTON HTML ---
     const shareHtml = `
     <div class="share-section">
-        <p class="share-title">${huidigeTaal === 'nl' ? 'Deel dit artikel' : 'Share this article'}</p>
+        <p class="share-title">Deel dit artikel</p>
         <div class="share-wrapper">
             <button onclick="toggleShareMenu(event)" class="share-main-btn" id="mainShareBtn">
-                <i class="fas fa-share-alt"></i>
-                <span id="share-btn-text">Share</span>
+                <i class="fas fa-share-alt"></i> <span id="share-btn-text">Deel</span>
             </button>
             <div id="shareMenu" class="share-dropdown">
                 <a href="#" id="share-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 <a href="#" id="share-fb" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" id="share-x" target="_blank"><i class="fab fa-x-twitter"></i></a>
-                <a href="#" id="share-li" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+<a href="#" id="share-x" target="_blank" title="Deel op X">
+    <svg class="x-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
+    </svg>
+</a>                <a href="#" id="share-li" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 <a href="#" id="share-mail"><i class="fas fa-envelope"></i></a>
-                <button onclick="copyLink(event)" id="copyBtn"><i class="fas fa-link"></i></button>
+                <button onclick="copyLink(event)"><i class="fas fa-link"></i></button>
             </div>
         </div>
     </div>`;
 
+    // Alles in de detailView plaatsen
     detailView.innerHTML = `
         <div class="detail-hero">
-            <img src="${artikel.image || ''}" class="detail-img">
+            <img src="${artikel.image}" class="detail-img">
         </div>
-        <div class="article-container">
+        <div class="article-container" style="max-width: 800px; margin: 0 auto; padding: 20px;">
             <header class="detail-header">
-                <h1>${artikel.title}</h1>
+                <h1 style="margin-bottom: 20px;">${artikel.title}</h1>
             </header>
-            <section class="article-body">
-                <p>${artikel.summary}</p>
+            <section class="article-body" style="line-height: 1.6; font-size: 1.1rem;">
+                <p>${displayContent}</p>
+                ${paywallHTML}
                 ${shareHtml}
             </section>
+            ${userStatus.premium ? `
+            <footer class="detail-footer" style="margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px;">
+                <a href="${artikel.link}" target="_blank" class="source-link">Lees origineel op ${artikel.source}</a>
+            </footer>` : ''}
         </div>
     `;
 
-    // Activeer de links
-    setTimeout(updateShareLinks, 100);
-}
+    setTimeout(() => {
+        // We geven hier direct de data van het artikel mee!
+        updateShareLinks(artikel.title, window.location.href);
+    }, 150);}
 
-// 5. DE SHARE FUNCTIES
-function updateShareLinks() {
-    const url = encodeURIComponent(window.location.href);
-    const title = encodeURIComponent(document.title);
+function updateShareLinks(artikelTitel, artikelUrl) {
+    const url = encodeURIComponent(artikelUrl || window.location.href);
+    const title = encodeURIComponent(artikelTitel || document.title);
 
-    const elements = {
+    const shareLinks = {
         'share-wa': `https://api.whatsapp.com/send?text=${title}%20${url}`,
         'share-fb': `https://www.facebook.com/sharer/sharer.php?u=${url}`,
         'share-x': `https://twitter.com/intent/tweet?url=${url}&text=${title}`,
         'share-li': `https://www.linkedin.com/sharing/share-offsite/?url=${url}`,
-        'share-pi': `https://pinterest.com/pin/create/button/?url=${url}&description=${title}`,
-        'share-mail': `mailto:?subject=${title}&body=${url}`
+        'share-mail': `mailto:?subject=${title}&body=Check dit artikel op Bright News: ${url}`
     };
 
-    for (const [id, link] of Object.entries(elements)) {
+    // Loop door de links en vul ze in
+    for (const [id, link] of Object.entries(shareLinks)) {
         const el = document.getElementById(id);
         if (el) el.href = link;
     }
