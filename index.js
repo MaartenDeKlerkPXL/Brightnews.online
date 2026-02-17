@@ -9,10 +9,17 @@ async function checkUser() {
         if (!window.supabaseClient) return { ingelogd: false, premium: false };
         const { data: { session } } = await window.supabaseClient.auth.getSession();
         if (!session) return { ingelogd: false, premium: false };
-        const isPremium = session.user.user_metadata?.is_premium === true;
-        return { ingelogd: true, premium: isPremium };
+
+        const meta = session.user.user_metadata;
+        const isPremium = meta?.is_premium === true;
+        const verloopDatum = meta?.premium_until;
+
+        // Check: Is de datum nog in de toekomst?
+        const isGeldig = isPremium && (!verloopDatum || new Date(verloopDatum) > new Date());
+
+        console.log("Premium status:", isGeldig ? "Actief" : "Verstreken");
+        return { ingelogd: true, premium: isGeldig };
     } catch (e) {
-        console.error("CheckUser fout:", e);
         return { ingelogd: false, premium: false };
     }
 }
