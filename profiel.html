@@ -114,6 +114,36 @@
                         <span class="toggle-password" onclick="togglePassword(event, 'reg-password')">👁️</span>
                     </div>
                 </div>
+                <div class="input-group language-selection-group">
+                    <label class="field-label">LANGUAGE</label> <details class="lang-foldable" id="register-lang-details">
+                    <summary>
+                        <span id="selected-lang-label">Select Language</span>
+                        <i class="fas fa-chevron-down arrow-icon"></i>
+                    </summary>
+                    <div class="lang-dropdown-list">
+                        <label class="lang-option-row">
+                            <input type="radio" name="reg-lang" value="en" onchange="updateLangLabel('🇺🇸 English')" checked>
+                            <span class="lang-text">🇺🇸 English</span>
+                        </label>
+                        <label class="lang-option-row">
+                            <input type="radio" name="reg-lang" value="nl" onchange="updateLangLabel('🇳🇱 Nederlands')">
+                            <span class="lang-text">🇳🇱 Nederlands</span>
+                        </label>
+                        <label class="lang-option-row">
+                            <input type="radio" name="reg-lang" value="de" onchange="updateLangLabel('🇩🇪 Deutsch')">
+                            <span class="lang-text">🇩🇪 Deutsch</span>
+                        </label>
+                        <label class="lang-option-row">
+                            <input type="radio" name="reg-lang" value="fr" onchange="updateLangLabel('🇫🇷 Français')">
+                            <span class="lang-text">🇫🇷 Français</span>
+                        </label>
+                        <label class="lang-option-row">
+                            <input type="radio" name="reg-lang" value="es" onchange="updateLangLabel('🇪🇸 Español')">
+                            <span class="lang-text">🇪🇸 Español</span>
+                        </label>
+                    </div>
+                </details>
+                </div>
                 <button type="submit" class="btn-primary-editorial">Create Account</button>
             </form>
                 <p class="auth-switch"><a href="#" onclick="toggleAuth(event)">Back to Login</a></p>
@@ -122,12 +152,13 @@
         <div id="profile-view" class="form-container hidden">
             <div class="auth-header">
                 <h2>Jouw Profiel</h2>
+                <p id="premium-countdown" style="margin-top: 15px; color: #666; font-size: 0.9rem; display: none;"></p>
                 <p id="user-email-display"></p>
-                <div class="discount-section">
+                <div id="discount-section-container" class="discount-section">
                     <h3>Promocode verzilveren 🎁</h3>
                     <div class="promo-input-group">
                         <input type="text" id="promo-code" placeholder="Voer code in (bijv. BRIGHT3)">
-                        <button onclick="applyDiscountCode()" id="apply-promo-btn">Verzilver</button>
+                        <button onclick="applyDiscountCode()" id="apply-promo-btn">Verzilver Code</button>
                     </div>
                     <p id="promo-status-msg"></p>
                 </div>
@@ -155,141 +186,24 @@
 </main>
 
 <script src="js/auth.js"></script>
-<script src="https://cdn.npm.js/npm/@supabase/supabase-js@2"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
 <script>
     const SUPABASE_URL = 'https://rquuqypgaannrakdrabj.supabase.co';
     const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJxdXVxeXBnYWFubnJha2RyYWJqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA4MTQyODUsImV4cCI6MjA4NjM5MDI4NX0.-H5ZIcLXBflqKvC0VQGlVGIX29G-nceC9ak5IrhJCzg';
 
-    // Maak de client globaal aan
     window.supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-    console.log("Supabase Client succesvol gekoppeld! 🚀");
 </script>
 
 <script src="js/auth.js"></script>
 
 <script>
     function togglePassword(event, inputId) {
-        // Voorkom dat het formulier verzendt of verspringt
         if (event) event.preventDefault();
-
         const passwordInput = document.getElementById(inputId);
         const toggleIcon = event.target;
-
-        if (passwordInput.type === 'password') {
-            // Maak het wachtwoord zichtbaar
-            passwordInput.type = 'text';
-            toggleIcon.innerText = '🙈'; // Verander icoon naar 'aapje' of 'doorstreept oog'
-        } else {
-            // Maak het wachtwoord weer onzichtbaar
-            passwordInput.type = 'password';
-            toggleIcon.innerText = '👁️'; // Verander terug naar normaal oog
-        }
-    }
-    async function handleLogout() {
-        try {
-            await window.supabaseClient.auth.signOut();
-            showNotification("Succesvol uitgelogd. Tot ziens! 👋", "success");
-            setTimeout(() => window.location.href = 'index.html', 1500);
-        } catch (err) {
-            showNotification("Uitloggen mislukt.", "error");
-        }
-    }
-
-    function startUpgrade() {
-        window.location.href = 'abonnementen.html';
-    }
-
-    document.addEventListener('DOMContentLoaded', async () => {
-        // Korte pauze voor stabiliteit
-        setTimeout(async () => {
-            try {
-                const { data: { user } } = await window.supabaseClient.auth.getUser();
-                if (user) {
-                    document.getElementById('login-form').classList.add('hidden');
-                    document.getElementById('profile-view').classList.remove('hidden');
-                    updateProfileUI(user);
-                } else {
-                    document.getElementById('login-form').classList.remove('hidden');
-                }
-            } catch (err) {
-                console.error("Fout bij laden profiel:", err);
-            }
-        }, 150);
-    });
-
-    async function updateProfileUI(user) {
-        const emailDisplay = document.getElementById('user-email-display');
-        const badge = document.getElementById('premium-status-badge');
-        const upgradeSection = document.getElementById('upgrade-section');
-
-        if (emailDisplay) emailDisplay.innerText = user.email;
-        const isPremium = user.user_metadata?.is_premium === true;
-
-        if (badge) {
-            badge.innerText = isPremium ? "Bright Premium" : "Gratis Account";
-            badge.className = isPremium ? "badge badge-premium" : "badge badge-free";
-        }
-
-        if (upgradeSection) {
-            upgradeSection.style.display = isPremium ? 'none' : 'block';
-        }
-    }
-    function toggleAuth(event) {
-        if (event) event.preventDefault(); // Voorkomt dat de pagina naar boven springt
-
-        const loginForm = document.getElementById('login-form');
-        const registerForm = document.getElementById('register-form');
-
-        // Toggle de 'hidden' klasse op beide formulieren
-        loginForm.classList.toggle('hidden');
-        registerForm.classList.toggle('hidden');
-    }
-    async function handleForgotPassword(event) {
-        event.preventDefault();
-        const email = document.getElementById('login-email').value;
-
-        if (!email) {
-            showNotification("Vul eerst je e-mailadres in.", "info");
-            return;
-        }
-
-        // We hardcoderen de link naar je live site zodat de mail altijd klopt
-        const resetUrl = "https://maartendeklerkpxl.github.io/Brightnews-HTML/wachtwoord-vergeten.html";
-
-        try {
-            const { error } = await window.supabaseClient.auth.resetPasswordForEmail(email, {
-                redirectTo: resetUrl,
-            });
-
-            if (error) throw error;
-            showNotification("Check je inbox! De link stuurt je naar de live site. 📩", "success");
-        } catch (error) {
-            showNotification("Fout: " + error.message, "error");
-        }
-    }
-    function showNotification(message, type = 'success') {
-        const container = document.getElementById('notification-container');
-        const notification = document.createElement('div');
-
-        // Bepaal icoon op basis van type
-        const icon = type === 'success' ? '✅ ' : (type === 'error' ? '❌ ' : 'ℹ️ ');
-
-        notification.className = `notification ${type}`;
-        notification.innerText = icon + message;
-
-        container.appendChild(notification);
-
-        // Animatie in
-        setTimeout(() => notification.classList.add('show'), 10);
-
-        // Verwijder na 4 seconden
-        setTimeout(() => {
-            notification.classList.remove('show');
-            setTimeout(() => notification.remove(), 500);
-        }, 4000);
+        passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';
+        toggleIcon.innerText = passwordInput.type === 'password' ? '👁️' : '🙈';
     }
 </script>
 <script>
