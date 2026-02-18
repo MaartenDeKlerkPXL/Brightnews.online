@@ -106,6 +106,10 @@ async function toonDetail(id) {
 
     const userStatus = await checkUser();
 
+    // Haal de huidige taal op voor de dynamische teksten
+    const lang = localStorage.getItem('selectedLanguage') || 'en';
+    const t = translations[lang];
+
     // UI klaarmaken
     if (detailNav) detailNav.style.display = 'block';
     container.style.display = 'none';
@@ -114,7 +118,6 @@ async function toonDetail(id) {
     window.scrollTo(0, 0);
     window.history.pushState({}, '', `?id=${id}`);
 
-    // --- PAYWALL LOGICA ---
     let displayContent = artikel.summary;
     let paywallHTML = "";
 
@@ -123,42 +126,53 @@ async function toonDetail(id) {
         if (woorden.length > 60) {
             displayContent = woorden.slice(0, 60).join(' ') + "...";
 
-            const knopTekst = userStatus.ingelogd ? 'Upgrade naar Premium' : 'Gratis inloggen';
+            // 1. Bepaal de juiste KEY voor de vertaling
+            const i18nKey = userStatus.ingelogd ? 'btn_upgrade_now' : 'btn_login_to_read';
+            const knopTekst = t[i18nKey];
 
             paywallHTML = `
-                <div class="paywall-overlay">
-                    <div class="paywall-content">
-                        <h3>✨ Bright Premium Content</h3>
-                        <p>Upgrade je account om het volledige artikel te lezen.</p>
-                        <button onclick="window.location.href='profiel.html'" class="btn-primary-editorial">
-                            ${knopTekst}
-                        </button>
-                    </div>
-                </div>`;
+            <div class="paywall-overlay">
+                <div class="paywall-content">
+                    <h3 data-i18n="premium_title">${t.premium_title}</h3>
+                    <p data-i18n="premium_text">${t.premium_text}</p>
+                    
+                    <button onclick="window.location.href='profiel.html'" 
+                            class="btn-primary-editorial" 
+                            data-i18n="${i18nKey}">
+                        ${knopTekst}
+                    </button>
+                </div>
+            </div>`;
         }
     }
 
-    // --- SHARE BUTTON HTML ---
+    // --- SHARE BUTTON HTML (Nu met vertaling) ---
     const shareHtml = `
     <div class="share-section">
-        <p class="share-title">Deel dit artikel</p>
+        <p class="share-title" data-i18n="share_article">${t.share_article}</p>
         <div class="share-wrapper">
             <button onclick="toggleShareMenu(event)" class="share-main-btn" id="mainShareBtn">
-                <i class="fas fa-share-alt"></i> <span id="share-btn-text">Deel</span>
+                <i class="fas fa-share-alt"></i> <span id="share-btn-text" data-i18n="share_label">${t.share_label}</span>
             </button>
             <div id="shareMenu" class="share-dropdown">
                 <a href="#" id="share-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 <a href="#" id="share-fb" target="_blank"><i class="fab fa-facebook-f"></i></a>
-<a href="#" id="share-x" target="_blank" title="Deel op X">
-    <svg class="x-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
-    </svg>
-</a>                <a href="#" id="share-li" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" id="share-x" target="_blank" title="X">
+                    <svg class="x-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
+                    </svg>
+                </a>
+                <a href="#" id="share-li" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 <a href="#" id="share-mail"><i class="fas fa-envelope"></i></a>
                 <button onclick="copyLink(event)"><i class="fas fa-link"></i></button>
             </div>
         </div>
-    </div>`;
+    </div>
+    <footer class="detail-footer" style="margin-top: 40px;padding-top: 20px;">
+        <a href="${artikel.link}" target="_blank" class="source-link">
+            <span data-i18n="read_original">${t.read_original}</span> ${artikel.source}
+        </a>
+    </footer>`;
 
     // Alles in de detailView plaatsen
     detailView.innerHTML = `
@@ -174,17 +188,13 @@ async function toonDetail(id) {
                 ${paywallHTML}
                 ${shareHtml}
             </section>
-            ${userStatus.premium ? `
-            <footer class="detail-footer" style="margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px;">
-                <a href="${artikel.link}" target="_blank" class="source-link">Lees origineel op ${artikel.source}</a>
-            </footer>` : ''}
         </div>
     `;
 
     setTimeout(() => {
-        // We geven hier direct de data van het artikel mee!
         updateShareLinks(artikel.title, window.location.href);
-    }, 150);}
+    }, 150);
+}
 
 function updateShareLinks(artikelTitel, artikelUrl) {
     const url = encodeURIComponent(artikelUrl || window.location.href);
@@ -217,17 +227,21 @@ function copyLink(event) {
     const btn = document.getElementById('mainShareBtn');
     const btnText = document.getElementById('share-btn-text');
 
+    // Haal de vertaling op
+    const lang = localStorage.getItem('selectedLanguage') || 'en';
+    const t = translations[lang];
+
     navigator.clipboard.writeText(url).then(() => {
-        // Gebruik je Toast systeem
+        // Gebruik de "Copied!" vertaling voor de notificatie
         if (typeof showNotification === "function") {
-            showNotification("Link gekopieerd naar klembord! 📋", "success");
+            showNotification(t.copied, "success");
         }
 
-        // Visuele verandering van de knop
         if (btn && btnText) {
             const oud = btnText.innerText;
-            btn.style.backgroundColor = "#d4edda"; // Lichtgroen
-            btnText.innerText = "Gekopieerd!";
+            btn.style.backgroundColor = "#d4edda";
+            btnText.innerText = t.copied; // Update knop naar "Gekopieerd!"
+
             setTimeout(() => {
                 btn.style.backgroundColor = "";
                 btnText.innerText = oud;
@@ -249,20 +263,45 @@ function terugNaarOverzicht() {
     window.history.pushState({}, '', window.location.pathname);
     laadNieuws(huidigeTaal);
 }
-// --- ZORG DAT DEZE FUNCTIES LOS STAAN (NIET IN EEN ANDERE FUNCTIE) ---
 
-function wisselTaal(taal, vlagTekst, event) {
+function wisselTaal(lang, labelTekst, event) {
     if (event) event.preventDefault();
-    const langBtn = document.getElementById('current-lang');
-    if (langBtn) langBtn.innerHTML = `${vlagTekst} <span class="arrow">▼</span>`;
-    laadNieuws(taal);
+
+    // 1. Update de knop weergave
+    const btn = document.getElementById('current-lang');
+    if (btn) btn.innerHTML = `${labelTekst} <span class="arrow">▼</span>`;
+
+    localStorage.setItem('selectedLanguage', lang);
+
+    // 2. Vertaal tekst elementen (innerHTML voor emoji's/opmaak)
+    const elements = document.querySelectorAll('[data-i18n]');
+    elements.forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+            el.innerHTML = translations[lang][key];
+        }
+    });
+
+    // 3. Vertaal placeholders
+    const placeholders = document.querySelectorAll('[data-i18n-placeholder]');
+    placeholders.forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        if (translations[lang] && translations[lang][key]) {
+            el.placeholder = translations[lang][key];
+        }
+    });
+
+    if (typeof laadArtikelen === 'function') {
+        laadArtikelen(lang);
+    }
 }
 
-function terugNaarOverzicht() {
-    window.history.pushState({}, '', window.location.pathname);
-    // Gebruik de variabele 'huidigeTaal' die bovenaan je script staat
-    laadNieuws(huidigeTaal);
-}
+// 3. DE AUTOMATISCHE CHECK BIJ LADEN
+document.addEventListener('DOMContentLoaded', () => {
+    const opgeslagenTaal = localStorage.getItem('selectedLanguage') || 'en';
+    const labels = { 'en': '🇺🇸 English', 'nl': '🇳🇱 Nederlands', 'de': '🇩🇪 Deutsch', 'fr': '🇫🇷 Français', 'es': '🇪🇸 Español' };
+    wisselTaal(opgeslagenTaal, labels[opgeslagenTaal]);
+});
 
 // Maak functies beschikbaar voor de hele browser
 window.toonDetail = toonDetail;
@@ -273,4 +312,6 @@ window.wisselTaal = wisselTaal;
 window.toggleShareMenu = toggleShareMenu;
 window.copyLink = copyLink;
 
-laadNieuws('en');
+// Laad altijd de laatst gekozen taal in plaats van standaard Engels
+const startTaal = localStorage.getItem('selectedLanguage') || 'en';
+laadNieuws(startTaal);

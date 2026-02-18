@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/pages/over-ons.css">
+    <script src="js/translations.js"></script>
+    <script src="index.js"></script>
 </head>
 <body>
 <header>
@@ -31,9 +33,9 @@
             <span></span><span></span><span></span>
         </button>
         <ul class="nav-links" id="mobileMenu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="over-ons.html">Over Ons</a></li>
-            <li><a href="abonnementen.html">Abonnementen</a></li>
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="over-ons.html" data-i18n="nav_about">Over Ons</a></li>
+            <li><a href="abonnementen.html" data-i18n="nav_premium">Abonnementen</a></li>
 
             <li class="nav-profile-desktop">
                 <a href="profiel.html" class="profile-icon">
@@ -45,68 +47,66 @@
             </li>
 
             <li class="nav-profile-mobile">
-                <a href="profiel.html" class="profile-link-text">
+                <a href="profiel.html" class="profile-link-text" data-i18n="nav_profile">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                         <circle cx="12" cy="7" r="4"></circle>
                     </svg>
-                    Mijn Profiel
+                    Profiel
                 </a>
             </li>
         </ul>
 
     </nav>
 </header>
-
 <main>
     <section class="about-hero-vibrant">
         <div class="container">
-            <span class="badge">Hallo zonneschijn! ☀️</span>
-            <h1>Wij zijn jouw dagelijkse dosis goed nieuws.</h1>
-            <p>Eerlijk is eerlijk: de wereld kan soms best een beetje overweldigend zijn. Bij Bright News zetten we de zonnebril op en focussen we ons op de mooie dingen die wél gebeuren.</p>
+            <span class="badge" data-i18n="about_badge">Hallo zonneschijn! ☀️</span>
+            <h1 data-i18n="about_hero_title">Wij zijn jouw dagelijkse dosis goed nieuws.</h1>
+            <p data-i18n="about_hero_p">Eerlijk is eerlijk: de wereld kan soms best een beetje overweldigend zijn. Bij Bright News zetten we de zonnebril op en focussen we ons op de mooie dingen die wél gebeuren.</p>
         </div>
     </section>
 
     <section class="container vrolijk-sectie">
         <div class="text-center">
-            <h2>Waarom Bright News?</h2>
-            <p>Omdat we geloven dat een positieve blik besmettelijk is! Van wetenschappers die oceanen schoonmaken tot kleine daden van vriendelijkheid op de hoek van de straat; er is zoveel om vrolijk van te worden. Wij filteren de ruis weg en laten de lichtpuntjes zien.</p>
+            <h2 data-i18n="about_why_title">Waarom Bright News?</h2>
+            <p data-i18n="about_why_p">Omdat we geloven dat een positieve blik besmettelijk is! Van wetenschappers die oceanen schoonmaken tot kleine daden van vriendelijkheid op de hoek van de straat; er is zoveel om vrolijk van te worden. Wij filteren de ruis weg en laten de lichtpuntjes zien.</p>
         </div>
 
         <div class="icon-features">
             <div class="feature-item">
                 <div class="icon-circle">🌈</div>
-                <h3>Geen Wolken</h3>
-                <p>Alleen berichten waar je energie van krijgt en die je met een gerust hart kunt delen.</p>
+                <h3 data-i18n="about_feat1_title">Geen Wolken</h3>
+                <p data-i18n="about_feat1_p">Alleen berichten waar je energie van krijgt en die je met een gerust hart kunt delen.</p>
             </div>
             <div class="feature-item">
                 <div class="icon-circle">🌍</div>
-                <h3>Wereldwijd</h3>
-                <p>Goede dingen gebeuren overal, van Amsterdam tot aan de andere kant van de oceaan.</p>
+                <h3 data-i18n="about_feat2_title">Wereldwijd</h3>
+                <p data-i18n="about_feat2_p">Goede dingen gebeuren overal, van Amsterdam tot aan de andere kant van de oceaan.</p>
             </div>
             <div class="feature-item">
                 <div class="icon-circle">⏰</div>
-                <h3>Stipt om 12:00</h3>
-                <p>Precies tijdens je lunchpauze serveren wij de lekkerste nieuwtjes van de dag.</p>
+                <h3 data-i18n="about_feat3_title">Stipt om 12:00</h3>
+                <p data-i18n="about_feat3_p">Precies tijdens je lunchpauze serveren wij de lekkerste nieuwtjes van de dag.</p>
             </div>
         </div>
     </section>
 
     <section class="how-it-works-simple">
         <div class="container">
-            <h2>Hoe toveren we dit op je scherm?</h2>
-            <p>Geen ingewikkelde handleidingen, maar een slimme computer (onze AI) die dol is op blije verhalen. Dit is wat er elke ochtend gebeurt:</p>
+            <h2 data-i18n="about_how_title">Hoe toveren we dit op je scherm?</h2>
+            <p data-i18n="about_how_p">Geen ingewikkelde handleidingen, maar een slimme computer (onze AI) die dol is op blije verhalen. Dit is wat er elke ochtend gebeurt:</p>
 
             <ul class="simple-steps">
-                <li><strong>Stap 1: Speuren 🔍</strong> - Onze computer leest duizenden kranten en blogs over de hele wereld.</li>
-                <li><strong>Stap 2: Glimlach-check 😊</strong> - Is het bericht hoopvol? Worden we er blij van? Zo ja, dan mag het door!</li>
-                <li><strong>Stap 3: Vertalen 🗣️</strong> - We maken er een leuk kort verhaal van in jouw eigen taal.</li>
-                <li><strong>Stap 4: Tadaa! 🎉</strong> - Om 12:00 uur precies staat het voor je klaar op de website.</li>
+                <li data-i18n="about_step1"><strong>Stap 1: Speuren 🔍</strong> - Onze computer leest duizenden kranten en blogs over de hele wereld.</li>
+                <li data-i18n="about_step2"><strong>Stap 2: Glimlach-check 😊</strong> - Is het bericht hoopvol? Worden we er blij van? Zo ja, dan mag het door!</li>
+                <li data-i18n="about_step3"><strong>Stap 3: Vertalen 🗣️</strong> - We maken er een leuk kort verhaal van in jouw eigen taal.</li>
+                <li data-i18n="about_step4"><strong>Stap 4: Tadaa! 🎉</strong> - Om 12:00 uur precies staat het voor je klaar op de website.</li>
             </ul>
         </div>
     </section>
 </main>
-
 <footer>
     <div class="container">
         <p>Gemaakt met heel veel positiviteit en een beetje code ✨</p>

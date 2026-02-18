@@ -21,6 +21,7 @@
 
     <script src="js/auth.js"></script>
     <script src="index.js"></script>
+    <script src="js/translations.js"></script>
 </head>
 <body>
 <header>
@@ -45,9 +46,9 @@
             <span></span><span></span><span></span>
         </button>
         <ul class="nav-links" id="mobileMenu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="over-ons.html">Over Ons</a></li>
-            <li><a href="abonnementen.html">Abonnementen</a></li>
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="over-ons.html" data-i18n="nav_about">Over Ons</a></li>
+            <li><a href="abonnementen.html" data-i18n="nav_premium">Abonnementen</a></li>
 
             <li class="nav-profile-desktop">
                 <a href="profiel.html" class="profile-icon">
@@ -59,12 +60,12 @@
             </li>
 
             <li class="nav-profile-mobile">
-                <a href="profiel.html" class="profile-link-text">
+                <a href="profiel.html" class="profile-link-text"  data-i18n="nav_profile">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                         <circle cx="12" cy="7" r="4"></circle>
                     </svg>
-                    Mijn Profiel
+                    Profiel
                 </a>
             </li>
         </ul>
@@ -78,7 +79,7 @@
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                     <path d="M19 12H5M12 19l-7-7 7-7"/>
                 </svg>
-                <span id="back-btn-text">Back</span>
+                <span id="back-btn-text" data-i18n="back">Back</span>
             </button>
         </div>
     </div>
@@ -86,7 +87,7 @@
     <div id="detail-view" class="detail-container" style="display:none;"></div>
 
     <div id="news-container" class="grid-container">
-        <p>Laden van positieve vibes...</p>
+        <p data-i18n="index_loading">Laden van positieve vibes...</p>
     </div>
 </main>
 
@@ -96,7 +97,7 @@
     <div class="container footer-grid">
         <div class="footer-about">
             <div class="footer-logo">Bright<span>News</span></div>
-            <p>
+            <p data-i18n="footer_text">
                 Founded and developed by <strong>Maarten de Klerk</strong>.
                 Maarten is the owner and lead developer of Bright News,
                 dedicated to spreading positive vibes through tech.
@@ -106,24 +107,24 @@
         <div class="footer-links">
             <h4>Explore</h4>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="over-ons.html">Our Mission</a></li>
-                <li><a href="abonnementen.html">Premium</a></li>
-                <li><a href="profiel.html">My Account</a></li>
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="over-ons.html" data-i18n="footer_mission">Our Mission</a></li>
+                <li><a href="abonnementen.html" data-i18n="nav_premium">Premium</a></li>
+                <li><a href="profiel.html" data-i18n="footer_acc">My Account</a></li>
             </ul>
         </div>
 
         <div class="footer-links">
-            <h4>Community</h4>
+            <h4 data-i18n="footer_community">Community</h4>
             <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="mailto:maarten@example.com">Contact Support</a></li>
+                <li><a href="#" data-i18n="footer_privacy">Privacy Policy</a></li>
+                <li><a href="#" data-i18n="footer_service_terms">Terms of Service</a></li>
+                <li><a href="mailto:maarten@example.com" data-i18n="footer_support">Contact Support</a></li>
             </ul>
         </div>
 
         <div class="footer-socials">
-            <h4>Follow the Light</h4>
+            <h4 data-i18n="footer_follow">Follow the Light</h4>
             <div class="social-icons">
                 <a href="https://instagram.com/maartendeklerk" target="_blank" class="social-btn">
                     <i class="fab fa-instagram"></i>
@@ -139,13 +140,13 @@
                 </a>
             </div>
             <div class="framework-badge">
-                <span>100% Vanilla JS • No Frameworks</span>
+                <span data-i18n="footer_no_frameworks">100% Vanilla JS • No Frameworks</span>
             </div>
         </div>
     </div>
 
     <div class="footer-bottom">
-        <p>&copy; 2026 Bright News • All rights reserved • Created with 💚 in the Netherlands</p>
+        <p data-i18n="footer_created_by">&copy; 2026 Bright News • All rights reserved • Created with 💚 in the Netherlands</p>
     </div>
 </footer>
 <script>

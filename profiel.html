@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="css/global.css">
         <link rel="stylesheet" href="css/components.css">
         <link rel="stylesheet" href="css/pages/profiel.css">
+    <script src="index.js"></script>
+    <script src="js/translations.js"></script>
 </head>
 <body>
 <header>
@@ -31,9 +33,9 @@
             <span></span><span></span><span></span>
         </button>
         <ul class="nav-links" id="mobileMenu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="over-ons.html">Over Ons</a></li>
-            <li><a href="abonnementen.html">Abonnementen</a></li>
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="over-ons.html" data-i18n="nav_about">Over Ons</a></li>
+            <li><a href="abonnementen.html" data-i18n="nav_premium">Abonnementen</a></li>
 
             <li class="nav-profile-desktop">
                 <a href="profiel.html" class="profile-icon">
@@ -45,12 +47,12 @@
             </li>
 
             <li class="nav-profile-mobile">
-                <a href="profiel.html" class="profile-link-text">
+                <a href="profiel.html" class="profile-link-text"  data-i18n="nav_profile">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                         <circle cx="12" cy="7" r="4"></circle>
                     </svg>
-                    Mijn Profiel
+                    Profiel
                 </a>
             </li>
         </ul>
@@ -68,120 +70,120 @@
     <div class="auth-box auth-box-centered">
         <div id="login-form" class="form-container">
             <div class="auth-header">
-                <h2>Welcome back! 😊</h2>
+                <h2 data-i18n="login_title">Welcome back! 😊</h2>
             </div>
             <form onsubmit="handleAuth(event, 'login')">
                 <div class="input-group">
-                    <label>Email Address</label>
+                    <label data-i18n="label_email">Email Address</label>
                     <input type="email" id="login-email" placeholder="name@example.com" required>
                 </div>
                 <div class="input-group">
-                    <label>Password</label>
+                    <label data-i18n="label_password">Password</label>
                     <div class="password-wrapper">
                         <input type="password" id="login-password" placeholder="••••••••" required>
                         <span class="toggle-password" onclick="togglePassword(event, 'login-password')">👁️</span>
                     </div>
                     <p class="forgot-password">
-                        <a href="#" onclick="handleForgotPassword(event)">Wachtwoord vergeten?</a>
+                        <a href="#" onclick="handleForgotPassword(event)" data-i18n="forgot_password">Wachtwoord vergeten?</a>
                     </p>
                 </div>
-                <button type="submit" class="btn-primary-editorial">Login</button>
+                <button type="submit" class="btn-primary-editorial" data-i18n="btn_login">Login</button>
             </form>
-            <p class="auth-switch">New here? <a href="#" onclick="toggleAuth(event)">Create an account</a></p>
+            <p class="auth-switch"><span data-i18n="auth_switch_new">New here?</span> <a href="#" onclick="toggleAuth(event)" data-i18n="auth_switch_register">Create an account</a></p>
         </div>
+
         <div id="register-form" class="form-container hidden">
             <div class="auth-header">
-                <h2>Join the Community! ✨</h2>
+                <h2 data-i18n="register_title">Join the Community! ✨</h2>
             </div>
             <div class="input-group">
-                <input type="text" id="register-promo" placeholder="Promo code (optional)">
+                <input type="text" id="register-promo" data-i18n-placeholder="placeholder_promo" placeholder="Promo code (optional)">
                 <i class="fas fa-tag"></i>
             </div>
 
             <form onsubmit="handleAuth(event, 'register')">
                 <div class="input-group">
-                    <label>Full Name</label>
-                    <input type="text" id="reg-name" required placeholder="Secret Superhero Identity">
+                    <label data-i18n="label_name">Full Name</label>
+                    <input type="text" id="reg-name" required data-i18n-placeholder="placeholder_name" placeholder="Secret Superhero Identity">
                 </div>
                 <div class="input-group">
-                    <label>Email Address</label>
+                    <label data-i18n="label_email">Email Address</label>
                     <input type="email" id="reg-email" required placeholder="name@example.com">
                 </div>
                 <div class="input-group">
-                    <label>Password</label>
+                    <label data-i18n="label_password">Password</label>
                     <div class="password-wrapper">
                         <input type="password" id="reg-password" required placeholder="••••••••">
                         <span class="toggle-password" onclick="togglePassword(event, 'reg-password')">👁️</span>
                     </div>
                 </div>
                 <div class="input-group language-selection-group">
-                    <label class="field-label">LANGUAGE</label> <details class="lang-foldable" id="register-lang-details">
-                    <summary>
-                        <span id="selected-lang-label">Select Language<span class="arrow2">▼</span></span>
-                        <i class="fas fa-chevron-down arrow-icon"></i>
-                    </summary>
-                    <div class="lang-dropdown-list">
-                        <label class="lang-option-row">
-                            <input type="radio" name="reg-lang" value="en" onchange="updateLangLabel('🇺🇸 English')" checked>
-                            <span class="lang-text">🇺🇸 English</span>
-                        </label>
-                        <label class="lang-option-row">
-                            <input type="radio" name="reg-lang" value="nl" onchange="updateLangLabel('🇳🇱 Nederlands')">
-                            <span class="lang-text">🇳🇱 Nederlands</span>
-                        </label>
-                        <label class="lang-option-row">
-                            <input type="radio" name="reg-lang" value="de" onchange="updateLangLabel('🇩🇪 Deutsch')">
-                            <span class="lang-text">🇩🇪 Deutsch</span>
-                        </label>
-                        <label class="lang-option-row">
-                            <input type="radio" name="reg-lang" value="fr" onchange="updateLangLabel('🇫🇷 Français')">
-                            <span class="lang-text">🇫🇷 Français</span>
-                        </label>
-                        <label class="lang-option-row">
-                            <input type="radio" name="reg-lang" value="es" onchange="updateLangLabel('🇪🇸 Español')">
-                            <span class="lang-text">🇪🇸 Español</span>
-                        </label>
-                    </div>
-                </details>
+                    <label class="field-label" data-i18n="label_lang">LANGUAGE</label>
+                    <details class="lang-foldable" id="register-lang-details">
+                        <summary>
+                            <span id="selected-lang-label"><span data-i18n="label_select_lang">Select Language</span><span class="arrow2">▼</span></span>
+                            <i class="fas fa-chevron-down arrow-icon"></i>
+                        </summary>
+                        <div class="lang-dropdown-list">
+                            <label class="lang-option-row">
+                                <input type="radio" name="reg-lang" value="en" onchange="updateLangLabel('🇺🇸 English')" checked>
+                                <span class="lang-text">🇺🇸 English</span>
+                            </label>
+                            <label class="lang-option-row">
+                                <input type="radio" name="reg-lang" value="nl" onchange="updateLangLabel('🇳🇱 Nederlands')">
+                                <span class="lang-text">🇳🇱 Nederlands</span>
+                            </label>
+                            <label class="lang-option-row">
+                                <input type="radio" name="reg-lang" value="de" onchange="updateLangLabel('🇩🇪 Deutsch')">
+                                <span class="lang-text">🇩🇪 Deutsch</span>
+                            </label>
+                            <label class="lang-option-row">
+                                <input type="radio" name="reg-lang" value="fr" onchange="updateLangLabel('🇫🇷 Français')">
+                                <span class="lang-text">🇫🇷 Français</span>
+                            </label>
+                            <label class="lang-option-row">
+                                <input type="radio" name="reg-lang" value="es" onchange="updateLangLabel('🇪🇸 Español')">
+                                <span class="lang-text">🇪🇸 Español</span>
+                            </label>
+                        </div>
+                    </details>
                 </div>
-                <button type="submit" class="btn-primary-editorial">Create Account</button>
+                <button type="submit" class="btn-primary-editorial" data-i18n="btn_register">Create Account</button>
             </form>
-                <p class="auth-switch"><a href="#" onclick="toggleAuth(event)">Back to Login</a></p>
+            <p class="auth-switch"><a href="#" onclick="toggleAuth(event)" data-i18n="auth_switch_back">Back to Login</a></p>
         </div>
 
         <div id="profile-view" class="form-container hidden">
             <div class="auth-header">
-                <h2>Jouw Profiel</h2>
+                <h2 data-i18n="profile_title">Jouw Profiel</h2>
                 <p id="premium-countdown" style="margin-top: 15px; color: #666; font-size: 0.9rem; display: none;"></p>
                 <p id="user-email-display"></p>
                 <div id="discount-section-container" class="discount-section">
-                    <h3>Promocode verzilveren 🎁</h3>
+                    <h3 data-i18n="promo_title">Promocode verzilveren 🎁</h3>
                     <div class="promo-input-group">
-                        <input type="text" id="promo-code" placeholder="Voer code in (bijv. BRIGHT3)">
-                        <button onclick="applyDiscountCode()" id="apply-promo-btn">Verzilver Code</button>
+                        <input type="text" id="promo-code" data-i18n-placeholder="placeholder_promo_input" placeholder="Voer code in (bijv. BRIGHT3)">
+                        <button onclick="applyDiscountCode()" id="apply-promo-btn" data-i18n="btn_redeem">Verzilver Code</button>
                     </div>
-                    <p id="promo-status-msg"></p>
                 </div>
             </div>
 
             <div class="status-card">
                 <div class="status-info">
-                    <span class="status-label">Account Status</span>
+                    <span class="status-label" data-i18n="status_label">Account Status</span>
                     <span id="premium-status-badge" class="badge">Gratis Account</span>
                 </div>
 
                 <div id="upgrade-section">
                     <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
-                    <p>Krijg onbeperkt toegang tot alle 500+ woorden artikelen.</p>
-                    <button onclick="startUpgrade()" class="btn-upgrade-premium">
+                    <p data-i18n="upgrade_text">Krijg onbeperkt toegang tot alle 500+ woorden artikelen.</p>
+                    <button onclick="startUpgrade()" class="btn-upgrade-premium" data-i18n="btn_upgrade">
                         ✨ Upgrade naar Premium
                     </button>
                 </div>
             </div>
 
-            <button onclick="handleLogout()" class="btn-logout-editorial">Uitloggen</button>
+            <button onclick="handleLogout()" class="btn-logout-editorial" data-i18n="btn_logout">Uitloggen</button>
         </div>
-
     </div>
 </main>
 

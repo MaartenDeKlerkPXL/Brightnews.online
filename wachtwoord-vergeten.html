@@ -7,33 +7,56 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/pages/profiel.css">
+    <script src="index.js"></script>
+    <script src="js/translations.js"></script>
 </head>
 <body>
 <header>
     <nav class="container">
         <div class="nav-left-group">
             <div class="dropdown language-picker">
-                <button class="dropbtn" id="current-lang">🇺🇸 English <span class="arrow">▼</span></button>
+                <button class="dropbtn" id="current-lang">
+                    🇺🇸 English <span class="arrow">▼</span>
+                </button>
                 <div class="dropdown-content">
                     <a href="#" onclick="wisselTaal('en', '🇺🇸 English', event)">🇺🇸 English</a>
                     <a href="#" onclick="wisselTaal('nl', '🇳🇱 Nederlands', event)">🇳🇱 Nederlands</a>
+                    <a href="#" onclick="wisselTaal('de', '🇩🇪 Deutsch', event)">🇩🇪 Deutsch</a>
+                    <a href="#" onclick="wisselTaal('fr', '🇫🇷 Français', event)">🇫🇷 Français</a>
+                    <a href="#" onclick="wisselTaal('es', '🇪🇸 Español', event)">🇪🇸 Español</a>
                 </div>
             </div>
+
             <a href="index.html" class="logo">Bright<span>News</span></a>
         </div>
-        <button class="hamburger" onclick="toggleMobileMenu()">
+        <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu openen">
             <span></span><span></span><span></span>
         </button>
         <ul class="nav-links" id="mobileMenu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="over-ons.html">Over Ons</a></li>
-            <li><a href="abonnementen.html">Abonnementen</a></li>
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="over-ons.html" data-i18n="nav_about">Over Ons</a></li>
+            <li><a href="abonnementen.html" data-i18n="nav_premium">Abonnementen</a></li>
+
             <li class="nav-profile-desktop">
                 <a href="profiel.html" class="profile-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a>
+            </li>
+
+            <li class="nav-profile-mobile">
+                <a href="profiel.html" class="profile-link-text"  data-i18n="nav_profile">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    Profiel
                 </a>
             </li>
         </ul>
+
     </nav>
 </header>
 
@@ -41,19 +64,19 @@
     <div class="auth-box auth-box-centered">
         <div class="form-container">
             <div class="auth-header">
-                <h2>Nieuw wachtwoord 🔐</h2>
-                <p>Kies een sterk wachtwoord dat je goed kunt onthouden.</p>
+                <h2 data-i18n="reset_title">Nieuw wachtwoord 🔐</h2>
+                <p data-i18n="reset_subtitle">Kies een sterk wachtwoord dat je goed kunt onthouden.</p>
             </div>
 
             <form onsubmit="updatePassword(event)">
                 <div class="input-group">
-                    <label>Nieuw Wachtwoord</label>
+                    <label data-i18n="label_new_password">Nieuw Wachtwoord</label>
                     <div class="password-wrapper">
                         <input type="password" id="new-password" placeholder="••••••••" required>
                         <span class="toggle-password" onclick="togglePassword(event, 'new-password')">👁️</span>
                     </div>
                 </div>
-                <button type="submit" class="btn-primary-editorial">Wachtwoord Opslaan</button>
+                <button type="submit" class="btn-primary-editorial" data-i18n="btn_save_password">Wachtwoord Opslaan</button>
             </form>
         </div>
     </div>

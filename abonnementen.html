@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/pages/abonnementen.css">
+    <script src="index.js"></script>
+    <script src="js/translations.js"></script>
 </head>
 <body>
 <header>
@@ -31,9 +33,9 @@
             <span></span><span></span><span></span>
         </button>
         <ul class="nav-links" id="mobileMenu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="over-ons.html">Over Ons</a></li>
-            <li><a href="abonnementen.html">Abonnementen</a></li>
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="over-ons.html" data-i18n="nav_about">Over Ons</a></li>
+            <li><a href="abonnementen.html" data-i18n="nav_premium">Abonnementen</a></li>
 
             <li class="nav-profile-desktop">
                 <a href="profiel.html" class="profile-icon">
@@ -45,60 +47,59 @@
             </li>
 
             <li class="nav-profile-mobile">
-                <a href="profiel.html" class="profile-link-text">
+                <a href="profiel.html" class="profile-link-text"  data-i18n="nav_profile">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                         <circle cx="12" cy="7" r="4"></circle>
                     </svg>
-                    Mijn Profiel
+                    Profiel
                 </a>
             </li>
         </ul>
 
     </nav>
 </header>
-
 <main class="pricing-page-wrapper">
     <section class="pricing-intro">
-        <h1>Kies jouw dosis zonneschijn ☀️</h1>
+        <h1 data-i18n="pricing_title">Kies jouw dosis zonneschijn ☀️</h1>
     </section>
 
     <section class="pricing-grid container">
         <div class="price-card">
-            <h2>Sparkle</h2>
-            <div class="price-amount">€0<span>/altijd</span></div>
+            <h2 data-i18n="plan_sparkle_name">Sparkle</h2>
+            <div class="price-amount">€0<span data-i18n="price_always">/altijd</span></div>
             <ul class="feature-list">
-                <li>✅ Dagelijkse koppen</li>
-                <li class="disabled">❌ Volledige artikelen</li>
-                <li class="disabled">❌ Reclamevrij</li>
-                <li>✅ 5 talen beschikbaar</li>
+                <li data-i18n="feat_daily_headers">✅ Dagelijkse koppen</li>
+                <li class="disabled" data-i18n="feat_no_articles">❌ Volledige artikelen</li>
+                <li class="disabled" data-i18n="feat_no_ads">❌ Reclamevrij</li>
+                <li data-i18n="feat_5_langs">✅ 5 talen beschikbaar</li>
             </ul>
-            <button onclick="startCheckout('sparkle')" class="btn-secondary">Kies Gratis</button>
+            <button onclick="startCheckout('sparkle')" class="btn-secondary" data-i18n="btn_free">Kies Gratis</button>
         </div>
 
         <div class="price-card popular">
-            <span class="popular-badge">Meest gekozen</span>
-            <h2>Glow</h2>
-            <div class="price-amount">€2,95<span>/maand</span></div>
+            <span class="popular-badge" data-i18n="badge_popular">Meest gekozen</span>
+            <h2 data-i18n="plan_glow_name">Glow</h2>
+            <div class="price-amount">€2,95<span data-i18n="price_monthly">/maand</span></div>
             <ul class="feature-list">
-                <li>✅ Onbeperkt artikelen</li>
-                <li>✅ 100% Reclamevrij</li>
-                <li>✅ Exclusieve AI-insights</li>
-                <li>✅ Direct opzegbaar</li>
+                <li data-i18n="feat_unlimited">✅ Onbeperkt artikelen</li>
+                <li data-i18n="feat_ad_free">✅ 100% Reclamevrij</li>
+                <li data-i18n="feat_ai_insights">✅ Exclusieve AI-insights</li>
+                <li data-i18n="feat_cancel">✅ Direct opzegbaar</li>
             </ul>
-            <button onclick="startCheckout('glow')" class="btn-primary">Start nu</button>
+            <button onclick="startCheckout('glow')" class="btn-primary" data-i18n="btn_glow">Start nu</button>
         </div>
 
         <div class="price-card">
-            <h2>Shine</h2>
-            <div class="price-amount">€24,95<span>/jaar</span></div>
+            <h2 data-i18n="plan_shine_name">Shine</h2>
+            <div class="price-amount">€24,95<span data-i18n="price_yearly">/jaar</span></div>
             <ul class="feature-list">
-                <li>✅ Alles van Glow</li>
-                <li>✅ Bespaar €10 per jaar</li>
-                <li>✅ Steun onze missie</li>
-                <li>✅ Jaarlijks gefactureerd</li>
+                <li data-i18n="feat_all_glow">✅ Alles van Glow</li>
+                <li data-i18n="feat_save_10">✅ Bespaar €10 per jaar</li>
+                <li data-i18n="feat_support">✅ Steun onze missie</li>
+                <li data-i18n="feat_billed_annually">✅ Jaarlijks gefactureerd</li>
             </ul>
-            <button onclick="startCheckout('shine')" class="btn-secondary">Kies Jaarlijks</button>
+            <button onclick="startCheckout('shine')" class="btn-secondary" data-i18n="btn_shine">Kies Jaarlijks</button>
         </div>
     </section>
 </main>
