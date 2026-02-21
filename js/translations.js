@@ -1,4 +1,4 @@
-const translations = {
+window.translations = {
     en: {
         // Navigatie & Basis
         nav_home: "Home",

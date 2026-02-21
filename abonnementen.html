@@ -89,13 +89,7 @@
                 <li data-i18n="feat_cancel">✅ Direct opzegbaar</li>
             </ul>
 
-            <button onclick="window.open('JOUW_HANDMATIGE_BETAAL_LINK', '_blank')" class="btn-primary" data-i18n="btn_glow">Start nu</button>
-
-            <div class="activation-section" style="margin-top: 15px; border-top: 1px solid #eee; pt: 10px;">
-                <input type="text" id="glowCode" placeholder="Code ontvangen?" style="width: 70%; padding: 5px;">
-                <button onclick="activateGlow()" style="width: 25%; cursor: pointer;">OK</button>
-            </div>
-        </div>
+            <button onclick="window.location.href='checkout-glow.html'" class="btn-primary" data-i18n="btn_glow">Kies Maandelijks</button>        </div>
 
         <div class="price-card">
             <h2 data-i18n="plan_shine_name">Shine</h2>
@@ -106,8 +100,7 @@
                 <li data-i18n="feat_support">✅ Steun onze missie</li>
                 <li data-i18n="feat_billed_annually">✅ Jaarlijks gefactureerd</li>
             </ul>
-            <button onclick="startCheckout('shine')" class="btn-secondary" data-i18n="btn_shine">Kies Jaarlijks</button>
-        </div>
+            <button onclick="window.location.href='checkout-shine.html'" class="btn-primary" data-i18n="btn_glow">Kies Jaarlijks</button>         </div>
     </section>
 </main>
 <footer>
@@ -119,40 +112,6 @@
     const SUPABASE_URL = 'https://rquuqypgaannrakdrabj.supabase.co';
     const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJxdXVxeXBnYWFubnJha2RyYWJqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA4MTQyODUsImV4cCI6MjA4NjM5MDI4NX0.-H5ZIcLXBflqKvC0VQGlVGIX29G-nceC9ak5IrhJCzg';
     window.supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-
-    async function startCheckout(plan) {
-        console.log("Checkout gestart voor:", plan);
-
-        // Haal de huidige gebruiker op
-        const { data: { user } } = await window.supabaseClient.auth.getUser();
-
-        // Als er geen gebruiker is, stuur ze naar de login pagina
-        if (!user) {
-            alert("Log eerst even in (of maak een account) om je abonnement te activeren! ✨");
-            window.location.href = 'profiel.html';
-            return;
-        }
-
-        // Jouw Stripe links (vul hier je eigen links in)
-        const stripeLinks = {
-            'glow': 'https://buy.stripe.com/test_dRmaEZ9Zjcgmb3g7Lv5c400',
-            'shine': 'https://buy.stripe.com/test_aFafZjefzfsy3AO9TD5c401'
-        };
-
-        if (plan === 'sparkle') {
-            window.location.href = 'index.html';
-            return;
-        }
-
-        const baseLink = stripeLinks[plan];
-        if (baseLink) {
-            // We voegen het emailadres alvast toe aan Stripe voor het gemak van de klant
-            const finalUrl = baseLink + "?prefilled_email=" + encodeURIComponent(user.email);
-            window.location.href = finalUrl;
-        } else {
-            console.error("Geen Stripe link gevonden voor dit plan.");
-        }
-    }
 </script>
 <script>
     function toggleMobileMenu() {

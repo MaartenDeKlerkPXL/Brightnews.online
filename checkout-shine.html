@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bright News - Betalen</title>
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/global.css">
+  <script src="js/translations.js"></script>
+  <style>
+    .checkout-container { max-width: 800px; margin: 80px auto; text-align: center; font-family: sans-serif; }
+    .payment-options { display: flex; gap: 25px; justify-content: center; margin-top: 40px; }
+    .payment-card { border: 2px solid #f0f0f0; border-radius: 15px; padding: 40px; width: 280px; cursor: pointer; transition: all 0.3s ease; background: white; }
+    .payment-card:hover { transform: translateY(-10px); border-color: #32CD32; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+    .btn-pay { background: #32CD32; color: #F0FFF0; border: none; padding: 12px; border-radius: 8px; font-weight: bold; width: 100%; cursor: pointer; margin-top: 15px; }
+    .user-badge { color: #2e7d32; font-size: 0.9rem; margin-bottom: 20px; border: 1px solid #a5d6a7; background: #e8f5e9; padding: 10px; display: inline-block; border-radius: 8px; }
+    h3 {
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+<nav class="container">
+  <div class="nav-left-group">
+    <div class="dropdown language-picker">
+      <button class="dropbtn" id="current-lang">
+        🇺🇸 English <span class="arrow">▼</span>
+      </button>
+      <div class="dropdown-content">
+        <a href="#" onclick="wisselTaal('en', '🇺🇸 English', event)">🇺🇸 English</a>
+        <a href="#" onclick="wisselTaal('nl', '🇳🇱 Nederlands', event)">🇳🇱 Nederlands</a>
+        <a href="#" onclick="wisselTaal('de', '🇩🇪 Deutsch', event)">🇩🇪 Deutsch</a>
+        <a href="#" onclick="wisselTaal('fr', '🇫🇷 Français', event)">🇫🇷 Français</a>
+        <a href="#" onclick="wisselTaal('es', '🇪🇸 Español', event)">🇪🇸 Español</a>
+      </div>
+    </div>
+
+    <a href="index.html" class="logo">Bright<span>News</span></a>
+  </div>
+  <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu openen">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="mobileMenu">
+    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+    <li><a href="over-ons.html" data-i18n="nav_about">Over Ons</a></li>
+    <li><a href="abonnementen.html" data-i18n="nav_premium">Abonnementen</a></li>
+
+    <li class="nav-profile-desktop">
+      <a href="profiel.html" class="profile-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+      </a>
+    </li>
+
+    <li class="nav-profile-mobile">
+      <a href="profiel.html" class="profile-link-text"  data-i18n="nav_profile">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+        Profiel
+      </a>
+    </li>
+  </ul>
+
+</nav>
+
+<div class="checkout-container">
+  <h1>Kies je betaalmethode</h1>
+  <div id="loggedInAs" class="user-badge">Inloggen controleren...</div>
+
+  <div class="payment-options">
+    <div class="payment-card" onclick="handleAutomaticPayment('paypal')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" height="50">
+      <h3>PayPal</h3>
+      <h3 style="color: #2BB52B">Automatische afschrijving</h3>
+      <button class="btn-pay">Betaal €24,95</button>
+    </div>
+
+    <div class="payment-card" onclick="handleAutomaticPayment('ideal')">
+      <img src="./assets/ideal-logo.svg" alt="iDEAL" height="50">
+      <h3>iDEAL</h3>
+      <h3 style="color: #2BB52B">Geen automatische afschrijving</h3>
+      <button class="btn-pay">Betaal €24,95</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // 1. Haal de ingelogde gebruiker op uit de Supabase kluis
+  function getLoggedInUser() {
+    const rawData = localStorage.getItem('sb-rquuqypgaannrakdrabj-auth-token');
+    if (rawData) {
+      try {
+        const data = JSON.parse(rawData);
+        return data.user.email;
+      } catch (e) {
+        console.error("Fout bij parsen van auth data:", e);
+      }
+    }
+    return localStorage.getItem('user_email') || localStorage.getItem('email');
+  }
+
+  // 2. Update de UI zodra de pagina geladen is
+  document.addEventListener('DOMContentLoaded', () => {
+    const display = document.getElementById('loggedInAs');
+    const email = getLoggedInUser();
+
+    if (email) {
+      display.innerHTML = `✅ Gekoppeld aan: <strong>${email}</strong>`;
+      display.style.color = "green";
+    } else {
+      display.innerHTML = `<span style="color:red">⚠️ Niet ingelogd. Log in om Glow te kopen.</span>`;
+    }
+  });
+
+  // 3. De centrale betaalfunctie (nu zonder dubbele code)
+  async function handleAutomaticPayment(method) {
+    const email = getLoggedInUser();
+
+    if (!email) {
+      alert("Log a.u.b. eerst in."); // Deze alert mag blijven voor veiligheid
+      return;
+    }
+
+    const formspreeUrl = "https://formspree.io/f/mbdazlpn";
+    const methodLabel = method === 'paypal' ? "PayPal (Ko-fi)" : "iDEAL (ING)";
+
+    // 1. Notificatie sturen (gebeurt op de achtergrond)
+    fetch(formspreeUrl, {
+      method: "POST",
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        onderwerp: `BETAALPOGING: ${methodLabel}`,
+        gebruiker: email,
+        betaalmethode: methodLabel,
+        timestamp: new Date().toLocaleString('nl-NL')
+      })
+    }).catch(err => console.log("Notificatie mislukt"));
+
+    // 2. Direct doorsturen naar de juiste pagina in een nieuwe tab
+    if (method === 'paypal') {
+      window.open('https://ko-fi.com/summary/7fd9b4a5-c009-49ae-992e-f5dd0df0bbc3', '_blank');
+    } else {
+      // GEEN ALERT MEER HIER
+      window.open('https://www.ing.nl/payreq/m/?trxid=yjMlYXUEXbj2jxsg8D3Zqhp6LjZscPn1', '_blank');
+    }
+  }
+</script>
+</body>
+</html>
