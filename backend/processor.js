@@ -15,6 +15,50 @@ const FEEDS = [
     { name: 'Bright.nl', url: 'https://www.bright.nl/rss' },
     { name: 'BusinessInsider.com', url: 'https://www.businessinsider.com/rss' }
 ];
+// In backend/processor.js
+async function startUpdate() {
+    console.log("🚀 Starten met nieuws ophalen...");
+
+    // Bij de API call:
+    console.log("🧠 Mistral aanroepen...");
+    try {
+        const response = await callMistral();
+        console.log("✅ Antwoord van Mistral ontvangen!");
+// In backend/processor.js in je catch blok:
+    } catch (error) {
+        console.error("❌ AI Fout:", error.message);
+        // Dit zorgt ervoor dat de GitHub Action direct stopt en niet 6 uur blijft wachten
+        process.exit(1);
+    }}
+// Voorbeeld van een robuuste Mistral aanroep
+async function callMistral(prompt) {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 30000); // 30 seconden limiet
+
+    try {
+        const response = await fetch("https://api.mistral.ai/v1/chat/completions", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${process.env.MISTRAL_API_KEY}`
+            },
+            body: JSON.stringify({
+                model: "mistral-tiny",
+                messages: [{ role: "user", content: prompt }]
+            }),
+            signal: controller.signal
+        });
+
+        if (!response.ok) {
+            const errorBody = await response.text();
+            throw new Error(`API Status ${response.status}: ${errorBody}`);
+        }
+
+        return await response.json();
+    } finally {
+        clearTimeout(timeout);
+    }
+}
 
 async function processNews() {
     let languages = { nl: [], en: [], de: [], fr: [], es: [] };
