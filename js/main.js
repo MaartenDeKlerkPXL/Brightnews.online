@@ -194,3 +194,35 @@ document.addEventListener('DOMContentLoaded', () => {
     applyTranslations(currentLang);
     console.log('Happy developing ✨');
 });
+// Functie voor de handmatige activatie
+function activateGlow() {
+    const inputCode = document.getElementById('glowCode').value.trim();
+
+    // De 'master' code die je aan mensen geeft na betaling
+    const secretCode = "BRIGHT-GLOW-2024";
+
+    if (inputCode === secretCode) {
+        localStorage.setItem('member_status', 'glow');
+        alert("Succes! Je bent nu een Glow member. ✨");
+        updateUIForGlow();
+    } else {
+        alert("Ongeldige code. Probeer het opnieuw of neem contact op.");
+    }
+}
+
+// Functie om de interface aan te passen als iemand lid is
+function updateUIForGlow() {
+    const status = localStorage.getItem('member_status');
+    if (status === 'glow') {
+        document.body.classList.add('user-is-glow');
+
+        // Optioneel: verberg de prijs-kaart als ze al betaald hebben
+        const glowCard = document.querySelector('.price-card.popular');
+        if (glowCard) {
+            glowCard.innerHTML = "<h3>Je bent een Glow Member! 🌟</h3><p>Bedankt voor je steun.</p>";
+        }
+    }
+}
+
+// Check status bij het laden van de pagina
+document.addEventListener('DOMContentLoaded', updateUIForGlow);

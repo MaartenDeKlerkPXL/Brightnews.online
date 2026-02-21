@@ -184,3 +184,18 @@
     font-weight: 700;
     white-space: nowrap;
 }
+/* Speciale styling voor Glow members */
+body.user-is-glow {
+    border-top: 5px solid #ffd700; /* Gouden rand bovenin */
+}
+
+body.user-is-glow .popular-badge {
+    background: linear-gradient(45deg, #ffd700, #ffa500);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}

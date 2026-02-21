@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/pages/abonnementen.css">
     <script src="index.js"></script>
     <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
 <header>
@@ -87,7 +88,13 @@
                 <li data-i18n="feat_ai_insights">✅ Exclusieve AI-insights</li>
                 <li data-i18n="feat_cancel">✅ Direct opzegbaar</li>
             </ul>
-            <button onclick="startCheckout('glow')" class="btn-primary" data-i18n="btn_glow">Start nu</button>
+
+            <button onclick="window.open('JOUW_HANDMATIGE_BETAAL_LINK', '_blank')" class="btn-primary" data-i18n="btn_glow">Start nu</button>
+
+            <div class="activation-section" style="margin-top: 15px; border-top: 1px solid #eee; pt: 10px;">
+                <input type="text" id="glowCode" placeholder="Code ontvangen?" style="width: 70%; padding: 5px;">
+                <button onclick="activateGlow()" style="width: 25%; cursor: pointer;">OK</button>
+            </div>
         </div>
 
         <div class="price-card">
