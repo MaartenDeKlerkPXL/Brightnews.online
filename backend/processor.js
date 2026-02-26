@@ -109,7 +109,25 @@ async function processNews() {
                         responseFormat: { type: 'json_object' }
                     });
 
-                    const data = JSON.parse(chatResponse.choices[0].message.content);
+                    // In backend/processor.js
+
+                    async function verwerkAIRespons(rawText) {
+                        try {
+                            // 1. Schoon de tekst op (AI zet er soms ```json ... ``` omheen)
+                            const cleanJson = rawText
+                                .replace(/```json/g, "")
+                                .replace(/```/g, "")
+                                .trim();
+
+                            return JSON.parse(cleanJson);
+                        } catch (err) {
+                            console.error("❌ JSON Parse Fout op positie:", err.message);
+                            console.error("Gedeelte van defecte tekst:", rawText.substring(4890, 4910)); // Bekijk de omgeving van de fout
+
+                            // CRUCIAAL: Stop het script direct zodat de Action niet blijft hangen
+                            process.exit(1);
+                        }
+                    }
 
                     if (data.isBright) {
                         const articleId = Date.now() + Math.random().toString(36).substr(2, 9);
@@ -135,4 +153,12 @@ async function processNews() {
         await fs.outputJson(`./data/news_${lang}.json`, items, { spaces: 2 });
     }
 }
+// Je hoofdfunctie aanroepen
+main().then(() => {
+    console.log("✅ Alles succesvol verwerkt.");
+    process.exit(0); // Netjes afsluiten
+}).catch(err => {
+    console.error("💥 Fatale fout in hoofdfunctie:", err);
+    process.exit(1); // Stoppen bij fout
+});
 processNews();
