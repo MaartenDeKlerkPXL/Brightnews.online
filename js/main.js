@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentLang = localStorage.getItem('bright_lang') || 'nl';
 
     // 1. Navigatie markeren
-    const currentPath = window.location.pathname.split("/").pop() || "index.html";
+    const currentPath = window.location.pathname.split("/").pop() || "Home.html";
     document.querySelectorAll('.nav-links a').forEach(link => {
         if (link.getAttribute('href') === currentPath) link.classList.add('active');
     });

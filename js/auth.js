@@ -76,7 +76,7 @@ async function handleAuth(event, type) {
             const { error } = await client.auth.signInWithPassword({ email, password });
             if (error) throw error;
             showNotification("Welkom terug! 😊", "success");
-            setTimeout(() => window.location.href = 'index.html', 1000);
+            setTimeout(() => window.location.href = 'Home.html', 1000);
         }
     } catch (error) {
         showNotification(error.message, "error");
@@ -87,7 +87,7 @@ async function handleLogout() {
     try {
         await window.supabaseClient.auth.signOut();
         showNotification("Succesvol uitgelogd! 👋", "success");
-        setTimeout(() => window.location.href = 'index.html', 1500);
+        setTimeout(() => window.location.href = 'Home.html', 1500);
     } catch (err) {
         showNotification("Uitloggen mislukt.", "error");
     }
