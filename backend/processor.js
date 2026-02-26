@@ -15,75 +15,64 @@ const FEEDS = [
     { name: 'Bright.nl', url: 'https://www.bright.nl/rss' },
     { name: 'BusinessInsider.com', url: 'https://www.businessinsider.com/rss' }
 ];
-// In backend/processor.js
-async function startUpdate() {
-    console.log("🚀 Starten met nieuws ophalen...");
 
-    // Bij de API call:
-    console.log("🧠 Mistral aanroepen...");
+/**
+ * Schoon de AI tekst op en parse naar JSON
+ */
+function verwerkAIResponse(rawText) {
     try {
-        const response = await callMistral();
-        console.log("✅ Antwoord van Mistral ontvangen!");
-// In backend/processor.js in je catch blok:
-    } catch (error) {
-        console.error("❌ AI Fout:", error.message);
-        // Dit zorgt ervoor dat de GitHub Action direct stopt en niet 6 uur blijft wachten
-        process.exit(1);
-    }}
-// Voorbeeld van een robuuste Mistral aanroep
-async function callMistral(prompt) {
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 30000); // 30 seconden limiet
-
-    try {
-        const response = await fetch("https://api.mistral.ai/v1/chat/completions", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "Authorization": `Bearer ${process.env.MISTRAL_API_KEY}`
-            },
-            body: JSON.stringify({
-                model: "mistral-tiny",
-                messages: [{ role: "user", content: prompt }]
-            }),
-            signal: controller.signal
-        });
-
-        if (!response.ok) {
-            const errorBody = await response.text();
-            throw new Error(`API Status ${response.status}: ${errorBody}`);
-        }
-
-        return await response.json();
-    } finally {
-        clearTimeout(timeout);
+        const cleanJson = rawText
+            .replace(/```json/g, "")
+            .replace(/```/g, "")
+            .trim();
+        return JSON.parse(cleanJson);
+    } catch (err) {
+        console.error("❌ JSON Parse Fout:", err.message);
+        // We stoppen niet het hele proces bij 1 fout artikel, maar loggen het wel
+        return null;
     }
 }
 
+/**
+ * De kern-logica voor het verwerken van nieuws
+ */
 async function processNews() {
+    console.log("🚀 Starten met nieuws ophalen...");
+
     let languages = { nl: [], en: [], de: [], fr: [], es: [] };
 
+    // 1. Laad bestaande data
     for (const lang of Object.keys(languages)) {
         try {
             languages[lang] = await fs.readJson(`./data/news_${lang}.json`);
-        } catch (e) { languages[lang] = []; }
+        } catch (e) {
+            console.log(`Creating new data file for ${lang}`);
+            languages[lang] = [];
+        }
     }
 
+    // 2. Loop door alle RSS feeds
     for (const feedInfo of FEEDS) {
         try {
             console.log(`📡 Scannen: ${feedInfo.name}`);
             const feed = await parser.parseURL(feedInfo.url);
 
+            // Verwerk de 5 nieuwste items van de feed
             for (const item of feed.items.slice(0, 5)) {
-                if (languages.nl.some(art => art.link === item.link)) continue;
+                // Check of we dit artikel al hebben (op basis van link)
+                if (languages.nl.some(art => art.link === item.link)) {
+                    console.log(`⏭️ Overslaan (reeds aanwezig): ${item.title}`);
+                    continue;
+                }
 
-                // Pak de afbeelding uit de RSS (verschillende tags mogelijk)
+                console.log(`🧠 Analyseren: ${item.title}`);
+
+                // Pak afbeelding uit RSS
                 const imageUrl = item.enclosure?.url ||
                     (item.content?.match(/src="([^"]+)"/)?.[1]) ||
                     null;
 
                 try {
-                    // Zoek dit stukje in je processor.js en vervang de prompt:
                     const chatResponse = await client.chat.complete({
                         model: 'mistral-small-latest',
                         messages: [{
@@ -104,33 +93,17 @@ async function processNews() {
                                      "fr": {"t": "...", "s": "..."}, 
                                      "es": {"t": "...", "s": "..."}
                                     }
-                                    Niet positief? {"isBright": false}`
+                                    Niet positief of geen nieuws? Antwoord dan enkel: {"isBright": false}`
                         }],
                         responseFormat: { type: 'json_object' }
                     });
 
-                    // In backend/processor.js
+                    const data = verwerkAIResponse(chatResponse.choices[0].message.content);
 
-                    async function verwerkAIRespons(rawText) {
-                        try {
-                            // 1. Schoon de tekst op (AI zet er soms ```json ... ``` omheen)
-                            const cleanJson = rawText
-                                .replace(/```json/g, "")
-                                .replace(/```/g, "")
-                                .trim();
-
-                            return JSON.parse(cleanJson);
-                        } catch (err) {
-                            console.error("❌ JSON Parse Fout op positie:", err.message);
-                            console.error("Gedeelte van defecte tekst:", rawText.substring(4890, 4910)); // Bekijk de omgeving van de fout
-
-                            // CRUCIAAL: Stop het script direct zodat de Action niet blijft hangen
-                            process.exit(1);
-                        }
-                    }
-
-                    if (data.isBright) {
+                    if (data && data.isBright) {
+                        console.log(`✨ Positief nieuws gevonden! (${item.title})`);
                         const articleId = Date.now() + Math.random().toString(36).substr(2, 9);
+
                         Object.keys(languages).forEach(lang => {
                             languages[lang].unshift({
                                 id: articleId,
@@ -141,24 +114,41 @@ async function processNews() {
                                 image: imageUrl,
                                 date: new Date().toISOString()
                             });
+                            // Maximaal 50 artikelen per taal bewaren
                             if (languages[lang].length > 50) languages[lang].pop();
                         });
+                    } else {
+                        console.log(`☁️ Artikel niet positief genoeg bevonden.`);
                     }
-                } catch (aiErr) { console.error("AI Fout:", aiErr.message); }
+                } catch (aiErr) {
+                    console.error(`❌ AI Fout bij artikel: ${item.title}`, aiErr.message);
+                }
             }
-        } catch (feedErr) { console.error("Feed Fout:", feedInfo.name); }
+        } catch (feedErr) {
+            console.error(`❌ Feed Fout bij ${feedInfo.name}:`, feedErr.message);
+        }
     }
 
+    // 3. Opslaan van alle bestanden
+    console.log("💾 Resultaten opslaan naar JSON...");
     for (const [lang, items] of Object.entries(languages)) {
+        await fs.ensureDir('./data');
         await fs.outputJson(`./data/news_${lang}.json`, items, { spaces: 2 });
     }
 }
-// Je hoofdfunctie aanroepen
-main().then(() => {
-    console.log("✅ Alles succesvol verwerkt.");
-    process.exit(0); // Netjes afsluiten
-}).catch(err => {
-    console.error("💥 Fatale fout in hoofdfunctie:", err);
-    process.exit(1); // Stoppen bij fout
-});
-processNews();
+
+/**
+ * Hoofdfunctie die alles aanstuurt
+ */
+async function main() {
+    try {
+        await processNews();
+        console.log("✅ Alles succesvol verwerkt.");
+    } catch (err) {
+        console.error("💥 Fatale fout in proces:", err);
+        process.exit(1);
+    }
+}
+
+// Start het script
+main();

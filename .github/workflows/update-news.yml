@@ -1,41 +1,52 @@
-name: 🚀 Dagelijkse Nieuws Update
+name: 🚀 Bright News: Automatische Update
 
 on:
   schedule:
-    # Dit draait elke ochtend om 08:00 UTC (9:00 Nederlandse tijd)
-    - cron: '0 8 * * *'
-  workflow_dispatch: # Hiermee kun je de update ook handmatig starten in GitHub
+    # Draait om 00:00 UTC (Nacht-update) en 12:00 UTC (Lunch-update)
+    - cron: '0 0,12 * * *'
+  workflow_dispatch: # Handmatige trigger blijft behouden
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
-
+    # Verhoogd naar 60 minuten om de 'timeout' error te voorkomen bij veel artikelen
+    timeout-minutes: 60
     permissions:
-      contents: write # Cruciaal: hiermee mag GitHub de JSON bestanden aanpassen
+      contents: write # Nodig om de nieuwe JSON data terug te kunnen pushen
 
     steps:
       - name: 📂 Code ophalen
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Haalt de volledige historie op voor een veiligere push
 
       - name: 🟢 Node.js instellen
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm' # Slaat node_modules op voor snellere volgende runs
 
       - name: 📦 Dependencies installeren
         run: npm install
 
-      - name: 🤖 Mistral AI de kranten laten lezen
+      - name: 🤖 AI Verwerking (Scannen, Filteren & Vertalen)
         env:
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          # Voeg hier eventuele andere benodigde keys toe uit je .env
         run: node backend/processor.js
 
-      - name: 💾 Wijzigingen opslaan en pushen
+      - name: 💾 Wijzigingen opslaan
         run: |
           git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.name "Bright News Bot ✨"
+          
+          # Alleen JSON bestanden in de data map toevoegen
           git add data/*.json
-          # We halen [skip ci] weg omdat GitHub Pages JUIST moet builden om de nieuwe data te tonen
-          git commit -m "🤖 Automatische nieuws update: $(date)" || echo "Geen wijzigingen"
-          git push
+          
+          # Controleer of er echt iets veranderd is voor we committen
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "Geen nieuwe artikelen gevonden."
+          else
+            git commit -m "🤖 Automatische nieuws update: $(date -u) [skip ci]"
+            git push origin main
+          fi
