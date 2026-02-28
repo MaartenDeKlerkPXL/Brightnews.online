@@ -140,58 +140,58 @@
 </div>
 
 <script>
-    // Countdown Logic
+    // 1. Countdown Logic (ongewijzigd)
     const launchDate = new Date("March 20, 2026 12:00:00 UTC").getTime();
-
     const timer = setInterval(() => {
         const now = new Date().getTime();
         const diff = launchDate - now;
-
         if (diff < 0) {
             clearInterval(timer);
             document.getElementById("countdown").innerHTML = "WE ARE LIVE!";
             return;
         }
-
         document.getElementById("days").innerText = Math.floor(diff / (1000 * 60 * 60 * 24));
         document.getElementById("hours").innerText = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         document.getElementById("minutes").innerText = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
         document.getElementById("seconds").innerText = Math.floor((diff % (1000 * 60)) / 1000);
     }, 1000);
 
-    // Form Logic
-    document.getElementById('notifyForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        const email = document.getElementById('email').value;
-        const msg = document.getElementById('msg');
-
-        // Integration point for backend/scripts
-        console.log("Subscription for:", email);
-
-        msg.innerText = "Thank you! We'll send you a message as soon as we're live.";
-        msg.style.display = "block";
-        this.reset();
-    });
-    document.getElementById('notifyForm').addEventListener('submit', function(e) {
+    // 2. Form Logic via Formspree (De 'Bright' manier voor statische sites)
+    const form = document.getElementById('notifyForm');
+    form.addEventListener('submit', function(e) {
         e.preventDefault();
         const emailValue = document.getElementById('email').value;
         const msg = document.getElementById('msg');
+        const button = form.querySelector('button');
 
-        // Verstuur naar je backend endpoint
-        fetch('/api/subscribe', {
+        button.disabled = true;
+        button.innerText = "Sending...";
+
+        // Gebruik je eigen Formspree ID (ga naar formspree.io voor een gratis account)
+        // OF gebruik tijdelijk een andere service
+        fetch('https://formspree.io/f/xzdawllw', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: emailValue })
         })
             .then(response => {
                 if (response.ok) {
-                    msg.innerText = "Success! You've been added to our positive news list.";
+                    msg.innerText = "Success! We'll keep you updated.";
                     msg.style.display = "block";
-                    this.reset();
+                    form.reset();
+                } else {
+                    msg.innerText = "Oops! Something went wrong.";
+                    msg.style.display = "block";
                 }
             })
             .catch(err => {
-                console.error("Save error:", err);
+                console.error("Error:", err);
+                msg.innerText = "Error connecting to server.";
+                msg.style.display = "block";
+            })
+            .finally(() => {
+                button.disabled = false;
+                button.innerText = "Keep me updated";
             });
     });
 </script>
