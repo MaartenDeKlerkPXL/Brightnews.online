@@ -32,10 +32,6 @@ function verwerkAIResponse(rawText) {
         return null;
     }
 }
-
-/**
- * De kern-logica voor het verwerken van nieuws
- */
 async function processNews() {
     console.log("🚀 Starten met nieuws ophalen...");
 
@@ -46,7 +42,7 @@ async function processNews() {
         try {
             languages[lang] = await fs.readJson(`./data/news_${lang}.json`);
         } catch (e) {
-            console.log(`Creating new data file for ${lang}`);
+            console.log(`Nieuw bestand voor ${lang} aanmaken.`);
             languages[lang] = [];
         }
     }
@@ -57,11 +53,11 @@ async function processNews() {
             console.log(`📡 Scannen: ${feedInfo.name}`);
             const feed = await parser.parseURL(feedInfo.url);
 
-            // Verwerk de 5 nieuwste items van de feed
-            for (const item of feed.items.slice(0, 5)) {
-                // Check of we dit artikel al hebben (op basis van link)
+            // Verwerk de 2 nieuwste items (verlaagd om de 60-minuten limiet te halen)
+            for (const item of feed.items.slice(0, 2)) {
+                // Check of we dit artikel al hebben
                 if (languages.nl.some(art => art.link === item.link)) {
-                    console.log(`⏭️ Overslaan (reeds aanwezig): ${item.title}`);
+                    console.log(`⏭️ Overslaan: ${item.title}`);
                     continue;
                 }
 
@@ -78,22 +74,20 @@ async function processNews() {
                         messages: [{
                             role: 'user',
                             content: `Analyseer dit nieuws: "${item.title} - ${item.contentSnippet}". 
-                                    Als het positief is, schrijf dan een uitgebreid, meeslepend artikel van MINIMAAL 500 woorden. 
+                                    Als het positief is, schrijf dan een inspirerend artikel van ongeveer 300 woorden. 
                                     Gebruik een professionele journalistieke stijl. 
                                     Vertaal dit volledige artikel naar NL, EN, DE, FR en ES.
-                                    
-                                    BELANGRIJK: De "s" waarde in de JSON MOET meer dan 3000 tekens bevatten om de 500 woorden te halen.
                                     
                                     Antwoord enkel in dit JSON formaat:
                                     {
                                      "isBright": true, 
-                                     "nl": {"t": "titel", "s": "artikel van 500+ woorden..."},
+                                     "nl": {"t": "titel", "s": "artikel van 300 woorden..."},
                                      "en": {"t": "...", "s": "..."}, 
                                      "de": {"t": "...", "s": "..."}, 
                                      "fr": {"t": "...", "s": "..."}, 
                                      "es": {"t": "...", "s": "..."}
                                     }
-                                    Niet positief of geen nieuws? Antwoord dan enkel: {"isBright": false}`
+                                    Niet positief? Antwoord enkel: {"isBright": false}`
                         }],
                         responseFormat: { type: 'json_object' }
                     });
@@ -114,11 +108,11 @@ async function processNews() {
                                 image: imageUrl,
                                 date: new Date().toISOString()
                             });
-                            // Maximaal 50 artikelen per taal bewaren
+                            // Maximaal 50 artikelen per taal
                             if (languages[lang].length > 50) languages[lang].pop();
                         });
                     } else {
-                        console.log(`☁️ Artikel niet positief genoeg bevonden.`);
+                        console.log(`☁️ Artikel niet positief bevonden.`);
                     }
                 } catch (aiErr) {
                     console.error(`❌ AI Fout bij artikel: ${item.title}`, aiErr.message);
@@ -138,17 +132,17 @@ async function processNews() {
 }
 
 /**
- * Hoofdfunctie die alles aanstuurt
+ * Hoofdfunctie
  */
 async function main() {
     try {
         await processNews();
         console.log("✅ Alles succesvol verwerkt.");
     } catch (err) {
-        console.error("💥 Fatale fout in proces:", err);
+        console.error("💥 Fatale fout:", err);
         process.exit(1);
     }
 }
 
-// Start het script
+// Start het script (alleen via main)
 main();
