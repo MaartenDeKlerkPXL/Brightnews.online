@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrightNews - Lancering</title>
+    <title>BrightNews - Launch</title>
     <style>
         :root {
             --bright-green: #32cc32;
-            --dark-bg: #1a1a1a;
+            --light-bg: #ffffff;
+            --dark-text: #1a1a1a;
         }
 
         body {
@@ -16,54 +17,95 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             background-color: var(--light-bg);
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            color: black;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            color: var(--dark-text);
             text-align: center;
         }
 
         .container {
             padding: 20px;
+            max-width: 800px;
+            width: 90%;
         }
 
         .logo {
-            max-width: 100rem;
+            width: 100%;
+            max-width: 400px;
             height: auto;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         h1 {
-            font-size: 3rem;
-            margin: 0;
+            font-size: 2.5rem;
+            margin: 10px 0;
             text-transform: uppercase;
-            letter-spacing: 2px;
         }
 
-        .highlight {
-            color: var(--bright-green);
+        .highlight { color: var(--bright-green); }
+
+        /* Countdown Styles */
+        #countdown {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+            font-weight: bold;
         }
 
-        p {
-            font-size: 1.2rem;
-            opacity: 0.8;
-            margin-top: 10px;
+        .time-part {
+            display: flex;
+            flex-direction: column;
+            font-size: 2rem;
         }
 
-        /* Simpele animatie om de aandacht te trekken */
-        .pulse {
-            animation: pulse-animation 2s infinite;
+        .time-part span {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: #666;
         }
 
-        @keyframes pulse-animation {
-            0% { opacity: 1; }
-            50% { opacity: 0.6; }
-            100% { opacity: 1; }
+        /* Subscription Box */
+        .subscribe-box {
+            margin-top: 40px;
+            background: #f4f4f4;
+            padding: 25px;
+            border-radius: 8px;
         }
 
+        input[type="email"] {
+            padding: 12px;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        button {
+            padding: 12px 25px;
+            background-color: var(--bright-green);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover { opacity: 0.9; }
+
+        /* Mobile Optimization */
         @media (max-width: 600px) {
-            h1 { font-size: 2rem; }
-            .logo { max-width: 180px; }
+            .logo {
+                max-width: 90vw;
+                margin-bottom: 30px;
+            }
+            h1 { font-size: 1.8rem; }
+            #countdown { gap: 10px; }
+            .time-part { font-size: 1.5rem; }
+            input[type="email"] { width: 100%; margin-bottom: 10px; }
+            .subscribe-box { padding: 15px; }
         }
     </style>
 </head>
@@ -72,13 +114,86 @@
 <div class="container">
     <img src="assets/brightnews-logo.png" alt="BrightNews Logo" class="logo">
 
-    <p>Maak je klaar voor iets nieuws.</p>
-    <h1 class="pulse">Lancering op <span class="highlight">20 maart 2026 UTC+0</span></h1>
+    <p>Get ready for nothing but positive news.</p>
 
-    <div style="margin-top: 50px; border-top: 1px solid #333; padding-top: 20px;">
-        <p style="font-size: 0.9rem;">BrightNews &copy; 2026</p>
+    <div id="countdown">
+        <div class="time-part"><div id="days">00</div><span>Days</span></div>
+        <div class="time-part"><div id="hours">00</div><span>Hours</span></div>
+        <div class="time-part"><div id="minutes">00</div><span>Min</span></div>
+        <div class="time-part"><div id="seconds">00</div><span>Sec</span></div>
+    </div>
+
+    <h1>Launching on <span class="highlight">March 20, 2026</span></h1>
+
+    <div class="subscribe-box">
+        <p>Want to be notified when we go live?</p>
+        <form id="notifyForm">
+            <input type="email" id="email" placeholder="Your email address" required>
+            <button type="submit">Keep me updated</button>
+        </form>
+        <p id="msg" style="display:none; font-size: 0.9rem; color: var(--bright-green);"></p>
+    </div>
+
+    <div style="margin-top: 50px; border-top: 1px solid #eee; padding-top: 20px;">
+        <p style="font-size: 0.8rem; opacity: 0.6;">BrightNews &copy; 2026 - Positivity First</p>
     </div>
 </div>
 
-</body>
+<script>
+    // Countdown Logic
+    const launchDate = new Date("March 20, 2026 12:00:00 UTC").getTime();
+
+    const timer = setInterval(() => {
+        const now = new Date().getTime();
+        const diff = launchDate - now;
+
+        if (diff < 0) {
+            clearInterval(timer);
+            document.getElementById("countdown").innerHTML = "WE ARE LIVE!";
+            return;
+        }
+
+        document.getElementById("days").innerText = Math.floor(diff / (1000 * 60 * 60 * 24));
+        document.getElementById("hours").innerText = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        document.getElementById("minutes").innerText = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        document.getElementById("seconds").innerText = Math.floor((diff % (1000 * 60)) / 1000);
+    }, 1000);
+
+    // Form Logic
+    document.getElementById('notifyForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = document.getElementById('email').value;
+        const msg = document.getElementById('msg');
+
+        // Integration point for backend/scripts
+        console.log("Subscription for:", email);
+
+        msg.innerText = "Thank you! We'll send you a message as soon as we're live.";
+        msg.style.display = "block";
+        this.reset();
+    });
+    document.getElementById('notifyForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const emailValue = document.getElementById('email').value;
+        const msg = document.getElementById('msg');
+
+        // Verstuur naar je backend endpoint
+        fetch('/api/subscribe', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email: emailValue })
+        })
+            .then(response => {
+                if (response.ok) {
+                    msg.innerText = "Success! You've been added to our positive news list.";
+                    msg.style.display = "block";
+                    this.reset();
+                }
+            })
+            .catch(err => {
+                console.error("Save error:", err);
+            });
+    });
+</script>
+<script defer src="backend/subscribe.js"></script></body>
 </html>
