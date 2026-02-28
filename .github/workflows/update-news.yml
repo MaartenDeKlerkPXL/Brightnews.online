@@ -9,8 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    # Verhoogd naar 60 minuten om de 'timeout' error te voorkomen bij veel artikelen
-    timeout-minutes: 60
+    timeout-minutes: 120
     permissions:
       contents: write # Nodig om de nieuwe JSON data terug te kunnen pushen
 

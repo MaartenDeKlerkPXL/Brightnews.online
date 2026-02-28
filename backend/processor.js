@@ -131,18 +131,16 @@ async function processNews() {
     }
 }
 
-/**
- * Hoofdfunctie
- */
 async function main() {
     try {
         await processNews();
         console.log("✅ Alles succesvol verwerkt.");
+        // Forceer het afsluiten van het proces
+        process.exit(0);
     } catch (err) {
         console.error("💥 Fatale fout:", err);
         process.exit(1);
     }
 }
 
-// Start het script (alleen via main)
 main();
