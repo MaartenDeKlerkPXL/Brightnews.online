@@ -136,6 +136,14 @@ async function updateProfileUI(user) {
         }
         countdownDisplay.style.display = 'block';
     }
+    if (meta?.is_premium === true) {
+        localStorage.setItem('brightNews_Premium', 'true');
+    }
+
+    // Roep de functie in profiel.html aan om de knop te tekenen
+    if (typeof renderSubscriptionUI === 'function') {
+        renderSubscriptionUI();
+    }
 }
 
 // Kleur van profiel-icoon in nav aanpassen

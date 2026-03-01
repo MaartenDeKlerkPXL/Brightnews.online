@@ -4,15 +4,6 @@ if (typeof window.alleArtikelen === 'undefined') window.alleArtikelen = [];
 if (typeof window.huidigeTaal === 'undefined') {
     window.huidigeTaal = localStorage.getItem('selectedLanguage') || 'en';
 }
-
-// Voorkom 'userData' redeclaration error
-if (typeof window.userData === 'undefined') {
-    window.userData = {
-        isGlow: true,
-        glowUntil: "2026-12-31" // Update naar de toekomst
-    };
-}
-
 // 2. Helper functie voor vertalingen (getT)
 function getT(key, fallback = "...") {
     const lang = localStorage.getItem('selectedLanguage') || 'en';
@@ -335,30 +326,6 @@ function wisselTaal(lang, labelTekst, event) {
     // 4. Update de content (Nieuws JSON ophalen)
     laadNieuws(lang);
 }
-
-// Functie voor Glow status
-function checkGlowStatus() {
-    const today = new Date();
-    const expiryDate = new Date(window.userData.glowUntil);
-
-    if (window.userData.isGlow && expiryDate > today) {
-        document.body.classList.add('glow-active');
-        console.log('Happy developing ✨ - Glow status actief');
-    }
-}
-
-function checkGlowStatus() {
-    const today = new Date();
-    const expiryDate = new Date(userData.glowUntil);
-
-    if (userData.isGlow && expiryDate > today) {
-        document.body.classList.add('glow-active');
-        console.log('Happy developing ✨ - Glow status is actief');
-    } else {
-        document.body.classList.remove('glow-active');
-    }
-}
-
 // 3. DE AUTOMATISCHE CHECK BIJ LADEN
 document.addEventListener('DOMContentLoaded', () => {
     const opgeslagenTaal = localStorage.getItem('selectedLanguage') || 'en';

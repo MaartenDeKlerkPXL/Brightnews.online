@@ -813,3 +813,20 @@ form {
     text-transform: none;
     font-weight: 500;
 }
+.btn-cancel {
+    width: 100%;
+    padding: 16px;
+    background: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-bottom: 1rem;
+}
+
+.btn-cancel:hover {
+    background: #ff4444;
+    color: white;
+}

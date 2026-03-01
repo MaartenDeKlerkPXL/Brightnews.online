@@ -171,7 +171,6 @@
                 <div class="status-info">
                     <span class="status-label" data-i18n="status_label">Account Status</span>
                     <span id="premium-status-badge" class="badge">Gratis Account</span>
-                </div>
 
                 <div id="upgrade-section">
                     <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
@@ -181,24 +180,69 @@
                     </button>
                 </div>
             </div>
+            </div>
+            <div id="subscription-status"></div>
 
+            <script>
+                function renderSubscriptionUI() {
+                    // We controleren zowel localStorage (Ko-fi) als de Supabase status
+                    const isPremiumStore = localStorage.getItem('brightNews_Premium') === 'true';
+                    const container = document.getElementById('subscription-status');
+
+                    if (!container) return;
+
+                    // Als er geen premium is, zorg dat de container leeg en onzichtbaar is
+                    if (!isPremiumStore) {
+                        container.innerHTML = '';
+                        container.style.display = 'none';
+                        return;
+                    }
+
+                    // Gebruiker is Premium: Toon de sectie
+                    container.style.display = 'block';
+
+                    const startDateStr = localStorage.getItem('brightNews_StartDate');
+                    const startDate = startDateStr ? new Date(startDateStr) : new Date();
+                    const planType = localStorage.getItem('brightNews_PlanType') || 'monthly';
+
+                    let endDate = new Date(startDate);
+                    if (planType === 'yearly') {
+                        endDate.setFullYear(startDate.getFullYear() + 1);
+                    } else {
+                        endDate.setMonth(startDate.getMonth() + 1);
+                    }
+
+                    container.innerHTML = `
+            <div class="subscription-card" style=" padding: 1.5rem; border: 1px solid #e0e0e0; border-radius: 12px; background-color: #fff; margin-bottom: 3rem;">
+                <p style="margin-bottom: 1rem; color: #666;">
+                    Your <strong>${planType}</strong> access is active until <br> <strong>${endDate.toLocaleDateString()}</strong>.
+                </p>
+                <button onclick="cancelSubscription()" class="btn-cancel" style="background: none; border: 1.5px solid #ff4444; color: #ff4444; padding: 8px 16px; border-radius: 8px; font-weight: bold; cursor: pointer;">
+                    Cancel Auto-Renewal
+                </button>
+            </div>
+        `;
+                }
+
+                function cancelSubscription() {
+                        window.open('https://ko-fi.com/manage/subscriptions', '_blank');
+                        localStorage.setItem('brightNews_AutoRenew', 'false');
+                }
+
+                // Luister naar het laden van de pagina
+                document.addEventListener('DOMContentLoaded', renderSubscriptionUI);
+            </script>
             <button onclick="handleLogout()" class="btn-logout-editorial" data-i18n="btn_logout">Uitloggen</button>
         </div>
-    </div>
 </main>
-
-<script src="js/auth.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-
 <script>
     const SUPABASE_URL = 'https://rquuqypgaannrakdrabj.supabase.co';
     const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJxdXVxeXBnYWFubnJha2RyYWJqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA4MTQyODUsImV4cCI6MjA4NjM5MDI4NX0.-H5ZIcLXBflqKvC0VQGlVGIX29G-nceC9ak5IrhJCzg';
 
     window.supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 </script>
-
 <script src="js/auth.js"></script>
-
 <script>
     function togglePassword(event, inputId) {
         if (event) event.preventDefault();
@@ -221,7 +265,6 @@
         }
     }
 </script>
-<script src="index.js"></script>
 </body>
 </html>
 

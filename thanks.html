@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you! ✨ - Bright News</title>
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <style>
+        :root {
+            --bright-green: #32CD32;
+            --bright-bg: #FFFFFF;
+            --bright-text: #1A1A1A;
+            --soft-gray: #f2f2f2;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: var(--bright-bg);
+            color: var(--bright-text);
+            text-align: center;
+        }
+
+        .thanks-container {
+            max-width: 500px;
+            padding: 2.5rem;
+            border-radius: 20px;
+        }
+
+        .icon-circle {
+            width: 90px;
+            height: 90px;
+            background: var(--bright-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            font-size: 3rem;
+            box-shadow: 0 10px 20px rgba(50, 205, 50, 0.15);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            /* Green titles for both success and error */
+            color: var(--bright-green);
+        }
+
+        p {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 2.5rem;
+        }
+
+        .loading-bar {
+            width: 100%;
+            height: 6px;
+            background: var(--soft-gray);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 2rem;
+        }
+
+        .loading-progress {
+            width: 0%;
+            height: 100%;
+            background: var(--bright-green);
+            /* Progress bar takes 6 seconds */
+            transition: width 6s linear;
+        }
+
+        #redirect-info {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Hover effect for the home link */
+        .home-link {
+            color: var(--bright-text);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .home-link:hover {
+            color: var(--bright-green);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="thanks-container">
+    <div class="icon-circle">✨</div>
+    <h1 id="thanks-title">Stellar news!</h1>
+    <p id="thanks-message">You are now officially a <strong>Shine member</strong>. Thanks to your support, we can keep bringing you unlimited positive news.</p>
+
+    <div id="redirect-info">
+        You will be redirected to the homepage in a few seconds...
+    </div>
+
+    <div class="loading-bar">
+        <div id="progress-bar" class="loading-progress"></div>
+    </div>
+</div>
+
+<script>
+    /**
+     * Bright News - Premium Activation Logic
+     * Vanilla JS
+     */
+    document.addEventListener('DOMContentLoaded', () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const status = urlParams.get('status');
+        const progressBar = document.getElementById('progress-bar');
+
+        if (status === 'success') {
+            // Activate Premium status locally
+            localStorage.setItem('brightNews_Premium', 'true');
+
+            // Start the visual progress bar
+            setTimeout(() => {
+                progressBar.style.width = '100%';
+            }, 100);
+
+            // Redirect after 6 seconds
+            setTimeout(() => {
+                window.location.href = 'index.html';
+            }, 6000);
+        } else {
+            // Error handling: Title "Oops!" is also green
+            document.getElementById('thanks-title').textContent = 'Oops!';
+            document.getElementById('thanks-message').textContent = "We couldn't verify your payment. Need any help?";
+            document.querySelector('.loading-bar').style.display = 'none';
+            document.getElementById('redirect-info').innerHTML =
+                '<a href="index.html" class="home-link">Back to Home</a>';
+        }
+    });
+</script>
+</body>
+</html>

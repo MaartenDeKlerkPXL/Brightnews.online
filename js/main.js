@@ -103,3 +103,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     console.log('Bright News Architecture geladen 🚀');
 });
+
+// index.js of main.js
+function applyPremiumFeatures() {
+    const isPremium = localStorage.getItem('brightNews_Premium') === 'true';
+
+    if (isPremium) {
+        document.body.classList.add('is-premium-user');
+        console.log("Bright News Shine Actief! ✨");
+        // Hier kun je advertenties verbergen of extra content tonen
+    }
+}
+
+document.addEventListener('DOMContentLoaded', applyPremiumFeatures);

@@ -4,6 +4,12 @@
     padding: 0;
     box-sizing: border-box; /* Zorgt dat padding de breedte niet verpest */
 }
+.logo-img {
+    width: 50px;       /* Of de gewenste breedte */
+    height: 50px;      /* Zorg dat deze gelijk is aan de breedte */
+    object-fit: contain; /* Dit zorgt dat de cirkel zijn vorm behoudt zonder te rekken */
+    background: transparent;
+}
 
 
 /* 2. Maak de Navigatiebalk paginabreed */
