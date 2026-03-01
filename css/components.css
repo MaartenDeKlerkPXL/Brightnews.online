@@ -39,6 +39,32 @@ nav.container {
 .language-left {
     margin-right: 2rem;
 }
+.category-bar {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 20px 0;
+    scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+
+.category-bar::-webkit-scrollbar { display: none; } /* Hide scrollbar Chrome/Safari */
+
+.filter-btn {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1px solid #eee;
+    background: white;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.filter-btn.active {
+    background: var(--bright-green);
+    color: white;
+    border-color: var(--bright-green);
+}
 
 .dropbtn {
     background-color: var(--light-bg);

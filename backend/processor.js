@@ -54,7 +54,7 @@ async function processNews() {
             const feed = await parser.parseURL(feedInfo.url);
 
             // Verwerk de 2 nieuwste items (verlaagd om de 60-minuten limiet te halen)
-            for (const item of feed.items.slice(0, 2)) {
+            for (const item of feed.items.slice(0, 5)) {
                 // Check of we dit artikel al hebben
                 if (languages.nl.some(art => art.link === item.link)) {
                     console.log(`⏭️ Overslaan: ${item.title}`);
@@ -74,9 +74,11 @@ async function processNews() {
                         messages: [{
                             role: 'user',
                             content: `Analyseer dit nieuws: "${item.title} - ${item.contentSnippet}". 
-                                    Als het positief is, schrijf dan een inspirerend artikel van ongeveer 300 woorden. 
-                                    Gebruik een professionele journalistieke stijl. 
+                                    Als het zeer positief is, schrijf dan een inspirerend, intressant en vooral een positief artikel van ongeveer 300 woorden. 
+                                    Gebruik een professionele maar vooral zeer positieve journalistieke stijl. 
                                     Vertaal dit volledige artikel naar NL, EN, DE, FR en ES.
+                                    
+                                    Classificeer elk artikel in precies één van de volgende categorieën: Tech, Health, Science, Lifestyle, Environment, of Finance. Voeg dit toe als een nieuw veld "category" in de JSON-output.
                                     
                                     Antwoord enkel in dit JSON formaat:
                                     {

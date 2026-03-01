@@ -86,23 +86,41 @@ async function checkUser() {
 
 async function laadNieuws(taal) {
     try {
+        // 1. Werk de globale taal-variabele bij zodat de rest van de site de juiste taal gebruikt
         huidigeTaal = taal;
+
+        // 2. Haal de verse JSON-data op. We gebruiken Date.now() om caching-problemen te voorkomen
         const res = await fetch(`data/news_${taal}.json?v=${Date.now()}`);
+        if (!res.ok) throw new Error(`Fetch fout: ${res.status}`);
+
+        // 3. Sla de opgehaalde artikelen op in de globale lijst 'alleArtikelen'
         alleArtikelen = await res.json();
 
+        // 4. Genereer de filterknoppen op basis van de categorieën in de nieuwe data
+        // We controleren eerst of de functie bestaat om fouten te voorkomen
+        if (typeof renderFilterBar === 'function') {
+            renderFilterBar();
+        }
+
+        // 5. Check of de gebruiker een specifiek artikel bekijkt via de URL (bijv. ?id=123)
         const urlParams = new URLSearchParams(window.location.search);
         const artikelId = urlParams.get('id');
 
         if (artikelId) {
-            // Als we in detail-weergave zijn, renderen we het artikel opnieuw in de nieuwe taal
+            // Als er een ID is, blijven we in de detail-weergave (belangrijk bij taalwisselen)
             await toonDetail(artikelId);
         } else {
-            // Anders renderen we de lijst
+            // Anders tonen we gewoon de standaard lijst met alle artikelen op de homepagina
             renderLijst(alleArtikelen);
         }
-        console.log(`Data geladen voor taal: ${taal} 🚀`);
+
+        console.log(`Bright News succesvol geladen in het ${taal.toUpperCase()} 🚀`);
     } catch (err) {
-        console.error("Fout bij laden nieuws-data:", err);
+        console.error("Fout tijdens het initialiseren van de nieuws-data:", err);
+        // Gebruik je bestaande notificatie-systeem bij een fout
+        if (typeof showNotification === 'function') {
+            showNotification("Fout bij laden van nieuws. Controleer je internetverbinding.", "error");
+        }
     }
 }
 // 3. De lijst met kaartjes opbouwen
@@ -332,6 +350,40 @@ document.addEventListener('DOMContentLoaded', () => {
     const labels = { 'en': '🇺🇸 English', 'nl': '🇳🇱 Nederlands', 'de': '🇩🇪 Deutsch', 'fr': '🇫🇷 Français', 'es': '🇪🇸 Español' };
     wisselTaal(opgeslagenTaal, labels[opgeslagenTaal]);
 });
+function renderFilterBar() {
+    const filterContainer = document.getElementById('category-filters');
+    if (!filterContainer) return;
+
+    // Hardgecodeerde categorieën zoals je vroeg
+    const categories = ['All', 'Tech', 'Health', 'Science', 'Lifestyle', 'Environment'];
+
+    filterContainer.innerHTML = categories.map(cat => {
+        // Gebruik getT om 'All' te vertalen
+        const displayLabel = (cat === 'All') ? getT('filter_all', 'Alles') : cat;
+
+        // Fout hersteld: we gebruiken nu displayLabel voor de tekst en voegen de 'active' class toe
+        return `
+            <button class="filter-btn ${cat === 'All' ? 'active' : ''}" 
+                    onclick="filterByMetadata('${cat}', this)">
+                ${displayLabel}
+            </button>
+        `;
+    }).join('');
+}
+
+// 2. Functie om de lijst te filteren
+function filterByMetadata(category, btn) {
+    // Update actieve knop styling
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    if (category === 'All') {
+        renderLijst(window.alleArtikelen);
+    } else {
+        const gefilterd = window.alleArtikelen.filter(a => a.category === category);
+        renderLijst(gefilterd);
+    }
+}
 
 // Maak functies beschikbaar voor de hele browser
 window.toonDetail = toonDetail;
