@@ -47,5 +47,5 @@ jobs:
             echo "Geen nieuwe artikelen gevonden."
           else
             git commit -m "🤖 Automatische nieuws update: $(date -u) [skip ci]"
-            git push origin main
+            git push origin master
           fi
