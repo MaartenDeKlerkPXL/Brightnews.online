@@ -75,10 +75,10 @@ async function processNews() {
                             role: 'user',
                             content: `Analyseer dit nieuws: "${item.title} - ${item.contentSnippet}". 
                                     Als het zeer positief is, schrijf dan een inspirerend, intressant en vooral een positief artikel van ongeveer 300 woorden. 
-                                    Gebruik een professionele maar vooral zeer positieve journalistieke stijl. 
+                                    Gebruik een professionele maar vooral zeer positieve journalistieke stijl, geen oorlog of wat er eventueel te maken heeft of een gevolg is van oorlog of personen die een verband hebben met oorlog.
                                     Vertaal dit volledige artikel naar NL, EN, DE, FR en ES.
                                     
-                                    Classificeer elk artikel in precies één van de volgende categorieën: Tech, Health, Science, Lifestyle, Environment, of Finance. Voeg dit toe als een nieuw veld "category" in de JSON-output.
+                                    Classificeer elk artikel in precies één van de volgende categorieën: Tech, Health, Science, Lifestyle, Environment, of Finance. Voeg dit toe als een nieuw veld "category" in de JSON-output dus: "category": "...".
                                     
                                     Antwoord enkel in dit JSON formaat:
                                     {

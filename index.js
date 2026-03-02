@@ -335,14 +335,32 @@ function wisselTaal(lang, labelTekst, event) {
     localStorage.setItem('selectedLanguage', lang);
     window.huidigeTaal = lang;
 
-    // 3. Vertaal statische teksten direct (Interface)
+    // 3. Update SEO Meta Tags (Nieuw)
+    // Update Description
+    const descriptionTag = document.querySelector('meta[name="description"]');
+    if (descriptionTag && translations[lang]?.meta_desc) {
+        descriptionTag.setAttribute("content", translations[lang].meta_desc);
+    }
+
+    // Update Keywords
+    const keywordsTag = document.querySelector('meta[name="keywords"]');
+    if (keywordsTag && translations[lang]?.meta_keys) {
+        keywordsTag.setAttribute("content", translations[lang].meta_keys);
+    }
+
+    // Update HTML lang attribuut voor browsers/zoekmachines
+    document.documentElement.lang = lang;
+
+    // 4. Vertaal statische teksten direct (Interface)
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         el.innerHTML = getT(key);
     });
 
-    // 4. Update de content (Nieuws JSON ophalen)
-    laadNieuws(lang);
+    // 5. Update de content (Nieuws JSON ophalen)
+    if (typeof laadNieuws === 'function') {
+        laadNieuws(lang);
+    }
 }
 // 3. DE AUTOMATISCHE CHECK BIJ LADEN
 document.addEventListener('DOMContentLoaded', () => {

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Privacy & Colofon | BrightNews</title>
+  <style>
+    :root {
+      --bright-green: #32cc32;
+      --dark-text: #222;
+      --light-bg: #f9f9f9;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--dark-text);
+      margin: 0;
+      padding: 0;
+      background-color: var(--light-bg);
+    }
+
+    div.privacy-header {
+      background: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      margin-top: 0;
+    }
+    header{
+      margin-bottom: 0 !important;
+      border-bottom: none !important;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+      display: grid;
+      gap: 2rem;
+    }
+
+    section {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    h1, h2 {
+      color: var(--bright-green) !important;
+    }
+
+    .colofon-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .label {
+      font-weight: bold;
+      display: block;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.8rem;
+      color: #888;
+    }
+
+    a {
+      color: var(--bright-green);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/index.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages/artikel.css">
+</head>
+<body>
+<header>
+<nav class="container">
+  <div class="nav-left-group">
+    <div class="dropdown language-picker">
+      <button class="dropbtn" id="current-lang">
+        🇺🇸 English <span class="arrow">▼</span>
+      </button>
+      <div class="dropdown-content">
+        <a href="#" onclick="wisselTaal('en', '🇺🇸 English', event)">🇺🇸 English</a>
+        <a href="#" onclick="wisselTaal('nl', '🇳🇱 Nederlands', event)">🇳🇱 Nederlands</a>
+        <a href="#" onclick="wisselTaal('de', '🇩🇪 Deutsch', event)">🇩🇪 Deutsch</a>
+        <a href="#" onclick="wisselTaal('fr', '🇫🇷 Français', event)">🇫🇷 Français</a>
+        <a href="#" onclick="wisselTaal('es', '🇪🇸 Español', event)">🇪🇸 Español</a>
+      </div>
+    </div>
+
+    <!--            <a href="Home.html" class="logo">Bright<span>News</span></a>-->
+
+    <a href="Home.html"><img src="assets/brightnews-logo.png" height="200" width="300"/></a></div>
+  <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu openen">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="mobileMenu">
+    <li><a href="Home.html" data-i18n="nav_home">Home</a></li>
+    <li><a href="over-ons.html" data-i18n="nav_about">Over Ons</a></li>
+    <li><a href="abonnementen.html" data-i18n="nav_premium">Abonnementen</a></li>
+
+    <li class="nav-profile-desktop">
+      <a href="profiel.html" class="profile-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+      </a>
+    </li>
+
+    <li class="nav-profile-mobile">
+      <a href="profiel.html" class="profile-link-text"  data-i18n="nav_profile">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+        Profiel
+      </a>
+    </li>
+  </ul>
+</nav>
+  </header>
+<div class="privacy-header">
+  <h1>Privacy & Helderheid ✨</h1>
+  <p>Hoe we bij BrightNews met jouw gegevens omgaan.</p>
+</div>
+
+<main>
+  <section>
+    <h2>Wie zijn wij? (Colofon)</h2>
+    <div class="colofon-grid">
+      <div>
+        <span class="label">Handelsnaam</span>
+        BrightNews
+      </div>
+      <div>
+        <span class="label">Rechtsvorm</span>
+        In oprichting
+      </div>
+      <div>
+        <span class="label">Vestigingsadres</span>
+        [Jouw Straat + Nummer]<br>
+        [Postcode + Nijswiller], Nederland
+      </div>
+      <div>
+        <span class="label">Contact</span>
+        <a href="mailto:info@brightnews.online">Info@BrightNews.com</a>
+      </div>
+      <div>
+        <span class="label">KvK / KBO nummer</span>
+        niet van toepassing (nog niet ingeschreven)
+      </div>
+      <div>
+        <span class="label">BTW-nummer</span>
+        niet van toepassing
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Jouw Privacy</h2>
+    <p>Bij BrightNews focussen we op positiviteit. Dat geldt ook voor jouw gegevens. We verzamelen alleen wat strikt noodzakelijk is om de site goed te laten werken.</p>
+    <ul>
+      <li><strong>Contact:</strong> Als je ons mailt, gebruiken we je adres alleen om te antwoorden.</li>
+      <li><strong>Geen verkoop:</strong> We verkopen jouw data nooit aan derden.</li>
+      <li><strong>Rechten:</strong> Je hebt altijd het recht om je gegevens in te zien, te wijzigen of te laten verwijderen.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Cookies</h2>
+    <p>We gebruiken functionele cookies om de site stabiel te houden. Voor tracking cookies vragen we altijd eerst je toestemming via onze banner. Zo blijf jij de baas over je browser.</p>
+  </section>
+
+  <section>
+    <h2>Toegankelijkheid</h2>
+    <p>Iedereen verdient goed nieuws. Wij streven ernaar om in juni 2025 volledig te voldoen aan de <strong>WCAG 2.1 AA</strong> richtlijnen (European Accessibility Act). Kom je iets tegen dat niet goed leesbaar is? Laat het ons weten!</p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2024 BrightNews - Positief nieuws, elke dag om 12:00.
+</footer>
+
+</body>
+</html>

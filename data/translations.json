@@ -10,9 +10,13 @@
     "about_title": "Wij zijn jouw dagelijkse dosis goed nieuws.",
     "subs_title": "Kies jouw dosis zonneschijn ☀️",
     "login_title": "Welkom terug! 😊",
-    "footer_text": "Happy developing ✨ | Bright News 2026"
+    "footer_text": "Happy developing ✨ | Bright News 2026",
+    "meta_desc": "Stap in de wereld van Bright News, waar positiviteit de norm is. Ontdek hoe wij met AI de mooiste en meest hoopvolle verhalen verzamelen. Geen negativiteit, alleen puur optimisme.",
+    "meta_keys": "Bright News, uitsluitend positief nieuws, hoopvolle verhalen, optimisme, goed nieuws AI"
   },
   "en": {
+    "meta_desc": "Step into the world of Bright News, where positivity is the standard. Discover how our AI gathers the most beautiful and hopeful stories. No negativity, just pure optimism and inspiration to make your day shine.",
+    "meta_keys": "Bright News, only positive news, hopeful stories, optimism, daily inspiration, good news AI, bright future, constructive journalism, uplifting content",
     "nav_home": "Home",
     "nav_about": "About Us",
     "nav_subs": "Subscriptions",
@@ -26,6 +30,8 @@
     "footer_text": "Happy developing ✨ | Bright News 2026"
   },
   "de": {
+    "meta_desc": "Treten Sie ein in die Welt von Bright News, in der Positivität die Norm ist. Erfahren Sie, wie unsere KI die schönsten und hoffnungsvollsten Geschichten des Tages sammelt. Nur reiner Optimismus und Inspiration.",
+    "meta_keys": "Bright News, nur positive Nachrichten, hoffnungsvolle Geschichten, Optimismus, tägliche Inspiration, gute Nachrichten KI, strahlende Zukunft",
     "nav_home": "Startseite",
     "nav_about": "Über uns",
     "nav_subs": "Abos",
@@ -39,6 +45,8 @@
     "footer_text": "Happy developing ✨ | Bright News 2026"
   },
   "fr": {
+    "meta_desc": "Entrez dans le monde de Bright News, où la positivité est la règle. Découvrez comment notre IA rassemble les histoires les plus belles et les plus porteuses d'espoir pour illuminer votre journée.",
+    "meta_keys": "Bright News, actualités positives uniquement, histoires d'espoir, optimisme, inspiration quotidienne, IA bonnes nouvelles, avenir radieux",
     "nav_home": "Accueil",
     "nav_about": "À propos",
     "nav_subs": "Abonnements",
@@ -52,6 +60,8 @@
     "footer_text": "Happy developing ✨ | Bright News 2026"
   },
   "es": {
+    "meta_desc": "Entra en el mundo de Bright News, donde la positividad es la norma. Descubre cómo nuestra IA recopila las historias más bellas y esperanzadoras del día para hacer brillar tu día.",
+    "meta_keys": "Bright News, solo noticias positivas, historias de esperanza, optimismo, inspiración diaria, IA de buenas noticias, futuro brillante",
     "nav_home": "Inicio",
     "nav_about": "Sobre nosotros",
     "nav_subs": "Suscripciones",
