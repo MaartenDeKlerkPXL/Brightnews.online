@@ -63,9 +63,13 @@ async function processNews() {
 
                 console.log(`🧠 Analyseren: ${item.title}`);
 
-                // Pak afbeelding uit RSS
-                const imageUrl = item.enclosure?.url ||
+                const imageUrl =
+                    item.enclosure?.url ||
+                    item.media?.content?.$?.url ||
+                    item.media?.thumbnail?.$?.url ||
                     (item.content?.match(/src="([^"]+)"/)?.[1]) ||
+                    (item.contentEncoded?.match(/src="([^"]+)"/)?.[1]) ||
+                    (item.description?.match(/src="([^"]+)"/)?.[1]) ||
                     null;
 
                 try {
@@ -107,8 +111,10 @@ async function processNews() {
                                 summary: data[lang].s,
                                 link: item.link,
                                 source: feedInfo.name,
-                                image: imageUrl,
-                                date: new Date().toISOString()
+                                // Als imageUrl null is, gebruik een mooie Unsplash foto als vaste backup in de DATA
+                                image: imageUrl || `https://images.unsplash.com/photo-1546422904-90eabf3cab3a?w=800&q=80`,
+                                date: new Date().toISOString(),
+                                category: data.category || "General" // Vergeet je nieuwe categorie veld niet!
                             });
                             // Maximaal 50 artikelen per taal
                             if (languages[lang].length > 50) languages[lang].pop();

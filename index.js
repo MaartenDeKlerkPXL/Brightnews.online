@@ -102,7 +102,6 @@ async function laadNieuws(taal) {
             renderFilterBar();
         }
 
-        // 5. Check of de gebruiker een specifiek artikel bekijkt via de URL (bijv. ?id=123)
         const urlParams = new URLSearchParams(window.location.search);
         const artikelId = urlParams.get('id');
 
