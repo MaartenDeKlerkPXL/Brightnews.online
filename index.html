@@ -107,6 +107,16 @@
             input[type="email"] { width: 100%; margin-bottom: 10px; }
             .subscribe-box { padding: 15px; }
         }
+        /* Starttoestand: tekst is zichtbaar en de transitie duurt 0.5 seconden */
+        .fade-text {
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        /* Toestand waarbij de tekst onzichtbaar is */
+        .fade-out {
+            opacity: 0;
+        }
     </style>
 </head>
 <body>
@@ -114,8 +124,7 @@
 <div class="container">
     <img src="assets/brightnews-logo.png" alt="BrightNews Logo" class="logo">
 
-    <p>Get ready for nothing but positive news.</p>
-
+    <p id="bright-hero" class="fade-text">Discover the bright side of the world. 🇬🇧</p>
     <div id="countdown">
         <div class="time-part"><div id="days">00</div><span>Days</span></div>
         <div class="time-part"><div id="hours">00</div><span>Hours</span></div>
@@ -135,11 +144,36 @@
     </div>
 
     <div style="margin-top: 50px; border-top: 1px solid #eee; padding-top: 20px;">
-        <p style="font-size: 0.8rem; opacity: 0.6;">BrightNews &copy; 2026 - Positivity First</p>
+        <p style="font-size: 0.8rem; opacity: 0.6;">BrightNews <sup>&copy;</sup> 2026 - Positivity First</p>
     </div>
 </div>
 
 <script>
+    const hero = document.getElementById('bright-hero');
+    const texts = [
+        { t: "Ontdek de zonnige kant van de wereld.", f: "🇳🇱" },
+        { t: "Discover the bright side of the world.", f: "🇬🇧" },
+        { t: "Entdecken Sie die Sonnenseite der Welt.", f: "🇩🇪" },
+        { t: "Découvrez le bon côté du monde.", f: "🇫🇷" },
+        { t: "Descubre el lado brillante del mundo.", f: "🇪🇸" }
+    ];
+
+    let i = 0;
+    setInterval(() => {
+        // 1. Start fade-out animatie
+        hero.classList.add('fade-out');
+
+        // 2. Wacht 500ms (duur van de CSS transitie)
+        setTimeout(() => {
+            // 3. Verander de tekst en het vlaggetje
+            i = (i + 2) % texts.length;
+            hero.textContent = `${texts[i].t} ${texts[i].f}`;
+
+            // 4. Start fade-in animatie
+            hero.classList.remove('fade-out');
+        }, 500); // Deze tijd moet gelijk zijn aan de CSS 'transition' tijd
+
+    }, 4000); // Elke 3 seconden start de cyclus
     // 1. Countdown Logic (ongewijzigd)
     const launchDate = new Date("March 20, 2026 12:00:00 UTC").getTime();
     const timer = setInterval(() => {

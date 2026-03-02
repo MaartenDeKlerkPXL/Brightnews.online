@@ -28,88 +28,74 @@ const FEEDS = [
 // 1. Categorie-specifieke Unsplash lijsten
 const categoryFallbacks = {
     'Tech': [
-        "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80",
+        "https://images.https://images.unsplash.comphoto-1526374965328-7f61d4dc18c5?w=800&q=80",
         "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80",
-        "https://unsplash.com/s/photos/tech",
-        "https://unsplash.com/photos/central-computer-processors-cpu-concept-3d-renderingconceptual-image-_LIZ36OHGKk",
-        "https://unsplash.com/photos/3d-illustration-computer-chip-a-processor-on-a-printed-circuit-board-the-concept-of-data-transfer-to-the-cloud-central-processor-in-the-form-of-artificial-intelligence-data-transfer-g6Nom1uBz6M",
-        "https://unsplash.com/photos/teal-led-panel-EUsVwEOsblE",
-        "https://unsplash.com/photos/programming-code-abstract-technology-background-of-software-developer-and-computer-script-ltpb_WinC3Y",
-        "https://unsplash.com/photos/black-circuit-board-tmTidmpILWw",
-        "https://unsplash.com/photos/cpu-semiconductor-technology-background-3d-illustration-oLpE1QsXXqU",
-        "https://unsplash.com/photos/red-and-black-abstract-illustration-aQYgUYwnCsM"
+        "https://images.unsplash.com/photo-1550751827-4bd374c3f58b",
+        "https://images.unsplash.com/photo-1576400883215-7083980b6193",
+        "https://images.unsplash.com/photo-1580584126903-c17d41830450"
     ],
     'Health': [
         "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
         "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
         "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
         "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800&q=80",
-        "https://unsplash.com/photos/woman-walking-on-pathway-during-daytime-mNGaaLeWEp0",
-        "https://unsplash.com/photos/four-person-hands-wrap-around-shoulders-while-looking-at-sunset-PGnqT0rXWLs",
-        "https://unsplash.com/photos/person-wearing-orange-and-gray-nike-shoes-walking-on-gray-concrete-stairs-PHIgYUGQPvU",
-        "https://unsplash.com/photos/girl-in-blue-jacket-holding-red-and-silver-ring-Y-3Dt0us7e0",
-        "https://unsplash.com/photos/a-group-of-white-boxes-with-black-text-on-a-wooden-surface-Tuy2n9md0AI"
+        // "https://unsplash.com/photos/woman-walking-on-pathway-during-daytime-mNGaaLeWEp0",
+        // "https://unsplash.com/photos/four-person-hands-wrap-around-shoulders-while-looking-at-sunset-PGnqT0rXWLs",
+        // "https://unsplash.com/photos/person-wearing-orange-and-gray-nike-shoes-walking-on-gray-concrete-stairs-PHIgYUGQPvU",
+        // "https://unsplash.com/photos/girl-in-blue-jacket-holding-red-and-silver-ring-Y-3Dt0us7e0",
+        // "https://unsplash.com/photos/a-group-of-white-boxes-with-black-text-on-a-wooden-surface-Tuy2n9md0AI"
     ],
     'Science': [
-        "https://unsplash.com/photos/water-droplets-on-glass-during-daytime-Mm1VIPqd0OA",
-        "https://unsplash.com/photos/purple-and-pink-plasma-ball-OgvqXGL7XO4",
-        "https://unsplash.com/photos/three-clear-beakers-placed-on-tabletop-lQGJCMY5qcM",
-        "https://unsplash.com/photos/a-close-up-of-a-blue-light-in-the-dark-G66K_ERZRhM",
-        "https://unsplash.com/photos/refill-of-liquid-on-tubes-pwcKF7L4-no",
-        "https://unsplash.com/photos/water-droplets-on-a-surface-5nI9N2wNcBU",
-        "https://unsplash.com/photos/a-blue-abstract-background-with-lines-and-dots-pREq0ns_p_E"
+        "https://images.unsplash.com/photo-1554475901-4538ddfbccc2?w=800&q=80", // OgvqXGL7XO4
+        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80", // lQGJCMY5qcM
+        "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=800&q=80", // 5nI9N2wNcBU
+        "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&q=80", // Modern laboratorium
+        "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=800&q=80", // Sterrenstelsel / Ruimtevaart
+        // "https://unsplash.com/photos/water-droplets-on-glass-during-daytime-Mm1VIPqd0OA",
+        // "https://unsplash.com/photos/purple-and-pink-plasma-ball-OgvqXGL7XO4",
+        // "https://unsplash.com/photos/three-clear-beakers-placed-on-tabletop-lQGJCMY5qcM",
+        // "https://unsplash.com/photos/a-close-up-of-a-blue-light-in-the-dark-G66K_ERZRhM",
+        // "https://unsplash.com/photos/refill-of-liquid-on-tubes-pwcKF7L4-no",
+        // "https://unsplash.com/photos/water-droplets-on-a-surface-5nI9N2wNcBU",
+        // "https://unsplash.com/photos/a-blue-abstract-background-with-lines-and-dots-pREq0ns_p_E"
     ],
     'Lifestyle': [
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
-        "https://unsplash.com/photos/photo-of-three-women-lifting-there-hands-tXiMrX3Gc-g",
-        "https://unsplash.com/photos/man-wearing-white-shorts-holding-black-backpack-CihXnvELE00",
-        "https://unsplash.com/photos/person-sitting-on-top-of-gray-rock-overlooking-mountain-during-daytime-z0nVqfrOqWA",
-        "https://unsplash.com/photos/woman-on-hammock-near-to-river-KYTT8L5JLDs",
-        "https://unsplash.com/photos/two-man-carrying-backpacks-during-daytime-M1aegHe2j6g",
-        "https://unsplash.com/photos/man-sitting-on-chair-holding-phone-C2GI1fuoSQ8",
-        "https://unsplash.com/photos/woman-wearing-white-sweater-carrying-a-daughter-YLMs82LF6FY",
-        "https://unsplash.com/photos/person-holding-ballpoint-pen-writing-on-notebook-505eectW54k"
+        "https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=800&q=80", // tXiMrX3Gc-g
+        "https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=800&q=80", // CihXnvELE00
+        "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80", // z0nVqfrOqWA
+        "https://images.unsplash.com/photo-1502444330042-d1a1ddf9bb5b?w=800&q=80", // KYTT8L5JLDs
+        "https://images.unsplash.com/photo-1464998857633-50e59fbf2fe6?w=800&q=80", // M1aegHe2j6g
+        "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=800&q=80", // C2GI1fuoSQ8
+        // "https://unsplash.com/photos/photo-of-three-women-lifting-there-hands-tXiMrX3Gc-g",
+        // "https://unsplash.com/photos/man-wearing-white-shorts-holding-black-backpack-CihXnvELE00",
+        // "https://unsplash.com/photos/person-sitting-on-top-of-gray-rock-overlooking-mountain-during-daytime-z0nVqfrOqWA",
+        // "https://unsplash.com/photos/woman-on-hammock-near-to-river-KYTT8L5JLDs",
+        // "https://unsplash.com/photos/two-man-carrying-backpacks-during-daytime-M1aegHe2j6g",
+        // "https://unsplash.com/photos/man-sitting-on-chair-holding-phone-C2GI1fuoSQ8",
+        // "https://unsplash.com/photos/woman-wearing-white-sweater-carrying-a-daughter-YLMs82LF6FY",
+        "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e"
     ],
     'Environment': [
         "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
         "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=800&q=80",
         "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80",
         "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80",
-        "https://unsplash.com/photos/sunflower-field-pF_2lrjWiJE",
-        "https://unsplash.com/photos/aerial-view-of-grass-mountains-x1w_Q78xNEY",
-        "https://unsplash.com/photos/windmill-on-grass-field-during-golden-hour-0w-uTa0Xz7w",
-        "https://unsplash.com/photos/selective-photography-of-green-leaf-plant-Rfflri94rs8",
-        "https://unsplash.com/photos/green-plant-x8ZStukS2PM",
-        "https://unsplash.com/photos/white-windmills-on-green-grass-field-under-white-clouds-and-blue-sky-ZKWgoRUYuMk",
-        "https://unsplash.com/photos/landscape-photography-of-black-mountain-fecsiuPSJsc",
-        "https://unsplash.com/photos/aerial-photo-of-wind-turbines-near-field-B09tL5bSQJk",
-        "https://unsplash.com/photos/worms-eye-view-of-forest-during-day-time-19SC2oaVZW0",
-        "https://unsplash.com/photos/green-grass-field-during-sunset-_RBcxo9AU-U"
     ],
     'Finance': [
-        "https://images.unsplash.com/photo-1579621970795-87facc2f976d?w=800&q=80",
         "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&q=80",
-        "https://unsplash.com/photos/person-in-black-suit-jacket-holding-white-tablet-computer-nApaSgkzaxg",
-        "https://unsplash.com/photos/laptop-computer-on-glass-top-table-hpjSkU2UYSU",
-        "https://unsplash.com/photos/person-holding-paper-near-pen-and-calculator-xoU52jUVUXA",
-        "https://unsplash.com/photos/stacked-round-gold-colored-coins-on-white-surface-OApHds2yEGQ",
-        "https://unsplash.com/photos/black-and-silver-laptop-computer-IrRbSND5EUc",
-        "https://unsplash.com/photos/a-person-stacking-coins-on-top-of-a-table-jpqyfK7GB4w",
-        "https://unsplash.com/photos/person-using-macbook-pro-on-table-amLfrL8LGls",
-        "https://unsplash.com/photos/business-visual-data-analyzing-technology-by-creative-computer-software-ZJKfQ8Ber7E",
-        "https://unsplash.com/photos/pink-pig-figurine-on-white-surface-pElSkGRA2NU",
-        "https://unsplash.com/photos/black-android-smartphone-near-ballpoint-pen-tax-withholding-certificate-on-top-of-white-folder-M98NRBuzbpc",
-        "https://unsplash.com/photos/pink-pig-coin-bank-on-brown-wooden-table-5OUMf1Mr5pU"
+        "https://images.unsplash.com/photo-1579621970795-87facc2f976d?w=800&q=80", // Groeiend plantje uit munten
+        "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=800&q=80", // Professionele financiële koersgrafieken
+        "https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=800&q=80", // Stapels munten en goudstukken (Rijkdom)
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80", // Business data en grafieken op een scherm
+        "https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?w=800&q=80", // Een spaarvarken in het zonlicht (Besparingen)
+        "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80"  // Moderne boekhouding en rekenmachine (Overzicht)
+
     ],
     'General': [
-        "https://unsplash.com/photos/vintage-teal-typewriter-beside-book-jLwVAUtLOAQ",
-        "https://unsplash.com/photos/half-moon-shines-brightly-in-the-blue-sky-UD0DV4VDpN8",
-        "https://unsplash.com/photos/a-close-up-of-a-red-flower-with-a-blurry-background-5DrARooH5Dk",
-        "https://unsplash.com/photos/a-mountain-range-with-a-body-of-water-in-the-foreground-akXi4v25wFw",
-        "https://unsplash.com/photos/sea-waves-on-brown-sand-during-daytime-echUCa-GuFY",
-        "https://unsplash.com/photos/birds-eye-view-of-dock-on-body-of-water-u6JASMpSHZU",
-        "https://unsplash.com/photos/a-small-airplane-soars-through-a-bright-blue-sky-wy0ayhx8g6s",
-        "https://unsplash.com/photos/a-view-of-a-city-with-white-buildings-AYB3NosOARk"
+        "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80", // Prachtige zonsopgang
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80", // Kleurrijk landschap / Natuur
+        "https://images.unsplash.com/photo-1501426026826-31c667bdf23d?w=800&q=80", // Zonnig strand / Vakantiegevoel
+        "https://images.unsplash.com/photo-1519834785169-98be25ec3f84?w=800&q=80"  // Blauwe lucht met witte wolken
     ]
 };
 
@@ -180,7 +166,7 @@ async function processNews() {
                             content: `Analyseer dit nieuws: "${item.title} - ${item.contentSnippet}". 
                                     Als het zeer positief is, schrijf een inspirerend artikel (300 woorden). 
                                     Classificeer in: Tech, Health, Science, Lifestyle, Environment, of Finance.
-                                    Antwoord in JSON: {"isBright": true, "category": "...", "nl": {"t": "..", "s": ".."}, "en": {...}, ...}`
+                                    Antwoord in JSON: {"isBright": true, "category": "...", "nl": {"t": "..", "s": ".."}, "en": {...}, "de": {...}, "fr": {...}, "es": {...},`
                         }],
                         responseFormat: { type: 'json_object' }
                     });
