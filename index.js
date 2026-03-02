@@ -144,8 +144,7 @@ function renderLijst(artikelen) {
         // Zorg dat de muis verandert in een handje
         card.style.cursor = 'pointer';
 
-        const imgSrc = artikel.image || `https://images.unsplash.com/photo-1546422904-90eabf3cab3a?w=800`;
-
+        const imgSrc = artikel.image || 'https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80';
         card.innerHTML = `
             <img src="${imgSrc}" class="card-img" alt="${artikel.title}">
             <div class="card-content">
@@ -240,8 +239,12 @@ async function toonDetail(id) {
         </a>
     </footer>`;
 
+    const detailImgSrc = artikel.image || 'https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80';
+
     detailView.innerHTML = `
-        <div class="detail-hero"><img src="${artikel.image}" class="detail-img"></div>
+    <div class="detail-hero">
+        <img src="${detailImgSrc}" class="detail-img" alt="${artikel.title}">
+    </div>
         <div class="article-container" style="max-width: 800px; margin: 0 auto; padding: 20px;">
             <header class="detail-header"><h1>${artikel.title}</h1></header>
             <section class="article-body">

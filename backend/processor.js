@@ -104,6 +104,9 @@ async function processNews() {
                         console.log(`✨ Positief nieuws gevonden! (${item.title})`);
                         const articleId = Date.now() + Math.random().toString(36).substr(2, 9);
 
+                        // Gebruik een betrouwbare, zonnige Unsplash foto als standaard
+                        const unsplashFallback = "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80";
+
                         Object.keys(languages).forEach(lang => {
                             languages[lang].unshift({
                                 id: articleId,
@@ -111,10 +114,10 @@ async function processNews() {
                                 summary: data[lang].s,
                                 link: item.link,
                                 source: feedInfo.name,
-                                // Als imageUrl null is, gebruik een mooie Unsplash foto als vaste backup in de DATA
-                                image: imageUrl || `https://images.unsplash.com/photo-1546422904-90eabf3cab3a?w=800&q=80`,
+                                // Als imageUrl null is, pakken we de Unsplash fallback
+                                image: imageUrl || unsplashFallback,
                                 date: new Date().toISOString(),
-                                category: data.category || "General" // Vergeet je nieuwe categorie veld niet!
+                                category: data.category || "General"
                             });
                             // Maximaal 50 artikelen per taal
                             if (languages[lang].length > 50) languages[lang].pop();
