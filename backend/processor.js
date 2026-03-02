@@ -7,13 +7,22 @@ const parser = new RSSParser();
 const client = new Mistral({ apiKey: process.env.MISTRAL_API_KEY });
 
 const FEEDS = [
-    { name: 'NU.nl', url: 'https://www.nu.nl/rss/goed-nieuws' },
     { name: 'Positive.News', url: 'https://www.positive.news/feed/' },
     { name: 'GoodNewsNetwork.org', url: 'https://www.goodnewsnetwork.org/category/news/feed/' },
     { name: 'CNTraveler.com', url: 'https://www.cntraveler.com/feed/rss' },
     { name: 'Adventure-Journal.com', url: 'https://www.adventure-journal.com/feed/' },
     { name: 'Bright.nl', url: 'https://www.bright.nl/rss' },
-    { name: 'BusinessInsider.com', url: 'https://www.businessinsider.com/rss' }
+    { name: 'BusinessInsider.com', url: 'https://www.businessinsider.com/rss' },
+    { name: 'Barefeetinthekitchen.com', url: 'barefeetinthekitchen.com/feed' },
+    { name: 'Foxsports.com', url: 'https://api.foxsports.com/v2/content/optimized-rss?partnerKey=MB0Wehpmuj2lUhuRhQaafhBjAJqaPU244mlTDK1i&size=30' },
+    { name: 'Nature.com', url: 'https://www.nature.com/nature.rss' },
+    { name: 'Goingzerowaste.com', url: 'https://www.goingzerowaste.com/feed/' },
+    { name: 'Newatlas.com', url: 'https://newatlas.com/index.rss' },
+    { name: 'Ww2.kqed.org/mindshift', url: 'https://ww2.kqed.org/mindshift/feed/' },
+    { name: 'Onbetterliving.com', url: 'https://onbetterliving.com/feed/' },
+    { name: 'Wellnessblogster.nl', url: 'https://wellnessblogster.nl/feed/' },
+    { name: 'Etonline.com', url: 'https://www.etonline.com/news/rss' },
+    { name: 'Bbc.com/culture', url: 'https://www.bbc.com/culture/feed.rss' },
 ];
 
 /**
@@ -63,14 +72,27 @@ async function processNews() {
 
                 console.log(`🧠 Analyseren: ${item.title}`);
 
-                const imageUrl =
+                let foundUrl =
                     item.enclosure?.url ||
                     item.media?.content?.$?.url ||
                     item.media?.thumbnail?.$?.url ||
                     (item.content?.match(/src="([^"]+)"/)?.[1]) ||
                     (item.contentEncoded?.match(/src="([^"]+)"/)?.[1]) ||
-                    (item.description?.match(/src="([^"]+)"/)?.[1]) ||
                     null;
+
+// 2. VALIDATIE: Is dit wel een echte afbeelding?
+// We checken of de URL NIET op .html eindigt en GEEN 'player' bevat
+                if (foundUrl) {
+                    const isHtml = foundUrl.toLowerCase().split('?')[0].endsWith('.html');
+                    const isVideo = foundUrl.toLowerCase().includes('player') || foundUrl.toLowerCase().includes('video');
+
+                    if (isHtml || isVideo) {
+                        console.log(`⚠️ Ongeldige afbeelding genegeerd (video/html): ${foundUrl}`);
+                        foundUrl = null; // Zet op null zodat de Unsplash fallback wordt gebruikt
+                    }
+                }
+
+                const imageUrl = foundUrl;
 
                 try {
                     const chatResponse = await client.chat.complete({
@@ -105,6 +127,7 @@ async function processNews() {
                         const articleId = Date.now() + Math.random().toString(36).substr(2, 9);
 
                         // Gebruik een betrouwbare, zonnige Unsplash foto als standaard
+// Definieer je favoriete zonnige Unsplash foto bovenaan je functie of bestand
                         const unsplashFallback = "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80";
 
                         Object.keys(languages).forEach(lang => {
@@ -114,7 +137,7 @@ async function processNews() {
                                 summary: data[lang].s,
                                 link: item.link,
                                 source: feedInfo.name,
-                                // Als imageUrl null is, pakken we de Unsplash fallback
+                                // Als imageUrl door onze check hierboven op null is gezet, pakt hij nu Unsplash!
                                 image: imageUrl || unsplashFallback,
                                 date: new Date().toISOString(),
                                 category: data.category || "General"
