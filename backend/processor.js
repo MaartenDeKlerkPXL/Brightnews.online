@@ -120,6 +120,13 @@ async function processNews() {
             languages[lang] = [];
         }
     }
+    function fixUnsplashUrl(url) {
+        if (url?.includes('unsplash.com/photos/') && !url.includes('images.unsplash.com')) {
+            const id = url.split('/').pop();
+            return `https://images.unsplash.com/photo-${id}?w=800&q=80`;
+        }
+        return url;
+    }
 
     for (const feedInfo of FEEDS) {
         try {
@@ -134,28 +141,49 @@ async function processNews() {
                 console.log(`🧠 Analyseren: ${item.title}`);
 
                 // 2. Uitgebreide Afbeelding Scraper met BBC Fix
+                // 1. Uitgebreide Scraper
                 let foundUrl =
-                    item.enclosure?.url ||
                     item.media?.content?.$?.url ||
-                    item.media?.thumbnail?.$?.url ||
-                    (item.contentEncoded?.match(/src="([^"]+)"/)?.[1]) ||
-                    (item.content?.match(/src="([^"]+)"/)?.[1]) ||
-                    (item.description?.match(/src="([^"]+)"/)?.[1]) ||
-                    null;
+                    item['media:content']?.$?.url ||
+                    item.enclosure?.url ||
+                    item.contentEncoded?.match(/<img[^>]+src="([^">]+)"/i)?.[1] ||
+                    item.description?.match(/<img[^>]+src="([^">]+)"/i)?.[1] ||
+                    item.content?.match(/<img[^>]+src="([^">]+)"/i)?.[1] ||
+                    item.media?.thumbnail?.$?.url || null;
+
+                if (foundUrl === "") foundUrl = null;
 
                 if (foundUrl) {
-                    // BBC Thumbnail Kwaliteit Fix
                     if (foundUrl.includes('ychef.files.bbci.co.uk')) {
                         foundUrl = foundUrl.replace(/\/\d+x\d+\//, '/800x450/');
                     }
 
-                    const isHtml = foundUrl.toLowerCase().split('?')[0].endsWith('.html');
-                    const isVideo = foundUrl.toLowerCase().includes('player') || foundUrl.toLowerCase().includes('video');
-                    const isTooSmall = foundUrl.includes('144x81') || foundUrl.includes('150x150');
+                    foundUrl = fixUnsplashUrl(foundUrl);
 
-                    if (isHtml || isVideo || isTooSmall) {
-                        foundUrl = null;
-                    }
+                    const lowUrl = foundUrl.toLowerCase();
+                    const isHtml = lowUrl.split('?')[0].endsWith('.html');
+                    const isVideo = lowUrl.includes('player') || lowUrl.includes('video');
+                    const isSmall = lowUrl.includes('144x81') || lowUrl.includes('150x150');
+
+                    if (isHtml || isVideo || isSmall) foundUrl = null;
+                }
+
+// 2. Anti-Dubbel Fallback Logica
+                let finalImage = foundUrl;
+
+                if (!finalImage) {
+                    const fallbackLijst = categoryFallbacks[category] || categoryFallbacks['General'];
+
+                    // Check bestaande data op schijf + nieuw toegevoegde artikelen in deze run
+                    const imagesOpSchijf = languages.nl.map(a => a.image);
+                    const imagesInGeheugen = Object.values(languages).flat().map(a => a.image);
+                    const alleGebruikteImages = [...imagesOpSchijf, ...imagesInGeheugen];
+
+                    let uniekeOpties = fallbackLijst.filter(img => !alleGebruikteImages.includes(img));
+
+                    if (uniekeOpties.length === 0) uniekeOpties = fallbackLijst;
+
+                    finalImage = uniekeOpties[Math.floor(Math.random() * uniekeOpties.length)];
                 }
 
                 try {
@@ -164,7 +192,7 @@ async function processNews() {
                         messages: [{
                             role: 'user',
                             content: `Analyseer dit nieuws: "${item.title} - ${item.contentSnippet}". 
-                                    Als het zeer positief is, schrijf een inspirerend artikel (300 woorden). 
+                                    Als het zeer positief is, schrijf een inspirerend artikel (30 woorden). 
                                     Classificeer in: Tech, Health, Science, Lifestyle, Environment, of Finance.
                                     Antwoord in JSON: {"isBright": true, "category": "...", "nl": {"t": "..", "s": ".."}, "en": {...}, "de": {...}, "fr": {...}, "es": {...},`
                         }],
@@ -178,20 +206,20 @@ async function processNews() {
                         const articleId = Date.now() + Math.random().toString(36).substr(2, 9);
 
                         // 3. Slimme Anti-Dubbel Fallback Logica
-                        let finalImage = foundUrl;
-
-                        if (!finalImage) {
-                            const fallbackLijst = categoryFallbacks[category] || categoryFallbacks['General'];
-                            // Kijk welke afbeeldingen al in de huidige data staan
-                            const gebruikteImages = languages.nl.map(a => a.image);
-                            // Filter de lijst: pak alleen foto's die we nog NIET gebruiken
-                            let uniekeOpties = fallbackLijst.filter(img => !gebruikteImages.includes(img));
-
-                            // Als alles al een keer gebruikt is, reset de lijst
-                            if (uniekeOpties.length === 0) uniekeOpties = fallbackLijst;
-
-                            finalImage = uniekeOpties[Math.floor(Math.random() * uniekeOpties.length)];
-                        }
+                        // let finalImage = foundUrl;
+                        //
+                        // if (!finalImage) {
+                        //     const fallbackLijst = categoryFallbacks[category] || categoryFallbacks['General'];
+                        //     // Kijk welke afbeeldingen al in de huidige data staan
+                        //     const gebruikteImages = languages.nl.map(a => a.image);
+                        //     // Filter de lijst: pak alleen foto's die we nog NIET gebruiken
+                        //     let uniekeOpties = fallbackLijst.filter(img => !gebruikteImages.includes(img));
+                        //
+                        //     // Als alles al een keer gebruikt is, reset de lijst
+                        //     if (uniekeOpties.length === 0) uniekeOpties = fallbackLijst;
+                        //
+                        //     finalImage = uniekeOpties[Math.floor(Math.random() * uniekeOpties.length)];
+                        // }
 
                         Object.keys(languages).forEach(lang => {
                             languages[lang].unshift({
