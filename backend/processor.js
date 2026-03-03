@@ -192,7 +192,7 @@ async function processNews() {
                         messages: [{
                             role: 'user',
                             content: `Analyseer dit nieuws: "${item.title} - ${item.contentSnippet}". 
-                                    Als het zeer positief is, schrijf een inspirerend artikel (30 woorden). 
+                                    Als het zeer positief is, schrijf een inspirerend artikel (300 woorden). 
                                     geen oorlog wat of iets wat er te maken zou kunnen hebben.
                                     Classificeer in: Tech, Health, Science, Lifestyle, Environment, of Finance.
                                     Antwoord in JSON: {"isBright": true, "category": "...", "nl": {"t": "..", "s": ".."}, "en": {...}, "de": {...}, "fr": {...}, "es": {...},`
