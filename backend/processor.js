@@ -133,7 +133,7 @@ async function processNews() {
             console.log(`📡 Scannen: ${feedInfo.name}`);
             const feed = await parser.parseURL(feedInfo.url);
 
-            for (const item of feed.items.slice(0, 5)) {
+            for (const item of feed.items.slice(0, 15)) {
                 if (languages.nl.some(art => art.link === item.link)) {
                     continue;
                 }
@@ -193,6 +193,7 @@ async function processNews() {
                             role: 'user',
                             content: `Analyseer dit nieuws: "${item.title} - ${item.contentSnippet}". 
                                     Als het zeer positief is, schrijf een inspirerend artikel (30 woorden). 
+                                    geen oorlog wat of iets wat er te maken zou kunnen hebben.
                                     Classificeer in: Tech, Health, Science, Lifestyle, Environment, of Finance.
                                     Antwoord in JSON: {"isBright": true, "category": "...", "nl": {"t": "..", "s": ".."}, "en": {...}, "de": {...}, "fr": {...}, "es": {...},`
                         }],
