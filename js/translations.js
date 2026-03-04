@@ -1,7 +1,31 @@
 window.translations = {
     en: {
-        // Navigatie & Basis
-        nav_home: "Home",
+// Navigatie aanvulling
+        nav_contact: "Contact",
+        filter_all: "All",
+        filter_tech: "Tech",
+        filter_health: "Health",
+        filter_science: "Science",
+        filter_lifestyle: "Lifestyle",
+        filter_environment: "Environment",
+        filter_finance: "Finance",
+
+        // Footer Koppen (Nieuw)
+        footer_explore: "Explore",
+
+        // Contact Pagina (Nieuw)
+        contact_page_title: "Contact | BrightNews",
+        contact_title: "Contact BrightNews ✨",
+        contact_subtitle: "We'd love to hear from you!",
+        contact_mail_header: "Send us an email",
+        contact_mail_text: "Have a question or just want to say hi? You can always reach us at:",
+        contact_feedback_header: "Improvements & Ideas",
+        contact_feedback_text: "Do you have suggestions to make the website even better? Or general feedback? We love to hear it! Don't hesitate to share your thoughts with us via email.",
+        contact_social_header: "Social Media",
+        contact_social_text: "Although we are present on social media, there is a good chance we won't respond (quickly) there. Our notifications are turned off to keep the focus on positivity.",
+
+        // Extra voor de deel-functie
+        copy_success: "Link copied!",        nav_home: "Home",
         nav_about: "About Us",
         nav_premium: "Subscriptions",
         nav_profile: "My Profile",
@@ -18,7 +42,7 @@ window.translations = {
         footer_privacy: "Privacy Policy",
         footer_service_terms: "Terms of Service",
         footer_support: "Contact Support",
-        footer_follow: "Follow the Light",
+        footer_follow: "Follow BrightNews",
         footer_no_frameworks: "100% Vanilla JS • No Frameworks",
         footer_created_by: `&copy; 2026 Bright News • All rights reserved • Created with 💚 in the Netherlands`,
 
@@ -103,6 +127,31 @@ window.translations = {
         copied: "Copied!"
     },
     nl: {
+        nav_contact: "Contact",
+        filter_all: "Alles",
+        filter_tech: "Tech",
+        filter_health: "Gezondheid",
+        filter_science: "Wetenschap",
+        filter_lifestyle: "Lifestyle",
+        filter_environment: "Milieu",
+        filter_finance: "Financiën",
+
+        // Footer Secties
+        footer_explore: "Ontdekken",
+
+        // Contact Pagina
+        contact_page_title: "Contact | BrightNews",
+        contact_title: "Contact BrightNews ✨",
+        contact_subtitle: "We horen graag van je!",
+        contact_mail_header: "Stuur ons een mailtje",
+        contact_mail_text: "Heb je een vraag of wil je gewoon hallo zeggen? Je kunt ons altijd bereiken op:",
+        contact_feedback_header: "Verbeteringen & Ideeën",
+        contact_feedback_text: "Heb je suggesties om de website nog beter te maken? Of heb je algemene feedback? Dat vinden we alleen maar leuk en fijn om te horen! Schroom niet om je gedachten met ons te delen via de mail.",
+        contact_social_header: "Social Media",
+        contact_social_text: "Hoewel we aanwezig zijn op sociale media, is de kans groot dat we daar niet (snel) reageren. Onze meldingen staan namelijk uit om de focus op positiviteit en kwaliteit te houden. Voor een snelle reactie is e-mail dus de beste weg!",
+
+        // Extra
+        copy_success: "Link gekopieerd!",
         nav_home: "Home",
         nav_about: "Over Ons",
         nav_premium: "Abonnementen",
@@ -119,7 +168,7 @@ window.translations = {
         footer_privacy: "Privacybeleid",
         footer_service_terms: "Algemene Voorwaarden",
         footer_support: "Contact Support",
-        footer_follow: "Volg het Licht",
+        footer_follow: "Volg BrightNews",
         footer_no_frameworks: "100% Vanilla JS • No Frameworks",
         footer_created_by: `&copy; 2026 Bright News • Alle rechten voorbehouden • Gemaakt met 💚 in Nederland`,
 
@@ -204,6 +253,33 @@ window.translations = {
         copied: "Gekopieerd!"
     },
     de: {
+        // Navigation & Basis
+        nav_contact: "Kontakt",
+        // Kategorie-Filter
+        filter_all: "Alles",
+        filter_tech: "Tech",
+        filter_health: "Gesundheit",
+        filter_science: "Wissenschaft",
+        filter_lifestyle: "Lifestyle",
+        filter_environment: "Umwelt",
+        filter_finance: "Finanzen",
+
+        // Footer Abschnitte
+        footer_explore: "Entdecken",
+
+        // Kontaktseite
+        contact_page_title: "Kontakt | BrightNews",
+        contact_title: "BrightNews kontaktieren ✨",
+        contact_subtitle: "Wir freuen uns, von dir zu hören!",
+        contact_mail_header: "Schreib uns eine E-Mail",
+        contact_mail_text: "Hast du eine Frage oder möchtest du einfach nur Hallo sagen? Du erreichst uns unter:",
+        contact_feedback_header: "Verbesserungen & Ideen",
+        contact_feedback_text: "Hast du Vorschläge, wie wir die Website noch besser machen können? Oder allgemeines Feedback? Das hören wir sehr gerne! Zögere nicht, uns deine Gedanken per E-Mail mitzuteilen.",
+        contact_social_header: "Social Media",
+        contact_social_text: "Obwohl wir in den sozialen Medien präsent sind, ist die Wahrscheinlichkeit groß, dass wir dort nicht (schnell) antworten. Unsere Benachrichtigungen sind ausgeschaltet, um den Fokus auf Positivität und Qualität zu behalten. Für eine schnelle Antwort ist E-Mail der beste Weg!",
+
+        // Extra
+        copy_success: "Link kopiert!",
         nav_home: "Startseite",
         nav_about: "Über Uns",
         nav_premium: "Abonnements",
@@ -220,7 +296,7 @@ window.translations = {
         footer_privacy: "Datenschutzerklärung",
         footer_service_terms: "Nutzungsbedingungen",
         footer_support: "Support kontaktieren",
-        footer_follow: "Folge dem Licht",
+        footer_follow: "Folge BrightNews",
         footer_no_frameworks: "100% Vanilla JS • No Frameworks",
         footer_created_by: `&copy; 2026 Bright News • Alle Rechte vorbehalten • Erstellt mit 💚 in den Niederlanden`,
 
@@ -305,6 +381,33 @@ window.translations = {
         copied: "Kopiert!"
     },
     fr: {
+        // Navigation & Base
+        nav_contact: "Contact",
+        // Filtres de Catégorie
+        filter_all: "Tout",
+        filter_tech: "Tech",
+        filter_health: "Santé",
+        filter_science: "Science",
+        filter_lifestyle: "Style de vie",
+        filter_environment: "Environnement",
+        filter_finance: "Finance",
+
+        // Sections du Footer
+        footer_explore: "Explorer",
+
+        // Page de Contact
+        contact_page_title: "Contact | BrightNews",
+        contact_title: "Contacter BrightNews ✨",
+        contact_subtitle: "Nous aimerions avoir de vos nouvelles !",
+        contact_mail_header: "Envoyez-nous un e-mail",
+        contact_mail_text: "Vous avez une question ou vous voulez juste dire bonjour ? Vous kunt nous joindre à :",
+        contact_feedback_header: "Améliorations et Idées",
+        contact_feedback_text: "Avez-vous des suggestions pour rendre le site encore meilleur ? Ou des commentaires généraux ? Nous serions ravis de les entendre ! N'hésitez pas à partager vos pensées avec nous par e-mail.",
+        contact_social_header: "Réseaux Sociaux",
+        contact_social_text: "Bien que nous soyons présents sur les réseaux sociaux, il y a de fortes chances que nous n'y répondions pas (rapidement). Nos notifications sont désactivées pour rester concentrés sur la positivité et la qualité. Pour une réponse rapide, l'e-mail est le meilleur moyen !",
+
+        // Extra
+        copy_success: "Lien copié !",
         nav_home: "Accueil",
         nav_about: "À propos",
         nav_premium: "Abonnements",
@@ -321,7 +424,7 @@ window.translations = {
         footer_privacy: "Politique de confidentialité",
         footer_service_terms: "Conditions d'utilisation",
         footer_support: "Contacter le support",
-        footer_follow: "Suivez la Lumière",
+        footer_follow: "Suivez BrightNews",
         footer_no_frameworks: "100% Vanilla JS • No Frameworks",
         footer_created_by: `&copy; 2026 Bright News • Tous droits réservés • Créé avec 💚 aux Pays-Bas`,
 
@@ -406,6 +509,32 @@ window.translations = {
         copied: "Copié !"
     },
     es: {
+        // Navegación & Base
+        nav_contact: "Contacto",
+        filter_all: "Todo",
+        filter_tech: "Tech",
+        filter_health: "Salud",
+        filter_science: "Ciencia",
+        filter_lifestyle: "Estilo de vida",
+        filter_environment: "Medio ambiente",
+        filter_finance: "Finanzas",
+
+        // Secciones del Footer
+        footer_explore: "Explorar",
+
+        // Página de Contacto
+        contact_page_title: "Contacto | BrightNews",
+        contact_title: "Contactar con BrightNews ✨",
+        contact_subtitle: "¡Nos encantaría saber de ti!",
+        contact_mail_header: "Envíanos un correo electrónico",
+        contact_mail_text: "¿Tienes alguna pregunta o solo quieres saludar? Siempre puedes contactarnos en:",
+        contact_feedback_header: "Mejoras e Ideas",
+        contact_feedback_text: "¿Tienes sugerencias para mejorar aún más el sitio web? ¿O comentarios generales? ¡Nos encantaría escucharlos! No dudes en compartir tus pensamientos con nosotros por correo electrónico.",
+        contact_social_header: "Redes Sociales",
+        contact_social_text: "Aunque estamos presentes en las redes sociales, es probable que no respondamos (rápidamente) allí. Nuestras notificaciones están desactivadas para mantener el enfoque en la positividad y la calidad. Para una respuesta rápida, ¡el correo electrónico es el mejor camino!",
+
+        // Extra
+        copy_success: "¡Enlace copiado!",
         nav_home: "Inicio",
         nav_about: "Sobre Nosotros",
         nav_premium: "Suscripciones",
@@ -422,7 +551,7 @@ window.translations = {
         footer_privacy: "Política de Privacidad",
         footer_service_terms: "Términos de Servicio",
         footer_support: "Contactar Soporte",
-        footer_follow: "Sigue la Luz",
+        footer_follow: "Sigue BrightNews",
         footer_no_frameworks: "100% Vanilla JS • No Frameworks",
         footer_created_by: `&copy; 2026 Bright News • Todos los derechos reservados • Creado con 💚 en los Países Bajos`,
 
