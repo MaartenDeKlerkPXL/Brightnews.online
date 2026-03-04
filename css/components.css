@@ -389,7 +389,7 @@ footer {
 header, .navbar, nav {
     position: relative; /* Noodzakelijk voor z-index */
     z-index: 2000 !important;
-    overflow: visible !important; /* CRUCIAAL: als dit op 'hidden' staat, zie je de dropdown nooit! */
+    overflow: visible !important;
 }
 
 /* 2. De Dropdown Container */

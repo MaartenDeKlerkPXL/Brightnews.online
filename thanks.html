@@ -5,7 +5,7 @@
     <link rel="icon" type="image/png" href="assets/brightnews-logo-faviconv5.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank you! ✨ - Bright News</title>
+    <title>Thank you! ✨ - BrightNews</title>
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/layout.css">
     <style>
@@ -26,6 +26,15 @@
             background-color: var(--bright-bg);
             color: var(--bright-text);
             text-align: center;
+        }
+        header {
+            background-color: var(--white); !important;
+            border-bottom: 1px solid var(--border-color); !important;
+            padding: 1rem 0; !important;
+            position: sticky; !important;
+            top: 0; !important;
+            z-index: 1000; !important;
+            box-shadow: var(--shadow-sm); !important;
         }
 
         .thanks-container {
@@ -101,6 +110,7 @@
     </style>
 </head>
 <body>
+<header>
 <nav class="container">
     <div class="nav-left-group">
         <div class="dropdown language-picker">
@@ -148,7 +158,7 @@
     </ul>
 
 </nav>
-
+</header>
 <div class="thanks-container">
     <div class="icon-circle">✨</div>
     <h1 id="thanks-title">Stellar news!</h1>
@@ -168,7 +178,7 @@
             <div class="footer-logo">Bright<span>News</span></div>
             <p data-i18n="footer_text">
                 Founded and developed by <strong>Maarten de Klerk</strong>.
-                Maarten is the owner and lead developer of Bright News,
+                Maarten is the owner and lead developer of BrightNews,
                 dedicated to spreading positive vibes through tech.
             </p>
         </div>
@@ -215,12 +225,12 @@
     </div>
 
     <div class="footer-bottom">
-        <p data-i18n="footer_created_by">&copy; 2026 Bright News • All rights reserved • Created with 💚 in the Netherlands</p>
+        <p data-i18n="footer_created_by">&copy; 2026 BrightNews • All rights reserved • Created with 💚 in the Netherlands</p>
     </div>
 </footer>
 <script>
     /**
-     * Bright News - Premium Activation Logic
+     * BrightNews - Premium Activation Logic
      * Vanilla JS
      */
     document.addEventListener('DOMContentLoaded', () => {

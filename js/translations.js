@@ -34,7 +34,7 @@ window.translations = {
 
         // Footer Secties
         footer_text: `Founded and developed by <strong>Maarten de Klerk</strong>. 
-                      Maarten is the owner and lead developer of Bright News, 
+                      Maarten is the owner and lead developer of BrightNews, 
                       dedicated to spreading positive vibes through tech.`,
         footer_mission: "Our Mission",
         footer_acc: "My Account",
@@ -44,12 +44,12 @@ window.translations = {
         footer_support: "Contact Support",
         footer_follow: "Follow BrightNews",
         footer_no_frameworks: "100% Vanilla JS • No Frameworks",
-        footer_created_by: `&copy; 2026 Bright News • All rights reserved • Created with 💚 in the Netherlands`,
+        footer_created_by: `&copy; 2026 BrightNews • All rights reserved • Created with 💚 in the Netherlands`,
 
         about_badge: "Hello sunshine! ☀️",
         about_hero_title: "We are your daily dose of good news.",
-        about_hero_p: "Let's be honest: the world can be a bit overwhelming sometimes. At Bright News, we put on our sunglasses and focus on the beautiful things that ARE happening.",
-        about_why_title: "Why Bright News?",
+        about_hero_p: "Let's be honest: the world can be a bit overwhelming sometimes. At BrightNews, we put on our sunglasses and focus on the beautiful things that ARE happening.",
+        about_why_title: "Why BrightNews?",
         about_why_p: "Because we believe a positive outlook is contagious! From scientists cleaning oceans to small acts of kindness on the street corner; there is so much to be happy about. We filter out the noise and show the highlights.",
         about_feat1_title: "No Clouds",
         about_feat1_p: "Only stories that give you energy and that you can share with confidence.",
@@ -160,7 +160,7 @@ window.translations = {
         index_loading: "Laden van positieve vibes...",
 
         footer_text: `Opgericht en ontwikkeld door <strong>Maarten de Klerk</strong>. 
-                      Maarten is de eigenaar en hoofdontwikkelaar van Bright News, 
+                      Maarten is de eigenaar en hoofdontwikkelaar van BrightNews, 
                       toegewijd aan het verspreiden van positieve vibes via technologie.`,
         footer_mission: "Onze Missie",
         footer_acc: "Mijn Account",
@@ -170,12 +170,12 @@ window.translations = {
         footer_support: "Contact Support",
         footer_follow: "Volg BrightNews",
         footer_no_frameworks: "100% Vanilla JS • No Frameworks",
-        footer_created_by: `&copy; 2026 Bright News • Alle rechten voorbehouden • Gemaakt met 💚 in Nederland`,
+        footer_created_by: `&copy; 2026 BrightNews • Alle rechten voorbehouden • Gemaakt met 💚 in Nederland`,
 
         about_badge: "Hallo zonneschijn! ☀️",
         about_hero_title: "Wij zijn jouw dagelijkse dosis goed nieuws.",
-        about_hero_p: "Eerlijk is eerlijk: de wereld kan soms best een beetje overweldigend zijn. Bij Bright News zetten we de zonnebril op en focussen we ons op de mooie dingen die wél gebeuren.",
-        about_why_title: "Waarom Bright News?",
+        about_hero_p: "Eerlijk is eerlijk: de wereld kan soms best een beetje overweldigend zijn. Bij BrightNews zetten we de zonnebril op en focussen we ons op de mooie dingen die wél gebeuren.",
+        about_why_title: "Waarom BrightNews?",
         about_why_p: "Omdat we geloven dat een positieve blik besmettelijk is! Van wetenschappers die oceanen schoonmaken tot kleine daden van vriendelijkheid op de hoek van de straat; er is zoveel om vrolijk van te worden. Wij filteren de ruis weg en laten de lichtpuntjes zien.",
         about_feat1_title: "Geen Wolken",
         about_feat1_p: "Alleen berichten waar je energie van krijgt en die je met een gerust hart kunt delen.",
@@ -288,7 +288,7 @@ window.translations = {
         index_loading: "Positive Vibes werden geladen...",
 
         footer_text: `Gegründet und entwickelt von <strong>Maarten de Klerk</strong>. 
-                      Maarten ist der Eigentümer und Hauptentwickler von Bright News, 
+                      Maarten ist der Eigentümer und Hauptentwickler von BrightNews, 
                       der sich der Verbreitung positiver Vibes durch Technologie verschrieben hat.`,
         footer_mission: "Unsere Mission",
         footer_acc: "Mein Konto",
@@ -298,12 +298,12 @@ window.translations = {
         footer_support: "Support kontaktieren",
         footer_follow: "Folge BrightNews",
         footer_no_frameworks: "100% Vanilla JS • No Frameworks",
-        footer_created_by: `&copy; 2026 Bright News • Alle Rechte vorbehalten • Erstellt mit 💚 in den Niederlanden`,
+        footer_created_by: `&copy; 2026 BrightNews • Alle Rechte vorbehalten • Erstellt mit 💚 in den Niederlanden`,
 
         about_badge: "Hallo Sonnenschein! ☀️",
         about_hero_title: "Wir sind Ihre tägliche Dosis gute Nachrichten.",
-        about_hero_p: "Ehrlich gesagt: Die Welt kann manchmal etwas überwältigend sein. Bei Bright News setzen wir die Sonnenbrille auf und konzentrieren uns auf die schönen Dinge, die wirklich passieren.",
-        about_why_title: "Warum Bright News?",
+        about_hero_p: "Ehrlich gesagt: Die Welt kann manchmal etwas überwältigend sein. Bei BrightNews setzen wir die Sonnenbrille auf und konzentrieren uns auf die schönen Dinge, die wirklich passieren.",
+        about_why_title: "Warum BrightNews?",
         about_why_p: "Weil wir glauben, dass eine positive Einstellung ansteckend ist! Von Wissenschaftlern, die Ozeane reinigen, bis hin zu kleinen Taten der Freundlichkeit an der Straßenecke; es gibt so viel, worüber man sich freuen kann. Wir filtern den Lärm heraus und zeigen die Lichtblicke.",
         about_feat1_title: "Keine Wolken",
         about_feat1_p: "Nur Nachrichten, die Ihnen Energie geben und die Sie mit gutem Gewissen teilen können.",
@@ -416,7 +416,7 @@ window.translations = {
         index_loading: "Chargement de bonnes ondes...",
 
         footer_text: `Fondé et développé par <strong>Maarten de Klerk</strong>. 
-                      Maarten est le propriétaire et le développeur principal de Bright News, 
+                      Maarten est le propriétaire et le développeur principal de BrightNews, 
                       dédié à la diffusion d'ondes positives grâce à la technologie.`,
         footer_mission: "Notre Mission",
         footer_acc: "Mon Compte",
@@ -426,12 +426,12 @@ window.translations = {
         footer_support: "Contacter le support",
         footer_follow: "Suivez BrightNews",
         footer_no_frameworks: "100% Vanilla JS • No Frameworks",
-        footer_created_by: `&copy; 2026 Bright News • Tous droits réservés • Créé avec 💚 aux Pays-Bas`,
+        footer_created_by: `&copy; 2026 BrightNews • Tous droits réservés • Créé avec 💚 aux Pays-Bas`,
 
         about_badge: "Bonjour soleil ! ☀️",
         about_hero_title: "Nous sommes votre dose quotidienne de bonnes nouvelles.",
-        about_hero_p: "Soyons honnêtes : le monde peut parfois être un peu accablant. Chez Bright News, nous mettons nos lunettes de soleil et nous nous concentrons sur les belles choses qui se produisent réellement.",
-        about_why_title: "Pourquoi Bright News ?",
+        about_hero_p: "Soyons honnêtes : le monde peut parfois être un peu accablant. Chez BrightNews, nous mettons nos lunettes de soleil et nous nous concentrons sur les belles choses qui se produisent réellement.",
+        about_why_title: "Pourquoi BrightNews ?",
         about_why_p: "Parce que nous croyons qu'une vision positive est contagieuse ! Des scientifiques qui nettoient les océans aux petits actes de gentillesse au coin de la rue ; il y a tant de raisons de se réjouir. Nous filtrons le bruit et montrons les points positifs.",
         about_feat1_title: "Pas de nuages",
         about_feat1_p: "Seulement des messages qui vous donnent de l'énergie et que vous pouvez partager en toute confiance.",
@@ -543,7 +543,7 @@ window.translations = {
         index_loading: "Cargando vibras positivas...",
 
         footer_text: `Fundado y desarrollado por <strong>Maarten de Klerk</strong>. 
-                      Maarten es el dueño y desarrollador principal de Bright News, 
+                      Maarten es el dueño y desarrollador principal de BrightNews, 
                       dedicado a difundir vibras positivas a través de la tecnología.`,
         footer_mission: "Nuestra Misión",
         footer_acc: "Mi Cuenta",
@@ -553,12 +553,12 @@ window.translations = {
         footer_support: "Contactar Soporte",
         footer_follow: "Sigue BrightNews",
         footer_no_frameworks: "100% Vanilla JS • No Frameworks",
-        footer_created_by: `&copy; 2026 Bright News • Todos los derechos reservados • Creado con 💚 en los Países Bajos`,
+        footer_created_by: `&copy; 2026 BrightNews • Todos los derechos reservados • Creado con 💚 en los Países Bajos`,
 
         about_badge: "¡Hola, rayo de sol! ☀️",
         about_hero_title: "Somos tu dosis diaria de buenas noticias.",
-        about_hero_p: "Seamos realistas: el mundo puede ser un poco abrumador a veces. En Bright News, nos ponemos las gafas de sol y nos centramos en las cosas bonitas que SÍ están pasando.",
-        about_why_title: "¿Por qué Bright News?",
+        about_hero_p: "Seamos realistas: el mundo puede ser un poco abrumador a veces. En BrightNews, nos ponemos las gafas de sol y nos centramos en las cosas bonitas que SÍ están pasando.",
+        about_why_title: "¿Por qué BrightNews?",
         about_why_p: "¡Porque creemos que una perspectiva positiva es contagiosa! Desde científicos que limpian océanos hasta pequeños actos de bondad en la esquina de la calle; hay mucho por lo que alegrarse. Filtramos el ruido y mostramos los puntos de luz.",
         about_feat1_title: "Sin nubes",
         about_feat1_p: "Solo mensajes que te den energía y que puedas compartir con confianza.",

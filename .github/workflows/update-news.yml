@@ -1,4 +1,4 @@
-name: "🚀 Bright News: Automatische Update"
+name: "🚀 BrightNews: Automatische Update"
 
 on:
   schedule:
@@ -37,7 +37,7 @@ jobs:
       - name: 💾 Wijzigingen opslaan
         run: |
           git config --local user.email "action@github.com"
-          git config --local user.name "Bright News Bot ✨"
+          git config --local user.name "BrightNews Bot ✨"
           
           # Alleen JSON bestanden in de data map toevoegen
           git add data/*.json

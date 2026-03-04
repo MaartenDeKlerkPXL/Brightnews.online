@@ -19,7 +19,7 @@ if (typeof window.translations === 'undefined') {
 
 // 2. De verbeterde opstart-logica
 async function initApp() {
-    console.log("Bright News initialiseren... 🛠️");
+    console.log("BrightNews initialiseren... 🛠️");
 
     // Pak de taal (standaard Nederlands voor de zekerheid)
     const savedLang = localStorage.getItem('selectedLanguage') || 'nl';
@@ -113,7 +113,7 @@ async function laadNieuws(taal) {
             renderLijst(alleArtikelen);
         }
 
-        console.log(`Bright News succesvol geladen in het ${taal.toUpperCase()} 🚀`);
+        console.log(`BrightNews succesvol geladen in het ${taal.toUpperCase()} 🚀`);
     } catch (err) {
         console.error("Fout tijdens het initialiseren van de nieuws-data:", err);
         // Gebruik je bestaande notificatie-systeem bij een fout
@@ -250,7 +250,7 @@ function updateShareLinks(artikelTitel, artikelUrl) {
         'share-fb': `https://www.facebook.com/sharer/sharer.php?u=${url}`,
         'share-x': `https://twitter.com/intent/tweet?url=${url}&text=${title}`,
         'share-li': `https://www.linkedin.com/sharing/share-offsite/?url=${url}`,
-        'share-mail': `mailto:?subject=${title}&body=Check dit artikel op Bright News: ${url}`
+        'share-mail': `mailto:?subject=${title}&body=Check dit artikel op BrightNews: ${url}`
     };
 
     // Loop door de links en vul ze in

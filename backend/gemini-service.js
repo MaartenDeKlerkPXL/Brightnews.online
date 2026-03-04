@@ -6,7 +6,7 @@ const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" }); // Flash 
 
 async function analyzeAndTranslate(newsContent) {
     const prompt = `
-    Je bent de hoofdredacteur van 'Bright News'. 
+    Je bent de hoofdredacteur van 'BrightNews'. 
     Analyseer het volgende artikel op sentiment:
     "${newsContent}"
 

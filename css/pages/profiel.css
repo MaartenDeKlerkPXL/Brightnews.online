@@ -1,5 +1,5 @@
 /* =========================================
-   Bright News - Auth (Login & Register)
+   BrightNews - Auth (Login & Register)
    Onderdeel van de modulaire CSS-structuur
    ========================================= */
 
@@ -57,6 +57,9 @@ form {
     font-size: 0.9rem;
     color: var(--dark-text);
     padding-left: 4px;
+}
+.input-group i {
+    color: var(--dark-text);
 }
 
 .input-group input {
