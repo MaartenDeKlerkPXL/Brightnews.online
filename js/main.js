@@ -40,23 +40,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 2. Vertalingen toepassen (Met veiligheidscheck voor keys)
-    async function applyTranslations(lang) {
-        try {
-            const response = await fetch('./data/translations.json');
-            const translations = await response.json();
+    function applyTranslations(lang) {
+        // We halen de data direct uit het globale window object
+        const translations = window.translations;
 
-            if (!translations[lang]) return;
+        if (!translations || !translations[lang]) {
+            console.warn(`⚠️ Vertalingen voor ${lang} niet gevonden.`);
+            return;
+        }
 
-            document.querySelectorAll('[data-i18n]').forEach(el => {
-                const key = el.getAttribute('data-i18n');
-                if (translations[lang][key]) {
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (translations[lang][key]) {
+                // Check of het een input-veld is (voor placeholders) of gewone tekst
+                if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                    el.placeholder = translations[lang][key];
+                } else {
                     el.textContent = translations[lang][key];
                 }
-            });
-            console.log(`Taal ingesteld op: ${lang} ✨`);
-        } catch (error) {
-            console.error("Vertaalfout:", error);
-        }
+            }
+        });
+        console.log(`Taal succesvol toegepast: ${lang} ✨`);
     }
 
     // 3. Nieuws laden (Alleen als news-grid bestaat)

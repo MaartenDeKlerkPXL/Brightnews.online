@@ -122,53 +122,6 @@ async function laadNieuws(taal) {
         }
     }
 }
-// 3. De lijst met kaartjes opbouwen
-function renderLijst(artikelen) {
-    const container = document.getElementById('news-container');
-    const detailView = document.getElementById('detail-view');
-    const detailNav = document.getElementById('detail-navigation');
-
-    if (!container || !detailView) return;
-
-    // Reset weergave naar lijst-modus
-    container.style.display = 'grid';
-    detailView.style.display = 'none';
-    if (detailNav) detailNav.style.display = 'none';
-
-    container.innerHTML = '';
-
-    artikelen.forEach((artikel, index) => {
-        const veiligId = artikel.id || `old-${index}`;
-        const card = document.createElement('div');
-        card.className = 'news-card';
-        // Zorg dat de muis verandert in een handje
-        card.style.cursor = 'pointer';
-
-        const imgSrc = artikel.image || 'https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80';
-        card.innerHTML = `
-            <img src="${imgSrc}" class="card-img" alt="${artikel.title}">
-            <div class="card-content">
-                    <!-- <div class="source-tag">${artikel.source}</div> -->
-                <h3>${artikel.title}</h3>
-                <p>${artikel.summary ? artikel.summary.substring(0, 85) + '...' : ''}</p>
-            </div>
-        `;
-
-        // DE KLIK-LOGICA:
-        card.addEventListener('click', (e) => {
-            console.log("Klik op artikel:", veiligId); // Voor controle in je console
-            window.history.pushState({}, '', `?id=${veiligId}`);
-            // Roep de functie aan die op window staat
-            if (typeof window.toonDetail === 'function') {
-                window.toonDetail(veiligId);
-            } else {
-                console.error("Fout: toonDetail is niet gevonden op window!");
-            }
-        });
-
-        container.appendChild(card);
-    });
-}
 
 async function toonDetail(id) {
     const detailView = document.getElementById('detail-view');
@@ -180,35 +133,27 @@ async function toonDetail(id) {
     const artikel = alleArtikelen.find(a => String(a.id) === String(id));
     if (!artikel) return;
 
+    // Sla positie op
+    sessionStorage.setItem('brightScrollPos', window.scrollY);
+
+    // Forceer de browser om onmiddellijk naar boven te gaan ZONDER animatie
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+
     const userStatus = await checkUser();
 
-    // UI klaarmaken
     if (detailNav) detailNav.style.display = 'block';
     container.style.display = 'none';
     detailView.style.display = 'block';
-    window.scrollTo(0, 0);
 
     let displayContent = artikel.summary;
     let paywallHTML = "";
 
-    // Paywall logica
     if (userStatus.premium !== true) {
         const woorden = artikel.summary.split(' ');
         if (woorden.length > 60) {
             displayContent = woorden.slice(0, 60).join(' ') + "...";
-
             const i18nKey = userStatus.ingelogd ? 'btn_upgrade_now' : 'btn_login_to_read';
-
-            paywallHTML = `
-            <div class="paywall-overlay">
-                <div class="paywall-content">
-                    <h3 data-i18n="premium_title">${getT('premium_title')}</h3>
-                    <p data-i18n="premium_text">${getT('premium_text')}</p>
-                    <button onclick="window.location.href='profiel.html'" class="btn-primary-editorial" data-i18n="${i18nKey}">
-                        ${getT(i18nKey)}
-                    </button>
-                </div>
-            </div>`;
+            paywallHTML = `<div class="paywall-overlay"><div class="paywall-content"><h3 data-i18n="premium_title">${getT('premium_title')}</h3><p data-i18n="premium_text">${getT('premium_text')}</p><button onclick="window.location.href='profiel.html'" class="btn-primary-editorial" data-i18n="${i18nKey}">${getT(i18nKey)}</button></div></div>`;
         }
     }
 
@@ -222,11 +167,7 @@ async function toonDetail(id) {
             <div id="shareMenu" class="share-dropdown">
                 <a href="#" id="share-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 <a href="#" id="share-fb" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" id="share-x" target="_blank">
-                    <svg class="x-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width:14px; fill:currentColor;">
-                        <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
-                    </svg>
-                </a>
+                <a href="#" id="share-x" target="_blank"><i class="fab fa-x-twitter"></i></a>
                 <a href="#" id="share-li" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 <a href="#" id="share-mail"><i class="fas fa-envelope"></i></a>
                 <button onclick="copyLink(event)"><i class="fas fa-link"></i></button>
@@ -234,28 +175,70 @@ async function toonDetail(id) {
         </div>
     </div>
     <footer class="detail-footer" style="margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px;">
-        <a href="${artikel.link}" target="_blank" class="source-link">
-            <span data-i18n="read_original">${getT('read_original')}</span> ${artikel.source}
-        </a>
+        <a href="${artikel.link}" target="_blank" class="source-link"><span data-i18n="read_original">${getT('read_original')}</span> ${artikel.source}</a>
     </footer>`;
 
     const detailImgSrc = artikel.image || 'https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80';
 
     detailView.innerHTML = `
-    <div class="detail-hero">
-        <img src="${detailImgSrc}" class="detail-img" alt="${artikel.title}">
-    </div>
+        <div class="detail-hero"><img src="${detailImgSrc}" class="detail-img" alt="${artikel.title}" onerror="this.src='https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80'"></div>
         <div class="article-container" style="max-width: 800px; margin: 0 auto; padding: 20px;">
             <header class="detail-header"><h1>${artikel.title}</h1></header>
-            <section class="article-body">
-                <p>${displayContent}</p>
-                ${paywallHTML}
-                ${shareHtml}
-            </section>
-        </div>
-    `;
+            <section class="article-body"><p>${displayContent}</p>${paywallHTML}${shareHtml}</section>
+        </div>`;
 
     setTimeout(() => updateShareLinks(artikel.title, window.location.href), 150);
+}
+
+function renderLijst(artikelen) {
+    const container = document.getElementById('news-container');
+    const detailView = document.getElementById('detail-view');
+    const detailNav = document.getElementById('detail-navigation');
+
+    if (!container || !detailView) return;
+
+    // Voorkom flikkeren door container even onzichtbaar te maken als we gaan scrollen
+    const savedPos = sessionStorage.getItem('brightScrollPos');
+    if (savedPos) container.style.opacity = '0';
+
+    container.style.display = 'grid';
+    detailView.style.display = 'none';
+    if (detailNav) detailNav.style.display = 'none';
+
+    container.innerHTML = '';
+
+    artikelen.forEach((artikel, index) => {
+        const veiligId = artikel.id || `old-${index}`;
+        const card = document.createElement('div');
+        card.className = 'news-card';
+        card.style.cursor = 'pointer';
+
+        const imgSrc = artikel.image || 'https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80';
+        card.innerHTML = `
+            <img src="${imgSrc}" class="card-img" alt="${artikel.title}" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80';">
+            <div class="card-content">
+                <h3>${artikel.title}</h3>
+                <p>${artikel.summary ? artikel.summary.substring(0, 85) + '...' : ''}</p>
+            </div>`;
+
+        card.addEventListener('click', () => {
+            window.history.pushState({}, '', `?id=${veiligId}`);
+            window.toonDetail(veiligId);
+        });
+
+        container.appendChild(card);
+    });
+
+    if (savedPos && !window.location.search.includes('id=')) {
+        // Gebruik requestAnimationFrame voor soepelere afhandeling dan setTimeout
+        requestAnimationFrame(() => {
+            window.scrollTo({ top: parseInt(savedPos), behavior: 'instant' });
+            container.style.opacity = '1'; // Maak weer zichtbaar NA de scroll
+            sessionStorage.removeItem('brightScrollPos');
+        });
+    } else {
+        container.style.opacity = '1';
+    }
 }
 
 function updateShareLinks(artikelTitel, artikelUrl) {
@@ -370,20 +353,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const labels = { 'en': '🇺🇸 English', 'nl': '🇳🇱 Nederlands', 'de': '🇩🇪 Deutsch', 'fr': '🇫🇷 Français', 'es': '🇪🇸 Español' };
     wisselTaal(opgeslagenTaal, labels[opgeslagenTaal]);
 });
+// 1. Initialiseer een globale lijst voor actieve filters
+window.actieveFilters = [];
+
 function renderFilterBar() {
     const filterContainer = document.getElementById('category-filters');
     if (!filterContainer) return;
 
-    // Hardgecodeerde categorieën zoals je vroeg
-    const categories = ['All', 'Tech', 'Health', 'Science', 'Lifestyle', 'Environment'];
+    const categories = ['All', 'Tech', 'Health', 'Science', 'Lifestyle', 'Environment', 'Finance'];
 
     filterContainer.innerHTML = categories.map(cat => {
-        // Gebruik getT om 'All' te vertalen
         const displayLabel = (cat === 'All') ? getT('filter_all', 'Alles') : cat;
+        // Check of de knop actief moet zijn bij renderen
+        const isActief = (cat === 'All' && window.actieveFilters.length === 0) || window.actieveFilters.includes(cat);
 
-        // Fout hersteld: we gebruiken nu displayLabel voor de tekst en voegen de 'active' class toe
         return `
-            <button class="filter-btn ${cat === 'All' ? 'active' : ''}" 
+            <button class="filter-btn ${isActief ? 'active' : ''}" 
                     onclick="filterByMetadata('${cat}', this)">
                 ${displayLabel}
             </button>
@@ -391,18 +376,39 @@ function renderFilterBar() {
     }).join('');
 }
 
-// 2. Functie om de lijst te filteren
 function filterByMetadata(category, btn) {
-    // Update actieve knop styling
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
+    const allBtn = document.querySelector('.filter-btn:first-child'); // De 'All' knop
 
     if (category === 'All') {
-        renderLijst(window.alleArtikelen);
+        // Reset alles
+        window.actieveFilters = [];
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
     } else {
-        const gefilterd = window.alleArtikelen.filter(a => a.category === category);
-        renderLijst(gefilterd);
+        // Verwijder 'active' van de 'All' knop
+        if (allBtn) allBtn.classList.remove('active');
+
+        // Toggle de gekozen categorie in de lijst
+        if (window.actieveFilters.includes(category)) {
+            window.actieveFilters = window.actieveFilters.filter(f => f !== category);
+            btn.classList.remove('active');
+        } else {
+            window.actieveFilters.push(category);
+            btn.classList.add('active');
+        }
+
+        // Als er geen filters meer over zijn, zet 'All' weer aan
+        if (window.actieveFilters.length === 0 && allBtn) {
+            allBtn.classList.add('active');
+        }
     }
+
+    // Voer de filtering uit
+    const gefilterd = window.actieveFilters.length === 0
+        ? window.alleArtikelen
+        : window.alleArtikelen.filter(a => window.actieveFilters.includes(a.category));
+
+    renderLijst(gefilterd);
 }
 
 // Maak functies beschikbaar voor de hele browser

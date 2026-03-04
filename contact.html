@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="contact_page_title">Contact | BrightNews</title>
+  <script src="data/translations.js"></script>
+  <script src="js/main.js"></script> <script src="index.js"></script>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/index.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages/artikel.css">
+
+  <style>
+    :root {
+      --bright-green: #32cc32;
+      --dark-text: #222;
+      --light-bg: #F8FBF8;
+    }
+    h1 {
+      color: var(--bright-green) !important;
+    }
+    header{
+      margin-bottom: 0 !important;
+      border-bottom: none !important;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--dark-text);
+      margin: 0;
+      padding: 0;
+      background-color: var(--light-bg);
+    }
+
+    div.contact-header {
+      background: white;
+      padding: 3rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+      display: grid;
+      gap: 2rem;
+    }
+
+    section {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    /* FIX: Deze stond binnen de 'section' hierboven, dat veroorzaakte de fout */
+    section h2 {
+      margin-top: 0;
+      color: var(--bright-green) !important;
+    }
+
+    .email-link {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--bright-green);
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .email-link:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <nav class="container">
+    <div class="nav-left-group">
+      <div class="dropdown language-picker">
+        <button class="dropbtn" id="current-lang">
+          🇳🇱 Nederlands <span class="arrow">▼</span>
+        </button>
+        <div class="dropdown-content">
+          <a href="#" onclick="wisselTaal('en', '🇺🇸 English', event)">🇺🇸 English</a>
+          <a href="#" onclick="wisselTaal('nl', '🇳🇱 Nederlands', event)">🇳🇱 Nederlands</a>
+          <a href="#" onclick="wisselTaal('de', '🇩🇪 Deutsch', event)">🇩🇪 Deutsch</a>
+          <a href="#" onclick="wisselTaal('fr', '🇫🇷 Français', event)">🇫🇷 Français</a>
+          <a href="#" onclick="wisselTaal('es', '🇪🇸 Español', event)">🇪🇸 Español</a>
+        </div>
+      </div>
+      <a href="Home.html"><img src="assets/brightnews-logo.png" height="200" width="300" alt="BrightNews Logo"/></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="Home.html" data-i18n="nav_home">Home</a></li>
+      <li><a href="over-ons.html" data-i18n="nav_about">Over Ons</a></li>
+      <li><a href="abonnementen.html" data-i18n="nav_premium">Abonnementen</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="contact-header">
+  <h1 data-i18n="contact_title">Contact BrightNews ✨</h1>
+  <p data-i18n="contact_subtitle">We horen graag van je!</p>
+</div>
+
+<main>
+  <section>
+    <h2 data-i18n="contact_mail_header">Stuur ons een mailtje</h2>
+    <p data-i18n="contact_mail_text">Heb je een vraag of wil je gewoon hallo zeggen? Je kunt ons altijd bereiken op:</p>
+    <a href="mailto:info@BrightNews.online?subject=Verbetering%20of%20idee%20voor%20BrightNews" class="email-link">
+      info@BrightNews.online
+    </a>
+  </section>
+
+  <section>
+    <h2 data-i18n="contact_feedback_header">Verbeteringen & Ideeën</h2>
+    <p data-i18n="contact_feedback_text">
+      Heb je suggesties om de website nog beter te maken? Of heb je algemene feedback?
+      Dat vinden we alleen maar leuk en fijn om te horen! Schroom niet om je gedachten met ons te delen via de mail.
+    </p>
+  </section>
+
+  <section>
+    <h2 data-i18n="contact_social_header">Social Media</h2>
+    <p data-i18n="contact_social_text">
+      Hoewel we aanwezig zijn op sociale media, is de kans groot dat we daar niet (snel) reageren.
+      Onze meldingen staan namelijk uit om de focus op positiviteit en kwaliteit te houden.
+      Voor een snelle reactie is e-mail dus de beste weg!
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 BrightNews - Positief nieuws, elke dag om 12:00.</p>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
