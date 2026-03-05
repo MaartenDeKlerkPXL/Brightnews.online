@@ -27,7 +27,22 @@ window.translations = {
     "btn_upgrade_now": "Nu Upgraden",
     "btn_login_to_read": "Log in om verder te lezen",
     "share_article": "Deel dit nieuws",
-    "share_label": "Delen"
+    "share_label": "Delen",
+    "back": "Terug",
+    "index_loading": "Positieve vibes laden...",
+
+    // Footer
+    "footer_text": "Opgericht en ontwikkeld door <strong>Maarten de Klerk</strong>. Maarten is de eigenaar en hoofdontwikkelaar van BrightNews, toegewijd aan het verspreiden van positieve vibes via technologie.",
+    "footer_explore": "Ontdekken",
+    "footer_mission": "Onze Missie",
+    "footer_acc": "Mijn Account",
+    "footer_community": "Community",
+    "footer_privacy": "Privacybeleid",
+    "footer_service_terms": "Algemene Voorwaarden",
+    "footer_support": "Klantenservice",
+    "footer_follow": "Volg BrightNews",
+    "footer_no_frameworks": "100% Vanilla JS • Geen Frameworks",
+    "footer_created_by": "&copy; 2026 BrightNews • Alle rechten voorbehouden • Gemaakt met 💚 in Nederland"
   },
   "en": {
     "nav_home": "Home",
@@ -57,7 +72,20 @@ window.translations = {
     "btn_upgrade_now": "Upgrade Now",
     "btn_login_to_read": "Login to continue reading",
     "share_article": "Share this news",
-    "share_label": "Share"
+    "share_label": "Share",
+    "back": "Back",
+    "index_loading": "Loading positive vibes...",
+    "copy_success": "Link copied!",
+    "footer_text": "Founded and developed by <strong>Maarten de Klerk</strong>. Maarten is the owner and lead developer of BrightNews, dedicated to spreading positive vibes through tech.",
+    "footer_explore": "Explore",
+    "footer_mission": "Our Mission",
+    "footer_acc": "My Account",
+    "footer_community": "Community",
+    "footer_privacy": "Privacy Policy",
+    "footer_service_terms": "Terms of Service",
+    "footer_support": "Contact Support",
+    "footer_follow": "Follow BrightNews",
+    "footer_no_frameworks": "100% Vanilla JS • No Frameworks",
   },
   "de": {
     "nav_home": "Startseite",
@@ -87,7 +115,21 @@ window.translations = {
     "btn_upgrade_now": "Jetzt upgraden",
     "btn_login_to_read": "Anmelden zum Weiterlesen",
     "share_article": "Nachricht teilen",
-    "share_label": "Teilen"
+    "share_label": "Teilen",
+    "back": "Zurück",
+    "index_loading": "Positive Vibes werden geladen...",
+    "copy_success": "Link kopiert!",
+    "footer_text": "Gegründet und entwickelt von <strong>Maarten de Klerk</strong>. Maarten ist Inhaber und Chefentwickler von BrightNews, der sich der Verbreitung positiver Vibes widmet.",
+    "footer_explore": "Entdecken",
+    "footer_mission": "Unsere Mission",
+    "footer_acc": "Mein Konto",
+    "footer_community": "Community",
+    "footer_privacy": "Datenschutz",
+    "footer_service_terms": "AGB",
+    "footer_support": "Support",
+    "footer_follow": "BrightNews folgen",
+    "footer_no_frameworks": "100% Vanilla JS • Keine Frameworks",
+    "footer_created_by": "&copy; 2026 BrightNews • Alle Rechte vorbehalten • Erstellt mit 💚 in den Niederlanden"
   },
   "fr": {
     "nav_home": "Accueil",
@@ -117,7 +159,21 @@ window.translations = {
     "btn_upgrade_now": "S'abonner maintenant",
     "btn_login_to_read": "Se connecter pour lire la suite",
     "share_article": "Partager",
-    "share_label": "Partager"
+    "share_label": "Partager",
+    "back": "Retour",
+    "index_loading": "Chargement d'ondes positives...",
+    "copy_success": "Lien copié !",
+    "footer_text": "Fondé et développé par <strong>Maarten de Klerk</strong>. Maarten est le propriétaire de BrightNews, dédié à la diffusion d'ondes positives.",
+    "footer_explore": "Explorer",
+    "footer_mission": "Notre Mission",
+    "footer_acc": "Mon Compte",
+    "footer_community": "Communauté",
+    "footer_privacy": "Confidentialité",
+    "footer_service_terms": "Conditions",
+    "footer_support": "Support",
+    "footer_follow": "Suivre BrightNews",
+    "footer_no_frameworks": "100% Vanilla JS • Sans Frameworks",
+    "footer_created_by": "&copy; 2026 BrightNews • Tous droits réservés • Créé avec 💚 aux Pays-Bas"
   },
   "es": {
     "nav_home": "Inicio",
@@ -147,6 +203,20 @@ window.translations = {
     "btn_upgrade_now": "Mejorar ahora",
     "btn_login_to_read": "Inicia sesión para seguir leyendo",
     "share_article": "Compartir noticia",
-    "share_label": "Compartir"
+    "share_label": "Compartir",
+    "back": "Volver",
+    "index_loading": "Cargando vibras positivas...",
+    "copy_success": "¡Enlace copiado!",
+    "footer_text": "Fundado y desarrollado por <strong>Maarten de Klerk</strong>. Maarten es el dueño de BrightNews, dedicado a difundir vibras positivas.",
+    "footer_explore": "Explorar",
+    "footer_mission": "Nuestra Misión",
+    "footer_acc": "Mi Cuenta",
+    "footer_community": "Comunidad",
+    "footer_privacy": "Privacidad",
+    "footer_service_terms": "Términos",
+    "footer_support": "Soporte",
+    "footer_follow": "Seguir a BrightNews",
+    "footer_no_frameworks": "100% Vanilla JS • Sin Frameworks",
+    "footer_created_by": "&copy; 2026 BrightNews • Todos los derechos reservados • Creado con 💚 en los Países Bajos"
   }
 };

@@ -368,11 +368,12 @@ function renderFilterBar() {
         const isActief = (cat === 'All' && window.actieveFilters.length === 0) || window.actieveFilters.includes(cat);
 
         return `
-            <button class="filter-btn ${isActief ? 'active' : ''}" 
-                    onclick="filterByMetadata('${cat}', this)">
-                ${displayLabel}
-            </button>
-        `;
+    <button class="filter-btn ${isActief ? 'active' : ''}" 
+            onclick="filterByMetadata('${cat}', this)"
+            data-i18n="filter_${cat.toLowerCase()}">
+        ${displayLabel}
+    </button>
+`;
     }).join('');
 }
 
