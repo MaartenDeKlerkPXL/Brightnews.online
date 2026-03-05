@@ -1,120 +1,73 @@
-// 1. Veilige globale variabelen
-if (typeof window.translations === 'undefined') window.translations = {};
-if (typeof window.alleArtikelen === 'undefined') window.alleArtikelen = [];
-if (typeof window.huidigeTaal === 'undefined') {
-    window.huidigeTaal = localStorage.getItem('selectedLanguage') || 'en';
-}
-// 2. Helper functie voor vertalingen (getT)
+// 1. Globale variabelen initialiseren (voorkomt 'undefined' errors)
+window.huidigeTaal = localStorage.getItem('selectedLanguage') || 'nl';
+window.alleArtikelen = [];
+window.actieveFilters = [];
+
+// 2. De robuuste vertaal-helper
 function getT(key, fallback = "...") {
-    const lang = localStorage.getItem('selectedLanguage') || 'en';
-    if (window.translations[lang] && window.translations[lang][key]) {
-        return window.translations[lang][key];
-    }
-    return fallback;
-}
-// 1. Zorg dat we niet overschrijven wat in translations.js staat
-if (typeof window.translations === 'undefined') {
-    window.translations = {};
-}
-// 1. Helper functie om één vertaling op te halen
-function getT(key, fallback = "...") {
-    const lang = localStorage.getItem('selectedLanguage') || 'nl';
+    const lang = window.huidigeTaal;
     if (window.translations && window.translations[lang] && window.translations[lang][key]) {
         return window.translations[lang][key];
     }
+    // Alleen loggen als de app echt geladen is om ruis te voorkomen
+    if (window.appIsGeladen) console.warn(`Missing: ${key} [${lang}]`);
     return fallback;
 }
 
-// 2. De functie die de foutmelding veroorzaakte (nu gedefinieerd)
 function vertaalStatischeTeksten(lang) {
     document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        const vertaling = getT(key);
-        if (vertaling !== "...") {
-            // Gebruik innerHTML zodat ook <strong> tags in de footer werken
-            el.innerHTML = vertaling;
+        let rawKey = el.getAttribute('data-i18n');
+        if (!rawKey) return;
+
+        // Check of de key begint met [attribuut]
+        if (rawKey.startsWith('[')) {
+            const parts = rawKey.split(']'); // Split op het sluitende haakje
+            const attributeName = parts[0].substring(1); // Haal bijv. 'aria-label' eruit
+            const realKey = parts[1]; // Haal bijv. 'back_label' eruit
+
+            const vertaling = getT(realKey);
+            if (vertaling !== "...") {
+                el.setAttribute(attributeName, vertaling);
+            }
+        } else {
+            // Normale tekstvertaling
+            const vertaling = getT(rawKey);
+            if (vertaling !== "...") {
+                el.innerHTML = vertaling;
+            }
         }
     });
 }
-
-// 3. De verbeterde initApp die wél wacht op de data
+// 4. De enige echte Initialisatie functie
 async function initApp() {
-    // Check of het woordenboek er is
-    if (!window.translations || Object.keys(window.translations).length === 0) {
-        console.log("⏳ Wachten op vertalingen...");
+    const savedLang = localStorage.getItem('selectedLanguage') || 'nl';
+
+    // Wacht op het woordenboek
+    if (!window.translations || !window.translations[savedLang]) {
         setTimeout(initApp, 100);
         return;
     }
+
+    if (window.appIsGeladen) return;
+    window.appIsGeladen = true;
+
     console.log("BrightNews initialiseren... 🛠️");
 
-    const savedLang = localStorage.getItem('selectedLanguage') || 'nl';
     window.huidigeTaal = savedLang;
     document.documentElement.lang = savedLang;
 
-    // Update taalkiezer
-    const labels = {
-        'nl': '🇳🇱 Nederlands', 'en': '🇺🇸 English', 'de': '🇩🇪 Deutsch', 'fr': '🇫🇷 Français', 'es': '🇪🇸 Español'
-    };
+    // Update taalkiezer label
+    const labels = { 'nl': '🇳🇱 Nederlands', 'en': '🇺🇸 English', 'de': '🇩🇪 Deutsch', 'fr': '🇫🇷 Français', 'es': '🇪🇸 Español' };
     const btn = document.getElementById('current-lang');
     if (btn) btn.innerHTML = `${labels[savedLang] || labels['nl']} <span class="arrow">▼</span>`;
 
-    // Voer de vertaling uit
     vertaalStatischeTeksten(savedLang);
-    checkCookies();
+    if (typeof checkCookies === 'function') checkCookies();
 
-    // Laad het nieuws
     await laadNieuws(savedLang);
-
     if (typeof checkGlowStatus === 'function') checkGlowStatus();
 }
 
-// Start de boel zodra de pagina klaar is
-document.addEventListener('DOMContentLoaded', initApp);
-
-// 2. De verbeterde opstart-logica
-async function initApp() {
-    // 1. Wacht tot translations geladen zijn
-    if (!window.translations || Object.keys(window.translations).length === 0) {
-        console.log("⏳ Wachten op vertalingen...");
-        setTimeout(initApp, 100); // Probeer het over 100ms opnieuw
-        return;
-    }
-
-    console.log("BrightNews initialiseren... 🛠️");
-
-    // 2. Pak de taal
-    const savedLang = localStorage.getItem('selectedLanguage') || 'nl';
-    window.huidigeTaal = savedLang;
-    document.documentElement.lang = savedLang;
-
-    // 3. Update de taalkiezer knop tekst
-    const labels = {
-        'nl': '🇳🇱 Nederlands',
-        'en': '🇺🇸 English',
-        'de': '🇩🇪 Deutsch',
-        'fr': '🇫🇷 Français',
-        'es': '🇪🇸 Español'
-    };
-
-    const btn = document.getElementById('current-lang');
-    if (btn) {
-        btn.innerHTML = `${labels[savedLang] || labels['nl']} <span class="arrow">▼</span>`;
-    }
-
-    // 4. Vertaal de interface (menu, footer, back-button)
-    vertaalStatischeTeksten(savedLang);
-
-    // 5. Start het nieuws
-    await laadNieuws(savedLang);
-
-    if (typeof checkGlowStatus === 'function') checkGlowStatus();
-}
-
-// VERWIJDER de losse initApp() aanroep onderaan en vervang de DOMContentLoaded door dit:
-document.addEventListener('DOMContentLoaded', initApp);
-
-// Start de app direct
-initApp();
 async function checkUser() {
     try {
         if (!window.supabaseClient) return { ingelogd: false, premium: false };
@@ -166,10 +119,12 @@ async function laadNieuws(taal) {
 
         console.log(`BrightNews succesvol geladen in het ${taal.toUpperCase()} 🚀`);
     } catch (err) {
-        console.error("Fout tijdens het initialiseren van de nieuws-data:", err);
-        // Gebruik je bestaande notificatie-systeem bij een fout
-        if (typeof showNotification === 'function') {
-            showNotification("Fout bij laden van nieuws. Controleer je internetverbinding.", "error");
+        console.error("Fout tijdens laden:", err);
+        // Veilig aanroepen:
+        if (typeof window.showNotification === 'function') {
+            window.showNotification("Fout bij laden van nieuws.", "error");
+        } else {
+            alert("Fout bij laden van nieuws.");
         }
     }
 }
@@ -469,23 +424,24 @@ function checkCookies() {
     }
 }
 
-// Functie voor de 'Accepteer' knop
-function acceptCookies() {
+window.acceptCookies = function() {
     localStorage.setItem('brightNews_cookies', 'accepted');
     const banner = document.getElementById('cookie-banner');
     if (banner) banner.style.display = 'none';
-}
+};
 
-// Functie voor de 'Weiger' knop
-function declineCookies() {
+window.declineCookies = function() {
     localStorage.setItem('brightNews_cookies', 'essential');
     const banner = document.getElementById('cookie-banner');
     if (banner) banner.style.display = 'none';
-}
+};
 
-// Maak ze beschikbaar voor de HTML onclick knoppen
-window.acceptCookies = acceptCookies;
-window.declineCookies = declineCookies;
+// Zorg dat de browser weet dat deze bij de window horen voor de onclick
+window.checkCookies = checkCookies;
+
+// De enige event listener die je nodig hebt:
+document.addEventListener('DOMContentLoaded', initApp);
+
 function filterByMetadata(category, btn) {
     const allBtn = document.querySelector('.filter-btn:first-child'); // De 'All' knop
 
@@ -520,19 +476,7 @@ function filterByMetadata(category, btn) {
 
     renderLijst(gefilterd);
 }
-function vertaalStatischeTeksten(lang) {
-    // Vertaal gewone teksten
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        el.innerHTML = getT(key);
-    });
 
-    // NIEUW: Vertaal placeholders (zoals in invoervelden)
-    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-        const key = el.getAttribute('data-i18n-placeholder');
-        el.placeholder = getT(key);
-    });
-}// Maak functies beschikbaar voor de hele browser
 window.toonDetail = toonDetail;
 window.renderLijst = renderLijst;
 window.laadNieuws = laadNieuws;
@@ -540,4 +484,6 @@ window.terugNaarOverzicht = terugNaarOverzicht;
 window.wisselTaal = wisselTaal;
 window.toggleShareMenu = toggleShareMenu;
 window.copyLink = copyLink;
+
+
 
