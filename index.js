@@ -16,22 +16,78 @@ function getT(key, fallback = "...") {
 if (typeof window.translations === 'undefined') {
     window.translations = {};
 }
+// 1. Helper functie om één vertaling op te halen
+function getT(key, fallback = "...") {
+    const lang = localStorage.getItem('selectedLanguage') || 'nl';
+    if (window.translations && window.translations[lang] && window.translations[lang][key]) {
+        return window.translations[lang][key];
+    }
+    return fallback;
+}
+
+// 2. De functie die de foutmelding veroorzaakte (nu gedefinieerd)
+function vertaalStatischeTeksten(lang) {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const vertaling = getT(key);
+        if (vertaling !== "...") {
+            // Gebruik innerHTML zodat ook <strong> tags in de footer werken
+            el.innerHTML = vertaling;
+        }
+    });
+}
+
+// 3. De verbeterde initApp die wél wacht op de data
+async function initApp() {
+    // Check of het woordenboek er is
+    if (!window.translations || Object.keys(window.translations).length === 0) {
+        console.log("⏳ Wachten op vertalingen...");
+        setTimeout(initApp, 100);
+        return;
+    }
+
+    console.log("BrightNews initialiseren... 🛠️");
+
+    const savedLang = localStorage.getItem('selectedLanguage') || 'nl';
+    window.huidigeTaal = savedLang;
+    document.documentElement.lang = savedLang;
+
+    // Update taalkiezer
+    const labels = {
+        'nl': '🇳🇱 Nederlands', 'en': '🇺🇸 English', 'de': '🇩🇪 Deutsch', 'fr': '🇫🇷 Français', 'es': '🇪🇸 Español'
+    };
+    const btn = document.getElementById('current-lang');
+    if (btn) btn.innerHTML = `${labels[savedLang] || labels['nl']} <span class="arrow">▼</span>`;
+
+    // Voer de vertaling uit
+    vertaalStatischeTeksten(savedLang);
+
+    // Laad het nieuws
+    await laadNieuws(savedLang);
+
+    if (typeof checkGlowStatus === 'function') checkGlowStatus();
+}
+
+// Start de boel zodra de pagina klaar is
+document.addEventListener('DOMContentLoaded', initApp);
 
 // 2. De verbeterde opstart-logica
 async function initApp() {
-    console.log("BrightNews initialiseren... 🛠️");
-
-    // Pak de taal (standaard Nederlands voor de zekerheid)
-    const savedLang = localStorage.getItem('selectedLanguage') || 'nl';
-    window.huidigeTaal = savedLang;
-
-    // We hoeven hier GEEN fetch te doen als je translations.js gebruikt!
-    // We checken alleen of de data er is
-    if (Object.keys(window.translations).length === 0) {
-        console.warn("⚠️ Let op: window.translations is leeg. Controleer of translations.js goed geladen wordt.");
+    // 1. Wacht tot translations geladen zijn
+    if (!window.translations || Object.keys(window.translations).length === 0) {
+        console.log("⏳ Wachten op vertalingen...");
+        setTimeout(initApp, 100); // Probeer het over 100ms opnieuw
+        return;
     }
 
-    // Zet de vlag en tekst in de navigatie goed
+    console.log("BrightNews initialiseren... 🛠️");
+
+    // 2. Pak de taal
+    const savedLang = localStorage.getItem('selectedLanguage') || 'nl';
+    window.huidigeTaal = savedLang;
+    document.documentElement.lang = savedLang;
+
+    // 3. Update de taalkiezer knop tekst
     const labels = {
         'nl': '🇳🇱 Nederlands',
         'en': '🇺🇸 English',
@@ -41,26 +97,21 @@ async function initApp() {
     };
 
     const btn = document.getElementById('current-lang');
-    if (btn) btn.innerHTML = `${labels[savedLang] || labels['nl']} <span class="arrow">▼</span>`;
+    if (btn) {
+        btn.innerHTML = `${labels[savedLang] || labels['nl']} <span class="arrow">▼</span>`;
+    }
 
-    // Vertaal de statische elementen (zoals de Back-knop in de nav)
+    // 4. Vertaal de interface (menu, footer, back-button)
     vertaalStatischeTeksten(savedLang);
 
-    // Start het nieuws
+    // 5. Start het nieuws
     await laadNieuws(savedLang);
+
     if (typeof checkGlowStatus === 'function') checkGlowStatus();
 }
 
-// Nieuwe hulp-functie om alle data-i18n tags in één keer te doen
-function vertaalStatischeTeksten(lang) {
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        const vertaling = getT(key);
-        if (vertaling !== "...") {
-            el.innerHTML = vertaling;
-        }
-    });
-}
+// VERWIJDER de losse initApp() aanroep onderaan en vervang de DOMContentLoaded door dit:
+document.addEventListener('DOMContentLoaded', initApp);
 
 // Start de app direct
 initApp();
@@ -127,6 +178,14 @@ async function toonDetail(id) {
     const detailView = document.getElementById('detail-view');
     const container = document.getElementById('news-container');
     const detailNav = document.getElementById('detail-navigation');
+    // Zoek dit stukje in toonDetail:
+    if (detailNav) detailNav.style.display = 'block';
+    container.style.display = 'none';
+    detailView.style.display = 'block';
+
+// VOEG DIT TOE:
+    const filterWrapper = document.querySelector('.filter-wrapper');
+    if (filterWrapper) filterWrapper.style.display = 'none';
 
     if (!detailView || !container) return;
 
@@ -181,11 +240,16 @@ async function toonDetail(id) {
     const detailImgSrc = artikel.image || 'https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80';
 
     detailView.innerHTML = `
-        <div class="detail-hero"><img src="${detailImgSrc}" class="detail-img" alt="${artikel.title}" onerror="this.src='https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80'"></div>
-        <div class="article-container" style="max-width: 800px; margin: 0 auto; padding: 20px;">
-            <header class="detail-header"><h1>${artikel.title}</h1></header>
-            <section class="article-body"><p>${displayContent}</p>${paywallHTML}${shareHtml}</section>
-        </div>`;
+    <div class="detail-hero">
+        <img src="${artikel.image || 'https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80'}" 
+             class="detail-img" 
+             alt="${artikel.title}" 
+             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80';">
+    </div>
+    <div class="article-container" style="max-width: 800px; margin: 0 auto; padding: 20px;">
+        <header class="detail-header"><h1>${artikel.title}</h1></header>
+        <section class="article-body"><p>${displayContent}</p>${paywallHTML}${shareHtml}</section>
+    </div>`;
 
     setTimeout(() => updateShareLinks(artikel.title, window.location.href), 150);
 }
@@ -194,6 +258,15 @@ function renderLijst(artikelen) {
     const container = document.getElementById('news-container');
     const detailView = document.getElementById('detail-view');
     const detailNav = document.getElementById('detail-navigation');
+
+    // Zoek dit stukje in renderLijst:
+    container.style.display = 'grid';
+    detailView.style.display = 'none';
+    if (detailNav) detailNav.style.display = 'none';
+
+// VOEG DIT TOE:
+    const filterWrapper = document.querySelector('.filter-wrapper');
+    if (filterWrapper) filterWrapper.style.display = 'block'; // Of 'flex' als je dat gebruikt
 
     if (!container || !detailView) return;
 
@@ -213,13 +286,17 @@ function renderLijst(artikelen) {
         card.className = 'news-card';
         card.style.cursor = 'pointer';
 
+        // Zoek deze regel in renderLijst:
         const imgSrc = artikel.image || 'https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80';
         card.innerHTML = `
-            <img src="${imgSrc}" class="card-img" alt="${artikel.title}" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80';">
-            <div class="card-content">
-                <h3>${artikel.title}</h3>
-                <p>${artikel.summary ? artikel.summary.substring(0, 85) + '...' : ''}</p>
-            </div>`;
+    <img src="${imgSrc}" 
+         class="card-img" 
+         alt="${artikel.title}" 
+         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80';">
+    <div class="card-content">
+        <h3>${artikel.title}</h3>
+        <p>${artikel.summary ? artikel.summary.substring(0, 85) + '...' : ''}</p>
+    </div>`;
 
         card.addEventListener('click', () => {
             window.history.pushState({}, '', `?id=${veiligId}`);
@@ -347,12 +424,6 @@ function wisselTaal(lang, labelTekst, event) {
         laadNieuws(lang);
     }
 }
-// 3. DE AUTOMATISCHE CHECK BIJ LADEN
-document.addEventListener('DOMContentLoaded', () => {
-    const opgeslagenTaal = localStorage.getItem('selectedLanguage') || 'en';
-    const labels = { 'en': '🇺🇸 English', 'nl': '🇳🇱 Nederlands', 'de': '🇩🇪 Deutsch', 'fr': '🇫🇷 Français', 'es': '🇪🇸 Español' };
-    wisselTaal(opgeslagenTaal, labels[opgeslagenTaal]);
-});
 // 1. Initialiseer een globale lijst voor actieve filters
 window.actieveFilters = [];
 
@@ -411,8 +482,19 @@ function filterByMetadata(category, btn) {
 
     renderLijst(gefilterd);
 }
+function vertaalStatischeTeksten(lang) {
+    // Vertaal gewone teksten
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        el.innerHTML = getT(key);
+    });
 
-// Maak functies beschikbaar voor de hele browser
+    // NIEUW: Vertaal placeholders (zoals in invoervelden)
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        el.placeholder = getT(key);
+    });
+}// Maak functies beschikbaar voor de hele browser
 window.toonDetail = toonDetail;
 window.renderLijst = renderLijst;
 window.laadNieuws = laadNieuws;

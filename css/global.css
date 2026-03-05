@@ -96,6 +96,9 @@ p {
 .btn-primary:active {
     transform: translateY(0);
 }
+.filter-wrapper {
+    transition: opacity 0.3s ease;
+}
 
 .btn-secondary {
     display: inline-flex;

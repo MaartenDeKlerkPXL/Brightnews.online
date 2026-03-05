@@ -172,7 +172,7 @@
             <div class="status-card">
                 <div class="status-info">
                     <span class="status-label" data-i18n="status_label">Account Status</span>
-                    <span id="premium-status-badge" class="badge">Gratis Account</span>
+                    <span id="premium-status-badge" class="badge" data-i18n="badge_free">Gratis Account</span>
 
                 <div id="upgrade-section">
                     <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
@@ -214,16 +214,19 @@
                         endDate.setMonth(startDate.getMonth() + 1);
                     }
 
+                    const planName = planType.charAt(0).toUpperCase() + planType.slice(1); // Maakt van 'glow' -> 'Glow'
+                    const dateStr = endDate.toLocaleDateString();
+
                     container.innerHTML = `
-            <div class="subscription-card" style=" padding: 1.5rem; border: 1px solid #e0e0e0; border-radius: 12px; background-color: #fff; margin-bottom: 3rem;">
-                <p style="margin-bottom: 1rem; color: #666;">
-                    Your <strong>${planType}</strong> access is active until <br> <strong>${endDate.toLocaleDateString()}</strong>.
-                </p>
-                <button onclick="cancelSubscription()" class="btn-cancel" style="background: none; border: 1.5px solid #ff4444; color: #ff4444; padding: 8px 16px; border-radius: 8px; font-weight: bold; cursor: pointer;">
-                    Cancel Auto-Renewal
-                </button>
-            </div>
-        `;
+    <div class="subscription-card" style="padding: 1.5rem; border: 1px solid #e0e0e0; border-radius: 12px; background-color: #fff; margin-bottom: 3rem;">
+        <p style="margin-bottom: 1rem; color: #666;">
+            ${getT('sub_active_until').replace('{plan}', planName).replace('{date}', dateStr)}
+        </p>
+        <button onclick="cancelSubscription()" class="btn-cancel" style="background: none; border: 1.5px solid #ff4444; color: #ff4444; padding: 8px 16px; border-radius: 8px; font-weight: bold; cursor: pointer;">
+            ${getT('btn_cancel_renewal')}
+        </button>
+    </div>
+`;
                 }
 
                 function cancelSubscription() {
@@ -233,6 +236,7 @@
 
                 // Luister naar het laden van de pagina
                 document.addEventListener('DOMContentLoaded', renderSubscriptionUI);
+
             </script>
             <button onclick="handleLogout()" class="btn-logout-editorial" data-i18n="btn_logout">Uitloggen</button>
         </div>

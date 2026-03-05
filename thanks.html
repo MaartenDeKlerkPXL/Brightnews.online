@@ -158,20 +158,21 @@
     </ul>
 
 </nav>
-</header>
-<div class="thanks-container">
-    <div class="icon-circle">✨</div>
-    <h1 id="thanks-title">Stellar news!</h1>
-    <p id="thanks-message">You are now officially a <strong>Shine member</strong>. Thanks to your support, we can keep bringing you unlimited positive news.</p>
+    <div class="thanks-container">
+        <div class="icon-circle">✨</div>
+        <h1 id="thanks-title" data-i18n="thanks_title">Stellar news!</h1>
+        <p id="thanks-message" data-i18n="thanks_message">
+            You are now officially a <strong>Shine member</strong>. Thanks to your support, we can keep bringing you unlimited positive news.
+        </p>
 
-    <div id="redirect-info">
-        You will be redirected to the homepage in a few seconds...
-    </div>
+        <div id="redirect-info" data-i18n="thanks_redirect">
+            You will be redirected to the homepage in a few seconds...
+        </div>
 
-    <div class="loading-bar">
-        <div id="progress-bar" class="loading-progress"></div>
+        <div class="loading-bar">
+            <div id="progress-bar" class="loading-progress"></div>
+        </div>
     </div>
-</div>
 <footer class="main-footer">
     <div class="container footer-grid">
         <div class="footer-about">
@@ -229,10 +230,10 @@
     </div>
 </footer>
 <script>
-    /**
-     * BrightNews - Premium Activation Logic
-     * Vanilla JS
-     */
+    document.addEventListener('DOMContentLoaded', () => {
+        const savedLang = localStorage.getItem('selectedLanguage') || 'nl';
+        vertaalStatischeTeksten(savedLang);
+    });
     document.addEventListener('DOMContentLoaded', () => {
         const urlParams = new URLSearchParams(window.location.search);
         const status = urlParams.get('status');
@@ -258,6 +259,13 @@
             document.querySelector('.loading-bar').style.display = 'none';
             document.getElementById('redirect-info').innerHTML =
                 '<a href="index.html" class="home-link">Back to Home</a>';
+        }
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+        const savedLang = localStorage.getItem('selectedLanguage') || 'nl';
+        // Roep je vertaalfunctie aan
+        if (typeof vertaalStatischeTeksten === 'function') {
+            vertaalStatischeTeksten(savedLang);
         }
     });
 </script>
