@@ -1,5 +1,9 @@
 window.translations = {
   "nl": {
+    "cookie_title": "Cookies & Positiviteit 🍪",
+    "cookie_text": "We gebruiken cookies om te zorgen dat BrightNews soepel werkt en om je de beste ervaring te bieden. Ga je akkoord?",
+    "btn_accept": "Accepteren",
+    "btn_decline": "Alleen noodzakelijk",
     "nav_home": "Home",
     "nav_about": "Over Ons",
     "nav_premium": "Abonnementen",
@@ -154,6 +158,10 @@ window.translations = {
   },
 
   "en": {
+    "cookie_title": "Cookies & Positivity 🍪",
+    "cookie_text": "We use cookies to ensure BrightNews runs smoothly and to provide you with the best experience. Do you agree?",
+    "btn_accept": "Accept All",
+    "btn_decline": "Necessary Only",
     "nav_home": "Home",
     "nav_about": "About Us",
     "nav_premium": "Subscriptions",
@@ -306,6 +314,10 @@ window.translations = {
   },
 
   "de": {
+    "cookie_title": "Cookies & Positivität 🍪",
+    "cookie_text": "Wir verwenden Cookies, um sicherzustellen, dass BrightNews reibungslos funktioniert und um dir die beste Erfahrung zu bieten. Bist du einverstanden?",
+    "btn_accept": "Akzeptieren",
+    "btn_decline": "Nur Notwendige",
     "nav_home": "Startseite",
     "nav_about": "Über uns",
     "nav_premium": "Abonnements",
@@ -457,6 +469,10 @@ window.translations = {
   },
 
   "fr": {
+    "cookie_title": "Cookies & Positivité 🍪",
+    "cookie_text": "Nous utilisons des cookies pour garantir le bon fonctionnement de BrightNews et vous offrir la meilleure expérience. Êtes-vous d'accord ?",
+    "btn_accept": "Accepter",
+    "btn_decline": "Nécessaire uniquement",
     "nav_home": "Accueil",
     "nav_about": "À propos",
     "nav_premium": "Abonnements",
@@ -464,13 +480,13 @@ window.translations = {
     "nav_contact": "Contact",
     "back": "Retour",
     "index_loading": "Chargement d'ondes positives...",
-    "filter_all": "Tout",
+    "filter_all": "Alles",
     "filter_tech": "Tech",
-    "filter_health": "Santé",
-    "filter_science": "Science",
-    "filter_lifestyle": "Style de vie",
-    "filter_environment": "Environnement",
-    "filter_finance": "Finance",
+    "filter_health": "Gesundheit",
+    "filter_science": "Wissenschaft",
+    "filter_lifestyle": "Lifestyle",
+    "filter_environment": "Umwelt",
+    "filter_finance": "Finanzen",
     "contact_title": "Contacter BrightNews ✨",
     "contact_subtitle": "Nous aimerions avoir de vos nouvelles !",
     "footer_text": "Fondé et développé par <strong>Maarten de Klerk</strong>. Maarten est le propriétaire de BrightNews, dédié à la diffusion d'ondes positives.",
@@ -608,6 +624,10 @@ window.translations = {
   },
 
   "es": {
+    "cookie_title": "Cookies y Positividad 🍪",
+    "cookie_text": "Utilizamos cookies para asegurar que BrightNews funcione correctamente y para ofrecerte la mejor experiencia. ¿Estás de acuerdo?",
+    "btn_accept": "Aceptar todo",
+    "btn_decline": "Solo necesarias",
     "nav_home": "Inicio",
     "nav_about": "Sobre nosotros",
     "nav_premium": "Suscripciones",

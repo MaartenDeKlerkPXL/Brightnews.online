@@ -166,6 +166,19 @@
         <p data-i18n="footer_created_by">&copy; 2026 BrightNews • All rights reserved • Created with 💚 in the Netherlands</p>
     </div>
 </footer>
+<div id="cookie-banner" class="cookie-overlay" style="display: none;">
+    <div class="cookie-content">
+        <div class="cookie-icon">🍪</div>
+        <div class="cookie-text">
+            <h3 data-i18n="cookie_title">Cookies & Positiviteit</h3>
+            <p data-i18n="cookie_text">We gebruiken cookies om te zorgen dat BrightNews soepel werkt en om je de beste ervaring te bieden. Ga je akkoord?</p>
+        </div>
+        <div class="cookie-buttons">
+            <button onclick="acceptCookies()" class="btn-cookie-accept" data-i18n="btn_accept">Accepteren</button>
+            <button onclick="declineCookies()" class="btn-cookie-decline" data-i18n="btn_decline">Alleen noodzakelijk</button>
+        </div>
+    </div>
+</div>
 <script>
     function toggleMobileMenu() {
         const menu = document.getElementById('mobileMenu');

@@ -45,7 +45,6 @@ async function initApp() {
         setTimeout(initApp, 100);
         return;
     }
-
     console.log("BrightNews initialiseren... 🛠️");
 
     const savedLang = localStorage.getItem('selectedLanguage') || 'nl';
@@ -61,6 +60,7 @@ async function initApp() {
 
     // Voer de vertaling uit
     vertaalStatischeTeksten(savedLang);
+    checkCookies();
 
     // Laad het nieuws
     await laadNieuws(savedLang);
@@ -385,6 +385,7 @@ function terugNaarOverzicht() {
 }
 
 function wisselTaal(lang, labelTekst, event) {
+    renderFilterBar();
     if (event) event.preventDefault();
 
     // 1. Update dropdown
@@ -396,7 +397,7 @@ function wisselTaal(lang, labelTekst, event) {
     // 2. Sla taal op
     localStorage.setItem('selectedLanguage', lang);
     window.huidigeTaal = lang;
-
+    vertaalStatischeTeksten(lang);
     // 3. Update SEO Meta Tags (Nieuw)
     // Update Description
     const descriptionTag = document.querySelector('meta[name="description"]');
@@ -423,6 +424,8 @@ function wisselTaal(lang, labelTekst, event) {
     if (typeof laadNieuws === 'function') {
         laadNieuws(lang);
     }
+    renderFilterBar();
+    laadNieuws(lang);
 }
 // 1. Initialiseer een globale lijst voor actieve filters
 window.actieveFilters = [];
@@ -431,23 +434,58 @@ function renderFilterBar() {
     const filterContainer = document.getElementById('category-filters');
     if (!filterContainer) return;
 
+    // Deze namen moeten exact overeenkomen met de 'category' in je news_taal.json
     const categories = ['All', 'Tech', 'Health', 'Science', 'Lifestyle', 'Environment', 'Finance'];
 
     filterContainer.innerHTML = categories.map(cat => {
-        const displayLabel = (cat === 'All') ? getT('filter_all', 'Alles') : cat;
-        // Check of de knop actief moet zijn bij renderen
+        // 1. Maak de vertaal-key (bijv. filter_all, filter_tech, etc.)
+        const i18nKey = `filter_${cat.toLowerCase()}`;
+
+        // 2. Haal de vertaling op. We gebruiken 'cat' (de Engelse naam) als fallback
+        // zodat er nooit een leeg knopje staat als de vertaling ontbreekt.
+        const displayLabel = getT(i18nKey, cat);
+
+        // 3. Check of de knop actief moet zijn
         const isActief = (cat === 'All' && window.actieveFilters.length === 0) || window.actieveFilters.includes(cat);
 
         return `
-    <button class="filter-btn ${isActief ? 'active' : ''}" 
-            onclick="filterByMetadata('${cat}', this)"
-            data-i18n="filter_${cat.toLowerCase()}">
-        ${displayLabel}
-    </button>
-`;
+            <button class="filter-btn ${isActief ? 'active' : ''}" 
+                    onclick="filterByMetadata('${cat}', this)"
+                    data-i18n="${i18nKey}">
+                ${displayLabel}
+            </button>
+        `;
     }).join('');
 }
+// Functie om de banner te tonen als er nog geen keuze is gemaakt
+function checkCookies() {
+    const consent = localStorage.getItem('brightNews_cookies');
+    const banner = document.getElementById('cookie-banner');
 
+    if (!consent && banner) {
+        banner.style.display = 'flex';
+        // Zorg dat de banner direct vertaald is
+        vertaalStatischeTeksten(window.huidigeTaal);
+    }
+}
+
+// Functie voor de 'Accepteer' knop
+function acceptCookies() {
+    localStorage.setItem('brightNews_cookies', 'accepted');
+    const banner = document.getElementById('cookie-banner');
+    if (banner) banner.style.display = 'none';
+}
+
+// Functie voor de 'Weiger' knop
+function declineCookies() {
+    localStorage.setItem('brightNews_cookies', 'essential');
+    const banner = document.getElementById('cookie-banner');
+    if (banner) banner.style.display = 'none';
+}
+
+// Maak ze beschikbaar voor de HTML onclick knoppen
+window.acceptCookies = acceptCookies;
+window.declineCookies = declineCookies;
 function filterByMetadata(category, btn) {
     const allBtn = document.querySelector('.filter-btn:first-child'); // De 'All' knop
 
