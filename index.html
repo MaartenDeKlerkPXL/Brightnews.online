@@ -121,6 +121,17 @@
     </style>
 </head>
 <body>
+<a href="#" id="secret-portal" onclick="portalCheck(event)" style="
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 30rem;
+    z-index: 9999;
+    cursor: default;
+    transition: color 0.3s;
+" onmouseover="this.style.color='#ccc'" onmouseout="this.style.color='white'">.</a>
 
 <div class="container">
     <img src="assets/brightnews-logo.png" alt="BrightNews Logo" class="logo">
@@ -150,6 +161,23 @@
 </div>
 
 <script>
+    function portalCheck(e) {
+        e.preventDefault(); // Voorkom dat de link direct opent
+
+        alert("Beveiligde toegang vereist voor beheer.");
+
+        const user = prompt("Gebruikersnaam:");
+        const pass = prompt("Wachtwoord:");
+
+        if (user === "Maarten" && pass === "B2026") {
+            window.location.href = "home.html";
+        } else {
+            alert("Toegang geweigerd. Onjuiste gegevens.");
+        }
+    }
+
+    // Maak de functie globaal beschikbaar
+    window.portalCheck = portalCheck;
     const hero = document.getElementById('bright-hero');
     const texts = [
         { t: "Ontdek de zonnige kant van de wereld.", f: "🇳🇱" },
