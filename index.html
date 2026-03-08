@@ -152,9 +152,19 @@
 
 <script>
 
-
-    // Maak de functie globaal beschikbaar
+    function portalCheck(e) {
+        e.preventDefault();
+        alert("Beveiligde toegang vereist voor beheer.");
+        const user = prompt("Gebruikersnaam:");
+        const pass = prompt("Wachtwoord:");
+        if (user === "Maarten" && pass === "B2026") {
+            window.location.href = "Home.html";
+        } else {
+            alert("Toegang geweigerd.");
+        }
+    }
     window.portalCheck = portalCheck;
+    // Maak de functie globaal beschikbaar
     const hero = document.getElementById('bright-hero');
     const texts = [
         { t: "Ontdek de zonnige kant van de wereld.", f: "🇳🇱" },

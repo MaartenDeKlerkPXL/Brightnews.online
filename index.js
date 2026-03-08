@@ -124,7 +124,7 @@ async function laadNieuws(taal) {
         if (typeof window.showNotification === 'function') {
             window.showNotification("Fout bij laden van nieuws.", "error");
         } else {
-            alert("Fout bij laden van nieuws.");
+            // alert("Fout bij laden van nieuws.");
         }
     }
 }
