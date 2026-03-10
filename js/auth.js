@@ -192,3 +192,59 @@ async function applyDiscountCode() {
         showNotification("Ongeldige code.", "error");
     }
 }
+// --- 5. CUSTOM ACCOUNT VERWIJDEREN LOGICA ---
+
+// 1. Open het venster
+function handleDeleteAccount() {
+    const modal = document.getElementById('delete-modal');
+    if (modal) {
+        modal.style.display = 'flex';
+        // Zorg dat de tekst in de modal ook vertaald is
+        if (typeof vertaalStatischeTeksten === 'function') {
+            vertaalStatischeTeksten(window.huidigeTaal);
+        }
+    }
+}
+
+// 2. Sluit het venster
+function closeDeleteModal() {
+    const modal = document.getElementById('delete-modal');
+    if (modal) modal.style.display = 'none';
+}
+
+async function executeDelete() {
+    try {
+        const client = window.supabaseClient;
+        const { data: { user } } = await client.auth.getUser();
+
+        if (user) {
+            // STAP 1: Markeer het account in de database als "te verwijderen"
+            // Dit is de veiligste manier in de frontend.
+            // In auth.js:
+            await client.auth.updateUser({
+                data: {
+                    delete_requested: 'true' // Dit moet een string zijn ('')
+                }
+            });
+            // STAP 2: Toon de vertaalde melding
+            closeDeleteModal();
+            const successMsg = getT('delete_request_sent', "Account marked for deletion.");
+            showNotification(successMsg, "success");
+
+            // STAP 3: Log de gebruiker uit na een korte pauze
+            setTimeout(async () => {
+                await client.auth.signOut();
+                window.location.href = 'index.html';
+            }, 2500);
+        }
+    } catch (err) {
+        console.error("Fout:", err);
+        showNotification("Error", "error");
+        closeDeleteModal();
+    }
+}
+
+// Maak alles beschikbaar voor de HTML
+window.handleDeleteAccount = handleDeleteAccount;
+window.closeDeleteModal = closeDeleteModal;
+window.executeDelete = executeDelete;

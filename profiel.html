@@ -13,6 +13,26 @@
     <script src="js/translations.js"></script>
 </head>
 <body>
+<div id="delete-modal" class="custom-modal" style="display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); align-items: center; justify-content: center; backdrop-filter: blur(5px);">
+    <div class="auth-box" style="max-width: 400px; padding: 40px; text-align: center; background-color: #1a1a1a; border: 1px solid #333; box-shadow: 0 20px 40px rgba(0,0,0,0.4);">
+        <div style="font-size: 3.5rem; margin-bottom: 20px;">⚠️</div>
+
+        <h2 data-i18n="btn_delete_account" style="margin-bottom: 15px; color: #ffffff; font-size: 1.8rem;">Account Verwijderen</h2>
+
+        <p data-i18n="delete_confirm" style="color: rgba(255,255,255,0.9); margin-bottom: 30px; line-height: 1.5;">
+            Weet je zeker dat je je account wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.
+        </p>
+
+        <div style="display: flex; gap: 12px; align-items: stretch;">
+            <button onclick="closeDeleteModal()" class="btn-back-pill" style="flex: 1; height: 50px; display: flex; align-items: center; justify-content: center; margin: 0; background: #333; color: white; border: none; box-shadow: none;">
+                Annuleren
+            </button>
+            <button onclick="executeDelete()" class="btn-primary-editorial" style="flex: 1; height: 50px; display: flex; align-items: center; justify-content: center; margin: 0; background-color: #ff4757; color: white; border: none;">
+                Verwijderen
+            </button>
+        </div>
+    </div>
+</div>
 <header>
     <nav class="container">
         <div class="nav-left-group">
@@ -249,6 +269,9 @@
 
             </script>
             <button onclick="handleLogout()" class="btn-logout-editorial" data-i18n="btn_logout">Uitloggen</button>
+            <button onclick="handleDeleteAccount()" class="btn-delete-account" data-i18n="btn_delete_account" style="margin-top: 15px; background: none; border: 1px solid #ff4757; color: #ff4757; width: 100%; padding: 12px; border-radius: 50px; cursor: pointer; font-weight: bold; font-size: 0.9rem;">
+                Account Verwijderen
+            </button>
         </div>
     </div>
 </main>

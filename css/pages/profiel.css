@@ -147,6 +147,10 @@ body {
     background: var(--light-bg);
     box-sizing: border-box;
 }
+.custom-modal {
+    animation: fadeIn 0.3s ease-out;
+    backdrop-filter: blur(4px); /* Maakt de achtergrond wazig, erg chic! */
+}
 
 /* 3. De kaart: volledig flexibel in hoogte */
 .auth-box-centered {
