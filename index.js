@@ -122,7 +122,7 @@ async function laadNieuws(taal) {
         console.error("Fout tijdens laden:", err);
         // Veilig aanroepen:
         if (typeof window.showNotification === 'function') {
-            window.showNotification("Fout bij laden van nieuws.", "error");
+            // window.showNotification("Fout bij laden van nieuws.", "error");
         } else {
             // alert("Fout bij laden van nieuws.");
         }
