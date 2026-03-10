@@ -214,6 +214,17 @@ function renderLijst(artikelen) {
     const detailView = document.getElementById('detail-view');
     const detailNav = document.getElementById('detail-navigation');
 
+
+    // DE FIX: Als deze elementen niet bestaan (zoals op de prijzenpagina), stop dan direct!
+    if (!container || !detailView) {
+        console.log("Geen nieuws-container gevonden. Waarschijnlijk ben je niet op de Home pagina. 👍");
+        return;
+    }
+
+    // De rest van je code...
+    container.style.display = 'grid';
+    detailView.style.display = 'none';
+
     // Zoek dit stukje in renderLijst:
     container.style.display = 'grid';
     detailView.style.display = 'none';

@@ -216,47 +216,42 @@
                     const details = document.getElementById('register-lang-details');
                     // details.removeAttribute('open'); // Zet dit aan als je wilt dat hij weer inklapt
                 }
-                function renderSubscriptionUI() {
-                    // We controleren zowel localStorage (Ko-fi) als de Supabase status
-                    const isPremiumStore = localStorage.getItem('brightNews_Premium') === 'true';
+                function renderSubscriptionUI(isPremium, expiryDate = null) {
                     const container = document.getElementById('subscription-status');
-
                     if (!container) return;
 
-                    // Als er geen premium is, zorg dat de container leeg en onzichtbaar is
-                    if (!isPremiumStore) {
+                    if (!isPremium) {
                         container.innerHTML = '';
                         container.style.display = 'none';
                         return;
                     }
 
-                    // Gebruiker is Premium: Toon de sectie
                     container.style.display = 'block';
 
-                    const startDateStr = localStorage.getItem('brightNews_StartDate');
-                    const startDate = startDateStr ? new Date(startDateStr) : new Date();
-                    const planType = localStorage.getItem('brightNews_PlanType') || 'monthly';
-
-                    let endDate = new Date(startDate);
-                    if (planType === 'yearly') {
-                        endDate.setFullYear(startDate.getFullYear() + 1);
+                    let dateText;
+                    if (expiryDate) {
+                        // ECHTE DATUM: Gebruik de datum uit de database
+                        const finalDate = new Date(expiryDate);
+                        const dateOptions = { day: 'numeric', month: 'long', year: 'numeric' };
+                        dateText = finalDate.toLocaleDateString(window.huidigeTaal, dateOptions);
                     } else {
-                        endDate.setMonth(startDate.getMonth() + 1);
+                        // GEEN DATUM GEVONDEN: Toon een heldere melding in plaats van een nepdatum
+                        dateText = getT('date_unknown', 'Onbekend');
                     }
 
-                    const planName = planType.charAt(0).toUpperCase() + planType.slice(1); // Maakt van 'glow' -> 'Glow'
-                    const dateStr = endDate.toLocaleDateString();
+                    const planType = localStorage.getItem('brightNews_PlanType') || 'Premium';
+                    const planName = planType.charAt(0).toUpperCase() + planType.slice(1);
 
                     container.innerHTML = `
-    <div class="subscription-card" style="padding: 1.5rem; border: 1px solid #e0e0e0; border-radius: 12px; background-color: #fff; margin-bottom: 3rem;">
-        <p style="margin-bottom: 1rem; color: #666;">
-            ${getT('sub_active_until').replace('{plan}', planName).replace('{date}', dateStr)}
-        </p>
-        <button onclick="cancelSubscription()" class="btn-cancel" style="background: none; border: 1.5px solid #ff4444; color: #ff4444; padding: 8px 16px; border-radius: 8px; font-weight: bold; cursor: pointer;">
-            ${getT('btn_cancel_renewal')}
-        </button>
-    </div>
-`;
+        <div class="subscription-card" style="padding: 1.5rem; border: 1px solid #e0e0e0; border-radius: 12px; background-color: #fff; margin-bottom: 2rem; margin-top: 20px;">
+            <p style="margin-bottom: 1rem; color: #666; font-size: 0.95rem;">
+                ${getT('sub_active_until').replace('{plan}', planName).replace('{date}', dateText)}
+            </p>
+            <button onclick="cancelSubscription()" class="btn-cancel" style="background: none; border: 1.5px solid #ff4444; color: #ff4444; padding: 8px 16px; border-radius: 8px; font-weight: bold; cursor: pointer;">
+                ${getT('btn_cancel_renewal')}
+            </button>
+        </div>
+    `;
                 }
 
                 function cancelSubscription() {

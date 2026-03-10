@@ -1,201 +1,199 @@
-.pricing-grid {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end; /* Zorgt dat de middelste kaart 'omhoog' springt */
-    gap: 24px;
-    padding: 80px 0;
-    flex-wrap: wrap;
+/* --- 1. DE BASIS WRAPPER --- */
+.pricing-page-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    min-height: 100vh !important;
+    background-color: var(--light-bg) !important; /* Zacht, modern grijs */
+    box-sizing: border-box !important;
+
+    /* Perfecte balans voor Nav en Footer */
+    padding-top: 140px !important;
+    padding-bottom: 100px !important;
+    overflow: hidden;
 }
+
+/* --- 2. DE INTRO --- */
 .pricing-intro {
-    padding: 150px 0 40px;
     text-align: center;
+    margin-bottom: 60px;
+    padding: 0 20px;
 }
 
+.pricing-intro h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+/* --- 3. DE GRID --- */
+.pricing-grid {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: stretch !important;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px !important;
+    box-sizing: border-box;
+}
+
+/* --- 4. DE KAARTEN (The "Bright" Look) --- */
 .price-card {
-    background-color: var(--white);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-lg);
-    padding: 48px 32px;
-    width: 340px;
-    text-align: center;
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 30px; /* Zachte, moderne hoeken */
+    padding: 50px 35px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
     position: relative;
-    transition: var(--transition);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.02);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-/* Populair pakket accent */
+.price-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+}
+
+/* DE GLOW KAART (POPULAIR) */
 .price-card.popular {
-    border: 2.5px solid var(--bright-green);
-    box-shadow: var(--shadow-md);
-    padding: 60px 32px; /* Iets groter */
+    border: 2px solid #2ecc71;
+    background: #ffffff;
+    box-shadow: 0 20px 50px rgba(46, 204, 113, 0.1);
+    transform: scale(1.05);
+    z-index: 5;
+}
+
+.price-card.popular:hover {
+    transform: scale(1.05) translateY(-12px);
 }
 
 .popular-badge {
     position: absolute;
-    top: -14px;
+    top: -15px;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--bright-green);
-    color: var(--white);
-    padding: 6px 18px;
+    background: #2ecc71;
+    color: white;
+    padding: 6px 20px;
     border-radius: 50px;
-    font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+}
+
+/* --- 5. TYPOGRAFIE IN DE KAART --- */
+.price-card h2 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin: 0 0 10px 0;
 }
 
 .price-amount {
-    font-size: 3rem;
-    font-weight: 800;
-    margin: 20px 0 30px;
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: #1a1a1a;
+    margin: 20px 0;
+    letter-spacing: -0.02em;
 }
 
 .price-amount span {
     font-size: 1.1rem;
-    color: var(--medium-text);
+    color: #999;
     font-weight: 400;
 }
 
 .feature-list {
     list-style: none;
-    text-align: left;
-    margin-bottom: 40px;
-}
-
-.feature-list li {
-    padding: 8px 0;
-    font-size: 0.95rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.feature-list li.disabled {
-    color: #C0C0C0;
-    text-decoration: line-through;
-}
-.pricing-page-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 160px); /* Nav (80px) + Footer (80px) */
-    padding: 20px 0;
-}
-
-.pricing-intro {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.pricing-intro h1 {
-    font-size: 2.2rem;
-    margin: 0;
-}
-
-.pricing-grid {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 20px;
-    width: 100%;
-}
-
-/* De Kaarten (Compact & Netjes) */
-.price-card {
-    background: var(--white);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-md);
-    padding: 30px 25px;
-    width: 300px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    box-shadow: var(--shadow-sm);
-    transition: var(--transition);
-}
-
-.price-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
-}
-
-.price-card h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.price-amount {
-    font-size: 2rem;
-    font-weight: 800;
-    margin-bottom: 20px;
-    color: var(--dark-text);
-}
-
-.price-amount span {
-    font-size: 0.9rem;
-    color: var(--medium-text);
-}
-
-/* Lijstjes opschonen (geen bolletjes meer) */
-.feature-list {
-    list-style: none; /* Verwijdert de bolletjes uit je screenshot */
     padding: 0;
-    margin: 0 0 30px 0;
+    margin: 20px 0 40px 0;
     text-align: left;
     flex-grow: 1;
 }
 
 .feature-list li {
-    font-size: 0.9rem;
-    margin-bottom: 10px;
+    font-size: 0.95rem;
+    padding: 12px 0;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+    color: #444;
+    border-bottom: 1px solid #f0f0f0;
 }
+
+.feature-list li:last-child { border-bottom: none; }
 
 .feature-list li.disabled {
-    color: #bbb;
-    opacity: 0.7;
+    color: #ccc;
+    text-decoration: line-through;
+    opacity: 0.6;
 }
 
-/* Knoppen onderin uitlijnen */
+/* --- 6. DE KNOPPEN --- */
 .price-card button {
     width: 100%;
-    padding: 12px;
-    font-size: 0.9rem;
-}
-
-/* Populair Accent */
-.price-card.popular {
-    border: 2px solid var(--bright-green);
-    background-color: #fafffa;
-}
-
-.popular-badge {
-    position: absolute;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--bright-green);
-    color: white;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 0.75rem;
+    padding: 16px;
+    border-radius: 16px;
+    font-size: 1rem;
     font-weight: 700;
-    white-space: nowrap;
-}
-/* Speciale styling voor Glow members */
-body.user-is-glow {
-    border-top: 5px solid #ffd700; /* Gouden rand bovenin */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
 }
 
-body.user-is-glow .popular-badge {
-    background: linear-gradient(45deg, #ffd700, #ffa500);
-    animation: pulse 2s infinite;
+.btn-primary {
+    background: #1a1a1a;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
+.btn-primary:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+
+.btn-secondary {
+    background: #f1f3f5;
+    color: #495057;
+}
+
+.btn-secondary:hover { background: #e9ecef; }
+
+/* --- 7. MOBIEL (De Fix) --- */
+/* --- 7. MOBIEL (De Fix voor de volgorde) --- */
+@media (max-width: 950px) {
+    .pricing-page-wrapper {
+        padding-top: 120px !important;
+        padding-bottom: 2100px !important;
+    }
+
+    .pricing-grid {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 30px !important;
+    }
+
+    .price-card {
+        width: 100%;
+        max-width: 380px;
+        transform: none !important;
+        padding: 40px 25px;
+        /* De 'order' regel is hier verwijderd zodat de HTML-volgorde wordt aangehouden */
+    }
+
+    .price-card.popular {
+        /* We houden de styling van de populaire kaart, maar hij blijft op zijn plek */
+        margin: 10px 0;
+    }
 }

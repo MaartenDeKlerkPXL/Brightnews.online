@@ -162,4 +162,68 @@
 @media (max-width: 600px) {
     .cookie-content { flex-direction: column; text-align: center; }
     .cookie-buttons { width: 100%; flex-direction: column; }
+
+}
+/* --- Desktop & Basis Styles voor de Filters --- */
+.filter-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.category-bar {
+    display: flex;
+    flex-direction: row; /* Naast elkaar op desktop */
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap; /* Zorgt dat ze op kleine laptops niet buiten beeld vallen */
+    width: 100%;
+}
+
+/* De knoppen zelf (styling gebaseerd op je eerdere kaarten-stijl) */
+.filter-btn {
+    padding: 10px 22px;
+    border-radius: 50px;
+    border: 1px solid #f0f0f0;
+    background: #ffffff;
+    color: #555;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.filter-btn:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background: var(--bright-green, #2ecc71);
+    color: white;
+    border-color: var(--bright-green, #2ecc71);
+    box-shadow: 0 4px 15px rgba(46, 204, 113, 0.2);
+}
+
+/* --- Mobiele Optimalisatie (Telefoons) --- */
+@media (max-width: 600px) {
+    .category-bar {
+        flex-direction: column; /* DE FIX: Alles onder elkaar */
+        align-items: stretch;   /* Zorgt dat knoppen even breed worden */
+        gap: 10px;
+        padding: 0 20px;        /* Beetje ademruimte aan de zijkanten */
+    }
+
+    .filter-btn {
+        width: 100%;            /* Knop vult de hele breedte van de bar */
+        text-align: center;
+        padding: 14px;          /* Iets groter 'tap-oppervlak' voor duimen */
+        font-size: 1rem;
+    }
+
+    .filter-wrapper {
+        padding: 10px 0;
+    }
 }

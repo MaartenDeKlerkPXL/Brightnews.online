@@ -93,58 +93,128 @@ async function handleLogout() {
     }
 }
 
-// --- 3. PROFIEL & TAAL UPDATES ---
+// --- GLOBALE FUNCTIES (beschikbaar voor onclick in HTML) ---
 
-async function updateProfileUI(user) {
-    const meta = user.user_metadata;
-    const isPremium = meta?.is_premium === true || meta?.is_premium === 'true';
-    const userLang = meta?.preferred_lang;
+// Handmatige activatie van Glow
+function activateGlow() {
+    const inputField = document.getElementById('glowCode');
+    if (!inputField) return;
 
-    // A. Email & Badge
-    const emailDisplay = document.getElementById('user-email-display');
-    const badge = document.getElementById('premium-status-badge');
-    if (emailDisplay) emailDisplay.innerText = user.email;
-    if (badge) {
-        badge.innerText = isPremium ? "Bright Premium ✨" : "Gratis Account";
-        badge.className = `badge ${isPremium ? 'badge-premium' : 'badge-free'}`;
-    }
+    const inputCode = inputField.value.trim();
+    const secretCode = "BRIGHT-GLOW-2024";
 
-    // B. Verberg/Toon secties
-    const upgradeSection = document.getElementById('upgrade-section');
-    const promoSection = document.getElementById('discount-section-container');
-    if (upgradeSection) upgradeSection.style.display = isPremium ? 'none' : 'block';
-    if (promoSection) promoSection.style.display = isPremium ? 'none' : 'block';
-
-    // C. Taal instellen op basis van metadata
-    if (userLang && typeof wisselTaal === 'function') {
-        const langNames = { en: '🇺🇸 English', nl: '🇳🇱 Nederlands', de: '🇩🇪 Deutsch', fr: '🇫🇷 Français', es: '🇪🇸 Español' };
-        wisselTaal(userLang, langNames[userLang]);
-        localStorage.setItem('selectedLanguage', userLang);
-    }
-
-    // D. Premium Countdown
-    const countdownDisplay = document.getElementById('premium-countdown');
-    if (isPremium && meta?.premium_until && countdownDisplay) {
-        const nu = new Date();
-        const verloop = new Date(meta.premium_until);
-        const dagenOver = Math.ceil((verloop - nu) / (1000 * 60 * 60 * 24));
-
-        if (verloop.getFullYear() > 2090) {
-            countdownDisplay.innerHTML = "✨ <strong>Lifetime Premium</strong>";
-        } else {
-            countdownDisplay.innerHTML = dagenOver > 0 ? `Nog <strong>${dagenOver} dagen</strong> Premium over ☀️` : "";
-        }
-        countdownDisplay.style.display = 'block';
-    }
-    if (meta?.is_premium === true) {
-        localStorage.setItem('brightNews_Premium', 'true');
-    }
-
-    // Roep de functie in profiel.html aan om de knop te tekenen
-    if (typeof renderSubscriptionUI === 'function') {
-        renderSubscriptionUI();
+    if (inputCode === secretCode) {
+        localStorage.setItem('member_status', 'glow');
+        alert("Succes! Je bent nu een Glow member. ✨");
+        updateUIForGlow();
+    } else {
+        alert("Ongeldige code. Probeer het opnieuw.");
     }
 }
+
+// Update de interface voor Glow members
+function updateUIForGlow() {
+    const status = localStorage.getItem('member_status');
+    if (status === 'glow') {
+        document.body.classList.add('user-is-glow');
+        const glowCard = document.querySelector('.price-card.popular');
+        if (glowCard) {
+            glowCard.innerHTML = "<h3>Je bent een Glow Member! 🌟</h3><p>Bedankt voor je steun.</p>";
+        }
+    }
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    let currentLang = localStorage.getItem('bright_lang') || 'nl';
+
+    // 1. Navigatie markeren
+    const currentPath = window.location.pathname.split("/").pop() || "Home.html";
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        if (link.getAttribute('href') === currentPath) link.classList.add('active');
+    });
+
+    // 2. Vertalingen toepassen (Met veiligheidscheck voor keys)
+    function applyTranslations(lang) {
+        // We halen de data direct uit het globale window object
+        const translations = window.translations;
+
+        if (!translations || !translations[lang]) {
+            console.warn(`⚠️ Vertalingen voor ${lang} niet gevonden.`);
+            return;
+        }
+
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (translations[lang][key]) {
+                // Check of het een input-veld is (voor placeholders) of gewone tekst
+                if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                    el.placeholder = translations[lang][key];
+                } else {
+                    el.textContent = translations[lang][key];
+                }
+            }
+        });
+        console.log(`Taal succesvol toegepast: ${lang} ✨`);
+    }
+
+    // 3. Nieuws laden (Alleen als news-grid bestaat)
+    async function loadNews(lang) {
+        const newsGrid = document.getElementById('news-grid') || document.querySelector('.news-grid');
+        if (!newsGrid) return;
+
+        try {
+            const response = await fetch(`./data/news_${lang}.json`);
+            const data = await response.json();
+
+            newsGrid.innerHTML = '';
+            data.articles.forEach(article => {
+                const card = document.createElement('div');
+                card.className = 'news-card';
+                card.innerHTML = `
+                    <span class="card-tag">${article.category}</span>
+                    <h3>${article.title}</h3>
+                    <p>${article.summary}</p>
+                    <div class="card-footer">Sentiment: ${(article.sentiment_score * 100).toFixed(0)}%</div>
+                `;
+                newsGrid.appendChild(card);
+            });
+        } catch (error) {
+            newsGrid.innerHTML = '<p>Nieuws even niet beschikbaar. ✨</p>';
+        }
+    }
+
+    // 4. Initialisatie
+    applyTranslations(currentLang);
+    loadNews(currentLang);
+    updateUIForGlow();
+
+    // 5. Taalwisselaar event listeners
+    document.querySelectorAll('.dropdown-content a, #language-switcher button').forEach(el => {
+        el.addEventListener('click', (e) => {
+            const lang = el.getAttribute('data-lang');
+            if (lang) {
+                localStorage.setItem('bright_lang', lang);
+                location.reload(); // Ververs om alles correct te laden
+            }
+        });
+    });
+
+    console.log('BrightNews Architecture geladen 🚀');
+});
+
+// index.js of main.js
+function applyPremiumFeatures() {
+    const isPremium = localStorage.getItem('brightNews_Premium') === 'true';
+
+    if (isPremium) {
+        document.body.classList.add('is-premium-user');
+        console.log("BrightNews Shine Actief! ✨");
+        // Hier kun je advertenties verbergen of extra content tonen
+    }
+}
+
+document.addEventListener('DOMContentLoaded', applyPremiumFeatures);
 
 // Kleur van profiel-icoon in nav aanpassen
 async function updateAuthUI() {
@@ -181,6 +251,45 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.error("Initialisatie fout:", err.message);
     }
 });
+async function updateProfileUI(user) {
+    const meta = user.user_metadata;
+    // Check op alle mogelijke manieren hoe Supabase 'true' kan teruggeven
+    const isPremium = meta?.is_premium === true || meta?.is_premium === 'true';
+    const userLang = meta?.preferred_lang;
+
+    console.log("Inlog check - Is Premium:", isPremium); // Voor jou om te debuggen in de console
+
+    // A. Badge & Email
+    const emailDisplay = document.getElementById('user-email-display');
+    const badge = document.getElementById('premium-status-badge');
+
+    if (emailDisplay) emailDisplay.innerText = user.email;
+
+    if (badge) {
+        const statusKey = isPremium ? 'badge_premium' : 'badge_free';
+        badge.setAttribute('data-i18n', statusKey);
+        badge.innerText = getT(statusKey);
+        badge.className = `badge ${isPremium ? 'badge-premium' : 'badge-free'}`;
+    }
+
+    // B. Secties tonen/verbergen
+    const upgradeSection = document.getElementById('upgrade-section');
+    const promoSection = document.getElementById('discount-section-container');
+    if (upgradeSection) upgradeSection.style.display = isPremium ? 'none' : 'block';
+    if (promoSection) promoSection.style.display = isPremium ? 'none' : 'block';
+
+    // C. Lokale status opslaan voor andere pagina's
+    if (isPremium) {
+        localStorage.setItem('brightNews_Premium', 'true');
+    } else {
+        localStorage.removeItem('brightNews_Premium');
+    }
+
+    const expiryDate = meta?.premium_until || null; // Dit haalt de datum uit Supabase
+
+    if (typeof renderSubscriptionUI === 'function') {
+        renderSubscriptionUI(isPremium, expiryDate);
+    }}
 
 // Kortingscode logica
 async function applyDiscountCode() {
