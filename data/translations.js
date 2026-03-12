@@ -1,5 +1,6 @@
 window.translations = {
   "nl": {
+    "privacy_list_hosting": "Hosting: Voor hosting en data-opslag gebruiken we Strato; we hebben een verwerkersovereenkomst om je privacy te waarborgen.",
     "cookies_text2": "BrightNews gebruikt functionele cookies en lokale opslag om je voorkeuren, zoals je taal en inlogsessie, veilig te onthouden. Voor analytische of tracking cookies vragen we altijd vooraf toestemming via de banner. Zo heb jij volledige controle over je eigen data.",
     "cookie_more": "Lees meer",
     "copied": "Gekopieerd!",
@@ -162,6 +163,7 @@ window.translations = {
   },
 
   "en": {
+    "privacy_list_hosting": "Hosting: For hosting and data storage, we use Strato; we have a data processing agreement to guarantee your privacy.",
     "cookies_text2": "BrightNews uses functional cookies and local storage to securely remember your preferences, such as your language and login session. For analytical or tracking cookies, we always ask for your consent via the banner first. This way, you stay in full control of your own data.",
     "cookie_more": "Read more",
     "copied": "Copied!",
@@ -322,6 +324,7 @@ window.translations = {
   },
 
   "de": {
+    "privacy_list_hosting": "Hosting: Für Hosting und Datenspeicherung nutzen wir Strato; wir haben einen Auftragsverarbeitungsvertrag abgeschlossen, um Ihre Privatsphäre zu gewährleisten.",
     "cookies_text2": "BrightNews verwendet funktionale Cookies und lokalen Speicher, um deine Einstellungen wie Sprache und Login-Sitzung sicher zu speichern. Für Analyse- oder Tracking-Cookies bitten wir dich immer zuerst über den Banner um Erlaubnis. So behältst du die volle Kontrolle über deine Daten.",
     "cookie_more": "Mehr lesen",
     "copied": "Kopiert!",
@@ -636,10 +639,12 @@ window.translations = {
     "btn_save_password": "Enregistrer le mot de passe",
     "thanks_title": "Nouvelles étincelantes !",
     "thanks_message": "Vous êtes maintenant officiellement un <strong>membre Shine</strong>. Grâce à votre soutien, nous pouvons continuer à vous apporter des nouvelles positives illimitées.",
-    "thanks_redirect": "Vous allez être redirigé vers la page d'accueil dans quelques secondes..."
+    "thanks_redirect": "Vous allez être redirigé vers la page d'accueil dans quelques secondes...",
+    "privacy_list_hosting": "Hébergement : Pour l'hébergement et le stockage des données, nous utilisons Strato ; nous avons conclu un accord de traitement des données pour garantir votre confidentialité.",
   },
 
   "es": {
+    "privacy_list_hosting": "Alojamiento: Para el alojamiento y el almacenamiento de datos, utilizamos Strato; contamos con un contrato de procesamiento de datos para garantizar su privacidad.",
     "cookies_text2": "BrightNews utiliza cookies funcionales y almacenamiento local para recordar tus preferencias, como el idioma y la sesión de inicio, de forma segura. Para las cookies analíticas o de seguimiento, siempre pedimos tu consentimiento a través del banner primero. De este modo, mantienes el control total sobre tus propios datos.",
     "cookie_more": "Leer más",
     "copied": "¡Copiado!",

@@ -487,6 +487,49 @@ function filterByMetadata(category, btn) {
 
     renderLijst(gefilterd);
 }
+const express = require('express');
+const app = express();
+const { sendSubscriptionConfirmation } = require('./backend/mailer');
+
+app.use(express.json()); // Om data uit de frontend te kunnen lezen
+
+// Endpoint voor een succesvolle aankoop
+app.post('/api/purchase-success', async (req, res) => {
+    const { email, plan, language } = req.body;
+
+    try {
+        // Verstuur de wettelijk verplichte bevestiging met PDF
+        await sendSubscriptionConfirmation(email, language);
+
+        console.log(`✨ Succes: Mail met voorwaarden verstuurd naar ${email} voor plan: ${plan}`);
+        res.status(200).json({ message: 'Aankoop verwerkt en mail verzonden.' });
+    } catch (error) {
+        console.error('❌ Fout bij verwerken aankoop-mail:', error);
+        res.status(500).json({ error: 'Mail kon niet worden verzonden.' });
+    }
+});
+const express = require('express');
+const app = express();
+const { sendSubscriptionConfirmation } = require('./backend/mailer');
+
+app.use(express.json());
+
+// Dit is de 'route' die wordt aangeroepen na een betaling
+app.post('/api/complete-purchase', async (req, res) => {
+    const { email, language, plan } = req.body;
+
+    try {
+        // Hier triggeren we de mailer die je zojuist hebt getest!
+        await sendSubscriptionConfirmation(email, language);
+
+        res.status(200).send({ message: "Purchase complete and email sent." });
+    } catch (error) {
+        console.error("Fout bij versturen mail:", error);
+        res.status(500).send({ error: "Purchase succeeded, but mail failed." });
+    }
+});
+
+app.listen(3000, () => console.log('Bright News Backend draait op poort 3000'));
 
 window.toonDetail = toonDetail;
 window.renderLijst = renderLijst;
