@@ -196,8 +196,7 @@ async function processNews() {
                                     Met een pakkende titel zonder het woord inspirerend te gebruiken en max 24 letters per woord in. 
                                     Geen oorlog wat of iets wat er te maken zou kunnen hebben.
                                     Classificeer in: Tech, Health, Science, Lifestyle, Environment, of Finance.
-                                    Antwoord in JSON: {"isBright": true, "category": "...", "nl": {"t": "..", "s": ".."}, "en": {...}, "de": {...}, "fr": {...}, "es": {...},`
-                        }],
+Antwoord in JSON: {"isBri           ght": true, "category": "...", "nl": {"t": "..", "s": "..", "alt": ".."}, "en": {"t": "..", "s": "..", "alt": ".."}, "de": {"t": "..", "s": "..", "alt": ".."}, "fr": {"t": "..", "s": "..", "alt": ".."}, "es": {"t": "..", "s": "..", "alt": ".."}}`                        }],
                         responseFormat: { type: 'json_object' }
                     });
 
@@ -228,6 +227,7 @@ async function processNews() {
                                 id: articleId,
                                 title: data[lang].t,
                                 summary: data[lang].s,
+                                image_alt: data[lang].alt,
                                 link: item.link,
                                 source: feedInfo.name,
                                 image: finalImage,

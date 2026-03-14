@@ -152,7 +152,7 @@ async function toonDetail(id) {
     sessionStorage.setItem('brightScrollPos', window.scrollY);
 
     // Forceer de browser om onmiddellijk naar boven te gaan ZONDER animatie
-    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    window.scrollTo({top: 0, left: 0, behavior: 'instant'});
 
     const userStatus = await checkUser();
 
@@ -213,8 +213,8 @@ async function toonDetail(id) {
         <section class="article-body"><p>${displayContent}</p>${paywallHTML}${shareHtml}</section>
     </div>`;
 
-    setTimeout(() => updateShareLinks(artikel.title, window.location.href), 150);}
-
+    setTimeout(() => updateShareLinks(artikel.title, window.location.href), 150);
+}
 function renderLijst(artikelen) {
     const container = document.getElementById('news-container');
     const detailView = document.getElementById('detail-view');
@@ -244,10 +244,11 @@ function renderLijst(artikelen) {
         const veiligId = artikel.id || `old-${index}`;
         const card = document.createElement('div');
         card.className = 'news-card';
-        card.style.cursor = 'pointer';
 
         const imgSrc = artikel.image || 'https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80';
-        const imgAlt = artikel.image_alt || artikel.title || 'Bright News';
+
+        // AANPASSING: Gebruik de specifieke fallback logica voor alt-teksten
+        const imgAlt = artikel.image_alt || artikel.title;
 
         card.innerHTML = `
             <img src="${imgSrc}" 
@@ -490,6 +491,3 @@ window.terugNaarOverzicht = terugNaarOverzicht;
 window.wisselTaal = wisselTaal;
 window.toggleShareMenu = toggleShareMenu;
 window.copyLink = copyLink;
-
-
-
