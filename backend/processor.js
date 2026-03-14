@@ -192,11 +192,11 @@ async function processNews() {
                         messages: [{
                             role: 'user',
                             content: `Analyseer dit nieuws: "${item.title} - ${item.contentSnippet}". 
-                                    Als het zeer positief is, schrijf een inspirerend artikel (300 woorden).
+                                    Als het zeer positief is, schrijf een inspirerend artikel van minimaal 300 woorden.
                                     Met een pakkende titel zonder het woord inspirerend te gebruiken en max 24 letters per woord in. 
                                     Geen oorlog wat of iets wat er te maken zou kunnen hebben.
                                     Classificeer in: Tech, Health, Science, Lifestyle, Environment, of Finance.
-Antwoord in JSON: {"isBri           ght": true, "category": "...", "nl": {"t": "..", "s": "..", "alt": ".."}, "en": {"t": "..", "s": "..", "alt": ".."}, "de": {"t": "..", "s": "..", "alt": ".."}, "fr": {"t": "..", "s": "..", "alt": ".."}, "es": {"t": "..", "s": "..", "alt": ".."}}`                        }],
+                                    Antwoord in JSON: {"isBright": true, "category": "...", "nl": {"t": "..", "s": "..", "alt": ".."}, "en": {"t": "..", "s": "..", "alt": ".."}, "de": {"t": "..", "s": "..", "alt": ".."}, "fr": {"t": "..", "s": "..", "alt": ".."}, "es": {"t": "..", "s": "..", "alt": ".."}}`                        }],
                         responseFormat: { type: 'json_object' }
                     });
 

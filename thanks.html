@@ -27,15 +27,6 @@
             color: var(--bright-text);
             text-align: center;
         }
-        header {
-            background-color: var(--white); !important;
-            border-bottom: 1px solid var(--border-color); !important;
-            padding: 1rem 0; !important;
-            position: sticky; !important;
-            top: 0; !important;
-            z-index: 1000; !important;
-            box-shadow: var(--shadow-sm); !important;
-        }
 
         .thanks-container {
             max-width: 500px;
@@ -111,54 +102,54 @@
 </head>
 <body>
 <header>
-<nav class="container">
-    <div class="nav-left-group">
-        <div class="dropdown language-picker">
-            <button class="dropbtn" id="current-lang">
-                🇺🇸 English <span class="arrow">▼</span>
-            </button>
-            <div class="dropdown-content">
-                <a href="#" onclick="wisselTaal('en', '🇺🇸 English', event)">🇺🇸 English</a>
-                <a href="#" onclick="wisselTaal('nl', '🇳🇱 Nederlands', event)">🇳🇱 Nederlands</a>
-                <a href="#" onclick="wisselTaal('de', '🇩🇪 Deutsch', event)">🇩🇪 Deutsch</a>
-                <a href="#" onclick="wisselTaal('fr', '🇫🇷 Français', event)">🇫🇷 Français</a>
-                <a href="#" onclick="wisselTaal('es', '🇪🇸 Español', event)">🇪🇸 Español</a>
+    <nav class="container">
+        <div class="nav-left-group">
+            <div class="dropdown language-picker">
+                <button class="dropbtn" id="current-lang">
+                    🇺🇸 English <span class="arrow">▼</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="wisselTaal('en', '🇺🇸 English', event)">🇺🇸 English</a>
+                    <a href="#" onclick="wisselTaal('nl', '🇳🇱 Nederlands', event)">🇳🇱 Nederlands</a>
+                    <a href="#" onclick="wisselTaal('de', '🇩🇪 Deutsch', event)">🇩🇪 Deutsch</a>
+                    <a href="#" onclick="wisselTaal('fr', '🇫🇷 Français', event)">🇫🇷 Français</a>
+                    <a href="#" onclick="wisselTaal('es', '🇪🇸 Español', event)">🇪🇸 Español</a>
+                </div>
             </div>
-        </div>
 
-        <!--            <a href="Home.html" class="logo">Bright<span>News</span></a>-->
+            <!--            <a href="Home.html" class="logo">Bright<span>News</span></a>-->
 
-        <a href="Home.html"><img src="assets/brightnews-logo.png" height="200" width="300"/></a></div>
-    <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu openen">
-        <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links" id="mobileMenu">
-        <li><a href="Home.html" data-i18n="nav_home">Home</a></li>
-        <li><a href="over-ons.html" data-i18n="nav_about">Over Ons</a></li>
-        <li><a href="abonnementen.html" data-i18n="nav_premium">Abonnementen</a></li>
+            <a href="Home.html"><img src="assets/brightnews-logo.png" height="200" width="300"/></a></div>
+        <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu openen">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="mobileMenu">
+            <li><a href="Home.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="over-ons.html" data-i18n="nav_about">Over Ons</a></li>
+            <li><a href="abonnementen.html" data-i18n="nav_premium">Abonnementen</a></li>
 
-        <li class="nav-profile-desktop">
-            <a href="profiel.html" class="profile-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-            </a>
-        </li>
+            <li class="nav-profile-desktop">
+                <a href="profiel.html" class="profile-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a>
+            </li>
 
-        <li class="nav-profile-mobile">
-            <a href="profiel.html" class="profile-link-text"  data-i18n="nav_profile">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-                Profiel
-            </a>
-        </li>
-    </ul>
+            <li class="nav-profile-mobile">
+                <a href="profiel.html" class="profile-link-text"  data-i18n="nav_profile">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    Profiel
+                </a>
+            </li>
+        </ul>
 
-</nav>
-    </header>
+    </nav>
+</header>
     <div class="thanks-container">
         <div class="icon-circle">✨</div>
         <h1 id="thanks-title" data-i18n="thanks_title">Stellar news!</h1>
