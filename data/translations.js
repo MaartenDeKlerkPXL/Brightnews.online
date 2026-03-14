@@ -1,5 +1,7 @@
 window.translations = {
   "nl": {
+    "terms_sec6_title": "6. Terugbetalingen & Contact",
+    "terms_sec6_text": "Vragen over betalingen of terugbetalingen? Stuur een e-mail naar info@BrightNews.online. Vermeld in je bericht het e-mailadres van je account en het adres/rekeningnummer waarop we het geld kunnen storten.",
     "copied": "Gekopieerd!",
     "colofon_val_trade": "BrightNews",
     "colofon_val_address_full": "Vossenstraat 19, 6286BW Nijswiller",
@@ -178,6 +180,8 @@ window.translations = {
   },
 
   "en": {
+    "terms_sec6_title": "6. Refunds & Contact",
+    "terms_sec6_text": "Questions about payments or refunds? Email info@BrightNews.online. Include your account email and the address/account number for the refund.",
     "privacy_header_title": "Privacy & Clarity ✨",
     "privacy_header_subtitle": "How we protect your data at BrightNews.",
     "copied": "Copied!",
@@ -354,6 +358,8 @@ window.translations = {
   },
 
   "de": {
+    "terms_sec6_title": "6. Rückerstattungen & Kontakt",
+    "terms_sec6_text": "Fragen zu Zahlungen? Mailen Sie an info@BrightNews.online. Geben Sie Ihre Account-E-Mail und die Bankverbindung für die Erstattung an.",
     "privacy_header_title": "Datenschutz & Klarheit ✨",
     "privacy_header_subtitle": "Wie wir Ihre Daten bei BrightNews schützen.",
     "colofon_val_trade": "BrightNews",
@@ -529,6 +535,8 @@ window.translations = {
   },
 
   "fr": {
+    "terms_sec6_title": "6. Remboursements & Contact",
+    "terms_sec6_text": "Questions sur les paiements ? Contactez info@BrightNews.online. Précisez l'e-mail de votre compte et les coordonnées pour le remboursement.",
     "privacy_header_title": "Confidentialité et Clarté ✨",
     "privacy_header_subtitle": "Comment nous protégeons vos données chez BrightNews.",
     "colofon_val_trade": "BrightNews",
@@ -705,6 +713,8 @@ window.translations = {
 
   "es": {
     "colofon_val_trade": "BrightNews",
+    "terms_sec6_title": "6. Reembolsos y Contacto",
+    "terms_sec6_text": "¿Dudas sobre pagos? Escribe a info@BrightNews.online. Incluye el email de tu cuenta y los datos para el reembolso.",
     "colofon_val_address_full": "Vossenstraat 19, 6286BW Nijswiller",
     "colofon_label_odr": "Resolución de litigios",
     "colofon_link_odr": "Plataforma ODR de la UE",
