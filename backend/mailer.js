@@ -23,7 +23,7 @@ async function sendSubscriptionConfirmation(userEmail, language = 'en') {
 
     // Bepaal de paden naar de PDF's
     const pdfPath = isEn
-        ? path.join(__dirname, '../assets/documents/terms-conditions-en.pdf')
+        ? path.join(__dirname, '../assets/documents/Terms and Conditions BrightNews.online.pdf')
         : path.join(__dirname, '../assets/documents/voorwaarden.pdf');
 
     // Controleer of de PDF echt bestaat voordat we proberen te mailen
@@ -40,7 +40,7 @@ async function sendSubscriptionConfirmation(userEmail, language = 'en') {
             : 'Bedankt voor je inschrijving. Je vindt onze voorwaarden in de bijlage.',
         attachments: [
             {
-                filename: isEn ? 'BrightNews_Terms_Conditions.pdf' : 'BrightNews_Voorwaarden.pdf',
+                filename: isEn ? 'Terms and Conditions BrightNews.online.pdf' : 'BrightNews_Voorwaarden.pdf',
                 path: pdfPath
             }
         ]

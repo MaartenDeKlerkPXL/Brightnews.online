@@ -8,7 +8,7 @@ async function generate() {
     try {
         const doc = new PDFDocument({ margin: 50 });
         const outputDir = path.join(__dirname, '../assets/documents');
-        const filePath = path.join(outputDir, 'terms-conditions-en.pdf');
+        const filePath = path.join(outputDir, 'Terms and Conditions BrightNews.online.pdf');
 
         if (!fs.existsSync(outputDir)) {
             fs.mkdirSync(outputDir, { recursive: true });
