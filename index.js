@@ -219,82 +219,45 @@ function renderLijst(artikelen) {
     const container = document.getElementById('news-container');
     const detailView = document.getElementById('detail-view');
     const detailNav = document.getElementById('detail-navigation');
+    const filterWrapper = document.querySelector('.filter-wrapper');
 
-    artikelen.forEach((artikel, index) => {
-        const veiligId = artikel.id || `old-${index}`;
-        const card = document.createElement('div');
-        card.className = 'news-card';
-        card.style.cursor = 'pointer';
-
-        const imgSrc = artikel.image || 'https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80';
-
-        // AANPASSING: alt="${artikel.image_alt || artikel.title}" toegevoegd
-        card.innerHTML = `
-    <img src="${imgSrc}" 
-         class="card-img" 
-         alt="${artikel.image_alt || artikel.title}" 
-         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80';">
-    <div class="card-content">
-        <h3>${artikel.title}</h3>
-        <p>${artikel.summary ? artikel.summary.substring(0, 85) + '...' : ''}</p>
-    </div>`;
-
-        card.addEventListener('click', () => {
-            window.history.pushState({}, '', `?id=${veiligId}`);
-            window.toonDetail(veiligId);
-        });
-
-        container.appendChild(card);
-    });
-
-    // DE FIX: Als deze elementen niet bestaan (zoals op de prijzenpagina), stop dan direct!
-    if (!container || !detailView) {
-        console.log("Geen nieuws-container gevonden. Waarschijnlijk ben je niet op de Home pagina. 👍");
+    // 1. ARCHITECT CHECK: Als de container niet bestaat, stop direct.
+    // Dit voorkomt de "appendChild of null" error op andere pagina's.
+    if (!container) {
+        console.log("Bright News: Geen nieuws-container gevonden. (Privacy/Prijzen pagina)");
         return;
     }
 
-    // De rest van je code...
+    // 2. Initialiseer weergave
+    container.innerHTML = '';
     container.style.display = 'grid';
-    detailView.style.display = 'none';
-
-    // Zoek dit stukje in renderLijst:
-    container.style.display = 'grid';
-    detailView.style.display = 'none';
+    if (detailView) detailView.style.display = 'none';
     if (detailNav) detailNav.style.display = 'none';
+    if (filterWrapper) filterWrapper.style.display = 'block';
 
-// VOEG DIT TOE:
-    const filterWrapper = document.querySelector('.filter-wrapper');
-    if (filterWrapper) filterWrapper.style.display = 'block'; // Of 'flex' als je dat gebruikt
-
-    if (!container || !detailView) return;
-
-    // Voorkom flikkeren door container even onzichtbaar te maken als we gaan scrollen
+    // 3. Afhandeling van scroll-positie (voorkom flikkeren)
     const savedPos = sessionStorage.getItem('brightScrollPos');
     if (savedPos) container.style.opacity = '0';
 
-    container.style.display = 'grid';
-    detailView.style.display = 'none';
-    if (detailNav) detailNav.style.display = 'none';
-
-    container.innerHTML = '';
-
+    // 4. Bouw de kaarten
     artikelen.forEach((artikel, index) => {
         const veiligId = artikel.id || `old-${index}`;
         const card = document.createElement('div');
         card.className = 'news-card';
         card.style.cursor = 'pointer';
 
-        // Zoek deze regel in renderLijst:
         const imgSrc = artikel.image || 'https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80';
+        const imgAlt = artikel.image_alt || artikel.title || 'Bright News';
+
         card.innerHTML = `
-    <img src="${imgSrc}" 
-         class="card-img" 
-         alt="${artikel.title}" 
-         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80';">
-    <div class="card-content">
-        <h3>${artikel.title}</h3>
-        <p>${artikel.summary ? artikel.summary.substring(0, 85) + '...' : ''}</p>
-    </div>`;
+            <img src="${imgSrc}" 
+                 class="card-img" 
+                 alt="${imgAlt}" 
+                 onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80';">
+            <div class="card-content">
+                <h3>${artikel.title}</h3>
+                <p>${artikel.summary ? artikel.summary.substring(0, 85) + '...' : ''}</p>
+            </div>`;
 
         card.addEventListener('click', () => {
             window.history.pushState({}, '', `?id=${veiligId}`);
@@ -304,11 +267,11 @@ function renderLijst(artikelen) {
         container.appendChild(card);
     });
 
+    // 5. Herstel scroll-positie
     if (savedPos && !window.location.search.includes('id=')) {
-        // Gebruik requestAnimationFrame voor soepelere afhandeling dan setTimeout
         requestAnimationFrame(() => {
             window.scrollTo({ top: parseInt(savedPos), behavior: 'instant' });
-            container.style.opacity = '1'; // Maak weer zichtbaar NA de scroll
+            container.style.opacity = '1';
             sessionStorage.removeItem('brightScrollPos');
         });
     } else {
