@@ -9,8 +9,9 @@
         <link rel="stylesheet" href="css/components.css">
         <link rel="stylesheet" href="css/pages/profiel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="index.js"></script>
     <script src="data/translations.js"></script>
+    <script src="index.js"></script>
+    <script src="js/auth.js"></script>
 </head>
 <body>
 <div id="delete-modal" class="custom-modal" style="display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); align-items: center; justify-content: center; backdrop-filter: blur(5px);">
@@ -278,7 +279,6 @@
 
     window.supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 </script>
-<script src="js/auth.js"></script>
 <script>
     function togglePassword(event, inputId) {
         if (event) event.preventDefault();
@@ -299,6 +299,55 @@
         } else {
             console.error("Fout: Element #mobileMenu niet gevonden!");
         }
+    }
+</script>
+<script>
+    window.translations = {
+        en: {
+            profile_title: "Your Profile",
+            btn_logout: "Log Out",
+            btn_delete_account: "Delete Account",
+            status_label: "Account Status",
+            badge_premium: "Premium Member ✨",
+            sub_active_until: "Your {plan} access is active until {date}.",
+            btn_cancel_renewal: "Cancel Auto-Renewal",
+        },
+        nl: {
+            profile_title: "Jouw Profiel",
+            btn_logout: "Uitloggen",
+            btn_delete_account: "Account Verwijderen",
+            status_label: "Account Status",
+            badge_premium: "Premium Member ✨",
+            sub_active_until: "Je {plan} toegang is actief tot {date}.",
+            btn_cancel_renewal: "Automatische verlenging opzeggen",
+        },
+        de: {
+            profile_title: "Dein Profil",
+            btn_logout: "Abmelden",
+            btn_delete_account: "Konto löschen",
+            status_label: "Kontostatus",
+            badge_premium: "Premium-Mitglied ✨",
+            sub_active_until: "Ihr {plan}-Zugang ist aktiv bis zum {date}.",
+            btn_cancel_renewal: "Automatische Verlängerung kündigen",
+        },
+        fr: {
+            profile_title: "Votre Profil",
+            btn_logout: "Déconnexion",
+            btn_delete_account: "Supprimer le compte",
+            status_label: "Statut du compte",
+            badge_premium: "Membre Premium ✨",
+            sub_active_until: "Votre accès {plan} est actif jusqu'au {date}.",
+            btn_cancel_renewal: "Annuler le renouvellement automatique",
+        },
+        es: {
+            profile_title: "Tu Perfil",
+            btn_logout: "Cerrar sesión",
+            btn_delete_account: "Eliminar cuenta",
+            status_label: "Estado de la cuenta",
+            badge_premium: "Miembro Premium ✨",
+            sub_active_until: "Tu acceso {plan} está activo hasta el {date}.",
+            btn_cancel_renewal: "Cancelar renovación automática",
+        },
     }
 </script>
 <footer class="main-footer">

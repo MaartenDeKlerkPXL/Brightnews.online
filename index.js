@@ -3,40 +3,33 @@ window.huidigeTaal = localStorage.getItem('selectedLanguage') || 'nl';
 window.alleArtikelen = [];
 window.actieveFilters = [];
 
-// 2. De robuuste vertaal-helper
 function getT(key, fallback = "...") {
-    const lang = window.huidigeTaal;
+    const lang = window.huidigeTaal || localStorage.getItem('selectedLanguage') || 'nl';
+
     if (window.translations && window.translations[lang] && window.translations[lang][key]) {
         return window.translations[lang][key];
     }
-    // Alleen loggen als de app echt geladen is om ruis te voorkomen
-    if (window.appIsGeladen) console.warn(`Missing: ${key} [${lang}]`);
+
+    if (window.appIsGeladen) {
+        console.warn(`BrightNews: Key '${key}' niet gevonden in taal '${lang}'`);
+    }
     return fallback;
 }
 
 function vertaalStatischeTeksten(lang) {
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-        let rawKey = el.getAttribute('data-i18n');
-        if (!rawKey) return;
-
-        // Check of de key begint met [attribuut]
-        if (rawKey.startsWith('[')) {
-            const parts = rawKey.split(']'); // Split op het sluitende haakje
-            const attributeName = parts[0].substring(1); // Haal bijv. 'aria-label' eruit
-            const realKey = parts[1]; // Haal bijv. 'back_label' eruit
-
-            const vertaling = getT(realKey);
-            if (vertaling !== "...") {
-                el.setAttribute(attributeName, vertaling);
-            }
-        } else {
-            // Normale tekstvertaling
-            const vertaling = getT(rawKey);
+    const uitvoeren = () => {
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            let key = el.getAttribute('data-i18n');
+            const vertaling = getT(key);
             if (vertaling !== "...") {
                 el.innerHTML = vertaling;
             }
-        }
-    });
+        });
+    };
+
+    uitvoeren();
+    // Voer het na 200ms nog een keer uit voor elementen die door Supabase (auth.js) later zijn toegevoegd
+    setTimeout(uitvoeren, 200);
 }
 // 4. De enige echte Initialisatie functie
 async function initApp() {
@@ -346,48 +339,36 @@ function terugNaarOverzicht() {
     laadNieuws(huidigeTaal);
 }
 
-function wisselTaal(lang, labelTekst, event) {
-    renderFilterBar();
+async function wisselTaal(lang, labelTekst, event) {
     if (event) event.preventDefault();
 
-    // 1. Update dropdown
+    // 1. Update dropdown label
     const btn = document.getElementById('current-lang');
     if (btn && labelTekst) {
         btn.innerHTML = `${labelTekst} <span class="arrow">▼</span>`;
     }
 
-    // 2. Sla taal op
+    // 2. Synchroniseer de taal overal
     localStorage.setItem('selectedLanguage', lang);
+    localStorage.setItem('bright_lang', lang);
     window.huidigeTaal = lang;
-    vertaalStatischeTeksten(lang);
-    // 3. Update SEO Meta Tags (Nieuw)
-    // Update Description
-    const descriptionTag = document.querySelector('meta[name="description"]');
-    if (descriptionTag && translations[lang]?.meta_desc) {
-        descriptionTag.setAttribute("content", translations[lang].meta_desc);
-    }
-
-    // Update Keywords
-    const keywordsTag = document.querySelector('meta[name="keywords"]');
-    if (keywordsTag && translations[lang]?.meta_keys) {
-        keywordsTag.setAttribute("content", translations[lang].meta_keys);
-    }
-
-    // Update HTML lang attribuut voor browsers/zoekmachines
     document.documentElement.lang = lang;
 
-    // 4. Vertaal statische teksten direct (Interface)
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        el.innerHTML = getT(key);
-    });
+    // 3. Vertaal de statische knoppen en teksten
+    vertaalStatischeTeksten(lang);
 
-    // 5. Update de content (Nieuws JSON ophalen)
+    // 4. HIER GEBEURT DE MAGIE: Update de dynamische profiel-teksten
+    if (window.supabaseClient) {
+        const { data: { user } } = await window.supabaseClient.auth.getUser();
+        if (user && typeof updateProfileUI === 'function') {
+            await updateProfileUI(user); // Dit roept renderSubscriptionUI opnieuw aan met de nieuwe taal!
+        }
+    }
+
+    // 5. Update het nieuws (indien op homepagina)
     if (typeof laadNieuws === 'function') {
         laadNieuws(lang);
     }
-    renderFilterBar();
-    laadNieuws(lang);
 }
 // 1. Initialiseer een globale lijst voor actieve filters
 window.actieveFilters = [];
