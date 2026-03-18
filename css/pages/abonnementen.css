@@ -171,29 +171,31 @@
 .btn-secondary:hover { background: #e9ecef; }
 
 /* --- 7. MOBIEL (De Fix) --- */
-/* --- 7. MOBIEL (De Fix voor de volgorde) --- */
-@media (max-width: 950px) {
+@media (max-width: 768px) {
     .pricing-page-wrapper {
-        padding-top: 120px !important;
-        padding-bottom: 2100px !important;
+        padding-top: 100px !important;
+        padding-bottom: 60px !important; /* Terug naar een normale waarde */
+        min-height: auto !important;     /* Laat de pagina groeien met de content */
+        overflow: visible !important;    /* Voorkom dat schaduwen of content worden afgekapt */
     }
 
     .pricing-grid {
         flex-direction: column !important;
         align-items: center !important;
-        gap: 30px !important;
+        gap: 40px !important;           /* Meer ruimte tussen de kaartjes onderling */
     }
 
     .price-card {
-        width: 100%;
+        width: 90% !important;          /* Zorgt voor ademruimte aan de zijkanten */
         max-width: 380px;
         transform: none !important;
-        padding: 40px 25px;
-        /* De 'order' regel is hier verwijderd zodat de HTML-volgorde wordt aangehouden */
     }
 
-    .price-card.popular {
-        /* We houden de styling van de populaire kaart, maar hij blijft op zijn plek */
-        margin: 10px 0;
+    /* Juiste selector voor jouw footer */
+    .main-footer {
+        margin-top: 40px !important;    /* Een gezonde afstand tot de laatste kaart */
+    }
+    .popular-badge {
+        font-size: 0.7rem;
     }
 }
