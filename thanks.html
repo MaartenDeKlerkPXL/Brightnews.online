@@ -119,7 +119,7 @@
 
             <!--            <a href="Home.html" class="logo">Bright<span>News</span></a>-->
 
-            <a href="Home.html"><img src="assets/brightnews-logo.png" height="200" width="300"/></a></div>
+            <a href="Home.html"><img src="assets/brightnews-logo.png" height="200" width="300" class="nav-logo"/></a></div>
         <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu openen">
             <span></span><span></span><span></span>
         </button>
@@ -260,6 +260,19 @@
             vertaalStatischeTeksten(savedLang);
         }
     });
+</script>
+<script>
+    function toggleMobileMenu() {
+        const menu = document.getElementById('mobileMenu');
+        const hamburger = document.querySelector('.hamburger');
+
+        if (menu) {
+            menu.classList.toggle('active');
+            console.log("Menu status:", menu.classList.contains('active') ? "Open" : "Dicht");
+        } else {
+            console.error("Fout: Element #mobileMenu niet gevonden!");
+        }
+    }
 </script>
 </body>
 </html>
