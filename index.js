@@ -49,6 +49,13 @@ async function initApp() {
     window.huidigeTaal = savedLang;
     document.documentElement.lang = savedLang;
 
+    const urlParams = new URLSearchParams(window.location.search);
+    const ref = urlParams.get('ref');
+    if (ref && ref !== 'gast') {
+        localStorage.setItem('bright_referrer', ref);
+        console.log("Referrer opgeslagen:", ref);
+    }
+
     // Update taalkiezer label
     const labels = { 'nl': '🇳🇱 Nederlands', 'en': '🇺🇸 English', 'de': '🇩🇪 Deutsch', 'fr': '🇫🇷 Français', 'es': '🇪🇸 Español' };
     const btn = document.getElementById('current-lang');
@@ -149,6 +156,12 @@ async function toonDetail(id) {
 
     const userStatus = await checkUser();
 
+    const currentUser = (await window.supabaseClient?.auth.getUser())?.data?.user;
+    const refCode = currentUser ? currentUser.id : 'gast';
+    const referralUrl = `${window.location.origin}${window.location.pathname}?ref=${refCode}&id=${id}`;
+
+    window.currentArticleUrl = referralUrl;
+
     if (detailNav) detailNav.style.display = 'block';
     container.style.display = 'none';
     detailView.style.display = 'block';
@@ -163,6 +176,7 @@ async function toonDetail(id) {
             const i18nKey = userStatus.ingelogd ? 'btn_upgrade_now' : 'btn_login_to_read';
             paywallHTML = `<div class="paywall-overlay"><div class="paywall-content"><h3 data-i18n="premium_title">${getT('premium_title')}</h3><p data-i18n="premium_text">${getT('premium_text')}</p><button onclick="window.location.href='profiel.html'" class="btn-primary-editorial" data-i18n="${i18nKey}">${getT(i18nKey)}</button></div></div>`;
         }
+        setTimeout(() => updateShareLinks(artikel.title, referralUrl), 150);
     }
     const shareHtml = `
     <div class="share-section">
@@ -325,6 +339,13 @@ function copyLink(event) {
     const url = window.location.href;
     const btn = document.getElementById('mainShareBtn');
     const btnText = document.getElementById('share-btn-text');
+
+    if (event) event.stopPropagation();
+
+    const urlToCopy = window.currentArticleUrl || window.location.href;
+
+    navigator.clipboard.writeText(urlToCopy).then(() => {
+    });
 
     navigator.clipboard.writeText(url).then(() => {
         // Haal vertaling op voor "Gekopieerd!"
