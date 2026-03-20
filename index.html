@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNFX3R9BQV"></script>
@@ -13,246 +13,196 @@
     <link rel="icon" type="image/png" href="assets/brightnews-logo-faviconv5.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrightNews - Launch</title>
-<script src="index.js"></script>
-    <style>
-        :root {
-            --bright-green: #32cc32;
-            --light-bg: #ffffff;
-            --dark-text: #1a1a1a;
+    <meta name="description" content="Stap in de wereld van BrightNews, waar positiviteit de norm is. Ontdek hoe wij met AI de mooiste en meest hoopvolle verhalen verzamelen. Geen negativiteit, alleen puur optimisme en inspiratie om je dag te laten stralen.">
+    <meta name="keywords" content="BrightNews, uitsluitend positief nieuws, hoopvolle verhalen, optimisme, dagelijkse inspiratie, goed nieuws AI, stralende toekomst, constructieve journalistiek, Maarten de Klerk">
+    <meta name="description" content="Step into the world of BrightNews, where positivity is the standard. Discover how our AI gathers the most beautiful and hopeful stories of the day. No negativity, just pure optimism and inspiration to make your day shine.">
+    <meta name="keywords" content="BrightNews, only positive news, hopeful stories, optimism, daily inspiration, good news AI, bright future, constructive journalism, uplifting content">
+    <meta name="description" content="Treten Sie ein in die Welt von BrightNews, in der Positivität die Norm ist. Erfahren Sie, wie unsere KI die schönsten und hoffnungsvollsten Geschichten des Tages sammelt. Keine Negativität, nur reiner Optimismus und Inspiration.">
+    <meta name="keywords" content="BrightNews, nur positive Nachrichten, hoffnungsvolle Geschichten, Optimismus, tägliche Inspiration, gute Nachrichten KI, strahlende Zukunft, konstruktiver Journalismus">
+    <meta name="description" content="Entrez dans le monde de BrightNews, où la positivité est la règle. Découvrez comment notre IA rassemble les histoires les plus belles et les plus porteuses d'espoir. Pas de négativité, juste un pur optimisme pour illuminer votre journée.">
+    <meta name="keywords" content="BrightNews, actualités positives uniquement, histoires d'espoir, optimisme, inspiration quotidienne, IA bonnes nouvelles, avenir radieux, journalisme constructif">
+    <meta name="description" content="Entra en el mundo de BrightNews, donde la positividad es la norma. Descubre cómo nuestra IA recopila las historias más bellas y esperanzadoras del día. Sin negatividad, solo puro optimismo e inspiración para hacer brillar tu día.">
+    <meta name="keywords" content="BrightNews, solo noticias positivas, historias de esperanza, optimismo, inspiración diaria, IA de buenas noticias, futuro brillante, periodismo constructivo">
+    <title>BrightNews | Jouw Dagelijkse Dosis Positiviteit</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages/index.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/pages/artikel.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        if (!window.supabaseClient) {
+            const SB_URL = 'https://rquuqypgaannrakdrabj.supabase.co';
+            const SB_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJxdXVxeXBnYWFubnJha2RyYWJqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA4MTQyODUsImV4cCI6MjA4NjM5MDI4NX0.-H5ZIcLXBflqKvC0VQGlVGIX29G-nceC9ak5IrhJCzg';
+            window.supabaseClient = supabase.createClient(SB_URL, SB_KEY);
         }
+    </script>
 
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: var(--light-bg);
-            font-family: 'Segoe UI', Roboto, sans-serif;
-            color: var(--dark-text);
-            text-align: center;
-        }
-
-        .container {
-            padding: 20px;
-            max-width: 800px;
-            width: 90%;
-        }
-
-        .logo {
-            width: 100%;
-            max-width: 400px;
-            height: auto;
-            margin-bottom: 20px;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin: 10px 0;
-            text-transform: uppercase;
-        }
-
-        .highlight { color: var(--bright-green); }
-
-        /* Countdown Styles */
-        #countdown {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 30px 0;
-            font-weight: bold;
-        }
-
-        .time-part {
-            display: flex;
-            flex-direction: column;
-            font-size: 2rem;
-        }
-
-        .time-part span {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            color: #666;
-        }
-
-        /* Subscription Box */
-        .subscribe-box {
-            margin-top: 40px;
-            background: #f4f4f4;
-            padding: 25px;
-            border-radius: 8px;
-        }
-
-        input[type="email"] {
-            padding: 12px;
-            width: 250px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            outline: none;
-        }
-
-        button {
-            padding: 12px 25px;
-            background-color: var(--bright-green);
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        button:hover { opacity: 0.9; }
-
-        /* Mobile Optimization */
-        @media (max-width: 600px) {
-            .logo {
-                max-width: 90vw;
-                margin-bottom: 30px;
-            }
-            h1 { font-size: 1.8rem; }
-            #countdown { gap: 10px; }
-            .time-part { font-size: 1.5rem; }
-            input[type="email"] { width: 100%; margin-bottom: 10px; }
-            .subscribe-box { padding: 15px; }
-        }
-        /* Starttoestand: tekst is zichtbaar en de transitie duurt 0.5 seconden */
-        .fade-text {
-            opacity: 1;
-            transition: opacity 0.5s ease-in-out;
-        }
-
-        /* Toestand waarbij de tekst onzichtbaar is */
-        .fade-out {
-            opacity: 0;
-        }
-    </style>
+    <script src="js/auth.js"></script>
+    <script src="data/translations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
-<div class="container">
-    <img src="assets/brightnews-logo.png" alt="BrightNews Logo" class="logo">
+<header>
+    <nav class="container">
+        <div class="nav-left-group">
+            <div class="dropdown language-picker">
+                <button class="dropbtn" id="current-lang">
+                    🇺🇸 English <span class="arrow">▼</span>
+                </button>
+                <div class="dropdown-content">
+                        <a href="#" onclick="wisselTaal('en', '🇺🇸 English', event)">🇺🇸 English</a>
+                    <a href="#" onclick="wisselTaal('nl', '🇳🇱 Nederlands', event)">🇳🇱 Nederlands</a>
+                    <a href="#" onclick="wisselTaal('de', '🇩🇪 Deutsch', event)">🇩🇪 Deutsch</a>
+                    <a href="#" onclick="wisselTaal('fr', '🇫🇷 Français', event)">🇫🇷 Français</a>
+                    <a href="#" onclick="wisselTaal('es', '🇪🇸 Español', event)">🇪🇸 Español</a>
+                </div>
+            </div>
 
-    <p id="bright-hero" class="fade-text">Discover the bright side of the world. 🇬🇧</p>
-    <div id="countdown">
-        <div class="time-part"><div id="days">00</div><span>Days</span></div>
-        <div class="time-part"><div id="hours">00</div><span>Hours</span></div>
-        <div class="time-part"><div id="minutes">00</div><span>Min</span></div>
-        <div class="time-part"><div id="seconds">00</div><span>Sec</span></div>
+            <!--            <a href="index.html" class="logo">Bright<span>News</span></a>-->
+
+            <a href="index.html"><img src="assets/brightnews-logo.png" height="200" width="300" class="nav-logo"/></a></div>
+        <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu openen">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="mobileMenu">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="over-ons.html" data-i18n="nav_about">Over Ons</a></li>
+            <li><a href="abonnementen.html" data-i18n="nav_premium">Abonnementen</a></li>
+
+            <li class="nav-profile-desktop">
+                <a href="profiel.html" class="profile-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a>
+            </li>
+
+            <li class="nav-profile-mobile">
+                <a href="profiel.html" class="profile-link-text"  data-i18n="nav_profile">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    Profiel
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+<main class="container">
+    <div class="filter-wrapper container">
+        <div id="category-filters" class="category-bar">
+        </div>
+    </div>
+    <div id="detail-navigation" style="display: none; padding-top: 20px;">
+        <div class="top-nav-alignment" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <button onclick="terugNaarOverzicht()" class="back-btn-pill" data-i18n="[aria-label]back_label">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                <span id="back-btn-text" data-i18n="back">Back</span>
+            </button>
+        </div>
     </div>
 
-    <h1>Launching on <span class="highlight">March 20, 2026</span></h1>
+    <div id="detail-view" class="detail-container" style="display:none;"></div>
 
-    <div class="subscribe-box">
-        <p>Want to be notified when we go live?</p>
-        <form id="notifyForm">
-            <input type="email" id="email" placeholder="Your email address" required>
-            <button type="submit">Keep me updated</button>
-        </form>
-        <p id="msg" style="display:none; font-size: 0.9rem; color: var(--bright-green);"></p>
+    <div id="news-container" class="grid-container">
+        <p data-i18n="index_loading">Laden van positieve vibes...</p>
+    </div>
+</main>
+
+<script src="index.js"></script>
+<script type="module" src="js/auth.js"></script>
+<footer class="main-footer">
+    <div class="container footer-grid">
+        <div class="footer-about">
+            <div class="footer-logo">Bright<span>News</span></div>
+            <p data-i18n="footer_text">
+                Founded and developed by <strong>Maarten de Klerk</strong>.
+                Maarten is the owner and lead developer of BrightNews,
+                dedicated to spreading positive vibes through tech.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h4 data-i18n="footer_explore">Explore</h4>
+            <ul>
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="over-ons.html" data-i18n="footer_mission">Our Mission</a></li>
+                <li><a href="abonnementen.html" data-i18n="nav_premium">Premium</a></li>
+                <li><a href="profiel.html" data-i18n="footer_acc">My Account</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h4 data-i18n="footer_community">Community</h4>
+            <ul>
+                <li><a href="Privacy.html" data-i18n="footer_privacy">Privacy Policy</a></li>
+                <li><a href="algemeene-voorwaarden.html" data-i18n="footer_service_terms">Terms of Service</a></li>
+                <li><a href="contact.html" data-i18n="footer_support">Contact Support</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-socials">
+            <h4 data-i18n="footer_follow">Follow BrightNews</h4>
+            <div class="social-icons">
+                <a href="https://instagram.com/maartendeklerk" target="_blank" class="social-btn">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://linkedin.com/in/maartendeklerk" target="_blank" class="social-btn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/MaartenDeKlerkPXL/Brightnews.online" target="_blank" class="social-btn">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:info@BrightNews.online?subject=Vraag%20over%20BrightNews" class="social-btn">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <div class="framework-badge">
+                <span data-i18n="footer_no_frameworks">100% Vanilla JS • No Frameworks</span>
+            </div>
+        </div>
     </div>
 
-    <div style="margin-top: 50px; border-top: 1px solid #eee; padding-top: 20px;">
-        <p style="font-size: 0.8rem; opacity: 0.6;">BrightNews <sup>&copy;</sup> 2026 - Positivity First</p>
+    <div class="footer-bottom">
+        <p data-i18n="footer_created_by">&copy; 2026 BrightNews • All rights reserved • Created with 💚 in the Netherlands</p>
+    </div>
+</footer>
+<div id="cookie-banner" class="cookie-overlay" style="display: none;">
+    <div class="cookie-content">
+        <div class="cookie-icon">🍪</div>
+        <div class="cookie-text">
+            <h3 data-i18n="cookie_title">Cookies & Positiviteit 🍪</h3>
+            <p>
+                <span data-i18n="cookie_text">We gebruiken cookies voor een soepele ervaring.</span>
+                <a href="Privacy.html" style="color: var(--bright-green); text-decoration: underline;" data-i18n="cookie_more">Lees meer</a>
+            </p>
+        </div>
+        <div class="cookie-buttons">
+            <button onclick="acceptCookies()" class="btn-cookie-accept" data-i18n="btn_accept">Accepteren</button>
+            <button onclick="declineCookies()" class="btn-cookie-decline" data-i18n="btn_decline">Alleen noodzakelijk</button>
+        </div>
     </div>
 </div>
-
 <script>
+    function toggleMobileMenu() {
+        const menu = document.getElementById('mobileMenu');
+        const hamburger = document.querySelector('.hamburger');
 
-    function portalCheck(e) {
-        e.preventDefault();
-        alert("Beveiligde toegang vereist voor beheer.");
-        const user = prompt("Gebruikersnaam:");
-        const pass = prompt("Wachtwoord:");
-        if (user === "Maarten" && pass === "B2026") {
-            window.location.href = "Home.html";
+        if (menu) {
+            menu.classList.toggle('active');
+            console.log("Menu status:", menu.classList.contains('active') ? "Open" : "Dicht");
         } else {
-            alert("Toegang geweigerd.");
+            console.error("Fout: Element #mobileMenu niet gevonden!");
         }
     }
-    window.portalCheck = portalCheck;
-    // Maak de functie globaal beschikbaar
-    const hero = document.getElementById('bright-hero');
-    const texts = [
-        { t: "Ontdek de zonnige kant van de wereld.", f: "🇳🇱" },
-        { t: "Discover the bright side of the world.", f: "🇬🇧" },
-        { t: "Entdecken Sie die Sonnenseite der Welt.", f: "🇩🇪" },
-        { t: "Découvrez le bon côté du monde.", f: "🇫🇷" },
-        { t: "Descubre el lado brillante del mundo.", f: "🇪🇸" }
-    ];
-
-    let i = 0;
-    setInterval(() => {
-        // 1. Start fade-out animatie
-        hero.classList.add('fade-out');
-
-        // 2. Wacht 500ms (duur van de CSS transitie)
-        setTimeout(() => {
-            // 3. Verander de tekst en het vlaggetje
-            i = (i + 2) % texts.length;
-            hero.textContent = `${texts[i].t} ${texts[i].f}`;
-
-            // 4. Start fade-in animatie
-            hero.classList.remove('fade-out');
-        }, 500); // Deze tijd moet gelijk zijn aan de CSS 'transition' tijd
-
-    }, 4000); // Elke 3 seconden start de cyclus
-    // 1. Countdown Logic (ongewijzigd)
-    const launchDate = new Date("March 20, 2026 12:00:00 UTC").getTime();
-    const timer = setInterval(() => {
-        const now = new Date().getTime();
-        const diff = launchDate - now;
-        if (diff < 0) {
-            clearInterval(timer);
-            document.getElementById("countdown").innerHTML = "WE ARE LIVE!";
-            return;
-        }
-        document.getElementById("days").innerText = Math.floor(diff / (1000 * 60 * 60 * 24));
-        document.getElementById("hours").innerText = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        document.getElementById("minutes").innerText = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-        document.getElementById("seconds").innerText = Math.floor((diff % (1000 * 60)) / 1000);
-    }, 1000);
-
-    // 2. Form Logic via Formspree (De 'Bright' manier voor statische sites)
-    const form = document.getElementById('notifyForm');
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        const emailValue = document.getElementById('email').value;
-        const msg = document.getElementById('msg');
-        const button = form.querySelector('button');
-
-        button.disabled = true;
-        button.innerText = "Sending...";
-
-        // Gebruik je eigen Formspree ID (ga naar formspree.io voor een gratis account)
-        // OF gebruik tijdelijk een andere service
-        fetch('https://formspree.io/f/xzdawllw', {
-            method: 'POST',
-            headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email: emailValue })
-        })
-            .then(response => {
-                if (response.ok) {
-                    msg.innerText = "Success! We'll keep you updated.";
-                    msg.style.display = "block";
-                    form.reset();
-                } else {
-                    msg.innerText = "Oops! Something went wrong.";
-                    msg.style.display = "block";
-                }
-            })
-            .catch(err => {
-                console.error("Error:", err);
-                msg.innerText = "Error connecting to server.";
-                msg.style.display = "block";
-            })
-            .finally(() => {
-                button.disabled = false;
-                button.innerText = "Keep me updated";
-            });
-    });
 </script>
-<script defer src="backend/subscribe.js"></script>
 </body>
 </html>
