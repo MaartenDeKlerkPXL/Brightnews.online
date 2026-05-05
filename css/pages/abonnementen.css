@@ -1,20 +1,41 @@
-/* --- 1. DE BASIS WRAPPER --- */
+/* --- 1. DE WRAPPER FIX --- */
 .pricing-page-wrapper {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
+    /* Verander flex naar block. Flexbox i.c.m. vh-hoogte veroorzaakt vaak
+       dat de container niet meegroeit met absolute/scaled kinderen. */
+    display: block !important;
     width: 100% !important;
     min-height: 100vh !important;
-    background-color: var(--light-bg) !important; /* Zacht, modern grijs */
+    height: auto !important; /* Forceer groei */
+    background-color: var(--light-bg) !important;
     box-sizing: border-box !important;
-
-    /* Perfecte balans voor Nav en Footer */
     padding-top: 140px !important;
     padding-bottom: 100px !important;
-    overflow: hidden;
+    overflow: visible !important;
 }
 
-/* --- 2. DE INTRO --- */
+/* --- 2. DE GRID AANPASSING --- */
+.pricing-grid {
+    /* Houd de grid flexibel, maar zorg dat hij de volledige breedte pakt
+       binnen de nu 'block' wrapper */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: stretch !important;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto !important; /* Centreer de grid in de block-wrapper */
+    padding: 20px !important;
+}
+
+/* --- 3. DE FOOTER FORCEERMIDDEL --- */
+.main-footer {
+    display: block !important;
+    position: relative !important;
+    clear: both !important;
+    /* De marge werkt nu wel omdat de wrapper (main) nu wel een correcte hoogte heeft */
+    margin-top: 15rem !important;
+}
+
 .pricing-intro {
     text-align: center;
     margin-bottom: 60px;
@@ -29,7 +50,6 @@
     margin-bottom: 10px;
 }
 
-/* --- 3. DE GRID --- */
 .pricing-grid {
     display: flex !important;
     justify-content: center !important;
@@ -39,9 +59,10 @@
     max-width: 1200px;
     padding: 20px !important;
     box-sizing: border-box;
+    /* VOEG DIT TOE: Dit duwt de onderkant van de container fysiek omlaag */
+    margin-bottom: 50px !important;
 }
 
-/* --- 4. DE KAARTEN (The "Bright" Look) --- */
 .price-card {
     background: #ffffff;
     border: 1px solid rgba(0,0,0,0.05);
@@ -170,32 +191,70 @@
 
 .btn-secondary:hover { background: #e9ecef; }
 
-/* --- 7. MOBIEL (De Fix) --- */
+/* --- 7. VOLLEDIGE MOBIEL FIX ✨ --- */
 @media (max-width: 768px) {
+    /* De wrapper moet meegroeien met de gestapelde kaarten */
     .pricing-page-wrapper {
+        display: block !important; /* Block werkt op mobiel stabieler voor hoogte-berekening */
+        height: auto !important;
+        min-height: 100vh !important;
         padding-top: 100px !important;
-        padding-bottom: 60px !important; /* Terug naar een normale waarde */
-        min-height: auto !important;     /* Laat de pagina groeien met de content */
-        overflow: visible !important;    /* Voorkom dat schaduwen of content worden afgekapt */
+        padding-bottom: 80px !important; /* Ruimte boven de footer */
+        overflow: visible !important;
     }
 
+    .pricing-intro {
+        margin-bottom: 40px;
+    }
+
+    .pricing-intro h1 {
+        font-size: 1.8rem;
+    }
+
+    /* De grid wordt een verticale kolom */
     .pricing-grid {
         flex-direction: column !important;
         align-items: center !important;
-        gap: 40px !important;           /* Meer ruimte tussen de kaartjes onderling */
+        gap: 50px !important; /* Ruimte tussen de kaarten onderling */
+        padding: 0 20px !important;
+        width: 100%;
     }
 
     .price-card {
-        width: 90% !important;          /* Zorgt voor ademruimte aan de zijkanten */
-        max-width: 380px;
+        width: 100% !important;
+        max-width: 340px;
+        padding: 40px 25px;
+        /* Reset transformaties van desktop om overlap te voorkomen */
         transform: none !important;
+        margin: 0 auto;
     }
 
-    /* Juiste selector voor jouw footer */
-    .main-footer {
-        margin-top: 40px !important;    /* Een gezonde afstand tot de laatste kaart */
+    /* Specifieke reset voor de populaire kaart op mobiel */
+    .price-card.popular {
+        transform: none !important; /* Geen schaling op mobiel, dat breekt de layout */
+        border: 2px solid var(--bright-green);
+        box-shadow: 0 15px 35px rgba(46, 204, 113, 0.15);
     }
+
+    .price-card.popular:hover {
+        transform: translateY(-5px) !important;
+    }
+
+    .price-amount {
+        font-size: 2.5rem;
+    }
+
     .popular-badge {
+        top: -12px;
         font-size: 0.7rem;
+        padding: 4px 15px;
+    }
+
+    /* Zorg dat de footer onderaan de flow blijft */
+    .main-footer {
+        position: relative !important;
+        display: block !important;
+        margin-top: 90rem !important;
+        z-index: 10;
     }
 }

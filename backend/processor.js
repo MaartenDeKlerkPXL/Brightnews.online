@@ -13,7 +13,7 @@ const FEEDS = [
     { name: 'Adventure-Journal.com', url: 'https://www.adventure-journal.com/feed/' },
     { name: 'Bright.nl', url: 'https://www.bright.nl/rss' },
     { name: 'BusinessInsider.com', url: 'https://www.businessinsider.com/rss' },
-    { name: 'Barefeetinthekitchen.com', url: 'barefeetinthekitchen.com/feed' },
+    { name: 'Barefeetinthekitchen.com', url: 'https://barefeetinthekitchen.com/feed' },
     { name: 'Foxsports.com', url: 'https://api.foxsports.com/v2/content/optimized-rss?partnerKey=MB0Wehpmuj2lUhuRhQaafhBjAJqaPU244mlTDK1i&size=30' },
     { name: 'Nature.com', url: 'https://www.nature.com/nature.rss' },
     { name: 'Goingzerowaste.com', url: 'https://www.goingzerowaste.com/feed/' },
@@ -39,13 +39,15 @@ const FEEDS = [
     { name: 'Lifehack.org', url: 'https://www.lifehack.org/feed' },
     { name: 'Hackslifestyle.com', url: 'https://hackslifestyle.com/feed/' },
     { name: 'Happierhuman.com', url: 'https://www.happierhuman.com/feed/' },
-    { name: '', url: '' },
+    { name: 'Mindbodygreen.com', url: 'https://www.mindbodygreen.com/rss/featured.xml' },
+    { name: 'Fortune.com', url: 'https://fortune.com/feed/fortune-feeds/?id=3230629' },
+    { name: 'GFmag.com', url: 'https://gfmag.com/feed/' },
 ];
 
 // 1. Categorie-specifieke Unsplash lijsten
 const categoryFallbacks = {
     'Tech': [
-        "https://images.https://images.unsplash.comphoto-1526374965328-7f61d4dc18c5?w=800&q=80",
+        "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80",
         "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80",
         "https://images.unsplash.com/photo-1550751827-4bd374c3f58b",
         "https://images.unsplash.com/photo-1576400883215-7083980b6193",
@@ -150,7 +152,7 @@ async function processNews() {
             console.log(`📡 Scannen: ${feedInfo.name}`);
             const feed = await parser.parseURL(feedInfo.url);
 
-            for (const item of feed.items.slice(0, 15)) {
+            for (const item of feed.items.slice(0, 30)) {
                 if (languages.nl.some(art => art.link === item.link)) {
                     continue;
                 }
@@ -185,24 +187,6 @@ async function processNews() {
                     if (isHtml || isVideo || isSmall) foundUrl = null;
                 }
 
-// 2. Anti-Dubbel Fallback Logica
-                let finalImage = foundUrl;
-
-                if (!finalImage) {
-                    const fallbackLijst = categoryFallbacks[category] || categoryFallbacks['General'];
-
-                    // Check bestaande data op schijf + nieuw toegevoegde artikelen in deze run
-                    const imagesOpSchijf = languages.nl.map(a => a.image);
-                    const imagesInGeheugen = Object.values(languages).flat().map(a => a.image);
-                    const alleGebruikteImages = [...imagesOpSchijf, ...imagesInGeheugen];
-
-                    let uniekeOpties = fallbackLijst.filter(img => !alleGebruikteImages.includes(img));
-
-                    if (uniekeOpties.length === 0) uniekeOpties = fallbackLijst;
-
-                    finalImage = uniekeOpties[Math.floor(Math.random() * uniekeOpties.length)];
-                }
-
                 try {
                     const chatResponse = await client.chat.complete({
                         model: 'mistral-small-latest',
@@ -225,21 +209,22 @@ async function processNews() {
                         const category = data.category || 'General';
                         const articleId = Date.now() + Math.random().toString(36).substr(2, 9);
 
-                        // 3. Slimme Anti-Dubbel Fallback Logica
-                        // let finalImage = foundUrl;
-                        //
-                        // if (!finalImage) {
-                        //     const fallbackLijst = categoryFallbacks[category] || categoryFallbacks['General'];
-                        //     // Kijk welke afbeeldingen al in de huidige data staan
-                        //     const gebruikteImages = languages.nl.map(a => a.image);
-                        //     // Filter de lijst: pak alleen foto's die we nog NIET gebruiken
-                        //     let uniekeOpties = fallbackLijst.filter(img => !gebruikteImages.includes(img));
-                        //
-                        //     // Als alles al een keer gebruikt is, reset de lijst
-                        //     if (uniekeOpties.length === 0) uniekeOpties = fallbackLijst;
-                        //
-                        //     finalImage = uniekeOpties[Math.floor(Math.random() * uniekeOpties.length)];
-                        // }
+                        let finalImage = foundUrl;
+
+                        if (!finalImage) {
+                            const fallbackLijst = categoryFallbacks[category] || categoryFallbacks['General'];
+
+                            // Check bestaande data op schijf + nieuw toegevoegde artikelen in deze run
+                            const imagesOpSchijf = languages.nl.map(a => a.image);
+                            const imagesInGeheugen = Object.values(languages).flat().map(a => a.image);
+                            const alleGebruikteImages = [...imagesOpSchijf, ...imagesInGeheugen];
+
+                            let uniekeOpties = fallbackLijst.filter(img => !alleGebruikteImages.includes(img));
+
+                            if (uniekeOpties.length === 0) uniekeOpties = fallbackLijst;
+
+                            finalImage = uniekeOpties[Math.floor(Math.random() * uniekeOpties.length)];
+                        }
 
                         Object.keys(languages).forEach(lang => {
                             languages[lang].unshift({
@@ -247,13 +232,15 @@ async function processNews() {
                                 title: data[lang].t,
                                 summary: data[lang].s,
                                 image_alt: data[lang].alt,
+                                meta_description: data[lang].meta_d, // Toevoegen!
+                                meta_keywords: data[lang].meta_k,    // Toevoegen!
                                 link: item.link,
                                 source: feedInfo.name,
                                 image: finalImage,
                                 date: new Date().toISOString(),
                                 category: category
                             });
-                            if (languages[lang].length > 50) languages[lang].pop();
+                            if (languages[lang].length > 150) languages[lang].pop();
                         });
                         console.log(`✨ Succes: ${item.title} toegevoegd.`);
                     }

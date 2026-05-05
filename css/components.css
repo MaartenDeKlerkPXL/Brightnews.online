@@ -844,6 +844,26 @@ html, body {
     height: 100%;
     margin: 0;
 }
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    gap: 40px;
+    padding: 60px 0;
+}
+.footer-legal-info {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+.framework-badge {
+    margin-top: 25px;
+    padding: 10px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
 
 /* 2. Maak van de body een flex-container die verticaal stapelt */
 body {

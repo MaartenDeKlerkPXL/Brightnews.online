@@ -1,0 +1,33 @@
+{
+  "name": "BrightNews ✨",
+  "short_name": "BrightNews",
+  "description": "Jouw dagelijkse dosis positief nieuws.",
+  "id": "index.html",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2ecc71",
+  "icons": [
+    {
+      "src": "assets/brightnews-logo-faviconv5.png",
+      "sizes": "400x400",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/brightnews-logo.png",
+      "sizes": "600x400",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "BrightNews Desktop"
+    },
+    {
+      "src": "assets/brightnews-logo.png",
+      "sizes": "600x400",
+      "type": "image/png",
+      "label": "BrightNews Mobile"
+    }
+  ]
+}

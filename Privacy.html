@@ -9,7 +9,7 @@
     gtag('js', new Date());
 
     gtag('config', 'G-ZNFX3R9BQV');
-  </script>
+  </script>`
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="icon" type="image/png" href="assets/brightnews-logo-faviconv5.png">
   <meta charset="UTF-8">
@@ -18,6 +18,8 @@
   <script src="index.js"></script>
 
   <title>Privacy & Colofon | BrightNews</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2ecc71">
   <style>
     :root {
       --bright-green: #32cc32;
@@ -159,12 +161,19 @@
       </div>
       <div>
         <span class="label" data-i18n="colofon_label_legal">Legal Status</span>
-        <span data-i18n="colofon_val_legal">In formation (Maarten de Klerk)</span>
+        <span data-i18n="colofon_val_legal">Eenmanszaak (Maarten de Klerk)</span>
       </div>
       <div>
         <span class="label" data-i18n="colofon_label_address">Address</span>
-        <span data-i18n="colofon_val_address_full">Vossenstraat 19, 6286BW Nijswiller</span>,
-        <span data-i18n="colofon_val_country">The Netherlands</span>
+        <span data-i18n="colofon_val_address">Vossenstraat 19, 6286BW Nijswiller, The Netherlands</span>
+      </div>
+      <div>
+        <span class="label" data-i18n="colofon_label_kvk">KvK Number</span>
+        <span data-i18n="colofon_val_kvk">42048341</span>
+      </div>
+      <div>
+        <span class="label" data-i18n="colofon_label_btw">VAT Number</span>
+        <span data-i18n="colofon_val_btw">NL005455019B94</span>
       </div>
       <div>
         <span class="label" data-i18n="colofon_label_contact">Contact</span>
@@ -202,25 +211,29 @@
 
 <footer class="main-footer">
   <div class="container footer-grid">
+    <!-- Kolom 1: Over & Transparantie -->
     <div class="footer-about">
       <div class="footer-logo">Bright<span>News</span></div>
-      <p data-i18n="footer_text">
-        Founded and developed by <strong>Maarten de Klerk</strong>.
-        Maarten is the owner and lead developer of BrightNews,
-        dedicated to spreading positive vibes through tech.
-      </p>
+      <p data-i18n="footer_text">Founded and developed by Maarten de Klerk...</p>
+      <div class="footer-legal-info">
+        <p data-i18n="footer_address">Vossenstraat 19, 6286BW Nijswiller, <br>The Netherlands
+        <span data-i18n="footer_kvk_label">KvK</span>: <span data-i18n="footer_kvk_val">42048341</span><span data-i18n="footer_more_info"><br>For more info, visit our</span>
+          <a href="Privacy.html" data-i18n="footer_privacy_link">Privacy Page</a></p>
+      </div>
     </div>
 
+    <!-- Kolom 2: Explore -->
     <div class="footer-links">
       <h4 data-i18n="footer_explore">Explore</h4>
       <ul>
         <li><a href="index.html" data-i18n="nav_home">Home</a></li>
         <li><a href="over-ons.html" data-i18n="footer_mission">Our Mission</a></li>
-        <li><a href="abonnementen.html" data-i18n="nav_premium">Premium</a></li>
+        <li><a href="abonnementen.html" data-i18n="footer_subs">Subscriptions</a></li>
         <li><a href="profiel.html" data-i18n="footer_acc">My Account</a></li>
       </ul>
     </div>
 
+    <!-- Kolom 3: Community -->
     <div class="footer-links">
       <h4 data-i18n="footer_community">Community</h4>
       <ul>
@@ -230,30 +243,22 @@
       </ul>
     </div>
 
+    <!-- Kolom 4: Socials & Badge -->
     <div class="footer-socials">
       <h4 data-i18n="footer_follow">Follow BrightNews</h4>
       <div class="social-icons">
-        <a href="https://instagram.com/maartendeklerk" target="_blank" class="social-btn">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://linkedin.com/in/maartendeklerk" target="_blank" class="social-btn">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/MaartenDeKlerkPXL/Brightnews.online" target="_blank" class="social-btn">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="mailto:info@BrightNews.online?subject=Vraag%20over%20BrightNews" class="social-btn">
-          <i class="fas fa-envelope"></i>
-        </a>
+        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+        <a href="mailto:info@brightnews.online" class="social-btn"><i class="fas fa-envelope"></i></a>
       </div>
       <div class="framework-badge">
         <span data-i18n="footer_no_frameworks">100% Vanilla JS • No Frameworks</span>
       </div>
     </div>
   </div>
-
   <div class="footer-bottom">
-    <p data-i18n="footer_created_by">&copy; 2026 BrightNews • All rights reserved • Created with 💚 in the Netherlands</p>
+    <p data-i18n="footer_created_by">© 2026 BrightNews • All rights reserved • Created with 💚 in the Netherlands</p>
   </div>
 </footer>
 <script>

@@ -3,7 +3,7 @@ name: "🚀 BrightNews: Automatische Update"
 on:
   schedule:
     # Draait om 00:00 UTC (Nacht-update) en 12:00 UTC (Lunch-update)
-    - cron: '0 0,12 * * *'
+    - cron: '0,8 * * *'
   workflow_dispatch: # Handmatige trigger blijft behouden
 
 jobs:

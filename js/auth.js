@@ -226,7 +226,31 @@ async function executeDelete() {
         showNotification("Error", "error");
     }
 }
+async function startLemonCheckout(variantId) {
+    const { data: { session } } = await window.supabaseClient.auth.getSession();
 
+    if (!session) {
+        showNotification("Log eerst in om een abonnement af te sluiten. ✨", "error");
+        setTimeout(() => window.location.href = 'profiel.html', 1500);
+        return;
+    }
+
+    const userId = session.user.id;
+    const userEmail = session.user.email;
+
+    // Bouw de Lemon Squeezy URL met Custom Data (user_id)
+    // We geven ook het e-mailadres alvast mee voor gemak
+    const checkoutUrl = `https://brightnews.lemonsqueezy.com/checkout/buy/${variantId}?checkout[custom][user_id]=${userId}&checkout[email]=${userEmail}&embed=1`;
+
+    // Open de Lemon Squeezy Overlay
+    if (window.createLemonSqueezy) {
+        window.createLemonSqueezy();
+    }
+
+    LemonSqueezy.Url.Open(checkoutUrl);
+}
+
+window.startLemonCheckout = startLemonCheckout;
 window.handleDeleteAccount = handleDeleteAccount;
 window.closeDeleteModal = closeDeleteModal;
 window.executeDelete = executeDelete;
