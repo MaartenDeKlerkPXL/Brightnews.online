@@ -229,9 +229,13 @@
                     const details = document.getElementById('register-lang-details');
                     // details.removeAttribute('open'); // Zet dit aan als je wilt dat hij weer inklapt
                 }
-                function renderSubscriptionUI(isPremium, expiryDate = null) {
+                let currentPortalUrl = null;
+
+                function renderSubscriptionUI(isPremium, expiryDate = null, portalUrl = null, planType = null) {
                     const container = document.getElementById('subscription-status');
                     if (!container) return;
+
+                    currentPortalUrl = portalUrl || null;
 
                     if (!isPremium) {
                         container.innerHTML = '';
@@ -252,8 +256,7 @@
                         dateText = getT('date_unknown', 'Onbekend');
                     }
 
-                    const planType = localStorage.getItem('brightNews_PlanType') || 'Premium';
-                    const planName = planType.charAt(0).toUpperCase() + planType.slice(1);
+                    const planName = planType ? planType.charAt(0).toUpperCase() + planType.slice(1) : 'Premium';
 
                     container.innerHTML = `
         <div class="subscription-card" style="padding: 1.5rem; border: 1px solid #e0e0e0; border-radius: 12px; background-color: #fff; margin-bottom: 2rem; margin-top: 20px;">
@@ -268,12 +271,15 @@
                 }
 
                 function cancelSubscription() {
-                        window.open('https://ko-fi.com/manage/subscriptions', '_blank');
-                        localStorage.setItem('brightNews_AutoRenew', 'false');
+                    // Klanten betalen via Lemon Squeezy, niet meer via Ko-fi. De Customer
+                    // Portal-URL komt uit profiles.customer_portal_url, gevuld door de
+                    // lemon-webhook zodra Lemon Squeezy die meestuurt in het payload.
+                    if (currentPortalUrl) {
+                        window.open(currentPortalUrl, '_blank');
+                    } else {
+                        showNotification(getT('portal_url_missing', 'Kon geen beheerlink vinden. Neem contact op via de contactpagina om je abonnement stop te zetten.'), 'error');
+                    }
                 }
-
-                // Luister naar het laden van de pagina
-                document.addEventListener('DOMContentLoaded', renderSubscriptionUI);
 
             </script>
             <button onclick="handleLogout()" class="btn-logout-editorial" data-i18n="btn_logout">Uitloggen</button>

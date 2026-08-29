@@ -1,10 +1,30 @@
 const RSSParser = require('rss-parser');
 const { Mistral } = require('@mistralai/mistralai');
+const { createClient } = require('@supabase/supabase-js');
 const fs = require('fs-extra');
 require('dotenv').config();
 
 const parser = new RSSParser();
 const client = new Mistral({ apiKey: process.env.MISTRAL_API_KEY });
+
+// Nodig om de volledige artikeltekst apart van de publieke JSON op te slaan
+// (echte paywall, Fase 1.4). SUPABASE_SERVICE_ROLE_KEY moet als GitHub Secret
+// staan; lokaal kan hij in .env. Zonder deze key wordt alleen de teaser
+// geschreven en NIET de volledige tekst (geen stille paywall-omzeiling).
+const SUPABASE_URL = 'https://rquuqypgaannrakdrabj.supabase.co';
+const supabaseAdmin = process.env.SUPABASE_SERVICE_ROLE_KEY
+    ? createClient(SUPABASE_URL, process.env.SUPABASE_SERVICE_ROLE_KEY)
+    : null;
+if (!supabaseAdmin) {
+    console.warn('⚠️ SUPABASE_SERVICE_ROLE_KEY ontbreekt: volledige artikeltekst wordt NIET opgeslagen.');
+}
+
+function maakTeaser(tekst, maxWoorden = 60) {
+    if (!tekst) return '';
+    const woorden = tekst.split(' ');
+    if (woorden.length <= maxWoorden) return tekst;
+    return woorden.slice(0, maxWoorden).join(' ') + '...';
+}
 
 const FEEDS = [
     { name: 'Positive.News', url: 'https://www.positive.news/feed/' },
@@ -226,11 +246,28 @@ async function processNews() {
                             finalImage = uniekeOpties[Math.floor(Math.random() * uniekeOpties.length)];
                         }
 
-                        Object.keys(languages).forEach(lang => {
+                        for (const lang of Object.keys(languages)) {
+                            const volledigeTekst = data[lang].s;
+
+                            // Volledige tekst apart opslaan (alleen voor Premium-lezers
+                            // op te vragen via get_full_article()). De publieke JSON
+                            // krijgt vanaf nu alleen een teaser van ~60 woorden.
+                            if (supabaseAdmin) {
+                                try {
+                                    await supabaseAdmin.from('articles_full').upsert({
+                                        id: String(articleId),
+                                        lang,
+                                        full_text: volledigeTekst
+                                    }, { onConflict: 'id,lang' });
+                                } catch (err) {
+                                    console.error(`❌ Kon volledige tekst niet opslaan (${lang}):`, err.message);
+                                }
+                            }
+
                             languages[lang].unshift({
                                 id: articleId,
                                 title: data[lang].t,
-                                summary: data[lang].s,
+                                summary: maakTeaser(volledigeTekst),
                                 image_alt: data[lang].alt,
                                 meta_description: data[lang].meta_d, // Toevoegen!
                                 meta_keywords: data[lang].meta_k,    // Toevoegen!
@@ -241,7 +278,7 @@ async function processNews() {
                                 category: category
                             });
                             if (languages[lang].length > 150) languages[lang].pop();
-                        });
+                        }
                         console.log(`✨ Succes: ${item.title} toegevoegd.`);
                     }
                 } catch (aiErr) {

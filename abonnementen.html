@@ -81,6 +81,13 @@
         <h1 data-i18n="pricing_title">Kies jouw dosis zonneschijn ☀️</h1>
     </section>
 
+    <section class="withdrawal-consent-wrapper container" style="max-width: 600px; margin: 0 auto 20px; text-align: center;">
+        <label style="display: flex; align-items: flex-start; gap: 10px; font-size: 0.9rem; color: #444; cursor: pointer; text-align: left;">
+            <input type="checkbox" id="withdrawal-consent" onchange="document.querySelectorAll('.btn-lemon-checkout').forEach(b => b.disabled = !this.checked)" style="margin-top: 3px; flex-shrink: 0;">
+            <span data-i18n="withdrawal_consent_label">Ik ga akkoord dat de dienst direct start en doe daarmee afstand van mijn wettelijke herroepingsrecht van 14 dagen.</span>
+        </label>
+    </section>
+
     <section class="pricing-grid container">
         <div class="price-card">
             <h2 data-i18n="plan_sparkle_name">Sparkle</h2>
@@ -108,7 +115,7 @@
                     Monthly renewable, cancel anytime.
                 </p>
 
-            <button onclick="startLemonCheckout('78215cb2-d818-497b-a4ea-f29424aacf6c')" class="btn-primary" data-i18n="btn_glow">
+            <button onclick="startLemonCheckout('78215cb2-d818-497b-a4ea-f29424aacf6c')" class="btn-primary btn-lemon-checkout" disabled data-i18n="btn_glow">
                 Choose Monthly
             </button>
         </div>
@@ -126,7 +133,7 @@
                 <p class="renewal-notice" style="font-size: 0.8em; color: #666; margin-top: 10px;" data-i18n="renewal_notice_year">
                     Yearly renewable, cancel anytime.
                 </p>
-            <button onclick="startLemonCheckout('993c7ac0-abeb-415c-a40c-ce00ef820235')" class="btn-primary" data-i18n="btn_shine">
+            <button onclick="startLemonCheckout('993c7ac0-abeb-415c-a40c-ce00ef820235')" class="btn-primary btn-lemon-checkout" disabled data-i18n="btn_shine">
                 Choose Yearly
             </button>
         </div>

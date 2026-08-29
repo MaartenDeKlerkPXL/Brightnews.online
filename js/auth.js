@@ -88,27 +88,6 @@ async function handleLogout() {
     }
 }
 
-// --- 3. GLOW & PREMIUM LOGICA ---
-
-function updateUIForGlow() {
-    const status = localStorage.getItem('member_status');
-    if (status === 'glow') {
-        document.body.classList.add('user-is-glow');
-        const glowCard = document.querySelector('.price-card.popular');
-        if (glowCard) {
-            glowCard.innerHTML = "<h3>Je bent een Glow Member! 🌟</h3><p>Bedankt voor je steun.</p>";
-        }
-    }
-}
-
-function applyPremiumFeatures() {
-    const isPremium = localStorage.getItem('brightNews_Premium') === 'true';
-    if (isPremium) {
-        document.body.classList.add('is-premium-user');
-        console.log("BrightNews Shine Actief! ✨");
-    }
-}
-
 // --- 4. INITIALISATIE & EVENT LISTENERS ---
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -156,8 +135,20 @@ async function updateAuthUI() {
 }
 
 async function updateProfileUI(user) {
-    const meta = user.user_metadata;
-    const isPremium = meta?.is_premium === true || meta?.is_premium === 'true';
+    // Premiumstatus komt NIET meer uit user_metadata (dat kan de gebruiker zelf
+    // overschrijven met de anon-key). Bron van waarheid is nu de profiles-tabel,
+    // die alleen de lemon-webhook (service_role) mag beschrijven; RLS staat de
+    // gebruiker alleen toe zijn eigen rij te lezen.
+    const { data: profile, error: profileError } = await window.supabaseClient
+        .from('profiles')
+        .select('is_premium, premium_until, plan_type, customer_portal_url')
+        .eq('id', user.id)
+        .maybeSingle();
+
+    if (profileError) console.error("Kon profiel niet laden:", profileError.message);
+
+    const isGeldig = profile?.is_premium === true &&
+        (!profile.premium_until || new Date(profile.premium_until) > new Date());
 
     const emailDisplay = document.getElementById('user-email-display');
     const badge = document.getElementById('premium-status-badge');
@@ -165,26 +156,26 @@ async function updateProfileUI(user) {
     if (emailDisplay) emailDisplay.innerText = user.email;
 
     if (badge) {
-        const statusKey = isPremium ? 'badge_premium' : 'badge_free';
+        const statusKey = isGeldig ? 'badge_premium' : 'badge_free';
         badge.setAttribute('data-i18n', statusKey);
         // getT komt uit index.js
         if (typeof getT === 'function') badge.innerText = getT(statusKey);
-        badge.className = `badge ${isPremium ? 'badge-premium' : 'badge-free'}`;
+        badge.className = `badge ${isGeldig ? 'badge-premium' : 'badge-free'}`;
     }
 
     const upgradeSection = document.getElementById('upgrade-section');
     const promoSection = document.getElementById('discount-section-container');
-    if (upgradeSection) upgradeSection.style.display = isPremium ? 'none' : 'block';
-    if (promoSection) promoSection.style.display = isPremium ? 'none' : 'block';
+    if (upgradeSection) upgradeSection.style.display = isGeldig ? 'none' : 'block';
+    if (promoSection) promoSection.style.display = isGeldig ? 'none' : 'block';
 
-    if (isPremium) {
+    if (isGeldig) {
         localStorage.setItem('brightNews_Premium', 'true');
     } else {
         localStorage.removeItem('brightNews_Premium');
     }
 
     if (typeof renderSubscriptionUI === 'function') {
-        renderSubscriptionUI(isPremium, meta?.premium_until);
+        renderSubscriptionUI(isGeldig, profile?.premium_until, profile?.customer_portal_url, profile?.plan_type);
     }
     if (typeof vertaalStatischeTeksten === 'function') {
         vertaalStatischeTeksten(window.huidigeTaal);
@@ -227,6 +218,13 @@ async function executeDelete() {
     }
 }
 async function startLemonCheckout(variantId) {
+    const consentBox = document.getElementById('withdrawal-consent');
+    if (consentBox && !consentBox.checked) {
+        const msg = typeof getT === 'function' ? getT('withdrawal_consent_required') : "Vink eerst het vakje aan om verder te gaan.";
+        showNotification(msg, "error");
+        return;
+    }
+
     const { data: { session } } = await window.supabaseClient.auth.getSession();
 
     if (!session) {

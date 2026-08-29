@@ -74,9 +74,22 @@ async function checkUser() {
         const { data: { session } } = await window.supabaseClient.auth.getSession();
         if (!session) return { ingelogd: false, premium: false };
 
-        const meta = session.user.user_metadata;
-        const isPremium = meta?.is_premium === true;
-        const verloopDatum = meta?.premium_until;
+        // Premiumstatus komt uit de profiles-tabel, niet uit user_metadata:
+        // user_metadata is met de anon-key door de gebruiker zelf te overschrijven,
+        // profiles heeft RLS die schrijven voorbehoudt aan de service_role (webhook).
+        const { data: profile, error } = await window.supabaseClient
+            .from('profiles')
+            .select('is_premium, premium_until')
+            .eq('id', session.user.id)
+            .maybeSingle();
+
+        if (error) {
+            console.error("Kon premiumstatus niet ophalen:", error.message);
+            return { ingelogd: true, premium: false };
+        }
+
+        const isPremium = profile?.is_premium === true;
+        const verloopDatum = profile?.premium_until;
 
         // Check: Is de datum nog in de toekomst?
         const isGeldig = isPremium && (!verloopDatum || new Date(verloopDatum) > new Date());
@@ -170,7 +183,22 @@ async function toonDetail(id) {
     let displayContent = artikel.summary;
     let paywallHTML = "";
 
-    if (userStatus.premium !== true) {
+    if (userStatus.premium === true) {
+        // Nieuwe artikelen staan alleen als teaser in de publieke JSON; de
+        // volledige tekst zit achter get_full_article() (checkt zelf premium-
+        // status server-side). Oudere artikelen (van vóór deze wijziging)
+        // hebben geen rij in articles_full — dan valt dit terug op de
+        // teaser/summary die al in de JSON stond (ongewijzigd gedrag).
+        try {
+            const { data: volledigeTekst, error } = await window.supabaseClient
+                .rpc('get_full_article', { p_id: String(id), p_lang: window.huidigeTaal });
+            if (!error && volledigeTekst) {
+                displayContent = volledigeTekst;
+            }
+        } catch (e) {
+            console.error("Kon volledig artikel niet ophalen:", e.message);
+        }
+    } else {
         const woorden = artikel.summary.split(' ');
         if (woorden.length > 60) {
             displayContent = woorden.slice(0, 60).join(' ') + "...";
