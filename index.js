@@ -293,17 +293,19 @@ async function toonDetail(id) {
     const isoDate = artikel.date ? new Date(artikel.date).toISOString() : '';
 
     // --- VOLLEDIGE UPDATE VAN DE DETAILVIEW (SEO geoptimaliseerd) ---
+    // AI-gegenereerde velden (title, displayContent, image_alt) komen uit RSS-bronnen
+    // via het LLM en worden NIET via innerHTML/template-strings ingevoegd, maar via
+    // textContent/DOM-eigenschappen — dat voorkomt HTML-/attribuut-injectie (XSS).
+    const fallbackImgUrl = 'https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80';
+
     detailView.innerHTML = `
     <div class="detail-hero">
-        <img src="${artikel.image || 'https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80'}" 
-             class="detail-img" 
-             alt="${artikel.image_alt || artikel.title}" 
-             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80';">
+        <img class="detail-img" data-role="hero-img">
     </div>
     <div class="article-container" style="max-width: 800px; margin: 0 auto; padding: 20px;" itemscope itemtype="https://schema.org/NewsArticle">
         <header class="detail-header">
-            <h1 itemprop="headline" style="margin-bottom: 10px;">${artikel.title}</h1>
-            
+            <h1 itemprop="headline" style="margin-bottom: 10px;" data-role="title"></h1>
+
             ${formattedDate ? `
                 <h2 style="margin-bottom:30px; font-weight: normal; border:none; background:none; padding:0;">
                     <time itemprop="datePublished" datetime="${isoDate}" style="display:block; color:#888; font-size:1.2rem;">
@@ -311,13 +313,24 @@ async function toonDetail(id) {
                     </time>
                 </h2>` : ''}
         </header>
-        
+
         <section class="article-body" itemprop="articleBody">
-            <p>${displayContent}</p>
+            <p data-role="body"></p>
             ${paywallHTML}
             ${shareHtml}
         </section>
     </div>`;
+
+    const heroImg = detailView.querySelector('[data-role="hero-img"]');
+    heroImg.src = artikel.image || fallbackImgUrl;
+    heroImg.alt = artikel.image_alt || artikel.title;
+    heroImg.onerror = function () {
+        this.onerror = null;
+        this.src = fallbackImgUrl;
+    };
+
+    detailView.querySelector('[data-role="title"]').textContent = artikel.title;
+    detailView.querySelector('[data-role="body"]').textContent = displayContent;
 
     setTimeout(() => updateShareLinks(artikel.title, window.location.href), 150);
 }
@@ -352,19 +365,36 @@ function renderLijst(artikelen) {
         card.className = 'news-card';
 
         const imgSrc = artikel.image || 'https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80';
+        const fallbackImgUrl = 'https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80';
 
         // AANPASSING: Gebruik de specifieke fallback logica voor alt-teksten
         const imgAlt = artikel.image_alt || artikel.title;
 
-        card.innerHTML = `
-            <img src="${imgSrc}" 
-                 class="card-img" 
-                 alt="${imgAlt}" 
-                 onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80';">
-            <div class="card-content">
-                <h3>${artikel.title}</h3>
-                <p>${artikel.summary ? artikel.summary.substring(0, 85) + '...' : ''}</p>
-            </div>`;
+        // AI-gegenereerde velden (title, summary, image_alt) komen uit RSS-bronnen
+        // via het LLM. Via createElement + textContent/property-assignment i.p.v.
+        // innerHTML kan hier geen HTML/attribuut-injectie (XSS) doorheen glippen.
+        const img = document.createElement('img');
+        img.src = imgSrc;
+        img.className = 'card-img';
+        img.alt = imgAlt;
+        img.onerror = function () {
+            this.onerror = null;
+            this.src = fallbackImgUrl;
+        };
+
+        const cardContent = document.createElement('div');
+        cardContent.className = 'card-content';
+
+        const titleEl = document.createElement('h3');
+        titleEl.textContent = artikel.title;
+
+        const summaryEl = document.createElement('p');
+        summaryEl.textContent = artikel.summary ? artikel.summary.substring(0, 85) + '...' : '';
+
+        cardContent.appendChild(titleEl);
+        cardContent.appendChild(summaryEl);
+        card.appendChild(img);
+        card.appendChild(cardContent);
 
         card.addEventListener('click', () => {
             window.history.pushState({}, '', `?id=${veiligId}`);

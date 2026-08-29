@@ -248,9 +248,69 @@ async function startLemonCheckout(variantId) {
     LemonSqueezy.Url.Open(checkoutUrl);
 }
 
+function startUpgrade() {
+    window.location.href = 'abonnementen.html';
+}
+
+async function applyDiscountCode() {
+    const input = document.getElementById('promo-code');
+    if (!input) return;
+    const code = input.value.trim();
+    if (!code) return;
+
+    const client = window.supabaseClient;
+    if (!client) return showNotification("Database niet bereikbaar.", "error");
+
+    try {
+        // Geen hardcoded code meer: dit gaat via redeem_promo_code(), een
+        // security-definer-functie die zelf geldigheid en gebruikslimiet
+        // checkt tegen de promo_codes-tabel (die client-side niet leesbaar is).
+        const { data, error } = await client.rpc('redeem_promo_code', { p_code: code });
+        if (error) throw error;
+
+        if (data?.success) {
+            showNotification(getT('promo_success'), 'success');
+            input.value = '';
+            const { data: { user } } = await client.auth.getUser();
+            if (user) await updateProfileUI(user);
+        } else {
+            const reasonKeys = {
+                invalid_code: 'promo_invalid',
+                expired: 'promo_expired',
+                limit_reached: 'promo_limit_reached',
+                not_logged_in: 'promo_not_logged_in'
+            };
+            showNotification(getT(reasonKeys[data?.reason] || 'promo_invalid'), 'error');
+        }
+    } catch (err) {
+        showNotification(err.message, 'error');
+    }
+}
+
+async function handleForgotPassword(event) {
+    if (event) event.preventDefault();
+    const email = document.getElementById('login-email')?.value?.trim();
+    if (!email) {
+        showNotification(getT('forgot_password_need_email'), 'error');
+        return;
+    }
+    try {
+        const { error } = await window.supabaseClient.auth.resetPasswordForEmail(email, {
+            redirectTo: `${window.location.origin}/wachtwoord-vergeten.html`
+        });
+        if (error) throw error;
+        showNotification(getT('forgot_password_sent'), 'success');
+    } catch (err) {
+        showNotification(err.message, 'error');
+    }
+}
+
 window.startLemonCheckout = startLemonCheckout;
 window.handleDeleteAccount = handleDeleteAccount;
 window.closeDeleteModal = closeDeleteModal;
 window.executeDelete = executeDelete;
 window.handleLogout = handleLogout;
 window.handleAuth = handleAuth;
+window.startUpgrade = startUpgrade;
+window.applyDiscountCode = applyDiscountCode;
+window.handleForgotPassword = handleForgotPassword;

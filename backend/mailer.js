@@ -20,33 +20,49 @@ const transporter = nodemailer.createTransport({
  */
 async function sendSubscriptionConfirmation(userEmail, language = 'en') {
     const isEn = language === 'en';
+    const enPdfPath = path.join(__dirname, '../assets/documents/Terms and Conditions BrightNews.online.pdf');
+    const nlPdfPath = path.join(__dirname, '../assets/documents/voorwaarden.pdf');
 
-    // Bepaal de paden naar de PDF's
-    const pdfPath = isEn
-        ? path.join(__dirname, '../assets/documents/Terms and Conditions BrightNews.online.pdf')
-        : path.join(__dirname, '../assets/documents/voorwaarden.pdf');
+    let pdfPath = isEn ? enPdfPath : nlPdfPath;
+    let attachmentName = isEn ? 'Terms and Conditions BrightNews.online.pdf' : 'BrightNews_Voorwaarden.pdf';
+    let pdfIsFallbackEn = false;
 
-    // Controleer of de PDF echt bestaat voordat we proberen te mailen
+    // Val terug op de Engelse PDF i.p.v. te crashen als de vertaalde versie
+    // ontbreekt — een e-mail met de verkeerde bijlage is beter dan een
+    // gegarandeerde fout bij elke niet-Engelse aankoop.
+    if (!isEn && !fs.existsSync(nlPdfPath)) {
+        console.warn(`⚠️ ${language.toUpperCase()}-PDF ontbreekt (${nlPdfPath}), EN gebruikt.`);
+        pdfPath = enPdfPath;
+        attachmentName = 'Terms and Conditions BrightNews.online.pdf';
+        pdfIsFallbackEn = true;
+    }
+
+    // Controleer of de (eventueel teruggevallen) PDF echt bestaat voordat we proberen te mailen
     if (!fs.existsSync(pdfPath)) {
         throw new Error(`Kritieke fout: PDF niet gevonden op pad: ${pdfPath}`);
+    }
+
+    let bodyText = isEn
+        ? 'Thank you for your subscription. You can find our terms and conditions in the attachment.'
+        : 'Bedankt voor je inschrijving. Je vindt onze voorwaarden in de bijlage.';
+    if (pdfIsFallbackEn) {
+        bodyText += ' (Let op: de bijlage is momenteel alleen in het Engels beschikbaar. De Nederlandse versie volgt zo snel mogelijk.)';
     }
 
     const mailOptions = {
         from: '"Bright News ✨" <info@brightnews.online>',
         to: userEmail,
         subject: isEn ? 'Welcome to the Bright Side! ✨' : 'Welkom bij de Bright Side! ✨',
-        text: isEn
-            ? 'Thank you for your subscription. You can find our terms and conditions in the attachment.'
-            : 'Bedankt voor je inschrijving. Je vindt onze voorwaarden in de bijlage.',
+        text: bodyText,
         attachments: [
             {
-                filename: isEn ? 'Terms and Conditions BrightNews.online.pdf' : 'BrightNews_Voorwaarden.pdf',
+                filename: attachmentName,
                 path: pdfPath
             }
         ]
     };
 
-    console.log(`📧 Mail wordt voorbereid voor ${userEmail} (Taal: ${language})...`);
+    console.log(`📧 Mail wordt voorbereid voor ${userEmail} (Taal: ${language}${pdfIsFallbackEn ? ', PDF: EN-fallback' : ''})...`);
     return await transporter.sendMail(mailOptions);
 }
 
