@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNFX3R9BQV"></script>
+  <!-- Google tag (gtag.js) — laadt pas na cookietoestemming, zie acceptCookies()/checkCookies() in index.js -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-ZNFX3R9BQV');
-  </script>`
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
+  </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="icon" type="image/png" href="assets/brightnews-logo-faviconv5.png">
   <meta charset="UTF-8">
@@ -191,14 +193,16 @@
     <h2 data-i18n="privacy_title">Your Privacy</h2>
     <p data-i18n="privacy_text_intro">At BrightNews, we focus on positivity. That applies to your data too. We only process what is strictly necessary to provide our service.</p>
     <ul>
-      <li data-i18n="privacy_list_subscription"><strong>Subscriptions:</strong> For "Glow" and "Shine" members, we process payment details via Ko-fi. We do not store credit card numbers on our own servers.</li>
+      <li data-i18n="privacy_list_subscription"><strong>Subscriptions:</strong> For "Glow" and "Shine" members, we process payments via Lemon Squeezy, our Merchant of Record. We do not store credit card numbers on our own servers.</li>
+      <li data-i18n="privacy_list_account"><strong>Account Data:</strong> We use Supabase (hosted in the EU) to process your email address and account settings for login and account management.</li>
       <li data-i18n="privacy_list_hosting"><strong>Data Storage:</strong> Your data is hosted on Strato servers within the EU. We have a Data Processing Agreement (DPA) to ensure your privacy is guaranteed.</li>
+      <li data-i18n="privacy_list_newsletter"><strong>Newsletter Signup:</strong> If you sign up for updates via our launch page, your email address is processed by Formspree solely to receive your signup.</li>
       <li data-i18n="privacy_list_no_sell"><strong>Zero Third-Party Sales:</strong> We never sell, trade, or leak your data to advertisers.</li>
       <li data-i18n="privacy_list_rights"><strong>Your Rights:</strong> Under the GDPR, you have the right to access, rectify, or delete your data at any time. Send a request to our support email.</li>
     </ul>
   </section>
 
-  <section>
+  <section id="cookies-section">
     <h2 data-i18n="cookies_title">Cookies & Technology</h2>
     <p data-i18n="cookies_text">BrightNews uses functional cookies and local storage to remember your language preferences and login session. We use minimal, privacy-friendly analytics to improve the site. For any tracking beyond functional necessity, we will always ask your permission first.</p>
   </section>
@@ -216,9 +220,9 @@
       <div class="footer-logo">Bright<span>News</span></div>
       <p data-i18n="footer_text">Founded and developed by Maarten de Klerk...</p>
       <div class="footer-legal-info">
-        <p data-i18n="footer_address">Vossenstraat 19, 6286BW Nijswiller, <br>The Netherlands
-        <span data-i18n="footer_kvk_label">KvK</span>: <span data-i18n="footer_kvk_val">42048341</span><span data-i18n="footer_more_info"><br>For more info, visit our</span>
-          <a href="Privacy.html" data-i18n="footer_privacy_link">Privacy Page</a></p>
+        <p data-i18n="footer_address">Vossenstraat 19, 6286BW Nijswiller, <br>The Netherlands</p>
+        <p><span data-i18n="footer_kvk_label">KvK</span>: <span data-i18n="footer_kvk_val">42048341</span> · <span data-i18n="footer_btw_label">BTW</span>: <span data-i18n="footer_btw_val">NL005455019B94</span></p>
+        <p class="footer-mor-notice" data-i18n="footer_mor_notice">Payments are securely processed by Lemon Squeezy, our Merchant of Record.</p>
       </div>
     </div>
 
@@ -229,6 +233,7 @@
         <li><a href="index.html" data-i18n="nav_home">Home</a></li>
         <li><a href="over-ons.html" data-i18n="footer_mission">Our Mission</a></li>
         <li><a href="abonnementen.html" data-i18n="footer_subs">Subscriptions</a></li>
+        <li><a href="#" onclick="openCustomerPortal(event)" data-i18n="footer_manage_sub">Manage Subscription</a></li>
         <li><a href="profiel.html" data-i18n="footer_acc">My Account</a></li>
       </ul>
     </div>
@@ -239,6 +244,8 @@
       <ul>
         <li><a href="Privacy.html" data-i18n="footer_privacy">Privacy Policy</a></li>
         <li><a href="algemeene-voorwaarden.html" data-i18n="footer_service_terms">Terms of Service</a></li>
+        <li><a href="refunds.html" data-i18n="footer_refunds">Refunds</a></li>
+        <li><a href="Privacy.html#cookies-section" data-i18n="footer_cookies">Cookies</a></li>
         <li><a href="contact.html" data-i18n="footer_support">Contact Support</a></li>
       </ul>
     </div>

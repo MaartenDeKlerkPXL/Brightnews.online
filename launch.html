@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNFX3R9BQV"></script>
+    <!-- Google tag (gtag.js) — laadt pas na cookietoestemming, zie acceptCookies()/checkCookies() in index.js -->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-ZNFX3R9BQV');
+        gtag('consent', 'default', {
+            'analytics_storage': 'denied',
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied'
+        });
     </script>
     <link rel="icon" type="image/png" href="assets/brightnews-logo-faviconv5.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BrightNews - Launch</title>
+    <!-- Nodig voor de gestandaardiseerde footer (Fase 3.2); staat na deze links
+         geladen dus de eigen <style>-regels hieronder blijven leidend voor de
+         countdown-pagina zelf. -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+<script src="data/translations.js"></script>
 <script src="index.js"></script>
     <style>
         :root {
@@ -153,25 +161,67 @@
         <p id="msg" style="display:none; font-size: 0.9rem; color: var(--bright-green);"></p>
     </div>
 
-    <div style="margin-top: 50px; border-top: 1px solid #eee; padding-top: 20px;">
-        <p style="font-size: 0.8rem; opacity: 0.6;">BrightNews <sup>&copy;</sup> 2026 - Positivity First</p>
-    </div>
+
 </div>
+
+<footer class="main-footer">
+  <div class="container footer-grid">
+    <!-- Kolom 1: Over & Transparantie -->
+    <div class="footer-about">
+      <div class="footer-logo">Bright<span>News</span></div>
+      <p data-i18n="footer_text">Founded and developed by Maarten de Klerk...</p>
+      <div class="footer-legal-info">
+        <p data-i18n="footer_address">Vossenstraat 19, 6286BW Nijswiller, <br>The Netherlands</p>
+        <p><span data-i18n="footer_kvk_label">KvK</span>: <span data-i18n="footer_kvk_val">42048341</span> · <span data-i18n="footer_btw_label">BTW</span>: <span data-i18n="footer_btw_val">NL005455019B94</span></p>
+        <p class="footer-mor-notice" data-i18n="footer_mor_notice">Payments are securely processed by Lemon Squeezy, our Merchant of Record.</p>
+      </div>
+    </div>
+
+    <!-- Kolom 2: Explore -->
+    <div class="footer-links">
+      <h4 data-i18n="footer_explore">Explore</h4>
+      <ul>
+        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="over-ons.html" data-i18n="footer_mission">Our Mission</a></li>
+        <li><a href="abonnementen.html" data-i18n="footer_subs">Subscriptions</a></li>
+        <li><a href="#" onclick="openCustomerPortal(event)" data-i18n="footer_manage_sub">Manage Subscription</a></li>
+        <li><a href="profiel.html" data-i18n="footer_acc">My Account</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom 3: Community -->
+    <div class="footer-links">
+      <h4 data-i18n="footer_community">Community</h4>
+      <ul>
+        <li><a href="Privacy.html" data-i18n="footer_privacy">Privacy Policy</a></li>
+        <li><a href="algemeene-voorwaarden.html" data-i18n="footer_service_terms">Terms of Service</a></li>
+        <li><a href="refunds.html" data-i18n="footer_refunds">Refunds</a></li>
+        <li><a href="Privacy.html#cookies-section" data-i18n="footer_cookies">Cookies</a></li>
+        <li><a href="contact.html" data-i18n="footer_support">Contact Support</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom 4: Socials & Badge -->
+    <div class="footer-socials">
+      <h4 data-i18n="footer_follow">Follow BrightNews</h4>
+      <div class="social-icons">
+        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+        <a href="mailto:info@brightnews.online" class="social-btn"><i class="fas fa-envelope"></i></a>
+      </div>
+      <div class="framework-badge">
+        <span data-i18n="footer_no_frameworks">100% Vanilla JS • No Frameworks</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p data-i18n="footer_created_by">© 2026 BrightNews • All rights reserved • Created with 💚 in the Netherlands</p>
+  </div>
+</footer>
 
 <script>
 
-    function portalCheck(e) {
-        e.preventDefault();
-        alert("Beveiligde toegang vereist voor beheer.");
-        const user = prompt("Gebruikersnaam:");
-        const pass = prompt("Wachtwoord:");
-        if (user === "Maarten" && pass === "B2026") {
-            window.location.href = "Home.html";
-        } else {
-            alert("Toegang geweigerd.");
-        }
-    }
-    window.portalCheck = portalCheck;
     // Maak de functie globaal beschikbaar
     const hero = document.getElementById('bright-hero');
     const texts = [

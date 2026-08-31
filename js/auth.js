@@ -46,23 +46,35 @@ async function handleAuth(event, type) {
             const promoCode = document.getElementById('register-promo').value.trim().toUpperCase();
             const selectedLang = document.querySelector('input[name="reg-lang"]:checked')?.value || 'en';
 
-            const { error } = await client.auth.signUp({
+            // Geen Stripe meer nergens in de flow (alleen Lemon Squeezy als betaalprovider,
+            // zie Fase 3). Een promocode bij registratie gaat voortaan door dezelfde
+            // redeem_promo_code()-RPC als de profielpagina (Fase 2), niet naar een
+            // losse (en inmiddels dode) Stripe-testlink.
+            const { data: signUpData, error } = await client.auth.signUp({
                 email,
                 password,
                 options: {
                     data: {
                         full_name: name,
-                        preferred_lang: selectedLang,
-                        is_premium: false,
-                        pending_promo: promoCode || null
+                        preferred_lang: selectedLang
                     }
                 }
             });
             if (error) throw error;
 
             if (promoCode !== "") {
-                showNotification("Account aangemaakt! Doorsturen naar betaling... 💳", "success");
-                setTimeout(() => window.location.href = "https://buy.stripe.com/test_00w9AV2wRfsyefs7Lv5c402", 1500);
+                if (signUpData.session) {
+                    // Meteen ingelogd (geen e-mailbevestiging vereist) -> code direct verzilveren
+                    const { data: redeemResult, error: redeemError } = await client.rpc('redeem_promo_code', { p_code: promoCode });
+                    if (!redeemError && redeemResult?.success) {
+                        showNotification(`Welkom ${name}! Je promocode is verzilverd ✨`, "success");
+                    } else {
+                        showNotification(`Welkom ${name}! Account aangemaakt, maar de code kon niet worden verzilverd. Probeer het opnieuw via je profiel.`, "error");
+                    }
+                } else {
+                    showNotification(`Welkom ${name}! Bevestig eerst je e-mail, verzilver de code daarna via je profiel.`, "success");
+                }
+                setTimeout(() => window.location.href = 'profiel.html', 2000);
             } else {
                 showNotification(`Welkom ${name}! Je bent geregistreerd. ✨`, "success");
                 setTimeout(() => window.location.href = 'profiel.html', 1500);

@@ -16,16 +16,73 @@
     <link rel="icon" type="image/png" href="assets/brightnews-logo-faviconv5.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wachtwoord Instellen ✨ BrightNews</title>
+    <title>Refunds | BrightNews</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/pages/profiel.css">
-    <script src="index.js"></script>
-    <script src="data/translations.js"></script>
+    <link rel="stylesheet" href="css/layout.css">
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#2ecc71">
+    <style>
+        :root {
+            --bright-green: #32cc32;
+            --dark-text: #222;
+            --light-bg: #F8FBF8;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-text);
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            display: grid;
+            gap: 2rem;
+            background-color: var(--light-bg);
+        }
+
+        section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        h1, h2 {
+            color: var(--bright-green) !important;
+        }
+
+        ul {
+            padding-left: 1.2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1rem;
+            color: var(--bright-green);
+            text-decoration: none;
+            font-weight: bold;
+        }
+       div.terms-header {
+            background: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-top: 0;
+        }
+        header{
+            margin-bottom: 0 !important;
+            border-bottom: none !important;
+        }
+    </style>
 </head>
 <body>
+
 <header>
     <nav class="container">
         <div class="nav-left-group">
@@ -42,8 +99,6 @@
                 </div>
             </div>
 
-            <!--            <a href="index.html" class="logo">Bright<span>News</span></a>-->
-
             <a href="index.html"><img src="assets/brightnews-logo.png" height="200" width="300" class="nav-logo"/></a></div>
         <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu openen">
             <span></span><span></span><span></span>
@@ -51,54 +106,58 @@
         <ul class="nav-links" id="mobileMenu">
             <li><a href="index.html" data-i18n="nav_home">Home</a></li>
             <li><a href="over-ons.html" data-i18n="nav_about">Over Ons</a></li>
-<!--            <li><a href="abonnementen.html" data-i18n="nav_premium">Abonnementen</a></li>-->
+            <li><a href="abonnementen.html" data-i18n="nav_premium">Abonnementen</a></li>
 
-<!--            <li class="nav-profile-desktop">-->
-<!--                <a href="profiel.html" class="profile-icon">-->
-<!--                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">-->
-<!--                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>-->
-<!--                        <circle cx="12" cy="7" r="4"></circle>-->
-<!--                    </svg>-->
-<!--                </a>-->
-<!--            </li>-->
+            <li class="nav-profile-desktop">
+                <a href="profiel.html" class="profile-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a>
+            </li>
 
-<!--            <li class="nav-profile-mobile">-->
-<!--                <a href="profiel.html" class="profile-link-text"  data-i18n="nav_profile">-->
-<!--                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">-->
-<!--                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>-->
-<!--                        <circle cx="12" cy="7" r="4"></circle>-->
-<!--                    </svg>-->
-<!--                    Profiel-->
-<!--                </a>-->
-<!--            </li>-->
+            <li class="nav-profile-mobile">
+                <a href="profiel.html" class="profile-link-text"  data-i18n="nav_profile">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    Profiel
+                </a>
+            </li>
         </ul>
 
     </nav>
 </header>
 
-<main class="auth-page-container">
-    <div class="auth-box auth-box-centered">
-        <div class="form-container">
-            <div class="auth-header">
-                <h2 data-i18n="reset_title">Nieuw wachtwoord 🔐</h2>
-                <p data-i18n="reset_subtitle">Kies een sterk wachtwoord dat je goed kunt onthouden.</p>
-            </div>
+<div class="terms-header">
+    <h1 data-i18n="refunds_title">Terugbetalingen ✨</h1>
+    <p data-i18n="refunds_subtitle">Niet tevreden? Je krijgt je geld terug.</p>
+</div>
 
-            <form onsubmit="updatePassword(event)">
-                <div class="input-group">
-                    <label data-i18n="label_new_password">Nieuw Wachtwoord</label>
-                    <div class="password-wrapper">
-                        <input type="password" id="new-password" placeholder="••••••••" required>
-                        <span class="toggle-password" onclick="togglePassword(event, 'new-password')">👁️</span>
-                    </div>
-                </div>
-                <button type="submit" class="btn-primary-editorial" data-i18n="btn_save_password">Wachtwoord Opslaan</button>
-            </form>
-        </div>
-    </div>
+<main>
+    <section>
+        <h2 data-i18n="refunds_sec1_title">1. 14 dagen niet-goed-geld-terug</h2>
+        <p data-i18n="refunds_sec1_text">Binnen 14 dagen na je aankoop van een Glow- of Shine-abonnement kun je op verzoek een volledige terugbetaling krijgen — ongeacht hoeveel artikelen je al hebt gelezen. Dit is een vrijwillige garantie van BrightNews, geen wettelijk verplicht recht (zie punt 2 hieronder).</p>
+    </section>
+
+    <section>
+        <h2 data-i18n="refunds_sec2_title">2. Verhouding tot je herroepingsrecht</h2>
+        <p data-i18n="refunds_sec2_text">Omdat je bij het afsluiten van een abonnement direct toegang krijgt tot premium content, vraag je bij het afrekenen expliciet om onmiddellijke levering en doe je daarmee afstand van het wettelijke herroepingsrecht van 14 dagen dat normaal voor digitale diensten geldt. Dat betekent dat we wettelijk niet verplicht zijn om terug te betalen. We bieden deze garantie toch aan, uit coulance — je betaalt pas echt als je tevreden bent.</p>
+    </section>
+
+    <section>
+        <h2 data-i18n="refunds_sec3_title">3. Hoe vraag je een terugbetaling aan?</h2>
+        <p data-i18n="refunds_sec3_text">Stuur een e-mail naar info@brightnews.online met het e-mailadres van je account en de datum van aankoop. We verwerken je verzoek binnen enkele werkdagen en betalen terug via Lemon Squeezy, op dezelfde manier als je oorspronkelijke betaling.</p>
+    </section>
+
+    <section>
+        <h2 data-i18n="refunds_sec4_title">4. Na de eerste 14 dagen</h2>
+        <p data-i18n="refunds_sec4_text">Na deze periode kun je je abonnement op elk moment stopzetten via je profielpagina. Je toegang blijft dan actief tot het einde van de lopende factuurperiode, maar er volgt geen terugbetaling voor die resterende periode. Zie onze Algemene Voorwaarden voor de volledige opzegvoorwaarden.</p>
+    </section>
 </main>
 
-<div id="notification-container"></div>
 <footer class="main-footer">
   <div class="container footer-grid">
     <!-- Kolom 1: Over & Transparantie -->
@@ -154,44 +213,9 @@
     <p data-i18n="footer_created_by">© 2026 BrightNews • All rights reserved • Created with 💚 in the Netherlands</p>
   </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script>
-    const SUPABASE_URL = 'https://rquuqypgaannrakdrabj.supabase.co';
-    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJxdXVxeXBnYWFubnJha2RyYWJqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA4MTQyODUsImV4cCI6MjA4NjM5MDI4NX0.-H5ZIcLXBflqKvC0VQGlVGIX29G-nceC9ak5IrhJCzg';
-    window.supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
-    function showNotification(message, type = 'success') {
-        const container = document.getElementById('notification-container');
-        const n = document.createElement('div');
-        n.className = `notification ${type}`;
-        n.innerText = (type === 'success' ? '✅ ' : '❌ ') + message;
-        container.appendChild(n);
-        setTimeout(() => n.classList.add('show'), 10);
-        setTimeout(() => { n.classList.remove('show'); setTimeout(() => n.remove(), 500); }, 4000);
-    }
-
-    function togglePassword(event, id) {
-        const input = document.getElementById(id);
-        input.type = input.type === 'password' ? 'text' : 'password';
-        event.target.innerText = input.type === 'password' ? '👁️' : '🙈';
-    }
-
-    async function updatePassword(event) {
-        event.preventDefault();
-        const newPassword = document.getElementById('new-password').value;
-
-        const { error } = await window.supabaseClient.auth.updateUser({
-            password: newPassword
-        });
-
-        if (error) {
-            showNotification("Fout: " + error.message, "error");
-        } else {
-            showNotification("Wachtwoord succesvol gewijzigd! Je wordt doorgestuurd...", "success");
-            setTimeout(() => window.location.href = 'profiel.html', 2000);
-        }
-    }
-</script>
+<script src="data/translations.js"></script>
+<script src="index.js"></script>
 <script>
     function toggleMobileMenu() {
         const menu = document.getElementById('mobileMenu');
