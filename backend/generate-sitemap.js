@@ -17,7 +17,9 @@ const SITE_URL = 'https://brightnews.online';
 const LAST_MODIFIED = '2026-09-01';
 
 // Bijgehouden lijst statische pagina's (Fase 4/5-opschoning gecontroleerd:
-// dit zijn exact de .html-bestanden in de root op het moment van schrijven).
+// dit zijn de .html-bestanden in de root op het moment van schrijven, minus
+// profiel.html, wachtwoord-vergeten.html en thanks.html: account-/
+// transactiepagina's zonder indexeerbare meerwaarde, bewust weggelaten).
 const PAGES = [
   { loc: '/', priority: '1.0' },
   { loc: '/over-ons.html', priority: '0.8' },
@@ -26,9 +28,6 @@ const PAGES = [
   { loc: '/algemeene-voorwaarden.html', priority: '0.3' },
   { loc: '/refunds.html', priority: '0.3' },
   { loc: '/contact.html', priority: '0.5' },
-  { loc: '/thanks.html', priority: '0.1' },
-  { loc: '/wachtwoord-vergeten.html', priority: '0.1' },
-  { loc: '/profiel.html', priority: '0.1' },
   { loc: '/launch.html', priority: '0.1' },
 ];
 
