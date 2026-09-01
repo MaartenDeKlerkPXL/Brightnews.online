@@ -2,10 +2,79 @@ const RSSParser = require('rss-parser');
 const { Mistral } = require('@mistralai/mistralai');
 const { createClient } = require('@supabase/supabase-js');
 const fs = require('fs-extra');
+const Sentiment = require('sentiment');
 require('dotenv').config();
 
-const parser = new RSSParser();
+// customFields is essentieel: zonder deze mapping leest rss-parser
+// media:content, media:thumbnail en content:encoded helemaal niet uit,
+// waardoor vrijwel elk artikel op een Unsplash-fallbackfoto terugviel
+// (gemeten: 132 van de 150 artikelen).
+const parser = new RSSParser({
+    customFields: {
+        item: [
+            ['media:content', 'media:content', { keepArray: true }],
+            ['media:thumbnail', 'media:thumbnail', { keepArray: true }],
+            ['content:encoded', 'contentEncoded'],
+        ],
+    },
+});
 const client = new Mistral({ apiKey: process.env.MISTRAL_API_KEY });
+const sentiment = new Sentiment();
+
+// media:content/media:thumbnail komen (met keepArray) als lijst van objecten
+// met de XML-attributen in .$ — pak de eerste met een bruikbare url.
+function pakMediaUrl(veld) {
+    if (!veld) return null;
+    const lijst = Array.isArray(veld) ? veld : [veld];
+    for (const m of lijst) {
+        const url = m?.$?.url || m?.url;
+        if (typeof url === 'string' && url.startsWith('http')) return url;
+    }
+    return null;
+}
+
+// Laatste redmiddel voor een echte foto: og:image van de artikelpagina zelf.
+// Alleen aangeroepen voor al geaccepteerde artikelen zonder feed-afbeelding
+// (max. een handvol fetches per run). Realistische User-Agent: sommige CDN's
+// (o.a. Cloudflare) weigeren kale bot-agents.
+async function haalOgImage(pageUrl) {
+    try {
+        const ctrl = new AbortController();
+        const timer = setTimeout(() => ctrl.abort(), 8000);
+        const res = await fetch(pageUrl, {
+            signal: ctrl.signal,
+            redirect: 'follow',
+            // Volledige browser-UA: o.a. NPR weigert kale bot-agents (getest).
+            headers: { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36' },
+        });
+        clearTimeout(timer);
+        if (!res.ok) return null;
+        const html = (await res.text()).slice(0, 200000);
+        const m = html.match(/<meta[^>]+property=["']og:image(?::secure_url)?["'][^>]+content=["']([^"']+)["']/i)
+            || html.match(/<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image["']/i);
+        return m && m[1].startsWith('http') ? m[1] : null;
+    } catch {
+        return null;
+    }
+}
+
+function wacht(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+// Retry met exponentiële backoff rond de Mistral-call (429/timeout/netwerk).
+async function mistralMetRetry(params, pogingen = 3) {
+    for (let i = 0; i < pogingen; i++) {
+        try {
+            return await client.chat.complete(params);
+        } catch (err) {
+            if (i === pogingen - 1) throw err;
+            const delay = 2000 * Math.pow(2, i);
+            console.warn(`⏳ Mistral-fout (${err.message}), nieuwe poging over ${delay}ms`);
+            await wacht(delay);
+        }
+    }
+}
 
 // Nodig om de volledige artikeltekst apart van de publieke JSON op te slaan
 // (echte paywall, Fase 1.4). SUPABASE_SERVICE_ROLE_KEY moet als GitHub Secret
@@ -39,14 +108,12 @@ const FEEDS = [
     { name: 'Bright.nl', url: 'https://www.bright.nl/rss' },
     { name: 'BusinessInsider.com', url: 'https://www.businessinsider.com/rss' },
     { name: 'Barefeetinthekitchen.com', url: 'https://barefeetinthekitchen.com/feed' },
-    { name: 'Foxsports.com', url: 'https://api.foxsports.com/v2/content/optimized-rss?partnerKey=MB0Wehpmuj2lUhuRhQaafhBjAJqaPU244mlTDK1i&size=30' },
     { name: 'Nature.com', url: 'https://www.nature.com/nature.rss' },
     { name: 'Goingzerowaste.com', url: 'https://www.goingzerowaste.com/feed/' },
     { name: 'Newatlas.com', url: 'https://newatlas.com/index.rss' },
     { name: 'Ww2.kqed.org/mindshift', url: 'https://ww2.kqed.org/mindshift/feed/' },
     { name: 'Onbetterliving.com', url: 'https://onbetterliving.com/feed/' },
     { name: 'Wellnessblogster.nl', url: 'https://wellnessblogster.nl/feed/' },
-    { name: 'Etonline.com', url: 'https://www.etonline.com/news/rss' },
     { name: 'BBC.com/culture', url: 'https://www.bbc.com/culture/feed.rss' },
     { name: 'Openaccessgovernment.org', url: 'https://www.openaccessgovernment.org/category/open-access-news/research-innovation-news/feed/' },
     { name: 'PBS.org', url: 'https://www.pbs.org/wnet/nature/blog/feed/' },
@@ -164,6 +231,34 @@ async function processNews() {
             languages[lang] = [];
         }
     }
+
+    // Persistent geheugen van beoordeelde links, los van de 150-cap in de
+    // nieuws-JSON. Zonder dit werd elk item dat uit de actuele lijst was
+    // gevallen (of eerder was afgewezen) bij elke run opnieuw door Mistral
+    // beoordeeld — verreweg de grootste kostenpost van de pipeline.
+    // Statussen: 'ok' (gepubliceerd), 'nee' (AI: niet positief),
+    // 'sent' (sentiment-voorfilter). AI-fouten worden bewust NIET onthouden,
+    // zodat die items de volgende run opnieuw geprobeerd worden.
+    let seenLinks = {};
+    try {
+        seenLinks = await fs.readJson('./data/seen_links.json');
+    } catch {
+        // Bestand bestaat nog niet (eerste run met deze feature) — leeg starten.
+    }
+
+    const statistieken = {
+        start: new Date().toISOString(),
+        kandidaten: 0,
+        alGezien: 0,
+        sentimentGeweigerd: 0,
+        aiCalls: 0,
+        aiTokens: 0,
+        afgewezen: 0,
+        incompleet: 0,
+        geaccepteerd: 0,
+        opslaanMislukt: 0,
+        feedFouten: 0,
+    };
     function fixUnsplashUrl(url) {
         if (url?.includes('unsplash.com/photos/') && !url.includes('images.unsplash.com')) {
             const id = url.split('/').pop();
@@ -178,22 +273,35 @@ async function processNews() {
             const feed = await parser.parseURL(feedInfo.url);
 
             for (const item of feed.items.slice(0, 30)) {
-                if (languages.nl.some(art => art.link === item.link)) {
+                if (!item.link) continue;
+                statistieken.kandidaten++;
+
+                if (seenLinks[item.link] || languages.nl.some(art => art.link === item.link)) {
+                    statistieken.alGezien++;
+                    continue;
+                }
+
+                // Goedkope voorfilter vóór de (betaalde) AI-call: duidelijk
+                // negatieve items direct afwijzen. AFINN is Engelstalig —
+                // niet-Engelse teksten scoren ~0 en gaan dus gewoon door naar
+                // de AI (geen oneerlijke afwijzing van bijv. NL-items).
+                const sentimentScore = sentiment.analyze(`${item.title || ''} ${item.contentSnippet || ''}`).score;
+                if (sentimentScore <= -3) {
+                    seenLinks[item.link] = { s: 'sent', t: new Date().toISOString() };
+                    statistieken.sentimentGeweigerd++;
                     continue;
                 }
 
                 console.log(`🧠 Analyseren: ${item.title}`);
 
-                // 2. Uitgebreide Afbeelding Scraper met BBC Fix
-                // 1. Uitgebreide Scraper
+                // Afbeelding uit de feed halen. Volgorde: media:content →
+                // enclosure → media:thumbnail → <img> in content:encoded/content.
                 let foundUrl =
-                    item.media?.content?.$?.url ||
-                    item['media:content']?.$?.url ||
+                    pakMediaUrl(item['media:content']) ||
                     item.enclosure?.url ||
+                    pakMediaUrl(item['media:thumbnail']) ||
                     item.contentEncoded?.match(/<img[^>]+src="([^">]+)"/i)?.[1] ||
-                    item.description?.match(/<img[^>]+src="([^">]+)"/i)?.[1] ||
-                    item.content?.match(/<img[^>]+src="([^">]+)"/i)?.[1] ||
-                    item.media?.thumbnail?.$?.url || null;
+                    item.content?.match(/<img[^>]+src="([^">]+)"/i)?.[1] || null;
 
                 if (foundUrl === "") foundUrl = null;
 
@@ -213,28 +321,65 @@ async function processNews() {
                 }
 
                 try {
-                    const chatResponse = await client.chat.complete({
+                    await wacht(500); // simpele rate limiting richting Mistral
+                    statistieken.aiCalls++;
+                    // Prompt bewust bron-getrouw (besluit review 2026-09-01):
+                    // korte samenvatting op basis van wat de bron écht zegt,
+                    // in plaats van een "artikel van minimaal 300 woorden" uit
+                    // een snippet van twee zinnen (hallucinatierisico).
+                    const chatResponse = await mistralMetRetry({
                         model: 'mistral-small-latest',
                         messages: [{
                             role: 'user',
-                            content: `Analyseer dit nieuws: "${item.title} - ${item.contentSnippet}". 
-                Als het zeer positief is, schrijf een inspirerend artikel van minimaal 300 woorden.
-                Met een pakkende titel zonder het woord inspirerend te gebruiken en max 24 letters per woord in. 
-                Geen oorlog wat of iets wat er te maken zou kunnen hebben.
+                            content: `Beoordeel dit nieuwsitem: "${item.title} - ${item.contentSnippet}".
+                Stap 1 — filter: is dit duidelijk positief, hoopgevend nieuws? Niets over oorlog, geweld, rampen, misdaad of verlies — ook niet zijdelings. Zo nee, antwoord exact {"isBright": false}.
+                Stap 2 — alleen bij positief nieuws: schrijf per taal (nl, en, de, fr, es) een feitelijke, journalistieke samenvatting (veld "s") die UITSLUITEND gebruikt wat in de titel en tekst hierboven staat. Verzin of veronderstel NIETS: geen extra feiten, namen, cijfers, citaten, achtergronden of gevolgen die er niet letterlijk in de bron staan. Is de bron kort, houd de samenvatting dan ook kort — liever 60 bron-getrouwe woorden dan tekst aangevuld met verzinsels (maximaal ±150 woorden).
+                Geef per taal ook: een pakkende titel "t" (zonder het woord "inspirerend", geen woorden langer dan 24 letters), een foto-alt-tekst "alt", een SEO-meta-beschrijving "meta_d" van max 155 tekens en relevante keywords "meta_k".
                 Classificeer in: Tech, Health, Science, Lifestyle, Environment, of Finance.
-                Genereer ook een unieke SEO meta-beschrijving (meta_d) van max 155 tekens en relevante keywords (meta_k) per taal.
                 Antwoord in JSON: {"isBright": true, "category": "...", "nl": {"t": "..", "s": "..", "alt": "..", "meta_d": "..", "meta_k": ".."}, "en": {"t": "..", "s": "..", "alt": "..", "meta_d": "..", "meta_k": ".."}, "de": {"t": "..", "s": "..", "alt": "..", "meta_d": "..", "meta_k": ".."}, "fr": {"t": "..", "s": "..", "alt": "..", "meta_d": "..", "meta_k": ".."}, "es": {"t": "..", "s": "..", "alt": "..", "meta_d": "..", "meta_k": ".."}}`
                         }],
                         responseFormat: { type: 'json_object' }
                     });
+                    statistieken.aiTokens += chatResponse.usage?.totalTokens ?? 0;
 
                     const data = verwerkAIResponse(chatResponse.choices[0].message.content);
 
-                    if (data && data.isBright) {
+                    if (data && !data.isBright) {
+                        // Definitief afgewezen: onthouden zodat dit item niet
+                        // elke run opnieuw een AI-call kost.
+                        seenLinks[item.link] = { s: 'nee', t: new Date().toISOString() };
+                        statistieken.afgewezen++;
+                    }
+
+                    // Cross-taal-validatie: alle 5 taalobjecten moeten compleet
+                    // zijn vóór er ook maar íéts gepubliceerd wordt. Zonder deze
+                    // check kon een ontbrekende taal halverwege het toevoegen
+                    // crashen en liepen de taalbestanden blijvend uit de pas.
+                    const TALEN = ['nl', 'en', 'de', 'fr', 'es'];
+                    const VELDEN = ['t', 's', 'alt', 'meta_d', 'meta_k'];
+                    const compleet = data && data.isBright
+                        && TALEN.every(l => data[l] && VELDEN.every(v => typeof data[l][v] === 'string' && data[l][v].trim().length > 0));
+
+                    if (data && data.isBright && !compleet) {
+                        // Niet in seenLinks: volgende run krijgt dit item een
+                        // nieuwe kans op een complete AI-respons.
+                        statistieken.incompleet++;
+                        console.error(`⚠️ Incomplete AI-respons (taal/veld ontbreekt), artikel overgeslagen: ${item.title}`);
+                    }
+
+                    if (compleet) {
                         const category = data.category || 'General';
                         const articleId = Date.now() + Math.random().toString(36).substr(2, 9);
 
                         let finalImage = foundUrl;
+
+                        // Geen feed-afbeelding? Probeer og:image van de
+                        // artikelpagina (alleen voor geaccepteerde artikelen,
+                        // dus hooguit een paar fetches per run).
+                        if (!finalImage && /^https?:\/\//i.test(item.link)) {
+                            finalImage = await haalOgImage(item.link);
+                            if (finalImage) console.log(`🖼️ og:image gevonden voor: ${item.title}`);
+                        }
 
                         if (!finalImage) {
                             const fallbackLijst = categoryFallbacks[category] || categoryFallbacks['General'];
@@ -273,7 +418,10 @@ async function processNews() {
                                 break;
                             }
                         }
-                        if (!opslaanGelukt) continue;
+                        if (!opslaanGelukt) {
+                            statistieken.opslaanMislukt++;
+                            continue;
+                        }
 
                         for (const lang of Object.keys(languages)) {
                             const volledigeTekst = data[lang].s;
@@ -293,13 +441,17 @@ async function processNews() {
                             });
                             if (languages[lang].length > 150) languages[lang].pop();
                         }
+                        seenLinks[item.link] = { s: 'ok', t: new Date().toISOString() };
+                        statistieken.geaccepteerd++;
                         console.log(`✨ Succes: ${item.title} toegevoegd.`);
                     }
                 } catch (aiErr) {
+                    // Bewust niet in seenLinks: volgende run opnieuw proberen.
                     console.error(`❌ AI Fout:`, aiErr.message);
                 }
             }
         } catch (feedErr) {
+            statistieken.feedFouten++;
             console.error(`❌ Feed Fout:`, feedErr.message);
         }
     }
@@ -309,6 +461,20 @@ async function processNews() {
         await fs.ensureDir('./data');
         await fs.outputJson(`./data/news_${lang}.json`, items, { spaces: 2 });
     }
+
+    // seen_links begrenzen zodat het bestand niet eindeloos groeit:
+    // bewaar de 8000 recentst beoordeelde links.
+    const MAX_SEEN = 8000;
+    const entries = Object.entries(seenLinks);
+    if (entries.length > MAX_SEEN) {
+        entries.sort((a, b) => String(b[1].t).localeCompare(String(a[1].t)));
+        seenLinks = Object.fromEntries(entries.slice(0, MAX_SEEN));
+    }
+    await fs.outputJson('./data/seen_links.json', seenLinks, { spaces: 0 });
+
+    statistieken.einde = new Date().toISOString();
+    await fs.outputJson('./data/last_run.json', statistieken, { spaces: 2 });
+    console.log('📊 Run-statistieken:', JSON.stringify(statistieken));
 }
 
 async function main() {
