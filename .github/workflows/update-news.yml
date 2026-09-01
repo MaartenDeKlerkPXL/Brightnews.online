@@ -27,7 +27,9 @@ jobs:
       - name: 🟢 Node.js instellen
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          # 22+: supabase-js (realtime) vereist native WebSocket; op Node 20
+          # crashte createClient zodra de service-key aanwezig was.
+          node-version: '22'
           cache: 'npm' # Slaat node_modules op voor snellere volgende runs
 
       - name: 📦 Dependencies installeren
