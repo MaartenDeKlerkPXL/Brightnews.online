@@ -103,6 +103,10 @@ window.openCustomerPortal = async function (event) {
 
         if (profile?.customer_portal_url) {
             window.open(profile.customer_portal_url, '_blank');
+        } else if (window.BETAAL_CONFIG?.provider === 'stripe' && window.BETAAL_CONFIG.stripe.klantportaal) {
+            // Stripe: no-code Customer Portal-loginpagina (vraagt om het
+            // e-mailadres en mailt een beveiligde inloglink).
+            window.open(window.BETAAL_CONFIG.stripe.klantportaal, '_blank');
         } else {
             window.location.href = '/profiel.html';
         }

@@ -229,7 +229,12 @@ async function executeDelete() {
         showNotification("Error", "error");
     }
 }
-async function startLemonCheckout(variantId) {
+// Provider-onafhankelijke checkout (Fase D). Welke betaalprovider actief is
+// staat in js/betaal-config.js; 'plan' is 'maandelijks' of 'jaarlijks'.
+// De gebruikerskoppeling blijft in beide gevallen server-side verifieerbaar:
+// Lemon via checkout[custom][user_id] → lemon-webhook, Stripe via
+// client_reference_id → stripe-webhook.
+async function startCheckout(plan) {
     const consentBox = document.getElementById('withdrawal-consent');
     if (consentBox && !consentBox.checked) {
         const msg = typeof getT === 'function' ? getT('withdrawal_consent_required') : "Vink eerst het vakje aan om verder te gaan.";
@@ -241,18 +246,31 @@ async function startLemonCheckout(variantId) {
 
     if (!session) {
         showNotification("Log eerst in om een abonnement af te sluiten. ✨", "error");
-        setTimeout(() => window.location.href = 'profiel.html', 1500);
+        setTimeout(() => window.location.href = '/profiel.html', 1500);
         return;
     }
 
     const userId = session.user.id;
     const userEmail = session.user.email;
+    const config = window.BETAAL_CONFIG || { provider: 'lemon', lemon: {}, stripe: {} };
 
-    // Bouw de Lemon Squeezy URL met Custom Data (user_id)
-    // We geven ook het e-mailadres alvast mee voor gemak
+    if (config.provider === 'stripe' && config.stripe[plan]) {
+        // Stripe Payment Link: volledige redirect naar checkout.stripe.com.
+        // client_reference_id komt terug in checkout.session.completed en is
+        // de koppeling naar het Supabase-account.
+        const url = `${config.stripe[plan]}?client_reference_id=${encodeURIComponent(userId)}&prefilled_email=${encodeURIComponent(userEmail)}`;
+        window.location.href = url;
+        return;
+    }
+
+    // Lemon Squeezy (huidige provider): overlay-checkout met custom user_id.
+    const variantId = config.lemon[plan];
+    if (!variantId) {
+        showNotification("Checkout is tijdelijk niet beschikbaar.", "error");
+        return;
+    }
     const checkoutUrl = `https://brightnews.lemonsqueezy.com/checkout/buy/${variantId}?checkout[custom][user_id]=${userId}&checkout[email]=${userEmail}&embed=1`;
 
-    // Open de Lemon Squeezy Overlay
     if (window.createLemonSqueezy) {
         window.createLemonSqueezy();
     }
@@ -317,7 +335,8 @@ async function handleForgotPassword(event) {
     }
 }
 
-window.startLemonCheckout = startLemonCheckout;
+window.startCheckout = startCheckout;
+window.startLemonCheckout = startCheckout; // compat met eventuele oude verwijzingen
 window.handleDeleteAccount = handleDeleteAccount;
 window.closeDeleteModal = closeDeleteModal;
 window.executeDelete = executeDelete;

@@ -16,10 +16,12 @@
 --    de CREATE TABLE-blokken zijn gereconstrueerd uit information_schema
 --    (kolommen/defaults kloppen; constraints als PK zijn aannames op basis
 --    van gebruik en gemarkeerd met een comment).
--- 3. Nog niet uitgelezen (introspectie geblokkeerd in de tooling): of
---    delete_user_immediately() daadwerkelijk als trigger op auth.users hangt.
---    Handmatig te checken in het dashboard (SQL editor):
---      select tgname from pg_trigger where tgrelid = 'auth.users'::regclass;
+-- 3. GEVERIFIEERD (2026-09-01, via information_schema.triggers): de trigger
+--    trigger_delete_user_on_request bestaat als AFTER UPDATE op auth.users
+--    en roept delete_user_immediately() aan — accountverwijdering via de
+--    "Account verwijderen"-knop werkt dus echt en direct. Aandachtspunt:
+--    de bijbehorende rij in public.profiles blijft (zonder FK/cascade) als
+--    wees achter; onschadelijk, maar opruimen kan in een onderhoudsronde.
 -- ============================================================================
 
 -- ----------------------------------------------------------------------------

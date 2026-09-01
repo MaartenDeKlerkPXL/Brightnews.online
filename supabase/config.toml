@@ -402,6 +402,14 @@ s3_secret_key = "env(S3_SECRET_KEY)"
 # JSON string passed through to pg-delta SQL formatting.
 # format_options = "{\"keywordCase\":\"upper\",\"indent\":2,\"maxWidth\":80,\"commaStyle\":\"trailing\"}"
 
+[functions.stripe-webhook]
+enabled = true
+# Zelfde principe als lemon-webhook: Stripe stuurt geen Supabase-JWT mee,
+# de Stripe-Signature-check in de functie zelf is de authenticatie.
+verify_jwt = false
+import_map = "./functions/stripe-webhook/deno.json"
+entrypoint = "./functions/stripe-webhook/index.ts"
+
 [functions.lemon-webhook]
 enabled = true
 # Bewust false: Lemon Squeezy stuurt geen Supabase-JWT mee; de HMAC-check in

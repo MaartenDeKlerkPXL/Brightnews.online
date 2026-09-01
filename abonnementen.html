@@ -30,6 +30,7 @@
     <script src="js/vendor/supabase-js-2.112.4.js" defer></script>
     <script src="js/supabase-init.js" defer></script>
     <script src="index.js" defer></script>
+    <script src="js/betaal-config.js" defer></script>
     <script src="data/translations.js" defer></script>
     <script src="js/main.js" defer></script>
     <script src="https://app.lemonsqueezy.com/js/lemon.js" defer></script>
@@ -127,7 +128,7 @@
                     Monthly renewable, cancel anytime.
                 </p>
 
-            <button onclick="startLemonCheckout('78215cb2-d818-497b-a4ea-f29424aacf6c')" class="btn-primary btn-lemon-checkout" disabled data-i18n="btn_glow">
+            <button onclick="startCheckout('maandelijks')" class="btn-primary btn-lemon-checkout" disabled data-i18n="btn_glow">
                 Choose Monthly
             </button>
         </div>
@@ -145,7 +146,7 @@
                 <p class="renewal-notice" style="font-size: 0.8em; color: #666; margin-top: 10px;" data-i18n="renewal_notice_year">
                     Yearly renewable, cancel anytime.
                 </p>
-            <button onclick="startLemonCheckout('993c7ac0-abeb-415c-a40c-ce00ef820235')" class="btn-primary btn-lemon-checkout" disabled data-i18n="btn_shine">
+            <button onclick="startCheckout('jaarlijks')" class="btn-primary btn-lemon-checkout" disabled data-i18n="btn_shine">
                 Choose Yearly
             </button>
         </div>
