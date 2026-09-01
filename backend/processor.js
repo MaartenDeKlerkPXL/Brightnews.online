@@ -16,7 +16,12 @@ const supabaseAdmin = process.env.SUPABASE_SERVICE_ROLE_KEY
     ? createClient(SUPABASE_URL, process.env.SUPABASE_SERVICE_ROLE_KEY)
     : null;
 if (!supabaseAdmin) {
-    console.warn('⚠️ SUPABASE_SERVICE_ROLE_KEY ontbreekt: volledige artikeltekst wordt NIET opgeslagen.');
+    // Zonder key zou de teaser wél gepubliceerd worden maar de volledige tekst
+    // nérgens bewaard blijven (de AI-output bestaat daarna niet meer) — premium-
+    // lezers krijgen dat artikel dan voorgoed alleen als teaser. Hard afbreken
+    // is veiliger dan half publiceren.
+    console.error('💥 SUPABASE_SERVICE_ROLE_KEY ontbreekt — run afgebroken.');
+    process.exit(1);
 }
 
 function maakTeaser(tekst, maxWoorden = 60) {
@@ -155,7 +160,7 @@ async function processNews() {
     for (const lang of Object.keys(languages)) {
         try {
             languages[lang] = await fs.readJson(`./data/news_${lang}.json`);
-        } catch (e) {
+        } catch {
             languages[lang] = [];
         }
     }
@@ -246,23 +251,32 @@ async function processNews() {
                             finalImage = uniekeOpties[Math.floor(Math.random() * uniekeOpties.length)];
                         }
 
+                        // Volledige tekst apart opslaan (alleen voor Premium-lezers
+                        // op te vragen via get_full_article()). Eerst voor ÁLLE talen
+                        // opslaan en pas daarna publiceren: mislukt één upsert, dan
+                        // slaan we het hele artikel over — anders staat er een teaser
+                        // online waarvan de volledige tekst nergens bewaard is.
+                        // Let op: supabase-js gooit niet bij een DB-fout maar geeft
+                        // { error } terug; die wordt hier dus expliciet gecheckt.
+                        let opslaanGelukt = true;
+                        for (const lang of Object.keys(languages)) {
+                            try {
+                                const { error } = await supabaseAdmin.from('articles_full').upsert({
+                                    id: String(articleId),
+                                    lang,
+                                    full_text: data[lang].s
+                                }, { onConflict: 'id,lang' });
+                                if (error) throw new Error(error.message);
+                            } catch (err) {
+                                console.error(`❌ Kon volledige tekst niet opslaan (${lang}): ${err.message} — artikel overgeslagen.`);
+                                opslaanGelukt = false;
+                                break;
+                            }
+                        }
+                        if (!opslaanGelukt) continue;
+
                         for (const lang of Object.keys(languages)) {
                             const volledigeTekst = data[lang].s;
-
-                            // Volledige tekst apart opslaan (alleen voor Premium-lezers
-                            // op te vragen via get_full_article()). De publieke JSON
-                            // krijgt vanaf nu alleen een teaser van ~60 woorden.
-                            if (supabaseAdmin) {
-                                try {
-                                    await supabaseAdmin.from('articles_full').upsert({
-                                        id: String(articleId),
-                                        lang,
-                                        full_text: volledigeTekst
-                                    }, { onConflict: 'id,lang' });
-                                } catch (err) {
-                                    console.error(`❌ Kon volledige tekst niet opslaan (${lang}):`, err.message);
-                                }
-                            }
 
                             languages[lang].unshift({
                                 id: articleId,
@@ -302,6 +316,8 @@ async function main() {
         await processNews();
         process.exit(0);
     } catch (err) {
+        // Zonder deze log toont het Action-log bij een topniveau-crash niets.
+        console.error('💥 Run mislukt:', err);
         process.exit(1);
     }
 }

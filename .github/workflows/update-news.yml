@@ -10,6 +10,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 120
+    # Voorkomt dat een handmatige dispatch en een cron-run tegelijk draaien
+    # (en elkaars push laten stranden); wachten i.p.v. afbreken.
+    concurrency:
+      group: news-update
+      cancel-in-progress: false
     permissions:
       contents: write # Nodig om de nieuwe JSON data terug te kunnen pushen
 
@@ -26,7 +31,7 @@ jobs:
           cache: 'npm' # Slaat node_modules op voor snellere volgende runs
 
       - name: 📦 Dependencies installeren
-        run: npm install
+        run: npm ci
 
       - name: 🤖 AI Verwerking (Scannen, Filteren & Vertalen)
         env:
@@ -45,13 +50,18 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "BrightNews Bot ✨"
 
-          # JSON bestanden in de data map, plus de gegenereerde sitemap/robots.txt
-          git add data/*.json sitemap.xml robots.txt
+          # Alleen de nieuws-JSON's plus de gegenereerde sitemap/robots.txt —
+          # bewust niet data/*.json, zodat een eventueel ander databestand
+          # nooit per ongeluk publiek meegecommit wordt.
+          git add data/news_*.json sitemap.xml robots.txt
 
           # Controleer of er echt iets veranderd is voor we committen
           if git diff --quiet && git diff --staged --quiet; then
             echo "Geen nieuwe artikelen gevonden."
           else
             git commit -m "🤖 Automatische nieuws update: $(date -u) [skip ci]"
+            # De AI-stap kan lang duren; is master intussen opgeschoven, dan
+            # zou de push falen en de hele run (incl. AI-kosten) verloren gaan.
+            git pull --rebase origin master
             git push origin master
           fi
