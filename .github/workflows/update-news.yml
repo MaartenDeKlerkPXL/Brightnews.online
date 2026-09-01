@@ -37,14 +37,17 @@ jobs:
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: node backend/processor.js
 
+      - name: 🗺️ Sitemap & robots.txt genereren
+        run: node backend/generate-sitemap.js
+
       - name: 💾 Wijzigingen opslaan
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "BrightNews Bot ✨"
-          
-          # Alleen JSON bestanden in de data map toevoegen
-          git add data/*.json
-          
+
+          # JSON bestanden in de data map, plus de gegenereerde sitemap/robots.txt
+          git add data/*.json sitemap.xml robots.txt
+
           # Controleer of er echt iets veranderd is voor we committen
           if git diff --quiet && git diff --staged --quiet; then
             echo "Geen nieuwe artikelen gevonden."
