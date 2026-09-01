@@ -20,6 +20,13 @@ serve(async (req) => {
     const signature = req.headers.get("X-Signature")
     const secret = Deno.env.get("LEMON_WEBHOOK_SECRET") ?? ""
 
+    // Nooit verifiëren met een lege secret: een deployment zonder env-var moet
+    // hard en zichtbaar falen, niet stilletjes handtekeningen accepteren/weigeren.
+    if (!secret) {
+        console.error("💥 LEMON_WEBHOOK_SECRET ontbreekt — webhook kan niet verifiëren")
+        return new Response(JSON.stringify({ error: "Serverconfiguratie onvolledig" }), { status: 500 })
+    }
+
     if (!(await verifySignature(rawBody, signature, secret))) {
         console.error("❌ Ongeldige signature ontvangen")
         return new Response(JSON.stringify({ error: "Ongeldige signature" }), { status: 401 })
@@ -38,6 +45,12 @@ serve(async (req) => {
 
         console.log(`📩 Event ontvangen: ${eventName} | user_id: ${userId ?? "ONTBREEKT"}`)
 
+        // Test-mode-orders (geen echt geld) mogen nooit echte premium opleveren.
+        if (payload.meta?.test_mode) {
+            console.log(`🧪 Test-mode event ${eventName} genegeerd (geen premium-wijziging)`)
+            return new Response(JSON.stringify({ message: "Test-mode event genegeerd" }), { status: 200 })
+        }
+
         if (!userId) {
             console.warn("⚠️ Geen user_id in payload — waarschijnlijk een test-event zonder custom_data")
             return new Response(JSON.stringify({ error: "Geen user_id in payload" }), { status: 400 })
@@ -46,7 +59,18 @@ serve(async (req) => {
         // Belangrijk: premiumstatus staat NIET meer in user_metadata (dat kan een
         // ingelogde gebruiker zelf overschrijven met de anon-key), maar in de
         // profiles-tabel. Alleen deze functie (service_role) mag daar in schrijven.
-        if (eventName === 'order_created' || eventName === 'subscription_created' || eventName === 'subscription_updated' || eventName === 'subscription_resumed') {
+        //
+        // subscription_updated komt óók binnen bij statuswissels naar past_due/
+        // unpaid/paused/expired, en webhook-volgorde is niet gegarandeerd: zonder
+        // statuscheck kon een late 'updated' een al verlopen abonnee weer premium
+        // maken. Premium AAN dus alleen bij een status die daadwerkelijk toegang
+        // geeft ('cancelled' hoort daarbij: opgezegd maar betaald tot einddatum);
+        // premium UIT bij statussen zonder toegang; onbekende status = geen actie.
+        const updatedStatus = eventName === 'subscription_updated' ? (attrs.status ?? '') : null
+        const updatedGeeftToegang = updatedStatus !== null && ['active', 'on_trial', 'cancelled'].includes(updatedStatus)
+        const updatedOntneemtToegang = updatedStatus !== null && ['past_due', 'unpaid', 'paused', 'expired'].includes(updatedStatus)
+
+        if (eventName === 'order_created' || eventName === 'subscription_created' || eventName === 'subscription_resumed' || updatedGeeftToegang) {
             const { error } = await supabaseClient.from('profiles').upsert({
                 id: userId,
                 is_premium: true,
@@ -62,14 +86,14 @@ serve(async (req) => {
             console.log(`✅ ${userId} is nu Premium (${eventName})`)
             return new Response(JSON.stringify({ message: "User is nu Premium! ✨" }), { status: 200 })
 
-        } else if (eventName === 'subscription_expired') {
+        } else if (eventName === 'subscription_expired' || updatedOntneemtToegang) {
             const { error } = await supabaseClient.from('profiles').update({
                 is_premium: false,
                 updated_at: new Date().toISOString()
             }).eq('id', userId)
 
             if (error) throw error
-            console.log(`⛔ ${userId} is niet langer Premium (subscription expired)`)
+            console.log(`⛔ ${userId} is niet langer Premium (${eventName}${updatedStatus ? `, status: ${updatedStatus}` : ''})`)
             return new Response(JSON.stringify({ message: "Premium beëindigd" }), { status: 200 })
 
         } else if (eventName === 'subscription_cancelled') {
@@ -83,7 +107,9 @@ serve(async (req) => {
         return new Response(JSON.stringify({ message: "Event genegeerd" }), { status: 200 })
 
     } catch (error) {
-        console.error(`💥 Fout bij verwerken: ${error.message}`)
-        return new Response(JSON.stringify({ error: error.message }), { status: 400 })
+        // Details alleen naar de serverlogs; interne foutmeldingen (bijv.
+        // Postgres-teksten) horen niet in de response naar buiten.
+        console.error(`💥 Fout bij verwerken: ${error instanceof Error ? error.message : String(error)}`)
+        return new Response(JSON.stringify({ error: "Verwerking mislukt" }), { status: 400 })
     }
 })

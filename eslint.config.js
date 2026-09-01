@@ -119,6 +119,7 @@ module.exports = [
             'data/*.json',
             'assets/**',
             'supabase/functions/**',
+            'js/vendor/**', // gebundelde third-party (self-hosted supabase-js)
             '**/._*',
         ],
     },

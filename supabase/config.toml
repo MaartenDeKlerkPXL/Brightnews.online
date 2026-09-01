@@ -404,7 +404,10 @@ s3_secret_key = "env(S3_SECRET_KEY)"
 
 [functions.lemon-webhook]
 enabled = true
-verify_jwt = true
+# Bewust false: Lemon Squeezy stuurt geen Supabase-JWT mee; de HMAC-check in
+# de functie zelf ís de authenticatie. De live functie is destijds ook met
+# --no-verify-jwt gedeployed — hiermee beschrijft de repo weer de echte staat.
+verify_jwt = false
 import_map = "./functions/lemon-webhook/deno.json"
 # Uncomment to specify a custom file path to the entrypoint.
 # Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
