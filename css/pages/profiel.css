@@ -32,7 +32,8 @@ form {
     text-align: left;
 }
 
-.input-group i {
+.input-group i,
+.input-group svg {
     color: var(--dark-text);
 }
 .full-width {
