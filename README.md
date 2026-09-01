@@ -1,122 +1,143 @@
 # BrightNews
 
-Statische, meertalige (NL/EN/DE/FR/ES) nieuwssite met uitsluitend positief nieuws.
-Draait op GitHub Pages via `CNAME` → brightnews.online. Geen server, geen
-build-stap: de HTML in de root wordt direct geserveerd. Betalingen lopen via
-Lemon Squeezy (Merchant of Record); accounts en premiumstatus via Supabase.
+Statische, meertalige (NL/EN/DE/FR/ES) nieuwssite met uitsluitend positief
+nieuws. Draait op GitHub Pages via `CNAME` → brightnews.online. Geen server,
+geen frameworks; wél één lichte buildstap in de GitHub Action die statische
+artikelpagina's genereert. Accounts en premiumstatus via Supabase. Betalingen
+lopen via Lemon Squeezy (Merchant of Record); de migratie naar **Stripe
+Managed Payments** is voorbereid — zie `STRIPE-MIGRATIE.md`.
 
 ## Hoe de pipeline werkt
 
-Twee keer per dag (`.github/workflows/update-news.yml`, cron `0 0,12 * * *`):
+Twee keer per dag (`.github/workflows/update-news.yml`, cron `0 0,12 * * *`,
+Node 22 — supabase-js vereist 22+):
 
-1. `backend/processor.js` haalt ~30 RSS-feeds op (`rss-parser`).
-2. Per item gaat titel + snippet naar Mistral (`mistral-small-latest`,
-   `responseFormat: json_object`). Het model bepaalt `isBright`, categoriseert
-   het artikel, schrijft een tekst van ~300 woorden en vertaalt naar alle 5 talen.
-3. **Teaser/volledige-tekst-splitsing (sinds Fase 1.4 — dit is de echte
-   paywall):** alleen een teaser van ~60 woorden komt in de publieke
-   `data/news_{taal}.json`. De volledige tekst gaat naar de Supabase-tabel
-   `articles_full`, met de `SUPABASE_SERVICE_ROLE_KEY` (nodig als env-var/
-   GitHub Secret — zie `.env.example`). Zonder die key slaat de pipeline
-   alléén de teaser op (met een duidelijke waarschuwing in de logs), nooit de
-   volledige tekst ergens publiek.
-4. Frontend (`index.js`) haalt de teaser-JSON op voor de lijst-/kaartweergave.
-   Bij het openen van een artikel checkt `checkUser()` de premiumstatus via de
-   Supabase-tabel `profiles` (niet via `user_metadata` — dat is door de
-   gebruiker zelf te overschrijven). Is de gebruiker Premium, dan haalt
-   `get_full_article()` (een Postgres-functie die zelf de premium-check doet)
-   de volledige tekst op. Artikelen van vóór Fase 1.4 hebben geen rij in
-   `articles_full` — daarvoor valt de weergave terug op de (volledige) tekst
-   die toen nog rechtstreeks in de JSON stond.
-5. De GitHub Action committet alleen `data/*.json` terug naar `master`
-   (`[skip ci]` in het commitbericht voorkomt een oneindige loop).
+1. `backend/processor.js` haalt ~33 RSS-feeds op (`rss-parser`, mét
+   `customFields` zodat `media:content`/`media:thumbnail`/`content:encoded`
+   echt gelezen worden — de bron van echte artikelnfoto's).
+2. **Kostenbeheersing vóór de AI**: `data/seen_links.json` (max 8000 links)
+   onthoudt alles wat al beoordeeld is — geaccepteerd ('ok'), afgewezen
+   ('nee') of door de sentiment-voorfilter ('sent', AFINN-score ≤ −3, alleen
+   betrouwbaar voor Engels; niet-Engels gaat gewoon door). Alleen echt nieuwe
+   items kosten een Mistral-call.
+3. Per nieuw item gaat titel + snippet naar Mistral (`mistral-small-latest`,
+   `responseFormat: json_object`, retry met backoff + 500 ms pacing). Het
+   model bepaalt `isBright`, categoriseert en schrijft per taal een
+   **bron-getrouwe samenvatting** (max ±150 woorden, expliciet verbod op
+   toegevoegde feiten — bewust géén opgeblazen artikel uit twee zinnen bron).
+4. **Cross-taal-validatie**: publiceren gebeurt alleen als alle 5 talen
+   compleet zijn — de taalbestanden kunnen niet meer uit de pas lopen.
+5. **Echte paywall (atomair)**: eerst gaat de volledige tekst voor álle 5
+   talen naar de Supabase-tabel `articles_full` (service_role); mislukt dat,
+   dan wordt het artikel helemaal niet gepubliceerd. Pas daarna komt de
+   teaser (~60 woorden, `maakTeaser`) in de publieke `data/news_{taal}.json`.
+   Zonder `SUPABASE_SERVICE_ROLE_KEY` breekt de run bewust hard af.
+6. Geen feed-afbeelding? Dan probeert de pipeline `og:image` van de
+   artikelpagina zelf (alleen voor geaccepteerde artikelen); daarna pas de
+   Unsplash-fallback per categorie.
+7. `backend/generate-articles.js` genereert per artikel × taal een statische
+   pagina `articles/{taal}/{slug}-{id}.html` (canonical, hreflang, OG,
+   JSON-LD NewsArticle). Incrementeel via `articles/manifest.json`;
+   **eenmaal gegenereerde pagina's worden nooit verwijderd** (geïndexeerde
+   URL's blijven bestaan).
+8. `backend/generate-sitemap.js` bouwt `sitemap.xml` (vaste pagina's + alle
+   artikel-URL's uit het manifest) en `robots.txt`.
+9. De Action committet `data/news_*.json`, `data/seen_links.json`,
+   `data/last_run.json` (kostenstatistieken per run), `articles/`,
+   `sitemap.xml` en `robots.txt` terug naar `master` (`[skip ci]`;
+   `git pull --rebase` vóór de push zodat een lange run niet strandt).
+
+## Frontend in het kort
+
+- Alle scripts laden met `defer`; de Supabase-client komt uit
+  `js/supabase-init.js` (ná de self-hosted bundle `js/vendor/supabase-js-*.js`
+  — bewust geen CDN met zwevende versie voor het script dat auth-tokens
+  hanteert).
+- Premiumcheck: `checkUser()` leest de `profiles`-tabel (RLS; nooit
+  `user_metadata`). Volledige tekst via de Postgres-functie
+  `get_full_article()` die zelf server-side de premium-status checkt.
+  Op statische artikelpagina's doet `upgradeStaticArticle()` (index.js)
+  hetzelfde client-side.
+- Deelknoppen wijzen naar de statische artikel-URL zodra die bestaat
+  (HEAD-check), anders `?id=`; oude `?id=`-links blijven altijd werken.
+- Cookiebanner wordt op élke pagina dynamisch geïnjecteerd door
+  `checkCookies()` (index.js); Google Analytics laadt pas na acceptatie
+  (Consent Mode default denied).
+- Service worker (`sw.js`): network-first voor HTML (deploys direct
+  zichtbaar), cache-first voor statische assets; geen JSON/premium in cache.
+- Iconen zijn inline SVG (geen Font Awesome/CDN meer).
+- Betaal-abstractie: `startCheckout(plan)` in `js/auth.js` leest
+  `js/betaal-config.js` (provider-switch Lemon/Stripe).
+- Verwijderde pagina's/bestanden: `launch.html`, `data/subscribers.json`,
+  `backend/generate-pdf.js` (was een per ongeluk gecommit shell-fragment).
 
 ## Lokaal draaien en testen
 
 ```bash
-npm install
-cp .env.example .env   # vul MISTRAL_API_KEY in; de rest is optioneel lokaal
-npm start                    # = node backend/processor.js
-npm run mail-test            # test de bevestigingsmail (backend/mailer.js)
+npm ci
+cp .env.example .env         # MISTRAL_API_KEY + SUPABASE_SERVICE_ROLE_KEY
+npm start                    # = node backend/processor.js (Node 22 aanbevolen)
+node backend/generate-articles.js
+node backend/generate-sitemap.js
 python3 -m http.server 8000  # frontend: open http://localhost:8000/index.html
 ```
 
-Er zijn geen geautomatiseerde tests (behalve ESLint, zie hieronder).
-Verifiëren gebeurt door de pagina's in de browser te openen en de console +
-Network-tab te controleren op fouten en 404's.
+Er zijn geen geautomatiseerde tests (behalve ESLint: `npm run lint`).
+Verifiëren gebeurt in de browser (console + Network-tab) — de statische
+artikelpagina's vereisen een http-server (absolute paden), geen `file://`.
 
-### Benodigde env-vars
+### Benodigde env-vars / secrets
 
-Zie `.env.example` voor de volledige, actuele lijst. Kort samengevat:
-
-| Variabele | Verplicht voor | Zonder deze key |
+| Variabele | Waar | Zonder deze key |
 |---|---|---|
-| `MISTRAL_API_KEY` | `npm start` (processor.js) | Pipeline crasht direct |
-| `SUPABASE_SERVICE_ROLE_KEY` | Echte paywall (processor.js schrijft volledige tekst) | Alleen teasers worden opgeslagen, met een waarschuwing in de logs — geen crash |
-| `EMAIL_USER` / `EMAIL_PASS` | `npm run mail-test` (mailer.js) | Alleen relevant als je die mail lokaal wilt testen |
+| `MISTRAL_API_KEY` | GitHub Secret + lokaal `.env` | Pipeline crasht direct |
+| `SUPABASE_SERVICE_ROLE_KEY` | GitHub Secret + lokaal `.env` | Run breekt bewust hard af (voorkomt permanent verlies van volledige teksten — dat is vóór 2026-09-01 daadwerkelijk gebeurd) |
+| `LEMON_WEBHOOK_SECRET` | Supabase Edge Function env (lemon-webhook) | Webhook weigert alles met een 500 |
+| `STRIPE_WEBHOOK_SECRET` | Supabase Edge Function env (stripe-webhook) — pas bij activatie | idem |
+| `EMAIL_USER` / `EMAIL_PASS` | alleen lokaal, legacy `npm run mail-test` | Alleen relevant voor de oude mailer; Stripe (MoR) verstuurt straks zelf de aankoopbevestigingen |
 
-In productie leest de GitHub Action deze uit **GitHub Secrets**
-(Settings → Secrets and variables → Actions), nooit uit een gecommit bestand.
 `.env` staat in `.gitignore` en mag nooit gecommit worden.
 
 ## Mappenstructuur
 
-- `*.html` (root) — alle pagina's. `index.html` is de echte app (nieuwsfeed +
-  artikeldetail). `launch.html` is een oudere countdown-/landingspagina, nog
-  bereikbaar (o.a. als redirect na accountverwijdering).
-- `index.js` (root) — kern van de frontend: taal, `laadNieuws`, `renderLijst`,
-  `toonDetail`, paywall (via `get_full_article`), cookieconsent
-  (`checkCookies`/`acceptCookies`/`activateAnalytics`), delen,
-  categoriefilter, `openCustomerPortal` (Lemon Squeezy-abonnementbeheer).
-- `js/auth.js` — Supabase-auth: in-/uitloggen, registreren, profiel-UI,
-  promocodes (via de `redeem_promo_code`-RPC, niet hardcoded), Lemon
-  Squeezy-checkout.
-- `js/main.js` — nav-highlight, taalwissel-listeners, referral-placeholder
-  (`processReferralReward`, bewust nog niet afgemaakt — zie TODO in de code).
-- `data/translations.js` — `window.translations`, alle UI-teksten per taal
-  (`data-i18n`-keys). Dit is het enige actieve vertaalsysteem.
-- `css/global.css` (variabelen/basis), `css/components.css` (nav, footer,
-  kaarten), `css/layout.css` (legacy, overschrijft nog delen van de huisstijl),
-  `css/pages/*.css` per pagina.
-- `backend/processor.js` — de nieuwspijplijn (zie hierboven).
-- `backend/mailer.js` — verstuurt de wettelijk verplichte bevestigingsmail na
-  aankoop (Strato SMTP). Alleen handmatig via `npm run mail-test`; er is geen
-  automatische trigger vanuit een betaalwebhook.
-- `data/` — `news_{lang}.json` (publieke teasers), `subscribers.json`
-  (ongebruikt, altijd leeg).
-- `supabase/functions/lemon-webhook/` — de Lemon Squeezy-webhook (Deno Edge
-  Function). **Belangrijk:** wijzigingen hier moeten na het testen ook
-  daadwerkelijk gedeployed worden (`supabase functions deploy lemon-webhook`)
-  — git en de live functie kunnen uit sync raken (dat gebeurde eerder, zie
-  Fase 1 in de audit-geschiedenis).
-- `assets/` — logo's, iDEAL-svg, T&C-PDF.
+- `*.html` (root) — de vaste pagina's; `index.html` is de nieuwsfeed + SPA-
+  artikeldetail (`?id=`).
+- `articles/{taal}/…` — gegenereerde statische artikelpagina's +
+  `manifest.json` (id → slugs/datum; bron voor de sitemap; nooit snoeien).
+- `index.js` — frontend-kern: taal/i18n, nieuws laden, detailweergave,
+  paywall, statische-pagina-upgrade, delen, cookieconsent, filters,
+  `openCustomerPortal`.
+- `js/auth.js` — Supabase-auth, profiel-UI, promocodes (RPC), `startCheckout`.
+- `js/betaal-config.js` — provider-switch + checkout-/portal-links.
+- `js/supabase-init.js`, `js/vendor/` — clientinit + self-hosted supabase-js.
+- `data/` — `news_{taal}.json` (publieke teasers), `translations.js` (alle
+  UI-teksten, 5 talen), `seen_links.json`, `last_run.json`.
+- `backend/` — `processor.js` (pipeline), `generate-articles.js`,
+  `generate-sitemap.js`, `mailer.js` (legacy), `generate-pdf-en.js`
+  (eenmalig gebruikt voor de voorwaarden-PDF).
+- `supabase/` — `config.toml`, `functions/lemon-webhook/` (live),
+  `functions/stripe-webhook/` (klaar, wacht op activatie),
+  `schema-snapshot.sql` (de beveiligings-SQL zoals live vastgelegd —
+  bijhouden bij elke schemawijziging!).
+- `assets/` — logo's, PWA-iconen (`icon-192/512.png`), T&C-PDF.
 
-## Git-branch-workflow
+## Git-workflow
 
-Sinds de audit van augustus 2026 werken we per verbeterfase in een eigen
-branch, gebaseerd op de vorige fase (niet los op `master`, zodat elke fase de
-staat van de vorige al bevat):
+Per verbeterfase een eigen branch; `master` = direct live (GitHub Pages):
 
 ```bash
-git checkout -b fase-N-naam   # vanaf de branch van fase N-1, of master als N=1
-# ... bouwen, per onderdeel testen ...
-git commit -m "Fase N: ..."   # pas na expliciete bevestiging
-git checkout master
-git merge fase-N-naam         # pas na aparte, expliciete toestemming
-git push origin master        # dit zet de wijzigingen direct live
+git checkout -b fase-X-naam
+# bouwen, testen, committen (pas na groene tests)
+git checkout master && git pull --rebase && git merge fase-X-naam
+git push origin master   # = deploy
 ```
 
-Vóór elke fase: controleer of er verschil zit tussen wat in git staat en wat
-er eventueel al rechtstreeks live/gedeployed is aangepast (relevant gebleken
-bij zowel de Lemon Squeezy-webhook als een pagina-specifieke
-vertaal-override) — niet blind van git-historie uitgaan.
+Wijzigingen aan een Supabase-function zijn pas live ná een aparte deploy
+(Management-API of `supabase functions deploy <naam> --no-verify-jwt`) —
+git en live kunnen anders uit sync raken; check dat bij twijfel eerst.
 
-## Bekende openstaande punten
+## Openstaande punten
 
-- `backend/generate-pdf.js` bevat geen geldige JavaScript (een per ongeluk
-  gecommit shell-heredoc) en `backend/generate-pdf-en.js` is leeg. Beide
-  worden nergens aangeroepen; nog niet opgeschoond.
-- `js/main.js` → `processReferralReward()` is een bewuste placeholder: het
-  referralsysteem is nooit afgemaakt (zie de TODO-comment in de code).
-- Zie de audit-geschiedenis (per-fase commits) voor het volledige overzicht
-  van wat al wel is opgelost.
+Zie `BRIGHTNEWS-OVERDRACHT-FABLE.md` voor het actuele, volledige overzicht
+(o.a. Stripe-activatie via `STRIPE-MIGRATIE.md`, sitemap indienen bij Google
+Search Console, promocode-hardening, grants-verharding, feed-gezondheid).
