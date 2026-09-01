@@ -16,6 +16,34 @@ function getT(key, fallback = "...") {
     return fallback;
 }
 
+// HOUD IN SYNC met maakSlug() in backend/generate-articles.js: beide moeten
+// voor dezelfde titel exact dezelfde slug opleveren (deelknoppen berekenen
+// hiermee de URL van de statische artikelpagina).
+function maakArtikelSlug(titel) {
+    return String(titel).toLowerCase()
+        .normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '')
+        .slice(0, 80) || 'artikel';
+}
+
+// Deel-URL voor een artikel: de statische pagina zodra die bestaat (beter
+// voor previews/SEO), anders de oude ?id=-vorm (racecondition vlak na
+// publicatie: de statische pagina wordt pas bij de volgende Action-run
+// gegenereerd). Bestaande ?id=-links blijven sowieso gewoon werken.
+async function bepaalDeelUrl(artikel, refCode) {
+    const fallback = `${window.location.origin}${window.location.pathname}?ref=${refCode}&id=${artikel.id}`;
+    try {
+        const slug = maakArtikelSlug(artikel.title);
+        const staticPad = `/articles/${window.huidigeTaal}/${slug}-${artikel.id}.html`;
+        const res = await fetch(staticPad, { method: 'HEAD' });
+        if (res.ok) return `${window.location.origin}${staticPad}?ref=${refCode}`;
+    } catch {
+        // netwerk/404 — val terug op de ?id=-vorm
+    }
+    return fallback;
+}
+
 // Vervangt het jaartal in de footer door het huidige jaar, ongeacht welke taal
 // er net vertaald is. Idempotent (mag vaker draaien zonder schade).
 function updateFooterYear() {
@@ -58,13 +86,13 @@ function vertaalStatischeTeksten(lang) {
 window.openCustomerPortal = async function (event) {
     if (event) event.preventDefault();
     if (!window.supabaseClient) {
-        window.location.href = 'profiel.html';
+        window.location.href = '/profiel.html';
         return;
     }
     try {
         const { data: { session } } = await window.supabaseClient.auth.getSession();
         if (!session) {
-            window.location.href = 'profiel.html';
+            window.location.href = '/profiel.html';
             return;
         }
         const { data: profile } = await window.supabaseClient
@@ -76,11 +104,11 @@ window.openCustomerPortal = async function (event) {
         if (profile?.customer_portal_url) {
             window.open(profile.customer_portal_url, '_blank');
         } else {
-            window.location.href = 'profiel.html';
+            window.location.href = '/profiel.html';
         }
     } catch (e) {
         console.error('Kon klantportaal niet openen:', e.message);
-        window.location.href = 'profiel.html';
+        window.location.href = '/profiel.html';
     }
 };
 // 4. De enige echte Initialisatie functie
@@ -117,6 +145,65 @@ async function initApp() {
     if (typeof checkCookies === 'function') checkCookies();
 
     await laadNieuws(savedLang);
+    upgradeStaticArticle();
+}
+
+// Statische artikelpagina's (articles/{taal}/…): waardeer de servertekst
+// client-side op. Premium-lezers krijgen de volledige tekst via
+// get_full_article(); voor pre-Fase-1.4-artikelen (geen rij in articles_full)
+// valt dit terug op de volledige summary uit de nieuws-JSON. Zet ook de
+// deelknoppen en de juiste paywall-CTA.
+async function upgradeStaticArticle() {
+    const host = document.querySelector('[data-static-article]');
+    if (!host) return;
+    const id = host.getAttribute('data-article-id');
+    const lang = host.getAttribute('data-article-lang');
+
+    // Deelknoppen werken voor iedereen, ook zonder login.
+    const currentUser = (await window.supabaseClient?.auth.getUser())?.data?.user;
+    const refCode = currentUser ? currentUser.id : 'gast';
+    window.currentArticleUrl = `${window.location.origin}${window.location.pathname}?ref=${refCode}`;
+    updateShareLinks(document.title, window.currentArticleUrl);
+
+    const userStatus = await checkUser();
+
+    if (userStatus.ingelogd && !userStatus.premium) {
+        // Ingelogd maar geen premium: CTA "upgrade" i.p.v. "log in".
+        const cta = host.querySelector('.paywall-overlay button');
+        if (cta) {
+            cta.setAttribute('data-i18n', 'btn_upgrade_now');
+            cta.textContent = getT('btn_upgrade_now');
+        }
+    }
+    if (!userStatus.premium) return;
+
+    let volledigeTekst = null;
+    try {
+        const { data, error } = await window.supabaseClient
+            .rpc('get_full_article', { p_id: String(id), p_lang: lang });
+        if (!error && data) volledigeTekst = data;
+    } catch (e) {
+        console.error('Kon volledig artikel niet ophalen:', e.message);
+    }
+    if (!volledigeTekst && window.huidigeTaal === lang) {
+        // Pre-Fase-1.4-artikel: de volledige tekst staat (zolang het artikel
+        // in de actuele lijst zit) nog als summary in de nieuws-JSON.
+        const artikel = (window.alleArtikelen || []).find(a => String(a.id) === String(id));
+        if (artikel?.summary && !artikel.summary.trim().endsWith('...') && artikel.summary.split(' ').length > 60) {
+            volledigeTekst = artikel.summary;
+        }
+    }
+    if (!volledigeTekst) return;
+
+    const bodyEl = host.querySelector('[data-role="body"]');
+    if (!bodyEl) return;
+    bodyEl.innerHTML = '';
+    String(volledigeTekst).split(/\n+/).map(s => s.trim()).filter(Boolean).forEach(alinea => {
+        const p = document.createElement('p');
+        p.textContent = alinea;
+        bodyEl.appendChild(p);
+    });
+    host.querySelector('.paywall-overlay')?.remove();
 }
 
 async function checkUser() {
@@ -157,8 +244,10 @@ async function laadNieuws(taal) {
         // 1. Werk de globale taal-variabele bij zodat de rest van de site de juiste taal gebruikt
         huidigeTaal = taal;
 
-        // 2. Haal de verse JSON-data op. We gebruiken Date.now() om caching-problemen te voorkomen
-        const res = await fetch(`data/news_${taal}.json?v=${Date.now()}`);
+        // 2. Haal de verse JSON-data op. We gebruiken Date.now() om caching-
+        // problemen te voorkomen. Absoluut pad: dit script draait ook op
+        // /articles/{taal}/-pagina's, waar een relatief pad stuk zou lopen.
+        const res = await fetch(`/data/news_${taal}.json?v=${Date.now()}`);
         if (!res.ok) throw new Error(`Fetch fout: ${res.status}`);
 
         // 3. Sla de opgehaalde artikelen op in de globale lijst 'alleArtikelen'
@@ -235,7 +324,7 @@ async function toonDetail(id) {
 
     const currentUser = (await window.supabaseClient?.auth.getUser())?.data?.user;
     const refCode = currentUser ? currentUser.id : 'gast';
-    const referralUrl = `${window.location.origin}${window.location.pathname}?ref=${refCode}&id=${id}`;
+    const referralUrl = await bepaalDeelUrl(artikel, refCode);
 
     window.currentArticleUrl = referralUrl;
 
@@ -259,12 +348,17 @@ async function toonDetail(id) {
         }
     } else {
         const woorden = artikel.summary.split(' ');
+        // Ook een teaser die al server-side is ingekort (eindigt op "...")
+        // verdient de premium-CTA; met alleen de >60-woordencheck kregen
+        // nieuwe (bron-ingekorte) artikelen nooit een upgrade-knop te zien.
+        const isIngekort = woorden.length > 60 || artikel.summary.trim().endsWith('...');
         if (woorden.length > 60) {
             displayContent = woorden.slice(0, 60).join(' ') + "...";
-            const i18nKey = userStatus.ingelogd ? 'btn_upgrade_now' : 'btn_login_to_read';
-            paywallHTML = `<div class="paywall-overlay"><div class="paywall-content"><h3 data-i18n="premium_title">${getT('premium_title')}</h3><p data-i18n="premium_text">${getT('premium_text')}</p><button onclick="window.location.href='profiel.html'" class="btn-primary-editorial" data-i18n="${i18nKey}">${getT(i18nKey)}</button></div></div>`;
         }
-        setTimeout(() => updateShareLinks(artikel.title, referralUrl), 150);
+        if (isIngekort) {
+            const i18nKey = userStatus.ingelogd ? 'btn_upgrade_now' : 'btn_login_to_read';
+            paywallHTML = `<div class="paywall-overlay"><div class="paywall-content"><h3 data-i18n="premium_title">${getT('premium_title')}</h3><p data-i18n="premium_text">${getT('premium_text')}</p><button onclick="window.location.href='/profiel.html'" class="btn-primary-editorial" data-i18n="${i18nKey}">${getT(i18nKey)}</button></div></div>`;
+        }
     }
     const shareHtml = `
     <div class="share-section">
@@ -360,7 +454,9 @@ async function toonDetail(id) {
         }
     }
 
-    setTimeout(() => updateShareLinks(artikel.title, window.location.href), 150);
+    // Eén plek voor de deel-links: referralUrl wijst naar de statische
+    // artikelpagina zodra die bestaat (zie bepaalDeelUrl), anders ?id=.
+    setTimeout(() => updateShareLinks(artikel.title, referralUrl), 150);
 }
 function renderLijst(artikelen) {
     const container = document.getElementById('news-container');
@@ -517,6 +613,19 @@ function terugNaarOverzicht() {
 
 async function wisselTaal(lang, labelTekst, event) {
     if (event) event.preventDefault();
+
+    // Op een statische artikelpagina navigeert taalwisselen naar de
+    // taalvariant van hetzelfde artikel (de hreflang-alternates), zodat
+    // artikeltekst en site-chrome dezelfde taal houden.
+    const statischArtikel = document.querySelector('[data-static-article]');
+    if (statischArtikel) {
+        const alt = statischArtikel.getAttribute(`data-alt-${lang}`);
+        if (alt) {
+            localStorage.setItem('selectedLanguage', lang);
+            window.location.href = alt;
+            return;
+        }
+    }
 
     // 1. Update dropdown label
     const btn = document.getElementById('current-lang');
@@ -732,8 +841,8 @@ window.addEventListener('popstate', () => {
 });
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-        // Gebruik ook hier ./ zodat hij de projectnaam in de URL begrijpt
-        navigator.serviceWorker.register('./sw.js')
+        // Absoluut pad met root-scope: werkt ook vanaf /articles/{taal}/-pagina's.
+        navigator.serviceWorker.register('/sw.js')
             .then(reg => console.log('BrightNews PWA: Actief ✨'))
             .catch(err => console.log('PWA Fout:', err));
     });

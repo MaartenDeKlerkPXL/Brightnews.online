@@ -1,8 +1,9 @@
 // Genereert sitemap.xml en robots.txt in de root van de site. Draait als
-// stap in .github/workflows/update-news.yml zodat beide bestanden altijd
-// meegenomen en up-to-date zijn. Bevat alleen de statische pagina's (geen
-// losse artikel-URL's: die bestaan niet als losse HTML-bestanden, artikelen
-// worden client-side gerenderd vanuit data/news_*.json).
+// stap in .github/workflows/update-news.yml (ná generate-articles.js) zodat
+// beide bestanden altijd up-to-date zijn. Bevat de statische pagina's plus
+// álle artikel-URL's uit articles/manifest.json — ook van artikelen die uit
+// de actuele nieuws-JSON zijn gevallen (eenmaal geïndexeerde URL's blijven
+// bestaan, Fase 6-besluit).
 const fs = require('fs');
 const path = require('path');
 
@@ -30,10 +31,30 @@ const PAGES = [
   { loc: '/contact.html', priority: '0.5' },
 ];
 
+// Artikel-URL's uit het manifest van generate-articles.js. lastmod is de
+// publicatiedatum van het artikel (stabiel, dus geen commit-ruis).
+function artikelUrls() {
+  const manifestPad = path.join(__dirname, '..', 'articles', 'manifest.json');
+  if (!fs.existsSync(manifestPad)) return [];
+  const manifest = JSON.parse(fs.readFileSync(manifestPad, 'utf8'));
+  const urls = [];
+  for (const [id, entry] of Object.entries(manifest.articles || {})) {
+    const lastmod = entry.date ? String(entry.date).slice(0, 10) : LAST_MODIFIED;
+    for (const [lang, slug] of Object.entries(entry.slugs || {})) {
+      urls.push({ loc: `/articles/${lang}/${slug}-${id}.html`, priority: '0.6', lastmod });
+    }
+  }
+  return urls;
+}
+
 function generateSitemap() {
-  const urls = PAGES.map(({ loc, priority }) => `  <url>
+  const alles = [
+    ...PAGES.map(p => ({ ...p, lastmod: LAST_MODIFIED })),
+    ...artikelUrls(),
+  ];
+  const urls = alles.map(({ loc, priority, lastmod }) => `  <url>
     <loc>${SITE_URL}${loc}</loc>
-    <lastmod>${LAST_MODIFIED}</lastmod>
+    <lastmod>${lastmod}</lastmod>
     <priority>${priority}</priority>
   </url>`).join('\n');
 
