@@ -5,6 +5,11 @@
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 30px;
     padding: 20px 0;
+    /* Reserveer alvast schermhoogte terwijl de kaarten laden: de pagina
+       rendert (sinds de defer-scripts) vóór de nieuwsdata binnen is, en
+       zonder deze regel stond de footer eerst bovenin en werd hij daarna
+       een heel scherm omlaag geduwd (CLS 0.85). */
+    min-height: 100vh;
 }
 
 .news-card {
@@ -103,69 +108,6 @@
         font-size: 1.25rem; /* Iets kleinere titels voor betere leesbaarheid */
     }
 }
-.cookie-overlay {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    animation: slideUp 0.5s ease-out;
-}
-
-.cookie-content {
-    background: white;
-    padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    max-width: 800px;
-    border: 1px solid #eee;
-}
-
-.cookie-icon { font-size: 2rem; }
-.cookie-text h3 { margin: 0 0 5px 0; font-size: 1.1rem; }
-.cookie-text p { margin: 0; font-size: 0.9rem; color: #666; }
-
-.cookie-buttons { display: flex; gap: 10px; }
-
-.btn-cookie-accept {
-    /* --bright-green-text i.p.v. --bright-green: wit-op-#32CD32 haalt het
-       WCAG-contrast niet (2,1:1), wit-op-#157615 wel. */
-    background: var(--bright-green-text, #157615);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-    white-space: nowrap;
-}
-
-.btn-cookie-decline {
-    background: #f1f1f1;
-    color: #666;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    white-space: nowrap;
-}
-
-@keyframes slideUp {
-    from { transform: translateY(100px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
-
-/* Mobiel vriendelijk */
-@media (max-width: 600px) {
-    .cookie-content { flex-direction: column; text-align: center; }
-    .cookie-buttons { width: 100%; flex-direction: column; }
-
-}
 /* --- Desktop & Basis Styles voor de Filters --- */
 .filter-wrapper {
     display: flex;
@@ -181,6 +123,9 @@
     justify-content: center;
     flex-wrap: wrap; /* Zorgt dat ze op kleine laptops niet buiten beeld vallen */
     width: 100%;
+    /* Hoogte alvast reserveren: de knoppen worden pas na het laden van de
+       data gerenderd en duwden anders het nieuwsgrid omlaag (CLS). */
+    min-height: 46px;
 }
 
 /* De knoppen zelf (styling gebaseerd op je eerdere kaarten-stijl) */
@@ -212,18 +157,23 @@
 }
 
 /* --- Mobiele Optimalisatie (Telefoons) --- */
+/* Horizontaal scrollende balk i.p.v. zeven gestapelde full-width-knoppen:
+   die stapel duwde het nieuws een heel scherm omlaag (én gaf een grote
+   layout-verschuiving zodra de knoppen na het laden verschenen). */
 @media (max-width: 600px) {
     .category-bar {
-        flex-direction: column; /* DE FIX: Alles onder elkaar */
-        align-items: stretch;   /* Zorgt dat knoppen even breed worden */
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
         gap: 10px;
-        padding: 0 20px;        /* Beetje ademruimte aan de zijkanten */
+        padding: 0 20px 6px;    /* Beetje ademruimte + plek voor de scrollbar */
+        min-height: 54px;
+        -webkit-overflow-scrolling: touch;
     }
 
     .filter-btn {
-        width: 100%;            /* Knop vult de hele breedte van de bar */
-        text-align: center;
-        padding: 14px;          /* Iets groter 'tap-oppervlak' voor duimen */
+        flex: 0 0 auto;         /* Niet krimpen: knoppen scrollen zijwaarts */
+        padding: 12px 18px;     /* Groter 'tap-oppervlak' voor duimen */
         font-size: 1rem;
     }
 

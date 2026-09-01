@@ -843,3 +843,81 @@ body {
         font-weight: 700;
     }
 }
+
+/* Inline SVG-iconen (Fase 7: Font Awesome vervangen). Ze erven kleur en
+   grootte van de tekst, zoals de FA-<i>'s deden. */
+.social-btn svg,
+.share-main-btn svg,
+.share-dropdown svg {
+    vertical-align: -0.125em;
+}
+.share-dropdown a,
+.share-dropdown button {
+    line-height: 1;
+}
+
+/* Cookiebanner (Fase 7: verplaatst uit pages/index.css — de banner wordt
+   nu op elke pagina dynamisch geinjecteerd door checkCookies() in index.js). */
+.cookie-overlay {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    animation: slideUp 0.5s ease-out;
+}
+
+.cookie-content {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    border: 1px solid #eee;
+}
+
+.cookie-icon { font-size: 2rem; }
+.cookie-text h3 { margin: 0 0 5px 0; font-size: 1.1rem; }
+.cookie-text p { margin: 0; font-size: 0.9rem; color: #666; }
+
+.cookie-buttons { display: flex; gap: 10px; }
+
+.btn-cookie-accept {
+    /* --bright-green-text i.p.v. --bright-green: wit-op-#32CD32 haalt het
+       WCAG-contrast niet (2,1:1), wit-op-#157615 wel. */
+    background: var(--bright-green-text, #157615);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn-cookie-decline {
+    background: #f1f1f1;
+    color: #666;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Mobiel vriendelijk */
+@media (max-width: 600px) {
+    .cookie-content { flex-direction: column; text-align: center; }
+    .cookie-buttons { width: 100%; flex-direction: column; }
+
+}
