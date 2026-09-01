@@ -1,5 +1,6 @@
 window.translations = {
   "nl": {
+    "skip_to_content": "Ga naar hoofdinhoud",
     "footer_address": "Vossenstraat 19, 6286BW Nijswiller, Nederland",
     "footer_kvk_label": "KvK",
     "footer_kvk_val": "42048341",
@@ -221,6 +222,7 @@ window.translations = {
   },
 
   "en": {
+    "skip_to_content": "Skip to main content",
     "footer_address": "Vossenstraat 19, 6286BW Nijswiller, The Netherlands",
     "footer_kvk_label": "KvK",
     "footer_kvk_val": "42048341",
@@ -441,6 +443,7 @@ window.translations = {
   },
 
   "de": {
+    "skip_to_content": "Zum Hauptinhalt springen",
     "footer_address": "Vossenstraat 19, 6286BW Nijswiller, Niederlande",
     "footer_kvk_label": "KvK",
     "footer_kvk_val": "42048341",
@@ -660,6 +663,7 @@ window.translations = {
   },
 
   "fr": {
+    "skip_to_content": "Aller au contenu principal",
     "footer_address": "Vossenstraat 19, 6286BW Nijswiller, Pays-Bas",
     "footer_kvk_label": "KvK",
     "footer_kvk_val": "42048341",
@@ -879,6 +883,7 @@ window.translations = {
   },
 
   "es": {
+    "skip_to_content": "Saltar al contenido principal",
     "footer_address": "Vossenstraat 19, 6286BW Nijswiller, Países Bajos",
     "footer_kvk_label": "KvK",
     "footer_kvk_val": "42048341",

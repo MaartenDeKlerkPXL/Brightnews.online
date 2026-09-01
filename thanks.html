@@ -61,6 +61,46 @@
             box-shadow: 0 10px 20px rgba(50, 205, 50, 0.15);
         }
 
+        /* Fase 5.4: skip-link (deze pagina laadt css/global.css niet, dus
+           een eigen kopie van de stijl). */
+        .skip-link {
+            position: absolute;
+            top: -60px;
+            left: 0;
+            background-color: #157615;
+            color: #fff;
+            padding: 12px 20px;
+            z-index: 100000;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 0 0 12px 0;
+            transition: top 0.2s ease;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Fase 5.5: zichtbare focusring (zie ook css/global.css) */
+        a:focus-visible,
+        button:focus-visible,
+        summary:focus-visible,
+        input:focus-visible,
+        [tabindex]:focus-visible {
+            outline: 3px solid #157615;
+            outline-offset: 2px;
+        }
+
+        /* Fase 5.7: prefers-reduced-motion (zie ook css/global.css) */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
         h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
@@ -112,15 +152,25 @@
             text-decoration: underline;
         }
     </style>
+    <!-- Pre-existing bug, gevonden tijdens Fase 5 (niet veroorzaakt door deze
+         fase): deze pagina laadde index.js niet, waardoor wisselTaal() en
+         vertaalStatischeTeksten() ondefinieerd waren (kapotte taaldropdown +
+         een ongeconditioneerde aanroep die bij elke paginalading een
+         ReferenceError gooide). data/translations.js is ook nodig, anders
+         blijft getT() altijd de fallback "..." teruggeven en vertaalt er
+         niets echt. -->
+    <script src="data/translations.js"></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
+<a href="#main-content" class="skip-link" data-i18n="skip_to_content">Skip to main content</a>
 <header>
     <nav class="container">
         <div class="nav-left-group">
-            <div class="dropdown language-picker">
-                <button class="dropbtn" id="current-lang">
+            <details class="dropdown language-picker">
+                <summary class="dropbtn" id="current-lang">
                     🇺🇸 English <span class="arrow">▼</span>
-                </button>
+                </summary>
                 <div class="dropdown-content">
                     <a href="#" onclick="wisselTaal('en', '🇺🇸 English', event)">🇺🇸 English</a>
                     <a href="#" onclick="wisselTaal('nl', '🇳🇱 Nederlands', event)">🇳🇱 Nederlands</a>
@@ -128,7 +178,7 @@
                     <a href="#" onclick="wisselTaal('fr', '🇫🇷 Français', event)">🇫🇷 Français</a>
                     <a href="#" onclick="wisselTaal('es', '🇪🇸 Español', event)">🇪🇸 Español</a>
                 </div>
-            </div>
+            </details>
 
             <!--            <a href="index.html" class="logo">Bright<span>News</span></a>-->
 
@@ -163,7 +213,7 @@
 
     </nav>
 </header>
-    <div class="thanks-container">
+    <div class="thanks-container" id="main-content" tabindex="-1">
         <div class="icon-circle">✨</div>
         <h1 id="thanks-title" data-i18n="thanks_title">Stellar news!</h1>
         <p id="thanks-message" data-i18n="thanks_message">

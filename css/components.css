@@ -26,13 +26,17 @@ header {
     padding: 1rem 0;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    /* Moet boven de Hero en andere pagina-inhoud blijven staan. */
+    z-index: 2000;
+    overflow: visible;
     box-shadow: var(--shadow-sm);
 }
 
 nav.container {
     display: flex;
     align-items: center;
+    position: relative;
+    overflow: visible;
 }
 
 /* Taal Dropdown (Helemaal links) */
@@ -61,67 +65,106 @@ nav.container {
 }
 
 .filter-btn.active {
-    background: var(--bright-green);
+    background: var(--bright-green-text);
     color: white;
-    border-color: var(--bright-green);
+    border-color: var(--bright-green-text);
 }
 
 .dropbtn {
-    background-color: var(--light-bg);
-    color: var(--dark-text);
-    padding: 8px 14px;
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-sm);
-    cursor: pointer;
+    background-color: white;
+    color: #333;
+    padding: 6px 14px;
+    font-size: 14px;
     font-weight: 600;
-    font-size: 0.85rem;
+    border: 2px solid var(--bright-green-text);
+    border-radius: 20px;
+    cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 8px;
-    transition: var(--transition);
+    gap: 6px;
+    transition: all 0.2s ease;
 }
 
 .dropbtn:hover {
-    background-color: #EEF5EE;
-    border-color: var(--bright-green);
+    background-color: #f0fff0;
+    border-color: var(--bright-green-text);
+}
+
+/* <details> geeft native toetsenbordbediening (Enter/Space op summary);
+   het standaard driehoekje wordt verborgen, we tonen zelf al een pijltje. */
+.dropdown summary.dropbtn {
+    list-style: none;
+}
+
+.dropdown summary.dropbtn::-webkit-details-marker,
+.dropdown summary.dropbtn::marker {
+    display: none;
+    content: "";
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
+    z-index: 2001; /* Hoger dan de header */
+}
+
+.arrow {
+    font-size: 10px;
+    transition: transform 0.3s;
+}
+.arrow2 {
+    font-size: 10px;
+    transition: transform 0.3s;
+    padding-left: 7rem;
+}
+
+.dropdown:hover .arrow,
+.dropdown[open] .arrow {
+    transform: rotate(180deg);
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    left: 0;
     top: 100%;
-    background-color: var(--white);
-    min-width: 170px;
-    box-shadow: var(--shadow-md);
-    border-radius: var(--radius-md);
-    border: 1px solid var(--border-color);
-    margin-top: 8px;
-    overflow: hidden;
-    z-index: 10;
+    left: 0;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 12px;
+    padding: 8px 0;
+    margin-top: 0;
+    z-index: 9999;
+}
+
+/* Onzichtbaar blokje om de hover-brug te garanderen (vult het gat tussen knop en menu) */
+.dropdown-content::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: transparent;
 }
 
 .dropdown-content a {
     color: #333;
-    padding: 12px 16px;
+    padding: 10px 16px;
     text-decoration: none;
     display: block;
-    font-size: 0.9rem;
+    font-size: 14px;
     font-weight: 500;
     transition: background 0.2s;
 }
 
 .dropdown-content a:hover {
-    background-color: var(--light-bg);
-    color: var(--bright-green);
+    background-color: #f0fff0;
+    color: var(--bright-green-text);
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,
+.dropdown[open] .dropdown-content {
     display: block;
 }
 
@@ -180,7 +223,7 @@ nav.container {
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: var(--bright-green);
+    color: var(--bright-green-text);
 }
 
 /* Profiel Icoon */
@@ -192,7 +235,7 @@ nav.container {
 }
 
 .profile-icon:hover {
-    color: var(--bright-green);
+    color: var(--bright-green-text);
     transform: scale(1.1);
 }
 
@@ -233,172 +276,6 @@ footer {
     width: 100%;
 }
 
-/* De wrapper */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* De knop: kleiner en rond (pill-vorm) */
-.dropbtn {
-    background-color: white;
-    color: #4CAF50;
-    padding: 6px 16px; /* Kleiner gemaakt voor nav-bar look */
-    font-size: 14px;   /* Iets kleiner font */
-    font-weight: 600;
-    border: 2px solid #4CAF50;
-    border-radius: 20px; /* Mooie ronde vorm */
-    cursor: pointer;
-    transition: all 0.2s ease;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.arrow {
-    font-size: 10px;
-    transition: transform 0.3s;
-}
-.arrow2 {
-    font-size: 10px;
-    transition: transform 0.3s;
-    padding-left: 7rem;
-}
-
-.dropdown:hover .arrow {
-    transform: rotate(180deg);
-}
-
-.dropbtn:hover {
-    background-color: #f0fff0;
-}
-
-/* De dropdown inhoud */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
-    z-index: 100;
-    border-radius: 12px;
-
-    /* DE FIX: Plaats hem iets hoger zodat hij de knop overlapt */
-    top: calc(100% - 2px);
-    left: 0;
-    padding: 8px 0;
-}
-
-/* Extra onzichtbaar blokje om de hover-brug te garanderen */
-.dropdown-content::before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: 0;
-    width: 100%;
-    height: 10px;
-}
-
-.dropdown-content a {
-    color: #333;
-    padding: 10px 16px;
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
-}
-
-.dropdown-content a:hover {
-    background-color: #f0fff0;
-    color: #4CAF50;
-}
-
-/* Tonen bij hover op de container */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-.dropdown-content {
-    /* ... je andere styles ... */
-    top: 90%; /* Zet hem iets hoger zodat hij de knop overlapt */
-    padding-top: 10px; /* Maak een onzichtbaar gebied voor je muis */
-}
-/* De hoofdcontainer die alles bij elkaar houdt */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Compacte ronde knop */
-.dropbtn {
-    background-color: white;
-    color: #333;
-    padding: 6px 14px; /* Nav-bar formaat */
-    font-size: 14px;
-    font-weight: 600;
-    border: 2px solid #4CAF50;
-    border-radius: 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-/* De dropdown inhoud */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
-    z-index: 100;
-    border-radius: 12px;
-    top: 100%; /* Direct onder de knop */
-    left: 0;
-    margin-top: 0;
-    padding: 8px 0;
-}
-
-/* DE CRUCIALE FIX: De onzichtbare brug */
-.dropdown-content::before {
-    content: "";
-    position: absolute;
-    top: -15px; /* Dit vult het gat boven het menu op */
-    left: 0;
-    width: 100%;
-    height: 15px;
-    background: transparent;
-}
-
-/* Zorg dat het menu open blijft zolang je in de .dropdown container bent */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-/* 1. De Navigatie/Header (De 'vader' van de dropdown) */
-/* Deze MOET een hogere z-index hebben dan de Hero */
-header, .navbar, nav {
-    position: relative; /* Noodzakelijk voor z-index */
-    z-index: 2000 !important;
-    overflow: visible !important;
-}
-
-/* 2. De Dropdown Container */
-.dropdown {
-    position: relative;
-    display: inline-block;
-    z-index: 2001; /* Hoger dan de header */
-}
-
-/* 3. De Dropdown Content (De talenlijst) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%; /* Direct onder de knop */
-    left: 0;
-    z-index: 9999 !important;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-    border-radius: 12px;
-}
 /* Verberg hamburger standaard op desktop */
 .hamburger {
     display: none;
@@ -436,24 +313,7 @@ nav.container {
     margin-right: 2.5rem;
 }
 
-/* Verberg de mobiele profiel-link op desktop */
-.nav-profile-mobile {
-    display: none !important;
-}
 /* --- 3. RESPONSIVE NAV --- */
-
-
-/* Het icoontje naast de links op desktop */
-.desktop-profile {
-    display: flex;
-    align-items: center;
-    margin-right: 10px; /* Ruimte tussen icoon en hamburger (als die er is) */
-}
-
-/* Verberg de tekst-link die in de mobiele lijst staat */
-.nav-profile-mobile {
-    display: none !important;
-}
 
 /* --- Desktop Layout (Basis) --- */
 nav.container {
@@ -476,11 +336,6 @@ nav.container {
     align-items: center;
     gap: 1.5rem;
     margin-left: auto;
-}
-
-/* Verberg mobiele elementen op desktop */
-.nav-profile-mobile, .hamburger {
-    display: none !important;
 }
 
 .nav-right-group {
@@ -533,11 +388,6 @@ nav.container {
     display: flex;
     color: var(--dark-text);
     transition: 0.2s;
-}
-
-/* Verberg mobiele elementen op desktop */
-.nav-profile-mobile, .hamburger {
-    display: none !important;
 }
 
 /* 1. De Navigatie Container */
@@ -668,18 +518,16 @@ nav.container {
     align-items: center;
 }
 
-/* Verberg mobiele elementen op desktop */
+/* Verberg mobiele elementen op desktop (enige overgebleven declaratie, geen
+   !important nodig: de mobiele media query staat later in dit bestand en
+   wint daar via de normale cascade-volgorde, zonder wapenwedloop). */
 .hamburger, .nav-profile-mobile {
-    display: none !important;
+    display: none;
 }
 
 .nav-profile-desktop {
     display: flex; /* Zichtbaar op desktop */
     align-items: center;
-}
-
-.nav-profile-mobile {
-    display: none !important; /* Verberg de tekstversie op desktop */
 }
 
 
@@ -802,7 +650,7 @@ nav.container {
     transition: 0.3s;
 }
 
-.footer-links ul li a:hover { color: var(--bright-green); padding-left: 5px; }
+.footer-links ul li a:hover { color: var(--bright-green-text); padding-left: 5px; }
 
 .social-icons {
     display: flex;
@@ -826,10 +674,10 @@ nav.container {
 }
 
 .social-btn:hover {
-    background: var(--bright-green);
+    background: var(--bright-green-text);
     color: white;
     transform: translateY(-5px);
-    border-color: var(--bright-green);
+    border-color: var(--bright-green-text);
 }
 
 .footer-bottom {
@@ -887,38 +735,67 @@ body {
     .framework-badge { justify-content: center; }
 }
 /* --- MOBIEL (Alleen voor telefoons) --- */
+/* Was hierboven verspreid over negen losse, deels tegenstrijdige media-query
+   blokken (elk met !important om een eerder blok te overrulen). Samengevoegd
+   tot één blok met de waarden die daadwerkelijk gerenderd werden, geen
+   !important meer nodig omdat dit nu de enige declaratie per selector is.
+   .logo (tekst-wordmark), .desktop-profile, .desktop-profile-li, .nav-actions
+   en .language-left zijn dode selectors (nergens meer in gebruik in de HTML)
+   en zijn hier niet overgenomen. */
 @media (max-width: 768px) {
-    .logo {
-        position: absolute !important;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-    }
-    .nav-links {
-        display: none; /* Jouw bestaande mobiele menu logica */
-    }
-    .hamburger {
-        display: flex !important;
-    }
-}
-@media (max-width: 768px) {
-    /* Het menu dat uitklapt */
-    .nav-links {
-        display: none; /* Standaard uit */
-        flex-direction: column !important; /* Dwing alles onder elkaar */
-        position: absolute;
-        top: 70px; /* Moet gelijk zijn aan de hoogte van je header */
-        left: 0;
-        width: 100%;
-        background-color: #ffffff;
-        padding: 40px 0; /* Ruimte aan boven- en onderkant */
-        gap: 25px; /* Gelijke ruimte tussen elk menu-item */
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        z-index: 999;
-        list-style: none;
-        margin: 0;
+    nav.container {
+        justify-content: space-between;
+        position: relative;
+        padding: 0 15px;
     }
 
-    /* Zorg dat de linkjes zelf ook mooi gecentreerd zijn */
+    .nav-right-group {
+        gap: 1rem;
+        z-index: 11;
+    }
+
+    .nav-logo {
+        width: 11rem;
+        height: auto;
+    }
+
+    .language-picker {
+        z-index: 11;
+    }
+
+    .dropbtn {
+        padding: 6px 10px;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-right: 3rem;
+    }
+
+    /* Het uitklapmenu */
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        box-shadow: var(--shadow-md);
+        z-index: 1000;
+        list-style: none;
+        margin: 0;
+        text-align: center;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
     .nav-links li {
         width: 100%;
         text-align: center;
@@ -931,254 +808,28 @@ body {
         width: 100%;
     }
 
-    /* --- HET PROFIEL GEDEELTE --- */
-    .nav-profile-mobile {
-        display: flex !important; /* Zorg dat hij ECHT zichtbaar is op mobiel */
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        padding-top: 25px;
-        border-top: 1px solid #eee; /* Scheidingslijn tussen menu en profiel */
-    }
-
-    .profile-link-text {
-        color: var(--bright-green) !important;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-}
-/* --- Mobiele Instellingen (< 768px) --- */
-@media (max-width: 768px) {
+    /* Profielgedeelte onderaan het uitklapmenu */
     .nav-profile-desktop {
-        display: none !important; /* Verberg het losse icoontje in het menu */
-    }
-
-    .nav-profile-mobile {
-        display: flex !important; /* Toon de tekstversie 'Mijn Profiel' */
-        justify-content: center;
-        width: 100%;
-        margin-top: 10px;
-        padding-top: 20px;
-        border-top: 1px solid #eee;
-    }
-}
-/* --- Mobiele Media Query --- */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none; /* Verberg menu standaard */
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        background: white;
-        flex-direction: column;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .nav-links.active { display: flex !important; }
-
-    /* Verberg het icoon op mobiel, toon de tekst "Mijn Profiel" */
-    .desktop-profile-li { display: none !important; }
-    .nav-profile-mobile { display: block !important; border-top: 1px solid #eee; margin-top: 10px; }
-
-    .hamburger { display: flex !important; flex-direction: column; gap: 5px; }
-}
-
-@media (max-width: 768px) {
-    .nav-right-group {
-        gap: 1rem;
-    }
-
-    .language-left {
-        margin-right: 1rem;
-    }
-}
-@media (max-width: 768px) {
-    nav.container {
-        justify-content: space-between;
-        position: relative; /* Nodig voor centreren logo */
-        padding: 0 15px;
-    }
-
-    /* Logo Perfect in het Midden */
-    .logo {
-        margin: 0;
-        font-size: 1.2rem;
-        z-index: 10;
-    }
-    .nav-logo {
-        width: 11rem;
-        height: auto;
-    }
-
-    /* Talenkiezer Links */
-    .language-picker {
-        z-index: 11;
-    }
-
-    .dropbtn { padding: 6px 10px; }
-
-    /* Hamburger & Profiel Rechts */
-    .nav-right-group {
-        z-index: 11;
-    }
-
-    .hamburger {
-        margin-right: 3rem;
-        display: flex; }
-
-    /* Het uitklapmenu */
-    .nav-links {
-        display: none; /* Standaard dicht */
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: white;
-        flex-direction: column;
-        padding: 20px;
-        gap: 15px;
-        border-bottom: 1px solid var(--border-color);
-        box-shadow: 0 10px 15px rgba(0,0,0,0.05);
-        text-align: center;
-    }
-
-    .nav-links.active {
-        display: flex; /* Open als active class aanwezig is */
-    }
-
-    .nav-actions {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-    }
-}
-@media (max-width: 768px) {
-    nav.container {
-        justify-content: space-between;
-        position: relative;
-        height: 70px; /* Vaste hoogte voor de nav */
-    }
-
-    /* Het menu dat uitklapt */
-    .nav-links {
-        display: none; /* Standaard uit */
-        position: absolute;
-        top: 70px; /* Precies onder de nav bar */
-        left: 0;
-        width: 100%;
-        background: white;
-        flex-direction: column;
-        padding: 30px 20px;
-        gap: 20px;
-        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
-        z-index: 1000;
-        border-top: 1px solid #eee;
-    }
-
-    /* Wanneer het menu 'active' is, tonen we het */
-    .nav-links.active {
-        display: flex !important;
-    }
-
-    /* Styling voor de profielknop binnen de lijst */
-    .nav-profile-mobile {
-        margin-top: 10px;
-        padding-top: 20px;
-        border-top: 1px solid #eee;
-        width: 100%;
-    }
-
-    .profile-link-text {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 700;
-        color: var(--bright-green) !important;
-    }
-}
-/* --- Mobiele Media Query Aanpassing --- */
-
-@media (max-width: 768px) {
-    .nav-links {
-        margin-left: 0; /* Reset de margin op mobiel */
-        margin-right: 0;
-        /* Je bestaande mobiele styles blijven hier staan... */
         display: none;
-        position: absolute;
-        top: 70px;
-        left: 0;
+    }
+
+    .nav-profile-mobile {
+        display: block;
         width: 100%;
-        background: white;
-        flex-direction: column;
-        padding: 30px 20px;
-        gap: 20px;
-    }
-
-    .nav-links.active {
-        display: flex !important;
-    }
-
-    /* Toon de profiel-link ALLEEN op mobiel */
-    .nav-profile-mobile {
-        display: block !important;
-        margin-top: 10px;
-        padding-top: 20px;
-        border-top: 1px solid #eee;
-    }
-}
-/* --- Desktop Instellingen --- */
-/* --- Mobiele Instellingen --- */
-
-@media (max-width: 768px) {
-    /* Verberg het losse icoontje op mobiel */
-    .desktop-profile {
-        display: none !important;
-    }
-
-    /* Toon de tekst-link IN het hamburger menu */
-    .nav-profile-mobile {
-        display: block !important;
         margin-top: 15px;
         padding-top: 15px;
         border-top: 1px solid #eee;
     }
-}
 
-/* --- Mobiele Layout (< 768px) --- */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none; /* Verberg standaard op mobiel */
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: white;
-        flex-direction: column;
-        padding: 20px;
-        box-shadow: var(--shadow-md);
-    }
-
-    /* Toon menu bij klik */
-    .nav-links.active {
-        display: flex !important;
-    }
-
-    /* Toon hamburger en mobiel profiel */
-    .hamburger {
-        display: flex !important;
-    }
-
-    .nav-profile-mobile {
-        display: block !important;
-        border-top: 1px solid #eee;
-        padding-top: 15px;
-    }
-
-    /* Verberg desktop profiel-icoon op mobiel */
-    .desktop-profile {
-        display: none !important;
+    /* .nav-links a heeft hogere specificiteit (.nav-links a = 0,1,1) dan
+       .profile-link-text alleen (0,1,0); zonder !important zou de grijze
+       kleur van .nav-links a hier winnen ondanks dat deze regel later staat. */
+    .profile-link-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: var(--bright-green-text) !important;
+        font-weight: 700;
     }
 }

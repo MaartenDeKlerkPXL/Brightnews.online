@@ -553,6 +553,12 @@ async function wisselTaal(lang, labelTekst, event) {
         btn.innerHTML = `${labelTekst} <span class="arrow">▼</span>`;
     }
 
+    // Sluit de <details>-dropdown na keuze (blijft anders open staan)
+    if (event && event.target) {
+        const openDetails = event.target.closest('details.dropdown');
+        if (openDetails) openDetails.removeAttribute('open');
+    }
+
     // 2. Synchroniseer de taal overal
     localStorage.setItem('selectedLanguage', lang);
     window.huidigeTaal = lang;
@@ -655,6 +661,18 @@ window.checkCookies = checkCookies;
 
 // De enige event listener die je nodig hebt:
 document.addEventListener('DOMContentLoaded', initApp);
+
+// Sluit een open taal-dropdown (<details class="dropdown">) met Escape,
+// zodat toetsenbordgebruikers het menu ook zonder muis kunnen sluiten.
+document.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape') return;
+    const openDetails = document.querySelector('details.dropdown[open]');
+    if (openDetails) {
+        openDetails.removeAttribute('open');
+        const summary = openDetails.querySelector('summary');
+        if (summary) summary.focus();
+    }
+});
 
 function filterByMetadata(category, btn) {
     const allBtn = document.querySelector('.filter-btn:first-child'); // De 'All' knop

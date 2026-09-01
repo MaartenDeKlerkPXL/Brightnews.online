@@ -8,6 +8,12 @@
 :root {
     /* Kleurenpalet - Positief & Fris */
     --bright-green: #32CD32;      /* De kleur van groei en positiviteit */
+    /* WCAG AA voor tekst/kleine interactieve elementen (knoppen, links, iconen,
+       focusring): --bright-green geeft slechts 2,12:1 contrast op wit, dat
+       haalt de vereiste 4,5:1 niet. --bright-green-text geeft 5,78:1. Gebruik
+       --bright-green alleen nog voor grote decoratieve vlakken/logotype. */
+    --bright-green-text: #157615;
+    --bright-green-text-hover: #106b11; /* 6,70:1 op wit, voor :hover-varianten */
     --bright-yellow: #FFD700;     /* De kleur van de zon */
     --white: #FFFFFF;
     --light-bg: #F8FBF8;          /* Hele zachte groene tint in de achtergrond */
@@ -75,7 +81,7 @@ p {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--bright-green);
+    background-color: var(--bright-green-text);
     color: var(--white);
     border: none;
     padding: 14px 28px;
@@ -88,7 +94,7 @@ p {
 }
 
 .btn-primary:hover {
-    background-color: #2BB52B;
+    background-color: var(--bright-green-text-hover);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(50, 205, 50, 0.3);
 }
@@ -116,8 +122,8 @@ p {
 
 .btn-secondary:hover {
     background-color: var(--white);
-    border-color: var(--bright-green);
-    color: var(--bright-green);
+    border-color: var(--bright-green-text);
+    color: var(--bright-green-text);
 }
 
 /* 7. Utility Classes */
@@ -250,4 +256,61 @@ p {
 
 .bright-toast.error p {
     color: #d63031;
+}
+
+/* Fase 5.4: Skip-link. Onzichtbaar tot een toetsenbordgebruiker 'm focust
+   (Tab als eerste stop op de pagina), dan zichtbaar linksboven zodat de
+   hele nav/dropdown/hamburger-structuur kan worden overgeslagen. */
+.skip-link {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    background-color: var(--bright-green-text);
+    color: var(--white);
+    padding: 12px 20px;
+    z-index: 100000;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 0 0 var(--radius-md) 0;
+    transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Fase 5.5: zichtbare focusring voor toetsenbordgebruikers. :focus-visible
+   (i.p.v. :focus) zodat de ring alleen verschijnt bij toetsenbordnavigatie,
+   niet bij een muisklik. Werkt ook op <summary> (de taaldropdown uit item 2)
+   en op de links/checkbox in het hamburgermenu en de footer, die verder
+   geen eigen focusstijl hebben. Moderne browsers laten de ring vanzelf de
+   border-radius van het element volgen, dus geen aparte border-radius nodig. */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+    outline: 3px solid var(--bright-green-text);
+    outline-offset: 2px;
+}
+
+/* Fase 5.7: prefers-reduced-motion. De site heeft tientallen losse
+   transition/transform/animation-declaraties verspreid over alle
+   CSS-bestanden (knoppen, kaarten, dropdowns, toasts, de mobiele-menu-
+   animatie, enz.) — die één voor één overschrijven zou zeer foutgevoelig
+   zijn. Deze algemene regel (het gangbare WCAG-patroon) verkort ALLE
+   animaties/transities site-breed tot vrijwel nul voor wie dat in het OS
+   heeft ingesteld, zonder ze te verwijderen (transitionend/animationend
+   blijven vuren, wat JS dat daarop wacht niet breekt). !important is hier
+   bewust en noodzakelijk: het moet elke component-specifieke duration
+   overrulen, ongeacht waar die verderop in de cascade staat. */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }

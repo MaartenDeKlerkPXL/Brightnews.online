@@ -71,7 +71,7 @@
 }
 
 .simple-steps li strong {
-    color: var(--bright-green);
+    color: var(--bright-green-text);
     min-width: 140px;
     font-size: 1.1rem;
 }

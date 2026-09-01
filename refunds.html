@@ -82,14 +82,15 @@
     </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link" data-i18n="skip_to_content">Ga naar hoofdinhoud</a>
 
 <header>
     <nav class="container">
         <div class="nav-left-group">
-            <div class="dropdown language-picker">
-                <button class="dropbtn" id="current-lang">
+            <details class="dropdown language-picker">
+                <summary class="dropbtn" id="current-lang">
                     🇺🇸 English <span class="arrow">▼</span>
-                </button>
+                </summary>
                 <div class="dropdown-content">
                     <a href="#" onclick="wisselTaal('en', '🇺🇸 English', event)">🇺🇸 English</a>
                     <a href="#" onclick="wisselTaal('nl', '🇳🇱 Nederlands', event)">🇳🇱 Nederlands</a>
@@ -97,7 +98,7 @@
                     <a href="#" onclick="wisselTaal('fr', '🇫🇷 Français', event)">🇫🇷 Français</a>
                     <a href="#" onclick="wisselTaal('es', '🇪🇸 Español', event)">🇪🇸 Español</a>
                 </div>
-            </div>
+            </details>
 
             <a href="index.html"><img src="assets/brightnews-logo.png" height="200" width="300" class="nav-logo"/></a></div>
         <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu openen">
@@ -136,7 +137,7 @@
     <p data-i18n="refunds_subtitle">Niet tevreden? Je krijgt je geld terug.</p>
 </div>
 
-<main>
+<main id="main-content" tabindex="-1">
     <section>
         <h2 data-i18n="refunds_sec1_title">1. 14 dagen niet-goed-geld-terug</h2>
         <p data-i18n="refunds_sec1_text">Binnen 14 dagen na je aankoop van een Glow- of Shine-abonnement kun je op verzoek een volledige terugbetaling krijgen — ongeacht hoeveel artikelen je al hebt gelezen. Dit is een vrijwillige garantie van BrightNews, geen wettelijk verplicht recht (zie punt 2 hieronder).</p>

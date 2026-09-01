@@ -29,13 +29,14 @@
     <meta name="theme-color" content="#2ecc71">
 </head>
 <body>
+<a href="#main-content" class="skip-link" data-i18n="skip_to_content">Ga naar hoofdinhoud</a>
 <header>
     <nav class="container">
         <div class="nav-left-group">
-            <div class="dropdown language-picker">
-                <button class="dropbtn" id="current-lang">
+            <details class="dropdown language-picker">
+                <summary class="dropbtn" id="current-lang">
                     🇺🇸 <span class="lang-text">English</span> <span class="arrow">▼</span>
-                </button>
+                </summary>
                 <div class="dropdown-content">
                     <a href="#" onclick="wisselTaal('en', '🇺🇸 English', event)">🇺🇸 English</a>
                     <a href="#" onclick="wisselTaal('nl', '🇳🇱 Nederlands', event)">🇳🇱 Nederlands</a>
@@ -43,7 +44,7 @@
                     <a href="#" onclick="wisselTaal('fr', '🇫🇷 Français', event)">🇫🇷 Français</a>
                     <a href="#" onclick="wisselTaal('es', '🇪🇸 Español', event)">🇪🇸 Español</a>
                 </div>
-            </div>
+            </details>
 
             <!--            <a href="index.html" class="logo">Bright<span>News</span></a>-->
 
@@ -78,7 +79,7 @@
 
     </nav>
 </header>
-<main class="pricing-page-wrapper">
+<main class="pricing-page-wrapper" id="main-content" tabindex="-1">
     <section class="pricing-intro">
         <h1 data-i18n="pricing_title">Kies jouw dosis zonneschijn ☀️</h1>
     </section>

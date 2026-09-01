@@ -97,14 +97,15 @@
   </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link" data-i18n="skip_to_content">Ga naar hoofdinhoud</a>
 
 <header>
   <nav class="container">
     <div class="nav-left-group">
-      <div class="dropdown language-picker">
-        <button class="dropbtn" id="current-lang">
+      <details class="dropdown language-picker">
+        <summary class="dropbtn" id="current-lang">
           🇺🇸 English <span class="arrow">▼</span>
-        </button>
+        </summary>
         <div class="dropdown-content">
           <a href="#" onclick="wisselTaal('en', '🇺🇸 English', event)">🇺🇸 English</a>
           <a href="#" onclick="wisselTaal('nl', '🇳🇱 Nederlands', event)">🇳🇱 Nederlands</a>
@@ -112,7 +113,7 @@
           <a href="#" onclick="wisselTaal('fr', '🇫🇷 Français', event)">🇫🇷 Français</a>
           <a href="#" onclick="wisselTaal('es', '🇪🇸 Español', event)">🇪🇸 Español</a>
         </div>
-      </div>
+      </details>
 
       <!--            <a href="index.html" class="logo">Bright<span>News</span></a>-->
 
@@ -153,7 +154,7 @@
   <p data-i18n="contact_subtitle">We horen graag van je!</p>
 </div>
 
-<main class="container">
+<main class="container" id="main-content" tabindex="-1">
   <section>
     <h2 data-i18n="contact_mail_header">Stuur ons een mailtje</h2>
     <p data-i18n="contact_mail_text">
