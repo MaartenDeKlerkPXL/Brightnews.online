@@ -481,6 +481,16 @@ nav.container {
     position: relative;
 }
 
+/* Logo-afbeelding op desktop begrenzen: de width/height-attributen op de
+   <img> zijn 300×200 en zonder CSS-regel rendert het logo op die volle
+   grootte in de 80px hoge navigatiebalk. Mobiel (max-width: 768px) wordt
+   verderop overschreven naar width: 11rem. */
+.nav-logo {
+    height: 64px;
+    width: auto;
+    display: block;
+}
+
 /* Groepeer taal en logo aan de linkerkant */
 .nav-left-group {
     display: flex;

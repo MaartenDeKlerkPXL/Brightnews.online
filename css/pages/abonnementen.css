@@ -4,7 +4,12 @@
        dat de container niet meegroeit met absolute/scaled kinderen. */
     display: block !important;
     width: 100% !important;
-    min-height: 100vh !important;
+    /* GEEN min-height: 100vh hier: als flex-item in de body-kolom (sticky
+       footer, components.css) zorgde die juist dat de wrapper op exact
+       100vh bleef hangen terwijl de kaarten eruit stroomden — de reden dat
+       de footer ooit met margin-top: 90rem omlaag geduwd moest worden.
+       De body-flex houdt de footer op korte pagina's toch al onderaan. */
+    min-height: auto !important;
     height: auto !important; /* Forceer groei */
     background-color: var(--light-bg) !important;
     box-sizing: border-box !important;
@@ -32,8 +37,7 @@
     display: block !important;
     position: relative !important;
     clear: both !important;
-    /* De marge werkt nu wel omdat de wrapper (main) nu wel een correcte hoogte heeft */
-    margin-top: 15rem !important;
+    margin-top: 4rem !important;
 }
 
 .pricing-intro {
@@ -197,7 +201,7 @@
     .pricing-page-wrapper {
         display: block !important; /* Block werkt op mobiel stabieler voor hoogte-berekening */
         height: auto !important;
-        min-height: 100vh !important;
+        min-height: auto !important; /* zie uitleg bij de basisregel bovenaan */
         padding-top: 100px !important;
         padding-bottom: 80px !important; /* Ruimte boven de footer */
         overflow: visible !important;
@@ -254,7 +258,7 @@
     .main-footer {
         position: relative !important;
         display: block !important;
-        margin-top: 90rem !important;
+        margin-top: 4rem !important;
         z-index: 10;
     }
 }

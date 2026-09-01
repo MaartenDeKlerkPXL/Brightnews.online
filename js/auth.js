@@ -222,7 +222,7 @@ async function executeDelete() {
             showNotification(successMsg, "success");
             setTimeout(async () => {
                 await client.auth.signOut();
-                window.location.href = 'launch.html';
+                window.location.href = 'index.html';
             }, 2500);
         }
     } catch (err) {

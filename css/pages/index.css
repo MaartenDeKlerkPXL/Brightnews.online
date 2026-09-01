@@ -133,7 +133,9 @@
 .cookie-buttons { display: flex; gap: 10px; }
 
 .btn-cookie-accept {
-    background: var(--bright-green, #2ecc71);
+    /* --bright-green-text i.p.v. --bright-green: wit-op-#32CD32 haalt het
+       WCAG-contrast niet (2,1:1), wit-op-#157615 wel. */
+    background: var(--bright-green-text, #157615);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -201,9 +203,11 @@
 }
 
 .filter-btn.active {
-    background: var(--bright-green, #2ecc71);
+    /* --bright-green-text i.p.v. --bright-green: wit-op-#32CD32 haalt het
+       WCAG-contrast niet (2,1:1), wit-op-#157615 wel. */
+    background: var(--bright-green-text, #157615);
     color: white;
-    border-color: var(--bright-green, #2ecc71);
+    border-color: var(--bright-green-text, #157615);
     box-shadow: 0 4px 15px rgba(46, 204, 113, 0.2);
 }
 

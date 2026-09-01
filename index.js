@@ -34,6 +34,16 @@ function vertaalStatischeTeksten(lang) {
                 el.innerHTML = vertaling;
             }
         });
+        // Attribuut-varianten: vertaal placeholder- en aria-label-attributen
+        // (innerHTML zou hier de verkeerde plek raken).
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+            const vertaling = getT(el.getAttribute('data-i18n-placeholder'));
+            if (vertaling !== "...") el.setAttribute('placeholder', vertaling);
+        });
+        document.querySelectorAll('[data-i18n-aria-label]').forEach(el => {
+            const vertaling = getT(el.getAttribute('data-i18n-aria-label'));
+            if (vertaling !== "...") el.setAttribute('aria-label', vertaling);
+        });
         updateFooterYear();
     };
 
@@ -107,7 +117,6 @@ async function initApp() {
     if (typeof checkCookies === 'function') checkCookies();
 
     await laadNieuws(savedLang);
-    if (typeof checkGlowStatus === 'function') checkGlowStatus();
 }
 
 async function checkUser() {
@@ -189,19 +198,31 @@ async function toonDetail(id) {
     const container = document.getElementById('news-container');
     const detailNav = document.getElementById('detail-navigation');
 
-    // Zoek dit stukje in toonDetail:
+    // Guard vóórdat de elementen gebruikt worden: op pagina's zonder
+    // nieuws-container valt hier verder niets te tonen.
+    if (!detailView || !container) return;
+
     if (detailNav) detailNav.style.display = 'block';
     container.style.display = 'none';
     detailView.style.display = 'block';
 
-// VOEG DIT TOE:
     const filterWrapper = document.querySelector('.filter-wrapper');
     if (filterWrapper) filterWrapper.style.display = 'none';
 
-    if (!detailView || !container) return;
-
     const artikel = alleArtikelen.find(a => String(a.id) === String(id));
-    if (!artikel) return;
+    if (!artikel) {
+        // Gedeelde link naar een artikel dat niet (meer) in de actuele lijst
+        // staat (de JSON bevat max. 150 artikelen): nette melding i.p.v. een
+        // blanco pagina.
+        updateMetaTags(null);
+        detailView.innerHTML = `
+        <div class="article-container" style="max-width: 600px; margin: 0 auto; padding: 60px 20px; text-align: center;">
+            <h1 data-i18n="article_gone_title" style="color: #1a1a1a;">${getT('article_gone_title', 'Dit artikel is niet meer beschikbaar')}</h1>
+            <p data-i18n="article_gone_text">${getT('article_gone_text', 'Het nieuws op BrightNews wordt doorlopend ververst; dit artikel is inmiddels uit het actuele overzicht verdwenen.')}</p>
+            <button onclick="terugNaarOverzicht()" class="btn-primary-editorial" data-i18n="article_gone_btn">${getT('article_gone_btn', 'Naar het overzicht')}</button>
+        </div>`;
+        return;
+    }
 
     updateMetaTags(artikel);
     // Sla positie op
@@ -217,10 +238,6 @@ async function toonDetail(id) {
     const referralUrl = `${window.location.origin}${window.location.pathname}?ref=${refCode}&id=${id}`;
 
     window.currentArticleUrl = referralUrl;
-
-    if (detailNav) detailNav.style.display = 'block';
-    container.style.display = 'none';
-    detailView.style.display = 'block';
 
     let displayContent = artikel.summary;
     let paywallHTML = "";
@@ -266,61 +283,6 @@ async function toonDetail(id) {
             </div>
         </div>
     </div>
-    
-
-
-    <footer class="main-footer">
-  <div class="container footer-grid">
-    <!-- Kolom 1: Over & Transparantie -->
-    <div class="footer-about">
-      <div class="footer-logo">Bright<span>News</span></div>
-      <p data-i18n="footer_text">Founded and developed by Maarten de Klerk...</p>
-      <div class="footer-legal-info">
-        <p data-i18n="footer_address">Vossenstraat 19, 6286BW Nijswiller, <br>The Netherlands
-        <span data-i18n="footer_kvk_label">KvK</span>: <span data-i18n="footer_kvk_val">42048341</span><span data-i18n="footer_more_info"><br>For more info, visit our</span>
-          <a href="Privacy.html" data-i18n="footer_privacy_link">Privacy Page</a></p>
-      </div>
-    </div>
-
-    <!-- Kolom 2: Explore -->
-    <div class="footer-links">
-      <h4 data-i18n="footer_explore">Explore</h4>
-      <ul>
-        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
-        <li><a href="over-ons.html" data-i18n="footer_mission">Our Mission</a></li>
-        <li><a href="abonnementen.html" data-i18n="footer_subs">Subscriptions</a></li>
-        <li><a href="profiel.html" data-i18n="footer_acc">My Account</a></li>
-      </ul>
-    </div>
-
-    <!-- Kolom 3: Community -->
-    <div class="footer-links">
-      <h4 data-i18n="footer_community">Community</h4>
-      <ul>
-        <li><a href="Privacy.html" data-i18n="footer_privacy">Privacy Policy</a></li>
-        <li><a href="algemeene-voorwaarden.html" data-i18n="footer_service_terms">Terms of Service</a></li>
-        <li><a href="contact.html" data-i18n="footer_support">Contact Support</a></li>
-      </ul>
-    </div>
-
-    <!-- Kolom 4: Socials & Badge -->
-    <div class="footer-socials">
-      <h4 data-i18n="footer_follow">Follow BrightNews</h4>
-      <div class="social-icons">
-        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
-        <a href="mailto:info@brightnews.online" class="social-btn"><i class="fas fa-envelope"></i></a>
-      </div>
-      <div class="framework-badge">
-        <span data-i18n="footer_no_frameworks">100% Vanilla JS • No Frameworks</span>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p data-i18n="footer_created_by">© 2026 BrightNews • All rights reserved • Created with 💚 in the Netherlands</p>
-  </div>
-</footer>
 <p class="ai-disclaimer" data-role="ai-disclaimer" style="text-align: center; font-style: italic; color: #666; margin-top: 30px; font-size: 0.85em;"></p>
 `;
 // --- DEFINITIES VOOR DATUM (Nodig voor weergave en Google) ---
@@ -355,7 +317,7 @@ async function toonDetail(id) {
         </header>
 
         <section class="article-body" itemprop="articleBody">
-            <p data-role="body"></p>
+            <div data-role="body"></div>
             ${paywallHTML}
             ${shareHtml}
         </section>
@@ -370,7 +332,16 @@ async function toonDetail(id) {
     };
 
     detailView.querySelector('[data-role="title"]').textContent = artikel.title;
-    detailView.querySelector('[data-role="body"]').textContent = displayContent;
+
+    // Alinea's behouden: de volledige tekst (uit get_full_article) bevat
+    // newline-scheidingen die met één textContent-toewijzing als één blok
+    // zouden renderen. Per alinea een <p>, nog steeds via textContent (XSS-veilig).
+    const bodyEl = detailView.querySelector('[data-role="body"]');
+    String(displayContent).split(/\n+/).map(s => s.trim()).filter(Boolean).forEach(alinea => {
+        const p = document.createElement('p');
+        p.textContent = alinea;
+        bodyEl.appendChild(p);
+    });
 
     // AI-transparantie: bron zichtbaar per artikel (werkt voor zowel de oude
     // volledige-tekst-artikelen als de nieuwe teaser/volledige-tekst-structuur,

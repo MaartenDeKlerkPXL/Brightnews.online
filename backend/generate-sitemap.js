@@ -28,7 +28,6 @@ const PAGES = [
   { loc: '/algemeene-voorwaarden.html', priority: '0.3' },
   { loc: '/refunds.html', priority: '0.3' },
   { loc: '/contact.html', priority: '0.5' },
-  { loc: '/launch.html', priority: '0.1' },
 ];
 
 function generateSitemap() {

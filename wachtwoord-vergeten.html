@@ -54,32 +54,32 @@
             <!--            <a href="index.html" class="logo">Bright<span>News</span></a>-->
 
             <a href="index.html"><img src="assets/brightnews-logo.png" height="200" width="300" class="nav-logo"/></a></div>
-        <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu openen">
+        <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu openen" data-i18n-aria-label="menu_open">
             <span></span><span></span><span></span>
         </button>
         <ul class="nav-links" id="mobileMenu">
             <li><a href="index.html" data-i18n="nav_home">Home</a></li>
             <li><a href="over-ons.html" data-i18n="nav_about">Over Ons</a></li>
-<!--            <li><a href="abonnementen.html" data-i18n="nav_premium">Abonnementen</a></li>-->
+            <li><a href="abonnementen.html" data-i18n="nav_premium">Abonnementen</a></li>
 
-<!--            <li class="nav-profile-desktop">-->
-<!--                <a href="profiel.html" class="profile-icon">-->
-<!--                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">-->
-<!--                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>-->
-<!--                        <circle cx="12" cy="7" r="4"></circle>-->
-<!--                    </svg>-->
-<!--                </a>-->
-<!--            </li>-->
+            <li class="nav-profile-desktop">
+                <a href="profiel.html" class="profile-icon" aria-label="Profiel" data-i18n-aria-label="nav_profile">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a>
+            </li>
 
-<!--            <li class="nav-profile-mobile">-->
-<!--                <a href="profiel.html" class="profile-link-text"  data-i18n="nav_profile">-->
-<!--                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">-->
-<!--                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>-->
-<!--                        <circle cx="12" cy="7" r="4"></circle>-->
-<!--                    </svg>-->
-<!--                    Profiel-->
-<!--                </a>-->
-<!--            </li>-->
+            <li class="nav-profile-mobile">
+                <a href="profiel.html" class="profile-link-text">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span data-i18n="nav_profile">Profiel</span>
+                </a>
+            </li>
         </ul>
 
     </nav>
