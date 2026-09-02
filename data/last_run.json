@@ -1,14 +1,14 @@
 {
-  "start": "2026-09-01T19:04:27.118Z",
-  "kandidaten": 487,
-  "alGezien": 0,
-  "sentimentGeweigerd": 72,
-  "aiCalls": 415,
-  "aiTokens": 539616,
-  "afgewezen": 76,
-  "incompleet": 17,
-  "geaccepteerd": 306,
+  "start": "2026-09-02T04:06:20.889Z",
+  "kandidaten": 447,
+  "alGezien": 380,
+  "sentimentGeweigerd": 6,
+  "aiCalls": 61,
+  "aiTokens": 86688,
+  "afgewezen": 15,
+  "incompleet": 10,
+  "geaccepteerd": 36,
   "opslaanMislukt": 0,
-  "feedFouten": 2,
-  "einde": "2026-09-01T19:58:16.699Z"
+  "feedFouten": 4,
+  "einde": "2026-09-02T04:12:51.271Z"
 }
