@@ -6,7 +6,7 @@ Tekst: "{TEKST}"
 
 Beoordeel het item op de drie BrightNews-criteria en geef per criterium een score:
 
-1. GOED GEVOEL (0-3) — wordt een lezer hier oprecht blij, hoopvol of warm van?
+1. GOED GEVOEL (0-3) — wordt een gewone lezer oprecht blij, hoopvol of warm van de KERN van dit verhaal?
    3 = hartverwarmend of echt hoopgevend; je gunt het iedereen om dit te lezen
    2 = duidelijk positief nieuws, geeft een glimlach
    1 = mild positief, maar vlak of afstandelijk
@@ -26,7 +26,7 @@ Beoordeel het item op de drie BrightNews-criteria en geef per criterium een scor
    0 = niet relevant en niet herkenbaar (niche, vakjargon, ver-van-mijn-bed)
 
 WIJS ALTIJD AF met alle scores 0, ongeacht hoe positief de toon lijkt:
-- oorlog, geweld, misdaad, rampen, ongelukken of overlijden — óók met een positieve draai of "goed afgelopen"
+- items die primair over oorlog, geweld, misdaad, rampen, ongelukken of overlijden gaan. LET OP het verschil: gaat de kern van het verhaal over redding, hulp, herstel of gemeenschapszin — en is het nare slechts de aanleiding — dan is dat juist BrightNews-materiaal en beoordeel je het gewoon op de drie criteria (een gered dier, buren die een gedupeerd gezin helpen, een geslaagde zoekactie: dat zijn voorbeelden van gevoel = 3)
 - commerciële promotie, productlanceringen, kortingsacties, bedrijfs- of beursnieuws zonder bredere maatschappelijke betekenis
 - listicles en zelfhulp-clickbait ("5 tips om…", "zo word je…", "dit moet je weten over…"), horoscopen, roddel- en celebritynieuws
 - politiek gekleurde of polariserende onderwerpen

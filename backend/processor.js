@@ -107,6 +107,11 @@ const SELECTIE_MINIMA = { gevoel: 2, formulering: 2, relevantie: 2 };
 const SELECTIE_LOG_MAX = 300;
 const selectiePromptSjabloon = require('fs').readFileSync(
     require('path').join(__dirname, 'selectie-prompt.md'), 'utf8');
+// Hash van de promptversie: door de selectie afgewezen items ('sel') krijgen
+// automatisch een herkansing zodra de prompt wijzigt — anders zou elke
+// promptiteratie alleen op gloednieuwe items te toetsen zijn.
+const SELECTIE_PROMPT_HASH = require('crypto')
+    .createHash('md5').update(selectiePromptSjabloon).digest('hex').slice(0, 8);
 
 function bouwSelectiePrompt(item) {
     return selectiePromptSjabloon
@@ -347,7 +352,9 @@ async function processNews() {
                 if (!item.link) continue;
                 statistieken.kandidaten++;
 
-                if (seenLinks[item.link] || languages.nl.some(art => art.link === item.link)) {
+                const gezien = seenLinks[item.link];
+                const herkansing = gezien?.s === 'sel' && gezien.p !== SELECTIE_PROMPT_HASH;
+                if ((gezien && !herkansing) || languages.nl.some(art => art.link === item.link)) {
                     statistieken.alGezien++;
                     continue;
                 }
@@ -375,7 +382,7 @@ async function processNews() {
                     if (selectie.log) nieuweSelectieLogs.push(selectie.log);
                     if (!selectie.geschikt) {
                         if (!selectie.herkansing) {
-                            seenLinks[item.link] = { s: 'sel', t: new Date().toISOString() };
+                            seenLinks[item.link] = { s: 'sel', t: new Date().toISOString(), p: SELECTIE_PROMPT_HASH };
                             statistieken.selectieAfgewezen++;
                         }
                         continue;
