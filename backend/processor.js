@@ -109,9 +109,24 @@ const selectiePromptSjabloon = require('fs').readFileSync(
     require('path').join(__dirname, 'selectie-prompt.md'), 'utf8');
 // Hash van de promptversie: door de selectie afgewezen items ('sel') krijgen
 // automatisch een herkansing zodra de prompt wijzigt — anders zou elke
-// promptiteratie alleen op gloednieuwe items te toetsen zijn.
+// promptiteratie alleen op gloednieuwe items te toetsen zijn. De versie van
+// schoonSnippet telt mee: ook een wijziging in de opschoning verandert wat
+// het model te zien krijgt en verdient dus een herkansing.
+const SNIPPET_SCHOON_VERSIE = 'snippet-schoon-v1';
 const SELECTIE_PROMPT_HASH = require('crypto')
-    .createHash('md5').update(selectiePromptSjabloon).digest('hex').slice(0, 8);
+    .createHash('md5').update(selectiePromptSjabloon)
+    .update(SNIPPET_SCHOON_VERSIE).digest('hex').slice(0, 8);
+
+// WordPress-feeds (o.a. GoodNewsNetwork) sluiten contentSnippet af met
+// "The post <titel> appeared first on <bron>." — het selectiemodel las dat
+// als commerciële zelfpromotie en wees daardoor kernmateriaal af (run
+// 2026-09-02: kat-stationschef, 0/10 "commerciële promotie van Good News
+// Network"). Trailer strippen vóór sentiment, selectie én samenvatting.
+function schoonSnippet(tekst) {
+    return String(tekst ?? '')
+        .replace(/\s*The post [\s\S]{0,300}? appeared first on [^.]{0,120}\.?\s*$/, '')
+        .trim();
+}
 
 function bouwSelectiePrompt(item) {
     return selectiePromptSjabloon
@@ -325,6 +340,7 @@ async function processNews() {
         start: new Date().toISOString(),
         kandidaten: 0,
         alGezien: 0,
+        tekstTeKort: 0,
         sentimentGeweigerd: 0,
         selectieAfgewezen: 0,
         aiCalls: 0,
@@ -356,6 +372,19 @@ async function processNews() {
                 const herkansing = gezien?.s === 'sel' && gezien.p !== SELECTIE_PROMPT_HASH;
                 if ((gezien && !herkansing) || languages.nl.some(art => art.link === item.link)) {
                     statistieken.alGezien++;
+                    continue;
+                }
+
+                item.contentSnippet = schoonSnippet(item.contentSnippet);
+
+                // Zonder brontekst valt er niets te selecteren én niets
+                // bron-getrouw samen te vatten (Nature-feed: 22 van de 39
+                // AI-calls op 2026-09-02 gingen naar snippetloze items die
+                // allemaal op "geen inhoud" strandden). Direct overslaan,
+                // zonder AI-call, en onthouden.
+                if (item.contentSnippet.length < 25) {
+                    seenLinks[item.link] = { s: 'leeg', t: new Date().toISOString() };
+                    statistieken.tekstTeKort++;
                     continue;
                 }
 
