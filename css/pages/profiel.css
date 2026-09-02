@@ -52,7 +52,7 @@ form {
 }
 
 .auth-switch a {
-    color: var(--bright-green-text);
+    color: var(--dark-text);
     text-decoration: none;
     font-weight: 700;
     margin-left: 5px;
@@ -61,7 +61,7 @@ form {
 }
 
 .auth-switch a:hover {
-    border-bottom: 2px solid var(--bright-green-text);
+    border-bottom: 2px solid var(--bright-green);
 }
 
 /* 6. Utility Classes */
@@ -88,6 +88,44 @@ form {
 .lang-foldable {
     width: 100%;
     display: block;
+}
+
+/* Reviewronde 2026-09-02: de dichtgeklapte selector was nauwelijks zichtbaar
+   (geen kader, geen affordance). Nu gestyled als invoerveld, consistent met
+   .input-group input, met groen accent bij hover/open. */
+.lang-foldable summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 14px 16px;
+    cursor: pointer;
+    list-style: none;
+    font-weight: 600;
+    color: var(--dark-text, #1A1A1A);
+    transition: border-color 0.2s ease;
+}
+
+.lang-foldable summary::-webkit-details-marker {
+    display: none;
+}
+
+.lang-foldable summary:hover,
+.lang-foldable[open] summary {
+    border-color: var(--bright-green);
+}
+
+.lang-foldable[open] summary .arrow-icon {
+    transform: rotate(180deg);
+}
+
+.lang-option-row input[type="radio"] {
+    accent-color: var(--bright-green);
+    width: 18px;
+    height: 18px;
 }
 
 /* DE CRUCIALE STAP: De lijst mag niet 'zweven' */
@@ -266,7 +304,7 @@ body {
 
 .input-group input:focus {
     outline: none;
-    border-color: var(--bright-green-text);
+    border-color: var(--bright-green);
     background: #fff;
     box-shadow: 0 0 0 4px rgba(50, 205, 50, 0.1);
 }
@@ -274,8 +312,8 @@ body {
 .btn-primary-editorial {
     width: 100%;
     padding: 16px;
-    background: var(--bright-green-text);
-    color: #fff;
+    background: var(--bright-green);
+    color: var(--dark-text);
     border: none;
     border-radius: 50px;
     font-weight: 700;
@@ -487,8 +525,8 @@ body {
 }
 
 .btn-primary-editorial {
-    background: var(--bright-green-text); /* Jouw variabele uit de CSS */
-    color: white;
+    background: var(--bright-green);
+    color: var(--dark-text);
     border-radius: 50px;
     padding: 16px;
     border: none;
@@ -674,7 +712,8 @@ body {
 }
 
 #apply-promo-btn:hover {
-    background: var(--bright-green-text);
+    background: var(--bright-green);
+    color: var(--dark-text);
     transform: translateY(-2px);
 }
 .promo-input-group {
@@ -738,7 +777,7 @@ body {
 }
 
 .lang-option-row:hover .lang-text {
-    color: var(--bright-green-text); /* Of de kleur van je nav-links */
+    color: var(--dark-text);
 }
 
 /* Geselecteerde staat (optioneel, voor visuele feedback) */

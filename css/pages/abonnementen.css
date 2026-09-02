@@ -42,8 +42,40 @@
 
 .pricing-intro {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     padding: 0 20px;
+}
+
+/* Herroepingsrecht-checkbox (reviewronde 2026-09-02): als nette kaart in het
+   midden, met een duidelijke groene checkbox en ruimte tot de prijskaarten. */
+.withdrawal-consent-wrapper {
+    max-width: 620px;
+    margin: 0 auto 50px;
+}
+
+.withdrawal-consent-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    padding: 18px 22px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #444;
+    cursor: pointer;
+    text-align: left;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+}
+
+.withdrawal-consent-label input[type="checkbox"] {
+    accent-color: var(--bright-green);
+    width: 22px;
+    height: 22px;
+    margin-top: 1px;
+    flex-shrink: 0;
+    cursor: pointer;
 }
 
 .pricing-intro h1 {
@@ -105,8 +137,8 @@
     top: -15px;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--bright-green-text);
-    color: white;
+    background: var(--bright-green);
+    color: var(--dark-text);
     padding: 6px 20px;
     border-radius: 50px;
     font-size: 0.75rem;
@@ -176,16 +208,18 @@
     border: none;
 }
 
+/* Zelfde primaire-knopstijl als sitebreed (reviewbesluit 2026-09-02: één
+   groen met donkere tekst — geen aparte zwarte variant meer op deze pagina). */
 .btn-primary {
-    background: #1a1a1a;
-    color: white;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    background: var(--bright-green);
+    color: var(--dark-text);
+    box-shadow: 0 10px 20px rgba(50, 205, 50, 0.25);
 }
 
 .btn-primary:hover {
-    background: #000;
+    filter: brightness(0.94);
     transform: translateY(-2px);
-    box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 15px 25px rgba(50, 205, 50, 0.35);
 }
 
 .btn-secondary {

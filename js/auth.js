@@ -35,7 +35,7 @@ function showNotification(message, type = 'success') {
 async function handleAuth(event, type) {
     event.preventDefault();
     const client = window.supabaseClient;
-    if (!client) return showNotification("Database niet bereikbaar.", "error");
+    if (!client) return showNotification(typeof getT === 'function' ? getT('notif_db_unreachable', "Database niet bereikbaar.") : "Database niet bereikbaar.", "error");
 
     const email = type === 'login' ? document.getElementById('login-email').value : document.getElementById('reg-email').value;
     const password = type === 'login' ? document.getElementById('login-password').value : document.getElementById('reg-password').value;
@@ -82,7 +82,7 @@ async function handleAuth(event, type) {
         } else {
             const { error } = await client.auth.signInWithPassword({ email, password });
             if (error) throw error;
-            showNotification("Welkom terug! 😊", "success");
+            showNotification(typeof getT === 'function' ? getT('notif_welcome_back', "Welkom terug! 😊") : "Welkom terug! 😊", "success");
             setTimeout(() => window.location.href = 'index.html', 1000);
         }
     } catch (error) {
@@ -93,10 +93,10 @@ async function handleAuth(event, type) {
 async function handleLogout() {
     try {
         await window.supabaseClient.auth.signOut();
-        showNotification("Succesvol uitgelogd! 👋", "success");
+        showNotification(typeof getT === 'function' ? getT('notif_logged_out', "Succesvol uitgelogd! 👋") : "Succesvol uitgelogd! 👋", "success");
         setTimeout(() => window.location.href = 'index.html', 1500);
     } catch (err) {
-        showNotification("Uitloggen mislukt.", "error");
+        showNotification(typeof getT === 'function' ? getT('notif_logout_failed', "Uitloggen mislukt.") : "Uitloggen mislukt.", "error");
     }
 }
 
@@ -226,7 +226,7 @@ async function executeDelete() {
             }, 2500);
         }
     } catch (err) {
-        showNotification("Error", "error");
+        showNotification(typeof getT === 'function' ? getT('notif_error', "Er ging iets mis.") : "Er ging iets mis.", "error");
     }
 }
 // Provider-onafhankelijke checkout (Fase D). Welke betaalprovider actief is
@@ -245,7 +245,7 @@ async function startCheckout(plan) {
     const { data: { session } } = await window.supabaseClient.auth.getSession();
 
     if (!session) {
-        showNotification("Log eerst in om een abonnement af te sluiten. ✨", "error");
+        showNotification(typeof getT === 'function' ? getT('notif_login_first', "Log eerst in om een abonnement af te sluiten. ✨") : "Log eerst in.", "error");
         setTimeout(() => window.location.href = '/profiel.html', 1500);
         return;
     }
@@ -266,7 +266,7 @@ async function startCheckout(plan) {
     // Lemon Squeezy (huidige provider): overlay-checkout met custom user_id.
     const variantId = config.lemon[plan];
     if (!variantId) {
-        showNotification("Checkout is tijdelijk niet beschikbaar.", "error");
+        showNotification(typeof getT === 'function' ? getT('notif_checkout_unavailable', "De checkout is tijdelijk niet beschikbaar.") : "Checkout niet beschikbaar.", "error");
         return;
     }
     const checkoutUrl = `https://brightnews.lemonsqueezy.com/checkout/buy/${variantId}?checkout[custom][user_id]=${userId}&checkout[email]=${userEmail}&embed=1`;
@@ -289,7 +289,7 @@ async function applyDiscountCode() {
     if (!code) return;
 
     const client = window.supabaseClient;
-    if (!client) return showNotification("Database niet bereikbaar.", "error");
+    if (!client) return showNotification(typeof getT === 'function' ? getT('notif_db_unreachable', "Database niet bereikbaar.") : "Database niet bereikbaar.", "error");
 
     try {
         // Geen hardcoded code meer: dit gaat via redeem_promo_code(), een

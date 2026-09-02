@@ -148,11 +148,11 @@
 }
 
 .filter-btn.active {
-    /* --bright-green-text i.p.v. --bright-green: wit-op-#32CD32 haalt het
-       WCAG-contrast niet (2,1:1), wit-op-#157615 wel. */
-    background: var(--bright-green-text, #157615);
-    color: white;
-    border-color: var(--bright-green-text, #157615);
+    /* Eén groen + donkere tekst (reviewbesluit 2026-09-02): #1A1A1A op
+       #32CD32 is ~9:1, ruim WCAG AA. */
+    background: var(--bright-green, #32CD32);
+    color: var(--dark-text, #1A1A1A);
+    border-color: var(--bright-green, #32CD32);
     box-shadow: 0 4px 15px rgba(46, 204, 113, 0.2);
 }
 

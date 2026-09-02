@@ -65,9 +65,9 @@ nav.container {
 }
 
 .filter-btn.active {
-    background: var(--bright-green-text);
-    color: white;
-    border-color: var(--bright-green-text);
+    background: var(--bright-green);
+    color: var(--dark-text);
+    border-color: var(--bright-green);
 }
 
 .dropbtn {
@@ -76,7 +76,7 @@ nav.container {
     padding: 6px 14px;
     font-size: 14px;
     font-weight: 600;
-    border: 2px solid var(--bright-green-text);
+    border: 2px solid var(--bright-green);
     border-radius: 20px;
     cursor: pointer;
     display: flex;
@@ -87,7 +87,7 @@ nav.container {
 
 .dropbtn:hover {
     background-color: #f0fff0;
-    border-color: var(--bright-green-text);
+    border-color: var(--bright-green);
 }
 
 /* <details> geeft native toetsenbordbediening (Enter/Space op summary);
@@ -112,10 +112,12 @@ nav.container {
     font-size: 10px;
     transition: transform 0.3s;
 }
+/* .arrow2 (tekst-▼ in de registratie-taalkiezer) is vervangen door het
+   SVG-chevron in de summary zelf; verborgen i.p.v. verwijderd omdat
+   updateLangLabel() 'm bij elke keuze opnieuw injecteert. De oude
+   padding-left: 7rem duwde de selector bovendien scheef op smalle schermen. */
 .arrow2 {
-    font-size: 10px;
-    transition: transform 0.3s;
-    padding-left: 7rem;
+    display: none;
 }
 
 .dropdown:hover .arrow,
@@ -160,7 +162,7 @@ nav.container {
 
 .dropdown-content a:hover {
     background-color: #f0fff0;
-    color: var(--bright-green-text);
+    color: var(--dark-text);
 }
 
 .dropdown:hover .dropdown-content,
@@ -223,7 +225,7 @@ nav.container {
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: var(--bright-green-text);
+    color: var(--dark-text); /* het groene ::after-streepje is de accentdrager */
 }
 
 /* Profiel Icoon */
@@ -235,7 +237,7 @@ nav.container {
 }
 
 .profile-icon:hover {
-    color: var(--bright-green-text);
+    color: var(--bright-green);
     transform: scale(1.1);
 }
 
@@ -584,7 +586,7 @@ nav.container {
 }
 
 /* Subtiele kleuraccenten aan de onderkant in plaats van de zijkant */
-.notification.success { border-bottom: 3px solid #2ecc71; }
+.notification.success { border-bottom: 3px solid var(--bright-green); }
 .notification.error { border-bottom: 3px solid #e74c3c; }
 .notification.info { border-bottom: 3px solid #3498db; }
 .logo {
@@ -660,7 +662,7 @@ nav.container {
     transition: 0.3s;
 }
 
-.footer-links ul li a:hover { color: var(--bright-green-text); padding-left: 5px; }
+.footer-links ul li a:hover { color: var(--bright-green); padding-left: 5px; } /* donkere footer: hier haalt groen ruim contrast */
 
 .social-icons {
     display: flex;
@@ -684,10 +686,10 @@ nav.container {
 }
 
 .social-btn:hover {
-    background: var(--bright-green-text);
-    color: white;
+    background: var(--bright-green);
+    color: var(--dark-text);
     transform: translateY(-5px);
-    border-color: var(--bright-green-text);
+    border-color: var(--bright-green);
 }
 
 .footer-bottom {
@@ -839,7 +841,7 @@ body {
         align-items: center;
         justify-content: center;
         gap: 10px;
-        color: var(--bright-green-text) !important;
+        color: var(--dark-text) !important;
         font-weight: 700;
     }
 }
@@ -888,10 +890,10 @@ body {
 .cookie-buttons { display: flex; gap: 10px; }
 
 .btn-cookie-accept {
-    /* --bright-green-text i.p.v. --bright-green: wit-op-#32CD32 haalt het
-       WCAG-contrast niet (2,1:1), wit-op-#157615 wel. */
-    background: var(--bright-green-text, #157615);
-    color: white;
+    /* Eén groen + donkere tekst (reviewbesluit 2026-09-02):
+       #1A1A1A op #32CD32 is ~9:1, ruim WCAG AA. */
+    background: var(--bright-green, #32CD32);
+    color: var(--dark-text, #1A1A1A);
     border: none;
     padding: 10px 20px;
     border-radius: 8px;

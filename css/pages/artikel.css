@@ -382,7 +382,8 @@
 
 /* Succes-flash voor kopiëren */
 .share-main-btn.copy-success {
-    background: #2ecc71 !important;
+    background: var(--bright-green) !important;
+    color: var(--dark-text) !important;
     transform: scale(1.05);
 }
 /* Zorg dat de link een flex-container is voor perfecte centrering */
