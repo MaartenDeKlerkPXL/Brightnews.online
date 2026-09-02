@@ -1,10 +1,11 @@
 # Bright News — Overdrachtsdocument / Handoff
 
-**Bijgewerkt: 2026-09-02, einde sessie 2 met Claude Fable 5** (sessie 1:
+**Bijgewerkt: 2026-09-03 ±00:30 CEST, sessie 3 met Claude Fable 5** (sessie 1:
 review + fases A–E op 2026-09-01; sessie 2: reviewer-rondes F+G en de
-selectieprompt-iteratie). Dit document + `README.md` (hoe alles werkt) +
-`STRIPE-MIGRATIE.md` (betaaltraject) + `STAPPENPLAN-MAARTEN.md` (Maartens
-acties) vervangen samen de volledige sessiecontext.
+selectieprompt-iteratie; sessie 3: fase H — pipelinebugs gevonden en gefixt).
+Dit document + `README.md` (hoe alles werkt) + `STRIPE-MIGRATIE.md`
+(betaaltraject) + `STAPPENPLAN-MAARTEN.md` (Maartens acties) vervangen samen
+de volledige sessiecontext.
 
 ---
 
@@ -24,13 +25,27 @@ witte knoptekst, 3 kolommen, groter logo 84px/104px-nav, slider-filter,
 z-index-fix, vlaggen mobiel weg, socials terug, Stripe-MoR-zin in footer,
 **aparte selectiestap met itereerbare prompt**).
 
-**Laatste stand pipeline-iteratie**: selectieprompt v2 live (reddings-/hulp-
-verhalen niet meer hard afgewezen); herkansingsmechanisme werkt (prompt-hash
-in seen-entries → gewijzigde prompt herbeoordeelt eerdere 'sel'-afwijzingen).
-Run van 15:17 UTC: 70 herbeoordeeld, 0 goedgekeurd — grotendeels terecht
-(restbatch met kleurplaten/glamping/VC-content); zeeschildpad-redding scoorde
-6/10 (drempel = 7). **Openstaand besluit: drempel op 7 laten of naar 6** —
-eerst de verse nachtcron-log bekijken (zie §9.1).
+**Laatste stand pipeline-iteratie (fase H, 2026-09-02/03)** — drie bugs
+gevonden via het selectie-log en gefixt, alles gemerged en live:
+1. **WordPress-trailer** "The post … appeared first on <bron>." in
+   `contentSnippet` (o.a. héél GoodNewsNetwork) las het model als
+   "commerciële zelfpromotie" → kernmateriaal 0/10. Fix: `schoonSnippet()`
+   strips de trailer vóór sentiment, selectie én samenvatting. Bewijs dat
+   het werkte: zeeschildpad-redding ging van 6/10 naar 9/10 en is
+   **gepubliceerd** (eerste artikel onder het nieuwe regime).
+2. **Snippetloze items** (Nature-feed: 22 van 39 calls) verspilden AI-calls
+   op "geen inhoud". Fix: <25 tekens ná schoning → skip zonder call, status
+   `leeg`, teller `tekstTeKort` in last_run.json.
+3. **Modelveto op eigen goedkeuring**: item met 3/3/2=8 (Pokémon-fans helpen
+   opgelicht kind) kreeg `besluit: nee` met rekenfout "relevantie te laag
+   (2)". Fix: `besluit`-veld uit de prompt-JSON; drempel+minima in code zijn
+   als enige beslissend. Model scoort en motiveert alleen nog.
+De prompt-hash dekt nu ook `SNIPPET_SCHOON_VERSIE`; beide fixes wijzigden de
+hash → alle 'sel'-afwijzingen krijgen bij de eerstvolgende run (nachtcron
+2026-09-03T00:00Z) automatisch een herkansing met schone tekst en zonder veto.
+**Drempelbesluit**: eerste schone data zegt 7 hándhaven — de 5-scoorders
+hadden allemaal gevoel=0 en waren terecht afgewezen; 7→6 had niets extra's
+toegelaten. Herbeoordelen na een paar dagen nieuw regime (zie §9.1).
 
 ## 2. Projectkaart
 
@@ -41,9 +56,9 @@ eerst de verse nachtcron-log bekijken (zie §9.1).
 | `js/betaal-config.js` | provider `'lemon'`/`'stripe'` + payment-links/portal (Stripe nog leeg) |
 | `js/supabase-init.js`, `js/vendor/` | client-init (defer-volgorde!) + self-hosted supabase-js 2.112.4 |
 | `data/translations.js` | ~215 keys × 5 talen; anker per taal = `"menu_open": "<vertaling>"` |
-| `data/news_{taal}.json`, `seen_links.json`, `selectie-log.json`, `last_run.json` | teasers · beoordeeld-geheugen (status ok/nee/sent/sel+prompthash) · iteratielog (300) · runstatistieken |
+| `data/news_{taal}.json`, `seen_links.json`, `selectie-log.json`, `last_run.json` | teasers · beoordeeld-geheugen (status ok/nee/sent/leeg/sel+prompthash) · iteratielog (300) · runstatistieken |
 | `backend/processor.js` | pipeline: seen-check → sentiment-voorfilter → **selectiestap** → samenvat/vertaal (1 call, 5 talen) → atomair articles_full → publiceren. Drempels: `SELECTIE_DREMPEL_TOTAAL=7`, minima 2/2/2 |
-| `backend/selectie-prompt.md` | DE itereerbare selectieprompt (criteria: goed gevoel 0-3, positieve formulering 0-3, relevantie 0-4; harde afwijslijst; twijfel=nee) |
+| `backend/selectie-prompt.md` | DE itereerbare selectieprompt (criteria: goed gevoel 0-3, positieve formulering 0-3, relevantie 0-4; harde afwijslijst; twijfel=lagere score; besluit valt in code, niet in de prompt) |
 | `backend/generate-articles.js` | statische pagina's + `articles/manifest.json` (nooit verwijderen); template bevat nav/footer — bij wijziging regenereren |
 | `backend/generate-sitemap.js` | sitemap (vaste pagina's + manifest-artikelen) |
 | `supabase/` | config.toml, `functions/lemon-webhook` (live v9), `functions/stripe-webhook` (klaar, niet gedeployed), `schema-snapshot.sql` (beveiligings-SQL zoals live; bijhouden!) |
@@ -166,11 +181,14 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
 
 ## 9. Volgende stappen (in volgorde)
 
-1. **Selectie-log van de nachtcron beoordelen** (eerste verse dagbatch met
-   prompt v2): `git pull`, entries in `data/selectie-log.json` met datum ≥
-   2026-09-03T00:00Z analyseren (acceptatiegraad, gemiste parels, onterechte
-   goedkeuringen). Daarna met Erik: drempel 7→6? prompt v3? De homepage
-   moet zich geleidelijk vullen met nieuw-regime-artikelen.
+1. **Nachtcron 2026-09-03T00:00Z beoordelen** (eerste run met álle fase-H-
+   fixes: schone snippets, geen leeg-tekst-calls, besluit in code, herkansing
+   van ~160 'sel'-items): `git pull`, entries in `data/selectie-log.json`
+   met datum ≥ 2026-09-03T00:00Z analyseren (acceptatiegraad, gemiste parels,
+   onterechte goedkeuringen — let op het Pokémon-item, dat hoort nu door te
+   komen). Na een paar dagen nieuw regime met Erik: drempel 7 houden (eerste
+   data zegt ja) en evt. prompt v3. De homepage moet zich geleidelijk vullen
+   met nieuw-regime-artikelen.
 2. **Maarten**: `STAPPENPLAN-MAARTEN.md` — Search Console (±30 min), Stripe
    deel 1 (reviewwachttijd! zo vroeg mogelijk), socials claimen of URL's
    doorgeven (footer linkt nu naar brightnews.online-handles).
