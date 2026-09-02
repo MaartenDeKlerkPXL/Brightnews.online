@@ -270,6 +270,7 @@ ${alineas}
       <div class="footer-legal-info">
         <p data-i18n="footer_address">Vossenstraat 19, 6286BW Nijswiller, <br>The Netherlands</p>
         <p><span data-i18n="footer_kvk_label">KvK</span>: <span data-i18n="footer_kvk_val">42048341</span> · <span data-i18n="footer_btw_label">BTW</span>: <span data-i18n="footer_btw_val">NL005455019B94</span></p>
+        <p class="footer-mor-notice" data-i18n="footer_mor_notice">${escapeHtml(t(lang, 'footer_mor_notice'))}</p>
       </div>
     </div>
 
