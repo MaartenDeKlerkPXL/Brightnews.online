@@ -34,6 +34,6 @@ WIJS ALTIJD AF met alle scores 0, ongeacht hoe positief de toon lijkt:
 - items waarvan titel + tekst te weinig inhoud geven om zeker te zijn
 
 Antwoord UITSLUITEND met dit JSON-object, zonder andere tekst:
-{"gevoel": 0, "formulering": 0, "relevantie": 0, "besluit": "ja of nee", "reden": "één korte, concrete zin waarom"}
+{"gevoel": 0, "formulering": 0, "relevantie": 0, "reden": "één korte, concrete zin waarom"}
 
-Regel voor "besluit": alleen "ja" als gevoel ≥ 2 EN formulering ≥ 2 EN relevantie ≥ 2 EN de som van de drie scores ≥ 7. Twijfel je, kies dan "nee" — liever een gemist aardig bericht dan een lezer zonder goed gevoel.
+De eindbeslissing (aannemen of afwijzen) wordt buiten jou om uit de scores berekend — jij scoort en motiveert alleen. Twijfel je over een score, kies dan de lágere waarde — liever een gemist aardig bericht dan een lezer zonder goed gevoel.

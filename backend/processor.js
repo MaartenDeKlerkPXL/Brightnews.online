@@ -154,9 +154,12 @@ async function selecteerItem(item, statistieken) {
         relevantie: Number(data.relevantie) || 0,
     };
     const totaal = scores.gevoel + scores.formulering + scores.relevantie;
+    // Het besluit volgt volledig uit de scores; het model scoort en motiveert
+    // alleen. Een eigen "besluit"-veld van het model woog eerder mee en
+    // veto'de op 2026-09-02 een 3/3/2-item met de rekenfout "relevantie is
+    // te laag (2)" — terwijl de regel relevantie ≥ 2 eiste.
     const geschikt = totaal >= SELECTIE_DREMPEL_TOTAAL
-        && Object.entries(SELECTIE_MINIMA).every(([k, min]) => scores[k] >= min)
-        && data.besluit !== 'nee';
+        && Object.entries(SELECTIE_MINIMA).every(([k, min]) => scores[k] >= min);
     return {
         geschikt,
         herkansing: false,
