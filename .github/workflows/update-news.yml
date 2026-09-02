@@ -58,7 +58,7 @@ jobs:
           # Alleen de nieuws-JSON's plus de gegenereerde sitemap/robots.txt —
           # bewust niet data/*.json, zodat een eventueel ander databestand
           # nooit per ongeluk publiek meegecommit wordt.
-          git add data/news_*.json data/seen_links.json data/last_run.json articles sitemap.xml robots.txt
+          git add data/news_*.json data/seen_links.json data/last_run.json data/selectie-log.json articles sitemap.xml robots.txt
 
           # Controleer of er echt iets veranderd is voor we committen
           if git diff --quiet && git diff --staged --quiet; then

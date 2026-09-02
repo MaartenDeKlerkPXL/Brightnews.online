@@ -1,5 +1,15 @@
 // 1. Globale variabelen initialiseren (voorkomt 'undefined' errors)
 window.huidigeTaal = localStorage.getItem('selectedLanguage') || 'nl';
+
+// Labels voor de taalkiezer. De vlag zit in een eigen span zodat hij op
+// smalle schermen via CSS (.taal-vlag) verborgen kan worden.
+const TAAL_LABELS = {
+    'nl': '<span class="taal-vlag">🇳🇱</span> Nederlands',
+    'en': '<span class="taal-vlag">🇺🇸</span> English',
+    'de': '<span class="taal-vlag">🇩🇪</span> Deutsch',
+    'fr': '<span class="taal-vlag">🇫🇷</span> Français',
+    'es': '<span class="taal-vlag">🇪🇸</span> Español',
+};
 window.alleArtikelen = [];
 window.actieveFilters = [];
 
@@ -141,9 +151,8 @@ async function initApp() {
     }
 
     // Update taalkiezer label
-    const labels = { 'nl': '🇳🇱 Nederlands', 'en': '🇺🇸 English', 'de': '🇩🇪 Deutsch', 'fr': '🇫🇷 Français', 'es': '🇪🇸 Español' };
     const btn = document.getElementById('current-lang');
-    if (btn) btn.innerHTML = `${labels[savedLang] || labels['nl']} <span class="arrow">▼</span>`;
+    if (btn) btn.innerHTML = `${TAAL_LABELS[savedLang] || TAAL_LABELS['nl']} <span class="arrow">▼</span>`;
 
     vertaalStatischeTeksten(savedLang);
     if (typeof checkCookies === 'function') checkCookies();
@@ -637,10 +646,12 @@ async function wisselTaal(lang, labelTekst, event) {
         }
     }
 
-    // 1. Update dropdown label
+    // 1. Update dropdown label (labelTekst-parameter blijft voor compatibiliteit
+    // met de bestaande onclick-attributen, maar de centrale map is leidend —
+    // die bevat de verbergbare vlag-span).
     const btn = document.getElementById('current-lang');
-    if (btn && labelTekst) {
-        btn.innerHTML = `${labelTekst} <span class="arrow">▼</span>`;
+    if (btn) {
+        btn.innerHTML = `${TAAL_LABELS[lang] || labelTekst || ''} <span class="arrow">▼</span>`;
     }
 
     // Sluit de <details>-dropdown na keuze (blijft anders open staan)

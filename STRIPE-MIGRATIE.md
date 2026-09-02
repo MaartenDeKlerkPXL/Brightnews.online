@@ -59,8 +59,11 @@ mailer-koppelstuk oplost.
 10. **Livegang** (één commit):
     - `provider: 'stripe'` in js/betaal-config.js;
     - lemon.js-script verwijderen van abonnementen.html;
-    - MoR-zin in de footer (alle pagina's + generator-template):
-      "Payments are securely processed by Stripe, our Merchant of Record.";
+    - MoR-vermelding TERUGplaatsen in de footer (alle pagina's + generator-
+      template): "Payments are securely processed by Stripe, our Merchant of
+      Record." — de Lemon-variant is op verzoek van de reviewronde 2026-09-02
+      uit de footer gehaald, maar een MoR-vermelding is bij livegang gewoon
+      vereist (reviewers van de betaalprovider checken hierop);
     - Privacy.html: Lemon Squeezy → Stripe als verwerker;
     - meta-CSP toevoegen (bewust uitgesteld tot dit moment; met Payment Links
       is er géén extra script-host nodig — checkout is een redirect naar

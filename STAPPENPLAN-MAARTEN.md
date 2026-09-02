@@ -38,6 +38,15 @@ Doel: Google actief vertellen dat brightnews.online bestaat, de sitemap met
 > aanmelding bij Google News (Search Console dekt dit; een News-vermelding
 > kan later altijd nog via publishercenter.google.com).
 
+### Extra taak: social-media-pagina's (±20 min)
+
+De footer linkt sinds 2026-09-02 naar deze drie profielen — die moeten dus
+bestaan (claim de handles, of geef de juiste URL's door zodat de links
+aangepast worden):
+- Facebook: `facebook.com/brightnews.online`
+- Instagram: `instagram.com/brightnews.online`
+- LinkedIn: `linkedin.com/company/brightnews-online`
+
 ---
 
 ## Spoor 2 — Stripe Managed Payments (±1–1,5 uur + reviewwachttijd)

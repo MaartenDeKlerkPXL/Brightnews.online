@@ -82,7 +82,7 @@ p {
     align-items: center;
     justify-content: center;
     background-color: var(--bright-green);
-    color: var(--dark-text);
+    color: var(--white); /* reviewbesluit 2026-09-02: witte tekst op groen */
     border: none;
     padding: 14px 28px;
     border-radius: var(--radius-md);
@@ -94,7 +94,7 @@ p {
 }
 
 .btn-primary:hover {
-    filter: brightness(0.94);
+    filter: brightness(1.12); /* iets lichter groen bij hover */
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(50, 205, 50, 0.3);
 }

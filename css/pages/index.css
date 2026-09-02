@@ -2,7 +2,9 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    /* Reviewronde 2026-09-02: expliciete kolommen i.p.v. auto-fill —
+       3 op desktop, 2 op tablet, 1 (vol-breed) op mobiel. */
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding: 20px 0;
     /* Reserveer alvast schermhoogte terwijl de kaarten laden: de pagina
@@ -87,13 +89,24 @@
 }
 /* Voeg dit toe of pas dit aan */
 /* Voeg dit toe of pas dit aan */
+@media (max-width: 1023px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
 /* Mobiele optimalisatie voor artikelen */
 @media (max-width: 600px) {
+    /* Kaartjes vullen (vrijwel) de volle schermbreedte. */
+    main.container {
+        padding: 0 12px;
+    }
+
     .grid-container {
-        /* Zet alle artikelen onder elkaar */
         grid-template-columns: 1fr;
         gap: 20px;
-        padding: 10px 15px; /* Geef de zijkanten wat ademruimte */
+        padding: 10px 0;
     }
 
     .news-card {
@@ -118,15 +131,26 @@
 
 .category-bar {
     display: flex;
-    flex-direction: row; /* Naast elkaar op desktop */
+    flex-direction: row;
     gap: 12px;
-    justify-content: center;
-    flex-wrap: wrap; /* Zorgt dat ze op kleine laptops niet buiten beeld vallen */
+    /* Reviewronde 2026-09-02: op élke schermbreedte een horizontale slider.
+       flex-start + auto-marges op de randknoppen: gecentreerd zolang alles
+       past, correct scrollbaar zodra het niet meer past (justify-content:
+       center zou dan de linkerkant afsnijden). */
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     width: 100%;
     /* Hoogte alvast reserveren: de knoppen worden pas na het laden van de
        data gerenderd en duwden anders het nieuwsgrid omlaag (CLS). */
-    min-height: 46px;
+    min-height: 50px;
+    padding-bottom: 4px;
 }
+
+.category-bar .filter-btn { flex: 0 0 auto; }
+.category-bar .filter-btn:first-child { margin-left: auto; }
+.category-bar .filter-btn:last-child { margin-right: auto; }
 
 /* De knoppen zelf (styling gebaseerd op je eerdere kaarten-stijl) */
 .filter-btn {
@@ -148,10 +172,9 @@
 }
 
 .filter-btn.active {
-    /* Eén groen + donkere tekst (reviewbesluit 2026-09-02): #1A1A1A op
-       #32CD32 is ~9:1, ruim WCAG AA. */
+    /* Reviewronde 2 (2026-09-02): witte tekst op het groen. */
     background: var(--bright-green, #32CD32);
-    color: var(--dark-text, #1A1A1A);
+    color: var(--white, #FFFFFF);
     border-color: var(--bright-green, #32CD32);
     box-shadow: 0 4px 15px rgba(46, 204, 113, 0.2);
 }
@@ -162,17 +185,12 @@
    layout-verschuiving zodra de knoppen na het laden verschenen). */
 @media (max-width: 600px) {
     .category-bar {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        justify-content: flex-start;
         gap: 10px;
-        padding: 0 20px 6px;    /* Beetje ademruimte + plek voor de scrollbar */
+        padding: 0 15px 6px;
         min-height: 54px;
-        -webkit-overflow-scrolling: touch;
     }
 
     .filter-btn {
-        flex: 0 0 auto;         /* Niet krimpen: knoppen scrollen zijwaarts */
         padding: 12px 18px;     /* Groter 'tap-oppervlak' voor duimen */
         font-size: 1rem;
     }

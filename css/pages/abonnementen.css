@@ -138,7 +138,7 @@
     left: 50%;
     transform: translateX(-50%);
     background: var(--bright-green);
-    color: var(--dark-text);
+    color: var(--white, #FFFFFF);
     padding: 6px 20px;
     border-radius: 50px;
     font-size: 0.75rem;
@@ -212,12 +212,12 @@
    groen met donkere tekst — geen aparte zwarte variant meer op deze pagina). */
 .btn-primary {
     background: var(--bright-green);
-    color: var(--dark-text);
+    color: var(--white, #FFFFFF);
     box-shadow: 0 10px 20px rgba(50, 205, 50, 0.25);
 }
 
 .btn-primary:hover {
-    filter: brightness(0.94);
+    filter: brightness(1.12);
     transform: translateY(-2px);
     box-shadow: 0 15px 25px rgba(50, 205, 50, 0.35);
 }

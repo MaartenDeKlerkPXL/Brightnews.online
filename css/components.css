@@ -26,8 +26,9 @@ header {
     padding: 1rem 0;
     position: sticky;
     top: 0;
-    /* Moet boven de Hero en andere pagina-inhoud blijven staan. */
-    z-index: 2000;
+    /* Moet boven ALLE pagina-inhoud blijven staan, ook boven het open
+       share-menu (dat had z-index 9999 en stak boven de nav uit). */
+    z-index: 9000;
     overflow: visible;
     box-shadow: var(--shadow-sm);
 }
@@ -66,7 +67,7 @@ nav.container {
 
 .filter-btn.active {
     background: var(--bright-green);
-    color: var(--dark-text);
+    color: var(--white);
     border-color: var(--bright-green);
 }
 
@@ -478,17 +479,16 @@ nav.container {
     display: flex;
     align-items: center;
     justify-content: space-between; /* Houdt links en rechts uit elkaar */
-    height: 80px;
+    height: 104px; /* Reviewronde 2026-09-02: hogere balk voor het grotere logo */
     padding: 0 20px;
     position: relative;
 }
 
 /* Logo-afbeelding op desktop begrenzen: de width/height-attributen op de
-   <img> zijn 300×200 en zonder CSS-regel rendert het logo op die volle
-   grootte in de 80px hoge navigatiebalk. Mobiel (max-width: 768px) wordt
-   verderop overschreven naar width: 11rem. */
+   <img> zijn 300×200. Reviewronde 2026-09-02: flink groter (84px) in een
+   navigatiebalk van 104px. Mobiel wordt verderop 13rem breed. */
 .nav-logo {
-    height: 64px;
+    height: 84px;
     width: auto;
     display: block;
 }
@@ -767,7 +767,7 @@ body {
     }
 
     .nav-logo {
-        width: 11rem;
+        width: 13rem;
         height: auto;
     }
 
@@ -788,7 +788,7 @@ body {
     .nav-links {
         display: none;
         position: absolute;
-        top: 70px;
+        top: 100%; /* sluit aan op de (hogere) navigatiebalk */
         left: 0;
         width: 100%;
         background: white;
@@ -893,7 +893,7 @@ body {
     /* Eén groen + donkere tekst (reviewbesluit 2026-09-02):
        #1A1A1A op #32CD32 is ~9:1, ruim WCAG AA. */
     background: var(--bright-green, #32CD32);
-    color: var(--dark-text, #1A1A1A);
+    color: var(--white, #FFFFFF);
     border: none;
     padding: 10px 20px;
     border-radius: 8px;
@@ -922,4 +922,12 @@ body {
     .cookie-content { flex-direction: column; text-align: center; }
     .cookie-buttons { width: 100%; flex-direction: column; }
 
+}
+
+/* Reviewronde 2026-09-02: vlag-emoji in de taalselector verbergen op smalle
+   schermen — daar telt elke pixel breedte in de navigatiebalk. */
+@media (max-width: 768px) {
+    .taal-vlag {
+        display: none;
+    }
 }

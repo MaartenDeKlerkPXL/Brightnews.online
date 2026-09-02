@@ -93,6 +93,65 @@ if (!supabaseAdmin) {
     process.exit(1);
 }
 
+// --- Selectiestap (reviewbesluit 2026-09-02) ---------------------------------
+// De prompt die bepaalt welke artikelen BrightNews haalt staat in het los
+// bewerkbare backend/selectie-prompt.md (criteria: goed gevoel, positieve
+// formulering, maatschappelijk relevant of persoonlijke touch). ITEREREN:
+// pas dat bestand aan, start de Action handmatig (Actions → Run workflow) en
+// beoordeel daarna data/selectie-log.json — daar staat per item de beslissing
+// mét deelscores en reden, ook van de afwijzingen.
+// De drempels hieronder zijn de code-kant van dezelfde regel als in de prompt
+// (de som wordt hier zelf berekend; het model hoeft niet te kunnen rekenen).
+const SELECTIE_DREMPEL_TOTAAL = 7;
+const SELECTIE_MINIMA = { gevoel: 2, formulering: 2, relevantie: 2 };
+const SELECTIE_LOG_MAX = 300;
+const selectiePromptSjabloon = require('fs').readFileSync(
+    require('path').join(__dirname, 'selectie-prompt.md'), 'utf8');
+
+function bouwSelectiePrompt(item) {
+    return selectiePromptSjabloon
+        .replace('{TITEL}', String(item.title ?? '').slice(0, 300))
+        .replace('{TEKST}', String(item.contentSnippet ?? '').slice(0, 1200));
+}
+
+// Beoordeelt één item met de selectieprompt. Retourneert { geschikt, log }.
+// Bij een onbruikbare AI-respons wordt het item afgewezen-voor-nu maar NIET
+// in seenLinks gezet, zodat het de volgende run een nieuwe kans krijgt.
+async function selecteerItem(item, statistieken) {
+    const antwoord = await mistralMetRetry({
+        model: 'mistral-small-latest',
+        messages: [{ role: 'user', content: bouwSelectiePrompt(item) }],
+        responseFormat: { type: 'json_object' }
+    });
+    statistieken.aiCalls++;
+    statistieken.aiTokens += antwoord.usage?.totalTokens ?? 0;
+    const data = verwerkAIResponse(antwoord.choices[0].message.content);
+    if (!data) return { geschikt: false, herkansing: true, log: null };
+
+    const scores = {
+        gevoel: Number(data.gevoel) || 0,
+        formulering: Number(data.formulering) || 0,
+        relevantie: Number(data.relevantie) || 0,
+    };
+    const totaal = scores.gevoel + scores.formulering + scores.relevantie;
+    const geschikt = totaal >= SELECTIE_DREMPEL_TOTAAL
+        && Object.entries(SELECTIE_MINIMA).every(([k, min]) => scores[k] >= min)
+        && data.besluit !== 'nee';
+    return {
+        geschikt,
+        herkansing: false,
+        log: {
+            datum: new Date().toISOString(),
+            bron: item.bronNaam ?? null,
+            titel: String(item.title ?? '').slice(0, 140),
+            ...scores,
+            totaal,
+            besluit: geschikt ? 'ja' : 'nee',
+            reden: String(data.reden ?? '').slice(0, 200),
+        },
+    };
+}
+
 function maakTeaser(tekst, maxWoorden = 60) {
     if (!tekst) return '';
     const woorden = tekst.split(' ');
@@ -246,11 +305,23 @@ async function processNews() {
         // Bestand bestaat nog niet (eerste run met deze feature) — leeg starten.
     }
 
+    // Selectie-log: de recentste beslissingen van de selectiestap (ook de
+    // afwijzingen, mét reden) — het gereedschap om selectie-prompt.md
+    // iteratief te verbeteren.
+    let selectieLog = [];
+    try {
+        selectieLog = await fs.readJson('./data/selectie-log.json');
+    } catch {
+        // eerste run met deze feature
+    }
+    const nieuweSelectieLogs = [];
+
     const statistieken = {
         start: new Date().toISOString(),
         kandidaten: 0,
         alGezien: 0,
         sentimentGeweigerd: 0,
+        selectieAfgewezen: 0,
         aiCalls: 0,
         aiTokens: 0,
         afgewezen: 0,
@@ -293,6 +364,27 @@ async function processNews() {
                 }
 
                 console.log(`🧠 Analyseren: ${item.title}`);
+
+                // Selectiestap (los itereerbaar, zie selectie-prompt.md):
+                // beoordeelt alleen — pas als het item dit haalt, volgt de
+                // duurdere samenvattings-/vertaalstap hieronder.
+                try {
+                    await wacht(400);
+                    item.bronNaam = feedInfo.name;
+                    const selectie = await selecteerItem(item, statistieken);
+                    if (selectie.log) nieuweSelectieLogs.push(selectie.log);
+                    if (!selectie.geschikt) {
+                        if (!selectie.herkansing) {
+                            seenLinks[item.link] = { s: 'sel', t: new Date().toISOString() };
+                            statistieken.selectieAfgewezen++;
+                        }
+                        continue;
+                    }
+                } catch (selErr) {
+                    // Niet in seenLinks: volgende run opnieuw proberen.
+                    console.error(`❌ Selectie-fout:`, selErr.message);
+                    continue;
+                }
 
                 // Afbeelding uit de feed halen. Volgorde: media:content →
                 // enclosure → media:thumbnail → <img> in content:encoded/content.
@@ -471,6 +563,9 @@ async function processNews() {
         seenLinks = Object.fromEntries(entries.slice(0, MAX_SEEN));
     }
     await fs.outputJson('./data/seen_links.json', seenLinks, { spaces: 0 });
+
+    selectieLog = [...nieuweSelectieLogs, ...selectieLog].slice(0, SELECTIE_LOG_MAX);
+    await fs.outputJson('./data/selectie-log.json', selectieLog, { spaces: 1 });
 
     statistieken.einde = new Date().toISOString();
     await fs.outputJson('./data/last_run.json', statistieken, { spaces: 2 });

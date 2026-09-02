@@ -313,7 +313,7 @@ body {
     width: 100%;
     padding: 16px;
     background: var(--bright-green);
-    color: var(--dark-text);
+    color: var(--white, #FFFFFF);
     border: none;
     border-radius: 50px;
     font-weight: 700;
@@ -526,7 +526,7 @@ body {
 
 .btn-primary-editorial {
     background: var(--bright-green);
-    color: var(--dark-text);
+    color: var(--white, #FFFFFF);
     border-radius: 50px;
     padding: 16px;
     border: none;
@@ -809,4 +809,10 @@ body {
 .btn-cancel:hover {
     background: #ff4444;
     color: white;
+}
+
+/* Reviewronde 2026-09-02: hover van inlog-/registratieknop — iets lichter
+   groen, tekst blijft wit. */
+.btn-primary-editorial:hover {
+    filter: brightness(1.12);
 }

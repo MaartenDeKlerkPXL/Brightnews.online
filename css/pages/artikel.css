@@ -349,7 +349,7 @@
     opacity: 0;
     visibility: hidden;
     transition: all 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-    z-index: 9999;
+    z-index: 800; /* onder de sticky header (9000) */
 }
 
 .share-dropdown.active {
@@ -375,7 +375,7 @@
 }
 
 .share-dropdown a:hover, .share-dropdown button:hover {
-    background: #4CAF50; /* Jouw Bright-Green */
+    background: var(--bright-green);
     color: white;
     transform: scale(1.1);
 }
@@ -401,11 +401,7 @@
     display: block;
 }
 
-/* Specifieke hover voor X (optioneel, als je hem zwart wilt houden ipv groen) */
-#share-x:hover {
-    background: #000 !important;
-    color: #fff !important;
-}
+/* Reviewronde 2026-09-02: X hovert net als de rest gewoon groen. */
 .share-dropdown a, .share-dropdown button {
     background: #f5f5f5;
     text-decoration: none !important; /* Dit haalt het grijze cirkelrandje weg */

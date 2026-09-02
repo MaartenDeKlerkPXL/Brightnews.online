@@ -1,7 +1,7 @@
 // Bump deze versie bij elke inhoudelijke wijziging aan CSS/JS. Zonder dat
 // blijven bestaande bezoekers vastzitten op een oude cache en krijgen ze
 // nieuwe fixes nooit te zien (zie Fase 2-audit).
-const CACHE_NAME = 'brightnews-v5'; // v5: reviewronde 2026-09-02 (één groen, UI-fixes). Bumpen bij elke wijziging aan de ASSETS-bestanden.
+const CACHE_NAME = 'brightnews-v6'; // v6: reviewronde 2 (witte knoptekst, 3 kolommen, groter logo). Bumpen bij elke wijziging aan ASSETS-bestanden.
 const ASSETS = [
     '/',
     '/index.html',
