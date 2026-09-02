@@ -1,15 +1,15 @@
 {
-  "start": "2026-09-02T15:17:54.299Z",
+  "start": "2026-09-02T16:25:23.100Z",
   "kandidaten": 487,
-  "alGezien": 417,
-  "sentimentGeweigerd": 0,
-  "selectieAfgewezen": 70,
-  "aiCalls": 70,
-  "aiTokens": 78451,
+  "alGezien": 445,
+  "sentimentGeweigerd": 3,
+  "selectieAfgewezen": 39,
+  "aiCalls": 39,
+  "aiTokens": 40973,
   "afgewezen": 0,
   "incompleet": 0,
   "geaccepteerd": 0,
   "opslaanMislukt": 0,
   "feedFouten": 2,
-  "einde": "2026-09-02T15:19:41.554Z"
+  "einde": "2026-09-02T16:26:34.678Z"
 }
