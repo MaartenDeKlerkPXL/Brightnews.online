@@ -35,12 +35,14 @@ WIJS ALTIJD AF met alle scores 0, ongeacht hoe positief de toon lijkt:
 - recepten, reisaanbiedingen en andere puur consumptieve content zonder verhaal
 - items waarvan titel + tekst te weinig inhoud geven om zeker te zijn
 
-Antwoord UITSLUITEND met dit JSON-object, zonder andere tekst:
-{"gevoel": 0, "formulering": 0, "relevantie": 0, "reden": "één korte, concrete zin waarom"}
-
-Gebruik de volledige schaal: een warm, positief verhaal hoort hoge scores te krijgen; alle scores 0 is uitsluitend voor items uit de afwijslijst. Twijfel je bij één criterium tussen twee scores, kies dan de lagere van die twee — maar laat twijfel over één criterium de andere scores niet omlaag trekken. De eindbeslissing (aannemen of afwijzen) wordt buiten jou om uit de scores berekend — jij scoort en motiveert alleen.
-
 IJKVOORBEELDEN (zo scoor je):
-- "Zeldzame zeeschildpad, stervende op Brits strand aangetroffen, na revalidatie 5000 mijl teruggevlogen en vrijgelaten" → gevoel 3, formulering 3, relevantie 3 (redding als kern; de nare aanleiding telt niet als misdaad/ramp-item)
-- "Pokémonfans zamelen samen kaarten in voor kind dat werd opgelicht" → gevoel 3, formulering 3, relevantie 2 (gemeenschapszin als kern, persoonlijk herkenbaar)
-- "Techbedrijf kondigt nieuwe laptop aan die concurrentie aangaat" → alle scores 0 (productlancering, afwijslijst)
+- "Zeldzame zeeschildpad, stervende op Brits strand aangetroffen, na revalidatie 5000 mijl teruggevlogen en vrijgelaten" → gevoel 3, formulering 3, relevantie 3, besluit ja (redding als kern; de nare aanleiding maakt dit géén ramp-item)
+- "Pokémonfans zamelen samen kaarten in voor kind dat werd opgelicht" → gevoel 3, formulering 3, relevantie 2, besluit ja (gemeenschapszin als kern, persoonlijk herkenbaar; de oplichting is slechts de aanleiding)
+- "Techbedrijf kondigt nieuwe laptop aan die concurrentie aangaat" → alle scores 0, besluit nee (productlancering, afwijslijst)
+
+Gebruik de volledige schaal: een warm, positief verhaal hoort hoge scores te krijgen; alle scores 0 is uitsluitend voor items uit de afwijslijst. Twijfel je bij één criterium tussen twee scores, kies dan de lagere van die twee — maar laat twijfel over één criterium de andere scores niet omlaag trekken.
+
+Werk in deze volgorde: score eerst elk criterium afzonderlijk met de ankers hierboven, en leid dáárna het besluit af: "ja" als gevoel ≥ 2 EN formulering ≥ 2 EN relevantie ≥ 2 EN de som ≥ 7, anders "nee". De doorslaggevende beslissing wordt buiten jou om uit je scores berekend — je scores zijn dus leidend, je besluit is de controle.
+
+Antwoord UITSLUITEND met dit JSON-object, zonder andere tekst:
+{"gevoel": 0, "formulering": 0, "relevantie": 0, "besluit": "ja of nee", "reden": "één korte, concrete zin waarom"}

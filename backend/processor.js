@@ -134,12 +134,22 @@ function bouwSelectiePrompt(item) {
         .replace('{TEKST}', String(item.contentSnippet ?? '').slice(0, 1200));
 }
 
+// Welk model de selectie doet. mistral-small bleek als beoordelaar te
+// wispelturig: runs van 2026-09-02/03 gaven op identieke items totaal
+// verschillende scores (Pokémon-item: 8 → 0 → 0, zelfs mét dat item als
+// ijkvoorbeeld ín de prompt). medium is de middenweg tussen kwaliteit en
+// kosten (~66 calls × ~1,5k tokens per run).
+const SELECTIE_MODEL = 'mistral-medium-latest';
+
 // Beoordeelt één item met de selectieprompt. Retourneert { geschikt, log }.
 // Bij een onbruikbare AI-respons wordt het item afgewezen-voor-nu maar NIET
 // in seenLinks gezet, zodat het de volgende run een nieuwe kans krijgt.
 async function selecteerItem(item, statistieken) {
     const antwoord = await mistralMetRetry({
-        model: 'mistral-small-latest',
+        model: SELECTIE_MODEL,
+        // temperature 0: een beoordelaar hoort deterministisch te zijn;
+        // met de default-temperatuur zwalkten scores tussen runs.
+        temperature: 0,
         messages: [{ role: 'user', content: bouwSelectiePrompt(item) }],
         responseFormat: { type: 'json_object' }
     });
