@@ -25,8 +25,10 @@ Beoordeel het item op de drie BrightNews-criteria en geef per criterium een scor
    1 = nauwelijks relevant of herkenbaar voor een breed publiek
    0 = niet relevant en niet herkenbaar (niche, vakjargon, ver-van-mijn-bed)
 
+KERNREGEL vóór alles: kijk naar wat de kern van het verhaal IS, niet naar de aanleiding. Gaat de kern over redding, hulp, herstel, terugvinden, genezing of gemeenschapszin, dan is dat juist BrightNews-materiaal — óók als de aanleiding naar was. Een gered dier, buren die een gedupeerd gezin helpen, fans die samen een bestolen kind compenseren, gestolen kunst die na jaren terecht is: dat is gevoel-3-materiaal en dat beoordeel je gewoon op de drie criteria. Alleen als het nare zélf de kern is (het misdrijf, de ramp, het verlies staat centraal en wordt niet overstegen), hoort het item in de afwijslijst hieronder.
+
 WIJS ALTIJD AF met alle scores 0, ongeacht hoe positief de toon lijkt:
-- items die primair over oorlog, geweld, misdaad, rampen, ongelukken of overlijden gaan. LET OP het verschil: gaat de kern van het verhaal over redding, hulp, herstel of gemeenschapszin — en is het nare slechts de aanleiding — dan is dat juist BrightNews-materiaal en beoordeel je het gewoon op de drie criteria (een gered dier, buren die een gedupeerd gezin helpen, een geslaagde zoekactie: dat zijn voorbeelden van gevoel = 3)
+- items waarvan de kern over oorlog, geweld, misdaad, rampen, ongelukken of overlijden gaat (let op de kernregel hierboven: redding of herstel als kern = wél beoordelen)
 - commerciële promotie, productlanceringen, kortingsacties, bedrijfs- of beursnieuws zonder bredere maatschappelijke betekenis
 - listicles en zelfhulp-clickbait ("5 tips om…", "zo word je…", "dit moet je weten over…"), horoscopen, roddel- en celebritynieuws
 - politiek gekleurde of polariserende onderwerpen
@@ -36,4 +38,9 @@ WIJS ALTIJD AF met alle scores 0, ongeacht hoe positief de toon lijkt:
 Antwoord UITSLUITEND met dit JSON-object, zonder andere tekst:
 {"gevoel": 0, "formulering": 0, "relevantie": 0, "reden": "één korte, concrete zin waarom"}
 
-De eindbeslissing (aannemen of afwijzen) wordt buiten jou om uit de scores berekend — jij scoort en motiveert alleen. Twijfel je over een score, kies dan de lágere waarde — liever een gemist aardig bericht dan een lezer zonder goed gevoel.
+Gebruik de volledige schaal: een warm, positief verhaal hoort hoge scores te krijgen; alle scores 0 is uitsluitend voor items uit de afwijslijst. Twijfel je bij één criterium tussen twee scores, kies dan de lagere van die twee — maar laat twijfel over één criterium de andere scores niet omlaag trekken. De eindbeslissing (aannemen of afwijzen) wordt buiten jou om uit de scores berekend — jij scoort en motiveert alleen.
+
+IJKVOORBEELDEN (zo scoor je):
+- "Zeldzame zeeschildpad, stervende op Brits strand aangetroffen, na revalidatie 5000 mijl teruggevlogen en vrijgelaten" → gevoel 3, formulering 3, relevantie 3 (redding als kern; de nare aanleiding telt niet als misdaad/ramp-item)
+- "Pokémonfans zamelen samen kaarten in voor kind dat werd opgelicht" → gevoel 3, formulering 3, relevantie 2 (gemeenschapszin als kern, persoonlijk herkenbaar)
+- "Techbedrijf kondigt nieuwe laptop aan die concurrentie aangaat" → alle scores 0 (productlancering, afwijslijst)
