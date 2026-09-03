@@ -58,6 +58,52 @@ async function haalOgImage(pageUrl) {
     }
 }
 
+function decodeerEntities(s) {
+    return s
+        .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
+        .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
+        .replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&apos;/g, "'")
+        .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, ' ');
+}
+
+// Voor items met een dunne feed-snippet (teaser-intro's zoals bij GNN, waar
+// de kat-stationschef op strandde): haal de eerste alinea's van de artikel-
+// pagina op als input voor selectie én samenvatting. Zelfde UA/timeout-
+// aanpak als haalOgImage; mislukken is nooit fataal (dan blijft de snippet).
+const DUNNE_SNIPPET_DREMPEL = 200;
+async function haalArtikelTekst(pageUrl) {
+    try {
+        const ctrl = new AbortController();
+        const timer = setTimeout(() => ctrl.abort(), 8000);
+        const res = await fetch(pageUrl, {
+            signal: ctrl.signal,
+            redirect: 'follow',
+            headers: { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36' },
+        });
+        clearTimeout(timer);
+        if (!res.ok) return null;
+        const html = (await res.text()).slice(0, 300000);
+        const alineas = [];
+        for (const m of html.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)) {
+            const tekst = decodeerEntities(m[1].replace(/<[^>]+>/g, ' '))
+                .replace(/\s+/g, ' ').trim();
+            // korte <p>'s zijn vrijwel altijd navigatie/bijschriften
+            if (tekst.length >= 80) alineas.push(tekst);
+            if (alineas.join(' ').length > 1200) break;
+        }
+        let tekst = alineas.join(' ');
+        if (tekst.length < 200) {
+            const og = html.match(/<meta[^>]+property=["']og:description["'][^>]+content=["']([^"']+)["']/i)
+                || html.match(/<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:description["']/i);
+            if (og) tekst = `${decodeerEntities(og[1])} ${tekst}`.trim();
+        }
+        tekst = tekst.slice(0, 1200).trim();
+        return tekst.length >= 80 ? tekst : null;
+    } catch {
+        return null;
+    }
+}
+
 function wacht(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -345,6 +391,7 @@ async function processNews() {
         start: new Date().toISOString(),
         kandidaten: 0,
         alGezien: 0,
+        tekstOpgehaald: 0,
         tekstTeKort: 0,
         sentimentGeweigerd: 0,
         selectieAfgewezen: 0,
@@ -381,6 +428,29 @@ async function processNews() {
                 }
 
                 item.contentSnippet = schoonSnippet(item.contentSnippet);
+
+                // Dunne snippet? Eerst de gratis route: veel WP-feeds sturen
+                // de volledige tekst mee in content:encoded (YES: 6k tekens
+                // waar de snippet er 106 heeft) — al gemapt naar
+                // item.contentEncoded via de customFields hierboven.
+                if (item.contentSnippet.length < DUNNE_SNIPPET_DREMPEL && item.contentEncoded) {
+                    const encodedTekst = schoonSnippet(
+                        decodeerEntities(String(item.contentEncoded).replace(/<[^>]+>/g, ' '))
+                    ).replace(/\s+/g, ' ').slice(0, 1500).trim();
+                    if (encodedTekst.length > item.contentSnippet.length) {
+                        item.contentSnippet = encodedTekst;
+                    }
+                }
+                // Nog steeds dun? Dan de eerste alinea's van de artikelpagina
+                // zelf ophalen; betere input voor selectie én samenvatting.
+                // Mislukken (403/timeout) is nooit fataal: snippet blijft.
+                if (item.contentSnippet.length < DUNNE_SNIPPET_DREMPEL) {
+                    const artikelTekst = await haalArtikelTekst(item.link);
+                    if (artikelTekst && artikelTekst.length > item.contentSnippet.length) {
+                        item.contentSnippet = artikelTekst;
+                        statistieken.tekstOpgehaald++;
+                    }
+                }
 
                 // Zonder brontekst valt er niets te selecteren én niets
                 // bron-getrouw samen te vatten (Nature-feed: 22 van de 39
