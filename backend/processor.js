@@ -58,6 +58,52 @@ async function haalOgImage(pageUrl) {
     }
 }
 
+function decodeerEntities(s) {
+    return s
+        .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
+        .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
+        .replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&apos;/g, "'")
+        .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, ' ');
+}
+
+// Voor items met een dunne feed-snippet (teaser-intro's zoals bij GNN, waar
+// de kat-stationschef op strandde): haal de eerste alinea's van de artikel-
+// pagina op als input voor selectie én samenvatting. Zelfde UA/timeout-
+// aanpak als haalOgImage; mislukken is nooit fataal (dan blijft de snippet).
+const DUNNE_SNIPPET_DREMPEL = 200;
+async function haalArtikelTekst(pageUrl) {
+    try {
+        const ctrl = new AbortController();
+        const timer = setTimeout(() => ctrl.abort(), 8000);
+        const res = await fetch(pageUrl, {
+            signal: ctrl.signal,
+            redirect: 'follow',
+            headers: { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36' },
+        });
+        clearTimeout(timer);
+        if (!res.ok) return null;
+        const html = (await res.text()).slice(0, 300000);
+        const alineas = [];
+        for (const m of html.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)) {
+            const tekst = decodeerEntities(m[1].replace(/<[^>]+>/g, ' '))
+                .replace(/\s+/g, ' ').trim();
+            // korte <p>'s zijn vrijwel altijd navigatie/bijschriften
+            if (tekst.length >= 80) alineas.push(tekst);
+            if (alineas.join(' ').length > 1200) break;
+        }
+        let tekst = alineas.join(' ');
+        if (tekst.length < 200) {
+            const og = html.match(/<meta[^>]+property=["']og:description["'][^>]+content=["']([^"']+)["']/i)
+                || html.match(/<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:description["']/i);
+            if (og) tekst = `${decodeerEntities(og[1])} ${tekst}`.trim();
+        }
+        tekst = tekst.slice(0, 1200).trim();
+        return tekst.length >= 80 ? tekst : null;
+    } catch {
+        return null;
+    }
+}
+
 function wacht(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -192,40 +238,32 @@ function maakTeaser(tekst, maxWoorden = 60) {
     return woorden.slice(0, maxWoorden).join(' ') + '...';
 }
 
+// Feedsanering 2026-09-03: het selectie-log toonde dat ~80% van de AI-calls
+// naar bronnen ging waarvan de inhoud per definitie in de afwijslijst valt
+// (beurs-/productnieuws, zelfhulp-listicles, recepten, reisaanbiedingen) of
+// die snippetloos zijn (Nature-journal-ToC). Die zijn verwijderd; ervoor in
+// de plaats vijf geverifieerde bronnen die zélf positief nieuws cureren.
 const FEEDS = [
+    // gewijd aan positief nieuws
     { name: 'Positive.News', url: 'https://www.positive.news/feed/' },
     { name: 'GoodNewsNetwork.org', url: 'https://www.goodnewsnetwork.org/category/news/feed/' },
-    { name: 'CNTraveler.com', url: 'https://www.cntraveler.com/feed/rss' },
-    { name: 'Adventure-Journal.com', url: 'https://www.adventure-journal.com/feed/' },
-    { name: 'Bright.nl', url: 'https://www.bright.nl/rss' },
-    { name: 'BusinessInsider.com', url: 'https://www.businessinsider.com/rss' },
-    { name: 'Barefeetinthekitchen.com', url: 'https://barefeetinthekitchen.com/feed' },
-    { name: 'Nature.com', url: 'https://www.nature.com/nature.rss' },
-    { name: 'Goingzerowaste.com', url: 'https://www.goingzerowaste.com/feed/' },
+    { name: 'ReasonsToBeCheerful.world', url: 'https://reasonstobecheerful.world/feed/' },
+    { name: 'OptimistDaily.com', url: 'https://www.optimistdaily.com/feed/' },
+    { name: 'Squirrel-News.net', url: 'https://squirrel-news.net/feed/' },
+    { name: 'GoodGoodGood.co', url: 'https://www.goodgoodgood.co/articles/rss.xml' },
+    { name: 'YesMagazine.org', url: 'https://www.yesmagazine.org/feed' },
+    // wetenschap, natuur & milieu met echte verhalen
     { name: 'Newatlas.com', url: 'https://newatlas.com/index.rss' },
-    { name: 'Ww2.kqed.org/mindshift', url: 'https://ww2.kqed.org/mindshift/feed/' },
-    { name: 'Onbetterliving.com', url: 'https://onbetterliving.com/feed/' },
-    { name: 'Wellnessblogster.nl', url: 'https://wellnessblogster.nl/feed/' },
-    { name: 'BBC.com/culture', url: 'https://www.bbc.com/culture/feed.rss' },
-    { name: 'Openaccessgovernment.org', url: 'https://www.openaccessgovernment.org/category/open-access-news/research-innovation-news/feed/' },
-    { name: 'PBS.org', url: 'https://www.pbs.org/wnet/nature/blog/feed/' },
-    { name: 'Earth911.com', url: 'https://earth911.com/feed/' },
-    { name: 'Theecologist.org', url: 'https://theecologist.org/whats_new/feed' },
-    { name: 'Environmentuk.net', url: 'https://www.environmentuk.net/index.php?format=feed&type=rss' },
-    { name: 'Ourculturemag.com', url: 'https://ourculturemag.com/feed/' },
-    { name: 'Honeygood.com', url: 'https://www.honeygood.com/feed/' },
-    { name: 'Addicted2success.com', url: 'https://addicted2success.com/feed/' },
-    { name: 'Positivityguides.net', url: 'https://www.positivityguides.net/feed/' },
     { name: 'Sciencenews.org', url: 'https://www.sciencenews.org/feed' },
     { name: 'NPR.org', url: 'https://feeds.npr.org/1007/rss.xml' },
-    { name: 'Dumblittleman.com', url: 'https://www.dumblittleman.com/feed/' },
-    { name: 'Lifeoptimizer.org', url: 'https://www.lifeoptimizer.org/blog/feed/' },
-    { name: 'Lifehack.org', url: 'https://www.lifehack.org/feed' },
-    { name: 'Hackslifestyle.com', url: 'https://hackslifestyle.com/feed/' },
-    { name: 'Happierhuman.com', url: 'https://www.happierhuman.com/feed/' },
-    { name: 'Mindbodygreen.com', url: 'https://www.mindbodygreen.com/rss/featured.xml' },
-    { name: 'Fortune.com', url: 'https://fortune.com/feed/fortune-feeds/?id=3230629' },
-    { name: 'GFmag.com', url: 'https://gfmag.com/feed/' },
+    { name: 'Openaccessgovernment.org', url: 'https://www.openaccessgovernment.org/category/open-access-news/research-innovation-news/feed/' },
+    { name: 'PBS.org', url: 'https://www.pbs.org/wnet/nature/blog/feed/' },
+    { name: 'Theecologist.org', url: 'https://theecologist.org/whats_new/feed' },
+    { name: 'Environmentuk.net', url: 'https://www.environmentuk.net/index.php?format=feed&type=rss' },
+    // cultuur, onderwijs & buitenleven
+    { name: 'BBC.com/culture', url: 'https://www.bbc.com/culture/feed.rss' },
+    { name: 'Ww2.kqed.org/mindshift', url: 'https://ww2.kqed.org/mindshift/feed/' },
+    { name: 'Adventure-Journal.com', url: 'https://www.adventure-journal.com/feed/' },
 ];
 
 // 1. Categorie-specifieke Unsplash lijsten
@@ -353,6 +391,7 @@ async function processNews() {
         start: new Date().toISOString(),
         kandidaten: 0,
         alGezien: 0,
+        tekstOpgehaald: 0,
         tekstTeKort: 0,
         sentimentGeweigerd: 0,
         selectieAfgewezen: 0,
@@ -389,6 +428,29 @@ async function processNews() {
                 }
 
                 item.contentSnippet = schoonSnippet(item.contentSnippet);
+
+                // Dunne snippet? Eerst de gratis route: veel WP-feeds sturen
+                // de volledige tekst mee in content:encoded (YES: 6k tekens
+                // waar de snippet er 106 heeft) — al gemapt naar
+                // item.contentEncoded via de customFields hierboven.
+                if (item.contentSnippet.length < DUNNE_SNIPPET_DREMPEL && item.contentEncoded) {
+                    const encodedTekst = schoonSnippet(
+                        decodeerEntities(String(item.contentEncoded).replace(/<[^>]+>/g, ' '))
+                    ).replace(/\s+/g, ' ').slice(0, 1500).trim();
+                    if (encodedTekst.length > item.contentSnippet.length) {
+                        item.contentSnippet = encodedTekst;
+                    }
+                }
+                // Nog steeds dun? Dan de eerste alinea's van de artikelpagina
+                // zelf ophalen; betere input voor selectie én samenvatting.
+                // Mislukken (403/timeout) is nooit fataal: snippet blijft.
+                if (item.contentSnippet.length < DUNNE_SNIPPET_DREMPEL) {
+                    const artikelTekst = await haalArtikelTekst(item.link);
+                    if (artikelTekst && artikelTekst.length > item.contentSnippet.length) {
+                        item.contentSnippet = artikelTekst;
+                        statistieken.tekstOpgehaald++;
+                    }
+                }
 
                 // Zonder brontekst valt er niets te selecteren én niets
                 // bron-getrouw samen te vatten (Nature-feed: 22 van de 39

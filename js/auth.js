@@ -308,7 +308,9 @@ async function applyDiscountCode() {
                 invalid_code: 'promo_invalid',
                 expired: 'promo_expired',
                 limit_reached: 'promo_limit_reached',
-                not_logged_in: 'promo_not_logged_in'
+                not_logged_in: 'promo_not_logged_in',
+                already_redeemed: 'promo_already_used',
+                rate_limited: 'promo_rate_limited'
             };
             showNotification(getT(reasonKeys[data?.reason] || 'promo_invalid'), 'error');
         }
