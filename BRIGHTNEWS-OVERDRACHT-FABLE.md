@@ -1,11 +1,12 @@
 # Bright News — Overdrachtsdocument / Handoff
 
-**Bijgewerkt: 2026-09-03 ±00:30 CEST, sessie 3 met Claude Fable 5** (sessie 1:
+**Bijgewerkt: 2026-09-03 middag, sessie 3 met Claude Fable 5** (sessie 1:
 review + fases A–E op 2026-09-01; sessie 2: reviewer-rondes F+G en de
-selectieprompt-iteratie; sessie 3: fase H — pipelinebugs gevonden en gefixt).
-Dit document + `README.md` (hoe alles werkt) + `STRIPE-MIGRATIE.md`
-(betaaltraject) + `STAPPENPLAN-MAARTEN.md` (Maartens acties) vervangen samen
-de volledige sessiecontext.
+selectieprompt-iteratie; sessie 3: fases H+I — selectiepipeline werkend
+gekregen, feedsanering, promocode-hardening live). Dit document +
+`README.md` (hoe alles werkt) + `STRIPE-MIGRATIE.md` (betaaltraject) +
+`STAPPENPLAN-MAARTEN.md` (Maartens acties) vervangen samen de volledige
+sessiecontext.
 
 ---
 
@@ -40,12 +41,44 @@ gevonden via het selectie-log en gefixt, alles gemerged en live:
    opgelicht kind) kreeg `besluit: nee` met rekenfout "relevantie te laag
    (2)". Fix: `besluit`-veld uit de prompt-JSON; drempel+minima in code zijn
    als enige beslissend. Model scoort en motiveert alleen nog.
-De prompt-hash dekt nu ook `SNIPPET_SCHOON_VERSIE`; beide fixes wijzigden de
-hash → alle 'sel'-afwijzingen krijgen bij de eerstvolgende run (nachtcron
-2026-09-03T00:00Z) automatisch een herkansing met schone tekst en zonder veto.
-**Drempelbesluit**: eerste schone data zegt 7 hándhaven — de 5-scoorders
-hadden allemaal gevoel=0 en waren terecht afgewezen; 7→6 had niets extra's
-toegelaten. Herbeoordelen na een paar dagen nieuw regime (zie §9.1).
+**Vervolg (fase H2–H4)**: de besluit-in-code-wijziging veroorzaakte een
+nul-collaps bij mistral-small (62–66 van alle items op totaal 0, incl.
+items die als ijkvoorbeeld ín de prompt stonden — het model volgde de
+voorbeelden niet). Structurele oplossing (fase H4, live): **selectie op
+`mistral-medium-latest` met `temperature: 0`** (const `SELECTIE_MODEL`),
+prompt v5 met besluit-veld als afgedwongen dénkvolgorde (code beslist
+onverminderd zelf), kernregel kern-vs-aanleiding prominent vóór de
+afwijslijst, ijkvoorbeelden vóór de outputinstructie. **Resultaat run
+09:10 UTC: gezonde scorespreiding (0 t/m 9), 21 artikelen gepubliceerd**;
+kat-stationschef, Picasso en Pokémon kwamen alle drie terecht door.
+
+**Fase I (2026-09-03, alles live)**:
+1. **Feedsanering**: 34 → 17 feeds. Structurele nul-bronnen weg (BI,
+   Fortune, Nature-ToC, Mindbodygreen c.s.); nieuw en live getest:
+   Reasons to be Cheerful, Optimist Daily, Squirrel News, Good Good Good,
+   YES! Magazine. Aanleiding: ~80% van de calls ging naar afwijslijst-
+   content, en de v5-missers (Tado, kleurplaten, 4× MBG) kwamen allemaal
+   uit geschrapte bronnen.
+2. **Dunne-snippetverrijking** (<200 tekens): eerst `content:encoded` uit
+   de feed (gratis; YES levert 6k tekens), anders eerste alinea's van de
+   artikelpagina via `haalArtikelTekst()` (browser-UA, 403 = niet fataal).
+   Teller `tekstOpgehaald` in last_run.json.
+3. **Promocode-hardening UITGEVOERD op live** (hardening-2026-09-03.sql,
+   geverifieerd): promo_redemptions (1× per code per gebruiker, reason
+   already_redeemed), promo_attempts (max 10/uur, reason rate_limited),
+   redeem_promo_code v2, wees-profielen-trigger + eenmalige schoonmaak
+   (0 wezen over). Frontend-keys + vertalingen ×5 gemerged;
+   schema-snapshot.sql bijgewerkt naar de live stand.
+4. **8 misplaatste v5-artikelen verwijderd** (eenmalige uitzondering op
+   "nooit verwijderen", expliciete go van Erik; ze waren minuten oud):
+   uit 5 taal-JSON's, manifest, 40 statische pagina's, sitemap én
+   articles_full (40 rijen via Management-API). seen-status blijft 'ok'
+   zodat ze niet terugkeren.
+
+**Drempelbesluit**: op 7 laten. De v5-missers scoorden precies 7 maar
+kwamen allemaal uit inmiddels geschrapte bronnen; de parels zaten op 8–9.
+Optie 7→8 pas heroverwegen met een paar dagen data onder het nieuwe
+feedregime (zie §9.1).
 
 ## 2. Projectkaart
 
@@ -181,14 +214,13 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
 
 ## 9. Volgende stappen (in volgorde)
 
-1. **Nachtcron 2026-09-03T00:00Z beoordelen** (eerste run met álle fase-H-
-   fixes: schone snippets, geen leeg-tekst-calls, besluit in code, herkansing
-   van ~160 'sel'-items): `git pull`, entries in `data/selectie-log.json`
-   met datum ≥ 2026-09-03T00:00Z analyseren (acceptatiegraad, gemiste parels,
-   onterechte goedkeuringen — let op het Pokémon-item, dat hoort nu door te
-   komen). Na een paar dagen nieuw regime met Erik: drempel 7 houden (eerste
-   data zegt ja) en evt. prompt v3. De homepage moet zich geleidelijk vullen
-   met nieuw-regime-artikelen.
+1. **Eerste runs onder het nieuwe feedregime beoordelen** (nachtcron
+   2026-09-04T00:00Z e.v.): `git pull`, selectie-log analyseren op
+   acceptatiegraad per bron, gemiste parels en onterechte goedkeuringen.
+   Let op: de 5 nieuwe feeds leveren hun hele archief als kandidaat aan
+   (eerste run wordt groot), en `feedFouten` in last_run.json in de gaten
+   houden voor de nieuwe bronnen. Na een paar dagen met Erik: drempel 7
+   houden of naar 8 (de v5-missers scoorden allemaal precies 7).
 2. **Maarten**: `STAPPENPLAN-MAARTEN.md` — Search Console (±30 min), Stripe
    deel 1 (reviewwachttijd! zo vroeg mogelijk), socials claimen of URL's
    doorgeven (footer linkt nu naar brightnews.online-handles).
@@ -198,10 +230,11 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
    livegang (provider-switch, lemon.js weg, Privacy-verwerkers → Stripe,
    meta-CSP), **Fase 9 MoR-eindcheck**, daarna token intrekken.
 4. Reviewer een herbeoordeling laten doen van de live site.
-5. Onderhoudslijst (niet blokkerend): promocode-hardening (stapelen +
-   brute-force), grants-verharding (revoke, nu inert door RLS),
-   wees-profielrijen na accountverwijdering, 2 haperende feeds, acceptatie-
-   monitoring, evt. socials-iconen echte URL's.
+5. Onderhoudslijst (niet blokkerend): grants-verharding op de bestaande
+   tabellen (revoke, nu inert door RLS — eerst met Maarten afstemmen; de
+   nieuwe promo-tabellen hébben al revokes), acceptatie-monitoring per
+   feed, evt. socials-iconen echte URL's. (Promocode-hardening en
+   wees-profielrijen: afgerond 2026-09-03.)
 
 ## 10. Risico's waar Erik zelf op moet letten
 

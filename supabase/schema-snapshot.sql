@@ -104,13 +104,32 @@ begin
 end;
 $function$;
 
--- Promocode-verzilvering: server-side normalisatie (upper/trim), vervaldatum-
--- en max_gebruik-check, verlenging vanaf bestaande vervaldatum.
--- BEKENDE BEPERKINGEN (bewust hier gedocumenteerd, fix gepland):
---  * geen registratie per gebruiker: dezelfde gebruiker kan dezelfde code
---    meermaals verzilveren (tot max_gebruik) en zo premium stapelen;
---  * geen rate limiting: codes zijn met de anon-key gratis te brute-forcen —
---    houd codes lang/onvoorspelbaar tot er een pogingslimiet is.
+-- Hulptabellen promocode-hardening (2026-09-03, zie hardening-2026-09-03.sql;
+-- uitgevoerd en geverifieerd op live). Geen policies: alléén de
+-- security-definer-functie leest/schrijft hier.
+create table if not exists public.promo_redemptions (
+  user_id     uuid not null references auth.users(id) on delete cascade,
+  code        text not null,
+  redeemed_at timestamptz not null default now(),
+  primary key (user_id, code)
+);
+alter table public.promo_redemptions enable row level security;
+-- revoke all ... from anon, authenticated; -- uitgevoerd
+
+create table if not exists public.promo_attempts (
+  user_id      uuid not null,
+  attempted_at timestamptz not null default now()
+);
+create index if not exists promo_attempts_user_time
+  on public.promo_attempts (user_id, attempted_at);
+alter table public.promo_attempts enable row level security;
+-- revoke all ... from anon, authenticated; -- uitgevoerd
+
+-- Promocode-verzilvering v2 (hardening 2026-09-03): server-side normalisatie
+-- (upper/trim), vervaldatum- en max_gebruik-check, verlenging vanaf bestaande
+-- vervaldatum, rate limit (max 10 pogingen/uur/gebruiker, reason
+-- 'rate_limited') en één verzilvering per code per gebruiker (reason
+-- 'already_redeemed'). Frontend-keys: promo_rate_limited/promo_already_used.
 CREATE OR REPLACE FUNCTION public.redeem_promo_code(p_code text)
  RETURNS jsonb
  LANGUAGE plpgsql
@@ -125,6 +144,15 @@ begin
     return jsonb_build_object('success', false, 'reason', 'not_logged_in');
   end if;
 
+  -- opportunistische schoonmaak + pogingslimiet
+  delete from public.promo_attempts
+   where user_id = v_uid and attempted_at < now() - interval '1 day';
+  if (select count(*) from public.promo_attempts
+       where user_id = v_uid and attempted_at > now() - interval '1 hour') >= 10 then
+    return jsonb_build_object('success', false, 'reason', 'rate_limited');
+  end if;
+  insert into public.promo_attempts (user_id) values (v_uid);
+
   select * into v_row from public.promo_codes where code = upper(trim(p_code)) for update;
 
   if not found then
@@ -138,6 +166,12 @@ begin
   if v_row.max_gebruik is not null and v_row.keer_gebruikt >= v_row.max_gebruik then
     return jsonb_build_object('success', false, 'reason', 'limit_reached');
   end if;
+
+  if exists (select 1 from public.promo_redemptions
+              where user_id = v_uid and code = v_row.code) then
+    return jsonb_build_object('success', false, 'reason', 'already_redeemed');
+  end if;
+  insert into public.promo_redemptions (user_id, code) values (v_uid, v_row.code);
 
   update public.promo_codes set keer_gebruikt = keer_gebruikt + 1 where code = v_row.code;
 
@@ -175,6 +209,24 @@ BEGIN
     RETURN NEW;
 END;
 $function$;
+
+-- Wees-profielrijen (hardening 2026-09-03): opruimtrigger — profiel weg
+-- zodra de auth-gebruiker wordt verwijderd; bestaande wezen eenmalig
+-- opgeruimd. Geverifieerd live: trigger aanwezig, 0 resterende wezen.
+CREATE OR REPLACE FUNCTION public.cleanup_profile_after_user_delete()
+ RETURNS trigger
+ LANGUAGE plpgsql
+ SECURITY DEFINER
+ SET search_path TO 'public'
+AS $function$
+begin
+  delete from public.profiles where id = OLD.id;
+  return OLD;
+end;
+$function$;
+-- create trigger trigger_cleanup_profile_on_user_delete
+--   after delete on auth.users
+--   for each row execute function public.cleanup_profile_after_user_delete();
 
 -- ----------------------------------------------------------------------------
 -- Grants zoals aangetroffen (informatief)

@@ -1,5 +1,6 @@
 -- ============================================================================
--- Promocode-hardening + wees-profielrijen — VOORBEREID, NOG NIET UITGEVOERD
+-- Promocode-hardening + wees-profielrijen — UITGEVOERD op live 2026-09-03
+-- (geverifieerd: tabellen + trigger aanwezig, functie-v2 actief, 0 wezen)
 -- ============================================================================
 -- Lost de twee "BEKENDE BEPERKINGEN" uit schema-snapshot.sql op (stapelen +
 -- brute-force) en ruimt wees-profielrijen op (gotcha: accountverwijdering
