@@ -192,40 +192,32 @@ function maakTeaser(tekst, maxWoorden = 60) {
     return woorden.slice(0, maxWoorden).join(' ') + '...';
 }
 
+// Feedsanering 2026-09-03: het selectie-log toonde dat ~80% van de AI-calls
+// naar bronnen ging waarvan de inhoud per definitie in de afwijslijst valt
+// (beurs-/productnieuws, zelfhulp-listicles, recepten, reisaanbiedingen) of
+// die snippetloos zijn (Nature-journal-ToC). Die zijn verwijderd; ervoor in
+// de plaats vijf geverifieerde bronnen die zélf positief nieuws cureren.
 const FEEDS = [
+    // gewijd aan positief nieuws
     { name: 'Positive.News', url: 'https://www.positive.news/feed/' },
     { name: 'GoodNewsNetwork.org', url: 'https://www.goodnewsnetwork.org/category/news/feed/' },
-    { name: 'CNTraveler.com', url: 'https://www.cntraveler.com/feed/rss' },
-    { name: 'Adventure-Journal.com', url: 'https://www.adventure-journal.com/feed/' },
-    { name: 'Bright.nl', url: 'https://www.bright.nl/rss' },
-    { name: 'BusinessInsider.com', url: 'https://www.businessinsider.com/rss' },
-    { name: 'Barefeetinthekitchen.com', url: 'https://barefeetinthekitchen.com/feed' },
-    { name: 'Nature.com', url: 'https://www.nature.com/nature.rss' },
-    { name: 'Goingzerowaste.com', url: 'https://www.goingzerowaste.com/feed/' },
+    { name: 'ReasonsToBeCheerful.world', url: 'https://reasonstobecheerful.world/feed/' },
+    { name: 'OptimistDaily.com', url: 'https://www.optimistdaily.com/feed/' },
+    { name: 'Squirrel-News.net', url: 'https://squirrel-news.net/feed/' },
+    { name: 'GoodGoodGood.co', url: 'https://www.goodgoodgood.co/articles/rss.xml' },
+    { name: 'YesMagazine.org', url: 'https://www.yesmagazine.org/feed' },
+    // wetenschap, natuur & milieu met echte verhalen
     { name: 'Newatlas.com', url: 'https://newatlas.com/index.rss' },
-    { name: 'Ww2.kqed.org/mindshift', url: 'https://ww2.kqed.org/mindshift/feed/' },
-    { name: 'Onbetterliving.com', url: 'https://onbetterliving.com/feed/' },
-    { name: 'Wellnessblogster.nl', url: 'https://wellnessblogster.nl/feed/' },
-    { name: 'BBC.com/culture', url: 'https://www.bbc.com/culture/feed.rss' },
-    { name: 'Openaccessgovernment.org', url: 'https://www.openaccessgovernment.org/category/open-access-news/research-innovation-news/feed/' },
-    { name: 'PBS.org', url: 'https://www.pbs.org/wnet/nature/blog/feed/' },
-    { name: 'Earth911.com', url: 'https://earth911.com/feed/' },
-    { name: 'Theecologist.org', url: 'https://theecologist.org/whats_new/feed' },
-    { name: 'Environmentuk.net', url: 'https://www.environmentuk.net/index.php?format=feed&type=rss' },
-    { name: 'Ourculturemag.com', url: 'https://ourculturemag.com/feed/' },
-    { name: 'Honeygood.com', url: 'https://www.honeygood.com/feed/' },
-    { name: 'Addicted2success.com', url: 'https://addicted2success.com/feed/' },
-    { name: 'Positivityguides.net', url: 'https://www.positivityguides.net/feed/' },
     { name: 'Sciencenews.org', url: 'https://www.sciencenews.org/feed' },
     { name: 'NPR.org', url: 'https://feeds.npr.org/1007/rss.xml' },
-    { name: 'Dumblittleman.com', url: 'https://www.dumblittleman.com/feed/' },
-    { name: 'Lifeoptimizer.org', url: 'https://www.lifeoptimizer.org/blog/feed/' },
-    { name: 'Lifehack.org', url: 'https://www.lifehack.org/feed' },
-    { name: 'Hackslifestyle.com', url: 'https://hackslifestyle.com/feed/' },
-    { name: 'Happierhuman.com', url: 'https://www.happierhuman.com/feed/' },
-    { name: 'Mindbodygreen.com', url: 'https://www.mindbodygreen.com/rss/featured.xml' },
-    { name: 'Fortune.com', url: 'https://fortune.com/feed/fortune-feeds/?id=3230629' },
-    { name: 'GFmag.com', url: 'https://gfmag.com/feed/' },
+    { name: 'Openaccessgovernment.org', url: 'https://www.openaccessgovernment.org/category/open-access-news/research-innovation-news/feed/' },
+    { name: 'PBS.org', url: 'https://www.pbs.org/wnet/nature/blog/feed/' },
+    { name: 'Theecologist.org', url: 'https://theecologist.org/whats_new/feed' },
+    { name: 'Environmentuk.net', url: 'https://www.environmentuk.net/index.php?format=feed&type=rss' },
+    // cultuur, onderwijs & buitenleven
+    { name: 'BBC.com/culture', url: 'https://www.bbc.com/culture/feed.rss' },
+    { name: 'Ww2.kqed.org/mindshift', url: 'https://ww2.kqed.org/mindshift/feed/' },
+    { name: 'Adventure-Journal.com', url: 'https://www.adventure-journal.com/feed/' },
 ];
 
 // 1. Categorie-specifieke Unsplash lijsten
