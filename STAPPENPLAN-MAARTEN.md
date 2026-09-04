@@ -49,64 +49,73 @@ aangepast worden):
 
 ---
 
-## Spoor 2 — Stripe Managed Payments (±1–1,5 uur + reviewwachttijd)
+## Spoor 2 — Stripe: alleen Managed Payments activeren nog (±15 min + reviewwachttijd)
 
-Doel: BrightNews laten verkopen via Stripe als Merchant of Record (zij doen
-btw, facturen, bonnetjes en geschillen). De site is er al klaar voor; na jouw
-stappen is de omschakeling één regel code.
+**Stand 2026-09-04**: bijna alles is al gedaan. Jouw producten (Glow €2,95/mnd,
+Shine €24,95/jr, beide met 30 dagen gratis proefperiode) en payment links
+staan goed; Claude heeft daarna via jouw ingelogde dashboard het klantenportaal
+geactiveerd, de `plan`-metadata op beide producten gezet en het
+webhook-endpoint aangemaakt, en via de API de database en de webhook-function
+klaargezet (secret staat er ook al in). **Er rest precies één ding dat alleen
+jij kunt doen, want het is een juridische overeenkomst op jouw naam:
+Managed Payments activeren.**
 
-**Gebruik overal exact dezelfde bedrijfsgegevens als in de sitefooter**
-(naam, Vossenstraat 19 Nijswiller, KvK 42048341, BTW NL005455019B94) — Stripe
-en de site moeten hetzelfde vertellen, daar kijkt hun review naar.
+### Waarom dit moet
 
-1. **Account aanmaken** op https://stripe.com → "Start now". Doorloop de
-   volledige activatie: bedrijfsgegevens, jouw identiteit (ID-verificatie)
-   en je IBAN voor uitbetalingen. Maak het account helemaal af — een half
-   geactiveerd account kan geen Managed Payments aanvragen.
-2. **Managed Payments aanvragen**: zoek in het dashboard (zoekbalk bovenin)
-   naar **"Managed Payments"** en vraag toegang aan voor brightnews.online.
-   Stripe beoordeelt dan je site. Alles waar ze op letten is al geregeld
-   (voorwaarden, privacy, refunds-pagina, herroepingsrecht-checkbox,
-   "Merchant of Record"-vermelding in de footer) — maar er zit wachttijd op
-   hun antwoord, dus **doe deze stap zo vroeg mogelijk**.
-3. **Twee producten aanmaken** (pas nadat Managed Payments actief is, zodat
-   ze onder dat regime vallen): dashboard → Product catalog → Add product.
-   - **Glow** — terugkerend, €2,95 per maand.
-   - **Shine** — terugkerend, €24,95 per jaar.
-   Voeg bij elk product onder *Metadata* een sleutel `plan` toe met waarde
-   `Glow` resp. `Shine` (zo komt de juiste plannaam in het klantprofiel).
-   Let op dat je rechtsboven in **live mode** staat, niet in test mode.
-4. **Per product een Payment Link**: open het product → "Create payment
-   link". Type: Subscription. Stel bij *After payment* de doorverwijzing in
-   naar `https://brightnews.online/thanks.html?status=success`. Kopieer de
-   twee links (beginnen met `https://buy.stripe.com/…`).
-5. **Customer Portal aanzetten**: dashboard → Settings → Billing →
-   **Customer portal**. Zet aan: abonnement opzeggen + betaalmethode
-   wijzigen. Activeer de "no-code" loginpagina en kopieer die link
-   (begint met `https://billing.stripe.com/p/login/…`).
-6. **Webhook aanmaken**: dashboard → Developers → **Webhooks** → Add
-   endpoint.
-   - Endpoint-URL: `https://rquuqypgaannrakdrabj.supabase.co/functions/v1/stripe-webhook`
-   - Selecteer precies deze 4 events: `checkout.session.completed`,
-     `customer.subscription.created`, `customer.subscription.updated`,
-     `customer.subscription.deleted`
-   - Na het aanmaken: klik "Reveal" bij **Signing secret** en kopieer de
-     code die met `whsec_` begint.
-7. **Stuur vier dingen naar Erik** (via een veilig kanaal zoals Signal of
-   WhatsApp, in elk geval de secret niet los in de mail):
-   1. Payment Link **Glow** · 2. Payment Link **Shine** ·
-   3. Customer Portal-link · 4. de **whsec_…** signing secret.
-8. **Lemon Squeezy**: nog even niets aan doen; die blijft parallel bestaan
-   tot Stripe live is en wordt daarna afgebouwd (staat in STRIPE-MIGRATIE.md).
+Managed Payments maakt Stripe de **Merchant of Record**: zij worden formeel
+de verkoper, en regelen dus btw-afdracht in alle landen, facturen/bonnetjes,
+chargebacks en klantsupport. De footer van de site zegt al "Payments are
+securely processed by Stripe, our Merchant of Record" — dat klopt pas als
+deze activatie rond is. Zonder MP verkoop je als gewone Stripe-verkoper en
+ben je zélf verantwoordelijk voor buitenlandse btw. Kosten: 3,5% extra
+per transactie bovenop de normale Stripe-fees (dat is de prijs van geen
+btw-administratie hoeven doen).
+
+### De stappen
+
+1. **Log in** op https://dashboard.stripe.com (live mode, rechtsboven —
+   niet "test mode"). In het linkermenu onder *Snelkoppelingen* staat
+   **Managed Payments**; klik erop. (Staat hij daar niet: zoekbalk bovenin
+   → "Managed Payments".)
+2. Je ziet de introductiepagina ("Vereenvoudig wereldwijde verkoop…").
+   Klik **"Aan de slag"**.
+3. Doorloop de wizard. Verwacht in elk geval:
+   - **de overeenkomst voor geregistreerde verkopers** (Stripe wordt
+     wederverkoper van je product) — lees en accepteer;
+   - vragen over **wat je verkoopt**: digitale content/abonnementen —
+     BrightNews valt daar gewoon onder (beide producten staan in het
+     dashboard al als "Komt in aanmerking");
+   - mogelijk een **controle van je bedrijfsgegevens en je site**. Gebruik
+     exact de gegevens uit de sitefooter (Vossenstraat 19 Nijswiller,
+     KvK 42048341, BTW NL005455019B94). Alles waar Stripe naar kijkt staat
+     al op de site: voorwaarden, privacy, refunds-pagina,
+     herroepingsrecht-checkbox, MoR-zin in de footer.
+4. **Wachttijd**: Stripe kan de aanvraag direct goedkeuren of er een review
+   op zetten (uren tot dagen). Doe deze stap dus zo snel mogelijk; je hoeft
+   er verder niet op te wachten.
+5. **Controleer na goedkeuring** (Productcatalogus): de kolom *Managed
+   Payments* bij Glow en Shine moet dan niet meer "Komt in aanmerking"
+   zeggen maar actief/ingeschreven zijn. Kom je een knop of vinkje tegen om
+   de producten onder Managed Payments te brengen: aanzetten voor allebei.
+6. **Verander verder niets** aan producten, prijzen of payment links — die
+   URL's zitten inmiddels in de sitecode. Wil je ooit iets wijzigen, geef
+   het even door.
+7. **Meld "MP is actief" aan Erik/pap.** Daarna volgen de laatste stappen
+   (testbestelling in testmodus, omschakeling van Lemon naar Stripe) vanzelf
+   in één Claude-sessie.
+
+**Lemon Squeezy**: nog even niets aan doen; die blijft parallel bestaan tot
+Stripe live is en wordt daarna afgebouwd (staat in STRIPE-MIGRATIE.md).
 
 ---
 
 ## Wat daarna automatisch volgt (Claude/Erik, ±1 sessie)
 
-Databasekolom + webhook-secret zetten en deployen, de vier links invullen in
-`js/betaal-config.js`, een volledige proefbestelling in testmodus (testkaart),
-en dan de livegang: provider-switch om, footer- en privacyteksten van Lemon
-Squeezy naar Stripe, security-headers erbij, live proefaankoop + refund, en
-de eindcheck "zou een Stripe-reviewer dit goedkeuren". Als afronding trek jij
-in Supabase het toegangstoken van Erik weer in (Account → Access Tokens →
-Revoke). Details: `STRIPE-MIGRATIE.md`.
+Zodra jij "MP is actief" meldt: een volledige proefbestelling in testmodus
+(testkaart), en dan de livegang: provider-switch om, footer- en
+privacyteksten van Lemon Squeezy naar Stripe, security-headers erbij, live
+proefaankoop + refund, en de eindcheck "zou een Stripe-reviewer dit
+goedkeuren". Als afronding trek jij in Supabase het toegangstoken van Erik
+weer in (Account → Access Tokens → Revoke). Details: `STRIPE-MIGRATIE.md`.
+(Databasekolom, webhook-function, secret, links en portaal: ✅ al gedaan
+op 2026-09-04.)
