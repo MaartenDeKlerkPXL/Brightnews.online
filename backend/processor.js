@@ -109,13 +109,16 @@ function wacht(ms) {
 }
 
 // Retry met exponentiële backoff rond de Mistral-call (429/timeout/netwerk).
-async function mistralMetRetry(params, pogingen = 3) {
+// 4 pogingen met basis 5s (5/10/20s): de oude 2/4s was te kort voor de
+// per-minuut-limiet van mistral-medium (nachtcron 2026-09-04 verloor er
+// alle 14 kandidaten door; die kregen wel netjes een herkansing).
+async function mistralMetRetry(params, pogingen = 4) {
     for (let i = 0; i < pogingen; i++) {
         try {
             return await client.chat.complete(params);
         } catch (err) {
             if (i === pogingen - 1) throw err;
-            const delay = 2000 * Math.pow(2, i);
+            const delay = 5000 * Math.pow(2, i);
             console.warn(`⏳ Mistral-fout (${err.message}), nieuwe poging over ${delay}ms`);
             await wacht(delay);
         }
@@ -480,7 +483,10 @@ async function processNews() {
                 // beoordeelt alleen — pas als het item dit haalt, volgt de
                 // duurdere samenvattings-/vertaalstap hieronder.
                 try {
-                    await wacht(400);
+                    // 1500ms i.p.v. 400ms: mistral-medium heeft op dit
+                    // account een krapper rate limit dan small — de nachtcron
+                    // van 2026-09-04 04:10 strandde volledig op 429's.
+                    await wacht(1500);
                     item.bronNaam = feedInfo.name;
                     const selectie = await selecteerItem(item, statistieken);
                     if (selectie.log) nieuweSelectieLogs.push(selectie.log);
