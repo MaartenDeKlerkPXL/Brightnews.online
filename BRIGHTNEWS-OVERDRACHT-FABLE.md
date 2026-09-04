@@ -144,7 +144,7 @@ feedregime (zie §9.1).
   `"menu_open": …`; daarna de checker draaien (§6).
 - Template gewijzigd? → `node backend/generate-articles.js` (idempotent).
 - ASSETS-bestand gewijzigd (global.css, components.css, main.js, index.html)?
-  → `CACHE_NAME` bumpen in sw.js (nu **v6**).
+  → `CACHE_NAME` bumpen in sw.js (nu **v8**). Sinds v8 haalt de install de assets met `cache: 'reload'` vers van het netwerk — dat lek (v7 bakte bij recente bezoekers het oude logo-PNG in via de HTTP-cache, max-age 600) is gedicht.
 
 ## 6. Build / test / deploy
 
@@ -180,7 +180,7 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
    een bestand + `-d @bestand`, en geblokkeerde acties als runnable
    bash-blok aan Erik geven (werkte voor secret + webhook-deploy).
 3. **SW-cache**: assets zijn cache-first → CSS/JS-wijzigingen zijn pas
-   zichtbaar na CACHE_NAME-bump (nu v6) én dubbele reload. HTML is
+   zichtbaar na CACHE_NAME-bump (nu v8) én dubbele reload. HTML is
    network-first (deploys direct zichtbaar).
 4. **Browser-pane verborgen ⇒ viewport 0** ⇒ mobiele media-queries actief en
    screenshot-timeouts → eerst `tabs_create foreground` / `resize_window`,
@@ -226,7 +226,9 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
 1b. **Fase J (2026-09-04, live)**: logo-mysterie opgelost — het PNG was
    voor 82% transparante marge (merk 70 van 400px), dus "84px" toonde
    ~15px woordmerk. PNG gecropt naar 463×94, attributen in homepage +
-   template (750 pagina's geregenereerd), .nav-logo 60px, CACHE_NAME v7.
+   template (750 pagina's geregenereerd), .nav-logo 60px, CACHE_NAME v8
+   (v7 direct opgevolgd: install-fetches omzeilen nu de HTTP-cache).
+   Live geverifieerd: SW-cache v8, logo 296×60 gerenderd.
    Erik moet lokaal evt. dubbel reloaden om v7 te zien.
 2. **Maarten**: `STAPPENPLAN-MAARTEN.md` — Search Console (±30 min), Stripe
    deel 1 (reviewwachttijd! zo vroeg mogelijk), socials claimen of URL's
