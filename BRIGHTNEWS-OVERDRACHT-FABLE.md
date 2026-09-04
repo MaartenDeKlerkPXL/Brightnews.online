@@ -1,6 +1,6 @@
 # Bright News — Overdrachtsdocument / Handoff
 
-**Bijgewerkt: 2026-09-03 middag, sessie 3 met Claude Fable 5** (sessie 1:
+**Bijgewerkt: 2026-09-04, sessie 4 met Claude Fable 5** (sessie 1:
 review + fases A–E op 2026-09-01; sessie 2: reviewer-rondes F+G en de
 selectieprompt-iteratie; sessie 3: fases H+I — selectiepipeline werkend
 gekregen, feedsanering, promocode-hardening live). Dit document +
@@ -214,13 +214,20 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
 
 ## 9. Volgende stappen (in volgorde)
 
-1. **Eerste runs onder het nieuwe feedregime beoordelen** (nachtcron
-   2026-09-04T00:00Z e.v.): `git pull`, selectie-log analyseren op
-   acceptatiegraad per bron, gemiste parels en onterechte goedkeuringen.
-   Let op: de 5 nieuwe feeds leveren hun hele archief als kandidaat aan
-   (eerste run wordt groot), en `feedFouten` in last_run.json in de gaten
-   houden voor de nieuwe bronnen. Na een paar dagen met Erik: drempel 7
-   houden of naar 8 (de v5-missers scoorden allemaal precies 7).
+1. **Runs blijven volgen** (beoordeeld t/m 2026-09-04 ochtend): het
+   backlog van de nieuwe feeds is binnen — run 2026-09-03T16:15 accepteerde
+   72/91, kwaliteit steekproefsgewijs goed (Squirrel 23/23, GGG 21/24,
+   R2bC 9/9). Nachtcron 04:10 verloor 14 kandidaten aan Mistral-429's
+   (mistral-medium = krapper limiet); fase J fixte de pacing (1500ms,
+   retry 4x basis 5s) — check of de eerstvolgende cron weer normaal
+   beoordeelt. Monitoringpunten: Squirrel News publiceert digest-edities
+   (meerdere verhalen per item, komt als één artikel door) en het
+   drempelbesluit 7 vs 8 na een paar dagen regulier regime.
+1b. **Fase J (2026-09-04, live)**: logo-mysterie opgelost — het PNG was
+   voor 82% transparante marge (merk 70 van 400px), dus "84px" toonde
+   ~15px woordmerk. PNG gecropt naar 463×94, attributen in homepage +
+   template (750 pagina's geregenereerd), .nav-logo 60px, CACHE_NAME v7.
+   Erik moet lokaal evt. dubbel reloaden om v7 te zien.
 2. **Maarten**: `STAPPENPLAN-MAARTEN.md` — Search Console (±30 min), Stripe
    deel 1 (reviewwachttijd! zo vroeg mogelijk), socials claimen of URL's
    doorgeven (footer linkt nu naar brightnews.online-handles).
