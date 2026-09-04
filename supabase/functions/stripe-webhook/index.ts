@@ -124,8 +124,15 @@ serve(async (req) => {
             const status = String(obj.status ?? '')
             const geeftToegang = type !== 'customer.subscription.deleted'
                 && ['active', 'trialing'].includes(status)
-            const periodeEinde = obj.current_period_end
-                ? new Date(obj.current_period_end * 1000).toISOString()
+            // Sinds API-versie 2026-02-25.clover staat current_period_end op
+            // de subscription-items, niet meer op het subscription-object
+            // zelf (E2E-vangst 2026-09-04: premium_until bleef null).
+            // trial_end als extra vangnet voor proefperiodes.
+            const periodeEindeSec = obj.current_period_end
+                ?? obj.items?.data?.[0]?.current_period_end
+                ?? obj.trial_end
+            const periodeEinde = periodeEindeSec
+                ? new Date(periodeEindeSec * 1000).toISOString()
                 : null
 
             const { data, error } = await supabaseClient.from('profiles')
