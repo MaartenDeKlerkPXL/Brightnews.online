@@ -1,7 +1,7 @@
 // Bump deze versie bij elke inhoudelijke wijziging aan CSS/JS. Zonder dat
 // blijven bestaande bezoekers vastzitten op een oude cache en krijgen ze
 // nieuwe fixes nooit te zien (zie Fase 2-audit).
-const CACHE_NAME = 'brightnews-v7'; // v7: logo-PNG gecropt + nav-logo 60px (fix "logo oogt klein"). Bumpen bij elke wijziging aan ASSETS-bestanden.
+const CACHE_NAME = 'brightnews-v8'; // v8: install omzeilt HTTP-cache (v7 bakte bij sommige bezoekers het oude logo-PNG in). Bumpen bij elke wijziging aan ASSETS-bestanden.
 const ASSETS = [
     '/',
     '/index.html',
@@ -15,7 +15,10 @@ const ASSETS = [
 self.addEventListener('install', (event) => {
     event.waitUntil(
         caches.open(CACHE_NAME).then((cache) => {
-            return cache.addAll(ASSETS);
+            // cache: 'reload' — vers van het netwerk, niet uit de HTTP-cache.
+            // Zonder dit bakte een install vlak na een deploy de oude versie
+            // van een asset (max-age 600) permanent in de nieuwe SW-cache.
+            return cache.addAll(ASSETS.map((url) => new Request(url, { cache: 'reload' })));
         }).then(() => self.skipWaiting()) // Nieuwe SW meteen actief, niet pas na sluiten van alle tabs
     );
 });
