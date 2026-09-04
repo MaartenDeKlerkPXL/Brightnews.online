@@ -1,10 +1,10 @@
 {
-  "start": "2026-09-04T04:10:36.920Z",
+  "start": "2026-09-04T16:10:57.327Z",
   "kandidaten": 293,
-  "alGezien": 277,
-  "tekstOpgehaald": 7,
+  "alGezien": 257,
+  "tekstOpgehaald": 12,
   "tekstTeKort": 0,
-  "sentimentGeweigerd": 2,
+  "sentimentGeweigerd": 4,
   "selectieAfgewezen": 0,
   "aiCalls": 0,
   "aiTokens": 0,
@@ -13,5 +13,5 @@
   "geaccepteerd": 0,
   "opslaanMislukt": 0,
   "feedFouten": 0,
-  "einde": "2026-09-04T04:12:27.168Z"
+  "einde": "2026-09-04T16:31:06.208Z"
 }
