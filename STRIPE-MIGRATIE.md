@@ -50,12 +50,19 @@ mailer-koppelstuk oplost.
      --no-verify-jwt` zodra de CLI het tokenformaat accepteert).
 8. **Config invullen** in `js/betaal-config.js`: de twee Payment Link-URL's en
    de portal-link; `provider` nog op `'lemon'` laten.
-9. **Testmode-E2E**: zet tijdelijk env `STRIPE_ALLOW_TEST=true` op de function,
-   zet `provider: 'stripe'` lokaal, doorloop een testcheckout (testkaart
-   4242 4242 4242 4242) en controleer: profiel wordt premium, premium_until =
-   periode-einde, volledige artikelen zichtbaar, opzeggen via portal zet
-   cancel_at_period_end (toegang blijft tot einddatum), na afloop premium uit.
-   Daarna `STRIPE_ALLOW_TEST` weer verwijderen.
+9. **Testmode-E2E: ✅ UITGEVOERD EN GROEN (2026-09-04).** Sandbox-checkout met
+   testkaart → premium aan, plan_type Glow (via payment-link-metadata),
+   stripe_customer_id vastgelegd, premium_until = trial-einde; opzeggen aan
+   einde periode → toegang blijft; direct beëindigen → premium uit, datum
+   null. Drie productiebugs gevonden en gefixt vóór livegang (webhook v2/v3):
+   trial-checkouts (payment_status no_payment_required) activeerden nooit
+   premium; current_period_end verhuisde in API 2026-02-25.clover naar de
+   subscription-items; en profiles.id blijkt een FK naar auth.users te
+   hebben (client_reference_id moet een echte gebruiker zijn — via de site
+   is dat altijd zo). Testvlaggen (STRIPE_ALLOW_TEST,
+   STRIPE_WEBHOOK_SECRET_TEST) na afloop verwijderd; testdata opgeruimd.
+   Sandbox-artefacten (testproduct/-link/-endpoint) blijven staan voor
+   toekomstige tests.
 10. **Livegang** (één commit):
     - `provider: 'stripe'` in js/betaal-config.js;
     - lemon.js-script verwijderen van abonnementen.html;

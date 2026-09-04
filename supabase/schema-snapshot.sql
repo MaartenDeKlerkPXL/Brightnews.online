@@ -29,7 +29,12 @@
 -- ----------------------------------------------------------------------------
 
 create table if not exists public.profiles (
-    id uuid not null,                            -- PK (aanname); = auth.users.id
+    id uuid not null,                            -- PK; FK auth.users(id) ON DELETE
+                                                 -- CASCADE (geverifieerd 2026-09-04
+                                                 -- via pg_constraint; de opruim-
+                                                 -- trigger uit de hardening is dus
+                                                 -- gordel-én-bretels). Upserts
+                                                 -- vereisen een bestaande auth-user.
     is_premium boolean not null default false,
     premium_until timestamptz,
     plan_type text,

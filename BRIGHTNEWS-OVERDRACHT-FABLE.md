@@ -245,10 +245,16 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
    (a) STRIPE_WEBHOOK_SECRET zetten — classifier blokkeerde het doorsluizen;
    run-knop-commando bij Erik neergelegd (secret op klembord / opnieuw te
    kopiëren uit dashboard → Webhooks → brightnews-stripe-webhook);
-   (b) **Managed Payments activeren = Maarten zelf** (stond op "Komt in
-   aanmerking" — de "Aan de slag"-flow is een juridische overeenkomst);
-   (c) testmode-E2E (STRIPE_ALLOW_TEST), livegang-commit (provider-switch,
-   lemon.js weg, Privacy, meta-CSP), Fase 9 MoR-eindcheck, token intrekken.
+   (b) MP-activatie: ✅ voltooid 2026-09-04 (status "Klaar voor gebruik";
+   MP zit per betaallink — beide live links "Ingeschakeld"; duplicaat-Glow
+   gedeactiveerd; links kregen metadata plan=Glow/Shine én de
+   thanks-redirect, die stond als tekstbericht);
+   (c) testmode-E2E: ✅ GROEN 2026-09-04 (zie STRIPE-MIGRATIE.md stap 9 —
+   drie productiebugs gevonden/gefixt: trial-payment_status, clover-API
+   current_period_end op items, profiles-FK naar auth.users). **Nog open:
+   alleen de livegang-commit** (provider-switch, lemon.js weg, Privacy →
+   Stripe, meta-CSP), live proefaankoop + refund, Fase 9 MoR-eindcheck,
+   daarna token intrekken.
 4. Reviewer een herbeoordeling laten doen van de live site.
 5. Onderhoudslijst (niet blokkerend): grants-verharding op de bestaande
    tabellen (revoke, nu inert door RLS — eerst met Maarten afstemmen; de
