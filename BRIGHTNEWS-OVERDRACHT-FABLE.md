@@ -233,11 +233,22 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
 2. **Maarten**: `STAPPENPLAN-MAARTEN.md` — Search Console (±30 min), Stripe
    deel 1 (reviewwachttijd! zo vroeg mogelijk), socials claimen of URL's
    doorgeven (footer linkt nu naar brightnews.online-handles).
-3. **Stripe deel 2** zodra Maarten klaar is (`STRIPE-MIGRATIE.md`): kolom
-   `stripe_customer_id`, `STRIPE_WEBHOOK_SECRET`, stripe-webhook deployen
-   (Management-API; bij classifier-block → run-knop voor Erik), testmode-E2E,
-   livegang (provider-switch, lemon.js weg, Privacy-verwerkers → Stripe,
-   meta-CSP), **Fase 9 MoR-eindcheck**, daarna token intrekken.
+3. **Stripe deel 2 — stand 2026-09-04 (fase K)**: payment links geverifieerd
+   en in betaal-config.js (Glow €2,95/mnd …3ks00, Shine €24,95/jr …3ks01,
+   beide 30 dagen trial — bewuste keuze, staat nu ook op abonnementen.html
+   als feat_trial_30 ×5 talen). Via Chrome-dashboard gedaan: klantenportaal
+   geactiveerd (link in config; opzeggen einde periode + betaalmethoden aan),
+   producten metadata plan=Glow/Shine gezet, webhook-endpoint
+   brightnews-stripe-webhook aangemaakt (4 events, Actief). Via
+   Management-API: stripe_customer_id-kolom + index live (stap 6),
+   stripe-webhook-function gedeployed (201). **Nog open**:
+   (a) STRIPE_WEBHOOK_SECRET zetten — classifier blokkeerde het doorsluizen;
+   run-knop-commando bij Erik neergelegd (secret op klembord / opnieuw te
+   kopiëren uit dashboard → Webhooks → brightnews-stripe-webhook);
+   (b) **Managed Payments activeren = Maarten zelf** (stond op "Komt in
+   aanmerking" — de "Aan de slag"-flow is een juridische overeenkomst);
+   (c) testmode-E2E (STRIPE_ALLOW_TEST), livegang-commit (provider-switch,
+   lemon.js weg, Privacy, meta-CSP), Fase 9 MoR-eindcheck, token intrekken.
 4. Reviewer een herbeoordeling laten doen van de live site.
 5. Onderhoudslijst (niet blokkerend): grants-verharding op de bestaande
    tabellen (revoke, nu inert door RLS — eerst met Maarten afstemmen; de
