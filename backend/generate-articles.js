@@ -180,7 +180,7 @@ ${hreflangs}
                 </div>
             </details>
 
-            <a href="/index.html"><img src="/assets/brightnews-logo.png" height="200" width="300" class="nav-logo"/></a></div>
+            <a href="/index.html"><img src="/assets/brightnews-logo.png" height="94" width="463" class="nav-logo"/></a></div>
         <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu openen" data-i18n-aria-label="menu_open">
             <span></span><span></span><span></span>
         </button>

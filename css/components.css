@@ -484,11 +484,14 @@ nav.container {
     position: relative;
 }
 
-/* Logo-afbeelding op desktop begrenzen: de width/height-attributen op de
-   <img> zijn 300×200. Reviewronde 2026-09-02: flink groter (84px) in een
-   navigatiebalk van 104px. Mobiel wordt verderop 13rem breed. */
+/* Logo-afbeelding op desktop begrenzen. 2026-09-04: het PNG bleek voor 82%
+   uit transparante marge te bestaan (zichtbaar merk 70 van 400px hoog),
+   waardoor "84px" in werkelijkheid ~15px woordmerk toonde — dáárom oogde
+   het logo klein ondanks reviewronde 2026-09-02. Het bestand is gecropt
+   naar 463×94 (12px marge); 60px hoog ≈ 296px breed toont het merk nu op
+   ~45px. Mobiel wordt verderop 13rem breed. */
 .nav-logo {
-    height: 84px;
+    height: 60px;
     width: auto;
     display: block;
 }
