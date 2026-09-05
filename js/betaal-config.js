@@ -5,7 +5,7 @@
 window.BETAAL_CONFIG = {
     // 'lemon' zolang de Lemon Squeezy-flow actief is; 'stripe' zodra de
     // payment links hieronder zijn ingevuld én de stripe-webhook live staat.
-    provider: 'lemon',
+    provider: 'stripe', // livegang 2026-09-05 (E2E groen 2026-09-04)
 
     lemon: {
         // Lemon Squeezy variant-id's (bestaande situatie).

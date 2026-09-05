@@ -15,6 +15,7 @@
   <link rel="icon" type="image/png" href="assets/brightnews-logo-faviconv5.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://www.googletagmanager.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
   <script src="js/betaal-config.js" defer></script>
     <script src="data/translations.js" defer></script>
   <script src="index.js" defer></script>
@@ -201,7 +202,7 @@
     <h2 data-i18n="privacy_title">Your Privacy</h2>
     <p data-i18n="privacy_text_intro">At BrightNews, we focus on positivity. That applies to your data too. We only process what is strictly necessary to provide our service.</p>
     <ul>
-      <li data-i18n="privacy_list_subscription"><strong>Subscriptions:</strong> For "Glow" and "Shine" members, we process payments via Lemon Squeezy, our Merchant of Record. We do not store credit card numbers on our own servers.</li>
+      <li data-i18n="privacy_list_subscription"><strong>Subscriptions:</strong> For "Glow" and "Shine" members, we process payments via Stripe, our Merchant of Record. We do not store credit card numbers on our own servers.</li>
       <li data-i18n="privacy_list_account"><strong>Account Data:</strong> We use Supabase (hosted in the EU) to process your email address and account settings for login and account management.</li>
       <li data-i18n="privacy_list_hosting"><strong>Data storage:</strong> Your account data and premium articles are stored with Supabase, on servers within the EU and under a Data Processing Agreement (DPA). The website itself is hosted via GitHub Pages.</li>
       <li data-i18n="privacy_list_no_sell"><strong>Zero Third-Party Sales:</strong> We never sell, trade, or leak your data to advertisers.</li>

@@ -15,6 +15,7 @@
     <link rel="icon" type="image/png" href="assets/brightnews-logo-faviconv5.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://www.googletagmanager.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
     <title>Account ✨ BrightNews</title>
         <link rel="canonical" href="https://brightnews.online/profiel.html">
         <meta name="description" content="Beheer je BrightNews-account, abonnement en voorkeuren.">
@@ -284,9 +285,9 @@
                 }
 
                 function cancelSubscription() {
-                    // Klanten betalen via Lemon Squeezy, niet meer via Ko-fi. De Customer
-                    // Portal-URL komt uit profiles.customer_portal_url, gevuld door de
-                    // lemon-webhook zodra Lemon Squeezy die meestuurt in het payload.
+                    // Stripe-klanten gebruiken de vaste no-code portal-link uit
+                    // BETAAL_CONFIG; oude Lemon-klanten hebben nog een eigen
+                    // customer_portal_url in profiles (die gaat voor).
                     if (currentPortalUrl) {
                         window.open(currentPortalUrl, '_blank');
                     } else if (window.BETAAL_CONFIG?.provider === 'stripe' && window.BETAAL_CONFIG.stripe.klantportaal) {
