@@ -1,10 +1,10 @@
 {
-  "start": "2026-09-05T04:04:14.726Z",
-  "kandidaten": 273,
-  "alGezien": 228,
-  "tekstOpgehaald": 17,
+  "start": "2026-09-05T17:27:12.645Z",
+  "kandidaten": 283,
+  "alGezien": 233,
+  "tekstOpgehaald": 16,
   "tekstTeKort": 0,
-  "sentimentGeweigerd": 4,
+  "sentimentGeweigerd": 1,
   "selectieAfgewezen": 0,
   "aiCalls": 0,
   "aiTokens": 0,
@@ -13,5 +13,8 @@
   "geaccepteerd": 0,
   "opslaanMislukt": 0,
   "feedFouten": 1,
-  "einde": "2026-09-05T04:31:01.207Z"
+  "selectieFouten": 3,
+  "selectieOvergeslagen": 46,
+  "canarySmall": "fout: API error occurred: Status 429 Body: {\"object\":\"error\",\"message\":\"Rate limit exceeded\",\"type\":\"rate_limited\",\"param\":null,\"code\":\"1300\",\"raw_status_code\":429}",
+  "einde": "2026-09-05T17:29:14.325Z"
 }
