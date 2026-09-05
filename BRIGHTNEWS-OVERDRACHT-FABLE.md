@@ -256,9 +256,25 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
    d. **Maarten Spoor 0** (STAPPENPLAN-MAARTEN.md): Anthropic-account +
       betaalmiddel + key als GitHub Secret `ANTHROPIC_API_KEY`; daarna
       eigen Claude-abonnement (kostenpost in de break-even-som).
-   e. **Na de key**: PR's mergen, eerste run, selectieprompt v6 op Haiku
-      herijken (1–2 rondes via selectie-log; drempel 7 en de scoreverdeling
-      zijn op mistral-medium geijkt — opnieuw beoordelen).
+   e. **✅ UITGEVOERD (2026-09-05/06 nacht)**: key gezet (Maarten), PR's
+      #2–#4 gemerged, MISTRAL_API_KEY-secret verwijderen ligt als
+      runnable-blok bij Erik (classifier blokkeerde het). **Run 1** (Haiku
+      v6): gezonde spreiding 0–10, 17 gepubliceerd, maar 9/26 uitval op
+      ongeldig Sonnet-JSON én missers (Kia-campers 9, scooter 7,
+      verzameledities). **Ronde 2** (GO Erik): drietrapse JSON-parser in
+      ai-adapter (uitval 9/26 → 2/17), selectieprompt v7 (productnieuws +
+      verzameledities in afwijslijst, Kia-ijkvoorbeeld; redactiekeuze:
+      andermans linklijstjes afwijzen). A/B v6→v7 op identieke items:
+      productnieuws daalt, maar middenband kroop naar 7 (politiek/
+      regelgeving/gidsjes gepubliceerd) → **drempel 7→8 (besluit Erik
+      2026-09-06)**, code + prompt in sync. **Open**: (i) schoonmaaklijst
+      vóór lancering — al gepubliceerde missers van run 1/2 (Kia, scooter,
+      verzameledities, Texas-surveillance, datacenter-rechter; precedent:
+      v5-verwijderronde met expliciete go); (ii) nachtcron 2026-09-06
+      00:00 UTC beoordelen: eerste run op drempel 8 én verwacht de
+      **eerste dagoverzichten** (32 artikelen op 5 sep gepubliceerd);
+      (iii) na een paar dagen: digest-log + acceptatiegraad per feed
+      (Newatlas leverde in run 1 de meeste ruis).
    f. **Tijdlijn**: lancering prikken (gate weg, tester-mail, marketing
       start, 3-maandenklok start) → evaluatie na 3 maanden: doorgaan als
       betaalde site? Minimumdoel: uit de kosten (±€50–75/mnd ≈ 20–28
