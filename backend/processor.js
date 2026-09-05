@@ -537,6 +537,7 @@ async function processNews() {
                         } catch (canaryErr) {
                             statistieken.canarySmall = `fout: ${String(canaryErr.message).replace(/\s+/g, ' ').slice(0, 160)}`;
                         }
+                        console.error(`🐤 Canary mistral-small: ${statistieken.canarySmall}`);
                     }
                     continue;
                 }

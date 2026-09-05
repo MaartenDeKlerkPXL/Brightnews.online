@@ -65,8 +65,10 @@ jobs:
             echo "Geen nieuwe artikelen gevonden."
           else
             git commit -m "🤖 Automatische nieuws update: $(date -u) [skip ci]"
-            # De AI-stap kan lang duren; is master intussen opgeschoven, dan
+            # De AI-stap kan lang duren; is de branch intussen opgeschoven, dan
             # zou de push falen en de hele run (incl. AI-kosten) verloren gaan.
-            git pull --rebase origin master
-            git push origin master
+            # GITHUB_REF_NAME i.p.v. hard 'master': een workflow_dispatch vanaf
+            # een testbranch pusht zo naar die branch en nooit naar master.
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            git push origin "HEAD:$GITHUB_REF_NAME"
           fi
