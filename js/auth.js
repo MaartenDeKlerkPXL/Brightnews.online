@@ -236,9 +236,8 @@ async function executeDelete() {
 }
 // Provider-onafhankelijke checkout (Fase D). Welke betaalprovider actief is
 // staat in js/betaal-config.js; 'plan' is 'maandelijks' of 'jaarlijks'.
-// De gebruikerskoppeling blijft in beide gevallen server-side verifieerbaar:
-// Lemon via checkout[custom][user_id] → lemon-webhook, Stripe via
-// client_reference_id → stripe-webhook.
+// De gebruikerskoppeling is server-side verifieerbaar: Stripe krijgt
+// client_reference_id mee en de stripe-webhook koppelt daarop.
 async function startCheckout(plan) {
     const consentBox = document.getElementById('withdrawal-consent');
     if (consentBox && !consentBox.checked) {
@@ -259,7 +258,7 @@ async function startCheckout(plan) {
 
     const userId = session.user.id;
     const userEmail = session.user.email;
-    const config = window.BETAAL_CONFIG || { provider: 'lemon', lemon: {}, stripe: {} };
+    const config = window.BETAAL_CONFIG || { provider: 'stripe', stripe: {} };
 
     if (config.provider === 'stripe' && config.stripe[plan]) {
         // Stripe Payment Link: volledige redirect naar checkout.stripe.com.
@@ -270,19 +269,9 @@ async function startCheckout(plan) {
         return;
     }
 
-    // Lemon Squeezy (huidige provider): overlay-checkout met custom user_id.
-    const variantId = config.lemon[plan];
-    if (!variantId) {
-        showNotification(typeof getT === 'function' ? getT('notif_checkout_unavailable', "De checkout is tijdelijk niet beschikbaar.") : "Checkout niet beschikbaar.", "error");
-        return;
-    }
-    const checkoutUrl = `https://brightnews.lemonsqueezy.com/checkout/buy/${variantId}?checkout[custom][user_id]=${userId}&checkout[email]=${userEmail}&embed=1`;
-
-    if (window.createLemonSqueezy) {
-        window.createLemonSqueezy();
-    }
-
-    LemonSqueezy.Url.Open(checkoutUrl);
+    // Zonder geldige providerconfiguratie geen checkout (Lemon Squeezy is
+    // per 2026-09-05 volledig afgebouwd; er waren nul Lemon-klanten).
+    showNotification(typeof getT === 'function' ? getT('notif_checkout_unavailable', "De checkout is tijdelijk niet beschikbaar.") : "Checkout niet beschikbaar.", "error");
 }
 
 function startUpgrade() {
@@ -345,7 +334,6 @@ async function handleForgotPassword(event) {
 }
 
 window.startCheckout = startCheckout;
-window.startLemonCheckout = startCheckout; // compat met eventuele oude verwijzingen
 window.handleDeleteAccount = handleDeleteAccount;
 window.closeDeleteModal = closeDeleteModal;
 window.executeDelete = executeDelete;

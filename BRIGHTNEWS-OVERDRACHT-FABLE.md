@@ -279,6 +279,14 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
    "verlengt automatisch" mét prijs-na-trial, Duitse renewal_notice
    stond in het Engels. Migratie-restlijst: Lemon-store sluiten,
    custom SMTP, token intrekken (Maarten, na overdracht).
+   **Lemon-afbouw (2026-09-05)**: 0 Lemon-klanten ooit → lemon-code uit
+   auth.js/betaal-config, lemon-webhook-function + LEMON_WEBHOOK_SECRET
+   verwijderd uit Supabase (code in git-historie), map uit repo. Store
+   zelf sluiten = Maarten (Lemon-dashboard → Store → deactiveren).
+   **Mail-gotcha**: brightnews.online heeft DMARC p=reject maar GEEN
+   SPF-record en geen zichtbare DKIM — vóór custom SMTP (Strato-postvak,
+   MX bestaat al) moet in het Strato-DNS-panel een SPF-record bij
+   ("v=spf1 include:_spf.strato.com ~all") en DKIM aangezet.
 4. Reviewer een herbeoordeling laten doen van de live site.
 5. Onderhoudslijst (niet blokkerend): grants-verharding op de bestaande
    tabellen (revoke, nu inert door RLS — eerst met Maarten afstemmen; de

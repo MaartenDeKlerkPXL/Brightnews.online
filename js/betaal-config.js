@@ -1,17 +1,8 @@
-// Centrale betaalconfiguratie (Fase D — migratie Lemon Squeezy → Stripe
-// Managed Payments). De site leest hier welke provider actief is; de
-// omschakeling is één regel wijzigen zodra de Stripe-onboarding klaar is
-// (zie STRIPE-MIGRATIE.md voor het volledige stappenplan).
+// Centrale betaalconfiguratie. Stripe Managed Payments is sinds de
+// livegang van 2026-09-05 de enige provider (Lemon Squeezy volledig
+// afgebouwd; zie STRIPE-MIGRATIE.md voor de historie).
 window.BETAAL_CONFIG = {
-    // 'lemon' zolang de Lemon Squeezy-flow actief is; 'stripe' zodra de
-    // payment links hieronder zijn ingevuld én de stripe-webhook live staat.
-    provider: 'stripe', // livegang 2026-09-05 (E2E groen 2026-09-04)
-
-    lemon: {
-        // Lemon Squeezy variant-id's (bestaande situatie).
-        maandelijks: '78215cb2-d818-497b-a4ea-f29424aacf6c',
-        jaarlijks: '993c7ac0-abeb-415c-a40c-ce00ef820235',
-    },
+    provider: 'stripe',
 
     stripe: {
         // Stripe Payment Links (https://buy.stripe.com/...), aan te maken in
