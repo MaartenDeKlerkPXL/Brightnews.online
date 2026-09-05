@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <!-- Tijdelijke parkeerpagina (2026-09-05): homepage is dicht voor publiek
+         tot de lancering; artikelpagina's blijven bewust bereikbaar (SEO).
+         Teamtoegang: ?team=1 zet een localStorage-vlag, de gate in index.html
+         laat je daarna door. -->
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/png" href="assets/brightnews-logo-faviconv5.png">
+    <title>BrightNews | Binnenkort</title>
+    <style>
+        :root {
+            --bright-green: #32CD32;
+            --bright-yellow: #FFD700;
+            --light-bg: #F8FBF8;
+            --border-color: #E8EEE8;
+            --dark-text: #1A1A1A;
+            --medium-text: #505F50;
+            --radius-lg: 24px;
+            --shadow-md: 0 10px 25px rgba(50, 205, 50, 0.08);
+        }
+        * { margin: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: var(--light-bg);
+            color: var(--dark-text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 32px 20px;
+            text-align: center;
+        }
+        .kaart {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            max-width: 560px;
+            width: 100%;
+            padding: 48px 32px 40px;
+        }
+        .logo { max-width: 296px; width: 80%; height: auto; margin-bottom: 28px; }
+        .zon {
+            display: inline-block;
+            background: var(--bright-yellow);
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--dark-text);
+            padding: 6px 16px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: clamp(26px, 5vw, 34px);
+            line-height: 1.15;
+            margin-bottom: 14px;
+        }
+        .intro {
+            color: var(--medium-text);
+            font-size: 17px;
+            line-height: 1.6;
+            max-width: 44ch;
+            margin: 0 auto 26px;
+        }
+        ul.talen {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto 6px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            color: var(--medium-text);
+            font-size: 14.5px;
+        }
+        ul.talen .taal {
+            font-weight: 700;
+            color: var(--dark-text);
+            margin-right: 6px;
+        }
+        .streep {
+            height: 4px;
+            width: 72px;
+            background: var(--bright-green);
+            border-radius: 2px;
+            margin: 30px auto;
+        }
+        .team {
+            font-size: 13.5px;
+            color: var(--medium-text);
+        }
+        .team a { color: var(--medium-text); text-decoration: underline; text-underline-offset: 2px; }
+        .team a:hover, .team a:focus-visible { color: var(--dark-text); }
+        a:focus-visible { outline: 2px solid var(--bright-green); outline-offset: 2px; }
+        footer {
+            margin-top: 26px;
+            font-size: 12.5px;
+            color: var(--medium-text);
+        }
+    </style>
+</head>
+<body>
+    <main class="kaart">
+        <img class="logo" src="assets/brightnews-logo.png" alt="BrightNews" width="463" height="94">
+        <div class="zon">Binnenkort</div>
+        <h1>We bouwen aan jouw dagelijkse dosis positiviteit</h1>
+        <p class="intro">BrightNews verzamelt uitsluitend positief, hoopgevend nieuws — in vijf talen, elke dag vers. We leggen de laatste hand aan de site en gaan binnenkort echt van start.</p>
+        <ul class="talen">
+            <li><span class="taal">EN</span>Only positive news, launching soon.</li>
+            <li><span class="taal">DE</span>Nur positive Nachrichten, bald verfügbar.</li>
+            <li><span class="taal">FR</span>Uniquement des bonnes nouvelles, bientôt disponible.</li>
+            <li><span class="taal">ES</span>Solo noticias positivas, muy pronto.</li>
+        </ul>
+        <div class="streep"></div>
+        <p class="team">Van het team? <a href="/?team=1">Teamtoegang voor Maarten &amp; Erik</a> — je krijgt dan de volledige site om te testen, te volgen en verbeteringen voor te stellen.</p>
+    </main>
+    <footer>© <span id="jaar">2026</span> BrightNews · brightnews.online</footer>
+    <script>document.getElementById('jaar').textContent = new Date().getFullYear();</script>
+</body>
+</html>
