@@ -53,7 +53,17 @@ serve(async (req) => {
         return new Response(JSON.stringify({ error: "Serverconfiguratie onvolledig" }), { status: 500 })
     }
 
-    if (!(await verifieerStripeSignature(rawBody, req.headers.get("Stripe-Signature"), secret))) {
+    // Testmode-events komen van een apart test-endpoint met een eigen
+    // signing-secret. Alleen tijdens de activatietest (STRIPE_ALLOW_TEST=true
+    // én STRIPE_WEBHOOK_SECRET_TEST gezet) telt die als geldig alternatief;
+    // buiten de test is dit pad inert. Live verificatie blijft ongewijzigd.
+    const sigHeader = req.headers.get("Stripe-Signature")
+    const testSecret = Deno.env.get("STRIPE_ALLOW_TEST") === "true"
+        ? (Deno.env.get("STRIPE_WEBHOOK_SECRET_TEST") ?? "")
+        : ""
+    const geldig = (await verifieerStripeSignature(rawBody, sigHeader, secret))
+        || (testSecret !== "" && await verifieerStripeSignature(rawBody, sigHeader, testSecret))
+    if (!geldig) {
         console.error("❌ Ongeldige Stripe-signature ontvangen")
         return new Response(JSON.stringify({ error: "Ongeldige signature" }), { status: 401 })
     }
@@ -83,7 +93,12 @@ serve(async (req) => {
                 console.warn("⚠️ checkout.session.completed zonder client_reference_id")
                 return new Response(JSON.stringify({ error: "Geen client_reference_id" }), { status: 400 })
             }
-            if (obj.payment_status && obj.payment_status !== 'paid') {
+            // 'no_payment_required' = checkout met gratis proefperiode (de
+            // links hebben 30 dagen trial): er is dan nog niets afgerekend
+            // maar het abonnement start wél — premium hoort direct actief.
+            // Zonder deze tak bleef stripe_customer_id leeg en strandden de
+            // subscription-events eeuwig op 409 (gevonden vóór livegang).
+            if (obj.payment_status && !['paid', 'no_payment_required'].includes(obj.payment_status)) {
                 console.log(`↪️ Sessie voltooid maar payment_status=${obj.payment_status} — geen actie`)
                 return new Response(JSON.stringify({ message: "Nog niet betaald" }), { status: 200 })
             }
@@ -109,8 +124,15 @@ serve(async (req) => {
             const status = String(obj.status ?? '')
             const geeftToegang = type !== 'customer.subscription.deleted'
                 && ['active', 'trialing'].includes(status)
-            const periodeEinde = obj.current_period_end
-                ? new Date(obj.current_period_end * 1000).toISOString()
+            // Sinds API-versie 2026-02-25.clover staat current_period_end op
+            // de subscription-items, niet meer op het subscription-object
+            // zelf (E2E-vangst 2026-09-04: premium_until bleef null).
+            // trial_end als extra vangnet voor proefperiodes.
+            const periodeEindeSec = obj.current_period_end
+                ?? obj.items?.data?.[0]?.current_period_end
+                ?? obj.trial_end
+            const periodeEinde = periodeEindeSec
+                ? new Date(periodeEindeSec * 1000).toISOString()
                 : null
 
             const { data, error } = await supabaseClient.from('profiles')
