@@ -7,7 +7,16 @@ testen — doet Claude/Erik; dat staat onderaan. Reken op ±30 min voor Google e
 
 ---
 
-## Spoor 1 — Google Search Console (±30 min, kan vandaag)
+## Spoor 1 — Google Search Console ✅ AFGEROND (2026-09-05)
+
+Property (domein-type) actief, sitemap "Succesvol" met exact 2.072
+ontdekte pagina's (klopt 1-op-1 met de live sitemap — geverifieerd).
+Enige vervolgactie: **over ±1 week** Indexering → Pagina's checken
+(aantal geïndexeerde pagina's hoort op te lopen) en onder Prestaties
+zien op welke zoektermen BrightNews verschijnt. Origineel stappenplan
+hieronder ter referentie.
+
+## (was) Spoor 1 — Google Search Console (±30 min, kan vandaag)
 
 Doel: Google actief vertellen dat brightnews.online bestaat, de sitemap met
 1500+ artikelpagina's laten indexeren, en zien hoe de site in Google presteert.
