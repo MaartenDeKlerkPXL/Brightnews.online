@@ -64,10 +64,14 @@ function veiligeUrl(u, fallback) {
 
 const FALLBACK_IMG = 'https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80';
 
-function paginaHtml(artikel, lang, slugsPerTaal) {
+function paginaHtml(artikel, lang, slugsPerTaal, manifest) {
     const bestand = `${slugsPerTaal[lang]}-${artikel.id}.html`;
     const paginaUrl = `${SITE_URL}/articles/${lang}/${bestand}`;
-    const teaser = maakTeaser(artikel.summary);
+    // Dagoverzichten (type 'digest') hebben server-side al een ruimere
+    // teaser (~100 woorden) gekregen: niet opnieuw op 60 afkappen.
+    const teaser = artikel.type === 'digest'
+        ? String(artikel.summary || '')
+        : maakTeaser(artikel.summary);
     const isIngekort = teaser !== String(artikel.summary || '') || String(artikel.summary || '').trim().endsWith('...');
     const beschrijving = (artikel.meta_description || teaser).slice(0, 155);
     const afbeelding = veiligeUrl(artikel.image, FALLBACK_IMG);
@@ -115,7 +119,23 @@ function paginaHtml(artikel, lang, slugsPerTaal) {
                 <button onclick="window.location.href='/profiel.html'" class="btn-primary-editorial" data-i18n="btn_login_to_read">${escapeHtml(t(lang, 'btn_login_to_read'))}</button>
             </div></div>` : '';
 
-    const disclaimerTekst = String(t(lang, 'ai_summary_notice')).replace('{source}', bron);
+    // Dagoverzicht: klikbare lijst van de besproken artikelen — naar hun
+    // statische pagina als het manifest die kent, anders de SPA-route (?id=).
+    const refsHtml = Array.isArray(artikel.refs) && artikel.refs.length ? `
+            <div class="digest-refs">
+                <h3 data-i18n="digest_refs_title">${escapeHtml(t(lang, 'digest_refs_title'))}</h3>
+                <ol>
+${artikel.refs.map(ref => {
+        const slug = manifest?.articles?.[ref.id]?.slugs?.[lang];
+        const href = slug ? `/articles/${lang}/${slug}-${ref.id}.html` : `/?id=${encodeURIComponent(ref.id)}`;
+        return `                    <li><a href="${escapeHtml(href)}">${escapeHtml(ref.title)}</a></li>`;
+    }).join('\n')}
+                </ol>
+            </div>` : '';
+
+    const disclaimerTekst = artikel.type === 'digest'
+        ? String(t(lang, 'digest_notice'))
+        : String(t(lang, 'ai_summary_notice')).replace('{source}', bron);
     const disclaimerLink = bronLink
         ? ` <a href="${escapeHtml(bronLink)}" target="_blank" rel="noopener noreferrer">${escapeHtml(`${t(lang, 'read_original')} ${bron}`.trim())}</a>`
         : '';
@@ -238,7 +258,7 @@ ${toonDatum ? `            <h2 style="margin-bottom:30px; font-weight: normal; b
 
         <section class="article-body" itemprop="articleBody">
             <div data-role="body">
-${alineas}
+${alineas}${refsHtml}
             </div>${paywall}
     <div class="share-section">
         <p class="share-title" data-i18n="share_article">${escapeHtml(t(lang, 'share_article'))}</p>
@@ -362,7 +382,7 @@ function main() {
             fs.mkdirSync(dir, { recursive: true });
             const bestand = path.join(dir, `${slugsPerTaal[lang]}-${id}.html`);
             const bestondAl = fs.existsSync(bestand);
-            fs.writeFileSync(bestand, paginaHtml(perTaal[lang], lang, slugsPerTaal));
+            fs.writeFileSync(bestand, paginaHtml(perTaal[lang], lang, slugsPerTaal, manifest));
             geschreven++;
             if (!bestondAl) nieuw++;
         }

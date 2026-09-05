@@ -406,3 +406,26 @@
     background: #f5f5f5;
     text-decoration: none !important; /* Dit haalt het grijze cirkelrandje weg */
 }
+/* Dagoverzicht (digest, 2026-09-05): bronnenlijst op de statische pagina;
+   zelfde opmaak als de detailweergave op de homepage (index.css). */
+.digest-refs {
+    margin-top: 28px;
+    padding: 18px 22px;
+    background: #f5faf5;
+    border-left: 4px solid var(--bright-green, #32CD32);
+    border-radius: 6px;
+}
+
+.digest-refs h3 {
+    margin: 0 0 10px;
+    font-size: 1.05rem;
+}
+
+.digest-refs ol {
+    margin: 0;
+    padding-left: 22px;
+}
+
+.digest-refs li {
+    margin-bottom: 6px;
+}
