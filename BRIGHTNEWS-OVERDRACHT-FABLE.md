@@ -1,13 +1,17 @@
 # Bright News — Overdrachtsdocument / Handoff
 
-**Bijgewerkt: 2026-09-05, einde sessie 5 met Claude Fable 5.**
+**Bijgewerkt: 2026-09-05, einde sessie 6 (Maarten, Claude Opus 5).**
 Sessies 1–2 (1–2 sep): review, fases A–G. Sessie 3 (3 sep): pipeline
 werkend (fases H+I). Sessie 4 (4 sep): logo, Stripe deel 2, E2E.
 Sessie 5 (5 sep): LIVEGANG Stripe + echte verkoop bewezen, MoR-check,
 Lemon afgebouwd, SMTP/SPF, Search Console, testers klaar, overdracht
-naar Maarten compleet (repo-CLAUDE.md + reviewlijst). **Eerstvolgende
-werk**: kwaliteitsronde selectie-log na ±een week nieuw feedregime
-(drempel 7 vs 8), eerste testerfeedback, Maartens front-end-lijst.
+naar Maarten compleet (repo-CLAUDE.md + reviewlijst).
+Sessie 6 (5 sep, Maarten): front-endronde — reviewpunten 1 en 2,
+nav-bug gevonden en gefixt, LinkedIn/socials/logo, Stripe
+Climate-sectie. **Alles staat in PR #1 en is nog NIET gemerged.**
+**Eerstvolgende werk**: PR #1 door Erik laten reviewen (raakt
+`js/auth.js` en `sw.js`), daarna kwaliteitsronde selectie-log
+(drempel 7 vs 8) en eerste testerfeedback.
 Startbericht: "Verder met BrightNews". Dit document +
 `README.md` (hoe alles werkt) + `STRIPE-MIGRATIE.md` (betaaltraject) +
 `STAPPENPLAN-MAARTEN.md` (Maartens acties) vervangen samen de volledige
@@ -308,6 +312,95 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
    nieuwe promo-tabellen hébben al revokes), acceptatie-monitoring per
    feed, evt. socials-iconen echte URL's. (Promocode-hardening en
    wees-profielrijen: afgerond 2026-09-03.)
+
+## 9b. Sessie 6 — front-endronde Maarten (2026-09-05) — **open in PR #1, niet live**
+
+Alles hieronder staat op branch `maarten/cookiebanner-compact`, twee commits
+(`1716d8f`, `dce7d60`), gepusht en gebundeld in
+[PR #1](https://github.com/MaartenDeKlerkPXL/Brightnews.online/pull/1) met Erik
+als reviewer. **Niets is gemerged, dus niets is live.** PR omdat de branch
+`js/auth.js` (checkout) en `sw.js` raakt — conform `CLAUDE.md`.
+
+**Gelukt, lokaal getest:**
+1. **Reviewpunt 1 — cookiebanner.** Zwevend kaartje → vastgeplakte onderbalk.
+   Mobiel 200px → 107px (24% → 13% van het scherm), desktop 59px. Titel weg op
+   mobiel (blijft toegankelijke naam via `aria-labelledby`), knoppen naast
+   elkaar. Consent-gate opnieuw geverifieerd: na weigeren 0 requests naar Google.
+2. **Reviewpunt 2 — herroepingsrecht-vinkje.** Losse kaart bóven de prijskaarten
+   → één vinkje per betaald plan, ín de kaart boven de knop. `startCheckout()`
+   pakt `withdrawal-consent-<plan>` (terugval op het oude losse id) en markeert
+   bij een klik zonder vinkje alléén dat vakje rood + focus. Sparkle: geen vinkje.
+3. **Nav-bug (nieuw gevonden, niet uit de reviewlijst).** Op
+   `index.html?id=…` schoof het artikeltitelblok over de nav heen terwijl de
+   rest van de kaart er netjes onder ging. Oorzaak: `css/components.css`
+   stylede de navbalk met de kale selector `header`, dus élk `<header>`-element
+   kreeg `position: sticky` + `z-index: 9000` — inclusief
+   `<header class="detail-header">`. Fix: selector ingeperkt tot `body > header`.
+   Vooraf geverifieerd dat de site-nav op alle 10 pagina's én in het
+   artikeltemplate een direct kind van `<body>` is en `.detail-header` het enige
+   andere `<header>`-element. Na de fix met verse CSS getest in de
+   SPA-detailweergave én op een statische artikelpagina.
+4. **Footer + logo.** LinkedIn → geclaimd profiel
+   `in/brightnews-online-5206a53b3` (10 pagina's + template, 750 artikelpagina's
+   opnieuw gegenereerd, alleen die ene regel wijzigt). Social-iconen wit bij
+   hover/focus. `.nav-logo` op 45px, desktop én mobiel (mobiel max 60vw).
+   Meegenomen: 9 pagina's droegen nog `height="200" width="300"` terwijl het
+   logo sinds fase J 463×94 is — verkeerde ruimtereservering, gecorrigeerd.
+5. **Stripe Climate-sectie op `over-ons.html`**, 5 talen (`climate_title`,
+   `climate_text`, `climate_link`). Bewust feitelijk: geen "klimaatneutraal"- of
+   "groen"-claim (EU-richtlijn 2024/825), geen Stripe-logo of Climate-badge
+   (merkrichtlijnen), geen externe resources → geen CSP-aanpassing nodig.
+   *Maarten bevestigde dat BrightNews daadwerkelijk is aangemeld voor Stripe
+   Climate; als dat niet klopt moet deze sectie eruit vóór de merge.*
+
+`CACHE_NAME` v10 → v12. `npx eslint .` 0 errors.
+
+**Niet gelukt / niet gedaan:**
+- **Geen enkele visuele screenshot na de eerste helft van de sessie.** De
+  browserpane stopte met renderen (viewport 0×0); alle verificatie daarna komt
+  uit computed styles, `elementFromPoint` en DOM-metingen, niet uit beeld. De
+  metingen zijn hard, maar niemand heeft de eindstand met eigen ogen gezien —
+  **loop de PR visueel na voor de merge.**
+- `gh` was niet ingelogd; het uitlezen van de token uit de sleutelhanger werd
+  door de veiligheidscheck geblokkeerd. Maarten heeft daarna zelf `gh auth
+  login` gedaan, waarna de PR alsnog is aangemaakt.
+
+**Twee bevindingen bewust NIET aangeraakt (voor Erik):**
+1. **`showNotification()` doet niets op 8 van de 10 pagina's.** De functie
+   schrijft in `#notification-container`, dat alleen in `profiel.html` en
+   `wachtwoord-vergeten.html` staat. Op o.a. `abonnementen.html` verdwijnen álle
+   meldingen geruisloos — óók "Log eerst in om een abonnement af te sluiten"
+   vlak vóór de redirect naar registreren. Raakt de betaalflow. Staat als punt
+   13 in `MAARTEN-FRONTEND-REVIEW.md`.
+2. **Nav laat los onderaan een artikelpagina** (rond scrollpositie ~763px) en
+   scrollt mee weg. Met de oude CSS gemeten: identiek gedrag, dus niet door deze
+   PR veroorzaakt. Vermoedelijke oorzaak: `overflow-x: clip` op `body` (de
+   fase-N sticky-fix) maakt `body` zelf een scrollcontainer, wat `position:
+   sticky` op een kind afkapt.
+
+**Juridische vraag beantwoord (J3, stond open sinds fase 3): premium >500
+woorden volledig AI-herschreven artikel — advies is NEE, niet bouwen.**
+Er bestaat geen 500-woordengrens in de wet; wat telt is (a) of je beschermde
+uitdrukkingsvorm overneemt en (b) of je tekst het origineel vervangt. Relevant:
+- Rb. Amsterdam 30-10-2024, *DPG Media c.s./HowardsHome*: 150 tekens (~20
+  woorden) valt nog onder "zeer korte fragmenten" van het persuitgeversrecht
+  (art. 7b Wnr). Onze publieke teaser is al 60 woorden, de samenvatting tot 150.
+- *Advance Local Media v Cohere* (McMahon, 13-11-2025): het verweer "wij nemen
+  alleen feiten over en gieten die in eigen zinnen" is afgewezen; niet-letterlijke
+  "substitutive summaries" kunnen inbreuk opleveren.
+- HvJ EU *Like Company v Google* (C-250/25): zitting Grote Kamer 10-03-2026,
+  **arrest nog niet gewezen** — dit is exact de openstaande vraag.
+- Paywall verergert het: commercieel + substitutie-effect weegt in élk kader
+  tegen ons. Bovendien ziet de AI alleen titel + RSS-snippet, dus 500 woorden
+  daaruit = hallucinatie onder de naam van een echte bron (precies het risico
+  dat de prompt-wijziging van 01-09 juist dichtzette, zie `processor.js`).
+
+Aanbevolen alternatieven, in volgorde van haalbaarheid: (1) premium beter maken
+i.p.v. langer (vroege toegang, dossiers, nieuwsbrief, archief); (2) eigen tekst
+uit 3–5 bronnen combineren zodat selectie en opbouw écht van ons zijn; (3)
+licenties met de vaste top-bronnen (Squirrel News, Optimist Daily, Reasons to be
+Cheerful staan daar mogelijk voor open). Geen juridisch advies — voor een
+definitief oordeel een IE-advocaat raadplegen.
 
 ## 10. Risico's waar Erik zelf op moet letten
 
