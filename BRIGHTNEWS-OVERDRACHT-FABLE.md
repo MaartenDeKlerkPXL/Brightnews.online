@@ -275,6 +275,19 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
       **eerste dagoverzichten** (32 artikelen op 5 sep gepubliceerd);
       (iii) na een paar dagen: digest-log + acceptatiegraad per feed
       (Newatlas leverde in run 1 de meeste ruis).
+   f2. **Overdracht Maarten compleet (2026-09-06 nacht)**: run 3 bevestigde
+      drempel 8 (36 herbeoordeeld, 3 door — alle drie sterk; smetje: de
+      "Plastic bottles…"-verzameleditie kwam als herkanser met 9 door,
+      meenemen in de logronde). Eerste digests komen bij de nachtcron
+      00:00 UTC — alle 5 categorieën hebben ≥3 artikelen van 5 sep; er
+      draaide een sessie-wachter op. Live geverifieerd: publiek →
+      binnenkort.html, team → volle site met verse Claude-artikelen.
+      README/CLAUDE.md/STAPPENPLAN geactualiseerd; PR #2 administratief
+      dicht; op Maartens PR #1 staat een rebase-routebeschrijving als
+      comment (branch van vóór de verbouwing, honderden gegenereerde
+      pagina's in de diff). Artifact "De AI-motor van BrightNews"
+      bijgewerkt naar eindstand. Los eindje Erik: runnable blok
+      `gh secret delete MISTRAL_API_KEY` (classifier blokkeerde het).
    f. **Tijdlijn**: lancering prikken (gate weg, tester-mail, marketing
       start, 3-maandenklok start) → evaluatie na 3 maanden: doorgaan als
       betaalde site? Minimumdoel: uit de kosten (±€50–75/mnd ≈ 20–28
