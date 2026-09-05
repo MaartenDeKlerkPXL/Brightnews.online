@@ -1,5 +1,33 @@
 # Stappenplan voor Maarten — Google Search Console & Stripe
 
+---
+
+## ⚡ NIEUW Spoor 0 — Anthropic-account (2026-09-05, ±15 min, dit blokkeert alles)
+
+De site is tijdelijk geparkeerd (publiek ziet `binnenkort.html`; teamtoegang
+via de link op die pagina). We zijn overgestapt van Mistral naar Claude
+(besluit met Erik, 2026-09-05); de nieuwe pipeline staat klaar maar draait
+pas als jouw key er is. **Mistral heb je niet meer nodig** — pay-as-you-go
+hoeft níét meer aan; het account mag blijven bestaan of weg.
+
+1. **Account**: ga naar https://console.anthropic.com en maak een account
+   op jouw naam (zelfde principe als Stripe: de site is van jou).
+2. **Betaalmiddel + tegoed**: Billing → betaalmiddel koppelen. Verwacht
+   verbruik: ±$25–45/maand zodra alles draait (dagoverzichten en langere
+   premium-samenvattingen inbegrepen).
+3. **API-key**: API Keys → Create key, naam bijv. `brightnews-pipeline`.
+4. **In GitHub zetten**: repo → Settings → Secrets and variables → Actions
+   → New repository secret → naam exact `ANTHROPIC_API_KEY`, waarde = de
+   key. (Zelfde plek als de bestaande secrets.)
+5. **Erik appen** — dan mergen we de klaarstaande code (PR #2 t/m #4),
+   draaien een eerste run en beoordelen samen het selectie-log (de
+   selectieprompt moet in 1–2 rondes op Claude worden geijkt).
+
+Los hiervan gepland: een eigen **Claude-abonnement** voor jezelf (Claude
+Code, om mee te bouwen en straks de marketing-agent te draaien) — overleg
+met Erik welk plan past; dit telt mee in de break-even-som (zie
+MARKETING-PLAN.md).
+
 *Opgesteld 2026-09-02. Dit zijn de twee sporen die alleen jij kunt doen (beide
 vereisen accounts op jouw naam). Alles wat daarna komt — code, activatie,
 testen — doet Claude/Erik; dat staat onderaan. Reken op ±30 min voor Google en

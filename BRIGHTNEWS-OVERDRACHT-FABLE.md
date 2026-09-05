@@ -6,17 +6,21 @@ werkend (fases H+I). Sessie 4 (4 sep): logo, Stripe deel 2, E2E.
 Sessie 5 (5 sep): LIVEGANG Stripe + echte verkoop bewezen, MoR-check,
 Lemon afgebouwd, SMTP/SPF, Search Console, testers klaar, overdracht
 naar Maarten compleet (repo-CLAUDE.md + reviewlijst). Sessie 6 (5 sep):
-**INCIDENT ontdekt — Mistral-account geeft sinds 2026-09-04 04:10 UTC op
-élke call 429** (accountniveau; 4 runs op rij aiCalls 0, geen dataverlies
-want mislukte items blijven buiten seenLinks). Mistral is van Maarten →
-console-check usage/billing is dé ontgrendelaar. Gebouwd (branches, nog
-niet gemerged): **PR #2** circuit breaker + canary (fase O) en **PR #3**
-dagoverzichten per categorie + premium-samenvattingen tot ~500 w
-(besluiten Erik: digest als artikel in de stroom; gratis blijft op de
-60-woorden-teaser; nachtcron over gisteren). **Eerstvolgende werk**:
-Mistral herstellen (Maarten), PR #2 en #3 mergen op Eriks go, daarna
-E2E-digest-run + kwaliteitsronde selectie- én digest-log; drempel 7 vs 8;
-eerste testerfeedback; Maartens front-end-lijst.
+Mistral-429-incident gediagnosticeerd (account-breed, canary bewees het);
+PR #2 (circuit breaker) en PR #3 (digests + lange samenvattingen) gebouwd.
+Sessie 7 (5 sep, avond): **KOERSWIJZIGING — zie §9.0.** Site geparkeerd
+(live: binnenkort.html + team-gate /?team=1; alleen homepage dicht,
+artikelpagina's blijven voor SEO), definitief van Mistral naar **Claude**
+(Haiku selecteert, Sonnet schrijft) mét adapter+fallback-keten, gebundelde
+selectie (10/call) en moeder+vertaal — alles klaar in **PR #4** (keten
+#2→#3→#4, mergen op go zodra Maartens `ANTHROPIC_API_KEY` als secret
+staat). Selectie-archief (punt-4-optie ≥ 2026-10-17) en marketing-feed
+draaien mee. MARKETING-PLAN.md v1 staat; agentbouw 2 weken vóór
+lancering. Tijdlijn: lancering prikken na key+herijking → 3 maanden
+maximale marketing → evaluatie betaald doorgaan (break-even ≈ 20–28
+abonnees). **Eerstvolgende werk**: Maarten Spoor 0 (Anthropic-account,
+STAPPENPLAN-MAARTEN.md) → PR's mergen → eerste run → selectieprompt v6 op
+Haiku herijken via selectie-log.
 Startbericht: "Verder met BrightNews". Dit document +
 `README.md` (hoe alles werkt) + `STRIPE-MIGRATIE.md` (betaaltraject) +
 `STAPPENPLAN-MAARTEN.md` (Maartens acties) vervangen samen de volledige
@@ -227,6 +231,38 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
 - GA-property `G-ZNFX3R9BQV`; Search Console: nog inrichten (Maarten)
 
 ## 9. Volgende stappen (in volgorde)
+
+0-NIEUW. **Sessie 7 (2026-09-05, avond) — parkeren + Claude-migratie**
+   (vervangt de Mistral-acties uit 0a hieronder; het incident is daarmee
+   omzeild in plaats van opgelost — Mistral is bewust losgelaten):
+   a. **Site geparkeerd (live)**: binnenkort.html (huisstijl, noindex) +
+      client-side gate in index.html — publiek → parkeerpagina, team via
+      /?team=1 (localStorage `bn_team`). Alleen de homepage; de ~2.000
+      artikelpagina's blijven bereikbaar en bouwen SEO op. SW v11.
+      **Gate verwijderen bij livegang** (comment in index.html wijst de weg).
+   b. **Besluiten Erik**: Claude i.p.v. Mistral (Haiku 4.5 selecteert temp 0,
+      Sonnet 5 schrijft, Haiku vertaalt); Mistral valt af (geen PAYG; sleuf
+      in de keten blijft leeg); pipeline draait dóór tijdens parkeren zodra
+      de key er is; marketing = plan+fundament nu, agent bouwen 2 weken
+      vóór lancering.
+   c. **PR #4** (`erik/claude-migratie`, bouwt op #3): ai-adapter.js
+      (rollen + fallback-keten, perProvider-teller), selectie-batch.js +
+      selectie-prompt v6 (10 items/call, breaker op 2 mislukte batches,
+      prompthash → automatische herkansing van alle eerder afgewezen items),
+      moeder+vertaal in processor én digest (lange versie zit in de moeder;
+      maakLangeVersie en 5-talen-call vervallen), selectie-archief.jsonl
+      (append-only; punt-4-optie vanaf ±2026-10-17), marketing-feed-stap.
+      Unit-tests groen; E2E pas mét key. **Mergevolgorde #2 → #3 → #4.**
+   d. **Maarten Spoor 0** (STAPPENPLAN-MAARTEN.md): Anthropic-account +
+      betaalmiddel + key als GitHub Secret `ANTHROPIC_API_KEY`; daarna
+      eigen Claude-abonnement (kostenpost in de break-even-som).
+   e. **Na de key**: PR's mergen, eerste run, selectieprompt v6 op Haiku
+      herijken (1–2 rondes via selectie-log; drempel 7 en de scoreverdeling
+      zijn op mistral-medium geijkt — opnieuw beoordelen).
+   f. **Tijdlijn**: lancering prikken (gate weg, tester-mail, marketing
+      start, 3-maandenklok start) → evaluatie na 3 maanden: doorgaan als
+      betaalde site? Minimumdoel: uit de kosten (±€50–75/mnd ≈ 20–28
+      abonnees; MARKETING-PLAN.md heeft de hele som en de agentarchitectuur).
 
 0. **Sessie 6 (2026-09-05) — incident + nieuwbouw, beide open**:
    a. **Mistral-429-incident**: elke call faalt sinds 2026-09-04 04:10 UTC,
