@@ -1,13 +1,22 @@
 # Bright News — Overdrachtsdocument / Handoff
 
-**Bijgewerkt: 2026-09-05, einde sessie 5 met Claude Fable 5.**
+**Bijgewerkt: 2026-09-05, sessie 6 met Claude Fable 5.**
 Sessies 1–2 (1–2 sep): review, fases A–G. Sessie 3 (3 sep): pipeline
 werkend (fases H+I). Sessie 4 (4 sep): logo, Stripe deel 2, E2E.
 Sessie 5 (5 sep): LIVEGANG Stripe + echte verkoop bewezen, MoR-check,
 Lemon afgebouwd, SMTP/SPF, Search Console, testers klaar, overdracht
-naar Maarten compleet (repo-CLAUDE.md + reviewlijst). **Eerstvolgende
-werk**: kwaliteitsronde selectie-log na ±een week nieuw feedregime
-(drempel 7 vs 8), eerste testerfeedback, Maartens front-end-lijst.
+naar Maarten compleet (repo-CLAUDE.md + reviewlijst). Sessie 6 (5 sep):
+**INCIDENT ontdekt — Mistral-account geeft sinds 2026-09-04 04:10 UTC op
+élke call 429** (accountniveau; 4 runs op rij aiCalls 0, geen dataverlies
+want mislukte items blijven buiten seenLinks). Mistral is van Maarten →
+console-check usage/billing is dé ontgrendelaar. Gebouwd (branches, nog
+niet gemerged): **PR #2** circuit breaker + canary (fase O) en **PR #3**
+dagoverzichten per categorie + premium-samenvattingen tot ~500 w
+(besluiten Erik: digest als artikel in de stroom; gratis blijft op de
+60-woorden-teaser; nachtcron over gisteren). **Eerstvolgende werk**:
+Mistral herstellen (Maarten), PR #2 en #3 mergen op Eriks go, daarna
+E2E-digest-run + kwaliteitsronde selectie- én digest-log; drempel 7 vs 8;
+eerste testerfeedback; Maartens front-end-lijst.
 Startbericht: "Verder met BrightNews". Dit document +
 `README.md` (hoe alles werkt) + `STRIPE-MIGRATIE.md` (betaaltraject) +
 `STAPPENPLAN-MAARTEN.md` (Maartens acties) vervangen samen de volledige
@@ -219,6 +228,29 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
 
 ## 9. Volgende stappen (in volgorde)
 
+0. **Sessie 6 (2026-09-05) — incident + nieuwbouw, beide open**:
+   a. **Mistral-429-incident**: elke call faalt sinds 2026-09-04 04:10 UTC,
+      al bij de eerste call van de run (27–30 min churn, "success" met
+      aiCalls 0). Geen pacing-kwestie (fase J) maar accountniveau: tegoed/
+      maandcap/key. Account is van **Maarten** → console.mistral.ai checken
+      (usage, limits, billing). Geen dataverlies: mislukte items blijven
+      buiten seenLinks en herkansen vanzelf.
+   b. **PR #2** (`erik/fase-o-429-circuitbreaker`): na 3 selectie-fouten op
+      rij stopt de run; tellers selectieFouten/selectieOvergeslagen +
+      canary-call naar mistral-small (canarySmall in last_run.json:
+      onderscheidt model-specifiek vs account-breed). Mergen op go.
+   c. **PR #3** (`erik/dagartikelen-lange-samenvattingen`, bouwt op #2):
+      fase 1 = dagelijks digest-artikel per categorie (top 5, var. 3–8 op
+      selectiescore, min 3; nachtcron over gisteren; idempotent; badge
+      "Dagoverzicht"; ruimere gratis teaser ~100 w; volledige tekst achter
+      get_full_article; bronnenlijst met [n]-verwijzingen; itereerbare
+      prompt backend/digest-prompt.md + data/digest-log.json). Fase 2 =
+      premium-samenvattingen tot ~500 w bron-getrouw (brontekst tot 4000
+      tekens na selectie; 1 small-call per taal; terugval op kort; gratis
+      blijft exact op 60-woorden-teaser). Lokaal volledig getest (dry-run,
+      statische pagina, SPA op :8945); E2E wacht op Mistral-herstel.
+      Kosten: ±30 medium-calls/dag + ±5 small-calls per geaccepteerd
+      artikel — met Maarten afstemmen bij de console-check.
 1. **Runs blijven volgen** (beoordeeld t/m 2026-09-04 ochtend): het
    backlog van de nieuwe feeds is binnen — run 2026-09-03T16:15 accepteerde
    72/91, kwaliteit steekproefsgewijs goed (Squirrel 23/23, GGG 21/24,
