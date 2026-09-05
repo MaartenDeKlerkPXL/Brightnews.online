@@ -54,7 +54,11 @@ body {
     background-color: var(--light-bg);
     color: var(--dark-text);
     line-height: 1.6;
-    overflow-x: hidden;
+    /* 'clip' i.p.v. 'hidden': overflow-x op body maakt er een
+       scrollcontainer van en dat brak position:sticky op de header
+       (artikelpagina's: titel schoof over/onder de navigatie). clip
+       knipt horizontaal af zonder scrollcontainer te worden. */
+    overflow-x: clip;
 }
 
 /* 4. Layout Container */

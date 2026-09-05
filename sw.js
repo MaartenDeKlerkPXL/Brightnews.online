@@ -1,7 +1,7 @@
 // Bump deze versie bij elke inhoudelijke wijziging aan CSS/JS. Zonder dat
 // blijven bestaande bezoekers vastzitten op een oude cache en krijgen ze
 // nieuwe fixes nooit te zien (zie Fase 2-audit).
-const CACHE_NAME = 'brightnews-v9'; // v9: livegang Stripe (provider-switch, lemon.js weg, meta-CSP). Bumpen bij elke wijziging aan ASSETS-bestanden.
+const CACHE_NAME = 'brightnews-v10'; // v10: sticky-fix (overflow-x clip), foto-dedup, checkout-UX. Bumpen bij elke wijziging aan ASSETS-bestanden.
 const ASSETS = [
     '/',
     '/index.html',

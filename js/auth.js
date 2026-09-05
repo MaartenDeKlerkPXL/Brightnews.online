@@ -125,6 +125,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                 // HIER WORDT HIJ AANGEROEPEN:
                 await updateProfileUI(user);
+            } else if (window.location.hash === '#registreren') {
+                // Vanaf de abonnementenpagina zonder account: open direct
+                // het registratieformulier in plaats van het loginformulier.
+                document.getElementById('login-form')?.classList.add('hidden');
+                document.getElementById('register-form')?.classList.remove('hidden');
             }
             updateAuthUI();
         } catch (err) {
@@ -246,7 +251,9 @@ async function startCheckout(plan) {
 
     if (!session) {
         showNotification(typeof getT === 'function' ? getT('notif_login_first', "Log eerst in om een abonnement af te sluiten. ✨") : "Log eerst in.", "error");
-        setTimeout(() => window.location.href = '/profiel.html', 1500);
+        // #registreren: wie een abonnement wil, heeft meestal nog geen
+        // account — toon direct het registratieformulier i.p.v. inloggen.
+        setTimeout(() => window.location.href = '/profiel.html#registreren', 1500);
         return;
     }
 
