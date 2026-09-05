@@ -239,10 +239,22 @@ async function executeDelete() {
 // De gebruikerskoppeling is server-side verifieerbaar: Stripe krijgt
 // client_reference_id mee en de stripe-webhook koppelt daarop.
 async function startCheckout(plan) {
-    const consentBox = document.getElementById('withdrawal-consent');
+    // Sinds reviewpunt 2 (2026-09-05) staat het herroepingsrecht-vinkje ín de
+    // plankaart zelf, dus is er er één per plan. Val terug op het oude, losse
+    // id zolang er nog pagina's/caches zijn met de vorige opzet.
+    const consentBox = document.getElementById(`withdrawal-consent-${plan}`)
+        || document.getElementById('withdrawal-consent');
     if (consentBox && !consentBox.checked) {
         const msg = typeof getT === 'function' ? getT('withdrawal_consent_required') : "Vink eerst het vakje aan om verder te gaan.";
         showNotification(msg, "error");
+        // Maak zichtbaar wélk vakje nog mist; de klasse dooft weer zodra de
+        // gebruiker 'm aanvinkt.
+        const label = consentBox.closest('.withdrawal-consent-label');
+        if (label) {
+            label.classList.add('consent-ontbreekt');
+            consentBox.addEventListener('change', () => label.classList.remove('consent-ontbreekt'), { once: true });
+        }
+        consentBox.focus();
         return;
     }
 

@@ -5,13 +5,6 @@ Gesorteerd op impact. Punten 1–4 raken conversie/eerste indruk; de rest is
 polijstwerk. Technische randvoorwaarden staan in `CLAUDE.md`.
 
 ## Hoge prioriteit
-1. **Cookiebanner is te dominant** — op mobiel bedekt hij bijna het halve
-   scherm en hij zweeft over de content (ook over de abonnementskaarten).
-   Maak er een compacte onderbalk van (één regel + twee knoppen).
-2. **Herroepingsrecht-vinkje integreren in de plankaarten.** Functioneel
-   werkt het nu (klik zonder vinkje geeft een nette melding), maar visueel
-   is een losse checkbox boven de kaarten onlogisch. Ontwerp: vinkje ín de
-   kaart, direct boven de knop, of als stap in de knopflow.
 3. **"€0 vandaag" bij de trial benadrukken** — de regel "Eerste 30 dagen
    gratis" staat er; maak van de proefperiode het hoofdargument (badge op de
    kaart + microcopy onder de knop: "Vandaag €0 — opzegbaar tijdens de
@@ -35,6 +28,14 @@ polijstwerk. Technische randvoorwaarden staan in `CLAUDE.md`.
 8. **Laadskeletten** voor de nieuwskaarten (grijze placeholder-blokken) in
    plaats van een lege pagina tijdens het laden van de JSON.
 
+## Nieuw gevonden (2026-09-05, nog te beslissen)
+13. **`showNotification()` doet niets op 8 van de 10 pagina's.** De functie
+    schrijft in `#notification-container`, maar dat element staat alleen in
+    `profiel.html` en `wachtwoord-vergeten.html`. Op o.a. `abonnementen.html`
+    verdwijnen álle meldingen geruisloos — ook "Log eerst in om een
+    abonnement af te sluiten" vlak vóór de redirect naar registreren. Raakt
+    de betaalflow, dus overleggen met Erik voor het gefixt wordt.
+
 ## Laag / bewuste keuzes om te herbezien
 9. **Witte tekst op #32CD32** haalt formeel geen WCAG AA (2,1:1). Bewust
    eigenaarsbesluit, maar bij een volgende designronde: donkere tekst op
@@ -42,12 +43,23 @@ polijstwerk. Technische randvoorwaarden staan in `CLAUDE.md`.
 10. **263 archief-artikelpagina's** hebben nog het oude template (bewust:
     nooit verwijderen). Eén keer bewust regenereren zou alles uniform maken —
     overleg met Erik (brondata is er).
-11. **Footer-socials** linken naar nog niet bestaande profielen — claimen of
-    de iconen tijdelijk weghalen.
+11. **Footer-socials**: LinkedIn is geclaimd en de link staat er sinds
+    2026-09-05 in. Facebook en Instagram wijzen nog naar niet-bestaande
+    profielen — claimen of die twee iconen tijdelijk weghalen.
 12. **Sparkle-kaart (gratis plan)** heeft geen knop; een "Blijf gratis
     lezen"-knop naar de homepage maakt de keuze compleet.
 
 ## Zojuist al gefixt (niet meer nodig)
+- **Punt 1 — cookiebanner** (2026-09-05): zwevend kaartje vervangen door een
+  compacte onderbalk. Mobiel 200px → 107px hoog (24% → 13% van het scherm),
+  desktop 59px. Titel verdwijnt op mobiel, knoppen naast elkaar.
+- **Punt 2 — herroepingsrecht-vinkje** (2026-09-05): staat nu ín de Glow- en
+  Shine-kaart, direct boven de knop (één vinkje per plan, eigen id).
+  Klikken zonder vinkje markeert het bijbehorende vakje rood en zet de focus
+  erop. De gratis Sparkle-kaart heeft bewust geen vinkje.
+- **Logo** (2026-09-05): nav-logo op 45px hoogte, desktop én mobiel. Meteen
+  ook de foute `height="200" width="300"`-attributen op 9 pagina's naar de
+  echte 463×94 gezet (die reserveerden de verkeerde ruimte).
 - Titel die over de header schoof (sticky-bug door `overflow-x: hidden` op
   body) — opgelost; hard-refresh nodig om het te zien.
 - Dubbele foto's op één pagina — render-deduplicatie actief.
