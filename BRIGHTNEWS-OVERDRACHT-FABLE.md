@@ -283,10 +283,15 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
    auth.js/betaal-config, lemon-webhook-function + LEMON_WEBHOOK_SECRET
    verwijderd uit Supabase (code in git-historie), map uit repo. Store
    zelf sluiten = Maarten (Lemon-dashboard → Store → deactiveren).
-   **Mail-gotcha**: brightnews.online heeft DMARC p=reject maar GEEN
-   SPF-record en geen zichtbare DKIM — vóór custom SMTP (Strato-postvak,
-   MX bestaat al) moet in het Strato-DNS-panel een SPF-record bij
-   ("v=spf1 include:_spf.strato.com ~all") en DKIM aangezet.
+   **Mail/SMTP (2026-09-05)**: SPF stond er niet terwijl DMARC op
+   p=reject staat — via het Strato-panel (Eriks Chrome) de STRATO
+   SPF-regel "Standaard STRATO mailserver" aangezet; live geverifieerd
+   ("v=spf1 redirect=_spf.strato.com"). DKIM biedt Strato Mail Basic
+   niet; DMARC-alignment loopt via SPF en dat volstaat. Postvak
+   info@brightnews.online bestaat (Business). SMTP voor Supabase =
+   smtp.strato.com:465 (LET OP: .com, niet .de), user = volledig
+   mailadres. Rest: Erik draait de run-knop met het postvak-wachtwoord
+   op het klembord, daarna wachtwoord-vergeten-mail testen.
 4. Reviewer een herbeoordeling laten doen van de live site.
 5. Onderhoudslijst (niet blokkerend): grants-verharding op de bestaande
    tabellen (revoke, nu inert door RLS — eerst met Maarten afstemmen; de
