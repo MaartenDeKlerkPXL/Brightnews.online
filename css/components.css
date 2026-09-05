@@ -12,15 +12,23 @@
 }
 
 
-/* 2. Maak de Navigatiebalk paginabreed */
-header, .navbar {
+/* 2. Maak de Navigatiebalk paginabreed.
+   LET OP de selector: `body > header`, niet het kale `header`. Met het kale
+   element-selector kreeg ELK <header>-element op de pagina deze sticky +
+   z-index 9000 mee — dus ook <header class="detail-header">, het titelblok
+   van een artikel. Dat werd daardoor een tweede plakbalk die over de echte
+   nav heen schoof, terwijl de rest van de artikelkaart (z-index auto) er
+   netjes onder bleef. Gevonden 2026-09-05 op brightnews.online/index.html?id=…
+   De site-nav is op alle 10 pagina's én in het artikeltemplate een direct
+   kind van <body>; nieuwe pagina's moeten dat aanhouden. */
+body > header, .navbar {
     width: 100%;
     position: fixed; /* Of absolute, afhankelijk van je ontwerp */
     top: 0;
     left: 0;
     z-index: 2000;
 }
-header {
+body > header {
     background-color: var(--white);
     border-bottom: 1px solid var(--border-color);
     padding: 1rem 0;
@@ -488,10 +496,10 @@ nav.container {
    uit transparante marge te bestaan (zichtbaar merk 70 van 400px hoog),
    waardoor "84px" in werkelijkheid ~15px woordmerk toonde — dáárom oogde
    het logo klein ondanks reviewronde 2026-09-02. Het bestand is gecropt
-   naar 463×94 (12px marge); 60px hoog ≈ 296px breed toont het merk nu op
-   ~45px. Mobiel wordt verderop 13rem breed. */
+   naar 463×94 (12px marge). 2026-09-05: hoogte op 45px gezet (wens
+   Maarten), ≈ 222px breed — op mobiel dezelfde hoogte, zie media-query. */
 .nav-logo {
-    height: 60px;
+    height: 45px;
     width: auto;
     display: block;
 }
@@ -688,9 +696,12 @@ nav.container {
     text-decoration: none;
 }
 
-.social-btn:hover {
+.social-btn:hover,
+.social-btn:focus-visible {
     background: var(--bright-green);
-    color: var(--dark-text);
+    /* Het icoon is een inline SVG met fill="currentColor", dus wit hier
+       maakt het icoon zelf wit (wens Maarten, 2026-09-05). */
+    color: var(--white, #FFFFFF);
     transform: translateY(-5px);
     border-color: var(--bright-green);
 }
@@ -770,8 +781,13 @@ body {
     }
 
     .nav-logo {
-        width: 13rem;
-        height: auto;
+        /* Zelfde 45px als desktop; max-width vangt de smalste schermen op
+           zodat het logo de taalkiezer/hamburger niet wegduwt. */
+        height: 45px;
+        width: auto;
+        max-width: 60vw;
+        object-fit: contain;
+        object-position: left center;
     }
 
     .language-picker {
@@ -862,69 +878,105 @@ body {
 }
 
 /* Cookiebanner (Fase 7: verplaatst uit pages/index.css — de banner wordt
-   nu op elke pagina dynamisch geinjecteerd door checkCookies() in index.js). */
+   nu op elke pagina dynamisch geinjecteerd door checkCookies() in index.js).
+   Reviewpunt 1 (2026-09-05): was een zwevend kaartje dat op mobiel bijna het
+   halve scherm en de abonnementskaarten bedekte. Nu een compacte, over de
+   volle breedte vastgeplakte onderbalk: één regel tekst + twee knoppen. */
 .cookie-overlay {
     position: fixed;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: 9999;
     display: flex;
     justify-content: center;
-    animation: slideUp 0.5s ease-out;
+    background: white;
+    border-top: 1px solid #e6e6e6;
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.08);
+    animation: slideUp 0.4s ease-out;
 }
 
 .cookie-content {
-    background: white;
-    padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     display: flex;
     align-items: center;
-    gap: 20px;
-    max-width: 800px;
-    border: 1px solid #eee;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    max-width: 1100px;
+    padding: 12px 20px;
 }
 
-.cookie-icon { font-size: 2rem; }
-.cookie-text h3 { margin: 0 0 5px 0; font-size: 1.1rem; }
-.cookie-text p { margin: 0; font-size: 0.9rem; color: #666; }
+.cookie-text {
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: var(--medium-text, #505F50);
+}
 
-.cookie-buttons { display: flex; gap: 10px; }
+.cookie-titel {
+    font-weight: 700;
+    color: var(--dark-text, #1A1A1A);
+}
+
+.cookie-text a {
+    /* Geen groene tekst op licht (fase F-besluit, global.css :root) —
+       --bright-green-text bestond hier nog uit fase 5 en was al verwijderd. */
+    color: var(--dark-text, #1A1A1A);
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
 
 .btn-cookie-accept {
-    /* Eén groen + donkere tekst (reviewbesluit 2026-09-02):
-       #1A1A1A op #32CD32 is ~9:1, ruim WCAG AA. */
+    /* Eén groen (#32CD32) met witte knoptekst — fase G-besluit. */
     background: var(--bright-green, #32CD32);
     color: var(--white, #FFFFFF);
     border: none;
-    padding: 10px 20px;
+    padding: 9px 18px;
     border-radius: 8px;
     font-weight: bold;
+    font-size: 0.85rem;
     cursor: pointer;
     white-space: nowrap;
 }
 
 .btn-cookie-decline {
     background: #f1f1f1;
-    color: #666;
+    color: var(--medium-text, #505F50);
     border: none;
-    padding: 10px 20px;
+    padding: 9px 18px;
     border-radius: 8px;
+    font-size: 0.85rem;
     cursor: pointer;
     white-space: nowrap;
 }
 
 @keyframes slideUp {
-    from { transform: translateY(100px); opacity: 0; }
+    from { transform: translateY(100%); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
 }
 
-/* Mobiel vriendelijk */
+/* Mobiel: de balk moet laag blijven. Titel weg (blijft wel de toegankelijke
+   naam via aria-labelledby), tekst kleiner, knoppen náást elkaar i.p.v.
+   gestapeld — dat scheelde de halve schermhoogte. */
 @media (max-width: 600px) {
-    .cookie-content { flex-direction: column; text-align: center; }
-    .cookie-buttons { width: 100%; flex-direction: column; }
-
+    .cookie-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        padding: 12px 16px;
+        /* iPhone-homebar niet onder de knoppen laten vallen */
+        padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+    }
+    .cookie-titel { display: none; }
+    .cookie-text { font-size: 0.8rem; text-align: center; }
+    .cookie-buttons { justify-content: center; }
+    .cookie-buttons button { flex: 1; padding: 10px 12px; }
 }
 
 /* Reviewronde 2026-09-02: vlag-emoji in de taalselector verbergen op smalle

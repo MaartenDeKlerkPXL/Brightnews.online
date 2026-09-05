@@ -805,17 +805,16 @@ function maakCookieBanner() {
     const banner = document.createElement('div');
     banner.id = 'cookie-banner';
     banner.className = 'cookie-overlay';
+    banner.setAttribute('role', 'region');
+    banner.setAttribute('aria-labelledby', 'cookie-banner-titel');
     banner.style.display = 'none';
     banner.innerHTML = `
     <div class="cookie-content">
-        <div class="cookie-icon">🍪</div>
-        <div class="cookie-text">
-            <h3 data-i18n="cookie_title">${getT('cookie_title')}</h3>
-            <p>
-                <span data-i18n="cookie_text">${getT('cookie_text')}</span>
-                <a href="/Privacy.html" style="color: var(--bright-green); text-decoration: underline;" data-i18n="cookie_more">${getT('cookie_more')}</a>
-            </p>
-        </div>
+        <p class="cookie-text">
+            <span id="cookie-banner-titel" class="cookie-titel" data-i18n="cookie_title">${getT('cookie_title')}</span>
+            <span data-i18n="cookie_text">${getT('cookie_text')}</span>
+            <a href="/Privacy.html" data-i18n="cookie_more">${getT('cookie_more')}</a>
+        </p>
         <div class="cookie-buttons">
             <button onclick="acceptCookies()" class="btn-cookie-accept" data-i18n="btn_accept">${getT('btn_accept')}</button>
             <button onclick="declineCookies()" class="btn-cookie-decline" data-i18n="btn_decline">${getT('btn_decline')}</button>
