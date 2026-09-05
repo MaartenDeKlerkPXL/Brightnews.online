@@ -290,8 +290,10 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
    niet; DMARC-alignment loopt via SPF en dat volstaat. Postvak
    info@brightnews.online bestaat (Business). SMTP voor Supabase =
    smtp.strato.com:465 (LET OP: .com, niet .de), user = volledig
-   mailadres. Rest: Erik draait de run-knop met het postvak-wachtwoord
-   op het klembord, daarna wachtwoord-vergeten-mail testen.
+   mailadres. **SMTP: ✅ AF** — door
+   Erik gezet (HTTP 200) en getest: reset-mail komt binnen als
+   BrightNews <info@brightnews.online> in de huisstijl-template.
+   Auth-mails lopen dus volledig via eigen domein met SPF-pass.
 4. Reviewer een herbeoordeling laten doen van de live site.
 5. Onderhoudslijst (niet blokkerend): grants-verharding op de bestaande
    tabellen (revoke, nu inert door RLS — eerst met Maarten afstemmen; de
