@@ -306,7 +306,11 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
 
 ## 10. Risico's waar Erik zelf op moet letten
 
-- **Token intrekken** na Stripe-deel-2 (Maarten: Supabase → Access Tokens).
+- **Token intrekken**: bewust UITGESTELD (besluit Erik+Maarten 2026-09-05) —
+  Erik blijft de komende weken backend-rol houden, dus SUPABASE_ACCESS_TOKEN
+  blijft in ~/.zshrc. Intrekken zodra Eriks rol stopt: Maartens account →
+  supabase.com/dashboard/account/tokens → Revoke, daarna de export-regel
+  uit Eriks ~/.zshrc.
 - **Witte tekst op #32CD32** haalt geen WCAG AA (2,1:1) — bewuste keuze,
   maar bij een EAA-/toegankelijkheidsvraag is dít het eerste aanpassingspunt.
 - Socials-links verwijzen naar nog-niet-bestaande profielen tot Maarten ze
