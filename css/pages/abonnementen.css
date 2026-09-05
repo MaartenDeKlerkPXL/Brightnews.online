@@ -46,36 +46,55 @@
     padding: 0 20px;
 }
 
-/* Herroepingsrecht-checkbox (reviewronde 2026-09-02): als nette kaart in het
-   midden, met een duidelijke groene checkbox en ruimte tot de prijskaarten. */
-.withdrawal-consent-wrapper {
-    max-width: 620px;
-    margin: 0 auto 50px;
-}
-
+/* Herroepingsrecht-checkbox (reviewpunt 2, 2026-09-05): stond als losse
+   kaart bóven de prijskaarten — functioneel goed, visueel onlogisch (je
+   vinkt iets aan voordat je weet wát je kiest). Staat nu ín elke betaalde
+   kaart, direct boven de knop, als laatste stap vóór de klik. De gratis
+   Sparkle-kaart heeft er geen: daar valt niets af te zien van je
+   herroepingsrecht. */
 .withdrawal-consent-label {
     display: flex;
     align-items: flex-start;
-    gap: 14px;
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: 16px;
-    padding: 18px 22px;
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: #444;
+    gap: 10px;
+    margin-top: 14px;
+    padding: 10px 12px;
+    background: var(--light-bg, #F8FBF8);
+    border: 1px solid var(--border-color, #E8EEE8);
+    border-radius: 10px;
+    font-size: 0.72rem;
+    line-height: 1.45;
+    color: var(--medium-text, #505F50);
     cursor: pointer;
     text-align: left;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+    transition: border-color 0.2s ease, background 0.2s ease;
 }
 
 .withdrawal-consent-label input[type="checkbox"] {
     accent-color: var(--bright-green);
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
     margin-top: 1px;
     flex-shrink: 0;
     cursor: pointer;
+}
+
+/* Klik op de knop zonder vinkje: naast de toast ook zichtbaar máken wélk
+   vakje nog mist (startCheckout() zet deze klasse, zie js/auth.js). */
+.withdrawal-consent-label.consent-ontbreekt {
+    border-color: #d93025;
+    background: #fdf1f0;
+    color: #a32219;
+    animation: consentSchud 0.35s ease-in-out;
+}
+
+@keyframes consentSchud {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .withdrawal-consent-label.consent-ontbreekt { animation: none; }
 }
 
 .pricing-intro h1 {
