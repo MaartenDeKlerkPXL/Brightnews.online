@@ -405,7 +405,17 @@ async function processNews() {
         geaccepteerd: 0,
         opslaanMislukt: 0,
         feedFouten: 0,
+        selectieFouten: 0,
+        selectieOvergeslagen: 0,
     };
+
+    // Circuit breaker voor de selectiestap: op 2026-09-04/05 gaf Mistral op
+    // élke call 429 (accountniveau, niet per-minuut) en verbrandde elke run
+    // ~47s aan retries per item — runs van >1 uur die "success" meldden met
+    // aiCalls 0. Na 3 opeenvolgende fouten stopt de selectie voor deze run;
+    // items blijven buiten seenLinks en herkansen gewoon de volgende run.
+    let selectieFoutenOpRij = 0;
+    let selectieGestopt = false;
     function fixUnsplashUrl(url) {
         if (url?.includes('unsplash.com/photos/') && !url.includes('images.unsplash.com')) {
             const id = url.split('/').pop();
@@ -477,6 +487,13 @@ async function processNews() {
                     continue;
                 }
 
+                // Circuit open? Geen calls en geen wachttijd meer; item niet
+                // in seenLinks, dus volgende run gewoon opnieuw.
+                if (selectieGestopt) {
+                    statistieken.selectieOvergeslagen++;
+                    continue;
+                }
+
                 console.log(`🧠 Analyseren: ${item.title}`);
 
                 // Selectiestap (los itereerbaar, zie selectie-prompt.md):
@@ -489,6 +506,7 @@ async function processNews() {
                     await wacht(1500);
                     item.bronNaam = feedInfo.name;
                     const selectie = await selecteerItem(item, statistieken);
+                    selectieFoutenOpRij = 0;
                     if (selectie.log) nieuweSelectieLogs.push(selectie.log);
                     if (!selectie.geschikt) {
                         if (!selectie.herkansing) {
@@ -500,6 +518,26 @@ async function processNews() {
                 } catch (selErr) {
                     // Niet in seenLinks: volgende run opnieuw proberen.
                     console.error(`❌ Selectie-fout:`, selErr.message);
+                    statistieken.selectieFouten++;
+                    if (++selectieFoutenOpRij >= 3) {
+                        selectieGestopt = true;
+                        console.error('🛑 3 selectie-fouten op rij — selectie voor deze run gestopt; onbeoordeelde items herkansen volgende run.');
+                        // Canary: één poging op het samenvattingsmodel. Slaagt
+                        // die, dan is de limiet model-specifiek (medium);
+                        // faalt die ook, dan is het account-breed — dat
+                        // onderscheid is precies wat de Mistral-console-check
+                        // nodig heeft, en staat zo in last_run.json.
+                        try {
+                            await mistralMetRetry({
+                                model: 'mistral-small-latest',
+                                temperature: 0,
+                                messages: [{ role: 'user', content: 'Antwoord met exact: ok' }],
+                            }, 1);
+                            statistieken.canarySmall = 'ok';
+                        } catch (canaryErr) {
+                            statistieken.canarySmall = `fout: ${String(canaryErr.message).replace(/\s+/g, ' ').slice(0, 160)}`;
+                        }
+                    }
                     continue;
                 }
 
