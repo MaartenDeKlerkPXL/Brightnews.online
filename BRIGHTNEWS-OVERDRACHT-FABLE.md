@@ -282,7 +282,10 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
    **Lemon-afbouw (2026-09-05)**: 0 Lemon-klanten ooit → lemon-code uit
    auth.js/betaal-config, lemon-webhook-function + LEMON_WEBHOOK_SECRET
    verwijderd uit Supabase (code in git-historie), map uit repo. Store
-   zelf sluiten = Maarten (Lemon-dashboard → Store → deactiveren).
+   gedeactiveerd 2026-09-05 (beide producten op Draft via Store →
+   Products; publieke checkout-links geven 404, storefront 403 —
+   extern geverifieerd). Definitief verwijderen kan desgewenst ooit
+   via LS-support; niet nodig.
    **Mail/SMTP (2026-09-05)**: SPF stond er niet terwijl DMARC op
    p=reject staat — via het Strato-panel (Eriks Chrome) de STRATO
    SPF-regel "Standaard STRATO mailserver" aangezet; live geverifieerd
