@@ -1,26 +1,231 @@
 {
- "gegenereerd": "2026-09-05T19:07:20.153Z",
+ "gegenereerd": "2026-09-05T22:13:42.542Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
-   "top": [],
+   "top": [
+    {
+     "id": "1788645872913v6p9gh7ws",
+     "titel": "1000 Eenden Vervangen Pesticiden Op Wijnlandgoed",
+     "teaser": "Het Vergenoegd Löw Wine Estate in Stellenbosch, Zuid-Afrika, gebruikt sinds 1984 Indian Runner-eenden als natuurlijk alternatief voor pesticiden. De eenden eten plaagdieren op tussen de wijnstokken en bemesten de bodem met hun uitwerpselen. De rasse eenden werden oorspronkelijk meer dan 2000 jaar geleden in Indonesië gefokt om plagen in rijstvelden te bestrijden. Het landgoed telt doorgaans zo'n 1000 eenden, en...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/1000-eenden-vervangen-pesticiden-op-wijnlandgoed-1788645872913v6p9gh7ws.html"
+    },
+    {
+     "id": "1788646234804g1sgv91ia",
+     "titel": "Amerikaanse kastanje krijgt genetische reddingsboei",
+     "teaser": "De Amerikaanse kastanjeboom, ooit dominant in oostelijke bossen van de VS, werd bijna uitgeroeid door een dodelijke schimmelziekte. Nu is er hoop: een project voor genetisch gemodificeerde, ziektebestendige kastanjebomen heeft een belangrijke mijlpaal bereikt. Bioloog Andrew Newhouse, directeur van het American Chestnut Research and Restoration Project aan de State University of New York, vertelt dat ze de eerste goedkeuringen van...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/nl/amerikaanse-kastanje-krijgt-genetische-reddingsboei-1788646234804g1sgv91ia.html"
+    },
+    {
+     "id": "178864608674649fh0dl49",
+     "titel": "Kia teasert grotere camper-broer van PV5",
+     "teaser": "Kia gaat over minder dan twee weken de productieversie van de PV7 onthullen tijdens de IAA Transportation show in Hannover. De PV7 is het grotere familielid van de populaire PV5, onderdeel van Kia's modulaire elektrische Platform Beyond Vehicle-familie. Teaserfoto's tonen dat de PV7 dezelfde herkenbare stijl deelt als de PV5: korte motorkap, smalle lichten, opvallende wielen en een tweekleurige lak....",
+     "score": 9,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/nl/kia-teasert-grotere-camper-broer-van-pv5-178864608674649fh0dl49.html"
+    },
+    {
+     "id": "1788645690381vacqodhek",
+     "titel": "Goed Nieuws: Bakkers, Zon En Een Schoolredding",
+     "teaser": "Ms. Rachel (Rachel Accurso) steunde tijdens Black Business Month zwarte ondernemers, onder wie bakker Ashley La Bomme-Benson, wier bestellingen binnen 24 uur haar huur van $3.650 dekten. Accurso zet haar platform van 11 miljoen volgers ook in voor transparantie in de zaak van Nolan Wells en voor vrede in Palestina. In India overtreft schone energie voor het eerst fossiele brandstoffen...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/goed-nieuws-bakkers-zon-en-een-schoolredding-1788645690381vacqodhek.html"
+    },
+    {
+     "id": "1788645362502ubnvc3z3k",
+     "titel": "Man Ruimt 100 Dagen Straat Op, Hele Buurt Doet Mee",
+     "teaser": "In New York begon David uit Washington Heights een TikTok-project om 100 dagen lang dezelfde straat schoon te maken op 171st tussen Broadway en Fort Washington. Zwerfvuil lag overal, van brandkranen tot boomperkjes. Zijn account ging viraal en buurtgenoten sloten zich aan: ze ruimden mee, spraken de gemeente aan en legden bloembedden aan rond de stadsbomen. Lokale bedrijven doneerden planten,...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/man-ruimt-100-dagen-straat-op-hele-buurt-doet-mee-1788645362502ubnvc3z3k.html"
+    }
+   ],
    "dagoverzichten": []
   },
   "en": {
-   "top": [],
+   "top": [
+    {
+     "id": "1788645872913v6p9gh7ws",
+     "titel": "1000 Ducks Replace Pesticides On Wine Estate",
+     "teaser": "The Vergenoegd Löw Wine Estate in Stellenbosch, South Africa, has used Indian Runner ducks as a natural alternative to pesticides since 1984. The ducks eat pests between the grapevines and fertilize the soil with their droppings. The duck breed was originally bred more than 2000 years ago in Indonesia to combat pests in rice fields. The estate typically has around...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/1000-ducks-replace-pesticides-on-wine-estate-1788645872913v6p9gh7ws.html"
+    },
+    {
+     "id": "1788646234804g1sgv91ia",
+     "titel": "American chestnut gets genetic lifeline",
+     "teaser": "The American chestnut tree, once dominant in eastern U.S. forests, was nearly wiped out by a deadly fungal disease. Now there is hope: a project for genetically modified, disease-resistant chestnut trees has reached an important milestone. Biologist Andrew Newhouse, director of the American Chestnut Research and Restoration Project at the State University of New York, says they have received the...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/en/american-chestnut-gets-genetic-lifeline-1788646234804g1sgv91ia.html"
+    },
+    {
+     "id": "178864608674649fh0dl49",
+     "titel": "Kia teases larger camper sibling of PV5",
+     "teaser": "Kia will unveil the production version of the PV7 during the IAA Transportation show in Hanover in less than two weeks. The PV7 is the larger family member of the popular PV5, part of Kia's modular electric Platform Beyond Vehicle family. Teaser photos show that the PV7 shares the same recognizable style as the PV5: short bonnet, narrow lights, striking...",
+     "score": 9,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/en/kia-teases-larger-camper-sibling-of-pv5-178864608674649fh0dl49.html"
+    },
+    {
+     "id": "1788645690381vacqodhek",
+     "titel": "Good News: Bakers, Sun and a School Rescue",
+     "teaser": "Ms. Rachel (Rachel Accurso) supported Black business owners during Black Business Month, including baker Ashley La Bomme-Benson, whose orders within 24 hours covered her $3,650 rent. Accurso uses her platform of 11 million followers to demand transparency in the case of Nolan Wells and to campaign for peace in Palestine. In India, clean energy for the first time exceeds fossil...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/good-news-bakers-sun-and-a-school-rescue-1788645690381vacqodhek.html"
+    },
+    {
+     "id": "1788645362502ubnvc3z3k",
+     "titel": "Man Cleans Street for 100 Days, Whole Neighborhood Joins In",
+     "teaser": "In New York, David from Washington Heights started a TikTok project to clean the same street for 100 days at 171st between Broadway and Fort Washington. Litter was everywhere, from fire hydrants to tree pits. His account went viral and neighbors joined in: they cleaned up together, addressed the city, and planted flower beds around the street trees. Local businesses...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/man-cleans-street-for-100-days-whole-neighborhood-joins-in-1788645362502ubnvc3z3k.html"
+    }
+   ],
    "dagoverzichten": []
   },
   "de": {
-   "top": [],
+   "top": [
+    {
+     "id": "1788645872913v6p9gh7ws",
+     "titel": "1000 Enten Ersetzen Pestizide Auf Weingut",
+     "teaser": "Das Weingut Vergenoegd Löw in Stellenbosch, Südafrika, nutzt seit 1984 Indian Runner-Enten als natürliche Alternative zu Pestiziden. Die Enten fressen Schädlinge zwischen den Weinstöcken und düngen den Boden mit ihren Ausscheidungen. Die Entenrasse wurde ursprünglich vor mehr als 2000 Jahren in Indonesien gezüchtet, um Schädlinge in Reisfeldern zu bekämpfen. Das Weingut hat normalerweise etwa 1000 Enten und züchtet und verkauft...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/1000-enten-ersetzen-pestizide-auf-weingut-1788645872913v6p9gh7ws.html"
+    },
+    {
+     "id": "1788646234804g1sgv91ia",
+     "titel": "Amerikanische Kastanie erhält genetische Rettungsleine",
+     "teaser": "Die amerikanische Kastanie, einst dominant in den östlichen Wäldern der USA, wurde durch eine tödliche Pilzkrankheit fast ausgerottet. Nun gibt es Hoffnung: Ein Projekt für genetisch veränderte, krankheitsresistente Kastanienbäume hat einen wichtigen Meilenstein erreicht. Der Biologe Andrew Newhouse, Direktor des American Chestnut Research and Restoration Project an der State University of New York, berichtet, dass sie die ersten Genehmigungen von...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/de/amerikanische-kastanie-erhalt-genetische-rettungsleine-1788646234804g1sgv91ia.html"
+    },
+    {
+     "id": "178864608674649fh0dl49",
+     "titel": "Kia deutet größeren Camper-Bruder des PV5 an",
+     "teaser": "Kia wird in weniger als zwei Wochen die Serienversion des PV7 auf der IAA Transportation Show in Hannover enthüllen. Der PV7 ist das größere Familienmitglied des beliebten PV5 und Teil von Kias modularer elektrischer Platform Beyond Vehicle-Familie. Teaser-Fotos zeigen, dass der PV7 denselben erkennbaren Stil wie der PV5 teilt: kurze Motorhaube, schmale Leuchten, auffällige Räder und zweifarbiger Lack. Anders als...",
+     "score": 9,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/de/kia-deutet-gro-eren-camper-bruder-des-pv5-an-178864608674649fh0dl49.html"
+    },
+    {
+     "id": "1788645690381vacqodhek",
+     "titel": "Gute Nachrichten: Bäcker, Sonne Und Eine Schulrettung",
+     "teaser": "Ms. Rachel (Rachel Accurso) unterstützte während des Black Business Month schwarze Unternehmer, darunter Bäckerin Ashley La Bomme-Benson, deren Bestellungen innerhalb von 24 Stunden ihre Miete von $3.650 deckten. Accurso nutzt ihre Plattform von 11 Millionen Followern auch für Transparenz im Fall Nolan Wells und für Frieden in Palästina. In Indien übersteigt saubere Energie erstmals fossile Brennstoffe bei der installierten Leistung:...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/gute-nachrichten-backer-sonne-und-eine-schulrettung-1788645690381vacqodhek.html"
+    },
+    {
+     "id": "1788645362502ubnvc3z3k",
+     "titel": "Mann Räumt 100 Tage Straße Auf, Ganzes Viertel Macht Mit",
+     "teaser": "In New York begann David aus Washington Heights ein TikTok-Projekt, um 100 Tage lang dieselbe Straße zwischen 171st und Broadway und Fort Washington sauberzumachen. Überall lag Müll herum, von Hydranten bis zu Baumbeeten. Sein Account wurde viral und Nachbarn schlossen sich an: Sie räumten auf, sprachen die Gemeinde an und legten Blumenbeete um die Stadtbäume an. Lokale Unternehmen spendeten Pflanzen,...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/mann-raumt-100-tage-stra-e-auf-ganzes-viertel-macht-mit-1788645362502ubnvc3z3k.html"
+    }
+   ],
    "dagoverzichten": []
   },
   "fr": {
-   "top": [],
+   "top": [
+    {
+     "id": "1788645872913v6p9gh7ws",
+     "titel": "1000 Canards Remplacent les Pesticides dans un Vignoble",
+     "teaser": "Le domaine viticole Vergenoegd Löw à Stellenbosch, en Afrique du Sud, utilise depuis 1984 des canards Indian Runner comme alternative naturelle aux pesticides. Les canards mangent les ravageurs entre les ceps de vigne et fertilisent le sol avec leurs excréments. Cette race de canards a été élevée à l'origine il y a plus de 2000 ans en Indonésie pour combattre...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/1000-canards-remplacent-les-pesticides-dans-un-vignoble-1788645872913v6p9gh7ws.html"
+    },
+    {
+     "id": "1788646234804g1sgv91ia",
+     "titel": "Le châtaignier américain reçoit une bouée de sauvetage génétique",
+     "teaser": "Le châtaignier américain, autrefois dominant dans les forêts de l'est des États-Unis, a été presque anéanti par une maladie fongique mortelle. Désormais, il y a de l'espoir : un projet de châtaigniers génétiquement modifiés et résistants aux maladies a atteint une étape importante. Andrew Newhouse, biologiste et directeur du American Chestnut Research and Restoration Project à la State University of...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/fr/le-chataignier-americain-recoit-une-bouee-de-sauvetage-genetique-1788646234804g1sgv91ia.html"
+    },
+    {
+     "id": "178864608674649fh0dl49",
+     "titel": "Kia tease le grand frère camping de la PV5",
+     "teaser": "Kia dévoilera la version de production de la PV7 dans moins de deux semaines lors du salon IAA Transportation à Hanovre. La PV7 est le modèle familial plus grand de la populaire PV5, faisant partie de la famille modulaire de véhicules électriques Platform Beyond Vehicle de Kia. Les photos teaser montrent que la PV7 partage le même style reconnaissable que...",
+     "score": 9,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/fr/kia-tease-le-grand-frere-camping-de-la-pv5-178864608674649fh0dl49.html"
+    },
+    {
+     "id": "1788645690381vacqodhek",
+     "titel": "Bonnes Nouvelles: Boulangers, Soleil Et Un Sauvetage Scolaire",
+     "teaser": "Ms. Rachel (Rachel Accurso) a soutenu des entrepreneurs noirs lors du Black Business Month, notamment la boulangère Ashley La Bomme-Benson, dont les commandes ont couvert son loyer de 3.650 $ en 24 heures. Accurso utilise sa plateforme de 11 millions de followers pour exiger la transparence dans l'affaire de Nolan Wells et pour la paix en Palestine. En Inde, l'énergie...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/bonnes-nouvelles-boulangers-soleil-et-un-sauvetage-scolaire-1788645690381vacqodhek.html"
+    },
+    {
+     "id": "1788645362502ubnvc3z3k",
+     "titel": "Homme Nettoie la Rue 100 Jours, Tout le Quartier Participe",
+     "teaser": "À New York, David de Washington Heights a lancé un projet TikTok pour nettoyer la même rue pendant 100 jours entre la 171e rue, Broadway et Fort Washington. Les détritus jonchaient le sol, des bouches d'incendie aux jardinières. Son compte est devenu viral et les voisins se sont joints à lui : ils ont nettoyé ensemble, interpellé la municipalité et...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/homme-nettoie-la-rue-100-jours-tout-le-quartier-participe-1788645362502ubnvc3z3k.html"
+    }
+   ],
    "dagoverzichten": []
   },
   "es": {
-   "top": [],
+   "top": [
+    {
+     "id": "1788645872913v6p9gh7ws",
+     "titel": "1000 Patos Reemplazan Pesticidas En Viña",
+     "teaser": "La finca vinícola Vergenoegd Löw Wine Estate en Stellenbosch, Sudáfrica, utiliza desde 1984 patos Indian Runner como alternativa natural a los pesticidas. Los patos comen plagas entre las vides y fertilizan el suelo con sus excrementos. Esta raza de patos fue criada originalmente hace más de 2000 años en Indonesia para combatir plagas en arrozales. La finca cuenta normalmente con...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/1000-patos-reemplazan-pesticidas-en-vina-1788645872913v6p9gh7ws.html"
+    },
+    {
+     "id": "1788646234804g1sgv91ia",
+     "titel": "El castaño americano recibe un salvavidas genético",
+     "teaser": "El castaño americano, antaño dominante en los bosques orientales de EE.UU., fue casi exterminado por una enfermedad fúngica mortal. Ahora hay esperanza: un proyecto de castaños genéticamente modificados y resistentes a enfermedades ha alcanzado un hito importante. Andrew Newhouse, biólogo y director del American Chestnut Research and Restoration Project en la State University of New York, explica que han recibido...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/es/el-castano-americano-recibe-un-salvavidas-genetico-1788646234804g1sgv91ia.html"
+    },
+    {
+     "id": "178864608674649fh0dl49",
+     "titel": "Kia presenta la versión camper más grande de la PV5",
+     "teaser": "Kia revelará la versión de producción del PV7 en menos de dos semanas durante el salón IAA Transportation en Hannover. El PV7 es el familiar más grande del popular PV5, parte de la familia modular de vehículos eléctricos Platform Beyond Vehicle de Kia. Las fotos teaser muestran que el PV7 comparte el mismo estilo reconocible que el PV5: capó corto,...",
+     "score": 9,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/es/kia-presenta-la-version-camper-mas-grande-de-la-pv5-178864608674649fh0dl49.html"
+    },
+    {
+     "id": "1788645690381vacqodhek",
+     "titel": "Buenas Noticias: Panaderos, Sol Y Un Rescate Escolar",
+     "teaser": "Ms. Rachel (Rachel Accurso) apoyó a empresarios negros durante el Mes de Negocios Negros, incluida la panadera Ashley La Bomme-Benson, cuyos pedidos en 24 horas cubrieron su alquiler de $3.650. Accurso utiliza su plataforma de 11 millones de seguidores también para transparencia en el caso de Nolan Wells y para la paz en Palestina. En India, la energía limpia supera...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/buenas-noticias-panaderos-sol-y-un-rescate-escolar-1788645690381vacqodhek.html"
+    },
+    {
+     "id": "1788645362502ubnvc3z3k",
+     "titel": "Hombre Limpia Calle 100 Días, Todo el Barrio Participa",
+     "teaser": "En Nueva York, David de Washington Heights inició un proyecto en TikTok para limpiar la misma calle durante 100 días en la calle 171 entre Broadway y Fort Washington. La basura estaba por todas partes, desde hidrantes hasta maceteros. Su cuenta se hizo viral y los vecinos se unieron: limpiaban juntos, se dirigían al municipio y plantaban flores alrededor de...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/hombre-limpia-calle-100-dias-todo-el-barrio-participa-1788645362502ubnvc3z3k.html"
+    }
+   ],
    "dagoverzichten": []
   }
  }
