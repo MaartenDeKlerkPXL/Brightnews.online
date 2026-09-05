@@ -63,7 +63,9 @@ mailer-koppelstuk oplost.
    STRIPE_WEBHOOK_SECRET_TEST) na afloop verwijderd; testdata opgeruimd.
    Sandbox-artefacten (testproduct/-link/-endpoint) blijven staan voor
    toekomstige tests.
-10. **Livegang** (één commit):
+10. **Livegang: ✅ UITGEVOERD 2026-09-05** (commit dee6599; punten hieronder
+    alle afgevinkt; meta-CSP zonder één schending lokaal geverifieerd).
+    Oorspronkelijke checklist:
     - `provider: 'stripe'` in js/betaal-config.js;
     - lemon.js-script verwijderen van abonnementen.html;
     - MoR-vermelding: ✅ al gedaan (2026-09-02) — de footer vermeldt sitebreed

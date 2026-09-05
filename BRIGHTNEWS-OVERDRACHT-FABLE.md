@@ -251,10 +251,13 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
    thanks-redirect, die stond als tekstbericht);
    (c) testmode-E2E: ✅ GROEN 2026-09-04 (zie STRIPE-MIGRATIE.md stap 9 —
    drie productiebugs gevonden/gefixt: trial-payment_status, clover-API
-   current_period_end op items, profiles-FK naar auth.users). **Nog open:
-   alleen de livegang-commit** (provider-switch, lemon.js weg, Privacy →
-   Stripe, meta-CSP), live proefaankoop + refund, Fase 9 MoR-eindcheck,
-   daarna token intrekken.
+   current_period_end op items, profiles-FK naar auth.users). Livegang: ✅
+   UITGEVOERD 2026-09-05 (fase M, commit dee6599): provider='stripe',
+   lemon.js weg, alle 15 klanttekst-vermeldingen + 2 fallbacks naar
+   Stripe, meta-CSP op alle pagina's + template (0 schendingen), v9.
+   **Nog open**: live proefaankoop + refund (Erik, echte kaart — trial
+   maakt de aankoop €0), MoR-eindcheck, Lemon-store afbouwen, daarna
+   Supabase-token intrekken (Maarten).
 4. Reviewer een herbeoordeling laten doen van de live site.
 5. Onderhoudslijst (niet blokkerend): grants-verharding op de bestaande
    tabellen (revoke, nu inert door RLS — eerst met Maarten afstemmen; de
