@@ -448,6 +448,30 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
    feed, evt. socials-iconen echte URL's. (Promocode-hardening en
    wees-profielrijen: afgerond 2026-09-03.)
 
+**Juridische vraag beantwoord (J3, stond open sinds fase 3): premium >500
+woorden volledig AI-herschreven artikel — advies is NEE, niet bouwen.**
+Er bestaat geen 500-woordengrens in de wet; wat telt is (a) of je beschermde
+uitdrukkingsvorm overneemt en (b) of je tekst het origineel vervangt. Relevant:
+- Rb. Amsterdam 30-10-2024, *DPG Media c.s./HowardsHome*: 150 tekens (~20
+  woorden) valt nog onder "zeer korte fragmenten" van het persuitgeversrecht
+  (art. 7b Wnr). Onze publieke teaser is al 60 woorden, de samenvatting tot 150.
+- *Advance Local Media v Cohere* (McMahon, 13-11-2025): het verweer "wij nemen
+  alleen feiten over en gieten die in eigen zinnen" is afgewezen; niet-letterlijke
+  "substitutive summaries" kunnen inbreuk opleveren.
+- HvJ EU *Like Company v Google* (C-250/25): zitting Grote Kamer 10-03-2026,
+  **arrest nog niet gewezen** — dit is exact de openstaande vraag.
+- Paywall verergert het: commercieel + substitutie-effect weegt in élk kader
+  tegen ons. Bovendien ziet de AI alleen titel + RSS-snippet, dus 500 woorden
+  daaruit = hallucinatie onder de naam van een echte bron (precies het risico
+  dat de prompt-wijziging van 01-09 juist dichtzette, zie `processor.js`).
+
+Aanbevolen alternatieven, in volgorde van haalbaarheid: (1) premium beter maken
+i.p.v. langer (vroege toegang, dossiers, nieuwsbrief, archief); (2) eigen tekst
+uit 3–5 bronnen combineren zodat selectie en opbouw écht van ons zijn; (3)
+licenties met de vaste top-bronnen (Squirrel News, Optimist Daily, Reasons to be
+Cheerful staan daar mogelijk voor open). Geen juridisch advies — voor een
+definitief oordeel een IE-advocaat raadplegen.
+
 ## 10. Risico's waar Erik zelf op moet letten
 
 - **Token intrekken**: bewust UITGESTELD (besluit Erik+Maarten 2026-09-05) —
