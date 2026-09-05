@@ -1,8 +1,8 @@
 {
-  "start": "2026-09-04T16:10:57.327Z",
-  "kandidaten": 293,
-  "alGezien": 257,
-  "tekstOpgehaald": 12,
+  "start": "2026-09-05T04:04:14.726Z",
+  "kandidaten": 273,
+  "alGezien": 228,
+  "tekstOpgehaald": 17,
   "tekstTeKort": 0,
   "sentimentGeweigerd": 4,
   "selectieAfgewezen": 0,
@@ -12,6 +12,6 @@
   "incompleet": 0,
   "geaccepteerd": 0,
   "opslaanMislukt": 0,
-  "feedFouten": 0,
-  "einde": "2026-09-04T16:31:06.208Z"
+  "feedFouten": 1,
+  "einde": "2026-09-05T04:31:01.207Z"
 }
