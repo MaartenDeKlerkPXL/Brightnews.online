@@ -258,6 +258,15 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
    **Nog open**: live proefaankoop + refund (Erik, echte kaart — trial
    maakt de aankoop €0), MoR-eindcheck, Lemon-store afbouwen, daarna
    Supabase-token intrekken (Maarten).
+   **Fase N (2026-09-05, live)**: livetest-feedback verwerkt — Supabase
+   auth-config wees nog naar het oude GitHub-Pages-adres (site_url +
+   allow-list gefixt naar brightnews.online; recovery-mail nu in
+   BrightNews-stijl, afzender blijft supabase.io tot er custom SMTP is);
+   sticky-header-bug (body overflow-x hidden → clip); foto-deduplicatie op
+   de homepage (24→0 op 150 kaarten); checkout-UX (knoppen klikbaar met
+   melding, profiel#registreren, placeholder, autocomplete). Repo heeft nu
+   CLAUDE.md (2-dev-werkwijze Maarten+Erik), MAARTEN-FRONTEND-REVIEW.md en
+   supabase/testers-promocode.sql (ZONNETJE30, wacht op go).
 4. Reviewer een herbeoordeling laten doen van de live site.
 5. Onderhoudslijst (niet blokkerend): grants-verharding op de bestaande
    tabellen (revoke, nu inert door RLS — eerst met Maarten afstemmen; de
