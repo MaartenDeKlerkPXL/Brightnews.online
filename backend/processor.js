@@ -1,9 +1,13 @@
 const RSSParser = require('rss-parser');
-const { Mistral } = require('@mistralai/mistralai');
 const { createClient } = require('@supabase/supabase-js');
 const fs = require('fs-extra');
 const Sentiment = require('sentiment');
 require('dotenv').config();
+// Claude-migratie 2026-09-05: alle AI-verkeer loopt via de adapter met
+// fallback-keten (ai-adapter.js); de selectie gaat gebundeld per 10 items
+// (selectie-batch.js). Zie BRIGHTNEWS-OVERDRACHT-FABLE.md, sessie 6/7.
+const { aiCall } = require('./ai-adapter');
+const { BATCH_GROOTTE, bouwBatchPrompt, verwerkBatchScores } = require('./selectie-batch');
 
 // customFields is essentieel: zonder deze mapping leest rss-parser
 // media:content, media:thumbnail en content:encoded helemaal niet uit,
@@ -18,7 +22,6 @@ const parser = new RSSParser({
         ],
     },
 });
-const client = new Mistral({ apiKey: process.env.MISTRAL_API_KEY });
 const sentiment = new Sentiment();
 
 // media:content/media:thumbnail komen (met keepArray) als lijst van objecten
@@ -108,23 +111,6 @@ function wacht(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-// Retry met exponentiële backoff rond de Mistral-call (429/timeout/netwerk).
-// 4 pogingen met basis 5s (5/10/20s): de oude 2/4s was te kort voor de
-// per-minuut-limiet van mistral-medium (nachtcron 2026-09-04 verloor er
-// alle 14 kandidaten door; die kregen wel netjes een herkansing).
-async function mistralMetRetry(params, pogingen = 4) {
-    for (let i = 0; i < pogingen; i++) {
-        try {
-            return await client.chat.complete(params);
-        } catch (err) {
-            if (i === pogingen - 1) throw err;
-            const delay = 5000 * Math.pow(2, i);
-            console.warn(`⏳ Mistral-fout (${err.message}), nieuwe poging over ${delay}ms`);
-            await wacht(delay);
-        }
-    }
-}
-
 // Nodig om de volledige artikeltekst apart van de publieke JSON op te slaan
 // (echte paywall, Fase 1.4). SUPABASE_SERVICE_ROLE_KEY moet als GitHub Secret
 // staan; lokaal kan hij in .env. Zonder deze key wordt alleen de teaser
@@ -177,87 +163,67 @@ function schoonSnippet(tekst) {
         .trim();
 }
 
-function bouwSelectiePrompt(item) {
-    return selectiePromptSjabloon
-        .replace('{TITEL}', String(item.title ?? '').slice(0, 300))
-        .replace('{TEKST}', String(item.contentSnippet ?? '').slice(0, 1200));
+// --- Moeder + vertaal (besluit Erik 2026-09-05, "punt 3") --------------------
+// Eén moedertekst in het Nederlands (rol 'schrijven', Sonnet) met korte én
+// lange samenvatting plus metadata; daarna per taal één vertaalcall (rol
+// 'vertalen', Haiku). Alle vijf talen vertellen zo gegarandeerd hetzelfde
+// verhaal — voorheen genereerden vijf onafhankelijke calls vijf versies die
+// inhoudelijk konden divergeren — en vertalen is goedkoper dan genereren.
+const TAAL_NAMEN = { nl: 'Nederlands', en: 'Engels', de: 'Duits', fr: 'Frans', es: 'Spaans' };
+const CATEGORIEEN = ['Tech', 'Health', 'Science', 'Lifestyle', 'Environment', 'Finance'];
+const MOEDER_VELDEN = ['titel', 'kort', 'lang', 'alt', 'meta_d', 'meta_k'];
+
+function veldenCompleet(data) {
+    return data && MOEDER_VELDEN.every(v => typeof data[v] === 'string' && data[v].trim().length > 0);
 }
 
-// Welk model de selectie doet. mistral-small bleek als beoordelaar te
-// wispelturig: runs van 2026-09-02/03 gaven op identieke items totaal
-// verschillende scores (Pokémon-item: 8 → 0 → 0, zelfs mét dat item als
-// ijkvoorbeeld ín de prompt). medium is de middenweg tussen kwaliteit en
-// kosten (~66 calls × ~1,5k tokens per run).
-const SELECTIE_MODEL = 'mistral-medium-latest';
-
-// Beoordeelt één item met de selectieprompt. Retourneert { geschikt, log }.
-// Bij een onbruikbare AI-respons wordt het item afgewezen-voor-nu maar NIET
-// in seenLinks gezet, zodat het de volgende run een nieuwe kans krijgt.
-async function selecteerItem(item, statistieken) {
-    const antwoord = await mistralMetRetry({
-        model: SELECTIE_MODEL,
-        // temperature 0: een beoordelaar hoort deterministisch te zijn;
-        // met de default-temperatuur zwalkten scores tussen runs.
-        temperature: 0,
-        messages: [{ role: 'user', content: bouwSelectiePrompt(item) }],
-        responseFormat: { type: 'json_object' }
+// Schrijft de Nederlandse moedertekst. Bron-getrouwheid is hetzelfde
+// reviewbesluit als altijd (2026-09-01): nooit meer beweren dan de bron
+// draagt; "lang" valt op "kort" terug als de bron dun is.
+async function maakMoedertekst(item, statistieken) {
+    const antwoord = await aiCall({
+        rol: 'schrijven',
+        prompt: `Je bent redacteur bij BrightNews, een nieuwssite met uitsluitend positief nieuws. Schrijf op basis van dit nieuwsitem: "${item.title} - ${item.contentSnippet}".
+Gebruik UITSLUITEND wat in de titel en tekst hierboven staat. Verzin of veronderstel NIETS: geen extra feiten, namen, cijfers, citaten, achtergronden of gevolgen die er niet letterlijk in de bron staan. Is de bron kort, houd je teksten dan ook kort — liever bron-getrouw dan aangevuld met verzinsels.
+Lever in het Nederlands:
+- "titel": pakkende titel, zonder het woord "inspirerend", geen woorden langer dan 24 letters
+- "kort": feitelijke, journalistieke samenvatting van 60 tot maximaal ±150 woorden
+- "lang": uitgebreidere versie tot maximaal ±500 woorden, in alinea's gescheiden door een lege regel; NOOIT langer dan de bron draagt — geeft de bron te weinig voor een langere versie, herhaal dan exact de tekst van "kort"
+- "alt": foto-alt-tekst
+- "meta_d": SEO-metabeschrijving van maximaal 155 tekens
+- "meta_k": relevante keywords, kommagescheiden
+- "categorie": precies één uit: ${CATEGORIEEN.join(', ')}
+Antwoord UITSLUITEND in JSON: {"titel": "..", "kort": "..", "lang": "..", "alt": "..", "meta_d": "..", "meta_k": "..", "categorie": ".."}`,
     });
     statistieken.aiCalls++;
-    statistieken.aiTokens += antwoord.usage?.totalTokens ?? 0;
-    const data = verwerkAIResponse(antwoord.choices[0].message.content);
-    if (!data) return { geschikt: false, herkansing: true, log: null };
-
-    const scores = {
-        gevoel: Number(data.gevoel) || 0,
-        formulering: Number(data.formulering) || 0,
-        relevantie: Number(data.relevantie) || 0,
-    };
-    const totaal = scores.gevoel + scores.formulering + scores.relevantie;
-    // Het besluit volgt volledig uit de scores; het model scoort en motiveert
-    // alleen. Een eigen "besluit"-veld van het model woog eerder mee en
-    // veto'de op 2026-09-02 een 3/3/2-item met de rekenfout "relevantie is
-    // te laag (2)" — terwijl de regel relevantie ≥ 2 eiste.
-    const geschikt = totaal >= SELECTIE_DREMPEL_TOTAAL
-        && Object.entries(SELECTIE_MINIMA).every(([k, min]) => scores[k] >= min);
+    statistieken.aiTokens += antwoord.tokens;
+    statistieken.perProvider[antwoord.provider] = (statistieken.perProvider[antwoord.provider] ?? 0) + 1;
+    const data = verwerkAIResponse(antwoord.tekst);
+    if (!veldenCompleet(data)) return null;
     return {
-        geschikt,
-        herkansing: false,
-        log: {
-            datum: new Date().toISOString(),
-            bron: item.bronNaam ?? null,
-            titel: String(item.title ?? '').slice(0, 140),
-            ...scores,
-            totaal,
-            besluit: geschikt ? 'ja' : 'nee',
-            reden: String(data.reden ?? '').slice(0, 200),
-        },
+        ...Object.fromEntries(MOEDER_VELDEN.map(v => [v, String(data[v]).trim()])),
+        categorie: CATEGORIEEN.includes(data.categorie) ? data.categorie : 'General',
     };
 }
 
-// Langere premium-versie (fase 2026-09-05): gratis blijft op de 60-woorden-
-// teaser, premium krijgt tot ~500 woorden — maar nooit langer dan de bron
-// draagt (zelfde bron-getrouwheidsbesluit als de korte samenvatting; bij te
-// weinig brontekst blijft de korte samenvatting de premium-tekst). Eén call
-// per taal: 5 × 500 woorden past niet betrouwbaar in één JSON-antwoord.
-const TAAL_NAMEN = { nl: 'Nederlands', en: 'Engels', de: 'Duits', fr: 'Frans', es: 'Spaans' };
-async function maakLangeVersie(item, lang, statistieken) {
-    const antwoord = await mistralMetRetry({
-        model: 'mistral-small-latest',
-        messages: [{
-            role: 'user',
-            content: `Schrijf in het ${TAAL_NAMEN[lang]} een uitgebreide, feitelijke, journalistieke samenvatting van dit nieuwsitem: "${item.title} - ${item.contentSnippet}".
-Gebruik UITSLUITEND wat in de titel en tekst hierboven staat. Verzin of veronderstel NIETS: geen extra feiten, namen, cijfers, citaten, achtergronden of gevolgen die er niet letterlijk in staan. Schrijf zoveel als de bron draagt, tot maximaal ±500 woorden — liever korter en bron-getrouw dan aangevuld met verzinsels. Verdeel de tekst in alinea's, gescheiden door een lege regel.
-Antwoord in JSON: {"tekst": "..."}`,
-        }],
-        responseFormat: { type: 'json_object' },
-    }, 2);
+// Vertaalt de moedervelden naar één doeltaal. Mislukt een taal definitief,
+// dan wordt het hele artikel overgeslagen (atomair, net als altijd) en
+// herkanst het de volgende run.
+async function vertaalMoedertekst(moeder, lang, statistieken) {
+    const invoer = Object.fromEntries(MOEDER_VELDEN.map(v => [v, moeder[v]]));
+    const antwoord = await aiCall({
+        rol: 'vertalen',
+        prompt: `Vertaal de onderstaande artikelvelden van BrightNews van het Nederlands naar het ${TAAL_NAMEN[lang]}. Vertaal natuurlijk en journalistiek; voeg NIETS toe en laat NIETS weg. Behoud in "lang" de alinea-indeling (lege regels) en laat verwijzingen tussen blokhaken zoals [1] exact staan. De titel bevat geen woorden langer dan 24 letters; "meta_d" blijft maximaal 155 tekens.
+INVOER:
+${JSON.stringify(invoer)}
+Antwoord UITSLUITEND in JSON met exact dezelfde velden: {"titel": "..", "kort": "..", "lang": "..", "alt": "..", "meta_d": "..", "meta_k": ".."}`,
+    });
     statistieken.aiCalls++;
-    statistieken.aiTokens += antwoord.usage?.totalTokens ?? 0;
-    const data = verwerkAIResponse(antwoord.choices[0].message.content);
-    const tekst = String(data?.tekst || '').trim();
-    // Korter dan de korte samenvatting kan legitiem niet: dan is de respons
-    // onbruikbaar en valt full_text terug op de korte samenvatting.
-    return tekst.split(/\s+/).length >= 80 ? tekst : null;
+    statistieken.aiTokens += antwoord.tokens;
+    statistieken.perProvider[antwoord.provider] = (statistieken.perProvider[antwoord.provider] ?? 0) + 1;
+    const data = verwerkAIResponse(antwoord.tekst);
+    if (!veldenCompleet(data)) return null;
+    return Object.fromEntries(MOEDER_VELDEN.map(v => [v, String(data[v]).trim()]));
 }
 
 function maakTeaser(tekst, maxWoorden = 60) {
@@ -424,9 +390,10 @@ async function processNews() {
         tekstTeKort: 0,
         sentimentGeweigerd: 0,
         selectieAfgewezen: 0,
+        selectieHerkansing: 0,
         aiCalls: 0,
         aiTokens: 0,
-        afgewezen: 0,
+        perProvider: {},
         incompleet: 0,
         geaccepteerd: 0,
         opslaanMislukt: 0,
@@ -436,13 +403,9 @@ async function processNews() {
         langeVersies: 0,
     };
 
-    // Circuit breaker voor de selectiestap: op 2026-09-04/05 gaf Mistral op
-    // élke call 429 (accountniveau, niet per-minuut) en verbrandde elke run
-    // ~47s aan retries per item — runs van >1 uur die "success" meldden met
-    // aiCalls 0. Na 3 opeenvolgende fouten stopt de selectie voor deze run;
-    // items blijven buiten seenLinks en herkansen gewoon de volgende run.
-    let selectieFoutenOpRij = 0;
-    let selectieGestopt = false;
+    // Fase A verzamelt alleen; de AI-calls volgen daarna gebundeld (fase B)
+    // en per geselecteerd artikel (fase C).
+    const kandidaten = [];
     function fixUnsplashUrl(url) {
         if (url?.includes('unsplash.com/photos/') && !url.includes('images.unsplash.com')) {
             const id = url.split('/').pop();
@@ -514,68 +477,86 @@ async function processNews() {
                     continue;
                 }
 
-                // Circuit open? Geen calls en geen wachttijd meer; item niet
-                // in seenLinks, dus volgende run gewoon opnieuw.
-                if (selectieGestopt) {
-                    statistieken.selectieOvergeslagen++;
-                    continue;
+                // Kandidaat: de selectie gebeurt gebundeld ná de feedlus
+                // (fase B), tot 10 items per call.
+                item.bronNaam = feedInfo.name;
+                kandidaten.push(item);
+            }
+        } catch (feedErr) {
+            statistieken.feedFouten++;
+            console.error(`❌ Feed Fout:`, feedErr.message);
+        }
+    }
+
+    // --- Fase B: gebundelde selectie -----------------------------------------
+    const geselecteerd = [];
+    const archiefRegels = [];
+    let batchFoutenOpRij = 0;
+    console.log(`🧠 Selectie: ${kandidaten.length} kandidaten in batches van ${BATCH_GROOTTE}.`);
+    for (let i = 0; i < kandidaten.length; i += BATCH_GROOTTE) {
+        // Circuit breaker (les van 2026-09-04/05): twee mislukte batches op
+        // rij — elk al door de héle provider-keten met retries — betekent dat
+        // doorproberen zinloos is. De rest blijft buiten seenLinks en
+        // herkanst de volgende run.
+        if (batchFoutenOpRij >= 2) {
+            statistieken.selectieOvergeslagen += kandidaten.length - i;
+            console.error('🛑 Twee selectie-batches op rij mislukt — selectie voor deze run gestopt.');
+            break;
+        }
+        const batch = kandidaten.slice(i, i + BATCH_GROOTTE);
+        try {
+            await wacht(1000);
+            const antwoord = await aiCall({ rol: 'selectie', prompt: bouwBatchPrompt(selectiePromptSjabloon, batch) });
+            statistieken.aiCalls++;
+            statistieken.aiTokens += antwoord.tokens;
+            statistieken.perProvider[antwoord.provider] = (statistieken.perProvider[antwoord.provider] ?? 0) + 1;
+            const scores = verwerkBatchScores(
+                verwerkAIResponse(antwoord.tekst), batch.length,
+                SELECTIE_DREMPEL_TOTAAL, SELECTIE_MINIMA);
+            batchFoutenOpRij = 0;
+            batch.forEach((item, j) => {
+                const s = scores[j];
+                if (!s) {
+                    // Onbruikbare of ontbrekende score: niet in seenLinks,
+                    // volgende run een nieuwe kans (zelfde regel als altijd).
+                    statistieken.selectieHerkansing++;
+                    return;
                 }
-
-                console.log(`🧠 Analyseren: ${item.title}`);
-
-                // Selectiestap (los itereerbaar, zie selectie-prompt.md):
-                // beoordeelt alleen — pas als het item dit haalt, volgt de
-                // duurdere samenvattings-/vertaalstap hieronder.
-                try {
-                    // 1500ms i.p.v. 400ms: mistral-medium heeft op dit
-                    // account een krapper rate limit dan small — de nachtcron
-                    // van 2026-09-04 04:10 strandde volledig op 429's.
-                    await wacht(1500);
-                    item.bronNaam = feedInfo.name;
-                    const selectie = await selecteerItem(item, statistieken);
-                    selectieFoutenOpRij = 0;
-                    if (selectie.log) nieuweSelectieLogs.push(selectie.log);
-                    // Score bewaren voor de dagelijkse digest (top-selectie
-                    // per categorie rangschikt op deze selectiescore).
-                    item.selectieScore = selectie.log?.totaal ?? null;
-                    if (!selectie.geschikt) {
-                        if (!selectie.herkansing) {
-                            seenLinks[item.link] = { s: 'sel', t: new Date().toISOString(), p: SELECTIE_PROMPT_HASH };
-                            statistieken.selectieAfgewezen++;
-                        }
-                        continue;
-                    }
-                } catch (selErr) {
-                    // Niet in seenLinks: volgende run opnieuw proberen.
-                    console.error(`❌ Selectie-fout:`, selErr.message);
-                    statistieken.selectieFouten++;
-                    if (++selectieFoutenOpRij >= 3) {
-                        selectieGestopt = true;
-                        console.error('🛑 3 selectie-fouten op rij — selectie voor deze run gestopt; onbeoordeelde items herkansen volgende run.');
-                        // Canary: één poging op het samenvattingsmodel. Slaagt
-                        // die, dan is de limiet model-specifiek (medium);
-                        // faalt die ook, dan is het account-breed — dat
-                        // onderscheid is precies wat de Mistral-console-check
-                        // nodig heeft, en staat zo in last_run.json.
-                        try {
-                            await mistralMetRetry({
-                                model: 'mistral-small-latest',
-                                temperature: 0,
-                                messages: [{ role: 'user', content: 'Antwoord met exact: ok' }],
-                            }, 1);
-                            statistieken.canarySmall = 'ok';
-                        } catch (canaryErr) {
-                            statistieken.canarySmall = `fout: ${String(canaryErr.message).replace(/\s+/g, ' ').slice(0, 160)}`;
-                        }
-                        console.error(`🐤 Canary mistral-small: ${statistieken.canarySmall}`);
-                    }
-                    continue;
+                const logRegel = {
+                    datum: new Date().toISOString(),
+                    bron: item.bronNaam ?? null,
+                    titel: String(item.title ?? '').slice(0, 140),
+                    gevoel: s.gevoel,
+                    formulering: s.formulering,
+                    relevantie: s.relevantie,
+                    totaal: s.totaal,
+                    besluit: s.geschikt ? 'ja' : 'nee',
+                    reden: s.reden,
+                };
+                nieuweSelectieLogs.push(logRegel);
+                archiefRegels.push(logRegel);
+                if (s.geschikt) {
+                    // Score mee voor de digest-ranking.
+                    item.selectieScore = s.totaal;
+                    geselecteerd.push(item);
+                } else {
+                    seenLinks[item.link] = { s: 'sel', t: new Date().toISOString(), p: SELECTIE_PROMPT_HASH };
+                    statistieken.selectieAfgewezen++;
                 }
+            });
+        } catch (batchErr) {
+            statistieken.selectieFouten++;
+            batchFoutenOpRij++;
+            console.error('❌ Selectie-batch-fout:', batchErr.message);
+        }
+    }
 
+    // --- Fase C: schrijven, vertalen en publiceren ---------------------------
+    for (const item of geselecteerd) {
+        try {
                 // Geselecteerd → ruimere brontekst ophalen voor de langere
-                // premium-samenvatting (tot ~500 woorden, fase 2026-09-05).
-                // Alleen voor geaccepteerde items, dus hooguit een paar
-                // extra fetches per run; mislukken is nooit fataal.
+                // premium-samenvatting (tot ~500 woorden). Alleen voor
+                // geselecteerde items; mislukken is nooit fataal.
                 if (item.contentSnippet.length < 3000) {
                     const ruimereTekst = await haalArtikelTekst(item.link, 4000);
                     if (ruimereTekst && ruimereTekst.length > item.contentSnippet.length) {
@@ -610,158 +591,108 @@ async function processNews() {
                     if (isHtml || isVideo || isSmall) foundUrl = null;
                 }
 
-                try {
-                    await wacht(500); // simpele rate limiting richting Mistral
-                    statistieken.aiCalls++;
-                    // Prompt bewust bron-getrouw (besluit review 2026-09-01):
-                    // korte samenvatting op basis van wat de bron écht zegt,
-                    // in plaats van een "artikel van minimaal 300 woorden" uit
-                    // een snippet van twee zinnen (hallucinatierisico).
-                    const chatResponse = await mistralMetRetry({
-                        model: 'mistral-small-latest',
-                        messages: [{
-                            role: 'user',
-                            content: `Beoordeel dit nieuwsitem: "${item.title} - ${item.contentSnippet}".
-                Stap 1 — filter: is dit duidelijk positief, hoopgevend nieuws? Niets over oorlog, geweld, rampen, misdaad of verlies — ook niet zijdelings. Zo nee, antwoord exact {"isBright": false}.
-                Stap 2 — alleen bij positief nieuws: schrijf per taal (nl, en, de, fr, es) een feitelijke, journalistieke samenvatting (veld "s") die UITSLUITEND gebruikt wat in de titel en tekst hierboven staat. Verzin of veronderstel NIETS: geen extra feiten, namen, cijfers, citaten, achtergronden of gevolgen die er niet letterlijk in de bron staan. Is de bron kort, houd de samenvatting dan ook kort — liever 60 bron-getrouwe woorden dan tekst aangevuld met verzinsels (maximaal ±150 woorden).
-                Geef per taal ook: een pakkende titel "t" (zonder het woord "inspirerend", geen woorden langer dan 24 letters), een foto-alt-tekst "alt", een SEO-meta-beschrijving "meta_d" van max 155 tekens en relevante keywords "meta_k".
-                Classificeer in: Tech, Health, Science, Lifestyle, Environment, of Finance.
-                Antwoord in JSON: {"isBright": true, "category": "...", "nl": {"t": "..", "s": "..", "alt": "..", "meta_d": "..", "meta_k": ".."}, "en": {"t": "..", "s": "..", "alt": "..", "meta_d": "..", "meta_k": ".."}, "de": {"t": "..", "s": "..", "alt": "..", "meta_d": "..", "meta_k": ".."}, "fr": {"t": "..", "s": "..", "alt": "..", "meta_d": "..", "meta_k": ".."}, "es": {"t": "..", "s": "..", "alt": "..", "meta_d": "..", "meta_k": ".."}}`
-                        }],
-                        responseFormat: { type: 'json_object' }
-                    });
-                    statistieken.aiTokens += chatResponse.usage?.totalTokens ?? 0;
-
-                    const data = verwerkAIResponse(chatResponse.choices[0].message.content);
-
-                    if (data && !data.isBright) {
-                        // Definitief afgewezen: onthouden zodat dit item niet
-                        // elke run opnieuw een AI-call kost.
-                        seenLinks[item.link] = { s: 'nee', t: new Date().toISOString() };
-                        statistieken.afgewezen++;
-                    }
-
-                    // Cross-taal-validatie: alle 5 taalobjecten moeten compleet
-                    // zijn vóór er ook maar íéts gepubliceerd wordt. Zonder deze
-                    // check kon een ontbrekende taal halverwege het toevoegen
-                    // crashen en liepen de taalbestanden blijvend uit de pas.
-                    const TALEN = ['nl', 'en', 'de', 'fr', 'es'];
-                    const VELDEN = ['t', 's', 'alt', 'meta_d', 'meta_k'];
-                    const compleet = data && data.isBright
-                        && TALEN.every(l => data[l] && VELDEN.every(v => typeof data[l][v] === 'string' && data[l][v].trim().length > 0));
-
-                    if (data && data.isBright && !compleet) {
-                        // Niet in seenLinks: volgende run krijgt dit item een
-                        // nieuwe kans op een complete AI-respons.
-                        statistieken.incompleet++;
-                        console.error(`⚠️ Incomplete AI-respons (taal/veld ontbreekt), artikel overgeslagen: ${item.title}`);
-                    }
-
-                    if (compleet) {
-                        const category = data.category || 'General';
-                        const articleId = Date.now() + Math.random().toString(36).substr(2, 9);
-
-                        let finalImage = foundUrl;
-
-                        // Geen feed-afbeelding? Probeer og:image van de
-                        // artikelpagina (alleen voor geaccepteerde artikelen,
-                        // dus hooguit een paar fetches per run).
-                        if (!finalImage && /^https?:\/\//i.test(item.link)) {
-                            finalImage = await haalOgImage(item.link);
-                            if (finalImage) console.log(`🖼️ og:image gevonden voor: ${item.title}`);
-                        }
-
-                        if (!finalImage) {
-                            const fallbackLijst = categoryFallbacks[category] || categoryFallbacks['General'];
-
-                            // Check bestaande data op schijf + nieuw toegevoegde artikelen in deze run
-                            const imagesOpSchijf = languages.nl.map(a => a.image);
-                            const imagesInGeheugen = Object.values(languages).flat().map(a => a.image);
-                            const alleGebruikteImages = [...imagesOpSchijf, ...imagesInGeheugen];
-
-                            let uniekeOpties = fallbackLijst.filter(img => !alleGebruikteImages.includes(img));
-
-                            if (uniekeOpties.length === 0) uniekeOpties = fallbackLijst;
-
-                            finalImage = uniekeOpties[Math.floor(Math.random() * uniekeOpties.length)];
-                        }
-
-                        // Volledige tekst apart opslaan (alleen voor Premium-lezers
-                        // op te vragen via get_full_article()). Eerst voor ÁLLE talen
-                        // opslaan en pas daarna publiceren: mislukt één upsert, dan
-                        // slaan we het hele artikel over — anders staat er een teaser
-                        // online waarvan de volledige tekst nergens bewaard is.
-                        // Let op: supabase-js gooit niet bij een DB-fout maar geeft
-                        // { error } terug; die wordt hier dus expliciet gecheckt.
-                        // Langere premium-versie per taal, alleen als er
-                        // genoeg brontekst is (anders ís de korte samenvatting
-                        // al alles wat de bron draagt). Mislukt een taal, dan
-                        // valt die taal terug op de korte samenvatting —
-                        // het artikel blijft compleet.
-                        const langeVersies = {};
-                        if (item.contentSnippet.length >= 1200) {
-                            for (const lang of Object.keys(languages)) {
-                                try {
-                                    await wacht(1000);
-                                    langeVersies[lang] = await maakLangeVersie(item, lang, statistieken);
-                                    if (langeVersies[lang]) statistieken.langeVersies++;
-                                } catch (langErr) {
-                                    console.warn(`⚠️ Lange versie mislukt (${lang}): ${langErr.message} — korte samenvatting gebruikt.`);
-                                }
-                            }
-                        }
-
-                        let opslaanGelukt = true;
-                        for (const lang of Object.keys(languages)) {
-                            try {
-                                const { error } = await supabaseAdmin.from('articles_full').upsert({
-                                    id: String(articleId),
-                                    lang,
-                                    full_text: langeVersies[lang] || data[lang].s
-                                }, { onConflict: 'id,lang' });
-                                if (error) throw new Error(error.message);
-                            } catch (err) {
-                                console.error(`❌ Kon volledige tekst niet opslaan (${lang}): ${err.message} — artikel overgeslagen.`);
-                                opslaanGelukt = false;
-                                break;
-                            }
-                        }
-                        if (!opslaanGelukt) {
-                            statistieken.opslaanMislukt++;
-                            continue;
-                        }
-
-                        for (const lang of Object.keys(languages)) {
-                            const volledigeTekst = data[lang].s;
-
-                            languages[lang].unshift({
-                                id: articleId,
-                                title: data[lang].t,
-                                summary: maakTeaser(volledigeTekst),
-                                image_alt: data[lang].alt,
-                                meta_description: data[lang].meta_d, // Toevoegen!
-                                meta_keywords: data[lang].meta_k,    // Toevoegen!
-                                link: item.link,
-                                source: feedInfo.name,
-                                image: finalImage,
-                                date: new Date().toISOString(),
-                                category: category,
-                                score: item.selectieScore ?? null
-                            });
-                            if (languages[lang].length > 150) languages[lang].pop();
-                        }
-                        seenLinks[item.link] = { s: 'ok', t: new Date().toISOString() };
-                        statistieken.geaccepteerd++;
-                        console.log(`✨ Succes: ${item.title} toegevoegd.`);
-                    }
-                } catch (aiErr) {
-                    // Bewust niet in seenLinks: volgende run opnieuw proberen.
-                    console.error(`❌ AI Fout:`, aiErr.message);
+                console.log(`✍️ Schrijven: ${item.title}`);
+                await wacht(500);
+                const moeder = await maakMoedertekst(item, statistieken);
+                if (!moeder) {
+                    // Niet in seenLinks: volgende run een nieuwe kans.
+                    statistieken.incompleet++;
+                    console.error(`⚠️ Onbruikbare moedertekst, artikel overgeslagen: ${item.title}`);
+                    continue;
                 }
-            }
-        } catch (feedErr) {
-            statistieken.feedFouten++;
-            console.error(`❌ Feed Fout:`, feedErr.message);
+                const teksten = { nl: moeder };
+                for (const lang of ['en', 'de', 'fr', 'es']) {
+                    await wacht(500);
+                    teksten[lang] = await vertaalMoedertekst(moeder, lang, statistieken);
+                    if (!teksten[lang]) break;
+                }
+                // Atomair zoals altijd: alle 5 talen compleet, of het hele
+                // artikel wacht op de volgende run.
+                if (!Object.keys(languages).every(l => teksten[l])) {
+                    statistieken.incompleet++;
+                    console.error(`⚠️ Vertaling incompleet, artikel overgeslagen: ${item.title}`);
+                    continue;
+                }
+                if (moeder.lang !== moeder.kort) statistieken.langeVersies++;
+
+                const category = moeder.categorie;
+                const articleId = Date.now() + Math.random().toString(36).substr(2, 9);
+
+                let finalImage = foundUrl;
+
+                // Geen feed-afbeelding? Probeer og:image van de
+                // artikelpagina (alleen voor geaccepteerde artikelen,
+                // dus hooguit een paar fetches per run).
+                if (!finalImage && /^https?:\/\//i.test(item.link)) {
+                    finalImage = await haalOgImage(item.link);
+                    if (finalImage) console.log(`🖼️ og:image gevonden voor: ${item.title}`);
+                }
+
+                if (!finalImage) {
+                    const fallbackLijst = categoryFallbacks[category] || categoryFallbacks['General'];
+
+                    // Check bestaande data op schijf + nieuw toegevoegde artikelen in deze run
+                    const imagesOpSchijf = languages.nl.map(a => a.image);
+                    const imagesInGeheugen = Object.values(languages).flat().map(a => a.image);
+                    const alleGebruikteImages = [...imagesOpSchijf, ...imagesInGeheugen];
+
+                    let uniekeOpties = fallbackLijst.filter(img => !alleGebruikteImages.includes(img));
+
+                    if (uniekeOpties.length === 0) uniekeOpties = fallbackLijst;
+
+                    finalImage = uniekeOpties[Math.floor(Math.random() * uniekeOpties.length)];
+                }
+
+                // Volledige tekst apart opslaan (alleen voor Premium-lezers
+                // op te vragen via get_full_article()). Eerst voor ÁLLE talen
+                // opslaan en pas daarna publiceren: mislukt één upsert, dan
+                // slaan we het hele artikel over — anders staat er een teaser
+                // online waarvan de volledige tekst nergens bewaard is.
+                // Let op: supabase-js gooit niet bij een DB-fout maar geeft
+                // { error } terug; die wordt hier dus expliciet gecheckt.
+                let opslaanGelukt = true;
+                for (const lang of Object.keys(languages)) {
+                    try {
+                        const { error } = await supabaseAdmin.from('articles_full').upsert({
+                            id: String(articleId),
+                            lang,
+                            full_text: teksten[lang].lang || teksten[lang].kort
+                        }, { onConflict: 'id,lang' });
+                        if (error) throw new Error(error.message);
+                    } catch (err) {
+                        console.error(`❌ Kon volledige tekst niet opslaan (${lang}): ${err.message} — artikel overgeslagen.`);
+                        opslaanGelukt = false;
+                        break;
+                    }
+                }
+                if (!opslaanGelukt) {
+                    statistieken.opslaanMislukt++;
+                    continue;
+                }
+
+                for (const lang of Object.keys(languages)) {
+                    languages[lang].unshift({
+                        id: articleId,
+                        title: teksten[lang].titel,
+                        summary: maakTeaser(teksten[lang].kort),
+                        image_alt: teksten[lang].alt,
+                        meta_description: teksten[lang].meta_d,
+                        meta_keywords: teksten[lang].meta_k,
+                        link: item.link,
+                        source: item.bronNaam,
+                        image: finalImage,
+                        date: new Date().toISOString(),
+                        category: category,
+                        score: item.selectieScore ?? null
+                    });
+                    if (languages[lang].length > 150) languages[lang].pop();
+                }
+                seenLinks[item.link] = { s: 'ok', t: new Date().toISOString() };
+                statistieken.geaccepteerd++;
+                console.log(`✨ Succes: ${item.title} toegevoegd.`);
+        } catch (aiErr) {
+            // Bewust niet in seenLinks: volgende run opnieuw proberen.
+            console.error(`❌ AI Fout:`, aiErr.message);
         }
     }
 
@@ -783,6 +714,15 @@ async function processNews() {
 
     selectieLog = [...nieuweSelectieLogs, ...selectieLog].slice(0, SELECTIE_LOG_MAX);
     await fs.outputJson('./data/selectie-log.json', selectieLog, { spaces: 1 });
+
+    // Append-only archief van álle selectiebeslissingen (besluit 2026-09-05,
+    // "punt 4"-fundament): het log hierboven rouleert op 300, dit archief
+    // niet. Na ±6 weken (vanaf 2026-10-17) is dit de trainingsdata voor een
+    // embedding-voorfilter of een gefinetuned selectiemodel.
+    if (archiefRegels.length) {
+        await fs.appendFile('./data/selectie-archief.jsonl',
+            archiefRegels.map(r => JSON.stringify(r)).join('\n') + '\n');
+    }
 
     statistieken.einde = new Date().toISOString();
     await fs.outputJson('./data/last_run.json', statistieken, { spaces: 2 });

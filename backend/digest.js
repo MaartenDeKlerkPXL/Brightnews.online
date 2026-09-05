@@ -13,25 +13,23 @@
 // alléén in articles_full (eerst álle 5 talen opgeslagen, anders categorie
 // overgeslagen); publiek staat een ruimere teaser (~100 woorden).
 const crypto = require('crypto');
-const { Mistral } = require('@mistralai/mistralai');
 const { createClient } = require('@supabase/supabase-js');
 const fs = require('fs-extra');
 require('dotenv').config();
+// Claude-migratie 2026-09-05: AI via de adapter met fallback-keten; de
+// digest wordt één keer in het Nederlands geschreven (rol 'schrijven') en
+// daarna vertaald (rol 'vertalen') — alle talen vertellen zo hetzelfde
+// verhaal en vertalen is goedkoper dan vijf keer genereren.
+const { aiCall } = require('./ai-adapter');
 
 const TALEN = ['nl', 'en', 'de', 'fr', 'es'];
 const TAAL_NAMEN = { nl: 'Nederlands', en: 'Engels', de: 'Duits', fr: 'Frans', es: 'Spaans' };
 const TAAL_LOCALES = { nl: 'nl-NL', en: 'en-GB', de: 'de-DE', fr: 'fr-FR', es: 'es-ES' };
 
-// mistral-medium: dit is de enige lezer-gerichte langere tekst die we
-// genereren (6 categorieën × 5 talen = max 30 calls/dag); schrijfkwaliteit
-// weegt hier zwaarder dan bij de bron-getrouwe samenvattingen.
-const DIGEST_MODEL = 'mistral-medium-latest';
 const MIN_ARTIKELEN = 3;   // minder dan dit → geen digest voor die categorie
 const BASIS_TOP = 5;       // "top 5", …
 const MAX_ARTIKELEN = 8;   // …aangevuld met extra 9+-scoorders tot max 8
 const TEASER_WOORDEN = 100; // ruimere teaser dan gewone artikelen (60)
-
-const client = new Mistral({ apiKey: process.env.MISTRAL_API_KEY });
 
 const SUPABASE_URL = 'https://rquuqypgaannrakdrabj.supabase.co';
 const supabaseAdmin = process.env.SUPABASE_SERVICE_ROLE_KEY
@@ -47,19 +45,6 @@ if (!promptSjabloon) {
 const PROMPT_HASH = crypto.createHash('sha256').update(promptSjabloon).digest('hex').slice(0, 12);
 
 async function wacht(ms) { return new Promise(r => setTimeout(r, ms)); }
-
-async function mistralMetRetry(params, pogingen = 3) {
-    for (let i = 0; i < pogingen; i++) {
-        try {
-            return await client.chat.complete(params);
-        } catch (err) {
-            if (i === pogingen - 1) throw err;
-            const delay = 5000 * Math.pow(2, i);
-            console.warn(`⏳ Mistral-fout (${err.message}), nieuwe poging over ${delay}ms`);
-            await wacht(delay);
-        }
-    }
-}
 
 function verwerkAIResponse(ruw) {
     try {
@@ -179,33 +164,50 @@ async function main() {
 
         try {
             const ids = top.map(a => a.id);
-            // Per taal één call: 5 × ~450 woorden past niet betrouwbaar in
-            // één JSON-antwoord (het bestaande 5-talen-patroon werkt alleen
-            // voor korte samenvattingen).
+            // Moeder + vertaal: één Nederlandse moedertekst (rol 'schrijven'),
+            // daarna per taal één vertaalcall (rol 'vertalen'). De
+            // [n]-verwijzingen moeten de vertaling exact overleven.
             const perTaal = {};
-            for (const lang of TALEN) {
-                const teksten = await haalVolledigeTeksten(ids, lang, perTaalIndex);
-                const items = ids.map((id, i) => ({
-                    titel: perTaalIndex[lang]?.[id]?.title || top[i].title,
-                    tekst: teksten[i],
-                }));
-                await wacht(1500);
-                const antwoord = await mistralMetRetry({
-                    model: DIGEST_MODEL,
-                    temperature: 0.4,
-                    messages: [{ role: 'user', content: bouwPrompt(lang, categorie, gisteren, items) }],
-                    responseFormat: { type: 'json_object' },
+            const nlTeksten = await haalVolledigeTeksten(ids, 'nl', perTaalIndex);
+            const nlItems = ids.map((id, i) => ({
+                titel: perTaalIndex.nl?.[id]?.title || top[i].title,
+                tekst: nlTeksten[i],
+            }));
+            await wacht(1000);
+            const moederAntwoord = await aiCall({
+                rol: 'schrijven',
+                prompt: bouwPrompt('nl', categorie, gisteren, nlItems),
+            });
+            const moeder = verwerkAIResponse(moederAntwoord.tekst);
+            const moederWoorden = telWoorden(moeder?.tekst);
+            if (!moeder?.titel || moederWoorden < 250 || moederWoorden > 700) {
+                throw new Error(`onbruikbare digest-moedertekst: ${moederWoorden} woorden`);
+            }
+            perTaal.nl = {
+                titel: String(moeder.titel).trim(),
+                tekst: String(moeder.tekst).trim(),
+                meta_d: String(moeder.meta_d || '').slice(0, 155),
+                tokens: moederAntwoord.tokens,
+            };
+            for (const lang of TALEN.filter(l => l !== 'nl')) {
+                await wacht(1000);
+                const antwoord = await aiCall({
+                    rol: 'vertalen',
+                    prompt: `Vertaal dit BrightNews-dagoverzicht van het Nederlands naar het ${TAAL_NAMEN[lang]}. Vertaal natuurlijk en journalistiek; voeg NIETS toe en laat NIETS weg. Behoud de alinea-indeling (lege regels) en laat de verwijzingen tussen blokhaken zoals [1] exact staan. "meta_d" blijft maximaal 155 tekens.
+INVOER:
+${JSON.stringify({ titel: perTaal.nl.titel, tekst: perTaal.nl.tekst, meta_d: perTaal.nl.meta_d })}
+Antwoord UITSLUITEND in JSON: {"titel": "..", "tekst": "..", "meta_d": ".."}`,
                 });
-                const data = verwerkAIResponse(antwoord.choices[0].message.content);
+                const data = verwerkAIResponse(antwoord.tekst);
                 const woorden = telWoorden(data?.tekst);
-                if (!data?.titel || woorden < 250 || woorden > 700) {
-                    throw new Error(`onbruikbare digest-respons (${lang}): ${woorden} woorden`);
+                if (!data?.titel || woorden < 200) {
+                    throw new Error(`onbruikbare digest-vertaling (${lang}): ${woorden} woorden`);
                 }
                 perTaal[lang] = {
                     titel: String(data.titel).trim(),
                     tekst: String(data.tekst).trim(),
                     meta_d: String(data.meta_d || '').slice(0, 155),
-                    tokens: antwoord.usage?.totalTokens ?? 0,
+                    tokens: antwoord.tokens,
                 };
             }
 
@@ -247,7 +249,7 @@ async function main() {
                 categorie,
                 ids,
                 prompthash: PROMPT_HASH,
-                model: DIGEST_MODEL,
+                model: `moeder+vertaal (${moederAntwoord.provider})`,
                 tokens: TALEN.reduce((som, l) => som + perTaal[l].tokens, 0),
                 woorden: Object.fromEntries(TALEN.map(l => [l, telWoorden(perTaal[l].tekst)])),
             });

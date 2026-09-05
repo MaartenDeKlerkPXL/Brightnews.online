@@ -37,6 +37,10 @@ jobs:
 
       - name: 🤖 AI Verwerking (Scannen, Filteren & Vertalen)
         env:
+          # Primaire provider (Claude-migratie 2026-09-05): Maartens
+          # Anthropic-key. MISTRAL_API_KEY is de slapende fallback-sleuf in
+          # de adapter-keten — mag leeg zijn.
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           # Nodig om volledige artikeltekst apart van de publieke JSON op te
           # slaan (echte paywall, Fase 1.4). Zet deze zelf in GitHub Secrets:
@@ -49,12 +53,16 @@ jobs:
         # de processor-stap laten sneuvelen; de volgende run herkanst vanzelf.
         continue-on-error: true
         env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: node backend/digest.js
 
       - name: 📄 Statische artikelpagina's genereren
         run: node backend/generate-articles.js
+
+      - name: 📣 Marketing-feed genereren
+        run: node backend/generate-marketing-feed.js
 
       - name: 🗺️ Sitemap & robots.txt genereren
         run: node backend/generate-sitemap.js
@@ -67,7 +75,7 @@ jobs:
           # Alleen de nieuws-JSON's plus de gegenereerde sitemap/robots.txt —
           # bewust niet data/*.json, zodat een eventueel ander databestand
           # nooit per ongeluk publiek meegecommit wordt.
-          git add data/news_*.json data/seen_links.json data/last_run.json data/selectie-log.json data/digest-log.json articles sitemap.xml robots.txt
+          git add data/news_*.json data/seen_links.json data/last_run.json data/selectie-log.json data/digest-log.json data/selectie-archief.jsonl data/marketing-feed.json articles sitemap.xml robots.txt
 
           # Controleer of er echt iets veranderd is voor we committen
           if git diff --quiet && git diff --staged --quiet; then
