@@ -41,9 +41,29 @@ python3 -m http.server 8945
 Let op: de service worker en browser cachen agressief — test met een
 hard-refresh of privévenster; CSS/JS-wijzigingen zie je anders niet.
 
+## Sinds 2026-09-06: Claude-pipeline en geparkeerde site
+- **De site is tijdelijk geparkeerd**: publiek ziet `binnenkort.html`;
+  teamtoegang via de link op die pagina (`/?team=1`). De gate is een klein
+  scriptblok bovenin `index.html` — niet per ongeluk weghalen; hij gaat er
+  bewust uit bij de lancering.
+- **AI draait op Claude** via `backend/ai-adapter.js` (Haiku selecteert
+  gebundeld per 10, Sonnet schrijft, Haiku vertaalt; besluit valt in code:
+  som ≥ 8, minima 2/2/2). Secret: `ANTHROPIC_API_KEY`. Mistral is
+  afgebouwd; de fallback-sleuf in de adapter is bewust leeg.
+- **Itereerbare prompts**: `backend/selectie-prompt.md` (bewerken → Action →
+  `data/selectie-log.json` lezen; hash-wijziging geeft afgewezen items
+  automatisch een herkansing) en `backend/digest-prompt.md` (dagoverzichten;
+  log in `data/digest-log.json`). `data/selectie-archief.jsonl` is
+  append-only trainingsdata — nooit opschonen.
+- **Dagoverzichten** (type `digest`) zijn gewone artikelen met badge en
+  bronnenlijst; `data/marketing-feed.json` is de input voor de latere
+  marketing-agent (`MARKETING-PLAN.md`).
+
 ## Waar staat wat
 - `BRIGHTNEWS-OVERDRACHT-FABLE.md` — volledige projectstatus en historie.
 - `README.md` — hoe alles werkt. `STRIPE-MIGRATIE.md` — betaaltraject.
+- `MARKETING-PLAN.md` — route naar lancering, break-even, agent-ontwerp.
+- `STAPPENPLAN-MAARTEN.md` — Maartens eigen acties.
 - `MAARTEN-FRONTEND-REVIEW.md` — actuele front-end-verbeterlijst.
 - `backend/selectie-prompt.md` — dé AI-selectieprompt (itereren: bewerken →
   Action draaien → `data/selectie-log.json` lezen).

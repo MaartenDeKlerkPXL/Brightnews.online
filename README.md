@@ -3,141 +3,143 @@
 Statische, meertalige (NL/EN/DE/FR/ES) nieuwssite met uitsluitend positief
 nieuws. Draait op GitHub Pages via `CNAME` → brightnews.online. Geen server,
 geen frameworks; wél één lichte buildstap in de GitHub Action die statische
-artikelpagina's genereert. Accounts en premiumstatus via Supabase. Betalingen
-lopen via Lemon Squeezy (Merchant of Record); de migratie naar **Stripe
-Managed Payments** is voorbereid — zie `STRIPE-MIGRATIE.md`.
+artikelpagina's genereert. Accounts en premiumstatus via Supabase; betalingen
+via **Stripe Managed Payments** (Merchant of Record, live sinds 2026-09-05).
+
+**Tijdelijk geparkeerd** (sinds 2026-09-05, tot de lancering): publiek ziet
+`binnenkort.html`; teamleden komen via de link op die pagina (`/?team=1`,
+zet een localStorage-vlag) op de volledige site. De gate is een klein
+scriptblok bovenin `index.html` — verwijderen bij livegang. Alleen de
+homepage is dicht; artikelpagina's blijven bereikbaar (SEO).
 
 ## Hoe de pipeline werkt
 
 Twee keer per dag (`.github/workflows/update-news.yml`, cron `0 0,12 * * *`,
-Node 22 — supabase-js vereist 22+):
+Node 22 — supabase-js vereist 22+). Alle AI-verkeer loopt via
+`backend/ai-adapter.js`: rollen i.p.v. modellen (**selectie** = Claude
+Haiku 4.5 temp 0 · **schrijven** = Claude Sonnet 5 · **vertalen** = Haiku),
+met een provider-fallback-keten (Anthropic primair; de Mistral-sleuf is
+leeg tot er ooit een tweede key wordt aangesloten) en een robuuste
+drietrapse JSON-parser (`verwerkAIResponse`).
 
-1. `backend/processor.js` haalt ~33 RSS-feeds op (`rss-parser`, mét
-   `customFields` zodat `media:content`/`media:thumbnail`/`content:encoded`
-   echt gelezen worden — de bron van echte artikelnfoto's).
-2. **Kostenbeheersing vóór de AI**: `data/seen_links.json` (max 8000 links)
-   onthoudt alles wat al beoordeeld is — geaccepteerd ('ok'), afgewezen
-   ('nee') of door de sentiment-voorfilter ('sent', AFINN-score ≤ −3, alleen
-   betrouwbaar voor Engels; niet-Engels gaat gewoon door). Alleen echt nieuwe
-   items kosten een Mistral-call.
-3. Per nieuw item gaat titel + snippet naar Mistral (`mistral-small-latest`,
-   `responseFormat: json_object`, retry met backoff + 500 ms pacing). Het
-   model bepaalt `isBright`, categoriseert en schrijft per taal een
-   **bron-getrouwe samenvatting** (max ±150 woorden, expliciet verbod op
-   toegevoegde feiten — bewust géén opgeblazen artikel uit twee zinnen bron).
-4. **Cross-taal-validatie**: publiceren gebeurt alleen als alle 5 talen
-   compleet zijn — de taalbestanden kunnen niet meer uit de pas lopen.
-5. **Echte paywall (atomair)**: eerst gaat de volledige tekst voor álle 5
-   talen naar de Supabase-tabel `articles_full` (service_role); mislukt dat,
-   dan wordt het artikel helemaal niet gepubliceerd. Pas daarna komt de
-   teaser (~60 woorden, `maakTeaser`) in de publieke `data/news_{taal}.json`.
-   Zonder `SUPABASE_SERVICE_ROLE_KEY` breekt de run bewust hard af.
-6. Geen feed-afbeelding? Dan probeert de pipeline `og:image` van de
-   artikelpagina zelf (alleen voor geaccepteerde artikelen); daarna pas de
+1. **Fase A — verzamelen**: `backend/processor.js` haalt de RSS-feeds op
+   (`rss-parser` mét `customFields` voor echte artikelfoto's).
+   Kostenbeheersing vóór de AI: `data/seen_links.json` (max 8000) onthoudt
+   alles wat al beoordeeld is; dunne snippets worden verrijkt via
+   `content:encoded` of de artikelpagina; AFINN-sentiment filtert duidelijk
+   negatieve Engelstalige items gratis weg.
+2. **Fase B — gebundelde selectie**: kandidaten gaan per **10 tegelijk** in
+   één call naar Haiku met de itereerbare rubric `backend/selectie-prompt.md`
+   (goed gevoel 0-3, positieve formulering 0-3, relevantie 0-4). Het besluit
+   valt **in code**: som ≥ 8 én alle minima ≥ 2. Elke beslissing (ook
+   afwijzingen, mét reden) gaat naar `data/selectie-log.json` (roulerend,
+   300) én append-only naar `data/selectie-archief.jsonl` (trainingsdata
+   voor een toekomstige embedding-voorfilter/fine-tune). Wijzigt de
+   prompthash, dan herkansen alle eerder afgewezen items automatisch.
+   Circuit breaker: twee mislukte batches op rij stopt de selectie
+   (items blijven herkansbaar).
+3. **Fase C — moeder + vertaal**: per geselecteerd item schrijft Sonnet één
+   Nederlandse moedertekst (titel, korte samenvatting 60-150 w, lange versie
+   tot ±500 w — **bron-getrouw**, nooit meer dan de bron draagt — alt, meta,
+   categorie); Haiku vertaalt die naar de andere vier talen. Alle talen
+   vertellen zo hetzelfde verhaal. **Atomair**: eerst alle 5 talen naar de
+   Supabase-tabel `articles_full` (de echte paywall; premium leest via
+   `get_full_article()`), pas daarna de ~60-woorden-teaser in de publieke
+   `data/news_{taal}.json`. Mislukt iets, dan wacht het hele artikel op de
+   volgende run.
+4. **Dagoverzichten**: `backend/digest.js` schrijft per categorie één
+   artikel over de top-artikelen van gisteren (top 5 op selectiescore,
+   aangevuld tot max 8; minimaal 3), met [n]-verwijzingen naar de besproken
+   artikelen. Zelfde moeder+vertaal-aanpak; tone-of-voice itereerbaar in
+   `backend/digest-prompt.md`; log in `data/digest-log.json`. Digests zijn
+   gewone artikelen (type `digest`) met badge, ruimere gratis teaser
+   (~100 w) en dezelfde paywall.
+5. Geen feed-afbeelding? Dan `og:image` van de artikelpagina, daarna de
    Unsplash-fallback per categorie.
-7. `backend/generate-articles.js` genereert per artikel × taal een statische
+6. `backend/generate-articles.js` genereert per artikel × taal een statische
    pagina `articles/{taal}/{slug}-{id}.html` (canonical, hreflang, OG,
-   JSON-LD NewsArticle). Incrementeel via `articles/manifest.json`;
-   **eenmaal gegenereerde pagina's worden nooit verwijderd** (geïndexeerde
-   URL's blijven bestaan).
-8. `backend/generate-sitemap.js` bouwt `sitemap.xml` (vaste pagina's + alle
-   artikel-URL's uit het manifest) en `robots.txt`.
-9. De Action committet `data/news_*.json`, `data/seen_links.json`,
-   `data/last_run.json` (kostenstatistieken per run), `articles/`,
-   `sitemap.xml` en `robots.txt` terug naar `master` (`[skip ci]`;
-   `git pull --rebase` vóór de push zodat een lange run niet strandt).
+   JSON-LD). Incrementeel via `articles/manifest.json`; **eenmaal
+   gegenereerde pagina's worden nooit verwijderd**.
+7. `backend/generate-marketing-feed.js` schrijft `data/marketing-feed.json`
+   (beste artikelen + digests per taal, met links) — input voor de
+   marketing-agent (zie `MARKETING-PLAN.md`).
+8. `backend/generate-sitemap.js` bouwt `sitemap.xml` + `robots.txt`.
+9. De Action committet alle data/artefacten terug (`[skip ci]`; push naar
+   `$GITHUB_REF_NAME`, dus een dispatch vanaf een testbranch raakt master
+   nooit). `data/last_run.json` bevat de runstatistieken (aiCalls, tokens,
+   perProvider, uitval).
 
 ## Frontend in het kort
 
-- Alle scripts laden met `defer`; de Supabase-client komt uit
-  `js/supabase-init.js` (ná de self-hosted bundle `js/vendor/supabase-js-*.js`
-  — bewust geen CDN met zwevende versie voor het script dat auth-tokens
-  hanteert).
-- Premiumcheck: `checkUser()` leest de `profiles`-tabel (RLS; nooit
-  `user_metadata`). Volledige tekst via de Postgres-functie
-  `get_full_article()` die zelf server-side de premium-status checkt.
-  Op statische artikelpagina's doet `upgradeStaticArticle()` (index.js)
-  hetzelfde client-side.
-- Deelknoppen wijzen naar de statische artikel-URL zodra die bestaat
-  (HEAD-check), anders `?id=`; oude `?id=`-links blijven altijd werken.
-- Cookiebanner wordt op élke pagina dynamisch geïnjecteerd door
-  `checkCookies()` (index.js); Google Analytics laadt pas na acceptatie
-  (Consent Mode default denied).
-- Service worker (`sw.js`): network-first voor HTML (deploys direct
-  zichtbaar), cache-first voor statische assets; geen JSON/premium in cache.
-- Iconen zijn inline SVG (geen Font Awesome/CDN meer).
-- Betaal-abstractie: `startCheckout(plan)` in `js/auth.js` leest
-  `js/betaal-config.js` (provider-switch Lemon/Stripe).
-- Verwijderde pagina's/bestanden: `launch.html`, `data/subscribers.json`,
-  `backend/generate-pdf.js` (was een per ongeluk gecommit shell-fragment).
+- Alle scripts laden met `defer`; Supabase-client uit `js/supabase-init.js`
+  (self-hosted bundle, bewust geen CDN).
+- Premiumcheck: `checkUser()` leest `profiles` (RLS); volledige tekst via
+  `get_full_article()` (server-side premium-check). Statische pagina's:
+  `upgradeStaticArticle()`.
+- Digest-weergave: badge "Dagoverzicht", klikbare bronnenlijst
+  (`.digest-refs`, overleeft de premium-upgrade), eigen AI-disclaimer.
+- Deelknoppen wijzen naar de statische artikel-URL zodra die bestaat.
+- Cookiebanner via `checkCookies()`; GA pas na acceptatie (Consent Mode).
+- Service worker (`sw.js`): network-first voor HTML, cache-first voor de
+  precache-assets; **CACHE_NAME bumpen** bij wijziging aan die assets.
+- Betalingen: `startCheckout(plan)` leest `js/betaal-config.js`
+  (provider `stripe`; Lemon Squeezy is volledig afgebouwd).
 
 ## Lokaal draaien en testen
 
 ```bash
 npm ci
-cp .env.example .env         # MISTRAL_API_KEY + SUPABASE_SERVICE_ROLE_KEY
-npm start                    # = node backend/processor.js (Node 22 aanbevolen)
+cp .env.example .env         # ANTHROPIC_API_KEY + SUPABASE_SERVICE_ROLE_KEY
+npm start                    # = node backend/processor.js (Node 22)
+node backend/digest.js --dry-run   # digest-selectie zonder AI/DB
 node backend/generate-articles.js
+node backend/generate-marketing-feed.js
 node backend/generate-sitemap.js
-python3 -m http.server 8000  # frontend: open http://localhost:8000/index.html
+python3 -m http.server 8000  # frontend: open http://localhost:8000/
 ```
 
 Er zijn geen geautomatiseerde tests (behalve ESLint: `npm run lint`).
-Verifiëren gebeurt in de browser (console + Network-tab) — de statische
-artikelpagina's vereisen een http-server (absolute paden), geen `file://`.
+Let op de parkeer-gate: zonder team-vlag stuurt de homepage je naar
+`binnenkort.html` — klik de teamlink of open `/?team=1`.
 
 ### Benodigde env-vars / secrets
 
 | Variabele | Waar | Zonder deze key |
 |---|---|---|
-| `MISTRAL_API_KEY` | GitHub Secret + lokaal `.env` | Pipeline crasht direct |
-| `SUPABASE_SERVICE_ROLE_KEY` | GitHub Secret + lokaal `.env` | Run breekt bewust hard af (voorkomt permanent verlies van volledige teksten — dat is vóór 2026-09-01 daadwerkelijk gebeurd) |
-| `LEMON_WEBHOOK_SECRET` | Supabase Edge Function env (lemon-webhook) | Webhook weigert alles met een 500 |
-| `STRIPE_WEBHOOK_SECRET` | Supabase Edge Function env (stripe-webhook) — pas bij activatie | idem |
-| `EMAIL_USER` / `EMAIL_PASS` | alleen lokaal, legacy `npm run mail-test` | Alleen relevant voor de oude mailer; Stripe (MoR) verstuurt straks zelf de aankoopbevestigingen |
+| `ANTHROPIC_API_KEY` | GitHub Secret + lokaal `.env` | Adapter meldt "geen AI-provider"; run faalt netjes |
+| `MISTRAL_API_KEY` | optioneel (fallback-sleuf) | Keten heeft dan geen reserveprovider — bewust leeg sinds 2026-09-06 |
+| `SUPABASE_SERVICE_ROLE_KEY` | GitHub Secret + lokaal `.env` | Run breekt bewust hard af (voorkomt permanent verlies van volledige teksten) |
+| `STRIPE_WEBHOOK_SECRET` | Supabase Edge Function env (stripe-webhook) | Webhook weigert alles |
 
 `.env` staat in `.gitignore` en mag nooit gecommit worden.
 
 ## Mappenstructuur
 
-- `*.html` (root) — de vaste pagina's; `index.html` is de nieuwsfeed + SPA-
-  artikeldetail (`?id=`).
-- `articles/{taal}/…` — gegenereerde statische artikelpagina's +
-  `manifest.json` (id → slugs/datum; bron voor de sitemap; nooit snoeien).
-- `index.js` — frontend-kern: taal/i18n, nieuws laden, detailweergave,
-  paywall, statische-pagina-upgrade, delen, cookieconsent, filters,
-  `openCustomerPortal`.
-- `js/auth.js` — Supabase-auth, profiel-UI, promocodes (RPC), `startCheckout`.
-- `js/betaal-config.js` — provider-switch + checkout-/portal-links.
-- `js/supabase-init.js`, `js/vendor/` — clientinit + self-hosted supabase-js.
-- `data/` — `news_{taal}.json` (publieke teasers), `translations.js` (alle
-  UI-teksten, 5 talen), `seen_links.json`, `last_run.json`.
-- `backend/` — `processor.js` (pipeline), `generate-articles.js`,
-  `generate-sitemap.js`, `mailer.js` (legacy), `generate-pdf-en.js`
-  (eenmalig gebruikt voor de voorwaarden-PDF).
-- `supabase/` — `config.toml`, `functions/lemon-webhook/` (live),
-  `functions/stripe-webhook/` (klaar, wacht op activatie),
-  `schema-snapshot.sql` (de beveiligings-SQL zoals live vastgelegd —
-  bijhouden bij elke schemawijziging!).
-- `assets/` — logo's, PWA-iconen (`icon-192/512.png`), T&C-PDF.
+- `*.html` (root) — vaste pagina's; `index.html` = nieuwsfeed + SPA-detail
+  (`?id=`) + parkeer-gate; `binnenkort.html` = parkeerpagina.
+- `articles/{taal}/…` — statische artikelpagina's + `manifest.json`
+  (nooit snoeien).
+- `index.js` — frontend-kern; `js/auth.js` — auth/profiel/promocodes/
+  checkout; `js/betaal-config.js` — provider-switch.
+- `data/` — `news_{taal}.json`, `translations.js` (5 talen),
+  `seen_links.json`, `last_run.json`, `selectie-log.json`,
+  `selectie-archief.jsonl`, `digest-log.json`, `marketing-feed.json`.
+- `backend/` — `processor.js` (pipeline), `ai-adapter.js` (AI + fallback),
+  `selectie-batch.js`, `selectie-prompt.md`, `digest.js`,
+  `digest-prompt.md`, `generate-articles.js`, `generate-marketing-feed.js`,
+  `generate-sitemap.js`, `mailer.js` (legacy).
+- `supabase/` — `config.toml`, `functions/stripe-webhook/` (live),
+  `schema-snapshot.sql` (bijhouden bij elke schemawijziging!).
+- `assets/` — logo's, PWA-iconen, T&C-PDF.
 
 ## Git-workflow
 
-Per verbeterfase een eigen branch; `master` = direct live (GitHub Pages):
-
-```bash
-git checkout -b fase-X-naam
-# bouwen, testen, committen (pas na groene tests)
-git checkout master && git pull --rebase && git merge fase-X-naam
-git push origin master   # = deploy
-```
-
-Wijzigingen aan een Supabase-function zijn pas live ná een aparte deploy
-(Management-API of `supabase functions deploy <naam> --no-verify-jwt`) —
-git en live kunnen anders uit sync raken; check dat bij twijfel eerst.
+Zie `CLAUDE.md`: branch per klus (`maarten/<klus>` of `erik/<klus>`),
+`master` = direct live; backend-/betaal-/Supabase-wijzigingen via PR met de
+ander als meekijker. Supabase-functions zijn pas live ná een aparte deploy
+(Management-API) — check bij twijfel of git en live in sync zijn.
 
 ## Openstaande punten
 
-Zie `BRIGHTNEWS-OVERDRACHT-FABLE.md` voor het actuele, volledige overzicht
-(o.a. Stripe-activatie via `STRIPE-MIGRATIE.md`, sitemap indienen bij Google
-Search Console, promocode-hardening, grants-verharding, feed-gezondheid).
+Zie `BRIGHTNEWS-OVERDRACHT-FABLE.md` (actueel en volledig) en
+`MARKETING-PLAN.md` (route naar lancering, break-even ≈ 20-28 abonnees).

@@ -2,7 +2,31 @@
 
 ---
 
-## ⚡ NIEUW Spoor 0 — Anthropic-account (2026-09-05, ±15 min, dit blokkeert alles)
+## ✅ Spoor 0 — Anthropic-account: AFGEROND (2026-09-05, 23:46)
+
+Key staat als secret, de nieuwe Claude-pipeline is gemerged en draait: de
+eerste twee runs publiceerden 32 artikelen en de selectie is samen met Erik
+geijkt (drempel nu 8). Je hoeft hier niets meer te doen.
+
+**Wat je nu wél kunt doen (in deze volgorde):**
+1. **Bekijk de site** via de teamlink op brightnews.online (knop
+   "Teamtoegang" op de parkeerpagina) — de nieuwe artikelen staan erop, en
+   vanaf de nachtrun verschijnen de eerste **dagoverzichten** per categorie
+   (badge "Dagoverzicht", met bronnenlijst). Feedback welkom, zeker op de
+   digest-toon: die stel je bij in `backend/digest-prompt.md`.
+2. **Socials claimen** (stond al op je lijst): de handles
+   facebook/instagram.com/brightnews.online en
+   linkedin.com/company/brightnews-online — nodig vóór de marketing-agent
+   gebouwd wordt. Zie `MARKETING-PLAN.md` voor het hele plan.
+3. **Front-end-lijst**: `MAARTEN-FRONTEND-REVIEW.md` — alles daarin kan
+   gewoon, de site is toch geparkeerd. Let op de werkafspraken in
+   `CLAUDE.md` (o.a. de parkeer-gate in index.html laten staan).
+4. **Claude-abonnement** voor jezelf: overleg met Erik welk plan past
+   (telt mee in de break-even-som).
+5. **Mistral** heb je niet meer nodig — account mag blijven of weg,
+   niets van de site hangt er nog aan.
+
+## (was) Spoor 0 — Anthropic-account (2026-09-05, ±15 min)
 
 De site is tijdelijk geparkeerd (publiek ziet `binnenkort.html`; teamtoegang
 via de link op die pagina). We zijn overgestapt van Mistral naar Claude
