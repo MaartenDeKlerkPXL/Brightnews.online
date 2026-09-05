@@ -44,5 +44,5 @@ Inhoud — harde regels:
 De berichten:
 {ITEMS}
 
-Antwoord in JSON:
+Antwoord UITSLUITEND met geldig JSON — alinea-scheidingen binnen "tekst" schrijf je als \n\n (escaped), nooit als echt regeleinde:
 {"titel": "…", "tekst": "alinea's gescheiden door \n\n, met [n]-verwijzingen", "meta_d": "SEO-metabeschrijving van maximaal 155 tekens"}

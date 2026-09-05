@@ -20,7 +20,7 @@ require('dotenv').config();
 // digest wordt één keer in het Nederlands geschreven (rol 'schrijven') en
 // daarna vertaald (rol 'vertalen') — alle talen vertellen zo hetzelfde
 // verhaal en vertalen is goedkoper dan vijf keer genereren.
-const { aiCall } = require('./ai-adapter');
+const { aiCall, verwerkAIResponse } = require('./ai-adapter');
 
 const TALEN = ['nl', 'en', 'de', 'fr', 'es'];
 const TAAL_NAMEN = { nl: 'Nederlands', en: 'Engels', de: 'Duits', fr: 'Frans', es: 'Spaans' };
@@ -46,13 +46,7 @@ const PROMPT_HASH = crypto.createHash('sha256').update(promptSjabloon).digest('h
 
 async function wacht(ms) { return new Promise(r => setTimeout(r, ms)); }
 
-function verwerkAIResponse(ruw) {
-    try {
-        return JSON.parse(String(ruw).replace(/^```(json)?/m, '').replace(/```$/m, '').trim());
-    } catch {
-        return null;
-    }
-}
+// verwerkAIResponse komt uit ai-adapter.js (robuuste drietrapse parser).
 
 function maakTeaser(tekst, maxWoorden) {
     if (!tekst) return '';
@@ -196,7 +190,7 @@ async function main() {
                     prompt: `Vertaal dit BrightNews-dagoverzicht van het Nederlands naar het ${TAAL_NAMEN[lang]}. Vertaal natuurlijk en journalistiek; voeg NIETS toe en laat NIETS weg. Behoud de alinea-indeling (lege regels) en laat de verwijzingen tussen blokhaken zoals [1] exact staan. "meta_d" blijft maximaal 155 tekens.
 INVOER:
 ${JSON.stringify({ titel: perTaal.nl.titel, tekst: perTaal.nl.tekst, meta_d: perTaal.nl.meta_d })}
-Antwoord UITSLUITEND in JSON: {"titel": "..", "tekst": "..", "meta_d": ".."}`,
+Antwoord UITSLUITEND met geldig JSON — alinea-scheidingen binnen "tekst" schrijf je als \\n\\n, nooit als echt regeleinde: {"titel": "..", "tekst": "..", "meta_d": ".."}`,
                 });
                 const data = verwerkAIResponse(antwoord.tekst);
                 const woorden = telWoorden(data?.tekst);

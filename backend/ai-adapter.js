@@ -111,4 +111,44 @@ async function aiCall({ rol, prompt }) {
     throw laatsteFout;
 }
 
-module.exports = { aiCall, KETEN, _setMockHandler };
+// Robuuste JSON-parser voor modelantwoorden (herijking ronde 2, 2026-09-06):
+// in de eerste Claude-run strandde ~30% van de schrijfcalls op ongeldig JSON
+// — vooral letterlijke regeleindes bínnen strings (de alinea's van "lang")
+// en losse tekst rond het object. Drie trappen: kaal parsen → eerste
+// {...}-blok → regeleindes binnen strings escapen en opnieuw.
+function repareerRegeleindes(s) {
+    let uit = '';
+    let inString = false;
+    let escaped = false;
+    for (const ch of s) {
+        if (!inString) {
+            if (ch === '"') inString = true;
+            uit += ch;
+            continue;
+        }
+        if (escaped) { uit += ch; escaped = false; continue; }
+        if (ch === '\\') { uit += ch; escaped = true; continue; }
+        if (ch === '"') { inString = false; uit += ch; continue; }
+        if (ch === '\n') { uit += '\\n'; continue; }
+        if (ch === '\r') { continue; }
+        if (ch === '\t') { uit += '\\t'; continue; }
+        uit += ch;
+    }
+    return uit;
+}
+
+function verwerkAIResponse(ruw) {
+    const tekst = String(ruw ?? '').replace(/```(json)?/g, '').trim();
+    try { return JSON.parse(tekst); } catch { /* volgende trap */ }
+    const start = tekst.indexOf('{');
+    const eind = tekst.lastIndexOf('}');
+    if (start < 0 || eind <= start) return null;
+    const kern = tekst.slice(start, eind + 1);
+    try { return JSON.parse(kern); } catch { /* volgende trap */ }
+    try { return JSON.parse(repareerRegeleindes(kern)); } catch (err) {
+        console.error('❌ JSON Parse Fout (na reparatie):', err.message);
+        return null;
+    }
+}
+
+module.exports = { aiCall, KETEN, verwerkAIResponse, _setMockHandler };

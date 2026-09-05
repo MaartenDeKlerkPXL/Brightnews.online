@@ -6,7 +6,7 @@ require('dotenv').config();
 // Claude-migratie 2026-09-05: alle AI-verkeer loopt via de adapter met
 // fallback-keten (ai-adapter.js); de selectie gaat gebundeld per 10 items
 // (selectie-batch.js). Zie BRIGHTNEWS-OVERDRACHT-FABLE.md, sessie 6/7.
-const { aiCall } = require('./ai-adapter');
+const { aiCall, verwerkAIResponse } = require('./ai-adapter');
 const { BATCH_GROOTTE, bouwBatchPrompt, verwerkBatchScores } = require('./selectie-batch');
 
 // customFields is essentieel: zonder deze mapping leest rss-parser
@@ -193,7 +193,7 @@ Lever in het Nederlands:
 - "meta_d": SEO-metabeschrijving van maximaal 155 tekens
 - "meta_k": relevante keywords, kommagescheiden
 - "categorie": precies één uit: ${CATEGORIEEN.join(', ')}
-Antwoord UITSLUITEND in JSON: {"titel": "..", "kort": "..", "lang": "..", "alt": "..", "meta_d": "..", "meta_k": "..", "categorie": ".."}`,
+Antwoord UITSLUITEND met geldig JSON — alinea-scheidingen binnen een tekstveld schrijf je als \\n\\n, nooit als echt regeleinde: {"titel": "..", "kort": "..", "lang": "..", "alt": "..", "meta_d": "..", "meta_k": "..", "categorie": ".."}`,
     });
     statistieken.aiCalls++;
     statistieken.aiTokens += antwoord.tokens;
@@ -216,7 +216,7 @@ async function vertaalMoedertekst(moeder, lang, statistieken) {
         prompt: `Vertaal de onderstaande artikelvelden van BrightNews van het Nederlands naar het ${TAAL_NAMEN[lang]}. Vertaal natuurlijk en journalistiek; voeg NIETS toe en laat NIETS weg. Behoud in "lang" de alinea-indeling (lege regels) en laat verwijzingen tussen blokhaken zoals [1] exact staan. De titel bevat geen woorden langer dan 24 letters; "meta_d" blijft maximaal 155 tekens.
 INVOER:
 ${JSON.stringify(invoer)}
-Antwoord UITSLUITEND in JSON met exact dezelfde velden: {"titel": "..", "kort": "..", "lang": "..", "alt": "..", "meta_d": "..", "meta_k": ".."}`,
+Antwoord UITSLUITEND met geldig JSON met exact dezelfde velden — alinea-scheidingen binnen een tekstveld schrijf je als \\n\\n, nooit als echt regeleinde: {"titel": "..", "kort": "..", "lang": "..", "alt": "..", "meta_d": "..", "meta_k": ".."}`,
     });
     statistieken.aiCalls++;
     statistieken.aiTokens += antwoord.tokens;
@@ -335,15 +335,7 @@ const categoryFallbacks = {
     ]
 };
 
-function verwerkAIResponse(rawText) {
-    try {
-        const cleanJson = rawText.replace(/```json/g, "").replace(/```/g, "").trim();
-        return JSON.parse(cleanJson);
-    } catch (err) {
-        console.error("❌ JSON Parse Fout:", err.message);
-        return null;
-    }
-}
+// verwerkAIResponse komt uit ai-adapter.js (robuuste drietrapse parser).
 
 async function processNews() {
     console.log("🚀 Starten met nieuws ophalen...");

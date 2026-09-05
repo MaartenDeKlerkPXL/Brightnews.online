@@ -29,6 +29,8 @@ KERNREGEL vóór alles: kijk naar wat de kern van het verhaal IS, niet naar de a
 WIJS ALTIJD AF met alle scores 0, ongeacht hoe positief de toon lijkt:
 - items waarvan de kern over oorlog, geweld, misdaad, rampen, ongelukken of overlijden gaat (let op de kernregel hierboven: redding of herstel als kern = wél beoordelen)
 - commerciële promotie, productlanceringen, kortingsacties, bedrijfs- of beursnieuws zonder bredere maatschappelijke betekenis
+- producttests, reviews en gadget-, voertuig- of consumententech-nieuws, hoe hip of vernuftig ook (een coole camper, een budgetscooter of een smart-home-kit is óók productpromotie) — tenzij de kern een maatschappelijke doorbraak is die levens verbetert
+- verzamel- en weekoverzichtitems van andere media ("good news this week", "what went right", podcast-transcripten en andere linklijstjes): BrightNews maakt eigen dagoverzichten; alleen losse, échte verhalen tellen
 - listicles en zelfhulp-clickbait ("5 tips om…", "zo word je…", "dit moet je weten over…"), horoscopen, roddel- en celebritynieuws
 - politiek gekleurde of polariserende onderwerpen
 - recepten, reisaanbiedingen en andere puur consumptieve content zonder verhaal
@@ -38,6 +40,7 @@ IJKVOORBEELDEN (zo scoor je):
 - "Zeldzame zeeschildpad, stervende op Brits strand aangetroffen, na revalidatie 5000 mijl teruggevlogen en vrijgelaten" → gevoel 3, formulering 3, relevantie 3, besluit ja (redding als kern; de nare aanleiding maakt dit géén ramp-item)
 - "Pokémonfans zamelen samen kaarten in voor kind dat werd opgelicht" → gevoel 3, formulering 3, relevantie 2, besluit ja (gemeenschapszin als kern, persoonlijk herkenbaar; de oplichting is slechts de aanleiding)
 - "Techbedrijf kondigt nieuwe laptop aan die concurrentie aangaat" → alle scores 0, besluit nee (productlancering, afwijslijst)
+- "Kia werkt aan de volgende generatie coole campers" → alle scores 0, besluit nee (voertuig-/productnieuws; vernuftig of hip maakt het nog geen maatschappelijk verhaal)
 
 Gebruik de volledige schaal: een warm, positief verhaal hoort hoge scores te krijgen; alle scores 0 is uitsluitend voor items uit de afwijslijst. Twijfel je bij één criterium tussen twee scores, kies dan de lagere van die twee — maar laat twijfel over één criterium de andere scores niet omlaag trekken.
 
