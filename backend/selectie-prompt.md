@@ -44,7 +44,7 @@ IJKVOORBEELDEN (zo scoor je):
 
 Gebruik de volledige schaal: een warm, positief verhaal hoort hoge scores te krijgen; alle scores 0 is uitsluitend voor items uit de afwijslijst. Twijfel je bij één criterium tussen twee scores, kies dan de lagere van die twee — maar laat twijfel over één criterium de andere scores niet omlaag trekken.
 
-Werk per item in deze volgorde: score eerst elk criterium afzonderlijk met de ankers hierboven, en leid dáárna het besluit af: "ja" als gevoel ≥ 2 EN formulering ≥ 2 EN relevantie ≥ 2 EN de som ≥ 7, anders "nee". De doorslaggevende beslissing wordt buiten jou om uit je scores berekend — je scores zijn dus leidend, je besluit is de controle.
+Werk per item in deze volgorde: score eerst elk criterium afzonderlijk met de ankers hierboven, en leid dáárna het besluit af: "ja" als gevoel ≥ 2 EN formulering ≥ 2 EN relevantie ≥ 2 EN de som ≥ 8, anders "nee". De doorslaggevende beslissing wordt buiten jou om uit je scores berekend — je scores zijn dus leidend, je besluit is de controle.
 
 Antwoord UITSLUITEND met dit JSON-object, zonder andere tekst, met exact één element per item en het itemnummer als "nr":
 {"items": [{"nr": 1, "gevoel": 0, "formulering": 0, "relevantie": 0, "besluit": "ja of nee", "reden": "één korte, concrete zin waarom"}]}

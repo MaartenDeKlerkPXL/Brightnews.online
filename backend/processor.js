@@ -137,7 +137,11 @@ if (!supabaseAdmin) {
 // mét deelscores en reden, ook van de afwijzingen.
 // De drempels hieronder zijn de code-kant van dezelfde regel als in de prompt
 // (de som wordt hier zelf berekend; het model hoeft niet te kunnen rekenen).
-const SELECTIE_DREMPEL_TOTAAL = 7;
+// 8 sinds 2026-09-06 (besluit Erik, herijking ronde 2): onder Haiku/v7
+// bleek 7 vrijwel uitsluitend de twijfelband (politiek, regelgeving,
+// gidsjes); de parels zitten op 8-10. Zelfde beeld als onder
+// mistral-medium, nu bevestigd met een A/B op identieke items.
+const SELECTIE_DREMPEL_TOTAAL = 8;
 const SELECTIE_MINIMA = { gevoel: 2, formulering: 2, relevantie: 2 };
 const SELECTIE_LOG_MAX = 300;
 const selectiePromptSjabloon = require('fs').readFileSync(
