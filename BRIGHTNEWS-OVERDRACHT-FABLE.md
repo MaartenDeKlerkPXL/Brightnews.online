@@ -266,7 +266,7 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
    de homepage (24→0 op 150 kaarten); checkout-UX (knoppen klikbaar met
    melding, profiel#registreren, placeholder, autocomplete). Repo heeft nu
    CLAUDE.md (2-dev-werkwijze Maarten+Erik), MAARTEN-FRONTEND-REVIEW.md en
-   supabase/testers-promocode.sql (ZONNETJE30, wacht op go).
+   supabase/testers-promocode.sql (ZONNETJE30 — live sinds 2026-09-05, 31 dagen Glow, max 35, geldig t/m 15 okt).
 4. Reviewer een herbeoordeling laten doen van de live site.
 5. Onderhoudslijst (niet blokkerend): grants-verharding op de bestaande
    tabellen (revoke, nu inert door RLS — eerst met Maarten afstemmen; de
