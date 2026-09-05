@@ -231,10 +231,22 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
 0. **Sessie 6 (2026-09-05) — incident + nieuwbouw, beide open**:
    a. **Mistral-429-incident**: elke call faalt sinds 2026-09-04 04:10 UTC,
       al bij de eerste call van de run (27–30 min churn, "success" met
-      aiCalls 0). Geen pacing-kwestie (fase J) maar accountniveau: tegoed/
-      maandcap/key. Account is van **Maarten** → console.mistral.ai checken
-      (usage, limits, billing). Geen dataverlies: mislukte items blijven
-      buiten seenLinks en herkansen vanzelf.
+      aiCalls 0). Geen dataverlies: mislukte items blijven buiten seenLinks
+      en herkansen vanzelf. **Diagnose afgerond 2026-09-05 (avond)**: in
+      Maartens admin-console is alles gezond (tegoed $1,78/$10, key
+      "Brightnews" actief, 20k TPM/1 RPS per model, geen werkruimte-limiet)
+      én de canary-testrun vanaf de fase-O-branch bewees dat **mistral-small
+      óók 429 geeft → account-BREED geknepen**, niet model- of TPM-gebonden.
+      Hoofdverdachte: Mistrals platformombouw (Vibe/Free) — **API
+      pay-as-you-go staat UIT** (admin.mistral.ai/subscription, knop
+      "Inschakelen"); vermoedelijk knijpt Free-zonder-PAYG sinds ~4 sep
+      alle API-verkeer serverside, wat het dashboard ook toont. **Actie
+      Maarten**: PAYG inschakelen (betaalmiddel vereist; verbruik was
+      ~$0,60/dag, met digests/lange versies richting $15–25/mnd — eerste
+      $10/mnd blijft inbegrepen volgens de abonnementspagina); helpt dat
+      niet, dan Mistral-support. Testrun-bewijs: Action-run 33980994024
+      (breaker stopte na 3 fouten, 46 items netjes overgeslagen, run 2 min
+      i.p.v. 30+).
    b. **PR #2** (`erik/fase-o-429-circuitbreaker`): na 3 selectie-fouten op
       rij stopt de run; tellers selectieFouten/selectieOvergeslagen +
       canary-call naar mistral-small (canarySmall in last_run.json:
