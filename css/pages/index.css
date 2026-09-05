@@ -199,3 +199,40 @@
         padding: 10px 0;
     }
 }
+/* Dagoverzicht (digest, 2026-09-05): badge op de kaart + bronnenlijst
+   in de detailweergave. Eén groen (#32CD32) conform reviewbesluit. */
+.card-badge {
+    display: inline-block;
+    align-self: flex-start;
+    background: var(--bright-green, #32CD32);
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 999px;
+    margin-bottom: 8px;
+}
+
+.digest-refs {
+    margin-top: 28px;
+    padding: 18px 22px;
+    background: #f5faf5;
+    border-left: 4px solid var(--bright-green, #32CD32);
+    border-radius: 6px;
+}
+
+.digest-refs h3 {
+    margin: 0 0 10px;
+    font-size: 1.05rem;
+}
+
+.digest-refs ol {
+    margin: 0;
+    padding-left: 22px;
+}
+
+.digest-refs li {
+    margin-bottom: 6px;
+}

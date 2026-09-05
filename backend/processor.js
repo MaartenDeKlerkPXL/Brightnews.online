@@ -71,7 +71,7 @@ function decodeerEntities(s) {
 // pagina op als input voor selectie én samenvatting. Zelfde UA/timeout-
 // aanpak als haalOgImage; mislukken is nooit fataal (dan blijft de snippet).
 const DUNNE_SNIPPET_DREMPEL = 200;
-async function haalArtikelTekst(pageUrl) {
+async function haalArtikelTekst(pageUrl, maxLen = 1200) {
     try {
         const ctrl = new AbortController();
         const timer = setTimeout(() => ctrl.abort(), 8000);
@@ -89,7 +89,7 @@ async function haalArtikelTekst(pageUrl) {
                 .replace(/\s+/g, ' ').trim();
             // korte <p>'s zijn vrijwel altijd navigatie/bijschriften
             if (tekst.length >= 80) alineas.push(tekst);
-            if (alineas.join(' ').length > 1200) break;
+            if (alineas.join(' ').length > maxLen) break;
         }
         let tekst = alineas.join(' ');
         if (tekst.length < 200) {
@@ -97,7 +97,7 @@ async function haalArtikelTekst(pageUrl) {
                 || html.match(/<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:description["']/i);
             if (og) tekst = `${decodeerEntities(og[1])} ${tekst}`.trim();
         }
-        tekst = tekst.slice(0, 1200).trim();
+        tekst = tekst.slice(0, maxLen).trim();
         return tekst.length >= 80 ? tekst : null;
     } catch {
         return null;
@@ -232,6 +232,32 @@ async function selecteerItem(item, statistieken) {
             reden: String(data.reden ?? '').slice(0, 200),
         },
     };
+}
+
+// Langere premium-versie (fase 2026-09-05): gratis blijft op de 60-woorden-
+// teaser, premium krijgt tot ~500 woorden — maar nooit langer dan de bron
+// draagt (zelfde bron-getrouwheidsbesluit als de korte samenvatting; bij te
+// weinig brontekst blijft de korte samenvatting de premium-tekst). Eén call
+// per taal: 5 × 500 woorden past niet betrouwbaar in één JSON-antwoord.
+const TAAL_NAMEN = { nl: 'Nederlands', en: 'Engels', de: 'Duits', fr: 'Frans', es: 'Spaans' };
+async function maakLangeVersie(item, lang, statistieken) {
+    const antwoord = await mistralMetRetry({
+        model: 'mistral-small-latest',
+        messages: [{
+            role: 'user',
+            content: `Schrijf in het ${TAAL_NAMEN[lang]} een uitgebreide, feitelijke, journalistieke samenvatting van dit nieuwsitem: "${item.title} - ${item.contentSnippet}".
+Gebruik UITSLUITEND wat in de titel en tekst hierboven staat. Verzin of veronderstel NIETS: geen extra feiten, namen, cijfers, citaten, achtergronden of gevolgen die er niet letterlijk in staan. Schrijf zoveel als de bron draagt, tot maximaal ±500 woorden — liever korter en bron-getrouw dan aangevuld met verzinsels. Verdeel de tekst in alinea's, gescheiden door een lege regel.
+Antwoord in JSON: {"tekst": "..."}`,
+        }],
+        responseFormat: { type: 'json_object' },
+    }, 2);
+    statistieken.aiCalls++;
+    statistieken.aiTokens += antwoord.usage?.totalTokens ?? 0;
+    const data = verwerkAIResponse(antwoord.choices[0].message.content);
+    const tekst = String(data?.tekst || '').trim();
+    // Korter dan de korte samenvatting kan legitiem niet: dan is de respons
+    // onbruikbaar en valt full_text terug op de korte samenvatting.
+    return tekst.split(/\s+/).length >= 80 ? tekst : null;
 }
 
 function maakTeaser(tekst, maxWoorden = 60) {
@@ -407,6 +433,7 @@ async function processNews() {
         feedFouten: 0,
         selectieFouten: 0,
         selectieOvergeslagen: 0,
+        langeVersies: 0,
     };
 
     // Circuit breaker voor de selectiestap: op 2026-09-04/05 gaf Mistral op
@@ -449,7 +476,7 @@ async function processNews() {
                 if (item.contentSnippet.length < DUNNE_SNIPPET_DREMPEL && item.contentEncoded) {
                     const encodedTekst = schoonSnippet(
                         decodeerEntities(String(item.contentEncoded).replace(/<[^>]+>/g, ' '))
-                    ).replace(/\s+/g, ' ').slice(0, 1500).trim();
+                    ).replace(/\s+/g, ' ').slice(0, 4000).trim();
                     if (encodedTekst.length > item.contentSnippet.length) {
                         item.contentSnippet = encodedTekst;
                     }
@@ -508,6 +535,9 @@ async function processNews() {
                     const selectie = await selecteerItem(item, statistieken);
                     selectieFoutenOpRij = 0;
                     if (selectie.log) nieuweSelectieLogs.push(selectie.log);
+                    // Score bewaren voor de dagelijkse digest (top-selectie
+                    // per categorie rangschikt op deze selectiescore).
+                    item.selectieScore = selectie.log?.totaal ?? null;
                     if (!selectie.geschikt) {
                         if (!selectie.herkansing) {
                             seenLinks[item.link] = { s: 'sel', t: new Date().toISOString(), p: SELECTIE_PROMPT_HASH };
@@ -539,6 +569,18 @@ async function processNews() {
                         }
                     }
                     continue;
+                }
+
+                // Geselecteerd → ruimere brontekst ophalen voor de langere
+                // premium-samenvatting (tot ~500 woorden, fase 2026-09-05).
+                // Alleen voor geaccepteerde items, dus hooguit een paar
+                // extra fetches per run; mislukken is nooit fataal.
+                if (item.contentSnippet.length < 3000) {
+                    const ruimereTekst = await haalArtikelTekst(item.link, 4000);
+                    if (ruimereTekst && ruimereTekst.length > item.contentSnippet.length) {
+                        item.contentSnippet = ruimereTekst;
+                        statistieken.tekstOpgehaald++;
+                    }
                 }
 
                 // Afbeelding uit de feed halen. Volgorde: media:content →
@@ -650,13 +692,31 @@ async function processNews() {
                         // online waarvan de volledige tekst nergens bewaard is.
                         // Let op: supabase-js gooit niet bij een DB-fout maar geeft
                         // { error } terug; die wordt hier dus expliciet gecheckt.
+                        // Langere premium-versie per taal, alleen als er
+                        // genoeg brontekst is (anders ís de korte samenvatting
+                        // al alles wat de bron draagt). Mislukt een taal, dan
+                        // valt die taal terug op de korte samenvatting —
+                        // het artikel blijft compleet.
+                        const langeVersies = {};
+                        if (item.contentSnippet.length >= 1200) {
+                            for (const lang of Object.keys(languages)) {
+                                try {
+                                    await wacht(1000);
+                                    langeVersies[lang] = await maakLangeVersie(item, lang, statistieken);
+                                    if (langeVersies[lang]) statistieken.langeVersies++;
+                                } catch (langErr) {
+                                    console.warn(`⚠️ Lange versie mislukt (${lang}): ${langErr.message} — korte samenvatting gebruikt.`);
+                                }
+                            }
+                        }
+
                         let opslaanGelukt = true;
                         for (const lang of Object.keys(languages)) {
                             try {
                                 const { error } = await supabaseAdmin.from('articles_full').upsert({
                                     id: String(articleId),
                                     lang,
-                                    full_text: data[lang].s
+                                    full_text: langeVersies[lang] || data[lang].s
                                 }, { onConflict: 'id,lang' });
                                 if (error) throw new Error(error.message);
                             } catch (err) {
@@ -684,7 +744,8 @@ async function processNews() {
                                 source: feedInfo.name,
                                 image: finalImage,
                                 date: new Date().toISOString(),
-                                category: category
+                                category: category,
+                                score: item.selectieScore ?? null
                             });
                             if (languages[lang].length > 150) languages[lang].pop();
                         }

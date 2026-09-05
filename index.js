@@ -210,12 +210,16 @@ async function upgradeStaticArticle() {
 
     const bodyEl = host.querySelector('[data-role="body"]');
     if (!bodyEl) return;
+    // Dagoverzicht-pagina's hebben een bronnenlijst in de body; die moet de
+    // premium-upgrade overleven (de [n]-verwijzingen slaan erop terug).
+    const refsEl = bodyEl.querySelector('.digest-refs');
     bodyEl.innerHTML = '';
     String(volledigeTekst).split(/\n+/).map(s => s.trim()).filter(Boolean).forEach(alinea => {
         const p = document.createElement('p');
         p.textContent = alinea;
         bodyEl.appendChild(p);
     });
+    if (refsEl) bodyEl.appendChild(refsEl);
     host.querySelector('.paywall-overlay')?.remove();
 }
 
@@ -365,7 +369,9 @@ async function toonDetail(id) {
         // verdient de premium-CTA; met alleen de >60-woordencheck kregen
         // nieuwe (bron-ingekorte) artikelen nooit een upgrade-knop te zien.
         const isIngekort = woorden.length > 60 || artikel.summary.trim().endsWith('...');
-        if (woorden.length > 60) {
+        // Dagoverzichten (type 'digest') hebben bewust een ruimere teaser
+        // (~100 woorden, server-side ingekort): niet opnieuw afkappen.
+        if (woorden.length > 60 && artikel.type !== 'digest') {
             displayContent = woorden.slice(0, 60).join(' ') + "...";
         }
         if (isIngekort) {
@@ -450,13 +456,39 @@ async function toonDetail(id) {
         bodyEl.appendChild(p);
     });
 
+    // Dagoverzicht: klikbare lijst van de besproken artikelen ([n]-verwijzingen
+    // in de tekst slaan hierop terug). Voor iedereen zichtbaar — dit is de
+    // doorklik naar de losse artikelen. Via createElement/textContent (XSS-veilig).
+    if (Array.isArray(artikel.refs) && artikel.refs.length) {
+        const refsWrap = document.createElement('div');
+        refsWrap.className = 'digest-refs';
+        const kop = document.createElement('h3');
+        kop.textContent = getT('digest_refs_title');
+        refsWrap.appendChild(kop);
+        const lijst = document.createElement('ol');
+        artikel.refs.forEach(ref => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.href = `/?id=${encodeURIComponent(ref.id)}`;
+            a.textContent = ref.title;
+            li.appendChild(a);
+            lijst.appendChild(li);
+        });
+        refsWrap.appendChild(lijst);
+        bodyEl.appendChild(refsWrap);
+    }
+
     // AI-transparantie: bron zichtbaar per artikel (werkt voor zowel de oude
     // volledige-tekst-artikelen als de nieuwe teaser/volledige-tekst-structuur,
     // want source/link staan in beide gevallen al op het artikel-object).
     const disclaimerEl = detailView.querySelector('[data-role="ai-disclaimer"]');
     if (disclaimerEl) {
         const bron = artikel.source || getT('unknown_source');
-        disclaimerEl.textContent = getT('ai_summary_notice').replace('{source}', bron) + ' ';
+        // Dagoverzichten hebben geen externe bron; de bronvermelding zit in
+        // de artikelenlijst hierboven.
+        disclaimerEl.textContent = (artikel.type === 'digest'
+            ? getT('digest_notice')
+            : getT('ai_summary_notice').replace('{source}', bron)) + ' ';
         if (artikel.link && /^https?:\/\//i.test(artikel.link)) {
             const link = document.createElement('a');
             link.href = artikel.link;
@@ -594,6 +626,13 @@ function renderLijst(artikelen) {
 
         const cardContent = document.createElement('div');
         cardContent.className = 'card-content';
+
+        if (artikel.type === 'digest') {
+            const badge = document.createElement('span');
+            badge.className = 'card-badge';
+            badge.textContent = getT('digest_badge');
+            cardContent.appendChild(badge);
+        }
 
         const titleEl = document.createElement('h3');
         titleEl.textContent = artikel.title;

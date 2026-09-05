@@ -44,6 +44,15 @@ jobs:
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: node backend/processor.js
 
+      - name: 📰 Dagoverzichten per categorie (digest)
+        # Een mislukte digest mag nooit de nieuws-update (en datacommit) van
+        # de processor-stap laten sneuvelen; de volgende run herkanst vanzelf.
+        continue-on-error: true
+        env:
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: node backend/digest.js
+
       - name: 📄 Statische artikelpagina's genereren
         run: node backend/generate-articles.js
 
@@ -58,7 +67,7 @@ jobs:
           # Alleen de nieuws-JSON's plus de gegenereerde sitemap/robots.txt —
           # bewust niet data/*.json, zodat een eventueel ander databestand
           # nooit per ongeluk publiek meegecommit wordt.
-          git add data/news_*.json data/seen_links.json data/last_run.json data/selectie-log.json articles sitemap.xml robots.txt
+          git add data/news_*.json data/seen_links.json data/last_run.json data/selectie-log.json data/digest-log.json articles sitemap.xml robots.txt
 
           # Controleer of er echt iets veranderd is voor we committen
           if git diff --quiet && git diff --staged --quiet; then
