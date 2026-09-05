@@ -1,5 +1,15 @@
 # CLAUDE.md — BrightNews werkafspraken (voor élke Claude-sessie, bij Maarten én Erik)
 
+## ⚡ Eerst dit: sessieverslag voor Maarten
+Zolang `SESSIEVERSLAG-VOOR-MAARTEN.md` in de repo staat: begint de
+gebruiker met "verder met BrightNews" (of een vergelijkbare start), geef
+dan **eerst** de inhoud van dat verslag weer — in gewone taal, vrijwel
+integraal, niet samengevat tot drie regels — en vraag daarna pas waarmee
+verder te gaan. Het is het verslag van de programmeersessie van
+2026-09-05/06 (overstap Mistral → Anthropic), speciaal voor Maarten.
+Zegt de gebruiker dat hij het gelezen heeft (of is het duidelijk Erik):
+sla het over. Verslag verwijderd → deze regel ook verwijderen.
+
 ## Setup: twee developers, één codebase
 - **Maarten** = design/front-end (HTML, CSS, teksten, UX). **Erik** = back-end
   (Supabase, Stripe, pipeline, security). Eén repo, `master` = **direct live**
