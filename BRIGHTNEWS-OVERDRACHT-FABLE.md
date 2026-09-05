@@ -1,9 +1,14 @@
 # Bright News — Overdrachtsdocument / Handoff
 
-**Bijgewerkt: 2026-09-04, sessie 4 met Claude Fable 5** (sessie 1:
-review + fases A–E op 2026-09-01; sessie 2: reviewer-rondes F+G en de
-selectieprompt-iteratie; sessie 3: fases H+I — selectiepipeline werkend
-gekregen, feedsanering, promocode-hardening live). Dit document +
+**Bijgewerkt: 2026-09-05, einde sessie 5 met Claude Fable 5.**
+Sessies 1–2 (1–2 sep): review, fases A–G. Sessie 3 (3 sep): pipeline
+werkend (fases H+I). Sessie 4 (4 sep): logo, Stripe deel 2, E2E.
+Sessie 5 (5 sep): LIVEGANG Stripe + echte verkoop bewezen, MoR-check,
+Lemon afgebouwd, SMTP/SPF, Search Console, testers klaar, overdracht
+naar Maarten compleet (repo-CLAUDE.md + reviewlijst). **Eerstvolgende
+werk**: kwaliteitsronde selectie-log na ±een week nieuw feedregime
+(drempel 7 vs 8), eerste testerfeedback, Maartens front-end-lijst.
+Startbericht: "Verder met BrightNews". Dit document +
 `README.md` (hoe alles werkt) + `STRIPE-MIGRATIE.md` (betaaltraject) +
 `STAPPENPLAN-MAARTEN.md` (Maartens acties) vervangen samen de volledige
 sessiecontext.
