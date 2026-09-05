@@ -255,7 +255,11 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
    UITGEVOERD 2026-09-05 (fase M, commit dee6599): provider='stripe',
    lemon.js weg, alle 15 klanttekst-vermeldingen + 2 fallbacks naar
    Stripe, meta-CSP op alle pagina's + template (0 schendingen), v9.
-   **Nog open**: live proefaankoop + refund (Erik, echte kaart — trial
+   **Live geverifieerd 2026-09-05**: echte aankoop (checkout 200,
+   subscription-event via 409-retry naar 200, DB correct incl. trial-einde)
+   en portaal-opzegging (updated-event verwerkt; toegang blijft tot
+   periode-einde en dooft dan vanzelf). Eerste MP-transactie gedaan.
+   **Nog open**: (refund n.v.t. want trial; was: live proefaankoop, echte kaart — trial
    maakt de aankoop €0), MoR-eindcheck, Lemon-store afbouwen, daarna
    Supabase-token intrekken (Maarten).
    **Fase N (2026-09-05, live)**: livetest-feedback verwerkt — Supabase
