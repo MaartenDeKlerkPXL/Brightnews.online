@@ -12,15 +12,23 @@
 }
 
 
-/* 2. Maak de Navigatiebalk paginabreed */
-header, .navbar {
+/* 2. Maak de Navigatiebalk paginabreed.
+   LET OP de selector: `body > header`, niet het kale `header`. Met het kale
+   element-selector kreeg ELK <header>-element op de pagina deze sticky +
+   z-index 9000 mee — dus ook <header class="detail-header">, het titelblok
+   van een artikel. Dat werd daardoor een tweede plakbalk die over de echte
+   nav heen schoof, terwijl de rest van de artikelkaart (z-index auto) er
+   netjes onder bleef. Gevonden 2026-09-05 op brightnews.online/index.html?id=…
+   De site-nav is op alle 10 pagina's én in het artikeltemplate een direct
+   kind van <body>; nieuwe pagina's moeten dat aanhouden. */
+body > header, .navbar {
     width: 100%;
     position: fixed; /* Of absolute, afhankelijk van je ontwerp */
     top: 0;
     left: 0;
     z-index: 2000;
 }
-header {
+body > header {
     background-color: var(--white);
     border-bottom: 1px solid var(--border-color);
     padding: 1rem 0;
