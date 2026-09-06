@@ -1,1 +1,46 @@
-[]
+[
+  {
+    "datum": "2026-09-06T04:16:44.564Z",
+    "dag": "2026-09-05",
+    "categorie": "Lifestyle",
+    "ids": [
+      "1788648470866m1vi4va9k",
+      "1788647811819l0v9pyg4w",
+      "17886471531332n1uz0ka2",
+      "1788645430506id917d57m",
+      "1788645204154hi809gnll"
+    ],
+    "prompthash": "da803f5c2a08",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 15877,
+    "woorden": {
+      "nl": 347,
+      "en": 351,
+      "de": 326,
+      "fr": 391,
+      "es": 377
+    }
+  },
+  {
+    "datum": "2026-09-06T04:15:38.532Z",
+    "dag": "2026-09-05",
+    "categorie": "Science",
+    "ids": [
+      "1788647709263hp99h6be9",
+      "1788647579010wxcreq06i",
+      "1788646234804g1sgv91ia",
+      "17886485649093lmuettpf",
+      "178864553146221lp57tcj"
+    ],
+    "prompthash": "da803f5c2a08",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 13868,
+    "woorden": {
+      "nl": 358,
+      "en": 348,
+      "de": 344,
+      "fr": 411,
+      "es": 369
+    }
+  }
+]

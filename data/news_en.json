@@ -1,5 +1,107 @@
 [
   {
+    "id": "dg-20260905-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-09-05",
+    "title": "Books in the laundromat, pups on their birthday and a train back after thirty years",
+    "summary": "Today in Lifestyle it's all about connection: between people, between countries and sometimes just between a cat and her rescuers. From a laundromat in Ohio to a railway line in the far north of Europe, today's stories show that small adjustments sometimes make a big difference. In Wyoming, Ohio, four baskets of children's books have been hanging on the wall of a laundromat since November. Janice Weiser keeps adding to the collection so that children can read a book while waiting instead of looking at a screen [1]. The laundromat is one of more than two hundred locations of the...",
+    "image_alt": "Books in the laundromat, pups on their birthday and a train back after thirty years",
+    "meta_description": "Books in the laundromat, a rescued kitten, twelve pups and a train back after thirty years: the positive Lifestyle news of September 5, 2026.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://s.w.org/images/core/emoji/17.0.2/72x72/1fae7.png",
+    "date": "2026-09-06T04:16:44.563Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "1788648470866m1vi4va9k",
+        "title": "Laundromat Becomes Library for Children"
+      },
+      {
+        "id": "1788647811819l0v9pyg4w",
+        "title": "New College Aims to Lower Study Costs"
+      },
+      {
+        "id": "17886471531332n1uz0ka2",
+        "title": "Kitten Survives Ride in Engine Bay"
+      },
+      {
+        "id": "1788645430506id917d57m",
+        "title": "Sweden And Finland Reconnected By Train"
+      },
+      {
+        "id": "1788645204154hi809gnll",
+        "title": "12 Golden Puppies Reunited With Mother On First Birthday"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260905-science",
+    "type": "digest",
+    "digest_date": "2026-09-05",
+    "title": "Trees with muscles, fish with filters: science of September 5",
+    "summary": "Today's science shows how broad research can be: from trees that pull themselves upright to fish that filter out their own electrical signals. Funding for young researchers and the rescue of an almost extinct tree species also feature. A day to spark curiosity. The European Commission is investing in the next generation of scientists. €105.5 million is going to 29 doctoral and postdoctoral programmes under the Marie Skłodowska-Curie Actions COFUND programme [1]. More than 400 organisations from 38 countries are participating, with France as the largest coordinator. The programmes cover life sciences, quantum physics and space travel, all in the...",
+    "image_alt": "Trees with muscles, fish with filters: science of September 5",
+    "meta_description": "From muscle power in trees to fish brains that filter noise: the science news of September 5, 2026 in a nutshell.",
+    "meta_keywords": "Science",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&q=80",
+    "date": "2026-09-06T04:15:38.531Z",
+    "category": "Science",
+    "refs": [
+      {
+        "id": "1788647709263hp99h6be9",
+        "title": "EU allocates €105.5 million for researchers"
+      },
+      {
+        "id": "1788647579010wxcreq06i",
+        "title": "Trees have their own 'muscles', researchers find"
+      },
+      {
+        "id": "1788646234804g1sgv91ia",
+        "title": "American chestnut gets genetic lifeline"
+      },
+      {
+        "id": "17886485649093lmuettpf",
+        "title": "Fish brain filters its own signals cleverly"
+      },
+      {
+        "id": "178864553146221lp57tcj",
+        "title": "AI music banned from Australian charts"
+      }
+    ]
+  },
+  {
+    "id": "1788668077914dbmh5cikz",
+    "title": "Bottles save dolphins and more good news",
+    "summary": "A simple invention using empty plastic bottles attached to fishing nets reduces dolphin bycatch by 88 percent, discovered an emeritus marine biologist. Flanders will close dolphinarium Boudewijn Seapark by 2037 at the latest. India launched its first domestically built hydrogen train for non-electrified routes. A Japanese company can now recover up to 90 percent of lithium from car batteries, compared...",
+    "image_alt": "Dolphin swims near a fishing net with empty plastic bottles attached to it",
+    "meta_description": "Plastic bottles save dolphins, India's first hydrogen train and breakthrough in lithium recycling: good news overview.",
+    "meta_keywords": "dolphins, hydrogen train, lithium recycling, plastic bottles, Great Bubble Barrier, Wota Box, energy storage, animal welfare, sustainability",
+    "link": "https://squirrel-news.net/news/plastic-bottles-saving-dolphins-indias-first-hydrogen-powered-train-lithium-recycling-breakthrough/",
+    "source": "Squirrel-News.net",
+    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/07/Delfine.jpg",
+    "date": "2026-09-06T04:14:39.875Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1788667974151j2zsxndgd",
+    "title": "Outdoor Gym Helps Homeless in Paris Move Forward",
+    "summary": "A Finnish company, Omnigym, has installed an outdoor gym at a homeless shelter in Paris. The goal was to test whether easy access to exercise can improve residents' physical and mental health. After one month, anonymous data and self-evaluations show that 80% of participants experience improved physical health. Positive effects were also reported on wellbeing, sleep, mood and energy. Residents...",
+    "image_alt": "Outdoor gym equipment installed in the courtyard of a homeless shelter in Paris",
+    "meta_description": "Finnish company Omnigym installs outdoor gym at homeless shelter in Paris; 80% report better health.",
+    "meta_keywords": "Omnigym, homeless, Paris, outdoor gym, health, Emmaüs Solidarité, fitness",
+    "link": "https://www.goodnewsnetwork.org/new-gym-in-paris-helps-homeless-improve-their-health-and-habits/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Wilfried-enjoying-The-Shelter-Gym-in-Paris-RELEASED-BY-Omnigym.jpeg",
+    "date": "2026-09-06T04:12:56.864Z",
+    "category": "Health",
+    "score": 9
+  },
+  {
     "id": "17886485649093lmuettpf",
     "title": "Fish brain filters its own signals cleverly",
     "summary": "Scientists have discovered how the brains of elephant fish filter out electrical noise. This African fish continuously sends and receives electrical signals and must ignore its own signals to detect prey. Researchers from Columbia University's Zuckerman Institute, led by Nathaniel Sawtell, mapped the neurons in the relevant brain region and combined this with measurements and computer models. The results show...",
@@ -1930,57 +2032,5 @@
     "image": "https://media.cntraveler.com/photos/57cf2bdcb77fe35639ae197d/master/pass/nyc-area-Mohonk-Mountain-House-cr-courtesy.jpg",
     "date": "2026-09-02T04:06:53.606Z",
     "category": "Lifestyle"
-  },
-  {
-    "id": "1788322003750tcxvm3z1x",
-    "title": "Yoga in extraordinary global spots",
-    "summary": "Explore unique worldwide locations for yoga practice. From rocky mountainsides to the middle of the ocean, these unconventional places provide ideal settings to perform your suryanamaskars. Nature and movement combine for a special experience.",
-    "image_alt": "Yoga practitioner on a rocky mountainside overlooking the ocean at sunrise",
-    "meta_description": "Discover the best and most unconventional yoga locations worldwide for a unique suryanamaskar experience.",
-    "meta_keywords": "yoga, suryanamaskar, unconventional locations, travel, relaxation, nature, wellness",
-    "link": "https://www.cntraveler.com/story/best-places-for-yoga-around-the-world",
-    "source": "CNTraveler.com",
-    "image": "https://media.cntraveler.com/photos/6a95a2747bf45e1fc8ea987b/master/pass/Yoga%20on%20a%20dhow.jpg",
-    "date": "2026-09-02T04:06:46.066Z",
-    "category": "Lifestyle"
-  },
-  {
-    "id": "1788292695321w2scwt9py",
-    "title": "Top Treasury and Cash Management Banks 2026 in CEE",
-    "summary": "In Central and Eastern Europe, banks gain from tailored regional strategies in a complex market. Specialized treasury and cash management services offer advantages. The 2026 ranking highlights banks excelling in localized approaches.",
-    "image_alt": "Illustration of a banker optimizing treasury and cash management processes in Central and Eastern Europe.",
-    "meta_description": "Find the top treasury and cash management banks in Central and Eastern Europe for 2026.",
-    "meta_keywords": "best banks 2026, treasury management, cash management, Central Europe, Eastern Europe, finance, banking",
-    "link": "https://gfmag.com/award/award-winners/best-treasury-and-cash-management-banks-2026-central-and-eastern-europe/",
-    "source": "GFmag.com",
-    "image": "https://public.flourish.studio/visualisation/30047411/thumbnail",
-    "date": "2026-09-01T19:58:16.677Z",
-    "category": "Finance"
-  },
-  {
-    "id": "1788292687331bskqxytuj",
-    "title": "Asia-Pacific banks advance digital cash management solutions",
-    "summary": "APAC corporate treasurers prioritize regional integration. Leading banks in the region are creating increasingly sophisticated digital network solutions for treasury and cash management, as highlighted in 'Best Treasury and Cash Management Banks 2026 | Asia-Pacific'.",
-    "image_alt": "Digital cash management network with banking logos in Asia-Pacific",
-    "meta_description": "Asia-Pacific banks enhance digital cash management systems for improved regional integration by 2026.",
-    "meta_keywords": "cash management, digital banking, Asia-Pacific, treasury 2026, regional integration",
-    "link": "https://gfmag.com/award/award-winners/best-treasury-and-cash-management-banks-2026-asia-pacific/",
-    "source": "GFmag.com",
-    "image": "https://public.flourish.studio/visualisation/30048034/thumbnail",
-    "date": "2026-09-01T19:58:08.344Z",
-    "category": "Finance"
-  },
-  {
-    "id": "17882926793843a6624snu",
-    "title": "Top Treasury and Cash Management Banks in Africa 2026",
-    "summary": "The ranking of top treasury and cash management banks in Africa for 2026 is released. Increasing regulatory and data demands drive improved performance in this sector.",
-    "image_alt": "Illustration of an African bank employee showcasing digital treasury and cash management solutions on a tablet",
-    "meta_description": "Discover the top African banks for treasury and cash management in 2026. Performance boosted by stricter regulations and data requirements.",
-    "meta_keywords": "top treasury banks Africa 2026, cash management banks, treasury services, financial institutions Africa, regulatory demands, data requirements",
-    "link": "https://gfmag.com/award/award-winners/best-treasury-and-cash-management-banks-2026-africa/",
-    "source": "GFmag.com",
-    "image": "https://public.flourish.studio/visualisation/30048339/thumbnail",
-    "date": "2026-09-01T19:58:00.654Z",
-    "category": "Finance"
   }
 ]

@@ -1,5 +1,38 @@
 [
  {
+  "datum": "2026-09-06T04:12:16.614Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "New Gym in Paris Helps Homeless Folks Improve Their Health And Habits–Without Leaving the Shelter",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Hartverwarmend verhaal over praktische hulp aan daklozen via gezondheid; volledig positief geformuleerd; maatschappelijk relevant en herkenbaar."
+ },
+ {
+  "datum": "2026-09-06T04:12:16.614Z",
+  "bron": "Squirrel-News.net",
+  "titel": "Plastic bottles saving dolphins, India’s first hydrogen-powered train, lithium recycling breakthrough",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Drie hoopgevende doorbraken (dierenwelzijn, schone energie, recycling) met positieve toon; maatschappelijk relevant voor milieu en technologie."
+ },
+ {
+  "datum": "2026-09-06T04:12:16.614Z",
+  "bron": "Newatlas.com",
+  "titel": "Review: Liene PixCut S1 prints AND cuts custom stickers for pennies",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Producttests en gadgetreviews zonder maatschappelijke betekenis vallen onder afwijslijst, ongeacht toon."
+ },
+ {
   "datum": "2026-09-05T22:46:16.546Z",
   "bron": "GoodNewsNetwork.org",
   "titel": "Your Weekly Horoscope – ‘Free Will Astrology’ by Rob Brezsny",
@@ -3265,38 +3298,5 @@
   "totaal": 0,
   "besluit": "nee",
   "reden": "Item valt onder puur consumptieve content zonder verhaal (recept/voedselinformatie)."
- },
- {
-  "datum": "2026-09-03T09:16:13.888Z",
-  "bron": "Onbetterliving.com",
-  "titel": "How Energy-Efficient Windows Can Improve Your Home Comfort and Costs",
-  "gevoel": 2,
-  "formulering": 2,
-  "relevantie": 2,
-  "totaal": 6,
-  "besluit": "nee",
-  "reden": "Som van scores (6) is lager dan 7."
- },
- {
-  "datum": "2026-09-03T09:16:18.203Z",
-  "bron": "BBC.com/culture",
-  "titel": "The literary novel causing a Hollywood scandal",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "roddel- en celebritynieuws"
- },
- {
-  "datum": "2026-09-03T09:17:03.931Z",
-  "bron": "Ourculturemag.com",
-  "titel": "Book Review: Caro Claire Burke, ‘Yesteryear’",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Boekrecensie zonder maatschappelijke of persoonlijke relevantie voor BrightNews-kern."
  }
 ]
