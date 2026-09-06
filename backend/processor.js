@@ -176,6 +176,8 @@ function schoonSnippet(tekst) {
 const TAAL_NAMEN = { nl: 'Nederlands', en: 'Engels', de: 'Duits', fr: 'Frans', es: 'Spaans' };
 const CATEGORIEEN = ['Tech', 'Health', 'Science', 'Lifestyle', 'Environment', 'Finance'];
 const MOEDER_VELDEN = ['titel', 'kort', 'lang', 'alt', 'meta_d', 'meta_k'];
+// Voor de diagnose-regel bij parse-uitval (herijking, 2026-09-06).
+let laatsteRuweRespons = '';
 
 function veldenCompleet(data) {
     return data && MOEDER_VELDEN.every(v => typeof data[v] === 'string' && data[v].trim().length > 0);
@@ -202,6 +204,7 @@ Antwoord UITSLUITEND met geldig JSON — alinea-scheidingen binnen een tekstveld
     statistieken.aiCalls++;
     statistieken.aiTokens += antwoord.tokens;
     statistieken.perProvider[antwoord.provider] = (statistieken.perProvider[antwoord.provider] ?? 0) + 1;
+    laatsteRuweRespons = antwoord.tekst;
     const data = verwerkAIResponse(antwoord.tekst);
     if (!veldenCompleet(data)) return null;
     return {
@@ -594,6 +597,7 @@ async function processNews() {
                     // Niet in seenLinks: volgende run een nieuwe kans.
                     statistieken.incompleet++;
                     console.error(`⚠️ Onbruikbare moedertekst, artikel overgeslagen: ${item.title}`);
+                    console.error(`🔎 Rauwe respons (kop): ${String(laatsteRuweRespons).replace(/\s+/g, ' ').slice(0, 300)}`);
                     continue;
                 }
                 const teksten = { nl: moeder };

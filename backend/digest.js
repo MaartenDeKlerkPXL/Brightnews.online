@@ -175,6 +175,9 @@ async function main() {
             const moeder = verwerkAIResponse(moederAntwoord.tekst);
             const moederWoorden = telWoorden(moeder?.tekst);
             if (!moeder?.titel || moederWoorden < 250 || moederWoorden > 700) {
+                // Diagnose (2026-09-06): nachtcron 1 verloor Health+Tech aan
+                // parse-uitval zonder spoor — log de kop van de rauwe respons.
+                console.error(`🔎 Rauwe respons (kop): ${String(moederAntwoord.tekst).replace(/\s+/g, ' ').slice(0, 300)}`);
                 throw new Error(`onbruikbare digest-moedertekst: ${moederWoorden} woorden`);
             }
             perTaal.nl = {
