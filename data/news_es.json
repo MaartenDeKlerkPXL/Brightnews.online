@@ -1,5 +1,130 @@
 [
   {
+    "id": "dg-20260905-environment",
+    "type": "digest",
+    "digest_date": "2026-09-05",
+    "title": "Patos, salmones y vecinos marcan la diferencia hoy",
+    "summary": "A veces las buenas noticias se encuentran en cosas pequeñas que tienen grandes resultados. Hoy se trata de patos que mantienen saludables los viñedos, salmones que regresan a los ríos después de años, y gente común que decide dejar su calle o su pueblo un poco mejor. Cinco historias muestran que la paciencia y el cuidado de la naturaleza finalmente dan sus frutos. En la finca vinícola Vergenoegd Löw en Sudáfrica, alrededor de 1000 patos caminan entre las vides. Comen plagas y fertilizan el suelo, sin necesidad de pesticidas [1]. El mismo enfoque paciente se ve en la costa de...",
+    "image_alt": "Patos, salmones y vecinos marcan la diferencia hoy",
+    "meta_description": "De patos en viñedos a salmones que regresan: las noticias positivas sobre la naturaleza del 5 de septiembre de 2026.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a99b453c8731ac2eb4eb449_6a99b451039236cbc607c312_vineyard-wine-farm-free-roaming-ducks-featured-2.webp",
+    "date": "2026-09-06T15:24:31.617Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1788645872913v6p9gh7ws",
+        "title": "1000 Patos Reemplazan Pesticidas En Viña"
+      },
+      {
+        "id": "1788647218036re517hbkv",
+        "title": "64 tortuguitas marinas rescatadas de piscina en Florida"
+      },
+      {
+        "id": "1788647086622ilhiogf10",
+        "title": "Antiguos cazadores de aves salvan jilgueros de Java"
+      },
+      {
+        "id": "1788645690381vacqodhek",
+        "title": "Buenas Noticias: Panaderos, Sol Y Un Rescate Escolar"
+      },
+      {
+        "id": "1788645362502ubnvc3z3k",
+        "title": "Hombre Limpia Calle 100 Días, Todo el Barrio Participa"
+      },
+      {
+        "id": "1788645292822m5wh38774",
+        "title": "Número Récord de Salmones Coho Regresan a California"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260905-tech",
+    "type": "digest",
+    "digest_date": "2026-09-05",
+    "title": "Día de tecnología: desde rescatadores de elefantes hasta scooters inteligentes",
+    "summary": "Hoy el mundo tecnológico demuestra que las buenas ideas pueden venir de cualquier lugar, desde un proyecto estudiantil hasta grandes fabricantes. Hay noticias sobre protección animal, sobre vehículos que se vuelven más inteligentes y accesibles, y sobre cómo los gobiernos se relacionan con la tecnología que afecta la privacidad. Hay suficiente para despertar la curiosidad. Tomemos a Anika Puri. De adolescente inventó EISa, un sistema de IA económico que con una cámara térmica de 250 dólares en un dron puede distinguir entre elefantes y posibles cazadores furtivos. Durante las pruebas de campo, el sistema logró una precisión superior al 90...",
+    "image_alt": "Día de tecnología: desde rescatadores de elefantes hasta scooters inteligentes",
+    "meta_description": "Noticias tecnológicas positivas del 5 de septiembre de 2026: detección de cazadores furtivos, scooters inteligentes, nueva caravana Kia, debate sobre cámar",
+    "meta_keywords": "Tech",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a99d3d1e19a819a1f4c6ed1_6a99d3cfeccb478753f53f50_teen-invents-device-to-catch-elephant-poachers-featured.webp",
+    "date": "2026-09-06T15:23:29.557Z",
+    "category": "Tech",
+    "refs": [
+      {
+        "id": "1788647384130wkqh8u5kt",
+        "title": "Adolescente inventa dispositivo premiado contra cazadores furtivos"
+      },
+      {
+        "id": "178864608674649fh0dl49",
+        "title": "Kia presenta la versión camper más grande de la PV5"
+      },
+      {
+        "id": "1788647519997iqucy27jj",
+        "title": "Texas detiene fondos para cámaras Flock"
+      },
+      {
+        "id": "1788646955438obijzrd5e",
+        "title": "Australia traza límite en la música"
+      },
+      {
+        "id": "1788646140552gfkjr3900",
+        "title": "Scooter económico con características de lujo de Ather"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260905-health",
+    "type": "digest",
+    "digest_date": "2026-09-05",
+    "title": "Diagnósticos más rápidos y protección más duradera: noticias de salud del 5 de septiembre",
+    "summary": "La sanidad avanzó hoy nuevamente en varios frentes muy diferentes. Desde software inteligente que detecta un problema cardíaco en diez segundos hasta un país que ha erradicado completamente una enfermedad ocular: demuestra que el progreso a menudo surge en múltiples lugares simultáneamente. La noticia más destacada procedía de Londres, donde investigadores del Imperial College desarrollaron software que puede detectar enfermedades cardíacas a través de un ECG convencional, algo para lo que los pacientes ahora a menudo deben esperar meses para un ecocardiograma. En un ensayo con 67.000 pacientes, la herramienta identificó hasta el 81% de los casos de insuficiencia cardíaca...",
+    "image_alt": "Diagnósticos más rápidos y protección más duradera: noticias de salud del 5 de septiembre",
+    "meta_description": "Software cardíaco inteligente, una nueva prueba de cáncer de vejiga, menos ceguera y más: las noticias de salud del 5 de septiembre resumidas.",
+    "meta_keywords": "Health",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.positive.news/wp-content/uploads/2026/09/iStock-2166849864-2.jpeg",
+    "date": "2026-09-06T15:22:20.426Z",
+    "category": "Health",
+    "refs": [
+      {
+        "id": "1788645141480uux502u0y",
+        "title": "Software cardíaca superior y más buenas noticias"
+      },
+      {
+        "id": "1788645554014dscmbc1wx",
+        "title": "Las estatinas reducen el riesgo cardíaco en mayores de 70"
+      },
+      {
+        "id": "1788647730911cqw2ar8lh",
+        "title": "Investigación sobre la obesidad mediante biología humana"
+      },
+      {
+        "id": "1788646925799w1iimm4f9",
+        "title": "Cómo Elegir Una Clínica de Fertilidad"
+      }
+    ]
+  },
+  {
+    "id": "1788708076238no8huuobf",
+    "title": "Composite Reciclable Para Cabinas de Avión",
+    "summary": "Investigadores de Empa han desarrollado, junto con la empresa química Elantas, un material composite basado en epoxi que es completamente reciclable. Un aditivo que contiene fósforo, desarrollado en Empa y añadido durante la producción, hace que el material endurecido no solo sea retardante de llama, sino que también pueda reblandecerse o descomponerse nuevamente. Con el disolvente adecuado y un poco...",
+    "image_alt": "Un composite de panal que puede descomponerse en sus componentes individuales con disolvente y calor",
+    "meta_description": "Empa desarrolla composite de epoxi reciclable y retardante de llama para cabinas de avión con estructura de panal.",
+    "meta_keywords": "composite reciclable, epoxi, cabina de avión, Empa, honeycomb, retardante de llama, ciencia de materiales",
+    "link": "https://newatlas.com/materials/epoxy-composite-recyclable-airplane-cabins/",
+    "source": "Newatlas.com",
+    "image": "https://assets.newatlas.com/dims4/default/22db6a5/2147483647/strip/true/crop/3378x2252+0+0/resize/1440x960!/format/webp/quality/90/?url=https%3A%2F%2Fnewatlas-brightspot.s3.ap-southeast-2.amazonaws.com%2Fb1%2F5a%2F80289dfe4d52b1082d97306b52bd%2Fhoneycomb-2.jpeg",
+    "date": "2026-09-06T15:21:18.979Z",
+    "category": "Tech",
+    "score": 9
+  },
+  {
     "id": "dg-20260905-lifestyle",
     "type": "digest",
     "digest_date": "2026-09-05",
@@ -1979,58 +2104,6 @@
     "source": "CNTraveler.com",
     "image": "https://media.cntraveler.com/photos/69b941caa6cd42fce1386c36/master/pass/AWAY12EVER25-78_pr_global.jpg",
     "date": "2026-09-02T04:07:24.674Z",
-    "category": "Lifestyle"
-  },
-  {
-    "id": "1788322035532buhquc0ri",
-    "title": "15% de descuento en Athleta en septiembre 2026",
-    "summary": "Athleta ofrece en septiembre de 2026 un código de descuento verificado del 15% en ropa de descanso y conjuntos deportivos aptos para viajar. Las rebajas del Labor Day incluyen descuentos de hasta un 70%.",
-    "image_alt": "Mujer con ropa deportiva de Athleta usando un código de descuento del 15% en septiembre de 2026",
-    "meta_description": "Athleta ofrece 15% de descuento en septiembre de 2026 en ropa de descanso y deportiva, con rebajas del Labor Day hasta un 70%.",
-    "meta_keywords": "Athleta descuento, ropa deportiva, ropa de descanso, Labor Day, 15% descuento, septiembre 2026",
-    "link": "https://www.cntraveler.com/story/athleta-promo-code",
-    "source": "CNTraveler.com",
-    "image": "https://media.cntraveler.com/photos/69b93f7b8b7030a63a4a2cdb/master/pass/Athetla__170326_AT_WMN_SP26_F03_WLOC184_Performance_0972_pr_global.jpg",
-    "date": "2026-09-02T04:07:16.530Z",
-    "category": "Lifestyle"
-  },
-  {
-    "id": "1788322028150p7wbsm34j",
-    "title": "Descuento Patagonia septiembre 2026",
-    "summary": "Patagonia ofrece en septiembre de 2026 un código de descuento del 15% en todos sus productos, con envío gratis. Chaquetas, mochilas y otros artículos tienen hasta un 50% de descuento. La promoción está dirigida a aventureros que se preparan para su próximo viaje.",
-    "image_alt": "Tienda Patagonia con carteles de rebajas en septiembre de 2026",
-    "meta_description": "Ahorra un 15% en Patagonia con envío gratis y hasta un 50% de descuento en chaquetas y mochilas en septiembre de 2026. Compra ahora para tu próxima aventura.",
-    "meta_keywords": "Descuento Patagonia, oferta Patagonia, código promo Patagonia, ropa outdoor en oferta, mochilas rebajadas, chaquetas con descuento",
-    "link": "https://www.cntraveler.com/story/patagonia-coupon",
-    "source": "CNTraveler.com",
-    "image": "https://media.cntraveler.com/photos/624f8a7298fcbbd30b436e45/master/pass/Patagonia_etzel_k_1317_BP.jpg",
-    "date": "2026-09-02T04:07:09.145Z",
-    "category": "Lifestyle"
-  },
-  {
-    "id": "1788322019730s2ekk39v8",
-    "title": "El Salón del Corán brilla en Tashkent",
-    "summary": "Uzbekistán inaugura en Tashkent el nuevo Centro de Civilización Islámica. El Salón del Corán, resplandeciente, es su principal atracción. Un valioso artefacto religioso se exhibe en un entorno brillante.",
-    "image_alt": "El Salón del Corán resplandeciente en el nuevo Centro de Civilización Islámica en Tashkent, Uzbekistán",
-    "meta_description": "Descubre el Salón del Corán resplandeciente en el nuevo Centro de Civilización Islámica en Tashkent, Uzbekistán.",
-    "meta_keywords": "Uzbekistán, Tashkent, Centro de Civilización Islámica, Salón del Corán, artefacto religioso, museo, cultura",
-    "link": "https://www.cntraveler.com/story/in-uzbekistan-a-prized-religious-artifact-sits-at-the-heart-of-a-new-museum",
-    "source": "CNTraveler.com",
-    "image": "https://media.cntraveler.com/photos/6a832f6b5e8253a793525ad8/master/pass/Oldest%20Quran.jpeg",
-    "date": "2026-09-02T04:07:00.900Z",
-    "category": "Lifestyle"
-  },
-  {
-    "id": "17883220126821xq0vi3u4",
-    "title": "Excursiones otoñales cerca de Nueva York",
-    "summary": "Esta guía presenta 20 escapadas otoñales cerca de Nueva York. Hoteles acogedores sirven como base ideal para actividades como recoger manzanas, degustar vinos y admirar hojas. El enfoque está en relajación y naturaleza otoñal.",
-    "image_alt": "Paisaje otoñal con manzanas, viñedo y hojas coloridas",
-    "meta_description": "Descubre 20 escapadas otoñales cerca de NYC para recoger manzanas, degustar vinos y admirar hojas en hoteles acogedores.",
-    "meta_keywords": "excursiones otoñales NYC, recoger manzanas, degustar vinos, hojas otoño, hoteles acogedores",
-    "link": "https://www.cntraveler.com/gallery/10-great-fall-getaways-from-nyc",
-    "source": "CNTraveler.com",
-    "image": "https://media.cntraveler.com/photos/57cf2bdcb77fe35639ae197d/master/pass/nyc-area-Mohonk-Mountain-House-cr-courtesy.jpg",
-    "date": "2026-09-02T04:06:53.606Z",
     "category": "Lifestyle"
   }
 ]

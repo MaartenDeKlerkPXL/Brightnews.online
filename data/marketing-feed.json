@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-09-06T04:18:16.172Z",
+ "gegenereerd": "2026-09-06T15:24:32.305Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -12,6 +12,14 @@
      "score": 10,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/1000-eenden-vervangen-pesticiden-op-wijnlandgoed-1788645872913v6p9gh7ws.html"
+    },
+    {
+     "id": "1788708076238no8huuobf",
+     "titel": "Recyclebaar Composiet Voor Vliegtuigcabines",
+     "teaser": "Onderzoekers van Empa hebben, samen met chemiebedrijf Elantas, een epoxy-gebaseerd composietmateriaal ontwikkeld dat volledig recyclebaar is. Een fosforhoudend additief, ontwikkeld bij Empa en toegevoegd tijdens de productie, zorgt ervoor dat het uitgeharde materiaal niet alleen vlamvertragend is, maar ook weer kan verzachten of uiteenvallen. Met het juiste oplosmiddel en een beetje warmte kan de zogeheten 'honeycomb sandwich' worden afgebroken in...",
+     "score": 9,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/nl/recyclebaar-composiet-voor-vliegtuigcabines-1788708076238no8huuobf.html"
     },
     {
      "id": "1788668077914dbmh5cikz",
@@ -36,17 +44,30 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/wasserette-wordt-bibliotheek-voor-kinderen-1788648470866m1vi4va9k.html"
-    },
-    {
-     "id": "1788647811819l0v9pyg4w",
-     "titel": "Nieuw College Wil Studiekosten Verlagen",
-     "teaser": "In Montpelier, Vermont, wordt het Greenway Institute opgericht, een compleet nieuwe hogeschool die hoger onderwijs anders wil inrichten. Op een negentiende-eeuwse campus combineert de school praktijkgericht leren onder begeleiding van docenten met het schrappen van overbodige bestuurslagen en luxe voorzieningen om de kosten te drukken. Oprichter Mark Somerville, voormalig provoost van Olin College of Engineering, noemt dit nodig gezien de...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/nieuw-college-wil-studiekosten-verlagen-1788647811819l0v9pyg4w.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260905-environment",
+     "titel": "Eenden, zalmen en buurtbewoners maken vandaag het verschil",
+     "categorie": "Environment",
+     "dag": "2026-09-05",
+     "url": "https://brightnews.online/articles/nl/eenden-zalmen-en-buurtbewoners-maken-vandaag-het-verschil-dg-20260905-environment.html"
+    },
+    {
+     "id": "dg-20260905-tech",
+     "titel": "Techdag: van olifantenredders tot slimme scooters",
+     "categorie": "Tech",
+     "dag": "2026-09-05",
+     "url": "https://brightnews.online/articles/nl/techdag-van-olifantenredders-tot-slimme-scooters-dg-20260905-tech.html"
+    },
+    {
+     "id": "dg-20260905-health",
+     "titel": "Snellere diagnoses en langere bescherming: gezondheidsnieuws van 5 september",
+     "categorie": "Health",
+     "dag": "2026-09-05",
+     "url": "https://brightnews.online/articles/nl/snellere-diagnoses-en-langere-bescherming-gezondheidsnieuws-van-5-september-dg-20260905-health.html"
+    },
     {
      "id": "dg-20260905-lifestyle",
      "titel": "Boeken in de wasserette, pups op hun verjaardag en een trein terug na dertig jaar",
@@ -74,6 +95,14 @@
      "url": "https://brightnews.online/articles/en/1000-ducks-replace-pesticides-on-wine-estate-1788645872913v6p9gh7ws.html"
     },
     {
+     "id": "1788708076238no8huuobf",
+     "titel": "Recyclable Composite For Aircraft Cabins",
+     "teaser": "Researchers at Empa, together with chemical company Elantas, have developed an epoxy-based composite material that is fully recyclable. A phosphorus-containing additive, developed at Empa and added during production, ensures that the cured material is not only flame-retardant, but can also soften or break down again. With the right solvent and a bit of heat, the so-called 'honeycomb sandwich' can be...",
+     "score": 9,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/en/recyclable-composite-for-aircraft-cabins-1788708076238no8huuobf.html"
+    },
+    {
      "id": "1788668077914dbmh5cikz",
      "titel": "Bottles save dolphins and more good news",
      "teaser": "A simple invention using empty plastic bottles attached to fishing nets reduces dolphin bycatch by 88 percent, discovered an emeritus marine biologist. Flanders will close dolphinarium Boudewijn Seapark by 2037 at the latest. India launched its first domestically built hydrogen train for non-electrified routes. A Japanese company can now recover up to 90 percent of lithium from car batteries, compared...",
@@ -96,17 +125,30 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/laundromat-becomes-library-for-children-1788648470866m1vi4va9k.html"
-    },
-    {
-     "id": "1788647811819l0v9pyg4w",
-     "titel": "New College Aims to Lower Study Costs",
-     "teaser": "In Montpelier, Vermont, the Greenway Institute is being established, a completely new college that wants to reorganize higher education differently. On a nineteenth-century campus, the school combines practice-oriented learning under the guidance of faculty with the elimination of redundant administrative layers and luxury facilities to reduce costs. Founder Mark Somerville, former provost of Olin College of Engineering, says this is...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/new-college-aims-to-lower-study-costs-1788647811819l0v9pyg4w.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260905-environment",
+     "titel": "Ducks, salmon and neighbors make a difference today",
+     "categorie": "Environment",
+     "dag": "2026-09-05",
+     "url": "https://brightnews.online/articles/en/ducks-salmon-and-neighbors-make-a-difference-today-dg-20260905-environment.html"
+    },
+    {
+     "id": "dg-20260905-tech",
+     "titel": "Tech day: from elephant rescuers to smart scooters",
+     "categorie": "Tech",
+     "dag": "2026-09-05",
+     "url": "https://brightnews.online/articles/en/tech-day-from-elephant-rescuers-to-smart-scooters-dg-20260905-tech.html"
+    },
+    {
+     "id": "dg-20260905-health",
+     "titel": "Faster diagnoses and longer protection: health news from September 5",
+     "categorie": "Health",
+     "dag": "2026-09-05",
+     "url": "https://brightnews.online/articles/en/faster-diagnoses-and-longer-protection-health-news-from-september-5-dg-20260905-health.html"
+    },
     {
      "id": "dg-20260905-lifestyle",
      "titel": "Books in the laundromat, pups on their birthday and a train back after thirty years",
@@ -134,6 +176,14 @@
      "url": "https://brightnews.online/articles/de/1000-enten-ersetzen-pestizide-auf-weingut-1788645872913v6p9gh7ws.html"
     },
     {
+     "id": "1788708076238no8huuobf",
+     "titel": "Recycelbares Komposit für Flugzeugkabinen",
+     "teaser": "Forscher der Empa haben zusammen mit dem Chemieunternehmen Elantas ein epoxidbasiertes Verbundmaterial entwickelt, das vollständig recycelbar ist. Ein phosphorhaltiger Zusatzstoff, entwickelt bei der Empa und während der Produktion hinzugefügt, sorgt dafür, dass das ausgehärtete Material nicht nur flammhemmend ist, sondern sich auch wieder erweichen oder auseinandernehmen lässt. Mit dem richtigen Lösungsmittel und etwas Wärme kann das sogenannte 'Honeycomb-Sandwich' in die...",
+     "score": 9,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/de/recycelbares-komposit-fur-flugzeugkabinen-1788708076238no8huuobf.html"
+    },
+    {
      "id": "1788668077914dbmh5cikz",
      "titel": "Flaschen retten Delfine und mehr gute Nachrichten",
      "teaser": "Eine einfache Erfindung mit leeren Plastikflaschen an Fischernetzen reduziert den Beifang von Delfinen um 88 Prozent, entdeckte ein emeritierter Meeresbiologe. Flandern schließt das Delfinarium Boudewijn Seapark spätestens 2037. Indien startete seinen ersten im Inland gebauten Wasserstoffzug für nicht elektrifizierte Strecken. Ein japanisches Unternehmen kann nun bis zu 90 Prozent des Lithiums aus Autobatterien zurückgewinnen, gegenüber weniger als 50 Prozent zuvor....",
@@ -156,17 +206,30 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/wascherei-wird-bucherei-fur-kinder-1788648470866m1vi4va9k.html"
-    },
-    {
-     "id": "1788647811819l0v9pyg4w",
-     "titel": "Neues College Will Studienkosten Senken",
-     "teaser": "In Montpelier, Vermont, wird das Greenway Institute gegründet, eine völlig neue Hochschule, die Hochschulbildung anders gestalten möchte. Auf einem Campus aus dem 19. Jahrhundert kombiniert die Schule praxisorientiertes Lernen unter Anleitung von Dozenten mit dem Abbau überflüssiger Verwaltungsebenen und luxuriöser Einrichtungen, um die Kosten zu senken. Gründer Mark Somerville, ehemaliger Provost des Olin College of Engineering, hält dies angesichts der...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/neues-college-will-studienkosten-senken-1788647811819l0v9pyg4w.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260905-environment",
+     "titel": "Enten, Lachse und Nachbarn machen heute den Unterschied",
+     "categorie": "Environment",
+     "dag": "2026-09-05",
+     "url": "https://brightnews.online/articles/de/enten-lachse-und-nachbarn-machen-heute-den-unterschied-dg-20260905-environment.html"
+    },
+    {
+     "id": "dg-20260905-tech",
+     "titel": "Techtag: von Elefantenrettern bis zu intelligenten Rollern",
+     "categorie": "Tech",
+     "dag": "2026-09-05",
+     "url": "https://brightnews.online/articles/de/techtag-von-elefantenrettern-bis-zu-intelligenten-rollern-dg-20260905-tech.html"
+    },
+    {
+     "id": "dg-20260905-health",
+     "titel": "Schnellere Diagnosen und längerer Schutz: Gesundheitsnachrichten vom 5. September",
+     "categorie": "Health",
+     "dag": "2026-09-05",
+     "url": "https://brightnews.online/articles/de/schnellere-diagnosen-und-langerer-schutz-gesundheitsnachrichten-vom-5-september-dg-20260905-health.html"
+    },
     {
      "id": "dg-20260905-lifestyle",
      "titel": "Bücher in der Wäscherei, Welpen zum Geburtstag und ein Zug nach dreißig Jahren zurück",
@@ -194,6 +257,14 @@
      "url": "https://brightnews.online/articles/fr/1000-canards-remplacent-les-pesticides-dans-un-vignoble-1788645872913v6p9gh7ws.html"
     },
     {
+     "id": "1788708076238no8huuobf",
+     "titel": "Composite Recyclable Pour Cabines d'Avion",
+     "teaser": "Des chercheurs d'Empa ont développé, en collaboration avec l'entreprise chimique Elantas, un matériau composite à base d'époxy entièrement recyclable. Un additif contenant du phosphore, développé à Empa et ajouté lors de la production, fait en sorte que le matériau durci non seulement retarde la flamme, mais peut aussi se ramollir ou se désagréger à nouveau. Avec le bon solvant et...",
+     "score": 9,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/fr/composite-recyclable-pour-cabines-d-avion-1788708076238no8huuobf.html"
+    },
+    {
      "id": "1788668077914dbmh5cikz",
      "titel": "Des bouteilles sauvent les dauphins et plus de bonnes nouvelles",
      "teaser": "Une simple invention consistant à fixer des bouteilles en plastique vides aux filets de pêche réduit les prises accessoires de dauphins de 88 pour cent, a découvert un biologiste marin émérite. La Flandre ferme le delphinarium Boudewijn Seapark au plus tard en 2037. L'Inde a lancé son premier train à hydrogène construit sur place pour les lignes non électrifiées. Une...",
@@ -216,17 +287,30 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/une-laverie-devient-bibliotheque-pour-enfants-1788648470866m1vi4va9k.html"
-    },
-    {
-     "id": "1788647811819l0v9pyg4w",
-     "titel": "Un Nouveau Collège Veut Réduire les Frais d'Études",
-     "teaser": "À Montpelier, Vermont, l'Institut Greenway est en cours de création, un tout nouveau collège qui souhaite réorganiser l'enseignement supérieur différemment. Sur un campus du dix-neuvième siècle, l'école combine l'apprentissage pratique encadré par des enseignants avec la suppression des couches administratives superflues et des équipements de luxe pour réduire les coûts. Le fondateur Mark Somerville, ancien doyen de l'Olin College of...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/un-nouveau-college-veut-reduire-les-frais-d-etudes-1788647811819l0v9pyg4w.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260905-environment",
+     "titel": "Les canards, les saumons et les voisins font la différence aujourd'hui",
+     "categorie": "Environment",
+     "dag": "2026-09-05",
+     "url": "https://brightnews.online/articles/fr/les-canards-les-saumons-et-les-voisins-font-la-difference-aujourd-hui-dg-20260905-environment.html"
+    },
+    {
+     "id": "dg-20260905-tech",
+     "titel": "Jour de la tech : des sauveteurs d'éléphants aux scooters intelligents",
+     "categorie": "Tech",
+     "dag": "2026-09-05",
+     "url": "https://brightnews.online/articles/fr/jour-de-la-tech-des-sauveteurs-d-elephants-aux-scooters-intelligents-dg-20260905-tech.html"
+    },
+    {
+     "id": "dg-20260905-health",
+     "titel": "Diagnostics plus rapides et protection prolongée : actualités sanitaires du 5 septembre",
+     "categorie": "Health",
+     "dag": "2026-09-05",
+     "url": "https://brightnews.online/articles/fr/diagnostics-plus-rapides-et-protection-prolongee-actualites-sanitaires-du-5-sept-dg-20260905-health.html"
+    },
     {
      "id": "dg-20260905-lifestyle",
      "titel": "Des livres à la laverie, des chiots pour leur anniversaire et un train de retour après trente ans",
@@ -254,6 +338,14 @@
      "url": "https://brightnews.online/articles/es/1000-patos-reemplazan-pesticidas-en-vina-1788645872913v6p9gh7ws.html"
     },
     {
+     "id": "1788708076238no8huuobf",
+     "titel": "Composite Reciclable Para Cabinas de Avión",
+     "teaser": "Investigadores de Empa han desarrollado, junto con la empresa química Elantas, un material composite basado en epoxi que es completamente reciclable. Un aditivo que contiene fósforo, desarrollado en Empa y añadido durante la producción, hace que el material endurecido no solo sea retardante de llama, sino que también pueda reblandecerse o descomponerse nuevamente. Con el disolvente adecuado y un poco...",
+     "score": 9,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/es/composite-reciclable-para-cabinas-de-avion-1788708076238no8huuobf.html"
+    },
+    {
      "id": "1788668077914dbmh5cikz",
      "titel": "Botellas salvan delfines y más buenas noticias",
      "teaser": "Un invento simple con botellas de plástico vacías en redes de pesca reduce la captura incidental de delfines en un 88 por ciento, descubrió un biólogo marino emérito. Flandes cierra el delfinario Boudewijn Seapark a más tardar en 2037. India lanzó su primer tren de hidrógeno construido en el país para rutas no electrificadas. Una empresa japonesa puede recuperar ahora...",
@@ -276,17 +368,30 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/lavanderia-se-convierte-en-biblioteca-para-ninos-1788648470866m1vi4va9k.html"
-    },
-    {
-     "id": "1788647811819l0v9pyg4w",
-     "titel": "Nuevo Colegio Quiere Reducir Costos de Estudio",
-     "teaser": "En Montpelier, Vermont, se está creando el Greenway Institute, un colegio completamente nuevo que quiere reorganizar la educación superior de otra manera. En un campus del siglo diecinueve, la escuela combina el aprendizaje práctico bajo la supervisión de docentes con la eliminación de capas administrativas innecesarias y servicios de lujo para reducir costos. El fundador Mark Somerville, ex preboste del...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/nuevo-colegio-quiere-reducir-costos-de-estudio-1788647811819l0v9pyg4w.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260905-environment",
+     "titel": "Patos, salmones y vecinos marcan la diferencia hoy",
+     "categorie": "Environment",
+     "dag": "2026-09-05",
+     "url": "https://brightnews.online/articles/es/patos-salmones-y-vecinos-marcan-la-diferencia-hoy-dg-20260905-environment.html"
+    },
+    {
+     "id": "dg-20260905-tech",
+     "titel": "Día de tecnología: desde rescatadores de elefantes hasta scooters inteligentes",
+     "categorie": "Tech",
+     "dag": "2026-09-05",
+     "url": "https://brightnews.online/articles/es/dia-de-tecnologia-desde-rescatadores-de-elefantes-hasta-scooters-inteligentes-dg-20260905-tech.html"
+    },
+    {
+     "id": "dg-20260905-health",
+     "titel": "Diagnósticos más rápidos y protección más duradera: noticias de salud del 5 de septiembre",
+     "categorie": "Health",
+     "dag": "2026-09-05",
+     "url": "https://brightnews.online/articles/es/diagnosticos-mas-rapidos-y-proteccion-mas-duradera-noticias-de-salud-del-5-de-se-dg-20260905-health.html"
+    },
     {
      "id": "dg-20260905-lifestyle",
      "titel": "Libros en la lavandería, cachorros en su cumpleaños y un tren de regreso después de treinta años",
