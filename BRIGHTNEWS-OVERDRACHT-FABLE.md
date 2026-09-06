@@ -288,6 +288,17 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
       pagina's in de diff). Artifact "De AI-motor van BrightNews"
       bijgewerkt naar eindstand. Los eindje Erik: runnable blok
       `gh secret delete MISTRAL_API_KEY` (classifier blokkeerde het).
+   f3. **Eerste dagoverzichten LIVE (nachtcron 2026-09-06 00:00 UTC)**:
+      Lifestyle + Science gepubliceerd en live geverifieerd (SPA én
+      statische pagina: badge, 5 bronverwijzingen, paywall, disclaimer;
+      alle 5 talen 326–411 woorden). Health + Tech faalden op
+      parse-uitval van de Sonnet-moedertekst ("0 woorden"), breaker
+      stopte vóór Environment — **herstelt zichzelf om 12:00 UTC**
+      (idempotent). Diagnose-logging (kop rauwe respons) staat er nu op;
+      blijft het stochastisch falen, dan is de volgende stap één lokale
+      parse-retry op moedercalls. Maartens sessieverslag
+      (SESSIEVERSLAG-VOOR-MAARTEN.md) + startregel in CLAUDE.md: "verder
+      met BrightNews" toont hem eerst het verslag in gewone taal.
    f. **Tijdlijn**: lancering prikken (gate weg, tester-mail, marketing
       start, 3-maandenklok start) → evaluatie na 3 maanden: doorgaan als
       betaalde site? Minimumdoel: uit de kosten (±€50–75/mnd ≈ 20–28
