@@ -1,5 +1,126 @@
 [
  {
+  "datum": "2026-09-07T17:40:06.574Z",
+  "bron": "Positive.News",
+  "titel": "We’re likely to breach 1.5C. What happens next is still in our hands",
+  "gevoel": 1,
+  "formulering": 2,
+  "relevantie": 3,
+  "totaal": 6,
+  "besluit": "nee",
+  "reden": "Kern is klimaatcrisis en onvermijdelijke drempel; hoopvol slot kan somber startpunt niet opheffen."
+ },
+ {
+  "datum": "2026-09-07T17:40:06.574Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "Firm Buys Texas Coal Plant to Leverage its Grid Connections for New Massive Solar Project",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Transformatie van vervuilende naar schone energie; concrete, hoopvolle doorbraak met miljardenbelegging."
+ },
+ {
+  "datum": "2026-09-07T17:40:06.574Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "Chance Encounter Between 2 Indiana Graduates Rescues Former College Ball Star from Homelessness",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 2,
+  "totaal": 8,
+  "besluit": "ja",
+  "reden": "Hartverwarmend verhaal van redding uit dakloosheid door toeval en solidariteit; herkenbare menselijke verbinding."
+ },
+ {
+  "datum": "2026-09-07T17:40:06.574Z",
+  "bron": "ReasonsToBeCheerful.world",
+  "titel": "Beavers Are Having a Moment",
+  "gevoel": 2,
+  "formulering": 1,
+  "relevantie": 3,
+  "totaal": 6,
+  "besluit": "nee",
+  "reden": "Kern begint met jaren van ecologische schade; beavers als 'oplossing' komt pas later, framing is probleem-gericht."
+ },
+ {
+  "datum": "2026-09-07T17:40:06.574Z",
+  "bron": "Squirrel-News.net",
+  "titel": "Colombia creates Amazon’s largest reserve, new carbon-storing building material, London’s largest solar roof",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Drie concrete, positief geformuleerde doorbraken in bescherming, innovatie en duurzame energie."
+ },
+ {
+  "datum": "2026-09-07T17:40:06.574Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "This group has given domestic violence survivors cash with no strings attached for 10 years. It's working",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 4,
+  "totaal": 10,
+  "besluit": "ja",
+  "reden": "Bewezen hulpmodel voor geweldslachtoffers; maatschappelijk relevant, persoonlijk verhaal van empowerment en hoop."
+ },
+ {
+  "datum": "2026-09-07T17:40:06.574Z",
+  "bron": "Newatlas.com",
+  "titel": "Not a single straight line: Spaceship-like Lucas Museum lands in L.A.",
+  "gevoel": 2,
+  "formulering": 3,
+  "relevantie": 2,
+  "totaal": 7,
+  "besluit": "nee",
+  "reden": "Architectonische prestatie zonder maatschappelijke betekenis; vooral consumptief cultuurnieuws."
+ },
+ {
+  "datum": "2026-09-07T17:40:06.574Z",
+  "bron": "Newatlas.com",
+  "titel": "Sea moss to turmeric: Inflammation 'fixers' we need to talk about now",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Wellness-productpromotie en clickbait-listicle zonder verhaal; geen maatschappelijke kern."
+ },
+ {
+  "datum": "2026-09-07T17:40:06.574Z",
+  "bron": "Theecologist.org",
+  "titel": "'We need to hold on to hope'",
+  "gevoel": 2,
+  "formulering": 2,
+  "relevantie": 2,
+  "totaal": 6,
+  "besluit": "nee",
+  "reden": "Evenementaankondiging met citaten; geen verhaal, geen kern, vooral informatief/administratief."
+ },
+ {
+  "datum": "2026-09-07T17:40:06.574Z",
+  "bron": "Theecologist.org",
+  "titel": "Money does grow instead of trees",
+  "gevoel": 1,
+  "formulering": 1,
+  "relevantie": 3,
+  "totaal": 5,
+  "besluit": "nee",
+  "reden": "Maatschappelijk relevant maar framing is probleem-gericht (deforestatie, miljardenchallenges); oplossingen onduidelijk."
+ },
+ {
+  "datum": "2026-09-07T17:40:09.589Z",
+  "bron": "BBC.com/culture",
+  "titel": "The poisoned umbrella that pointed to a KGB murder",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "De tekst is onleesbaar navigatiecode van een website zonder enig nieuwsverhaal; onmogelijk te beoordelen."
+ },
+ {
   "datum": "2026-09-07T04:11:28.045Z",
   "bron": "GoodNewsNetwork.org",
   "titel": "Teen Discovers Coconut Fungi Can Filter Plastic and Sunscreen From Sea—And Wins Science Fair",
@@ -3177,126 +3298,5 @@
   "totaal": 0,
   "besluit": "nee",
   "reden": "kern gaat over financiële onrust en economische zorgen (beursnieuws zonder bredere maatschappelijke betekenis)"
- },
- {
-  "datum": "2026-09-03T09:14:30.766Z",
-  "bron": "BusinessInsider.com",
-  "titel": "Amazon customers are up in arms over an email change",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Commercieel bedrijfsnieuws zonder bredere maatschappelijke betekenis."
- },
- {
-  "datum": "2026-09-03T09:14:32.230Z",
-  "bron": "BusinessInsider.com",
-  "titel": "My husband and I run a bank, but our kids still make financial mistakes. Here's what we're teaching them about money.",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "De kern gaat over financiële empowerment, familiegeschiedenis en doorgegeven waarden, wat hoop en warmte uitstraalt."
- },
- {
-  "datum": "2026-09-03T09:14:42.537Z",
-  "bron": "BusinessInsider.com",
-  "titel": "See where aspiring entrepreneurs are showing the most interest in starting a business, ranked",
-  "gevoel": 2,
-  "formulering": 2,
-  "relevantie": 2,
-  "totaal": 6,
-  "besluit": "nee",
-  "reden": "De kern gaat over een positieve trend (toename ondernemerschap), maar mist een direct warm of hoopgevend gevoel of herkenbare persoonlijke touch."
- },
- {
-  "datum": "2026-09-03T09:14:43.838Z",
-  "bron": "BusinessInsider.com",
-  "titel": "We built a life we love states away from our parents. Now that we're starting a family, I'm second-guessing our choice.",
-  "gevoel": 1,
-  "formulering": 1,
-  "relevantie": 2,
-  "totaal": 4,
-  "besluit": "nee",
-  "reden": "De kern van het verhaal draait om twijfel en onzekerheid, niet om een positief gevoel of herstel."
- },
- {
-  "datum": "2026-09-03T09:15:01.298Z",
-  "bron": "Newatlas.com",
-  "titel": "You can’t trust your smartwatch while you work out",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Productgerelateerd nieuws zonder bredere maatschappelijke betekenis"
- },
- {
-  "datum": "2026-09-03T09:15:02.996Z",
-  "bron": "Newatlas.com",
-  "titel": "Triple-threat WIG hydrofoil aircraft makes maiden flight",
-  "gevoel": 2,
-  "formulering": 3,
-  "relevantie": 2,
-  "totaal": 7,
-  "besluit": "ja",
-  "reden": "De kern is een technologische doorbraak, maar mist een direct warm of hoopgevend gevoel voor een breed publiek."
- },
- {
-  "datum": "2026-09-03T09:15:12.091Z",
-  "bron": "Newatlas.com",
-  "titel": "Anti-aging benefits of exercise achieved with mini-muscle implants",
-  "gevoel": 2,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 8,
-  "besluit": "ja",
-  "reden": "De kern gaat over positieve gezondheidseffecten van beweging, wat hoopvol en relevant is voor een breed publiek."
- },
- {
-  "datum": "2026-09-03T09:15:21.982Z",
-  "bron": "Newatlas.com",
-  "titel": "Kia teases the next great thing in camper vans",
-  "gevoel": 1,
-  "formulering": 2,
-  "relevantie": 1,
-  "totaal": 4,
-  "besluit": "nee",
-  "reden": "Commerciële productaankondiging zonder bredere maatschappelijke betekenis"
- },
- {
-  "datum": "2026-09-03T09:15:23.193Z",
-  "bron": "Newatlas.com",
-  "titel": "Budget scooter steals features from luxury cars",
-  "gevoel": 1,
-  "formulering": 2,
-  "relevantie": 1,
-  "totaal": 4,
-  "besluit": "nee",
-  "reden": "Productlancering zonder bredere maatschappelijke betekenis"
- },
- {
-  "datum": "2026-09-03T09:15:26.575Z",
-  "bron": "Newatlas.com",
-  "titel": "A-frame tiny house brings classic cabin charm to small living",
-  "gevoel": 2,
-  "formulering": 3,
-  "relevantie": 2,
-  "totaal": 7,
-  "besluit": "ja",
-  "reden": "De som van de scores (7) voldoet niet aan de voorwaarde gevoel ≥ 2 EN formulering ≥ 2 EN relevantie ≥ 2 EN som ≥ 7 (relevantie is 2, maar som is exact 7, echter de voorwaarde is 'EN som ≥ 7' — hier is"
- },
- {
-  "datum": "2026-09-03T09:15:35.212Z",
-  "bron": "Newatlas.com",
-  "titel": "The future of work sounds like whispering to your computer",
-  "gevoel": 2,
-  "formulering": 2,
-  "relevantie": 3,
-  "totaal": 7,
-  "besluit": "ja",
-  "reden": "De kern gaat over een positieve, hoopgevende toekomstvisie op werk met een herkenbare situatie."
  }
 ]

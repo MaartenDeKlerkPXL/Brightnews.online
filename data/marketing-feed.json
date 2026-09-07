@@ -1,10 +1,18 @@
 {
- "gegenereerd": "2026-09-07T04:13:34.975Z",
+ "gegenereerd": "2026-09-07T17:44:21.629Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "1788803059663asi2i547z",
+     "titel": "Tien Jaar Onvoorwaardelijk Geld Voor Overlevenden",
+     "teaser": "Non-profitorganisatie FreeFrom, opgericht door Sonya Passi in 2016, geeft overlevenden van gendergerelateerd geweld al tien jaar direct geld zonder voorwaarden, vaak tot 1.500 dollar. Sinds de oprichting is in totaal 10 miljoen dollar rechtstreeks aan overlevenden gegeven. Uit een impactrapport ter gelegenheid van het tienjarig bestaan blijkt dat 94% van de ondervraagden hun sociale welzijn zag verbeteren en 93% hun...",
+     "score": 10,
+     "categorie": "Finance",
+     "url": "https://brightnews.online/articles/nl/tien-jaar-onvoorwaardelijk-geld-voor-overlevenden-1788803059663asi2i547z.html"
+    },
     {
      "id": "1788645872913v6p9gh7ws",
      "titel": "1000 Eenden Vervangen Pesticiden Op Wijnlandgoed",
@@ -14,36 +22,28 @@
      "url": "https://brightnews.online/articles/nl/1000-eenden-vervangen-pesticiden-op-wijnlandgoed-1788645872913v6p9gh7ws.html"
     },
     {
+     "id": "178880299686709ez84b3k",
+     "titel": "Colombia beschermt Amazone, groen bouwmateriaal en zonnedak Londen",
+     "teaser": "President Gustavo Petro heeft vlak voor het einde van zijn ambtstermijn 42% van het Colombiaanse Amazonegebied permanent beschermd tegen nieuwe mijnbouw- en olieprojecten, wat het grootste Amazonereservaat tot nu toe creëert. Bestaande projecten mogen doorgaan, maar er worden geen nieuwe vergunningen meer verleend. Het Finse bedrijf Elementic presenteerde een bouwmateriaal dat voor 90% uit koolstof bestaat, gemaakt van lignine, een...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/colombia-beschermt-amazone-groen-bouwmateriaal-en-zonnedak-londen-178880299686709ez84b3k.html"
+    },
+    {
+     "id": "1788802884862p8ilwvuhv",
+     "titel": "Texaanse Kolencentrale Baant Weg voor Megazonnepark",
+     "teaser": "Investeringsfirma Panamint steekt 1,7 miljard dollar in Big Rooter Power, een enorm zonne- en opslagproject in Robertson, Texas, dat 1,2 gigawatt aan zonne-energie aan het lokale net toevoegt. Door het project naast de bestaande kolencentrale Twin Oaks te bouwen, kan Panamint gebruikmaken van de al aanwezige netinfrastructuur. CEO Apolka Totth noemt dit de duidelijkste manier om gemeenschappen, energieklanten en het...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/texaanse-kolencentrale-baant-weg-voor-megazonnepark-1788802884862p8ilwvuhv.html"
+    },
+    {
      "id": "1788754361332dch26o1r5",
      "titel": "Scholiere Ontdekt Schimmel Die Oceaan Reinigt",
      "teaser": "Vera Wang, senior aan Kaiser High School in East Honolulu, ontdekte een schimmel in kokosnootvezels die plastic en zonnebrandcrème uit zeewater kan afbreken. Ze bouwde eerder al een oceaanfilter van kokosnoot-afval, geïnspireerd op traditioneel Polynesisch weven, die zonnebrandcrème en microplastics uit oppervlaktewater verwijderde. In het Amend Lab aan de University of Hawaiʻi at Mānoa onderzocht ze vervolgens hoe de schimmels...",
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/nl/scholiere-ontdekt-schimmel-die-oceaan-reinigt-1788754361332dch26o1r5.html"
-    },
-    {
-     "id": "1788708076238no8huuobf",
-     "titel": "Recyclebaar Composiet Voor Vliegtuigcabines",
-     "teaser": "Onderzoekers van Empa hebben, samen met chemiebedrijf Elantas, een epoxy-gebaseerd composietmateriaal ontwikkeld dat volledig recyclebaar is. Een fosforhoudend additief, ontwikkeld bij Empa en toegevoegd tijdens de productie, zorgt ervoor dat het uitgeharde materiaal niet alleen vlamvertragend is, maar ook weer kan verzachten of uiteenvallen. Met het juiste oplosmiddel en een beetje warmte kan de zogeheten 'honeycomb sandwich' worden afgebroken in...",
-     "score": 9,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/nl/recyclebaar-composiet-voor-vliegtuigcabines-1788708076238no8huuobf.html"
-    },
-    {
-     "id": "1788668077914dbmh5cikz",
-     "titel": "Flessen redden dolfijnen en meer goed nieuws",
-     "teaser": "Een simpele uitvinding met lege plastic flessen aan visnetten vermindert de bijvangst van dolfijnen met 88 procent, ontdekte een emeritus mariene bioloog. Vlaanderen sluit dolfinarium Boudewijn Seapark uiterlijk in 2037. India lanceerde zijn eerste in eigen land gebouwde waterstoftrein voor niet-geëlektrificeerde routes. Een Japans bedrijf kan nu tot 90 procent van het lithium uit autobatterijen terugwinnen, tegenover minder dan 50...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/flessen-redden-dolfijnen-en-meer-goed-nieuws-1788668077914dbmh5cikz.html"
-    },
-    {
-     "id": "1788667974151j2zsxndgd",
-     "titel": "Buitengym Helpt Daklozen Parijs Vooruit",
-     "teaser": "Een Fins bedrijf, Omnigym, heeft een buitengym geplaatst bij een daklozenopvang in Parijs. Het doel was te testen of makkelijke toegang tot beweging de fysieke en mentale gezondheid van bewoners kan verbeteren. Na een maand blijkt uit anonieme data en zelfevaluaties dat 80% van de deelnemers een verbeterde fysieke gezondheid ervaart. Ook werden positieve effecten gemeld op welzijn, slaap, stemming...",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/nl/buitengym-helpt-daklozen-parijs-vooruit-1788667974151j2zsxndgd.html"
     }
    ],
    "dagoverzichten": [
@@ -87,6 +87,14 @@
   "en": {
    "top": [
     {
+     "id": "1788803059663asi2i547z",
+     "titel": "Ten Years of Unconditional Cash for Survivors",
+     "teaser": "Nonprofit organization FreeFrom, founded by Sonya Passi in 2016, has been providing survivors of gender-based violence with direct cash assistance without conditions for ten years, often up to $1,500. Since its founding, a total of $10 million has been given directly to survivors. According to an impact report marking the organization's tenth anniversary, 94% of respondents saw improvements in their...",
+     "score": 10,
+     "categorie": "Finance",
+     "url": "https://brightnews.online/articles/en/ten-years-of-unconditional-cash-for-survivors-1788803059663asi2i547z.html"
+    },
+    {
      "id": "1788645872913v6p9gh7ws",
      "titel": "1000 Ducks Replace Pesticides On Wine Estate",
      "teaser": "The Vergenoegd Löw Wine Estate in Stellenbosch, South Africa, has used Indian Runner ducks as a natural alternative to pesticides since 1984. The ducks eat pests between the grapevines and fertilize the soil with their droppings. The duck breed was originally bred more than 2000 years ago in Indonesia to combat pests in rice fields. The estate typically has around...",
@@ -95,36 +103,28 @@
      "url": "https://brightnews.online/articles/en/1000-ducks-replace-pesticides-on-wine-estate-1788645872913v6p9gh7ws.html"
     },
     {
+     "id": "178880299686709ez84b3k",
+     "titel": "Colombia protects Amazon, green building material and London solar roof",
+     "teaser": "President Gustavo Petro has permanently protected 42% of Colombia's Amazon region against new mining and oil projects just before the end of his term, creating the largest Amazon reserve to date. Existing projects may continue, but no new permits will be issued. Finnish company Elementic presented a building material that is 90% carbon, made from lignin, a byproduct of the...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/colombia-protects-amazon-green-building-material-and-london-solar-roof-178880299686709ez84b3k.html"
+    },
+    {
+     "id": "1788802884862p8ilwvuhv",
+     "titel": "Texas Coal Plant Paves Way for Mega Solar Park",
+     "teaser": "Investment firm Panamint is investing $1.7 billion in Big Rooter Power, a massive solar and storage project in Robertson, Texas, that adds 1.2 gigawatts of solar energy to the local grid. By building the project next to the existing Twin Oaks coal plant, Panamint can leverage already-present grid infrastructure. CEO Apolka Totth calls this the clearest way to help communities,...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/texas-coal-plant-paves-way-for-mega-solar-park-1788802884862p8ilwvuhv.html"
+    },
+    {
      "id": "1788754361332dch26o1r5",
      "titel": "Student Discovers Fungus That Cleans Ocean",
      "teaser": "Vera Wang, a senior at Kaiser High School in East Honolulu, discovered a fungus in coconut fibers that can break down plastic and sunscreen from seawater. She previously built an ocean filter made from coconut waste, inspired by traditional Polynesian weaving, which removed sunscreen and microplastics from surface water. At the Amend Lab at the University of Hawaiʻi at Mānoa,...",
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/en/student-discovers-fungus-that-cleans-ocean-1788754361332dch26o1r5.html"
-    },
-    {
-     "id": "1788708076238no8huuobf",
-     "titel": "Recyclable Composite For Aircraft Cabins",
-     "teaser": "Researchers at Empa, together with chemical company Elantas, have developed an epoxy-based composite material that is fully recyclable. A phosphorus-containing additive, developed at Empa and added during production, ensures that the cured material is not only flame-retardant, but can also soften or break down again. With the right solvent and a bit of heat, the so-called 'honeycomb sandwich' can be...",
-     "score": 9,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/en/recyclable-composite-for-aircraft-cabins-1788708076238no8huuobf.html"
-    },
-    {
-     "id": "1788668077914dbmh5cikz",
-     "titel": "Bottles save dolphins and more good news",
-     "teaser": "A simple invention using empty plastic bottles attached to fishing nets reduces dolphin bycatch by 88 percent, discovered an emeritus marine biologist. Flanders will close dolphinarium Boudewijn Seapark by 2037 at the latest. India launched its first domestically built hydrogen train for non-electrified routes. A Japanese company can now recover up to 90 percent of lithium from car batteries, compared...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/bottles-save-dolphins-and-more-good-news-1788668077914dbmh5cikz.html"
-    },
-    {
-     "id": "1788667974151j2zsxndgd",
-     "titel": "Outdoor Gym Helps Homeless in Paris Move Forward",
-     "teaser": "A Finnish company, Omnigym, has installed an outdoor gym at a homeless shelter in Paris. The goal was to test whether easy access to exercise can improve residents' physical and mental health. After one month, anonymous data and self-evaluations show that 80% of participants experience improved physical health. Positive effects were also reported on wellbeing, sleep, mood and energy. Residents...",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/en/outdoor-gym-helps-homeless-in-paris-move-forward-1788667974151j2zsxndgd.html"
     }
    ],
    "dagoverzichten": [
@@ -168,6 +168,14 @@
   "de": {
    "top": [
     {
+     "id": "1788803059663asi2i547z",
+     "titel": "Zehn Jahre Bedingungsloses Geld für Überlebende",
+     "teaser": "Die gemeinnützige Organisation FreeFrom, gegründet von Sonya Passi im Jahr 2016, gibt Überlebenden von geschlechtsspezifischer Gewalt seit zehn Jahren direkt Geld ohne Bedingungen, oft bis zu 1.500 Dollar. Seit der Gründung wurden insgesamt 10 Millionen Dollar direkt an Überlebende vergeben. Aus einem Impactbericht anlässlich des zehnjährigen Bestehens geht hervor, dass 94% der Befragten eine Verbesserung ihres sozialen Wohlbefindens feststellten und...",
+     "score": 10,
+     "categorie": "Finance",
+     "url": "https://brightnews.online/articles/de/zehn-jahre-bedingungsloses-geld-fur-uberlebende-1788803059663asi2i547z.html"
+    },
+    {
      "id": "1788645872913v6p9gh7ws",
      "titel": "1000 Enten Ersetzen Pestizide Auf Weingut",
      "teaser": "Das Weingut Vergenoegd Löw in Stellenbosch, Südafrika, nutzt seit 1984 Indian Runner-Enten als natürliche Alternative zu Pestiziden. Die Enten fressen Schädlinge zwischen den Weinstöcken und düngen den Boden mit ihren Ausscheidungen. Die Entenrasse wurde ursprünglich vor mehr als 2000 Jahren in Indonesien gezüchtet, um Schädlinge in Reisfeldern zu bekämpfen. Das Weingut hat normalerweise etwa 1000 Enten und züchtet und verkauft...",
@@ -176,36 +184,28 @@
      "url": "https://brightnews.online/articles/de/1000-enten-ersetzen-pestizide-auf-weingut-1788645872913v6p9gh7ws.html"
     },
     {
+     "id": "178880299686709ez84b3k",
+     "titel": "Kolumbien schützt Amazonas, grünes Baumaterial und Sonnendach London",
+     "teaser": "Präsident Gustavo Petro hat kurz vor dem Ende seiner Amtszeit 42% des kolumbianischen Amazonasgebiets dauerhaft vor neuen Bergbau- und Ölprojekten geschützt und schafft damit das größte Amazonasschutzgebiet bisher. Bestehende Projekte dürfen weitergehen, aber es werden keine neuen Genehmigungen mehr erteilt. Das finnische Unternehmen Elementic präsentierte ein Baumaterial, das zu 90% aus Kohlenstoff besteht und aus Lignin hergestellt wird, einem Nebenprodukt...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/kolumbien-schutzt-amazonas-grunes-baumaterial-und-sonnendach-london-178880299686709ez84b3k.html"
+    },
+    {
+     "id": "1788802884862p8ilwvuhv",
+     "titel": "Texanisches Kohlekraftwerk ebnet Weg für Megasolarpark",
+     "teaser": "Die Investmentfirma Panamint investiert 1,7 Milliarden Dollar in Big Rooter Power, ein riesiges Solar- und Speicherprojekt in Robertson, Texas, das 1,2 Gigawatt Solarenergie ins lokale Netz einspeist. Durch den Bau des Projekts neben dem bestehenden Kohlekraftwerk Twin Oaks kann Panamint die bereits vorhandene Netzinfrastruktur nutzen. CEO Apolka Totth nennt dies den klarsten Weg, um Gemeinden, Energiekunden und die Umwelt zu...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/texanisches-kohlekraftwerk-ebnet-weg-fur-megasolarpark-1788802884862p8ilwvuhv.html"
+    },
+    {
      "id": "1788754361332dch26o1r5",
      "titel": "Schülerin Entdeckt Pilz Der Ozean Reinigt",
      "teaser": "Vera Wang, Oberstufenschülerin der Kaiser High School in East Honolulu, entdeckte einen Pilz in Kokosfasern, der Kunststoff und Sonnencreme aus Meerwasser abbauen kann. Sie hatte zuvor bereits einen Ozeanfilter aus Kokosnussabfällen gebaut, inspiriert durch traditionelles polynesisches Weben, der Sonnencreme und Mikroplastik aus Oberflächenwasser entfernte. Im Amend Lab der University of Hawaiʻi at Mānoa untersuchte sie anschließend, wie die Pilze auf...",
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/de/schulerin-entdeckt-pilz-der-ozean-reinigt-1788754361332dch26o1r5.html"
-    },
-    {
-     "id": "1788708076238no8huuobf",
-     "titel": "Recycelbares Komposit für Flugzeugkabinen",
-     "teaser": "Forscher der Empa haben zusammen mit dem Chemieunternehmen Elantas ein epoxidbasiertes Verbundmaterial entwickelt, das vollständig recycelbar ist. Ein phosphorhaltiger Zusatzstoff, entwickelt bei der Empa und während der Produktion hinzugefügt, sorgt dafür, dass das ausgehärtete Material nicht nur flammhemmend ist, sondern sich auch wieder erweichen oder auseinandernehmen lässt. Mit dem richtigen Lösungsmittel und etwas Wärme kann das sogenannte 'Honeycomb-Sandwich' in die...",
-     "score": 9,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/de/recycelbares-komposit-fur-flugzeugkabinen-1788708076238no8huuobf.html"
-    },
-    {
-     "id": "1788668077914dbmh5cikz",
-     "titel": "Flaschen retten Delfine und mehr gute Nachrichten",
-     "teaser": "Eine einfache Erfindung mit leeren Plastikflaschen an Fischernetzen reduziert den Beifang von Delfinen um 88 Prozent, entdeckte ein emeritierter Meeresbiologe. Flandern schließt das Delfinarium Boudewijn Seapark spätestens 2037. Indien startete seinen ersten im Inland gebauten Wasserstoffzug für nicht elektrifizierte Strecken. Ein japanisches Unternehmen kann nun bis zu 90 Prozent des Lithiums aus Autobatterien zurückgewinnen, gegenüber weniger als 50 Prozent zuvor....",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/flaschen-retten-delfine-und-mehr-gute-nachrichten-1788668077914dbmh5cikz.html"
-    },
-    {
-     "id": "1788667974151j2zsxndgd",
-     "titel": "Outdoor-Gym Hilft Obdachlosen in Paris Weiter",
-     "teaser": "Ein finnisches Unternehmen, Omnigym, hat ein Outdoor-Gym bei einer Obdachlosenunterkunft in Paris installiert. Ziel war es zu testen, ob leichter Zugang zu Bewegung die physische und mentale Gesundheit der Bewohner verbessern kann. Nach einem Monat zeigen anonyme Daten und Selbstbewertungen, dass 80% der Teilnehmer eine verbesserte physische Gesundheit erfahren. Auch positive Effekte auf Wohlbefinden, Schlaf, Stimmung und Energie wurden gemeldet....",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/de/outdoor-gym-hilft-obdachlosen-in-paris-weiter-1788667974151j2zsxndgd.html"
     }
    ],
    "dagoverzichten": [
@@ -249,6 +249,14 @@
   "fr": {
    "top": [
     {
+     "id": "1788803059663asi2i547z",
+     "titel": "Dix Ans d'Argent Sans Conditions Pour les Survivantes",
+     "teaser": "L'organisation à but non lucratif FreeFrom, fondée par Sonya Passi en 2016, verse depuis dix ans de l'argent directement aux survivantes de violences liées au genre, sans conditions, souvent jusqu'à 1.500 dollars. Depuis sa création, un total de 10 millions de dollars a été versé directement aux survivantes. Selon un rapport d'impact publié à l'occasion du dixième anniversaire, 94% des...",
+     "score": 10,
+     "categorie": "Finance",
+     "url": "https://brightnews.online/articles/fr/dix-ans-d-argent-sans-conditions-pour-les-survivantes-1788803059663asi2i547z.html"
+    },
+    {
      "id": "1788645872913v6p9gh7ws",
      "titel": "1000 Canards Remplacent les Pesticides dans un Vignoble",
      "teaser": "Le domaine viticole Vergenoegd Löw à Stellenbosch, en Afrique du Sud, utilise depuis 1984 des canards Indian Runner comme alternative naturelle aux pesticides. Les canards mangent les ravageurs entre les ceps de vigne et fertilisent le sol avec leurs excréments. Cette race de canards a été élevée à l'origine il y a plus de 2000 ans en Indonésie pour combattre...",
@@ -257,36 +265,28 @@
      "url": "https://brightnews.online/articles/fr/1000-canards-remplacent-les-pesticides-dans-un-vignoble-1788645872913v6p9gh7ws.html"
     },
     {
+     "id": "178880299686709ez84b3k",
+     "titel": "Colombie protège l'Amazonie, matériau de construction vert et toit solaire à Londres",
+     "teaser": "Le président Gustavo Petro a protégé de manière permanente 42% de la région amazonienne colombienne contre les nouveaux projets miniers et pétroliers, juste avant la fin de son mandat, créant ainsi la plus grande réserve amazonienne à ce jour. Les projets existants peuvent continuer, mais aucune nouvelle licence ne sera accordée. L'entreprise finlandaise Elementic a présenté un matériau de construction...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/colombie-protege-l-amazonie-materiau-de-construction-vert-et-toit-solaire-a-lond-178880299686709ez84b3k.html"
+    },
+    {
+     "id": "1788802884862p8ilwvuhv",
+     "titel": "Centrale Charbon Texane Ouvre la Voie à un Mégaparc Solaire",
+     "teaser": "La firme d'investissement Panamint injecte 1,7 milliard de dollars dans Big Rooter Power, un immense projet solaire et de stockage à Robertson, au Texas, qui ajoute 1,2 gigawatt d'énergie solaire au réseau local. En construisant le projet à côté de la centrale charbon existante Twin Oaks, Panamint peut exploiter l'infrastructure réseau déjà en place. La PDG Apolka Totth affirme que...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/centrale-charbon-texane-ouvre-la-voie-a-un-megaparc-solaire-1788802884862p8ilwvuhv.html"
+    },
+    {
      "id": "1788754361332dch26o1r5",
      "titel": "Écolière Découvre un Champignon qui Purifie l'Océan",
      "teaser": "Vera Wang, élève de terminale au Kaiser High School à East Honolulu, a découvert un champignon dans les fibres de noix de coco capable de décomposer le plastique et la crème solaire de l'eau de mer. Elle avait auparavant construit un filtre océanique à partir de déchets de noix de coco, inspiré par le tissage polynésien traditionnel, qui éliminait la...",
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/fr/ecoliere-decouvre-un-champignon-qui-purifie-l-ocean-1788754361332dch26o1r5.html"
-    },
-    {
-     "id": "1788708076238no8huuobf",
-     "titel": "Composite Recyclable Pour Cabines d'Avion",
-     "teaser": "Des chercheurs d'Empa ont développé, en collaboration avec l'entreprise chimique Elantas, un matériau composite à base d'époxy entièrement recyclable. Un additif contenant du phosphore, développé à Empa et ajouté lors de la production, fait en sorte que le matériau durci non seulement retarde la flamme, mais peut aussi se ramollir ou se désagréger à nouveau. Avec le bon solvant et...",
-     "score": 9,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/fr/composite-recyclable-pour-cabines-d-avion-1788708076238no8huuobf.html"
-    },
-    {
-     "id": "1788668077914dbmh5cikz",
-     "titel": "Des bouteilles sauvent les dauphins et plus de bonnes nouvelles",
-     "teaser": "Une simple invention consistant à fixer des bouteilles en plastique vides aux filets de pêche réduit les prises accessoires de dauphins de 88 pour cent, a découvert un biologiste marin émérite. La Flandre ferme le delphinarium Boudewijn Seapark au plus tard en 2037. L'Inde a lancé son premier train à hydrogène construit sur place pour les lignes non électrifiées. Une...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/des-bouteilles-sauvent-les-dauphins-et-plus-de-bonnes-nouvelles-1788668077914dbmh5cikz.html"
-    },
-    {
-     "id": "1788667974151j2zsxndgd",
-     "titel": "Salle de Sport Extérieure Aide les Sans-Abri de Paris",
-     "teaser": "Une entreprise finlandaise, Omnigym, a installé une salle de sport extérieure dans un centre d'accueil pour sans-abri à Paris. L'objectif était de tester si un accès facile à l'exercice physique pouvait améliorer la santé physique et mentale des résidents. Après un mois, les données anonymes et les auto-évaluations montrent que 80% des participants ont constaté une amélioration de leur santé...",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/fr/salle-de-sport-exterieure-aide-les-sans-abri-de-paris-1788667974151j2zsxndgd.html"
     }
    ],
    "dagoverzichten": [
@@ -330,6 +330,14 @@
   "es": {
    "top": [
     {
+     "id": "1788803059663asi2i547z",
+     "titel": "Diez Años de Dinero Incondicional para Sobrevivientes",
+     "teaser": "La organización sin fines de lucro FreeFrom, fundada por Sonya Passi en 2016, entrega dinero directo sin condiciones a sobrevivientes de violencia relacionada con el género durante diez años, frecuentemente hasta 1.500 dólares. Desde su fundación, se han entregado un total de 10 millones de dólares directamente a sobrevivientes. Según un informe de impacto con motivo del décimo aniversario, el...",
+     "score": 10,
+     "categorie": "Finance",
+     "url": "https://brightnews.online/articles/es/diez-anos-de-dinero-incondicional-para-sobrevivientes-1788803059663asi2i547z.html"
+    },
+    {
      "id": "1788645872913v6p9gh7ws",
      "titel": "1000 Patos Reemplazan Pesticidas En Viña",
      "teaser": "La finca vinícola Vergenoegd Löw Wine Estate en Stellenbosch, Sudáfrica, utiliza desde 1984 patos Indian Runner como alternativa natural a los pesticidas. Los patos comen plagas entre las vides y fertilizan el suelo con sus excrementos. Esta raza de patos fue criada originalmente hace más de 2000 años en Indonesia para combatir plagas en arrozales. La finca cuenta normalmente con...",
@@ -338,36 +346,28 @@
      "url": "https://brightnews.online/articles/es/1000-patos-reemplazan-pesticidas-en-vina-1788645872913v6p9gh7ws.html"
     },
     {
+     "id": "178880299686709ez84b3k",
+     "titel": "Colombia protege Amazonia, material construcción verde y techo solar Londres",
+     "teaser": "El presidente Gustavo Petro ha protegido permanentemente el 42% de la región amazónica colombiana contra nuevos proyectos mineros y petroleros justo antes del final de su mandato, creando la mayor reserva amazónica hasta ahora. Los proyectos existentes pueden continuar, pero no se otorgarán nuevas licencias. La empresa finlandesa Elementic presentó un material de construcción compuesto en un 90% por carbono,...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/colombia-protege-amazonia-material-construccion-verde-y-techo-solar-londres-178880299686709ez84b3k.html"
+    },
+    {
+     "id": "1788802884862p8ilwvuhv",
+     "titel": "Central Carbón de Texas Abre Camino a Megaparque Solar",
+     "teaser": "La firma de inversión Panamint invierte 1.700 millones de dólares en Big Rooter Power, un enorme proyecto de energía solar y almacenamiento en Robertson, Texas, que añade 1,2 gigavatios de energía solar a la red local. Al construir el proyecto junto a la central carbónica existente Twin Oaks, Panamint puede aprovechar la infraestructura de red ya presente. La CEO Apolka...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/central-carbon-de-texas-abre-camino-a-megaparque-solar-1788802884862p8ilwvuhv.html"
+    },
+    {
      "id": "1788754361332dch26o1r5",
      "titel": "Estudiante Descubre Hongo Que Limpia el Océano",
      "teaser": "Vera Wang, estudiante de último año de Kaiser High School en East Honolulu, descubrió un hongo en fibras de coco que puede descomponer plástico y protector solar del agua de mar. Anteriormente había construido un filtro oceánico hecho de residuos de coco, inspirado en el tejido polinésico tradicional, que eliminaba protector solar y microplásticos del agua superficial. En el Amend...",
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/es/estudiante-descubre-hongo-que-limpia-el-oceano-1788754361332dch26o1r5.html"
-    },
-    {
-     "id": "1788708076238no8huuobf",
-     "titel": "Composite Reciclable Para Cabinas de Avión",
-     "teaser": "Investigadores de Empa han desarrollado, junto con la empresa química Elantas, un material composite basado en epoxi que es completamente reciclable. Un aditivo que contiene fósforo, desarrollado en Empa y añadido durante la producción, hace que el material endurecido no solo sea retardante de llama, sino que también pueda reblandecerse o descomponerse nuevamente. Con el disolvente adecuado y un poco...",
-     "score": 9,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/es/composite-reciclable-para-cabinas-de-avion-1788708076238no8huuobf.html"
-    },
-    {
-     "id": "1788668077914dbmh5cikz",
-     "titel": "Botellas salvan delfines y más buenas noticias",
-     "teaser": "Un invento simple con botellas de plástico vacías en redes de pesca reduce la captura incidental de delfines en un 88 por ciento, descubrió un biólogo marino emérito. Flandes cierra el delfinario Boudewijn Seapark a más tardar en 2037. India lanzó su primer tren de hidrógeno construido en el país para rutas no electrificadas. Una empresa japonesa puede recuperar ahora...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/botellas-salvan-delfines-y-mas-buenas-noticias-1788668077914dbmh5cikz.html"
-    },
-    {
-     "id": "1788667974151j2zsxndgd",
-     "titel": "Gimnasio Exterior Ayuda a Personas sin Hogar en París",
-     "teaser": "Una empresa finlandesa, Omnigym, ha instalado un gimnasio exterior en un albergue para personas sin hogar en París. El objetivo era probar si el acceso fácil al ejercicio puede mejorar la salud física y mental de los residentes. Después de un mes, datos anónimos y autoevaluaciones muestran que el 80% de los participantes experimenta una salud física mejorada. También se...",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/es/gimnasio-exterior-ayuda-a-personas-sin-hogar-en-paris-1788667974151j2zsxndgd.html"
     }
    ],
    "dagoverzichten": [
