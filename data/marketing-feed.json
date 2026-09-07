@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-09-06T15:24:32.305Z",
+ "gegenereerd": "2026-09-07T04:13:34.975Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -12,6 +12,14 @@
      "score": 10,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/1000-eenden-vervangen-pesticiden-op-wijnlandgoed-1788645872913v6p9gh7ws.html"
+    },
+    {
+     "id": "1788754361332dch26o1r5",
+     "titel": "Scholiere Ontdekt Schimmel Die Oceaan Reinigt",
+     "teaser": "Vera Wang, senior aan Kaiser High School in East Honolulu, ontdekte een schimmel in kokosnootvezels die plastic en zonnebrandcrème uit zeewater kan afbreken. Ze bouwde eerder al een oceaanfilter van kokosnoot-afval, geïnspireerd op traditioneel Polynesisch weven, die zonnebrandcrème en microplastics uit oppervlaktewater verwijderde. In het Amend Lab aan de University of Hawaiʻi at Mānoa onderzocht ze vervolgens hoe de schimmels...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/nl/scholiere-ontdekt-schimmel-die-oceaan-reinigt-1788754361332dch26o1r5.html"
     },
     {
      "id": "1788708076238no8huuobf",
@@ -36,14 +44,6 @@
      "score": 9,
      "categorie": "Health",
      "url": "https://brightnews.online/articles/nl/buitengym-helpt-daklozen-parijs-vooruit-1788667974151j2zsxndgd.html"
-    },
-    {
-     "id": "1788648470866m1vi4va9k",
-     "titel": "Wasserette Wordt Bibliotheek Voor Kinderen",
-     "teaser": "In een wasserette in Wyoming, Ohio, hangen vier manden vol kinderboeken zoals 'Mike Mulligan and His Steam Shovel'. Janice Weiser richtte deze boekenhoek in november in en vult hem elke tien dagen aan. Het is onderdeel van de Laundromat Library League, een netwerk van meer dan 200 wasserettes door de VS die boeken aanbieden aan kinderen. De organisatie, opgericht door...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/wasserette-wordt-bibliotheek-voor-kinderen-1788648470866m1vi4va9k.html"
     }
    ],
    "dagoverzichten": [
@@ -95,6 +95,14 @@
      "url": "https://brightnews.online/articles/en/1000-ducks-replace-pesticides-on-wine-estate-1788645872913v6p9gh7ws.html"
     },
     {
+     "id": "1788754361332dch26o1r5",
+     "titel": "Student Discovers Fungus That Cleans Ocean",
+     "teaser": "Vera Wang, a senior at Kaiser High School in East Honolulu, discovered a fungus in coconut fibers that can break down plastic and sunscreen from seawater. She previously built an ocean filter made from coconut waste, inspired by traditional Polynesian weaving, which removed sunscreen and microplastics from surface water. At the Amend Lab at the University of Hawaiʻi at Mānoa,...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/en/student-discovers-fungus-that-cleans-ocean-1788754361332dch26o1r5.html"
+    },
+    {
      "id": "1788708076238no8huuobf",
      "titel": "Recyclable Composite For Aircraft Cabins",
      "teaser": "Researchers at Empa, together with chemical company Elantas, have developed an epoxy-based composite material that is fully recyclable. A phosphorus-containing additive, developed at Empa and added during production, ensures that the cured material is not only flame-retardant, but can also soften or break down again. With the right solvent and a bit of heat, the so-called 'honeycomb sandwich' can be...",
@@ -117,14 +125,6 @@
      "score": 9,
      "categorie": "Health",
      "url": "https://brightnews.online/articles/en/outdoor-gym-helps-homeless-in-paris-move-forward-1788667974151j2zsxndgd.html"
-    },
-    {
-     "id": "1788648470866m1vi4va9k",
-     "titel": "Laundromat Becomes Library for Children",
-     "teaser": "In a laundromat in Wyoming, Ohio, four baskets hang filled with children's books such as 'Mike Mulligan and His Steam Shovel'. Janice Weiser established this book corner in November and restocks it every ten days. It is part of the Laundromat Library League, a network of more than 200 laundromats across the US that offer books to children. The organization,...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/laundromat-becomes-library-for-children-1788648470866m1vi4va9k.html"
     }
    ],
    "dagoverzichten": [
@@ -176,6 +176,14 @@
      "url": "https://brightnews.online/articles/de/1000-enten-ersetzen-pestizide-auf-weingut-1788645872913v6p9gh7ws.html"
     },
     {
+     "id": "1788754361332dch26o1r5",
+     "titel": "Schülerin Entdeckt Pilz Der Ozean Reinigt",
+     "teaser": "Vera Wang, Oberstufenschülerin der Kaiser High School in East Honolulu, entdeckte einen Pilz in Kokosfasern, der Kunststoff und Sonnencreme aus Meerwasser abbauen kann. Sie hatte zuvor bereits einen Ozeanfilter aus Kokosnussabfällen gebaut, inspiriert durch traditionelles polynesisches Weben, der Sonnencreme und Mikroplastik aus Oberflächenwasser entfernte. Im Amend Lab der University of Hawaiʻi at Mānoa untersuchte sie anschließend, wie die Pilze auf...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/de/schulerin-entdeckt-pilz-der-ozean-reinigt-1788754361332dch26o1r5.html"
+    },
+    {
      "id": "1788708076238no8huuobf",
      "titel": "Recycelbares Komposit für Flugzeugkabinen",
      "teaser": "Forscher der Empa haben zusammen mit dem Chemieunternehmen Elantas ein epoxidbasiertes Verbundmaterial entwickelt, das vollständig recycelbar ist. Ein phosphorhaltiger Zusatzstoff, entwickelt bei der Empa und während der Produktion hinzugefügt, sorgt dafür, dass das ausgehärtete Material nicht nur flammhemmend ist, sondern sich auch wieder erweichen oder auseinandernehmen lässt. Mit dem richtigen Lösungsmittel und etwas Wärme kann das sogenannte 'Honeycomb-Sandwich' in die...",
@@ -198,14 +206,6 @@
      "score": 9,
      "categorie": "Health",
      "url": "https://brightnews.online/articles/de/outdoor-gym-hilft-obdachlosen-in-paris-weiter-1788667974151j2zsxndgd.html"
-    },
-    {
-     "id": "1788648470866m1vi4va9k",
-     "titel": "Wäscherei Wird Bücherei Für Kinder",
-     "teaser": "In einer Wäscherei in Wyoming, Ohio, hängen vier Körbe voller Kinderbücher wie 'Mike Mulligan and His Steam Shovel'. Janice Weiser richtete diese Bücherecke im November ein und füllt sie alle zehn Tage auf. Es ist Teil der Laundromat Library League, ein Netzwerk von mehr als 200 Wäschereien in den USA, die Bücher für Kinder anbieten. Die Organisation, gegründet von zwei...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/wascherei-wird-bucherei-fur-kinder-1788648470866m1vi4va9k.html"
     }
    ],
    "dagoverzichten": [
@@ -257,6 +257,14 @@
      "url": "https://brightnews.online/articles/fr/1000-canards-remplacent-les-pesticides-dans-un-vignoble-1788645872913v6p9gh7ws.html"
     },
     {
+     "id": "1788754361332dch26o1r5",
+     "titel": "Écolière Découvre un Champignon qui Purifie l'Océan",
+     "teaser": "Vera Wang, élève de terminale au Kaiser High School à East Honolulu, a découvert un champignon dans les fibres de noix de coco capable de décomposer le plastique et la crème solaire de l'eau de mer. Elle avait auparavant construit un filtre océanique à partir de déchets de noix de coco, inspiré par le tissage polynésien traditionnel, qui éliminait la...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/fr/ecoliere-decouvre-un-champignon-qui-purifie-l-ocean-1788754361332dch26o1r5.html"
+    },
+    {
      "id": "1788708076238no8huuobf",
      "titel": "Composite Recyclable Pour Cabines d'Avion",
      "teaser": "Des chercheurs d'Empa ont développé, en collaboration avec l'entreprise chimique Elantas, un matériau composite à base d'époxy entièrement recyclable. Un additif contenant du phosphore, développé à Empa et ajouté lors de la production, fait en sorte que le matériau durci non seulement retarde la flamme, mais peut aussi se ramollir ou se désagréger à nouveau. Avec le bon solvant et...",
@@ -279,14 +287,6 @@
      "score": 9,
      "categorie": "Health",
      "url": "https://brightnews.online/articles/fr/salle-de-sport-exterieure-aide-les-sans-abri-de-paris-1788667974151j2zsxndgd.html"
-    },
-    {
-     "id": "1788648470866m1vi4va9k",
-     "titel": "Une Laverie Devient Bibliothèque Pour Enfants",
-     "teaser": "Dans une laverie à Wyoming, Ohio, quatre paniers remplis de livres pour enfants comme « Mike Mulligan and His Steam Shovel » sont accrochés au mur. Janice Weiser a créé ce coin lecture en novembre et le complète tous les dix jours. Il fait partie de la Laundromat Library League, un réseau de plus de 200 laveries aux États-Unis qui...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/une-laverie-devient-bibliotheque-pour-enfants-1788648470866m1vi4va9k.html"
     }
    ],
    "dagoverzichten": [
@@ -338,6 +338,14 @@
      "url": "https://brightnews.online/articles/es/1000-patos-reemplazan-pesticidas-en-vina-1788645872913v6p9gh7ws.html"
     },
     {
+     "id": "1788754361332dch26o1r5",
+     "titel": "Estudiante Descubre Hongo Que Limpia el Océano",
+     "teaser": "Vera Wang, estudiante de último año de Kaiser High School en East Honolulu, descubrió un hongo en fibras de coco que puede descomponer plástico y protector solar del agua de mar. Anteriormente había construido un filtro oceánico hecho de residuos de coco, inspirado en el tejido polinésico tradicional, que eliminaba protector solar y microplásticos del agua superficial. En el Amend...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/es/estudiante-descubre-hongo-que-limpia-el-oceano-1788754361332dch26o1r5.html"
+    },
+    {
      "id": "1788708076238no8huuobf",
      "titel": "Composite Reciclable Para Cabinas de Avión",
      "teaser": "Investigadores de Empa han desarrollado, junto con la empresa química Elantas, un material composite basado en epoxi que es completamente reciclable. Un aditivo que contiene fósforo, desarrollado en Empa y añadido durante la producción, hace que el material endurecido no solo sea retardante de llama, sino que también pueda reblandecerse o descomponerse nuevamente. Con el disolvente adecuado y un poco...",
@@ -360,14 +368,6 @@
      "score": 9,
      "categorie": "Health",
      "url": "https://brightnews.online/articles/es/gimnasio-exterior-ayuda-a-personas-sin-hogar-en-paris-1788667974151j2zsxndgd.html"
-    },
-    {
-     "id": "1788648470866m1vi4va9k",
-     "titel": "Lavandería Se Convierte en Biblioteca Para Niños",
-     "teaser": "En una lavandería en Wyoming, Ohio, cuelgan cuatro canastas llenas de libros infantiles como 'Mike Mulligan and His Steam Shovel'. Janice Weiser estableció esta sección de libros en noviembre y la repone cada diez días. Es parte de la Laundromat Library League, una red de más de 200 lavanderías en EE.UU. que ofrecen libros a los niños. La organización, fundada...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/lavanderia-se-convierte-en-biblioteca-para-ninos-1788648470866m1vi4va9k.html"
     }
    ],
    "dagoverzichten": [
