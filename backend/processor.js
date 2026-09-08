@@ -277,79 +277,27 @@ const FEEDS = [
     { name: 'Adventure-Journal.com', url: 'https://www.adventure-journal.com/feed/' },
 ];
 
-// 1. Categorie-specifieke Unsplash lijsten
-const categoryFallbacks = {
-    'Tech': [
-        "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80",
-        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80",
-        "https://images.unsplash.com/photo-1550751827-4bd374c3f58b",
-        "https://images.unsplash.com/photo-1576400883215-7083980b6193",
-        "https://images.unsplash.com/photo-1580584126903-c17d41830450"
-    ],
-    'Health': [
-        "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
-        "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
-        "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
-        "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800&q=80",
-        // "https://unsplash.com/photos/woman-walking-on-pathway-during-daytime-mNGaaLeWEp0",
-        // "https://unsplash.com/photos/four-person-hands-wrap-around-shoulders-while-looking-at-sunset-PGnqT0rXWLs",
-        // "https://unsplash.com/photos/person-wearing-orange-and-gray-nike-shoes-walking-on-gray-concrete-stairs-PHIgYUGQPvU",
-        // "https://unsplash.com/photos/girl-in-blue-jacket-holding-red-and-silver-ring-Y-3Dt0us7e0",
-        // "https://unsplash.com/photos/a-group-of-white-boxes-with-black-text-on-a-wooden-surface-Tuy2n9md0AI"
-    ],
-    'Science': [
-        "https://images.unsplash.com/photo-1554475901-4538ddfbccc2?w=800&q=80", // OgvqXGL7XO4
-        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80", // lQGJCMY5qcM
-        "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=800&q=80", // 5nI9N2wNcBU
-        "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&q=80", // Modern laboratorium
-        "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=800&q=80", // Sterrenstelsel / Ruimtevaart
-        // "https://unsplash.com/photos/water-droplets-on-glass-during-daytime-Mm1VIPqd0OA",
-        // "https://unsplash.com/photos/purple-and-pink-plasma-ball-OgvqXGL7XO4",
-        // "https://unsplash.com/photos/three-clear-beakers-placed-on-tabletop-lQGJCMY5qcM",
-        // "https://unsplash.com/photos/a-close-up-of-a-blue-light-in-the-dark-G66K_ERZRhM",
-        // "https://unsplash.com/photos/refill-of-liquid-on-tubes-pwcKF7L4-no",
-        // "https://unsplash.com/photos/water-droplets-on-a-surface-5nI9N2wNcBU",
-        // "https://unsplash.com/photos/a-blue-abstract-background-with-lines-and-dots-pREq0ns_p_E"
-    ],
-    'Lifestyle': [
-        "https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=800&q=80", // tXiMrX3Gc-g
-        "https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=800&q=80", // CihXnvELE00
-        "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80", // z0nVqfrOqWA
-        "https://images.unsplash.com/photo-1502444330042-d1a1ddf9bb5b?w=800&q=80", // KYTT8L5JLDs
-        "https://images.unsplash.com/photo-1464998857633-50e59fbf2fe6?w=800&q=80", // M1aegHe2j6g
-        "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=800&q=80", // C2GI1fuoSQ8
-        // "https://unsplash.com/photos/photo-of-three-women-lifting-there-hands-tXiMrX3Gc-g",
-        // "https://unsplash.com/photos/man-wearing-white-shorts-holding-black-backpack-CihXnvELE00",
-        // "https://unsplash.com/photos/person-sitting-on-top-of-gray-rock-overlooking-mountain-during-daytime-z0nVqfrOqWA",
-        // "https://unsplash.com/photos/woman-on-hammock-near-to-river-KYTT8L5JLDs",
-        // "https://unsplash.com/photos/two-man-carrying-backpacks-during-daytime-M1aegHe2j6g",
-        // "https://unsplash.com/photos/man-sitting-on-chair-holding-phone-C2GI1fuoSQ8",
-        // "https://unsplash.com/photos/woman-wearing-white-sweater-carrying-a-daughter-YLMs82LF6FY",
-        "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e"
-    ],
-    'Environment': [
-        "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
-        "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=800&q=80",
-        "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80",
-        "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80",
-    ],
-    'Finance': [
-        "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&q=80",
-        "https://images.unsplash.com/photo-1579621970795-87facc2f976d?w=800&q=80", // Groeiend plantje uit munten
-        "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=800&q=80", // Professionele financiële koersgrafieken
-        "https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=800&q=80", // Stapels munten en goudstukken (Rijkdom)
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80", // Business data en grafieken op een scherm
-        "https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?w=800&q=80", // Een spaarvarken in het zonlicht (Besparingen)
-        "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80"  // Moderne boekhouding en rekenmachine (Overzicht)
+// 1. Categorie-specifieke reservefoto's.
+// Eigen bestanden in assets/fallback/ (2026-09-08) i.p.v. Unsplash-URL's:
+// geen externe afhankelijkheid meer, en de foto's zijn op maat (max 1400px,
+// ~150 KB) in plaats van 5000px+ originelen. Namen volgen de categorie, dus
+// een artikel krijgt altijd een foto die bij zijn onderwerp past.
+const FALLBACK_PAD = '/assets/fallback';
+const maakLijst = (naam, aantal) =>
+    Array.from({ length: aantal }, (_, i) => `${FALLBACK_PAD}/${naam}-${i + 1}.jpg`);
 
-    ],
-    'General': [
-        "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80", // Prachtige zonsopgang
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80", // Kleurrijk landschap / Natuur
-        "https://images.unsplash.com/photo-1501426026826-31c667bdf23d?w=800&q=80", // Zonnig strand / Vakantiegevoel
-        "https://images.unsplash.com/photo-1519834785169-98be25ec3f84?w=800&q=80"  // Blauwe lucht met witte wolken
-    ]
+const categoryFallbacks = {
+    'Tech': maakLijst('tech', 4),
+    'Health': maakLijst('health', 5),
+    'Science': maakLijst('science', 4),
+    'Lifestyle': maakLijst('lifestyle', 4),
+    'Environment': maakLijst('environment', 5),
+    'Finance': maakLijst('finance', 4)
 };
+
+// Onbekende of ontbrekende categorie: alles op één hoop, zodat er altijd
+// iets te kiezen valt.
+categoryFallbacks['General'] = Object.values(categoryFallbacks).flat();
 
 // verwerkAIResponse komt uit ai-adapter.js (robuuste drietrapse parser).
 

@@ -62,7 +62,30 @@ function veiligeUrl(u, fallback) {
     return typeof u === 'string' && /^https?:\/\//i.test(u) ? u : fallback;
 }
 
-const FALLBACK_IMG = 'https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80';
+// Afbeeldingen mogen ook een eigen, root-relatief pad zijn (/assets/fallback/…),
+// dat processor.js toekent als de feed geen foto meelevert. Alleen dat ene pad
+// toestaan, zodat er niets anders relatiefs doorheen glipt.
+function veiligeAfbeelding(u, fallback) {
+    if (typeof u === 'string' && /^\/assets\/[A-Za-z0-9/_-]+\.(jpg|jpeg|png|webp)$/.test(u)) return u;
+    return veiligeUrl(u, fallback);
+}
+
+// Reservefoto's: eigen bestanden in assets/fallback/ (2026-09-08). Per
+// categorie een eigen setje, en de keuze is deterministisch op artikel-id —
+// dezelfde pagina levert bij elke generatie dezelfde foto, anders zou elke
+// Action-run alle pagina's laten wijzigen.
+const RESERVE_PER_CATEGORIE = {
+    'Tech': 4, 'Health': 5, 'Science': 4, 'Lifestyle': 4, 'Environment': 5, 'Finance': 4
+};
+
+function reserveAfbeelding(artikel) {
+    const categorie = RESERVE_PER_CATEGORIE[artikel && artikel.category] ? artikel.category : 'Lifestyle';
+    const aantal = RESERVE_PER_CATEGORIE[categorie];
+    const id = String((artikel && artikel.id) || '');
+    let som = 0;
+    for (let i = 0; i < id.length; i++) som = (som + id.charCodeAt(i)) % 100000;
+    return `/assets/fallback/${categorie.toLowerCase()}-${(som % aantal) + 1}.jpg`;
+}
 
 function paginaHtml(artikel, lang, slugsPerTaal, manifest) {
     const bestand = `${slugsPerTaal[lang]}-${artikel.id}.html`;
@@ -74,7 +97,7 @@ function paginaHtml(artikel, lang, slugsPerTaal, manifest) {
         : maakTeaser(artikel.summary);
     const isIngekort = teaser !== String(artikel.summary || '') || String(artikel.summary || '').trim().endsWith('...');
     const beschrijving = (artikel.meta_description || teaser).slice(0, 155);
-    const afbeelding = veiligeUrl(artikel.image, FALLBACK_IMG);
+    const afbeelding = veiligeAfbeelding(artikel.image, reserveAfbeelding(artikel));
     const bron = artikel.source || t(lang, 'unknown_source');
     const bronLink = veiligeUrl(artikel.link, null);
     const isoDatum = artikel.date ? new Date(artikel.date).toISOString() : '';
@@ -246,7 +269,7 @@ ${hreflangs}
 
     <div class="detail-container" data-static-article data-article-id="${escapeHtml(String(artikel.id))}" data-article-lang="${lang}" ${altAttrs}>
     <div class="detail-hero">
-        <img class="detail-img" src="${escapeHtml(afbeelding)}" alt="${escapeHtml(artikel.image_alt || artikel.title)}" width="800" height="450" fetchpriority="high" decoding="async" onerror="this.onerror=null;this.src='${FALLBACK_IMG}';">
+        <img class="detail-img" src="${escapeHtml(afbeelding)}" alt="${escapeHtml(artikel.image_alt || artikel.title)}" width="800" height="450" fetchpriority="high" decoding="async" onerror="this.onerror=null;this.src='${reserveAfbeelding(artikel)}';">
     </div>
     <div class="article-container" style="max-width: 800px; margin: 0 auto; padding: 20px;" itemscope itemtype="https://schema.org/NewsArticle">
         <header class="detail-header">

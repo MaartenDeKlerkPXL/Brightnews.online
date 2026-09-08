@@ -1,7 +1,7 @@
 // Bump deze versie bij elke inhoudelijke wijziging aan CSS/JS. Zonder dat
 // blijven bestaande bezoekers vastzitten op een oude cache en krijgen ze
 // nieuwe fixes nooit te zien (zie Fase 2-audit).
-const CACHE_NAME = 'brightnews-v21'; // v21: laadskeletten en proefperiode-badge (v19/v20 geclaimd door PR #5 en #1). Bumpen bij elke wijziging aan ASSETS-bestanden.
+const CACHE_NAME = 'brightnews-v22'; // v22: eigen reservefoto's per categorie (assets/fallback). Bumpen bij elke wijziging aan ASSETS-bestanden.
 const ASSETS = [
     '/',
     '/index.html',
