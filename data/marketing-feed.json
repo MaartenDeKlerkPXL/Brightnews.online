@@ -1,10 +1,18 @@
 {
- "gegenereerd": "2026-09-08T04:13:40.436Z",
+ "gegenereerd": "2026-09-08T16:32:17.114Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "1788885133204h2rgjkygd",
+     "titel": "Urinetest herkent blaaskanker thuis",
+     "teaser": "Een nieuwe test die thuis kan worden uitgevoerd, spoort blaaskanker op via een urinemonster. Volgens de bron herkent de test de ziekte in negen van de tien gevallen. Verdere details over de werking, ontwikkelaars of onderzoek worden in de bron niet vermeld.",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/nl/urinetest-herkent-blaaskanker-thuis-1788885133204h2rgjkygd.html"
+    },
     {
      "id": "1788803059663asi2i547z",
      "titel": "Tien Jaar Onvoorwaardelijk Geld Voor Overlevenden",
@@ -12,6 +20,14 @@
      "score": 10,
      "categorie": "Finance",
      "url": "https://brightnews.online/articles/nl/tien-jaar-onvoorwaardelijk-geld-voor-overlevenden-1788803059663asi2i547z.html"
+    },
+    {
+     "id": "1788885065546acm0qljo6",
+     "titel": "Armloze Coureur Stuurt Met Voeten Naar 110 mph",
+     "teaser": "De 23-jarige Callum Smith, die zonder armen werd geboren, heeft op het circuit al snelheden van meer dan 110 mph gehaald door met zijn voeten te sturen. Hij tekende zijn eerste rijderscontract bij Team BRIT, 's werelds enige competitieve raceteam dat volledig uit coureurs met een beperking bestaat, en droomt nu van een plek op de 24 Hours of Le...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/armloze-coureur-stuurt-met-voeten-naar-110-mph-1788885065546acm0qljo6.html"
     },
     {
      "id": "178884081544118fe4ksr9",
@@ -28,64 +44,20 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/colombia-beschermt-amazone-groen-bouwmateriaal-en-zonnedak-londen-178880299686709ez84b3k.html"
-    },
-    {
-     "id": "1788802884862p8ilwvuhv",
-     "titel": "Texaanse Kolencentrale Baant Weg voor Megazonnepark",
-     "teaser": "Investeringsfirma Panamint steekt 1,7 miljard dollar in Big Rooter Power, een enorm zonne- en opslagproject in Robertson, Texas, dat 1,2 gigawatt aan zonne-energie aan het lokale net toevoegt. Door het project naast de bestaande kolencentrale Twin Oaks te bouwen, kan Panamint gebruikmaken van de al aanwezige netinfrastructuur. CEO Apolka Totth noemt dit de duidelijkste manier om gemeenschappen, energieklanten en het...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/texaanse-kolencentrale-baant-weg-voor-megazonnepark-1788802884862p8ilwvuhv.html"
-    },
-    {
-     "id": "1788754361332dch26o1r5",
-     "titel": "Scholiere Ontdekt Schimmel Die Oceaan Reinigt",
-     "teaser": "Vera Wang, senior aan Kaiser High School in East Honolulu, ontdekte een schimmel in kokosnootvezels die plastic en zonnebrandcrème uit zeewater kan afbreken. Ze bouwde eerder al een oceaanfilter van kokosnoot-afval, geïnspireerd op traditioneel Polynesisch weven, die zonnebrandcrème en microplastics uit oppervlaktewater verwijderde. In het Amend Lab aan de University of Hawaiʻi at Mānoa onderzocht ze vervolgens hoe de schimmels...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/nl/scholiere-ontdekt-schimmel-die-oceaan-reinigt-1788754361332dch26o1r5.html"
     }
    ],
-   "dagoverzichten": [
-    {
-     "id": "dg-20260905-environment",
-     "titel": "Eenden, zalmen en buurtbewoners maken vandaag het verschil",
-     "categorie": "Environment",
-     "dag": "2026-09-05",
-     "url": "https://brightnews.online/articles/nl/eenden-zalmen-en-buurtbewoners-maken-vandaag-het-verschil-dg-20260905-environment.html"
-    },
-    {
-     "id": "dg-20260905-tech",
-     "titel": "Techdag: van olifantenredders tot slimme scooters",
-     "categorie": "Tech",
-     "dag": "2026-09-05",
-     "url": "https://brightnews.online/articles/nl/techdag-van-olifantenredders-tot-slimme-scooters-dg-20260905-tech.html"
-    },
-    {
-     "id": "dg-20260905-health",
-     "titel": "Snellere diagnoses en langere bescherming: gezondheidsnieuws van 5 september",
-     "categorie": "Health",
-     "dag": "2026-09-05",
-     "url": "https://brightnews.online/articles/nl/snellere-diagnoses-en-langere-bescherming-gezondheidsnieuws-van-5-september-dg-20260905-health.html"
-    },
-    {
-     "id": "dg-20260905-lifestyle",
-     "titel": "Boeken in de wasserette, pups op hun verjaardag en een trein terug na dertig jaar",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-05",
-     "url": "https://brightnews.online/articles/nl/boeken-in-de-wasserette-pups-op-hun-verjaardag-en-een-trein-terug-na-dertig-jaar-dg-20260905-lifestyle.html"
-    },
-    {
-     "id": "dg-20260905-science",
-     "titel": "Bomen met spieren, vissen met filters: wetenschap van 5 september",
-     "categorie": "Science",
-     "dag": "2026-09-05",
-     "url": "https://brightnews.online/articles/nl/bomen-met-spieren-vissen-met-filters-wetenschap-van-5-september-dg-20260905-science.html"
-    }
-   ]
+   "dagoverzichten": []
   },
   "en": {
    "top": [
+    {
+     "id": "1788885133204h2rgjkygd",
+     "titel": "Urine test detects bladder cancer at home",
+     "teaser": "A new test that can be performed at home detects bladder cancer via a urine sample. According to the source, the test identifies the disease in nine out of ten cases. Further details about how it works, who developed it, or the research are not mentioned in the source.",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/en/urine-test-detects-bladder-cancer-at-home-1788885133204h2rgjkygd.html"
+    },
     {
      "id": "1788803059663asi2i547z",
      "titel": "Ten Years of Unconditional Cash for Survivors",
@@ -93,6 +65,14 @@
      "score": 10,
      "categorie": "Finance",
      "url": "https://brightnews.online/articles/en/ten-years-of-unconditional-cash-for-survivors-1788803059663asi2i547z.html"
+    },
+    {
+     "id": "1788885065546acm0qljo6",
+     "titel": "Armless Racer Steers to 110 mph With His Feet",
+     "teaser": "The 23-year-old Callum Smith, who was born without arms, has reached speeds of over 110 mph on the racing circuit by steering entirely with his feet. He signed his first racing driver contract with Team BRIT, the world's only competitive racing team made up entirely of drivers with disabilities, and now dreams of a place at the 24 Hours of...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/armless-racer-steers-to-110-mph-with-his-feet-1788885065546acm0qljo6.html"
     },
     {
      "id": "178884081544118fe4ksr9",
@@ -109,64 +89,20 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/en/colombia-protects-amazon-green-building-material-and-london-solar-roof-178880299686709ez84b3k.html"
-    },
-    {
-     "id": "1788802884862p8ilwvuhv",
-     "titel": "Texas Coal Plant Paves Way for Mega Solar Park",
-     "teaser": "Investment firm Panamint is investing $1.7 billion in Big Rooter Power, a massive solar and storage project in Robertson, Texas, that adds 1.2 gigawatts of solar energy to the local grid. By building the project next to the existing Twin Oaks coal plant, Panamint can leverage already-present grid infrastructure. CEO Apolka Totth calls this the clearest way to help communities,...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/texas-coal-plant-paves-way-for-mega-solar-park-1788802884862p8ilwvuhv.html"
-    },
-    {
-     "id": "1788754361332dch26o1r5",
-     "titel": "Student Discovers Fungus That Cleans Ocean",
-     "teaser": "Vera Wang, a senior at Kaiser High School in East Honolulu, discovered a fungus in coconut fibers that can break down plastic and sunscreen from seawater. She previously built an ocean filter made from coconut waste, inspired by traditional Polynesian weaving, which removed sunscreen and microplastics from surface water. At the Amend Lab at the University of Hawaiʻi at Mānoa,...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/en/student-discovers-fungus-that-cleans-ocean-1788754361332dch26o1r5.html"
     }
    ],
-   "dagoverzichten": [
-    {
-     "id": "dg-20260905-environment",
-     "titel": "Ducks, salmon and neighbors make a difference today",
-     "categorie": "Environment",
-     "dag": "2026-09-05",
-     "url": "https://brightnews.online/articles/en/ducks-salmon-and-neighbors-make-a-difference-today-dg-20260905-environment.html"
-    },
-    {
-     "id": "dg-20260905-tech",
-     "titel": "Tech day: from elephant rescuers to smart scooters",
-     "categorie": "Tech",
-     "dag": "2026-09-05",
-     "url": "https://brightnews.online/articles/en/tech-day-from-elephant-rescuers-to-smart-scooters-dg-20260905-tech.html"
-    },
-    {
-     "id": "dg-20260905-health",
-     "titel": "Faster diagnoses and longer protection: health news from September 5",
-     "categorie": "Health",
-     "dag": "2026-09-05",
-     "url": "https://brightnews.online/articles/en/faster-diagnoses-and-longer-protection-health-news-from-september-5-dg-20260905-health.html"
-    },
-    {
-     "id": "dg-20260905-lifestyle",
-     "titel": "Books in the laundromat, pups on their birthday and a train back after thirty years",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-05",
-     "url": "https://brightnews.online/articles/en/books-in-the-laundromat-pups-on-their-birthday-and-a-train-back-after-thirty-yea-dg-20260905-lifestyle.html"
-    },
-    {
-     "id": "dg-20260905-science",
-     "titel": "Trees with muscles, fish with filters: science of September 5",
-     "categorie": "Science",
-     "dag": "2026-09-05",
-     "url": "https://brightnews.online/articles/en/trees-with-muscles-fish-with-filters-science-of-september-5-dg-20260905-science.html"
-    }
-   ]
+   "dagoverzichten": []
   },
   "de": {
    "top": [
+    {
+     "id": "1788885133204h2rgjkygd",
+     "titel": "Urintest erkennt Blasenkrebs zu Hause",
+     "teaser": "Ein neuer Test, der zu Hause durchgeführt werden kann, spürt Blasenkrebs anhand einer Urinprobe auf. Der Test erkennt die Krankheit Angaben zufolge in neun von zehn Fällen. Weitere Details über die Funktionsweise, Entwickler oder Forschung werden in der Quelle nicht genannt.",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/de/urintest-erkennt-blasenkrebs-zu-hause-1788885133204h2rgjkygd.html"
+    },
     {
      "id": "1788803059663asi2i547z",
      "titel": "Zehn Jahre Bedingungsloses Geld für Überlebende",
@@ -174,6 +110,14 @@
      "score": 10,
      "categorie": "Finance",
      "url": "https://brightnews.online/articles/de/zehn-jahre-bedingungsloses-geld-fur-uberlebende-1788803059663asi2i547z.html"
+    },
+    {
+     "id": "1788885065546acm0qljo6",
+     "titel": "Armloser Rennfahrer Steuert Mit Füßen Bei 110 mph",
+     "teaser": "Der 23-jährige Callum Smith, der ohne Arme geboren wurde, hat auf der Rennstrecke bereits Geschwindigkeiten von über 110 mph erreicht, indem er mit seinen Füßen lenkt. Er unterzeichnete seinen ersten Fahrervertrag bei Team BRIT, dem weltweit einzigen wettbewerbsfähigen Rennteam, das vollständig aus Fahrern mit Behinderungen besteht, und träumt nun von einem Platz bei den 24 Stunden von Le Mans. Smith...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/armloser-rennfahrer-steuert-mit-fu-en-bei-110-mph-1788885065546acm0qljo6.html"
     },
     {
      "id": "178884081544118fe4ksr9",
@@ -190,64 +134,20 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/de/kolumbien-schutzt-amazonas-grunes-baumaterial-und-sonnendach-london-178880299686709ez84b3k.html"
-    },
-    {
-     "id": "1788802884862p8ilwvuhv",
-     "titel": "Texanisches Kohlekraftwerk ebnet Weg für Megasolarpark",
-     "teaser": "Die Investmentfirma Panamint investiert 1,7 Milliarden Dollar in Big Rooter Power, ein riesiges Solar- und Speicherprojekt in Robertson, Texas, das 1,2 Gigawatt Solarenergie ins lokale Netz einspeist. Durch den Bau des Projekts neben dem bestehenden Kohlekraftwerk Twin Oaks kann Panamint die bereits vorhandene Netzinfrastruktur nutzen. CEO Apolka Totth nennt dies den klarsten Weg, um Gemeinden, Energiekunden und die Umwelt zu...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/texanisches-kohlekraftwerk-ebnet-weg-fur-megasolarpark-1788802884862p8ilwvuhv.html"
-    },
-    {
-     "id": "1788754361332dch26o1r5",
-     "titel": "Schülerin Entdeckt Pilz Der Ozean Reinigt",
-     "teaser": "Vera Wang, Oberstufenschülerin der Kaiser High School in East Honolulu, entdeckte einen Pilz in Kokosfasern, der Kunststoff und Sonnencreme aus Meerwasser abbauen kann. Sie hatte zuvor bereits einen Ozeanfilter aus Kokosnussabfällen gebaut, inspiriert durch traditionelles polynesisches Weben, der Sonnencreme und Mikroplastik aus Oberflächenwasser entfernte. Im Amend Lab der University of Hawaiʻi at Mānoa untersuchte sie anschließend, wie die Pilze auf...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/de/schulerin-entdeckt-pilz-der-ozean-reinigt-1788754361332dch26o1r5.html"
     }
    ],
-   "dagoverzichten": [
-    {
-     "id": "dg-20260905-environment",
-     "titel": "Enten, Lachse und Nachbarn machen heute den Unterschied",
-     "categorie": "Environment",
-     "dag": "2026-09-05",
-     "url": "https://brightnews.online/articles/de/enten-lachse-und-nachbarn-machen-heute-den-unterschied-dg-20260905-environment.html"
-    },
-    {
-     "id": "dg-20260905-tech",
-     "titel": "Techtag: von Elefantenrettern bis zu intelligenten Rollern",
-     "categorie": "Tech",
-     "dag": "2026-09-05",
-     "url": "https://brightnews.online/articles/de/techtag-von-elefantenrettern-bis-zu-intelligenten-rollern-dg-20260905-tech.html"
-    },
-    {
-     "id": "dg-20260905-health",
-     "titel": "Schnellere Diagnosen und längerer Schutz: Gesundheitsnachrichten vom 5. September",
-     "categorie": "Health",
-     "dag": "2026-09-05",
-     "url": "https://brightnews.online/articles/de/schnellere-diagnosen-und-langerer-schutz-gesundheitsnachrichten-vom-5-september-dg-20260905-health.html"
-    },
-    {
-     "id": "dg-20260905-lifestyle",
-     "titel": "Bücher in der Wäscherei, Welpen zum Geburtstag und ein Zug nach dreißig Jahren zurück",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-05",
-     "url": "https://brightnews.online/articles/de/bucher-in-der-wascherei-welpen-zum-geburtstag-und-ein-zug-nach-drei-ig-jahren-zu-dg-20260905-lifestyle.html"
-    },
-    {
-     "id": "dg-20260905-science",
-     "titel": "Bäume mit Muskeln, Fische mit Filtern: Wissenschaft vom 5. September",
-     "categorie": "Science",
-     "dag": "2026-09-05",
-     "url": "https://brightnews.online/articles/de/baume-mit-muskeln-fische-mit-filtern-wissenschaft-vom-5-september-dg-20260905-science.html"
-    }
-   ]
+   "dagoverzichten": []
   },
   "fr": {
    "top": [
+    {
+     "id": "1788885133204h2rgjkygd",
+     "titel": "Test urinaire détecte cancer de la vessie à domicile",
+     "teaser": "Un nouveau test pouvant être réalisé à domicile détecte le cancer de la vessie à partir d'un échantillon d'urine. Selon la source, le test identifie la maladie dans neuf cas sur dix. Aucun détail supplémentaire sur le fonctionnement, les développeurs ou la recherche n'est mentionné dans la source.",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/fr/test-urinaire-detecte-cancer-de-la-vessie-a-domicile-1788885133204h2rgjkygd.html"
+    },
     {
      "id": "1788803059663asi2i547z",
      "titel": "Dix Ans d'Argent Sans Conditions Pour les Survivantes",
@@ -255,6 +155,14 @@
      "score": 10,
      "categorie": "Finance",
      "url": "https://brightnews.online/articles/fr/dix-ans-d-argent-sans-conditions-pour-les-survivantes-1788803059663asi2i547z.html"
+    },
+    {
+     "id": "1788885065546acm0qljo6",
+     "titel": "Coureur sans bras atteint 110 mph en pilotant des pieds",
+     "teaser": "Callum Smith, 23 ans, né sans bras, a atteint des vitesses dépassant 110 mph sur circuit en pilotant entièrement des pieds. Il a signé son premier contrat de pilote chez Team BRIT, la seule équipe de course compétitive au monde composée entièrement de pilotes en situation de handicap, et rêve désormais de participer aux 24 Heures du Mans. Smith utilise...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/coureur-sans-bras-atteint-110-mph-en-pilotant-des-pieds-1788885065546acm0qljo6.html"
     },
     {
      "id": "178884081544118fe4ksr9",
@@ -271,64 +179,20 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/fr/colombie-protege-l-amazonie-materiau-de-construction-vert-et-toit-solaire-a-lond-178880299686709ez84b3k.html"
-    },
-    {
-     "id": "1788802884862p8ilwvuhv",
-     "titel": "Centrale Charbon Texane Ouvre la Voie à un Mégaparc Solaire",
-     "teaser": "La firme d'investissement Panamint injecte 1,7 milliard de dollars dans Big Rooter Power, un immense projet solaire et de stockage à Robertson, au Texas, qui ajoute 1,2 gigawatt d'énergie solaire au réseau local. En construisant le projet à côté de la centrale charbon existante Twin Oaks, Panamint peut exploiter l'infrastructure réseau déjà en place. La PDG Apolka Totth affirme que...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/centrale-charbon-texane-ouvre-la-voie-a-un-megaparc-solaire-1788802884862p8ilwvuhv.html"
-    },
-    {
-     "id": "1788754361332dch26o1r5",
-     "titel": "Écolière Découvre un Champignon qui Purifie l'Océan",
-     "teaser": "Vera Wang, élève de terminale au Kaiser High School à East Honolulu, a découvert un champignon dans les fibres de noix de coco capable de décomposer le plastique et la crème solaire de l'eau de mer. Elle avait auparavant construit un filtre océanique à partir de déchets de noix de coco, inspiré par le tissage polynésien traditionnel, qui éliminait la...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/fr/ecoliere-decouvre-un-champignon-qui-purifie-l-ocean-1788754361332dch26o1r5.html"
     }
    ],
-   "dagoverzichten": [
-    {
-     "id": "dg-20260905-environment",
-     "titel": "Les canards, les saumons et les voisins font la différence aujourd'hui",
-     "categorie": "Environment",
-     "dag": "2026-09-05",
-     "url": "https://brightnews.online/articles/fr/les-canards-les-saumons-et-les-voisins-font-la-difference-aujourd-hui-dg-20260905-environment.html"
-    },
-    {
-     "id": "dg-20260905-tech",
-     "titel": "Jour de la tech : des sauveteurs d'éléphants aux scooters intelligents",
-     "categorie": "Tech",
-     "dag": "2026-09-05",
-     "url": "https://brightnews.online/articles/fr/jour-de-la-tech-des-sauveteurs-d-elephants-aux-scooters-intelligents-dg-20260905-tech.html"
-    },
-    {
-     "id": "dg-20260905-health",
-     "titel": "Diagnostics plus rapides et protection prolongée : actualités sanitaires du 5 septembre",
-     "categorie": "Health",
-     "dag": "2026-09-05",
-     "url": "https://brightnews.online/articles/fr/diagnostics-plus-rapides-et-protection-prolongee-actualites-sanitaires-du-5-sept-dg-20260905-health.html"
-    },
-    {
-     "id": "dg-20260905-lifestyle",
-     "titel": "Des livres à la laverie, des chiots pour leur anniversaire et un train de retour après trente ans",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-05",
-     "url": "https://brightnews.online/articles/fr/des-livres-a-la-laverie-des-chiots-pour-leur-anniversaire-et-un-train-de-retour--dg-20260905-lifestyle.html"
-    },
-    {
-     "id": "dg-20260905-science",
-     "titel": "Des arbres avec des muscles, des poissons avec des filtres : la science du 5 septembre",
-     "categorie": "Science",
-     "dag": "2026-09-05",
-     "url": "https://brightnews.online/articles/fr/des-arbres-avec-des-muscles-des-poissons-avec-des-filtres-la-science-du-5-septem-dg-20260905-science.html"
-    }
-   ]
+   "dagoverzichten": []
   },
   "es": {
    "top": [
+    {
+     "id": "1788885133204h2rgjkygd",
+     "titel": "Prueba de orina detecta cáncer de vejiga en casa",
+     "teaser": "Una nueva prueba que se puede realizar en casa detecta el cáncer de vejiga a través de una muestra de orina. Según la fuente, la prueba identifica la enfermedad en nueve de cada diez casos. La fuente no proporciona más detalles sobre el funcionamiento, los desarrolladores o la investigación.",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/es/prueba-de-orina-detecta-cancer-de-vejiga-en-casa-1788885133204h2rgjkygd.html"
+    },
     {
      "id": "1788803059663asi2i547z",
      "titel": "Diez Años de Dinero Incondicional para Sobrevivientes",
@@ -336,6 +200,14 @@
      "score": 10,
      "categorie": "Finance",
      "url": "https://brightnews.online/articles/es/diez-anos-de-dinero-incondicional-para-sobrevivientes-1788803059663asi2i547z.html"
+    },
+    {
+     "id": "1788885065546acm0qljo6",
+     "titel": "Corredor Sin Brazos Conduce a 110 mph con los Pies",
+     "teaser": "Callum Smith, de 23 años, nació sin brazos pero ha alcanzado velocidades superiores a 110 mph en el circuito conduciendo completamente con los pies. Firmó su primer contrato como piloto con Team BRIT, el único equipo de carreras competitivo del mundo compuesto íntegramente por pilotos con discapacidad, y ahora sueña con un lugar en las 24 Horas de Le Mans....",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/corredor-sin-brazos-conduce-a-110-mph-con-los-pies-1788885065546acm0qljo6.html"
     },
     {
      "id": "178884081544118fe4ksr9",
@@ -352,61 +224,9 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/es/colombia-protege-amazonia-material-construccion-verde-y-techo-solar-londres-178880299686709ez84b3k.html"
-    },
-    {
-     "id": "1788802884862p8ilwvuhv",
-     "titel": "Central Carbón de Texas Abre Camino a Megaparque Solar",
-     "teaser": "La firma de inversión Panamint invierte 1.700 millones de dólares en Big Rooter Power, un enorme proyecto de energía solar y almacenamiento en Robertson, Texas, que añade 1,2 gigavatios de energía solar a la red local. Al construir el proyecto junto a la central carbónica existente Twin Oaks, Panamint puede aprovechar la infraestructura de red ya presente. La CEO Apolka...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/central-carbon-de-texas-abre-camino-a-megaparque-solar-1788802884862p8ilwvuhv.html"
-    },
-    {
-     "id": "1788754361332dch26o1r5",
-     "titel": "Estudiante Descubre Hongo Que Limpia el Océano",
-     "teaser": "Vera Wang, estudiante de último año de Kaiser High School en East Honolulu, descubrió un hongo en fibras de coco que puede descomponer plástico y protector solar del agua de mar. Anteriormente había construido un filtro oceánico hecho de residuos de coco, inspirado en el tejido polinésico tradicional, que eliminaba protector solar y microplásticos del agua superficial. En el Amend...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/es/estudiante-descubre-hongo-que-limpia-el-oceano-1788754361332dch26o1r5.html"
     }
    ],
-   "dagoverzichten": [
-    {
-     "id": "dg-20260905-environment",
-     "titel": "Patos, salmones y vecinos marcan la diferencia hoy",
-     "categorie": "Environment",
-     "dag": "2026-09-05",
-     "url": "https://brightnews.online/articles/es/patos-salmones-y-vecinos-marcan-la-diferencia-hoy-dg-20260905-environment.html"
-    },
-    {
-     "id": "dg-20260905-tech",
-     "titel": "Día de tecnología: desde rescatadores de elefantes hasta scooters inteligentes",
-     "categorie": "Tech",
-     "dag": "2026-09-05",
-     "url": "https://brightnews.online/articles/es/dia-de-tecnologia-desde-rescatadores-de-elefantes-hasta-scooters-inteligentes-dg-20260905-tech.html"
-    },
-    {
-     "id": "dg-20260905-health",
-     "titel": "Diagnósticos más rápidos y protección más duradera: noticias de salud del 5 de septiembre",
-     "categorie": "Health",
-     "dag": "2026-09-05",
-     "url": "https://brightnews.online/articles/es/diagnosticos-mas-rapidos-y-proteccion-mas-duradera-noticias-de-salud-del-5-de-se-dg-20260905-health.html"
-    },
-    {
-     "id": "dg-20260905-lifestyle",
-     "titel": "Libros en la lavandería, cachorros en su cumpleaños y un tren de regreso después de treinta años",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-05",
-     "url": "https://brightnews.online/articles/es/libros-en-la-lavanderia-cachorros-en-su-cumpleanos-y-un-tren-de-regreso-despues--dg-20260905-lifestyle.html"
-    },
-    {
-     "id": "dg-20260905-science",
-     "titel": "Árboles con músculos, peces con filtros: la ciencia del 5 de septiembre",
-     "categorie": "Science",
-     "dag": "2026-09-05",
-     "url": "https://brightnews.online/articles/es/arboles-con-musculos-peces-con-filtros-la-ciencia-del-5-de-septiembre-dg-20260905-science.html"
-    }
-   ]
+   "dagoverzichten": []
   }
  }
 }

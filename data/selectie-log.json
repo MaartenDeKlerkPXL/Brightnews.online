@@ -1,5 +1,126 @@
 [
  {
+  "datum": "2026-09-08T16:28:32.412Z",
+  "bron": "Positive.News",
+  "titel": "They’re resilient, low-effort and beautiful: how to plant a rubble garden",
+  "gevoel": 2,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 8,
+  "besluit": "ja",
+  "reden": "Praktisch, hoopvol verhaal over duurzaam tuinieren met hergebruikte materialen; maatschappelijk relevant voor milieu en biodiversiteit."
+ },
+ {
+  "datum": "2026-09-08T16:28:32.412Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "Armless Racing Driver Hits 110 mph Steering with His Feet–Aims to Make History at Le Mans",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Hartverwarmend verhaal over persoonlijke overwinning en inclusie; jonge man die grenzen verlegt en inspiratie biedt."
+ },
+ {
+  "datum": "2026-09-08T16:28:32.412Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "S. Carolina Aquarium Celebrates ‘Baby Boom’ of Critically-Endangered Penguin Chicks",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Hoopvol verhaal over redding van bedreigde diersoort; maatschappelijk relevant voor natuurbehoud en biodiversiteit."
+ },
+ {
+  "datum": "2026-09-08T16:28:32.412Z",
+  "bron": "OptimistDaily.com",
+  "titel": "The neuroscience of motivation: what orexin neurons reveal about staying the course",
+  "gevoel": 1,
+  "formulering": 2,
+  "relevantie": 2,
+  "totaal": 5,
+  "besluit": "nee",
+  "reden": "Wetenschappelijk onderzoek zonder persoonlijke toepassing of concrete maatschappelijke impact; te abstract en technisch voor goed gevoel."
+ },
+ {
+  "datum": "2026-09-08T16:28:32.412Z",
+  "bron": "OptimistDaily.com",
+  "titel": "At-home urine test spots bladder cancer in nine of ten cases",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 4,
+  "totaal": 10,
+  "besluit": "ja",
+  "reden": "Hoopvol verhaal over medische doorbraak die levens kan redden; zeer relevant voor gezondheid en persoonlijk welzijn."
+ },
+ {
+  "datum": "2026-09-08T16:28:32.412Z",
+  "bron": "Newatlas.com",
+  "titel": "Gamers at the ready: Wall-hugging Laser TV throws 4K at 120 Hz",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Productlancering van projector; geen maatschappelijke betekenis, puur commerciële promotie."
+ },
+ {
+  "datum": "2026-09-08T16:28:32.412Z",
+  "bron": "Newatlas.com",
+  "titel": "Battery powered filter pumps out clean water in seconds",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Producttest/gadgetnieuws zonder maatschappelijke kern; Kickstarter-promotie zonder verhaal."
+ },
+ {
+  "datum": "2026-09-08T16:28:32.412Z",
+  "bron": "Sciencenews.org",
+  "titel": "Innocent-looking AI reasoning can make bad behavior harder to catch",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Waarschuwing over AI-risico's; negatieve framing en onvolledig artikel maken beoordeling onmogelijk."
+ },
+ {
+  "datum": "2026-09-08T16:28:32.412Z",
+  "bron": "Openaccessgovernment.org",
+  "titel": "Experts call for a new approach to Neuro-AI governance",
+  "gevoel": 1,
+  "formulering": 2,
+  "relevantie": 2,
+  "totaal": 5,
+  "besluit": "nee",
+  "reden": "Beleidsstuk over governance; abstract en technisch zonder persoonlijke relevantie of concreet hoopvol perspectief."
+ },
+ {
+  "datum": "2026-09-08T16:28:32.412Z",
+  "bron": "BBC.com/culture",
+  "titel": "10 stunning buildings 'blended' with nature",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Onvolledig artikel (alleen navigatiemenu zichtbaar); geen inhoud om te beoordelen."
+ },
+ {
+  "datum": "2026-09-08T16:28:35.420Z",
+  "bron": "Ww2.kqed.org/mindshift",
+  "titel": "Why Hands-On Career Training and Academics Go Hand-in-Hand",
+  "gevoel": 2,
+  "formulering": 2,
+  "relevantie": 3,
+  "totaal": 7,
+  "besluit": "nee",
+  "reden": "Positief verhaal over praktische beroepsopleiding die jongeren voorbereidt op echte vaardigheden; maatschappelijk relevant onderwijs met herkenbare schoolcontext."
+ },
+ {
   "datum": "2026-09-08T04:12:52.995Z",
   "bron": "GoodNewsNetwork.org",
   "titel": "22-yo with Down Syndrome Becomes Certified Fitness Instructor, Leads Class of 60 at Local Gym",
@@ -3177,126 +3298,5 @@
   "totaal": 5,
   "besluit": "nee",
   "reden": "De kern is een verbod, wat geen positief gevoel of hoop oproept, ondanks de maatschappelijke relevantie."
- },
- {
-  "datum": "2026-09-03T09:12:28.803Z",
-  "bron": "Bright.nl",
-  "titel": "Gratis Mario Kart-update maakt bankhangen nóg leuker",
-  "gevoel": 2,
-  "formulering": 3,
-  "relevantie": 1,
-  "totaal": 6,
-  "besluit": "nee",
-  "reden": "Productlancering zonder bredere maatschappelijke betekenis"
- },
- {
-  "datum": "2026-09-03T09:12:30.149Z",
-  "bron": "Bright.nl",
-  "titel": "Leuk zo’n iPhone Ultra, maar de software kan hem maken of breken",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "productlancering en commerciële content zonder bredere maatschappelijke betekenis"
- },
- {
-  "datum": "2026-09-03T09:12:31.530Z",
-  "bron": "Bright.nl",
-  "titel": "Uber door chauffeurs voor de rechter gesleept vanwege algoritmes",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "kern gaat over een juridisch conflict (rechterslepen) en niet over redding, hulp of herstel"
- },
- {
-  "datum": "2026-09-03T09:13:00.957Z",
-  "bron": "Bright.nl",
-  "titel": "Packard Bell is terug met kleurrijke hardware: laptop, bril, platenspeler en meer",
-  "gevoel": 2,
-  "formulering": 3,
-  "relevantie": 1,
-  "totaal": 6,
-  "besluit": "nee",
-  "reden": "Commerciële productlancering zonder bredere maatschappelijke betekenis"
- },
- {
-  "datum": "2026-09-03T09:13:02.355Z",
-  "bron": "Bright.nl",
-  "titel": "Homey is Apple voor met fraai rond scherm voor centrale aansturing van je smart home",
-  "gevoel": 1,
-  "formulering": 2,
-  "relevantie": 1,
-  "totaal": 4,
-  "besluit": "nee",
-  "reden": "Productlancering zonder bredere maatschappelijke betekenis"
- },
- {
-  "datum": "2026-09-03T09:13:03.481Z",
-  "bron": "Bright.nl",
-  "titel": "Weg met de digitale binnenspiegel: Polestar 4 SUV doet het wél goed",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Productlancering zonder bredere maatschappelijke betekenis"
- },
- {
-  "datum": "2026-09-03T09:13:04.627Z",
-  "bron": "Bright.nl",
-  "titel": "Sonos komt met nieuw besturingssysteem en nieuwe koptelefoon en soundbar",
-  "gevoel": 1,
-  "formulering": 3,
-  "relevantie": 1,
-  "totaal": 5,
-  "besluit": "nee",
-  "reden": "Commerciële productlancering zonder bredere maatschappelijke betekenis"
- },
- {
-  "datum": "2026-09-03T09:13:06.009Z",
-  "bron": "Bright.nl",
-  "titel": "Dyson komt met bijzonder veelzijdige tandenborstel van bijna 500 euro",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Commerciële productlancering zonder bredere maatschappelijke betekenis"
- },
- {
-  "datum": "2026-09-03T09:13:07.935Z",
-  "bron": "BusinessInsider.com",
-  "titel": "My book was a failure. I won't ever make a penny from it beyond the advance, but it did lead to career opportunities.",
-  "gevoel": 2,
-  "formulering": 1,
-  "relevantie": 2,
-  "totaal": 5,
-  "besluit": "nee",
-  "reden": "Kern is herstel en nieuwe kansen, maar formulering en gevoel scoren te laag voor acceptatie."
- },
- {
-  "datum": "2026-09-03T09:13:15.621Z",
-  "bron": "BusinessInsider.com",
-  "titel": "Amazon projects it's on track to deliver nearly 90% of its own US packages",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Commercieel bedrijfsnieuws zonder bredere maatschappelijke betekenis"
- },
- {
-  "datum": "2026-09-03T09:14:01.309Z",
-  "bron": "BusinessInsider.com",
-  "titel": "I built a life in LA and became a US citizen. Then I moved back to Taipei to be closer to my aging parents.",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 2,
-  "totaal": 8,
-  "besluit": "ja",
-  "reden": "De kern gaat over een persoonlijke, hartverwarmende keuze om dichter bij familie te zijn."
  }
 ]
