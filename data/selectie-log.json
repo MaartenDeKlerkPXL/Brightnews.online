@@ -1,5 +1,60 @@
 [
  {
+  "datum": "2026-09-08T04:12:52.995Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "22-yo with Down Syndrome Becomes Certified Fitness Instructor, Leads Class of 60 at Local Gym",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Hartverwarmend verhaal over inclusie en persoonlijke doorbraak; volledig positief geformuleerd; maatschappelijk relevant én persoonlijk herkenbaar."
+ },
+ {
+  "datum": "2026-09-08T04:12:52.995Z",
+  "bron": "Newatlas.com",
+  "titel": "Sihoo B300 Pro chair review: Flexible ergonomics on a budget",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Productreview van een bureaustoel; commerciële consumententech zonder maatschappelijke betekenis."
+ },
+ {
+  "datum": "2026-09-08T04:12:52.995Z",
+  "bron": "Newatlas.com",
+  "titel": "Brain wave-tracking wearable promises to detect your level of focus",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Gadget-/wearable-productnieuws; geen maatschappelijke doorbraak of persoonlijk verhaal."
+ },
+ {
+  "datum": "2026-09-08T04:12:52.995Z",
+  "bron": "Newatlas.com",
+  "titel": "Teaching a hexapedal robot to walk like a stick insect",
+  "gevoel": 2,
+  "formulering": 2,
+  "relevantie": 3,
+  "totaal": 7,
+  "besluit": "nee",
+  "reden": "Wetenschappelijke doorbraak met potentieel maatschappelijk nut (reddingstechnologie); positief geformuleerd; relevant voor innovatie en toekomst."
+ },
+ {
+  "datum": "2026-09-08T04:12:52.995Z",
+  "bron": "Newatlas.com",
+  "titel": "Wild origami camper cube seizes command of your van to make it livable",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Voertuig-/productnieuws over een campermodule; vernuftig design is geen maatschappelijk verhaal."
+ },
+ {
   "datum": "2026-09-07T17:40:06.574Z",
   "bron": "Positive.News",
   "titel": "We’re likely to breach 1.5C. What happens next is still in our hands",
@@ -3243,60 +3298,5 @@
   "totaal": 8,
   "besluit": "ja",
   "reden": "De kern gaat over een persoonlijke, hartverwarmende keuze om dichter bij familie te zijn."
- },
- {
-  "datum": "2026-09-03T09:14:13.548Z",
-  "bron": "BusinessInsider.com",
-  "titel": "Burning Man 2026: Satellite images show how the Nevada desert transforms into Black Rock City",
-  "gevoel": 2,
-  "formulering": 3,
-  "relevantie": 2,
-  "totaal": 7,
-  "besluit": "ja",
-  "reden": "De som van de scores (7) voldoet niet aan de eis van ≥ 7 in combinatie met alle individuele scores ≥ 2."
- },
- {
-  "datum": "2026-09-03T09:14:25.054Z",
-  "bron": "BusinessInsider.com",
-  "titel": "Good Good's CEO and president are out after ad debacle: Read the memo",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "kern gaat over commerciële problemen en ontslagen bij een bedrijf"
- },
- {
-  "datum": "2026-09-03T09:14:26.669Z",
-  "bron": "BusinessInsider.com",
-  "titel": "Americans love AI. They don't want the data centers that power it.",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 3,
-  "totaal": 3,
-  "besluit": "nee",
-  "reden": "Kern gaat over een negatieve disconnect (haat vs. liefde) en politiek gekleurde uitdagingen, geen positieve kern."
- },
- {
-  "datum": "2026-09-03T09:14:28.059Z",
-  "bron": "BusinessInsider.com",
-  "titel": "I've been to all of the Canadian provinces. Forget Ontario — these are the 3 you really ought to visit.",
-  "gevoel": 2,
-  "formulering": 3,
-  "relevantie": 1,
-  "totaal": 6,
-  "besluit": "nee",
-  "reden": "Listicle-achtige reisaanbeveling zonder maatschappelijke of persoonlijke diepgang."
- },
- {
-  "datum": "2026-09-03T09:14:29.426Z",
-  "bron": "BusinessInsider.com",
-  "titel": "What the big bond sell-off means for your wallet",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "kern gaat over financiële onrust en economische zorgen (beursnieuws zonder bredere maatschappelijke betekenis)"
  }
 ]
