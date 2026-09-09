@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <!-- Marketing-cockpit (fase M1, 2026-09-09): interne teampagina — de
+         postfabriek schrijft concepten naar data/marketing-posts.json, hier
+         keurt het team ze (goedkeuren/afwijzen-met-reden -> Supabase
+         marketing_feedback, afgeschermd met RLS op team_leden). Afwijzingen
+         voeden de volgende generatie. Bewust alleen Nederlands: teampagina,
+         geen i18n-keys nodig. DRAFT-FIRST: hier vertrekt niets vanzelf. -->
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/png" href="assets/brightnews-logo-faviconv5.png">
+    <title>Marketing-cockpit | BrightNews</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <script src="js/vendor/supabase-js-2.112.4.js" defer></script>
+    <script src="js/supabase-init.js" defer></script>
+    <style>
+        .cockpit { max-width: 860px; margin: 0 auto; padding: 24px 20px 80px; }
+        .cockpit h1 { margin: 18px 0 4px; }
+        .cockpit .sub { color: var(--medium-text); margin-bottom: 26px; }
+        .melding {
+            background: #fff; border: 1px solid var(--border-color);
+            border-radius: var(--radius-md); padding: 22px; margin-top: 30px;
+        }
+        .dagblok { margin-bottom: 34px; }
+        .dagkop {
+            display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
+            border-bottom: 3px solid var(--bright-green); padding-bottom: 6px; margin-bottom: 14px;
+        }
+        .dagkop h2 { margin: 0; font-size: 1.25rem; }
+        .dagkop .onderwerp { color: var(--medium-text); font-size: .95rem; }
+        .postkaart {
+            background: #fff; border: 1px solid var(--border-color);
+            border-radius: var(--radius-md); padding: 16px 18px 12px; margin-bottom: 14px;
+        }
+        .postkop { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
+        .kanaalchip {
+            background: var(--bright-green); color: var(--dark-text); font-weight: 700;
+            font-size: .78rem; text-transform: uppercase; letter-spacing: .05em;
+            border-radius: 999px; padding: 3px 12px;
+        }
+        .status { font-size: .85rem; font-weight: 600; }
+        .status.goed { color: #1c7c31; }
+        .status.afgewezen { color: #b3261e; }
+        .taalknoppen { margin-left: auto; display: flex; gap: 4px; }
+        .taalknoppen button {
+            border: 1px solid var(--border-color); background: #fff; border-radius: 6px;
+            padding: 3px 8px; cursor: pointer; font-size: .8rem;
+        }
+        .taalknoppen button.actief { background: var(--bright-green); font-weight: 700; }
+        .posttekst {
+            white-space: pre-wrap; background: var(--light-bg);
+            border-radius: var(--radius-sm); padding: 12px 14px; font-size: .95rem;
+        }
+        .acties { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+        .acties button {
+            border: 1px solid var(--border-color); background: #fff; border-radius: 8px;
+            padding: 7px 14px; cursor: pointer; font-size: .9rem;
+        }
+        .acties .goedkeur { background: var(--bright-green); color: var(--dark-text); font-weight: 700; border-color: var(--bright-green); }
+        .acties button:focus-visible { outline: 2px solid var(--bright-green); outline-offset: 2px; }
+        .rapport { margin-top: 40px; }
+        .rapport pre {
+            background: #fff; border: 1px solid var(--border-color); border-radius: var(--radius-md);
+            padding: 18px; white-space: pre-wrap; font-size: .88rem; overflow-x: auto;
+        }
+        .toast {
+            position: fixed; bottom: 22px; left: 50%; transform: translateX(-50%);
+            background: var(--dark-text); color: #fff; border-radius: 999px;
+            padding: 9px 20px; font-size: .9rem; opacity: 0; transition: opacity .25s; pointer-events: none;
+        }
+        .toast.zichtbaar { opacity: 1; }
+    </style>
+</head>
+<body>
+<main class="cockpit" id="cockpit">
+    <a href="/?team=1"><img src="assets/brightnews-logo.png" width="232" height="47" alt="BrightNews"></a>
+    <h1>Marketing-cockpit</h1>
+    <p class="sub">Concepten van de postfabriek — goedkeuren, kopiëren, plaatsen. Afwijzen mét reden maakt de volgende lichting beter. Hier vertrekt niets vanzelf.</p>
+    <div id="inhoud"><div class="melding">Laden…</div></div>
+    <section class="rapport" id="rapport" hidden>
+        <h2>Laatste weekrapport</h2>
+        <pre id="rapport-tekst"></pre>
+    </section>
+</main>
+<div class="toast" id="toast"></div>
+<script>
+(function () {
+    const TALEN = ['nl', 'en', 'de', 'fr', 'es'];
+    const inhoud = document.getElementById('inhoud');
+    let toastTimer = null;
+
+    function toast(tekst) {
+        const el = document.getElementById('toast');
+        el.textContent = tekst;
+        el.classList.add('zichtbaar');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => el.classList.remove('zichtbaar'), 2200);
+    }
+
+    function melding(html) {
+        inhoud.innerHTML = '';
+        const box = document.createElement('div');
+        box.className = 'melding';
+        box.innerHTML = html;
+        inhoud.appendChild(box);
+    }
+
+    async function init() {
+        // supabase-init laadt met defer; wacht tot de client er is.
+        for (let i = 0; i < 50 && !window.supabaseClient; i++) await new Promise(r => setTimeout(r, 100));
+        const client = window.supabaseClient;
+        if (!client) return melding('Kon geen verbinding maken. Herlaad de pagina.');
+
+        const { data: { session } } = await client.auth.getSession();
+        if (!session) {
+            return melding('Log eerst in met je teamaccount via de <a href="profiel.html">profielpagina</a> en kom dan hier terug.');
+        }
+        // Teamcheck: RLS op team_leden geeft alleen je eigen rij terug.
+        const { data: team } = await client.from('team_leden').select('uid').limit(1);
+        if (!team || team.length === 0) {
+            location.replace('/binnenkort.html');
+            return;
+        }
+
+        const posts = await fetch('data/marketing-posts.json?v=' + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null);
+        if (!posts || !Array.isArray(posts.dagen) || posts.dagen.length === 0) {
+            melding('Nog geen concepten — de postfabriek draait mee met de nieuws-update (2× per dag). Kom na de volgende run terug.');
+        } else {
+            const { data: feedback } = await client
+                .from('marketing_feedback')
+                .select('post_key, besluit, reden, created_at')
+                .order('created_at', { ascending: true });
+            const status = {};
+            (feedback || []).forEach(f => { status[f.post_key] = f; });
+            render(posts.dagen.slice(0, 7), status, client);
+        }
+
+        // Weekrapport (werkpakket 6) tonen als het er is.
+        fetch('data/rapporten/laatste.md?v=' + Date.now()).then(r => r.ok ? r.text() : null).then(md => {
+            if (!md) return;
+            document.getElementById('rapport-tekst').textContent = md;
+            document.getElementById('rapport').hidden = false;
+        }).catch(() => {});
+    }
+
+    function render(dagen, status, client) {
+        inhoud.innerHTML = '';
+        dagen.forEach(dagItem => {
+            const blok = document.createElement('section');
+            blok.className = 'dagblok';
+            const kop = document.createElement('div');
+            kop.className = 'dagkop';
+            const h2 = document.createElement('h2');
+            h2.textContent = dagItem.dag;
+            const ond = document.createElement('span');
+            ond.className = 'onderwerp';
+            ond.textContent = `${dagItem.onderwerp?.soort ?? ''}: ${dagItem.onderwerp?.titel ?? ''}`;
+            kop.append(h2, ond);
+            blok.appendChild(kop);
+
+            Object.keys(dagItem.perTaal?.nl ?? {}).forEach(kanaal => {
+                blok.appendChild(maakPostkaart(dagItem, kanaal, status, client));
+            });
+            inhoud.appendChild(blok);
+        });
+    }
+
+    function maakPostkaart(dagItem, kanaal, status, client) {
+        const postKey = `${dagItem.dag}|${kanaal}`;
+        const kaart = document.createElement('article');
+        kaart.className = 'postkaart';
+
+        const kop = document.createElement('div');
+        kop.className = 'postkop';
+        const chip = document.createElement('span');
+        chip.className = 'kanaalchip';
+        chip.textContent = kanaal;
+        const statusEl = document.createElement('span');
+        statusEl.className = 'status';
+        toonStatus(statusEl, status[postKey]);
+        const taalKnoppen = document.createElement('div');
+        taalKnoppen.className = 'taalknoppen';
+        kop.append(chip, statusEl, taalKnoppen);
+
+        const tekstEl = document.createElement('div');
+        tekstEl.className = 'posttekst';
+        let actieveTaal = 'nl';
+        function toonTaal(taal) {
+            actieveTaal = taal;
+            tekstEl.textContent = dagItem.perTaal?.[taal]?.[kanaal] ?? '(ontbreekt)';
+            taalKnoppen.querySelectorAll('button').forEach(b => b.classList.toggle('actief', b.dataset.taal === taal));
+        }
+        TALEN.forEach(taal => {
+            if (!dagItem.perTaal?.[taal]?.[kanaal]) return;
+            const knop = document.createElement('button');
+            knop.dataset.taal = taal;
+            knop.textContent = taal.toUpperCase();
+            knop.addEventListener('click', () => toonTaal(taal));
+            taalKnoppen.appendChild(knop);
+        });
+
+        const acties = document.createElement('div');
+        acties.className = 'acties';
+        const kopieer = document.createElement('button');
+        kopieer.textContent = '📋 Kopieer';
+        kopieer.addEventListener('click', async () => {
+            try {
+                await navigator.clipboard.writeText(dagItem.perTaal[actieveTaal][kanaal]);
+                toast(`Gekopieerd (${actieveTaal.toUpperCase()})`);
+            } catch {
+                toast('Kopiëren mislukt — selecteer de tekst handmatig.');
+            }
+        });
+        const goed = document.createElement('button');
+        goed.className = 'goedkeur';
+        goed.textContent = '✓ Goedkeuren';
+        goed.addEventListener('click', () => stuurFeedback(client, postKey, 'goed', null, statusEl));
+        const slecht = document.createElement('button');
+        slecht.textContent = '✗ Afwijzen';
+        slecht.addEventListener('click', () => {
+            const reden = window.prompt('Waarom wijs je deze af? (voedt de volgende generatie)');
+            if (reden === null) return;
+            stuurFeedback(client, postKey, 'afgewezen', reden.trim() || null, statusEl);
+        });
+        acties.append(kopieer, goed, slecht);
+
+        kaart.append(kop, tekstEl, acties);
+        toonTaal('nl');
+        return kaart;
+    }
+
+    function toonStatus(el, f) {
+        if (!f) { el.textContent = ''; el.className = 'status'; return; }
+        el.className = 'status ' + f.besluit;
+        el.textContent = f.besluit === 'goed' ? '✓ goedgekeurd' : '✗ afgewezen' + (f.reden ? ` — ${f.reden}` : '');
+    }
+
+    async function stuurFeedback(client, postKey, besluit, reden, statusEl) {
+        const { error } = await client.from('marketing_feedback').insert({ post_key: postKey, besluit, reden });
+        if (error) { toast('Opslaan mislukt: ' + error.message); return; }
+        toonStatus(statusEl, { besluit, reden });
+        toast(besluit === 'goed' ? 'Goedgekeurd' : 'Afgewezen — de fabriek leert ervan');
+    }
+
+    init();
+})();
+</script>
+</body>
+</html>

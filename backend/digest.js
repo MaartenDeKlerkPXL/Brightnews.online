@@ -124,15 +124,23 @@ async function main() {
         perTaalIndex[lang] = Object.fromEntries(languages[lang].map(a => [a.id, a]));
     }
 
-    // Kandidaten van gisteren per categorie (digests zelf tellen nooit mee).
+    const digestLog = await fs.readJson('./data/digest-log.json').catch(() => []);
+
+    // Kandidaten: de afgelopen 3 dagen i.p.v. alleen gisteren (2026-09-09):
+    // onder drempel 8 levert een dag 2–6 artikelen en haalde geen enkele
+    // categorie nog de digest-grens van 3. Artikelen die al in een eerder
+    // dagoverzicht besproken zijn, tellen niet opnieuw mee (digest-log kent
+    // per digest de ids). Idempotentie blijft per categorie per dag.
+    const VENSTER_MS = 3 * 24 * 3600 * 1000;
+    const alBesproken = new Set(digestLog.flatMap(d => d.ids ?? []));
     const perCategorie = {};
     for (const artikel of languages.nl) {
         if (artikel.type === 'digest') continue;
-        if (String(artikel.date || '').slice(0, 10) !== dagString) continue;
+        if (alBesproken.has(artikel.id)) continue;
+        const leeftijd = nu - new Date(artikel.date || 0);
+        if (!(leeftijd >= 0 && leeftijd <= VENSTER_MS)) continue;
         (perCategorie[artikel.category || 'General'] ??= []).push(artikel);
     }
-
-    const digestLog = await fs.readJson('./data/digest-log.json').catch(() => []);
     let mislukteCategorieenOpRij = 0;
 
     for (const [categorie, kandidaten] of Object.entries(perCategorie)) {
@@ -187,25 +195,33 @@ async function main() {
                 tokens: moederAntwoord.tokens,
             };
             for (const lang of TALEN.filter(l => l !== 'nl')) {
-                await wacht(1000);
-                const antwoord = await aiCall({
-                    rol: 'vertalen',
-                    prompt: `Vertaal dit BrightNews-dagoverzicht van het Nederlands naar het ${TAAL_NAMEN[lang]}. Vertaal natuurlijk en journalistiek; voeg NIETS toe en laat NIETS weg. Behoud de alinea-indeling (lege regels) en laat de verwijzingen tussen blokhaken zoals [1] exact staan. "meta_d" blijft maximaal 155 tekens.
+                // Twee pogingen per taal (2026-09-09): zelfde stochastische
+                // parse-uitval als in de artikel-vertaalstap.
+                for (let poging = 0; poging < 2; poging++) {
+                    await wacht(1000);
+                    const antwoord = await aiCall({
+                        rol: 'vertalen',
+                        prompt: `Vertaal dit BrightNews-dagoverzicht van het Nederlands naar het ${TAAL_NAMEN[lang]}. Vertaal natuurlijk en journalistiek; voeg NIETS toe en laat NIETS weg. Behoud de alinea-indeling (lege regels) en laat de verwijzingen tussen blokhaken zoals [1] exact staan. "meta_d" blijft maximaal 155 tekens.
 INVOER:
 ${JSON.stringify({ titel: perTaal.nl.titel, tekst: perTaal.nl.tekst, meta_d: perTaal.nl.meta_d })}
 Antwoord UITSLUITEND met geldig JSON — alinea-scheidingen binnen "tekst" schrijf je als \\n\\n, nooit als echt regeleinde: {"titel": "..", "tekst": "..", "meta_d": ".."}`,
-                });
-                const data = verwerkAIResponse(antwoord.tekst);
-                const woorden = telWoorden(data?.tekst);
-                if (!data?.titel || woorden < 200) {
-                    throw new Error(`onbruikbare digest-vertaling (${lang}): ${woorden} woorden`);
+                    });
+                    const data = verwerkAIResponse(antwoord.tekst);
+                    const woorden = telWoorden(data?.tekst);
+                    if (data?.titel && woorden >= 200) {
+                        perTaal[lang] = {
+                            titel: String(data.titel).trim(),
+                            tekst: String(data.tekst).trim(),
+                            meta_d: String(data.meta_d || '').slice(0, 155),
+                            tokens: antwoord.tokens,
+                        };
+                        break;
+                    }
+                    console.error(`🔎 Digest-vertaling ${lang} onbruikbaar (poging ${poging + 1}), rauwe kop: ${String(antwoord.tekst).replace(/\s+/g, ' ').slice(0, 200)}`);
+                    if (poging === 1) {
+                        throw new Error(`onbruikbare digest-vertaling (${lang}): ${woorden} woorden`);
+                    }
                 }
-                perTaal[lang] = {
-                    titel: String(data.titel).trim(),
-                    tekst: String(data.tekst).trim(),
-                    meta_d: String(data.meta_d || '').slice(0, 155),
-                    tokens: antwoord.tokens,
-                };
             }
 
             // Atomair: eerst álle talen in articles_full, dan pas publiceren.

@@ -241,3 +241,42 @@ $function$;
 --   revoke insert, update, delete on public.profiles from anon, authenticated;
 -- (nog niet uitgevoerd — eerst met Maarten afstemmen)
 -- ----------------------------------------------------------------------------
+
+-- === Marketing-cockpit (2026-09-09, fase M1) ===
+-- Teamleden mogen conceptposts beoordelen; RLS beperkt alles tot team_leden.
+create table if not exists public.team_leden (
+  uid uuid primary key references auth.users(id) on delete cascade,
+  naam text
+);
+alter table public.team_leden enable row level security;
+drop policy if exists team_leden_select_self on public.team_leden;
+create policy team_leden_select_self on public.team_leden
+  for select to authenticated using (uid = auth.uid());
+revoke all on public.team_leden from anon, authenticated;
+grant select on public.team_leden to authenticated;
+insert into public.team_leden (uid, naam) values
+  ('45d400b7-a5de-4488-919b-4b63a57706e3', 'Maarten'),
+  ('807282ac-9801-4954-9ca6-191d3d22262f', 'Erik')
+on conflict (uid) do nothing;
+
+create table if not exists public.marketing_feedback (
+  id uuid primary key default gen_random_uuid(),
+  post_key text not null,
+  besluit text not null check (besluit in ('goed','afgewezen')),
+  reden text,
+  door uuid not null default auth.uid() references auth.users(id),
+  created_at timestamptz not null default now()
+);
+alter table public.marketing_feedback enable row level security;
+drop policy if exists mf_team_select on public.marketing_feedback;
+create policy mf_team_select on public.marketing_feedback
+  for select to authenticated
+  using (exists (select 1 from public.team_leden t where t.uid = auth.uid()));
+drop policy if exists mf_team_insert on public.marketing_feedback;
+create policy mf_team_insert on public.marketing_feedback
+  for insert to authenticated
+  with check (door = auth.uid()
+    and exists (select 1 from public.team_leden t where t.uid = auth.uid()));
+revoke all on public.marketing_feedback from anon, authenticated;
+grant select, insert on public.marketing_feedback to authenticated;
+create index if not exists mf_post_key_idx on public.marketing_feedback (post_key);

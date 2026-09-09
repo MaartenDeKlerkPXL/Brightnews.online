@@ -218,19 +218,28 @@ Antwoord UITSLUITEND met geldig JSON — alinea-scheidingen binnen een tekstveld
 // herkanst het de volgende run.
 async function vertaalMoedertekst(moeder, lang, statistieken) {
     const invoer = Object.fromEntries(MOEDER_VELDEN.map(v => [v, moeder[v]]));
-    const antwoord = await aiCall({
-        rol: 'vertalen',
-        prompt: `Vertaal de onderstaande artikelvelden van BrightNews van het Nederlands naar het ${TAAL_NAMEN[lang]}. Vertaal natuurlijk en journalistiek; voeg NIETS toe en laat NIETS weg. Behoud in "lang" de alinea-indeling (lege regels) en laat verwijzingen tussen blokhaken zoals [1] exact staan. De titel bevat geen woorden langer dan 24 letters; "meta_d" blijft maximaal 155 tekens.
+    // Twee pogingen (2026-09-09): de nachtruns verloren artikelen aan
+    // stochastische parse-uitval in juist déze stap (6× "Vertaling
+    // incompleet" op 2026-09-09); een tweede poging vangt vrijwel alles.
+    for (let poging = 0; poging < 2; poging++) {
+        const antwoord = await aiCall({
+            rol: 'vertalen',
+            prompt: `Vertaal de onderstaande artikelvelden van BrightNews van het Nederlands naar het ${TAAL_NAMEN[lang]}. Vertaal natuurlijk en journalistiek; voeg NIETS toe en laat NIETS weg. Behoud in "lang" de alinea-indeling (lege regels) en laat verwijzingen tussen blokhaken zoals [1] exact staan. De titel bevat geen woorden langer dan 24 letters; "meta_d" blijft maximaal 155 tekens.
 INVOER:
 ${JSON.stringify(invoer)}
 Antwoord UITSLUITEND met geldig JSON met exact dezelfde velden — alinea-scheidingen binnen een tekstveld schrijf je als \\n\\n, nooit als echt regeleinde: {"titel": "..", "kort": "..", "lang": "..", "alt": "..", "meta_d": "..", "meta_k": ".."}`,
-    });
-    statistieken.aiCalls++;
-    statistieken.aiTokens += antwoord.tokens;
-    statistieken.perProvider[antwoord.provider] = (statistieken.perProvider[antwoord.provider] ?? 0) + 1;
-    const data = verwerkAIResponse(antwoord.tekst);
-    if (!veldenCompleet(data)) return null;
-    return Object.fromEntries(MOEDER_VELDEN.map(v => [v, String(data[v]).trim()]));
+        });
+        statistieken.aiCalls++;
+        statistieken.aiTokens += antwoord.tokens;
+        statistieken.perProvider[antwoord.provider] = (statistieken.perProvider[antwoord.provider] ?? 0) + 1;
+        const data = verwerkAIResponse(antwoord.tekst);
+        if (veldenCompleet(data)) {
+            return Object.fromEntries(MOEDER_VELDEN.map(v => [v, String(data[v]).trim()]));
+        }
+        console.error(`🔎 Vertaling ${lang} onbruikbaar (poging ${poging + 1}), rauwe kop: ${String(antwoord.tekst).replace(/\s+/g, ' ').slice(0, 200)}`);
+        await wacht(1000);
+    }
+    return null;
 }
 
 function maakTeaser(tekst, maxWoorden = 60) {
