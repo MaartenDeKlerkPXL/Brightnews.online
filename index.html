@@ -16,16 +16,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Parkeer-gate (2026-09-05): tot de lancering is de homepage dicht voor
-         publiek en zien alleen teamleden (localStorage-vlag via /?team=1 op
-         binnenkort.html) de echte site. Artikelpagina's blijven bewust open
+         publiek en zien alleen teamleden (sessionStorage-vlag via /?team=1 op
+         binnenkort.html) de echte site. Bewust sessionStorage en geen
+         localStorage: zo komt elk nieuw bezoek aan brightnews.online eerst
+         weer op de parkeerpagina uit. Artikelpagina's blijven bewust open
          (SEO). Verwijderen bij livegang; zie BRIGHTNEWS-OVERDRACHT-FABLE.md. -->
     <script>
         (function () {
             try {
+                // Oude, blijvende vlag van voor de sessionStorage-gate opruimen.
+                localStorage.removeItem('bn_team');
                 if (new URLSearchParams(location.search).get('team') === '1') {
-                    localStorage.setItem('bn_team', '1');
+                    sessionStorage.setItem('bn_team', '1');
                 }
-                if (localStorage.getItem('bn_team') !== '1') {
+                if (sessionStorage.getItem('bn_team') !== '1') {
                     location.replace('/binnenkort.html');
                 }
             } catch (e) {
