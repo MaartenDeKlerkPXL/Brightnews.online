@@ -710,8 +710,13 @@ nav.container {
     color: #aaa;
 }
 
+/* Bewust geen 'height: 100%' hier. Dat maakte de body-box precies een
+   schermhoogte hoog, terwijl de pagina langer is; een sticky element kan
+   niet verder plakken dan zijn eigen ouder, dus de navigatiebalk schoot
+   na ongeveer een scherm scrollen los. De 'min-height: 100vh' verderop
+   doet wat deze regel bedoelde: minimaal een volledig scherm vullen,
+   maar wel meegroeien met de inhoud. */
 html, body {
-    height: 100%;
     margin: 0;
 }
 .footer-grid {
