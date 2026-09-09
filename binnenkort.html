@@ -6,8 +6,9 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; object-src 'none'; base-uri 'self'; form-action 'self'">
     <!-- Tijdelijke parkeerpagina (2026-09-05): homepage is dicht voor publiek
          tot de lancering; artikelpagina's blijven bewust bereikbaar (SEO).
-         Teamtoegang: ?team=1 zet een localStorage-vlag, de gate in index.html
-         laat je daarna door. -->
+         Teamtoegang: het inlogformulier onderaan zet de localStorage-vlag
+         bn_team en stuurt door naar /?team=1; de gate in index.html laat je
+         daarna door. -->
     <meta name="robots" content="noindex, nofollow">
     <link rel="icon" type="image/png" href="assets/brightnews-logo-faviconv5.png">
     <title>BrightNews | Binnenkort</title>
@@ -98,6 +99,56 @@
         .team a { color: var(--medium-text); text-decoration: underline; text-underline-offset: 2px; }
         .team a:hover, .team a:focus-visible { color: var(--dark-text); }
         a:focus-visible { outline: 2px solid var(--bright-green); outline-offset: 2px; }
+        .teamlogin {
+            max-width: 320px;
+            margin: 14px auto 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: left;
+        }
+        .teamlogin label {
+            font-size: 12.5px;
+            font-weight: 700;
+            color: var(--medium-text);
+            display: block;
+            margin-bottom: 4px;
+        }
+        .teamlogin input {
+            width: 100%;
+            font: inherit;
+            font-size: 15px;
+            color: var(--dark-text);
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 10px 14px;
+        }
+        .teamlogin input:focus-visible {
+            outline: 2px solid var(--bright-green);
+            outline-offset: 1px;
+            border-color: var(--bright-green);
+        }
+        .teamlogin button {
+            font: inherit;
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--dark-text);
+            background: var(--bright-green);
+            border: none;
+            border-radius: 999px;
+            padding: 11px 18px;
+            cursor: pointer;
+            margin-top: 4px;
+        }
+        .teamlogin button:hover { background: #2bb62b; }
+        .teamlogin button:focus-visible { outline: 2px solid var(--dark-text); outline-offset: 2px; }
+        .teamlogin .fout {
+            font-size: 13px;
+            color: #B3261E;
+            min-height: 1em;
+        }
+        .teamlogin .fout:empty { display: none; }
         footer {
             margin-top: 26px;
             font-size: 12.5px;
@@ -118,9 +169,55 @@
             <li><span class="taal">ES</span>Solo noticias positivas, muy pronto.</li>
         </ul>
         <div class="streep"></div>
-        <p class="team">Van het team? <a href="/?team=1">Teamtoegang voor Maarten &amp; Erik</a> — je krijgt dan de volledige site om te testen, te volgen en verbeteringen voor te stellen.</p>
+        <p class="team">Van het team? Log hieronder in voor de volledige site om te testen, te volgen en verbeteringen voor te stellen.</p>
+        <form class="teamlogin" id="teamlogin" novalidate>
+            <div>
+                <label for="teamnaam">Naam</label>
+                <input type="text" id="teamnaam" name="teamnaam" autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false" required>
+            </div>
+            <div>
+                <label for="teamwachtwoord">Wachtwoord</label>
+                <input type="password" id="teamwachtwoord" name="teamwachtwoord" autocomplete="current-password" required>
+            </div>
+            <p class="fout" id="teamfout" role="alert" aria-live="polite"></p>
+            <button type="submit">Inloggen</button>
+        </form>
     </main>
     <footer>© <span id="jaar">2026</span> BrightNews · brightnews.online</footer>
-    <script>document.getElementById('jaar').textContent = new Date().getFullYear();</script>
+    <script>
+        document.getElementById('jaar').textContent = new Date().getFullYear();
+
+        // Teamtoegang (tijdelijk, tot de lancering). Bewust client-side: dit
+        // houdt de parkeerpagina netjes dicht, het is geen echte beveiliging.
+        // Naam en wachtwoord mogen in hoofd- of kleine letters.
+        (function () {
+            var NAMEN = ['maarten', 'erik'];
+            var WACHTWOORD = 'happytester';
+            var form = document.getElementById('teamlogin');
+            var fout = document.getElementById('teamfout');
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var naam = document.getElementById('teamnaam').value.trim().toLowerCase();
+                var wachtwoord = document.getElementById('teamwachtwoord').value.trim().toLowerCase();
+
+                if (NAMEN.indexOf(naam) === -1 || wachtwoord !== WACHTWOORD) {
+                    fout.textContent = 'Naam of wachtwoord klopt niet.';
+                    return;
+                }
+
+                fout.textContent = '';
+                try {
+                    localStorage.setItem('bn_team', '1');
+                } catch (err) {
+                    // localStorage geblokkeerd (privemodus e.d.): de gate in
+                    // index.html stuurt je dan sowieso terug hierheen.
+                    fout.textContent = 'Je browser blokkeert opslag. Zet de privemodus uit en probeer opnieuw.';
+                    return;
+                }
+                location.href = '/?team=1';
+            });
+        })();
+    </script>
 </body>
 </html>
