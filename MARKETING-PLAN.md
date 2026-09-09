@@ -1,5 +1,13 @@
 # BrightNews Marketing-plan (v1, 2026-09-05)
 
+**Status 2026-09-09: fase M1 GEBOUWD en live** — postfabriek +
+goedkeur-cockpit (`marketing.html`, teamlogin), wekelijkse
+evergreen-themapagina's (`themas/`), weekrapport met bron-acceptatiegraad
+en AI-advies (in de cockpit), en de digest-/vertaalreparaties. Werkwijze
+team: dagelijks ±10 min in de cockpit — kopieer wat goed is naar de
+socials, wijs af mét reden (de fabriek leert ervan). Fase M2
+(automatisch inplannen) kan zodra de socials geclaimd zijn.
+
 Plan + fundament, vastgesteld met Erik. De **marketing-agent zelf wordt
 gebouwd in de twee weken vóór de lancering** — vers ingeregeld op echte
 content. Het datafundament draait al mee in de pipeline

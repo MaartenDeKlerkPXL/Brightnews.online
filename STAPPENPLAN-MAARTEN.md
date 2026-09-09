@@ -14,16 +14,21 @@ geijkt (drempel nu 8). Je hoeft hier niets meer te doen.
    vanaf de nachtrun verschijnen de eerste **dagoverzichten** per categorie
    (badge "Dagoverzicht", met bronnenlijst). Feedback welkom, zeker op de
    digest-toon: die stel je bij in `backend/digest-prompt.md`.
-2. **Socials claimen** (stond al op je lijst): de handles
+2. **NIEUW — de marketing-cockpit** (sinds 9 sep): ga naar
+   brightnews.online/marketing.html en log in met je account. Daar staan
+   elke dag kant-en-klare conceptposts in 5 talen: kopieer wat je goed
+   vindt naar de socials, keur goed of wijs af mét reden — van jouw
+   afwijzingen leert de fabriek. Ook het weekrapport staat daar.
+3. **Socials claimen** (stond al op je lijst): de handles
    facebook/instagram.com/brightnews.online en
    linkedin.com/company/brightnews-online — nodig vóór de marketing-agent
    gebouwd wordt. Zie `MARKETING-PLAN.md` voor het hele plan.
-3. **Front-end-lijst**: `MAARTEN-FRONTEND-REVIEW.md` — alles daarin kan
+4. **Front-end-lijst**: `MAARTEN-FRONTEND-REVIEW.md` — alles daarin kan
    gewoon, de site is toch geparkeerd. Let op de werkafspraken in
    `CLAUDE.md` (o.a. de parkeer-gate in index.html laten staan).
-4. **Claude-abonnement** voor jezelf: overleg met Erik welk plan past
+5. **Claude-abonnement** voor jezelf: overleg met Erik welk plan past
    (telt mee in de break-even-som).
-5. **Mistral** heb je niet meer nodig — account mag blijven of weg,
+6. **Mistral** heb je niet meer nodig — account mag blijven of weg,
    niets van de site hangt er nog aan.
 
 ## (was) Spoor 0 — Anthropic-account (2026-09-05, ±15 min)
