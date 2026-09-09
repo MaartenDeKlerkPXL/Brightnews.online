@@ -1,5 +1,183 @@
 [
   {
+    "id": "dg-20260908-health",
+    "type": "digest",
+    "digest_date": "2026-09-08",
+    "title": "Noticias de salud esta semana: desde pruebas caseras hasta nuevo instructor de fitness",
+    "summary": "Estos días muestran lo amplio que puede ser el periodismo de salud. Se trata de tecnología que detecta enfermedades tempranamente, de investigación que podría hacer la ceguera más fácil de tratar, y de alguien que hizo realidad su sueño en el gimnasio. Tres historias muy diferentes, pero todas con el mismo núcleo: personas que avanzan en el campo de la salud y el bienestar. Así, existe una nueva prueba que puede realizarse en casa y detecta el cáncer de vejiga a través de una muestra de orina [1]. Según la fuente, la prueba identifica la enfermedad en nueve de cada...",
+    "image_alt": "Noticias de salud esta semana: desde pruebas caseras hasta nuevo instructor de fitness",
+    "meta_description": "De una prueba casera para el cáncer de vejiga hasta gotas oftálmicas contra la ceguera y un nuevo instructor de fitness: las noticias de salud de estos día",
+    "meta_keywords": "Health",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_307418562_L-1024x576.jpg",
+    "date": "2026-09-09T16:52:26.715Z",
+    "category": "Health",
+    "refs": [
+      {
+        "id": "1788885133204h2rgjkygd",
+        "title": "Prueba de orina detecta cáncer de vejiga en casa"
+      },
+      {
+        "id": "1788971317660qc8pe5wa5",
+        "title": "Gotas oculares contra la ceguera"
+      },
+      {
+        "id": "178884081544118fe4ksr9",
+        "title": "Mujer de 22 Años con Down Se Convierte en Instructora de Fitness"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260908-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-09-08",
+    "title": "De botellas varadas a medio premio de lotería: las buenas noticias de esta semana",
+    "summary": "Esta semana, la sección Lifestyle gira en torno a la conexión: con la naturaleza, con un lugar, con extraños que comparten algo. Desde libros sobre tierra y agua hasta una mochila que vuelve a reunir dos vidas, los reportajes de los últimos días muestran cómo las personas se cuidan mutuamente y cuidan lo que las rodea. La sección de libros Recommended Reading destaca seis nuevos títulos que miran el mundo de manera única [1]. Guardians of Life muestra cómo los Iñupiat triplicaron la población de ballenas jorobadas en treinta años después de asumir su gestión. Bogland revalúa los pantanos, que...",
+    "image_alt": "De botellas varadas a medio premio de lotería: las buenas noticias de esta semana",
+    "meta_description": "Libros sobre tierra y pueblo, un museo de playas, un premio de lotería compartido y más: las buenas noticias de lifestyle de los últimos días resumidas.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.adventure-journal.com/wp-content/uploads/2026/09/AJ42-Read-01.jpg",
+    "date": "2026-09-09T16:51:40.467Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "1788971711663lbi9wql8g",
+        "title": "Seis Libros Que Cambian La Visión Del Mundo"
+      },
+      {
+        "id": "1788971648180qzgit6zhg",
+        "title": "Exfontanero Construye Museo Lleno de Tesoros Varados"
+      },
+      {
+        "id": "1788927721187afzxl266z",
+        "title": "Pareja dona la mitad de su premio de lotería"
+      },
+      {
+        "id": "1788885065546acm0qljo6",
+        "title": "Corredor Sin Brazos Conduce a 110 mph con los Pies"
+      },
+      {
+        "id": "17888029427389k7599szu",
+        "title": "Una Mochila Une a Dos Hoosiers y Salva a un Hombre de la Calle"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260908-environment",
+    "type": "digest",
+    "digest_date": "2026-09-08",
+    "title": "Castores, picas gordas y tejados solares: las noticias ambientales de estos días",
+    "summary": "En estos días, la naturaleza demuestra que la recuperación y la protección van de la mano con la ingeniosidad. Desde animales que mantienen el paisaje húmedo por sí solos hasta personas que rescatan animales con cuidado, y desde terrenos de carbón abandonados que ceden paso a paneles solares hasta una selva tropical completa que se cierra a la nueva minería. Quien coloca los reportajes de los últimos días uno al lado del otro, ve un patrón claro: la protección funciona, y la solución a veces es sorprendentemente simple. En la finca Holnicote en Somerset, un lugar se mantuvo verde durante...",
+    "image_alt": "Castores, picas gordas y tejados solares: las noticias ambientales de estos días",
+    "meta_description": "Castores mantienen el paisaje húmedo, Colombia protege la Amazonia y Texas construye un parque solar: las noticias de naturaleza de estos días resumidas.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa075dd5015d5f2fa7e6648_6aa075da70b23462a05212dc_beaver-dams-drought-prevention-uk-featured.webp",
+    "date": "2026-09-09T16:50:23.904Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1788972385897m07upstn7",
+        "title": "Castores Construyen Amortiguadores Naturales Contra la Sequía"
+      },
+      {
+        "id": "178897177203806zqb79ro",
+        "title": "Fat Pika Week: picas gordas para la conservación"
+      },
+      {
+        "id": "1788927789503kftp96sj3",
+        "title": "Guardia Costera rescata tortuga marina en Florida Keys"
+      },
+      {
+        "id": "178880299686709ez84b3k",
+        "title": "Colombia protege Amazonia, material construcción verde y techo solar Londres"
+      },
+      {
+        "id": "1788802884862p8ilwvuhv",
+        "title": "Central Carbón de Texas Abre Camino a Megaparque Solar"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260908-science",
+    "type": "digest",
+    "digest_date": "2026-09-08",
+    "title": "Sorpresas del presente y del pasado: desde el damán hasta el tesoro vikingo",
+    "summary": "Estos días demuestran lo rico en sorpresas que son la naturaleza y la historia. Un zoológico recibe tres crías peludas que son sobrinos secretos del elefante, científicos hacen audible el sonido de insectos de la época de los dinosaurios, un jardinero desentierra el mayor tesoro de plata de Dinamarca, y una estudiante de Hawái descubre un hongo que puede limpiar el océano. Cuatro historias, un hilo conductor: quien mira bien, encuentra algo especial en todas partes. En el Chester Zoo nacieron Spud, Russ y Jackie, tres crías de damán de menos de 340 gramos. Parecen pequeños animales rocosos, pero genéticamente...",
+    "image_alt": "Sorpresas del presente y del pasado: desde el damán hasta el tesoro vikingo",
+    "meta_description": "Crías de damán sobrinos del elefante, sonidos de insectos de 165 millones de años, un tesoro vikingo y un hongo que limpia el océano: las noticias científi",
+    "meta_keywords": "Science",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa0735c42c09d98a2430caa_6aa0735bf1fcdcfd82f598f5_chester-zoo-hyrax-elephant-connection-featured.webp",
+    "date": "2026-09-09T16:48:53.186Z",
+    "category": "Science",
+    "refs": [
+      {
+        "id": "1788972460780dsq3ftz6n",
+        "title": "Tres adorables crías de damán resultan ser primas del elefante"
+      },
+      {
+        "id": "17889722509535exyjuwz4",
+        "title": "Científicos Reviven Sonidos de Insectos de 165 Millones de Años"
+      },
+      {
+        "id": "17889712630083mzln4j72",
+        "title": "Jardinero Encuentra el Mayor Tesoro Vikingo de Dinamarca"
+      },
+      {
+        "id": "1788754361332dch26o1r5",
+        "title": "Estudiante Descubre Hongo Que Limpia el Océano"
+      }
+    ]
+  },
+  {
+    "id": "1788972460780dsq3ftz6n",
+    "title": "Tres adorables crías de damán resultan ser primas del elefante",
+    "summary": "Chester Zoo recibió el 9 de septiembre tres crías de damán: Spud, Russ y Jackie, nacidas de los padres Maris y Albert. El zoológico, que opera como organización sin ánimo de lucro desde 1934 y alberga 30.000 animales de más de 500 especies, informa que los damanes pertenecen al mismo grupo evolutivo que los elefantes, los dugongos y los manatíes....",
+    "image_alt": "Tres pequeñas crías de damán juntas en Chester Zoo",
+    "meta_description": "Chester Zoo recibe tres crías de damán que resultan estar sorprendentemente relacionadas con elefantes y manatíes.",
+    "meta_keywords": "Chester Zoo, damán, tejón de roca, parentesco con elefante, zoológico, programa de cría, manatí",
+    "link": "https://www.goodgoodgood.co/articles/chester-zoo-hyrax-elephant-connection",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa0735c42c09d98a2430caa_6aa0735bf1fcdcfd82f598f5_chester-zoo-hyrax-elephant-connection-featured.webp",
+    "date": "2026-09-09T16:47:42.208Z",
+    "category": "Science",
+    "score": 9
+  },
+  {
+    "id": "1788972385897m07upstn7",
+    "title": "Castores Construyen Amortiguadores Naturales Contra la Sequía",
+    "summary": "En la finca Holnicote en Somerset, castores reintroducidos crean un oasis verde y húmedo en medio de un paisaje árido. Estos animales, que se extinguieron en Gran Bretaña en el siglo XVI, construyen presas y cavan canales que retienen el agua durante más tiempo. Un estudio canadiense de 2008 demostró que las áreas de castores contienen nueve veces más agua...",
+    "image_alt": "Una presa de castores en un valle verde y húmedo en medio de un paisaje árido",
+    "meta_description": "Los castores en Gran Bretaña retienen agua y crean oasis verdes durante la sequía, según investigaciones en Somerset y Devon.",
+    "meta_keywords": "castores, sequía, gestión del agua, ecosistema, Somerset, Devon, restauración natural, adaptación climática",
+    "link": "https://www.goodgoodgood.co/articles/beaver-dams-drought-prevention-uk",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa075dd5015d5f2fa7e6648_6aa075da70b23462a05212dc_beaver-dams-drought-prevention-uk-featured.webp",
+    "date": "2026-09-09T16:46:27.303Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "17889722509535exyjuwz4",
+    "title": "Científicos Reviven Sonidos de Insectos de 165 Millones de Años",
+    "summary": "Investigadores liderados por Thorin Jonsson (Universidad de Graz) han reconstruido, junto con colegas de Lincoln, Bristol, Beijing y Tempe, los sonidos de grillos y saltamontes jurásicos. Gracias a fósiles excepcionalmente bien conservados de nueve especies de saltamontes del Jurásico Medio en Mongolia Interior, los científicos pudieron calcular mediante análisis, simulaciones e IA las frecuencias exactas de sus llamadas de apareamiento....",
+    "image_alt": "Fósil de un saltamontes del período Jurásico con estructuras alares visibles productoras de sonido",
+    "meta_description": "Científicos reconstruyen sonidos de insectos de 165 millones de años de fósiles jurásicos, los sonidos más antiguos jamás reproducidos.",
+    "meta_keywords": "Sonido jurásico, saltamontes fósiles, estridulación, Thorin Jonsson, PNAS, sonido más antiguo, Orthoptera, insecto ultrasónico",
+    "link": "https://www.goodnewsnetwork.org/scientists-recreated-chirps-of-jurassic-insects-simulating-a-165-million-yo-soundscape-listen/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/credit-Jun-Jie-Gu-et-al.-PNAS-2026.jpg",
+    "date": "2026-09-09T16:44:12.785Z",
+    "category": "Science",
+    "score": 9
+  },
+  {
     "id": "178897177203806zqb79ro",
     "title": "Fat Pika Week: picas gordas para la conservación",
     "summary": "La fotógrafa Deidre Denali Rosenberg lleva más de diez años fotografiando picas americanas en las montañas altas de la región de Four Corners. En 2020 notó ejemplares notablemente regordetes e ideó Fat Pika Week, inspirada en Fat Bear Week. Con esta campaña anual, parte de su American Pika Project, llama la atención sobre lo adorables que son las picas gordas...",
@@ -2032,96 +2210,5 @@
     "image": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/082026_SW_mosquito-bites_feat.jpg?w=800",
     "date": "2026-09-02T04:12:00.420Z",
     "category": "Science"
-  },
-  {
-    "id": "17883223124365xzc5e359",
-    "title": "Átomos en caída libre confirman teoría de Einstein",
-    "summary": "Átomos de rubidio en caída libre a bordo de la estación espacial china Tiangong aceleraron a la misma velocidad. Esto valida un principio clave de la teoría de la relatividad general de Einstein, que la gravedad afecta a todos los objetos por igual.",
-    "image_alt": "Átomos de rubidio en caída libre dentro de la estación espacial china Tiangong.",
-    "meta_description": "Estudio confirma teoría de Einstein: átomos en caída libre aceleran igual en el espacio.",
-    "meta_keywords": "Einstein, relatividad general, Tiangong, estación espacial, gravedad, caída libre, átomos de rubidio, ciencia",
-    "link": "https://www.sciencenews.org/article/atoms-gravity-space-galileo-einstein",
-    "source": "Sciencenews.org",
-    "image": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/082826_EC_spaceatoms_main.jpg?w=800",
-    "date": "2026-09-02T04:11:53.590Z",
-    "category": "Science"
-  },
-  {
-    "id": "1788322305227p1e2pdsz1",
-    "title": "¿Echarse la siesta o no? La ciencia aún no lo sabe",
-    "summary": "Muchas personas no duermen suficiente por la noche. Sorprendentemente, la ciencia no puede confirmar si añadir una siesta para dividir el sueño en dos bloques es saludable. No hay suficientes pruebas para determinar sus beneficios o riesgos.",
-    "image_alt": "Una persona tumbada relajada en un sofá con los ojos cerrados, como si estuviera echando una siesta.",
-    "meta_description": "Investigación sobre los efectos de la siesta en casos de falta de sueño. La ciencia aún busca respuestas.",
-    "meta_keywords": "falta de sueño,siesta,sueño fragmentado,ciencia del sueño,salud,dormir",
-    "link": "https://www.sciencenews.org/article/nap-science-sleep-health",
-    "source": "Sciencenews.org",
-    "image": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/083126_SG_brokensleep_main.jpg?w=800",
-    "date": "2026-09-02T04:11:46.313Z",
-    "category": "Health"
-  },
-  {
-    "id": "1788322295513autfuqvmm",
-    "title": "Aprovechar el valor de tu vivienda como herramienta",
-    "summary": "Muchos ven su casa solo como un lugar para vivir y una forma pasiva de ahorro. Pagan su hipoteca cada mes y observan cómo el valor de su propiedad sube en apps inmobiliarias, aumentando su patrimonio en papel. Los pensadores estratégicos, en cambio, usan el valor acumulado de su vivienda como palanca inteligente para inversiones, en lugar de verlo como...",
-    "image_alt": "Una persona sostiene una llave de casa, rodeada de gráficos y números que muestran el valor acumulado y oportunidades de inversión.",
-    "meta_description": "Descubre cómo los pensadores estratégicos usan el valor de su vivienda como palanca inteligente para invertir.",
-    "meta_keywords": "valor vivienda, palanca, inversiones, patrimonio, inmobiliaria, estrategia, hipoteca, ahorro",
-    "link": "https://addicted2success.com/lifestyle/strategic-thinkers-home-equity-smart-leverage/",
-    "source": "Addicted2success.com",
-    "image": "https://addicted2success.com/wp-content/uploads/2026/08/Man-using-home-equity-1000x600.jpeg",
-    "date": "2026-09-02T04:11:36.740Z",
-    "category": "Finance"
-  },
-  {
-    "id": "1788322287030f63r847o8",
-    "title": "Guía para invertir en bienes raíces en Bali sin riesgos",
-    "summary": "Para emprendedores ambiciosos y nómadas digitales, Bali se ha convertido en una adición estratégica a una cartera de inversión global. Invertir con inteligencia en bienes raíces en la isla requiere más que apreciar su entorno espectacular. Comienza con entender los mecanismos del mercado local y las regulaciones al buscar propiedades.",
-    "image_alt": "Vista aérea de un paisaje tropical con villas modernas y terrazas verdes en Bali, símbolo de inversiones inmobiliarias",
-    "meta_description": "Aprende cómo los emprendedores pueden invertir en bienes raíces en Bali sin riesgos. Consejos prácticos para una transacción exitosa.",
-    "meta_keywords": "Invertir en bienes raíces Bali, guía emprendedor, nómadas digitales, cartera de inversión, reglas mercado local",
-    "link": "https://addicted2success.com/real-estate/entrepreneurs-guide-investing-bali-real-estate/",
-    "source": "Addicted2success.com",
-    "image": "https://addicted2success.com/wp-content/uploads/2026/08/A-couple-investing-in-a-villa-in-Bali-1000x600.jpeg",
-    "date": "2026-09-02T04:11:27.991Z",
-    "category": "Finance"
-  },
-  {
-    "id": "1788322278851shuxthlf3",
-    "title": "5 Estrategias de ventas para startups",
-    "summary": "Los fundadores con un producto funcional suelen tener problemas con las ventas. Quienes venden ven que los clientes se quedan. El problema no es el producto, sino las ventas. La gente inteligente trata las ventas como un estado de ánimo: activos cuando hay confianza, callados ante los fracasos. Cinco estrategias de ventas pueden llenar un pipeline de startup sin llamar...",
-    "image_alt": "Un fundador al teléfono con una sonrisa, mientras un gráfico de crecimiento de ventas es visible en la pantalla detrás de él.",
-    "meta_description": "Descubre 5 estrategias de ventas que llenan pipelines de startups sin ruido. Las ventas como clave del crecimiento.",
-    "meta_keywords": "ventas startup, estrategias de ventas, llenar pipeline, emprendimiento, desarrollo comercial",
-    "link": "https://addicted2success.com/sales/5-sales-moves-that-quietly-fill-a-startup-pipeline/",
-    "source": "Addicted2success.com",
-    "image": "https://addicted2success.com/wp-content/uploads/2026/08/Salesman-selling-and-drawing-on-the-board-1000x600.jpeg",
-    "date": "2026-09-02T04:11:19.865Z",
-    "category": "Finance"
-  },
-  {
-    "id": "1788322262450h4uo7td71",
-    "title": "IA y ciencia de datos para escalar empresas",
-    "summary": "Empresas en crecimiento enfrentan caos por más pedidos, clientes y decisiones rápidas. Las hojas de cálculo dejan de ser suficientes. La IA y la ciencia de datos ofrecen herramientas para escalar de forma más eficiente e inteligente.",
-    "image_alt": "Ilustración de una empresa en crecimiento usando IA y datos para eficiencia",
-    "meta_description": "Descubre cómo la IA y la ciencia de datos ayudan a las empresas a escalar sin caos. Soluciones tecnológicas para un crecimiento inteligente.",
-    "meta_keywords": "IA, ciencia de datos, crecimiento empresarial, escalabilidad, eficiencia, tecnología, automatización",
-    "link": "https://addicted2success.com/scale-your-business/ai-data-science-solutions-scale-business-growth/",
-    "source": "Addicted2success.com",
-    "image": "https://addicted2success.com/wp-content/uploads/2026/08/Woman-checking-her-tablet-in-data-center-1000x600.jpeg",
-    "date": "2026-09-02T04:11:03.431Z",
-    "category": "Tech"
-  },
-  {
-    "id": "1788322255359s2vvcmj31",
-    "title": "Cómo elegir la estación de energía portátil ideal para casa",
-    "summary": "Un corte de luz obliga a decidir: mantener el refrigerador encendido, alimentar un equipo CPAP, cargar teléfonos o mantener el router Wi-Fi activo para actualizaciones meteorológicas. La estación de energía portátil adecuada no es necesariamente la más grande, sino la que se ajusta a tus necesidades.",
-    "image_alt": "Estación de energía portátil conectada a nevera, teléfono y equipo CPAP durante un corte de luz",
-    "meta_description": "Descubre cómo elegir la mejor estación de energía portátil para respaldo en casa durante cortes de luz.",
-    "meta_keywords": "estación de energía portátil, corte de luz, respaldo en casa, batería de emergencia, energía de respaldo, almacenamiento de energía, soluciones de backup",
-    "link": "https://addicted2success.com/tech/choose-right-portable-power-station-home-backup/",
-    "source": "Addicted2success.com",
-    "image": "https://addicted2success.com/wp-content/uploads/2026/08/Mother-in-kitchen-with-her-child-as-she-plugs-her-fridge-into-a-portable-power-station-1000x600.jpeg",
-    "date": "2026-09-02T04:10:56.333Z",
-    "category": "Tech"
   }
 ]

@@ -1,5 +1,183 @@
 [
   {
+    "id": "dg-20260908-health",
+    "type": "digest",
+    "digest_date": "2026-09-08",
+    "title": "Gesundheitsnachrichten diese Woche: vom Heimtest bis zur neuen Fitnesstrainerin",
+    "summary": "Diese Tage zeigen, wie vielfältig Gesundheitsnachrichten sein können. Es geht um Technologie, die Krankheiten früh erkennt, um Forschung, die Blindheit möglicherweise leichter behandelbar macht, und um jemanden, der seinen Traum im Fitnessstudio verwirklicht hat. Drei ganz unterschiedliche Geschichten, aber alle mit demselben Kern: Menschen, die auf dem Gebiet von Gesundheit und Wohlbefinden Fortschritte erzielen. So gibt es einen neuen Test, der zu Hause durchgeführt werden kann und Blasenkrebs durch eine Urinprobe erkennt [1]. Nach Angaben der Quelle erkennt der Test die Krankheit in neun von zehn Fällen. Über die Funktionsweise, die Entwickler oder die Verfügbarkeit ist noch wenig bekannt, aber...",
+    "image_alt": "Gesundheitsnachrichten diese Woche: vom Heimtest bis zur neuen Fitnesstrainerin",
+    "meta_description": "Von einem Heimtest für Blasenkrebs über Augentropfen gegen Blindheit bis zur neuen Fitnesstrainerin: die Gesundheitsnachrichten dieser Tage im Überblick.",
+    "meta_keywords": "Health",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_307418562_L-1024x576.jpg",
+    "date": "2026-09-09T16:52:26.714Z",
+    "category": "Health",
+    "refs": [
+      {
+        "id": "1788885133204h2rgjkygd",
+        "title": "Urintest erkennt Blasenkrebs zu Hause"
+      },
+      {
+        "id": "1788971317660qc8pe5wa5",
+        "title": "Augentropfen gegen Blindheit"
+      },
+      {
+        "id": "178884081544118fe4ksr9",
+        "title": "22-Jährige Mit Down-Syndrom Wird Fitnessinstruktorin"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260908-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-09-08",
+    "title": "Von angeschwemmten Flaschen bis zum halben Lottogewinn: die guten Nachrichten dieser Woche",
+    "summary": "Diese Woche dreht sich in der Rubrik Lifestyle um Verbundenheit: mit der Natur, mit einem Ort, mit Fremden, die dennoch etwas teilen. Von Büchern über Land und Wasser bis zu einem Rucksack, der zwei Leben wieder zusammenbringt, zeigen die Meldungen der vergangenen Tage, wie Menschen füreinander und für das, was sie umgibt, Sorge tragen. Die Buchrubriek Recommended Reading stellt sechs neue Titel in den Fokus, die auf ihre eigene Weise auf die Welt blicken [1]. Guardians of Life zeigt, wie die Iñupiat die Belugatwal-Population in dreißig Jahren verdreifachten, nachdem sie die Verwaltung übernahmen. Bogland wertet Moore neu, die nur drei...",
+    "image_alt": "Von angeschwemmten Flaschen bis zum halben Lottogewinn: die guten Nachrichten dieser Woche",
+    "meta_description": "Bücher über Land und Volk, ein Strandmuseum, ein geteilter Lottogewinn und mehr: die positiven Lifestyle-Nachrichten der vergangenen Tage im Überblick.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.adventure-journal.com/wp-content/uploads/2026/09/AJ42-Read-01.jpg",
+    "date": "2026-09-09T16:51:40.467Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "1788971711663lbi9wql8g",
+        "title": "Sechs Bücher Die Die Welt Anders Zeigen"
+      },
+      {
+        "id": "1788971648180qzgit6zhg",
+        "title": "Ex-Klempner Baut Museum Voller Angespülter Schätze"
+      },
+      {
+        "id": "1788927721187afzxl266z",
+        "title": "Ehepaar verschenkt Hälfte des Lottogewinns"
+      },
+      {
+        "id": "1788885065546acm0qljo6",
+        "title": "Armloser Rennfahrer Steuert Mit Füßen Bei 110 mph"
+      },
+      {
+        "id": "17888029427389k7599szu",
+        "title": "Rucksack Vereint Zwei Hoosiers Und Rettet Mann Von Der Straße"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260908-environment",
+    "type": "digest",
+    "digest_date": "2026-09-08",
+    "title": "Biber, Berghasen und Solardächer: die Umweltnachrichten dieser Tage",
+    "summary": "In diesen Tagen zeigt die Natur, dass Wiederherstellung und Schutz Hand in Hand mit Erfindungsreichtum gehen. Von Tieren, die die Landschaft selbst feucht halten, bis zu Menschen, die Tiere sorgfältig retten, und von altem Kohlegelände, das Platz für Solarpanels macht, bis zu einem ganzen Regenwald, der für neue Bergbauvorhaben gesperrt wird. Wer die Meldungen der letzten Tage nebeneinander legt, erkennt ein klares Muster: Schutz funktioniert, und die Lösung ist manchmal überraschend einfach. Auf dem Holnicote-Anwesen in Somerset blieb eine Stelle während des trockenen Sommers grün, während der Rest der Landschaft verdorrte [1]. Der Grund: Biber. Vor sechs Jahren wieder angesiedelt,...",
+    "image_alt": "Biber, Berghasen und Solardächer: die Umweltnachrichten dieser Tage",
+    "meta_description": "Biber halten die Landschaft feucht, Kolumbien schützt den Amazonas und Texas baut einen Solarpark: die Naturmeldungen dieser Tage im Überblick.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa075dd5015d5f2fa7e6648_6aa075da70b23462a05212dc_beaver-dams-drought-prevention-uk-featured.webp",
+    "date": "2026-09-09T16:50:23.904Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1788972385897m07upstn7",
+        "title": "Biber Bauen Natürliche Puffer Gegen Trockenheit"
+      },
+      {
+        "id": "178897177203806zqb79ro",
+        "title": "Fat Pika Week: dicke Berghasen für Naturschutz"
+      },
+      {
+        "id": "1788927789503kftp96sj3",
+        "title": "Küstenwache rettet Meeresschildkröte in Florida Keys"
+      },
+      {
+        "id": "178880299686709ez84b3k",
+        "title": "Kolumbien schützt Amazonas, grünes Baumaterial und Sonnendach London"
+      },
+      {
+        "id": "1788802884862p8ilwvuhv",
+        "title": "Texanisches Kohlekraftwerk ebnet Weg für Megasolarpark"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260908-science",
+    "type": "digest",
+    "digest_date": "2026-09-08",
+    "title": "Überraschungen aus Gegenwart und Vergangenheit: vom Klippschliefer bis zum Wikingerschatz",
+    "summary": "Diese Tage zeigen, wie reich an Überraschungen die Natur und die Geschichte sind. Ein Tierpark begrüßt drei flauschige Welpen, die heimlich Cousins des Elefanten sind, Wissenschaftler lassen die Geräusche von Insekten aus der Zeit der Dinosaurier wieder erklingen, ein Gärtner gräbt den größten Silberschatz Dänemarks aus, und eine Schülerin aus Hawaii entdeckt einen Pilz, der den Ozean reinigen kann. Vier Geschichten, ein roter Faden: wer genau hinschaut, findet überall etwas Besonderes. Im Chester Zoo wurden Spud, Russ und Jackie geboren, drei Klippschliefer-Welpen von noch keine 340 Gramm. Sie sehen aus wie kleine Felstiere, gehören genetisch aber zur gleichen Gruppe wie...",
+    "image_alt": "Überraschungen aus Gegenwart und Vergangenheit: vom Klippschliefer bis zum Wikingerschatz",
+    "meta_description": "Klippschliefer-Cousins des Elefanten, 165 Millionen Jahre alte Insektengeräusche, ein Wikingerschatz und ein Pilz, der den Ozean reinigt: die Wissenschafts",
+    "meta_keywords": "Science",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa0735c42c09d98a2430caa_6aa0735bf1fcdcfd82f598f5_chester-zoo-hyrax-elephant-connection-featured.webp",
+    "date": "2026-09-09T16:48:53.186Z",
+    "category": "Science",
+    "refs": [
+      {
+        "id": "1788972460780dsq3ftz6n",
+        "title": "Drei süße Klippschliefer-Babys sind Cousins des Elefanten"
+      },
+      {
+        "id": "17889722509535exyjuwz4",
+        "title": "Wissenschaftler Lassen 165 Millionen Jahre Alte Insektenlaut Wiederaufleben"
+      },
+      {
+        "id": "17889712630083mzln4j72",
+        "title": "Gärtner Findet Größten Wikingerschatz Dänemarks"
+      },
+      {
+        "id": "1788754361332dch26o1r5",
+        "title": "Schülerin Entdeckt Pilz Der Ozean Reinigt"
+      }
+    ]
+  },
+  {
+    "id": "1788972460780dsq3ftz6n",
+    "title": "Drei süße Klippschliefer-Babys sind Cousins des Elefanten",
+    "summary": "Der Chester Zoo begrüßte am 9. September drei Klippschliefer-Babys: Spud, Russ und Jackie, geboren bei den Eltern Maris und Albert. Der Zoo, der seit 1934 als gemeinnützige Organisation tätig ist und 30.000 Tiere von über 500 Arten beherbergt, teilt mit, dass Klippschliefer zur gleichen evolutionären Gruppe wie Elefanten, Seekühe und Rundschwanzseekühe gehören. Tierpflegerin Megan Carpenter weist auf Gemeinsamkeiten hin, wie...",
+    "image_alt": "Drei kleine Klippschliefer-Babys zusammen im Chester Zoo",
+    "meta_description": "Der Chester Zoo begrüßt drei Klippschliefer-Babys, die sich überraschend eng mit Elefanten und Seekühen verwandt erweisen.",
+    "meta_keywords": "Chester Zoo, Klippschliefer, Felsdachs, Elefantenverwandtschaft, Zoo, Zuchtprogramm, Seekuh",
+    "link": "https://www.goodgoodgood.co/articles/chester-zoo-hyrax-elephant-connection",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa0735c42c09d98a2430caa_6aa0735bf1fcdcfd82f598f5_chester-zoo-hyrax-elephant-connection-featured.webp",
+    "date": "2026-09-09T16:47:42.208Z",
+    "category": "Science",
+    "score": 9
+  },
+  {
+    "id": "1788972385897m07upstn7",
+    "title": "Biber Bauen Natürliche Puffer Gegen Trockenheit",
+    "summary": "Auf dem Anwesen Holnicote in Somerset sorgen wiederangesiedelte Biber für eine grüne, feuchte Oase inmitten einer ansonsten trockenen Landschaft. Die Tiere, die im 16. Jahrhundert in Großbritannien ausstarben, bauen Dämme und graben Kanäle, durch die Wasser länger gespeichert wird. Eine kanadische Studie aus dem Jahr 2008 zeigte, dass Bibergebiete in trockenen Jahren neunmal mehr offenes Wasser enthielten. Auch britische Forschungen...",
+    "image_alt": "Ein Biberdamm in einem grünen, feuchten Tal inmitten einer trockenen Landschaft",
+    "meta_description": "Biber in Großbritannien speichern Wasser und schaffen grüne Oasen während der Trockenheit, wie Forschungen in Somerset und Devon zeigen.",
+    "meta_keywords": "Biber, Trockenheit, Wasserwirtschaft, Ökosystem, Somerset, Devon, Naturwiederherstellung, Klimaanpassung",
+    "link": "https://www.goodgoodgood.co/articles/beaver-dams-drought-prevention-uk",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa075dd5015d5f2fa7e6648_6aa075da70b23462a05212dc_beaver-dams-drought-prevention-uk-featured.webp",
+    "date": "2026-09-09T16:46:27.303Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "17889722509535exyjuwz4",
+    "title": "Wissenschaftler Lassen 165 Millionen Jahre Alte Insektenlaut Wiederaufleben",
+    "summary": "Forscher unter der Leitung von Thorin Jonsson (Universität Graz) haben zusammen mit Kollegen aus Lincoln, Bristol, Beijing und Tempe die Laute von Jura-Grillen und Heuschrecken rekonstruiert. Dank außergewöhnlich gut erhaltener Fossilien von neun Heuschreckenarten aus dem Mitteljura in der Inneren Mongolei konnten die Wissenschaftler durch Analysen, Simulationen und KI die genauen Tonhöhen ihrer Paarungsrufe berechnen. Es handelt sich um die...",
+    "image_alt": "Fossil einer Heuschrecke aus der Jura-Zeit mit sichtbaren Lautproduktionsstrukturen auf den Flügeln",
+    "meta_description": "Wissenschaftler rekonstruieren 165 Millionen Jahre alte Insektenlaut aus Jura-Fossilien, die ältesten jemals reproduzierten Laute der Welt.",
+    "meta_keywords": "Jura-Laut, fossile Heuschrecken, Stridulation, Thorin Jonsson, PNAS, ältester Laut, Orthoptera, Ultraschall-Insekt",
+    "link": "https://www.goodnewsnetwork.org/scientists-recreated-chirps-of-jurassic-insects-simulating-a-165-million-yo-soundscape-listen/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/credit-Jun-Jie-Gu-et-al.-PNAS-2026.jpg",
+    "date": "2026-09-09T16:44:12.785Z",
+    "category": "Science",
+    "score": 9
+  },
+  {
     "id": "178897177203806zqb79ro",
     "title": "Fat Pika Week: dicke Berghasen für Naturschutz",
     "summary": "Die Fotografin Deidre Denali Rosenberg fotografiert seit mehr als zehn Jahren amerikanische Pfeifhasen im Hochgebirge der Four Corners-Region. 2020 bemerkte sie auffallend mollige Exemplare und erfand Fat Pika Week, inspiriert von Fat Bear Week. Mit dieser jährlichen Kampagne, Teil ihres American Pika Project, lenkt sie die Aufmerksamkeit auf die Niedlichkeit dicker Pfeifhasen und auf Bedrohungen ihres Lebensraums. Die Aktion sammelt...",
@@ -2032,96 +2210,5 @@
     "image": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/082026_SW_mosquito-bites_feat.jpg?w=800",
     "date": "2026-09-02T04:12:00.420Z",
     "category": "Science"
-  },
-  {
-    "id": "17883223124365xzc5e359",
-    "title": "Freier Fall von Atomen bestätigt Einsteins Theorie",
-    "summary": "Rubidium-Atome im freien Fall an Bord der chinesischen Tiangong-Raumstation beschleunigten mit derselben Geschwindigkeit. Dies bestätigt Einsteins allgemeine Relativitätstheorie, wonach Schwerkraft alle Objekte gleich behandelt, unabhängig von ihrer Zusammensetzung.",
-    "image_alt": "Rubidium-Atome im freien Fall in der chinesischen Tiangong-Raumstation.",
-    "meta_description": "Forschung bestätigt Einsteins Theorie: Atome im freien Fall beschleunigen gleich im All.",
-    "meta_keywords": "Einstein, allgemeine Relativitätstheorie, Tiangong, Raumstation, Schwerkraft, freier Fall, Rubidium-Atome, Wissenschaft",
-    "link": "https://www.sciencenews.org/article/atoms-gravity-space-galileo-einstein",
-    "source": "Sciencenews.org",
-    "image": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/082826_EC_spaceatoms_main.jpg?w=800",
-    "date": "2026-09-02T04:11:53.590Z",
-    "category": "Science"
-  },
-  {
-    "id": "1788322305227p1e2pdsz1",
-    "title": "Schlafen in zwei Blöcken: Was sagt die Wissenschaft?",
-    "summary": "Viele Menschen schlafen nachts zu wenig. Die Wissenschaft kann noch nicht sagen, ob ein Mittagsschlaf, um den Schlaf in zwei Blöcke zu teilen, gesund ist. Es gibt nicht genug Beweise, um Vor- oder Nachteile zu bestätigen.",
-    "image_alt": "Eine Person liegt entspannt auf einem Sofa mit geschlossenen Augen, als würde sie ein Nickerchen machen.",
-    "meta_description": "Forschung zu den Auswirkungen von Mittagsschlaf bei Schlafmangel. Wissenschaft sucht noch nach Antworten.",
-    "meta_keywords": "Schlafmangel,Mittagsschlaf,Schlafwissenschaft,Gesundheit,Schlafen",
-    "link": "https://www.sciencenews.org/article/nap-science-sleep-health",
-    "source": "Sciencenews.org",
-    "image": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/083126_SG_brokensleep_main.jpg?w=800",
-    "date": "2026-09-02T04:11:46.313Z",
-    "category": "Health"
-  },
-  {
-    "id": "1788322295513autfuqvmm",
-    "title": "Wie strategisch denkende Hausbesitzer Eigenkapital nutzen",
-    "summary": "Viele sehen ihr Haus nur als Wohnort und passive Sparform. Sie tilgen monatlich ihre Hypothek und beobachten steigende Immobilienwerte in Apps, was ihr Nettovermögen auf dem Papier erhöht. Strategisch denkende Menschen nutzen ihr aufgebautes Eigenkapital jedoch als intelligente Hebelwirkung für Investitionen, statt es als statische Sparform zu betrachten.",
-    "image_alt": "Eine Person hält einen Hausschlüssel in der Hand, umgeben von Diagrammen und Zahlen, die Eigenkapital und Investitionsmöglichkeiten darstellen.",
-    "meta_description": "Erfahren Sie, wie strategisch denkende Hausbesitzer Eigenkapital als kluge Hebelwirkung für Investitionen nutzen.",
-    "meta_keywords": "Eigenkapital, Hebelwirkung, Investitionen, Vermögen, Immobilien, Strategie, Hypothek, Sparen",
-    "link": "https://addicted2success.com/lifestyle/strategic-thinkers-home-equity-smart-leverage/",
-    "source": "Addicted2success.com",
-    "image": "https://addicted2success.com/wp-content/uploads/2026/08/Man-using-home-equity-1000x600.jpeg",
-    "date": "2026-09-02T04:11:36.740Z",
-    "category": "Finance"
-  },
-  {
-    "id": "1788322287030f63r847o8",
-    "title": "Ratgeber für Unternehmer: Bali-Immobilien klug investieren",
-    "summary": "Für ehrgeizige Unternehmer und digitale Nomaden ist Bali zu einer strategischen Ergänzung eines globalen Investmentportfolios geworden. Kluges Immobilieninvestment auf der Insel erfordert mehr als nur Bewunderung für die atemberaubende Umgebung. Es beginnt mit dem Verständnis der harten Marktmechanismen und lokalen Vorschriften bei der Suche nach passenden Objekten.",
-    "image_alt": "Luftaufnahme einer tropischen Landschaft mit modernen Villen und grünen Terrassen in Bali, Symbol für Immobilieninvestitionen",
-    "meta_description": "Erfahren Sie, wie Unternehmer klug in Bali-Immobilien investieren können, ohne Risiken einzugehen. Praktische Tipps für eine erfolgreiche Transaktion.",
-    "meta_keywords": "Bali Immobilien investieren, Unternehmerratgeber, digitale Nomaden, Investmentportfolio, lokale Marktregeln",
-    "link": "https://addicted2success.com/real-estate/entrepreneurs-guide-investing-bali-real-estate/",
-    "source": "Addicted2success.com",
-    "image": "https://addicted2success.com/wp-content/uploads/2026/08/A-couple-investing-in-a-villa-in-Bali-1000x600.jpeg",
-    "date": "2026-09-02T04:11:27.991Z",
-    "category": "Finance"
-  },
-  {
-    "id": "1788322278851shuxthlf3",
-    "title": "5 Verkaufsstrategien für Startups",
-    "summary": "Gründer mit funktionierenden Produkten kämpfen oft mit dem Verkauf. Wer verkauft, sieht Kunden bleiben. Das Problem liegt nicht beim Produkt, sondern beim Verkauf. Kluge Menschen behandeln Verkauf wie eine Stimmung: aktiv bei Zuversicht, still bei Rückschlägen. Fünf Verkaufsstrategien können eine Startup-Pipeline ohne Aufsehen füllen.",
-    "image_alt": "Ein Gründer am Telefon mit einem Lächeln, während ein Wachstumsdiagramm für Verkäufe auf einem Bildschirm hinter ihm sichtbar ist.",
-    "meta_description": "Entdecken Sie 5 Verkaufsstrategien, die Startup-Pipelines leise füllen. Verkauf als Schlüssel zum Wachstum.",
-    "meta_keywords": "Startup-Verkauf, Verkaufsstrategien, Pipeline-Füllung, Unternehmertum, Geschäftsentwicklung",
-    "link": "https://addicted2success.com/sales/5-sales-moves-that-quietly-fill-a-startup-pipeline/",
-    "source": "Addicted2success.com",
-    "image": "https://addicted2success.com/wp-content/uploads/2026/08/Salesman-selling-and-drawing-on-the-board-1000x600.jpeg",
-    "date": "2026-09-02T04:11:19.865Z",
-    "category": "Finance"
-  },
-  {
-    "id": "1788322262450h4uo7td71",
-    "title": "KI und Datenwissenschaft für klügere Skalierung",
-    "summary": "Wachsende Unternehmen kämpfen mit Chaos durch mehr Aufträge, Kunden und schnelle Entscheidungen. Tabellenkalkulationen reichen nicht mehr. KI und Datenwissenschaft bieten Lösungen für effizienteres und intelligenteres Wachstum.",
-    "image_alt": "Illustration eines wachsenden Unternehmens mit KI und Daten für Effizienz",
-    "meta_description": "Erfahren Sie, wie KI und Datenwissenschaft Unternehmen helfen, klüger zu skalieren ohne Chaos. Technologie für effizientes Wachstum.",
-    "meta_keywords": "KI, Datenwissenschaft, Unternehmenswachstum, Skalierbarkeit, Effizienz, Technologie, Automatisierung",
-    "link": "https://addicted2success.com/scale-your-business/ai-data-science-solutions-scale-business-growth/",
-    "source": "Addicted2success.com",
-    "image": "https://addicted2success.com/wp-content/uploads/2026/08/Woman-checking-her-tablet-in-data-center-1000x600.jpeg",
-    "date": "2026-09-02T04:11:03.431Z",
-    "category": "Tech"
-  },
-  {
-    "id": "1788322255359s2vvcmj31",
-    "title": "Die richtige tragbare Stromversorgung für zu Hause wählen",
-    "summary": "Ein Stromausfall erzwingt Entscheidungen: Kühlschrank laufen lassen, ein CPAP-Gerät versorgen, Telefone aufladen oder den WLAN-Router für Wetterupdates betreiben. Die richtige tragbare Stromversorgung ist nicht unbedingt die größte, sondern die, die zu deinen Bedürfnissen passt.",
-    "image_alt": "Tragbare Stromversorgung mit angeschlossenem Kühlschrank, Telefon und CPAP-Gerät während eines Stromausfalls",
-    "meta_description": "Erfahre, wie du die passende tragbare Stromversorgung für zu Hause bei Stromausfällen auswählst.",
-    "meta_keywords": "tragbare Stromversorgung, Stromausfall, Hausbackup, Notstrom, Batteriebackup, autarke Stromversorgung, Energiespeicher, Backup-Lösungen",
-    "link": "https://addicted2success.com/tech/choose-right-portable-power-station-home-backup/",
-    "source": "Addicted2success.com",
-    "image": "https://addicted2success.com/wp-content/uploads/2026/08/Mother-in-kitchen-with-her-child-as-she-plugs-her-fridge-into-a-portable-power-station-1000x600.jpeg",
-    "date": "2026-09-02T04:10:56.333Z",
-    "category": "Tech"
   }
 ]

@@ -1,5 +1,90 @@
 [
   {
+    "datum": "2026-09-09T16:52:26.715Z",
+    "dag": "2026-09-08",
+    "categorie": "Health",
+    "ids": [
+      "1788885133204h2rgjkygd",
+      "1788971317660qc8pe5wa5",
+      "178884081544118fe4ksr9"
+    ],
+    "prompthash": "fd561df11314",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 9260,
+    "woorden": {
+      "nl": 292,
+      "en": 284,
+      "de": 287,
+      "fr": 337,
+      "es": 324
+    }
+  },
+  {
+    "datum": "2026-09-09T16:51:40.467Z",
+    "dag": "2026-09-08",
+    "categorie": "Lifestyle",
+    "ids": [
+      "1788971711663lbi9wql8g",
+      "1788971648180qzgit6zhg",
+      "1788927721187afzxl266z",
+      "1788885065546acm0qljo6",
+      "17888029427389k7599szu"
+    ],
+    "prompthash": "fd561df11314",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 16972,
+    "woorden": {
+      "nl": 428,
+      "en": 437,
+      "de": 420,
+      "fr": 514,
+      "es": 474
+    }
+  },
+  {
+    "datum": "2026-09-09T16:50:23.904Z",
+    "dag": "2026-09-08",
+    "categorie": "Environment",
+    "ids": [
+      "1788972385897m07upstn7",
+      "178897177203806zqb79ro",
+      "1788927789503kftp96sj3",
+      "178880299686709ez84b3k",
+      "1788802884862p8ilwvuhv"
+    ],
+    "prompthash": "fd561df11314",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 18317,
+    "woorden": {
+      "nl": 412,
+      "en": 439,
+      "de": 403,
+      "fr": 508,
+      "es": 492
+    }
+  },
+  {
+    "datum": "2026-09-09T16:48:53.186Z",
+    "dag": "2026-09-08",
+    "categorie": "Science",
+    "ids": [
+      "1788972460780dsq3ftz6n",
+      "17889722509535exyjuwz4",
+      "17889712630083mzln4j72",
+      "1788754361332dch26o1r5"
+    ],
+    "prompthash": "fd561df11314",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 15315,
+    "woorden": {
+      "nl": 373,
+      "en": 386,
+      "de": 361,
+      "fr": 433,
+      "es": 419
+    }
+  },
+  {
     "datum": "2026-09-06T15:24:31.617Z",
     "dag": "2026-09-05",
     "categorie": "Environment",

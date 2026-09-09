@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-09-09T16:36:14.380Z",
+ "gegenereerd": "2026-09-09T16:52:27.116Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -22,31 +22,60 @@
      "url": "https://brightnews.online/articles/nl/tien-jaar-onvoorwaardelijk-geld-voor-overlevenden-1788803059663asi2i547z.html"
     },
     {
-     "id": "178897177203806zqb79ro",
-     "titel": "Fat Pika Week: dikke berghaasjes voor natuurbehoud",
-     "teaser": "Fotografe Deidre Denali Rosenberg fotografeert al meer dan tien jaar Amerikaanse pika's in het hooggebergte van de Four Corners-regio. In 2020 merkte ze opvallend mollige exemplaren op en bedacht Fat Pika Week, geïnspireerd op Fat Bear Week. Met deze jaarlijkse campagne, onderdeel van haar American Pika Project, vestigt ze de aandacht op de schattigheid van dikke pika's én op bedreigingen...",
+     "id": "1788972460780dsq3ftz6n",
+     "titel": "Drie schattige klipdas-pups blijken neefjes van de olifant",
+     "teaser": "Chester Zoo verwelkomde op 9 september drie klipdas-pups: Spud, Russ en Jackie, geboren bij ouders Maris en Albert. De dierentuin, die al sinds 1934 als non-profit opereert en 30.000 dieren van meer dan 500 soorten huisvest, meldt dat klipdassen tot dezelfde evolutionaire groep behoren als olifanten, doejongs en zeekoeien. Zookeeper Megan Carpenter wijst op overeenkomsten zoals lange voortanden die lijken...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/nl/drie-schattige-klipdas-pups-blijken-neefjes-van-de-olifant-1788972460780dsq3ftz6n.html"
+    },
+    {
+     "id": "1788972385897m07upstn7",
+     "titel": "Bevers Bouwen Natuurlijke Buffers Tegen Droogte",
+     "teaser": "Op het Holnicote-landgoed in Somerset zorgen herintroduceerde bevers voor een groen, vochtig oase te midden van een verder droog landschap. De dieren, die in de 16e eeuw uitstierven in Groot-Brittannië, bouwen dammen en graven kanalen waardoor water langer wordt vastgehouden. Een Canadees onderzoek uit 2008 toonde aan dat bevergebieden tijdens droge jaren negen keer meer open water bevatten. Ook Brits...",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/fat-pika-week-dikke-berghaasjes-voor-natuurbehoud-178897177203806zqb79ro.html"
+     "url": "https://brightnews.online/articles/nl/bevers-bouwen-natuurlijke-buffers-tegen-droogte-1788972385897m07upstn7.html"
     },
     {
-     "id": "1788971711663lbi9wql8g",
-     "titel": "Zes Boeken Die De Wereld Anders Laten Zien",
-     "teaser": "Boekenrubriek Recommended Reading beveelt zes nieuwe titels aan. Guardians of Life van Kiliii Yüyan toont hoe inheemse volken, die 37% van alle natuurgebieden beheren en 80% van alle soorten herbergen, succesvol natuurbeheer voeren - zoals de Iñupiat die de walvispopulatie in dertig jaar verdrievoudigden. Bogland van Merritt Turetsky belicht het belang van moerassen, die slechts 3% van het land beslaan...",
+     "id": "17889722509535exyjuwz4",
+     "titel": "Wetenschappers Laten 165 Miljoen Jaar Oude Insectengeluiden Herleven",
+     "teaser": "Onderzoekers onder leiding van Thorin Jonsson (Universiteit Graz) hebben, samen met collega's uit Lincoln, Bristol, Beijing en Tempe, de geluiden van Jurassische krekels en sprinkhanen gereconstrueerd. Dankzij extreem goed bewaarde fossielen van negen sprinkhaansoorten uit het Midden-Jura in Binnen-Mongolië konden de wetenschappers via analyses, simulaties en AI de exacte toonhoogtes van hun paringsroepen berekenen. Het gaat om de oudste ooit...",
      "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/zes-boeken-die-de-wereld-anders-laten-zien-1788971711663lbi9wql8g.html"
-    },
-    {
-     "id": "1788971648180qzgit6zhg",
-     "titel": "Ex-Loodgieter Bouwt Museum Vol Aangespoelde Schatten",
-     "teaser": "John Anderson, een voormalige loodgieter uit Forks, Washington, is al bijna vijftig jaar een fervent beachcomber. In zijn voormalige loodgieterszaak richtte hij John's Beachcombing Museum in, naar eigen zeggen het eerste beachcombing-museum van de Verenigde Staten. De collectie bevat boeien, visnetten, visaas, verweerde schoenen, poppen, botten en wagenwielen. Anderson noemt zijn hobby 'extreme beachcombing' omdat hij vaak alleen door dichte...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/ex-loodgieter-bouwt-museum-vol-aangespoelde-schatten-1788971648180qzgit6zhg.html"
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/nl/wetenschappers-laten-165-miljoen-jaar-oude-insectengeluiden-herleven-17889722509535exyjuwz4.html"
     }
    ],
-   "dagoverzichten": []
+   "dagoverzichten": [
+    {
+     "id": "dg-20260908-health",
+     "titel": "Gezondheidsnieuws deze week: van thuistest tot nieuwe fitnessinstructeur",
+     "categorie": "Health",
+     "dag": "2026-09-08",
+     "url": "https://brightnews.online/articles/nl/gezondheidsnieuws-deze-week-van-thuistest-tot-nieuwe-fitnessinstructeur-dg-20260908-health.html"
+    },
+    {
+     "id": "dg-20260908-lifestyle",
+     "titel": "Van aangespoelde flessen tot een halve loterijprijs: het goede nieuws van deze week",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-08",
+     "url": "https://brightnews.online/articles/nl/van-aangespoelde-flessen-tot-een-halve-loterijprijs-het-goede-nieuws-van-deze-we-dg-20260908-lifestyle.html"
+    },
+    {
+     "id": "dg-20260908-environment",
+     "titel": "Bevers, berghaasjes en zonnedaken: het milieunieuws van deze dagen",
+     "categorie": "Environment",
+     "dag": "2026-09-08",
+     "url": "https://brightnews.online/articles/nl/bevers-berghaasjes-en-zonnedaken-het-milieunieuws-van-deze-dagen-dg-20260908-environment.html"
+    },
+    {
+     "id": "dg-20260908-science",
+     "titel": "Verrassingen uit heden en verleden: van klipdas tot Vikingschat",
+     "categorie": "Science",
+     "dag": "2026-09-08",
+     "url": "https://brightnews.online/articles/nl/verrassingen-uit-heden-en-verleden-van-klipdas-tot-vikingschat-dg-20260908-science.html"
+    }
+   ]
   },
   "en": {
    "top": [
@@ -67,31 +96,60 @@
      "url": "https://brightnews.online/articles/en/ten-years-of-unconditional-cash-for-survivors-1788803059663asi2i547z.html"
     },
     {
-     "id": "178897177203806zqb79ro",
-     "titel": "Fat Pika Week: chubby mountain hares for conservation",
-     "teaser": "Photographer Deidre Denali Rosenberg has been photographing American pikas in the high mountains of the Four Corners region for over ten years. In 2020, she noticed remarkably plump specimens and created Fat Pika Week, inspired by Fat Bear Week. With this annual campaign, part of her American Pika Project, she draws attention to the cuteness of chubby pikas and threats...",
+     "id": "1788972460780dsq3ftz6n",
+     "titel": "Three cute rock hyrax pups turn out to be elephant cousins",
+     "teaser": "Chester Zoo welcomed three rock hyrax pups on September 9: Spud, Russ and Jackie, born to parents Maris and Albert. The zoo, which has operated as a non-profit since 1934 and houses 30,000 animals of more than 500 species, reports that rock hyraxes belong to the same evolutionary group as elephants, dugongs and manatees. Zookeeper Megan Carpenter points out similarities...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/en/three-cute-rock-hyrax-pups-turn-out-to-be-elephant-cousins-1788972460780dsq3ftz6n.html"
+    },
+    {
+     "id": "1788972385897m07upstn7",
+     "titel": "Beavers Build Natural Buffers Against Drought",
+     "teaser": "On the Holnicote estate in Somerset, reintroduced beavers are creating a green, moist oasis amid an otherwise dry landscape. The animals, which became extinct in Great Britain in the 16th century, build dams and dig channels that allow water to be retained longer. A 2008 Canadian study showed that beaver areas contain nine times more open water during dry years....",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/fat-pika-week-chubby-mountain-hares-for-conservation-178897177203806zqb79ro.html"
+     "url": "https://brightnews.online/articles/en/beavers-build-natural-buffers-against-drought-1788972385897m07upstn7.html"
     },
     {
-     "id": "1788971711663lbi9wql8g",
-     "titel": "Six Books That Change How We See the World",
-     "teaser": "Book column Recommended Reading recommends six new titles. Guardians of Life by Kiliii Yüyan shows how indigenous peoples, who manage 37% of all natural areas and harbor 80% of all species, conduct successful nature management - such as the Iñupiat who tripled the whale population in thirty years. Bogland by Merritt Turetsky highlights the importance of wetlands, which cover only...",
+     "id": "17889722509535exyjuwz4",
+     "titel": "Scientists Bring 165 Million Year Old Insect Sounds Back to Life",
+     "teaser": "Researchers led by Thorin Jonsson (University of Graz), together with colleagues from Lincoln, Bristol, Beijing and Tempe, have reconstructed the sounds of Jurassic crickets and grasshoppers. Thanks to exceptionally well-preserved fossils of nine grasshopper species from the Middle Jurassic in Inner Mongolia, scientists were able to calculate the exact pitches of their mating calls through analyses, simulations and AI. These...",
      "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/six-books-that-change-how-we-see-the-world-1788971711663lbi9wql8g.html"
-    },
-    {
-     "id": "1788971648180qzgit6zhg",
-     "titel": "Ex-Plumber Builds Museum of Beached Treasures",
-     "teaser": "John Anderson, a former plumber from Forks, Washington, has been an avid beachcomber for nearly fifty years. In his former plumbing shop, he established John's Beachcombing Museum, which he claims is the first beachcombing museum in the United States. The collection contains buoys, fishing nets, fish bait, weathered shoes, dolls, bones and wagon wheels. Anderson calls his hobby 'extreme beachcombing'...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/ex-plumber-builds-museum-of-beached-treasures-1788971648180qzgit6zhg.html"
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/en/scientists-bring-165-million-year-old-insect-sounds-back-to-life-17889722509535exyjuwz4.html"
     }
    ],
-   "dagoverzichten": []
+   "dagoverzichten": [
+    {
+     "id": "dg-20260908-health",
+     "titel": "Health news this week: from home test to new fitness instructor",
+     "categorie": "Health",
+     "dag": "2026-09-08",
+     "url": "https://brightnews.online/articles/en/health-news-this-week-from-home-test-to-new-fitness-instructor-dg-20260908-health.html"
+    },
+    {
+     "id": "dg-20260908-lifestyle",
+     "titel": "From washed-up bottles to half a lottery prize: the good news of this week",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-08",
+     "url": "https://brightnews.online/articles/en/from-washed-up-bottles-to-half-a-lottery-prize-the-good-news-of-this-week-dg-20260908-lifestyle.html"
+    },
+    {
+     "id": "dg-20260908-environment",
+     "titel": "Beavers, mountain hares and solar roofs: the environmental news of these days",
+     "categorie": "Environment",
+     "dag": "2026-09-08",
+     "url": "https://brightnews.online/articles/en/beavers-mountain-hares-and-solar-roofs-the-environmental-news-of-these-days-dg-20260908-environment.html"
+    },
+    {
+     "id": "dg-20260908-science",
+     "titel": "Surprises from present and past: from rock hyrax to Viking treasure",
+     "categorie": "Science",
+     "dag": "2026-09-08",
+     "url": "https://brightnews.online/articles/en/surprises-from-present-and-past-from-rock-hyrax-to-viking-treasure-dg-20260908-science.html"
+    }
+   ]
   },
   "de": {
    "top": [
@@ -112,31 +170,60 @@
      "url": "https://brightnews.online/articles/de/zehn-jahre-bedingungsloses-geld-fur-uberlebende-1788803059663asi2i547z.html"
     },
     {
-     "id": "178897177203806zqb79ro",
-     "titel": "Fat Pika Week: dicke Berghasen für Naturschutz",
-     "teaser": "Die Fotografin Deidre Denali Rosenberg fotografiert seit mehr als zehn Jahren amerikanische Pfeifhasen im Hochgebirge der Four Corners-Region. 2020 bemerkte sie auffallend mollige Exemplare und erfand Fat Pika Week, inspiriert von Fat Bear Week. Mit dieser jährlichen Kampagne, Teil ihres American Pika Project, lenkt sie die Aufmerksamkeit auf die Niedlichkeit dicker Pfeifhasen und auf Bedrohungen ihres Lebensraums. Die Aktion sammelt...",
+     "id": "1788972460780dsq3ftz6n",
+     "titel": "Drei süße Klippschliefer-Babys sind Cousins des Elefanten",
+     "teaser": "Der Chester Zoo begrüßte am 9. September drei Klippschliefer-Babys: Spud, Russ und Jackie, geboren bei den Eltern Maris und Albert. Der Zoo, der seit 1934 als gemeinnützige Organisation tätig ist und 30.000 Tiere von über 500 Arten beherbergt, teilt mit, dass Klippschliefer zur gleichen evolutionären Gruppe wie Elefanten, Seekühe und Rundschwanzseekühe gehören. Tierpflegerin Megan Carpenter weist auf Gemeinsamkeiten hin, wie...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/de/drei-su-e-klippschliefer-babys-sind-cousins-des-elefanten-1788972460780dsq3ftz6n.html"
+    },
+    {
+     "id": "1788972385897m07upstn7",
+     "titel": "Biber Bauen Natürliche Puffer Gegen Trockenheit",
+     "teaser": "Auf dem Anwesen Holnicote in Somerset sorgen wiederangesiedelte Biber für eine grüne, feuchte Oase inmitten einer ansonsten trockenen Landschaft. Die Tiere, die im 16. Jahrhundert in Großbritannien ausstarben, bauen Dämme und graben Kanäle, durch die Wasser länger gespeichert wird. Eine kanadische Studie aus dem Jahr 2008 zeigte, dass Bibergebiete in trockenen Jahren neunmal mehr offenes Wasser enthielten. Auch britische Forschungen...",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/fat-pika-week-dicke-berghasen-fur-naturschutz-178897177203806zqb79ro.html"
+     "url": "https://brightnews.online/articles/de/biber-bauen-naturliche-puffer-gegen-trockenheit-1788972385897m07upstn7.html"
     },
     {
-     "id": "1788971711663lbi9wql8g",
-     "titel": "Sechs Bücher Die Die Welt Anders Zeigen",
-     "teaser": "Die Buchkolumne Recommended Reading empfiehlt sechs neue Titel. Guardians of Life von Kiliii Yüyan zeigt, wie indigene Völker, die 37% aller Naturgebiete verwalten und 80% aller Arten beherbergen, erfolgreiches Naturmanagement betreiben - wie die Iñupiat, die die Walbestandspopulation in dreißig Jahren verdreifachten. Bogland von Merritt Turetsky beleuchtet die Bedeutung von Mooren, die nur 3% des Landes ausmachen, aber 30% des...",
+     "id": "17889722509535exyjuwz4",
+     "titel": "Wissenschaftler Lassen 165 Millionen Jahre Alte Insektenlaut Wiederaufleben",
+     "teaser": "Forscher unter der Leitung von Thorin Jonsson (Universität Graz) haben zusammen mit Kollegen aus Lincoln, Bristol, Beijing und Tempe die Laute von Jura-Grillen und Heuschrecken rekonstruiert. Dank außergewöhnlich gut erhaltener Fossilien von neun Heuschreckenarten aus dem Mitteljura in der Inneren Mongolei konnten die Wissenschaftler durch Analysen, Simulationen und KI die genauen Tonhöhen ihrer Paarungsrufe berechnen. Es handelt sich um die...",
      "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/sechs-bucher-die-die-welt-anders-zeigen-1788971711663lbi9wql8g.html"
-    },
-    {
-     "id": "1788971648180qzgit6zhg",
-     "titel": "Ex-Klempner Baut Museum Voller Angespülter Schätze",
-     "teaser": "John Anderson, ein ehemaliger Klempner aus Forks, Washington, ist seit fast fünfzig Jahren ein begeisterter Strandsammler. In seinem früheren Klempnergeschäft eröffnete er John's Beachcombing Museum, das nach eigenen Angaben das erste Strandsammel-Museum der Vereinigten Staaten ist. Die Sammlung enthält Bojen, Fischernetze, Fischköder, verwitterte Schuhe, Puppen, Knochen und Wagenräder. Anderson nennt sein Hobby 'extremes Beachcombing', weil er oft allein durch dichte...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/ex-klempner-baut-museum-voller-angespulter-schatze-1788971648180qzgit6zhg.html"
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/de/wissenschaftler-lassen-165-millionen-jahre-alte-insektenlaut-wiederaufleben-17889722509535exyjuwz4.html"
     }
    ],
-   "dagoverzichten": []
+   "dagoverzichten": [
+    {
+     "id": "dg-20260908-health",
+     "titel": "Gesundheitsnachrichten diese Woche: vom Heimtest bis zur neuen Fitnesstrainerin",
+     "categorie": "Health",
+     "dag": "2026-09-08",
+     "url": "https://brightnews.online/articles/de/gesundheitsnachrichten-diese-woche-vom-heimtest-bis-zur-neuen-fitnesstrainerin-dg-20260908-health.html"
+    },
+    {
+     "id": "dg-20260908-lifestyle",
+     "titel": "Von angeschwemmten Flaschen bis zum halben Lottogewinn: die guten Nachrichten dieser Woche",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-08",
+     "url": "https://brightnews.online/articles/de/von-angeschwemmten-flaschen-bis-zum-halben-lottogewinn-die-guten-nachrichten-die-dg-20260908-lifestyle.html"
+    },
+    {
+     "id": "dg-20260908-environment",
+     "titel": "Biber, Berghasen und Solardächer: die Umweltnachrichten dieser Tage",
+     "categorie": "Environment",
+     "dag": "2026-09-08",
+     "url": "https://brightnews.online/articles/de/biber-berghasen-und-solardacher-die-umweltnachrichten-dieser-tage-dg-20260908-environment.html"
+    },
+    {
+     "id": "dg-20260908-science",
+     "titel": "Überraschungen aus Gegenwart und Vergangenheit: vom Klippschliefer bis zum Wikingerschatz",
+     "categorie": "Science",
+     "dag": "2026-09-08",
+     "url": "https://brightnews.online/articles/de/uberraschungen-aus-gegenwart-und-vergangenheit-vom-klippschliefer-bis-zum-wiking-dg-20260908-science.html"
+    }
+   ]
   },
   "fr": {
    "top": [
@@ -157,31 +244,60 @@
      "url": "https://brightnews.online/articles/fr/dix-ans-d-argent-sans-conditions-pour-les-survivantes-1788803059663asi2i547z.html"
     },
     {
-     "id": "178897177203806zqb79ro",
-     "titel": "Fat Pika Week: petits pikas dodus pour la conservation",
-     "teaser": "La photographe Deidre Denali Rosenberg photographie depuis plus de dix ans les pikas américains dans les hautes montagnes de la région des Four Corners. En 2020, elle a remarqué des exemplaires particulièrement dodus et a créé Fat Pika Week, inspirée par Fat Bear Week. Cette campagne annuelle, partie de son American Pika Project, attire l'attention sur le charme des pikas...",
+     "id": "1788972460780dsq3ftz6n",
+     "titel": "Trois adorables petits damans s'avèrent être les cousins de l'éléphant",
+     "teaser": "Le Chester Zoo a accueilli le 9 septembre trois petits damans : Spud, Russ et Jackie, nés de parents Maris et Albert. Le zoo, qui fonctionne comme une organisation à but non lucratif depuis 1934 et abrite 30 000 animaux de plus de 500 espèces, indique que les damans appartiennent au même groupe évolutif que les éléphants, les lamantins et...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/fr/trois-adorables-petits-damans-s-averent-etre-les-cousins-de-l-elephant-1788972460780dsq3ftz6n.html"
+    },
+    {
+     "id": "1788972385897m07upstn7",
+     "titel": "Les Castors Construisent des Tampons Naturels Contre la Sécheresse",
+     "teaser": "Sur le domaine de Holnicote dans le Somerset, des castors réintroduits créent une oasis verte et humide au milieu d'un paysage autrement aride. Ces animaux, disparus en Grande-Bretagne au 16e siècle, construisent des barrages et creusent des canaux qui retiennent l'eau plus longtemps. Une étude canadienne de 2008 a montré que les zones de castors contiennent neuf fois plus d'eau...",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/fat-pika-week-petits-pikas-dodus-pour-la-conservation-178897177203806zqb79ro.html"
+     "url": "https://brightnews.online/articles/fr/les-castors-construisent-des-tampons-naturels-contre-la-secheresse-1788972385897m07upstn7.html"
     },
     {
-     "id": "1788971711663lbi9wql8g",
-     "titel": "Six Livres Qui Changent Notre Vision du Monde",
-     "teaser": "La rubrique littéraire Recommended Reading recommande six nouveaux titres. Guardians of Life de Kiliii Yüyan montre comment les peuples autochtones, qui gèrent 37% de tous les espaces naturels et abritent 80% de toutes les espèces, mènent une gestion de la nature réussie - comme les Iñupiat qui ont triplé la population de baleines à bosse en trente ans. Bogland de...",
+     "id": "17889722509535exyjuwz4",
+     "titel": "Des Scientifiques Font Revivre des Sons d'Insectes de 165 Millions d'Années",
+     "teaser": "Des chercheurs dirigés par Thorin Jonsson (Université de Graz) ont, en collaboration avec des collègues de Lincoln, Bristol, Beijing et Tempe, reconstruit les sons de grillons et de sauterelles du Jurassique. Grâce à des fossiles exceptionnellement bien conservés de neuf espèces de sauterelles du Jurassique moyen en Mongolie-Intérieure, les scientifiques ont pu calculer via des analyses, des simulations et l'IA...",
      "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/six-livres-qui-changent-notre-vision-du-monde-1788971711663lbi9wql8g.html"
-    },
-    {
-     "id": "1788971648180qzgit6zhg",
-     "titel": "Ex-Plombier Construit un Musée Rempli de Trésors Échoués",
-     "teaser": "John Anderson, un ancien plombier de Forks, Washington, est un passionné de beachcombing depuis près de cinquante ans. Dans son ancienne plomberie, il a créé le John's Beachcombing Museum, qu'il présente comme le premier musée de beachcombing des États-Unis. La collection contient des bouées, des filets de pêche, des appâts, des chaussures usées, des poupées, des os et des roues...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/ex-plombier-construit-un-musee-rempli-de-tresors-echoues-1788971648180qzgit6zhg.html"
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/fr/des-scientifiques-font-revivre-des-sons-d-insectes-de-165-millions-d-annees-17889722509535exyjuwz4.html"
     }
    ],
-   "dagoverzichten": []
+   "dagoverzichten": [
+    {
+     "id": "dg-20260908-health",
+     "titel": "Actualités santé cette semaine : du test à domicile au nouveau coach fitness",
+     "categorie": "Health",
+     "dag": "2026-09-08",
+     "url": "https://brightnews.online/articles/fr/actualites-sante-cette-semaine-du-test-a-domicile-au-nouveau-coach-fitness-dg-20260908-health.html"
+    },
+    {
+     "id": "dg-20260908-lifestyle",
+     "titel": "Des bouteilles échouées à un demi-prix de loterie : les bonnes nouvelles de cette semaine",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-08",
+     "url": "https://brightnews.online/articles/fr/des-bouteilles-echouees-a-un-demi-prix-de-loterie-les-bonnes-nouvelles-de-cette--dg-20260908-lifestyle.html"
+    },
+    {
+     "id": "dg-20260908-environment",
+     "titel": "Castors, pikas des montagnes et toits solaires : les nouvelles environnementales de ces jours-ci",
+     "categorie": "Environment",
+     "dag": "2026-09-08",
+     "url": "https://brightnews.online/articles/fr/castors-pikas-des-montagnes-et-toits-solaires-les-nouvelles-environnementales-de-dg-20260908-environment.html"
+    },
+    {
+     "id": "dg-20260908-science",
+     "titel": "Des surprises du présent et du passé : du daman au trésor viking",
+     "categorie": "Science",
+     "dag": "2026-09-08",
+     "url": "https://brightnews.online/articles/fr/des-surprises-du-present-et-du-passe-du-daman-au-tresor-viking-dg-20260908-science.html"
+    }
+   ]
   },
   "es": {
    "top": [
@@ -202,31 +318,60 @@
      "url": "https://brightnews.online/articles/es/diez-anos-de-dinero-incondicional-para-sobrevivientes-1788803059663asi2i547z.html"
     },
     {
-     "id": "178897177203806zqb79ro",
-     "titel": "Fat Pika Week: picas gordas para la conservación",
-     "teaser": "La fotógrafa Deidre Denali Rosenberg lleva más de diez años fotografiando picas americanas en las montañas altas de la región de Four Corners. En 2020 notó ejemplares notablemente regordetes e ideó Fat Pika Week, inspirada en Fat Bear Week. Con esta campaña anual, parte de su American Pika Project, llama la atención sobre lo adorables que son las picas gordas...",
+     "id": "1788972460780dsq3ftz6n",
+     "titel": "Tres adorables crías de damán resultan ser primas del elefante",
+     "teaser": "Chester Zoo recibió el 9 de septiembre tres crías de damán: Spud, Russ y Jackie, nacidas de los padres Maris y Albert. El zoológico, que opera como organización sin ánimo de lucro desde 1934 y alberga 30.000 animales de más de 500 especies, informa que los damanes pertenecen al mismo grupo evolutivo que los elefantes, los dugongos y los manatíes....",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/es/tres-adorables-crias-de-daman-resultan-ser-primas-del-elefante-1788972460780dsq3ftz6n.html"
+    },
+    {
+     "id": "1788972385897m07upstn7",
+     "titel": "Castores Construyen Amortiguadores Naturales Contra la Sequía",
+     "teaser": "En la finca Holnicote en Somerset, castores reintroducidos crean un oasis verde y húmedo en medio de un paisaje árido. Estos animales, que se extinguieron en Gran Bretaña en el siglo XVI, construyen presas y cavan canales que retienen el agua durante más tiempo. Un estudio canadiense de 2008 demostró que las áreas de castores contienen nueve veces más agua...",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/fat-pika-week-picas-gordas-para-la-conservacion-178897177203806zqb79ro.html"
+     "url": "https://brightnews.online/articles/es/castores-construyen-amortiguadores-naturales-contra-la-sequia-1788972385897m07upstn7.html"
     },
     {
-     "id": "1788971711663lbi9wql8g",
-     "titel": "Seis Libros Que Cambian La Visión Del Mundo",
-     "teaser": "La sección de libros Recommended Reading recomienda seis nuevos títulos. Guardians of Life de Kiliii Yüyan muestra cómo los pueblos indígenas, que gestionan el 37% de todas las áreas naturales y albergan el 80% de todas las especies, realizan una gestión natural exitosa, como los Iñupiat que triplicaron la población de ballenas jorobadas en treinta años. Bogland de Merritt Turetsky...",
+     "id": "17889722509535exyjuwz4",
+     "titel": "Científicos Reviven Sonidos de Insectos de 165 Millones de Años",
+     "teaser": "Investigadores liderados por Thorin Jonsson (Universidad de Graz) han reconstruido, junto con colegas de Lincoln, Bristol, Beijing y Tempe, los sonidos de grillos y saltamontes jurásicos. Gracias a fósiles excepcionalmente bien conservados de nueve especies de saltamontes del Jurásico Medio en Mongolia Interior, los científicos pudieron calcular mediante análisis, simulaciones e IA las frecuencias exactas de sus llamadas de apareamiento....",
      "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/seis-libros-que-cambian-la-vision-del-mundo-1788971711663lbi9wql8g.html"
-    },
-    {
-     "id": "1788971648180qzgit6zhg",
-     "titel": "Exfontanero Construye Museo Lleno de Tesoros Varados",
-     "teaser": "John Anderson, un fontanero jubilado de Forks, Washington, lleva casi cincuenta años siendo un apasionado buscador de playas. En su antiguo negocio de fontanería abrió el Museo de Beachcombing de John, que según él es el primer museo de beachcombing de Estados Unidos. La colección contiene boyas, redes de pesca, cebo de pesca, zapatos desgastados, muñecas, huesos y ruedas de...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/exfontanero-construye-museo-lleno-de-tesoros-varados-1788971648180qzgit6zhg.html"
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/es/cientificos-reviven-sonidos-de-insectos-de-165-millones-de-anos-17889722509535exyjuwz4.html"
     }
    ],
-   "dagoverzichten": []
+   "dagoverzichten": [
+    {
+     "id": "dg-20260908-health",
+     "titel": "Noticias de salud esta semana: desde pruebas caseras hasta nuevo instructor de fitness",
+     "categorie": "Health",
+     "dag": "2026-09-08",
+     "url": "https://brightnews.online/articles/es/noticias-de-salud-esta-semana-desde-pruebas-caseras-hasta-nuevo-instructor-de-fi-dg-20260908-health.html"
+    },
+    {
+     "id": "dg-20260908-lifestyle",
+     "titel": "De botellas varadas a medio premio de lotería: las buenas noticias de esta semana",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-08",
+     "url": "https://brightnews.online/articles/es/de-botellas-varadas-a-medio-premio-de-loteria-las-buenas-noticias-de-esta-semana-dg-20260908-lifestyle.html"
+    },
+    {
+     "id": "dg-20260908-environment",
+     "titel": "Castores, picas gordas y tejados solares: las noticias ambientales de estos días",
+     "categorie": "Environment",
+     "dag": "2026-09-08",
+     "url": "https://brightnews.online/articles/es/castores-picas-gordas-y-tejados-solares-las-noticias-ambientales-de-estos-dias-dg-20260908-environment.html"
+    },
+    {
+     "id": "dg-20260908-science",
+     "titel": "Sorpresas del presente y del pasado: desde el damán hasta el tesoro vikingo",
+     "categorie": "Science",
+     "dag": "2026-09-08",
+     "url": "https://brightnews.online/articles/es/sorpresas-del-presente-y-del-pasado-desde-el-daman-hasta-el-tesoro-vikingo-dg-20260908-science.html"
+    }
+   ]
   }
  }
 }

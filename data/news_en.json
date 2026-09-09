@@ -1,5 +1,183 @@
 [
   {
+    "id": "dg-20260908-health",
+    "type": "digest",
+    "digest_date": "2026-09-08",
+    "title": "Health news this week: from home test to new fitness instructor",
+    "summary": "These days show how broad health news can be. It covers technology that detects diseases early, research that may make blindness easier to treat, and someone who made her dream come true at the gym. Three very different stories, but all with the same core: people making progress in health and wellness. There is a new test that can be performed at home and detects bladder cancer via a urine sample [1]. According to the source, the test identifies the disease in nine out of ten cases. Little is yet known about how it works, the developers, or its availability,...",
+    "image_alt": "Health news this week: from home test to new fitness instructor",
+    "meta_description": "From a home test for bladder cancer to eye drops against blindness and a new fitness instructor: this week's health news at a glance.",
+    "meta_keywords": "Health",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_307418562_L-1024x576.jpg",
+    "date": "2026-09-09T16:52:26.714Z",
+    "category": "Health",
+    "refs": [
+      {
+        "id": "1788885133204h2rgjkygd",
+        "title": "Urine test detects bladder cancer at home"
+      },
+      {
+        "id": "1788971317660qc8pe5wa5",
+        "title": "Eye drops against blindness"
+      },
+      {
+        "id": "178884081544118fe4ksr9",
+        "title": "22-Year-Old With Down Syndrome Becomes Fitness Instructor"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260908-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-09-08",
+    "title": "From washed-up bottles to half a lottery prize: the good news of this week",
+    "summary": "This week in the Lifestyle section is all about connection: with nature, with a place, with strangers who share something nonetheless. From books about land and water to a backpack that brings two lives back together, the stories from recent days show how people care for each other and for what surrounds them. The book section Recommended Reading puts six new titles in the spotlight, each offering their own perspective on the world [1]. Guardians of Life shows how the Iñupiat tripled the bowhead whale population in thirty years after taking over its management. Bogland revalues wetlands, which make up...",
+    "image_alt": "From washed-up bottles to half a lottery prize: the good news of this week",
+    "meta_description": "Books about land and people, a beach museum, a shared lottery prize and more: the positive lifestyle news from recent days in one overview.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.adventure-journal.com/wp-content/uploads/2026/09/AJ42-Read-01.jpg",
+    "date": "2026-09-09T16:51:40.467Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "1788971711663lbi9wql8g",
+        "title": "Six Books That Change How We See the World"
+      },
+      {
+        "id": "1788971648180qzgit6zhg",
+        "title": "Ex-Plumber Builds Museum of Beached Treasures"
+      },
+      {
+        "id": "1788927721187afzxl266z",
+        "title": "Couple gives away half of lottery prize"
+      },
+      {
+        "id": "1788885065546acm0qljo6",
+        "title": "Armless Racer Steers to 110 mph With His Feet"
+      },
+      {
+        "id": "17888029427389k7599szu",
+        "title": "Backpack Unites Two Hoosiers and Saves Man From Street"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260908-environment",
+    "type": "digest",
+    "digest_date": "2026-09-08",
+    "title": "Beavers, mountain hares and solar roofs: the environmental news of these days",
+    "summary": "These days, nature shows that restoration and protection go hand in hand with ingenuity. From animals that keep the landscape wet themselves to people who carefully rescue animals, and from old coal land making way for solar panels to an entire rainforest being locked down against new mining. Those who place the reports of recent days side by side see a clear pattern: protection works, and the solution is sometimes surprisingly simple. At the Holnicote estate in Somerset, one spot remained green during the dry summer, while the rest of the landscape withered [1]. The reason: beavers. Reintroduced six years...",
+    "image_alt": "Beavers, mountain hares and solar roofs: the environmental news of these days",
+    "meta_description": "Beavers keep the landscape wet, Colombia protects the Amazon and Texas builds a solar park: the nature news of these days at a glance.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa075dd5015d5f2fa7e6648_6aa075da70b23462a05212dc_beaver-dams-drought-prevention-uk-featured.webp",
+    "date": "2026-09-09T16:50:23.903Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1788972385897m07upstn7",
+        "title": "Beavers Build Natural Buffers Against Drought"
+      },
+      {
+        "id": "178897177203806zqb79ro",
+        "title": "Fat Pika Week: chubby mountain hares for conservation"
+      },
+      {
+        "id": "1788927789503kftp96sj3",
+        "title": "Coast Guard rescues sea turtle in Florida Keys"
+      },
+      {
+        "id": "178880299686709ez84b3k",
+        "title": "Colombia protects Amazon, green building material and London solar roof"
+      },
+      {
+        "id": "1788802884862p8ilwvuhv",
+        "title": "Texas Coal Plant Paves Way for Mega Solar Park"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260908-science",
+    "type": "digest",
+    "digest_date": "2026-09-08",
+    "title": "Surprises from present and past: from rock hyrax to Viking treasure",
+    "summary": "These days show how rich in surprises nature and history are. A zoo welcomes three fluffy pups that are secretly cousins of the elephant, scientists make the sound of insects from the dinosaur era audible again, a gardener digs up Denmark's largest silver treasure, and a schoolgirl from Hawaii finds a fungus that can clean up the ocean. Four stories, one common thread: if you look carefully, you find something special everywhere. At Chester Zoo, Spud, Russ and Jackie were born, three rock hyrax pups weighing less than 340 grams. They look like little rock animals, but genetically belong to...",
+    "image_alt": "Surprises from present and past: from rock hyrax to Viking treasure",
+    "meta_description": "Rock hyrax cousins of the elephant, 165 million year old insect sounds, a Viking treasure and a fungus that cleans the ocean: the science news of",
+    "meta_keywords": "Science",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa0735c42c09d98a2430caa_6aa0735bf1fcdcfd82f598f5_chester-zoo-hyrax-elephant-connection-featured.webp",
+    "date": "2026-09-09T16:48:53.186Z",
+    "category": "Science",
+    "refs": [
+      {
+        "id": "1788972460780dsq3ftz6n",
+        "title": "Three cute rock hyrax pups turn out to be elephant cousins"
+      },
+      {
+        "id": "17889722509535exyjuwz4",
+        "title": "Scientists Bring 165 Million Year Old Insect Sounds Back to Life"
+      },
+      {
+        "id": "17889712630083mzln4j72",
+        "title": "Gardener Finds Denmark's Largest Viking Treasure"
+      },
+      {
+        "id": "1788754361332dch26o1r5",
+        "title": "Student Discovers Fungus That Cleans Ocean"
+      }
+    ]
+  },
+  {
+    "id": "1788972460780dsq3ftz6n",
+    "title": "Three cute rock hyrax pups turn out to be elephant cousins",
+    "summary": "Chester Zoo welcomed three rock hyrax pups on September 9: Spud, Russ and Jackie, born to parents Maris and Albert. The zoo, which has operated as a non-profit since 1934 and houses 30,000 animals of more than 500 species, reports that rock hyraxes belong to the same evolutionary group as elephants, dugongs and manatees. Zookeeper Megan Carpenter points out similarities...",
+    "image_alt": "Three small rock hyrax pups together at Chester Zoo",
+    "meta_description": "Chester Zoo welcomes three rock hyrax pups that turn out to be surprisingly closely related to elephants and manatees.",
+    "meta_keywords": "Chester Zoo, rock hyrax, elephant relationship, zoo, breeding programme, manatee",
+    "link": "https://www.goodgoodgood.co/articles/chester-zoo-hyrax-elephant-connection",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa0735c42c09d98a2430caa_6aa0735bf1fcdcfd82f598f5_chester-zoo-hyrax-elephant-connection-featured.webp",
+    "date": "2026-09-09T16:47:42.208Z",
+    "category": "Science",
+    "score": 9
+  },
+  {
+    "id": "1788972385897m07upstn7",
+    "title": "Beavers Build Natural Buffers Against Drought",
+    "summary": "On the Holnicote estate in Somerset, reintroduced beavers are creating a green, moist oasis amid an otherwise dry landscape. The animals, which became extinct in Great Britain in the 16th century, build dams and dig channels that allow water to be retained longer. A 2008 Canadian study showed that beaver areas contain nine times more open water during dry years....",
+    "image_alt": "A beaver dam in a green, moist valley amid dry landscape",
+    "meta_description": "Beavers in Great Britain retain water and create green oases during drought, according to research in Somerset and Devon.",
+    "meta_keywords": "beavers, drought, water management, ecosystem, Somerset, Devon, nature restoration, climate adaptation",
+    "link": "https://www.goodgoodgood.co/articles/beaver-dams-drought-prevention-uk",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa075dd5015d5f2fa7e6648_6aa075da70b23462a05212dc_beaver-dams-drought-prevention-uk-featured.webp",
+    "date": "2026-09-09T16:46:27.303Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "17889722509535exyjuwz4",
+    "title": "Scientists Bring 165 Million Year Old Insect Sounds Back to Life",
+    "summary": "Researchers led by Thorin Jonsson (University of Graz), together with colleagues from Lincoln, Bristol, Beijing and Tempe, have reconstructed the sounds of Jurassic crickets and grasshoppers. Thanks to exceptionally well-preserved fossils of nine grasshopper species from the Middle Jurassic in Inner Mongolia, scientists were able to calculate the exact pitches of their mating calls through analyses, simulations and AI. These...",
+    "image_alt": "Fossil of a Jurassic grasshopper with visible sound-producing wing structures",
+    "meta_description": "Scientists reconstruct 165 million year old insect sounds from Jurassic fossils, the oldest sounds ever reproduced in the world.",
+    "meta_keywords": "Jurassic sound, fossil grasshoppers, stridulation, Thorin Jonsson, PNAS, oldest sound, Orthoptera, ultrasonic insect",
+    "link": "https://www.goodnewsnetwork.org/scientists-recreated-chirps-of-jurassic-insects-simulating-a-165-million-yo-soundscape-listen/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/credit-Jun-Jie-Gu-et-al.-PNAS-2026.jpg",
+    "date": "2026-09-09T16:44:12.785Z",
+    "category": "Science",
+    "score": 9
+  },
+  {
     "id": "178897177203806zqb79ro",
     "title": "Fat Pika Week: chubby mountain hares for conservation",
     "summary": "Photographer Deidre Denali Rosenberg has been photographing American pikas in the high mountains of the Four Corners region for over ten years. In 2020, she noticed remarkably plump specimens and created Fat Pika Week, inspired by Fat Bear Week. With this annual campaign, part of her American Pika Project, she draws attention to the cuteness of chubby pikas and threats...",
@@ -2032,96 +2210,5 @@
     "image": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/082026_SW_mosquito-bites_feat.jpg?w=800",
     "date": "2026-09-02T04:12:00.420Z",
     "category": "Science"
-  },
-  {
-    "id": "17883223124365xzc5e359",
-    "title": "Free-falling atoms confirm Einstein’s gravity theory",
-    "summary": "Rubidium atoms in free fall aboard China’s Tiangong space station accelerated at the same rate. This upholds Einstein’s general relativity principle that gravity affects all objects equally, regardless of their composition.",
-    "image_alt": "Rubidium atoms in free fall inside China’s Tiangong space station.",
-    "meta_description": "Study confirms Einstein’s gravity theory: atoms in free fall accelerate equally in space.",
-    "meta_keywords": "Einstein, general relativity, Tiangong, space station, gravity, free fall, rubidium atoms, science",
-    "link": "https://www.sciencenews.org/article/atoms-gravity-space-galileo-einstein",
-    "source": "Sciencenews.org",
-    "image": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/082826_EC_spaceatoms_main.jpg?w=800",
-    "date": "2026-09-02T04:11:53.590Z",
-    "category": "Science"
-  },
-  {
-    "id": "1788322305227p1e2pdsz1",
-    "title": "Nap or not: science still unsure about split sleep",
-    "summary": "Many people struggle to get enough sleep at night. Surprisingly, science cannot confirm whether adding a nap to split sleep into two blocks is healthy. There is insufficient evidence to determine its benefits or risks.",
-    "image_alt": "A person lying relaxed on a couch with closed eyes, as if taking a nap.",
-    "meta_description": "Research on the health effects of napping when sleep is insufficient. Science still seeks answers.",
-    "meta_keywords": "sleep deprivation,napping,midday nap,sleep science,health,sleeping",
-    "link": "https://www.sciencenews.org/article/nap-science-sleep-health",
-    "source": "Sciencenews.org",
-    "image": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/083126_SG_brokensleep_main.jpg?w=800",
-    "date": "2026-09-02T04:11:46.313Z",
-    "category": "Health"
-  },
-  {
-    "id": "1788322295513autfuqvmm",
-    "title": "Using Home Equity as Smart Financial Leverage",
-    "summary": "Many view their home solely as a place to live and a passive savings tool. They pay down the mortgage monthly and watch property values rise on real estate apps, boosting their net worth on paper. Strategic thinkers, however, leverage their built-up home equity as a smart financial tool for investments, rather than treating it as a static savings account.",
-    "image_alt": "A person holding a house key, surrounded by charts and numbers illustrating home equity and investment opportunities.",
-    "meta_description": "Discover how strategic thinkers use home equity as smart leverage for smarter investments and wealth growth.",
-    "meta_keywords": "home equity, leverage, investing, wealth, real estate, strategy, mortgage, savings",
-    "link": "https://addicted2success.com/lifestyle/strategic-thinkers-home-equity-smart-leverage/",
-    "source": "Addicted2success.com",
-    "image": "https://addicted2success.com/wp-content/uploads/2026/08/Man-using-home-equity-1000x600.jpeg",
-    "date": "2026-09-02T04:11:36.740Z",
-    "category": "Finance"
-  },
-  {
-    "id": "1788322287030f63r847o8",
-    "title": "Entrepreneur’s guide to smart Bali property investments",
-    "summary": "For ambitious entrepreneurs and digital nomads, Bali has become a strategic addition to a global investment portfolio. Smart real estate investment on the island requires more than just appreciating its stunning aesthetics. It starts with understanding the hard mechanics of the local market and regulations when browsing properties.",
-    "image_alt": "Aerial view of tropical landscape with modern villas and green terraces in Bali, symbolizing real estate investments",
-    "meta_description": "Learn how entrepreneurs can invest in Bali real estate wisely without risks. Practical tips for a successful transaction.",
-    "meta_keywords": "Bali real estate investing, entrepreneur’s guide, digital nomads, investment portfolio, local market rules",
-    "link": "https://addicted2success.com/real-estate/entrepreneurs-guide-investing-bali-real-estate/",
-    "source": "Addicted2success.com",
-    "image": "https://addicted2success.com/wp-content/uploads/2026/08/A-couple-investing-in-a-villa-in-Bali-1000x600.jpeg",
-    "date": "2026-09-02T04:11:27.991Z",
-    "category": "Finance"
-  },
-  {
-    "id": "1788322278851shuxthlf3",
-    "title": "5 Sales Tactics to Quietly Boost Startup Pipelines",
-    "summary": "Founders with working products often struggle with sales. Those who sell see customers stay. The issue isn’t the product but sales execution. Smart people treat sales like a mood: active when confident, quiet when discouraged. Five sales moves can fill a startup pipeline without fanfare.",
-    "image_alt": "A founder on the phone with a smile, while a sales growth chart is visible on a screen behind them.",
-    "meta_description": "Discover 5 sales tactics that quietly fill startup pipelines. Sales as the key to growth.",
-    "meta_keywords": "startup sales, sales tactics, pipeline growth, entrepreneurship, business development",
-    "link": "https://addicted2success.com/sales/5-sales-moves-that-quietly-fill-a-startup-pipeline/",
-    "source": "Addicted2success.com",
-    "image": "https://addicted2success.com/wp-content/uploads/2026/08/Salesman-selling-and-drawing-on-the-board-1000x600.jpeg",
-    "date": "2026-09-02T04:11:19.865Z",
-    "category": "Finance"
-  },
-  {
-    "id": "1788322262450h4uo7td71",
-    "title": "AI and data science drive smarter business scaling",
-    "summary": "Expanding businesses face chaos from rising orders, customers, and rapid decisions. Spreadsheets become inadequate. AI and data science provide tools to scale more efficiently and intelligently without stifling growth.",
-    "image_alt": "Illustration of a growing business using AI and data for efficiency",
-    "meta_description": "Learn how AI and data science help businesses scale smarter without chaos. Technology-driven growth solutions.",
-    "meta_keywords": "AI, data science, business growth, scalability, efficiency, technology, automation",
-    "link": "https://addicted2success.com/scale-your-business/ai-data-science-solutions-scale-business-growth/",
-    "source": "Addicted2success.com",
-    "image": "https://addicted2success.com/wp-content/uploads/2026/08/Woman-checking-her-tablet-in-data-center-1000x600.jpeg",
-    "date": "2026-09-02T04:11:03.431Z",
-    "category": "Tech"
-  },
-  {
-    "id": "1788322255359s2vvcmj31",
-    "title": "Select the ideal portable power station for home backup",
-    "summary": "A power outage forces decisions: keep the fridge running, power a CPAP machine, charge phones, or keep the Wi-Fi router online for weather updates. The right portable power station isn’t necessarily the largest, but the one that matches your specific needs.",
-    "image_alt": "Portable power station connected to fridge, phone, and CPAP machine during a power outage",
-    "meta_description": "Discover how to choose the best portable power station for reliable home backup during power outages.",
-    "meta_keywords": "portable power station, power outage, home backup, emergency power, battery backup, off-grid power, energy storage, backup solutions",
-    "link": "https://addicted2success.com/tech/choose-right-portable-power-station-home-backup/",
-    "source": "Addicted2success.com",
-    "image": "https://addicted2success.com/wp-content/uploads/2026/08/Mother-in-kitchen-with-her-child-as-she-plugs-her-fridge-into-a-portable-power-station-1000x600.jpeg",
-    "date": "2026-09-02T04:10:56.333Z",
-    "category": "Tech"
   }
 ]
