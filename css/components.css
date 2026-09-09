@@ -13,14 +13,18 @@
 
 
 /* 2. Maak de Navigatiebalk paginabreed */
-header, .navbar {
+/* Bewust 'body > header' en niet de kale 'header': het artikeltemplate
+   gebruikt ook een <header class="detail-header"> voor de titel. Die kreeg
+   anders position:sticky en z-index:9000 mee en plakte over de navigatie
+   heen. De navigatiebalk staat op elke pagina als directe body-child. */
+body > header, .navbar {
     width: 100%;
     position: fixed; /* Of absolute, afhankelijk van je ontwerp */
     top: 0;
     left: 0;
     z-index: 2000;
 }
-header {
+body > header {
     background-color: var(--white);
     border-bottom: 1px solid var(--border-color);
     padding: 1rem 0;
@@ -488,10 +492,11 @@ nav.container {
    uit transparante marge te bestaan (zichtbaar merk 70 van 400px hoog),
    waardoor "84px" in werkelijkheid ~15px woordmerk toonde — dáárom oogde
    het logo klein ondanks reviewronde 2026-09-02. Het bestand is gecropt
-   naar 463×94 (12px marge); 60px hoog ≈ 296px breed toont het merk nu op
-   ~45px. Mobiel wordt verderop 13rem breed. */
+   naar 463×94 (12px marge). Reviewronde 2026-09-09: van 60px terug naar
+   50px hoog (≈ 246px breed) voor een rustiger balk. Mobiel wordt verderop
+   13rem breed. */
 .nav-logo {
-    height: 60px;
+    height: 50px;
     width: auto;
     display: block;
 }
@@ -690,7 +695,9 @@ nav.container {
 
 .social-btn:hover {
     background: var(--bright-green);
-    color: var(--dark-text);
+    /* De SVG's staan op fill/stroke: currentColor, dus 'color' kleurt het
+       icoon zelf wit in plaats van zwart. */
+    color: #fff;
     transform: translateY(-5px);
     border-color: var(--bright-green);
 }

@@ -582,10 +582,19 @@ function renderLijst(artikelen) {
     const savedPos = sessionStorage.getItem('brightScrollPos');
     if (savedPos) container.style.opacity = '0';
 
-    // 4. Bouw de kaarten. gezienOpPagina voorkomt dat dezelfde foto twee
+    // 4. Dagoverzichten (type 'digest') altijd bovenaan, ook wanneer er op
+    // categorie gefilterd is. Array.prototype.sort is stabiel, dus binnen
+    // beide groepen blijft de bestaande volgorde uit de feed staan.
+    const gesorteerd = [...artikelen].sort((a, b) => {
+        const aIsDigest = a.type === 'digest' ? 0 : 1;
+        const bIsDigest = b.type === 'digest' ? 0 : 1;
+        return aIsDigest - bIsDigest;
+    });
+
+    // 5. Bouw de kaarten. gezienOpPagina voorkomt dat dezelfde foto twee
     // keer op één pagina staat (ook bij gedeelde feed-/stockfoto's).
     const gezienOpPagina = new Set();
-    artikelen.forEach((artikel, index) => {
+    gesorteerd.forEach((artikel, index) => {
         const veiligId = artikel.id || `old-${index}`;
         const card = document.createElement('div');
         card.className = 'news-card';
@@ -653,7 +662,7 @@ function renderLijst(artikelen) {
         container.appendChild(card);
     });
 
-    // 5. Herstel scroll-positie
+    // 6. Herstel scroll-positie
     if (savedPos && !window.location.search.includes('id=')) {
         requestAnimationFrame(() => {
             window.scrollTo({ top: parseInt(savedPos), behavior: 'instant' });
