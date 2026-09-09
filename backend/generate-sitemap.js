@@ -47,10 +47,26 @@ function artikelUrls() {
   return urls;
 }
 
+// Evergreen-themapagina's (fase M1, 2026-09-09) uit themas/manifest.json —
+// zelfde principe als artikelen: eenmaal gepubliceerde URL's blijven bestaan.
+function themaUrls() {
+  const manifestPad = path.join(__dirname, '..', 'themas', 'manifest.json');
+  if (!fs.existsSync(manifestPad)) return [];
+  const manifest = JSON.parse(fs.readFileSync(manifestPad, 'utf8'));
+  const urls = [];
+  for (const entry of Object.values(manifest.themas || {})) {
+    for (const [lang, slug] of Object.entries(entry.slugs || {})) {
+      urls.push({ loc: `/themas/${lang}/${slug}.html`, priority: '0.7', lastmod: entry.datum || LAST_MODIFIED });
+    }
+  }
+  return urls;
+}
+
 function generateSitemap() {
   const alles = [
     ...PAGES.map(p => ({ ...p, lastmod: LAST_MODIFIED })),
     ...artikelUrls(),
+    ...themaUrls(),
   ];
   const urls = alles.map(({ loc, priority, lastmod }) => `  <url>
     <loc>${SITE_URL}${loc}</loc>

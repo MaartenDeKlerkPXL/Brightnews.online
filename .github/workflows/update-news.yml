@@ -64,6 +64,30 @@ jobs:
       - name: 📣 Marketing-feed genereren
         run: node backend/generate-marketing-feed.js
 
+      - name: ✍️ Postfabriek (conceptposts voor de cockpit)
+        # Marketing mag nooit de nieuws-update laten sneuvelen.
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: node backend/generate-posts.js
+
+      - name: 🌿 Evergreen-themapagina (wekelijks)
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+        run: node backend/generate-evergreen.js
+
+      - name: 📊 Weekrapport (wekelijks)
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: node backend/generate-rapport.js
+
       - name: 🗺️ Sitemap & robots.txt genereren
         run: node backend/generate-sitemap.js
 
@@ -75,7 +99,7 @@ jobs:
           # Alleen de nieuws-JSON's plus de gegenereerde sitemap/robots.txt —
           # bewust niet data/*.json, zodat een eventueel ander databestand
           # nooit per ongeluk publiek meegecommit wordt.
-          git add data/news_*.json data/seen_links.json data/last_run.json data/selectie-log.json data/digest-log.json data/selectie-archief.jsonl data/marketing-feed.json articles sitemap.xml robots.txt
+          git add data/news_*.json data/seen_links.json data/last_run.json data/selectie-log.json data/digest-log.json data/selectie-archief.jsonl data/marketing-feed.json data/marketing-posts.json data/rapporten articles themas sitemap.xml robots.txt
 
           # Controleer of er echt iets veranderd is voor we committen
           if git diff --quiet && git diff --staged --quiet; then
