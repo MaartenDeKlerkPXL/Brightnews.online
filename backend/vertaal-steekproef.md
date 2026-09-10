@@ -138,3 +138,18 @@ artikelen (lengte, Nederlandse resten, bronnenlijsten, titelstijl) gelden wel
 voor de hele feed. De taalkundige oordelen over Duits, Frans en Spaans zijn van
 één lezer; laat ze bevestigen door iemand die de taal als moedertaal spreekt
 voordat er conclusies aan worden verbonden die geld of tijd kosten.
+
+---
+
+# Nachtelijke steekproeven
+
+Vanaf 2026-09-11 kijkt de nachtelijke controle elke nacht één vertaald artikel
+na, in een taal die per dag van de week rouleert. Duits en Spaans komen twee
+keer per week aan bod, omdat die in de steekproef hierboven de meeste problemen
+gaven. De opdracht staat in `backend/nachtelijke-beoordeling-prompt.md`, stap 6.
+
+Blokken worden alleen toegevoegd, nooit herschreven. Zo is over een paar weken
+te zien of het aantal bevindingen daalt nadat de vertaalprompt is bijgesteld —
+en of het per taal verschilt.
+
+*(Nog geen steekproeven; de eerste volgt bij de eerstvolgende nachtrun.)*

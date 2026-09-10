@@ -53,7 +53,7 @@ met je bevindingen gebeurt.
 ### 1. Haal de laatste stand op
 
 Werk in de repo `brightnews-website`. Begin met `git pull --rebase origin master`.
-Lukt dat niet, ga dan verder en volg stap 7 (geen toegang tot git).
+Lukt dat niet, ga dan verder en volg stap 8 (geen toegang tot git).
 
 ### 2. Bepaal wat je beoordeelt
 
@@ -152,13 +152,70 @@ telkens op, zet er dan een korte alinea onder met het kopje **Patroon**. Bijvoor
 een weekoverzicht doorgelaten, de vierde deze maand". Dat is voor Erik het
 waardevolst, want dat wijst naar de prompt in plaats van naar één artikel.
 
-### 6. Sla het op in git
+### 6. Eén vertaald artikel nakijken
+
+Naast de beoordeling hierboven controleer je elke nacht **één** artikel in één
+vertaalde taal. Zo bouw je over de weken een beeld op van alle vier de talen
+zonder dat één nacht veel tijd kost.
+
+**Welke taal:** rouleer op de dag van de week — maandag en vrijdag Engels,
+dinsdag Duits, woensdag Frans, donderdag Spaans, zaterdag Duits, zondag Spaans.
+Duits en Spaans komen dus twee keer per week aan bod; dat is met opzet, want die
+twee gaven in de steekproef van 2026-09-10 de meeste problemen.
+
+**Welk artikel:** neem het eerste artikel uit de groep die je vannacht hebt
+beoordeeld dat in `data/news_nl.json` én in `data/news_<taal>.json` voorkomt.
+Was er niets nieuws, sla deze stap dan over en noteer dat.
+
+**Waar je op let** — dit zijn de zes fouten uit `backend/vertaal-steekproef.md`,
+allemaal echt aangetroffen:
+
+1. **Geslacht.** Staat er in het Nederlands "haar" of "zij", dan hoort de
+   vertaling dat over te nemen. Let er ook op dat kop en tekst elkaar niet
+   tegenspreken; in het Duits gebeurde precies dat.
+2. **Eigennamen.** Namen van organisaties, instellingen, merken en musea horen
+   onvertaald te blijven.
+3. **Toegevoegde feiten.** Alles wat in de vertaling staat maar niet in het
+   Nederlands. "Voormalig" is niet hetzelfde als "gepensioneerd".
+4. **Titelstijl.** Frans en Spaans gebruiken gewone zinsstijl; een hoofdletter
+   op elk woord is daar fout. Duits capitaliseert wél alle zelfstandige
+   naamwoorden, dus daar is dat normaal.
+5. **Soort-, merk- en productnamen.** Die horen te blijven staan en niet
+   algemener te worden gemaakt.
+6. **Verwijzingen als `[1]`** in de dagoverzichten horen mee te komen.
+
+Kijk daarnaast gewoon of het loopt: taalfouten, kromme zinnen, en of de kop het
+verhaal nog dekt.
+
+**Waar je het opschrijft:** onderaan `backend/vertaal-steekproef.md`, onder het
+kopje "Nachtelijke steekproeven". Bestaat dat kopje nog niet, maak het dan aan
+als laatste kop van dat bestand. Gebruik deze vorm:
+
+```markdown
+### 2026-09-12, Frans
+
+**Artikel:** Bevers Bouwen Natuurlijke Buffers Tegen Droogte
+**Oordeel:** twee kleine dingen.
+
+- **Titelstijl:** "Les Castors Construisent des Tampons Naturels" gebruikt een
+  hoofdletter op elk woord; in het Frans hoort dat gewone zinsstijl te zijn.
+- **Toegevoegd feit:** het Nederlands zegt "zes jaar geleden", het Frans maakt
+  er "il y a environ six ans" van — dat "ongeveer" staat niet in het origineel.
+
+Verder loopt de tekst natuurlijk en dekt de kop het verhaal.
+```
+
+Was er niets mis, schrijf dan één regel: taal, artikel, en dat er niets is
+aangetroffen. Dat is óók informatie — juist als Erik de vertaalprompt aanpast
+wil je zien of het aantal bevindingen daalt.
+
+### 7. Sla het op in git
 
 Alleen als je iets hebt toegevoegd:
 
 ```
 git pull --rebase origin master
-git add backend/selectie-prompt-analyse.md
+git add backend/selectie-prompt-analyse.md backend/vertaal-steekproef.md
 git commit -m "Nachtelijke beoordeling 11 september: twee artikelen afgekeurd" -m "Van de veertien beoordeelde artikelen vielen er twee af: een teaser van een nog niet onthulde bestelbus, en een weekoverzicht van een andere nieuwssite. Beide staan met toelichting in het document."
 git push origin master
 ```
@@ -171,7 +228,7 @@ toelichting eronder.
 Voorwaarden:
 
 - **Raak geen enkel ander bestand aan.** Alleen
-  `backend/selectie-prompt-analyse.md`. Geen artikelen, geen prompts, geen code,
+  `backend/selectie-prompt-analyse.md` en `backend/vertaal-steekproef.md`. Geen artikelen, geen prompts, geen code,
   geen data. Zie je iets anders gewijzigd in `git status`, stop dan en meld het
   in je bevindingen in plaats van te pushen.
 - Schrijf een commitbericht in **gewone Nederlandse leestaal**, geen code of
@@ -179,9 +236,9 @@ Voorwaarden:
   twee artikelen afgekeurd". Zet in de toelichting eronder in hele zinnen wat je
   hebt aangetroffen.
 - Loopt de push mis door een botsing, doe dan opnieuw `git pull --rebase` en
-  probeer het één keer opnieuw. Lukt het dan nog niet, volg stap 7.
+  probeer het één keer opnieuw. Lukt het dan nog niet, volg stap 8.
 
-### 7. Als je geen toegang hebt tot git
+### 8. Als je geen toegang hebt tot git
 
 Kun je niet pullen, committen of pushen — geen netwerk, geen rechten, een
 conflict dat je niet mag oplossen — gooi je werk dan **niet** weg.
@@ -200,14 +257,16 @@ chronologische volgorde toe aan `backend/selectie-prompt-analyse.md`, verwijder
 daarna de verwerkte wachtrijbestanden, en ga dan pas verder met de beoordeling
 van vannacht. Vermeld in je commitbericht dat je een achterstand hebt ingelopen.
 
-### 8. Wat je nooit doet
+### 9. Wat je nooit doet
 
 - Artikelen verwijderen, aanpassen of offline halen. Ook niet als ze overduidelijk
   niet deugen. Statische artikelpagina's worden nooit verwijderd, want de URL's
   zijn geïndexeerd — dat staat in `CLAUDE.md`.
-- `backend/selectie-prompt.md` aanpassen. Je signaleert; Erik beslist.
+- `backend/selectie-prompt.md` of de vertaalprompt aanpassen. Je signaleert;
+  Erik beslist.
 - Eerdere beoordelingsblokken herschrijven of weghalen.
-- Iets buiten `backend/selectie-prompt-analyse.md` en
-  `backend/beoordelingen-wachtrij/` committen.
+- Iets buiten `backend/selectie-prompt-analyse.md`,
+  `backend/vertaal-steekproef.md` en `backend/beoordelingen-wachtrij/`
+  committen.
 - Je oordeel afzwakken omdat het ongemakkelijk is. Als een artikel niet deugt,
   schrijf dat op, ook als het van een vaste bron komt of al veel gelezen is.
