@@ -1,5 +1,137 @@
 [
  {
+  "datum": "2026-09-10T04:16:16.256Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "A ‘Living Roof’ is Growing Atop Ford’s Largest Factory–Saving Energy and Boosting Birds",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Hartverwarmend verhaal over duurzaamheid en natuurbescherming op industriële schaal, volledig positief geformuleerd en maatschappelijk relevant."
+ },
+ {
+  "datum": "2026-09-10T04:16:16.256Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "S. Carolina Aquarium Celebrates ‘Baby Boom’ of Critically-Endangered Penguin Chicks",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Hoopvol verhaal over redding van bedreigde diersoort, positief geformuleerd als 'baby boom', duidelijk maatschappelijk relevant voor natuurbescherming."
+ },
+ {
+  "datum": "2026-09-10T04:16:16.256Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "Secret tunnels in Maine help wildlife cross the road safely. Now, they're expanding for bears and moose to fit, too",
+  "gevoel": 3,
+  "formulering": 2,
+  "relevantie": 3,
+  "totaal": 8,
+  "besluit": "ja",
+  "reden": "Warm verhaal over innovatieve oplossing voor mens-dier conflict, overwegend positief geformuleerd ondanks korte probleemcontext, maatschappelijk relevant en herkenbaar."
+ },
+ {
+  "datum": "2026-09-10T04:16:16.256Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "A researcher and 'lifelong Swiftie,' discovered a new species of insect — and named it after Taylor Swift",
+  "gevoel": 2,
+  "formulering": 3,
+  "relevantie": 2,
+  "totaal": 7,
+  "besluit": "nee",
+  "reden": "Positief en creatief verhaal over wetenschappelijke ontdekking met persoonlijke passie, volledig positief geformuleerd, beperkt maatschappelijk bereik maar herkenbaar."
+ },
+ {
+  "datum": "2026-09-10T04:16:16.256Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "In effort to achieve 1M good deeds in remembrance of 9/11, thousands of trees will be planted nationwide",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Hartverwarmend verhaal over gemeenschapszin en herdenking via positieve daden, volledig positief geformuleerd, maatschappelijk relevant en persoonlijk herkenbaar."
+ },
+ {
+  "datum": "2026-09-10T04:16:16.256Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "Wildlife center rescues rare cave bat that was trapped in Omaha office building: 'Halloween came early!'",
+  "gevoel": 2,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 8,
+  "besluit": "ja",
+  "reden": "Positief verhaal over dierredding en wetenschappelijke ontdekking, volledig positief geformuleerd met speelse toon, maatschappelijk relevant voor natuurbescherming."
+ },
+ {
+  "datum": "2026-09-10T04:16:16.256Z",
+  "bron": "Newatlas.com",
+  "titel": "World's most expensive Cadillac: $1.275 million, gold-plated, one-of-one",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Zuivere productlancering/commerciële promotie zonder maatschappelijke betekenis, afwijslijst."
+ },
+ {
+  "datum": "2026-09-10T04:16:16.256Z",
+  "bron": "Newatlas.com",
+  "titel": "Will a cyborg cockroach paramedic save your life in the future?",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Onvoldoende inhoud in titel en tekst om te beoordelen; lijkt op productnieuws/technische innovatie zonder duidelijke maatschappelijke kern."
+ },
+ {
+  "datum": "2026-09-10T04:16:16.256Z",
+  "bron": "Newatlas.com",
+  "titel": "Triple-battery modular tactical e-moto hauls major loads up to 125 miles",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Voertuig-/productlancering zonder maatschappelijke betekenis, afwijslijst."
+ },
+ {
+  "datum": "2026-09-10T04:16:16.256Z",
+  "bron": "Sciencenews.org",
+  "titel": "AI may have solved one of math’s biggest puzzles, raising controversy",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Onvoldoende inhoud in titel en tekst om te beoordelen; lijkt op technisch/wetenschappelijk nieuws met controversiële ondertoon."
+ },
+ {
+  "datum": "2026-09-10T04:16:20.212Z",
+  "bron": "Sciencenews.org",
+  "titel": "The shingles vaccine may protect the heart",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Wetenschappelijke doorbraak die hartgezondheid kan verbeteren; positief geformuleerd als beschermend voordeel; maatschappelijk relevant voor publieke gezondheid."
+ },
+ {
+  "datum": "2026-09-10T04:16:20.212Z",
+  "bron": "NPR.org",
+  "titel": "Are we any closer to detecting dark matter?",
+  "gevoel": 1,
+  "formulering": 1,
+  "relevantie": 1,
+  "totaal": 3,
+  "besluit": "nee",
+  "reden": "Tekst is onvolledig en bevat alleen navigatie-elementen; onmogelijk de kern van het verhaal te beoordelen; geen inhoud beschikbaar."
+ },
+ {
   "datum": "2026-09-09T16:42:34.496Z",
   "bron": "GoodNewsNetwork.org",
   "titel": "Scientists Recreated Chirps of Jurassic Insects, Simulating a 165 Million-yo Soundscape (Listen)",
@@ -3166,137 +3298,5 @@
   "totaal": 9,
   "besluit": "ja",
   "reden": "De kern gaat over redding, herstel en gemeenschapszin (Coast Guard en Turtle Hospital samenwerken om een zeeschildpad en haar eieren te redden)."
- },
- {
-  "datum": "2026-09-03T16:23:31.609Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "New Mexico's electricity prices are some of the lowest in the country. Solar is to thank",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "De kern gaat over een hoopgevende, maatschappelijke doorbraak in duurzame energie."
- },
- {
-  "datum": "2026-09-03T16:23:41.663Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "What dandelions, bees, and outdoor play can teach kids about their responsibilities to nature",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 4,
-  "totaal": 10,
-  "besluit": "ja",
-  "reden": "De kern gaat over kinderen die via natuur en verhalen leren in harmonie met de aarde te leven, wat hoopvol en maatschappelijk relevant is."
- },
- {
-  "datum": "2026-09-03T16:23:51.512Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "Good News This Week: August 29, 2026 - Cookies, Playgrounds, & Seahorses",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "De kern gaat over een maatschappelijke doorbraak die milieu en portemonnee verbetert, met een hoopvolle en positieve toon."
- },
- {
-  "datum": "2026-09-03T16:24:01.184Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "Olivia Rodrigo's Daisy Chain Fields festival raises $10M for reproductive rights",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "De kern gaat over een festival dat 10 miljoen doneert aan non-profits voor reproductieve rechten, met gemeenschapszin en positieve impact."
- },
- {
-  "datum": "2026-09-03T16:24:10.901Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "Camera traps capture adorable images of Costa Rica's 'sloth bridges,' built to help the slowpokes cross roads safely",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "De kern gaat over redding en bescherming van dieren door innovatieve oplossingen."
- },
- {
-  "datum": "2026-09-03T16:24:20.246Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "New NJ law requires data centers to report water and energy use: 'They will not operate in the shadows'",
-  "gevoel": 2,
-  "formulering": 2,
-  "relevantie": 3,
-  "totaal": 7,
-  "besluit": "ja",
-  "reden": "De kern gaat over transparantie en verantwoordelijkheid in energie- en watergebruik, wat hoopvol en maatschappelijk relevant is."
- },
- {
-  "datum": "2026-09-03T16:24:30.141Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "An environmental restoration company rescued a kitten from an excavator. Now she's their newest 'coworker'",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 2,
-  "totaal": 8,
-  "besluit": "ja",
-  "reden": "De kern gaat over redding en een positieve afloop voor het kitten."
- },
- {
-  "datum": "2026-09-03T16:24:39.395Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "Scientists discovered 149 new deep-sea species near a collapsed volcano: 'It was a massive hole in the data'",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "De ontdekking van nieuwe diersoorten en wetenschappelijke doorbraken in onontgonnen natuurgebieden wekt hoop en verwondering."
- },
- {
-  "datum": "2026-09-03T16:24:50.613Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "Toy store employee makes 'wobbly head' kitten a custom wheelchair out of Lego bricks",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 2,
-  "totaal": 8,
-  "besluit": "ja",
-  "reden": "De kern gaat over hulp en aanpassing voor een dier in nood, wat warm en hoopgevend is."
- },
- {
-  "datum": "2026-09-03T16:25:03.158Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "Amid Europe's record-breaking heat and drought, solar power made it possible to cope",
-  "gevoel": 3,
-  "formulering": 2,
-  "relevantie": 3,
-  "totaal": 8,
-  "besluit": "ja",
-  "reden": "De kern gaat over de positieve bijdrage van zonne-energie tijdens extreme omstandigheden, wat hoopvol en maatschappelijk relevant is."
- },
- {
-  "datum": "2026-09-03T16:25:05.810Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "West Virginia gives 54K low-income families a $200 school clothing allowance",
-  "gevoel": 3,
-  "formulering": 1,
-  "relevantie": 3,
-  "totaal": 7,
-  "besluit": "nee",
-  "reden": "Formulering scoort te laag door probleem-framing (vertraging, onderzoek, frustratie)."
- },
- {
-  "datum": "2026-09-03T16:25:07.515Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "Artemis II astronaut Christina Koch answers elementary schoolers' burning questions ",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 4,
-  "totaal": 10,
-  "besluit": "ja",
-  "reden": "De kern gaat over inspirerende prestaties, STEM-educatie en gemeenschapszin, met een positieve en herkenbare boodschap."
  }
 ]

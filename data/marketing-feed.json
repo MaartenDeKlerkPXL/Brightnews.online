@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-09-09T16:52:27.116Z",
+ "gegenereerd": "2026-09-10T04:23:41.451Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -14,12 +14,20 @@
      "url": "https://brightnews.online/articles/nl/urinetest-herkent-blaaskanker-thuis-1788885133204h2rgjkygd.html"
     },
     {
-     "id": "1788803059663asi2i547z",
-     "titel": "Tien Jaar Onvoorwaardelijk Geld Voor Overlevenden",
-     "teaser": "Non-profitorganisatie FreeFrom, opgericht door Sonya Passi in 2016, geeft overlevenden van gendergerelateerd geweld al tien jaar direct geld zonder voorwaarden, vaak tot 1.500 dollar. Sinds de oprichting is in totaal 10 miljoen dollar rechtstreeks aan overlevenden gegeven. Uit een impactrapport ter gelegenheid van het tienjarig bestaan blijkt dat 94% van de ondervraagden hun sociale welzijn zag verbeteren en 93% hun...",
-     "score": 10,
-     "categorie": "Finance",
-     "url": "https://brightnews.online/articles/nl/tien-jaar-onvoorwaardelijk-geld-voor-overlevenden-1788803059663asi2i547z.html"
+     "id": "1789014131279gvpgswh9x",
+     "titel": "Prikvaccin beschermt mogelijk hart",
+     "teaser": "Onderzoekers hebben een nieuw mogelijk voordeel ontdekt van het gordelroosvaccin Shingrix: het lijkt gekoppeld te zijn aan een lager risico op hartfalen, hartaanval en beroerte. Het vaccin, dat oorspronkelijk is ontwikkeld om gordelroos te voorkomen, zou volgens de bron dus mogelijk ook bescherming bieden voor het hart. Verdere details over de studie zelf ontbreken in dit bericht.",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/nl/prikvaccin-beschermt-mogelijk-hart-1789014131279gvpgswh9x.html"
+    },
+    {
+     "id": "17890140425336oyar81ew",
+     "titel": "Duizenden Bomen Geplant Voor 1 Miljoen Goede Daden",
+     "teaser": "Ter herdenking van 25 jaar 9/11 wil de non-profitorganisatie 9/11 Day dit jaar één miljoen goede daden verzamelen. Een van de initiatieven is Together We Grow, een samenwerking met One Tree Planted. Op 9 september werd een 15-voet hoge moeraseik geplant in Battery Park in New York, bij het Labyrinth of Contemplation, een plek die de slachtoffers van de aanslagen...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/duizenden-bomen-geplant-voor-1-miljoen-goede-daden-17890140425336oyar81ew.html"
     },
     {
      "id": "1788972460780dsq3ftz6n",
@@ -36,14 +44,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/bevers-bouwen-natuurlijke-buffers-tegen-droogte-1788972385897m07upstn7.html"
-    },
-    {
-     "id": "17889722509535exyjuwz4",
-     "titel": "Wetenschappers Laten 165 Miljoen Jaar Oude Insectengeluiden Herleven",
-     "teaser": "Onderzoekers onder leiding van Thorin Jonsson (Universiteit Graz) hebben, samen met collega's uit Lincoln, Bristol, Beijing en Tempe, de geluiden van Jurassische krekels en sprinkhanen gereconstrueerd. Dankzij extreem goed bewaarde fossielen van negen sprinkhaansoorten uit het Midden-Jura in Binnen-Mongolië konden de wetenschappers via analyses, simulaties en AI de exacte toonhoogtes van hun paringsroepen berekenen. Het gaat om de oudste ooit...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/nl/wetenschappers-laten-165-miljoen-jaar-oude-insectengeluiden-herleven-17889722509535exyjuwz4.html"
     }
    ],
    "dagoverzichten": [
@@ -88,12 +88,20 @@
      "url": "https://brightnews.online/articles/en/urine-test-detects-bladder-cancer-at-home-1788885133204h2rgjkygd.html"
     },
     {
-     "id": "1788803059663asi2i547z",
-     "titel": "Ten Years of Unconditional Cash for Survivors",
-     "teaser": "Nonprofit organization FreeFrom, founded by Sonya Passi in 2016, has been providing survivors of gender-based violence with direct cash assistance without conditions for ten years, often up to $1,500. Since its founding, a total of $10 million has been given directly to survivors. According to an impact report marking the organization's tenth anniversary, 94% of respondents saw improvements in their...",
-     "score": 10,
-     "categorie": "Finance",
-     "url": "https://brightnews.online/articles/en/ten-years-of-unconditional-cash-for-survivors-1788803059663asi2i547z.html"
+     "id": "1789014131279gvpgswh9x",
+     "titel": "Shingles vaccine may protect heart",
+     "teaser": "Researchers have discovered a new potential benefit of the shingles vaccine Shingrix: it appears to be linked to a lower risk of heart failure, heart attack and stroke. The vaccine, originally developed to prevent shingles, could thus potentially also offer protection for the heart, according to the source. Further details about the study itself are missing from this report.",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/en/shingles-vaccine-may-protect-heart-1789014131279gvpgswh9x.html"
+    },
+    {
+     "id": "17890140425336oyar81ew",
+     "titel": "Thousands of Trees Planted For 1 Million Good Deeds",
+     "teaser": "To commemorate 25 years since 9/11, the nonprofit organization 9/11 Day aims to collect one million good deeds this year. One of the initiatives is Together We Grow, a collaboration with One Tree Planted. On September 9, a 15-foot tall swamp oak was planted in Battery Park in New York City, at the Labyrinth of Contemplation, a place that honors...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/thousands-of-trees-planted-for-1-million-good-deeds-17890140425336oyar81ew.html"
     },
     {
      "id": "1788972460780dsq3ftz6n",
@@ -110,14 +118,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/en/beavers-build-natural-buffers-against-drought-1788972385897m07upstn7.html"
-    },
-    {
-     "id": "17889722509535exyjuwz4",
-     "titel": "Scientists Bring 165 Million Year Old Insect Sounds Back to Life",
-     "teaser": "Researchers led by Thorin Jonsson (University of Graz), together with colleagues from Lincoln, Bristol, Beijing and Tempe, have reconstructed the sounds of Jurassic crickets and grasshoppers. Thanks to exceptionally well-preserved fossils of nine grasshopper species from the Middle Jurassic in Inner Mongolia, scientists were able to calculate the exact pitches of their mating calls through analyses, simulations and AI. These...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/en/scientists-bring-165-million-year-old-insect-sounds-back-to-life-17889722509535exyjuwz4.html"
     }
    ],
    "dagoverzichten": [
@@ -162,12 +162,20 @@
      "url": "https://brightnews.online/articles/de/urintest-erkennt-blasenkrebs-zu-hause-1788885133204h2rgjkygd.html"
     },
     {
-     "id": "1788803059663asi2i547z",
-     "titel": "Zehn Jahre Bedingungsloses Geld für Überlebende",
-     "teaser": "Die gemeinnützige Organisation FreeFrom, gegründet von Sonya Passi im Jahr 2016, gibt Überlebenden von geschlechtsspezifischer Gewalt seit zehn Jahren direkt Geld ohne Bedingungen, oft bis zu 1.500 Dollar. Seit der Gründung wurden insgesamt 10 Millionen Dollar direkt an Überlebende vergeben. Aus einem Impactbericht anlässlich des zehnjährigen Bestehens geht hervor, dass 94% der Befragten eine Verbesserung ihres sozialen Wohlbefindens feststellten und...",
-     "score": 10,
-     "categorie": "Finance",
-     "url": "https://brightnews.online/articles/de/zehn-jahre-bedingungsloses-geld-fur-uberlebende-1788803059663asi2i547z.html"
+     "id": "1789014131279gvpgswh9x",
+     "titel": "Impfstoff schützt möglicherweise das Herz",
+     "teaser": "Forscher haben einen neuen möglichen Vorteil des Gürtelrose-Impfstoffs Shingrix entdeckt: Er scheint mit einem geringeren Risiko für Herzinsuffizienz, Herzinfarkt und Schlaganfall verbunden zu sein. Der Impfstoff, der ursprünglich zur Vorbeugung von Gürtelrose entwickelt wurde, könnte der Quelle zufolge also möglicherweise auch Schutz für das Herz bieten. Weitere Details zur Studie selbst fehlen in dieser Meldung.",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/de/impfstoff-schutzt-moglicherweise-das-herz-1789014131279gvpgswh9x.html"
+    },
+    {
+     "id": "17890140425336oyar81ew",
+     "titel": "Tausende Bäume Gepflanzt Für 1 Million Gute Taten",
+     "teaser": "Zur Erinnerung an 25 Jahre 9/11 möchte die gemeinnützige Organisation 9/11 Day in diesem Jahr eine Million gute Taten sammeln. Eine der Initiativen ist Together We Grow, eine Zusammenarbeit mit One Tree Planted. Am 9. September wurde eine 15 Fuß hohe Sumpfeiche im Battery Park in New York gepflanzt, beim Labyrinth of Contemplation, einem Ort, der die Opfer der Anschläge...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/tausende-baume-gepflanzt-fur-1-million-gute-taten-17890140425336oyar81ew.html"
     },
     {
      "id": "1788972460780dsq3ftz6n",
@@ -184,14 +192,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/de/biber-bauen-naturliche-puffer-gegen-trockenheit-1788972385897m07upstn7.html"
-    },
-    {
-     "id": "17889722509535exyjuwz4",
-     "titel": "Wissenschaftler Lassen 165 Millionen Jahre Alte Insektenlaut Wiederaufleben",
-     "teaser": "Forscher unter der Leitung von Thorin Jonsson (Universität Graz) haben zusammen mit Kollegen aus Lincoln, Bristol, Beijing und Tempe die Laute von Jura-Grillen und Heuschrecken rekonstruiert. Dank außergewöhnlich gut erhaltener Fossilien von neun Heuschreckenarten aus dem Mitteljura in der Inneren Mongolei konnten die Wissenschaftler durch Analysen, Simulationen und KI die genauen Tonhöhen ihrer Paarungsrufe berechnen. Es handelt sich um die...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/de/wissenschaftler-lassen-165-millionen-jahre-alte-insektenlaut-wiederaufleben-17889722509535exyjuwz4.html"
     }
    ],
    "dagoverzichten": [
@@ -236,12 +236,20 @@
      "url": "https://brightnews.online/articles/fr/test-urinaire-detecte-cancer-de-la-vessie-a-domicile-1788885133204h2rgjkygd.html"
     },
     {
-     "id": "1788803059663asi2i547z",
-     "titel": "Dix Ans d'Argent Sans Conditions Pour les Survivantes",
-     "teaser": "L'organisation à but non lucratif FreeFrom, fondée par Sonya Passi en 2016, verse depuis dix ans de l'argent directement aux survivantes de violences liées au genre, sans conditions, souvent jusqu'à 1.500 dollars. Depuis sa création, un total de 10 millions de dollars a été versé directement aux survivantes. Selon un rapport d'impact publié à l'occasion du dixième anniversaire, 94% des...",
-     "score": 10,
-     "categorie": "Finance",
-     "url": "https://brightnews.online/articles/fr/dix-ans-d-argent-sans-conditions-pour-les-survivantes-1788803059663asi2i547z.html"
+     "id": "1789014131279gvpgswh9x",
+     "titel": "Le vaccin antizona protège peut-être le cœur",
+     "teaser": "Des chercheurs ont découvert un nouvel avantage possible du vaccin contre le zona Shingrix : il semble être associé à un risque plus faible d'insuffisance cardiaque, de crise cardiaque et d'accident vasculaire cérébral. Le vaccin, initialement développé pour prévenir le zona, pourrait donc selon la source offrir une protection pour le cœur. D'autres détails sur l'étude elle-même manquent dans ce...",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/fr/le-vaccin-antizona-protege-peut-etre-le-c-ur-1789014131279gvpgswh9x.html"
+    },
+    {
+     "id": "17890140425336oyar81ew",
+     "titel": "Des Milliers D'Arbres Plantés Pour Un Million De Bonnes Actions",
+     "teaser": "Pour commémorer les 25 ans du 11/9, l'organisation à but non lucratif 9/11 Day souhaite collecter un million de bonnes actions cette année. L'une des initiatives est Together We Grow, une collaboration avec One Tree Planted. Le 9 septembre, un chêne des marais de 15 pieds de haut a été planté à Battery Park à New York, près du Labyrinth...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/des-milliers-d-arbres-plantes-pour-un-million-de-bonnes-actions-17890140425336oyar81ew.html"
     },
     {
      "id": "1788972460780dsq3ftz6n",
@@ -258,14 +266,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/fr/les-castors-construisent-des-tampons-naturels-contre-la-secheresse-1788972385897m07upstn7.html"
-    },
-    {
-     "id": "17889722509535exyjuwz4",
-     "titel": "Des Scientifiques Font Revivre des Sons d'Insectes de 165 Millions d'Années",
-     "teaser": "Des chercheurs dirigés par Thorin Jonsson (Université de Graz) ont, en collaboration avec des collègues de Lincoln, Bristol, Beijing et Tempe, reconstruit les sons de grillons et de sauterelles du Jurassique. Grâce à des fossiles exceptionnellement bien conservés de neuf espèces de sauterelles du Jurassique moyen en Mongolie-Intérieure, les scientifiques ont pu calculer via des analyses, des simulations et l'IA...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/fr/des-scientifiques-font-revivre-des-sons-d-insectes-de-165-millions-d-annees-17889722509535exyjuwz4.html"
     }
    ],
    "dagoverzichten": [
@@ -310,12 +310,20 @@
      "url": "https://brightnews.online/articles/es/prueba-de-orina-detecta-cancer-de-vejiga-en-casa-1788885133204h2rgjkygd.html"
     },
     {
-     "id": "1788803059663asi2i547z",
-     "titel": "Diez Años de Dinero Incondicional para Sobrevivientes",
-     "teaser": "La organización sin fines de lucro FreeFrom, fundada por Sonya Passi en 2016, entrega dinero directo sin condiciones a sobrevivientes de violencia relacionada con el género durante diez años, frecuentemente hasta 1.500 dólares. Desde su fundación, se han entregado un total de 10 millones de dólares directamente a sobrevivientes. Según un informe de impacto con motivo del décimo aniversario, el...",
-     "score": 10,
-     "categorie": "Finance",
-     "url": "https://brightnews.online/articles/es/diez-anos-de-dinero-incondicional-para-sobrevivientes-1788803059663asi2i547z.html"
+     "id": "1789014131279gvpgswh9x",
+     "titel": "Vacuna inyectable protege posiblemente el corazón",
+     "teaser": "Investigadores han descubierto una nueva ventaja posible de la vacuna contra el herpes zóster Shingrix: parece estar vinculada a un menor riesgo de insuficiencia cardíaca, infarto de miocardio y accidente cerebrovascular. La vacuna, que fue desarrollada originalmente para prevenir el herpes zóster, podría ofrecer, según la fuente, posible protección también para el corazón. En este mensaje faltan más detalles sobre...",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/es/vacuna-inyectable-protege-posiblemente-el-corazon-1789014131279gvpgswh9x.html"
+    },
+    {
+     "id": "17890140425336oyar81ew",
+     "titel": "Miles de Árboles Plantados Por 1 Millón de Buenas Acciones",
+     "teaser": "Para conmemorar 25 años del 9/11, la organización sin fines de lucro 9/11 Day busca reunir este año un millón de buenas acciones. Una de las iniciativas es Together We Grow, una colaboración con One Tree Planted. El 9 de septiembre se plantó un roble de agua de 15 pies de altura en Battery Park en Nueva York, junto al...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/miles-de-arboles-plantados-por-1-millon-de-buenas-acciones-17890140425336oyar81ew.html"
     },
     {
      "id": "1788972460780dsq3ftz6n",
@@ -332,14 +340,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/es/castores-construyen-amortiguadores-naturales-contra-la-sequia-1788972385897m07upstn7.html"
-    },
-    {
-     "id": "17889722509535exyjuwz4",
-     "titel": "Científicos Reviven Sonidos de Insectos de 165 Millones de Años",
-     "teaser": "Investigadores liderados por Thorin Jonsson (Universidad de Graz) han reconstruido, junto con colegas de Lincoln, Bristol, Beijing y Tempe, los sonidos de grillos y saltamontes jurásicos. Gracias a fósiles excepcionalmente bien conservados de nueve especies de saltamontes del Jurásico Medio en Mongolia Interior, los científicos pudieron calcular mediante análisis, simulaciones e IA las frecuencias exactas de sus llamadas de apareamiento....",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/es/cientificos-reviven-sonidos-de-insectos-de-165-millones-de-anos-17889722509535exyjuwz4.html"
     }
    ],
    "dagoverzichten": [
