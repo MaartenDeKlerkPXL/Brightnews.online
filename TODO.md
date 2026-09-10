@@ -84,7 +84,7 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   opruimen — half werk in de code is erger dan geen werk. *(Erik)*
 
 - [ ] **12. Footer-socials linken naar profielen die niet bestaan.** Elke klik
-  leidt nu naar een 404. Claim de handles (zie punt 20) of haal de iconen
+  leidt nu naar een 404. Claim de handles (zie punt 21) of haal de iconen
   tijdelijk weg. *(Maarten)*
 
 - [ ] **13. Witte tekst op #32CD32 haalt geen WCAG AA** (ongeveer 2:1). Was
@@ -131,13 +131,25 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   ziet de artikelen dagelijks langskomen en beoordeelt zelf of het patroon
   klopt voordat er iets aan de prompt verandert. *(Erik)*
 
+- [ ] **20. Vertaalprompt bijstellen na de steekproef.** In
+  `backend/vertaal-steekproef.md` staan zeven bevindingen uit twintig
+  vergelijkingen (vijf artikelen × vier talen), met zes concrete voorstellen
+  voor de vertaalprompt. De grote lijn is in orde: er wordt niets ingekort, er
+  blijft nergens Nederlands staan en de bronnenlijsten zijn compleet. Het gaat
+  mis in de details: verkeerd geslacht (het Duits spreekt zichzelf tegen binnen
+  één artikel), vertaalde organisatienamen, een toegevoegd feit, en titels met
+  een hoofdletter op elk woord in Frans en Spaans. Spaans is duidelijk het
+  zwakst. Belangrijker nog: een vage Nederlandse kop wordt in vier talen
+  vermenigvuldigd, dus verbeteren aan de schrijfkant werkt vier keer door. Er is
+  bewust **niets** gewijzigd. *(Erik)*
+
 ## Buiten de code — alleen Maarten kan dit
 
-- [ ] **20. Socials claimen**: `facebook.com/brightnews.online`,
+- [ ] **21. Socials claimen**: `facebook.com/brightnews.online`,
   `instagram.com/brightnews.online`, `linkedin.com/company/brightnews-online`.
   Nodig vóór de marketing-agent er is, en lost punt 12 meteen op.
 
-- [ ] **21. Search Console terugkijken.** De sitemap is ingediend op
+- [ ] **22. Search Console terugkijken.** De sitemap is ingediend op
   2026-09-05 met 2.072 pagina's; onder Indexering → Pagina's zou het aantal
   geïndexeerde pagina's moeten oplopen. Onder Prestaties zie je op welke
   zoektermen BrightNews verschijnt.
@@ -149,12 +161,12 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   op de homepage zelf staat hoort hij naar **"geïndexeerd"** te gaan. Blijft
   hij uitgesloten, geef dat dan door — dan kijk ik verder.
 
-- [ ] **22. Marketing-cockpit gebruiken** op `brightnews.online/marketing.html`
+- [ ] **23. Marketing-cockpit gebruiken** op `brightnews.online/marketing.html`
   (inloggen met je account). Daar staan dagelijks conceptposts in 5 talen
   klaar. Goedkeuren of afwijzen mét reden — de fabriek leert van je
   afwijzingen, maar alleen als je hem voedt.
 
-- [ ] **23. Deel-previews in het echt testen** op WhatsApp en LinkedIn. De
+- [ ] **24. Deel-previews in het echt testen** op WhatsApp en LinkedIn. De
   `og:image` in het artikeltemplate wijst naar de echte artikelfoto
   (gecontroleerd 2026-09-10), dus technisch zit het goed — maar zien is
   geloven.
