@@ -18,8 +18,19 @@ function updateLangLabel(langName) {
 }
 
 function showNotification(message, type = 'success') {
-    const container = document.getElementById('notification-container');
-    if (!container) return;
+    // De container stond alleen in profiel.html en wachtwoord-vergeten.html.
+    // Op index.html en abonnementen.html ontbrak hij, waardoor meldingen daar
+    // geruisloos verdwenen — o.a. de uitleg bij het herroepingsvinkje op de
+    // abonnementenpagina. Maak hem daarom aan als hij er niet is; de opmaak
+    // hangt aan de id en staat in de gedeelde components.css.
+    let container = document.getElementById('notification-container');
+    if (!container) {
+        container = document.createElement('div');
+        container.id = 'notification-container';
+        container.setAttribute('role', 'status');
+        container.setAttribute('aria-live', 'polite');
+        document.body.appendChild(container);
+    }
     const notification = document.createElement('div');
     notification.className = `notification ${type} show`;
     notification.innerText = (type === 'success' ? '✅ ' : '❌ ') + message;
