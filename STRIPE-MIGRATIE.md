@@ -61,8 +61,12 @@ mailer-koppelstuk oplost.
    hebben (client_reference_id moet een echte gebruiker zijn — via de site
    is dat altijd zo). Testvlaggen (STRIPE_ALLOW_TEST,
    STRIPE_WEBHOOK_SECRET_TEST) na afloop verwijderd; testdata opgeruimd.
-   Sandbox-artefacten (testproduct/-link/-endpoint) blijven staan voor
-   toekomstige tests.
+   Sandbox-artefacten (testproduct/-link) blijven staan voor toekomstige
+   tests. **Het test-endpoint is op 2026-09-10 verwijderd**: zonder de
+   testvlaggen weigerde de functie elk testbericht met 401 "Ongeldige
+   signature", waarop Stripe mislukte bezorgingen ging melden. Voor een
+   volgende testronde moet het endpoint dus opnieuw worden aangemaakt, samen
+   met STRIPE_ALLOW_TEST en STRIPE_WEBHOOK_SECRET_TEST.
 10. **Livegang: ✅ UITGEVOERD 2026-09-05** (commit dee6599; punten hieronder
     alle afgevinkt; meta-CSP zonder één schending lokaal geverifieerd).
     Oorspronkelijke checklist:
