@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl" class="geparkeerd">
 <head>
     <!-- Google tag (gtag.js) — laadt pas na cookietoestemming, zie acceptCookies()/checkCookies() in index.js -->
     <script>
@@ -15,12 +15,20 @@
     <link rel="icon" type="image/png" href="assets/brightnews-logo-faviconv5.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Parkeer-gate (2026-09-05): tot de lancering is de homepage dicht voor
-         publiek en zien alleen teamleden (sessionStorage-vlag via /?team=1 op
-         binnenkort.html) de echte site. Bewust sessionStorage en geen
-         localStorage: zo komt elk nieuw bezoek aan brightnews.online eerst
-         weer op de parkeerpagina uit. Artikelpagina's blijven bewust open
-         (SEO). Verwijderen bij livegang; zie BRIGHTNEWS-OVERDRACHT-FABLE.md. -->
+    <!-- Parkeer-gate (2026-09-05, herzien 2026-09-10): tot de lancering ziet
+         publiek op deze URL een parkeerbericht en zien teamleden de echte
+         site (sessionStorage-vlag via /?team=1).
+
+         2026-09-10: er werd doorverwezen naar binnenkort.html, maar die pagina
+         staat op noindex. Google kreeg op / dus of een lege schil (zonder
+         javascript) of een doorverwijzing naar een pagina die hij moet negeren
+         — de belangrijkste URL van de site was daardoor onvindbaar. Nu staat
+         het parkeerbericht in de HTML van / zelf: iedereen ziet hetzelfde, de
+         URL blijft bestaan en er valt echte tekst te indexeren.
+
+         Bij livegang weghalen: de klasse geparkeerd op <html>, dit script, het
+         style-blok eronder en de div #parkeerbericht in de body. Artikelpagina's
+         staan hier los van en blijven open. Zie BRIGHTNEWS-OVERDRACHT-FABLE.md. -->
     <script>
         (function () {
             try {
@@ -29,15 +37,66 @@
                 if (new URLSearchParams(location.search).get('team') === '1') {
                     sessionStorage.setItem('bn_team', '1');
                 }
-                if (sessionStorage.getItem('bn_team') !== '1') {
-                    location.replace('/binnenkort.html');
+                if (sessionStorage.getItem('bn_team') === '1') {
+                    // Teamlid: parkeerstand eraf, de echte site komt tevoorschijn.
+                    document.documentElement.classList.remove('geparkeerd');
                 }
             } catch (e) {
-                // localStorage geblokkeerd (privémodus e.d.): toon de parkeerpagina.
-                location.replace('/binnenkort.html');
+                // Opslag geblokkeerd (privemodus e.d.): parkeerstand blijft staan.
             }
         })();
     </script>
+    <style>
+        /* Parkeerstand (tijdelijk, tot de lancering). Staat standaard AAN via de
+           klasse op <html>, zodat bezoekers zonder javascript en zoekmachines
+           die niet renderen ook het parkeerbericht zien in plaats van een half
+           geladen site. Het gate-script haalt de klasse eraf voor teamleden. */
+        /* Standaard verborgen; alleen in de parkeerstand zichtbaar. Zet hier
+           nooit een display op #parkeerbericht zonder de klasse ervoor, want
+           die overschrijft de verberging en dan zien teamleden het bericht
+           over de site heen. */
+        html.geparkeerd body > header,
+        html.geparkeerd body > main,
+        html.geparkeerd body > footer,
+        html.geparkeerd .skip-link,
+        html.geparkeerd .cookie-overlay { display: none !important; }
+        #parkeerbericht {
+            display: none;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #F8FBF8;
+            color: #1A1A1A;
+            min-height: 100vh;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 32px 20px;
+            text-align: center;
+        }
+        html.geparkeerd #parkeerbericht { display: flex; }
+        #parkeerbericht .kaart {
+            background: #fff;
+            border: 1px solid #E8EEE8;
+            border-radius: 24px;
+            box-shadow: 0 10px 25px rgba(50, 205, 50, 0.08);
+            max-width: 560px;
+            width: 100%;
+            padding: 48px 32px 40px;
+        }
+        #parkeerbericht .logo { display: block; max-width: 296px; width: 80%; height: auto; margin: 0 auto 20px; }
+        #parkeerbericht .zon {
+            display: inline-block; background: #FFD700; border-radius: 999px;
+            font-size: 13px; font-weight: 700; letter-spacing: 0.06em;
+            text-transform: uppercase; padding: 6px 16px; margin-bottom: 20px;
+        }
+        #parkeerbericht h1 { font-size: clamp(26px, 5vw, 34px); line-height: 1.15; margin: 0 0 14px; }
+        #parkeerbericht .intro { color: #505F50; font-size: 17px; line-height: 1.6; max-width: 44ch; margin: 0 auto 26px; }
+        #parkeerbericht ul { list-style: none; padding: 0; margin: 0 auto 6px; display: flex; flex-direction: column; gap: 6px; color: #505F50; font-size: 14.5px; }
+        #parkeerbericht ul .taal { font-weight: 700; color: #1A1A1A; margin-right: 6px; }
+        #parkeerbericht .streep { height: 4px; width: 72px; background: #32CD32; border-radius: 2px; margin: 30px auto; }
+        #parkeerbericht .team { font-size: 13.5px; color: #505F50; }
+        #parkeerbericht .team a { color: #505F50; text-underline-offset: 2px; }
+        #parkeerbericht footer { margin-top: 26px; font-size: 12.5px; color: #505F50; }
+    </style>
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://www.googletagmanager.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
     <meta name="description" content="Stap in de wereld van BrightNews, waar positiviteit de norm is. Ontdek hoe wij met AI de mooiste en meest hoopvolle verhalen verzamelen. Geen negativiteit, alleen puur optimisme en inspiratie om je dag te laten stralen.">
     <meta name="keywords" content="BrightNews, uitsluitend positief nieuws, hoopvolle verhalen, optimisme, dagelijkse inspiratie, goed nieuws AI, stralende toekomst, constructieve journalistiek, Maarten de Klerk">
@@ -68,6 +127,26 @@
     <script src="index.js" defer></script>
 </head>
 <body>
+<!-- Parkeerbericht: staat bewust in de HTML zelf, zodat zoekmachines en
+     bezoekers zonder javascript echte inhoud op deze URL aantreffen. Weg bij
+     livegang, samen met het script en het style-blok in de head. -->
+<div id="parkeerbericht">
+    <main class="kaart">
+        <img class="logo" src="assets/brightnews-logo.png" alt="BrightNews" width="463" height="94">
+        <div class="zon">Binnenkort</div>
+        <h1>We bouwen aan jouw dagelijkse dosis positiviteit</h1>
+        <p class="intro">BrightNews verzamelt uitsluitend positief, hoopgevend nieuws — in vijf talen, elke dag vers. We leggen de laatste hand aan de site en gaan binnenkort echt van start.</p>
+        <ul>
+            <li><span class="taal">EN</span>Only positive news, launching soon.</li>
+            <li><span class="taal">DE</span>Nur positive Nachrichten, bald verfügbar.</li>
+            <li><span class="taal">FR</span>Uniquement des bonnes nouvelles, bientôt disponible.</li>
+            <li><span class="taal">ES</span>Solo noticias positivas, muy pronto.</li>
+        </ul>
+        <div class="streep"></div>
+        <p class="team">Van het team? <a href="/binnenkort.html">Inloggen voor teamtoegang</a></p>
+    </main>
+    <footer>© 2026 BrightNews · brightnews.online</footer>
+</div>
 <a href="#main-content" class="skip-link" data-i18n="skip_to_content">Ga naar hoofdinhoud</a>
 <header>
     <nav class="container">
