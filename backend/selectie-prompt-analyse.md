@@ -233,4 +233,65 @@ ze het dossier waarmee de selectieprompt bijgesteld kan worden. Erik beslist wat
 er met de bevindingen gebeurt; de agent signaleert alleen en raakt geen
 artikelen aan.
 
-*(Nog geen beoordelingen; de eerste volgt zodra de taak draait.)*
+### 2026-09-10, 12:26 Europe/Amsterdam
+
+Dit is de eerste ronde: er stond nog geen vorige vermelding, dus zijn de
+artikelen van de laatste 48 uur beoordeeld (niet maandag, dus geen volledige
+controle van de hele feed).
+
+Beoordeeld: 18 artikelen, gepubliceerd tussen 2026-09-08 16:29 en 2026-09-10
+04:22. Niet bright-waardig: 1. Twijfel: 1.
+
+#### Zes Boeken Die De Wereld Anders Laten Zien
+- **Gepubliceerd:** 2026-09-09 16:35 · Lifestyle · Adventure-Journal.com
+- **Waar het over gaat:** De vaste boekenrubriek "Recommended Reading" van
+  Adventure-Journal beveelt zes nieuwe, onderling losstaande boeken aan over
+  uiteenlopende onderwerpen — onder meer inheems natuurbeheer, moerasecologie
+  en andere thema's — elk in een paar zinnen samengevat.
+- **Waarom dit niet goed genoeg is:** Dit is een verzameleditie: meerdere
+  niet-verwante onderwerpen gebundeld in één artikel, precies de categorie die
+  de selectieprompt afwijst onder "verzamel- en weekoverzichtitems" ("alleen
+  losse, échte verhalen tellen"). Dat het om boeken gaat in plaats van
+  nieuwsfeiten maakt het niet anders: er is geen eigen, samenhangend
+  bright-verhaal, maar een rubriek die zes losse titels naast elkaar zet.
+- **Link:** /articles/nl/zes-boeken-die-de-wereld-anders-laten-zien-1788971711663lbi9wql8g.html
+
+#### Twijfelgeval: Nieuwe EU-wet Steunt Europese Innovatie
+- **Gepubliceerd:** 2026-09-09 16:32 · Tech · Openaccessgovernment.org
+- **Waar het over gaat:** De Europese Commissie stelt een European Innovation
+  Act voor, onderdeel van de Startup and Scaleup Strategy, om Europese
+  startups te helpen aan financiering, grensoverschrijdende uitbreiding en een
+  gemeenschappelijk IP-kader.
+- **Waarom ik twijfel:** Dit leest als een droge beleidsaankondiging van een
+  EU-instelling — geen mensen, geen concreet verhaal, geen "goed gevoel"-kern,
+  vooral een samenvatting van een wetsvoorstel. Het raakt de categorieën
+  "bedrijfs- of beursnieuws zonder bredere maatschappelijke betekenis" en
+  "politiek gekleurde onderwerpen" (EU-beleid) zonder er helemaal in te
+  passen, want het gaat om brede, niet-partijdige economische steun in plaats
+  van een polariserend onderwerp. Ik zou het afkeuren omdat het dichter bij
+  overheidscommunicatie dan bij een bright-verhaal staat, maar het is geen
+  ijkvoorbeeld zoals de productlanceringen — oordeel van Erik gewenst.
+
+Alle overige 16 artikelen voldeden aan de maatstaf: vooral reddings- en
+herstelverhalen (zeeschildpad, grotvleermuis, elanden/tunnels), natuurherstel
+(bevers, puingaarden), persoonlijke en gemeenschapsverhalen (armloze coureur,
+loterij-echtpaar, beachcombing-museum) en hoopvolle wetenschap/gezondheid
+(blaaskankertest, oogdruppels, hartvaccin, Vikingschat, fossiele
+insectengeluiden, klipdas-pups, Fat Pika Week, boomplantactie voor 9/11). Het
+boomplant-artikel voor 9/11 heeft een nare aanleiding, maar de kern —
+gemeenschapszin en een herdenkingsdaad — is precies wat de kernregel als
+bright-materiaal aanmerkt, dus dat is terecht doorgelaten.
+
+#### Patroon
+
+De twee opvallendste gevallen komen beide van een vaste rubriek in plaats van
+een losstaand nieuwsbericht: Adventure-Journal's "Recommended Reading" is een
+terugkerende boekenrubriek die blijkens `data/selectie-log.json` al minstens
+drie keer is beoordeeld (9 en 10 september in deze feed, plus nog een eerdere
+vermelding) en steeds is goedgekeurd met scores tussen 8 en 10 — telkens om
+dezelfde reden ("hartverwarmend verhaal over natuurbeheer"), terwijl het
+format een losse lijst van boeken blijft. Dit is dezelfde systematische fout
+als de weekoverzichten uit bevinding 1 hierboven, maar dan voor boeken in
+plaats van nieuws: de selectieprompt heeft voor verzameledities een regel,
+maar geen ijkvoorbeeld, en een terugkerende rubriek lijkt daar consistent
+doorheen te glippen.
