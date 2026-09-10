@@ -551,6 +551,30 @@ nav.container {
 }
 
 
+/* Knop onder de nieuwslijst: de homepage laadt 24 kaarten per keer in plaats
+   van alle 150 ineens. Staat bewust buiten #news-container, want dat is een
+   raster en de knop zou daarin een kaartvak innemen. */
+#laad-meer-wikkel {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 10px;
+}
+.laad-meer-knop {
+    font: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--dark-text);
+    background: var(--bright-green);
+    border: none;
+    border-radius: 50px;
+    padding: 14px 34px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+.laad-meer-knop:hover { background: #2bb62b; transform: translateY(-2px); }
+.laad-meer-knop:focus-visible { outline: 2px solid var(--dark-text); outline-offset: 3px; }
+.news-card:focus-visible { outline: 2px solid var(--bright-green); outline-offset: 3px; }
+
 /* Container voor alle meldingen */
 #notification-container {
     position: fixed;

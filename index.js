@@ -558,43 +558,24 @@ function kiesOngebruikteAfbeelding(gebruikt) {
     return RESERVE_AFBEELDINGEN.find(u => !gebruikt.has(fotoSleutel(u))) || RESERVE_AFBEELDINGEN[0];
 }
 
-function renderLijst(artikelen) {
+// Aantal kaarten per portie. De homepage toonde alle 150 artikelen in één keer,
+// waardoor de pagina ruim 24.000 pixels lang werd. 24 is drie volle rijen op een
+// breed scherm.
+const PER_PORTIE = 24;
+
+// Tekent kaarten tot er in totaal `tot` stuks staan. Werkt bij vanaf de vorige
+// stand, dus bestaande kaarten worden niet opnieuw getekend.
+function tekenPortie(tot) {
     const container = document.getElementById('news-container');
-    const detailView = document.getElementById('detail-view');
-    const detailNav = document.getElementById('detail-navigation');
-    const filterWrapper = document.querySelector('.filter-wrapper');
+    const stand = window.lijstStand;
+    if (!container || !stand) return;
+    const gesorteerd = stand.gesorteerd;
+    const gezienOpPagina = stand.gezienOpPagina;
+    const einde = Math.min(tot, gesorteerd.length);
 
-    // 1. ARCHITECT CHECK: Als de container niet bestaat, stop direct.
-    // Dit voorkomt de "appendChild of null" error op andere pagina's.
-    if (!container) {
-        console.log("Bright News: Geen nieuws-container gevonden. (Privacy/Prijzen pagina)");
-        return;
-    }
+    for (let index = stand.getoond; index < einde; index++) {
+        const artikel = gesorteerd[index];
 
-    // 2. Initialiseer weergave
-    container.innerHTML = '';
-    container.style.display = 'grid';
-    if (detailView) detailView.style.display = 'none';
-    if (detailNav) detailNav.style.display = 'none';
-    if (filterWrapper) filterWrapper.style.display = 'block';
-
-    // 3. Afhandeling van scroll-positie (voorkom flikkeren)
-    const savedPos = sessionStorage.getItem('brightScrollPos');
-    if (savedPos) container.style.opacity = '0';
-
-    // 4. Dagoverzichten (type 'digest') altijd bovenaan, ook wanneer er op
-    // categorie gefilterd is. Array.prototype.sort is stabiel, dus binnen
-    // beide groepen blijft de bestaande volgorde uit de feed staan.
-    const gesorteerd = [...artikelen].sort((a, b) => {
-        const aIsDigest = a.type === 'digest' ? 0 : 1;
-        const bIsDigest = b.type === 'digest' ? 0 : 1;
-        return aIsDigest - bIsDigest;
-    });
-
-    // 5. Bouw de kaarten. gezienOpPagina voorkomt dat dezelfde foto twee
-    // keer op één pagina staat (ook bij gedeelde feed-/stockfoto's).
-    const gezienOpPagina = new Set();
-    gesorteerd.forEach((artikel, index) => {
         const veiligId = artikel.id || `old-${index}`;
         const card = document.createElement('div');
         card.className = 'news-card';
@@ -660,7 +641,103 @@ function renderLijst(artikelen) {
         });
 
         container.appendChild(card);
+    }
+    stand.getoond = einde;
+    try { sessionStorage.setItem('brightGetoond', String(einde)); } catch (e) { /* privemodus */ }
+}
+
+// Toont de knop zolang er nog artikelen wachten, en haalt hem weg zodra alles
+// getoond is. De knop staat buiten #news-container, want dat is een raster en
+// een knop zou daarin een kaartvak innemen.
+function werkLaadMeerKnopBij() {
+    const container = document.getElementById('news-container');
+    const stand = window.lijstStand;
+    if (!container || !stand) return;
+
+    let wikkel = document.getElementById('laad-meer-wikkel');
+    const resterend = stand.gesorteerd.length - stand.getoond;
+
+    if (resterend <= 0) {
+        if (wikkel) wikkel.remove();
+        return;
+    }
+    if (!wikkel) {
+        wikkel = document.createElement('div');
+        wikkel.id = 'laad-meer-wikkel';
+        const knop = document.createElement('button');
+        knop.id = 'laad-meer-knop';
+        knop.type = 'button';
+        knop.className = 'laad-meer-knop';
+        knop.addEventListener('click', () => {
+            const stand = window.lijstStand;
+            if (!stand) return;
+            // Focus vasthouden zou op de knop blijven staan terwijl die naar
+            // beneden springt; zet hem daarom op de eerste nieuwe kaart.
+            const eersteNieuwe = stand.getoond;
+            tekenPortie(stand.getoond + PER_PORTIE);
+            werkLaadMeerKnopBij();
+            const kaarten = document.querySelectorAll('#news-container .news-card');
+            if (kaarten[eersteNieuwe]) {
+                kaarten[eersteNieuwe].setAttribute('tabindex', '-1');
+                kaarten[eersteNieuwe].focus({ preventScroll: true });
+            }
+        });
+        wikkel.appendChild(knop);
+        container.insertAdjacentElement('afterend', wikkel);
+    }
+    const knop = wikkel.querySelector('button');
+    knop.textContent = (typeof getT === 'function')
+        ? getT('laad_meer', 'Laad meer artikelen')
+        : 'Laad meer artikelen';
+    knop.setAttribute('aria-label', knop.textContent + ' (' + resterend + ')');
+}
+
+function renderLijst(artikelen) {
+    const container = document.getElementById('news-container');
+    const detailView = document.getElementById('detail-view');
+    const detailNav = document.getElementById('detail-navigation');
+    const filterWrapper = document.querySelector('.filter-wrapper');
+
+    // 1. ARCHITECT CHECK: Als de container niet bestaat, stop direct.
+    // Dit voorkomt de "appendChild of null" error op andere pagina's.
+    if (!container) {
+        console.log("Bright News: Geen nieuws-container gevonden. (Privacy/Prijzen pagina)");
+        return;
+    }
+
+    // 2. Initialiseer weergave
+    container.innerHTML = '';
+    const oudeKnop = document.getElementById('laad-meer-wikkel');
+    if (oudeKnop) oudeKnop.remove();
+    container.style.display = 'grid';
+    if (detailView) detailView.style.display = 'none';
+    if (detailNav) detailNav.style.display = 'none';
+    if (filterWrapper) filterWrapper.style.display = 'block';
+
+    // 3. Afhandeling van scroll-positie (voorkom flikkeren)
+    const savedPos = sessionStorage.getItem('brightScrollPos');
+    if (savedPos) container.style.opacity = '0';
+
+    // 4. Dagoverzichten (type 'digest') altijd bovenaan, ook wanneer er op
+    // categorie gefilterd is. Array.prototype.sort is stabiel, dus binnen
+    // beide groepen blijft de bestaande volgorde uit de feed staan.
+    const gesorteerd = [...artikelen].sort((a, b) => {
+        const aIsDigest = a.type === 'digest' ? 0 : 1;
+        const bIsDigest = b.type === 'digest' ? 0 : 1;
+        return aIsDigest - bIsDigest;
     });
+
+    // 5. Zet de portiestand klaar. gezienOpPagina voorkomt dat dezelfde foto
+    // twee keer op één pagina staat (ook bij gedeelde feed-/stockfoto's); die
+    // set blijft bestaan zolang je porties bijlaadt, anders zou een tweede
+    // portie de foto's van de eerste opnieuw kunnen uitdelen.
+    // Bij terugkomst uit een artikel tonen we net zoveel porties als er stonden,
+    // anders klopt de herstelde scrollpositie niet met wat er op het scherm staat.
+    const bewaardGetoond = savedPos ? parseInt(sessionStorage.getItem('brightGetoond') || '0', 10) : 0;
+    const beginAantal = Math.max(PER_PORTIE, Math.min(bewaardGetoond || 0, gesorteerd.length));
+    window.lijstStand = { gesorteerd, gezienOpPagina: new Set(), getoond: 0 };
+    tekenPortie(beginAantal);
+    werkLaadMeerKnopBij();
 
     // 6. Herstel scroll-positie
     if (savedPos && !window.location.search.includes('id=')) {
