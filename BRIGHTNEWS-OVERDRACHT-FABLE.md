@@ -232,6 +232,25 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
 
 ## 9. Volgende stappen (in volgorde)
 
+0-M1. **Marketing fase M1 LIVE (sessie 8, 2026-09-09/10, GO Erik op
+   voorstellen 0/1/3/6)**: (a) reparaties — vertaalstap 2 pogingen +
+   diagnose (nachtruns verloren 6 art. aan parse-uitval dáár), digest-
+   venster 1→3 dagen met al-besproken-uitsluiting (5→9 digests in één
+   run); (b) postfabriek: generate-posts.js + marketing-prompt.md v1,
+   1 onderwerp/dag → 4 kanalen NL (Sonnet) → ×4 vertaald, UTM per
+   kanaal/taal, DRAFT-FIRST; lichting-1-fixes: per-taal-URL's +
+   {URL}-validatie (Instagram = link in bio); (c) cockpit marketing.html
+   (Supabase-login + team_leden-RLS; goedkeur/afwijs-met-reden →
+   marketing_feedback → {FEEDBACK} in de volgende generatie; tabellen
+   live, schema-snapshot bij); (d) evergreen: themas/{taal}/ wekelijks
+   (W37: milieunieuws, 5 talen, in sitemap); (e) weekrapport
+   data/rapporten/ met bron-acceptatiegraad + AI-advies (W37: Newatlas
+   11%, ScienceNews 0%, BBC-culture 6% → SANERINGSKANDIDATEN volgende
+   logronde; Adventure-Journal levert nieuwsbrief-fragmenten als items —
+   idem bespreken). Alles mock-getest + live geverifieerd (thema 200,
+   cockpit 200, 5 thema-URL's in sitemap). Eerste cockpit-oordelen zijn
+   aan Erik/Maarten (login vereist). GA4/Search-Console-API = laterlijst.
+
 0-NIEUW. **Sessie 7 (2026-09-05, avond) — parkeren + Claude-migratie**
    (vervangt de Mistral-acties uit 0a hieronder; het incident is daarmee
    omzeild in plaats van opgelost — Mistral is bewust losgelaten):
