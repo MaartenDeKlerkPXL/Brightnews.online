@@ -73,7 +73,7 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   opruimen — half werk in de code is erger dan geen werk. *(Erik)*
 
 - [ ] **12. Footer-socials linken naar profielen die niet bestaan.** Elke klik
-  leidt nu naar een 404. Claim de handles (zie punt 19) of haal de iconen
+  leidt nu naar een 404. Claim de handles (zie punt 20) of haal de iconen
   tijdelijk weg. *(Maarten)*
 
 - [ ] **13. Witte tekst op #32CD32 haalt geen WCAG AA** (ongeveer 2:1). Was
@@ -106,21 +106,49 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
 
 ## Buiten de code — alleen Maarten kan dit
 
-- [ ] **19. Socials claimen**: `facebook.com/brightnews.online`,
+- [ ] **19. Test-endpoint van de Stripe-webhook opruimen — vóór 13 september
+  2026, 18:25 UTC.** Stripe mailde op 2026-09-10 dat berichten naar
+  `https://rquuqypgaannrakdrabj.supabase.co/functions/v1/stripe-webhook`
+  mislukken. Het gaat uitsluitend om **testmodus**; de echte betalingen lopen
+  over een apart endpoint en dat werkte aantoonbaar op 2026-09-05.
+
+  Oorzaak: na de test-E2E van 2026-09-04 zijn `STRIPE_ALLOW_TEST` en
+  `STRIPE_WEBHOOK_SECRET_TEST` weggehaald (terecht — anders geeft een
+  nepbetaling echte premium), maar het test-endpoint bleef bewust staan "voor
+  toekomstige tests". De functie weigert die berichten sindsdien. De eerste
+  mislukking (4 sep 18:25 UTC) valt precies samen met het weghalen van die
+  vlaggen. Kanttekening: Stripe meldt "other errors" en geen 401, dus de
+  exacte fout staat in het dashboard onder Developers → Webhooks → het
+  endpoint → recente pogingen.
+
+  Actie: zet in het Stripe-dashboard de **testmodus aan**, ga naar Developers
+  → Webhooks en verwijder dat endpoint. Geen code wijzigen. Doe je niets, dan
+  stopt Stripe er zelf mee op 13 september 18:25 UTC, maar blijft er een dood
+  endpoint hangen. Voor een volgende testronde maak je het opnieuw aan — zie
+  `STRIPE-MIGRATIE.md`. **Niet doen**: de testvlaggen weer aanzetten om de
+  melding te laten verdwijnen; dan telt een testkaart weer als echte aankoop.
+  Wil je het endpoint tóch houden, dan is er een alternatief van een paar
+  regels (testberichten netjes beantwoorden zonder premium toe te kennen) —
+  dat raakt betalingen, dus via een PR met Erik.
+
+  Meteen meenemen: zet de testmodus daarna uit en controleer of het echte
+  webhook-endpoint groene pogingen laat zien.
+
+- [ ] **20. Socials claimen**: `facebook.com/brightnews.online`,
   `instagram.com/brightnews.online`, `linkedin.com/company/brightnews-online`.
   Nodig vóór de marketing-agent er is, en lost punt 12 meteen op.
 
-- [ ] **20. Search Console terugkijken.** De sitemap is ingediend op
+- [ ] **21. Search Console terugkijken.** De sitemap is ingediend op
   2026-09-05 met 2.072 pagina's; het is nu ruim een week later, dus onder
   Indexering → Pagina's zou het aantal geïndexeerde pagina's moeten oplopen.
   Onder Prestaties zie je op welke zoektermen BrightNews verschijnt.
 
-- [ ] **21. Marketing-cockpit gebruiken** op `brightnews.online/marketing.html`
+- [ ] **22. Marketing-cockpit gebruiken** op `brightnews.online/marketing.html`
   (inloggen met je account). Daar staan dagelijks conceptposts in 5 talen
   klaar. Goedkeuren of afwijzen mét reden — de fabriek leert van je
   afwijzingen, maar alleen als je hem voedt.
 
-- [ ] **22. Deel-previews in het echt testen** op WhatsApp en LinkedIn. De
+- [ ] **23. Deel-previews in het echt testen** op WhatsApp en LinkedIn. De
   `og:image` in het artikeltemplate wijst naar de echte artikelfoto
   (gecontroleerd 2026-09-10), dus technisch zit het goed — maar zien is
   geloven.
