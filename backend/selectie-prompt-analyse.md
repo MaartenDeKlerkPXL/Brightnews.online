@@ -218,3 +218,19 @@ Acceptatiegraad per bron, volgens de rekenregel:
 - **De afwijslijst voor productnieuws.** Die wérkt: 59 items kregen alle scores
   0, met redenen als "zuivere productlancering zonder maatschappelijke
   betekenis". Het probleem zit bij de categorieën die géén ijkvoorbeeld hebben.
+
+---
+
+# Dagelijkse beoordeling
+
+Hieronder schrijft de nachtelijke controle elke nacht om 04:00 Europe/Amsterdam
+zijn bevindingen weg: wat er is gepubliceerd, wat daarvan niet bright-waardig
+was, en waarom niet. De opdracht waarmee die agent draait staat in
+`backend/nachtelijke-beoordeling-prompt.md`.
+
+Blokken worden alleen toegevoegd, nooit herschreven of verwijderd — samen vormen
+ze het dossier waarmee de selectieprompt bijgesteld kan worden. Erik beslist wat
+er met de bevindingen gebeurt; de agent signaleert alleen en raakt geen
+artikelen aan.
+
+*(Nog geen beoordelingen; de eerste volgt zodra de taak draait.)*

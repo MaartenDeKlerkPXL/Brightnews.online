@@ -81,3 +81,7 @@ hard-refresh of privévenster; CSS/JS-wijzigingen zie je anders niet.
 - `backend/selectie-prompt-analyse.md` — diagnose van die prompt op basis van
   300 beoordelingen (2026-09-10). **Openstaand: Erik leest, test en geeft zijn
   eigen bevindingen — er is bewust nog niets gewijzigd.**
+  Onderaan datzelfde bestand schrijft de nachtelijke controle zijn dagelijkse
+  bevindingen weg.
+- `backend/nachtelijke-beoordeling-prompt.md` — opdracht voor de agent die elke
+  nacht om 04:00 Amsterdamse tijd de verse artikelen nakijkt op bright-waardigheid.
