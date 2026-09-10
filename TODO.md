@@ -28,11 +28,15 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   en de `noindex` op die pagina. Vergeten = de site blijft onzichtbaar voor
   publiek. Zet dit op de lanceerchecklist. *(Maarten + Erik)*
 
-- [ ] **3. Schoonmaaklijst van misser-artikelen.** Run 1 en 2 publiceerden een
-  handvol artikelen die de selectie niet hadden mogen passeren (Kia, scooter,
-  verzameledities, Texas-surveillance, datacenter-rechter). Die staan live en
-  zijn geïndexeerd. Opruimen vóór lancering, met expliciete go van Erik —
-  precedent: de v5-verwijderronde. *(Erik)*
+- [ ] **3. Misser-artikelen: gedocumenteerd, opruimen is uitgesteld.** De negen
+  gepubliceerde missers van run 1 en 2 staan sinds 2026-09-10 uitgewerkt in
+  `backend/selectie-prompt-analyse.md` (bijlage), met per artikel de reden.
+  **Besluit Maarten:** het opruimen zelf heeft geen haast — de site staat
+  geparkeerd achter `binnenkort.html`, dus ze doen nu weinig kwaad. Waar het om
+  gaat is dat Erik en Fable de prompt zo bijstellen dat dit type er niet meer
+  doorheen komt. Het daadwerkelijk uit de feed en de sitemap halen kan later,
+  vóór de lancering; de werkwijze staat in die bijlage beschreven. *(Erik, na
+  het bijstellen van de prompt)*
 
 - [ ] **4. Lemon Squeezy afbouwen** en daarna het Supabase-toegangstoken van
   Erik intrekken (Account → Access Tokens → Revoke). Stripe draait live sinds

@@ -221,6 +221,87 @@ Acceptatiegraad per bron, volgens de rekenregel:
 
 ---
 
+# Bijlage: de negen gepubliceerde missers van run 1 en 2
+
+Vastgelegd op 2026-09-10 als bewijsmateriaal voor het bijstellen van de
+selectieprompt. **Dit is geen opruimlijst.** De site staat geparkeerd achter
+`binnenkort.html`, dus deze artikelen doen op dit moment weinig kwaad; het
+belangrijkste is dat ze gedocumenteerd staan zodat de prompt zo bijgesteld kan
+worden dat dit type er in de toekomst niet meer doorheen komt.
+
+Alle negen staan in `articles/manifest.json` en dus in de sitemap: negen
+artikelen × vijf talen is 45 geïndexeerde URL's. Wordt er ooit besloten ze
+weg te halen, houd dan de regel uit `CLAUDE.md` aan: statische artikelpagina's
+worden niet verwijderd, want geïndexeerde URL's mogen niet sterven. Uit de feed
+en uit de sitemap halen met een `noindex` erop kan wel.
+
+Ze komen niet vanzelf terug: de pipeline houdt in `seen_links.json` bij welke
+bronlinks al gepubliceerd zijn (status `sent`), en alleen afgewezen items
+krijgen een herkansing bij een gewijzigde prompt.
+
+## Productnieuws
+
+### Kia teasert grotere camper-broer van PV5
+- **Gepubliceerd:** 2026-09-05 · Tech · id `178864608674649fh0dl49`
+- **Waar het over gaat:** Kia gaat over minder dan twee weken de productieversie van de PV7 onthullen tijdens de IAA Transportation show in Hannover. De PV7 is het grotere familielid van de populaire PV5, o…
+- **Waarom dit niet goed genoeg is:** Een aankondiging dat er binnenkort iets aangekondigd wordt. Niemand geholpen, niets opgelost. Staat als ijkvoorbeeld in de afwijslijst en kwam er tóch doorheen.
+
+### Budgetscooter met luxe features van Ather
+- **Gepubliceerd:** 2026-09-05 · Tech · id `1788646140552gfkjr3900`
+- **Waar het over gaat:** Ather Energy brengt met de Konarc een budgetscooter uit die functies biedt die normaal bij luxe auto's horen. De basisversie start bij iets meer dan 1000 dollar. De scooter beschik…
+- **Waarom dit niet goed genoeg is:** Reclamefolder in nieuwsvorm: prijs, dashboardformaat en app-functies. Geen maatschappelijke kern.
+
+## Politiek en rechtszaken
+
+### Texas stopt geld voor Flock-camera's
+- **Gepubliceerd:** 2026-09-05 · Tech · id `1788647519997iqucy27jj`
+- **Waar het over gaat:** Gouverneur Greg Abbott heeft alle Texaanse overheidsinstanties opgedragen te stoppen met het financieren van Flock-camera's, na toenemende zorgen over de AI-gestuurde surveillancet…
+- **Waarom dit niet goed genoeg is:** Alleen goed nieuws als je surveillancecamera’s afwijst. De kern van het stuk is bovendien iets wat misging: dertig miljoen dollar verkeerd besteed.
+
+### Rechter blokkeert datacenter op federale grond bij Boulder City
+- **Gepubliceerd:** 2026-09-05 · Environment · id `1788647298148ob78z37jl`
+- **Waar het over gaat:** Een federale administratieve rechtbank heeft de vergunning voor de bouw van een groot datacenter bij Boulder City tijdelijk ingetrokken. Het Interior Board of Land Appeals oordeeld…
+- **Waarom dit niet goed genoeg is:** Een rechter die een vergunning intrekt omdat die ten onrechte was verleend. Positief alleen vanuit één standpunt, en de kern is een fout van een overheidsinstantie.
+
+## Verzameledities
+
+### Superieure hartsoftware en meer goed nieuws
+- **Gepubliceerd:** 2026-09-05 · Health · id `1788645141480uux502u0y`
+- **Waar het over gaat:** Deze week bracht meerdere doorbraken in de gezondheidszorg. Onderzoekers van Imperial College London ontwikkelden software die hartziekten binnen tien seconden kan opsporen via ECG…
+- **Waarom dit niet goed genoeg is:** Meerdere losse doorbraken achter elkaar geplakt; de bron was zelf al een weekoverzicht.
+
+### AI-muziek geweerd uit Australische hitlijsten
+- **Gepubliceerd:** 2026-09-05 · Science · id `178864553146221lp57tcj`
+- **Waar het over gaat:** In de Optimist Daily-podcast van 4 september 2026 komen meerdere positieve nieuwsitems aan bod: AI-gegenereerde muziek wordt geweerd uit de hitlijsten van Australië, de Roman-teles…
+- **Waarom dit niet goed genoeg is:** Samenvatting van een podcast-transcript van Optimist Daily met meerdere niet-verwante items.
+
+### Flessen redden dolfijnen en meer goed nieuws
+- **Gepubliceerd:** 2026-09-06 · Environment · id `1788668077914dbmh5cikz`
+- **Waar het over gaat:** Een simpele uitvinding met lege plastic flessen aan visnetten vermindert de bijvangst van dolfijnen met 88 procent, ontdekte een emeritus mariene bioloog. Vlaanderen sluit dolfinar…
+- **Waarom dit niet goed genoeg is:** Dolfijnen, een Vlaams dolfinarium en India in één artikel. Titel eindigt letterlijk op "en meer goed nieuws".
+
+### Colombia beschermt Amazone, groen bouwmateriaal en zonnedak Londen
+- **Gepubliceerd:** 2026-09-07 · Environment · id `178880299686709ez84b3k`
+- **Waar het over gaat:** President Gustavo Petro heeft vlak voor het einde van zijn ambtstermijn 42% van het Colombiaanse Amazonegebied permanent beschermd tegen nieuwe mijnbouw- en olieprojecten, wat het…
+- **Waarom dit niet goed genoeg is:** Drie niet-verwante onderwerpen in de titel zelf. Bevat wel een sterk verhaal (42% van de Colombiaanse Amazone beschermd) dat een eigen artikel had moeten zijn.
+
+### Juli-hoogtepunten: water, transport en wandelen
+- **Gepubliceerd:** 2026-09-03 · Environment · id `1788452380111ptqqwf1nc`
+- **Waar het over gaat:** In juli werden wereldwijd positieve initiatieven gelanceerd. In India kregen meer dan 100 miljoen plattelandshuishoudens toegang tot drinkwater. Porto bood gratis openbaar vervoer…
+- **Waarom dit niet goed genoeg is:** Maandoverzicht van andermans hoogtepunten: India, Porto en de NHS in één stuk.
+
+## Wat dit zegt over de prompt
+
+De vijf verzameledities zijn samen de duidelijkste aanwijzing: dat is precies
+de categorie uit bevinding 1 hierboven, waar de afwijslijst wordt overgeslagen
+omdat het model eerst op inhoud scoort. De twee politieke stukken sluiten aan op
+bevinding 3: het model gaf ze allebei zelf een "ja" bij 2/2/3, en alleen de
+rekenregel hield ze tegen — onder de oude drempel kwamen ze er dus doorheen.
+Alleen het productnieuws heeft inmiddels een ijkvoorbeeld in de prompt, en dat
+is ook de categorie die in het log aántoonbaar het beste wordt gevangen.
+
+---
+
 # Dagelijkse beoordeling
 
 Hieronder schrijft de nachtelijke controle elke nacht om 04:00 Europe/Amsterdam
