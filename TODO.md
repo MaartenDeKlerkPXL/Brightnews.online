@@ -73,7 +73,7 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   opruimen — half werk in de code is erger dan geen werk. *(Erik)*
 
 - [ ] **12. Footer-socials linken naar profielen die niet bestaan.** Elke klik
-  leidt nu naar een 404. Claim de handles (zie punt 19) of haal de iconen
+  leidt nu naar een 404. Claim de handles (zie punt 20) of haal de iconen
   tijdelijk weg. *(Maarten)*
 
 - [ ] **13. Witte tekst op #32CD32 haalt geen WCAG AA** (ongeveer 2:1). Was
@@ -92,7 +92,12 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   uit `CLAUDE.md`: statische artikelpagina's nooit verwijderen. Overleggen met
   Erik. *(Erik)*
 
-- [ ] **17. Bronnen saneren.** Het weekrapport (W37) laat zien: Newatlas 11%
+- [ ] **17. Bronnen saneren.** LET OP, nuance uit
+  `backend/selectie-prompt-analyse.md`: bij Sciencenews (12 van 15) en
+  BBC/culture (4 van 19) is de afwijzing "tekst onleesbaar" — daar wordt de
+  brontekst verkeerd uitgelezen, dus schrappen lost het verkeerde probleem op.
+  Newatlas is wél een echte kandidaat: 70 items voor 5 treffers, tekst prima
+  leesbaar. Oorspronkelijke notitie: Het weekrapport (W37) laat zien: Newatlas 11%
   acceptatie, ScienceNews 0%, BBC-culture 6%. Dat is veel API-verbruik voor
   weinig. Adventure-Journal levert nieuwsbrief-fragmenten als items — idem
   bespreken. *(Erik)*
@@ -104,23 +109,34 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   0 errors, dus dit hoort opgeruimd voor het meesluipt in volgende commits.
   *(Erik)*
 
+- [ ] **19. Selectieprompt: Erik leest de analyse, test en geeft zijn
+  bevindingen.** In `backend/selectie-prompt-analyse.md` staat een diagnose op
+  basis van 300 beoordelingen uit `data/selectie-log.json`. Belangrijkste
+  vondst: de afwijslijst wordt overgeslagen — alle vier de weekoverzichten en
+  podcast-transcripten in het log zijn goedgekeurd met 8 of 9 punten, terwijl
+  hun titels woordelijk in de afwijslijst staan. Vermoedelijke oorzaak is de
+  instructie "score eerst, besluit daarna", waardoor de afwijzing via de scores
+  moet lopen. Er is bewust **niets** gewijzigd: Erik leest dit uit met Fable,
+  ziet de artikelen dagelijks langskomen en beoordeelt zelf of het patroon
+  klopt voordat er iets aan de prompt verandert. *(Erik)*
+
 ## Buiten de code — alleen Maarten kan dit
 
-- [ ] **19. Socials claimen**: `facebook.com/brightnews.online`,
+- [ ] **20. Socials claimen**: `facebook.com/brightnews.online`,
   `instagram.com/brightnews.online`, `linkedin.com/company/brightnews-online`.
   Nodig vóór de marketing-agent er is, en lost punt 12 meteen op.
 
-- [ ] **20. Search Console terugkijken.** De sitemap is ingediend op
+- [ ] **21. Search Console terugkijken.** De sitemap is ingediend op
   2026-09-05 met 2.072 pagina's; het is nu ruim een week later, dus onder
   Indexering → Pagina's zou het aantal geïndexeerde pagina's moeten oplopen.
   Onder Prestaties zie je op welke zoektermen BrightNews verschijnt.
 
-- [ ] **21. Marketing-cockpit gebruiken** op `brightnews.online/marketing.html`
+- [ ] **22. Marketing-cockpit gebruiken** op `brightnews.online/marketing.html`
   (inloggen met je account). Daar staan dagelijks conceptposts in 5 talen
   klaar. Goedkeuren of afwijzen mét reden — de fabriek leert van je
   afwijzingen, maar alleen als je hem voedt.
 
-- [ ] **22. Deel-previews in het echt testen** op WhatsApp en LinkedIn. De
+- [ ] **23. Deel-previews in het echt testen** op WhatsApp en LinkedIn. De
   `og:image` in het artikeltemplate wijst naar de echte artikelfoto
   (gecontroleerd 2026-09-10), dus technisch zit het goed — maar zien is
   geloven.

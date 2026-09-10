@@ -1,0 +1,220 @@
+# Analyse van de selectieprompt — voor Erik
+
+Opgesteld 2026-09-10 (Maarten + Claude Opus 5), naar aanleiding van de
+schoonmaaklijst van gepubliceerde missers.
+
+## Erik: lees dit eerst, test het zelf, en geef je eigen bevindingen
+
+**Er is bewust niets gewijzigd.** Niet aan `selectie-prompt.md`, niet aan de
+code, niet aan de bronnenlijst. Dit document is een diagnose, geen patch.
+
+Jij leest de artikelen dagelijks uit met Fable en beoordeelt of ze werkelijk
+"bright" zijn. Jij ziet dus de uitkomst van deze prompt elke dag van dichtbij,
+en dat is precies de kennis die hier ontbreekt. Wat hieronder staat komt uit
+de logs — het zegt wat het model dóét, niet of jij het ermee eens bent.
+
+Concreet verzoek:
+
+1. **Lees de vier bevindingen hieronder** en leg ze naast wat je dagelijks
+   ziet. Herken je het patroon, of wijkt jouw beeld af?
+2. **Reproduceer de cijfers zelf** met de commando's die erbij staan. Ze
+   draaien alleen tegen `data/selectie-log.json` en veranderen niets.
+3. **Test een wijziging voordat hij vast staat**: prompt aanpassen → Action
+   draaien → `data/selectie-log.json` teruglezen. Zoals in `CLAUDE.md`
+   beschreven geeft een gewijzigde prompt-hash afgewezen items automatisch een
+   herkansing, dus je ziet direct het verschil op vergelijkbare items.
+4. **Geef je eigen oordeel terug** voordat er iets wordt doorgevoerd. De
+   voorgestelde oplossingen hieronder zijn suggesties van iemand die de logs
+   heeft gelezen, niet van iemand die de artikelen dagelijks beoordeelt.
+
+Bevinding 1 is de belangrijkste: die verklaart waarschijnlijk een deel van wat
+je bij het uitlezen tegenkomt.
+
+## Waar deze analyse op rust
+
+`backend/selectie-prompt.md` plus de laatste 300 beoordelingen in
+`data/selectie-log.json`. Overal waar hieronder een getal staat, staat het
+commando erbij waarmee je het narekent.
+
+De rekenregel die de code toepast (en die in de commando's is nagebouwd):
+gevoel ≥ 2 én formulering ≥ 2 én relevantie ≥ 2 én som ≥ 8.
+
+---
+
+## Bevinding 1 — de afwijslijst wordt overgeslagen
+
+De prompt noemt letterlijk als afwijsreden: *"verzamel- en weekoverzichtitems
+van andere media ('good news this week', 'what went right',
+podcast-transcripten en andere linklijstjes)"*.
+
+Alle vier zulke items in het log zijn **goedgekeurd**:
+
+| Score | Bron | Titel |
+|---|---|---|
+| 9 (3/3/3) | Positive.News | What went right this week: the good news that matters |
+| 9 (3/3/3) | GoodGoodGood.co | Good News This Week: September 5, 2026 – Bears, Bakeries… |
+| 8 (2/3/3) | OptimistDaily.com | Podcast Transcript September 4th, 2026 — AI music banned… |
+| 9 (3/3/3) | OptimistDaily.com | Podcast Transcript August 28th, 2026 — Niger restored 5 mil… |
+
+De titels bevatten woordelijk de termen uit de afwijslijst.
+
+**Vermoedelijke oorzaak, en die is mechanisch.** Onderaan de prompt staat:
+*"Werk per item in deze volgorde: score eerst elk criterium afzonderlijk, en
+leid dáárna het besluit af."* Dat instrueert het model om te beginnen bij de
+inhoud. En de inhoud ván zo'n overzicht is oprecht positief — beren,
+bakkerijen, Niger dat vijf miljoen hectare herstelt. Dus scoort het 3/3/3, en
+tegen de tijd dat het besluit valt is de afwijslijst gepasseerd. De afwijzing
+moet nu via de scores lopen, en dat is precies de route die faalt.
+
+**Voorstel:** maak van de afwijslijst een poort vóór het scoren, met een eigen
+veld in de JSON, bijvoorbeeld:
+
+```json
+{"nr": 1, "uitsluiting": "geen", "gevoel": 3, "formulering": 3, "relevantie": 3, "besluit": "ja", "reden": "..."}
+```
+
+met als toegestane waarden `geen`, `productnieuws`, `verzameleditie`,
+`politiek`, `misdaad-of-ramp`, `listicle`, `te-weinig-inhoud`. De code wijst
+dan af op dat veld, ongeacht de scores. Bijkomend voordeel: je kunt in het log
+zien wélke categorie hoe vaak vangt, en dus of een afwijsregel werkt.
+
+Narekenen:
+
+```bash
+node -e "const d=require('./data/selectie-log.json');const p=/good news|what went right|this week|roundup|podcast|highlights|and more/i;d.filter(x=>p.test(x.titel)).forEach(x=>console.log((x.gevoel>=2&&x.formulering>=2&&x.relevantie>=2&&x.totaal>=8?'DOOR ':'afgew'),x.totaal,x.titel.slice(0,60)))"
+```
+
+## Bevinding 2 — de schaal is in de praktijk één knop
+
+Van de 68 items met totaalscore 9 hebben er **66 exact 3/3/3**. Bijna de helft
+van alles wat wordt goedgekeurd krijgt dus dezelfde beoordeling.
+
+Verdeling over de items die niet in de afwijslijst vielen:
+
+| Criterium | 0 | 1 | 2 | 3 | 4 |
+|---|---|---|---|---|---|
+| gevoel | 5% | 23% | 29% | 43% | — |
+| formulering | 3% | 13% | 37% | 46% | — |
+| relevantie | 2% | 13% | 22% | 53% | 10% |
+
+De 4 op relevantie wordt nauwelijks gebruikt. Er is dus geen middel om binnen
+de goedgekeurde artikelen te onderscheiden wat écht sterk is — terwijl je dat
+zou willen voor de volgorde op de homepage en voor de keuze welke artikelen in
+een dagoverzicht komen.
+
+**Voorstel:** maak de bovenste trede duurder. Het anker voor gevoel-3 is nu
+*"hartverwarmend of echt hoopgevend"*, en dat past op vrijwel elk
+goednieuwsartikel. Voeg een voorwaarde toe die de 3 schaars maakt — bijvoorbeeld
+dat de reden een concreet mens, aantal of gevolg moet benoemen. Overweeg ook
+een half zinnetje motivering per criterium in plaats van één reden voor het
+geheel; modellen die per criterium moeten motiveren, differentiëren beter.
+
+Narekenen:
+
+```bash
+node -e "const d=require('./data/selectie-log.json');const n=d.filter(x=>x.totaal===9);const c={};n.forEach(x=>{const k=x.gevoel+'/'+x.formulering+'/'+x.relevantie;c[k]=(c[k]||0)+1});console.log(c)"
+```
+
+## Bevinding 3 — het model leunt zelf de verkeerde kant op
+
+In **21 van de 300 gevallen (7%)** wijkt het besluit van het model af van de
+rekenregel in de code. Alle 21 in dezelfde richting: het model zegt "ja" bij
+scores 2/2/3 = 7, terwijl de regel "nee" zegt.
+
+Welke items dat zijn, is veelzeggend:
+
+- *Amid scrutiny, Texas agencies are blocked from spending…* — staat op de
+  schoonmaaklijst
+- *Federal judge halts data center construction…* — staat ook op de
+  schoonmaaklijst
+- *Why managers struggle with coaching…*
+- *How to choose a fertility clinic…*
+- *Need an excuse to hike? Jane Goodall's nonprofit calls…*
+
+Precies de politieke stukken en de zelfhulp-listicles. Het model wíl die
+publiceren; alleen de rekensom houdt ze tegen.
+
+Dat is tegelijk geruststellend en zorgelijk. Geruststellend: drempel 8 vangt
+ze aantoonbaar — niet aan die drempel komen. Zorgelijk: het laat zien dat de
+prompt die categorieën niet echt overbrengt. Productnieuws heeft twee
+ijkvoorbeelden; politiek heeft één regel zonder uitleg of voorbeeld
+(*"politiek gekleurde of polariserende onderwerpen"*), en zelfhulp-listicles
+staan alleen tussen haakjes genoemd.
+
+**Voorstel:** geef politiek en listicles hetzelfde gewicht als productnieuws —
+een eigen ijkvoorbeeld met uitleg. Het Texas-camerastuk is een goede kandidaat,
+met als redenering: dit is alleen goed nieuws als je er politiek zo over denkt,
+en dát is de toets. Laat daarnaast de mismatch tussen model-besluit en
+rekenregel als getal meelopen in het log; loopt dat percentage op na een
+promptwijziging, dan drijft het model af.
+
+Narekenen:
+
+```bash
+node -e "const d=require('./data/selectie-log.json');const r=x=>x.gevoel>=2&&x.formulering>=2&&x.relevantie>=2&&x.totaal>=8;const o=d.filter(x=>(x.besluit==='ja')!==r(x));console.log(o.length+'/'+d.length);o.forEach(x=>console.log(x.besluit,x.gevoel+'/'+x.formulering+'/'+x.relevantie,x.titel.slice(0,60)))"
+```
+
+## Bevinding 4 — geen promptprobleem, maar het vervuilt de cijfers
+
+**8% van alle beoordelingen wordt afgewezen omdat de tekst onleesbaar is** —
+website-navigatie of broncode in plaats van artikeltekst.
+
+| Bron | Onleesbaar | Van totaal |
+|---|---|---|
+| Sciencenews.org | 12 | 15 (80%) |
+| BBC.com/culture | 4 | 19 (21%) |
+| ReasonsToBeCheerful.world | 2 | 14 (14%) |
+| Newatlas.com | 4 | 70 (6%) |
+
+Dit verandert het advies uit punt 17 van `TODO.md` (bronnen saneren). Sciencenews
+en BBC/culture leveren geen slecht nieuws aan — hun tekst wordt **verkeerd
+uitgelezen**. Ze schrappen is het verkeerde antwoord; de extractie repareren is
+het juiste. Newatlas is een ander geval: 70 items voor 5 treffers, en daar is
+de tekst wél leesbaar. Dat is simpelweg een bron die niet bij BrightNews past.
+
+Narekenen:
+
+```bash
+node -e "const d=require('./data/selectie-log.json');const p=/onleesbaar|website-code|website-navigatie|onvoldoende inhoud|te weinig inhoud/i;const o=d.filter(x=>p.test(x.reden));const c={};o.forEach(x=>c[x.bron]=(c[x.bron]||0)+1);console.log(o.length+'/'+d.length,c)"
+```
+
+## Nog een observatie om samen te wegen
+
+**57% van alles wat wordt goedgekeurd komt van een site die zelf al goed nieuws
+verzamelt**: Good Good Good, Optimist Daily, Positive News, Squirrel News.
+
+Dat is geen fout, maar het is wel de voedingsbodem onder bevinding 1: hoe meer
+je uit curatiesites haalt, hoe vaker hun weekoverzichten in de invoer zitten.
+Squirrel News zit op 93% acceptatie en is per definitie een dienst die
+andermans nieuws bundelt. Waard om tegen het licht te houden.
+
+Acceptatiegraad per bron, volgens de rekenregel:
+
+| Bron | Door | Items | % |
+|---|---|---|---|
+| Squirrel-News.net | 27 | 29 | 93% |
+| GoodNewsNetwork.org | 21 | 25 | 84% |
+| Adventure-Journal.com | 8 | 11 | 73% |
+| GoodGoodGood.co | 30 | 45 | 67% |
+| Positive.News | 2 | 3 | 67% |
+| ReasonsToBeCheerful.world | 8 | 14 | 57% |
+| Openaccessgovernment.org | 2 | 7 | 29% |
+| OptimistDaily.com | 6 | 27 | 22% |
+| Ww2.kqed.org/mindshift | 2 | 9 | 22% |
+| NPR.org | 2 | 11 | 18% |
+| Newatlas.com | 5 | 70 | 7% |
+| Sciencenews.org | 1 | 15 | 7% |
+| BBC.com/culture | 0 | 19 | 0% |
+| YesMagazine.org | 0 | 10 | 0% |
+| Theecologist.org | 0 | 5 | 0% |
+
+## Wat vooral níét veranderd moet worden
+
+- **De kernregel.** Dat een gered dier of een geholpen gezin telt als goed
+  nieuws, ook al was de aanleiding naar, is een subtiel onderscheid dat
+  modellen normaal verprutsen. De twee ijkvoorbeelden erbij doen hun werk.
+- **De drempel van 8.** Die vangt aantoonbaar de gevallen waar het model zelf
+  te soepel is (bevinding 3).
+- **De afwijslijst voor productnieuws.** Die wérkt: 59 items kregen alle scores
+  0, met redenen als "zuivere productlancering zonder maatschappelijke
+  betekenis". Het probleem zit bij de categorieën die géén ijkvoorbeeld hebben.

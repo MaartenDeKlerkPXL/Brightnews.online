@@ -78,3 +78,6 @@ hard-refresh of privévenster; CSS/JS-wijzigingen zie je anders niet.
 - `MAARTEN-FRONTEND-REVIEW.md` — actuele front-end-verbeterlijst.
 - `backend/selectie-prompt.md` — dé AI-selectieprompt (itereren: bewerken →
   Action draaien → `data/selectie-log.json` lezen).
+- `backend/selectie-prompt-analyse.md` — diagnose van die prompt op basis van
+  300 beoordelingen (2026-09-10). **Openstaand: Erik leest, test en geeft zijn
+  eigen bevindingen — er is bewust nog niets gewijzigd.**
