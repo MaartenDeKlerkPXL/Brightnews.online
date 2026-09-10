@@ -23,10 +23,17 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   uitvechten. Begin bij #5 — die is klein, en hoe langer hij blijft staan hoe
   erger het conflict wordt. *(Maarten)*
 
-- [ ] **2. Parkeer-gate verwijderen bij livegang.** Drie dingen horen er dan
-  uit: het scriptblok bovenin `index.html`, de teamlogin op `binnenkort.html`
-  en de `noindex` op die pagina. Vergeten = de site blijft onzichtbaar voor
-  publiek. Zet dit op de lanceerchecklist. *(Maarten + Erik)*
+- [ ] **2. Parkeer-gate verwijderen bij livegang.** Sinds 2026-09-10 zit dit op
+  **drie plekken in `index.html`**, want het parkeerbericht staat nu op de
+  homepage zelf in plaats van achter een doorverwijzing:
+  1. de klasse `geparkeerd` op het `<html>`-element,
+  2. het gate-script en het style-blok eronder in de `<head>`,
+  3. de div `#parkeerbericht` bovenaan de `<body>`.
+
+  Daarnaast: de teamlogin op `binnenkort.html` en de `noindex` op die pagina.
+  Bij alle drie de plekken in `index.html` staat een commentaarregel die dit
+  herhaalt. Vergeten = bezoekers blijven het binnenkort-bericht zien terwijl de
+  site live is. Zet dit bovenaan de lanceerchecklist. *(Maarten + Erik)*
 
 - [ ] **3. Misser-artikelen: gedocumenteerd, opruimen is uitgesteld.** De negen
   gepubliceerde missers van run 1 en 2 staan sinds 2026-09-10 uitgewerkt in
@@ -131,9 +138,16 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   Nodig vóór de marketing-agent er is, en lost punt 12 meteen op.
 
 - [ ] **21. Search Console terugkijken.** De sitemap is ingediend op
-  2026-09-05 met 2.072 pagina's; het is nu ruim een week later, dus onder
-  Indexering → Pagina's zou het aantal geïndexeerde pagina's moeten oplopen.
-  Onder Prestaties zie je op welke zoektermen BrightNews verschijnt.
+  2026-09-05 met 2.072 pagina's; onder Indexering → Pagina's zou het aantal
+  geïndexeerde pagina's moeten oplopen. Onder Prestaties zie je op welke
+  zoektermen BrightNews verschijnt.
+
+  **Extra check, rond 24 september** (een week of twee na de wijziging van
+  2026-09-10): kijk onder Indexering → Pagina's specifiek naar de status van
+  `/` zelf. Die stond op "uitgesloten" of "pagina met omleiding", omdat de
+  homepage doorverwees naar een pagina met `noindex`. Sinds het parkeerbericht
+  op de homepage zelf staat hoort hij naar **"geïndexeerd"** te gaan. Blijft
+  hij uitgesloten, geef dat dan door — dan kijk ik verder.
 
 - [ ] **22. Marketing-cockpit gebruiken** op `brightnews.online/marketing.html`
   (inloggen met je account). Daar staan dagelijks conceptposts in 5 talen
