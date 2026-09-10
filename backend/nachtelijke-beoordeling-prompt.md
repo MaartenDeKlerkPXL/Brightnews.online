@@ -159,9 +159,14 @@ Alleen als je iets hebt toegevoegd:
 ```
 git pull --rebase origin master
 git add backend/selectie-prompt-analyse.md
-git commit
+git commit -m "Nachtelijke beoordeling 11 september: twee artikelen afgekeurd" -m "Van de veertien beoordeelde artikelen vielen er twee af: een teaser van een nog niet onthulde bestelbus, en een weekoverzicht van een andere nieuwssite. Beide staan met toelichting in het document."
 git push origin master
 ```
+
+Let op: geef de commitnaam altijd mee met `-m`, nooit `git commit` zonder meer.
+Zonder `-m` opent git een teksteditor om de naam te laten typen, en daar loopt
+een agent zonder scherm op vast. De eerste `-m` is de naam, de tweede is de
+toelichting eronder.
 
 Voorwaarden:
 
