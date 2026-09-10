@@ -59,13 +59,21 @@ function bouwMateriaal(feed) {
     const nl = feed.perTaal?.nl;
     if (!nl) return null;
     const items = [
-        ...nl.dagoverzichten.map(d => ({ soort: 'dagoverzicht', titel: d.titel, tekst: '', url: d.url })),
-        ...nl.top.map(t => ({ soort: 'artikel', titel: t.titel, tekst: t.teaser, url: t.url })),
+        ...nl.dagoverzichten.map(d => ({ soort: 'dagoverzicht', id: d.id, titel: d.titel, tekst: '', url: d.url })),
+        ...nl.top.map(t => ({ soort: 'artikel', id: t.id, titel: t.titel, tekst: t.teaser, url: t.url })),
     ];
     if (!items.length) return null;
     // Eén onderwerp per dag houdt de review klein: het dagoverzicht als dat
     // er is (breedste verhaal), anders het hoogst scorende artikel.
-    return items[0];
+    const keuze = items[0];
+    // Elke taal linkt naar zijn éígen versie (de feed heeft per taal de
+    // juiste URL; lichting 1 linkte overal naar de NL-pagina).
+    keuze.urlPerTaal = {};
+    for (const lang of TALEN) {
+        const lijst = [...(feed.perTaal?.[lang]?.dagoverzichten ?? []), ...(feed.perTaal?.[lang]?.top ?? [])];
+        keuze.urlPerTaal[lang] = lijst.find(x => x.id === keuze.id)?.url ?? keuze.url;
+    }
+    return keuze;
 }
 
 async function vertaalPosts(nlPosts, lang) {
@@ -82,7 +90,8 @@ Antwoord UITSLUITEND met geldig JSON in exact dezelfde vorm: {"posts": [{"kanaal
         const perKanaal = Object.fromEntries(posts
             .filter(p => KANALEN.includes(p.kanaal) && typeof p.tekst === 'string' && p.tekst.trim())
             .map(p => [p.kanaal, p.tekst.trim()]));
-        if (KANALEN.every(k => perKanaal[k])) return { perKanaal, tokens: antwoord.tokens };
+        const linkBehouden = k => k === 'instagram' || !nlPosts.find(p => p.kanaal === k)?.tekst.includes('{URL}') || perKanaal[k]?.includes('{URL}');
+        if (KANALEN.every(k => perKanaal[k] && linkBehouden(k))) return { perKanaal, tokens: antwoord.tokens };
         console.error(`🔎 Postvertaling ${lang} onbruikbaar (poging ${poging + 1}): ${String(antwoord.tekst).replace(/\s+/g, ' ').slice(0, 160)}`);
         await wacht(1000);
     }
@@ -129,7 +138,8 @@ async function main() {
         const posts = (Array.isArray(data?.posts) ? data.posts : [])
             .filter(p => KANALEN.includes(p.kanaal) && typeof p.tekst === 'string' && p.tekst.trim())
             .map(p => ({ kanaal: p.kanaal, tekst: p.tekst.trim() }));
-        if (KANALEN.every(k => posts.some(p => p.kanaal === k))) nlPosts = posts;
+        const linkOk = k => k === 'instagram' || posts.find(p => p.kanaal === k)?.tekst.includes('{URL}');
+        if (KANALEN.every(k => posts.some(p => p.kanaal === k) && linkOk(k))) nlPosts = posts;
         else console.error(`🔎 NL-posts onbruikbaar (poging ${poging + 1}): ${String(antwoord.tekst).replace(/\s+/g, ' ').slice(0, 160)}`);
     }
     if (!nlPosts) {
@@ -153,7 +163,8 @@ async function main() {
     // weekrapport per kanaal kan zien wat kliks oplevert.
     for (const lang of TALEN) {
         for (const kanaal of KANALEN) {
-            perTaal[lang][kanaal] = perTaal[lang][kanaal].replaceAll('{URL}', utm(onderwerp.url, kanaal, dag));
+            const url = onderwerp.urlPerTaal?.[lang] ?? onderwerp.url;
+            perTaal[lang][kanaal] = perTaal[lang][kanaal].replaceAll('{URL}', utm(url, kanaal, dag));
         }
     }
 
