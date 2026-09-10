@@ -85,3 +85,5 @@ hard-refresh of privévenster; CSS/JS-wijzigingen zie je anders niet.
   bevindingen weg.
 - `backend/nachtelijke-beoordeling-prompt.md` — opdracht voor de agent die elke
   nacht om 04:00 Amsterdamse tijd de verse artikelen nakijkt op bright-waardigheid.
+- `backend/vertaal-steekproef.md` — steekproef op de vertalingen (2026-09-10),
+  met voorstellen voor de vertaalprompt. **Openstaand: Erik.**
