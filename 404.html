@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <!-- Eigen foutpagina (2026-09-10). GitHub Pages serveert dit bestand
+         automatisch bij een onbekende URL, met een echte 404-status. Bewust
+         zelfstandig opgebouwd, net als binnenkort.html: geen externe CSS of JS,
+         zodat de pagina ook werkt als er iets mis is met de site zelf.
+         Absolute paden (/assets/...), want een 404 kan op elke diepte ontstaan,
+         bijvoorbeeld op /articles/nl/verlopen-slug.html. -->
+    <meta name="robots" content="noindex, follow">
+    <link rel="icon" type="image/png" href="/assets/brightnews-logo-faviconv5.png">
+    <title>BrightNews | Pagina niet gevonden</title>
+    <style>
+        :root {
+            --bright-green: #32CD32;
+            --bright-yellow: #FFD700;
+            --light-bg: #F8FBF8;
+            --border-color: #E8EEE8;
+            --dark-text: #1A1A1A;
+            --medium-text: #505F50;
+            --radius-lg: 24px;
+            --shadow-md: 0 10px 25px rgba(50, 205, 50, 0.08);
+        }
+        * { margin: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: var(--light-bg);
+            color: var(--dark-text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 32px 20px;
+            text-align: center;
+        }
+        .kaart {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            max-width: 560px;
+            width: 100%;
+            padding: 48px 32px 40px;
+        }
+        .logo {
+            display: block;
+            max-width: 296px;
+            width: 80%;
+            height: auto;
+            margin: 0 auto 20px;
+        }
+        .zon {
+            display: inline-block;
+            background: var(--bright-yellow);
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--dark-text);
+            padding: 6px 16px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: clamp(26px, 5vw, 34px);
+            line-height: 1.15;
+            margin-bottom: 14px;
+        }
+        .intro {
+            color: var(--medium-text);
+            font-size: 17px;
+            line-height: 1.6;
+            max-width: 44ch;
+            margin: 0 auto 26px;
+        }
+        ul.talen {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto 6px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            color: var(--medium-text);
+            font-size: 14.5px;
+        }
+        ul.talen .taal {
+            font-weight: 700;
+            color: var(--dark-text);
+            margin-right: 6px;
+        }
+        .streep {
+            height: 4px;
+            width: 72px;
+            background: var(--bright-green);
+            border-radius: 2px;
+            margin: 30px auto;
+        }
+        .knop {
+            display: inline-block;
+            background: var(--bright-green);
+            color: var(--dark-text);
+            font-size: 15px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 999px;
+            padding: 13px 28px;
+        }
+        .knop:hover { background: #2bb62b; }
+        a:focus-visible { outline: 2px solid var(--dark-text); outline-offset: 2px; }
+        footer {
+            margin-top: 26px;
+            font-size: 12.5px;
+            color: var(--medium-text);
+        }
+    </style>
+</head>
+<body>
+    <main class="kaart">
+        <img class="logo" src="/assets/brightnews-logo.png" alt="BrightNews" width="463" height="94">
+        <div class="zon">404</div>
+        <h1>Deze pagina hebben we niet kunnen vinden</h1>
+        <p class="intro">Misschien is het adres verhuisd of staat er een tikfout in. Het goede nieuws staat er in elk geval nog — ga terug naar de voorpagina en lees verder.</p>
+        <ul class="talen">
+            <li><span class="taal">EN</span>We couldn't find that page. Head back to the homepage.</li>
+            <li><span class="taal">DE</span>Diese Seite konnten wir nicht finden. Zurück zur Startseite.</li>
+            <li><span class="taal">FR</span>Nous n'avons pas trouvé cette page. Retournez à l'accueil.</li>
+            <li><span class="taal">ES</span>No hemos encontrado esta página. Vuelve a la página principal.</li>
+        </ul>
+        <div class="streep"></div>
+        <a class="knop" href="/">Naar de voorpagina</a>
+    </main>
+    <footer>© <span id="jaar">2026</span> BrightNews · brightnews.online</footer>
+    <script>document.getElementById('jaar').textContent = new Date().getFullYear();</script>
+</body>
+</html>
