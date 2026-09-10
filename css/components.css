@@ -807,9 +807,9 @@ body {
     }
 
     .nav-logo {
-        /* Zelfde 45px als desktop; max-width vangt de smalste schermen op
+        /* Zelfde 50px als desktop; max-width vangt de smalste schermen op
            zodat het logo de taalkiezer/hamburger niet wegduwt. */
-        height: 45px;
+        height: 50px;
         width: auto;
         max-width: 60vw;
         object-fit: contain;
