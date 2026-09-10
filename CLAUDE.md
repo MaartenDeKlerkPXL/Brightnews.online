@@ -70,6 +70,7 @@ hard-refresh of privévenster; CSS/JS-wijzigingen zie je anders niet.
   marketing-agent (`MARKETING-PLAN.md`).
 
 ## Waar staat wat
+- `TODO.md` — actuele werklijst (wat er nog moet gebeuren, op urgentie).
 - `BRIGHTNEWS-OVERDRACHT-FABLE.md` — volledige projectstatus en historie.
 - `README.md` — hoe alles werkt. `STRIPE-MIGRATIE.md` — betaaltraject.
 - `MARKETING-PLAN.md` — route naar lancering, break-even, agent-ontwerp.
