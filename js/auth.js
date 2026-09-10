@@ -17,6 +17,18 @@ function updateLangLabel(langName) {
     if (details) details.removeAttribute('open');
 }
 
+// Vertaalde melding met invulwaarden. getT() geeft alleen de kale tekst
+// terug, dus de plaatshouders ({naam}) vullen we hier in. Zo blijft de
+// woordvolgorde per taal vrij: in het Frans staat de naam op een andere plek
+// in de zin dan in het Duits.
+function meldingTekst(key, terugval, waarden = {}) {
+    let tekst = (typeof getT === 'function') ? getT(key, terugval) : terugval;
+    for (const [naam, waarde] of Object.entries(waarden)) {
+        tekst = tekst.split('{' + naam + '}').join(waarde);
+    }
+    return tekst;
+}
+
 function showNotification(message, type = 'success') {
     // De container stond alleen in profiel.html en wachtwoord-vergeten.html.
     // Op index.html en abonnementen.html ontbrak hij, waardoor meldingen daar
@@ -78,16 +90,16 @@ async function handleAuth(event, type) {
                     // Meteen ingelogd (geen e-mailbevestiging vereist) -> code direct verzilveren
                     const { data: redeemResult, error: redeemError } = await client.rpc('redeem_promo_code', { p_code: promoCode });
                     if (!redeemError && redeemResult?.success) {
-                        showNotification(`Welkom ${name}! Je promocode is verzilverd ✨`, "success");
+                        showNotification(meldingTekst('notif_welcome_promo_ok', 'Welkom {naam}! Je promocode is verzilverd ✨', { naam: name }), "success");
                     } else {
-                        showNotification(`Welkom ${name}! Account aangemaakt, maar de code kon niet worden verzilverd. Probeer het opnieuw via je profiel.`, "error");
+                        showNotification(meldingTekst('notif_welcome_promo_fout', 'Welkom {naam}! Je account is aangemaakt, maar de code kon niet worden verzilverd. Probeer het opnieuw via je profiel.', { naam: name }), "error");
                     }
                 } else {
-                    showNotification(`Welkom ${name}! Bevestig eerst je e-mail, verzilver de code daarna via je profiel.`, "success");
+                    showNotification(meldingTekst('notif_welcome_bevestig_mail', 'Welkom {naam}! Bevestig eerst je e-mail; verzilver de code daarna via je profiel.', { naam: name }), "success");
                 }
                 setTimeout(() => window.location.href = 'profiel.html', 2000);
             } else {
-                showNotification(`Welkom ${name}! Je bent geregistreerd. ✨`, "success");
+                showNotification(meldingTekst('notif_welcome_geregistreerd', 'Welkom {naam}! Je bent geregistreerd. ✨', { naam: name }), "success");
                 setTimeout(() => window.location.href = 'profiel.html', 1500);
             }
         } else {
