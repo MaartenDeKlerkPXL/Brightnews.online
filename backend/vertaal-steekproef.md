@@ -152,4 +152,12 @@ Blokken worden alleen toegevoegd, nooit herschreven. Zo is over een paar weken
 te zien of het aantal bevindingen daalt nadat de vertaalprompt is bijgesteld —
 en of het per taal verschilt.
 
-*(Nog geen steekproeven; de eerste volgt bij de eerstvolgende nachtrun.)*
+### 2026-09-11, Engels
+
+Vandaag is het vrijdag, dus zou Engels aan de beurt zijn geweest. Er was
+echter geen nieuw artikel om te controleren: sinds de vorige beoordeling (tot
+en met 2026-09-10 04:22) zijn er geen artikelen aan `data/news_nl.json`
+toegevoegd. Zie de toelichting van vannacht in
+`backend/selectie-prompt-analyse.md` voor de vermoedelijke oorzaak — de
+AI-pijplijn lijkt te haperen op een lege Anthropic-kredietbalans. Deze
+steekproef is dus overgeslagen.

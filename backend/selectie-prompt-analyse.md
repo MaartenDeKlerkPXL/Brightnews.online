@@ -376,3 +376,44 @@ als de weekoverzichten uit bevinding 1 hierboven, maar dan voor boeken in
 plaats van nieuws: de selectieprompt heeft voor verzameledities een regel,
 maar geen ijkvoorbeeld, en een terugkerende rubriek lijkt daar consistent
 doorheen te glippen.
+
+### 2026-09-11, 04:08 Europe/Amsterdam
+
+Sinds de vorige ronde (die liep tot en met 2026-09-10 04:22) zijn er geen
+nieuwe artikelen in `data/news_nl.json` bijgekomen: het aantal
+niet-digest-artikelen in de feed staat nog op 150 en de laatste
+publicatiedatum is nog steeds 2026-09-10 04:22. Er viel dus niets te
+beoordelen vannacht, en (niet maandag, dus geen volledige controle) ook geen
+aanleiding om de hele feed na te lopen.
+
+#### Wat ik daarnaast aantrof: de AI-pijplijn lijkt sinds die publicatiedatum niet meer met succes te draaien
+
+Dit valt buiten mijn eigenlijke opdracht — ik controleer artikelen, geen
+infrastructuur — maar het verklaart rechtstreeks waarom er niets nieuws was,
+en leek me te belangrijk om niet te melden. Ik heb er niets aan veranderd.
+
+- De geplande run van 2026-09-10 12:00 UTC (afgerond om 16:16 UTC, workflow-run
+  #253 van "🚀 BrightNews: Automatische Update") heeft nul artikelen
+  geaccepteerd: `data/last_run.json` toont `"aiCalls": 0` en
+  `"selectieFouten": 2`, tegenover 293 kandidaten en 6 opgehaalde teksten.
+- De workflowlogs van die run laten zien waarom: elke aanroep van Anthropic
+  geeft `"Your credit balance is too low to access the Anthropic API"` (een
+  harde 400-fout, geen tijdelijk probleem), en de daaropvolgende val-terug naar
+  Mistral loopt vast op `"Rate limit exceeded"` (429,
+  `x-ratelimit-remaining-req-minute: 0`). Dat gebeurt bij zowel de selectiestap
+  als de dagoverzichten (`digest.js`) als de Postfabriek
+  (`generate-posts.js`) — overal waar de AI-adapter wordt aangeroepen.
+- Sinds die run is er, voor zover ik in de GitHub Actions-geschiedenis kan
+  zien, helemaal geen run van "🚀 BrightNews: Automatische Update" meer
+  geweest: de laatste is run #253 (het 2026-09-10 12:00 UTC-slot). Het is nu
+  2026-09-11 04:08 Europe/Amsterdam (02:08 UTC); de geplande run van
+  2026-09-11 00:00 UTC ontbreekt dus volledig in de lijst — niet gefaald, maar
+  niet eens gestart.
+- Ter info: `CLAUDE.md` meldt dat "de fallback-sleuf in de adapter bewust
+  leeg" is omdat Mistral is afgebouwd. De logs laten zien dat de code bij een
+  falende Anthropic-aanroep wél degelijk naar Mistral terugvalt — dat lijkt
+  niet meer te kloppen met wat er nu in de code staat, of de documentatie is
+  achterhaald.
+
+Geen inhoudelijke bevinding over bright-waardigheid dus, maar wel iets wat
+voor Erik waarschijnlijk urgenter is dan de gebruikelijke inhoudscontrole.
