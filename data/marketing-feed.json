@@ -1,18 +1,10 @@
 {
- "gegenereerd": "2026-09-10T16:16:13.370Z",
+ "gegenereerd": "2026-09-11T04:17:09.900Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
-    {
-     "id": "1788885133204h2rgjkygd",
-     "titel": "Urinetest herkent blaaskanker thuis",
-     "teaser": "Een nieuwe test die thuis kan worden uitgevoerd, spoort blaaskanker op via een urinemonster. Volgens de bron herkent de test de ziekte in negen van de tien gevallen. Verdere details over de werking, ontwikkelaars of onderzoek worden in de bron niet vermeld.",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/nl/urinetest-herkent-blaaskanker-thuis-1788885133204h2rgjkygd.html"
-    },
     {
      "id": "1789014131279gvpgswh9x",
      "titel": "Prikvaccin beschermt mogelijk hart",
@@ -44,6 +36,14 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/bevers-bouwen-natuurlijke-buffers-tegen-droogte-1788972385897m07upstn7.html"
+    },
+    {
+     "id": "17889722509535exyjuwz4",
+     "titel": "Wetenschappers Laten 165 Miljoen Jaar Oude Insectengeluiden Herleven",
+     "teaser": "Onderzoekers onder leiding van Thorin Jonsson (Universiteit Graz) hebben, samen met collega's uit Lincoln, Bristol, Beijing en Tempe, de geluiden van Jurassische krekels en sprinkhanen gereconstrueerd. Dankzij extreem goed bewaarde fossielen van negen sprinkhaansoorten uit het Midden-Jura in Binnen-Mongolië konden de wetenschappers via analyses, simulaties en AI de exacte toonhoogtes van hun paringsroepen berekenen. Het gaat om de oudste ooit...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/nl/wetenschappers-laten-165-miljoen-jaar-oude-insectengeluiden-herleven-17889722509535exyjuwz4.html"
     }
    ],
    "dagoverzichten": [
@@ -80,14 +80,6 @@
   "en": {
    "top": [
     {
-     "id": "1788885133204h2rgjkygd",
-     "titel": "Urine test detects bladder cancer at home",
-     "teaser": "A new test that can be performed at home detects bladder cancer via a urine sample. According to the source, the test identifies the disease in nine out of ten cases. Further details about how it works, who developed it, or the research are not mentioned in the source.",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/en/urine-test-detects-bladder-cancer-at-home-1788885133204h2rgjkygd.html"
-    },
-    {
      "id": "1789014131279gvpgswh9x",
      "titel": "Shingles vaccine may protect heart",
      "teaser": "Researchers have discovered a new potential benefit of the shingles vaccine Shingrix: it appears to be linked to a lower risk of heart failure, heart attack and stroke. The vaccine, originally developed to prevent shingles, could thus potentially also offer protection for the heart, according to the source. Further details about the study itself are missing from this report.",
@@ -118,6 +110,14 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/en/beavers-build-natural-buffers-against-drought-1788972385897m07upstn7.html"
+    },
+    {
+     "id": "17889722509535exyjuwz4",
+     "titel": "Scientists Bring 165 Million Year Old Insect Sounds Back to Life",
+     "teaser": "Researchers led by Thorin Jonsson (University of Graz), together with colleagues from Lincoln, Bristol, Beijing and Tempe, have reconstructed the sounds of Jurassic crickets and grasshoppers. Thanks to exceptionally well-preserved fossils of nine grasshopper species from the Middle Jurassic in Inner Mongolia, scientists were able to calculate the exact pitches of their mating calls through analyses, simulations and AI. These...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/en/scientists-bring-165-million-year-old-insect-sounds-back-to-life-17889722509535exyjuwz4.html"
     }
    ],
    "dagoverzichten": [
@@ -154,14 +154,6 @@
   "de": {
    "top": [
     {
-     "id": "1788885133204h2rgjkygd",
-     "titel": "Urintest erkennt Blasenkrebs zu Hause",
-     "teaser": "Ein neuer Test, der zu Hause durchgeführt werden kann, spürt Blasenkrebs anhand einer Urinprobe auf. Der Test erkennt die Krankheit Angaben zufolge in neun von zehn Fällen. Weitere Details über die Funktionsweise, Entwickler oder Forschung werden in der Quelle nicht genannt.",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/de/urintest-erkennt-blasenkrebs-zu-hause-1788885133204h2rgjkygd.html"
-    },
-    {
      "id": "1789014131279gvpgswh9x",
      "titel": "Impfstoff schützt möglicherweise das Herz",
      "teaser": "Forscher haben einen neuen möglichen Vorteil des Gürtelrose-Impfstoffs Shingrix entdeckt: Er scheint mit einem geringeren Risiko für Herzinsuffizienz, Herzinfarkt und Schlaganfall verbunden zu sein. Der Impfstoff, der ursprünglich zur Vorbeugung von Gürtelrose entwickelt wurde, könnte der Quelle zufolge also möglicherweise auch Schutz für das Herz bieten. Weitere Details zur Studie selbst fehlen in dieser Meldung.",
@@ -192,6 +184,14 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/de/biber-bauen-naturliche-puffer-gegen-trockenheit-1788972385897m07upstn7.html"
+    },
+    {
+     "id": "17889722509535exyjuwz4",
+     "titel": "Wissenschaftler Lassen 165 Millionen Jahre Alte Insektenlaut Wiederaufleben",
+     "teaser": "Forscher unter der Leitung von Thorin Jonsson (Universität Graz) haben zusammen mit Kollegen aus Lincoln, Bristol, Beijing und Tempe die Laute von Jura-Grillen und Heuschrecken rekonstruiert. Dank außergewöhnlich gut erhaltener Fossilien von neun Heuschreckenarten aus dem Mitteljura in der Inneren Mongolei konnten die Wissenschaftler durch Analysen, Simulationen und KI die genauen Tonhöhen ihrer Paarungsrufe berechnen. Es handelt sich um die...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/de/wissenschaftler-lassen-165-millionen-jahre-alte-insektenlaut-wiederaufleben-17889722509535exyjuwz4.html"
     }
    ],
    "dagoverzichten": [
@@ -228,14 +228,6 @@
   "fr": {
    "top": [
     {
-     "id": "1788885133204h2rgjkygd",
-     "titel": "Test urinaire détecte cancer de la vessie à domicile",
-     "teaser": "Un nouveau test pouvant être réalisé à domicile détecte le cancer de la vessie à partir d'un échantillon d'urine. Selon la source, le test identifie la maladie dans neuf cas sur dix. Aucun détail supplémentaire sur le fonctionnement, les développeurs ou la recherche n'est mentionné dans la source.",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/fr/test-urinaire-detecte-cancer-de-la-vessie-a-domicile-1788885133204h2rgjkygd.html"
-    },
-    {
      "id": "1789014131279gvpgswh9x",
      "titel": "Le vaccin antizona protège peut-être le cœur",
      "teaser": "Des chercheurs ont découvert un nouvel avantage possible du vaccin contre le zona Shingrix : il semble être associé à un risque plus faible d'insuffisance cardiaque, de crise cardiaque et d'accident vasculaire cérébral. Le vaccin, initialement développé pour prévenir le zona, pourrait donc selon la source offrir une protection pour le cœur. D'autres détails sur l'étude elle-même manquent dans ce...",
@@ -266,6 +258,14 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/fr/les-castors-construisent-des-tampons-naturels-contre-la-secheresse-1788972385897m07upstn7.html"
+    },
+    {
+     "id": "17889722509535exyjuwz4",
+     "titel": "Des Scientifiques Font Revivre des Sons d'Insectes de 165 Millions d'Années",
+     "teaser": "Des chercheurs dirigés par Thorin Jonsson (Université de Graz) ont, en collaboration avec des collègues de Lincoln, Bristol, Beijing et Tempe, reconstruit les sons de grillons et de sauterelles du Jurassique. Grâce à des fossiles exceptionnellement bien conservés de neuf espèces de sauterelles du Jurassique moyen en Mongolie-Intérieure, les scientifiques ont pu calculer via des analyses, des simulations et l'IA...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/fr/des-scientifiques-font-revivre-des-sons-d-insectes-de-165-millions-d-annees-17889722509535exyjuwz4.html"
     }
    ],
    "dagoverzichten": [
@@ -302,14 +302,6 @@
   "es": {
    "top": [
     {
-     "id": "1788885133204h2rgjkygd",
-     "titel": "Prueba de orina detecta cáncer de vejiga en casa",
-     "teaser": "Una nueva prueba que se puede realizar en casa detecta el cáncer de vejiga a través de una muestra de orina. Según la fuente, la prueba identifica la enfermedad en nueve de cada diez casos. La fuente no proporciona más detalles sobre el funcionamiento, los desarrolladores o la investigación.",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/es/prueba-de-orina-detecta-cancer-de-vejiga-en-casa-1788885133204h2rgjkygd.html"
-    },
-    {
      "id": "1789014131279gvpgswh9x",
      "titel": "Vacuna inyectable protege posiblemente el corazón",
      "teaser": "Investigadores han descubierto una nueva ventaja posible de la vacuna contra el herpes zóster Shingrix: parece estar vinculada a un menor riesgo de insuficiencia cardíaca, infarto de miocardio y accidente cerebrovascular. La vacuna, que fue desarrollada originalmente para prevenir el herpes zóster, podría ofrecer, según la fuente, posible protección también para el corazón. En este mensaje faltan más detalles sobre...",
@@ -340,6 +332,14 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/es/castores-construyen-amortiguadores-naturales-contra-la-sequia-1788972385897m07upstn7.html"
+    },
+    {
+     "id": "17889722509535exyjuwz4",
+     "titel": "Científicos Reviven Sonidos de Insectos de 165 Millones de Años",
+     "teaser": "Investigadores liderados por Thorin Jonsson (Universidad de Graz) han reconstruido, junto con colegas de Lincoln, Bristol, Beijing y Tempe, los sonidos de grillos y saltamontes jurásicos. Gracias a fósiles excepcionalmente bien conservados de nueve especies de saltamontes del Jurásico Medio en Mongolia Interior, los científicos pudieron calcular mediante análisis, simulaciones e IA las frecuencias exactas de sus llamadas de apareamiento....",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/es/cientificos-reviven-sonidos-de-insectos-de-165-millones-de-anos-17889722509535exyjuwz4.html"
     }
    ],
    "dagoverzichten": [
