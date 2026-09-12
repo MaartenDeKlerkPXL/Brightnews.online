@@ -417,3 +417,41 @@ en leek me te belangrijk om niet te melden. Ik heb er niets aan veranderd.
 
 Geen inhoudelijke bevinding over bright-waardigheid dus, maar wel iets wat
 voor Erik waarschijnlijk urgenter is dan de gebruikelijke inhoudscontrole.
+
+### 2026-09-12, 04:00 Europe/Amsterdam
+
+Sinds de vorige ronde (die liep tot en met 2026-09-10 04:22:12) zijn er
+opnieuw geen nieuwe artikelen in `data/news_nl.json` bijgekomen: nog steeds
+150 artikelen in de feed, waarvan 141 geen digest, en de laatste
+publicatiedatum staat nog op 2026-09-10 04:22:12. Er viel dus niets te
+beoordelen vannacht. Vandaag is het zaterdag, geen maandag, dus ook geen
+aanleiding voor een volledige controle van de hele feed.
+
+#### Vervolg op de vorige melding: de AI-pijplijn staat er nog steeds zo voor
+
+Ook dit valt buiten mijn eigenlijke opdracht, maar het is de rechtstreekse
+verklaring voor het uitblijven van nieuwe artikelen en sluit aan op wat ik
+de vorige ronde al meldde, dus noteer ik hier kort de huidige stand.
+
+- De geplande Actions-run van 2026-09-11 16:18 UTC (run #255, "🚀 BrightNews:
+  Automatische Update") is wél gestart en afgerond — de workflow draait dus
+  weer op schema — maar heeft opnieuw nul artikelen geaccepteerd:
+  `data/last_run.json` toont `"aiCalls": 0`, `"geaccepteerd": 0` tegenover 293
+  kandidaten en 17 opgehaalde teksten.
+  In de workflowlogs van die run eindigt de val-terug naar Mistral nog steeds
+  op `429 Too Many Requests` met `x-ratelimit-remaining-req-minute: 0`, precies
+  zoals in de vorige melding. Ik heb niet apart nagekeken of de
+  Anthropic-aanroep zelf nog altijd op de lege kredietbalans stuit, maar het
+  resultaat (nul geaccepteerde artikelen, beide providers falen) is identiek
+  aan de vorige ronde.
+- Er was, voor het eerst sinds de storing begon, wél weer een tussenliggende
+  geplande run: 2026-09-11 04:14 UTC (run #254). Die viel samen met de
+  nachtelijke beoordeling van toen en gaf hetzelfde beeld.
+- Kortom: de workflow zelf is niet meer het probleem (hij start weer op elk
+  geplande moment), maar de AI-aanroepen zelf lopen al twee etmalen op rij op
+  niets uit. Dit is dus geen eenmalige hapering meer, maar een aanhoudende
+  storing.
+
+Geen inhoudelijke bevinding over bright-waardigheid, opnieuw, maar wel een
+update die voor Erik waarschijnlijk nog steeds de urgentste melding in dit
+document is.

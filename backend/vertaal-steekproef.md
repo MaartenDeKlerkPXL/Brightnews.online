@@ -161,3 +161,12 @@ toegevoegd. Zie de toelichting van vannacht in
 `backend/selectie-prompt-analyse.md` voor de vermoedelijke oorzaak — de
 AI-pijplijn lijkt te haperen op een lege Anthropic-kredietbalans. Deze
 steekproef is dus overgeslagen.
+
+### 2026-09-12, Duits
+
+Vandaag is het zaterdag, dus zou Duits aan de beurt zijn geweest. Ook nu was
+er geen nieuw artikel om te controleren: sinds de vorige beoordeling (tot en
+met 2026-09-10 04:22:12) zijn er nog steeds geen artikelen aan
+`data/news_nl.json` toegevoegd. Zie de toelichting van vannacht in
+`backend/selectie-prompt-analyse.md` — de storing in de AI-pijplijn loopt nu
+over twee etmalen door. Deze steekproef is dus opnieuw overgeslagen.
