@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-09-11T16:20:16.473Z",
+ "gegenereerd": "2026-09-12T04:16:02.064Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -22,60 +22,23 @@
      "url": "https://brightnews.online/articles/nl/duizenden-bomen-geplant-voor-1-miljoen-goede-daden-17890140425336oyar81ew.html"
     },
     {
-     "id": "1788972460780dsq3ftz6n",
-     "titel": "Drie schattige klipdas-pups blijken neefjes van de olifant",
-     "teaser": "Chester Zoo verwelkomde op 9 september drie klipdas-pups: Spud, Russ en Jackie, geboren bij ouders Maris en Albert. De dierentuin, die al sinds 1934 als non-profit opereert en 30.000 dieren van meer dan 500 soorten huisvest, meldt dat klipdassen tot dezelfde evolutionaire groep behoren als olifanten, doejongs en zeekoeien. Zookeeper Megan Carpenter wijst op overeenkomsten zoals lange voortanden die lijken...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/nl/drie-schattige-klipdas-pups-blijken-neefjes-van-de-olifant-1788972460780dsq3ftz6n.html"
-    },
-    {
-     "id": "1788972385897m07upstn7",
-     "titel": "Bevers Bouwen Natuurlijke Buffers Tegen Droogte",
-     "teaser": "Op het Holnicote-landgoed in Somerset zorgen herintroduceerde bevers voor een groen, vochtig oase te midden van een verder droog landschap. De dieren, die in de 16e eeuw uitstierven in Groot-Brittannië, bouwen dammen en graven kanalen waardoor water langer wordt vastgehouden. Een Canadees onderzoek uit 2008 toonde aan dat bevergebieden tijdens droge jaren negen keer meer open water bevatten. Ook Brits...",
-     "score": 9,
+     "id": "1789014106021mjcfg4kfq",
+     "titel": "Zeldzame grotvleermuis gered in kantoor Omaha",
+     "teaser": "In september trof personeel van een kantoorgebouw in Omaha, Nebraska, een kleine vleermuis aan op de vloer van hun werkruimte. De Nebraska Humane Society Animal Control werd ingeschakeld en bracht het dier naar Nebraska Wildlife Rehab. Daar bleek het te gaan om een cave myotis, een soort die normaal in Mexico en het zuidwesten van de VS leeft en nog...",
+     "score": 8,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/bevers-bouwen-natuurlijke-buffers-tegen-droogte-1788972385897m07upstn7.html"
+     "url": "https://brightnews.online/articles/nl/zeldzame-grotvleermuis-gered-in-kantoor-omaha-1789014106021mjcfg4kfq.html"
     },
     {
-     "id": "17889722509535exyjuwz4",
-     "titel": "Wetenschappers Laten 165 Miljoen Jaar Oude Insectengeluiden Herleven",
-     "teaser": "Onderzoekers onder leiding van Thorin Jonsson (Universiteit Graz) hebben, samen met collega's uit Lincoln, Bristol, Beijing en Tempe, de geluiden van Jurassische krekels en sprinkhanen gereconstrueerd. Dankzij extreem goed bewaarde fossielen van negen sprinkhaansoorten uit het Midden-Jura in Binnen-Mongolië konden de wetenschappers via analyses, simulaties en AI de exacte toonhoogtes van hun paringsroepen berekenen. Het gaat om de oudste ooit...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/nl/wetenschappers-laten-165-miljoen-jaar-oude-insectengeluiden-herleven-17889722509535exyjuwz4.html"
+     "id": "1789013959514p3tlatwvk",
+     "titel": "Geheime tunnels in Maine redden nu ook elanden",
+     "teaser": "In Maine worden twee bestaande tunnels onder wegen vergroot zodat ook elanden, herten en beren er veilig doorheen kunnen. Elk jaar worden in de staat meer dan 500 elanden en 3.000 herten aangereden door voertuigen. Aroostook County, waar de stad Caribou ligt, telt de meeste aanrijdingen met elanden. Dankzij 9,3 miljoen dollar uit het federale Wildlife Crossings Pilot Program worden...",
+     "score": 8,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/geheime-tunnels-in-maine-redden-nu-ook-elanden-1789013959514p3tlatwvk.html"
     }
    ],
-   "dagoverzichten": [
-    {
-     "id": "dg-20260908-health",
-     "titel": "Gezondheidsnieuws deze week: van thuistest tot nieuwe fitnessinstructeur",
-     "categorie": "Health",
-     "dag": "2026-09-08",
-     "url": "https://brightnews.online/articles/nl/gezondheidsnieuws-deze-week-van-thuistest-tot-nieuwe-fitnessinstructeur-dg-20260908-health.html"
-    },
-    {
-     "id": "dg-20260908-lifestyle",
-     "titel": "Van aangespoelde flessen tot een halve loterijprijs: het goede nieuws van deze week",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-08",
-     "url": "https://brightnews.online/articles/nl/van-aangespoelde-flessen-tot-een-halve-loterijprijs-het-goede-nieuws-van-deze-we-dg-20260908-lifestyle.html"
-    },
-    {
-     "id": "dg-20260908-environment",
-     "titel": "Bevers, berghaasjes en zonnedaken: het milieunieuws van deze dagen",
-     "categorie": "Environment",
-     "dag": "2026-09-08",
-     "url": "https://brightnews.online/articles/nl/bevers-berghaasjes-en-zonnedaken-het-milieunieuws-van-deze-dagen-dg-20260908-environment.html"
-    },
-    {
-     "id": "dg-20260908-science",
-     "titel": "Verrassingen uit heden en verleden: van klipdas tot Vikingschat",
-     "categorie": "Science",
-     "dag": "2026-09-08",
-     "url": "https://brightnews.online/articles/nl/verrassingen-uit-heden-en-verleden-van-klipdas-tot-vikingschat-dg-20260908-science.html"
-    }
-   ]
+   "dagoverzichten": []
   },
   "en": {
    "top": [
@@ -96,60 +59,23 @@
      "url": "https://brightnews.online/articles/en/thousands-of-trees-planted-for-1-million-good-deeds-17890140425336oyar81ew.html"
     },
     {
-     "id": "1788972460780dsq3ftz6n",
-     "titel": "Three cute rock hyrax pups turn out to be elephant cousins",
-     "teaser": "Chester Zoo welcomed three rock hyrax pups on September 9: Spud, Russ and Jackie, born to parents Maris and Albert. The zoo, which has operated as a non-profit since 1934 and houses 30,000 animals of more than 500 species, reports that rock hyraxes belong to the same evolutionary group as elephants, dugongs and manatees. Zookeeper Megan Carpenter points out similarities...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/en/three-cute-rock-hyrax-pups-turn-out-to-be-elephant-cousins-1788972460780dsq3ftz6n.html"
-    },
-    {
-     "id": "1788972385897m07upstn7",
-     "titel": "Beavers Build Natural Buffers Against Drought",
-     "teaser": "On the Holnicote estate in Somerset, reintroduced beavers are creating a green, moist oasis amid an otherwise dry landscape. The animals, which became extinct in Great Britain in the 16th century, build dams and dig channels that allow water to be retained longer. A 2008 Canadian study showed that beaver areas contain nine times more open water during dry years....",
-     "score": 9,
+     "id": "1789014106021mjcfg4kfq",
+     "titel": "Rare cave bat rescued at Omaha office",
+     "teaser": "In September, staff at an office building in Omaha, Nebraska, found a small bat on the floor of their workspace. The Nebraska Humane Society Animal Control was called and brought the animal to Nebraska Wildlife Rehab. It turned out to be a cave myotis, a species that normally lives in Mexico and the southwestern United States and had never been...",
+     "score": 8,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/beavers-build-natural-buffers-against-drought-1788972385897m07upstn7.html"
+     "url": "https://brightnews.online/articles/en/rare-cave-bat-rescued-at-omaha-office-1789014106021mjcfg4kfq.html"
     },
     {
-     "id": "17889722509535exyjuwz4",
-     "titel": "Scientists Bring 165 Million Year Old Insect Sounds Back to Life",
-     "teaser": "Researchers led by Thorin Jonsson (University of Graz), together with colleagues from Lincoln, Bristol, Beijing and Tempe, have reconstructed the sounds of Jurassic crickets and grasshoppers. Thanks to exceptionally well-preserved fossils of nine grasshopper species from the Middle Jurassic in Inner Mongolia, scientists were able to calculate the exact pitches of their mating calls through analyses, simulations and AI. These...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/en/scientists-bring-165-million-year-old-insect-sounds-back-to-life-17889722509535exyjuwz4.html"
+     "id": "1789013959514p3tlatwvk",
+     "titel": "Secret tunnels in Maine now save moose too",
+     "teaser": "In Maine, two existing tunnels under roads are being enlarged so that moose, deer and bears can safely pass through. Every year, more than 500 moose and 3,000 deer are hit by vehicles in the state. Aroostook County, where the city of Caribou is located, has the most moose collisions. Thanks to 9.3 million dollars from the federal Wildlife Crossings...",
+     "score": 8,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/secret-tunnels-in-maine-now-save-moose-too-1789013959514p3tlatwvk.html"
     }
    ],
-   "dagoverzichten": [
-    {
-     "id": "dg-20260908-health",
-     "titel": "Health news this week: from home test to new fitness instructor",
-     "categorie": "Health",
-     "dag": "2026-09-08",
-     "url": "https://brightnews.online/articles/en/health-news-this-week-from-home-test-to-new-fitness-instructor-dg-20260908-health.html"
-    },
-    {
-     "id": "dg-20260908-lifestyle",
-     "titel": "From washed-up bottles to half a lottery prize: the good news of this week",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-08",
-     "url": "https://brightnews.online/articles/en/from-washed-up-bottles-to-half-a-lottery-prize-the-good-news-of-this-week-dg-20260908-lifestyle.html"
-    },
-    {
-     "id": "dg-20260908-environment",
-     "titel": "Beavers, mountain hares and solar roofs: the environmental news of these days",
-     "categorie": "Environment",
-     "dag": "2026-09-08",
-     "url": "https://brightnews.online/articles/en/beavers-mountain-hares-and-solar-roofs-the-environmental-news-of-these-days-dg-20260908-environment.html"
-    },
-    {
-     "id": "dg-20260908-science",
-     "titel": "Surprises from present and past: from rock hyrax to Viking treasure",
-     "categorie": "Science",
-     "dag": "2026-09-08",
-     "url": "https://brightnews.online/articles/en/surprises-from-present-and-past-from-rock-hyrax-to-viking-treasure-dg-20260908-science.html"
-    }
-   ]
+   "dagoverzichten": []
   },
   "de": {
    "top": [
@@ -170,60 +96,23 @@
      "url": "https://brightnews.online/articles/de/tausende-baume-gepflanzt-fur-1-million-gute-taten-17890140425336oyar81ew.html"
     },
     {
-     "id": "1788972460780dsq3ftz6n",
-     "titel": "Drei süße Klippschliefer-Babys sind Cousins des Elefanten",
-     "teaser": "Der Chester Zoo begrüßte am 9. September drei Klippschliefer-Babys: Spud, Russ und Jackie, geboren bei den Eltern Maris und Albert. Der Zoo, der seit 1934 als gemeinnützige Organisation tätig ist und 30.000 Tiere von über 500 Arten beherbergt, teilt mit, dass Klippschliefer zur gleichen evolutionären Gruppe wie Elefanten, Seekühe und Rundschwanzseekühe gehören. Tierpflegerin Megan Carpenter weist auf Gemeinsamkeiten hin, wie...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/de/drei-su-e-klippschliefer-babys-sind-cousins-des-elefanten-1788972460780dsq3ftz6n.html"
-    },
-    {
-     "id": "1788972385897m07upstn7",
-     "titel": "Biber Bauen Natürliche Puffer Gegen Trockenheit",
-     "teaser": "Auf dem Anwesen Holnicote in Somerset sorgen wiederangesiedelte Biber für eine grüne, feuchte Oase inmitten einer ansonsten trockenen Landschaft. Die Tiere, die im 16. Jahrhundert in Großbritannien ausstarben, bauen Dämme und graben Kanäle, durch die Wasser länger gespeichert wird. Eine kanadische Studie aus dem Jahr 2008 zeigte, dass Bibergebiete in trockenen Jahren neunmal mehr offenes Wasser enthielten. Auch britische Forschungen...",
-     "score": 9,
+     "id": "1789014106021mjcfg4kfq",
+     "titel": "Seltene Höhlenfledermaus in Omaha-Büro gerettet",
+     "teaser": "Im September entdeckten Mitarbeiter eines Bürogebäudes in Omaha, Nebraska, eine kleine Fledermaus auf dem Boden ihres Arbeitsbereichs. Die Nebraska Humane Society Animal Control wurde hinzugezogen und brachte das Tier zum Nebraska Wildlife Rehab. Dort stellte sich heraus, dass es sich um eine Höhlenfledermaus handelt, eine Art, die normalerweise in Mexiko und dem Südwesten der USA lebt und noch nie zuvor...",
+     "score": 8,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/biber-bauen-naturliche-puffer-gegen-trockenheit-1788972385897m07upstn7.html"
+     "url": "https://brightnews.online/articles/de/seltene-hohlenfledermaus-in-omaha-buro-gerettet-1789014106021mjcfg4kfq.html"
     },
     {
-     "id": "17889722509535exyjuwz4",
-     "titel": "Wissenschaftler Lassen 165 Millionen Jahre Alte Insektenlaut Wiederaufleben",
-     "teaser": "Forscher unter der Leitung von Thorin Jonsson (Universität Graz) haben zusammen mit Kollegen aus Lincoln, Bristol, Beijing und Tempe die Laute von Jura-Grillen und Heuschrecken rekonstruiert. Dank außergewöhnlich gut erhaltener Fossilien von neun Heuschreckenarten aus dem Mitteljura in der Inneren Mongolei konnten die Wissenschaftler durch Analysen, Simulationen und KI die genauen Tonhöhen ihrer Paarungsrufe berechnen. Es handelt sich um die...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/de/wissenschaftler-lassen-165-millionen-jahre-alte-insektenlaut-wiederaufleben-17889722509535exyjuwz4.html"
+     "id": "1789013959514p3tlatwvk",
+     "titel": "Geheime Tunnel in Maine retten nun auch Elche",
+     "teaser": "In Maine werden zwei bestehende Tunnel unter Straßen vergrößert, damit auch Elche, Hirsche und Bären sicher hindurchgehen können. Jährlich werden in dem Bundesstaat mehr als 500 Elche und 3.000 Hirsche von Fahrzeugen angefahren. Der Aroostook County, in dem die Stadt Caribou liegt, verzeichnet die meisten Kollisionen mit Elchen. Mit 9,3 Millionen Dollar aus dem föderalen Wildlife Crossings Pilot Program werden...",
+     "score": 8,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/geheime-tunnel-in-maine-retten-nun-auch-elche-1789013959514p3tlatwvk.html"
     }
    ],
-   "dagoverzichten": [
-    {
-     "id": "dg-20260908-health",
-     "titel": "Gesundheitsnachrichten diese Woche: vom Heimtest bis zur neuen Fitnesstrainerin",
-     "categorie": "Health",
-     "dag": "2026-09-08",
-     "url": "https://brightnews.online/articles/de/gesundheitsnachrichten-diese-woche-vom-heimtest-bis-zur-neuen-fitnesstrainerin-dg-20260908-health.html"
-    },
-    {
-     "id": "dg-20260908-lifestyle",
-     "titel": "Von angeschwemmten Flaschen bis zum halben Lottogewinn: die guten Nachrichten dieser Woche",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-08",
-     "url": "https://brightnews.online/articles/de/von-angeschwemmten-flaschen-bis-zum-halben-lottogewinn-die-guten-nachrichten-die-dg-20260908-lifestyle.html"
-    },
-    {
-     "id": "dg-20260908-environment",
-     "titel": "Biber, Berghasen und Solardächer: die Umweltnachrichten dieser Tage",
-     "categorie": "Environment",
-     "dag": "2026-09-08",
-     "url": "https://brightnews.online/articles/de/biber-berghasen-und-solardacher-die-umweltnachrichten-dieser-tage-dg-20260908-environment.html"
-    },
-    {
-     "id": "dg-20260908-science",
-     "titel": "Überraschungen aus Gegenwart und Vergangenheit: vom Klippschliefer bis zum Wikingerschatz",
-     "categorie": "Science",
-     "dag": "2026-09-08",
-     "url": "https://brightnews.online/articles/de/uberraschungen-aus-gegenwart-und-vergangenheit-vom-klippschliefer-bis-zum-wiking-dg-20260908-science.html"
-    }
-   ]
+   "dagoverzichten": []
   },
   "fr": {
    "top": [
@@ -244,60 +133,23 @@
      "url": "https://brightnews.online/articles/fr/des-milliers-d-arbres-plantes-pour-un-million-de-bonnes-actions-17890140425336oyar81ew.html"
     },
     {
-     "id": "1788972460780dsq3ftz6n",
-     "titel": "Trois adorables petits damans s'avèrent être les cousins de l'éléphant",
-     "teaser": "Le Chester Zoo a accueilli le 9 septembre trois petits damans : Spud, Russ et Jackie, nés de parents Maris et Albert. Le zoo, qui fonctionne comme une organisation à but non lucratif depuis 1934 et abrite 30 000 animaux de plus de 500 espèces, indique que les damans appartiennent au même groupe évolutif que les éléphants, les lamantins et...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/fr/trois-adorables-petits-damans-s-averent-etre-les-cousins-de-l-elephant-1788972460780dsq3ftz6n.html"
-    },
-    {
-     "id": "1788972385897m07upstn7",
-     "titel": "Les Castors Construisent des Tampons Naturels Contre la Sécheresse",
-     "teaser": "Sur le domaine de Holnicote dans le Somerset, des castors réintroduits créent une oasis verte et humide au milieu d'un paysage autrement aride. Ces animaux, disparus en Grande-Bretagne au 16e siècle, construisent des barrages et creusent des canaux qui retiennent l'eau plus longtemps. Une étude canadienne de 2008 a montré que les zones de castors contiennent neuf fois plus d'eau...",
-     "score": 9,
+     "id": "1789014106021mjcfg4kfq",
+     "titel": "Rare chauve-souris des cavernes sauvée dans un bureau à Omaha",
+     "teaser": "En septembre, le personnel d'un immeuble de bureaux à Omaha, au Nebraska, a découvert une petite chauve-souris sur le sol de son espace de travail. La Nebraska Humane Society Animal Control a été contactée et a transporté l'animal au Nebraska Wildlife Rehab. Il s'est avéré qu'il s'agissait d'un myotis des cavernes, une espèce qui vit normalement au Mexique et dans...",
+     "score": 8,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/les-castors-construisent-des-tampons-naturels-contre-la-secheresse-1788972385897m07upstn7.html"
+     "url": "https://brightnews.online/articles/fr/rare-chauve-souris-des-cavernes-sauvee-dans-un-bureau-a-omaha-1789014106021mjcfg4kfq.html"
     },
     {
-     "id": "17889722509535exyjuwz4",
-     "titel": "Des Scientifiques Font Revivre des Sons d'Insectes de 165 Millions d'Années",
-     "teaser": "Des chercheurs dirigés par Thorin Jonsson (Université de Graz) ont, en collaboration avec des collègues de Lincoln, Bristol, Beijing et Tempe, reconstruit les sons de grillons et de sauterelles du Jurassique. Grâce à des fossiles exceptionnellement bien conservés de neuf espèces de sauterelles du Jurassique moyen en Mongolie-Intérieure, les scientifiques ont pu calculer via des analyses, des simulations et l'IA...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/fr/des-scientifiques-font-revivre-des-sons-d-insectes-de-165-millions-d-annees-17889722509535exyjuwz4.html"
+     "id": "1789013959514p3tlatwvk",
+     "titel": "Des tunnels secrets dans le Maine sauvent aussi les élans",
+     "teaser": "Dans le Maine, deux tunnels existants sous les routes sont agrandis pour permettre aux élans, cerfs et ours de les traverser en toute sécurité. Chaque année, plus de 500 élans et 3 000 cerfs sont heurtés par des véhicules dans l'État. Le comté d'Aroostook, où se trouve la ville de Caribou, enregistre le plus grand nombre de collisions avec des...",
+     "score": 8,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/des-tunnels-secrets-dans-le-maine-sauvent-aussi-les-elans-1789013959514p3tlatwvk.html"
     }
    ],
-   "dagoverzichten": [
-    {
-     "id": "dg-20260908-health",
-     "titel": "Actualités santé cette semaine : du test à domicile au nouveau coach fitness",
-     "categorie": "Health",
-     "dag": "2026-09-08",
-     "url": "https://brightnews.online/articles/fr/actualites-sante-cette-semaine-du-test-a-domicile-au-nouveau-coach-fitness-dg-20260908-health.html"
-    },
-    {
-     "id": "dg-20260908-lifestyle",
-     "titel": "Des bouteilles échouées à un demi-prix de loterie : les bonnes nouvelles de cette semaine",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-08",
-     "url": "https://brightnews.online/articles/fr/des-bouteilles-echouees-a-un-demi-prix-de-loterie-les-bonnes-nouvelles-de-cette--dg-20260908-lifestyle.html"
-    },
-    {
-     "id": "dg-20260908-environment",
-     "titel": "Castors, pikas des montagnes et toits solaires : les nouvelles environnementales de ces jours-ci",
-     "categorie": "Environment",
-     "dag": "2026-09-08",
-     "url": "https://brightnews.online/articles/fr/castors-pikas-des-montagnes-et-toits-solaires-les-nouvelles-environnementales-de-dg-20260908-environment.html"
-    },
-    {
-     "id": "dg-20260908-science",
-     "titel": "Des surprises du présent et du passé : du daman au trésor viking",
-     "categorie": "Science",
-     "dag": "2026-09-08",
-     "url": "https://brightnews.online/articles/fr/des-surprises-du-present-et-du-passe-du-daman-au-tresor-viking-dg-20260908-science.html"
-    }
-   ]
+   "dagoverzichten": []
   },
   "es": {
    "top": [
@@ -318,60 +170,23 @@
      "url": "https://brightnews.online/articles/es/miles-de-arboles-plantados-por-1-millon-de-buenas-acciones-17890140425336oyar81ew.html"
     },
     {
-     "id": "1788972460780dsq3ftz6n",
-     "titel": "Tres adorables crías de damán resultan ser primas del elefante",
-     "teaser": "Chester Zoo recibió el 9 de septiembre tres crías de damán: Spud, Russ y Jackie, nacidas de los padres Maris y Albert. El zoológico, que opera como organización sin ánimo de lucro desde 1934 y alberga 30.000 animales de más de 500 especies, informa que los damanes pertenecen al mismo grupo evolutivo que los elefantes, los dugongos y los manatíes....",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/es/tres-adorables-crias-de-daman-resultan-ser-primas-del-elefante-1788972460780dsq3ftz6n.html"
-    },
-    {
-     "id": "1788972385897m07upstn7",
-     "titel": "Castores Construyen Amortiguadores Naturales Contra la Sequía",
-     "teaser": "En la finca Holnicote en Somerset, castores reintroducidos crean un oasis verde y húmedo en medio de un paisaje árido. Estos animales, que se extinguieron en Gran Bretaña en el siglo XVI, construyen presas y cavan canales que retienen el agua durante más tiempo. Un estudio canadiense de 2008 demostró que las áreas de castores contienen nueve veces más agua...",
-     "score": 9,
+     "id": "1789014106021mjcfg4kfq",
+     "titel": "Murciélago de cueva raro rescatado en oficina de Omaha",
+     "teaser": "En septiembre, el personal de un edificio de oficinas en Omaha, Nebraska, encontró un pequeño murciélago en el piso de su espacio de trabajo. Se contactó al Control de Animales de la Sociedad Humanitaria de Nebraska, que trasladó al animal a Nebraska Wildlife Rehab. Allí se determinó que se trataba de un myotis de cueva, una especie que normalmente vive...",
+     "score": 8,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/castores-construyen-amortiguadores-naturales-contra-la-sequia-1788972385897m07upstn7.html"
+     "url": "https://brightnews.online/articles/es/murcielago-de-cueva-raro-rescatado-en-oficina-de-omaha-1789014106021mjcfg4kfq.html"
     },
     {
-     "id": "17889722509535exyjuwz4",
-     "titel": "Científicos Reviven Sonidos de Insectos de 165 Millones de Años",
-     "teaser": "Investigadores liderados por Thorin Jonsson (Universidad de Graz) han reconstruido, junto con colegas de Lincoln, Bristol, Beijing y Tempe, los sonidos de grillos y saltamontes jurásicos. Gracias a fósiles excepcionalmente bien conservados de nueve especies de saltamontes del Jurásico Medio en Mongolia Interior, los científicos pudieron calcular mediante análisis, simulaciones e IA las frecuencias exactas de sus llamadas de apareamiento....",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/es/cientificos-reviven-sonidos-de-insectos-de-165-millones-de-anos-17889722509535exyjuwz4.html"
+     "id": "1789013959514p3tlatwvk",
+     "titel": "Túneles secretos en Maine ahora salvan también alces",
+     "teaser": "En Maine se amplían dos túneles existentes bajo carreteras para que alces, ciervos y osos puedan atravesar de forma segura. Cada año en el estado más de 500 alces y 3.000 ciervos son atropellados por vehículos. El condado de Aroostook, donde se encuentra la ciudad de Caribou, registra la mayoría de colisiones con alces. Gracias a 9,3 millones de dólares...",
+     "score": 8,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/tuneles-secretos-en-maine-ahora-salvan-tambien-alces-1789013959514p3tlatwvk.html"
     }
    ],
-   "dagoverzichten": [
-    {
-     "id": "dg-20260908-health",
-     "titel": "Noticias de salud esta semana: desde pruebas caseras hasta nuevo instructor de fitness",
-     "categorie": "Health",
-     "dag": "2026-09-08",
-     "url": "https://brightnews.online/articles/es/noticias-de-salud-esta-semana-desde-pruebas-caseras-hasta-nuevo-instructor-de-fi-dg-20260908-health.html"
-    },
-    {
-     "id": "dg-20260908-lifestyle",
-     "titel": "De botellas varadas a medio premio de lotería: las buenas noticias de esta semana",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-08",
-     "url": "https://brightnews.online/articles/es/de-botellas-varadas-a-medio-premio-de-loteria-las-buenas-noticias-de-esta-semana-dg-20260908-lifestyle.html"
-    },
-    {
-     "id": "dg-20260908-environment",
-     "titel": "Castores, picas gordas y tejados solares: las noticias ambientales de estos días",
-     "categorie": "Environment",
-     "dag": "2026-09-08",
-     "url": "https://brightnews.online/articles/es/castores-picas-gordas-y-tejados-solares-las-noticias-ambientales-de-estos-dias-dg-20260908-environment.html"
-    },
-    {
-     "id": "dg-20260908-science",
-     "titel": "Sorpresas del presente y del pasado: desde el damán hasta el tesoro vikingo",
-     "categorie": "Science",
-     "dag": "2026-09-08",
-     "url": "https://brightnews.online/articles/es/sorpresas-del-presente-y-del-pasado-desde-el-daman-hasta-el-tesoro-vikingo-dg-20260908-science.html"
-    }
-   ]
+   "dagoverzichten": []
   }
  }
 }
