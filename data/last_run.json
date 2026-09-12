@@ -1,10 +1,10 @@
 {
-  "start": "2026-09-12T04:14:08.413Z",
+  "start": "2026-09-12T15:24:51.046Z",
   "kandidaten": 293,
-  "alGezien": 241,
-  "tekstOpgehaald": 21,
+  "alGezien": 234,
+  "tekstOpgehaald": 22,
   "tekstTeKort": 0,
-  "sentimentGeweigerd": 1,
+  "sentimentGeweigerd": 0,
   "selectieAfgewezen": 0,
   "selectieHerkansing": 0,
   "aiCalls": 0,
@@ -15,7 +15,7 @@
   "opslaanMislukt": 0,
   "feedFouten": 0,
   "selectieFouten": 2,
-  "selectieOvergeslagen": 31,
+  "selectieOvergeslagen": 39,
   "langeVersies": 0,
-  "einde": "2026-09-12T04:15:28.251Z"
+  "einde": "2026-09-12T15:26:06.787Z"
 }

@@ -1,191 +1,26 @@
 {
- "gegenereerd": "2026-09-12T04:16:02.064Z",
+ "gegenereerd": "2026-09-12T15:26:41.060Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
-   "top": [
-    {
-     "id": "1789014131279gvpgswh9x",
-     "titel": "Prikvaccin beschermt mogelijk hart",
-     "teaser": "Onderzoekers hebben een nieuw mogelijk voordeel ontdekt van het gordelroosvaccin Shingrix: het lijkt gekoppeld te zijn aan een lager risico op hartfalen, hartaanval en beroerte. Het vaccin, dat oorspronkelijk is ontwikkeld om gordelroos te voorkomen, zou volgens de bron dus mogelijk ook bescherming bieden voor het hart. Verdere details over de studie zelf ontbreken in dit bericht.",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/nl/prikvaccin-beschermt-mogelijk-hart-1789014131279gvpgswh9x.html"
-    },
-    {
-     "id": "17890140425336oyar81ew",
-     "titel": "Duizenden Bomen Geplant Voor 1 Miljoen Goede Daden",
-     "teaser": "Ter herdenking van 25 jaar 9/11 wil de non-profitorganisatie 9/11 Day dit jaar één miljoen goede daden verzamelen. Een van de initiatieven is Together We Grow, een samenwerking met One Tree Planted. Op 9 september werd een 15-voet hoge moeraseik geplant in Battery Park in New York, bij het Labyrinth of Contemplation, een plek die de slachtoffers van de aanslagen...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/duizenden-bomen-geplant-voor-1-miljoen-goede-daden-17890140425336oyar81ew.html"
-    },
-    {
-     "id": "1789014106021mjcfg4kfq",
-     "titel": "Zeldzame grotvleermuis gered in kantoor Omaha",
-     "teaser": "In september trof personeel van een kantoorgebouw in Omaha, Nebraska, een kleine vleermuis aan op de vloer van hun werkruimte. De Nebraska Humane Society Animal Control werd ingeschakeld en bracht het dier naar Nebraska Wildlife Rehab. Daar bleek het te gaan om een cave myotis, een soort die normaal in Mexico en het zuidwesten van de VS leeft en nog...",
-     "score": 8,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/zeldzame-grotvleermuis-gered-in-kantoor-omaha-1789014106021mjcfg4kfq.html"
-    },
-    {
-     "id": "1789013959514p3tlatwvk",
-     "titel": "Geheime tunnels in Maine redden nu ook elanden",
-     "teaser": "In Maine worden twee bestaande tunnels onder wegen vergroot zodat ook elanden, herten en beren er veilig doorheen kunnen. Elk jaar worden in de staat meer dan 500 elanden en 3.000 herten aangereden door voertuigen. Aroostook County, waar de stad Caribou ligt, telt de meeste aanrijdingen met elanden. Dankzij 9,3 miljoen dollar uit het federale Wildlife Crossings Pilot Program worden...",
-     "score": 8,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/geheime-tunnels-in-maine-redden-nu-ook-elanden-1789013959514p3tlatwvk.html"
-    }
-   ],
+   "top": [],
    "dagoverzichten": []
   },
   "en": {
-   "top": [
-    {
-     "id": "1789014131279gvpgswh9x",
-     "titel": "Shingles vaccine may protect heart",
-     "teaser": "Researchers have discovered a new potential benefit of the shingles vaccine Shingrix: it appears to be linked to a lower risk of heart failure, heart attack and stroke. The vaccine, originally developed to prevent shingles, could thus potentially also offer protection for the heart, according to the source. Further details about the study itself are missing from this report.",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/en/shingles-vaccine-may-protect-heart-1789014131279gvpgswh9x.html"
-    },
-    {
-     "id": "17890140425336oyar81ew",
-     "titel": "Thousands of Trees Planted For 1 Million Good Deeds",
-     "teaser": "To commemorate 25 years since 9/11, the nonprofit organization 9/11 Day aims to collect one million good deeds this year. One of the initiatives is Together We Grow, a collaboration with One Tree Planted. On September 9, a 15-foot tall swamp oak was planted in Battery Park in New York City, at the Labyrinth of Contemplation, a place that honors...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/thousands-of-trees-planted-for-1-million-good-deeds-17890140425336oyar81ew.html"
-    },
-    {
-     "id": "1789014106021mjcfg4kfq",
-     "titel": "Rare cave bat rescued at Omaha office",
-     "teaser": "In September, staff at an office building in Omaha, Nebraska, found a small bat on the floor of their workspace. The Nebraska Humane Society Animal Control was called and brought the animal to Nebraska Wildlife Rehab. It turned out to be a cave myotis, a species that normally lives in Mexico and the southwestern United States and had never been...",
-     "score": 8,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/rare-cave-bat-rescued-at-omaha-office-1789014106021mjcfg4kfq.html"
-    },
-    {
-     "id": "1789013959514p3tlatwvk",
-     "titel": "Secret tunnels in Maine now save moose too",
-     "teaser": "In Maine, two existing tunnels under roads are being enlarged so that moose, deer and bears can safely pass through. Every year, more than 500 moose and 3,000 deer are hit by vehicles in the state. Aroostook County, where the city of Caribou is located, has the most moose collisions. Thanks to 9.3 million dollars from the federal Wildlife Crossings...",
-     "score": 8,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/secret-tunnels-in-maine-now-save-moose-too-1789013959514p3tlatwvk.html"
-    }
-   ],
+   "top": [],
    "dagoverzichten": []
   },
   "de": {
-   "top": [
-    {
-     "id": "1789014131279gvpgswh9x",
-     "titel": "Impfstoff schützt möglicherweise das Herz",
-     "teaser": "Forscher haben einen neuen möglichen Vorteil des Gürtelrose-Impfstoffs Shingrix entdeckt: Er scheint mit einem geringeren Risiko für Herzinsuffizienz, Herzinfarkt und Schlaganfall verbunden zu sein. Der Impfstoff, der ursprünglich zur Vorbeugung von Gürtelrose entwickelt wurde, könnte der Quelle zufolge also möglicherweise auch Schutz für das Herz bieten. Weitere Details zur Studie selbst fehlen in dieser Meldung.",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/de/impfstoff-schutzt-moglicherweise-das-herz-1789014131279gvpgswh9x.html"
-    },
-    {
-     "id": "17890140425336oyar81ew",
-     "titel": "Tausende Bäume Gepflanzt Für 1 Million Gute Taten",
-     "teaser": "Zur Erinnerung an 25 Jahre 9/11 möchte die gemeinnützige Organisation 9/11 Day in diesem Jahr eine Million gute Taten sammeln. Eine der Initiativen ist Together We Grow, eine Zusammenarbeit mit One Tree Planted. Am 9. September wurde eine 15 Fuß hohe Sumpfeiche im Battery Park in New York gepflanzt, beim Labyrinth of Contemplation, einem Ort, der die Opfer der Anschläge...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/tausende-baume-gepflanzt-fur-1-million-gute-taten-17890140425336oyar81ew.html"
-    },
-    {
-     "id": "1789014106021mjcfg4kfq",
-     "titel": "Seltene Höhlenfledermaus in Omaha-Büro gerettet",
-     "teaser": "Im September entdeckten Mitarbeiter eines Bürogebäudes in Omaha, Nebraska, eine kleine Fledermaus auf dem Boden ihres Arbeitsbereichs. Die Nebraska Humane Society Animal Control wurde hinzugezogen und brachte das Tier zum Nebraska Wildlife Rehab. Dort stellte sich heraus, dass es sich um eine Höhlenfledermaus handelt, eine Art, die normalerweise in Mexiko und dem Südwesten der USA lebt und noch nie zuvor...",
-     "score": 8,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/seltene-hohlenfledermaus-in-omaha-buro-gerettet-1789014106021mjcfg4kfq.html"
-    },
-    {
-     "id": "1789013959514p3tlatwvk",
-     "titel": "Geheime Tunnel in Maine retten nun auch Elche",
-     "teaser": "In Maine werden zwei bestehende Tunnel unter Straßen vergrößert, damit auch Elche, Hirsche und Bären sicher hindurchgehen können. Jährlich werden in dem Bundesstaat mehr als 500 Elche und 3.000 Hirsche von Fahrzeugen angefahren. Der Aroostook County, in dem die Stadt Caribou liegt, verzeichnet die meisten Kollisionen mit Elchen. Mit 9,3 Millionen Dollar aus dem föderalen Wildlife Crossings Pilot Program werden...",
-     "score": 8,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/geheime-tunnel-in-maine-retten-nun-auch-elche-1789013959514p3tlatwvk.html"
-    }
-   ],
+   "top": [],
    "dagoverzichten": []
   },
   "fr": {
-   "top": [
-    {
-     "id": "1789014131279gvpgswh9x",
-     "titel": "Le vaccin antizona protège peut-être le cœur",
-     "teaser": "Des chercheurs ont découvert un nouvel avantage possible du vaccin contre le zona Shingrix : il semble être associé à un risque plus faible d'insuffisance cardiaque, de crise cardiaque et d'accident vasculaire cérébral. Le vaccin, initialement développé pour prévenir le zona, pourrait donc selon la source offrir une protection pour le cœur. D'autres détails sur l'étude elle-même manquent dans ce...",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/fr/le-vaccin-antizona-protege-peut-etre-le-c-ur-1789014131279gvpgswh9x.html"
-    },
-    {
-     "id": "17890140425336oyar81ew",
-     "titel": "Des Milliers D'Arbres Plantés Pour Un Million De Bonnes Actions",
-     "teaser": "Pour commémorer les 25 ans du 11/9, l'organisation à but non lucratif 9/11 Day souhaite collecter un million de bonnes actions cette année. L'une des initiatives est Together We Grow, une collaboration avec One Tree Planted. Le 9 septembre, un chêne des marais de 15 pieds de haut a été planté à Battery Park à New York, près du Labyrinth...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/des-milliers-d-arbres-plantes-pour-un-million-de-bonnes-actions-17890140425336oyar81ew.html"
-    },
-    {
-     "id": "1789014106021mjcfg4kfq",
-     "titel": "Rare chauve-souris des cavernes sauvée dans un bureau à Omaha",
-     "teaser": "En septembre, le personnel d'un immeuble de bureaux à Omaha, au Nebraska, a découvert une petite chauve-souris sur le sol de son espace de travail. La Nebraska Humane Society Animal Control a été contactée et a transporté l'animal au Nebraska Wildlife Rehab. Il s'est avéré qu'il s'agissait d'un myotis des cavernes, une espèce qui vit normalement au Mexique et dans...",
-     "score": 8,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/rare-chauve-souris-des-cavernes-sauvee-dans-un-bureau-a-omaha-1789014106021mjcfg4kfq.html"
-    },
-    {
-     "id": "1789013959514p3tlatwvk",
-     "titel": "Des tunnels secrets dans le Maine sauvent aussi les élans",
-     "teaser": "Dans le Maine, deux tunnels existants sous les routes sont agrandis pour permettre aux élans, cerfs et ours de les traverser en toute sécurité. Chaque année, plus de 500 élans et 3 000 cerfs sont heurtés par des véhicules dans l'État. Le comté d'Aroostook, où se trouve la ville de Caribou, enregistre le plus grand nombre de collisions avec des...",
-     "score": 8,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/des-tunnels-secrets-dans-le-maine-sauvent-aussi-les-elans-1789013959514p3tlatwvk.html"
-    }
-   ],
+   "top": [],
    "dagoverzichten": []
   },
   "es": {
-   "top": [
-    {
-     "id": "1789014131279gvpgswh9x",
-     "titel": "Vacuna inyectable protege posiblemente el corazón",
-     "teaser": "Investigadores han descubierto una nueva ventaja posible de la vacuna contra el herpes zóster Shingrix: parece estar vinculada a un menor riesgo de insuficiencia cardíaca, infarto de miocardio y accidente cerebrovascular. La vacuna, que fue desarrollada originalmente para prevenir el herpes zóster, podría ofrecer, según la fuente, posible protección también para el corazón. En este mensaje faltan más detalles sobre...",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/es/vacuna-inyectable-protege-posiblemente-el-corazon-1789014131279gvpgswh9x.html"
-    },
-    {
-     "id": "17890140425336oyar81ew",
-     "titel": "Miles de Árboles Plantados Por 1 Millón de Buenas Acciones",
-     "teaser": "Para conmemorar 25 años del 9/11, la organización sin fines de lucro 9/11 Day busca reunir este año un millón de buenas acciones. Una de las iniciativas es Together We Grow, una colaboración con One Tree Planted. El 9 de septiembre se plantó un roble de agua de 15 pies de altura en Battery Park en Nueva York, junto al...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/miles-de-arboles-plantados-por-1-millon-de-buenas-acciones-17890140425336oyar81ew.html"
-    },
-    {
-     "id": "1789014106021mjcfg4kfq",
-     "titel": "Murciélago de cueva raro rescatado en oficina de Omaha",
-     "teaser": "En septiembre, el personal de un edificio de oficinas en Omaha, Nebraska, encontró un pequeño murciélago en el piso de su espacio de trabajo. Se contactó al Control de Animales de la Sociedad Humanitaria de Nebraska, que trasladó al animal a Nebraska Wildlife Rehab. Allí se determinó que se trataba de un myotis de cueva, una especie que normalmente vive...",
-     "score": 8,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/murcielago-de-cueva-raro-rescatado-en-oficina-de-omaha-1789014106021mjcfg4kfq.html"
-    },
-    {
-     "id": "1789013959514p3tlatwvk",
-     "titel": "Túneles secretos en Maine ahora salvan también alces",
-     "teaser": "En Maine se amplían dos túneles existentes bajo carreteras para que alces, ciervos y osos puedan atravesar de forma segura. Cada año en el estado más de 500 alces y 3.000 ciervos son atropellados por vehículos. El condado de Aroostook, donde se encuentra la ciudad de Caribou, registra la mayoría de colisiones con alces. Gracias a 9,3 millones de dólares...",
-     "score": 8,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/tuneles-secretos-en-maine-ahora-salvan-tambien-alces-1789013959514p3tlatwvk.html"
-    }
-   ],
+   "top": [],
    "dagoverzichten": []
   }
  }
