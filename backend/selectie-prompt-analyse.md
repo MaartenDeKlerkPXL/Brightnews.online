@@ -455,3 +455,43 @@ de vorige ronde al meldde, dus noteer ik hier kort de huidige stand.
 Geen inhoudelijke bevinding over bright-waardigheid, opnieuw, maar wel een
 update die voor Erik waarschijnlijk nog steeds de urgentste melding in dit
 document is.
+
+### 2026-09-13, 02:15 Europe/Amsterdam
+
+Sinds de vorige ronde (die liep tot en met 2026-09-10 04:22:12) zijn er
+opnieuw geen nieuwe artikelen in `data/news_nl.json` bijgekomen: nog steeds
+150 artikelen in de feed, waarvan 141 geen digest, en de laatste
+publicatiedatum staat nog altijd op 2026-09-10 04:22:12. Er viel dus niets te
+beoordelen vannacht. Vandaag is het zondag, geen maandag, dus ook geen
+aanleiding voor een volledige controle van de hele feed.
+
+#### Vervolg op de vorige twee meldingen: de AI-pijplijn staat er nu voor de derde nacht op rij zo voor
+
+- De geplande Actions-run van 2026-09-12 15:24 UTC (run #257, "🚀 BrightNews:
+  Automatische Update") is normaal afgerond, maar heeft opnieuw nul artikelen
+  geaccepteerd: `data/last_run.json` toont `"aiCalls": 0`, `"geaccepteerd": 0`
+  tegenover 293 kandidaten en 22 opgehaalde teksten. De workflowlogs van die
+  run laten exact hetzelfde beeld zien als de twee vorige meldingen: elke
+  Anthropic-aanroep krijgt `"Your credit balance is too low to access the
+  Anthropic API"` (400), en de val-terug naar Mistral loopt vast op `"Rate
+  limit exceeded"` (429). Dit keer gezien bij de digest-stap
+  (`backend/digest.js`), maar het patroon in de eerdere meldingen laat zien
+  dat het bij alle AI-aanroepen optreedt.
+- Nieuw ten opzichte van de vorige twee meldingen: de geplande run van
+  2026-09-13 00:00 UTC ontbreekt volledig in de workflowgeschiedenis. Het is
+  nu 2026-09-13 02:15 Europe/Amsterdam (00:15 UTC), dus die run had al
+  minstens een kwartier geleden moeten starten. Dit is dezelfde situatie als
+  op 2026-09-11 04:08, toen de 00:00 UTC-run van die nacht ook helemaal niet
+  gestart bleek te zijn — het lijkt er dus niet op dat de workflow zelf
+  structureel stabiel op schema draait, ook los van de AI-storing.
+- Samengevat: het is nu de derde nacht op rij zonder nieuwe artikelen, en de
+  onderliggende oorzaak (lege Anthropic-kredietbalans, Mistral-terugval
+  overbelast) is in drie opeenvolgende metingen ongewijzigd gebleven. Dit is
+  geen tijdelijke hapering meer maar een aanhoudende storing die alleen met
+  ingrijpen van buitenaf (kredietbalans aanvullen, of de Mistral-terugval
+  anders inrichten) oplost — dat kan ik als controleur niet zelf doen.
+
+Geen inhoudelijke bevinding over bright-waardigheid, opnieuw, maar wel een
+update die voor Erik waarschijnlijk nog steeds de urgentste melding in dit
+document is, en die met het uitblijven van de 00:00 UTC-run vannacht eerder
+verergert dan verbetert.

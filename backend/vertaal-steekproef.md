@@ -170,3 +170,13 @@ met 2026-09-10 04:22:12) zijn er nog steeds geen artikelen aan
 `data/news_nl.json` toegevoegd. Zie de toelichting van vannacht in
 `backend/selectie-prompt-analyse.md` — de storing in de AI-pijplijn loopt nu
 over twee etmalen door. Deze steekproef is dus opnieuw overgeslagen.
+
+### 2026-09-13, Spaans
+
+Vandaag is het zondag, dus zou Spaans aan de beurt zijn geweest. Ook nu was
+er geen nieuw artikel om te controleren: sinds de vorige beoordeling (tot en
+met 2026-09-10 04:22:12) zijn er nog steeds geen artikelen aan
+`data/news_nl.json` toegevoegd. Zie de toelichting van vannacht in
+`backend/selectie-prompt-analyse.md` — de storing in de AI-pijplijn duurt nu
+drie etmalen en de geplande run van vannacht 00:00 UTC is zelfs helemaal niet
+gestart. Deze steekproef is dus voor de derde keer op rij overgeslagen.
