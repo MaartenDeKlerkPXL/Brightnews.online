@@ -105,3 +105,33 @@
         max-width: 100%;
     }
 }
+/* Stripe Climate-blok (2026-09-05). Zelfde ritme als de andere
+   .vrolijk-sectie-blokken, met een blad-icoon in de bestaande cirkelstijl. */
+.climate-blok {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.climate-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 24px;
+    border-radius: 50%;
+    background: var(--white);
+    box-shadow: var(--shadow-md);
+    color: var(--bright-green);
+}
+
+.climate-link {
+    margin-top: 22px;
+}
+
+.climate-link a {
+    /* Geen groene tekst op licht (fase F-besluit) — donker met onderstreping. */
+    color: var(--dark-text);
+    text-decoration: underline;
+    font-weight: 600;
+}
