@@ -495,3 +495,612 @@ Geen inhoudelijke bevinding over bright-waardigheid, opnieuw, maar wel een
 update die voor Erik waarschijnlijk nog steeds de urgentste melding in dit
 document is, en die met het uitblijven van de 00:00 UTC-run vannacht eerder
 verergert dan verbetert.
+
+
+### 2026-09-14, 04:16 Europe/Amsterdam
+
+Vandaag is het maandag, dus is conform de opdracht de **volledige feed**
+beoordeeld in plaats van alleen het nieuwe deel. Sinds de vorige ronde (die
+liep tot en met 2026-09-10 04:22:12) zijn er nog steeds geen nieuwe artikelen
+aan `data/news_nl.json` toegevoegd — zie de toelichting onderaan dit blok.
+
+Beoordeeld: 141 artikelen (de volledige feed, exclusief de 9 dagoverzichten),
+gepubliceerd tussen 2026-09-02 04:12 en 2026-09-10 04:22. Niet bright-waardig:
+43. Twijfel: 12. Dit is de eerste volledige controle sinds deze nachtelijke
+beoordeling op 2026-09-10 is gestart; er is dus nog geen eerdere volledige
+ronde om tegen af te zetten.
+
+#### HP start accelerator in Azië voor AI-tijdperk
+- **Gepubliceerd:** 2026-09-02 04:12 · Tech · Fortune.com
+- **Waar het over gaat:** HP lanceert Garage 2.0, een startup-accelerator in
+  Singapore, om zijn bedrijfsactiviteiten nieuw leven in te blazen voor het
+  AI-tijdperk, inclusief nieuwe AI-pc's en een geluidsinstallatie op een
+  luchthaven.
+- **Waarom dit niet goed genoeg is:** Bedrijfsnieuws van een techbedrijf over
+  zijn eigen strategie en productlancering, zonder bredere maatschappelijke
+  betekenis. Staat in de afwijslijst onder "bedrijfs- of beursnieuws".
+- **Link:** https://fortune.com/2026/09/01/hp-asia-ai-pcs-wubble-ai-changi-airport-michael-boyle/
+
+#### Miljardair koopt villa zonder bezichtiging
+- **Gepubliceerd:** 2026-09-02 04:12 · Finance · Fortune.com
+- **Waar het over gaat:** Mark Cuban kocht een villa van 25 miljoen dollar
+  zonder ze ooit gezien te hebben, voor de helft van de vraagprijs, omdat het
+  volgens hem "de beste gegarandeerde return on investment" biedt.
+- **Waarom dit niet goed genoeg is:** Een miljardair die goedkoop onroerend
+  goed scoort is geen bright-verhaal voor de gewone lezer — geen hulp, geen
+  herstel, geen maatschappelijke kern, uitsluitend een demonstratie van
+  vermogen.
+- **Link:** https://fortune.com/article/mark-cuban-bought-25-million-mansion-sight-unseen-discount-guaranteed-return-on-investment-billionaire-real-estate-strategy/
+
+#### Elektrisch vliegend schip maakt eerste vlucht
+- **Gepubliceerd:** 2026-09-03 09:15 · Tech · Newatlas.com
+- **Waar het over gaat:** De Regent Craft Viceroy, een elektrisch aangedreven
+  "zeeglijder" die drijvend casco, wing-in-ground-effect en hydrofoils
+  combineert, heeft zijn eerste bemande vlucht gemaakt.
+- **Waarom dit niet goed genoeg is:** Een fabrikant die de eerste testvlucht
+  van zijn nieuwe voertuig meldt — precies het type voertuignieuws dat de
+  afwijslijst noemt, "hoe hip of vernuftig ook".
+- **Link:** https://newatlas.com/aircraft/regent-craft-viceroy-wig-hydrofoil-aircraft-maiden-flight/
+
+#### Groene camper met slimme technologie
+- **Gepubliceerd:** 2026-09-03 09:16 · Environment · Newatlas.com
+- **Waar het over gaat:** Dethleffs presenteert de C.Core, een camperconcept
+  met biomimicry, zonnepanelen en gesloten materiaalkringloop.
+- **Waarom dit niet goed genoeg is:** Vrijwel letterlijk het ijkvoorbeeld uit
+  de selectieprompt zelf ("Kia werkt aan de volgende generatie coole
+  campers"), nu van een ander merk: een camperconcept is productnieuws, geen
+  maatschappelijk verhaal.
+- **Link:** https://newatlas.com/rvs-motorhomes/dethleffs-c-core-eco-camper/
+
+#### Niger herstelt 5 miljoen hectare zonder bomen te planten
+- **Gepubliceerd:** 2026-09-03 16:17 · Environment · OptimistDaily.com
+- **Waar het over gaat:** Niger herstelde vijf miljoen hectare land zonder
+  bomen te planten. Het artikel voegt daarna nog tien andere, losstaande
+  positieve ontwikkelingen toe: een vaccinatieprogramma voor pinguïns, een
+  Frans telemarketingverbod en een opioïdenschikking in Baltimore.
+- **Waarom dit niet goed genoeg is:** De URL zelf verraadt het:
+  "podcast-transcript…plus-nine-other-things-going-right". Dit is een
+  podcasttranscript met tien niet-verwante onderwerpen — een verzameleditie.
+- **Link:** https://www.optimistdaily.com/2026/08/podcast-transcript-august-28th-2026-niger-restored-5-million-hectares-without-planting-a-single-tree-plus-nine-other-things-going-right/
+
+#### Zonnestroom wint van kolen in China
+- **Gepubliceerd:** 2026-09-03 16:17 · Science · Squirrel-News.net
+- **Waar het over gaat:** Drie losse items achter elkaar: steun voor
+  Amerikanen die van de MAGA-beweging afstappen, zonne-energie die
+  steenkool voorbijstreeft in China, en een AI-tool die hartziekten
+  herkent.
+- **Waarom dit niet goed genoeg is:** Verzameleditie van drie niet-verwante
+  onderwerpen, waarvan er één (Amerikaanse binnenlandse politiek) bovendien
+  politiek gekleurd is.
+- **Link:** https://squirrel-news.net/news/exit-ramp-from-trumpism-solar-overtakes-coal-in-china-ai-spots-heart-disease-in-seconds/
+
+#### Libanon stopt met doodstraf, tijgers keren terug
+- **Gepubliceerd:** 2026-09-03 16:18 · Science · Squirrel-News.net
+- **Waar het over gaat:** Drie losse items: Libanon schaft de doodstraf af,
+  een tijger keert terug in Kazachstan na 70 jaar, en het eerste mRNA-vaccin
+  tegen huidkanker wordt geïntroduceerd.
+- **Waarom dit niet goed genoeg is:** Verzameleditie van drie volledig
+  niet-verwante onderwerpen in één artikel.
+- **Link:** https://squirrel-news.net/news/lebanon-abolishes-death-penalty-first-mrna-vaccine-against-skin-cancer-tigers-return-to-kazakhstan/
+
+#### Zonne-energie en houten torens: duurzame oplossingen
+- **Gepubliceerd:** 2026-09-03 16:18 · Environment · Squirrel-News.net
+- **Waar het over gaat:** Drie losse items: zonneprojecten in Koerdische
+  dorpen, houten "flat-pack" wolkenkrabbers, en een kaartspel in Kenia over
+  mannelijkheidsnormen.
+- **Waarom dit niet goed genoeg is:** Verzameleditie van drie niet-verwante
+  onderwerpen.
+- **Link:** https://squirrel-news.net/news/iraqs-solar-villages-flat-pack-skyscrapers-the-card-game-challenging-masculinity/
+
+#### Papa’s tijd, minder stress
+- **Gepubliceerd:** 2026-09-03 16:18 · Health · Squirrel-News.net
+- **Waar het over gaat:** Drie losse items: langer vaderschapsverlof en
+  minder depressie, snellere longgroei door Londens schone-luchtzone, en een
+  vaccinatiecampagne voor 5.000 pinguïns.
+- **Waarom dit niet goed genoeg is:** Verzameleditie van drie niet-verwante
+  onderwerpen.
+- **Link:** https://squirrel-news.net/news/paternity-leave-improves-mental-health-clean-air-zones-see-faster-lung-growth-vaccinating-5000-tiny-penguins/
+
+#### mRNA-kankervaccin bereikt doorbraak
+- **Gepubliceerd:** 2026-09-03 16:18 · Health · Squirrel-News.net
+- **Waar het over gaat:** Drie losse items: een gepersonaliseerd
+  mRNA-kankervaccin met veelbelovende resultaten, festivals die hun terrein
+  herstellen, en een mobiele bibliotheek in Syrië.
+- **Waarom dit niet goed genoeg is:** Verzameleditie van drie niet-verwante
+  onderwerpen.
+- **Link:** https://squirrel-news.net/news/first-mrna-cancer-vaccine-succeeds-in-final-trials-festivals-restoring-land-mobile-library-in-rural-syria/
+
+#### Mobiele klinieken en natuurbibliotheek brengen zorg en avontuur
+- **Gepubliceerd:** 2026-09-03 16:18 · Health · Squirrel-News.net
+- **Waar het over gaat:** Drie losse items: mobiele klinieken voor
+  baarmoederhalskankerscreening in Engeland, rondtrekkende artsen in
+  Frankrijk, en een nieuwe "natuurbibliotheek" in Colorado.
+- **Waarom dit niet goed genoeg is:** Verzameleditie van drie niet-verwante
+  onderwerpen, al zijn de eerste twee wel verwant aan elkaar.
+- **Link:** https://squirrel-news.net/news/cervical-screening-bus-tackling-frances-medical-deserts-us-opens-first-nature-library/
+
+#### Amazone beschermd, steden koel, fietsen divers
+- **Gepubliceerd:** 2026-09-03 16:19 · Environment · Squirrel-News.net
+- **Waar het over gaat:** Drie losse items: minder ontbossing in de
+  Amazone, regenwater opvangen om steden te koelen, en meer vrouwen op de
+  fiets in Bogotá.
+- **Waarom dit niet goed genoeg is:** Verzameleditie van drie niet-verwante
+  onderwerpen — zelfs de titel zelf somt ze los op.
+- **Link:** https://squirrel-news.net/news/amazon-deforestation-hits-13-year-low-cooling-cities-with-rooftop-rainwater-breaking-cycling-gender-barriers/
+
+#### Juli-hoogtepunten: water, transport en wandelen
+- **Gepubliceerd:** 2026-09-03 16:19 · Environment · Squirrel-News.net
+- **Waar het over gaat:** Maandoverzicht van Squirrel-News met de "beste"
+  ontwikkelingen van juli: drinkwater in India, gratis vervoer in Porto en
+  een wandelbeloning van de NHS.
+- **Waarom dit niet goed genoeg is:** Expliciet maandoverzicht van andermans
+  hoogtepunten — dezelfde bevinding als in de analyse hierboven, nu opnieuw
+  aangetroffen in dezelfde volledige feed.
+- **Link:** https://squirrel-news.net/news/best-of-july-drinking-water-for-millions-of-households-free-public-transport-in-porto-rewards-for-30-minutes-walks/
+
+#### Bevers, chemicaliën en klimaatdata in actie
+- **Gepubliceerd:** 2026-09-03 16:19 · Environment · Squirrel-News.net
+- **Waar het over gaat:** Drie losse items: bevers die natuurbranden
+  vertragen, een Zweeds verbod op "forever chemicals", en een nieuw open
+  klimaatdataplatform.
+- **Waarom dit niet goed genoeg is:** Verzameleditie van drie niet-verwante
+  onderwerpen.
+- **Link:** https://squirrel-news.net/news/beavers-tackling-wildfires-sweden-to-ban-forever-chemicals-researchers-secure-access-to-climate-knowledge/
+
+#### Natuurbehoud wint in Centraal-Amerika en Kazachstan
+- **Gepubliceerd:** 2026-09-03 16:20 · Environment · Squirrel-News.net
+- **Waar het over gaat:** Drie losse items: biosfeerreservaten in
+  Centraal-Amerika, een groeiende saigapopulatie in Kazachstan, en
+  3D-geprinte gewrichtsimplantaten uit Tsjechië.
+- **Waarom dit niet goed genoeg is:** Verzameleditie van drie niet-verwante
+  onderwerpen.
+- **Link:** https://squirrel-news.net/news/green-islands-avoiding-deforestation-in-central-america-saiga-population-grows-by-18000-3d-printed-joint-implants/
+
+#### Water en koelte voor miljoenen
+- **Gepubliceerd:** 2026-09-03 16:20 · Environment · Squirrel-News.net
+- **Waar het over gaat:** Drie losse items: drinkwatertoegang in India,
+  een prijsplafond voor bussen in Engeland, en gratis toegang tot
+  bioscopen met airco in Rome.
+- **Waarom dit niet goed genoeg is:** Verzameleditie van drie niet-verwante
+  onderwerpen.
+- **Link:** https://squirrel-news.net/news/drinking-water-for-more-than-100-million-households-england-caps-bus-fares-free-cinema-to-beat-the-heat/
+
+#### Zonnewende in Europa en steun voor moeders
+- **Gepubliceerd:** 2026-09-03 16:20 · Environment · Squirrel-News.net
+- **Waar het over gaat:** Drie losse items: een record aandeel zonne-energie
+  in de EU, onvoorwaardelijk geld voor zwarte alleenstaande moeders in
+  Mississippi, en labels tegen AI-muziek in de muziekindustrie.
+- **Waarom dit niet goed genoeg is:** Verzameleditie van drie niet-verwante
+  onderwerpen.
+- **Link:** https://squirrel-news.net/news/solar-generates-25-of-eu-power-basic-income-for-black-single-mothers-how-the-music-industry-is-rejecting-ai/
+
+#### Porto’s gratis vervoer en Cubaanse zonne-tricars
+- **Gepubliceerd:** 2026-09-03 16:20 · Lifestyle · Squirrel-News.net
+- **Waar het over gaat:** Drie losse items: gratis openbaar vervoer in
+  Porto, een Ebola-behandelproef in Congo, en zonne-aangedreven driewielers
+  op Cuba.
+- **Waarom dit niet goed genoeg is:** Verzameleditie van drie niet-verwante
+  onderwerpen.
+- **Link:** https://squirrel-news.net/news/porto-introduces-free-public-transport-landmark-ebola-treatment-trial-in-drc-cubas-solar-powered-tricycles/
+
+#### Speelse oplossingen voor kinderopvang en gezondheid
+- **Gepubliceerd:** 2026-09-03 16:21 · Lifestyle · Squirrel-News.net
+- **Waar het over gaat:** Drie losse items: een verticale speelplek in
+  München, onderzoek naar kankertherapie, en geld voor schone kooktechniek
+  in Afrika.
+- **Waarom dit niet goed genoeg is:** Verzameleditie van drie niet-verwante
+  onderwerpen.
+- **Link:** https://squirrel-news.net/news/vertical-playground-brain-and-prostate-cancer-breakthroughs-africas-clean-cooking-boost/
+
+#### NHS looft dagelijkse wandelaars met kortingen
+- **Gepubliceerd:** 2026-09-03 16:21 · Health · Squirrel-News.net
+- **Waar het over gaat:** Twee losse items: een NHS-kortingsprogramma voor
+  wandelaars, en dalende luchtvervuiling in Europa (plus een zijlijn over
+  klimaatcontent op OnlyFans).
+- **Waarom dit niet goed genoeg is:** Verzameleditie van niet-verwante
+  onderwerpen, ook al is het er hier "maar" twee à drie.
+- **Link:** https://squirrel-news.net/news/nhs-to-reward-people-who-walk-30-minutes-a-day-europes-air-quality-improves-onlyfans-climate-campaign/
+
+#### Groene economie groeit naar $10 biljoen
+- **Gepubliceerd:** 2026-09-03 16:21 · Environment · Squirrel-News.net
+- **Waar het over gaat:** Drie losse items: de marktwaarde van de groene
+  economie, energiezuinige nieuwbouw in Vermont, en elektrische tuk-tuks in
+  Aziatische steden.
+- **Waarom dit niet goed genoeg is:** De titel suggereert één samenhangend
+  verhaal over "de groene economie", maar de tekst bundelt drie losse
+  onderwerpen — verzameleditie.
+- **Link:** https://squirrel-news.net/news/green-economy-tops-10-trillion-in-market-value-new-homes-cut-energy-use-in-half-indias-electric-tuk-tuks/
+
+#### Juni-hoogtepunten: Arctisch ijs, mangroves en koele daken
+- **Gepubliceerd:** 2026-09-03 16:21 · Environment · Squirrel-News.net
+- **Waar het over gaat:** Maandoverzicht: "dit zijn de beste en meest
+  constructieve verhalen van de afgelopen maand", met Arctisch ijs,
+  mangroveherstel en koele daken in Afrika.
+- **Waarom dit niet goed genoeg is:** Expliciet maandoverzicht van andermans
+  hoogtepunten, net als het Juli-exemplaar hierboven.
+- **Link:** https://squirrel-news.net/best-of-june-refreezing-the-arctic-worlds-mangrove-forests-are-healing-white-roofs-cool-african-homes/
+
+#### Gemeenschappen zetten zich gezamenlijk in tegen Big Tech
+- **Gepubliceerd:** 2026-09-03 16:25 · Environment · YesMagazine.org
+- **Waar het over gaat:** Essay van YES! Media over gemeenschappen die zich
+  collectief verzetten tegen de groei van datacenters, vanwege lucht-,
+  water- en geluidsoverlast.
+- **Waarom dit niet goed genoeg is:** Alleen goed nieuws als je datacenters
+  en Big Tech al afwijst — dezelfde redenering als bij de Texaanse
+  Flock-camera's en de Boulder City-rechter hieronder: de kern is verzet
+  tegen iets, niet redding of herstel.
+- **Link:** https://www.yesmagazine.org/issues/2026/08/13/theres-no-opting-out-of-these-crises-liberation-is-collective
+
+#### Donaties helpen duurzame verandering
+- **Gepubliceerd:** 2026-09-03 16:25 · Environment · YesMagazine.org
+- **Waar het over gaat:** YES! Media meldt dat het tijdschrift 38 kleine
+  maandelijkse donaties ontving om zijn nieuwsbrief voort te zetten, met
+  algemene bespiegelingen over klimaatimpact.
+- **Waarom dit niet goed genoeg is:** Dit is nieuws over het medium zelf
+  (fondsenwerving), geen bright-verhaal voor de lezer — bedrijfs-/
+  organisatienieuws zonder concreet verhaal.
+- **Link:** https://www.yesmagazine.org/issues/2026/07/17/connecting-our-individual-actions-with-systemic-change
+
+#### Strijd voor water en land
+- **Gepubliceerd:** 2026-09-03 16:25 · Environment · YesMagazine.org
+- **Waar het over gaat:** Terugblik, tien jaar na dato, op het verzet van
+  inheemse activisten tegen de Dakota Access-oliepijpleiding bij Standing
+  Rock.
+- **Waarom dit niet goed genoeg is:** Politiek gekleurd onderwerp — een
+  protestbeweging tegen een pijpleiding — en de kern is een confrontatie,
+  geen redding of herstel.
+- **Link:** https://www.yesmagazine.org/issues/2026/05/14/how-standing-rock-changed-us-all
+
+#### YES! Magazine leeft voort via nieuw initiatief
+- **Gepubliceerd:** 2026-09-03 16:26 · Lifestyle · YesMagazine.org
+- **Waar het over gaat:** YES! Magazine, dat eerder dit jaar stopte met
+  reguliere publicatie, meldt hoe het platform voortleeft via een nieuw
+  initiatief.
+- **Waarom dit niet goed genoeg is:** Nieuws over het medium zelf, niet over
+  de wereld — dit hoort bij "bedrijfs- of beursnieuws zonder bredere
+  maatschappelijke betekenis", nu voor een uitgever in plaats van een bedrijf.
+- **Link:** https://www.yesmagazine.org/issues/2025/09/15/a-repository-of-hope-amid-an-authoritarian-moment
+
+#### Superieure hartsoftware en meer goed nieuws
+- **Gepubliceerd:** 2026-09-05 21:52 · Health · Positive.News
+- **Waar het over gaat:** Weekoverzicht van Positive News met meerdere
+  losse doorbraken in de gezondheidszorg, waaronder hartsoftware van
+  Imperial College London.
+- **Waarom dit niet goed genoeg is:** De URL is letterlijk
+  "good-news-stories-from-week-36-of-2026" — een weekoverzicht van een
+  andere site, exact de categorie die de selectieprompt afwijst.
+- **Link:** https://www.positive.news/society/good-news-stories-from-week-36-of-2026/
+
+#### AI-muziek geweerd uit Australische hitlijsten
+- **Gepubliceerd:** 2026-09-05 21:58 · Science · OptimistDaily.com
+- **Waar het over gaat:** Podcasttranscript van Optimist Daily van 4
+  september met meerdere niet-verwante nieuwsitems: AI-muziek geweerd uit
+  Australië, de lancering van de Roman-telescoop, en een afbreekbare
+  ballon.
+- **Waarom dit niet goed genoeg is:** Podcasttranscript met meerdere
+  niet-verwante onderwerpen — verzameleditie.
+- **Link:** https://www.optimistdaily.com/2026/09/podcast-transcript-september-4th-2026-ai-music-banned-from-australias-charts-roman-telescope-launches-a-biodegradable-balloon-and-much-more/
+
+#### Goed Nieuws: Bakkers, Zon En Een Schoolredding
+- **Gepubliceerd:** 2026-09-05 22:01 · Environment · GoodGoodGood.co
+- **Waar het over gaat:** Weekoverzicht van GoodGoodGood met onder meer
+  steun aan zwarte ondernemers door Ms. Rachel, cijfers over schone energie
+  in India, en een zijlijn over "vrede in Palestina".
+- **Waarom dit niet goed genoeg is:** De titel citeert vrijwel letterlijk
+  het ijkvoorbeeld uit de afwijslijst ("good news this week"), en de tekst
+  bundelt bovendien niet-verwante onderwerpen, waaronder een politiek
+  onderwerp.
+- **Link:** https://www.goodgoodgood.co/articles/good-news-this-week-september-5-2026
+
+#### Mangroves als Symbool van Verzet in Puerto Rico
+- **Gepubliceerd:** 2026-09-05 22:05 · Environment · YesMagazine.org
+- **Waar het over gaat:** Essay dat mangrovebossen gebruikt als symbool
+  voor sociale rechtvaardigheidsbewegingen in Puerto Rico, met kolonialisme
+  als terugkerend thema.
+- **Waarom dit niet goed genoeg is:** Politiek/opiniërend essay zonder
+  concreet bright-verhaal — leunt op "politiek gekleurde onderwerpen".
+- **Link:** https://www.yesmagazine.org/environmental-justice/2025/05/15/murmurations-puerto-rico-mangroves
+
+#### Drijvend Platform Levert Stroom En Water
+- **Gepubliceerd:** 2026-09-05 22:07 · Tech · Newatlas.com
+- **Waar het over gaat:** Twee bedrijven onthullen een conceptontwerp voor
+  een drijvend platform dat stroom en water moet leveren.
+- **Waarom dit niet goed genoeg is:** Bedrijfsaankondiging van een nog
+  ongebouwd concept — geen gerealiseerd effect, puur productpromotie.
+- **Link:** https://newatlas.com/energy/kraaken-ship-data-center-water-electricity/
+
+#### Kia teasert grotere camper-broer van PV5
+- **Gepubliceerd:** 2026-09-05 22:08 · Tech · Newatlas.com
+- **Waar het over gaat:** Kia onthult over minder dan twee weken de
+  productieversie van de PV7 tijdens de IAA Transportation-show in
+  Hannover.
+- **Waarom dit niet goed genoeg is:** Al eerder gemeld door deze controle:
+  het letterlijke ijkvoorbeeld uit de afwijslijst, en het staat nog steeds
+  live op de site.
+- **Link:** https://newatlas.com/campervans/kia-teases-pv7-debut/
+
+#### Budgetscooter met luxe features van Ather
+- **Gepubliceerd:** 2026-09-05 22:09 · Tech · Newatlas.com
+- **Waar het over gaat:** Ather Energy brengt de Konarc uit, een
+  budgetscooter met functies die normaal bij luxe voertuigen horen.
+- **Waarom dit niet goed genoeg is:** Al eerder gemeld door deze controle:
+  reclame voor een nieuw voertuig, geen maatschappelijke kern.
+- **Link:** https://newatlas.com/motorcycles/ather-budget-konarc-scooter/
+
+#### Managers en coaching: worstelen met de aanpak
+- **Gepubliceerd:** 2026-09-05 22:21 · Lifestyle · OptimistDaily.com
+- **Waar het over gaat:** Onderzoek naar waarom managers moeite hebben met
+  het coachen van medewerkers.
+- **Waarom dit niet goed genoeg is:** De bron die is opgehaald bevat
+  nauwelijks inhoud ("verdere details… ontbreken in de bron"); te weinig
+  om zeker te zijn wat het artikel werkelijk meldt. Dit is bovendien
+  bedrijfs-/managementadvies, geen bright-verhaal.
+- **Link:** https://www.optimistdaily.com/2026/09/why-managers-struggle-with-coaching-and-what-the-research-says-to-do-instead/
+
+#### Kiezen Van Een Vruchtbaarheidskliniek
+- **Gepubliceerd:** 2026-09-05 22:22 · Health · OptimistDaily.com
+- **Waar het over gaat:** Zou moeten uitleggen hoe je een
+  vruchtbaarheidskliniek kiest.
+- **Waarom dit niet goed genoeg is:** De opgehaalde bron bevat vrijwel
+  uitsluitend paginanavigatie in plaats van inhoud — precies het geval
+  "titel + tekst geven te weinig inhoud om zeker te zijn" uit de
+  afwijslijst.
+- **Link:** https://www.optimistdaily.com/2026/09/how-to-choose-a-fertility-clinic-what-reproductive-endocrinologists-look-for/
+
+#### Australië trekt grens bij muziek
+- **Gepubliceerd:** 2026-09-05 22:22 · Tech · OptimistDaily.com
+- **Waar het over gaat:** Zou moeten gaan over een Australische
+  hitlijstregel die bepaalt wat als "echte muziek" telt.
+- **Waarom dit niet goed genoeg is:** Ook hier vermeldt de bron zelf dat
+  "verdere details… niet worden gegeven" — te weinig inhoud om te
+  beoordelen.
+- **Link:** https://www.optimistdaily.com/2026/08/what-counts-as-real-music-australias-charts-just-drew-a-line/
+
+#### Rechter blokkeert datacenter op federale grond bij Boulder City
+- **Gepubliceerd:** 2026-09-05 22:28 · Environment · GoodGoodGood.co
+- **Waar het over gaat:** Een federale rechtbank trok de bouwvergunning
+  voor een datacenter bij Boulder City tijdelijk in.
+- **Waarom dit niet goed genoeg is:** Al eerder gemeld: alleen positief
+  vanuit één standpunt, en de kern is een fout van een overheidsinstantie
+  die een vergunning ten onrechte verleende.
+- **Link:** https://www.goodgoodgood.co/articles/judge-stops-data-center-construction-on-public-land
+
+#### Texas stopt geld voor Flock-camera's
+- **Gepubliceerd:** 2026-09-05 22:32 · Tech · GoodGoodGood.co
+- **Waar het over gaat:** Gouverneur Abbott laat Texaanse overheden stoppen
+  met het financieren van AI-surveillancecamera's van Flock.
+- **Waarom dit niet goed genoeg is:** Al eerder gemeld: alleen goed nieuws
+  als je surveillancecamera's afwijst, en de kern is verkeerd bestede
+  overheidsgelden.
+- **Link:** https://www.goodgoodgood.co/articles/texas-governor-abbott-flock-state-agency-spending
+
+#### Flessen redden dolfijnen en meer goed nieuws
+- **Gepubliceerd:** 2026-09-06 04:14 · Environment · Squirrel-News.net
+- **Waar het over gaat:** Drie losse items: plastic flessen die bijvangst
+  van dolfijnen verminderen, de sluiting van een Vlaams dolfinarium, en een
+  waterstoftrein in India.
+- **Waarom dit niet goed genoeg is:** Verzameleditie; de titel eindigt
+  letterlijk op "en meer goed nieuws".
+- **Link:** https://squirrel-news.net/news/plastic-bottles-saving-dolphins-indias-first-hydrogen-powered-train-lithium-recycling-breakthrough/
+
+#### Colombia beschermt Amazone, groen bouwmateriaal en zonnedak Londen
+- **Gepubliceerd:** 2026-09-07 17:43 · Environment · Squirrel-News.net
+- **Waar het over gaat:** Drie losse items: 42% van het Colombiaanse
+  Amazonegebied beschermd, een nieuw koolstofopslaand bouwmateriaal, en
+  Londens grootste zonnedak.
+- **Waarom dit niet goed genoeg is:** Al eerder gemeld: drie niet-verwante
+  onderwerpen in één artikel, terwijl het Colombia-verhaal een eigen sterk
+  artikel had verdiend.
+- **Link:** https://squirrel-news.net/news/colombia-creates-amazons-largest-reserve-new-carbon-storing-building-material-londons-largest-solar-roof/
+
+#### Urinetest herkent blaaskanker thuis
+- **Gepubliceerd:** 2026-09-08 16:32 · Health · OptimistDaily.com
+- **Waar het over gaat:** Zou moeten gaan over een thuistest die
+  blaaskanker herkent via urine.
+- **Waarom dit niet goed genoeg is:** De bron vermeldt zelf dat "verdere
+  details over de werking, ontwikkelaars of onderzoek… niet vermeld"
+  worden — te weinig inhoud.
+- **Link:** https://www.optimistdaily.com/2026/09/at-home-urine-test-spots-bladder-cancer-in-nine-of-ten-cases/
+
+#### Oogdruppels tegen blindheid
+- **Gepubliceerd:** 2026-09-09 16:28 · Health · OptimistDaily.com
+- **Waar het over gaat:** Zou moeten gaan over foto-schakelbare oogdruppels
+  tegen degeneratieve blindheid.
+- **Waarom dit niet goed genoeg is:** Weer dezelfde melding: "verdere
+  details… worden in de beschikbare bron niet vermeld" — te weinig inhoud
+  om zeker te zijn.
+- **Link:** https://www.optimistdaily.com/2026/09/a-simpler-path-to-treating-degenerative-blindness-photoswitchable-eye-drops/
+
+#### Zes Boeken Die De Wereld Anders Laten Zien
+- **Gepubliceerd:** 2026-09-09 16:35 · Lifestyle · Adventure-Journal.com
+- **Waar het over gaat:** De vaste boekenrubriek "Recommended Reading"
+  beveelt zes losstaande boeken aan over uiteenlopende onderwerpen.
+- **Waarom dit niet goed genoeg is:** Al gemeld op 2026-09-10: een
+  verzameleditie van zes losse titels, geen samenhangend bright-verhaal.
+  Staat nog steeds live.
+- **Link:** https://www.adventure-journal.com/recommended-reading-42/
+
+#### Patroon
+
+Drie afzonderlijke patronen springen eruit, en ze wijzen alle drie meer naar
+de bronmix en de prompt dan naar losse missers:
+
+1. **Squirrel-News.net publiceert vrijwel uitsluitend verzameledities.** Van
+   de 19 artikelen die deze bron aanlevert in de onderzochte periode
+   (2026-09-03 16:17 tot 2026-09-07 17:43), bundelen er 18 twee tot drie
+   niet-verwante nieuwsitems onder één titel — vaak zelfs expliciet als
+   "hoogtepunten" of "best of". Dat is zo goed als de hele output van deze
+   bron. Het lijkt zinvoller om te overwegen deze bron structureel uit te
+   sluiten dan te vertrouwen op beoordeling per item.
+2. **OptimistDaily.com levert regelmatig artikelen met vrijwel lege
+   brontekst.** Vijf keer in deze periode ("Managers en coaching", "Kiezen
+   Van Een Vruchtbaarheidskliniek", "Australië trekt grens bij muziek",
+   "Urinetest herkent blaaskanker thuis", "Oogdruppels tegen blindheid")
+   bevat de opgehaalde bron zo weinig dat het artikel zelf meldt dat
+   "verdere details… niet vermeld" worden. Dit lijkt geen
+   beoordelingsprobleem maar een probleem bij het ophalen van de brontekst
+   voor specifiek deze bron — de moeite waard voor Erik om los van de
+   selectieprompt te bekijken. Dezelfde bron leverde daarnaast twee
+   podcasttranscripten met niet-verwante items ("AI-muziek geweerd…",
+   "Niger herstelt…").
+3. **Weekoverzichten glippen er consistent doorheen, van verschillende
+   bronnen.** Naast de bekende Squirrel-News-hoogtepunten troffen we ditmaal
+   ook een weekoverzicht van Positive News ("…week-36-of-2026") en een van
+   GoodGoodGood.co met een titel die vrijwel letterlijk het ijkvoorbeeld uit
+   de afwijslijst citeert ("good news this week"). De afwijslijst dekt deze
+   categorie dus wel, maar het model lijkt er in de praktijk niet naar te
+   kijken zodra de inhoud zelf positief oogt — dezelfde conclusie als
+   bevinding 1 hierboven, nu bevestigd op een volledige, actuele feed in
+   plaats van het steekproefarchief van 2026-09-10.
+
+Daarnaast: YesMagazine.org leverde in deze periode vijf artikelen, waarvan
+er vier zijn afgekeurd — twee omdat ze over het medium zelf gaan in plaats
+van over de wereld, en twee omdat de kern verzet of politiek is in plaats van
+redding of herstel. Bij een bron met zo'n hoge afkeurratio is het de vraag of
+het combineren van "oplossingsgerichte journalistiek" met "activistische
+opiniestukken" bij deze bron BrightNews goed past.
+
+#### Twijfelgevallen
+
+#### Twijfelgeval: Braziliaanse geheimen voor een lang leven
+- **Gepubliceerd:** 2026-09-03 09:11 · Lifestyle · Positive.News
+- **Waar het over gaat:** Braziliaanse honderdplussers als voorbeeld van hoe
+  een eenvoudige levensstijl kan bijdragen aan een lang leven.
+- **Waarom ik twijfel:** Er zit een echt, menselijk verhaal in (de
+  honderdplussers zelf), maar de laatste zin kantelt naar zelfhulp: "hun
+  geheimen kunnen waardevolle lessen bieden voor een lang en gezond leven".
+  Dat raakt de categorie "listicles en zelfhulp" zonder er een schoolvoorbeeld
+  van te zijn — oordeel van Erik gewenst.
+- **Link:** https://www.positive.news/society/what-brazils-supercentenarians-can-teach-us-about-living-to-120/
+
+#### Twijfelgeval: Rivalen kiezen voor stemmachines in Libië
+- **Gepubliceerd:** 2026-09-03 09:11 · Politics · GoodNewsNetwork.org
+- **Waar het over gaat:** Strijdende Libische partijen tekenden een akkoord
+  om verkiezingen te houden, na een zes jaar durende militaire patstelling.
+- **Waarom ik twijfel:** De kern is verzoening na conflict, wat de kernregel
+  juist als bright-materiaal aanmerkt. Maar het gaat wel over verkiezingen
+  en een regering in een land in crisis — onmiskenbaar politiek onderwerp.
+  Het systeem zelf plakte er als enige artikel in deze hele feed het label
+  "Politics" op, wat aangeeft dat het ook door de pijplijn als grensgeval
+  werd herkend. Ik zou het laten staan omdat de kern verzoening is, niet het
+  conflict zelf — maar met twijfel.
+- **Link:** https://www.goodnewsnetwork.org/belligerents-in-this-6-year-military-standoff-agree-to-swap-rifles-for-ballots/
+
+#### Twijfelgeval: Zandstad groeit in Nevada
+- **Gepubliceerd:** 2026-09-03 09:14 · Lifestyle · BusinessInsider.com
+- **Waar het over gaat:** Satellietbeelden tonen hoe Black Rock City voor
+  Burning Man 2026 in de woestijn van Nevada verrijst.
+- **Waarom ik twijfel:** Een op zich neutraal, curieus feitenstuk (een
+  tijdelijke stad die uit het niets verschijnt) zonder duidelijke
+  maatschappelijke lading of een mens die geholpen wordt. Niet negatief,
+  maar ook niet duidelijk "goed gevoel" — eerder een weetje dan een
+  bright-verhaal.
+- **Link:** https://www.businessinsider.com/satellite-images-show-burning-man-black-rock-city-taking-shape-2026-9
+
+#### Twijfelgeval: Bankierskinderen leren van hun ouders over geld
+- **Gepubliceerd:** 2026-09-03 09:14 · Finance · BusinessInsider.com
+- **Waar het over gaat:** Een bankdirecteur en haar man vertellen hoe ze hun
+  kinderen leerden sparen en omgaan met financiële risico's.
+- **Waarom ik twijfel:** Er is een echt gezin in het verhaal, maar de
+  strekking is vooral financieel advies voor ouders — grenst aan
+  zelfhulp/lifestyle-tips zonder er een hard voorbeeld van te zijn.
+- **Link:** https://www.businessinsider.com/teri-williams-oneunited-bank-kids-financial-literacy-2026-9
+
+#### Twijfelgeval: Kleine A-frame woning met hutgevoel
+- **Gepubliceerd:** 2026-09-03 09:15 · Lifestyle · Newatlas.com
+- **Waar het over gaat:** Een compact A-frame tiny house zonder wielen,
+  ontworpen voor een knus, huiselijk gevoel.
+- **Waarom ik twijfel:** Dit is een woningontwerp-showcase, dicht bij
+  productnieuws (vergelijkbaar met de campers die wel zijn afgekeurd), maar
+  het is geen commercieel voertuig of gadget en mist een concrete koper of
+  bewoner — geen hard ijkgeval, maar de gelijkenis met afgekeurde
+  producten is groot genoeg voor twijfel.
+- **Link:** https://newatlas.com/tiny-houses/brda-tiny-house-mini-domy/
+
+#### Twijfelgeval: Stilte in het kantoor van de toekomst
+- **Gepubliceerd:** 2026-09-03 09:15 · Tech · Newatlas.com
+- **Waar het over gaat:** Speculatief stuk over kantoren waarin medewerkers
+  straks fluisterend met hun computer communiceren via spraakherkenning.
+- **Waarom ik twijfel:** Geen concreet product of bedrijf dat wordt
+  gepromoot, maar ook geen mens die ergens mee geholpen wordt — een
+  toekomstbespiegeling over kantoortechnologie zonder duidelijke
+  maatschappelijke kern.
+- **Link:** https://newatlas.com/ai-humanoids/ai-dictation/
+
+#### Twijfelgeval: September 2026: hemelverschijnselen om naar uit te kijken
+- **Gepubliceerd:** 2026-09-03 16:17 · Science · OptimistDaily.com
+- **Waar het over gaat:** Overzicht van astronomische verschijnselen om in
+  september 2026 naar uit te kijken: de Melkweg, Venus, de oogstmaan en het
+  beginnende aurora-seizoen.
+- **Waarom ik twijfel:** De URL noemt het zelf een "guide" — een gids/lijst
+  van uiteenlopende hemelverschijnselen in één maand, wat dicht bij een
+  listicle-formaat ligt. Tegelijk is het één samenhangend thema
+  (astronomie) in plaats van news niet-verwante nieuwsverhalen, dus geen
+  harde verzameleditie.
+- **Link:** https://www.optimistdaily.com/2026/08/your-guide-to-septembers-best-night-sky-events-in-2026/
+
+#### Twijfelgeval: Koel blijven bij hittegolven
+- **Gepubliceerd:** 2026-09-03 16:19 · Environment · Squirrel-News.net
+- **Waar het over gaat:** Algemeen stuk over manieren om steden en mensen
+  koel te houden tijdens hittegolven, van groene gevels tot ondergrondse
+  koelsystemen.
+- **Waarom ik twijfel:** De URL noemt het zelf een "special edition" en het
+  leest als een lijst van tips zonder één concreet verhaal of hoofdpersoon
+  — dicht bij zelfhulp, maar anders dan de overige Squirrel-News-items in
+  deze feed bundelt het geen los van elkaar staande nieuwsberichten.
+- **Link:** https://squirrel-news.net/news/special-edition-keeping-cool-during-extreme-heat/
+
+#### Twijfelgeval: Brief van hoop uit het Globale Zuiden
+- **Gepubliceerd:** 2026-09-03 16:26 · Lifestyle · YesMagazine.org
+- **Waar het over gaat:** Activisten en gemeenschapswerkers uit het Globale
+  Zuiden sturen een boodschap van hoop naar de Verenigde Staten.
+- **Waarom ik twijfel:** Warme, hoopvolle toon, maar geen concreet verhaal
+  met feiten of gebeurtenissen — een opiniërende, activistische brief zonder
+  duidelijke nieuwskern. Grenst aan "te weinig inhoud om zeker te zijn" én
+  aan politiek gekleurd activisme, maar is geen hard geval van beide.
+- **Link:** https://www.yesmagazine.org/political-power/2025/05/30/ferocious-hope-messages-global-south
+
+#### Twijfelgeval: Recordaantal ERC-subsidies voor baanbrekend onderzoek
+- **Gepubliceerd:** 2026-09-03 16:27 · Science · Openaccessgovernment.org
+- **Waar het over gaat:** De Europese Onderzoeksraad ontving een
+  recordaantal subsidieaanvragen voor 2026, met een uitsplitsing per
+  vakgebied.
+- **Waarom ik twijfel:** Droge beleids-/statistiekmelding van een
+  EU-instelling zonder mensen of concreet verhaal — vergelijkbaar met het
+  twijfelgeval "Nieuwe EU-wet" van 2026-09-10 (zie onder).
+- **Link:** https://www.openaccessgovernment.org/erc-advanced-grants-2026-attract-3458-research-proposals/213846/
+
+#### Twijfelgeval: EU trekt €105,5 miljoen uit voor onderzoekers
+- **Gepubliceerd:** 2026-09-05 22:35 · Science · Openaccessgovernment.org
+- **Waar het over gaat:** De Europese Commissie kent €105,5 miljoen toe aan
+  29 onderzoeksprogramma's onder het Marie Skłodowska-Curie-programma.
+- **Waarom ik twijfel:** Zelfde soort droge EU-financieringsmelding als de
+  twee andere Openaccessgovernment-twijfelgevallen in dit blok — geen mens,
+  geen verhaal, wel maatschappelijk relevant onderzoek.
+- **Link:** https://www.openaccessgovernment.org/eu-announces-e105-5-million-boost-for-29-doctoral-and-postdoctoral-research-programmes/213893/
+
+#### Twijfelgeval: Nieuwe EU-wet Steunt Europese Innovatie
+- **Gepubliceerd:** 2026-09-09 16:32 · Tech · Openaccessgovernment.org
+- **Waar het over gaat:** De Europese Commissie stelt een European
+  Innovation Act voor om Europese start-ups te helpen groeien.
+- **Waarom ik twijfel:** Al als twijfelgeval gelogd op 2026-09-10, hier
+  opnieuw aangetroffen omdat de volledige feed is doorgelopen. Met dit blok
+  erbij komt Openaccessgovernment.org op drie twijfelgevallen in dezelfde
+  periode, telkens dezelfde soort droge beleidsaankondiging zonder
+  menselijk verhaal — mogelijk een patroon voor deze bron specifiek, al is
+  drie op zich nog geen hard bewijs.
+- **Link:** https://www.openaccessgovernment.org/the-eu-has-a-new-european-innovation-act-to-help-european-ideas-compete-globally/214064/
+
+#### Vervolg op de eerdere meldingen: de AI-pijplijn staat er nog steeds zo voor
+
+Dit valt buiten de eigenlijke beoordelingsopdracht, maar sluit aan op de
+meldingen van de afgelopen drie nachten. `data/last_run.json` toont dat de
+meest recente geplande run (2026-09-13 16:02–16:04 UTC) opnieuw `"aiCalls":
+0` en `"geaccepteerd": 0` gaf, tegenover 293 kandidaten en 22 opgehaalde
+teksten — hetzelfde beeld als de drie voorgaande nachten. Ik heb de
+workflowlogs zelf niet opnieuw nagelopen (dat viel al drie nachten op rij
+buiten mijn opdracht en is al uitgebreid vastgelegd), maar het resultaat
+bevestigt dat de storing op het moment van deze controle nog niet is
+opgelost. Dat is meteen de verklaring waarom deze volledige controle geen
+enkel artikel na 2026-09-10 04:22:12 aantrof: er is simpelweg niets nieuws
+bijgekomen om te beoordelen, vol of niet.

@@ -180,3 +180,33 @@ met 2026-09-10 04:22:12) zijn er nog steeds geen artikelen aan
 `backend/selectie-prompt-analyse.md` — de storing in de AI-pijplijn duurt nu
 drie etmalen en de geplande run van vannacht 00:00 UTC is zelfs helemaal niet
 gestart. Deze steekproef is dus voor de derde keer op rij overgeslagen.
+
+### 2026-09-14, Engels
+
+Vandaag is het maandag, dus is Engels aan de beurt. Er zijn nog steeds geen
+nieuwe artikelen aan `data/news_nl.json` toegevoegd sinds 2026-09-10
+04:22:12 — de AI-pijplijn ligt nog steeds stil, zie
+`backend/selectie-prompt-analyse.md`. Omdat vannacht wel de volledige feed is
+doorgelopen (vandaag is het maandag, dus stap 2 van de opdracht schrijft een
+volledige controle voor in plaats van alleen het nieuwe deel), was er dit
+keer wél een groep om uit te kiezen: het eerste artikel uit die volledige
+controle dat zowel in `data/news_nl.json` als in `data/news_en.json`
+voorkomt.
+
+**Artikel:** HP start accelerator in Azië voor AI-tijdperk
+**Oordeel:** niets aangetroffen.
+
+De Nederlandse en Engelse tekst komen zin voor zin overeen: geen toegevoegde
+feiten, geen weggelaten details. Eigennamen (HP, Garage 2.0, Singapore) staan
+in beide talen ongewijzigd. Er komen geen geslachtsverwijzingen in voor, dus
+dat punt is hier niet te toetsen. De Engelse titel ("HP launches startup
+accelerator in Asia for AI era") gebruikt normale zinsstijl, geen
+titelhoofdlettergebruik. Ook de `meta_description` en `image_alt` komen in
+beide talen overeen, en de statische Engelse artikelpagina bevat dezelfde
+tekst als de `summary` in `data/news_en.json` — geen afwijking tussen het
+artikel zelf en de feeddata.
+
+Dit is een kort, feitelijk artikel zonder mensen of verhalende elementen, dus
+het is een beperkte test: fouten in geslacht, toon of verhaallijn komen hier
+niet aan het licht. Het bevestigt vooral dat namen en cijfers correct
+overkomen.
