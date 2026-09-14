@@ -1,27 +1,307 @@
 {
- "gegenereerd": "2026-09-14T04:34:45.215Z",
+ "gegenereerd": "2026-09-14T18:23:24.975Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
-   "top": [],
-   "dagoverzichten": []
+   "top": [
+    {
+     "id": "1789409398854ryk5ehwtu",
+     "titel": "Robothand Vertaalt Lerarenstem naar Gebarentaal",
+     "teaser": "In Kenia heeft de 22-jarige ondernemer Norah Kimathi met haar startup ZeroBionic een robotische hand ontwikkeld die de stem van een leraar direct vertaalt naar gebarentaal. Van de 300.000 dove of slechthorende kinderen in Kenia gaat slechts een fractie naar school, mede doordat het land geen gestandaardiseerde gebarentaal kent. De robothand, 3D-geprint uit gerecycled plastic afval, kost 350 dollar, gaat...",
+     "score": 10,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/nl/robothand-vertaalt-lerarenstem-naar-gebarentaal-1789409398854ryk5ehwtu.html"
+    },
+    {
+     "id": "1789409245357jsvwu6hgj",
+     "titel": "Zes Uur In Het Donker: Vreemden Werden Buren",
+     "teaser": "In november 1965 trof een grote stroomstoring het noordoosten van de VS en delen van Canada, met 30 miljoen getroffenen. Meer dan 800.000 metroreizigers in New York raakten vast, onder wie Lynn Lowin, die op weg was van Brooklyn naar Manhattan. Zonder licht, telefoons of informatie bleven de reizigers urenlang samen in de trein. Ze deelden voedsel, spraken elkaar moed...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/zes-uur-in-het-donker-vreemden-werden-buren-1789409245357jsvwu6hgj.html"
+    },
+    {
+     "id": "1789409118781d4hb22iln",
+     "titel": "Voormalig Stort Wordt Thuis voor 64% van Britse Geoorde Futen",
+     "teaser": "Een Britse natuurbeschermingsorganisatie heeft een voormalige stortplaats voor grond uit de aanleg van het Manchester Ship Canal omgetoverd tot broedgebied voor de geoorde fuut. Op Woolston Eyes Nature Reserve, een bijna 1000 hectare groot wetland tussen de rivier de Mersey en het kanaal, broeden inmiddels 35 paar geoorde futen, ofwel 64% van alle broedparen in het VK. De vogels nestelen...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/voormalig-stort-wordt-thuis-voor-64-van-britse-geoorde-futen-1789409118781d4hb22iln.html"
+    },
+    {
+     "id": "1789409040112vqs98u8v1",
+     "titel": "Heel Zuidoost-Azië Nu Vrij Van Trachoom",
+     "teaser": "De Wereldgezondheidsorganisatie (WHO) heeft Timor-Leste officieel gecertificeerd als land dat trachoom heeft geëlimineerd als volksgezondheidsprobleem. Trachoom is wereldwijd de belangrijkste infectieuze oorzaak van blindheid. Met deze mijlpaal is de gehele WHO-regio Zuidoost-Azië nu trachoomvrij, wat betekent dat meer dan 2 miljard mensen minimaal risico lopen op de ziekte en toegang hebben tot zorg om het snel op te sporen en...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/nl/heel-zuidoost-azie-nu-vrij-van-trachoom-1789409040112vqs98u8v1.html"
+    },
+    {
+     "id": "17894100450198ocoeho6u",
+     "titel": "Red De Planeet Met Engineering",
+     "teaser": "PBS Nature publiceerde een blogbericht met de titel 'Want to Save the Planet? Try Engineering.' Het bericht verscheen op de natuurblog van WNET/PBS en benadrukt dat engineering een rol kan spelen bij het redden van de planeet. Verdere details worden in het beschikbare materiaal niet gegeven.",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/red-de-planeet-met-engineering-17894100450198ocoeho6u.html"
+    }
+   ],
+   "dagoverzichten": [
+    {
+     "id": "dg-20260913-science",
+     "titel": "Wetenschap deze week: van oude schilderijen tot gloeiende spinnenpoten",
+     "categorie": "Science",
+     "dag": "2026-09-13",
+     "url": "https://brightnews.online/articles/nl/wetenschap-deze-week-van-oude-schilderijen-tot-gloeiende-spinnenpoten-dg-20260913-science.html"
+    },
+    {
+     "id": "dg-20260913-environment",
+     "titel": "Van fabrieksdak tot achtertuin: waar natuur deze dagen ruimte terugkrijgt",
+     "categorie": "Environment",
+     "dag": "2026-09-13",
+     "url": "https://brightnews.online/articles/nl/van-fabrieksdak-tot-achtertuin-waar-natuur-deze-dagen-ruimte-terugkrijgt-dg-20260913-environment.html"
+    }
+   ]
   },
   "en": {
-   "top": [],
-   "dagoverzichten": []
+   "top": [
+    {
+     "id": "1789409398854ryk5ehwtu",
+     "titel": "Robot Hand Translates Teacher's Voice to Sign Language",
+     "teaser": "In Kenya, 22-year-old entrepreneur Norah Kimathi has developed a robotic hand with her startup ZeroBionic that directly translates a teacher's voice into sign language. Of Kenya's 300,000 deaf or hard of hearing children, only a fraction attend school, partly because the country lacks a standardized sign language. The robot hand, 3D-printed from recycled plastic waste, costs 350 dollars, lasts three...",
+     "score": 10,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/en/robot-hand-translates-teacher-s-voice-to-sign-language-1789409398854ryk5ehwtu.html"
+    },
+    {
+     "id": "1789409245357jsvwu6hgj",
+     "titel": "Six Hours In The Dark: Strangers Became Neighbors",
+     "teaser": "In November 1965, a major power outage struck the northeastern United States and parts of Canada, affecting 30 million people. More than 800,000 subway passengers in New York were stranded, including Lynn Lowin, who was traveling from Brooklyn to Manhattan. Without light, phones, or information, passengers remained together in the train for hours. They shared food, encouraged each other, and...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/six-hours-in-the-dark-strangers-became-neighbors-1789409245357jsvwu6hgj.html"
+    },
+    {
+     "id": "1789409118781d4hb22iln",
+     "titel": "Former Landfill Becomes Home for 64% of UK Eared Grebes",
+     "teaser": "A British conservation organization has transformed a former landfill site into a breeding ground for the eared grebe. At Woolston Eyes Nature Reserve, a wetland of nearly 1,000 hectares between the River Mersey and the Manchester Ship Canal, 35 pairs of eared grebes now breed—64% of all breeding pairs in the UK. The birds nest alongside black-headed gulls on artificial...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/former-landfill-becomes-home-for-64-of-uk-eared-grebes-1789409118781d4hb22iln.html"
+    },
+    {
+     "id": "1789409040112vqs98u8v1",
+     "titel": "All of Southeast Asia Now Free From Trachoma",
+     "teaser": "The World Health Organization (WHO) has officially certified Timor-Leste as a country that has eliminated trachoma as a public health problem. Trachoma is the leading infectious cause of blindness worldwide. With this milestone, the entire WHO Southeast Asia region is now trachoma-free, meaning more than 2 billion people face minimal risk of the disease and have access to care to...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/en/all-of-southeast-asia-now-free-from-trachoma-1789409040112vqs98u8v1.html"
+    },
+    {
+     "id": "17894100450198ocoeho6u",
+     "titel": "Save The Planet With Engineering",
+     "teaser": "PBS Nature published a blog post titled 'Want to Save the Planet? Try Engineering.' The post appeared on WNET/PBS's nature blog and emphasizes that engineering can play a role in saving the planet. Further details are not provided in the available material.",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/save-the-planet-with-engineering-17894100450198ocoeho6u.html"
+    }
+   ],
+   "dagoverzichten": [
+    {
+     "id": "dg-20260913-science",
+     "titel": "Science this week: from old paintings to glowing spider legs",
+     "categorie": "Science",
+     "dag": "2026-09-13",
+     "url": "https://brightnews.online/articles/en/science-this-week-from-old-paintings-to-glowing-spider-legs-dg-20260913-science.html"
+    },
+    {
+     "id": "dg-20260913-environment",
+     "titel": "From factory roof to backyard: where nature is reclaiming space these days",
+     "categorie": "Environment",
+     "dag": "2026-09-13",
+     "url": "https://brightnews.online/articles/en/from-factory-roof-to-backyard-where-nature-is-reclaiming-space-these-days-dg-20260913-environment.html"
+    }
+   ]
   },
   "de": {
-   "top": [],
-   "dagoverzichten": []
+   "top": [
+    {
+     "id": "1789409398854ryk5ehwtu",
+     "titel": "Roboterhand Übersetzt Lehrerstimme in Gebärdensprache",
+     "teaser": "In Kenia hat die 22-jährige Unternehmerin Norah Kimathi mit ihrem Startup ZeroBionic eine robotische Hand entwickelt, die die Stimme eines Lehrers direkt in Gebärdensprache übersetzt. Von den 300.000 gehörlosen oder schwerhörigen Kindern in Kenia besucht nur ein kleiner Teil die Schule, auch weil das Land keine standardisierte Gebärdensprache hat. Die robotische Hand wird aus recyceltem Kunststoffabfall 3D-gedruckt, kostet 350 Dollar,...",
+     "score": 10,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/de/roboterhand-ubersetzt-lehrerstimme-in-gebardensprache-1789409398854ryk5ehwtu.html"
+    },
+    {
+     "id": "1789409245357jsvwu6hgj",
+     "titel": "Sechs Stunden Im Dunkeln: Fremde Wurden Nachbarn",
+     "teaser": "Im November 1965 traf ein großer Stromausfall den Nordosten der USA und Teile Kanadas, mit 30 Millionen Betroffenen. Mehr als 800.000 U-Bahn-Fahrgäste in New York saßen fest, darunter Lynn Lowin, die von Brooklyn nach Manhattan unterwegs war. Ohne Licht, Telefone oder Informationen blieben die Fahrgäste stundenlang zusammen in der Bahn. Sie teilten Lebensmittel, sprachen sich gegenseitig Mut zu und versuchten,...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/sechs-stunden-im-dunkeln-fremde-wurden-nachbarn-1789409245357jsvwu6hgj.html"
+    },
+    {
+     "id": "1789409118781d4hb22iln",
+     "titel": "Ehemaliger Deponiestandort wird Heimat für 64% der britischen Ohrentaucher",
+     "teaser": "Eine britische Naturschutzorganisation hat eine ehemalige Deponie für Erdaushub aus dem Bau des Manchester Ship Canal in ein Brutgebiet für Ohrentaucher umgewandelt. Auf dem Woolston Eyes Nature Reserve, einem knapp 1000 Hektar großen Feuchtgebiet zwischen dem Fluss Mersey und dem Kanal, brüten inzwischen 35 Paare Ohrentaucher, also 64% aller Brutpaare im Vereinigten Königreich. Die Vögel nisten gerne neben Lachmöwen auf...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/ehemaliger-deponiestandort-wird-heimat-fur-64-der-britischen-ohrentaucher-1789409118781d4hb22iln.html"
+    },
+    {
+     "id": "1789409040112vqs98u8v1",
+     "titel": "Ganz Südostasien Jetzt Trachomfrei",
+     "teaser": "Die Weltgesundheitsorganisation (WHO) hat Timor-Leste offiziell als Land zertifiziert, das Trachom als Volkskrankheit eliminiert hat. Trachom ist weltweit die wichtigste infektiöse Erblindungsursache. Mit diesem Meilenstein ist die gesamte WHO-Region Südostasien nun trachomfrei, was bedeutet, dass mehr als 2 Milliarden Menschen ein minimales Risiko für die Krankheit haben und Zugang zu Versorgung haben, um sie schnell zu erkennen und zu behandeln....",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/de/ganz-sudostasien-jetzt-trachomfrei-1789409040112vqs98u8v1.html"
+    },
+    {
+     "id": "17894100450198ocoeho6u",
+     "titel": "Retten Sie Den Planeten Mit Engineering",
+     "teaser": "PBS Nature veröffentlichte einen Blogbeitrag mit dem Titel 'Want to Save the Planet? Try Engineering.' Der Beitrag erschien auf dem Natureblog von WNET/PBS und betont, dass Engineering eine Rolle beim Retten des Planeten spielen kann. Weitere Details werden in dem verfügbaren Material nicht gegeben.",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/retten-sie-den-planeten-mit-engineering-17894100450198ocoeho6u.html"
+    }
+   ],
+   "dagoverzichten": [
+    {
+     "id": "dg-20260913-science",
+     "titel": "Wissenschaft diese Woche: von alten Gemälden bis zu leuchtenden Spinnenbeine",
+     "categorie": "Science",
+     "dag": "2026-09-13",
+     "url": "https://brightnews.online/articles/de/wissenschaft-diese-woche-von-alten-gemalden-bis-zu-leuchtenden-spinnenbeine-dg-20260913-science.html"
+    },
+    {
+     "id": "dg-20260913-environment",
+     "titel": "Vom Fabrikdach bis zum Hinterhof: Wo die Natur derzeit Raum zurückgewinnt",
+     "categorie": "Environment",
+     "dag": "2026-09-13",
+     "url": "https://brightnews.online/articles/de/vom-fabrikdach-bis-zum-hinterhof-wo-die-natur-derzeit-raum-zuruckgewinnt-dg-20260913-environment.html"
+    }
+   ]
   },
   "fr": {
-   "top": [],
-   "dagoverzichten": []
+   "top": [
+    {
+     "id": "1789409398854ryk5ehwtu",
+     "titel": "Main Robotique Traduit la Voix du Professeur en Langue des Signes",
+     "teaser": "Au Kenya, l'entrepreneur de 22 ans Norah Kimathi a développé avec sa startup ZeroBionic une main robotique qui traduit directement la voix d'un professeur en langue des signes. Sur les 300.000 enfants sourds ou malentendants au Kenya, seule une fraction va à l'école, notamment parce que le pays ne dispose pas d'une langue des signes standardisée. La main robotique, imprimée...",
+     "score": 10,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/fr/main-robotique-traduit-la-voix-du-professeur-en-langue-des-signes-1789409398854ryk5ehwtu.html"
+    },
+    {
+     "id": "1789409245357jsvwu6hgj",
+     "titel": "Six Heures Dans L'Obscurité: Des Étrangers Deviennent Voisins",
+     "teaser": "En novembre 1965, une grande panne d'électricité a frappé le nord-est des États-Unis et des parties du Canada, affectant 30 millions de personnes. Plus de 800 000 voyageurs du métro à New York se sont retrouvés bloqués, dont Lynn Lowin, qui se rendait de Brooklyn à Manhattan. Sans lumière, téléphones ni informations, les voyageurs sont restés ensemble dans le train...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/six-heures-dans-l-obscurite-des-etrangers-deviennent-voisins-1789409245357jsvwu6hgj.html"
+    },
+    {
+     "id": "1789409118781d4hb22iln",
+     "titel": "Ancien Dépôt Devient Foyer pour 64% des Grèbes Oreillards Britanniques",
+     "teaser": "Une organisation britannique de conservation de la nature a transformé un ancien site de décharge en zone de reproduction pour le grèbe oreillard. À Woolston Eyes Nature Reserve, un zone humide de près de 1000 hectares située entre la rivière Mersey et le canal, 35 couples de grèbes oreillards se reproduisent désormais, soit 64% de tous les couples reproducteurs du...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/ancien-depot-devient-foyer-pour-64-des-grebes-oreillards-britanniques-1789409118781d4hb22iln.html"
+    },
+    {
+     "id": "1789409040112vqs98u8v1",
+     "titel": "Tout le Sud-Est Asiatique Libre du Trachome",
+     "teaser": "L'Organisation mondiale de la santé (OMS) a officiellement certifié le Timor oriental comme un pays ayant éliminé le trachome en tant que problème de santé publique. Le trachome est la principale cause infectieuse de cécité au monde. Avec cette étape décisive, toute la région Asie du Sud-Est de l'OMS est désormais exempte de trachome, ce qui signifie que plus de...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/fr/tout-le-sud-est-asiatique-libre-du-trachome-1789409040112vqs98u8v1.html"
+    },
+    {
+     "id": "17894100450198ocoeho6u",
+     "titel": "Sauver La Planète Avec L'Ingénierie",
+     "teaser": "PBS Nature a publié un article de blog intitulé « Want to Save the Planet? Try Engineering. » L'article est paru sur le blog nature de WNET/PBS et souligne que l'ingénierie peut jouer un rôle dans le sauvetage de la planète. Aucun détail supplémentaire n'est fourni dans le matériel disponible.",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/sauver-la-planete-avec-l-ingenierie-17894100450198ocoeho6u.html"
+    }
+   ],
+   "dagoverzichten": [
+    {
+     "id": "dg-20260913-science",
+     "titel": "Sciences cette semaine : des vieux tableaux aux pattes d'araignées brillantes",
+     "categorie": "Science",
+     "dag": "2026-09-13",
+     "url": "https://brightnews.online/articles/fr/sciences-cette-semaine-des-vieux-tableaux-aux-pattes-d-araignees-brillantes-dg-20260913-science.html"
+    },
+    {
+     "id": "dg-20260913-environment",
+     "titel": "Du toit d'usine au jardin de derrière : où la nature reprend de l'espace ces jours-ci",
+     "categorie": "Environment",
+     "dag": "2026-09-13",
+     "url": "https://brightnews.online/articles/fr/du-toit-d-usine-au-jardin-de-derriere-ou-la-nature-reprend-de-l-espace-ces-jours-dg-20260913-environment.html"
+    }
+   ]
   },
   "es": {
-   "top": [],
-   "dagoverzichten": []
+   "top": [
+    {
+     "id": "1789409398854ryk5ehwtu",
+     "titel": "Mano Robótica Traduce Voz de Maestro a Lengua de Signos",
+     "teaser": "En Kenia, la emprendedora de 22 años Norah Kimathi ha desarrollado con su startup ZeroBionic una mano robótica que traduce directamente la voz de un maestro a lengua de signos. De los 300.000 niños sordos o con discapacidad auditiva en Kenia, solo una fracción asiste a la escuela, en parte porque el país no cuenta con una lengua de signos...",
+     "score": 10,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/es/mano-robotica-traduce-voz-de-maestro-a-lengua-de-signos-1789409398854ryk5ehwtu.html"
+    },
+    {
+     "id": "1789409245357jsvwu6hgj",
+     "titel": "Seis Horas En La Oscuridad: Extraños Se Convirtieron En Vecinos",
+     "teaser": "En noviembre de 1965, un gran apagón afectó el noreste de EE.UU. y partes de Canadá, dejando 30 millones de afectados. Más de 800.000 pasajeros del metro de Nueva York quedaron atrapados, entre ellos Lynn Lowin, que viajaba de Brooklyn a Manhattan. Sin luz, teléfonos ni información, los pasajeros permanecieron juntos en el tren durante horas. Compartieron comida, se animaron...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/seis-horas-en-la-oscuridad-extranos-se-convirtieron-en-vecinos-1789409245357jsvwu6hgj.html"
+    },
+    {
+     "id": "1789409118781d4hb22iln",
+     "titel": "Vertedero Antiguo se Convierte en Hogar del 64% de Somormujos Británicos",
+     "teaser": "Una organización británica de conservación ha transformado un antiguo vertedero de tierra procedente de la construcción del Canal de Barcos de Mánchester en un área de cría para el somormujo cuellirrojo. En la Reserva Natural de Woolston Eyes, un humedal de casi 1000 hectáreas situado entre el río Mersey y el canal, actualmente crían 35 parejas de somormujos cuellirrojos, es...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/vertedero-antiguo-se-convierte-en-hogar-del-64-de-somormujos-britanicos-1789409118781d4hb22iln.html"
+    },
+    {
+     "id": "1789409040112vqs98u8v1",
+     "titel": "Todo el Sudeste Asiático Libre de Tracoma",
+     "teaser": "La Organización Mundial de la Salud (OMS) ha certificado oficialmente a Timor-Leste como país que ha eliminado el tracoma como problema de salud pública. El tracoma es la principal causa infecciosa de ceguera en el mundo. Con este hito, toda la región de Sudeste Asiático de la OMS está ahora libre de tracoma, lo que significa que más de 2...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/es/todo-el-sudeste-asiatico-libre-de-tracoma-1789409040112vqs98u8v1.html"
+    },
+    {
+     "id": "17894100450198ocoeho6u",
+     "titel": "Salva El Planeta Con Ingeniería",
+     "teaser": "PBS Nature publicó una entrada de blog titulada 'Want to Save the Planet? Try Engineering.' El artículo apareció en el blog de naturaleza de WNET/PBS y destaca que la ingeniería puede jugar un papel en la salvación del planeta. No se proporcionan más detalles en el material disponible.",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/salva-el-planeta-con-ingenieria-17894100450198ocoeho6u.html"
+    }
+   ],
+   "dagoverzichten": [
+    {
+     "id": "dg-20260913-science",
+     "titel": "Ciencia esta semana: de cuadros antiguos a patas de araña brillantes",
+     "categorie": "Science",
+     "dag": "2026-09-13",
+     "url": "https://brightnews.online/articles/es/ciencia-esta-semana-de-cuadros-antiguos-a-patas-de-arana-brillantes-dg-20260913-science.html"
+    },
+    {
+     "id": "dg-20260913-environment",
+     "titel": "Del techo de una fábrica al jardín trasero: dónde la naturaleza recupera espacio estos días",
+     "categorie": "Environment",
+     "dag": "2026-09-13",
+     "url": "https://brightnews.online/articles/es/del-techo-de-una-fabrica-al-jardin-trasero-donde-la-naturaleza-recupera-espacio--dg-20260913-environment.html"
+    }
+   ]
   }
  }
 }
