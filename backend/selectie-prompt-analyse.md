@@ -1104,3 +1104,86 @@ bevestigt dat de storing op het moment van deze controle nog niet is
 opgelost. Dat is meteen de verklaring waarom deze volledige controle geen
 enkel artikel na 2026-09-10 04:22:12 aantrof: er is simpelweg niets nieuws
 bijgekomen om te beoordelen, vol of niet.
+
+### 2026-09-15, 04:12 Europe/Amsterdam
+
+Beoordeeld: 18 artikelen, gepubliceerd tussen 2026-09-14 18:04 en 2026-09-14
+18:22 — dit zijn de eerste nieuwe artikelen sinds de vorige ronde (de
+volledige controle van 2026-09-14, die liep tot en met 2026-09-10 04:22:12).
+Er stond nog één artikel tussen die twee ronden in gedateerd op 2026-09-10
+04:22:12 zelf ("Prikvaccin beschermt mogelijk hart"); dat viel al binnen de
+vorige, volledige controle en is dus niet opnieuw beoordeeld. Twee
+dagoverzichten (`type: digest`) zijn overgeslagen. Niet bright-waardig: 2.
+Twijfel: 2.
+
+#### Colombia beschermt 42% Amazone
+- **Gepubliceerd:** 2026-09-14 18:14 · Environment · OptimistDaily.com
+- **Waar het over gaat:** Zou moeten gaan over de aftredende president van
+  Colombia die 42% van het Colombiaanse Amazonegebied tegen mijnbouw heeft
+  beschermd.
+- **Waarom dit niet goed genoeg is:** De opgehaalde bron bevat vrijwel geen
+  inhoud — de samenvatting meldt zelf letterlijk dat "verdere details over de
+  aanpak, achtergronden of gevolgen... niet vermeld" worden. Dat is precies
+  het geval "titel + tekst geven te weinig inhoud om zeker te zijn" uit de
+  afwijslijst, en dezelfde OptimistDaily.com-tekortkoming die deze controle
+  op 2026-09-14 al vijf keer eerder signaleerde.
+- **Link:** https://www.optimistdaily.com/2026/09/how-colombias-outgoing-president-protected-42-of-the-countrys-amazon-from-mining/
+
+#### Red De Planeet Met Engineering
+- **Gepubliceerd:** 2026-09-14 18:20 · Environment · PBS.org
+- **Waar het over gaat:** Zou moeten gaan over de rol die engineering kan
+  spelen bij het redden van de planeet, naar aanleiding van een blogbericht
+  van PBS Nature met als titel "Want to Save the Planet? Try Engineering."
+- **Waarom dit niet goed genoeg is:** Ook hier is er vrijwel geen inhoud
+  opgehaald — de samenvatting zegt zelf dat "verdere details... niet gegeven"
+  worden. Daarnaast is de vraag-en-antwoordvorm van de titel zelf ("wil je de
+  planeet redden? probeer engineering") een zelfhulp-achtige framing zonder
+  concreet verhaal, mens of gebeurtenis. Dubbele reden voor afwijzing: te
+  weinig inhoud én te dicht bij zelfhulp-clickbait.
+- **Link:** https://www.pbs.org/wnet/nature/blog/save-the-planet-engineering/
+
+#### Twijfelgeval: EU-missies liggen goed op koers voor 2030
+- **Gepubliceerd:** 2026-09-14 18:19 · Environment · Openaccessgovernment.org
+- **Waar het over gaat:** Een tussentijdse evaluatie van de Europese
+  Commissie meldt dat de vijf grote Missions van de EU binnen Horizon Europe
+  gestage vooruitgang boeken op maatschappelijke en milieu-uitdagingen.
+- **Waarom ik twijfel:** Maatschappelijk relevant, maar een droge
+  beleidsevaluatie zonder mens, gebeurtenis of concreet verhaal — dezelfde
+  categorie als de drie eerdere Openaccessgovernment.org-twijfelgevallen die
+  op 2026-09-14 al zijn gelogd. Met dit geval erbij komt die bron op vier
+  twijfelgevallen van hetzelfde type in korte tijd.
+- **Link:** https://www.openaccessgovernment.org/eu-missions-making-strong-progress-towards-2030-goals/214248/
+
+#### Twijfelgeval: Geld Voor Opgraving Flag Fen
+- **Gepubliceerd:** 2026-09-14 18:19 · Science · Openaccessgovernment.org
+- **Waar het over gaat:** Het Britse ministerie DEFRA en Historic England
+  kennen £700.000 subsidie toe voor een archeologische opgraving bij de
+  bronstijdvindplaats Flag Fen, bij Peterborough.
+- **Waarom ik twijfel:** Zelfde soort geval als hierboven: een droge
+  financieringsmelding zonder mens of verhalend element, maar wel met een
+  concreet maatschappelijk doel (archeologisch onderzoek). Vijfde
+  twijfelgeval van dit type van deze bron.
+- **Link:** https://www.openaccessgovernment.org/funding-secured-for-excavation-to-unlock-secrets-of-bronze-age-flag-fen-site/214226/
+
+De overige 14 artikelen zijn ruim goedgekeurd, met een merkbaar bredere en
+schonere bronmix dan in de vorige volledige controle: geen enkel artikel van
+Squirrel-News.net of YesMagazine.org vannacht, de twee bronnen die op
+2026-09-14 als grootste boosdoeners werden aangewezen. Zeven van de achttien
+artikelen kwamen van GoodNewsNetwork.org, stuk voor stuk met een concreet
+verhaal en een herkenbare hoofdpersoon (het meisje met haar knuffel Rosie, de
+91-jarige die de Appalachian Trail voltooide, de Keniaanse ondernemer achter
+de robothand voor dove kinderen) — geen van die verhalen gaf aanleiding tot
+twijfel.
+
+#### Vervolg op de eerdere meldingen: de AI-pipeline lijkt hersteld
+
+Dit valt buiten de eigenlijke beoordelingsopdracht, maar sluit rechtstreeks
+aan op de meldingen van de afgelopen vijf nachten over de stilgevallen
+pipeline. `data/last_run.json` toont dat de geplande run van vannacht
+(2026-09-14 18:00–18:20 UTC) voor het eerst sinds 2026-09-10 weer normale
+cijfers laat zien: `"aiCalls": 119` en `"geaccepteerd": 18`, tegenover
+`"aiCalls": 0` in alle vier de voorgaande metingen. Dat komt exact overeen
+met de 18 nieuwe artikelen die deze controle vannacht aantrof. Voor zover ik
+als controleur kan vaststellen, lijkt de storing dus opgelost — al kan ik de
+onderliggende oorzaak (kredietbalans, Mistral-terugval-configuratie) niet
+zelf verifiëren, dat blijft aan Erik.

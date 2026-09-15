@@ -210,3 +210,37 @@ Dit is een kort, feitelijk artikel zonder mensen of verhalende elementen, dus
 het is een beperkte test: fouten in geslacht, toon of verhaallijn komen hier
 niet aan het licht. Het bevestigt vooral dat namen en cijfers correct
 overkomen.
+
+### 2026-09-15, Duits
+
+Vandaag is het dinsdag, dus is Duits aan de beurt. De AI-pipeline is
+vannacht voor het eerst sinds 2026-09-10 weer artikelen gaan aanleveren (zie
+de bevinding van vanavond in `backend/selectie-prompt-analyse.md`), dus was
+er nu wél een frisse groep om uit te kiezen. Gepakt: het eerste artikel uit
+de groep van vannacht dat zowel in `data/news_nl.json` als in
+`data/news_de.json` voorkomt.
+
+**Artikel:** Heel Zuidoost-Azië Nu Vrij Van Trachoom
+**Oordeel:** één kleine bevinding.
+
+- **Onvertaald woord in de metadata:** het veld `meta_keywords` van de
+  Duitse versie bevat het woord "Volksgezondheid" — dat is gewoon het
+  Nederlandse woord, onvertaald overgenomen, terwijl de rest van diezelfde
+  komma-lijst wél is vertaald ("Trachom, WHO, Timor-Leste, Südostasien,
+  Blindheit, Volksgezondheid, Krankheitseliminierung"). Het juiste Duitse
+  woord is "Volksgesundheit". Dit staat niet in de zichtbare paginatekst of
+  in de `<meta name="keywords">`-tag zelf (die wordt niet gerenderd op de
+  statische pagina), maar wel in de brondata, dus het kan ergens anders in
+  de site nog opduiken.
+
+Verder komen de Nederlandse en Duitse samenvatting zin voor zin overeen,
+geen toegevoegde of weggelaten feiten. Eigennamen (WHO, Timor-Leste) blijven
+in beide talen onvertaald staan. Er komen geen geslachtsverwijzingen in het
+artikel voor, dus dat punt is hier niet te toetsen. De titel
+("Ganz Südostasien Jetzt Trachomfrei") capitaliseert ieder woord, maar dat is
+consistent met wat deze steekproef eerder al vaststelde: het Duits
+capitaliseert sowieso alle zelfstandige naamwoorden, dus dat is hier geen
+afwijking. `meta_description` komt tussen beide talen inhoudelijk overeen, en
+de statische Duitse artikelpagina bevat dezelfde (afgekapte) tekst als de
+`summary` in `data/news_de.json` — geen afwijking tussen het artikel zelf en
+de feeddata, op de metadata-kwestie hierboven na.
