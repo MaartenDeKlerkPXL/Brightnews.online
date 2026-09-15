@@ -1,5 +1,84 @@
 [
   {
+    "id": "dg-20260914-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-09-14",
+    "title": "Houses, neighbors in the dark and two determined perseverers: the lifestyle news of these days",
+    "summary": "These days show that caring for each other and perseverance often go hand in hand. From a homeless man who finally gets a permanent place, to a motorcyclist and a hiker who push boundaries, and a hotel that let a stuffed animal stay as a VIP guest: the lifestyle stories of recent days revolve around people who persevere or help someone else do so. In London, Michael, who became homeless in Plymouth in 2022, received his own apartment in London through the organization The Connection under the Solo Homes program. His support worker Gen helped with furnishing and access to...",
+    "image_alt": "Houses, neighbors in the dark and two determined perseverers: the lifestyle news of these days",
+    "meta_description": "From permanent homes to record journeys and a stuffed animal on vacation: the positive lifestyle news of recent days at BrightNews.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.positive.news/wp-content/uploads/2026/09/insta_photos.jpg",
+    "date": "2026-09-15T04:39:56.638Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "17894468770162a9ki2qkf",
+        "title": "A Home First, Then Recovery"
+      },
+      {
+        "id": "1789409245357jsvwu6hgj",
+        "title": "Six Hours In The Dark: Strangers Became Neighbors"
+      },
+      {
+        "id": "1789409849831wxbubrpho",
+        "title": "Motorcyclist breaks four records for charity"
+      },
+      {
+        "id": "1789409470504s9irbn7j7",
+        "title": "91-year-old 'Greybeard' completes Appalachian Trail"
+      },
+      {
+        "id": "1789409347343xq0nmhfdb",
+        "title": "Hotel Gives Lost Stuffed Animal Rosie a VIP Vacation"
+      }
+    ]
+  },
+  {
+    "id": "1789447008594levnblqrg",
+    "title": "Elephants Can Control Their Impulses",
+    "summary": "New research shows that elephants can think before they act and suppress impulsive behavior. In experiments at the National Elephant Institute in Thailand, Asian elephants were given a transparent box containing fruit. Instead of immediately reaching for the food, they chose the learned side opening. When the box was rotated, they first reached toward the old position, but quickly corrected...",
+    "image_alt": "Asian elephant examines transparent box with fruit during cognitive experiment in Thailand",
+    "meta_description": "Research shows that elephants can suppress impulses and make rational choices when solving problems.",
+    "meta_keywords": "elephants, cognition, animal research, impulse control, Thailand, PLOS One, Joshua Plotnik",
+    "link": "https://www.goodnewsnetwork.org/elephants-can-think-before-they-act-and-resist-impulsive-behavior/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/elephant-experiment-Hope-et-al-2026-PLOS-One-via-SWNS.jpeg",
+    "date": "2026-09-15T04:36:49.623Z",
+    "category": "Science",
+    "score": 8
+  },
+  {
+    "id": "1789446944015wyj1x51fn",
+    "title": "Athens Builds Megapark on Old Airport",
+    "summary": "On the site of Athens' former airport, the Ellinikon Park is rising: with 400 acres along the coast, it will be Europe's second-largest urban park. The park is designed to remain about 4°C cooler than surrounding asphalt, using simulations of air circulation and evaporation. It will feature 30,000 trees and 3 million smaller plants, spread across more than 520 species,...",
+    "image_alt": "Design impression of the Ellinikon Park on Athens' former airport, with green spaces and water features along the coast",
+    "meta_description": "Athens is building the Ellinikon Park on an old airport: a huge, cool and green urban park against extreme heat.",
+    "meta_keywords": "Ellinikon Park, Athens, urban park, green, climate adaptation, heat, airport, Greece",
+    "link": "https://www.goodnewsnetwork.org/athens-is-turning-its-old-airport-into-one-of-europes-largest-parks/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/The-Ellinikon-design-concept-for-Athens-airport-rehab-The-Ellinikon.jpg",
+    "date": "2026-09-15T04:35:45.682Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "17894468770162a9ki2qkf",
+    "title": "A Home First, Then Recovery",
+    "summary": "A housing model called Housing First gives homeless people a fixed home before tackling other problems. Michael, who became homeless in Plymouth and came to London, received an apartment and a support worker through Solo Homes from The Connection. His rent is paid through benefits, while care costs are covered by the charity. Since he has had a fixed home,...",
+    "image_alt": "A support worker helps someone settle into a new apartment through Housing First",
+    "meta_description": "How Housing First gives homeless people a permanent home first, resulting in sustained recovery and less return to rough sleeping.",
+    "meta_keywords": "Housing First, homelessness, rough sleeping, The Connection, Solo Homes, social housing, mental health care",
+    "link": "https://www.positive.news/society/how-housing-first-is-helping-people-leave-rough-sleeping-behind/",
+    "source": "Positive.News",
+    "image": "https://www.positive.news/wp-content/uploads/2026/09/insta_photos.jpg",
+    "date": "2026-09-15T04:34:39.460Z",
+    "category": "Lifestyle",
+    "score": 10
+  },
+  {
     "id": "dg-20260913-science",
     "type": "digest",
     "digest_date": "2026-09-13",
@@ -2231,58 +2310,6 @@
     "source": "OptimistDaily.com",
     "image": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_400318604_L-1024x682.jpg",
     "date": "2026-09-03T16:17:21.858Z",
-    "category": "Environment"
-  },
-  {
-    "id": "17884522280058hv6q273k",
-    "title": "NASA’s Roman telescope launches after surviving budget cuts",
-    "summary": "A space telescope with 100 times the sky coverage of Hubble lifted off from Florida. Astronomers waited nearly a decade for this. The Nancy Grace Roman Space Telescope survived two White House attempts to cancel it and is now heading into deep space.",
-    "image_alt": "Launch of NASA’s Roman Space Telescope from Florida, with a star-filled sky in the background.",
-    "meta_description": "NASA’s Roman Space Telescope launches successfully after budget cuts. Discover the mission reshaping space exploration.",
-    "meta_keywords": "NASA, Roman Space Telescope, space telescope, launch, science, astronomy, space exploration, NASA mission, space research",
-    "link": "https://www.optimistdaily.com/2026/09/nasas-roman-space-telescope-heads-to-deep-space-after-surviving-budget-cuts/",
-    "source": "OptimistDaily.com",
-    "image": "https://www.optimistdaily.com/wp-content/uploads/55394233857_b754741496_c.jpg",
-    "date": "2026-09-03T16:17:09.024Z",
-    "category": "Science"
-  },
-  {
-    "id": "17884522185001m9zkivwq",
-    "title": "Turning old coalfields into clean energy in Gateshead",
-    "summary": "In Gateshead, where coal mining dates back to 1344 and packhorses once transported 'sea coal,' the region now repurposes its former mining areas into clean energy sources. The historic ties to coal mining, which thrived until the 1980s, are being redirected toward a sustainable future.",
-    "image_alt": "Aerial view of a former coal mining site in Gateshead, now being developed for clean energy production.",
-    "meta_description": "Gateshead transforms old coal mines into clean energy hubs. Learn how historic mining areas are being repurposed for sustainability.",
-    "meta_keywords": "Gateshead, coal mining, clean energy, repurposing, sustainability, energy transition, mining sites, historical coal industry",
-    "link": "https://reasonstobecheerful.world/mine-water-heat-gateshead/",
-    "source": "ReasonsToBeCheerful.world",
-    "image": "https://reasonstobecheerful.world/wp-content/uploads/2026/08/DSCF2132.jpg",
-    "date": "2026-09-03T16:16:59.198Z",
-    "category": "Environment"
-  },
-  {
-    "id": "17884522055352ejawz425",
-    "title": "Wheelchair Built for Rugged Trails",
-    "summary": "A new wheelchair designed to withstand rough terrain in national parks like Utah’s Zion is introduced. The sturdy model enables access to unpaved trails, expanding outdoor experiences for wheelchair users. This follows Zion’s shuttle system, introduced to reduce traffic congestion in the park.",
-    "image_alt": "A wheelchair travels along a dusty trail in a national park with rock formations in the background.",
-    "meta_description": "Discover a wheelchair designed for rugged trails, making national parks accessible to everyone. Innovation for outdoor inclusion.",
-    "meta_keywords": "wheelchair, national parks, accessibility, innovation, Zion, Utah, nature, technology",
-    "link": "https://reasonstobecheerful.world/what-were-reading-rugged-wheelchairs-national-parks/",
-    "source": "ReasonsToBeCheerful.world",
-    "image": "https://reasonstobecheerful.world/wp-content/uploads/2026/08/KTVX2022LOGO.svg",
-    "date": "2026-09-03T16:16:46.408Z",
-    "category": "Tech"
-  },
-  {
-    "id": "1788452195659xy1gejgbs",
-    "title": "Female guides lead safaris in India",
-    "summary": "At dawn in Tadoba-Andhari Tiger Reserve, Maharashtra, tourists wait for a safari to spot tigers. Instead, a group of women in khaki uniforms boarding the jeeps catches their attention. Visitors stare in surprise at these female guides leading the excursions.",
-    "image_alt": "Female safari guides in khaki uniforms boarding a jeep at dawn in Tadoba-Andhari Tiger Reserve, India.",
-    "meta_description": "Female guides surprise tourists by leading safaris in India's Tadoba-Andhari Tiger Reserve, breaking traditional roles.",
-    "meta_keywords": "female guides, India safari, Tadoba-Andhari, female safari leaders, wildlife tourism, Maharashtra, tiger spotting",
-    "link": "https://reasonstobecheerful.world/want-to-see-a-tiger-let-these-women-be-your-guides/",
-    "source": "ReasonsToBeCheerful.world",
-    "image": "https://reasonstobecheerful.world/wp-content/uploads/2026/08/Learning-fieldcraft-at-ProNat.jpeg-Pic-courtesy-Pugdundee_.jpeg",
-    "date": "2026-09-03T16:16:36.747Z",
     "category": "Environment"
   }
 ]
