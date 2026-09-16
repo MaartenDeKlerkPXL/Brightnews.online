@@ -80,7 +80,7 @@ async function vertaalPosts(nlPosts, lang) {
     for (let poging = 0; poging < 2; poging++) {
         const antwoord = await aiCall({
             rol: 'vertalen',
-            prompt: `Vertaal deze socialmediaposts van BrightNews van het Nederlands naar het ${TAAL_NAMEN[lang]}. Behoud per post de stijl en kanaalconventies (hashtags meevertalen waar dat natuurlijk is, emoji's laten staan) en laat de placeholder {URL} exact staan. Voeg niets toe, laat niets weg; vertaal merk- en organisatienamen niet en behoud het geslacht uit het origineel.
+            prompt: `Vertaal deze socialmediaposts van BrightNews van het Nederlands naar het ${TAAL_NAMEN[lang]}. Behoud per post de stijl en kanaalconventies (hashtags meevertalen waar dat natuurlijk is, emoji's laten staan) en laat de placeholder {URL} exact staan. Voeg niets toe, laat niets weg; vertaal merk- en organisatienamen niet, behoud het geslacht uit het origineel, en schrijf aanhalingstekens binnen tekst als typografische tekens (nooit een kaal recht ").
 INVOER:
 ${JSON.stringify({ posts: nlPosts })}
 Antwoord UITSLUITEND met geldig JSON in exact dezelfde vorm: {"posts": [{"kanaal": "..", "tekst": ".."}]}`,

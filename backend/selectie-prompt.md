@@ -13,6 +13,16 @@ scores automatisch 0 en het besluit "nee" — hoe positief de inhoud ook
 aanvoelt. De inhoud van een weekoverzicht ís vaak oprecht positief; dat het
 een weekoverzicht is, sluit het desondanks uit.
 
+Twee nuances bij de poort:
+- De KERNREGEL (verderop) geldt óók hier: is de kern van het verhaal
+  redding, herstel, genezing of iemands transformatie ten goede, dan is de
+  uitsluiting "geen" — óók als de aanleiding misdaad, ramp of verlies was.
+  De poort is er voor items waarvan het nare of uitgeslotene zélf de kern is.
+- Een titel die slechts een rubrieksnaam is ("Intro", "Recommended
+  Reading", "Arts + Sciences") zegt niets: beoordeel puur de tekst.
+  Bundelt die meerdere losse onderwerpen, dan "verzameleditie"; vertelt hij
+  één echt verhaal, dan gewoon beoordelen alsof de titel er niet stond.
+
 STAP 2 — alleen bij uitsluiting "geen": beoordeel het item op de drie
 BrightNews-criteria en geef per criterium een score:
 
@@ -54,6 +64,7 @@ IJKVOORBEELDEN (zo scoor je):
 - "Staat draait financiering van omstreden surveillancecamera's terug" → uitsluiting "politiek", alle scores 0 (dit is alleen goed nieuws als je er politiek zo over denkt — en dát is precies de toets; bovendien is de kern iets wat misging)
 - "De vijf-minutenregel die volgens Reddit echt tegen uitstelgedrag werkt" → uitsluiting "listicle", alle scores 0 (zelfhulpadvies zonder verhaal, hoe bruikbaar ook)
 - "Good News This Week: 5 september — beren, bakkerijen en zeeschildpadden" → uitsluiting "verzameleditie", alle scores 0 (andermans weekoverzicht; BrightNews maakt eigen dagoverzichten)
+- "Van bendeleven naar beschermer van grizzlyberen" → uitsluiting "geen", gevoel 3, formulering 3, relevantie 3, besluit ja (iemands transformatie is de kern; het bendeverleden is slechts de aanleiding — de kernregel wint hier van de afwijslijst)
 
 Gebruik de volledige schaal: een warm, positief verhaal hoort hoge scores te krijgen; alle scores 0 is uitsluitend voor items uit de afwijslijst. Twijfel je bij één criterium tussen twee scores, kies dan de lagere van die twee — maar laat twijfel over één criterium de andere scores niet omlaag trekken.
 

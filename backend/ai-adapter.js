@@ -137,6 +137,42 @@ function repareerRegeleindes(s) {
     return uit;
 }
 
+// Trap 4 (2026-09-16): onge-escapete réchte aanhalingstekens bínnen een
+// stringwaarde — de Duitse vertalingen schreven „Liebestunnel" met een kale
+// ASCII-quote als sluitteken en verloren daarmee 4 van de 5 mislukte
+// artikelen van de poortrun. Heuristiek: een " binnen een string sluit hem
+// alleen als het eerstvolgende niet-witruimteteken , } ] of : is; anders is
+// het een binnenquote en wordt hij ge-escapet.
+function repareerBinnenquotes(s) {
+    let uit = '';
+    let inString = false;
+    let escaped = false;
+    for (let i = 0; i < s.length; i++) {
+        const ch = s[i];
+        if (!inString) {
+            if (ch === '"') inString = true;
+            uit += ch;
+            continue;
+        }
+        if (escaped) { uit += ch; escaped = false; continue; }
+        if (ch === '\\') { uit += ch; escaped = true; continue; }
+        if (ch === '"') {
+            let j = i + 1;
+            while (j < s.length && /\s/.test(s[j])) j++;
+            const volgend = s[j];
+            if (volgend === ',' || volgend === '}' || volgend === ']' || volgend === ':' || volgend === undefined) {
+                inString = false;
+                uit += ch;
+            } else {
+                uit += '\\"';
+            }
+            continue;
+        }
+        uit += ch;
+    }
+    return uit;
+}
+
 function verwerkAIResponse(ruw) {
     const tekst = String(ruw ?? '').replace(/```(json)?/g, '').trim();
     try { return JSON.parse(tekst); } catch { /* volgende trap */ }
@@ -145,7 +181,9 @@ function verwerkAIResponse(ruw) {
     if (start < 0 || eind <= start) return null;
     const kern = tekst.slice(start, eind + 1);
     try { return JSON.parse(kern); } catch { /* volgende trap */ }
-    try { return JSON.parse(repareerRegeleindes(kern)); } catch (err) {
+    const zonderRegeleindes = repareerRegeleindes(kern);
+    try { return JSON.parse(zonderRegeleindes); } catch { /* volgende trap */ }
+    try { return JSON.parse(repareerBinnenquotes(zonderRegeleindes)); } catch (err) {
         console.error('❌ JSON Parse Fout (na reparatie):', err.message);
         return null;
     }
