@@ -1,5 +1,165 @@
 [
   {
+    "id": "dg-20260915-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-09-15",
+    "title": "Alojamiento, música y repostería: calidez en todas sus formas esta semana",
+    "summary": "En estos días, las noticias positivas en Lifestyle giraron principalmente en torno a personas que abren espacio para los demás. Literalmente, en forma de una habitación o una casa, y figuradamente, compartiendo tiempo, talento o dinero. Desde jóvenes que se mudan con personas mayores hasta un actor que construye un pueblo entero para familias de acogida: el tema de la unión está presente en todas partes esta semana. En Vermont, Kayla Mazza (31) y Honey Donegan (77) viven juntas desde 2023 gracias a HomeShare Vermont, una organización que empareja a jóvenes que necesitan una habitación con personas mayores que tienen...",
+    "image_alt": "Alojamiento, música y repostería: calidez en todas sus formas esta semana",
+    "meta_description": "Desde compartir casa con personas mayores hasta un pueblo de acogida de Christian Bale: las noticias de lifestyle positivas del 15 de septiembre de 2026 re",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa838960816e4ca9113d05e_6aa8389558ce38385ea02a11_intergenerational-roommates-cheap-rent-featured.webp",
+    "date": "2026-09-16T16:48:05.964Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "1789533305880mtme7702f",
+        "title": "Descuento de alquiler y amistad al vivir con un senior"
+      },
+      {
+        "id": "1789576988252iy8ftuo0a",
+        "title": "Estudiantes de Frisco hornean para su barrio"
+      },
+      {
+        "id": "17895769652876rwxbghgy",
+        "title": "Pianista Sin Hogar Se Convierte en Estrella y Recauda 50.000 Dólares"
+      },
+      {
+        "id": "1789533027394a1hawnr3o",
+        "title": "Christian Bale Abre Pueblo de Acogida Para Familias"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260915-science",
+    "type": "digest",
+    "digest_date": "2026-09-15",
+    "title": "Talento joven, desiertos rojos e inteligentes elefantes: las noticias científicas de estos días",
+    "summary": "Esta semana demuestra que el progreso a menudo comienza con la búsqueda paciente de respuestas. Jóvenes investigadores se dedican al cáncer y el clima, los geólogos descubren cómo la arena del desierto puede proporcionar energía limpia, y los elefantes resultan pensar mejor antes de actuar de lo que se creía. Tres historias muy diferentes, pero todas con el mismo núcleo: la comprensión conduce a mejores decisiones. En la francesa Brest se reunieron cien jóvenes científicos de 43 países para la tercera edición de EU TalentOn. Entre 21 y 35 años de edad, y ya ocupados con grandes temas como el...",
+    "image_alt": "Talento joven, desiertos rojos e inteligentes elefantes: las noticias científicas de estos días",
+    "meta_description": "Talento joven, desiertos rojos e inteligentes elefantes: las noticias científicas de estos días",
+    "meta_keywords": "Science",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
+    "date": "2026-09-16T16:47:06.218Z",
+    "category": "Science",
+    "refs": [
+      {
+        "id": "1789577102747ecq0t1wdv",
+        "title": "Jóvenes investigadores abordan el cáncer y el clima"
+      },
+      {
+        "id": "1789576831859ulekx38g9",
+        "title": "El Desierto Rojo de Australia Puede Producir Hidrógeno"
+      },
+      {
+        "id": "1789447008594levnblqrg",
+        "title": "Los Elefantes Pueden Controlar Sus Impulsos"
+      }
+    ]
+  },
+  {
+    "id": "1789577164254xqgpzyylg",
+    "title": "Diez Años de Historias sobre Agricultura Regenerativa",
+    "summary": "Farmerama, un podcast que comparte historias sobre agricultura regenerativa, cumple diez años. La fundadora comenzó con la granja familiar de 10 hectáreas en Chile y cofundó el podcast para apoyar a agricultores y trabajadores del campo que trabajan de manera ecológica. Durante todos estos años, el podcast ha mostrado las experiencias de agricultores a pequeña escala, como experimentos con compost...",
+    "image_alt": "Agricultor trabaja en campo de agricultura regenerativa con compost de virutas de madera",
+    "meta_description": "Diez años de Farmerama: cómo un podcast comparte historias sobre agricultura regenerativa y conecta agricultores en todo el mundo.",
+    "meta_keywords": "Farmerama, agricultura regenerativa, agroforestería, agricultura ecológica, podcast, salud del suelo, compost de virutas de madera",
+    "link": "https://theecologist.org/2026/sep/16/stories-emerging-food-system",
+    "source": "Theecologist.org",
+    "image": "https://theecologist.org/sites/default/files/styles/facebook/public/2026-09/572f681a77b857b212bc75eee6f46cc0.webp_.jpeg?h=6c379592&amp;itok=yJQljLhr",
+    "date": "2026-09-16T16:46:06.138Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1789577102747ecq0t1wdv",
+    "title": "Jóvenes investigadores abordan el cáncer y el clima",
+    "summary": "Jóvenes investigadores de toda Europa se han unido para desarrollar soluciones innovadoras para algunos de los mayores desafíos del continente, incluyendo el cambio climático, el cáncer, la salud del suelo y la contaminación del agua. La tercera edición de EU TalentOn concluyó el 11 de septiembre en Brest, Francia. El evento reunió a 100 investigadores al inicio de sus carreras,...",
+    "image_alt": "Jóvenes investigadores de Europa colaboran durante EU TalentOn en Brest",
+    "meta_description": "100 jóvenes investigadores de 43 países trabajaron en Brest en soluciones para cáncer, clima y contaminación del agua.",
+    "meta_keywords": "EU TalentOn, jóvenes investigadores, cambio climático, cáncer, salud del suelo, contaminación del agua, Brest, Europa",
+    "link": "https://www.openaccessgovernment.org/europes-young-researchers-tackle-cancer-climate-and-other-major-challenges/214357/",
+    "source": "Openaccessgovernment.org",
+    "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
+    "date": "2026-09-16T16:45:05.093Z",
+    "category": "Science",
+    "score": 9
+  },
+  {
+    "id": "1789577008130zs40adub8",
+    "title": "Primera Ambulancia Solar Probada En Kenia",
+    "summary": "La primera ambulancia solar del mundo ha completado exitosamente su primera prueba en el mundo real en la zona rural de Kenia. La fuente no proporciona más detalles sobre la prueba.",
+    "image_alt": "Ambulancia solar durante prueba en zona rural de Kenia",
+    "meta_description": "La primera ambulancia solar del mundo supera exitosamente su primera prueba en el mundo real en Kenia.",
+    "meta_keywords": "ambulancia solar, Kenia, energía solar, sanidad, innovación",
+    "link": "https://www.optimistdaily.com/2026/09/the-worlds-first-solar-ambulance-just-completed-its-first-real-world-test-in-rural-kenya/",
+    "source": "OptimistDaily.com",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_23987521_L-1024x681.jpg",
+    "date": "2026-09-16T16:43:29.363Z",
+    "category": "Tech",
+    "score": 9
+  },
+  {
+    "id": "1789576988252iy8ftuo0a",
+    "title": "Estudiantes de Frisco hornean para su barrio",
+    "summary": "Estudiantes en Frisco canalizan su pasión por la repostería para marcar una diferencia en su comunidad. Bajo el nombre Baked Bites, combinan su amor por hornear con cambios positivos en el barrio. La fuente no proporciona más detalles sobre la iniciativa.",
+    "image_alt": "Estudiantes de Frisco hornean juntos por una buena causa",
+    "meta_description": "Estudiantes de Frisco canalizan pasión por repostería en cambio comunitario con iniciativa Baked Bites.",
+    "meta_keywords": "Baked Bites, Frisco, estudiantes, hornear, comunidad, barrio",
+    "link": "https://www.optimistdaily.com/2026/09/baked-bites-how-frisco-students-turned-a-passion-for-baking-into-a-force-for-community-change/",
+    "source": "OptimistDaily.com",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_752259020_L-1024x682.jpg",
+    "date": "2026-09-16T16:43:09.699Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "17895769652876rwxbghgy",
+    "title": "Pianista Sin Hogar Se Convierte en Estrella y Recauda 50.000 Dólares",
+    "summary": "Rhys Wynne-Jones estuvo sin hogar durante diez años en Inglaterra cuando tocó piano una fría noche de enero en St. Mary's Church en Penzance, una de las 'Iglesias Nocturnas' británicas que están abiertas día y noche para personas vulnerables. Un vídeo de su interpretación de Bohemian Rhapsody de Queen se hizo viral, lo que lo hizo conocido como 'The Nightchurch...",
+    "image_alt": "Rhys Wynne-Jones toca piano en St. Mary's Church en Penzance",
+    "meta_description": "Hombre sin hogar se hace viral como 'Nightchurch Pianist' y recauda 54.000 dólares para organizaciones benéficas tras actuación de piano en iglesia.",
+    "meta_keywords": "sin hogar, piano, viral, organizaciones benéficas, Penzance, Nightchurch Pianist, Coastline Housing, Peter Andre",
+    "link": "https://www.goodnewsnetwork.org/homeless-guy-famous-for-playing-piano-in-church-raising-50k/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Formerly-homeless-Rhys-Wynne-Jones-w-piano-SWNS.jpeg",
+    "date": "2026-09-16T16:42:46.582Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "1789576899477ema9ouzfu",
+    "title": "Bisontes Regresan Al Desierto Mexicano Tras 200 Años",
+    "summary": "En la región desértica de Chihuahua, en México, los bisontes han regresado tras una ausencia de 200 años. El año pasado, la Fundación Pro Cuatrociénegas trasladó 48 animales a la Reserva de Vida Silvestre El Santuario, parte del área natural protegida de Cuatrociénegas en Coahuila. Los animales se consideran una especie clave para los pastizales áridos: sus cascos abren el...",
+    "image_alt": "Manada de bisontes en el árido paisaje desértico de Cuatrociénegas, México",
+    "meta_description": "Tras 200 años, los bisontes regresan al desierto de Chihuahua en México, donde ayudan a restaurar el frágil ecosistema de Cuatrociénegas.",
+    "meta_keywords": "bisontes México, Cuatrociénegas, desierto Chihuahua, restauración ecosistémica, Fundación Pro Cuatrociénegas, conservación natural",
+    "link": "https://www.goodnewsnetwork.org/mexico-reintroduced-bison-into-precious-desert-ecosystem-after-century-long-absence/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/01/credit-Jordan-Crawford-via-Unsplash.jpg",
+    "date": "2026-09-16T16:41:41.051Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1789576831859ulekx38g9",
+    "title": "El Desierto Rojo de Australia Puede Producir Hidrógeno",
+    "summary": "Investigadores de la Universidad de Edith Cowan han descubierto que la magnetita, un mineral en las reservas de mineral de hierro de la región de Pilbara en Australia Occidental, puede producir gas hidrógeno cuando reacciona con agua caliente profundamente bajo tierra. Al inyectar una solución en formaciones de hierro bandeado, se puede estimular la producción de hidrógeno. En pruebas a...",
+    "image_alt": "Desierto rojo en Australia Occidental con formaciones rocosas ricas en hierro",
+    "meta_description": "Científicos australianos descubren cómo la magnetita en la región de Pilbara puede producir hidrógeno natural para energía limpia.",
+    "meta_keywords": "hidrógeno, magnetita, Australia, Pilbara, energía verde, mineral de hierro, Universidad de Edith Cowan",
+    "link": "https://www.goodnewsnetwork.org/scientists-determine-australias-vast-red-deserts-could-fuel-a-hydrogen-powered-energy-revolution/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Classic-Australian-Pilbara-region-banded-iron-formations-credit-Edith-Cowan-University-released.jpg",
+    "date": "2026-09-16T16:40:35.027Z",
+    "category": "Science",
+    "score": 8
+  },
+  {
     "id": "dg-20260915-environment",
     "type": "digest",
     "digest_date": "2026-09-15",
@@ -2215,122 +2375,5 @@
     "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/07/India-children-water.jpg",
     "date": "2026-09-03T16:20:18.858Z",
     "category": "Environment"
-  },
-  {
-    "id": "1788452403910lubjxohnl",
-    "title": "Éxitos en conservación en Centroamérica y Kazajistán",
-    "summary": "Las reservas de la biosfera en Centroamérica ayudan a las comunidades locales a vivir de la naturaleza mientras aumentan la cobertura forestal. En Kazajistán, la población de saiga alcanza los 4,6 millones. Investigadores checos crean implantes articulares personalizados impresos en 3D para pacientes que necesitan reemplazos.",
-    "image_alt": "Antílope saiga en Kazajistán, paisaje forestal en Centroamérica con implantes articulares impresos en 3D y un equipo quirúrgico",
-    "meta_description": "Descubre cómo la conservación, el crecimiento de la población de saiga y la innovación médica impulsan cambios positivos en Centroamérica, Kazajistán y República Checa.",
-    "meta_keywords": "conservación, población de saiga, implantes 3D, Centroamérica, Kazajistán, República Checa, reforestación, reemplazo articular",
-    "link": "https://squirrel-news.net/news/green-islands-avoiding-deforestation-in-central-america-saiga-population-grows-by-18000-3d-printed-joint-implants/",
-    "source": "Squirrel-News.net",
-    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/07/andres-ch-mendez-_T7cYIPPu9w-unsplash.jpg",
-    "date": "2026-09-03T16:20:06.601Z",
-    "category": "Environment"
-  },
-  {
-    "id": "1788452391635khacgdm79",
-    "title": "Castores, químicos y datos climáticos en acción",
-    "summary": "Los castores ayudan a proteger los paisajes de los incendios forestales al crear humedales que ralentizan la propagación de las llamas. Suecia prohíbe los 'químicos eternos' en productos cotidianos antes de una acción más amplia de la UE. Investigadores ex-NOAA lanzan una plataforma independiente para mantener datos e investigaciones climáticas de libre acceso.",
-    "image_alt": "Un castor cavando en un río lodoso, una mano sosteniendo un frasco con químicos y una computadora portátil mostrando datos climáticos.",
-    "meta_description": "Descubre cómo castores, Suecia e investigadores combaten incendios, químicos dañinos y datos climáticos restringidos.",
-    "meta_keywords": "castores incendios forestales Suecia químicos eternos datos climáticos conservación ciencia",
-    "link": "https://squirrel-news.net/news/beavers-tackling-wildfires-sweden-to-ban-forever-chemicals-researchers-secure-access-to-climate-knowledge/",
-    "source": "Squirrel-News.net",
-    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/07/derek-otway-eP2vzcEbmuU-unsplash.jpg",
-    "date": "2026-09-03T16:19:54.399Z",
-    "category": "Environment"
-  },
-  {
-    "id": "1788452380111ptqqwf1nc",
-    "title": "Destacados de julio: agua, transporte y caminata",
-    "summary": "En julio se lanzaron iniciativas positivas en el mundo. En India, más de 100 millones de hogares rurales obtuvieron acceso al agua potable. Porto ofreció transporte público gratuito. El NHS británico premió a residentes que caminaban 30 minutos diarios.",
-    "image_alt": "Un niño bebe agua de un grifo, un tranvía en Porto y una persona caminando en un parque con un teléfono en la mano.",
-    "meta_description": "Resumen de iniciativas positivas en julio: acceso al agua potable para hogares rurales en India, transporte público gratuito en Porto y recompensas del NHS por caminar.",
-    "meta_keywords": "agua potable India, transporte gratuito Porto, programa caminata NHS, buenas noticias julio",
-    "link": "https://squirrel-news.net/news/best-of-july-drinking-water-for-millions-of-households-free-public-transport-in-porto-rewards-for-30-minutes-walks/",
-    "source": "Squirrel-News.net",
-    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/07/Indien-Doerfer-Landschaft.jpg",
-    "date": "2026-09-03T16:19:42.783Z",
-    "category": "Environment"
-  },
-  {
-    "id": "1788452368473klw7rk9jd",
-    "title": "Deforestación amazónica en mínimo de 13 años, ciudades se enfrían con agua de lluvia, ciclismo más diverso",
-    "summary": "La deforestación en la Amazonía brasileña alcanza su nivel más bajo en 13 años. Recolectar agua de lluvia en techos podría ayudar a las ciudades a mantenerse más frescas durante olas de calor. En Bogotá aumenta la proporción de viajes en bicicleta realizados por mujeres.",
-    "image_alt": "Selva amazónica exuberante con sistemas de recolección de agua de lluvia en techos y mujeres en bicicleta en Bogotá",
-    "meta_description": "Deforestación amazónica en mínimo de 13 años, agua de lluvia enfría ciudades, más mujeres en bicicleta en Bogotá",
-    "meta_keywords": "Deforestación Amazonia, recolección agua lluvia, ciudades frescas, mujeres bicicleta Bogotá, noticias medioambiente",
-    "link": "https://squirrel-news.net/news/amazon-deforestation-hits-13-year-low-cooling-cities-with-rooftop-rainwater-breaking-cycling-gender-barriers/",
-    "source": "Squirrel-News.net",
-    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/08/james-cheung-bWyh1FC7JrI-unsplash.jpg",
-    "date": "2026-09-03T16:19:31.542Z",
-    "category": "Environment"
-  },
-  {
-    "id": "1788452358039hlgfy6s35",
-    "title": "Avances globales en educación",
-    "summary": "La tasa de alfabetización se revirtió: de 1 en 10 en 1820 a solo 1 en 10 analfabeto hoy. Los niños sin escolarizar bajaron de 390 millones en 2000 a 244 millones en 2023, pese al crecimiento poblacional. Desde 2020, 466 millones de niños reciben comidas escolares, un aumento del 20%. La pobreza infantil en Asia Meridional se redujo a...",
-    "image_alt": "Niños en un aula con libros y materiales escolares, representando avances globales en educación y alfabetización.",
-    "meta_description": "Descubre cómo la alfabetización y el acceso a la escuela han mejorado drásticamente en el mundo en los últimos siglos y décadas.",
-    "meta_keywords": "alfabetización, educación, pobreza infantil, acceso a la escuela, progreso global, analfabetismo, comidas escolares, India, Asia Meridional, 2023",
-    "link": "https://squirrel-news.net/news/special-edition-on-global-progress/",
-    "source": "Squirrel-News.net",
-    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/08/Schulkinder-Haiti.jpg",
-    "date": "2026-09-03T16:19:19.519Z",
-    "category": "Education"
-  },
-  {
-    "id": "1788452344904h6c5i3q3t",
-    "title": "Mantenerse fresco en olas de calor",
-    "summary": "Las olas de calor en el mundo son cada vez más largas y más intensas. Soluciones para proteger a las personas y ciudades de las altas temperaturas incluyen fachadas verdes y sistemas de refrigeración subterráneos. Métodos innovadores ayudan a mantenerse fresco durante el calor extremo.",
-    "image_alt": "Fachadas verdes y sistemas de refrigeración subterráneos como soluciones contra olas de calor",
-    "meta_description": "Soluciones para olas de calor: fachadas verdes y sistemas de refrigeración subterráneos para ciudades más frescas.",
-    "meta_keywords": "olas de calor, sistemas de refrigeración, fachadas verdes, calor extremo, soluciones climáticas",
-    "link": "https://squirrel-news.net/news/special-edition-keeping-cool-during-extreme-heat/",
-    "source": "Squirrel-News.net",
-    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/08/Metropol_Parasol-Sevilla.jpg",
-    "date": "2026-09-03T16:19:07.333Z",
-    "category": "Environment"
-  },
-  {
-    "id": "17884523343511und12xiu",
-    "title": "Clínicas móviles y biblioteca de naturaleza acercan salud y aventura",
-    "summary": "En el Reino Unido, clínicas móviles para la detección del cáncer de cuello uterino recorren Cheshire y Merseyside para aumentar la participación. En Francia, médicos visitan clínicas pequeñas en zonas rurales mediante un sistema de rotación para cubrir la escasez de médicos generales. En Colorado, se inaugura la primera 'biblioteca de naturaleza', donde se pueden tomar prestado equipo para explorar...",
-    "image_alt": "Un autobús blanco 'Living Well' estacionado cerca de una clínica local con médicos y pacientes alrededor.",
-    "meta_description": "Clínicas móviles mejoran el acceso a la salud en el Reino Unido y Francia, mientras que Colorado lanza una biblioteca de naturaleza para aventuras al aire libre.",
-    "meta_keywords": "salud, clínica móvil, detección cáncer cuello uterino, biblioteca naturaleza, escasez médicos generales, accesibilidad, prevención",
-    "link": "https://squirrel-news.net/news/cervical-screening-bus-tackling-frances-medical-deserts-us-opens-first-nature-library/",
-    "source": "Squirrel-News.net",
-    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/08/livingwellbus.jpeg",
-    "date": "2026-09-03T16:18:55.857Z",
-    "category": "Health"
-  },
-  {
-    "id": "178845232327282hlv1jno",
-    "title": "Vacuna de ARN mensajero contra el cáncer logra avance",
-    "summary": "Una vacuna personalizada contra el cáncer con ARN mensajero muestra resultados prometedores en ensayos de fase avanzada. Festivales adaptan sus actividades para restaurar las tierras que usan. Una biblioteca móvil lleva libros y actividades creativas a comunidades rurales en Siria.",
-    "image_alt": "Un médico sostiene una vacuna de ARN mensajero contra el cáncer, mientras un autobús de biblioteca móvil recorre una calle de pueblo y un terreno de festival con naturaleza restaurada al fondo.",
-    "meta_description": "Descubre cómo una vacuna de ARN mensajero contra el cáncer, la restauración de tierras por festivales y una biblioteca móvil en Siria traen esperanza.",
-    "meta_keywords": "vacuna ARN mensajero, cáncer, restauración de tierras, festivales, biblioteca móvil, Siria, noticias de salud, innovación",
-    "link": "https://squirrel-news.net/news/first-mrna-cancer-vaccine-succeeds-in-final-trials-festivals-restoring-land-mobile-library-in-rural-syria/",
-    "source": "Squirrel-News.net",
-    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/08/kateryna-hliznitsova-Kylmk1kTIkU-unsplash.jpg",
-    "date": "2026-09-03T16:18:44.580Z",
-    "category": "Health"
-  },
-  {
-    "id": "17884523124328m2ms8qmv",
-    "title": "Licencia paterna, menos estrés",
-    "summary": "Nuevos datos sugieren que licencias de paternidad más largas están estrechamente vinculadas a menores tasas de depresión. En Londres, la zona de bajas emisiones ULEZ favorece un crecimiento pulmonar más rápido en niños pequeños. Además, se lleva a cabo una campaña de vacunación para 5.000 pequeños pingüinos.",
-    "image_alt": "Padre con niño en brazos, pingüino recibiendo vacuna, niño corriendo en aire limpio",
-    "meta_description": "Estudios muestran que la licencia paterna mejora la salud mental, el ULEZ acelera el crecimiento pulmonar infantil y se vacunan pingüinos.",
-    "meta_keywords": "licencia paterna, salud mental, ULEZ, crecimiento pulmonar, pingüinos, vacunación, aire limpio, salud infantil",
-    "link": "https://squirrel-news.net/news/paternity-leave-improves-mental-health-clean-air-zones-see-faster-lung-growth-vaccinating-5000-tiny-penguins/",
-    "source": "Squirrel-News.net",
-    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/08/olivia-anne-snyder-Bmb4OVNozOs-unsplash.jpg",
-    "date": "2026-09-03T16:18:34.192Z",
-    "category": "Health"
   }
 ]

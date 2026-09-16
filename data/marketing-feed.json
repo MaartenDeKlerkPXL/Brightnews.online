@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-09-16T04:36:56.816Z",
+ "gegenereerd": "2026-09-16T16:48:06.317Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -47,6 +47,20 @@
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260915-lifestyle",
+     "titel": "Onderdak, muziek en gebak: warmte in alle soorten deze week",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-15",
+     "url": "https://brightnews.online/articles/nl/onderdak-muziek-en-gebak-warmte-in-alle-soorten-deze-week-dg-20260915-lifestyle.html"
+    },
+    {
+     "id": "dg-20260915-science",
+     "titel": "Jong talent, rode woestijnen en slimme olifanten: het wetenschapsnieuws van deze dagen",
+     "categorie": "Science",
+     "dag": "2026-09-15",
+     "url": "https://brightnews.online/articles/nl/jong-talent-rode-woestijnen-en-slimme-olifanten-het-wetenschapsnieuws-van-deze-d-dg-20260915-science.html"
+    },
     {
      "id": "dg-20260915-environment",
      "titel": "Schildpadden, een park en Europese doelen: drie tekens van vooruitgang",
@@ -122,6 +136,20 @@
    ],
    "dagoverzichten": [
     {
+     "id": "dg-20260915-lifestyle",
+     "titel": "Shelter, music and baking: warmth in all its forms this week",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-15",
+     "url": "https://brightnews.online/articles/en/shelter-music-and-baking-warmth-in-all-its-forms-this-week-dg-20260915-lifestyle.html"
+    },
+    {
+     "id": "dg-20260915-science",
+     "titel": "Young talent, red deserts and clever elephants: this week's science news",
+     "categorie": "Science",
+     "dag": "2026-09-15",
+     "url": "https://brightnews.online/articles/en/young-talent-red-deserts-and-clever-elephants-this-week-s-science-news-dg-20260915-science.html"
+    },
+    {
      "id": "dg-20260915-environment",
      "titel": "Turtles, a park and European targets: three signs of progress",
      "categorie": "Environment",
@@ -195,6 +223,20 @@
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260915-lifestyle",
+     "titel": "Unterkunft, Musik und Gebäck: Wärme in allen Varianten diese Woche",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-15",
+     "url": "https://brightnews.online/articles/de/unterkunft-musik-und-geback-warme-in-allen-varianten-diese-woche-dg-20260915-lifestyle.html"
+    },
+    {
+     "id": "dg-20260915-science",
+     "titel": "Junges Talent, rote Wüsten und kluge Elefanten: die Wissenschaftsnachrichten dieser Tage",
+     "categorie": "Science",
+     "dag": "2026-09-15",
+     "url": "https://brightnews.online/articles/de/junges-talent-rote-wusten-und-kluge-elefanten-die-wissenschaftsnachrichten-diese-dg-20260915-science.html"
+    },
     {
      "id": "dg-20260915-environment",
      "titel": "Schildkröten, ein Park und europäische Ziele: drei Zeichen des Fortschritts",
@@ -270,6 +312,20 @@
    ],
    "dagoverzichten": [
     {
+     "id": "dg-20260915-lifestyle",
+     "titel": "Un logement, de la musique et des pâtisseries : de la chaleur sous toutes ses formes cette semaine",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-15",
+     "url": "https://brightnews.online/articles/fr/un-logement-de-la-musique-et-des-patisseries-de-la-chaleur-sous-toutes-ses-forme-dg-20260915-lifestyle.html"
+    },
+    {
+     "id": "dg-20260915-science",
+     "titel": "Jeunes talents, déserts rouges et éléphants intelligents : l'actualité scientifique de ces jours",
+     "categorie": "Science",
+     "dag": "2026-09-15",
+     "url": "https://brightnews.online/articles/fr/jeunes-talents-deserts-rouges-et-elephants-intelligents-l-actualite-scientifique-dg-20260915-science.html"
+    },
+    {
      "id": "dg-20260915-environment",
      "titel": "Des tortues, un parc et des objectifs européens : trois signes de progrès",
      "categorie": "Environment",
@@ -343,6 +399,20 @@
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260915-lifestyle",
+     "titel": "Alojamiento, música y repostería: calidez en todas sus formas esta semana",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-15",
+     "url": "https://brightnews.online/articles/es/alojamiento-musica-y-reposteria-calidez-en-todas-sus-formas-esta-semana-dg-20260915-lifestyle.html"
+    },
+    {
+     "id": "dg-20260915-science",
+     "titel": "Talento joven, desiertos rojos e inteligentes elefantes: las noticias científicas de estos días",
+     "categorie": "Science",
+     "dag": "2026-09-15",
+     "url": "https://brightnews.online/articles/es/talento-joven-desiertos-rojos-e-inteligentes-elefantes-las-noticias-cientificas--dg-20260915-science.html"
+    },
     {
      "id": "dg-20260915-environment",
      "titel": "Tortugas, un parque y objetivos europeos: tres señales de progreso",

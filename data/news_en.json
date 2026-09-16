@@ -1,5 +1,165 @@
 [
   {
+    "id": "dg-20260915-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-09-15",
+    "title": "Shelter, music and baking: warmth in all its forms this week",
+    "summary": "These days, positive news in Lifestyle has largely revolved around people making room for one another. Literally, in the form of a room or a house, and figuratively, by sharing time, talent or money. From young people moving in with seniors to an actor building an entire village for foster families: the theme of togetherness has been everywhere this week. In Vermont, Kayla Mazza (31) and Honey Donegan (77) have been living together since 2023 thanks to HomeShare Vermont, an organization that matches young people needing a room with seniors who have space to spare. Mazza pays 650 dollars in...",
+    "image_alt": "Shelter, music and baking: warmth in all its forms this week",
+    "meta_description": "From sharing homes with seniors to a foster care village by Christian Bale: the positive lifestyle news of September 15, 2026 at a glance.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa838960816e4ca9113d05e_6aa8389558ce38385ea02a11_intergenerational-roommates-cheap-rent-featured.webp",
+    "date": "2026-09-16T16:48:05.964Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "1789533305880mtme7702f",
+        "title": "Rent reduction and friendship by living with a senior"
+      },
+      {
+        "id": "1789576988252iy8ftuo0a",
+        "title": "Frisco students bake for their community"
+      },
+      {
+        "id": "17895769652876rwxbghgy",
+        "title": "Homeless Pianist Becomes Star And Raises 50,000 Dollars"
+      },
+      {
+        "id": "1789533027394a1hawnr3o",
+        "title": "Christian Bale Opens Foster Care Village For Families"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260915-science",
+    "type": "digest",
+    "digest_date": "2026-09-15",
+    "title": "Young talent, red deserts and clever elephants: this week's science news",
+    "summary": "This week shows that progress often begins with patient searching for answers. Young researchers are tackling cancer and climate, geologists discover how desert sand can deliver clean energy, and elephants turn out to think before they act more than expected. Three very different stories, but all with the same core: understanding leads to better choices. In the French city of Brest, a hundred young scientists from 43 countries came together for the third edition of EU TalentOn. Between 21 and 35 years old, and already busy with major themes such as climate change, cancer, soil health and water pollution. The...",
+    "image_alt": "Young talent, red deserts and clever elephants: this week's science news",
+    "meta_description": "Young scientists tackle cancer and climate, desert sand produces hydrogen, and elephants show self-control.",
+    "meta_keywords": "Science",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
+    "date": "2026-09-16T16:47:06.218Z",
+    "category": "Science",
+    "refs": [
+      {
+        "id": "1789577102747ecq0t1wdv",
+        "title": "Young researchers tackle cancer and climate"
+      },
+      {
+        "id": "1789576831859ulekx38g9",
+        "title": "Australia's Red Desert Can Deliver Hydrogen"
+      },
+      {
+        "id": "1789447008594levnblqrg",
+        "title": "Elephants Can Control Their Impulses"
+      }
+    ]
+  },
+  {
+    "id": "1789577164254xqgpzyylg",
+    "title": "Ten Years of Stories For Regenerative Farming",
+    "summary": "Farmerama, a podcast sharing stories about regenerative farming, celebrates ten years. The founder started with her family's farm on 10 hectares in Chile and co-founded the podcast to support farmers and farmworkers operating ecologically. Over the years, the podcast has showcased the experiences of small-scale farmers, such as experiments with wood chip compost and agroforestry. These stories helped isolated farmers...",
+    "image_alt": "Farmer works on regenerative farming field with wood chip compost",
+    "meta_description": "Ten years of Farmerama: how a podcast shares stories about regenerative farming and connects farmers worldwide.",
+    "meta_keywords": "Farmerama, regenerative farming, agroforestry, organic farming, podcast, soil health, wood chip compost",
+    "link": "https://theecologist.org/2026/sep/16/stories-emerging-food-system",
+    "source": "Theecologist.org",
+    "image": "https://theecologist.org/sites/default/files/styles/facebook/public/2026-09/572f681a77b857b212bc75eee6f46cc0.webp_.jpeg?h=6c379592&amp;itok=yJQljLhr",
+    "date": "2026-09-16T16:46:06.138Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1789577102747ecq0t1wdv",
+    "title": "Young researchers tackle cancer and climate",
+    "summary": "Young researchers from across Europe have joined forces to develop innovative solutions to some of the continent's greatest challenges, including climate change, cancer, soil health and water pollution. The third edition of EU TalentOn concluded on 11 September in Brest, France. The event brought together 100 researchers at the beginning of their careers, aged between 21 and 35 years. They...",
+    "image_alt": "Young researchers from Europe collaborate during EU TalentOn in Brest",
+    "meta_description": "100 young researchers from 43 countries worked in Brest on solutions for cancer, climate and water pollution.",
+    "meta_keywords": "EU TalentOn, young researchers, climate change, cancer, soil health, water pollution, Brest, Europe",
+    "link": "https://www.openaccessgovernment.org/europes-young-researchers-tackle-cancer-climate-and-other-major-challenges/214357/",
+    "source": "Openaccessgovernment.org",
+    "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
+    "date": "2026-09-16T16:45:05.093Z",
+    "category": "Science",
+    "score": 9
+  },
+  {
+    "id": "1789577008130zs40adub8",
+    "title": "First Solar Ambulance Tested In Kenya",
+    "summary": "The world's first solar ambulance has successfully completed its first real-world test in rural Kenya. Further details about the test are not provided in the source.",
+    "image_alt": "Solar ambulance during test in rural Kenya",
+    "meta_description": "World's first solar ambulance passes initial real-world test in rural Kenya.",
+    "meta_keywords": "solar ambulance, Kenya, solar energy, healthcare, innovation",
+    "link": "https://www.optimistdaily.com/2026/09/the-worlds-first-solar-ambulance-just-completed-its-first-real-world-test-in-rural-kenya/",
+    "source": "OptimistDaily.com",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_23987521_L-1024x681.jpg",
+    "date": "2026-09-16T16:43:29.363Z",
+    "category": "Tech",
+    "score": 9
+  },
+  {
+    "id": "1789576988252iy8ftuo0a",
+    "title": "Frisco students bake for their community",
+    "summary": "Students in Frisco are channeling their passion for baking to make a difference in their community. Under the name Baked Bites, they combine their love of baking with positive change in the neighborhood. Further details about the initiative are not provided in the source.",
+    "image_alt": "Students from Frisco bake together for a good cause",
+    "meta_description": "Frisco students channel baking passion for community change with Baked Bites initiative.",
+    "meta_keywords": "Baked Bites, Frisco, students, baking, community, neighborhood",
+    "link": "https://www.optimistdaily.com/2026/09/baked-bites-how-frisco-students-turned-a-passion-for-baking-into-a-force-for-community-change/",
+    "source": "OptimistDaily.com",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_752259020_L-1024x682.jpg",
+    "date": "2026-09-16T16:43:09.699Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "17895769652876rwxbghgy",
+    "title": "Homeless Pianist Becomes Star And Raises 50,000 Dollars",
+    "summary": "Rhys Wynne-Jones was homeless for ten years in England when he played piano on a cold January evening at St. Mary's Church in Penzance, one of Britain's 'Nightchurches' that are open day and night for vulnerable people. A video of his performance of Queen's Bohemian Rhapsody went viral, making him known as 'The Nightchurch Pianist'. He performed at a charity...",
+    "image_alt": "Rhys Wynne-Jones plays piano at St. Mary's Church in Penzance",
+    "meta_description": "Homeless man goes viral as 'Nightchurch Pianist' and raises 54,000 dollars for charities after piano performance in church.",
+    "meta_keywords": "homeless, piano, viral, charities, Penzance, Nightchurch Pianist, Coastline Housing, Peter Andre",
+    "link": "https://www.goodnewsnetwork.org/homeless-guy-famous-for-playing-piano-in-church-raising-50k/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Formerly-homeless-Rhys-Wynne-Jones-w-piano-SWNS.jpeg",
+    "date": "2026-09-16T16:42:46.582Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "1789576899477ema9ouzfu",
+    "title": "Bison Return to Mexican Desert After 200 Years",
+    "summary": "Bison have returned to Mexico's Chihuahua desert region after a 200-year absence. Last year, the Fundación Pro Cuatrociénegas brought 48 animals to El Santuario Wildlife Reserve, part of the protected natural area Cuatrociénegas in Coahuila. The animals are considered a key species for dry grasslands: their hooves break open the ground, their fur spreads seeds, and their dung fertilizes the...",
+    "image_alt": "Herd of bison in the dry desert landscape of Cuatrociénegas, Mexico",
+    "meta_description": "After 200 years, bison have returned to Mexico's Chihuahua desert, where they help restore the fragile ecosystem of Cuatrociénegas.",
+    "meta_keywords": "bison Mexico, Cuatrociénegas, Chihuahua desert, ecosystem restoration, Fundación Pro Cuatrociénegas, nature conservation",
+    "link": "https://www.goodnewsnetwork.org/mexico-reintroduced-bison-into-precious-desert-ecosystem-after-century-long-absence/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/01/credit-Jordan-Crawford-via-Unsplash.jpg",
+    "date": "2026-09-16T16:41:41.051Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1789576831859ulekx38g9",
+    "title": "Australia's Red Desert Can Deliver Hydrogen",
+    "summary": "Researchers from Edith Cowan University have discovered that magnetite, a mineral in the iron ore reserves of the Pilbara region in Western Australia, can produce hydrogen gas when it reacts with hot water deep underground. By injecting a solution into banded iron formations, hydrogen production can be stimulated. In tests at 200°C and high pressure over 60 days, powdered magnetite...",
+    "image_alt": "Red desert in Western Australia with iron-rich rock formations",
+    "meta_description": "Australian scientists discover how magnetite in the Pilbara region can produce natural hydrogen for clean energy.",
+    "meta_keywords": "hydrogen, magnetite, Australia, Pilbara, green energy, iron ore, Edith Cowan University",
+    "link": "https://www.goodnewsnetwork.org/scientists-determine-australias-vast-red-deserts-could-fuel-a-hydrogen-powered-energy-revolution/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Classic-Australian-Pilbara-region-banded-iron-formations-credit-Edith-Cowan-University-released.jpg",
+    "date": "2026-09-16T16:40:35.027Z",
+    "category": "Science",
+    "score": 8
+  },
+  {
     "id": "dg-20260915-environment",
     "type": "digest",
     "digest_date": "2026-09-15",
@@ -2215,122 +2375,5 @@
     "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/07/India-children-water.jpg",
     "date": "2026-09-03T16:20:18.858Z",
     "category": "Environment"
-  },
-  {
-    "id": "1788452403910lubjxohnl",
-    "title": "Nature thrives as Central America and Kazakhstan see conservation wins",
-    "summary": "Biosphere reserves in Central America enable local communities to earn a living from nature while increasing forest cover. Kazakhstan’s saiga population has grown to 4.6 million. Czech researchers create custom-made 3D-printed joint implants for patients in need of replacements.",
-    "image_alt": "Saiga antelope in Kazakhstan, Central American forest landscape with 3D-printed joint implants and a surgical team",
-    "meta_description": "Discover how conservation efforts, saiga population growth and medical innovation drive positive change in Central America, Kazakhstan and the Czech Republic.",
-    "meta_keywords": "conservation, saiga population, 3D-printed implants, Central America, Kazakhstan, Czech Republic, forest restoration, joint replacements",
-    "link": "https://squirrel-news.net/news/green-islands-avoiding-deforestation-in-central-america-saiga-population-grows-by-18000-3d-printed-joint-implants/",
-    "source": "Squirrel-News.net",
-    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/07/andres-ch-mendez-_T7cYIPPu9w-unsplash.jpg",
-    "date": "2026-09-03T16:20:06.600Z",
-    "category": "Environment"
-  },
-  {
-    "id": "1788452391635khacgdm79",
-    "title": "Beavers, chemicals and climate data in action",
-    "summary": "Beavers help protect landscapes from wildfires by creating wetlands that slow the spread of flames. Sweden moves to ban 'forever chemicals' in everyday products ahead of wider EU action. Former NOAA researchers launch an independent platform to keep climate data and research freely accessible.",
-    "image_alt": "A beaver digging in a muddy river, a hand holding a bottle of chemicals, and a laptop displaying climate data on screen.",
-    "meta_description": "Discover how beavers, Sweden and researchers tackle wildfires, harmful chemicals and restricted climate data.",
-    "meta_keywords": "beavers wildfires Sweden forever chemicals climate data conservation science",
-    "link": "https://squirrel-news.net/news/beavers-tackling-wildfires-sweden-to-ban-forever-chemicals-researchers-secure-access-to-climate-knowledge/",
-    "source": "Squirrel-News.net",
-    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/07/derek-otway-eP2vzcEbmuU-unsplash.jpg",
-    "date": "2026-09-03T16:19:54.399Z",
-    "category": "Environment"
-  },
-  {
-    "id": "1788452380111ptqqwf1nc",
-    "title": "July highlights: water, transport and walking",
-    "summary": "In July, global positive initiatives were launched. In India, over 100 million rural households gained access to drinking water. Porto offered free public transport. The UK NHS rewarded residents who walked 30 minutes daily.",
-    "image_alt": "A child drinks water from a tap, a tram in Porto, and a person walking in a park with a phone in hand.",
-    "meta_description": "Overview of positive initiatives in July: drinking water for rural households in India, free public transport in Porto and NHS rewards for walking.",
-    "meta_keywords": "drinking water India, free public transport Porto, NHS walking program, positive news July",
-    "link": "https://squirrel-news.net/news/best-of-july-drinking-water-for-millions-of-households-free-public-transport-in-porto-rewards-for-30-minutes-walks/",
-    "source": "Squirrel-News.net",
-    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/07/Indien-Doerfer-Landschaft.jpg",
-    "date": "2026-09-03T16:19:42.783Z",
-    "category": "Environment"
-  },
-  {
-    "id": "1788452368473klw7rk9jd",
-    "title": "Amazon deforestation drops to 13-year low, cities cool with rooftop rainwater, cycling gender gap narrows",
-    "summary": "Deforestation in the Brazilian Amazon has reached its lowest level in 13 years. Harvesting rainwater from rooftops could help cities stay cooler during heatwaves. Bogotá increases the proportion of cycling journeys taken by women.",
-    "image_alt": "Lush Amazon rainforest with rooftop rainwater collection systems and women cycling in Bogotá",
-    "meta_description": "Amazon deforestation hits 13-year low, rooftop rainwater cools cities, more women cycle in Bogotá",
-    "meta_keywords": "Amazon deforestation, rooftop rainwater, urban cooling, women cycling Bogotá, environmental news",
-    "link": "https://squirrel-news.net/news/amazon-deforestation-hits-13-year-low-cooling-cities-with-rooftop-rainwater-breaking-cycling-gender-barriers/",
-    "source": "Squirrel-News.net",
-    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/08/james-cheung-bWyh1FC7JrI-unsplash.jpg",
-    "date": "2026-09-03T16:19:31.542Z",
-    "category": "Environment"
-  },
-  {
-    "id": "1788452358039hlgfy6s35",
-    "title": "Global literacy and education gains",
-    "summary": "Literacy rates have reversed from 1 in 10 in 1820 to only 1 in 10 illiterate today. Out-of-school children dropped from 390 million in 2000 to 244 million in 2023, despite population growth. Since 2020, 466 million children receive school meals, a 20% increase. Child poverty in South Asia more than halved, with India showing the largest reduction.",
-    "image_alt": "Children in a classroom with books and supplies, representing global progress in literacy and education.",
-    "meta_description": "Explore how global literacy and school access have dramatically improved over centuries and decades.",
-    "meta_keywords": "literacy, education, child poverty, school access, global progress, illiteracy, school meals, India, South Asia, 2023",
-    "link": "https://squirrel-news.net/news/special-edition-on-global-progress/",
-    "source": "Squirrel-News.net",
-    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/08/Schulkinder-Haiti.jpg",
-    "date": "2026-09-03T16:19:19.519Z",
-    "category": "Education"
-  },
-  {
-    "id": "1788452344904h6c5i3q3t",
-    "title": "Staying cool during heatwaves",
-    "summary": "Heatwaves worldwide are getting longer and hotter. Solutions to protect people and cities from high temperatures include green façades and underground cooling systems. Innovative methods help maintain coolness during extreme heat.",
-    "image_alt": "Green façades and underground cooling systems as solutions against heatwaves",
-    "meta_description": "Solutions for heatwaves: green façades and underground cooling systems for cooler cities.",
-    "meta_keywords": "heatwaves, cooling systems, green façades, extreme heat, climate solutions",
-    "link": "https://squirrel-news.net/news/special-edition-keeping-cool-during-extreme-heat/",
-    "source": "Squirrel-News.net",
-    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/08/Metropol_Parasol-Sevilla.jpg",
-    "date": "2026-09-03T16:19:07.333Z",
-    "category": "Environment"
-  },
-  {
-    "id": "17884523343511und12xiu",
-    "title": "Mobile clinics and nature library bring care and adventure",
-    "summary": "In the UK, mobile clinics for cervical cancer screening travel through Cheshire and Merseyside to increase participation. In France, doctors visit small-town clinics via a rotation system to address GP shortages. In Colorado, the first 'nature library' opens, allowing people to borrow tools for outdoor experiences.",
-    "image_alt": "A white 'Living Well' bus parked near a local clinic with doctors and patients nearby.",
-    "meta_description": "Mobile clinics improve healthcare access in the UK and France, while Colorado launches a nature library for free outdoor adventures.",
-    "meta_keywords": "healthcare, mobile clinic, cervical cancer screening, nature library, GP shortage, accessibility, prevention",
-    "link": "https://squirrel-news.net/news/cervical-screening-bus-tackling-frances-medical-deserts-us-opens-first-nature-library/",
-    "source": "Squirrel-News.net",
-    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/08/livingwellbus.jpeg",
-    "date": "2026-09-03T16:18:55.857Z",
-    "category": "Health"
-  },
-  {
-    "id": "178845232327282hlv1jno",
-    "title": "mRNA cancer vaccine achieves breakthrough",
-    "summary": "A personalized mRNA cancer vaccine shows promising results in late-stage trials. Festivals are adapting practices to restore the land they use. A mobile library delivers books and creative activities to rural communities in Syria.",
-    "image_alt": "A doctor holds up an mRNA cancer vaccine, while a mobile library bus drives through a village street and a festival site with restored nature in the background.",
-    "meta_description": "Learn how an mRNA cancer vaccine, land restoration by festivals and a mobile library in Syria bring hope.",
-    "meta_keywords": "mRNA cancer vaccine, land restoration, festivals, mobile library, Syria, health news, innovation",
-    "link": "https://squirrel-news.net/news/first-mrna-cancer-vaccine-succeeds-in-final-trials-festivals-restoring-land-mobile-library-in-rural-syria/",
-    "source": "Squirrel-News.net",
-    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/08/kateryna-hliznitsova-Kylmk1kTIkU-unsplash.jpg",
-    "date": "2026-09-03T16:18:44.580Z",
-    "category": "Health"
-  },
-  {
-    "id": "17884523124328m2ms8qmv",
-    "title": "Dads’ leave, happier minds",
-    "summary": "New data suggest longer paternity leaves are closely linked to lower depression rates. London’s ULEZ clean air zone leads to faster lung growth in young children. Meanwhile, a vaccination scheme for 5,000 small penguins is underway to protect their health.",
-    "image_alt": "Father holding child, penguin receiving vaccination, child running in clean air",
-    "meta_description": "Research shows paternity leave boosts mental health, ULEZ improves children’s lung growth, and penguins receive vaccinations for survival.",
-    "meta_keywords": "paternity leave, mental health, ULEZ, lung growth, penguins, vaccination, clean air, child health",
-    "link": "https://squirrel-news.net/news/paternity-leave-improves-mental-health-clean-air-zones-see-faster-lung-growth-vaccinating-5000-tiny-penguins/",
-    "source": "Squirrel-News.net",
-    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/08/olivia-anne-snyder-Bmb4OVNozOs-unsplash.jpg",
-    "date": "2026-09-03T16:18:34.192Z",
-    "category": "Health"
   }
 ]
