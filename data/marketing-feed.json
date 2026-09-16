@@ -1,10 +1,26 @@
 {
- "gegenereerd": "2026-09-15T04:39:57.025Z",
+ "gegenereerd": "2026-09-16T04:36:56.816Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "1789533361143slogkd3i2",
+     "titel": "Creatieve Hulp Bij Verdriet Op School",
+     "teaser": "Schoolbegeleiders zetten creatieve methodes zoals speltherapie, boeken en tekenen in om rouwende leerlingen te helpen. Counselor Deb Hill vertelt over een 4-jarige jongen die na een huisbrand pas na zeven speltherapiesessies begon te praten. Ongeveer 8% van de kinderen verliest voor hun volwassenheid een primaire verzorger. Op de conferentie van de American School Counselor's Association deelden Hill en Dr. Anita...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/nl/creatieve-hulp-bij-verdriet-op-school-1789533361143slogkd3i2.html"
+    },
+    {
+     "id": "1789533305880mtme7702f",
+     "titel": "Huurkorting en vriendschap dankzij inwonen bij senior",
+     "teaser": "De 31-jarige Kayla Mazza kon geen betaalbare woning vinden dicht bij haar werk in Vermont. Via de non-profitorganisatie HomeShare Vermont werd ze gekoppeld aan de 77-jarige Honey Donegan, die een kamer over had in haar huis. Mazza betaalt 650 dollar huur per maand en helpt Donegan met koken, boodschappen en ritjes naar de dokter. De twee kijken elke avond samen...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/huurkorting-en-vriendschap-dankzij-inwonen-bij-senior-1789533305880mtme7702f.html"
+    },
     {
      "id": "17894468770162a9ki2qkf",
      "titel": "Eerst een Huis, Dan Herstel",
@@ -28,25 +44,16 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/zes-uur-in-het-donker-vreemden-werden-buren-1789409245357jsvwu6hgj.html"
-    },
-    {
-     "id": "1789409118781d4hb22iln",
-     "titel": "Voormalig Stort Wordt Thuis voor 64% van Britse Geoorde Futen",
-     "teaser": "Een Britse natuurbeschermingsorganisatie heeft een voormalige stortplaats voor grond uit de aanleg van het Manchester Ship Canal omgetoverd tot broedgebied voor de geoorde fuut. Op Woolston Eyes Nature Reserve, een bijna 1000 hectare groot wetland tussen de rivier de Mersey en het kanaal, broeden inmiddels 35 paar geoorde futen, ofwel 64% van alle broedparen in het VK. De vogels nestelen...",
-     "score": 10,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/voormalig-stort-wordt-thuis-voor-64-van-britse-geoorde-futen-1789409118781d4hb22iln.html"
-    },
-    {
-     "id": "1789409040112vqs98u8v1",
-     "titel": "Heel Zuidoost-Azië Nu Vrij Van Trachoom",
-     "teaser": "De Wereldgezondheidsorganisatie (WHO) heeft Timor-Leste officieel gecertificeerd als land dat trachoom heeft geëlimineerd als volksgezondheidsprobleem. Trachoom is wereldwijd de belangrijkste infectieuze oorzaak van blindheid. Met deze mijlpaal is de gehele WHO-regio Zuidoost-Azië nu trachoomvrij, wat betekent dat meer dan 2 miljard mensen minimaal risico lopen op de ziekte en toegang hebben tot zorg om het snel op te sporen en...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/nl/heel-zuidoost-azie-nu-vrij-van-trachoom-1789409040112vqs98u8v1.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260915-environment",
+     "titel": "Schildpadden, een park en Europese doelen: drie tekens van vooruitgang",
+     "categorie": "Environment",
+     "dag": "2026-09-15",
+     "url": "https://brightnews.online/articles/nl/schildpadden-een-park-en-europese-doelen-drie-tekens-van-vooruitgang-dg-20260915-environment.html"
+    },
     {
      "id": "dg-20260914-lifestyle",
      "titel": "Huizen, buren in het donker en twee koppige doorzetters: het lifestyle-nieuws van deze dagen",
@@ -73,6 +80,22 @@
   "en": {
    "top": [
     {
+     "id": "1789533361143slogkd3i2",
+     "titel": "Creative Help With Grief at School",
+     "teaser": "School counselors use creative methods such as play therapy, books and drawing to help grieving students. Counselor Deb Hill tells about a 4-year-old boy who began to talk only after seven play therapy sessions following a house fire. Approximately 8% of children lose a primary caregiver before adulthood. At the American School Counselor's Association conference, Hill and Dr. Anita Pool...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/en/creative-help-with-grief-at-school-1789533361143slogkd3i2.html"
+    },
+    {
+     "id": "1789533305880mtme7702f",
+     "titel": "Rent reduction and friendship by living with a senior",
+     "teaser": "The 31-year-old Kayla Mazza couldn't find affordable housing near her work in Vermont. Through the non-profit organization HomeShare Vermont, she was matched with 77-year-old Honey Donegan, who had a spare room in her house. Mazza pays 650 dollars rent per month and helps Donegan with cooking, groceries and rides to the doctor. The two watch Jeopardy together every evening, walk,...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/rent-reduction-and-friendship-by-living-with-a-senior-1789533305880mtme7702f.html"
+    },
+    {
      "id": "17894468770162a9ki2qkf",
      "titel": "A Home First, Then Recovery",
      "teaser": "A housing model called Housing First gives homeless people a fixed home before tackling other problems. Michael, who became homeless in Plymouth and came to London, received an apartment and a support worker through Solo Homes from The Connection. His rent is paid through benefits, while care costs are covered by the charity. Since he has had a fixed home,...",
@@ -95,25 +118,16 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/six-hours-in-the-dark-strangers-became-neighbors-1789409245357jsvwu6hgj.html"
-    },
-    {
-     "id": "1789409118781d4hb22iln",
-     "titel": "Former Landfill Becomes Home for 64% of UK Eared Grebes",
-     "teaser": "A British conservation organization has transformed a former landfill site into a breeding ground for the eared grebe. At Woolston Eyes Nature Reserve, a wetland of nearly 1,000 hectares between the River Mersey and the Manchester Ship Canal, 35 pairs of eared grebes now breed—64% of all breeding pairs in the UK. The birds nest alongside black-headed gulls on artificial...",
-     "score": 10,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/former-landfill-becomes-home-for-64-of-uk-eared-grebes-1789409118781d4hb22iln.html"
-    },
-    {
-     "id": "1789409040112vqs98u8v1",
-     "titel": "All of Southeast Asia Now Free From Trachoma",
-     "teaser": "The World Health Organization (WHO) has officially certified Timor-Leste as a country that has eliminated trachoma as a public health problem. Trachoma is the leading infectious cause of blindness worldwide. With this milestone, the entire WHO Southeast Asia region is now trachoma-free, meaning more than 2 billion people face minimal risk of the disease and have access to care to...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/en/all-of-southeast-asia-now-free-from-trachoma-1789409040112vqs98u8v1.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260915-environment",
+     "titel": "Turtles, a park and European targets: three signs of progress",
+     "categorie": "Environment",
+     "dag": "2026-09-15",
+     "url": "https://brightnews.online/articles/en/turtles-a-park-and-european-targets-three-signs-of-progress-dg-20260915-environment.html"
+    },
     {
      "id": "dg-20260914-lifestyle",
      "titel": "Houses, neighbors in the dark and two determined perseverers: the lifestyle news of these days",
@@ -140,6 +154,22 @@
   "de": {
    "top": [
     {
+     "id": "1789533361143slogkd3i2",
+     "titel": "Kreative Hilfe Bei Trauer In Der Schule",
+     "teaser": "Schulberater setzen kreative Methoden wie Spieltherapie, Bücher und Zeichnen ein, um trauernde Schüler zu unterstützen. Beraterin Deb Hill berichtet von einem 4-jährigen Jungen, der nach einem Hausbrand erst nach sieben Spieltherapiesitzungen zu sprechen begann. Etwa 8% der Kinder verlieren vor dem Erwachsenenalter einen primären Betreuer. Auf der Konferenz der American School Counselor's Association teilten Hill und Dr. Anita Pool von...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/de/kreative-hilfe-bei-trauer-in-der-schule-1789533361143slogkd3i2.html"
+    },
+    {
+     "id": "1789533305880mtme7702f",
+     "titel": "Mietrabschlag und Freundschaft durch Zusammenleben mit Senior",
+     "teaser": "Die 31-jährige Kayla Mazza konnte in der Nähe ihres Arbeitsplatzes in Vermont keine bezahlbare Wohnung finden. Über die gemeinnützige Organisation HomeShare Vermont wurde sie mit der 77-jährigen Honey Donegan gekoppelt, die ein Zimmer in ihrem Haus frei hatte. Mazza zahlt 650 Dollar Miete pro Monat und hilft Donegan beim Kochen, Einkaufen und Fahrten zum Arzt. Die beiden schauen sich jeden...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/mietrabschlag-und-freundschaft-durch-zusammenleben-mit-senior-1789533305880mtme7702f.html"
+    },
+    {
      "id": "17894468770162a9ki2qkf",
      "titel": "Erst ein Zuhause, dann Heilung",
      "teaser": "Ein Wohnmodell namens Housing First gibt obdachlosen Menschen zunächst eine feste Wohnung, bevor andere Probleme angegangen werden. Michael, der in Plymouth obdachlos wurde und nach London kam, erhielt über Solo Homes von The Connection eine Wohnung und einen Support Worker. Seine Miete wird über Sozialleistungen bezahlt, während die Kosten für die Betreuung von der Wohltätigkeitsorganisation getragen werden. Seit er eine...",
@@ -162,25 +192,16 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/sechs-stunden-im-dunkeln-fremde-wurden-nachbarn-1789409245357jsvwu6hgj.html"
-    },
-    {
-     "id": "1789409118781d4hb22iln",
-     "titel": "Ehemaliger Deponiestandort wird Heimat für 64% der britischen Ohrentaucher",
-     "teaser": "Eine britische Naturschutzorganisation hat eine ehemalige Deponie für Erdaushub aus dem Bau des Manchester Ship Canal in ein Brutgebiet für Ohrentaucher umgewandelt. Auf dem Woolston Eyes Nature Reserve, einem knapp 1000 Hektar großen Feuchtgebiet zwischen dem Fluss Mersey und dem Kanal, brüten inzwischen 35 Paare Ohrentaucher, also 64% aller Brutpaare im Vereinigten Königreich. Die Vögel nisten gerne neben Lachmöwen auf...",
-     "score": 10,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/ehemaliger-deponiestandort-wird-heimat-fur-64-der-britischen-ohrentaucher-1789409118781d4hb22iln.html"
-    },
-    {
-     "id": "1789409040112vqs98u8v1",
-     "titel": "Ganz Südostasien Jetzt Trachomfrei",
-     "teaser": "Die Weltgesundheitsorganisation (WHO) hat Timor-Leste offiziell als Land zertifiziert, das Trachom als Volkskrankheit eliminiert hat. Trachom ist weltweit die wichtigste infektiöse Erblindungsursache. Mit diesem Meilenstein ist die gesamte WHO-Region Südostasien nun trachomfrei, was bedeutet, dass mehr als 2 Milliarden Menschen ein minimales Risiko für die Krankheit haben und Zugang zu Versorgung haben, um sie schnell zu erkennen und zu behandeln....",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/de/ganz-sudostasien-jetzt-trachomfrei-1789409040112vqs98u8v1.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260915-environment",
+     "titel": "Schildkröten, ein Park und europäische Ziele: drei Zeichen des Fortschritts",
+     "categorie": "Environment",
+     "dag": "2026-09-15",
+     "url": "https://brightnews.online/articles/de/schildkroten-ein-park-und-europaische-ziele-drei-zeichen-des-fortschritts-dg-20260915-environment.html"
+    },
     {
      "id": "dg-20260914-lifestyle",
      "titel": "Häuser, Nachbarn im Dunkeln und zwei hartnäckige Durchhalter: die Lifestyle-Nachrichten dieser Tage",
@@ -207,6 +228,22 @@
   "fr": {
    "top": [
     {
+     "id": "1789533361143slogkd3i2",
+     "titel": "Aide Créative Face au Deuil à l'École",
+     "teaser": "Les conseillers scolaires utilisent des méthodes créatives comme la ludothérapie, les livres et le dessin pour aider les élèves en deuil. La conseillère Deb Hill raconte l'histoire d'un garçon de 4 ans qui n'a commencé à parler qu'après sept séances de ludothérapie suite à un incendie domestique. Environ 8 % des enfants perdent un soignant principal avant l'âge adulte. À...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/fr/aide-creative-face-au-deuil-a-l-ecole-1789533361143slogkd3i2.html"
+    },
+    {
+     "id": "1789533305880mtme7702f",
+     "titel": "Réduction de loyer et amitié en cohabitant avec une senior",
+     "teaser": "La trentenaire Kayla Mazza ne trouvait pas de logement abordable près de son travail au Vermont. Via l'organisation à but non lucratif HomeShare Vermont, elle a été mise en relation avec Honey Donegan, 77 ans, qui avait une chambre libre dans sa maison. Mazza paie 650 dollars de loyer par mois et aide Donegan à cuisiner, faire les courses et...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/reduction-de-loyer-et-amitie-en-cohabitant-avec-une-senior-1789533305880mtme7702f.html"
+    },
+    {
      "id": "17894468770162a9ki2qkf",
      "titel": "D'abord un Logement, Puis la Guérison",
      "teaser": "Un modèle de logement appelé Housing First offre d'abord un logement stable aux personnes sans abri, avant de s'attaquer à d'autres problèmes. Michael, devenu sans abri à Plymouth et arrivé à Londres, a reçu un appartement et un assistant social via Solo Homes de The Connection. Son loyer est payé par les allocations, tandis que les frais de soutien sont...",
@@ -229,25 +266,16 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/six-heures-dans-l-obscurite-des-etrangers-deviennent-voisins-1789409245357jsvwu6hgj.html"
-    },
-    {
-     "id": "1789409118781d4hb22iln",
-     "titel": "Ancien Dépôt Devient Foyer pour 64% des Grèbes Oreillards Britanniques",
-     "teaser": "Une organisation britannique de conservation de la nature a transformé un ancien site de décharge en zone de reproduction pour le grèbe oreillard. À Woolston Eyes Nature Reserve, un zone humide de près de 1000 hectares située entre la rivière Mersey et le canal, 35 couples de grèbes oreillards se reproduisent désormais, soit 64% de tous les couples reproducteurs du...",
-     "score": 10,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/ancien-depot-devient-foyer-pour-64-des-grebes-oreillards-britanniques-1789409118781d4hb22iln.html"
-    },
-    {
-     "id": "1789409040112vqs98u8v1",
-     "titel": "Tout le Sud-Est Asiatique Libre du Trachome",
-     "teaser": "L'Organisation mondiale de la santé (OMS) a officiellement certifié le Timor oriental comme un pays ayant éliminé le trachome en tant que problème de santé publique. Le trachome est la principale cause infectieuse de cécité au monde. Avec cette étape décisive, toute la région Asie du Sud-Est de l'OMS est désormais exempte de trachome, ce qui signifie que plus de...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/fr/tout-le-sud-est-asiatique-libre-du-trachome-1789409040112vqs98u8v1.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260915-environment",
+     "titel": "Des tortues, un parc et des objectifs européens : trois signes de progrès",
+     "categorie": "Environment",
+     "dag": "2026-09-15",
+     "url": "https://brightnews.online/articles/fr/des-tortues-un-parc-et-des-objectifs-europeens-trois-signes-de-progres-dg-20260915-environment.html"
+    },
     {
      "id": "dg-20260914-lifestyle",
      "titel": "Des maisons, des voisins dans le noir et deux têtes de mule déterminées : les actualités lifestyle de ces jours-ci",
@@ -274,6 +302,22 @@
   "es": {
    "top": [
     {
+     "id": "1789533361143slogkd3i2",
+     "titel": "Ayuda Creativa Para el Duelo en la Escuela",
+     "teaser": "Los orientadores escolares utilizan métodos creativos como terapia de juego, libros y dibujo para ayudar a estudiantes en duelo. La consejera Deb Hill cuenta sobre un niño de 4 años que comenzó a hablar después de siete sesiones de terapia de juego tras un incendio en su casa. Aproximadamente el 8% de los niños pierde a un cuidador principal antes...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/es/ayuda-creativa-para-el-duelo-en-la-escuela-1789533361143slogkd3i2.html"
+    },
+    {
+     "id": "1789533305880mtme7702f",
+     "titel": "Descuento de alquiler y amistad al vivir con un senior",
+     "teaser": "La Kayla Mazza, de 31 años, no podía encontrar una vivienda asequible cerca de su trabajo en Vermont. A través de la organización sin fines de lucro HomeShare Vermont, fue emparejada con Honey Donegan, de 77 años, quien tenía una habitación disponible en su casa. Mazza paga 650 dólares de alquiler al mes y ayuda a Donegan con la cocina,...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/descuento-de-alquiler-y-amistad-al-vivir-con-un-senior-1789533305880mtme7702f.html"
+    },
+    {
      "id": "17894468770162a9ki2qkf",
      "titel": "Primero una Casa, Luego la Recuperación",
      "teaser": "Un modelo de vivienda llamado Housing First proporciona a las personas sin hogar una vivienda fija antes de abordar otros problemas. Michael, quien se quedó sin hogar en Plymouth y se trasladó a Londres, recibió un apartamento y un trabajador de apoyo a través de Solo Homes de The Connection. Su alquiler se paga mediante prestaciones, mientras que los costos...",
@@ -296,25 +340,16 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/seis-horas-en-la-oscuridad-extranos-se-convirtieron-en-vecinos-1789409245357jsvwu6hgj.html"
-    },
-    {
-     "id": "1789409118781d4hb22iln",
-     "titel": "Vertedero Antiguo se Convierte en Hogar del 64% de Somormujos Británicos",
-     "teaser": "Una organización británica de conservación ha transformado un antiguo vertedero de tierra procedente de la construcción del Canal de Barcos de Mánchester en un área de cría para el somormujo cuellirrojo. En la Reserva Natural de Woolston Eyes, un humedal de casi 1000 hectáreas situado entre el río Mersey y el canal, actualmente crían 35 parejas de somormujos cuellirrojos, es...",
-     "score": 10,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/vertedero-antiguo-se-convierte-en-hogar-del-64-de-somormujos-britanicos-1789409118781d4hb22iln.html"
-    },
-    {
-     "id": "1789409040112vqs98u8v1",
-     "titel": "Todo el Sudeste Asiático Libre de Tracoma",
-     "teaser": "La Organización Mundial de la Salud (OMS) ha certificado oficialmente a Timor-Leste como país que ha eliminado el tracoma como problema de salud pública. El tracoma es la principal causa infecciosa de ceguera en el mundo. Con este hito, toda la región de Sudeste Asiático de la OMS está ahora libre de tracoma, lo que significa que más de 2...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/es/todo-el-sudeste-asiatico-libre-de-tracoma-1789409040112vqs98u8v1.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260915-environment",
+     "titel": "Tortugas, un parque y objetivos europeos: tres señales de progreso",
+     "categorie": "Environment",
+     "dag": "2026-09-15",
+     "url": "https://brightnews.online/articles/es/tortugas-un-parque-y-objetivos-europeos-tres-senales-de-progreso-dg-20260915-environment.html"
+    },
     {
      "id": "dg-20260914-lifestyle",
      "titel": "Casas, vecinos en la oscuridad y dos perseverantes decididas: las noticias de estilo de vida de estos días",
