@@ -85,13 +85,22 @@ async function haalArtikelTekst(pageUrl, maxLen = 1200) {
         });
         clearTimeout(timer);
         if (!res.ok) return null;
-        const html = (await res.text()).slice(0, 300000);
+        // Scripts/styles éérst strippen: de p-regex hieronder greep anders
+        // JS-blokken bínnen een <p> mee, waardoor Sciencenews (80%) en
+        // BBC-culture (21%) "onleesbare" snippets kregen en de selectie
+        // die items op inhoudsloosheid afwees (analyse 2026-09-10, bev. 4).
+        const html = (await res.text()).slice(0, 300000)
+            .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+            .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+            .replace(/<noscript[\s\S]*?<\/noscript>/gi, ' ');
+        const lijktCode = t => /[{};]|window\.|document\.|function\s*\(/.test(t);
         const alineas = [];
         for (const m of html.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)) {
             const tekst = decodeerEntities(m[1].replace(/<[^>]+>/g, ' '))
                 .replace(/\s+/g, ' ').trim();
-            // korte <p>'s zijn vrijwel altijd navigatie/bijschriften
-            if (tekst.length >= 80) alineas.push(tekst);
+            // korte <p>'s zijn vrijwel altijd navigatie/bijschriften;
+            // code-achtige alinea's zijn restanten van ad-/consent-scripts
+            if (tekst.length >= 80 && !lijktCode(tekst)) alineas.push(tekst);
             if (alineas.join(' ').length > maxLen) break;
         }
         let tekst = alineas.join(' ');
@@ -101,6 +110,9 @@ async function haalArtikelTekst(pageUrl, maxLen = 1200) {
             if (og) tekst = `${decodeerEntities(og[1])} ${tekst}`.trim();
         }
         tekst = tekst.slice(0, maxLen).trim();
+        // Liever géén verrijking dan rommel: de schone (korte) feedsnippet
+        // is een prima selectie-input; rommel verving hem juist.
+        if (lijktCode(tekst)) return null;
         return tekst.length >= 80 ? tekst : null;
     } catch {
         return null;
@@ -192,7 +204,7 @@ async function maakMoedertekst(item, statistieken) {
         prompt: `Je bent redacteur bij BrightNews, een nieuwssite met uitsluitend positief nieuws. Schrijf op basis van dit nieuwsitem: "${item.title} - ${item.contentSnippet}".
 Gebruik UITSLUITEND wat in de titel en tekst hierboven staat. Verzin of veronderstel NIETS: geen extra feiten, namen, cijfers, citaten, achtergronden of gevolgen die er niet letterlijk in de bron staan. Is de bron kort, houd je teksten dan ook kort — liever bron-getrouw dan aangevuld met verzinsels.
 Lever in het Nederlands:
-- "titel": pakkende titel, zonder het woord "inspirerend", geen woorden langer dan 24 letters
+- "titel": pakkende titel die het onderwerp concreet bij naam noemt (dus "Gordelroosvaccin beschermt hart", niet "Prikvaccin beschermt hart" — wat hier vaag is, wordt in vier talen vaag); zonder het woord "inspirerend", geen woorden langer dan 24 letters
 - "kort": feitelijke, journalistieke samenvatting van 60 tot maximaal ±150 woorden
 - "lang": uitgebreidere versie tot maximaal ±500 woorden, in alinea's gescheiden door een lege regel; NOOIT langer dan de bron draagt — geeft de bron te weinig voor een langere versie, herhaal dan exact de tekst van "kort"
 - "alt": foto-alt-tekst
@@ -224,7 +236,7 @@ async function vertaalMoedertekst(moeder, lang, statistieken) {
     for (let poging = 0; poging < 2; poging++) {
         const antwoord = await aiCall({
             rol: 'vertalen',
-            prompt: `Vertaal de onderstaande artikelvelden van BrightNews van het Nederlands naar het ${TAAL_NAMEN[lang]}. Vertaal natuurlijk en journalistiek; voeg NIETS toe en laat NIETS weg. Behoud in "lang" de alinea-indeling (lege regels) en laat verwijzingen tussen blokhaken zoals [1] exact staan. De titel bevat geen woorden langer dan 24 letters; "meta_d" blijft maximaal 155 tekens.
+            prompt: `Vertaal de onderstaande artikelvelden van BrightNews van het Nederlands naar het ${TAAL_NAMEN[lang]}. Vertaal natuurlijk en journalistiek, als iemand die de doeltaal als moedertaal schrijft. Regels (steekproef 2026-09-10): (1) behoud het geslacht uit het origineel — kop en tekst mogen elkaar nooit tegenspreken; (2) vertaal namen van organisaties, merken, producten en instellingen NIET; (3) voeg NIETS toe en laat NIETS weg; (4) volg de titelconventie van de doeltaal — Frans en Spaans gebruiken gewone zinsstijl, geen hoofdletter op elk woord; (5) laat verwijzingen tussen blokhaken zoals [1] exact staan. Behoud in "lang" de alinea-indeling (lege regels). De titel bevat geen woorden langer dan 24 letters; "meta_d" blijft maximaal 155 tekens.
 INVOER:
 ${JSON.stringify(invoer)}
 Antwoord UITSLUITEND met geldig JSON met exact dezelfde velden — alinea-scheidingen binnen een tekstveld schrijf je als \\n\\n, nooit als echt regeleinde: {"titel": "..", "kort": "..", "lang": "..", "alt": "..", "meta_d": "..", "meta_k": ".."}`,
@@ -264,7 +276,6 @@ const FEEDS = [
     { name: 'GoodGoodGood.co', url: 'https://www.goodgoodgood.co/articles/rss.xml' },
     { name: 'YesMagazine.org', url: 'https://www.yesmagazine.org/feed' },
     // wetenschap, natuur & milieu met echte verhalen
-    { name: 'Newatlas.com', url: 'https://newatlas.com/index.rss' },
     { name: 'Sciencenews.org', url: 'https://www.sciencenews.org/feed' },
     { name: 'NPR.org', url: 'https://feeds.npr.org/1007/rss.xml' },
     { name: 'Openaccessgovernment.org', url: 'https://www.openaccessgovernment.org/category/open-access-news/research-innovation-news/feed/' },
@@ -356,6 +367,8 @@ async function processNews() {
         feedFouten: 0,
         selectieFouten: 0,
         selectieOvergeslagen: 0,
+        selectieMismatch: 0,
+        perUitsluiting: {},
         langeVersies: 0,
     };
 
@@ -478,10 +491,15 @@ async function processNews() {
                     statistieken.selectieHerkansing++;
                     return;
                 }
+                if (s.mismatch) statistieken.selectieMismatch++;
+                if (s.uitsluiting !== 'geen') {
+                    statistieken.perUitsluiting[s.uitsluiting] = (statistieken.perUitsluiting[s.uitsluiting] ?? 0) + 1;
+                }
                 const logRegel = {
                     datum: new Date().toISOString(),
                     bron: item.bronNaam ?? null,
                     titel: String(item.title ?? '').slice(0, 140),
+                    uitsluiting: s.uitsluiting,
                     gevoel: s.gevoel,
                     formulering: s.formulering,
                     relevantie: s.relevantie,

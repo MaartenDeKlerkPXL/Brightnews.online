@@ -201,7 +201,7 @@ async function main() {
                     await wacht(1000);
                     const antwoord = await aiCall({
                         rol: 'vertalen',
-                        prompt: `Vertaal dit BrightNews-dagoverzicht van het Nederlands naar het ${TAAL_NAMEN[lang]}. Vertaal natuurlijk en journalistiek; voeg NIETS toe en laat NIETS weg. Behoud de alinea-indeling (lege regels) en laat de verwijzingen tussen blokhaken zoals [1] exact staan. "meta_d" blijft maximaal 155 tekens.
+                        prompt: `Vertaal dit BrightNews-dagoverzicht van het Nederlands naar het ${TAAL_NAMEN[lang]}. Vertaal natuurlijk en journalistiek, als iemand die de doeltaal als moedertaal schrijft. Regels (steekproef 2026-09-10): (1) behoud het geslacht uit het origineel — kop en tekst mogen elkaar nooit tegenspreken; (2) vertaal namen van organisaties, merken, producten en instellingen NIET; (3) voeg NIETS toe en laat NIETS weg; (4) volg de titelconventie van de doeltaal — Frans en Spaans gebruiken gewone zinsstijl, geen hoofdletter op elk woord; (5) laat verwijzingen tussen blokhaken zoals [1] exact staan. Behoud de alinea-indeling (lege regels). "meta_d" blijft maximaal 155 tekens.
 INVOER:
 ${JSON.stringify({ titel: perTaal.nl.titel, tekst: perTaal.nl.tekst, meta_d: perTaal.nl.meta_d })}
 Antwoord UITSLUITEND met geldig JSON — alinea-scheidingen binnen "tekst" schrijf je als \\n\\n, nooit als echt regeleinde: {"titel": "..", "tekst": "..", "meta_d": ".."}`,

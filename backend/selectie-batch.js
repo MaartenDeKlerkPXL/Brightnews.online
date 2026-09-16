@@ -20,6 +20,12 @@ function bouwBatchPrompt(sjabloon, items) {
 // Positie i hoort bij ITEM i+1; ontbrekende of onbruikbare items worden null
 // (= herkansing volgende run, nooit in seenLinks). Het besluit valt in code:
 // het "besluit"-veld van het model is alleen de afgedwongen dénkvolgorde.
+// Toegestane poortwaarden (prompt v8, analyse 2026-09-10 bevinding 1): de
+// afwijslijst werd via de scores omzeild — de inhoud van een weekoverzicht
+// is oprecht positief, dus scoorde hij 3/3/3. De poort wijst nu af
+// ongeacht de scores, en het log toont wélke categorie hoe vaak vangt.
+const UITSLUITINGEN = ['geen', 'productnieuws', 'verzameleditie', 'politiek', 'misdaad-of-ramp', 'listicle', 'te-weinig-inhoud'];
+
 function verwerkBatchScores(data, aantal, drempelTotaal, minima) {
     const perNr = new Map();
     for (const rij of Array.isArray(data?.items) ? data.items : []) {
@@ -31,12 +37,21 @@ function verwerkBatchScores(data, aantal, drempelTotaal, minima) {
             relevantie: Number(rij.relevantie),
         };
         if (Object.values(scores).some(s => !Number.isFinite(s) || s < 0)) continue;
+        // Onbekende poortwaarde telt als 'geen' (permissief): de scores en
+        // de drempel beslissen dan gewoon, zoals vóór v8.
+        const uitsluiting = UITSLUITINGEN.includes(rij.uitsluiting) ? rij.uitsluiting : 'geen';
         const totaal = scores.gevoel + scores.formulering + scores.relevantie;
+        const geschikt = uitsluiting === 'geen'
+            && totaal >= drempelTotaal
+            && Object.entries(minima).every(([k, min]) => scores[k] >= min);
         perNr.set(nr, {
             ...scores,
             totaal,
-            geschikt: totaal >= drempelTotaal
-                && Object.entries(minima).every(([k, min]) => scores[k] >= min),
+            uitsluiting,
+            geschikt,
+            // Drift-signaal (analyse bevinding 3): zegt het model zelf iets
+            // anders dan de rekenregel, dan telt de aanroeper dat.
+            mismatch: (rij.besluit === 'ja') !== geschikt,
             reden: String(rij.reden ?? '').slice(0, 200),
         });
     }

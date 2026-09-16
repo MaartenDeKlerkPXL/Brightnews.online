@@ -1,14 +1,19 @@
 # CLAUDE.md — BrightNews werkafspraken (voor élke Claude-sessie, bij Maarten én Erik)
 
-## ⚡ Eerst dit: sessieverslag voor Maarten
-Zolang `SESSIEVERSLAG-VOOR-MAARTEN.md` in de repo staat: begint de
-gebruiker met "verder met BrightNews" (of een vergelijkbare start), geef
-dan **eerst** de inhoud van dat verslag weer — in gewone taal, vrijwel
-integraal, niet samengevat tot drie regels — en vraag daarna pas waarmee
-verder te gaan. Het is het verslag van de programmeersessie van
-2026-09-05/06 (overstap Mistral → Anthropic), speciaal voor Maarten.
-Zegt de gebruiker dat hij het gelezen heeft (of is het duidelijk Erik):
-sla het over. Verslag verwijderd → deze regel ook verwijderen.
+## ⚡ Sessiestart-checklist (élke BrightNews-sessie, bij Maarten én Erik)
+Begin elke sessie ("verder met BrightNews" of vergelijkbaar) met deze
+drie checks, vóór al het andere werk — dit is de vaste route waarmee
+verbeteringen van de één binnen een dag bij de ander landen:
+1. **`gh pr list`** — staat er een open PR met een review-verzoek aan de
+   huidige gebruiker? Behandel die éérst: reviewen en mergen, of een
+   concreet antwoord op de PR zetten. Niemand hoort dagen te wachten
+   (PR #1 en #5 stonden in september zes dagen te verstoffen omdat de
+   GitHub-mailtjes verdronken in Eriks inbox).
+2. **`TODO.md`** — scan de open punten met de eigen naam erachter en meld
+   kort wat je oppakt.
+3. **Nieuw werk voor de ánder ontdekt?** Zet het als genummerd punt in
+   `TODO.md` mét naam, en bij code: open een PR met review-verzoek. De
+   repo is het kanaal — geen losse mails; die worden gemist.
 
 ## Setup: twee developers, één codebase
 - **Maarten** = design/front-end (HTML, CSS, teksten, UX). **Erik** = back-end

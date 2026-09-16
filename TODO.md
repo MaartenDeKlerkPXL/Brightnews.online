@@ -17,7 +17,7 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
 
 ## Blokkeert de lancering
 
-- [ ] **1. De twee open pull requests vlottrekken.** Allebei hebben ze
+- [x] **1. De twee open pull requests vlottrekken.** ✅ 2026-09-16 (Fable-review): #5 gemerged + og:image-absoluutfix erachteraan; #1 lokaal gemerged (bronwerk integraal overgenomen, sw-conflict → v23) en pagina's geregenereerd. Oorspronkelijke tekst: Allebei hebben ze
   merge-conflicten (`mergeable=CONFLICTING`) en lopen achter op master:
   [#1](https://github.com/MaartenDeKlerkPXL/Brightnews.online/pull/1)
   (cookiebanner, herroepingsvinkje, nav-bug, Stripe Climate) staat 42 commits
@@ -100,7 +100,7 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   uit `CLAUDE.md`: statische artikelpagina's nooit verwijderen. Overleggen met
   Erik. *(Erik)*
 
-- [ ] **17. Bronnen saneren.** LET OP, nuance uit
+- [x] **17. Bronnen saneren.** ✅ 2026-09-16: Newatlas verwijderd (7% acceptatie, tekst leesbaar = echte mismatch). Sciencenews/BBC-culture BLIJVEN — hun "onleesbaar"-probleem was de artikel-extractie (scripts/nav in de p-regex) en die is gerepareerd met een kwaliteitspoort; bij rommel blijft nu de schone feedsnippet staan. YesMagazine/Theecologist: nog een week meten met de gefixte extractie. Oorspronkelijke tekst: LET OP, nuance uit
   `backend/selectie-prompt-analyse.md`: bij Sciencenews (12 van 15) en
   BBC/culture (4 van 19) is de afwijzing "tekst onleesbaar" — daar wordt de
   brontekst verkeerd uitgelezen, dus schrappen lost het verkeerde probleem op.
@@ -110,15 +110,14 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   weinig. Adventure-Journal levert nieuwsbrief-fragmenten als items — idem
   bespreken. *(Erik)*
 
-- [ ] **18. `npx eslint .` geeft sinds 2026-09-09 twee errors**, allebei in
+- [x] **18. eslint terug op 0 errors** ✅ 2026-09-16 (ongebruikte TALEN weg, advies-initialisatie zonder loze toewijzing). Was:, allebei in
   `backend/generate-rapport.js` (commit `f666f14`, marketing fase M1):
   `TALEN` wordt toegekend maar nooit gebruikt (regel 15) en de waarde van
   `advies` wordt nergens meer gelezen (regel 106). De norm uit `CLAUDE.md` is
   0 errors, dus dit hoort opgeruimd voor het meesluipt in volgende commits.
   *(Erik)*
 
-- [ ] **19. Selectieprompt: Erik leest de analyse, test en geeft zijn
-  bevindingen.** In `backend/selectie-prompt-analyse.md` staat een diagnose op
+- [x] **19. Selectieprompt v8** ✅ 2026-09-16 (Erik delegeerde de beoordeling aan Fable; oordeel: analyse klopt en is netjes gereproduceerd). Doorgevoerd: uitsluitingspoort vóór het scoren (veld "uitsluiting" met 6 categorieën, code wijst af ongeacht scores), ijkvoorbeelden voor politiek/listicle/verzameleditie, mismatch- en per-categorie-tellers in last_run.json. NIET veranderd (conform analyse): kernregel, drempel 8, bevinding 2 (schaaldifferentiatie — volgende iteratie, eerst poort-effect meten). Was: In `backend/selectie-prompt-analyse.md` staat een diagnose op
   basis van 300 beoordelingen uit `data/selectie-log.json`. Belangrijkste
   vondst: de afwijslijst wordt overgeslagen — alle vier de weekoverzichten en
   podcast-transcripten in het log zijn goedgekeurd met 8 of 9 punten, terwijl
@@ -128,7 +127,7 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   ziet de artikelen dagelijks langskomen en beoordeelt zelf of het patroon
   klopt voordat er iets aan de prompt verandert. *(Erik)*
 
-- [ ] **20. Vertaalprompt bijstellen na de steekproef.** In
+- [x] **20. Vertaalprompt bijgesteld** ✅ 2026-09-16: de 5 regels (geslacht, eigennamen, niets toevoegen, titelconventie fr/es, [n] behouden) in álle vier vertaalprompts (artikelen, digest, posts, evergreen) + concrete-titelregel in de moederprompt ("Gordelroosvaccin", niet "Prikvaccin"). Nachtelijke steekproef meet het effect. Was: In
   `backend/vertaal-steekproef.md` staan zeven bevindingen uit twintig
   vergelijkingen (vijf artikelen × vier talen), met zes concrete voorstellen
   voor de vertaalprompt. De grote lijn is in orde: er wordt niets ingekort, er
@@ -139,6 +138,19 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   zwakst. Belangrijker nog: een vage Nederlandse kop wordt in vier talen
   vermenigvuldigd, dus verbeteren aan de schrijfkant werkt vier keer door. Er is
   bewust **niets** gewijzigd. *(Erik)*
+
+- [ ] **26. Anthropic: auto-reload aanzetten en key-eigendom beslissen.**
+  De storing van 10–13 september was een lege kredietbalans; de key blijkt op
+  Eriks account te staan (Maartens console heeft geen organisatie). Erik:
+  (a) zet auto-reload aan in console.anthropic.com → Billing, en (b) beslis
+  samen: key migreren naar een account van Maarten (zoals bij Stripe) of
+  bewust bij Erik laten en de break-even-som aanpassen. *(Erik + Maarten)*
+
+- [ ] **27. Stripe Climate verifiëren vóór lancering.** De over-ons-sectie
+  (PR #1) claimt dat een vast deel van elk abonnement via Stripe Climate naar
+  CO₂-verwijdering gaat. Check in het Stripe-dashboard dat Climate echt
+  aanstaat met een ingesteld percentage — de claim moet waar zijn vóór de
+  site publiek gaat. *(Maarten)*
 
 ## Buiten de code — alleen Maarten kan dit
 

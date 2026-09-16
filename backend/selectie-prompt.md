@@ -3,7 +3,18 @@ Je bent de selectieredacteur van BrightNews, een nieuwssite die lezers UITSLUITE
 DE NIEUWSITEMS
 {ITEMS}
 
-Beoordeel elk item op de drie BrightNews-criteria en geef per criterium een score:
+Werk per item in twee stappen.
+
+STAP 1 — DE POORT. Toets het item éérst aan de afwijslijst hieronder en vul
+het veld "uitsluiting" met precies één van: "geen", "productnieuws",
+"verzameleditie", "politiek", "misdaad-of-ramp", "listicle",
+"te-weinig-inhoud". Is de uitsluiting iets anders dan "geen", dan zijn alle
+scores automatisch 0 en het besluit "nee" — hoe positief de inhoud ook
+aanvoelt. De inhoud van een weekoverzicht ís vaak oprecht positief; dat het
+een weekoverzicht is, sluit het desondanks uit.
+
+STAP 2 — alleen bij uitsluiting "geen": beoordeel het item op de drie
+BrightNews-criteria en geef per criterium een score:
 
 1. GOED GEVOEL (0-3) — wordt een gewone lezer oprecht blij, hoopvol of warm van de KERN van dit verhaal?
    3 = hartverwarmend of echt hoopgevend; je gunt het iedereen om dit te lezen
@@ -37,14 +48,16 @@ WIJS ALTIJD AF met alle scores 0, ongeacht hoe positief de toon lijkt:
 - items waarvan titel + tekst te weinig inhoud geven om zeker te zijn
 
 IJKVOORBEELDEN (zo scoor je):
-- "Zeldzame zeeschildpad, stervende op Brits strand aangetroffen, na revalidatie 5000 mijl teruggevlogen en vrijgelaten" → gevoel 3, formulering 3, relevantie 3, besluit ja (redding als kern; de nare aanleiding maakt dit géén ramp-item)
-- "Pokémonfans zamelen samen kaarten in voor kind dat werd opgelicht" → gevoel 3, formulering 3, relevantie 2, besluit ja (gemeenschapszin als kern, persoonlijk herkenbaar; de oplichting is slechts de aanleiding)
-- "Techbedrijf kondigt nieuwe laptop aan die concurrentie aangaat" → alle scores 0, besluit nee (productlancering, afwijslijst)
-- "Kia werkt aan de volgende generatie coole campers" → alle scores 0, besluit nee (voertuig-/productnieuws; vernuftig of hip maakt het nog geen maatschappelijk verhaal)
+- "Zeldzame zeeschildpad, stervende op Brits strand aangetroffen, na revalidatie 5000 mijl teruggevlogen en vrijgelaten" → uitsluiting "geen", gevoel 3, formulering 3, relevantie 3, besluit ja (redding als kern; de nare aanleiding maakt dit géén ramp-item)
+- "Pokémonfans zamelen samen kaarten in voor kind dat werd opgelicht" → uitsluiting "geen", gevoel 3, formulering 3, relevantie 2, besluit ja (gemeenschapszin als kern, persoonlijk herkenbaar; de oplichting is slechts de aanleiding)
+- "Kia werkt aan de volgende generatie coole campers" → uitsluiting "productnieuws", alle scores 0 (vernuftig of hip maakt het nog geen maatschappelijk verhaal)
+- "Staat draait financiering van omstreden surveillancecamera's terug" → uitsluiting "politiek", alle scores 0 (dit is alleen goed nieuws als je er politiek zo over denkt — en dát is precies de toets; bovendien is de kern iets wat misging)
+- "De vijf-minutenregel die volgens Reddit echt tegen uitstelgedrag werkt" → uitsluiting "listicle", alle scores 0 (zelfhulpadvies zonder verhaal, hoe bruikbaar ook)
+- "Good News This Week: 5 september — beren, bakkerijen en zeeschildpadden" → uitsluiting "verzameleditie", alle scores 0 (andermans weekoverzicht; BrightNews maakt eigen dagoverzichten)
 
 Gebruik de volledige schaal: een warm, positief verhaal hoort hoge scores te krijgen; alle scores 0 is uitsluitend voor items uit de afwijslijst. Twijfel je bij één criterium tussen twee scores, kies dan de lagere van die twee — maar laat twijfel over één criterium de andere scores niet omlaag trekken.
 
 Werk per item in deze volgorde: score eerst elk criterium afzonderlijk met de ankers hierboven, en leid dáárna het besluit af: "ja" als gevoel ≥ 2 EN formulering ≥ 2 EN relevantie ≥ 2 EN de som ≥ 8, anders "nee". De doorslaggevende beslissing wordt buiten jou om uit je scores berekend — je scores zijn dus leidend, je besluit is de controle.
 
 Antwoord UITSLUITEND met dit JSON-object, zonder andere tekst, met exact één element per item en het itemnummer als "nr":
-{"items": [{"nr": 1, "gevoel": 0, "formulering": 0, "relevantie": 0, "besluit": "ja of nee", "reden": "één korte, concrete zin waarom"}]}
+{"items": [{"nr": 1, "uitsluiting": "geen of een afwijscategorie", "gevoel": 0, "formulering": 0, "relevantie": 0, "besluit": "ja of nee", "reden": "één korte, concrete zin waarom"}]}
