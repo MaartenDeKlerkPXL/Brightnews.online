@@ -84,7 +84,7 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   opruimen — half werk in de code is erger dan geen werk. *(Erik)*
 
 - [ ] **12. Footer-socials linken naar profielen die niet bestaan.** Elke klik
-  leidt nu naar een 404. Claim de handles (zie punt 21) of haal de iconen
+  leidt nu naar een 404. Claim de handles (zie punt 22) of haal de iconen
   tijdelijk weg. *(Maarten)*
 
 - [ ] **13. Witte tekst op #32CD32 haalt geen WCAG AA** (ongeveer 2:1). Was
@@ -143,13 +143,23 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   vermenigvuldigd, dus verbeteren aan de schrijfkant werkt vier keer door. Er is
   bewust **niets** gewijzigd. *(Erik)*
 
+- [ ] **21. `MISTRAL_API_KEY` weghalen uit GitHub Secrets.** De adapter zet
+  Mistral automatisch in de fallback-keten zodra die sleutel bestaat. Er is geen
+  betaalde tier meer, dus elke run probeert het drie keer, krijgt drie keer een
+  rate limit terug, en levert ±30 seconden vertraging plus een hoop verwarrende
+  regels in het log op. Tijdens de storing van 10–13 september leek het daardoor
+  even alsof er twee dingen kapot waren in plaats van één. Eén klik: Settings →
+  Secrets and variables → Actions → `MISTRAL_API_KEY` → verwijderen. De workflow
+  verwijst er nog naar, maar een ontbrekende waarde is prima — dan is de sleuf
+  werkelijk leeg, zoals `CLAUDE.md` eerder al beweerde. *(Maarten)*
+
 ## Buiten de code — alleen Maarten kan dit
 
-- [ ] **21. Socials claimen**: `facebook.com/brightnews.online`,
+- [ ] **22. Socials claimen**: `facebook.com/brightnews.online`,
   `instagram.com/brightnews.online`, `linkedin.com/company/brightnews-online`.
   Nodig vóór de marketing-agent er is, en lost punt 12 meteen op.
 
-- [ ] **22. Search Console terugkijken.** De sitemap is ingediend op
+- [ ] **23. Search Console terugkijken.** De sitemap is ingediend op
   2026-09-05 met 2.072 pagina's; onder Indexering → Pagina's zou het aantal
   geïndexeerde pagina's moeten oplopen. Onder Prestaties zie je op welke
   zoektermen BrightNews verschijnt.
@@ -161,12 +171,12 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   op de homepage zelf staat hoort hij naar **"geïndexeerd"** te gaan. Blijft
   hij uitgesloten, geef dat dan door — dan kijk ik verder.
 
-- [ ] **23. Marketing-cockpit gebruiken** op `brightnews.online/marketing.html`
+- [ ] **24. Marketing-cockpit gebruiken** op `brightnews.online/marketing.html`
   (inloggen met je account). Daar staan dagelijks conceptposts in 5 talen
   klaar. Goedkeuren of afwijzen mét reden — de fabriek leert van je
   afwijzingen, maar alleen als je hem voedt.
 
-- [ ] **24. Deel-previews in het echt testen** op WhatsApp en LinkedIn. De
+- [ ] **25. Deel-previews in het echt testen** op WhatsApp en LinkedIn. De
   `og:image` in het artikeltemplate wijst naar de echte artikelfoto
   (gecontroleerd 2026-09-10), dus technisch zit het goed — maar zien is
   geloven.

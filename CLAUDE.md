@@ -58,8 +58,15 @@ hard-refresh of privévenster; CSS/JS-wijzigingen zie je anders niet.
   bewust uit bij de lancering.
 - **AI draait op Claude** via `backend/ai-adapter.js` (Haiku selecteert
   gebundeld per 10, Sonnet schrijft, Haiku vertaalt; besluit valt in code:
-  som ≥ 8, minima 2/2/2). Secret: `ANTHROPIC_API_KEY`. Mistral is
-  afgebouwd; de fallback-sleuf in de adapter is bewust leeg.
+  som ≥ 8, minima 2/2/2). Secret: `ANTHROPIC_API_KEY`.
+- **Let op, de fallback-sleuf is NÍET leeg** (gecorrigeerd 2026-09-16; hier
+  stond eerder dat Mistral was afgebouwd en de sleuf bewust leeg was).
+  `MISTRAL_API_KEY` staat nog in GitHub Secrets, en de adapter zet Mistral in de
+  keten zodra die sleutel er is. Bij elke run wordt Mistral dus alsnog
+  aangeroepen, faalt hij drie keer op een rate limit (geen betaalde tier meer)
+  en kost dat ±30 seconden plus veel ruis in het log. Tijdens de storing van
+  10–13 september maakte dat de diagnose onnodig troebel. Weghalen van die
+  secret staat als punt op `TODO.md`.
 - **Itereerbare prompts**: `backend/selectie-prompt.md` (bewerken → Action →
   `data/selectie-log.json` lezen; hash-wijziging geeft afgewezen items
   automatisch een herkansing) en `backend/digest-prompt.md` (dagoverzichten;

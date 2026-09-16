@@ -216,7 +216,66 @@
     <div id="detail-view" class="detail-container" style="display:none;"></div>
 
     <div id="news-container" class="grid-container">
-        <p data-i18n="index_loading">Laden van positieve vibes...</p>
+        <!-- Laadskeletten: grijze blokken in de vorm van een nieuwskaart, zodat
+             je bij het laden geen lege pagina ziet en de lijst niet verspringt
+             zodra de artikelen binnen zijn. renderLijst() gooit ze eruit.
+             aria-hidden, want voor een schermlezer valt er nog niets te lezen;
+             de tekstuele melding eronder doet dat werk. -->
+            <div class="skelet-kaart" aria-hidden="true">
+                <div class="skelet-foto"></div>
+                <div class="skelet-regels">
+                    <span class="skelet-regel kort"></span>
+                    <span class="skelet-regel"></span>
+                    <span class="skelet-regel"></span>
+                    <span class="skelet-regel half"></span>
+                </div>
+            </div>
+            <div class="skelet-kaart" aria-hidden="true">
+                <div class="skelet-foto"></div>
+                <div class="skelet-regels">
+                    <span class="skelet-regel kort"></span>
+                    <span class="skelet-regel"></span>
+                    <span class="skelet-regel"></span>
+                    <span class="skelet-regel half"></span>
+                </div>
+            </div>
+            <div class="skelet-kaart" aria-hidden="true">
+                <div class="skelet-foto"></div>
+                <div class="skelet-regels">
+                    <span class="skelet-regel kort"></span>
+                    <span class="skelet-regel"></span>
+                    <span class="skelet-regel"></span>
+                    <span class="skelet-regel half"></span>
+                </div>
+            </div>
+            <div class="skelet-kaart" aria-hidden="true">
+                <div class="skelet-foto"></div>
+                <div class="skelet-regels">
+                    <span class="skelet-regel kort"></span>
+                    <span class="skelet-regel"></span>
+                    <span class="skelet-regel"></span>
+                    <span class="skelet-regel half"></span>
+                </div>
+            </div>
+            <div class="skelet-kaart" aria-hidden="true">
+                <div class="skelet-foto"></div>
+                <div class="skelet-regels">
+                    <span class="skelet-regel kort"></span>
+                    <span class="skelet-regel"></span>
+                    <span class="skelet-regel"></span>
+                    <span class="skelet-regel half"></span>
+                </div>
+            </div>
+            <div class="skelet-kaart" aria-hidden="true">
+                <div class="skelet-foto"></div>
+                <div class="skelet-regels">
+                    <span class="skelet-regel kort"></span>
+                    <span class="skelet-regel"></span>
+                    <span class="skelet-regel"></span>
+                    <span class="skelet-regel half"></span>
+                </div>
+            </div>
+        <p class="visueel-verborgen" data-i18n="index_loading">Laden van positieve vibes...</p>
     </div>
 </main>
 

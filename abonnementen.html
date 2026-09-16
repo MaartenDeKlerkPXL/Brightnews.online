@@ -110,13 +110,17 @@
                 <li class="disabled" data-i18n="feat_no_articles">❌ Volledige artikelen</li>
                 <li data-i18n="feat_5_langs">✅ 5 talen beschikbaar</li>
             </ul>
-<!--            <button onclick="startCheckout('index.html')" class="btn-secondary" data-i18n="btn_free">Kies Gratis</button>-->
+            <!-- Een link, geen knop met startCheckout(): dit plan kost niets, dus
+                 er valt niets af te rekenen. Zonder knop oogde de kaart onaf
+                 naast de twee betaalde kaarten (reviewpunt 12). -->
+            <a href="index.html" class="btn-secondary" data-i18n="btn_free_keep">Blijf gratis lezen</a>
         </div>
 
         <div class="price-card popular">
             <span class="popular-badge" data-i18n="badge_popular">Meest gekozen</span>
             <h2 data-i18n="plan_glow_name">Glow</h2>
             <div class="price-amount">€2,95<span data-i18n="price_monthly">/maand</span></div>
+            <span class="proef-badge" data-i18n="trial_badge_today">Vandaag €0</span>
             <ul class="feature-list">
                     <li data-i18n="feat_trial_30">✅ Eerste 30 dagen gratis</li>
                     <li data-i18n="feat_unlimited">✅ Volledige artikelen</li>
@@ -132,11 +136,13 @@
             <button onclick="startCheckout('maandelijks')" class="btn-primary btn-lemon-checkout" data-i18n="btn_glow">
                 Choose Monthly
             </button>
+            <p class="proef-microcopy" data-i18n="trial_microcopy">Vandaag betaal je €0.</p>
         </div>
 
         <div class="price-card">
             <h2 data-i18n="plan_shine_name">Shine</h2>
             <div class="price-amount">€24,95<span data-i18n="price_yearly">/jaar</span></div>
+            <span class="proef-badge" data-i18n="trial_badge_today">Vandaag €0</span>
             <ul class="feature-list">
                     <li data-i18n="feat_trial_30">✅ Eerste 30 dagen gratis</li>
                     <li data-i18n="feat_all_glow">✅ Alles van Glow</li>
@@ -151,6 +157,7 @@
             <button onclick="startCheckout('jaarlijks')" class="btn-primary btn-lemon-checkout" data-i18n="btn_shine">
                 Choose Yearly
             </button>
+            <p class="proef-microcopy" data-i18n="trial_microcopy">Vandaag betaal je €0.</p>
         </div>
     </section>
 </main>
