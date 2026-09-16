@@ -12,7 +12,6 @@ require('dotenv').config();
 const { aiCall } = require('./ai-adapter');
 
 const root = path.join(__dirname, '..');
-const TALEN = ['nl', 'en', 'de', 'fr', 'es'];
 
 const SUPABASE_URL = 'https://rquuqypgaannrakdrabj.supabase.co';
 const supabaseAdmin = process.env.SUPABASE_SERVICE_ROLE_KEY
@@ -103,7 +102,7 @@ ${bronRegels || '| (geen beoordelingen) | | | |'}
 `;
 
     // Kort AI-advies op basis van de cijfers (1 call/week).
-    let advies = '';
+    let advies;
     try {
         const antwoord = await aiCall({
             rol: 'schrijven',
