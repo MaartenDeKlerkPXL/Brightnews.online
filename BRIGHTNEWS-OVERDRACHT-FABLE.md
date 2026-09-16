@@ -258,6 +258,23 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
    last_run.json), vangen de oude missers (Kia/verzameledities/politiek)
    nu bij de poort, mismatch-teller, en de acceptatiegraad van
    Sciencenews/BBC-culture met de gerepareerde extractie.
+   ✅ **AFGEROND (2026-09-16 avond)**: mini-naveeg gedaan (535 rijen;
+   langste fase-2-rij nu 519 tekens — schoon). **Poort-A/B (run 19:04,
+   72 beoordelingen)**: poort ving 30 items — verzameledities 8 (What
+   went right, podcast-transcripten), politiek 6, listicles 4 (incl.
+   horoscoop, BBC-recensies), misdaad 3, productnieuws 1,
+   te-weinig-inhoud 8. Score-mismatches buiten de poort: **0** (was
+   7–21%). Extractie-fix werkt: ReasonsToBeCheerful 4/6 door,
+   BBC-culture éérste acceptaties ooit (2/8: Howl-gedicht,
+   architectuur); Sciencenews 0/2 (legitiem dun), Yes 0/4
+   (politiek-profiel) — beide nog een week meten. **Drie
+   monitoringpunten**: (a) Adventure-Journals rubriek-items — "Intro"
+   opnieuw met 8 geaccepteerd én gepubliceerd; (b) "From Gangs to
+   Grizzlies" als misdaad uitgesloten terwijl het vermoedelijk een
+   transformatieverhaal is (kernregel) — mogelijke valse vangst; (c)
+   schrijffase-uitval nog 10/22 in deze run — die draaide nog mét het
+   lang-veld; de eerstvolgende run (zonder) hoort fors lager te zitten,
+   anders de 🔎-diagnoseregels in het Action-log nalopen.
 
 0-M1. **Marketing fase M1 LIVE (sessie 8, 2026-09-09/10, GO Erik op
    voorstellen 0/1/3/6)**: (a) reparaties — vertaalstap 2 pogingen +
