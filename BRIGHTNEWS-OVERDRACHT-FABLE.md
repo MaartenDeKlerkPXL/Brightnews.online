@@ -1,6 +1,6 @@
 # Bright News — Overdrachtsdocument / Handoff
 
-**Bijgewerkt: 2026-09-05, sessie 6 met Claude Fable 5.**
+**Bijgewerkt: 2026-09-16, sessie 9 met Claude Fable 5.** (Kopregel liep achter; sessies 8–9 staan in §9.0.)
 Sessies 1–2 (1–2 sep): review, fases A–G. Sessie 3 (3 sep): pipeline
 werkend (fases H+I). Sessie 4 (4 sep): logo, Stripe deel 2, E2E.
 Sessie 5 (5 sep): LIVEGANG Stripe + echte verkoop bewezen, MoR-check,
@@ -245,6 +245,19 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
    éérst; TODO.md; repo i.p.v. mail). Open voor Erik: TODO 26
    (auto-reload + key-eigendom — storing 10–13 sep was lege balans op
    Eriks account) en 27 (Stripe Climate verifiëren, Maarten).
+   **Veegronde-status**: 475 rijen (95 fase-2-artikelen × 5 talen) in
+   articles_full teruggezet naar samenvattingslengte, steekproef
+   geverifieerd (165–437 tekens). LET OP: de valideringsrun met poort v8
+   (35138253595) startte nét vóór de lange-versie-stop en kan voor zijn
+   verse artikelen nog lange full_text wegschrijven → **mini-naveegronde
+   draaien zodra die run gecommit heeft** (zelfde idempotente veeg-SQL,
+   gegenereerd uit de actuele news-JSON's; werkwijze: scratchpad-script
+   van sessie 9, of opnieuw genereren — summary per taal → update-regels
+   met dollar-quoting via de Management-API). Daarna het **A/B-beeld van
+   de poort** uitlezen: uitsluitingsverdeling (perUitsluiting in
+   last_run.json), vangen de oude missers (Kia/verzameledities/politiek)
+   nu bij de poort, mismatch-teller, en de acceptatiegraad van
+   Sciencenews/BBC-culture met de gerepareerde extractie.
 
 0-M1. **Marketing fase M1 LIVE (sessie 8, 2026-09-09/10, GO Erik op
    voorstellen 0/1/3/6)**: (a) reparaties — vertaalstap 2 pogingen +
