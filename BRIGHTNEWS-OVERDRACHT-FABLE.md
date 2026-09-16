@@ -275,6 +275,20 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
    schrijffase-uitval nog 10/22 in deze run — die draaide nog mét het
    lang-veld; de eerstvolgende run (zonder) hoort fors lager te zitten,
    anders de 🔎-diagnoseregels in het Action-log nalopen.
+   ✅ **ALLE DRIE OPGELOST (2026-09-16 nacht, bewezen in twee runs)**:
+   (a) rubriektitel-regel in prompt v9 — "Intro" bleek overigens één goed
+   verhaal (kampeerplek/prospect-refuge) en mag blijven; AJ wordt nu puur
+   op inhoud beoordeeld (Fractals 7→nee, Gangs 9→ja); (b) kernregel geldt
+   óók bij de poort + transformatie-ijkvoorbeeld — "From Gangs to
+   Grizzlies" herkanst en gepubliceerd met 3/3/3 en de juiste redenering;
+   (c) schrijffase-uitval 45%→21%→**0%**: naast het lang-veld bleek er
+   een tweede oorzaak (Duitse „…"-binnenquotes, daarna het kommagat
+   „Wort", die…) — trap 4 in verwerkAIResponse, tweemaal verfijnd en
+   unit-getest op de letterlijke faalgevallen; slotrun: 3 geaccepteerd,
+   0 incompleet, 0 🔎-regels, de drie eerder gesneuvelde artikelen alle
+   drie gepubliceerd mét correcte Duitse titels. Poort-tellers
+   (perUitsluiting) en mismatch lopen mee in last_run.json voor de
+   wekelijkse logronde.
 
 0-M1. **Marketing fase M1 LIVE (sessie 8, 2026-09-09/10, GO Erik op
    voorstellen 0/1/3/6)**: (a) reparaties — vertaalstap 2 pogingen +
