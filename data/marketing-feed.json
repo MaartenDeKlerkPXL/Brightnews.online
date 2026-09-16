@@ -1,10 +1,18 @@
 {
- "gegenereerd": "2026-09-16T16:48:06.317Z",
+ "gegenereerd": "2026-09-16T19:28:44.107Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "1789586309732q90vwcvuu",
+     "titel": "Nieuwe hartaanval-richtlijnen corrigeren onderdiagnose bij vrouwen",
+     "teaser": "De vier belangrijkste cardiovasculaire gezondheidsorganisaties ter wereld hebben voor het eerst een universele definitie van een hartaanval vastgesteld, aangekondigd op het congres van de European Society of Cardiology in München. Drie hartaanval-typen die tot tien keer vaker bij vrouwen voorkomen, krijgen nu dezelfde classificatie als de bekende, door bloedstolsels veroorzaakte hartaanval. Ook wordt de drempelwaarde van de troponinebloedtest verlaagd, omdat...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/nl/nieuwe-hartaanval-richtlijnen-corrigeren-onderdiagnose-bij-vrouwen-1789586309732q90vwcvuu.html"
+    },
     {
      "id": "1789533361143slogkd3i2",
      "titel": "Creatieve Hulp Bij Verdriet Op School",
@@ -30,23 +38,22 @@
      "url": "https://brightnews.online/articles/nl/eerst-een-huis-dan-herstel-17894468770162a9ki2qkf.html"
     },
     {
-     "id": "1789409398854ryk5ehwtu",
-     "titel": "Robothand Vertaalt Lerarenstem naar Gebarentaal",
-     "teaser": "In Kenia heeft de 22-jarige ondernemer Norah Kimathi met haar startup ZeroBionic een robotische hand ontwikkeld die de stem van een leraar direct vertaalt naar gebarentaal. Van de 300.000 dove of slechthorende kinderen in Kenia gaat slechts een fractie naar school, mede doordat het land geen gestandaardiseerde gebarentaal kent. De robothand, 3D-geprint uit gerecycled plastic afval, kost 350 dollar, gaat...",
-     "score": 10,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/nl/robothand-vertaalt-lerarenstem-naar-gebarentaal-1789409398854ryk5ehwtu.html"
-    },
-    {
-     "id": "1789409245357jsvwu6hgj",
-     "titel": "Zes Uur In Het Donker: Vreemden Werden Buren",
-     "teaser": "In november 1965 trof een grote stroomstoring het noordoosten van de VS en delen van Canada, met 30 miljoen getroffenen. Meer dan 800.000 metroreizigers in New York raakten vast, onder wie Lynn Lowin, die op weg was van Brooklyn naar Manhattan. Zonder licht, telefoons of informatie bleven de reizigers urenlang samen in de trein. Ze deelden voedsel, spraken elkaar moed...",
-     "score": 10,
+     "id": "1789586786470nofcj4hhu",
+     "titel": "Tien gebouwen die opgaan in de natuur",
+     "teaser": "Het World Architecture Festival (WAF) zet dit jaar gebouwen in de schijnwerpers die volledig opgaan in hun natuurlijke omgeving. Volgens oprichter Paul Finch is er een groeiende interesse om natuur te verwerken in architectuur, via landschap, balkons, terrassen en daken. Onder de genomineerde projecten zijn een resort van Aslam Sham Architects met begroeide daken die het complex camoufleren, een laag...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/zes-uur-in-het-donker-vreemden-werden-buren-1789409245357jsvwu6hgj.html"
+     "url": "https://brightnews.online/articles/nl/tien-gebouwen-die-opgaan-in-de-natuur-1789586786470nofcj4hhu.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260915-health",
+     "titel": "Gezondheidsnieuws deze week: eerlijkere diagnoses, ruimte voor rouw en een ziekte die verdwijnt",
+     "categorie": "Health",
+     "dag": "2026-09-15",
+     "url": "https://brightnews.online/articles/nl/gezondheidsnieuws-deze-week-eerlijkere-diagnoses-ruimte-voor-rouw-en-een-ziekte--dg-20260915-health.html"
+    },
     {
      "id": "dg-20260915-lifestyle",
      "titel": "Onderdak, muziek en gebak: warmte in alle soorten deze week",
@@ -74,25 +81,19 @@
      "categorie": "Lifestyle",
      "dag": "2026-09-14",
      "url": "https://brightnews.online/articles/nl/huizen-buren-in-het-donker-en-twee-koppige-doorzetters-het-lifestyle-nieuws-van--dg-20260914-lifestyle.html"
-    },
-    {
-     "id": "dg-20260913-science",
-     "titel": "Wetenschap deze week: van oude schilderijen tot gloeiende spinnenpoten",
-     "categorie": "Science",
-     "dag": "2026-09-13",
-     "url": "https://brightnews.online/articles/nl/wetenschap-deze-week-van-oude-schilderijen-tot-gloeiende-spinnenpoten-dg-20260913-science.html"
-    },
-    {
-     "id": "dg-20260913-environment",
-     "titel": "Van fabrieksdak tot achtertuin: waar natuur deze dagen ruimte terugkrijgt",
-     "categorie": "Environment",
-     "dag": "2026-09-13",
-     "url": "https://brightnews.online/articles/nl/van-fabrieksdak-tot-achtertuin-waar-natuur-deze-dagen-ruimte-terugkrijgt-dg-20260913-environment.html"
     }
    ]
   },
   "en": {
    "top": [
+    {
+     "id": "1789586309732q90vwcvuu",
+     "titel": "New heart attack guidelines correct underdiagnosis in women",
+     "teaser": "The four leading cardiovascular health organizations in the world have for the first time established a universal definition of a heart attack, announced at the European Society of Cardiology congress in Munich. Three types of heart attack that occur up to ten times more frequently in women now receive the same classification as the well-known heart attack caused by blood...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/en/new-heart-attack-guidelines-correct-underdiagnosis-in-women-1789586309732q90vwcvuu.html"
+    },
     {
      "id": "1789533361143slogkd3i2",
      "titel": "Creative Help With Grief at School",
@@ -118,23 +119,22 @@
      "url": "https://brightnews.online/articles/en/a-home-first-then-recovery-17894468770162a9ki2qkf.html"
     },
     {
-     "id": "1789409398854ryk5ehwtu",
-     "titel": "Robot Hand Translates Teacher's Voice to Sign Language",
-     "teaser": "In Kenya, 22-year-old entrepreneur Norah Kimathi has developed a robotic hand with her startup ZeroBionic that directly translates a teacher's voice into sign language. Of Kenya's 300,000 deaf or hard of hearing children, only a fraction attend school, partly because the country lacks a standardized sign language. The robot hand, 3D-printed from recycled plastic waste, costs 350 dollars, lasts three...",
-     "score": 10,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/en/robot-hand-translates-teacher-s-voice-to-sign-language-1789409398854ryk5ehwtu.html"
-    },
-    {
-     "id": "1789409245357jsvwu6hgj",
-     "titel": "Six Hours In The Dark: Strangers Became Neighbors",
-     "teaser": "In November 1965, a major power outage struck the northeastern United States and parts of Canada, affecting 30 million people. More than 800,000 subway passengers in New York were stranded, including Lynn Lowin, who was traveling from Brooklyn to Manhattan. Without light, phones, or information, passengers remained together in the train for hours. They shared food, encouraged each other, and...",
-     "score": 10,
+     "id": "1789586786470nofcj4hhu",
+     "titel": "Ten buildings that merge with nature",
+     "teaser": "The World Architecture Festival (WAF) is shining a spotlight this year on buildings that fully blend into their natural surroundings. According to founder Paul Finch, there is growing interest in integrating nature into architecture through landscapes, balconies, terraces and roofs. Among the nominated projects are a resort by Aslam Sham Architects with vegetated roofs that camouflage the complex, a low-rise...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/six-hours-in-the-dark-strangers-became-neighbors-1789409245357jsvwu6hgj.html"
+     "url": "https://brightnews.online/articles/en/ten-buildings-that-merge-with-nature-1789586786470nofcj4hhu.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260915-health",
+     "titel": "Health news this week: fairer diagnoses, space for grief, and a disease that disappears",
+     "categorie": "Health",
+     "dag": "2026-09-15",
+     "url": "https://brightnews.online/articles/en/health-news-this-week-fairer-diagnoses-space-for-grief-and-a-disease-that-disapp-dg-20260915-health.html"
+    },
     {
      "id": "dg-20260915-lifestyle",
      "titel": "Shelter, music and baking: warmth in all its forms this week",
@@ -162,25 +162,19 @@
      "categorie": "Lifestyle",
      "dag": "2026-09-14",
      "url": "https://brightnews.online/articles/en/houses-neighbors-in-the-dark-and-two-determined-perseverers-the-lifestyle-news-o-dg-20260914-lifestyle.html"
-    },
-    {
-     "id": "dg-20260913-science",
-     "titel": "Science this week: from old paintings to glowing spider legs",
-     "categorie": "Science",
-     "dag": "2026-09-13",
-     "url": "https://brightnews.online/articles/en/science-this-week-from-old-paintings-to-glowing-spider-legs-dg-20260913-science.html"
-    },
-    {
-     "id": "dg-20260913-environment",
-     "titel": "From factory roof to backyard: where nature is reclaiming space these days",
-     "categorie": "Environment",
-     "dag": "2026-09-13",
-     "url": "https://brightnews.online/articles/en/from-factory-roof-to-backyard-where-nature-is-reclaiming-space-these-days-dg-20260913-environment.html"
     }
    ]
   },
   "de": {
    "top": [
+    {
+     "id": "1789586309732q90vwcvuu",
+     "titel": "Neue Herzinfarkt-Richtlinien korrigieren Unterdiagnose bei Frauen",
+     "teaser": "Die vier wichtigsten Herz-Kreislauf-Gesundheitsorganisationen der Welt haben erstmals eine universelle Definition eines Herzinfarkts festgelegt, angekündigt auf dem Kongress der European Society of Cardiology in München. Drei Herzinfarkt-Typen, die bei Frauen bis zu zehnmal häufiger auftreten, erhalten nun die gleiche Klassifizierung wie der bekannte, durch Blutgerinnsel verursachte Herzinfarkt. Zudem wird der Schwellenwert des Troponin-Bluttests gesenkt, da dieser Test bei Frauen Herzinfarkte...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/de/neue-herzinfarkt-richtlinien-korrigieren-unterdiagnose-bei-frauen-1789586309732q90vwcvuu.html"
+    },
     {
      "id": "1789533361143slogkd3i2",
      "titel": "Kreative Hilfe Bei Trauer In Der Schule",
@@ -206,23 +200,22 @@
      "url": "https://brightnews.online/articles/de/erst-ein-zuhause-dann-heilung-17894468770162a9ki2qkf.html"
     },
     {
-     "id": "1789409398854ryk5ehwtu",
-     "titel": "Roboterhand Übersetzt Lehrerstimme in Gebärdensprache",
-     "teaser": "In Kenia hat die 22-jährige Unternehmerin Norah Kimathi mit ihrem Startup ZeroBionic eine robotische Hand entwickelt, die die Stimme eines Lehrers direkt in Gebärdensprache übersetzt. Von den 300.000 gehörlosen oder schwerhörigen Kindern in Kenia besucht nur ein kleiner Teil die Schule, auch weil das Land keine standardisierte Gebärdensprache hat. Die robotische Hand wird aus recyceltem Kunststoffabfall 3D-gedruckt, kostet 350 Dollar,...",
-     "score": 10,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/de/roboterhand-ubersetzt-lehrerstimme-in-gebardensprache-1789409398854ryk5ehwtu.html"
-    },
-    {
-     "id": "1789409245357jsvwu6hgj",
-     "titel": "Sechs Stunden Im Dunkeln: Fremde Wurden Nachbarn",
-     "teaser": "Im November 1965 traf ein großer Stromausfall den Nordosten der USA und Teile Kanadas, mit 30 Millionen Betroffenen. Mehr als 800.000 U-Bahn-Fahrgäste in New York saßen fest, darunter Lynn Lowin, die von Brooklyn nach Manhattan unterwegs war. Ohne Licht, Telefone oder Informationen blieben die Fahrgäste stundenlang zusammen in der Bahn. Sie teilten Lebensmittel, sprachen sich gegenseitig Mut zu und versuchten,...",
-     "score": 10,
+     "id": "1789586786470nofcj4hhu",
+     "titel": "Zehn Gebäude, die in der Natur aufgehen",
+     "teaser": "Das World Architecture Festival (WAF) stellt in diesem Jahr Gebäude in den Fokus, die vollständig in ihrer natürlichen Umgebung aufgehen. Laut Gründer Paul Finch wächst das Interesse daran, Natur in die Architektur zu integrieren – durch Landschaften, Balkone, Terrassen und Dächer. Unter den nominierten Projekten befinden sich ein Resort von Aslam Sham Architects mit begrünten Dächern, die den Komplex tarnen,...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/sechs-stunden-im-dunkeln-fremde-wurden-nachbarn-1789409245357jsvwu6hgj.html"
+     "url": "https://brightnews.online/articles/de/zehn-gebaude-die-in-der-natur-aufgehen-1789586786470nofcj4hhu.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260915-health",
+     "titel": "Gesundheitsnachrichten diese Woche: ehrlichere Diagnosen, Raum für Trauer und eine Krankheit, die verschwindet",
+     "categorie": "Health",
+     "dag": "2026-09-15",
+     "url": "https://brightnews.online/articles/de/gesundheitsnachrichten-diese-woche-ehrlichere-diagnosen-raum-fur-trauer-und-eine-dg-20260915-health.html"
+    },
     {
      "id": "dg-20260915-lifestyle",
      "titel": "Unterkunft, Musik und Gebäck: Wärme in allen Varianten diese Woche",
@@ -250,25 +243,19 @@
      "categorie": "Lifestyle",
      "dag": "2026-09-14",
      "url": "https://brightnews.online/articles/de/hauser-nachbarn-im-dunkeln-und-zwei-hartnackige-durchhalter-die-lifestyle-nachri-dg-20260914-lifestyle.html"
-    },
-    {
-     "id": "dg-20260913-science",
-     "titel": "Wissenschaft diese Woche: von alten Gemälden bis zu leuchtenden Spinnenbeine",
-     "categorie": "Science",
-     "dag": "2026-09-13",
-     "url": "https://brightnews.online/articles/de/wissenschaft-diese-woche-von-alten-gemalden-bis-zu-leuchtenden-spinnenbeine-dg-20260913-science.html"
-    },
-    {
-     "id": "dg-20260913-environment",
-     "titel": "Vom Fabrikdach bis zum Hinterhof: Wo die Natur derzeit Raum zurückgewinnt",
-     "categorie": "Environment",
-     "dag": "2026-09-13",
-     "url": "https://brightnews.online/articles/de/vom-fabrikdach-bis-zum-hinterhof-wo-die-natur-derzeit-raum-zuruckgewinnt-dg-20260913-environment.html"
     }
    ]
   },
   "fr": {
    "top": [
+    {
+     "id": "1789586309732q90vwcvuu",
+     "titel": "Les nouvelles directives sur l'infarctus corrigent le sous-diagnostic chez les femmes",
+     "teaser": "Les quatre principales organisations de santé cardiovasculaire au monde ont établi pour la première fois une définition universelle de l'infarctus du myocarde, annoncée lors du congrès de la European Society of Cardiology à Munich. Trois types d'infarctus qui surviennent jusqu'à dix fois plus souvent chez les femmes reçoivent désormais la même classification que l'infarctus classique causé par des caillots sanguins....",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/fr/les-nouvelles-directives-sur-l-infarctus-corrigent-le-sous-diagnostic-chez-les-f-1789586309732q90vwcvuu.html"
+    },
     {
      "id": "1789533361143slogkd3i2",
      "titel": "Aide Créative Face au Deuil à l'École",
@@ -294,23 +281,22 @@
      "url": "https://brightnews.online/articles/fr/d-abord-un-logement-puis-la-guerison-17894468770162a9ki2qkf.html"
     },
     {
-     "id": "1789409398854ryk5ehwtu",
-     "titel": "Main Robotique Traduit la Voix du Professeur en Langue des Signes",
-     "teaser": "Au Kenya, l'entrepreneur de 22 ans Norah Kimathi a développé avec sa startup ZeroBionic une main robotique qui traduit directement la voix d'un professeur en langue des signes. Sur les 300.000 enfants sourds ou malentendants au Kenya, seule une fraction va à l'école, notamment parce que le pays ne dispose pas d'une langue des signes standardisée. La main robotique, imprimée...",
-     "score": 10,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/fr/main-robotique-traduit-la-voix-du-professeur-en-langue-des-signes-1789409398854ryk5ehwtu.html"
-    },
-    {
-     "id": "1789409245357jsvwu6hgj",
-     "titel": "Six Heures Dans L'Obscurité: Des Étrangers Deviennent Voisins",
-     "teaser": "En novembre 1965, une grande panne d'électricité a frappé le nord-est des États-Unis et des parties du Canada, affectant 30 millions de personnes. Plus de 800 000 voyageurs du métro à New York se sont retrouvés bloqués, dont Lynn Lowin, qui se rendait de Brooklyn à Manhattan. Sans lumière, téléphones ni informations, les voyageurs sont restés ensemble dans le train...",
-     "score": 10,
+     "id": "1789586786470nofcj4hhu",
+     "titel": "Dix bâtiments qui se fondent dans la nature",
+     "teaser": "Le World Architecture Festival (WAF) met cette année en lumière des bâtiments qui s'intègrent complètement à leur environnement naturel. Selon le fondateur Paul Finch, l'intérêt croît pour incorporer la nature dans l'architecture, via le paysage, les balcons, les terrasses et les toits. Parmi les projets nominés figurent une station balnéaire d'Aslam Sham Architects aux toits végétalisés qui camouflent le complexe,...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/six-heures-dans-l-obscurite-des-etrangers-deviennent-voisins-1789409245357jsvwu6hgj.html"
+     "url": "https://brightnews.online/articles/fr/dix-batiments-qui-se-fondent-dans-la-nature-1789586786470nofcj4hhu.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260915-health",
+     "titel": "Actualités sanitaires cette semaine : des diagnostics plus justes, de l'espace pour le deuil et une maladie qui disparaît",
+     "categorie": "Health",
+     "dag": "2026-09-15",
+     "url": "https://brightnews.online/articles/fr/actualites-sanitaires-cette-semaine-des-diagnostics-plus-justes-de-l-espace-pour-dg-20260915-health.html"
+    },
     {
      "id": "dg-20260915-lifestyle",
      "titel": "Un logement, de la musique et des pâtisseries : de la chaleur sous toutes ses formes cette semaine",
@@ -338,25 +324,19 @@
      "categorie": "Lifestyle",
      "dag": "2026-09-14",
      "url": "https://brightnews.online/articles/fr/des-maisons-des-voisins-dans-le-noir-et-deux-tetes-de-mule-determinees-les-actua-dg-20260914-lifestyle.html"
-    },
-    {
-     "id": "dg-20260913-science",
-     "titel": "Sciences cette semaine : des vieux tableaux aux pattes d'araignées brillantes",
-     "categorie": "Science",
-     "dag": "2026-09-13",
-     "url": "https://brightnews.online/articles/fr/sciences-cette-semaine-des-vieux-tableaux-aux-pattes-d-araignees-brillantes-dg-20260913-science.html"
-    },
-    {
-     "id": "dg-20260913-environment",
-     "titel": "Du toit d'usine au jardin de derrière : où la nature reprend de l'espace ces jours-ci",
-     "categorie": "Environment",
-     "dag": "2026-09-13",
-     "url": "https://brightnews.online/articles/fr/du-toit-d-usine-au-jardin-de-derriere-ou-la-nature-reprend-de-l-espace-ces-jours-dg-20260913-environment.html"
     }
    ]
   },
   "es": {
    "top": [
+    {
+     "id": "1789586309732q90vwcvuu",
+     "titel": "Nuevas directrices sobre infarto corrigen el infradiagnóstico en mujeres",
+     "teaser": "Las cuatro principales organizaciones de salud cardiovascular del mundo han establecido por primera vez una definición universal de infarto de miocardio, anunciada en el congreso de la European Society of Cardiology en Múnich. Tres tipos de infarto que ocurren hasta diez veces más frecuentemente en mujeres reciben ahora la misma clasificación que el infarto causado por coágulos de sangre. Además,...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/es/nuevas-directrices-sobre-infarto-corrigen-el-infradiagnostico-en-mujeres-1789586309732q90vwcvuu.html"
+    },
     {
      "id": "1789533361143slogkd3i2",
      "titel": "Ayuda Creativa Para el Duelo en la Escuela",
@@ -382,23 +362,22 @@
      "url": "https://brightnews.online/articles/es/primero-una-casa-luego-la-recuperacion-17894468770162a9ki2qkf.html"
     },
     {
-     "id": "1789409398854ryk5ehwtu",
-     "titel": "Mano Robótica Traduce Voz de Maestro a Lengua de Signos",
-     "teaser": "En Kenia, la emprendedora de 22 años Norah Kimathi ha desarrollado con su startup ZeroBionic una mano robótica que traduce directamente la voz de un maestro a lengua de signos. De los 300.000 niños sordos o con discapacidad auditiva en Kenia, solo una fracción asiste a la escuela, en parte porque el país no cuenta con una lengua de signos...",
-     "score": 10,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/es/mano-robotica-traduce-voz-de-maestro-a-lengua-de-signos-1789409398854ryk5ehwtu.html"
-    },
-    {
-     "id": "1789409245357jsvwu6hgj",
-     "titel": "Seis Horas En La Oscuridad: Extraños Se Convirtieron En Vecinos",
-     "teaser": "En noviembre de 1965, un gran apagón afectó el noreste de EE.UU. y partes de Canadá, dejando 30 millones de afectados. Más de 800.000 pasajeros del metro de Nueva York quedaron atrapados, entre ellos Lynn Lowin, que viajaba de Brooklyn a Manhattan. Sin luz, teléfonos ni información, los pasajeros permanecieron juntos en el tren durante horas. Compartieron comida, se animaron...",
-     "score": 10,
+     "id": "1789586786470nofcj4hhu",
+     "titel": "Diez edificios que se fusionan con la naturaleza",
+     "teaser": "El World Architecture Festival (WAF) destaca este año edificios que se integran completamente en su entorno natural. Según el fundador Paul Finch, existe un creciente interés por incorporar la naturaleza en la arquitectura, a través de paisajes, balcones, terrazas y techos. Entre los proyectos nominados se encuentran un resort de Aslam Sham Architects con techos vegetados que camuflan el complejo,...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/seis-horas-en-la-oscuridad-extranos-se-convirtieron-en-vecinos-1789409245357jsvwu6hgj.html"
+     "url": "https://brightnews.online/articles/es/diez-edificios-que-se-fusionan-con-la-naturaleza-1789586786470nofcj4hhu.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260915-health",
+     "titel": "Noticias de salud esta semana: diagnósticos más justos, espacio para el duelo y una enfermedad que desaparece",
+     "categorie": "Health",
+     "dag": "2026-09-15",
+     "url": "https://brightnews.online/articles/es/noticias-de-salud-esta-semana-diagnosticos-mas-justos-espacio-para-el-duelo-y-un-dg-20260915-health.html"
+    },
     {
      "id": "dg-20260915-lifestyle",
      "titel": "Alojamiento, música y repostería: calidez en todas sus formas esta semana",
@@ -426,20 +405,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-09-14",
      "url": "https://brightnews.online/articles/es/casas-vecinos-en-la-oscuridad-y-dos-perseverantes-decididas-las-noticias-de-esti-dg-20260914-lifestyle.html"
-    },
-    {
-     "id": "dg-20260913-science",
-     "titel": "Ciencia esta semana: de cuadros antiguos a patas de araña brillantes",
-     "categorie": "Science",
-     "dag": "2026-09-13",
-     "url": "https://brightnews.online/articles/es/ciencia-esta-semana-de-cuadros-antiguos-a-patas-de-arana-brillantes-dg-20260913-science.html"
-    },
-    {
-     "id": "dg-20260913-environment",
-     "titel": "Del techo de una fábrica al jardín trasero: dónde la naturaleza recupera espacio estos días",
-     "categorie": "Environment",
-     "dag": "2026-09-13",
-     "url": "https://brightnews.online/articles/es/del-techo-de-una-fabrica-al-jardin-trasero-donde-la-naturaleza-recupera-espacio--dg-20260913-environment.html"
     }
    ]
   }
