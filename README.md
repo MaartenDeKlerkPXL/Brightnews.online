@@ -39,9 +39,12 @@ drietrapse JSON-parser (`verwerkAIResponse`).
    Circuit breaker: twee mislukte batches op rij stopt de selectie
    (items blijven herkansbaar).
 3. **Fase C — moeder + vertaal**: per geselecteerd item schrijft Sonnet één
-   Nederlandse moedertekst (titel, korte samenvatting 60-150 w, lange versie
-   tot ±500 w — **bron-getrouw**, nooit meer dan de bron draagt — alt, meta,
-   categorie); Haiku vertaalt die naar de andere vier talen. Alle talen
+   Nederlandse moedertekst (titel, korte samenvatting 60-150 w —
+   **bron-getrouw**, nooit meer dan de bron draagt — alt, meta, categorie);
+   Haiku vertaalt die naar de andere vier talen. Langere hervertellingen
+   per artikel zijn bewust gestopt (besluit 2026-09-16, persuitgeversrecht:
+   zie de toelichting in processor.js); premium leunt op de dagoverzichten
+   en de perks eromheen. Alle talen
    vertellen zo hetzelfde verhaal. **Atomair**: eerst alle 5 talen naar de
    Supabase-tabel `articles_full` (de echte paywall; premium leest via
    `get_full_article()`), pas daarna de ~60-woorden-teaser in de publieke

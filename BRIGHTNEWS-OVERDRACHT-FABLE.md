@@ -232,6 +232,20 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
 
 ## 9. Volgende stappen (in volgorde)
 
+0-S9. **Sessie 9 (2026-09-16)**: Maartens wachtende werk verwerkt (PR #5
+   gemerged + og:image-absoluutfix; PR #1-bronwerk gemerged, sw v23,
+   eslint 0); zijn analyses beoordeeld (hoge kwaliteit) en doorgevoerd:
+   selectieprompt **v8 met uitsluitingspoort** + mismatch/per-categorie-
+   tellers, extractie-fix (scripts/nav uit haalArtikelTekst — Sciencenews/
+   BBC-culture waren extractieslachtoffers, geen slechte bronnen),
+   sanering alleen Newatlas, vertaalregels ×4 prompts + concrete-titel-
+   regel. **500-woorden-premium GESTOPT** (besluit Erik; juridische
+   analyse Maarten 5 sep) incl. veegronde articles_full (475 rijen).
+   Fast-lane in CLAUDE.md: sessiestart-checklist (PR's met review-verzoek
+   éérst; TODO.md; repo i.p.v. mail). Open voor Erik: TODO 26
+   (auto-reload + key-eigendom — storing 10–13 sep was lege balans op
+   Eriks account) en 27 (Stripe Climate verifiëren, Maarten).
+
 0-M1. **Marketing fase M1 LIVE (sessie 8, 2026-09-09/10, GO Erik op
    voorstellen 0/1/3/6)**: (a) reparaties — vertaalstap 2 pogingen +
    diagnose (nachtruns verloren 6 art. aan parse-uitval dáár), digest-

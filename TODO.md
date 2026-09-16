@@ -184,6 +184,14 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
 
 ## Afgerond
 
+- [x] **500-woorden-premium gestopt** (2026-09-16, besluit Erik na Maartens
+  juridische analyse van 5 sep — het "J3-punt"). De lange hervertellingen per
+  artikel zijn uit de pipeline (full_text = korte bron-getrouwe samenvatting)
+  én uit de database geveegd (475 rijen van 95 fase-2-artikelen terug naar
+  samenvattingslengte; dagoverzichten ongemoeid — die zijn juist het sterke,
+  eigen premium-materiaal). Premium = dagoverzichten + straks vroege
+  toegang/nieuwsbrief, zie MARKETING-PLAN.md.
+
 - [x] **Homepage laadt 24 kaarten per keer** (2026-09-10). Stond op alle 150
   ineens, waardoor de pagina 24.141 pixels lang werd; nu krap 5.000 bij
   binnenkomst, met een knop voor de rest. De fotolijst blijft bestaan tussen

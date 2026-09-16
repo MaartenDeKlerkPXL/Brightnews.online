@@ -180,6 +180,14 @@ function schoonSnippet(tekst) {
 }
 
 // --- Moeder + vertaal (besluit Erik 2026-09-05, "punt 3") --------------------
+// LANGE PREMIUM-VERSIES GESTOPT (besluit Erik 2026-09-16): een hervertelling
+// van ±500 woorden uit één bron, achter een betaalmuur, valt ver buiten het
+// "zeer korte fragment" van het persuitgeversrecht en werkt als substituut
+// voor het origineel (analyse Maarten 2026-09-05; DPG/HowardsHome ~20 woorden,
+// Advance v Cohere, C-250/25 nog bij het Hof). Premium leunt voortaan op wat
+// juridisch wél sterk is: de dagoverzichten (eigen tekst uit meerdere
+// bronnen) en straks vroege toegang/nieuwsbrief. full_text = de korte,
+// bron-getrouwe samenvatting (60–150 w).
 // Eén moedertekst in het Nederlands (rol 'schrijven', Sonnet) met korte én
 // lange samenvatting plus metadata; daarna per taal één vertaalcall (rol
 // 'vertalen', Haiku). Alle vijf talen vertellen zo gegarandeerd hetzelfde
@@ -187,7 +195,7 @@ function schoonSnippet(tekst) {
 // inhoudelijk konden divergeren — en vertalen is goedkoper dan genereren.
 const TAAL_NAMEN = { nl: 'Nederlands', en: 'Engels', de: 'Duits', fr: 'Frans', es: 'Spaans' };
 const CATEGORIEEN = ['Tech', 'Health', 'Science', 'Lifestyle', 'Environment', 'Finance'];
-const MOEDER_VELDEN = ['titel', 'kort', 'lang', 'alt', 'meta_d', 'meta_k'];
+const MOEDER_VELDEN = ['titel', 'kort', 'alt', 'meta_d', 'meta_k'];
 // Voor de diagnose-regel bij parse-uitval (herijking, 2026-09-06).
 let laatsteRuweRespons = '';
 
@@ -197,7 +205,7 @@ function veldenCompleet(data) {
 
 // Schrijft de Nederlandse moedertekst. Bron-getrouwheid is hetzelfde
 // reviewbesluit als altijd (2026-09-01): nooit meer beweren dan de bron
-// draagt; "lang" valt op "kort" terug als de bron dun is.
+// draagt.
 async function maakMoedertekst(item, statistieken) {
     const antwoord = await aiCall({
         rol: 'schrijven',
@@ -206,12 +214,11 @@ Gebruik UITSLUITEND wat in de titel en tekst hierboven staat. Verzin of veronder
 Lever in het Nederlands:
 - "titel": pakkende titel die het onderwerp concreet bij naam noemt (dus "Gordelroosvaccin beschermt hart", niet "Prikvaccin beschermt hart" — wat hier vaag is, wordt in vier talen vaag); zonder het woord "inspirerend", geen woorden langer dan 24 letters
 - "kort": feitelijke, journalistieke samenvatting van 60 tot maximaal ±150 woorden
-- "lang": uitgebreidere versie tot maximaal ±500 woorden, in alinea's gescheiden door een lege regel; NOOIT langer dan de bron draagt — geeft de bron te weinig voor een langere versie, herhaal dan exact de tekst van "kort"
 - "alt": foto-alt-tekst
 - "meta_d": SEO-metabeschrijving van maximaal 155 tekens
 - "meta_k": relevante keywords, kommagescheiden
 - "categorie": precies één uit: ${CATEGORIEEN.join(', ')}
-Antwoord UITSLUITEND met geldig JSON — alinea-scheidingen binnen een tekstveld schrijf je als \\n\\n, nooit als echt regeleinde: {"titel": "..", "kort": "..", "lang": "..", "alt": "..", "meta_d": "..", "meta_k": "..", "categorie": ".."}`,
+Antwoord UITSLUITEND met geldig JSON — alinea-scheidingen binnen een tekstveld schrijf je als \\n\\n, nooit als echt regeleinde: {"titel": "..", "kort": "..", "alt": "..", "meta_d": "..", "meta_k": "..", "categorie": ".."}`,
     });
     statistieken.aiCalls++;
     statistieken.aiTokens += antwoord.tokens;
@@ -236,10 +243,10 @@ async function vertaalMoedertekst(moeder, lang, statistieken) {
     for (let poging = 0; poging < 2; poging++) {
         const antwoord = await aiCall({
             rol: 'vertalen',
-            prompt: `Vertaal de onderstaande artikelvelden van BrightNews van het Nederlands naar het ${TAAL_NAMEN[lang]}. Vertaal natuurlijk en journalistiek, als iemand die de doeltaal als moedertaal schrijft. Regels (steekproef 2026-09-10): (1) behoud het geslacht uit het origineel — kop en tekst mogen elkaar nooit tegenspreken; (2) vertaal namen van organisaties, merken, producten en instellingen NIET; (3) voeg NIETS toe en laat NIETS weg; (4) volg de titelconventie van de doeltaal — Frans en Spaans gebruiken gewone zinsstijl, geen hoofdletter op elk woord; (5) laat verwijzingen tussen blokhaken zoals [1] exact staan. Behoud in "lang" de alinea-indeling (lege regels). De titel bevat geen woorden langer dan 24 letters; "meta_d" blijft maximaal 155 tekens.
+            prompt: `Vertaal de onderstaande artikelvelden van BrightNews van het Nederlands naar het ${TAAL_NAMEN[lang]}. Vertaal natuurlijk en journalistiek, als iemand die de doeltaal als moedertaal schrijft. Regels (steekproef 2026-09-10): (1) behoud het geslacht uit het origineel — kop en tekst mogen elkaar nooit tegenspreken; (2) vertaal namen van organisaties, merken, producten en instellingen NIET; (3) voeg NIETS toe en laat NIETS weg; (4) volg de titelconventie van de doeltaal — Frans en Spaans gebruiken gewone zinsstijl, geen hoofdletter op elk woord; (5) laat verwijzingen tussen blokhaken zoals [1] exact staan. De titel bevat geen woorden langer dan 24 letters; "meta_d" blijft maximaal 155 tekens.
 INVOER:
 ${JSON.stringify(invoer)}
-Antwoord UITSLUITEND met geldig JSON met exact dezelfde velden — alinea-scheidingen binnen een tekstveld schrijf je als \\n\\n, nooit als echt regeleinde: {"titel": "..", "kort": "..", "lang": "..", "alt": "..", "meta_d": "..", "meta_k": ".."}`,
+Antwoord UITSLUITEND met geldig JSON met exact dezelfde velden — alinea-scheidingen binnen een tekstveld schrijf je als \\n\\n, nooit als echt regeleinde: {"titel": "..", "kort": "..", "alt": "..", "meta_d": "..", "meta_k": ".."}`,
         });
         statistieken.aiCalls++;
         statistieken.aiTokens += antwoord.tokens;
@@ -369,7 +376,6 @@ async function processNews() {
         selectieOvergeslagen: 0,
         selectieMismatch: 0,
         perUitsluiting: {},
-        langeVersies: 0,
     };
 
     // Fase A verzamelt alleen; de AI-calls volgen daarna gebundeld (fase B)
@@ -588,8 +594,6 @@ async function processNews() {
                     console.error(`⚠️ Vertaling incompleet, artikel overgeslagen: ${item.title}`);
                     continue;
                 }
-                if (moeder.lang !== moeder.kort) statistieken.langeVersies++;
-
                 const category = moeder.categorie;
                 const articleId = Date.now() + Math.random().toString(36).substr(2, 9);
 
@@ -631,7 +635,7 @@ async function processNews() {
                         const { error } = await supabaseAdmin.from('articles_full').upsert({
                             id: String(articleId),
                             lang,
-                            full_text: teksten[lang].lang || teksten[lang].kort
+                            full_text: teksten[lang].kort
                         }, { onConflict: 'id,lang' });
                         if (error) throw new Error(error.message);
                     } catch (err) {
