@@ -4,6 +4,11 @@ Werklijst, opgesteld 2026-09-10 na een ronde langs de projectdocumenten, de
 open pull requests en een paar eigen metingen op de site. Gesorteerd op
 urgentie, niet op moeite.
 
+**Nummers blijven staan waar ze staan.** Is een punt af, dan verhuist het naar
+het blok onderaan en blijft zijn nummer ongebruikt. Er zitten dus gaten in de
+reeks, en dat is de bedoeling: in commitberichten en op de pull requests wordt
+naar puntnummers verwezen, en die verwijzingen moeten blijven kloppen.
+
 Afspraken over hóé we werken staan in `CLAUDE.md` (branch per klus, eslint op
 0 errors, `CACHE_NAME` bumpen, vertaalkeys in 5 talen). Vink af door `[ ]` te
 vervangen door `[x]` en zet er kort bij wat er gebeurd is.
@@ -45,17 +50,20 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   vóór de lancering; de werkwijze staat in die bijlage beschreven. *(Erik, na
   het bijstellen van de prompt)*
 
-- [ ] **4. Lemon Squeezy afbouwen** en daarna het Supabase-toegangstoken van
-  Erik intrekken (Account → Access Tokens → Revoke). Stripe draait live sinds
-  2026-09-05; Lemon hangt er nog parallel bij. Zie `STRIPE-MIGRATIE.md`.
-  *(Erik, daarna Maarten voor het token)*
+- [ ] **4. Lemon Squeezy: alleen nog buiten de repo.** Betalingen lopen sinds
+  2026-09-05 volledig via **Stripe Managed Payments**; Lemon Squeezy wordt
+  nergens meer gebruikt. In de code staat alleen nog dood materiaal: een paar
+  toelichtende regels, de ongebruikte klassenaam `btn-lemon-checkout` op twee
+  knoppen (zonder opmaak) en `LemonSqueezy` als globale variabele in
+  `eslint.config.js` (nergens aangeroepen). Opruimen mag, maar heeft geen haast.
+
+  Wat wél nog moet, en allebei buiten de repo:
+  1. **De Lemon Squeezy-winkel sluiten** in dat account. *(Maarten)*
+  2. **Daarna het Supabase-toegangstoken van Erik intrekken** — Account →
+     Access Tokens → Revoke. Dat stond altijd al als sluitstuk van het
+     betaaltraject. *(Maarten)*
 
 ## Conversie en eerste indruk
-
-- [ ] **5. Homepage laadt alle 150 kaarten in één keer.** De pagina wordt
-  daardoor 24.141 pixels lang (gemeten 2026-09-10). De foto's zijn wel
-  `loading="lazy"`, dus het is minder erg dan het klinkt, maar een "Laad
-  meer"-knop bij 24 kaarten scheelt laadtijd en scrollmoeheid. *(Maarten)*
 
 - [ ] **6. Cookiebanner compacter maken** — op mobiel bedekt hij bijna het
   halve scherm en hij zweeft over de content, ook over de abonnementskaarten.
@@ -65,19 +73,7 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   checkbox erboven. Functioneel werkt het al; het is puur de plek die
   onlogisch is. Zit ook in PR #1. *(Maarten)*
 
-- [ ] **8. "€0 vandaag" als hoofdargument** bij de proefperiode, in plaats van
-  de huidige regel "Eerste 30 dagen gratis". Badge op de kaart plus microcopy
-  onder de knop: "Vandaag €0 — opzegbaar tijdens de proefperiode". *(Maarten)*
-
-- [ ] **9. Sparkle-kaart (gratis plan) heeft geen knop.** Een "Blijf gratis
-  lezen"-knop naar de homepage maakt de keuze compleet. *(Maarten)*
-
 ## Techniek en onderhoud
-
-- [ ] **10. Meldingen in `js/auth.js` zijn hardcoded Nederlands.** Regels
-  70–79 sturen `Welkom ${name}!` en de foutteksten letterlijk mee, dus een
-  Engelse of Duitse bezoeker krijgt Nederlands te zien. Omzetten naar
-  vertaalkeys in `data/translations.js` — elke key in 5 talen. *(Maarten)*
 
 - [ ] **11. Referral-systeem is nooit afgemaakt.** Staat als TODO in
   `js/main.js:22`; `add_premium_reward` bestaat wel. Afmaken of de resten
@@ -98,9 +94,6 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
 
 - [ ] **14. Taalkiezer op mobiel** is groot ten opzichte van de navigatiebalk.
   Overweeg alleen de vlag of de ISO-code op smalle schermen. *(Maarten)*
-
-- [ ] **15. Laadskeletten voor de nieuwskaarten** (grijze placeholder-blokken)
-  in plaats van een lege pagina tijdens het ophalen van de JSON. *(Maarten)*
 
 - [ ] **16. 263 archiefpagina's draaien nog op het oude template.** Eén keer
   bewust regenereren maakt alles uniform; de brondata is er. Let op de regel
@@ -179,6 +172,22 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
 
 ## Afgerond
 
+- [x] **Homepage laadt 24 kaarten per keer** (2026-09-10). Stond op alle 150
+  ineens, waardoor de pagina 24.141 pixels lang werd; nu krap 5.000 bij
+  binnenkomst, met een knop voor de rest. De fotolijst blijft bestaan tussen
+  porties door, dus geen dubbele foto's, en terugkomen uit een artikel herstelt
+  het aantal getoonde porties.
+- [x] **"€0 vandaag" als hoofdargument** (2026-09-16). Gele markering naast de
+  prijs van beide betaalde plannen, plus een korte regel onder de knop.
+- [x] **Knop op de gratis kaart** (2026-09-16). "Blijf gratis lezen", als link
+  naar de voorpagina — geen afrekenknop, want er valt niets af te rekenen.
+- [x] **Meldingen in `js/auth.js` vertaald** (2026-09-10 en 2026-09-16). Eerst de
+  vier welkomstteksten na registreren, daarna de foutmeldingen van de
+  inlogdienst, die eerder rauw en in het Engels werden doorgegeven. De
+  technische tekst blijft in de console staan.
+- [x] **Laadskeletten voor de nieuwskaarten** (2026-09-16). Zes grijze
+  kaartvormen in plaats van een regel tekst; verborgen voor schermlezers, en
+  zonder glans als het systeem op minder beweging staat.
 - [x] **Mistral-sleutel weggehaald uit GitHub Secrets** (2026-09-16, door
   Maarten). De adapter zette Mistral automatisch in de fallback-keten zolang die
   sleutel bestond, en strandde dan elke run drie keer op een rate limit. Scheelt
