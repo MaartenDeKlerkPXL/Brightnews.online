@@ -98,6 +98,10 @@ function paginaHtml(artikel, lang, slugsPerTaal, manifest) {
     const isIngekort = teaser !== String(artikel.summary || '') || String(artikel.summary || '').trim().endsWith('...');
     const beschrijving = (artikel.meta_description || teaser).slice(0, 155);
     const afbeelding = veiligeAfbeelding(artikel.image, reserveAfbeelding(artikel));
+    // og:image en JSON-LD vereisen een absolute URL; een root-relatieve
+    // reservefoto zou deel-previews (WhatsApp/LinkedIn) breken. De <img> op
+    // de pagina zelf mag wél relatief blijven.
+    const afbeeldingAbsoluut = afbeelding.startsWith('/') ? SITE_URL + afbeelding : afbeelding;
     const bron = artikel.source || t(lang, 'unknown_source');
     const bronLink = veiligeUrl(artikel.link, null);
     const isoDatum = artikel.date ? new Date(artikel.date).toISOString() : '';
@@ -119,7 +123,7 @@ function paginaHtml(artikel, lang, slugsPerTaal, manifest) {
         '@type': 'NewsArticle',
         headline: artikel.title,
         description: beschrijving,
-        image: [afbeelding],
+        image: [afbeeldingAbsoluut],
         datePublished: isoDatum,
         dateModified: isoDatum,
         inLanguage: lang,
@@ -188,7 +192,7 @@ ${hreflangs}
     <link rel="alternate" hreflang="x-default" href="${SITE_URL}/articles/${xDefaultLang}/${xDefaultSlug}-${artikel.id}.html">
     <meta property="og:title" content="${escapeHtml(artikel.title)}">
     <meta property="og:description" content="${escapeHtml(beschrijving)}">
-    <meta property="og:image" content="${escapeHtml(afbeelding)}">
+    <meta property="og:image" content="${escapeHtml(afbeeldingAbsoluut)}">
     <meta property="og:url" content="${paginaUrl}">
     <meta property="og:type" content="article">
     <meta property="article:published_time" content="${isoDatum}">
