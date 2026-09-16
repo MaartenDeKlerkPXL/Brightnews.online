@@ -83,9 +83,13 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   `js/main.js:22`; `add_premium_reward` bestaat wel. Afmaken of de resten
   opruimen — half werk in de code is erger dan geen werk. *(Erik)*
 
-- [ ] **12. Footer-socials linken naar profielen die niet bestaan.** Elke klik
-  leidt nu naar een 404. Claim de handles (zie punt 22) of haal de iconen
-  tijdelijk weg. *(Maarten)*
+- [ ] **12. Footer-socials: alleen LinkedIn wacht nog.** Facebook wijst sinds
+  2026-09-16 naar Maartens BrightNews-pagina (Facebook stond destijds geen
+  bedrijfsnaam toe, vandaar een persoonsnaam in de URL) en Instagram klopte al.
+  **LinkedIn staat nog op het niet-bestaande `/company/brightnews-online`**; het
+  juiste adres (`/in/brightnews-online-5206a53b3/`) zit in PR #1 en komt mee
+  zodra Erik die merget. Archiefartikelpagina's houden hun oude links tot ze
+  ooit opnieuw gegenereerd worden. *(wacht op PR #1)*
 
 - [ ] **13. Witte tekst op #32CD32 haalt geen WCAG AA** (ongeveer 2:1). Was
   een bewuste keuze, maar geldt sinds 2026-09-09 ook voor de footer-iconen die
@@ -143,16 +147,6 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   vermenigvuldigd, dus verbeteren aan de schrijfkant werkt vier keer door. Er is
   bewust **niets** gewijzigd. *(Erik)*
 
-- [ ] **21. `MISTRAL_API_KEY` weghalen uit GitHub Secrets.** De adapter zet
-  Mistral automatisch in de fallback-keten zodra die sleutel bestaat. Er is geen
-  betaalde tier meer, dus elke run probeert het drie keer, krijgt drie keer een
-  rate limit terug, en levert ±30 seconden vertraging plus een hoop verwarrende
-  regels in het log op. Tijdens de storing van 10–13 september leek het daardoor
-  even alsof er twee dingen kapot waren in plaats van één. Eén klik: Settings →
-  Secrets and variables → Actions → `MISTRAL_API_KEY` → verwijderen. De workflow
-  verwijst er nog naar, maar een ontbrekende waarde is prima — dan is de sleuf
-  werkelijk leeg, zoals `CLAUDE.md` eerder al beweerde. *(Maarten)*
-
 ## Buiten de code — alleen Maarten kan dit
 
 - [ ] **22. Socials claimen**: `facebook.com/brightnews.online`,
@@ -185,6 +179,15 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
 
 ## Afgerond
 
+- [x] **Mistral-sleutel weggehaald uit GitHub Secrets** (2026-09-16, door
+  Maarten). De adapter zette Mistral automatisch in de fallback-keten zolang die
+  sleutel bestond, en strandde dan elke run drie keer op een rate limit. Scheelt
+  ±30 seconden per run en veel ruis in het log. Te controleren bij de
+  eerstvolgende run: er hoort geen enkele regel met `mistral/` meer in te staan.
+- [x] **Anthropic-account uitgezocht** (2026-09-16). `console.anthropic.com`
+  stuurt Maarten door naar `/create`, wat betekent dat zijn account geen
+  organisatie heeft. De API-sleutel staat dus vrijwel zeker op Eriks account —
+  zie het nieuwe punt hieronder over auto-reload en eigendom.
 - [x] **Test-endpoint van de Stripe-webhook verwijderd** (2026-09-10). Stripe
   meldde mislukte bezorgingen; het bleek uitsluitend de testomgeving. Na de
   test-E2E van 4 september waren de testvlaggen weggehaald terwijl het
