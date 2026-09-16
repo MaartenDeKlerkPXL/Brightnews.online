@@ -1187,3 +1187,22 @@ met de 18 nieuwe artikelen die deze controle vannacht aantrof. Voor zover ik
 als controleur kan vaststellen, lijkt de storing dus opgelost — al kan ik de
 onderliggende oorzaak (kredietbalans, Mistral-terugval-configuratie) niet
 zelf verifiëren, dat blijft aan Erik.
+
+### 2026-09-16, 04:12 Europe/Amsterdam
+
+Beoordeeld: 3 artikelen, gepubliceerd tussen 2026-09-15 04:34 en 2026-09-15
+04:37 — dit zijn alle nieuwe artikelen sinds de vorige ronde (die liep tot en
+met 2026-09-14 18:22:44). Twee dagoverzichten (`type: digest`) zijn
+overgeslagen. Niet bright-waardig: 0. Twijfel: 0.
+
+Alle drie zijn ruim bright-waardig: "Eerst een Huis, Dan Herstel"
+(Positive.News) over het Housing First-model dat dakloze mensen eerst een
+vaste woning geeft, met Michael als herkenbare hoofdpersoon — hulp en herstel
+als kern, persoonlijk en maatschappelijk relevant. "Athene Bouwt Megapark op
+Oude Luchthaven" (GoodNewsNetwork.org) over het Ellinikon Park op de plek van
+de oude luchthaven, met concrete cijfers over verkoeling en biodiversiteit —
+duidelijk milieu- en gemeenschapsnieuws. "Olifanten Kunnen Impulsen
+Beheersen" (GoodNewsNetwork.org) over onderzoek van het National Elephant
+Institute in Thailand naar zelfbeheersing bij Aziatische olifanten — een
+concreet, positief wetenschapsverhaal zonder productpromotie of
+zelfhulpframing. Geen van de drie valt in een categorie uit de afwijslijst.

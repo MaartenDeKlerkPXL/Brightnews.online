@@ -244,3 +244,45 @@ afwijking. `meta_description` komt tussen beide talen inhoudelijk overeen, en
 de statische Duitse artikelpagina bevat dezelfde (afgekapte) tekst als de
 `summary` in `data/news_de.json` — geen afwijking tussen het artikel zelf en
 de feeddata, op de metadata-kwestie hierboven na.
+
+### 2026-09-16, Frans
+
+Vandaag is het woensdag, dus is Frans aan de beurt. Gepakt: het eerste
+artikel uit de groep van vannacht (zie `backend/selectie-prompt-analyse.md`)
+dat zowel in `data/news_nl.json` als in `data/news_fr.json` voorkomt.
+
+**Artikel:** Eerst een Huis, Dan Herstel / D'abord un Logement, Puis la
+Guérison
+**Oordeel:** twee bevindingen, geen ervan ernstig.
+
+- **Titelstijl:** "D'abord un Logement, Puis la Guérison" gebruikt een
+  hoofdletter op elk woord ("Logement", "Puis", "Guérison"); het Frans hoort
+  hier gewone zinsstijl te gebruiken: "D'abord un logement, puis la
+  guérison." Dezelfde afwijking die deze steekproef al eerder vaststelde.
+- **Preview valt eerder stil dan in het Nederlands.** Dit artikel zit achter
+  de premium-paywall en toont bewust maar een deel van de tekst, afgesloten
+  met "...". Dat is normaal gedrag, geen fout. Wat wél opvalt: de afkap lijkt
+  op een vast aantal tekens te zitten, niet op een vast aantal zinnen. Het
+  Nederlands rondt de zin over de zorgkosten nog af ("...terwijl de
+  zorgkosten door de charity worden gedekt.") en begint aan een nieuwe zin
+  ("Sinds hij een vaste woning heeft,...") voor de afkap. Het Frans kapt af
+  ván diezelfde zin, vóór die klaar is: "...tandis que les frais de soutien
+  sont..." Een Franse lezer krijgt in de gratis preview dus niet te lezen dát
+  de zorgkosten door de liefdadigheidsinstelling worden gedekt, terwijl een
+  Nederlandse (en Engelse) lezer dat feit wel al ziet voor de inlogmuur
+  verschijnt. Het Duits kwam in deze vergelijking juist verder dan het
+  Nederlands. Vermoedelijke oorzaak: de afkap gebeurt op een vast aantal
+  tekens per taal, en Frans (en vermoedelijk Spaans, met een vergelijkbare
+  woordlengte) verliest daardoor relatief meer inhoud dan Nederlands, Engels
+  of Duits. Dit is geen vertaalfout in de gebruikelijke zin — de vertaalde
+  tekst zelf klopt — maar wel een verschil in hoeveel feitelijke inhoud
+  lezers per taal gratis te zien krijgen.
+
+Verder klopt de vertaling inhoudelijk: geen toegevoegde of weggelaten feiten
+binnen het vertaalde stuk zelf, eigennamen ("The Connection", "Solo Homes")
+blijven onvertaald, "Londen" wordt correct "Londres" (de gangbare Franse
+naam, geen fout). Er komen geen geslachtsverwijzingen voor in het zichtbare
+fragment, dus dat punt is hier niet te toetsen. `meta_keywords` en
+`meta_description` komen inhoudelijk overeen met het Nederlands, zonder
+toegevoegde of vertaalde eigennamen. De lopende tekst zelf leest natuurlijk,
+op de titelstijl na.
