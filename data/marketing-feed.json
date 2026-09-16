@@ -1,10 +1,18 @@
 {
- "gegenereerd": "2026-09-16T19:44:13.954Z",
+ "gegenereerd": "2026-09-16T19:49:23.011Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "178958809918291v7k5ka4",
+     "titel": "Afghaanse family health houses redden moeders en baby's",
+     "teaser": "In Afghanistan, een van de gevaarlijkste landen ter wereld om moeder te worden, bieden family health houses (Ashiana-e-Sehi) cruciale zorg in afgelegen gebieden. Dankzij dit UNFPA-programma, gestart in 2009, kreeg Ram Bibi in Helmand prenatale controles van vroedvrouw Marzia, en werd Manawara's stuitligging veilig behandeld. Meer dan 450 van deze klinieken staan in 'witte gebieden', minstens 10 kilometer van de...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/nl/afghaanse-family-health-houses-redden-moeders-en-baby-s-178958809918291v7k5ka4.html"
+    },
     {
      "id": "1789587795217koeu9678p",
      "titel": "Tatyana Ali zet zich in voor zwarte en inheemse moederzorg",
@@ -36,14 +44,6 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/huurkorting-en-vriendschap-dankzij-inwonen-bij-senior-1789533305880mtme7702f.html"
-    },
-    {
-     "id": "17894468770162a9ki2qkf",
-     "titel": "Eerst een Huis, Dan Herstel",
-     "teaser": "Een woonmodel genaamd Housing First geeft dakloze mensen eerst een vaste woning, voordat andere problemen worden aangepakt. Michael, die dakloos werd in Plymouth en naar Londen kwam, kreeg via Solo Homes van The Connection een appartement en een support worker. Zijn huur wordt betaald via uitkeringen, terwijl de zorgkosten door de charity worden gedekt. Sinds hij een vaste woning heeft,...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/eerst-een-huis-dan-herstel-17894468770162a9ki2qkf.html"
     }
    ],
    "dagoverzichten": [
@@ -87,6 +87,14 @@
   "en": {
    "top": [
     {
+     "id": "178958809918291v7k5ka4",
+     "titel": "Afghan family health houses save mothers and babies",
+     "teaser": "In Afghanistan, one of the world's most dangerous countries in which to become a mother, family health houses (Ashiana-e-Sehi) provide crucial care in remote areas. Thanks to this UNFPA programme, launched in 2009, Ram Bibi in Helmand received prenatal check-ups from midwife Marzia, and Manawara's breech presentation was safely treated. More than 450 of these clinics are located in 'white...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/en/afghan-family-health-houses-save-mothers-and-babies-178958809918291v7k5ka4.html"
+    },
+    {
      "id": "1789587795217koeu9678p",
      "titel": "Tatyana Ali advocates for Black and Indigenous maternal care",
      "teaser": "Actress and singer Tatyana Ali, known from The Fresh Prince of Bel-Air, is advocating for better maternity care for Black and Indigenous mothers and babies. Her commitment stems from what she calls „obstetric violence\" during the birth of her son Aszi in 2016, when her birth plan was ignored and she was held down by multiple people. The doctor performed...",
@@ -117,14 +125,6 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/rent-reduction-and-friendship-by-living-with-a-senior-1789533305880mtme7702f.html"
-    },
-    {
-     "id": "17894468770162a9ki2qkf",
-     "titel": "A Home First, Then Recovery",
-     "teaser": "A housing model called Housing First gives homeless people a fixed home before tackling other problems. Michael, who became homeless in Plymouth and came to London, received an apartment and a support worker through Solo Homes from The Connection. His rent is paid through benefits, while care costs are covered by the charity. Since he has had a fixed home,...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/a-home-first-then-recovery-17894468770162a9ki2qkf.html"
     }
    ],
    "dagoverzichten": [
@@ -168,6 +168,14 @@
   "de": {
    "top": [
     {
+     "id": "178958809918291v7k5ka4",
+     "titel": "Afghanische family health houses retten Mütter und Babys",
+     "teaser": "In Afghanistan, einem der gefährlichsten Länder der Welt, um Mutter zu werden, bieten family health houses (Ashiana-e-Sehi) entscheidende Versorgung in abgelegenen Gebieten. Dank dieses UNFPA-Programms, das 2009 gestartet wurde, erhielt Ram Bibi in Helmand Vorsorgeuntersuchungen von Hebamme Marzia, und Manawara's Steißlage wurde sicher behandelt. Mehr als 450 dieser Kliniken befinden sich in „weißen Gebieten\", mindestens 10 Kilometer von der nächsten...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/de/afghanische-family-health-houses-retten-mutter-und-babys-178958809918291v7k5ka4.html"
+    },
+    {
      "id": "1789587795217koeu9678p",
      "titel": "Tatyana Ali setzt sich für schwarze und indigene Müttergesundheit ein",
      "teaser": "Schauspielerin und Sängerin Tatyana Ali, bekannt aus The Fresh Prince of Bel-Air, engagiert sich für bessere Geburtshilfe für schwarze und indigene Mütter und Babys. Ihr Einsatz geht auf das zurück, was sie während der Geburt ihres Sohnes Aszi im Jahr 2016 als „obstetric violence\" bezeichnet — ihr Geburtsplan wurde ignoriert und sie wurde von mehreren Personen festgehalten. Der Arzt führte...",
@@ -198,14 +206,6 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/mietrabschlag-und-freundschaft-durch-zusammenleben-mit-senior-1789533305880mtme7702f.html"
-    },
-    {
-     "id": "17894468770162a9ki2qkf",
-     "titel": "Erst ein Zuhause, dann Heilung",
-     "teaser": "Ein Wohnmodell namens Housing First gibt obdachlosen Menschen zunächst eine feste Wohnung, bevor andere Probleme angegangen werden. Michael, der in Plymouth obdachlos wurde und nach London kam, erhielt über Solo Homes von The Connection eine Wohnung und einen Support Worker. Seine Miete wird über Sozialleistungen bezahlt, während die Kosten für die Betreuung von der Wohltätigkeitsorganisation getragen werden. Seit er eine...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/erst-ein-zuhause-dann-heilung-17894468770162a9ki2qkf.html"
     }
    ],
    "dagoverzichten": [
@@ -249,6 +249,14 @@
   "fr": {
    "top": [
     {
+     "id": "178958809918291v7k5ka4",
+     "titel": "Les maisons de santé familiales afghanes sauvent des mères et des bébés",
+     "teaser": "En Afghanistan, l'un des pays les plus dangereux au monde pour devenir mère, les maisons de santé familiales (Ashiana-e-Sehi) offrent des soins essentiels dans les zones reculées. Grâce à ce programme de l'UNFPA, lancé en 2009, Ram Bibi à Helmand a reçu des contrôles prénatals de la sage-femme Marzia, et la présentation du siège de Manawara a été traitée en...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/fr/les-maisons-de-sante-familiales-afghanes-sauvent-des-meres-et-des-bebes-178958809918291v7k5ka4.html"
+    },
+    {
      "id": "1789587795217koeu9678p",
      "titel": "Tatyana Ali s'engage pour la santé maternelle des femmes noires et autochtones",
      "teaser": "L'actrice et chanteuse Tatyana Ali, connue pour The Fresh Prince of Bel-Air, s'engage pour améliorer les soins obstétricaux destinés aux mères et aux bébés noirs et autochtones. Son engagement découle de ce qu'elle appelle la « violence obstétricale » lors de l'accouchement de son fils Aszi en 2016, quand son plan de naissance a été ignoré et qu'elle a été...",
@@ -279,14 +287,6 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/reduction-de-loyer-et-amitie-en-cohabitant-avec-une-senior-1789533305880mtme7702f.html"
-    },
-    {
-     "id": "17894468770162a9ki2qkf",
-     "titel": "D'abord un Logement, Puis la Guérison",
-     "teaser": "Un modèle de logement appelé Housing First offre d'abord un logement stable aux personnes sans abri, avant de s'attaquer à d'autres problèmes. Michael, devenu sans abri à Plymouth et arrivé à Londres, a reçu un appartement et un assistant social via Solo Homes de The Connection. Son loyer est payé par les allocations, tandis que les frais de soutien sont...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/d-abord-un-logement-puis-la-guerison-17894468770162a9ki2qkf.html"
     }
    ],
    "dagoverzichten": [
@@ -330,6 +330,14 @@
   "es": {
    "top": [
     {
+     "id": "178958809918291v7k5ka4",
+     "titel": "Las casas de salud familiar afganas salvan a madres y bebés",
+     "teaser": "En Afganistán, uno de los países más peligrosos del mundo para ser madre, las casas de salud familiar (Ashiana-e-Sehi) ofrecen atención crucial en zonas remotas. Gracias a este programa del UNFPA, iniciado en 2009, Ram Bibi en Helmand recibió controles prenatales de la comadrona Marzia, y la presentación de nalgas de Manawara fue tratada de forma segura. Más de 450...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/es/las-casas-de-salud-familiar-afganas-salvan-a-madres-y-bebes-178958809918291v7k5ka4.html"
+    },
+    {
      "id": "1789587795217koeu9678p",
      "titel": "Tatyana Ali se compromete con la salud materna de mujeres negras e indígenas",
      "teaser": "La actriz y cantante Tatyana Ali, conocida por The Fresh Prince of Bel-Air, se compromete a mejorar la atención del parto para madres y bebés negros e indígenas. Su compromiso surge de lo que ella denomina „violencia obstétrica\" durante el parto de su hijo Aszi en 2016, cuando ignoraron su plan de parto y fue sujetada por varias personas. La...",
@@ -360,14 +368,6 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/descuento-de-alquiler-y-amistad-al-vivir-con-un-senior-1789533305880mtme7702f.html"
-    },
-    {
-     "id": "17894468770162a9ki2qkf",
-     "titel": "Primero una Casa, Luego la Recuperación",
-     "teaser": "Un modelo de vivienda llamado Housing First proporciona a las personas sin hogar una vivienda fija antes de abordar otros problemas. Michael, quien se quedó sin hogar en Plymouth y se trasladó a Londres, recibió un apartamento y un trabajador de apoyo a través de Solo Homes de The Connection. Su alquiler se paga mediante prestaciones, mientras que los costos...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/primero-una-casa-luego-la-recuperacion-17894468770162a9ki2qkf.html"
     }
    ],
    "dagoverzichten": [
