@@ -160,7 +160,18 @@ function repareerBinnenquotes(s) {
             let j = i + 1;
             while (j < s.length && /\s/.test(s[j])) j++;
             const volgend = s[j];
-            if (volgend === ',' || volgend === '}' || volgend === ']' || volgend === ':' || volgend === undefined) {
+            // Sluitteken? Alleen als er echt JSON-structuur volgt. Een kale
+            // komma is niet genoeg: Duits schrijft juist vaak „Wort", die …
+            // midden in een zin (dáár strandden de laatste drie artikelen) —
+            // na een échte sluitquote+komma volgt altijd een nieuwe string
+            // (de volgende key of het volgende element).
+            let sluit = volgend === '}' || volgend === ']' || volgend === ':' || volgend === undefined;
+            if (!sluit && volgend === ',') {
+                let k = j + 1;
+                while (k < s.length && /\s/.test(s[k])) k++;
+                sluit = s[k] === '"';
+            }
+            if (sluit) {
                 inString = false;
                 uit += ch;
             } else {
