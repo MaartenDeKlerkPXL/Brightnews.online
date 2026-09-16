@@ -29,6 +29,31 @@ function meldingTekst(key, terugval, waarden = {}) {
     return tekst;
 }
 
+// Foutmeldingen van de inlogdienst zijn Engels en technisch ("Invalid login
+// credentials"). Die kreeg de bezoeker eerder rechtstreeks te zien, in welke
+// taal hij de site ook las. Hier wordt de bekende gevallen een eigen zin
+// toegekend; de rest krijgt een nette algemene melding. De oorspronkelijke
+// tekst blijft in de console staan, want die heb je nodig om te weten wat er
+// werkelijk misging.
+const FOUT_PATRONEN = [
+    [/invalid login credentials|invalid credentials/i, 'fout_inloggegevens'],
+    [/already registered|already exists|user already/i, 'fout_al_geregistreerd'],
+    [/email not confirmed|not confirmed/i, 'fout_email_onbevestigd'],
+    [/password should be at least|password is too short/i, 'fout_wachtwoord_kort'],
+    [/unable to validate email|invalid format|invalid email/i, 'fout_email_ongeldig'],
+    [/for security purposes|rate limit|too many requests|after \d+ seconds/i, 'fout_te_snel'],
+    [/failed to fetch|networkerror|load failed|timeout/i, 'fout_netwerk']
+];
+
+function foutTekst(err) {
+    const ruw = (err && err.message) ? String(err.message) : '';
+    if (ruw) console.error('BrightNews — technische foutmelding:', ruw);
+    for (const [patroon, key] of FOUT_PATRONEN) {
+        if (patroon.test(ruw)) return meldingTekst(key, ruw);
+    }
+    return meldingTekst('fout_onbekend', 'Er ging iets mis. Probeer het zo nog eens.');
+}
+
 function showNotification(message, type = 'success') {
     // De container stond alleen in profiel.html en wachtwoord-vergeten.html.
     // Op index.html en abonnementen.html ontbrak hij, waardoor meldingen daar
@@ -109,7 +134,7 @@ async function handleAuth(event, type) {
             setTimeout(() => window.location.href = 'index.html', 1000);
         }
     } catch (error) {
-        showNotification(error.message, "error");
+        showNotification(foutTekst(error), "error");
     }
 }
 
@@ -334,7 +359,7 @@ async function applyDiscountCode() {
             showNotification(getT(reasonKeys[data?.reason] || 'promo_invalid'), 'error');
         }
     } catch (err) {
-        showNotification(err.message, 'error');
+        showNotification(foutTekst(err), 'error');
     }
 }
 
@@ -352,7 +377,7 @@ async function handleForgotPassword(event) {
         if (error) throw error;
         showNotification(getT('forgot_password_sent'), 'success');
     } catch (err) {
-        showNotification(err.message, 'error');
+        showNotification(foutTekst(err), 'error');
     }
 }
 
