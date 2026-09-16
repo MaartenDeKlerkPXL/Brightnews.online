@@ -1,10 +1,18 @@
 {
- "gegenereerd": "2026-09-16T19:28:44.107Z",
+ "gegenereerd": "2026-09-16T19:44:13.954Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "1789587795217koeu9678p",
+     "titel": "Tatyana Ali zet zich in voor zwarte en inheemse moederzorg",
+     "teaser": "Actrice en zangeres Tatyana Ali, bekend van The Fresh Prince of Bel-Air, zet zich in voor betere kraamzorg voor Black en Indigenous moeders en baby's. Haar inzet komt voort uit wat ze 'obstetric violence' noemt tijdens de bevalling van haar zoon Aszi in 2016, toen haar geboorteplan werd genegeerd en ze werd vastgehouden door meerdere personen. De arts paste de...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/nl/tatyana-ali-zet-zich-in-voor-zwarte-en-inheemse-moederzorg-1789587795217koeu9678p.html"
+    },
     {
      "id": "1789586309732q90vwcvuu",
      "titel": "Nieuwe hartaanval-richtlijnen corrigeren onderdiagnose bij vrouwen",
@@ -36,14 +44,6 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/eerst-een-huis-dan-herstel-17894468770162a9ki2qkf.html"
-    },
-    {
-     "id": "1789586786470nofcj4hhu",
-     "titel": "Tien gebouwen die opgaan in de natuur",
-     "teaser": "Het World Architecture Festival (WAF) zet dit jaar gebouwen in de schijnwerpers die volledig opgaan in hun natuurlijke omgeving. Volgens oprichter Paul Finch is er een groeiende interesse om natuur te verwerken in architectuur, via landschap, balkons, terrassen en daken. Onder de genomineerde projecten zijn een resort van Aslam Sham Architects met begroeide daken die het complex camoufleren, een laag...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/tien-gebouwen-die-opgaan-in-de-natuur-1789586786470nofcj4hhu.html"
     }
    ],
    "dagoverzichten": [
@@ -87,6 +87,14 @@
   "en": {
    "top": [
     {
+     "id": "1789587795217koeu9678p",
+     "titel": "Tatyana Ali advocates for Black and Indigenous maternal care",
+     "teaser": "Actress and singer Tatyana Ali, known from The Fresh Prince of Bel-Air, is advocating for better maternity care for Black and Indigenous mothers and babies. Her commitment stems from what she calls „obstetric violence\" during the birth of her son Aszi in 2016, when her birth plan was ignored and she was held down by multiple people. The doctor performed...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/en/tatyana-ali-advocates-for-black-and-indigenous-maternal-care-1789587795217koeu9678p.html"
+    },
+    {
      "id": "1789586309732q90vwcvuu",
      "titel": "New heart attack guidelines correct underdiagnosis in women",
      "teaser": "The four leading cardiovascular health organizations in the world have for the first time established a universal definition of a heart attack, announced at the European Society of Cardiology congress in Munich. Three types of heart attack that occur up to ten times more frequently in women now receive the same classification as the well-known heart attack caused by blood...",
@@ -117,14 +125,6 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/a-home-first-then-recovery-17894468770162a9ki2qkf.html"
-    },
-    {
-     "id": "1789586786470nofcj4hhu",
-     "titel": "Ten buildings that merge with nature",
-     "teaser": "The World Architecture Festival (WAF) is shining a spotlight this year on buildings that fully blend into their natural surroundings. According to founder Paul Finch, there is growing interest in integrating nature into architecture through landscapes, balconies, terraces and roofs. Among the nominated projects are a resort by Aslam Sham Architects with vegetated roofs that camouflage the complex, a low-rise...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/ten-buildings-that-merge-with-nature-1789586786470nofcj4hhu.html"
     }
    ],
    "dagoverzichten": [
@@ -168,6 +168,14 @@
   "de": {
    "top": [
     {
+     "id": "1789587795217koeu9678p",
+     "titel": "Tatyana Ali setzt sich für schwarze und indigene Müttergesundheit ein",
+     "teaser": "Schauspielerin und Sängerin Tatyana Ali, bekannt aus The Fresh Prince of Bel-Air, engagiert sich für bessere Geburtshilfe für schwarze und indigene Mütter und Babys. Ihr Einsatz geht auf das zurück, was sie während der Geburt ihres Sohnes Aszi im Jahr 2016 als „obstetric violence\" bezeichnet — ihr Geburtsplan wurde ignoriert und sie wurde von mehreren Personen festgehalten. Der Arzt führte...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/de/tatyana-ali-setzt-sich-fur-schwarze-und-indigene-muttergesundheit-ein-1789587795217koeu9678p.html"
+    },
+    {
      "id": "1789586309732q90vwcvuu",
      "titel": "Neue Herzinfarkt-Richtlinien korrigieren Unterdiagnose bei Frauen",
      "teaser": "Die vier wichtigsten Herz-Kreislauf-Gesundheitsorganisationen der Welt haben erstmals eine universelle Definition eines Herzinfarkts festgelegt, angekündigt auf dem Kongress der European Society of Cardiology in München. Drei Herzinfarkt-Typen, die bei Frauen bis zu zehnmal häufiger auftreten, erhalten nun die gleiche Klassifizierung wie der bekannte, durch Blutgerinnsel verursachte Herzinfarkt. Zudem wird der Schwellenwert des Troponin-Bluttests gesenkt, da dieser Test bei Frauen Herzinfarkte...",
@@ -198,14 +206,6 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/erst-ein-zuhause-dann-heilung-17894468770162a9ki2qkf.html"
-    },
-    {
-     "id": "1789586786470nofcj4hhu",
-     "titel": "Zehn Gebäude, die in der Natur aufgehen",
-     "teaser": "Das World Architecture Festival (WAF) stellt in diesem Jahr Gebäude in den Fokus, die vollständig in ihrer natürlichen Umgebung aufgehen. Laut Gründer Paul Finch wächst das Interesse daran, Natur in die Architektur zu integrieren – durch Landschaften, Balkone, Terrassen und Dächer. Unter den nominierten Projekten befinden sich ein Resort von Aslam Sham Architects mit begrünten Dächern, die den Komplex tarnen,...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/zehn-gebaude-die-in-der-natur-aufgehen-1789586786470nofcj4hhu.html"
     }
    ],
    "dagoverzichten": [
@@ -249,6 +249,14 @@
   "fr": {
    "top": [
     {
+     "id": "1789587795217koeu9678p",
+     "titel": "Tatyana Ali s'engage pour la santé maternelle des femmes noires et autochtones",
+     "teaser": "L'actrice et chanteuse Tatyana Ali, connue pour The Fresh Prince of Bel-Air, s'engage pour améliorer les soins obstétricaux destinés aux mères et aux bébés noirs et autochtones. Son engagement découle de ce qu'elle appelle la « violence obstétricale » lors de l'accouchement de son fils Aszi en 2016, quand son plan de naissance a été ignoré et qu'elle a été...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/fr/tatyana-ali-s-engage-pour-la-sante-maternelle-des-femmes-noires-et-autochtones-1789587795217koeu9678p.html"
+    },
+    {
      "id": "1789586309732q90vwcvuu",
      "titel": "Les nouvelles directives sur l'infarctus corrigent le sous-diagnostic chez les femmes",
      "teaser": "Les quatre principales organisations de santé cardiovasculaire au monde ont établi pour la première fois une définition universelle de l'infarctus du myocarde, annoncée lors du congrès de la European Society of Cardiology à Munich. Trois types d'infarctus qui surviennent jusqu'à dix fois plus souvent chez les femmes reçoivent désormais la même classification que l'infarctus classique causé par des caillots sanguins....",
@@ -279,14 +287,6 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/d-abord-un-logement-puis-la-guerison-17894468770162a9ki2qkf.html"
-    },
-    {
-     "id": "1789586786470nofcj4hhu",
-     "titel": "Dix bâtiments qui se fondent dans la nature",
-     "teaser": "Le World Architecture Festival (WAF) met cette année en lumière des bâtiments qui s'intègrent complètement à leur environnement naturel. Selon le fondateur Paul Finch, l'intérêt croît pour incorporer la nature dans l'architecture, via le paysage, les balcons, les terrasses et les toits. Parmi les projets nominés figurent une station balnéaire d'Aslam Sham Architects aux toits végétalisés qui camouflent le complexe,...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/dix-batiments-qui-se-fondent-dans-la-nature-1789586786470nofcj4hhu.html"
     }
    ],
    "dagoverzichten": [
@@ -330,6 +330,14 @@
   "es": {
    "top": [
     {
+     "id": "1789587795217koeu9678p",
+     "titel": "Tatyana Ali se compromete con la salud materna de mujeres negras e indígenas",
+     "teaser": "La actriz y cantante Tatyana Ali, conocida por The Fresh Prince of Bel-Air, se compromete a mejorar la atención del parto para madres y bebés negros e indígenas. Su compromiso surge de lo que ella denomina „violencia obstétrica\" durante el parto de su hijo Aszi en 2016, cuando ignoraron su plan de parto y fue sujetada por varias personas. La...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/es/tatyana-ali-se-compromete-con-la-salud-materna-de-mujeres-negras-e-indigenas-1789587795217koeu9678p.html"
+    },
+    {
      "id": "1789586309732q90vwcvuu",
      "titel": "Nuevas directrices sobre infarto corrigen el infradiagnóstico en mujeres",
      "teaser": "Las cuatro principales organizaciones de salud cardiovascular del mundo han establecido por primera vez una definición universal de infarto de miocardio, anunciada en el congreso de la European Society of Cardiology en Múnich. Tres tipos de infarto que ocurren hasta diez veces más frecuentemente en mujeres reciben ahora la misma clasificación que el infarto causado por coágulos de sangre. Además,...",
@@ -360,14 +368,6 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/primero-una-casa-luego-la-recuperacion-17894468770162a9ki2qkf.html"
-    },
-    {
-     "id": "1789586786470nofcj4hhu",
-     "titel": "Diez edificios que se fusionan con la naturaleza",
-     "teaser": "El World Architecture Festival (WAF) destaca este año edificios que se integran completamente en su entorno natural. Según el fundador Paul Finch, existe un creciente interés por incorporar la naturaleza en la arquitectura, a través de paisajes, balcones, terrazas y techos. Entre los proyectos nominados se encuentran un resort de Aslam Sham Architects con techos vegetados que camuflan el complejo,...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/diez-edificios-que-se-fusionan-con-la-naturaleza-1789586786470nofcj4hhu.html"
     }
    ],
    "dagoverzichten": [
