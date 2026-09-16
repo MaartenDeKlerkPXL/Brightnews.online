@@ -411,7 +411,7 @@ async function toonDetail(id) {
     // AI-gegenereerde velden (title, displayContent, image_alt) komen uit RSS-bronnen
     // via het LLM en worden NIET via innerHTML/template-strings ingevoegd, maar via
     // textContent/DOM-eigenschappen — dat voorkomt HTML-/attribuut-injectie (XSS).
-    const fallbackImgUrl = 'https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80';
+    const fallbackImgUrl = kiesVasteAfbeelding(artikel);
 
     detailView.innerHTML = `
     <div class="detail-hero">
@@ -503,59 +503,91 @@ async function toonDetail(id) {
     // artikelpagina zodra die bestaat (zie bepaalDeelUrl), anders ?id=.
     setTimeout(() => updateShareLinks(artikel.title, referralUrl), 150);
 }
-// Reservefoto's per pagina-render: sommige bronnen sturen voor meerdere
-// artikelen dezelfde feed-afbeelding mee (of vallen op dezelfde stockfoto
-// terug). Duplicaat op de pagina? Dan de eerstvolgende nog-ongebruikte
-// foto uit deze pool (mix van de vaste categorie-stockfoto's).
-const RESERVE_AFBEELDINGEN = [
-    "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80",
-    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80",
-    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b",
-    "https://images.unsplash.com/photo-1576400883215-7083980b6193",
-    "https://images.unsplash.com/photo-1580584126903-c17d41830450",
-    "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
-    "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
-    "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
-    "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800&q=80",
-    "https://images.unsplash.com/photo-1554475901-4538ddfbccc2?w=800&q=80",
-    "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
-    "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=800&q=80",
-    "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&q=80",
-    "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=800&q=80",
-    "https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=800&q=80",
-    "https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=800&q=80",
-    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80",
-    "https://images.unsplash.com/photo-1502444330042-d1a1ddf9bb5b?w=800&q=80",
-    "https://images.unsplash.com/photo-1464998857633-50e59fbf2fe6?w=800&q=80",
-    "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=800&q=80",
-    "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e",
-    "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
-    "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=800&q=80",
-    "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80",
-    "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&q=80",
-    "https://images.unsplash.com/photo-1579621970795-87facc2f976d?w=800&q=80",
-    "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=800&q=80",
-    "https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=800&q=80",
-    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-    "https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9?w=800&q=80",
-    "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80",
-    "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=800&q=80",
-    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
-    "https://images.unsplash.com/photo-1501426026826-31c667bdf23d?w=800&q=80",
-    "https://images.unsplash.com/photo-1519834785169-98be25ec3f84?w=800&q=80",
-    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=80",
-    "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80",
-    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80",
-    "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=800&q=80"
-];
-// Dedupliceer op foto-identiteit, niet op exacte URL: dezelfde Unsplash-
-// foto kan met én zonder ?w=800-querystring voorkomen.
+// Reservefoto's per categorie (eigen bestanden in assets/fallback/, sinds
+// 2026-09-08 i.p.v. losse Unsplash-URL's). Twee redenen dat dit nodig is:
+// sommige bronnen leveren helemaal geen foto mee, en sommige sturen voor
+// meerdere artikelen dezelfde. In beide gevallen krijgt het artikel hier een
+// reservefoto uit ZIJN EIGEN categorie, en nooit een die al op de pagina staat.
+const RESERVE_PER_CATEGORIE = {
+    'Tech': 4,
+    'Health': 5,
+    'Science': 4,
+    'Lifestyle': 4,
+    'Environment': 5,
+    'Finance': 4
+};
+
+function reserveLijst(categorie) {
+    const aantal = RESERVE_PER_CATEGORIE[categorie];
+    if (!aantal) return [];
+    const naam = categorie.toLowerCase();
+    return Array.from({ length: aantal }, (_, i) => `/assets/fallback/${naam}-${i + 1}.jpg`);
+}
+
+// Fisher-Yates op een kopie: de bronlijst blijft ongemoeid.
+function schud(lijst) {
+    const uit = lijst.slice();
+    for (let i = uit.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [uit[i], uit[j]] = [uit[j], uit[i]];
+    }
+    return uit;
+}
+
+// Eén geschudde volgorde per categorie, per keer dat de lijst wordt opgebouwd.
+// Daardoor staan niet elke keer dezelfde reservefoto's bovenaan de homepage.
+let reservePools = null;
+// Bijhouden welke reservefoto's in de huidige render al zijn vergeven. Dit
+// moet apart van de DOM: img.onerror vuurt asynchroon, en als twee foto's
+// tegelijk falen lezen beide handlers dezelfde DOM-stand en kiezen ze
+// dezelfde reservefoto. Deze set wordt bijgewerkt op het moment van kiezen,
+// dus vóór de src is toegekend — daarmee is die race weg.
+let uitgedeeldeReserves = new Set();
+function vernieuwReservePools() {
+    reservePools = {};
+    uitgedeeldeReserves = new Set();
+    for (const categorie of Object.keys(RESERVE_PER_CATEGORIE)) {
+        reservePools[categorie] = schud(reserveLijst(categorie));
+    }
+}
+
+// Sleutel om twee keer dezelfde foto op één pagina te herkennen. Voor de
+// oude Unsplash-URL's is dat de photo-id (dezelfde foto kan met verschillende
+// query-parameters binnenkomen); voor onze eigen bestanden het pad zelf.
 function fotoSleutel(url) {
     const m = String(url).match(/photo-[0-9a-zA-Z-]+/);
     return m ? m[0] : String(url);
 }
-function kiesOngebruikteAfbeelding(gebruikt) {
-    return RESERVE_AFBEELDINGEN.find(u => !gebruikt.has(fotoSleutel(u))) || RESERVE_AFBEELDINGEN[0];
+
+// Kies een reservefoto: eerst uit de eigen categorie, en alleen als die op is
+// uit de overige categorieën — liever een foto die er niet perfect bij past
+// dan twee keer dezelfde foto op één pagina.
+function kiesOngebruikteAfbeelding(gebruikt, categorie) {
+    if (!reservePools) vernieuwReservePools();
+    const eigen = reservePools[categorie] || [];
+    const overig = Object.keys(reservePools)
+        .filter(c => c !== categorie)
+        .flatMap(c => reservePools[c]);
+    const bezet = (url) => {
+        const sleutel = fotoSleutel(url);
+        return gebruikt.has(sleutel) || uitgedeeldeReserves.has(sleutel);
+    };
+    const vrij = (lijst) => lijst.find(u => !bezet(u));
+    const keuze = vrij(eigen) || vrij(overig) || eigen[0] || overig[0];
+    if (keuze) uitgedeeldeReserves.add(fotoSleutel(keuze));
+    return keuze;
+}
+
+// Detailweergave: geen willekeur maar een vaste keuze per artikel, zodat de
+// foto niet verspringt als je de pagina herlaadt of terugkomt via de deel-URL.
+// Telt ook niet mee voor de reserveset van de lijstweergave.
+function kiesVasteAfbeelding(artikel) {
+    const lijst = reserveLijst(artikel && artikel.category);
+    const pool = lijst.length ? lijst : reserveLijst('Lifestyle');
+    const id = String((artikel && artikel.id) || '');
+    let som = 0;
+    for (let i = 0; i < id.length; i++) som = (som + id.charCodeAt(i)) % 100000;
+    return pool[som % pool.length];
 }
 
 // Aantal kaarten per portie. De homepage toonde alle 150 artikelen in één keer,
@@ -580,9 +612,9 @@ function tekenPortie(tot) {
         const card = document.createElement('div');
         card.className = 'news-card';
 
-        let imgSrc = artikel.image || kiesOngebruikteAfbeelding(gezienOpPagina);
+        let imgSrc = artikel.image || kiesOngebruikteAfbeelding(gezienOpPagina, artikel.category);
         if (gezienOpPagina.has(fotoSleutel(imgSrc))) {
-            imgSrc = kiesOngebruikteAfbeelding(gezienOpPagina);
+            imgSrc = kiesOngebruikteAfbeelding(gezienOpPagina, artikel.category);
         }
         gezienOpPagina.add(fotoSleutel(imgSrc));
 
@@ -610,8 +642,7 @@ function tekenPortie(tot) {
             const inGebruik = new Set(
                 [...document.querySelectorAll('#news-container img')].map(x => fotoSleutel(x.src))
             );
-            this.src = RESERVE_AFBEELDINGEN.find(u => !inGebruik.has(fotoSleutel(u)))
-                || RESERVE_AFBEELDINGEN[RESERVE_AFBEELDINGEN.length - 1];
+            this.src = kiesOngebruikteAfbeelding(inGebruik, artikel.category);
         };
 
         const cardContent = document.createElement('div');
@@ -733,6 +764,11 @@ function renderLijst(artikelen) {
     // portie de foto's van de eerste opnieuw kunnen uitdelen.
     // Bij terugkomst uit een artikel tonen we net zoveel porties als er stonden,
     // anders klopt de herstelde scrollpositie niet met wat er op het scherm staat.
+    // Schud de reservefoto-lijsten opnieuw en wis welke er al zijn uitgedeeld.
+    // Hoort hier en NIET in tekenPortie: bij elke portie opnieuw schudden zou de
+    // uitgedeeld-lijst wissen, en dan kan portie twee de foto's van portie een
+    // opnieuw gebruiken.
+    vernieuwReservePools();
     const bewaardGetoond = savedPos ? parseInt(sessionStorage.getItem('brightGetoond') || '0', 10) : 0;
     const beginAantal = Math.max(PER_PORTIE, Math.min(bewaardGetoond || 0, gesorteerd.length));
     window.lijstStand = { gesorteerd, gezienOpPagina: new Set(), getoond: 0 };
