@@ -1206,3 +1206,129 @@ Beheersen" (GoodNewsNetwork.org) over onderzoek van het National Elephant
 Institute in Thailand naar zelfbeheersing bij Aziatische olifanten — een
 concreet, positief wetenschapsverhaal zonder productpromotie of
 zelfhulpframing. Geen van de drie valt in een categorie uit de afwijslijst.
+
+### 2026-09-17, 04:00 Europe/Amsterdam
+
+Beoordeeld: 38 artikelen, gepubliceerd tussen 2026-09-16 04:30 en 2026-09-16
+19:49 — dit zijn alle nieuwe artikelen sinds de vorige ronde (die liep tot en
+met 2026-09-15 04:36:49). Vier dagoverzichten (`type: digest`) zijn
+overgeslagen. Niet bright-waardig: 2. Twijfel: 5.
+
+#### Frisco studenten bakken voor hun buurt
+- **Gepubliceerd:** 2026-09-16 16:43 · Lifestyle · OptimistDaily.com
+- **Waar het over gaat:** Studenten in Frisco zetten via een initiatief met de
+  naam Baked Bites hun bakpassie in voor hun buurt.
+- **Waarom dit niet goed genoeg is:** Categorie "te-weinig-inhoud" uit de
+  afwijslijst. De samenvatting zelf zegt het al: "Verdere details over het
+  initiatief worden in de bron niet vermeld." Er is geen enkel concreet feit
+  — wie doet wat, voor wie, met welk resultaat — om gevoel, formulering of
+  relevantie op te beoordelen. Een kop zonder verhaal.
+- **Link:** /articles/nl/frisco-studenten-bakken-voor-hun-buurt-1789576988252iy8ftuo0a.html
+
+#### Eerste Zonne-ambulance Getest In Kenia
+- **Gepubliceerd:** 2026-09-16 16:43 · Tech · OptimistDaily.com
+- **Waar het over gaat:** 's Werelds eerste solar ambulance zou zijn eerste
+  praktijktest in landelijk Kenia succesvol hebben doorstaan.
+- **Waarom dit niet goed genoeg is:** Zelfde categorie als hierboven,
+  "te-weinig-inhoud". De samenvatting bestaat uit één zin plus de mededeling
+  "Meer details over de test worden in de bron niet vermeld." Geen patiënt,
+  geen locatie, geen enkel concreet detail van de test zelf — te weinig om
+  op de drie criteria te beoordelen, hoe veelbelovend de kop ook klinkt.
+- **Link:** /articles/nl/eerste-zonne-ambulance-getest-in-kenia-1789577008130zs40adub8.html
+
+#### Twijfelgeval: 1000 Dollar Bonus Per Dienstjaar Bij Casino
+- **Gepubliceerd:** 2026-09-16 04:31 · Finance · GoodNewsNetwork.org
+- **Waar het over gaat:** Bij het 50-jarig jubileum van Station Casinos
+  kregen alle 10.000 medewerkers 1.000 dollar aan bedrijfsaandelen per
+  dienstjaar, in totaal 70 miljoen dollar, aangekondigd door eigenaren Frank
+  en Lorenzo Fertitta.
+- **Waarom ik twijfel:** Er zit een echt, warm element in (10.000 mensen die
+  onverwacht een grote bonus krijgen, met medewerkster Ida Johnson als
+  concreet gezicht), maar de kern is een bedrijfsaankondiging rond een eigen
+  jubileum — dicht tegen "bedrijfsnieuws zonder bredere maatschappelijke
+  betekenis" uit de afwijslijst aan. Het raakt alleen de eigen werknemers van
+  één bedrijf, geen bredere gemeenschap.
+- **Link:** /articles/nl/1000-dollar-bonus-per-dienstjaar-bij-casino-1789533075925kr6cz4g9o.html
+
+#### Twijfelgeval: Tien gebouwen die opgaan in de natuur
+- **Gepubliceerd:** 2026-09-16 19:26 · Lifestyle · BBC.com/culture
+- **Waar het over gaat:** Het World Architecture Festival zet dit jaar tien
+  genomineerde gebouwen in de schijnwerpers die opgaan in hun natuurlijke
+  omgeving, van een resort met begroeide daken tot projecten in Kerala en
+  Miami.
+- **Waarom ik twijfel:** De opzet — tien losse, onderling niet-verwante
+  projecten onder één kop — lijkt qua vorm op de "verzameleditie"-categorie
+  uit de afwijslijst, al gaat het hier om één festival met één duidelijk
+  thema in plaats van andermans weekoverzicht. De titelstructuur ("Tien
+  gebouwen die...") leunt ook tegen een listicle aan. Inhoudelijk is het wel
+  degelijk milieu- en architectuurnieuws met een positieve kern.
+- **Link:** /articles/nl/tien-gebouwen-die-opgaan-in-de-natuur-1789586786470nofcj4hhu.html
+
+#### Twijfelgeval: Kampeerplek kiezen volgt eeuwenoude prospect-refuge-theorie
+- **Gepubliceerd:** 2026-09-16 19:27 · Lifestyle · Adventure-Journal.com
+- **Waar het over gaat:** Een persoonlijk verslag van een backpacktocht in
+  Utah, waarbij de auteur terugkijkt op hoe ieder lid van de groep instinctief
+  een eigen kampeerplek koos, verklaard vanuit de prospect-refuge-theorie.
+- **Waarom ik twijfel:** De titel ("Kampeerplek kiezen volgt...") heeft
+  precies de vorm van het zelfhulp-voorbeeld "zo kies je..." uit de
+  afwijslijst. De feitelijke inhoud is echter een persoonlijk reisverslag met
+  een concrete gebeurtenis (een verjaardag in een canyon), geen generieke
+  tips-lijst. Ik zou hem laten staan, maar de titel verdient een kritische
+  blik.
+- **Link:** /articles/nl/kampeerplek-kiezen-volgt-eeuwenoude-prospect-refuge-theorie-178958685689366bsxvshy.html
+
+#### Twijfelgeval: Tatyana Ali zet zich in voor zwarte en inheemse moederzorg
+- **Gepubliceerd:** 2026-09-16 19:43 · Health · NPR.org
+- **Waar het over gaat:** Actrice Tatyana Ali zet zich in voor betere
+  kraamzorg voor Black en Indigenous moeders en baby's, voortkomend uit een
+  traumatische bevalling in 2016 die ze zelf "obstetric violence" noemt.
+- **Waarom ik twijfel:** De kernregel pleit voor plaatsen: de kern is Ali's
+  inzet voor betere zorg (hulp/verbetering), de nare bevalling is de
+  aanleiding. Tegelijk raakt het onderwerp — etnische ongelijkheid in
+  gezondheidszorg — aan het politiek-gevoelige terrein uit de afwijslijst, en
+  de term "obstetric violence" is zwaar geladen. Ik zou hem op basis van de
+  kernregel laten staan, maar dit is precies het soort geval waar Erik zijn
+  eigen afweging in wil maken.
+- **Link:** /articles/nl/tatyana-ali-zet-zich-in-voor-zwarte-en-inheemse-moederzorg-1789587795217koeu9678p.html
+
+#### Twijfelgeval: Grizzlyberconfrontatie brengt man terug naar bendeverleden
+- **Gepubliceerd:** 2026-09-16 19:44 · Lifestyle · Adventure-Journal.com
+- **Waar het over gaat:** Een wandelaar komt in Glacier National Park oog in
+  oog te staan met een grizzlybeer, en die schrik roept een oud gevoel van
+  onveiligheid op uit zijn tienerjaren in een bendeomgeving nabij Chicago in
+  de jaren 90.
+- **Waarom ik twijfel:** Dit lijkt op het ijkvoorbeeld uit de selectieprompt
+  ("Van bendeleven naar beschermer van grizzlyberen"), maar de zichtbare
+  samenvatting laat niet zien of het verhaal ook echt naar een herstel of
+  transformatie toe werkt, of dat het bij het oproepen van een onverwerkte
+  herinnering blijft. Het premium-artikel zelf geeft (voor mij als
+  controleur) geen verder zicht op de afloop. Ik zou hem laten staan omdat de
+  aanleiding en toon positief/reflectief zijn, maar de afloop verdient een
+  check door iemand met toegang tot het volledige artikel.
+- **Link:** /articles/nl/grizzlyberconfrontatie-brengt-man-terug-naar-bendeverleden-1789587852097o5i3h66hb.html
+
+De overige 31 artikelen zijn ruim bright-waardig: een breed palet aan
+dierenredding en natuurherstel (Siekopai-schildpadvrouwen, bizons terug in
+Mexico, bevers in Oregon, zalm in de Klamath River, de buidelmuizentunnel),
+wetenschappelijke doorbraken (waterstof uit magnetiet, de T. rex-sporenreeks,
+BepiColombo bij Mercurius, horende rupsenhaartjes, zangvogel-rugzakjes),
+gezondheidsnieuws (de nieuwe hartaanval-richtlijnen voor vrouwen, de Afghaanse
+family health houses) en persoonlijke verhalen van hulp, herstel en
+gemeenschapszin (de dakloze pianist, de HomeShare-woondeal, Christian Bales
+pleegzorgdorp, de vossenredder uit Nashville). De historische diamantvondst
+("Schoonmaakster bijt in appel...") is beoordeeld volgens de kernregel: de
+diefstal is de aanleiding, de terugvinding is de kern — net als het
+ijkvoorbeeld van de gestolen kunst in de selectieprompt.
+
+#### Patroon
+
+Twee van de vier vanavond beoordeelde artikelen van OptimistDaily.com
+("Frisco studenten bakken voor hun buurt" en "Eerste Zonne-ambulance Getest
+In Kenia") zijn allebei afgekeurd op exact dezelfde grond: de samenvatting
+meldt zelf expliciet dat er geen verdere details beschikbaar zijn. Dat lijkt
+een extractieprobleem bij deze bron rond dit tijdstip (beide gepubliceerd
+binnen twintig seconden van elkaar, 16:43:09 en 16:43:29) eerder dan een
+probleem met de onderliggende artikelen zelf — het is de moeite waard om na
+te gaan of de pipeline bij OptimistDaily.com op dat moment een scrape- of
+parseerfout had, want de brontitels alleen al klinken bright-waardig genoeg
+om de moeite van een herkansing waard te zijn.

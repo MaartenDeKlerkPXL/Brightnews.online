@@ -286,3 +286,41 @@ fragment, dus dat punt is hier niet te toetsen. `meta_keywords` en
 `meta_description` komen inhoudelijk overeen met het Nederlands, zonder
 toegevoegde of vertaalde eigennamen. De lopende tekst zelf leest natuurlijk,
 op de titelstijl na.
+
+### 2026-09-17, Spaans
+
+Vandaag is het donderdag, dus is Spaans aan de beurt. Gepakt: het eerste
+artikel uit de groep van vannacht (zie `backend/selectie-prompt-analyse.md`)
+dat zowel in `data/news_nl.json` als in `data/news_es.json` voorkomt.
+
+**Artikel:** Christian Bale Opent Pleegzorgdorp Voor Gezinnen / Christian
+Bale Abre Pueblo de Acogida Para Familias
+**Oordeel:** twee bevindingen, geen ervan ernstig.
+
+- **Titelstijl.** "Christian Bale Abre Pueblo de Acogida Para Familias"
+  gebruikt een hoofdletter op elk woord ("Abre", "Pueblo", "Acogida",
+  "Para", "Familias"); het Spaans hoort hier gewone zinsstijl te gebruiken,
+  bijvoorbeeld "Christian Bale abre pueblo de acogida para familias".
+  Dezelfde afwijking die deze steekproef al bij het Frans vaststelde
+  (2026-09-16), nu ook bij het Spaans.
+- **Preview valt eerder stil dan in het Nederlands.** Dit is een
+  premium-artikel; zowel de Nederlandse als de Spaanse versie tonen alleen
+  het samenvattingsfragment uit de betreffende `data/news_<taal>.json`,
+  afgesloten met "...". Het Nederlands komt tot "De Austrian American
+  Council West haalde ruim 9..." — bijna een hele zin. Het Spaans stopt na
+  "El Austrian..." — nog voor de naam van de organisatie compleet is. Een
+  Spaanse lezer ziet in de gratis preview dus aanzienlijk minder van het
+  verhaal dan een Nederlandse lezer, ook al is de vertaalde tekst zelf
+  correct voor zover zichtbaar. Dit is exact het patroon dat de steekproef
+  van 2026-09-16 al vermoedde voor het Spaans ("vermoedelijk Spaans, met een
+  vergelijkbare woordlengte, verliest daardoor relatief meer inhoud dan
+  Nederlands") — hier bevestigd met een concreet voorbeeld.
+
+Voor het overige klopt de vertaling: de cijfers (12 woningen, 4,67 hectare,
+aangekocht in 2022) komen overeen met het Nederlands, geen toegevoegde of
+weggelaten feiten binnen het zichtbare fragment, eigennamen ("Together
+California", "Palmdale, California", "Austrian American Council West")
+blijven onvertaald. Er komen geen geslachtsverwijzingen voor in het
+zichtbare fragment. `meta_description` en `meta_keywords` komen inhoudelijk
+overeen met het Nederlands, met "pleegzorg" correct vertaald naar "acogida"
+zonder dat dit een eigennaam raakt.
