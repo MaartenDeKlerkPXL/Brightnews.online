@@ -1,6 +1,48 @@
 {
  "dagen": [
   {
+   "dag": "2026-09-17",
+   "prompthash": "2e112ef95092",
+   "onderwerp": {
+    "soort": "dagoverzicht",
+    "titel": "Kleine ontdekkingen, grote reis: wetenschap van de afgelopen dagen",
+    "url": "https://brightnews.online/articles/nl/kleine-ontdekkingen-grote-reis-wetenschap-van-de-afgelopen-dagen-dg-20260916-science.html"
+   },
+   "tokens": 5721,
+   "perTaal": {
+    "nl": {
+     "instagram": "Soms begint een grote reis met iets piepkleins 🔬✨ Deze week weer een verzameling ontdekkingen die klein lijken, maar verder reiken dan je denkt. Benieuwd welke? Link in bio.\n#wetenschap #ontdekking #goednieuws #vooruitgang #nieuwsgierig",
+     "facebook": "Niet elke doorbraak begint met een knal — soms sluipt hij binnen via een klein detail dat bijna niemand opmerkt. Deze week zetten we een paar van die kleine wetenschappelijke ontdekkingen op een rij, stuk voor stuk stapjes op een grotere reis. 🔭 Benieuwd wat er allemaal gebeurde? Lees het op https://brightnews.online/articles/nl/kleine-ontdekkingen-grote-reis-wetenschap-van-de-afgelopen-dagen-dg-20260916-science.html?utm_source=facebook&utm_medium=social&utm_campaign=dag-2026-09-17.",
+     "linkedin": "Vooruitgang in de wetenschap is zelden één groot moment; vaker is het een reeks kleine stappen die pas achteraf een patroon vormen. In ons overzicht van de afgelopen dagen bundelen we een aantal van die ontwikkelingen, elk klein op zich, samen een teken van beweging. Het is een goede herinnering dat continue, geduldige vooruitgang net zo waardevol is als de grote doorbraak. Welke kleine ontdekking heeft jou de afgelopen tijd verrast? Lees meer op https://brightnews.online/articles/nl/kleine-ontdekkingen-grote-reis-wetenschap-van-de-afgelopen-dagen-dg-20260916-science.html?utm_source=linkedin&utm_medium=social&utm_campaign=dag-2026-09-17. #wetenschap #innovatie #vooruitgang",
+     "x": "Grote reizen beginnen klein. Deze week: een paar wetenschappelijke ontdekkingen die dat weer bewijzen 🔬 https://brightnews.online/articles/nl/kleine-ontdekkingen-grote-reis-wetenschap-van-de-afgelopen-dagen-dg-20260916-science.html?utm_source=x&utm_medium=social&utm_campaign=dag-2026-09-17"
+    },
+    "en": {
+     "instagram": "Sometimes a great journey begins with something tiny 🔬✨ This week, another collection of discoveries that seem small, but reach further than you'd think. Curious which ones? Link in bio.\n#science #discovery #goodnews #progress #curious",
+     "facebook": "Not every breakthrough starts with a bang — sometimes it sneaks in through a small detail that almost nobody notices. This week we're rounding up a few of those small scientific discoveries, each one a step on a bigger journey. 🔭 Curious what happened? Read it on https://brightnews.online/articles/en/small-discoveries-big-journey-science-from-the-past-few-days-dg-20260916-science.html?utm_source=facebook&utm_medium=social&utm_campaign=dag-2026-09-17.",
+     "linkedin": "Progress in science is rarely one big moment; more often it's a series of small steps that only form a pattern in hindsight. In our overview of the past few days, we bring together a number of those developments, each small in itself, together a sign of movement. It's a good reminder that continuous, patient progress is just as valuable as the big breakthrough. Which small discovery has surprised you lately? Read more on https://brightnews.online/articles/en/small-discoveries-big-journey-science-from-the-past-few-days-dg-20260916-science.html?utm_source=linkedin&utm_medium=social&utm_campaign=dag-2026-09-17. #science #innovation #progress",
+     "x": "Great journeys begin small. This week: a few scientific discoveries that prove it again 🔬 https://brightnews.online/articles/en/small-discoveries-big-journey-science-from-the-past-few-days-dg-20260916-science.html?utm_source=x&utm_medium=social&utm_campaign=dag-2026-09-17"
+    },
+    "de": {
+     "instagram": "Manchmal beginnt eine große Reise mit etwas Winzigem 🔬✨ Diese Woche wieder eine Sammlung von Entdeckungen, die klein wirken, aber weiter reichen als du denkst. Neugierig, welche? Link in der Bio.\n#wissenschaft #entdeckung #gutesnachricht #fortschritt #neugierig",
+     "facebook": "Nicht jeder Durchbruch beginnt mit einem Knall — manchmal schleicht er sich über ein kleines Detail ein, das kaum jemand bemerkt. Diese Woche stellen wir ein paar dieser kleinen wissenschaftlichen Entdeckungen zusammen, jede einzelne ein Schritt auf einer größeren Reise. 🔭 Neugierig, was alles passiert ist? Lies es auf https://brightnews.online/articles/de/kleine-entdeckungen-gro-e-reise-wissenschaft-der-vergangenen-tage-dg-20260916-science.html?utm_source=facebook&utm_medium=social&utm_campaign=dag-2026-09-17.",
+     "linkedin": "Fortschritt in der Wissenschaft ist selten ein großer Moment; meistens ist es eine Reihe kleiner Schritte, die erst im Nachhinein ein Muster bilden. In unserem Überblick der letzten Tage bündeln wir eine Reihe dieser Entwicklungen, jede für sich klein, zusammen ein Zeichen von Bewegung. Es ist eine gute Erinnerung daran, dass kontinuierlicher, geduldiger Fortschritt genauso wertvoll ist wie der große Durchbruch. Welche kleine Entdeckung hat dich in letzter Zeit überrascht? Lies mehr auf https://brightnews.online/articles/de/kleine-entdeckungen-gro-e-reise-wissenschaft-der-vergangenen-tage-dg-20260916-science.html?utm_source=linkedin&utm_medium=social&utm_campaign=dag-2026-09-17. #wissenschaft #innovation #fortschritt",
+     "x": "Große Reisen beginnen klein. Diese Woche: ein paar wissenschaftliche Entdeckungen, die das wieder beweisen 🔬 https://brightnews.online/articles/de/kleine-entdeckungen-gro-e-reise-wissenschaft-der-vergangenen-tage-dg-20260916-science.html?utm_source=x&utm_medium=social&utm_campaign=dag-2026-09-17"
+    },
+    "fr": {
+     "instagram": "Parfois, un grand voyage commence par quelque chose de minuscule 🔬✨ Cette semaine, une nouvelle collection de découvertes qui semblent petites, mais qui vont plus loin que tu ne le penses. Curieux de savoir lesquelles ? Le lien est en bio.\n#science #découverte #bonnesnouvelles #progrès #curieux",
+     "facebook": "Toute percée ne commence pas par un coup d'éclat — parfois, elle s'infiltre par un petit détail que presque personne ne remarque. Cette semaine, nous énumérons quelques-unes de ces petites découvertes scientifiques, chacune une étape d'un plus grand voyage. 🔭 Curieux de savoir ce qui s'est passé ? Lis-le sur https://brightnews.online/articles/fr/petites-decouvertes-grand-voyage-la-science-de-ces-derniers-jours-dg-20260916-science.html?utm_source=facebook&utm_medium=social&utm_campaign=dag-2026-09-17.",
+     "linkedin": "Le progrès scientifique est rarement un seul grand moment ; c'est plus souvent une série de petites étapes qui ne forment un schéma qu'après coup. Dans notre aperçu des derniers jours, nous regroupons un certain nombre de ces développements, chacun petit en soi, ensemble un signe de mouvement. C'est un bon rappel que le progrès continu et patient est tout aussi précieux que la grande percée. Quelle petite découverte t'a surpris récemment ? En savoir plus sur https://brightnews.online/articles/fr/petites-decouvertes-grand-voyage-la-science-de-ces-derniers-jours-dg-20260916-science.html?utm_source=linkedin&utm_medium=social&utm_campaign=dag-2026-09-17. #science #innovation #progrès",
+     "x": "Les grands voyages commencent petit. Cette semaine : quelques découvertes scientifiques qui le prouvent à nouveau 🔬 https://brightnews.online/articles/fr/petites-decouvertes-grand-voyage-la-science-de-ces-derniers-jours-dg-20260916-science.html?utm_source=x&utm_medium=social&utm_campaign=dag-2026-09-17"
+    },
+    "es": {
+     "instagram": "A veces, un gran viaje comienza con algo diminuto 🔬✨ Esta semana, nuevamente una colección de descubrimientos que parecen pequeños, pero alcanzan más de lo que piensas. ¿Tienes curiosidad por saber cuáles? Enlace en bio.\n#ciencia #descubrimiento #buenasnoticias #progreso #curiosidad",
+     "facebook": "No todos los avances comienzan con un estruendo — a veces se cuelan a través de un pequeño detalle que casi nadie nota. Esta semana reunimos algunos de esos pequeños descubrimientos científicos, cada uno un paso en un viaje más grande. 🔭 ¿Tienes curiosidad por saber qué pasó? Léelo en https://brightnews.online/articles/es/pequenos-descubrimientos-gran-viaje-la-ciencia-de-los-ultimos-dias-dg-20260916-science.html?utm_source=facebook&utm_medium=social&utm_campaign=dag-2026-09-17.",
+     "linkedin": "El progreso en la ciencia rara vez es un único gran momento; más a menudo es una serie de pequeños pasos que solo después forman un patrón. En nuestro resumen de los últimos días, reunimos varios de esos desarrollos, cada uno pequeño en sí mismo, juntos una señal de movimiento. Es un buen recordatorio de que el progreso continuo y paciente es tan valioso como el gran avance. ¿Qué pequeño descubrimiento te ha sorprendido recientemente? Lee más en https://brightnews.online/articles/es/pequenos-descubrimientos-gran-viaje-la-ciencia-de-los-ultimos-dias-dg-20260916-science.html?utm_source=linkedin&utm_medium=social&utm_campaign=dag-2026-09-17. #ciencia #innovación #progreso",
+     "x": "Los grandes viajes comienzan pequeños. Esta semana: algunos descubrimientos científicos que lo demuestran nuevamente 🔬 https://brightnews.online/articles/es/pequenos-descubrimientos-gran-viaje-la-ciencia-de-los-ultimos-dias-dg-20260916-science.html?utm_source=x&utm_medium=social&utm_campaign=dag-2026-09-17"
+    }
+   }
+  },
+  {
    "dag": "2026-09-16",
    "prompthash": "2e112ef95092",
    "onderwerp": {
@@ -169,6 +211,6 @@
    }
   }
  ],
- "gegenereerd": "2026-09-16T04:37:24.539Z",
+ "gegenereerd": "2026-09-17T04:38:24.787Z",
  "toelichting": "Conceptposts voor de cockpit (marketing.html). DRAFT-FIRST: plaatsen doet een mens."
 }

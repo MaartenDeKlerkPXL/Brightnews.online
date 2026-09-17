@@ -1,5 +1,120 @@
 [
   {
+    "id": "dg-20260916-science",
+    "type": "digest",
+    "digest_date": "2026-09-16",
+    "title": "Small discoveries, big journey: science from the past few days",
+    "summary": "Sometimes the big news hides in the tiniest detail. This week, science shows how researchers around the world keep patiently watching, listening and measuring, from a caterpillar without ears to a spacecraft that finally arrives after years. The stories vary, but they share one thing: attention that ultimately yields something beautiful. Take the yellow warblers from Alaska [1]. These songbirds are too small for heavy transmitters, so they were fitted with tiny geolocators, no bigger than a Tic Tac. These measure air pressure and light during flight, so that researchers can later, when they recapture the birds a year later,...",
+    "image_alt": "Small discoveries, big journey: science from the past few days",
+    "meta_description": "From geolocators on songbirds to BepiColombo at Mercury: the science news from the past few days, light and hopeful in summary.",
+    "meta_keywords": "Science",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa03f638060be9fa448829d_6aa03f5f48a9fbea52c6b9f9_tiny-backpacks-bird-migration-study-featured.webp",
+    "date": "2026-09-17T04:37:56.919Z",
+    "category": "Science",
+    "refs": [
+      {
+        "id": "1789587769579kxc57oav0",
+        "title": "Songbirds wear mini-backpacks for migration research"
+      },
+      {
+        "id": "1789587655308jj5kk44jy",
+        "title": "Baby elephant Linh Mai learns to participate in her own medical care"
+      },
+      {
+        "id": "17895865549041jzsjhr12",
+        "title": "New insect species named after Taylor Swift"
+      },
+      {
+        "id": "1789587740917gpvp67qfk",
+        "title": "Tobacco hornworm caterpillar hears without ears thanks to sensitive hairs"
+      },
+      {
+        "id": "1789585879417ynho5tj0v",
+        "title": "BepiColombo mission reaches Mercury as third spacecraft ever"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260916-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-09-16",
+    "title": "From bears to diamonds: the good news of this week",
+    "summary": "These days show how varied positive news can be. From an unexpected encounter in nature to a diamond that accidentally turns up in an apple, and from buildings that hide among the trees to a day when millions of pounds are raised for good causes. Together, they paint a picture of people experiencing, sharing or giving back something special. A man came face to face with a grizzly bear and her cub while hiking in Glacier National Park [1]. The bear retreated, but the moment stirred up memories for the man of a difficult period in his teenage years. After...",
+    "image_alt": "From bears to diamonds: the good news of this week",
+    "meta_description": "From a grizzly bear to a hidden diamond: the positive lifestyle news of September 16, 2026 at a glance.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.adventure-journal.com/wp-content/uploads/2026/08/GNAM_STEVEN-6123-684x1024.jpg",
+    "date": "2026-09-17T04:36:52.686Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "1789587852097o5i3h66hb",
+        "title": "Grizzly bear encounter brings man back to gang past"
+      },
+      {
+        "id": "1789586786470nofcj4hhu",
+        "title": "Ten buildings that merge with nature"
+      },
+      {
+        "id": "17895861361353xl0joxxi",
+        "title": "Adapted sailing opens the sea for people with disabilities"
+      },
+      {
+        "id": "1789585955470athzntnbk",
+        "title": "Cleaner bites into apple and discovers stolen Grand Condé diamond"
+      },
+      {
+        "id": "1789585589360an1gfz1cl",
+        "title": "BGC Group raises £12 million for charity on Charity Day"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260916-environment",
+    "type": "digest",
+    "digest_date": "2026-09-16",
+    "title": "A comeback on all fronts: animals, plants and farmers find their place",
+    "summary": "In recent days, environmental news has shown one thing above all: where people give nature space, it often recovers faster than expected. From a tiny marsupial in Australia to enormous herds of bison in Mexico, signs are emerging everywhere that animals are reclaiming their old habitats. And it doesn't happen by itself: it's the result of deliberate choices made by farmers, scientists and policymakers. In Australia, researchers built a tunnel under a busy road so that the endangered mountain pygmy-possum can safely mate again [1]. Thirty of these marsupials have already used the tunnel, and that's good news for a...",
+    "image_alt": "A comeback on all fronts: animals, plants and farmers find their place",
+    "meta_description": "From a marsupial tunnel in Australia to bison in Mexico: this week's environmental news revolves around nature recovery and the people making it possible",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa985a74eadf209aa6d07f0_6aa985a61db384410cfb7a83_burramy-possums-tunnel-of-love-featured.webp",
+    "date": "2026-09-17T04:36:05.830Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1789588132912dqjmmimea",
+        "title": "Tunnel of love helps endangered mountain pygmy-possum breed"
+      },
+      {
+        "id": "1789587686544idd15ekui",
+        "title": "Goats, sheep and cattle protect American West against wildfires"
+      },
+      {
+        "id": "17895876048541f403alz9",
+        "title": "20,000 salmon return to the Klamath River"
+      },
+      {
+        "id": "1789585642057cofti0iw9",
+        "title": "Wind turbines provide Kansas rancher half his income"
+      },
+      {
+        "id": "1789577164254xqgpzyylg",
+        "title": "Ten Years of Stories For Regenerative Farming"
+      },
+      {
+        "id": "1789576899477ema9ouzfu",
+        "title": "Bison Return to Mexican Desert After 200 Years"
+      }
+    ]
+  },
+  {
     "id": "1789588160154ngrxcj868",
     "title": "Resurgence & Ecologist celebrates 60 years in Oxford",
     "summary": "Britain's longest-running environmental magazine Resurgence & Ecologist celebrates its 60th anniversary on Saturday, 12 September 2026 with the sold-out event One with the Earth at Wadham College, University of Oxford. Speakers include Caroline Lucas, Hugh Fearnley-Whittingstall and founder Satish Kumar, who recently celebrated his 90th birthday. The programme features lectures, discussions, music and poetry, followed by a three-course vegetarian benefit...",
@@ -2378,44 +2493,5 @@
     "image": "https://i0.wp.com/www.yesmagazine.org/wp-content/uploads/2025/10/rising-up-with-sonali.jpg?resize=940%2C560&#038;quality=90&#038;ssl=1",
     "date": "2026-09-03T16:26:10.634Z",
     "category": "Lifestyle"
-  },
-  {
-    "id": "1788452758517yfh2tosr3",
-    "title": "Standing Rock’s lasting impact on climate action",
-    "summary": "A decade ago, an Indigenous-led movement against an oil pipeline sparked nationwide awareness. Thousands camped to protect the Missouri River, linking tribal sovereignty to climate change. Despite federal clearance in 2017, its influence spread globally, uniting struggles of 370 million Indigenous people worldwide.",
-    "image_alt": "Mass protest at Standing Rock against Dakota Access Pipeline in 2016",
-    "meta_description": "Indigenous resistance against oil pipeline reshaped climate activism and tribal rights awareness globally.",
-    "meta_keywords": "Standing Rock, Indigenous rights, climate protest, Missouri River, oil pipeline, activism, awareness",
-    "link": "https://www.yesmagazine.org/issues/2026/05/14/how-standing-rock-changed-us-all",
-    "source": "YesMagazine.org",
-    "image": "https://www.yesmagazine.org/wp-content/uploads/2026/04/434612a5-48e1-41e2-59c4-f59982e5ac7e.gif",
-    "date": "2026-09-03T16:25:59.887Z",
-    "category": "Environment"
-  },
-  {
-    "id": "1788452747316z5wn8ycjk",
-    "title": "Donations fuel systemic climate action",
-    "summary": "YES! received 38 monthly donations to continue its newsletter. Climate change impacts grow starker in the U.S. and Europe, with heat waves threatening lives. Experts urge shifts in energy, food, and infrastructure systems. Climate scientist Peter Kalmus links individual action to collective transformation, showing how personal choices drive broader change.",
-    "image_alt": "A hand holding a green plant with visible roots, symbolizing growth and sustainable change",
-    "meta_description": "YES! receives donations to support climate awareness and systemic change. Learn how individual actions contribute to collective impact.",
-    "meta_keywords": "climate change, sustainability, donations, systemic change, YES!, individual action, collective impact, climate awareness",
-    "link": "https://www.yesmagazine.org/issues/2026/07/17/connecting-our-individual-actions-with-systemic-change",
-    "source": "YesMagazine.org",
-    "image": "https://www.yesmagazine.org/wp-content/uploads/2026/04/434612a5-48e1-41e2-59c4-f59982e5ac7e.gif",
-    "date": "2026-09-03T16:25:48.488Z",
-    "category": "Environment"
-  },
-  {
-    "id": "17884527379676y5gk1rdt",
-    "title": "Communities unite against Big Tech’s data centers",
-    "summary": "YES! Media highlights grassroots movements resisting data center expansion. Communities fight air, water, and noise pollution, environmental racism, and energy waste. Organizers build cross-partisan alliances, forcing political candidates to take stances. Successful campaigns lead to moratoriums and halted projects. Big Tech’s data projects are framed as social control mechanisms.",
-    "image_alt": "People holding signs and banners protesting against data centers in a community",
-    "meta_description": "Communities unite to challenge Big Tech’s data centers and their environmental and social impacts.",
-    "meta_keywords": "data centers, Big Tech, environmental impact, grassroots movements, social control, energy waste, environmental racism",
-    "link": "https://www.yesmagazine.org/issues/2026/08/13/theres-no-opting-out-of-these-crises-liberation-is-collective",
-    "source": "YesMagazine.org",
-    "image": "https://www.yesmagazine.org/wp-content/uploads/2026/04/434612a5-48e1-41e2-59c4-f59982e5ac7e.gif",
-    "date": "2026-09-03T16:25:39.062Z",
-    "category": "Environment"
   }
 ]

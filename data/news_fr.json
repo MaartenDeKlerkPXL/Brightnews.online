@@ -1,5 +1,120 @@
 [
   {
+    "id": "dg-20260916-science",
+    "type": "digest",
+    "digest_date": "2026-09-16",
+    "title": "Petites découvertes, grand voyage : la science de ces derniers jours",
+    "summary": "Parfois, les grandes nouvelles se cachent dans les plus petits détails. Cette semaine, la science montre comment des chercheurs du monde entier continuent patiemment à observer, écouter et mesurer, d'une chenille sans oreilles à un engin spatial qui arrive enfin après des années. Les histoires varient, mais elles partagent une chose : une attention qui finit par produire quelque chose de beau. Prenez les bruants à gorge jaune d'Alaska [1]. Ces oiseaux chanteurs sont trop petits pour porter de lourds émetteurs, ils ont donc reçu de minuscules géolocalisateurs, pas plus gros qu'un Tic Tac. Ceux-ci mesurent la pression atmosphérique et...",
+    "image_alt": "Petites découvertes, grand voyage : la science de ces derniers jours",
+    "meta_description": "Des géolocalisateurs chez les oiseaux chanteurs à BepiColombo à Mercure : l'actualité scientifique de ces derniers jours, légère et pleine d'espoir.",
+    "meta_keywords": "Science",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa03f638060be9fa448829d_6aa03f5f48a9fbea52c6b9f9_tiny-backpacks-bird-migration-study-featured.webp",
+    "date": "2026-09-17T04:37:56.919Z",
+    "category": "Science",
+    "refs": [
+      {
+        "id": "1789587769579kxc57oav0",
+        "title": "Des petits sacs à dos pour étudier la migration des oiseaux chanteurs"
+      },
+      {
+        "id": "1789587655308jj5kk44jy",
+        "title": "Le bébé éléphant Linh Mai apprend à participer à ses propres soins médicaux"
+      },
+      {
+        "id": "17895865549041jzsjhr12",
+        "title": "Une nouvelle espèce d'insecte nommée d'après Taylor Swift"
+      },
+      {
+        "id": "1789587740917gpvp67qfk",
+        "title": "La sphinx du tabac entend sans oreilles grâce à de minuscules poils sensibles"
+      },
+      {
+        "id": "1789585879417ynho5tj0v",
+        "title": "La mission BepiColombo atteint Mercure en tant que troisième engin spatial"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260916-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-09-16",
+    "title": "Des ours aux diamants : les bonnes nouvelles de cette semaine",
+    "summary": "Ces jours-ci montrent à quel point les bonnes nouvelles peuvent être diverses. D'une rencontre inattendue dans la nature à un diamant qui surgit accidentellement dans une pomme, en passant par des bâtiments qui se cachent entre les arbres et une journée où des millions de livres sont collectées pour des causes caritatives. Ensemble, ils forment un aperçu de personnes qui vivent quelque chose d'extraordinaire, le partagent ou le restituent. Un homme s'est retrouvé face à face avec un grizzli et son petit lors d'une promenade dans le Glacier National Park [1]. L'ours s'est retiré, mais le moment a ravivé chez...",
+    "image_alt": "Des ours aux diamants : les bonnes nouvelles de cette semaine",
+    "meta_description": "D'un grizzli à un diamant caché : les bonnes nouvelles lifestyle du 16 septembre 2026 en un coup d'œil.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.adventure-journal.com/wp-content/uploads/2026/08/GNAM_STEVEN-6123-684x1024.jpg",
+    "date": "2026-09-17T04:36:52.687Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "1789587852097o5i3h66hb",
+        "title": "Une confrontation avec un grizzly ramène un homme à son passé de gang"
+      },
+      {
+        "id": "1789586786470nofcj4hhu",
+        "title": "Dix bâtiments qui se fondent dans la nature"
+      },
+      {
+        "id": "17895861361353xl0joxxi",
+        "title": "La voile adaptée ouvre la mer aux personnes handicapées"
+      },
+      {
+        "id": "1789585955470athzntnbk",
+        "title": "Une femme de ménage mord dans une pomme et découvre le diamant Grand Condé volé"
+      },
+      {
+        "id": "1789585589360an1gfz1cl",
+        "title": "BGC Group collecte 12 millions de livres lors de sa Charity Day"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260916-environment",
+    "type": "digest",
+    "digest_date": "2026-09-16",
+    "title": "Un retour sur tous les fronts : les animaux, les plantes et les agriculteurs trouvent leur place",
+    "summary": "Ces derniers jours, l'actualité environnementale montre surtout une chose : là où les humains laissent de la place à la nature, celle-ci se rétablit souvent plus vite que prévu. D'un minuscule marsupial en Australie à d'énormes troupeaux de bisons au Mexique, partout apparaissent des signes que les animaux retrouvent leurs anciens habitats. Et cela ne se fait pas tout seul : c'est le résultat de choix délibérés, de la part des agriculteurs, des scientifiques et des décideurs politiques. En Australie, des chercheurs ont construit un tunnel sous une route très fréquentée pour que le possum des montagnes nain, espèce menacée,...",
+    "image_alt": "Un retour sur tous les fronts : les animaux, les plantes et les agriculteurs trouvent leur place",
+    "meta_description": "D'un tunnel pour marsupiaux en Australie aux bisons au Mexique : l'actualité environnementale de ces jours tourne autour du rétablissement de la nature et ",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa985a74eadf209aa6d07f0_6aa985a61db384410cfb7a83_burramy-possums-tunnel-of-love-featured.webp",
+    "date": "2026-09-17T04:36:05.831Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1789588132912dqjmmimea",
+        "title": "Le tunnel de l'amour aide un petit marsupial menacé à se reproduire"
+      },
+      {
+        "id": "1789587686544idd15ekui",
+        "title": "Chèvres, moutons et vaches protègent l'Ouest américain contre les incendies de forêt"
+      },
+      {
+        "id": "17895876048541f403alz9",
+        "title": "20.000 saumons reviennent dans la Klamath River"
+      },
+      {
+        "id": "1789585642057cofti0iw9",
+        "title": "Les éoliennes rapportent la moitié de ses revenus à un rancher du Kansas"
+      },
+      {
+        "id": "1789577164254xqgpzyylg",
+        "title": "Dix Ans d'Histoires Pour l'Agriculture Régénérative"
+      },
+      {
+        "id": "1789576899477ema9ouzfu",
+        "title": "Les Bisons Reviennent Dans Le Désert Mexicain Après 200 Ans"
+      }
+    ]
+  },
+  {
     "id": "1789588160154ngrxcj868",
     "title": "Resurgence & Ecologist célèbre ses 60 ans à Oxford",
     "summary": "Le magazine environnemental britannique de plus longue durée Resurgence & Ecologist célèbre samedi 12 septembre 2026 son 60e anniversaire avec l'événement complet One with the Earth au Wadham College, University of Oxford. Les intervenants incluent notamment Caroline Lucas, Hugh Fearnley-Whittingstall et le fondateur Satish Kumar, qui a récemment fêté son 90e anniversaire. Le programme comprend des conférences, des débats, de...",
@@ -2378,44 +2493,5 @@
     "image": "https://i0.wp.com/www.yesmagazine.org/wp-content/uploads/2025/10/rising-up-with-sonali.jpg?resize=940%2C560&#038;quality=90&#038;ssl=1",
     "date": "2026-09-03T16:26:10.634Z",
     "category": "Lifestyle"
-  },
-  {
-    "id": "1788452758517yfh2tosr3",
-    "title": "Standing Rock a changé la lutte climatique",
-    "summary": "Il y a dix ans, un mouvement mené par des Autochtones contre un pipeline pétrolier a éveillé une prise de conscience nationale. Des milliers de militants ont campé des mois pour protéger le fleuve Missouri, liant souveraineté autochtone et changement climatique. Malgré l’évacuation forcée en 2017, son impact s’est répandu mondialement.",
-    "image_alt": "Manifestation massive à Standing Rock contre le Dakota Access Pipeline en 2016",
-    "meta_description": "La résistance autochtone contre un pipeline a transformé la lutte climatique et la conscience des droits autochtones à l’échelle mondiale.",
-    "meta_keywords": "Standing Rock, droits autochtones, protestation climatique, fleuve Missouri, pipeline pétrolier, activisme, prise de conscience",
-    "link": "https://www.yesmagazine.org/issues/2026/05/14/how-standing-rock-changed-us-all",
-    "source": "YesMagazine.org",
-    "image": "https://www.yesmagazine.org/wp-content/uploads/2026/04/434612a5-48e1-41e2-59c4-f59982e5ac7e.gif",
-    "date": "2026-09-03T16:25:59.887Z",
-    "category": "Environment"
-  },
-  {
-    "id": "1788452747316z5wn8ycjk",
-    "title": "Les dons soutiennent l'action climatique",
-    "summary": "YES! a reçu 38 dons mensuels pour poursuivre sa newsletter. Les impacts du changement climatique s'intensifient aux États-Unis et en Europe, avec des vagues de chaleur menaçant des vies. Des experts appellent à des transformations dans les systèmes énergétiques, alimentaires et d'infrastructure. Le climatologue Peter Kalmus lie l'action individuelle au changement collectif.",
-    "image_alt": "Une main tenant une plante verte aux racines visibles, symbole de croissance et de changement durable",
-    "meta_description": "YES! reçoit des dons pour sensibiliser au climat et encourager le changement systémique. Découvrez comment les actions individuelles contribuent à l'impact collectif.",
-    "meta_keywords": "changement climatique, durabilité, dons, changement systémique, YES!, action individuelle, impact collectif, sensibilisation climatique",
-    "link": "https://www.yesmagazine.org/issues/2026/07/17/connecting-our-individual-actions-with-systemic-change",
-    "source": "YesMagazine.org",
-    "image": "https://www.yesmagazine.org/wp-content/uploads/2026/04/434612a5-48e1-41e2-59c4-f59982e5ac7e.gif",
-    "date": "2026-09-03T16:25:48.488Z",
-    "category": "Environment"
-  },
-  {
-    "id": "17884527379676y5gk1rdt",
-    "title": "Communautés mobilisées contre les centres de données de la Big Tech",
-    "summary": "YES! Media met en lumière les mouvements citoyens s’opposant à l’expansion des centres de données. Les communautés luttent contre la pollution de l’air, de l’eau et sonore, le racisme environnemental et le gaspillage énergétique. Les organisateurs créent des alliances transpartisanes et forcent les candidats à prendre position. Les campagnes réussies aboutissent à des moratoires et à l’arrêt de projets. Les...",
-    "image_alt": "Personnes tenant des pancartes et des banderoles protestant contre les centres de données dans une communauté",
-    "meta_description": "Les communautés se mobilisent ensemble contre les impacts environnementaux et sociaux des centres de données de la Big Tech.",
-    "meta_keywords": "centres de données, Big Tech, impact environnemental, mouvements citoyens, contrôle social, gaspillage énergétique, racisme environnemental",
-    "link": "https://www.yesmagazine.org/issues/2026/08/13/theres-no-opting-out-of-these-crises-liberation-is-collective",
-    "source": "YesMagazine.org",
-    "image": "https://www.yesmagazine.org/wp-content/uploads/2026/04/434612a5-48e1-41e2-59c4-f59982e5ac7e.gif",
-    "date": "2026-09-03T16:25:39.062Z",
-    "category": "Environment"
   }
 ]
