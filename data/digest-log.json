@@ -1,5 +1,45 @@
 [
   {
+    "datum": "2026-09-17T16:50:20.800Z",
+    "dag": "2026-09-16",
+    "categorie": "Health",
+    "ids": [
+      "178958809918291v7k5ka4",
+      "1789587795217koeu9678p",
+      "178966363559407hk5irik"
+    ],
+    "prompthash": "fd561df11314",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 12298,
+    "woorden": {
+      "nl": 409,
+      "en": 418,
+      "de": 403,
+      "fr": 474,
+      "es": 460
+    }
+  },
+  {
+    "datum": "2026-09-17T16:49:28.213Z",
+    "dag": "2026-09-16",
+    "categorie": "Tech",
+    "ids": [
+      "1789409398854ryk5ehwtu",
+      "1789663690801lle8wvp1r",
+      "1789577008130zs40adub8"
+    ],
+    "prompthash": "fd561df11314",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 10087,
+    "woorden": {
+      "nl": 321,
+      "en": 330,
+      "de": 310,
+      "fr": 383,
+      "es": 370
+    }
+  },
+  {
     "datum": "2026-09-17T04:37:56.919Z",
     "dag": "2026-09-16",
     "categorie": "Science",

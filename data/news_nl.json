@@ -1,5 +1,119 @@
 [
   {
+    "id": "dg-20260916-health",
+    "type": "digest",
+    "digest_date": "2026-09-16",
+    "title": "Zorgzame zorg: van Afghaanse klinieken tot een test tegen hersenschudding",
+    "summary": "Deze dagen valt op hoe vaak goede zorg draait om aandacht op het juiste moment. Of het nu gaat om een bevalling in een afgelegen dorp, de behandeling van een moeder na een moeilijke geboorte, of een snelle test bij jonge sporters: overal blijkt dat tijdig ingrijpen levens kan redden. De drie berichten van de afgelopen dagen laten zien hoe uiteenlopend die zorg eruit kan zien, en hoe mensen overal ter wereld daarin het verschil maken. In Afghanistan, een van de gevaarlijkste landen om moeder te worden, bieden zogeheten family health houses hulp in gebieden waar verder niets is. Meer...",
+    "image_alt": "Zorgzame zorg: van Afghaanse klinieken tot een test tegen hersenschudding",
+    "meta_description": "Van vroedvrouwen in Afghanistan tot een hersenschuddingtest van Harvard-studenten: het positieve gezondheidsnieuws van de afgelopen dagen op een rij.",
+    "meta_keywords": "Health",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://reasonstobecheerful.world/wp-content/uploads/2026/09/1000082074.jpg-1-scaled.jpeg",
+    "date": "2026-09-17T16:50:20.800Z",
+    "category": "Health",
+    "refs": [
+      {
+        "id": "178958809918291v7k5ka4",
+        "title": "Afghaanse family health houses redden moeders en baby's"
+      },
+      {
+        "id": "1789587795217koeu9678p",
+        "title": "Tatyana Ali zet zich in voor zwarte en inheemse moederzorg"
+      },
+      {
+        "id": "178966363559407hk5irik",
+        "title": "Harvard-studenten winnen Dyson Award met hersenschuddingtest"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260916-tech",
+    "type": "digest",
+    "digest_date": "2026-09-16",
+    "title": "Van gebarentaal tot huizen uit houtafval: techniek die problemen oplost",
+    "summary": "Deze dagen laat de techniek zien dat slimme uitvindingen niet per se ingewikkeld hoeven te zijn om veel te betekenen. Van een robothand die gebarentaal maakt tot huizen die uit houtafval rollen: overal duiken oplossingen op voor problemen die al lang bestaan. Precies dat maakt deze berichten de moeite waard om verder te lezen. In Kenia bouwde de 22-jarige Norah Kimathi met haar startup ZeroBionic een robotische hand die de stem van een leraar direct omzet in gebarentaal [1]. Van de 300.000 dove of slechthorende kinderen in Kenia gaat maar een klein deel naar school, deels omdat er geen vaste...",
+    "image_alt": "Van gebarentaal tot huizen uit houtafval: techniek die problemen oplost",
+    "meta_description": "Robothand voor gebarentaal, huizen uit houtafval en een zonne-ambulance: het techniek-nieuws van 16 september 2026 op een rij.",
+    "meta_keywords": "Tech",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Press-photo-©-ZeroBionic-2.jpg",
+    "date": "2026-09-17T16:49:28.212Z",
+    "category": "Tech",
+    "refs": [
+      {
+        "id": "1789409398854ryk5ehwtu",
+        "title": "Robothand Vertaalt Lerarenstem naar Gebarentaal"
+      },
+      {
+        "id": "1789663690801lle8wvp1r",
+        "title": "3D-geprinte BioHomes van houtafval krijgen negen pilotwoningen in Maine"
+      },
+      {
+        "id": "1789577008130zs40adub8",
+        "title": "Eerste Zonne-ambulance Getest In Kenia"
+      }
+    ]
+  },
+  {
+    "id": "17896637160761haxz39w5",
+    "title": "Schimmels krijgen wereldwijd eigen beschermingsstatus als 'Funga'",
+    "summary": "Wetenschappers en de Fungi Foundation zetten zich in om schimmels als aparte categorie naast flora en fauna te laten erkennen, via het 3F-voorstel (Flora, Fauna, Funga). Zo'n 90 procent van de meest diverse ondergrondse schimmelsystemen is nu onbeschermd, terwijl schimmels essentieel zijn voor koolstofopslag, bodemherstel en biodiversiteit. In juli werd 'funga' opgenomen in de Cambridge Dictionary, wat volgens de organisatie...",
+    "image_alt": "Een doos met schimmels uit de handling collection van het Fungarium van Kew Gardens in Londen",
+    "meta_description": "Wetenschappers pleiten voor erkenning van schimmels als aparte kingdom naast flora en fauna, cruciaal voor klimaat en biodiversiteit.",
+    "meta_keywords": "schimmels, funga, fungi foundation, 3F-voorstel, biodiversiteit, Fungal Conservation Pledge, mycologie, Cambridge Dictionary",
+    "link": "https://theecologist.org/2026/sep/17/scientists-push-fungi-protection",
+    "source": "Theecologist.org",
+    "image": "https://theecologist.org/sites/default/files/styles/facebook/public/2026-09/gettyimages-2215220506.jpg?h=0fd06656&amp;itok=BRAMWEO3",
+    "date": "2026-09-17T16:48:37.598Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1789663690801lle8wvp1r",
+    "title": "3D-geprinte BioHomes van houtafval krijgen negen pilotwoningen in Maine",
+    "summary": "Onderzoekers van de University of Maine's Advanced Structures and Composites Center werken samen met de non-profit Penquis aan negen BioHome3D-woningen in de Greater Bangor-regio. De huizen worden 3D-geprint met bio-hars gemaakt van restafval van hout uit lokale zagerijen. Het project, gefinancierd met 4 miljoen dollar aan Congressionally Directed Spending, moet aantonen dat de bouwmethode op grotere schaal herhaalbaar is. Elk...",
+    "image_alt": "Een 3D-geprint BioHome3D-huis gemaakt van houtresten uit lokale zagerijen in Maine",
+    "meta_description": "Negen 3D-geprinte BioHomes van houtafval verrijzen in Maine als pilot voor snellere, betaalbare woningbouw.",
+    "meta_keywords": "3D-geprinte huizen, BioHome3D, University of Maine, houtafval, betaalbare woningen, duurzaam bouwen, Penquis",
+    "link": "https://www.goodgoodgood.co/articles/maine-biohome-3d-printed-housing",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aac15fdc744413f58419284_6aac15fca5f1bfacb0a31b05_maine-biohome-3d-printed-housing-featured.webp",
+    "date": "2026-09-17T16:48:11.891Z",
+    "category": "Tech",
+    "score": 9
+  },
+  {
+    "id": "1789663660786v9l3a8ldh",
+    "title": "Grootste elektrische veerboot Hull 096 steekt oceaan over",
+    "summary": "Hull 096, gebouwd door scheepswerf Incat in het Tasmaanse Hobart, is aangekomen in Zuid-Amerikaanse wateren na een oversteek over de Stille Oceaan. De 130 meter lange veerboot, oorspronkelijk in 2019 als dieselschip besteld door vervoersbedrijf Buquebus, werd tijdens de pandemie herontworpen tot volledig elektrisch schip en is daarmee het grootste elektrische voertuig ooit gebouwd, op land of water. Het schip...",
+    "image_alt": "De grote elektrische veerboot Hull 096 tijdens aankomst in Zuid-Amerika",
+    "meta_description": "Hull 096, 's werelds grootste elektrische veerboot, arriveert na oceaanoversteek in Zuid-Amerika voor dienst tussen Uruguay en Argentinië.",
+    "meta_keywords": "elektrische veerboot, Hull 096, Incat, Buquebus, China Zorrilla, Rio de la Plata, batterij-elektrisch schip",
+    "link": "https://www.optimistdaily.com/2026/09/the-worlds-largest-battery-electric-ferry-just-crossed-an-ocean/",
+    "source": "OptimistDaily.com",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/HSC_China_Zorrilla_at_Incat_June_2025_2.jpg",
+    "date": "2026-09-17T16:47:42.380Z",
+    "category": "General",
+    "score": 9
+  },
+  {
+    "id": "178966363559407hk5irik",
+    "title": "Harvard-studenten winnen Dyson Award met hersenschuddingtest",
+    "summary": "Drie Harvard-studenten - Radhika Saran, Cleo Pontone en Sophia DeVito - hebben de James Dyson Award 2026 voor de Verenigde Staten gewonnen met hun uitvinding 'Rumble Rims'. Dit is een betaalbare eye-tracking headset waarmee scholen jonge sporters snel kunnen screenen op een hersenschudding, in 2 tot 3 minuten. De headset gebruikt onzichtbaar infraroodlicht en laat de sporter een oogtaak uitvoeren....",
+    "image_alt": "Coach test de eye-tracking headset Rumble Rims bij een jonge sporter op het sportveld.",
+    "meta_description": "Harvard-studenten winnen James Dyson Award met Rumble Rims: een headset die hersenschudding bij jonge sporters snel opspoort.",
+    "meta_keywords": "Rumble Rims, hersenschudding, James Dyson Award, Harvard, eye-tracking, jeugdsport, concussie, sportveiligheid",
+    "link": "https://www.goodnewsnetwork.org/students-win-james-dyson-award-for-device-that-screens-students-for-concussions-in-just-60-seconds/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Radhika-Saran-Cleo-Pontone-and-Sophia-DeVito-inventors-of-Rumble-Rims-credit-James-Dyson-Award-released-to-the-media.jpg",
+    "date": "2026-09-17T16:47:18.099Z",
+    "category": "Health",
+    "score": 9
+  },
+  {
     "id": "dg-20260916-science",
     "type": "digest",
     "digest_date": "2026-09-16",
@@ -2415,83 +2529,5 @@
     "image": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=800&q=80",
     "date": "2026-09-03T16:27:41.659Z",
     "category": "Science"
-  },
-  {
-    "id": "1788452841617u1nsc1eei",
-    "title": "Schimmels maken stoffen die zichzelf programmeren",
-    "summary": "Wetenschappers ontwikkelen een methode om met schimmels 'levende textiel' te produceren dat programmeerbaar is. Deze innovatie biedt een duurzaam alternatief voor traditionele synthetische stoffen, die vaak een hoge milieubelasting met zich meebrengen. Het doel is om de textielindustrie te verduurzamen door materialen te gebruiken die biologisch afbreekbaar zijn.",
-    "image_alt": "Microscopische opname van schimmelvezels die textielstructuren vormen",
-    "meta_description": "Ontdek hoe schimmels helpen bij het maken van programmeerbaar, biologisch afbreekbaar textiel als duurzaam alternatief voor synthetische stoffen.",
-    "meta_keywords": "schimmeltextiel, duurzame stoffen, biologisch afbreekbaar textiel, innovatieve materialen, schimmelinnovatie",
-    "link": "https://newatlas.com/materials/fungi-programmable-living-textiles/",
-    "source": "Newatlas.com",
-    "image": "https://assets.newatlas.com/dims4/default/4569e90/2147483647/strip/true/crop/1200x800+0+0/resize/1200x800!/format/webp/quality/90/?url=https%3A%2F%2Fnewatlas-brightspot.s3.ap-southeast-2.amazonaws.com%2F91%2F73%2F4cf6509b45259180c4ef2150920f%2F9ec33d7f-07b7-4229-9104-9391ebc7b4e4-b2255df6.jpeg",
-    "date": "2026-09-03T16:27:22.453Z",
-    "category": "Science"
-  },
-  {
-    "id": "1788452832754uehqlj0iy",
-    "title": "Nieuw roestvrij staal voor groene waterstof",
-    "summary": "Onderzoekers hebben een nieuw type roestvrij staal ontwikkeld dat bestand is tegen de extreme omstandigheden van waterstofelektrolyse. Dit materiaal kan de corrosieve effecten weerstaan die normaal alleen titanium aankan, maar tegen lagere kosten. Dit maakt groene waterstofproductie efficiënter en betaalbaarder.",
-    "image_alt": "Microscopische opname van het nieuwe roestvrij staal met een glanzend oppervlak en een blauwachtige reflectie, geschikt voor waterstofelektrolyse.",
-    "meta_description": "Nieuw roestvrij staal voor waterstofelektrolyse biedt een betaalbaar alternatief voor titanium.",
-    "meta_keywords": "roestvrij staal, waterstofelektrolyse, groene waterstof, corrosiebestendig, materiaalinnovatie, energieopslag, duurzaamheid",
-    "link": "https://newatlas.com/energy/stainless-steel-hydrogen-electrolysis/",
-    "source": "Newatlas.com",
-    "image": "https://assets.newatlas.com/dims4/default/559c487/2147483647/strip/true/crop/1620x1080+0+0/resize/1440x960!/format/webp/quality/90/?url=https%3A%2F%2Fnewatlas-brightspot.s3.ap-southeast-2.amazonaws.com%2F4d%2F50%2Fa00f64354d14b10b4c223ad6d3ff%2Fultra-stainless-steel.jpeg",
-    "date": "2026-09-03T16:27:13.482Z",
-    "category": "Science"
-  },
-  {
-    "id": "1788452807459criub8xao",
-    "title": "Drugstesten redt levens in Bogotá",
-    "summary": "Een leraar in Bogotá laat zijn drugs testen bij een drug-checkingpunt om veilig gebruik te waarborgen. Het lab ontdekt dat zijn LSD vervalst is. Drug checking beschermt consumenten door de samenstelling van drugs te analyseren en veiligere keuzes te adviseren. In Colombia zetten gebruikers en activisten zich zo in voor schadebeperking en druglegalisatie.",
-    "image_alt": "Een man overhandigt een klein papier met een drug aan een labtechnicus in een ruimte met graffiti en een muurschildering met de tekst 'Beëindig de drugsoorlog'.",
-    "meta_description": "Drugstesten in Bogotá helpt gebruikers veilige keuzes te maken door drugs te analyseren. Harm reduction en legalisatie in Colombia.",
-    "meta_keywords": "drugstesten, Bogotá, drug checking, harm reduction, druglegalisatie, Colombia, veilig drugsgebruik",
-    "link": "https://www.yesmagazine.org/body-politics/2025/05/20/colombia-destigmatize-drug-use",
-    "source": "YesMagazine.org",
-    "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
-    "date": "2026-09-03T16:26:48.190Z",
-    "category": "Health"
-  },
-  {
-    "id": "1788452792627u7l6iigbj",
-    "title": "Transgenderverhalen uit 1939 herontdekt",
-    "summary": "In 1939 keerden twee Britse broers, Mark en David Ferrow, terug naar hun woonplaats Great Yarmouth na vier jaar van een overgang. De trans tieners kregen liefde en steun van hun gemeenschap. Ze waren niet alleen: er bestond al een bloeiende groep die gendergrenzen doorbrak. Transgender mensen bestaan al langer dan moderne termen voor gender.",
-    "image_alt": "Twee trans tieners, Mark en David Ferrow, in 1939 met hun familie in Great Yarmouth, omringd door steun.",
-    "meta_description": "Ontdek hoe transgenderverhalen uit 1939 de mythe van de 'eerste generatie' ontkrachten. Historische feiten over transidentiteit.",
-    "meta_keywords": "transgender geschiedenis, trans tieners 1939, Mark en David Ferrow, genderidentiteit, historische feiten, LGBTQ+ verleden",
-    "link": "https://www.yesmagazine.org/body-politics/2025/05/27/before-gender-lost-stories-trans-history-excerpt",
-    "source": "YesMagazine.org",
-    "image": "https://images.unsplash.com/photo-1502444330042-d1a1ddf9bb5b?w=800&q=80",
-    "date": "2026-09-03T16:26:33.364Z",
-    "category": "Lifestyle"
-  },
-  {
-    "id": "17884527811975v9r76stc",
-    "title": "Brief van hoop uit het Globale Zuiden",
-    "summary": "Activisten, organisatoren en gemeenschapswerkers uit het Globale Zuiden sturen een boodschap van hoop naar de VS. Ze benadrukken een hoop die sterk genoeg is om systemische onderdrukking te trotseren en te bestrijden. Ze erkennen gedeelde angst en ervaring met autoritaire regimes, mensenrechtenschendingen en exploitatie, vaak veroorzaakt door de erfenis van de VS. Toch bieden ze alternatieve kaders, filosofieën en strategieën...",
-    "image_alt": "Een handgeschreven brief met een boodschap van hoop en solidariteit, omringd door symbolen van gemeenschap en strijd uit het Globale Zuiden.",
-    "meta_description": "Boodschap van hoop en solidariteit uit het Globale Zuiden aan de VS, met alternatieven voor systemische onderdrukking en een roep om actie.",
-    "meta_keywords": "hoop, Globale Zuiden, solidariteit, onderdrukking, alternatieven, activisme, gemeenschap, strijd, VS, boodschap, hoopvol, filosofie, strategieën",
-    "link": "https://www.yesmagazine.org/political-power/2025/05/30/ferocious-hope-messages-global-south",
-    "source": "YesMagazine.org",
-    "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXf-lnHTUywcYFcComB6COodv2296J-CujYYLioRszX-a5jeFj6hsy_X19Dq4JjPreB1N-HkfhZDQHe3o9hKD20sTxvMQUSasnLdEZxljD5vw7L-AG16a3czB3X3RjMqgjnAbjl9uQ?key=QbmpzHw7ngBOiPkHOswrpQ",
-    "date": "2026-09-03T16:26:22.115Z",
-    "category": "Lifestyle"
-  },
-  {
-    "id": "178845276942183i4jin2j",
-    "title": "YES! Magazine leeft voort via nieuw initiatief",
-    "summary": "YES! Magazine, een onafhankelijke uitgever van oplossingsgerichte journalistiek, stopte eerder dit jaar met reguliere publicaties. Het blad bood bijna 30 jaar lang een platform voor organisatoren, denkers en schrijvers die verhalen deelden over mensen die streven naar echte verandering. Truthout neemt de digitale inhoud over en lanceert een maandelijkse nieuwsbrief met archiefmateriaal en nieuwe oplossingsgerichte journalistiek om bewegingen voor transformatie...",
-    "image_alt": "Een open boek met de tekst YES! Magazine op de cover, omringd door symbolen van hoop en verandering zoals een vuist, een plant en een globe.",
-    "meta_description": "YES! Magazine stopt, maar haar oplossingsgerichte journalistiek leeft voort via Truthout. Ontdek hoe archief en nieuwe verhalen bewegingen inspireren.",
-    "meta_keywords": "YES! Magazine, oplossingsjournalistiek, Truthout, archief, nieuwsbrief, sociale verandering, onafhankelijke media, progressieve journalistiek",
-    "link": "https://www.yesmagazine.org/issues/2025/09/15/a-repository-of-hope-amid-an-authoritarian-moment",
-    "source": "YesMagazine.org",
-    "image": "https://i0.wp.com/www.yesmagazine.org/wp-content/uploads/2025/10/rising-up-with-sonali.jpg?resize=940%2C560&#038;quality=90&#038;ssl=1",
-    "date": "2026-09-03T16:26:10.634Z",
-    "category": "Lifestyle"
   }
 ]

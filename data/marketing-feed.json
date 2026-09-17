@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-09-17T04:37:57.382Z",
+ "gegenereerd": "2026-09-17T16:50:21.246Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -48,6 +48,20 @@
    ],
    "dagoverzichten": [
     {
+     "id": "dg-20260916-health",
+     "titel": "Zorgzame zorg: van Afghaanse klinieken tot een test tegen hersenschudding",
+     "categorie": "Health",
+     "dag": "2026-09-16",
+     "url": "https://brightnews.online/articles/nl/zorgzame-zorg-van-afghaanse-klinieken-tot-een-test-tegen-hersenschudding-dg-20260916-health.html"
+    },
+    {
+     "id": "dg-20260916-tech",
+     "titel": "Van gebarentaal tot huizen uit houtafval: techniek die problemen oplost",
+     "categorie": "Tech",
+     "dag": "2026-09-16",
+     "url": "https://brightnews.online/articles/nl/van-gebarentaal-tot-huizen-uit-houtafval-techniek-die-problemen-oplost-dg-20260916-tech.html"
+    },
+    {
      "id": "dg-20260916-science",
      "titel": "Kleine ontdekkingen, grote reis: wetenschap van de afgelopen dagen",
      "categorie": "Science",
@@ -95,13 +109,6 @@
      "categorie": "Environment",
      "dag": "2026-09-15",
      "url": "https://brightnews.online/articles/nl/schildpadden-een-park-en-europese-doelen-drie-tekens-van-vooruitgang-dg-20260915-environment.html"
-    },
-    {
-     "id": "dg-20260914-lifestyle",
-     "titel": "Huizen, buren in het donker en twee koppige doorzetters: het lifestyle-nieuws van deze dagen",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-14",
-     "url": "https://brightnews.online/articles/nl/huizen-buren-in-het-donker-en-twee-koppige-doorzetters-het-lifestyle-nieuws-van--dg-20260914-lifestyle.html"
     }
    ]
   },
@@ -150,6 +157,20 @@
    ],
    "dagoverzichten": [
     {
+     "id": "dg-20260916-health",
+     "titel": "Caring care: from Afghan clinics to a concussion test",
+     "categorie": "Health",
+     "dag": "2026-09-16",
+     "url": "https://brightnews.online/articles/en/caring-care-from-afghan-clinics-to-a-concussion-test-dg-20260916-health.html"
+    },
+    {
+     "id": "dg-20260916-tech",
+     "titel": "From sign language to houses made from wood waste: technology that solves problems",
+     "categorie": "Tech",
+     "dag": "2026-09-16",
+     "url": "https://brightnews.online/articles/en/from-sign-language-to-houses-made-from-wood-waste-technology-that-solves-problem-dg-20260916-tech.html"
+    },
+    {
      "id": "dg-20260916-science",
      "titel": "Small discoveries, big journey: science from the past few days",
      "categorie": "Science",
@@ -197,13 +218,6 @@
      "categorie": "Environment",
      "dag": "2026-09-15",
      "url": "https://brightnews.online/articles/en/turtles-a-park-and-european-targets-three-signs-of-progress-dg-20260915-environment.html"
-    },
-    {
-     "id": "dg-20260914-lifestyle",
-     "titel": "Houses, neighbors in the dark and two determined perseverers: the lifestyle news of these days",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-14",
-     "url": "https://brightnews.online/articles/en/houses-neighbors-in-the-dark-and-two-determined-perseverers-the-lifestyle-news-o-dg-20260914-lifestyle.html"
     }
    ]
   },
@@ -252,6 +266,20 @@
    ],
    "dagoverzichten": [
     {
+     "id": "dg-20260916-health",
+     "titel": "Sorgende Pflege: Von afghanischen Kliniken bis zu einem Gehirnerschütterungstest",
+     "categorie": "Health",
+     "dag": "2026-09-16",
+     "url": "https://brightnews.online/articles/de/sorgende-pflege-von-afghanischen-kliniken-bis-zu-einem-gehirnerschutterungstest-dg-20260916-health.html"
+    },
+    {
+     "id": "dg-20260916-tech",
+     "titel": "Von Gebärdensprache bis zu Häusern aus Holzabfall: Technik, die Probleme löst",
+     "categorie": "Tech",
+     "dag": "2026-09-16",
+     "url": "https://brightnews.online/articles/de/von-gebardensprache-bis-zu-hausern-aus-holzabfall-technik-die-probleme-lost-dg-20260916-tech.html"
+    },
+    {
      "id": "dg-20260916-science",
      "titel": "Kleine Entdeckungen, große Reise: Wissenschaft der vergangenen Tage",
      "categorie": "Science",
@@ -299,13 +327,6 @@
      "categorie": "Environment",
      "dag": "2026-09-15",
      "url": "https://brightnews.online/articles/de/schildkroten-ein-park-und-europaische-ziele-drei-zeichen-des-fortschritts-dg-20260915-environment.html"
-    },
-    {
-     "id": "dg-20260914-lifestyle",
-     "titel": "Häuser, Nachbarn im Dunkeln und zwei hartnäckige Durchhalter: die Lifestyle-Nachrichten dieser Tage",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-14",
-     "url": "https://brightnews.online/articles/de/hauser-nachbarn-im-dunkeln-und-zwei-hartnackige-durchhalter-die-lifestyle-nachri-dg-20260914-lifestyle.html"
     }
    ]
   },
@@ -354,6 +375,20 @@
    ],
    "dagoverzichten": [
     {
+     "id": "dg-20260916-health",
+     "titel": "Des soins attentionnés : des cliniques afghanes à un test contre les commotions cérébrales",
+     "categorie": "Health",
+     "dag": "2026-09-16",
+     "url": "https://brightnews.online/articles/fr/des-soins-attentionnes-des-cliniques-afghanes-a-un-test-contre-les-commotions-ce-dg-20260916-health.html"
+    },
+    {
+     "id": "dg-20260916-tech",
+     "titel": "Du langage des signes aux maisons en déchets de bois : la technologie qui résout les problèmes",
+     "categorie": "Tech",
+     "dag": "2026-09-16",
+     "url": "https://brightnews.online/articles/fr/du-langage-des-signes-aux-maisons-en-dechets-de-bois-la-technologie-qui-resout-l-dg-20260916-tech.html"
+    },
+    {
      "id": "dg-20260916-science",
      "titel": "Petites découvertes, grand voyage : la science de ces derniers jours",
      "categorie": "Science",
@@ -401,13 +436,6 @@
      "categorie": "Environment",
      "dag": "2026-09-15",
      "url": "https://brightnews.online/articles/fr/des-tortues-un-parc-et-des-objectifs-europeens-trois-signes-de-progres-dg-20260915-environment.html"
-    },
-    {
-     "id": "dg-20260914-lifestyle",
-     "titel": "Des maisons, des voisins dans le noir et deux têtes de mule déterminées : les actualités lifestyle de ces jours-ci",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-14",
-     "url": "https://brightnews.online/articles/fr/des-maisons-des-voisins-dans-le-noir-et-deux-tetes-de-mule-determinees-les-actua-dg-20260914-lifestyle.html"
     }
    ]
   },
@@ -456,6 +484,20 @@
    ],
    "dagoverzichten": [
     {
+     "id": "dg-20260916-health",
+     "titel": "Cuidado atento: de clínicas afganas a una prueba contra conmociones cerebrales",
+     "categorie": "Health",
+     "dag": "2026-09-16",
+     "url": "https://brightnews.online/articles/es/cuidado-atento-de-clinicas-afganas-a-una-prueba-contra-conmociones-cerebrales-dg-20260916-health.html"
+    },
+    {
+     "id": "dg-20260916-tech",
+     "titel": "Del lenguaje de signos a casas hechas de residuos de madera: la tecnología que resuelve problemas",
+     "categorie": "Tech",
+     "dag": "2026-09-16",
+     "url": "https://brightnews.online/articles/es/del-lenguaje-de-signos-a-casas-hechas-de-residuos-de-madera-la-tecnologia-que-re-dg-20260916-tech.html"
+    },
+    {
      "id": "dg-20260916-science",
      "titel": "Pequeños descubrimientos, gran viaje: la ciencia de los últimos días",
      "categorie": "Science",
@@ -503,13 +545,6 @@
      "categorie": "Environment",
      "dag": "2026-09-15",
      "url": "https://brightnews.online/articles/es/tortugas-un-parque-y-objetivos-europeos-tres-senales-de-progreso-dg-20260915-environment.html"
-    },
-    {
-     "id": "dg-20260914-lifestyle",
-     "titel": "Casas, vecinos en la oscuridad y dos perseverantes decididas: las noticias de estilo de vida de estos días",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-14",
-     "url": "https://brightnews.online/articles/es/casas-vecinos-en-la-oscuridad-y-dos-perseverantes-decididas-las-noticias-de-esti-dg-20260914-lifestyle.html"
     }
    ]
   }

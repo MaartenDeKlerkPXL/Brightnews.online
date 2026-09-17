@@ -1,5 +1,119 @@
 [
   {
+    "id": "dg-20260916-health",
+    "type": "digest",
+    "digest_date": "2026-09-16",
+    "title": "Caring care: from Afghan clinics to a concussion test",
+    "summary": "These days, it stands out how often good care comes down to attention at the right moment. Whether it's a delivery in a remote village, the treatment of a mother after a difficult birth, or a quick test for young athletes: everywhere it turns out that timely intervention can save lives. The three stories from the past few days show how varied that care can look, and how people around the world make the difference in it. In Afghanistan, one of the most dangerous countries to become a mother, so-called family health houses offer help in areas where there is...",
+    "image_alt": "Caring care: from Afghan clinics to a concussion test",
+    "meta_description": "From midwives in Afghanistan to a concussion test by Harvard students: the positive health news from the past few days in a nutshell.",
+    "meta_keywords": "Health",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://reasonstobecheerful.world/wp-content/uploads/2026/09/1000082074.jpg-1-scaled.jpeg",
+    "date": "2026-09-17T16:50:20.800Z",
+    "category": "Health",
+    "refs": [
+      {
+        "id": "178958809918291v7k5ka4",
+        "title": "Afghan family health houses save mothers and babies"
+      },
+      {
+        "id": "1789587795217koeu9678p",
+        "title": "Tatyana Ali advocates for Black and Indigenous maternal care"
+      },
+      {
+        "id": "178966363559407hk5irik",
+        "title": "Harvard students win Dyson Award with concussion test"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260916-tech",
+    "type": "digest",
+    "digest_date": "2026-09-16",
+    "title": "From sign language to houses made from wood waste: technology that solves problems",
+    "summary": "These days, technology is showing that clever inventions don't need to be complicated to make a real difference. From a robotic hand that produces sign language to houses built from wood waste: solutions are popping up everywhere for problems that have existed for a long time. That's precisely what makes these stories worth reading further. In Kenya, 22-year-old Norah Kimathi built a robotic hand with her startup ZeroBionic that converts a teacher's voice directly into sign language [1]. Of the 300,000 deaf or hard of hearing children in Kenya, only a small fraction attend school, partly because there is no...",
+    "image_alt": "From sign language to houses made from wood waste: technology that solves problems",
+    "meta_description": "Robotic hand for sign language, houses made from wood waste and a solar ambulance: the technology news of September 16, 2026 at a glance.",
+    "meta_keywords": "Tech",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Press-photo-©-ZeroBionic-2.jpg",
+    "date": "2026-09-17T16:49:28.212Z",
+    "category": "Tech",
+    "refs": [
+      {
+        "id": "1789409398854ryk5ehwtu",
+        "title": "Robot Hand Translates Teacher's Voice to Sign Language"
+      },
+      {
+        "id": "1789663690801lle8wvp1r",
+        "title": "3D-printed BioHomes from wood waste get nine pilot homes in Maine"
+      },
+      {
+        "id": "1789577008130zs40adub8",
+        "title": "First Solar Ambulance Tested In Kenya"
+      }
+    ]
+  },
+  {
+    "id": "17896637160761haxz39w5",
+    "title": "Fungi gain global protection status as 'Funga'",
+    "summary": "Scientists and the Fungi Foundation are working to have fungi recognized as a separate category alongside flora and fauna, through the 3F proposal (Flora, Fauna, Funga). Around 90 percent of the most diverse underground fungal systems currently lack protection, despite fungi being essential for carbon storage, soil restoration and biodiversity. In July, 'funga' was added to the Cambridge Dictionary, which...",
+    "image_alt": "A box of fungi from the handling collection of the Fungarium at Kew Gardens in London",
+    "meta_description": "Scientists advocate for fungi to be recognized as a separate kingdom alongside flora and fauna, crucial for climate and biodiversity.",
+    "meta_keywords": "fungi, funga, Fungi Foundation, 3F proposal, biodiversity, Fungal Conservation Pledge, mycology, Cambridge Dictionary",
+    "link": "https://theecologist.org/2026/sep/17/scientists-push-fungi-protection",
+    "source": "Theecologist.org",
+    "image": "https://theecologist.org/sites/default/files/styles/facebook/public/2026-09/gettyimages-2215220506.jpg?h=0fd06656&amp;itok=BRAMWEO3",
+    "date": "2026-09-17T16:48:37.598Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1789663690801lle8wvp1r",
+    "title": "3D-printed BioHomes from wood waste get nine pilot homes in Maine",
+    "summary": "Researchers from the University of Maine's Advanced Structures and Composites Center are partnering with nonprofit Penquis on nine BioHome3D homes in the Greater Bangor region. The houses will be 3D-printed with bio-resin made from waste material from local sawmills. The project, funded with 4 million dollars in Congressionally Directed Spending, aims to demonstrate that the construction method is repeatable at...",
+    "image_alt": "A 3D-printed BioHome3D house made from wood waste from local sawmills in Maine",
+    "meta_description": "Nine 3D-printed BioHomes from wood waste are rising in Maine as a pilot for faster, affordable housing construction.",
+    "meta_keywords": "3D-printed homes, BioHome3D, University of Maine, wood waste, affordable housing, sustainable construction, Penquis",
+    "link": "https://www.goodgoodgood.co/articles/maine-biohome-3d-printed-housing",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aac15fdc744413f58419284_6aac15fca5f1bfacb0a31b05_maine-biohome-3d-printed-housing-featured.webp",
+    "date": "2026-09-17T16:48:11.891Z",
+    "category": "Tech",
+    "score": 9
+  },
+  {
+    "id": "1789663660786v9l3a8ldh",
+    "title": "World's largest electric ferry Hull 096 crosses ocean",
+    "summary": "Hull 096, built by shipyard Incat in Tasmanian Hobart, has arrived in South American waters after crossing the Pacific Ocean. The 130-meter-long ferry, originally ordered in 2019 as a diesel ship by transport company Buquebus, was redesigned during the pandemic into a fully electric vessel, making it the largest electric vehicle ever built, on land or water. The ship is...",
+    "image_alt": "The large electric ferry Hull 096 during arrival in South America",
+    "meta_description": "Hull 096, the world's largest electric ferry, arrives after ocean crossing in South America for service between Uruguay and Argentina.",
+    "meta_keywords": "electric ferry, Hull 096, Incat, Buquebus, China Zorrilla, Rio de la Plata, battery-electric ship",
+    "link": "https://www.optimistdaily.com/2026/09/the-worlds-largest-battery-electric-ferry-just-crossed-an-ocean/",
+    "source": "OptimistDaily.com",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/HSC_China_Zorrilla_at_Incat_June_2025_2.jpg",
+    "date": "2026-09-17T16:47:42.380Z",
+    "category": "General",
+    "score": 9
+  },
+  {
+    "id": "178966363559407hk5irik",
+    "title": "Harvard students win Dyson Award with concussion test",
+    "summary": "Three Harvard students — Radhika Saran, Cleo Pontone and Sophia DeVito — have won the James Dyson Award 2026 for the United States with their invention 'Rumble Rims'. This is an affordable eye-tracking headset that allows schools to quickly screen young athletes for concussion in 2 to 3 minutes. The headset uses invisible infrared light and has the athlete perform...",
+    "image_alt": "Coach tests the eye-tracking headset Rumble Rims with a young athlete on the sports field.",
+    "meta_description": "Harvard students win James Dyson Award with Rumble Rims: a headset that quickly detects concussion in young athletes.",
+    "meta_keywords": "Rumble Rims, concussion, James Dyson Award, Harvard, eye-tracking, youth sports, concussion, sports safety",
+    "link": "https://www.goodnewsnetwork.org/students-win-james-dyson-award-for-device-that-screens-students-for-concussions-in-just-60-seconds/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Radhika-Saran-Cleo-Pontone-and-Sophia-DeVito-inventors-of-Rumble-Rims-credit-James-Dyson-Award-released-to-the-media.jpg",
+    "date": "2026-09-17T16:47:18.099Z",
+    "category": "Health",
+    "score": 9
+  },
+  {
     "id": "dg-20260916-science",
     "type": "digest",
     "digest_date": "2026-09-16",
@@ -2415,83 +2529,5 @@
     "image": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=800&q=80",
     "date": "2026-09-03T16:27:41.659Z",
     "category": "Science"
-  },
-  {
-    "id": "1788452841617u1nsc1eei",
-    "title": "Fungi create programmable living textiles",
-    "summary": "Scientists are using fungi to produce programmable 'living textiles' as a sustainable alternative to conventional synthetic fabrics. The method aims to reduce the environmental impact of the textile industry by developing biodegradable materials that can be programmed for specific uses.",
-    "image_alt": "Microscopic view of fungal fibers forming textile structures",
-    "meta_description": "Learn how fungi are used to create programmable, biodegradable textiles as a sustainable alternative to synthetic fabrics.",
-    "meta_keywords": "fungal textiles, sustainable fabrics, biodegradable materials, textile innovation, fungi-based materials",
-    "link": "https://newatlas.com/materials/fungi-programmable-living-textiles/",
-    "source": "Newatlas.com",
-    "image": "https://assets.newatlas.com/dims4/default/4569e90/2147483647/strip/true/crop/1200x800+0+0/resize/1200x800!/format/webp/quality/90/?url=https%3A%2F%2Fnewatlas-brightspot.s3.ap-southeast-2.amazonaws.com%2F91%2F73%2F4cf6509b45259180c4ef2150920f%2F9ec33d7f-07b7-4229-9104-9391ebc7b4e4-b2255df6.jpeg",
-    "date": "2026-09-03T16:27:22.453Z",
-    "category": "Science"
-  },
-  {
-    "id": "1788452832754uehqlj0iy",
-    "title": "New stainless steel for hydrogen electrolysis",
-    "summary": "Scientists have created a new stainless steel variant that withstands the harsh conditions of hydrogen electrolysis. This material resists corrosion typically only titanium can endure, but at a lower cost. It enables more cost-effective green hydrogen production.",
-    "image_alt": "Microscopic image of the new stainless steel with a shiny surface and bluish reflection, suitable for hydrogen electrolysis.",
-    "meta_description": "New stainless steel for hydrogen electrolysis offers an affordable alternative to titanium.",
-    "meta_keywords": "stainless steel, hydrogen electrolysis, green hydrogen, corrosion-resistant, material innovation, energy storage, sustainability",
-    "link": "https://newatlas.com/energy/stainless-steel-hydrogen-electrolysis/",
-    "source": "Newatlas.com",
-    "image": "https://assets.newatlas.com/dims4/default/559c487/2147483647/strip/true/crop/1620x1080+0+0/resize/1440x960!/format/webp/quality/90/?url=https%3A%2F%2Fnewatlas-brightspot.s3.ap-southeast-2.amazonaws.com%2F4d%2F50%2Fa00f64354d14b10b4c223ad6d3ff%2Fultra-stainless-steel.jpeg",
-    "date": "2026-09-03T16:27:13.482Z",
-    "category": "Science"
-  },
-  {
-    "id": "1788452807459criub8xao",
-    "title": "Drug testing saves lives in Bogotá",
-    "summary": "A teacher in Bogotá tests his drugs at a drug-checking site to ensure safe use. The lab finds his LSD is fake. Drug checking protects consumers by analyzing drug composition and advising safer choices. In Colombia, users and activists promote harm reduction and drug legalization through this method.",
-    "image_alt": "A man hands a small paper with a drug to a lab technician in a room with graffiti and a mural reading 'End the War on Drugs'.",
-    "meta_description": "Drug testing in Bogotá helps users make safer choices by analyzing substances. Harm reduction and legalization in Colombia.",
-    "meta_keywords": "drug testing, Bogotá, drug checking, harm reduction, drug legalization, Colombia, safe drug use",
-    "link": "https://www.yesmagazine.org/body-politics/2025/05/20/colombia-destigmatize-drug-use",
-    "source": "YesMagazine.org",
-    "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
-    "date": "2026-09-03T16:26:48.190Z",
-    "category": "Health"
-  },
-  {
-    "id": "1788452792627u7l6iigbj",
-    "title": "Trans stories from 1939 challenge modern myths",
-    "summary": "In 1939, British brothers Mark and David Ferrow returned to Great Yarmouth after transitioning for four years. The trans teens received overwhelming love and support from their community. They were not alone: a growing group defied gender norms. Transgender people have existed long before modern gender terms.",
-    "image_alt": "Trans teens Mark and David Ferrow in 1939 with family in Great Yarmouth, surrounded by support.",
-    "meta_description": "Discover how 1939 transgender stories debunk the myth of the 'first generation'. Historical facts on gender identity.",
-    "meta_keywords": "transgender history, trans teens 1939, Mark and David Ferrow, gender identity, historical facts, LGBTQ+ past",
-    "link": "https://www.yesmagazine.org/body-politics/2025/05/27/before-gender-lost-stories-trans-history-excerpt",
-    "source": "YesMagazine.org",
-    "image": "https://images.unsplash.com/photo-1502444330042-d1a1ddf9bb5b?w=800&q=80",
-    "date": "2026-09-03T16:26:33.364Z",
-    "category": "Lifestyle"
-  },
-  {
-    "id": "17884527811975v9r76stc",
-    "title": "Messages of fierce hope from Global South",
-    "summary": "Organizers, activists, and community workers from the Global South send a message of hope to the U.S. They define hope as fierce enough to confront systemic oppression and end it. They acknowledge shared fear and experience with authoritarian regimes, human rights violations, and exploitation—often caused by the legacy of the U.S. Yet they offer frameworks, philosophies, and strategies for an...",
-    "image_alt": "A handwritten letter conveying a message of hope and solidarity, surrounded by symbols of community and struggle from the Global South.",
-    "meta_description": "Global South activists send messages of fierce hope to the U.S., offering frameworks to confront systemic oppression and build alternatives.",
-    "meta_keywords": "hope, Global South, solidarity, oppression, alternatives, activism, community, struggle, U.S., message, fierce, philosophy, strategies",
-    "link": "https://www.yesmagazine.org/political-power/2025/05/30/ferocious-hope-messages-global-south",
-    "source": "YesMagazine.org",
-    "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXf-lnHTUywcYFcComB6COodv2296J-CujYYLioRszX-a5jeFj6hsy_X19Dq4JjPreB1N-HkfhZDQHe3o9hKD20sTxvMQUSasnLdEZxljD5vw7L-AG16a3czB3X3RjMqgjnAbjl9uQ?key=QbmpzHw7ngBOiPkHOswrpQ",
-    "date": "2026-09-03T16:26:22.115Z",
-    "category": "Lifestyle"
-  },
-  {
-    "id": "178845276942183i4jin2j",
-    "title": "YES! Magazine legacy continues through new initiative",
-    "summary": "YES! Magazine, an independent publisher of solutions journalism, ceased regular publication earlier this year. For nearly 30 years, it provided a platform for organizers, visionaries, and writers sharing stories of people striving for real change. Truthout now stewards its digital content and launches a monthly newsletter featuring archived material and new solutions-driven reporting to support transformative movements.",
-    "image_alt": "An open book with the text YES! Magazine on the cover, surrounded by symbols of hope and change like a fist, a plant, and a globe.",
-    "meta_description": "YES! Magazine ends, but its solutions journalism lives on via Truthout. Explore archived and new stories inspiring social movements.",
-    "meta_keywords": "YES! Magazine, solutions journalism, Truthout, digital archive, newsletter, social change, independent media, progressive journalism",
-    "link": "https://www.yesmagazine.org/issues/2025/09/15/a-repository-of-hope-amid-an-authoritarian-moment",
-    "source": "YesMagazine.org",
-    "image": "https://i0.wp.com/www.yesmagazine.org/wp-content/uploads/2025/10/rising-up-with-sonali.jpg?resize=940%2C560&#038;quality=90&#038;ssl=1",
-    "date": "2026-09-03T16:26:10.634Z",
-    "category": "Lifestyle"
   }
 ]

@@ -1,5 +1,119 @@
 [
   {
+    "id": "dg-20260916-health",
+    "type": "digest",
+    "digest_date": "2026-09-16",
+    "title": "Sorgende Pflege: Von afghanischen Kliniken bis zu einem Gehirnerschütterungstest",
+    "summary": "In diesen Tagen fällt auf, wie oft gute Pflege davon abhängt, zur richtigen Zeit aufmerksam zu sein. Ob es um eine Entbindung in einem abgelegenen Dorf geht, die Behandlung einer Mutter nach einer schwierigen Geburt oder einen schnellen Test bei jungen Sportlern: überall zeigt sich, dass rechtzeitiges Handeln Leben retten kann. Die drei Meldungen der vergangenen Tage zeigen, wie unterschiedlich diese Pflege aussehen kann und wie Menschen überall auf der Welt den Unterschied machen. In Afghanistan, einem der gefährlichsten Länder, um Mutter zu werden, bieten sogenannte family health houses Hilfe in Gegenden, wo es sonst nichts gibt. Mehr als 450...",
+    "image_alt": "Sorgende Pflege: Von afghanischen Kliniken bis zu einem Gehirnerschütterungstest",
+    "meta_description": "Von Hebammen in Afghanistan bis zu einem Gehirnerschütterungstest von Harvard-Studentinnen: die positiven Gesundheitsnachrichten der vergangenen Tage im Üb",
+    "meta_keywords": "Health",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://reasonstobecheerful.world/wp-content/uploads/2026/09/1000082074.jpg-1-scaled.jpeg",
+    "date": "2026-09-17T16:50:20.800Z",
+    "category": "Health",
+    "refs": [
+      {
+        "id": "178958809918291v7k5ka4",
+        "title": "Afghanische family health houses retten Mütter und Babys"
+      },
+      {
+        "id": "1789587795217koeu9678p",
+        "title": "Tatyana Ali setzt sich für schwarze und indigene Müttergesundheit ein"
+      },
+      {
+        "id": "178966363559407hk5irik",
+        "title": "Harvard-Studenten gewinnen Dyson Award mit Gehirnerschütterungstest"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260916-tech",
+    "type": "digest",
+    "digest_date": "2026-09-16",
+    "title": "Von Gebärdensprache bis zu Häusern aus Holzabfall: Technik, die Probleme löst",
+    "summary": "In diesen Tagen zeigt die Technik, dass intelligente Erfindungen nicht zwingend kompliziert sein müssen, um viel zu bewirken. Von einer Roboterhand, die Gebärdensprache umsetzt, bis zu Häusern aus Holzabfall: überall entstehen Lösungen für Probleme, die es schon lange gibt. Genau das macht diese Meldungen lesenswert. In Kenia baute die 22-jährige Norah Kimathi mit ihrem Startup ZeroBionic eine Roboterhand, die die Stimme eines Lehrers direkt in Gebärdensprache umsetzt [1]. Von den 300.000 gehörlosen oder schwerhörigen Kindern in Kenia gehen nur wenige zur Schule, teilweise weil es keine einheitliche Gebärdensprache gibt. Die Hand ist aus recyceltem Kunststoffabfall 3D-gedruckt und kostet 350 Dollar....",
+    "image_alt": "Von Gebärdensprache bis zu Häusern aus Holzabfall: Technik, die Probleme löst",
+    "meta_description": "Roboterhand für Gebärdensprache, Häuser aus Holzabfall und eine Sonnen-Ambulanz: die Technik-Nachrichten vom 16. September 2026 im Überblick.",
+    "meta_keywords": "Tech",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Press-photo-©-ZeroBionic-2.jpg",
+    "date": "2026-09-17T16:49:28.212Z",
+    "category": "Tech",
+    "refs": [
+      {
+        "id": "1789409398854ryk5ehwtu",
+        "title": "Roboterhand Übersetzt Lehrerstimme in Gebärdensprache"
+      },
+      {
+        "id": "1789663690801lle8wvp1r",
+        "title": "3D-gedruckte BioHomes aus Holzabfall erhalten neun Pilothäuser in Maine"
+      },
+      {
+        "id": "1789577008130zs40adub8",
+        "title": "Erste Solarambulanz in Kenia getestet"
+      }
+    ]
+  },
+  {
+    "id": "17896637160761haxz39w5",
+    "title": "Pilze erhalten weltweit eigenen Schutzstatus als „Funga\"",
+    "summary": "Wissenschaftler und die Fungi Foundation setzen sich dafür ein, Pilze als separate Kategorie neben Flora und Fauna anerkennen zu lassen, über den 3F-Vorschlag (Flora, Fauna, Funga). Etwa 90 Prozent der vielfältigsten unterirdischen Pilzsysteme sind derzeit ungeschützt, während Pilze für die Kohlenstoffspeicherung, Bodenwiederherstellung und Biodiversität unverzichtbar sind. Im Juli wurde „funga\" in das Cambridge Dictionary aufgenommen, was laut der Organisation ein...",
+    "image_alt": "Eine Schachtel mit Pilzen aus der Handling Collection des Fungarium von Kew Gardens in London",
+    "meta_description": "Wissenschaftler fordern die Anerkennung von Pilzen als separates Reich neben Flora und Fauna, entscheidend für Klima und Biodiversität.",
+    "meta_keywords": "Pilze, Funga, Fungi Foundation, 3F-Vorschlag, Biodiversität, Fungal Conservation Pledge, Mykologie, Cambridge Dictionary",
+    "link": "https://theecologist.org/2026/sep/17/scientists-push-fungi-protection",
+    "source": "Theecologist.org",
+    "image": "https://theecologist.org/sites/default/files/styles/facebook/public/2026-09/gettyimages-2215220506.jpg?h=0fd06656&amp;itok=BRAMWEO3",
+    "date": "2026-09-17T16:48:37.598Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1789663690801lle8wvp1r",
+    "title": "3D-gedruckte BioHomes aus Holzabfall erhalten neun Pilothäuser in Maine",
+    "summary": "Forscher des Advanced Structures and Composites Center der University of Maine arbeiten mit der gemeinnützigen Organisation Penquis an neun BioHome3D-Häusern in der Region Greater Bangor zusammen. Die Häuser werden 3D-gedruckt mit Bioharz, das aus Restabfällen von Holz aus lokalen Sägewerken hergestellt wird. Das Projekt, finanziert mit 4 Millionen Dollar aus Congressionally Directed Spending, soll zeigen, dass die Baumethode in größerem...",
+    "image_alt": "Ein 3D-gedrucktes BioHome3D-Haus aus Holzresten von lokalen Sägewerken in Maine",
+    "meta_description": "Neun 3D-gedruckte BioHomes aus Holzabfall entstehen in Maine als Pilotprojekt für schnellere, erschwingliche Wohnungsbau.",
+    "meta_keywords": "3D-gedruckte Häuser, BioHome3D, University of Maine, Holzabfall, erschwingliche Wohnungen, nachhaltiges Bauen, Penquis",
+    "link": "https://www.goodgoodgood.co/articles/maine-biohome-3d-printed-housing",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aac15fdc744413f58419284_6aac15fca5f1bfacb0a31b05_maine-biohome-3d-printed-housing-featured.webp",
+    "date": "2026-09-17T16:48:11.891Z",
+    "category": "Tech",
+    "score": 9
+  },
+  {
+    "id": "1789663660786v9l3a8ldh",
+    "title": "Größte elektrische Fähre Hull 096 überquert Ozean",
+    "summary": "Die Hull 096, gebaut von der Werft Incat im tasmanischen Hobart, ist nach einer Überfahrt über den Pazifik in südamerikanischen Gewässern angekommen. Die 130 Meter lange Fähre, ursprünglich 2019 als Dieselschiff vom Verkehrsunternehmen Buquebus bestellt, wurde während der Pandemie zu einem vollständig elektrischen Schiff umgestaltet und ist damit das größte je gebaute elektrische Fahrzeug an Land oder auf dem Wasser....",
+    "image_alt": "Die große elektrische Fähre Hull 096 bei der Ankunft in Südamerika",
+    "meta_description": "Die Hull 096, die weltweit größte elektrische Fähre, kommt nach Ozeanüberfahrt in Südamerika an und wird zwischen Uruguay und Argentinien eingesetzt.",
+    "meta_keywords": "elektrische Fähre, Hull 096, Incat, Buquebus, China Zorrilla, Río de la Plata, batterie-elektrisches Schiff",
+    "link": "https://www.optimistdaily.com/2026/09/the-worlds-largest-battery-electric-ferry-just-crossed-an-ocean/",
+    "source": "OptimistDaily.com",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/HSC_China_Zorrilla_at_Incat_June_2025_2.jpg",
+    "date": "2026-09-17T16:47:42.380Z",
+    "category": "General",
+    "score": 9
+  },
+  {
+    "id": "178966363559407hk5irik",
+    "title": "Harvard-Studenten gewinnen Dyson Award mit Gehirnerschütterungstest",
+    "summary": "Drei Harvard-Studenten – Radhika Saran, Cleo Pontone und Sophia DeVito – haben den James Dyson Award 2026 für die Vereinigten Staaten mit ihrer Erfindung „Rumble Rims\" gewonnen. Dabei handelt es sich um ein erschwingliches Eye-Tracking-Headset, mit dem Schulen junge Sportler schnell auf eine Gehirnerschütterung untersuchen können – in 2 bis 3 Minuten. Das Headset nutzt unsichtbares Infrarotlicht und lässt den...",
+    "image_alt": "Ein Trainer testet das Eye-Tracking-Headset Rumble Rims bei einem jungen Sportler auf dem Sportplatz.",
+    "meta_description": "Harvard-Studenten gewinnen James Dyson Award mit Rumble Rims: ein Headset zur schnellen Erkennung von Gehirnerschütterungen bei jungen Sportlern.",
+    "meta_keywords": "Rumble Rims, Gehirnerschütterung, James Dyson Award, Harvard, Eye-Tracking, Jugendsport, Gehirnerschütterung, Sportsicherheit",
+    "link": "https://www.goodnewsnetwork.org/students-win-james-dyson-award-for-device-that-screens-students-for-concussions-in-just-60-seconds/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Radhika-Saran-Cleo-Pontone-and-Sophia-DeVito-inventors-of-Rumble-Rims-credit-James-Dyson-Award-released-to-the-media.jpg",
+    "date": "2026-09-17T16:47:18.099Z",
+    "category": "Health",
+    "score": 9
+  },
+  {
     "id": "dg-20260916-science",
     "type": "digest",
     "digest_date": "2026-09-16",
@@ -2415,83 +2529,5 @@
     "image": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=800&q=80",
     "date": "2026-09-03T16:27:41.659Z",
     "category": "Science"
-  },
-  {
-    "id": "1788452841617u1nsc1eei",
-    "title": "Pilze produzieren programmierbare Textilien",
-    "summary": "Wissenschaftler nutzen Pilze, um programmierbare 'lebende Textilien' herzustellen. Diese Methode bietet eine nachhaltige Alternative zu herkömmlichen synthetischen Stoffen, die oft hohe Umweltbelastungen verursachen. Ziel ist es, biologisch abbaubare Materialien für die Textilindustrie zu entwickeln.",
-    "image_alt": "Mikroskopische Aufnahme von Pilzfasern, die Textilstrukturen bilden",
-    "meta_description": "Erfahren Sie, wie Pilze zur Herstellung programmierbarer, biologisch abbaubarer Textilien als nachhaltige Alternative zu synthetischen Stoffen genutzt werden.",
-    "meta_keywords": "Pilztextilien, nachhaltige Stoffe, biologisch abbaubare Materialien, Textilinnovation, pilzbasierte Materialien",
-    "link": "https://newatlas.com/materials/fungi-programmable-living-textiles/",
-    "source": "Newatlas.com",
-    "image": "https://assets.newatlas.com/dims4/default/4569e90/2147483647/strip/true/crop/1200x800+0+0/resize/1200x800!/format/webp/quality/90/?url=https%3A%2F%2Fnewatlas-brightspot.s3.ap-southeast-2.amazonaws.com%2F91%2F73%2F4cf6509b45259180c4ef2150920f%2F9ec33d7f-07b7-4229-9104-9391ebc7b4e4-b2255df6.jpeg",
-    "date": "2026-09-03T16:27:22.453Z",
-    "category": "Science"
-  },
-  {
-    "id": "1788452832754uehqlj0iy",
-    "title": "Neuer Edelstahl für Wasserstoff-Elektrolyse",
-    "summary": "Forscher haben eine neue Edelstahlsorte entwickelt, die den extremen Bedingungen der Wasserstoff-Elektrolyse standhält. Dieses Material widersteht Korrosion, die normalerweise nur Titan aushält, aber zu geringeren Kosten. Dies macht die grüne Wasserstoffproduktion effizienter und erschwinglicher.",
-    "image_alt": "Mikroskopische Aufnahme des neuen Edelstahls mit glänzender Oberfläche und bläulicher Reflexion, geeignet für Wasserstoff-Elektrolyse.",
-    "meta_description": "Neuer Edelstahl für Wasserstoff-Elektrolyse bietet eine kostengünstige Alternative zu Titan.",
-    "meta_keywords": "Edelstahl, Wasserstoff-Elektrolyse, grüner Wasserstoff, korrosionsbeständig, Materialinnovation, Energiespeicherung, Nachhaltigkeit",
-    "link": "https://newatlas.com/energy/stainless-steel-hydrogen-electrolysis/",
-    "source": "Newatlas.com",
-    "image": "https://assets.newatlas.com/dims4/default/559c487/2147483647/strip/true/crop/1620x1080+0+0/resize/1440x960!/format/webp/quality/90/?url=https%3A%2F%2Fnewatlas-brightspot.s3.ap-southeast-2.amazonaws.com%2F4d%2F50%2Fa00f64354d14b10b4c223ad6d3ff%2Fultra-stainless-steel.jpeg",
-    "date": "2026-09-03T16:27:13.482Z",
-    "category": "Science"
-  },
-  {
-    "id": "1788452807459criub8xao",
-    "title": "Drogentests retten Leben in Bogotá",
-    "summary": "Ein Lehrer in Bogotá lässt seine Drogen in einer Drug-Checking-Stelle testen, um sicheren Konsum zu gewährleisten. Das Labor stellt fest, dass sein LSD gefälscht ist. Drug Checking schützt Konsumenten, indem es die Zusammensetzung von Drogen analysiert und sicherere Entscheidungen empfiehlt. In Kolumbien setzen Nutzer und Aktivisten so auf Schadensbegrenzung und Drogenlegalisierung.",
-    "image_alt": "Ein Mann übergibt ein kleines Papier mit einer Droge an einen Labormitarbeiter in einem Raum mit Graffiti und einem Wandbild mit der Aufschrift 'Beendet den Krieg gegen Drogen'.",
-    "meta_description": "Drogentests in Bogotá helfen Nutzern, sicherere Entscheidungen zu treffen, indem sie Substanzen analysieren. Schadensbegrenzung und Legalisierung in Kolumbien.",
-    "meta_keywords": "Drogentests, Bogotá, Drug Checking, Schadensbegrenzung, Drogenlegalisierung, Kolumbien, sicherer Drogenkonsum",
-    "link": "https://www.yesmagazine.org/body-politics/2025/05/20/colombia-destigmatize-drug-use",
-    "source": "YesMagazine.org",
-    "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
-    "date": "2026-09-03T16:26:48.190Z",
-    "category": "Health"
-  },
-  {
-    "id": "1788452792627u7l6iigbj",
-    "title": "Trans-Geschichten aus 1939 widerlegen moderne Mythen",
-    "summary": "1939 kehrten die britischen Brüder Mark und David Ferrow nach vier Jahren Transition nach Great Yarmouth zurück. Die trans Teenager erhielten große Unterstützung aus ihrer Gemeinschaft. Sie waren nicht allein: Eine wachsende Gruppe brach mit Geschlechternormen. Transgender gab es schon lange vor modernen Begriffen.",
-    "image_alt": "Die trans Teenager Mark und David Ferrow 1939 mit Familie in Great Yarmouth, umgeben von Unterstützung.",
-    "meta_description": "Entdecken Sie, wie Trans-Geschichten aus 1939 den Mythos der 'ersten Generation' widerlegen. Historische Fakten zur Geschlechtsidentität.",
-    "meta_keywords": "Transgender-Geschichte, trans Teenager 1939, Mark und David Ferrow, Geschlechtsidentität, historische Fakten, LGBTQ+ Vergangenheit",
-    "link": "https://www.yesmagazine.org/body-politics/2025/05/27/before-gender-lost-stories-trans-history-excerpt",
-    "source": "YesMagazine.org",
-    "image": "https://images.unsplash.com/photo-1502444330042-d1a1ddf9bb5b?w=800&q=80",
-    "date": "2026-09-03T16:26:33.364Z",
-    "category": "Lifestyle"
-  },
-  {
-    "id": "17884527811975v9r76stc",
-    "title": "Botschaften der Hoffnung aus dem Globalen Süden",
-    "summary": "Organisatoren, Aktivisten und Gemeinwesenarbeiter aus dem Globalen Süden senden eine Botschaft der Hoffnung an die USA. Sie definieren Hoffnung als stark genug, um systemische Unterdrückung zu bekämpfen und zu beenden. Sie erkennen gemeinsame Ängste und Erfahrungen mit autoritären Regimen, Menschenrechtsverletzungen und Ausbeutung an – oft verursacht durch das Erbe der USA. Dennoch bieten sie Rahmenwerke, Philosophien und Strategien für einen...",
-    "image_alt": "Ein handgeschriebener Brief mit einer Botschaft der Hoffnung und Solidarität, umgeben von Symbolen von Gemeinschaft und Kampf aus dem Globalen Süden.",
-    "meta_description": "Aktivisten aus dem Globalen Süden senden Botschaften der Hoffnung an die USA und bieten Rahmenwerke zur Bekämpfung systemischer Unterdrückung und für Alternativen.",
-    "meta_keywords": "Hoffnung, Globaler Süden, Solidarität, Unterdrückung, Alternativen, Aktivismus, Gemeinschaft, Kampf, USA, Botschaft, stark, Philosophie, Strategien",
-    "link": "https://www.yesmagazine.org/political-power/2025/05/30/ferocious-hope-messages-global-south",
-    "source": "YesMagazine.org",
-    "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXf-lnHTUywcYFcComB6COodv2296J-CujYYLioRszX-a5jeFj6hsy_X19Dq4JjPreB1N-HkfhZDQHe3o9hKD20sTxvMQUSasnLdEZxljD5vw7L-AG16a3czB3X3RjMqgjnAbjl9uQ?key=QbmpzHw7ngBOiPkHOswrpQ",
-    "date": "2026-09-03T16:26:22.115Z",
-    "category": "Lifestyle"
-  },
-  {
-    "id": "178845276942183i4jin2j",
-    "title": "YES! Magazine lebt durch neues Projekt weiter",
-    "summary": "YES! Magazine, ein unabhängiger Verlag für lösungsorientierten Journalismus, stellte Anfang dieses Jahres die reguläre Veröffentlichung ein. Fast 30 Jahre lang bot es eine Plattform für Organisatoren, Visionäre und Schriftsteller, die Geschichten von Menschen teilten, die nach echtem Wandel streben. Truthout übernimmt nun den digitalen Inhalt und startet einen monatlichen Newsletter mit Archivmaterial und neuen lösungsorientierten Berichten zur Unterstützung transformativer Bewegungen.",
-    "image_alt": "Ein geöffnetes Buch mit der Aufschrift YES! Magazine auf dem Cover, umgeben von Symbolen der Hoffnung und Veränderung wie eine Faust, eine Pflanze und ein Globus.",
-    "meta_description": "YES! Magazine endet, aber sein lösungsorientierter Journalismus lebt bei Truthout weiter. Entdecken Sie Archiv- und neue Geschichten, die soziale Bewegungen inspirieren.",
-    "meta_keywords": "YES! Magazine, lösungsorientierter Journalismus, Truthout, digitales Archiv, Newsletter, sozialer Wandel, unabhängige Medien, progressiver Journalismus",
-    "link": "https://www.yesmagazine.org/issues/2025/09/15/a-repository-of-hope-amid-an-authoritarian-moment",
-    "source": "YesMagazine.org",
-    "image": "https://i0.wp.com/www.yesmagazine.org/wp-content/uploads/2025/10/rising-up-with-sonali.jpg?resize=940%2C560&#038;quality=90&#038;ssl=1",
-    "date": "2026-09-03T16:26:10.634Z",
-    "category": "Lifestyle"
   }
 ]
