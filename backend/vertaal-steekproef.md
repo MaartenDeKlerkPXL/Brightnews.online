@@ -324,3 +324,38 @@ blijven onvertaald. Er komen geen geslachtsverwijzingen voor in het
 zichtbare fragment. `meta_description` en `meta_keywords` komen inhoudelijk
 overeen met het Nederlands, met "pleegzorg" correct vertaald naar "acogida"
 zonder dat dit een eigennaam raakt.
+
+### 2026-09-18, Engels
+
+Vandaag is het vrijdag, dus is Engels aan de beurt. Gepakt: het eerste
+artikel uit de groep van vannacht (zie `backend/selectie-prompt-analyse.md`)
+dat zowel in `data/news_nl.json` als in `data/news_en.json` voorkomt.
+
+**Artikel:** Resurgence & Ecologist viert 60-jarig bestaan in Oxford /
+Resurgence & Ecologist celebrates 60 years in Oxford
+**Oordeel:** één bevinding, niet ernstig.
+
+- **Preview valt eerder stil dan in het Nederlands.** Dit is een
+  premium-artikel; het Nederlandse fragment eindigt met het complete woord
+  "benefietdiner..." (465 tekens), het Engelse fragment breekt af na
+  "benefit..." (461 tekens) — vóór "dinner" volgt. Een Engelse lezer ziet in
+  de gratis preview dus net niet het volledige woord dat de Nederlandse
+  lezer wel krijgt. Hetzelfde patroon dat deze steekproef al bij het Frans
+  (2026-09-16) en het Spaans (2026-09-17) vaststelde, nu voor het eerst ook
+  bij het Engels bevestigd — eerder werd dit alleen bij Frans en Spaans
+  vermoed vanwege de woordlengte, maar het treft dus ook het Engels, zij het
+  in mindere mate (hier gaat het om het einde van één woord, niet om een
+  hele zin zoals bij het Frans).
+
+Voor het overige klopt de vertaling: geen toegevoegde of weggelaten feiten
+binnen het zichtbare fragment, eigennamen (Resurgence & Ecologist, Caroline
+Lucas, Hugh Fearnley-Whittingstall, Satish Kumar, Wadham College, University
+of Oxford) blijven allemaal onvertaald staan. Er komen geen
+geslachtsverwijzingen voor in het zichtbare fragment. De titel ("Resurgence
+& Ecologist celebrates 60 years in Oxford") gebruikt correcte Engelse
+zinsstijl, geen titelhoofdlettergebruik. `meta_description` en
+`meta_keywords` komen inhoudelijk overeen met het Nederlands: alleen
+"milieutijdschrift" is vertaald naar "environmental magazine" (een gewoon
+zelfstandig naamwoord, geen eigennaam), de eigennamen blijven ongewijzigd.
+De lopende tekst leest natuurlijk en gebruikt consequent Brits Engels
+("programme" in plaats van "program"), passend bij het Britse onderwerp.

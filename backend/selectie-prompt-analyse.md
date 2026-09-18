@@ -1332,3 +1332,63 @@ probleem met de onderliggende artikelen zelf — het is de moeite waard om na
 te gaan of de pipeline bij OptimistDaily.com op dat moment een scrape- of
 parseerfout had, want de brontitels alleen al klinken bright-waardig genoeg
 om de moeite van een herkansing waard te zijn.
+
+### 2026-09-18, 04:11 Europe/Amsterdam
+
+Beoordeeld: 5 artikelen, gepubliceerd tussen 2026-09-16 19:49 en 2026-09-17
+16:49. De vorige ronde vermeldde als eindpunt "2026-09-16 19:49", maar het
+artikel over Resurgence & Ecologist met precies die tijdstempel (19:49:22)
+kwam daar niet in voor en is dus alsnog in deze ronde meegenomen. Vijf
+dagoverzichten (`type: digest`) zijn overgeslagen. Niet bright-waardig: 1.
+Twijfel: 1.
+
+#### Resurgence & Ecologist viert 60-jarig bestaan in Oxford
+- **Gepubliceerd:** 2026-09-16 19:49 · Environment · Theecologist.org
+- **Waar het over gaat:** Resurgence & Ecologist, het langstlopende Britse
+  milieutijdschrift, viert zijn 60-jarig bestaan met een uitverkocht
+  evenement in Wadham College, Oxford. Sprekers zijn onder meer Caroline
+  Lucas, Hugh Fearnley-Whittingstall en oprichter Satish Kumar; het
+  programma bestaat uit lezingen, discussies, muziek, poëzie en een
+  benefietdiner.
+- **Waarom dit niet goed genoeg is:** Categorie "te-weinig-inhoud" uit de
+  afwijslijst. Het artikel is in de kern een programma-aankondiging van een
+  evenement dat al uitverkocht is — wie er spreekt en wat er op het menu
+  staat, geeft geen verhaal met een kern van hulp, herstel of doorbraak. Er
+  is geen persoon die iets bereikt of overkomt, geen resultaat, geen
+  ontwikkeling: alleen een agenda. Ook op relevantie scoort het mager voor
+  een breed publiek — het is vooral interessant voor de eigen lezerskring
+  van het tijdschrift, niet voor een gewone BrightNews-lezer.
+- **Link:** /articles/nl/resurgence-ecologist-viert-60-jarig-bestaan-in-oxford-1789588160154ngrxcj868.html
+
+#### Twijfelgeval: Grootste elektrische veerboot Hull 096 steekt oceaan over
+- **Gepubliceerd:** 2026-09-17 16:47 · General · OptimistDaily.com
+- **Waar het over gaat:** De Hull 096, gebouwd door scheepswerf Incat in
+  Hobart, is als volledig elektrisch omgebouwde veerboot van 130 meter over
+  de Stille Oceaan naar Zuid-Amerika gevaren — het grootste elektrische
+  voertuig ooit gebouwd, op land of water.
+- **Waarom ik twijfel:** Dit leunt tegen "voertuignieuws" uit de afwijslijst
+  aan, en die is daar expliciet over: een vernuftig of indrukwekkend
+  voertuig is nog geen maatschappelijk verhaal (het ijkvoorbeeld met de
+  Kia-camper). Tegelijk gaat het hier niet om een aankondiging of teaser van
+  iets dat nog moet komen — het schip heeft de oversteek daadwerkelijk
+  gemaakt, en de kern is een concrete stap in het elektrificeren van grote
+  zeevaart, wat aansluit bij de uitzondering "tenzij de kern een
+  maatschappelijke doorbraak is die levens verbetert". Alleen zit er geen
+  mens of gemeenschap in het verhaal die er merkbaar beter van wordt. Ik zou
+  het niet hard afkeuren maar ook niet zonder meer doorlaten; oordeel van
+  Erik gewenst.
+- **Link:** /articles/nl/grootste-elektrische-veerboot-hull-096-steekt-oceaan-over-1789663660786v9l3a8ldh.html
+
+De overige drie artikelen zijn ruim bright-waardig: "Harvard-studenten
+winnen Dyson Award met hersenschuddingtest" (GoodNewsNetwork.org) over drie
+Harvard-studenten die met een betaalbare eye-tracking headset jonge
+sporters in twee tot drie minuten op een hersenschudding kunnen screenen —
+een concrete, levensverbeterende doorbraak zonder productpromotie-framing.
+"3D-geprinte BioHomes van houtafval krijgen negen pilotwoningen in Maine"
+(GoodGoodGood.co) over een samenwerking tussen de University of Maine en de
+non-profit Penquis om negen woningen te 3D-printen uit hars gemaakt van
+houtafval — duurzame, betaalbare huisvesting met duidelijke maatschappelijke
+relevantie. "Schimmels krijgen wereldwijd eigen beschermingsstatus als
+'Funga'" (Theecologist.org) over de inzet van wetenschappers en de Fungi
+Foundation om schimmels naast flora en fauna wettelijk erkend en beschermd
+te krijgen — relevant milieu- en wetenschapsnieuws zonder politieke lading.
