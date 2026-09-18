@@ -1,5 +1,89 @@
 [
   {
+    "id": "dg-20260917-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-09-17",
+    "title": "Silence, nature et un renard amusant : la belle vie de cette semaine",
+    "summary": "Ces jours-ci, la rubrique Lifestyle tourne autour de quelque chose de simple : des gens qui observent à nouveau la nature de près, ou qui deviennent très silencieux pour sentir cette nature. Quatre histoires, quatre façons d'échapper à l'agitation, avec des animaux, le silence et des emplacements de camping en vedette. À Londres, l'expérience artistique immersive Frameless célèbre dix ans de Nikon Comedy Wildlife Photography Awards [1]. À partir du 12 septembre, 91 photos amusantes seront projetées en taille réelle, réparties sur sept environnements naturels, complétés par des sons de vagues et de feuilles qui bruissent. Pendant dix ans, le...",
+    "image_alt": "Silence, nature et un renard amusant : la belle vie de cette semaine",
+    "meta_description": "Des retraites silencieuses aux animaux amusants : les bonnes nouvelles lifestyle du 17 septembre 2026 en un coup d'œil.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.positive.news/wp-content/uploads/2026/09/comedy-main.jpg",
+    "date": "2026-09-18T04:22:53.597Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "17895875188314h0muykwt",
+        "title": "Dix ans de Comedy Wildlife Photography Awards à voir à Londres"
+      },
+      {
+        "id": "1789587495792ia5rvdpa9",
+        "title": "Une bavarde autoproclamée trouve la paix lors d'une retraite silencieuse à Eastbourne"
+      },
+      {
+        "id": "178958685689366bsxvshy",
+        "title": "Choisir son emplacement de camping suit une théorie vieille de siècles"
+      },
+      {
+        "id": "1789585690477bfnmq9za6",
+        "title": "Un martin-pêcheur se pose sur la main d'une femme après son vœu"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260917-environment",
+    "type": "digest",
+    "digest_date": "2026-09-17",
+    "title": "De 51 solutions aux champignons et aux renards : l'actualité environnementale de la semaine",
+    "summary": "Cette semaine montre que le changement positif pour l'environnement se produit à de nombreux niveaux simultanément : des traités mondiaux à un auteur-compositeur qui sauve des renards. Des chercheurs de l'University of Exeter et du Earthshot Prize ont répertorié 51 solutions qui, selon eux, pourraient faire basculer positivement la planète. Certaines, comme les voitures électriques en Norvège et l'énergie solaire, ont déjà atteint ce point de basculement. D'autres, comme l'approvisionnement en cacao et soja sans déforestation, les combustibles de cuisson propres et les zones marines protégées, en sont encore à leurs débuts. Le nouveau Traité sur la haute mer est...",
+    "image_alt": "De 51 solutions aux champignons et aux renards : l'actualité environnementale de la semaine",
+    "meta_description": "De 51 solutions environnementales à la protection des champignons et un auteur-compositeur qui sauve des renards : l'actualité positive de la nature des de",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.positive.news/wp-content/uploads/2026/09/iStock-178586669.jpeg",
+    "date": "2026-09-18T04:22:00.558Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1789705236616wamg3fbav",
+        "title": "51 solutions environnementales peuvent faire basculer la terre"
+      },
+      {
+        "id": "17896637160761haxz39w5",
+        "title": "Les champignons obtiennent un statut de protection mondial en tant que « Funga »"
+      },
+      {
+        "id": "1789588160154ngrxcj868",
+        "title": "Resurgence & Ecologist célèbre ses 60 ans à Oxford"
+      },
+      {
+        "id": "17895875828712qxnyoryw",
+        "title": "Trout Unlimited reçoit le premier permis pour l'assainissement de la Bodie Mine dans l'État de Washington"
+      },
+      {
+        "id": "1789587552474wo3kl3iu6",
+        "title": "Auteur-compositeur de Nashville sauve des renards de la gale"
+      }
+    ]
+  },
+  {
+    "id": "1789705236616wamg3fbav",
+    "title": "51 solutions environnementales peuvent faire basculer la terre",
+    "summary": "Des chercheurs du groupe Green Futures Solutions de l'University of Exeter et du Earthshot Prize ont identifié 51 solutions environnementales clés en main qui, selon eux, pourraient déclencher avec le soutien approprié une vague irréversible de changement positif. Certaines solutions, comme l'essor des voitures électriques en Norvège et la croissance mondiale de l'énergie solaire, ont déjà atteint un point de...",
+    "image_alt": "Illustration de solutions environnementales mondiales telles que l'énergie solaire, la protection des forêts et les cuisinières propres",
+    "meta_description": "Des chercheurs citent 51 solutions environnementales susceptibles de provoquer une réaction en chaîne positive et irréversible pour le climat.",
+    "meta_keywords": "points de basculement positifs, solutions environnementales, déforestation, combustibles de cuisson propres, zones marines protégées, Earthshot Prize, University of Exeter",
+    "link": "https://www.positive.news/society/51-ways-to-get-the-planet-tipping-the-right-way/",
+    "source": "Positive.News",
+    "image": "https://www.positive.news/wp-content/uploads/2026/09/iStock-178586669.jpeg",
+    "date": "2026-09-18T04:20:39.394Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
     "id": "dg-20260916-health",
     "type": "digest",
     "digest_date": "2026-09-16",
@@ -2490,44 +2574,5 @@
     "image": "https://theecologist.org/sites/default/files/styles/facebook/public/2026-09/1505-heligan-junglegiants-images.jpg?h=a4f9e539&amp;itok=3I2-8eny",
     "date": "2026-09-03T16:28:15.621Z",
     "category": "Environment"
-  },
-  {
-    "id": "17884528831383auzcloq3",
-    "title": "Parc national des séquoias en Californie",
-    "summary": "Le parc national Redwood se trouve dans le nord de la Californie et couvre plus de 130 000 acres de terres fédérales et d'État. Créé le 2 octobre 1968, il est géré conjointement avec les parcs d'État de Californie depuis 1994. Le parc préserve une bande côtière unique avec des paysages impressionnants.",
-    "image_alt": "Vue aérienne du parc national Redwood avec des séquoias géants le long de la côte accidentée du nord de la Californie",
-    "meta_description": "Découvrez le parc national Redwood en Californie : plus de 130 000 acres de paysages côtiers protégés avec des séquoias majestueux.",
-    "meta_keywords": "Parc national Redwood, Californie, conservation de la nature, paysage côtier, séquoias, parcs nationaux, parcs d'État, comté de Humboldt, comté de Del Norte",
-    "link": "https://www.pbs.org/wnet/nature/blog/redwood-national-park-fact-sheet/",
-    "source": "PBS.org",
-    "image": "https://www.pbs.org/wnet/nature/files/2026/07/Stout-Grove.jpeg",
-    "date": "2026-09-03T16:28:03.821Z",
-    "category": "Environment"
-  },
-  {
-    "id": "17884528722657nx0ey0yd",
-    "title": "Le télescope spatial Roman part explorer l’univers sombre",
-    "summary": "Le télescope spatial Nancy Grace Roman de la NASA a décollé à bord d’une fusée SpaceX Falcon Heavy depuis le Kennedy Space Center. Il se dirige vers le deuxième point de Lagrange, à un million de kilomètres de la Terre. Équipé d’une caméra infrarouge de 300 mégapixels, Roman cartographiera rapidement de vastes régions de l’univers. Sa mission inclut l’étude de...",
-    "image_alt": "Une fusée SpaceX Falcon Heavy avec le télescope spatial Nancy Grace Roman de la NASA décolle de Launch Complex 39A au Kennedy Space Center.",
-    "meta_description": "Le télescope spatial Roman de la NASA part vers L2 pour étudier l’univers sombre avec une caméra infrarouge.",
-    "meta_keywords": "NASA, télescope spatial Roman, lancement, univers sombre, infrarouge, L2, SpaceX Falcon Heavy, astronomie, exoplanètes",
-    "link": "https://www.openaccessgovernment.org/nasas-nancy-grace-roman-space-telescope-launches-to-unlock-the-dark-universe/213809/",
-    "source": "Openaccessgovernment.org",
-    "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
-    "date": "2026-09-03T16:27:53.737Z",
-    "category": "Science"
-  },
-  {
-    "id": "1788452860558qcxx8limo",
-    "title": "Nombre record de demandes pour les bourses ERC Advanced 2026",
-    "summary": "Le Conseil européen de la recherche (ERC) a reçu 3 458 demandes pour ses bourses Advanced 2026, en hausse de 3,9 % par rapport à l’année dernière. Les sciences physiques et l’ingénierie ont mené avec 1 439 demandes, suivies des sciences de la vie (1 033) et des sciences humaines et sociales (986). Les chercheuses ont déposé 866 demandes, soit...",
-    "image_alt": "Illustration d’une chercheuse soumettant une demande de subvention à l’ERC",
-    "meta_description": "Les bourses ERC Advanced 2026 attirent un nombre record de demandes. 747 millions d’euros disponibles pour des projets innovants.",
-    "meta_keywords": "ERC Advanced Grants 2026, demandes de subvention, Conseil européen de la recherche, financement de la recherche, sciences physiques, ingénierie, sciences de la vie, sciences humaines, chercheuses, soumission de demandes, ERC 2026, financement scientifique, nombre record de demandes",
-    "link": "https://www.openaccessgovernment.org/erc-advanced-grants-2026-attract-3458-research-proposals/213846/",
-    "source": "Openaccessgovernment.org",
-    "image": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=800&q=80",
-    "date": "2026-09-03T16:27:41.659Z",
-    "category": "Science"
   }
 ]

@@ -1,5 +1,77 @@
 [
  {
+  "datum": "2026-09-18T04:20:12.016Z",
+  "bron": "Positive.News",
+  "titel": "51 ways to get the planet tipping the right way",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Onderzoek naar 51 concrete, implementeerbare milieuoplossingen die binnen vijf jaar de planeet kunnen herstellen — hoopvol, positief geformuleerd en maatschappelijk zeer relevant."
+ },
+ {
+  "datum": "2026-09-18T04:20:12.016Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "Team Sequesters Plastic and Makes New Products Before it Breaks Down in Environment",
+  "uitsluiting": "geen",
+  "gevoel": 2,
+  "formulering": 2,
+  "relevantie": 3,
+  "totaal": 7,
+  "besluit": "nee",
+  "reden": "Familie die moeilijk recycleerbare plastics opvangt en in nieuwe producten omzet — positief verhaal over circulaire economie, maar tekst is onvolledig en mist persoonlijke diepgang."
+ },
+ {
+  "datum": "2026-09-18T04:20:12.016Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "First-of-its-kind shipping container housing village opens for homeless seniors",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 4,
+  "totaal": 10,
+  "besluit": "ja",
+  "reden": "Innovatief woonproject voor dakloze senioren met duurzame scheepscontainers — hartverwarmend, positief geformuleerd, maatschappelijk relevant en persoonlijk herkenbaar."
+ },
+ {
+  "datum": "2026-09-18T04:20:12.016Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "A new cat species was just discovered for the first time in 100 years",
+  "uitsluiting": "geen",
+  "gevoel": 2,
+  "formulering": 2,
+  "relevantie": 3,
+  "totaal": 7,
+  "besluit": "nee",
+  "reden": "Ontdekking van nieuwe kattensoort na 100 jaar — wetenschappelijk interessant en hoopvol, maar tekst is onvolledig en mist emotionele diepgang voor brede lezers."
+ },
+ {
+  "datum": "2026-09-18T04:20:12.016Z",
+  "bron": "Sciencenews.org",
+  "titel": "Big space mirrors could bring Earth on-demand light — and upend our night sky",
+  "uitsluiting": "te-weinig-inhoud",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Tekst bevat alleen navigatie en rubrieken zonder werkelijke inhoud over het onderwerp; onmogelijk te beoordelen."
+ },
+ {
+  "datum": "2026-09-18T04:20:12.016Z",
+  "bron": "NPR.org",
+  "titel": "This week in science: T. rex footprints, solar 'superflares,' and benefits of reading",
+  "uitsluiting": "verzameleditie",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Weekoverzicht dat meerdere losse onderwerpen bundelt; BrightNews maakt eigen dagoverzichten, niet andermans samenvattingen."
+ },
+ {
   "datum": "2026-09-17T16:46:18.602Z",
   "bron": "Positive.News",
   "titel": "51 ways to get the planet tipping the right way",
@@ -3387,71 +3459,5 @@
   "totaal": 3,
   "besluit": "nee",
   "reden": "Kern gaat over extractie, kolonialisme en onzekere duurzaamheid; kritische analyse zonder positieve oplossing of hoop."
- },
- {
-  "datum": "2026-09-14T18:01:48.593Z",
-  "bron": "Theecologist.org",
-  "titel": "'Store food for climate shocks'",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 3,
-  "totaal": 3,
-  "besluit": "nee",
-  "reden": "Alarmerende framing rond klimaatcrisis en extreme weersomstandigheden; waarschuwing en voorbereiding op rampen, geen positieve kern."
- },
- {
-  "datum": "2026-09-14T18:01:48.593Z",
-  "bron": "BBC.com/culture",
-  "titel": "The tomb raiders who plundered million-dollar pots",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Tekst is onleesbare navigatiemenubalk; geen daadwerkelijke inhoud beschikbaar om te beoordelen."
- },
- {
-  "datum": "2026-09-14T18:01:48.593Z",
-  "bron": "BBC.com/culture",
-  "titel": "Six Oscar contenders from the Venice Film Festival",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Tekst is onleesbare navigatiemenubalk; geen daadwerkelijke inhoud beschikbaar om te beoordelen."
- },
- {
-  "datum": "2026-09-14T18:01:48.593Z",
-  "bron": "BBC.com/culture",
-  "titel": "The extraordinary story of author Barbara Cartland",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Tekst is onleesbare navigatiemenubalk; geen daadwerkelijke inhoud beschikbaar om te beoordelen."
- },
- {
-  "datum": "2026-09-14T18:01:48.593Z",
-  "bron": "BBC.com/culture",
-  "titel": "Five things about the new Elon Musk documentary",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Tekst is onleesbare navigatiemenubalk; geen daadwerkelijke inhoud beschikbaar om te beoordelen."
- },
- {
-  "datum": "2026-09-14T18:01:48.593Z",
-  "bron": "Ww2.kqed.org/mindshift",
-  "titel": "More Degrees But Not Higher Earnings: Puzzling Data from CUNY’s Famed ASAP program",
-  "gevoel": 1,
-  "formulering": 1,
-  "relevantie": 3,
-  "totaal": 5,
-  "besluit": "nee",
-  "reden": "Maatschappelijk relevant onderwijsverhaal, maar kern is een onopgelost raadsel en teleurstelling; geen positieve oplossing of hoop."
  }
 ]

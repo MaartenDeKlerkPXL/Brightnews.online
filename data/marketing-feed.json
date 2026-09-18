@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-09-17T16:50:21.246Z",
+ "gegenereerd": "2026-09-18T04:22:53.993Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -47,6 +47,20 @@
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260917-lifestyle",
+     "titel": "Stilte, natuur en een grappige vos: het goede leven van deze week",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-17",
+     "url": "https://brightnews.online/articles/nl/stilte-natuur-en-een-grappige-vos-het-goede-leven-van-deze-week-dg-20260917-lifestyle.html"
+    },
+    {
+     "id": "dg-20260917-environment",
+     "titel": "Van 51 oplossingen tot schimmels en vossen: het milieunieuws van deze week",
+     "categorie": "Environment",
+     "dag": "2026-09-17",
+     "url": "https://brightnews.online/articles/nl/van-51-oplossingen-tot-schimmels-en-vossen-het-milieunieuws-van-deze-week-dg-20260917-environment.html"
+    },
     {
      "id": "dg-20260916-health",
      "titel": "Zorgzame zorg: van Afghaanse klinieken tot een test tegen hersenschudding",
@@ -157,6 +171,20 @@
    ],
    "dagoverzichten": [
     {
+     "id": "dg-20260917-lifestyle",
+     "titel": "Silence, nature and a funny fox: the good life this week",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-17",
+     "url": "https://brightnews.online/articles/en/silence-nature-and-a-funny-fox-the-good-life-this-week-dg-20260917-lifestyle.html"
+    },
+    {
+     "id": "dg-20260917-environment",
+     "titel": "From 51 solutions to fungi and foxes: this week's environmental news",
+     "categorie": "Environment",
+     "dag": "2026-09-17",
+     "url": "https://brightnews.online/articles/en/from-51-solutions-to-fungi-and-foxes-this-week-s-environmental-news-dg-20260917-environment.html"
+    },
+    {
      "id": "dg-20260916-health",
      "titel": "Caring care: from Afghan clinics to a concussion test",
      "categorie": "Health",
@@ -265,6 +293,20 @@
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260917-lifestyle",
+     "titel": "Stille, Natur und ein lustiger Fuchs: das gute Leben dieser Woche",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-17",
+     "url": "https://brightnews.online/articles/de/stille-natur-und-ein-lustiger-fuchs-das-gute-leben-dieser-woche-dg-20260917-lifestyle.html"
+    },
+    {
+     "id": "dg-20260917-environment",
+     "titel": "Von 51 Lösungen bis zu Pilzen und Füchsen: die Umweltnachrichten dieser Woche",
+     "categorie": "Environment",
+     "dag": "2026-09-17",
+     "url": "https://brightnews.online/articles/de/von-51-losungen-bis-zu-pilzen-und-fuchsen-die-umweltnachrichten-dieser-woche-dg-20260917-environment.html"
+    },
     {
      "id": "dg-20260916-health",
      "titel": "Sorgende Pflege: Von afghanischen Kliniken bis zu einem Gehirnerschütterungstest",
@@ -375,6 +417,20 @@
    ],
    "dagoverzichten": [
     {
+     "id": "dg-20260917-lifestyle",
+     "titel": "Silence, nature et un renard amusant : la belle vie de cette semaine",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-17",
+     "url": "https://brightnews.online/articles/fr/silence-nature-et-un-renard-amusant-la-belle-vie-de-cette-semaine-dg-20260917-lifestyle.html"
+    },
+    {
+     "id": "dg-20260917-environment",
+     "titel": "De 51 solutions aux champignons et aux renards : l'actualité environnementale de la semaine",
+     "categorie": "Environment",
+     "dag": "2026-09-17",
+     "url": "https://brightnews.online/articles/fr/de-51-solutions-aux-champignons-et-aux-renards-l-actualite-environnementale-de-l-dg-20260917-environment.html"
+    },
+    {
      "id": "dg-20260916-health",
      "titel": "Des soins attentionnés : des cliniques afghanes à un test contre les commotions cérébrales",
      "categorie": "Health",
@@ -483,6 +539,20 @@
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260917-lifestyle",
+     "titel": "Silencio, naturaleza y un zorro divertido: la buena vida de esta semana",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-17",
+     "url": "https://brightnews.online/articles/es/silencio-naturaleza-y-un-zorro-divertido-la-buena-vida-de-esta-semana-dg-20260917-lifestyle.html"
+    },
+    {
+     "id": "dg-20260917-environment",
+     "titel": "De 51 soluciones al cuidado de hongos y un cantautor que rescata zorros: las noticias ambientales de esta semana",
+     "categorie": "Environment",
+     "dag": "2026-09-17",
+     "url": "https://brightnews.online/articles/es/de-51-soluciones-al-cuidado-de-hongos-y-un-cantautor-que-rescata-zorros-las-noti-dg-20260917-environment.html"
+    },
     {
      "id": "dg-20260916-health",
      "titel": "Cuidado atento: de clínicas afganas a una prueba contra conmociones cerebrales",

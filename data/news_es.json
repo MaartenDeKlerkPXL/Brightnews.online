@@ -1,5 +1,89 @@
 [
   {
+    "id": "dg-20260917-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-09-17",
+    "title": "Silencio, naturaleza y un zorro divertido: la buena vida de esta semana",
+    "summary": "Estos días, en la sección Lifestyle todo gira en torno a algo simple: personas que vuelven a observar bien la naturaleza, o que se quedan muy calladas para sentir esa naturaleza. Cuatro historias, cuatro formas de escapar del ajetreo, con animales, silencio y campamentos en el papel principal. En Londres, la experiencia de arte inmersivo Frameless celebra diez años de los Nikon Comedy Wildlife Photography Awards [1]. A partir del 12 de septiembre, 91 fotografías divertidas se proyectarán a tamaño real, distribuidas en siete entornos naturales, completos con sonidos de olas y hojas susurrantes. Durante diez años, el concurso permitió...",
+    "image_alt": "Silencio, naturaleza y un zorro divertido: la buena vida de esta semana",
+    "meta_description": "De retiros silenciosos a animales divertidos: las noticias positivas de lifestyle del 17 de septiembre de 2026 en un resumen.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.positive.news/wp-content/uploads/2026/09/comedy-main.jpg",
+    "date": "2026-09-18T04:22:53.597Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "17895875188314h0muykwt",
+        "title": "Diez años de los Comedy Wildlife Photography Awards en Londres"
+      },
+      {
+        "id": "1789587495792ia5rvdpa9",
+        "title": "Una charlatana confesa encuentra paz en un retiro silencioso en Eastbourne"
+      },
+      {
+        "id": "178958685689366bsxvshy",
+        "title": "Elegir campamento sigue teoría ancestral de prospect-refuge"
+      },
+      {
+        "id": "1789585690477bfnmq9za6",
+        "title": "Un martín pescador se posa en la mano de una mujer tras pedir una señal"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260917-environment",
+    "type": "digest",
+    "digest_date": "2026-09-17",
+    "title": "De 51 soluciones al cuidado de hongos y un cantautor que rescata zorros: las noticias ambientales de esta semana",
+    "summary": "Esta semana demuestra que el cambio positivo para el medio ambiente ocurre en muchos niveles simultáneamente: desde tratados mundiales hasta un cantautor que rescata zorros. Investigadores de la University of Exeter y el Earthshot Prize han identificado 51 soluciones que, según ellos, podrían cambiar positivamente el rumbo de la tierra. Algunas, como los coches eléctricos en Noruega y la energía solar, ya han alcanzado ese punto de inflexión. Otras, como la compra de cacao y soja libres de deforestación, los combustibles de cocina limpios y las áreas marinas protegidas, aún están en sus inicios. El nuevo Tratado sobre la Alta...",
+    "image_alt": "De 51 soluciones al cuidado de hongos y un cantautor que rescata zorros: las noticias ambientales de esta semana",
+    "meta_description": "De 51 soluciones ambientales a la protección de hongos y un cantautor que rescata zorros: las noticias de naturaleza positivas de los últimos días.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.positive.news/wp-content/uploads/2026/09/iStock-178586669.jpeg",
+    "date": "2026-09-18T04:22:00.558Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1789705236616wamg3fbav",
+        "title": "51 soluciones ambientales pueden hacer que la tierra cambie de rumbo"
+      },
+      {
+        "id": "17896637160761haxz39w5",
+        "title": "Los hongos obtienen estatus de protección mundial como «Funga»"
+      },
+      {
+        "id": "1789588160154ngrxcj868",
+        "title": "Resurgence & Ecologist celebra 60 años en Oxford"
+      },
+      {
+        "id": "17895875828712qxnyoryw",
+        "title": "Trout Unlimited obtiene el primer permiso para remediación de la mina Bodie en Washington"
+      },
+      {
+        "id": "1789587552474wo3kl3iu6",
+        "title": "Compositora de Nashville rescata zorros de la sarna"
+      }
+    ]
+  },
+  {
+    "id": "1789705236616wamg3fbav",
+    "title": "51 soluciones ambientales pueden hacer que la tierra cambie de rumbo",
+    "summary": "Investigadores del grupo Green Futures Solutions de la University of Exeter y el Earthshot Prize han identificado 51 soluciones ambientales listas para usar que, según ellos, con el apoyo adecuado, pueden desencadenar una ola irreversible de cambio positivo. Algunas soluciones, como el auge de los vehículos eléctricos en Noruega y el crecimiento mundial de la energía solar, ya han alcanzado...",
+    "image_alt": "Ilustración de soluciones ambientales mundiales como energía solar, protección forestal y cocinas limpias",
+    "meta_description": "Investigadores citan 51 soluciones ambientales que pueden provocar una reacción en cadena positiva e irreversible para el clima.",
+    "meta_keywords": "puntos de inflexión positivos, soluciones ambientales, deforestación, combustibles de cocina limpios, áreas marinas protegidas, Earthshot Prize, University of Exeter",
+    "link": "https://www.positive.news/society/51-ways-to-get-the-planet-tipping-the-right-way/",
+    "source": "Positive.News",
+    "image": "https://www.positive.news/wp-content/uploads/2026/09/iStock-178586669.jpeg",
+    "date": "2026-09-18T04:20:39.394Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
     "id": "dg-20260916-health",
     "type": "digest",
     "digest_date": "2026-09-16",
@@ -2490,44 +2574,5 @@
     "image": "https://theecologist.org/sites/default/files/styles/facebook/public/2026-09/1505-heligan-junglegiants-images.jpg?h=a4f9e539&amp;itok=3I2-8eny",
     "date": "2026-09-03T16:28:15.621Z",
     "category": "Environment"
-  },
-  {
-    "id": "17884528831383auzcloq3",
-    "title": "Parque nacional de secuoyas en California",
-    "summary": "El Parque Nacional Redwood está en el norte de California y abarca más de 130.000 acres de tierras federales y estatales. Creado el 2 de octubre de 1968, se gestiona junto con los parques estatales de California desde 1994. El parque protege una franja costera única con paisajes impresionantes.",
-    "image_alt": "Vista aérea del Parque Nacional Redwood con secuoyas gigantes a lo largo de la costa accidentada del norte de California",
-    "meta_description": "Descubra el Parque Nacional Redwood en California: más de 130.000 acres de paisajes costeros protegidos con secuoyas majestuosas.",
-    "meta_keywords": "Parque Nacional Redwood, California, conservación de la naturaleza, paisaje costero, secuoyas, parques nacionales, parques estatales, condado de Humboldt, condado de Del Norte",
-    "link": "https://www.pbs.org/wnet/nature/blog/redwood-national-park-fact-sheet/",
-    "source": "PBS.org",
-    "image": "https://www.pbs.org/wnet/nature/files/2026/07/Stout-Grove.jpeg",
-    "date": "2026-09-03T16:28:03.821Z",
-    "category": "Environment"
-  },
-  {
-    "id": "17884528722657nx0ey0yd",
-    "title": "Telescopio Roman se lanza para explorar el universo oscuro",
-    "summary": "El telescopio espacial Nancy Grace Roman de la NASA despegó a bordo de un cohete SpaceX Falcon Heavy desde el Centro Espacial Kennedy. Se dirige al segundo punto de Lagrange, a un millón de kilómetros de la Tierra. Equipado con una cámara infrarroja de 300 megapíxeles, Roman mapeará rápidamente grandes regiones del universo. Su misión incluye estudiar la materia oscura,...",
-    "image_alt": "Un cohete SpaceX Falcon Heavy con el telescopio espacial Nancy Grace Roman de la NASA despega desde Launch Complex 39A en el Centro Espacial Kennedy.",
-    "meta_description": "El telescopio espacial Roman de la NASA se lanza hacia L2 para estudiar el universo oscuro con cámara infrarroja.",
-    "meta_keywords": "NASA, telescopio espacial Roman, lanzamiento, universo oscuro, infrarrojo, L2, SpaceX Falcon Heavy, astronomía, exoplanetas",
-    "link": "https://www.openaccessgovernment.org/nasas-nancy-grace-roman-space-telescope-launches-to-unlock-the-dark-universe/213809/",
-    "source": "Openaccessgovernment.org",
-    "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
-    "date": "2026-09-03T16:27:53.737Z",
-    "category": "Science"
-  },
-  {
-    "id": "1788452860558qcxx8limo",
-    "title": "Récord de solicitudes para las becas ERC Advanced 2026",
-    "summary": "El Consejo Europeo de Investigación (ERC) recibió 3.458 solicitudes para sus becas Advanced 2026, un 3,9% más que el año pasado. Las ciencias físicas e ingeniería lideraron con 1.439 solicitudes, seguidas de las ciencias de la vida (1.033) y las ciencias sociales y humanidades (986). Las investigadoras presentaron 866 solicitudes, el 25% del total. El ERC asignó 747 millones de...",
-    "image_alt": "Ilustración de una investigadora presentando una solicitud de subvención al ERC",
-    "meta_description": "Las becas ERC Advanced 2026 atraen un récord de solicitudes. 747 millones de euros disponibles para proyectos innovadores.",
-    "meta_keywords": "ERC Advanced Grants 2026, solicitudes de subvención, Consejo Europeo de Investigación, financiación de la investigación, ciencias físicas, ingeniería, ciencias de la vida, ciencias sociales, investigadoras, presentación de solicitudes, ERC 2026, financiación científica, récord de solicitudes",
-    "link": "https://www.openaccessgovernment.org/erc-advanced-grants-2026-attract-3458-research-proposals/213846/",
-    "source": "Openaccessgovernment.org",
-    "image": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=800&q=80",
-    "date": "2026-09-03T16:27:41.659Z",
-    "category": "Science"
   }
 ]

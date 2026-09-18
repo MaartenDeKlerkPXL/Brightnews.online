@@ -1,5 +1,89 @@
 [
   {
+    "id": "dg-20260917-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-09-17",
+    "title": "Stilte, natuur en een grappige vos: het goede leven van deze week",
+    "summary": "Deze dagen draait het in de rubriek Lifestyle om iets simpels: mensen die de natuur weer even goed bekijken, of juist heel stil worden om die natuur te voelen. Vier verhalen, vier manieren om te ontsnappen aan de drukte, met dieren, stilte en kampeerplekken in de hoofdrol. In Londen viert de immersieve kunstervaring Frameless tien jaar Nikon Comedy Wildlife Photography Awards [1]. Vanaf 12 september worden 91 grappige foto's op ware grootte geprojecteerd, verdeeld over zeven natuurlijke omgevingen, compleet met geluid van golven en ritselende bladeren. Tien jaar lang liet de wedstrijd mensen via humor anders naar dieren kijken, met...",
+    "image_alt": "Stilte, natuur en een grappige vos: het goede leven van deze week",
+    "meta_description": "Van stille retraites tot lachende dieren: het positieve lifestyle-nieuws van 17 september 2026 in één overzicht.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.positive.news/wp-content/uploads/2026/09/comedy-main.jpg",
+    "date": "2026-09-18T04:22:53.597Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "17895875188314h0muykwt",
+        "title": "Tien jaar Comedy Wildlife Photography Awards te zien in Londen"
+      },
+      {
+        "id": "1789587495792ia5rvdpa9",
+        "title": "Zelfverklaarde kletskous vindt rust op stille retraite in Eastbourne"
+      },
+      {
+        "id": "178958685689366bsxvshy",
+        "title": "Kampeerplek kiezen volgt eeuwenoude prospect-refuge-theorie"
+      },
+      {
+        "id": "1789585690477bfnmq9za6",
+        "title": "IJsvogel landt op hand van vrouw na wens om een teken"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260917-environment",
+    "type": "digest",
+    "digest_date": "2026-09-17",
+    "title": "Van 51 oplossingen tot schimmels en vossen: het milieunieuws van deze week",
+    "summary": "Deze week laat zien dat positieve verandering voor het milieu op veel niveaus tegelijk gebeurt: van wereldwijde verdragen tot een songwriter die vossen redt. Onderzoekers van de University of Exeter en het Earthshot Prize brachten 51 oplossingen in kaart die de aarde volgens hen positief kunnen laten kantelen. Sommige, zoals elektrische auto's in Noorwegen en zonne-energie, hebben dat kantelpunt al bereikt. Andere, zoals ontbossingsvrije inkoop van cacao en soja, schone kookbrandstoffen en beschermde zeegebieden, staan nog aan het begin. Ook het nieuwe Verdrag inzake de Volle Zee wordt genoemd als bewijs dat landen samen stappen kunnen zetten [1]. Terwijl grote...",
+    "image_alt": "Van 51 oplossingen tot schimmels en vossen: het milieunieuws van deze week",
+    "meta_description": "Van 51 milieuoplossingen tot schimmelbescherming en een songwriter die vossen redt: het positieve natuurnieuws van de afgelopen dagen op een rij.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.positive.news/wp-content/uploads/2026/09/iStock-178586669.jpeg",
+    "date": "2026-09-18T04:22:00.558Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1789705236616wamg3fbav",
+        "title": "51 milieuoplossingen kunnen aarde positief laten kantelen"
+      },
+      {
+        "id": "17896637160761haxz39w5",
+        "title": "Schimmels krijgen wereldwijd eigen beschermingsstatus als 'Funga'"
+      },
+      {
+        "id": "1789588160154ngrxcj868",
+        "title": "Resurgence & Ecologist viert 60-jarig bestaan in Oxford"
+      },
+      {
+        "id": "17895875828712qxnyoryw",
+        "title": "Trout Unlimited krijgt eerste vergunning voor sanering Bodie Mine in Washington"
+      },
+      {
+        "id": "1789587552474wo3kl3iu6",
+        "title": "Nashville-songwriter redt vossen van schurft"
+      }
+    ]
+  },
+  {
+    "id": "1789705236616wamg3fbav",
+    "title": "51 milieuoplossingen kunnen aarde positief laten kantelen",
+    "summary": "Onderzoekers van de Green Futures Solutions-groep van de University of Exeter en de Earthshot Prize hebben 51 kant-en-klare milieuoplossingen geïdentificeerd die volgens hen, met de juiste steun, een onomkeerbare golf van positieve verandering kunnen inzetten. Sommige oplossingen, zoals de opkomst van elektrische auto's in Noorwegen en de wereldwijde groei van zonne-energie, hebben al een kantelpunt bereikt. Andere staan nog in...",
+    "image_alt": "Illustratie van wereldwijde milieuoplossingen zoals zonne-energie, bosbescherming en schone kookfornuizen",
+    "meta_description": "Onderzoekers noemen 51 milieuoplossingen die een positieve, onomkeerbare kettingreactie kunnen veroorzaken voor het klimaat.",
+    "meta_keywords": "positieve kantelpunten, milieuoplossingen, ontbossing, schone kookbrandstoffen, beschermde zeegebieden, Earthshot Prize, University of Exeter",
+    "link": "https://www.positive.news/society/51-ways-to-get-the-planet-tipping-the-right-way/",
+    "source": "Positive.News",
+    "image": "https://www.positive.news/wp-content/uploads/2026/09/iStock-178586669.jpeg",
+    "date": "2026-09-18T04:20:39.394Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
     "id": "dg-20260916-health",
     "type": "digest",
     "digest_date": "2026-09-16",
@@ -2490,44 +2574,5 @@
     "image": "https://theecologist.org/sites/default/files/styles/facebook/public/2026-09/1505-heligan-junglegiants-images.jpg?h=a4f9e539&amp;itok=3I2-8eny",
     "date": "2026-09-03T16:28:15.621Z",
     "category": "Environment"
-  },
-  {
-    "id": "17884528831383auzcloq3",
-    "title": "Rode bomenpark in Californië",
-    "summary": "Redwood National Park ligt in Noord-Californië en beslaat meer dan 130.000 acres aan federale en staatsgronden. Het park werd opgericht op 2 oktober 1968 en wordt sinds 1994 gezamenlijk beheerd met de staat Californië. Het beschermt een unieke kuststrook met indrukwekkende landschappen.",
-    "image_alt": "Luchtfoto van Redwood National Park met hoge rode bomen langs de ruige kustlijn van Noord-Californië",
-    "meta_description": "Ontdek Redwood National Park in Californië: 130.000+ acres beschermd kustlandschap met majestueuze rode bomen.",
-    "meta_keywords": "Redwood National Park, Californië, natuurbehoud, kustlandschap, rode bomen, nationale parken, staatsparken, Humboldt County, Del Norte County",
-    "link": "https://www.pbs.org/wnet/nature/blog/redwood-national-park-fact-sheet/",
-    "source": "PBS.org",
-    "image": "https://www.pbs.org/wnet/nature/files/2026/07/Stout-Grove.jpeg",
-    "date": "2026-09-03T16:28:03.821Z",
-    "category": "Environment"
-  },
-  {
-    "id": "17884528722657nx0ey0yd",
-    "title": "Ruimtetelescoop Roman lanceert naar donker heelal",
-    "summary": "De Nancy Grace Roman Space Telescope is gelanceerd met een SpaceX Falcon Heavy vanaf Kennedy Space Center. Het observatorium reist naar het tweede Lagrange-punt, één miljoen kilometer van de aarde. De telescoop zal met een 300-megapixel infraroodcamera grote delen van het heelal snel in kaart brengen. Doel is onderzoek naar donkere materie, donkere energie en exoplaneten. NASA ontving zeven minuten...",
-    "image_alt": "De SpaceX Falcon Heavy raket met de Nancy Grace Roman Space Telescope aan boord stijgt op vanaf Launch Complex 39A bij NASA’s Kennedy Space Center.",
-    "meta_description": "NASA’s Roman Space Telescope lanceert naar L2 voor donker heelal-onderzoek met infraroodcamera.",
-    "meta_keywords": "NASA, Roman Space Telescope, ruimtetelescoop, lancering, donker heelal, infrarood, L2, SpaceX Falcon Heavy, astronomie, exoplaneten",
-    "link": "https://www.openaccessgovernment.org/nasas-nancy-grace-roman-space-telescope-launches-to-unlock-the-dark-universe/213809/",
-    "source": "Openaccessgovernment.org",
-    "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
-    "date": "2026-09-03T16:27:53.737Z",
-    "category": "Science"
-  },
-  {
-    "id": "1788452860558qcxx8limo",
-    "title": "Recordaantal ERC-subsidies voor baanbrekend onderzoek",
-    "summary": "De Europese Onderzoeksraad (ERC) ontving 3.458 voorstellen voor Advanced Grants 2026, een stijging van 3,9% ten opzichte van vorig jaar. Fysica en techniek leiden met 1.439 voorstellen, gevolgd door levenswetenschappen (1.033) en sociale wetenschappen (986). Vrouwelijke onderzoekers dienden 866 voorstellen in, 25% van het totaal. Voor 2026 is €747 miljoen beschikbaar voor circa 294 projecten.",
-    "image_alt": "Illustratie van een wetenschapper die een subsidieaanvraag indient bij de ERC",
-    "meta_description": "ERC Advanced Grants 2026 trekken recordaantal onderzoekvoorstellen aan. €747 miljoen beschikbaar voor baanbrekend onderzoek.",
-    "meta_keywords": "ERC Advanced Grants 2026, onderzoeksubsidies, Europese Onderzoeksraad, wetenschappelijk onderzoek, subsidieaanvragen, fysica, techniek, levenswetenschappen, sociale wetenschappen, vrouwelijke onderzoekers, financiering, projecten, subsidiebedrag, ERC 2026, onderzoekvoorstellen, recordaantal, subsidieaanvraag, financiering wetenschap, ERC subsidies, Europese subsidie",
-    "link": "https://www.openaccessgovernment.org/erc-advanced-grants-2026-attract-3458-research-proposals/213846/",
-    "source": "Openaccessgovernment.org",
-    "image": "https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=800&q=80",
-    "date": "2026-09-03T16:27:41.659Z",
-    "category": "Science"
   }
 ]
