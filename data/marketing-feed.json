@@ -1,10 +1,18 @@
 {
- "gegenereerd": "2026-09-18T04:22:53.993Z",
+ "gegenereerd": "2026-09-18T16:19:36.168Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "17897482454609nk17tmq1",
+     "titel": "Senior Bridge: containerwoningen voor dakloze senioren in Phoenix",
+     "teaser": "In maart opende in Phoenix, Arizona het project Senior Bridge: 40 zelfstandige studio's gemaakt van scheepscontainers voor daklozen van 55 jaar en ouder. Senioren vormen een snelgroeiende groep dakloze inwoners en bezetten zo'n 40% van de noodopvangbedden bij Central Arizona Shelter Services. De units van 160 vierkante voet hebben een bed, badkamer, mini-koelkast en magnetron, en draaien overdag op zonnepanelen...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/senior-bridge-containerwoningen-voor-dakloze-senioren-in-phoenix-17897482454609nk17tmq1.html"
+    },
     {
      "id": "178958809918291v7k5ka4",
      "titel": "Afghaanse family health houses redden moeders en baby's",
@@ -30,23 +38,22 @@
      "url": "https://brightnews.online/articles/nl/nieuwe-hartaanval-richtlijnen-corrigeren-onderdiagnose-bij-vrouwen-1789586309732q90vwcvuu.html"
     },
     {
-     "id": "1789533361143slogkd3i2",
-     "titel": "Creatieve Hulp Bij Verdriet Op School",
-     "teaser": "Schoolbegeleiders zetten creatieve methodes zoals speltherapie, boeken en tekenen in om rouwende leerlingen te helpen. Counselor Deb Hill vertelt over een 4-jarige jongen die na een huisbrand pas na zeven speltherapiesessies begon te praten. Ongeveer 8% van de kinderen verliest voor hun volwassenheid een primaire verzorger. Op de conferentie van de American School Counselor's Association deelden Hill en Dr. Anita...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/nl/creatieve-hulp-bij-verdriet-op-school-1789533361143slogkd3i2.html"
-    },
-    {
-     "id": "1789533305880mtme7702f",
-     "titel": "Huurkorting en vriendschap dankzij inwonen bij senior",
-     "teaser": "De 31-jarige Kayla Mazza kon geen betaalbare woning vinden dicht bij haar werk in Vermont. Via de non-profitorganisatie HomeShare Vermont werd ze gekoppeld aan de 77-jarige Honey Donegan, die een kamer over had in haar huis. Mazza betaalt 650 dollar huur per maand en helpt Donegan met koken, boodschappen en ritjes naar de dokter. De twee kijken elke avond samen...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/huurkorting-en-vriendschap-dankzij-inwonen-bij-senior-1789533305880mtme7702f.html"
+     "id": "1789748294620m3jjyiit8",
+     "titel": "Sentinel-3C en FLEX satellieten gelanceerd voor onderzoek naar aarde",
+     "teaser": "Twee Europese satellieten met belangrijke Britse bijdragen zijn succesvol gelanceerd om de gezondheid van de planeet te monitoren en klimaatverandering beter te begrijpen. Sentinel-3C en de FLEX-missie van het Europees Ruimteagentschap vertrokken samen aan boord van een Vega-C-raket vanaf French Guiana op 15 september 2026. Sentinel-3C, onderdeel van het Copernicus-programma, meet zee- en landoppervlaktetemperaturen, oceaan- en landkleur en zeeoppervlaktetopografie, en...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/nl/sentinel-3c-en-flex-satellieten-gelanceerd-voor-onderzoek-naar-aarde-1789748294620m3jjyiit8.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260917-science",
+     "titel": "Satellieten, een chimpansee en oude sporen: de wetenschap van deze week",
+     "categorie": "Science",
+     "dag": "2026-09-17",
+     "url": "https://brightnews.online/articles/nl/satellieten-een-chimpansee-en-oude-sporen-de-wetenschap-van-deze-week-dg-20260917-science.html"
+    },
     {
      "id": "dg-20260917-lifestyle",
      "titel": "Stilte, natuur en een grappige vos: het goede leven van deze week",
@@ -116,18 +123,19 @@
      "categorie": "Science",
      "dag": "2026-09-15",
      "url": "https://brightnews.online/articles/nl/jong-talent-rode-woestijnen-en-slimme-olifanten-het-wetenschapsnieuws-van-deze-d-dg-20260915-science.html"
-    },
-    {
-     "id": "dg-20260915-environment",
-     "titel": "Schildpadden, een park en Europese doelen: drie tekens van vooruitgang",
-     "categorie": "Environment",
-     "dag": "2026-09-15",
-     "url": "https://brightnews.online/articles/nl/schildpadden-een-park-en-europese-doelen-drie-tekens-van-vooruitgang-dg-20260915-environment.html"
     }
    ]
   },
   "en": {
    "top": [
+    {
+     "id": "17897482454609nk17tmq1",
+     "titel": "Senior Bridge: container homes for homeless seniors in Phoenix",
+     "teaser": "In March, the Senior Bridge project opened in Phoenix, Arizona: 40 independent studios made from shipping containers for homeless people aged 55 and older. Seniors represent a fast-growing group of homeless residents, occupying roughly 40% of emergency shelter beds at Central Arizona Shelter Services. The 160-square-foot units feature a bed, bathroom, mini-fridge and microwave, powered by solar panels during the...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/senior-bridge-container-homes-for-homeless-seniors-in-phoenix-17897482454609nk17tmq1.html"
+    },
     {
      "id": "178958809918291v7k5ka4",
      "titel": "Afghan family health houses save mothers and babies",
@@ -153,23 +161,22 @@
      "url": "https://brightnews.online/articles/en/new-heart-attack-guidelines-correct-underdiagnosis-in-women-1789586309732q90vwcvuu.html"
     },
     {
-     "id": "1789533361143slogkd3i2",
-     "titel": "Creative Help With Grief at School",
-     "teaser": "School counselors use creative methods such as play therapy, books and drawing to help grieving students. Counselor Deb Hill tells about a 4-year-old boy who began to talk only after seven play therapy sessions following a house fire. Approximately 8% of children lose a primary caregiver before adulthood. At the American School Counselor's Association conference, Hill and Dr. Anita Pool...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/en/creative-help-with-grief-at-school-1789533361143slogkd3i2.html"
-    },
-    {
-     "id": "1789533305880mtme7702f",
-     "titel": "Rent reduction and friendship by living with a senior",
-     "teaser": "The 31-year-old Kayla Mazza couldn't find affordable housing near her work in Vermont. Through the non-profit organization HomeShare Vermont, she was matched with 77-year-old Honey Donegan, who had a spare room in her house. Mazza pays 650 dollars rent per month and helps Donegan with cooking, groceries and rides to the doctor. The two watch Jeopardy together every evening, walk,...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/rent-reduction-and-friendship-by-living-with-a-senior-1789533305880mtme7702f.html"
+     "id": "1789748294620m3jjyiit8",
+     "titel": "Sentinel-3C and FLEX satellites launched to study Earth",
+     "teaser": "Two European satellites with significant British contributions have been successfully launched to monitor the health of the planet and better understand climate change. Sentinel-3C and the European Space Agency's FLEX mission departed together aboard a Vega-C rocket from French Guiana on 15 September 2026. Sentinel-3C, part of the Copernicus programme, measures sea and land surface temperatures, ocean and land colour...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/en/sentinel-3c-and-flex-satellites-launched-to-study-earth-1789748294620m3jjyiit8.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260917-science",
+     "titel": "Satellites, a chimpanzee and ancient footprints: the science of this week",
+     "categorie": "Science",
+     "dag": "2026-09-17",
+     "url": "https://brightnews.online/articles/en/satellites-a-chimpanzee-and-ancient-footprints-the-science-of-this-week-dg-20260917-science.html"
+    },
     {
      "id": "dg-20260917-lifestyle",
      "titel": "Silence, nature and a funny fox: the good life this week",
@@ -239,18 +246,19 @@
      "categorie": "Science",
      "dag": "2026-09-15",
      "url": "https://brightnews.online/articles/en/young-talent-red-deserts-and-clever-elephants-this-week-s-science-news-dg-20260915-science.html"
-    },
-    {
-     "id": "dg-20260915-environment",
-     "titel": "Turtles, a park and European targets: three signs of progress",
-     "categorie": "Environment",
-     "dag": "2026-09-15",
-     "url": "https://brightnews.online/articles/en/turtles-a-park-and-european-targets-three-signs-of-progress-dg-20260915-environment.html"
     }
    ]
   },
   "de": {
    "top": [
+    {
+     "id": "17897482454609nk17tmq1",
+     "titel": "Senior Bridge: Containerunterkünfte für obdachlose Senioren in Phoenix",
+     "teaser": "Im März eröffnete in Phoenix, Arizona das Projekt Senior Bridge: 40 eigenständige Studios aus Schiffscontainern für Obdachlose ab 55 Jahren. Senioren bilden eine schnell wachsende Gruppe obdachloser Einwohner und belegen etwa 40 % der Notunterkünfte bei Central Arizona Shelter Services. Die 160 Quadratfuß großen Einheiten verfügen über ein Bett, Badezimmer, Mini-Kühlschrank und Mikrowelle und werden tagsüber von Solarpanelen und nachts...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/senior-bridge-containerunterkunfte-fur-obdachlose-senioren-in-phoenix-17897482454609nk17tmq1.html"
+    },
     {
      "id": "178958809918291v7k5ka4",
      "titel": "Afghanische family health houses retten Mütter und Babys",
@@ -276,23 +284,22 @@
      "url": "https://brightnews.online/articles/de/neue-herzinfarkt-richtlinien-korrigieren-unterdiagnose-bei-frauen-1789586309732q90vwcvuu.html"
     },
     {
-     "id": "1789533361143slogkd3i2",
-     "titel": "Kreative Hilfe Bei Trauer In Der Schule",
-     "teaser": "Schulberater setzen kreative Methoden wie Spieltherapie, Bücher und Zeichnen ein, um trauernde Schüler zu unterstützen. Beraterin Deb Hill berichtet von einem 4-jährigen Jungen, der nach einem Hausbrand erst nach sieben Spieltherapiesitzungen zu sprechen begann. Etwa 8% der Kinder verlieren vor dem Erwachsenenalter einen primären Betreuer. Auf der Konferenz der American School Counselor's Association teilten Hill und Dr. Anita Pool von...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/de/kreative-hilfe-bei-trauer-in-der-schule-1789533361143slogkd3i2.html"
-    },
-    {
-     "id": "1789533305880mtme7702f",
-     "titel": "Mietrabschlag und Freundschaft durch Zusammenleben mit Senior",
-     "teaser": "Die 31-jährige Kayla Mazza konnte in der Nähe ihres Arbeitsplatzes in Vermont keine bezahlbare Wohnung finden. Über die gemeinnützige Organisation HomeShare Vermont wurde sie mit der 77-jährigen Honey Donegan gekoppelt, die ein Zimmer in ihrem Haus frei hatte. Mazza zahlt 650 Dollar Miete pro Monat und hilft Donegan beim Kochen, Einkaufen und Fahrten zum Arzt. Die beiden schauen sich jeden...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/mietrabschlag-und-freundschaft-durch-zusammenleben-mit-senior-1789533305880mtme7702f.html"
+     "id": "1789748294620m3jjyiit8",
+     "titel": "Sentinel-3C und FLEX Satelliten für Erdforschung gestartet",
+     "teaser": "Zwei europäische Satelliten mit wichtigen britischen Beiträgen sind erfolgreich gestartet, um die Gesundheit des Planeten zu überwachen und den Klimawandel besser zu verstehen. Sentinel-3C und die FLEX-Mission der Europäischen Weltraumorganisation starteten gemeinsam an Bord einer Vega-C-Rakete vom französischen Guayana am 15. September 2026. Sentinel-3C, Teil des Copernicus-Programms, misst Meeres- und Landoberflächentemperaturen, Ozean- und Landfarben sowie die Topografie der Meeresoberfläche und...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/de/sentinel-3c-und-flex-satelliten-fur-erdforschung-gestartet-1789748294620m3jjyiit8.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260917-science",
+     "titel": "Satelliten, ein Schimpanse und alte Spuren: die Wissenschaft dieser Woche",
+     "categorie": "Science",
+     "dag": "2026-09-17",
+     "url": "https://brightnews.online/articles/de/satelliten-ein-schimpanse-und-alte-spuren-die-wissenschaft-dieser-woche-dg-20260917-science.html"
+    },
     {
      "id": "dg-20260917-lifestyle",
      "titel": "Stille, Natur und ein lustiger Fuchs: das gute Leben dieser Woche",
@@ -362,18 +369,19 @@
      "categorie": "Science",
      "dag": "2026-09-15",
      "url": "https://brightnews.online/articles/de/junges-talent-rote-wusten-und-kluge-elefanten-die-wissenschaftsnachrichten-diese-dg-20260915-science.html"
-    },
-    {
-     "id": "dg-20260915-environment",
-     "titel": "Schildkröten, ein Park und europäische Ziele: drei Zeichen des Fortschritts",
-     "categorie": "Environment",
-     "dag": "2026-09-15",
-     "url": "https://brightnews.online/articles/de/schildkroten-ein-park-und-europaische-ziele-drei-zeichen-des-fortschritts-dg-20260915-environment.html"
     }
    ]
   },
   "fr": {
    "top": [
+    {
+     "id": "17897482454609nk17tmq1",
+     "titel": "Senior Bridge : des logements conteneurs pour les seniors sans abri à Phoenix",
+     "teaser": "En mars a ouvert à Phoenix, en Arizona, le projet Senior Bridge : 40 studios indépendants construits à partir de conteneurs maritimes destinés aux sans-abri de 55 ans et plus. Les seniors constituent un groupe croissant de sans-abri et occupent environ 40 % des lits d'urgence du Central Arizona Shelter Services. Les unités de 160 pieds carrés disposent d'un lit,...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/senior-bridge-des-logements-conteneurs-pour-les-seniors-sans-abri-a-phoenix-17897482454609nk17tmq1.html"
+    },
     {
      "id": "178958809918291v7k5ka4",
      "titel": "Les maisons de santé familiales afghanes sauvent des mères et des bébés",
@@ -399,23 +407,22 @@
      "url": "https://brightnews.online/articles/fr/les-nouvelles-directives-sur-l-infarctus-corrigent-le-sous-diagnostic-chez-les-f-1789586309732q90vwcvuu.html"
     },
     {
-     "id": "1789533361143slogkd3i2",
-     "titel": "Aide Créative Face au Deuil à l'École",
-     "teaser": "Les conseillers scolaires utilisent des méthodes créatives comme la ludothérapie, les livres et le dessin pour aider les élèves en deuil. La conseillère Deb Hill raconte l'histoire d'un garçon de 4 ans qui n'a commencé à parler qu'après sept séances de ludothérapie suite à un incendie domestique. Environ 8 % des enfants perdent un soignant principal avant l'âge adulte. À...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/fr/aide-creative-face-au-deuil-a-l-ecole-1789533361143slogkd3i2.html"
-    },
-    {
-     "id": "1789533305880mtme7702f",
-     "titel": "Réduction de loyer et amitié en cohabitant avec une senior",
-     "teaser": "La trentenaire Kayla Mazza ne trouvait pas de logement abordable près de son travail au Vermont. Via l'organisation à but non lucratif HomeShare Vermont, elle a été mise en relation avec Honey Donegan, 77 ans, qui avait une chambre libre dans sa maison. Mazza paie 650 dollars de loyer par mois et aide Donegan à cuisiner, faire les courses et...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/reduction-de-loyer-et-amitie-en-cohabitant-avec-une-senior-1789533305880mtme7702f.html"
+     "id": "1789748294620m3jjyiit8",
+     "titel": "Les satellites Sentinel-3C et FLEX lancés pour étudier la Terre",
+     "teaser": "Deux satellites européens avec d'importantes contributions britanniques ont été lancés avec succès pour surveiller la santé de la planète et mieux comprendre le changement climatique. Sentinel-3C et la mission FLEX de l'Agence spatiale européenne ont décollé ensemble à bord d'une fusée Vega-C depuis la Guyane française le 15 septembre 2026. Sentinel-3C, qui fait partie du programme Copernicus, mesure les températures...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/fr/les-satellites-sentinel-3c-et-flex-lances-pour-etudier-la-terre-1789748294620m3jjyiit8.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260917-science",
+     "titel": "Satellites, un chimpanzé et des traces anciennes : la science de cette semaine",
+     "categorie": "Science",
+     "dag": "2026-09-17",
+     "url": "https://brightnews.online/articles/fr/satellites-un-chimpanze-et-des-traces-anciennes-la-science-de-cette-semaine-dg-20260917-science.html"
+    },
     {
      "id": "dg-20260917-lifestyle",
      "titel": "Silence, nature et un renard amusant : la belle vie de cette semaine",
@@ -485,18 +492,19 @@
      "categorie": "Science",
      "dag": "2026-09-15",
      "url": "https://brightnews.online/articles/fr/jeunes-talents-deserts-rouges-et-elephants-intelligents-l-actualite-scientifique-dg-20260915-science.html"
-    },
-    {
-     "id": "dg-20260915-environment",
-     "titel": "Des tortues, un parc et des objectifs européens : trois signes de progrès",
-     "categorie": "Environment",
-     "dag": "2026-09-15",
-     "url": "https://brightnews.online/articles/fr/des-tortues-un-parc-et-des-objectifs-europeens-trois-signes-de-progres-dg-20260915-environment.html"
     }
    ]
   },
   "es": {
    "top": [
+    {
+     "id": "17897482454609nk17tmq1",
+     "titel": "Senior Bridge: viviendas contenedor para adultos mayores sin hogar en Phoenix",
+     "teaser": "En marzo abrió en Phoenix, Arizona el proyecto Senior Bridge: 40 estudios independientes construidos con contenedores de envío para personas sin hogar de 55 años o más. Los adultos mayores forman un grupo de población sin hogar de rápido crecimiento y ocupan aproximadamente el 40% de las camas de alojamiento de emergencia en Central Arizona Shelter Services. Las unidades de...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/senior-bridge-viviendas-contenedor-para-adultos-mayores-sin-hogar-en-phoenix-17897482454609nk17tmq1.html"
+    },
     {
      "id": "178958809918291v7k5ka4",
      "titel": "Las casas de salud familiar afganas salvan a madres y bebés",
@@ -522,23 +530,22 @@
      "url": "https://brightnews.online/articles/es/nuevas-directrices-sobre-infarto-corrigen-el-infradiagnostico-en-mujeres-1789586309732q90vwcvuu.html"
     },
     {
-     "id": "1789533361143slogkd3i2",
-     "titel": "Ayuda Creativa Para el Duelo en la Escuela",
-     "teaser": "Los orientadores escolares utilizan métodos creativos como terapia de juego, libros y dibujo para ayudar a estudiantes en duelo. La consejera Deb Hill cuenta sobre un niño de 4 años que comenzó a hablar después de siete sesiones de terapia de juego tras un incendio en su casa. Aproximadamente el 8% de los niños pierde a un cuidador principal antes...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/es/ayuda-creativa-para-el-duelo-en-la-escuela-1789533361143slogkd3i2.html"
-    },
-    {
-     "id": "1789533305880mtme7702f",
-     "titel": "Descuento de alquiler y amistad al vivir con un senior",
-     "teaser": "La Kayla Mazza, de 31 años, no podía encontrar una vivienda asequible cerca de su trabajo en Vermont. A través de la organización sin fines de lucro HomeShare Vermont, fue emparejada con Honey Donegan, de 77 años, quien tenía una habitación disponible en su casa. Mazza paga 650 dólares de alquiler al mes y ayuda a Donegan con la cocina,...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/descuento-de-alquiler-y-amistad-al-vivir-con-un-senior-1789533305880mtme7702f.html"
+     "id": "1789748294620m3jjyiit8",
+     "titel": "Satélites Sentinel-3C y FLEX lanzados para estudiar la tierra",
+     "teaser": "Dos satélites europeos con importantes contribuciones británicas han sido lanzados con éxito para monitorear la salud del planeta y comprender mejor el cambio climático. Sentinel-3C y la misión FLEX de la Agencia Espacial Europea despegaron juntos a bordo de un cohete Vega-C desde la Guayana Francesa el 15 de septiembre de 2026. Sentinel-3C, parte del programa Copernicus, mide las temperaturas...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/es/satelites-sentinel-3c-y-flex-lanzados-para-estudiar-la-tierra-1789748294620m3jjyiit8.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260917-science",
+     "titel": "Satélites, un chimpancé y huellas antiguas: la ciencia de esta semana",
+     "categorie": "Science",
+     "dag": "2026-09-17",
+     "url": "https://brightnews.online/articles/es/satelites-un-chimpance-y-huellas-antiguas-la-ciencia-de-esta-semana-dg-20260917-science.html"
+    },
     {
      "id": "dg-20260917-lifestyle",
      "titel": "Silencio, naturaleza y un zorro divertido: la buena vida de esta semana",
@@ -608,13 +615,6 @@
      "categorie": "Science",
      "dag": "2026-09-15",
      "url": "https://brightnews.online/articles/es/talento-joven-desiertos-rojos-e-inteligentes-elefantes-las-noticias-cientificas--dg-20260915-science.html"
-    },
-    {
-     "id": "dg-20260915-environment",
-     "titel": "Tortugas, un parque y objetivos europeos: tres señales de progreso",
-     "categorie": "Environment",
-     "dag": "2026-09-15",
-     "url": "https://brightnews.online/articles/es/tortugas-un-parque-y-objetivos-europeos-tres-senales-de-progreso-dg-20260915-environment.html"
     }
    ]
   }
