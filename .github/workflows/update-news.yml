@@ -113,3 +113,14 @@ jobs:
             git pull --rebase origin "$GITHUB_REF_NAME"
             git push origin "HEAD:$GITHUB_REF_NAME"
           fi
+
+      # Draait bewust ná het opslaan: een alarm mag nooit het werk van een
+      # geslaagde run weggooien. Faalt deze stap, dan is de data dus wél
+      # gecommit en gepusht — je krijgt alleen een melding van GitHub.
+      #
+      # Aanleiding: 10 t/m 13 september 2026 stond de site drie dagen stil
+      # (Anthropic-tegoed op) terwijl elke run "success" meldde en er dus geen
+      # mail uitging. Zie backend/controleer-run.js voor wat er precies wordt
+      # gecontroleerd.
+      - name: 🚨 Controle: heeft deze run echt iets opgeleverd?
+        run: node backend/controleer-run.js
