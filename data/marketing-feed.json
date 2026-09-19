@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-09-19T04:19:36.343Z",
+ "gegenereerd": "2026-09-19T15:46:16.983Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -88,27 +88,6 @@
      "categorie": "Tech",
      "dag": "2026-09-16",
      "url": "https://brightnews.online/articles/nl/van-gebarentaal-tot-huizen-uit-houtafval-techniek-die-problemen-oplost-dg-20260916-tech.html"
-    },
-    {
-     "id": "dg-20260916-science",
-     "titel": "Kleine ontdekkingen, grote reis: wetenschap van de afgelopen dagen",
-     "categorie": "Science",
-     "dag": "2026-09-16",
-     "url": "https://brightnews.online/articles/nl/kleine-ontdekkingen-grote-reis-wetenschap-van-de-afgelopen-dagen-dg-20260916-science.html"
-    },
-    {
-     "id": "dg-20260916-lifestyle",
-     "titel": "Van beren tot diamanten: het goede nieuws van deze week",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-16",
-     "url": "https://brightnews.online/articles/nl/van-beren-tot-diamanten-het-goede-nieuws-van-deze-week-dg-20260916-lifestyle.html"
-    },
-    {
-     "id": "dg-20260916-environment",
-     "titel": "Terugkeer op alle fronten: dieren, planten en boeren vinden hun plek",
-     "categorie": "Environment",
-     "dag": "2026-09-16",
-     "url": "https://brightnews.online/articles/nl/terugkeer-op-alle-fronten-dieren-planten-en-boeren-vinden-hun-plek-dg-20260916-environment.html"
     }
    ]
   },
@@ -197,27 +176,6 @@
      "categorie": "Tech",
      "dag": "2026-09-16",
      "url": "https://brightnews.online/articles/en/from-sign-language-to-houses-made-from-wood-waste-technology-that-solves-problem-dg-20260916-tech.html"
-    },
-    {
-     "id": "dg-20260916-science",
-     "titel": "Small discoveries, big journey: science from the past few days",
-     "categorie": "Science",
-     "dag": "2026-09-16",
-     "url": "https://brightnews.online/articles/en/small-discoveries-big-journey-science-from-the-past-few-days-dg-20260916-science.html"
-    },
-    {
-     "id": "dg-20260916-lifestyle",
-     "titel": "From bears to diamonds: the good news of this week",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-16",
-     "url": "https://brightnews.online/articles/en/from-bears-to-diamonds-the-good-news-of-this-week-dg-20260916-lifestyle.html"
-    },
-    {
-     "id": "dg-20260916-environment",
-     "titel": "A comeback on all fronts: animals, plants and farmers find their place",
-     "categorie": "Environment",
-     "dag": "2026-09-16",
-     "url": "https://brightnews.online/articles/en/a-comeback-on-all-fronts-animals-plants-and-farmers-find-their-place-dg-20260916-environment.html"
     }
    ]
   },
@@ -306,27 +264,6 @@
      "categorie": "Tech",
      "dag": "2026-09-16",
      "url": "https://brightnews.online/articles/de/von-gebardensprache-bis-zu-hausern-aus-holzabfall-technik-die-probleme-lost-dg-20260916-tech.html"
-    },
-    {
-     "id": "dg-20260916-science",
-     "titel": "Kleine Entdeckungen, große Reise: Wissenschaft der vergangenen Tage",
-     "categorie": "Science",
-     "dag": "2026-09-16",
-     "url": "https://brightnews.online/articles/de/kleine-entdeckungen-gro-e-reise-wissenschaft-der-vergangenen-tage-dg-20260916-science.html"
-    },
-    {
-     "id": "dg-20260916-lifestyle",
-     "titel": "Von Bären bis Diamanten: die guten Nachrichten dieser Woche",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-16",
-     "url": "https://brightnews.online/articles/de/von-baren-bis-diamanten-die-guten-nachrichten-dieser-woche-dg-20260916-lifestyle.html"
-    },
-    {
-     "id": "dg-20260916-environment",
-     "titel": "Rückkehr auf allen Fronten: Tiere, Pflanzen und Bauern finden ihren Platz",
-     "categorie": "Environment",
-     "dag": "2026-09-16",
-     "url": "https://brightnews.online/articles/de/ruckkehr-auf-allen-fronten-tiere-pflanzen-und-bauern-finden-ihren-platz-dg-20260916-environment.html"
     }
    ]
   },
@@ -415,27 +352,6 @@
      "categorie": "Tech",
      "dag": "2026-09-16",
      "url": "https://brightnews.online/articles/fr/du-langage-des-signes-aux-maisons-en-dechets-de-bois-la-technologie-qui-resout-l-dg-20260916-tech.html"
-    },
-    {
-     "id": "dg-20260916-science",
-     "titel": "Petites découvertes, grand voyage : la science de ces derniers jours",
-     "categorie": "Science",
-     "dag": "2026-09-16",
-     "url": "https://brightnews.online/articles/fr/petites-decouvertes-grand-voyage-la-science-de-ces-derniers-jours-dg-20260916-science.html"
-    },
-    {
-     "id": "dg-20260916-lifestyle",
-     "titel": "Des ours aux diamants : les bonnes nouvelles de cette semaine",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-16",
-     "url": "https://brightnews.online/articles/fr/des-ours-aux-diamants-les-bonnes-nouvelles-de-cette-semaine-dg-20260916-lifestyle.html"
-    },
-    {
-     "id": "dg-20260916-environment",
-     "titel": "Un retour sur tous les fronts : les animaux, les plantes et les agriculteurs trouvent leur place",
-     "categorie": "Environment",
-     "dag": "2026-09-16",
-     "url": "https://brightnews.online/articles/fr/un-retour-sur-tous-les-fronts-les-animaux-les-plantes-et-les-agriculteurs-trouve-dg-20260916-environment.html"
     }
    ]
   },
@@ -524,27 +440,6 @@
      "categorie": "Tech",
      "dag": "2026-09-16",
      "url": "https://brightnews.online/articles/es/del-lenguaje-de-signos-a-casas-hechas-de-residuos-de-madera-la-tecnologia-que-re-dg-20260916-tech.html"
-    },
-    {
-     "id": "dg-20260916-science",
-     "titel": "Pequeños descubrimientos, gran viaje: la ciencia de los últimos días",
-     "categorie": "Science",
-     "dag": "2026-09-16",
-     "url": "https://brightnews.online/articles/es/pequenos-descubrimientos-gran-viaje-la-ciencia-de-los-ultimos-dias-dg-20260916-science.html"
-    },
-    {
-     "id": "dg-20260916-lifestyle",
-     "titel": "De osos a diamantes: las buenas noticias de esta semana",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-16",
-     "url": "https://brightnews.online/articles/es/de-osos-a-diamantes-las-buenas-noticias-de-esta-semana-dg-20260916-lifestyle.html"
-    },
-    {
-     "id": "dg-20260916-environment",
-     "titel": "El regreso en todos los frentes: animales, plantas y agricultores encuentran su lugar",
-     "categorie": "Environment",
-     "dag": "2026-09-16",
-     "url": "https://brightnews.online/articles/es/el-regreso-en-todos-los-frentes-animales-plantas-y-agricultores-encuentran-su-lu-dg-20260916-environment.html"
     }
    ]
   }
