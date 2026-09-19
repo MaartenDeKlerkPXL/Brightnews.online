@@ -1,5 +1,98 @@
 [
   {
+    "id": "dg-20260918-environment",
+    "type": "digest",
+    "digest_date": "2026-09-18",
+    "title": "Des rues vertes, des éléphants sauvés et des tissus plus propres : les bonnes nouvelles de la semaine",
+    "summary": "Ces jours-ci montrent que le progrès émerge en des lieux très différents : dans un nouveau quartier, dans la savane, dans une usine et même dans une verger. À chaque fois, il s'agit de personnes qui trouvent des solutions dont la nature bénéficie, sans que la vie des humains en pâtisse. À Toronto, cette idée prend une forme littérale. Le quartier Ookwemin Minising remplace les rues par des parcs et des places, avec Centre Commons comme point central : un parcours sans voitures de 800 mètres avec 400 arbres [1]. Les petites rues restent accessibles à la circulation, mais sont...",
+    "image_alt": "Des rues vertes, des éléphants sauvés et des tissus plus propres : les bonnes nouvelles de la semaine",
+    "meta_description": "Nouveau quartier sans voitures, éléphant sauvé, teinture textile propre et sauvetage génétique pour les orangers : les bonnes nouvelles environnementales d",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aad79c22cbab444028063e1_6aad79c1ea4980ddc604f229_toronto-car-free-neighborhood-canada-ookwemin-minising-featured.webp",
+    "date": "2026-09-19T04:19:36.001Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1789791521381pbrbcl1ls",
+        "title": "Toronto construit le quartier Ookwemin Minising avec la plus longue rue sans voitures du Canada"
+      },
+      {
+        "id": "1789791496249m76kxgprk",
+        "title": "Des rangers sauvent un éléphanteau de 90 kilos d'un abreuvoir"
+      },
+      {
+        "id": "1789791445109brgtr24rs",
+        "title": "EverDye teint les textiles par électricité statique, sans eau"
+      },
+      {
+        "id": "1789748270317253ol1xnl",
+        "title": "L'édition génétique pour sauver les agrumes de Floride du huanglongbing"
+      },
+      {
+        "id": "1789748322371e4xhx0z9a",
+        "title": "The Book of Birds remporte le Wainwright Prize 2026"
+      }
+    ]
+  },
+  {
+    "id": "1789791521381pbrbcl1ls",
+    "title": "Toronto construit le quartier Ookwemin Minising avec la plus longue rue sans voitures du Canada",
+    "summary": "Toronto développe le nouveau quartier Ookwemin Minising, où les rues sont remplacées par des parcs et des places. Centre Commons, un parcours piétonnier de 800 mètres avec 400 arbres, est présenté comme la zone sans voitures la plus longue et la plus ambitieuse du Canada, fonctionnant toute l'année. Les rues secondaires permettent bien la circulation, mais privilégient la verdure et...",
+    "image_alt": "Impression de conception de la rue principale verte et sans voitures Centre Commons dans le nouveau quartier torontois Ookwemin Minising",
+    "meta_description": "Le nouveau quartier torontois Ookwemin Minising accueille la plus longue rue sans voitures du Canada, riche en verdure, arbres et infrastructures climatiques.",
+    "meta_keywords": "Ookwemin Minising, Toronto, Centre Commons, rue sans voitures, urbanisme vert, Growing Streets, infrastructure climatique, développement urbain",
+    "link": "https://www.goodgoodgood.co/articles/toronto-car-free-neighborhood-canada-ookwemin-minising",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aad79c22cbab444028063e1_6aad79c1ea4980ddc604f229_toronto-car-free-neighborhood-canada-ookwemin-minising-featured.webp",
+    "date": "2026-09-19T04:18:43.063Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1789791496249m76kxgprk",
+    "title": "Des rangers sauvent un éléphanteau de 90 kilos d'un abreuvoir",
+    "summary": "La Sheldrick Wildlife Trust, active depuis 1977 en Afrique de l'Est, a secouru en septembre dernier un éléphanteau coincé dans un abreuvoir creusé par l'homme. La mère se tenait à proximité, angoissée, mais ne pouvait pas l'aider. Les rangers se sont approchés au plus près de l'abreuvoir et ont klaxonné en accélérant pour gagner du temps sans éloigner trop la...",
+    "image_alt": "Des rangers de Sheldrick Wildlife Trust aident un éléphanteau à sortir d'un abreuvoir tandis que la mère observe",
+    "meta_description": "Des rangers sauvent un éléphanteau coincé d'un abreuvoir et le réunissent avec sa mère qui l'attend.",
+    "meta_keywords": "Sheldrick Wildlife Trust, éléphanteau, sauvetage d'éléphant, Afrique de l'Est, Orphans Project, conservation de la faune",
+    "link": "https://www.goodgoodgood.co/articles/baby-elephant-rescued-watering-hole-mother",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aad8b4e7b68717ee32cf224_6aad8b4d1bf774aeccc70190_baby-elephant-rescued-watering-hole-mother-featured.webp",
+    "date": "2026-09-19T04:18:17.283Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1789791470039iv33h3zat",
+    "title": "Nouvelle espèce de chat Tilcayo découverte en Bolivie",
+    "summary": "Pour la première fois depuis plus d'un siècle, une nouvelle espèce de chat a été identifiée : Leopardus tilcayo, découverte en Bolivie. L'histoire a commencé en 2016 quand un homme a amené un « weird cat » dans un refuge pour animaux. La biologiste Paola Nogales-Ascarrunz du Bolivian Felids Research Program a reconnu l'animal comme particulier, avec de longues moustaches,...",
+    "image_alt": "Petit chat sauvage aux rosaces sur la fourrure dans la forêt de Yungas en Bolivie",
+    "meta_description": "Nouvelle espèce de chat Leopardus tilcayo découverte en Bolivie, première nouvelle espèce féline depuis 1923.",
+    "meta_keywords": "Tilcayo, Leopardus tilcayo, nouvelle espèce de chat, Bolivie, National Geographic, chat sauvage, Yungas, recherche génétique",
+    "link": "https://www.goodnewsnetwork.org/new-cat-species-identified-for-the-first-time-in-over-100-years-meet-the-tilcayo/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/imrs-e1789720878162.jpg",
+    "date": "2026-09-19T04:17:51.774Z",
+    "category": "Science",
+    "score": 9
+  },
+  {
+    "id": "1789791445109brgtr24rs",
+    "title": "EverDye teint les textiles par électricité statique, sans eau",
+    "summary": "La startup française EverDye a développé une teinture textile non toxique qui adhère aux tissus par électricité statique, au lieu de passer par de l'eau bouillante et des fixateurs chimiques. Les pigments chargés positivement, à base de déchets biologiques et de minéraux, se lient à température ambiante aux textiles prétraités négativement. Cela réduit les coûts énergétiques de 800 % et...",
+    "image_alt": "Rouleaux de textiles teints produits avec la méthode de teinture électrostatique d'EverDye",
+    "meta_description": "EverDye teint les textiles par électricité statique : moins d'eau, d'énergie et de pollution, sans perte de qualité.",
+    "meta_keywords": "EverDye, teinture textile, mode durable, teinture électrostatique, économie d'eau, industrie textile, colorants respectueux de l'environnement",
+    "link": "https://www.goodnewsnetwork.org/companys-textile-dyes-work-through-magnetism-cutting-fashions-water-use-energy-and-pollution/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/credit-EverDye-e1789761780757.jpg",
+    "date": "2026-09-19T04:17:27.855Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
     "id": "dg-20260917-science",
     "type": "digest",
     "digest_date": "2026-09-17",
@@ -2524,75 +2617,5 @@
     "date": "2026-09-05T22:09:01.940Z",
     "category": "Tech",
     "score": 7
-  },
-  {
-    "id": "178864608674649fh0dl49",
-    "title": "Kia tease le grand frère camping de la PV5",
-    "summary": "Kia dévoilera la version de production de la PV7 dans moins de deux semaines lors du salon IAA Transportation à Hanovre. La PV7 est le modèle familial plus grand de la populaire PV5, faisant partie de la famille modulaire de véhicules électriques Platform Beyond Vehicle de Kia. Les photos teaser montrent que la PV7 partage le même style reconnaissable que...",
-    "image_alt": "Photo teaser du nouveau Kia PV7 camping en coloris bleu-noir",
-    "meta_description": "Kia dévoile bientôt la PV7, grand frère du populaire camping-car PV5, lors du salon IAA Transportation à Hanovre.",
-    "meta_keywords": "Kia PV7, Kia PV5, camping-car, fourgon électrique, IAA Transportation, Platform Beyond Vehicle",
-    "link": "https://newatlas.com/campervans/kia-teases-pv7-debut/",
-    "source": "Newatlas.com",
-    "image": "https://assets.newatlas.com/dims4/default/8c7c6cf/2147483647/strip/true/crop/3600x2400+0+0/resize/1440x960!/format/webp/quality/90/?url=https%3A%2F%2Fnewatlas-brightspot.s3.ap-southeast-2.amazonaws.com%2F81%2Fb5%2Ffa6179894f22b46e26693c2d8c45%2F32058-kia-corporate-pv7-teased-ahead-of-world-premiere-at-iaa-transportation-print-3600x2400-3.jpg",
-    "date": "2026-09-05T22:08:08.526Z",
-    "category": "Tech",
-    "score": 9
-  },
-  {
-    "id": "1788646024312fnklovmaz",
-    "title": "Plateforme Flottante Fournit Électricité Et Eau",
-    "summary": "Le bureau d'ingénierie marine InMar Technologies et la société énergétique OptiFuel Systems ont dévoilé, dans le cadre de leur collaboration Optimal Transit, un concept de plateforme flottante appelée Blue Economy VITAL 100 MW Kraaken. Elle combine la production d'énergie offshore, une installation de dessalement et un centre de données IA sur un seul navire déplaçable. Le système pourrait envoyer continuellement...",
-    "image_alt": "Rendu de la plateforme flottante Blue Economy VITAL 100 MW Kraaken en mer",
-    "meta_description": "Plateforme flottante combinant électricité, eau douce et centre de données IA pour 32.000 ménages et 150.000 personnes.",
-    "meta_keywords": "centre de données flottant, énergie offshore, dessalement, centre de données IA, Optimal Transit, Kraaken, énergie durable",
-    "link": "https://newatlas.com/energy/kraaken-ship-data-center-water-electricity/",
-    "source": "Newatlas.com",
-    "image": "https://assets.newatlas.com/dims4/default/0e45238/2147483647/strip/true/crop/1200x675+0+0/resize/1200x675!/format/webp/quality/90/?url=https%3A%2F%2Fnewatlas-brightspot.s3.ap-southeast-2.amazonaws.com%2F88%2Ff4%2F52aef11b4a33a4488f6c5d3e3319%2Fkraaken-night-scene.jpg",
-    "date": "2026-09-05T22:07:05.560Z",
-    "category": "Tech",
-    "score": 7
-  },
-  {
-    "id": "17886459567951q1f5cyvw",
-    "title": "Les Palétuviers, Symbole de Résistance à Porto Rico",
-    "summary": "Les palétuviers, ces forêts côtières tropicales entre l'eau et la terre, sont considérés dans cet essai comme un symbole des mouvements de justice sociale à Porto Rico. L'histoire de l'île est marquée par le colonialisme, le capitalisme néolibéral et la crise climatique. Les palétuviers ne couvrent que 0,1% de la surface terrestre, tout comme la population portoricaine représente 0,1% de...",
-    "image_alt": "Forêt de palétuviers sur la côte de Porto Rico avec des racines dans l'eau",
-    "meta_description": "Les palétuviers comme symbole de résistance et de résilience dans l'histoire de Porto Rico face au colonialisme et à la crise climatique.",
-    "meta_keywords": "palétuviers, Porto Rico, crise climatique, colonialisme, érosion côtière, justice sociale, région caribéenne",
-    "link": "https://www.yesmagazine.org/environmental-justice/2025/05/15/murmurations-puerto-rico-mangroves",
-    "source": "YesMagazine.org",
-    "image": "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80",
-    "date": "2026-09-05T22:05:58.158Z",
-    "category": "Environment",
-    "score": 7
-  },
-  {
-    "id": "1788645872913v6p9gh7ws",
-    "title": "1000 Canards Remplacent les Pesticides dans un Vignoble",
-    "summary": "Le domaine viticole Vergenoegd Löw à Stellenbosch, en Afrique du Sud, utilise depuis 1984 des canards Indian Runner comme alternative naturelle aux pesticides. Les canards mangent les ravageurs entre les ceps de vigne et fertilisent le sol avec leurs excréments. Cette race de canards a été élevée à l'origine il y a plus de 2000 ans en Indonésie pour combattre...",
-    "image_alt": "Des canards se promènent librement entre les ceps de vigne du domaine viticole Vergenoegd Löw",
-    "meta_description": "Un vignoble sud-africain utilise 1000 canards à la place des pesticides pour combattre les parasites et fertiliser naturellement le sol.",
-    "meta_keywords": "canards, pesticides, vignoble, agriculture régénérative, Afrique du Sud, canards Indian Runner, agriculture durable",
-    "link": "https://www.goodgoodgood.co/articles/vineyard-wine-farm-free-roaming-ducks",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a99b453c8731ac2eb4eb449_6a99b451039236cbc607c312_vineyard-wine-farm-free-roaming-ducks-featured-2.webp",
-    "date": "2026-09-05T22:04:34.423Z",
-    "category": "Environment",
-    "score": 10
-  },
-  {
-    "id": "1788645690381vacqodhek",
-    "title": "Bonnes Nouvelles: Boulangers, Soleil Et Un Sauvetage Scolaire",
-    "summary": "Ms. Rachel (Rachel Accurso) a soutenu des entrepreneurs noirs lors du Black Business Month, notamment la boulangère Ashley La Bomme-Benson, dont les commandes ont couvert son loyer de 3.650 $ en 24 heures. Accurso utilise sa plateforme de 11 millions de followers pour exiger la transparence dans l'affaire de Nolan Wells et pour la paix en Palestine. En Inde, l'énergie...",
-    "image_alt": "Collage de bonnes nouvelles : boulangère, panneaux solaires, écoliers et inondation au Népal",
-    "meta_description": "Bonnes nouvelles cette semaine : soutien aux boulangers, énergie propre indienne, sauvetage scolaire au Népal et panneaux solaires de balcon en Californie.",
-    "meta_keywords": "bonnes nouvelles, Ms. Rachel, énergie solaire Inde, inondation Népal, panneaux solaires balcon, IA éducation, Black Business Month",
-    "link": "https://www.goodgoodgood.co/articles/good-news-this-week-september-5-2026",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a9b9d36d2ace79a21c6647c_Good-News-This-Week-Sep-5-2026.jpg",
-    "date": "2026-09-05T22:01:31.876Z",
-    "category": "Environment",
-    "score": 9
   }
 ]

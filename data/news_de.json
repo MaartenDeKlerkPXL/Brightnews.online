@@ -1,5 +1,98 @@
 [
   {
+    "id": "dg-20260918-environment",
+    "type": "digest",
+    "digest_date": "2026-09-18",
+    "title": "Grüne Straßen, gerettete Elefanten und saubere Stoffe: die guten Nachrichten der Woche",
+    "summary": "Diese Tage zeigen, dass Fortschritt an ganz unterschiedlichen Orten entsteht: in einem neuen Stadtteil, in der Savanne, in einer Fabrikhalle und sogar in einem Obstgarten. Immer geht es um Menschen, die sich etwas einfallen lassen, bei dem die Natur besser dasteht, ohne dass das Leben von Menschen darunter leidet. In Toronto nimmt dieser Gedanke buchstäblich Gestalt an. Der Stadtteil Ookwemin Minising ersetzt Straßen durch Parks und Plätze, mit Centre Commons als Mittelpunkt: eine 800 Meter lange autofreie Route mit 400 Bäumen [1]. Die Nebenstraßen bleiben für den Verkehr zugänglich, sind aber vor allem dazu ausgelegt, Regenwasser aufzufangen und Hitze zu...",
+    "image_alt": "Grüne Straßen, gerettete Elefanten und saubere Stoffe: die guten Nachrichten der Woche",
+    "meta_description": "Neue autofreie Wohnzone, geretteter Elefant, saubere Textilfarbe und Genrettung für Orangenbäume: die positiven Umweltnachrichten dieser Tage.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aad79c22cbab444028063e1_6aad79c1ea4980ddc604f229_toronto-car-free-neighborhood-canada-ookwemin-minising-featured.webp",
+    "date": "2026-09-19T04:19:36.001Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1789791521381pbrbcl1ls",
+        "title": "Toronto baut Stadtteil Ookwemin Minising mit Kanadas längster autofreier Straße"
+      },
+      {
+        "id": "1789791496249m76kxgprk",
+        "title": "Ranger retten 90-Kilo-Babyelefanten aus Wassertank"
+      },
+      {
+        "id": "1789791445109brgtr24rs",
+        "title": "EverDye färbt Textilien mit statischer Elektrizität, kein Wasser nötig"
+      },
+      {
+        "id": "1789748270317253ol1xnl",
+        "title": "Gen-Editing soll Floridas Orangenbäume vor Citrus Greening retten"
+      },
+      {
+        "id": "1789748322371e4xhx0z9a",
+        "title": "The Book of Birds gewinnt Wainwright Prize 2026"
+      }
+    ]
+  },
+  {
+    "id": "1789791521381pbrbcl1ls",
+    "title": "Toronto baut Stadtteil Ookwemin Minising mit Kanadas längster autofreier Straße",
+    "summary": "Toronto entwickelt den neuen Stadtteil Ookwemin Minising, in dem Straßen durch Parks und Plätze ersetzt werden. Centre Commons, eine 800 Meter lange Fußgängerzone mit 400 Bäumen, wird als Kanadas längste und ehrgeizigste ganzjährig autofreie Zone gepriesen. Nebenstraßen ermöglichen zwar Verkehr, priorisieren aber Grünflächen und fungieren als Klimainfrastruktur: Sie fangen Regenwasser auf, reduzieren städtische Hitze und unterstützen die Biodiversität. Der Name...",
+    "image_alt": "Entwurfsskizze der grünen, autofreien Hauptstraße Centre Commons im neuen Toronto-Stadtteil Ookwemin Minising",
+    "meta_description": "Torontos neuer Stadtteil Ookwemin Minising erhält Kanadas längste autofreie Straße mit viel Grün, Bäumen und klimafreundlicher Infrastruktur.",
+    "meta_keywords": "Ookwemin Minising, Toronto, Centre Commons, autofreie Straße, grüne Stadtplanung, Growing Streets, Klimainfrastruktur, Stadtentwicklung",
+    "link": "https://www.goodgoodgood.co/articles/toronto-car-free-neighborhood-canada-ookwemin-minising",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aad79c22cbab444028063e1_6aad79c1ea4980ddc604f229_toronto-car-free-neighborhood-canada-ookwemin-minising-featured.webp",
+    "date": "2026-09-19T04:18:43.063Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1789791496249m76kxgprk",
+    "title": "Ranger retten 90-Kilo-Babyelefanten aus Wassertank",
+    "summary": "Der Sheldrick Wildlife Trust, seit 1977 in Ostafrika tätig, rettete im September des vergangenen Jahres einen Babyelefanten, der in einem von Menschen angelegten Wassertank steckte. Die Mutter stand angespannt in der Nähe, konnte aber nicht helfen. Ranger fuhren so nah wie möglich an den Wassertank heran und hupten und gaben Gas, um Zeit zu gewinnen, ohne die Mutter zu weit...",
+    "image_alt": "Ranger des Sheldrick Wildlife Trust helfen einem Babyelefanten aus einem Wassertank, während die Mutter zusieht",
+    "meta_description": "Ranger retten einen steckengebliebenen Babyelefanten aus einem Wassertank und vereinigen ihn mit seiner wartenden Mutter wieder.",
+    "meta_keywords": "Sheldrick Wildlife Trust, Babyelefant, Elefantenrettung, Ostafrika, Orphans Project, Naturschutz",
+    "link": "https://www.goodgoodgood.co/articles/baby-elephant-rescued-watering-hole-mother",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aad8b4e7b68717ee32cf224_6aad8b4d1bf774aeccc70190_baby-elephant-rescued-watering-hole-mother-featured.webp",
+    "date": "2026-09-19T04:18:17.283Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1789791470039iv33h3zat",
+    "title": "Neue Katzenart Tilcayo in Bolivien entdeckt",
+    "summary": "Zum ersten Mal seit mehr als hundert Jahren ist eine neue Katzenart identifiziert worden: Leopardus tilcayo, gefunden in Bolivien. Die Geschichte begann 2016, als ein Mann eine „weird cat\" in ein Tierauffangzentrum brachte. Die Biologin Paola Nogales-Ascarrunz vom Bolivian Felids Research Program erkannte das Tier als besonders, mit langen Schnurrhaaren, kleinen Ohren und großen Rosetten. Zunächst dachte sie an einen...",
+    "image_alt": "Kleine Wildkatze mit Rosetten im Fell im Yungas-Wald in Bolivien",
+    "meta_description": "Neue Katzenart Leopardus tilcayo in Bolivien entdeckt, erste neue Feliden-Art seit 1923.",
+    "meta_keywords": "Tilcayo, Leopardus tilcayo, neue Katzenart, Bolivien, National Geographic, Wildkatze, Yungas, genetische Forschung",
+    "link": "https://www.goodnewsnetwork.org/new-cat-species-identified-for-the-first-time-in-over-100-years-meet-the-tilcayo/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/imrs-e1789720878162.jpg",
+    "date": "2026-09-19T04:17:51.774Z",
+    "category": "Science",
+    "score": 9
+  },
+  {
+    "id": "1789791445109brgtr24rs",
+    "title": "EverDye färbt Textilien mit statischer Elektrizität, kein Wasser nötig",
+    "summary": "Das französische Startup EverDye hat ungiftige Textilfarbe entwickelt, die sich durch statische Elektrizität an Stoffen haftet, statt durch kochendes Wasser und chemische Fixiermittel. Die positiv geladenen, auf Bioabfall und Mineralien basierenden Pigmente binden bei Raumtemperatur an negativ vorbehandelte Textilien. Dies senkt die Energiekosten um 800% und den Wasserverbrauch um 40%, während die Farben genauso lange halten wie traditionelle Farbe. Das...",
+    "image_alt": "Gefärbte Textilrollen, hergestellt mit EverDyes elektrostatischer Färbemethode",
+    "meta_description": "EverDye färbt Textilien durch statische Elektrizität: weniger Wasser, Energie und Verschmutzung, ohne Qualitätsverlust.",
+    "meta_keywords": "EverDye, Textilfarbe, nachhaltige Mode, elektrostatische Farbe, Wassereinsparung, Textilindustrie, umweltfreundliche Farbstoffe",
+    "link": "https://www.goodnewsnetwork.org/companys-textile-dyes-work-through-magnetism-cutting-fashions-water-use-energy-and-pollution/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/credit-EverDye-e1789761780757.jpg",
+    "date": "2026-09-19T04:17:27.855Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
     "id": "dg-20260917-science",
     "type": "digest",
     "digest_date": "2026-09-17",
@@ -2524,75 +2617,5 @@
     "date": "2026-09-05T22:09:01.940Z",
     "category": "Tech",
     "score": 7
-  },
-  {
-    "id": "178864608674649fh0dl49",
-    "title": "Kia deutet größeren Camper-Bruder des PV5 an",
-    "summary": "Kia wird in weniger als zwei Wochen die Serienversion des PV7 auf der IAA Transportation Show in Hannover enthüllen. Der PV7 ist das größere Familienmitglied des beliebten PV5 und Teil von Kias modularer elektrischer Platform Beyond Vehicle-Familie. Teaser-Fotos zeigen, dass der PV7 denselben erkennbaren Stil wie der PV5 teilt: kurze Motorhaube, schmale Leuchten, auffällige Räder und zweifarbiger Lack. Anders als...",
-    "image_alt": "Teaser-Foto des neuen Kia PV7 Campers in blau-schwarzer Farbgebung",
-    "meta_description": "Kia enthüllt bald den PV7, größerer Bruder des beliebten PV5 Campervans, auf der IAA Transportation in Hannover.",
-    "meta_keywords": "Kia PV7, Kia PV5, Camper Van, elektrischer Transporter, IAA Transportation, Platform Beyond Vehicle",
-    "link": "https://newatlas.com/campervans/kia-teases-pv7-debut/",
-    "source": "Newatlas.com",
-    "image": "https://assets.newatlas.com/dims4/default/8c7c6cf/2147483647/strip/true/crop/3600x2400+0+0/resize/1440x960!/format/webp/quality/90/?url=https%3A%2F%2Fnewatlas-brightspot.s3.ap-southeast-2.amazonaws.com%2F81%2Fb5%2Ffa6179894f22b46e26693c2d8c45%2F32058-kia-corporate-pv7-teased-ahead-of-world-premiere-at-iaa-transportation-print-3600x2400-3.jpg",
-    "date": "2026-09-05T22:08:08.526Z",
-    "category": "Tech",
-    "score": 9
-  },
-  {
-    "id": "1788646024312fnklovmaz",
-    "title": "Schwimmendes Plattform Liefert Strom Und Wasser",
-    "summary": "Das Marine-Engineering-Unternehmen InMar Technologies und das Energieunternehmen OptiFuel Systems haben unter ihrer Zusammenarbeit Optimal Transit ein Konzept für eine schwimmende Plattform namens Blue Economy VITAL 100 MW Kraaken enthüllt. Sie kombiniert Offshore-Energieerzeugung, eine Entsalzungsanlage und ein KI-Rechenzentrum auf einem verschiebbaren Schiff. Das System könnte kontinuierlich 40 MW Strom an die Küste liefern, genug für etwa 32.000 Haushalte. Darüber hinaus würde...",
-    "image_alt": "Rendering der schwimmenden Plattform Blue Economy VITAL 100 MW Kraaken auf dem Meer",
-    "meta_description": "Schwimmendes Plattform kombiniert Strom, Süßwasser und KI-Rechenzentrum für 32.000 Haushalte und 150.000 Menschen.",
-    "meta_keywords": "schwimmendes Rechenzentrum, Offshore-Energie, Entsalzung, KI-Rechenzentrum, Optimal Transit, Kraaken, nachhaltige Energie",
-    "link": "https://newatlas.com/energy/kraaken-ship-data-center-water-electricity/",
-    "source": "Newatlas.com",
-    "image": "https://assets.newatlas.com/dims4/default/0e45238/2147483647/strip/true/crop/1200x675+0+0/resize/1200x675!/format/webp/quality/90/?url=https%3A%2F%2Fnewatlas-brightspot.s3.ap-southeast-2.amazonaws.com%2F88%2Ff4%2F52aef11b4a33a4488f6c5d3e3319%2Fkraaken-night-scene.jpg",
-    "date": "2026-09-05T22:07:05.560Z",
-    "category": "Tech",
-    "score": 7
-  },
-  {
-    "id": "17886459567951q1f5cyvw",
-    "title": "Mangroven als Symbol des Widerstands in Puerto Rico",
-    "summary": "Mangroven, jene tropischen Küstenwälder zwischen Wasser und Land, werden in diesem Essay als Symbol für Bewegungen der sozialen Gerechtigkeit in Puerto Rico betrachtet. Die Geschichte der Insel ist geprägt von Kolonialismus, neoliberalem Kapitalismus und der Klimakrise. Mangroven bedecken nur 0,1% der Erdoberfläche, genau wie die puerto-ricanische Bevölkerung 0,1% der Weltbevölkerung ausmacht. Sie absorbieren CO2 und schützen Küsten vor Hurrikanen und...",
-    "image_alt": "Mangrovenwald an der Küste von Puerto Rico mit Wurzeln im Wasser",
-    "meta_description": "Mangroven als Symbol des Widerstands und der Widerstandskraft in Puerto Ricos Geschichte gegen Kolonialismus und Klimakrise.",
-    "meta_keywords": "Mangroven, Puerto Rico, Klimakrise, Kolonialismus, Küstenerosion, soziale Gerechtigkeit, Karibik",
-    "link": "https://www.yesmagazine.org/environmental-justice/2025/05/15/murmurations-puerto-rico-mangroves",
-    "source": "YesMagazine.org",
-    "image": "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&q=80",
-    "date": "2026-09-05T22:05:58.158Z",
-    "category": "Environment",
-    "score": 7
-  },
-  {
-    "id": "1788645872913v6p9gh7ws",
-    "title": "1000 Enten Ersetzen Pestizide Auf Weingut",
-    "summary": "Das Weingut Vergenoegd Löw in Stellenbosch, Südafrika, nutzt seit 1984 Indian Runner-Enten als natürliche Alternative zu Pestiziden. Die Enten fressen Schädlinge zwischen den Weinstöcken und düngen den Boden mit ihren Ausscheidungen. Die Entenrasse wurde ursprünglich vor mehr als 2000 Jahren in Indonesien gezüchtet, um Schädlinge in Reisfeldern zu bekämpfen. Das Weingut hat normalerweise etwa 1000 Enten und züchtet und verkauft...",
-    "image_alt": "Enten laufen frei zwischen den Weinstöcken auf dem Weingut Vergenoegd Löw",
-    "meta_description": "Südafrikanisches Weingut nutzt 1000 Enten statt Pestiziden zur Schädlingsbekämpfung und natürlichen Bodendüngung.",
-    "meta_keywords": "Enten, Pestizide, Weinberg, regenerative Landwirtschaft, Südafrika, Indian Runner Enten, nachhaltige Landwirtschaft",
-    "link": "https://www.goodgoodgood.co/articles/vineyard-wine-farm-free-roaming-ducks",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a99b453c8731ac2eb4eb449_6a99b451039236cbc607c312_vineyard-wine-farm-free-roaming-ducks-featured-2.webp",
-    "date": "2026-09-05T22:04:34.422Z",
-    "category": "Environment",
-    "score": 10
-  },
-  {
-    "id": "1788645690381vacqodhek",
-    "title": "Gute Nachrichten: Bäcker, Sonne Und Eine Schulrettung",
-    "summary": "Ms. Rachel (Rachel Accurso) unterstützte während des Black Business Month schwarze Unternehmer, darunter Bäckerin Ashley La Bomme-Benson, deren Bestellungen innerhalb von 24 Stunden ihre Miete von $3.650 deckten. Accurso nutzt ihre Plattform von 11 Millionen Followern auch für Transparenz im Fall Nolan Wells und für Frieden in Palästina. In Indien übersteigt saubere Energie erstmals fossile Brennstoffe bei der installierten Leistung:...",
-    "image_alt": "Collage guter Nachrichten: Bäcker, Solarpanels, Schulkinder und Überschwemmung in Nepal",
-    "meta_description": "Gute Nachrichten diese Woche: Bäckerunterstützung, indische saubere Energie, Schulrettung in Nepal und Balkonsolarpanels in Kalifornien.",
-    "meta_keywords": "gute Nachrichten, Ms. Rachel, Solarenergie Indien, Überschwemmung Nepal, Balkonsolarpanels, KI Bildung, Black Business Month",
-    "link": "https://www.goodgoodgood.co/articles/good-news-this-week-september-5-2026",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a9b9d36d2ace79a21c6647c_Good-News-This-Week-Sep-5-2026.jpg",
-    "date": "2026-09-05T22:01:31.876Z",
-    "category": "Environment",
-    "score": 9
   }
 ]

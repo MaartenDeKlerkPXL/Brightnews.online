@@ -1,6 +1,48 @@
 {
  "dagen": [
   {
+   "dag": "2026-09-19",
+   "prompthash": "2e112ef95092",
+   "onderwerp": {
+    "soort": "dagoverzicht",
+    "titel": "Groene straten, geredde olifanten en schonere stoffen: het goede nieuws van de week",
+    "url": "https://brightnews.online/articles/nl/groene-straten-geredde-olifanten-en-schonere-stoffen-het-goede-nieuws-van-de-wee-dg-20260918-environment.html"
+   },
+   "tokens": 5343,
+   "perTaal": {
+    "nl": {
+     "instagram": "Deze week: straten die groener worden, olifanten die gered zijn en stoffen die schoner de wereld in gaan 🌿🐘. Drie verschillende verhalen, één zelfde gevoel. Link in bio.\n#goednieuws #natuur #olifanten #duurzaamheid #weekoverzicht",
+     "facebook": "Wat hebben groene straten, geredde olifanten en schonere stoffen met elkaar gemeen? Deze week laten ze alle drie zien dat kleine keuzes ergens beginnen en ergens toe leiden 🌍. Benieuwd naar de verhalen erachter? Lees ze op https://brightnews.online/articles/nl/groene-straten-geredde-olifanten-en-schonere-stoffen-het-goede-nieuws-van-de-wee-dg-20260918-environment.html?utm_source=facebook&utm_medium=social&utm_campaign=dag-2026-09-19.",
+     "linkedin": "Drie op het oog losse verhalen uit deze week: vergroening van straten, de redding van olifanten en vooruitgang in schonere stoffenproductie. Ze laten zien dat verandering vaak op meerdere fronten tegelijk plaatsvindt, van stedelijke planning tot dierenwelzijn tot industrie. Welk van deze ontwikkelingen verrast jou het meest? Lees het volledige overzicht op https://brightnews.online/articles/nl/groene-straten-geredde-olifanten-en-schonere-stoffen-het-goede-nieuws-van-de-wee-dg-20260918-environment.html?utm_source=linkedin&utm_medium=social&utm_campaign=dag-2026-09-19. #duurzaamheid #vooruitgang",
+     "x": "Groene straten, geredde olifanten en schonere stoffen 🐘 Het goede nieuws van de week op één plek. https://brightnews.online/articles/nl/groene-straten-geredde-olifanten-en-schonere-stoffen-het-goede-nieuws-van-de-wee-dg-20260918-environment.html?utm_source=x&utm_medium=social&utm_campaign=dag-2026-09-19"
+    },
+    "en": {
+     "instagram": "This week: streets turning greener, elephants being rescued and fabrics entering the world cleaner 🌿🐘. Three different stories, one same feeling. Link in bio.\n#goodnews #nature #elephants #sustainability #weeklyoverview",
+     "facebook": "What do green streets, rescued elephants and cleaner fabrics have in common? This week they all show that small choices start somewhere and lead somewhere 🌍. Curious about the stories behind them? Read them on https://brightnews.online/articles/en/green-streets-rescued-elephants-and-cleaner-fabrics-the-week-s-good-news-dg-20260918-environment.html?utm_source=facebook&utm_medium=social&utm_campaign=dag-2026-09-19.",
+     "linkedin": "Three seemingly separate stories from this week: greening of streets, the rescue of elephants and progress in cleaner fabric production. They show that change often happens on multiple fronts at once, from urban planning to animal welfare to industry. Which of these developments surprises you the most? Read the full overview on https://brightnews.online/articles/en/green-streets-rescued-elephants-and-cleaner-fabrics-the-week-s-good-news-dg-20260918-environment.html?utm_source=linkedin&utm_medium=social&utm_campaign=dag-2026-09-19. #sustainability #progress",
+     "x": "Green streets, rescued elephants and cleaner fabrics 🐘 The good news of the week in one place. https://brightnews.online/articles/en/green-streets-rescued-elephants-and-cleaner-fabrics-the-week-s-good-news-dg-20260918-environment.html?utm_source=x&utm_medium=social&utm_campaign=dag-2026-09-19"
+    },
+    "de": {
+     "instagram": "Diese Woche: Straßen, die grüner werden, Elefanten, die gerettet wurden, und Stoffe, die sauberer in die Welt gehen 🌿🐘. Drei verschiedene Geschichten, ein und dasselbe Gefühl. Link in Bio.\n#gutesnachrichten #natur #elefanten #nachhaltigkeit #wochenübersicht",
+     "facebook": "Was haben grüne Straßen, gerettete Elefanten und saubere Stoffe gemeinsam? Diese Woche zeigen sie alle drei, dass kleine Entscheidungen irgendwo beginnen und irgendwo hinführen 🌍. Neugierig auf die Geschichten dahinter? Lies sie auf https://brightnews.online/articles/de/grune-stra-en-gerettete-elefanten-und-saubere-stoffe-die-guten-nachrichten-der-w-dg-20260918-environment.html?utm_source=facebook&utm_medium=social&utm_campaign=dag-2026-09-19.",
+     "linkedin": "Drei auf den ersten Blick unabhängige Geschichten aus dieser Woche: Begrünung von Straßen, die Rettung von Elefanten und Fortschritte in der saubereren Stoffproduktion. Sie zeigen, dass Veränderung oft auf mehreren Fronten gleichzeitig stattfindet, von der Stadtplanung über den Tierschutz bis zur Industrie. Welche dieser Entwicklungen überrascht dich am meisten? Lies die vollständige Übersicht auf https://brightnews.online/articles/de/grune-stra-en-gerettete-elefanten-und-saubere-stoffe-die-guten-nachrichten-der-w-dg-20260918-environment.html?utm_source=linkedin&utm_medium=social&utm_campaign=dag-2026-09-19. #nachhaltigkeit #fortschritt",
+     "x": "Grüne Straßen, gerettete Elefanten und saubere Stoffe 🐘 Die guten Nachrichten der Woche an einem Ort. https://brightnews.online/articles/de/grune-stra-en-gerettete-elefanten-und-saubere-stoffe-die-guten-nachrichten-der-w-dg-20260918-environment.html?utm_source=x&utm_medium=social&utm_campaign=dag-2026-09-19"
+    },
+    "fr": {
+     "instagram": "Cette semaine : des rues qui deviennent plus vertes, des éléphants qui ont été sauvés et des tissus qui entrent dans le monde plus propres 🌿🐘. Trois histoires différentes, un même sentiment. Lien en bio.\n#bonnesnouvelles #nature #éléphants #durabilité #récapitulatifdelasemaine",
+     "facebook": "Qu'ont en commun les rues vertes, les éléphants sauvés et les tissus plus propres ? Cette semaine, ils montrent tous les trois que les petits choix commencent quelque part et mènent quelque part 🌍. Curieux de connaître les histoires derrière ? Lisez-les sur https://brightnews.online/articles/fr/des-rues-vertes-des-elephants-sauves-et-des-tissus-plus-propres-les-bonnes-nouve-dg-20260918-environment.html?utm_source=facebook&utm_medium=social&utm_campaign=dag-2026-09-19.",
+     "linkedin": "Trois histoires apparemment distinctes de cette semaine : le verdissement des rues, le sauvetage des éléphants et les progrès dans la production de tissus plus propres. Elles montrent que le changement se produit souvent sur plusieurs fronts à la fois, de la planification urbaine au bien-être animal à l'industrie. Quel développement te surprend le plus ? Lisez le récapitulatif complet sur https://brightnews.online/articles/fr/des-rues-vertes-des-elephants-sauves-et-des-tissus-plus-propres-les-bonnes-nouve-dg-20260918-environment.html?utm_source=linkedin&utm_medium=social&utm_campaign=dag-2026-09-19. #durabilité #progrès",
+     "x": "Rues vertes, éléphants sauvés et tissus plus propres 🐘 Les bonnes nouvelles de la semaine en un seul endroit. https://brightnews.online/articles/fr/des-rues-vertes-des-elephants-sauves-et-des-tissus-plus-propres-les-bonnes-nouve-dg-20260918-environment.html?utm_source=x&utm_medium=social&utm_campaign=dag-2026-09-19"
+    },
+    "es": {
+     "instagram": "Esta semana: calles que se vuelven más verdes, elefantes que han sido rescatados y telas que llegan al mundo más limpias 🌿🐘. Tres historias diferentes, un mismo sentimiento. Enlace en bio.\n#buenasnoticias #naturaleza #elefantes #sostenibilidad #resumendelasemana",
+     "facebook": "¿Qué tienen en común las calles verdes, los elefantes rescatados y las telas más limpias? Esta semana demuestran que las pequeñas decisiones comienzan en algún lugar y llevan a algún resultado 🌍. ¿Tienes curiosidad por las historias detrás? Léelas en https://brightnews.online/articles/es/calles-verdes-elefantes-salvados-y-telas-mas-limpias-las-buenas-noticias-de-la-s-dg-20260918-environment.html?utm_source=facebook&utm_medium=social&utm_campaign=dag-2026-09-19.",
+     "linkedin": "Tres historias aparentemente sueltas de esta semana: el verdecimiento de las calles, el rescate de elefantes y el progreso en la producción de telas más limpias. Demuestran que el cambio a menudo ocurre en múltiples frentes simultáneamente, desde la planificación urbana hasta el bienestar animal hasta la industria. ¿Cuál de estos desarrollos te sorprende más? Lee el resumen completo en https://brightnews.online/articles/es/calles-verdes-elefantes-salvados-y-telas-mas-limpias-las-buenas-noticias-de-la-s-dg-20260918-environment.html?utm_source=linkedin&utm_medium=social&utm_campaign=dag-2026-09-19. #sostenibilidad #progreso",
+     "x": "Calles verdes, elefantes rescatados y telas más limpias 🐘 Las buenas noticias de la semana en un solo lugar. https://brightnews.online/articles/es/calles-verdes-elefantes-salvados-y-telas-mas-limpias-las-buenas-noticias-de-la-s-dg-20260918-environment.html?utm_source=x&utm_medium=social&utm_campaign=dag-2026-09-19"
+    }
+   }
+  },
+  {
    "dag": "2026-09-18",
    "prompthash": "2e112ef95092",
    "onderwerp": {
@@ -253,6 +295,6 @@
    }
   }
  ],
- "gegenereerd": "2026-09-18T04:23:21.995Z",
+ "gegenereerd": "2026-09-19T04:20:00.005Z",
  "toelichting": "Conceptposts voor de cockpit (marketing.html). DRAFT-FIRST: plaatsen doet een mens."
 }
