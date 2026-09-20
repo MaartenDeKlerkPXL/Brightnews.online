@@ -206,9 +206,40 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   hij uitgesloten, geef dat dan door — dan kijk ik verder.
 
 - [ ] **24. Marketing-cockpit gebruiken** op `brightnews.online/marketing.html`
-  (inloggen met je account). Daar staan dagelijks conceptposts in 5 talen
-  klaar. Goedkeuren of afwijzen mét reden — de fabriek leert van je
-  afwijzingen, maar alleen als je hem voedt.
+  (inloggen met je account). Goedkeuren of afwijzen mét reden — de fabriek
+  leert van je afwijzingen, maar alleen als je hem voedt. Let op: goedkeuren
+  plaatst niets. De cockpit is draft-first, plaatsen doet altijd een mens.
+
+  **Voorwerk gedaan op 2026-09-20.** Ik heb alle **160 conceptposts**
+  doorgelopen (8 dagen × 5 talen × 4 kanalen). Technisch is er niets mis: geen
+  lege posts, niets over de tekenlimiet van zijn kanaal, Instagram bevat nooit
+  een kale URL en heeft gemiddeld 4,8 hashtags. X komt uit op 126 tekens
+  gemiddeld. Van de 110 posts met een link wijzen er 4 naar het Nederlandse
+  artikel terwijl de post in een andere taal staat — alle vier van 2026-09-09,
+  dus dat is sindsdien opgelost.
+
+  Wat er wél mis is, zit in de taal, en het is steeds dezelfde hand:
+
+  | Wat | Waar | Hoe vaak |
+  |---|---|---|
+  | `#gutesnachrichten` — fout Duits, moet `#gutenachrichten` | Duits, Instagram | 4 van de 8 dagen |
+  | `zorrillo` betekent **stinkdier** in Latijns-Amerika, niet "vosje" | Spaans, 2026-09-20 | alle 4 kanalen |
+  | `#bienêtredesdanimaux` — tikfout, dubbele d | Frans, 2026-09-20 | 2 posts |
+  | `Link en bio` moet `Link en la bio` | Spaans | 2 posts |
+  | accenten in hashtags splitsen het bereik | fr, de, es | ~10 hashtags |
+
+  **Wat Maarten in de cockpit doet:** de Spaanse dag van 20 september afwijzen
+  met reden "zorrillo betekent stinkdier, gebruik zorro pequeño", en de Duitse
+  Instagram-posts met "#gutesnachrichten is geen Duits, moet #gutenachrichten".
+  De rest kan goedgekeurd.
+
+  **Wat dit structureel is:** de posts worden in het Nederlands geschreven en
+  daarna vertaald, met dezelfde instructie-familie als de artikelen. Deze twee
+  fouten staan al in `backend/vertaal-steekproef.md` als bevinding 2
+  (Nederlands woord letterlijk vertaald) — ik heb er een aanvulling onder gezet
+  met deze cijfers en drie voorstellen. Een grammaticaal foute hashtag hoort
+  niet elke dag opnieuw afgewezen te hoeven worden; dat los je op in de
+  vertaalprompt. *(Maarten voedt de cockpit, Erik pakt de vertaalprompt)*
 
 - [x] **25. Deel-previews.** ✅ 2026-09-20 — getest in WhatsApp én LinkedIn,
   met vier artikelen die ik vooraf had doorgemeten. Van alle 581 artikelen is

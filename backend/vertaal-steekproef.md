@@ -141,6 +141,72 @@ voordat er conclusies aan worden verbonden die geld of tijd kosten.
 
 ---
 
+# Aanvulling 2026-09-20 — dezelfde fouten in de socialmediaposts
+
+De steekproef hierboven ging over artikelen. Bij het doorlopen van de
+marketing-cockpit (`marketing.html`, 160 conceptposts: 8 dagen × 5 talen × 4
+kanalen) bleken **dezelfde patronen** terug te komen in de posts. Dat is
+logisch: `backend/generate-posts.js` schrijft de post in het Nederlands en
+vertaalt hem daarna per taal, met dezelfde instructie-familie.
+
+Technisch is er niets mis — geen lege posts, niets over de tekenlimiet van
+zijn kanaal, Instagram bevat nooit een kale URL en heeft gemiddeld 4,8
+hashtags. Het zit in de taal.
+
+## 1. Hashtags worden letterlijk meevertaald
+
+De prompt zegt: *"hashtags meevertalen waar dat natuurlijk is"*. In de
+praktijk wordt de Nederlandse samenstelling woord voor woord omgezet, en dan
+ontstaat er iets wat een moedertaalspreker niet schrijft:
+
+| Taal | Nu | Moet zijn | Hoe vaak |
+|---|---|---|---|
+| Duits | `#gutesnachrichten` | `#gutenachrichten` | 4 van de 8 dagen |
+| Frans | `#bienêtredesdanimaux` | `#bienêtredesanimaux` | 2 posts |
+
+Het Duitse geval is grammaticaal fout: *Nachrichten* is meervoud, dus
+*gute Nachrichten*, nooit *gutes*. Het Franse geval is een tikfout met een
+dubbele `d` die ook in de LinkedIn-versie van diezelfde dag staat.
+
+Een hashtag is bovendien geen zin maar een vindterm. `#gutenachrichten` is de
+Duitse term die mensen werkelijk volgen; een letterlijke vertaling van het
+Nederlands levert een hashtag op die niemand gebruikt en die dus ook niemand
+vindt. **Voorstel:** hashtags niet vertalen maar per taal vastleggen — een
+korte vaste lijst per taal in de prompt, met de terugvaloptie dat het model
+er geen verzint als hij het niet zeker weet.
+
+## 2. Verkleinwoorden gaan mis in het Spaans
+
+"Een vosje" werd `un zorrillo`. In Latijns-Amerika is een *zorrillo* een
+**stinkdier**, niet een klein vosje. Dat staat op 2026-09-20 in alle vier de
+Spaanse kanalen, dus de hele dag is onbruikbaar.
+
+Dit is dezelfde fout als bevinding 2 hierboven (Nederlands woord letterlijk
+vertaald): het Nederlandse verkleinwoord `-je` wordt automatisch de Spaanse
+uitgang `-illo`, en dat gaat bij dieren geregeld mis. **Voorstel:** in de
+vertaalprompt opnemen dat een verkleinwoord beschrijvend vertaald wordt
+(*un zorro pequeño*, *una cría de zorro*) in plaats van met een uitgang.
+
+## 3. Accenten in hashtags
+
+`#rétablissement`, `#durabilité`, `#progrès`, `#recuperación`,
+`#wochenübersicht`. Deze wérken op Instagram, maar splitsen het bereik: een
+deel van de gebruikers typt de term zonder accent. Gangbare praktijk is
+hashtags zonder accenten. **Voorstel:** accenten uit hashtags halen, in de
+lopende tekst uiteraard gewoon houden.
+
+## 4. Eén kanaalconventie klopt niet in het Spaans
+
+`Link en bio` moet `Link en la bio` zijn (of `Enlace en la bio`). Twee posts.
+
+## Wat hiervan het belangrijkste is
+
+Fout 1 en 2 zijn hetzelfde probleem als in de artikelsteekproef en vragen dus
+om dezelfde oplossing, op één plek: de vertaalinstructie. Wordt die
+aangescherpt, dan verbeteren artikelen én posts tegelijk. Afwijzen in de
+cockpit helpt wel — de fabriek leert van afwijzingen — maar een hashtag die
+grammaticaal fout is hoort niet per dag opnieuw afgewezen te hoeven worden.
+
 # Nachtelijke steekproeven
 
 Vanaf 2026-09-11 kijkt de nachtelijke controle elke nacht één vertaald artikel
