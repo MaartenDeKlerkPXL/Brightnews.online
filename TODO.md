@@ -177,6 +177,41 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   rustige dagen blijft hij stil. Getest op zes scenario's, inclusief de echte
   cijfers van 13 september. *(Erik: reviewen en mergen)*
 
+- [ ] **30. De marketing-agent afbouwen en in gebruik nemen.** *(Maarten)*
+
+  **Let op voor je begint: het grootste deel staat er al.** Van de vier
+  onderdelen uit `MARKETING-PLAN.md` draaien er drie mee in de pipeline, dus
+  dit is geen bouwen vanaf nul maar afmaken en gaan gebruiken:
+
+  | Onderdeel uit het plan | Staat er? |
+  |---|---|
+  | 1. Input: `data/marketing-feed.json` per taal | ✅ draait elke run mee |
+  | 2. Generatie per taal en kanaal, itereerbare prompt | ✅ `backend/generate-posts.js` + `backend/marketing-prompt.md` |
+  | 3. Draft-first met goedkeuring door een mens | ✅ de cockpit op `marketing.html`, 160 concepten klaar |
+  | 4. Meetlus: bereik, kliks, registraties naast elkaar | ❌ **dit ontbreekt** |
+
+  De leerlus is ook al rond: de cockpit schrijft je oordeel naar
+  `marketing_feedback` in Supabase, en `generate-posts.js` leest dat terug in
+  de prompt (`Vermijd wat eerder is afgewezen: {FEEDBACK}`). UTM-tags staan op
+  alle links. Hij leert dus al van je — alleen voed je hem nog niet (punt 24).
+
+  **Wat er werkelijk nog moet gebeuren:**
+  1. **De meetlus bouwen.** Wekelijks bereik, kliks, registraties en
+     promocodes naast elkaar. De bronnen zijn er: GA4 staat op de site (met
+     consent mode), Search Console draait, Stripe heeft de abonnees. Wat
+     ontbreekt is één plek waar die drie samenkomen, zodat je kunt zien wélke
+     post werkte in plaats van dat je het gevoel hebt.
+  2. **De cockpit echt gebruiken** — zie punt 24. Zonder jouw oordeel blijft
+     `{FEEDBACK}` leeg en leert hij niets.
+  3. **Beslissen over directe koppelingen** (Meta, LinkedIn, Buffer). Het plan
+     zegt: pas later, en ook dan met goedkeuring per post. Nu plaats je zelf.
+  4. **Twee weken vóór de lancering vers ingeregeld**, zoals in het plan staat
+     — op echte content, niet op de concepten van nu.
+
+  Zolang de site geparkeerd staat heeft plaatsen weinig zin: een bezoeker
+  komt dan op één artikel en kan verder nergens heen. Het voorwerk (meetlus,
+  cockpit voeden) kan wél nu al.
+
 ## Buiten de code — alleen Maarten kan dit
 
 
@@ -265,6 +300,21 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
 ---
 
 ## Afgerond
+
+- [x] **Paginatitels vertalen mee (2026-09-20).** Negen van de tien pagina's
+  hadden een vaste titel in de `<title>`; wisselde je van taal, dan bleef er
+  "Abonnementen ✨ BrightNews" in het tabblad staan, ook in het Spaans. Nu
+  hangt er een `data-i18n` aan met negen nieuwe sleutels in vijf talen.
+  Twee titels stonden bovendien in het Engels op een Nederlandse site:
+  "Refunds" en "Thank you!" — dat is de tekst die Google leest, want crawlers
+  draaien geen JavaScript. Die staan nu standaard in het Nederlands.
+
+- [x] **De betaalregel in de footer stond in vijf talen in het Engels
+  (2026-09-20).** "Payments are securely processed by Stripe, our Merchant of
+  Record." stond letterlijk zo in het Nederlands, Duits, Frans én Spaans, op
+  elke pagina. Nu in alle vijf de talen vertaald. *Merchant of Record* blijft
+  bewust onvertaald: dat is een juridische rol, geen omschrijving.
+
 
 - [x] **Socials bestaan en staan in de footer** (2026-09-16). Facebook draait op
   Maartens eigen naam omdat Facebook destijds geen bedrijfsnaam toestond en dat

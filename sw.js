@@ -1,7 +1,7 @@
 // Bump deze versie bij elke inhoudelijke wijziging aan CSS/JS. Zonder dat
 // blijven bestaande bezoekers vastzitten op een oude cache en krijgen ze
 // nieuwe fixes nooit te zien (zie Fase 2-audit).
-const CACHE_NAME = 'brightnews-v24'; // v24: mobiele navigatie (hamburger stond buiten beeld, ISO-code in de taalkiezer) en de te brede homepage op telefoons. Bumpen bij elke wijziging aan ASSETS-bestanden.
+const CACHE_NAME = 'brightnews-v25'; // v25: paginatitels vertalen mee met de taalkiezer en de betaalregel in de footer stond in vijf talen in het Engels. Bumpen bij elke wijziging aan ASSETS-bestanden.
 const ASSETS = [
     '/',
     '/index.html',

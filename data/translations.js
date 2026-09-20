@@ -6,7 +6,7 @@ window.translations = {
     "footer_kvk_val": "42048341",
     "footer_btw_label": "BTW",
     "footer_btw_val": "NL005455019B94",
-    "footer_mor_notice": "Payments are securely processed by Stripe, our Merchant of Record.",
+    "footer_mor_notice": "Betalingen worden veilig verwerkt door Stripe, onze Merchant of Record.",
     "footer_manage_sub": "Abonnement beheren",
     "footer_cookies": "Cookies",
     "footer_rights": "Alle rechten voorbehouden",
@@ -268,8 +268,16 @@ window.translations = {
     "renewal_notice_year": "Na de gratis proefperiode € 24,95/jaar; verlengt automatisch, op elk moment opzegbaar.",
     "privacy_header_title": "Privacy & Helderheid ✨",
     "privacy_header_subtitle": "Hoe we jouw gegevens beschermen bij BrightNews.",
+    "index_page_title": "BrightNews | Jouw Dagelijkse Dosis Positiviteit",
+    "pricing_page_title": "Abonnementen ✨ BrightNews",
+    "about_page_title": "Over Ons ✨ BrightNews",
+    "profile_page_title": "Account ✨ BrightNews",
+    "privacy_page_title": "Privacy & Colofon | BrightNews",
+    "refunds_page_title": "Terugbetalingen | BrightNews",
+    "terms_page_title": "Algemene Voorwaarden | BrightNews",
+    "reset_page_title": "Wachtwoord Instellen ✨ BrightNews",
+    "thanks_page_title": "Stralend nieuws! ✨ BrightNews"
   },
-
   "en": {
     "skip_to_content": "Skip to main content",
     "footer_address": "Vossenstraat 19, 6286BW Nijswiller, The Netherlands",
@@ -538,9 +546,17 @@ window.translations = {
     "btn_save_password": "Save Password",
     "thanks_title": "Stellar news!",
     "thanks_message": "You are now officially a <strong>Shine member</strong>. Thanks to your support, we can keep bringing you unlimited positive news.",
-    "thanks_redirect": "You will be redirected to the homepage in a few seconds..."
+    "thanks_redirect": "You will be redirected to the homepage in a few seconds...",
+    "index_page_title": "BrightNews | Your Daily Dose of Positivity",
+    "pricing_page_title": "Plans ✨ BrightNews",
+    "about_page_title": "About Us ✨ BrightNews",
+    "profile_page_title": "Account ✨ BrightNews",
+    "privacy_page_title": "Privacy & Imprint | BrightNews",
+    "refunds_page_title": "Refunds | BrightNews",
+    "terms_page_title": "Terms & Conditions | BrightNews",
+    "reset_page_title": "Set Password ✨ BrightNews",
+    "thanks_page_title": "Bright news! ✨ BrightNews"
   },
-
   "de": {
     "skip_to_content": "Zum Hauptinhalt springen",
     "footer_address": "Vossenstraat 19, 6286BW Nijswiller, Niederlande",
@@ -548,7 +564,7 @@ window.translations = {
     "footer_kvk_val": "42048341",
     "footer_btw_label": "USt-IdNr.",
     "footer_btw_val": "NL005455019B94",
-    "footer_mor_notice": "Payments are securely processed by Stripe, our Merchant of Record.",
+    "footer_mor_notice": "Zahlungen werden sicher von Stripe abgewickelt, unserem Merchant of Record.",
     "footer_manage_sub": "Abo verwalten",
     "footer_cookies": "Cookies",
     "footer_rights": "Alle Rechte vorbehalten",
@@ -809,9 +825,17 @@ window.translations = {
     "btn_save_password": "Passwort speichern",
     "thanks_title": "Glänzende Neuigkeiten!",
     "thanks_message": "Du bist jetzt offiziell ein <strong>Shine-Mitglied</strong>. Dank deiner Unterstützung können wir dir weiterhin unbegrenzt positive Nachrichten liefern.",
-    "thanks_redirect": "Du wirst in wenigen Sekunden zur Startseite weitergeleitet..."
+    "thanks_redirect": "Du wirst in wenigen Sekunden zur Startseite weitergeleitet...",
+    "index_page_title": "BrightNews | Deine tägliche Dosis Positivität",
+    "pricing_page_title": "Abonnements ✨ BrightNews",
+    "about_page_title": "Über Uns ✨ BrightNews",
+    "profile_page_title": "Konto ✨ BrightNews",
+    "privacy_page_title": "Datenschutz & Impressum | BrightNews",
+    "refunds_page_title": "Rückerstattungen | BrightNews",
+    "terms_page_title": "Allgemeine Geschäftsbedingungen | BrightNews",
+    "reset_page_title": "Passwort festlegen ✨ BrightNews",
+    "thanks_page_title": "Strahlende Neuigkeiten! ✨ BrightNews"
   },
-
   "fr": {
     "skip_to_content": "Aller au contenu principal",
     "footer_address": "Vossenstraat 19, 6286BW Nijswiller, Pays-Bas",
@@ -819,7 +843,7 @@ window.translations = {
     "footer_kvk_val": "42048341",
     "footer_btw_label": "TVA",
     "footer_btw_val": "NL005455019B94",
-    "footer_mor_notice": "Payments are securely processed by Stripe, our Merchant of Record.",
+    "footer_mor_notice": "Les paiements sont traités en toute sécurité par Stripe, notre Merchant of Record.",
     "footer_manage_sub": "Gérer l'abonnement",
     "footer_cookies": "Cookies",
     "footer_rights": "Tous droits réservés",
@@ -1081,8 +1105,16 @@ window.translations = {
     "thanks_title": "Nouvelles étincelantes !",
     "thanks_message": "Vous êtes maintenant officiellement un <strong>membre Shine</strong>. Grâce à votre soutien, nous pouvons continuer à vous apporter des nouvelles positives illimitées.",
     "thanks_redirect": "Vous allez être redirigé vers la page d'accueil dans quelques secondes...",
+    "index_page_title": "BrightNews | Votre dose quotidienne de positivité",
+    "pricing_page_title": "Abonnements ✨ BrightNews",
+    "about_page_title": "À propos ✨ BrightNews",
+    "profile_page_title": "Compte ✨ BrightNews",
+    "privacy_page_title": "Confidentialité et mentions légales | BrightNews",
+    "refunds_page_title": "Remboursements | BrightNews",
+    "terms_page_title": "Conditions générales | BrightNews",
+    "reset_page_title": "Définir le mot de passe ✨ BrightNews",
+    "thanks_page_title": "Une excellente nouvelle ! ✨ BrightNews"
   },
-
   "es": {
     "skip_to_content": "Saltar al contenido principal",
     "footer_address": "Vossenstraat 19, 6286BW Nijswiller, Países Bajos",
@@ -1090,7 +1122,7 @@ window.translations = {
     "footer_kvk_val": "42048341",
     "footer_btw_label": "IVA",
     "footer_btw_val": "NL005455019B94",
-    "footer_mor_notice": "Payments are securely processed by Stripe, our Merchant of Record.",
+    "footer_mor_notice": "Los pagos son procesados de forma segura por Stripe, nuestro Merchant of Record.",
     "footer_manage_sub": "Gestionar suscripción",
     "footer_cookies": "Cookies",
     "footer_rights": "Todos los derechos reservados",
@@ -1351,6 +1383,15 @@ window.translations = {
     "thanks_message": "Ahora eres oficialmente un <strong>miembro Shine</strong>. Gracias a tu apoyo, podemos seguir ofreciéndote noticias positivas ilimitadas.",
     "privacy_header_title": "Privacidad y Claridad ✨",
     "privacy_header_subtitle": "Cómo protegemos tus datos en BrightNews.",
-    "thanks_redirect": "Serás redirigido a la página de inicio en unos segundos..."
+    "thanks_redirect": "Serás redirigido a la página de inicio en unos segundos...",
+    "index_page_title": "BrightNews | Tu dosis diaria de positividad",
+    "pricing_page_title": "Suscripciones ✨ BrightNews",
+    "about_page_title": "Sobre Nosotros ✨ BrightNews",
+    "profile_page_title": "Cuenta ✨ BrightNews",
+    "privacy_page_title": "Privacidad y aviso legal | BrightNews",
+    "refunds_page_title": "Reembolsos | BrightNews",
+    "terms_page_title": "Términos y condiciones | BrightNews",
+    "reset_page_title": "Establecer contraseña ✨ BrightNews",
+    "thanks_page_title": "¡Buenas noticias! ✨ BrightNews"
   }
 };
