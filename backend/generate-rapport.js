@@ -3,13 +3,15 @@
 // cockpit-oordelen, accounts en abonnees — plus een kort AI-advies. Output:
 // data/rapporten/<ISO-week>.md en data/rapporten/laatste.md; de cockpit
 // (marketing.html) toont de laatste. Idempotent per ISO-week.
-// GA4 en Search Console hebben nog geen API-koppeling: die cijfers leest het
-// team voorlopig handmatig; het rapport zegt dat er ook bij.
+// Bereik en zoekverkeer komen uit backend/meetlus.js (GA4 + Search Console).
+// Staat de Google-sleutel er niet, dan valt alleen die sectie weg en zegt het
+// rapport dat erbij — de rest van de cijfers blijft gewoon staan.
 const { createClient } = require('@supabase/supabase-js');
 const fs = require('fs-extra');
 const path = require('path');
 require('dotenv').config();
 const { aiCall } = require('./ai-adapter');
+const { haalBereik, schrijfBereikSectie } = require('./meetlus');
 
 const root = path.join(__dirname, '..');
 
@@ -33,6 +35,33 @@ async function telRijen(tabel, filter) {
         if (filter) q = filter(q);
         const { count, error } = await q;
         return error ? null : count;
+    } catch {
+        return null;
+    }
+}
+
+/**
+ * Haalt de cockpit-oordelen op met hun post_key. Die sleutel is
+ * `datum|kanaal`, dus hieruit valt af te lezen wélk kanaal wordt afgewezen.
+ * Dat is het stuk waar de postprompt op bijgesteld kan worden: als Instagram
+ * er stelselmatig uit valt en LinkedIn niet, zit het in de toon en niet in de
+ * artikelen.
+ */
+async function oordelenPerKanaal(sindsIso) {
+    if (!supabaseAdmin) return null;
+    try {
+        const { data, error } = await supabaseAdmin
+            .from('marketing_feedback')
+            .select('post_key, besluit')
+            .gte('created_at', sindsIso);
+        if (error || !data) return null;
+        const perKanaal = {};
+        for (const rij of data) {
+            const kanaal = String(rij.post_key || '').split('|')[1] || 'onbekend';
+            const k = (perKanaal[kanaal] ??= { goed: 0, afgewezen: 0 });
+            if (rij.besluit === 'goed') k.goed++; else k.afgewezen++;
+        }
+        return perKanaal;
     } catch {
         return null;
     }
@@ -76,10 +105,25 @@ async function main() {
     const goedgekeurd = await telRijen('marketing_feedback', q => q.eq('besluit', 'goed').gte('created_at', sindsIso));
     const afgewezen = await telRijen('marketing_feedback', q => q.eq('besluit', 'afgewezen').gte('created_at', sindsIso));
 
+    const perKanaal = await oordelenPerKanaal(sindsIso);
+
+    // Bereik en zoekverkeer (leeg als de Google-sleutel er niet is).
+    const bereik = await haalBereik(7);
+
     // Trechter-onderkant.
     const accounts = await telRijen('profiles');
     const abonnees = await telRijen('profiles', q => q.eq('is_premium', true));
     const promos = await telRijen('promo_redemptions');
+
+    const kanaalRegels = !perKanaal
+        ? '(geen verbinding met de cockpit-oordelen)'
+        : Object.keys(perKanaal).length === 0
+            ? '(deze week nog niets goedgekeurd of afgewezen — voed de cockpit, anders leert de postfabriek niets)'
+            : ['| Kanaal | Goedgekeurd | Afgewezen |', '|---|---|---|']
+                .concat(Object.entries(perKanaal)
+                    .sort((a, b) => (b[1].goed + b[1].afgewezen) - (a[1].goed + a[1].afgewezen))
+                    .map(([k, s]) => `| ${k} | ${s.goed} | ${s.afgewezen} |`))
+                .join('\n');
 
     const cijfers = `# BrightNews weekrapport ${week}
 
@@ -95,10 +139,13 @@ async function main() {
 |---|---|---|---|
 ${bronRegels || '| (geen beoordelingen) | | | |'}
 
+## Cockpit per kanaal
+${kanaalRegels}
+
+${schrijfBereikSectie(bereik)}
 ## Trechter
 - Accounts totaal: **${accounts ?? '?'}** · betalende abonnees: **${abonnees ?? '?'}** · promocodes ingewisseld: **${promos ?? '?'}**
 - Break-even-doel: 20–28 abonnees (zie MARKETING-PLAN.md)
-- Bezoekers/zoekverkeer: nog handmatig aflezen in GA4 en Search Console (API-koppeling staat op de latere-lijst)
 `;
 
     // Kort AI-advies op basis van de cijfers (1 call/week).

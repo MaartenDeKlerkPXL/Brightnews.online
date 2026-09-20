@@ -196,11 +196,25 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   alle links. Hij leert dus al van je — alleen voed je hem nog niet (punt 24).
 
   **Wat er werkelijk nog moet gebeuren:**
-  1. **De meetlus bouwen.** Wekelijks bereik, kliks, registraties en
-     promocodes naast elkaar. De bronnen zijn er: GA4 staat op de site (met
-     consent mode), Search Console draait, Stripe heeft de abonnees. Wat
-     ontbreekt is één plek waar die drie samenkomen, zodat je kunt zien wélke
-     post werkte in plaats van dat je het gevoel hebt.
+  1. ~~De meetlus bouwen.~~ ✅ 2026-09-20 gebouwd (`backend/meetlus.js`, PR
+     open). Hij hangt in het weekrapport en haalt bezoekers en bron/medium uit
+     GA4 en kliks, vertoningen en zoektermen uit Search Console. Er is ook een
+     tabel bijgekomen met goedgekeurd/afgewezen **per kanaal**, want dat is het
+     cijfer waarop je de postprompt bijstelt: valt Instagram er stelselmatig
+     uit en LinkedIn niet, dan zit het in de toon en niet in de artikelen.
+
+     **Maarten moet hem nog aanzetten** — eenmalig, in Google Cloud:
+     a. maak een service-account aan en zet de **GA4 Data API** en de
+        **Search Console API** aan;
+     b. voeg dat service-account-e-mailadres als lezer toe aan de
+        GA4-property (die van `G-ZNFX3R9BQV`) én aan de property in Search
+        Console;
+     c. zet de JSON-sleutel als GitHub-secret `GOOGLE_SERVICE_ACCOUNT` en het
+        **numerieke** property-id als `GA4_PROPERTY_ID` (dus niet `G-…`).
+
+     Zolang die secrets er niet zijn faalt er niets: het rapport zet er één
+     regel bij dat de koppeling ontbreekt en de rest van de cijfers blijft
+     staan. Testen kan met `node backend/meetlus.js`.
   2. **De cockpit echt gebruiken** — zie punt 24. Zonder jouw oordeel blijft
      `{FEEDBACK}` leeg en leert hij niets.
   3. **Beslissen over directe koppelingen** (Meta, LinkedIn, Buffer). Het plan
