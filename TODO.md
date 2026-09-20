@@ -28,17 +28,40 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   uitvechten. Begin bij #5 — die is klein, en hoe langer hij blijft staan hoe
   erger het conflict wordt. *(Maarten)*
 
-- [ ] **2. Parkeer-gate verwijderen bij livegang.** Sinds 2026-09-10 zit dit op
-  **drie plekken in `index.html`**, want het parkeerbericht staat nu op de
-  homepage zelf in plaats van achter een doorverwijzing:
-  1. de klasse `geparkeerd` op het `<html>`-element,
-  2. het gate-script en het style-blok eronder in de `<head>`,
-  3. de div `#parkeerbericht` bovenaan de `<body>`.
+- [ ] **2. Parkeer-gate verwijderen bij livegang.** Opnieuw nagelopen op
+  2026-09-20, met regelnummers erbij. Het zijn zes ingrepen, niet drie.
 
-  Daarnaast: de teamlogin op `binnenkort.html` en de `noindex` op die pagina.
-  Bij alle drie de plekken in `index.html` staat een commentaarregel die dit
-  herhaalt. Vergeten = bezoekers blijven het binnenkort-bericht zien terwijl de
-  site live is. Zet dit bovenaan de lanceerchecklist. *(Maarten + Erik)*
+  **In `index.html` — drie blokken weg:**
+  1. regel 2: de klasse `geparkeerd` op `<html>`;
+  2. regels 18–99: het commentaar, het gate-script en het style-blok in de
+     `<head>`;
+  3. regels 133–149: de `<div id="parkeerbericht">` bovenaan de `<body>`.
+
+  **Op drie andere plekken:**
+  4. `sw.js`: **`CACHE_NAME` bumpen.** `index.html` staat in de precache-lijst.
+     HTML is network-first, dus online ziet iedereen direct de echte site, maar
+     de offline-terugval blijft anders het parkeerbericht — een terugkerende
+     bezoeker zonder verbinding krijgt dan "Binnenkort" te zien terwijl de site
+     live is.
+  5. `marketing.html` regel 125: een ingelogde gebruiker die géén teamlid is
+     wordt naar `/binnenkort.html` gestuurd. Na de lancering is dat een
+     doodlopende pagina; dat moet `/` worden.
+  6. `binnenkort.html` zelf: **beslissen wat ermee gebeurt.** Hij staat op
+     `noindex` en niet in de sitemap, dus Google heeft hem niet — maar wij
+     hebben hem maandenlang rondgestuurd, dus er zijn bookmarks. Mijn voorstel:
+     het bestand laten staan en er een doorverwijzing naar `/` van maken, zodat
+     zo'n bookmark niet op een verouderd "Binnenkort" uitkomt. De teamlogin
+     (naam + wachtwoord `happytester`) kan daarbij weg.
+
+  **Daarna, niet vergeten:** de homepage wordt op dat moment een compleet
+  andere pagina dan wat Google nu geïndexeerd heeft (nu staat het
+  parkeerbericht in de index). In Search Console opnieuw laten indexeren
+  aanvragen voor `/`.
+
+  Vergeten = bezoekers blijven het binnenkort-bericht zien terwijl de site live
+  is. Zet dit bovenaan de lanceerchecklist. Punt 1 tot en met 5 kan ik doen
+  zodra jullie het sein geven; punt 6 is een keuze die jullie maken en de
+  Search Console is voor Maarten. *(Maarten + Erik beslissen, ik voer uit)*
 
 - [ ] **3. Misser-artikelen: gedocumenteerd, opruimen is uitgesteld.** De negen
   gepubliceerde missers van run 1 en 2 staan sinds 2026-09-10 uitgewerkt in
