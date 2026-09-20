@@ -44,6 +44,13 @@ nav.container {
     overflow: visible;
 }
 
+/* De taalkiezer toont op een breed scherm de volle taalnaam; de ISO-code
+   staat er onzichtbaar naast en neemt het op mobiel over (zie het
+   mobiele blok onderaan). */
+.taal-code {
+    display: none;
+}
+
 /* Taal Dropdown (Helemaal links) */
 .language-left {
     margin-right: 2rem;
@@ -268,6 +275,20 @@ body {
     flex-direction: column;
     min-height: 100vh; /* vh = viewport height (100% van het scherm) */
     margin: 0;         /* Weg met die witte randen! */
+}
+
+/* 1b. ... en houd die kinderen op de breedte van het scherm.
+   Zonder deze regel krijgt een kind met width:auto in een flex-kolom niet de
+   breedte van de body, maar die van zijn eigen max-content. Op de homepagina
+   was dat 825px (de nieuwskaarten met hun foto's), waardoor header, main én
+   footer op een telefoon van 360px allemaal 825px breed werden. De body knipt
+   dat af met overflow-x: clip, dus je zág het niet als een scrollbalk — je zag
+   alleen dat de rechterhelft van elke kaart ontbrak. Gemeten 2026-09-20:
+   documentbreedte 825px bij een scherm van 360px, na deze regel 360px. */
+body > header,
+body > main,
+body > footer {
+    width: 100%;
 }
 
 /* 2. Zorg dat de main alle overgebleven ruimte 'opvreet' */
@@ -867,6 +888,9 @@ body {
         justify-content: space-between;
         position: relative;
         padding: 0 15px;
+        /* Op de smalste toestellen (320px) raakte het logo de hamburger; deze
+           gap houdt er altijd wat lucht tussen. */
+        gap: 10px;
     }
 
     .nav-right-group {
@@ -875,11 +899,13 @@ body {
     }
 
     .nav-logo {
-        /* Zelfde 50px als desktop; max-width vangt de smalste schermen op
-           zodat het logo de taalkiezer/hamburger niet wegduwt. */
-        height: 50px;
+        /* 44px i.p.v. de 50px van desktop: bij 50px is het logo 246px breed en
+           dan past de rij (taalkiezer + logo + hamburger) niet op 360px.
+           max-width laat 'm op nóg smallere toestellen verder meekrimpen;
+           object-fit: contain houdt daarbij de verhouding intact. */
+        height: 44px;
         width: auto;
-        max-width: 60vw;
+        max-width: 100%;
         object-fit: contain;
         object-position: left center;
     }
@@ -892,9 +918,26 @@ body {
         padding: 6px 10px;
     }
 
+    /* Stond op margin-right: 3rem. Samen met de volle taalnaam (116px) en het
+       logo (tot 60vw) paste de balk daardoor niet: op een scherm van 360px
+       begon de hamburger op 376px, dus volledig buiten beeld — op een telefoon
+       was het menu niet te openen. Gemeten 2026-09-20 op alle tien de
+       pagina's; nu staat hij op 310px. */
     .hamburger {
         display: flex;
-        margin-right: 3rem;
+        margin-right: 0;
+    }
+
+    /* Taalkiezer en logo mogen samen krimpen i.p.v. de hamburger wegduwen. */
+    .nav-left-group {
+        gap: 10px;
+        min-width: 0;
+        flex: 1 1 auto;
+    }
+
+    .nav-left-group > a {
+        min-width: 0;
+        display: flex;
     }
 
     /* Het uitklapmenu */
@@ -1074,9 +1117,30 @@ body {
 }
 
 /* Reviewronde 2026-09-02: vlag-emoji in de taalselector verbergen op smalle
-   schermen — daar telt elke pixel breedte in de navigatiebalk. */
+   schermen — daar telt elke pixel breedte in de navigatiebalk.
+   2026-09-20 (punt 14): ook de volle taalnaam gaat weg, want "Nederlands ▼"
+   was 116px in een balk van 360px. In plaats daarvan de ISO-code: "NL ▼",
+   56px. De naam verdwijnt niet met display:none maar wordt weggeclipt, zodat
+   een schermlezer nog steeds de hele taalnaam voorleest. position:absolute
+   houdt 'm bovendien uit de flex-flow van .dropbtn — anders zou de gap van
+   6px een gat achterlaten op de plek van de naam. */
 @media (max-width: 768px) {
     .taal-vlag {
         display: none;
+    }
+
+    .dropbtn .taal-naam {
+        position: absolute;
+        width: 1px; height: 1px;
+        padding: 0; margin: -1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+        border: 0;
+    }
+
+    .dropbtn .taal-code {
+        display: inline;
+        letter-spacing: 0.03em;
     }
 }

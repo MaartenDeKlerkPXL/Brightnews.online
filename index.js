@@ -3,12 +3,17 @@ window.huidigeTaal = localStorage.getItem('selectedLanguage') || 'nl';
 
 // Labels voor de taalkiezer. De vlag zit in een eigen span zodat hij op
 // smalle schermen via CSS (.taal-vlag) verborgen kan worden.
+// Het label van de taalkiezer in de navigatiebalk. De volle taalnaam en de
+// ISO-code staan er allebei in; de CSS kiest welke te zien is. Op een telefoon
+// was "Nederlands" 116px breed en duwde het de hamburger buiten beeld
+// (TODO-punt 14) — daar staat nu alleen "NL", 56px. De volle naam blijft als
+// onzichtbare tekst staan, zodat een schermlezer nog "Nederlands" voorleest.
 const TAAL_LABELS = {
-    'nl': '<span class="taal-vlag">🇳🇱</span> Nederlands',
-    'en': '<span class="taal-vlag">🇺🇸</span> English',
-    'de': '<span class="taal-vlag">🇩🇪</span> Deutsch',
-    'fr': '<span class="taal-vlag">🇫🇷</span> Français',
-    'es': '<span class="taal-vlag">🇪🇸</span> Español',
+    'nl': '<span class="taal-vlag">🇳🇱</span><span class="taal-naam">Nederlands</span><span class="taal-code" aria-hidden="true">NL</span>',
+    'en': '<span class="taal-vlag">🇺🇸</span><span class="taal-naam">English</span><span class="taal-code" aria-hidden="true">EN</span>',
+    'de': '<span class="taal-vlag">🇩🇪</span><span class="taal-naam">Deutsch</span><span class="taal-code" aria-hidden="true">DE</span>',
+    'fr': '<span class="taal-vlag">🇫🇷</span><span class="taal-naam">Français</span><span class="taal-code" aria-hidden="true">FR</span>',
+    'es': '<span class="taal-vlag">🇪🇸</span><span class="taal-naam">Español</span><span class="taal-code" aria-hidden="true">ES</span>',
 };
 window.alleArtikelen = [];
 window.actieveFilters = [];
