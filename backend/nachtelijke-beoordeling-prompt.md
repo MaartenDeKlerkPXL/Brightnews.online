@@ -53,7 +53,7 @@ met je bevindingen gebeurt.
 ### 1. Haal de laatste stand op
 
 Werk in de repo `brightnews-website`. Begin met `git pull --rebase origin master`.
-Lukt dat niet, ga dan verder en volg stap 8 (geen toegang tot git).
+Lukt dat niet, ga dan verder en volg stap 9 (geen toegang tot git).
 
 ### 2. Bepaal wat je beoordeelt
 
@@ -209,13 +209,47 @@ Was er niets mis, schrijf dan één regel: taal, artikel, en dat er niets is
 aangetroffen. Dat is óók informatie — juist als Erik de vertaalprompt aanpast
 wil je zien of het aantal bevindingen daalt.
 
-### 7. Sla het op in git
+### 7. Tel de reservefoto's
+
+Dit kost een halve minuut en gaat niet over de artikelen zelf, maar over de
+foto's eronder. Draai:
+
+```bash
+node backend/controleer-reservefotos.js
+```
+
+Het script telt hoeveel artikelen op de homepage een reservefoto nodig hebben
+(omdat de bron er geen meestuurde, of voor meerdere artikelen dezelfde) en
+zet dat af tegen wat er in `assets/fallback/` klaarstaat, per categorie. Het
+wijzigt niets en het faalt nooit — een tekort is geen storing maar een
+voorraad die aangevuld moet worden, en dat kan alleen een mens.
+
+**Schrijf alleen iets op als er iets verandert.** Je noteert het in
+`backend/reservefotos-log.md`, onderaan, en alleen in deze drie gevallen:
+
+1. het script meldt dat een foto **twee keer** op de pagina komt (de voorraad
+   is echt op);
+2. een categorie komt er voor het eerst **twee of meer** tekort, of een
+   bestaand tekort wordt groter dan de vorige keer;
+3. het script geeft een **Let op**-regel: dan staan er bestanden in de map
+   die `RESERVE_PER_CATEGORIE` in `index.js` niet meetelt, of andersom. Dat is
+   precies de fout die gemaakt wordt als iemand wel foto's aanlevert maar het
+   getal vergeet bij te werken, en dan liggen die foto's ongebruikt.
+
+Verandert er niets ten opzichte van de laatste regel in dat logboek, schrijf
+dan niets. Dit mag stil blijven; het is een rookmelder, geen dagboek.
+
+Plak bij een melding de tabel uit het script mee, met de datum erboven. Dan
+is achteraf te zien hoe snel het opliep — dat is de informatie waar het om
+gaat, want het probleem sluipt erin over weken.
+
+### 8. Sla het op in git
 
 Alleen als je iets hebt toegevoegd:
 
 ```
 git pull --rebase origin master
-git add backend/selectie-prompt-analyse.md backend/vertaal-steekproef.md
+git add backend/selectie-prompt-analyse.md backend/vertaal-steekproef.md backend/reservefotos-log.md
 git commit -m "Nachtelijke beoordeling 11 september: twee artikelen afgekeurd" -m "Van de veertien beoordeelde artikelen vielen er twee af: een teaser van een nog niet onthulde bestelbus, en een weekoverzicht van een andere nieuwssite. Beide staan met toelichting in het document."
 git push origin master
 ```
@@ -228,7 +262,8 @@ toelichting eronder.
 Voorwaarden:
 
 - **Raak geen enkel ander bestand aan.** Alleen
-  `backend/selectie-prompt-analyse.md` en `backend/vertaal-steekproef.md`. Geen artikelen, geen prompts, geen code,
+  `backend/selectie-prompt-analyse.md`, `backend/vertaal-steekproef.md` en
+  `backend/reservefotos-log.md`. Geen artikelen, geen prompts, geen code,
   geen data. Zie je iets anders gewijzigd in `git status`, stop dan en meld het
   in je bevindingen in plaats van te pushen.
 - Schrijf een commitbericht in **gewone Nederlandse leestaal**, geen code of
@@ -236,9 +271,9 @@ Voorwaarden:
   twee artikelen afgekeurd". Zet in de toelichting eronder in hele zinnen wat je
   hebt aangetroffen.
 - Loopt de push mis door een botsing, doe dan opnieuw `git pull --rebase` en
-  probeer het één keer opnieuw. Lukt het dan nog niet, volg stap 8.
+  probeer het één keer opnieuw. Lukt het dan nog niet, volg stap 9.
 
-### 8. Als je geen toegang hebt tot git
+### 9. Als je geen toegang hebt tot git
 
 Kun je niet pullen, committen of pushen — geen netwerk, geen rechten, een
 conflict dat je niet mag oplossen — gooi je werk dan **niet** weg.
@@ -257,7 +292,7 @@ chronologische volgorde toe aan `backend/selectie-prompt-analyse.md`, verwijder
 daarna de verwerkte wachtrijbestanden, en ga dan pas verder met de beoordeling
 van vannacht. Vermeld in je commitbericht dat je een achterstand hebt ingelopen.
 
-### 9. Wat je nooit doet
+### 10. Wat je nooit doet
 
 - Artikelen verwijderen, aanpassen of offline halen. Ook niet als ze overduidelijk
   niet deugen. Statische artikelpagina's worden nooit verwijderd, want de URL's

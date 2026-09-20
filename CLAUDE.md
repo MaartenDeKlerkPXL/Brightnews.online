@@ -97,5 +97,9 @@ hard-refresh of privévenster; CSS/JS-wijzigingen zie je anders niet.
   bevindingen weg.
 - `backend/nachtelijke-beoordeling-prompt.md` — opdracht voor de agent die elke
   nacht om 04:00 Amsterdamse tijd de verse artikelen nakijkt op bright-waardigheid.
+- `backend/controleer-reservefotos.js` — telt of er nog genoeg reservefoto's
+  zijn voor de homepage; draait mee in de nachtelijke controle (stap 7). Het
+  logboek staat in `backend/reservefotos-log.md` en blijft stil zolang er
+  niets verandert.
 - `backend/vertaal-steekproef.md` — steekproef op de vertalingen (2026-09-10),
   met voorstellen voor de vertaalprompt. **Openstaand: Erik.**

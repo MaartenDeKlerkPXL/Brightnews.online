@@ -174,9 +174,14 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   dat getal niet bij, dan blijven de nieuwe foto's ongebruikt liggen. Dat is één
   regel per categorie, plus het opnieuw meten of het tekort daarmee echt weg is.
 
-  **En het voorstel dat nog openstaat:** de nachtelijke controle dit elke nacht
-  laten meten. Dan zie je aankomen dat de voorraad krap wordt in plaats van dat
-  het bij toeval opvalt, zoals nu. *(Maarten levert de foto's, ik doe de code)*
+  **De bewaking staat er sinds 2026-09-20.** `backend/controleer-reservefotos.js`
+  telt de voorraad en draait elke nacht mee in de controle (stap 7 van
+  `backend/nachtelijke-beoordeling-prompt.md`). Hij meldt alleen iets als er
+  iets verandert — een categorie die verder wegzakt, een foto die dubbel op de
+  pagina komt, of foto's in de map die `RESERVE_PER_CATEGORIE` niet meetelt.
+  Het logboek is `backend/reservefotos-log.md`, met de nulmeting van vandaag
+  erin. Je hoeft er dus niet meer naar te kijken; je hoort het vanzelf.
+  *(Maarten levert de foto's, ik hoog daarna het getal in `index.js` op)*
 
 - [ ] **29. Pull request #6 wacht op Erik.** Het alarm dat een nieuwsrun laat
   falen als hij stilletjes niets oplevert
