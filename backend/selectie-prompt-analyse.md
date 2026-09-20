@@ -290,6 +290,39 @@ krijgen een herkansing bij een gewijzigde prompt.
 - **Waar het over gaat:** In juli werden wereldwijd positieve initiatieven gelanceerd. In India kregen meer dan 100 miljoen plattelandshuishoudens toegang tot drinkwater. Porto bood gratis openbaar vervoer…
 - **Waarom dit niet goed genoeg is:** Maandoverzicht van andermans hoogtepunten: India, Porto en de NHS in één stuk.
 
+## Aanvulling 2026-09-20 — een tiende misser, en hoe hij gevonden werd
+
+Deze kwam niet uit een logbestand maar uit een toevallige steekproef: bij het
+testen van de deel-previews op LinkedIn plakte Maarten vier willekeurige
+artikelen in het berichtvenster, en bij de vierde was zijn reactie meteen "dat
+is geen goed artikel voor BrightNews". Dat zegt iets over de vindbaarheid van
+dit type: het valt pas op als je een artikel los tegenkomt, niet als het
+tussen 150 kaarten op de homepage staat.
+
+### 15% korting op Athleta in september 2026
+- **Gepubliceerd:** 2026-09-02 · id `1788322035532buhquc0ri`
+- **Bron:** `cntraveler.com/story/athleta-promo-code` — een pagina met
+  kortingscodes, geen nieuwsartikel.
+- **Waar het over gaat:** Athleta geeft 15% korting op loungewear en
+  sportsets, met Labor Day-acties tot 70% korting.
+- **Waarom dit niet goed genoeg is:** Dit is geen nieuws maar een
+  winkelaanbieding. Er is geen gebeurtenis, geen mens die geholpen wordt en
+  geen afloop — alleen een prijsverlaging bij een kledingmerk. Het is een
+  scherpere variant van de Ather-scooter hierboven: daar was het nog
+  productnieuws met nieuwswaarde-vermomming, hier staat de kortingscode
+  letterlijk in de bron-URL.
+
+**Wat dit toevoegt aan de vier bevindingen:** de afwijslijst noemt
+productaankondigingen, maar niet met zoveel woorden de categorie *koopjes,
+kortingen en aanbiedingen*. Een bron-URL die `promo-code`, `deal`, `discount`
+of `coupon` bevat is een signaal dat je vóór de beoordeling kunt gebruiken, in
+plaats van erop te hopen dat het model het onderweg wegstreept — precies het
+patroon uit bevinding 1, waar scoren vóór besluiten gaat.
+
+Dit artikel stond niet in het selectielog (het is van vóór de gelogde
+periode) en staat niet meer op de homepage; de statische pagina bestaat nog
+wel, in vijf talen.
+
 ## Wat dit zegt over de prompt
 
 De vijf verzameledities zijn samen de duidelijkste aanwijzing: dat is precies

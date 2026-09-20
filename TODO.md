@@ -46,7 +46,11 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   **Besluit Maarten:** het opruimen zelf heeft geen haast — de site staat
   geparkeerd achter `binnenkort.html`, dus ze doen nu weinig kwaad. Waar het om
   gaat is dat Erik en Fable de prompt zo bijstellen dat dit type er niet meer
-  doorheen komt. Het daadwerkelijk uit de feed en de sitemap halen kan later,
+  doorheen komt. **Aangevuld 2026-09-20:** er is een tiende bij gekomen, "15%
+  korting op Athleta" — een winkelaanbieding met `promo-code` in de bron-URL,
+  gevonden doordat Maarten hem toevallig tegenkwam bij het testen van de
+  deel-previews. Staat uitgewerkt in dezelfde bijlage, met het voorstel om de
+  categorie *koopjes en kortingen* expliciet in de afwijslijst te zetten. Het daadwerkelijk uit de feed en de sitemap halen kan later,
   vóór de lancering; de werkwijze staat in die bijlage beschreven. *(Erik, na
   het bijstellen van de prompt)*
 
@@ -206,49 +210,39 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   klaar. Goedkeuren of afwijzen mét reden — de fabriek leert van je
   afwijzingen, maar alleen als je hem voedt.
 
-- [ ] **25. Deel-previews.** WhatsApp is op 2026-09-20 door Maarten getest en
-  werkt. Daarna heb ik alle **581 artikelen** doorgemeten: van elk artikel het
-  `og:image` opgehaald zoals een sociale crawler dat doet (371 unieke foto's,
-  want artikelen delen ze). Uitkomst:
+- [x] **25. Deel-previews.** ✅ 2026-09-20 — getest in WhatsApp én LinkedIn,
+  met vier artikelen die ik vooraf had doorgemeten. Van alle 581 artikelen is
+  het `og:image` opgehaald zoals een sociale crawler dat doet (371 unieke
+  foto's, want artikelen delen ze onderling).
 
-  | | artikelen | |
+  **Mijn aanname over webp was fout.** Ik had gelezen dat LinkedIn alleen jpg,
+  png en gif toont; hun eigen documentatie zegt dat. In het echt toont LinkedIn
+  webp gewoon. Dat scheelt: die **100 artikelen zijn in orde**, niet stuk.
+
+  Wat de test wél bevestigde, precies zoals voorspeld:
+
+  | Geval | Voorspeld | LinkedIn in het echt |
   |---|---|---|
-  | jpeg of png, laadt gewoon | **470** | goed |
-  | **webp** | **100** | LinkedIn toont dit niet |
-  | groter dan 5MB | 4 | LinkedIn slaat over, Facebook tot 8MB |
-  | gif | 3 | meestal goed |
-  | laadt helemaal niet (2× 403, 1× spatie in de URL) | 3 | geen plaatje |
-  | svg | 1 | geen enkel platform toont dit |
+  | gewone jpeg (470 artikelen) | plaatje | ✅ plaatje |
+  | webp (100 artikelen) | géén plaatje | ✅ **wél** plaatje — aanname fout |
+  | bron geeft 403 (3 artikelen) | géén plaatje | ✅ geen plaatje |
+  | foto van 7,4MB (4 artikelen) | géén plaatje | ✅ geen plaatje |
 
-  **De kern van de zaak:** 578 van de 581 artikelen halen hun deelplaatje bij
-  de **bron** vandaan, niet bij ons. Wij hebben dus geen invloed op het formaat
-  en geen garantie dat het blijft bestaan. Eén op de zes is webp — dat is puur
-  omdat moderne nieuwssites daarop zijn overgestapt, en dat aandeel groeit.
+  **De echte omvang is dus klein:** 8 van de 581 artikelen (1,4%) laten geen
+  deelplaatje zien — 3 waarvan de bronfoto niet laadt, 4 die te groot zijn en
+  1 svg. Zonder plaatje toont LinkedIn wel netjes titel, domein en
+  omschrijving, dus het is lelijk maar niet kapot.
 
-  **Wat nog niet zeker is:** dat LinkedIn geen webp toont, staat in hun
-  documentatie (zij noemen jpg, png en gif) — ik heb het niet zelf gezien. Dat
-  is precies het "zien is geloven" van dit punt. Vier links om te plakken, in
-  WhatsApp én LinkedIn:
-
-  1. **webp** (het twijfelgeval):
-     `/articles/nl/1000-eenden-vervangen-pesticiden-op-wijnlandgoed-1788645872913v6p9gh7ws.html`
-  2. **gewone jpeg** (de controle, hoort goed te gaan):
-     `/articles/nl/1000-dollar-bonus-per-dienstjaar-bij-casino-1789533075925kr6cz4g9o.html`
-  3. **403 bij de bron** (hoort géén plaatje te geven):
-     `/articles/nl/brief-van-hoop-uit-het-globale-zuiden-17884527811975v9r76stc.html`
-  4. **7,4MB** (te groot voor LinkedIn):
-     `/articles/nl/15-korting-op-athleta-in-september-2026-1788322035532buhquc0ri.html`
-
-  Let op: LinkedIn onthoudt een preview lang. Gebruik de Post Inspector
-  (`linkedin.com/post-inspector`) om opnieuw te laten ophalen.
-
-  **De oplossing als het bevestigd wordt:** in
-  `backend/generate-articles.js` de `og:image` vervangen door onze eigen
-  reservefoto uit dezelfde categorie zodra de bronfoto onbruikbaar is (webp,
-  svg, te groot, of hij laadt niet). Dat zijn onze eigen rechtenvrije foto's,
-  dus dat mag; de bronfoto kopiëren naar onze server mag níét. Raakt het
-  artikelsjabloon, dus dat gaat via een PR met Erik erbij.
-  *(Maarten test, daarna ik)*
+  **Wat dit op termijn wél wordt.** 578 van de 581 artikelen halen hun
+  deelplaatje bij de bron vandaan. Dat werkt zolang die bron blijft bestaan.
+  Linkrot komt eraan: hoe ouder het archief, hoe meer bronfoto's verdwijnen, en
+  dan wordt die 1,4% vanzelf groter. De oplossing ligt klaar en is dezelfde als
+  destijds: in `backend/generate-articles.js` terugvallen op onze eigen
+  reservefoto uit dezelfde categorie zodra de bronfoto niet laadt of te groot
+  is. Onze foto's zijn rechtenvrij; de bronfoto kopiëren naar onze server mag
+  niet. Geen haast bij 8 artikelen — oppakken zodra dat getal loopt, of
+  meenemen als het artikelsjabloon toch open ligt (punt 16). *(Erik, via een PR
+  — het raakt het artikelsjabloon)*
 
 ---
 
