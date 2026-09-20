@@ -206,10 +206,49 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   klaar. Goedkeuren of afwijzen mét reden — de fabriek leert van je
   afwijzingen, maar alleen als je hem voedt.
 
-- [ ] **25. Deel-previews in het echt testen** op WhatsApp en LinkedIn. De
-  `og:image` in het artikeltemplate wijst naar de echte artikelfoto
-  (gecontroleerd 2026-09-10), dus technisch zit het goed — maar zien is
-  geloven.
+- [ ] **25. Deel-previews.** WhatsApp is op 2026-09-20 door Maarten getest en
+  werkt. Daarna heb ik alle **581 artikelen** doorgemeten: van elk artikel het
+  `og:image` opgehaald zoals een sociale crawler dat doet (371 unieke foto's,
+  want artikelen delen ze). Uitkomst:
+
+  | | artikelen | |
+  |---|---|---|
+  | jpeg of png, laadt gewoon | **470** | goed |
+  | **webp** | **100** | LinkedIn toont dit niet |
+  | groter dan 5MB | 4 | LinkedIn slaat over, Facebook tot 8MB |
+  | gif | 3 | meestal goed |
+  | laadt helemaal niet (2× 403, 1× spatie in de URL) | 3 | geen plaatje |
+  | svg | 1 | geen enkel platform toont dit |
+
+  **De kern van de zaak:** 578 van de 581 artikelen halen hun deelplaatje bij
+  de **bron** vandaan, niet bij ons. Wij hebben dus geen invloed op het formaat
+  en geen garantie dat het blijft bestaan. Eén op de zes is webp — dat is puur
+  omdat moderne nieuwssites daarop zijn overgestapt, en dat aandeel groeit.
+
+  **Wat nog niet zeker is:** dat LinkedIn geen webp toont, staat in hun
+  documentatie (zij noemen jpg, png en gif) — ik heb het niet zelf gezien. Dat
+  is precies het "zien is geloven" van dit punt. Vier links om te plakken, in
+  WhatsApp én LinkedIn:
+
+  1. **webp** (het twijfelgeval):
+     `/articles/nl/1000-eenden-vervangen-pesticiden-op-wijnlandgoed-1788645872913v6p9gh7ws.html`
+  2. **gewone jpeg** (de controle, hoort goed te gaan):
+     `/articles/nl/1000-dollar-bonus-per-dienstjaar-bij-casino-1789533075925kr6cz4g9o.html`
+  3. **403 bij de bron** (hoort géén plaatje te geven):
+     `/articles/nl/brief-van-hoop-uit-het-globale-zuiden-17884527811975v9r76stc.html`
+  4. **7,4MB** (te groot voor LinkedIn):
+     `/articles/nl/15-korting-op-athleta-in-september-2026-1788322035532buhquc0ri.html`
+
+  Let op: LinkedIn onthoudt een preview lang. Gebruik de Post Inspector
+  (`linkedin.com/post-inspector`) om opnieuw te laten ophalen.
+
+  **De oplossing als het bevestigd wordt:** in
+  `backend/generate-articles.js` de `og:image` vervangen door onze eigen
+  reservefoto uit dezelfde categorie zodra de bronfoto onbruikbaar is (webp,
+  svg, te groot, of hij laadt niet). Dat zijn onze eigen rechtenvrije foto's,
+  dus dat mag; de bronfoto kopiëren naar onze server mag níét. Raakt het
+  artikelsjabloon, dus dat gaat via een PR met Erik erbij.
+  *(Maarten test, daarna ik)*
 
 ---
 
