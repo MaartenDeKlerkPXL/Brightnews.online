@@ -212,6 +212,105 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   komt dan op één artikel en kan verder nergens heen. Het voorwerk (meetlus,
   cockpit voeden) kan wél nu al.
 
+- [ ] **32. Te veel dagoverzichten, en ze blijven staan als hun bronnen weg
+  zijn.** *(Maarten signaleerde dit op 2026-09-20; ik heb het nagemeten.)*
+
+  Van de 150 kaarten op de homepage zijn er **26 een dagoverzicht — 17%**. Ze
+  staan bovendien allemaal bovenaan, want `renderLijst` sorteert digests naar
+  voren. Op 17 september waren het er vijf op één dag (één per categorie), dus
+  je opent de site en kijkt tegen een rij samenvattingen aan in plaats van
+  tegen nieuws.
+
+  Daar komt het tweede probleem bij. Een dagoverzicht verwijst in `refs` naar
+  de artikelen die het bespreekt, en die artikelen vallen na verloop van tijd
+  uit de lijst van 150 (`processor.js` gooit de oudste eruit). Het overzicht
+  zelf blijft dan staan met verwijzingen naar artikelen die er niet meer zijn.
+  Stand op 2026-09-20:
+
+  | | dagoverzichten |
+  |---|---|
+  | alle bronartikelen nog aanwezig | 21 |
+  | deels verdwenen | 5 |
+  | volledig verdwenen | 0 (nog) |
+
+  De vijf van 5 september zijn het verst heen — die van Health heeft nog
+  **1 van de 4** bronnen. Volledig dood is er nog geen, maar dat is een kwestie
+  van dagen.
+
+  Twee dingen om te beslissen, allebei in `backend/processor.js`:
+  1. **Wanneer verdwijnt een dagoverzicht?** Voorstel: zodra er minder dan de
+     helft van zijn `refs` nog in de lijst staat. Dan valt hij weg vóórdat de
+     bronnenlijst gatenkaas wordt, in plaats van erna.
+  2. **Hoeveel mogen er tegelijk staan?** Nu is er geen grens. Voorstel: hoogstens
+     de overzichten van de laatste twee dagen bovenaan, de rest ertussen op
+     datum. Dat is een ontwerpkeuze, dus die is aan Maarten.
+
+  Let op: de statische artikelpagina's van verwijderde overzichten blijven
+  bestaan (afspraak uit `CLAUDE.md`: geïndexeerde URL's mogen niet sterven).
+  Het gaat hier alleen om de homepage-lijst.
+
+- [ ] **33. Terug uit een artikel brengt je niet terug waar je was.**
+  *(Maarten)* Nagemeten op de live site: gescrold naar 3000px, kaart 31
+  aangeklikt, en na de terugknop stond de pagina op **0**. Je moet dus elke
+  keer opnieuw zoeken waar je gebleven was — en dat is precies waarom je
+  stopt met scrollen.
+
+  Er zit al code voor in `index.js`, maar er zijn twee dingen mis:
+
+  1. **De verkeerde positie wordt bewaard.** `toonDetail` schrijft
+     `window.scrollY` naar `brightScrollPos` (regel ~340). Bij de meting stond
+     daar **361** terwijl de pagina op 3000 stond. Er wordt dus een waarde van
+     een eerder moment vastgelegd.
+  2. **Het herstel komt te vroeg.** `renderLijst` scrollt terug binnen één
+     `requestAnimationFrame` na `tekenPortie` (regel ~790). Op dat moment
+     hebben de kaarten hun foto's nog niet geladen en is de pagina dus nog
+     nauwelijks hoog. De browser kapt de scrollpositie af op wat er op dat
+     moment past — vrijwel nul — en daarna groeit de pagina eronder verder.
+
+  Het goede nieuws: het aantal kaarten wordt wél correct hersteld (72 van 72 in
+  de meting), dus alleen de positie zelf moet nog kloppen. Oplossingsrichting:
+  de hoogte vastzetten vóór het scrollen (de kaarten hebben al `width`/`height`
+  op de afbeelding) of pas scrollen als de eerste rijen geladen zijn.
+
+- [ ] **34. Te weinig lucht tussen het herroepingsvinkje en de knop.**
+  *(Maarten)* Gemeten op de live abonnementenpagina: de afstand tussen het
+  vinkje-blok ("Ik ga akkoord dat de dienst direct start…") en de knop
+  "Start nu" is **0 pixels** — `.withdrawal-consent-label` heeft
+  `margin-bottom: 0`. De tekst plakt dus tegen de knop, en juist bij een blokje
+  met juridische strekking wil je dat een bezoeker ziet dat het twee aparte
+  dingen zijn. Geldt voor beide betaalde kaarten. Eén regel CSS in
+  `css/pages/abonnementen.css`.
+
+- [ ] **35. Vraag bezoekers subtiel om feedback, vanuit de footer.**
+  *(Idee van Maarten, 2026-09-20.)* We weten straks wél hoeveel mensen er
+  komen (de meetlus, punt 30), maar niet wat ze ervan vínden. Een klein,
+  onopvallend lijntje in de footer — geen pop-up, geen banner — dat een kort
+  formulier opent.
+
+  Wat we willen weten, in deze volgorde van belangrijk naar aardig:
+
+  1. **Hoe positief en leuk vind je BrightNews?** (één schaal — dit is het
+     bestaansrecht van de site, dus dit is de kernvraag)
+  2. **Werkt alles technisch?** (laadt het, doet alles het, op welk toestel)
+  3. **Vind je de weg?** (UX: menu, taalkiezer, artikelen terugvinden)
+  4. **Hoe ziet het eruit?** (UI en kleur — splits dit niet op in twee vragen,
+     dat vraagt te veel van iemand die even iets invult)
+  5. **Zijn de teksten prettig te lezen?**
+  6. **Open vraag:** *"Als je mocht dromen: wat zou er beter kunnen?"* — dit
+     levert doorgaans de bruikbaarste antwoorden op, dus laat dit veld ruim zijn.
+
+  Ontwerpkeuzes om te maken:
+  - Vijf gesloten vragen is al veel. Overweeg drie schalen plus de open vraag,
+    en de rest alleen tonen als iemand doorklikt.
+  - Anoniem of met e-mailadres? Anoniem geeft eerlijker antwoorden, met adres
+    kun je doorvragen. Voorstel: anoniem, met een optioneel adres.
+  - In vijf talen, dus vijf nieuwe vertaalsleutels per vraag.
+
+  **Verdeling:** ik kan het hele formulier bouwen, vertalen en inpassen in de
+  footer. Waar het opgeslagen wordt is Eriks deel — een tabel `feedback` in
+  Supabase met een insert-policy voor anonieme bezoekers. Zonder die tabel kan
+  het formulier nergens heen, dus dat moet eerst.
+
 ## Buiten de code — alleen Maarten kan dit
 
 
