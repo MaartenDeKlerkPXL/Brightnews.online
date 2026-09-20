@@ -44,3 +44,41 @@ meting van de afgelopen tien dagen.
 
 Gevraagd aan Maarten: vier à vijf foto's extra per knelcategorie, dus
 ongeveer vijftien stuks. Liggend, ongeveer 1400px breed, rechtenvrij.
+
+---
+
+## 2026-09-20 — aangevuld, tekort weg
+
+Zestien foto's toegevoegd van Pexels (gratis voor commercieel gebruik, geen
+naamsvermelding nodig): zeven bij Science, vier bij Lifestyle, vijf bij
+Environment. `RESERVE_PER_CATEGORIE` in `index.js` mee opgehoogd naar 11, 8
+en 10.
+
+| Categorie | Beschikbaar | Nodig | Tekort |
+|---|---|---|---|
+| Environment | 10 | 7 | — |
+| Finance | 4 | 0 | — |
+| Health | 5 | 3 | — |
+| Lifestyle | 8 | 6 | — |
+| Science | 11 | 8 | — |
+| Tech | 4 | 2 | — |
+
+Totaal: 26 nodig, 42 beschikbaar.
+
+Nagemeten in de browser op de volledige lijst van 150 kaarten: **28
+reservefoto's in gebruik, alle 28 uit de eigen categorie van het artikel, en
+geen enkele dubbel.** Vóór het aanvullen werden er acht uit een andere
+categorie geleend.
+
+Bij de keuze is gelet op onderwerp, niet alleen op aantal. Science bestond
+uit vier laboratoriumbeelden en heeft er nu sterrenkunde, ruimtevaart,
+veldwerk en onderwijs bij. Environment bestond uit symbolen (kamerplanten,
+masten, afvalbakken) en heeft er nu bos, een bij, een hert, een zeeschildpad
+en windmolens bij. Lifestyle was vooral eten en fitness en heeft er nu
+mensen bij.
+
+**Nog open:** Maarten levert één foto van Adobe Stock (id `1986278256`, hond
+en kat op de bank) die `lifestyle-9.jpg` wordt. Die licentie hangt aan zijn
+account, dus die kan alleen hij downloaden. Bij het toevoegen moet Lifestyle
+in `RESERVE_PER_CATEGORIE` van 8 naar 9 — anders blijft de foto ongebruikt
+liggen en waarschuwt dit script daarvoor.

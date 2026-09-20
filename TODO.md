@@ -118,70 +118,30 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   deel van elk abonnement naar CO₂-verwijdering gaat, is dus waar en mag blijven
   staan bij de lancering.
 
-- [ ] **28. De voorraad reservefoto's is te klein geworden.**
+- [x] **28. De voorraad reservefoto's.** ✅ 2026-09-20 — zestien foto's
+  toegevoegd van Pexels: zeven bij Science, vier bij Lifestyle, vijf bij
+  Environment. `RESERVE_PER_CATEGORIE` in `index.js` mee opgehoogd naar 11, 8
+  en 10.
 
-  **Waar dit over gaat, van voren af aan.** Elke nieuwskaart op de homepage
-  heeft een foto nodig. Die komt normaal mee uit de feed van de bron. Twee
-  dingen gaan daar geregeld mis: sommige bronnen sturen helemaal géén foto mee,
-  en sommige sturen voor meerdere artikelen dezelfde foto — bijvoorbeeld hun
-  eigen logo of een standaard sfeerplaatje bij alles van die dag.
+  Nagemeten in de browser op alle 150 kaarten: **28 reservefoto's in gebruik,
+  alle 28 uit de eigen categorie, geen enkele dubbel.** Daarvoor werden er acht
+  uit een andere categorie geleend.
 
-  Zonder ingreep zou je die ene foto dus vier keer onder elkaar zien staan. Dat
-  is precies wat PR #5 heeft opgelost: we hebben **26 eigen reservefoto's** in
-  `assets/fallback/`, ingedeeld per categorie (`science-1.jpg`, `health-1.jpg`,
-  enzovoort). Heeft een artikel geen bruikbare eigen foto, dan pakt de code een
-  reservefoto **uit zijn eigen categorie**, en nooit een die al ergens anders op
-  de pagina staat.
+  Bij de keuze is op onderwerp gelet, niet alleen op aantal: Science bestond
+  uit vier laboratoriumbeelden en heeft er nu sterrenkunde, ruimtevaart,
+  veldwerk en onderwijs bij; Environment bestond uit symbolen en heeft er nu
+  echte natuur bij; Lifestyle was vooral eten en fitness en heeft er nu mensen
+  bij.
 
-  **Wat er nu misgaat.** In sommige categorieën zijn er meer artikelen die een
-  reservefoto nodig hebben dan er reservefoto's zijn. Science heeft er 7 nodig
-  en wij hebben er 4. Die drie overgebleven Science-artikelen krijgen dan een
-  foto uit een ándere categorie — een wetenschapsartikel met een
-  gezondheidsfoto erboven. Niet kapot, wel slordig. En raakt werkelijk álles
-  op, dan herhaalt een foto zich alsnog.
+  De bewaking staat er sinds dezelfde dag: `backend/controleer-reservefotos.js`
+  draait elke nacht mee (stap 7 van `backend/nachtelijke-beoordeling-prompt.md`)
+  en meldt alleen iets als er iets verandert. Logboek:
+  `backend/reservefotos-log.md`.
 
-  **Het is dus geen bug.** De code doet exact wat is afgesproken: eerst eigen
-  categorie, dan lenen, en pas als laatste redmiddel herhalen. Alleen is dat
-  laatste redmiddel nu in beeld gekomen, omdat de feed steeds vaker foto's
-  deelt. Op 2026-09-10 waren er 14 reservefoto's nodig, op 20 september 25 à
-  27. In tien dagen bijna verdubbeld, en het beweegt met elke run mee.
-
-  Het totaal is daarom minder interessant dan de vraag wélke categorieën
-  structureel tekortkomen, en dat zijn steeds dezelfde drie:
-
-  | Categorie | Beschikbaar | Nodig | Tekort |
-  |---|---|---|---|
-  | Science | 4 | 7 | **3** |
-  | Lifestyle | 4 | 6 | **2** |
-  | Environment | 5 | 7 | **2** |
-  | Health | 5 | 3 | — |
-  | Tech | 4 | 2 | — |
-  | Finance | 4 | 0 | — |
-
-  **Wat Maarten moet aanleveren.** Vier à vijf foto's extra per tekortcategorie,
-  dus ongeveer 15 stuks, met wat marge voor de groei:
-
-  - liggend formaat, ongeveer 1400px breed, `.jpg`;
-  - herkenbaar voor de categorie, maar niet té specifiek — ze komen onder
-    wisselende koppen te staan;
-  - rechtenvrij (Unsplash of Pexels), want ze staan straks publiek op de site;
-  - neerzetten in `assets/fallback/` met de naam `<categorie>-<nummer>.jpg`,
-    doorgenummerd vanaf het laatste bestaande nummer. Voor Science dus
-    `science-5.jpg`, `science-6.jpg`, enzovoort — zonder gaten in de reeks.
-
-  **Wat ik daarna doe.** De code leidt de categorie uit de bestandsnaam af,
-  maar het *aantal* staat hard in `index.js` in `RESERVE_PER_CATEGORIE`. Zet ik
-  dat getal niet bij, dan blijven de nieuwe foto's ongebruikt liggen. Dat is één
-  regel per categorie, plus het opnieuw meten of het tekort daarmee echt weg is.
-
-  **De bewaking staat er sinds 2026-09-20.** `backend/controleer-reservefotos.js`
-  telt de voorraad en draait elke nacht mee in de controle (stap 7 van
-  `backend/nachtelijke-beoordeling-prompt.md`). Hij meldt alleen iets als er
-  iets verandert — een categorie die verder wegzakt, een foto die dubbel op de
-  pagina komt, of foto's in de map die `RESERVE_PER_CATEGORIE` niet meetelt.
-  Het logboek is `backend/reservefotos-log.md`, met de nulmeting van vandaag
-  erin. Je hoeft er dus niet meer naar te kijken; je hoort het vanzelf.
-  *(Maarten levert de foto's, ik hoog daarna het getal in `index.js` op)*
+  **Nog één ding voor Maarten:** de Adobe-foto (id `1986278256`, hond en kat op
+  de bank) wordt `lifestyle-9.jpg`. Die licentie hangt aan jouw account, dus
+  alleen jij kunt hem downloaden. Zet het bestand klaar, dan hoog ik Lifestyle
+  op van 8 naar 9.
 
 - [ ] **29. Pull request #6 wacht op Erik.** Het alarm dat een nieuwsrun laat
   falen als hij stilletjes niets oplevert

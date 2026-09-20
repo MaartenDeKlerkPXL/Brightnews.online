@@ -516,9 +516,15 @@ async function toonDetail(id) {
 const RESERVE_PER_CATEGORIE = {
     'Tech': 4,
     'Health': 5,
-    'Science': 4,
-    'Lifestyle': 4,
-    'Environment': 5,
+    // Science, Lifestyle en Environment kwamen structureel tekort: die
+    // categorieën leenden foto's uit een andere categorie omdat de eigen
+    // voorraad op was (gemeten 2026-09-20: Science 4 nodig bovenop 4, Lifestyle
+    // en Environment elk 2). Op 2026-09-20 aangevuld. Dit getal moet mee
+    // omhoog als er bestanden bijkomen, anders blijven ze ongebruikt liggen —
+    // backend/controleer-reservefotos.js waarschuwt daarvoor.
+    'Science': 11,
+    'Lifestyle': 8,
+    'Environment': 10,
     'Finance': 4
 };
 
