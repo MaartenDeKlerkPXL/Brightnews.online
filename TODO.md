@@ -69,8 +69,16 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   `js/main.js:22`; `add_premium_reward` bestaat wel. Afmaken of de resten
   opruimen — half werk in de code is erger dan geen werk. *(Erik)*
 
-- [ ] **14. Taalkiezer op mobiel** is groot ten opzichte van de navigatiebalk.
-  Overweeg alleen de vlag of de ISO-code op smalle schermen. *(Maarten)*
+- [x] **14. Taalkiezer op mobiel.** ✅ 2026-09-20 — de knop toont onder 768px
+  de ISO-code ("NL") in plaats van de volle taalnaam: 116px → 57px. De naam
+  blijft als weggeclipte tekst staan voor schermlezers. Onderweg bleek dit
+  onderdeel van een groter probleem: de hamburgerknop begon op een scherm van
+  360px pas op 376px en stond dus volledig buiten beeld — op alle tien de
+  pagina's én de artikelpagina's was het menu op een telefoon niet te openen.
+  Ook de `margin-right: 3rem` van de hamburger en het niet-krimpende logo zijn
+  aangepakt, en de homepagina bleek op mobiel 825px breed in plaats van 360px
+  (flex-kolom + `width: auto` = max-content). Alles nagemeten op 320/375/414/
+  768px. *(Maarten)*
 
 - [ ] **16. 385 artikelpagina's draaien nog op een oud sjabloon.** Van de 2.905
   artikelpagina's dragen er **385** nog de doodlopende LinkedIn-link
