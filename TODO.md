@@ -69,11 +69,6 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   `js/main.js:22`; `add_premium_reward` bestaat wel. Afmaken of de resten
   opruimen — half werk in de code is erger dan geen werk. *(Erik)*
 
-- [ ] **13. Witte tekst op #32CD32 haalt geen WCAG AA** (ongeveer 2:1). Was
-  een bewuste keuze, maar geldt sinds 2026-09-09 ook voor de footer-iconen die
-  bij hover wit werden. Een tint donkerder groen voor knoppen en hover-states
-  lost het in één klap op. Meenemen in de volgende designronde. *(Maarten)*
-
 - [ ] **14. Taalkiezer op mobiel** is groot ten opzichte van de navigatiebalk.
   Overweeg alleen de vlag of de ISO-code op smalle schermen. *(Maarten)*
 
