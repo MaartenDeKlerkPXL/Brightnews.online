@@ -299,7 +299,57 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
 
 ---
 
+- [ ] **31. De keten aanmelden → betalen → premium lezen is nooit in het echt
+  doorlopen.** *(Maarten + Erik samen)* Bij de doorlichting van 2026-09-20 kon
+  ik alles testen wat zonder inloggegevens kan: elke pagina laadt zonder
+  console-fouten, alle interne links en afbeeldingen bestaan, de 404 geeft een
+  echte 404, de sitemap staat op 2.927 URL's en de service worker draait. Wat
+  ik **niet** kan testen is de keten waar geld en accounts in zitten:
+
+  1. registreren met een echt e-mailadres en de bevestigingsmail ontvangen;
+  2. inloggen, uitloggen, wachtwoord vergeten (komt die mail aan?);
+  3. een abonnement afsluiten via Stripe met een echte kaart;
+  4. daarna controleren of `is_premium` echt aan gaat en of een premium-artikel
+     volledig zichtbaar wordt;
+  5. opzeggen, en of de toegang dan op de juiste dag stopt;
+  6. een promocode inwisselen.
+
+  Dat is de kern van het verdienmodel en hij is nog nooit van begin tot eind
+  gelopen. Doe dit samen vóór de lancering, met één echte kaart en één
+  wegwerp-e-mailadres, en schrijf op wat er misgaat. Dit is het soort ding dat
+  je niet wilt ontdekken wanneer de eerste betalende bezoeker het ontdekt.
+
 ## Afgerond
+
+- [x] **De vaste teksten in de HTML stonden in het Engels (2026-09-20).**
+  Gevonden bij de volledige doorlichting: van de 413 elementen met een
+  vertaalsleutel stond de vaste tekst in de HTML er bij **189** in het Engels,
+  terwijl de pagina `lang="nl"` aangeeft en de Nederlandse vertaling gewoon
+  bestond. Voorbeelden: "Welcome back! 😊", "Join the Community! ✨",
+  "Explore", "Who are we? (Colofon)". JavaScript verving dat wel bij het laden,
+  dus een bezoeker zag het hooguit even flikkeren — maar **Google draait geen
+  JavaScript** en las dus een Nederlandse pagina vol Engelse tekst. Alle 189
+  staan nu in het Nederlands; de vertalingen zelf waren al compleet in vijf
+  talen. Structuur gecontroleerd: het aantal HTML-tags per pagina is voor en na
+  gelijk.
+
+- [x] **De homepage had geen `h1` (2026-09-20).** De enige `h1` zat in het
+  parkeerbericht, en dat verdwijnt bij de lancering — daarna had de
+  belangrijkste pagina van de site helemaal geen kop gehad. Er staat nu een
+  visueel verborgen `h1` bovenaan `<main>`, in vijf talen, zodat het ontwerp
+  hetzelfde blijft maar schermlezers en zoekmachines wel een kop vinden.
+  Wil je hem zichtbaar maken, dan is het een kwestie van de klasse weghalen.
+
+- [x] **Twee pagina's hadden geen `h1` (2026-09-20).** `profiel.html` en
+  `wachtwoord-vergeten.html` begonnen bij `h2`. De zichtbare hoofdkop van elk
+  paneel is nu `h1`; verborgen panelen staan op `display: none`, dus er is er
+  altijd precies één. De opmaakregel pakt nu `h1` én `h2`, zodat er niets
+  verschiet.
+
+- [x] **Het logo in de navigatiebalk had geen alt-tekst (2026-09-20).** Het zit
+  in een link naar de homepage, dus een schermlezer kondigde een link zonder
+  naam aan — op elke pagina en op alle artikelpagina's. Nu `alt="BrightNews"`,
+  ook in het artikelsjabloon.
 
 - [x] **Paginatitels vertalen mee (2026-09-20).** Negen van de tien pagina's
   hadden een vaste titel in de `<title>`; wisselde je van taal, dan bleef er

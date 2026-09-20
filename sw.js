@@ -1,7 +1,7 @@
 // Bump deze versie bij elke inhoudelijke wijziging aan CSS/JS. Zonder dat
 // blijven bestaande bezoekers vastzitten op een oude cache en krijgen ze
 // nieuwe fixes nooit te zien (zie Fase 2-audit).
-const CACHE_NAME = 'brightnews-v25'; // v25: paginatitels vertalen mee met de taalkiezer en de betaalregel in de footer stond in vijf talen in het Engels. Bumpen bij elke wijziging aan ASSETS-bestanden.
+const CACHE_NAME = 'brightnews-v26'; // v26: de vaste teksten in de HTML stonden in het Engels op een Nederlandse site (189 stuks), logo kreeg een alt-tekst, twee paginas kregen een h1. Bumpen bij elke wijziging aan ASSETS-bestanden.
 const ASSETS = [
     '/',
     '/index.html',

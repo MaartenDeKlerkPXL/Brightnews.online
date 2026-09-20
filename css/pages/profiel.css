@@ -266,6 +266,9 @@ body {
     margin-bottom: 35px;
 }
 
+/* h1 sinds 2026-09-20: deze pagina had helemaal geen h1 (elk paneel
+   toont er nu één; verborgen panelen staan op display:none). */
+.auth-header h1,
 .auth-header h2 {
     font-size: 1.8rem;
     font-weight: 800;

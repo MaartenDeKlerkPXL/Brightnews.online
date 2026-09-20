@@ -276,7 +276,8 @@ window.translations = {
     "refunds_page_title": "Terugbetalingen | BrightNews",
     "terms_page_title": "Algemene Voorwaarden | BrightNews",
     "reset_page_title": "Wachtwoord Instellen ✨ BrightNews",
-    "thanks_page_title": "Stralend nieuws! ✨ BrightNews"
+    "thanks_page_title": "Stralend nieuws! ✨ BrightNews",
+    "index_h1": "Het goede nieuws van vandaag"
   },
   "en": {
     "skip_to_content": "Skip to main content",
@@ -555,7 +556,8 @@ window.translations = {
     "refunds_page_title": "Refunds | BrightNews",
     "terms_page_title": "Terms & Conditions | BrightNews",
     "reset_page_title": "Set Password ✨ BrightNews",
-    "thanks_page_title": "Bright news! ✨ BrightNews"
+    "thanks_page_title": "Bright news! ✨ BrightNews",
+    "index_h1": "Today’s good news"
   },
   "de": {
     "skip_to_content": "Zum Hauptinhalt springen",
@@ -834,7 +836,8 @@ window.translations = {
     "refunds_page_title": "Rückerstattungen | BrightNews",
     "terms_page_title": "Allgemeine Geschäftsbedingungen | BrightNews",
     "reset_page_title": "Passwort festlegen ✨ BrightNews",
-    "thanks_page_title": "Strahlende Neuigkeiten! ✨ BrightNews"
+    "thanks_page_title": "Strahlende Neuigkeiten! ✨ BrightNews",
+    "index_h1": "Die guten Nachrichten von heute"
   },
   "fr": {
     "skip_to_content": "Aller au contenu principal",
@@ -1113,7 +1116,8 @@ window.translations = {
     "refunds_page_title": "Remboursements | BrightNews",
     "terms_page_title": "Conditions générales | BrightNews",
     "reset_page_title": "Définir le mot de passe ✨ BrightNews",
-    "thanks_page_title": "Une excellente nouvelle ! ✨ BrightNews"
+    "thanks_page_title": "Une excellente nouvelle ! ✨ BrightNews",
+    "index_h1": "Les bonnes nouvelles du jour"
   },
   "es": {
     "skip_to_content": "Saltar al contenido principal",
@@ -1392,6 +1396,7 @@ window.translations = {
     "refunds_page_title": "Reembolsos | BrightNews",
     "terms_page_title": "Términos y condiciones | BrightNews",
     "reset_page_title": "Establecer contraseña ✨ BrightNews",
-    "thanks_page_title": "¡Buenas noticias! ✨ BrightNews"
+    "thanks_page_title": "¡Buenas noticias! ✨ BrightNews",
+    "index_h1": "Las buenas noticias de hoy"
   }
 };
