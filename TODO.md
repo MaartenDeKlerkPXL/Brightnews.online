@@ -63,29 +63,11 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
      Access Tokens → Revoke. Dat stond altijd al als sluitstuk van het
      betaaltraject. *(Maarten)*
 
-## Conversie en eerste indruk
-
-- [ ] **6. Cookiebanner compacter maken** — op mobiel bedekt hij bijna het
-  halve scherm en hij zweeft over de content, ook over de abonnementskaarten.
-  Doel: één regel plus twee knoppen als onderbalk. Zit in PR #1. *(Maarten)*
-
-- [ ] **7. Herroepingsvinkje in de plankaart** in plaats van als losse
-  checkbox erboven. Functioneel werkt het al; het is puur de plek die
-  onlogisch is. Zit ook in PR #1. *(Maarten)*
-
 ## Techniek en onderhoud
 
 - [ ] **11. Referral-systeem is nooit afgemaakt.** Staat als TODO in
   `js/main.js:22`; `add_premium_reward` bestaat wel. Afmaken of de resten
   opruimen — half werk in de code is erger dan geen werk. *(Erik)*
-
-- [ ] **12. Footer-socials: alleen LinkedIn wacht nog.** Facebook wijst sinds
-  2026-09-16 naar Maartens BrightNews-pagina (Facebook stond destijds geen
-  bedrijfsnaam toe, vandaar een persoonsnaam in de URL) en Instagram klopte al.
-  **LinkedIn staat nog op het niet-bestaande `/company/brightnews-online`**; het
-  juiste adres (`/in/brightnews-online-5206a53b3/`) zit in PR #1 en komt mee
-  zodra Erik die merget. Archiefartikelpagina's houden hun oude links tot ze
-  ooit opnieuw gegenereerd worden. *(wacht op PR #1)*
 
 - [ ] **13. Witte tekst op #32CD32 haalt geen WCAG AA** (ongeveer 2:1). Was
   een bewuste keuze, maar geldt sinds 2026-09-09 ook voor de footer-iconen die
@@ -95,49 +77,12 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
 - [ ] **14. Taalkiezer op mobiel** is groot ten opzichte van de navigatiebalk.
   Overweeg alleen de vlag of de ISO-code op smalle schermen. *(Maarten)*
 
-- [ ] **16. 263 archiefpagina's draaien nog op het oude template.** Eén keer
-  bewust regenereren maakt alles uniform; de brondata is er. Let op de regel
-  uit `CLAUDE.md`: statische artikelpagina's nooit verwijderen. Overleggen met
-  Erik. *(Erik)*
-
-- [x] **17. Bronnen saneren.** ✅ 2026-09-16: Newatlas verwijderd (7% acceptatie, tekst leesbaar = echte mismatch). Sciencenews/BBC-culture BLIJVEN — hun "onleesbaar"-probleem was de artikel-extractie (scripts/nav in de p-regex) en die is gerepareerd met een kwaliteitspoort; bij rommel blijft nu de schone feedsnippet staan. YesMagazine/Theecologist: nog een week meten met de gefixte extractie. Oorspronkelijke tekst: LET OP, nuance uit
-  `backend/selectie-prompt-analyse.md`: bij Sciencenews (12 van 15) en
-  BBC/culture (4 van 19) is de afwijzing "tekst onleesbaar" — daar wordt de
-  brontekst verkeerd uitgelezen, dus schrappen lost het verkeerde probleem op.
-  Newatlas is wél een echte kandidaat: 70 items voor 5 treffers, tekst prima
-  leesbaar. Oorspronkelijke notitie: Het weekrapport (W37) laat zien: Newatlas 11%
-  acceptatie, ScienceNews 0%, BBC-culture 6%. Dat is veel API-verbruik voor
-  weinig. Adventure-Journal levert nieuwsbrief-fragmenten als items — idem
-  bespreken. *(Erik)*
-
-- [x] **18. eslint terug op 0 errors** ✅ 2026-09-16 (ongebruikte TALEN weg, advies-initialisatie zonder loze toewijzing). Was:, allebei in
-  `backend/generate-rapport.js` (commit `f666f14`, marketing fase M1):
-  `TALEN` wordt toegekend maar nooit gebruikt (regel 15) en de waarde van
-  `advies` wordt nergens meer gelezen (regel 106). De norm uit `CLAUDE.md` is
-  0 errors, dus dit hoort opgeruimd voor het meesluipt in volgende commits.
-  *(Erik)*
-
-- [x] **19. Selectieprompt v8** ✅ 2026-09-16 (Erik delegeerde de beoordeling aan Fable; oordeel: analyse klopt en is netjes gereproduceerd). Doorgevoerd: uitsluitingspoort vóór het scoren (veld "uitsluiting" met 6 categorieën, code wijst af ongeacht scores), ijkvoorbeelden voor politiek/listicle/verzameleditie, mismatch- en per-categorie-tellers in last_run.json. NIET veranderd (conform analyse): kernregel, drempel 8, bevinding 2 (schaaldifferentiatie — volgende iteratie, eerst poort-effect meten). Was: In `backend/selectie-prompt-analyse.md` staat een diagnose op
-  basis van 300 beoordelingen uit `data/selectie-log.json`. Belangrijkste
-  vondst: de afwijslijst wordt overgeslagen — alle vier de weekoverzichten en
-  podcast-transcripten in het log zijn goedgekeurd met 8 of 9 punten, terwijl
-  hun titels woordelijk in de afwijslijst staan. Vermoedelijke oorzaak is de
-  instructie "score eerst, besluit daarna", waardoor de afwijzing via de scores
-  moet lopen. Er is bewust **niets** gewijzigd: Erik leest dit uit met Fable,
-  ziet de artikelen dagelijks langskomen en beoordeelt zelf of het patroon
-  klopt voordat er iets aan de prompt verandert. *(Erik)*
-
-- [x] **20. Vertaalprompt bijgesteld** ✅ 2026-09-16: de 5 regels (geslacht, eigennamen, niets toevoegen, titelconventie fr/es, [n] behouden) in álle vier vertaalprompts (artikelen, digest, posts, evergreen) + concrete-titelregel in de moederprompt ("Gordelroosvaccin", niet "Prikvaccin"). Nachtelijke steekproef meet het effect. Was: In
-  `backend/vertaal-steekproef.md` staan zeven bevindingen uit twintig
-  vergelijkingen (vijf artikelen × vier talen), met zes concrete voorstellen
-  voor de vertaalprompt. De grote lijn is in orde: er wordt niets ingekort, er
-  blijft nergens Nederlands staan en de bronnenlijsten zijn compleet. Het gaat
-  mis in de details: verkeerd geslacht (het Duits spreekt zichzelf tegen binnen
-  één artikel), vertaalde organisatienamen, een toegevoegd feit, en titels met
-  een hoofdletter op elk woord in Frans en Spaans. Spaans is duidelijk het
-  zwakst. Belangrijker nog: een vage Nederlandse kop wordt in vier talen
-  vermenigvuldigd, dus verbeteren aan de schrijfkant werkt vier keer door. Er is
-  bewust **niets** gewijzigd. *(Erik)*
+- [ ] **16. 385 artikelpagina's draaien nog op een oud sjabloon.** Van de 2.905
+  artikelpagina's dragen er **385** nog de doodlopende LinkedIn-link
+  (`/company/brightnews-online`); de rest is na PR #1 opnieuw gegenereerd. Het
+  zijn archiefpagina's, die bewust blijven staan omdat hun URL's geïndexeerd
+  zijn. Eén keer bewust regenereren maakt alles uniform — brondata is er.
+  Overleggen met Erik. *(Erik)*
 
 - [ ] **26. Anthropic: auto-reload aanzetten en key-eigendom beslissen.**
   De storing van 10–13 september was een lege kredietbalans; de key blijkt op
@@ -152,11 +97,40 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   aanstaat met een ingesteld percentage — de claim moet waar zijn vóór de
   site publiek gaat. *(Maarten)*
 
+- [ ] **28. De voorraad reservefoto's is te klein geworden.** Gemeten op
+  2026-09-20 bij de volledige lijst van 150 kaarten: **27 reservefoto's nodig,
+  26 beschikbaar**. Gevolg: één dubbele foto op de pagina en tien foto's uit een
+  andere categorie dan het artikel.
+
+  Dit is geen fout in de code — die doet precies wat PR #5 belooft: eerst een
+  foto uit de eigen categorie, dan lenen uit een andere, en pas als werkelijk
+  alles op is een herhaling. Alleen is "alles op" nu werkelijkheid.
+
+  De oorzaak zit in de feed: **25 artikelen delen hun foto met een ander
+  artikel**. De ontdubbeling grijpt dan in en vraagt een reservefoto. Op
+  2026-09-10 waren er nog 14 reservefoto's nodig, nu 27 — in tien dagen bijna
+  verdubbeld, en het groeit mee met de feed.
+
+  | Categorie | Beschikbaar | Nodig | Tekort |
+  |---|---|---|---|
+  | Science | 4 | 8 | **4** |
+  | Lifestyle | 4 | 7 | **3** |
+  | Environment | 5 | 7 | **2** |
+  | Health | 5 | 3 | — |
+  | Tech | 4 | 2 | — |
+  | Finance | 4 | 0 | — |
+
+  Vier à vijf foto's extra bij Science, Lifestyle en Environment lost het op.
+  Aanleveren in `assets/fallback/` als `<categorie>-<n>.jpg`, max 1400px breed —
+  de code leidt de categorie rechtstreeks uit de bestandsnaam af.
+
+  Overweeg daarnaast de nachtelijke controle hierop te laten meten. Dan zie je
+  aankomen wanneer de voorraad weer krap wordt, in plaats van dat je het bij
+  toeval ontdekt zoals nu. *(Maarten levert foto's, of Erik automatiseert de
+  meting)*
+
 ## Buiten de code — alleen Maarten kan dit
 
-- [ ] **22. Socials claimen**: `facebook.com/brightnews.online`,
-  `instagram.com/brightnews.online`, `linkedin.com/company/brightnews-online`.
-  Nodig vóór de marketing-agent er is, en lost punt 12 meteen op.
 
 - [ ] **23. Search Console terugkijken.** De sitemap is ingediend op
   2026-09-05 met 2.072 pagina's; onder Indexering → Pagina's zou het aantal
@@ -184,6 +158,22 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
 
 ## Afgerond
 
+- [x] **Socials bestaan en staan in de footer** (2026-09-16). Facebook draait op
+  Maartens eigen naam omdat Facebook destijds geen bedrijfsnaam toestond en dat
+  achteraf niet meer te wijzigen is; het is wel degelijk de BrightNews-pagina.
+  Instagram is `instagram.com/brightnews.online`, LinkedIn
+  `/in/brightnews-online-5206a53b3/`. Daarmee is ook de voorwaarde voor de
+  marketing-agent vervuld.
+- [x] **Cookiebanner is een compacte onderbalk** (PR #1, gemerged door Erik op
+  2026-09-16). Was een zwevend kaartje dat op mobiel bijna het halve scherm
+  bedekte; nu `position: fixed; bottom: 0` met één regel tekst en twee knoppen.
+- [x] **Herroepingsvinkje zit in de plankaart** (PR #1, 2026-09-16). Eén vinkje
+  per betaald plan in de kaart zelf; klikken zonder vinkje markeert dát vakje
+  rood en zet de aandacht erop, zonder door te gaan naar de afrekenpagina.
+- [x] **Footer-socials kloppen** (2026-09-16). Facebook wijst naar Maartens
+  BrightNews-pagina, Instagram klopte al, en LinkedIn staat sinds PR #1 op
+  `/in/brightnews-online-5206a53b3/` in plaats van het niet-bestaande
+  `/company/`-adres.
 - [x] **500-woorden-premium gestopt** (2026-09-16, besluit Erik na Maartens
   juridische analyse van 5 sep — het "J3-punt"). De lange hervertellingen per
   artikel zijn uit de pipeline (full_text = korte bron-getrouwe samenvatting)
