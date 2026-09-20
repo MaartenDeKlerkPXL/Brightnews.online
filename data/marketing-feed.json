@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-09-20T04:37:55.857Z",
+ "gegenereerd": "2026-09-20T15:54:05.123Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -12,6 +12,14 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/senior-bridge-containerwoningen-voor-dakloze-senioren-in-phoenix-17897482454609nk17tmq1.html"
+    },
+    {
+     "id": "17899196420568hecmtvs3",
+     "titel": "Amerikaanse staten helpen monarchvlinders op weg naar Mexico",
+     "teaser": "Oostelijke monarchvlinders vliegen meer dan 3.200 kilometer door het centrale deel van de Verenigde Staten om te overwinteren in Mexico. Verschillende staten zijn betrokken bij een project dat deze bestuivers onderweg helpt tijdens hun lange trektocht naar het zuiden.",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/amerikaanse-staten-helpen-monarchvlinders-op-weg-naar-mexico-17899196420568hecmtvs3.html"
     },
     {
      "id": "1789878990544agz0dwnv9",
@@ -36,14 +44,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/rangers-redden-babyolifant-van-90-kilo-uit-drinkbak-1789791496249m76kxgprk.html"
-    },
-    {
-     "id": "1789791470039iv33h3zat",
-     "titel": "Nieuwe kattensoort Tilcayo ontdekt in Bolivia",
-     "teaser": "Voor het eerst in meer dan honderd jaar is een nieuwe kattensoort geïdentificeerd: Leopardus tilcayo, gevonden in Bolivia. Het verhaal begon in 2016 toen een man een 'weird cat' naar een dierenopvang bracht. Bioloog Paola Nogales-Ascarrunz van het Bolivian Felids Research Program herkende het dier als bijzonder, met lange snorharen, kleine oren en grote rozetten. Aanvankelijk dacht ze aan een...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/nl/nieuwe-kattensoort-tilcayo-ontdekt-in-bolivia-1789791470039iv33h3zat.html"
     }
    ],
    "dagoverzichten": [
@@ -81,6 +81,14 @@
      "url": "https://brightnews.online/articles/en/senior-bridge-container-homes-for-homeless-seniors-in-phoenix-17897482454609nk17tmq1.html"
     },
     {
+     "id": "17899196420568hecmtvs3",
+     "titel": "U.S. states help monarch butterflies on their way to Mexico",
+     "teaser": "Eastern monarch butterflies fly more than 3,200 kilometers through the central United States to overwinter in Mexico. Several states are involved in a project that helps these pollinators along the way during their long migration south.",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/u-s-states-help-monarch-butterflies-on-their-way-to-mexico-17899196420568hecmtvs3.html"
+    },
+    {
      "id": "1789878990544agz0dwnv9",
      "titel": "Hit-and-run fox Chance recovers thanks to swimming lessons",
      "teaser": "A fox named Chance, who was hit by a car in Nottinghamshire last June and lost the use of his hind legs, is making a recovery thanks to hydrotherapy. A passerby raised the alarm after the animal had been lying injured for days. A veterinarian initially feared Chance would have to be euthanized, but wildlife rescuers took him in and...",
@@ -103,14 +111,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/en/rangers-rescue-90-kilogram-baby-elephant-from-water-trough-1789791496249m76kxgprk.html"
-    },
-    {
-     "id": "1789791470039iv33h3zat",
-     "titel": "New cat species Tilcayo discovered in Bolivia",
-     "teaser": "For the first time in more than a hundred years, a new cat species has been identified: Leopardus tilcayo, found in Bolivia. The story began in 2016 when a man brought a 'weird cat' to an animal shelter. Biologist Paola Nogales-Ascarrunz from the Bolivian Felids Research Program recognized the animal as remarkable, with long whiskers, small ears and large rosettes....",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/en/new-cat-species-tilcayo-discovered-in-bolivia-1789791470039iv33h3zat.html"
     }
    ],
    "dagoverzichten": [
@@ -148,6 +148,14 @@
      "url": "https://brightnews.online/articles/de/senior-bridge-containerunterkunfte-fur-obdachlose-senioren-in-phoenix-17897482454609nk17tmq1.html"
     },
     {
+     "id": "17899196420568hecmtvs3",
+     "titel": "Amerikanische Staaten helfen Monarchfaltern auf dem Weg nach Mexiko",
+     "teaser": "Östliche Monarchfalter fliegen mehr als 3.200 Kilometer durch den zentralen Teil der Vereinigten Staaten, um in Mexiko zu überwintern. Mehrere Staaten sind an einem Projekt beteiligt, das diese Bestäuber während ihrer langen Wanderung in den Süden unterstützt.",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/amerikanische-staaten-helfen-monarchfaltern-auf-dem-weg-nach-mexiko-17899196420568hecmtvs3.html"
+    },
+    {
      "id": "1789878990544agz0dwnv9",
      "titel": "Angefahrener Fuchs Chance erholt sich durch Schwimmtherapie",
      "teaser": "Ein Fuchs namens Chance, der im Juni des vergangenen Jahres in Nottinghamshire angefahren wurde und seine Hinterbeine nicht mehr nutzen konnte, erholt sich dank Hydrotherapie. Ein Passant schlug Alarm, nachdem das Tier tagelang verletzt umhergelaufen war. Ein Tierarzt fürchtete zunächst, dass Chance eingeschläfert werden müsse, aber Wildlife-Retter nahmen ihn auf und begannen eine Rehabilitation mit angeleiteten Schwimmsitzungen im Hundeschwimmbad des...",
@@ -170,14 +178,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/de/ranger-retten-90-kilo-babyelefanten-aus-wassertank-1789791496249m76kxgprk.html"
-    },
-    {
-     "id": "1789791470039iv33h3zat",
-     "titel": "Neue Katzenart Tilcayo in Bolivien entdeckt",
-     "teaser": "Zum ersten Mal seit mehr als hundert Jahren ist eine neue Katzenart identifiziert worden: Leopardus tilcayo, gefunden in Bolivien. Die Geschichte begann 2016, als ein Mann eine „weird cat\" in ein Tierauffangzentrum brachte. Die Biologin Paola Nogales-Ascarrunz vom Bolivian Felids Research Program erkannte das Tier als besonders, mit langen Schnurrhaaren, kleinen Ohren und großen Rosetten. Zunächst dachte sie an einen...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/de/neue-katzenart-tilcayo-in-bolivien-entdeckt-1789791470039iv33h3zat.html"
     }
    ],
    "dagoverzichten": [
@@ -215,6 +215,14 @@
      "url": "https://brightnews.online/articles/fr/senior-bridge-des-logements-conteneurs-pour-les-seniors-sans-abri-a-phoenix-17897482454609nk17tmq1.html"
     },
     {
+     "id": "17899196420568hecmtvs3",
+     "titel": "Des États américains aident les monarques sur le chemin du Mexique",
+     "teaser": "Les monarques de l'Est parcourent plus de 3 200 kilomètres à travers le centre des États-Unis pour hiverner au Mexique. Plusieurs États participent à un projet qui aide ces pollinisateurs en chemin lors de leur long voyage vers le sud.",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/des-etats-americains-aident-les-monarques-sur-le-chemin-du-mexique-17899196420568hecmtvs3.html"
+    },
+    {
      "id": "1789878990544agz0dwnv9",
      "titel": "Le petit renard Chance se rétablit grâce à des séances de natation",
      "teaser": "Un jeune renard nommé Chance, percuté par une voiture en juin dernier dans le Nottinghamshire et ayant perdu l'usage de ses pattes arrière, se rétablit grâce à l'hydrothérapie. Un passant a donné l'alerte après que l'animal ait erré blessé pendant plusieurs jours. Un vétérinaire a d'abord craint devoir l'euthanasier, mais les sauveteurs de la faune l'ont pris en charge et...",
@@ -237,14 +245,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/fr/des-rangers-sauvent-un-elephanteau-de-90-kilos-d-un-abreuvoir-1789791496249m76kxgprk.html"
-    },
-    {
-     "id": "1789791470039iv33h3zat",
-     "titel": "Nouvelle espèce de chat Tilcayo découverte en Bolivie",
-     "teaser": "Pour la première fois depuis plus d'un siècle, une nouvelle espèce de chat a été identifiée : Leopardus tilcayo, découverte en Bolivie. L'histoire a commencé en 2016 quand un homme a amené un « weird cat » dans un refuge pour animaux. La biologiste Paola Nogales-Ascarrunz du Bolivian Felids Research Program a reconnu l'animal comme particulier, avec de longues moustaches,...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/fr/nouvelle-espece-de-chat-tilcayo-decouverte-en-bolivie-1789791470039iv33h3zat.html"
     }
    ],
    "dagoverzichten": [
@@ -282,6 +282,14 @@
      "url": "https://brightnews.online/articles/es/senior-bridge-viviendas-contenedor-para-adultos-mayores-sin-hogar-en-phoenix-17897482454609nk17tmq1.html"
     },
     {
+     "id": "17899196420568hecmtvs3",
+     "titel": "Estados estadounidenses ayudan a las mariposas monarca en su camino hacia México",
+     "teaser": "Las mariposas monarca orientales vuelan más de 3.200 kilómetros a través de la parte central de Estados Unidos para pasar el invierno en México. Varios estados participan en un proyecto que ayuda a estos polinizadores durante su largo viaje migratorio hacia el sur.",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/estados-estadounidenses-ayudan-a-las-mariposas-monarca-en-su-camino-hacia-mexico-17899196420568hecmtvs3.html"
+    },
+    {
      "id": "1789878990544agz0dwnv9",
      "titel": "El zorro Chance se recupera gracias a lecciones de natación",
      "teaser": "Un zorro llamado Chance, que fue atropellado en junio del año pasado en Nottinghamshire y perdió la movilidad de sus patas traseras, se recupera gracias a la hidroterapia. Un transeúnte dio la alarma después de que el animal hubiera estado herido varios días. Un veterinario temía al principio que Chance tuviera que ser sacrificado, pero los rescatistas de fauna silvestre...",
@@ -304,14 +312,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/es/rangers-rescatan-a-elefantita-de-90-kilos-de-una-pila-de-agua-1789791496249m76kxgprk.html"
-    },
-    {
-     "id": "1789791470039iv33h3zat",
-     "titel": "Nueva especie felina Tilcayo descubierta en Bolivia",
-     "teaser": "Por primera vez en más de cien años se ha identificado una nueva especie felina: Leopardus tilcayo, hallada en Bolivia. La historia comenzó en 2016 cuando un hombre llevó un «gato extraño» a un refugio de animales. La bióloga Paola Nogales-Ascarrunz del Bolivian Felids Research Program reconoció el animal como especial, con largos bigotes, orejas pequeñas y grandes rosetas. Inicialmente...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/es/nueva-especie-felina-tilcayo-descubierta-en-bolivia-1789791470039iv33h3zat.html"
     }
    ],
    "dagoverzichten": [

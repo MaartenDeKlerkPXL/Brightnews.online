@@ -1,5 +1,29 @@
 [
  {
+  "datum": "2026-09-20T15:53:47.562Z",
+  "bron": "NPR.org",
+  "titel": "Monarch butterflies are on their way to Mexico. States are helping them on their way",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Hartverwarmend verhaal over staatssteun voor natuurbehoud; monarchvlinders krijgen hulp op hun jaarlijkse tocht naar Mexico."
+ },
+ {
+  "datum": "2026-09-20T15:53:47.562Z",
+  "bron": "NPR.org",
+  "titel": "Thousands of planned launches, terms of deal, worry some near Louisiana SpaceX site",
+  "uitsluiting": "productnieuws",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Dit is bedrijfsnieuws over een SpaceX-investeringsproject zonder maatschappelijke doorbraak of gemeenschapsverhaal."
+ },
+ {
   "datum": "2026-09-20T04:35:38.286Z",
   "bron": "GoodNewsNetwork.org",
   "titel": "New York City is Putting ‘The Park’ Back in Park Avenue – And Adding a Protected Bike Lane (LOOK)",
@@ -3468,27 +3492,5 @@
   "totaal": 0,
   "besluit": "nee",
   "reden": "Productlancering/voertuignieuws zonder maatschappelijke betekenis"
- },
- {
-  "datum": "2026-09-14T18:01:18.711Z",
-  "bron": "Newatlas.com",
-  "titel": "Review: Affordable thermal device is made for discovering life outdoors",
-  "gevoel": 1,
-  "formulering": 2,
-  "relevantie": 1,
-  "totaal": 4,
-  "besluit": "nee",
-  "reden": "Productreview met technische focus; geen maatschappelijke relevantie of persoonlijke herkenning"
- },
- {
-  "datum": "2026-09-14T18:01:18.711Z",
-  "bron": "Newatlas.com",
-  "titel": "Freezable titanium plate keeps your cooler chilled longer than ice packs",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Campingproductnieuws/Kickstarter-lancering zonder bredere betekenis"
  }
 ]
