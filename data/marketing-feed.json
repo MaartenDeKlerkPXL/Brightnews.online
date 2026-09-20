@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-09-19T15:46:16.983Z",
+ "gegenereerd": "2026-09-20T04:37:55.857Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -12,6 +12,14 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/senior-bridge-containerwoningen-voor-dakloze-senioren-in-phoenix-17897482454609nk17tmq1.html"
+    },
+    {
+     "id": "1789878990544agz0dwnv9",
+     "titel": "Aangereden vosje Chance herstelt dankzij zwemlessen",
+     "teaser": "Een vosje genaamd Chance, dat vorig jaar juni in Nottinghamshire werd aangereden en zijn achterpoten niet meer kon gebruiken, knapt op dankzij hydrotherapie. Een voorbijganger sloeg alarm nadat het dier dagenlang gewond had rondgelegen. Een dierenarts vreesde eerst dat Chance moest worden afgemaakt, maar wildlife-redders namen hem op en startten revalidatie met begeleide zwemsessies in een hondenzwembad van het Mansfield...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/aangereden-vosje-chance-herstelt-dankzij-zwemlessen-1789878990544agz0dwnv9.html"
     },
     {
      "id": "1789791521381pbrbcl1ls",
@@ -36,17 +44,16 @@
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/nl/nieuwe-kattensoort-tilcayo-ontdekt-in-bolivia-1789791470039iv33h3zat.html"
-    },
-    {
-     "id": "1789791445109brgtr24rs",
-     "titel": "EverDye verft textiel met statische elektriciteit, geen water nodig",
-     "teaser": "Het Franse startup EverDye heeft niet-toxische textielverf ontwikkeld die via statische elektriciteit aan stoffen hecht, in plaats van via kokend water en chemische fixeermiddelen. De positief geladen, op bioafval en mineralen gebaseerde pigmenten binden bij kamertemperatuur aan negatief voorbehandelde textiel. Dit verlaagt energiekosten met 800% en watergebruik met 40%, terwijl de kleuren even lang meegaan als traditionele verf. Dyeing is...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/everdye-verft-textiel-met-statische-elektriciteit-geen-water-nodig-1789791445109brgtr24rs.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260919-environment",
+     "titel": "Herstel en groei: van vosje op krukken tot groenere steden",
+     "categorie": "Environment",
+     "dag": "2026-09-19",
+     "url": "https://brightnews.online/articles/nl/herstel-en-groei-van-vosje-op-krukken-tot-groenere-steden-dg-20260919-environment.html"
+    },
     {
      "id": "dg-20260918-environment",
      "titel": "Groene straten, geredde olifanten en schonere stoffen: het goede nieuws van de week",
@@ -60,34 +67,6 @@
      "categorie": "Science",
      "dag": "2026-09-17",
      "url": "https://brightnews.online/articles/nl/satellieten-een-chimpansee-en-oude-sporen-de-wetenschap-van-deze-week-dg-20260917-science.html"
-    },
-    {
-     "id": "dg-20260917-lifestyle",
-     "titel": "Stilte, natuur en een grappige vos: het goede leven van deze week",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-17",
-     "url": "https://brightnews.online/articles/nl/stilte-natuur-en-een-grappige-vos-het-goede-leven-van-deze-week-dg-20260917-lifestyle.html"
-    },
-    {
-     "id": "dg-20260917-environment",
-     "titel": "Van 51 oplossingen tot schimmels en vossen: het milieunieuws van deze week",
-     "categorie": "Environment",
-     "dag": "2026-09-17",
-     "url": "https://brightnews.online/articles/nl/van-51-oplossingen-tot-schimmels-en-vossen-het-milieunieuws-van-deze-week-dg-20260917-environment.html"
-    },
-    {
-     "id": "dg-20260916-health",
-     "titel": "Zorgzame zorg: van Afghaanse klinieken tot een test tegen hersenschudding",
-     "categorie": "Health",
-     "dag": "2026-09-16",
-     "url": "https://brightnews.online/articles/nl/zorgzame-zorg-van-afghaanse-klinieken-tot-een-test-tegen-hersenschudding-dg-20260916-health.html"
-    },
-    {
-     "id": "dg-20260916-tech",
-     "titel": "Van gebarentaal tot huizen uit houtafval: techniek die problemen oplost",
-     "categorie": "Tech",
-     "dag": "2026-09-16",
-     "url": "https://brightnews.online/articles/nl/van-gebarentaal-tot-huizen-uit-houtafval-techniek-die-problemen-oplost-dg-20260916-tech.html"
     }
    ]
   },
@@ -100,6 +79,14 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/senior-bridge-container-homes-for-homeless-seniors-in-phoenix-17897482454609nk17tmq1.html"
+    },
+    {
+     "id": "1789878990544agz0dwnv9",
+     "titel": "Hit-and-run fox Chance recovers thanks to swimming lessons",
+     "teaser": "A fox named Chance, who was hit by a car in Nottinghamshire last June and lost the use of his hind legs, is making a recovery thanks to hydrotherapy. A passerby raised the alarm after the animal had been lying injured for days. A veterinarian initially feared Chance would have to be euthanized, but wildlife rescuers took him in and...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/hit-and-run-fox-chance-recovers-thanks-to-swimming-lessons-1789878990544agz0dwnv9.html"
     },
     {
      "id": "1789791521381pbrbcl1ls",
@@ -124,17 +111,16 @@
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/en/new-cat-species-tilcayo-discovered-in-bolivia-1789791470039iv33h3zat.html"
-    },
-    {
-     "id": "1789791445109brgtr24rs",
-     "titel": "EverDye dyes textiles with static electricity, no water needed",
-     "teaser": "French startup EverDye has developed non-toxic textile dye that adheres to fabrics via static electricity, rather than boiling water and chemical fixatives. The positively charged pigments, based on bio-waste and minerals, bind at room temperature to negatively pretreated textiles. This reduces energy costs by 800% and water consumption by 40%, while colors last as long as traditional dyes. Dyeing accounts...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/everdye-dyes-textiles-with-static-electricity-no-water-needed-1789791445109brgtr24rs.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260919-environment",
+     "titel": "Recovery and growth: from injured fox to greener cities",
+     "categorie": "Environment",
+     "dag": "2026-09-19",
+     "url": "https://brightnews.online/articles/en/recovery-and-growth-from-injured-fox-to-greener-cities-dg-20260919-environment.html"
+    },
     {
      "id": "dg-20260918-environment",
      "titel": "Green streets, rescued elephants and cleaner fabrics: the week's good news",
@@ -148,34 +134,6 @@
      "categorie": "Science",
      "dag": "2026-09-17",
      "url": "https://brightnews.online/articles/en/satellites-a-chimpanzee-and-ancient-footprints-the-science-of-this-week-dg-20260917-science.html"
-    },
-    {
-     "id": "dg-20260917-lifestyle",
-     "titel": "Silence, nature and a funny fox: the good life this week",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-17",
-     "url": "https://brightnews.online/articles/en/silence-nature-and-a-funny-fox-the-good-life-this-week-dg-20260917-lifestyle.html"
-    },
-    {
-     "id": "dg-20260917-environment",
-     "titel": "From 51 solutions to fungi and foxes: this week's environmental news",
-     "categorie": "Environment",
-     "dag": "2026-09-17",
-     "url": "https://brightnews.online/articles/en/from-51-solutions-to-fungi-and-foxes-this-week-s-environmental-news-dg-20260917-environment.html"
-    },
-    {
-     "id": "dg-20260916-health",
-     "titel": "Caring care: from Afghan clinics to a concussion test",
-     "categorie": "Health",
-     "dag": "2026-09-16",
-     "url": "https://brightnews.online/articles/en/caring-care-from-afghan-clinics-to-a-concussion-test-dg-20260916-health.html"
-    },
-    {
-     "id": "dg-20260916-tech",
-     "titel": "From sign language to houses made from wood waste: technology that solves problems",
-     "categorie": "Tech",
-     "dag": "2026-09-16",
-     "url": "https://brightnews.online/articles/en/from-sign-language-to-houses-made-from-wood-waste-technology-that-solves-problem-dg-20260916-tech.html"
     }
    ]
   },
@@ -188,6 +146,14 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/senior-bridge-containerunterkunfte-fur-obdachlose-senioren-in-phoenix-17897482454609nk17tmq1.html"
+    },
+    {
+     "id": "1789878990544agz0dwnv9",
+     "titel": "Angefahrener Fuchs Chance erholt sich durch Schwimmtherapie",
+     "teaser": "Ein Fuchs namens Chance, der im Juni des vergangenen Jahres in Nottinghamshire angefahren wurde und seine Hinterbeine nicht mehr nutzen konnte, erholt sich dank Hydrotherapie. Ein Passant schlug Alarm, nachdem das Tier tagelang verletzt umhergelaufen war. Ein Tierarzt fürchtete zunächst, dass Chance eingeschläfert werden müsse, aber Wildlife-Retter nahmen ihn auf und begannen eine Rehabilitation mit angeleiteten Schwimmsitzungen im Hundeschwimmbad des...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/angefahrener-fuchs-chance-erholt-sich-durch-schwimmtherapie-1789878990544agz0dwnv9.html"
     },
     {
      "id": "1789791521381pbrbcl1ls",
@@ -212,17 +178,16 @@
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/de/neue-katzenart-tilcayo-in-bolivien-entdeckt-1789791470039iv33h3zat.html"
-    },
-    {
-     "id": "1789791445109brgtr24rs",
-     "titel": "EverDye färbt Textilien mit statischer Elektrizität, kein Wasser nötig",
-     "teaser": "Das französische Startup EverDye hat ungiftige Textilfarbe entwickelt, die sich durch statische Elektrizität an Stoffen haftet, statt durch kochendes Wasser und chemische Fixiermittel. Die positiv geladenen, auf Bioabfall und Mineralien basierenden Pigmente binden bei Raumtemperatur an negativ vorbehandelte Textilien. Dies senkt die Energiekosten um 800% und den Wasserverbrauch um 40%, während die Farben genauso lange halten wie traditionelle Farbe. Das...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/everdye-farbt-textilien-mit-statischer-elektrizitat-kein-wasser-notig-1789791445109brgtr24rs.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260919-environment",
+     "titel": "Genesung und Wachstum: vom Fuchs an Krücken zu grüneren Städten",
+     "categorie": "Environment",
+     "dag": "2026-09-19",
+     "url": "https://brightnews.online/articles/de/genesung-und-wachstum-vom-fuchs-an-krucken-zu-gruneren-stadten-dg-20260919-environment.html"
+    },
     {
      "id": "dg-20260918-environment",
      "titel": "Grüne Straßen, gerettete Elefanten und saubere Stoffe: die guten Nachrichten der Woche",
@@ -236,34 +201,6 @@
      "categorie": "Science",
      "dag": "2026-09-17",
      "url": "https://brightnews.online/articles/de/satelliten-ein-schimpanse-und-alte-spuren-die-wissenschaft-dieser-woche-dg-20260917-science.html"
-    },
-    {
-     "id": "dg-20260917-lifestyle",
-     "titel": "Stille, Natur und ein lustiger Fuchs: das gute Leben dieser Woche",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-17",
-     "url": "https://brightnews.online/articles/de/stille-natur-und-ein-lustiger-fuchs-das-gute-leben-dieser-woche-dg-20260917-lifestyle.html"
-    },
-    {
-     "id": "dg-20260917-environment",
-     "titel": "Von 51 Lösungen bis zu Pilzen und Füchsen: die Umweltnachrichten dieser Woche",
-     "categorie": "Environment",
-     "dag": "2026-09-17",
-     "url": "https://brightnews.online/articles/de/von-51-losungen-bis-zu-pilzen-und-fuchsen-die-umweltnachrichten-dieser-woche-dg-20260917-environment.html"
-    },
-    {
-     "id": "dg-20260916-health",
-     "titel": "Sorgende Pflege: Von afghanischen Kliniken bis zu einem Gehirnerschütterungstest",
-     "categorie": "Health",
-     "dag": "2026-09-16",
-     "url": "https://brightnews.online/articles/de/sorgende-pflege-von-afghanischen-kliniken-bis-zu-einem-gehirnerschutterungstest-dg-20260916-health.html"
-    },
-    {
-     "id": "dg-20260916-tech",
-     "titel": "Von Gebärdensprache bis zu Häusern aus Holzabfall: Technik, die Probleme löst",
-     "categorie": "Tech",
-     "dag": "2026-09-16",
-     "url": "https://brightnews.online/articles/de/von-gebardensprache-bis-zu-hausern-aus-holzabfall-technik-die-probleme-lost-dg-20260916-tech.html"
     }
    ]
   },
@@ -276,6 +213,14 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/senior-bridge-des-logements-conteneurs-pour-les-seniors-sans-abri-a-phoenix-17897482454609nk17tmq1.html"
+    },
+    {
+     "id": "1789878990544agz0dwnv9",
+     "titel": "Le petit renard Chance se rétablit grâce à des séances de natation",
+     "teaser": "Un jeune renard nommé Chance, percuté par une voiture en juin dernier dans le Nottinghamshire et ayant perdu l'usage de ses pattes arrière, se rétablit grâce à l'hydrothérapie. Un passant a donné l'alerte après que l'animal ait erré blessé pendant plusieurs jours. Un vétérinaire a d'abord craint devoir l'euthanasier, mais les sauveteurs de la faune l'ont pris en charge et...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/le-petit-renard-chance-se-retablit-grace-a-des-seances-de-natation-1789878990544agz0dwnv9.html"
     },
     {
      "id": "1789791521381pbrbcl1ls",
@@ -300,17 +245,16 @@
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/fr/nouvelle-espece-de-chat-tilcayo-decouverte-en-bolivie-1789791470039iv33h3zat.html"
-    },
-    {
-     "id": "1789791445109brgtr24rs",
-     "titel": "EverDye teint les textiles par électricité statique, sans eau",
-     "teaser": "La startup française EverDye a développé une teinture textile non toxique qui adhère aux tissus par électricité statique, au lieu de passer par de l'eau bouillante et des fixateurs chimiques. Les pigments chargés positivement, à base de déchets biologiques et de minéraux, se lient à température ambiante aux textiles prétraités négativement. Cela réduit les coûts énergétiques de 800 % et...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/everdye-teint-les-textiles-par-electricite-statique-sans-eau-1789791445109brgtr24rs.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260919-environment",
+     "titel": "Rétablissement et croissance : du renard sur béquilles aux villes plus vertes",
+     "categorie": "Environment",
+     "dag": "2026-09-19",
+     "url": "https://brightnews.online/articles/fr/retablissement-et-croissance-du-renard-sur-bequilles-aux-villes-plus-vertes-dg-20260919-environment.html"
+    },
     {
      "id": "dg-20260918-environment",
      "titel": "Des rues vertes, des éléphants sauvés et des tissus plus propres : les bonnes nouvelles de la semaine",
@@ -324,34 +268,6 @@
      "categorie": "Science",
      "dag": "2026-09-17",
      "url": "https://brightnews.online/articles/fr/satellites-un-chimpanze-et-des-traces-anciennes-la-science-de-cette-semaine-dg-20260917-science.html"
-    },
-    {
-     "id": "dg-20260917-lifestyle",
-     "titel": "Silence, nature et un renard amusant : la belle vie de cette semaine",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-17",
-     "url": "https://brightnews.online/articles/fr/silence-nature-et-un-renard-amusant-la-belle-vie-de-cette-semaine-dg-20260917-lifestyle.html"
-    },
-    {
-     "id": "dg-20260917-environment",
-     "titel": "De 51 solutions aux champignons et aux renards : l'actualité environnementale de la semaine",
-     "categorie": "Environment",
-     "dag": "2026-09-17",
-     "url": "https://brightnews.online/articles/fr/de-51-solutions-aux-champignons-et-aux-renards-l-actualite-environnementale-de-l-dg-20260917-environment.html"
-    },
-    {
-     "id": "dg-20260916-health",
-     "titel": "Des soins attentionnés : des cliniques afghanes à un test contre les commotions cérébrales",
-     "categorie": "Health",
-     "dag": "2026-09-16",
-     "url": "https://brightnews.online/articles/fr/des-soins-attentionnes-des-cliniques-afghanes-a-un-test-contre-les-commotions-ce-dg-20260916-health.html"
-    },
-    {
-     "id": "dg-20260916-tech",
-     "titel": "Du langage des signes aux maisons en déchets de bois : la technologie qui résout les problèmes",
-     "categorie": "Tech",
-     "dag": "2026-09-16",
-     "url": "https://brightnews.online/articles/fr/du-langage-des-signes-aux-maisons-en-dechets-de-bois-la-technologie-qui-resout-l-dg-20260916-tech.html"
     }
    ]
   },
@@ -364,6 +280,14 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/senior-bridge-viviendas-contenedor-para-adultos-mayores-sin-hogar-en-phoenix-17897482454609nk17tmq1.html"
+    },
+    {
+     "id": "1789878990544agz0dwnv9",
+     "titel": "El zorro Chance se recupera gracias a lecciones de natación",
+     "teaser": "Un zorro llamado Chance, que fue atropellado en junio del año pasado en Nottinghamshire y perdió la movilidad de sus patas traseras, se recupera gracias a la hidroterapia. Un transeúnte dio la alarma después de que el animal hubiera estado herido varios días. Un veterinario temía al principio que Chance tuviera que ser sacrificado, pero los rescatistas de fauna silvestre...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/el-zorro-chance-se-recupera-gracias-a-lecciones-de-natacion-1789878990544agz0dwnv9.html"
     },
     {
      "id": "1789791521381pbrbcl1ls",
@@ -388,17 +312,16 @@
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/es/nueva-especie-felina-tilcayo-descubierta-en-bolivia-1789791470039iv33h3zat.html"
-    },
-    {
-     "id": "1789791445109brgtr24rs",
-     "titel": "EverDye tiñe textiles con electricidad estática, sin agua",
-     "teaser": "La startup francesa EverDye ha desarrollado un tinte textil no tóxico que se adhiere a los tejidos mediante electricidad estática, en lugar de agua hirviendo y fijadores químicos. Los pigmentos cargados positivamente, basados en residuos biológicos y minerales, se unen a temperatura ambiente a textiles pretratados con carga negativa. Esto reduce los costos energéticos en un 800% y el consumo...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/everdye-tine-textiles-con-electricidad-estatica-sin-agua-1789791445109brgtr24rs.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260919-environment",
+     "titel": "Recuperación y crecimiento: de un zorro con muletas a ciudades más verdes",
+     "categorie": "Environment",
+     "dag": "2026-09-19",
+     "url": "https://brightnews.online/articles/es/recuperacion-y-crecimiento-de-un-zorro-con-muletas-a-ciudades-mas-verdes-dg-20260919-environment.html"
+    },
     {
      "id": "dg-20260918-environment",
      "titel": "Calles verdes, elefantes salvados y telas más limpias: las buenas noticias de la semana",
@@ -412,34 +335,6 @@
      "categorie": "Science",
      "dag": "2026-09-17",
      "url": "https://brightnews.online/articles/es/satelites-un-chimpance-y-huellas-antiguas-la-ciencia-de-esta-semana-dg-20260917-science.html"
-    },
-    {
-     "id": "dg-20260917-lifestyle",
-     "titel": "Silencio, naturaleza y un zorro divertido: la buena vida de esta semana",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-17",
-     "url": "https://brightnews.online/articles/es/silencio-naturaleza-y-un-zorro-divertido-la-buena-vida-de-esta-semana-dg-20260917-lifestyle.html"
-    },
-    {
-     "id": "dg-20260917-environment",
-     "titel": "De 51 soluciones al cuidado de hongos y un cantautor que rescata zorros: las noticias ambientales de esta semana",
-     "categorie": "Environment",
-     "dag": "2026-09-17",
-     "url": "https://brightnews.online/articles/es/de-51-soluciones-al-cuidado-de-hongos-y-un-cantautor-que-rescata-zorros-las-noti-dg-20260917-environment.html"
-    },
-    {
-     "id": "dg-20260916-health",
-     "titel": "Cuidado atento: de clínicas afganas a una prueba contra conmociones cerebrales",
-     "categorie": "Health",
-     "dag": "2026-09-16",
-     "url": "https://brightnews.online/articles/es/cuidado-atento-de-clinicas-afganas-a-una-prueba-contra-conmociones-cerebrales-dg-20260916-health.html"
-    },
-    {
-     "id": "dg-20260916-tech",
-     "titel": "Del lenguaje de signos a casas hechas de residuos de madera: la tecnología que resuelve problemas",
-     "categorie": "Tech",
-     "dag": "2026-09-16",
-     "url": "https://brightnews.online/articles/es/del-lenguaje-de-signos-a-casas-hechas-de-residuos-de-madera-la-tecnologia-que-re-dg-20260916-tech.html"
     }
    ]
   }

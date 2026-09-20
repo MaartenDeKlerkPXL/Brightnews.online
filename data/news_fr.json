@@ -1,5 +1,80 @@
 [
   {
+    "id": "dg-20260919-environment",
+    "type": "digest",
+    "digest_date": "2026-09-19",
+    "title": "Rétablissement et croissance : du renard sur béquilles aux villes plus vertes",
+    "summary": "Ces jours-ci montrent à quel point la nature peut être résiliente, et comment les villes l'aident elles-mêmes. D'un renard qui apprend à nager pour pouvoir remarcher, à des crabes qui reviennent en masse dans une baie, en passant par un supermarché avec un potager sur le toit et une avenue américaine qui retrouve son caractère vert. Quatre histoires, un seul sentiment : c'est possible de faire mieux, et cela se fait déjà. Dans le Nottinghamshire, le renard Chance se rétablit après un accident de la route qui avait paralysé ses pattes arrière. Grâce à l'hydrothérapie dans une piscine pour chiens,...",
+    "image_alt": "Rétablissement et croissance : du renard sur béquilles aux villes plus vertes",
+    "meta_description": "Le renard Chance apprend à nager, les crabes reviennent, et les villes verdissent : les bonnes nouvelles de la nature de ces jours-ci en un coup d'œil.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Fox-gets-hydrotherapy-at-Mansfield-Canine-Centre-by-Tom-Maddick-for-SWNS.jpeg",
+    "date": "2026-09-20T04:37:55.385Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1789878990544agz0dwnv9",
+        "title": "Le petit renard Chance se rétablit grâce à des séances de natation"
+      },
+      {
+        "id": "1789879018001kzroh4o2p",
+        "title": "Les crabes bleus de la Chesapeake Bay font un retour remarquable"
+      },
+      {
+        "id": "1789878960689vhpw1qp4x",
+        "title": "New York redonne à Park Avenue son caractère de parc verdoyant et piste cyclable"
+      },
+      {
+        "id": "1789748188321cbyjxyyfa",
+        "title": "Un supermarché REWE à Berlin cultive de la laitue sur son toit"
+      }
+    ]
+  },
+  {
+    "id": "1789879018001kzroh4o2p",
+    "title": "Les crabes bleus de la Chesapeake Bay font un retour remarquable",
+    "summary": "Les défenseurs de la nature voient une bonne nouvelle dans la Chesapeake Bay : l'étude annuelle de dragage hivernal menée par Maryland DNR et le Virginia Institute of Marine Sciences dénombre cette année 349 millions de crabes bleus, une augmentation de 46% par rapport à l'année précédente et le niveau le plus élevé depuis 2019. Le nombre de crabes juvéniles,...",
+    "image_alt": "Crabes bleus dans la Chesapeake Bay",
+    "meta_description": "Les crabes bleus de la Chesapeake Bay augmentent de 46% à 349 millions, niveau le plus élevé depuis 2019, grâce aux mesures de restauration.",
+    "meta_keywords": "Chesapeake Bay, crabe bleu, restauration des populations, Maryland, Virginie, herbier aquatique, conservation de la nature, silure bleu",
+    "link": "https://www.goodnewsnetwork.org/chesapeake-bay-blue-crab-numbers-see-encouraging-bounceback-in-new-survey/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Blue-crabs-by-J-Thomas-vM1Lz1ftMU8-unsplash.jpg",
+    "date": "2026-09-20T04:37:00.095Z",
+    "category": "Environment",
+    "score": 8
+  },
+  {
+    "id": "1789878990544agz0dwnv9",
+    "title": "Le petit renard Chance se rétablit grâce à des séances de natation",
+    "summary": "Un jeune renard nommé Chance, percuté par une voiture en juin dernier dans le Nottinghamshire et ayant perdu l'usage de ses pattes arrière, se rétablit grâce à l'hydrothérapie. Un passant a donné l'alerte après que l'animal ait erré blessé pendant plusieurs jours. Un vétérinaire a d'abord craint devoir l'euthanasier, mais les sauveteurs de la faune l'ont pris en charge et...",
+    "image_alt": "Un jeune renard est accompagné lors d'une séance d'hydrothérapie dans une piscine pour chiens",
+    "meta_description": "Le jeune renard Chance se rétablit après des séances d'hydrothérapie et a une chance de retourner à la nature.",
+    "meta_keywords": "renard, Chance, hydrothérapie, wildlife rescue, Mansfield, réadaptation animale, animal percuté",
+    "link": "https://www.goodnewsnetwork.org/fox-left-for-dead-on-road-is-recovering-thanks-to-swim-lessons/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Fox-gets-hydrotherapy-at-Mansfield-Canine-Centre-by-Tom-Maddick-for-SWNS.jpeg",
+    "date": "2026-09-20T04:36:31.937Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1789878960689vhpw1qp4x",
+    "title": "New York redonne à Park Avenue son caractère de parc verdoyant et piste cyclable",
+    "summary": "New York City a dévoilé un nouveau plan pour redonner à Park Avenue son caractère vert d'origine. La maire Mamdani et le NYC Department of Transportation rénovent 11 blocs de la rue, de la 46e à la 57e rue, en fonction des retours des résidents qui demandaient plus d'espaces verts et de sécurité pour les cyclistes. Le projet élargit le...",
+    "image_alt": "Conception de Park Avenue avec terre-plein central verdoyant, bancs et piste cyclable protégée à New York",
+    "meta_description": "New York transforme Park Avenue avec des terre-pleins verts et une piste cyclable protégée sur 11 blocs.",
+    "meta_keywords": "Park Avenue, New York, piste cyclable, espace vert, Mamdani, NYC DOT, Grand Central Terminal",
+    "link": "https://www.goodnewsnetwork.org/new-york-city-is-putting-the-park-back-in-park-avenue/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Park-Avenue-redesign-in-NYC-Credit-Starr-Whitehouse-Landscape-Architects-and-Planners.jpeg",
+    "date": "2026-09-20T04:36:03.452Z",
+    "category": "Environment",
+    "score": 8
+  },
+  {
     "id": "1789832772703vb1b4cr0s",
     "title": "Des archéologues sauvent des découvertes Yup'ik millénaires en Alaska",
     "summary": "Après la tempête provoquée par les restes du typhon Halong l'année dernière, des milliers d'objets anciens se sont échappés du site de fouilles Nunalleq près du village d'Alaska Quinhagak. L'habitante Jenny Matthew a découvert avec son mari un bol en bois datant de 400 à 600 ans. La tempête a endommagé les maisons et les infrastructures, et a déstabilisé la...",
@@ -2561,61 +2636,5 @@
     "date": "2026-09-05T22:22:06.557Z",
     "category": "Health",
     "score": 7
-  },
-  {
-    "id": "1788646893749jxnk1djbc",
-    "title": "Managers et coaching: aux prises avec l'approche",
-    "summary": "Une étude montre que les managers ont souvent du mal à coacher leurs collaborateurs. Des chercheurs ont examiné comment améliorer la situation et proposent une approche alternative. Des détails supplémentaires sur les conclusions précises manquent dans la source.",
-    "image_alt": "Manager en conversation avec un collaborateur sur le lieu de travail",
-    "meta_description": "Une étude montre que les managers peinent au coaching. Découvrez l'approche que les experts recommandent comme alternative.",
-    "meta_keywords": "coaching, management, worklife, leadership, étude",
-    "link": "https://www.optimistdaily.com/2026/09/why-managers-struggle-with-coaching-and-what-the-research-says-to-do-instead/",
-    "source": "OptimistDaily.com",
-    "image": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_236789974_L-1024x684.jpg",
-    "date": "2026-09-05T22:21:35.506Z",
-    "category": "Lifestyle",
-    "score": 7
-  },
-  {
-    "id": "1788646374928jb3dwznzx",
-    "title": "Gloria Steinem et son magazine Ms révolutionnaire",
-    "summary": "La féministe, journaliste et militante Gloria Steinem est décédée à l'âge de 92 ans. En 1972, elle a fondé Ms Magazine, le premier magazine entièrement détenu, dirigé et écrit par des femmes. Dans une interview de la BBC en 1973, Steinem a expliqué que le magazine était différent parce qu'il considérait simplement les femmes comme des êtres humains. Elle a...",
-    "image_alt": "Gloria Steinem lors d'une interview, entourée de papiers et d'affiches sur les droits des femmes",
-    "meta_description": "Gloria Steinem, fondatrice de Ms Magazine et pionnière du féminisme, est décédée à l'âge de 92 ans.",
-    "meta_keywords": "Gloria Steinem, Ms Magazine, féminisme, égalité des sexes, droits des femmes, militantisme",
-    "link": "https://www.bbc.com/culture/article/20240322-gloria-steinem-trailblazing-magazine-for-women?ocid=global_culture_rss",
-    "source": "BBC.com/culture",
-    "image": "https://ychef.files.bbci.co.uk/800x450/p0hld7th.jpg",
-    "date": "2026-09-05T22:12:56.128Z",
-    "category": "Lifestyle",
-    "score": 7
-  },
-  {
-    "id": "1788646293341dp95431ip",
-    "title": "Percée dans la Recherche sur l'Autisme Grave",
-    "summary": "Des chercheurs de l'UC San Francisco ont cartographié plus de mille interactions protéiques liées à l'autisme profond, une forme grave d'autisme. L'étude, publiée dans la revue Science, a utilisé des organoïdes cérébraux pour examiner comment les mutations génétiques peuvent conduire à ce trouble. Les experts la qualifient de source sans précédent pour le domaine, offrant de nouveaux points d'ancrage pour...",
-    "image_alt": "Coupe transversale d'un organoïde cérébral utilisé dans la recherche sur l'autisme",
-    "meta_description": "Les chercheurs de l'UCSF cartographient les interactions protéiques qui éclairent l'autisme profond et rendent possibles de nouveaux médicaments.",
-    "meta_keywords": "autisme profond, recherche sur l'autisme, interactions protéiques, UCSF, revue Science, organoïdes cérébraux, mutations génétiques, développement de médicaments",
-    "link": "https://www.npr.org/2026/09/04/nx-s1-5954823/profound-autism-proteins-genes-map-treatments",
-    "source": "NPR.org",
-    "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/584x329+0+40/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F37%2F4e%2F433de3394daa9ec7a41a290122d3%2Fe85419a9-bc96-44a2-adde-7593e090165d.jpg",
-    "date": "2026-09-05T22:11:35.061Z",
-    "category": "Science",
-    "score": 7
-  },
-  {
-    "id": "1788646234804g1sgv91ia",
-    "title": "Le châtaignier américain reçoit une bouée de sauvetage génétique",
-    "summary": "Le châtaignier américain, autrefois dominant dans les forêts de l'est des États-Unis, a été presque anéanti par une maladie fongique mortelle. Désormais, il y a de l'espoir : un projet de châtaigniers génétiquement modifiés et résistants aux maladies a atteint une étape importante. Andrew Newhouse, biologiste et directeur du American Chestnut Research and Restoration Project à la State University of...",
-    "image_alt": "Châtaignier américain dans la forêt",
-    "meta_description": "Le châtaignier génétiquement modifié offre de l'espoir après une quasi-extinction due à une maladie fongique, selon le biologiste Newhouse.",
-    "meta_keywords": "châtaignier américain, modification génétique, conservation de la nature, maladie fongique, biotechnologie, restauration forestière",
-    "link": "https://www.npr.org/2026/09/05/nx-s1-5954830/biologist-andrew-newhouse-on-the-genetic-revival-of-the-american-chestnut",
-    "source": "NPR.org",
-    "image": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
-    "date": "2026-09-05T22:10:36.114Z",
-    "category": "Science",
-    "score": 9
   }
 ]

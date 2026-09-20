@@ -1,5 +1,80 @@
 [
   {
+    "id": "dg-20260919-environment",
+    "type": "digest",
+    "digest_date": "2026-09-19",
+    "title": "Recuperación y crecimiento: de un zorro con muletas a ciudades más verdes",
+    "summary": "Estos días demuestran lo resiliente que puede ser la naturaleza, y cómo las ciudades mismas le echan una mano. Desde un zorro que aprende a nadar para volver a caminar, hasta cangrejos que regresan masivamente a una bahía, y desde un supermercado con huerto en la azotea hasta una avenida estadounidense que recupera su carácter verde. Cuatro historias, un mismo sentimiento: puede mejorar, y ya está sucediendo. En Nottinghamshire, el zorro Chance se recupera tras un accidente que le había paralizado las patas traseras. Gracias a la hidroterapia en una piscina para perros, acompañado por la cuidadora Chelsea, siente cada...",
+    "image_alt": "Recuperación y crecimiento: de un zorro con muletas a ciudades más verdes",
+    "meta_description": "El zorro Chance aprende a nadar, los cangrejos se recuperan y las ciudades se vuelven más verdes: las noticias positivas sobre la naturaleza de estos días ",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Fox-gets-hydrotherapy-at-Mansfield-Canine-Centre-by-Tom-Maddick-for-SWNS.jpeg",
+    "date": "2026-09-20T04:37:55.385Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1789878990544agz0dwnv9",
+        "title": "El zorro Chance se recupera gracias a lecciones de natación"
+      },
+      {
+        "id": "1789879018001kzroh4o2p",
+        "title": "Los cangrejos azules de la bahía de Chesapeake se recuperan con fuerza"
+      },
+      {
+        "id": "1789878960689vhpw1qp4x",
+        "title": "Nueva York devuelve a Park Avenue su carácter de parque verde y carril bici"
+      },
+      {
+        "id": "1789748188321cbyjxyyfa",
+        "title": "Supermercado REWE en Berlín tiene huerto en la azotea"
+      }
+    ]
+  },
+  {
+    "id": "1789879018001kzroh4o2p",
+    "title": "Los cangrejos azules de la bahía de Chesapeake se recuperan con fuerza",
+    "summary": "Los conservacionistas ven buenas noticias en la bahía de Chesapeake: el estudio anual de dragado invernal del Maryland DNR y el Virginia Institute of Marine Sciences contabiliza este año 349 millones de cangrejos azules, un aumento del 46% respecto al año anterior y el nivel más alto desde 2019. También el número de cangrejos juveniles, estimado en 228 millones, es...",
+    "image_alt": "Cangrejos azules en la bahía de Chesapeake",
+    "meta_description": "Los cangrejos azules de la bahía de Chesapeake aumentan un 46% hasta 349 millones, nivel más alto desde 2019, gracias a medidas de recuperación.",
+    "meta_keywords": "bahía de Chesapeake, cangrejo azul, recuperación poblacional, Maryland, Virginia, hierba marina, conservación, bagre azul",
+    "link": "https://www.goodnewsnetwork.org/chesapeake-bay-blue-crab-numbers-see-encouraging-bounceback-in-new-survey/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Blue-crabs-by-J-Thomas-vM1Lz1ftMU8-unsplash.jpg",
+    "date": "2026-09-20T04:37:00.095Z",
+    "category": "Environment",
+    "score": 8
+  },
+  {
+    "id": "1789878990544agz0dwnv9",
+    "title": "El zorro Chance se recupera gracias a lecciones de natación",
+    "summary": "Un zorro llamado Chance, que fue atropellado en junio del año pasado en Nottinghamshire y perdió la movilidad de sus patas traseras, se recupera gracias a la hidroterapia. Un transeúnte dio la alarma después de que el animal hubiera estado herido varios días. Un veterinario temía al principio que Chance tuviera que ser sacrificado, pero los rescatistas de fauna silvestre...",
+    "image_alt": "Un zorro joven es guiado durante una sesión de hidroterapia en una piscina para perros",
+    "meta_description": "El zorro Chance se recupera tras sesiones de hidroterapia en piscina y tiene oportunidad de volver a la naturaleza.",
+    "meta_keywords": "zorro, Chance, hidroterapia, wildlife rescue, Mansfield, rehabilitación animal, animal atropellado",
+    "link": "https://www.goodnewsnetwork.org/fox-left-for-dead-on-road-is-recovering-thanks-to-swim-lessons/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Fox-gets-hydrotherapy-at-Mansfield-Canine-Centre-by-Tom-Maddick-for-SWNS.jpeg",
+    "date": "2026-09-20T04:36:31.937Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1789878960689vhpw1qp4x",
+    "title": "Nueva York devuelve a Park Avenue su carácter de parque verde y carril bici",
+    "summary": "Nueva York ha revelado un nuevo plan para devolver Park Avenue a su carácter verde original. La alcaldesa Mamdani y el NYC Department of Transportation renovarán 11 cuadras de la calle, desde la calle 46 hasta la 57, basándose en comentarios de residentes que solicitaban más espacios verdes y seguridad para ciclistas. El diseño amplía la mediana central con bancos,...",
+    "image_alt": "Diseño de Park Avenue con mediana verde, bancos y carril bici protegido en Nueva York",
+    "meta_description": "Nueva York transforma Park Avenue con medianas verdes y un carril bici protegido en 11 cuadras.",
+    "meta_keywords": "Park Avenue, Nueva York, carril bici, espacio verde, Mamdani, NYC DOT, Grand Central Terminal",
+    "link": "https://www.goodnewsnetwork.org/new-york-city-is-putting-the-park-back-in-park-avenue/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Park-Avenue-redesign-in-NYC-Credit-Starr-Whitehouse-Landscape-Architects-and-Planners.jpeg",
+    "date": "2026-09-20T04:36:03.452Z",
+    "category": "Environment",
+    "score": 8
+  },
+  {
     "id": "1789832772703vb1b4cr0s",
     "title": "Arqueólogos rescatan hallazgos Yup'ik milenarios en Alaska",
     "summary": "Tras la tormenta originada por los restos del Tifón Halong el año pasado, miles de objetos milenarios fueron arrastrados desde el sitio de excavación Nunalleq cerca del pueblo de Quinhagak en Alaska. La residente Jenny Matthew encontró junto a su marido un cuenco de madera de entre 400 y 600 años de antigüedad. La tormenta dañó casas e infraestructura, y...",
@@ -2561,61 +2636,5 @@
     "date": "2026-09-05T22:22:06.557Z",
     "category": "Health",
     "score": 7
-  },
-  {
-    "id": "1788646893749jxnk1djbc",
-    "title": "Directivos y coaching: dificultades con el enfoque",
-    "summary": "Una investigación muestra que los directivos a menudo tienen dificultades para entrenar a sus empleados. Los investigadores han examinado cómo mejorar esto y ofrecen un enfoque alternativo. Faltan más detalles sobre los hallazgos precisos en la fuente.",
-    "image_alt": "Directivo en conversación con empleado en el lugar de trabajo",
-    "meta_description": "La investigación muestra que los directivos luchan con el coaching. Lee qué enfoque recomiendan los expertos como alternativa.",
-    "meta_keywords": "coaching, management, worklife, liderazgo, investigación",
-    "link": "https://www.optimistdaily.com/2026/09/why-managers-struggle-with-coaching-and-what-the-research-says-to-do-instead/",
-    "source": "OptimistDaily.com",
-    "image": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_236789974_L-1024x684.jpg",
-    "date": "2026-09-05T22:21:35.506Z",
-    "category": "Lifestyle",
-    "score": 7
-  },
-  {
-    "id": "1788646374928jb3dwznzx",
-    "title": "Gloria Steinem y su revolucionaria Ms Magazine",
-    "summary": "La feminista, periodista y activista Gloria Steinem falleció a los 92 años de edad. En 1972 fundó Ms Magazine, la primera revista que era completamente propiedad de, dirigida por y escrita por mujeres. En una entrevista de la BBC de 1973, Steinem explicó que la revista era diferente porque consideraba a las mujeres simplemente como personas. Fundó la revista porque...",
-    "image_alt": "Gloria Steinem durante una entrevista, rodeada de papeles y carteles sobre derechos de las mujeres",
-    "meta_description": "Gloria Steinem, fundadora de Ms Magazine y pionera del feminismo, falleció a los 92 años de edad.",
-    "meta_keywords": "Gloria Steinem, Ms Magazine, feminismo, igualdad de género, derechos de las mujeres, activismo",
-    "link": "https://www.bbc.com/culture/article/20240322-gloria-steinem-trailblazing-magazine-for-women?ocid=global_culture_rss",
-    "source": "BBC.com/culture",
-    "image": "https://ychef.files.bbci.co.uk/800x450/p0hld7th.jpg",
-    "date": "2026-09-05T22:12:56.128Z",
-    "category": "Lifestyle",
-    "score": 7
-  },
-  {
-    "id": "1788646293341dp95431ip",
-    "title": "Avance en Investigación sobre Autismo Grave",
-    "summary": "Investigadores de UC San Francisco han mapeado más de mil interacciones proteicas vinculadas al autismo profundo, una forma grave de autismo. El estudio, publicado en la revista Science, utilizó organoides cerebrales para examinar cómo las mutaciones genéticas pueden conducir a este trastorno. Los expertos lo consideran una fuente sin precedentes para el campo que ofrece nuevos puntos de partida para...",
-    "image_alt": "Sección transversal de un organoide cerebral utilizado en investigación sobre autismo",
-    "meta_description": "Investigadores de UCSF mapean interacciones proteicas que arrojan luz sobre el autismo profundo y hacen posibles nuevos medicamentos.",
-    "meta_keywords": "autismo profundo, investigación de autismo, interacciones proteicas, UCSF, revista Science, organoides cerebrales, mutaciones genéticas, desarrollo de medicamentos",
-    "link": "https://www.npr.org/2026/09/04/nx-s1-5954823/profound-autism-proteins-genes-map-treatments",
-    "source": "NPR.org",
-    "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/584x329+0+40/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F37%2F4e%2F433de3394daa9ec7a41a290122d3%2Fe85419a9-bc96-44a2-adde-7593e090165d.jpg",
-    "date": "2026-09-05T22:11:35.061Z",
-    "category": "Science",
-    "score": 7
-  },
-  {
-    "id": "1788646234804g1sgv91ia",
-    "title": "El castaño americano recibe un salvavidas genético",
-    "summary": "El castaño americano, antaño dominante en los bosques orientales de EE.UU., fue casi exterminado por una enfermedad fúngica mortal. Ahora hay esperanza: un proyecto de castaños genéticamente modificados y resistentes a enfermedades ha alcanzado un hito importante. Andrew Newhouse, biólogo y director del American Chestnut Research and Restoration Project en la State University of New York, explica que han recibido...",
-    "image_alt": "Castaño americano en el bosque",
-    "meta_description": "El castaño americano genéticamente modificado ofrece esperanza tras casi desaparecer por enfermedad fúngica, según el biólogo Newhouse.",
-    "meta_keywords": "castaño americano, modificación genética, conservación de la naturaleza, enfermedad fúngica, biotecnología, restauración forestal",
-    "link": "https://www.npr.org/2026/09/05/nx-s1-5954830/biologist-andrew-newhouse-on-the-genetic-revival-of-the-american-chestnut",
-    "source": "NPR.org",
-    "image": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
-    "date": "2026-09-05T22:10:36.115Z",
-    "category": "Science",
-    "score": 9
   }
 ]

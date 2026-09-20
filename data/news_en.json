@@ -1,5 +1,80 @@
 [
   {
+    "id": "dg-20260919-environment",
+    "type": "digest",
+    "digest_date": "2026-09-19",
+    "title": "Recovery and growth: from injured fox to greener cities",
+    "summary": "These days show just how resilient nature can be, and how cities are lending a hand. From a fox learning to swim so it can walk again, to crabs returning en masse to a bay, and from a supermarket with a rooftop vegetable garden to an American avenue reclaiming its green character. Four stories, one feeling: things can get better, and they already are. In Nottinghamshire, fox Chance is recovering after a car accident that left his hind legs paralyzed. Thanks to hydrotherapy in a dog swimming pool, guided by caretaker Chelsea, he's regaining more and more feeling in his...",
+    "image_alt": "Recovery and growth: from injured fox to greener cities",
+    "meta_description": "Fox Chance learns to swim, crabs bounce back, and cities turn greener: this week's positive nature news roundup.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Fox-gets-hydrotherapy-at-Mansfield-Canine-Centre-by-Tom-Maddick-for-SWNS.jpeg",
+    "date": "2026-09-20T04:37:55.385Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1789878990544agz0dwnv9",
+        "title": "Hit-and-run fox Chance recovers thanks to swimming lessons"
+      },
+      {
+        "id": "1789879018001kzroh4o2p",
+        "title": "Blue crabs in Chesapeake Bay make strong comeback"
+      },
+      {
+        "id": "1789878960689vhpw1qp4x",
+        "title": "New York gives Park Avenue back its green park and bike lane"
+      },
+      {
+        "id": "1789748188321cbyjxyyfa",
+        "title": "Berlin REWE supermarket has rooftop garden above the store"
+      }
+    ]
+  },
+  {
+    "id": "1789879018001kzroh4o2p",
+    "title": "Blue crabs in Chesapeake Bay make strong comeback",
+    "summary": "Conservationists are seeing good news in the Chesapeake Bay: Maryland DNR and the Virginia Institute of Marine Sciences' annual winter dredge survey counted 349 million blue crabs this year, a 46% increase from last year and the highest level since 2019. The number of juvenile crabs, estimated at 228 million, is also the highest since 2019. Warming water and the...",
+    "image_alt": "Blue crabs in the Chesapeake Bay",
+    "meta_description": "Blue crabs in the Chesapeake Bay rise 46% to 349 million, highest level since 2019, thanks to restoration measures.",
+    "meta_keywords": "Chesapeake Bay, blue crab, population recovery, Maryland, Virginia, seagrass, conservation, blue catfish",
+    "link": "https://www.goodnewsnetwork.org/chesapeake-bay-blue-crab-numbers-see-encouraging-bounceback-in-new-survey/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Blue-crabs-by-J-Thomas-vM1Lz1ftMU8-unsplash.jpg",
+    "date": "2026-09-20T04:37:00.095Z",
+    "category": "Environment",
+    "score": 8
+  },
+  {
+    "id": "1789878990544agz0dwnv9",
+    "title": "Hit-and-run fox Chance recovers thanks to swimming lessons",
+    "summary": "A fox named Chance, who was hit by a car in Nottinghamshire last June and lost the use of his hind legs, is making a recovery thanks to hydrotherapy. A passerby raised the alarm after the animal had been lying injured for days. A veterinarian initially feared Chance would have to be euthanized, but wildlife rescuers took him in and...",
+    "image_alt": "A young fox is guided during a hydrotherapy session in a dog swimming pool",
+    "meta_description": "Hit-and-run fox Chance recovers after hydrotherapy swimming lessons and gets a chance to return to the wild.",
+    "meta_keywords": "fox, Chance, hydrotherapy, wildlife rescue, Mansfield, animal rehabilitation, hit-and-run animal",
+    "link": "https://www.goodnewsnetwork.org/fox-left-for-dead-on-road-is-recovering-thanks-to-swim-lessons/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Fox-gets-hydrotherapy-at-Mansfield-Canine-Centre-by-Tom-Maddick-for-SWNS.jpeg",
+    "date": "2026-09-20T04:36:31.937Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1789878960689vhpw1qp4x",
+    "title": "New York gives Park Avenue back its green park and bike lane",
+    "summary": "New York City has unveiled a new plan to restore Park Avenue to its original green character. Mayor Mamdani and the NYC Department of Transportation are renovating 11 blocks of the street, from 46th to 57th Street, based on feedback from residents who requested more greenery and safer conditions for cyclists. The design widens the central median with benches, plantings...",
+    "image_alt": "Design of Park Avenue with green median, benches and protected bike lane in New York",
+    "meta_description": "New York transforms Park Avenue with green medians and a protected bike lane across 11 blocks.",
+    "meta_keywords": "Park Avenue, New York, bike lane, green space, Mamdani, NYC DOT, Grand Central Terminal",
+    "link": "https://www.goodnewsnetwork.org/new-york-city-is-putting-the-park-back-in-park-avenue/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Park-Avenue-redesign-in-NYC-Credit-Starr-Whitehouse-Landscape-Architects-and-Planners.jpeg",
+    "date": "2026-09-20T04:36:03.452Z",
+    "category": "Environment",
+    "score": 8
+  },
+  {
     "id": "1789832772703vb1b4cr0s",
     "title": "Archaeologists rescue ancient Yup'ik artifacts in Alaska",
     "summary": "Following the storm spawned by Typhoon Halong's remnants last year, thousands of ancient objects washed out of the Nunalleq excavation site near the Alaskan village of Quinhagak. Resident Jenny Matthew discovered a wooden bowl dating back 400 to 600 years together with her husband. The storm damaged homes and infrastructure, and loosened the tundra, causing further soil erosion around the...",
@@ -2561,61 +2636,5 @@
     "date": "2026-09-05T22:22:06.557Z",
     "category": "Health",
     "score": 7
-  },
-  {
-    "id": "1788646893749jxnk1djbc",
-    "title": "Managers and coaching: struggling with the approach",
-    "summary": "Research shows that managers often struggle with coaching their employees. Researchers have examined what could be improved and offer an alternative approach. Further details about the precise findings are missing from the source.",
-    "image_alt": "Manager in conversation with employee on the work floor",
-    "meta_description": "Research shows managers struggle with coaching. Read which approach experts recommend as an alternative.",
-    "meta_keywords": "coaching, management, worklife, leadership, research",
-    "link": "https://www.optimistdaily.com/2026/09/why-managers-struggle-with-coaching-and-what-the-research-says-to-do-instead/",
-    "source": "OptimistDaily.com",
-    "image": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_236789974_L-1024x684.jpg",
-    "date": "2026-09-05T22:21:35.506Z",
-    "category": "Lifestyle",
-    "score": 7
-  },
-  {
-    "id": "1788646374928jb3dwznzx",
-    "title": "Gloria Steinem and her groundbreaking Ms Magazine",
-    "summary": "Feminist, journalist and activist Gloria Steinem has died at the age of 92. In 1972, she founded Ms Magazine, the first magazine that was entirely owned by, run by and written by women. In a 1973 BBC interview, Steinem explained that the magazine was different because it simply regarded women as people. She founded the magazine because existing women's magazines...",
-    "image_alt": "Gloria Steinem during an interview, surrounded by papers and posters about women's rights",
-    "meta_description": "Gloria Steinem, founder of Ms Magazine and pioneer of feminism, has died at the age of 92.",
-    "meta_keywords": "Gloria Steinem, Ms Magazine, feminism, gender equality, women's rights, activism",
-    "link": "https://www.bbc.com/culture/article/20240322-gloria-steinem-trailblazing-magazine-for-women?ocid=global_culture_rss",
-    "source": "BBC.com/culture",
-    "image": "https://ychef.files.bbci.co.uk/800x450/p0hld7th.jpg",
-    "date": "2026-09-05T22:12:56.128Z",
-    "category": "Lifestyle",
-    "score": 7
-  },
-  {
-    "id": "1788646293341dp95431ip",
-    "title": "Breakthrough in Research on Severe Autism",
-    "summary": "Researchers at UC San Francisco have mapped more than a thousand protein interactions linked to profound autism, a severe form of autism. The study, published in the journal Science, used brain organoids to investigate how gene mutations can lead to this condition. Experts call it an unprecedented resource for the field that offers new avenues for drug development. For families...",
-    "image_alt": "Cross-section of a brain organoid used in autism research",
-    "meta_description": "UCSF researchers map protein interactions that shed light on profound autism and enable new medicines.",
-    "meta_keywords": "profound autism, autism research, protein interactions, UCSF, Science journal, brain organoids, gene mutations, drug development",
-    "link": "https://www.npr.org/2026/09/04/nx-s1-5954823/profound-autism-proteins-genes-map-treatments",
-    "source": "NPR.org",
-    "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/584x329+0+40/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F37%2F4e%2F433de3394daa9ec7a41a290122d3%2Fe85419a9-bc96-44a2-adde-7593e090165d.jpg",
-    "date": "2026-09-05T22:11:35.061Z",
-    "category": "Science",
-    "score": 7
-  },
-  {
-    "id": "1788646234804g1sgv91ia",
-    "title": "American chestnut gets genetic lifeline",
-    "summary": "The American chestnut tree, once dominant in eastern U.S. forests, was nearly wiped out by a deadly fungal disease. Now there is hope: a project for genetically modified, disease-resistant chestnut trees has reached an important milestone. Biologist Andrew Newhouse, director of the American Chestnut Research and Restoration Project at the State University of New York, says they have received the...",
-    "image_alt": "American chestnut tree in the forest",
-    "meta_description": "Genetically modified chestnut tree offers hope after near-extinction from fungal disease, biologist Newhouse reports.",
-    "meta_keywords": "American chestnut, genetic modification, nature conservation, fungal disease, biotechnology, forest restoration",
-    "link": "https://www.npr.org/2026/09/05/nx-s1-5954830/biologist-andrew-newhouse-on-the-genetic-revival-of-the-american-chestnut",
-    "source": "NPR.org",
-    "image": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
-    "date": "2026-09-05T22:10:36.114Z",
-    "category": "Science",
-    "score": 9
   }
 ]

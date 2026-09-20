@@ -1,5 +1,41 @@
 [
  {
+  "datum": "2026-09-20T04:35:38.286Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "New York City is Putting ‘The Park’ Back in Park Avenue – And Adding a Protected Bike Lane (LOOK)",
+  "uitsluiting": "geen",
+  "gevoel": 2,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 8,
+  "besluit": "ja",
+  "reden": "Maatschappelijk relevant stadsproject dat groen en veiligheid herstelt; positief geformuleerd en herkenbaar voor New Yorkse lezers."
+ },
+ {
+  "datum": "2026-09-20T04:35:38.286Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "Fox Left For Dead After Being Run Over is Now Recovering Thanks to Swimming Lessons",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Hartverwarmend verhaal van dierlijke redding en genezing; de kern is herstel, niet het ongeluk; volledig positief geformuleerd."
+ },
+ {
+  "datum": "2026-09-20T04:35:38.286Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "Chesapeake Bay Blue Crab Numbers See Encouraging Bounceback in New Survey",
+  "uitsluiting": "geen",
+  "gevoel": 2,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 8,
+  "besluit": "ja",
+  "reden": "Maatschappelijk relevant milieunieuws over ecologisch herstel; positief geformuleerd met concrete conservatieresultaten."
+ },
+ {
   "datum": "2026-09-19T15:45:45.979Z",
   "bron": "GoodNewsNetwork.org",
   "titel": "Your Weekly Horoscope – ‘Free Will Astrology’ by Rob Brezsny",
@@ -3454,38 +3490,5 @@
   "totaal": 0,
   "besluit": "nee",
   "reden": "Campingproductnieuws/Kickstarter-lancering zonder bredere betekenis"
- },
- {
-  "datum": "2026-09-14T18:01:18.711Z",
-  "bron": "Newatlas.com",
-  "titel": "Super responsive, super bright projector throws big from inches away",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Consumententech-productnieuws zonder maatschappelijke relevantie"
- },
- {
-  "datum": "2026-09-14T18:01:18.711Z",
-  "bron": "Newatlas.com",
-  "titel": "Quarterhorse paired with Ramjet-X for high-Mach flight testing",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Bedrijfsnieuws over vliegtuigontwikkeling zonder maatschappelijke doorbraak"
- },
- {
-  "datum": "2026-09-14T18:01:18.711Z",
-  "bron": "Newatlas.com",
-  "titel": "Screen-free fitness tracker brings essential feature from smartwatches",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Wearables-productreview zonder maatschappelijke betekenis"
  }
 ]
