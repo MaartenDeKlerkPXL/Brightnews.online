@@ -66,8 +66,13 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
 ## Techniek en onderhoud
 
 - [ ] **11. Referral-systeem is nooit afgemaakt.** Staat als TODO in
-  `js/main.js:22`; `add_premium_reward` bestaat wel. Afmaken of de resten
-  opruimen — half werk in de code is erger dan geen werk. *(Erik)*
+  `js/main.js:22`. **Correctie 2026-09-20:** hier stond dat
+  `add_premium_reward` wél bestaat; het commentaar in de code zegt het
+  tegenovergestelde en is stelliger onderbouwd ("bevestigd: het public-schema
+  was leeg vóór de profiles/articles_full-tabellen uit Fase 1"). Erik kan dat
+  in één blik in Supabase nakijken. Bestaat de functie niet, dan roept de code
+  iets aan wat er niet is. Afmaken of de resten opruimen — half werk in de code
+  is erger dan geen werk. *(Erik)*
 
 - [x] **14. Taalkiezer op mobiel.** ✅ 2026-09-20 — de knop toont onder 768px
   de ISO-code ("NL") in plaats van de volle taalnaam: 116px → 57px. De naam
@@ -80,12 +85,22 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   (flex-kolom + `width: auto` = max-content). Alles nagemeten op 320/375/414/
   768px. *(Maarten)*
 
-- [ ] **16. 385 artikelpagina's draaien nog op een oud sjabloon.** Van de 2.905
-  artikelpagina's dragen er **385** nog de doodlopende LinkedIn-link
-  (`/company/brightnews-online`); de rest is na PR #1 opnieuw gegenereerd. Het
-  zijn archiefpagina's, die bewust blijven staan omdat hun URL's geïndexeerd
-  zijn. Eén keer bewust regenereren maakt alles uniform — brondata is er.
-  Overleggen met Erik. *(Erik)*
+- [ ] **16. Het archief loopt achter op het sjabloon — inmiddels in twee
+  generaties.** Opnieuw geteld op 2026-09-20 over alle 2.905 artikelpagina's:
+
+  | | pagina's |
+  |---|---|
+  | op het actuele sjabloon | 750 |
+  | ouder sjabloon, nog met de doodlopende LinkedIn-link | 385 |
+  | ouder sjabloon, link wel goed | 1.770 |
+
+  De 750 zijn op 2026-09-20 opnieuw gegenereerd bij de mobiele navigatiefix.
+  Bij de overige 2.155 staat nog de oude taalkiezer in de HTML. Dat is in de
+  praktijk onzichtbaar, want `index.js` vervangt dat label bij het laden —
+  maar het is wel scheefgroei, en zonder JavaScript zie je de oude balk.
+  Het zijn archiefpagina's die bewust blijven staan omdat hun URL's
+  geïndexeerd zijn; één keer bewust alles regenereren maakt het uniform en de
+  brondata is er. Overleggen met Erik. *(Erik)*
 
 - [ ] **26. Anthropic: auto-reload aanzetten en key-eigendom beslissen.**
   De storing van 10–13 september was een lege kredietbalans; de key blijkt op
@@ -100,30 +115,33 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   aanstaat met een ingesteld percentage — de claim moet waar zijn vóór de
   site publiek gaat. *(Maarten)*
 
-- [ ] **28. De voorraad reservefoto's is te klein geworden.** Gemeten op
-  2026-09-20 bij de volledige lijst van 150 kaarten: **27 reservefoto's nodig,
-  26 beschikbaar**. Gevolg: één dubbele foto op de pagina en tien foto's uit een
-  andere categorie dan het artikel.
+- [ ] **28. De voorraad reservefoto's is te klein geworden.** Opnieuw gemeten
+  op 2026-09-20 na de nieuwsrun van die ochtend, bij de volledige lijst van 150
+  kaarten: **25 reservefoto's nodig, 26 beschikbaar**. Op papier dus net genoeg,
+  maar niet per categorie: zeven artikelen krijgen een foto uit een andere
+  categorie dan ze zelf hebben.
 
   Dit is geen fout in de code — die doet precies wat PR #5 belooft: eerst een
   foto uit de eigen categorie, dan lenen uit een andere, en pas als werkelijk
   alles op is een herhaling. Alleen is "alles op" nu werkelijkheid.
 
-  De oorzaak zit in de feed: **25 artikelen delen hun foto met een ander
-  artikel**. De ontdubbeling grijpt dan in en vraagt een reservefoto. Op
-  2026-09-10 waren er nog 14 reservefoto's nodig, nu 27 — in tien dagen bijna
-  verdubbeld, en het groeit mee met de feed.
+  De oorzaak zit in de feed: artikelen delen hun foto met een ander artikel.
+  De ontdubbeling grijpt dan in en vraagt een reservefoto. Op 2026-09-10 waren
+  er 14 nodig, op 20 september 25 à 27 — in tien dagen bijna verdubbeld, en het
+  beweegt met elke run mee. Het exacte totaal is dus minder interessant dan
+  wélke categorieën structureel tekortkomen, en dat zijn steeds dezelfde drie:
 
   | Categorie | Beschikbaar | Nodig | Tekort |
   |---|---|---|---|
-  | Science | 4 | 8 | **4** |
-  | Lifestyle | 4 | 7 | **3** |
+  | Science | 4 | 7 | **3** |
+  | Lifestyle | 4 | 6 | **2** |
   | Environment | 5 | 7 | **2** |
   | Health | 5 | 3 | — |
   | Tech | 4 | 2 | — |
   | Finance | 4 | 0 | — |
 
-  Vier à vijf foto's extra bij Science, Lifestyle en Environment lost het op.
+  Vier à vijf foto's extra bij Science, Lifestyle en Environment lost het op,
+  met wat marge voor de groei.
   Aanleveren in `assets/fallback/` als `<categorie>-<n>.jpg`, max 1400px breed —
   de code leidt de categorie rechtstreeks uit de bestandsnaam af.
 
@@ -131,6 +149,18 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   aankomen wanneer de voorraad weer krap wordt, in plaats van dat je het bij
   toeval ontdekt zoals nu. *(Maarten levert foto's, of Erik automatiseert de
   meting)*
+
+- [ ] **29. Pull request #6 wacht op Erik.** Het alarm dat een nieuwsrun laat
+  falen als hij stilletjes niets oplevert
+  ([#6](https://github.com/MaartenDeKlerkPXL/Brightnews.online/pull/6)) staat
+  open sinds 2026-09-16 en is nog niet bekeken. Het is het enige werk van onze
+  kant waar niets mee gebeurd is. Zonder dit alarm herhaalt de storing van
+  10–13 september zich geruisloos: de Action meldde toen "success" terwijl er
+  drie dagen niets gepubliceerd werd, dus er ging ook geen mail uit.
+  `backend/controleer-run.js` slaat alleen aan bij nul kandidaten, bij tekst
+  zonder AI-aanroepen, of als het nieuwste artikel ouder is dan drie dagen — op
+  rustige dagen blijft hij stil. Getest op zes scenario's, inclusief de echte
+  cijfers van 13 september. *(Erik: reviewen en mergen)*
 
 ## Buiten de code — alleen Maarten kan dit
 
