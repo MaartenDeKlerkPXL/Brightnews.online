@@ -305,6 +305,13 @@ async function laadNieuws(taal) {
 }
 
 async function toonDetail(id) {
+    // Allereerst, nog vóór er iets aan de DOM verandert: waar stond de
+    // bezoeker? Hieronder wordt #news-container verborgen, en daarmee zakt de
+    // pagina in elkaar. De browser kapt de scrollpositie dan af op wat er nog
+    // past (gemeten: 361 terwijl de pagina op 3000 stond), dus een regel later
+    // uitlezen levert een waarde op die nergens meer op slaat.
+    const scrollBijVertrek = window.scrollY;
+
     const detailView = document.getElementById('detail-view');
     const container = document.getElementById('news-container');
     const detailNav = document.getElementById('detail-navigation');
@@ -336,8 +343,8 @@ async function toonDetail(id) {
     }
 
     updateMetaTags(artikel);
-    // Sla positie op
-    sessionStorage.setItem('brightScrollPos', window.scrollY);
+    // Sla positie op — de waarde van vóór het verbergen, zie boven.
+    try { sessionStorage.setItem('brightScrollPos', String(scrollBijVertrek)); } catch (e) { /* privemodus */ }
 
     // Forceer de browser om onmiddellijk naar boven te gaan ZONDER animatie
     window.scrollTo({top: 0, left: 0, behavior: 'instant'});
@@ -760,13 +767,16 @@ function renderLijst(artikelen) {
     const savedPos = sessionStorage.getItem('brightScrollPos');
     if (savedPos) container.style.opacity = '0';
 
-    // 4. Dagoverzichten (type 'digest') altijd bovenaan, ook wanneer er op
-    // categorie gefilterd is. Array.prototype.sort is stabiel, dus binnen
-    // beide groepen blijft de bestaande volgorde uit de feed staan.
+    // 4. Dagoverzichten (type 'digest') bovenaan — maar alleen de verse.
+    // Alle overzichten vooraan zetten leverde een homepage op waar je tegen
+    // een rij samenvattingen aankeek in plaats van tegen nieuws: 26 van de
+    // 150 kaarten (17%), op 17 september vijf op één dag. Sinds 2026-09-20
+    // staan alleen de overzichten van vandaag en gisteren bovenaan; de
+    // oudere schuiven gewoon op datum tussen het nieuws. Array.prototype.sort
+    // is stabiel, dus binnen beide groepen blijft de volgorde uit de feed
+    // staan — en die is al nieuwste-eerst.
     const gesorteerd = [...artikelen].sort((a, b) => {
-        const aIsDigest = a.type === 'digest' ? 0 : 1;
-        const bIsDigest = b.type === 'digest' ? 0 : 1;
-        return aIsDigest - bIsDigest;
+        return (isVersDagoverzicht(a) ? 0 : 1) - (isVersDagoverzicht(b) ? 0 : 1);
     });
 
     // 5. Zet de portiestand klaar. gezienOpPagina voorkomt dat dezelfde foto
@@ -788,14 +798,68 @@ function renderLijst(artikelen) {
 
     // 6. Herstel scroll-positie
     if (savedPos && !window.location.search.includes('id=')) {
-        requestAnimationFrame(() => {
-            window.scrollTo({ top: parseInt(savedPos), behavior: 'instant' });
-            container.style.opacity = '1';
-            sessionStorage.removeItem('brightScrollPos');
-        });
+        herstelScrollPositie(parseInt(savedPos, 10), container);
     } else {
         container.style.opacity = '1';
     }
+}
+
+// Terugkomen uit een artikel hoort je af te zetten waar je gebleven was.
+// Eén requestAnimationFrame is daarvoor te vroeg: de zojuist toegevoegde
+// kaarten zijn dan nog niet opgemeten, de pagina is nog laag, en de browser
+// kapt de scrollpositie af op wat er op dát moment past. Daarna groeit de
+// pagina eronder verder en sta je alsnog bovenaan.
+//
+// Daarom proberen we het per frame opnieuw totdat de pagina hoog genoeg is,
+// met een harde grens van een halve seconde zodat dit nooit blijft rondpompen
+// (bijvoorbeeld wanneer de lijst korter is dan hij was en de bewaarde positie
+// simpelweg niet meer bestaat).
+// Een dagoverzicht telt als "vers" op de dag dat het verschijnt en de dag
+// erna. Gerekend in hele kalenderdagen (UTC, net als de datums in de feed),
+// zodat het niet uitmaakt hoe laat de nachtrun precies liep.
+function isVersDagoverzicht(artikel) {
+    if (!artikel || artikel.type !== 'digest') return false;
+    const dag = String(artikel.date || '').slice(0, 10);
+    if (!dag) return false;
+
+    const nu = new Date();
+    const vandaag = new Date(Date.UTC(nu.getUTCFullYear(), nu.getUTCMonth(), nu.getUTCDate()));
+    const verschilDagen = Math.round((vandaag - new Date(`${dag}T00:00:00Z`)) / 86400000);
+    return verschilDagen >= 0 && verschilDagen <= 1;
+}
+
+function herstelScrollPositie(doel, container) {
+    const deadline = performance.now() + 500;
+    let klaar = false;
+
+    function toon() {
+        if (klaar) return;
+        klaar = true;
+        if (container) container.style.opacity = '1';
+        try { sessionStorage.removeItem('brightScrollPos'); } catch (e) { /* privemodus */ }
+    }
+
+    // Vangnet. requestAnimationFrame vuurt niet in een tabblad dat op de
+    // achtergrond staat, en dan zou de lijst op opacity 0 blijven hangen —
+    // onzichtbaar, tot je het tabblad weer naar voren haalt. Deze timer loopt
+    // wél door en zet de lijst hoe dan ook aan.
+    setTimeout(toon, 700);
+
+    if (!Number.isFinite(doel) || doel <= 0) { toon(); return; }
+
+    function probeer() {
+        if (klaar) return;
+        // Het uitlezen van scrollHeight dwingt een layout af: pas daarna weet
+        // de browser hoe hoog de pagina met de nieuwe kaarten werkelijk is.
+        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        window.scrollTo({ top: Math.min(doel, Math.max(maxScroll, 0)), behavior: 'instant' });
+
+        const aangekomen = window.scrollY >= doel - 2;
+        if (aangekomen || performance.now() > deadline) { toon(); return; }
+        requestAnimationFrame(probeer);
+    }
+
+    requestAnimationFrame(probeer);
 }
 
 function updateShareLinks(artikelTitel, artikelUrl) {

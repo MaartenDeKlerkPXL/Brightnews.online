@@ -2257,47 +2257,6 @@
     "score": 9
   },
   {
-    "id": "dg-20260905-environment",
-    "type": "digest",
-    "digest_date": "2026-09-05",
-    "title": "Patos, salmones y vecinos marcan la diferencia hoy",
-    "summary": "A veces las buenas noticias se encuentran en cosas pequeñas que tienen grandes resultados. Hoy se trata de patos que mantienen saludables los viñedos, salmones que regresan a los ríos después de años, y gente común que decide dejar su calle o su pueblo un poco mejor. Cinco historias muestran que la paciencia y el cuidado de la naturaleza finalmente dan sus frutos. En la finca vinícola Vergenoegd Löw en Sudáfrica, alrededor de 1000 patos caminan entre las vides. Comen plagas y fertilizan el suelo, sin necesidad de pesticidas [1]. El mismo enfoque paciente se ve en la costa de...",
-    "image_alt": "Patos, salmones y vecinos marcan la diferencia hoy",
-    "meta_description": "De patos en viñedos a salmones que regresan: las noticias positivas sobre la naturaleza del 5 de septiembre de 2026.",
-    "meta_keywords": "Environment",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a99b453c8731ac2eb4eb449_6a99b451039236cbc607c312_vineyard-wine-farm-free-roaming-ducks-featured-2.webp",
-    "date": "2026-09-06T15:24:31.617Z",
-    "category": "Environment",
-    "refs": [
-      {
-        "id": "1788645872913v6p9gh7ws",
-        "title": "1000 Patos Reemplazan Pesticidas En Viña"
-      },
-      {
-        "id": "1788647218036re517hbkv",
-        "title": "64 tortuguitas marinas rescatadas de piscina en Florida"
-      },
-      {
-        "id": "1788647086622ilhiogf10",
-        "title": "Antiguos cazadores de aves salvan jilgueros de Java"
-      },
-      {
-        "id": "1788645690381vacqodhek",
-        "title": "Buenas Noticias: Panaderos, Sol Y Un Rescate Escolar"
-      },
-      {
-        "id": "1788645362502ubnvc3z3k",
-        "title": "Hombre Limpia Calle 100 Días, Todo el Barrio Participa"
-      },
-      {
-        "id": "1788645292822m5wh38774",
-        "title": "Número Récord de Salmones Coho Regresan a California"
-      }
-    ]
-  },
-  {
     "id": "dg-20260905-tech",
     "type": "digest",
     "digest_date": "2026-09-05",
@@ -2331,39 +2290,6 @@
       {
         "id": "1788646140552gfkjr3900",
         "title": "Scooter económico con características de lujo de Ather"
-      }
-    ]
-  },
-  {
-    "id": "dg-20260905-health",
-    "type": "digest",
-    "digest_date": "2026-09-05",
-    "title": "Diagnósticos más rápidos y protección más duradera: noticias de salud del 5 de septiembre",
-    "summary": "La sanidad avanzó hoy nuevamente en varios frentes muy diferentes. Desde software inteligente que detecta un problema cardíaco en diez segundos hasta un país que ha erradicado completamente una enfermedad ocular: demuestra que el progreso a menudo surge en múltiples lugares simultáneamente. La noticia más destacada procedía de Londres, donde investigadores del Imperial College desarrollaron software que puede detectar enfermedades cardíacas a través de un ECG convencional, algo para lo que los pacientes ahora a menudo deben esperar meses para un ecocardiograma. En un ensayo con 67.000 pacientes, la herramienta identificó hasta el 81% de los casos de insuficiencia cardíaca...",
-    "image_alt": "Diagnósticos más rápidos y protección más duradera: noticias de salud del 5 de septiembre",
-    "meta_description": "Software cardíaco inteligente, una nueva prueba de cáncer de vejiga, menos ceguera y más: las noticias de salud del 5 de septiembre resumidas.",
-    "meta_keywords": "Health",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://www.positive.news/wp-content/uploads/2026/09/iStock-2166849864-2.jpeg",
-    "date": "2026-09-06T15:22:20.426Z",
-    "category": "Health",
-    "refs": [
-      {
-        "id": "1788645141480uux502u0y",
-        "title": "Software cardíaca superior y más buenas noticias"
-      },
-      {
-        "id": "1788645554014dscmbc1wx",
-        "title": "Las estatinas reducen el riesgo cardíaco en mayores de 70"
-      },
-      {
-        "id": "1788647730911cqw2ar8lh",
-        "title": "Investigación sobre la obesidad mediante biología humana"
-      },
-      {
-        "id": "1788646925799w1iimm4f9",
-        "title": "Cómo Elegir Una Clínica de Fertilidad"
       }
     ]
   },

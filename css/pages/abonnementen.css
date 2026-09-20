@@ -57,6 +57,10 @@
     align-items: flex-start;
     gap: 10px;
     margin-top: 14px;
+    /* Lucht náár de knop toe: zonder deze regel plakte "Start nu" tegen het
+       vinkje-blok aan (gemeten 0px). Bij een blokje met juridische strekking
+       wil je juist dat een bezoeker ziet dat het twee losse dingen zijn. */
+    margin-bottom: 18px;
     padding: 10px 12px;
     background: var(--light-bg, #F8FBF8);
     border: 1px solid var(--border-color, #E8EEE8);

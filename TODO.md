@@ -177,109 +177,33 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   rustige dagen blijft hij stil. Getest op zes scenario's, inclusief de echte
   cijfers van 13 september. *(Erik: reviewen en mergen)*
 
-- [ ] **30. De marketing-agent afbouwen en in gebruik nemen.** *(Maarten)*
+- [ ] **30. De marketing-agent: nog twee onderdelen open.** *(Maarten)*
 
-  **Let op voor je begint: het grootste deel staat er al.** Van de vier
-  onderdelen uit `MARKETING-PLAN.md` draaien er drie mee in de pipeline, dus
-  dit is geen bouwen vanaf nul maar afmaken en gaan gebruiken:
+  **Bijgewerkt 2026-09-20.** Drie van de vier onderdelen uit
+  `MARKETING-PLAN.md` draaiden al mee; sindsdien zijn ook de twee laatste
+  stappen gezet die nu konden:
 
   | Onderdeel uit het plan | Staat er? |
   |---|---|
   | 1. Input: `data/marketing-feed.json` per taal | ✅ draait elke run mee |
   | 2. Generatie per taal en kanaal, itereerbare prompt | ✅ `backend/generate-posts.js` + `backend/marketing-prompt.md` |
-  | 3. Draft-first met goedkeuring door een mens | ✅ de cockpit op `marketing.html`, 160 concepten klaar |
-  | 4. Meetlus: bereik, kliks, registraties naast elkaar | ❌ **dit ontbreekt** |
+  | 3. Draft-first met goedkeuring door een mens | ✅ de cockpit op `marketing.html` |
+  | 4. Meetlus: bereik, kliks, registraties naast elkaar | ✅ gebouwd (`backend/meetlus.js`), ⏳ wacht op PR #7 |
 
-  De leerlus is ook al rond: de cockpit schrijft je oordeel naar
-  `marketing_feedback` in Supabase, en `generate-posts.js` leest dat terug in
-  de prompt (`Vermijd wat eerder is afgewezen: {FEEDBACK}`). UTM-tags staan op
-  alle links. Hij leert dus al van je — alleen voed je hem nog niet (punt 24).
+  Maarten heeft `GOOGLE_SERVICE_ACCOUNT` en `GA4_PROPERTY_ID` als GitHub-secret
+  gezet en het serviceaccount toegang gegeven in GA4 én Search Console. De
+  cockpit is gevoed (punt 24). **De meetlus meet pas zodra Erik PR #7 mergt** —
+  tot dan staat `backend/meetlus.js` niet op master en blijft het kopje
+  "Bereik en zoekverkeer" in het weekrapport op "nog geen koppeling" staan.
 
-  **Wat er werkelijk nog moet gebeuren:**
-  1. **De meetlus bouwen.** Wekelijks bereik, kliks, registraties en
-     promocodes naast elkaar. De bronnen zijn er: GA4 staat op de site (met
-     consent mode), Search Console draait, Stripe heeft de abonnees. Wat
-     ontbreekt is één plek waar die drie samenkomen, zodat je kunt zien wélke
-     post werkte in plaats van dat je het gevoel hebt.
-  2. **De cockpit echt gebruiken** — zie punt 24. Zonder jouw oordeel blijft
-     `{FEEDBACK}` leeg en leert hij niets.
-  3. **Beslissen over directe koppelingen** (Meta, LinkedIn, Buffer). Het plan
+  **Wat er nog open staat, allebei bewust later:**
+  1. **Beslissen over directe koppelingen** (Meta, LinkedIn, Buffer). Het plan
      zegt: pas later, en ook dan met goedkeuring per post. Nu plaats je zelf.
-  4. **Twee weken vóór de lancering vers ingeregeld**, zoals in het plan staat
+  2. **Twee weken vóór de lancering vers ingeregeld**, zoals in het plan staat
      — op echte content, niet op de concepten van nu.
 
   Zolang de site geparkeerd staat heeft plaatsen weinig zin: een bezoeker
-  komt dan op één artikel en kan verder nergens heen. Het voorwerk (meetlus,
-  cockpit voeden) kan wél nu al.
-
-- [ ] **32. Te veel dagoverzichten, en ze blijven staan als hun bronnen weg
-  zijn.** *(Maarten signaleerde dit op 2026-09-20; ik heb het nagemeten.)*
-
-  Van de 150 kaarten op de homepage zijn er **26 een dagoverzicht — 17%**. Ze
-  staan bovendien allemaal bovenaan, want `renderLijst` sorteert digests naar
-  voren. Op 17 september waren het er vijf op één dag (één per categorie), dus
-  je opent de site en kijkt tegen een rij samenvattingen aan in plaats van
-  tegen nieuws.
-
-  Daar komt het tweede probleem bij. Een dagoverzicht verwijst in `refs` naar
-  de artikelen die het bespreekt, en die artikelen vallen na verloop van tijd
-  uit de lijst van 150 (`processor.js` gooit de oudste eruit). Het overzicht
-  zelf blijft dan staan met verwijzingen naar artikelen die er niet meer zijn.
-  Stand op 2026-09-20:
-
-  | | dagoverzichten |
-  |---|---|
-  | alle bronartikelen nog aanwezig | 21 |
-  | deels verdwenen | 5 |
-  | volledig verdwenen | 0 (nog) |
-
-  De vijf van 5 september zijn het verst heen — die van Health heeft nog
-  **1 van de 4** bronnen. Volledig dood is er nog geen, maar dat is een kwestie
-  van dagen.
-
-  Twee dingen om te beslissen, allebei in `backend/processor.js`:
-  1. **Wanneer verdwijnt een dagoverzicht?** Voorstel: zodra er minder dan de
-     helft van zijn `refs` nog in de lijst staat. Dan valt hij weg vóórdat de
-     bronnenlijst gatenkaas wordt, in plaats van erna.
-  2. **Hoeveel mogen er tegelijk staan?** Nu is er geen grens. Voorstel: hoogstens
-     de overzichten van de laatste twee dagen bovenaan, de rest ertussen op
-     datum. Dat is een ontwerpkeuze, dus die is aan Maarten.
-
-  Let op: de statische artikelpagina's van verwijderde overzichten blijven
-  bestaan (afspraak uit `CLAUDE.md`: geïndexeerde URL's mogen niet sterven).
-  Het gaat hier alleen om de homepage-lijst.
-
-- [ ] **33. Terug uit een artikel brengt je niet terug waar je was.**
-  *(Maarten)* Nagemeten op de live site: gescrold naar 3000px, kaart 31
-  aangeklikt, en na de terugknop stond de pagina op **0**. Je moet dus elke
-  keer opnieuw zoeken waar je gebleven was — en dat is precies waarom je
-  stopt met scrollen.
-
-  Er zit al code voor in `index.js`, maar er zijn twee dingen mis:
-
-  1. **De verkeerde positie wordt bewaard.** `toonDetail` schrijft
-     `window.scrollY` naar `brightScrollPos` (regel ~340). Bij de meting stond
-     daar **361** terwijl de pagina op 3000 stond. Er wordt dus een waarde van
-     een eerder moment vastgelegd.
-  2. **Het herstel komt te vroeg.** `renderLijst` scrollt terug binnen één
-     `requestAnimationFrame` na `tekenPortie` (regel ~790). Op dat moment
-     hebben de kaarten hun foto's nog niet geladen en is de pagina dus nog
-     nauwelijks hoog. De browser kapt de scrollpositie af op wat er op dat
-     moment past — vrijwel nul — en daarna groeit de pagina eronder verder.
-
-  Het goede nieuws: het aantal kaarten wordt wél correct hersteld (72 van 72 in
-  de meting), dus alleen de positie zelf moet nog kloppen. Oplossingsrichting:
-  de hoogte vastzetten vóór het scrollen (de kaarten hebben al `width`/`height`
-  op de afbeelding) of pas scrollen als de eerste rijen geladen zijn.
-
-- [ ] **34. Te weinig lucht tussen het herroepingsvinkje en de knop.**
-  *(Maarten)* Gemeten op de live abonnementenpagina: de afstand tussen het
-  vinkje-blok ("Ik ga akkoord dat de dienst direct start…") en de knop
-  "Start nu" is **0 pixels** — `.withdrawal-consent-label` heeft
-  `margin-bottom: 0`. De tekst plakt dus tegen de knop, en juist bij een blokje
-  met juridische strekking wil je dat een bezoeker ziet dat het twee aparte
-  dingen zijn. Geldt voor beide betaalde kaarten. Eén regel CSS in
-  `css/pages/abonnementen.css`.
+  komt dan op één artikel en kan verder nergens heen.
 
 - [ ] **35. Vraag bezoekers subtiel om feedback, vanuit de footer.**
   *(Idee van Maarten, 2026-09-20.)* We weten straks wél hoeveel mensen er
@@ -325,42 +249,6 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   homepage doorverwees naar een pagina met `noindex`. Sinds het parkeerbericht
   op de homepage zelf staat hoort hij naar **"geïndexeerd"** te gaan. Blijft
   hij uitgesloten, geef dat dan door — dan kijk ik verder.
-
-- [ ] **24. Marketing-cockpit gebruiken** op `brightnews.online/marketing.html`
-  (inloggen met je account). Goedkeuren of afwijzen mét reden — de fabriek
-  leert van je afwijzingen, maar alleen als je hem voedt. Let op: goedkeuren
-  plaatst niets. De cockpit is draft-first, plaatsen doet altijd een mens.
-
-  **Voorwerk gedaan op 2026-09-20.** Ik heb alle **160 conceptposts**
-  doorgelopen (8 dagen × 5 talen × 4 kanalen). Technisch is er niets mis: geen
-  lege posts, niets over de tekenlimiet van zijn kanaal, Instagram bevat nooit
-  een kale URL en heeft gemiddeld 4,8 hashtags. X komt uit op 126 tekens
-  gemiddeld. Van de 110 posts met een link wijzen er 4 naar het Nederlandse
-  artikel terwijl de post in een andere taal staat — alle vier van 2026-09-09,
-  dus dat is sindsdien opgelost.
-
-  Wat er wél mis is, zit in de taal, en het is steeds dezelfde hand:
-
-  | Wat | Waar | Hoe vaak |
-  |---|---|---|
-  | `#gutesnachrichten` — fout Duits, moet `#gutenachrichten` | Duits, Instagram | 4 van de 8 dagen |
-  | `zorrillo` betekent **stinkdier** in Latijns-Amerika, niet "vosje" | Spaans, 2026-09-20 | alle 4 kanalen |
-  | `#bienêtredesdanimaux` — tikfout, dubbele d | Frans, 2026-09-20 | 2 posts |
-  | `Link en bio` moet `Link en la bio` | Spaans | 2 posts |
-  | accenten in hashtags splitsen het bereik | fr, de, es | ~10 hashtags |
-
-  **Wat Maarten in de cockpit doet:** de Spaanse dag van 20 september afwijzen
-  met reden "zorrillo betekent stinkdier, gebruik zorro pequeño", en de Duitse
-  Instagram-posts met "#gutesnachrichten is geen Duits, moet #gutenachrichten".
-  De rest kan goedgekeurd.
-
-  **Wat dit structureel is:** de posts worden in het Nederlands geschreven en
-  daarna vertaald, met dezelfde instructie-familie als de artikelen. Deze twee
-  fouten staan al in `backend/vertaal-steekproef.md` als bevinding 2
-  (Nederlands woord letterlijk vertaald) — ik heb er een aanvulling onder gezet
-  met deze cijfers en drie voorstellen. Een grammaticaal foute hashtag hoort
-  niet elke dag opnieuw afgewezen te hoeven worden; dat los je op in de
-  vertaalprompt. *(Maarten voedt de cockpit, Erik pakt de vertaalprompt)*
 
 - [x] **25. Deel-previews.** ✅ 2026-09-20 — getest in WhatsApp én LinkedIn,
   met vier artikelen die ik vooraf had doorgemeten. Van alle 581 artikelen is
@@ -419,6 +307,75 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   je niet wilt ontdekken wanneer de eerste betalende bezoeker het ontdekt.
 
 ## Afgerond
+
+- [x] **32. Te veel dagoverzichten, en ze bleven staan als hun bronnen weg
+  waren (2026-09-20).** Twee ingrepen, op Maartens keuzes:
+
+  *Opruimen.* Een dagoverzicht verdwijnt nu uit de homepage-lijst zodra er
+  **minder dan de helft** van zijn bronartikelen nog in de lijst van 150 staat
+  — vóórdat de bronnenlijst gatenkaas wordt, in plaats van erna. De regel
+  staat in `backend/digest-opruiming.js` en wordt aangeroepen vlak voor het
+  wegschrijven in zowel `backend/processor.js` als `backend/digest.js`, want
+  die schrijven allebei dezelfde bestanden. Direct toegepast op de actuele
+  data: de overzichten van Environment en Health van 5 september (2 van 6 en
+  1 van 4 bronnen over) zijn weg, in alle vijf de talen. De drie andere
+  gehavende overzichten zitten nog boven de helft en blijven staan.
+
+  *Sortering.* `renderLijst` zette álle 26 overzichten vooraan, dus je keek
+  tegen een muur samenvattingen aan. Nu gaan alleen de overzichten van
+  **vandaag en gisteren** naar boven (`isVersDagoverzicht` in `index.js`); de
+  oudere schuiven gewoon op datum tussen het nieuws. Nagemeten in de browser:
+  van 26 kaarten bovenaan naar 2, de rest staat verspreid op plek 11, 20, 21
+  en 23. Er is bewust géén maximum per dag gekomen — vijf overzichten op één
+  dag mag, ze staan alleen niet meer allemaal vooraan.
+
+  De statische artikelpagina's van verwijderde overzichten blijven bestaan
+  (afspraak uit `CLAUDE.md`: geïndexeerde URL's mogen niet sterven).
+
+- [x] **33. Terug uit een artikel brengt je weer waar je was (2026-09-20).**
+  Er zaten twee fouten in, en de eerste was een andere dan gedacht.
+
+  **De verkeerde positie werd bewaard.** `toonDetail` verbergt eerst
+  `#news-container` en las daarná pas `window.scrollY` uit. Door dat verbergen
+  zakt de pagina in elkaar en kapt de browser de scrollpositie af op wat er
+  nog past — vandaar de 361 die bij de meting werd opgeslagen terwijl de
+  pagina op 3000 stond. De positie wordt nu als allereerste regel van
+  `toonDetail` gelezen, vóór er iets aan de DOM verandert.
+
+  **Het herstel kwam te vroeg.** Eén `requestAnimationFrame` na het tekenen
+  zijn de nieuwe kaarten nog niet opgemeten. `herstelScrollPositie` probeert
+  het nu per frame opnieuw tot de pagina hoog genoeg is, met een harde grens
+  van een halve seconde.
+
+  Onderweg viel nog een derde ding op: `requestAnimationFrame` vuurt niet in
+  een tabblad dat op de achtergrond staat. De lijst bleef in dat geval op
+  `opacity: 0` hangen — onzichtbaar, ook in de oude code. Er staat nu een
+  timer naast die hem hoe dan ook aanzet.
+
+  Nagemeten met `history.scrollRestoration = 'manual'`, zodat het herstel van
+  de browser zelf niet meetelt: gescrold naar 8200, kaart 89 geopend,
+  terugknop → **8200, alle 120 kaarten terug**. Vóór de fix was dat 0.
+
+- [x] **34. Lucht tussen het herroepingsvinkje en de knop (2026-09-20).**
+  `.withdrawal-consent-label` kreeg `margin-bottom: 18px` in
+  `css/pages/abonnementen.css`. Nagemeten op beide betaalde kaarten: van 0px
+  naar 18px. Een blokje met juridische strekking hoort niet tegen de knop aan
+  te plakken.
+
+- [x] **24. Marketing-cockpit gevoed (2026-09-20).** Maarten heeft de
+  conceptposts beoordeeld in de cockpit. Let op hoe dat werkt: een oordeel
+  hangt aan `dag|kanaal` en geldt dus voor alle vijf de talen van die kaart
+  tegelijk — een fout in één taal wijs je af op de hele kaart, met de taal in
+  de reden. Die redenen komen in `marketing_feedback` en leest
+  `generate-posts.js` terug in de prompt.
+
+  Het voorwerk stond in de analyse van alle 160 conceptposts: technisch was er
+  niets mis, maar in de vertalingen zat steeds dezelfde hand —
+  `#gutesnachrichten` (fout Duits, 4 van de 8 dagen), `zorrillo` (dat is
+  stinkdier, geen vosje, alle 4 de kanalen van 20 september),
+  `#bienêtredesdanimaux` en `Link en bio`. **Dat is structureel en komt terug:**
+  het zit in de vertaalprompt, niet in deze posts. Staat als bevinding 2 in
+  `backend/vertaal-steekproef.md`. *(Erik pakt de vertaalprompt op)*
 
 - [x] **De vaste teksten in de HTML stonden in het Engels (2026-09-20).**
   Gevonden bij de volledige doorlichting: van de 413 elementen met een

@@ -2257,47 +2257,6 @@
     "score": 9
   },
   {
-    "id": "dg-20260905-environment",
-    "type": "digest",
-    "digest_date": "2026-09-05",
-    "title": "Enten, Lachse und Nachbarn machen heute den Unterschied",
-    "summary": "Manchmal steckt gute Nachricht in kleinen Dingen, die groß herauskommen. Heute geht es um Enten, die Weinberge gesund halten, Lachse, die nach Jahren in Flüsse zurückkehren, und gewöhnliche Menschen, die beschließen, ihre Straße oder ihr Dorf ein wenig besser zu hinterlassen. Fünf Geschichten zeigen, dass Geduld und Sorge um die Natur sich am Ende lohnen. Auf dem Vergenoegd Löw Wine Estate in Südafrika laufen etwa 1000 Enten zwischen den Weinstöcken. Sie fressen Schädlinge und düngen den Boden, ohne dass Pestizide zum Einsatz kommen [1]. Denselben geduldigen Ansatz sehen wir an der Küste Kaliforniens, wo eine Rekordzahl von 30.000 Coho-Lachsen die...",
-    "image_alt": "Enten, Lachse und Nachbarn machen heute den Unterschied",
-    "meta_description": "Von Enten in Weinbergen bis zu zurückkehrenden Lachsen: die positiven Naturmeldungen vom 5. September 2026 im Überblick.",
-    "meta_keywords": "Environment",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a99b453c8731ac2eb4eb449_6a99b451039236cbc607c312_vineyard-wine-farm-free-roaming-ducks-featured-2.webp",
-    "date": "2026-09-06T15:24:31.617Z",
-    "category": "Environment",
-    "refs": [
-      {
-        "id": "1788645872913v6p9gh7ws",
-        "title": "1000 Enten Ersetzen Pestizide Auf Weingut"
-      },
-      {
-        "id": "1788647218036re517hbkv",
-        "title": "64 Meeresschildkröten aus Swimmingpool in Florida gerettet"
-      },
-      {
-        "id": "1788647086622ilhiogf10",
-        "title": "Ehemalige Vogelfänger retten Singvögel Javas"
-      },
-      {
-        "id": "1788645690381vacqodhek",
-        "title": "Gute Nachrichten: Bäcker, Sonne Und Eine Schulrettung"
-      },
-      {
-        "id": "1788645362502ubnvc3z3k",
-        "title": "Mann Räumt 100 Tage Straße Auf, Ganzes Viertel Macht Mit"
-      },
-      {
-        "id": "1788645292822m5wh38774",
-        "title": "Rekordanzahl von Coho-Lachsen Kehrt Nach Kalifornien Zurück"
-      }
-    ]
-  },
-  {
     "id": "dg-20260905-tech",
     "type": "digest",
     "digest_date": "2026-09-05",
@@ -2331,39 +2290,6 @@
       {
         "id": "1788646140552gfkjr3900",
         "title": "Budget-Scooter mit Luxus-Features von Ather"
-      }
-    ]
-  },
-  {
-    "id": "dg-20260905-health",
-    "type": "digest",
-    "digest_date": "2026-09-05",
-    "title": "Schnellere Diagnosen und längerer Schutz: Gesundheitsnachrichten vom 5. September",
-    "summary": "Das Gesundheitswesen machte heute wieder Fortschritte, und das auf ganz unterschiedlichen Gebieten. Von intelligenter Software, die ein Herzproblem in zehn Sekunden aufspürt, bis zu einem Land, das eine Augenkrankheit ganz zurückgedrängt hat: Es zeigt, dass Fortschritt oft an mehreren Orten gleichzeitig entsteht. Die auffälligste Nachricht kam aus London, wo Forscher des Imperial College Software entwickelten, die über ein normales EKG Herzerkrankungen erkennen kann – etwas, wofür Patienten jetzt oft monatelang auf ein Echokardiogramm warten müssen. In einer Studie mit 67.000 Patienten erkannte das Tool bis zu 81% der Fälle von Herzinsuffizienz und 90% der Fälle von Herzklappenkrankheit, Zahlen, die auf...",
-    "image_alt": "Schnellere Diagnosen und längerer Schutz: Gesundheitsnachrichten vom 5. September",
-    "meta_description": "Intelligente Herzsoftware, ein neuer Blasenkrebstest, weniger Blindheit und mehr: die Gesundheitsnachrichten vom 5. September im Überblick.",
-    "meta_keywords": "Health",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://www.positive.news/wp-content/uploads/2026/09/iStock-2166849864-2.jpeg",
-    "date": "2026-09-06T15:22:20.426Z",
-    "category": "Health",
-    "refs": [
-      {
-        "id": "1788645141480uux502u0y",
-        "title": "Überlegene Herzsoftware und mehr gute Nachrichten"
-      },
-      {
-        "id": "1788645554014dscmbc1wx",
-        "title": "Statine senken Herzrisiko bei über 70-Jährigen"
-      },
-      {
-        "id": "1788647730911cqw2ar8lh",
-        "title": "Untersuchung von Adipositas über menschliche Biologie"
-      },
-      {
-        "id": "1788646925799w1iimm4f9",
-        "title": "Wahl einer Fertilitätsklinik"
       }
     ]
   },

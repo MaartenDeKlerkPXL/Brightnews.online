@@ -2257,47 +2257,6 @@
     "score": 9
   },
   {
-    "id": "dg-20260905-environment",
-    "type": "digest",
-    "digest_date": "2026-09-05",
-    "title": "Les canards, les saumons et les voisins font la différence aujourd'hui",
-    "summary": "Parfois, les bonnes nouvelles se cachent dans les petites choses qui ont de grands effets. Aujourd'hui, il s'agit de canards qui maintiennent les vignobles en bonne santé, de saumons qui reviennent dans les rivières après des années, et de gens ordinaires qui décident de laisser leur rue ou leur village un peu mieux qu'avant. Cinq histoires montrent que la patience et le soin de la nature finissent par porter leurs fruits. Sur le domaine viticole Vergenoegd Löw en Afrique du Sud, environ 1000 canards se promènent entre les ceps de vigne. Ils mangent les nuisibles et fertilisent le sol, sans...",
-    "image_alt": "Les canards, les saumons et les voisins font la différence aujourd'hui",
-    "meta_description": "Des canards dans les vignobles aux saumons qui reviennent : les bonnes nouvelles sur la nature du 5 septembre 2026 en un coup d'œil.",
-    "meta_keywords": "Environment",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a99b453c8731ac2eb4eb449_6a99b451039236cbc607c312_vineyard-wine-farm-free-roaming-ducks-featured-2.webp",
-    "date": "2026-09-06T15:24:31.617Z",
-    "category": "Environment",
-    "refs": [
-      {
-        "id": "1788645872913v6p9gh7ws",
-        "title": "1000 Canards Remplacent les Pesticides dans un Vignoble"
-      },
-      {
-        "id": "1788647218036re517hbkv",
-        "title": "64 bébés tortues marines sauvés d'une piscine en Floride"
-      },
-      {
-        "id": "1788647086622ilhiogf10",
-        "title": "D'anciens braconniers sauvent les oiseaux chanteurs de Java"
-      },
-      {
-        "id": "1788645690381vacqodhek",
-        "title": "Bonnes Nouvelles: Boulangers, Soleil Et Un Sauvetage Scolaire"
-      },
-      {
-        "id": "1788645362502ubnvc3z3k",
-        "title": "Homme Nettoie la Rue 100 Jours, Tout le Quartier Participe"
-      },
-      {
-        "id": "1788645292822m5wh38774",
-        "title": "Nombre Record de Saumons Coho Reviennent en Californie"
-      }
-    ]
-  },
-  {
     "id": "dg-20260905-tech",
     "type": "digest",
     "digest_date": "2026-09-05",
@@ -2331,39 +2290,6 @@
       {
         "id": "1788646140552gfkjr3900",
         "title": "Scooter économique avec features de luxe d'Ather"
-      }
-    ]
-  },
-  {
-    "id": "dg-20260905-health",
-    "type": "digest",
-    "digest_date": "2026-09-05",
-    "title": "Diagnostics plus rapides et protection prolongée : actualités sanitaires du 5 septembre",
-    "summary": "Le secteur de la santé a de nouveau fait quelques progrès aujourd'hui, et ce dans des domaines très différents. D'un logiciel intelligent qui détecte un problème cardiaque en dix secondes à un pays qui a complètement éradiqué une maladie oculaire : cela montre que le progrès émerge souvent en plusieurs endroits à la fois. Les nouvelles les plus frappantes provenaient de Londres, où des chercheurs de l'Imperial College ont développé un logiciel capable de détecter les maladies cardiaques via un ECG ordinaire, ce pour quoi les patients doivent actuellement souvent attendre des mois pour un échocardiogramme. Lors d'un essai portant...",
-    "image_alt": "Diagnostics plus rapides et protection prolongée : actualités sanitaires du 5 septembre",
-    "meta_description": "Logiciel cardiaque intelligent, nouveau test du cancer de la vessie, moins de cécité et plus : l'actualité sanitaire du 5 septembre en un coup d'œil.",
-    "meta_keywords": "Health",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://www.positive.news/wp-content/uploads/2026/09/iStock-2166849864-2.jpeg",
-    "date": "2026-09-06T15:22:20.426Z",
-    "category": "Health",
-    "refs": [
-      {
-        "id": "1788645141480uux502u0y",
-        "title": "Logiciel cardiaque supérieur et plus de bonnes nouvelles"
-      },
-      {
-        "id": "1788645554014dscmbc1wx",
-        "title": "Les statines réduisent le risque cardiaque chez les plus de 70 ans"
-      },
-      {
-        "id": "1788647730911cqw2ar8lh",
-        "title": "Étude sur l'obésité via la biologie humaine"
-      },
-      {
-        "id": "1788646925799w1iimm4f9",
-        "title": "Choisir Une Clinique De Fertilité"
       }
     ]
   },

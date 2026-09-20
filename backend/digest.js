@@ -21,6 +21,7 @@ require('dotenv').config();
 // daarna vertaald (rol 'vertalen') — alle talen vertellen zo hetzelfde
 // verhaal en vertalen is goedkoper dan vijf keer genereren.
 const { aiCall, verwerkAIResponse } = require('./ai-adapter');
+const { verwijderVerweesdeDigests } = require('./digest-opruiming');
 
 const TALEN = ['nl', 'en', 'de', 'fr', 'es'];
 const TAAL_NAMEN = { nl: 'Nederlands', en: 'Engels', de: 'Duits', fr: 'Frans', es: 'Spaans' };
@@ -273,6 +274,18 @@ Antwoord UITSLUITEND met geldig JSON — alinea-scheidingen binnen "tekst" schri
             // opnieuw (idempotentie-check hierboven).
             mislukteCategorieenOpRij++;
             console.error(`❌ Digest ${categorie} mislukt: ${err.message}`);
+        }
+    }
+
+    // Ook hier opruimen: digest.js schrijft dezelfde lijsten weg als
+    // processor.js en zou anders een net opgeruimd overzicht terugzetten.
+    for (const lang of Object.keys(languages)) {
+        const { items, verwijderd } = verwijderVerweesdeDigests(languages[lang]);
+        languages[lang] = items;
+        if (lang === 'nl') {
+            for (const d of verwijderd) {
+                console.log(`🧹 Dagoverzicht verwijderd: ${d.categorie} ${d.dag} — nog ${d.levend} van ${d.totaal} bronnen.`);
+            }
         }
     }
 
