@@ -50,18 +50,17 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   vóór de lancering; de werkwijze staat in die bijlage beschreven. *(Erik, na
   het bijstellen van de prompt)*
 
-- [ ] **4. Lemon Squeezy: alleen nog buiten de repo.** Betalingen lopen sinds
+- [x] **4. Lemon Squeezy: alleen nog buiten de repo.** ✅ 2026-09-20 — winkel
+  gesloten en Eriks Supabase-token ingetrokken, in die volgorde. Betalingen lopen sinds
   2026-09-05 volledig via **Stripe Managed Payments**; Lemon Squeezy wordt
   nergens meer gebruikt. In de code staat alleen nog dood materiaal: een paar
   toelichtende regels, de ongebruikte klassenaam `btn-lemon-checkout` op twee
   knoppen (zonder opmaak) en `LemonSqueezy` als globale variabele in
   `eslint.config.js` (nergens aangeroepen). Opruimen mag, maar heeft geen haast.
 
-  Wat wél nog moet, en allebei buiten de repo:
-  1. **De Lemon Squeezy-winkel sluiten** in dat account. *(Maarten)*
-  2. **Daarna het Supabase-toegangstoken van Erik intrekken** — Account →
-     Access Tokens → Revoke. Dat stond altijd al als sluitstuk van het
-     betaaltraject. *(Maarten)*
+  Het dode materiaal in de code (`btn-lemon-checkout` op twee knoppen,
+  `LemonSqueezy` in `eslint.config.js`) staat er nog en mag bij gelegenheid
+  weg — dat is opruimwerk zonder haast.
 
 ## Techniek en onderhoud
 
@@ -109,27 +108,42 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   samen: key migreren naar een account van Maarten (zoals bij Stripe) of
   bewust bij Erik laten en de break-even-som aanpassen. *(Erik + Maarten)*
 
-- [ ] **27. Stripe Climate verifiëren vóór lancering.** De over-ons-sectie
-  (PR #1) claimt dat een vast deel van elk abonnement via Stripe Climate naar
-  CO₂-verwijdering gaat. Check in het Stripe-dashboard dat Climate echt
-  aanstaat met een ingesteld percentage — de claim moet waar zijn vóór de
-  site publiek gaat. *(Maarten)*
+- [x] **27. Stripe Climate verifiëren vóór lancering.** ✅ 2026-09-20 —
+  Maarten heeft in het Stripe-dashboard bevestigd dat Climate aanstaat met een
+  ingesteld percentage. De claim op de over-ons-pagina (PR #1), dat een vast
+  deel van elk abonnement naar CO₂-verwijdering gaat, is dus waar en mag blijven
+  staan bij de lancering.
 
-- [ ] **28. De voorraad reservefoto's is te klein geworden.** Opnieuw gemeten
-  op 2026-09-20 na de nieuwsrun van die ochtend, bij de volledige lijst van 150
-  kaarten: **25 reservefoto's nodig, 26 beschikbaar**. Op papier dus net genoeg,
-  maar niet per categorie: zeven artikelen krijgen een foto uit een andere
-  categorie dan ze zelf hebben.
+- [ ] **28. De voorraad reservefoto's is te klein geworden.**
 
-  Dit is geen fout in de code — die doet precies wat PR #5 belooft: eerst een
-  foto uit de eigen categorie, dan lenen uit een andere, en pas als werkelijk
-  alles op is een herhaling. Alleen is "alles op" nu werkelijkheid.
+  **Waar dit over gaat, van voren af aan.** Elke nieuwskaart op de homepage
+  heeft een foto nodig. Die komt normaal mee uit de feed van de bron. Twee
+  dingen gaan daar geregeld mis: sommige bronnen sturen helemaal géén foto mee,
+  en sommige sturen voor meerdere artikelen dezelfde foto — bijvoorbeeld hun
+  eigen logo of een standaard sfeerplaatje bij alles van die dag.
 
-  De oorzaak zit in de feed: artikelen delen hun foto met een ander artikel.
-  De ontdubbeling grijpt dan in en vraagt een reservefoto. Op 2026-09-10 waren
-  er 14 nodig, op 20 september 25 à 27 — in tien dagen bijna verdubbeld, en het
-  beweegt met elke run mee. Het exacte totaal is dus minder interessant dan
-  wélke categorieën structureel tekortkomen, en dat zijn steeds dezelfde drie:
+  Zonder ingreep zou je die ene foto dus vier keer onder elkaar zien staan. Dat
+  is precies wat PR #5 heeft opgelost: we hebben **26 eigen reservefoto's** in
+  `assets/fallback/`, ingedeeld per categorie (`science-1.jpg`, `health-1.jpg`,
+  enzovoort). Heeft een artikel geen bruikbare eigen foto, dan pakt de code een
+  reservefoto **uit zijn eigen categorie**, en nooit een die al ergens anders op
+  de pagina staat.
+
+  **Wat er nu misgaat.** In sommige categorieën zijn er meer artikelen die een
+  reservefoto nodig hebben dan er reservefoto's zijn. Science heeft er 7 nodig
+  en wij hebben er 4. Die drie overgebleven Science-artikelen krijgen dan een
+  foto uit een ándere categorie — een wetenschapsartikel met een
+  gezondheidsfoto erboven. Niet kapot, wel slordig. En raakt werkelijk álles
+  op, dan herhaalt een foto zich alsnog.
+
+  **Het is dus geen bug.** De code doet exact wat is afgesproken: eerst eigen
+  categorie, dan lenen, en pas als laatste redmiddel herhalen. Alleen is dat
+  laatste redmiddel nu in beeld gekomen, omdat de feed steeds vaker foto's
+  deelt. Op 2026-09-10 waren er 14 reservefoto's nodig, op 20 september 25 à
+  27. In tien dagen bijna verdubbeld, en het beweegt met elke run mee.
+
+  Het totaal is daarom minder interessant dan de vraag wélke categorieën
+  structureel tekortkomen, en dat zijn steeds dezelfde drie:
 
   | Categorie | Beschikbaar | Nodig | Tekort |
   |---|---|---|---|
@@ -140,15 +154,25 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   | Tech | 4 | 2 | — |
   | Finance | 4 | 0 | — |
 
-  Vier à vijf foto's extra bij Science, Lifestyle en Environment lost het op,
-  met wat marge voor de groei.
-  Aanleveren in `assets/fallback/` als `<categorie>-<n>.jpg`, max 1400px breed —
-  de code leidt de categorie rechtstreeks uit de bestandsnaam af.
+  **Wat Maarten moet aanleveren.** Vier à vijf foto's extra per tekortcategorie,
+  dus ongeveer 15 stuks, met wat marge voor de groei:
 
-  Overweeg daarnaast de nachtelijke controle hierop te laten meten. Dan zie je
-  aankomen wanneer de voorraad weer krap wordt, in plaats van dat je het bij
-  toeval ontdekt zoals nu. *(Maarten levert foto's, of Erik automatiseert de
-  meting)*
+  - liggend formaat, ongeveer 1400px breed, `.jpg`;
+  - herkenbaar voor de categorie, maar niet té specifiek — ze komen onder
+    wisselende koppen te staan;
+  - rechtenvrij (Unsplash of Pexels), want ze staan straks publiek op de site;
+  - neerzetten in `assets/fallback/` met de naam `<categorie>-<nummer>.jpg`,
+    doorgenummerd vanaf het laatste bestaande nummer. Voor Science dus
+    `science-5.jpg`, `science-6.jpg`, enzovoort — zonder gaten in de reeks.
+
+  **Wat ik daarna doe.** De code leidt de categorie uit de bestandsnaam af,
+  maar het *aantal* staat hard in `index.js` in `RESERVE_PER_CATEGORIE`. Zet ik
+  dat getal niet bij, dan blijven de nieuwe foto's ongebruikt liggen. Dat is één
+  regel per categorie, plus het opnieuw meten of het tekort daarmee echt weg is.
+
+  **En het voorstel dat nog openstaat:** de nachtelijke controle dit elke nacht
+  laten meten. Dan zie je aankomen dat de voorraad krap wordt in plaats van dat
+  het bij toeval opvalt, zoals nu. *(Maarten levert de foto's, ik doe de code)*
 
 - [ ] **29. Pull request #6 wacht op Erik.** Het alarm dat een nieuwsrun laat
   falen als hij stilletjes niets oplevert
