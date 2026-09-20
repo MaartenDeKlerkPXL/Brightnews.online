@@ -77,8 +77,8 @@ masten, afvalbakken) en heeft er nu bos, een bij, een hert, een zeeschildpad
 en windmolens bij. Lifestyle was vooral eten en fitness en heeft er nu
 mensen bij.
 
-**Nog open:** Maarten levert één foto van Adobe Stock (id `1986278256`, hond
-en kat op de bank) die `lifestyle-9.jpg` wordt. Die licentie hangt aan zijn
-account, dus die kan alleen hij downloaden. Bij het toevoegen moet Lifestyle
-in `RESERVE_PER_CATEGORIE` van 8 naar 9 — anders blijft de foto ongebruikt
-liggen en waarschuwt dit script daarvoor.
+Later diezelfde dag kwam `lifestyle-9.jpg` erbij: de gelicentieerde
+Adobe-foto (id `1986278256`, hond en kat op de bank) die Maarten zelf heeft
+gedownload. Van 4992px teruggeschaald naar 1400px, Lifestyle in
+`RESERVE_PER_CATEGORIE` van 8 naar 9. Daarmee staat de teller op **43
+reservefoto's** bij 26 nodig.

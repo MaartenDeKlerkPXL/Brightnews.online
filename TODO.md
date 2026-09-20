@@ -138,10 +138,9 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   en meldt alleen iets als er iets verandert. Logboek:
   `backend/reservefotos-log.md`.
 
-  **Nog één ding voor Maarten:** de Adobe-foto (id `1986278256`, hond en kat op
-  de bank) wordt `lifestyle-9.jpg`. Die licentie hangt aan jouw account, dus
-  alleen jij kunt hem downloaden. Zet het bestand klaar, dan hoog ik Lifestyle
-  op van 8 naar 9.
+  Later die dag kwam `lifestyle-9.jpg` erbij: de gelicentieerde Adobe-foto
+  (id `1986278256`) die Maarten zelf downloadde. Lifestyle staat daarmee op 9
+  en het totaal op 43 reservefoto's bij 26 nodig.
 
 - [ ] **29. Pull request #6 wacht op Erik.** Het alarm dat een nieuwsrun laat
   falen als hij stilletjes niets oplevert

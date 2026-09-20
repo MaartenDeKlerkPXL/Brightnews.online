@@ -523,7 +523,7 @@ const RESERVE_PER_CATEGORIE = {
     // omhoog als er bestanden bijkomen, anders blijven ze ongebruikt liggen —
     // backend/controleer-reservefotos.js waarschuwt daarvoor.
     'Science': 11,
-    'Lifestyle': 8,
+    'Lifestyle': 9,
     'Environment': 10,
     'Finance': 4
 };
