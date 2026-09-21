@@ -252,6 +252,13 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   2.341 van die URL's ongemoeid met de melding "Gevonden – momenteel niet
   geïndexeerd".
 
+  **Let op, er is sinds 2026-09-21 wél een begin.** De run van die ochtend
+  zette `themas/`-pagina's neer: drie per taal, met echte `<a>`-links naar
+  artikelen, en ze staan in de sitemap. Dat is precies het goede idee. Alleen
+  is de schaal nog klein: alle drie de Nederlandse themapagina's samen wijzen
+  naar **23 van de 586** artikelen. De rest blijft onbereikbaar. Dit punt gaat
+  dus niet meer over "er is geen route", maar over "de route dekt 4% af".
+
   **Voorstel:** onderaan het artikelsjabloon een blok "meer uit deze
   categorie" met drie tot vijf artikelen uit dezelfde categorie, als gewone
   `<a>`-links in de HTML (dus niet door JavaScript ingeladen, want dan leest
