@@ -205,50 +205,127 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   Zolang de site geparkeerd staat heeft plaatsen weinig zin: een bezoeker
   komt dan op één artikel en kan verder nergens heen.
 
-- [ ] **35. Vraag bezoekers subtiel om feedback, vanuit de footer.**
-  *(Idee van Maarten, 2026-09-20.)* We weten straks wél hoeveel mensen er
-  komen (de meetlus, punt 30), maar niet wat ze ervan vínden. Een klein,
-  onopvallend lijntje in de footer — geen pop-up, geen banner — dat een kort
-  formulier opent.
+- [ ] **35. Feedbackvraag in de footer — gebouwd, wacht nog op één tabel.**
+  *(Idee van Maarten, 2026-09-20. Gebouwd 2026-09-21.)*
 
-  Wat we willen weten, in deze volgorde van belangrijk naar aardig:
+  **Wat er staat.** Onderaan elke pagina staat één stil lijntje, "Wat vind je
+  van BrightNews?", in hetzelfde grijs als de copyrightregel. Dat opent een
+  `<dialog>` met drie schalen van 1 t/m 5 (hoe positief en leuk, werkt alles,
+  hoe ziet het eruit), twee extra schalen achter "nog twee korte vragen"
+  (vind je je weg, lezen de teksten prettig), de open droomvraag met een ruim
+  veld, en een optioneel e-mailadres. Alles in vijf talen: 20 nieuwe sleutels,
+  278 → 298 per taal.
 
-  1. **Hoe positief en leuk vind je BrightNews?** (één schaal — dit is het
-     bestaansrecht van de site, dus dit is de kernvraag)
-  2. **Werkt alles technisch?** (laadt het, doet alles het, op welk toestel)
-  3. **Vind je de weg?** (UX: menu, taalkiezer, artikelen terugvinden)
-  4. **Hoe ziet het eruit?** (UI en kleur — splits dit niet op in twee vragen,
-     dat vraagt te veel van iemand die even iets invult)
-  5. **Zijn de teksten prettig te lezen?**
-  6. **Open vraag:** *"Als je mocht dromen: wat zou er beter kunnen?"* — dit
-     levert doorgaans de bruikbaarste antwoorden op, dus laat dit veld ruim zijn.
+  **Ontwerpkeuzes die openstonden, nu gemaakt:** drie vragen meteen zichtbaar
+  en twee achter een klik, want vijf schalen ineens is te veel gevraagd van
+  iemand die even iets invult. Anoniem, met een optioneel adres voor wie
+  doorgevraagd wil worden. Geen user agent en geen IP; alleen het toestel als
+  één woord (mobiel/tablet/desktop), genoeg voor "werkt het op mijn telefoon"
+  en te grof om iemand aan te herkennen.
 
-  Ontwerpkeuzes om te maken:
-  - Vijf gesloten vragen is al veel. Overweeg drie schalen plus de open vraag,
-    en de rest alleen tonen als iemand doorklikt.
-  - Anoniem of met e-mailadres? Anoniem geeft eerlijker antwoorden, met adres
-    kun je doorvragen. Voorstel: anoniem, met een optioneel adres.
-  - In vijf talen, dus vijf nieuwe vertaalsleutels per vraag.
+  Het lijntje én het venster worden door `index.js` in de DOM gezet in plaats
+  van in de HTML. Dat scheelt: de footer staat op twaalf losse pagina's **en**
+  in het artikelsjabloon, en dat sjabloon aanpassen zou betekenen dat alle
+  2910 artikelpagina's opnieuw gegenereerd moeten worden. Nagemeten dat de
+  link en het venster het ook op een artikelpagina doen.
 
-  **Verdeling:** ik kan het hele formulier bouwen, vertalen en inpassen in de
-  footer. Waar het opgeslagen wordt is Eriks deel — een tabel `feedback` in
-  Supabase met een insert-policy voor anonieme bezoekers. Zonder die tabel kan
-  het formulier nergens heen, dus dat moet eerst.
+  **Wat er nog moet gebeuren, en het is weinig:**
+  1. **De tabel aanmaken.** `supabase/feedback-tabel-2026-09-21.sql` in de
+     SQL-editor van Supabase draaien. Tot dan geeft het versturen netjes de
+     foutmelding "het versturen lukte niet" — nagemeten: het verzoek komt aan
+     bij Supabase, komt door de CSP, en struikelt alleen over de ontbrekende
+     tabel (`PGRST205`). Na het draaien werkt het meteen.
+  2. **Eén regel in het privacybeleid** dat we vrijwillige feedback bewaren,
+     inclusief een e-mailadres als iemand dat zelf invult. *(Maarten)*
+
+  Er is bewust alleen een insert-policy: bezoekers kunnen niet elkaars
+  antwoorden lezen. Meelezen doe je in het Supabase-dashboard.
+
+- [ ] **36. Artikelen linken niet naar elkaar — het archief is daardoor
+  slecht vindbaar.** *(Gevonden 2026-09-21 bij het teruglezen van Search
+  Console, zie punt 23.)*
+
+  Nagemeten op een artikelpagina: **nul links naar andere artikelen.** De
+  enige interne links zijn het menu, de footer en de `hreflang`-varianten van
+  hetzelfde artikel in de andere vier talen. Elk van de 2.910 artikelpagina's
+  is dus een eiland dat alleen via de sitemap bereikbaar is — en Google laat
+  2.341 van die URL's ongemoeid met de melding "Gevonden – momenteel niet
+  geïndexeerd".
+
+  **Voorstel:** onderaan het artikelsjabloon een blok "meer uit deze
+  categorie" met drie tot vijf artikelen uit dezelfde categorie, als gewone
+  `<a>`-links in de HTML (dus niet door JavaScript ingeladen, want dan leest
+  Google ze niet). `backend/generate-articles.js` heeft de volledige lijst
+  al in handen op het moment dat het de pagina schrijft.
+
+  Dit raakt het artikelsjabloon, en dat betekent alle artikelpagina's opnieuw
+  genereren. Daarom loont het om dit samen te doen met punt 16 (het archief
+  loopt achter op het sjabloon) en met de reservefoto-terugval uit punt 25 —
+  drie ingrepen op dezelfde plek, één keer regenereren. *(Erik, via een PR —
+  het raakt het artikelsjabloon)*
+
 
 ## Buiten de code — alleen Maarten kan dit
 
 
-- [ ] **23. Search Console terugkijken.** De sitemap is ingediend op
-  2026-09-05 met 2.072 pagina's; onder Indexering → Pagina's zou het aantal
-  geïndexeerde pagina's moeten oplopen. Onder Prestaties zie je op welke
-  zoektermen BrightNews verschijnt.
+- [x] **23. Search Console teruggekeken (2026-09-21).** Maarten stuurde de
+  schermen; hieronder wat eruit te halen valt.
 
-  **Extra check, rond 24 september** (een week of twee na de wijziging van
-  2026-09-10): kijk onder Indexering → Pagina's specifiek naar de status van
-  `/` zelf. Die stond op "uitgesloten" of "pagina met omleiding", omdat de
-  homepage doorverwees naar een pagina met `noindex`. Sinds het parkeerbericht
-  op de homepage zelf staat hoort hij naar **"geïndexeerd"** te gaan. Blijft
-  hij uitgesloten, geef dat dan door — dan kijk ik verder.
+  **De homepage is geïndexeerd.** Dat was de openstaande vraag van punt 23 en
+  het antwoord is ja: `https://brightnews.online/` staat in Prestaties bij
+  "jouw content" mét een klik. De ingreep van 2026-09-10 (parkeerbericht op de
+  homepage zelf in plaats van een doorverwijzing naar een noindex-pagina)
+  heeft dus gewerkt.
+
+  **De cijfers, 28 dagen:** 6 klikken, 97 vertoningen. De enige zoekterm met
+  een klik is "bright news" — dat is iemand die ons al zocht, geen vondst. Van
+  de vijf best bekeken pagina's zijn er vier Engelstalig en één Spaans; de
+  Verenigde Staten leveren de helft van de klikken. De Nederlandse kant doet
+  nog niets.
+
+  **Het echte getal staat bij Indexering: 444 geïndexeerd, 2.442 niet.** En
+  van die 2.442 valt **2.341 onder "Gevonden – momenteel niet geïndexeerd"**.
+  Dat is geen fout en geen straf: Google kent die URL's uit de sitemap, maar
+  heeft besloten ze voorlopig niet op te halen. Dat doet hij wanneer een site
+  hem méér URL's aanbiedt dan hij de moeite waard vindt om te crawlen.
+
+  De techniek is niet de oorzaak — dat is nagelopen en het ligt er goed bij:
+  `robots.txt` staat open, de sitemap heeft 2.927 URL's, elke artikelpagina
+  heeft een `canonical` en volledige `hreflang` naar alle vijf de talen plus
+  `x-default`. Daar valt niets te repareren.
+
+  **Wat er wél aan de hand is, zijn twee dingen, en ze versterken elkaar:**
+
+  1. **De homepage zegt letterlijk één woord tegen Google: "Binnenkort".** Dat
+     is de hele leesbare inhoud van de belangrijkste URL van de site. De
+     nieuwslijst wordt door JavaScript uit JSON opgebouwd en staat niet in de
+     HTML.
+  2. **Geen enkele artikelpagina linkt naar een andere artikelpagina.**
+     Nagemeten: nul `<a>`-links tussen artikelen onderling (de zes links die
+     erop lijken zijn de `hreflang`-varianten van hetzelfde artikel). Elke
+     artikelpagina is dus een eiland dat alleen via de sitemap te vinden is.
+
+  Samen betekent dat: een sitemap met 2.927 URL's, en geen enkele crawlbare
+  route die naar ook maar één daarvan wijst. Een sitemap is een suggestie, een
+  link is een aanbeveling. Op een domein zonder geschiedenis en zonder
+  verwijzingen van buitenaf weegt die suggestie licht — vandaar 2.341 keer
+  "wel gezien, nog niet opgehaald".
+
+  **Wat dit betekent voor de volgorde van het werk:** dit lost zichzelf voor
+  een deel op bij de lancering, want dan verdwijnt het parkeerbericht (punt 2)
+  en krijgt de homepage echte inhoud. Het tweede deel niet: zolang artikelen
+  niet naar elkaar linken blijft het archief slecht bereikbaar. Een blok
+  "meer uit deze categorie" onderaan het artikelsjabloon zou dat in één keer
+  oplossen — dat is dezelfde plek als punt 16 en de reservefoto-terugval, dus
+  het loont om die drie samen te doen. **Nieuw punt daarvoor: 36.**
+
+  Verder uit de schermen, klein grut: 2 pagina's met een omleiding, 1
+  alternatieve pagina met een correcte canonical, 98 "gecrawld – niet
+  geïndexeerd" (dat is Google die wél keek en niet overtuigd raakte) en 1
+  niet-HTTPS-pagina tegenover 2 met HTTPS. Site-vitaliteit staat op "geen
+  gegevens": daar is simpelweg te weinig bezoek voor. Geen van deze vieren is
+  nu de moeite waard om achteraan te gaan.
+
 
 - [x] **25. Deel-previews.** ✅ 2026-09-20 — getest in WhatsApp én LinkedIn,
   met vier artikelen die ik vooraf had doorgemeten. Van alle 581 artikelen is
