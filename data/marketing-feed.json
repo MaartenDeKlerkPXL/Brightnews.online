@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-09-21T04:37:08.936Z",
+ "gegenereerd": "2026-09-21T18:13:14.842Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -14,39 +14,53 @@
      "url": "https://brightnews.online/articles/nl/vijf-dollar-per-nacht-slaap-verhoogt-cijfers-van-studenten-1789965334441fmmtlceew.html"
     },
     {
+     "id": "1790014241811y3vfaki98",
+     "titel": "Vermiste wandelaar Craig Berg na 11 dagen gered op Isle Royale",
+     "teaser": "De 70-jarige Craig Berg maakte een negendaagse solotocht door Isle Royale National Park toen hij op dag vier van het pad afraakte en in een moeras viel, waarbij zijn kleren, tas, eten en telefoon doorweekt raakten. Elf dagen lang schreeuwde hij duizenden keren om hulp en overleefde op vriesdroogvoedsel en vervuild water. Zoekteams breidden hun actie uit nadat beelden van...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/vermiste-wandelaar-craig-berg-na-11-dagen-gered-op-isle-royale-1790014241811y3vfaki98.html"
+    },
+    {
+     "id": "1790014214783otpoivfi3",
+     "titel": "Wilde Przewalskipaarden geboren in Kazachstan na 200 jaar afwezigheid",
+     "teaser": "In Kazachstan zijn twee veulens van het Przewalskipaard geboren, de eerste wilde paarden op Kazachse bodem in meer dan 200 jaar. Het eerste veulen, een hengst, werd op 22 augustus geboren bij de 7-jarige merrie Tessa. Het tweede, ook een hengst, volgde op 31 augustus bij merrie Umbra. Beide hebben dezelfde vader, de inmiddels overleden hengst Zorro. De geboortes vonden...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/wilde-przewalskipaarden-geboren-in-kazachstan-na-200-jaar-afwezigheid-1790014214783otpoivfi3.html"
+    },
+    {
+     "id": "1790014168286wv6pmjzvd",
+     "titel": "Drone-training uit Zuid-Korea voorkomt doden bij overstroming Mozambique",
+     "teaser": "In januari trof een van de zwaarste overstromingen in decennia het district Marracuene in Mozambique, nadat de rivier Incomáti buiten haar oevers trad. Toch vielen er geen dodelijke slachtoffers, dankzij een groep drone-piloten die werd opgeleid via het Drone-Based Disaster Management Project van de KOAFEC Trust Fund van de Afrikaanse Ontwikkelingsbank. Dertig experts, waaronder Kátia Manjate, leerden onder Koreaanse instructeurs...",
+     "score": 9,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/nl/drone-training-uit-zuid-korea-voorkomt-doden-bij-overstroming-mozambique-1790014168286wv6pmjzvd.html"
+    },
+    {
      "id": "1789965311313qeajm49mh",
      "titel": "Mesabi Trail in Minnesota na 30 jaar eindelijk voltooid",
      "teaser": "Na meer dan 30 jaar van planning, aanleg en fondsenwerving is de Mesabi Trail in Minnesota officieel voltooid. Het 165 mijl lange geasfalteerde fietspad is daarmee een van de langste van Amerika. De route loopt van de Mississippi-rivier tot aan de wildernis van de Boundary Waters, door de Iron Range met zijn historische ijzerertsmijnen die tijdens de Tweede Wereldoorlog belangrijk...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/mesabi-trail-in-minnesota-na-30-jaar-eindelijk-voltooid-1789965311313qeajm49mh.html"
-    },
-    {
-     "id": "17899196420568hecmtvs3",
-     "titel": "Amerikaanse staten helpen monarchvlinders op weg naar Mexico",
-     "teaser": "Oostelijke monarchvlinders vliegen meer dan 3.200 kilometer door het centrale deel van de Verenigde Staten om te overwinteren in Mexico. Verschillende staten zijn betrokken bij een project dat deze bestuivers onderweg helpt tijdens hun lange trektocht naar het zuiden.",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/amerikaanse-staten-helpen-monarchvlinders-op-weg-naar-mexico-17899196420568hecmtvs3.html"
-    },
-    {
-     "id": "1789878990544agz0dwnv9",
-     "titel": "Aangereden vosje Chance herstelt dankzij zwemlessen",
-     "teaser": "Een vosje genaamd Chance, dat vorig jaar juni in Nottinghamshire werd aangereden en zijn achterpoten niet meer kon gebruiken, knapt op dankzij hydrotherapie. Een voorbijganger sloeg alarm nadat het dier dagenlang gewond had rondgelegen. Een dierenarts vreesde eerst dat Chance moest worden afgemaakt, maar wildlife-redders namen hem op en startten revalidatie met begeleide zwemsessies in een hondenzwembad van het Mansfield...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/aangereden-vosje-chance-herstelt-dankzij-zwemlessen-1789878990544agz0dwnv9.html"
-    },
-    {
-     "id": "17899652880376z76s0lap",
-     "titel": "Brits echtpaar fostert 59 honden na pensioen",
-     "teaser": "Nicole en Gary Wordsworth, een Brits echtpaar in de zestig, fosteren al 15 jaar honden via Battersea Dogs Home in Buckinghamshire. Sinds hun pensioen vangen ze deeltijds honden op, van een Siberische husky tot een Staffie. De verblijfsduur varieert van een paar nachten tot 18 maanden. Hun eerste hond was een Staffie genaamd Marcel. Ze observeren gedrag zoals eetgewoontes, favoriete...",
-     "score": 8,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/brits-echtpaar-fostert-59-honden-na-pensioen-17899652880376z76s0lap.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260920-science",
+     "titel": "Nieuwe kat, oude kunst en geredde schatten: wetenschap kijkt terug en vooruit",
+     "categorie": "Science",
+     "dag": "2026-09-20",
+     "url": "https://brightnews.online/articles/nl/nieuwe-kat-oude-kunst-en-geredde-schatten-wetenschap-kijkt-terug-en-vooruit-dg-20260920-science.html"
+    },
+    {
+     "id": "dg-20260920-lifestyle",
+     "titel": "Buitenleven met een goede afloop: redding, een compleet fietspad en trouwe pleeggezinnen",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-20",
+     "url": "https://brightnews.online/articles/nl/buitenleven-met-een-goede-afloop-redding-een-compleet-fietspad-en-trouwe-pleegge-dg-20260920-lifestyle.html"
+    },
     {
      "id": "dg-20260919-environment",
      "titel": "Herstel en groei: van vosje op krukken tot groenere steden",
@@ -67,39 +81,53 @@
      "url": "https://brightnews.online/articles/en/five-dollars-per-night-sleep-boosts-student-grades-1789965334441fmmtlceew.html"
     },
     {
+     "id": "1790014241811y3vfaki98",
+     "titel": "Missing hiker Craig Berg rescued after 11 days on Isle Royale",
+     "teaser": "The 70-year-old Craig Berg was on a nine-day solo trek through Isle Royale National Park when he veered off the trail on day four and fell into a marsh, soaking his clothes, backpack, food and phone. For eleven days he called out for help thousands of times and survived on freeze-dried food and contaminated water. Search teams expanded their operation...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/missing-hiker-craig-berg-rescued-after-11-days-on-isle-royale-1790014241811y3vfaki98.html"
+    },
+    {
+     "id": "1790014214783otpoivfi3",
+     "titel": "Wild Przewalski horses born in Kazakhstan after 200 years",
+     "teaser": "Two foals of the Przewalski horse have been born in Kazakhstan, the first wild horses on Kazakhstani soil in more than 200 years. The first foal, a colt, was born on 22 August to the 7-year-old mare Tessa. The second, also a colt, followed on 31 August to mare Umbra. Both share the same father, the now deceased stallion Zorro....",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/wild-przewalski-horses-born-in-kazakhstan-after-200-years-1790014214783otpoivfi3.html"
+    },
+    {
+     "id": "1790014168286wv6pmjzvd",
+     "titel": "South Korean drone training prevents deaths in Mozambique flooding",
+     "teaser": "In January, one of the heaviest floods in decades hit the Marracuene district in Mozambique after the Incomáti river overflowed its banks. Yet there were no fatalities, thanks to a group of drone pilots trained through the Drone-Based Disaster Management Project of the KOAFEC Trust Fund of the African Development Bank. Thirty experts, including Kátia Manjate, learned to operate drones...",
+     "score": 9,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/en/south-korean-drone-training-prevents-deaths-in-mozambique-flooding-1790014168286wv6pmjzvd.html"
+    },
+    {
      "id": "1789965311313qeajm49mh",
      "titel": "Mesabi Trail in Minnesota finally completed after 30 years",
      "teaser": "After more than 30 years of planning, construction and fundraising, the Mesabi Trail in Minnesota is officially complete. The 165-mile paved bike path is now one of the longest in America. The route runs from the Mississippi River to the wilderness of the Boundary Waters, through the Iron Range with its historic iron ore mines that were important to the...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/mesabi-trail-in-minnesota-finally-completed-after-30-years-1789965311313qeajm49mh.html"
-    },
-    {
-     "id": "17899196420568hecmtvs3",
-     "titel": "U.S. states help monarch butterflies on their way to Mexico",
-     "teaser": "Eastern monarch butterflies fly more than 3,200 kilometers through the central United States to overwinter in Mexico. Several states are involved in a project that helps these pollinators along the way during their long migration south.",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/u-s-states-help-monarch-butterflies-on-their-way-to-mexico-17899196420568hecmtvs3.html"
-    },
-    {
-     "id": "1789878990544agz0dwnv9",
-     "titel": "Hit-and-run fox Chance recovers thanks to swimming lessons",
-     "teaser": "A fox named Chance, who was hit by a car in Nottinghamshire last June and lost the use of his hind legs, is making a recovery thanks to hydrotherapy. A passerby raised the alarm after the animal had been lying injured for days. A veterinarian initially feared Chance would have to be euthanized, but wildlife rescuers took him in and...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/hit-and-run-fox-chance-recovers-thanks-to-swimming-lessons-1789878990544agz0dwnv9.html"
-    },
-    {
-     "id": "17899652880376z76s0lap",
-     "titel": "British couple fosters 59 dogs in retirement",
-     "teaser": "Nicole and Gary Wordsworth, a British couple in their sixties, have been fostering dogs through Battersea Dogs Home in Buckinghamshire for 15 years. Since retiring, they take in dogs part-time, ranging from a Siberian husky to a Staffie. The length of stay varies from a few nights to 18 months. Their first dog was a Staffie named Marcel. They observe...",
-     "score": 8,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/british-couple-fosters-59-dogs-in-retirement-17899652880376z76s0lap.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260920-science",
+     "titel": "New cat, ancient art and rescued treasures: science looks back and ahead",
+     "categorie": "Science",
+     "dag": "2026-09-20",
+     "url": "https://brightnews.online/articles/en/new-cat-ancient-art-and-rescued-treasures-science-looks-back-and-ahead-dg-20260920-science.html"
+    },
+    {
+     "id": "dg-20260920-lifestyle",
+     "titel": "Outdoor life with a happy ending: rescue, a complete bike trail, and devoted foster families",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-20",
+     "url": "https://brightnews.online/articles/en/outdoor-life-with-a-happy-ending-rescue-a-complete-bike-trail-and-devoted-foster-dg-20260920-lifestyle.html"
+    },
     {
      "id": "dg-20260919-environment",
      "titel": "Recovery and growth: from injured fox to greener cities",
@@ -120,39 +148,53 @@
      "url": "https://brightnews.online/articles/de/funf-dollar-pro-nacht-schlaf-verbessern-noten-von-studierenden-1789965334441fmmtlceew.html"
     },
     {
+     "id": "1790014241811y3vfaki98",
+     "titel": "Vermisster Wanderer Craig Berg nach 11 Tagen auf Isle Royale gerettet",
+     "teaser": "Der 70-jährige Craig Berg unternahm eine neuntägige Solotour durch den Isle Royale National Park, als er am vierten Tag vom Weg abkam und in ein Moor fiel, wobei seine Kleidung, sein Rucksack, sein Essen und sein Telefon durchnässt wurden. Elf Tage lang schrie er tausende Male um Hilfe und überlebte mit Gefriertrockenkost und verschmutztem Wasser. Suchteams erweiterten ihre Aktion, nachdem...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/vermisster-wanderer-craig-berg-nach-11-tagen-auf-isle-royale-gerettet-1790014241811y3vfaki98.html"
+    },
+    {
+     "id": "1790014214783otpoivfi3",
+     "titel": "Wilde Przewalskipferde in Kasachstan nach 200 Jahren geboren",
+     "teaser": "In Kasachstan sind zwei Fohlen des Przewalskipferdes geboren worden, die ersten wilden Pferde auf kasachischem Boden seit mehr als 200 Jahren. Das erste Fohlen, ein Hengst, wurde am 22. August bei der siebenjährigen Stute Tessa geboren. Das zweite, ebenfalls ein Hengst, folgte am 31. August bei Stute Umbra. Beide haben denselben Vater, den inzwischen verstorbenen Hengst Zorro. Die Geburten fanden...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/wilde-przewalskipferde-in-kasachstan-nach-200-jahren-geboren-1790014214783otpoivfi3.html"
+    },
+    {
+     "id": "1790014168286wv6pmjzvd",
+     "titel": "Drohnenausbildung aus Südkorea verhindert Todesfälle bei Mosambik-Flutkatastrophe",
+     "teaser": "Im Januar traf eine der schwersten Überschwemmungen seit Jahrzehnten den Distrikt Marracuene in Mosambik, nachdem der Fluss Incomáti über die Ufer trat. Dennoch gab es keine Todesfälle, dank einer Gruppe von Drohnenpiloten, die durch das Drone-Based Disaster Management Project des KOAFEC Trust Fund der Afrikanischen Entwicklungsbank ausgebildet wurden. Dreißig Experten, darunter Kátia Manjate, lernten unter koreanischen Instruktoren, Drohnen und LiDAR-Geräte...",
+     "score": 9,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/de/drohnenausbildung-aus-sudkorea-verhindert-todesfalle-bei-mosambik-flutkatastroph-1790014168286wv6pmjzvd.html"
+    },
+    {
      "id": "1789965311313qeajm49mh",
      "titel": "Mesabi Trail in Minnesota nach 30 Jahren endlich fertiggestellt",
      "teaser": "Nach mehr als 30 Jahren Planung, Bau und Mittelbeschaffung ist der Mesabi Trail in Minnesota offiziell fertiggestellt. Der 165 Meilen lange asphaltierte Radweg gehört damit zu den längsten Amerikas. Die Route verläuft vom Mississippi bis zur Wildnis der Boundary Waters und führt durch die Iron Range mit ihren historischen Eisenerzgruben, die während des Zweiten Weltkriegs für die amerikanische Stahlindustrie wichtig...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/mesabi-trail-in-minnesota-nach-30-jahren-endlich-fertiggestellt-1789965311313qeajm49mh.html"
-    },
-    {
-     "id": "17899196420568hecmtvs3",
-     "titel": "Amerikanische Staaten helfen Monarchfaltern auf dem Weg nach Mexiko",
-     "teaser": "Östliche Monarchfalter fliegen mehr als 3.200 Kilometer durch den zentralen Teil der Vereinigten Staaten, um in Mexiko zu überwintern. Mehrere Staaten sind an einem Projekt beteiligt, das diese Bestäuber während ihrer langen Wanderung in den Süden unterstützt.",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/amerikanische-staaten-helfen-monarchfaltern-auf-dem-weg-nach-mexiko-17899196420568hecmtvs3.html"
-    },
-    {
-     "id": "1789878990544agz0dwnv9",
-     "titel": "Angefahrener Fuchs Chance erholt sich durch Schwimmtherapie",
-     "teaser": "Ein Fuchs namens Chance, der im Juni des vergangenen Jahres in Nottinghamshire angefahren wurde und seine Hinterbeine nicht mehr nutzen konnte, erholt sich dank Hydrotherapie. Ein Passant schlug Alarm, nachdem das Tier tagelang verletzt umhergelaufen war. Ein Tierarzt fürchtete zunächst, dass Chance eingeschläfert werden müsse, aber Wildlife-Retter nahmen ihn auf und begannen eine Rehabilitation mit angeleiteten Schwimmsitzungen im Hundeschwimmbad des...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/angefahrener-fuchs-chance-erholt-sich-durch-schwimmtherapie-1789878990544agz0dwnv9.html"
-    },
-    {
-     "id": "17899652880376z76s0lap",
-     "titel": "Britisches Ehepaar pflegt 59 Hunde im Ruhestand",
-     "teaser": "Nicole und Gary Wordsworth, ein britisches Ehepaar in den Sechzigern, pflegen bereits seit 15 Jahren Hunde über Battersea Dogs Home in Buckinghamshire. Seit ihrer Pensionierung nehmen sie in Teilzeit Hunde auf, von einem Sibirischen Husky bis zu einem Staffie. Die Aufenthaltsdauer variiert von wenigen Nächten bis zu 18 Monaten. Ihr erster Hund war ein Staffie namens Marcel. Sie beobachten Verhaltensweisen...",
-     "score": 8,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/britisches-ehepaar-pflegt-59-hunde-im-ruhestand-17899652880376z76s0lap.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260920-science",
+     "titel": "Neue Katze, alte Kunst und gerettete Schätze: Die Wissenschaft blickt zurück und voraus",
+     "categorie": "Science",
+     "dag": "2026-09-20",
+     "url": "https://brightnews.online/articles/de/neue-katze-alte-kunst-und-gerettete-schatze-die-wissenschaft-blickt-zuruck-und-v-dg-20260920-science.html"
+    },
+    {
+     "id": "dg-20260920-lifestyle",
+     "titel": "Outdoor-Leben mit gutem Ausgang: Rettung, ein kompletter Fahrradweg und treue Pflegefamilien",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-20",
+     "url": "https://brightnews.online/articles/de/outdoor-leben-mit-gutem-ausgang-rettung-ein-kompletter-fahrradweg-und-treue-pfle-dg-20260920-lifestyle.html"
+    },
     {
      "id": "dg-20260919-environment",
      "titel": "Genesung und Wachstum: vom Fuchs an Krücken zu grüneren Städten",
@@ -173,39 +215,53 @@
      "url": "https://brightnews.online/articles/fr/cinq-dollars-par-nuit-de-sommeil-ameliore-les-notes-des-etudiants-1789965334441fmmtlceew.html"
     },
     {
+     "id": "1790014241811y3vfaki98",
+     "titel": "Randonneur disparu Craig Berg secouru après 11 jours sur Isle Royale",
+     "teaser": "Craig Berg, 70 ans, effectuait une randonnée en solo de neuf jours à travers Isle Royale National Park lorsqu'il s'est écarté du sentier le quatrième jour et a chuté dans un marais, imbibant ses vêtements, son sac, ses provisions et son téléphone. Pendant onze jours, il a crié des milliers de fois à l'aide et a survécu grâce à des...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/randonneur-disparu-craig-berg-secouru-apres-11-jours-sur-isle-royale-1790014241811y3vfaki98.html"
+    },
+    {
+     "id": "1790014214783otpoivfi3",
+     "titel": "Des chevaux de Przewalski sauvages nés au Kazakhstan après 200 ans d'absence",
+     "teaser": "Au Kazakhstan, deux poulains de cheval de Przewalski sont nés, les premiers chevaux sauvages sur le territoire kazakh depuis plus de 200 ans. Le premier poulain, un étalon, est né le 22 août chez la jument Tessa, âgée de 7 ans. Le second, également un étalon, a suivi le 31 août chez la jument Umbra. Les deux ont le même...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/des-chevaux-de-przewalski-sauvages-nes-au-kazakhstan-apres-200-ans-d-absence-1790014214783otpoivfi3.html"
+    },
+    {
+     "id": "1790014168286wv6pmjzvd",
+     "titel": "Une formation aux drones sud-coréenne prévient les décès lors des inondations au Mozambique",
+     "teaser": "En janvier, l'une des plus graves inondations de ces dernières décennies a frappé le district de Marracuene au Mozambique, après que le fleuve Incomáti soit sorti de son lit. Pourtant, aucune victime n'a été enregistrée, grâce à un groupe de pilotes de drones formés par le biais du Drone-Based Disaster Management Project du KOAFEC Trust Fund de la Banque africaine...",
+     "score": 9,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/fr/une-formation-aux-drones-sud-coreenne-previent-les-deces-lors-des-inondations-au-1790014168286wv6pmjzvd.html"
+    },
+    {
      "id": "1789965311313qeajm49mh",
      "titel": "La Mesabi Trail au Minnesota enfin achevée après 30 ans",
      "teaser": "Après plus de 30 ans de planification, de construction et de levée de fonds, la Mesabi Trail au Minnesota est officiellement achevée. Cette piste cyclable asphaltée de 165 milles est désormais l'une des plus longues d'Amérique. L'itinéraire s'étend du fleuve Mississippi jusqu'à la nature sauvage des Boundary Waters, en traversant l'Iron Range avec ses mines de minerai de fer historiques...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/la-mesabi-trail-au-minnesota-enfin-achevee-apres-30-ans-1789965311313qeajm49mh.html"
-    },
-    {
-     "id": "17899196420568hecmtvs3",
-     "titel": "Des États américains aident les monarques sur le chemin du Mexique",
-     "teaser": "Les monarques de l'Est parcourent plus de 3 200 kilomètres à travers le centre des États-Unis pour hiverner au Mexique. Plusieurs États participent à un projet qui aide ces pollinisateurs en chemin lors de leur long voyage vers le sud.",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/des-etats-americains-aident-les-monarques-sur-le-chemin-du-mexique-17899196420568hecmtvs3.html"
-    },
-    {
-     "id": "1789878990544agz0dwnv9",
-     "titel": "Le petit renard Chance se rétablit grâce à des séances de natation",
-     "teaser": "Un jeune renard nommé Chance, percuté par une voiture en juin dernier dans le Nottinghamshire et ayant perdu l'usage de ses pattes arrière, se rétablit grâce à l'hydrothérapie. Un passant a donné l'alerte après que l'animal ait erré blessé pendant plusieurs jours. Un vétérinaire a d'abord craint devoir l'euthanasier, mais les sauveteurs de la faune l'ont pris en charge et...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/le-petit-renard-chance-se-retablit-grace-a-des-seances-de-natation-1789878990544agz0dwnv9.html"
-    },
-    {
-     "id": "17899652880376z76s0lap",
-     "titel": "Un couple britannique accueille 59 chiens en famille d'accueil",
-     "teaser": "Nicole et Gary Wordsworth, un couple britannique sexagénaire, accueillent des chiens en famille d'accueil depuis 15 ans via Battersea Dogs Home dans le Buckinghamshire. Depuis leur retraite, ils hébergent à temps partiel des chiens, du husky sibérien au Staffordshire bull-terrier. La durée du séjour varie de quelques nuits à 18 mois. Leur premier chien était un Staffordshire bull-terrier nommé Marcel....",
-     "score": 8,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/un-couple-britannique-accueille-59-chiens-en-famille-d-accueil-17899652880376z76s0lap.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260920-science",
+     "titel": "Un nouveau chat, un art ancien et des trésors sauvés : la science regarde vers le passé et l'avenir",
+     "categorie": "Science",
+     "dag": "2026-09-20",
+     "url": "https://brightnews.online/articles/fr/un-nouveau-chat-un-art-ancien-et-des-tresors-sauves-la-science-regarde-vers-le-p-dg-20260920-science.html"
+    },
+    {
+     "id": "dg-20260920-lifestyle",
+     "titel": "La vie en plein air avec une belle fin : un sauvetage, une piste cyclable complète et des familles d'accueil dévouées",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-20",
+     "url": "https://brightnews.online/articles/fr/la-vie-en-plein-air-avec-une-belle-fin-un-sauvetage-une-piste-cyclable-complete--dg-20260920-lifestyle.html"
+    },
     {
      "id": "dg-20260919-environment",
      "titel": "Rétablissement et croissance : du renard sur béquilles aux villes plus vertes",
@@ -226,39 +282,53 @@
      "url": "https://brightnews.online/articles/es/cinco-dolares-por-noche-de-sueno-mejoran-las-calificaciones-de-estudiantes-1789965334441fmmtlceew.html"
     },
     {
+     "id": "1790014241811y3vfaki98",
+     "titel": "Excursionista desaparecido Craig Berg rescatado tras 11 días en Isle Royale",
+     "teaser": "Craig Berg, de 70 años, realizaba una excursión en solitario de nueve días por Isle Royale National Park cuando se desvió del sendero el cuarto día y cayó en un pantano, empaпando su ropa, mochila, comida y teléfono. Durante once días gritó miles de veces pidiendo ayuda y sobrevivió con alimentos liofilizados y agua contaminada. Los equipos de búsqueda ampliaron...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/excursionista-desaparecido-craig-berg-rescatado-tras-11-dias-en-isle-royale-1790014241811y3vfaki98.html"
+    },
+    {
+     "id": "1790014214783otpoivfi3",
+     "titel": "Caballos de Przewalski salvajes nacen en Kazajistán tras 200 años de ausencia",
+     "teaser": "En Kazajistán han nacido dos potros de caballo de Przewalski, los primeros caballos salvajes en territorio kazajo en más de 200 años. El primer potro, un semental, nació el 22 de agosto de la yegua Tessa, de 7 años. El segundo, también un semental, llegó el 31 de agosto de la yegua Umbra. Ambos tienen el mismo padre, el semental...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/caballos-de-przewalski-salvajes-nacen-en-kazajistan-tras-200-anos-de-ausencia-1790014214783otpoivfi3.html"
+    },
+    {
+     "id": "1790014168286wv6pmjzvd",
+     "titel": "Entrenamiento de drones de Corea del Sur evita muertes en inundación de Mozambique",
+     "teaser": "En enero, una de las inundaciones más graves en décadas afectó el distrito de Marracuene en Mozambique, después de que el río Incomáti se desbordara. Sin embargo, no hubo víctimas mortales, gracias a un grupo de pilotos de drones capacitados a través del Proyecto de Gestión de Desastres Basado en Drones del Fondo KOAFEC del Banco Africano de Desarrollo. Treinta...",
+     "score": 9,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/es/entrenamiento-de-drones-de-corea-del-sur-evita-muertes-en-inundacion-de-mozambiq-1790014168286wv6pmjzvd.html"
+    },
+    {
      "id": "1789965311313qeajm49mh",
      "titel": "Mesabi Trail en Minnesota finalmente completado tras 30 años",
      "teaser": "Tras más de 30 años de planificación, construcción y recaudación de fondos, el Mesabi Trail en Minnesota ha sido oficialmente completado. La ruta asfaltada de 165 millas es así una de las más largas de América. El camino se extiende desde el río Misisipi hasta la naturaleza salvaje de las Boundary Waters, atravesando la Iron Range con sus históricas minas...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/mesabi-trail-en-minnesota-finalmente-completado-tras-30-anos-1789965311313qeajm49mh.html"
-    },
-    {
-     "id": "17899196420568hecmtvs3",
-     "titel": "Estados estadounidenses ayudan a las mariposas monarca en su camino hacia México",
-     "teaser": "Las mariposas monarca orientales vuelan más de 3.200 kilómetros a través de la parte central de Estados Unidos para pasar el invierno en México. Varios estados participan en un proyecto que ayuda a estos polinizadores durante su largo viaje migratorio hacia el sur.",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/estados-estadounidenses-ayudan-a-las-mariposas-monarca-en-su-camino-hacia-mexico-17899196420568hecmtvs3.html"
-    },
-    {
-     "id": "1789878990544agz0dwnv9",
-     "titel": "El zorro Chance se recupera gracias a lecciones de natación",
-     "teaser": "Un zorro llamado Chance, que fue atropellado en junio del año pasado en Nottinghamshire y perdió la movilidad de sus patas traseras, se recupera gracias a la hidroterapia. Un transeúnte dio la alarma después de que el animal hubiera estado herido varios días. Un veterinario temía al principio que Chance tuviera que ser sacrificado, pero los rescatistas de fauna silvestre...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/el-zorro-chance-se-recupera-gracias-a-lecciones-de-natacion-1789878990544agz0dwnv9.html"
-    },
-    {
-     "id": "17899652880376z76s0lap",
-     "titel": "Pareja británica acoge a 59 perros tras jubilarse",
-     "teaser": "Nicole y Gary Wordsworth, una pareja británica de sesenta y tantos años, acogen perros desde hace 15 años a través de Battersea Dogs Home en Buckinghamshire. Desde su jubilación, reciben perros a tiempo parcial, desde un husky siberiano hasta un Staffie. La duración de la estancia varía desde algunas noches hasta 18 meses. Su primer perro fue un Staffie llamado...",
-     "score": 8,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/pareja-britanica-acoge-a-59-perros-tras-jubilarse-17899652880376z76s0lap.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260920-science",
+     "titel": "Un gato nuevo, arte antiguo y tesoros rescatados: la ciencia mira hacia atrás y hacia adelante",
+     "categorie": "Science",
+     "dag": "2026-09-20",
+     "url": "https://brightnews.online/articles/es/un-gato-nuevo-arte-antiguo-y-tesoros-rescatados-la-ciencia-mira-hacia-atras-y-ha-dg-20260920-science.html"
+    },
+    {
+     "id": "dg-20260920-lifestyle",
+     "titel": "Vida al aire libre con final feliz: un rescate, una ciclovía completa y familias de acogida leales",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-20",
+     "url": "https://brightnews.online/articles/es/vida-al-aire-libre-con-final-feliz-un-rescate-una-ciclovia-completa-y-familias-d-dg-20260920-lifestyle.html"
+    },
     {
      "id": "dg-20260919-environment",
      "titel": "Recuperación y crecimiento: de un zorro con muletas a ciudades más verdes",

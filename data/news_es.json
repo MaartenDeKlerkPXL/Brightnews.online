@@ -1,5 +1,105 @@
 [
   {
+    "id": "dg-20260920-science",
+    "type": "digest",
+    "digest_date": "2026-09-20",
+    "title": "Un gato nuevo, arte antiguo y tesoros rescatados: la ciencia mira hacia atrás y hacia adelante",
+    "summary": "En los últimos días, la ciencia demuestra cómo el pasado y el presente se tocan mutuamente. Una especie de gato desconocida aparece en Bolivia, un arte de marfil ancestral resulta haber sido elaborado con más cuidado del que se pensaba, y en Alaska los arqueólogos rescatan tesoros frágiles justo a tiempo. Tres historias muy diferentes, pero todas ellas muestran cuánto hay aún por descubrir y preservar. Comencemos con el gato. En Bolivia se ha identificado por primera vez en más de cien años una nueva especie felina: Leopardus tilcayo [1]. La historia comienza ya en 2016, cuando alguien llevó un...",
+    "image_alt": "Un gato nuevo, arte antiguo y tesoros rescatados: la ciencia mira hacia atrás y hacia adelante",
+    "meta_description": "De una nueva especie felina en Bolivia a tesoros Yup'ik rescatados en Alaska: las noticias científicas positivas de estos días en BrightNews.",
+    "meta_keywords": "Science",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/imrs-e1789720878162.jpg",
+    "date": "2026-09-21T18:13:14.426Z",
+    "category": "Science",
+    "refs": [
+      {
+        "id": "1789791470039iv33h3zat",
+        "title": "Nueva especie felina Tilcayo descubierta en Bolivia"
+      },
+      {
+        "id": "1789965262786z6vu42lzy",
+        "title": "Los humanos primitivos utilizaban patrones de crecimiento del colmillo de mamut para un arte único"
+      },
+      {
+        "id": "1789832772703vb1b4cr0s",
+        "title": "Arqueólogos rescatan hallazgos Yup'ik milenarios en Alaska"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260920-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-09-20",
+    "title": "Vida al aire libre con final feliz: un rescate, una ciclovía completa y familias de acogida leales",
+    "summary": "En estos días, en la categoría de estilo de vida todo gira en torno a estar al aire libre, perseverar y cuidarse mutuamente. Desde un excursionista que contra todo pronóstico es encontrado, hasta una ciclovía que después de treinta años finalmente está lista, y una pareja que durante años ha dado un hogar temporal a perros. Tres historias diferentes, pero todas con el mismo trasfondo: personas que no se rinden y que siguen esforzándose por los demás, humanos o animales. La historia más impactante proviene de Isle Royale National Park, donde Craig Berg, de 70 años, estuvo desaparecido durante once...",
+    "image_alt": "Vida al aire libre con final feliz: un rescate, una ciclovía completa y familias de acogida leales",
+    "meta_description": "Noticias de estilo de vida del 20 de septiembre de 2026: un excursionista rescatado, una ciclovía completada en Minnesota y una pareja que acoge perros.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab160ac37a1d4530ef86c2a_6ab160abf3154b9837b18bfe_craig-berg-missing-hiker-found-isle-royale-national-park-featured.webp",
+    "date": "2026-09-21T18:12:01.356Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "1790014241811y3vfaki98",
+        "title": "Excursionista desaparecido Craig Berg rescatado tras 11 días en Isle Royale"
+      },
+      {
+        "id": "1789965311313qeajm49mh",
+        "title": "Mesabi Trail en Minnesota finalmente completado tras 30 años"
+      },
+      {
+        "id": "17899652880376z76s0lap",
+        "title": "Pareja británica acoge a 59 perros tras jubilarse"
+      }
+    ]
+  },
+  {
+    "id": "1790014241811y3vfaki98",
+    "title": "Excursionista desaparecido Craig Berg rescatado tras 11 días en Isle Royale",
+    "summary": "Craig Berg, de 70 años, realizaba una excursión en solitario de nueve días por Isle Royale National Park cuando se desvió del sendero el cuarto día y cayó en un pantano, empaпando su ropa, mochila, comida y teléfono. Durante once días gritó miles de veces pidiendo ayuda y sobrevivió con alimentos liofilizados y agua contaminada. Los equipos de búsqueda ampliaron...",
+    "image_alt": "Equipo de rescate y helicóptero de la Guardia Costera durante la operación de búsqueda del excursionista Craig Berg en Isle Royale",
+    "meta_description": "Craig Berg (70) desaparecido 11 días en Isle Royale, rescatado gracias a cámara de vigilancia y kayakistas tras caída en pantano.",
+    "meta_keywords": "Craig Berg, Isle Royale, excursionista desaparecido, operación de rescate, National Park Service, Guardia Costera, cámara de vigilancia",
+    "link": "https://www.goodgoodgood.co/articles/craig-berg-missing-hiker-found-isle-royale-national-park",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab160ac37a1d4530ef86c2a_6ab160abf3154b9837b18bfe_craig-berg-missing-hiker-found-isle-royale-national-park-featured.webp",
+    "date": "2026-09-21T18:10:43.397Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "1790014214783otpoivfi3",
+    "title": "Caballos de Przewalski salvajes nacen en Kazajistán tras 200 años de ausencia",
+    "summary": "En Kazajistán han nacido dos potros de caballo de Przewalski, los primeros caballos salvajes en territorio kazajo en más de 200 años. El primer potro, un semental, nació el 22 de agosto de la yegua Tessa, de 7 años. El segundo, también un semental, llegó el 31 de agosto de la yegua Umbra. Ambos tienen el mismo padre, el semental...",
+    "image_alt": "Dos caballos de Przewalski salvajes con sus potros en las estepas de Kazajistán",
+    "meta_description": "Dos potros de caballo de Przewalski nacen en Kazajistán: los primeros caballos salvajes allí en más de 200 años.",
+    "meta_keywords": "caballo de Przewalski, Kazajistán, caballos salvajes, Altyn Dala, ACBK, conservación de la naturaleza, reintroducción",
+    "link": "https://www.goodgoodgood.co/articles/wild-przewalskis-horses-born-kazakhstan-200-years",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa971cc857b7976aebc89e3_two-wild-przewalskis-horse-foals-born-in-kazakhstan-after-200-years-01.jpg",
+    "date": "2026-09-21T18:10:16.832Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790014168286wv6pmjzvd",
+    "title": "Entrenamiento de drones de Corea del Sur evita muertes en inundación de Mozambique",
+    "summary": "En enero, una de las inundaciones más graves en décadas afectó el distrito de Marracuene en Mozambique, después de que el río Incomáti se desbordara. Sin embargo, no hubo víctimas mortales, gracias a un grupo de pilotos de drones capacitados a través del Proyecto de Gestión de Desastres Basado en Drones del Fondo KOAFEC del Banco Africano de Desarrollo. Treinta...",
+    "image_alt": "Piloto de drones controla un dron sobre un área inundada en Marracuene, Mozambique",
+    "meta_description": "Programa de entrenamiento de drones coreano ayuda a Mozambique a sobrevivir inundación sin víctimas mortales.",
+    "meta_keywords": "Mozambique, inundación, drones, Corea del Sur, KOAFEC, gestión de desastres, Banco Africano de Desarrollo, LiDAR",
+    "link": "https://www.goodnewsnetwork.org/korean-drone-rescue-program-helps-mozambique-achieve-zero-fatalities-during-worst-flood-in-decades/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/A-Mozambique-pilot-learns-to-pilot-a-drone-from-an-experienced-South-Korean-operator-credit-African-Development-Bank-released.jpg",
+    "date": "2026-09-21T18:09:31.742Z",
+    "category": "Tech",
+    "score": 9
+  },
+  {
     "id": "1789965334441fmmtlceew",
     "title": "Cinco dólares por noche de sueño mejoran las calificaciones de estudiantes",
     "summary": "Investigadores de la University of Pittsburgh pagaron a más de 1.100 estudiantes a través de una aplicación Fitbit para dormir siete horas por noche. Los 468 estudiantes que recibieron aproximadamente 5 dólares por noche durmieron 26% más noches con sueño suficiente y 19 minutos más por noche escolar que un grupo de control sin pago. Su GPA aumentó ese semestre...",
@@ -2474,19 +2574,5 @@
     "date": "2026-09-05T22:29:44.931Z",
     "category": "Tech",
     "score": 9
-  },
-  {
-    "id": "1788647298148ob78z37jl",
-    "title": "Juez bloquea centro de datos en terreno federal cerca de Boulder City",
-    "summary": "Un tribunal administrativo federal ha revocado temporalmente el permiso para la construcción de un gran centro de datos cerca de Boulder City. La Junta de Apelaciones de Tierras del Interior dictaminó que la Oficina de Administración de Tierras probablemente cometió un error al aprobar el proyecto basándose en un análisis ambiental anterior no relacionado para un proyecto de energía solar....",
-    "image_alt": "Sitio de construcción para centro de datos en terreno desértico cerca de Boulder City, Nevada",
-    "meta_description": "Juez federal detiene construcción de centro de datos en Boulder City por falta de análisis ambiental de la BLM.",
-    "meta_keywords": "centro de datos, Boulder City, BLM, análisis ambiental, Center for Biological Diversity, terreno público, Nevada",
-    "link": "https://www.goodgoodgood.co/articles/judge-stops-data-center-construction-on-public-land",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a99d742fc12430b9490b45f_6a99d7423240a45dbfdebcf1_judge-stops-data-center-construction-on-public-land-featured.webp",
-    "date": "2026-09-05T22:28:18.880Z",
-    "category": "Environment",
-    "score": 7
   }
 ]
