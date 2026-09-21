@@ -1,5 +1,65 @@
 [
  {
+  "datum": "2026-09-21T04:33:54.741Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "Cavemen Used Mammoth Tusk Patterns to Create Unique Art, Reveals New Research",
+  "uitsluiting": "geen",
+  "gevoel": 2,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 8,
+  "besluit": "ja",
+  "reden": "Fascinerende wetenschappelijke ontdekking over oude kunstenaars die positief geformuleerd is en maatschappelijk relevant voor cultuurgeschiedenis."
+ },
+ {
+  "datum": "2026-09-21T04:33:54.741Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "Couple Fosters 59 Dogs in Retirement: ‘We love to get them out of the kennels’",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 2,
+  "totaal": 8,
+  "besluit": "ja",
+  "reden": "Hartverwarmend verhaal over langdurige dierenwelzijn en gemeenschapszin, positief geformuleerd, met persoonlijke herkenning."
+ },
+ {
+  "datum": "2026-09-21T04:33:54.741Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "165-Mile Bike Trail Through Minnesota Finally Completed After 30 years, One of the Longest in America",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Inspirerend verhaal over voltooiing van een langdurig project dat gemeenschappen verbindt en gezondheid bevordert, volledig positief geformuleerd."
+ },
+ {
+  "datum": "2026-09-21T04:33:54.741Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "Researchers paid college students $5 a night to get more sleep. Then, their GPAs rose",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 4,
+  "totaal": 10,
+  "besluit": "ja",
+  "reden": "Hoopgevend onderzoek met directe maatschappelijke impact op studentenwelzijn en academische prestaties, positief geformuleerd en breed relevant."
+ },
+ {
+  "datum": "2026-09-21T04:33:54.741Z",
+  "bron": "Theecologist.org",
+  "titel": "The Amazon does not need new masters",
+  "uitsluiting": "politiek",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Dit is een politiek-ideologisch stuk over bioeconomie en inheemse rechten waar het 'goed gevoel' volledig afhangt van politieke overtuiging."
+ },
+ {
   "datum": "2026-09-20T15:53:47.562Z",
   "bron": "NPR.org",
   "titel": "Monarch butterflies are on their way to Mexico. States are helping them on their way",
@@ -3437,60 +3497,5 @@
   "totaal": 6,
   "besluit": "nee",
   "reden": "Positief over praktische huisvestingsoplossingen voor gezinnen; herkenbaar en inspirerend, maar vooral consumptief-gericht."
- },
- {
-  "datum": "2026-09-14T18:01:12.340Z",
-  "bron": "Newatlas.com",
-  "titel": "Jensen Interceptor GTX is Britain's emphatic reply to the Ford Mustang",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Voertuignieuws/productlancering; geen maatschappelijke relevantie; afwijslijst."
- },
- {
-  "datum": "2026-09-14T18:01:12.340Z",
-  "bron": "Newatlas.com",
-  "titel": "Epic ride: 201,901 miles, four records and $150,000 for charity",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "Hartverwarmend: echte persoon, extreme inspanning voor goed doel (liefdadigheid), records en gemeenschapszin als kern."
- },
- {
-  "datum": "2026-09-14T18:01:12.340Z",
-  "bron": "Newatlas.com",
-  "titel": "Shoei GT-Air 3 Smart helmet drops with built-in AR for $1,500",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Productlancering van smart helmet; consumententech/gadgetnieuws zonder maatschappelijke doorbraak; afwijslijst."
- },
- {
-  "datum": "2026-09-14T18:01:12.340Z",
-  "bron": "Newatlas.com",
-  "titel": "Modular folding camp grill builds like Legos to feed a crowd",
-  "gevoel": 1,
-  "formulering": 2,
-  "relevantie": 1,
-  "totaal": 4,
-  "besluit": "nee",
-  "reden": "Productnieuws/Kickstarter-campagne voor campinggrill; consumptief zonder maatschappelijke relevantie of persoonlijke herkenning."
- },
- {
-  "datum": "2026-09-14T18:01:18.711Z",
-  "bron": "Newatlas.com",
-  "titel": "Shifty micro-camper wagon punches the clock as unassuming daily SUV",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Productlancering/voertuignieuws zonder maatschappelijke betekenis"
  }
 ]

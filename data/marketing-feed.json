@@ -1,17 +1,25 @@
 {
- "gegenereerd": "2026-09-20T15:54:05.123Z",
+ "gegenereerd": "2026-09-21T04:37:08.936Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
     {
-     "id": "17897482454609nk17tmq1",
-     "titel": "Senior Bridge: containerwoningen voor dakloze senioren in Phoenix",
-     "teaser": "In maart opende in Phoenix, Arizona het project Senior Bridge: 40 zelfstandige studio's gemaakt van scheepscontainers voor daklozen van 55 jaar en ouder. Senioren vormen een snelgroeiende groep dakloze inwoners en bezetten zo'n 40% van de noodopvangbedden bij Central Arizona Shelter Services. De units van 160 vierkante voet hebben een bed, badkamer, mini-koelkast en magnetron, en draaien overdag op zonnepanelen...",
+     "id": "1789965334441fmmtlceew",
+     "titel": "Vijf dollar per nacht slaap verhoogt cijfers van studenten",
+     "teaser": "Onderzoekers van de University of Pittsburgh betaalden meer dan 1.100 studenten via een Fitbit-app om zeven uur per nacht te slapen. De 468 studenten die circa 5 dollar per nacht kregen, sliepen 26% meer nachten voldoende en 19 minuten langer per schoolnacht dan een controlegroep zonder betaling. Hun GPA steeg dat semester met ongeveer 0,08 punt. Ook na het stoppen...",
      "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/nl/vijf-dollar-per-nacht-slaap-verhoogt-cijfers-van-studenten-1789965334441fmmtlceew.html"
+    },
+    {
+     "id": "1789965311313qeajm49mh",
+     "titel": "Mesabi Trail in Minnesota na 30 jaar eindelijk voltooid",
+     "teaser": "Na meer dan 30 jaar van planning, aanleg en fondsenwerving is de Mesabi Trail in Minnesota officieel voltooid. Het 165 mijl lange geasfalteerde fietspad is daarmee een van de langste van Amerika. De route loopt van de Mississippi-rivier tot aan de wildernis van de Boundary Waters, door de Iron Range met zijn historische ijzerertsmijnen die tijdens de Tweede Wereldoorlog belangrijk...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/senior-bridge-containerwoningen-voor-dakloze-senioren-in-phoenix-17897482454609nk17tmq1.html"
+     "url": "https://brightnews.online/articles/nl/mesabi-trail-in-minnesota-na-30-jaar-eindelijk-voltooid-1789965311313qeajm49mh.html"
     },
     {
      "id": "17899196420568hecmtvs3",
@@ -30,20 +38,12 @@
      "url": "https://brightnews.online/articles/nl/aangereden-vosje-chance-herstelt-dankzij-zwemlessen-1789878990544agz0dwnv9.html"
     },
     {
-     "id": "1789791521381pbrbcl1ls",
-     "titel": "Toronto bouwt wijk Ookwemin Minising met langste autovrije straat van Canada",
-     "teaser": "Toronto ontwikkelt de nieuwe wijk Ookwemin Minising, waar straten worden vervangen door parken en pleinen. Centre Commons, een 800 meter lange voetgangersroute met 400 bomen, wordt aangeprezen als Canada's langste en meest ambitieuze jaarrond autovrije zone. Zijstraten laten wel verkeer toe, maar prioriteren groen en fungeren als klimaatinfrastructuur: ze vangen regenwater op, verminderen stedelijke hitte en ondersteunen biodiversiteit. De naam...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/toronto-bouwt-wijk-ookwemin-minising-met-langste-autovrije-straat-van-canada-1789791521381pbrbcl1ls.html"
-    },
-    {
-     "id": "1789791496249m76kxgprk",
-     "titel": "Rangers redden babyolifant van 90 kilo uit drinkbak",
-     "teaser": "De Sheldrick Wildlife Trust, actief sinds 1977 in Oost-Afrika, redde vorig jaar september een babyolifant die vastzat in een door mensen gemaakte drinkbak. De moeder stond angstig in de buurt, maar kon niet helpen. Rangers reden zo dicht mogelijk naar de drinkbak en claxonneerden en gaven gas om tijd te winnen zonder de moeder te ver weg te jagen. Na...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/rangers-redden-babyolifant-van-90-kilo-uit-drinkbak-1789791496249m76kxgprk.html"
+     "id": "17899652880376z76s0lap",
+     "titel": "Brits echtpaar fostert 59 honden na pensioen",
+     "teaser": "Nicole en Gary Wordsworth, een Brits echtpaar in de zestig, fosteren al 15 jaar honden via Battersea Dogs Home in Buckinghamshire. Sinds hun pensioen vangen ze deeltijds honden op, van een Siberische husky tot een Staffie. De verblijfsduur varieert van een paar nachten tot 18 maanden. Hun eerste hond was een Staffie genaamd Marcel. Ze observeren gedrag zoals eetgewoontes, favoriete...",
+     "score": 8,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/brits-echtpaar-fostert-59-honden-na-pensioen-17899652880376z76s0lap.html"
     }
    ],
    "dagoverzichten": [
@@ -53,32 +53,26 @@
      "categorie": "Environment",
      "dag": "2026-09-19",
      "url": "https://brightnews.online/articles/nl/herstel-en-groei-van-vosje-op-krukken-tot-groenere-steden-dg-20260919-environment.html"
-    },
-    {
-     "id": "dg-20260918-environment",
-     "titel": "Groene straten, geredde olifanten en schonere stoffen: het goede nieuws van de week",
-     "categorie": "Environment",
-     "dag": "2026-09-18",
-     "url": "https://brightnews.online/articles/nl/groene-straten-geredde-olifanten-en-schonere-stoffen-het-goede-nieuws-van-de-wee-dg-20260918-environment.html"
-    },
-    {
-     "id": "dg-20260917-science",
-     "titel": "Satellieten, een chimpansee en oude sporen: de wetenschap van deze week",
-     "categorie": "Science",
-     "dag": "2026-09-17",
-     "url": "https://brightnews.online/articles/nl/satellieten-een-chimpansee-en-oude-sporen-de-wetenschap-van-deze-week-dg-20260917-science.html"
     }
    ]
   },
   "en": {
    "top": [
     {
-     "id": "17897482454609nk17tmq1",
-     "titel": "Senior Bridge: container homes for homeless seniors in Phoenix",
-     "teaser": "In March, the Senior Bridge project opened in Phoenix, Arizona: 40 independent studios made from shipping containers for homeless people aged 55 and older. Seniors represent a fast-growing group of homeless residents, occupying roughly 40% of emergency shelter beds at Central Arizona Shelter Services. The 160-square-foot units feature a bed, bathroom, mini-fridge and microwave, powered by solar panels during the...",
+     "id": "1789965334441fmmtlceew",
+     "titel": "Five dollars per night sleep boosts student grades",
+     "teaser": "Researchers from the University of Pittsburgh paid more than 1,100 students via a Fitbit app to sleep seven hours per night. The 468 students who received approximately 5 dollars per night slept adequately 26% more nights and 19 minutes longer per school night than a control group without payment. Their GPA rose that semester by about 0.08 points. Even after...",
      "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/en/five-dollars-per-night-sleep-boosts-student-grades-1789965334441fmmtlceew.html"
+    },
+    {
+     "id": "1789965311313qeajm49mh",
+     "titel": "Mesabi Trail in Minnesota finally completed after 30 years",
+     "teaser": "After more than 30 years of planning, construction and fundraising, the Mesabi Trail in Minnesota is officially complete. The 165-mile paved bike path is now one of the longest in America. The route runs from the Mississippi River to the wilderness of the Boundary Waters, through the Iron Range with its historic iron ore mines that were important to the...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/senior-bridge-container-homes-for-homeless-seniors-in-phoenix-17897482454609nk17tmq1.html"
+     "url": "https://brightnews.online/articles/en/mesabi-trail-in-minnesota-finally-completed-after-30-years-1789965311313qeajm49mh.html"
     },
     {
      "id": "17899196420568hecmtvs3",
@@ -97,20 +91,12 @@
      "url": "https://brightnews.online/articles/en/hit-and-run-fox-chance-recovers-thanks-to-swimming-lessons-1789878990544agz0dwnv9.html"
     },
     {
-     "id": "1789791521381pbrbcl1ls",
-     "titel": "Toronto builds Ookwemin Minising neighbourhood with Canada's longest car-free street",
-     "teaser": "Toronto is developing the new Ookwemin Minising neighbourhood, where streets are being replaced by parks and plazas. Centre Commons, an 800-metre-long pedestrian route lined with 400 trees, is being promoted as Canada's longest and most ambitious year-round car-free zone. Side streets do allow traffic, but prioritize greenery and function as climate infrastructure: they capture rainwater, reduce urban heat and support...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/toronto-builds-ookwemin-minising-neighbourhood-with-canada-s-longest-car-free-st-1789791521381pbrbcl1ls.html"
-    },
-    {
-     "id": "1789791496249m76kxgprk",
-     "titel": "Rangers rescue 90-kilogram baby elephant from water trough",
-     "teaser": "The Sheldrick Wildlife Trust, active in East Africa since 1977, rescued a baby elephant last September that had become trapped in a man-made water trough. The mother stood nearby in distress but was unable to help. Rangers drove as close as possible to the trough and honked their horns and accelerated to buy time without driving the mother too far...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/rangers-rescue-90-kilogram-baby-elephant-from-water-trough-1789791496249m76kxgprk.html"
+     "id": "17899652880376z76s0lap",
+     "titel": "British couple fosters 59 dogs in retirement",
+     "teaser": "Nicole and Gary Wordsworth, a British couple in their sixties, have been fostering dogs through Battersea Dogs Home in Buckinghamshire for 15 years. Since retiring, they take in dogs part-time, ranging from a Siberian husky to a Staffie. The length of stay varies from a few nights to 18 months. Their first dog was a Staffie named Marcel. They observe...",
+     "score": 8,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/british-couple-fosters-59-dogs-in-retirement-17899652880376z76s0lap.html"
     }
    ],
    "dagoverzichten": [
@@ -120,32 +106,26 @@
      "categorie": "Environment",
      "dag": "2026-09-19",
      "url": "https://brightnews.online/articles/en/recovery-and-growth-from-injured-fox-to-greener-cities-dg-20260919-environment.html"
-    },
-    {
-     "id": "dg-20260918-environment",
-     "titel": "Green streets, rescued elephants and cleaner fabrics: the week's good news",
-     "categorie": "Environment",
-     "dag": "2026-09-18",
-     "url": "https://brightnews.online/articles/en/green-streets-rescued-elephants-and-cleaner-fabrics-the-week-s-good-news-dg-20260918-environment.html"
-    },
-    {
-     "id": "dg-20260917-science",
-     "titel": "Satellites, a chimpanzee and ancient footprints: the science of this week",
-     "categorie": "Science",
-     "dag": "2026-09-17",
-     "url": "https://brightnews.online/articles/en/satellites-a-chimpanzee-and-ancient-footprints-the-science-of-this-week-dg-20260917-science.html"
     }
    ]
   },
   "de": {
    "top": [
     {
-     "id": "17897482454609nk17tmq1",
-     "titel": "Senior Bridge: Containerunterkünfte für obdachlose Senioren in Phoenix",
-     "teaser": "Im März eröffnete in Phoenix, Arizona das Projekt Senior Bridge: 40 eigenständige Studios aus Schiffscontainern für Obdachlose ab 55 Jahren. Senioren bilden eine schnell wachsende Gruppe obdachloser Einwohner und belegen etwa 40 % der Notunterkünfte bei Central Arizona Shelter Services. Die 160 Quadratfuß großen Einheiten verfügen über ein Bett, Badezimmer, Mini-Kühlschrank und Mikrowelle und werden tagsüber von Solarpanelen und nachts...",
+     "id": "1789965334441fmmtlceew",
+     "titel": "Fünf Dollar pro Nacht Schlaf verbessern Noten von Studierenden",
+     "teaser": "Forscher der University of Pittsburgh zahlten mehr als 1.100 Studierenden über eine Fitbit-App, um sieben Stunden pro Nacht zu schlafen. Die 468 Studierenden, die etwa 5 Dollar pro Nacht erhielten, schliefen an 26% mehr Nächten ausreichend und 19 Minuten länger pro Schulsemester als eine Kontrollgruppe ohne Bezahlung. Ihr GPA stieg in diesem Semester um etwa 0,08 Punkte. Auch nach Beendigung...",
      "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/de/funf-dollar-pro-nacht-schlaf-verbessern-noten-von-studierenden-1789965334441fmmtlceew.html"
+    },
+    {
+     "id": "1789965311313qeajm49mh",
+     "titel": "Mesabi Trail in Minnesota nach 30 Jahren endlich fertiggestellt",
+     "teaser": "Nach mehr als 30 Jahren Planung, Bau und Mittelbeschaffung ist der Mesabi Trail in Minnesota offiziell fertiggestellt. Der 165 Meilen lange asphaltierte Radweg gehört damit zu den längsten Amerikas. Die Route verläuft vom Mississippi bis zur Wildnis der Boundary Waters und führt durch die Iron Range mit ihren historischen Eisenerzgruben, die während des Zweiten Weltkriegs für die amerikanische Stahlindustrie wichtig...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/senior-bridge-containerunterkunfte-fur-obdachlose-senioren-in-phoenix-17897482454609nk17tmq1.html"
+     "url": "https://brightnews.online/articles/de/mesabi-trail-in-minnesota-nach-30-jahren-endlich-fertiggestellt-1789965311313qeajm49mh.html"
     },
     {
      "id": "17899196420568hecmtvs3",
@@ -164,20 +144,12 @@
      "url": "https://brightnews.online/articles/de/angefahrener-fuchs-chance-erholt-sich-durch-schwimmtherapie-1789878990544agz0dwnv9.html"
     },
     {
-     "id": "1789791521381pbrbcl1ls",
-     "titel": "Toronto baut Stadtteil Ookwemin Minising mit Kanadas längster autofreier Straße",
-     "teaser": "Toronto entwickelt den neuen Stadtteil Ookwemin Minising, in dem Straßen durch Parks und Plätze ersetzt werden. Centre Commons, eine 800 Meter lange Fußgängerzone mit 400 Bäumen, wird als Kanadas längste und ehrgeizigste ganzjährig autofreie Zone gepriesen. Nebenstraßen ermöglichen zwar Verkehr, priorisieren aber Grünflächen und fungieren als Klimainfrastruktur: Sie fangen Regenwasser auf, reduzieren städtische Hitze und unterstützen die Biodiversität. Der Name...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/toronto-baut-stadtteil-ookwemin-minising-mit-kanadas-langster-autofreier-stra-e-1789791521381pbrbcl1ls.html"
-    },
-    {
-     "id": "1789791496249m76kxgprk",
-     "titel": "Ranger retten 90-Kilo-Babyelefanten aus Wassertank",
-     "teaser": "Der Sheldrick Wildlife Trust, seit 1977 in Ostafrika tätig, rettete im September des vergangenen Jahres einen Babyelefanten, der in einem von Menschen angelegten Wassertank steckte. Die Mutter stand angespannt in der Nähe, konnte aber nicht helfen. Ranger fuhren so nah wie möglich an den Wassertank heran und hupten und gaben Gas, um Zeit zu gewinnen, ohne die Mutter zu weit...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/ranger-retten-90-kilo-babyelefanten-aus-wassertank-1789791496249m76kxgprk.html"
+     "id": "17899652880376z76s0lap",
+     "titel": "Britisches Ehepaar pflegt 59 Hunde im Ruhestand",
+     "teaser": "Nicole und Gary Wordsworth, ein britisches Ehepaar in den Sechzigern, pflegen bereits seit 15 Jahren Hunde über Battersea Dogs Home in Buckinghamshire. Seit ihrer Pensionierung nehmen sie in Teilzeit Hunde auf, von einem Sibirischen Husky bis zu einem Staffie. Die Aufenthaltsdauer variiert von wenigen Nächten bis zu 18 Monaten. Ihr erster Hund war ein Staffie namens Marcel. Sie beobachten Verhaltensweisen...",
+     "score": 8,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/britisches-ehepaar-pflegt-59-hunde-im-ruhestand-17899652880376z76s0lap.html"
     }
    ],
    "dagoverzichten": [
@@ -187,32 +159,26 @@
      "categorie": "Environment",
      "dag": "2026-09-19",
      "url": "https://brightnews.online/articles/de/genesung-und-wachstum-vom-fuchs-an-krucken-zu-gruneren-stadten-dg-20260919-environment.html"
-    },
-    {
-     "id": "dg-20260918-environment",
-     "titel": "Grüne Straßen, gerettete Elefanten und saubere Stoffe: die guten Nachrichten der Woche",
-     "categorie": "Environment",
-     "dag": "2026-09-18",
-     "url": "https://brightnews.online/articles/de/grune-stra-en-gerettete-elefanten-und-saubere-stoffe-die-guten-nachrichten-der-w-dg-20260918-environment.html"
-    },
-    {
-     "id": "dg-20260917-science",
-     "titel": "Satelliten, ein Schimpanse und alte Spuren: die Wissenschaft dieser Woche",
-     "categorie": "Science",
-     "dag": "2026-09-17",
-     "url": "https://brightnews.online/articles/de/satelliten-ein-schimpanse-und-alte-spuren-die-wissenschaft-dieser-woche-dg-20260917-science.html"
     }
    ]
   },
   "fr": {
    "top": [
     {
-     "id": "17897482454609nk17tmq1",
-     "titel": "Senior Bridge : des logements conteneurs pour les seniors sans abri à Phoenix",
-     "teaser": "En mars a ouvert à Phoenix, en Arizona, le projet Senior Bridge : 40 studios indépendants construits à partir de conteneurs maritimes destinés aux sans-abri de 55 ans et plus. Les seniors constituent un groupe croissant de sans-abri et occupent environ 40 % des lits d'urgence du Central Arizona Shelter Services. Les unités de 160 pieds carrés disposent d'un lit,...",
+     "id": "1789965334441fmmtlceew",
+     "titel": "Cinq dollars par nuit de sommeil améliore les notes des étudiants",
+     "teaser": "Des chercheurs de l'University of Pittsburgh ont rémunéré plus de 1 100 étudiants via une application Fitbit pour dormir sept heures par nuit. Les 468 étudiants qui ont reçu environ 5 dollars par nuit ont dormi 26 % plus de nuits suffisantes et 19 minutes de plus par nuit d'école qu'un groupe témoin sans rémunération. Leur GPA a augmenté ce...",
      "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/fr/cinq-dollars-par-nuit-de-sommeil-ameliore-les-notes-des-etudiants-1789965334441fmmtlceew.html"
+    },
+    {
+     "id": "1789965311313qeajm49mh",
+     "titel": "La Mesabi Trail au Minnesota enfin achevée après 30 ans",
+     "teaser": "Après plus de 30 ans de planification, de construction et de levée de fonds, la Mesabi Trail au Minnesota est officiellement achevée. Cette piste cyclable asphaltée de 165 milles est désormais l'une des plus longues d'Amérique. L'itinéraire s'étend du fleuve Mississippi jusqu'à la nature sauvage des Boundary Waters, en traversant l'Iron Range avec ses mines de minerai de fer historiques...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/senior-bridge-des-logements-conteneurs-pour-les-seniors-sans-abri-a-phoenix-17897482454609nk17tmq1.html"
+     "url": "https://brightnews.online/articles/fr/la-mesabi-trail-au-minnesota-enfin-achevee-apres-30-ans-1789965311313qeajm49mh.html"
     },
     {
      "id": "17899196420568hecmtvs3",
@@ -231,20 +197,12 @@
      "url": "https://brightnews.online/articles/fr/le-petit-renard-chance-se-retablit-grace-a-des-seances-de-natation-1789878990544agz0dwnv9.html"
     },
     {
-     "id": "1789791521381pbrbcl1ls",
-     "titel": "Toronto construit le quartier Ookwemin Minising avec la plus longue rue sans voitures du Canada",
-     "teaser": "Toronto développe le nouveau quartier Ookwemin Minising, où les rues sont remplacées par des parcs et des places. Centre Commons, un parcours piétonnier de 800 mètres avec 400 arbres, est présenté comme la zone sans voitures la plus longue et la plus ambitieuse du Canada, fonctionnant toute l'année. Les rues secondaires permettent bien la circulation, mais privilégient la verdure et...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/toronto-construit-le-quartier-ookwemin-minising-avec-la-plus-longue-rue-sans-voi-1789791521381pbrbcl1ls.html"
-    },
-    {
-     "id": "1789791496249m76kxgprk",
-     "titel": "Des rangers sauvent un éléphanteau de 90 kilos d'un abreuvoir",
-     "teaser": "La Sheldrick Wildlife Trust, active depuis 1977 en Afrique de l'Est, a secouru en septembre dernier un éléphanteau coincé dans un abreuvoir creusé par l'homme. La mère se tenait à proximité, angoissée, mais ne pouvait pas l'aider. Les rangers se sont approchés au plus près de l'abreuvoir et ont klaxonné en accélérant pour gagner du temps sans éloigner trop la...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/des-rangers-sauvent-un-elephanteau-de-90-kilos-d-un-abreuvoir-1789791496249m76kxgprk.html"
+     "id": "17899652880376z76s0lap",
+     "titel": "Un couple britannique accueille 59 chiens en famille d'accueil",
+     "teaser": "Nicole et Gary Wordsworth, un couple britannique sexagénaire, accueillent des chiens en famille d'accueil depuis 15 ans via Battersea Dogs Home dans le Buckinghamshire. Depuis leur retraite, ils hébergent à temps partiel des chiens, du husky sibérien au Staffordshire bull-terrier. La durée du séjour varie de quelques nuits à 18 mois. Leur premier chien était un Staffordshire bull-terrier nommé Marcel....",
+     "score": 8,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/un-couple-britannique-accueille-59-chiens-en-famille-d-accueil-17899652880376z76s0lap.html"
     }
    ],
    "dagoverzichten": [
@@ -254,32 +212,26 @@
      "categorie": "Environment",
      "dag": "2026-09-19",
      "url": "https://brightnews.online/articles/fr/retablissement-et-croissance-du-renard-sur-bequilles-aux-villes-plus-vertes-dg-20260919-environment.html"
-    },
-    {
-     "id": "dg-20260918-environment",
-     "titel": "Des rues vertes, des éléphants sauvés et des tissus plus propres : les bonnes nouvelles de la semaine",
-     "categorie": "Environment",
-     "dag": "2026-09-18",
-     "url": "https://brightnews.online/articles/fr/des-rues-vertes-des-elephants-sauves-et-des-tissus-plus-propres-les-bonnes-nouve-dg-20260918-environment.html"
-    },
-    {
-     "id": "dg-20260917-science",
-     "titel": "Satellites, un chimpanzé et des traces anciennes : la science de cette semaine",
-     "categorie": "Science",
-     "dag": "2026-09-17",
-     "url": "https://brightnews.online/articles/fr/satellites-un-chimpanze-et-des-traces-anciennes-la-science-de-cette-semaine-dg-20260917-science.html"
     }
    ]
   },
   "es": {
    "top": [
     {
-     "id": "17897482454609nk17tmq1",
-     "titel": "Senior Bridge: viviendas contenedor para adultos mayores sin hogar en Phoenix",
-     "teaser": "En marzo abrió en Phoenix, Arizona el proyecto Senior Bridge: 40 estudios independientes construidos con contenedores de envío para personas sin hogar de 55 años o más. Los adultos mayores forman un grupo de población sin hogar de rápido crecimiento y ocupan aproximadamente el 40% de las camas de alojamiento de emergencia en Central Arizona Shelter Services. Las unidades de...",
+     "id": "1789965334441fmmtlceew",
+     "titel": "Cinco dólares por noche de sueño mejoran las calificaciones de estudiantes",
+     "teaser": "Investigadores de la University of Pittsburgh pagaron a más de 1.100 estudiantes a través de una aplicación Fitbit para dormir siete horas por noche. Los 468 estudiantes que recibieron aproximadamente 5 dólares por noche durmieron 26% más noches con sueño suficiente y 19 minutos más por noche escolar que un grupo de control sin pago. Su GPA aumentó ese semestre...",
      "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/es/cinco-dolares-por-noche-de-sueno-mejoran-las-calificaciones-de-estudiantes-1789965334441fmmtlceew.html"
+    },
+    {
+     "id": "1789965311313qeajm49mh",
+     "titel": "Mesabi Trail en Minnesota finalmente completado tras 30 años",
+     "teaser": "Tras más de 30 años de planificación, construcción y recaudación de fondos, el Mesabi Trail en Minnesota ha sido oficialmente completado. La ruta asfaltada de 165 millas es así una de las más largas de América. El camino se extiende desde el río Misisipi hasta la naturaleza salvaje de las Boundary Waters, atravesando la Iron Range con sus históricas minas...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/senior-bridge-viviendas-contenedor-para-adultos-mayores-sin-hogar-en-phoenix-17897482454609nk17tmq1.html"
+     "url": "https://brightnews.online/articles/es/mesabi-trail-en-minnesota-finalmente-completado-tras-30-anos-1789965311313qeajm49mh.html"
     },
     {
      "id": "17899196420568hecmtvs3",
@@ -298,20 +250,12 @@
      "url": "https://brightnews.online/articles/es/el-zorro-chance-se-recupera-gracias-a-lecciones-de-natacion-1789878990544agz0dwnv9.html"
     },
     {
-     "id": "1789791521381pbrbcl1ls",
-     "titel": "Toronto construye el barrio Ookwemin Minising con la calle sin autos más larga de Canadá",
-     "teaser": "Toronto desarrolla el nuevo barrio Ookwemin Minising, donde las calles se transforman en parques y plazas. Centre Commons, una ruta peatonal de 800 metros con 400 árboles, se presenta como la zona sin autos más larga y ambiciosa de Canadá, operativa todo el año. Las calles laterales sí permiten tráfico, pero priorizan el verde y funcionan como infraestructura climática: capturan...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/toronto-construye-el-barrio-ookwemin-minising-con-la-calle-sin-autos-mas-larga-d-1789791521381pbrbcl1ls.html"
-    },
-    {
-     "id": "1789791496249m76kxgprk",
-     "titel": "Rangers rescatan a elefantita de 90 kilos de una pila de agua",
-     "teaser": "La Sheldrick Wildlife Trust, activa desde 1977 en África Oriental, rescató el pasado septiembre a una elefantita atrapada en una pila de agua construida por humanos. La madre estaba cerca, angustiada, pero no podía ayudar. Los rangers se acercaron lo máximo posible a la pila y tocaron la bocina y aceleraron para ganar tiempo sin ahuyentar demasiado a la madre....",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/rangers-rescatan-a-elefantita-de-90-kilos-de-una-pila-de-agua-1789791496249m76kxgprk.html"
+     "id": "17899652880376z76s0lap",
+     "titel": "Pareja británica acoge a 59 perros tras jubilarse",
+     "teaser": "Nicole y Gary Wordsworth, una pareja británica de sesenta y tantos años, acogen perros desde hace 15 años a través de Battersea Dogs Home en Buckinghamshire. Desde su jubilación, reciben perros a tiempo parcial, desde un husky siberiano hasta un Staffie. La duración de la estancia varía desde algunas noches hasta 18 meses. Su primer perro fue un Staffie llamado...",
+     "score": 8,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/pareja-britanica-acoge-a-59-perros-tras-jubilarse-17899652880376z76s0lap.html"
     }
    ],
    "dagoverzichten": [
@@ -321,20 +265,6 @@
      "categorie": "Environment",
      "dag": "2026-09-19",
      "url": "https://brightnews.online/articles/es/recuperacion-y-crecimiento-de-un-zorro-con-muletas-a-ciudades-mas-verdes-dg-20260919-environment.html"
-    },
-    {
-     "id": "dg-20260918-environment",
-     "titel": "Calles verdes, elefantes salvados y telas más limpias: las buenas noticias de la semana",
-     "categorie": "Environment",
-     "dag": "2026-09-18",
-     "url": "https://brightnews.online/articles/es/calles-verdes-elefantes-salvados-y-telas-mas-limpias-las-buenas-noticias-de-la-s-dg-20260918-environment.html"
-    },
-    {
-     "id": "dg-20260917-science",
-     "titel": "Satélites, un chimpancé y huellas antiguas: la ciencia de esta semana",
-     "categorie": "Science",
-     "dag": "2026-09-17",
-     "url": "https://brightnews.online/articles/es/satelites-un-chimpance-y-huellas-antiguas-la-ciencia-de-esta-semana-dg-20260917-science.html"
     }
    ]
   }
