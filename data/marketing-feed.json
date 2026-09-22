@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-09-22T04:32:33.663Z",
+ "gegenereerd": "2026-09-22T16:45:54.667Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -12,6 +12,14 @@
      "score": 10,
      "categorie": "Health",
      "url": "https://brightnews.online/articles/nl/vijf-dollar-per-nacht-slaap-verhoogt-cijfers-van-studenten-1789965334441fmmtlceew.html"
+    },
+    {
+     "id": "17900955302019yo4v9fb2",
+     "titel": "135.000 huisdieren geadopteerd via NBC's Clear The Shelters",
+     "teaser": "De jaarlijkse 'Clear The Shelters'-campagne van NBC en moederbedrijf Universal heeft dit jaar 135.000 honden, katten en andere huisdieren aan een nieuw thuis geholpen. De actie liep van juli tot september en leverde daarnaast $480.000 op voor meer dan 1.000 deelnemende dierenasiels. In de 12 jaar dat de campagne bestaat, zijn in totaal 1,5 miljoen huisdieren geplaatst en is er...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/135-000-huisdieren-geadopteerd-via-nbc-s-clear-the-shelters-17900955302019yo4v9fb2.html"
     },
     {
      "id": "1790051455373n0s5yx6a1",
@@ -36,14 +44,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/vermiste-wandelaar-craig-berg-na-11-dagen-gered-op-isle-royale-1790014241811y3vfaki98.html"
-    },
-    {
-     "id": "1790014214783otpoivfi3",
-     "titel": "Wilde Przewalskipaarden geboren in Kazachstan na 200 jaar afwezigheid",
-     "teaser": "In Kazachstan zijn twee veulens van het Przewalskipaard geboren, de eerste wilde paarden op Kazachse bodem in meer dan 200 jaar. Het eerste veulen, een hengst, werd op 22 augustus geboren bij de 7-jarige merrie Tessa. Het tweede, ook een hengst, volgde op 31 augustus bij merrie Umbra. Beide hebben dezelfde vader, de inmiddels overleden hengst Zorro. De geboortes vonden...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/wilde-przewalskipaarden-geboren-in-kazachstan-na-200-jaar-afwezigheid-1790014214783otpoivfi3.html"
     }
    ],
    "dagoverzichten": [
@@ -67,13 +67,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-09-20",
      "url": "https://brightnews.online/articles/nl/buitenleven-met-een-goede-afloop-redding-een-compleet-fietspad-en-trouwe-pleegge-dg-20260920-lifestyle.html"
-    },
-    {
-     "id": "dg-20260919-environment",
-     "titel": "Herstel en groei: van vosje op krukken tot groenere steden",
-     "categorie": "Environment",
-     "dag": "2026-09-19",
-     "url": "https://brightnews.online/articles/nl/herstel-en-groei-van-vosje-op-krukken-tot-groenere-steden-dg-20260919-environment.html"
     }
    ]
   },
@@ -86,6 +79,14 @@
      "score": 10,
      "categorie": "Health",
      "url": "https://brightnews.online/articles/en/five-dollars-per-night-sleep-boosts-student-grades-1789965334441fmmtlceew.html"
+    },
+    {
+     "id": "17900955302019yo4v9fb2",
+     "titel": "135,000 pets adopted through NBC's Clear The Shelters",
+     "teaser": "NBC and parent company Universal's annual 'Clear The Shelters' campaign helped 135,000 dogs, cats and other pets find new homes this year. The initiative ran from July through September and raised $480,000 for more than 1,000 participating animal shelters. Over the campaign's 12-year history, a total of 1.5 million pets have been placed and more than $6 million has been...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/135-000-pets-adopted-through-nbc-s-clear-the-shelters-17900955302019yo4v9fb2.html"
     },
     {
      "id": "1790051455373n0s5yx6a1",
@@ -110,14 +111,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/missing-hiker-craig-berg-rescued-after-11-days-on-isle-royale-1790014241811y3vfaki98.html"
-    },
-    {
-     "id": "1790014214783otpoivfi3",
-     "titel": "Wild Przewalski horses born in Kazakhstan after 200 years",
-     "teaser": "Two foals of the Przewalski horse have been born in Kazakhstan, the first wild horses on Kazakhstani soil in more than 200 years. The first foal, a colt, was born on 22 August to the 7-year-old mare Tessa. The second, also a colt, followed on 31 August to mare Umbra. Both share the same father, the now deceased stallion Zorro....",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/wild-przewalski-horses-born-in-kazakhstan-after-200-years-1790014214783otpoivfi3.html"
     }
    ],
    "dagoverzichten": [
@@ -141,13 +134,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-09-20",
      "url": "https://brightnews.online/articles/en/outdoor-life-with-a-happy-ending-rescue-a-complete-bike-trail-and-devoted-foster-dg-20260920-lifestyle.html"
-    },
-    {
-     "id": "dg-20260919-environment",
-     "titel": "Recovery and growth: from injured fox to greener cities",
-     "categorie": "Environment",
-     "dag": "2026-09-19",
-     "url": "https://brightnews.online/articles/en/recovery-and-growth-from-injured-fox-to-greener-cities-dg-20260919-environment.html"
     }
    ]
   },
@@ -160,6 +146,14 @@
      "score": 10,
      "categorie": "Health",
      "url": "https://brightnews.online/articles/de/funf-dollar-pro-nacht-schlaf-verbessern-noten-von-studierenden-1789965334441fmmtlceew.html"
+    },
+    {
+     "id": "17900955302019yo4v9fb2",
+     "titel": "135.000 Haustiere über NBCs Clear The Shelters adoptiert",
+     "teaser": "Die jährliche „Clear The Shelters\"-Kampagne von NBC und Mutterkonzern Universal hat in diesem Jahr 135.000 Hunde, Katzen und andere Haustiere in ein neues Zuhause vermittelt. Die Aktion lief von Juli bis September und brachte darüber hinaus 480.000 Dollar für mehr als 1.000 teilnehmende Tierheime ein. In den 12 Jahren, in denen die Kampagne besteht, wurden insgesamt 1,5 Millionen Haustiere vermittelt...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/135-000-haustiere-uber-nbcs-clear-the-shelters-adoptiert-17900955302019yo4v9fb2.html"
     },
     {
      "id": "1790051455373n0s5yx6a1",
@@ -184,14 +178,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/vermisster-wanderer-craig-berg-nach-11-tagen-auf-isle-royale-gerettet-1790014241811y3vfaki98.html"
-    },
-    {
-     "id": "1790014214783otpoivfi3",
-     "titel": "Wilde Przewalskipferde in Kasachstan nach 200 Jahren geboren",
-     "teaser": "In Kasachstan sind zwei Fohlen des Przewalskipferdes geboren worden, die ersten wilden Pferde auf kasachischem Boden seit mehr als 200 Jahren. Das erste Fohlen, ein Hengst, wurde am 22. August bei der siebenjährigen Stute Tessa geboren. Das zweite, ebenfalls ein Hengst, folgte am 31. August bei Stute Umbra. Beide haben denselben Vater, den inzwischen verstorbenen Hengst Zorro. Die Geburten fanden...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/wilde-przewalskipferde-in-kasachstan-nach-200-jahren-geboren-1790014214783otpoivfi3.html"
     }
    ],
    "dagoverzichten": [
@@ -215,13 +201,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-09-20",
      "url": "https://brightnews.online/articles/de/outdoor-leben-mit-gutem-ausgang-rettung-ein-kompletter-fahrradweg-und-treue-pfle-dg-20260920-lifestyle.html"
-    },
-    {
-     "id": "dg-20260919-environment",
-     "titel": "Genesung und Wachstum: vom Fuchs an Krücken zu grüneren Städten",
-     "categorie": "Environment",
-     "dag": "2026-09-19",
-     "url": "https://brightnews.online/articles/de/genesung-und-wachstum-vom-fuchs-an-krucken-zu-gruneren-stadten-dg-20260919-environment.html"
     }
    ]
   },
@@ -234,6 +213,14 @@
      "score": 10,
      "categorie": "Health",
      "url": "https://brightnews.online/articles/fr/cinq-dollars-par-nuit-de-sommeil-ameliore-les-notes-des-etudiants-1789965334441fmmtlceew.html"
+    },
+    {
+     "id": "17900955302019yo4v9fb2",
+     "titel": "135.000 animaux de compagnie adoptés via Clear The Shelters de NBC",
+     "teaser": "La campagne annuelle « Clear The Shelters » de NBC et de sa maison mère Universal a permis cette année à 135.000 chiens, chats et autres animaux de compagnie de trouver un nouveau foyer. L'action s'est déroulée de juillet à septembre et a également collecté 480.000 dollars pour plus de 1.000 refuges participants. En 12 ans d'existence, la campagne a...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/135-000-animaux-de-compagnie-adoptes-via-clear-the-shelters-de-nbc-17900955302019yo4v9fb2.html"
     },
     {
      "id": "1790051455373n0s5yx6a1",
@@ -258,14 +245,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/randonneur-disparu-craig-berg-secouru-apres-11-jours-sur-isle-royale-1790014241811y3vfaki98.html"
-    },
-    {
-     "id": "1790014214783otpoivfi3",
-     "titel": "Des chevaux de Przewalski sauvages nés au Kazakhstan après 200 ans d'absence",
-     "teaser": "Au Kazakhstan, deux poulains de cheval de Przewalski sont nés, les premiers chevaux sauvages sur le territoire kazakh depuis plus de 200 ans. Le premier poulain, un étalon, est né le 22 août chez la jument Tessa, âgée de 7 ans. Le second, également un étalon, a suivi le 31 août chez la jument Umbra. Les deux ont le même...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/des-chevaux-de-przewalski-sauvages-nes-au-kazakhstan-apres-200-ans-d-absence-1790014214783otpoivfi3.html"
     }
    ],
    "dagoverzichten": [
@@ -289,13 +268,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-09-20",
      "url": "https://brightnews.online/articles/fr/la-vie-en-plein-air-avec-une-belle-fin-un-sauvetage-une-piste-cyclable-complete--dg-20260920-lifestyle.html"
-    },
-    {
-     "id": "dg-20260919-environment",
-     "titel": "Rétablissement et croissance : du renard sur béquilles aux villes plus vertes",
-     "categorie": "Environment",
-     "dag": "2026-09-19",
-     "url": "https://brightnews.online/articles/fr/retablissement-et-croissance-du-renard-sur-bequilles-aux-villes-plus-vertes-dg-20260919-environment.html"
     }
    ]
   },
@@ -308,6 +280,14 @@
      "score": 10,
      "categorie": "Health",
      "url": "https://brightnews.online/articles/es/cinco-dolares-por-noche-de-sueno-mejoran-las-calificaciones-de-estudiantes-1789965334441fmmtlceew.html"
+    },
+    {
+     "id": "17900955302019yo4v9fb2",
+     "titel": "135.000 mascotas adoptadas a través de Clear The Shelters de NBC",
+     "teaser": "La campaña anual «Clear The Shelters» de NBC y su empresa matriz Universal ha ayudado este año a 135.000 perros, gatos y otras mascotas a encontrar un nuevo hogar. La iniciativa se desarrolló de julio a septiembre y recaudó además $480.000 para más de 1.000 refugios de animales participantes. En los 12 años que lleva la campaña, se han colocado...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/135-000-mascotas-adoptadas-a-traves-de-clear-the-shelters-de-nbc-17900955302019yo4v9fb2.html"
     },
     {
      "id": "1790051455373n0s5yx6a1",
@@ -332,14 +312,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/excursionista-desaparecido-craig-berg-rescatado-tras-11-dias-en-isle-royale-1790014241811y3vfaki98.html"
-    },
-    {
-     "id": "1790014214783otpoivfi3",
-     "titel": "Caballos de Przewalski salvajes nacen en Kazajistán tras 200 años de ausencia",
-     "teaser": "En Kazajistán han nacido dos potros de caballo de Przewalski, los primeros caballos salvajes en territorio kazajo en más de 200 años. El primer potro, un semental, nació el 22 de agosto de la yegua Tessa, de 7 años. El segundo, también un semental, llegó el 31 de agosto de la yegua Umbra. Ambos tienen el mismo padre, el semental...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/caballos-de-przewalski-salvajes-nacen-en-kazajistan-tras-200-anos-de-ausencia-1790014214783otpoivfi3.html"
     }
    ],
    "dagoverzichten": [
@@ -363,13 +335,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-09-20",
      "url": "https://brightnews.online/articles/es/vida-al-aire-libre-con-final-feliz-un-rescate-una-ciclovia-completa-y-familias-d-dg-20260920-lifestyle.html"
-    },
-    {
-     "id": "dg-20260919-environment",
-     "titel": "Recuperación y crecimiento: de un zorro con muletas a ciudades más verdes",
-     "categorie": "Environment",
-     "dag": "2026-09-19",
-     "url": "https://brightnews.online/articles/es/recuperacion-y-crecimiento-de-un-zorro-con-muletas-a-ciudades-mas-verdes-dg-20260919-environment.html"
     }
    ]
   }
