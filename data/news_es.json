@@ -1,5 +1,98 @@
 [
   {
+    "id": "dg-20260921-environment",
+    "type": "digest",
+    "digest_date": "2026-09-21",
+    "title": "Del sumidero a la granja de hongos: la recuperación de la naturaleza esta semana",
+    "summary": "Estos días muestran cómo las personas dan una segunda oportunidad a los animales y la tierra, desde la sabana de Kenia hasta un granero en Iowa. Siempre se trata de paciencia y cooperación: guardabosques que aguantan horas, agricultores que transforman su negocio, y programas de cría que persisten durante décadas. El resultado es siempre la misma sensación de alivio y progreso. En Kenia, los guardabosques del Kenya Wildlife Service y la Sheldrick Wildlife Trust tuvieron que rescatar a un elefante toro adulto que estaba atrapado hasta los hombros en un sumidero cerca de Chakama. Sin sedación, sacaron al animal centímetro...",
+    "image_alt": "Del sumidero a la granja de hongos: la recuperación de la naturaleza esta semana",
+    "meta_description": "Rescates de elefantes en Kenia, caballos salvajes en Kazajistán y una granja que se transforma: las noticias ambientales positivas de estos días.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab185b16ab24e972877d307_6ab185b18b9a45d15d2c4db9_elephant-rescued-sinkhole-kenya-featured-2.webp",
+    "date": "2026-09-22T04:32:33.311Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1790051455373n0s5yx6a1",
+        "title": "Rangers liberan a elefante de un peligroso sumidero en Kenia"
+      },
+      {
+        "id": "17900514257619dlpca1k8",
+        "title": "Elefantillo huérfano Wangalla rescatado de una manada de cebras en Tsavo East"
+      },
+      {
+        "id": "1790014214783otpoivfi3",
+        "title": "Caballos de Przewalski salvajes nacen en Kazajistán tras 200 años de ausencia"
+      },
+      {
+        "id": "17899196420568hecmtvs3",
+        "title": "Estados estadounidenses ayudan a las mariposas monarca en su camino hacia México"
+      },
+      {
+        "id": "17900514999718iuojtalw",
+        "title": "Granja porcina en Iowa ahora cultiva hongos"
+      }
+    ]
+  },
+  {
+    "id": "17900514999718iuojtalw",
+    "title": "Granja porcina en Iowa ahora cultiva hongos",
+    "summary": "Una granja porcina en el centro de Iowa, que durante décadas crió miles de cerdos para el matadero, ha pasado a cultivar hongos especiales. La familia Faaborg llama a su empresa 1100 Farm, en referencia al número de cerdos que alojaban los establos anteriormente. Venden los hongos, entre ellos lion's mane, en forma de tinturas, mezclas de café y sal...",
+    "image_alt": "Tanner Faaborg posa en su granja en el centro de Iowa donde ahora se cultivan hongos en antiguos establos porcinos",
+    "meta_description": "Granja de Iowa cambia de cerdos a hongos con ayuda de The Transfarmation Project.",
+    "meta_keywords": "cultivo de hongos, granja de Iowa, Transfarmation Project, renovación de establos porcinos, agricultura sostenible, lion's mane",
+    "link": "https://www.npr.org/2026/09/21/nx-s1-5944503/iowa-hog-farm-growing-specialty-mushrooms",
+    "source": "NPR.org",
+    "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1370x771+0+71/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F76%2Ff0%2Fe977506b4da8b313d83bd18dc1d0%2Ftanner-faaborg-1100-farm-web.jpg",
+    "date": "2026-09-22T04:31:41.152Z",
+    "category": "Environment",
+    "score": 8
+  },
+  {
+    "id": "1790051455373n0s5yx6a1",
+    "title": "Rangers liberan a elefante de un peligroso sumidero en Kenia",
+    "summary": "El 25 de febrero, el Kenya Wildlife Service recibió reportes de un elefante toro atrapado hasta los hombros en un sumidero cerca de Chakama, aproximadamente 30 millas tierra adentro del océano Índico. El piloto Roan Carr-Hartley de Sheldrick Wildlife Trust voló al lugar y encontró allí al equipo anti-furtivos Kulalu y el KWS. El agujero era demasiado profundo y empinado...",
+    "image_alt": "Rangers utilizan correas y un vehículo para sacar a un elefante de un sumidero en Kenia",
+    "meta_description": "Rangers de Sheldrick Wildlife Trust liberan a elefante de sumidero en Chakama, Kenia, sin sedación.",
+    "meta_keywords": "elefante, sumidero, Sheldrick Wildlife Trust, Kenya Wildlife Service, Chakama, Great Rift Valley, rescate de elefantes",
+    "link": "https://www.goodgoodgood.co/articles/elephant-rescued-sinkhole-kenya",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab185b16ab24e972877d307_6ab185b18b9a45d15d2c4db9_elephant-rescued-sinkhole-kenya-featured-2.webp",
+    "date": "2026-09-22T04:30:56.272Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "17900514257619dlpca1k8",
+    "title": "Elefantillo huérfano Wangalla rescatado de una manada de cebras en Tsavo East",
+    "summary": "El 4 de noviembre de 2025, el Kenya Wildlife Service recibió una notificación sobre un elefante joven y huérfano en el Tsavo East National Park. Turistas avistaron al animal y proporcionaron su ubicación. Trevor, gerente de operaciones en Tsavo, lideró un equipo de búsqueda que encontró a la cría después de más de una hora en lo profundo de la...",
+    "image_alt": "Una pequeña elefanta llamada Wangalla junto a su cuidador en el santuario Sheldrick Wildlife Trust en Kenia",
+    "meta_description": "La elefantilla huérfana Wangalla fue rescatada de una manada de cebras en Tsavo East y encontró un nuevo hogar en Sheldrick Wildlife Trust.",
+    "meta_keywords": "Wangalla, Sheldrick Wildlife Trust, rescate de elefantes, Tsavo East, Kenya Wildlife Service, elefante huérfano, Misheck",
+    "link": "https://www.goodgoodgood.co/articles/baby-elephant-rescued-zebra-herd",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab196c9d7bede5a31eac123_6ab196c7176d5ce68dc3873f_baby-elephant-rescued-zebra-herd-featured.webp",
+    "date": "2026-09-22T04:30:27.261Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790051398328zl0crxok4",
+    "title": "Nueva herramienta de IA detecta enfermedades cardíacas mediante ECG convencional",
+    "summary": "Investigadores en el Reino Unido han desarrollado un modelo de IA que puede detectar signos tempranos de enfermedades valvulares cardíacas e insuficiencia cardíaca a través de un ECG estándar. El modelo fue entrenado con millones de pacientes y se probó en 67.000 pacientes en Estados Unidos. En el estudio se identificó el 81% de los casos de insuficiencia cardíaca y...",
+    "image_alt": "Médico observa resultado de ECG en pantalla con análisis de IA de la actividad cardíaca",
+    "meta_description": "Un modelo de IA detecta signos tempranos de insuficiencia cardíaca y enfermedad valvular cardíaca mediante ECG convencional, según un gran estudio presentado en Múnich.",
+    "meta_keywords": "IA, ECG, enfermedad cardíaca, insuficiencia cardíaca, enfermedad valvular cardíaca, cardiología, British Heart Foundation, ecocardiograma",
+    "link": "https://www.goodnewsnetwork.org/new-ai-model-can-detect-heart-disease-markers-in-simple-electrocardiogram-readings-a-breakthrough/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/echocardiogram-Getty-Images-for-Unsplash-.jpg",
+    "date": "2026-09-22T04:30:00.829Z",
+    "category": "Health",
+    "score": 8
+  },
+  {
     "id": "dg-20260920-science",
     "type": "digest",
     "digest_date": "2026-09-20",
@@ -2371,43 +2464,6 @@
     "score": 9
   },
   {
-    "id": "dg-20260905-science",
-    "type": "digest",
-    "digest_date": "2026-09-05",
-    "title": "Árboles con músculos, peces con filtros: la ciencia del 5 de septiembre",
-    "summary": "La ciencia de hoy demuestra lo amplio que puede ser la investigación: desde árboles que se enderezan a sí mismos hasta peces que filtran sus propias señales eléctricas. También aparecen financiación para jóvenes investigadores y el rescate de una especie de árbol casi desaparecida. Un día para despertar la curiosidad. La Comisión Europea impulsa la siguiente generación de científicos. Se destinan €105,5 millones a 29 programas doctorales y postdoctorales bajo el programa COFUND de las Acciones Marie Skłodowska-Curie [1]. Participan más de 400 organizaciones de 38 países, siendo Francia el mayor coordinador. Los programas abarcan ciencias de la vida, física...",
-    "image_alt": "Árboles con músculos, peces con filtros: la ciencia del 5 de septiembre",
-    "meta_description": "De la fuerza muscular en árboles a los cerebros de peces que filtran ruido: las noticias científicas del 5 de septiembre de 2026 resumidas.",
-    "meta_keywords": "Science",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&q=80",
-    "date": "2026-09-06T04:15:38.531Z",
-    "category": "Science",
-    "refs": [
-      {
-        "id": "1788647709263hp99h6be9",
-        "title": "UE destina €105,5 millones para investigadores"
-      },
-      {
-        "id": "1788647579010wxcreq06i",
-        "title": "Los árboles tienen sus propias 'músculos'"
-      },
-      {
-        "id": "1788646234804g1sgv91ia",
-        "title": "El castaño americano recibe un salvavidas genético"
-      },
-      {
-        "id": "17886485649093lmuettpf",
-        "title": "El cerebro del pez elefante filtra sus propias señales"
-      },
-      {
-        "id": "178864553146221lp57tcj",
-        "title": "Música de IA excluida de listas de éxitos australianas"
-      }
-    ]
-  },
-  {
     "id": "1788668077914dbmh5cikz",
     "title": "Botellas salvan delfines y más buenas noticias",
     "summary": "Un invento simple con botellas de plástico vacías en redes de pesca reduce la captura incidental de delfines en un 88 por ciento, descubrió un biólogo marino emérito. Flandes cierra el delfinario Boudewijn Seapark a más tardar en 2037. India lanzó su primer tren de hidrógeno construido en el país para rutas no electrificadas. Una empresa japonesa puede recuperar ahora...",
@@ -2518,61 +2574,5 @@
     "date": "2026-09-05T22:33:54.205Z",
     "category": "Science",
     "score": 7
-  },
-  {
-    "id": "1788647579010wxcreq06i",
-    "title": "Los árboles tienen sus propias 'músculos'",
-    "summary": "Investigadores franceses del INRAE y la Universidad Clermont Auvergne han descubierto cómo los árboles dirigen activamente su forma con un mecanismo similar al de los músculos, algo que anteriormente se suponía que era exclusivo de los animales. En un experimento con álamos jóvenes, los árboles se colocaron horizontalmente y luego en una plataforma rotatoria dentro de una esfera iluminada desde...",
-    "image_alt": "Árbol joven que utiliza madera de tensión para crecer erguido",
-    "meta_description": "Investigadores descubren cómo los árboles dirigen su forma con 'madera de tensión', como una especie de músculo — un mecanismo que se creía exclusivamente animal.",
-    "meta_keywords": "árboles, madera de tensión, crecimiento de plantas, INRAE, álamos, biología vegetal, músculos de plantas",
-    "link": "https://newatlas.com/environment/newly-identified-muscle-trees/",
-    "source": "Newatlas.com",
-    "image": "https://assets.newatlas.com/dims4/default/2d8b94c/2147483647/strip/true/crop/3456x2304+0+0/resize/1440x960!/format/webp/quality/90/?url=https%3A%2F%2Fnewatlas-brightspot.s3.ap-southeast-2.amazonaws.com%2F9a%2F8a%2Fdb01d93a48049df7dcdcecf2e3c6%2Fdepositphotos-379281722-xl.jpg",
-    "date": "2026-09-05T22:33:00.053Z",
-    "category": "Science",
-    "score": 9
-  },
-  {
-    "id": "1788647519997iqucy27jj",
-    "title": "Texas detiene fondos para cámaras Flock",
-    "summary": "El gobernador Greg Abbott ha ordenado a todas las agencias estatales de Texas que dejen de financiar cámaras Flock, tras crecientes preocupaciones sobre la tecnología de vigilancia impulsada por IA. La orden llegó justo antes de que The Texas Tribune publicara una investigación que revela que una agencia estatal ha gastado al menos 30 millones de dólares en expandir la...",
-    "image_alt": "Cámara Flock fijada a un poste de tráfico",
-    "meta_description": "Texas detiene la financiación de cámaras de vigilancia Flock tras preocupaciones sobre privacidad y abuso por agentes.",
-    "meta_keywords": "cámaras Flock, Texas, vigilancia, Greg Abbott, privacidad, policía, lector de placas",
-    "link": "https://www.goodgoodgood.co/articles/texas-governor-abbott-flock-state-agency-spending",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a97209fa115f0a5bc0f49b8_6a97209eb78913be409a7a90_texas-governor-abbott-flock-state-agency-spending-featured.webp",
-    "date": "2026-09-05T22:32:00.818Z",
-    "category": "Tech",
-    "score": 7
-  },
-  {
-    "id": "17886474469233c40ikjm7",
-    "title": "Caminata en honor a Jane Goodall",
-    "summary": "El Jane Goodall Institute hace un llamado a los estadounidenses para que se adentren en la naturaleza del 1 al 4 de octubre de 2026 durante la primera 'Hike for Hope'. El evento coincide con la fecha de fallecimiento de la legendaria conservacionista, quien murió el 1 de octubre de 2025. Las personas pueden participar en caminatas organizadas u organizar...",
-    "image_alt": "Caminantes en la naturaleza durante Hike for Hope en honor a Jane Goodall",
-    "meta_description": "Jane Goodall Institute convoca a acción nacional de caminata 'Hike for Hope' del 1-4 de octubre de 2026 en honor a la conservacionista fallecida.",
-    "meta_keywords": "Jane Goodall, Hike for Hope, Jane Goodall Institute, conservación de la naturaleza, senderismo, Roots and Shoots, conservacionista",
-    "link": "https://www.goodgoodgood.co/articles/jane-goodall-hike-for-hope",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a99b3cfd8c1f9500b6c5ed2_6a99b3cee7965a5348b26bba_jane-goodall-hike-for-hope-featured.webp",
-    "date": "2026-09-05T22:30:47.654Z",
-    "category": "Environment",
-    "score": 7
-  },
-  {
-    "id": "1788647384130wkqh8u5kt",
-    "title": "Adolescente inventa dispositivo premiado contra cazadores furtivos",
-    "summary": "Anika Puri, ahora graduada del MIT, ganó a los diecisiete años el Premio Peggy Scripps para la Comunicación Científica en la Feria Internacional Regeneron de Ciencia e Ingeniería (ISEF) 2022. Desarrolló EISa (elephant savior), un dispositivo impulsado por IA que mediante un dron con imágenes térmicas e infrarrojas puede distinguir elefantes y posibles cazadores furtivos basándose en sus patrones de...",
-    "image_alt": "Dron con cámara térmica vuela sobre parque natural para detectar cazadores furtivos",
-    "meta_description": "La adolescente Anika Puri gana premio ISEF con dron de IA que protege elefantes de cazadores furtivos con 90% de precisión.",
-    "meta_keywords": "elefantes, cazadores furtivos, inteligencia artificial, dron, ISEF, MIT, Anika Puri, protección de vida silvestre",
-    "link": "https://www.goodgoodgood.co/articles/teen-invents-device-to-catch-elephant-poachers",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a99d3d1e19a819a1f4c6ed1_6a99d3cfeccb478753f53f50_teen-invents-device-to-catch-elephant-poachers-featured.webp",
-    "date": "2026-09-05T22:29:44.931Z",
-    "category": "Tech",
-    "score": 9
   }
 ]

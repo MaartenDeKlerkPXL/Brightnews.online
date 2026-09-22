@@ -1,5 +1,98 @@
 [
   {
+    "id": "dg-20260921-environment",
+    "type": "digest",
+    "digest_date": "2026-09-21",
+    "title": "Du gouffre de zinc à l'étable à champignons : la nature se rétablit cette semaine",
+    "summary": "Ces jours-ci montrent comment les gens donnent une deuxième chance aux animaux et à la terre, de la savane au Kenya à une grange en Iowa. À chaque fois, il s'agit de patience et de coopération : des rangers qui tiennent bon pendant des heures, des agriculteurs qui transforment leur exploitation, et des programmes d'élevage qui persévèrent pendant des décennies. Le résultat est à chaque fois le même sentiment de soulagement et de progrès. Au Kenya, les rangers du Kenya Wildlife Service et de la Sheldrick Wildlife Trust ont dû sauver un éléphant taureau adulte coincé jusqu'aux épaules dans un...",
+    "image_alt": "Du gouffre de zinc à l'étable à champignons : la nature se rétablit cette semaine",
+    "meta_description": "Sauvetages d'éléphants au Kenya, chevaux sauvages au Kazakhstan et une ferme qui se reconvertit : les bonnes nouvelles environnementales de ces jours-ci.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab185b16ab24e972877d307_6ab185b18b9a45d15d2c4db9_elephant-rescued-sinkhole-kenya-featured-2.webp",
+    "date": "2026-09-22T04:32:33.311Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1790051455373n0s5yx6a1",
+        "title": "Des rangers libèrent un éléphant d'un dangereux puits d'effondrement au Kenya"
+      },
+      {
+        "id": "17900514257619dlpca1k8",
+        "title": "Un éléphanteau orphelin nommé Wangalla secouru d'un troupeau de zèbres à Tsavo East"
+      },
+      {
+        "id": "1790014214783otpoivfi3",
+        "title": "Des chevaux de Przewalski sauvages nés au Kazakhstan après 200 ans d'absence"
+      },
+      {
+        "id": "17899196420568hecmtvs3",
+        "title": "Des États américains aident les monarques sur le chemin du Mexique"
+      },
+      {
+        "id": "17900514999718iuojtalw",
+        "title": "Une ferme porcine en Iowa cultive désormais des champignons"
+      }
+    ]
+  },
+  {
+    "id": "17900514999718iuojtalw",
+    "title": "Une ferme porcine en Iowa cultive désormais des champignons",
+    "summary": "Une ferme porcine du centre de l'Iowa, qui a élevé pendant des décennies des milliers de porcs destinés à l'abattage, s'est reconvertie à la culture de champignons spécialisés. La famille Faaborg a nommé son entreprise 1100 Farm, en référence au nombre de porcs que les étables accueillaient autrefois. Ils vendent les champignons, notamment la crinière de lion, sous forme de...",
+    "image_alt": "Tanner Faaborg pose devant sa ferme du centre de l'Iowa où des champignons sont désormais cultivés dans d'anciennes étables porcines",
+    "meta_description": "Une ferme de l'Iowa passe des porcs aux champignons avec l'aide de The Transfarmation Project.",
+    "meta_keywords": "culture de champignons, ferme Iowa, Transfarmation Project, conversion d'étable porcine, agriculture durable, crinière de lion",
+    "link": "https://www.npr.org/2026/09/21/nx-s1-5944503/iowa-hog-farm-growing-specialty-mushrooms",
+    "source": "NPR.org",
+    "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1370x771+0+71/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F76%2Ff0%2Fe977506b4da8b313d83bd18dc1d0%2Ftanner-faaborg-1100-farm-web.jpg",
+    "date": "2026-09-22T04:31:41.152Z",
+    "category": "Environment",
+    "score": 8
+  },
+  {
+    "id": "1790051455373n0s5yx6a1",
+    "title": "Des rangers libèrent un éléphant d'un dangereux puits d'effondrement au Kenya",
+    "summary": "Le 25 février, la Kenya Wildlife Service a reçu des signalements concernant un éléphant mâle coincé jusqu'aux épaules dans un puits d'effondrement près de Chakama, à environ 30 miles à l'intérieur des terres de l'océan Indien. Le pilote Roan Carr-Hartley de la Sheldrick Wildlife Trust s'est rendu sur place et y a trouvé l'équipe anti-braconnage Kulalu et la KWS. Le...",
+    "image_alt": "Des rangers utilisent des sangles et un véhicule pour tirer un éléphant d'un puits d'effondrement au Kenya",
+    "meta_description": "Des rangers de la Sheldrick Wildlife Trust libèrent un éléphant d'un puits d'effondrement à Chakama, Kenya, sans sédation.",
+    "meta_keywords": "éléphant, puits d'effondrement, Sheldrick Wildlife Trust, Kenya Wildlife Service, Chakama, Great Rift Valley, sauvetage d'éléphants",
+    "link": "https://www.goodgoodgood.co/articles/elephant-rescued-sinkhole-kenya",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab185b16ab24e972877d307_6ab185b18b9a45d15d2c4db9_elephant-rescued-sinkhole-kenya-featured-2.webp",
+    "date": "2026-09-22T04:30:56.272Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "17900514257619dlpca1k8",
+    "title": "Un éléphanteau orphelin nommé Wangalla secouru d'un troupeau de zèbres à Tsavo East",
+    "summary": "Le 4 novembre 2025, le Kenya Wildlife Service a reçu un signalement concernant un jeune éléphant orphelin dans le parc national de Tsavo East. Des touristes avaient repéré l'animal et communiqué sa localisation. Trevor, responsable des opérations à Tsavo, a dirigé une équipe de recherche qui a retrouvé le veau après plus d'une heure de recherche en brousse, caché au...",
+    "image_alt": "Un jeune éléphanteau nommé Wangalla auprès de son soigneur au sanctuaire du Sheldrick Wildlife Trust au Kenya",
+    "meta_description": "L'éléphanteau orphelin Wangalla a été secouru d'un troupeau de zèbres à Tsavo East et a trouvé un nouveau foyer au Sheldrick Wildlife Trust.",
+    "meta_keywords": "Wangalla, Sheldrick Wildlife Trust, sauvetage d'éléphant, Tsavo East, Kenya Wildlife Service, éléphanteau orphelin, Misheck",
+    "link": "https://www.goodgoodgood.co/articles/baby-elephant-rescued-zebra-herd",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab196c9d7bede5a31eac123_6ab196c7176d5ce68dc3873f_baby-elephant-rescued-zebra-herd-featured.webp",
+    "date": "2026-09-22T04:30:27.261Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790051398328zl0crxok4",
+    "title": "Un nouvel outil IA détecte les maladies cardiaques via un ECG ordinaire",
+    "summary": "Des chercheurs au Royaume-Uni ont développé un modèle d'IA capable de détecter les premiers signes de maladies valvulaires cardiaques et d'insuffisance cardiaque à partir d'un ECG standard. Le modèle a été entraîné sur des millions de patients et testé auprès de 67 000 patients aux États-Unis. Il a reconnu 81 % des cas d'insuffisance cardiaque et 90 % des maladies...",
+    "image_alt": "Un médecin examine les résultats d'un ECG sur un écran avec analyse IA de l'activité cardiaque",
+    "meta_description": "Un modèle d'IA détecte les premiers signes d'insuffisance cardiaque et de maladie valvulaire via un ECG ordinaire, selon une grande étude présentée à Munich.",
+    "meta_keywords": "IA, ECG, maladie cardiaque, insuffisance cardiaque, maladie valvulaire cardiaque, cardiologie, British Heart Foundation, échocardiographie",
+    "link": "https://www.goodnewsnetwork.org/new-ai-model-can-detect-heart-disease-markers-in-simple-electrocardiogram-readings-a-breakthrough/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/echocardiogram-Getty-Images-for-Unsplash-.jpg",
+    "date": "2026-09-22T04:30:00.829Z",
+    "category": "Health",
+    "score": 8
+  },
+  {
     "id": "dg-20260920-science",
     "type": "digest",
     "digest_date": "2026-09-20",
@@ -2371,43 +2464,6 @@
     "score": 9
   },
   {
-    "id": "dg-20260905-science",
-    "type": "digest",
-    "digest_date": "2026-09-05",
-    "title": "Des arbres avec des muscles, des poissons avec des filtres : la science du 5 septembre",
-    "summary": "La science d'aujourd'hui montre à quel point la recherche peut être variée : des arbres qui se redressent eux-mêmes aux poissons qui filtrent leurs propres signaux électriques. Des financements pour les jeunes chercheurs et le sauvetage d'une espèce d'arbre presque disparue sont également au programme. Une journée qui donne envie de curiosité. La Commission européenne s'engage pour la prochaine génération de scientifiques. 105,5 millions d'euros vont à 29 programmes doctoraux et postdoctoraux dans le cadre du programme COFUND des actions Marie Skłodowska-Curie [1]. Plus de 400 organisations de 38 pays participent, la France étant le plus grand coordinateur. Les programmes...",
-    "image_alt": "Des arbres avec des muscles, des poissons avec des filtres : la science du 5 septembre",
-    "meta_description": "Des muscles des arbres aux cerveaux des poissons qui filtrent le bruit : l'actualité scientifique du 5 septembre 2026 en résumé.",
-    "meta_keywords": "Science",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&q=80",
-    "date": "2026-09-06T04:15:38.531Z",
-    "category": "Science",
-    "refs": [
-      {
-        "id": "1788647709263hp99h6be9",
-        "title": "L'UE débloque 105,5 millions € pour les chercheurs"
-      },
-      {
-        "id": "1788647579010wxcreq06i",
-        "title": "Les arbres possèdent leurs propres 'muscles'"
-      },
-      {
-        "id": "1788646234804g1sgv91ia",
-        "title": "Le châtaignier américain reçoit une bouée de sauvetage génétique"
-      },
-      {
-        "id": "17886485649093lmuettpf",
-        "title": "Le cerveau du poisson éléphant filtre intelligemment ses propres signaux"
-      },
-      {
-        "id": "178864553146221lp57tcj",
-        "title": "La musique IA exclue des classements australiens"
-      }
-    ]
-  },
-  {
     "id": "1788668077914dbmh5cikz",
     "title": "Des bouteilles sauvent les dauphins et plus de bonnes nouvelles",
     "summary": "Une simple invention consistant à fixer des bouteilles en plastique vides aux filets de pêche réduit les prises accessoires de dauphins de 88 pour cent, a découvert un biologiste marin émérite. La Flandre ferme le delphinarium Boudewijn Seapark au plus tard en 2037. L'Inde a lancé son premier train à hydrogène construit sur place pour les lignes non électrifiées. Une...",
@@ -2518,61 +2574,5 @@
     "date": "2026-09-05T22:33:54.205Z",
     "category": "Science",
     "score": 7
-  },
-  {
-    "id": "1788647579010wxcreq06i",
-    "title": "Les arbres possèdent leurs propres 'muscles'",
-    "summary": "Des chercheurs français de l'INRAE et de l'Université Clermont Auvergne ont découvert comment les arbres orientent activement leur forme grâce à un mécanisme ressemblant à des muscles, quelque chose qu'on supposait jusqu'à présent unique aux animaux. Dans une expérience menée sur de jeunes peupliers, les arbres ont été placés horizontalement puis mis sur une plateforme rotative dans une sphère éclairée...",
-    "image_alt": "Jeune arbre utilisant du bois de tension pour croître verticalement",
-    "meta_description": "Des chercheurs découvrent comment les arbres orientent leur forme avec du « bois de tension », comme un muscle — un mécanisme autrefois considéré comme uniquement animal.",
-    "meta_keywords": "arbres, bois de tension, croissance des plantes, INRAE, peupliers, biologie végétale, muscles des plantes",
-    "link": "https://newatlas.com/environment/newly-identified-muscle-trees/",
-    "source": "Newatlas.com",
-    "image": "https://assets.newatlas.com/dims4/default/2d8b94c/2147483647/strip/true/crop/3456x2304+0+0/resize/1440x960!/format/webp/quality/90/?url=https%3A%2F%2Fnewatlas-brightspot.s3.ap-southeast-2.amazonaws.com%2F9a%2F8a%2Fdb01d93a48049df7dcdcecf2e3c6%2Fdepositphotos-379281722-xl.jpg",
-    "date": "2026-09-05T22:33:00.053Z",
-    "category": "Science",
-    "score": 9
-  },
-  {
-    "id": "1788647519997iqucy27jj",
-    "title": "Le Texas arrête le financement des caméras Flock",
-    "summary": "Le gouverneur Greg Abbott a ordonné à tous les organismes gouvernementaux du Texas de cesser de financer les caméras Flock, suite à des préoccupations croissantes concernant cette technologie de surveillance pilotée par l'IA. L'ordre est intervenu peu avant que The Texas Tribune ne publie une enquête révélant qu'une agence d'État a dépensé au moins 30 millions de dollars pour étendre...",
-    "image_alt": "Caméra Flock fixée à un poteau de circulation",
-    "meta_description": "Le Texas arrête le financement des caméras de surveillance Flock suite à des préoccupations concernant la vie privée et les abus par les agents.",
-    "meta_keywords": "Caméras Flock, Texas, surveillance, Greg Abbott, vie privée, police, lecteur de plaques",
-    "link": "https://www.goodgoodgood.co/articles/texas-governor-abbott-flock-state-agency-spending",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a97209fa115f0a5bc0f49b8_6a97209eb78913be409a7a90_texas-governor-abbott-flock-state-agency-spending-featured.webp",
-    "date": "2026-09-05T22:32:00.818Z",
-    "category": "Tech",
-    "score": 7
-  },
-  {
-    "id": "17886474469233c40ikjm7",
-    "title": "Marcher en l'honneur de Jane Goodall",
-    "summary": "Le Jane Goodall Institute appelle les Américains à se plonger dans la nature du 1er au 4 octobre 2026 lors de la première « Hike for Hope ». L'événement coïncide avec la date du décès de la légendaire conservationniste, décédée le 1er octobre 2025. Les participants peuvent se joindre à des randonnées organisées ou en organiser une eux-mêmes. Les Roots...",
-    "image_alt": "Des randonneurs dans la nature lors de Hike for Hope en l'honneur de Jane Goodall",
-    "meta_description": "Le Jane Goodall Institute lance l'action nationale de randonnée « Hike for Hope » du 1er au 4 octobre 2026 en hommage à la conservationniste décédée.",
-    "meta_keywords": "Jane Goodall, Hike for Hope, Jane Goodall Institute, conservation de la nature, randonnée, Roots and Shoots, conservationniste",
-    "link": "https://www.goodgoodgood.co/articles/jane-goodall-hike-for-hope",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a99b3cfd8c1f9500b6c5ed2_6a99b3cee7965a5348b26bba_jane-goodall-hike-for-hope-featured.webp",
-    "date": "2026-09-05T22:30:47.654Z",
-    "category": "Environment",
-    "score": 7
-  },
-  {
-    "id": "1788647384130wkqh8u5kt",
-    "title": "Une ado invente un appareil primé contre les braconniers",
-    "summary": "Anika Puri, diplômée du MIT, a remporté à dix-sept ans le Peggy Scripps Award for Science Communication lors de la Regeneron International Science and Engineering Fair (ISEF) 2022. Elle a développé EISa (elephant savior), un appareil alimenté par l'IA qui, via un drone équipé d'images thermiques et infrarouges, peut distinguer les éléphants des braconniers potentiels en fonction de leurs schémas...",
-    "image_alt": "Un drone équipé d'une caméra thermique survole une réserve naturelle pour détecter les braconniers",
-    "meta_description": "L'ado Anika Puri remporte le prix ISEF avec un drone IA protégeant les éléphants contre les braconniers avec 90 % de précision.",
-    "meta_keywords": "éléphants, braconniers, intelligence artificielle, drone, ISEF, MIT, Anika Puri, protection de la faune",
-    "link": "https://www.goodgoodgood.co/articles/teen-invents-device-to-catch-elephant-poachers",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a99d3d1e19a819a1f4c6ed1_6a99d3cfeccb478753f53f50_teen-invents-device-to-catch-elephant-poachers-featured.webp",
-    "date": "2026-09-05T22:29:44.931Z",
-    "category": "Tech",
-    "score": 9
   }
 ]

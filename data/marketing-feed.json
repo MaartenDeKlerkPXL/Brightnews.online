@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-09-21T18:13:14.842Z",
+ "gegenereerd": "2026-09-22T04:32:33.663Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -12,6 +12,22 @@
      "score": 10,
      "categorie": "Health",
      "url": "https://brightnews.online/articles/nl/vijf-dollar-per-nacht-slaap-verhoogt-cijfers-van-studenten-1789965334441fmmtlceew.html"
+    },
+    {
+     "id": "1790051455373n0s5yx6a1",
+     "titel": "Rangers bevrijden olifant uit gevaarlijke zinkgat in Kenia",
+     "teaser": "Op 25 februari kreeg de Kenya Wildlife Service meldingen van een stier-olifant die schoudersdiep vastzat in een zinkgat bij Chakama, zo'n 30 mijl landinwaarts van de Indische Oceaan. Piloot Roan Carr-Hartley van de Sheldrick Wildlife Trust vloog ter plaatse en trof daar het Kulalu anti-stropersteam en de KWS. Het gat was te diep en steil om uit te ontsnappen, en...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/rangers-bevrijden-olifant-uit-gevaarlijke-zinkgat-in-kenia-1790051455373n0s5yx6a1.html"
+    },
+    {
+     "id": "17900514257619dlpca1k8",
+     "titel": "Weesolifantje Wangalla gered uit zebrakudde in Tsavo East",
+     "teaser": "Op 4 november 2025 kreeg de Kenya Wildlife Service een melding van een eenzame, wees geraakte olifant in Tsavo East National Park. Toeristen hadden het dier gespot en de locatie doorgegeven. Trevor, werkmanager bij Tsavo, leidde een zoekteam dat het kalfje na ruim een uur diep in de bush aantrof, verscholen tussen een kudde zebra's. Wildlife-functionarissen vermoeden dat een leeuwenroedel...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/weesolifantje-wangalla-gered-uit-zebrakudde-in-tsavo-east-17900514257619dlpca1k8.html"
     },
     {
      "id": "1790014241811y3vfaki98",
@@ -28,25 +44,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/wilde-przewalskipaarden-geboren-in-kazachstan-na-200-jaar-afwezigheid-1790014214783otpoivfi3.html"
-    },
-    {
-     "id": "1790014168286wv6pmjzvd",
-     "titel": "Drone-training uit Zuid-Korea voorkomt doden bij overstroming Mozambique",
-     "teaser": "In januari trof een van de zwaarste overstromingen in decennia het district Marracuene in Mozambique, nadat de rivier Incomáti buiten haar oevers trad. Toch vielen er geen dodelijke slachtoffers, dankzij een groep drone-piloten die werd opgeleid via het Drone-Based Disaster Management Project van de KOAFEC Trust Fund van de Afrikaanse Ontwikkelingsbank. Dertig experts, waaronder Kátia Manjate, leerden onder Koreaanse instructeurs...",
-     "score": 9,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/nl/drone-training-uit-zuid-korea-voorkomt-doden-bij-overstroming-mozambique-1790014168286wv6pmjzvd.html"
-    },
-    {
-     "id": "1789965311313qeajm49mh",
-     "titel": "Mesabi Trail in Minnesota na 30 jaar eindelijk voltooid",
-     "teaser": "Na meer dan 30 jaar van planning, aanleg en fondsenwerving is de Mesabi Trail in Minnesota officieel voltooid. Het 165 mijl lange geasfalteerde fietspad is daarmee een van de langste van Amerika. De route loopt van de Mississippi-rivier tot aan de wildernis van de Boundary Waters, door de Iron Range met zijn historische ijzerertsmijnen die tijdens de Tweede Wereldoorlog belangrijk...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/mesabi-trail-in-minnesota-na-30-jaar-eindelijk-voltooid-1789965311313qeajm49mh.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260921-environment",
+     "titel": "Van zinkgat tot paddenstoelenstal: herstel in de natuur deze week",
+     "categorie": "Environment",
+     "dag": "2026-09-21",
+     "url": "https://brightnews.online/articles/nl/van-zinkgat-tot-paddenstoelenstal-herstel-in-de-natuur-deze-week-dg-20260921-environment.html"
+    },
     {
      "id": "dg-20260920-science",
      "titel": "Nieuwe kat, oude kunst en geredde schatten: wetenschap kijkt terug en vooruit",
@@ -81,6 +88,22 @@
      "url": "https://brightnews.online/articles/en/five-dollars-per-night-sleep-boosts-student-grades-1789965334441fmmtlceew.html"
     },
     {
+     "id": "1790051455373n0s5yx6a1",
+     "titel": "Rangers free elephant from dangerous sinkhole in Kenya",
+     "teaser": "On February 25, the Kenya Wildlife Service received reports of a bull elephant trapped shoulder-deep in a sinkhole near Chakama, roughly 30 miles inland from the Indian Ocean. Pilot Roan Carr-Hartley of the Sheldrick Wildlife Trust flew to the scene and found the Kulalu anti-poaching team and the KWS already there. The hole was too deep and steep for the...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/rangers-free-elephant-from-dangerous-sinkhole-in-kenya-1790051455373n0s5yx6a1.html"
+    },
+    {
+     "id": "17900514257619dlpca1k8",
+     "titel": "Orphaned elephant calf Wangalla rescued from zebra herd in Tsavo East",
+     "teaser": "On November 4, 2025, the Kenya Wildlife Service received a report of a lone orphaned elephant in Tsavo East National Park. Tourists had spotted the animal and provided its location. Trevor, operations manager at Tsavo, led a search team that found the calf more than an hour later deep in the bush, hidden among a zebra herd. Wildlife officials suspect...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/orphaned-elephant-calf-wangalla-rescued-from-zebra-herd-in-tsavo-east-17900514257619dlpca1k8.html"
+    },
+    {
      "id": "1790014241811y3vfaki98",
      "titel": "Missing hiker Craig Berg rescued after 11 days on Isle Royale",
      "teaser": "The 70-year-old Craig Berg was on a nine-day solo trek through Isle Royale National Park when he veered off the trail on day four and fell into a marsh, soaking his clothes, backpack, food and phone. For eleven days he called out for help thousands of times and survived on freeze-dried food and contaminated water. Search teams expanded their operation...",
@@ -95,25 +118,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/en/wild-przewalski-horses-born-in-kazakhstan-after-200-years-1790014214783otpoivfi3.html"
-    },
-    {
-     "id": "1790014168286wv6pmjzvd",
-     "titel": "South Korean drone training prevents deaths in Mozambique flooding",
-     "teaser": "In January, one of the heaviest floods in decades hit the Marracuene district in Mozambique after the Incomáti river overflowed its banks. Yet there were no fatalities, thanks to a group of drone pilots trained through the Drone-Based Disaster Management Project of the KOAFEC Trust Fund of the African Development Bank. Thirty experts, including Kátia Manjate, learned to operate drones...",
-     "score": 9,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/en/south-korean-drone-training-prevents-deaths-in-mozambique-flooding-1790014168286wv6pmjzvd.html"
-    },
-    {
-     "id": "1789965311313qeajm49mh",
-     "titel": "Mesabi Trail in Minnesota finally completed after 30 years",
-     "teaser": "After more than 30 years of planning, construction and fundraising, the Mesabi Trail in Minnesota is officially complete. The 165-mile paved bike path is now one of the longest in America. The route runs from the Mississippi River to the wilderness of the Boundary Waters, through the Iron Range with its historic iron ore mines that were important to the...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/mesabi-trail-in-minnesota-finally-completed-after-30-years-1789965311313qeajm49mh.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260921-environment",
+     "titel": "From sinkhole to mushroom barn: nature's recovery this week",
+     "categorie": "Environment",
+     "dag": "2026-09-21",
+     "url": "https://brightnews.online/articles/en/from-sinkhole-to-mushroom-barn-nature-s-recovery-this-week-dg-20260921-environment.html"
+    },
     {
      "id": "dg-20260920-science",
      "titel": "New cat, ancient art and rescued treasures: science looks back and ahead",
@@ -148,6 +162,22 @@
      "url": "https://brightnews.online/articles/de/funf-dollar-pro-nacht-schlaf-verbessern-noten-von-studierenden-1789965334441fmmtlceew.html"
     },
     {
+     "id": "1790051455373n0s5yx6a1",
+     "titel": "Ranger befreien Elefanten aus gefährlicher Doline in Kenia",
+     "teaser": "Am 25. Februar erhielt der Kenya Wildlife Service Meldungen von einem Bullenelefanten, der schultertief in einer Doline bei Chakama steckte, etwa 50 Kilometer landeinwärts vom Indischen Ozean. Pilot Roan Carr-Hartley der Sheldrick Wildlife Trust flog zum Einsatzort und traf dort das Kulalu Anti-Wilderei-Team und die KWS an. Das Loch war zu tief und steil, um zu entkommen, und der sich...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/ranger-befreien-elefanten-aus-gefahrlicher-doline-in-kenia-1790051455373n0s5yx6a1.html"
+    },
+    {
+     "id": "17900514257619dlpca1k8",
+     "titel": "Waisenbaby-Elefant Wangalla aus Zebraherde in Tsavo East gerettet",
+     "teaser": "Am 4. November 2025 erhielt der Kenya Wildlife Service eine Meldung über einen einsamen, verwaisten Elefanten im Tsavo East National Park. Touristen hatten das Tier entdeckt und den Standort weitergegeben. Trevor, Betriebsleiter in Tsavo, leitete ein Suchteam, das das Kalb nach mehr als einer Stunde tief im Busch fand, versteckt zwischen einer Zebraherde. Wildtierfunktionäre vermuten, dass ein Löwenrudel die Herde...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/waisenbaby-elefant-wangalla-aus-zebraherde-in-tsavo-east-gerettet-17900514257619dlpca1k8.html"
+    },
+    {
      "id": "1790014241811y3vfaki98",
      "titel": "Vermisster Wanderer Craig Berg nach 11 Tagen auf Isle Royale gerettet",
      "teaser": "Der 70-jährige Craig Berg unternahm eine neuntägige Solotour durch den Isle Royale National Park, als er am vierten Tag vom Weg abkam und in ein Moor fiel, wobei seine Kleidung, sein Rucksack, sein Essen und sein Telefon durchnässt wurden. Elf Tage lang schrie er tausende Male um Hilfe und überlebte mit Gefriertrockenkost und verschmutztem Wasser. Suchteams erweiterten ihre Aktion, nachdem...",
@@ -162,25 +192,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/de/wilde-przewalskipferde-in-kasachstan-nach-200-jahren-geboren-1790014214783otpoivfi3.html"
-    },
-    {
-     "id": "1790014168286wv6pmjzvd",
-     "titel": "Drohnenausbildung aus Südkorea verhindert Todesfälle bei Mosambik-Flutkatastrophe",
-     "teaser": "Im Januar traf eine der schwersten Überschwemmungen seit Jahrzehnten den Distrikt Marracuene in Mosambik, nachdem der Fluss Incomáti über die Ufer trat. Dennoch gab es keine Todesfälle, dank einer Gruppe von Drohnenpiloten, die durch das Drone-Based Disaster Management Project des KOAFEC Trust Fund der Afrikanischen Entwicklungsbank ausgebildet wurden. Dreißig Experten, darunter Kátia Manjate, lernten unter koreanischen Instruktoren, Drohnen und LiDAR-Geräte...",
-     "score": 9,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/de/drohnenausbildung-aus-sudkorea-verhindert-todesfalle-bei-mosambik-flutkatastroph-1790014168286wv6pmjzvd.html"
-    },
-    {
-     "id": "1789965311313qeajm49mh",
-     "titel": "Mesabi Trail in Minnesota nach 30 Jahren endlich fertiggestellt",
-     "teaser": "Nach mehr als 30 Jahren Planung, Bau und Mittelbeschaffung ist der Mesabi Trail in Minnesota offiziell fertiggestellt. Der 165 Meilen lange asphaltierte Radweg gehört damit zu den längsten Amerikas. Die Route verläuft vom Mississippi bis zur Wildnis der Boundary Waters und führt durch die Iron Range mit ihren historischen Eisenerzgruben, die während des Zweiten Weltkriegs für die amerikanische Stahlindustrie wichtig...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/mesabi-trail-in-minnesota-nach-30-jahren-endlich-fertiggestellt-1789965311313qeajm49mh.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260921-environment",
+     "titel": "Vom Sinkloch zur Pilzzucht: Naturrettung diese Woche",
+     "categorie": "Environment",
+     "dag": "2026-09-21",
+     "url": "https://brightnews.online/articles/de/vom-sinkloch-zur-pilzzucht-naturrettung-diese-woche-dg-20260921-environment.html"
+    },
     {
      "id": "dg-20260920-science",
      "titel": "Neue Katze, alte Kunst und gerettete Schätze: Die Wissenschaft blickt zurück und voraus",
@@ -215,6 +236,22 @@
      "url": "https://brightnews.online/articles/fr/cinq-dollars-par-nuit-de-sommeil-ameliore-les-notes-des-etudiants-1789965334441fmmtlceew.html"
     },
     {
+     "id": "1790051455373n0s5yx6a1",
+     "titel": "Des rangers libèrent un éléphant d'un dangereux puits d'effondrement au Kenya",
+     "teaser": "Le 25 février, la Kenya Wildlife Service a reçu des signalements concernant un éléphant mâle coincé jusqu'aux épaules dans un puits d'effondrement près de Chakama, à environ 30 miles à l'intérieur des terres de l'océan Indien. Le pilote Roan Carr-Hartley de la Sheldrick Wildlife Trust s'est rendu sur place et y a trouvé l'équipe anti-braconnage Kulalu et la KWS. Le...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/des-rangers-liberent-un-elephant-d-un-dangereux-puits-d-effondrement-au-kenya-1790051455373n0s5yx6a1.html"
+    },
+    {
+     "id": "17900514257619dlpca1k8",
+     "titel": "Un éléphanteau orphelin nommé Wangalla secouru d'un troupeau de zèbres à Tsavo East",
+     "teaser": "Le 4 novembre 2025, le Kenya Wildlife Service a reçu un signalement concernant un jeune éléphant orphelin dans le parc national de Tsavo East. Des touristes avaient repéré l'animal et communiqué sa localisation. Trevor, responsable des opérations à Tsavo, a dirigé une équipe de recherche qui a retrouvé le veau après plus d'une heure de recherche en brousse, caché au...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/un-elephanteau-orphelin-nomme-wangalla-secouru-d-un-troupeau-de-zebres-a-tsavo-e-17900514257619dlpca1k8.html"
+    },
+    {
      "id": "1790014241811y3vfaki98",
      "titel": "Randonneur disparu Craig Berg secouru après 11 jours sur Isle Royale",
      "teaser": "Craig Berg, 70 ans, effectuait une randonnée en solo de neuf jours à travers Isle Royale National Park lorsqu'il s'est écarté du sentier le quatrième jour et a chuté dans un marais, imbibant ses vêtements, son sac, ses provisions et son téléphone. Pendant onze jours, il a crié des milliers de fois à l'aide et a survécu grâce à des...",
@@ -229,25 +266,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/fr/des-chevaux-de-przewalski-sauvages-nes-au-kazakhstan-apres-200-ans-d-absence-1790014214783otpoivfi3.html"
-    },
-    {
-     "id": "1790014168286wv6pmjzvd",
-     "titel": "Une formation aux drones sud-coréenne prévient les décès lors des inondations au Mozambique",
-     "teaser": "En janvier, l'une des plus graves inondations de ces dernières décennies a frappé le district de Marracuene au Mozambique, après que le fleuve Incomáti soit sorti de son lit. Pourtant, aucune victime n'a été enregistrée, grâce à un groupe de pilotes de drones formés par le biais du Drone-Based Disaster Management Project du KOAFEC Trust Fund de la Banque africaine...",
-     "score": 9,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/fr/une-formation-aux-drones-sud-coreenne-previent-les-deces-lors-des-inondations-au-1790014168286wv6pmjzvd.html"
-    },
-    {
-     "id": "1789965311313qeajm49mh",
-     "titel": "La Mesabi Trail au Minnesota enfin achevée après 30 ans",
-     "teaser": "Après plus de 30 ans de planification, de construction et de levée de fonds, la Mesabi Trail au Minnesota est officiellement achevée. Cette piste cyclable asphaltée de 165 milles est désormais l'une des plus longues d'Amérique. L'itinéraire s'étend du fleuve Mississippi jusqu'à la nature sauvage des Boundary Waters, en traversant l'Iron Range avec ses mines de minerai de fer historiques...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/la-mesabi-trail-au-minnesota-enfin-achevee-apres-30-ans-1789965311313qeajm49mh.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260921-environment",
+     "titel": "Du gouffre de zinc à l'étable à champignons : la nature se rétablit cette semaine",
+     "categorie": "Environment",
+     "dag": "2026-09-21",
+     "url": "https://brightnews.online/articles/fr/du-gouffre-de-zinc-a-l-etable-a-champignons-la-nature-se-retablit-cette-semaine-dg-20260921-environment.html"
+    },
     {
      "id": "dg-20260920-science",
      "titel": "Un nouveau chat, un art ancien et des trésors sauvés : la science regarde vers le passé et l'avenir",
@@ -282,6 +310,22 @@
      "url": "https://brightnews.online/articles/es/cinco-dolares-por-noche-de-sueno-mejoran-las-calificaciones-de-estudiantes-1789965334441fmmtlceew.html"
     },
     {
+     "id": "1790051455373n0s5yx6a1",
+     "titel": "Rangers liberan a elefante de un peligroso sumidero en Kenia",
+     "teaser": "El 25 de febrero, el Kenya Wildlife Service recibió reportes de un elefante toro atrapado hasta los hombros en un sumidero cerca de Chakama, aproximadamente 30 millas tierra adentro del océano Índico. El piloto Roan Carr-Hartley de Sheldrick Wildlife Trust voló al lugar y encontró allí al equipo anti-furtivos Kulalu y el KWS. El agujero era demasiado profundo y empinado...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/rangers-liberan-a-elefante-de-un-peligroso-sumidero-en-kenia-1790051455373n0s5yx6a1.html"
+    },
+    {
+     "id": "17900514257619dlpca1k8",
+     "titel": "Elefantillo huérfano Wangalla rescatado de una manada de cebras en Tsavo East",
+     "teaser": "El 4 de noviembre de 2025, el Kenya Wildlife Service recibió una notificación sobre un elefante joven y huérfano en el Tsavo East National Park. Turistas avistaron al animal y proporcionaron su ubicación. Trevor, gerente de operaciones en Tsavo, lideró un equipo de búsqueda que encontró a la cría después de más de una hora en lo profundo de la...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/elefantillo-huerfano-wangalla-rescatado-de-una-manada-de-cebras-en-tsavo-east-17900514257619dlpca1k8.html"
+    },
+    {
      "id": "1790014241811y3vfaki98",
      "titel": "Excursionista desaparecido Craig Berg rescatado tras 11 días en Isle Royale",
      "teaser": "Craig Berg, de 70 años, realizaba una excursión en solitario de nueve días por Isle Royale National Park cuando se desvió del sendero el cuarto día y cayó en un pantano, empaпando su ropa, mochila, comida y teléfono. Durante once días gritó miles de veces pidiendo ayuda y sobrevivió con alimentos liofilizados y agua contaminada. Los equipos de búsqueda ampliaron...",
@@ -296,25 +340,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/es/caballos-de-przewalski-salvajes-nacen-en-kazajistan-tras-200-anos-de-ausencia-1790014214783otpoivfi3.html"
-    },
-    {
-     "id": "1790014168286wv6pmjzvd",
-     "titel": "Entrenamiento de drones de Corea del Sur evita muertes en inundación de Mozambique",
-     "teaser": "En enero, una de las inundaciones más graves en décadas afectó el distrito de Marracuene en Mozambique, después de que el río Incomáti se desbordara. Sin embargo, no hubo víctimas mortales, gracias a un grupo de pilotos de drones capacitados a través del Proyecto de Gestión de Desastres Basado en Drones del Fondo KOAFEC del Banco Africano de Desarrollo. Treinta...",
-     "score": 9,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/es/entrenamiento-de-drones-de-corea-del-sur-evita-muertes-en-inundacion-de-mozambiq-1790014168286wv6pmjzvd.html"
-    },
-    {
-     "id": "1789965311313qeajm49mh",
-     "titel": "Mesabi Trail en Minnesota finalmente completado tras 30 años",
-     "teaser": "Tras más de 30 años de planificación, construcción y recaudación de fondos, el Mesabi Trail en Minnesota ha sido oficialmente completado. La ruta asfaltada de 165 millas es así una de las más largas de América. El camino se extiende desde el río Misisipi hasta la naturaleza salvaje de las Boundary Waters, atravesando la Iron Range con sus históricas minas...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/mesabi-trail-en-minnesota-finalmente-completado-tras-30-anos-1789965311313qeajm49mh.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260921-environment",
+     "titel": "Del sumidero a la granja de hongos: la recuperación de la naturaleza esta semana",
+     "categorie": "Environment",
+     "dag": "2026-09-21",
+     "url": "https://brightnews.online/articles/es/del-sumidero-a-la-granja-de-hongos-la-recuperacion-de-la-naturaleza-esta-semana-dg-20260921-environment.html"
+    },
     {
      "id": "dg-20260920-science",
      "titel": "Un gato nuevo, arte antiguo y tesoros rescatados: la ciencia mira hacia atrás y hacia adelante",

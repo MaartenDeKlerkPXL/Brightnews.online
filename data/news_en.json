@@ -1,5 +1,98 @@
 [
   {
+    "id": "dg-20260921-environment",
+    "type": "digest",
+    "digest_date": "2026-09-21",
+    "title": "From sinkhole to mushroom barn: nature's recovery this week",
+    "summary": "These days show how people are giving animals and land a second chance, from the savanna in Kenya to a barn in Iowa. Time and again, it comes down to patience and cooperation: rangers who hold out for hours, farmers who transform their operations, and breeding programs that persist for decades. The result is always the same feeling of relief and progress. In Kenya, rangers from the Kenya Wildlife Service and the Sheldrick Wildlife Trust had to rescue an adult bull elephant that was stuck shoulder-deep in a sinkhole near Chakama. Without sedation, they pulled the animal out of the...",
+    "image_alt": "From sinkhole to mushroom barn: nature's recovery this week",
+    "meta_description": "Elephant rescues in Kenya, wild horses in Kazakhstan and a farm that switches gears: this week's positive environmental news.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab185b16ab24e972877d307_6ab185b18b9a45d15d2c4db9_elephant-rescued-sinkhole-kenya-featured-2.webp",
+    "date": "2026-09-22T04:32:33.311Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1790051455373n0s5yx6a1",
+        "title": "Rangers free elephant from dangerous sinkhole in Kenya"
+      },
+      {
+        "id": "17900514257619dlpca1k8",
+        "title": "Orphaned elephant calf Wangalla rescued from zebra herd in Tsavo East"
+      },
+      {
+        "id": "1790014214783otpoivfi3",
+        "title": "Wild Przewalski horses born in Kazakhstan after 200 years"
+      },
+      {
+        "id": "17899196420568hecmtvs3",
+        "title": "U.S. states help monarch butterflies on their way to Mexico"
+      },
+      {
+        "id": "17900514999718iuojtalw",
+        "title": "Iowa pig farm now grows mushrooms"
+      }
+    ]
+  },
+  {
+    "id": "17900514999718iuojtalw",
+    "title": "Iowa pig farm now grows mushrooms",
+    "summary": "A pig farm in central Iowa that bred thousands of pigs for slaughter for decades has switched to growing specialty mushrooms. The Faaborg family calls their operation 1100 Farm, referring to the number of pigs the barns once housed. They sell the mushrooms, including lion's mane, as tinctures, coffee blends and flavored salt. The transition was supported by technical and...",
+    "image_alt": "Tanner Faaborg poses at his farm in central Iowa where mushrooms are now grown in former pig barns",
+    "meta_description": "Iowa farm switches from pigs to mushrooms with help from The Transfarmation Project.",
+    "meta_keywords": "growing mushrooms, Iowa farm, Transfarmation Project, converting pig barn, sustainable agriculture, lion's mane",
+    "link": "https://www.npr.org/2026/09/21/nx-s1-5944503/iowa-hog-farm-growing-specialty-mushrooms",
+    "source": "NPR.org",
+    "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1370x771+0+71/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F76%2Ff0%2Fe977506b4da8b313d83bd18dc1d0%2Ftanner-faaborg-1100-farm-web.jpg",
+    "date": "2026-09-22T04:31:41.151Z",
+    "category": "Environment",
+    "score": 8
+  },
+  {
+    "id": "1790051455373n0s5yx6a1",
+    "title": "Rangers free elephant from dangerous sinkhole in Kenya",
+    "summary": "On February 25, the Kenya Wildlife Service received reports of a bull elephant trapped shoulder-deep in a sinkhole near Chakama, roughly 30 miles inland from the Indian Ocean. Pilot Roan Carr-Hartley of the Sheldrick Wildlife Trust flew to the scene and found the Kulalu anti-poaching team and the KWS already there. The hole was too deep and steep for the...",
+    "image_alt": "Rangers use straps and a vehicle to pull an elephant from a sinkhole in Kenya",
+    "meta_description": "Rangers from Sheldrick Wildlife Trust free elephant from sinkhole in Chakama, Kenya, without sedation.",
+    "meta_keywords": "elephant, sinkhole, Sheldrick Wildlife Trust, Kenya Wildlife Service, Chakama, Great Rift Valley, elephant rescue",
+    "link": "https://www.goodgoodgood.co/articles/elephant-rescued-sinkhole-kenya",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab185b16ab24e972877d307_6ab185b18b9a45d15d2c4db9_elephant-rescued-sinkhole-kenya-featured-2.webp",
+    "date": "2026-09-22T04:30:56.272Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "17900514257619dlpca1k8",
+    "title": "Orphaned elephant calf Wangalla rescued from zebra herd in Tsavo East",
+    "summary": "On November 4, 2025, the Kenya Wildlife Service received a report of a lone orphaned elephant in Tsavo East National Park. Tourists had spotted the animal and provided its location. Trevor, operations manager at Tsavo, led a search team that found the calf more than an hour later deep in the bush, hidden among a zebra herd. Wildlife officials suspect...",
+    "image_alt": "A young elephant calf named Wangalla with her caregiver at the Sheldrick Wildlife Trust sanctuary in Kenya",
+    "meta_description": "Orphaned elephant calf Wangalla was rescued from a zebra herd in Tsavo East and found a new home at Sheldrick Wildlife Trust.",
+    "meta_keywords": "Wangalla, Sheldrick Wildlife Trust, elephant rescue, Tsavo East, Kenya Wildlife Service, orphaned elephant, Misheck",
+    "link": "https://www.goodgoodgood.co/articles/baby-elephant-rescued-zebra-herd",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab196c9d7bede5a31eac123_6ab196c7176d5ce68dc3873f_baby-elephant-rescued-zebra-herd-featured.webp",
+    "date": "2026-09-22T04:30:27.261Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790051398328zl0crxok4",
+    "title": "New AI tool detects heart disease via standard ECG",
+    "summary": "Researchers in the UK have developed an AI model that can detect early signs of heart valve disease and heart failure using a standard ECG. The model was trained on millions of patients and tested on 67,000 patients in the US. It identified 81% of heart failure cases and 90% of heart valve diseases. An ECG cannot diagnose heart disease;...",
+    "image_alt": "Doctor reviews ECG result on screen with AI analysis of heart activity",
+    "meta_description": "AI model detects early signs of heart failure and heart valve disease via standard ECG, according to large study presented in Munich.",
+    "meta_keywords": "AI, ECG, heart disease, heart failure, heart valve disease, cardiology, British Heart Foundation, echocardiogram",
+    "link": "https://www.goodnewsnetwork.org/new-ai-model-can-detect-heart-disease-markers-in-simple-electrocardiogram-readings-a-breakthrough/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/echocardiogram-Getty-Images-for-Unsplash-.jpg",
+    "date": "2026-09-22T04:30:00.829Z",
+    "category": "Health",
+    "score": 8
+  },
+  {
     "id": "dg-20260920-science",
     "type": "digest",
     "digest_date": "2026-09-20",
@@ -2371,43 +2464,6 @@
     "score": 9
   },
   {
-    "id": "dg-20260905-science",
-    "type": "digest",
-    "digest_date": "2026-09-05",
-    "title": "Trees with muscles, fish with filters: science of September 5",
-    "summary": "Today's science shows how broad research can be: from trees that pull themselves upright to fish that filter out their own electrical signals. Funding for young researchers and the rescue of an almost extinct tree species also feature. A day to spark curiosity. The European Commission is investing in the next generation of scientists. €105.5 million is going to 29 doctoral and postdoctoral programmes under the Marie Skłodowska-Curie Actions COFUND programme [1]. More than 400 organisations from 38 countries are participating, with France as the largest coordinator. The programmes cover life sciences, quantum physics and space travel, all in the...",
-    "image_alt": "Trees with muscles, fish with filters: science of September 5",
-    "meta_description": "From muscle power in trees to fish brains that filter noise: the science news of September 5, 2026 in a nutshell.",
-    "meta_keywords": "Science",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&q=80",
-    "date": "2026-09-06T04:15:38.531Z",
-    "category": "Science",
-    "refs": [
-      {
-        "id": "1788647709263hp99h6be9",
-        "title": "EU allocates €105.5 million for researchers"
-      },
-      {
-        "id": "1788647579010wxcreq06i",
-        "title": "Trees have their own 'muscles', researchers find"
-      },
-      {
-        "id": "1788646234804g1sgv91ia",
-        "title": "American chestnut gets genetic lifeline"
-      },
-      {
-        "id": "17886485649093lmuettpf",
-        "title": "Fish brain filters its own signals cleverly"
-      },
-      {
-        "id": "178864553146221lp57tcj",
-        "title": "AI music banned from Australian charts"
-      }
-    ]
-  },
-  {
     "id": "1788668077914dbmh5cikz",
     "title": "Bottles save dolphins and more good news",
     "summary": "A simple invention using empty plastic bottles attached to fishing nets reduces dolphin bycatch by 88 percent, discovered an emeritus marine biologist. Flanders will close dolphinarium Boudewijn Seapark by 2037 at the latest. India launched its first domestically built hydrogen train for non-electrified routes. A Japanese company can now recover up to 90 percent of lithium from car batteries, compared...",
@@ -2518,61 +2574,5 @@
     "date": "2026-09-05T22:33:54.205Z",
     "category": "Science",
     "score": 7
-  },
-  {
-    "id": "1788647579010wxcreq06i",
-    "title": "Trees have their own 'muscles', researchers find",
-    "summary": "French researchers from INRAE and Clermont Auvergne University have discovered how trees actively control their shape using a mechanism resembling muscles, something previously thought to exist only in animals. In an experiment with young poplars, trees were placed horizontally and then positioned on a rotating platform inside a sphere lit from all sides to exclude the influence of gravity. The...",
-    "image_alt": "Young tree using tension wood to grow upright",
-    "meta_description": "Researchers discover how trees use 'tension wood' to control their shape, like a muscle — a mechanism once thought unique to animals.",
-    "meta_keywords": "trees, tension wood, plant growth, INRAE, poplars, plant biology, plant muscles",
-    "link": "https://newatlas.com/environment/newly-identified-muscle-trees/",
-    "source": "Newatlas.com",
-    "image": "https://assets.newatlas.com/dims4/default/2d8b94c/2147483647/strip/true/crop/3456x2304+0+0/resize/1440x960!/format/webp/quality/90/?url=https%3A%2F%2Fnewatlas-brightspot.s3.ap-southeast-2.amazonaws.com%2F9a%2F8a%2Fdb01d93a48049df7dcdcecf2e3c6%2Fdepositphotos-379281722-xl.jpg",
-    "date": "2026-09-05T22:33:00.052Z",
-    "category": "Science",
-    "score": 9
-  },
-  {
-    "id": "1788647519997iqucy27jj",
-    "title": "Texas stops funding for Flock cameras",
-    "summary": "Governor Greg Abbott has ordered all Texas state agencies to stop financing Flock cameras, following growing concerns about the AI-driven surveillance technology. The order came just before The Texas Tribune published an investigation showing that a state agency has spent at least 30 million dollars expanding the Flock network through subsidies to local police departments. Since 2023, at least 3,200...",
-    "image_alt": "Flock camera mounted on a traffic pole",
-    "meta_description": "Texas stops funding Flock surveillance cameras following privacy concerns and cases of officer misuse.",
-    "meta_keywords": "Flock cameras, Texas, surveillance, Greg Abbott, privacy, police, license plate reader",
-    "link": "https://www.goodgoodgood.co/articles/texas-governor-abbott-flock-state-agency-spending",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a97209fa115f0a5bc0f49b8_6a97209eb78913be409a7a90_texas-governor-abbott-flock-state-agency-spending-featured.webp",
-    "date": "2026-09-05T22:32:00.818Z",
-    "category": "Tech",
-    "score": 7
-  },
-  {
-    "id": "17886474469233c40ikjm7",
-    "title": "Walking in honor of Jane Goodall",
-    "summary": "The Jane Goodall Institute is calling on Americans to venture into nature from October 1-4, 2026 during the first 'Hike for Hope'. The event coincides with the death date of the legendary conservationist, who passed away on October 1, 2025. People can participate in organized hikes or organize their own. The institute's Roots & Shoots Basecamps will hold official events...",
-    "image_alt": "Hikers in nature during Hike for Hope in honor of Jane Goodall",
-    "meta_description": "Jane Goodall Institute calls for national walking campaign 'Hike for Hope' October 1-4, 2026 to honor the deceased conservationist.",
-    "meta_keywords": "Jane Goodall, Hike for Hope, Jane Goodall Institute, nature conservation, hiking, Roots and Shoots, conservationist",
-    "link": "https://www.goodgoodgood.co/articles/jane-goodall-hike-for-hope",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a99b3cfd8c1f9500b6c5ed2_6a99b3cee7965a5348b26bba_jane-goodall-hike-for-hope-featured.webp",
-    "date": "2026-09-05T22:30:47.653Z",
-    "category": "Environment",
-    "score": 7
-  },
-  {
-    "id": "1788647384130wkqh8u5kt",
-    "title": "Teenager invents award-winning device against poachers",
-    "summary": "Anika Puri, now a graduate of MIT, won the Peggy Scripps Award for Science Communication at age seventeen during the Regeneron International Science and Engineering Fair (ISEF) 2022. She developed EISa (elephant savior), an AI-powered device that uses a drone with thermal and infrared images to distinguish elephants from potential poachers based on their movement patterns. The system uses an...",
-    "image_alt": "Drone with thermal camera flies over nature reserve to detect poachers",
-    "meta_description": "Teenager Anika Puri wins ISEF prize with AI drone protecting elephants from poachers with 90% accuracy.",
-    "meta_keywords": "elephants, poachers, artificial intelligence, drone, ISEF, MIT, Anika Puri, wildlife protection",
-    "link": "https://www.goodgoodgood.co/articles/teen-invents-device-to-catch-elephant-poachers",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a99d3d1e19a819a1f4c6ed1_6a99d3cfeccb478753f53f50_teen-invents-device-to-catch-elephant-poachers-featured.webp",
-    "date": "2026-09-05T22:29:44.931Z",
-    "category": "Tech",
-    "score": 9
   }
 ]
