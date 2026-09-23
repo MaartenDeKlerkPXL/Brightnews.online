@@ -111,23 +111,6 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   (flex-kolom + `width: auto` = max-content). Alles nagemeten op 320/375/414/
   768px. *(Maarten)*
 
-- [ ] **16. Het archief loopt achter op het sjabloon — inmiddels in twee
-  generaties.** Opnieuw geteld op 2026-09-20 over alle 2.905 artikelpagina's:
-
-  | | pagina's |
-  |---|---|
-  | op het actuele sjabloon | 750 |
-  | ouder sjabloon, nog met de doodlopende LinkedIn-link | 385 |
-  | ouder sjabloon, link wel goed | 1.770 |
-
-  De 750 zijn op 2026-09-20 opnieuw gegenereerd bij de mobiele navigatiefix.
-  Bij de overige 2.155 staat nog de oude taalkiezer in de HTML. Dat is in de
-  praktijk onzichtbaar, want `index.js` vervangt dat label bij het laden —
-  maar het is wel scheefgroei, en zonder JavaScript zie je de oude balk.
-  Het zijn archiefpagina's die bewust blijven staan omdat hun URL's
-  geïndexeerd zijn; één keer bewust alles regenereren maakt het uniform en de
-  brondata is er. Overleggen met Erik. *(Erik)*
-
 - [ ] **26. Anthropic: auto-reload aanzetten en key-eigendom beslissen.**
   De storing van 10–13 september was een lege kredietbalans; de key blijkt op
   Eriks account te staan (Maartens console heeft geen organisatie). Erik:
@@ -240,37 +223,6 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
 
   Er is bewust alleen een insert-policy: bezoekers kunnen niet elkaars
   antwoorden lezen. Meelezen doe je in het Supabase-dashboard.
-
-- [ ] **36. Artikelen linken niet naar elkaar — het archief is daardoor
-  slecht vindbaar.** *(Gevonden 2026-09-21 bij het teruglezen van Search
-  Console, zie punt 23.)*
-
-  Nagemeten op een artikelpagina: **nul links naar andere artikelen.** De
-  enige interne links zijn het menu, de footer en de `hreflang`-varianten van
-  hetzelfde artikel in de andere vier talen. Elk van de 2.910 artikelpagina's
-  is dus een eiland dat alleen via de sitemap bereikbaar is — en Google laat
-  2.341 van die URL's ongemoeid met de melding "Gevonden – momenteel niet
-  geïndexeerd".
-
-  **Let op, er is sinds 2026-09-21 wél een begin.** De run van die ochtend
-  zette `themas/`-pagina's neer: drie per taal, met echte `<a>`-links naar
-  artikelen, en ze staan in de sitemap. Dat is precies het goede idee. Alleen
-  is de schaal nog klein: alle drie de Nederlandse themapagina's samen wijzen
-  naar **23 van de 586** artikelen. De rest blijft onbereikbaar. Dit punt gaat
-  dus niet meer over "er is geen route", maar over "de route dekt 4% af".
-
-  **Voorstel:** onderaan het artikelsjabloon een blok "meer uit deze
-  categorie" met drie tot vijf artikelen uit dezelfde categorie, als gewone
-  `<a>`-links in de HTML (dus niet door JavaScript ingeladen, want dan leest
-  Google ze niet). `backend/generate-articles.js` heeft de volledige lijst
-  al in handen op het moment dat het de pagina schrijft.
-
-  Dit raakt het artikelsjabloon, en dat betekent alle artikelpagina's opnieuw
-  genereren. Daarom loont het om dit samen te doen met punt 16 (het archief
-  loopt achter op het sjabloon) en met de reservefoto-terugval uit punt 25 —
-  drie ingrepen op dezelfde plek, één keer regenereren. *(Erik, via een PR —
-  het raakt het artikelsjabloon)*
-
 
 - [ ] **40. Geen ontwerpsysteem: tokens ontbreken en worden omzeild.**
   *(Uit de UI-doorlichting van 2026-09-23.)* **Geen enkele bezoeker merkt
@@ -461,6 +413,61 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   je niet wilt ontdekken wanneer de eerste betalende bezoeker het ontdekt.
 
 ## Afgerond
+
+- [x] **16 + 36. Artikelen linken nu naar elkaar, en het hele archief staat op
+  één sjabloon (2026-09-23).** Samen gedaan, want ze raken allebei
+  `generate-articles.js` en dat betekent alle 3.045 artikelpagina's aanraken.
+
+  **Het probleem (punt 36).** Nagemeten: nul `<a>`-links tussen artikelen
+  onderling. Elke pagina was een eiland dat alleen via de sitemap te vinden
+  was, en Google liet 2.341 URL's ongemoeid met "Gevonden – momenteel niet
+  geïndexeerd".
+
+  **Waarom het op datum gaat en niet op categorie.** Dat was het plan, maar de
+  categorie staat niet in het manifest en ook niet in de HTML van het archief
+  — voor de ruim 450 gearchiveerde artikelen is die simpelweg niet meer te
+  achterhalen. De datum staat er voor alle 609 wél. En datum heeft een
+  eigenschap die categorie mist: het vormt één aaneengesloten ketting. Elke
+  pagina linkt naar de drie artikelen ervóór en de drie erná, dus vanaf elke
+  geïndexeerde pagina kan een crawler naar zijn buren lopen en vandaar verder.
+
+  **Nagemeten dat die ketting echt sluit:** vanaf één willekeurige pagina zijn
+  in elke taal alle 609 artikelen bereikbaar. Dat is het hele punt — het
+  archief hing voorheen aan de sitemap alleen.
+
+  Daarvoor moesten de titels in het manifest komen: de slug volstaat niet,
+  daar maak je geen leesbare linktekst van. Voor het archief zijn ze uit de
+  bestaande `<h1 itemprop="headline">` gehaald — 3.045 titels, nul mislukt.
+  De generator schrijft ze voortaan zelf mee.
+
+  **Het archief (punt 16).** `generate-articles.js` schrijft alleen de
+  artikelen die nog in `data/news_*.json` staan, dus 750 pagina's; van de
+  overige 2.295 is de brondata er niet meer. Daarvoor is
+  `backend/migratie-meer-nieuws.js` geschreven, die het blok invoegt en de
+  taalkiezer bijwerkt in de bestaande HTML. Hij gebruikt `burenHtml()` uit de
+  generator zelf, zodat archief en sjabloon niet uit elkaar kunnen lopen, en
+  hij is idempotent (tweede run: 0 wijzigingen).
+
+  Het bleken inderdaad drie generaties, zoals dit punt vermoedde — maar
+  anders verdeeld dan gedacht: 930 met een kale vlag-emoji zonder span, 1.225
+  met de vlag in een span maar zonder `taal-naam`/`taal-code`, en 890 die al
+  goed stonden. De doodlopende LinkedIn-link uit de oude telling bestond
+  niet meer; die generatie was al overschreven.
+
+  **Eindcontrole over alle 3.045 pagina's:** alle drie de generaties weg
+  (3.045 op de huidige taalkiezer), blok op elke pagina, **18.270 links
+  gecontroleerd en nul kapot**, tag-balans overal intact, en de diff per
+  archiefpagina is precies één gewijzigde regel plus het toegevoegde blok.
+
+  Onderweg nog één ding rechtgezet: de kop van het blok had `data-i18n`, en
+  volgde daarmee de menutaal van de bezoeker in plaats van de taal van de
+  pagina — een Duitse kop boven Nederlandse links. Die staat er nu uit; de
+  kop komt uit de statische HTML en hoort bij zijn eigen links.
+
+  **Wat dit níét oplost:** een leesbaarder verband dan "rond dezelfde datum".
+  Zodra de categorie in het manifest staat (de generator kan dat nu makkelijk
+  meeschrijven) kan dit een echte "meer uit deze categorie" worden, met de
+  datumketting als terugval voor het archief. Sitemap opnieuw gegenereerd.
 
 - [x] **37. De foutstaat van de nieuwslijst bestond niet (2026-09-23).** In
   `laadNieuws` stonden beide meldingen uitgecommentarieerd:

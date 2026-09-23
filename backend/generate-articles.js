@@ -87,7 +87,69 @@ function reserveAfbeelding(artikel) {
     return `/assets/fallback/${categorie.toLowerCase()}-${(som % aantal) + 1}.jpg`;
 }
 
-function paginaHtml(artikel, lang, slugsPerTaal, manifest) {
+// "Meer goed nieuws": links naar de artikelen die vlak vóór en vlak ná dit
+// artikel verschenen, in dezelfde taal.
+//
+// Waarom op datum en niet op categorie (punt 36, 2026-09-23): de categorie
+// staat niet in het manifest en ook niet in de HTML van het archief, dus voor
+// de ruim 450 gearchiveerde artikelen is die simpelweg niet meer te
+// achterhalen. De datum staat er voor alle 609 wél.
+//
+// Op datum heeft bovendien een eigenschap die categorie niet heeft: het vormt
+// één aaneengesloten ketting door het hele archief. Vanaf elke geïndexeerde
+// pagina kan een crawler naar zijn buren lopen, en vandaar verder — zo is
+// uiteindelijk elk artikel bereikbaar. Dat is precies wat ontbrak: Google
+// kende 2.341 URL's alleen uit de sitemap en haalde ze niet op.
+const BUREN_PER_KANT = 3;
+
+function bouwBurenIndex(manifest) {
+    const rijen = Object.entries(manifest.articles || {})
+        .filter(([, e]) => e && e.date)
+        .map(([id, e]) => ({ id, date: e.date, slugs: e.slugs || {}, titles: e.titles || {} }));
+    // Nieuwste eerst; bij een gelijke datum op id, zodat de volgorde tussen
+    // twee runs niet verspringt.
+    rijen.sort((a, b) => (a.date === b.date ? (a.id < b.id ? 1 : -1) : (a.date < b.date ? 1 : -1)));
+    const positie = new Map(rijen.map((r, i) => [r.id, i]));
+    return { rijen, positie };
+}
+
+function burenHtml(artikel, lang, burenIndex) {
+    if (!burenIndex) return '';
+    const { rijen, positie } = burenIndex;
+    const i = positie.get(String(artikel.id));
+    if (i === undefined) return '';
+
+    const kandidaten = [];
+    for (let stap = 1; kandidaten.length < BUREN_PER_KANT * 2 && stap <= rijen.length; stap++) {
+        for (const j of [i - stap, i + stap]) {
+            if (j < 0 || j >= rijen.length || kandidaten.length >= BUREN_PER_KANT * 2) continue;
+            const r = rijen[j];
+            if (r.slugs[lang] && r.titles[lang]) kandidaten.push(r);
+        }
+    }
+    if (!kandidaten.length) return '';
+
+    const items = kandidaten.map(r =>
+        `                    <li><a href="/articles/${lang}/${r.slugs[lang]}-${r.id}.html">${escapeHtml(r.titles[lang])}</a></li>`
+    ).join('\n');
+
+    return `
+    <nav class="meer-nieuws" aria-labelledby="meer-nieuws-kop">
+        <div class="meer-nieuws-binnen">
+            <h2 id="meer-nieuws-kop">${escapeHtml(t(lang, 'related_title'))}</h2>
+            <!-- Bewust géén data-i18n: de links eronder staan in de taal van déze
+                 pagina, dus de kop hoort dat ook te doen. Met data-i18n zou hij de
+                 menutaal van de bezoeker volgen en kreeg je een Duitse kop boven
+                 Nederlandse links. -->
+            <ul>
+${items}
+            </ul>
+        </div>
+    </nav>
+`;
+}
+
+function paginaHtml(artikel, lang, slugsPerTaal, manifest, burenIndex) {
     const bestand = `${slugsPerTaal[lang]}-${artikel.id}.html`;
     const paginaUrl = `${SITE_URL}/articles/${lang}/${bestand}`;
     // Dagoverzichten (type 'digest') hebben server-side al een ruimere
@@ -307,7 +369,7 @@ ${alineas}${refsHtml}
         </section>
     </div>
     </div>
-</main>
+${burenHtml(artikel, lang, burenIndex)}</main>
 
 <footer class="main-footer">
   <div class="container footer-grid">
@@ -390,26 +452,42 @@ function main() {
         }
     }
 
+    // Eerste ronde: alleen het manifest bijwerken. De burenlijst moet álle
+    // slugs en titels kennen vóór er ook maar één pagina geschreven wordt,
+    // anders linkt de eerste pagina naar buren die nog niet in het manifest
+    // staan.
     let geschreven = 0;
     let nieuw = 0;
+    const teSchrijven = [];
     for (const [id, perTaal] of Object.entries(perId)) {
         // Slug per taal: bestaande manifest-slug wint (URL-stabiliteit), anders
         // deterministisch afleiden uit de titel in die taal.
         const entry = (manifest.articles[id] ??= { slugs: {}, date: null });
+        entry.titles ??= {};
         const slugsPerTaal = {};
         for (const lang of TALEN) {
             if (!perTaal[lang]) continue;
             slugsPerTaal[lang] = entry.slugs[lang] || maakSlug(perTaal[lang].title);
             entry.slugs[lang] = slugsPerTaal[lang];
             entry.date = entry.date || perTaal[lang].date || null;
+            // De titel onthouden: die is nodig om vanuit een ánder artikel
+            // hiernaartoe te linken (zie burenHtml). De slug volstaat daar
+            // niet — daar kun je geen leesbare linktekst van maken.
+            entry.titles[lang] = perTaal[lang].title;
         }
 
+        teSchrijven.push([id, perTaal, slugsPerTaal]);
+    }
+
+    // Tweede ronde: schrijven, nu mét een complete burenindex.
+    const burenIndex = bouwBurenIndex(manifest);
+    for (const [id, perTaal, slugsPerTaal] of teSchrijven) {
         for (const lang of Object.keys(slugsPerTaal)) {
             const dir = path.join(root, 'articles', lang);
             fs.mkdirSync(dir, { recursive: true });
             const bestand = path.join(dir, `${slugsPerTaal[lang]}-${id}.html`);
             const bestondAl = fs.existsSync(bestand);
-            fs.writeFileSync(bestand, paginaHtml(perTaal[lang], lang, slugsPerTaal, manifest));
+            fs.writeFileSync(bestand, paginaHtml(perTaal[lang], lang, slugsPerTaal, manifest, burenIndex));
             geschreven++;
             if (!bestondAl) nieuw++;
         }
@@ -423,4 +501,9 @@ function main() {
     console.log(`Artikelpagina's: ${geschreven} geschreven (${nieuw} nieuw) in ${duurMs}ms; manifest kent ${totaalInManifest} artikelen.`);
 }
 
-main();
+// Alleen draaien als dit bestand rechtstreeks wordt aangeroepen. Zo kan de
+// archiefmigratie (backend/migratie-meer-nieuws.js) burenHtml hergebruiken
+// in plaats van er een tweede kopie van te onderhouden.
+if (require.main === module) main();
+
+module.exports = { bouwBurenIndex, burenHtml, BUREN_PER_KANT };

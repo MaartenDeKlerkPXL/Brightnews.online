@@ -302,7 +302,8 @@ window.translations = {
     "index_error_titel": "Het nieuws laadt even niet",
     "index_error_tekst": "Er ging iets mis bij het ophalen. Controleer je verbinding en probeer het nog eens.",
     "index_error_knop": "Opnieuw proberen",
-    "climate_url": "https://stripe.com/nl/climate"
+    "climate_url": "https://stripe.com/nl/climate",
+    "related_title": "Meer goed nieuws"
   },
   "en": {
     "skip_to_content": "Skip to main content",
@@ -607,7 +608,8 @@ window.translations = {
     "index_error_titel": "The news isn’t loading right now",
     "index_error_tekst": "Something went wrong while fetching it. Check your connection and give it another go.",
     "index_error_knop": "Try again",
-    "climate_url": "https://stripe.com/climate"
+    "climate_url": "https://stripe.com/climate",
+    "related_title": "More good news"
   },
   "de": {
     "skip_to_content": "Zum Hauptinhalt springen",
@@ -912,7 +914,8 @@ window.translations = {
     "index_error_titel": "Die Nachrichten laden gerade nicht",
     "index_error_tekst": "Beim Abrufen ist etwas schiefgelaufen. Prüf deine Verbindung und versuch es noch einmal.",
     "index_error_knop": "Erneut versuchen",
-    "climate_url": "https://stripe.com/de/climate"
+    "climate_url": "https://stripe.com/de/climate",
+    "related_title": "Mehr gute Nachrichten"
   },
   "fr": {
     "skip_to_content": "Aller au contenu principal",
@@ -1217,7 +1220,8 @@ window.translations = {
     "index_error_titel": "Les actualités ne se chargent pas",
     "index_error_tekst": "Quelque chose s’est mal passé lors du chargement. Vérifiez votre connexion et réessayez.",
     "index_error_knop": "Réessayer",
-    "climate_url": "https://stripe.com/fr/climate"
+    "climate_url": "https://stripe.com/fr/climate",
+    "related_title": "Plus de bonnes nouvelles"
   },
   "es": {
     "skip_to_content": "Saltar al contenido principal",
@@ -1522,6 +1526,7 @@ window.translations = {
     "index_error_titel": "Las noticias no se están cargando",
     "index_error_tekst": "Algo ha salido mal al cargarlas. Revisa tu conexión e inténtalo de nuevo.",
     "index_error_knop": "Intentar de nuevo",
-    "climate_url": "https://stripe.com/es/climate"
+    "climate_url": "https://stripe.com/es/climate",
+    "related_title": "Más buenas noticias"
   }
 };
