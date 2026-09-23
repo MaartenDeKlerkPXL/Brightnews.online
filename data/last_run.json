@@ -1,27 +1,28 @@
 {
-  "start": "2026-09-23T04:26:11.685Z",
-  "kandidaten": 254,
-  "alGezien": 245,
-  "tekstOpgehaald": 11,
+  "start": "2026-09-23T16:40:05.601Z",
+  "kandidaten": 263,
+  "alGezien": 250,
+  "tekstOpgehaald": 10,
   "tekstTeKort": 0,
-  "sentimentGeweigerd": 1,
-  "selectieAfgewezen": 4,
+  "sentimentGeweigerd": 2,
+  "selectieAfgewezen": 6,
   "selectieHerkansing": 0,
-  "aiCalls": 21,
-  "aiTokens": 35372,
+  "aiCalls": 27,
+  "aiTokens": 46105,
   "perProvider": {
-    "anthropic": 21
+    "anthropic": 27
   },
   "incompleet": 0,
-  "geaccepteerd": 4,
+  "geaccepteerd": 5,
   "opslaanMislukt": 0,
-  "feedFouten": 1,
+  "feedFouten": 0,
   "selectieFouten": 0,
   "selectieOvergeslagen": 0,
-  "selectieMismatch": 1,
+  "selectieMismatch": 0,
   "perUitsluiting": {
-    "politiek": 2,
-    "te-weinig-inhoud": 1
+    "te-weinig-inhoud": 3,
+    "misdaad-of-ramp": 1,
+    "listicle": 1
   },
-  "einde": "2026-09-23T04:28:27.111Z"
+  "einde": "2026-09-23T16:42:52.588Z"
 }

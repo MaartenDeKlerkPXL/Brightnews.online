@@ -1,17 +1,33 @@
 {
- "gegenereerd": "2026-09-23T04:30:12.397Z",
+ "gegenereerd": "2026-09-23T16:43:49.596Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
     {
-     "id": "1789965334441fmmtlceew",
-     "titel": "Vijf dollar per nacht slaap verhoogt cijfers van studenten",
-     "teaser": "Onderzoekers van de University of Pittsburgh betaalden meer dan 1.100 studenten via een Fitbit-app om zeven uur per nacht te slapen. De 468 studenten die circa 5 dollar per nacht kregen, sliepen 26% meer nachten voldoende en 19 minuten langer per schoolnacht dan een controlegroep zonder betaling. Hun GPA steeg dat semester met ongeveer 0,08 punt. Ook na het stoppen...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/nl/vijf-dollar-per-nacht-slaap-verhoogt-cijfers-van-studenten-1789965334441fmmtlceew.html"
+     "id": "1790181746401cpeswwn2n",
+     "titel": "Reefvive bouwt koraalrif uit oesterschelpen",
+     "teaser": "Studenten van de National Taiwan Normal University hebben Reefvive ontwikkeld: een kunstmatig rif gemaakt van vermalen oesterschelpen en koraalgrind, materialen die normaal worden weggegooid. Het afval wordt verwerkt tot een mengsel dat via een 3D-printer wordt geprint tot een modulaire basis met een ruw oppervlak waar jong koraal zich aan kan hechten. Bij open-water proeven met de National Taiwan Ocean...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/reefvive-bouwt-koraalrif-uit-oesterschelpen-1790181746401cpeswwn2n.html"
+    },
+    {
+     "id": "1790181718269lism4m7qm",
+     "titel": "Araticum Initiative herstelt 4,4 miljoen acres Cerrado-savanne in Brazilië",
+     "teaser": "De Araticum Initiative in Brazilië is door de VN onderscheiden als een van de drie meest ambitieuze en impactvolle herstelprojecten ter wereld. Het richt zich op de Cerrado, de biologisch rijkste savanne ter wereld, waarvan de helft al is gekapt of omgezet voor landbouw of ander gebruik. Het initiatief wil 4,4 miljoen acres van de Cerrado herstellen naar de natuurlijke...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/araticum-initiative-herstelt-4-4-miljoen-acres-cerrado-savanne-in-brazilie-1790181718269lism4m7qm.html"
+    },
+    {
+     "id": "1790181687376puszm9r3e",
+     "titel": "Chemisch bad haalt tot 95% capaciteit terug in oude EV-batterijen",
+     "teaser": "Wetenschappers van Cornell University hebben een methode ontwikkeld genaamd Direct Electrode-to-Electrode Regeneration (DEER), waarbij elektrodes uit verouderde lithium-ionbatterijen worden gehaald en in een bad met 1,3-dimethyl-2-imidazolidinon (DMI) gedompeld. Dit verwijdert de solid electrolyte interphase (SEI), een laag die zich na honderden laadcycli opbouwt en de stroom van elektronen belemmert. Zo herwinnen batterijen tot 95% van hun oorspronkelijke laadvermogen, en blijft...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/nl/chemisch-bad-haalt-tot-95-capaciteit-terug-in-oude-ev-batterijen-1790181687376puszm9r3e.html"
     },
     {
      "id": "1790137706448cjjzj9eh0",
@@ -28,22 +44,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/weesolifantje-kaikai-krijgt-drie-rangers-als-ouders-1790137681223mewceid9h.html"
-    },
-    {
-     "id": "1790137654165e7izh7pd0",
-     "titel": "Olifantje Bungalu overleefde leeuwenaanval en vond nieuwe familie",
-     "teaser": "Het Afrikaanse olifantje Bungalu overleefde een maand alleen nadat hij werd aangevallen door een leeuw. In februari 2026 kreeg de Kenya Wildlife Service meldingen van een eenzaam olifantje bij Bungule, nabij Mount Kasiagau. Ondanks patrouilles bleef hij verborgen en vluchtte hij telkens uit angst, ook toen de Sheldrick Wildlife Trust hem per helikopter probeerde te bereiken. Na zware onweersstormen werd...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/olifantje-bungalu-overleefde-leeuwenaanval-en-vond-nieuwe-familie-1790137654165e7izh7pd0.html"
-    },
-    {
-     "id": "1790137627194t8vksyuta",
-     "titel": "GALEAS-urinetest spoort blaaskanker verrassend nauwkeurig op",
-     "teaser": "Een observationeel onderzoek in het Verenigd Koninkrijk toont sterke resultaten voor GALEAS Bladder, een niet-invasieve genetische urinetest van Nonacus Clinical Services. Bij 964 patiënten die tussen 2024 en 2025 werden doorverwezen voor spoedonderzoek naar hematurie, spoorde de test 71 van de 77 via cystoscopie vastgestelde blaaskankergevallen op, waaronder alle 17 spierinvasieve tumoren en 35 van de 36 latere-stadiumkankers. De negatief...",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/nl/galeas-urinetest-spoort-blaaskanker-verrassend-nauwkeurig-op-1790137627194t8vksyuta.html"
     }
    ],
    "dagoverzichten": [
@@ -87,12 +87,28 @@
   "en": {
    "top": [
     {
-     "id": "1789965334441fmmtlceew",
-     "titel": "Five dollars per night sleep boosts student grades",
-     "teaser": "Researchers from the University of Pittsburgh paid more than 1,100 students via a Fitbit app to sleep seven hours per night. The 468 students who received approximately 5 dollars per night slept adequately 26% more nights and 19 minutes longer per school night than a control group without payment. Their GPA rose that semester by about 0.08 points. Even after...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/en/five-dollars-per-night-sleep-boosts-student-grades-1789965334441fmmtlceew.html"
+     "id": "1790181746401cpeswwn2n",
+     "titel": "Reefvive builds coral reef from oyster shells",
+     "teaser": "Students from National Taiwan Normal University have developed Reefvive: an artificial reef made from ground oyster shells and coral rubble, materials normally discarded. The waste is processed into a mixture that is 3D-printed into a modular base with a rough surface where young coral can attach. In open-water trials with National Taiwan Ocean University, 28 coral fragments were attached to...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/reefvive-builds-coral-reef-from-oyster-shells-1790181746401cpeswwn2n.html"
+    },
+    {
+     "id": "1790181718269lism4m7qm",
+     "titel": "Araticum Initiative restores 4.4 million acres of Cerrado savanna in Brazil",
+     "teaser": "The Araticum Initiative in Brazil has been recognized by the UN as one of the three most ambitious and impactful restoration projects in the world. It focuses on the Cerrado, the world's most biologically rich savanna, half of which has already been cleared or converted for agriculture or other uses. The initiative aims to restore 4.4 million acres of the...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/araticum-initiative-restores-4-4-million-acres-of-cerrado-savanna-in-brazil-1790181718269lism4m7qm.html"
+    },
+    {
+     "id": "1790181687376puszm9r3e",
+     "titel": "Chemical bath restores up to 95% capacity in old EV batteries",
+     "teaser": "Scientists at Cornell University have developed a method called Direct Electrode-to-Electrode Regeneration (DEER), in which electrodes from outdated lithium-ion batteries are extracted and immersed in a bath containing 1,3-dimethyl-2-imidazolidinone (DMI). This removes the solid electrolyte interphase (SEI), a layer that builds up after hundreds of charge cycles and impedes electron flow. In this way, batteries recover up to 95% of...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/en/chemical-bath-restores-up-to-95-capacity-in-old-ev-batteries-1790181687376puszm9r3e.html"
     },
     {
      "id": "1790137706448cjjzj9eh0",
@@ -109,22 +125,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/en/orphaned-elephant-calf-kaikai-gets-three-rangers-as-parents-1790137681223mewceid9h.html"
-    },
-    {
-     "id": "1790137654165e7izh7pd0",
-     "titel": "Young elephant Bungalu survived lion attack and found new family",
-     "teaser": "The African elephant calf Bungalu survived a month alone after being attacked by a lion. In February 2026, Kenya Wildlife Service received reports of a lone elephant calf near Bungule, close to Mount Kasiagau. Despite patrols, he remained hidden and fled in fear each time, even when the Sheldrick Wildlife Trust attempted to reach him by helicopter. After severe thunderstorms,...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/young-elephant-bungalu-survived-lion-attack-and-found-new-family-1790137654165e7izh7pd0.html"
-    },
-    {
-     "id": "1790137627194t8vksyuta",
-     "titel": "GALEAS urine test detects bladder cancer with surprising accuracy",
-     "teaser": "An observational study in the United Kingdom shows strong results for GALEAS Bladder, a non-invasive genetic urine test by Nonacus Clinical Services. Among 964 patients referred for urgent investigation of haematuria between 2024 and 2025, the test detected 71 of 77 bladder cancer cases confirmed via cystoscopy, including all 17 muscle-invasive tumours and 35 of 36 late-stage cancers. The negative...",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/en/galeas-urine-test-detects-bladder-cancer-with-surprising-accuracy-1790137627194t8vksyuta.html"
     }
    ],
    "dagoverzichten": [
@@ -168,12 +168,28 @@
   "de": {
    "top": [
     {
-     "id": "1789965334441fmmtlceew",
-     "titel": "Fünf Dollar pro Nacht Schlaf verbessern Noten von Studierenden",
-     "teaser": "Forscher der University of Pittsburgh zahlten mehr als 1.100 Studierenden über eine Fitbit-App, um sieben Stunden pro Nacht zu schlafen. Die 468 Studierenden, die etwa 5 Dollar pro Nacht erhielten, schliefen an 26% mehr Nächten ausreichend und 19 Minuten länger pro Schulsemester als eine Kontrollgruppe ohne Bezahlung. Ihr GPA stieg in diesem Semester um etwa 0,08 Punkte. Auch nach Beendigung...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/de/funf-dollar-pro-nacht-schlaf-verbessern-noten-von-studierenden-1789965334441fmmtlceew.html"
+     "id": "1790181746401cpeswwn2n",
+     "titel": "Reefvive baut Korallenriff aus Austernschalen",
+     "teaser": "Studenten der National Taiwan Normal University haben Reefvive entwickelt: ein künstliches Riff aus gemahlenen Austernschalen und Korallenschotter, Materialien, die normalerweise weggeworfen werden. Der Abfall wird zu einer Mischung verarbeitet, die über einen 3D-Drucker zu einer modularen Basis gedruckt wird, deren raue Oberfläche es Jungkorallen ermöglicht, sich anzuheften. Bei Freilandversuchen mit der National Taiwan Ocean University wurden 28 Korallfragmente auf den...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/reefvive-baut-korallenriff-aus-austernschalen-1790181746401cpeswwn2n.html"
+    },
+    {
+     "id": "1790181718269lism4m7qm",
+     "titel": "Araticum Initiative stellt 4,4 Millionen Acres Cerrado-Savanne in Brasilien wieder her",
+     "teaser": "Die Araticum Initiative in Brasilien wurde von den Vereinten Nationen als eines der drei ehrgeizigsten und wirkungsvollsten Restaurierungsprojekte der Welt ausgezeichnet. Sie konzentriert sich auf die Cerrado, die biologisch reichste Savanne der Welt, von der bereits die Hälfte gerodet oder für Landwirtschaft oder andere Zwecke umgewandelt wurde. Das Projekt will 4,4 Millionen Acres der Cerrado in ihren natürlichen Zustand zurückversetzen...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/araticum-initiative-stellt-4-4-millionen-acres-cerrado-savanne-in-brasilien-wied-1790181718269lism4m7qm.html"
+    },
+    {
+     "id": "1790181687376puszm9r3e",
+     "titel": "Chemisches Bad stellt bis zu 95% der Kapazität alter EV-Batterien wieder her",
+     "teaser": "Wissenschaftler der Cornell University haben eine Methode namens Direct Electrode-to-Electrode Regeneration (DEER) entwickelt, bei der Elektroden aus veralteten Lithium-Ionen-Batterien entnommen und in ein Bad mit 1,3-Dimethyl-2-imidazolidinon (DMI) getaucht werden. Dies entfernt die Solid Electrolyte Interphase (SEI), eine Schicht, die sich nach Hunderten von Ladezyklen aufbaut und den Elektronenfluss behindert. Auf diese Weise gewinnen Batterien bis zu 95% ihrer ursprünglichen Ladekapazität...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/de/chemisches-bad-stellt-bis-zu-95-der-kapazitat-alter-ev-batterien-wieder-her-1790181687376puszm9r3e.html"
     },
     {
      "id": "1790137706448cjjzj9eh0",
@@ -190,22 +206,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/de/waisenkalbchen-kaikai-bekommt-drei-ranger-als-eltern-1790137681223mewceid9h.html"
-    },
-    {
-     "id": "1790137654165e7izh7pd0",
-     "titel": "Elefantenbaby Bungalu überlebte Löwenattacke und fand neue Familie",
-     "teaser": "Das afrikanische Elefantenbaby Bungalu überlebte einen Monat lang allein, nachdem es von einem Löwen angegriffen worden war. Im Februar 2026 erhielt der Kenya Wildlife Service Meldungen über ein einsames Elefantenbaby bei Bungule, in der Nähe des Mount Kasiagau. Trotz Patrouillen blieb es versteckt und floh jedes Mal aus Angst, auch als die Sheldrick Wildlife Trust es per Hubschrauber zu erreichen...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/elefantenbaby-bungalu-uberlebte-lowenattacke-und-fand-neue-familie-1790137654165e7izh7pd0.html"
-    },
-    {
-     "id": "1790137627194t8vksyuta",
-     "titel": "GALEAS-Urintest spürt Blasenkrebs überraschend genau auf",
-     "teaser": "Eine Beobachtungsstudie im Vereinigten Königreich zeigt starke Ergebnisse für GALEAS Bladder, einen nicht-invasiven genetischen Urintest von Nonacus Clinical Services. Bei 964 Patienten, die zwischen 2024 und 2025 zur Notfalluntersuchung wegen Hämaturie überwiesen wurden, spürte der Test 71 der 77 mittels Zystoskopie festgestellten Blasenkrebsfälle auf, darunter alle 17 muskelinvasiven Tumoren und 35 der 36 Krebsfälle im späteren Stadium. Der negativ prädiktive...",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/de/galeas-urintest-spurt-blasenkrebs-uberraschend-genau-auf-1790137627194t8vksyuta.html"
     }
    ],
    "dagoverzichten": [
@@ -249,12 +249,28 @@
   "fr": {
    "top": [
     {
-     "id": "1789965334441fmmtlceew",
-     "titel": "Cinq dollars par nuit de sommeil améliore les notes des étudiants",
-     "teaser": "Des chercheurs de l'University of Pittsburgh ont rémunéré plus de 1 100 étudiants via une application Fitbit pour dormir sept heures par nuit. Les 468 étudiants qui ont reçu environ 5 dollars par nuit ont dormi 26 % plus de nuits suffisantes et 19 minutes de plus par nuit d'école qu'un groupe témoin sans rémunération. Leur GPA a augmenté ce...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/fr/cinq-dollars-par-nuit-de-sommeil-ameliore-les-notes-des-etudiants-1789965334441fmmtlceew.html"
+     "id": "1790181746401cpeswwn2n",
+     "titel": "Reefvive construit un récif corallien à partir de coquilles d'huître",
+     "teaser": "Des étudiants de la National Taiwan Normal University ont développé Reefvive : un récif artificiel fabriqué à partir de coquilles d'huître moulues et de gravier corallien, des matériaux normalement jetés. Les déchets sont traités en un mélange qui est imprimé en 3D pour former une base modulaire avec une surface rugueuse où le jeune corail peut s'accrocher. Lors d'essais en...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/reefvive-construit-un-recif-corallien-a-partir-de-coquilles-d-huitre-1790181746401cpeswwn2n.html"
+    },
+    {
+     "id": "1790181718269lism4m7qm",
+     "titel": "Araticum Initiative restaure 4,4 millions d'acres de savane Cerrado au Brésil",
+     "teaser": "L'Araticum Initiative au Brésil a été distinguée par l'ONU comme l'un des trois projets de restauration les plus ambitieux et percutants au monde. Elle se concentre sur le Cerrado, la savane biologiquement la plus riche du monde, dont la moitié a déjà été défrichée ou convertie à l'agriculture ou à d'autres usages. L'initiative vise à restaurer 4,4 millions d'acres du...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/araticum-initiative-restaure-4-4-millions-d-acres-de-savane-cerrado-au-bresil-1790181718269lism4m7qm.html"
+    },
+    {
+     "id": "1790181687376puszm9r3e",
+     "titel": "Un bain chimique récupère jusqu'à 95% de capacité dans les anciennes batteries de VE",
+     "teaser": "Des chercheurs de Cornell University ont développé une méthode appelée Direct Electrode-to-Electrode Regeneration (DEER), dans laquelle les électrodes des batteries lithium-ion obsolètes sont extraites et immergées dans un bain contenant du 1,3-diméthyl-2-imidazolidinone (DMI). Cela élimine la solid electrolyte interphase (SEI), une couche qui s'accumule après des centaines de cycles de charge et entrave le flux d'électrons. Ainsi, les batteries récupèrent...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/fr/un-bain-chimique-recupere-jusqu-a-95-de-capacite-dans-les-anciennes-batteries-de-1790181687376puszm9r3e.html"
     },
     {
      "id": "1790137706448cjjzj9eh0",
@@ -271,22 +287,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/fr/l-elephanteau-orphelin-kaikai-recoit-trois-rangers-comme-parents-1790137681223mewceid9h.html"
-    },
-    {
-     "id": "1790137654165e7izh7pd0",
-     "titel": "Le petit éléphant Bungalu a survécu à une attaque de lion et trouvé une nouvelle famille",
-     "teaser": "Le petit éléphant africain Bungalu a survécu un mois seul après avoir été attaqué par un lion. En février 2026, le Kenya Wildlife Service a reçu des signalements d'un petit éléphant solitaire près de Bungule, à proximité du Mont Kasiagau. Malgré les patrouilles, il est resté caché et s'enfuyait à chaque fois par peur, même lorsque le Sheldrick Wildlife Trust...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/le-petit-elephant-bungalu-a-survecu-a-une-attaque-de-lion-et-trouve-une-nouvelle-1790137654165e7izh7pd0.html"
-    },
-    {
-     "id": "1790137627194t8vksyuta",
-     "titel": "Le test urinaire GALEAS détecte le cancer de la vessie avec une précision surprenante",
-     "teaser": "Une étude observationnelle au Royaume-Uni montre des résultats solides pour GALEAS Bladder, un test urinaire génétique non invasif de Nonacus Clinical Services. Chez 964 patients orientés entre 2024 et 2025 pour un examen d'urgence en cas d'hématurie, le test a détecté 71 des 77 cas de cancer de la vessie confirmés par cystoscopie, y compris les 17 tumeurs envahissant le...",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/fr/le-test-urinaire-galeas-detecte-le-cancer-de-la-vessie-avec-une-precision-surpre-1790137627194t8vksyuta.html"
     }
    ],
    "dagoverzichten": [
@@ -330,12 +330,28 @@
   "es": {
    "top": [
     {
-     "id": "1789965334441fmmtlceew",
-     "titel": "Cinco dólares por noche de sueño mejoran las calificaciones de estudiantes",
-     "teaser": "Investigadores de la University of Pittsburgh pagaron a más de 1.100 estudiantes a través de una aplicación Fitbit para dormir siete horas por noche. Los 468 estudiantes que recibieron aproximadamente 5 dólares por noche durmieron 26% más noches con sueño suficiente y 19 minutos más por noche escolar que un grupo de control sin pago. Su GPA aumentó ese semestre...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/es/cinco-dolares-por-noche-de-sueno-mejoran-las-calificaciones-de-estudiantes-1789965334441fmmtlceew.html"
+     "id": "1790181746401cpeswwn2n",
+     "titel": "Reefvive construye arrecife de coral con cáscaras de ostra",
+     "teaser": "Estudiantes de la National Taiwan Normal University han desarrollado Reefvive: un arrecife artificial hecho de cáscaras de ostra molidas y grava de coral, materiales que normalmente se desechan. Los residuos se procesan en una mezcla que se imprime mediante una impresora 3D para crear una base modular con una superficie rugosa donde el coral joven puede adherirse. En pruebas en...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/reefvive-construye-arrecife-de-coral-con-cascaras-de-ostra-1790181746401cpeswwn2n.html"
+    },
+    {
+     "id": "1790181718269lism4m7qm",
+     "titel": "Araticum Initiative restaura 4,4 millones de acres de sabana Cerrado en Brasil",
+     "teaser": "La Araticum Initiative en Brasil ha sido distinguida por la ONU como uno de los tres proyectos de restauración más ambiciosos e impactantes del mundo. Se enfoca en el Cerrado, la sabana biológicamente más rica del planeta, de la cual ya se ha talado o convertido la mitad para agricultura u otros usos. La iniciativa pretende restaurar 4,4 millones de...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/araticum-initiative-restaura-4-4-millones-de-acres-de-sabana-cerrado-en-brasil-1790181718269lism4m7qm.html"
+    },
+    {
+     "id": "1790181687376puszm9r3e",
+     "titel": "Un baño químico recupera hasta el 95% de capacidad en baterías EV antiguas",
+     "teaser": "Científicos de Cornell University han desarrollado un método llamado Direct Electrode-to-Electrode Regeneration (DEER), en el que se extraen electrodos de baterías de iones de litio obsoletas y se sumergen en un baño con 1,3-dimetil-2-imidazolidinona (DMI). Esto elimina la interfase de electrolito sólido (SEI), una capa que se acumula tras cientos de ciclos de carga e impide el flujo de electrones....",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/es/un-bano-quimico-recupera-hasta-el-95-de-capacidad-en-baterias-ev-antiguas-1790181687376puszm9r3e.html"
     },
     {
      "id": "1790137706448cjjzj9eh0",
@@ -352,22 +368,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/es/la-pequena-elefanta-huerfana-kaikai-recibe-tres-guardabosques-como-padres-1790137681223mewceid9h.html"
-    },
-    {
-     "id": "1790137654165e7izh7pd0",
-     "titel": "Elefantito Bungalu sobrevivió a un ataque de león y encontró una nueva familia",
-     "teaser": "El elefantito africano Bungalu sobrevivió un mes solo después de ser atacado por un león. En febrero de 2026, la Kenya Wildlife Service recibió reportes de un elefantito solitario cerca de Bungule, junto al Monte Kasiagau. A pesar de las patrullas, permaneció escondido y huía cada vez por miedo, incluso cuando la Sheldrick Wildlife Trust intentó alcanzarlo en helicóptero. Tras...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/elefantito-bungalu-sobrevivio-a-un-ataque-de-leon-y-encontro-una-nueva-familia-1790137654165e7izh7pd0.html"
-    },
-    {
-     "id": "1790137627194t8vksyuta",
-     "titel": "La prueba de orina GALEAS detecta el cáncer de vejiga con precisión sorprendente",
-     "teaser": "Un estudio observacional en el Reino Unido muestra resultados sólidos para GALEAS Bladder, una prueba urinaria genética no invasiva de Nonacus Clinical Services. En 964 pacientes derivados entre 2024 y 2025 para investigación urgente de hematuria, la prueba detectó 71 de los 77 casos de cáncer de vejiga confirmados mediante cistoscopia, incluidos los 17 tumores con invasión muscular y 35...",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/es/la-prueba-de-orina-galeas-detecta-el-cancer-de-vejiga-con-precision-sorprendente-1790137627194t8vksyuta.html"
     }
    ],
    "dagoverzichten": [
