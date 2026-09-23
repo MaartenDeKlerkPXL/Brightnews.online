@@ -1,5 +1,119 @@
 [
   {
+    "id": "dg-20260922-health",
+    "type": "digest",
+    "digest_date": "2026-09-22",
+    "title": "Schlaf, Urin und Herzschlag: drei Schritte vorwärts in der Gesundheitsversorgung",
+    "summary": "Diese Tage zeigen, dass Gesundheitsfortschritte manchmal in kleinen, intelligenten Schritten stecken. Eine einfache Belohnung für ausreichend Schlaf, ein Urintest, der Krebs aufspürt, und eine KI, die bei einem Herzfilm mitschaut: drei verschiedene Geschichten mit einem roten Faden. Sie machen die Gesundheitsversorgung schneller, präziser und manchmal auch leichter zu bewältigen. Nehmen Sie die Studie der University of Pittsburgh [1]. Mehr als 1.100 Studenten erhielten eine Fitbit-App, und etwa 468 von ihnen bekamen ungefähr 5 Dollar pro Nacht, wenn sie sieben Stunden schliefen. Das Ergebnis: 26% mehr Nächte mit ausreichend Schlaf und 19 Minuten längerer Schlaf pro Schulnacht. Ihre Noten stiegen in...",
+    "image_alt": "Schlaf, Urin und Herzschlag: drei Schritte vorwärts in der Gesundheitsversorgung",
+    "meta_description": "Schlaf belohnen, Blasenkrebs über Urin aufspüren und Herzerkrankungen mit KI erkennen: drei hoffnungsvolle Gesundheitsnachrichten dieser Tage im Überblick.",
+    "meta_keywords": "Health",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aad7f471fbf338d1a44c36c_6aad7f45b52f83488b1f588b_researchers-pay-college-students-to-sleep-more-featured.webp",
+    "date": "2026-09-23T04:30:11.998Z",
+    "category": "Health",
+    "refs": [
+      {
+        "id": "1789965334441fmmtlceew",
+        "title": "Fünf Dollar pro Nacht Schlaf verbessern Noten von Studierenden"
+      },
+      {
+        "id": "1790137627194t8vksyuta",
+        "title": "GALEAS-Urintest spürt Blasenkrebs überraschend genau auf"
+      },
+      {
+        "id": "1790051398328zl0crxok4",
+        "title": "Neue KI-Tool erkennt Herzerkrankungen mittels Standard-EKG"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260922-environment",
+    "type": "digest",
+    "digest_date": "2026-09-22",
+    "title": "Ein Wallaby taucht auf, zwei kleine Elefanten finden ein neues Zuhause",
+    "summary": "In diesen Tagen kommt gute Nachricht aus unerwarteten Ecken: ein Tier, das fünfzig Jahre lang spurlos schien, und zwei junge Elefanten, die dank menschlicher Hilfe eine neue Familie fanden. Drei Geschichten, die zeigen, wie Geduld und Fürsorge manchmal gerade noch rechtzeitig kommen. In Westaustralien suchten Forscher ein halbes Jahrhundert lang vergeblich im Gras nach Spuren des Nabarlek. Nun bestätigte die Australian Wildlife Conservancy das kleine Felswallaby doch wieder auf dem Festland, dank Wildkameras und Untersuchung von Ausscheidungen [1]. An zwei Stellen in der Kimberley-Region, bis zu 170 Kilometer auseinander, wurde das Tier mit knapp einem Kilogramm Gewicht gefunden. Zusammen mit...",
+    "image_alt": "Ein Wallaby taucht auf, zwei kleine Elefanten finden ein neues Zuhause",
+    "meta_description": "Nabarlek-Wallaby nach 50 Jahren zurück in Australien und zwei Waisenelifanten finden in Kenia ein neues Zuhause und eine enge Freundschaft.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab167478ba2d06d7ab7f39a_6ab16746237dffae5e47e8a3_tiny-wallaby-nabarlek-trail-cameras-australia-featured.webp",
+    "date": "2026-09-23T04:29:19.500Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1790137706448cjjzj9eh0",
+        "title": "Nabarlek-Wallaby nach 50 Jahren in Australien wiederentdeckt"
+      },
+      {
+        "id": "1790137681223mewceid9h",
+        "title": "Waisenkälbchen Kaikai bekommt drei Ranger als „Eltern\""
+      },
+      {
+        "id": "1790137654165e7izh7pd0",
+        "title": "Elefantenbaby Bungalu überlebte Löwenattacke und fand neue Familie"
+      }
+    ]
+  },
+  {
+    "id": "1790137706448cjjzj9eh0",
+    "title": "Nabarlek-Wallaby nach 50 Jahren in Australien wiederentdeckt",
+    "summary": "Forscher der Australian Wildlife Conservancy haben das Nabarlek-Wallaby erstmals seit 50 Jahren auf dem australischen Festland nachgewiesen. Wildkameras und Kotanalysen zeigten die Anwesenheit dieses kleinen Felswallabys an zwei neuen Orten in der Kimberley-Region in Westaustralien: im Yampi Sound Training Area und etwa 170 Kilometer weiter nordöstlich im Dambeemangaddee Country. Das Nabarlek, Australiens zweitkleinste Wallaby-Art, wog etwa 1,2 Kilogramm und galt...",
+    "image_alt": "Kleines Nabarlek-Wallaby, aufgenommen von einer Wildkamera in der Kimberley-Region in Australien",
+    "meta_description": "Nach 50 Jahren neuer Nachweis des seltenen Nabarlek-Wallabys in Australien durch Wildkameras und Forschung in der Kimberley-Region.",
+    "meta_keywords": "Nabarlek, Wallaby, Australien, Kimberley, Australian Wildlife Conservancy, bedrohte Tierart, Naturschutz, Wildkamera",
+    "link": "https://www.goodgoodgood.co/articles/tiny-wallaby-nabarlek-trail-cameras-australia",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab167478ba2d06d7ab7f39a_6ab16746237dffae5e47e8a3_tiny-wallaby-nabarlek-trail-cameras-australia-featured.webp",
+    "date": "2026-09-23T04:28:27.084Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790137681223mewceid9h",
+    "title": "Waisenkälbchen Kaikai bekommt drei Ranger als „Eltern\"",
+    "summary": "Am 26. Mai 2025 fand die Mara North Conservancy ein neugeborenes Elefantenkälbchen neben seiner toten Mutter. Keine andere weibliche Elefant konnte es säugen, und mit der Nacht und Raubtieren im Anmarsch griff der Kenya Wildlife Service ein. Zusammen mit dem Mara Elephant Project wurde das Kalb per Land Cruiser zu einem Tierarzt gebracht und am nächsten Morgen von der Sheldrick...",
+    "image_alt": "Waisenkälbchen Kaikai mit einem ihrer drei Pfleger bei der Sheldrick Wildlife Trust",
+    "meta_description": "Waisenkälbchen Kaikai verlor ihre Mutter, aber drei Ranger übernahmen die Betreuung und wurden ihre neuen „Eltern\".",
+    "meta_keywords": "Kaikai, Sheldrick Wildlife Trust, Waisenkälbchen, Elefantenschutz, Kenia, Tierrettungen, Mara North Conservancy",
+    "link": "https://www.goodgoodgood.co/articles/orphan-elephant-shared-custody-rangers",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab2c5ed932d71bd48f5030a_6ab2c5ec1ed52957fcf8d683_orphan-elephant-shared-custody-rangers-featured.webp",
+    "date": "2026-09-23T04:28:02.272Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790137654165e7izh7pd0",
+    "title": "Elefantenbaby Bungalu überlebte Löwenattacke und fand neue Familie",
+    "summary": "Das afrikanische Elefantenbaby Bungalu überlebte einen Monat lang allein, nachdem es von einem Löwen angegriffen worden war. Im Februar 2026 erhielt der Kenya Wildlife Service Meldungen über ein einsames Elefantenbaby bei Bungule, in der Nähe des Mount Kasiagau. Trotz Patrouillen blieb es versteckt und floh jedes Mal aus Angst, auch als die Sheldrick Wildlife Trust es per Hubschrauber zu erreichen...",
+    "image_alt": "Elefantenbaby Bungalu bei der Sheldrick Wildlife Trust mit seiner Milchflasche",
+    "meta_description": "Elefantenbaby Bungalu überlebte einen Löwenangriff und einen Monat allein in der Wildnis. Jetzt hat es bei Sheldrick Wildlife Trust eine neue Familie.",
+    "meta_keywords": "Bungalu, Elefant, Sheldrick Wildlife Trust, Waisenbaby, Kenia, Kaikai, Naturschutz",
+    "link": "https://www.goodgoodgood.co/articles/baby-elephant-bungalu-rescued-lions",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab2de78850ca389675da402_6ab2de749388e05e49ac3373_baby-elephant-bungalu-rescued-lions-featured-3.webp",
+    "date": "2026-09-23T04:27:34.991Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790137627194t8vksyuta",
+    "title": "GALEAS-Urintest spürt Blasenkrebs überraschend genau auf",
+    "summary": "Eine Beobachtungsstudie im Vereinigten Königreich zeigt starke Ergebnisse für GALEAS Bladder, einen nicht-invasiven genetischen Urintest von Nonacus Clinical Services. Bei 964 Patienten, die zwischen 2024 und 2025 zur Notfalluntersuchung wegen Hämaturie überwiesen wurden, spürte der Test 71 der 77 mittels Zystoskopie festgestellten Blasenkrebsfälle auf, darunter alle 17 muskelinvasiven Tumoren und 35 der 36 Krebsfälle im späteren Stadium. Der negativ prädiktive...",
+    "image_alt": "Urinprobe wird auf genetische Marker für Blasenkrebs getestet",
+    "meta_description": "Neuer GALEAS-Urintest spürt 71 von 77 Blasenkrebsfällen auf, mit negativ prädiktivem Wert über 99%.",
+    "meta_keywords": "GALEAS Bladder, Blasenkrebs, Urintest, Nonacus, Hämaturie, Zystoskopie, Krebsdiagnose",
+    "link": "https://www.goodnewsnetwork.org/exceptional-detection-rates-of-bladder-cancer-recorded-in-study-of-simple-yet-state-of-the-art-test/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2024/06/woman-scientist-microscope-research-lab-test-pubdomain-National-Cancer-Institute.jpg",
+    "date": "2026-09-23T04:27:09.661Z",
+    "category": "Health",
+    "score": 9
+  },
+  {
     "id": "17900955302019yo4v9fb2",
     "title": "135.000 Haustiere über NBCs Clear The Shelters adoptiert",
     "summary": "Die jährliche „Clear The Shelters\"-Kampagne von NBC und Mutterkonzern Universal hat in diesem Jahr 135.000 Hunde, Katzen und andere Haustiere in ein neues Zuhause vermittelt. Die Aktion lief von Juli bis September und brachte darüber hinaus 480.000 Dollar für mehr als 1.000 teilnehmende Tierheime ein. In den 12 Jahren, in denen die Kampagne besteht, wurden insgesamt 1,5 Millionen Haustiere vermittelt...",
@@ -2490,89 +2604,5 @@
     "date": "2026-09-06T15:21:18.979Z",
     "category": "Tech",
     "score": 9
-  },
-  {
-    "id": "1788668077914dbmh5cikz",
-    "title": "Flaschen retten Delfine und mehr gute Nachrichten",
-    "summary": "Eine einfache Erfindung mit leeren Plastikflaschen an Fischernetzen reduziert den Beifang von Delfinen um 88 Prozent, entdeckte ein emeritierter Meeresbiologe. Flandern schließt das Delfinarium Boudewijn Seapark spätestens 2037. Indien startete seinen ersten im Inland gebauten Wasserstoffzug für nicht elektrifizierte Strecken. Ein japanisches Unternehmen kann nun bis zu 90 Prozent des Lithiums aus Autobatterien zurückgewinnen, gegenüber weniger als 50 Prozent zuvor....",
-    "image_alt": "Delfin schwimmt bei einem Fischernetz mit daran befestigten leeren Plastikflaschen",
-    "meta_description": "Plastikflaschen retten Delfine, Indiens erster Wasserstoffzug und Durchbruch beim Lithium-Recycling: Überblick guter Nachrichten.",
-    "meta_keywords": "Delfine, Wasserstoffzug, Lithium-Recycling, Plastikflaschen, Great Bubble Barrier, Wota Box, Energiespeicherung, Tierschutz, Nachhaltigkeit",
-    "link": "https://squirrel-news.net/news/plastic-bottles-saving-dolphins-indias-first-hydrogen-powered-train-lithium-recycling-breakthrough/",
-    "source": "Squirrel-News.net",
-    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/07/Delfine.jpg",
-    "date": "2026-09-06T04:14:39.875Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1788667974151j2zsxndgd",
-    "title": "Outdoor-Gym Hilft Obdachlosen in Paris Weiter",
-    "summary": "Ein finnisches Unternehmen, Omnigym, hat ein Outdoor-Gym bei einer Obdachlosenunterkunft in Paris installiert. Ziel war es zu testen, ob leichter Zugang zu Bewegung die physische und mentale Gesundheit der Bewohner verbessern kann. Nach einem Monat zeigen anonyme Daten und Selbstbewertungen, dass 80% der Teilnehmer eine verbesserte physische Gesundheit erfahren. Auch positive Effekte auf Wohlbefinden, Schlaf, Stimmung und Energie wurden gemeldet....",
-    "image_alt": "Outdoor-Gym-Geräte im Innenhof einer Obdachlosenunterkunft in Paris installiert",
-    "meta_description": "Finnisches Unternehmen Omnigym installiert Outdoor-Gym in Obdachlosenunterkunft in Paris; 80% berichten bessere Gesundheit.",
-    "meta_keywords": "Omnigym, Obdachlose, Paris, Outdoor-Gym, Gesundheit, Emmaüs Solidarité, Fitness",
-    "link": "https://www.goodnewsnetwork.org/new-gym-in-paris-helps-homeless-improve-their-health-and-habits/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Wilfried-enjoying-The-Shelter-Gym-in-Paris-RELEASED-BY-Omnigym.jpeg",
-    "date": "2026-09-06T04:12:56.864Z",
-    "category": "Health",
-    "score": 9
-  },
-  {
-    "id": "17886485649093lmuettpf",
-    "title": "Fischgehirn filtert eigene Signale clever",
-    "summary": "Wissenschaftler haben entdeckt, wie das Gehirn des Elefantenrüsselfisches elektrisches Rauschen herausfiltert. Dieser afrikanische Fisch sendet und empfängt ständig elektrische Signale und muss seine eigenen Signale ignorieren, um Beute aufzuspüren. Forscher des Zuckerman Institute der Columbia University unter der Leitung von Nathaniel Sawtell kartografierten die Neuronen in der betreffenden Gehirnregion und kombinierten dies mit Messungen und Computermodellen. Daraus geht hervor, dass...",
-    "image_alt": "Elefantenrüsselfisch schwimmend im Wasser, bekannt für seine Elektrosensorik",
-    "meta_description": "Forscher entschlüsseln, wie das Gehirn des Elefantenrüsselfisches elektrisches Rauschen filtert, um Beute zu finden.",
-    "meta_keywords": "Elefantenrüsselfisch, Gehirnforschung, Neurowissenschaft, Elektrosensorik, Columbia University, Nature, Gehirn",
-    "link": "https://www.npr.org/2026/09/04/nx-s1-5953883/scientists-study-how-the-brain-of-a-fish-filters-out-signals",
-    "source": "NPR.org",
-    "image": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
-    "date": "2026-09-05T22:49:26.838Z",
-    "category": "Science",
-    "score": 8
-  },
-  {
-    "id": "1788648470866m1vi4va9k",
-    "title": "Wäscherei Wird Bücherei Für Kinder",
-    "summary": "In einer Wäscherei in Wyoming, Ohio, hängen vier Körbe voller Kinderbücher wie 'Mike Mulligan and His Steam Shovel'. Janice Weiser richtete diese Bücherecke im November ein und füllt sie alle zehn Tage auf. Es ist Teil der Laundromat Library League, ein Netzwerk von mehr als 200 Wäschereien in den USA, die Bücher für Kinder anbieten. Die Organisation, gegründet von zwei...",
-    "image_alt": "Bücherkörbe mit Kinderbüchern hängen an der Wand einer Wäscherei",
-    "meta_description": "Wäschereien in den USA bieten kostenlose Kinderbücher über die Laundromat Library League an, mit bereits 400.000 verteilten Büchern.",
-    "meta_keywords": "Wäscherei Bücherei, Kinderbücher, Laundromat Library League, Leseförderung, kostenlose Bücher, Ohio",
-    "link": "https://reasonstobecheerful.world/the-spark-laundromat-libraries/",
-    "source": "ReasonsToBeCheerful.world",
-    "image": "https://s.w.org/images/core/emoji/17.0.2/72x72/1fae7.png",
-    "date": "2026-09-05T22:47:52.732Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "1788647811819l0v9pyg4w",
-    "title": "Neues College Will Studienkosten Senken",
-    "summary": "In Montpelier, Vermont, wird das Greenway Institute gegründet, eine völlig neue Hochschule, die Hochschulbildung anders gestalten möchte. Auf einem Campus aus dem 19. Jahrhundert kombiniert die Schule praxisorientiertes Lernen unter Anleitung von Dozenten mit dem Abbau überflüssiger Verwaltungsebenen und luxuriöser Einrichtungen, um die Kosten zu senken. Gründer Mark Somerville, ehemaliger Provost des Olin College of Engineering, hält dies angesichts der...",
-    "image_alt": "Mark Somerville steht vor einem Whiteboard mit Aufgaben zur Eröffnung des Greenway Institute auf dem historischen Campus in Montpelier, Vermont.",
-    "meta_description": "Neues Greenway Institute in Vermont will Hochschulbildung mit praxisorientiertem Lernen und weniger Bürokratie erschwinglicher machen.",
-    "meta_keywords": "Greenway Institute, Hochschulbildung, Vermont, Studienkosten, praxisorientiertes Lernen, Mark Somerville, Future Universities Alliance",
-    "link": "https://ww2.kqed.org/mindshift/2026/09/04/hands-on-learning-as-college-a-new-school-hopes-to-curb-rising-tuition-and-create-new-pathways/",
-    "source": "Ww2.kqed.org/mindshift",
-    "image": "https://cdn.kqed.org/wp-content/uploads/sites/23/2026/09/he-reinventing-college-1-2000x1334.jpeg",
-    "date": "2026-09-05T22:36:52.688Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "1788647730911cqw2ar8lh",
-    "title": "Untersuchung von Adipositas über menschliche Biologie",
-    "summary": "The Humane Research Trust unterstützt seit 1961 Wissenschaftler, die nach Alternativen zu Tierversuchen in der medizinischen Forschung suchen. In einem kürzlich veröffentlichten Artikel beleuchtet die Organisation wichtige Forschung zu Adipositas und verwandten Stoffwechselerkrankungen. Dabei betonen sie, dass Adipositas mehr ist als nur Übergewicht, und dass Forschungsmethoden erforderlich sind, die tatsächlich der menschlichen Biologie entsprechen.",
-    "image_alt": "Wissenschaftliche Forschung zu Adipositas und menschlicher Biologie",
-    "meta_description": "The Humane Research Trust beleuchtet Forschung zu Adipositas durch Methoden, die auf menschliche Biologie statt Tierversuche ausgerichtet sind.",
-    "meta_keywords": "Adipositas, Humane Research Trust, Tierversuche, medizinische Forschung, Stoffwechselerkrankungen, menschliche Biologie",
-    "link": "https://www.openaccessgovernment.org/understanding-obesity-through-human-biology/213572/",
-    "source": "Openaccessgovernment.org",
-    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
-    "date": "2026-09-05T22:35:31.778Z",
-    "category": "Health",
-    "score": 7
   }
 ]

@@ -1,5 +1,119 @@
 [
   {
+    "id": "dg-20260922-health",
+    "type": "digest",
+    "digest_date": "2026-09-22",
+    "title": "Sleep, urine and heart rate: three steps forward in healthcare",
+    "summary": "These days show that health gains sometimes come in small, smart steps. A simple reward for getting enough sleep, a urine test that detects cancer, and an AI that reviews a heart recording: three different stories with one common thread. They make healthcare faster, more precise, and sometimes easier to maintain. Take the research from the University of Pittsburgh [1]. More than 1,100 students received a Fitbit app, and about 468 of them got roughly 5 dollars per night if they slept seven hours. The result: 26% more nights with sufficient sleep and 19 minutes longer sleep per school night....",
+    "image_alt": "Sleep, urine and heart rate: three steps forward in healthcare",
+    "meta_description": "Rewarding sleep, detecting bladder cancer via urine and recognizing heart disease with AI: three hopeful health stories from these days in a row.",
+    "meta_keywords": "Health",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aad7f471fbf338d1a44c36c_6aad7f45b52f83488b1f588b_researchers-pay-college-students-to-sleep-more-featured.webp",
+    "date": "2026-09-23T04:30:11.998Z",
+    "category": "Health",
+    "refs": [
+      {
+        "id": "1789965334441fmmtlceew",
+        "title": "Five dollars per night sleep boosts student grades"
+      },
+      {
+        "id": "1790137627194t8vksyuta",
+        "title": "GALEAS urine test detects bladder cancer with surprising accuracy"
+      },
+      {
+        "id": "1790051398328zl0crxok4",
+        "title": "New AI tool detects heart disease via standard ECG"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260922-environment",
+    "type": "digest",
+    "digest_date": "2026-09-22",
+    "title": "A wallaby emerges, two baby elephants find a new home",
+    "summary": "These days, good news comes from unexpected places: an animal that seemed to have vanished fifty years ago, and two young elephants that found a new family thanks to human hands. Three stories that show how patience and care sometimes arrive just in time. In Western Australia, researchers spent half a century searching in vain through the grass for a trace of the nabarlek. Now the Australian Wildlife Conservancy has confirmed the small rock wallaby on the mainland after all, thanks to trail cameras and fecal analysis [1]. In two locations in the Kimberley region, up to 170 kilometers apart,...",
+    "image_alt": "A wallaby emerges, two baby elephants find a new home",
+    "meta_description": "Nabarlek wallaby returns to Australia after 50 years and two orphaned elephant calves find a new home and close friendship in Kenya.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab167478ba2d06d7ab7f39a_6ab16746237dffae5e47e8a3_tiny-wallaby-nabarlek-trail-cameras-australia-featured.webp",
+    "date": "2026-09-23T04:29:19.500Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1790137706448cjjzj9eh0",
+        "title": "Nabarlek wallaby spotted again in Australia after 50 years"
+      },
+      {
+        "id": "1790137681223mewceid9h",
+        "title": "Orphaned elephant calf Kaikai gets three rangers as 'parents'"
+      },
+      {
+        "id": "1790137654165e7izh7pd0",
+        "title": "Young elephant Bungalu survived lion attack and found new family"
+      }
+    ]
+  },
+  {
+    "id": "1790137706448cjjzj9eh0",
+    "title": "Nabarlek wallaby spotted again in Australia after 50 years",
+    "summary": "Researchers from the Australian Wildlife Conservancy have confirmed the nabarlek on mainland Australia for the first time in 50 years. Trail cameras and faecal analysis revealed the presence of this small rock wallaby at two new locations in the Kimberley region of Western Australia: at Yampi Sound Training Area and approximately 170 kilometres away in the northeast of Dambeemangaddee Country....",
+    "image_alt": "Small nabarlek wallaby captured by a trail camera in the Kimberley region of Australia",
+    "meta_description": "After 50 years, new evidence of the rare nabarlek wallaby in Australia, thanks to trail cameras and research in the Kimberley region.",
+    "meta_keywords": "nabarlek, wallaby, Australia, Kimberley, Australian Wildlife Conservancy, endangered species, nature conservation, trail camera",
+    "link": "https://www.goodgoodgood.co/articles/tiny-wallaby-nabarlek-trail-cameras-australia",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab167478ba2d06d7ab7f39a_6ab16746237dffae5e47e8a3_tiny-wallaby-nabarlek-trail-cameras-australia-featured.webp",
+    "date": "2026-09-23T04:28:27.084Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790137681223mewceid9h",
+    "title": "Orphaned elephant calf Kaikai gets three rangers as 'parents'",
+    "summary": "On May 26, 2025, Mara North Conservancy found a newborn elephant calf next to her deceased mother. No other female elephant could nurse her, and with nightfall and predators approaching, Kenya Wildlife Service intervened. Together with the Mara Elephant Project, the calf was transported by Land Cruiser to a veterinarian and flown the next morning by Sheldrick Wildlife Trust to...",
+    "image_alt": "Orphaned elephant calf Kaikai with one of her three caregivers at Sheldrick Wildlife Trust",
+    "meta_description": "Orphaned elephant calf Kaikai lost her mother, but three rangers took over her care and became her new 'parents'.",
+    "meta_keywords": "Kaikai, Sheldrick Wildlife Trust, orphaned elephant, elephant welfare, Kenya, animal rescues, Mara North Conservancy",
+    "link": "https://www.goodgoodgood.co/articles/orphan-elephant-shared-custody-rangers",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab2c5ed932d71bd48f5030a_6ab2c5ec1ed52957fcf8d683_orphan-elephant-shared-custody-rangers-featured.webp",
+    "date": "2026-09-23T04:28:02.272Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790137654165e7izh7pd0",
+    "title": "Young elephant Bungalu survived lion attack and found new family",
+    "summary": "The African elephant calf Bungalu survived a month alone after being attacked by a lion. In February 2026, Kenya Wildlife Service received reports of a lone elephant calf near Bungule, close to Mount Kasiagau. Despite patrols, he remained hidden and fled in fear each time, even when the Sheldrick Wildlife Trust attempted to reach him by helicopter. After severe thunderstorms,...",
+    "image_alt": "Young elephant Bungalu at the Sheldrick Wildlife Trust with his milk bottle",
+    "meta_description": "Young elephant Bungalu survived a lion attack and a month alone in the wild. Now he has found a new family at Sheldrick Wildlife Trust.",
+    "meta_keywords": "Bungalu, elephant, Sheldrick Wildlife Trust, orphan elephant, Kenya, Kaikai, wildlife conservation",
+    "link": "https://www.goodgoodgood.co/articles/baby-elephant-bungalu-rescued-lions",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab2de78850ca389675da402_6ab2de749388e05e49ac3373_baby-elephant-bungalu-rescued-lions-featured-3.webp",
+    "date": "2026-09-23T04:27:34.991Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790137627194t8vksyuta",
+    "title": "GALEAS urine test detects bladder cancer with surprising accuracy",
+    "summary": "An observational study in the United Kingdom shows strong results for GALEAS Bladder, a non-invasive genetic urine test by Nonacus Clinical Services. Among 964 patients referred for urgent investigation of haematuria between 2024 and 2025, the test detected 71 of 77 bladder cancer cases confirmed via cystoscopy, including all 17 muscle-invasive tumours and 35 of 36 late-stage cancers. The negative...",
+    "image_alt": "Urine sample being tested for genetic markers for bladder cancer",
+    "meta_description": "New GALEAS urine test detects 71 of 77 bladder cancer cases, with negative predictive value above 99%.",
+    "meta_keywords": "GALEAS Bladder, bladder cancer, urine test, Nonacus, haematuria, cystoscopy, cancer diagnosis",
+    "link": "https://www.goodnewsnetwork.org/exceptional-detection-rates-of-bladder-cancer-recorded-in-study-of-simple-yet-state-of-the-art-test/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2024/06/woman-scientist-microscope-research-lab-test-pubdomain-National-Cancer-Institute.jpg",
+    "date": "2026-09-23T04:27:09.661Z",
+    "category": "Health",
+    "score": 9
+  },
+  {
     "id": "17900955302019yo4v9fb2",
     "title": "135,000 pets adopted through NBC's Clear The Shelters",
     "summary": "NBC and parent company Universal's annual 'Clear The Shelters' campaign helped 135,000 dogs, cats and other pets find new homes this year. The initiative ran from July through September and raised $480,000 for more than 1,000 participating animal shelters. Over the campaign's 12-year history, a total of 1.5 million pets have been placed and more than $6 million has been...",
@@ -2490,89 +2604,5 @@
     "date": "2026-09-06T15:21:18.979Z",
     "category": "Tech",
     "score": 9
-  },
-  {
-    "id": "1788668077914dbmh5cikz",
-    "title": "Bottles save dolphins and more good news",
-    "summary": "A simple invention using empty plastic bottles attached to fishing nets reduces dolphin bycatch by 88 percent, discovered an emeritus marine biologist. Flanders will close dolphinarium Boudewijn Seapark by 2037 at the latest. India launched its first domestically built hydrogen train for non-electrified routes. A Japanese company can now recover up to 90 percent of lithium from car batteries, compared...",
-    "image_alt": "Dolphin swims near a fishing net with empty plastic bottles attached to it",
-    "meta_description": "Plastic bottles save dolphins, India's first hydrogen train and breakthrough in lithium recycling: good news overview.",
-    "meta_keywords": "dolphins, hydrogen train, lithium recycling, plastic bottles, Great Bubble Barrier, Wota Box, energy storage, animal welfare, sustainability",
-    "link": "https://squirrel-news.net/news/plastic-bottles-saving-dolphins-indias-first-hydrogen-powered-train-lithium-recycling-breakthrough/",
-    "source": "Squirrel-News.net",
-    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/07/Delfine.jpg",
-    "date": "2026-09-06T04:14:39.875Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1788667974151j2zsxndgd",
-    "title": "Outdoor Gym Helps Homeless in Paris Move Forward",
-    "summary": "A Finnish company, Omnigym, has installed an outdoor gym at a homeless shelter in Paris. The goal was to test whether easy access to exercise can improve residents' physical and mental health. After one month, anonymous data and self-evaluations show that 80% of participants experience improved physical health. Positive effects were also reported on wellbeing, sleep, mood and energy. Residents...",
-    "image_alt": "Outdoor gym equipment installed in the courtyard of a homeless shelter in Paris",
-    "meta_description": "Finnish company Omnigym installs outdoor gym at homeless shelter in Paris; 80% report better health.",
-    "meta_keywords": "Omnigym, homeless, Paris, outdoor gym, health, Emmaüs Solidarité, fitness",
-    "link": "https://www.goodnewsnetwork.org/new-gym-in-paris-helps-homeless-improve-their-health-and-habits/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Wilfried-enjoying-The-Shelter-Gym-in-Paris-RELEASED-BY-Omnigym.jpeg",
-    "date": "2026-09-06T04:12:56.864Z",
-    "category": "Health",
-    "score": 9
-  },
-  {
-    "id": "17886485649093lmuettpf",
-    "title": "Fish brain filters its own signals cleverly",
-    "summary": "Scientists have discovered how the brains of elephant fish filter out electrical noise. This African fish continuously sends and receives electrical signals and must ignore its own signals to detect prey. Researchers from Columbia University's Zuckerman Institute, led by Nathaniel Sawtell, mapped the neurons in the relevant brain region and combined this with measurements and computer models. The results show...",
-    "image_alt": "Elephant fish swimming in water, known for its electrosensing",
-    "meta_description": "Researchers unravel how the elephant fish brain filters electrical noise to find prey.",
-    "meta_keywords": "elephant fish, brain research, neuroscience, electrosensing, Columbia University, Nature, brain",
-    "link": "https://www.npr.org/2026/09/04/nx-s1-5953883/scientists-study-how-the-brain-of-a-fish-filters-out-signals",
-    "source": "NPR.org",
-    "image": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
-    "date": "2026-09-05T22:49:26.838Z",
-    "category": "Science",
-    "score": 8
-  },
-  {
-    "id": "1788648470866m1vi4va9k",
-    "title": "Laundromat Becomes Library for Children",
-    "summary": "In a laundromat in Wyoming, Ohio, four baskets hang filled with children's books such as 'Mike Mulligan and His Steam Shovel'. Janice Weiser established this book corner in November and restocks it every ten days. It is part of the Laundromat Library League, a network of more than 200 laundromats across the US that offer books to children. The organization,...",
-    "image_alt": "Baskets of children's books hang on the wall of a laundromat",
-    "meta_description": "Laundromats across the US offer free children's books through the Laundromat Library League, with 400,000 books distributed so far.",
-    "meta_keywords": "laundromat library, children's books, Laundromat Library League, reading promotion, free books, Ohio",
-    "link": "https://reasonstobecheerful.world/the-spark-laundromat-libraries/",
-    "source": "ReasonsToBeCheerful.world",
-    "image": "https://s.w.org/images/core/emoji/17.0.2/72x72/1fae7.png",
-    "date": "2026-09-05T22:47:52.732Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "1788647811819l0v9pyg4w",
-    "title": "New College Aims to Lower Study Costs",
-    "summary": "In Montpelier, Vermont, the Greenway Institute is being established, a completely new college that wants to reorganize higher education differently. On a nineteenth-century campus, the school combines practice-oriented learning under the guidance of faculty with the elimination of redundant administrative layers and luxury facilities to reduce costs. Founder Mark Somerville, former provost of Olin College of Engineering, says this is...",
-    "image_alt": "Mark Somerville stands in front of a whiteboard with tasks for the opening of Greenway Institute on the historic campus in Montpelier, Vermont.",
-    "meta_description": "New Greenway Institute in Vermont aims to make higher education more affordable with practice-oriented learning and less bureaucracy.",
-    "meta_keywords": "Greenway Institute, higher education, Vermont, study costs, practice-oriented learning, Mark Somerville, Future Universities Alliance",
-    "link": "https://ww2.kqed.org/mindshift/2026/09/04/hands-on-learning-as-college-a-new-school-hopes-to-curb-rising-tuition-and-create-new-pathways/",
-    "source": "Ww2.kqed.org/mindshift",
-    "image": "https://cdn.kqed.org/wp-content/uploads/sites/23/2026/09/he-reinventing-college-1-2000x1334.jpeg",
-    "date": "2026-09-05T22:36:52.687Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "1788647730911cqw2ar8lh",
-    "title": "Obesity Research Through Human Biology",
-    "summary": "The Humane Research Trust has supported scientists since 1961 who seek alternatives to animal testing in medical research. In a recent article, the organization highlights important research into obesity and related metabolic diseases. They emphasize that obesity is more than just overweight, and that research methods are needed that truly align with human biology.",
-    "image_alt": "Scientific research into obesity and human biology",
-    "meta_description": "The Humane Research Trust highlights research into obesity through methods focused on human biology instead of animal testing.",
-    "meta_keywords": "obesity, Humane Research Trust, animal testing, medical research, metabolic diseases, human biology",
-    "link": "https://www.openaccessgovernment.org/understanding-obesity-through-human-biology/213572/",
-    "source": "Openaccessgovernment.org",
-    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
-    "date": "2026-09-05T22:35:31.778Z",
-    "category": "Health",
-    "score": 7
   }
 ]

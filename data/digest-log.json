@@ -1,5 +1,45 @@
 [
   {
+    "datum": "2026-09-23T04:30:11.999Z",
+    "dag": "2026-09-22",
+    "categorie": "Health",
+    "ids": [
+      "1789965334441fmmtlceew",
+      "1790137627194t8vksyuta",
+      "1790051398328zl0crxok4"
+    ],
+    "prompthash": "fd561df11314",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 12052,
+    "woorden": {
+      "nl": 367,
+      "en": 370,
+      "de": 352,
+      "fr": 456,
+      "es": 415
+    }
+  },
+  {
+    "datum": "2026-09-23T04:29:19.501Z",
+    "dag": "2026-09-22",
+    "categorie": "Environment",
+    "ids": [
+      "1790137706448cjjzj9eh0",
+      "1790137681223mewceid9h",
+      "1790137654165e7izh7pd0"
+    ],
+    "prompthash": "fd561df11314",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 11468,
+    "woorden": {
+      "nl": 362,
+      "en": 365,
+      "de": 356,
+      "fr": 412,
+      "es": 394
+    }
+  },
+  {
     "datum": "2026-09-22T04:32:33.311Z",
     "dag": "2026-09-21",
     "categorie": "Environment",

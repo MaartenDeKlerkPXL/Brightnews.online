@@ -1,5 +1,119 @@
 [
   {
+    "id": "dg-20260922-health",
+    "type": "digest",
+    "digest_date": "2026-09-22",
+    "title": "Sueño, orina y ritmo cardíaco: tres pasos adelante en la sanidad",
+    "summary": "Estos días demuestran que el progreso sanitario a veces reside en pequeños pasos inteligentes. Una recompensa sencilla por dormir lo suficiente, una prueba de orina que detecta el cáncer, e inteligencia artificial que analiza un electrocardiograma: tres historias diferentes con un hilo conductor común. Hacen la sanidad más rápida, más precisa y a veces también más fácil de mantener. Tomemos el estudio de la University of Pittsburgh [1]. Más de 1.100 estudiantes recibieron una aplicación Fitbit y aproximadamente 468 de ellos ganaban alrededor de 5 dólares por noche si dormían siete horas. El resultado: 26% más noches con sueño suficiente...",
+    "image_alt": "Sueño, orina y ritmo cardíaco: tres pasos adelante en la sanidad",
+    "meta_description": "Recompensar el sueño, detectar cáncer de vejiga mediante orina e identificar enfermedades cardíacas con inteligencia artificial: tres noticias sanitarias e",
+    "meta_keywords": "Health",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aad7f471fbf338d1a44c36c_6aad7f45b52f83488b1f588b_researchers-pay-college-students-to-sleep-more-featured.webp",
+    "date": "2026-09-23T04:30:11.999Z",
+    "category": "Health",
+    "refs": [
+      {
+        "id": "1789965334441fmmtlceew",
+        "title": "Cinco dólares por noche de sueño mejoran las calificaciones de estudiantes"
+      },
+      {
+        "id": "1790137627194t8vksyuta",
+        "title": "La prueba de orina GALEAS detecta el cáncer de vejiga con precisión sorprendente"
+      },
+      {
+        "id": "1790051398328zl0crxok4",
+        "title": "Nueva herramienta de IA detecta enfermedades cardíacas mediante ECG convencional"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260922-environment",
+    "type": "digest",
+    "digest_date": "2026-09-22",
+    "title": "Una ualabí reaparece, dos elefantillos encuentran un nuevo hogar",
+    "summary": "En estos días, las buenas noticias llegan desde rincones inesperados: un animal que parecía desaparecido hace cincuenta años, y dos jóvenes elefantes que gracias a manos humanas encontraron una nueva familia. Tres historias que demuestran cómo la paciencia y el cuidado a veces llegan justo a tiempo. En Australia Occidental, los investigadores buscaron durante medio siglo sin éxito entre la hierba rastros de la nabarlek. Ahora, la Australian Wildlife Conservancy confirmó el pequeño ualabí de roca nuevamente en el continente, gracias a cámaras trampa e investigación de excrementos [1]. En dos lugares de la región de Kimberley, separados hasta 170...",
+    "image_alt": "Una ualabí reaparece, dos elefantillos encuentran un nuevo hogar",
+    "meta_description": "Ualabí nabarlek reaparece en Australia tras 50 años y dos elefantillos huérfanos encuentran en Kenia un nuevo hogar y una amistad inquebrantable.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab167478ba2d06d7ab7f39a_6ab16746237dffae5e47e8a3_tiny-wallaby-nabarlek-trail-cameras-australia-featured.webp",
+    "date": "2026-09-23T04:29:19.501Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1790137706448cjjzj9eh0",
+        "title": "El nabarlek-wallaby vuelto a avistar en Australia tras 50 años"
+      },
+      {
+        "id": "1790137681223mewceid9h",
+        "title": "La pequeña elefanta huérfana Kaikai recibe tres guardabosques como «padres»"
+      },
+      {
+        "id": "1790137654165e7izh7pd0",
+        "title": "Elefantito Bungalu sobrevivió a un ataque de león y encontró una nueva familia"
+      }
+    ]
+  },
+  {
+    "id": "1790137706448cjjzj9eh0",
+    "title": "El nabarlek-wallaby vuelto a avistar en Australia tras 50 años",
+    "summary": "Investigadores de la Australian Wildlife Conservancy han confirmado por primera vez en 50 años la presencia del nabarlek en el continente australiano. Las cámaras trampa y el análisis de excrementos revelaron la presencia de este pequeño canguro de roca en dos nuevas ubicaciones en la región de Kimberley en Australia Occidental: en el Yampi Sound Training Area y aproximadamente 170...",
+    "image_alt": "Pequeño nabarlek-wallaby capturado por una cámara trampa en la región de Kimberley en Australia",
+    "meta_description": "Tras 50 años, nueva evidencia del raro nabarlek-wallaby en Australia, gracias a cámaras trampa e investigación en la región de Kimberley.",
+    "meta_keywords": "nabarlek, wallaby, Australia, Kimberley, Australian Wildlife Conservancy, especie amenazada, conservación de la naturaleza, cámara trampa",
+    "link": "https://www.goodgoodgood.co/articles/tiny-wallaby-nabarlek-trail-cameras-australia",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab167478ba2d06d7ab7f39a_6ab16746237dffae5e47e8a3_tiny-wallaby-nabarlek-trail-cameras-australia-featured.webp",
+    "date": "2026-09-23T04:28:27.084Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790137681223mewceid9h",
+    "title": "La pequeña elefanta huérfana Kaikai recibe tres guardabosques como «padres»",
+    "summary": "El 26 de mayo de 2025, la Mara North Conservancy encontró a una elefanta recién nacida junto a su madre fallecida. Ninguna otra hembra de elefante podía amamantarla, y con la noche y los depredadores acechando, el Kenya Wildlife Service intervino. Junto con el Mara Elephant Project, la cría fue trasladada en Land Cruiser a un veterinario y a la...",
+    "image_alt": "La pequeña elefanta huérfana Kaikai con uno de sus tres cuidadores en la Sheldrick Wildlife Trust",
+    "meta_description": "La pequeña elefanta huérfana Kaikai perdió a su madre, pero tres guardabosques asumieron su cuidado y se convirtieron en sus nuevos «padres».",
+    "meta_keywords": "Kaikai, Sheldrick Wildlife Trust, elefanta huérfana, bienestar de elefantes, Kenia, rescate de animales, Mara North Conservancy",
+    "link": "https://www.goodgoodgood.co/articles/orphan-elephant-shared-custody-rangers",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab2c5ed932d71bd48f5030a_6ab2c5ec1ed52957fcf8d683_orphan-elephant-shared-custody-rangers-featured.webp",
+    "date": "2026-09-23T04:28:02.272Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790137654165e7izh7pd0",
+    "title": "Elefantito Bungalu sobrevivió a un ataque de león y encontró una nueva familia",
+    "summary": "El elefantito africano Bungalu sobrevivió un mes solo después de ser atacado por un león. En febrero de 2026, la Kenya Wildlife Service recibió reportes de un elefantito solitario cerca de Bungule, junto al Monte Kasiagau. A pesar de las patrullas, permaneció escondido y huía cada vez por miedo, incluso cuando la Sheldrick Wildlife Trust intentó alcanzarlo en helicóptero. Tras...",
+    "image_alt": "Elefantito Bungalu en la Sheldrick Wildlife Trust con su biberón",
+    "meta_description": "Elefantito Bungalu sobrevivió a un ataque de león y un mes solo en la naturaleza. Ahora tiene una nueva familia en Sheldrick Wildlife Trust.",
+    "meta_keywords": "Bungalu, elefante, Sheldrick Wildlife Trust, elefanta huérfana, Kenia, Kaikai, conservación",
+    "link": "https://www.goodgoodgood.co/articles/baby-elephant-bungalu-rescued-lions",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab2de78850ca389675da402_6ab2de749388e05e49ac3373_baby-elephant-bungalu-rescued-lions-featured-3.webp",
+    "date": "2026-09-23T04:27:34.991Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790137627194t8vksyuta",
+    "title": "La prueba de orina GALEAS detecta el cáncer de vejiga con precisión sorprendente",
+    "summary": "Un estudio observacional en el Reino Unido muestra resultados sólidos para GALEAS Bladder, una prueba urinaria genética no invasiva de Nonacus Clinical Services. En 964 pacientes derivados entre 2024 y 2025 para investigación urgente de hematuria, la prueba detectó 71 de los 77 casos de cáncer de vejiga confirmados mediante cistoscopia, incluidos los 17 tumores con invasión muscular y 35...",
+    "image_alt": "Muestra de orina siendo analizada para detectar marcadores genéticos de cáncer de vejiga",
+    "meta_description": "La nueva prueba de orina GALEAS detecta 71 de 77 casos de cáncer de vejiga, con valor predictivo negativo superior al 99%.",
+    "meta_keywords": "GALEAS Bladder, cáncer de vejiga, prueba de orina, Nonacus, hematuria, cistoscopia, diagnóstico de cáncer",
+    "link": "https://www.goodnewsnetwork.org/exceptional-detection-rates-of-bladder-cancer-recorded-in-study-of-simple-yet-state-of-the-art-test/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2024/06/woman-scientist-microscope-research-lab-test-pubdomain-National-Cancer-Institute.jpg",
+    "date": "2026-09-23T04:27:09.661Z",
+    "category": "Health",
+    "score": 9
+  },
+  {
     "id": "17900955302019yo4v9fb2",
     "title": "135.000 mascotas adoptadas a través de Clear The Shelters de NBC",
     "summary": "La campaña anual «Clear The Shelters» de NBC y su empresa matriz Universal ha ayudado este año a 135.000 perros, gatos y otras mascotas a encontrar un nuevo hogar. La iniciativa se desarrolló de julio a septiembre y recaudó además $480.000 para más de 1.000 refugios de animales participantes. En los 12 años que lleva la campaña, se han colocado...",
@@ -2490,89 +2604,5 @@
     "date": "2026-09-06T15:21:18.979Z",
     "category": "Tech",
     "score": 9
-  },
-  {
-    "id": "1788668077914dbmh5cikz",
-    "title": "Botellas salvan delfines y más buenas noticias",
-    "summary": "Un invento simple con botellas de plástico vacías en redes de pesca reduce la captura incidental de delfines en un 88 por ciento, descubrió un biólogo marino emérito. Flandes cierra el delfinario Boudewijn Seapark a más tardar en 2037. India lanzó su primer tren de hidrógeno construido en el país para rutas no electrificadas. Una empresa japonesa puede recuperar ahora...",
-    "image_alt": "Delfín nada junto a una red de pesca con botellas de plástico vacías adheridas",
-    "meta_description": "Botellas de plástico salvan delfines, primer tren de hidrógeno de India y avance en reciclaje de litio: resumen de buenas noticias.",
-    "meta_keywords": "delfines, tren de hidrógeno, reciclaje de litio, botellas de plástico, Gran Barrera de Burbujas, Caja Wota, almacenamiento de energía, bienestar animal, sostenibilidad",
-    "link": "https://squirrel-news.net/news/plastic-bottles-saving-dolphins-indias-first-hydrogen-powered-train-lithium-recycling-breakthrough/",
-    "source": "Squirrel-News.net",
-    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/07/Delfine.jpg",
-    "date": "2026-09-06T04:14:39.875Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1788667974151j2zsxndgd",
-    "title": "Gimnasio Exterior Ayuda a Personas sin Hogar en París",
-    "summary": "Una empresa finlandesa, Omnigym, ha instalado un gimnasio exterior en un albergue para personas sin hogar en París. El objetivo era probar si el acceso fácil al ejercicio puede mejorar la salud física y mental de los residentes. Después de un mes, datos anónimos y autoevaluaciones muestran que el 80% de los participantes experimenta una salud física mejorada. También se...",
-    "image_alt": "Equipos de gimnasio exterior instalados en el patio de un albergue para personas sin hogar en París",
-    "meta_description": "Empresa finlandesa Omnigym instala gimnasio exterior en albergue para sin hogar en París; 80% reporta mejor salud.",
-    "meta_keywords": "Omnigym, sin hogar, París, gimnasio exterior, salud, Emmaüs Solidarité, fitness",
-    "link": "https://www.goodnewsnetwork.org/new-gym-in-paris-helps-homeless-improve-their-health-and-habits/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Wilfried-enjoying-The-Shelter-Gym-in-Paris-RELEASED-BY-Omnigym.jpeg",
-    "date": "2026-09-06T04:12:56.864Z",
-    "category": "Health",
-    "score": 9
-  },
-  {
-    "id": "17886485649093lmuettpf",
-    "title": "El cerebro del pez elefante filtra sus propias señales",
-    "summary": "Científicos han descubierto cómo los cerebros del pez elefante filtran el ruido eléctrico. Este pez africano envía y recibe continuamente señales eléctricas y debe ignorar sus propias señales para poder detectar presas. Investigadores del Zuckerman Institute de Columbia University, bajo la dirección de Nathaniel Sawtell, cartografiaron las neuronas en la región cerebral correspondiente y combinaron esto con mediciones y modelos...",
-    "image_alt": "Pez elefante nadando en el agua, conocido por su electrodetección",
-    "meta_description": "Investigadores descifran cómo el cerebro del pez elefante filtra el ruido eléctrico para encontrar presas.",
-    "meta_keywords": "pez elefante, investigación cerebral, neurociencia, electrodetección, Columbia University, Nature, cerebro",
-    "link": "https://www.npr.org/2026/09/04/nx-s1-5953883/scientists-study-how-the-brain-of-a-fish-filters-out-signals",
-    "source": "NPR.org",
-    "image": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
-    "date": "2026-09-05T22:49:26.838Z",
-    "category": "Science",
-    "score": 8
-  },
-  {
-    "id": "1788648470866m1vi4va9k",
-    "title": "Lavandería Se Convierte en Biblioteca Para Niños",
-    "summary": "En una lavandería en Wyoming, Ohio, cuelgan cuatro canastas llenas de libros infantiles como 'Mike Mulligan and His Steam Shovel'. Janice Weiser estableció esta sección de libros en noviembre y la repone cada diez días. Es parte de la Laundromat Library League, una red de más de 200 lavanderías en EE.UU. que ofrecen libros a los niños. La organización, fundada...",
-    "image_alt": "Canastas de libros infantiles cuelgan en la pared de una lavandería",
-    "meta_description": "Lavanderías en EE.UU. ofrecen libros infantiles gratis a través de la Laundromat Library League, con más de 400.000 libros distribuidos.",
-    "meta_keywords": "lavandería biblioteca, libros infantiles, Laundromat Library League, promoción de lectura, libros gratis, Ohio",
-    "link": "https://reasonstobecheerful.world/the-spark-laundromat-libraries/",
-    "source": "ReasonsToBeCheerful.world",
-    "image": "https://s.w.org/images/core/emoji/17.0.2/72x72/1fae7.png",
-    "date": "2026-09-05T22:47:52.732Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "1788647811819l0v9pyg4w",
-    "title": "Nuevo Colegio Quiere Reducir Costos de Estudio",
-    "summary": "En Montpelier, Vermont, se está creando el Greenway Institute, un colegio completamente nuevo que quiere reorganizar la educación superior de otra manera. En un campus del siglo diecinueve, la escuela combina el aprendizaje práctico bajo la supervisión de docentes con la eliminación de capas administrativas innecesarias y servicios de lujo para reducir costos. El fundador Mark Somerville, ex preboste del...",
-    "image_alt": "Mark Somerville está frente a una pizarra blanca con tareas para la apertura del Greenway Institute en el campus histórico de Montpelier, Vermont.",
-    "meta_description": "El nuevo Greenway Institute en Vermont quiere hacer la educación superior más asequible con aprendizaje práctico y menos burocracia.",
-    "meta_keywords": "Greenway Institute, educación superior, Vermont, costos de estudio, aprendizaje práctico, Mark Somerville, Future Universities Alliance",
-    "link": "https://ww2.kqed.org/mindshift/2026/09/04/hands-on-learning-as-college-a-new-school-hopes-to-curb-rising-tuition-and-create-new-pathways/",
-    "source": "Ww2.kqed.org/mindshift",
-    "image": "https://cdn.kqed.org/wp-content/uploads/sites/23/2026/09/he-reinventing-college-1-2000x1334.jpeg",
-    "date": "2026-09-05T22:36:52.688Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "1788647730911cqw2ar8lh",
-    "title": "Investigación sobre la obesidad mediante biología humana",
-    "summary": "The Humane Research Trust ha apoyado desde 1961 a científicos que buscan alternativas a las pruebas con animales en investigación médica. En un artículo reciente, la organización destaca investigaciones importantes sobre la obesidad y enfermedades metabólicas relacionadas. En ello, subrayan que la obesidad es más que solo sobrepeso, y que se necesitan métodos de investigación que realmente se alineen con...",
-    "image_alt": "Investigación científica sobre la obesidad y la biología humana",
-    "meta_description": "The Humane Research Trust destaca investigaciones sobre la obesidad mediante métodos enfocados en biología humana en lugar de pruebas con animales.",
-    "meta_keywords": "obesidad, Humane Research Trust, pruebas con animales, investigación médica, enfermedades metabólicas, biología humana",
-    "link": "https://www.openaccessgovernment.org/understanding-obesity-through-human-biology/213572/",
-    "source": "Openaccessgovernment.org",
-    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
-    "date": "2026-09-05T22:35:31.778Z",
-    "category": "Health",
-    "score": 7
   }
 ]

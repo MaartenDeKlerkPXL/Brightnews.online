@@ -1,5 +1,119 @@
 [
   {
+    "id": "dg-20260922-health",
+    "type": "digest",
+    "digest_date": "2026-09-22",
+    "title": "Sommeil, urine et rythme cardiaque : trois avancées dans les soins de santé",
+    "summary": "Ces jours-ci montrent que les progrès en matière de santé résident parfois dans de petites étapes intelligentes. Une simple récompense pour un sommeil suffisant, un test urinaire qui détecte le cancer, et une IA qui examine un enregistrement cardiaque : trois histoires différentes avec un fil conducteur commun. Elles rendent les soins plus rapides, plus précis et parfois aussi plus faciles à maintenir. Prenez l'étude de l'University of Pittsburgh [1]. Plus de 1 100 étudiants ont reçu une application Fitbit et environ 468 d'entre eux ont reçu environ 5 dollars par nuit s'ils dormaient sept heures. Le résultat : 26...",
+    "image_alt": "Sommeil, urine et rythme cardiaque : trois avancées dans les soins de santé",
+    "meta_description": "Récompenser le sommeil, détecter le cancer de la vessie par urine et reconnaître les maladies cardiaques avec l'IA : trois messages de santé prometteurs de",
+    "meta_keywords": "Health",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aad7f471fbf338d1a44c36c_6aad7f45b52f83488b1f588b_researchers-pay-college-students-to-sleep-more-featured.webp",
+    "date": "2026-09-23T04:30:11.999Z",
+    "category": "Health",
+    "refs": [
+      {
+        "id": "1789965334441fmmtlceew",
+        "title": "Cinq dollars par nuit de sommeil améliore les notes des étudiants"
+      },
+      {
+        "id": "1790137627194t8vksyuta",
+        "title": "Le test urinaire GALEAS détecte le cancer de la vessie avec une précision surprenante"
+      },
+      {
+        "id": "1790051398328zl0crxok4",
+        "title": "Un nouvel outil IA détecte les maladies cardiaques via un ECG ordinaire"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260922-environment",
+    "type": "digest",
+    "digest_date": "2026-09-22",
+    "title": "Un wallaby réapparaît, deux éléphanteaux trouvent un nouveau foyer",
+    "summary": "Ces jours-ci, les bonnes nouvelles viennent de coins inattendus : un animal qui semblait disparu depuis cinquante ans, et deux jeunes éléphants qui ont trouvé une nouvelle famille grâce à l'intervention humaine. Trois histoires qui montrent comment la patience et les soins arrivent parfois juste à temps. En Australie-Occidentale, les chercheurs ont fouillé l'herbe en vain pendant un demi-siècle à la recherche d'une trace du nabarlek. Désormais, l'Australian Wildlife Conservancy a confirmé la présence de ce petit wallaby des rochers sur le continent, grâce aux pièges photographiques et à l'analyse des excréments [1]. En deux endroits de la région de...",
+    "image_alt": "Un wallaby réapparaît, deux éléphanteaux trouvent un nouveau foyer",
+    "meta_description": "Le nabarlek réapparaît en Australie après 50 ans et deux éléphanteaux orphelins trouvent un nouveau foyer au Kenya et une amitié profonde.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab167478ba2d06d7ab7f39a_6ab16746237dffae5e47e8a3_tiny-wallaby-nabarlek-trail-cameras-australia-featured.webp",
+    "date": "2026-09-23T04:29:19.501Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1790137706448cjjzj9eh0",
+        "title": "Le nabarlek-wallaby repéré en Australie après 50 ans"
+      },
+      {
+        "id": "1790137681223mewceid9h",
+        "title": "L'éléphanteau orphelin Kaikai reçoit trois rangers comme « parents »"
+      },
+      {
+        "id": "1790137654165e7izh7pd0",
+        "title": "Le petit éléphant Bungalu a survécu à une attaque de lion et trouvé une nouvelle famille"
+      }
+    ]
+  },
+  {
+    "id": "1790137706448cjjzj9eh0",
+    "title": "Le nabarlek-wallaby repéré en Australie après 50 ans",
+    "summary": "Des chercheurs de l'Australian Wildlife Conservancy ont confirmé pour la première fois en 50 ans la présence du nabarlek sur le continent australien. Des pièges photographiques et l'analyse des excréments ont révélé la présence de ce petit wallaby des rochers à deux nouveaux endroits dans la région de Kimberley en Australie-Occidentale : à Yampi Sound Training Area et à environ...",
+    "image_alt": "Petit nabarlek-wallaby capturé par un piège photographique dans la région de Kimberley en Australie",
+    "meta_description": "Après 50 ans, nouvelle preuve de la présence du rare nabarlek-wallaby en Australie, grâce aux pièges photographiques et aux recherches dans la région de Kimberley.",
+    "meta_keywords": "nabarlek, wallaby, Australie, Kimberley, Australian Wildlife Conservancy, espèce menacée, conservation de la nature, piège photographique",
+    "link": "https://www.goodgoodgood.co/articles/tiny-wallaby-nabarlek-trail-cameras-australia",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab167478ba2d06d7ab7f39a_6ab16746237dffae5e47e8a3_tiny-wallaby-nabarlek-trail-cameras-australia-featured.webp",
+    "date": "2026-09-23T04:28:27.084Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790137681223mewceid9h",
+    "title": "L'éléphanteau orphelin Kaikai reçoit trois rangers comme « parents »",
+    "summary": "Le 26 mai 2025, la Mara North Conservancy a découvert un éléphanteau nouveau-né auprès de sa mère décédée. Aucune autre femelle éléphant ne pouvait l'allaiter, et avec la nuit et les prédateurs qui approchaient, le Kenya Wildlife Service est intervenu. En collaboration avec le Mara Elephant Project, le veau a été transporté en Land Cruiser chez un vétérinaire, puis le...",
+    "image_alt": "L'éléphanteau orphelin Kaikai avec l'un de ses trois soigneurs à la Sheldrick Wildlife Trust",
+    "meta_description": "L'éléphanteau orphelin Kaikai a perdu sa mère, mais trois rangers ont pris soin d'elle et sont devenus ses nouveaux « parents ».",
+    "meta_keywords": "Kaikai, Sheldrick Wildlife Trust, éléphanteau orphelin, bien-être des éléphants, Kenya, sauvetage d'animaux, Mara North Conservancy",
+    "link": "https://www.goodgoodgood.co/articles/orphan-elephant-shared-custody-rangers",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab2c5ed932d71bd48f5030a_6ab2c5ec1ed52957fcf8d683_orphan-elephant-shared-custody-rangers-featured.webp",
+    "date": "2026-09-23T04:28:02.272Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790137654165e7izh7pd0",
+    "title": "Le petit éléphant Bungalu a survécu à une attaque de lion et trouvé une nouvelle famille",
+    "summary": "Le petit éléphant africain Bungalu a survécu un mois seul après avoir été attaqué par un lion. En février 2026, le Kenya Wildlife Service a reçu des signalements d'un petit éléphant solitaire près de Bungule, à proximité du Mont Kasiagau. Malgré les patrouilles, il est resté caché et s'enfuyait à chaque fois par peur, même lorsque le Sheldrick Wildlife Trust...",
+    "image_alt": "Le petit éléphant Bungalu au Sheldrick Wildlife Trust avec son biberon",
+    "meta_description": "Le petit éléphant Bungalu a survécu à une attaque de lion et un mois seul à l'état sauvage. Il a maintenant trouvé une nouvelle famille au Sheldrick Wildlife Trust.",
+    "meta_keywords": "Bungalu, éléphant, Sheldrick Wildlife Trust, éléphant orphelin, Kenya, Kaikai, conservation de la nature",
+    "link": "https://www.goodgoodgood.co/articles/baby-elephant-bungalu-rescued-lions",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab2de78850ca389675da402_6ab2de749388e05e49ac3373_baby-elephant-bungalu-rescued-lions-featured-3.webp",
+    "date": "2026-09-23T04:27:34.991Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790137627194t8vksyuta",
+    "title": "Le test urinaire GALEAS détecte le cancer de la vessie avec une précision surprenante",
+    "summary": "Une étude observationnelle au Royaume-Uni montre des résultats solides pour GALEAS Bladder, un test urinaire génétique non invasif de Nonacus Clinical Services. Chez 964 patients orientés entre 2024 et 2025 pour un examen d'urgence en cas d'hématurie, le test a détecté 71 des 77 cas de cancer de la vessie confirmés par cystoscopie, y compris les 17 tumeurs envahissant le...",
+    "image_alt": "Un échantillon d'urine est testé pour détecter les marqueurs génétiques du cancer de la vessie",
+    "meta_description": "Le nouveau test urinaire GALEAS détecte 71 cas de cancer de la vessie sur 77, avec une valeur prédictive négative supérieure à 99 %.",
+    "meta_keywords": "GALEAS Bladder, cancer de la vessie, test urinaire, Nonacus, hématurie, cystoscopie, diagnostic du cancer",
+    "link": "https://www.goodnewsnetwork.org/exceptional-detection-rates-of-bladder-cancer-recorded-in-study-of-simple-yet-state-of-the-art-test/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2024/06/woman-scientist-microscope-research-lab-test-pubdomain-National-Cancer-Institute.jpg",
+    "date": "2026-09-23T04:27:09.661Z",
+    "category": "Health",
+    "score": 9
+  },
+  {
     "id": "17900955302019yo4v9fb2",
     "title": "135.000 animaux de compagnie adoptés via Clear The Shelters de NBC",
     "summary": "La campagne annuelle « Clear The Shelters » de NBC et de sa maison mère Universal a permis cette année à 135.000 chiens, chats et autres animaux de compagnie de trouver un nouveau foyer. L'action s'est déroulée de juillet à septembre et a également collecté 480.000 dollars pour plus de 1.000 refuges participants. En 12 ans d'existence, la campagne a...",
@@ -2490,89 +2604,5 @@
     "date": "2026-09-06T15:21:18.979Z",
     "category": "Tech",
     "score": 9
-  },
-  {
-    "id": "1788668077914dbmh5cikz",
-    "title": "Des bouteilles sauvent les dauphins et plus de bonnes nouvelles",
-    "summary": "Une simple invention consistant à fixer des bouteilles en plastique vides aux filets de pêche réduit les prises accessoires de dauphins de 88 pour cent, a découvert un biologiste marin émérite. La Flandre ferme le delphinarium Boudewijn Seapark au plus tard en 2037. L'Inde a lancé son premier train à hydrogène construit sur place pour les lignes non électrifiées. Une...",
-    "image_alt": "Un dauphin nage près d'un filet de pêche auquel sont fixées des bouteilles en plastique vides",
-    "meta_description": "Des bouteilles en plastique sauvent les dauphins, le premier train à hydrogène de l'Inde et percée du recyclage du lithium : aperçu des bonnes nouvelles.",
-    "meta_keywords": "dauphins, train à hydrogène, recyclage du lithium, bouteilles en plastique, Great Bubble Barrier, Wota Box, stockage d'énergie, bien-être animal, durabilité",
-    "link": "https://squirrel-news.net/news/plastic-bottles-saving-dolphins-indias-first-hydrogen-powered-train-lithium-recycling-breakthrough/",
-    "source": "Squirrel-News.net",
-    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/07/Delfine.jpg",
-    "date": "2026-09-06T04:14:39.875Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1788667974151j2zsxndgd",
-    "title": "Salle de Sport Extérieure Aide les Sans-Abri de Paris",
-    "summary": "Une entreprise finlandaise, Omnigym, a installé une salle de sport extérieure dans un centre d'accueil pour sans-abri à Paris. L'objectif était de tester si un accès facile à l'exercice physique pouvait améliorer la santé physique et mentale des résidents. Après un mois, les données anonymes et les auto-évaluations montrent que 80% des participants ont constaté une amélioration de leur santé...",
-    "image_alt": "Équipements de salle de sport extérieure installés dans la cour d'un centre d'accueil pour sans-abri à Paris",
-    "meta_description": "L'entreprise finlandaise Omnigym installe une salle de sport extérieure dans un centre d'accueil pour sans-abri à Paris ; 80% signalent une meilleure santé.",
-    "meta_keywords": "Omnigym, sans-abri, Paris, salle de sport extérieure, santé, Emmaüs Solidarité, fitness",
-    "link": "https://www.goodnewsnetwork.org/new-gym-in-paris-helps-homeless-improve-their-health-and-habits/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Wilfried-enjoying-The-Shelter-Gym-in-Paris-RELEASED-BY-Omnigym.jpeg",
-    "date": "2026-09-06T04:12:56.864Z",
-    "category": "Health",
-    "score": 9
-  },
-  {
-    "id": "17886485649093lmuettpf",
-    "title": "Le cerveau du poisson éléphant filtre intelligemment ses propres signaux",
-    "summary": "Des scientifiques ont découvert comment le cerveau du poisson éléphant filtre le bruit électrique. Ce poisson africain émet et reçoit continuellement des signaux électriques et doit ignorer ses propres signaux pour pouvoir détecter ses proies. Des chercheurs de l'Institut Zuckerman de l'Université Columbia, dirigés par Nathaniel Sawtell, ont cartographié les neurones de la région cérébrale concernée et combiné cela avec...",
-    "image_alt": "Poisson éléphant nageant dans l'eau, connu pour son électroréception",
-    "meta_description": "Des chercheurs élucident comment le cerveau du poisson éléphant filtre le bruit électrique pour trouver ses proies.",
-    "meta_keywords": "poisson éléphant, recherche cérébrale, neurosciences, électroréception, Université Columbia, Nature, cerveau",
-    "link": "https://www.npr.org/2026/09/04/nx-s1-5953883/scientists-study-how-the-brain-of-a-fish-filters-out-signals",
-    "source": "NPR.org",
-    "image": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
-    "date": "2026-09-05T22:49:26.838Z",
-    "category": "Science",
-    "score": 8
-  },
-  {
-    "id": "1788648470866m1vi4va9k",
-    "title": "Une Laverie Devient Bibliothèque Pour Enfants",
-    "summary": "Dans une laverie à Wyoming, Ohio, quatre paniers remplis de livres pour enfants comme « Mike Mulligan and His Steam Shovel » sont accrochés au mur. Janice Weiser a créé ce coin lecture en novembre et le complète tous les dix jours. Il fait partie de la Laundromat Library League, un réseau de plus de 200 laveries aux États-Unis qui...",
-    "image_alt": "Des paniers de livres pour enfants accrochés au mur d'une laverie",
-    "meta_description": "Les laveries aux États-Unis proposent des livres pour enfants gratuits via la Laundromat Library League, avec déjà 400 000 livres distribués.",
-    "meta_keywords": "laverie bibliothèque, livres pour enfants, Laundromat Library League, promotion de la lecture, livres gratuits, Ohio",
-    "link": "https://reasonstobecheerful.world/the-spark-laundromat-libraries/",
-    "source": "ReasonsToBeCheerful.world",
-    "image": "https://s.w.org/images/core/emoji/17.0.2/72x72/1fae7.png",
-    "date": "2026-09-05T22:47:52.732Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "1788647811819l0v9pyg4w",
-    "title": "Un Nouveau Collège Veut Réduire les Frais d'Études",
-    "summary": "À Montpelier, Vermont, l'Institut Greenway est en cours de création, un tout nouveau collège qui souhaite réorganiser l'enseignement supérieur différemment. Sur un campus du dix-neuvième siècle, l'école combine l'apprentissage pratique encadré par des enseignants avec la suppression des couches administratives superflues et des équipements de luxe pour réduire les coûts. Le fondateur Mark Somerville, ancien doyen de l'Olin College of...",
-    "image_alt": "Mark Somerville se tient devant un tableau blanc avec les tâches pour l'ouverture de l'Institut Greenway sur le campus historique de Montpelier, Vermont.",
-    "meta_description": "Le nouvel Institut Greenway au Vermont veut rendre l'enseignement supérieur plus abordable grâce à l'apprentissage pratique et à moins de bureaucratie.",
-    "meta_keywords": "Institut Greenway, enseignement supérieur, Vermont, frais d'études, apprentissage pratique, Mark Somerville, Future Universities Alliance",
-    "link": "https://ww2.kqed.org/mindshift/2026/09/04/hands-on-learning-as-college-a-new-school-hopes-to-curb-rising-tuition-and-create-new-pathways/",
-    "source": "Ww2.kqed.org/mindshift",
-    "image": "https://cdn.kqed.org/wp-content/uploads/sites/23/2026/09/he-reinventing-college-1-2000x1334.jpeg",
-    "date": "2026-09-05T22:36:52.688Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "1788647730911cqw2ar8lh",
-    "title": "Étude sur l'obésité via la biologie humaine",
-    "summary": "The Humane Research Trust soutient depuis 1961 des chercheurs en quête d'alternatives aux tests sur animaux dans la recherche médicale. Dans un article récent, l'organisation met en lumière des recherches importantes sur l'obésité et les maladies métaboliques connexes. Elle souligne que l'obésité est bien plus que du surpoids et qu'il faut des méthodes de recherche qui correspondent véritablement à la...",
-    "image_alt": "Recherche scientifique sur l'obésité et la biologie humaine",
-    "meta_description": "The Humane Research Trust met en lumière la recherche sur l'obésité via des méthodes axées sur la biologie humaine plutôt que les tests sur animaux.",
-    "meta_keywords": "obésité, Humane Research Trust, tests sur animaux, recherche médicale, maladies métaboliques, biologie humaine",
-    "link": "https://www.openaccessgovernment.org/understanding-obesity-through-human-biology/213572/",
-    "source": "Openaccessgovernment.org",
-    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
-    "date": "2026-09-05T22:35:31.778Z",
-    "category": "Health",
-    "score": 7
   }
 ]
