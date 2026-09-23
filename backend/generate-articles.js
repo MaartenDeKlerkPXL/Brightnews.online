@@ -75,7 +75,12 @@ function veiligeAfbeelding(u, fallback) {
 // dezelfde pagina levert bij elke generatie dezelfde foto, anders zou elke
 // Action-run alle pagina's laten wijzigen.
 const RESERVE_PER_CATEGORIE = {
-    'Tech': 4, 'Health': 5, 'Science': 4, 'Lifestyle': 4, 'Environment': 5, 'Finance': 4
+    // Gelijkgetrokken met index.js en met wat er in assets/fallback/ staat
+    // (2026-09-23). Deze stonden nog op de aantallen van vóór de aanvulling
+    // van 20 september, waardoor artikelpagina's alleen de eerste vier
+    // Science- en Lifestyle-foto's gebruikten en zestien nieuwe foto's hier
+    // ongebruikt bleven liggen.
+    'Tech': 4, 'Health': 5, 'Science': 11, 'Lifestyle': 9, 'Environment': 10, 'Finance': 4
 };
 
 function reserveAfbeelding(artikel) {
@@ -100,12 +105,22 @@ function reserveAfbeelding(artikel) {
 // pagina kan een crawler naar zijn buren lopen, en vandaar verder — zo is
 // uiteindelijk elk artikel bereikbaar. Dat is precies wat ontbrak: Google
 // kende 2.341 URL's alleen uit de sitemap en haalde ze niet op.
-const BUREN_PER_KANT = 3;
+// De ruggengraat: twee artikelen aan elke kant, op datum. Dit is wat de
+// ketting heel houdt — elke pagina raakt zijn directe buren, dus vanaf elke
+// geïndexeerde pagina is het hele archief te belopen. Hier niet aan morrelen
+// zonder de bereikbaarheid opnieuw na te rekenen.
+const BUREN_PER_KANT = 2;
+
+// Daar bovenop, als de categorie bekend is: twee artikelen uit dezelfde
+// categorie. Die zijn voor een lezer relevanter dan "toevallig dezelfde week",
+// maar ze mogen de datumketting niet vervangen — de categorie is maar voor
+// 39% van het archief bekend (zie backend/backfill-categorie.js).
+const CATEGORIE_EXTRA = 2;
 
 function bouwBurenIndex(manifest) {
     const rijen = Object.entries(manifest.articles || {})
         .filter(([, e]) => e && e.date)
-        .map(([id, e]) => ({ id, date: e.date, slugs: e.slugs || {}, titles: e.titles || {} }));
+        .map(([id, e]) => ({ id, date: e.date, slugs: e.slugs || {}, titles: e.titles || {}, category: e.category || null }));
     // Nieuwste eerst; bij een gelijke datum op id, zodat de volgorde tussen
     // twee runs niet verspringt.
     rijen.sort((a, b) => (a.date === b.date ? (a.id < b.id ? 1 : -1) : (a.date < b.date ? 1 : -1)));
@@ -119,14 +134,40 @@ function burenHtml(artikel, lang, burenIndex) {
     const i = positie.get(String(artikel.id));
     if (i === undefined) return '';
 
-    const kandidaten = [];
-    for (let stap = 1; kandidaten.length < BUREN_PER_KANT * 2 && stap <= rijen.length; stap++) {
-        for (const j of [i - stap, i + stap]) {
-            if (j < 0 || j >= rijen.length || kandidaten.length >= BUREN_PER_KANT * 2) continue;
+    const bruikbaar = r => r.slugs[lang] && r.titles[lang];
+    const gekozen = [];
+    const gezien = new Set([String(artikel.id)]);
+
+    // Eerst dezelfde categorie, want dat is voor een lezer het sterkste
+    // verband. Dichtstbijzijnd in tijd eerst, zodat het niet willekeurig oogt.
+    const eigenCategorie = rijen[i].category;
+    if (eigenCategorie) {
+        const zelfde = rijen
+            .map((r, j) => ({ r, afstand: Math.abs(j - i) }))
+            .filter(({ r }) => r.category === eigenCategorie && !gezien.has(r.id) && bruikbaar(r))
+            .sort((a, b) => a.afstand - b.afstand)
+            .slice(0, CATEGORIE_EXTRA);
+        for (const { r } of zelfde) { gekozen.push(r); gezien.add(r.id); }
+    }
+
+    // Daarna de datumburen: twee de ene kant op, twee de andere. Die gaan er
+    // altijd bij, ook als de categorie al genoeg opleverde — zij vormen de
+    // ketting. Elke richting telt zijn eigen twee, zodat een gat aan één kant
+    // (bijvoorbeeld bij het nieuwste artikel) de andere kant niet opeet.
+    for (const richting of [-1, 1]) {
+        let gevonden = 0;
+        for (let stap = 1; stap <= rijen.length && gevonden < BUREN_PER_KANT; stap++) {
+            const j = i + richting * stap;
+            if (j < 0 || j >= rijen.length) break;
             const r = rijen[j];
-            if (r.slugs[lang] && r.titles[lang]) kandidaten.push(r);
+            if (gezien.has(r.id) || !bruikbaar(r)) continue;
+            gekozen.push(r);
+            gezien.add(r.id);
+            gevonden++;
         }
     }
+
+    const kandidaten = gekozen;
     if (!kandidaten.length) return '';
 
     const items = kandidaten.map(r =>
@@ -474,6 +515,9 @@ function main() {
             // hiernaartoe te linken (zie burenHtml). De slug volstaat daar
             // niet — daar kun je geen leesbare linktekst van maken.
             entry.titles[lang] = perTaal[lang].title;
+            // De categorie is taal-onafhankelijk; de eerste taal die hem
+            // levert wint. Nodig voor "meer uit deze categorie" in burenHtml.
+            if (!entry.category && perTaal[lang].category) entry.category = perTaal[lang].category;
         }
 
         teSchrijven.push([id, perTaal, slugsPerTaal]);

@@ -464,10 +464,32 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   pagina — een Duitse kop boven Nederlandse links. Die staat er nu uit; de
   kop komt uit de statische HTML en hoort bij zijn eigen links.
 
-  **Wat dit níét oplost:** een leesbaarder verband dan "rond dezelfde datum".
-  Zodra de categorie in het manifest staat (de generator kan dat nu makkelijk
-  meeschrijven) kan dit een echte "meer uit deze categorie" worden, met de
-  datumketting als terugval voor het archief. Sitemap opnieuw gegenereerd.
+  **Aanvulling diezelfde dag: de categorie zit er nu ook in.** Het manifest
+  kende hem niet, maar er bleek meer te herleiden dan gedacht, uit drie
+  bronnen (`backend/backfill-categorie.js`): de actuele lijsten (150), het
+  digest-id — dagoverzichten heten `dg-JJJJMMDD-categorie` (5) — en de
+  reservefoto in de HTML, want `assets/fallback/<categorie>-N.jpg` verraadt
+  hem (81). Samen **236 van de 609 artikelen, 39%**. De generator schrijft de
+  categorie voortaan zelf mee, dus dat percentage loopt vanzelf op.
+
+  Het blok toont nu eerst maximaal twee artikelen uit **dezelfde categorie** en
+  daarna de datumburen. Dat laatste is bewust niet vervangen: de datumketting
+  is wat het archief bereikbaar houdt, en de categorie is voor 61% van de
+  artikelen onbekend. Na de wijziging opnieuw nagerekend: **609/609 bereikbaar
+  in alle vijf de talen**, 14.485 links, nul kapot.
+
+  Eén waarschuwing bij de derde bron: `reserveAfbeelding()` valt terug op
+  Lifestyle als de categorie niet in `RESERVE_PER_CATEGORIE` staat. Een
+  artikel met een categorie buiten die zes (`General` bestaat) leest daardoor
+  als Lifestyle. Handvol gevallen, en het ergste gevolg is een iets minder
+  passende suggestie.
+
+  **Bijvangst, en het was een echte fout van ons.** `RESERVE_PER_CATEGORIE`
+  in `generate-articles.js` stond nog op de aantallen van vóór 20 september
+  (Science 4, Lifestyle 4, Environment 5) terwijl `index.js` en de map al op
+  11, 9 en 10 stonden. Artikelpagina's gebruikten dus alleen de eerste vier
+  Science-foto's, en **zestien van de foto's die Maarten had aangeleverd lagen
+  er ongebruikt bij**. Gelijkgetrokken. Sitemap opnieuw gegenereerd.
 
 - [x] **37. De foutstaat van de nieuwslijst bestond niet (2026-09-23).** In
   `laadNieuws` stonden beide meldingen uitgecommentarieerd:
