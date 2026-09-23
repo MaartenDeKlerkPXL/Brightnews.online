@@ -286,7 +286,6 @@ window.translations = {
     "fb_v3": "Hoe vind je het eruitzien?",
     "fb_v4": "Vind je makkelijk je weg?",
     "fb_v5": "Lezen de teksten prettig?",
-    "fb_meer": "Nog twee korte vragen",
     "fb_droom": "Als je mocht dromen: wat zou er beter kunnen?",
     "fb_droom_plh": "Schrijf gerust op wat er in je opkomt.",
     "fb_email_label": "E-mailadres, als je het goedvindt dat we doorvragen",
@@ -303,7 +302,11 @@ window.translations = {
     "index_error_tekst": "Er ging iets mis bij het ophalen. Controleer je verbinding en probeer het nog eens.",
     "index_error_knop": "Opnieuw proberen",
     "climate_url": "https://stripe.com/nl/climate",
-    "related_title": "Meer goed nieuws"
+    "related_title": "Meer goed nieuws",
+    "fb_v6": "Zijn de onderwerpen interessant?",
+    "fb_v7": "Is de site snel genoeg?",
+    "fb_v8": "Zou je BrightNews aanraden aan iemand?",
+    "fb_geenidee": "geen idee"
   },
   "en": {
     "skip_to_content": "Skip to main content",
@@ -592,7 +595,6 @@ window.translations = {
     "fb_v3": "How do you like the way it looks?",
     "fb_v4": "Can you find your way around easily?",
     "fb_v5": "Are the texts pleasant to read?",
-    "fb_meer": "Two more short questions",
     "fb_droom": "If you could dream: what could be better?",
     "fb_droom_plh": "Write down whatever comes to mind.",
     "fb_email_label": "Email address, if you’re happy for us to follow up",
@@ -609,7 +611,11 @@ window.translations = {
     "index_error_tekst": "Something went wrong while fetching it. Check your connection and give it another go.",
     "index_error_knop": "Try again",
     "climate_url": "https://stripe.com/climate",
-    "related_title": "More good news"
+    "related_title": "More good news",
+    "fb_v6": "Are the topics interesting?",
+    "fb_v7": "Is the site fast enough?",
+    "fb_v8": "Would you recommend BrightNews to someone?",
+    "fb_geenidee": "no idea"
   },
   "de": {
     "skip_to_content": "Zum Hauptinhalt springen",
@@ -898,7 +904,6 @@ window.translations = {
     "fb_v3": "Wie gefällt dir das Aussehen?",
     "fb_v4": "Findest du dich gut zurecht?",
     "fb_v5": "Lesen sich die Texte angenehm?",
-    "fb_meer": "Noch zwei kurze Fragen",
     "fb_droom": "Wenn du träumen dürftest: Was könnte besser sein?",
     "fb_droom_plh": "Schreib einfach auf, was dir einfällt.",
     "fb_email_label": "E-Mail-Adresse, falls wir nachfragen dürfen",
@@ -915,7 +920,11 @@ window.translations = {
     "index_error_tekst": "Beim Abrufen ist etwas schiefgelaufen. Prüf deine Verbindung und versuch es noch einmal.",
     "index_error_knop": "Erneut versuchen",
     "climate_url": "https://stripe.com/de/climate",
-    "related_title": "Mehr gute Nachrichten"
+    "related_title": "Mehr gute Nachrichten",
+    "fb_v6": "Sind die Themen interessant?",
+    "fb_v7": "Ist die Seite schnell genug?",
+    "fb_v8": "Würdest du BrightNews weiterempfehlen?",
+    "fb_geenidee": "keine Ahnung"
   },
   "fr": {
     "skip_to_content": "Aller au contenu principal",
@@ -1204,7 +1213,6 @@ window.translations = {
     "fb_v3": "Que pensez-vous de l’apparence ?",
     "fb_v4": "Vous repérez-vous facilement ?",
     "fb_v5": "Les textes sont-ils agréables à lire ?",
-    "fb_meer": "Encore deux petites questions",
     "fb_droom": "Si vous pouviez rêver : qu’est-ce qui pourrait être mieux ?",
     "fb_droom_plh": "Écrivez ce qui vous vient à l’esprit.",
     "fb_email_label": "Adresse e-mail, si vous acceptez qu’on vous recontacte",
@@ -1221,7 +1229,11 @@ window.translations = {
     "index_error_tekst": "Quelque chose s’est mal passé lors du chargement. Vérifiez votre connexion et réessayez.",
     "index_error_knop": "Réessayer",
     "climate_url": "https://stripe.com/fr/climate",
-    "related_title": "Plus de bonnes nouvelles"
+    "related_title": "Plus de bonnes nouvelles",
+    "fb_v6": "Les sujets sont-ils intéressants ?",
+    "fb_v7": "Le site est-il assez rapide ?",
+    "fb_v8": "Recommanderiez-vous BrightNews ?",
+    "fb_geenidee": "sans avis"
   },
   "es": {
     "skip_to_content": "Saltar al contenido principal",
@@ -1510,7 +1522,6 @@ window.translations = {
     "fb_v3": "¿Qué te parece el aspecto?",
     "fb_v4": "¿Te orientas con facilidad?",
     "fb_v5": "¿Se leen bien los textos?",
-    "fb_meer": "Dos preguntas más, muy cortas",
     "fb_droom": "Si pudieras soñar: ¿qué podría mejorar?",
     "fb_droom_plh": "Escribe lo que se te ocurra.",
     "fb_email_label": "Correo electrónico, si te parece bien que te preguntemos más",
@@ -1527,6 +1538,10 @@ window.translations = {
     "index_error_tekst": "Algo ha salido mal al cargarlas. Revisa tu conexión e inténtalo de nuevo.",
     "index_error_knop": "Intentar de nuevo",
     "climate_url": "https://stripe.com/es/climate",
-    "related_title": "Más buenas noticias"
+    "related_title": "Más buenas noticias",
+    "fb_v6": "¿Te parecen interesantes los temas?",
+    "fb_v7": "¿Va el sitio lo bastante rápido?",
+    "fb_v8": "¿Recomendarías BrightNews?",
+    "fb_geenidee": "sin opinión"
   }
 };

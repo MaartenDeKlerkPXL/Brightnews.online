@@ -212,6 +212,22 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   2910 artikelpagina's opnieuw gegenereerd moeten worden. Nagemeten dat de
   link en het venster het ook op een artikelpagina doen.
 
+  **Bijgewerkt 2026-09-23 na Maartens doorloop.** Zeven wijzigingen: de
+  uitklapper "nog twee korte vragen" is eruit (die verstopte juist de vragen
+  die niemand invulde), er kwamen drie vragen bij (onderwerpen, snelheid,
+  aanbeveling — acht in totaal), elke schaal heeft nu een **geen idee**-knop
+  ernaast, het venster is breder op desktop (520 → 640px), er is nog maar één
+  schuifbalk, "prima" lijnt nu uit onder de 5 in plaats van tegen de rand, en
+  de knoppen staan gecentreerd.
+
+  Twee dingen daarvan zaten dieper dan ze leken. De dubbele schuifbalk kwam
+  doordat zowel het venster als het formulier een `max-height` had; het venster
+  is nu een flex-kolom en het formulier het enige dat schuift. En "geen idee"
+  is bewust **0** en niet `NULL` — dat is een antwoord, geen overslaan, en zo
+  blijft die twee uit elkaar te houden. **Daardoor is het SQL-bestand
+  gewijzigd**: drie kolommen erbij en de check van `1 and 5` naar `0 and 5`.
+  De tabel bestond nog niet, dus dat kon zonder migratie.
+
   **Wat er nog moet gebeuren, en het is weinig:**
   1. **De tabel aanmaken.** `supabase/feedback-tabel-2026-09-21.sql` in de
      SQL-editor van Supabase draaien. Tot dan geeft het versturen netjes de

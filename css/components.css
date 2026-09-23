@@ -1183,14 +1183,26 @@ body {
        de 'margin: auto' waarmee een <dialog> zichzelf normaal midden in beeld
        zet — het venster plakte daardoor linksboven. Hier dus expliciet terug. */
     margin: auto;
-    width: min(520px, calc(100vw - 32px));
-    max-height: min(86vh, 760px);
+    width: min(640px, calc(100vw - 32px));
+    max-height: min(88vh, 860px);
     padding: 0;
+    /* Er verschenen twee schuifbalken: één van het venster zelf en één van
+       het formulier erin. Alleen het formulier mag schuiven. */
+    overflow: hidden;
     border: 1px solid var(--border-color, #E8EEE8);
     border-radius: 16px;
     background: var(--white, #FFFFFF);
     color: var(--dark-text, #1A1A1A);
     box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+}
+
+/* Alleen als het venster openstaat: een <dialog> krijgt display:none van de
+   browser zelf zolang hij dicht is, en die regel moeten we niet overschrijven.
+   De flex-kolom zorgt dat het formulier exact de hoogte van het venster
+   krijgt — niet 2px eroverheen, en dus geen tweede schuifbalk. */
+.fb-venster[open] {
+    display: flex;
+    flex-direction: column;
 }
 
 .fb-venster::backdrop {
@@ -1203,7 +1215,12 @@ body {
     flex-direction: column;
     gap: 18px;
     padding: 28px 26px 24px;
-    max-height: inherit;
+    /* Het formulier is het enige dat schuift. Geen eigen max-height: als
+       flex-item krijgt het precies de ruimte die het venster overhoudt.
+       min-height 0 hoort erbij — zonder die regel weigert een flex-item
+       kleiner te worden dan zijn inhoud en schuift er niets. */
+    flex: 1 1 auto;
+    min-height: 0;
     overflow-y: auto;
 }
 
@@ -1252,9 +1269,39 @@ body {
     font-weight: 600;
 }
 
-.fb-schaal {
+.fb-schaal-rij {
     display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* De groep die de uitlijning bepaalt: de bijschriften horen precies zo breed
+   te zijn als de vijf bolletjes, zodat "prima" onder de 5 eindigt en niet
+   tegen de rand van het venster. */
+.fb-schaal-groep {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.fb-schaal {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 8px;
+}
+
+/* "Geen idee" hoort bij de vraag maar niet bij de schaal — daarom ernaast,
+   en bewust smaller dan een schaalknop breed is. */
+.fb-geen-idee {
+    flex: 0 0 auto;
+}
+
+.fb-geen-idee span {
+    width: auto;
+    min-width: 84px;
+    padding: 0 12px;
+    font-size: 0.78rem;
+    text-align: center;
+    line-height: 1.2;
 }
 
 /* De radio zelf is weggehaald uit beeld maar niet uit de tabvolgorde: je kunt
@@ -1270,7 +1317,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 44px;
+    width: 100%;
+    min-width: 44px;
     height: 44px;
     border: 1px solid var(--border-color, #E8EEE8);
     border-radius: 10px;
@@ -1304,20 +1352,6 @@ body {
     margin-top: 6px;
     font-size: 0.72rem;
     color: var(--medium-text, #505F50);
-}
-
-.fb-meer summary {
-    font-size: 0.88rem;
-    color: var(--medium-text, #505F50);
-    cursor: pointer;
-}
-
-.fb-meer[open] summary {
-    margin-bottom: 16px;
-}
-
-.fb-meer .fb-vraag + .fb-vraag {
-    margin-top: 16px;
 }
 
 .fb-open,
@@ -1376,7 +1410,6 @@ body {
 /* Na een geslaagde verzending blijft alleen het bedankje staan; het venster
    sluit daarna vanzelf. */
 .fb-form.fb-verzonden .fb-vraag,
-.fb-form.fb-verzonden .fb-meer,
 .fb-form.fb-verzonden .fb-open,
 .fb-form.fb-verzonden .fb-email,
 .fb-form.fb-verzonden .fb-knoppen,
@@ -1386,7 +1419,7 @@ body {
 
 .fb-knoppen {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -1416,17 +1449,56 @@ body {
     cursor: default;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 560px) {
     .fb-form {
         padding: 24px 18px 20px;
     }
 
-    .fb-bol span {
-        width: 100%;
-        height: 46px;
+    /* Naast elkaar past niet meer: de schaal krijgt de volle breedte en
+       "geen idee" gaat eronder. */
+    .fb-schaal-rij {
+        flex-wrap: wrap;
     }
 
-    .fb-bol {
-        flex: 1 1 0;
+    .fb-schaal-groep {
+        flex: 1 1 100%;
     }
+
+    .fb-geen-idee {
+        flex: 1 1 100%;
+        margin-top: 8px;
+    }
+
+    .fb-geen-idee span {
+        width: 100%;
+        height: 40px;
+    }
+
+    .fb-bol span {
+        height: 46px;
+    }
+}
+
+/* ==========================================================================
+   Ankerlinks en opsommingen (2026-09-23)
+   ========================================================================== */
+
+/* De footerlink "Cookies" wijst naar Privacy.html#cookies-section, maar de
+   koptekst staat vastgeplakt (position: sticky) en is 136px hoog. De browser
+   scrolde het kopje dus netjes naar de bovenkant van het venster — waar het
+   vervolgens onder de balk verdween. Deze marge houdt daar rekening mee. */
+:target {
+    scroll-margin-top: 150px;
+}
+
+/* De globale reset zet padding op 0 voor álles, dus ook voor <ul>. Met
+   list-style-position: outside belandden de bolletjes daardoor búiten de
+   linkerkantlijn, links van de alinea's erboven. Deze inspringing zet ze
+   weer binnen de uitlijning van de rest van de tekst. */
+main ul:not(.nav-links):not(.footer-links ul):not(.meer-nieuws ul) {
+    padding-left: 1.3em;
+}
+
+main li {
+    margin-bottom: 6px;
 }

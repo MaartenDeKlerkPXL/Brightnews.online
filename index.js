@@ -1282,13 +1282,25 @@ window.copyLink = copyLink;
 const FEEDBACK_URL = 'https://rquuqypgaannrakdrabj.supabase.co/rest/v1/feedback';
 const FEEDBACK_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJxdXVxeXBnYWFubnJha2RyYWJqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA4MTQyODUsImV4cCI6MjA4NjM5MDI4NX0.-H5ZIcLXBflqKvC0VQGlVGIX29G-nceC9ak5IrhJCzg';
 
+// Volgorde is bewust: eerst waar de site over gáát (inhoud), dan of hij het
+// doet, dan hoe hij eruitziet, en als afsluiter de aanbevelingsvraag. De
+// uitklapper "nog twee korte vragen" is er op 2026-09-23 uit — hij verstopte
+// juist de vragen die niemand invulde.
 const FEEDBACK_VRAGEN = [
-    { kolom: 'positief',  sleutel: 'fb_v1', extra: false },
-    { kolom: 'techniek',  sleutel: 'fb_v2', extra: false },
-    { kolom: 'uiterlijk', sleutel: 'fb_v3', extra: false },
-    { kolom: 'navigatie', sleutel: 'fb_v4', extra: true },
-    { kolom: 'teksten',   sleutel: 'fb_v5', extra: true },
+    { kolom: 'positief',    sleutel: 'fb_v1' },
+    { kolom: 'onderwerpen', sleutel: 'fb_v6' },
+    { kolom: 'techniek',    sleutel: 'fb_v2' },
+    { kolom: 'snelheid',    sleutel: 'fb_v7' },
+    { kolom: 'uiterlijk',   sleutel: 'fb_v3' },
+    { kolom: 'navigatie',   sleutel: 'fb_v4' },
+    { kolom: 'teksten',     sleutel: 'fb_v5' },
+    { kolom: 'aanbeveling', sleutel: 'fb_v8' },
 ];
+
+// "Geen idee" is een eigen antwoord en niet hetzelfde als niets invullen:
+// daarom 0 in plaats van null. Zo kun je later zien of iemand een vraag
+// overslaat omdat hij er geen mening over heeft, of omdat hij afhaakte.
+const GEEN_MENING = 0;
 
 // Grof genoeg om iets te zeggen over "werkt het op mijn toestel", te grof om
 // iemand aan te herkennen. Bewust geen user agent opslaan.
@@ -1301,18 +1313,30 @@ function feedbackToestel() {
 
 function feedbackVraagHtml(vraag) {
     const knoppen = [1, 2, 3, 4, 5].map(n => `
-        <label class="fb-bol">
-            <input type="radio" name="fb-${vraag.kolom}" value="${n}">
-            <span>${n}</span>
-        </label>`).join('');
+                    <label class="fb-bol">
+                        <input type="radio" name="fb-${vraag.kolom}" value="${n}">
+                        <span>${n}</span>
+                    </label>`).join('');
 
+    // De schaal en de bijschriften zitten in één groep, zodat "prima" precies
+    // onder de 5 uitkomt in plaats van tegen de rand van het venster. "Geen
+    // idee" staat ernaast en telt niet mee voor die uitlijning.
     return `
         <fieldset class="fb-vraag">
             <legend data-i18n="${vraag.sleutel}">${getT(vraag.sleutel)}</legend>
-            <div class="fb-schaal">${knoppen}</div>
-            <div class="fb-uitersten">
-                <span data-i18n="fb_laag">${getT('fb_laag')}</span>
-                <span data-i18n="fb_hoog">${getT('fb_hoog')}</span>
+            <div class="fb-schaal-rij">
+                <div class="fb-schaal-groep">
+                    <div class="fb-schaal">${knoppen}
+                    </div>
+                    <div class="fb-uitersten">
+                        <span data-i18n="fb_laag">${getT('fb_laag')}</span>
+                        <span data-i18n="fb_hoog">${getT('fb_hoog')}</span>
+                    </div>
+                </div>
+                <label class="fb-bol fb-geen-idee">
+                    <input type="radio" name="fb-${vraag.kolom}" value="${GEEN_MENING}">
+                    <span data-i18n="fb_geenidee">${getT('fb_geenidee')}</span>
+                </label>
             </div>
         </fieldset>`;
 }
@@ -1331,12 +1355,7 @@ function bouwFeedbackVenster() {
             <h2 data-i18n="fb_titel">${getT('fb_titel')}</h2>
             <p class="fb-intro" data-i18n="fb_intro">${getT('fb_intro')}</p>
 
-            ${FEEDBACK_VRAGEN.filter(v => !v.extra).map(feedbackVraagHtml).join('')}
-
-            <details class="fb-meer">
-                <summary data-i18n="fb_meer">${getT('fb_meer')}</summary>
-                ${FEEDBACK_VRAGEN.filter(v => v.extra).map(feedbackVraagHtml).join('')}
-            </details>
+            ${FEEDBACK_VRAGEN.map(feedbackVraagHtml).join('')}
 
             <label class="fb-open">
                 <span data-i18n="fb_droom">${getT('fb_droom')}</span>
@@ -1389,6 +1408,7 @@ async function verstuurFeedback() {
     }
 
     // Eén antwoord is genoeg; een leeg formulier versturen heeft geen zin.
+    // "Geen idee" (0) telt mee — dat is een antwoord, geen overslaan.
     const ingevuld = FEEDBACK_VRAGEN.some(v => antwoord[v.kolom] !== null) || antwoord.droom;
     if (!ingevuld) {
         melding.textContent = getT('fb_leeg');
