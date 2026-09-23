@@ -1144,3 +1144,279 @@ body {
         letter-spacing: 0.03em;
     }
 }
+
+/* ==========================================================================
+   Feedbackvenster uit de footer (punt 35)
+   Het lijntje staat onder de copyrightregel en is bewust net zo stil: als je
+   het zoekt vind je het, als je het niet zoekt stoort het niet. Het venster
+   zelf is een <dialog>, dus de browser regelt de achtergrondlaag, de focus en
+   sluiten met Escape.
+   ========================================================================== */
+.fb-regel {
+    margin: 10px 0 0;
+}
+
+.fb-regel a {
+    color: #aaa;
+    font-size: 0.85rem;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.fb-regel a:hover,
+.fb-regel a:focus-visible {
+    color: var(--dark-text, #1A1A1A);
+}
+
+.fb-venster {
+    /* De globale reset in global.css zet margin op 0 voor alles, en dat sloopt
+       de 'margin: auto' waarmee een <dialog> zichzelf normaal midden in beeld
+       zet — het venster plakte daardoor linksboven. Hier dus expliciet terug. */
+    margin: auto;
+    width: min(520px, calc(100vw - 32px));
+    max-height: min(86vh, 760px);
+    padding: 0;
+    border: 1px solid var(--border-color, #E8EEE8);
+    border-radius: 16px;
+    background: var(--white, #FFFFFF);
+    color: var(--dark-text, #1A1A1A);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+}
+
+.fb-venster::backdrop {
+    background: rgba(26, 26, 26, 0.45);
+}
+
+.fb-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 28px 26px 24px;
+    max-height: inherit;
+    overflow-y: auto;
+}
+
+.fb-kruis {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--medium-text, #505F50);
+    font-size: 1.6rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.fb-kruis:hover {
+    background: var(--light-bg, #F8FBF8);
+}
+
+.fb-form h2 {
+    margin: 0;
+    padding-right: 34px;
+    font-size: 1.25rem;
+}
+
+.fb-intro {
+    margin: -10px 0 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--medium-text, #505F50);
+}
+
+.fb-vraag {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.fb-vraag legend {
+    padding: 0;
+    margin-bottom: 8px;
+    font-size: 0.92rem;
+    font-weight: 600;
+}
+
+.fb-schaal {
+    display: flex;
+    gap: 8px;
+}
+
+/* De radio zelf is weggehaald uit beeld maar niet uit de tabvolgorde: je kunt
+   er met de pijltjestoetsen doorheen, precies zoals bij een gewone radiogroep. */
+.fb-bol input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.fb-bol span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--border-color, #E8EEE8);
+    border-radius: 10px;
+    background: var(--light-bg, #F8FBF8);
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.fb-bol:hover span {
+    border-color: var(--bright-green, #32CD32);
+}
+
+/* Groen vlak met donkere tekst erop — geen groene letters op licht, zie de
+   kleurafspraak bovenin global.css. */
+.fb-bol input:checked + span {
+    background: var(--bright-green, #32CD32);
+    border-color: var(--bright-green, #32CD32);
+    color: var(--dark-text, #1A1A1A);
+    font-weight: 700;
+}
+
+.fb-bol input:focus-visible + span {
+    outline: 2px solid var(--dark-text, #1A1A1A);
+    outline-offset: 2px;
+}
+
+.fb-uitersten {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    font-size: 0.72rem;
+    color: var(--medium-text, #505F50);
+}
+
+.fb-meer summary {
+    font-size: 0.88rem;
+    color: var(--medium-text, #505F50);
+    cursor: pointer;
+}
+
+.fb-meer[open] summary {
+    margin-bottom: 16px;
+}
+
+.fb-meer .fb-vraag + .fb-vraag {
+    margin-top: 16px;
+}
+
+.fb-open,
+.fb-email {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.92rem;
+    font-weight: 600;
+}
+
+.fb-email {
+    font-size: 0.82rem;
+    font-weight: 400;
+    color: var(--medium-text, #505F50);
+}
+
+.fb-open textarea,
+.fb-email input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border-color, #E8EEE8);
+    border-radius: 10px;
+    background: var(--light-bg, #F8FBF8);
+    font: inherit;
+    font-weight: 400;
+    color: var(--dark-text, #1A1A1A);
+    resize: vertical;
+}
+
+.fb-open textarea:focus,
+.fb-email input:focus {
+    outline: 2px solid var(--bright-green, #32CD32);
+    outline-offset: 1px;
+}
+
+.fb-melding {
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.fb-melding:empty {
+    display: none;
+}
+
+.fb-melding.fb-fout {
+    color: #a32219;
+}
+
+.fb-melding.fb-gelukt {
+    color: var(--dark-text, #1A1A1A);
+    font-weight: 600;
+}
+
+/* Na een geslaagde verzending blijft alleen het bedankje staan; het venster
+   sluit daarna vanzelf. */
+.fb-form.fb-verzonden .fb-vraag,
+.fb-form.fb-verzonden .fb-meer,
+.fb-form.fb-verzonden .fb-open,
+.fb-form.fb-verzonden .fb-email,
+.fb-form.fb-verzonden .fb-knoppen,
+.fb-form.fb-verzonden .fb-intro {
+    display: none;
+}
+
+.fb-knoppen {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.fb-annuleer,
+.fb-verstuur {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.fb-annuleer {
+    border: 1px solid var(--border-color, #E8EEE8);
+    background: var(--white, #FFFFFF);
+    color: var(--medium-text, #505F50);
+}
+
+.fb-verstuur {
+    border: none;
+    background: var(--bright-green, #32CD32);
+    color: var(--white, #FFFFFF);
+}
+
+.fb-verstuur:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+@media (max-width: 480px) {
+    .fb-form {
+        padding: 24px 18px 20px;
+    }
+
+    .fb-bol span {
+        width: 100%;
+        height: 46px;
+    }
+
+    .fb-bol {
+        flex: 1 1 0;
+    }
+}

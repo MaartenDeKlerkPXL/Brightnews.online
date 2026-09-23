@@ -8,6 +8,7 @@ require('dotenv').config();
 // (selectie-batch.js). Zie BRIGHTNEWS-OVERDRACHT-FABLE.md, sessie 6/7.
 const { aiCall, verwerkAIResponse } = require('./ai-adapter');
 const { BATCH_GROOTTE, bouwBatchPrompt, verwerkBatchScores } = require('./selectie-batch');
+const { verwijderVerweesdeDigests } = require('./digest-opruiming');
 
 // customFields is essentieel: zonder deze mapping leest rss-parser
 // media:content, media:thumbnail en content:encoded helemaal niet uit,
@@ -676,6 +677,18 @@ async function processNews() {
     }
 
     console.log("💾 Opslaan...");
+    // Deze run heeft artikelen uit de lijst van 150 geduwd; dagoverzichten die
+    // daardoor de helft van hun bronnen kwijt zijn, gaan nu mee naar buiten.
+    for (const lang of Object.keys(languages)) {
+        const { items, verwijderd } = verwijderVerweesdeDigests(languages[lang]);
+        languages[lang] = items;
+        if (lang === 'nl' && verwijderd.length) {
+            for (const d of verwijderd) {
+                console.log(`🧹 Dagoverzicht verwijderd: ${d.categorie} ${d.dag} — nog ${d.levend} van ${d.totaal} bronnen.`);
+            }
+        }
+    }
+
     for (const [lang, items] of Object.entries(languages)) {
         await fs.ensureDir('./data');
         await fs.outputJson(`./data/news_${lang}.json`, items, { spaces: 2 });

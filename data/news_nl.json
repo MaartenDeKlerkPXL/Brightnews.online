@@ -1,5 +1,396 @@
 [
   {
+    "id": "dg-20260922-health",
+    "type": "digest",
+    "digest_date": "2026-09-22",
+    "title": "Slaap, urine en hartslag: drie stappen vooruit in de zorg",
+    "summary": "Deze dagen laten zien dat gezondheidswinst soms in kleine, slimme stappen zit. Een simpele beloning voor genoeg slaap, een urinetest die kanker opspoort, en een AI die meekijkt met een hartfilmpje: drie verschillende verhalen met één rode draad. Ze maken zorg sneller, preciezer en soms ook makkelijker om vol te houden. Neem het onderzoek van de University of Pittsburgh [1]. Meer dan 1.100 studenten kregen een Fitbit-app en een deel van hen, zo'n 468, kreeg ongeveer 5 dollar per nacht als ze zeven uur sliepen. Het resultaat: 26% meer nachten met voldoende slaap en 19 minuten langer slapen per schoolnacht....",
+    "image_alt": "Slaap, urine en hartslag: drie stappen vooruit in de zorg",
+    "meta_description": "Slaap belonen, blaaskanker opsporen via urine en hartziekte herkennen met AI: drie hoopvolle gezondheidsberichten van deze dagen op een rij.",
+    "meta_keywords": "Health",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aad7f471fbf338d1a44c36c_6aad7f45b52f83488b1f588b_researchers-pay-college-students-to-sleep-more-featured.webp",
+    "date": "2026-09-23T04:30:11.998Z",
+    "category": "Health",
+    "refs": [
+      {
+        "id": "1789965334441fmmtlceew",
+        "title": "Vijf dollar per nacht slaap verhoogt cijfers van studenten"
+      },
+      {
+        "id": "1790137627194t8vksyuta",
+        "title": "GALEAS-urinetest spoort blaaskanker verrassend nauwkeurig op"
+      },
+      {
+        "id": "1790051398328zl0crxok4",
+        "title": "Nieuwe AI-tool spoort hartziekte op via gewoon ECG"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260922-environment",
+    "type": "digest",
+    "digest_date": "2026-09-22",
+    "title": "Een wallaby duikt op, twee olifantjes vinden een nieuw thuis",
+    "summary": "Deze dagen komt het goede nieuws uit onverwachte hoeken: een dier dat vijftig jaar spoorloos leek, en twee jonge olifanten die dankzij mensenhanden een nieuwe familie vonden. Drie verhalen die laten zien hoe geduld en zorg soms net op tijd komen. In West-Australië doken onderzoekers een halve eeuw lang tevergeefs in het gras naar een spoor van de nabarlek. Nu bevestigde de Australian Wildlife Conservancy de kleine rotswallaby toch weer op het vasteland, dankzij trail cameras en onderzoek van uitwerpselen [1]. Op twee plekken in de Kimberley-regio, tot 170 kilometer uit elkaar, werd het dier van ruim een kilo aangetroffen....",
+    "image_alt": "Een wallaby duikt op, twee olifantjes vinden een nieuw thuis",
+    "meta_description": "Nabarlek-wallaby na 50 jaar terug in Australië en twee weesolifantjes vinden in Kenia een nieuw thuis en een hechte vriendschap.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab167478ba2d06d7ab7f39a_6ab16746237dffae5e47e8a3_tiny-wallaby-nabarlek-trail-cameras-australia-featured.webp",
+    "date": "2026-09-23T04:29:19.500Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1790137706448cjjzj9eh0",
+        "title": "Nabarlek-wallaby na 50 jaar weer gespot in Australië"
+      },
+      {
+        "id": "1790137681223mewceid9h",
+        "title": "Weesolifantje Kaikai krijgt drie rangers als 'ouders'"
+      },
+      {
+        "id": "1790137654165e7izh7pd0",
+        "title": "Olifantje Bungalu overleefde leeuwenaanval en vond nieuwe familie"
+      }
+    ]
+  },
+  {
+    "id": "1790137706448cjjzj9eh0",
+    "title": "Nabarlek-wallaby na 50 jaar weer gespot in Australië",
+    "summary": "Onderzoekers van de Australian Wildlife Conservancy hebben voor het eerst in 50 jaar de nabarlek bevestigd op het Australische vasteland. Trail cameras en analyse van uitwerpselen toonden de aanwezigheid van deze kleine rotswallaby aan op twee nieuwe locaties in de Kimberley-regio in West-Australië: op Yampi Sound Training Area en zo'n 170 kilometer verderop in het noordoosten van Dambeemangaddee Country. De...",
+    "image_alt": "Kleine nabarlek-wallaby vastgelegd door een trail camera in de Kimberley-regio in Australië",
+    "meta_description": "Na 50 jaar weer bewijs van de zeldzame nabarlek-wallaby in Australië, dankzij trail cameras en onderzoek in de Kimberley-regio.",
+    "meta_keywords": "nabarlek, wallaby, Australië, Kimberley, Australian Wildlife Conservancy, bedreigde diersoort, natuurbehoud, trail camera",
+    "link": "https://www.goodgoodgood.co/articles/tiny-wallaby-nabarlek-trail-cameras-australia",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab167478ba2d06d7ab7f39a_6ab16746237dffae5e47e8a3_tiny-wallaby-nabarlek-trail-cameras-australia-featured.webp",
+    "date": "2026-09-23T04:28:27.084Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790137681223mewceid9h",
+    "title": "Weesolifantje Kaikai krijgt drie rangers als 'ouders'",
+    "summary": "Op 26 mei 2025 vond de Mara North Conservancy een pasgeboren olifantje bij haar overleden moeder. Geen enkele andere vrouwtjesolifant kon haar zogen, en met de nacht en roofdieren op komst greep de Kenya Wildlife Service in. Samen met het Mara Elephant Project werd de kalf per Land Cruiser naar een dierenarts gebracht en de volgende ochtend door de Sheldrick...",
+    "image_alt": "Weesolifantje Kaikai met een van haar drie verzorgers bij de Sheldrick Wildlife Trust",
+    "meta_description": "Weesolifantje Kaikai verloor haar moeder, maar drie rangers namen de zorg over en werden haar nieuwe 'ouders'.",
+    "meta_keywords": "Kaikai, Sheldrick Wildlife Trust, weesolifant, olifantenwelzijn, Kenia, dierenreddingen, Mara North Conservancy",
+    "link": "https://www.goodgoodgood.co/articles/orphan-elephant-shared-custody-rangers",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab2c5ed932d71bd48f5030a_6ab2c5ec1ed52957fcf8d683_orphan-elephant-shared-custody-rangers-featured.webp",
+    "date": "2026-09-23T04:28:02.272Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790137654165e7izh7pd0",
+    "title": "Olifantje Bungalu overleefde leeuwenaanval en vond nieuwe familie",
+    "summary": "Het Afrikaanse olifantje Bungalu overleefde een maand alleen nadat hij werd aangevallen door een leeuw. In februari 2026 kreeg de Kenya Wildlife Service meldingen van een eenzaam olifantje bij Bungule, nabij Mount Kasiagau. Ondanks patrouilles bleef hij verborgen en vluchtte hij telkens uit angst, ook toen de Sheldrick Wildlife Trust hem per helikopter probeerde te bereiken. Na zware onweersstormen werd...",
+    "image_alt": "Olifantje Bungalu bij de Sheldrick Wildlife Trust met zijn melkfles",
+    "meta_description": "Olifantje Bungalu overleefde een leeuwenaanval en een maand alleen in het wild. Nu heeft hij bij Sheldrick Wildlife Trust een nieuwe familie.",
+    "meta_keywords": "Bungalu, olifant, Sheldrick Wildlife Trust, weesolifant, Kenia, Kaikai, natuurbescherming",
+    "link": "https://www.goodgoodgood.co/articles/baby-elephant-bungalu-rescued-lions",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab2de78850ca389675da402_6ab2de749388e05e49ac3373_baby-elephant-bungalu-rescued-lions-featured-3.webp",
+    "date": "2026-09-23T04:27:34.991Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790137627194t8vksyuta",
+    "title": "GALEAS-urinetest spoort blaaskanker verrassend nauwkeurig op",
+    "summary": "Een observationeel onderzoek in het Verenigd Koninkrijk toont sterke resultaten voor GALEAS Bladder, een niet-invasieve genetische urinetest van Nonacus Clinical Services. Bij 964 patiënten die tussen 2024 en 2025 werden doorverwezen voor spoedonderzoek naar hematurie, spoorde de test 71 van de 77 via cystoscopie vastgestelde blaaskankergevallen op, waaronder alle 17 spierinvasieve tumoren en 35 van de 36 latere-stadiumkankers. De negatief...",
+    "image_alt": "Urinemonster wordt getest op genetische markers voor blaaskanker",
+    "meta_description": "Nieuwe GALEAS-urinetest spoort 71 van 77 blaaskankergevallen op, met negatief voorspellende waarde boven 99%.",
+    "meta_keywords": "GALEAS Bladder, blaaskanker, urinetest, Nonacus, hematurie, cystoscopie, kankerdiagnose",
+    "link": "https://www.goodnewsnetwork.org/exceptional-detection-rates-of-bladder-cancer-recorded-in-study-of-simple-yet-state-of-the-art-test/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2024/06/woman-scientist-microscope-research-lab-test-pubdomain-National-Cancer-Institute.jpg",
+    "date": "2026-09-23T04:27:09.661Z",
+    "category": "Health",
+    "score": 9
+  },
+  {
+    "id": "17900955302019yo4v9fb2",
+    "title": "135.000 huisdieren geadopteerd via NBC's Clear The Shelters",
+    "summary": "De jaarlijkse 'Clear The Shelters'-campagne van NBC en moederbedrijf Universal heeft dit jaar 135.000 honden, katten en andere huisdieren aan een nieuw thuis geholpen. De actie liep van juli tot september en leverde daarnaast $480.000 op voor meer dan 1.000 deelnemende dierenasiels. In de 12 jaar dat de campagne bestaat, zijn in totaal 1,5 miljoen huisdieren geplaatst en is er...",
+    "image_alt": "Huisdieren in een dierenasiel wachten op adoptie tijdens de Clear The Shelters-campagne",
+    "meta_description": "NBC's jaarlijkse adoptiecampagne zorgde voor 135.000 nieuwe thuizen voor huisdieren en $480.000 aan donaties voor asiels.",
+    "meta_keywords": "Clear The Shelters, NBC, dierenasiel, huisdier adoptie, Universal, Telemundo, dierenwelzijn",
+    "link": "https://www.goodnewsnetwork.org/135000-shelter-pets-found-forever-homes-in-august-thanks-to-nbcs-annual-adopt-a-thon/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/generic-animal-shelter-image.jpg",
+    "date": "2026-09-22T16:45:31.363Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "17900955066950vyz7ysw6",
+    "title": "Duikende jan-van-gent wint Bird Photographer of the Year",
+    "summary": "De winnaars van Bird Photographer of the Year 2026 zijn bekendgemaakt. De hoofdprijs ging naar Henry Spiers uit het Verenigd Koninkrijk voor zijn foto 'Sunball Rocket', die een jan-van-gent vastlegt terwijl deze door het wateroppervlak breekt. De foto is gemaakt in Schotse wateren en won ook de categorie Birds in the Environment. Jan-van-genten duiken vanaf hoogtes tot 30 meter met...",
+    "image_alt": "Een jan-van-gent doorbreekt het wateroppervlak van de zee, met de zon op de achtergrond",
+    "meta_description": "Henry Spiers wint Bird Photographer of the Year 2026 met foto van duikende jan-van-gent in Schotse wateren.",
+    "meta_keywords": "Bird Photographer of the Year, jan-van-gent, Henry Spiers, vogelfotografie, natuurfotografie, Birds on the Brink",
+    "link": "https://www.positive.news/environment/winners-of-bird-photographer-of-the-year-announced/",
+    "source": "Positive.News",
+    "image": "https://positivenews.kinsta.cloud/wp-content/uploads/2026/09/ADULT-OVERALL-WINNER-Sunball-Rocket-by-Henley-Spiers.jpg",
+    "date": "2026-09-22T16:45:09.402Z",
+    "category": "Lifestyle",
+    "score": 8
+  },
+  {
+    "id": "dg-20260921-environment",
+    "type": "digest",
+    "digest_date": "2026-09-21",
+    "title": "Van zinkgat tot paddenstoelenstal: herstel in de natuur deze week",
+    "summary": "Deze dagen laten zien hoe mensen dieren en land een tweede kans geven, van de savanne in Kenia tot een schuur in Iowa. Steeds gaat het om geduld en samenwerking: rangers die uren volhouden, boeren die hun bedrijf omvormen, en fokprogramma's die decennia doorzetten. Het resultaat is telkens hetzelfde gevoel van opluchting en vooruitgang. In Kenia moesten rangers van de Kenya Wildlife Service en de Sheldrick Wildlife Trust een volwassen stierolifant redden die schoudersdiep vastzat in een zinkgat bij Chakama. Zonder verdoving trokken ze het dier centimeter voor centimeter uit de modder, een klus die past bij de 17 olifanten...",
+    "image_alt": "Van zinkgat tot paddenstoelenstal: herstel in de natuur deze week",
+    "meta_description": "Olifantenreddingen in Kenia, wilde paarden in Kazachstan en een boerderij die omschakelt: het positieve milieunieuws van deze dagen.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab185b16ab24e972877d307_6ab185b18b9a45d15d2c4db9_elephant-rescued-sinkhole-kenya-featured-2.webp",
+    "date": "2026-09-22T04:32:33.311Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1790051455373n0s5yx6a1",
+        "title": "Rangers bevrijden olifant uit gevaarlijke zinkgat in Kenia"
+      },
+      {
+        "id": "17900514257619dlpca1k8",
+        "title": "Weesolifantje Wangalla gered uit zebrakudde in Tsavo East"
+      },
+      {
+        "id": "1790014214783otpoivfi3",
+        "title": "Wilde Przewalskipaarden geboren in Kazachstan na 200 jaar afwezigheid"
+      },
+      {
+        "id": "17899196420568hecmtvs3",
+        "title": "Amerikaanse staten helpen monarchvlinders op weg naar Mexico"
+      },
+      {
+        "id": "17900514999718iuojtalw",
+        "title": "Varkensboerderij in Iowa kweekt nu paddenstoelen"
+      }
+    ]
+  },
+  {
+    "id": "17900514999718iuojtalw",
+    "title": "Varkensboerderij in Iowa kweekt nu paddenstoelen",
+    "summary": "Een varkensboerderij in centraal Iowa, die decennialang duizenden varkens fokte voor de slacht, is overgeschakeld op het kweken van speciale paddenstoelen. De familie Faaborg noemt hun bedrijf 1100 Farm, verwijzend naar het aantal varkens dat de stallen vroeger huisvestten. Ze verkopen de paddenstoelen, waaronder lion's mane, als tincturen, koffieblends en gearomatiseerd zout. De omschakeling gebeurde met technische en financiële steun...",
+    "image_alt": "Tanner Faaborg poseert bij zijn boerderij in centraal Iowa waar nu paddenstoelen worden gekweekt in voormalige varkensstallen",
+    "meta_description": "Iowa-boerderij schakelt over van varkens naar paddenstoelen met hulp van The Transfarmation Project.",
+    "meta_keywords": "paddenstoelen kweken, Iowa boerderij, Transfarmation Project, varkensstal ombouwen, duurzame landbouw, lion's mane",
+    "link": "https://www.npr.org/2026/09/21/nx-s1-5944503/iowa-hog-farm-growing-specialty-mushrooms",
+    "source": "NPR.org",
+    "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1370x771+0+71/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F76%2Ff0%2Fe977506b4da8b313d83bd18dc1d0%2Ftanner-faaborg-1100-farm-web.jpg",
+    "date": "2026-09-22T04:31:41.151Z",
+    "category": "Environment",
+    "score": 8
+  },
+  {
+    "id": "1790051455373n0s5yx6a1",
+    "title": "Rangers bevrijden olifant uit gevaarlijke zinkgat in Kenia",
+    "summary": "Op 25 februari kreeg de Kenya Wildlife Service meldingen van een stier-olifant die schoudersdiep vastzat in een zinkgat bij Chakama, zo'n 30 mijl landinwaarts van de Indische Oceaan. Piloot Roan Carr-Hartley van de Sheldrick Wildlife Trust vloog ter plaatse en trof daar het Kulalu anti-stropersteam en de KWS. Het gat was te diep en steil om uit te ontsnappen, en...",
+    "image_alt": "Rangers gebruiken riemen en een voertuig om een olifant uit een zinkgat in Kenia te trekken",
+    "meta_description": "Rangers van Sheldrick Wildlife Trust bevrijden olifant uit zinkgat in Chakama, Kenia, zonder verdoving.",
+    "meta_keywords": "olifant, zinkgat, Sheldrick Wildlife Trust, Kenya Wildlife Service, Chakama, Great Rift Valley, olifantenredding",
+    "link": "https://www.goodgoodgood.co/articles/elephant-rescued-sinkhole-kenya",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab185b16ab24e972877d307_6ab185b18b9a45d15d2c4db9_elephant-rescued-sinkhole-kenya-featured-2.webp",
+    "date": "2026-09-22T04:30:56.272Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "17900514257619dlpca1k8",
+    "title": "Weesolifantje Wangalla gered uit zebrakudde in Tsavo East",
+    "summary": "Op 4 november 2025 kreeg de Kenya Wildlife Service een melding van een eenzame, wees geraakte olifant in Tsavo East National Park. Toeristen hadden het dier gespot en de locatie doorgegeven. Trevor, werkmanager bij Tsavo, leidde een zoekteam dat het kalfje na ruim een uur diep in de bush aantrof, verscholen tussen een kudde zebra's. Wildlife-functionarissen vermoeden dat een leeuwenroedel...",
+    "image_alt": "Een jong olifantje genaamd Wangalla bij haar verzorger in de Sheldrick Wildlife Trust sanctuary in Kenia",
+    "meta_description": "Wees olifantje Wangalla werd gered uit een zebrakudde in Tsavo East en vond een nieuw thuis bij Sheldrick Wildlife Trust.",
+    "meta_keywords": "Wangalla, Sheldrick Wildlife Trust, olifant redding, Tsavo East, Kenya Wildlife Service, weesolifant, Misheck",
+    "link": "https://www.goodgoodgood.co/articles/baby-elephant-rescued-zebra-herd",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab196c9d7bede5a31eac123_6ab196c7176d5ce68dc3873f_baby-elephant-rescued-zebra-herd-featured.webp",
+    "date": "2026-09-22T04:30:27.261Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790051398328zl0crxok4",
+    "title": "Nieuwe AI-tool spoort hartziekte op via gewoon ECG",
+    "summary": "Onderzoekers in het VK hebben een AI-model ontwikkeld dat via een standaard ECG vroege tekenen van hartklepaandoeningen en hartfalen kan opsporen. Het model is getraind op miljoenen patiënten en werd getest bij 67.000 patiënten in de VS. Daarbij werd 81% van de hartfalengevallen en 90% van de hartklepaandoeningen herkend. Een ECG kan geen hartziekte vaststellen, daarvoor is normaal een echocardiogram...",
+    "image_alt": "Arts bekijkt ECG-uitslag op scherm met AI-analyse van hartactiviteit",
+    "meta_description": "AI-model herkent via gewoon ECG vroege tekenen van hartfalen en hartklepziekte, blijkt uit grote studie gepresenteerd in München.",
+    "meta_keywords": "AI, ECG, hartziekte, hartfalen, hartklepaandoening, cardiologie, British Heart Foundation, echocardiogram",
+    "link": "https://www.goodnewsnetwork.org/new-ai-model-can-detect-heart-disease-markers-in-simple-electrocardiogram-readings-a-breakthrough/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/echocardiogram-Getty-Images-for-Unsplash-.jpg",
+    "date": "2026-09-22T04:30:00.829Z",
+    "category": "Health",
+    "score": 8
+  },
+  {
+    "id": "dg-20260920-science",
+    "type": "digest",
+    "digest_date": "2026-09-20",
+    "title": "Nieuwe kat, oude kunst en geredde schatten: wetenschap kijkt terug en vooruit",
+    "summary": "De afgelopen dagen laat de wetenschap zien hoe verleden en heden elkaar raken. Een onbekende kattensoort duikt op in Bolivia, oeroude ivoorkunst blijkt zorgvuldiger gemaakt dan gedacht, en in Alaska redden archeologen kwetsbare schatten net op tijd. Drie heel verschillende verhalen, maar allemaal laten ze zien hoeveel er nog te ontdekken en te bewaren is. Begin met de kat. In Bolivia is voor het eerst in meer dan honderd jaar een nieuwe kattensoort vastgesteld: Leopardus tilcayo [1]. Het verhaal start al in 2016, toen iemand een vreemd uitziend katachtig dier naar een dierenopvang bracht. Bioloog Paola Nogales-Ascarrunz zag meteen dat...",
+    "image_alt": "Nieuwe kat, oude kunst en geredde schatten: wetenschap kijkt terug en vooruit",
+    "meta_description": "Van een nieuwe kattensoort in Bolivia tot geredde Yup'ik-schatten in Alaska: het positieve wetenschapsnieuws van deze dagen bij BrightNews.",
+    "meta_keywords": "Science",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/imrs-e1789720878162.jpg",
+    "date": "2026-09-21T18:13:14.426Z",
+    "category": "Science",
+    "refs": [
+      {
+        "id": "1789791470039iv33h3zat",
+        "title": "Nieuwe kattensoort Tilcayo ontdekt in Bolivia"
+      },
+      {
+        "id": "1789965262786z6vu42lzy",
+        "title": "Oermensen gebruikten groeipatronen mammoettand voor unieke kunst"
+      },
+      {
+        "id": "1789832772703vb1b4cr0s",
+        "title": "Archeologen redden eeuwenoude Yup'ik-vondsten in Alaska"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260920-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-09-20",
+    "title": "Buitenleven met een goede afloop: redding, een compleet fietspad en trouwe pleeggezinnen",
+    "summary": "Deze dagen draait het in de categorie lifestyle om buiten zijn, volhouden en zorgen voor elkaar. Van een wandelaar die tegen alle verwachting in wordt gevonden, tot een fietspad dat na dertig jaar eindelijk klaar is, en een echtpaar dat al jaren honden een tijdelijk thuis geeft. Drie verschillende verhalen, maar allemaal met dezelfde ondertoon: mensen die niet opgeven en die zich blijven inzetten voor anderen, mens of dier. Het meest ingrijpende verhaal komt uit Isle Royale National Park, waar de 70-jarige Craig Berg elf dagen vermist was tijdens een solotocht. Hij raakte van het pad af en viel in...",
+    "image_alt": "Buitenleven met een goede afloop: redding, een compleet fietspad en trouwe pleeggezinnen",
+    "meta_description": "Lifestylenieuws van 20 september 2026: een geredde wandelaar, een voltooid fietspad in Minnesota en een echtpaar dat honden fostert.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab160ac37a1d4530ef86c2a_6ab160abf3154b9837b18bfe_craig-berg-missing-hiker-found-isle-royale-national-park-featured.webp",
+    "date": "2026-09-21T18:12:01.356Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "1790014241811y3vfaki98",
+        "title": "Vermiste wandelaar Craig Berg na 11 dagen gered op Isle Royale"
+      },
+      {
+        "id": "1789965311313qeajm49mh",
+        "title": "Mesabi Trail in Minnesota na 30 jaar eindelijk voltooid"
+      },
+      {
+        "id": "17899652880376z76s0lap",
+        "title": "Brits echtpaar fostert 59 honden na pensioen"
+      }
+    ]
+  },
+  {
+    "id": "1790014241811y3vfaki98",
+    "title": "Vermiste wandelaar Craig Berg na 11 dagen gered op Isle Royale",
+    "summary": "De 70-jarige Craig Berg maakte een negendaagse solotocht door Isle Royale National Park toen hij op dag vier van het pad afraakte en in een moeras viel, waarbij zijn kleren, tas, eten en telefoon doorweekt raakten. Elf dagen lang schreeuwde hij duizenden keren om hulp en overleefde op vriesdroogvoedsel en vervuild water. Zoekteams breidden hun actie uit nadat beelden van...",
+    "image_alt": "Reddingsteam en kustwachthelikopter tijdens de zoekactie naar wandelaar Craig Berg op Isle Royale",
+    "meta_description": "Craig Berg (70) 11 dagen vermist op Isle Royale, gered dankzij wildcamera en kajakkers na val in moeras.",
+    "meta_keywords": "Craig Berg, Isle Royale, vermiste wandelaar, reddingsactie, National Park Service, kustwacht, trail camera",
+    "link": "https://www.goodgoodgood.co/articles/craig-berg-missing-hiker-found-isle-royale-national-park",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab160ac37a1d4530ef86c2a_6ab160abf3154b9837b18bfe_craig-berg-missing-hiker-found-isle-royale-national-park-featured.webp",
+    "date": "2026-09-21T18:10:43.397Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "1790014214783otpoivfi3",
+    "title": "Wilde Przewalskipaarden geboren in Kazachstan na 200 jaar afwezigheid",
+    "summary": "In Kazachstan zijn twee veulens van het Przewalskipaard geboren, de eerste wilde paarden op Kazachse bodem in meer dan 200 jaar. Het eerste veulen, een hengst, werd op 22 augustus geboren bij de 7-jarige merrie Tessa. Het tweede, ook een hengst, volgde op 31 augustus bij merrie Umbra. Beide hebben dezelfde vader, de inmiddels overleden hengst Zorro. De geboortes vonden...",
+    "image_alt": "Twee wilde Przewalskipaarden met hun veulens in de graslanden van Kazachstan",
+    "meta_description": "Twee veulens van het Przewalskipaard geboren in Kazachstan: de eerste wilde paarden daar in meer dan 200 jaar.",
+    "meta_keywords": "Przewalskipaard, Kazachstan, wilde paarden, Altyn Dala, ACBK, natuurbehoud, herintroductie",
+    "link": "https://www.goodgoodgood.co/articles/wild-przewalskis-horses-born-kazakhstan-200-years",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa971cc857b7976aebc89e3_two-wild-przewalskis-horse-foals-born-in-kazakhstan-after-200-years-01.jpg",
+    "date": "2026-09-21T18:10:16.832Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790014168286wv6pmjzvd",
+    "title": "Drone-training uit Zuid-Korea voorkomt doden bij overstroming Mozambique",
+    "summary": "In januari trof een van de zwaarste overstromingen in decennia het district Marracuene in Mozambique, nadat de rivier Incomáti buiten haar oevers trad. Toch vielen er geen dodelijke slachtoffers, dankzij een groep drone-piloten die werd opgeleid via het Drone-Based Disaster Management Project van de KOAFEC Trust Fund van de Afrikaanse Ontwikkelingsbank. Dertig experts, waaronder Kátia Manjate, leerden onder Koreaanse instructeurs...",
+    "image_alt": "Dronepiloot bestuurt drone boven overstroomd gebied in Marracuene, Mozambique",
+    "meta_description": "Koreaans dronetrainingsprogramma helpt Mozambique overstroming overleven zonder dodelijke slachtoffers.",
+    "meta_keywords": "Mozambique, overstroming, drones, Zuid-Korea, KOAFEC, rampenbestrijding, African Development Bank, LiDAR",
+    "link": "https://www.goodnewsnetwork.org/korean-drone-rescue-program-helps-mozambique-achieve-zero-fatalities-during-worst-flood-in-decades/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/A-Mozambique-pilot-learns-to-pilot-a-drone-from-an-experienced-South-Korean-operator-credit-African-Development-Bank-released.jpg",
+    "date": "2026-09-21T18:09:31.742Z",
+    "category": "Tech",
+    "score": 9
+  },
+  {
+    "id": "1789965334441fmmtlceew",
+    "title": "Vijf dollar per nacht slaap verhoogt cijfers van studenten",
+    "summary": "Onderzoekers van de University of Pittsburgh betaalden meer dan 1.100 studenten via een Fitbit-app om zeven uur per nacht te slapen. De 468 studenten die circa 5 dollar per nacht kregen, sliepen 26% meer nachten voldoende en 19 minuten langer per schoolnacht dan een controlegroep zonder betaling. Hun GPA steeg dat semester met ongeveer 0,08 punt. Ook na het stoppen...",
+    "image_alt": "Student met Fitbit-activiteitstracker slaapt in bed",
+    "meta_description": "Studenten die betaald werden om 7 uur te slapen, kregen hogere cijfers. Onderzoek Pittsburgh toont effect van slaapincentives.",
+    "meta_keywords": "slaap, studenten, GPA, Fitbit, University of Pittsburgh, slaaponderzoek, financiële prikkel, studieresultaten",
+    "link": "https://www.goodgoodgood.co/articles/researchers-pay-college-students-to-sleep-more",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aad7f471fbf338d1a44c36c_6aad7f45b52f83488b1f588b_researchers-pay-college-students-to-sleep-more-featured.webp",
+    "date": "2026-09-21T04:35:35.883Z",
+    "category": "Health",
+    "score": 10
+  },
+  {
+    "id": "1789965311313qeajm49mh",
+    "title": "Mesabi Trail in Minnesota na 30 jaar eindelijk voltooid",
+    "summary": "Na meer dan 30 jaar van planning, aanleg en fondsenwerving is de Mesabi Trail in Minnesota officieel voltooid. Het 165 mijl lange geasfalteerde fietspad is daarmee een van de langste van Amerika. De route loopt van de Mississippi-rivier tot aan de wildernis van de Boundary Waters, door de Iron Range met zijn historische ijzerertsmijnen die tijdens de Tweede Wereldoorlog belangrijk...",
+    "image_alt": "Het geasfalteerde Mesabi-fietspad slingert door de bosrijke Iron Range in Minnesota",
+    "meta_description": "Na 30 jaar is de 165 mijl lange Mesabi Trail in Minnesota voltooid, een van de langste fietspaden van Amerika.",
+    "meta_keywords": "Mesabi Trail, Minnesota, fietspad, Iron Range, Boundary Waters, Grand Rapids, Ely, IRRRB",
+    "link": "https://www.goodnewsnetwork.org/165mi-bike-trail-through-minnesota-finally-completed-after-30-yrs/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Iron-ridge-Minnesota-Mesabi-Trail-for-bikes-and-cyclists.jpg",
+    "date": "2026-09-21T04:35:12.794Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "17899652880376z76s0lap",
+    "title": "Brits echtpaar fostert 59 honden na pensioen",
+    "summary": "Nicole en Gary Wordsworth, een Brits echtpaar in de zestig, fosteren al 15 jaar honden via Battersea Dogs Home in Buckinghamshire. Sinds hun pensioen vangen ze deeltijds honden op, van een Siberische husky tot een Staffie. De verblijfsduur varieert van een paar nachten tot 18 maanden. Hun eerste hond was een Staffie genaamd Marcel. Ze observeren gedrag zoals eetgewoontes, favoriete...",
+    "image_alt": "Ouder Brits echtpaar knuffelt met een pleeghond in hun woonkamer",
+    "meta_description": "Brits echtpaar fostert al 15 jaar honden via Battersea Dogs Home, met 59 honden en tellende sinds hun pensioen.",
+    "meta_keywords": "fosterhonden, Battersea Dogs Home, hondenadoptie, gepensioneerd echtpaar, huisdieren fosteren",
+    "link": "https://www.goodnewsnetwork.org/couple-fosters-59-dogs-in-retirement-we-love-to-get-them-out-of-the-kennels/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Dog-foster-parents-w-husky-Credit-Battersea-Dogs-Home-SWNS-.jpeg",
+    "date": "2026-09-21T04:34:49.341Z",
+    "category": "Lifestyle",
+    "score": 8
+  },
+  {
+    "id": "1789965262786z6vu42lzy",
+    "title": "Oermensen gebruikten groeipatronen mammoettand voor unieke kunst",
+    "summary": "Wetenschappers hebben ontdekt dat prehistorische kunstenaars de natuurlijke groeilijnen van mammoetivoor gebruikten als inspiratie voor de versieringen op 18.000 jaar oude Venusbeeldjes. Onderzoek aan 18 beeldjes uit Mizyn, Oekraïne, toont aan dat de zogeheten Schreger- en Owen-lijnen in de slagtanden bewust werden nagebootst in de gravures. Het onderzoek, uitgevoerd met hoge-resolutie microscopie en 3D-modellering, werd mogelijk gemaakt door de Oekraïense...",
+    "image_alt": "Een 18.000 jaar oud Venusbeeldje van mammoetivoor met ingekerfde patronen die de natuurlijke groeilijnen van de slagtand volgen",
+    "meta_description": "Onderzoek toont aan dat prehistorische kunstenaars groeipatronen van mammoettanden gebruikten voor Venusbeeldjes uit Mizyn, Oekraïne.",
+    "meta_keywords": "mammoettand, Venusbeeldjes, Ice Age kunst, prehistorie, Mizyn, archeologie, Schreger-lijnen, Oekraïne",
+    "link": "https://www.goodnewsnetwork.org/cavemen-used-mammoth-tusk-patterns-to-create-unique-art-reveals-new-research/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Ice-Age-craftspeople-mimicked-lines-of-mammoth-ivory-SWNS.jpeg",
+    "date": "2026-09-21T04:34:24.871Z",
+    "category": "Science",
+    "score": 8
+  },
+  {
     "id": "17899196420568hecmtvs3",
     "title": "Amerikaanse staten helpen monarchvlinders op weg naar Mexico",
     "summary": "Oostelijke monarchvlinders vliegen meer dan 3.200 kilometer door het centrale deel van de Verenigde Staten om te overwinteren in Mexico. Verschillende staten zijn betrokken bij een project dat deze bestuivers onderweg helpt tijdens hun lange trektocht naar het zuiden.",
@@ -2201,117 +2592,6 @@
     "score": 9
   },
   {
-    "id": "dg-20260905-environment",
-    "type": "digest",
-    "digest_date": "2026-09-05",
-    "title": "Eenden, zalmen en buurtbewoners maken vandaag het verschil",
-    "summary": "Soms zit goed nieuws in kleine dingen die groot uitpakken. Vandaag gaat het over eenden die wijngaarden gezond houden, zalmen die na jaren terugkeren naar rivieren, en gewone mensen die besluiten hun straat of hun dorp een beetje beter achter te laten. Vijf verhalen laten zien dat geduld en zorg voor de natuur uiteindelijk lonen. Op het Vergenoegd Löw Wine Estate in Zuid-Afrika lopen zo'n 1000 eenden tussen de wijnstokken. Ze eten plaagdieren op en bemesten de bodem, zonder dat er pesticiden aan te pas komen [1]. Diezelfde geduldige aanpak zien we terug aan de kust van Californië, waar een...",
-    "image_alt": "Eenden, zalmen en buurtbewoners maken vandaag het verschil",
-    "meta_description": "Van eenden in wijngaarden tot terugkerende zalmen: het positieve natuurnieuws van 5 september 2026 op een rij.",
-    "meta_keywords": "Environment",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a99b453c8731ac2eb4eb449_6a99b451039236cbc607c312_vineyard-wine-farm-free-roaming-ducks-featured-2.webp",
-    "date": "2026-09-06T15:24:31.617Z",
-    "category": "Environment",
-    "refs": [
-      {
-        "id": "1788645872913v6p9gh7ws",
-        "title": "1000 Eenden Vervangen Pesticiden Op Wijnlandgoed"
-      },
-      {
-        "id": "1788647218036re517hbkv",
-        "title": "64 zeeschildpadjes gered uit zwembad Florida"
-      },
-      {
-        "id": "1788647086622ilhiogf10",
-        "title": "Voormalige vogelvangers redden zangvogels Java"
-      },
-      {
-        "id": "1788645690381vacqodhek",
-        "title": "Goed Nieuws: Bakkers, Zon En Een Schoolredding"
-      },
-      {
-        "id": "1788645362502ubnvc3z3k",
-        "title": "Man Ruimt 100 Dagen Straat Op, Hele Buurt Doet Mee"
-      },
-      {
-        "id": "1788645292822m5wh38774",
-        "title": "Recordaantal Coho-zalmen Keert Terug Naar Californië"
-      }
-    ]
-  },
-  {
-    "id": "dg-20260905-tech",
-    "type": "digest",
-    "digest_date": "2026-09-05",
-    "title": "Techdag: van olifantenredders tot slimme scooters",
-    "summary": "Vandaag laat de techwereld zien dat goede ideeën uit alle hoeken kunnen komen, van een studentenproject tot grote fabrikanten. Er is nieuws over bescherming van dieren, over voertuigen die slimmer en toegankelijker worden, en over hoe overheden omgaan met techniek die privacy raakt. Genoeg om nieuwsgierig van te worden. Neem Anika Puri. Ze bedacht als tiener EISa, een goedkoop AI-systeem dat met een thermische camera van 250 dollar op een drone het verschil ziet tussen olifanten en mogelijke stropers. Tijdens veldtests haalde het systeem een nauwkeurigheid van meer dan 90 procent. Puri won er in 2022 de hoofdprijs aardwetenschappen mee...",
-    "image_alt": "Techdag: van olifantenredders tot slimme scooters",
-    "meta_description": "Positief technieuws van 5 september 2026: stropersdetectie, slimme scooters, nieuwe Kia-camper, cameradebat in Texas en muziekregels in Australië.",
-    "meta_keywords": "Tech",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a99d3d1e19a819a1f4c6ed1_6a99d3cfeccb478753f53f50_teen-invents-device-to-catch-elephant-poachers-featured.webp",
-    "date": "2026-09-06T15:23:29.557Z",
-    "category": "Tech",
-    "refs": [
-      {
-        "id": "1788647384130wkqh8u5kt",
-        "title": "Tiener bedenkt prijswinnend apparaat tegen stropers"
-      },
-      {
-        "id": "178864608674649fh0dl49",
-        "title": "Kia teasert grotere camper-broer van PV5"
-      },
-      {
-        "id": "1788647519997iqucy27jj",
-        "title": "Texas stopt geld voor Flock-camera's"
-      },
-      {
-        "id": "1788646955438obijzrd5e",
-        "title": "Australië trekt grens bij muziek"
-      },
-      {
-        "id": "1788646140552gfkjr3900",
-        "title": "Budgetscooter met luxe features van Ather"
-      }
-    ]
-  },
-  {
-    "id": "dg-20260905-health",
-    "type": "digest",
-    "digest_date": "2026-09-05",
-    "title": "Snellere diagnoses en langere bescherming: gezondheidsnieuws van 5 september",
-    "summary": "De gezondheidszorg zette vandaag weer een paar stappen vooruit, en dat op heel verschillende terreinen. Van slimme software die in tien seconden een hartprobleem opspoort tot een land dat een oogziekte helemaal heeft teruggedrongen: het laat zien dat vooruitgang vaak op meerdere plekken tegelijk ontstaat. Het meest opvallende nieuws kwam uit Londen, waar onderzoekers van Imperial College software ontwikkelden die via een gewoon ECG hartziekten kan opsporen, iets waarvoor patiënten nu vaak maanden moeten wachten op een echocardiogram. In een trial onder 67.000 patiënten herkende de tool tot 81% van de gevallen van hartfalen en 90% van de gevallen van...",
-    "image_alt": "Snellere diagnoses en langere bescherming: gezondheidsnieuws van 5 september",
-    "meta_description": "Slimme hartsoftware, een nieuwe blaaskankertest, minder blindheid en meer: het gezondheidsnieuws van 5 september op een rij.",
-    "meta_keywords": "Health",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://www.positive.news/wp-content/uploads/2026/09/iStock-2166849864-2.jpeg",
-    "date": "2026-09-06T15:22:20.426Z",
-    "category": "Health",
-    "refs": [
-      {
-        "id": "1788645141480uux502u0y",
-        "title": "Superieure hartsoftware en meer goed nieuws"
-      },
-      {
-        "id": "1788645554014dscmbc1wx",
-        "title": "Statines verlagen hartrisico bij 70-plussers"
-      },
-      {
-        "id": "1788647730911cqw2ar8lh",
-        "title": "Onderzoek naar obesitas via menselijke biologie"
-      },
-      {
-        "id": "1788646925799w1iimm4f9",
-        "title": "Kiezen Van Een Vruchtbaarheidskliniek"
-      }
-    ]
-  },
-  {
     "id": "1788708076238no8huuobf",
     "title": "Recyclebaar Composiet Voor Vliegtuigcabines",
     "summary": "Onderzoekers van Empa hebben, samen met chemiebedrijf Elantas, een epoxy-gebaseerd composietmateriaal ontwikkeld dat volledig recyclebaar is. Een fosforhoudend additief, ontwikkeld bij Empa en toegevoegd tijdens de productie, zorgt ervoor dat het uitgeharde materiaal niet alleen vlamvertragend is, maar ook weer kan verzachten of uiteenvallen. Met het juiste oplosmiddel en een beetje warmte kan de zogeheten 'honeycomb sandwich' worden afgebroken in...",
@@ -2324,317 +2604,5 @@
     "date": "2026-09-06T15:21:18.979Z",
     "category": "Tech",
     "score": 9
-  },
-  {
-    "id": "dg-20260905-lifestyle",
-    "type": "digest",
-    "digest_date": "2026-09-05",
-    "title": "Boeken in de wasserette, pups op hun verjaardag en een trein terug na dertig jaar",
-    "summary": "Vandaag draait het in Lifestyle om verbinding: tussen mensen, tussen landen en soms gewoon tussen een kat en haar redders. Van een wasserette in Ohio tot een spoorlijn in het hoge noorden van Europa, de berichten van vandaag laten zien dat kleine aanpassingen soms een groot verschil maken. In Wyoming, Ohio, hangen sinds november vier manden met kinderboeken aan de muur van een wasserette. Janice Weiser vult de collectie steeds aan, zodat kinderen tijdens het wachten een boek kunnen lezen in plaats van naar een scherm te kijken [1]. De wasserette is een van meer dan tweehonderd locaties van de...",
-    "image_alt": "Boeken in de wasserette, pups op hun verjaardag en een trein terug na dertig jaar",
-    "meta_description": "Boeken in de wasserette, een geredde kitten, twaalf pups en een trein terug na dertig jaar: het positieve Lifestyle-nieuws van 5 september 2026.",
-    "meta_keywords": "Lifestyle",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://s.w.org/images/core/emoji/17.0.2/72x72/1fae7.png",
-    "date": "2026-09-06T04:16:44.563Z",
-    "category": "Lifestyle",
-    "refs": [
-      {
-        "id": "1788648470866m1vi4va9k",
-        "title": "Wasserette Wordt Bibliotheek Voor Kinderen"
-      },
-      {
-        "id": "1788647811819l0v9pyg4w",
-        "title": "Nieuw College Wil Studiekosten Verlagen"
-      },
-      {
-        "id": "17886471531332n1uz0ka2",
-        "title": "Kitten Overleeft Rit In Motorkap"
-      },
-      {
-        "id": "1788645430506id917d57m",
-        "title": "Zweden En Finland Weer Verbonden Per Trein"
-      },
-      {
-        "id": "1788645204154hi809gnll",
-        "title": "12 Gouden Puppy's Herenigd Met Moeder Op Eerste Verjaardag"
-      }
-    ]
-  },
-  {
-    "id": "dg-20260905-science",
-    "type": "digest",
-    "digest_date": "2026-09-05",
-    "title": "Bomen met spieren, vissen met filters: wetenschap van 5 september",
-    "summary": "De wetenschap van vandaag laat zien hoe breed onderzoek kan zijn: van bomen die zichzelf rechtop trekken tot vissen die hun eigen elektrische signalen wegfilteren. Ook geld voor jonge onderzoekers en de redding van een bijna verdwenen boomsoort komen voorbij. Een dag om nieuwsgierig van te worden. De Europese Commissie maakt werk van de volgende generatie wetenschappers. Er gaat €105,5 miljoen naar 29 doctorale en postdoctorale programma's onder het Marie Skłodowska-Curie Actions COFUND-programma [1]. Meer dan 400 organisaties uit 38 landen doen mee, met Frankrijk als grootste coördinator. De programma's raken onder meer levenswetenschappen, kwantumfysica en ruimtevaart, en dat in...",
-    "image_alt": "Bomen met spieren, vissen met filters: wetenschap van 5 september",
-    "meta_description": "Van spierkracht bij bomen tot vissenbreinen die ruis filteren: het wetenschapsnieuws van 5 september 2026 op een rij.",
-    "meta_keywords": "Science",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&q=80",
-    "date": "2026-09-06T04:15:38.531Z",
-    "category": "Science",
-    "refs": [
-      {
-        "id": "1788647709263hp99h6be9",
-        "title": "EU trekt €105,5 miljoen uit voor onderzoekers"
-      },
-      {
-        "id": "1788647579010wxcreq06i",
-        "title": "Bomen blijken eigen 'spieren' te hebben"
-      },
-      {
-        "id": "1788646234804g1sgv91ia",
-        "title": "Amerikaanse kastanje krijgt genetische reddingsboei"
-      },
-      {
-        "id": "17886485649093lmuettpf",
-        "title": "Vissenbrein filtert eigen signalen slim uit"
-      },
-      {
-        "id": "178864553146221lp57tcj",
-        "title": "AI-muziek geweerd uit Australische hitlijsten"
-      }
-    ]
-  },
-  {
-    "id": "1788668077914dbmh5cikz",
-    "title": "Flessen redden dolfijnen en meer goed nieuws",
-    "summary": "Een simpele uitvinding met lege plastic flessen aan visnetten vermindert de bijvangst van dolfijnen met 88 procent, ontdekte een emeritus mariene bioloog. Vlaanderen sluit dolfinarium Boudewijn Seapark uiterlijk in 2037. India lanceerde zijn eerste in eigen land gebouwde waterstoftrein voor niet-geëlektrificeerde routes. Een Japans bedrijf kan nu tot 90 procent van het lithium uit autobatterijen terugwinnen, tegenover minder dan 50...",
-    "image_alt": "Dolfijn zwemt bij een visnet met daaraan bevestigde lege plastic flessen",
-    "meta_description": "Plastic flessen redden dolfijnen, India's eerste waterstoftrein en doorbraak in lithiumrecycling: goed nieuws overzicht.",
-    "meta_keywords": "dolfijnen, waterstoftrein, lithium recycling, plastic bottles, Great Bubble Barrier, Wota Box, energieopslag, dierenwelzijn, duurzaamheid",
-    "link": "https://squirrel-news.net/news/plastic-bottles-saving-dolphins-indias-first-hydrogen-powered-train-lithium-recycling-breakthrough/",
-    "source": "Squirrel-News.net",
-    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/07/Delfine.jpg",
-    "date": "2026-09-06T04:14:39.875Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1788667974151j2zsxndgd",
-    "title": "Buitengym Helpt Daklozen Parijs Vooruit",
-    "summary": "Een Fins bedrijf, Omnigym, heeft een buitengym geplaatst bij een daklozenopvang in Parijs. Het doel was te testen of makkelijke toegang tot beweging de fysieke en mentale gezondheid van bewoners kan verbeteren. Na een maand blijkt uit anonieme data en zelfevaluaties dat 80% van de deelnemers een verbeterde fysieke gezondheid ervaart. Ook werden positieve effecten gemeld op welzijn, slaap, stemming...",
-    "image_alt": "Buitengym-apparatuur geplaatst in de binnenplaats van een daklozenopvang in Parijs",
-    "meta_description": "Fins bedrijf Omnigym plaatst buitengym bij daklozenopvang in Parijs; 80% meldt betere gezondheid.",
-    "meta_keywords": "Omnigym, daklozen, Parijs, buitengym, gezondheid, Emmaüs Solidarité, fitness",
-    "link": "https://www.goodnewsnetwork.org/new-gym-in-paris-helps-homeless-improve-their-health-and-habits/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Wilfried-enjoying-The-Shelter-Gym-in-Paris-RELEASED-BY-Omnigym.jpeg",
-    "date": "2026-09-06T04:12:56.864Z",
-    "category": "Health",
-    "score": 9
-  },
-  {
-    "id": "17886485649093lmuettpf",
-    "title": "Vissenbrein filtert eigen signalen slim uit",
-    "summary": "Wetenschappers hebben ontdekt hoe de hersenen van de olifantneusvis elektrische ruis wegfilteren. Deze Afrikaanse vis stuurt en ontvangt voortdurend elektrische signalen en moet zijn eigen signalen negeren om prooien te kunnen opsporen. Onderzoekers van Columbia University's Zuckerman Institute, onder leiding van Nathaniel Sawtell, brachten de neuronen in het betreffende hersengebied in kaart en combineerden dit met metingen en computermodellen. Daaruit...",
-    "image_alt": "Olifantneusvis zwemmend in water, bekend om zijn elektrosensing",
-    "meta_description": "Onderzoekers ontrafelen hoe het brein van de olifantneusvis elektrische ruis filtert om prooien te vinden.",
-    "meta_keywords": "olifantneusvis, hersenonderzoek, neurowetenschap, elektrosensing, Columbia University, Nature, brein",
-    "link": "https://www.npr.org/2026/09/04/nx-s1-5953883/scientists-study-how-the-brain-of-a-fish-filters-out-signals",
-    "source": "NPR.org",
-    "image": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
-    "date": "2026-09-05T22:49:26.838Z",
-    "category": "Science",
-    "score": 8
-  },
-  {
-    "id": "1788648470866m1vi4va9k",
-    "title": "Wasserette Wordt Bibliotheek Voor Kinderen",
-    "summary": "In een wasserette in Wyoming, Ohio, hangen vier manden vol kinderboeken zoals 'Mike Mulligan and His Steam Shovel'. Janice Weiser richtte deze boekenhoek in november in en vult hem elke tien dagen aan. Het is onderdeel van de Laundromat Library League, een netwerk van meer dan 200 wasserettes door de VS die boeken aanbieden aan kinderen. De organisatie, opgericht door...",
-    "image_alt": "Boekenmanden met kinderboeken hangen aan de muur van een wasserette",
-    "meta_description": "Wasserettes in de VS bieden gratis kinderboeken aan via de Laundromat Library League, met al 400.000 verspreide boeken.",
-    "meta_keywords": "wasserette bibliotheek, kinderboeken, Laundromat Library League, leesbevordering, gratis boeken, Ohio",
-    "link": "https://reasonstobecheerful.world/the-spark-laundromat-libraries/",
-    "source": "ReasonsToBeCheerful.world",
-    "image": "https://s.w.org/images/core/emoji/17.0.2/72x72/1fae7.png",
-    "date": "2026-09-05T22:47:52.731Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "1788647811819l0v9pyg4w",
-    "title": "Nieuw College Wil Studiekosten Verlagen",
-    "summary": "In Montpelier, Vermont, wordt het Greenway Institute opgericht, een compleet nieuwe hogeschool die hoger onderwijs anders wil inrichten. Op een negentiende-eeuwse campus combineert de school praktijkgericht leren onder begeleiding van docenten met het schrappen van overbodige bestuurslagen en luxe voorzieningen om de kosten te drukken. Oprichter Mark Somerville, voormalig provoost van Olin College of Engineering, noemt dit nodig gezien de...",
-    "image_alt": "Mark Somerville staat voor een whiteboard met taken voor de opening van het Greenway Institute op de historische campus in Montpelier, Vermont.",
-    "meta_description": "Nieuw Greenway Institute in Vermont wil hoger onderwijs betaalbaarder maken met praktijkgericht leren en minder bureaucratie.",
-    "meta_keywords": "Greenway Institute, hoger onderwijs, Vermont, studiekosten, praktijkgericht leren, Mark Somerville, Future Universities Alliance",
-    "link": "https://ww2.kqed.org/mindshift/2026/09/04/hands-on-learning-as-college-a-new-school-hopes-to-curb-rising-tuition-and-create-new-pathways/",
-    "source": "Ww2.kqed.org/mindshift",
-    "image": "https://cdn.kqed.org/wp-content/uploads/sites/23/2026/09/he-reinventing-college-1-2000x1334.jpeg",
-    "date": "2026-09-05T22:36:52.687Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "1788647730911cqw2ar8lh",
-    "title": "Onderzoek naar obesitas via menselijke biologie",
-    "summary": "The Humane Research Trust ondersteunt sinds 1961 wetenschappers die zoeken naar alternatieven voor dierproeven in medisch onderzoek. In een recent artikel belicht de organisatie belangrijk onderzoek naar obesitas en verwante metabole ziekten. Daarbij benadrukken zij dat obesitas meer is dan alleen overgewicht, en dat er onderzoeksmethoden nodig zijn die daadwerkelijk aansluiten bij de menselijke biologie.",
-    "image_alt": "Wetenschappelijk onderzoek naar obesitas en menselijke biologie",
-    "meta_description": "The Humane Research Trust belicht onderzoek naar obesitas via methoden gericht op menselijke biologie in plaats van dierproeven.",
-    "meta_keywords": "obesitas, Humane Research Trust, dierproeven, medisch onderzoek, metabole ziekten, menselijke biologie",
-    "link": "https://www.openaccessgovernment.org/understanding-obesity-through-human-biology/213572/",
-    "source": "Openaccessgovernment.org",
-    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
-    "date": "2026-09-05T22:35:31.778Z",
-    "category": "Health",
-    "score": 7
-  },
-  {
-    "id": "1788647709263hp99h6be9",
-    "title": "EU trekt €105,5 miljoen uit voor onderzoekers",
-    "summary": "De Europese Commissie heeft €105,5 miljoen aan financiering toegekend voor 29 doctorale en postdoctorale onderzoeksprogramma's onder het Marie Skłodowska-Curie Actions (MSCA) COFUND-programma van 2026. De steun valt onder Horizon Europe en omvat 15 doctorale opleidingsprogramma's en 14 postdoctorale beursprogramma's. De geselecteerde projecten trainen naar verwachting honderden onderzoekers en bevorderen internationale samenwerking. Van de 141 aanvragen werden er 136 geëvalueerd; 29...",
-    "image_alt": "Onderzoekers werken samen in een laboratorium als symbool voor de EU-financiering voor doctorale programma's",
-    "meta_description": "EU investeert €105,5 miljoen in 29 onderzoeksprogramma's via MSCA COFUND, ter ondersteuning van honderden onderzoekers wereldwijd.",
-    "meta_keywords": "EU financiering, Marie Skłodowska-Curie Actions, MSCA COFUND, Horizon Europe, doctoraal onderzoek, postdoctoraal onderzoek, internationale samenwerking",
-    "link": "https://www.openaccessgovernment.org/eu-announces-e105-5-million-boost-for-29-doctoral-and-postdoctoral-research-programmes/213893/",
-    "source": "Openaccessgovernment.org",
-    "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&q=80",
-    "date": "2026-09-05T22:35:10.540Z",
-    "category": "Science",
-    "score": 9
-  },
-  {
-    "id": "1788647632647hhq6v0lay",
-    "title": "Van Plastic Fles Tot Koekje",
-    "summary": "Wetenschappers hebben een koekje ontwikkeld dat gemaakt is van gerecycled plastic. Onderzoekers van Southern Illinois University Carbondale, onder leiding van synthetisch microbioloog Lahiru Jayakody, engineerden gist die plastic (het type gebruikt in waterflessen en voedselverpakkingen) samen met vermalen maïsstengels kan afbreken tot eenvoudige moleculen. Deze werden verwerkt tot een eiwitpasta, gemengd met vanille en bètacaroteen, en met een 3D-voedselprinter tot...",
-    "image_alt": "Klein koekje gemaakt van gerecycled plastic op een bord",
-    "meta_description": "Wetenschappers maken eetbare koekjes van gerecycled plastic met behulp van genetisch gemodificeerde gist.",
-    "meta_keywords": "plastic recycling, eetbaar plastic, gist, synthetische biologie, voedseltechnologie, American Chemical Society",
-    "link": "https://www.npr.org/2026/09/05/nx-s1-5947227-e1/from-bottles-to-bakery-how-scientists-create-edible-cookies-from-recycled-plastic",
-    "source": "NPR.org",
-    "image": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
-    "date": "2026-09-05T22:33:54.205Z",
-    "category": "Science",
-    "score": 7
-  },
-  {
-    "id": "1788647579010wxcreq06i",
-    "title": "Bomen blijken eigen 'spieren' te hebben",
-    "summary": "Franse onderzoekers van INRAE en de Universiteit Clermont Auvergne hebben ontdekt hoe bomen hun vorm actief sturen met een mechanisme dat lijkt op spieren, iets wat eerder alleen bij dieren werd verondersteld. In een experiment met jonge populieren werden bomen horizontaal geplaatst en vervolgens op een roterend platform in een bol met licht van alle kanten gezet, om de invloed...",
-    "image_alt": "Jonge boom die spanninghout gebruikt om rechtop te groeien",
-    "meta_description": "Onderzoekers ontdekken hoe bomen met 'spanninghout' hun vorm sturen, als een soort spier — een mechanisme ooit uniek dierlijk gedacht.",
-    "meta_keywords": "bomen, spanninghout, plantengroei, INRAE, populieren, plantenbiologie, spieren planten",
-    "link": "https://newatlas.com/environment/newly-identified-muscle-trees/",
-    "source": "Newatlas.com",
-    "image": "https://assets.newatlas.com/dims4/default/2d8b94c/2147483647/strip/true/crop/3456x2304+0+0/resize/1440x960!/format/webp/quality/90/?url=https%3A%2F%2Fnewatlas-brightspot.s3.ap-southeast-2.amazonaws.com%2F9a%2F8a%2Fdb01d93a48049df7dcdcecf2e3c6%2Fdepositphotos-379281722-xl.jpg",
-    "date": "2026-09-05T22:33:00.052Z",
-    "category": "Science",
-    "score": 9
-  },
-  {
-    "id": "1788647519997iqucy27jj",
-    "title": "Texas stopt geld voor Flock-camera's",
-    "summary": "Gouverneur Greg Abbott heeft alle Texaanse overheidsinstanties opgedragen te stoppen met het financieren van Flock-camera's, na toenemende zorgen over de AI-gestuurde surveillancetechnologie. De order kwam vlak voordat The Texas Tribune een onderzoek publiceerde waaruit blijkt dat een staatsinstantie minstens 30 miljoen dollar heeft besteed aan het uitbreiden van het Flock-netwerk via subsidies aan lokale politiediensten. Sinds 2023 zijn zo minstens...",
-    "image_alt": "Flock-camera bevestigd aan een verkeerspaal",
-    "meta_description": "Texas stopt financiering van Flock-surveillancecamera's na zorgen over privacy en misbruik door agenten.",
-    "meta_keywords": "Flock camera's, Texas, surveillance, Greg Abbott, privacy, politie, kentekenscanner",
-    "link": "https://www.goodgoodgood.co/articles/texas-governor-abbott-flock-state-agency-spending",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a97209fa115f0a5bc0f49b8_6a97209eb78913be409a7a90_texas-governor-abbott-flock-state-agency-spending-featured.webp",
-    "date": "2026-09-05T22:32:00.818Z",
-    "category": "Tech",
-    "score": 7
-  },
-  {
-    "id": "17886474469233c40ikjm7",
-    "title": "Wandelen ter ere van Jane Goodall",
-    "summary": "Het Jane Goodall Institute roept Amerikanen op om van 1 tot 4 oktober 2026 de natuur in te trekken tijdens de eerste 'Hike for Hope'. Het evenement valt rond de sterfdatum van de legendarische conservationist, die op 1 oktober 2025 overleed. Mensen kunnen deelnemen aan georganiseerde wandelingen of zelf een hike organiseren. De Roots & Shoots Basecamps van het instituut...",
-    "image_alt": "Wandelaars in de natuur tijdens Hike for Hope ter ere van Jane Goodall",
-    "meta_description": "Jane Goodall Institute roept op tot landelijke wandelactie 'Hike for Hope' van 1-4 oktober 2026 ter ere van de overleden conservationist.",
-    "meta_keywords": "Jane Goodall, Hike for Hope, Jane Goodall Institute, natuurbehoud, wandelen, Roots and Shoots, conservationist",
-    "link": "https://www.goodgoodgood.co/articles/jane-goodall-hike-for-hope",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a99b3cfd8c1f9500b6c5ed2_6a99b3cee7965a5348b26bba_jane-goodall-hike-for-hope-featured.webp",
-    "date": "2026-09-05T22:30:47.653Z",
-    "category": "Environment",
-    "score": 7
-  },
-  {
-    "id": "1788647384130wkqh8u5kt",
-    "title": "Tiener bedenkt prijswinnend apparaat tegen stropers",
-    "summary": "Anika Puri, inmiddels afgestudeerd aan MIT, won op haar zeventiende de Peggy Scripps Award for Science Communication tijdens de Regeneron International Science and Engineering Fair (ISEF) 2022. Ze ontwikkelde EISa (elephant savior), een AI-gestuurd apparaat dat via een drone met thermische en infraroodbeelden olifanten en potentiële stropers kan onderscheiden op basis van hun bewegingspatronen. Het systeem gebruikt een goedkope thermische...",
-    "image_alt": "Drone met thermische camera vliegt over natuurpark om stropers te detecteren",
-    "meta_description": "Tiener Anika Puri wint ISEF-prijs met AI-drone die olifanten beschermt tegen stropers met 90% nauwkeurigheid.",
-    "meta_keywords": "olifanten, stropers, kunstmatige intelligentie, drone, ISEF, MIT, Anika Puri, wildlifebescherming",
-    "link": "https://www.goodgoodgood.co/articles/teen-invents-device-to-catch-elephant-poachers",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a99d3d1e19a819a1f4c6ed1_6a99d3cfeccb478753f53f50_teen-invents-device-to-catch-elephant-poachers-featured.webp",
-    "date": "2026-09-05T22:29:44.931Z",
-    "category": "Tech",
-    "score": 9
-  },
-  {
-    "id": "1788647298148ob78z37jl",
-    "title": "Rechter blokkeert datacenter op federale grond bij Boulder City",
-    "summary": "Een federale administratieve rechtbank heeft de vergunning voor de bouw van een groot datacenter bij Boulder City tijdelijk ingetrokken. Het Interior Board of Land Appeals oordeelde dat het Bureau of Land Management waarschijnlijk fout zat door het project goed te keuren op basis van een eerdere, niet-gerelateerde milieuanalyse voor een zonne-energieproject. Townsite Solar 2 LLC kreeg in 2023 toestemming voor...",
-    "image_alt": "Bouwterrein voor datacenter op woestijngrond bij Boulder City, Nevada",
-    "meta_description": "Federale rechter stopt bouw datacenter bij Boulder City wegens ontbrekende milieuanalyse van het BLM.",
-    "meta_keywords": "datacenter, Boulder City, BLM, milieuanalyse, Center for Biological Diversity, publieke grond, Nevada",
-    "link": "https://www.goodgoodgood.co/articles/judge-stops-data-center-construction-on-public-land",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a99d742fc12430b9490b45f_6a99d7423240a45dbfdebcf1_judge-stops-data-center-construction-on-public-land-featured.webp",
-    "date": "2026-09-05T22:28:18.879Z",
-    "category": "Environment",
-    "score": 7
-  },
-  {
-    "id": "1788647218036re517hbkv",
-    "title": "64 zeeschildpadjes gered uit zwembad Florida",
-    "summary": "Een gezin in de Florida Keys trof eind augustus 64 pasgeboren zeeschildpadjes aan in hun zwembad. De diertjes waren waarschijnlijk afgeleid van hun weg naar zee door kunstlicht van het huis, tijdens het nestseizoen dat van maart tot oktober loopt. Het gezin schakelde The Turtle Hospital in Marathon in, dat de babyschildpadjes uit het gechloreerde water haalde. Alle 64 dieren...",
-    "image_alt": "Baby zeeschildpadjes bijeen in een zwembad in Florida",
-    "meta_description": "Florida-gezin vindt 64 baby zeeschildpadjes in zwembad; The Turtle Hospital redt en herenigt ze met de oceaan.",
-    "meta_keywords": "zeeschildpadden, Florida Keys, The Turtle Hospital, hatchlings, dierenredding, kunstlicht, nestseizoen",
-    "link": "https://www.goodgoodgood.co/articles/sea-turtle-hatchlings-florida-backyard-swimming-pool",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a9af80e98e674fb1746e3e0_6a9af80edd6f0314d3f39cef_sea-turtle-hatchlings-florida-backyard-swimming-pool-featured.webp",
-    "date": "2026-09-05T22:26:58.881Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "17886471531332n1uz0ka2",
-    "title": "Kitten Overleeft Rit In Motorkap",
-    "summary": "Op 2 september kreeg de stad Kerrville, Texas een ongewone melding: een medewerker van het gezondheidszorgcentrum hoorde een kat huilen vanuit de motorruimte van zijn auto. Het bleek een pasgeboren kitten te zijn die vanuit Rocksprings, Texas was meegereden, een tocht van minstens 76 mijl. Personeel van Peterson Health verwijderde de voorgrille van de auto om de kitten veilig te...",
-    "image_alt": "Reddingswerkers halen een pasgeboren kitten uit de motorruimte van een auto",
-    "meta_description": "Pasgeboren kitten overleeft 76 mijl lange rit in motorkap en wordt gered door hulpdiensten in Texas.",
-    "meta_keywords": "kitten gered, motorkap kat, Kerrville Texas, Kerrville Pets Alive, dierenredding",
-    "link": "https://www.goodgoodgood.co/articles/newborn-kitten-rescued-from-car-engine",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a9b0d844b3bc6204c0482b8_6a9b0d83bea0105046765123_newborn-kitten-rescued-from-car-engine-featured.webp",
-    "date": "2026-09-05T22:25:53.939Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "1788647086622ilhiogf10",
-    "title": "Voormalige vogelvangers redden zangvogels Java",
-    "summary": "In de Menoreh Hills bij Yogyakarta, Indonesië, zetten voormalige vogelvangers zich nu in voor natuurbehoud. Parman, die ooit jonge zangvogels ving voor de handel, stopte toen vogels schaars werden en richtte zich op geitenteelt. De Javaanse blauwe vliegenvanger, ooit algemeen, is nu ernstig bedreigd: er zitten meer exemplaren in gevangenschap dan in het wild. Het dorp Donorejo voerde twee jaar...",
-    "image_alt": "Javaanse blauwe vliegenvanger in het groen van de Menoreh Hills, Indonesië",
-    "meta_description": "Voormalige vogelvangers in Java zetten zich nu in om zangvogels zoals de Javaanse blauwe vliegenvanger te redden.",
-    "meta_keywords": "Menoreh Hills, Javaanse blauwe vliegenvanger, vogelhandel Indonesië, natuurbehoud, Yogyakarta, zangvogels",
-    "link": "https://www.goodgoodgood.co/articles/former-bird-hunters-rebuild-wildlife",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a97108631eb494018177187_in-javas-hills-former-bird-hunters-are-rebuilding-a-songbird-haven-01.jpg",
-    "date": "2026-09-05T22:24:48.213Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1788646955438obijzrd5e",
-    "title": "Australië trekt grens bij muziek",
-    "summary": "Australië heeft in zijn muziekhitlijsten een duidelijke lijn getrokken over wat wel en niet als 'echte muziek' telt. Verdere details over de precieze regels, de aanleiding of de gevolgen van deze beslissing worden in de beschikbare bron niet gegeven.",
-    "image_alt": "Muzieknoten en een hitlijst symboliseren de discussie over wat telt als echte muziek",
-    "meta_description": "Australië trekt in zijn hitlijsten een grens over wat telt als echte muziek.",
-    "meta_keywords": "Australië, muziek, hitlijsten, muziekindustrie",
-    "link": "https://www.optimistdaily.com/2026/08/what-counts-as-real-music-australias-charts-just-drew-a-line/",
-    "source": "OptimistDaily.com",
-    "image": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_140379260_L-1024x682.jpg",
-    "date": "2026-09-05T22:22:37.017Z",
-    "category": "Tech",
-    "score": 7
   }
 ]

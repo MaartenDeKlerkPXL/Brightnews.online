@@ -305,6 +305,13 @@ async function laadNieuws(taal) {
 }
 
 async function toonDetail(id) {
+    // Allereerst, nog vóór er iets aan de DOM verandert: waar stond de
+    // bezoeker? Hieronder wordt #news-container verborgen, en daarmee zakt de
+    // pagina in elkaar. De browser kapt de scrollpositie dan af op wat er nog
+    // past (gemeten: 361 terwijl de pagina op 3000 stond), dus een regel later
+    // uitlezen levert een waarde op die nergens meer op slaat.
+    const scrollBijVertrek = window.scrollY;
+
     const detailView = document.getElementById('detail-view');
     const container = document.getElementById('news-container');
     const detailNav = document.getElementById('detail-navigation');
@@ -336,8 +343,8 @@ async function toonDetail(id) {
     }
 
     updateMetaTags(artikel);
-    // Sla positie op
-    sessionStorage.setItem('brightScrollPos', window.scrollY);
+    // Sla positie op — de waarde van vóór het verbergen, zie boven.
+    try { sessionStorage.setItem('brightScrollPos', String(scrollBijVertrek)); } catch (e) { /* privemodus */ }
 
     // Forceer de browser om onmiddellijk naar boven te gaan ZONDER animatie
     window.scrollTo({top: 0, left: 0, behavior: 'instant'});
@@ -760,13 +767,16 @@ function renderLijst(artikelen) {
     const savedPos = sessionStorage.getItem('brightScrollPos');
     if (savedPos) container.style.opacity = '0';
 
-    // 4. Dagoverzichten (type 'digest') altijd bovenaan, ook wanneer er op
-    // categorie gefilterd is. Array.prototype.sort is stabiel, dus binnen
-    // beide groepen blijft de bestaande volgorde uit de feed staan.
+    // 4. Dagoverzichten (type 'digest') bovenaan — maar alleen de verse.
+    // Alle overzichten vooraan zetten leverde een homepage op waar je tegen
+    // een rij samenvattingen aankeek in plaats van tegen nieuws: 26 van de
+    // 150 kaarten (17%), op 17 september vijf op één dag. Sinds 2026-09-20
+    // staan alleen de overzichten van vandaag en gisteren bovenaan; de
+    // oudere schuiven gewoon op datum tussen het nieuws. Array.prototype.sort
+    // is stabiel, dus binnen beide groepen blijft de volgorde uit de feed
+    // staan — en die is al nieuwste-eerst.
     const gesorteerd = [...artikelen].sort((a, b) => {
-        const aIsDigest = a.type === 'digest' ? 0 : 1;
-        const bIsDigest = b.type === 'digest' ? 0 : 1;
-        return aIsDigest - bIsDigest;
+        return (isVersDagoverzicht(a) ? 0 : 1) - (isVersDagoverzicht(b) ? 0 : 1);
     });
 
     // 5. Zet de portiestand klaar. gezienOpPagina voorkomt dat dezelfde foto
@@ -788,14 +798,68 @@ function renderLijst(artikelen) {
 
     // 6. Herstel scroll-positie
     if (savedPos && !window.location.search.includes('id=')) {
-        requestAnimationFrame(() => {
-            window.scrollTo({ top: parseInt(savedPos), behavior: 'instant' });
-            container.style.opacity = '1';
-            sessionStorage.removeItem('brightScrollPos');
-        });
+        herstelScrollPositie(parseInt(savedPos, 10), container);
     } else {
         container.style.opacity = '1';
     }
+}
+
+// Terugkomen uit een artikel hoort je af te zetten waar je gebleven was.
+// Eén requestAnimationFrame is daarvoor te vroeg: de zojuist toegevoegde
+// kaarten zijn dan nog niet opgemeten, de pagina is nog laag, en de browser
+// kapt de scrollpositie af op wat er op dát moment past. Daarna groeit de
+// pagina eronder verder en sta je alsnog bovenaan.
+//
+// Daarom proberen we het per frame opnieuw totdat de pagina hoog genoeg is,
+// met een harde grens van een halve seconde zodat dit nooit blijft rondpompen
+// (bijvoorbeeld wanneer de lijst korter is dan hij was en de bewaarde positie
+// simpelweg niet meer bestaat).
+// Een dagoverzicht telt als "vers" op de dag dat het verschijnt en de dag
+// erna. Gerekend in hele kalenderdagen (UTC, net als de datums in de feed),
+// zodat het niet uitmaakt hoe laat de nachtrun precies liep.
+function isVersDagoverzicht(artikel) {
+    if (!artikel || artikel.type !== 'digest') return false;
+    const dag = String(artikel.date || '').slice(0, 10);
+    if (!dag) return false;
+
+    const nu = new Date();
+    const vandaag = new Date(Date.UTC(nu.getUTCFullYear(), nu.getUTCMonth(), nu.getUTCDate()));
+    const verschilDagen = Math.round((vandaag - new Date(`${dag}T00:00:00Z`)) / 86400000);
+    return verschilDagen >= 0 && verschilDagen <= 1;
+}
+
+function herstelScrollPositie(doel, container) {
+    const deadline = performance.now() + 500;
+    let klaar = false;
+
+    function toon() {
+        if (klaar) return;
+        klaar = true;
+        if (container) container.style.opacity = '1';
+        try { sessionStorage.removeItem('brightScrollPos'); } catch (e) { /* privemodus */ }
+    }
+
+    // Vangnet. requestAnimationFrame vuurt niet in een tabblad dat op de
+    // achtergrond staat, en dan zou de lijst op opacity 0 blijven hangen —
+    // onzichtbaar, tot je het tabblad weer naar voren haalt. Deze timer loopt
+    // wél door en zet de lijst hoe dan ook aan.
+    setTimeout(toon, 700);
+
+    if (!Number.isFinite(doel) || doel <= 0) { toon(); return; }
+
+    function probeer() {
+        if (klaar) return;
+        // Het uitlezen van scrollHeight dwingt een layout af: pas daarna weet
+        // de browser hoe hoog de pagina met de nieuwe kaarten werkelijk is.
+        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        window.scrollTo({ top: Math.min(doel, Math.max(maxScroll, 0)), behavior: 'instant' });
+
+        const aangekomen = window.scrollY >= doel - 2;
+        if (aangekomen || performance.now() > deadline) { toon(); return; }
+        requestAnimationFrame(probeer);
+    }
+
+    requestAnimationFrame(probeer);
 }
 
 function updateShareLinks(artikelTitel, artikelUrl) {
@@ -1143,3 +1207,217 @@ window.terugNaarOverzicht = terugNaarOverzicht;
 window.wisselTaal = wisselTaal;
 window.toggleShareMenu = toggleShareMenu;
 window.copyLink = copyLink;
+/* ==========================================================================
+   Feedback uit de footer (punt 35)
+
+   We weten straks wél hoeveel mensen er komen (de meetlus), maar niet wat ze
+   ervan vínden. Dit is een klein lijntje onderaan de footer — geen pop-up,
+   geen banner — dat een kort formulier opent.
+
+   Zowel het lijntje als het venster worden hier in JavaScript gemaakt en niet
+   in de HTML gezet. Dat is bewust: de footer staat op twaalf losse pagina's
+   én in het artikelsjabloon, en dat sjabloon aanpassen betekent alle 2910
+   artikelpagina's opnieuw genereren. index.js staat op al die pagina's, dus
+   één plek volstaat.
+
+   Ontwerpkeuzes (gemaakt 2026-09-21, de TODO liet ze open):
+   - Drie schalen staan meteen open, twee zitten achter "nog twee korte
+     vragen". Vijf gesloten vragen ineens is te veel gevraagd voor iemand die
+     even iets invult, en de eerste drie zijn de belangrijkste.
+   - Anoniem, met een optioneel e-mailadres. Anoniem geeft eerlijker
+     antwoorden; wie doorgevraagd wil worden, kan zich melden.
+   - Niets is verplicht behalve dat je íets invult.
+   ========================================================================== */
+
+// Publieke anon-gegevens, dezelfde als in js/supabase-init.js. Die bundel
+// staat niet op elke pagina (over-ons, contact, refunds...), dus hier een
+// eigen fetch in plaats van window.supabaseClient. De host staat al in de
+// connect-src van de CSP van alle pagina's, dus daar hoeft niets bij.
+const FEEDBACK_URL = 'https://rquuqypgaannrakdrabj.supabase.co/rest/v1/feedback';
+const FEEDBACK_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJxdXVxeXBnYWFubnJha2RyYWJqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA4MTQyODUsImV4cCI6MjA4NjM5MDI4NX0.-H5ZIcLXBflqKvC0VQGlVGIX29G-nceC9ak5IrhJCzg';
+
+const FEEDBACK_VRAGEN = [
+    { kolom: 'positief',  sleutel: 'fb_v1', extra: false },
+    { kolom: 'techniek',  sleutel: 'fb_v2', extra: false },
+    { kolom: 'uiterlijk', sleutel: 'fb_v3', extra: false },
+    { kolom: 'navigatie', sleutel: 'fb_v4', extra: true },
+    { kolom: 'teksten',   sleutel: 'fb_v5', extra: true },
+];
+
+// Grof genoeg om iets te zeggen over "werkt het op mijn toestel", te grof om
+// iemand aan te herkennen. Bewust geen user agent opslaan.
+function feedbackToestel() {
+    const breedte = window.innerWidth;
+    if (breedte < 768) return 'mobiel';
+    if (breedte < 1024) return 'tablet';
+    return 'desktop';
+}
+
+function feedbackVraagHtml(vraag) {
+    const knoppen = [1, 2, 3, 4, 5].map(n => `
+        <label class="fb-bol">
+            <input type="radio" name="fb-${vraag.kolom}" value="${n}">
+            <span>${n}</span>
+        </label>`).join('');
+
+    return `
+        <fieldset class="fb-vraag">
+            <legend data-i18n="${vraag.sleutel}">${getT(vraag.sleutel)}</legend>
+            <div class="fb-schaal">${knoppen}</div>
+            <div class="fb-uitersten">
+                <span data-i18n="fb_laag">${getT('fb_laag')}</span>
+                <span data-i18n="fb_hoog">${getT('fb_hoog')}</span>
+            </div>
+        </fieldset>`;
+}
+
+function bouwFeedbackVenster() {
+    const venster = document.createElement('dialog');
+    venster.className = 'fb-venster';
+    venster.id = 'feedback-venster';
+
+    // <dialog> regelt zelf de focus, de achtergrondlaag en sluiten met Escape.
+    venster.innerHTML = `
+        <form method="dialog" class="fb-form" novalidate>
+            <button type="button" class="fb-kruis" data-fb-sluit
+                    aria-label="${getT('fb_sluit')}" data-i18n-aria-label="fb_sluit">&times;</button>
+
+            <h2 data-i18n="fb_titel">${getT('fb_titel')}</h2>
+            <p class="fb-intro" data-i18n="fb_intro">${getT('fb_intro')}</p>
+
+            ${FEEDBACK_VRAGEN.filter(v => !v.extra).map(feedbackVraagHtml).join('')}
+
+            <details class="fb-meer">
+                <summary data-i18n="fb_meer">${getT('fb_meer')}</summary>
+                ${FEEDBACK_VRAGEN.filter(v => v.extra).map(feedbackVraagHtml).join('')}
+            </details>
+
+            <label class="fb-open">
+                <span data-i18n="fb_droom">${getT('fb_droom')}</span>
+                <textarea rows="4" id="fb-droom" maxlength="2000"
+                          placeholder="${getT('fb_droom_plh')}"
+                          data-i18n-placeholder="fb_droom_plh"></textarea>
+            </label>
+
+            <label class="fb-email">
+                <span data-i18n="fb_email_label">${getT('fb_email_label')}</span>
+                <input type="email" id="fb-email" maxlength="254"
+                       placeholder="${getT('fb_email_plh')}"
+                       data-i18n-placeholder="fb_email_plh">
+            </label>
+
+            <p class="fb-melding" role="status" aria-live="polite"></p>
+
+            <div class="fb-knoppen">
+                <button type="button" class="fb-annuleer" data-fb-sluit
+                        data-i18n="fb_sluit">${getT('fb_sluit')}</button>
+                <button type="button" class="fb-verstuur"
+                        data-i18n="fb_verstuur">${getT('fb_verstuur')}</button>
+            </div>
+        </form>`;
+
+    venster.querySelectorAll('[data-fb-sluit]').forEach(knop => {
+        knop.addEventListener('click', () => venster.close());
+    });
+    venster.querySelector('.fb-verstuur').addEventListener('click', verstuurFeedback);
+
+    document.body.appendChild(venster);
+    return venster;
+}
+
+async function verstuurFeedback() {
+    const venster = document.getElementById('feedback-venster');
+    const melding = venster.querySelector('.fb-melding');
+    const knop = venster.querySelector('.fb-verstuur');
+
+    const antwoord = {
+        taal: window.huidigeTaal || 'nl',
+        pagina: window.location.pathname,
+        toestel: feedbackToestel(),
+        droom: venster.querySelector('#fb-droom').value.trim() || null,
+        email: venster.querySelector('#fb-email').value.trim() || null,
+    };
+    for (const vraag of FEEDBACK_VRAGEN) {
+        const gekozen = venster.querySelector(`input[name="fb-${vraag.kolom}"]:checked`);
+        antwoord[vraag.kolom] = gekozen ? Number(gekozen.value) : null;
+    }
+
+    // Eén antwoord is genoeg; een leeg formulier versturen heeft geen zin.
+    const ingevuld = FEEDBACK_VRAGEN.some(v => antwoord[v.kolom] !== null) || antwoord.droom;
+    if (!ingevuld) {
+        melding.textContent = getT('fb_leeg');
+        melding.className = 'fb-melding fb-fout';
+        return;
+    }
+
+    knop.disabled = true;
+    melding.textContent = '';
+    melding.className = 'fb-melding';
+
+    try {
+        const res = await fetch(FEEDBACK_URL, {
+            method: 'POST',
+            headers: {
+                'apikey': FEEDBACK_KEY,
+                'Authorization': `Bearer ${FEEDBACK_KEY}`,
+                'Content-Type': 'application/json',
+                'Prefer': 'return=minimal',
+            },
+            body: JSON.stringify(antwoord),
+        });
+        if (!res.ok) throw new Error(`status ${res.status}`);
+
+        melding.textContent = getT('fb_dank');
+        melding.className = 'fb-melding fb-gelukt';
+        venster.querySelector('.fb-form').classList.add('fb-verzonden');
+        setTimeout(() => venster.close(), 1800);
+    } catch (err) {
+        console.error('Feedback versturen mislukt:', err.message);
+        melding.textContent = getT('fb_fout');
+        melding.className = 'fb-melding fb-fout';
+        knop.disabled = false;
+    }
+}
+
+function openFeedback(event) {
+    if (event) event.preventDefault();
+    const venster = document.getElementById('feedback-venster') || bouwFeedbackVenster();
+    // Het venster is net gebouwd met de teksten van nú; deze aanroep vangt een
+    // taalwissel die daarna gebeurt en de placeholders/aria-labels.
+    vertaalStatischeTeksten(window.huidigeTaal);
+
+    // showModal() regelt de achtergrondlaag, de focus en sluiten met Escape.
+    // Op een browser die <dialog> niet kent bestaat die functie niet, en dan
+    // zou de link dood zijn; open het venster dan gewoon zonder die extra's.
+    if (typeof venster.showModal === 'function') {
+        venster.showModal();
+    } else {
+        venster.setAttribute('open', '');
+    }
+}
+
+// Het lijntje onderaan. Eén regel, zelfde grijs als de copyrightregel — het
+// hoort op te vallen als je ernaar zoekt en niet als je dat niet doet.
+function plaatsFeedbackLink() {
+    const onderkant = document.querySelector('.footer-bottom');
+    if (!onderkant || document.getElementById('feedback-link')) return;
+
+    const regel = document.createElement('p');
+    regel.className = 'fb-regel';
+    const link = document.createElement('a');
+    link.id = 'feedback-link';
+    link.href = '#';
+    link.setAttribute('data-i18n', 'fb_link');
+    link.textContent = getT('fb_link');
+    link.addEventListener('click', openFeedback);
+    regel.appendChild(link);
+    onderkant.appendChild(regel);
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', plaatsFeedbackLink);
+} else {
+    plaatsFeedbackLink();
+}
+
+window.openFeedback = openFeedback;

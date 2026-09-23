@@ -1,5 +1,396 @@
 [
   {
+    "id": "dg-20260922-health",
+    "type": "digest",
+    "digest_date": "2026-09-22",
+    "title": "Schlaf, Urin und Herzschlag: drei Schritte vorwärts in der Gesundheitsversorgung",
+    "summary": "Diese Tage zeigen, dass Gesundheitsfortschritte manchmal in kleinen, intelligenten Schritten stecken. Eine einfache Belohnung für ausreichend Schlaf, ein Urintest, der Krebs aufspürt, und eine KI, die bei einem Herzfilm mitschaut: drei verschiedene Geschichten mit einem roten Faden. Sie machen die Gesundheitsversorgung schneller, präziser und manchmal auch leichter zu bewältigen. Nehmen Sie die Studie der University of Pittsburgh [1]. Mehr als 1.100 Studenten erhielten eine Fitbit-App, und etwa 468 von ihnen bekamen ungefähr 5 Dollar pro Nacht, wenn sie sieben Stunden schliefen. Das Ergebnis: 26% mehr Nächte mit ausreichend Schlaf und 19 Minuten längerer Schlaf pro Schulnacht. Ihre Noten stiegen in...",
+    "image_alt": "Schlaf, Urin und Herzschlag: drei Schritte vorwärts in der Gesundheitsversorgung",
+    "meta_description": "Schlaf belohnen, Blasenkrebs über Urin aufspüren und Herzerkrankungen mit KI erkennen: drei hoffnungsvolle Gesundheitsnachrichten dieser Tage im Überblick.",
+    "meta_keywords": "Health",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aad7f471fbf338d1a44c36c_6aad7f45b52f83488b1f588b_researchers-pay-college-students-to-sleep-more-featured.webp",
+    "date": "2026-09-23T04:30:11.998Z",
+    "category": "Health",
+    "refs": [
+      {
+        "id": "1789965334441fmmtlceew",
+        "title": "Fünf Dollar pro Nacht Schlaf verbessern Noten von Studierenden"
+      },
+      {
+        "id": "1790137627194t8vksyuta",
+        "title": "GALEAS-Urintest spürt Blasenkrebs überraschend genau auf"
+      },
+      {
+        "id": "1790051398328zl0crxok4",
+        "title": "Neue KI-Tool erkennt Herzerkrankungen mittels Standard-EKG"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260922-environment",
+    "type": "digest",
+    "digest_date": "2026-09-22",
+    "title": "Ein Wallaby taucht auf, zwei kleine Elefanten finden ein neues Zuhause",
+    "summary": "In diesen Tagen kommt gute Nachricht aus unerwarteten Ecken: ein Tier, das fünfzig Jahre lang spurlos schien, und zwei junge Elefanten, die dank menschlicher Hilfe eine neue Familie fanden. Drei Geschichten, die zeigen, wie Geduld und Fürsorge manchmal gerade noch rechtzeitig kommen. In Westaustralien suchten Forscher ein halbes Jahrhundert lang vergeblich im Gras nach Spuren des Nabarlek. Nun bestätigte die Australian Wildlife Conservancy das kleine Felswallaby doch wieder auf dem Festland, dank Wildkameras und Untersuchung von Ausscheidungen [1]. An zwei Stellen in der Kimberley-Region, bis zu 170 Kilometer auseinander, wurde das Tier mit knapp einem Kilogramm Gewicht gefunden. Zusammen mit...",
+    "image_alt": "Ein Wallaby taucht auf, zwei kleine Elefanten finden ein neues Zuhause",
+    "meta_description": "Nabarlek-Wallaby nach 50 Jahren zurück in Australien und zwei Waisenelifanten finden in Kenia ein neues Zuhause und eine enge Freundschaft.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab167478ba2d06d7ab7f39a_6ab16746237dffae5e47e8a3_tiny-wallaby-nabarlek-trail-cameras-australia-featured.webp",
+    "date": "2026-09-23T04:29:19.500Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1790137706448cjjzj9eh0",
+        "title": "Nabarlek-Wallaby nach 50 Jahren in Australien wiederentdeckt"
+      },
+      {
+        "id": "1790137681223mewceid9h",
+        "title": "Waisenkälbchen Kaikai bekommt drei Ranger als „Eltern\""
+      },
+      {
+        "id": "1790137654165e7izh7pd0",
+        "title": "Elefantenbaby Bungalu überlebte Löwenattacke und fand neue Familie"
+      }
+    ]
+  },
+  {
+    "id": "1790137706448cjjzj9eh0",
+    "title": "Nabarlek-Wallaby nach 50 Jahren in Australien wiederentdeckt",
+    "summary": "Forscher der Australian Wildlife Conservancy haben das Nabarlek-Wallaby erstmals seit 50 Jahren auf dem australischen Festland nachgewiesen. Wildkameras und Kotanalysen zeigten die Anwesenheit dieses kleinen Felswallabys an zwei neuen Orten in der Kimberley-Region in Westaustralien: im Yampi Sound Training Area und etwa 170 Kilometer weiter nordöstlich im Dambeemangaddee Country. Das Nabarlek, Australiens zweitkleinste Wallaby-Art, wog etwa 1,2 Kilogramm und galt...",
+    "image_alt": "Kleines Nabarlek-Wallaby, aufgenommen von einer Wildkamera in der Kimberley-Region in Australien",
+    "meta_description": "Nach 50 Jahren neuer Nachweis des seltenen Nabarlek-Wallabys in Australien durch Wildkameras und Forschung in der Kimberley-Region.",
+    "meta_keywords": "Nabarlek, Wallaby, Australien, Kimberley, Australian Wildlife Conservancy, bedrohte Tierart, Naturschutz, Wildkamera",
+    "link": "https://www.goodgoodgood.co/articles/tiny-wallaby-nabarlek-trail-cameras-australia",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab167478ba2d06d7ab7f39a_6ab16746237dffae5e47e8a3_tiny-wallaby-nabarlek-trail-cameras-australia-featured.webp",
+    "date": "2026-09-23T04:28:27.084Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790137681223mewceid9h",
+    "title": "Waisenkälbchen Kaikai bekommt drei Ranger als „Eltern\"",
+    "summary": "Am 26. Mai 2025 fand die Mara North Conservancy ein neugeborenes Elefantenkälbchen neben seiner toten Mutter. Keine andere weibliche Elefant konnte es säugen, und mit der Nacht und Raubtieren im Anmarsch griff der Kenya Wildlife Service ein. Zusammen mit dem Mara Elephant Project wurde das Kalb per Land Cruiser zu einem Tierarzt gebracht und am nächsten Morgen von der Sheldrick...",
+    "image_alt": "Waisenkälbchen Kaikai mit einem ihrer drei Pfleger bei der Sheldrick Wildlife Trust",
+    "meta_description": "Waisenkälbchen Kaikai verlor ihre Mutter, aber drei Ranger übernahmen die Betreuung und wurden ihre neuen „Eltern\".",
+    "meta_keywords": "Kaikai, Sheldrick Wildlife Trust, Waisenkälbchen, Elefantenschutz, Kenia, Tierrettungen, Mara North Conservancy",
+    "link": "https://www.goodgoodgood.co/articles/orphan-elephant-shared-custody-rangers",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab2c5ed932d71bd48f5030a_6ab2c5ec1ed52957fcf8d683_orphan-elephant-shared-custody-rangers-featured.webp",
+    "date": "2026-09-23T04:28:02.272Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790137654165e7izh7pd0",
+    "title": "Elefantenbaby Bungalu überlebte Löwenattacke und fand neue Familie",
+    "summary": "Das afrikanische Elefantenbaby Bungalu überlebte einen Monat lang allein, nachdem es von einem Löwen angegriffen worden war. Im Februar 2026 erhielt der Kenya Wildlife Service Meldungen über ein einsames Elefantenbaby bei Bungule, in der Nähe des Mount Kasiagau. Trotz Patrouillen blieb es versteckt und floh jedes Mal aus Angst, auch als die Sheldrick Wildlife Trust es per Hubschrauber zu erreichen...",
+    "image_alt": "Elefantenbaby Bungalu bei der Sheldrick Wildlife Trust mit seiner Milchflasche",
+    "meta_description": "Elefantenbaby Bungalu überlebte einen Löwenangriff und einen Monat allein in der Wildnis. Jetzt hat es bei Sheldrick Wildlife Trust eine neue Familie.",
+    "meta_keywords": "Bungalu, Elefant, Sheldrick Wildlife Trust, Waisenbaby, Kenia, Kaikai, Naturschutz",
+    "link": "https://www.goodgoodgood.co/articles/baby-elephant-bungalu-rescued-lions",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab2de78850ca389675da402_6ab2de749388e05e49ac3373_baby-elephant-bungalu-rescued-lions-featured-3.webp",
+    "date": "2026-09-23T04:27:34.991Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790137627194t8vksyuta",
+    "title": "GALEAS-Urintest spürt Blasenkrebs überraschend genau auf",
+    "summary": "Eine Beobachtungsstudie im Vereinigten Königreich zeigt starke Ergebnisse für GALEAS Bladder, einen nicht-invasiven genetischen Urintest von Nonacus Clinical Services. Bei 964 Patienten, die zwischen 2024 und 2025 zur Notfalluntersuchung wegen Hämaturie überwiesen wurden, spürte der Test 71 der 77 mittels Zystoskopie festgestellten Blasenkrebsfälle auf, darunter alle 17 muskelinvasiven Tumoren und 35 der 36 Krebsfälle im späteren Stadium. Der negativ prädiktive...",
+    "image_alt": "Urinprobe wird auf genetische Marker für Blasenkrebs getestet",
+    "meta_description": "Neuer GALEAS-Urintest spürt 71 von 77 Blasenkrebsfällen auf, mit negativ prädiktivem Wert über 99%.",
+    "meta_keywords": "GALEAS Bladder, Blasenkrebs, Urintest, Nonacus, Hämaturie, Zystoskopie, Krebsdiagnose",
+    "link": "https://www.goodnewsnetwork.org/exceptional-detection-rates-of-bladder-cancer-recorded-in-study-of-simple-yet-state-of-the-art-test/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2024/06/woman-scientist-microscope-research-lab-test-pubdomain-National-Cancer-Institute.jpg",
+    "date": "2026-09-23T04:27:09.661Z",
+    "category": "Health",
+    "score": 9
+  },
+  {
+    "id": "17900955302019yo4v9fb2",
+    "title": "135.000 Haustiere über NBCs Clear The Shelters adoptiert",
+    "summary": "Die jährliche „Clear The Shelters\"-Kampagne von NBC und Mutterkonzern Universal hat in diesem Jahr 135.000 Hunde, Katzen und andere Haustiere in ein neues Zuhause vermittelt. Die Aktion lief von Juli bis September und brachte darüber hinaus 480.000 Dollar für mehr als 1.000 teilnehmende Tierheime ein. In den 12 Jahren, in denen die Kampagne besteht, wurden insgesamt 1,5 Millionen Haustiere vermittelt...",
+    "image_alt": "Haustiere in einem Tierheim warten während der Clear The Shelters-Kampagne auf Adoption",
+    "meta_description": "NBCs jährliche Adoptionskampagne sorgte für 135.000 neue Zuhause für Haustiere und 480.000 Dollar an Spenden für Tierheime.",
+    "meta_keywords": "Clear The Shelters, NBC, Tierheim, Haustiervermittlung, Universal, Telemundo, Tierschutz",
+    "link": "https://www.goodnewsnetwork.org/135000-shelter-pets-found-forever-homes-in-august-thanks-to-nbcs-annual-adopt-a-thon/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/generic-animal-shelter-image.jpg",
+    "date": "2026-09-22T16:45:31.363Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "17900955066950vyz7ysw6",
+    "title": "Tauchender Basstölpel gewinnt Bird Photographer of the Year",
+    "summary": "Die Gewinner von Bird Photographer of the Year 2026 wurden bekannt gegeben. Der Hauptpreis ging an Henry Spiers aus dem Vereinigten Königreich für sein Foto „Sunball Rocket\", das einen Basstölpel beim Durchbrechen der Wasseroberfläche zeigt. Das Foto wurde in schottischen Gewässern aufgenommen und gewann auch die Kategorie Birds in the Environment. Basstölpel tauchen aus Höhen von bis zu 30 Metern...",
+    "image_alt": "Ein Basstölpel durchbricht die Wasseroberfläche des Meeres, mit der Sonne im Hintergrund",
+    "meta_description": "Henry Spiers gewinnt Bird Photographer of the Year 2026 mit Foto eines tauchenden Basstölpels in schottischen Gewässern.",
+    "meta_keywords": "Bird Photographer of the Year, Basstölpel, Henry Spiers, Vogelfotografie, Naturfotografie, Birds on the Brink",
+    "link": "https://www.positive.news/environment/winners-of-bird-photographer-of-the-year-announced/",
+    "source": "Positive.News",
+    "image": "https://positivenews.kinsta.cloud/wp-content/uploads/2026/09/ADULT-OVERALL-WINNER-Sunball-Rocket-by-Henley-Spiers.jpg",
+    "date": "2026-09-22T16:45:09.402Z",
+    "category": "Lifestyle",
+    "score": 8
+  },
+  {
+    "id": "dg-20260921-environment",
+    "type": "digest",
+    "digest_date": "2026-09-21",
+    "title": "Vom Sinkloch zur Pilzzucht: Naturrettung diese Woche",
+    "summary": "Diese Tage zeigen, wie Menschen Tieren und Land eine zweite Chance geben, von der Savanne in Kenia bis zu einer Scheune in Iowa. Immer geht es um Geduld und Zusammenarbeit: Ranger, die stundenlang durchhalten, Bauern, die ihren Betrieb umgestalten, und Zuchtprogramme, die Jahrzehnte andauern. Das Ergebnis ist jedes Mal das gleiche Gefühl der Erleichterung und des Fortschritts. In Kenia mussten Ranger des Kenya Wildlife Service und des Sheldrick Wildlife Trust einen ausgewachsenen Bullenelefanten retten, der schultertief in einem Sinkloch bei Chakama steckte. Ohne Betäubung zogen sie das Tier Zentimeter für Zentimeter aus dem Schlamm – eine Aufgabe, die zu den...",
+    "image_alt": "Vom Sinkloch zur Pilzzucht: Naturrettung diese Woche",
+    "meta_description": "Elefantenrettungen in Kenia, wilde Pferde in Kasachstan und ein Bauernhof im Wandel: die positiven Umweltnachrichten dieser Tage.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab185b16ab24e972877d307_6ab185b18b9a45d15d2c4db9_elephant-rescued-sinkhole-kenya-featured-2.webp",
+    "date": "2026-09-22T04:32:33.311Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1790051455373n0s5yx6a1",
+        "title": "Ranger befreien Elefanten aus gefährlicher Doline in Kenia"
+      },
+      {
+        "id": "17900514257619dlpca1k8",
+        "title": "Waisenbaby-Elefant Wangalla aus Zebraherde in Tsavo East gerettet"
+      },
+      {
+        "id": "1790014214783otpoivfi3",
+        "title": "Wilde Przewalskipferde in Kasachstan nach 200 Jahren geboren"
+      },
+      {
+        "id": "17899196420568hecmtvs3",
+        "title": "Amerikanische Staaten helfen Monarchfaltern auf dem Weg nach Mexiko"
+      },
+      {
+        "id": "17900514999718iuojtalw",
+        "title": "Schweinefarm in Iowa züchtet nun Pilze"
+      }
+    ]
+  },
+  {
+    "id": "17900514999718iuojtalw",
+    "title": "Schweinefarm in Iowa züchtet nun Pilze",
+    "summary": "Eine Schweinefarm in Zentraliowa, die jahrzehntelang Tausende von Schweinen zur Schlachtung gezüchtet hat, ist auf die Zucht von speziellen Pilzen umgestiegen. Die Familie Faaborg nennt ihr Unternehmen 1100 Farm, benannt nach der Anzahl der Schweine, die die Ställe früher beherbergten. Sie verkaufen die Pilze, darunter Löwenmähne, als Tinkturen, Kaffeemischungen und aromatisiertes Salz. Der Umstieg erfolgte mit technischer und finanzieller Unterstützung...",
+    "image_alt": "Tanner Faaborg posiert auf seinem Hof in Zentraliowa, wo Pilze in ehemaligen Schweineställen gezüchtet werden",
+    "meta_description": "Iowa-Farm stellt von Schweinen auf Pilze um mit Hilfe von The Transfarmation Project.",
+    "meta_keywords": "Pilzzucht, Iowa-Farm, Transfarmation Project, Schweinestall umbauen, nachhaltige Landwirtschaft, Löwenmähne",
+    "link": "https://www.npr.org/2026/09/21/nx-s1-5944503/iowa-hog-farm-growing-specialty-mushrooms",
+    "source": "NPR.org",
+    "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1370x771+0+71/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F76%2Ff0%2Fe977506b4da8b313d83bd18dc1d0%2Ftanner-faaborg-1100-farm-web.jpg",
+    "date": "2026-09-22T04:31:41.152Z",
+    "category": "Environment",
+    "score": 8
+  },
+  {
+    "id": "1790051455373n0s5yx6a1",
+    "title": "Ranger befreien Elefanten aus gefährlicher Doline in Kenia",
+    "summary": "Am 25. Februar erhielt der Kenya Wildlife Service Meldungen von einem Bullenelefanten, der schultertief in einer Doline bei Chakama steckte, etwa 50 Kilometer landeinwärts vom Indischen Ozean. Pilot Roan Carr-Hartley der Sheldrick Wildlife Trust flog zum Einsatzort und traf dort das Kulalu Anti-Wilderei-Team und die KWS an. Das Loch war zu tief und steil, um zu entkommen, und der sich...",
+    "image_alt": "Ranger verwenden Riemen und ein Fahrzeug, um einen Elefanten aus einer Doline in Kenia zu ziehen",
+    "meta_description": "Ranger der Sheldrick Wildlife Trust befreien Elefanten aus Doline in Chakama, Kenia, ohne Betäubung.",
+    "meta_keywords": "Elefant, Doline, Sheldrick Wildlife Trust, Kenya Wildlife Service, Chakama, Great Rift Valley, Elefantenrettung",
+    "link": "https://www.goodgoodgood.co/articles/elephant-rescued-sinkhole-kenya",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab185b16ab24e972877d307_6ab185b18b9a45d15d2c4db9_elephant-rescued-sinkhole-kenya-featured-2.webp",
+    "date": "2026-09-22T04:30:56.272Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "17900514257619dlpca1k8",
+    "title": "Waisenbaby-Elefant Wangalla aus Zebraherde in Tsavo East gerettet",
+    "summary": "Am 4. November 2025 erhielt der Kenya Wildlife Service eine Meldung über einen einsamen, verwaisten Elefanten im Tsavo East National Park. Touristen hatten das Tier entdeckt und den Standort weitergegeben. Trevor, Betriebsleiter in Tsavo, leitete ein Suchteam, das das Kalb nach mehr als einer Stunde tief im Busch fand, versteckt zwischen einer Zebraherde. Wildtierfunktionäre vermuten, dass ein Löwenrudel die Herde...",
+    "image_alt": "Ein junges Elefantenbaby namens Wangalla bei ihrem Pfleger im Sheldrick Wildlife Trust Schutzgebiet in Kenia",
+    "meta_description": "Waisenbaby-Elefant Wangalla wurde aus einer Zebraherde in Tsavo East gerettet und fand ein neues Zuhause beim Sheldrick Wildlife Trust.",
+    "meta_keywords": "Wangalla, Sheldrick Wildlife Trust, Elefantenrettung, Tsavo East, Kenya Wildlife Service, Waisenelefant, Misheck",
+    "link": "https://www.goodgoodgood.co/articles/baby-elephant-rescued-zebra-herd",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab196c9d7bede5a31eac123_6ab196c7176d5ce68dc3873f_baby-elephant-rescued-zebra-herd-featured.webp",
+    "date": "2026-09-22T04:30:27.261Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790051398328zl0crxok4",
+    "title": "Neue KI-Tool erkennt Herzerkrankungen mittels Standard-EKG",
+    "summary": "Forscher im Vereinigten Königreich haben ein KI-Modell entwickelt, das mittels eines Standard-EKG frühe Anzeichen von Herzklappenkrankheiten und Herzinsuffizienz erkennen kann. Das Modell wurde anhand von Millionen von Patienten trainiert und bei 67.000 Patienten in den USA getestet. Dabei wurden 81% der Herzinsuffizienzfälle und 90% der Herzklappenkrankheiten erkannt. Ein EKG kann eine Herzerkrankung nicht feststellen, dafür ist normalerweise ein Echokardiogramm erforderlich,...",
+    "image_alt": "Arzt betrachtet EKG-Ergebnis auf dem Bildschirm mit KI-Analyse der Herzaktivität",
+    "meta_description": "KI-Modell erkennt mittels Standard-EKG frühe Anzeichen von Herzinsuffizienz und Herzklappenkrankheit, wie eine in München präsentierte Großstudie zeigt.",
+    "meta_keywords": "KI, EKG, Herzerkrankung, Herzinsuffizienz, Herzklappenkrankheit, Kardiologie, British Heart Foundation, Echokardiogramm",
+    "link": "https://www.goodnewsnetwork.org/new-ai-model-can-detect-heart-disease-markers-in-simple-electrocardiogram-readings-a-breakthrough/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/echocardiogram-Getty-Images-for-Unsplash-.jpg",
+    "date": "2026-09-22T04:30:00.829Z",
+    "category": "Health",
+    "score": 8
+  },
+  {
+    "id": "dg-20260920-science",
+    "type": "digest",
+    "digest_date": "2026-09-20",
+    "title": "Neue Katze, alte Kunst und gerettete Schätze: Die Wissenschaft blickt zurück und voraus",
+    "summary": "In den vergangenen Tagen zeigt die Wissenschaft, wie Vergangenheit und Gegenwart sich berühren. Eine unbekannte Katzenart taucht in Bolivien auf, uralte Elfenbeinkunst erweist sich als sorgfältiger gefertigt als gedacht, und in Alaska retten Archäologen kostbare Schätze gerade noch rechtzeitig. Drei ganz unterschiedliche Geschichten, aber alle zeigen sie, wie viel es noch zu entdecken und zu bewahren gibt. Beginnen wir mit der Katze. In Bolivien wurde zum ersten Mal seit mehr als hundert Jahren eine neue Katzenart nachgewiesen: Leopardus tilcayo [1]. Die Geschichte beginnt bereits 2016, als jemand ein seltsam aussehendes katzenartiges Tier in ein Tierheim brachte. Die Biologin Paola Nogales-Ascarrunz...",
+    "image_alt": "Neue Katze, alte Kunst und gerettete Schätze: Die Wissenschaft blickt zurück und voraus",
+    "meta_description": "Von einer neuen Katzenart in Bolivien bis zu geretteten Yup'ik-Schätzen in Alaska: die positiven Wissenschaftsnachrichten dieser Tage bei BrightNews.",
+    "meta_keywords": "Science",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/imrs-e1789720878162.jpg",
+    "date": "2026-09-21T18:13:14.426Z",
+    "category": "Science",
+    "refs": [
+      {
+        "id": "1789791470039iv33h3zat",
+        "title": "Neue Katzenart Tilcayo in Bolivien entdeckt"
+      },
+      {
+        "id": "1789965262786z6vu42lzy",
+        "title": "Urmenschen nutzten Wachstumsmuster von Mammutelfenbein für einzigartige Kunst"
+      },
+      {
+        "id": "1789832772703vb1b4cr0s",
+        "title": "Archäologen retten jahrhundertealte Yup'ik-Funde in Alaska"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260920-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-09-20",
+    "title": "Outdoor-Leben mit gutem Ausgang: Rettung, ein kompletter Fahrradweg und treue Pflegefamilien",
+    "summary": "In diesen Tagen dreht sich in der Kategorie Lifestyle alles um das Draußensein, das Durchhalten und die gegenseitige Fürsorge. Von einem Wanderer, der gegen alle Erwartungen gefunden wird, über einen Fahrradweg, der nach dreißig Jahren endlich fertig ist, bis hin zu einem Ehepaar, das seit Jahren Hunden ein vorübergehendes Zuhause gibt. Drei verschiedene Geschichten, aber alle mit demselben Tenor: Menschen, die nicht aufgeben und sich weiterhin für andere einsetzen, Mensch oder Tier. Die einschneidendste Geschichte kommt aus dem Isle Royale National Park, wo der 70-jährige Craig Berg elf Tage lang während einer Solotour vermisst war. Er kam vom Weg ab...",
+    "image_alt": "Outdoor-Leben mit gutem Ausgang: Rettung, ein kompletter Fahrradweg und treue Pflegefamilien",
+    "meta_description": "Lifestyle-Nachrichten vom 20. September 2026: ein geretteter Wanderer, ein fertiggestellter Fahrradweg in Minnesota und ein Ehepaar, das Hunde pflegt.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab160ac37a1d4530ef86c2a_6ab160abf3154b9837b18bfe_craig-berg-missing-hiker-found-isle-royale-national-park-featured.webp",
+    "date": "2026-09-21T18:12:01.356Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "1790014241811y3vfaki98",
+        "title": "Vermisster Wanderer Craig Berg nach 11 Tagen auf Isle Royale gerettet"
+      },
+      {
+        "id": "1789965311313qeajm49mh",
+        "title": "Mesabi Trail in Minnesota nach 30 Jahren endlich fertiggestellt"
+      },
+      {
+        "id": "17899652880376z76s0lap",
+        "title": "Britisches Ehepaar pflegt 59 Hunde im Ruhestand"
+      }
+    ]
+  },
+  {
+    "id": "1790014241811y3vfaki98",
+    "title": "Vermisster Wanderer Craig Berg nach 11 Tagen auf Isle Royale gerettet",
+    "summary": "Der 70-jährige Craig Berg unternahm eine neuntägige Solotour durch den Isle Royale National Park, als er am vierten Tag vom Weg abkam und in ein Moor fiel, wobei seine Kleidung, sein Rucksack, sein Essen und sein Telefon durchnässt wurden. Elf Tage lang schrie er tausende Male um Hilfe und überlebte mit Gefriertrockenkost und verschmutztem Wasser. Suchteams erweiterten ihre Aktion, nachdem...",
+    "image_alt": "Rettungsteam und Küstenwachtenhubschrauber während der Suchaktion nach Wanderer Craig Berg auf Isle Royale",
+    "meta_description": "Craig Berg (70) 11 Tage vermisst auf Isle Royale, gerettet dank Wildkamera und Kajakfahrern nach Sturz ins Moor.",
+    "meta_keywords": "Craig Berg, Isle Royale, vermisster Wanderer, Rettungsaktion, National Park Service, Küstenwache, Trail Camera",
+    "link": "https://www.goodgoodgood.co/articles/craig-berg-missing-hiker-found-isle-royale-national-park",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab160ac37a1d4530ef86c2a_6ab160abf3154b9837b18bfe_craig-berg-missing-hiker-found-isle-royale-national-park-featured.webp",
+    "date": "2026-09-21T18:10:43.397Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "1790014214783otpoivfi3",
+    "title": "Wilde Przewalskipferde in Kasachstan nach 200 Jahren geboren",
+    "summary": "In Kasachstan sind zwei Fohlen des Przewalskipferdes geboren worden, die ersten wilden Pferde auf kasachischem Boden seit mehr als 200 Jahren. Das erste Fohlen, ein Hengst, wurde am 22. August bei der siebenjährigen Stute Tessa geboren. Das zweite, ebenfalls ein Hengst, folgte am 31. August bei Stute Umbra. Beide haben denselben Vater, den inzwischen verstorbenen Hengst Zorro. Die Geburten fanden...",
+    "image_alt": "Zwei wilde Przewalskipferde mit ihren Fohlen in den Graslandschaften Kasachstans",
+    "meta_description": "Zwei Fohlen des Przewalskipferdes in Kasachstan geboren: die ersten wilden Pferde dort seit mehr als 200 Jahren.",
+    "meta_keywords": "Przewalskipferd, Kasachstan, wilde Pferde, Altyn Dala, ACBK, Naturschutz, Wiederansiedlung",
+    "link": "https://www.goodgoodgood.co/articles/wild-przewalskis-horses-born-kazakhstan-200-years",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa971cc857b7976aebc89e3_two-wild-przewalskis-horse-foals-born-in-kazakhstan-after-200-years-01.jpg",
+    "date": "2026-09-21T18:10:16.832Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790014168286wv6pmjzvd",
+    "title": "Drohnenausbildung aus Südkorea verhindert Todesfälle bei Mosambik-Flutkatastrophe",
+    "summary": "Im Januar traf eine der schwersten Überschwemmungen seit Jahrzehnten den Distrikt Marracuene in Mosambik, nachdem der Fluss Incomáti über die Ufer trat. Dennoch gab es keine Todesfälle, dank einer Gruppe von Drohnenpiloten, die durch das Drone-Based Disaster Management Project des KOAFEC Trust Fund der Afrikanischen Entwicklungsbank ausgebildet wurden. Dreißig Experten, darunter Kátia Manjate, lernten unter koreanischen Instruktoren, Drohnen und LiDAR-Geräte...",
+    "image_alt": "Drohnenpilot steuert Drohne über überflutetes Gebiet in Marracuene, Mosambik",
+    "meta_description": "Koreanisches Drohnenausbildungsprogramm hilft Mosambik, Flutkatastrophe ohne Todesfälle zu überstehen.",
+    "meta_keywords": "Mosambik, Überschwemmung, Drohnen, Südkorea, KOAFEC, Katastrophenschutz, African Development Bank, LiDAR",
+    "link": "https://www.goodnewsnetwork.org/korean-drone-rescue-program-helps-mozambique-achieve-zero-fatalities-during-worst-flood-in-decades/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/A-Mozambique-pilot-learns-to-pilot-a-drone-from-an-experienced-South-Korean-operator-credit-African-Development-Bank-released.jpg",
+    "date": "2026-09-21T18:09:31.742Z",
+    "category": "Tech",
+    "score": 9
+  },
+  {
+    "id": "1789965334441fmmtlceew",
+    "title": "Fünf Dollar pro Nacht Schlaf verbessern Noten von Studierenden",
+    "summary": "Forscher der University of Pittsburgh zahlten mehr als 1.100 Studierenden über eine Fitbit-App, um sieben Stunden pro Nacht zu schlafen. Die 468 Studierenden, die etwa 5 Dollar pro Nacht erhielten, schliefen an 26% mehr Nächten ausreichend und 19 Minuten länger pro Schulsemester als eine Kontrollgruppe ohne Bezahlung. Ihr GPA stieg in diesem Semester um etwa 0,08 Punkte. Auch nach Beendigung...",
+    "image_alt": "Studierender mit Fitbit-Aktivitätstracker schläft im Bett",
+    "meta_description": "Studierende, die für 7 Stunden Schlaf bezahlt wurden, erhielten bessere Noten. Pittsburgher Studie zeigt Effekt von Schlafanreizen.",
+    "meta_keywords": "Schlaf, Studierende, GPA, Fitbit, University of Pittsburgh, Schlafforschung, finanzielle Anreize, Studienergebnisse",
+    "link": "https://www.goodgoodgood.co/articles/researchers-pay-college-students-to-sleep-more",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aad7f471fbf338d1a44c36c_6aad7f45b52f83488b1f588b_researchers-pay-college-students-to-sleep-more-featured.webp",
+    "date": "2026-09-21T04:35:35.883Z",
+    "category": "Health",
+    "score": 10
+  },
+  {
+    "id": "1789965311313qeajm49mh",
+    "title": "Mesabi Trail in Minnesota nach 30 Jahren endlich fertiggestellt",
+    "summary": "Nach mehr als 30 Jahren Planung, Bau und Mittelbeschaffung ist der Mesabi Trail in Minnesota offiziell fertiggestellt. Der 165 Meilen lange asphaltierte Radweg gehört damit zu den längsten Amerikas. Die Route verläuft vom Mississippi bis zur Wildnis der Boundary Waters und führt durch die Iron Range mit ihren historischen Eisenerzgruben, die während des Zweiten Weltkriegs für die amerikanische Stahlindustrie wichtig...",
+    "image_alt": "Der asphaltierte Mesabi-Radweg schlängelt sich durch die waldreiche Iron Range in Minnesota",
+    "meta_description": "Nach 30 Jahren ist der 165 Meilen lange Mesabi Trail in Minnesota fertiggestellt, einer der längsten Radwege Amerikas.",
+    "meta_keywords": "Mesabi Trail, Minnesota, Radweg, Iron Range, Boundary Waters, Grand Rapids, Ely, IRRRB",
+    "link": "https://www.goodnewsnetwork.org/165mi-bike-trail-through-minnesota-finally-completed-after-30-yrs/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Iron-ridge-Minnesota-Mesabi-Trail-for-bikes-and-cyclists.jpg",
+    "date": "2026-09-21T04:35:12.794Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "17899652880376z76s0lap",
+    "title": "Britisches Ehepaar pflegt 59 Hunde im Ruhestand",
+    "summary": "Nicole und Gary Wordsworth, ein britisches Ehepaar in den Sechzigern, pflegen bereits seit 15 Jahren Hunde über Battersea Dogs Home in Buckinghamshire. Seit ihrer Pensionierung nehmen sie in Teilzeit Hunde auf, von einem Sibirischen Husky bis zu einem Staffie. Die Aufenthaltsdauer variiert von wenigen Nächten bis zu 18 Monaten. Ihr erster Hund war ein Staffie namens Marcel. Sie beobachten Verhaltensweisen...",
+    "image_alt": "Älteres britisches Ehepaar kuschelt mit einem Pflegehund in ihrem Wohnzimmer",
+    "meta_description": "Britisches Ehepaar pflegt seit 15 Jahren Hunde über Battersea Dogs Home, mit 59 Hunden und zählend seit ihrer Pensionierung.",
+    "meta_keywords": "Pflegehunde, Battersea Dogs Home, Hundeadoption, pensioniertes Ehepaar, Haustiere pflegen",
+    "link": "https://www.goodnewsnetwork.org/couple-fosters-59-dogs-in-retirement-we-love-to-get-them-out-of-the-kennels/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Dog-foster-parents-w-husky-Credit-Battersea-Dogs-Home-SWNS-.jpeg",
+    "date": "2026-09-21T04:34:49.341Z",
+    "category": "Lifestyle",
+    "score": 8
+  },
+  {
+    "id": "1789965262786z6vu42lzy",
+    "title": "Urmenschen nutzten Wachstumsmuster von Mammutelfenbein für einzigartige Kunst",
+    "summary": "Wissenschaftler haben entdeckt, dass prähistorische Künstler die natürlichen Wachstumslinien von Mammutelfenbein als Inspirationsquelle für die Verzierungen an 18.000 Jahre alten Venusstatuetten nutzten. Untersuchungen an 18 Figuren aus Mizyn, Ukraine, zeigen, dass die sogenannten Schreger- und Owen-Linien in den Stoßzähnen bewusst in den Gravuren nachgeahmt wurden. Die Forschung, durchgeführt mit hochauflösender Mikroskopie und 3D-Modellierung, wurde durch die ukrainische Organisation Archaic ermöglicht,...",
+    "image_alt": "Eine 18.000 Jahre alte Venusstatuette aus Mammutelfenbein mit eingekerbten Mustern, die den natürlichen Wachstumslinien des Stoßzahns folgen",
+    "meta_description": "Forschung zeigt, dass prähistorische Künstler Wachstumsmuster von Mammutzähnen für Venusstatuetten aus Mizyn, Ukraine, nutzten.",
+    "meta_keywords": "Mammutzahn, Venusstatuetten, Eiszeit-Kunst, Prähistorie, Mizyn, Archäologie, Schreger-Linien, Ukraine",
+    "link": "https://www.goodnewsnetwork.org/cavemen-used-mammoth-tusk-patterns-to-create-unique-art-reveals-new-research/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Ice-Age-craftspeople-mimicked-lines-of-mammoth-ivory-SWNS.jpeg",
+    "date": "2026-09-21T04:34:24.871Z",
+    "category": "Science",
+    "score": 8
+  },
+  {
     "id": "17899196420568hecmtvs3",
     "title": "Amerikanische Staaten helfen Monarchfaltern auf dem Weg nach Mexiko",
     "summary": "Östliche Monarchfalter fliegen mehr als 3.200 Kilometer durch den zentralen Teil der Vereinigten Staaten, um in Mexiko zu überwintern. Mehrere Staaten sind an einem Projekt beteiligt, das diese Bestäuber während ihrer langen Wanderung in den Süden unterstützt.",
@@ -2201,117 +2592,6 @@
     "score": 9
   },
   {
-    "id": "dg-20260905-environment",
-    "type": "digest",
-    "digest_date": "2026-09-05",
-    "title": "Enten, Lachse und Nachbarn machen heute den Unterschied",
-    "summary": "Manchmal steckt gute Nachricht in kleinen Dingen, die groß herauskommen. Heute geht es um Enten, die Weinberge gesund halten, Lachse, die nach Jahren in Flüsse zurückkehren, und gewöhnliche Menschen, die beschließen, ihre Straße oder ihr Dorf ein wenig besser zu hinterlassen. Fünf Geschichten zeigen, dass Geduld und Sorge um die Natur sich am Ende lohnen. Auf dem Vergenoegd Löw Wine Estate in Südafrika laufen etwa 1000 Enten zwischen den Weinstöcken. Sie fressen Schädlinge und düngen den Boden, ohne dass Pestizide zum Einsatz kommen [1]. Denselben geduldigen Ansatz sehen wir an der Küste Kaliforniens, wo eine Rekordzahl von 30.000 Coho-Lachsen die...",
-    "image_alt": "Enten, Lachse und Nachbarn machen heute den Unterschied",
-    "meta_description": "Von Enten in Weinbergen bis zu zurückkehrenden Lachsen: die positiven Naturmeldungen vom 5. September 2026 im Überblick.",
-    "meta_keywords": "Environment",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a99b453c8731ac2eb4eb449_6a99b451039236cbc607c312_vineyard-wine-farm-free-roaming-ducks-featured-2.webp",
-    "date": "2026-09-06T15:24:31.617Z",
-    "category": "Environment",
-    "refs": [
-      {
-        "id": "1788645872913v6p9gh7ws",
-        "title": "1000 Enten Ersetzen Pestizide Auf Weingut"
-      },
-      {
-        "id": "1788647218036re517hbkv",
-        "title": "64 Meeresschildkröten aus Swimmingpool in Florida gerettet"
-      },
-      {
-        "id": "1788647086622ilhiogf10",
-        "title": "Ehemalige Vogelfänger retten Singvögel Javas"
-      },
-      {
-        "id": "1788645690381vacqodhek",
-        "title": "Gute Nachrichten: Bäcker, Sonne Und Eine Schulrettung"
-      },
-      {
-        "id": "1788645362502ubnvc3z3k",
-        "title": "Mann Räumt 100 Tage Straße Auf, Ganzes Viertel Macht Mit"
-      },
-      {
-        "id": "1788645292822m5wh38774",
-        "title": "Rekordanzahl von Coho-Lachsen Kehrt Nach Kalifornien Zurück"
-      }
-    ]
-  },
-  {
-    "id": "dg-20260905-tech",
-    "type": "digest",
-    "digest_date": "2026-09-05",
-    "title": "Techtag: von Elefantenrettern bis zu intelligenten Rollern",
-    "summary": "Heute zeigt die Technikwelt, dass gute Ideen aus allen Ecken kommen können, von einem Studentenprojekt bis zu großen Herstellern. Es gibt Nachrichten über den Schutz von Tieren, über Fahrzeuge, die intelligenter und zugänglicher werden, und darüber, wie Behörden mit Technologie umgehen, die die Privatsphäre berührt. Genug, um neugierig zu werden. Nehmen Sie Anika Puri. Sie erfand als Teenager EISa, ein günstiges KI-System, das mit einer Wärmekamera im Wert von 250 Dollar auf einer Drohne den Unterschied zwischen Elefanten und möglichen Wilderern erkennt. Bei Feldtests erreichte das System eine Genauigkeit von über 90 Prozent. Puri gewann damit 2022 den Hauptpreis für...",
-    "image_alt": "Techtag: von Elefantenrettern bis zu intelligenten Rollern",
-    "meta_description": "Positive Technachrichten vom 5. September 2026: Wildereraufspürung, intelligente Roller, neuer Kia-Camper, Kameradebatte in Texas und Musikregeln in Austra",
-    "meta_keywords": "Tech",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a99d3d1e19a819a1f4c6ed1_6a99d3cfeccb478753f53f50_teen-invents-device-to-catch-elephant-poachers-featured.webp",
-    "date": "2026-09-06T15:23:29.557Z",
-    "category": "Tech",
-    "refs": [
-      {
-        "id": "1788647384130wkqh8u5kt",
-        "title": "Teenager erfindet preisgekröntes Gerät gegen Wilderer"
-      },
-      {
-        "id": "178864608674649fh0dl49",
-        "title": "Kia deutet größeren Camper-Bruder des PV5 an"
-      },
-      {
-        "id": "1788647519997iqucy27jj",
-        "title": "Texas stoppt Mittel für Flock-Kameras"
-      },
-      {
-        "id": "1788646955438obijzrd5e",
-        "title": "Australien zieht Grenze bei Musik"
-      },
-      {
-        "id": "1788646140552gfkjr3900",
-        "title": "Budget-Scooter mit Luxus-Features von Ather"
-      }
-    ]
-  },
-  {
-    "id": "dg-20260905-health",
-    "type": "digest",
-    "digest_date": "2026-09-05",
-    "title": "Schnellere Diagnosen und längerer Schutz: Gesundheitsnachrichten vom 5. September",
-    "summary": "Das Gesundheitswesen machte heute wieder Fortschritte, und das auf ganz unterschiedlichen Gebieten. Von intelligenter Software, die ein Herzproblem in zehn Sekunden aufspürt, bis zu einem Land, das eine Augenkrankheit ganz zurückgedrängt hat: Es zeigt, dass Fortschritt oft an mehreren Orten gleichzeitig entsteht. Die auffälligste Nachricht kam aus London, wo Forscher des Imperial College Software entwickelten, die über ein normales EKG Herzerkrankungen erkennen kann – etwas, wofür Patienten jetzt oft monatelang auf ein Echokardiogramm warten müssen. In einer Studie mit 67.000 Patienten erkannte das Tool bis zu 81% der Fälle von Herzinsuffizienz und 90% der Fälle von Herzklappenkrankheit, Zahlen, die auf...",
-    "image_alt": "Schnellere Diagnosen und längerer Schutz: Gesundheitsnachrichten vom 5. September",
-    "meta_description": "Intelligente Herzsoftware, ein neuer Blasenkrebstest, weniger Blindheit und mehr: die Gesundheitsnachrichten vom 5. September im Überblick.",
-    "meta_keywords": "Health",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://www.positive.news/wp-content/uploads/2026/09/iStock-2166849864-2.jpeg",
-    "date": "2026-09-06T15:22:20.426Z",
-    "category": "Health",
-    "refs": [
-      {
-        "id": "1788645141480uux502u0y",
-        "title": "Überlegene Herzsoftware und mehr gute Nachrichten"
-      },
-      {
-        "id": "1788645554014dscmbc1wx",
-        "title": "Statine senken Herzrisiko bei über 70-Jährigen"
-      },
-      {
-        "id": "1788647730911cqw2ar8lh",
-        "title": "Untersuchung von Adipositas über menschliche Biologie"
-      },
-      {
-        "id": "1788646925799w1iimm4f9",
-        "title": "Wahl einer Fertilitätsklinik"
-      }
-    ]
-  },
-  {
     "id": "1788708076238no8huuobf",
     "title": "Recycelbares Komposit für Flugzeugkabinen",
     "summary": "Forscher der Empa haben zusammen mit dem Chemieunternehmen Elantas ein epoxidbasiertes Verbundmaterial entwickelt, das vollständig recycelbar ist. Ein phosphorhaltiger Zusatzstoff, entwickelt bei der Empa und während der Produktion hinzugefügt, sorgt dafür, dass das ausgehärtete Material nicht nur flammhemmend ist, sondern sich auch wieder erweichen oder auseinandernehmen lässt. Mit dem richtigen Lösungsmittel und etwas Wärme kann das sogenannte 'Honeycomb-Sandwich' in die...",
@@ -2324,317 +2604,5 @@
     "date": "2026-09-06T15:21:18.979Z",
     "category": "Tech",
     "score": 9
-  },
-  {
-    "id": "dg-20260905-lifestyle",
-    "type": "digest",
-    "digest_date": "2026-09-05",
-    "title": "Bücher in der Wäscherei, Welpen zum Geburtstag und ein Zug nach dreißig Jahren zurück",
-    "summary": "Heute dreht sich in Lifestyle alles um Verbindung: zwischen Menschen, zwischen Ländern und manchmal einfach zwischen einer Katze und ihren Rettern. Von einer Wäscherei in Ohio bis zu einer Eisenbahnstrecke im hohen Norden Europas zeigen die heutigen Meldungen, dass kleine Anpassungen manchmal einen großen Unterschied machen. In Wyoming, Ohio, hängen seit November vier Körbe mit Kinderbüchern an der Wand einer Wäscherei. Janice Weiser ergänzt die Sammlung ständig, damit Kinder während des Wartens ein Buch lesen können, statt auf einen Bildschirm zu schauen [1]. Die Wäscherei ist einer von mehr als zweihundert Standorten der Laundromat Library League, die Kinder dort erreichen...",
-    "image_alt": "Bücher in der Wäscherei, Welpen zum Geburtstag und ein Zug nach dreißig Jahren zurück",
-    "meta_description": "Bücher in der Wäscherei, eine gerettete Katze, zwölf Welpen und ein Zug nach dreißig Jahren: die positiven Lifestyle-Nachrichten vom 5. September 2026.",
-    "meta_keywords": "Lifestyle",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://s.w.org/images/core/emoji/17.0.2/72x72/1fae7.png",
-    "date": "2026-09-06T04:16:44.563Z",
-    "category": "Lifestyle",
-    "refs": [
-      {
-        "id": "1788648470866m1vi4va9k",
-        "title": "Wäscherei Wird Bücherei Für Kinder"
-      },
-      {
-        "id": "1788647811819l0v9pyg4w",
-        "title": "Neues College Will Studienkosten Senken"
-      },
-      {
-        "id": "17886471531332n1uz0ka2",
-        "title": "Kätzchen Überlebt Fahrt in Motorhaube"
-      },
-      {
-        "id": "1788645430506id917d57m",
-        "title": "Schweden Und Finnland Wieder Per Zug Verbunden"
-      },
-      {
-        "id": "1788645204154hi809gnll",
-        "title": "12 Goldene Welpen Mit Mutter Wiedervereint Zum Ersten Geburtstag"
-      }
-    ]
-  },
-  {
-    "id": "dg-20260905-science",
-    "type": "digest",
-    "digest_date": "2026-09-05",
-    "title": "Bäume mit Muskeln, Fische mit Filtern: Wissenschaft vom 5. September",
-    "summary": "Die Wissenschaft von heute zeigt, wie breit Forschung sein kann: von Bäumen, die sich selbst aufrichten, bis zu Fischen, die ihre eigenen elektrischen Signale herausfiltern. Auch Gelder für junge Forscher und die Rettung einer fast ausgestorbenen Baumart kommen vor. Ein Tag, um neugierig zu werden. Die Europäische Kommission kümmert sich um die nächste Generation von Wissenschaftlern. 105,5 Millionen Euro gehen an 29 Doktoral- und Postdoktoralprogramme im Rahmen des Marie-Skłodowska-Curie-Programms COFUND [1]. Mehr als 400 Organisationen aus 38 Ländern beteiligen sich, wobei Frankreich der größte Koordinator ist. Die Programme umfassen unter anderem Biowissenschaften, Quantenphysik und Raumfahrt – und das im Jubiläumsjahr...",
-    "image_alt": "Bäume mit Muskeln, Fische mit Filtern: Wissenschaft vom 5. September",
-    "meta_description": "Von Muskelkraft bei Bäumen bis zu Fischgehirnen, die Rauschen filtern: die Wissenschaftsnachrichten vom 5. September 2026 im Überblick.",
-    "meta_keywords": "Science",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&q=80",
-    "date": "2026-09-06T04:15:38.531Z",
-    "category": "Science",
-    "refs": [
-      {
-        "id": "1788647709263hp99h6be9",
-        "title": "EU stellt €105,5 Millionen für Forscher bereit"
-      },
-      {
-        "id": "1788647579010wxcreq06i",
-        "title": "Bäume haben eigene 'Muskeln'"
-      },
-      {
-        "id": "1788646234804g1sgv91ia",
-        "title": "Amerikanische Kastanie erhält genetische Rettungsleine"
-      },
-      {
-        "id": "17886485649093lmuettpf",
-        "title": "Fischgehirn filtert eigene Signale clever"
-      },
-      {
-        "id": "178864553146221lp57tcj",
-        "title": "KI-Musik aus australischen Hitlisten verbannt"
-      }
-    ]
-  },
-  {
-    "id": "1788668077914dbmh5cikz",
-    "title": "Flaschen retten Delfine und mehr gute Nachrichten",
-    "summary": "Eine einfache Erfindung mit leeren Plastikflaschen an Fischernetzen reduziert den Beifang von Delfinen um 88 Prozent, entdeckte ein emeritierter Meeresbiologe. Flandern schließt das Delfinarium Boudewijn Seapark spätestens 2037. Indien startete seinen ersten im Inland gebauten Wasserstoffzug für nicht elektrifizierte Strecken. Ein japanisches Unternehmen kann nun bis zu 90 Prozent des Lithiums aus Autobatterien zurückgewinnen, gegenüber weniger als 50 Prozent zuvor....",
-    "image_alt": "Delfin schwimmt bei einem Fischernetz mit daran befestigten leeren Plastikflaschen",
-    "meta_description": "Plastikflaschen retten Delfine, Indiens erster Wasserstoffzug und Durchbruch beim Lithium-Recycling: Überblick guter Nachrichten.",
-    "meta_keywords": "Delfine, Wasserstoffzug, Lithium-Recycling, Plastikflaschen, Great Bubble Barrier, Wota Box, Energiespeicherung, Tierschutz, Nachhaltigkeit",
-    "link": "https://squirrel-news.net/news/plastic-bottles-saving-dolphins-indias-first-hydrogen-powered-train-lithium-recycling-breakthrough/",
-    "source": "Squirrel-News.net",
-    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/07/Delfine.jpg",
-    "date": "2026-09-06T04:14:39.875Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1788667974151j2zsxndgd",
-    "title": "Outdoor-Gym Hilft Obdachlosen in Paris Weiter",
-    "summary": "Ein finnisches Unternehmen, Omnigym, hat ein Outdoor-Gym bei einer Obdachlosenunterkunft in Paris installiert. Ziel war es zu testen, ob leichter Zugang zu Bewegung die physische und mentale Gesundheit der Bewohner verbessern kann. Nach einem Monat zeigen anonyme Daten und Selbstbewertungen, dass 80% der Teilnehmer eine verbesserte physische Gesundheit erfahren. Auch positive Effekte auf Wohlbefinden, Schlaf, Stimmung und Energie wurden gemeldet....",
-    "image_alt": "Outdoor-Gym-Geräte im Innenhof einer Obdachlosenunterkunft in Paris installiert",
-    "meta_description": "Finnisches Unternehmen Omnigym installiert Outdoor-Gym in Obdachlosenunterkunft in Paris; 80% berichten bessere Gesundheit.",
-    "meta_keywords": "Omnigym, Obdachlose, Paris, Outdoor-Gym, Gesundheit, Emmaüs Solidarité, Fitness",
-    "link": "https://www.goodnewsnetwork.org/new-gym-in-paris-helps-homeless-improve-their-health-and-habits/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Wilfried-enjoying-The-Shelter-Gym-in-Paris-RELEASED-BY-Omnigym.jpeg",
-    "date": "2026-09-06T04:12:56.864Z",
-    "category": "Health",
-    "score": 9
-  },
-  {
-    "id": "17886485649093lmuettpf",
-    "title": "Fischgehirn filtert eigene Signale clever",
-    "summary": "Wissenschaftler haben entdeckt, wie das Gehirn des Elefantenrüsselfisches elektrisches Rauschen herausfiltert. Dieser afrikanische Fisch sendet und empfängt ständig elektrische Signale und muss seine eigenen Signale ignorieren, um Beute aufzuspüren. Forscher des Zuckerman Institute der Columbia University unter der Leitung von Nathaniel Sawtell kartografierten die Neuronen in der betreffenden Gehirnregion und kombinierten dies mit Messungen und Computermodellen. Daraus geht hervor, dass...",
-    "image_alt": "Elefantenrüsselfisch schwimmend im Wasser, bekannt für seine Elektrosensorik",
-    "meta_description": "Forscher entschlüsseln, wie das Gehirn des Elefantenrüsselfisches elektrisches Rauschen filtert, um Beute zu finden.",
-    "meta_keywords": "Elefantenrüsselfisch, Gehirnforschung, Neurowissenschaft, Elektrosensorik, Columbia University, Nature, Gehirn",
-    "link": "https://www.npr.org/2026/09/04/nx-s1-5953883/scientists-study-how-the-brain-of-a-fish-filters-out-signals",
-    "source": "NPR.org",
-    "image": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
-    "date": "2026-09-05T22:49:26.838Z",
-    "category": "Science",
-    "score": 8
-  },
-  {
-    "id": "1788648470866m1vi4va9k",
-    "title": "Wäscherei Wird Bücherei Für Kinder",
-    "summary": "In einer Wäscherei in Wyoming, Ohio, hängen vier Körbe voller Kinderbücher wie 'Mike Mulligan and His Steam Shovel'. Janice Weiser richtete diese Bücherecke im November ein und füllt sie alle zehn Tage auf. Es ist Teil der Laundromat Library League, ein Netzwerk von mehr als 200 Wäschereien in den USA, die Bücher für Kinder anbieten. Die Organisation, gegründet von zwei...",
-    "image_alt": "Bücherkörbe mit Kinderbüchern hängen an der Wand einer Wäscherei",
-    "meta_description": "Wäschereien in den USA bieten kostenlose Kinderbücher über die Laundromat Library League an, mit bereits 400.000 verteilten Büchern.",
-    "meta_keywords": "Wäscherei Bücherei, Kinderbücher, Laundromat Library League, Leseförderung, kostenlose Bücher, Ohio",
-    "link": "https://reasonstobecheerful.world/the-spark-laundromat-libraries/",
-    "source": "ReasonsToBeCheerful.world",
-    "image": "https://s.w.org/images/core/emoji/17.0.2/72x72/1fae7.png",
-    "date": "2026-09-05T22:47:52.732Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "1788647811819l0v9pyg4w",
-    "title": "Neues College Will Studienkosten Senken",
-    "summary": "In Montpelier, Vermont, wird das Greenway Institute gegründet, eine völlig neue Hochschule, die Hochschulbildung anders gestalten möchte. Auf einem Campus aus dem 19. Jahrhundert kombiniert die Schule praxisorientiertes Lernen unter Anleitung von Dozenten mit dem Abbau überflüssiger Verwaltungsebenen und luxuriöser Einrichtungen, um die Kosten zu senken. Gründer Mark Somerville, ehemaliger Provost des Olin College of Engineering, hält dies angesichts der...",
-    "image_alt": "Mark Somerville steht vor einem Whiteboard mit Aufgaben zur Eröffnung des Greenway Institute auf dem historischen Campus in Montpelier, Vermont.",
-    "meta_description": "Neues Greenway Institute in Vermont will Hochschulbildung mit praxisorientiertem Lernen und weniger Bürokratie erschwinglicher machen.",
-    "meta_keywords": "Greenway Institute, Hochschulbildung, Vermont, Studienkosten, praxisorientiertes Lernen, Mark Somerville, Future Universities Alliance",
-    "link": "https://ww2.kqed.org/mindshift/2026/09/04/hands-on-learning-as-college-a-new-school-hopes-to-curb-rising-tuition-and-create-new-pathways/",
-    "source": "Ww2.kqed.org/mindshift",
-    "image": "https://cdn.kqed.org/wp-content/uploads/sites/23/2026/09/he-reinventing-college-1-2000x1334.jpeg",
-    "date": "2026-09-05T22:36:52.688Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "1788647730911cqw2ar8lh",
-    "title": "Untersuchung von Adipositas über menschliche Biologie",
-    "summary": "The Humane Research Trust unterstützt seit 1961 Wissenschaftler, die nach Alternativen zu Tierversuchen in der medizinischen Forschung suchen. In einem kürzlich veröffentlichten Artikel beleuchtet die Organisation wichtige Forschung zu Adipositas und verwandten Stoffwechselerkrankungen. Dabei betonen sie, dass Adipositas mehr ist als nur Übergewicht, und dass Forschungsmethoden erforderlich sind, die tatsächlich der menschlichen Biologie entsprechen.",
-    "image_alt": "Wissenschaftliche Forschung zu Adipositas und menschlicher Biologie",
-    "meta_description": "The Humane Research Trust beleuchtet Forschung zu Adipositas durch Methoden, die auf menschliche Biologie statt Tierversuche ausgerichtet sind.",
-    "meta_keywords": "Adipositas, Humane Research Trust, Tierversuche, medizinische Forschung, Stoffwechselerkrankungen, menschliche Biologie",
-    "link": "https://www.openaccessgovernment.org/understanding-obesity-through-human-biology/213572/",
-    "source": "Openaccessgovernment.org",
-    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
-    "date": "2026-09-05T22:35:31.778Z",
-    "category": "Health",
-    "score": 7
-  },
-  {
-    "id": "1788647709263hp99h6be9",
-    "title": "EU stellt €105,5 Millionen für Forscher bereit",
-    "summary": "Die Europäische Kommission hat €105,5 Millionen an Finanzierung für 29 Doktoral- und Postdoktoralprogramme im Rahmen des Marie Skłodowska-Curie Actions (MSCA) COFUND-Programms 2026 bewilligt. Die Unterstützung fällt unter Horizon Europe und umfasst 15 Doktoralausbildungsprogramme und 14 Postdoktoralstipendienenprogramme. Die ausgewählten Projekte werden voraussichtlich Hunderte von Forschern ausbilden und die internationale Zusammenarbeit fördern. Von 141 Anträgen wurden 136 bewertet; 29 wurden ausgewählt, eine...",
-    "image_alt": "Forscher arbeiten zusammen in einem Labor als Symbol für die EU-Finanzierung von Doktoralprogrammen",
-    "meta_description": "EU investiert €105,5 Millionen in 29 Forschungsprogramme über MSCA COFUND zur Unterstützung von Hunderten von Forschern weltweit.",
-    "meta_keywords": "EU-Finanzierung, Marie Skłodowska-Curie Actions, MSCA COFUND, Horizon Europe, Doktoralforschung, Postdoktoralforschung, internationale Zusammenarbeit",
-    "link": "https://www.openaccessgovernment.org/eu-announces-e105-5-million-boost-for-29-doctoral-and-postdoctoral-research-programmes/213893/",
-    "source": "Openaccessgovernment.org",
-    "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&q=80",
-    "date": "2026-09-05T22:35:10.540Z",
-    "category": "Science",
-    "score": 9
-  },
-  {
-    "id": "1788647632647hhq6v0lay",
-    "title": "Von Plastikflasche Zum Keks",
-    "summary": "Wissenschaftler haben einen Keks entwickelt, der aus recyceltem Kunststoff hergestellt ist. Forscher der Southern Illinois University Carbondale unter der Leitung des Synthetikbiologen Lahiru Jayakody züchteten Hefe, die Kunststoff (die Art, die in Wasserflaschen und Lebensmittelverpackungen verwendet wird) zusammen mit gemahlenen Maisstängeln in einfache Moleküle abbauen kann. Diese wurden zu einer Eiweißpaste verarbeitet, mit Vanille und Betacarotin vermischt und mit einem...",
-    "image_alt": "Kleiner Keks aus recyceltem Kunststoff auf einem Teller",
-    "meta_description": "Wissenschaftler stellen essbare Kekse aus recyceltem Kunststoff mit genetisch veränderter Hefe her.",
-    "meta_keywords": "Kunststoffrecycling, essbarer Kunststoff, Hefe, synthetische Biologie, Lebensmitteltechnologie, American Chemical Society",
-    "link": "https://www.npr.org/2026/09/05/nx-s1-5947227-e1/from-bottles-to-bakery-how-scientists-create-edible-cookies-from-recycled-plastic",
-    "source": "NPR.org",
-    "image": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
-    "date": "2026-09-05T22:33:54.205Z",
-    "category": "Science",
-    "score": 7
-  },
-  {
-    "id": "1788647579010wxcreq06i",
-    "title": "Bäume haben eigene 'Muskeln'",
-    "summary": "Französische Forscher des INRAE und der Universität Clermont Auvergne haben entdeckt, wie Bäume ihre Form aktiv steuern – mit einem Mechanismus, der Muskeln ähnelt und bislang nur bei Tieren vermutet wurde. In einem Experiment mit jungen Pappeln wurden Bäume horizontal positioniert und anschließend auf einer rotierenden Plattform in einer von allen Seiten beleuchteten Kugel platziert, um den Einfluss der Schwerkraft...",
-    "image_alt": "Junger Baum, der Zugholz nutzt, um aufrecht zu wachsen",
-    "meta_description": "Forscher entdecken, wie Bäume mit 'Zugholz' ihre Form steuern – wie ein Muskel, ein Mechanismus, der lange als einzigartig tierlich galt.",
-    "meta_keywords": "Bäume, Zugholz, Pflanzenwachstum, INRAE, Pappeln, Pflanzenbiologie, Pflanzenmuskeln",
-    "link": "https://newatlas.com/environment/newly-identified-muscle-trees/",
-    "source": "Newatlas.com",
-    "image": "https://assets.newatlas.com/dims4/default/2d8b94c/2147483647/strip/true/crop/3456x2304+0+0/resize/1440x960!/format/webp/quality/90/?url=https%3A%2F%2Fnewatlas-brightspot.s3.ap-southeast-2.amazonaws.com%2F9a%2F8a%2Fdb01d93a48049df7dcdcecf2e3c6%2Fdepositphotos-379281722-xl.jpg",
-    "date": "2026-09-05T22:33:00.053Z",
-    "category": "Science",
-    "score": 9
-  },
-  {
-    "id": "1788647519997iqucy27jj",
-    "title": "Texas stoppt Mittel für Flock-Kameras",
-    "summary": "Gouverneur Greg Abbott hat alle texanischen Behörden angewiesen, die Finanzierung von Flock-Kameras einzustellen, nachdem die Bedenken bezüglich der KI-gesteuerten Überwachungstechnologie gewachsen sind. Der Befehl kam kurz bevor The Texas Tribune eine Untersuchung veröffentlichte, die zeigt, dass eine Staatsbehörde mindestens 30 Millionen Dollar für die Erweiterung des Flock-Netzes durch Zuschüsse an lokale Polizeibehörden ausgegeben hat. Seit 2023 wurden auf diese Weise...",
-    "image_alt": "Flock-Kamera an einem Verkehrsmast befestigt",
-    "meta_description": "Texas stoppt Finanzierung von Flock-Überwachungskameras nach Bedenken bezüglich Datenschutz und Missbrauch durch Beamte.",
-    "meta_keywords": "Flock-Kameras, Texas, Überwachung, Greg Abbott, Datenschutz, Polizei, Kennzeichenscanner",
-    "link": "https://www.goodgoodgood.co/articles/texas-governor-abbott-flock-state-agency-spending",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a97209fa115f0a5bc0f49b8_6a97209eb78913be409a7a90_texas-governor-abbott-flock-state-agency-spending-featured.webp",
-    "date": "2026-09-05T22:32:00.818Z",
-    "category": "Tech",
-    "score": 7
-  },
-  {
-    "id": "17886474469233c40ikjm7",
-    "title": "Wanderung zu Ehren von Jane Goodall",
-    "summary": "Das Jane Goodall Institute ruft Amerikaner auf, vom 1. bis 4. Oktober 2026 die Natur zu erkunden und an der ersten 'Hike for Hope' teilzunehmen. Das Ereignis findet rund um das Sterbedatum der legendären Naturschützerin statt, die am 1. Oktober 2025 starb. Menschen können an organisierten Wanderungen teilnehmen oder selbst eine Wanderung organisieren. Die Roots & Shoots Basecamps des Instituts...",
-    "image_alt": "Wanderer in der Natur während Hike for Hope zu Ehren von Jane Goodall",
-    "meta_description": "Jane Goodall Institute ruft zu landesweiter Wanderaktion 'Hike for Hope' vom 1.-4. Oktober 2026 zu Ehren der verstorbenen Naturschützerin auf.",
-    "meta_keywords": "Jane Goodall, Hike for Hope, Jane Goodall Institute, Naturschutz, Wandern, Roots and Shoots, Naturschützerin",
-    "link": "https://www.goodgoodgood.co/articles/jane-goodall-hike-for-hope",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a99b3cfd8c1f9500b6c5ed2_6a99b3cee7965a5348b26bba_jane-goodall-hike-for-hope-featured.webp",
-    "date": "2026-09-05T22:30:47.653Z",
-    "category": "Environment",
-    "score": 7
-  },
-  {
-    "id": "1788647384130wkqh8u5kt",
-    "title": "Teenager erfindet preisgekröntes Gerät gegen Wilderer",
-    "summary": "Anika Puri, inzwischen Absolventin des MIT, gewann mit siebzehn Jahren den Peggy Scripps Award for Science Communication auf der Regeneron International Science and Engineering Fair (ISEF) 2022. Sie entwickelte EISa (elephant savior), ein KI-gesteuertes Gerät, das über eine Drohne mit thermischen und Infrarotbildern Elefanten und potenzielle Wilderer anhand ihrer Bewegungsmuster unterscheiden kann. Das System nutzt eine kostengünstige Wärmekamera für 250...",
-    "image_alt": "Drohne mit Wärmekamera fliegt über Naturschutzgebiet, um Wilderer zu erkennen",
-    "meta_description": "Teenager Anika Puri gewinnt ISEF-Preis mit KI-Drohne, die Elefanten vor Wilderern mit 90% Genauigkeit schützt.",
-    "meta_keywords": "Elefanten, Wilderer, künstliche Intelligenz, Drohne, ISEF, MIT, Anika Puri, Wildtierschutz",
-    "link": "https://www.goodgoodgood.co/articles/teen-invents-device-to-catch-elephant-poachers",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a99d3d1e19a819a1f4c6ed1_6a99d3cfeccb478753f53f50_teen-invents-device-to-catch-elephant-poachers-featured.webp",
-    "date": "2026-09-05T22:29:44.931Z",
-    "category": "Tech",
-    "score": 9
-  },
-  {
-    "id": "1788647298148ob78z37jl",
-    "title": "Richter blockiert Rechenzentrum auf Bundesland bei Boulder City",
-    "summary": "Ein föderales Verwaltungsgericht hat die Genehmigung für den Bau eines großen Rechenzentrums bei Boulder City vorübergehend widerrufen. Das Interior Board of Land Appeals entschied, dass das Bureau of Land Management wahrscheinlich einen Fehler machte, indem es das Projekt auf der Grundlage einer früheren, nicht zusammenhängenden Umweltanalyse für ein Solarenergieprojekt genehmigte. Townsite Solar 2 LLC erhielt 2023 die Genehmigung für einen...",
-    "image_alt": "Baustelle für Rechenzentrum auf Wüstenland bei Boulder City, Nevada",
-    "meta_description": "Föderales Gericht stoppt Bau von Rechenzentrum bei Boulder City wegen fehlender Umweltanalyse der BLM.",
-    "meta_keywords": "Rechenzentrum, Boulder City, BLM, Umweltanalyse, Center for Biological Diversity, öffentliches Land, Nevada",
-    "link": "https://www.goodgoodgood.co/articles/judge-stops-data-center-construction-on-public-land",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a99d742fc12430b9490b45f_6a99d7423240a45dbfdebcf1_judge-stops-data-center-construction-on-public-land-featured.webp",
-    "date": "2026-09-05T22:28:18.879Z",
-    "category": "Environment",
-    "score": 7
-  },
-  {
-    "id": "1788647218036re517hbkv",
-    "title": "64 Meeresschildkröten aus Swimmingpool in Florida gerettet",
-    "summary": "Eine Familie in den Florida Keys entdeckte Ende August 64 neugeborene Meeresschildkröten in ihrem Swimmingpool. Die Tiere waren wahrscheinlich durch das künstliche Licht des Hauses von ihrem Weg zum Meer abgelenkt worden, während der Nistzeit von März bis Oktober. Die Familie schaltete The Turtle Hospital in Marathon ein, das die Baby-Schildkröten aus dem gechlortem Wasser rettete. Alle 64 Tiere waren...",
-    "image_alt": "Baby-Meeresschildkröten zusammen in einem Swimmingpool in Florida",
-    "meta_description": "Florida-Familie findet 64 Baby-Meeresschildkröten im Swimmingpool; The Turtle Hospital rettet und vereint sie mit dem Ozean.",
-    "meta_keywords": "Meeresschildkröten, Florida Keys, The Turtle Hospital, Schlüpflinge, Tierrettung, künstliches Licht, Nistzeit",
-    "link": "https://www.goodgoodgood.co/articles/sea-turtle-hatchlings-florida-backyard-swimming-pool",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a9af80e98e674fb1746e3e0_6a9af80edd6f0314d3f39cef_sea-turtle-hatchlings-florida-backyard-swimming-pool-featured.webp",
-    "date": "2026-09-05T22:26:58.881Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "17886471531332n1uz0ka2",
-    "title": "Kätzchen Überlebt Fahrt in Motorhaube",
-    "summary": "Am 2. September erhielt die Stadt Kerrville, Texas eine ungewöhnliche Meldung: Ein Mitarbeiter eines Gesundheitszentrums hörte eine Katze aus dem Motorraum seines Autos miauen. Es stellte sich heraus, dass es ein neugeborenes Kätzchen war, das aus Rocksprings, Texas mitgefahren war – eine Strecke von mindestens 76 Meilen. Personal von Peterson Health entfernte den vorderen Kühlergrill des Autos, um das Kätzchen...",
-    "image_alt": "Rettungskräfte holen ein neugeborenes Kätzchen aus dem Motorraum eines Autos",
-    "meta_description": "Neugeborenes Kätzchen überlebt 76 Meilen lange Fahrt in Motorhaube und wird von Rettungskräften in Texas gerettet.",
-    "meta_keywords": "Kätzchen gerettet, Motorhaube Katze, Kerrville Texas, Kerrville Pets Alive, Tierrettung",
-    "link": "https://www.goodgoodgood.co/articles/newborn-kitten-rescued-from-car-engine",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a9b0d844b3bc6204c0482b8_6a9b0d83bea0105046765123_newborn-kitten-rescued-from-car-engine-featured.webp",
-    "date": "2026-09-05T22:25:53.939Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "1788647086622ilhiogf10",
-    "title": "Ehemalige Vogelfänger retten Singvögel Javas",
-    "summary": "In den Menoreh Hills bei Yogyakarta, Indonesien, setzen sich ehemalige Vogelfänger nun für Naturschutz ein. Parman, der einst junge Singvögel für den Handel fing, hörte auf, als Vögel selten wurden, und wandte sich der Ziegenzucht zu. Der Javablaufliegenschnäpper, einst verbreitet, ist nun stark bedroht: Es gibt mehr Exemplare in Gefangenschaft als in der Wildnis. Das Dorf Donorejo führte vor zwei...",
-    "image_alt": "Javablaufliegenschnäpper im Grünen der Menoreh Hills, Indonesien",
-    "meta_description": "Ehemalige Vogelfänger in Java setzen sich nun dafür ein, Singvögel wie den Javablaufliegenschnäpper zu retten.",
-    "meta_keywords": "Menoreh Hills, Javablaufliegenschnäpper, Vogelhandel Indonesien, Naturschutz, Yogyakarta, Singvögel",
-    "link": "https://www.goodgoodgood.co/articles/former-bird-hunters-rebuild-wildlife",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a97108631eb494018177187_in-javas-hills-former-bird-hunters-are-rebuilding-a-songbird-haven-01.jpg",
-    "date": "2026-09-05T22:24:48.213Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1788646955438obijzrd5e",
-    "title": "Australien zieht Grenze bei Musik",
-    "summary": "Australien hat in seinen Musikcharts eine klare Linie gezogen, was als 'echte Musik' zählt und was nicht. Weitere Details über die genauen Regeln, den Anlass oder die Folgen dieser Entscheidung werden in der verfügbaren Quelle nicht genannt.",
-    "image_alt": "Musiknoten und eine Hitliste symbolisieren die Diskussion darüber, was als echte Musik zählt",
-    "meta_description": "Australien zieht in seinen Charts eine Grenze, was als echte Musik zählt.",
-    "meta_keywords": "Australien, Musik, Charts, Musikindustrie",
-    "link": "https://www.optimistdaily.com/2026/08/what-counts-as-real-music-australias-charts-just-drew-a-line/",
-    "source": "OptimistDaily.com",
-    "image": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_140379260_L-1024x682.jpg",
-    "date": "2026-09-05T22:22:37.017Z",
-    "category": "Tech",
-    "score": 7
   }
 ]

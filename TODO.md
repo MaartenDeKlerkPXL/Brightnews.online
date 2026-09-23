@@ -177,105 +177,162 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   rustige dagen blijft hij stil. Getest op zes scenario's, inclusief de echte
   cijfers van 13 september. *(Erik: reviewen en mergen)*
 
-- [ ] **30. De marketing-agent afbouwen en in gebruik nemen.** *(Maarten)*
+- [ ] **30. De marketing-agent: nog twee onderdelen open.** *(Maarten)*
 
-  **Let op voor je begint: het grootste deel staat er al.** Van de vier
-  onderdelen uit `MARKETING-PLAN.md` draaien er drie mee in de pipeline, dus
-  dit is geen bouwen vanaf nul maar afmaken en gaan gebruiken:
+  **Bijgewerkt 2026-09-20.** Drie van de vier onderdelen uit
+  `MARKETING-PLAN.md` draaiden al mee; sindsdien zijn ook de twee laatste
+  stappen gezet die nu konden:
 
   | Onderdeel uit het plan | Staat er? |
   |---|---|
   | 1. Input: `data/marketing-feed.json` per taal | ✅ draait elke run mee |
   | 2. Generatie per taal en kanaal, itereerbare prompt | ✅ `backend/generate-posts.js` + `backend/marketing-prompt.md` |
-  | 3. Draft-first met goedkeuring door een mens | ✅ de cockpit op `marketing.html`, 160 concepten klaar |
-  | 4. Meetlus: bereik, kliks, registraties naast elkaar | ❌ **dit ontbreekt** |
+  | 3. Draft-first met goedkeuring door een mens | ✅ de cockpit op `marketing.html` |
+  | 4. Meetlus: bereik, kliks, registraties naast elkaar | ✅ gebouwd (`backend/meetlus.js`), ⏳ wacht op PR #7 |
 
-  De leerlus is ook al rond: de cockpit schrijft je oordeel naar
-  `marketing_feedback` in Supabase, en `generate-posts.js` leest dat terug in
-  de prompt (`Vermijd wat eerder is afgewezen: {FEEDBACK}`). UTM-tags staan op
-  alle links. Hij leert dus al van je — alleen voed je hem nog niet (punt 24).
+  Maarten heeft `GOOGLE_SERVICE_ACCOUNT` en `GA4_PROPERTY_ID` als GitHub-secret
+  gezet en het serviceaccount toegang gegeven in GA4 én Search Console. De
+  cockpit is gevoed (punt 24). **De meetlus meet pas zodra Erik PR #7 mergt** —
+  tot dan staat `backend/meetlus.js` niet op master en blijft het kopje
+  "Bereik en zoekverkeer" in het weekrapport op "nog geen koppeling" staan.
 
-  **Wat er werkelijk nog moet gebeuren:**
-  1. ~~De meetlus bouwen.~~ ✅ 2026-09-20 gebouwd (`backend/meetlus.js`, PR
-     open). Hij hangt in het weekrapport en haalt bezoekers en bron/medium uit
-     GA4 en kliks, vertoningen en zoektermen uit Search Console. Er is ook een
-     tabel bijgekomen met goedgekeurd/afgewezen **per kanaal**, want dat is het
-     cijfer waarop je de postprompt bijstelt: valt Instagram er stelselmatig
-     uit en LinkedIn niet, dan zit het in de toon en niet in de artikelen.
-
-     **Maarten moet hem nog aanzetten** — eenmalig, in Google Cloud:
-     a. maak een service-account aan en zet de **GA4 Data API** en de
-        **Search Console API** aan;
-     b. voeg dat service-account-e-mailadres als lezer toe aan de
-        GA4-property (die van `G-ZNFX3R9BQV`) én aan de property in Search
-        Console;
-     c. zet de JSON-sleutel als GitHub-secret `GOOGLE_SERVICE_ACCOUNT` en het
-        **numerieke** property-id als `GA4_PROPERTY_ID` (dus niet `G-…`).
-
-     Zolang die secrets er niet zijn faalt er niets: het rapport zet er één
-     regel bij dat de koppeling ontbreekt en de rest van de cijfers blijft
-     staan. Testen kan met `node backend/meetlus.js`.
-  2. **De cockpit echt gebruiken** — zie punt 24. Zonder jouw oordeel blijft
-     `{FEEDBACK}` leeg en leert hij niets.
-  3. **Beslissen over directe koppelingen** (Meta, LinkedIn, Buffer). Het plan
+  **Wat er nog open staat, allebei bewust later:**
+  1. **Beslissen over directe koppelingen** (Meta, LinkedIn, Buffer). Het plan
      zegt: pas later, en ook dan met goedkeuring per post. Nu plaats je zelf.
-  4. **Twee weken vóór de lancering vers ingeregeld**, zoals in het plan staat
+  2. **Twee weken vóór de lancering vers ingeregeld**, zoals in het plan staat
      — op echte content, niet op de concepten van nu.
 
   Zolang de site geparkeerd staat heeft plaatsen weinig zin: een bezoeker
-  komt dan op één artikel en kan verder nergens heen. Het voorwerk (meetlus,
-  cockpit voeden) kan wél nu al.
+  komt dan op één artikel en kan verder nergens heen.
+
+- [ ] **35. Feedbackvraag in de footer — gebouwd, wacht nog op één tabel.**
+  *(Idee van Maarten, 2026-09-20. Gebouwd 2026-09-21.)*
+
+  **Wat er staat.** Onderaan elke pagina staat één stil lijntje, "Wat vind je
+  van BrightNews?", in hetzelfde grijs als de copyrightregel. Dat opent een
+  `<dialog>` met drie schalen van 1 t/m 5 (hoe positief en leuk, werkt alles,
+  hoe ziet het eruit), twee extra schalen achter "nog twee korte vragen"
+  (vind je je weg, lezen de teksten prettig), de open droomvraag met een ruim
+  veld, en een optioneel e-mailadres. Alles in vijf talen: 20 nieuwe sleutels,
+  278 → 298 per taal.
+
+  **Ontwerpkeuzes die openstonden, nu gemaakt:** drie vragen meteen zichtbaar
+  en twee achter een klik, want vijf schalen ineens is te veel gevraagd van
+  iemand die even iets invult. Anoniem, met een optioneel adres voor wie
+  doorgevraagd wil worden. Geen user agent en geen IP; alleen het toestel als
+  één woord (mobiel/tablet/desktop), genoeg voor "werkt het op mijn telefoon"
+  en te grof om iemand aan te herkennen.
+
+  Het lijntje én het venster worden door `index.js` in de DOM gezet in plaats
+  van in de HTML. Dat scheelt: de footer staat op twaalf losse pagina's **en**
+  in het artikelsjabloon, en dat sjabloon aanpassen zou betekenen dat alle
+  2910 artikelpagina's opnieuw gegenereerd moeten worden. Nagemeten dat de
+  link en het venster het ook op een artikelpagina doen.
+
+  **Wat er nog moet gebeuren, en het is weinig:**
+  1. **De tabel aanmaken.** `supabase/feedback-tabel-2026-09-21.sql` in de
+     SQL-editor van Supabase draaien. Tot dan geeft het versturen netjes de
+     foutmelding "het versturen lukte niet" — nagemeten: het verzoek komt aan
+     bij Supabase, komt door de CSP, en struikelt alleen over de ontbrekende
+     tabel (`PGRST205`). Na het draaien werkt het meteen.
+  2. **Eén regel in het privacybeleid** dat we vrijwillige feedback bewaren,
+     inclusief een e-mailadres als iemand dat zelf invult. *(Maarten)*
+
+  Er is bewust alleen een insert-policy: bezoekers kunnen niet elkaars
+  antwoorden lezen. Meelezen doe je in het Supabase-dashboard.
+
+- [ ] **36. Artikelen linken niet naar elkaar — het archief is daardoor
+  slecht vindbaar.** *(Gevonden 2026-09-21 bij het teruglezen van Search
+  Console, zie punt 23.)*
+
+  Nagemeten op een artikelpagina: **nul links naar andere artikelen.** De
+  enige interne links zijn het menu, de footer en de `hreflang`-varianten van
+  hetzelfde artikel in de andere vier talen. Elk van de 2.910 artikelpagina's
+  is dus een eiland dat alleen via de sitemap bereikbaar is — en Google laat
+  2.341 van die URL's ongemoeid met de melding "Gevonden – momenteel niet
+  geïndexeerd".
+
+  **Let op, er is sinds 2026-09-21 wél een begin.** De run van die ochtend
+  zette `themas/`-pagina's neer: drie per taal, met echte `<a>`-links naar
+  artikelen, en ze staan in de sitemap. Dat is precies het goede idee. Alleen
+  is de schaal nog klein: alle drie de Nederlandse themapagina's samen wijzen
+  naar **23 van de 586** artikelen. De rest blijft onbereikbaar. Dit punt gaat
+  dus niet meer over "er is geen route", maar over "de route dekt 4% af".
+
+  **Voorstel:** onderaan het artikelsjabloon een blok "meer uit deze
+  categorie" met drie tot vijf artikelen uit dezelfde categorie, als gewone
+  `<a>`-links in de HTML (dus niet door JavaScript ingeladen, want dan leest
+  Google ze niet). `backend/generate-articles.js` heeft de volledige lijst
+  al in handen op het moment dat het de pagina schrijft.
+
+  Dit raakt het artikelsjabloon, en dat betekent alle artikelpagina's opnieuw
+  genereren. Daarom loont het om dit samen te doen met punt 16 (het archief
+  loopt achter op het sjabloon) en met de reservefoto-terugval uit punt 25 —
+  drie ingrepen op dezelfde plek, één keer regenereren. *(Erik, via een PR —
+  het raakt het artikelsjabloon)*
+
 
 ## Buiten de code — alleen Maarten kan dit
 
 
-- [ ] **23. Search Console terugkijken.** De sitemap is ingediend op
-  2026-09-05 met 2.072 pagina's; onder Indexering → Pagina's zou het aantal
-  geïndexeerde pagina's moeten oplopen. Onder Prestaties zie je op welke
-  zoektermen BrightNews verschijnt.
+- [x] **23. Search Console teruggekeken (2026-09-21).** Maarten stuurde de
+  schermen; hieronder wat eruit te halen valt.
 
-  **Extra check, rond 24 september** (een week of twee na de wijziging van
-  2026-09-10): kijk onder Indexering → Pagina's specifiek naar de status van
-  `/` zelf. Die stond op "uitgesloten" of "pagina met omleiding", omdat de
-  homepage doorverwees naar een pagina met `noindex`. Sinds het parkeerbericht
-  op de homepage zelf staat hoort hij naar **"geïndexeerd"** te gaan. Blijft
-  hij uitgesloten, geef dat dan door — dan kijk ik verder.
+  **De homepage is geïndexeerd.** Dat was de openstaande vraag van punt 23 en
+  het antwoord is ja: `https://brightnews.online/` staat in Prestaties bij
+  "jouw content" mét een klik. De ingreep van 2026-09-10 (parkeerbericht op de
+  homepage zelf in plaats van een doorverwijzing naar een noindex-pagina)
+  heeft dus gewerkt.
 
-- [ ] **24. Marketing-cockpit gebruiken** op `brightnews.online/marketing.html`
-  (inloggen met je account). Goedkeuren of afwijzen mét reden — de fabriek
-  leert van je afwijzingen, maar alleen als je hem voedt. Let op: goedkeuren
-  plaatst niets. De cockpit is draft-first, plaatsen doet altijd een mens.
+  **De cijfers, 28 dagen:** 6 klikken, 97 vertoningen. De enige zoekterm met
+  een klik is "bright news" — dat is iemand die ons al zocht, geen vondst. Van
+  de vijf best bekeken pagina's zijn er vier Engelstalig en één Spaans; de
+  Verenigde Staten leveren de helft van de klikken. De Nederlandse kant doet
+  nog niets.
 
-  **Voorwerk gedaan op 2026-09-20.** Ik heb alle **160 conceptposts**
-  doorgelopen (8 dagen × 5 talen × 4 kanalen). Technisch is er niets mis: geen
-  lege posts, niets over de tekenlimiet van zijn kanaal, Instagram bevat nooit
-  een kale URL en heeft gemiddeld 4,8 hashtags. X komt uit op 126 tekens
-  gemiddeld. Van de 110 posts met een link wijzen er 4 naar het Nederlandse
-  artikel terwijl de post in een andere taal staat — alle vier van 2026-09-09,
-  dus dat is sindsdien opgelost.
+  **Het echte getal staat bij Indexering: 444 geïndexeerd, 2.442 niet.** En
+  van die 2.442 valt **2.341 onder "Gevonden – momenteel niet geïndexeerd"**.
+  Dat is geen fout en geen straf: Google kent die URL's uit de sitemap, maar
+  heeft besloten ze voorlopig niet op te halen. Dat doet hij wanneer een site
+  hem méér URL's aanbiedt dan hij de moeite waard vindt om te crawlen.
 
-  Wat er wél mis is, zit in de taal, en het is steeds dezelfde hand:
+  De techniek is niet de oorzaak — dat is nagelopen en het ligt er goed bij:
+  `robots.txt` staat open, de sitemap heeft 2.927 URL's, elke artikelpagina
+  heeft een `canonical` en volledige `hreflang` naar alle vijf de talen plus
+  `x-default`. Daar valt niets te repareren.
 
-  | Wat | Waar | Hoe vaak |
-  |---|---|---|
-  | `#gutesnachrichten` — fout Duits, moet `#gutenachrichten` | Duits, Instagram | 4 van de 8 dagen |
-  | `zorrillo` betekent **stinkdier** in Latijns-Amerika, niet "vosje" | Spaans, 2026-09-20 | alle 4 kanalen |
-  | `#bienêtredesdanimaux` — tikfout, dubbele d | Frans, 2026-09-20 | 2 posts |
-  | `Link en bio` moet `Link en la bio` | Spaans | 2 posts |
-  | accenten in hashtags splitsen het bereik | fr, de, es | ~10 hashtags |
+  **Wat er wél aan de hand is, zijn twee dingen, en ze versterken elkaar:**
 
-  **Wat Maarten in de cockpit doet:** de Spaanse dag van 20 september afwijzen
-  met reden "zorrillo betekent stinkdier, gebruik zorro pequeño", en de Duitse
-  Instagram-posts met "#gutesnachrichten is geen Duits, moet #gutenachrichten".
-  De rest kan goedgekeurd.
+  1. **De homepage zegt letterlijk één woord tegen Google: "Binnenkort".** Dat
+     is de hele leesbare inhoud van de belangrijkste URL van de site. De
+     nieuwslijst wordt door JavaScript uit JSON opgebouwd en staat niet in de
+     HTML.
+  2. **Geen enkele artikelpagina linkt naar een andere artikelpagina.**
+     Nagemeten: nul `<a>`-links tussen artikelen onderling (de zes links die
+     erop lijken zijn de `hreflang`-varianten van hetzelfde artikel). Elke
+     artikelpagina is dus een eiland dat alleen via de sitemap te vinden is.
 
-  **Wat dit structureel is:** de posts worden in het Nederlands geschreven en
-  daarna vertaald, met dezelfde instructie-familie als de artikelen. Deze twee
-  fouten staan al in `backend/vertaal-steekproef.md` als bevinding 2
-  (Nederlands woord letterlijk vertaald) — ik heb er een aanvulling onder gezet
-  met deze cijfers en drie voorstellen. Een grammaticaal foute hashtag hoort
-  niet elke dag opnieuw afgewezen te hoeven worden; dat los je op in de
-  vertaalprompt. *(Maarten voedt de cockpit, Erik pakt de vertaalprompt)*
+  Samen betekent dat: een sitemap met 2.927 URL's, en geen enkele crawlbare
+  route die naar ook maar één daarvan wijst. Een sitemap is een suggestie, een
+  link is een aanbeveling. Op een domein zonder geschiedenis en zonder
+  verwijzingen van buitenaf weegt die suggestie licht — vandaar 2.341 keer
+  "wel gezien, nog niet opgehaald".
+
+  **Wat dit betekent voor de volgorde van het werk:** dit lost zichzelf voor
+  een deel op bij de lancering, want dan verdwijnt het parkeerbericht (punt 2)
+  en krijgt de homepage echte inhoud. Het tweede deel niet: zolang artikelen
+  niet naar elkaar linken blijft het archief slecht bereikbaar. Een blok
+  "meer uit deze categorie" onderaan het artikelsjabloon zou dat in één keer
+  oplossen — dat is dezelfde plek als punt 16 en de reservefoto-terugval, dus
+  het loont om die drie samen te doen. **Nieuw punt daarvoor: 36.**
+
+  Verder uit de schermen, klein grut: 2 pagina's met een omleiding, 1
+  alternatieve pagina met een correcte canonical, 98 "gecrawld – niet
+  geïndexeerd" (dat is Google die wél keek en niet overtuigd raakte) en 1
+  niet-HTTPS-pagina tegenover 2 met HTTPS. Site-vitaliteit staat op "geen
+  gegevens": daar is simpelweg te weinig bezoek voor. Geen van deze vieren is
+  nu de moeite waard om achteraan te gaan.
+
 
 - [x] **25. Deel-previews.** ✅ 2026-09-20 — getest in WhatsApp én LinkedIn,
   met vier artikelen die ik vooraf had doorgemeten. Van alle 581 artikelen is
@@ -313,7 +370,126 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
 
 ---
 
+- [ ] **31. De keten aanmelden → betalen → premium lezen is nooit in het echt
+  doorlopen.** *(Maarten + Erik samen)* Bij de doorlichting van 2026-09-20 kon
+  ik alles testen wat zonder inloggegevens kan: elke pagina laadt zonder
+  console-fouten, alle interne links en afbeeldingen bestaan, de 404 geeft een
+  echte 404, de sitemap staat op 2.927 URL's en de service worker draait. Wat
+  ik **niet** kan testen is de keten waar geld en accounts in zitten:
+
+  1. registreren met een echt e-mailadres en de bevestigingsmail ontvangen;
+  2. inloggen, uitloggen, wachtwoord vergeten (komt die mail aan?);
+  3. een abonnement afsluiten via Stripe met een echte kaart;
+  4. daarna controleren of `is_premium` echt aan gaat en of een premium-artikel
+     volledig zichtbaar wordt;
+  5. opzeggen, en of de toegang dan op de juiste dag stopt;
+  6. een promocode inwisselen.
+
+  Dat is de kern van het verdienmodel en hij is nog nooit van begin tot eind
+  gelopen. Doe dit samen vóór de lancering, met één echte kaart en één
+  wegwerp-e-mailadres, en schrijf op wat er misgaat. Dit is het soort ding dat
+  je niet wilt ontdekken wanneer de eerste betalende bezoeker het ontdekt.
+
 ## Afgerond
+
+- [x] **32. Te veel dagoverzichten, en ze bleven staan als hun bronnen weg
+  waren (2026-09-20).** Twee ingrepen, op Maartens keuzes:
+
+  *Opruimen.* Een dagoverzicht verdwijnt nu uit de homepage-lijst zodra er
+  **minder dan de helft** van zijn bronartikelen nog in de lijst van 150 staat
+  — vóórdat de bronnenlijst gatenkaas wordt, in plaats van erna. De regel
+  staat in `backend/digest-opruiming.js` en wordt aangeroepen vlak voor het
+  wegschrijven in zowel `backend/processor.js` als `backend/digest.js`, want
+  die schrijven allebei dezelfde bestanden. Direct toegepast op de actuele
+  data: de overzichten van Environment en Health van 5 september (2 van 6 en
+  1 van 4 bronnen over) zijn weg, in alle vijf de talen. De drie andere
+  gehavende overzichten zitten nog boven de helft en blijven staan.
+
+  *Sortering.* `renderLijst` zette álle 26 overzichten vooraan, dus je keek
+  tegen een muur samenvattingen aan. Nu gaan alleen de overzichten van
+  **vandaag en gisteren** naar boven (`isVersDagoverzicht` in `index.js`); de
+  oudere schuiven gewoon op datum tussen het nieuws. Nagemeten in de browser:
+  van 26 kaarten bovenaan naar 2, de rest staat verspreid op plek 11, 20, 21
+  en 23. Er is bewust géén maximum per dag gekomen — vijf overzichten op één
+  dag mag, ze staan alleen niet meer allemaal vooraan.
+
+  De statische artikelpagina's van verwijderde overzichten blijven bestaan
+  (afspraak uit `CLAUDE.md`: geïndexeerde URL's mogen niet sterven).
+
+- [x] **33. Terug uit een artikel brengt je weer waar je was (2026-09-20).**
+  Er zaten twee fouten in, en de eerste was een andere dan gedacht.
+
+  **De verkeerde positie werd bewaard.** `toonDetail` verbergt eerst
+  `#news-container` en las daarná pas `window.scrollY` uit. Door dat verbergen
+  zakt de pagina in elkaar en kapt de browser de scrollpositie af op wat er
+  nog past — vandaar de 361 die bij de meting werd opgeslagen terwijl de
+  pagina op 3000 stond. De positie wordt nu als allereerste regel van
+  `toonDetail` gelezen, vóór er iets aan de DOM verandert.
+
+  **Het herstel kwam te vroeg.** Eén `requestAnimationFrame` na het tekenen
+  zijn de nieuwe kaarten nog niet opgemeten. `herstelScrollPositie` probeert
+  het nu per frame opnieuw tot de pagina hoog genoeg is, met een harde grens
+  van een halve seconde.
+
+  Onderweg viel nog een derde ding op: `requestAnimationFrame` vuurt niet in
+  een tabblad dat op de achtergrond staat. De lijst bleef in dat geval op
+  `opacity: 0` hangen — onzichtbaar, ook in de oude code. Er staat nu een
+  timer naast die hem hoe dan ook aanzet.
+
+  Nagemeten met `history.scrollRestoration = 'manual'`, zodat het herstel van
+  de browser zelf niet meetelt: gescrold naar 8200, kaart 89 geopend,
+  terugknop → **8200, alle 120 kaarten terug**. Vóór de fix was dat 0.
+
+- [x] **34. Lucht tussen het herroepingsvinkje en de knop (2026-09-20).**
+  `.withdrawal-consent-label` kreeg `margin-bottom: 18px` in
+  `css/pages/abonnementen.css`. Nagemeten op beide betaalde kaarten: van 0px
+  naar 18px. Een blokje met juridische strekking hoort niet tegen de knop aan
+  te plakken.
+
+- [x] **24. Marketing-cockpit gevoed (2026-09-20).** Maarten heeft de
+  conceptposts beoordeeld in de cockpit. Let op hoe dat werkt: een oordeel
+  hangt aan `dag|kanaal` en geldt dus voor alle vijf de talen van die kaart
+  tegelijk — een fout in één taal wijs je af op de hele kaart, met de taal in
+  de reden. Die redenen komen in `marketing_feedback` en leest
+  `generate-posts.js` terug in de prompt.
+
+  Het voorwerk stond in de analyse van alle 160 conceptposts: technisch was er
+  niets mis, maar in de vertalingen zat steeds dezelfde hand —
+  `#gutesnachrichten` (fout Duits, 4 van de 8 dagen), `zorrillo` (dat is
+  stinkdier, geen vosje, alle 4 de kanalen van 20 september),
+  `#bienêtredesdanimaux` en `Link en bio`. **Dat is structureel en komt terug:**
+  het zit in de vertaalprompt, niet in deze posts. Staat als bevinding 2 in
+  `backend/vertaal-steekproef.md`. *(Erik pakt de vertaalprompt op)*
+
+- [x] **De vaste teksten in de HTML stonden in het Engels (2026-09-20).**
+  Gevonden bij de volledige doorlichting: van de 413 elementen met een
+  vertaalsleutel stond de vaste tekst in de HTML er bij **189** in het Engels,
+  terwijl de pagina `lang="nl"` aangeeft en de Nederlandse vertaling gewoon
+  bestond. Voorbeelden: "Welcome back! 😊", "Join the Community! ✨",
+  "Explore", "Who are we? (Colofon)". JavaScript verving dat wel bij het laden,
+  dus een bezoeker zag het hooguit even flikkeren — maar **Google draait geen
+  JavaScript** en las dus een Nederlandse pagina vol Engelse tekst. Alle 189
+  staan nu in het Nederlands; de vertalingen zelf waren al compleet in vijf
+  talen. Structuur gecontroleerd: het aantal HTML-tags per pagina is voor en na
+  gelijk.
+
+- [x] **De homepage had geen `h1` (2026-09-20).** De enige `h1` zat in het
+  parkeerbericht, en dat verdwijnt bij de lancering — daarna had de
+  belangrijkste pagina van de site helemaal geen kop gehad. Er staat nu een
+  visueel verborgen `h1` bovenaan `<main>`, in vijf talen, zodat het ontwerp
+  hetzelfde blijft maar schermlezers en zoekmachines wel een kop vinden.
+  Wil je hem zichtbaar maken, dan is het een kwestie van de klasse weghalen.
+
+- [x] **Twee pagina's hadden geen `h1` (2026-09-20).** `profiel.html` en
+  `wachtwoord-vergeten.html` begonnen bij `h2`. De zichtbare hoofdkop van elk
+  paneel is nu `h1`; verborgen panelen staan op `display: none`, dus er is er
+  altijd precies één. De opmaakregel pakt nu `h1` én `h2`, zodat er niets
+  verschiet.
+
+- [x] **Het logo in de navigatiebalk had geen alt-tekst (2026-09-20).** Het zit
+  in een link naar de homepage, dus een schermlezer kondigde een link zonder
+  naam aan — op elke pagina en op alle artikelpagina's. Nu `alt="BrightNews"`,
+  ook in het artikelsjabloon.
 
 - [x] **Paginatitels vertalen mee (2026-09-20).** Negen van de tien pagina's
   hadden een vaste titel in de `<title>`; wisselde je van taal, dan bleef er
