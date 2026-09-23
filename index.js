@@ -87,6 +87,13 @@ function vertaalStatischeTeksten(lang) {
             const vertaling = getT(el.getAttribute('data-i18n-aria-label'));
             if (vertaling !== "...") el.setAttribute('aria-label', vertaling);
         });
+        // Links naar externe pagina's die zelf in meerdere talen bestaan —
+        // nu alleen Stripe Climate. De tekst eromheen staat in vijf talen, dus
+        // een Nederlandse lezer hoort niet op een Engelse pagina uit te komen.
+        document.querySelectorAll('[data-i18n-href]').forEach(el => {
+            const vertaling = getT(el.getAttribute('data-i18n-href'));
+            if (vertaling !== "...") el.setAttribute('href', vertaling);
+        });
         updateFooterYear();
     };
 
