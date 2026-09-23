@@ -297,7 +297,11 @@ window.translations = {
     "fb_fout": "Het versturen lukte niet. Probeer het zo nog eens.",
     "fb_leeg": "Beantwoord eerst één vraag, dan kun je versturen.",
     "fb_laag": "kan beter",
-    "fb_hoog": "prima"
+    "fb_hoog": "prima",
+    "index_sub": "Elke dag een verse selectie goed nieuws uit de hele wereld, in vijf talen.",
+    "index_error_titel": "Het nieuws laadt even niet",
+    "index_error_tekst": "Er ging iets mis bij het ophalen. Controleer je verbinding en probeer het nog eens.",
+    "index_error_knop": "Opnieuw proberen"
   },
   "en": {
     "skip_to_content": "Skip to main content",
@@ -597,7 +601,11 @@ window.translations = {
     "fb_fout": "Sending didn’t work. Please try again in a moment.",
     "fb_leeg": "Answer at least one question first.",
     "fb_laag": "could be better",
-    "fb_hoog": "great"
+    "fb_hoog": "great",
+    "index_sub": "A fresh pick of good news from around the world, every day, in five languages.",
+    "index_error_titel": "The news isn’t loading right now",
+    "index_error_tekst": "Something went wrong while fetching it. Check your connection and give it another go.",
+    "index_error_knop": "Try again"
   },
   "de": {
     "skip_to_content": "Zum Hauptinhalt springen",
@@ -897,7 +905,11 @@ window.translations = {
     "fb_fout": "Das Absenden hat nicht geklappt. Versuch es gleich noch einmal.",
     "fb_leeg": "Beantworte zuerst mindestens eine Frage.",
     "fb_laag": "geht besser",
-    "fb_hoog": "richtig gut"
+    "fb_hoog": "richtig gut",
+    "index_sub": "Jeden Tag eine frische Auswahl guter Nachrichten aus aller Welt, in fünf Sprachen.",
+    "index_error_titel": "Die Nachrichten laden gerade nicht",
+    "index_error_tekst": "Beim Abrufen ist etwas schiefgelaufen. Prüf deine Verbindung und versuch es noch einmal.",
+    "index_error_knop": "Erneut versuchen"
   },
   "fr": {
     "skip_to_content": "Aller au contenu principal",
@@ -1197,7 +1209,11 @@ window.translations = {
     "fb_fout": "L’envoi a échoué. Réessayez dans un instant.",
     "fb_leeg": "Répondez d’abord à au moins une question.",
     "fb_laag": "peut mieux faire",
-    "fb_hoog": "très bien"
+    "fb_hoog": "très bien",
+    "index_sub": "Chaque jour une sélection fraîche de bonnes nouvelles du monde entier, en cinq langues.",
+    "index_error_titel": "Les actualités ne se chargent pas",
+    "index_error_tekst": "Quelque chose s’est mal passé lors du chargement. Vérifiez votre connexion et réessayez.",
+    "index_error_knop": "Réessayer"
   },
   "es": {
     "skip_to_content": "Saltar al contenido principal",
@@ -1497,6 +1513,10 @@ window.translations = {
     "fb_fout": "No se ha podido enviar. Inténtalo dentro de un momento.",
     "fb_leeg": "Responde primero al menos a una pregunta.",
     "fb_laag": "puede mejorar",
-    "fb_hoog": "genial"
+    "fb_hoog": "genial",
+    "index_sub": "Cada día una selección fresca de buenas noticias de todo el mundo, en cinco idiomas.",
+    "index_error_titel": "Las noticias no se están cargando",
+    "index_error_tekst": "Algo ha salido mal al cargarlas. Revisa tu conexión e inténtalo de nuevo.",
+    "index_error_knop": "Intentar de nuevo"
   }
 };

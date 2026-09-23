@@ -198,10 +198,15 @@
     </nav>
 </header>
 <main class="container" id="main-content" tabindex="-1">
-    <!-- De homepage had geen h1: de enige stond in het parkeerbericht, en dat
-         verdwijnt bij de lancering. Visueel verborgen zodat het ontwerp niet
-         verandert; schermlezers en zoekmachines lezen hem wel. -->
-    <h1 class="visueel-verborgen" data-i18n="index_h1">Het goede nieuws van vandaag</h1>
+    <!-- 2026-09-23: deze h1 stond op .visueel-verborgen. Dat was destijds een
+         SEO-pleister — Google las hem, een bezoeker niet, en het eerste
+         zichtbare element op de homepage was een filterknop. Daarmee had de
+         pagina geen enkel visueel anker en geen antwoord op "wat is dit".
+         Nu staat hij er gewoon, met één regel eronder die de belofte doet. -->
+    <header class="pagina-kop container">
+        <h1 data-i18n="index_h1">Het goede nieuws van vandaag</h1>
+        <p data-i18n="index_sub">Elke dag een verse selectie goed nieuws uit de hele wereld, in vijf talen.</p>
+    </header>
     <div class="filter-wrapper container">
         <div id="category-filters" class="category-bar">
         </div>

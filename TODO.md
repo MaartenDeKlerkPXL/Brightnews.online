@@ -272,6 +272,76 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   het raakt het artikelsjabloon)*
 
 
+- [ ] **40. Geen ontwerpsysteem: tokens ontbreken en worden omzeild.**
+  *(Uit de UI-doorlichting van 2026-09-23.)* **Geen enkele bezoeker merkt
+  hier iets van** — dit is onderhoud, geen ervaring. Maar zonder dit blijft
+  elke volgende visuele fix een pleister.
+
+  Nagemeten over de hele CSS:
+
+  | Wat | Wat het hoort te zijn | Wat er staat |
+  |---|---|---|
+  | Spatiëring | een 8-punts schaal, ~7 stappen | **24 losse px-waarden**, geen token |
+  | Tekstgroottes | ~4 in een schaal | **25 verschillende**, 11 gerenderd |
+  | Kleur | tokens, semantiek apart | **230 losse hex-waarden, 58 uniek** tegenover 150 token-aanroepen |
+  | Animatieduur | 200/300/400ms, drie easings | **één** `--transition: all 0.3s`, 28× gebruikt |
+
+  De tokens *bestaan* grotendeels al — ze worden alleen omzeild. `#1a1a1a`
+  staat 23× letterlijk in de CSS terwijl `--dark-text` precies die waarde is;
+  `#ffffff` 25× plus `#fff` nog eens 9×. Daarnaast zwerven er grijzen rond die
+  nergens in de tokens staan (`#eee`, `#333`, `#888`, `#f0f0f0`) en `#000`
+  negen keer, terwijl puur zwart juist vermeden hoort te worden.
+
+  **Het scherpste voorbeeld zijn zeven verschillende roden** — `#ff4757`,
+  `#d93025`, `#a32219`, `#d63031`, `#e74c3c`, `#ff2e44`, `#ff4444`. Rood is
+  een semantische kleur: die hoort één waarde te hebben die overal hetzelfde
+  betekent.
+
+  Dat dit geen theorie is bleek meteen bij punt 38: de contrastfout in de
+  footer kwam van een generieke `footer p { color: #99A199 }` die het won van
+  de regel eronder. Eén los grijs, op de verkeerde plek, jarenlang onzichtbaar.
+
+  **Werk:** `--space-*`, `--text-*` en `--color-error` toevoegen, en daarna de
+  losse waarden vervangen. Kan stap voor stap per bestand. *(Maarten)*
+
+- [ ] **41. Lagere prioriteit uit de UI-doorlichting — bewust niet gedaan.**
+  *(2026-09-23.)* Deze kwamen uit dezelfde doorlichting maar wegen minder
+  zwaar; ze staan hier zodat ze niet verdwijnen, niet omdat ze nu moeten.
+
+  1. **De CSS is desktop-first gebouwd.** 12 media-queries, allemaal
+     `max-width`, nul `min-width`. De theorie wil het omgekeerd: klein scherm
+     eerst, dan naar boven verrijken. **Eerlijk oordeel: dit is netheid, geen
+     winst** — nagemeten loopt de site nergens over, ook niet op 320px (dat
+     is 400% zoom). Alleen aanpakken als de CSS toch op de schop gaat.
+  2. **Aanraakvlakken.** 13 elementen zijn op een telefoon lager dan 32px,
+     vooral de footerlinks (18px hoog). De richtlijn noemt 44px comfortabel.
+     Dit is wél echte winst, en het is weinig werk.
+  3. **Eén lettertype, de systeemstack.** Draagt geen merk: op elk toestel
+     ziet het er anders uit en het is per definitie neutraal. Twee families
+     (kop + tekst) uit Google Fonts zouden het verschil maken tussen "een
+     nieuwssite" en "déze nieuwssite". De duurste ingreep op de lijst.
+  4. **Koppenstructuur.** De homepage sprong van `h1` naar `h3` (nu opgelost
+     door punt 39), maar op artikelpagina's is de enige `h2` de **datum** —
+     dat is geen sectiekop. En de artikeltekst zelf is één alinea van 600–750
+     tekens zonder tussenkoppen. Raakt het artikelsjabloon, dus hoort bij de
+     bundel van punt 36.
+  5. **Dode CSS.** `.source-tag` combineert vier overtredingen in één
+     component (11,2px, ALL CAPS, uitgerekte tracking, `#888` op 3,5:1) maar
+     wordt nergens meer gerenderd. Weggooien.
+
+- [ ] **42. Het feedbackvenster is een modal, en dat botst met je eigen
+  huisregel.** *(2026-09-23.)* In de uiux-design-skill staat jouw staande
+  regel: geen pop-ups of modals behalve een cookiebalk, en als een modal
+  tóch de juiste oplossing lijkt eerst overleggen. Bij het bouwen van punt 35
+  heb ik dat niet gevraagd.
+
+  Hij onderbreekt niemand — hij opent alleen na een klik — maar het blijft
+  een modal. Twee alternatieven die wél binnen de regel vallen: een
+  uitklapbaar blok ín de footer, of een eigen pagina `/feedback.html` waar de
+  footerlink naartoe wijst. Omzetten is ongeveer een half uur.
+  **Beslissing aan Maarten.**
+
+
 ## Buiten de code — alleen Maarten kan dit
 
 
@@ -391,6 +461,71 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   je niet wilt ontdekken wanneer de eerste betalende bezoeker het ontdekt.
 
 ## Afgerond
+
+- [x] **37. De foutstaat van de nieuwslijst bestond niet (2026-09-23).** In
+  `laadNieuws` stonden beide meldingen uitgecommentarieerd:
+
+  ```js
+  if (typeof window.showNotification === 'function') {
+      // window.showNotification("Fout bij laden van nieuws.", "error");
+  }
+  ```
+
+  Gevolg: laadde het nieuws niet — geen verbinding, JSON stuk, server traag —
+  dan werd `renderLijst` nooit bereikt en bleven de zes laadskeletten staan.
+  De bezoeker keek eindeloos naar grijze blokken en kreeg geen enkele uitleg;
+  de fout ging alleen naar de console. Van de vijf UI-staten was dit de enige
+  die volledig ontbrak.
+
+  Er staat nu een `toonLaadfout()` die de skeletten vervangt door een kop,
+  een uitleg en een knop "opnieuw proberen", met `role="alert"` zodat een
+  schermlezer het meekrijgt. Vier nieuwe vertaalsleutels in vijf talen.
+
+  Nagemeten in een iframe met een mislukkende fetch: 0 skeletten, 0 kaarten,
+  foutblok in beeld; na een taalwissel staat er "Die Nachrichten laden gerade
+  nicht"; na een klik op de knop staan de 24 kaarten er weer en is het
+  foutblok weg.
+
+- [x] **38. Twee contrastfouten in de footer (2026-09-23).** Gemeten met de
+  WCAG-formule op de live site:
+
+  | Element | Grootte | Was | Norm | Nu |
+  |---|---|---|---|---|
+  | Footer-onderregel | 14,4px | 2,52:1 | 4,5:1 | **6,45:1** |
+  | Feedbacklink | 13,6px | 2,21:1 | 4,5:1 | **6,45:1** |
+
+  De feedbacklink was mijn eigen werk van 2026-09-21: ik had hem bewust
+  hetzelfde grijs gegeven als de copyrightregel ernaast om hem stil te houden,
+  en daarmee ook diens contrastgebrek overgenomen zonder het na te meten.
+
+  De echte oorzaak zat een laag dieper dan het leek. `.footer-bottom` op
+  `#aaa` aanpassen hielp niet: een generieke `footer p { color: #99A199 }`
+  won het, omdat die de `p` rechtstreeks raakt. Beide gebruiken nu de
+  bestaande token `--medium-text` in plaats van weer een los grijs — zie ook
+  punt 40.
+
+- [x] **39. De homepage had geen visueel anker (2026-09-23).** Twee dingen
+  tegelijk opgelost, allebei hetzelfde probleem.
+
+  **De enige `h1` stond op `.visueel-verborgen`.** Ik had hem daar zelf
+  neergezet voor Google, maar daardoor was het eerste zichtbare element in
+  `<main>` een filterknop: geen kop, geen belofte, geen antwoord op "wat is
+  dit". Er staat nu een zichtbare paginakop met één regel eronder
+  (`index_sub`, nieuw in vijf talen).
+
+  **Alle 24 kaarten droegen exact hetzelfde gewicht** — nagemeten: één
+  gedeelde stijl over alle kaarten. Perfecte consistentie, maar daarmee ook
+  nul nadruk: niets stuurt het oog. De eerste kaart is nu het anker en loopt
+  over twee kolommen met een hogere foto en een grotere titel.
+
+  Dat laatste zit in één `@media (min-width: 901px)`. Onder die breedte staat
+  de lijst in één of twee kolommen, en dan zou "twee kolommen breed" juist
+  géén nadruk meer geven. Onderweg ging dat twee keer mis en is het
+  nagemeten: eerst kreeg de uitgelichte kaart tussen 768 en 900px een
+  *kleinere* foto dan zijn buren, daarna op elke breedte een te grote.
+  Eindstand, gemeten op 1280/1000/900/800/360/320px: boven 900px 758 tegen
+  364px breed en 340 tegen 220px hoog, daaronder overal exact gelijk aan de
+  buurkaarten, en nergens horizontale overflow.
 
 - [x] **32. Te veel dagoverzichten, en ze bleven staan als hun bronnen weg
   waren (2026-09-20).** Twee ingrepen, op Maartens keuzes:

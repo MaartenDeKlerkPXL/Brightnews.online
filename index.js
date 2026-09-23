@@ -295,13 +295,48 @@ async function laadNieuws(taal) {
         console.log(`BrightNews succesvol geladen in het ${taal.toUpperCase()} 🚀`);
     } catch (err) {
         console.error("Fout tijdens laden:", err);
-        // Veilig aanroepen:
-        if (typeof window.showNotification === 'function') {
-            // window.showNotification("Fout bij laden van nieuws.", "error");
-        } else {
-            // alert("Fout bij laden van nieuws.");
-        }
+        toonLaadfout();
     }
+}
+
+// De foutstaat van de nieuwslijst.
+//
+// Hier stond tot 2026-09-23 niets: beide meldingen waren uitgecommentarieerd,
+// dus bij een mislukte fetch bleven de laadskeletten staan — renderLijst haalt
+// ze weg en die werd nooit bereikt. Een bezoeker met een haperende verbinding
+// keek dus eindeloos naar zes grijze blokken zonder te weten waarom. Van de
+// vijf UI-staten was dit de enige die helemaal ontbrak.
+function toonLaadfout() {
+    const container = document.getElementById('news-container');
+    if (!container) return;
+
+    container.style.display = 'block';
+    container.style.opacity = '1';
+    container.innerHTML = '';
+
+    const blok = document.createElement('div');
+    blok.className = 'laadfout';
+    blok.setAttribute('role', 'alert');
+
+    const titel = document.createElement('h2');
+    titel.setAttribute('data-i18n', 'index_error_titel');
+    titel.textContent = getT('index_error_titel');
+
+    const tekst = document.createElement('p');
+    tekst.setAttribute('data-i18n', 'index_error_tekst');
+    tekst.textContent = getT('index_error_tekst');
+
+    const knop = document.createElement('button');
+    knop.className = 'btn-primary';
+    knop.setAttribute('data-i18n', 'index_error_knop');
+    knop.textContent = getT('index_error_knop');
+    knop.addEventListener('click', () => {
+        container.innerHTML = '';
+        window.laadNieuws(window.huidigeTaal);
+    });
+
+    blok.append(titel, tekst, knop);
+    container.appendChild(blok);
 }
 
 async function toonDetail(id) {
@@ -629,6 +664,10 @@ function tekenPortie(tot) {
         const veiligId = artikel.id || `old-${index}`;
         const card = document.createElement('div');
         card.className = 'news-card';
+        // Eén kaart krijgt nadruk, zodat de lijst een kop heeft in plaats van
+        // 24 even zware blokken. Bewust de eerste: dat is het verste
+        // dagoverzicht of het nieuwste artikel, en dus het redactionele anker.
+        if (index === 0) card.classList.add('news-card--uitgelicht');
 
         let imgSrc = artikel.image || kiesOngebruikteAfbeelding(gezienOpPagina, artikel.category);
         if (gezienOpPagina.has(fotoSleutel(imgSrc))) {

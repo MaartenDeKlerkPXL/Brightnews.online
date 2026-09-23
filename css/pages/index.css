@@ -236,3 +236,95 @@
 .digest-refs li {
     margin-bottom: 6px;
 }
+
+/* ==========================================================================
+   Paginakop en uitgelichte kaart (2026-09-23)
+
+   Twee ingrepen uit de UI-doorlichting, allebei op hetzelfde probleem: de
+   homepage had geen visueel anker. De enige h1 was verborgen, en alle 24
+   kaarten droegen exact hetzelfde gewicht — dan stuurt niets het oog en weet
+   een bezoeker binnen drie seconden nog steeds niet wat dit is.
+   ========================================================================== */
+.pagina-kop {
+    padding: 50px 20px 10px;
+    text-align: center;
+}
+
+.pagina-kop h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--dark-text);
+}
+
+.pagina-kop p {
+    /* Korte, gecentreerde regel — daarom mag centreren hier; langere lopende
+       tekst blijft links uitgelijnd. Max-width houdt de regel leesbaar. */
+    max-width: 52ch;
+    margin: 12px auto 0;
+    font-size: 1.1rem;
+    color: var(--medium-text);
+}
+
+/* De eerste kaart is het anker: vanaf drie kolommen loopt hij over twee, met
+   een hogere foto en een grotere titel. Eén sterke hefboom, niet vier — de
+   rest van de kaart blijft exact dezelfde component.
+
+   Bewust één min-width-query in plaats van een basisregel met terugval: onder
+   deze breedte staat de lijst in één of twee kolommen, en dan zou "twee
+   kolommen breed" juist géén nadruk meer geven. Zo is elke smallere breedte
+   automatisch goed, zonder dat ik de foto-hoogte op drie plekken moet
+   terugzetten. */
+@media (min-width: 901px) {
+    .news-card--uitgelicht {
+        grid-column: span 2;
+    }
+
+    .news-card--uitgelicht .card-img {
+        height: 340px;
+    }
+
+    .news-card--uitgelicht h3 {
+        font-size: 1.8rem;
+    }
+
+    .news-card--uitgelicht p {
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .pagina-kop {
+        padding: 30px 20px 6px;
+    }
+
+    .pagina-kop h1 {
+        font-size: 1.8rem;
+    }
+
+    .pagina-kop p {
+        font-size: 1rem;
+    }
+}
+
+/* De foutstaat van de nieuwslijst: geen lege pagina en geen eeuwige
+   laadskeletten, maar een leesbare uitleg met een weg vooruit. */
+.laadfout {
+    max-width: 46ch;
+    margin: 60px auto;
+    padding: 40px 30px;
+    text-align: center;
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+}
+
+.laadfout h2 {
+    font-size: 1.5rem;
+    color: var(--dark-text);
+}
+
+.laadfout p {
+    margin: 12px 0 24px;
+    color: var(--medium-text);
+}

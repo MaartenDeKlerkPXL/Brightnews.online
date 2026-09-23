@@ -265,7 +265,11 @@ footer {
 }
 
 footer p {
-    color: #99A199;
+    /* Was #99A199 — weer een los grijs, en net als bij .footer-bottom haalde
+       het de 4,5:1 niet op de footer-achtergrond (2,52:1). Deze generieke
+       regel won het bovendien van .footer-bottom zelf, dus hier zat de echte
+       oorzaak. Nu de bestaande token. */
+    color: var(--medium-text, #505F50);
     font-size: 0.9rem;
     margin: 0;
 }
@@ -821,7 +825,10 @@ a.btn-secondary { text-decoration: none; }
     border-top: 1px solid #eee;
     padding-top: 30px;
     font-size: 0.85rem;
-    color: #aaa;
+    /* Was #aaa: dat gaf 2,52:1 op de footer-achtergrond (#f9f9f9) en zakte
+       daarmee onder de WCAG-ondergrens van 4,5:1 voor tekst van deze grootte.
+       --medium-text bestond al als token en haalt het ruim. */
+    color: var(--medium-text, #505F50);
 }
 
 /* Bewust geen 'height: 100%' hier. Dat maakte de body-box precies een
@@ -1157,7 +1164,10 @@ body {
 }
 
 .fb-regel a {
-    color: #aaa;
+    /* Zelfde correctie als bij .footer-bottom hierboven: dit lijntje had
+       bewust hetzelfde grijs, en erfde daarmee ook hetzelfde contrastgebrek
+       (2,21:1). Stil mag, onleesbaar niet. */
+    color: var(--medium-text, #505F50);
     font-size: 0.85rem;
     text-decoration: underline;
     text-underline-offset: 3px;
