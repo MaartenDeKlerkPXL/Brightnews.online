@@ -418,7 +418,7 @@
     margin-top: 28px;
     padding: 18px 22px;
     background: var(--green-tint);
-    border-left: 4px solid var(--bright-green, var(--bright-green));
+    border-left: 4px solid var(--bright-green);
     border-radius: 6px;
 }
 
@@ -454,15 +454,15 @@
 
 .meer-nieuws-binnen {
     padding: var(--space-3xl) var(--space-4xl) 34px;
-    background: var(--white, var(--white));
-    border: 1px solid var(--border-color, var(--border-color));
+    background: var(--white);
+    border: 1px solid var(--border-color);
     border-radius: var(--radius-lg, 24px);
 }
 
 .meer-nieuws h2 {
     margin-bottom: 18px;
     font-size: 1.3rem;
-    color: var(--dark-text, var(--dark-text));
+    color: var(--dark-text);
 }
 
 .meer-nieuws ul {
@@ -481,16 +481,16 @@
 }
 
 .meer-nieuws a {
-    color: var(--dark-text, var(--dark-text));
+    color: var(--dark-text);
     text-decoration: none;
     line-height: 1.45;
-    border-bottom: 1px solid var(--border-color, var(--border-color));
+    border-bottom: 1px solid var(--border-color);
     transition: border-color 0.2s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .meer-nieuws a:hover,
 .meer-nieuws a:focus-visible {
-    border-bottom-color: var(--bright-green, var(--bright-green));
+    border-bottom-color: var(--bright-green);
 }
 
 @media (max-width: 768px) {
@@ -515,6 +515,6 @@
 
 .artikel-datum time {
     display: block;
-    color: var(--medium-text, var(--medium-text));
+    color: var(--medium-text);
     font-size: var(--text-lg);
 }

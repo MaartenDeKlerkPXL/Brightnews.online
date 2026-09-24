@@ -306,7 +306,9 @@ window.translations = {
     "fb_v6": "Zijn de onderwerpen interessant?",
     "fb_v7": "Is de site snel genoeg?",
     "fb_v8": "Zou je BrightNews aanraden aan iemand?",
-    "fb_geenidee": "geen idee"
+    "fb_geenidee": "geen idee",
+    "fb_page_title": "Wat vind je van BrightNews? | BrightNews",
+    "fb_terug": "Terug naar het nieuws"
   },
   "en": {
     "skip_to_content": "Skip to main content",
@@ -615,7 +617,9 @@ window.translations = {
     "fb_v6": "Are the topics interesting?",
     "fb_v7": "Is the site fast enough?",
     "fb_v8": "Would you recommend BrightNews to someone?",
-    "fb_geenidee": "no idea"
+    "fb_geenidee": "no idea",
+    "fb_page_title": "What do you think of BrightNews? | BrightNews",
+    "fb_terug": "Back to the news"
   },
   "de": {
     "skip_to_content": "Zum Hauptinhalt springen",
@@ -924,7 +928,9 @@ window.translations = {
     "fb_v6": "Sind die Themen interessant?",
     "fb_v7": "Ist die Seite schnell genug?",
     "fb_v8": "Würdest du BrightNews weiterempfehlen?",
-    "fb_geenidee": "keine Ahnung"
+    "fb_geenidee": "keine Ahnung",
+    "fb_page_title": "Wie gefällt dir BrightNews? | BrightNews",
+    "fb_terug": "Zurück zu den Nachrichten"
   },
   "fr": {
     "skip_to_content": "Aller au contenu principal",
@@ -1233,7 +1239,9 @@ window.translations = {
     "fb_v6": "Les sujets sont-ils intéressants ?",
     "fb_v7": "Le site est-il assez rapide ?",
     "fb_v8": "Recommanderiez-vous BrightNews ?",
-    "fb_geenidee": "sans avis"
+    "fb_geenidee": "sans avis",
+    "fb_page_title": "Que pensez-vous de BrightNews ? | BrightNews",
+    "fb_terug": "Retour aux actualités"
   },
   "es": {
     "skip_to_content": "Saltar al contenido principal",
@@ -1542,6 +1550,8 @@ window.translations = {
     "fb_v6": "¿Te parecen interesantes los temas?",
     "fb_v7": "¿Va el sitio lo bastante rápido?",
     "fb_v8": "¿Recomendarías BrightNews?",
-    "fb_geenidee": "sin opinión"
+    "fb_geenidee": "sin opinión",
+    "fb_page_title": "¿Qué te parece BrightNews? | BrightNews",
+    "fb_terug": "Volver a las noticias"
   }
 };

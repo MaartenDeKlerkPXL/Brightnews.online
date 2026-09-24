@@ -1,7 +1,7 @@
 // Bump deze versie bij elke inhoudelijke wijziging aan CSS/JS. Zonder dat
 // blijven bestaande bezoekers vastzitten op een oude cache en krijgen ze
 // nieuwe fixes nooit te zien (zie Fase 2-audit).
-const CACHE_NAME = 'brightnews-v29'; // v29: ontwerptokens (kleur, spatiëring, tekstgrootte), grotere aanraakvlakken in footer en menu, en koppen die de structuur volgen in plaats van het formaat. Bumpen bij elke wijziging aan ASSETS-bestanden.
+const CACHE_NAME = 'brightnews-v30'; // v30: het feedbackformulier is een eigen pagina (/feedback.html) in plaats van een modal, en de verstuurknop kreeg donkere tekst op groen. Bumpen bij elke wijziging aan ASSETS-bestanden.
 const ASSETS = [
     '/',
     '/index.html',

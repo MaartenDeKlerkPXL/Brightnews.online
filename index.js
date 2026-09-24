@@ -1254,213 +1254,22 @@ window.wisselTaal = wisselTaal;
 window.toggleShareMenu = toggleShareMenu;
 window.copyLink = copyLink;
 /* ==========================================================================
-   Feedback uit de footer (punt 35)
+   Het feedbacklijntje in de footer (punt 35 en 42)
 
    We weten straks wél hoeveel mensen er komen (de meetlus), maar niet wat ze
-   ervan vínden. Dit is een klein lijntje onderaan de footer — geen pop-up,
-   geen banner — dat een kort formulier opent.
+   ervan vínden. Onderaan de footer staat daarom één stil lijntje dat naar
+   /feedback.html wijst — geen pop-up, geen banner.
 
-   Zowel het lijntje als het venster worden hier in JavaScript gemaakt en niet
-   in de HTML gezet. Dat is bewust: de footer staat op twaalf losse pagina's
-   én in het artikelsjabloon, en dat sjabloon aanpassen betekent alle 2910
-   artikelpagina's opnieuw genereren. index.js staat op al die pagina's, dus
-   één plek volstaat.
+   Het lijntje wordt hier in JavaScript gezet en niet in de HTML. Dat is
+   bewust: de footer staat op twaalf losse pagina's én in het artikelsjabloon,
+   en dat sjabloon aanpassen betekent alle 2910 artikelpagina's opnieuw
+   genereren. index.js staat op al die pagina's, dus één plek volstaat.
 
-   Ontwerpkeuzes (gemaakt 2026-09-21, de TODO liet ze open):
-   - Drie schalen staan meteen open, twee zitten achter "nog twee korte
-     vragen". Vijf gesloten vragen ineens is te veel gevraagd voor iemand die
-     even iets invult, en de eerste drie zijn de belangrijkste.
-   - Anoniem, met een optioneel e-mailadres. Anoniem geeft eerlijker
-     antwoorden; wie doorgevraagd wil worden, kan zich melden.
-   - Niets is verplicht behalve dat je íets invult.
+   Het formulier zélf stond hier tot 2026-09-24 als <dialog>. Dat botste met
+   de huisregel "geen modals behalve een cookiebalk", dus het is een eigen
+   pagina geworden; de verzendlogica staat nu in js/feedback.js, dat alleen
+   op die pagina geladen wordt.
    ========================================================================== */
-
-// Publieke anon-gegevens, dezelfde als in js/supabase-init.js. Die bundel
-// staat niet op elke pagina (over-ons, contact, refunds...), dus hier een
-// eigen fetch in plaats van window.supabaseClient. De host staat al in de
-// connect-src van de CSP van alle pagina's, dus daar hoeft niets bij.
-const FEEDBACK_URL = 'https://rquuqypgaannrakdrabj.supabase.co/rest/v1/feedback';
-const FEEDBACK_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJxdXVxeXBnYWFubnJha2RyYWJqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA4MTQyODUsImV4cCI6MjA4NjM5MDI4NX0.-H5ZIcLXBflqKvC0VQGlVGIX29G-nceC9ak5IrhJCzg';
-
-// Volgorde is bewust: eerst waar de site over gáát (inhoud), dan of hij het
-// doet, dan hoe hij eruitziet, en als afsluiter de aanbevelingsvraag. De
-// uitklapper "nog twee korte vragen" is er op 2026-09-23 uit — hij verstopte
-// juist de vragen die niemand invulde.
-const FEEDBACK_VRAGEN = [
-    { kolom: 'positief',    sleutel: 'fb_v1' },
-    { kolom: 'onderwerpen', sleutel: 'fb_v6' },
-    { kolom: 'techniek',    sleutel: 'fb_v2' },
-    { kolom: 'snelheid',    sleutel: 'fb_v7' },
-    { kolom: 'uiterlijk',   sleutel: 'fb_v3' },
-    { kolom: 'navigatie',   sleutel: 'fb_v4' },
-    { kolom: 'teksten',     sleutel: 'fb_v5' },
-    { kolom: 'aanbeveling', sleutel: 'fb_v8' },
-];
-
-// "Geen idee" is een eigen antwoord en niet hetzelfde als niets invullen:
-// daarom 0 in plaats van null. Zo kun je later zien of iemand een vraag
-// overslaat omdat hij er geen mening over heeft, of omdat hij afhaakte.
-const GEEN_MENING = 0;
-
-// Grof genoeg om iets te zeggen over "werkt het op mijn toestel", te grof om
-// iemand aan te herkennen. Bewust geen user agent opslaan.
-function feedbackToestel() {
-    const breedte = window.innerWidth;
-    if (breedte < 768) return 'mobiel';
-    if (breedte < 1024) return 'tablet';
-    return 'desktop';
-}
-
-function feedbackVraagHtml(vraag) {
-    const knoppen = [1, 2, 3, 4, 5].map(n => `
-                    <label class="fb-bol">
-                        <input type="radio" name="fb-${vraag.kolom}" value="${n}">
-                        <span>${n}</span>
-                    </label>`).join('');
-
-    // De schaal en de bijschriften zitten in één groep, zodat "prima" precies
-    // onder de 5 uitkomt in plaats van tegen de rand van het venster. "Geen
-    // idee" staat ernaast en telt niet mee voor die uitlijning.
-    return `
-        <fieldset class="fb-vraag">
-            <legend data-i18n="${vraag.sleutel}">${getT(vraag.sleutel)}</legend>
-            <div class="fb-schaal-rij">
-                <div class="fb-schaal-groep">
-                    <div class="fb-schaal">${knoppen}
-                    </div>
-                    <div class="fb-uitersten">
-                        <span data-i18n="fb_laag">${getT('fb_laag')}</span>
-                        <span data-i18n="fb_hoog">${getT('fb_hoog')}</span>
-                    </div>
-                </div>
-                <label class="fb-bol fb-geen-idee">
-                    <input type="radio" name="fb-${vraag.kolom}" value="${GEEN_MENING}">
-                    <span data-i18n="fb_geenidee">${getT('fb_geenidee')}</span>
-                </label>
-            </div>
-        </fieldset>`;
-}
-
-function bouwFeedbackVenster() {
-    const venster = document.createElement('dialog');
-    venster.className = 'fb-venster';
-    venster.id = 'feedback-venster';
-
-    // <dialog> regelt zelf de focus, de achtergrondlaag en sluiten met Escape.
-    venster.innerHTML = `
-        <form method="dialog" class="fb-form" novalidate>
-            <button type="button" class="fb-kruis" data-fb-sluit
-                    aria-label="${getT('fb_sluit')}" data-i18n-aria-label="fb_sluit">&times;</button>
-
-            <h2 data-i18n="fb_titel">${getT('fb_titel')}</h2>
-            <p class="fb-intro" data-i18n="fb_intro">${getT('fb_intro')}</p>
-
-            ${FEEDBACK_VRAGEN.map(feedbackVraagHtml).join('')}
-
-            <label class="fb-open">
-                <span data-i18n="fb_droom">${getT('fb_droom')}</span>
-                <textarea rows="4" id="fb-droom" maxlength="2000"
-                          placeholder="${getT('fb_droom_plh')}"
-                          data-i18n-placeholder="fb_droom_plh"></textarea>
-            </label>
-
-            <label class="fb-email">
-                <span data-i18n="fb_email_label">${getT('fb_email_label')}</span>
-                <input type="email" id="fb-email" maxlength="254"
-                       placeholder="${getT('fb_email_plh')}"
-                       data-i18n-placeholder="fb_email_plh">
-            </label>
-
-            <p class="fb-melding" role="status" aria-live="polite"></p>
-
-            <div class="fb-knoppen">
-                <button type="button" class="fb-annuleer" data-fb-sluit
-                        data-i18n="fb_sluit">${getT('fb_sluit')}</button>
-                <button type="button" class="fb-verstuur"
-                        data-i18n="fb_verstuur">${getT('fb_verstuur')}</button>
-            </div>
-        </form>`;
-
-    venster.querySelectorAll('[data-fb-sluit]').forEach(knop => {
-        knop.addEventListener('click', () => venster.close());
-    });
-    venster.querySelector('.fb-verstuur').addEventListener('click', verstuurFeedback);
-
-    document.body.appendChild(venster);
-    return venster;
-}
-
-async function verstuurFeedback() {
-    const venster = document.getElementById('feedback-venster');
-    const melding = venster.querySelector('.fb-melding');
-    const knop = venster.querySelector('.fb-verstuur');
-
-    const antwoord = {
-        taal: window.huidigeTaal || 'nl',
-        pagina: window.location.pathname,
-        toestel: feedbackToestel(),
-        droom: venster.querySelector('#fb-droom').value.trim() || null,
-        email: venster.querySelector('#fb-email').value.trim() || null,
-    };
-    for (const vraag of FEEDBACK_VRAGEN) {
-        const gekozen = venster.querySelector(`input[name="fb-${vraag.kolom}"]:checked`);
-        antwoord[vraag.kolom] = gekozen ? Number(gekozen.value) : null;
-    }
-
-    // Eén antwoord is genoeg; een leeg formulier versturen heeft geen zin.
-    // "Geen idee" (0) telt mee — dat is een antwoord, geen overslaan.
-    const ingevuld = FEEDBACK_VRAGEN.some(v => antwoord[v.kolom] !== null) || antwoord.droom;
-    if (!ingevuld) {
-        melding.textContent = getT('fb_leeg');
-        melding.className = 'fb-melding fb-fout';
-        return;
-    }
-
-    knop.disabled = true;
-    melding.textContent = '';
-    melding.className = 'fb-melding';
-
-    try {
-        const res = await fetch(FEEDBACK_URL, {
-            method: 'POST',
-            headers: {
-                'apikey': FEEDBACK_KEY,
-                'Authorization': `Bearer ${FEEDBACK_KEY}`,
-                'Content-Type': 'application/json',
-                'Prefer': 'return=minimal',
-            },
-            body: JSON.stringify(antwoord),
-        });
-        if (!res.ok) throw new Error(`status ${res.status}`);
-
-        melding.textContent = getT('fb_dank');
-        melding.className = 'fb-melding fb-gelukt';
-        venster.querySelector('.fb-form').classList.add('fb-verzonden');
-        setTimeout(() => venster.close(), 1800);
-    } catch (err) {
-        console.error('Feedback versturen mislukt:', err.message);
-        melding.textContent = getT('fb_fout');
-        melding.className = 'fb-melding fb-fout';
-        knop.disabled = false;
-    }
-}
-
-function openFeedback(event) {
-    if (event) event.preventDefault();
-    const venster = document.getElementById('feedback-venster') || bouwFeedbackVenster();
-    // Het venster is net gebouwd met de teksten van nú; deze aanroep vangt een
-    // taalwissel die daarna gebeurt en de placeholders/aria-labels.
-    vertaalStatischeTeksten(window.huidigeTaal);
-
-    // showModal() regelt de achtergrondlaag, de focus en sluiten met Escape.
-    // Op een browser die <dialog> niet kent bestaat die functie niet, en dan
-    // zou de link dood zijn; open het venster dan gewoon zonder die extra's.
-    if (typeof venster.showModal === 'function') {
-        venster.showModal();
-    } else {
-        venster.setAttribute('open', '');
-    }
-}
 
 // Het lijntje onderaan. Eén regel, zelfde grijs als de copyrightregel — het
 // hoort op te vallen als je ernaar zoekt en niet als je dat niet doet.
@@ -1468,14 +1277,16 @@ function plaatsFeedbackLink() {
     const onderkant = document.querySelector('.footer-bottom');
     if (!onderkant || document.getElementById('feedback-link')) return;
 
+    // Op de feedbackpagina zelf heeft de link geen zin.
+    if (/\/feedback\.html$/.test(window.location.pathname)) return;
+
     const regel = document.createElement('p');
     regel.className = 'fb-regel';
     const link = document.createElement('a');
     link.id = 'feedback-link';
-    link.href = '#';
+    link.href = '/feedback.html';
     link.setAttribute('data-i18n', 'fb_link');
     link.textContent = getT('fb_link');
-    link.addEventListener('click', openFeedback);
     regel.appendChild(link);
     onderkant.appendChild(regel);
 }
@@ -1485,5 +1296,3 @@ if (document.readyState === 'loading') {
 } else {
     plaatsFeedbackLink();
 }
-
-window.openFeedback = openFeedback;

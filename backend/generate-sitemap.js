@@ -29,6 +29,7 @@ const PAGES = [
   { loc: '/algemeene-voorwaarden.html', priority: '0.3' },
   { loc: '/refunds.html', priority: '0.3' },
   { loc: '/contact.html', priority: '0.5' },
+  { loc: '/feedback.html', priority: '0.3' },
 ];
 
 // Artikel-URL's uit het manifest van generate-articles.js. lastmod is de

@@ -161,9 +161,9 @@
 
 .filter-btn.active {
     /* Reviewronde 2 (2026-09-02): witte tekst op het groen. */
-    background: var(--bright-green, var(--bright-green));
-    color: var(--white, var(--white));
-    border-color: var(--bright-green, var(--bright-green));
+    background: var(--bright-green);
+    color: var(--white);
+    border-color: var(--bright-green);
     box-shadow: 0 4px 15px rgba(46, 204, 113, 0.2);
 }
 
@@ -192,7 +192,7 @@
 .card-badge {
     display: inline-block;
     align-self: flex-start;
-    background: var(--bright-green, var(--bright-green));
+    background: var(--bright-green);
     color: var(--white);
     font-size: 0.72rem;
     font-weight: 700;
@@ -207,7 +207,7 @@
     margin-top: 28px;
     padding: 18px 22px;
     background: var(--green-tint);
-    border-left: 4px solid var(--bright-green, var(--bright-green));
+    border-left: 4px solid var(--bright-green);
     border-radius: 6px;
 }
 
@@ -332,6 +332,6 @@
 
 .artikel-datum time {
     display: block;
-    color: var(--medium-text, var(--medium-text));
+    color: var(--medium-text);
     font-size: var(--text-lg);
 }

@@ -62,12 +62,12 @@
        wil je juist dat een bezoeker ziet dat het twee losse dingen zijn. */
     margin-bottom: 18px;
     padding: var(--space-sm) var(--space-md);
-    background: var(--light-bg, var(--light-bg));
-    border: 1px solid var(--border-color, var(--border-color));
+    background: var(--light-bg);
+    border: 1px solid var(--border-color);
     border-radius: 10px;
     font-size: 0.72rem;
     line-height: 1.45;
-    color: var(--medium-text, var(--medium-text));
+    color: var(--medium-text);
     cursor: pointer;
     text-align: left;
     transition: border-color 0.2s ease, background 0.2s ease;
@@ -161,7 +161,7 @@
     left: 50%;
     transform: translateX(-50%);
     background: var(--bright-green);
-    color: var(--white, var(--white));
+    color: var(--white);
     padding: var(--space-2xs) var(--space-xl);
     border-radius: 50px;
     font-size: var(--text-xs);
@@ -235,7 +235,7 @@
    groen met donkere tekst — geen aparte zwarte variant meer op deze pagina). */
 .btn-primary {
     background: var(--bright-green);
-    color: var(--white, var(--white));
+    color: var(--white);
     box-shadow: 0 10px 20px rgba(50, 205, 50, 0.25);
 }
 

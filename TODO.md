@@ -228,6 +228,11 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   gewijzigd**: drie kolommen erbij en de check van `1 and 5` naar `0 and 5`.
   De tabel bestond nog niet, dus dat kon zonder migratie.
 
+  **Bijgewerkt 2026-09-24: het is geen venster meer maar een pagina.** Zie
+  punt 42 hieronder in het afgeronde blok. Het lijntje in de footer wijst nu
+  naar `/feedback.html`; de acht vragen, de droomvraag en het e-mailveld zijn
+  ongewijzigd meeverhuisd.
+
   **Wat er nog moet gebeuren, en het is weinig:**
   1. **De tabel aanmaken.** `supabase/feedback-tabel-2026-09-21.sql` in de
      SQL-editor van Supabase draaien. Tot dan geeft het versturen netjes de
@@ -258,19 +263,6 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
 
   Onderdeel 2 (aanraakvlakken), 4 (koppenstructuur) en 5 (dode CSS) zijn op
   2026-09-24 gedaan; zie het afgeronde blok onderaan.
-
-- [ ] **42. Het feedbackvenster is een modal, en dat botst met je eigen
-  huisregel.** *(2026-09-23.)* In de uiux-design-skill staat jouw staande
-  regel: geen pop-ups of modals behalve een cookiebalk, en als een modal
-  tóch de juiste oplossing lijkt eerst overleggen. Bij het bouwen van punt 35
-  heb ik dat niet gevraagd.
-
-  Hij onderbreekt niemand — hij opent alleen na een klik — maar het blijft
-  een modal. Twee alternatieven die wél binnen de regel vallen: een
-  uitklapbaar blok ín de footer, of een eigen pagina `/feedback.html` waar de
-  footerlink naartoe wijst. Omzetten is ongeveer een half uur.
-  **Beslissing aan Maarten.**
-
 
 ## Buiten de code — alleen Maarten kan dit
 
@@ -391,6 +383,46 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   je niet wilt ontdekken wanneer de eerste betalende bezoeker het ontdekt.
 
 ## Afgerond
+
+- [x] **42. Het feedbackvenster is een eigen pagina geworden (2026-09-24).**
+  Het was een `<dialog>`, en dat botste met de huisregel in de uiux-design-skill:
+  geen pop-ups of modals behalve een cookiebalk, en als een modal tóch de
+  juiste oplossing lijkt eerst overleggen. Bij het bouwen van punt 35 heb ik
+  dat niet gevraagd. Maarten koos voor de eigen pagina.
+
+  **Wat er staat.** `/feedback.html` — een gewone pagina met dezelfde
+  navigatiebalk en footer als de rest. De acht vragen staan nu **in de HTML**
+  met `data-i18n` erop, precies zoals op elke andere pagina, in plaats van
+  door JavaScript opgebouwd te worden. De verzendlogica is verhuisd naar
+  `js/feedback.js`, dat alleen op die ene pagina geladen wordt; `index.js`
+  ging daarmee van 1.489 naar 1.298 regels en zet nu alleen nog het lijntje
+  in de footer. Dat lijntje wordt nog steeds door JavaScript geplaatst — de
+  footer staat op twaalf losse pagina's én in het artikelsjabloon, en dat
+  sjabloon aanpassen zou alle artikelpagina's opnieuw laten genereren.
+
+  **Wat er onderweg veranderde.** "Sluiten" is "Terug naar het nieuws"
+  geworden: op een pagina valt er niets te sluiten, dus je moet ergens heen
+  kunnen. Na een geslaagde verzending blijven het bedankje én die link staan;
+  alleen de verstuurknop verdwijnt. Het kruisje rechtsboven en de
+  achtergrondlaag zijn weg, en het formulier heeft geen eigen schuifbalk meer
+  — de pagina schuift. Twee nieuwe vertaalsleutels (`fb_page_title`,
+  `fb_terug`) in vijf talen: 307 → 309. De pagina staat in de sitemap.
+
+  **Een contrastfout die hierbij boven kwam.** De verstuurknop had witte tekst
+  op `--bright-green`: **2,12:1**, en dat is precies wat de kleurafspraak
+  bovenin `global.css` verbiedt ("groen vlak, altijd donkere tekst erop").
+  Nu `--dark-text`, 8,22:1.
+
+  Ook opgeruimd: 59 plekken waar na de tokenronde `var(--x, var(--x))` was
+  blijven staan — de hexwaarde die daar als terugval stond, was door diezelfde
+  ronde zelf ook vervangen.
+
+  **Nagemeten:** acht vragen met elk een geen-idee-knop, vijf talen kloppen
+  inclusief de placeholders, geen `<dialog>` meer in de DOM, het lijntje
+  verdwijnt op de pagina zelf, op 375px geen horizontale overloop en alle
+  aanraakvlakken 46px. Leeg versturen geeft "beantwoord eerst één vraag";
+  ingevuld versturen komt aan bij Supabase en struikelt alleen nog over de
+  ontbrekende tabel (`PGRST205`) — dat is punt 35.1 en wacht op Maarten.
 
 - [x] **40 + 41 (deels). Ontwerptokens, aanraakvlakken, koppen en dode CSS
   (2026-09-24).** Vier dingen uit dezelfde doorlichting, samen gedaan omdat ze

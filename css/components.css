@@ -273,7 +273,7 @@ footer p {
        het de 4,5:1 niet op de footer-achtergrond (2,52:1). Deze generieke
        regel won het bovendien van .footer-bottom zelf, dus hier zat de echte
        oorzaak. Nu de bestaande token. */
-    color: var(--medium-text, var(--medium-text));
+    color: var(--medium-text);
     font-size: 0.9rem;
     margin: 0;
 }
@@ -660,7 +660,7 @@ nav.container {
        volle breedte uit en oogt hij als een balk in plaats van een label. */
     align-self: flex-start;
     width: fit-content;
-    background: var(--bright-yellow, var(--bright-yellow));
+    background: var(--bright-yellow);
     color: var(--dark-text);
     font-size: 0.8rem;
     font-weight: 700;
@@ -674,7 +674,7 @@ a.btn-secondary { text-decoration: none; }
 
 .proef-microcopy {
     font-size: 0.8em;
-    color: var(--medium-text, var(--medium-text));
+    color: var(--medium-text);
     margin-top: var(--space-sm);
 }
 
@@ -851,7 +851,7 @@ a.btn-secondary { text-decoration: none; }
     /* Was #aaa: dat gaf 2,52:1 op de footer-achtergrond (#f9f9f9) en zakte
        daarmee onder de WCAG-ondergrens van 4,5:1 voor tekst van deze grootte.
        --medium-text bestond al als token en haalt het ruim. */
-    color: var(--medium-text, var(--medium-text));
+    color: var(--medium-text);
 }
 
 /* Bewust geen 'height: 100%' hier. Dat maakte de body-box precies een
@@ -1080,18 +1080,18 @@ body {
     margin: 0;
     font-size: var(--text-sm);
     line-height: 1.4;
-    color: var(--medium-text, var(--medium-text));
+    color: var(--medium-text);
 }
 
 .cookie-titel {
     font-weight: 700;
-    color: var(--dark-text, var(--dark-text));
+    color: var(--dark-text);
 }
 
 .cookie-text a {
     /* Geen groene tekst op licht (fase F-besluit, global.css :root) —
        --bright-green-text bestond hier nog uit fase 5 en was al verwijderd. */
-    color: var(--dark-text, var(--dark-text));
+    color: var(--dark-text);
     text-decoration: underline;
     white-space: nowrap;
 }
@@ -1104,8 +1104,8 @@ body {
 
 .btn-cookie-accept {
     /* Eén groen (#32CD32) met witte knoptekst — fase G-besluit. */
-    background: var(--bright-green, var(--bright-green));
-    color: var(--white, var(--white));
+    background: var(--bright-green);
+    color: var(--white);
     border: none;
     padding: 9px 18px;
     border-radius: 8px;
@@ -1118,7 +1118,7 @@ body {
 
 .btn-cookie-decline {
     background: var(--neutral-075);
-    color: var(--medium-text, var(--medium-text));
+    color: var(--medium-text);
     border: none;
     padding: 9px 18px;
     border-radius: 8px;
@@ -1197,7 +1197,7 @@ body {
     /* Zelfde correctie als bij .footer-bottom hierboven: dit lijntje had
        bewust hetzelfde grijs, en erfde daarmee ook hetzelfde contrastgebrek
        (2,21:1). Stil mag, onleesbaar niet. */
-    color: var(--medium-text, var(--medium-text));
+    color: var(--medium-text);
     font-size: var(--text-sm);
     text-decoration: underline;
     text-underline-offset: 3px;
@@ -1208,77 +1208,37 @@ body {
 
 .fb-regel a:hover,
 .fb-regel a:focus-visible {
-    color: var(--dark-text, var(--dark-text));
+    color: var(--dark-text);
 }
 
-.fb-venster {
-    /* De globale reset in global.css zet margin op 0 voor alles, en dat sloopt
-       de 'margin: auto' waarmee een <dialog> zichzelf normaal midden in beeld
-       zet — het venster plakte daardoor linksboven. Hier dus expliciet terug. */
-    margin: auto;
-    width: min(640px, calc(100vw - 32px));
-    max-height: min(88vh, 860px);
-    padding: 0;
-    /* Er verschenen twee schuifbalken: één van het venster zelf en één van
-       het formulier erin. Alleen het formulier mag schuiven. */
-    overflow: hidden;
-    border: 1px solid var(--border-color, var(--border-color));
+/* De kaart waar het formulier in staat. Dit was tot 2026-09-24 een <dialog>
+   met een achtergrondlaag; dat botste met de huisregel "geen modals behalve
+   een cookiebalk", dus het is een gewone pagina geworden (/feedback.html).
+   Wat blijft: dezelfde breedte, dezelfde rand, dezelfde bolletjes. Wat weg
+   kan: de achtergrondlaag, het kruisje en de schuifbalk in het formulier —
+   op een pagina schuift de pagina. */
+.fb-pagina {
+    width: min(640px, 100%);
+    margin: 0 auto var(--space-5xl);
+    border: 1px solid var(--border-color);
     border-radius: 16px;
-    background: var(--white, var(--white));
-    color: var(--dark-text, var(--dark-text));
-    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
-}
-
-/* Alleen als het venster openstaat: een <dialog> krijgt display:none van de
-   browser zelf zolang hij dicht is, en die regel moeten we niet overschrijven.
-   De flex-kolom zorgt dat het formulier exact de hoogte van het venster
-   krijgt — niet 2px eroverheen, en dus geen tweede schuifbalk. */
-.fb-venster[open] {
-    display: flex;
-    flex-direction: column;
-}
-
-.fb-venster::backdrop {
-    background: rgba(26, 26, 26, 0.45);
+    background: var(--white);
+    color: var(--dark-text);
+    box-shadow: var(--shadow-sm);
 }
 
 .fb-form {
-    position: relative;
     display: flex;
     flex-direction: column;
     gap: 18px;
     padding: 28px 26px var(--space-2xl);
-    /* Het formulier is het enige dat schuift. Geen eigen max-height: als
-       flex-item krijgt het precies de ruimte die het venster overhoudt.
-       min-height 0 hoort erbij — zonder die regel weigert een flex-item
-       kleiner te worden dan zijn inhoud en schuift er niets. */
-    flex: 1 1 auto;
-    min-height: 0;
-    overflow-y: auto;
 }
 
-.fb-kruis {
-    position: absolute;
-    top: 10px;
-    right: 12px;
-    width: 34px;
-    height: 34px;
-    border: none;
-    border-radius: 50%;
-    background: transparent;
-    color: var(--medium-text, var(--medium-text));
-    font-size: 1.6rem;
-    line-height: 1;
-    cursor: pointer;
-}
-
-.fb-kruis:hover {
-    background: var(--light-bg, var(--light-bg));
-}
-
+/* De titel en de introzin staan nu in de paginakop boven de kaart, niet meer
+   in het formulier zelf. Deze regel blijft staan voor het geval het formulier
+   ooit ergens met een eigen kop terechtkomt. */
 .fb-form h2 {
     margin: 0;
-    padding-right: 34px;
     font-size: 1.25rem;
 }
 
@@ -1286,7 +1246,7 @@ body {
     margin: -10px 0 0;
     font-size: var(--text-sm);
     line-height: 1.5;
-    color: var(--medium-text, var(--medium-text));
+    color: var(--medium-text);
 }
 
 .fb-vraag {
@@ -1353,29 +1313,29 @@ body {
     width: 100%;
     min-width: 44px;
     height: 44px;
-    border: 1px solid var(--border-color, var(--border-color));
+    border: 1px solid var(--border-color);
     border-radius: 10px;
-    background: var(--light-bg, var(--light-bg));
+    background: var(--light-bg);
     font-size: var(--text-base);
     cursor: pointer;
     transition: background 0.15s ease, border-color 0.15s ease;
 }
 
 .fb-bol:hover span {
-    border-color: var(--bright-green, var(--bright-green));
+    border-color: var(--bright-green);
 }
 
 /* Groen vlak met donkere tekst erop — geen groene letters op licht, zie de
    kleurafspraak bovenin global.css. */
 .fb-bol input:checked + span {
-    background: var(--bright-green, var(--bright-green));
-    border-color: var(--bright-green, var(--bright-green));
-    color: var(--dark-text, var(--dark-text));
+    background: var(--bright-green);
+    border-color: var(--bright-green);
+    color: var(--dark-text);
     font-weight: 700;
 }
 
 .fb-bol input:focus-visible + span {
-    outline: 2px solid var(--dark-text, var(--dark-text));
+    outline: 2px solid var(--dark-text);
     outline-offset: 2px;
 }
 
@@ -1384,7 +1344,7 @@ body {
     justify-content: space-between;
     margin-top: var(--space-2xs);
     font-size: 0.72rem;
-    color: var(--medium-text, var(--medium-text));
+    color: var(--medium-text);
 }
 
 .fb-open,
@@ -1399,25 +1359,25 @@ body {
 .fb-email {
     font-size: 0.82rem;
     font-weight: 400;
-    color: var(--medium-text, var(--medium-text));
+    color: var(--medium-text);
 }
 
 .fb-open textarea,
 .fb-email input {
     width: 100%;
     padding: var(--space-sm) var(--space-md);
-    border: 1px solid var(--border-color, var(--border-color));
+    border: 1px solid var(--border-color);
     border-radius: 10px;
-    background: var(--light-bg, var(--light-bg));
+    background: var(--light-bg);
     font: inherit;
     font-weight: 400;
-    color: var(--dark-text, var(--dark-text));
+    color: var(--dark-text);
     resize: vertical;
 }
 
 .fb-open textarea:focus,
 .fb-email input:focus {
-    outline: 2px solid var(--bright-green, var(--bright-green));
+    outline: 2px solid var(--bright-green);
     outline-offset: 1px;
 }
 
@@ -1436,16 +1396,17 @@ body {
 }
 
 .fb-melding.fb-gelukt {
-    color: var(--dark-text, var(--dark-text));
+    color: var(--dark-text);
     font-weight: 600;
 }
 
-/* Na een geslaagde verzending blijft alleen het bedankje staan; het venster
-   sluit daarna vanzelf. */
+/* Na een geslaagde verzending blijven het bedankje én de terugkeerlink staan.
+   Op een pagina valt er niets te sluiten, dus je moet ergens heen kunnen —
+   daarom verdwijnt alleen de verstuurknop en niet de hele knoppenrij. */
 .fb-form.fb-verzonden .fb-vraag,
 .fb-form.fb-verzonden .fb-open,
 .fb-form.fb-verzonden .fb-email,
-.fb-form.fb-verzonden .fb-knoppen,
+.fb-form.fb-verzonden .fb-verstuur,
 .fb-form.fb-verzonden .fb-intro {
     display: none;
 }
@@ -1458,6 +1419,11 @@ body {
 
 .fb-annuleer,
 .fb-verstuur {
+    /* min-height 44px: allebei zijn het aanraakvlakken, zie punt 41.2. */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
     padding: var(--space-sm) var(--space-xl);
     border-radius: 10px;
     font-size: 0.9rem;
@@ -1465,16 +1431,27 @@ body {
     cursor: pointer;
 }
 
+/* Sinds de omzetting naar een pagina is dit een <a> naar de homepage en geen
+   sluitknop meer; vandaar text-decoration. */
 .fb-annuleer {
-    border: 1px solid var(--border-color, var(--border-color));
-    background: var(--white, var(--white));
-    color: var(--medium-text, var(--medium-text));
+    border: 1px solid var(--border-color);
+    background: var(--white);
+    color: var(--medium-text);
+    text-decoration: none;
+}
+
+.fb-annuleer:hover,
+.fb-annuleer:focus-visible {
+    color: var(--dark-text);
+    border-color: var(--medium-text);
 }
 
 .fb-verstuur {
     border: none;
-    background: var(--bright-green, var(--bright-green));
-    color: var(--white, var(--white));
+    background: var(--bright-green);
+    /* Donkere tekst op groen, niet wit. Wit gaf 2,12:1 en dat is precies wat
+       de kleurafspraak bovenin global.css verbiedt; donker geeft 8,22:1. */
+    color: var(--dark-text);
 }
 
 .fb-verstuur:disabled {
