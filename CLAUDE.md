@@ -4,16 +4,27 @@
 Begin elke sessie ("verder met BrightNews" of vergelijkbaar) met deze
 drie checks, vóór al het andere werk — dit is de vaste route waarmee
 verbeteringen van de één binnen een dag bij de ander landen:
-1. **`gh pr list`** — staat er een open PR met een review-verzoek aan de
-   huidige gebruiker? Behandel die éérst: reviewen en mergen, of een
-   concreet antwoord op de PR zetten. Niemand hoort dagen te wachten
-   (PR #1 en #5 stonden in september zes dagen te verstoffen omdat de
-   GitHub-mailtjes verdronken in Eriks inbox).
+1. **`gh pr list`** — twee kanten op, en de tweede werd tot 2026-09-24
+   vergeten:
+   - staat er een open PR met een review-verzoek **aan jou**? Behandel die
+     éérst: reviewen en mergen, of een concreet antwoord op de PR zetten.
+     Niemand hoort dagen te wachten (PR #1 en #5 stonden in september zes
+     dagen te verstoffen omdat de GitHub-mailtjes verdronken in Eriks inbox).
+   - staat er een open PR **van jou** zónder reviewer? Dan wacht je op iemand
+     die nooit iets gevraagd is. Controleer het expliciet:
+     `gh pr view <nr> --json reviewRequests`. Is het leeg, vraag de ander dan
+     alsnog aan met `gh pr edit <nr> --add-reviewer <naam>`. **PR #6 en #7
+     stonden hierdoor acht respectievelijk vier dagen stil**: ze waren keurig
+     geopend, maar zonder review-verzoek stuurt GitHub geen enkele melding.
+     Een PR openen is niet hetzelfde als iemand vragen.
 2. **`TODO.md`** — scan de open punten met de eigen naam erachter en meld
    kort wat je oppakt.
 3. **Nieuw werk voor de ánder ontdekt?** Zet het als genummerd punt in
-   `TODO.md` mét naam, en bij code: open een PR met review-verzoek. De
-   repo is het kanaal — geen losse mails; die worden gemist.
+   `TODO.md` mét naam, en bij code: open een PR **en vraag de ander er als
+   reviewer bij** (`--reviewer` bij `gh pr create`, of achteraf
+   `gh pr edit <nr> --add-reviewer <naam>`). Zonder dat verzoek is er geen
+   melding en dus geen kanaal. De repo is het kanaal — geen losse mails; die
+   worden gemist.
 
 ## Setup: twee developers, één codebase
 - **Maarten** = design/front-end (HTML, CSS, teksten, UX). **Erik** = back-end

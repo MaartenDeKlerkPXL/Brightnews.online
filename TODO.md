@@ -15,6 +15,38 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
 
 ---
 
+## Voor Erik — je instap (bijgewerkt 2026-09-24)
+
+Vijf punten staan op jouw naam, verspreid over deze lijst. Hier staan ze bij
+elkaar, op volgorde van wat het langst wacht.
+
+| | Wat | Sinds |
+|---|---|---|
+| **[#6](https://github.com/MaartenDeKlerkPXL/Brightnews.online/pull/6)** | Alarm als een nieuwsrun stilletjes niets oplevert → **punt 29** | 16 sept |
+| **[#7](https://github.com/MaartenDeKlerkPXL/Brightnews.online/pull/7)** | Meetlus: bereik en zoekverkeer in het weekrapport → **punt 30** | 20 sept |
+| **43** | De privacyregel over feedback nalezen | 24 sept |
+| **11** | Bestaat `add_premium_reward` in Supabase? Eén blik | 20 sept |
+| **3** | De selectieprompt bijstellen op tien missers | 10 sept |
+| **26** | Anthropic auto-reload + wie de key houdt *(samen met Maarten)* | 19 sept |
+
+**Waarom die twee PR's zo lang stilstonden: er was nooit een reviewer
+aangevraagd.** Ze stonden open, maar GitHub heeft je er nooit een mail over
+gestuurd, want niemand had je formeel gevraagd. Dat is op 2026-09-24 rechtgezet
+— je staat nu als reviewer op allebei. Excuses, dat lag aan onze kant.
+
+Allebei zijn ze `MERGEABLE`, ook ná elkaar: lokaal nagemeten dat #6 en daarna
+#7 schoon op het huidige master landen, terwijl ze allebei
+`.github/workflows/update-news.yml` aanraken. De volgorde maakt niet uit.
+
+**Wat er sinds 20 september op master is geland** (zodat je niet hoeft te
+graven): de artikelpagina's linken nu naar elkaar en het archief staat weer op
+één sjabloon, er is een ontwerpsysteem met tokens, een merklettertype
+(Schibsted Grotesk, zelf gehost), een feedbackformulier op `/feedback.html` met
+een eigen Supabase-tabel, en de 404 heeft navigatie en footer gekregen. Niets
+daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
+
+---
+
 ## Blokkeert de lancering
 
 - [x] **1. De twee open pull requests vlottrekken.** ✅ 2026-09-16 (Fable-review): #5 gemerged + og:image-absoluutfix erachteraan; #1 lokaal gemerged (bronwerk integraal overgenomen, sw-conflict → v23) en pagina's geregenereerd. Oorspronkelijke tekst: Allebei hebben ze
@@ -158,7 +190,16 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   `backend/controleer-run.js` slaat alleen aan bij nul kandidaten, bij tekst
   zonder AI-aanroepen, of als het nieuwste artikel ouder is dan drie dagen — op
   rustige dagen blijft hij stil. Getest op zes scenario's, inclusief de echte
-  cijfers van 13 september. *(Erik: reviewen en mergen)*
+  cijfers van 13 september.
+
+  **Waarom het acht dagen stilstond, nagekeken op 2026-09-24: er was nooit een
+  reviewer aangevraagd.** `CLAUDE.md` schrijft voor dat nieuw werk voor de
+  ander een PR *met review-verzoek* krijgt, en dat is hier niet gebeurd — bij
+  #7 evenmin. Zonder dat verzoek stuurt GitHub geen mail, dus Erik kón het niet
+  weten. Dit was dus niet "Erik reageert niet", maar "Erik is nooit gevraagd".
+  Beide PR's hebben nu een review-verzoek aan `erikdeklerk-rehab`, en de
+  sessiestart-checklist in `CLAUDE.md` is aangescherpt zodat dit niet opnieuw
+  gebeurt. *(Erik: reviewen en mergen)*
 
 - [ ] **30. De marketing-agent: nog twee onderdelen open.** *(Maarten)*
 
