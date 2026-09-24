@@ -233,14 +233,16 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   naar `/feedback.html`; de acht vragen, de droomvraag en het e-mailveld zijn
   ongewijzigd meeverhuisd.
 
-  **Wat er nog moet gebeuren, en het is weinig:**
-  1. **De tabel aanmaken.** `supabase/feedback-tabel-2026-09-21.sql` in de
-     SQL-editor van Supabase draaien. Tot dan geeft het versturen netjes de
-     foutmelding "het versturen lukte niet" — nagemeten: het verzoek komt aan
-     bij Supabase, komt door de CSP, en struikelt alleen over de ontbrekende
-     tabel (`PGRST205`). Na het draaien werkt het meteen.
+  **Wat er nog moet gebeuren:**
+  1. ~~De tabel aanmaken.~~ ✅ **2026-09-24 — Maarten heeft de SQL gedraaid en
+     het formulier werkt.** Van buitenaf nagemeten: `PGRST205` is weg, en een
+     verzoek met de anon-sleutel krijgt `[]` terug terwijl er wél een rij in
+     staat. De insert-only policy doet dus wat hij moet doen — bezoekers
+     kunnen antwoorden achterlaten maar niet elkaars antwoorden lezen.
+     Meelezen gaat via **Table Editor → feedback** in het dashboard.
   2. **Eén regel in het privacybeleid** dat we vrijwillige feedback bewaren,
-     inclusief een e-mailadres als iemand dat zelf invult. *(Maarten)*
+     inclusief een e-mailadres als iemand dat zelf invult. *(Maarten — het
+     laatste dat punt 35 nog openhoudt.)*
 
   Er is bewust alleen een insert-policy: bezoekers kunnen niet elkaars
   antwoorden lezen. Meelezen doe je in het Supabase-dashboard.
