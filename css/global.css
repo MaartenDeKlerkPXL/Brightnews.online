@@ -47,12 +47,22 @@
 :root {
     /* Kleurenpalet - Positief & Fris */
     --bright-green: #32CD32;      /* De kleur van groei en positiviteit */
-    /* ÉÉN groen (reviewbesluit 2026-09-02): #32CD32 is overal hét groen —
-       als vlak, rand of accent, altijd met DONKERE tekst (--dark-text) erop:
-       dat contrast is ~9:1 en WCAG-proof. Groen als tékstkleur op een lichte
-       ondergrond bestaat niet meer (elk fel groen faalt daar, 2,1:1); waar
-       vroeger donkergroene tekst stond, staat nu --dark-text. Op donkere
-       ondergronden (footer) mag groene tekst wél — daar is het contrast ruim. */
+    /* ÉÉN groen: #32CD32 is overal hét groen — als vlak, rand of accent.
+
+       TEKST OP EEN GROEN VLAK IS WIT (besluit Maarten, 2026-09-24).
+       Hier stond tot die datum het omgekeerde, en de code deed allebei: elf
+       plekken wit, zes donker. Dat is nu overal wit, zodat er één regel is
+       in plaats van twee die elkaar tegenspreken.
+       Wees eerlijk over wat dat kost: wit op #32CD32 is 2,12:1 en donker zou
+       8,22:1 geven; de WCAG-ondergrens is 4,5:1. Dit is dus een bewuste
+       merkkeuze en geen vergissing — verander het niet terug zonder Maarten.
+       Het geldt voor vlakken. Voor kleine tekst op een groene knop is er wél
+       iets te winnen met een donkerder groen; die afweging staat open.
+
+       Groen als tékstkleur op een lichte ondergrond bestaat niet (elk fel
+       groen faalt daar, 2,03:1 gemeten); waar vroeger donkergroene tekst
+       stond, staat nu --dark-text. Op donkere ondergronden (footer) mag
+       groene tekst wél — daar is het contrast ruim. */
     --bright-yellow: #FFD700;     /* De kleur van de zon */
     --white: #FFFFFF;
     --light-bg: #F8FBF8;          /* Hele zachte groene tint in de achtergrond */
@@ -173,6 +183,15 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* Formulierelementen erven het lettertype niet van zichzelf — de browser geeft
+   een <button>, <input> of <select> zijn eigen systeemletter. Zolang de site
+   op de systeemstack draaide viel dat niet op, want dat wás ongeveer dezelfde
+   letter. Sinds er een merkletter is (2026-09-24) viel élke knop terug op
+   Arial terwijl de tekst eromheen klopte. Vandaar deze regel. */
+button, input, select, textarea, optgroup {
+    font-family: inherit;
+}
+
 /* 3. Basis Instellingen */
 html {
     scroll-behavior: smooth;
@@ -219,7 +238,7 @@ p {
     align-items: center;
     justify-content: center;
     background-color: var(--bright-green);
-    color: var(--white); /* reviewbesluit 2026-09-02: witte tekst op groen */
+    color: var(--white); /* zie de kleurafspraak bovenin: tekst op groen is wit */
     border: none;
     padding: 14px 28px;
     border-radius: var(--radius-md);
@@ -403,7 +422,7 @@ p {
     top: -60px;
     left: 0;
     background-color: var(--bright-green);
-    color: var(--dark-text);
+    color: var(--white);
     padding: var(--space-md) var(--space-xl);
     z-index: 100000;
     text-decoration: none;

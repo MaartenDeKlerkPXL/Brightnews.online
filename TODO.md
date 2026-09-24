@@ -202,27 +202,6 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   preciezer moet, is dat jouw terrein. De tabel zelf staat sinds 2026-09-24 in
   Supabase met alleen een insert-policy.
 
-- [ ] **44. Witte knoptekst op groen: 2,12:1, en het spreekt de eigen
-  kleurafspraak tegen.** *(Maarten beslist)* Bovenin `global.css` staat sinds
-  2026-09-02: een groen vlak draagt **altijd donkere tekst**, want wit op
-  `#32CD32` haalt het contrast niet. Elf regels verderop staat
-  `.btn-primary { background: var(--bright-green); color: var(--white); }` met
-  als commentaar "reviewbesluit 2026-09-02: witte tekst op groen". Twee
-  besluiten van dezelfde dag die elkaar tegenspreken.
-
-  Nagemeten: **wit op het merkgroen is 2,12:1**, donkere tekst 8,22:1. De
-  ondergrens is 4,5:1. Het zit op ruim tien plekken: `.btn-primary`,
-  knoppen in `index.css`, `abonnementen.css`, `profiel.css` en
-  `components.css`.
-
-  Bij het omzetten van het feedbackvenster naar een pagina heb ik de
-  verstuurknop al op donkere tekst gezet. **Daardoor wijkt die nu af van de
-  rest** — dat moet één kant op. Twee keuzes: alle groene knoppen donkere
-  tekst geven (toegankelijk, en het volgt de afspraak die al in `global.css`
-  staat), of terug naar wit en die afspraak schrappen. Het is een zichtbare
-  verandering op de primaire knop van de hele site, dus dit is jouw keuze en
-  niet de mijne.
-
 - [ ] **41. Lagere prioriteit uit de UI-doorlichting — nog één over.**
   *(2026-09-23; vier van de vijf afgewerkt op 2026-09-24.)*
 
@@ -354,6 +333,33 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   je niet wilt ontdekken wanneer de eerste betalende bezoeker het ontdekt.
 
 ## Afgerond
+
+- [x] **44. Tekst op een groen vlak is wit (besluit Maarten, 2026-09-24).**
+  De code deed allebei: elf plekken wit, zes donker. De kleurafspraak bovenin
+  `global.css` zei sinds 2026-09-02 dat een groen vlak **donkere** tekst
+  draagt, terwijl `.btn-primary` er elf regels verderop wit op zette — twee
+  besluiten van dezelfde dag die elkaar tegenspraken.
+
+  **Maarten heeft gekozen: wit.** Dat is nu overal doorgevoerd, zodat er één
+  regel is in plaats van twee. Zeventien groene vlakken, allemaal wit, geen
+  uitzonderingen meer. De afspraak in `global.css` is herschreven zodat hij
+  de werkelijkheid beschrijft en dit niet over een half jaar "gerepareerd"
+  wordt door iemand die de oude tekst leest.
+
+  **Eerlijk over wat het kost, en dat staat ook in die notitie:** wit op
+  `#32CD32` is 2,12:1, donker zou 8,22:1 geven, en de WCAG-ondergrens is
+  4,5:1. Dit is dus een bewuste merkkeuze en geen vergissing. Wat nog open
+  ligt als het ooit tóch moet kloppen: een donkerder groen speciaal voor
+  knopvlakken, zodat witte tekst erop wél haalt. Dat is een aparte token en
+  raakt het merkgroen zelf niet.
+
+  Bij het teruggezetten kwam een echte fout boven water die niets met kleur te
+  maken had. **Een `<button>` erft het lettertype niet** — de browser geeft
+  hem zijn eigen systeemletter. Zolang de site op de systeemstack draaide viel
+  dat niet op, want dat wás ongeveer dezelfde letter; sinds Schibsted Grotesk
+  stond élke knop op de site in Arial terwijl de tekst eromheen klopte. Eén
+  regel in de reset (`button, input, select, textarea, optgroup {
+  font-family: inherit }`) en het is overal goed.
 
 - [x] **41.3 + de laatste tokenlekken: Schibsted Grotesk, en vijf pagina's die
   hun eigen palet hadden (2026-09-24).**

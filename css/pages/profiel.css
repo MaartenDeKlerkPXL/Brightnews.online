@@ -716,7 +716,7 @@ body {
 
 #apply-promo-btn:hover {
     background: var(--bright-green);
-    color: var(--dark-text);
+    color: var(--white);
     transform: translateY(-2px);
 }
 .promo-input-group {

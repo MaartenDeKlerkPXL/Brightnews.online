@@ -389,7 +389,7 @@
 /* Succes-flash voor kopiëren */
 .share-main-btn.copy-success {
     background: var(--bright-green) !important;
-    color: var(--dark-text) !important;
+    color: var(--white) !important;
     transform: scale(1.05);
 }
 /* Zorg dat de link een flex-container is voor perfecte centrering */

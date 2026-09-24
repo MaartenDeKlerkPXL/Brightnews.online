@@ -598,7 +598,7 @@ nav.container {
     font: inherit;
     font-size: var(--text-md);
     font-weight: 700;
-    color: var(--dark-text);
+    color: var(--white);
     background: var(--bright-green);
     border: none;
     border-radius: 50px;
@@ -1325,12 +1325,11 @@ body {
     border-color: var(--bright-green);
 }
 
-/* Groen vlak met donkere tekst erop — geen groene letters op licht, zie de
-   kleurafspraak bovenin global.css. */
+/* Wit op groen, zie de kleurafspraak bovenin global.css. */
 .fb-bol input:checked + span {
     background: var(--bright-green);
     border-color: var(--bright-green);
-    color: var(--dark-text);
+    color: var(--white);
     font-weight: 700;
 }
 
@@ -1449,9 +1448,9 @@ body {
 .fb-verstuur {
     border: none;
     background: var(--bright-green);
-    /* Donkere tekst op groen, niet wit. Wit gaf 2,12:1 en dat is precies wat
-       de kleurafspraak bovenin global.css verbiedt; donker geeft 8,22:1. */
-    color: var(--dark-text);
+    /* Wit op groen — de kleurafspraak bovenin global.css. Stond hier even op
+       donker; teruggezet zodat deze knop niet als enige afwijkt. */
+    color: var(--white);
 }
 
 .fb-verstuur:disabled {
