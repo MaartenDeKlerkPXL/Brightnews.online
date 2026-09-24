@@ -1,10 +1,26 @@
 {
- "gegenereerd": "2026-09-24T04:27:37.109Z",
+ "gegenereerd": "2026-09-24T17:00:34.409Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "1790269207385gyigs5nyu",
+     "titel": "Zuid-Korea recyclet 97 procent van al zijn voedselafval",
+     "teaser": "In Seoul gooit Seunghwan Hong zijn etensresten in een slimme afvalbak: hij tikt zijn pas, de bak weegt het afval en hij betaalt naar gewicht. Zo ging het voedselafval-recyclingpercentage van Zuid-Korea van 2,6 procent in 1996 naar bijna 97 procent in 2023, dankzij volumegebonden heffingen (1995), verplichte scheiding (1997), een stortverbod (2005) en RFID-slimme bakken (2010). New York verplichtte scheiding...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/zuid-korea-recyclet-97-procent-van-al-zijn-voedselafval-1790269207385gyigs5nyu.html"
+    },
+    {
+     "id": "1790269147586lmnzry0dl",
+     "titel": "Tieners breken wereldrecord met recycling van 22.000 sportballen",
+     "teaser": "Een groep tienermilieuactivisten uit Californië, verenigd onder de naam Another Bounce en werkend met de organisatie Habits of Waste, heeft een Guinness World Record gevestigd voor het meeste aantal gerecyclede racketsportballen op één dag. Afgelopen weekend, op 19 september, verzamelden ze ongeveer 22.000 voornamelijk pickleballs en tennisballen, met een totaalgewicht van 2.675 pond, die naar een gespecialiseerde recyclingfaciliteit werden gebracht....",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/tieners-breken-wereldrecord-met-recycling-van-22-000-sportballen-1790269147586lmnzry0dl.html"
+    },
     {
      "id": "1790223941956u03y4fzjl",
      "titel": "Zeeschildpad Cebu krijgt op maat gemaakt 3D-geprint harnas na aanvaring met boot",
@@ -28,22 +44,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/weesolifant-kipekee-gered-na-dagen-alleen-in-kenia-1790223864974z0cbwne0n.html"
-    },
-    {
-     "id": "1790181746401cpeswwn2n",
-     "titel": "Reefvive bouwt koraalrif uit oesterschelpen",
-     "teaser": "Studenten van de National Taiwan Normal University hebben Reefvive ontwikkeld: een kunstmatig rif gemaakt van vermalen oesterschelpen en koraalgrind, materialen die normaal worden weggegooid. Het afval wordt verwerkt tot een mengsel dat via een 3D-printer wordt geprint tot een modulaire basis met een ruw oppervlak waar jong koraal zich aan kan hechten. Bij open-water proeven met de National Taiwan Ocean...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/reefvive-bouwt-koraalrif-uit-oesterschelpen-1790181746401cpeswwn2n.html"
-    },
-    {
-     "id": "1790181718269lism4m7qm",
-     "titel": "Araticum Initiative herstelt 4,4 miljoen acres Cerrado-savanne in Brazilië",
-     "teaser": "De Araticum Initiative in Brazilië is door de VN onderscheiden als een van de drie meest ambitieuze en impactvolle herstelprojecten ter wereld. Het richt zich op de Cerrado, de biologisch rijkste savanne ter wereld, waarvan de helft al is gekapt of omgezet voor landbouw of ander gebruik. Het initiatief wil 4,4 miljoen acres van de Cerrado herstellen naar de natuurlijke...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/araticum-initiative-herstelt-4-4-miljoen-acres-cerrado-savanne-in-brazilie-1790181718269lism4m7qm.html"
     }
    ],
    "dagoverzichten": [
@@ -74,18 +74,27 @@
      "categorie": "Environment",
      "dag": "2026-09-22",
      "url": "https://brightnews.online/articles/nl/een-wallaby-duikt-op-twee-olifantjes-vinden-een-nieuw-thuis-dg-20260922-environment.html"
-    },
-    {
-     "id": "dg-20260921-environment",
-     "titel": "Van zinkgat tot paddenstoelenstal: herstel in de natuur deze week",
-     "categorie": "Environment",
-     "dag": "2026-09-21",
-     "url": "https://brightnews.online/articles/nl/van-zinkgat-tot-paddenstoelenstal-herstel-in-de-natuur-deze-week-dg-20260921-environment.html"
     }
    ]
   },
   "en": {
    "top": [
+    {
+     "id": "1790269207385gyigs5nyu",
+     "titel": "South Korea recycles 97 percent of all food waste",
+     "teaser": "In Seoul, Seunghwan Hong tosses his food scraps into a smart waste bin: he taps his card, the bin weighs the waste and he pays by weight. This is how South Korea's food waste recycling rate climbed from 2.6 percent in 1996 to nearly 97 percent in 2023, thanks to volume-based fees (1995), mandatory separation (1997), a landfill ban (2005)...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/south-korea-recycles-97-percent-of-all-food-waste-1790269207385gyigs5nyu.html"
+    },
+    {
+     "id": "1790269147586lmnzry0dl",
+     "titel": "Teens break world record recycling 22,000 sports balls",
+     "teaser": "A group of teenage environmental activists from California, united under the name Another Bounce and working with the organization Habits of Waste, has set a Guinness World Record for the most racket sport balls recycled in a single day. Last weekend, on September 19, they collected approximately 22,000 predominantly pickleballs and tennis balls, with a total weight of 2,675 pounds,...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/teens-break-world-record-recycling-22-000-sports-balls-1790269147586lmnzry0dl.html"
+    },
     {
      "id": "1790223941956u03y4fzjl",
      "titel": "Sea turtle Cebu receives custom 3D-printed harness after boat collision",
@@ -109,22 +118,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/en/orphaned-elephant-kipekee-rescued-after-days-alone-in-kenya-1790223864974z0cbwne0n.html"
-    },
-    {
-     "id": "1790181746401cpeswwn2n",
-     "titel": "Reefvive builds coral reef from oyster shells",
-     "teaser": "Students from National Taiwan Normal University have developed Reefvive: an artificial reef made from ground oyster shells and coral rubble, materials normally discarded. The waste is processed into a mixture that is 3D-printed into a modular base with a rough surface where young coral can attach. In open-water trials with National Taiwan Ocean University, 28 coral fragments were attached to...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/reefvive-builds-coral-reef-from-oyster-shells-1790181746401cpeswwn2n.html"
-    },
-    {
-     "id": "1790181718269lism4m7qm",
-     "titel": "Araticum Initiative restores 4.4 million acres of Cerrado savanna in Brazil",
-     "teaser": "The Araticum Initiative in Brazil has been recognized by the UN as one of the three most ambitious and impactful restoration projects in the world. It focuses on the Cerrado, the world's most biologically rich savanna, half of which has already been cleared or converted for agriculture or other uses. The initiative aims to restore 4.4 million acres of the...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/araticum-initiative-restores-4-4-million-acres-of-cerrado-savanna-in-brazil-1790181718269lism4m7qm.html"
     }
    ],
    "dagoverzichten": [
@@ -155,18 +148,27 @@
      "categorie": "Environment",
      "dag": "2026-09-22",
      "url": "https://brightnews.online/articles/en/a-wallaby-emerges-two-baby-elephants-find-a-new-home-dg-20260922-environment.html"
-    },
-    {
-     "id": "dg-20260921-environment",
-     "titel": "From sinkhole to mushroom barn: nature's recovery this week",
-     "categorie": "Environment",
-     "dag": "2026-09-21",
-     "url": "https://brightnews.online/articles/en/from-sinkhole-to-mushroom-barn-nature-s-recovery-this-week-dg-20260921-environment.html"
     }
    ]
   },
   "de": {
    "top": [
+    {
+     "id": "1790269207385gyigs5nyu",
+     "titel": "Südkorea recycelt 97 Prozent seines Lebensmittelabfalls",
+     "teaser": "In Seoul wirft Seunghwan Hong seine Essensreste in einen intelligenten Abfallbehälter: Er hält seine Karte hin, der Behälter wiegt den Abfall und er bezahlt nach Gewicht. So stieg die Recyclingquote für Lebensmittelabfälle in Südkorea von 2,6 Prozent im Jahr 1996 auf knapp 97 Prozent im Jahr 2023 – dank volumenabhängiger Gebühren (1995), verpflichtender Mülltrennung (1997), einem Deponieverbod (2005) und RFID-intelligenten...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/sudkorea-recycelt-97-prozent-seines-lebensmittelabfalls-1790269207385gyigs5nyu.html"
+    },
+    {
+     "id": "1790269147586lmnzry0dl",
+     "titel": "Teenager brechen Weltrekord mit Recycling von 22.000 Sportbällen",
+     "teaser": "Eine Gruppe von Teenager-Umweltaktivisten aus Kalifornien, vereinigt unter dem Namen Another Bounce und in Zusammenarbeit mit der Organisation Habits of Waste, hat einen Guinness World Record für die meisten an einem Tag recycelten Racketsportbälle aufgestellt. Am vergangenen Wochenende, am 19. September, sammelten sie etwa 22.000 überwiegend Pickleballs und Tennisbälle mit einem Gesamtgewicht von 2.675 Pfund, die zu einer spezialisierten Recyclinganlage...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/teenager-brechen-weltrekord-mit-recycling-von-22-000-sportballen-1790269147586lmnzry0dl.html"
+    },
     {
      "id": "1790223941956u03y4fzjl",
      "titel": "Meeresschildkröte Cebu erhält nach Bootsunfall maßgeschneidertes 3D-gedrucktes Geschirr",
@@ -190,22 +192,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/de/waisenkalbchen-kipekee-nach-tagen-allein-in-kenia-gerettet-1790223864974z0cbwne0n.html"
-    },
-    {
-     "id": "1790181746401cpeswwn2n",
-     "titel": "Reefvive baut Korallenriff aus Austernschalen",
-     "teaser": "Studenten der National Taiwan Normal University haben Reefvive entwickelt: ein künstliches Riff aus gemahlenen Austernschalen und Korallenschotter, Materialien, die normalerweise weggeworfen werden. Der Abfall wird zu einer Mischung verarbeitet, die über einen 3D-Drucker zu einer modularen Basis gedruckt wird, deren raue Oberfläche es Jungkorallen ermöglicht, sich anzuheften. Bei Freilandversuchen mit der National Taiwan Ocean University wurden 28 Korallfragmente auf den...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/reefvive-baut-korallenriff-aus-austernschalen-1790181746401cpeswwn2n.html"
-    },
-    {
-     "id": "1790181718269lism4m7qm",
-     "titel": "Araticum Initiative stellt 4,4 Millionen Acres Cerrado-Savanne in Brasilien wieder her",
-     "teaser": "Die Araticum Initiative in Brasilien wurde von den Vereinten Nationen als eines der drei ehrgeizigsten und wirkungsvollsten Restaurierungsprojekte der Welt ausgezeichnet. Sie konzentriert sich auf die Cerrado, die biologisch reichste Savanne der Welt, von der bereits die Hälfte gerodet oder für Landwirtschaft oder andere Zwecke umgewandelt wurde. Das Projekt will 4,4 Millionen Acres der Cerrado in ihren natürlichen Zustand zurückversetzen...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/araticum-initiative-stellt-4-4-millionen-acres-cerrado-savanne-in-brasilien-wied-1790181718269lism4m7qm.html"
     }
    ],
    "dagoverzichten": [
@@ -236,18 +222,27 @@
      "categorie": "Environment",
      "dag": "2026-09-22",
      "url": "https://brightnews.online/articles/de/ein-wallaby-taucht-auf-zwei-kleine-elefanten-finden-ein-neues-zuhause-dg-20260922-environment.html"
-    },
-    {
-     "id": "dg-20260921-environment",
-     "titel": "Vom Sinkloch zur Pilzzucht: Naturrettung diese Woche",
-     "categorie": "Environment",
-     "dag": "2026-09-21",
-     "url": "https://brightnews.online/articles/de/vom-sinkloch-zur-pilzzucht-naturrettung-diese-woche-dg-20260921-environment.html"
     }
    ]
   },
   "fr": {
    "top": [
+    {
+     "id": "1790269207385gyigs5nyu",
+     "titel": "La Corée du Sud recycle 97 % de ses déchets alimentaires",
+     "teaser": "À Séoul, Seunghwan Hong jette ses restes de repas dans une poubelle intelligente : il scanne sa carte, la poubelle pèse les déchets et il paie au poids. C'est ainsi que le taux de recyclage des déchets alimentaires en Corée du Sud est passé de 2,6 % en 1996 à près de 97 % en 2023, grâce aux redevances volumétriques...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/la-coree-du-sud-recycle-97-de-ses-dechets-alimentaires-1790269207385gyigs5nyu.html"
+    },
+    {
+     "id": "1790269147586lmnzry0dl",
+     "titel": "Des ados battent le record mondial du recyclage de 22.000 balles de sport",
+     "teaser": "Un groupe d'ados militants pour l'environnement en Californie, réunis sous le nom Another Bounce et travaillant avec l'organisation Habits of Waste, a établi un Guinness World Record pour le plus grand nombre de balles de sports de raquette recyclées en une seule journée. Le week-end dernier, le 19 septembre, ils ont collecté environ 22.000 balles, principalement des pickleballs et des...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/des-ados-battent-le-record-mondial-du-recyclage-de-22-000-balles-de-sport-1790269147586lmnzry0dl.html"
+    },
     {
      "id": "1790223941956u03y4fzjl",
      "titel": "La tortue marine Cebu reçoit une armature 3D imprimée sur mesure après une collision avec un bateau",
@@ -271,22 +266,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/fr/elephanteau-orphelin-kipekee-sauve-apres-des-jours-seul-au-kenya-1790223864974z0cbwne0n.html"
-    },
-    {
-     "id": "1790181746401cpeswwn2n",
-     "titel": "Reefvive construit un récif corallien à partir de coquilles d'huître",
-     "teaser": "Des étudiants de la National Taiwan Normal University ont développé Reefvive : un récif artificiel fabriqué à partir de coquilles d'huître moulues et de gravier corallien, des matériaux normalement jetés. Les déchets sont traités en un mélange qui est imprimé en 3D pour former une base modulaire avec une surface rugueuse où le jeune corail peut s'accrocher. Lors d'essais en...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/reefvive-construit-un-recif-corallien-a-partir-de-coquilles-d-huitre-1790181746401cpeswwn2n.html"
-    },
-    {
-     "id": "1790181718269lism4m7qm",
-     "titel": "Araticum Initiative restaure 4,4 millions d'acres de savane Cerrado au Brésil",
-     "teaser": "L'Araticum Initiative au Brésil a été distinguée par l'ONU comme l'un des trois projets de restauration les plus ambitieux et percutants au monde. Elle se concentre sur le Cerrado, la savane biologiquement la plus riche du monde, dont la moitié a déjà été défrichée ou convertie à l'agriculture ou à d'autres usages. L'initiative vise à restaurer 4,4 millions d'acres du...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/araticum-initiative-restaure-4-4-millions-d-acres-de-savane-cerrado-au-bresil-1790181718269lism4m7qm.html"
     }
    ],
    "dagoverzichten": [
@@ -317,18 +296,27 @@
      "categorie": "Environment",
      "dag": "2026-09-22",
      "url": "https://brightnews.online/articles/fr/un-wallaby-reapparait-deux-elephanteaux-trouvent-un-nouveau-foyer-dg-20260922-environment.html"
-    },
-    {
-     "id": "dg-20260921-environment",
-     "titel": "Du gouffre de zinc à l'étable à champignons : la nature se rétablit cette semaine",
-     "categorie": "Environment",
-     "dag": "2026-09-21",
-     "url": "https://brightnews.online/articles/fr/du-gouffre-de-zinc-a-l-etable-a-champignons-la-nature-se-retablit-cette-semaine-dg-20260921-environment.html"
     }
    ]
   },
   "es": {
    "top": [
+    {
+     "id": "1790269207385gyigs5nyu",
+     "titel": "Corea del Sur recicla el 97 por ciento de sus residuos alimentarios",
+     "teaser": "En Seúl, Seunghwan Hong tira sus restos de comida en un cubo de basura inteligente: pasa su tarjeta, el cubo pesa los residuos y paga según el peso. Así, el porcentaje de reciclaje de residuos alimentarios de Corea del Sur pasó del 2,6 por ciento en 1996 a casi el 97 por ciento en 2023, gracias a las tasas volumétricas...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/corea-del-sur-recicla-el-97-por-ciento-de-sus-residuos-alimentarios-1790269207385gyigs5nyu.html"
+    },
+    {
+     "id": "1790269147586lmnzry0dl",
+     "titel": "Adolescentes baten récord mundial reciclando 22.000 pelotas deportivas",
+     "teaser": "Un grupo de adolescentes activistas ambientales de California, unidos bajo el nombre Another Bounce y trabajando con la organización Habits of Waste, ha establecido un Récord Guinness Mundial por la mayor cantidad de pelotas de raqueta recicladas en un solo día. El pasado fin de semana, el 19 de septiembre, reunieron aproximadamente 22.000 pelotas, principalmente de pádel y tenis, con...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/adolescentes-baten-record-mundial-reciclando-22-000-pelotas-deportivas-1790269147586lmnzry0dl.html"
+    },
     {
      "id": "1790223941956u03y4fzjl",
      "titel": "La tortuga marina Cebu recibe un arnés personalizado impreso en 3D tras colisión con barco",
@@ -352,22 +340,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/es/elefantita-huerfana-kipekee-rescatada-tras-dias-sola-en-kenia-1790223864974z0cbwne0n.html"
-    },
-    {
-     "id": "1790181746401cpeswwn2n",
-     "titel": "Reefvive construye arrecife de coral con cáscaras de ostra",
-     "teaser": "Estudiantes de la National Taiwan Normal University han desarrollado Reefvive: un arrecife artificial hecho de cáscaras de ostra molidas y grava de coral, materiales que normalmente se desechan. Los residuos se procesan en una mezcla que se imprime mediante una impresora 3D para crear una base modular con una superficie rugosa donde el coral joven puede adherirse. En pruebas en...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/reefvive-construye-arrecife-de-coral-con-cascaras-de-ostra-1790181746401cpeswwn2n.html"
-    },
-    {
-     "id": "1790181718269lism4m7qm",
-     "titel": "Araticum Initiative restaura 4,4 millones de acres de sabana Cerrado en Brasil",
-     "teaser": "La Araticum Initiative en Brasil ha sido distinguida por la ONU como uno de los tres proyectos de restauración más ambiciosos e impactantes del mundo. Se enfoca en el Cerrado, la sabana biológicamente más rica del planeta, de la cual ya se ha talado o convertido la mitad para agricultura u otros usos. La iniciativa pretende restaurar 4,4 millones de...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/araticum-initiative-restaura-4-4-millones-de-acres-de-sabana-cerrado-en-brasil-1790181718269lism4m7qm.html"
     }
    ],
    "dagoverzichten": [
@@ -398,13 +370,6 @@
      "categorie": "Environment",
      "dag": "2026-09-22",
      "url": "https://brightnews.online/articles/es/una-ualabi-reaparece-dos-elefantillos-encuentran-un-nuevo-hogar-dg-20260922-environment.html"
-    },
-    {
-     "id": "dg-20260921-environment",
-     "titel": "Del sumidero a la granja de hongos: la recuperación de la naturaleza esta semana",
-     "categorie": "Environment",
-     "dag": "2026-09-21",
-     "url": "https://brightnews.online/articles/es/del-sumidero-a-la-granja-de-hongos-la-recuperacion-de-la-naturaleza-esta-semana-dg-20260921-environment.html"
     }
    ]
   }
