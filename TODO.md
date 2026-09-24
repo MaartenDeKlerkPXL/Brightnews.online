@@ -188,24 +188,52 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   Zolang de site geparkeerd staat heeft plaatsen weinig zin: een bezoeker
   komt dan op één artikel en kan verder nergens heen.
 
-- [ ] **41. Lagere prioriteit uit de UI-doorlichting — nog twee over.**
-  *(2026-09-23; drie van de vijf afgewerkt op 2026-09-24.)* Deze kwamen uit
-  dezelfde doorlichting maar wegen minder zwaar; ze staan hier zodat ze niet
-  verdwijnen, niet omdat ze nu moeten.
+- [ ] **43. De privacyregel over feedback nalezen.** *(Erik)* Op 2026-09-24
+  is er een bullet bijgekomen onder "Jouw Privacy" op `Privacy.html`, in vijf
+  talen (`privacy_list_feedback`). Hij beschrijft wat het feedbackformulier
+  bewaart: de antwoorden, de toelichting, een zelf ingevuld e-mailadres, plus
+  taal, herkomstpagina en soort toestel — en dat er géén IP-adres of
+  browsergegevens bij ons worden bewaard.
+
+  **Die tekst is door mij geschreven en door Maarten geaccordeerd, maar niet
+  juridisch getoetst. Erik: lees na en corrigeer wat niet klopt.** Eén punt om
+  scherp naar te kijken: "een IP-adres bewaren we niet" slaat op ónze tabel —
+  Supabase ziet op infrastructuurniveau uiteraard wel verkeer. Als dat
+  preciezer moet, is dat jouw terrein. De tabel zelf staat sinds 2026-09-24 in
+  Supabase met alleen een insert-policy.
+
+- [ ] **44. Witte knoptekst op groen: 2,12:1, en het spreekt de eigen
+  kleurafspraak tegen.** *(Maarten beslist)* Bovenin `global.css` staat sinds
+  2026-09-02: een groen vlak draagt **altijd donkere tekst**, want wit op
+  `#32CD32` haalt het contrast niet. Elf regels verderop staat
+  `.btn-primary { background: var(--bright-green); color: var(--white); }` met
+  als commentaar "reviewbesluit 2026-09-02: witte tekst op groen". Twee
+  besluiten van dezelfde dag die elkaar tegenspreken.
+
+  Nagemeten: **wit op het merkgroen is 2,12:1**, donkere tekst 8,22:1. De
+  ondergrens is 4,5:1. Het zit op ruim tien plekken: `.btn-primary`,
+  knoppen in `index.css`, `abonnementen.css`, `profiel.css` en
+  `components.css`.
+
+  Bij het omzetten van het feedbackvenster naar een pagina heb ik de
+  verstuurknop al op donkere tekst gezet. **Daardoor wijkt die nu af van de
+  rest** — dat moet één kant op. Twee keuzes: alle groene knoppen donkere
+  tekst geven (toegankelijk, en het volgt de afspraak die al in `global.css`
+  staat), of terug naar wit en die afspraak schrappen. Het is een zichtbare
+  verandering op de primaire knop van de hele site, dus dit is jouw keuze en
+  niet de mijne.
+
+- [ ] **41. Lagere prioriteit uit de UI-doorlichting — nog één over.**
+  *(2026-09-23; vier van de vijf afgewerkt op 2026-09-24.)*
 
   1. **De CSS is desktop-first gebouwd.** 12 media-queries, allemaal
      `max-width`, nul `min-width`. De theorie wil het omgekeerd: klein scherm
      eerst, dan naar boven verrijken. **Eerlijk oordeel: dit is netheid, geen
      winst** — nagemeten loopt de site nergens over, ook niet op 320px (dat
      is 400% zoom). Alleen aanpakken als de CSS toch op de schop gaat.
-  3. **Eén lettertype, de systeemstack.** Draagt geen merk: op elk toestel
-     ziet het er anders uit en het is per definitie neutraal. Twee families
-     (kop + tekst) uit Google Fonts zouden het verschil maken tussen "een
-     nieuwssite" en "déze nieuwssite". De duurste ingreep op de lijst, en een
-     ontwerpbeslissing — *(Maarten)*.
 
-  Onderdeel 2 (aanraakvlakken), 4 (koppenstructuur) en 5 (dode CSS) zijn op
-  2026-09-24 gedaan; zie het afgeronde blok onderaan.
+  Onderdeel 2 (aanraakvlakken), 3 (lettertype), 4 (koppenstructuur) en 5
+  (dode CSS) zijn gedaan; zie het afgeronde blok onderaan.
 
 ## Buiten de code — alleen Maarten kan dit
 
@@ -326,6 +354,53 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   je niet wilt ontdekken wanneer de eerste betalende bezoeker het ontdekt.
 
 ## Afgerond
+
+- [x] **41.3 + de laatste tokenlekken: Schibsted Grotesk, en vijf pagina's die
+  hun eigen palet hadden (2026-09-24).**
+
+  **De letter.** Maarten koos uit drie richtingen voor **Schibsted Grotesk**,
+  één familie in twee rollen: kop op 800, tekst op 400. Gemaakt in opdracht
+  van Schibsted, een Noors nieuwsconcern, en getekend voor koppen én lopende
+  tekst tegelijk. Daarmee is de systeemstack weg, die op elk toestel iets
+  anders liet zien en per definitie geen merk droeg.
+
+  **Zelf gehost, bewust niet via Google.** De CSP van elke pagina staat op
+  `font-src 'self'`; via Google zouden `fonts.googleapis.com` en
+  `fonts.gstatic.com` op twaalf pagina's én in het artikelsjabloon bij moeten,
+  en dat laatste zet 740 pagina's opnieuw op schijf. Zelf hosten scheelt dat
+  werk, houdt het bezoekers-IP bij ons vandaan en scheelt een verbinding.
+  Twee bestanden in `assets/fonts/`, **66 KB samen**, variabel over het hele
+  bereik 400–800 — elke dikte daartussen kost niets extra. De licentie (SIL
+  OFL, zelf hosten expliciet toegestaan) staat ernaast.
+
+  Géén cursief meegenomen: die wordt op de hele site één keer gebruikt, de
+  AI-melding onder een artikel. Daar maakt de browser zelf een schuine van.
+  Dat is 66 KB bespaard voor één regel kleine grijze tekst.
+
+  Nagemeten: de latin-subset laadt, latin-ext blijft ongeladen tot een pagina
+  hem nodig heeft. Koppen 800 met een haartje negatieve letterafstand, tekst
+  400.
+
+  **De tokenlekken.** De systeemstack stond op acht plekken: één keer in
+  `global.css` en zeven keer inline. Die zeven zijn nu `var(--font-tekst)`.
+  Belangrijker: **vijf pagina's herdefinieerden in een eigen `:root` het
+  merkgroen als `#32cc32`** — één punt naast het echte `#32CD32`, volstrekt
+  onzichtbaar, maar die blokken stonden ná `global.css` en wonnen dus. Een
+  toekomstige wijziging aan `--bright-green` zou daar stilletjes niets doen.
+  Idem `--dark-text: #222`. Alle vijf weg; `binnenkort.html` houdt zijn eigen
+  waarden, want die pagina staat bewust op zichzelf. `thanks.html` had eigen
+  námen (`--bright-bg`, `--soft-gray`) voor kleuren die al een token hadden;
+  die wijzen nu naar de echte. Het artikelsjabloon had nog twee losse hex-
+  waarden, ook weg — 740 pagina's opnieuw gegenereerd.
+
+  **En een contrastfout die hieronder verstopt zat.** Dezelfde vijf pagina's
+  zetten op elf plekken hun koppen in groene tekst op een lichte grond,
+  meerdere met `!important` — dáárom overleefden ze de contrastronde van fase
+  5. Nagemeten: **2,03:1**, terwijl de ondergrens voor grote tekst 3,0:1 is.
+  Het spreekt bovendien letterlijk tegen wat bovenin `global.css` staat
+  ("groen als tekstkleur op een lichte ondergrond bestaat niet meer"). Nu
+  `--dark-text`, 16,70:1. Groen blijft waar het hoort: het logo, de vlakken
+  en de knoppen.
 
 - [x] **De 404, de homepage-ondertitel en de Engelse Climate-link
   (2026-09-24).** Drie losse wensen van Maarten, in één ronde.

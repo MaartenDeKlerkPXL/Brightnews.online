@@ -5,6 +5,45 @@
    ========================================= */
 
 /* 1. Design Tokens (Variabelen) */
+/* ==========================================================================
+   Schibsted Grotesk — het merklettertype (TODO punt 41.3, keuze 2026-09-24)
+
+   Zelf gehost, bewust niet via Google. De CSP van elke pagina staat op
+   font-src 'self'; via Google zouden fonts.googleapis.com en fonts.gstatic.com
+   op twaalf pagina's én in het artikelsjabloon bij moeten, en dat laatste zet
+   740 pagina's opnieuw op schijf. Zelf hosten scheelt dat werk, houdt het
+   bezoekers-IP bij ons vandaan en scheelt een verbinding bij het laden.
+
+   Twee bestanden, 66 KB samen. Het zijn variabele fonts over het hele bereik
+   400–800: elke dikte daartussen kost niets extra. Latin dekt nl/en/fr/es en
+   het meeste Duits; latin-ext vangt de rest — de browser haalt alleen op wat
+   de pagina nodig heeft.
+
+   Géén cursief meegenomen: die wordt op de hele site één keer gebruikt (de
+   AI-melding onder een artikel). Daar maakt de browser zelf een schuine van.
+   Dat is 66 KB bespaard voor één regel kleine grijze tekst.
+
+   font-display: swap — liever meteen leesbare tekst in de systeemletter die
+   daarna omklapt, dan een paar honderd milliseconde niets.
+   ========================================================================== */
+@font-face {
+    font-family: 'Schibsted Grotesk';
+    font-style: normal;
+    font-weight: 400 800;
+    font-display: swap;
+    src: url('/assets/fonts/schibsted-grotesk-latin.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Schibsted Grotesk';
+    font-style: normal;
+    font-weight: 400 800;
+    font-display: swap;
+    src: url('/assets/fonts/schibsted-grotesk-latin-ext.woff2') format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
 :root {
     /* Kleurenpalet - Positief & Fris */
     --bright-green: #32CD32;      /* De kleur van groei en positiviteit */
@@ -53,6 +92,14 @@
        werk: een zacht groen vlak. Samengevoegd tot één. Dit is géén tweede
        merkgroen — het is een achtergrond, geen accent. */
     --green-tint: #F0FFF0;
+
+    /* Eén familie in twee rollen: de kop op 800, de tekst op 400. Dat is
+       bewust — een tweede familie zou contrast geven dat we hier met dikte
+       en grootte maken, en zou het dubbele aan bestanden kosten. De
+       systeemstack blijft als terugval staan voor de seconde vóór de letter
+       binnen is, en voor als hij niet komt. */
+    --font-kop: 'Schibsted Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-tekst: 'Schibsted Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
     /* Semantische kleuren.
        Rood stond op zeven verschillende waarden (#ff4757, #d93025, #a32219,
@@ -132,7 +179,7 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; /* systeemstack: 'Inter' werd nooit geladen en gaf schijnconsistentie */
+    font-family: var(--font-tekst);
     background-color: var(--light-bg);
     color: var(--dark-text);
     line-height: 1.6;
@@ -152,9 +199,13 @@ body {
 
 /* 5. Typografie */
 h1, h2, h3, h4 {
+    font-family: var(--font-kop);
     color: var(--dark-text);
     font-weight: 800;
     line-height: 1.2;
+    /* Schibsted Grotesk is op grote maten wat ruim gespatieerd; een haartje
+       negatieve letterafstand laat een kop als één woordbeeld lezen. */
+    letter-spacing: -0.015em;
     margin-bottom: 1rem;
 }
 

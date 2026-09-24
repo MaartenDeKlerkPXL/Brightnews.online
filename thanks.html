@@ -29,22 +29,15 @@
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#32CD32">
     <style>
-        :root {
-            --bright-green: #32CD32;
-            --bright-bg: #F8FBF8;
-            --bright-text: #1A1A1A;
-            --soft-gray: #f2f2f2;
-        }
-
         body {
             margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-family: var(--font-tekst);
             display: flex;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            background-color: var(--bright-bg);
-            color: var(--bright-text);
+            background-color: var(--light-bg);
+            color: var(--dark-text);
             text-align: center;
         }
 
@@ -113,7 +106,7 @@
             margin-bottom: 1rem;
             font-weight: 800;
             /* Green titles for both success and error */
-            color: var(--bright-green);
+            color: var(--dark-text);
         }
 
         p {
@@ -126,7 +119,7 @@
         .loading-bar {
             width: 100%;
             height: 6px;
-            background: var(--soft-gray);
+            background: var(--neutral-050);
             border-radius: 10px;
             overflow: hidden;
             margin-top: 2rem;
@@ -148,14 +141,14 @@
 
         /* Hover effect for the home link */
         .home-link {
-            color: var(--bright-text);
+            color: var(--dark-text);
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s ease;
         }
 
         .home-link:hover {
-            color: var(--bright-green);
+            color: var(--dark-text);
             text-decoration: underline;
         }
     </style>

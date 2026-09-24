@@ -303,7 +303,7 @@ ${hreflangs}
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/components.css">
     <link rel="stylesheet" href="/css/pages/artikel.css">
-    <meta name="theme-color" content="#32CD32">
+    <meta name="theme-color" content="var(--bright-green)">
     <script src="/js/vendor/supabase-js-2.112.4.js" defer></script>
     <script src="/js/supabase-init.js" defer></script>
     <script src="/js/betaal-config.js" defer></script>
@@ -406,7 +406,7 @@ ${alineas}${refsHtml}
             </div>
         </div>
     </div>
-<p class="ai-disclaimer" style="text-align: center; font-style: italic; color: #666; margin-top: 30px; font-size: 0.85em;">${escapeHtml(disclaimerTekst)}${disclaimerLink}</p>
+<p class="ai-disclaimer" style="text-align: center; font-style: italic; color: var(--neutral-500); margin-top: 30px; font-size: 0.85em;">${escapeHtml(disclaimerTekst)}${disclaimerLink}</p>
         </section>
     </div>
     </div>
