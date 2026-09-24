@@ -297,7 +297,7 @@ window.translations = {
     "fb_leeg": "Beantwoord eerst één vraag, dan kun je versturen.",
     "fb_laag": "kan beter",
     "fb_hoog": "prima",
-    "index_sub": "Elke dag een verse selectie goed nieuws uit de hele wereld, in vijf talen.",
+    "index_sub": "Elke dag een verse selectie goed nieuws uit de hele wereld, veel leesplezier!",
     "index_error_titel": "Het nieuws laadt even niet",
     "index_error_tekst": "Er ging iets mis bij het ophalen. Controleer je verbinding en probeer het nog eens.",
     "index_error_knop": "Opnieuw proberen",
@@ -308,7 +308,12 @@ window.translations = {
     "fb_v8": "Zou je BrightNews aanraden aan iemand?",
     "fb_geenidee": "geen idee",
     "fb_page_title": "Wat vind je van BrightNews? | BrightNews",
-    "fb_terug": "Terug naar het nieuws"
+    "fb_terug": "Terug naar het nieuws",
+    "privacy_list_feedback": "<strong>Feedback:</strong> Vul je het feedbackformulier in, dan bewaren we je antwoorden, je eventuele toelichting en — alleen als je dat zelf invult — je e-mailadres. Daarnaast leggen we de taal vast, de pagina waar je vandaan kwam en of je een telefoon, tablet of computer gebruikt. Een IP-adres of browsergegevens bewaren we niet. Invullen is vrijwillig; het e-mailadres gebruiken we alleen om bij je terug te komen over wat je schreef.",
+    "err404_title": "Pagina niet gevonden | BrightNews",
+    "err404_h1": "Deze pagina hebben we niet kunnen vinden",
+    "err404_intro": "Misschien is het adres verhuisd of staat er een tikfout in. Het goede nieuws staat er in elk geval nog — ga terug naar de voorpagina en lees verder.",
+    "err404_btn": "Naar de voorpagina"
   },
   "en": {
     "skip_to_content": "Skip to main content",
@@ -608,18 +613,23 @@ window.translations = {
     "fb_leeg": "Answer at least one question first.",
     "fb_laag": "could be better",
     "fb_hoog": "great",
-    "index_sub": "A fresh pick of good news from around the world, every day, in five languages.",
+    "index_sub": "A fresh pick of good news from around the world, every day. Enjoy the read!",
     "index_error_titel": "The news isn’t loading right now",
     "index_error_tekst": "Something went wrong while fetching it. Check your connection and give it another go.",
     "index_error_knop": "Try again",
-    "climate_url": "https://stripe.com/climate",
+    "climate_url": "https://stripe.com/en-nl/climate",
     "related_title": "More good news",
     "fb_v6": "Are the topics interesting?",
     "fb_v7": "Is the site fast enough?",
     "fb_v8": "Would you recommend BrightNews to someone?",
     "fb_geenidee": "no idea",
     "fb_page_title": "What do you think of BrightNews? | BrightNews",
-    "fb_terug": "Back to the news"
+    "fb_terug": "Back to the news",
+    "privacy_list_feedback": "<strong>Feedback:</strong> If you fill in the feedback form, we keep your answers, any comments you add and — only if you enter it yourself — your email address. We also record the language, the page you came from and whether you are using a phone, tablet or computer. We do not keep an IP address or browser details. Filling it in is voluntary; we use the email address only to follow up on what you wrote.",
+    "err404_title": "Page not found | BrightNews",
+    "err404_h1": "We couldn't find this page",
+    "err404_intro": "The address may have moved, or there might be a typo in it. The good news is still here — head back to the homepage and read on.",
+    "err404_btn": "Back to the homepage"
   },
   "de": {
     "skip_to_content": "Zum Hauptinhalt springen",
@@ -919,7 +929,7 @@ window.translations = {
     "fb_leeg": "Beantworte zuerst mindestens eine Frage.",
     "fb_laag": "geht besser",
     "fb_hoog": "richtig gut",
-    "index_sub": "Jeden Tag eine frische Auswahl guter Nachrichten aus aller Welt, in fünf Sprachen.",
+    "index_sub": "Jeden Tag eine frische Auswahl guter Nachrichten aus aller Welt. Viel Spaß beim Lesen!",
     "index_error_titel": "Die Nachrichten laden gerade nicht",
     "index_error_tekst": "Beim Abrufen ist etwas schiefgelaufen. Prüf deine Verbindung und versuch es noch einmal.",
     "index_error_knop": "Erneut versuchen",
@@ -930,7 +940,12 @@ window.translations = {
     "fb_v8": "Würdest du BrightNews weiterempfehlen?",
     "fb_geenidee": "keine Ahnung",
     "fb_page_title": "Wie gefällt dir BrightNews? | BrightNews",
-    "fb_terug": "Zurück zu den Nachrichten"
+    "fb_terug": "Zurück zu den Nachrichten",
+    "privacy_list_feedback": "<strong>Feedback:</strong> Wenn du das Feedback-Formular ausfüllst, speichern wir deine Antworten, deine etwaigen Anmerkungen und – nur wenn du sie selbst einträgst – deine E-Mail-Adresse. Außerdem halten wir die Sprache fest, die Seite, von der du kamst, und ob du ein Handy, Tablet oder einen Computer benutzt. Eine IP-Adresse oder Browserdaten speichern wir nicht. Das Ausfüllen ist freiwillig; die E-Mail-Adresse nutzen wir ausschließlich, um auf dein Feedback zurückzukommen.",
+    "err404_title": "Seite nicht gefunden | BrightNews",
+    "err404_h1": "Diese Seite konnten wir nicht finden",
+    "err404_intro": "Vielleicht ist die Adresse umgezogen oder es hat sich ein Tippfehler eingeschlichen. Die guten Nachrichten sind auf jeden Fall noch da — zurück zur Startseite und weiterlesen.",
+    "err404_btn": "Zur Startseite"
   },
   "fr": {
     "skip_to_content": "Aller au contenu principal",
@@ -1230,7 +1245,7 @@ window.translations = {
     "fb_leeg": "Répondez d’abord à au moins une question.",
     "fb_laag": "peut mieux faire",
     "fb_hoog": "très bien",
-    "index_sub": "Chaque jour une sélection fraîche de bonnes nouvelles du monde entier, en cinq langues.",
+    "index_sub": "Chaque jour une sélection fraîche de bonnes nouvelles du monde entier. Bonne lecture !",
     "index_error_titel": "Les actualités ne se chargent pas",
     "index_error_tekst": "Quelque chose s’est mal passé lors du chargement. Vérifiez votre connexion et réessayez.",
     "index_error_knop": "Réessayer",
@@ -1241,7 +1256,12 @@ window.translations = {
     "fb_v8": "Recommanderiez-vous BrightNews ?",
     "fb_geenidee": "sans avis",
     "fb_page_title": "Que pensez-vous de BrightNews ? | BrightNews",
-    "fb_terug": "Retour aux actualités"
+    "fb_terug": "Retour aux actualités",
+    "privacy_list_feedback": "<strong>Vos retours :</strong> Si vous remplissez le formulaire de retour, nous conservons vos réponses, vos éventuels commentaires et — uniquement si vous la saisissez vous-même — votre adresse e-mail. Nous enregistrons également la langue, la page d'où vous veniez et si vous utilisez un téléphone, une tablette ou un ordinateur. Nous ne conservons ni adresse IP ni données de navigateur. Ce formulaire est facultatif ; l'adresse e-mail sert uniquement à revenir vers vous au sujet de votre message.",
+    "err404_title": "Page introuvable | BrightNews",
+    "err404_h1": "Nous n'avons pas trouvé cette page",
+    "err404_intro": "L'adresse a peut-être changé, ou il s'y est glissé une faute de frappe. Les bonnes nouvelles sont toujours là — retournez à l'accueil et poursuivez votre lecture.",
+    "err404_btn": "Retour à l'accueil"
   },
   "es": {
     "skip_to_content": "Saltar al contenido principal",
@@ -1541,7 +1561,7 @@ window.translations = {
     "fb_leeg": "Responde primero al menos a una pregunta.",
     "fb_laag": "puede mejorar",
     "fb_hoog": "genial",
-    "index_sub": "Cada día una selección fresca de buenas noticias de todo el mundo, en cinco idiomas.",
+    "index_sub": "Cada día una selección fresca de buenas noticias de todo el mundo. ¡Feliz lectura!",
     "index_error_titel": "Las noticias no se están cargando",
     "index_error_tekst": "Algo ha salido mal al cargarlas. Revisa tu conexión e inténtalo de nuevo.",
     "index_error_knop": "Intentar de nuevo",
@@ -1552,6 +1572,11 @@ window.translations = {
     "fb_v8": "¿Recomendarías BrightNews?",
     "fb_geenidee": "sin opinión",
     "fb_page_title": "¿Qué te parece BrightNews? | BrightNews",
-    "fb_terug": "Volver a las noticias"
+    "fb_terug": "Volver a las noticias",
+    "privacy_list_feedback": "<strong>Comentarios:</strong> Si rellenas el formulario de comentarios, guardamos tus respuestas, cualquier comentario que añadas y —solo si lo introduces tú mismo— tu dirección de correo electrónico. También registramos el idioma, la página de la que venías y si usas un teléfono, una tableta o un ordenador. No guardamos ninguna dirección IP ni datos del navegador. Rellenarlo es voluntario; la dirección de correo solo la usamos para responderte sobre lo que escribiste.",
+    "err404_title": "Página no encontrada | BrightNews",
+    "err404_h1": "No hemos encontrado esta página",
+    "err404_intro": "Puede que la dirección haya cambiado o que contenga una errata. Las buenas noticias siguen aquí — vuelve a la portada y sigue leyendo.",
+    "err404_btn": "Volver a la portada"
   }
 };

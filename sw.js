@@ -1,7 +1,7 @@
 // Bump deze versie bij elke inhoudelijke wijziging aan CSS/JS. Zonder dat
 // blijven bestaande bezoekers vastzitten op een oude cache en krijgen ze
 // nieuwe fixes nooit te zien (zie Fase 2-audit).
-const CACHE_NAME = 'brightnews-v30'; // v30: het feedbackformulier is een eigen pagina (/feedback.html) in plaats van een modal, en de verstuurknop kreeg donkere tekst op groen. Bumpen bij elke wijziging aan ASSETS-bestanden.
+const CACHE_NAME = 'brightnews-v31'; // v31: 404-pagina met navigatiebalk, footer en vertaling; ondertitel op de homepage; privacyregel over feedback; Engelse Stripe Climate-link. Bumpen bij elke wijziging aan ASSETS-bestanden.
 const ASSETS = [
     '/',
     '/index.html',

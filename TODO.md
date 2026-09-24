@@ -188,65 +188,6 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   Zolang de site geparkeerd staat heeft plaatsen weinig zin: een bezoeker
   komt dan op één artikel en kan verder nergens heen.
 
-- [ ] **35. Feedbackvraag in de footer — gebouwd, wacht nog op één tabel.**
-  *(Idee van Maarten, 2026-09-20. Gebouwd 2026-09-21.)*
-
-  **Wat er staat.** Onderaan elke pagina staat één stil lijntje, "Wat vind je
-  van BrightNews?", in hetzelfde grijs als de copyrightregel. Dat opent een
-  `<dialog>` met drie schalen van 1 t/m 5 (hoe positief en leuk, werkt alles,
-  hoe ziet het eruit), twee extra schalen achter "nog twee korte vragen"
-  (vind je je weg, lezen de teksten prettig), de open droomvraag met een ruim
-  veld, en een optioneel e-mailadres. Alles in vijf talen: 20 nieuwe sleutels,
-  278 → 298 per taal.
-
-  **Ontwerpkeuzes die openstonden, nu gemaakt:** drie vragen meteen zichtbaar
-  en twee achter een klik, want vijf schalen ineens is te veel gevraagd van
-  iemand die even iets invult. Anoniem, met een optioneel adres voor wie
-  doorgevraagd wil worden. Geen user agent en geen IP; alleen het toestel als
-  één woord (mobiel/tablet/desktop), genoeg voor "werkt het op mijn telefoon"
-  en te grof om iemand aan te herkennen.
-
-  Het lijntje én het venster worden door `index.js` in de DOM gezet in plaats
-  van in de HTML. Dat scheelt: de footer staat op twaalf losse pagina's **en**
-  in het artikelsjabloon, en dat sjabloon aanpassen zou betekenen dat alle
-  2910 artikelpagina's opnieuw gegenereerd moeten worden. Nagemeten dat de
-  link en het venster het ook op een artikelpagina doen.
-
-  **Bijgewerkt 2026-09-23 na Maartens doorloop.** Zeven wijzigingen: de
-  uitklapper "nog twee korte vragen" is eruit (die verstopte juist de vragen
-  die niemand invulde), er kwamen drie vragen bij (onderwerpen, snelheid,
-  aanbeveling — acht in totaal), elke schaal heeft nu een **geen idee**-knop
-  ernaast, het venster is breder op desktop (520 → 640px), er is nog maar één
-  schuifbalk, "prima" lijnt nu uit onder de 5 in plaats van tegen de rand, en
-  de knoppen staan gecentreerd.
-
-  Twee dingen daarvan zaten dieper dan ze leken. De dubbele schuifbalk kwam
-  doordat zowel het venster als het formulier een `max-height` had; het venster
-  is nu een flex-kolom en het formulier het enige dat schuift. En "geen idee"
-  is bewust **0** en niet `NULL` — dat is een antwoord, geen overslaan, en zo
-  blijft die twee uit elkaar te houden. **Daardoor is het SQL-bestand
-  gewijzigd**: drie kolommen erbij en de check van `1 and 5` naar `0 and 5`.
-  De tabel bestond nog niet, dus dat kon zonder migratie.
-
-  **Bijgewerkt 2026-09-24: het is geen venster meer maar een pagina.** Zie
-  punt 42 hieronder in het afgeronde blok. Het lijntje in de footer wijst nu
-  naar `/feedback.html`; de acht vragen, de droomvraag en het e-mailveld zijn
-  ongewijzigd meeverhuisd.
-
-  **Wat er nog moet gebeuren:**
-  1. ~~De tabel aanmaken.~~ ✅ **2026-09-24 — Maarten heeft de SQL gedraaid en
-     het formulier werkt.** Van buitenaf nagemeten: `PGRST205` is weg, en een
-     verzoek met de anon-sleutel krijgt `[]` terug terwijl er wél een rij in
-     staat. De insert-only policy doet dus wat hij moet doen — bezoekers
-     kunnen antwoorden achterlaten maar niet elkaars antwoorden lezen.
-     Meelezen gaat via **Table Editor → feedback** in het dashboard.
-  2. **Eén regel in het privacybeleid** dat we vrijwillige feedback bewaren,
-     inclusief een e-mailadres als iemand dat zelf invult. *(Maarten — het
-     laatste dat punt 35 nog openhoudt.)*
-
-  Er is bewust alleen een insert-policy: bezoekers kunnen niet elkaars
-  antwoorden lezen. Meelezen doe je in het Supabase-dashboard.
-
 - [ ] **41. Lagere prioriteit uit de UI-doorlichting — nog twee over.**
   *(2026-09-23; drie van de vijf afgewerkt op 2026-09-24.)* Deze kwamen uit
   dezelfde doorlichting maar wegen minder zwaar; ze staan hier zodat ze niet
@@ -385,6 +326,97 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   je niet wilt ontdekken wanneer de eerste betalende bezoeker het ontdekt.
 
 ## Afgerond
+
+- [x] **De 404, de homepage-ondertitel en de Engelse Climate-link
+  (2026-09-24).** Drie losse wensen van Maarten, in één ronde.
+
+  **De 404-pagina.** Hij stond bewust op zichzelf: eigen stijlblok, geen
+  externe CSS of JS, zodat hij ook zou werken als er iets mis was met de site
+  zelf. Daar stond tegenover dat een bezoeker die erop belandde alleen "terug
+  naar de voorpagina" kon, en dat er vijf vertalingen ónder elkaar stonden in
+  plaats van de taal van de bezoeker. Nu dezelfde navigatiebalk, footer en
+  vertaalopzet als elke andere pagina, en het getal 404 als decor van
+  120–240px in `--neutral-200`, met `aria-hidden` omdat de kop eronder het
+  werk al doet. **Die zelfstandigheid is dus ingeleverd** — valt
+  `css/global.css` weg, dan valt de 404 mee. Alle paden zijn absoluut
+  (`/assets/…`, `/index.html`): een 404 kan op elke diepte ontstaan,
+  bijvoorbeeld op `/articles/nl/verlopen-slug.html`. Nagemeten dat er geen
+  enkel relatief pad meer in staat.
+
+  **De ondertitel op de homepage** gaat van "…in vijf talen." naar "…veel
+  leesplezier!", in vijf talen. Maarten schreef "lees plezier"; dat is in het
+  Nederlands één woord, dus het staat er als "leesplezier".
+
+  **De Engelse Stripe Climate-link.** De link wées al naar
+  `stripe.com/climate` — **Stripe stuurt zelf door op basis van locatie**, en
+  vanuit Nederland kwam je dus op `stripe.com/nl/climate` in het Nederlands.
+  Nagemeten: `/climate` en `/us/climate` gaan allebei naar `/nl/climate`,
+  `/en/climate` bestaat niet (404). Alleen `/en-nl/climate` en `/gb/climate`
+  blijven staan. Gekozen voor **`https://stripe.com/en-nl/climate`**: dat is
+  de vorm die de táál vastzet, en de regio klopt met een Nederlands bedrijf.
+
+- [x] **35. Feedbackvraag in de footer — af (2026-09-24).**
+  *(Idee van Maarten, 2026-09-20. Gebouwd 2026-09-21.)*
+
+  **Wat er staat.** Onderaan elke pagina staat één stil lijntje, "Wat vind je
+  van BrightNews?", in hetzelfde grijs als de copyrightregel. Dat opent een
+  `<dialog>` met drie schalen van 1 t/m 5 (hoe positief en leuk, werkt alles,
+  hoe ziet het eruit), twee extra schalen achter "nog twee korte vragen"
+  (vind je je weg, lezen de teksten prettig), de open droomvraag met een ruim
+  veld, en een optioneel e-mailadres. Alles in vijf talen: 20 nieuwe sleutels,
+  278 → 298 per taal.
+
+  **Ontwerpkeuzes die openstonden, nu gemaakt:** drie vragen meteen zichtbaar
+  en twee achter een klik, want vijf schalen ineens is te veel gevraagd van
+  iemand die even iets invult. Anoniem, met een optioneel adres voor wie
+  doorgevraagd wil worden. Geen user agent en geen IP; alleen het toestel als
+  één woord (mobiel/tablet/desktop), genoeg voor "werkt het op mijn telefoon"
+  en te grof om iemand aan te herkennen.
+
+  Het lijntje én het venster worden door `index.js` in de DOM gezet in plaats
+  van in de HTML. Dat scheelt: de footer staat op twaalf losse pagina's **en**
+  in het artikelsjabloon, en dat sjabloon aanpassen zou betekenen dat alle
+  2910 artikelpagina's opnieuw gegenereerd moeten worden. Nagemeten dat de
+  link en het venster het ook op een artikelpagina doen.
+
+  **Bijgewerkt 2026-09-23 na Maartens doorloop.** Zeven wijzigingen: de
+  uitklapper "nog twee korte vragen" is eruit (die verstopte juist de vragen
+  die niemand invulde), er kwamen drie vragen bij (onderwerpen, snelheid,
+  aanbeveling — acht in totaal), elke schaal heeft nu een **geen idee**-knop
+  ernaast, het venster is breder op desktop (520 → 640px), er is nog maar één
+  schuifbalk, "prima" lijnt nu uit onder de 5 in plaats van tegen de rand, en
+  de knoppen staan gecentreerd.
+
+  Twee dingen daarvan zaten dieper dan ze leken. De dubbele schuifbalk kwam
+  doordat zowel het venster als het formulier een `max-height` had; het venster
+  is nu een flex-kolom en het formulier het enige dat schuift. En "geen idee"
+  is bewust **0** en niet `NULL` — dat is een antwoord, geen overslaan, en zo
+  blijft die twee uit elkaar te houden. **Daardoor is het SQL-bestand
+  gewijzigd**: drie kolommen erbij en de check van `1 and 5` naar `0 and 5`.
+  De tabel bestond nog niet, dus dat kon zonder migratie.
+
+  **Bijgewerkt 2026-09-24: het is geen venster meer maar een pagina.** Zie
+  punt 42 hieronder in het afgeronde blok. Het lijntje in de footer wijst nu
+  naar `/feedback.html`; de acht vragen, de droomvraag en het e-mailveld zijn
+  ongewijzigd meeverhuisd.
+
+  **Wat er nog moet gebeuren:**
+  1. ~~De tabel aanmaken.~~ ✅ **2026-09-24 — Maarten heeft de SQL gedraaid en
+     het formulier werkt.** Van buitenaf nagemeten: `PGRST205` is weg, en een
+     verzoek met de anon-sleutel krijgt `[]` terug terwijl er wél een rij in
+     staat. De insert-only policy doet dus wat hij moet doen — bezoekers
+     kunnen antwoorden achterlaten maar niet elkaars antwoorden lezen.
+     Meelezen gaat via **Table Editor → feedback** in het dashboard.
+  2. ~~Eén regel in het privacybeleid.~~ ✅ **2026-09-24 — voorzet geschreven
+     en geplaatst.** Staat als vierde bullet onder "Jouw Privacy", in vijf
+     talen. Hij benoemt wat er bewaard wordt (antwoorden, toelichting, en
+     alleen een zelf ingevuld e-mailadres), wat er dáárnaast bij komt (taal,
+     herkomstpagina, soort toestel), wat er níét bewaard wordt (IP, browser),
+     en waar het e-mailadres voor dient. **Maarten: dit is mijn tekst, niet
+     die van een jurist — lees hem na en pas aan wat niet klopt.**
+
+  Er is bewust alleen een insert-policy: bezoekers kunnen niet elkaars
+  antwoorden lezen. Meelezen doe je in het Supabase-dashboard.
 
 - [x] **42. Het feedbackvenster is een eigen pagina geworden (2026-09-24).**
   Het was een `<dialog>`, en dat botste met de huisregel in de uiux-design-skill:
