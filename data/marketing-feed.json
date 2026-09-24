@@ -1,10 +1,34 @@
 {
- "gegenereerd": "2026-09-23T16:43:49.596Z",
+ "gegenereerd": "2026-09-24T04:27:37.109Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "1790223941956u03y4fzjl",
+     "titel": "Zeeschildpad Cebu krijgt op maat gemaakt 3D-geprint harnas na aanvaring met boot",
+     "teaser": "In het Georgia Sea Turtle Center op Jekyll Island wordt de jonge groene zeeschildpad Cebu verzorgd na een aanvaring met een boot in april, die zware ruggenmergschade veroorzaakte. Cebu kon aanvankelijk niet zwemmen en werd behandeld met acupunctuur, koude lasertherapie, RediHeal, Silver Honey en stamceltherapie. Voor fysiotherapie in dieper water ontwikkelde het team een volledig op maat gemaakt 3D-geprint harnas,...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/zeeschildpad-cebu-krijgt-op-maat-gemaakt-3d-geprint-harnas-na-aanvaring-met-boot-1790223941956u03y4fzjl.html"
+    },
+    {
+     "id": "1790223892322w8i1jus4z",
+     "titel": "Vissers redden babyolifant uit overstroomde Teestarivier",
+     "teaser": "Op 21 september zagen twee vissers een slurf boven het water van de gezwollen Teestarivier in West-Bengalen, India. Het bleek een olifantenkalf te zijn dat bijna vijf kilometer stroomafwaarts was meegesleurd nadat het had geprobeerd de rivier over te steken. Volgens boswachter Mudit Kumar Verma redde het bosteam, met hulp van de lokale vissers, het verdrinkende kalf en herenigde het...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/vissers-redden-babyolifant-uit-overstroomde-teestarivier-1790223892322w8i1jus4z.html"
+    },
+    {
+     "id": "1790223864974z0cbwne0n",
+     "titel": "Weesolifant Kipekee gered na dagen alleen in Kenia",
+     "teaser": "Op 17 juni 2025 werd een vierweken oude olifantenkalf gevonden tussen het vee van een boer nabij het Maasai Mara National Reserve in Kenia. Ze was uitgeput en ondervoed en bleek al drie dagen alleen rond te zwerven. Rangers van Pangolin Project en Mara Elephant Project troffen haar aan vlak voordat ze instortte. De Kenya Wildlife Service gaf haar een...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/weesolifant-kipekee-gered-na-dagen-alleen-in-kenia-1790223864974z0cbwne0n.html"
+    },
     {
      "id": "1790181746401cpeswwn2n",
      "titel": "Reefvive bouwt koraalrif uit oesterschelpen",
@@ -20,33 +44,23 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/araticum-initiative-herstelt-4-4-miljoen-acres-cerrado-savanne-in-brazilie-1790181718269lism4m7qm.html"
-    },
-    {
-     "id": "1790181687376puszm9r3e",
-     "titel": "Chemisch bad haalt tot 95% capaciteit terug in oude EV-batterijen",
-     "teaser": "Wetenschappers van Cornell University hebben een methode ontwikkeld genaamd Direct Electrode-to-Electrode Regeneration (DEER), waarbij elektrodes uit verouderde lithium-ionbatterijen worden gehaald en in een bad met 1,3-dimethyl-2-imidazolidinon (DMI) gedompeld. Dit verwijdert de solid electrolyte interphase (SEI), een laag die zich na honderden laadcycli opbouwt en de stroom van elektronen belemmert. Zo herwinnen batterijen tot 95% van hun oorspronkelijke laadvermogen, en blijft...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/nl/chemisch-bad-haalt-tot-95-capaciteit-terug-in-oude-ev-batterijen-1790181687376puszm9r3e.html"
-    },
-    {
-     "id": "1790137706448cjjzj9eh0",
-     "titel": "Nabarlek-wallaby na 50 jaar weer gespot in Australië",
-     "teaser": "Onderzoekers van de Australian Wildlife Conservancy hebben voor het eerst in 50 jaar de nabarlek bevestigd op het Australische vasteland. Trail cameras en analyse van uitwerpselen toonden de aanwezigheid van deze kleine rotswallaby aan op twee nieuwe locaties in de Kimberley-regio in West-Australië: op Yampi Sound Training Area en zo'n 170 kilometer verderop in het noordoosten van Dambeemangaddee Country. De...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/nabarlek-wallaby-na-50-jaar-weer-gespot-in-australie-1790137706448cjjzj9eh0.html"
-    },
-    {
-     "id": "1790137681223mewceid9h",
-     "titel": "Weesolifantje Kaikai krijgt drie rangers als 'ouders'",
-     "teaser": "Op 26 mei 2025 vond de Mara North Conservancy een pasgeboren olifantje bij haar overleden moeder. Geen enkele andere vrouwtjesolifant kon haar zogen, en met de nacht en roofdieren op komst greep de Kenya Wildlife Service in. Samen met het Mara Elephant Project werd de kalf per Land Cruiser naar een dierenarts gebracht en de volgende ochtend door de Sheldrick...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/weesolifantje-kaikai-krijgt-drie-rangers-als-ouders-1790137681223mewceid9h.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260923-lifestyle",
+     "titel": "Nieuwe thuizen, nieuwe wegen en een verrassende vondst",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-23",
+     "url": "https://brightnews.online/articles/nl/nieuwe-thuizen-nieuwe-wegen-en-een-verrassende-vondst-dg-20260923-lifestyle.html"
+    },
+    {
+     "id": "dg-20260923-environment",
+     "titel": "Van geprint harnas tot hersteld savannegebied: goed nieuws voor dieren en natuur",
+     "categorie": "Environment",
+     "dag": "2026-09-23",
+     "url": "https://brightnews.online/articles/nl/van-geprint-harnas-tot-hersteld-savannegebied-goed-nieuws-voor-dieren-en-natuur-dg-20260923-environment.html"
+    },
     {
      "id": "dg-20260922-health",
      "titel": "Slaap, urine en hartslag: drie stappen vooruit in de zorg",
@@ -67,25 +81,35 @@
      "categorie": "Environment",
      "dag": "2026-09-21",
      "url": "https://brightnews.online/articles/nl/van-zinkgat-tot-paddenstoelenstal-herstel-in-de-natuur-deze-week-dg-20260921-environment.html"
-    },
-    {
-     "id": "dg-20260920-science",
-     "titel": "Nieuwe kat, oude kunst en geredde schatten: wetenschap kijkt terug en vooruit",
-     "categorie": "Science",
-     "dag": "2026-09-20",
-     "url": "https://brightnews.online/articles/nl/nieuwe-kat-oude-kunst-en-geredde-schatten-wetenschap-kijkt-terug-en-vooruit-dg-20260920-science.html"
-    },
-    {
-     "id": "dg-20260920-lifestyle",
-     "titel": "Buitenleven met een goede afloop: redding, een compleet fietspad en trouwe pleeggezinnen",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-20",
-     "url": "https://brightnews.online/articles/nl/buitenleven-met-een-goede-afloop-redding-een-compleet-fietspad-en-trouwe-pleegge-dg-20260920-lifestyle.html"
     }
    ]
   },
   "en": {
    "top": [
+    {
+     "id": "1790223941956u03y4fzjl",
+     "titel": "Sea turtle Cebu receives custom 3D-printed harness after boat collision",
+     "teaser": "At the Georgia Sea Turtle Center on Jekyll Island, young green sea turtle Cebu is being cared for following a boat collision in April that caused severe spinal cord damage. Cebu was initially unable to swim and underwent treatment with acupuncture, cold laser therapy, RediHeal, Silver Honey and stem cell therapy. To enable physiotherapy in deeper water, the team developed...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/sea-turtle-cebu-receives-custom-3d-printed-harness-after-boat-collision-1790223941956u03y4fzjl.html"
+    },
+    {
+     "id": "1790223892322w8i1jus4z",
+     "titel": "Fishermen rescue baby elephant from flooded Teesta River",
+     "teaser": "On September 21, two fishermen spotted a trunk above the water of the swollen Teesta River in West Bengal, India. It turned out to be an elephant calf that had been swept nearly five kilometers downstream after attempting to cross the river. According to forest officer Mudit Kumar Verma, the forest team, with help from local fishermen, rescued the drowning...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/fishermen-rescue-baby-elephant-from-flooded-teesta-river-1790223892322w8i1jus4z.html"
+    },
+    {
+     "id": "1790223864974z0cbwne0n",
+     "titel": "Orphaned elephant Kipekee rescued after days alone in Kenya",
+     "teaser": "On June 17, 2025, a four-week-old elephant calf was found among a farmer's livestock near the Maasai Mara National Reserve in Kenya. She was exhausted and malnourished after wandering alone for three days. Rangers from Pangolin Project and Mara Elephant Project discovered her just before she collapsed. Kenya Wildlife Service administered an IV drip, while her mother — wounded by...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/orphaned-elephant-kipekee-rescued-after-days-alone-in-kenya-1790223864974z0cbwne0n.html"
+    },
     {
      "id": "1790181746401cpeswwn2n",
      "titel": "Reefvive builds coral reef from oyster shells",
@@ -101,33 +125,23 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/en/araticum-initiative-restores-4-4-million-acres-of-cerrado-savanna-in-brazil-1790181718269lism4m7qm.html"
-    },
-    {
-     "id": "1790181687376puszm9r3e",
-     "titel": "Chemical bath restores up to 95% capacity in old EV batteries",
-     "teaser": "Scientists at Cornell University have developed a method called Direct Electrode-to-Electrode Regeneration (DEER), in which electrodes from outdated lithium-ion batteries are extracted and immersed in a bath containing 1,3-dimethyl-2-imidazolidinone (DMI). This removes the solid electrolyte interphase (SEI), a layer that builds up after hundreds of charge cycles and impedes electron flow. In this way, batteries recover up to 95% of...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/en/chemical-bath-restores-up-to-95-capacity-in-old-ev-batteries-1790181687376puszm9r3e.html"
-    },
-    {
-     "id": "1790137706448cjjzj9eh0",
-     "titel": "Nabarlek wallaby spotted again in Australia after 50 years",
-     "teaser": "Researchers from the Australian Wildlife Conservancy have confirmed the nabarlek on mainland Australia for the first time in 50 years. Trail cameras and faecal analysis revealed the presence of this small rock wallaby at two new locations in the Kimberley region of Western Australia: at Yampi Sound Training Area and approximately 170 kilometres away in the northeast of Dambeemangaddee Country....",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/nabarlek-wallaby-spotted-again-in-australia-after-50-years-1790137706448cjjzj9eh0.html"
-    },
-    {
-     "id": "1790137681223mewceid9h",
-     "titel": "Orphaned elephant calf Kaikai gets three rangers as 'parents'",
-     "teaser": "On May 26, 2025, Mara North Conservancy found a newborn elephant calf next to her deceased mother. No other female elephant could nurse her, and with nightfall and predators approaching, Kenya Wildlife Service intervened. Together with the Mara Elephant Project, the calf was transported by Land Cruiser to a veterinarian and flown the next morning by Sheldrick Wildlife Trust to...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/orphaned-elephant-calf-kaikai-gets-three-rangers-as-parents-1790137681223mewceid9h.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260923-lifestyle",
+     "titel": "New homes, new roads and a surprising discovery",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-23",
+     "url": "https://brightnews.online/articles/en/new-homes-new-roads-and-a-surprising-discovery-dg-20260923-lifestyle.html"
+    },
+    {
+     "id": "dg-20260923-environment",
+     "titel": "From printed harness to restored savanna: good news for animals and nature",
+     "categorie": "Environment",
+     "dag": "2026-09-23",
+     "url": "https://brightnews.online/articles/en/from-printed-harness-to-restored-savanna-good-news-for-animals-and-nature-dg-20260923-environment.html"
+    },
     {
      "id": "dg-20260922-health",
      "titel": "Sleep, urine and heart rate: three steps forward in healthcare",
@@ -148,25 +162,35 @@
      "categorie": "Environment",
      "dag": "2026-09-21",
      "url": "https://brightnews.online/articles/en/from-sinkhole-to-mushroom-barn-nature-s-recovery-this-week-dg-20260921-environment.html"
-    },
-    {
-     "id": "dg-20260920-science",
-     "titel": "New cat, ancient art and rescued treasures: science looks back and ahead",
-     "categorie": "Science",
-     "dag": "2026-09-20",
-     "url": "https://brightnews.online/articles/en/new-cat-ancient-art-and-rescued-treasures-science-looks-back-and-ahead-dg-20260920-science.html"
-    },
-    {
-     "id": "dg-20260920-lifestyle",
-     "titel": "Outdoor life with a happy ending: rescue, a complete bike trail, and devoted foster families",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-20",
-     "url": "https://brightnews.online/articles/en/outdoor-life-with-a-happy-ending-rescue-a-complete-bike-trail-and-devoted-foster-dg-20260920-lifestyle.html"
     }
    ]
   },
   "de": {
    "top": [
+    {
+     "id": "1790223941956u03y4fzjl",
+     "titel": "Meeresschildkröte Cebu erhält nach Bootsunfall maßgeschneidertes 3D-gedrucktes Geschirr",
+     "teaser": "Im Georgia Sea Turtle Center auf Jekyll Island wird die junge grüne Meeresschildkröte Cebu nach einer Bootskollision im April versorgt, die schwere Rückenmarksverletzungen verursachte. Cebu konnte anfangs nicht schwimmen und wurde mit Akupunktur, Kaltlasertherapie, RediHeal, Silver Honey und Stammzelltherapie behandelt. Für die Physiotherapie in tieferem Wasser entwickelte das Team ein vollständig maßgeschneidertes 3D-gedrucktes Geschirr, damit Cebu sich eigenständig bewegen und...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/meeresschildkrote-cebu-erhalt-nach-bootsunfall-ma-geschneidertes-3d-gedrucktes-g-1790223941956u03y4fzjl.html"
+    },
+    {
+     "id": "1790223892322w8i1jus4z",
+     "titel": "Fischer retten Babyelefanten aus überfluteter Teestarivier",
+     "teaser": "Am 21. September entdeckten zwei Fischer einen Rüssel über dem Wasser des angeschwollenen Teestarivier in Westbengalen, Indien. Es handelte sich um ein Elefantenkälbchen, das fast fünf Kilometer flussabwärts mitgerissen worden war, nachdem es versucht hatte, den Fluss zu durchqueren. Nach Angaben des Försters Mudit Kumar Verma rettete das Forstteam mit Hilfe der örtlichen Fischer das ertrinkende Kalb und vereinigte es...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/fischer-retten-babyelefanten-aus-uberfluteter-teestarivier-1790223892322w8i1jus4z.html"
+    },
+    {
+     "id": "1790223864974z0cbwne0n",
+     "titel": "Waisenkälbchen Kipekee nach Tagen allein in Kenia gerettet",
+     "teaser": "Am 17. Juni 2025 wurde ein vier Wochen altes Elefantenkälbchen zwischen dem Vieh eines Bauern in der Nähe des Maasai Mara National Reserve in Kenia gefunden. Es war erschöpft und unterernährt und war bereits drei Tage lang allein umhergestreift. Ranger des Pangolin Project und des Mara Elephant Project trafen es kurz bevor es zusammenbrach an. Der Kenya Wildlife Service versorgte...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/waisenkalbchen-kipekee-nach-tagen-allein-in-kenia-gerettet-1790223864974z0cbwne0n.html"
+    },
     {
      "id": "1790181746401cpeswwn2n",
      "titel": "Reefvive baut Korallenriff aus Austernschalen",
@@ -182,33 +206,23 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/de/araticum-initiative-stellt-4-4-millionen-acres-cerrado-savanne-in-brasilien-wied-1790181718269lism4m7qm.html"
-    },
-    {
-     "id": "1790181687376puszm9r3e",
-     "titel": "Chemisches Bad stellt bis zu 95% der Kapazität alter EV-Batterien wieder her",
-     "teaser": "Wissenschaftler der Cornell University haben eine Methode namens Direct Electrode-to-Electrode Regeneration (DEER) entwickelt, bei der Elektroden aus veralteten Lithium-Ionen-Batterien entnommen und in ein Bad mit 1,3-Dimethyl-2-imidazolidinon (DMI) getaucht werden. Dies entfernt die Solid Electrolyte Interphase (SEI), eine Schicht, die sich nach Hunderten von Ladezyklen aufbaut und den Elektronenfluss behindert. Auf diese Weise gewinnen Batterien bis zu 95% ihrer ursprünglichen Ladekapazität...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/de/chemisches-bad-stellt-bis-zu-95-der-kapazitat-alter-ev-batterien-wieder-her-1790181687376puszm9r3e.html"
-    },
-    {
-     "id": "1790137706448cjjzj9eh0",
-     "titel": "Nabarlek-Wallaby nach 50 Jahren in Australien wiederentdeckt",
-     "teaser": "Forscher der Australian Wildlife Conservancy haben das Nabarlek-Wallaby erstmals seit 50 Jahren auf dem australischen Festland nachgewiesen. Wildkameras und Kotanalysen zeigten die Anwesenheit dieses kleinen Felswallabys an zwei neuen Orten in der Kimberley-Region in Westaustralien: im Yampi Sound Training Area und etwa 170 Kilometer weiter nordöstlich im Dambeemangaddee Country. Das Nabarlek, Australiens zweitkleinste Wallaby-Art, wog etwa 1,2 Kilogramm und galt...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/nabarlek-wallaby-nach-50-jahren-in-australien-wiederentdeckt-1790137706448cjjzj9eh0.html"
-    },
-    {
-     "id": "1790137681223mewceid9h",
-     "titel": "Waisenkälbchen Kaikai bekommt drei Ranger als „Eltern\"",
-     "teaser": "Am 26. Mai 2025 fand die Mara North Conservancy ein neugeborenes Elefantenkälbchen neben seiner toten Mutter. Keine andere weibliche Elefant konnte es säugen, und mit der Nacht und Raubtieren im Anmarsch griff der Kenya Wildlife Service ein. Zusammen mit dem Mara Elephant Project wurde das Kalb per Land Cruiser zu einem Tierarzt gebracht und am nächsten Morgen von der Sheldrick...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/waisenkalbchen-kaikai-bekommt-drei-ranger-als-eltern-1790137681223mewceid9h.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260923-lifestyle",
+     "titel": "Neue Häuser, neue Wege und eine überraschende Entdeckung",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-23",
+     "url": "https://brightnews.online/articles/de/neue-hauser-neue-wege-und-eine-uberraschende-entdeckung-dg-20260923-lifestyle.html"
+    },
+    {
+     "id": "dg-20260923-environment",
+     "titel": "Von gedrucktem Harnisch bis zur wiederhergestellten Savanne: gute Nachrichten für Tiere und Natur",
+     "categorie": "Environment",
+     "dag": "2026-09-23",
+     "url": "https://brightnews.online/articles/de/von-gedrucktem-harnisch-bis-zur-wiederhergestellten-savanne-gute-nachrichten-fur-dg-20260923-environment.html"
+    },
     {
      "id": "dg-20260922-health",
      "titel": "Schlaf, Urin und Herzschlag: drei Schritte vorwärts in der Gesundheitsversorgung",
@@ -229,25 +243,35 @@
      "categorie": "Environment",
      "dag": "2026-09-21",
      "url": "https://brightnews.online/articles/de/vom-sinkloch-zur-pilzzucht-naturrettung-diese-woche-dg-20260921-environment.html"
-    },
-    {
-     "id": "dg-20260920-science",
-     "titel": "Neue Katze, alte Kunst und gerettete Schätze: Die Wissenschaft blickt zurück und voraus",
-     "categorie": "Science",
-     "dag": "2026-09-20",
-     "url": "https://brightnews.online/articles/de/neue-katze-alte-kunst-und-gerettete-schatze-die-wissenschaft-blickt-zuruck-und-v-dg-20260920-science.html"
-    },
-    {
-     "id": "dg-20260920-lifestyle",
-     "titel": "Outdoor-Leben mit gutem Ausgang: Rettung, ein kompletter Fahrradweg und treue Pflegefamilien",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-20",
-     "url": "https://brightnews.online/articles/de/outdoor-leben-mit-gutem-ausgang-rettung-ein-kompletter-fahrradweg-und-treue-pfle-dg-20260920-lifestyle.html"
     }
    ]
   },
   "fr": {
    "top": [
+    {
+     "id": "1790223941956u03y4fzjl",
+     "titel": "La tortue marine Cebu reçoit une armature 3D imprimée sur mesure après une collision avec un bateau",
+     "teaser": "Au Georgia Sea Turtle Center sur Jekyll Island, la jeune tortue verte Cebu est soignée suite à une collision avec un bateau en avril, qui a causé de graves lésions de la moelle épinière. Cebu ne pouvait initialement pas nager et a été traitée par acupuncture, thérapie au laser froid, RediHeal, Silver Honey et thérapie par cellules souches. Pour la...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/la-tortue-marine-cebu-recoit-une-armature-3d-imprimee-sur-mesure-apres-une-colli-1790223941956u03y4fzjl.html"
+    },
+    {
+     "id": "1790223892322w8i1jus4z",
+     "titel": "Des pêcheurs sauvent un éléphanteau de la rivière Teesta inondée",
+     "teaser": "Le 21 septembre, deux pêcheurs ont aperçu une trompe au-dessus de l'eau de la rivière Teesta gonflée en Inde, dans le Bengale-Occidental. Il s'agissait d'un éléphanteau qui avait été entraîné sur près de cinq kilomètres en aval après avoir tenté de traverser la rivière. Selon le garde forestier Mudit Kumar Verma, l'équipe forestière, avec l'aide des pêcheurs locaux, a secouru...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/des-pecheurs-sauvent-un-elephanteau-de-la-riviere-teesta-inondee-1790223892322w8i1jus4z.html"
+    },
+    {
+     "id": "1790223864974z0cbwne0n",
+     "titel": "Éléphanteau orphelin Kipekee sauvé après des jours seul au Kenya",
+     "teaser": "Le 17 juin 2025, un éléphanteau âgé de quatre semaines a été découvert parmi le bétail d'un fermier près de la Maasai Mara National Reserve au Kenya. Il était épuisé et malnutri après avoir erré seul pendant trois jours. Les rangers du Pangolin Project et du Mara Elephant Project l'ont trouvé juste avant qu'il ne s'effondre. Le Kenya Wildlife Service...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/elephanteau-orphelin-kipekee-sauve-apres-des-jours-seul-au-kenya-1790223864974z0cbwne0n.html"
+    },
     {
      "id": "1790181746401cpeswwn2n",
      "titel": "Reefvive construit un récif corallien à partir de coquilles d'huître",
@@ -263,33 +287,23 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/fr/araticum-initiative-restaure-4-4-millions-d-acres-de-savane-cerrado-au-bresil-1790181718269lism4m7qm.html"
-    },
-    {
-     "id": "1790181687376puszm9r3e",
-     "titel": "Un bain chimique récupère jusqu'à 95% de capacité dans les anciennes batteries de VE",
-     "teaser": "Des chercheurs de Cornell University ont développé une méthode appelée Direct Electrode-to-Electrode Regeneration (DEER), dans laquelle les électrodes des batteries lithium-ion obsolètes sont extraites et immergées dans un bain contenant du 1,3-diméthyl-2-imidazolidinone (DMI). Cela élimine la solid electrolyte interphase (SEI), une couche qui s'accumule après des centaines de cycles de charge et entrave le flux d'électrons. Ainsi, les batteries récupèrent...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/fr/un-bain-chimique-recupere-jusqu-a-95-de-capacite-dans-les-anciennes-batteries-de-1790181687376puszm9r3e.html"
-    },
-    {
-     "id": "1790137706448cjjzj9eh0",
-     "titel": "Le nabarlek-wallaby repéré en Australie après 50 ans",
-     "teaser": "Des chercheurs de l'Australian Wildlife Conservancy ont confirmé pour la première fois en 50 ans la présence du nabarlek sur le continent australien. Des pièges photographiques et l'analyse des excréments ont révélé la présence de ce petit wallaby des rochers à deux nouveaux endroits dans la région de Kimberley en Australie-Occidentale : à Yampi Sound Training Area et à environ...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/le-nabarlek-wallaby-repere-en-australie-apres-50-ans-1790137706448cjjzj9eh0.html"
-    },
-    {
-     "id": "1790137681223mewceid9h",
-     "titel": "L'éléphanteau orphelin Kaikai reçoit trois rangers comme « parents »",
-     "teaser": "Le 26 mai 2025, la Mara North Conservancy a découvert un éléphanteau nouveau-né auprès de sa mère décédée. Aucune autre femelle éléphant ne pouvait l'allaiter, et avec la nuit et les prédateurs qui approchaient, le Kenya Wildlife Service est intervenu. En collaboration avec le Mara Elephant Project, le veau a été transporté en Land Cruiser chez un vétérinaire, puis le...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/l-elephanteau-orphelin-kaikai-recoit-trois-rangers-comme-parents-1790137681223mewceid9h.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260923-lifestyle",
+     "titel": "De nouveaux foyers, de nouvelles routes et une découverte surprenante",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-23",
+     "url": "https://brightnews.online/articles/fr/de-nouveaux-foyers-de-nouvelles-routes-et-une-decouverte-surprenante-dg-20260923-lifestyle.html"
+    },
+    {
+     "id": "dg-20260923-environment",
+     "titel": "D'une armure imprimée en 3D à la restauration de la savane : bonnes nouvelles pour les animaux et la nature",
+     "categorie": "Environment",
+     "dag": "2026-09-23",
+     "url": "https://brightnews.online/articles/fr/d-une-armure-imprimee-en-3d-a-la-restauration-de-la-savane-bonnes-nouvelles-pour-dg-20260923-environment.html"
+    },
     {
      "id": "dg-20260922-health",
      "titel": "Sommeil, urine et rythme cardiaque : trois avancées dans les soins de santé",
@@ -310,25 +324,35 @@
      "categorie": "Environment",
      "dag": "2026-09-21",
      "url": "https://brightnews.online/articles/fr/du-gouffre-de-zinc-a-l-etable-a-champignons-la-nature-se-retablit-cette-semaine-dg-20260921-environment.html"
-    },
-    {
-     "id": "dg-20260920-science",
-     "titel": "Un nouveau chat, un art ancien et des trésors sauvés : la science regarde vers le passé et l'avenir",
-     "categorie": "Science",
-     "dag": "2026-09-20",
-     "url": "https://brightnews.online/articles/fr/un-nouveau-chat-un-art-ancien-et-des-tresors-sauves-la-science-regarde-vers-le-p-dg-20260920-science.html"
-    },
-    {
-     "id": "dg-20260920-lifestyle",
-     "titel": "La vie en plein air avec une belle fin : un sauvetage, une piste cyclable complète et des familles d'accueil dévouées",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-20",
-     "url": "https://brightnews.online/articles/fr/la-vie-en-plein-air-avec-une-belle-fin-un-sauvetage-une-piste-cyclable-complete--dg-20260920-lifestyle.html"
     }
    ]
   },
   "es": {
    "top": [
+    {
+     "id": "1790223941956u03y4fzjl",
+     "titel": "La tortuga marina Cebu recibe un arnés personalizado impreso en 3D tras colisión con barco",
+     "teaser": "En el Georgia Sea Turtle Center en Jekyll Island se atiende a Cebu, una joven tortuga verde, después de una colisión con un barco en abril que le causó graves daños en la médula espinal. Cebu no podía nadar inicialmente y fue tratada con acupuntura, fototerapia fría, RediHeal, Silver Honey y terapia con células madre. Para la fisioterapia en aguas...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/la-tortuga-marina-cebu-recibe-un-arnes-personalizado-impreso-en-3d-tras-colision-1790223941956u03y4fzjl.html"
+    },
+    {
+     "id": "1790223892322w8i1jus4z",
+     "titel": "Pescadores rescatan a una cría de elefante del río Teesta desbordado",
+     "teaser": "El 21 de septiembre, dos pescadores vieron una trompa sobre el agua del río Teesta, hinchado por las lluvias, en Bengala Occidental, India. Se trataba de una cría de elefante que había sido arrastrada casi cinco kilómetros río abajo después de intentar cruzar el curso de agua. Según el guardabosque Mudit Kumar Verma, el equipo forestal, con ayuda de los...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/pescadores-rescatan-a-una-cria-de-elefante-del-rio-teesta-desbordado-1790223892322w8i1jus4z.html"
+    },
+    {
+     "id": "1790223864974z0cbwne0n",
+     "titel": "Elefantita huérfana Kipekee rescatada tras días sola en Kenia",
+     "teaser": "El 17 de junio de 2025 se encontró una cría de elefante de cuatro semanas entre el ganado de un granjero cerca de la Reserva Nacional de Maasai Mara en Kenia. Estaba agotada y desnutrida, y había estado vagando sola durante tres días. Los guardabosques del Pangolin Project y del Mara Elephant Project la encontraron justo antes de que se...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/elefantita-huerfana-kipekee-rescatada-tras-dias-sola-en-kenia-1790223864974z0cbwne0n.html"
+    },
     {
      "id": "1790181746401cpeswwn2n",
      "titel": "Reefvive construye arrecife de coral con cáscaras de ostra",
@@ -344,33 +368,23 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/es/araticum-initiative-restaura-4-4-millones-de-acres-de-sabana-cerrado-en-brasil-1790181718269lism4m7qm.html"
-    },
-    {
-     "id": "1790181687376puszm9r3e",
-     "titel": "Un baño químico recupera hasta el 95% de capacidad en baterías EV antiguas",
-     "teaser": "Científicos de Cornell University han desarrollado un método llamado Direct Electrode-to-Electrode Regeneration (DEER), en el que se extraen electrodos de baterías de iones de litio obsoletas y se sumergen en un baño con 1,3-dimetil-2-imidazolidinona (DMI). Esto elimina la interfase de electrolito sólido (SEI), una capa que se acumula tras cientos de ciclos de carga e impide el flujo de electrones....",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/es/un-bano-quimico-recupera-hasta-el-95-de-capacidad-en-baterias-ev-antiguas-1790181687376puszm9r3e.html"
-    },
-    {
-     "id": "1790137706448cjjzj9eh0",
-     "titel": "El nabarlek-wallaby vuelto a avistar en Australia tras 50 años",
-     "teaser": "Investigadores de la Australian Wildlife Conservancy han confirmado por primera vez en 50 años la presencia del nabarlek en el continente australiano. Las cámaras trampa y el análisis de excrementos revelaron la presencia de este pequeño canguro de roca en dos nuevas ubicaciones en la región de Kimberley en Australia Occidental: en el Yampi Sound Training Area y aproximadamente 170...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/el-nabarlek-wallaby-vuelto-a-avistar-en-australia-tras-50-anos-1790137706448cjjzj9eh0.html"
-    },
-    {
-     "id": "1790137681223mewceid9h",
-     "titel": "La pequeña elefanta huérfana Kaikai recibe tres guardabosques como «padres»",
-     "teaser": "El 26 de mayo de 2025, la Mara North Conservancy encontró a una elefanta recién nacida junto a su madre fallecida. Ninguna otra hembra de elefante podía amamantarla, y con la noche y los depredadores acechando, el Kenya Wildlife Service intervino. Junto con el Mara Elephant Project, la cría fue trasladada en Land Cruiser a un veterinario y a la...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/la-pequena-elefanta-huerfana-kaikai-recibe-tres-guardabosques-como-padres-1790137681223mewceid9h.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260923-lifestyle",
+     "titel": "Nuevos hogares, nuevos caminos y un hallazgo sorprendente",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-23",
+     "url": "https://brightnews.online/articles/es/nuevos-hogares-nuevos-caminos-y-un-hallazgo-sorprendente-dg-20260923-lifestyle.html"
+    },
+    {
+     "id": "dg-20260923-environment",
+     "titel": "De un arnés impreso en 3D a un área de sabana restaurada: buenas noticias para los animales y la naturaleza",
+     "categorie": "Environment",
+     "dag": "2026-09-23",
+     "url": "https://brightnews.online/articles/es/de-un-arnes-impreso-en-3d-a-un-area-de-sabana-restaurada-buenas-noticias-para-lo-dg-20260923-environment.html"
+    },
     {
      "id": "dg-20260922-health",
      "titel": "Sueño, orina y ritmo cardíaco: tres pasos adelante en la sanidad",
@@ -391,20 +405,6 @@
      "categorie": "Environment",
      "dag": "2026-09-21",
      "url": "https://brightnews.online/articles/es/del-sumidero-a-la-granja-de-hongos-la-recuperacion-de-la-naturaleza-esta-semana-dg-20260921-environment.html"
-    },
-    {
-     "id": "dg-20260920-science",
-     "titel": "Un gato nuevo, arte antiguo y tesoros rescatados: la ciencia mira hacia atrás y hacia adelante",
-     "categorie": "Science",
-     "dag": "2026-09-20",
-     "url": "https://brightnews.online/articles/es/un-gato-nuevo-arte-antiguo-y-tesoros-rescatados-la-ciencia-mira-hacia-atras-y-ha-dg-20260920-science.html"
-    },
-    {
-     "id": "dg-20260920-lifestyle",
-     "titel": "Vida al aire libre con final feliz: un rescate, una ciclovía completa y familias de acogida leales",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-20",
-     "url": "https://brightnews.online/articles/es/vida-al-aire-libre-con-final-feliz-un-rescate-una-ciclovia-completa-y-familias-d-dg-20260920-lifestyle.html"
     }
    ]
   }

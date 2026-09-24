@@ -1,5 +1,77 @@
 [
  {
+  "datum": "2026-09-24T04:23:27.012Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "Bikes Outnumbered Cars on Scottish Rush Hour Route for the First Time Ever",
+  "uitsluiting": "geen",
+  "gevoel": 2,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 8,
+  "besluit": "ja",
+  "reden": "Positief verhaal over duurzame mobiliteit met maatschappelijke impact, goed geformuleerd en relevant voor stedelijke planning."
+ },
+ {
+  "datum": "2026-09-24T04:23:27.012Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "At 4 weeks old, this baby elephant was found hiding amongst a farmer's cattle. The discovery turned into a lifesaving mission",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Hartverwarmend reddingsverhaal van een jong olifantje met focus op deskundige hulp en conservatie, volledig positief geformuleerd."
+ },
+ {
+  "datum": "2026-09-24T04:23:27.012Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "Fishermen stop to save baby elephant from rising floodwaters after it was swept 3 miles from its mother",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Inspirerend verhaal van samenwerking tussen vissers en boswachters die een pasgeboren olifant redden en herenigen met moeder."
+ },
+ {
+  "datum": "2026-09-24T04:23:27.012Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "Gen-Zer quits corporate job and moves to Yellowstone, where she pays $96 a month in rent",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 2,
+  "totaal": 8,
+  "besluit": "ja",
+  "reden": "Persoonlijk transformatieverhaal van iemand die carrière inruilt voor creativiteit en levenskwaliteit, herkenbaar en hoopvol."
+ },
+ {
+  "datum": "2026-09-24T04:23:27.012Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "Scientists are crowd-sourcing photos of wildlife eating lunch. It helps them protect endangered species",
+  "uitsluiting": "geen",
+  "gevoel": 2,
+  "formulering": 2,
+  "relevantie": 3,
+  "totaal": 7,
+  "besluit": "nee",
+  "reden": "Maatschappelijk relevant verhaal over innovatieve wetenschappelijke aanpak voor bescherming van bedreigde soorten via burgerwetenschappen."
+ },
+ {
+  "datum": "2026-09-24T04:23:27.012Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "Rescuers made a sea turtle a custom 3D-printed harness after it was struck by a boat and could no longer swim",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Hartverwarmend reddingsverhaal met innovatieve medische zorg (3D-printing, acupunctuur) voor gewonde zeeschildpad, volledig positief."
+ },
+ {
   "datum": "2026-09-23T16:40:23.959Z",
   "bron": "GoodNewsNetwork.org",
   "titel": "Long-Lost Gertrude Abercrombie Painting Bought by a Bargain Hunter for $30 Could Fetch $250,000",
@@ -3482,71 +3554,5 @@
   "totaal": 7,
   "besluit": "nee",
   "reden": "Wetenschappelijke ontdekking met ecologische relevantie; positief geformuleerd en maatschappelijk interessant."
- },
- {
-  "datum": "2026-09-16T04:29:31.220Z",
-  "bron": "Theecologist.org",
-  "titel": "The wild force of life",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Boekrecensie/literair essay zonder maatschappelijke relevantie of persoonlijke herkenning."
- },
- {
-  "datum": "2026-09-16T04:29:34.508Z",
-  "bron": "BBC.com/culture",
-  "titel": "The unsolved mystery of the Fall River axe murders",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "De kern gaat over een onopgelost moordmysterie; de tekst is bovendien onleesbare navigatieboomstructuur zonder inhoud."
- },
- {
-  "datum": "2026-09-16T04:29:34.508Z",
-  "bron": "Ww2.kqed.org/mindshift",
-  "titel": "When Words Aren’t Enough, Creative Tools Can Help Grieving Students of All Ages",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 4,
-  "totaal": 10,
-  "besluit": "ja",
-  "reden": "Hartverwarmend verhaal over creatieve rouwbegeleiding voor kinderen; volledig positief geformuleerd en maatschappelijk relevant voor onderwijs en gezondheid met sterke persoonlijke herkenning."
- },
- {
-  "datum": "2026-09-15T04:33:32.965Z",
-  "bron": "Positive.News",
-  "titel": "How ‘housing first’ is helping people leave rough sleeping behind",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 4,
-  "totaal": 10,
-  "besluit": "ja",
-  "reden": "Hartverwarmend verhaal over daadwerkelijke oplossing voor dakloosheid met bewezen resultaten; maatschappelijk relevant en persoonlijk door Michael's verhaal."
- },
- {
-  "datum": "2026-09-15T04:33:32.965Z",
-  "bron": "GoodNewsNetwork.org",
-  "titel": "Athens Is Turning its Old Airport into One of Europe’s Largest Parks",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "Hoopvol stadsproject dat leefkwaliteit verbetert; positief geformuleerd en maatschappelijk relevant voor klimaat en volksgezondheid."
- },
- {
-  "datum": "2026-09-15T04:33:32.965Z",
-  "bron": "GoodNewsNetwork.org",
-  "titel": "Elephants Can Think Before They Act and Resist Impulsive Behavior, Shows Study",
-  "gevoel": 2,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 8,
-  "besluit": "ja",
-  "reden": "Positief wetenschappelijk inzicht in dierintelligentie; goed geformuleerd en relevant voor natuurbegrip, maar minder emotioneel warm dan andere items."
  }
 ]
