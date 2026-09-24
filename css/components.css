@@ -57,18 +57,18 @@ nav.container {
 }
 .category-bar {
     display: flex;
-    gap: 10px;
+    gap: var(--space-sm);
     overflow-x: auto;
-    padding: 20px 0;
+    padding: var(--space-xl) 0;
     scrollbar-width: none; /* Hide scrollbar Firefox */
 }
 
 .category-bar::-webkit-scrollbar { display: none; } /* Hide scrollbar Chrome/Safari */
 
 .filter-btn {
-    padding: 8px 20px;
+    padding: var(--space-xs) var(--space-xl);
     border-radius: 20px;
-    border: 1px solid #eee;
+    border: 1px solid var(--neutral-100);
     background: white;
     white-space: nowrap;
     cursor: pointer;
@@ -84,21 +84,23 @@ nav.container {
 
 .dropbtn {
     background-color: white;
-    color: #333;
-    padding: 6px 14px;
+    color: var(--neutral-800);
+    padding: var(--space-2xs) 14px;
     font-size: 14px;
     font-weight: 600;
     border: 2px solid var(--bright-green);
-    border-radius: 20px;
+    border-radius: 22px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: var(--space-2xs);
     transition: all 0.2s ease;
+    /* 22px radius hoort bij 44px hoogte: zo blijft het een echte pil. */
+    min-height: 44px;
 }
 
 .dropbtn:hover {
-    background-color: #f0fff0;
+    background-color: var(--green-tint);
     border-color: var(--bright-green);
 }
 
@@ -146,7 +148,7 @@ nav.container {
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
     border-radius: 12px;
-    padding: 8px 0;
+    padding: var(--space-xs) 0;
     margin-top: 0;
     z-index: 9999;
 }
@@ -163,17 +165,19 @@ nav.container {
 }
 
 .dropdown-content a {
-    color: #333;
-    padding: 10px 16px;
+    color: var(--neutral-800);
+    padding: var(--space-sm) var(--space-lg);
     text-decoration: none;
-    display: block;
+    display: flex;
+    align-items: center;
+    min-height: 44px;
     font-size: 14px;
     font-weight: 500;
     transition: background 0.2s;
 }
 
 .dropdown-content a:hover {
-    background-color: #f0fff0;
+    background-color: var(--green-tint);
     color: var(--dark-text);
 }
 
@@ -213,7 +217,7 @@ nav.container {
     text-decoration: none;
     color: var(--medium-text);
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: var(--text-base);
     transition: var(--transition);
     position: relative;
 }
@@ -258,7 +262,7 @@ nav.container {
 footer {
     background-color: var(--white);
     border-top: 1px solid var(--border-color);
-    padding: 40px 0;
+    padding: var(--space-4xl) 0;
     text-align: center;
     margin-top: auto; /* Handig voor 'sticky footers' */
 
@@ -269,7 +273,7 @@ footer p {
        het de 4,5:1 niet op de footer-achtergrond (2,52:1). Deze generieke
        regel won het bovendien van .footer-bottom zelf, dus hier zat de echte
        oorzaak. Nu de bestaande token. */
-    color: var(--medium-text, #505F50);
+    color: var(--medium-text, var(--medium-text));
     font-size: 0.9rem;
     margin: 0;
 }
@@ -304,7 +308,7 @@ main {
 footer {
     background-color: var(--white);
     border-top: 1px solid var(--border-color);
-    padding: 20px 0;
+    padding: var(--space-xl) 0;
     width: 100%;
 }
 
@@ -312,11 +316,17 @@ footer {
 .hamburger {
     display: none;
     flex-direction: column;
+    /* align-items: center houdt de drie streepjes gecentreerd nu de knop
+       breder is dan de streepjes zelf. */
+    align-items: center;
+    justify-content: center;
     gap: 5px;
     background: none;
     border: none;
     cursor: pointer;
     padding: 5px;
+    min-width: 44px;
+    min-height: 44px;
 }
 
 .hamburger span {
@@ -427,7 +437,7 @@ nav.container {
     display: flex;
     align-items: center;
     justify-content: space-between; /* Houdt links en rechts maximaal uit elkaar */
-    padding: 0 20px; /* Pas dit aan naar 0 als hij écht tegen de rand moet plakken */
+    padding: 0 var(--space-xl); /* Pas dit aan naar 0 als hij écht tegen de rand moet plakken */
     height: 80px;
     width: 100%;
 }
@@ -436,7 +446,7 @@ nav.container {
 .nav-left-group {
     display: flex;
     align-items: center;
-    gap: 10px; /* DIT IS DE RUIMTE: Vergroot dit voor meer plek tussen taal en logo */
+    gap: var(--space-sm); /* DIT IS DE RUIMTE: Vergroot dit voor meer plek tussen taal en logo */
 }
 
 /* 3. De Rechterkant (Menu + Profiel) */
@@ -466,7 +476,7 @@ nav.container {
     display: flex;
     align-items: center;
     justify-content: space-between; /* Houdt links en rechts uit elkaar */
-    padding: 0 20px;
+    padding: 0 var(--space-xl);
     height: 80px;
 }
 
@@ -474,7 +484,7 @@ nav.container {
 .nav-left-group {
     display: flex;
     align-items: center;
-    gap: 20px; /* DIT IS DE FIX: Precies 20px tussen taal en logo */
+    gap: var(--space-xl); /* DIT IS DE FIX: Precies 20px tussen taal en logo */
 }
 
 /* Zorg dat het logo geen gekke margins meer heeft */
@@ -509,7 +519,7 @@ nav.container {
     align-items: center;
     justify-content: space-between; /* Houdt links en rechts uit elkaar */
     height: 104px; /* Reviewronde 2026-09-02: hogere balk voor het grotere logo */
-    padding: 0 20px;
+    padding: 0 var(--space-xl);
     position: relative;
 }
 
@@ -530,7 +540,7 @@ nav.container {
 .nav-left-group {
     display: flex;
     align-items: center;
-    gap: 20px; /* EXACT 20px tussen vlag en logo */
+    gap: var(--space-xl); /* EXACT 20px tussen vlag en logo */
 }
 
 .logo {
@@ -582,11 +592,11 @@ nav.container {
 #laad-meer-wikkel {
     display: flex;
     justify-content: center;
-    margin: 40px 0 10px;
+    margin: var(--space-4xl) 0 var(--space-sm);
 }
 .laad-meer-knop {
     font: inherit;
-    font-size: 1rem;
+    font-size: var(--text-md);
     font-weight: 700;
     color: var(--dark-text);
     background: var(--bright-green);
@@ -604,13 +614,13 @@ nav.container {
    terwijl de JSON nog binnenkomt. Zelfde afmetingen als een echte kaart, zodat
    de pagina niet verspringt zodra de artikelen er zijn. */
 .skelet-kaart {
-    background: #fff;
+    background: var(--white);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-lg, 24px);
     overflow: hidden;
 }
 .skelet-foto { width: 100%; aspect-ratio: 16 / 9; }
-.skelet-regels { padding: 20px; display: flex; flex-direction: column; gap: 10px; }
+.skelet-regels { padding: var(--space-xl); display: flex; flex-direction: column; gap: var(--space-sm); }
 .skelet-regel { display: block; height: 12px; border-radius: 6px; }
 .skelet-regel.kort { width: 35%; height: 10px; }
 .skelet-regel.half { width: 55%; }
@@ -650,13 +660,13 @@ nav.container {
        volle breedte uit en oogt hij als een balk in plaats van een label. */
     align-self: flex-start;
     width: fit-content;
-    background: var(--bright-yellow, #FFD700);
+    background: var(--bright-yellow, var(--bright-yellow));
     color: var(--dark-text);
     font-size: 0.8rem;
     font-weight: 700;
     border-radius: 999px;
-    padding: 4px 12px;
-    margin-bottom: 4px;
+    padding: var(--space-3xs) var(--space-md);
+    margin-bottom: var(--space-3xs);
 }
 /* De gratis-kaart heeft een link i.p.v. een knop; zonder dit houdt hij de
    onderstreping van een gewone link en oogt hij niet als de andere knoppen. */
@@ -664,8 +674,8 @@ a.btn-secondary { text-decoration: none; }
 
 .proef-microcopy {
     font-size: 0.8em;
-    color: var(--medium-text, #505F50);
-    margin-top: 10px;
+    color: var(--medium-text, var(--medium-text));
+    margin-top: var(--space-sm);
 }
 
 /* Container voor alle meldingen */
@@ -678,7 +688,7 @@ a.btn-secondary { text-decoration: none; }
     display: flex;
     flex-direction: column;
     align-items: center; /* Zorgt dat de tekstblokjes zelf ook gecentreerd zijn */
-    gap: 12px;
+    gap: var(--space-md);
     width: 100%; /* Nodig om binnen de 100% te kunnen centreren */
     pointer-events: none; /* Zorgt dat je nog steeds op knoppen onder de container kunt klikken */
 }
@@ -687,13 +697,13 @@ a.btn-secondary { text-decoration: none; }
     pointer-events: auto; /* Zorgt dat je de melding wel kunt wegklikken indien nodig */
     min-width: 320px;
     max-width: 90%;
-    padding: 14px 24px;
+    padding: 14px var(--space-2xl);
     border-radius: 50px; /* Een moderne 'pill' vorm */
     background: white;
-    color: #333;
+    color: var(--neutral-800);
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: var(--text-base);
     display: flex;
     align-items: center;
     justify-content: center; /* Tekst in het midden van de pill */
@@ -702,7 +712,7 @@ a.btn-secondary { text-decoration: none; }
     opacity: 0;
     transform: translateY(-20px);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border: 1px solid #eee;
+    border: 1px solid var(--neutral-100);
 }
 
 .notification.show {
@@ -712,8 +722,8 @@ a.btn-secondary { text-decoration: none; }
 
 /* Subtiele kleuraccenten aan de onderkant in plaats van de zijkant */
 .notification.success { border-bottom: 3px solid var(--bright-green); }
-.notification.error { border-bottom: 3px solid #e74c3c; }
-.notification.info { border-bottom: 3px solid #3498db; }
+.notification.error { border-bottom: 3px solid var(--color-error); }
+.notification.info { border-bottom: 3px solid var(--color-info); }
 .logo {
     text-decoration: none; /* Verwijdert de onderstreping */
     color: inherit;        /* Zorgt dat "Bright" zwart blijft (of je ingestelde kleur) */
@@ -729,62 +739,75 @@ a.btn-secondary { text-decoration: none; }
     color: var(--bright-green); /* Of de kleur die je eerder had ingesteld */
 }
 .main-footer {
-    background-color: #f9f9f9;
-    border-top: 1px solid #eee;
-    padding: 80px 0 30px;
+    background-color: var(--neutral-025);
+    border-top: 1px solid var(--neutral-100);
+    padding: 80px 0 var(--space-3xl);
     margin-top: 100px;
-    color: #444;
+    color: var(--neutral-700);
 }
 
 .footer-grid {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1.5fr;
     gap: 50px;
-    margin-bottom: 60px;
+    margin-bottom: var(--space-5xl);
 }
 
 .footer-logo {
-    font-size: 1.5rem;
+    font-size: var(--text-xl);
     font-weight: 800;
-    margin-bottom: 20px;
+    margin-bottom: var(--space-xl);
 }
 
 .footer-logo span { color: var(--bright-green); }
 
 .footer-about p {
     line-height: 1.6;
-    color: #666;
-    font-size: 0.95rem;
-    margin-bottom: 20px;
+    color: var(--neutral-500);
+    font-size: var(--text-base);
+    margin-bottom: var(--space-xl);
 }
 
 /* De 'No Frameworks' Badge */
 .framework-badge {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    background: #fff;
-    padding: 8px 15px;
+    gap: var(--space-xs);
+    background: var(--white);
+    padding: var(--space-xs) 15px;
     border-radius: 50px;
     font-size: 0.8rem;
     margin-top: 2rem;
     font-weight: 600;
-    border: 1px solid #eee;
-    color: #888;
+    border: 1px solid var(--neutral-100);
+    color: var(--neutral-400);
 }
 
+/* h3 sinds 2026-09-24: deze kolomkoppen stonden als h4 terwijl er nergens een
+   h3 boven zat — een niveau gekozen op formaat in plaats van op structuur.
+   De h4-selectors blijven staan voor het bevroren artikelarchief. */
+.footer-links h3, .footer-socials h3,
 .footer-links h4, .footer-socials h4 {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    color: #111;
+    font-size: var(--text-md);
+    margin-bottom: var(--space-xl);
+    color: var(--neutral-900);
 }
 
 .footer-links ul { list-style: none; padding: 0; }
-.footer-links ul li { margin-bottom: 12px; }
+/* De regelafstand zat op de <li> als margin. Daardoor was het aanraakvlak
+   zelf maar 18px hoog: de ruimte ertussen was niet klikbaar, en op een
+   telefoon mik je dus op een lijntje tekst. De marge is hierheen verhuisd
+   als min-height, zodat de hele regel raak is. De kolom wordt er niet hoger
+   van: 5 regels gaan van 5x30 naar 5x44, en de footer-kolommen worden toch
+   al uitgerekt naar de hoogste (333px gemeten). */
+.footer-links ul li { margin-bottom: 0; }
 .footer-links ul li a {
     text-decoration: none;
-    color: #666;
+    color: var(--neutral-500);
     transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
 }
 
 .footer-links ul li a:hover { color: var(--bright-green); padding-left: 5px; } /* donkere footer: hier haalt groen ruim contrast */
@@ -798,14 +821,14 @@ a.btn-secondary { text-decoration: none; }
 .social-btn {
     width: 45px;
     height: 45px;
-    background: #fff;
-    border: 1px solid #eee;
+    background: var(--white);
+    border: 1px solid var(--neutral-100);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #444;
-    font-size: 1.2rem;
+    color: var(--neutral-700);
+    font-size: var(--text-lg);
     transition: all 0.3s ease;
     text-decoration: none;
 }
@@ -815,20 +838,20 @@ a.btn-secondary { text-decoration: none; }
     background: var(--bright-green);
     /* De SVG's staan op fill/stroke: currentColor, dus 'color' kleurt het
        icoon zelf wit in plaats van zwart. */
-    color: #fff;
+    color: var(--white);
     transform: translateY(-5px);
     border-color: var(--bright-green);
 }
 
 .footer-bottom {
     text-align: center;
-    border-top: 1px solid #eee;
-    padding-top: 30px;
-    font-size: 0.85rem;
+    border-top: 1px solid var(--neutral-100);
+    padding-top: var(--space-3xl);
+    font-size: var(--text-sm);
     /* Was #aaa: dat gaf 2,52:1 op de footer-achtergrond (#f9f9f9) en zakte
        daarmee onder de WCAG-ondergrens van 4,5:1 voor tekst van deze grootte.
        --medium-text bestond al als token en haalt het ruim. */
-    color: var(--medium-text, #505F50);
+    color: var(--medium-text, var(--medium-text));
 }
 
 /* Bewust geen 'height: 100%' hier. Dat maakte de body-box precies een
@@ -843,17 +866,17 @@ html, body {
 .footer-grid {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
-    gap: 40px;
-    padding: 60px 0;
+    gap: var(--space-4xl);
+    padding: var(--space-5xl) 0;
 }
 .footer-legal-info {
-    margin-top: 20px;
+    margin-top: var(--space-xl);
     font-size: 0.9rem;
     opacity: 0.8;
 }
 .framework-badge {
     margin-top: 25px;
-    padding: 10px 20px;
+    padding: var(--space-sm) var(--space-xl);
     border: 1px solid var(--border-color);
     border-radius: 50px;
     display: inline-block;
@@ -877,7 +900,7 @@ body {
     .footer-grid {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 40px;
+        gap: var(--space-4xl);
     }
     .footer-socials .social-icons { justify-content: center; }
     .framework-badge { justify-content: center; }
@@ -897,7 +920,7 @@ body {
         padding: 0 15px;
         /* Op de smalste toestellen (320px) raakte het logo de hamburger; deze
            gap houdt er altijd wat lucht tussen. */
-        gap: 10px;
+        gap: var(--space-sm);
     }
 
     .nav-right-group {
@@ -922,7 +945,7 @@ body {
     }
 
     .dropbtn {
-        padding: 6px 10px;
+        padding: var(--space-2xs) var(--space-sm);
     }
 
     /* Stond op margin-right: 3rem. Samen met de volle taalnaam (116px) en het
@@ -937,7 +960,7 @@ body {
 
     /* Taalkiezer en logo mogen samen krimpen i.p.v. de hamburger wegduwen. */
     .nav-left-group {
-        gap: 10px;
+        gap: var(--space-sm);
         min-width: 0;
         flex: 1 1 auto;
     }
@@ -956,14 +979,14 @@ body {
         width: 100%;
         background: white;
         flex-direction: column;
-        gap: 20px;
-        padding: 20px;
+        gap: var(--space-xl);
+        padding: var(--space-xl);
         box-shadow: var(--shadow-md);
         z-index: 1000;
         list-style: none;
         margin: 0;
         text-align: center;
-        border-top: 1px solid #eee;
+        border-top: 1px solid var(--neutral-100);
         border-bottom: 1px solid var(--border-color);
     }
 
@@ -977,9 +1000,12 @@ body {
     }
 
     .nav-links a {
-        font-size: 1.2rem; /* Iets groter op mobiel voor dikke vingers */
+        font-size: var(--text-lg); /* Iets groter op mobiel voor dikke vingers */
         font-weight: 700;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
         width: 100%;
     }
 
@@ -993,7 +1019,7 @@ body {
         width: 100%;
         margin-top: 15px;
         padding-top: 15px;
-        border-top: 1px solid #eee;
+        border-top: 1px solid var(--neutral-100);
     }
 
     /* .nav-links a heeft hogere specificiteit (.nav-links a = 0,1,1) dan
@@ -1003,7 +1029,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: var(--space-sm);
         color: var(--dark-text) !important;
         font-weight: 700;
     }
@@ -1035,7 +1061,7 @@ body {
     display: flex;
     justify-content: center;
     background: white;
-    border-top: 1px solid #e6e6e6;
+    border-top: 1px solid var(--neutral-200);
     box-shadow: 0 -2px 12px rgba(0,0,0,0.08);
     animation: slideUp 0.4s ease-out;
 }
@@ -1044,60 +1070,62 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 16px;
+    gap: var(--space-lg);
     width: 100%;
     max-width: 1100px;
-    padding: 12px 20px;
+    padding: var(--space-md) var(--space-xl);
 }
 
 .cookie-text {
     margin: 0;
-    font-size: 0.85rem;
+    font-size: var(--text-sm);
     line-height: 1.4;
-    color: var(--medium-text, #505F50);
+    color: var(--medium-text, var(--medium-text));
 }
 
 .cookie-titel {
     font-weight: 700;
-    color: var(--dark-text, #1A1A1A);
+    color: var(--dark-text, var(--dark-text));
 }
 
 .cookie-text a {
     /* Geen groene tekst op licht (fase F-besluit, global.css :root) —
        --bright-green-text bestond hier nog uit fase 5 en was al verwijderd. */
-    color: var(--dark-text, #1A1A1A);
+    color: var(--dark-text, var(--dark-text));
     text-decoration: underline;
     white-space: nowrap;
 }
 
 .cookie-buttons {
     display: flex;
-    gap: 10px;
+    gap: var(--space-sm);
     flex-shrink: 0;
 }
 
 .btn-cookie-accept {
     /* Eén groen (#32CD32) met witte knoptekst — fase G-besluit. */
-    background: var(--bright-green, #32CD32);
-    color: var(--white, #FFFFFF);
+    background: var(--bright-green, var(--bright-green));
+    color: var(--white, var(--white));
     border: none;
     padding: 9px 18px;
     border-radius: 8px;
     font-weight: bold;
-    font-size: 0.85rem;
+    font-size: var(--text-sm);
     cursor: pointer;
     white-space: nowrap;
+    min-height: 44px;
 }
 
 .btn-cookie-decline {
-    background: #f1f1f1;
-    color: var(--medium-text, #505F50);
+    background: var(--neutral-075);
+    color: var(--medium-text, var(--medium-text));
     border: none;
     padding: 9px 18px;
     border-radius: 8px;
-    font-size: 0.85rem;
+    font-size: var(--text-sm);
     cursor: pointer;
     white-space: nowrap;
+    min-height: 44px;
 }
 
 @keyframes slideUp {
@@ -1112,15 +1140,15 @@ body {
     .cookie-content {
         flex-direction: column;
         align-items: stretch;
-        gap: 10px;
-        padding: 12px 16px;
+        gap: var(--space-sm);
+        padding: var(--space-md) var(--space-lg);
         /* iPhone-homebar niet onder de knoppen laten vallen */
-        padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+        padding-bottom: calc(var(--space-md) + env(safe-area-inset-bottom, 0px));
     }
     .cookie-titel { display: none; }
     .cookie-text { font-size: 0.8rem; text-align: center; }
     .cookie-buttons { justify-content: center; }
-    .cookie-buttons button { flex: 1; padding: 10px 12px; }
+    .cookie-buttons button { flex: 1; padding: var(--space-sm) var(--space-md); }
 }
 
 /* Reviewronde 2026-09-02: vlag-emoji in de taalselector verbergen op smalle
@@ -1160,22 +1188,27 @@ body {
    sluiten met Escape.
    ========================================================================== */
 .fb-regel {
-    margin: 10px 0 0;
+    /* Geen losse marge meer: de ruimte zit nu in het aanraakvlak van de link
+       zelf (zie hieronder), en die ruimte is dan meteen klikbaar. */
+    margin: 0;
 }
 
 .fb-regel a {
     /* Zelfde correctie als bij .footer-bottom hierboven: dit lijntje had
        bewust hetzelfde grijs, en erfde daarmee ook hetzelfde contrastgebrek
        (2,21:1). Stil mag, onleesbaar niet. */
-    color: var(--medium-text, #505F50);
-    font-size: 0.85rem;
+    color: var(--medium-text, var(--medium-text));
+    font-size: var(--text-sm);
     text-decoration: underline;
     text-underline-offset: 3px;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
 }
 
 .fb-regel a:hover,
 .fb-regel a:focus-visible {
-    color: var(--dark-text, #1A1A1A);
+    color: var(--dark-text, var(--dark-text));
 }
 
 .fb-venster {
@@ -1189,10 +1222,10 @@ body {
     /* Er verschenen twee schuifbalken: één van het venster zelf en één van
        het formulier erin. Alleen het formulier mag schuiven. */
     overflow: hidden;
-    border: 1px solid var(--border-color, #E8EEE8);
+    border: 1px solid var(--border-color, var(--border-color));
     border-radius: 16px;
-    background: var(--white, #FFFFFF);
-    color: var(--dark-text, #1A1A1A);
+    background: var(--white, var(--white));
+    color: var(--dark-text, var(--dark-text));
     box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
 }
 
@@ -1214,7 +1247,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 18px;
-    padding: 28px 26px 24px;
+    padding: 28px 26px var(--space-2xl);
     /* Het formulier is het enige dat schuift. Geen eigen max-height: als
        flex-item krijgt het precies de ruimte die het venster overhoudt.
        min-height 0 hoort erbij — zonder die regel weigert een flex-item
@@ -1233,14 +1266,14 @@ body {
     border: none;
     border-radius: 50%;
     background: transparent;
-    color: var(--medium-text, #505F50);
+    color: var(--medium-text, var(--medium-text));
     font-size: 1.6rem;
     line-height: 1;
     cursor: pointer;
 }
 
 .fb-kruis:hover {
-    background: var(--light-bg, #F8FBF8);
+    background: var(--light-bg, var(--light-bg));
 }
 
 .fb-form h2 {
@@ -1251,9 +1284,9 @@ body {
 
 .fb-intro {
     margin: -10px 0 0;
-    font-size: 0.85rem;
+    font-size: var(--text-sm);
     line-height: 1.5;
-    color: var(--medium-text, #505F50);
+    color: var(--medium-text, var(--medium-text));
 }
 
 .fb-vraag {
@@ -1264,7 +1297,7 @@ body {
 
 .fb-vraag legend {
     padding: 0;
-    margin-bottom: 8px;
+    margin-bottom: var(--space-xs);
     font-size: 0.92rem;
     font-weight: 600;
 }
@@ -1272,7 +1305,7 @@ body {
 .fb-schaal-rij {
     display: flex;
     align-items: flex-start;
-    gap: 10px;
+    gap: var(--space-sm);
 }
 
 /* De groep die de uitlijning bepaalt: de bijschriften horen precies zo breed
@@ -1286,7 +1319,7 @@ body {
 .fb-schaal {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 8px;
+    gap: var(--space-xs);
 }
 
 /* "Geen idee" hoort bij de vraag maar niet bij de schaal — daarom ernaast,
@@ -1298,7 +1331,7 @@ body {
 .fb-geen-idee span {
     width: auto;
     min-width: 84px;
-    padding: 0 12px;
+    padding: 0 var(--space-md);
     font-size: 0.78rem;
     text-align: center;
     line-height: 1.2;
@@ -1320,45 +1353,45 @@ body {
     width: 100%;
     min-width: 44px;
     height: 44px;
-    border: 1px solid var(--border-color, #E8EEE8);
+    border: 1px solid var(--border-color, var(--border-color));
     border-radius: 10px;
-    background: var(--light-bg, #F8FBF8);
-    font-size: 0.95rem;
+    background: var(--light-bg, var(--light-bg));
+    font-size: var(--text-base);
     cursor: pointer;
     transition: background 0.15s ease, border-color 0.15s ease;
 }
 
 .fb-bol:hover span {
-    border-color: var(--bright-green, #32CD32);
+    border-color: var(--bright-green, var(--bright-green));
 }
 
 /* Groen vlak met donkere tekst erop — geen groene letters op licht, zie de
    kleurafspraak bovenin global.css. */
 .fb-bol input:checked + span {
-    background: var(--bright-green, #32CD32);
-    border-color: var(--bright-green, #32CD32);
-    color: var(--dark-text, #1A1A1A);
+    background: var(--bright-green, var(--bright-green));
+    border-color: var(--bright-green, var(--bright-green));
+    color: var(--dark-text, var(--dark-text));
     font-weight: 700;
 }
 
 .fb-bol input:focus-visible + span {
-    outline: 2px solid var(--dark-text, #1A1A1A);
+    outline: 2px solid var(--dark-text, var(--dark-text));
     outline-offset: 2px;
 }
 
 .fb-uitersten {
     display: flex;
     justify-content: space-between;
-    margin-top: 6px;
+    margin-top: var(--space-2xs);
     font-size: 0.72rem;
-    color: var(--medium-text, #505F50);
+    color: var(--medium-text, var(--medium-text));
 }
 
 .fb-open,
 .fb-email {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: var(--space-xs);
     font-size: 0.92rem;
     font-weight: 600;
 }
@@ -1366,31 +1399,31 @@ body {
 .fb-email {
     font-size: 0.82rem;
     font-weight: 400;
-    color: var(--medium-text, #505F50);
+    color: var(--medium-text, var(--medium-text));
 }
 
 .fb-open textarea,
 .fb-email input {
     width: 100%;
-    padding: 10px 12px;
-    border: 1px solid var(--border-color, #E8EEE8);
+    padding: var(--space-sm) var(--space-md);
+    border: 1px solid var(--border-color, var(--border-color));
     border-radius: 10px;
-    background: var(--light-bg, #F8FBF8);
+    background: var(--light-bg, var(--light-bg));
     font: inherit;
     font-weight: 400;
-    color: var(--dark-text, #1A1A1A);
+    color: var(--dark-text, var(--dark-text));
     resize: vertical;
 }
 
 .fb-open textarea:focus,
 .fb-email input:focus {
-    outline: 2px solid var(--bright-green, #32CD32);
+    outline: 2px solid var(--bright-green, var(--bright-green));
     outline-offset: 1px;
 }
 
 .fb-melding {
     margin: 0;
-    font-size: 0.85rem;
+    font-size: var(--text-sm);
     line-height: 1.4;
 }
 
@@ -1399,11 +1432,11 @@ body {
 }
 
 .fb-melding.fb-fout {
-    color: #a32219;
+    color: var(--color-error-text);
 }
 
 .fb-melding.fb-gelukt {
-    color: var(--dark-text, #1A1A1A);
+    color: var(--dark-text, var(--dark-text));
     font-weight: 600;
 }
 
@@ -1420,12 +1453,12 @@ body {
 .fb-knoppen {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: var(--space-sm);
 }
 
 .fb-annuleer,
 .fb-verstuur {
-    padding: 10px 20px;
+    padding: var(--space-sm) var(--space-xl);
     border-radius: 10px;
     font-size: 0.9rem;
     font-weight: 700;
@@ -1433,15 +1466,15 @@ body {
 }
 
 .fb-annuleer {
-    border: 1px solid var(--border-color, #E8EEE8);
-    background: var(--white, #FFFFFF);
-    color: var(--medium-text, #505F50);
+    border: 1px solid var(--border-color, var(--border-color));
+    background: var(--white, var(--white));
+    color: var(--medium-text, var(--medium-text));
 }
 
 .fb-verstuur {
     border: none;
-    background: var(--bright-green, #32CD32);
-    color: var(--white, #FFFFFF);
+    background: var(--bright-green, var(--bright-green));
+    color: var(--white, var(--white));
 }
 
 .fb-verstuur:disabled {
@@ -1451,7 +1484,7 @@ body {
 
 @media (max-width: 560px) {
     .fb-form {
-        padding: 24px 18px 20px;
+        padding: var(--space-2xl) 18px var(--space-xl);
     }
 
     /* Naast elkaar past niet meer: de schaal krijgt de volle breedte en
@@ -1466,7 +1499,7 @@ body {
 
     .fb-geen-idee {
         flex: 1 1 100%;
-        margin-top: 8px;
+        margin-top: var(--space-xs);
     }
 
     .fb-geen-idee span {
@@ -1500,5 +1533,5 @@ main ul:not(.nav-links):not(.footer-links ul):not(.meer-nieuws ul) {
 }
 
 main li {
-    margin-bottom: 6px;
+    margin-bottom: var(--space-2xs);
 }

@@ -25,11 +25,11 @@
     display: flex !important;
     justify-content: center !important;
     align-items: stretch !important;
-    gap: 30px;
+    gap: var(--space-3xl);
     width: 100%;
     max-width: 1200px;
     margin: 0 auto !important; /* Centreer de grid in de block-wrapper */
-    padding: 20px !important;
+    padding: var(--space-xl) !important;
 }
 
 /* --- 3. DE FOOTER FORCEERMIDDEL --- */
@@ -42,8 +42,8 @@
 
 .pricing-intro {
     text-align: center;
-    margin-bottom: 40px;
-    padding: 0 20px;
+    margin-bottom: var(--space-4xl);
+    padding: 0 var(--space-xl);
 }
 
 /* Herroepingsrecht-checkbox (reviewpunt 2, 2026-09-05): stond als losse
@@ -55,19 +55,19 @@
 .withdrawal-consent-label {
     display: flex;
     align-items: flex-start;
-    gap: 10px;
+    gap: var(--space-sm);
     margin-top: 14px;
     /* Lucht náár de knop toe: zonder deze regel plakte "Start nu" tegen het
        vinkje-blok aan (gemeten 0px). Bij een blokje met juridische strekking
        wil je juist dat een bezoeker ziet dat het twee losse dingen zijn. */
     margin-bottom: 18px;
-    padding: 10px 12px;
-    background: var(--light-bg, #F8FBF8);
-    border: 1px solid var(--border-color, #E8EEE8);
+    padding: var(--space-sm) var(--space-md);
+    background: var(--light-bg, var(--light-bg));
+    border: 1px solid var(--border-color, var(--border-color));
     border-radius: 10px;
     font-size: 0.72rem;
     line-height: 1.45;
-    color: var(--medium-text, #505F50);
+    color: var(--medium-text, var(--medium-text));
     cursor: pointer;
     text-align: left;
     transition: border-color 0.2s ease, background 0.2s ease;
@@ -85,9 +85,9 @@
 /* Klik op de knop zonder vinkje: naast de toast ook zichtbaar máken wélk
    vakje nog mist (startCheckout() zet deze klasse, zie js/auth.js). */
 .withdrawal-consent-label.consent-ontbreekt {
-    border-color: #d93025;
-    background: #fdf1f0;
-    color: #a32219;
+    border-color: var(--color-error);
+    background: var(--color-error-bg);
+    color: var(--color-error-text);
     animation: consentSchud 0.35s ease-in-out;
 }
 
@@ -105,25 +105,25 @@
     font-size: clamp(2rem, 5vw, 3rem);
     font-weight: 900;
     letter-spacing: -0.04em;
-    color: #1a1a1a;
-    margin-bottom: 10px;
+    color: var(--dark-text);
+    margin-bottom: var(--space-sm);
 }
 
 .pricing-grid {
     display: flex !important;
     justify-content: center !important;
     align-items: stretch !important;
-    gap: 30px;
+    gap: var(--space-3xl);
     width: 100%;
     max-width: 1200px;
-    padding: 20px !important;
+    padding: var(--space-xl) !important;
     box-sizing: border-box;
     /* VOEG DIT TOE: Dit duwt de onderkant van de container fysiek omlaag */
     margin-bottom: 50px !important;
 }
 
 .price-card {
-    background: #ffffff;
+    background: var(--white);
     border: 1px solid rgba(0,0,0,0.05);
     border-radius: 30px; /* Zachte, moderne hoeken */
     padding: 50px 35px;
@@ -145,7 +145,7 @@
 /* DE GLOW KAART (POPULAIR) */
 .price-card.popular {
     border: 2px solid var(--bright-green);
-    background: #ffffff;
+    background: var(--white);
     box-shadow: 0 20px 50px rgba(46, 204, 113, 0.1);
     transform: scale(1.05);
     z-index: 5;
@@ -161,10 +161,10 @@
     left: 50%;
     transform: translateX(-50%);
     background: var(--bright-green);
-    color: var(--white, #FFFFFF);
-    padding: 6px 20px;
+    color: var(--white, var(--white));
+    padding: var(--space-2xs) var(--space-xl);
     border-radius: 50px;
-    font-size: 0.75rem;
+    font-size: var(--text-xs);
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -175,46 +175,46 @@
 .price-card h2 {
     font-size: 1.6rem;
     font-weight: 800;
-    color: #1a1a1a;
-    margin: 0 0 10px 0;
+    color: var(--dark-text);
+    margin: 0 0 var(--space-sm) 0;
 }
 
 .price-amount {
     font-size: 3.2rem;
     font-weight: 900;
-    color: #1a1a1a;
-    margin: 20px 0;
+    color: var(--dark-text);
+    margin: var(--space-xl) 0;
     letter-spacing: -0.02em;
 }
 
 .price-amount span {
     font-size: 1.1rem;
-    color: #999;
+    color: var(--neutral-400);
     font-weight: 400;
 }
 
 .feature-list {
     list-style: none;
     padding: 0;
-    margin: 20px 0 40px 0;
+    margin: var(--space-xl) 0 var(--space-4xl) 0;
     text-align: left;
     flex-grow: 1;
 }
 
 .feature-list li {
-    font-size: 0.95rem;
-    padding: 12px 0;
+    font-size: var(--text-base);
+    padding: var(--space-md) 0;
     display: flex;
     align-items: center;
-    gap: 12px;
-    color: #444;
-    border-bottom: 1px solid #f0f0f0;
+    gap: var(--space-md);
+    color: var(--neutral-700);
+    border-bottom: 1px solid var(--neutral-075);
 }
 
 .feature-list li:last-child { border-bottom: none; }
 
 .feature-list li.disabled {
-    color: #ccc;
+    color: var(--neutral-300);
     text-decoration: line-through;
     opacity: 0.6;
 }
@@ -222,9 +222,9 @@
 /* --- 6. DE KNOPPEN --- */
 .price-card button {
     width: 100%;
-    padding: 16px;
+    padding: var(--space-lg);
     border-radius: 16px;
-    font-size: 1rem;
+    font-size: var(--text-md);
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -235,7 +235,7 @@
    groen met donkere tekst — geen aparte zwarte variant meer op deze pagina). */
 .btn-primary {
     background: var(--bright-green);
-    color: var(--white, #FFFFFF);
+    color: var(--white, var(--white));
     box-shadow: 0 10px 20px rgba(50, 205, 50, 0.25);
 }
 
@@ -246,11 +246,11 @@
 }
 
 .btn-secondary {
-    background: #f1f3f5;
-    color: #495057;
+    background: var(--neutral-075);
+    color: var(--medium-text);
 }
 
-.btn-secondary:hover { background: #e9ecef; }
+.btn-secondary:hover { background: var(--neutral-100); }
 
 /* --- 7. VOLLEDIGE MOBIEL FIX ✨ --- */
 @media (max-width: 768px) {
@@ -265,11 +265,11 @@
     }
 
     .pricing-intro {
-        margin-bottom: 40px;
+        margin-bottom: var(--space-4xl);
     }
 
     .pricing-intro h1 {
-        font-size: 1.8rem;
+        font-size: var(--text-2xl);
     }
 
     /* De grid wordt een verticale kolom */
@@ -277,14 +277,14 @@
         flex-direction: column !important;
         align-items: center !important;
         gap: 50px !important; /* Ruimte tussen de kaarten onderling */
-        padding: 0 20px !important;
+        padding: 0 var(--space-xl) !important;
         width: 100%;
     }
 
     .price-card {
         width: 100% !important;
         max-width: 340px;
-        padding: 40px 25px;
+        padding: var(--space-4xl) 25px;
         /* Reset transformaties van desktop om overlap te voorkomen */
         transform: none !important;
         margin: 0 auto;
@@ -302,13 +302,13 @@
     }
 
     .price-amount {
-        font-size: 2.5rem;
+        font-size: var(--text-3xl);
     }
 
     .popular-badge {
         top: -12px;
         font-size: 0.7rem;
-        padding: 4px 15px;
+        padding: var(--space-3xs) 15px;
     }
 
     /* Zorg dat de footer onderaan de flow blijft */

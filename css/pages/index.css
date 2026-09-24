@@ -5,8 +5,8 @@
     /* Reviewronde 2026-09-02: expliciete kolommen i.p.v. auto-fill —
        3 op desktop, 2 op tablet, 1 (vol-breed) op mobiel. */
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    padding: 20px 0;
+    gap: var(--space-3xl);
+    padding: var(--space-xl) 0;
     /* Reserveer alvast schermhoogte terwijl de kaarten laden: de pagina
        rendert (sinds de defer-scripts) vóór de nieuwsdata binnen is, en
        zonder deze regel stond de footer eerst bovenin en werd hij daarna
@@ -15,7 +15,7 @@
 }
 
 .news-card {
-    background: #ffffff;
+    background: var(--white);
     border-radius: 24px; /* Zelfde afronding als de detailpagina */
     overflow: hidden;
     /* Geen randen meer, maar een zachte, luxe schaduw */
@@ -55,31 +55,19 @@
     flex-direction: column;
 }
 
-/* De bron-tag: Minimalistisch en chique */
-.source-tag {
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    color: #888;
-    margin-bottom: 8px;
-    background: none; /* Geen felle achtergrondkleuren meer */
-    padding: 0;
-}
-
 .card-content h3 {
     font-size: 1.45rem;
     line-height: 1.3;
     font-weight: 800;
-    color: #1a1a1a;
-    margin: 0 0 12px 0;
+    color: var(--dark-text);
+    margin: 0 0 var(--space-md) 0;
     letter-spacing: -0.02em;
 }
 
 .card-content p {
-    font-size: 1rem;
+    font-size: var(--text-md);
     line-height: 1.6;
-    color: #555;
+    color: var(--neutral-600);
     margin: 0;
     /* Zorgt dat de tekst na 3 regels netjes wordt afgekapt */
     display: -webkit-box;
@@ -92,7 +80,7 @@
 @media (max-width: 1023px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
+        gap: var(--space-2xl);
     }
 }
 
@@ -100,13 +88,13 @@
 @media (max-width: 600px) {
     /* Kaartjes vullen (vrijwel) de volle schermbreedte. */
     main.container {
-        padding: 0 12px;
+        padding: 0 var(--space-md);
     }
 
     .grid-container {
         grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 10px 0;
+        gap: var(--space-xl);
+        padding: var(--space-sm) 0;
     }
 
     .news-card {
@@ -125,14 +113,14 @@
 .filter-wrapper {
     display: flex;
     justify-content: center;
-    padding: 20px 0;
+    padding: var(--space-xl) 0;
     width: 100%;
 }
 
 .category-bar {
     display: flex;
     flex-direction: row;
-    gap: 12px;
+    gap: var(--space-md);
     /* Reviewronde 2026-09-02: op élke schermbreedte een horizontale slider.
        flex-start + auto-marges op de randknoppen: gecentreerd zolang alles
        past, correct scrollbaar zodra het niet meer past (justify-content:
@@ -145,7 +133,7 @@
     /* Hoogte alvast reserveren: de knoppen worden pas na het laden van de
        data gerenderd en duwden anders het nieuwsgrid omlaag (CLS). */
     min-height: 50px;
-    padding-bottom: 4px;
+    padding-bottom: var(--space-3xs);
 }
 
 .category-bar .filter-btn { flex: 0 0 auto; }
@@ -154,28 +142,28 @@
 
 /* De knoppen zelf (styling gebaseerd op je eerdere kaarten-stijl) */
 .filter-btn {
-    padding: 10px 22px;
+    padding: var(--space-sm) 22px;
     border-radius: 50px;
-    border: 1px solid #f0f0f0;
-    background: #ffffff;
-    color: #555;
+    border: 1px solid var(--neutral-075);
+    background: var(--white);
+    color: var(--neutral-600);
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: var(--text-base);
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(0,0,0,0.02);
 }
 
 .filter-btn:hover {
-    background: #f8f9fa;
+    background: var(--neutral-025);
     transform: translateY(-2px);
 }
 
 .filter-btn.active {
     /* Reviewronde 2 (2026-09-02): witte tekst op het groen. */
-    background: var(--bright-green, #32CD32);
-    color: var(--white, #FFFFFF);
-    border-color: var(--bright-green, #32CD32);
+    background: var(--bright-green, var(--bright-green));
+    color: var(--white, var(--white));
+    border-color: var(--bright-green, var(--bright-green));
     box-shadow: 0 4px 15px rgba(46, 204, 113, 0.2);
 }
 
@@ -185,18 +173,18 @@
    layout-verschuiving zodra de knoppen na het laden verschenen). */
 @media (max-width: 600px) {
     .category-bar {
-        gap: 10px;
-        padding: 0 15px 6px;
+        gap: var(--space-sm);
+        padding: 0 15px var(--space-2xs);
         min-height: 54px;
     }
 
     .filter-btn {
-        padding: 12px 18px;     /* Groter 'tap-oppervlak' voor duimen */
-        font-size: 1rem;
+        padding: var(--space-md) 18px;     /* Groter 'tap-oppervlak' voor duimen */
+        font-size: var(--text-md);
     }
 
     .filter-wrapper {
-        padding: 10px 0;
+        padding: var(--space-sm) 0;
     }
 }
 /* Dagoverzicht (digest, 2026-09-05): badge op de kaart + bronnenlijst
@@ -204,27 +192,30 @@
 .card-badge {
     display: inline-block;
     align-self: flex-start;
-    background: var(--bright-green, #32CD32);
-    color: #fff;
+    background: var(--bright-green, var(--bright-green));
+    color: var(--white);
     font-size: 0.72rem;
     font-weight: 700;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    padding: 3px 10px;
+    padding: 3px var(--space-sm);
     border-radius: 999px;
-    margin-bottom: 8px;
+    margin-bottom: var(--space-xs);
 }
 
 .digest-refs {
     margin-top: 28px;
     padding: 18px 22px;
-    background: #f5faf5;
-    border-left: 4px solid var(--bright-green, #32CD32);
+    background: var(--green-tint);
+    border-left: 4px solid var(--bright-green, var(--bright-green));
     border-radius: 6px;
 }
 
+/* h2 én h3: het archief (910 pagina's) is bewust niet herschreven en gebruikt
+   daar nog h3. Beide selectors dus, anders verliest het archief zijn opmaak. */
+.digest-refs h2,
 .digest-refs h3 {
-    margin: 0 0 10px;
+    margin: 0 0 var(--space-sm);
     font-size: 1.05rem;
 }
 
@@ -234,7 +225,7 @@
 }
 
 .digest-refs li {
-    margin-bottom: 6px;
+    margin-bottom: var(--space-2xs);
 }
 
 /* ==========================================================================
@@ -246,12 +237,12 @@
    een bezoeker binnen drie seconden nog steeds niet wat dit is.
    ========================================================================== */
 .pagina-kop {
-    padding: 50px 20px 10px;
+    padding: 50px var(--space-xl) var(--space-sm);
     text-align: center;
 }
 
 .pagina-kop h1 {
-    font-size: 2.5rem;
+    font-size: var(--text-3xl);
     line-height: 1.2;
     letter-spacing: -0.02em;
     color: var(--dark-text);
@@ -261,7 +252,7 @@
     /* Korte, gecentreerde regel — daarom mag centreren hier; langere lopende
        tekst blijft links uitgelijnd. Max-width houdt de regel leesbaar. */
     max-width: 52ch;
-    margin: 12px auto 0;
+    margin: var(--space-md) auto 0;
     font-size: 1.1rem;
     color: var(--medium-text);
 }
@@ -285,7 +276,7 @@
     }
 
     .news-card--uitgelicht h3 {
-        font-size: 1.8rem;
+        font-size: var(--text-2xl);
     }
 
     .news-card--uitgelicht p {
@@ -295,15 +286,15 @@
 
 @media (max-width: 900px) {
     .pagina-kop {
-        padding: 30px 20px 6px;
+        padding: var(--space-3xl) var(--space-xl) var(--space-2xs);
     }
 
     .pagina-kop h1 {
-        font-size: 1.8rem;
+        font-size: var(--text-2xl);
     }
 
     .pagina-kop p {
-        font-size: 1rem;
+        font-size: var(--text-md);
     }
 }
 
@@ -311,8 +302,8 @@
    laadskeletten, maar een leesbare uitleg met een weg vooruit. */
 .laadfout {
     max-width: 46ch;
-    margin: 60px auto;
-    padding: 40px 30px;
+    margin: var(--space-5xl) auto;
+    padding: var(--space-4xl) var(--space-3xl);
     text-align: center;
     background: var(--white);
     border: 1px solid var(--border-color);
@@ -320,11 +311,27 @@
 }
 
 .laadfout h2 {
-    font-size: 1.5rem;
+    font-size: var(--text-xl);
     color: var(--dark-text);
 }
 
 .laadfout p {
-    margin: 12px 0 24px;
+    margin: var(--space-md) 0 var(--space-2xl);
     color: var(--medium-text);
+}
+
+/* De publicatiedatum. Stond tot 2026-09-24 in een <h2> met wat inline-stijl
+   die de kopopmaak weer wegpoetste: puur om hem grijs en groot te krijgen.
+   Een datum is geen sectiekop, en het was bovendien de enige h2 op de
+   pagina — een schermlezer kreeg zo "kop niveau 2: 23 september 2026" als
+   enige structuur onder de titel. Nu een <p> met een eigen klasse, en de
+   opmaak staat hier waar hij hoort. */
+.artikel-datum {
+    margin: 0 0 var(--space-3xl);
+}
+
+.artikel-datum time {
+    display: block;
+    color: var(--medium-text, var(--medium-text));
+    font-size: var(--text-lg);
 }

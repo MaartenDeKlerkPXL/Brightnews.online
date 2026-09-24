@@ -240,62 +240,24 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   Er is bewust alleen een insert-policy: bezoekers kunnen niet elkaars
   antwoorden lezen. Meelezen doe je in het Supabase-dashboard.
 
-- [ ] **40. Geen ontwerpsysteem: tokens ontbreken en worden omzeild.**
-  *(Uit de UI-doorlichting van 2026-09-23.)* **Geen enkele bezoeker merkt
-  hier iets van** — dit is onderhoud, geen ervaring. Maar zonder dit blijft
-  elke volgende visuele fix een pleister.
-
-  Nagemeten over de hele CSS:
-
-  | Wat | Wat het hoort te zijn | Wat er staat |
-  |---|---|---|
-  | Spatiëring | een 8-punts schaal, ~7 stappen | **24 losse px-waarden**, geen token |
-  | Tekstgroottes | ~4 in een schaal | **25 verschillende**, 11 gerenderd |
-  | Kleur | tokens, semantiek apart | **230 losse hex-waarden, 58 uniek** tegenover 150 token-aanroepen |
-  | Animatieduur | 200/300/400ms, drie easings | **één** `--transition: all 0.3s`, 28× gebruikt |
-
-  De tokens *bestaan* grotendeels al — ze worden alleen omzeild. `#1a1a1a`
-  staat 23× letterlijk in de CSS terwijl `--dark-text` precies die waarde is;
-  `#ffffff` 25× plus `#fff` nog eens 9×. Daarnaast zwerven er grijzen rond die
-  nergens in de tokens staan (`#eee`, `#333`, `#888`, `#f0f0f0`) en `#000`
-  negen keer, terwijl puur zwart juist vermeden hoort te worden.
-
-  **Het scherpste voorbeeld zijn zeven verschillende roden** — `#ff4757`,
-  `#d93025`, `#a32219`, `#d63031`, `#e74c3c`, `#ff2e44`, `#ff4444`. Rood is
-  een semantische kleur: die hoort één waarde te hebben die overal hetzelfde
-  betekent.
-
-  Dat dit geen theorie is bleek meteen bij punt 38: de contrastfout in de
-  footer kwam van een generieke `footer p { color: #99A199 }` die het won van
-  de regel eronder. Eén los grijs, op de verkeerde plek, jarenlang onzichtbaar.
-
-  **Werk:** `--space-*`, `--text-*` en `--color-error` toevoegen, en daarna de
-  losse waarden vervangen. Kan stap voor stap per bestand. *(Maarten)*
-
-- [ ] **41. Lagere prioriteit uit de UI-doorlichting — bewust niet gedaan.**
-  *(2026-09-23.)* Deze kwamen uit dezelfde doorlichting maar wegen minder
-  zwaar; ze staan hier zodat ze niet verdwijnen, niet omdat ze nu moeten.
+- [ ] **41. Lagere prioriteit uit de UI-doorlichting — nog twee over.**
+  *(2026-09-23; drie van de vijf afgewerkt op 2026-09-24.)* Deze kwamen uit
+  dezelfde doorlichting maar wegen minder zwaar; ze staan hier zodat ze niet
+  verdwijnen, niet omdat ze nu moeten.
 
   1. **De CSS is desktop-first gebouwd.** 12 media-queries, allemaal
      `max-width`, nul `min-width`. De theorie wil het omgekeerd: klein scherm
      eerst, dan naar boven verrijken. **Eerlijk oordeel: dit is netheid, geen
      winst** — nagemeten loopt de site nergens over, ook niet op 320px (dat
      is 400% zoom). Alleen aanpakken als de CSS toch op de schop gaat.
-  2. **Aanraakvlakken.** 13 elementen zijn op een telefoon lager dan 32px,
-     vooral de footerlinks (18px hoog). De richtlijn noemt 44px comfortabel.
-     Dit is wél echte winst, en het is weinig werk.
   3. **Eén lettertype, de systeemstack.** Draagt geen merk: op elk toestel
      ziet het er anders uit en het is per definitie neutraal. Twee families
      (kop + tekst) uit Google Fonts zouden het verschil maken tussen "een
-     nieuwssite" en "déze nieuwssite". De duurste ingreep op de lijst.
-  4. **Koppenstructuur.** De homepage sprong van `h1` naar `h3` (nu opgelost
-     door punt 39), maar op artikelpagina's is de enige `h2` de **datum** —
-     dat is geen sectiekop. En de artikeltekst zelf is één alinea van 600–750
-     tekens zonder tussenkoppen. Raakt het artikelsjabloon, dus hoort bij de
-     bundel van punt 36.
-  5. **Dode CSS.** `.source-tag` combineert vier overtredingen in één
-     component (11,2px, ALL CAPS, uitgerekte tracking, `#888` op 3,5:1) maar
-     wordt nergens meer gerenderd. Weggooien.
+     nieuwssite" en "déze nieuwssite". De duurste ingreep op de lijst, en een
+     ontwerpbeslissing — *(Maarten)*.
+
+  Onderdeel 2 (aanraakvlakken), 4 (koppenstructuur) en 5 (dode CSS) zijn op
+  2026-09-24 gedaan; zie het afgeronde blok onderaan.
 
 - [ ] **42. Het feedbackvenster is een modal, en dat botst met je eigen
   huisregel.** *(2026-09-23.)* In de uiux-design-skill staat jouw staande
@@ -429,6 +391,95 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
   je niet wilt ontdekken wanneer de eerste betalende bezoeker het ontdekt.
 
 ## Afgerond
+
+- [x] **40 + 41 (deels). Ontwerptokens, aanraakvlakken, koppen en dode CSS
+  (2026-09-24).** Vier dingen uit dezelfde doorlichting, samen gedaan omdat ze
+  allemaal in dezelfde CSS-bestanden zitten.
+
+  **Punt 40 — de tokens.** Er stonden 226 losse hex-waarden in echte CSS-regels
+  (58 unieke) tegenover 168 token-aanroepen. Nu: **9 los, 385 via een token.**
+  Wat er is bijgekomen in `:root` van `global.css`:
+  - een **neutralenreeks** van twaalf stappen (`--neutral-900` t/m
+    `--neutral-025`). De waarden zijn bewust de bestáánde grijzen, geen nette
+    ronde reeks: alleen tinten die minder dan tien punten uit elkaar lagen
+    zijn samengevoegd. Daarmee verdwijnen `#eee`, `#333`, `#888`, `#f0f0f0`
+    én de handvol blauwgrijzen die ooit uit een bootstrap-voorbeeld zijn
+    meegekomen (`#495057`, `#6c757d`, `#e9ecef`, `#f1f3f5`).
+  - **`--color-error` en drie broertjes.** Rood stond op zeven waarden. Drie
+    daarvan werden gebruikt als knopvlak met witte tekst erop, en **die
+    haalden het contrast niet**: wit op `#ff4757` is 3,34:1, ruim onder de
+    4,5:1. Dat raakte "Uitloggen" en "Abonnement opzeggen". Wit op
+    `--color-error` is 4,77:1, op `--color-error-hover` 7,50:1. Eén waarde per
+    rol, niet één voor alles — een vlak en een tekstkleur kunnen nu eenmaal
+    niet dezelfde zijn.
+  - **`--space-*` (11 stappen) en `--text-*` (8 stappen)**, plus
+    `--duur-snel/-basis/-traag` en `--easing` naast de bestaande
+    `--transition`.
+  - `--green-tint` voor de twee bijna-witte groene vlakken. Géén tweede
+    merkgroen: het is een achtergrond, geen accent.
+
+  **Wat er bewust níét gebeurd is.** De spatiëring is nu voor 255 van de 376
+  waarden een token, de tekstgrootte voor 64 van de 113. De staart (15, 25,
+  14, 18, 22px; 0.9rem, 1.6rem, 1.1rem) staat er nog los bij. Die echt
+  terugbrengen tot zeven stappen en vier maten betekent 20px naar 24px duwen
+  en 0.9rem naar 0.95rem — dat verschuift het ritme van élke kaart, knop en
+  kolom en breekt regelafbrekingen. **Dat is een herontwerp, geen opruiming,
+  en het hoort met Maarten besproken te worden.** Ook blijven staan: de
+  schaduwkleur van het laadskelet en het gouden verloop van de premiumbadge
+  (twee op zichzelf staande componenten), en `#2bb62b` — de hoverkleur van
+  "Meer laden", want een tweede groen als token wilde Maarten expliciet niet.
+
+  **Nagemeten dat er niets verschoof.** Van alle berekende stijlen (kleur,
+  achtergrond, tekstgrootte, padding, marge, randkleur, breedte, hoogte) op
+  vijf pagina's is een voor-en-na-vergelijking gemaakt, element voor element.
+  Op de homepage: 2 van de 316 elementen anders, allebei minder dan tien
+  punten (een randje en een knopvlak). Op `profiel.html` 12 van de 249, op
+  `abonnementen.html` 6 van de 195, op `Privacy.html` en `over-ons.html` 2 van
+  de ~190, op een artikelpagina 5 van de 223. **Alle verschillen gaan de goede
+  kant op:** puur zwart (`#000`) werd bijna-zwart, `#999` werd `#888`
+  (donkerder), blauwgrijze tekst werd het groengrijs dat de site al voerde, en
+  de rode knop kreeg zijn contrast terug. Nul verschillen in breedte, hoogte,
+  padding of marge — de spatiëring is alleen op exacte treffers vervangen.
+
+  Tijdens de eerste poging gingen `#444` en `#555` allebei naar `#666`, wat
+  dertig elementen *lichter* maakte. De vergelijking ving dat op; daarna is de
+  reeks herschreven met exacte waarden.
+
+  **Punt 41.2 — aanraakvlakken.** 16 elementen waren op een telefoon van 375px
+  lager dan 44px; nu nog één. De footerlinks waren 18px: de regelafstand zat
+  als `margin` op de `<li>`, dus de ruimte tússen de links was niet klikbaar
+  en je mikte op een lijntje tekst. Die marge is verhuisd naar het
+  aanraakvlak zelf. **De footer wordt er op desktop niets hoger van** — de
+  kolommen worden toch al uitgerekt naar de hoogste (333px gemeten, de lijst
+  groeide van 189 naar 259px). Ook aangepakt: hamburgerknop (35×29 → 44×44),
+  taalknop (38 → 44, met een randradius die bij die hoogte hoort), de vijf
+  taalopties (42 → 44), de mobiele menulinks (31 → 44) en de twee
+  cookieknoppen (35 → 44). De enige die overblijft is "Lees meer" middenin
+  een zin in de cookiebalk — een link in lopende tekst hoort daar niet
+  uitgerekt te worden, en de richtlijn zondert die ook expliciet uit.
+
+  **Punt 41.4 — koppenstructuur.** De publicatiedatum stond in een `<h2>` met
+  wat inline-stijl die de kopopmaak weer wegpoetste, puur om hem grijs en
+  groot te krijgen. Het was bovendien de enige `h2` op een artikelpagina: een
+  schermlezer kreeg "kop niveau 2: 16 september 2026" als enige structuur
+  onder de titel. Nu een `<p class="artikel-datum">` met de opmaak in de CSS
+  — en meteen `#888` eraf, dat haalde het contrast niet. Daarnaast zijn
+  "Premium" en "Bronnen" van `h3` naar `h2` gegaan (ze waren subsecties van
+  het artikel, maar stonden een niveau te diep) en de drie footerkoppen van
+  `h4` naar `h3` op alle tien de pagina's plus het sjabloon. Een artikelpagina
+  leest nu h1 → h2 → h2 → h3, zonder sprongen. **Het archief is bewust niet
+  herschreven** (910 pagina's), dus de CSS-selectors dekken nu zowel het oude
+  als het nieuwe niveau.
+
+  Wat hier *niet* onder valt: de artikeltekst zelf is nog één alinea zonder
+  tussenkoppen. Dat is een kwestie van de schrijfprompt, niet van het sjabloon.
+
+  **Punt 41.5 — dode CSS.** `.source-tag` combineerde vier overtredingen in
+  één component (11,2px, ALL CAPS, uitgerekte tracking, `#888` op 3,5:1) maar
+  werd nergens meer gerenderd. Weg.
+
+  Oorspronkelijke tekst van punt 40 stond hieronder en is verwijderd bij het
+  afvinken; de meetwaarden erin staan hierboven samengevat.
 
 - [x] **16 + 36. Artikelen linken nu naar elkaar, en het hele archief staat op
   één sjabloon (2026-09-23).** Samen gedaan, want ze raken allebei

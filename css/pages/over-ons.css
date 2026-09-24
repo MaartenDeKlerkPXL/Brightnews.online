@@ -6,13 +6,13 @@
 
 .badge {
     background-color: var(--bright-yellow);
-    padding: 6px 16px;
+    padding: var(--space-2xs) var(--space-lg);
     border-radius: 50px;
     font-weight: 700;
-    font-size: 0.85rem;
+    font-size: var(--text-sm);
     color: var(--dark-text);
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: var(--space-xl);
 }
 .vrolijk-sectie {
     margin-top: 80px;
@@ -22,8 +22,8 @@
 .icon-features {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin: 60px 0;
+    gap: var(--space-4xl);
+    margin: var(--space-5xl) 0;
     flex-wrap: wrap;
 }
 
@@ -39,7 +39,7 @@
     height: 110px;
     line-height: 110px;
     border-radius: 50%;
-    margin: 0 auto 24px;
+    margin: 0 auto var(--space-2xl);
     box-shadow: var(--shadow-md);
     display: flex;
     align-items: center;
@@ -48,25 +48,25 @@
 
 /* AI Workflow Section */
 .how-it-works-simple {
-    background-color: #F0FFF0; /* Helder en fris groen */
-    padding: 80px 40px;
+    background-color: var(--green-tint); /* Helder en fris groen */
+    padding: 80px var(--space-4xl);
     border-radius: var(--radius-lg);
-    margin: 40px 0;
+    margin: var(--space-4xl) 0;
 }
 
 .simple-steps {
     list-style: none;
-    margin-top: 40px;
+    margin-top: var(--space-4xl);
 }
 
 .simple-steps li {
     background: var(--white);
-    margin-bottom: 16px;
-    padding: 24px;
+    margin-bottom: var(--space-lg);
+    padding: var(--space-2xl);
     border-radius: var(--radius-md);
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: var(--space-xl);
     box-shadow: var(--shadow-sm);
 }
 
@@ -80,25 +80,25 @@
     .simple-steps li {
         flex-direction: column;
         align-items: flex-start;
-        gap: 8px;
-        padding: 20px;
+        gap: var(--space-xs);
+        padding: var(--space-xl);
     }
 
     /* Breedtebeperking van de titels opheffen */
     .simple-steps li strong {
         min-width: auto;
         display: block;
-        font-size: 1.2rem;
+        font-size: var(--text-lg);
     }
 
     /* Sectie padding aanpassen voor kleine schermen */
     .how-it-works-simple {
-        padding: 40px 20px;
+        padding: var(--space-4xl) var(--space-xl);
     }
 
     /* Icon features ook centreren op mobiel */
     .icon-features {
-        gap: 30px;
+        gap: var(--space-3xl);
     }
 
     .feature-item {
@@ -118,7 +118,7 @@
     justify-content: center;
     width: 90px;
     height: 90px;
-    margin: 0 auto 24px;
+    margin: 0 auto var(--space-2xl);
     border-radius: 50%;
     background: var(--white);
     box-shadow: var(--shadow-md);

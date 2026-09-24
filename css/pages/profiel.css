@@ -3,14 +3,14 @@
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - 160px); /* Vult scherm minus nav/footer */
-    padding: 40px 20px;
-    background: linear-gradient(180deg, var(--white) 0%, #f0fff0 100%); /* Zachte groene gloed onderin */
+    padding: var(--space-4xl) var(--space-xl);
+    background: linear-gradient(180deg, var(--white) 0%, var(--green-tint) 100%); /* Zachte groene gloed onderin */
 }
 
 /* 2. Tekst & Koppen */
 .form-container h2 {
     font-size: 2rem;
-    margin-bottom: 12px;
+    margin-bottom: var(--space-md);
     color: var(--dark-text);
     letter-spacing: -0.5px;
 }
@@ -18,14 +18,14 @@
 .form-container p {
     color: var(--medium-text);
     margin-bottom: 35px;
-    font-size: 1rem;
+    font-size: var(--text-md);
 }
 
 /* 3. Formulier Elementen */
 form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: var(--space-xl);
 }
 
 .input-group {
@@ -38,16 +38,16 @@ form {
 }
 .full-width {
     width: 100%;
-    margin-top: 10px;
-    padding: 16px;
-    font-size: 1rem;
+    margin-top: var(--space-sm);
+    padding: var(--space-lg);
+    font-size: var(--text-md);
     letter-spacing: 0.5px;
 }
 
 /* 5. Wisselen tussen Login/Register */
 .auth-switch {
-    margin-top: 30px;
-    font-size: 0.95rem;
+    margin-top: var(--space-3xl);
+    font-size: var(--text-base);
     color: var(--medium-text);
 }
 
@@ -72,7 +72,7 @@ form {
 /* 7. Mobiele Aanpassingen */
 @media (max-width: 480px) {
     .auth-box {
-        padding: 40px 25px;
+        padding: var(--space-4xl) 25px;
         box-shadow: none; /* Cleaner op mobiel */
         border: none;
         background: transparent;
@@ -97,15 +97,15 @@ form {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
-    background: #ffffff;
-    border: 2px solid #ddd;
+    gap: var(--space-sm);
+    background: var(--white);
+    border: 2px solid var(--neutral-200);
     border-radius: 12px;
-    padding: 14px 16px;
+    padding: 14px var(--space-lg);
     cursor: pointer;
     list-style: none;
     font-weight: 600;
-    color: var(--dark-text, #1A1A1A);
+    color: var(--dark-text, var(--dark-text));
     transition: border-color 0.2s ease;
 }
 
@@ -134,11 +134,11 @@ form {
     top: 0;
     left: 0;
     width: 100%;
-    background: #f9f9f9; /* Lichtgrijze achtergrond voor contrast */
-    border: 1px solid #ddd;
+    background: var(--neutral-025); /* Lichtgrijze achtergrond voor contrast */
+    border: 1px solid var(--neutral-200);
     border-radius: 8px;
-    margin-top: 10px;
-    padding: 10px;
+    margin-top: var(--space-sm);
+    padding: var(--space-sm);
     box-shadow: none; /* Geen schaduw nodig omdat het in de kaart zit */
     z-index: 1;
 }
@@ -147,18 +147,18 @@ form {
 .lang-option-row {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: var(--space-sm);
     cursor: pointer;
     transition: background 0.2s;
     border-radius: 5px;
 }
 
 .lang-option-row:hover {
-    background-color: #f0f0f0;
+    background-color: var(--neutral-075);
 }
 
 .lang-option-row input[type="radio"] {
-    margin-right: 12px;
+    margin-right: var(--space-md);
 }
 
 /* Verwijder de standaard animatie van details als die in de weg zit */
@@ -193,12 +193,12 @@ body {
 
 /* 3. De kaart: volledig flexibel in hoogte */
 .auth-box-centered {
-    background: #ffffff;
+    background: var(--white);
     width: 100%;
     max-width: 450px;
     border-radius: 24px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.06);
-    border: 1px solid #f0f2f5;
+    border: 1px solid var(--neutral-075);
     position: relative;
     height: auto;        /* Laat de kaart groeien bij meer inhoud */
     overflow: visible;   /* CRUCIAAL: laat de dropdown de kaart fysiek groter maken */
@@ -210,11 +210,11 @@ body {
 .lang-dropdown-list {
     position: relative;  /* DIT DRUKT DE REST VAN DE KAART EN DE PAGINA OMLAAG */
     width: 100%;
-    background: #fff;
-    border-top: 1px solid #eee;
+    background: var(--white);
+    border-top: 1px solid var(--neutral-100);
     display: flex;
     flex-direction: column;
-    padding: 10px 0;
+    padding: var(--space-sm) 0;
     z-index: 1;
 }
 
@@ -254,7 +254,7 @@ body {
 }
 
 .form-container {
-    padding: 50px 40px;
+    padding: 50px var(--space-4xl);
 }
 
 .form-container.hidden {
@@ -270,28 +270,28 @@ body {
    toont er nu één; verborgen panelen staan op display:none). */
 .auth-header h1,
 .auth-header h2 {
-    font-size: 1.8rem;
+    font-size: var(--text-2xl);
     font-weight: 800;
-    margin-bottom: 10px;
+    margin-bottom: var(--space-sm);
     letter-spacing: -0.02em;
 }
 
 .auth-header p {
-    color: #666;
-    font-size: 1rem;
+    color: var(--neutral-500);
+    font-size: var(--text-md);
 }
 
 .input-group {
-    margin-bottom: 20px;
+    margin-bottom: var(--space-xl);
 }
 .input-group label {
     display: block;
-    font-size: 0.85rem;
+    font-size: var(--text-sm);
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: var(--space-xs);
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: #888;
+    color: var(--neutral-400);
     text-align: left;
 }
 
@@ -299,35 +299,35 @@ body {
     width: 100%;
     padding: 14px 18px;
     border-radius: 12px;
-    border: 1px solid #eee;
-    background: #f9f9f9;
-    font-size: 1rem;
+    border: 1px solid var(--neutral-100);
+    background: var(--neutral-025);
+    font-size: var(--text-md);
     transition: all 0.2s ease;
 }
 
 .input-group input:focus {
     outline: none;
     border-color: var(--bright-green);
-    background: #fff;
+    background: var(--white);
     box-shadow: 0 0 0 4px rgba(50, 205, 50, 0.1);
 }
 
 .btn-primary-editorial {
     width: 100%;
-    padding: 16px;
+    padding: var(--space-lg);
     background: var(--bright-green);
-    color: var(--white, #FFFFFF);
+    color: var(--white, var(--white));
     border: none;
     border-radius: 50px;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: var(--text-md);
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-top: 10px;
+    margin-top: var(--space-sm);
 }
 
 .btn-primary-editorial:hover {
-    background: #333;
+    background: var(--neutral-800);
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
@@ -336,14 +336,14 @@ body {
     text-align: center;
     margin-top: 25px;
     font-size: 0.9rem;
-    color: #666;
+    color: var(--neutral-500);
 }
 
 .auth-switch a {
-    color: #000;
+    color: var(--dark-text);
     font-weight: 700;
     text-decoration: none;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--neutral-200);
 }
 
 /* De zwevende terugknop */
@@ -353,14 +353,14 @@ body {
     left: 20px;
     background: white;
     border: none;
-    padding: 10px 20px;
+    padding: var(--space-sm) var(--space-xl);
     border-radius: 50px;
     font-weight: 700;
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--space-xs);
     transition: transform 0.2s;
 }
 
@@ -378,14 +378,14 @@ body {
     position: absolute;
     right: 15px;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: var(--text-lg);
 }
 
 /* Logout knop styling */
 .btn-logout-editorial {
     width: 100%;
-    padding: 16px;
-    background: #ff4757;
+    padding: var(--space-lg);
+    background: var(--color-error);
     color: white;
     border: none;
     border-radius: 50px;
@@ -396,8 +396,8 @@ body {
 
 /* Error Toast Styling (in global.css) */
 .bright-toast.error {
-    border-left: 4px solid #ff4757;
-    background: #fffafa;
+    border-left: 4px solid var(--color-error);
+    background: var(--color-error-bg);
 }
 /* Wachtwoord wrapper voor het oogje */
 .password-wrapper {
@@ -416,31 +416,31 @@ body {
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: var(--text-lg);
     user-select: none;
 }
 
 /* De brede 'Back to Home' knop */
 .btn-back-full {
     width: 100%;
-    padding: 16px;
-    background: #ffffff;
-    border: 1px solid #eee;
+    padding: var(--space-lg);
+    background: var(--white);
+    border: 1px solid var(--neutral-100);
     border-radius: 16px;
     font-weight: 700;
-    font-size: 1rem;
-    color: #1a1a1a;
+    font-size: var(--text-md);
+    color: var(--dark-text);
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: var(--space-md);
     transition: all 0.2s ease;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 .btn-back-full:hover {
-    background: #fcfcfc;
+    background: var(--neutral-025);
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
@@ -448,8 +448,8 @@ body {
 /* Logout knop rood accent */
 .btn-logout-editorial {
     width: 100%;
-    padding: 16px;
-    background: #ff4757;
+    padding: var(--space-lg);
+    background: var(--color-error);
     color: white;
     border: none;
     border-radius: 50px;
@@ -459,39 +459,39 @@ body {
 }
 
 .btn-logout-editorial:hover {
-    background: #ff2e44;
+    background: var(--color-error-hover);
 }
 .forgot-password {
     text-align: center;
-    margin-top: 8px;
-    font-size: 0.85rem;
+    margin-top: var(--space-xs);
+    font-size: var(--text-sm);
 }
 
 .forgot-password a {
-    color: #888;
+    color: var(--neutral-400);
     text-decoration: none;
     transition: color 0.2s;
 }
 
 .forgot-password a:hover {
-    color: #000;
+    color: var(--dark-text);
 }
 .btn-back-minimal {
     background: transparent;
     border: none;
-    color: #888;
+    color: var(--neutral-400);
     font-weight: 700;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--space-xs);
     cursor: pointer;
-    padding: 10px 0;
+    padding: var(--space-sm) 0;
     transition: color 0.2s;
     font-size: 0.9rem;
 }
 
 .btn-back-minimal:hover {
-    color: #000;
+    color: var(--dark-text);
 }
 
 .top-nav-alignment {
@@ -499,24 +499,24 @@ body {
     max-width: 1200px; /* Match dit met je navigatie-breedte */
     display: flex;
     justify-content: flex-start; /* Knop naar links */
-    padding: 0 20px;
+    padding: 0 var(--space-xl);
     margin: 3rem auto 0 auto;
 
 }
 
 /* De Oude Opmaak: Witte Pill-button met schaduw */
 .btn-back-pill {
-    background: #ffffff;
+    background: var(--white);
     border: none;
-    padding: 10px 22px;
+    padding: var(--space-sm) 22px;
     border-radius: 50px;
     font-weight: 700;
     font-size: 0.9rem;
-    color: #1a1a1a;
+    color: var(--dark-text);
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--space-xs);
     box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* De diepte die je mooi vond */
     transition: all 0.2s ease;
     margin-bottom: 1rem;
@@ -529,9 +529,9 @@ body {
 
 .btn-primary-editorial {
     background: var(--bright-green);
-    color: var(--white, #FFFFFF);
+    color: var(--white, var(--white));
     border-radius: 50px;
-    padding: 16px;
+    padding: var(--space-lg);
     border: none;
     font-weight: 700;
     width: 100%;
@@ -541,17 +541,17 @@ body {
 
 /* De 'Pill' knop opmaak */
 .back-btn-pill {
-    background: #ffffff;
+    background: var(--white);
     border: none;
-    padding: 10px 22px;
+    padding: var(--space-sm) 22px;
     border-radius: 50px;
     font-weight: 700;
     font-size: 0.9rem;
-    color: #1a1a1a;
+    color: var(--dark-text);
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--space-xs);
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     transition: all 0.2s ease;
 }
@@ -577,7 +577,7 @@ body {
 .btn-upgrade-premium {
     width: 100%;
     padding: 14px;
-    background: linear-gradient(135deg, #000 0%, #333 100%);
+    background: linear-gradient(135deg, var(--dark-text) 0%, var(--neutral-800) 100%);
     color: white;
     border: none;
     border-radius: 12px;
@@ -595,62 +595,62 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 20px;
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
 }
 
 .status-label {
-    font-size: 0.85rem;
-    color: #6c757d;
+    font-size: var(--text-sm);
+    color: var(--medium-text);
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
 }
 
 #upgrade-section p {
-    font-size: 0.95rem;
-    color: #495057;
+    font-size: var(--text-base);
+    color: var(--medium-text);
     line-height: 1.5;
     margin: 15px 0;
 }
 .status-card {
-    background: #ffffff;
+    background: var(--white);
     border-radius: 24px;
-    padding: 30px;
+    padding: var(--space-3xl);
     margin: 25px 0;
-    border: 1px solid #f0f2f5;
+    border: 1px solid var(--neutral-075);
     box-shadow: 0 10px 30px rgba(0,0,0,0.04);
     text-align: center;
 }
 
 .status-info {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: var(--space-xl);
 }
 
 .status-label {
     display: block;
-    font-size: 0.75rem;
+    font-size: var(--text-xs);
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    color: #888;
-    margin-bottom: 10px;
+    color: var(--neutral-400);
+    margin-bottom: var(--space-sm);
     font-weight: 700;
 }
 .badge {
     display: inline-block;
-    padding: 10px 24px;
+    padding: var(--space-sm) var(--space-2xl);
     border-radius: 100px;
     font-weight: 800;
-    font-size: 0.95rem;
+    font-size: var(--text-base);
     text-transform: uppercase;
     transition: all 0.3s ease;
 }
 
 .badge-free {
-    background: #f4f6f8;
-    color: #555;
-    border: 1px solid #e1e4e8;
+    background: var(--neutral-050);
+    color: var(--neutral-600);
+    border: 1px solid var(--neutral-200);
 }
 
 .badge-premium {
@@ -662,15 +662,15 @@ body {
 
 /* Upgrade Sectie */
 .upgrade-promo {
-    background: #fafafa;
+    background: var(--neutral-025);
     border-radius: 16px;
-    padding: 20px;
-    margin-top: 20px;
+    padding: var(--space-xl);
+    margin-top: var(--space-xl);
 }
 
 .upgrade-promo p {
     font-size: 0.9rem;
-    color: #444;
+    color: var(--neutral-700);
     margin-bottom: 15px;
 }
 .toggle-password {
@@ -678,17 +678,17 @@ body {
     user-select: none; /* Voorkomt dat je de emoji per ongeluk selecteert */
 }
 .discount-section {
-    margin-top: 30px;
+    margin-top: var(--space-3xl);
     padding: 25px 25px 0 25px;
-    background: #fdfdfd;
-    border: 1px dashed #ddd;
+    background: var(--neutral-025);
+    border: 1px dashed var(--neutral-200);
     border-radius: 20px;
     text-align: center;
 }
 
 .promo-input-group {
     display: flex;
-    gap: 10px;
+    gap: var(--space-sm);
     text-align: center;
     max-width: 400px;
     margin: 15px auto;
@@ -696,18 +696,18 @@ body {
 
 .promo-input-group input {
     flex: 1;
-    padding: 12px 20px;
+    padding: var(--space-md) var(--space-xl);
     border-radius: 50px;
-    border: 1px solid #eee;
-    font-size: 1rem;
+    border: 1px solid var(--neutral-100);
+    font-size: var(--text-md);
 }
 
 #apply-promo-btn {
-    background: #000;
+    background: var(--dark-text);
     width: 100%;
     color: white;
     border: none;
-    padding: 12px 25px;
+    padding: var(--space-md) 25px;
     border-radius: 50px;
     font-weight: 700;
     cursor: pointer;
@@ -724,25 +724,25 @@ body {
     flex-direction: column; /* Dit zet de knop ONDER het vakje */
     gap: 15px;              /* Ruimte tussen het vakje en de knop */
     max-width: 350px;       /* Iets smaller voor een chique look */
-    margin: 20px auto;      /* Centreren in het midden */
+    margin: var(--space-xl) auto;      /* Centreren in het midden */
 }
 /* Container styling */
 .lang-foldable {
-    background: #f9f9f9;
-    border: 1px solid #eee;
+    background: var(--neutral-025);
+    border: 1px solid var(--neutral-100);
     border-radius: 12px;
     position: relative;
 }
 
 /* De bovenste balk (Summary) */
 .lang-foldable summary {
-    padding: 14px 20px;
+    padding: 14px var(--space-xl);
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1rem;
-    color: #333;
+    font-size: var(--text-md);
+    color: var(--neutral-800);
     font-weight: 500;
     cursor: pointer;
 }
@@ -750,13 +750,13 @@ body {
 /* Verberg het standaard driehoekje van de browser */
 .lang-foldable summary::-webkit-details-marker { display: none; }
 .lang-text {
-    padding-left: 20px;
+    padding-left: var(--space-xl);
 }
 
 .lang-option-row {
     display: flex;
     align-items: center;
-    padding: 12px 28px 12px 28px;
+    padding: var(--space-md) 28px var(--space-md) 28px;
     cursor: pointer;
     transition: background 0.2s, padding-left 0.2s; /* Subtiele animatie bij hover */
 }
@@ -767,15 +767,15 @@ body {
 }
 
 .lang-text {
-    font-size: 0.95rem;
-    color: #555;
+    font-size: var(--text-base);
+    color: var(--neutral-600);
     font-weight: 500;
     text-transform: none; /* Forceert normale tekst (geen hoofdletters) */
 }
 
 /* Hover effect: precies zoals in je navigatie */
 .lang-option-row:hover {
-    background-color: #f5f5f5;
+    background-color: var(--neutral-050);
     padding-left: 32px;
 }
 
@@ -785,12 +785,12 @@ body {
 
 /* Geselecteerde staat (optioneel, voor visuele feedback) */
 .lang-option-row:has(input:checked) {
-    background-color: #fafafa;
+    background-color: var(--neutral-025);
 }
 
 .lang-option-row:has(input:checked) .lang-text {
     font-weight: 700;
-    color: #000;
+    color: var(--dark-text);
 }
 #selected-lang-label {
     text-transform: none;
@@ -798,8 +798,8 @@ body {
 }
 .btn-cancel {
     width: 100%;
-    padding: 16px;
-    background: #ff4757;
+    padding: var(--space-lg);
+    background: var(--color-error);
     color: white;
     border: none;
     border-radius: 50px;
@@ -810,7 +810,7 @@ body {
 }
 
 .btn-cancel:hover {
-    background: #ff4444;
+    background: var(--color-error-hover);
     color: white;
 }
 

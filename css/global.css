@@ -26,10 +26,92 @@
     --radius-md: 12px;
     --radius-sm: 8px;
 
+    /* Neutralen — 2026-09-24.
+       Hiervoor zwierven er 20 losse grijzen door de CSS (#eee, #333, #888,
+       #f0f0f0, plus een handvol blauwgrijzen die ooit uit een bootstrap-
+       voorbeeld zijn meegekomen). Die zijn hier samengetrokken tot één reeks.
+       De waarden zijn bewust de bestáánde grijzen, niet een nette ronde reeks:
+       alleen tinten die minder dan tien punten uit elkaar lagen zijn
+       samengevoegd. Nagemeten met een voor-en-na-vergelijking van alle
+       berekende stijlen op de homepage: twee elementen schuiven een paar
+       punten op (een randje en een knopvlak), de rest is identiek. --dark-text en --medium-text horen bij deze reeks en staan
+       hierboven omdat ze er al waren. */
+    --neutral-900: #111111;       /* alleen voor koppen die extra donker moeten */
+    --neutral-800: #333333;
+    --neutral-700: #444444;
+    --neutral-600: #555555;
+    --neutral-500: #666666;
+    --neutral-400: #888888;
+    --neutral-300: #CCCCCC;
+    --neutral-200: #DDDDDD;
+    --neutral-100: #EEEEEE;       /* de standaard scheidingslijn */
+    --neutral-075: #F0F0F0;
+    --neutral-050: #F5F5F5;
+    --neutral-025: #F9F9F9;       /* zachtste vlak vóór wit */
+
+    /* Twee bijna-witte groene tinten (#F0FFF0 en #F5FAF5) deden hetzelfde
+       werk: een zacht groen vlak. Samengevoegd tot één. Dit is géén tweede
+       merkgroen — het is een achtergrond, geen accent. */
+    --green-tint: #F0FFF0;
+
+    /* Semantische kleuren.
+       Rood stond op zeven verschillende waarden (#ff4757, #d93025, #a32219,
+       #d63031, #e74c3c, #ff2e44, #ff4444). Drie daarvan werden gebruikt als
+       knopvlak met witte tekst erop, en die haalden het contrast niet:
+       wit op #ff4757 is 3,34:1, ruim onder de 4,5:1. Deze reeks lost dat op —
+       wit op --color-error is 4,77:1, op --color-error-hover 7,50:1.
+       Eén waarde per rol, niet één waarde voor alles: een vlak en een
+       tekstkleur kunnen nu eenmaal niet dezelfde zijn. */
+    --color-error: #D93025;       /* vlak, rand, accent — wit erop mag */
+    --color-error-hover: #A32219; /* donkerder vlak bij hover */
+    --color-error-text: #A32219;  /* rode tekst op licht — 6,79:1 */
+    --color-error-bg: #FDF1F0;    /* zachte rode tint als achtergrond */
+    --color-info: #3498DB;
+
+    /* Spatiëring.
+       Afgeleid uit wat de site al doet, niet uit het leerboek: een zuivere
+       8-puntsschaal zou 20px naar 24px duwen en 10px naar 8px, en daarmee
+       het ritme van élke kaart, knop en kolom verschuiven. Dat is een
+       herontwerp, geen opruiming. Deze tien stappen dekken de waarden die
+       samen het overgrote deel van de CSS vullen; de staart (14, 18, 22, 26,
+       34, 36, 45px) staat bewust nog los — zie punt 40 in TODO.md. */
+    --space-3xs: 4px;
+    --space-2xs: 6px;
+    --space-xs: 8px;
+    --space-sm: 10px;
+    --space-md: 12px;
+    --space-lg: 16px;
+    --space-xl: 20px;
+    --space-2xl: 24px;
+    --space-3xl: 30px;
+    --space-4xl: 40px;
+    --space-5xl: 60px;
+
+    /* Tekstgroottes. Zelfde voorbehoud als bij de spatiëring: dit zijn de
+       maten die de site al voert. Ze echt terugbrengen tot vier verschuift
+       regelafbrekingen en is een ontwerpbeslissing, geen refactor. */
+    --text-xs: 0.75rem;
+    --text-sm: 0.85rem;
+    --text-base: 0.95rem;
+    --text-md: 1rem;
+    --text-lg: 1.2rem;
+    --text-xl: 1.5rem;
+    --text-2xl: 1.8rem;
+    --text-3xl: 2.5rem;
+
     /* Effecten */
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
     --shadow-md: 0 10px 25px rgba(50, 205, 50, 0.08);
+
+    /* Beweging. --transition was de enige duur die bestond en stond 28x aan;
+       de drie stappen hieronder komen uit de richtlijn: korte reacties snel,
+       overgangen middellang, grote vlakken traag. --transition blijft staan
+       zodat bestaande regels blijven werken. */
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --duur-snel: 0.2s;
+    --duur-basis: 0.3s;
+    --duur-traag: 0.4s;
+    --easing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 html {
     scroll-behavior: auto !important; /* Forceert instant scroll ipv vloeiend */
@@ -65,7 +147,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 var(--space-2xl);
 }
 
 /* 5. Typografie */
@@ -91,7 +173,7 @@ p {
     padding: 14px 28px;
     border-radius: var(--radius-md);
     font-weight: 700;
-    font-size: 1rem;
+    font-size: var(--text-md);
     cursor: pointer;
     transition: var(--transition);
     text-align: center;
@@ -117,7 +199,7 @@ p {
     background-color: transparent;
     color: var(--dark-text);
     border: 2px solid var(--border-color);
-    padding: 12px 26px;
+    padding: var(--space-md) 26px;
     border-radius: var(--radius-md);
     font-weight: 600;
     cursor: pointer;
@@ -143,15 +225,15 @@ p {
     top: 100px;
     left: 50%;
     transform: translateX(-50%); /* Dit centreert hem horizontaal */
-    background: #ffffff;
-    padding: 16px 28px;
+    background: var(--white);
+    padding: var(--space-lg) 28px;
     border-radius: 50px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     z-index: 9999; /* Zorg dat hij overal bovenop ligt */
     display: flex;
     align-items: center;
-    gap: 12px;
-    border-left: 4px solid #000;
+    gap: var(--space-md);
+    border-left: 4px solid var(--dark-text);
     min-width: 300px;
     justify-content: center;
     /* Pas de animatie aan voor een 'drop-down' effect vanuit het midden */
@@ -173,18 +255,18 @@ p {
 .toast-content {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: var(--space-md);
 }
 
 .toast-icon {
-    font-size: 1.2rem;
+    font-size: var(--text-lg);
 }
 
 .bright-toast p {
     margin: 0;
     font-weight: 700;
-    color: #1a1a1a;
-    font-size: 0.95rem;
+    color: var(--dark-text);
+    font-size: var(--text-base);
 }
 
 .bright-toast.fade-out {
@@ -214,14 +296,14 @@ p {
     position: absolute;
     right: 15px;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: var(--text-lg);
 }
 
 /* Brede 'Back' button */
 .btn-back-full {
     width: 100%;
     padding: 14px;
-    background: #f0f0f0;
+    background: var(--neutral-075);
     border: none;
     border-radius: 12px;
     font-weight: 700;
@@ -229,16 +311,16 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: var(--space-sm);
     transition: background 0.2s;
 }
-.btn-back-full:hover { background: #e5e5e5; }
+.btn-back-full:hover { background: var(--neutral-200); }
 
 /* Logout knop styling */
 .btn-logout-editorial {
     width: 100%;
-    padding: 16px;
-    background: #ff4757;
+    padding: var(--space-lg);
+    background: var(--color-error);
     color: white;
     border: none;
     border-radius: 50px;
@@ -249,17 +331,17 @@ p {
 
 /* Error Toast Styling (in global.css) */
 .bright-toast.error {
-    border-left: 4px solid #ff4757;
-    background: #fffafa;
+    border-left: 4px solid var(--color-error);
+    background: var(--color-error-bg);
 }
 /* Rode variant voor foutmeldingen */
 .bright-toast.error {
-    border-left: 4px solid #ff4757 !important;
-    background: #fff5f5;
+    border-left: 4px solid var(--color-error) !important;
+    background: var(--color-error-bg);
 }
 
 .bright-toast.error p {
-    color: #d63031;
+    color: var(--color-error-text);
 }
 
 /* Fase 5.4: Skip-link. Onzichtbaar tot een toetsenbordgebruiker 'm focust
@@ -271,7 +353,7 @@ p {
     left: 0;
     background-color: var(--bright-green);
     color: var(--dark-text);
-    padding: 12px 20px;
+    padding: var(--space-md) var(--space-xl);
     z-index: 100000;
     text-decoration: none;
     font-weight: 700;

@@ -430,7 +430,7 @@ async function toonDetail(id) {
         }
         if (isIngekort) {
             const i18nKey = userStatus.ingelogd ? 'btn_upgrade_now' : 'btn_login_to_read';
-            paywallHTML = `<div class="paywall-overlay"><div class="paywall-content"><h3 data-i18n="premium_title">${getT('premium_title')}</h3><p data-i18n="premium_text">${getT('premium_text')}</p><button onclick="window.location.href='/profiel.html'" class="btn-primary-editorial" data-i18n="${i18nKey}">${getT(i18nKey)}</button></div></div>`;
+            paywallHTML = `<div class="paywall-overlay"><div class="paywall-content"><h2 data-i18n="premium_title">${getT('premium_title')}</h2><p data-i18n="premium_text">${getT('premium_text')}</p><button onclick="window.location.href='/profiel.html'" class="btn-primary-editorial" data-i18n="${i18nKey}">${getT(i18nKey)}</button></div></div>`;
         }
     }
     const shareHtml = `
@@ -476,11 +476,11 @@ async function toonDetail(id) {
             <h1 itemprop="headline" style="margin-bottom: 10px;" data-role="title"></h1>
 
             ${formattedDate ? `
-                <h2 style="margin-bottom:30px; font-weight: normal; border:none; background:none; padding:0;">
-                    <time itemprop="datePublished" datetime="${isoDate}" style="display:block; color:#888; font-size:1.2rem;">
+                <p class="artikel-datum">
+                    <time itemprop="datePublished" datetime="${isoDate}">
                         ${formattedDate}
                     </time>
-                </h2>` : ''}
+                </p>` : ''}
         </header>
 
         <section class="article-body" itemprop="articleBody">
@@ -516,7 +516,7 @@ async function toonDetail(id) {
     if (Array.isArray(artikel.refs) && artikel.refs.length) {
         const refsWrap = document.createElement('div');
         refsWrap.className = 'digest-refs';
-        const kop = document.createElement('h3');
+        const kop = document.createElement('h2');
         kop.textContent = getT('digest_refs_title');
         refsWrap.appendChild(kop);
         const lijst = document.createElement('ol');

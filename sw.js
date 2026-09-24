@@ -1,7 +1,7 @@
 // Bump deze versie bij elke inhoudelijke wijziging aan CSS/JS. Zonder dat
 // blijven bestaande bezoekers vastzitten op een oude cache en krijgen ze
 // nieuwe fixes nooit te zien (zie Fase 2-audit).
-const CACHE_NAME = 'brightnews-v28'; // v28: UI-doorlichting — foutstaat van de nieuwslijst, twee contrastfouten in de footer en een zichtbare paginakop met uitgelichte kaart. Bumpen bij elke wijziging aan ASSETS-bestanden.
+const CACHE_NAME = 'brightnews-v29'; // v29: ontwerptokens (kleur, spatiëring, tekstgrootte), grotere aanraakvlakken in footer en menu, en koppen die de structuur volgen in plaats van het formaat. Bumpen bij elke wijziging aan ASSETS-bestanden.
 const ASSETS = [
     '/',
     '/index.html',
