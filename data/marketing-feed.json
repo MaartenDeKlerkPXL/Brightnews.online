@@ -1,10 +1,26 @@
 {
- "gegenereerd": "2026-09-24T17:00:34.409Z",
+ "gegenereerd": "2026-09-25T04:37:44.358Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "1790310928691595wrcopq",
+     "titel": "Ethiopiërs planten miljoenen bomen via Green Legacy Initiative",
+     "teaser": "Ethiopië verloor tussen 2000 en 2025 zo'n 560.000 hectare bos aan landbouw, houtkap en houtskoolproductie. In 2019 lanceerde de overheid het Green Legacy Initiative, waarbij burgers massaal bomen gingen planten. Yitebitu Moges van het REDD+-programma van UNEP zegt dat zelfs als maar de helft van de bomen overleeft, er al winst is voor vocht, bodem en koolstofopslag. Volgens hem is...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/ethiopiers-planten-miljoenen-bomen-via-green-legacy-initiative-1790310928691595wrcopq.html"
+    },
+    {
+     "id": "1790310980862hoxeg2z6q",
+     "titel": "Wereldrecord: grootste beverdam ligt verscholen in Wood Buffalo National Park",
+     "teaser": "In het Canadese Wood Buffalo National Park, een gebied zo groot als Zwitserland, bevindt zich 's werelds grootste beverdam. De dam werd pas in 2007 ontdekt via satellietbeelden van landschapsecoloog Jean Thie; parkbeheerders wisten er tot dan niets van. Slechts één persoon, Rob Mark, heeft de dam ooit te voet bezocht, in juli 2014 na drie jaar planning. De dam...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/wereldrecord-grootste-beverdam-ligt-verscholen-in-wood-buffalo-national-park-1790310980862hoxeg2z6q.html"
+    },
     {
      "id": "1790269207385gyigs5nyu",
      "titel": "Zuid-Korea recyclet 97 procent van al zijn voedselafval",
@@ -28,25 +44,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/zeeschildpad-cebu-krijgt-op-maat-gemaakt-3d-geprint-harnas-na-aanvaring-met-boot-1790223941956u03y4fzjl.html"
-    },
-    {
-     "id": "1790223892322w8i1jus4z",
-     "titel": "Vissers redden babyolifant uit overstroomde Teestarivier",
-     "teaser": "Op 21 september zagen twee vissers een slurf boven het water van de gezwollen Teestarivier in West-Bengalen, India. Het bleek een olifantenkalf te zijn dat bijna vijf kilometer stroomafwaarts was meegesleurd nadat het had geprobeerd de rivier over te steken. Volgens boswachter Mudit Kumar Verma redde het bosteam, met hulp van de lokale vissers, het verdrinkende kalf en herenigde het...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/vissers-redden-babyolifant-uit-overstroomde-teestarivier-1790223892322w8i1jus4z.html"
-    },
-    {
-     "id": "1790223864974z0cbwne0n",
-     "titel": "Weesolifant Kipekee gered na dagen alleen in Kenia",
-     "teaser": "Op 17 juni 2025 werd een vierweken oude olifantenkalf gevonden tussen het vee van een boer nabij het Maasai Mara National Reserve in Kenia. Ze was uitgeput en ondervoed en bleek al drie dagen alleen rond te zwerven. Rangers van Pangolin Project en Mara Elephant Project troffen haar aan vlak voordat ze instortte. De Kenya Wildlife Service gaf haar een...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/weesolifant-kipekee-gered-na-dagen-alleen-in-kenia-1790223864974z0cbwne0n.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260924-environment",
+     "titel": "Bomen, bevers en balen afval: het milieu boekt kleine overwinningen",
+     "categorie": "Environment",
+     "dag": "2026-09-24",
+     "url": "https://brightnews.online/articles/nl/bomen-bevers-en-balen-afval-het-milieu-boekt-kleine-overwinningen-dg-20260924-environment.html"
+    },
     {
      "id": "dg-20260923-lifestyle",
      "titel": "Nieuwe thuizen, nieuwe wegen en een verrassende vondst",
@@ -60,25 +67,27 @@
      "categorie": "Environment",
      "dag": "2026-09-23",
      "url": "https://brightnews.online/articles/nl/van-geprint-harnas-tot-hersteld-savannegebied-goed-nieuws-voor-dieren-en-natuur-dg-20260923-environment.html"
-    },
-    {
-     "id": "dg-20260922-health",
-     "titel": "Slaap, urine en hartslag: drie stappen vooruit in de zorg",
-     "categorie": "Health",
-     "dag": "2026-09-22",
-     "url": "https://brightnews.online/articles/nl/slaap-urine-en-hartslag-drie-stappen-vooruit-in-de-zorg-dg-20260922-health.html"
-    },
-    {
-     "id": "dg-20260922-environment",
-     "titel": "Een wallaby duikt op, twee olifantjes vinden een nieuw thuis",
-     "categorie": "Environment",
-     "dag": "2026-09-22",
-     "url": "https://brightnews.online/articles/nl/een-wallaby-duikt-op-twee-olifantjes-vinden-een-nieuw-thuis-dg-20260922-environment.html"
     }
    ]
   },
   "en": {
    "top": [
+    {
+     "id": "1790310928691595wrcopq",
+     "titel": "Ethiopians plant millions of trees via Green Legacy Initiative",
+     "teaser": "Ethiopia lost around 560,000 hectares of forest between 2000 and 2025 to agriculture, logging and charcoal production. In 2019, the government launched the Green Legacy Initiative, which saw citizens planting trees on a massive scale. Yitebitu Moges of UNEP's REDD+ programme says that even if only half the trees survive, there are already gains for moisture, soil and carbon storage....",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/ethiopians-plant-millions-of-trees-via-green-legacy-initiative-1790310928691595wrcopq.html"
+    },
+    {
+     "id": "1790310980862hoxeg2z6q",
+     "titel": "World record: largest beaver dam hidden in Wood Buffalo National Park",
+     "teaser": "In Canada's Wood Buffalo National Park, an area as large as Switzerland, lies the world's largest beaver dam. The dam was only discovered in 2007 through satellite imagery by landscape ecologist Jean Thie; park managers had no knowledge of it until then. Only one person, Rob Mark, has ever visited the dam on foot, in July 2014 after three years...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/world-record-largest-beaver-dam-hidden-in-wood-buffalo-national-park-1790310980862hoxeg2z6q.html"
+    },
     {
      "id": "1790269207385gyigs5nyu",
      "titel": "South Korea recycles 97 percent of all food waste",
@@ -102,25 +111,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/en/sea-turtle-cebu-receives-custom-3d-printed-harness-after-boat-collision-1790223941956u03y4fzjl.html"
-    },
-    {
-     "id": "1790223892322w8i1jus4z",
-     "titel": "Fishermen rescue baby elephant from flooded Teesta River",
-     "teaser": "On September 21, two fishermen spotted a trunk above the water of the swollen Teesta River in West Bengal, India. It turned out to be an elephant calf that had been swept nearly five kilometers downstream after attempting to cross the river. According to forest officer Mudit Kumar Verma, the forest team, with help from local fishermen, rescued the drowning...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/fishermen-rescue-baby-elephant-from-flooded-teesta-river-1790223892322w8i1jus4z.html"
-    },
-    {
-     "id": "1790223864974z0cbwne0n",
-     "titel": "Orphaned elephant Kipekee rescued after days alone in Kenya",
-     "teaser": "On June 17, 2025, a four-week-old elephant calf was found among a farmer's livestock near the Maasai Mara National Reserve in Kenya. She was exhausted and malnourished after wandering alone for three days. Rangers from Pangolin Project and Mara Elephant Project discovered her just before she collapsed. Kenya Wildlife Service administered an IV drip, while her mother — wounded by...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/orphaned-elephant-kipekee-rescued-after-days-alone-in-kenya-1790223864974z0cbwne0n.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260924-environment",
+     "titel": "Trees, beavers and bales of waste: the environment scores small victories",
+     "categorie": "Environment",
+     "dag": "2026-09-24",
+     "url": "https://brightnews.online/articles/en/trees-beavers-and-bales-of-waste-the-environment-scores-small-victories-dg-20260924-environment.html"
+    },
     {
      "id": "dg-20260923-lifestyle",
      "titel": "New homes, new roads and a surprising discovery",
@@ -134,25 +134,27 @@
      "categorie": "Environment",
      "dag": "2026-09-23",
      "url": "https://brightnews.online/articles/en/from-printed-harness-to-restored-savanna-good-news-for-animals-and-nature-dg-20260923-environment.html"
-    },
-    {
-     "id": "dg-20260922-health",
-     "titel": "Sleep, urine and heart rate: three steps forward in healthcare",
-     "categorie": "Health",
-     "dag": "2026-09-22",
-     "url": "https://brightnews.online/articles/en/sleep-urine-and-heart-rate-three-steps-forward-in-healthcare-dg-20260922-health.html"
-    },
-    {
-     "id": "dg-20260922-environment",
-     "titel": "A wallaby emerges, two baby elephants find a new home",
-     "categorie": "Environment",
-     "dag": "2026-09-22",
-     "url": "https://brightnews.online/articles/en/a-wallaby-emerges-two-baby-elephants-find-a-new-home-dg-20260922-environment.html"
     }
    ]
   },
   "de": {
    "top": [
+    {
+     "id": "1790310928691595wrcopq",
+     "titel": "Äthiopier pflanzen Millionen Bäume über Green Legacy Initiative",
+     "teaser": "Äthiopien verlor zwischen 2000 und 2025 etwa 560.000 Hektar Wald durch Landwirtschaft, Holzeinschlag und Holzkohleproduktion. 2019 startete die Regierung die Green Legacy Initiative, bei der Bürger massenhaft Bäume pflanzten. Yitebitu Moges vom REDD+-Programm des UNEP sagt, dass selbst wenn nur die Hälfte der Bäume überlebt, es bereits Gewinne für Feuchtigkeit, Boden und Kohlenstoffspeicherung gibt. Nach seiner Aussage hat sich die...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/athiopier-pflanzen-millionen-baume-uber-green-legacy-initiative-1790310928691595wrcopq.html"
+    },
+    {
+     "id": "1790310980862hoxeg2z6q",
+     "titel": "Weltrekord: größter Biberdamm versteckt sich im Wood Buffalo National Park",
+     "teaser": "Im kanadischen Wood Buffalo National Park, ein Gebiet so groß wie die Schweiz, befindet sich der größte Biberdamm der Welt. Der Damm wurde erst 2007 durch Satellitenbilder des Landschaftsökologen Jean Thie entdeckt; Parkverwalter wussten bis dahin nichts davon. Nur eine Person, Rob Mark, hat den Damm je zu Fuß besucht, im Juli 2014 nach drei Jahren Planung. Der Damm ist...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/weltrekord-gro-ter-biberdamm-versteckt-sich-im-wood-buffalo-national-park-1790310980862hoxeg2z6q.html"
+    },
     {
      "id": "1790269207385gyigs5nyu",
      "titel": "Südkorea recycelt 97 Prozent seines Lebensmittelabfalls",
@@ -176,25 +178,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/de/meeresschildkrote-cebu-erhalt-nach-bootsunfall-ma-geschneidertes-3d-gedrucktes-g-1790223941956u03y4fzjl.html"
-    },
-    {
-     "id": "1790223892322w8i1jus4z",
-     "titel": "Fischer retten Babyelefanten aus überfluteter Teestarivier",
-     "teaser": "Am 21. September entdeckten zwei Fischer einen Rüssel über dem Wasser des angeschwollenen Teestarivier in Westbengalen, Indien. Es handelte sich um ein Elefantenkälbchen, das fast fünf Kilometer flussabwärts mitgerissen worden war, nachdem es versucht hatte, den Fluss zu durchqueren. Nach Angaben des Försters Mudit Kumar Verma rettete das Forstteam mit Hilfe der örtlichen Fischer das ertrinkende Kalb und vereinigte es...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/fischer-retten-babyelefanten-aus-uberfluteter-teestarivier-1790223892322w8i1jus4z.html"
-    },
-    {
-     "id": "1790223864974z0cbwne0n",
-     "titel": "Waisenkälbchen Kipekee nach Tagen allein in Kenia gerettet",
-     "teaser": "Am 17. Juni 2025 wurde ein vier Wochen altes Elefantenkälbchen zwischen dem Vieh eines Bauern in der Nähe des Maasai Mara National Reserve in Kenia gefunden. Es war erschöpft und unterernährt und war bereits drei Tage lang allein umhergestreift. Ranger des Pangolin Project und des Mara Elephant Project trafen es kurz bevor es zusammenbrach an. Der Kenya Wildlife Service versorgte...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/waisenkalbchen-kipekee-nach-tagen-allein-in-kenia-gerettet-1790223864974z0cbwne0n.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260924-environment",
+     "titel": "Bäume, Biber und Berge von Müll: Die Umwelt verbucht kleine Siege",
+     "categorie": "Environment",
+     "dag": "2026-09-24",
+     "url": "https://brightnews.online/articles/de/baume-biber-und-berge-von-mull-die-umwelt-verbucht-kleine-siege-dg-20260924-environment.html"
+    },
     {
      "id": "dg-20260923-lifestyle",
      "titel": "Neue Häuser, neue Wege und eine überraschende Entdeckung",
@@ -208,25 +201,27 @@
      "categorie": "Environment",
      "dag": "2026-09-23",
      "url": "https://brightnews.online/articles/de/von-gedrucktem-harnisch-bis-zur-wiederhergestellten-savanne-gute-nachrichten-fur-dg-20260923-environment.html"
-    },
-    {
-     "id": "dg-20260922-health",
-     "titel": "Schlaf, Urin und Herzschlag: drei Schritte vorwärts in der Gesundheitsversorgung",
-     "categorie": "Health",
-     "dag": "2026-09-22",
-     "url": "https://brightnews.online/articles/de/schlaf-urin-und-herzschlag-drei-schritte-vorwarts-in-der-gesundheitsversorgung-dg-20260922-health.html"
-    },
-    {
-     "id": "dg-20260922-environment",
-     "titel": "Ein Wallaby taucht auf, zwei kleine Elefanten finden ein neues Zuhause",
-     "categorie": "Environment",
-     "dag": "2026-09-22",
-     "url": "https://brightnews.online/articles/de/ein-wallaby-taucht-auf-zwei-kleine-elefanten-finden-ein-neues-zuhause-dg-20260922-environment.html"
     }
    ]
   },
   "fr": {
    "top": [
+    {
+     "id": "1790310928691595wrcopq",
+     "titel": "Des Éthiopiens plantent des millions d'arbres via la Green Legacy Initiative",
+     "teaser": "L'Éthiopie a perdu entre 2000 et 2025 environ 560 000 hectares de forêt à cause de l'agriculture, de l'exploitation forestière et de la production de charbon de bois. En 2019, le gouvernement a lancé la Green Legacy Initiative, incitant les citoyens à planter massivement des arbres. Yitebitu Moges du programme REDD+ du PNUE affirme que même si seulement la moitié...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/des-ethiopiens-plantent-des-millions-d-arbres-via-la-green-legacy-initiative-1790310928691595wrcopq.html"
+    },
+    {
+     "id": "1790310980862hoxeg2z6q",
+     "titel": "Record mondial : le plus grand barrage de castor se cache dans le parc national Wood Buffalo",
+     "teaser": "Dans le parc national Wood Buffalo au Canada, une région aussi grande que la Suisse, se trouve le plus grand barrage de castor du monde. Le barrage n'a été découvert qu'en 2007 grâce à des images satellites de l'écologiste du paysage Jean Thie ; les gestionnaires du parc n'en savaient rien jusqu'alors. Une seule personne, Rob Mark, a jamais visité...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/record-mondial-le-plus-grand-barrage-de-castor-se-cache-dans-le-parc-national-wo-1790310980862hoxeg2z6q.html"
+    },
     {
      "id": "1790269207385gyigs5nyu",
      "titel": "La Corée du Sud recycle 97 % de ses déchets alimentaires",
@@ -250,25 +245,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/fr/la-tortue-marine-cebu-recoit-une-armature-3d-imprimee-sur-mesure-apres-une-colli-1790223941956u03y4fzjl.html"
-    },
-    {
-     "id": "1790223892322w8i1jus4z",
-     "titel": "Des pêcheurs sauvent un éléphanteau de la rivière Teesta inondée",
-     "teaser": "Le 21 septembre, deux pêcheurs ont aperçu une trompe au-dessus de l'eau de la rivière Teesta gonflée en Inde, dans le Bengale-Occidental. Il s'agissait d'un éléphanteau qui avait été entraîné sur près de cinq kilomètres en aval après avoir tenté de traverser la rivière. Selon le garde forestier Mudit Kumar Verma, l'équipe forestière, avec l'aide des pêcheurs locaux, a secouru...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/des-pecheurs-sauvent-un-elephanteau-de-la-riviere-teesta-inondee-1790223892322w8i1jus4z.html"
-    },
-    {
-     "id": "1790223864974z0cbwne0n",
-     "titel": "Éléphanteau orphelin Kipekee sauvé après des jours seul au Kenya",
-     "teaser": "Le 17 juin 2025, un éléphanteau âgé de quatre semaines a été découvert parmi le bétail d'un fermier près de la Maasai Mara National Reserve au Kenya. Il était épuisé et malnutri après avoir erré seul pendant trois jours. Les rangers du Pangolin Project et du Mara Elephant Project l'ont trouvé juste avant qu'il ne s'effondre. Le Kenya Wildlife Service...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/elephanteau-orphelin-kipekee-sauve-apres-des-jours-seul-au-kenya-1790223864974z0cbwne0n.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260924-environment",
+     "titel": "Des arbres, des castors et des tonnes de déchets : l'environnement remporte de petites victoires",
+     "categorie": "Environment",
+     "dag": "2026-09-24",
+     "url": "https://brightnews.online/articles/fr/des-arbres-des-castors-et-des-tonnes-de-dechets-l-environnement-remporte-de-peti-dg-20260924-environment.html"
+    },
     {
      "id": "dg-20260923-lifestyle",
      "titel": "De nouveaux foyers, de nouvelles routes et une découverte surprenante",
@@ -282,25 +268,27 @@
      "categorie": "Environment",
      "dag": "2026-09-23",
      "url": "https://brightnews.online/articles/fr/d-une-armure-imprimee-en-3d-a-la-restauration-de-la-savane-bonnes-nouvelles-pour-dg-20260923-environment.html"
-    },
-    {
-     "id": "dg-20260922-health",
-     "titel": "Sommeil, urine et rythme cardiaque : trois avancées dans les soins de santé",
-     "categorie": "Health",
-     "dag": "2026-09-22",
-     "url": "https://brightnews.online/articles/fr/sommeil-urine-et-rythme-cardiaque-trois-avancees-dans-les-soins-de-sante-dg-20260922-health.html"
-    },
-    {
-     "id": "dg-20260922-environment",
-     "titel": "Un wallaby réapparaît, deux éléphanteaux trouvent un nouveau foyer",
-     "categorie": "Environment",
-     "dag": "2026-09-22",
-     "url": "https://brightnews.online/articles/fr/un-wallaby-reapparait-deux-elephanteaux-trouvent-un-nouveau-foyer-dg-20260922-environment.html"
     }
    ]
   },
   "es": {
    "top": [
+    {
+     "id": "1790310928691595wrcopq",
+     "titel": "Etíopes plantan millones de árboles a través de Green Legacy Initiative",
+     "teaser": "Etiopía perdió entre 2000 y 2025 aproximadamente 560.000 hectáreas de bosque por agricultura, tala y producción de carbón vegetal. En 2019, el gobierno lanzó Green Legacy Initiative, iniciativa mediante la cual los ciudadanos comenzaron a plantar árboles masivamente. Yitebitu Moges del programa REDD+ de UNEP señala que incluso si solo sobrevive la mitad de los árboles, ya hay ganancias para...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/etiopes-plantan-millones-de-arboles-a-traves-de-green-legacy-initiative-1790310928691595wrcopq.html"
+    },
+    {
+     "id": "1790310980862hoxeg2z6q",
+     "titel": "Récord mundial: la mayor represa de castores se esconde en Wood Buffalo National Park",
+     "teaser": "En el Wood Buffalo National Park canadiense, una zona tan grande como Suiza, se encuentra la mayor represa de castores del mundo. La presa fue descubierta recién en 2007 mediante imágenes satelitales del ecólogo del paisaje Jean Thie; los administradores del parque no sabían de su existencia hasta entonces. Solo una persona, Rob Mark, ha visitado la presa a pie,...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/record-mundial-la-mayor-represa-de-castores-se-esconde-en-wood-buffalo-national--1790310980862hoxeg2z6q.html"
+    },
     {
      "id": "1790269207385gyigs5nyu",
      "titel": "Corea del Sur recicla el 97 por ciento de sus residuos alimentarios",
@@ -324,25 +312,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/es/la-tortuga-marina-cebu-recibe-un-arnes-personalizado-impreso-en-3d-tras-colision-1790223941956u03y4fzjl.html"
-    },
-    {
-     "id": "1790223892322w8i1jus4z",
-     "titel": "Pescadores rescatan a una cría de elefante del río Teesta desbordado",
-     "teaser": "El 21 de septiembre, dos pescadores vieron una trompa sobre el agua del río Teesta, hinchado por las lluvias, en Bengala Occidental, India. Se trataba de una cría de elefante que había sido arrastrada casi cinco kilómetros río abajo después de intentar cruzar el curso de agua. Según el guardabosque Mudit Kumar Verma, el equipo forestal, con ayuda de los...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/pescadores-rescatan-a-una-cria-de-elefante-del-rio-teesta-desbordado-1790223892322w8i1jus4z.html"
-    },
-    {
-     "id": "1790223864974z0cbwne0n",
-     "titel": "Elefantita huérfana Kipekee rescatada tras días sola en Kenia",
-     "teaser": "El 17 de junio de 2025 se encontró una cría de elefante de cuatro semanas entre el ganado de un granjero cerca de la Reserva Nacional de Maasai Mara en Kenia. Estaba agotada y desnutrida, y había estado vagando sola durante tres días. Los guardabosques del Pangolin Project y del Mara Elephant Project la encontraron justo antes de que se...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/elefantita-huerfana-kipekee-rescatada-tras-dias-sola-en-kenia-1790223864974z0cbwne0n.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260924-environment",
+     "titel": "Árboles, castores y fardos de basura: el medio ambiente logra pequeñas victorias",
+     "categorie": "Environment",
+     "dag": "2026-09-24",
+     "url": "https://brightnews.online/articles/es/arboles-castores-y-fardos-de-basura-el-medio-ambiente-logra-pequenas-victorias-dg-20260924-environment.html"
+    },
     {
      "id": "dg-20260923-lifestyle",
      "titel": "Nuevos hogares, nuevos caminos y un hallazgo sorprendente",
@@ -356,20 +335,6 @@
      "categorie": "Environment",
      "dag": "2026-09-23",
      "url": "https://brightnews.online/articles/es/de-un-arnes-impreso-en-3d-a-un-area-de-sabana-restaurada-buenas-noticias-para-lo-dg-20260923-environment.html"
-    },
-    {
-     "id": "dg-20260922-health",
-     "titel": "Sueño, orina y ritmo cardíaco: tres pasos adelante en la sanidad",
-     "categorie": "Health",
-     "dag": "2026-09-22",
-     "url": "https://brightnews.online/articles/es/sueno-orina-y-ritmo-cardiaco-tres-pasos-adelante-en-la-sanidad-dg-20260922-health.html"
-    },
-    {
-     "id": "dg-20260922-environment",
-     "titel": "Una ualabí reaparece, dos elefantillos encuentran un nuevo hogar",
-     "categorie": "Environment",
-     "dag": "2026-09-22",
-     "url": "https://brightnews.online/articles/es/una-ualabi-reaparece-dos-elefantillos-encuentran-un-nuevo-hogar-dg-20260922-environment.html"
     }
    ]
   }

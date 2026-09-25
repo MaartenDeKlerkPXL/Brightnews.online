@@ -1,5 +1,77 @@
 [
  {
+  "datum": "2026-09-25T04:34:32.091Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "Australian Biologists Livestream A Remote Desert Waterhole and All its Wild Visitors",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 2,
+  "totaal": 8,
+  "besluit": "ja",
+  "reden": "Hartverwarmend kijkje in de natuur zonder problematisering; maatschappelijk relevant als natuureducatie maar beperkt persoonlijk herkenbaar."
+ },
+ {
+  "datum": "2026-09-25T04:34:32.091Z",
+  "bron": "OptimistDaily.com",
+  "titel": "Ethiopia’s Green Legacy Initiative is turning citizens into foresters",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 4,
+  "totaal": 10,
+  "besluit": "ja",
+  "reden": "Hoopvol verhaal over massale burgerparticipatie in bosherstellingsproject; maatschappelijk relevant en inspirerend voor actie."
+ },
+ {
+  "datum": "2026-09-25T04:34:32.091Z",
+  "bron": "OptimistDaily.com",
+  "titel": "How book clubs and bedtime stories protect and build healthier brains",
+  "uitsluiting": "geen",
+  "gevoel": 2,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 8,
+  "besluit": "ja",
+  "reden": "Positief wetenschappelijk inzicht over gezondheidsvoordelen van lezen; maatschappelijk relevant en persoonlijk herkenbaar voor veel lezers."
+ },
+ {
+  "datum": "2026-09-25T04:34:32.091Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "This Canadian national park is home to the world's largest beaver dam: 'The size of 1600 hockey rinks'",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Wonderbaarlijk natuurverschijnsel vol verwondering en fascinatie; maatschappelijk relevant als natuureducatie en erfgoedbescherming."
+ },
+ {
+  "datum": "2026-09-25T04:34:32.091Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "New data centers in Oregon will be charged for all costs associated with growing energy need",
+  "uitsluiting": "geen",
+  "gevoel": 2,
+  "formulering": 2,
+  "relevantie": 3,
+  "totaal": 7,
+  "besluit": "nee",
+  "reden": "Positief beleid dat consumentenbescherming en duurzaamheid balanceert; maatschappelijk relevant maar technisch en afstandelijk geformuleerd."
+ },
+ {
+  "datum": "2026-09-25T04:34:32.091Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "Yellowstone rangers find and donate hundreds of discarded baseball caps from the park's hot springs",
+  "uitsluiting": "geen",
+  "gevoel": 2,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 8,
+  "besluit": "ja",
+  "reden": "Positief verhaal over rangers die afval omzetten in donaties; maatschappelijk relevant voor milieubescherming en gemeenschapszin."
+ },
+ {
   "datum": "2026-09-24T16:58:34.509Z",
   "bron": "GoodNewsNetwork.org",
   "titel": "Teens Set World Record for Most Sports Balls Recycled in One Day, Diverting 2,675 Pounds from Landfills",
@@ -3498,71 +3570,5 @@
   "totaal": 9,
   "besluit": "ja",
   "reden": "Echt hoopgevend: werknemers onverwacht beloond met forse bonus, toont winstdeling en waardering voor arbeid."
- },
- {
-  "datum": "2026-09-16T04:29:24.861Z",
-  "bron": "GoodNewsNetwork.org",
-  "titel": "Wind Turbines Provide Half of Rancher’s Income Since He Decided to Invite Them on His Land",
-  "gevoel": 2,
-  "formulering": 2,
-  "relevantie": 3,
-  "totaal": 7,
-  "besluit": "nee",
-  "reden": "Positief verhaal over duurzame energie die boer financieel redt en erfenis veiligstelt, maatschappelijk relevant."
- },
- {
-  "datum": "2026-09-16T04:29:24.861Z",
-  "bron": "GoodNewsNetwork.org",
-  "titel": "Homeless Guy Got Famous Playing Amazing Piano in a Church–Now He’s Raised $50K for Charity",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "Hartverwarmend: dakloze man vindt hoop via talent, leven keert om en helpt anderen; echte menselijk verhaal."
- },
- {
-  "datum": "2026-09-16T04:29:24.861Z",
-  "bron": "ReasonsToBeCheerful.world",
-  "titel": "How Afghan Women Are Rebuilding Reproductive Health Care",
-  "gevoel": 2,
-  "formulering": 2,
-  "relevantie": 3,
-  "totaal": 7,
-  "besluit": "nee",
-  "reden": "Positief verhaal over vrouwen die gezondheidszorg opbouwen in moeilijke context, maatschappelijk relevant en inspirerend."
- },
- {
-  "datum": "2026-09-16T04:29:24.861Z",
-  "bron": "OptimistDaily.com",
-  "titel": "Elementic’s MO6 is the building material claiming to lock away carbon for thousands of years",
-  "gevoel": 2,
-  "formulering": 2,
-  "relevantie": 3,
-  "totaal": 7,
-  "besluit": "nee",
-  "reden": "Innovatief klimaatoplossing: afvalstof wordt duurzaam bouwmateriaal, maatschappelijk relevant doorbraak."
- },
- {
-  "datum": "2026-09-16T04:29:24.861Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "Hamster-sized 'burramys' had to cross a major roadway during mating season. So scientists built them a 'tunnel of love'",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "Hartverwarmend: wetenschappers bouwen creatieve tunnel voor bedreigde dieren, kern is redding en innovatie."
- },
- {
-  "datum": "2026-09-16T04:29:24.861Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "Indigenous 'turtle women' help save endangered freshwater turtles in the Amazon",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "Inspirerend: inheemse vrouwen combineren traditionele kennis met moderne technologie om bedreigde soort te redden."
  }
 ]
