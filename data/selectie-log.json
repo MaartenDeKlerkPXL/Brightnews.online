@@ -1,5 +1,101 @@
 [
  {
+  "datum": "2026-09-25T17:00:48.275Z",
+  "bron": "Positive.News",
+  "titel": "What went right this week: the good news that matters",
+  "uitsluiting": "verzameleditie",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Dit is een weekoverzicht van ander media ('what went right this week') met meerdere losse onderwerpen; BrightNews maakt eigen dagoverzichten, niet andermans bundels."
+ },
+ {
+  "datum": "2026-09-25T17:00:48.275Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "Nonprofit Puts Ex-Cons to Work with Paid Apprenticeships as Machinists",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Echte transformatie van ex-gedetineerden naar vaardige ambachtslieden; hartverwarmend, positief geformuleerd en maatschappelijk relevant."
+ },
+ {
+  "datum": "2026-09-25T17:00:48.275Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "With $1 Billion, Nike Founder Phil Knight Makes Largest Single Donation to a Public University",
+  "uitsluiting": "productnieuws",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Dit is bedrijfs- en beursnieuws over een filantrope donatie zonder bredere maatschappelijke betekenis; de kern is de gift zelf, niet wat ermee wordt bereikt."
+ },
+ {
+  "datum": "2026-09-25T17:00:48.275Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "Africa Will Soon Have A New Tallest Building – But Probably Not Where You’d Imagine",
+  "uitsluiting": "geen",
+  "gevoel": 2,
+  "formulering": 2,
+  "relevantie": 2,
+  "totaal": 6,
+  "besluit": "nee",
+  "reden": "Positief economisch en infrastructureel nieuws uit Afrika met een verrassend element; duidelijk positief geformuleerd en maatschappelijk relevant voor ontwikkeling."
+ },
+ {
+  "datum": "2026-09-25T17:00:48.275Z",
+  "bron": "Squirrel-News.net",
+  "titel": "Kosovo nears landmine-free status, non-biting mosquitoes released in Lisbon, reviving ancient water systems",
+  "uitsluiting": "verzameleditie",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Dit is een weekoverzicht met drie losse onderwerpen ('in today's edition'); andermans bundel, niet een eigen verhaal."
+ },
+ {
+  "datum": "2026-09-25T17:00:48.275Z",
+  "bron": "NPR.org",
+  "titel": "Years after storms, clean-up crews meticulously separate the sentimental from the wreckage",
+  "uitsluiting": "misdaad-of-ramp",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Hoewel het over hulp gaat, staat de ramp zelf centraal ('lost-and-found after storms'); de kern is het verlies en de onmogelijkheid alles terug te vinden."
+ },
+ {
+  "datum": "2026-09-25T17:00:48.275Z",
+  "bron": "Openaccessgovernment.org",
+  "titel": "Early galaxies dispersed heavy elements just 500 million years after the Big Bang according to JWST",
+  "uitsluiting": "geen",
+  "gevoel": 1,
+  "formulering": 2,
+  "relevantie": 3,
+  "totaal": 6,
+  "besluit": "nee",
+  "reden": "Wetenschappelijk relevant maar technisch en afstandelijk geformuleerd; geen warm of hoopvol gevoel voor een breed publiek."
+ },
+ {
+  "datum": "2026-09-25T17:00:48.275Z",
+  "bron": "BBC.com/culture",
+  "titel": "The paedophile-hunting show that rocked US TV",
+  "uitsluiting": "misdaad-of-ramp",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "De kern is een controversieel misdaadprogramma en pedofilie; ondanks de documentaire-framing staat het nare zelf centraal, niet redding of herstel."
+ },
+ {
   "datum": "2026-09-25T04:34:32.091Z",
   "bron": "GoodNewsNetwork.org",
   "titel": "Australian Biologists Livestream A Remote Desert Waterhole and All its Wild Visitors",
@@ -3482,93 +3578,5 @@
   "totaal": 0,
   "besluit": "nee",
   "reden": "Politieke berichtgeving over bevestigingshoorzittingen; polariserend en niet maatschappelijk positief."
- },
- {
-  "datum": "2026-09-16T16:39:15.797Z",
-  "bron": "NPR.org",
-  "titel": "U.S. acknowledges for the first time that it has deployed weapons in space",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Kern gaat over militarisering van de ruimte en schending van vredesverdragen; dit is een alarmerend onderwerp zonder positieve wending of oplossing."
- },
- {
-  "datum": "2026-09-16T16:39:15.797Z",
-  "bron": "Openaccessgovernment.org",
-  "titel": "Promoting the social and behavioral sciences",
-  "gevoel": 2,
-  "formulering": 2,
-  "relevantie": 3,
-  "totaal": 7,
-  "besluit": "nee",
-  "reden": "Positief verhaal over onderzoeksorganisatie die maatschappelijke uitdagingen aanpakt via wetenschap en samenwerking; maatschappelijk relevant en constructief geformuleerd."
- },
- {
-  "datum": "2026-09-16T16:39:15.797Z",
-  "bron": "Openaccessgovernment.org",
-  "titel": "Europe’s young researchers tackle cancer, climate and other major challenges",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "Hartverwarmend verhaal over jonge Europese onderzoekers die samen innovatieve oplossingen ontwikkelen voor grote maatschappelijke uitdagingen; hoopvol en inspirerend."
- },
- {
-  "datum": "2026-09-16T16:39:15.797Z",
-  "bron": "Theecologist.org",
-  "titel": "Stories for an emerging food system",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "Persoonlijk, warm verhaal over duurzame landbouw en het delen van kennis via Farmerama; herkenbaar, inspirerend en maatschappelijk relevant."
- },
- {
-  "datum": "2026-09-16T16:39:15.797Z",
-  "bron": "BBC.com/culture",
-  "titel": "Why Mary Magdalene is a divisive biblical figure",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Tekst is onleesbare navigatiemenubrei van BBC-website zonder enige inhoud; onmogelijk te beoordelen en niet geschikt voor publicatie."
- },
- {
-  "datum": "2026-09-16T04:29:24.861Z",
-  "bron": "Positive.News",
-  "titel": "What if giving away a day’s revenue was the best day of your year?",
-  "gevoel": 2,
-  "formulering": 2,
-  "relevantie": 2,
-  "totaal": 6,
-  "besluit": "nee",
-  "reden": "Positief verhaal over bedrijf dat jaarlijks winst aan goed doel geeft, maar tekst is onvolledig en context onduidelijk."
- },
- {
-  "datum": "2026-09-16T04:29:24.861Z",
-  "bron": "GoodNewsNetwork.org",
-  "titel": "Christian Bale Opens Long-Dreamed of Foster Care Village Aimed at Keeping Siblings Together",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "Hartverwarmend verhaal over acteur die kinderdroom realiseert met foster care village, maatschappelijk relevant en persoonlijk inspirerend."
- },
- {
-  "datum": "2026-09-16T04:29:24.861Z",
-  "bron": "GoodNewsNetwork.org",
-  "titel": "$1,000 Bonus for Every Year of Work: Casino Employees Shocked at Company’s 50th Anniversary",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "Echt hoopgevend: werknemers onverwacht beloond met forse bonus, toont winstdeling en waardering voor arbeid."
  }
 ]

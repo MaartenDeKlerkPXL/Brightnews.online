@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-09-25T04:37:44.358Z",
+ "gegenereerd": "2026-09-25T17:01:30.389Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -12,6 +12,14 @@
      "score": 10,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/ethiopiers-planten-miljoenen-bomen-via-green-legacy-initiative-1790310928691595wrcopq.html"
+    },
+    {
+     "id": "1790355679646pe6dardmc",
+     "titel": "Nonprofit Rise Up leidt ex-gedetineerden op tot machinebankwerker",
+     "teaser": "In een omgebouwde werkplaats in Zuidoost-San Diego leert de nonprofit Rise Up Industries mannen die decennia in de gevangenis zaten het vak van machinebankwerker. Het programma combineert een betaalde stage met therapie en casemanagement. De werkplaats vervult opdrachten voor onder meer de lucht- en ruimtevaart, medische apparatuur, auto-onderdelen en visaas. Volgens Rise Up recidiveert slechts 3% van de afgestudeerden, tegenover...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/nonprofit-rise-up-leidt-ex-gedetineerden-op-tot-machinebankwerker-1790355679646pe6dardmc.html"
     },
     {
      "id": "1790310980862hoxeg2z6q",
@@ -36,14 +44,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/tieners-breken-wereldrecord-met-recycling-van-22-000-sportballen-1790269147586lmnzry0dl.html"
-    },
-    {
-     "id": "1790223941956u03y4fzjl",
-     "titel": "Zeeschildpad Cebu krijgt op maat gemaakt 3D-geprint harnas na aanvaring met boot",
-     "teaser": "In het Georgia Sea Turtle Center op Jekyll Island wordt de jonge groene zeeschildpad Cebu verzorgd na een aanvaring met een boot in april, die zware ruggenmergschade veroorzaakte. Cebu kon aanvankelijk niet zwemmen en werd behandeld met acupunctuur, koude lasertherapie, RediHeal, Silver Honey en stamceltherapie. Voor fysiotherapie in dieper water ontwikkelde het team een volledig op maat gemaakt 3D-geprint harnas,...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/zeeschildpad-cebu-krijgt-op-maat-gemaakt-3d-geprint-harnas-na-aanvaring-met-boot-1790223941956u03y4fzjl.html"
     }
    ],
    "dagoverzichten": [
@@ -81,6 +81,14 @@
      "url": "https://brightnews.online/articles/en/ethiopians-plant-millions-of-trees-via-green-legacy-initiative-1790310928691595wrcopq.html"
     },
     {
+     "id": "1790355679646pe6dardmc",
+     "titel": "Nonprofit Rise Up trains formerly incarcerated men as machinists",
+     "teaser": "In a converted workshop in Southeast San Diego, the nonprofit Rise Up Industries teaches men who spent decades in prison the trade of machinist. The program combines paid apprenticeships with therapy and case management. The workshop fulfills orders for aerospace, medical equipment, auto parts, and fishing lures, among others. According to Rise Up, only 3% of graduates reoffend, compared to...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/nonprofit-rise-up-trains-formerly-incarcerated-men-as-machinists-1790355679646pe6dardmc.html"
+    },
+    {
      "id": "1790310980862hoxeg2z6q",
      "titel": "World record: largest beaver dam hidden in Wood Buffalo National Park",
      "teaser": "In Canada's Wood Buffalo National Park, an area as large as Switzerland, lies the world's largest beaver dam. The dam was only discovered in 2007 through satellite imagery by landscape ecologist Jean Thie; park managers had no knowledge of it until then. Only one person, Rob Mark, has ever visited the dam on foot, in July 2014 after three years...",
@@ -103,14 +111,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/en/teens-break-world-record-recycling-22-000-sports-balls-1790269147586lmnzry0dl.html"
-    },
-    {
-     "id": "1790223941956u03y4fzjl",
-     "titel": "Sea turtle Cebu receives custom 3D-printed harness after boat collision",
-     "teaser": "At the Georgia Sea Turtle Center on Jekyll Island, young green sea turtle Cebu is being cared for following a boat collision in April that caused severe spinal cord damage. Cebu was initially unable to swim and underwent treatment with acupuncture, cold laser therapy, RediHeal, Silver Honey and stem cell therapy. To enable physiotherapy in deeper water, the team developed...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/sea-turtle-cebu-receives-custom-3d-printed-harness-after-boat-collision-1790223941956u03y4fzjl.html"
     }
    ],
    "dagoverzichten": [
@@ -148,6 +148,14 @@
      "url": "https://brightnews.online/articles/de/athiopier-pflanzen-millionen-baume-uber-green-legacy-initiative-1790310928691595wrcopq.html"
     },
     {
+     "id": "1790355679646pe6dardmc",
+     "titel": "Nonprofit Rise Up bildet ehemalige Häftlinge zu Zerspanungsmechanikern aus",
+     "teaser": "In einer umgebauten Werkstatt im Südosten von San Diego bildet die gemeinnützige Organisation Rise Up Industries Männer, die Jahrzehnte im Gefängnis verbracht haben, zu Zerspanungsmechanikern aus. Das Programm kombiniert ein bezahltes Praktikum mit Therapie und Fallmanagement. Die Werkstatt führt Aufträge unter anderem für Luft- und Raumfahrt, Medizingeräte, Autoteile und Fischköder aus. Nach Angaben von Rise Up rückfällig werden nur 3%...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/nonprofit-rise-up-bildet-ehemalige-haftlinge-zu-zerspanungsmechanikern-aus-1790355679646pe6dardmc.html"
+    },
+    {
      "id": "1790310980862hoxeg2z6q",
      "titel": "Weltrekord: größter Biberdamm versteckt sich im Wood Buffalo National Park",
      "teaser": "Im kanadischen Wood Buffalo National Park, ein Gebiet so groß wie die Schweiz, befindet sich der größte Biberdamm der Welt. Der Damm wurde erst 2007 durch Satellitenbilder des Landschaftsökologen Jean Thie entdeckt; Parkverwalter wussten bis dahin nichts davon. Nur eine Person, Rob Mark, hat den Damm je zu Fuß besucht, im Juli 2014 nach drei Jahren Planung. Der Damm ist...",
@@ -170,14 +178,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/de/teenager-brechen-weltrekord-mit-recycling-von-22-000-sportballen-1790269147586lmnzry0dl.html"
-    },
-    {
-     "id": "1790223941956u03y4fzjl",
-     "titel": "Meeresschildkröte Cebu erhält nach Bootsunfall maßgeschneidertes 3D-gedrucktes Geschirr",
-     "teaser": "Im Georgia Sea Turtle Center auf Jekyll Island wird die junge grüne Meeresschildkröte Cebu nach einer Bootskollision im April versorgt, die schwere Rückenmarksverletzungen verursachte. Cebu konnte anfangs nicht schwimmen und wurde mit Akupunktur, Kaltlasertherapie, RediHeal, Silver Honey und Stammzelltherapie behandelt. Für die Physiotherapie in tieferem Wasser entwickelte das Team ein vollständig maßgeschneidertes 3D-gedrucktes Geschirr, damit Cebu sich eigenständig bewegen und...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/meeresschildkrote-cebu-erhalt-nach-bootsunfall-ma-geschneidertes-3d-gedrucktes-g-1790223941956u03y4fzjl.html"
     }
    ],
    "dagoverzichten": [
@@ -215,6 +215,14 @@
      "url": "https://brightnews.online/articles/fr/des-ethiopiens-plantent-des-millions-d-arbres-via-la-green-legacy-initiative-1790310928691595wrcopq.html"
     },
     {
+     "id": "1790355679646pe6dardmc",
+     "titel": "La nonprofit Rise Up forme d'anciens détenus au métier de fraiseur",
+     "teaser": "Dans un atelier réaménagé du sud-est de San Diego, la nonprofit Rise Up Industries enseigne à des hommes ayant passé des décennies en prison le métier de fraiseur. Le programme combine un stage rémunéré avec une thérapie et un suivi de cas. L'atelier exécute des commandes pour l'aéronautique et l'espace, les équipements médicaux, les pièces automobiles et les appâts de...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/la-nonprofit-rise-up-forme-d-anciens-detenus-au-metier-de-fraiseur-1790355679646pe6dardmc.html"
+    },
+    {
      "id": "1790310980862hoxeg2z6q",
      "titel": "Record mondial : le plus grand barrage de castor se cache dans le parc national Wood Buffalo",
      "teaser": "Dans le parc national Wood Buffalo au Canada, une région aussi grande que la Suisse, se trouve le plus grand barrage de castor du monde. Le barrage n'a été découvert qu'en 2007 grâce à des images satellites de l'écologiste du paysage Jean Thie ; les gestionnaires du parc n'en savaient rien jusqu'alors. Une seule personne, Rob Mark, a jamais visité...",
@@ -237,14 +245,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/fr/des-ados-battent-le-record-mondial-du-recyclage-de-22-000-balles-de-sport-1790269147586lmnzry0dl.html"
-    },
-    {
-     "id": "1790223941956u03y4fzjl",
-     "titel": "La tortue marine Cebu reçoit une armature 3D imprimée sur mesure après une collision avec un bateau",
-     "teaser": "Au Georgia Sea Turtle Center sur Jekyll Island, la jeune tortue verte Cebu est soignée suite à une collision avec un bateau en avril, qui a causé de graves lésions de la moelle épinière. Cebu ne pouvait initialement pas nager et a été traitée par acupuncture, thérapie au laser froid, RediHeal, Silver Honey et thérapie par cellules souches. Pour la...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/la-tortue-marine-cebu-recoit-une-armature-3d-imprimee-sur-mesure-apres-une-colli-1790223941956u03y4fzjl.html"
     }
    ],
    "dagoverzichten": [
@@ -282,6 +282,14 @@
      "url": "https://brightnews.online/articles/es/etiopes-plantan-millones-de-arboles-a-traves-de-green-legacy-initiative-1790310928691595wrcopq.html"
     },
     {
+     "id": "1790355679646pe6dardmc",
+     "titel": "La organización Rise Up capacita a ex reclusos como operarios de máquinas",
+     "teaser": "En un taller reformado en el sureste de San Diego, la organización sin fines de lucro Rise Up Industries enseña a hombres que pasaron décadas en prisión el oficio de operario de máquinas. El programa combina una pasantía remunerada con terapia y gestión de casos. El taller ejecuta trabajos para la industria aeroespacial, equipos médicos, piezas automotrices y cebo de...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/la-organizacion-rise-up-capacita-a-ex-reclusos-como-operarios-de-maquinas-1790355679646pe6dardmc.html"
+    },
+    {
      "id": "1790310980862hoxeg2z6q",
      "titel": "Récord mundial: la mayor represa de castores se esconde en Wood Buffalo National Park",
      "teaser": "En el Wood Buffalo National Park canadiense, una zona tan grande como Suiza, se encuentra la mayor represa de castores del mundo. La presa fue descubierta recién en 2007 mediante imágenes satelitales del ecólogo del paisaje Jean Thie; los administradores del parque no sabían de su existencia hasta entonces. Solo una persona, Rob Mark, ha visitado la presa a pie,...",
@@ -304,14 +312,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/es/adolescentes-baten-record-mundial-reciclando-22-000-pelotas-deportivas-1790269147586lmnzry0dl.html"
-    },
-    {
-     "id": "1790223941956u03y4fzjl",
-     "titel": "La tortuga marina Cebu recibe un arnés personalizado impreso en 3D tras colisión con barco",
-     "teaser": "En el Georgia Sea Turtle Center en Jekyll Island se atiende a Cebu, una joven tortuga verde, después de una colisión con un barco en abril que le causó graves daños en la médula espinal. Cebu no podía nadar inicialmente y fue tratada con acupuntura, fototerapia fría, RediHeal, Silver Honey y terapia con células madre. Para la fisioterapia en aguas...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/la-tortuga-marina-cebu-recibe-un-arnes-personalizado-impreso-en-3d-tras-colision-1790223941956u03y4fzjl.html"
     }
    ],
    "dagoverzichten": [
