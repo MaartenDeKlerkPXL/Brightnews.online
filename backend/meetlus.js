@@ -130,15 +130,26 @@ async function haalGa4(token, vanIso, totIso) {
 
 /** Search Console: vertoningen, kliks en de zoektermen die het meest opleveren. */
 async function haalSearchConsole(token, vanIso, totIso) {
-    const url = `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodeURIComponent(SITE)}/searchAnalytics/query`;
-    const res = await fetch(url, {
-        method: 'POST',
-        headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
-        body: JSON.stringify({ startDate: vanIso, endDate: totIso, dimensions: ['query'], rowLimit: 10 })
-    });
-    if (!res.ok) return { fout: `Search Console ${res.status}: ${(await res.text()).slice(0, 120)}` };
+    // Search Console kent twee property-vormen: URL-prefix ("https://…/") en
+    // domein ("sc-domain:…"). Welke van de twee er in de console is
+    // aangemaakt is vanaf hier niet te zien, en de verkeerde vorm geeft een
+    // 403 — daarom proberen we ze allebei voordat we het opgeven.
+    let laatsteFout = null;
+    for (const site of [SITE, `sc-domain:${new URL(SITE).hostname}`]) {
+        const url = `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodeURIComponent(site)}/searchAnalytics/query`;
+        const res = await fetch(url, {
+            method: 'POST',
+            headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+            body: JSON.stringify({ startDate: vanIso, endDate: totIso, dimensions: ['query'], rowLimit: 10 })
+        });
+        if (res.ok) return verwerkSearchConsole(await res.json());
+        laatsteFout = `Search Console ${res.status}: ${(await res.text()).slice(0, 120)}`;
+        if (res.status !== 403 && res.status !== 404) break;
+    }
+    return { fout: laatsteFout };
+}
 
-    const data = await res.json();
+function verwerkSearchConsole(data) {
     const rijen = (data.rows || []).map(r => ({
         term: r.keys[0],
         kliks: r.clicks,
