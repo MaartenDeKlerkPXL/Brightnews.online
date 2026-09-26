@@ -15,9 +15,9 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
 
 ---
 
-## Voor Erik — je instap (bijgewerkt 2026-09-24)
+## Voor Erik — je instap (bijgewerkt 2026-09-26)
 
-Vijf punten staan op jouw naam, verspreid over deze lijst. Hier staan ze bij
+Zes punten staan op jouw naam, verspreid over deze lijst. Hier staan ze bij
 elkaar, op volgorde van wat het langst wacht.
 
 | | Wat | Sinds |
@@ -28,6 +28,7 @@ elkaar, op volgorde van wat het langst wacht.
 | **11** | Bestaat `add_premium_reward` in Supabase? Eén blik | 20 sept |
 | **3** | De selectieprompt bijstellen op tien missers | 10 sept |
 | **26** | Anthropic auto-reload + wie de key houdt *(samen met Maarten)* | 19 sept |
+| **45** | Socials koppelen aan de marketing-agent — **nog niet te doen**, zie hieronder | 26 sept |
 
 **Waarom die twee PR's zo lang stilstonden: er was nooit een reviewer
 aangevraagd.** Ze stonden open, maar GitHub heeft je er nooit een mail over
@@ -37,6 +38,15 @@ gestuurd, want niemand had je formeel gevraagd. Dat is op 2026-09-24 rechtgezet
 Allebei zijn ze `MERGEABLE`, ook ná elkaar: lokaal nagemeten dat #6 en daarna
 #7 schoon op het huidige master landen, terwijl ze allebei
 `.github/workflows/update-news.yml` aanraken. De volgorde maakt niet uit.
+
+**Punt 45 staat er wél bij maar kun je nog niet oppakken.** Het koppelen van de
+marketing-agent aan Instagram, Facebook en LinkedIn wacht op drie dingen die
+alleen Maarten kan doen: er moet een Facebook-Pagina komen, Instagram moet op
+Business, en er moet een LinkedIn-bedrijfspagina zijn. Zonder die accounts is
+er niets om tegenaan te bouwen — een Meta-app hang je aan een Pagina, en de
+LinkedIn-aanvraag vraagt om een pagina waar je beheerder van bent. Het punt
+staat uitgewerkt zodat je weet wat eraan komt en wat de doorlooptijden zijn;
+**begin er niet aan tot Maarten stap 1 t/m 3 heeft afgevinkt.**
 
 **Wat er sinds 20 september op master is geland** (zodat je niet hoeft te
 graven): de artikelpagina's linken nu naar elkaar en het archief staat weer op
@@ -223,6 +233,8 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   **Wat er nog open staat, allebei bewust later:**
   1. **Beslissen over directe koppelingen** (Meta, LinkedIn, Buffer). Het plan
      zegt: pas later, en ook dan met goedkeuring per post. Nu plaats je zelf.
+     **Uitgezocht op 2026-09-26 en verhuisd naar punt 45**, inclusief wat elk
+     kanaal precies vraagt, wat het kost en waarom het nu nog niet kan.
   2. **Twee weken vóór de lancering vers ingeregeld**, zoals in het plan staat
      — op echte content, niet op de concepten van nu.
 
@@ -242,6 +254,101 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   Supabase ziet op infrastructuurniveau uiteraard wel verkeer. Als dat
   preciezer moet, is dat jouw terrein. De tabel zelf staat sinds 2026-09-24 in
   Supabase met alleen een insert-policy.
+
+- [ ] **45. De marketing-agent koppelen aan Instagram, Facebook en LinkedIn.**
+  *(Onderzocht 2026-09-25/26. **Geblokkeerd — Maarten eerst, dan Erik.**)*
+
+  De agent zelf is af: de feed draait, de postfabriek schrijft elke nacht
+  concepten in vijf talen over vier kanalen, de cockpit keurt goed en de
+  afwijzingen voeden de volgende generatie. Wat ontbreekt is de laatste stap —
+  een goedgekeurde post ook daadwerkelijk laten plaatsen.
+
+  ### De rem zit niet in de code
+
+  Twee van de drie hoofdkanalen wijzen nu naar **persoonlijke profielen**, en
+  daar kan geen enkele API naartoe posten:
+
+  | Kanaal | Wat er in de footer staat | Probleem |
+  |---|---|---|
+  | Facebook | `facebook.com/people/Maarten-De-Klerk/…` | persoonlijk profiel; Meta's API kan daar principieel niet naartoe posten |
+  | LinkedIn | `linkedin.com/in/brightnews-online-…` | persoonlijk profiel, geen bedrijfspagina |
+  | Instagram | `instagram.com/brightnews.online` | moet **Business** zijn; Creator werkt niet voor publiceren via de API |
+
+  ### Stap 1 t/m 3 — Maarten, en dit moet éérst
+
+  - [ ] Facebook-**Pagina** aanmaken voor BrightNews, en het Instagram-account
+        eraan koppelen. *(kwartier)*
+  - [ ] Instagram omzetten naar een **Business**-account. *(minuten)*
+  - [ ] LinkedIn-**bedrijfspagina** aanmaken en meteen Community Management
+        API aanvragen. **Dit als eerste de deur uit** — goedkeuring duurt weken
+        tot maanden, dus het is de kritieke pad-stap.
+  - [ ] Besluiten over X (zie hieronder) en de footerlinks bijwerken zodra de
+        nieuwe accounts er zijn.
+
+  ### Stap 4 — Erik, pas daarna
+
+  **Meta (Instagram + Facebook) is de makkelijkste en de eerste die ik zou
+  doen.** Eén app dekt allebei, want Instagram hangt onder de Pagina. En er
+  is een meevaller die makkelijk over het hoofd wordt gezien: **omdat we
+  alleen naar onze eigen accounts posten is er géén App Review nodig.** Een
+  app in development-mode met het eigen account als Tester mag publiceren.
+  Die review van 2–4 weken geldt pas als dérden hun account koppelen.
+  Permissies: `instagram_business_basic` + `instagram_business_content_publish`
+  (de oude `instagram_basic`/`instagram_content_publish` zijn per 27-01-2025
+  vervallen), en voor de Pagina `pages_manage_posts` c.s.
+
+  **LinkedIn is de langste.** Posten naar een bedrijfspagina vereist
+  `w_organization_social` via de Community Management API, en die is alleen
+  beschikbaar voor geregistreerde rechtspersonen via het partnerprogramma —
+  KvK-naam, adres, website en privacybeleid worden gevraagd. Er is een
+  Development- en een Standard-tier; je bouwt eerst tegen testpagina's.
+  *Alternatief dat vandaag al kan:* posten naar een persoonlijk profiel via
+  `w_member_social` is een dag werk, maar minder representatief.
+
+  **X: technisch simpel, maar reken mee.** Sinds 06-02-2026 zijn de tiers weg
+  en is het betalen per gebruik: $0,015 per post, maar **$0,20 zodra er een
+  link in staat** — en onze posts bevatten altijd een link. Eén post per dag
+  per taal is ~$73 per jaar. Let op: **X staat niet eens als hoofdkanaal in
+  `MARKETING-PLAN.md`** (dat zijn Instagram, Facebook en LinkedIn), terwijl de
+  postfabriek er wel elke nacht voor genereert. Uitzetten is een reële optie.
+
+  ### Hoe het aanhaakt
+
+  De helft staat er al: de cockpit schrijft bij elke beoordeling
+  `besluit: 'goed' | 'afgewezen'` per `post_key` naar `marketing_feedback`.
+  Dat is het haakje.
+
+  Wat niet kan is publiceren vanuit de cockpit zelf — dat is een statische
+  pagina in de browser, en daar kunnen geen API-sleutels in.
+
+  ```
+  cockpit (Maarten keurt goed)  ->  Supabase: besluit = 'goed'
+                                            |
+                        GitHub Action, los van de nieuwsrun
+                                            |
+                  backend/plaats-posts.js  ->  Meta / LinkedIn API
+                                            |
+                      Supabase: gepubliceerd, waar en wanneer
+  ```
+
+  Die laatste regel is niet optioneel: **zonder publicatielog plaatst hij bij
+  elke run opnieuw.** Sleutels in GitHub Secrets, net als `ANTHROPIC_API_KEY`.
+  Draft-first blijft intact — niets gaat de deur uit zonder een
+  goedkeuringsregel van Maarten, en dat was zijn eigen voorwaarde in het plan.
+
+  Eén stuk hiervan is kanaalonafhankelijk en zou dus vooruit kunnen: de
+  wachtrijlezer plus die publicatielog, met een proefstand die alleen afdrukt
+  wat hij zou plaatsen. **Toch niet doen zolang stap 1 t/m 3 openstaan** — er
+  liggen vijf andere punten die wél af kunnen, en dit krijgt pas waarde als de
+  kanalen bestaan.
+
+  **Bronnen** (nagekeken 2026-09-25/26, deze API's wijzigen vaak — controleer
+  ze opnieuw voordat je begint):
+  [Instagram API 2026](https://www.getphyllo.com/post/instagram-api-integration-101-for-developers-of-the-creator-economy) ·
+  [Instagram publiceren](https://postproxy.dev/blog/post-to-instagram-via-api/) ·
+  [LinkedIn Community Management](https://learn.microsoft.com/en-us/linkedin/marketing/community-management/community-management-overview?view=li-lms-2026-09) ·
+  [Facebook Pages API](https://developers.facebook.com/docs/pages-api/getting-started/) ·
+  [X API-tarieven 2026](https://postproxy.dev/blog/x-api-pricing-2026/)
 
 - [ ] **41. Lagere prioriteit uit de UI-doorlichting — nog één over.**
   *(2026-09-23; vier van de vijf afgewerkt op 2026-09-24.)*

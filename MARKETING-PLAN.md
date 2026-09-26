@@ -79,6 +79,12 @@ die beslist.
    conceptposts (per dag één bestand of issue); Maarten keurt, past aan en
    plaatst. Directe API-koppelingen (Meta/LinkedIn/Buffer) pas later, en ook
    dan met goedkeuring per post.
+   → *Uitgewerkt op 2026-09-26 in **punt 45** van `TODO.md`: wat elk kanaal
+   vraagt, de doorlooptijden, de kosten van X, en waarom het eerst op Maartens
+   accounts wacht. Eén bevinding hoort ook hier thuis: dit plan noemt
+   Instagram, Facebook en LinkedIn als hoofdkanalen, maar de postfabriek
+   genereert ook voor X — en X is sinds februari 2026 het duurste kanaal per
+   post ($0,20 zodra er een link in staat).*
 4. **Meetlus**: UTM-tags op alle links (`?utm_source=instagram&utm_campaign=…`),
    wekelijks bereik/kliks/registraties/promocodes naast elkaar (GA4 +
    Search Console + Stripe), en de prompt bijstellen op wat werkt — zelfde
