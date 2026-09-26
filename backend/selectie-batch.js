@@ -13,7 +13,9 @@ function bouwBatchPrompt(sjabloon, items) {
     ).join('\n\n');
     return sjabloon
         .replaceAll('{AANTAL}', String(items.length))
-        .replace('{ITEMS}', itemTekst);
+        // Functie-vorm: een string-vervanger interpreteert $-patronen ($&, $'
+        // e.d.) in de brontekst en zou de prompt daarmee stil verminken.
+        .replace('{ITEMS}', () => itemTekst);
 }
 
 // Zet de model-JSON om naar een score-array van exact `aantal` posities.

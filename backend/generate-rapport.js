@@ -1,8 +1,10 @@
 // Weekrapport (besluit Erik 2026-09-09, marketing fase M1): elke week één
 // leesbaar overzicht van de trechter — productie, selectie per bron,
 // cockpit-oordelen, accounts en abonnees — plus een kort AI-advies. Output:
-// data/rapporten/<ISO-week>.md en data/rapporten/laatste.md; de cockpit
-// (marketing.html) toont de laatste. Idempotent per ISO-week.
+// de Supabase-tabel rapporten (review-ronde 2026-09-26: het rapport bevat
+// bedrijfscijfers en de site én repo zijn publiek, dus data/rapporten was
+// voor iedereen leesbaar; de tabel is met RLS afgeschermd tot team_leden).
+// De cockpit (marketing.html) toont de laatste week. Idempotent per ISO-week.
 // Bereik en zoekverkeer komen uit backend/meetlus.js (GA4 + Search Console).
 // Staat de Google-sleutel er niet, dan valt alleen die sectie weg en zegt het
 // rapport dat erbij — de rest van de cijfers blijft gewoon staan.
@@ -69,8 +71,17 @@ async function oordelenPerKanaal(sindsIso) {
 
 async function main() {
     const week = isoWeek(new Date());
-    const pad = path.join(root, `data/rapporten/${week}.md`);
-    if (await fs.pathExists(pad)) {
+    if (!supabaseAdmin) {
+        // Het rapport bevat bedrijfscijfers en hoort alleen in de met RLS
+        // afgeschermde rapporten-tabel (review-ronde 2026-09-26) — zonder
+        // key valt er niets afgeschermds te schrijven.
+        console.error('💥 SUPABASE_SERVICE_ROLE_KEY ontbreekt — weekrapport overgeslagen.');
+        process.exit(1);
+    }
+    const { data: bestaand, error: leesFout } = await supabaseAdmin
+        .from('rapporten').select('week').eq('week', week).limit(1);
+    if (leesFout) throw new Error(`rapporten lezen mislukt: ${leesFout.message}`);
+    if (bestaand?.length) {
         console.log(`ℹ️ Rapport ${week} bestaat al — niets te doen.`);
         return;
     }
@@ -99,9 +110,9 @@ async function main() {
         .map(([bron, s]) => `| ${bron} | ${s.ja} | ${s.nee} | ${Math.round(100 * s.ja / (s.ja + s.nee))}% |`)
         .join('\n');
 
-    // Cockpit en marketing.
-    const posts = await fs.readJson(path.join(root, 'data/marketing-posts.json')).catch(() => ({ dagen: [] }));
-    const postDagen = (posts.dagen ?? []).filter(d => new Date(d.dag).getTime() >= grens).length;
+    // Cockpit en marketing (de conceptposts staan sinds 2026-09-26 in de
+    // afgeschermde marketing_posts-tabel, niet meer in data/).
+    const postDagen = await telRijen('marketing_posts', q => q.gte('dag', sindsIso.slice(0, 10)));
     const goedgekeurd = await telRijen('marketing_feedback', q => q.eq('besluit', 'goed').gte('created_at', sindsIso));
     const afgewezen = await telRijen('marketing_feedback', q => q.eq('besluit', 'afgewezen').gte('created_at', sindsIso));
 
@@ -132,7 +143,7 @@ async function main() {
 ## Productie
 - Artikelen gepubliceerd: **${artikelen.length}** (5 talen) — per categorie: ${Object.entries(perCategorie).map(([c, n]) => `${c} ${n}`).join(', ') || 'geen'}
 - Dagoverzichten: **${digests.length}**
-- Conceptpost-dagen uit de fabriek: **${postDagen}** · goedgekeurd: **${goedgekeurd ?? '?'}** · afgewezen: **${afgewezen ?? '?'}**
+- Conceptpost-dagen uit de fabriek: **${postDagen ?? '?'}** · goedgekeurd: **${goedgekeurd ?? '?'}** · afgewezen: **${afgewezen ?? '?'}**
 
 ## Selectie per bron (acceptatiegraad)
 | Bron | ja | nee | % |
@@ -162,8 +173,9 @@ ${cijfers}`,
     }
 
     const rapport = cijfers + advies;
-    await fs.outputFile(pad, rapport);
-    await fs.outputFile(path.join(root, 'data/rapporten/laatste.md'), rapport);
+    const { error: schrijfFout } = await supabaseAdmin
+        .from('rapporten').upsert({ week, inhoud: rapport }, { onConflict: 'week' });
+    if (schrijfFout) throw new Error(`rapporten schrijven mislukt: ${schrijfFout.message}`);
     console.log(`📊 Weekrapport ${week} geschreven (${artikelen.length} artikelen, ${digests.length} digests).`);
 }
 

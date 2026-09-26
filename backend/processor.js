@@ -535,9 +535,10 @@ async function processNews() {
     // --- Fase C: schrijven, vertalen en publiceren ---------------------------
     for (const item of geselecteerd) {
         try {
-                // Geselecteerd → ruimere brontekst ophalen voor de langere
-                // premium-samenvatting (tot ~500 woorden). Alleen voor
-                // geselecteerde items; mislukken is nooit fataal.
+                // Geselecteerd → ruimere brontekst ophalen zodat de korte
+                // samenvatting (60–150 w) op meer dan een teaser-snippet
+                // steunt. Alleen voor geselecteerde items; mislukken is
+                // nooit fataal.
                 if (item.contentSnippet.length < 3000) {
                     const ruimereTekst = await haalArtikelTekst(item.link, 4000);
                     if (ruimereTekst && ruimereTekst.length > item.contentSnippet.length) {

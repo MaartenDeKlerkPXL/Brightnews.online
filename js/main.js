@@ -1,12 +1,7 @@
 // --- GLOBALE FUNCTIES (beschikbaar voor onclick in HTML) ---
-
-function applyPremiumFeatures() {
-    const isPremium = localStorage.getItem('brightNews_Premium') === 'true';
-    if (isPremium) {
-        document.body.classList.add('is-premium-user');
-        console.log("BrightNews Shine Actief! ✨");
-    }
-}
+// (applyPremiumFeatures en de localStorage-vlag brightNews_Premium zijn in de
+// review-ronde van 2026-09-26 verwijderd: de functie werd nergens aangeroepen
+// en premium wordt server-side gecheckt via profiles/get_full_article.)
 
 // --- TOEGEVOEGD AAN main.js ---
 

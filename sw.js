@@ -1,7 +1,7 @@
 // Bump deze versie bij elke inhoudelijke wijziging aan CSS/JS. Zonder dat
 // blijven bestaande bezoekers vastzitten op een oude cache en krijgen ze
 // nieuwe fixes nooit te zien (zie Fase 2-audit).
-const CACHE_NAME = 'brightnews-v33'; // v33: tekst op een groen vlak is overal wit, en knoppen erven het lettertype (stonden nog in Arial). Bumpen bij elke wijziging aan ASSETS-bestanden.
+const CACHE_NAME = 'brightnews-v34'; // v34: review-ronde 2026-09-26 — HTML met querystring niet meer cachen (de cache groeide onbegrensd), summary-guards in index.js, dode premium-code weg. Bumpen bij elke wijziging aan ASSETS-bestanden.
 const ASSETS = [
     '/',
     '/index.html',
@@ -52,8 +52,11 @@ self.addEventListener('fetch', (event) => {
         event.respondWith(
             fetch(event.request)
                 .then((response) => {
-                    // Alleen succesvolle same-origin pagina's als offline-terugval bewaren.
-                    if (response.ok && new URL(event.request.url).origin === self.location.origin) {
+                    // Alleen succesvolle same-origin pagina's zónder querystring als
+                    // offline-terugval bewaren: elke ?id=/?v=-variant apart cachen
+                    // liet de cache onbegrensd groeien (duizenden entries).
+                    const url = new URL(event.request.url);
+                    if (response.ok && url.origin === self.location.origin && !url.search) {
                         const kopie = response.clone();
                         caches.open(CACHE_NAME).then((cache) => cache.put(event.request, kopie));
                     }

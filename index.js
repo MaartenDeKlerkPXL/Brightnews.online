@@ -39,7 +39,7 @@ function maakArtikelSlug(titel) {
         .normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
         .replace(/[^a-z0-9]+/g, '-')
         .replace(/^-+|-+$/g, '')
-        .slice(0, 80) || 'artikel';
+        .slice(0, 80).replace(/-+$/, '') || 'artikel';
 }
 
 // Deel-URL voor een artikel: de statische pagina zodra die bestaat (beter
@@ -399,7 +399,7 @@ async function toonDetail(id) {
 
     window.currentArticleUrl = referralUrl;
 
-    let displayContent = artikel.summary;
+    let displayContent = String(artikel.summary || '');
     let paywallHTML = "";
 
     if (userStatus.premium === true) {
@@ -418,11 +418,12 @@ async function toonDetail(id) {
             console.error("Kon volledig artikel niet ophalen:", e.message);
         }
     } else {
-        const woorden = artikel.summary.split(' ');
+        const summary = String(artikel.summary || '');
+        const woorden = summary.split(' ');
         // Ook een teaser die al server-side is ingekort (eindigt op "...")
         // verdient de premium-CTA; met alleen de >60-woordencheck kregen
         // nieuwe (bron-ingekorte) artikelen nooit een upgrade-knop te zien.
-        const isIngekort = woorden.length > 60 || artikel.summary.trim().endsWith('...');
+        const isIngekort = woorden.length > 60 || summary.trim().endsWith('...');
         // Dagoverzichten (type 'digest') hebben bewust een ruimere teaser
         // (~100 woorden, server-side ingekort): niet opnieuw afkappen.
         if (woorden.length > 60 && artikel.type !== 'digest') {
@@ -1188,7 +1189,7 @@ function filterByMetadata(category, btn) {
 }
 function updateMetaTags(artikel) {
     const title = artikel ? `${artikel.title} | BrightNews ✨` : 'BrightNews ✨ Jouw dagelijkse dosis positiviteit';
-    const description = artikel ? (artikel.meta_description || artikel.summary.substring(0, 155)) : 'Alleen het beste, meest positieve nieuws van vandaag.';
+    const description = artikel ? (artikel.meta_description || String(artikel.summary || '').substring(0, 155)) : 'Alleen het beste, meest positieve nieuws van vandaag.';
     const image = artikel ? artikel.image : 'https://brightnews.online/assets/brightnews-logo.png';
     const url = window.location.href;
 

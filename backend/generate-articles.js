@@ -49,7 +49,10 @@ function maakSlug(titel) {
         .normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
         .replace(/[^a-z0-9]+/g, '-')
         .replace(/^-+|-+$/g, '')
-        .slice(0, 80) || 'artikel';
+        // De eindtrim ook ná de slice: een afkap op precies 80 tekens kon
+        // anders op '-' eindigen. Bestaande manifest-slugs blijven gewoon
+        // gelden (die winnen hieronder van een herberekening).
+        .slice(0, 80).replace(/-+$/, '') || 'artikel';
 }
 
 function escapeHtml(s) {
@@ -529,7 +532,16 @@ function main() {
         for (const lang of Object.keys(slugsPerTaal)) {
             const dir = path.join(root, 'articles', lang);
             fs.mkdirSync(dir, { recursive: true });
-            const bestand = path.join(dir, `${slugsPerTaal[lang]}-${id}.html`);
+            const naam = `${slugsPerTaal[lang]}-${id}.html`;
+            // Vangnet: slug en id zijn per constructie [a-z0-9-], maar die
+            // garantie staat elders (maakSlug, processor.js). Als er ooit
+            // iets anders doorkomt, hoort dat een luide fout te zijn — geen
+            // bestandsnaam met verrassingen erin.
+            if (!/^[a-z0-9][a-z0-9-]*\.html$/.test(naam)) {
+                console.error(`❌ Onveilige bestandsnaam overgeslagen: ${JSON.stringify(naam)}`);
+                continue;
+            }
+            const bestand = path.join(dir, naam);
             const bestondAl = fs.existsSync(bestand);
             fs.writeFileSync(bestand, paginaHtml(perTaal[lang], lang, slugsPerTaal, manifest, burenIndex));
             geschreven++;

@@ -11,11 +11,12 @@
    en zet daar enkel nog het lijntje in de footer dat hierheen wijst.
    ========================================================================== */
 
-// Publieke anon-gegevens, dezelfde als in js/supabase-init.js. Die bundel
-// staat niet op elke pagina, dus hier een eigen fetch in plaats van
-// window.supabaseClient. De host staat al in de connect-src van de CSP.
-const FEEDBACK_URL = 'https://rquuqypgaannrakdrabj.supabase.co/rest/v1/feedback';
-const FEEDBACK_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJxdXVxeXBnYWFubnJha2RyYWJqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA4MTQyODUsImV4cCI6MjA4NjM5MDI4NX0.-H5ZIcLXBflqKvC0VQGlVGIX29G-nceC9ak5IrhJCzg';
+// Publieke anon-gegevens uit js/supabase-init.js (de ene bron; feedback.html
+// laadt dat bestand vóór dit script). De vendor-bundle staat hier bewust
+// niet, dus dit blijft een eigen fetch in plaats van window.supabaseClient.
+// De host staat al in de connect-src van de CSP.
+const FEEDBACK_URL = window.BRIGHTNEWS_SUPABASE.url + '/rest/v1/feedback';
+const FEEDBACK_KEY = window.BRIGHTNEWS_SUPABASE.anonKey;
 
 // Moet gelijk blijven aan de kolomnamen in
 // supabase/feedback-tabel-2026-09-21.sql en aan de name="fb-..." in de HTML.

@@ -233,12 +233,6 @@ async function updateProfileUI(user) {
     if (upgradeSection) upgradeSection.style.display = isGeldig ? 'none' : 'block';
     if (promoSection) promoSection.style.display = isGeldig ? 'none' : 'block';
 
-    if (isGeldig) {
-        localStorage.setItem('brightNews_Premium', 'true');
-    } else {
-        localStorage.removeItem('brightNews_Premium');
-    }
-
     if (typeof renderSubscriptionUI === 'function') {
         renderSubscriptionUI(isGeldig, profile?.premium_until, profile?.customer_portal_url, profile?.plan_type);
     }

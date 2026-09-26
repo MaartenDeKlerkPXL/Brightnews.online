@@ -288,9 +288,6 @@
         const progressBar = document.getElementById('progress-bar');
 
         if (status === 'success') {
-            // Activate Premium status locally
-            localStorage.setItem('brightNews_Premium', 'true');
-
             // Start the visual progress bar
             setTimeout(() => {
                 progressBar.style.width = '100%';
