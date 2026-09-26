@@ -15,29 +15,23 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
 
 ---
 
-## Voor Erik — je instap (bijgewerkt 2026-09-26)
+## Voor Erik — je instap (bijgewerkt 2026-09-26, middag)
 
-Zes punten staan op jouw naam, verspreid over deze lijst. Hier staan ze bij
-elkaar, op volgorde van wat het langst wacht.
+**PR #6 en #7 zijn gereviewd en gemerged (2026-09-26)** — het alarm draait mee
+in de Action en de meetlus schreef meteen echte Search Console-cijfers in het
+weekrapport. Punt 11 is nagekeken en afgevinkt. Wat er op jouw naam open
+blijft:
 
 | | Wat | Sinds |
 |---|---|---|
-| **[#6](https://github.com/MaartenDeKlerkPXL/Brightnews.online/pull/6)** | Alarm als een nieuwsrun stilletjes niets oplevert → **punt 29** | 16 sept |
-| **[#7](https://github.com/MaartenDeKlerkPXL/Brightnews.online/pull/7)** | Meetlus: bereik en zoekverkeer in het weekrapport → **punt 30** | 20 sept |
 | **43** | De privacyregel over feedback nalezen | 24 sept |
-| **11** | Bestaat `add_premium_reward` in Supabase? Eén blik | 20 sept |
 | **3** | De selectieprompt bijstellen op tien missers | 10 sept |
 | **26** | Anthropic auto-reload + wie de key houdt *(samen met Maarten)* | 19 sept |
 | **45** | Socials koppelen aan de marketing-agent — **nog niet te doen**, zie hieronder | 26 sept |
 
-**Waarom die twee PR's zo lang stilstonden: er was nooit een reviewer
-aangevraagd.** Ze stonden open, maar GitHub heeft je er nooit een mail over
-gestuurd, want niemand had je formeel gevraagd. Dat is op 2026-09-24 rechtgezet
-— je staat nu als reviewer op allebei. Excuses, dat lag aan onze kant.
-
-Allebei zijn ze `MERGEABLE`, ook ná elkaar: lokaal nagemeten dat #6 en daarna
-#7 schoon op het huidige master landen, terwijl ze allebei
-`.github/workflows/update-news.yml` aanraken. De volgorde maakt niet uit.
+Voor Maarten kwam er één klein puntje bij: de **Google Analytics Data API
+aanzetten** in Google Cloud (zie punt 30) — tot die tijd toont het rapport
+alleen de Search Console-kant.
 
 **Punt 45 staat er wél bij maar kun je nog niet oppakken.** Het koppelen van de
 marketing-agent aan Instagram, Facebook en LinkedIn wacht op drie dingen die
@@ -133,14 +127,14 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
 
 ## Techniek en onderhoud
 
-- [ ] **11. Referral-systeem is nooit afgemaakt.** Staat als TODO in
-  `js/main.js:22`. **Correctie 2026-09-20:** hier stond dat
-  `add_premium_reward` wél bestaat; het commentaar in de code zegt het
-  tegenovergestelde en is stelliger onderbouwd ("bevestigd: het public-schema
-  was leeg vóór de profiles/articles_full-tabellen uit Fase 1"). Erik kan dat
-  in één blik in Supabase nakijken. Bestaat de functie niet, dan roept de code
-  iets aan wat er niet is. Afmaken of de resten opruimen — half werk in de code
-  is erger dan geen werk. *(Erik)*
+- [x] **11. Referral-systeem is nooit afgemaakt.** ✅ 2026-09-26 nagekeken in
+  Supabase: `add_premium_reward` bestaat inderdaad níet (het public-schema
+  kent alleen `cleanup_profile_after_user_delete`, `delete_user_immediately`,
+  `get_full_article` en `redeem_promo_code`). De code roept hem ook nergens
+  aan — `processReferralReward` logt alleen en verwijst naar dit punt. Er is
+  dus geen kapotte aanroep; het TODO-commentaar in `js/main.js` klopt. Bouwen
+  (RPC met security definer + audit-trail) pas als het referral-systeem
+  prioriteit krijgt.
 
 - [x] **14. Taalkiezer op mobiel.** ✅ 2026-09-20 — de knop toont onder 768px
   de ISO-code ("NL") in plaats van de volle taalnaam: 116px → 57px. De naam
@@ -190,7 +184,15 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   (id `1986278256`) die Maarten zelf downloadde. Lifestyle staat daarmee op 9
   en het totaal op 43 reservefoto's bij 26 nodig.
 
-- [ ] **29. Pull request #6 wacht op Erik.** Het alarm dat een nieuwsrun laat
+- [x] **29. Pull request #6 wacht op Erik.** ✅ 2026-09-26 — gereviewd en
+  gemerged. Bij de review bleek de nieuwe stapnaam ("🚨 Controle: …") het
+  complete workflow-YAML ongeldig te maken (dubbele punt in een ongequote
+  scalar — GitHub weigerde zelfs de handmatige trigger); naam gequote in
+  `16bcac9`. Alarm-scenario's lokaal nagespeeld (tegoed-op-signatuur,
+  feeds-kapot, rustige dag) en de eerste echte run draaide de controle groen
+  mee. Oorspronkelijke tekst hieronder.
+
+  Het alarm dat een nieuwsrun laat
   falen als hij stilletjes niets oplevert
   ([#6](https://github.com/MaartenDeKlerkPXL/Brightnews.online/pull/6)) staat
   open sinds 2026-09-16 en is nog niet bekeken. Het is het enige werk van onze
@@ -222,13 +224,19 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   | 1. Input: `data/marketing-feed.json` per taal | ✅ draait elke run mee |
   | 2. Generatie per taal en kanaal, itereerbare prompt | ✅ `backend/generate-posts.js` + `backend/marketing-prompt.md` |
   | 3. Draft-first met goedkeuring door een mens | ✅ de cockpit op `marketing.html` |
-  | 4. Meetlus: bereik, kliks, registraties naast elkaar | ✅ gebouwd (`backend/meetlus.js`), ⏳ wacht op PR #7 |
+  | 4. Meetlus: bereik, kliks, registraties naast elkaar | ✅ live sinds 2026-09-26 (PR #7 gemerged; Search Console levert al cijfers) |
 
   Maarten heeft `GOOGLE_SERVICE_ACCOUNT` en `GA4_PROPERTY_ID` als GitHub-secret
   gezet en het serviceaccount toegang gegeven in GA4 én Search Console. De
-  cockpit is gevoed (punt 24). **De meetlus meet pas zodra Erik PR #7 mergt** —
-  tot dan staat `backend/meetlus.js` niet op master en blijft het kopje
-  "Bereik en zoekverkeer" in het weekrapport op "nog geen koppeling" staan.
+  cockpit is gevoed (punt 24). PR #7 is op 2026-09-26 gemerged; de bewijsrun
+  schreef meteen echte Search Console-cijfers in het W39-rapport.
+
+  **Eén klik blijft over (Maarten):** GA4 geeft nog een 403 omdat de **Google
+  Analytics Data API niet is aangezet** in het Google Cloud-project
+  (`498462657230`) — de Search Console API wél, vandaar dat die kant al werkt.
+  Aanzetten: console.cloud.google.com → APIs & Services → Library → "Google
+  Analytics Data API" → Enable. Daarna vullen de GA4-regels van het rapport
+  zichzelf; er hoeft verder niets te veranderen.
 
   **Wat er nog open staat, allebei bewust later:**
   1. **Beslissen over directe koppelingen** (Meta, LinkedIn, Buffer). Het plan
