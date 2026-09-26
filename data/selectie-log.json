@@ -1,5 +1,41 @@
 [
  {
+  "datum": "2026-09-26T15:14:08.026Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "Good News This Week: September 26, 2026 - Bricks, Elephants, & Tip Lines",
+  "uitsluiting": "verzameleditie",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Dit is een weekoverzicht van Good Good Good dat meerdere losse onderwerpen bundelt; BrightNews maakt eigen dagoverzichten, niet andermans verzamelitems."
+ },
+ {
+  "datum": "2026-09-26T15:14:08.026Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "Dolly Parton fans celebrate the first '9 to 5' day by honoring her love of literacy ",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 4,
+  "totaal": 10,
+  "besluit": "ja",
+  "reden": "Hartverwarmend verhaal over gemeenschapszin en kinderenliteratuur met echte mensen en herkenbare situaties; volledig positief geformuleerd en maatschappelijk relevant."
+ },
+ {
+  "datum": "2026-09-26T15:14:08.026Z",
+  "bron": "NPR.org",
+  "titel": "The hot spot: World Sauna Congress convenes in Oslo as global interest skyrockets",
+  "uitsluiting": "te-weinig-inhoud",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "De tekstfragmenten zijn onvolledig en bestaan grotendeels uit navigatiemenus; onvoldoende inhoud om het verhaal te beoordelen."
+ },
+ {
   "datum": "2026-09-26T04:38:56.572Z",
   "bron": "OptimistDaily.com",
   "titel": "Podcast Transcript September 25th, 2026— The tilcayo, cancer-sniffing dogs, and 8 more things going right",
@@ -3551,38 +3587,5 @@
   "totaal": 5,
   "besluit": "nee",
   "reden": "Productnieuws over een tiny house; geen maatschappelijke doorbraak of persoonlijk verhaal dat lezers raakt."
- },
- {
-  "datum": "2026-09-16T16:39:09.146Z",
-  "bron": "Newatlas.com",
-  "titel": "Heavy hauling goes hybrid: Self-unloading cargo ship cuts emissions",
-  "gevoel": 2,
-  "formulering": 2,
-  "relevantie": 3,
-  "totaal": 7,
-  "besluit": "nee",
-  "reden": "Positief klimaatnieuws over innovatie in scheepvaart; maatschappelijk relevant en hoopgevend."
- },
- {
-  "datum": "2026-09-16T16:39:09.146Z",
-  "bron": "Newatlas.com",
-  "titel": "Stark goes dark with limited-edition Varg SM electric supermoto",
-  "gevoel": 1,
-  "formulering": 1,
-  "relevantie": 0,
-  "totaal": 2,
-  "besluit": "nee",
-  "reden": "Productlancering van een elektrische motorfiets; geen maatschappelijke betekenis, puur gadgetnieuws."
- },
- {
-  "datum": "2026-09-16T16:39:09.146Z",
-  "bron": "Newatlas.com",
-  "titel": "WWII battleship made from ice inspires strong new building material",
-  "gevoel": 2,
-  "formulering": 2,
-  "relevantie": 3,
-  "totaal": 7,
-  "besluit": "nee",
-  "reden": "Wetenschappelijke doorbraak met praktische toepassingen; hoopgevend en maatschappelijk relevant."
  }
 ]

@@ -1,10 +1,18 @@
 {
- "gegenereerd": "2026-09-26T04:41:20.753Z",
+ "gegenereerd": "2026-09-26T15:14:40.463Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "1790435677680ci6xsstfv",
+     "titel": "Fans van Dolly Parton vieren eerste 'Imagination Library Day of Reading'",
+     "teaser": "In Raleigh, North Carolina, organiseerden Nick Blanchard en Kelly Forbes een inzamelactie voor kinderboeken ter ere van wijlen muzieklegende en filantroop Dolly Parton. Gouverneur Josh Stein riep 25 september officieel uit tot 'Dolly Parton’s Imagination Library Day of Reading', verwijzend naar haar hit '9 to 5' en haar vrijgevigheid richting slachtoffers van orkaan Helene en jonge lezers. Partons Imagination Library,...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/fans-van-dolly-parton-vieren-eerste-imagination-library-day-of-reading-1790435677680ci6xsstfv.html"
+    },
     {
      "id": "1790310928691595wrcopq",
      "titel": "Ethiopiërs planten miljoenen bomen via Green Legacy Initiative",
@@ -36,14 +44,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/nonprofit-rise-up-leidt-ex-gedetineerden-op-tot-machinebankwerker-1790355679646pe6dardmc.html"
-    },
-    {
-     "id": "1790310980862hoxeg2z6q",
-     "titel": "Wereldrecord: grootste beverdam ligt verscholen in Wood Buffalo National Park",
-     "teaser": "In het Canadese Wood Buffalo National Park, een gebied zo groot als Zwitserland, bevindt zich 's werelds grootste beverdam. De dam werd pas in 2007 ontdekt via satellietbeelden van landschapsecoloog Jean Thie; parkbeheerders wisten er tot dan niets van. Slechts één persoon, Rob Mark, heeft de dam ooit te voet bezocht, in juli 2014 na drie jaar planning. De dam...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/wereldrecord-grootste-beverdam-ligt-verscholen-in-wood-buffalo-national-park-1790310980862hoxeg2z6q.html"
     }
    ],
    "dagoverzichten": [
@@ -65,6 +65,14 @@
   },
   "en": {
    "top": [
+    {
+     "id": "1790435677680ci6xsstfv",
+     "titel": "Dolly Parton fans celebrate first 'Imagination Library Day of Reading'",
+     "teaser": "In Raleigh, North Carolina, Nick Blanchard and Kelly Forbes organized a children's book drive to honor the late music legend and philanthropist Dolly Parton. Governor Josh Stein officially declared September 25 as 'Dolly Parton's Imagination Library Day of Reading', referencing her hit '9 to 5' and her generosity toward Hurricane Helene victims and young readers. Parton's Imagination Library, launched in...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/dolly-parton-fans-celebrate-first-imagination-library-day-of-reading-1790435677680ci6xsstfv.html"
+    },
     {
      "id": "1790310928691595wrcopq",
      "titel": "Ethiopians plant millions of trees via Green Legacy Initiative",
@@ -96,14 +104,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/nonprofit-rise-up-trains-formerly-incarcerated-men-as-machinists-1790355679646pe6dardmc.html"
-    },
-    {
-     "id": "1790310980862hoxeg2z6q",
-     "titel": "World record: largest beaver dam hidden in Wood Buffalo National Park",
-     "teaser": "In Canada's Wood Buffalo National Park, an area as large as Switzerland, lies the world's largest beaver dam. The dam was only discovered in 2007 through satellite imagery by landscape ecologist Jean Thie; park managers had no knowledge of it until then. Only one person, Rob Mark, has ever visited the dam on foot, in July 2014 after three years...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/world-record-largest-beaver-dam-hidden-in-wood-buffalo-national-park-1790310980862hoxeg2z6q.html"
     }
    ],
    "dagoverzichten": [
@@ -125,6 +125,14 @@
   },
   "de": {
    "top": [
+    {
+     "id": "1790435677680ci6xsstfv",
+     "titel": "Fans von Dolly Parton feiern ersten „Imagination Library Day of Reading\"",
+     "teaser": "In Raleigh, North Carolina, organisierten Nick Blanchard und Kelly Forbes eine Sammelaktion für Kinderbücher zu Ehren der verstorbenen Musiklegende und Philanthropin Dolly Parton. Gouverneur Josh Stein rief den 25. September offiziell zum „Dolly Parton's Imagination Library Day of Reading\" aus und verwies dabei auf ihren Hit „9 to 5\" sowie ihre Großzügigkeit gegenüber Opfern des Hurrikans Helene und jungen Lesern....",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/fans-von-dolly-parton-feiern-ersten-imagination-library-day-of-reading-1790435677680ci6xsstfv.html"
+    },
     {
      "id": "1790310928691595wrcopq",
      "titel": "Äthiopier pflanzen Millionen Bäume über Green Legacy Initiative",
@@ -156,14 +164,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/nonprofit-rise-up-bildet-ehemalige-haftlinge-zu-zerspanungsmechanikern-aus-1790355679646pe6dardmc.html"
-    },
-    {
-     "id": "1790310980862hoxeg2z6q",
-     "titel": "Weltrekord: größter Biberdamm versteckt sich im Wood Buffalo National Park",
-     "teaser": "Im kanadischen Wood Buffalo National Park, ein Gebiet so groß wie die Schweiz, befindet sich der größte Biberdamm der Welt. Der Damm wurde erst 2007 durch Satellitenbilder des Landschaftsökologen Jean Thie entdeckt; Parkverwalter wussten bis dahin nichts davon. Nur eine Person, Rob Mark, hat den Damm je zu Fuß besucht, im Juli 2014 nach drei Jahren Planung. Der Damm ist...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/weltrekord-gro-ter-biberdamm-versteckt-sich-im-wood-buffalo-national-park-1790310980862hoxeg2z6q.html"
     }
    ],
    "dagoverzichten": [
@@ -185,6 +185,14 @@
   },
   "fr": {
    "top": [
+    {
+     "id": "1790435677680ci6xsstfv",
+     "titel": "Les fans de Dolly Parton célèbrent le premier « Imagination Library Day of Reading »",
+     "teaser": "À Raleigh, en Caroline du Nord, Nick Blanchard et Kelly Forbes ont organisé une collecte de livres pour enfants en l'honneur de la légendaire musicienne et philanthrope Dolly Parton. Le gouverneur Josh Stein a officiellement proclamé le 25 septembre « Dolly Parton's Imagination Library Day of Reading », en référence à son succès « 9 to 5 » et à...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/les-fans-de-dolly-parton-celebrent-le-premier-imagination-library-day-of-reading-1790435677680ci6xsstfv.html"
+    },
     {
      "id": "1790310928691595wrcopq",
      "titel": "Des Éthiopiens plantent des millions d'arbres via la Green Legacy Initiative",
@@ -216,14 +224,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/la-nonprofit-rise-up-forme-d-anciens-detenus-au-metier-de-fraiseur-1790355679646pe6dardmc.html"
-    },
-    {
-     "id": "1790310980862hoxeg2z6q",
-     "titel": "Record mondial : le plus grand barrage de castor se cache dans le parc national Wood Buffalo",
-     "teaser": "Dans le parc national Wood Buffalo au Canada, une région aussi grande que la Suisse, se trouve le plus grand barrage de castor du monde. Le barrage n'a été découvert qu'en 2007 grâce à des images satellites de l'écologiste du paysage Jean Thie ; les gestionnaires du parc n'en savaient rien jusqu'alors. Une seule personne, Rob Mark, a jamais visité...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/record-mondial-le-plus-grand-barrage-de-castor-se-cache-dans-le-parc-national-wo-1790310980862hoxeg2z6q.html"
     }
    ],
    "dagoverzichten": [
@@ -245,6 +245,14 @@
   },
   "es": {
    "top": [
+    {
+     "id": "1790435677680ci6xsstfv",
+     "titel": "Los fans de Dolly Parton celebran el primer 'Imagination Library Day of Reading'",
+     "teaser": "En Raleigh, Carolina del Norte, Nick Blanchard y Kelly Forbes organizaron una campaña de recolección de libros infantiles en honor a la difunta leyenda musical y filántropa Dolly Parton. El gobernador Josh Stein proclamó oficialmente el 25 de septiembre como «Dolly Parton's Imagination Library Day of Reading», haciendo referencia a su éxito «9 to 5» y su generosidad hacia las...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/los-fans-de-dolly-parton-celebran-el-primer-imagination-library-day-of-reading-1790435677680ci6xsstfv.html"
+    },
     {
      "id": "1790310928691595wrcopq",
      "titel": "Etíopes plantan millones de árboles a través de Green Legacy Initiative",
@@ -276,14 +284,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/la-organizacion-rise-up-capacita-a-ex-reclusos-como-operarios-de-maquinas-1790355679646pe6dardmc.html"
-    },
-    {
-     "id": "1790310980862hoxeg2z6q",
-     "titel": "Récord mundial: la mayor represa de castores se esconde en Wood Buffalo National Park",
-     "teaser": "En el Wood Buffalo National Park canadiense, una zona tan grande como Suiza, se encuentra la mayor represa de castores del mundo. La presa fue descubierta recién en 2007 mediante imágenes satelitales del ecólogo del paisaje Jean Thie; los administradores del parque no sabían de su existencia hasta entonces. Solo una persona, Rob Mark, ha visitado la presa a pie,...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/record-mundial-la-mayor-represa-de-castores-se-esconde-en-wood-buffalo-national--1790310980862hoxeg2z6q.html"
     }
    ],
    "dagoverzichten": [
