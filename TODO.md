@@ -15,12 +15,17 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
 
 ---
 
-## Voor Erik — je instap (bijgewerkt 2026-09-26, middag)
+## Voor Erik — je instap (bijgewerkt 2026-09-26, avond)
 
 **PR #6 en #7 zijn gereviewd en gemerged (2026-09-26)** — het alarm draait mee
 in de Action en de meetlus schreef meteen echte Search Console-cijfers in het
-weekrapport. Punt 11 is nagekeken en afgevinkt. Wat er op jouw naam open
-blijft:
+weekrapport. Punt 11 is nagekeken en afgevinkt. Daarna is
+**[PR #8](https://github.com/MaartenDeKlerkPXL/Brightnews.online/pull/8)
+gemerged: een volledige review-ronde** (alarm dekt nu ook de
+continue-on-error-stappen, evergreen/digest-validaties, cachebump-bewaking,
+feedback-endpoint begrensd, en het weekrapport + de conceptposts zijn uit de
+publieke repo verhuisd naar RLS-tabellen — zie het Afgerond-blok). Wat er op
+jouw naam open blijft:
 
 | | Wat | Sinds |
 |---|---|---|
@@ -29,9 +34,11 @@ blijft:
 | **26** | Anthropic auto-reload + wie de key houdt *(samen met Maarten)* | 19 sept |
 | **45** | Socials koppelen aan de marketing-agent — **nog niet te doen**, zie hieronder | 26 sept |
 
-Voor Maarten kwam er één klein puntje bij: de **Google Analytics Data API
-aanzetten** in Google Cloud (zie punt 30) — tot die tijd toont het rapport
-alleen de Search Console-kant.
+Voor Maarten kwamen er twee kleine puntjes bij: de **Google Analytics Data
+API aanzetten** in Google Cloud (zie punt 30) — tot die tijd toont het
+rapport alleen de Search Console-kant — en **de cockpit even nalopen**: die
+leest de concepten en het rapport sinds PR #8 uit Supabase in plaats van uit
+publieke bestanden (je bestaande posts en rapporten zijn gemigreerd).
 
 **Punt 45 staat er wél bij maar kun je nog niet oppakken.** Het koppelen van de
 marketing-agent aan Instagram, Facebook en LinkedIn wacht op drie dingen die
