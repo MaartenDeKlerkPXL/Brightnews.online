@@ -38,10 +38,10 @@ jobs:
       - name: 🤖 AI Verwerking (Scannen, Filteren & Vertalen)
         env:
           # Primaire provider (Claude-migratie 2026-09-05): Maartens
-          # Anthropic-key. MISTRAL_API_KEY is de slapende fallback-sleuf in
-          # de adapter-keten — mag leeg zijn.
+          # Anthropic-key. De Mistral-fallbacksleuf in de adapter is leeg
+          # sinds de key op 2026-09-16 is verwijderd; providers zonder key
+          # slaat de keten vanzelf over, dus de env-regel is hier weggehaald.
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           # Nodig om volledige artikeltekst apart van de publieke JSON op te
           # slaan (echte paywall, Fase 1.4). Zet deze zelf in GitHub Secrets:
           # Settings → Secrets and variables → Actions → SUPABASE_SERVICE_ROLE_KEY.
@@ -54,7 +54,6 @@ jobs:
         continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: node backend/digest.js
 
@@ -69,7 +68,6 @@ jobs:
         continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: node backend/generate-posts.js
 
@@ -77,14 +75,12 @@ jobs:
         continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
         run: node backend/generate-evergreen.js
 
       - name: 📊 Weekrapport (wekelijks)
         continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           # Meetlus: bereik uit GA4 en zoekverkeer uit Search Console. Deze twee
           # mogen ontbreken — dan slaat backend/meetlus.js die sectie over en
@@ -104,7 +100,9 @@ jobs:
           # Alleen de nieuws-JSON's plus de gegenereerde sitemap/robots.txt —
           # bewust niet data/*.json, zodat een eventueel ander databestand
           # nooit per ongeluk publiek meegecommit wordt.
-          git add data/news_*.json data/seen_links.json data/last_run.json data/selectie-log.json data/digest-log.json data/selectie-archief.jsonl data/marketing-feed.json data/marketing-posts.json data/rapporten articles themas sitemap.xml robots.txt
+          # marketing-posts en rapporten staan sinds 2026-09-26 in Supabase
+          # (RLS, team-only) — bedrijfscijfers horen niet in een publieke repo.
+          git add data/news_*.json data/seen_links.json data/last_run.json data/selectie-log.json data/digest-log.json data/selectie-archief.jsonl data/marketing-feed.json articles themas sitemap.xml robots.txt
 
           # Controleer of er echt iets veranderd is voor we committen
           if git diff --quiet && git diff --staged --quiet; then
@@ -128,4 +126,8 @@ jobs:
       # mail uitging. Zie backend/controleer-run.js voor wat er precies wordt
       # gecontroleerd.
       - name: "🚨 Controle: heeft deze run echt iets opgeleverd?"
+        env:
+          # Voor de postfabriek-check (marketing_posts staat in Supabase);
+          # zonder deze key wordt alleen die ene deelcheck overgeslagen.
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: node backend/controleer-run.js

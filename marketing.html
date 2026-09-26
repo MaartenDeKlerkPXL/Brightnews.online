@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co; object-src 'none'; base-uri 'self'; form-action 'self'">
     <!-- Marketing-cockpit (fase M1, 2026-09-09): interne teampagina — de
-         postfabriek schrijft concepten naar data/marketing-posts.json, hier
-         keurt het team ze (goedkeuren/afwijzen-met-reden -> Supabase
-         marketing_feedback, afgeschermd met RLS op team_leden). Afwijzingen
+         postfabriek schrijft concepten naar de Supabase-tabel marketing_posts
+         (sinds 2026-09-26: site en repo zijn publiek, dus data/ was voor
+         iedereen leesbaar; de tabel is met RLS afgeschermd tot team_leden,
+         net als het weekrapport in de rapporten-tabel). Hier keurt het team
+         ze (goedkeuren/afwijzen-met-reden -> marketing_feedback). Afwijzingen
          voeden de volgende generatie. Bewust alleen Nederlands: teampagina,
          geen i18n-keys nodig. DRAFT-FIRST: hier vertrekt niets vanzelf. -->
     <meta name="robots" content="noindex, nofollow">
@@ -126,8 +128,14 @@
             return;
         }
 
-        const posts = await fetch('data/marketing-posts.json?v=' + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null);
-        if (!posts || !Array.isArray(posts.dagen) || posts.dagen.length === 0) {
+        // Concepten uit de afgeschermde tabel (RLS: alleen team_leden).
+        const { data: postRijen } = await client
+            .from('marketing_posts')
+            .select('dag, inhoud')
+            .order('dag', { ascending: false })
+            .limit(7);
+        const dagen = (postRijen || []).map(r => ({ dag: r.dag, ...r.inhoud }));
+        if (dagen.length === 0) {
             melding('Nog geen concepten — de postfabriek draait mee met de nieuws-update (2× per dag). Kom na de volgende run terug.');
         } else {
             const { data: feedback } = await client
@@ -136,15 +144,20 @@
                 .order('created_at', { ascending: true });
             const status = {};
             (feedback || []).forEach(f => { status[f.post_key] = f; });
-            render(posts.dagen.slice(0, 7), status, client);
+            render(dagen, status, client);
         }
 
-        // Weekrapport (werkpakket 6) tonen als het er is.
-        fetch('data/rapporten/laatste.md?v=' + Date.now()).then(r => r.ok ? r.text() : null).then(md => {
-            if (!md) return;
-            document.getElementById('rapport-tekst').textContent = md;
-            document.getElementById('rapport').hidden = false;
-        }).catch(() => {});
+        // Weekrapport (werkpakket 6) tonen als het er is — zelfde afscherming.
+        client.from('rapporten')
+            .select('inhoud')
+            .order('week', { ascending: false })
+            .limit(1)
+            .then(({ data }) => {
+                const md = data?.[0]?.inhoud;
+                if (!md) return;
+                document.getElementById('rapport-tekst').textContent = md;
+                document.getElementById('rapport').hidden = false;
+            });
     }
 
     function render(dagen, status, client) {
