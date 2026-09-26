@@ -1,6 +1,6 @@
 # Bright News — Overdrachtsdocument / Handoff
 
-**Bijgewerkt: 2026-09-16, sessie 9 met Claude Fable 5.** (Kopregel liep achter; sessies 8–9 staan in §9.0.)
+**Bijgewerkt: 2026-09-26, sessie 10 met Claude Fable 5.** (Sessies 8–10 staan in §9.0.)
 Sessies 1–2 (1–2 sep): review, fases A–G. Sessie 3 (3 sep): pipeline
 werkend (fases H+I). Sessie 4 (4 sep): logo, Stripe deel 2, E2E.
 Sessie 5 (5 sep): LIVEGANG Stripe + echte verkoop bewezen, MoR-check,
@@ -231,6 +231,31 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
 - GA-property `G-ZNFX3R9BQV`; Search Console: nog inrichten (Maarten)
 
 ## 9. Volgende stappen (in volgorde)
+
+0-S10. **Sessie 10 (2026-09-26)**: Maartens PR #6 (stille-storing-alarm)
+   en #7 (meetlus GA4/Search Console) gereviewd en gemerged — review ving
+   dat de nieuwe stapnaam het workflow-YAML ongeldig maakte (dubbele punt
+   in ongequote scalar; GitHub weigerde álle runs) → gequote in
+   `16bcac9`; meetlus robuust voor beide Search Console-property-vormen.
+   Bewijsrun: Search Console levert al cijfers; **GA4 wacht op één klik
+   van Maarten** (Data API aanzetten in Cloud-project `498462657230`, zie
+   TODO 30). Daarna volledige codereview (Erik-GO op alle punten) →
+   **PR #8**: alarm bewaakt nu ook de continue-on-error-stappen
+   (digest/postfabriek, scenario-getest), evergreen nr-validatie +
+   week-id in bestandsnaam, digest-[n]-validatie, cachebump-bewaking
+   (`bewaak-cache-bump.yml`, vangt de misser van 23 sep aantoonbaar),
+   feedback-endpoint begrensd (lengtes + volumerem 100/uur, live
+   getest), $-patronen in promptvulling dicht, Instagram nooit een dode
+   UTM-link, sw v34 (geen querystring-HTML meer cachen), dode code weg.
+   **Afscherming bedrijfscijfers**: weekrapport + conceptposts verhuisd
+   van publieke bestanden naar Supabase-tabellen `rapporten` en
+   `marketing_posts` (RLS team-only, anon bewezen geweigerd; 14 postdagen
+   + 3 rapporten gemigreerd; cockpit omgebouwd — Maarten: even checken).
+   Bewust NIET: articles_full-rijen van uitgezakte artikelen opruimen —
+   geen wezen, de blijvende statische pagina's serveren premium daarmee.
+   SQL: `supabase/hardening-2026-09-26.sql`. TODO 11 nagekeken
+   (add_premium_reward bestaat inderdaad niet; code roept niets aan),
+   punt 29/30 afgevinkt.
 
 0-S9. **Sessie 9 (2026-09-16)**: Maartens wachtende werk verwerkt (PR #5
    gemerged + og:image-absoluutfix; PR #1-bronwerk gemerged, sw v23,

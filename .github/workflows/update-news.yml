@@ -24,6 +24,18 @@ jobs:
         with:
           fetch-depth: 0 # Haalt de volledige historie op voor een veiligere push
 
+      # checkout pint de SHA van het tríggermoment; staat er een run in de
+      # concurrency-wachtrij vóór ons, dan is master al verder tegen de tijd
+      # dat wij beginnen. Zonder deze stap draait de run dan op verouderde
+      # data (seen_links van vóór de vorige run → dubbele artikelen mogelijk)
+      # en strandt de push-rebase op conflicten in gegenereerde bestanden —
+      # precies wat er op 2026-09-26 16:11 gebeurde met twee dispatches kort
+      # na elkaar.
+      - name: ⏩ Doorspoelen naar de actuele branch-kop
+        run: |
+          git fetch origin "$GITHUB_REF_NAME"
+          git reset --hard "origin/$GITHUB_REF_NAME"
+
       - name: 🟢 Node.js instellen
         uses: actions/setup-node@v4
         with:
@@ -113,7 +125,12 @@ jobs:
             # zou de push falen en de hele run (incl. AI-kosten) verloren gaan.
             # GITHUB_REF_NAME i.p.v. hard 'master': een workflow_dispatch vanaf
             # een testbranch pusht zo naar die branch en nooit naar master.
-            git pull --rebase origin "$GITHUB_REF_NAME"
+            # -X theirs: bij een conflict in een bestand dat beide kanten
+            # regenereerden (last_run.json, marketing-feed.json) wint bij een
+            # rebase "theirs" = ónze zojuist gegenereerde versie — die is per
+            # definitie de nieuwste. Handwerk van mensen raakt dit niet: deze
+            # commit bevat uitsluitend gegenereerde bestanden.
+            git pull --rebase -X theirs origin "$GITHUB_REF_NAME"
             git push origin "HEAD:$GITHUB_REF_NAME"
           fi
 
