@@ -1,5 +1,70 @@
 [
   {
+    "id": "dg-20260925-environment",
+    "type": "digest",
+    "digest_date": "2026-09-25",
+    "title": "L'amitié entre animaux orphelins, un oiseau disparu retrouvé et des avancées écologiques dans le monde",
+    "summary": "Ces jours-ci montrent que prendre soin des animaux et de la nature mène quelque part, de la savane à la ville. Il y a un fil rouge dans l'actualité : là où les gens persévèrent patiemment, par l'accueil, la recherche ou une politique intelligente, quelque chose de beau revient. Cela commence par une histoire émouvante de Nairobi et se termine par des pistes cyclables à Édimbourg. Au sein de la Sheldrick Wildlife Trust, un lien particulier s'est noué entre deux jeunes animaux qui ont tous deux perdu leur mère. Le rhinocéros noir Tytan et le zèbre Notty ont trouvé du...",
+    "image_alt": "L'amitié entre animaux orphelins, un oiseau disparu retrouvé et des avancées écologiques dans le monde",
+    "meta_description": "Des animaux orphelins qui nouent une amitié, un oiseau retrouvé et plus de cyclistes que de voitures : les bonnes nouvelles environnementales de ces jours-",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab6ac71383c10cebf598d90_6ab6ac6f8a54eecb452e68b4_baby-rhino-zebra-sheldrick-wildlife-trust-featured.webp",
+    "date": "2026-09-26T04:41:19.855Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1790397618858z5yxsbuyb",
+        "title": "Le bébé rhinocéros orphelin Tytan et le zèbre Notty inséparables après la perte de leurs mères"
+      },
+      {
+        "id": "1790397592265yflgpvt9s",
+        "title": "Le coucou-étrangleur du Ghana réapparaît en Côte d'Ivoire après 13 ans"
+      },
+      {
+        "id": "1790310899189q5vbeymu0",
+        "title": "Une caméra en direct filme les animaux sauvages à un point d'eau isolé à Watarrka"
+      },
+      {
+        "id": "1790269178731b0lo49hxw",
+        "title": "Une entreprise portugaise de liège isole les vaisseaux spatiaux"
+      },
+      {
+        "id": "1790223832101xr2olieuk",
+        "title": "Les vélos surpassent les voitures aux heures de pointe sur Leith Walk à Édimbourg"
+      }
+    ]
+  },
+  {
+    "id": "1790397618858z5yxsbuyb",
+    "title": "Le bébé rhinocéros orphelin Tytan et le zèbre Notty inséparables après la perte de leurs mères",
+    "summary": "À la Sheldrick Wildlife Trust à Nairobi, qui accueille depuis 1977 les animaux blessés et orphelins d'Afrique de l'Est, un lien particulier s'est noué entre deux jeunes animaux. Le rhinocéros noir Tytan a perdu sa mère alors qu'il n'avait que huit mois, après qu'elle soit tombée d'une falaise. Une semaine plus tard, le zèbre Notty a été amené au même...",
+    "image_alt": "Le bébé rhinocéros Tytan et le zèbre Notty ensemble au refuge Sheldrick Wildlife Trust à Nairobi",
+    "meta_description": "L'orphelin rhinocéros Tytan et le zèbre Notty ont tous deux perdu leur mère et sont inséparables à la Sheldrick Wildlife Trust.",
+    "meta_keywords": "Sheldrick Wildlife Trust, rhinocéros, zèbre, Tytan, Notty, Kenya, refuge pour animaux, animaux orphelins",
+    "link": "https://www.goodgoodgood.co/articles/baby-rhino-zebra-sheldrick-wildlife-trust",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab6ac71383c10cebf598d90_6ab6ac6f8a54eecb452e68b4_baby-rhino-zebra-sheldrick-wildlife-trust-featured.webp",
+    "date": "2026-09-26T04:40:19.938Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790397592265yflgpvt9s",
+    "title": "Le coucou-étrangleur du Ghana réapparaît en Côte d'Ivoire après 13 ans",
+    "summary": "Les chercheurs Paulo Ditzel et Stephanie Bartlett de l'International Bird Conservation Partnership (IBCP) ont observé à nouveau le coucou-étrangleur du Ghana (Lobotos lobatus) au Parc national de Taï en Côte d'Ivoire. La dernière observation confirmée de cet oiseau remarquable aux couleurs orange, jaune et noir remontait à 2013, dans la forêt d'Atewa au Ghana. Lors d'un comptage d'oiseaux, Ditzel a...",
+    "image_alt": "Le coucou-étrangleur du Ghana au plumage orange et aux ailes noir et jaune, perché sur une branche dans la forêt tropicale de Côte d'Ivoire",
+    "meta_description": "Réapparue après 13 ans : le rare coucou-étrangleur du Ghana observé au Parc national de Taï, Côte d'Ivoire.",
+    "meta_keywords": "coucou-étrangleur du Ghana, Lobotos lobatus, Parc national de Taï, Côte d'Ivoire, protection des oiseaux, IBCP, oiseau redécouvert, Afrique de l'Ouest",
+    "link": "https://www.goodgoodgood.co/articles/ghana-cuckooshrike-bird-west-africa-good-news",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab6ccd7639605d2f120ec0b_6ab6ccb78639a3150739e4a4_ghana-cuckooshrike-bird-west-africa-good-news-featured.jpeg",
+    "date": "2026-09-26T04:39:54.763Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
     "id": "1790355679646pe6dardmc",
     "title": "La nonprofit Rise Up forme d'anciens détenus au métier de fraiseur",
     "summary": "Dans un atelier réaménagé du sud-est de San Diego, la nonprofit Rise Up Industries enseigne à des hommes ayant passé des décennies en prison le métier de fraiseur. Le programme combine un stage rémunéré avec une thérapie et un suivi de cas. L'atelier exécute des commandes pour l'aéronautique et l'espace, les équipements médicaux, les pièces automobiles et les appâts de...",
@@ -2547,33 +2612,5 @@
     "date": "2026-09-10T04:19:22.914Z",
     "category": "Environment",
     "score": 8
-  },
-  {
-    "id": "1788972460780dsq3ftz6n",
-    "title": "Trois adorables petits damans s'avèrent être les cousins de l'éléphant",
-    "summary": "Le Chester Zoo a accueilli le 9 septembre trois petits damans : Spud, Russ et Jackie, nés de parents Maris et Albert. Le zoo, qui fonctionne comme une organisation à but non lucratif depuis 1934 et abrite 30 000 animaux de plus de 500 espèces, indique que les damans appartiennent au même groupe évolutif que les éléphants, les lamantins et...",
-    "image_alt": "Trois petits damans ensemble au Chester Zoo",
-    "meta_description": "Le Chester Zoo accueille trois petits damans qui s'avèrent être étroitement apparentés aux éléphants et aux dugongs.",
-    "meta_keywords": "Chester Zoo, daman, daman des rochers, parenté éléphant, zoo, programme d'élevage, dugong",
-    "link": "https://www.goodgoodgood.co/articles/chester-zoo-hyrax-elephant-connection",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa0735c42c09d98a2430caa_6aa0735bf1fcdcfd82f598f5_chester-zoo-hyrax-elephant-connection-featured.webp",
-    "date": "2026-09-09T16:47:42.208Z",
-    "category": "Science",
-    "score": 9
-  },
-  {
-    "id": "1788972385897m07upstn7",
-    "title": "Les Castors Construisent des Tampons Naturels Contre la Sécheresse",
-    "summary": "Sur le domaine de Holnicote dans le Somerset, des castors réintroduits créent une oasis verte et humide au milieu d'un paysage autrement aride. Ces animaux, disparus en Grande-Bretagne au 16e siècle, construisent des barrages et creusent des canaux qui retiennent l'eau plus longtemps. Une étude canadienne de 2008 a montré que les zones de castors contiennent neuf fois plus d'eau...",
-    "image_alt": "Un barrage de castor dans une vallée verte et humide au milieu d'un paysage aride",
-    "meta_description": "Les castors en Grande-Bretagne retiennent l'eau et créent des oasis vertes pendant la sécheresse, selon des recherches menées dans le Somerset et le Devon.",
-    "meta_keywords": "castors, sécheresse, gestion de l'eau, écosystème, Somerset, Devon, restauration naturelle, adaptation climatique",
-    "link": "https://www.goodgoodgood.co/articles/beaver-dams-drought-prevention-uk",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa075dd5015d5f2fa7e6648_6aa075da70b23462a05212dc_beaver-dams-drought-prevention-uk-featured.webp",
-    "date": "2026-09-09T16:46:27.303Z",
-    "category": "Environment",
-    "score": 9
   }
 ]

@@ -1,5 +1,70 @@
 [
   {
+    "id": "dg-20260925-environment",
+    "type": "digest",
+    "digest_date": "2026-09-25",
+    "title": "La amistad entre animales huérfanos, un ave desaparecida que regresa y avances verdes en todo el mundo",
+    "summary": "Estos días demuestran que el cuidado de los animales y la naturaleza tiene sentido, desde la sabana hasta la ciudad. Hay un hilo conductor en las noticias: donde las personas perseveran con paciencia, mediante rescate, investigación o políticas inteligentes, surge algo hermoso. Todo comienza con una historia conmovedora de Nairobi y termina con carriles para bicicletas en Edimburgo. En la Sheldrick Wildlife Trust creció un vínculo especial entre dos animales jóvenes que perdieron a sus madres. El rinoceronte negro Tytan y la cebra Notty encontraron consuelo el uno en el otro y ahora viajan juntos por el parque, hasta que...",
+    "image_alt": "La amistad entre animales huérfanos, un ave desaparecida que regresa y avances verdes en todo el mundo",
+    "meta_description": "Animales huérfanos que forjan amistades, un ave reencontrada y más ciclistas que coches: las noticias positivas sobre naturaleza de estos días.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab6ac71383c10cebf598d90_6ab6ac6f8a54eecb452e68b4_baby-rhino-zebra-sheldrick-wildlife-trust-featured.webp",
+    "date": "2026-09-26T04:41:19.855Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1790397618858z5yxsbuyb",
+        "title": "La cría de rinoceronte huérfana Tytan y la cebra Notty inseparables tras perder a sus madres"
+      },
+      {
+        "id": "1790397592265yflgpvt9s",
+        "title": "El chotacabras de Ghana reaparece en Costa de Marfil tras 13 años"
+      },
+      {
+        "id": "1790310899189q5vbeymu0",
+        "title": "Transmisión en directo muestra animales salvajes en un pozo de agua remoto en Watarrka"
+      },
+      {
+        "id": "1790269178731b0lo49hxw",
+        "title": "Empresa portuguesa de corcho aísla naves espaciales"
+      },
+      {
+        "id": "1790223832101xr2olieuk",
+        "title": "Las bicicletas superan a los coches durante la hora punta en Leith Walk en Edimburgo"
+      }
+    ]
+  },
+  {
+    "id": "1790397618858z5yxsbuyb",
+    "title": "La cría de rinoceronte huérfana Tytan y la cebra Notty inseparables tras perder a sus madres",
+    "summary": "En la Sheldrick Wildlife Trust en Nairobi, que desde 1977 acoge a animales heridos y huérfanos en África Oriental, surgió un vínculo especial entre dos crías. La rinoceronte negra Tytan perdió a su madre cuando tenía ocho meses de edad, después de que cayera de un acantilado. Una semana después, la cebra Notty fue llevada al mismo centro de acogida,...",
+    "image_alt": "La cría de rinoceronte Tytan y la cebra Notty juntas en el centro de acogida Sheldrick Wildlife Trust en Nairobi",
+    "meta_description": "La cría de rinoceronte huérfana Tytan y la cebra Notty perdieron a ambas madres y son inseparables en Sheldrick Wildlife Trust.",
+    "meta_keywords": "Sheldrick Wildlife Trust, rinoceronte, cebra, Tytan, Notty, Kenia, centro de acogida, animales huérfanos",
+    "link": "https://www.goodgoodgood.co/articles/baby-rhino-zebra-sheldrick-wildlife-trust",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab6ac71383c10cebf598d90_6ab6ac6f8a54eecb452e68b4_baby-rhino-zebra-sheldrick-wildlife-trust-featured.webp",
+    "date": "2026-09-26T04:40:19.938Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790397592265yflgpvt9s",
+    "title": "El chotacabras de Ghana reaparece en Costa de Marfil tras 13 años",
+    "summary": "Los investigadores Paulo Ditzel y Stephanie Bartlett de la International Bird Conservation Partnership (IBCP) han vuelto a avistar el chotacabras de Ghana (Lobotos lobatus) en el Taï National Park en Costa de Marfil. La última observación confirmada de esta llamativa ave de plumaje naranja, amarillo y negro se remontaba a 2013, en el bosque de Atewa en Ghana. Durante un...",
+    "image_alt": "El chotacabras de Ghana con plumaje naranja y alas negras y amarillas posado en una rama en la selva tropical de Costa de Marfil",
+    "meta_description": "Avistado tras 13 años: el raro chotacabras de Ghana reaparece en Taï National Park, Costa de Marfil.",
+    "meta_keywords": "chotacabras de Ghana, Lobotos lobatus, Taï National Park, Costa de Marfil, conservación de aves, IBCP, ave redescubierta, África Occidental",
+    "link": "https://www.goodgoodgood.co/articles/ghana-cuckooshrike-bird-west-africa-good-news",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab6ccd7639605d2f120ec0b_6ab6ccb78639a3150739e4a4_ghana-cuckooshrike-bird-west-africa-good-news-featured.jpeg",
+    "date": "2026-09-26T04:39:54.763Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
     "id": "1790355679646pe6dardmc",
     "title": "La organización Rise Up capacita a ex reclusos como operarios de máquinas",
     "summary": "En un taller reformado en el sureste de San Diego, la organización sin fines de lucro Rise Up Industries enseña a hombres que pasaron décadas en prisión el oficio de operario de máquinas. El programa combina una pasantía remunerada con terapia y gestión de casos. El taller ejecuta trabajos para la industria aeroespacial, equipos médicos, piezas automotrices y cebo de...",
@@ -2547,33 +2612,5 @@
     "date": "2026-09-10T04:19:22.914Z",
     "category": "Environment",
     "score": 8
-  },
-  {
-    "id": "1788972460780dsq3ftz6n",
-    "title": "Tres adorables crías de damán resultan ser primas del elefante",
-    "summary": "Chester Zoo recibió el 9 de septiembre tres crías de damán: Spud, Russ y Jackie, nacidas de los padres Maris y Albert. El zoológico, que opera como organización sin ánimo de lucro desde 1934 y alberga 30.000 animales de más de 500 especies, informa que los damanes pertenecen al mismo grupo evolutivo que los elefantes, los dugongos y los manatíes....",
-    "image_alt": "Tres pequeñas crías de damán juntas en Chester Zoo",
-    "meta_description": "Chester Zoo recibe tres crías de damán que resultan estar sorprendentemente relacionadas con elefantes y manatíes.",
-    "meta_keywords": "Chester Zoo, damán, tejón de roca, parentesco con elefante, zoológico, programa de cría, manatí",
-    "link": "https://www.goodgoodgood.co/articles/chester-zoo-hyrax-elephant-connection",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa0735c42c09d98a2430caa_6aa0735bf1fcdcfd82f598f5_chester-zoo-hyrax-elephant-connection-featured.webp",
-    "date": "2026-09-09T16:47:42.208Z",
-    "category": "Science",
-    "score": 9
-  },
-  {
-    "id": "1788972385897m07upstn7",
-    "title": "Castores Construyen Amortiguadores Naturales Contra la Sequía",
-    "summary": "En la finca Holnicote en Somerset, castores reintroducidos crean un oasis verde y húmedo en medio de un paisaje árido. Estos animales, que se extinguieron en Gran Bretaña en el siglo XVI, construyen presas y cavan canales que retienen el agua durante más tiempo. Un estudio canadiense de 2008 demostró que las áreas de castores contienen nueve veces más agua...",
-    "image_alt": "Una presa de castores en un valle verde y húmedo en medio de un paisaje árido",
-    "meta_description": "Los castores en Gran Bretaña retienen agua y crean oasis verdes durante la sequía, según investigaciones en Somerset y Devon.",
-    "meta_keywords": "castores, sequía, gestión del agua, ecosistema, Somerset, Devon, restauración natural, adaptación climática",
-    "link": "https://www.goodgoodgood.co/articles/beaver-dams-drought-prevention-uk",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa075dd5015d5f2fa7e6648_6aa075da70b23462a05212dc_beaver-dams-drought-prevention-uk-featured.webp",
-    "date": "2026-09-09T16:46:27.303Z",
-    "category": "Environment",
-    "score": 9
   }
 ]

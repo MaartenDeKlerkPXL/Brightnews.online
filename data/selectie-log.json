@@ -1,5 +1,77 @@
 [
  {
+  "datum": "2026-09-26T04:38:56.572Z",
+  "bron": "OptimistDaily.com",
+  "titel": "Podcast Transcript September 25th, 2026— The tilcayo, cancer-sniffing dogs, and 8 more things going right",
+  "uitsluiting": "verzameleditie",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Dit is een podcast-transcript dat meerdere losse onderwerpen bundelt ('cancer-sniffing dogs, and 8 more things'), dus een verzameleditie."
+ },
+ {
+  "datum": "2026-09-26T04:38:56.572Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "Dolly Parton fans celebrate the first '9 to 5' day by honoring her love of literacy ",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 4,
+  "totaal": 10,
+  "besluit": "ja",
+  "reden": "Hartverwarmend verhaal over gemeenschapszin en kinderboeken ter ere van Dolly Parton; volledig positief geformuleerd en zeer relevant voor onderwijs en gemeenschap."
+ },
+ {
+  "datum": "2026-09-26T04:38:56.572Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "'Lost' bird reappears in West Africa's forests after more than a decade",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Hoopgevend verhaal over herontdekking van een verloren vogelsoort; positief geformuleerd en maatschappelijk relevant voor natuurbehoud."
+ },
+ {
+  "datum": "2026-09-26T04:38:56.572Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "The UN just passed the first declaration on sea level rise, protecting island nations' sovereignty",
+  "uitsluiting": "politiek",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Dit is politiek gekleurde content waarin het 'goed nieuws' alleen positief voelt voor wie bepaalde politieke standpunten deelt; de framing is inherent polariserend."
+ },
+ {
+  "datum": "2026-09-26T04:38:56.572Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "A baby rhino and baby zebra bonded after they lost their mothers to the same fate: 'They've been inseparable ever since'",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Hartverwarmend verhaal over redding en bonding van twee wezen; de kern is herstel en zorg, volledig positief geformuleerd en relevant voor natuur en dierenwelzijn."
+ },
+ {
+  "datum": "2026-09-26T04:38:56.572Z",
+  "bron": "NPR.org",
+  "titel": "The Pacific is churning with hurricanes. The Atlantic is quiet. Blame El Niño",
+  "uitsluiting": "te-weinig-inhoud",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "De tekst is slechts een fotoschrift zonder werkelijk verhaal; onvoldoende inhoud om te beoordelen."
+ },
+ {
   "datum": "2026-09-25T17:00:48.275Z",
   "bron": "Positive.News",
   "titel": "What went right this week: the good news that matters",
@@ -3512,71 +3584,5 @@
   "totaal": 7,
   "besluit": "nee",
   "reden": "Wetenschappelijke doorbraak met praktische toepassingen; hoopgevend en maatschappelijk relevant."
- },
- {
-  "datum": "2026-09-16T16:39:09.146Z",
-  "bron": "Newatlas.com",
-  "titel": "Attrition-tolerant Wildfire combat drone brings mass firepower",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Militair wapensysteem; kern gaat over oorlog en geweld, niet over redding of herstel."
- },
- {
-  "datum": "2026-09-16T16:39:09.146Z",
-  "bron": "Sciencenews.org",
-  "titel": "These mice have human (nerve cells) on the brain",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Tekst is onleesbaar (technische code); kan niet beoordeeld worden."
- },
- {
-  "datum": "2026-09-16T16:39:09.146Z",
-  "bron": "Sciencenews.org",
-  "titel": "The U.S. has weapons in space. Here’s what that could mean",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Tekst is onleesbaar (technische code); kan niet beoordeeld worden."
- },
- {
-  "datum": "2026-09-16T16:39:09.146Z",
-  "bron": "Sciencenews.org",
-  "titel": "Alzheimer’s damage may begin outside the brain",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Tekst is onleesbaar (technische code); kan niet beoordeeld worden."
- },
- {
-  "datum": "2026-09-16T16:39:09.146Z",
-  "bron": "NPR.org",
-  "titel": "Mice with human brain cells offer a tool to study disease. Ethicists ask: What's next?",
-  "gevoel": 2,
-  "formulering": 2,
-  "relevantie": 3,
-  "totaal": 7,
-  "besluit": "nee",
-  "reden": "Wetenschappelijke doorbraak voor onderzoek naar ziekten; maatschappelijk relevant en hoopgevend ondanks ethische vragen."
- },
- {
-  "datum": "2026-09-16T16:39:09.146Z",
-  "bron": "NPR.org",
-  "titel": "Senators question Trump's picks for top health positions, including surgeon general",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Politieke berichtgeving over bevestigingshoorzittingen; polariserend en niet maatschappelijk positief."
  }
 ]

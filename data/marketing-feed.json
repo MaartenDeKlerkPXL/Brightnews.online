@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-09-25T17:01:30.389Z",
+ "gegenereerd": "2026-09-26T04:41:20.753Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -12,6 +12,22 @@
      "score": 10,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/ethiopiers-planten-miljoenen-bomen-via-green-legacy-initiative-1790310928691595wrcopq.html"
+    },
+    {
+     "id": "1790397618858z5yxsbuyb",
+     "titel": "Weesbaby-neushoorn Tytan en zebra Notty onafscheidelijk na verlies moeders",
+     "teaser": "Bij de Sheldrick Wildlife Trust in Nairobi, dat sinds 1977 gewonde en wees geraakte dieren in Oost-Afrika opvangt, ontstond een bijzondere band tussen twee jonge dieren. Zwarte neushoorn Tytan verloor zijn moeder toen hij acht maanden oud was, nadat ze van een klif viel. Een week later werd zebra Notty naar dezelfde opvang gebracht, nadat ook haar moeder op dezelfde...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/weesbaby-neushoorn-tytan-en-zebra-notty-onafscheidelijk-na-verlies-moeders-1790397618858z5yxsbuyb.html"
+    },
+    {
+     "id": "1790397592265yflgpvt9s",
+     "titel": "Ghana-koekoekswurger duikt na 13 jaar weer op in Ivoorkust",
+     "teaser": "Onderzoekers Paulo Ditzel en Stephanie Bartlett van de International Bird Conservation Partnership (IBCP) hebben de Ghana-koekoekswurger (Lobotos lobatus) weer waargenomen, in Taï National Park in Côte d'Ivoire. De laatste bevestigde waarneming van deze opvallende oranje-geel-zwarte vogel dateerde uit 2013, in het Atewa-bos in Ghana. Tijdens een vogeltelling zag Ditzel de vogel tussen een groep andere soorten in het bladerdak, waarna...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/ghana-koekoekswurger-duikt-na-13-jaar-weer-op-in-ivoorkust-1790397592265yflgpvt9s.html"
     },
     {
      "id": "1790355679646pe6dardmc",
@@ -28,45 +44,22 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/wereldrecord-grootste-beverdam-ligt-verscholen-in-wood-buffalo-national-park-1790310980862hoxeg2z6q.html"
-    },
-    {
-     "id": "1790269207385gyigs5nyu",
-     "titel": "Zuid-Korea recyclet 97 procent van al zijn voedselafval",
-     "teaser": "In Seoul gooit Seunghwan Hong zijn etensresten in een slimme afvalbak: hij tikt zijn pas, de bak weegt het afval en hij betaalt naar gewicht. Zo ging het voedselafval-recyclingpercentage van Zuid-Korea van 2,6 procent in 1996 naar bijna 97 procent in 2023, dankzij volumegebonden heffingen (1995), verplichte scheiding (1997), een stortverbod (2005) en RFID-slimme bakken (2010). New York verplichtte scheiding...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/zuid-korea-recyclet-97-procent-van-al-zijn-voedselafval-1790269207385gyigs5nyu.html"
-    },
-    {
-     "id": "1790269147586lmnzry0dl",
-     "titel": "Tieners breken wereldrecord met recycling van 22.000 sportballen",
-     "teaser": "Een groep tienermilieuactivisten uit Californië, verenigd onder de naam Another Bounce en werkend met de organisatie Habits of Waste, heeft een Guinness World Record gevestigd voor het meeste aantal gerecyclede racketsportballen op één dag. Afgelopen weekend, op 19 september, verzamelden ze ongeveer 22.000 voornamelijk pickleballs en tennisballen, met een totaalgewicht van 2.675 pond, die naar een gespecialiseerde recyclingfaciliteit werden gebracht....",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/tieners-breken-wereldrecord-met-recycling-van-22-000-sportballen-1790269147586lmnzry0dl.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260925-environment",
+     "titel": "Vriendschap tussen wees dieren, een verdwenen vogel terug en groene stappen wereldwijd",
+     "categorie": "Environment",
+     "dag": "2026-09-25",
+     "url": "https://brightnews.online/articles/nl/vriendschap-tussen-wees-dieren-een-verdwenen-vogel-terug-en-groene-stappen-werel-dg-20260925-environment.html"
+    },
     {
      "id": "dg-20260924-environment",
      "titel": "Bomen, bevers en balen afval: het milieu boekt kleine overwinningen",
      "categorie": "Environment",
      "dag": "2026-09-24",
      "url": "https://brightnews.online/articles/nl/bomen-bevers-en-balen-afval-het-milieu-boekt-kleine-overwinningen-dg-20260924-environment.html"
-    },
-    {
-     "id": "dg-20260923-lifestyle",
-     "titel": "Nieuwe thuizen, nieuwe wegen en een verrassende vondst",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-23",
-     "url": "https://brightnews.online/articles/nl/nieuwe-thuizen-nieuwe-wegen-en-een-verrassende-vondst-dg-20260923-lifestyle.html"
-    },
-    {
-     "id": "dg-20260923-environment",
-     "titel": "Van geprint harnas tot hersteld savannegebied: goed nieuws voor dieren en natuur",
-     "categorie": "Environment",
-     "dag": "2026-09-23",
-     "url": "https://brightnews.online/articles/nl/van-geprint-harnas-tot-hersteld-savannegebied-goed-nieuws-voor-dieren-en-natuur-dg-20260923-environment.html"
     }
    ]
   },
@@ -79,6 +72,22 @@
      "score": 10,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/en/ethiopians-plant-millions-of-trees-via-green-legacy-initiative-1790310928691595wrcopq.html"
+    },
+    {
+     "id": "1790397618858z5yxsbuyb",
+     "titel": "Orphaned rhino Tytan and zebra Notty inseparable after losing their mothers",
+     "teaser": "At the Sheldrick Wildlife Trust in Nairobi, which has been caring for injured and orphaned animals in East Africa since 1977, a special bond formed between two young animals. Black rhino Tytan lost his mother when he was eight months old after she fell from a cliff. A week later, zebra Notty was brought to the same sanctuary after her...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/orphaned-rhino-tytan-and-zebra-notty-inseparable-after-losing-their-mothers-1790397618858z5yxsbuyb.html"
+    },
+    {
+     "id": "1790397592265yflgpvt9s",
+     "titel": "Ghana cuckoo-shrike resurfaces in Ivory Coast after 13 years",
+     "teaser": "Researchers Paulo Ditzel and Stephanie Bartlett of the International Bird Conservation Partnership (IBCP) have spotted the Ghana cuckoo-shrike (Lobotos lobatus) again, in Taï National Park in Côte d'Ivoire. The last confirmed sighting of this striking orange-yellow-black bird dated from 2013, in the Atewa forest in Ghana. During a bird count, Ditzel spotted the bird among a group of other species...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/ghana-cuckoo-shrike-resurfaces-in-ivory-coast-after-13-years-1790397592265yflgpvt9s.html"
     },
     {
      "id": "1790355679646pe6dardmc",
@@ -95,45 +104,22 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/en/world-record-largest-beaver-dam-hidden-in-wood-buffalo-national-park-1790310980862hoxeg2z6q.html"
-    },
-    {
-     "id": "1790269207385gyigs5nyu",
-     "titel": "South Korea recycles 97 percent of all food waste",
-     "teaser": "In Seoul, Seunghwan Hong tosses his food scraps into a smart waste bin: he taps his card, the bin weighs the waste and he pays by weight. This is how South Korea's food waste recycling rate climbed from 2.6 percent in 1996 to nearly 97 percent in 2023, thanks to volume-based fees (1995), mandatory separation (1997), a landfill ban (2005)...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/south-korea-recycles-97-percent-of-all-food-waste-1790269207385gyigs5nyu.html"
-    },
-    {
-     "id": "1790269147586lmnzry0dl",
-     "titel": "Teens break world record recycling 22,000 sports balls",
-     "teaser": "A group of teenage environmental activists from California, united under the name Another Bounce and working with the organization Habits of Waste, has set a Guinness World Record for the most racket sport balls recycled in a single day. Last weekend, on September 19, they collected approximately 22,000 predominantly pickleballs and tennis balls, with a total weight of 2,675 pounds,...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/teens-break-world-record-recycling-22-000-sports-balls-1790269147586lmnzry0dl.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260925-environment",
+     "titel": "Friendship between orphaned animals, a missing bird returns and green steps worldwide",
+     "categorie": "Environment",
+     "dag": "2026-09-25",
+     "url": "https://brightnews.online/articles/en/friendship-between-orphaned-animals-a-missing-bird-returns-and-green-steps-world-dg-20260925-environment.html"
+    },
     {
      "id": "dg-20260924-environment",
      "titel": "Trees, beavers and bales of waste: the environment scores small victories",
      "categorie": "Environment",
      "dag": "2026-09-24",
      "url": "https://brightnews.online/articles/en/trees-beavers-and-bales-of-waste-the-environment-scores-small-victories-dg-20260924-environment.html"
-    },
-    {
-     "id": "dg-20260923-lifestyle",
-     "titel": "New homes, new roads and a surprising discovery",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-23",
-     "url": "https://brightnews.online/articles/en/new-homes-new-roads-and-a-surprising-discovery-dg-20260923-lifestyle.html"
-    },
-    {
-     "id": "dg-20260923-environment",
-     "titel": "From printed harness to restored savanna: good news for animals and nature",
-     "categorie": "Environment",
-     "dag": "2026-09-23",
-     "url": "https://brightnews.online/articles/en/from-printed-harness-to-restored-savanna-good-news-for-animals-and-nature-dg-20260923-environment.html"
     }
    ]
   },
@@ -146,6 +132,22 @@
      "score": 10,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/de/athiopier-pflanzen-millionen-baume-uber-green-legacy-initiative-1790310928691595wrcopq.html"
+    },
+    {
+     "id": "1790397618858z5yxsbuyb",
+     "titel": "Waisenbaby-Nashorn Tytan und Zebra Notty unzertrennlich nach Trauer um ihre Mütter",
+     "teaser": "Bei der Sheldrick Wildlife Trust in Nairobi, die seit 1977 verletzte und verwaiste Tiere in Ostafrika aufnimmt, entstand eine besondere Bindung zwischen zwei jungen Tieren. Das schwarze Nashorn Tytan verlor seine Mutter, als er acht Monate alt war, nachdem sie von einer Klippe stürzte. Eine Woche später wurde Zebra Notty in dieselbe Auffangstation gebracht, nachdem auch ihre Mutter auf die...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/waisenbaby-nashorn-tytan-und-zebra-notty-unzertrennlich-nach-trauer-um-ihre-mutt-1790397618858z5yxsbuyb.html"
+    },
+    {
+     "id": "1790397592265yflgpvt9s",
+     "titel": "Ghana-Kuckuckswürger nach 13 Jahren in der Elfenbeinküste wiederentdeckt",
+     "teaser": "Die Forscher Paulo Ditzel und Stephanie Bartlett von der International Bird Conservation Partnership (IBCP) haben den Ghana-Kuckuckswürger (Lobotos lobatus) wiederentdeckt – im Taï National Park in der Elfenbeinküste. Die letzte bestätigte Beobachtung dieses auffälligen orange-gelb-schwarzen Vogels stammte aus dem Jahr 2013 aus dem Atewa-Wald in Ghana. Bei einer Vogelzählung entdeckte Ditzel den Vogel zwischen einer Gruppe anderer Arten im Blätterdach,...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/ghana-kuckuckswurger-nach-13-jahren-in-der-elfenbeinkuste-wiederentdeckt-1790397592265yflgpvt9s.html"
     },
     {
      "id": "1790355679646pe6dardmc",
@@ -162,45 +164,22 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/de/weltrekord-gro-ter-biberdamm-versteckt-sich-im-wood-buffalo-national-park-1790310980862hoxeg2z6q.html"
-    },
-    {
-     "id": "1790269207385gyigs5nyu",
-     "titel": "Südkorea recycelt 97 Prozent seines Lebensmittelabfalls",
-     "teaser": "In Seoul wirft Seunghwan Hong seine Essensreste in einen intelligenten Abfallbehälter: Er hält seine Karte hin, der Behälter wiegt den Abfall und er bezahlt nach Gewicht. So stieg die Recyclingquote für Lebensmittelabfälle in Südkorea von 2,6 Prozent im Jahr 1996 auf knapp 97 Prozent im Jahr 2023 – dank volumenabhängiger Gebühren (1995), verpflichtender Mülltrennung (1997), einem Deponieverbod (2005) und RFID-intelligenten...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/sudkorea-recycelt-97-prozent-seines-lebensmittelabfalls-1790269207385gyigs5nyu.html"
-    },
-    {
-     "id": "1790269147586lmnzry0dl",
-     "titel": "Teenager brechen Weltrekord mit Recycling von 22.000 Sportbällen",
-     "teaser": "Eine Gruppe von Teenager-Umweltaktivisten aus Kalifornien, vereinigt unter dem Namen Another Bounce und in Zusammenarbeit mit der Organisation Habits of Waste, hat einen Guinness World Record für die meisten an einem Tag recycelten Racketsportbälle aufgestellt. Am vergangenen Wochenende, am 19. September, sammelten sie etwa 22.000 überwiegend Pickleballs und Tennisbälle mit einem Gesamtgewicht von 2.675 Pfund, die zu einer spezialisierten Recyclinganlage...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/teenager-brechen-weltrekord-mit-recycling-von-22-000-sportballen-1790269147586lmnzry0dl.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260925-environment",
+     "titel": "Freundschaft zwischen Waisentieren, ein wiederentdeckter Vogel und grüne Schritte weltweit",
+     "categorie": "Environment",
+     "dag": "2026-09-25",
+     "url": "https://brightnews.online/articles/de/freundschaft-zwischen-waisentieren-ein-wiederentdeckter-vogel-und-grune-schritte-dg-20260925-environment.html"
+    },
     {
      "id": "dg-20260924-environment",
      "titel": "Bäume, Biber und Berge von Müll: Die Umwelt verbucht kleine Siege",
      "categorie": "Environment",
      "dag": "2026-09-24",
      "url": "https://brightnews.online/articles/de/baume-biber-und-berge-von-mull-die-umwelt-verbucht-kleine-siege-dg-20260924-environment.html"
-    },
-    {
-     "id": "dg-20260923-lifestyle",
-     "titel": "Neue Häuser, neue Wege und eine überraschende Entdeckung",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-23",
-     "url": "https://brightnews.online/articles/de/neue-hauser-neue-wege-und-eine-uberraschende-entdeckung-dg-20260923-lifestyle.html"
-    },
-    {
-     "id": "dg-20260923-environment",
-     "titel": "Von gedrucktem Harnisch bis zur wiederhergestellten Savanne: gute Nachrichten für Tiere und Natur",
-     "categorie": "Environment",
-     "dag": "2026-09-23",
-     "url": "https://brightnews.online/articles/de/von-gedrucktem-harnisch-bis-zur-wiederhergestellten-savanne-gute-nachrichten-fur-dg-20260923-environment.html"
     }
    ]
   },
@@ -213,6 +192,22 @@
      "score": 10,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/fr/des-ethiopiens-plantent-des-millions-d-arbres-via-la-green-legacy-initiative-1790310928691595wrcopq.html"
+    },
+    {
+     "id": "1790397618858z5yxsbuyb",
+     "titel": "Le bébé rhinocéros orphelin Tytan et le zèbre Notty inséparables après la perte de leurs mères",
+     "teaser": "À la Sheldrick Wildlife Trust à Nairobi, qui accueille depuis 1977 les animaux blessés et orphelins d'Afrique de l'Est, un lien particulier s'est noué entre deux jeunes animaux. Le rhinocéros noir Tytan a perdu sa mère alors qu'il n'avait que huit mois, après qu'elle soit tombée d'une falaise. Une semaine plus tard, le zèbre Notty a été amené au même...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/le-bebe-rhinoceros-orphelin-tytan-et-le-zebre-notty-inseparables-apres-la-perte--1790397618858z5yxsbuyb.html"
+    },
+    {
+     "id": "1790397592265yflgpvt9s",
+     "titel": "Le coucou-étrangleur du Ghana réapparaît en Côte d'Ivoire après 13 ans",
+     "teaser": "Les chercheurs Paulo Ditzel et Stephanie Bartlett de l'International Bird Conservation Partnership (IBCP) ont observé à nouveau le coucou-étrangleur du Ghana (Lobotos lobatus) au Parc national de Taï en Côte d'Ivoire. La dernière observation confirmée de cet oiseau remarquable aux couleurs orange, jaune et noir remontait à 2013, dans la forêt d'Atewa au Ghana. Lors d'un comptage d'oiseaux, Ditzel a...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/le-coucou-etrangleur-du-ghana-reapparait-en-cote-d-ivoire-apres-13-ans-1790397592265yflgpvt9s.html"
     },
     {
      "id": "1790355679646pe6dardmc",
@@ -229,45 +224,22 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/fr/record-mondial-le-plus-grand-barrage-de-castor-se-cache-dans-le-parc-national-wo-1790310980862hoxeg2z6q.html"
-    },
-    {
-     "id": "1790269207385gyigs5nyu",
-     "titel": "La Corée du Sud recycle 97 % de ses déchets alimentaires",
-     "teaser": "À Séoul, Seunghwan Hong jette ses restes de repas dans une poubelle intelligente : il scanne sa carte, la poubelle pèse les déchets et il paie au poids. C'est ainsi que le taux de recyclage des déchets alimentaires en Corée du Sud est passé de 2,6 % en 1996 à près de 97 % en 2023, grâce aux redevances volumétriques...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/la-coree-du-sud-recycle-97-de-ses-dechets-alimentaires-1790269207385gyigs5nyu.html"
-    },
-    {
-     "id": "1790269147586lmnzry0dl",
-     "titel": "Des ados battent le record mondial du recyclage de 22.000 balles de sport",
-     "teaser": "Un groupe d'ados militants pour l'environnement en Californie, réunis sous le nom Another Bounce et travaillant avec l'organisation Habits of Waste, a établi un Guinness World Record pour le plus grand nombre de balles de sports de raquette recyclées en une seule journée. Le week-end dernier, le 19 septembre, ils ont collecté environ 22.000 balles, principalement des pickleballs et des...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/des-ados-battent-le-record-mondial-du-recyclage-de-22-000-balles-de-sport-1790269147586lmnzry0dl.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260925-environment",
+     "titel": "L'amitié entre animaux orphelins, un oiseau disparu retrouvé et des avancées écologiques dans le monde",
+     "categorie": "Environment",
+     "dag": "2026-09-25",
+     "url": "https://brightnews.online/articles/fr/l-amitie-entre-animaux-orphelins-un-oiseau-disparu-retrouve-et-des-avancees-ecol-dg-20260925-environment.html"
+    },
     {
      "id": "dg-20260924-environment",
      "titel": "Des arbres, des castors et des tonnes de déchets : l'environnement remporte de petites victoires",
      "categorie": "Environment",
      "dag": "2026-09-24",
      "url": "https://brightnews.online/articles/fr/des-arbres-des-castors-et-des-tonnes-de-dechets-l-environnement-remporte-de-peti-dg-20260924-environment.html"
-    },
-    {
-     "id": "dg-20260923-lifestyle",
-     "titel": "De nouveaux foyers, de nouvelles routes et une découverte surprenante",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-23",
-     "url": "https://brightnews.online/articles/fr/de-nouveaux-foyers-de-nouvelles-routes-et-une-decouverte-surprenante-dg-20260923-lifestyle.html"
-    },
-    {
-     "id": "dg-20260923-environment",
-     "titel": "D'une armure imprimée en 3D à la restauration de la savane : bonnes nouvelles pour les animaux et la nature",
-     "categorie": "Environment",
-     "dag": "2026-09-23",
-     "url": "https://brightnews.online/articles/fr/d-une-armure-imprimee-en-3d-a-la-restauration-de-la-savane-bonnes-nouvelles-pour-dg-20260923-environment.html"
     }
    ]
   },
@@ -280,6 +252,22 @@
      "score": 10,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/es/etiopes-plantan-millones-de-arboles-a-traves-de-green-legacy-initiative-1790310928691595wrcopq.html"
+    },
+    {
+     "id": "1790397618858z5yxsbuyb",
+     "titel": "La cría de rinoceronte huérfana Tytan y la cebra Notty inseparables tras perder a sus madres",
+     "teaser": "En la Sheldrick Wildlife Trust en Nairobi, que desde 1977 acoge a animales heridos y huérfanos en África Oriental, surgió un vínculo especial entre dos crías. La rinoceronte negra Tytan perdió a su madre cuando tenía ocho meses de edad, después de que cayera de un acantilado. Una semana después, la cebra Notty fue llevada al mismo centro de acogida,...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/la-cria-de-rinoceronte-huerfana-tytan-y-la-cebra-notty-inseparables-tras-perder--1790397618858z5yxsbuyb.html"
+    },
+    {
+     "id": "1790397592265yflgpvt9s",
+     "titel": "El chotacabras de Ghana reaparece en Costa de Marfil tras 13 años",
+     "teaser": "Los investigadores Paulo Ditzel y Stephanie Bartlett de la International Bird Conservation Partnership (IBCP) han vuelto a avistar el chotacabras de Ghana (Lobotos lobatus) en el Taï National Park en Costa de Marfil. La última observación confirmada de esta llamativa ave de plumaje naranja, amarillo y negro se remontaba a 2013, en el bosque de Atewa en Ghana. Durante un...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/el-chotacabras-de-ghana-reaparece-en-costa-de-marfil-tras-13-anos-1790397592265yflgpvt9s.html"
     },
     {
      "id": "1790355679646pe6dardmc",
@@ -296,45 +284,22 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/es/record-mundial-la-mayor-represa-de-castores-se-esconde-en-wood-buffalo-national--1790310980862hoxeg2z6q.html"
-    },
-    {
-     "id": "1790269207385gyigs5nyu",
-     "titel": "Corea del Sur recicla el 97 por ciento de sus residuos alimentarios",
-     "teaser": "En Seúl, Seunghwan Hong tira sus restos de comida en un cubo de basura inteligente: pasa su tarjeta, el cubo pesa los residuos y paga según el peso. Así, el porcentaje de reciclaje de residuos alimentarios de Corea del Sur pasó del 2,6 por ciento en 1996 a casi el 97 por ciento en 2023, gracias a las tasas volumétricas...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/corea-del-sur-recicla-el-97-por-ciento-de-sus-residuos-alimentarios-1790269207385gyigs5nyu.html"
-    },
-    {
-     "id": "1790269147586lmnzry0dl",
-     "titel": "Adolescentes baten récord mundial reciclando 22.000 pelotas deportivas",
-     "teaser": "Un grupo de adolescentes activistas ambientales de California, unidos bajo el nombre Another Bounce y trabajando con la organización Habits of Waste, ha establecido un Récord Guinness Mundial por la mayor cantidad de pelotas de raqueta recicladas en un solo día. El pasado fin de semana, el 19 de septiembre, reunieron aproximadamente 22.000 pelotas, principalmente de pádel y tenis, con...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/adolescentes-baten-record-mundial-reciclando-22-000-pelotas-deportivas-1790269147586lmnzry0dl.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260925-environment",
+     "titel": "La amistad entre animales huérfanos, un ave desaparecida que regresa y avances verdes en todo el mundo",
+     "categorie": "Environment",
+     "dag": "2026-09-25",
+     "url": "https://brightnews.online/articles/es/la-amistad-entre-animales-huerfanos-un-ave-desaparecida-que-regresa-y-avances-ve-dg-20260925-environment.html"
+    },
     {
      "id": "dg-20260924-environment",
      "titel": "Árboles, castores y fardos de basura: el medio ambiente logra pequeñas victorias",
      "categorie": "Environment",
      "dag": "2026-09-24",
      "url": "https://brightnews.online/articles/es/arboles-castores-y-fardos-de-basura-el-medio-ambiente-logra-pequenas-victorias-dg-20260924-environment.html"
-    },
-    {
-     "id": "dg-20260923-lifestyle",
-     "titel": "Nuevos hogares, nuevos caminos y un hallazgo sorprendente",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-23",
-     "url": "https://brightnews.online/articles/es/nuevos-hogares-nuevos-caminos-y-un-hallazgo-sorprendente-dg-20260923-lifestyle.html"
-    },
-    {
-     "id": "dg-20260923-environment",
-     "titel": "De un arnés impreso en 3D a un área de sabana restaurada: buenas noticias para los animales y la naturaleza",
-     "categorie": "Environment",
-     "dag": "2026-09-23",
-     "url": "https://brightnews.online/articles/es/de-un-arnes-impreso-en-3d-a-un-area-de-sabana-restaurada-buenas-noticias-para-lo-dg-20260923-environment.html"
     }
    ]
   }

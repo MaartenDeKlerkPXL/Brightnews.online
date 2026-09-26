@@ -1,5 +1,70 @@
 [
   {
+    "id": "dg-20260925-environment",
+    "type": "digest",
+    "digest_date": "2026-09-25",
+    "title": "Freundschaft zwischen Waisentieren, ein wiederentdeckter Vogel und grüne Schritte weltweit",
+    "summary": "Diese Tage zeigen, dass die Sorge um Tiere und Natur etwas bewirkt, von der Savanne bis zur Stadt. Es zieht sich ein roter Faden durch die Nachrichten: Wo Menschen geduldig durchhalten, mit Auffangstationen, Forschung oder kluger Politik, kommt etwas Schönes zurück. Das beginnt mit einer ergreifenden Geschichte aus Nairobi und endet mit Fahrradwegen in Edinburgh. Bei der Sheldrick Wildlife Trust wuchs eine besondere Bindung zwischen zwei jungen Tieren heran, die beide ihre Mutter verloren haben. Das schwarze Nashorn Tytan und das Zebra Notty fanden Trost beieinander und ziehen nun gemeinsam durch den Park, bis Tytan alt genug ist, um sich...",
+    "image_alt": "Freundschaft zwischen Waisentieren, ein wiederentdeckter Vogel und grüne Schritte weltweit",
+    "meta_description": "Waisentiere schließen Freundschaft, ein wiederentdeckter Vogel und mehr Radfahrer als Autos: die positiven Naturmeldungen dieser Tage.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab6ac71383c10cebf598d90_6ab6ac6f8a54eecb452e68b4_baby-rhino-zebra-sheldrick-wildlife-trust-featured.webp",
+    "date": "2026-09-26T04:41:19.855Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1790397618858z5yxsbuyb",
+        "title": "Waisenbaby-Nashorn Tytan und Zebra Notty unzertrennlich nach Trauer um ihre Mütter"
+      },
+      {
+        "id": "1790397592265yflgpvt9s",
+        "title": "Ghana-Kuckuckswürger nach 13 Jahren in der Elfenbeinküste wiederentdeckt"
+      },
+      {
+        "id": "1790310899189q5vbeymu0",
+        "title": "Livestream zeigt Wildtiere an abgelegenem Wasserloch in Watarrka"
+      },
+      {
+        "id": "1790269178731b0lo49hxw",
+        "title": "Portugiesisches Korkunternehmen isoliert Raumschiffe"
+      },
+      {
+        "id": "1790223832101xr2olieuk",
+        "title": "Fahrräder schlagen Autos während der Stoßzeit auf der Leith Walk in Edinburgh"
+      }
+    ]
+  },
+  {
+    "id": "1790397618858z5yxsbuyb",
+    "title": "Waisenbaby-Nashorn Tytan und Zebra Notty unzertrennlich nach Trauer um ihre Mütter",
+    "summary": "Bei der Sheldrick Wildlife Trust in Nairobi, die seit 1977 verletzte und verwaiste Tiere in Ostafrika aufnimmt, entstand eine besondere Bindung zwischen zwei jungen Tieren. Das schwarze Nashorn Tytan verlor seine Mutter, als er acht Monate alt war, nachdem sie von einer Klippe stürzte. Eine Woche später wurde Zebra Notty in dieselbe Auffangstation gebracht, nachdem auch ihre Mutter auf die...",
+    "image_alt": "Baby-Nashorn Tytan und Zebra Notty zusammen in der Sheldrick Wildlife Trust Auffangstation in Nairobi",
+    "meta_description": "Waisennashorn Tytan und Zebra Notty verloren beide ihre Mutter und sind seitdem unzertrennlich bei Sheldrick Wildlife Trust.",
+    "meta_keywords": "Sheldrick Wildlife Trust, Nashorn, Zebra, Tytan, Notty, Kenia, Tierauffangstation, Waisenkinder",
+    "link": "https://www.goodgoodgood.co/articles/baby-rhino-zebra-sheldrick-wildlife-trust",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab6ac71383c10cebf598d90_6ab6ac6f8a54eecb452e68b4_baby-rhino-zebra-sheldrick-wildlife-trust-featured.webp",
+    "date": "2026-09-26T04:40:19.938Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790397592265yflgpvt9s",
+    "title": "Ghana-Kuckuckswürger nach 13 Jahren in der Elfenbeinküste wiederentdeckt",
+    "summary": "Die Forscher Paulo Ditzel und Stephanie Bartlett von der International Bird Conservation Partnership (IBCP) haben den Ghana-Kuckuckswürger (Lobotos lobatus) wiederentdeckt – im Taï National Park in der Elfenbeinküste. Die letzte bestätigte Beobachtung dieses auffälligen orange-gelb-schwarzen Vogels stammte aus dem Jahr 2013 aus dem Atewa-Wald in Ghana. Bei einer Vogelzählung entdeckte Ditzel den Vogel zwischen einer Gruppe anderer Arten im Blätterdach,...",
+    "image_alt": "Der Ghana-Kuckuckswürger mit orangefarbenem Gefieder und schwarz-gelben Flügeln auf einem Ast im Regenwald der Elfenbeinküste",
+    "meta_description": "Nach 13 Jahren wiedergesehen: Der seltene Ghana-Kuckuckswürger taucht im Taï National Park auf.",
+    "meta_keywords": "Ghana-Kuckuckswürger, Lobotos lobatus, Taï National Park, Elfenbeinküste, Vogelschutz, IBCP, wiederentdeckter Vogel, Westafrika",
+    "link": "https://www.goodgoodgood.co/articles/ghana-cuckooshrike-bird-west-africa-good-news",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab6ccd7639605d2f120ec0b_6ab6ccb78639a3150739e4a4_ghana-cuckooshrike-bird-west-africa-good-news-featured.jpeg",
+    "date": "2026-09-26T04:39:54.763Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
     "id": "1790355679646pe6dardmc",
     "title": "Nonprofit Rise Up bildet ehemalige Häftlinge zu Zerspanungsmechanikern aus",
     "summary": "In einer umgebauten Werkstatt im Südosten von San Diego bildet die gemeinnützige Organisation Rise Up Industries Männer, die Jahrzehnte im Gefängnis verbracht haben, zu Zerspanungsmechanikern aus. Das Programm kombiniert ein bezahltes Praktikum mit Therapie und Fallmanagement. Die Werkstatt führt Aufträge unter anderem für Luft- und Raumfahrt, Medizingeräte, Autoteile und Fischköder aus. Nach Angaben von Rise Up rückfällig werden nur 3%...",
@@ -2547,33 +2612,5 @@
     "date": "2026-09-10T04:19:22.914Z",
     "category": "Environment",
     "score": 8
-  },
-  {
-    "id": "1788972460780dsq3ftz6n",
-    "title": "Drei süße Klippschliefer-Babys sind Cousins des Elefanten",
-    "summary": "Der Chester Zoo begrüßte am 9. September drei Klippschliefer-Babys: Spud, Russ und Jackie, geboren bei den Eltern Maris und Albert. Der Zoo, der seit 1934 als gemeinnützige Organisation tätig ist und 30.000 Tiere von über 500 Arten beherbergt, teilt mit, dass Klippschliefer zur gleichen evolutionären Gruppe wie Elefanten, Seekühe und Rundschwanzseekühe gehören. Tierpflegerin Megan Carpenter weist auf Gemeinsamkeiten hin, wie...",
-    "image_alt": "Drei kleine Klippschliefer-Babys zusammen im Chester Zoo",
-    "meta_description": "Der Chester Zoo begrüßt drei Klippschliefer-Babys, die sich überraschend eng mit Elefanten und Seekühen verwandt erweisen.",
-    "meta_keywords": "Chester Zoo, Klippschliefer, Felsdachs, Elefantenverwandtschaft, Zoo, Zuchtprogramm, Seekuh",
-    "link": "https://www.goodgoodgood.co/articles/chester-zoo-hyrax-elephant-connection",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa0735c42c09d98a2430caa_6aa0735bf1fcdcfd82f598f5_chester-zoo-hyrax-elephant-connection-featured.webp",
-    "date": "2026-09-09T16:47:42.208Z",
-    "category": "Science",
-    "score": 9
-  },
-  {
-    "id": "1788972385897m07upstn7",
-    "title": "Biber Bauen Natürliche Puffer Gegen Trockenheit",
-    "summary": "Auf dem Anwesen Holnicote in Somerset sorgen wiederangesiedelte Biber für eine grüne, feuchte Oase inmitten einer ansonsten trockenen Landschaft. Die Tiere, die im 16. Jahrhundert in Großbritannien ausstarben, bauen Dämme und graben Kanäle, durch die Wasser länger gespeichert wird. Eine kanadische Studie aus dem Jahr 2008 zeigte, dass Bibergebiete in trockenen Jahren neunmal mehr offenes Wasser enthielten. Auch britische Forschungen...",
-    "image_alt": "Ein Biberdamm in einem grünen, feuchten Tal inmitten einer trockenen Landschaft",
-    "meta_description": "Biber in Großbritannien speichern Wasser und schaffen grüne Oasen während der Trockenheit, wie Forschungen in Somerset und Devon zeigen.",
-    "meta_keywords": "Biber, Trockenheit, Wasserwirtschaft, Ökosystem, Somerset, Devon, Naturwiederherstellung, Klimaanpassung",
-    "link": "https://www.goodgoodgood.co/articles/beaver-dams-drought-prevention-uk",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa075dd5015d5f2fa7e6648_6aa075da70b23462a05212dc_beaver-dams-drought-prevention-uk-featured.webp",
-    "date": "2026-09-09T16:46:27.303Z",
-    "category": "Environment",
-    "score": 9
   }
 ]
