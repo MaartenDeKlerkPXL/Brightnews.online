@@ -127,5 +127,5 @@ jobs:
       # (Anthropic-tegoed op) terwijl elke run "success" meldde en er dus geen
       # mail uitging. Zie backend/controleer-run.js voor wat er precies wordt
       # gecontroleerd.
-      - name: 🚨 Controle: heeft deze run echt iets opgeleverd?
+      - name: "🚨 Controle: heeft deze run echt iets opgeleverd?"
         run: node backend/controleer-run.js
