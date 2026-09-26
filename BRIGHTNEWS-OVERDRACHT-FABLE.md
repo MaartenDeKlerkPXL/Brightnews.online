@@ -255,7 +255,14 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
    geen wezen, de blijvende statische pagina's serveren premium daarmee.
    SQL: `supabase/hardening-2026-09-26.sql`. TODO 11 nagekeken
    (add_premium_reward bestaat inderdaad niet; code roept niets aan),
-   punt 29/30 afgevinkt.
+   punt 29/30 afgevinkt. Staartje: twee dispatches 7 s na elkaar legden
+   een race bloot (checkout pint de trigger-SHA; gequeuede run start op
+   verouderde master → rebase-conflict, run 36254459738 verloor zijn
+   datacommit) → **PR #9**: doorspoel-stap na checkout + `-X theirs` op
+   de vangnet-rebase; verificatierun 36255199128 groen op de verse kop.
+   Zelf mergen blokkeert de permissieclassifier — Erik een
+   `gh pr merge`-blok aanreiken is de route. Sessieverslag voor Maarten:
+   `SESSIEVERSLAG-VOOR-MAARTEN.md` (+ pointer boven TODO.md).
 
 0-S9. **Sessie 9 (2026-09-16)**: Maartens wachtende werk verwerkt (PR #5
    gemerged + og:image-absoluutfix; PR #1-bronwerk gemerged, sw v23,

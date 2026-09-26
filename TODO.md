@@ -1,5 +1,9 @@
 # TODO BrightNews
 
+> **Maarten, eerst even dit:** lees `SESSIEVERSLAG-VOOR-MAARTEN.md` (26 sep,
+> gewone taal) — je PR's zijn gemerged en de cockpit leest nu uit Supabase.
+> Daarna gewoon de checklist hieronder. Verwijder het verslag na het lezen.
+
 Werklijst, opgesteld 2026-09-10 na een ronde langs de projectdocumenten, de
 open pull requests en een paar eigen metingen op de site. Gesorteerd op
 urgentie, niet op moeite.
