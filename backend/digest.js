@@ -86,7 +86,17 @@ async function haalVolledigeTeksten(ids, lang, perTaalIndex) {
         .in('id', ids.map(String));
     if (error) throw new Error(`articles_full lezen mislukt (${lang}): ${error.message}`);
     const perId = Object.fromEntries((data || []).map(r => [String(r.id), r.full_text]));
-    return ids.map(id => perId[String(id)] || perTaalIndex[lang]?.[id]?.summary || '');
+    return ids.map(id => {
+        const vol = perId[String(id)];
+        if (vol) return vol;
+        const summary = perTaalIndex[lang]?.[id]?.summary || '';
+        // Een op "..." eindigende summary is een afgekapte teaser: de digest
+        // bouwt dan op een halve tekst. Niet fataal, wel het weten waard.
+        if (summary.trim().endsWith('...')) {
+            console.warn(`⚠️ Digest-input voor ${id} (${lang}) mist in articles_full — teruggevallen op een afgekapte teaser.`);
+        }
+        return summary;
+    });
 }
 
 function bouwPrompt(lang, categorie, datum, items) {
@@ -100,7 +110,24 @@ function bouwPrompt(lang, categorie, datum, items) {
         .replaceAll('{CATEGORIE}', categorie)
         .replaceAll('{DATUM}', datumTekst)
         .replaceAll('{AANTAL}', String(items.length))
-        .replace('{ITEMS}', itemTekst);
+        // Functie-vorm: een string-vervanger interpreteert $-patronen ($&, $'
+        // e.d.) in de artikeltekst en zou de prompt daarmee stil verminken.
+        .replace('{ITEMS}', () => itemTekst);
+}
+
+// De [n]-verwijzingen in een digesttekst. De prompt eist [1] t/m [AANTAL],
+// elk precies één keer; de bronnenlijst onder het artikel nummert 1..n. Een
+// tekst die [9] noemt bij 3 bronnen (of [2] weglaat) wijst dus naast de
+// lijst en mag niet gepubliceerd worden.
+function verwijzingen(tekst) {
+    return new Set([...String(tekst ?? '').matchAll(/\[(\d+)\]/g)].map(m => Number(m[1])));
+}
+
+function verwijzingenKloppen(tekst, aantal) {
+    const set = verwijzingen(tekst);
+    if (set.size !== aantal) return false;
+    for (let n = 1; n <= aantal; n++) if (!set.has(n)) return false;
+    return true;
 }
 
 async function main() {
@@ -183,6 +210,10 @@ async function main() {
             });
             const moeder = verwerkAIResponse(moederAntwoord.tekst);
             const moederWoorden = telWoorden(moeder?.tekst);
+            if (moeder?.titel && !verwijzingenKloppen(moeder.tekst, ids.length)) {
+                console.error(`🔎 Rauwe respons (kop): ${String(moederAntwoord.tekst).replace(/\s+/g, ' ').slice(0, 300)}`);
+                throw new Error(`digest-verwijzingen kloppen niet: [${[...verwijzingen(moeder.tekst)].join(',')}] bij ${ids.length} bronnen`);
+            }
             if (!moeder?.titel || moederWoorden < 250 || moederWoorden > 700) {
                 // Diagnose (2026-09-06): nachtcron 1 verloor Health+Tech aan
                 // parse-uitval zonder spoor — log de kop van de rauwe respons.
@@ -209,7 +240,9 @@ Antwoord UITSLUITEND met geldig JSON — alinea-scheidingen binnen "tekst" schri
                     });
                     const data = verwerkAIResponse(antwoord.tekst);
                     const woorden = telWoorden(data?.tekst);
-                    if (data?.titel && woorden >= 200) {
+                    // De verwijzingen moeten de vertaling exact overleven —
+                    // de bronnenlijst staat in élke taal onder het artikel.
+                    if (data?.titel && woorden >= 200 && verwijzingenKloppen(data.tekst, ids.length)) {
                         perTaal[lang] = {
                             titel: String(data.titel).trim(),
                             tekst: String(data.tekst).trim(),

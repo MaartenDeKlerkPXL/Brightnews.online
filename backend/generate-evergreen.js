@@ -26,7 +26,7 @@ function maakSlug(titel) {
         .normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
         .replace(/[^a-z0-9]+/g, '-')
         .replace(/^-+|-+$/g, '')
-        .slice(0, 80) || 'thema';
+        .slice(0, 80).replace(/-+$/, '') || 'thema';
 }
 
 function escapeHtml(s) {
@@ -46,6 +46,18 @@ function isoWeek(datum) {
 
 async function wacht(ms) { return new Promise(r => setTimeout(r, ms)); }
 
+// De "nr"-velden zijn indexen in de artikellijst; een model dat nr 9 geeft
+// bij 5 artikelen zou verderop `artikelen[8].id` laten crashen — midden in
+// de per-taal-schrijfloop, met halve pagina's zonder manifest-entry als
+// gevolg. Eis daarom exact de set 1..n, zonder gaten of dubbelen.
+function nrsGeldig(items, aantal) {
+    if (!Array.isArray(items) || items.length !== aantal) return false;
+    const nrs = new Set(items.map(i => Number(i?.nr)));
+    if (nrs.size !== aantal) return false;
+    for (let n = 1; n <= aantal; n++) if (!nrs.has(n)) return false;
+    return true;
+}
+
 async function vertaalThema(moeder, lang) {
     for (let poging = 0; poging < 2; poging++) {
         const antwoord = await aiCall({
@@ -56,7 +68,7 @@ ${JSON.stringify(moeder)}
 Antwoord UITSLUITEND met geldig JSON in exact dezelfde vorm — regeleindes binnen een tekstveld als \\n\\n: {"titel": "..", "intro": "..", "meta_d": "..", "items": [{"nr": 1, "waarom": ".."}]}`,
         });
         const data = verwerkAIResponse(antwoord.tekst);
-        if (data?.titel && data?.intro && Array.isArray(data?.items) && data.items.length === moeder.items.length) {
+        if (data?.titel && data?.intro && nrsGeldig(data?.items, moeder.items.length)) {
             return data;
         }
         console.error(`🔎 Themavertaling ${lang} onbruikbaar (poging ${poging + 1}): ${String(antwoord.tekst).replace(/\s+/g, ' ').slice(0, 160)}`);
@@ -180,7 +192,7 @@ ${materiaal}
 Antwoord UITSLUITEND met geldig JSON — regeleindes binnen een tekstveld als \\n\\n: {"titel": "..", "intro": "..", "meta_d": "..", "items": [{"nr": 1, "waarom": ".."}]}`,
         });
         const data = verwerkAIResponse(antwoord.tekst);
-        if (data?.titel && data?.intro && Array.isArray(data?.items) && data.items.length === artikelen.length) moeder = data;
+        if (data?.titel && data?.intro && nrsGeldig(data?.items, artikelen.length)) moeder = data;
         else console.error(`🔎 Thema-moeder onbruikbaar (poging ${poging + 1}): ${String(antwoord.tekst).replace(/\s+/g, ' ').slice(0, 160)}`);
     }
     if (!moeder) {
@@ -198,7 +210,12 @@ Antwoord UITSLUITEND met geldig JSON — regeleindes binnen een tekstveld als \\
         }
     }
 
-    const slugsPerTaal = Object.fromEntries(TALEN.map(l => [l, maakSlug(teksten[l].titel)]));
+    // Week-id in de bestandsnaam: twee weken met (bijna) dezelfde AI-titel
+    // zouden anders hetzelfde pad krijgen en de oude, al geïndexeerde pagina
+    // overschrijven. Het manifest bewaart de volledige naam, dus de sitemap
+    // en de hreflangs volgen vanzelf; oude entries houden hun oude naam.
+    const slugsPerTaal = Object.fromEntries(TALEN.map(l =>
+        [l, `${maakSlug(teksten[l].titel)}-${week.toLowerCase()}`]));
     const artikelManifest = await fs.readJson(path.join(root, 'articles/manifest.json')).catch(() => ({ articles: {} }));
     for (const lang of TALEN) {
         const dir = path.join(root, 'themas', lang);

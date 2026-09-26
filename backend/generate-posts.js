@@ -1,10 +1,13 @@
 // Postfabriek (besluit Erik 2026-09-09, marketing fase M1): schrijft per dag
 // één conceptpost per kanaal (instagram/facebook/linkedin/x) over het beste
 // materiaal van vandaag, in het Nederlands (rol 'schrijven'), en vertaalt die
-// naar de andere vier talen (rol 'vertalen'). Concepten belanden in
-// data/marketing-posts.json; Maarten keurt ze in de cockpit (marketing.html)
-// en zijn afwijzingen (marketing_feedback in Supabase) voeden de volgende
-// generatie via {FEEDBACK} in backend/marketing-prompt.md.
+// naar de andere vier talen (rol 'vertalen'). Concepten belanden in de
+// Supabase-tabel marketing_posts (review-ronde 2026-09-26: de site en de
+// repo zijn publiek, dus conceptposts in data/ waren voor iedereen leesbaar;
+// de tabel is met RLS afgeschermd tot team_leden). Maarten keurt ze in de
+// cockpit (marketing.html) en zijn afwijzingen (marketing_feedback in
+// Supabase) voeden de volgende generatie via {FEEDBACK} in
+// backend/marketing-prompt.md.
 // DRAFT-FIRST: dit script publiceert nooit iets — het schrijft alleen
 // concepten; plaatsen doet een mens (fase M2: scheduler, ook dan pas na
 // goedkeuring).
@@ -105,10 +108,16 @@ function utm(url, kanaal, dag) {
 
 async function main() {
     const dag = new Date().toISOString().slice(0, 10);
-    const bestand = './data/marketing-posts.json';
-    const opslag = await fs.readJson(bestand).catch(() => ({ dagen: [] }));
-    if (!Array.isArray(opslag.dagen)) opslag.dagen = [];
-    if (opslag.dagen.some(d => d.dag === dag)) {
+    if (!supabaseAdmin) {
+        // Zonder key valt er nergens (afgeschermd) op te slaan; concepten in
+        // een publiek bestand zetten is precies wat we niet meer doen.
+        console.error('💥 SUPABASE_SERVICE_ROLE_KEY ontbreekt — postfabriek overgeslagen.');
+        process.exit(1);
+    }
+    const { data: bestaand, error: leesFout } = await supabaseAdmin
+        .from('marketing_posts').select('dag').eq('dag', dag).limit(1);
+    if (leesFout) throw new Error(`marketing_posts lezen mislukt: ${leesFout.message}`);
+    if (bestaand?.length) {
         console.log(`ℹ️ Posts voor ${dag} bestaan al — niets te doen.`);
         return;
     }
@@ -122,10 +131,11 @@ async function main() {
 
     const feedback = await haalFeedback();
     const materiaal = `Soort: ${onderwerp.soort}\nTitel: ${onderwerp.titel}\nTekst: ${onderwerp.tekst || '(zie titel)'}\nLink (als {URL} invoegen): ${onderwerp.url}`;
-    const prompt = promptSjabloon
-        .replaceAll('{DATUM}', dag)
-        .replace('{FEEDBACK}', feedback)
-        .replace('{MATERIAAL}', materiaal);
+    // Eén enkele vervangronde: opeenvolgende .replace()-aanroepen zouden
+    // $-patronen in de vrije tekst interpreteren én een afwijsreden die
+    // letterlijk "{MATERIAAL}" bevat het volgende slot laten kapen.
+    const vulling = { DATUM: dag, FEEDBACK: feedback, MATERIAAL: materiaal };
+    const prompt = promptSjabloon.replace(/\{(DATUM|FEEDBACK|MATERIAAL)\}/g, (_, k) => vulling[k]);
 
     console.log(`📣 Postfabriek ${dag}: "${onderwerp.titel}" (${onderwerp.soort}); feedbackregels: ${feedback === '(nog geen feedback)' ? 0 : feedback.split('\n').length}`);
 
@@ -160,25 +170,34 @@ async function main() {
     }
 
     // {URL} pas hier invullen: per kanaal een eigen meetcode (utm), zodat het
-    // weekrapport per kanaal kan zien wat kliks oplevert.
+    // weekrapport per kanaal kan zien wat kliks oplevert. Instagram krijgt
+    // nooit een URL (links werken daar niet in captions — de prompt zegt
+    // "link in bio"): schrijft het model er tóch een {URL} in, dan halen we
+    // die weg in plaats van een dode meetlink te publiceren.
     for (const lang of TALEN) {
         for (const kanaal of KANALEN) {
             const url = onderwerp.urlPerTaal?.[lang] ?? onderwerp.url;
-            perTaal[lang][kanaal] = perTaal[lang][kanaal].replaceAll('{URL}', utm(url, kanaal, dag));
+            perTaal[lang][kanaal] = kanaal === 'instagram'
+                ? perTaal[lang][kanaal].replaceAll('{URL}', '').replace(/[ \t]{2,}/g, ' ').trim()
+                : perTaal[lang][kanaal].replaceAll('{URL}', utm(url, kanaal, dag));
         }
     }
 
-    opslag.dagen.unshift({
+    const { error: schrijfFout } = await supabaseAdmin.from('marketing_posts').upsert({
         dag,
-        prompthash: PROMPT_HASH,
-        onderwerp: { soort: onderwerp.soort, titel: onderwerp.titel, url: onderwerp.url },
-        tokens,
-        perTaal,
-    });
-    opslag.dagen = opslag.dagen.slice(0, BEWAAR_DAGEN);
-    opslag.gegenereerd = new Date().toISOString();
-    opslag.toelichting = 'Conceptposts voor de cockpit (marketing.html). DRAFT-FIRST: plaatsen doet een mens.';
-    await fs.outputJson(bestand, opslag, { spaces: 1 });
+        inhoud: {
+            prompthash: PROMPT_HASH,
+            onderwerp: { soort: onderwerp.soort, titel: onderwerp.titel, url: onderwerp.url },
+            tokens,
+            perTaal,
+        },
+    }, { onConflict: 'dag' });
+    if (schrijfFout) throw new Error(`marketing_posts schrijven mislukt: ${schrijfFout.message}`);
+
+    // Zelfde bewaartermijn als voorheen: 30 dagen concepten is genoeg om op
+    // terug te kijken; de oordelen zelf staan blijvend in marketing_feedback.
+    const cutoff = new Date(Date.now() - BEWAAR_DAGEN * 24 * 3600 * 1000).toISOString().slice(0, 10);
+    await supabaseAdmin.from('marketing_posts').delete().lt('dag', cutoff);
     console.log(`✨ Posts voor ${dag} klaar: ${KANALEN.length} kanalen × ${TALEN.length} talen (${tokens} tokens).`);
 }
 

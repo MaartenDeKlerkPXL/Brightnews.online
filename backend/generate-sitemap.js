@@ -63,6 +63,13 @@ function themaUrls() {
   return urls;
 }
 
+// Vangnet: slugs en ids zijn nu per constructie XML-veilig ([a-z0-9-]), maar
+// die garantie staat in twee andere bestanden — als die ooit verschuiven mag
+// de sitemap niet stilletjes ongeldig worden.
+function xmlEscape(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
 function generateSitemap() {
   const alles = [
     ...PAGES.map(p => ({ ...p, lastmod: LAST_MODIFIED })),
@@ -70,7 +77,7 @@ function generateSitemap() {
     ...themaUrls(),
   ];
   const urls = alles.map(({ loc, priority, lastmod }) => `  <url>
-    <loc>${SITE_URL}${loc}</loc>
+    <loc>${SITE_URL}${xmlEscape(loc)}</loc>
     <lastmod>${lastmod}</lastmod>
     <priority>${priority}</priority>
   </url>`).join('\n');
