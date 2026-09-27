@@ -759,6 +759,95 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   sturen. Dit wordt pas zinvol als er na de lancering echt verkeer is.
   *(Erik — het raakt de selectieprompt, net als punt 3.)*
 
+- [ ] **57. "Laad meer artikelen" blijft staan op de artikeldetailpagina.**
+  *(Gemeld door Maarten 2026-09-27. Kleine bug, twee regels.)*
+
+  Open je een artikel vanaf de homepage, dan staat de knop "Laad meer
+  artikelen" onder het artikel — terwijl er niets te laden valt. Op de
+  homepage hoort hij te blijven.
+
+  **Oorzaak gevonden in `index.js`:** bij het openen van het detailvenster
+  worden `#news-container` en `.filter-wrapper` op `display: none` gezet, maar
+  `#laad-meer-wikkel` niet. Die knop staat bewust bùiten de container (het
+  raster zou hem als kaartvak behandelen) en wordt daardoor vergeten.
+
+  **Fix:** verbergen op dezelfde plek waar de container verborgen wordt, en
+  weer tonen bij terugkeer naar de lijst — let op, dat gebeurt op twee
+  plekken in het bestand. `CACHE_NAME` bumpen, want `index.js` staat in de
+  precache. *(Ik doe het.)*
+
+- [ ] **58. Stripe wijzigt vanaf 29-09-2026 de standaard voor nieuwe
+  Payment Links.** *(Mail van Stripe, 21-09-2026.)*
+
+  Managed Payments staat vanaf die datum **niet meer automatisch aan** bij een
+  nieuwe Payment Link die je in het dashboard maakt; je moet het dan zelf
+  aanvinken.
+
+  **Voor nu is er niets aan de hand.** Onze twee links zijn op 2026-09-04
+  gemaakt en Stripe schrijft expliciet dat bestaande links met Managed
+  Payments ongemoeid blijven. Nagekeken in `js/betaal-config.js`: het gaat om
+  `maandelijks` en `jaarlijks`, allebei met 30 dagen proefperiode.
+
+  **Waar het wél gaat bijten:** zodra iemand een níéuwe Payment Link maakt —
+  een ander tarief, een actie, een jaarplan erbij — en vergeet Managed
+  Payments aan te zetten. Dan loopt die ene link buiten de opzet om, en dat
+  merk je pas bij de eerste betaling. Dit punt staat hier zodat dat niet
+  gebeurt; het is een waarschuwing, geen taak. *(Maarten, bij de eerstvolgende
+  nieuwe link.)*
+
+- [ ] **59. De paywall is hard — overweeg een metered model.**
+  *(Besluit Maarten 2026-09-27: doen, aantal later bepalen — 5 of 10.)*
+
+  Nagekeken in `index.js`: een premium-artikel is volledig dicht tenzij je
+  betaalt. Geen gratis artikelen, geen teller.
+
+  **Vrijwel geen nieuwssite doet dat, en met reden: niemand betaalt voor iets
+  wat hij nooit gelezen heeft.** Het standaardmodel is metered — een aantal
+  artikelen per maand gratis, daarna de vraag. Dan heeft iemand het product al
+  gebruikt op het moment dat je om geld vraagt, en weet hij wat hij misloopt.
+
+  Bij een onbekend merk met één abonnee is dit waarschijnlijk **de enige
+  ingreep op deze lijst die de conversie echt verandert.**
+
+  **Openstaand besluit (Maarten): 5 of 10 artikelen per maand.** Te bepalen
+  als er verkeer is; met de huidige cijfers is het gokken. Vuistregel: te laag
+  en niemand raakt gehecht, te hoog en niemand hoeft ooit te betalen.
+
+  **Let op bij het bouwen:** een teller in `localStorage` is met één
+  privévenster omzeild. Dat is bewust acceptabel bij dit model — het doel is
+  een drempel, geen slot. Wie hem echt wil omzeilen kan dat, en die had toch
+  niet betaald. *(Erik: het raakt de premium-logica.)*
+
+- [ ] **60. Een welkomstreeks na registratie.** *(Besluit Maarten 2026-09-27:
+  doen.)*
+
+  Na aanmelding volgt alleen de bevestigingsmail. Daarna niets. In
+  abonnementsbedrijven is juist die eerste week waarin de meeste conversie
+  valt.
+
+  Drie mails, automatisch: bij aanmelding wat BrightNews doet en hoe de
+  selectie werkt, na drie dagen het best gelezen artikel van die week, na een
+  week wat premium extra biedt — met de proefperiode van 30 dagen als haak.
+
+  Draait op dezelfde verzenddienst als punt 49; bouw die twee samen, dan is
+  dit weinig extra werk. *(Erik: Supabase-trigger of Action; ik schrijf de
+  teksten in vijf talen.)*
+
+- [ ] **61. Levenscyclusmails via Stripe-webhooks.** *(Besluit Maarten
+  2026-09-27: doen.)*
+
+  Stripe en de webhooks staan er al. Daarmee kun je reageren op momenten die
+  nu stil voorbijgaan:
+
+  - **een mislukte betaling** — dit is de belangrijkste. Een verlopen of
+    geweigerde kaart is een abonnee die je verliest zonder dat hij dat wilde,
+    en één mail lost dat meestal op;
+  - **de proefperiode loopt af** — 30 dagen is lang genoeg om te vergeten dat
+    je je hebt aangemeld;
+  - **iemand zegt op** — vragen waarom, en dat antwoord bewaren.
+
+  *(Erik: het raakt Stripe en Supabase.)*
+
 - [ ] **41. Lagere prioriteit uit de UI-doorlichting — nog één over.**
   *(2026-09-23; vier van de vijf afgewerkt op 2026-09-24.)*
 
