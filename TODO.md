@@ -39,7 +39,7 @@ jouw naam open blijft:
 | **43** | De privacyregel over feedback nalezen | 24 sept |
 | **3** | De selectieprompt bijstellen op tien missers | 10 sept |
 | **26** | Anthropic auto-reload + wie de key houdt *(samen met Maarten)* | 19 sept |
-| **45** | Socials koppelen aan de marketing-agent — **nog niet te doen**, zie hieronder | 26 sept |
+| **45** | Socials koppelen — **Meta is vrij sinds 27 sept**, LinkedIn wacht nog | 26 sept |
 
 **Allebei de puntjes voor Maarten zijn afgehandeld op 2026-09-27.** De
 Google Analytics Data API staat aan (punt 30). En de verhuizing naar Supabase
@@ -49,14 +49,17 @@ repo**, dus dat kon alleen met de hand. `marketing_posts` heeft 15 rijen — de
 10–13 is de Anthropic-storing) plus de 27e, die de fabriek zelf schreef.
 `rapporten` heeft W37, W38 en W39. Er is niets verloren gegaan.
 
-**Punt 45 staat er wél bij maar kun je nog niet oppakken.** Het koppelen van de
-marketing-agent aan Instagram, Facebook en LinkedIn wacht op drie dingen die
-alleen Maarten kan doen: er moet een Facebook-Pagina komen, Instagram moet op
-Business, en er moet een LinkedIn-bedrijfspagina zijn. Zonder die accounts is
-er niets om tegenaan te bouwen — een Meta-app hang je aan een Pagina, en de
-LinkedIn-aanvraag vraagt om een pagina waar je beheerder van bent. Het punt
-staat uitgewerkt zodat je weet wat eraan komt en wat de doorlooptijden zijn;
-**begin er niet aan tot Maarten stap 1 t/m 3 heeft afgevinkt.**
+**Punt 45 is op 27 september deels vrijgekomen.** De Facebook-Pagina staat er
+en Instagram is Business en eraan gekoppeld, dus **de Meta-kant kun je
+oppakken** — één app dekt Instagram én Facebook, en omdat we alleen naar onze
+eigen accounts posten is er géén App Review nodig. Vraag Maarten wel even om
+je beheerder te maken van de Pagina.
+
+**LinkedIn kun je nog niet.** Die bedrijfspagina bestaat niet: LinkedIn weigert
+hem omdat Maartens BrightNews-account te weinig connecties heeft. Kun jij hem
+vanaf je eigen account aanmaken en Maarten als beheerder toevoegen? Dan start
+de klok voor de Community Management API vandaag in plaats van over een week —
+dat is de langste doorlooptijd in het hele punt.
 
 **Wat er sinds 20 september op master is geland** (zodat je niet hoeft te
 graven): de artikelpagina's linken nu naar elkaar en het archief staat weer op
@@ -306,16 +309,35 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
 
   ### Stap 1 t/m 3 — Maarten, en dit moet éérst
 
-  - [ ] Facebook-**Pagina** aanmaken voor BrightNews, en het Instagram-account
-        eraan koppelen. *(kwartier)*
-  - [ ] Instagram omzetten naar een **Business**-account. *(minuten)*
+  **Stand 2026-09-27: twee van de drie staan er. Meta is daarmee vrij; Erik
+  kan aan stap 4 beginnen zonder op LinkedIn te wachten.**
+
+  - [x] Facebook-**Pagina** aanmaken voor BrightNews, en het Instagram-account
+        eraan koppelen. ✅ 2026-09-27. Onderweg bleek "professionele modus" op
+        een persoonlijk profiel géén Pagina te zijn — het geeft makersfuncties,
+        maar Meta's publicatie-API kan er niet naartoe posten en Instagram
+        Business laat zich er niet aan koppelen. Er is daarna een echte Pagina
+        gemaakt.
+  - [x] Instagram omzetten naar een **Business**-account. ✅ 2026-09-27,
+        gekoppeld aan de Pagina.
   - [ ] LinkedIn-**bedrijfspagina** aanmaken en meteen Community Management
         API aanvragen. **Dit als eerste de deur uit** — goedkeuring duurt weken
         tot maanden, dus het is de kritieke pad-stap.
+        **Loopt vast (2026-09-27): LinkedIn weigert een pagina omdat het
+        account te weinig connecties heeft.** Twee wegen: connecties
+        verzamelen op het BrightNews-profiel (dagen), of Erik maakt de pagina
+        aan vanaf zijn eigen account en zet Maarten meteen als beheerder erop
+        (vandaag). Voor de API-aanvraag maakt het niet uit wie hem aanmaakte.
+  - [ ] **Erik beheerder maken van de Facebook-Pagina** *(Maarten)* — Pagina →
+        Instellingen → Paginatoegang. Zonder dat kan hij de Meta-app niet aan
+        de Pagina hangen.
+  - [ ] **De nieuwe URL's doorgeven** van de Pagina en het Instagram-account,
+        dan gaan de footerlinks om (die wijzen nu nog naar persoonlijke
+        profielen).
   - [ ] Besluiten over X (zie hieronder) en de footerlinks bijwerken zodra de
         nieuwe accounts er zijn.
 
-  ### Stap 4 — Erik, pas daarna
+  ### Stap 4 — Erik. **Meta is vrij sinds 2026-09-27**, LinkedIn nog niet
 
   **Meta (Instagram + Facebook) is de makkelijkste en de eerste die ik zou
   doen.** Eén app dekt allebei, want Instagram hangt onder de Pagina. En er
