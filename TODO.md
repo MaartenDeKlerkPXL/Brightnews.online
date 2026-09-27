@@ -600,6 +600,65 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   regels, geen kosten, geen account. *(Ik bouw het; het raakt `backend/`, dus
   via een PR met Erik als reviewer.)*
 
+- [ ] **51. `max-image-preview:large` ontbreekt — nodig voor Google Discover.**
+  *(Besluit Maarten 2026-09-27: doen, maar alléén vooruit.)*
+
+  Nagekeken op 2026-09-27: die robots-instructie staat **nergens** — niet in
+  `backend/generate-articles.js`, niet op één van de losse pagina's. Zonder
+  hem mag Google alleen een postzegelformaat tonen, en een Discover-kaart is
+  juist een beeldkaart die de hele telefoonbreedte vult. Een kaart met een
+  minifoto komt daar praktisch niet voorbij.
+
+  ```html
+  <meta name="robots" content="max-image-preview:large">
+  ```
+
+  **Besluit over de aanpak (Maarten):** de regel gaat in het artikelsjabloon
+  en in de twaalf losse pagina's, en de 2.900 bestaande artikelen worden
+  **niet** opnieuw gegenereerd. Nieuwe artikelen hebben hem vanaf dag één, en
+  binnen twee dagen is de voorraad verse artikelen vervangen.
+
+  **Dat klopt voor Discover**, want die toont vrijwel uitsluitend recent
+  nieuws — het archief zou er toch niet in komen. De prijs is wel dat het
+  archief die regel nooit krijgt; wil je dat later alsnog, dan is het één
+  zoek-en-vervang zoals bij de footerlinks.
+
+  Het sjabloon wijzigen betekent `node backend/generate-articles.js` draaien,
+  en de twaalf pagina's raken `index.html`, dus **`CACHE_NAME` bumpen.**
+
+  Zonder dit heeft aanmelden bij Publisher Center weinig zin, dus dit hoort
+  vóór die aanmelding. *(Ik bouw het; het raakt `backend/`, dus via een PR.)*
+
+- [ ] **52. Links van buitenaf: het enige dat geen script oplost.**
+  *(Besluit Maarten 2026-09-27: aanpakken.)*
+
+  Uit punt 23: 444 pagina's geïndexeerd, **2.341 op "gevonden – momenteel niet
+  geïndexeerd"**. De techniek is nagelopen en ligt goed: robots open, sitemap
+  compleet, canonical en hreflang overal, structuurdata correct. De oorzaak
+  is dat **niemand van buitenaf naar brightnews.online linkt.** Een domein
+  zonder één verwijzing krijgt van Google het voordeel van de twijfel niet, en
+  dan blijft een sitemap een suggestie die licht weegt.
+
+  Alle andere punten op deze lijst maken je vindbaarder voor wie al weet dat
+  je bestaat. Dit is het enige dat dat plafond doorbreekt, en er is **geen
+  automatisering voor** — het is handwerk.
+
+  **Wat er concreet kan, na de lancering:**
+  - **De bronnen zelf.** GoodGoodGood.co en GoodNewsNetwork.org leveren 72%
+    van wat we publiceren en zijn inhoudelijk verwant. Een nette mail dat we
+    hun werk in vijf talen ontsluiten is geen spam maar een reëel aanbod.
+  - **Nederlandse nieuwsbrieven en blogs** over duurzaamheid, wetenschap en
+    welzijn — de niche waar positief nieuws thuishoort.
+  - **PXL.** Een studentenondernemersproject dat draait is iets waar een
+    hogeschool graag over schrijft, en een `.be`-onderwijsdomein weegt zwaar.
+  - **Vermelding in overzichten** van positief-nieuwsinitiatieven; die
+    lijstjes bestaan en nemen nieuwe bronnen op.
+
+  **Reserveer hier bewust tijd voor na punt 2**, anders gebeurt het nooit —
+  het is het soort werk dat altijd wijkt voor code. Eén verwijzing van een
+  site met gezag doet meer dan alle punten 47 tot en met 50 samen.
+  *(Maarten — dit is contact leggen, geen bouwen.)*
+
 - [ ] **41. Lagere prioriteit uit de UI-doorlichting — nog één over.**
   *(2026-09-23; vier van de vijf afgewerkt op 2026-09-24.)*
 
