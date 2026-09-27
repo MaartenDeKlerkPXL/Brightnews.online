@@ -326,7 +326,19 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
         wél vanaf Maartens eigen profiel — en dat mag: LinkedIn koppelt een
         pagina aan zijn beheerders, niet aan wie hem aanmaakte. Erik hoefde er
         dus niet aan te pas te komen.
-  - [ ] **Community Management API aanvragen** op `developer.linkedin.com`:
+  - [x] **Community Management API aangevraagd** ✅ 2026-09-27. App aangemaakt,
+        aan de pagina gekoppeld en geverifieerd; het product is via de
+        Products-tab aangevraagd. **Opvallend: er hoefde geen
+        bedrijfsformulier ingevuld te worden.** Dat kan twee dingen betekenen
+        — de Development-tier is self-service en meteen verleend (dan kan Erik
+        aan de slag), of het formulier voor de Standard-tier komt later. Wat
+        er echt is toegekend lees je af aan de Products- en Auth-tab van de
+        app: staan `w_organization_social` en `r_organization_social` bij de
+        scopes, dan is er toegang. **Loopt dit ná 2026-10-25 nog steeds niet,
+        dan is er iets mis en moet iemand navragen.**
+
+        *Oorspronkelijke opdracht hieronder, voor als de aanvraag opnieuw moet.*
+  - [ ] ~~**Community Management API aanvragen** op `developer.linkedin.com`:~~
         eerst een app die aan deze pagina hangt, dan het product aanvragen.
         **Dit is het langste pad van het hele punt** — weken tot maanden, dus
         het hoort als eerste de deur uit. BrightNews staat ingeschreven bij de
