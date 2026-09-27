@@ -337,16 +337,20 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
         geverifieerd zijn (Settings → Verify, link openen als paginabeheerder);
         een verificatie op de ene app telt niet voor de andere.
 
-        - [ ] **⏳ HET AANVRAAGFORMULIER MOET NOG INGEVULD — uiterlijk
-              2026-10-18.** Op de Products-tab staat naast het product een link
-              "Access request form". LinkedIn geeft 21 dagen; daarna vervalt de
-              aanvraag en begint alles opnieuw. Het formulier vraagt om
-              KvK-naam, -nummer en vestigingsadres (BrightNews staat
-              ingeschreven) en om de beoogde toepassing. Houd die omschrijving
-              feitelijk en smal — eigen posts op de eigen pagina, geen
-              gegevens van derden — en vermeld dat de site nog in de laatste
-              testfase zit, want een beoordelaar die `brightnews.online`
-              opent ziet het parkeerbericht.
+        **Het aanvraagformulier is ingediend op 2026-09-27**, als *Direct
+        Advertiser* (alleen eigen kanalen) met Page management en Page
+        analytics. Die keuze is bewust: het formulier stond eerst op
+        *Platform*, en dat betekent LinkedIn inbouwen in een product waar
+        dérden hun account aan koppelen — een veel zwaardere toets, voor iets
+        wat we niet doen.
+
+        - [ ] **⏳ Wachten op de mail van "Microsoft Vetting Services"** op
+              `info@brightnews.online`. LinkedIn verifieert daarmee het
+              bedrijf; zonder bevestiging loopt de beoordeling niet door. **Kijk
+              ook in spam** — die afzendernaam is precies wat een filter
+              tegenhoudt. Ze kunnen om extra documentatie vragen.
+              **Niets gehoord op 2026-10-18? Dan navragen bij developer
+              support.** *(Maarten)*
 
         Toegekend is het pas als bij Auth → OAuth 2.0 scopes
         `w_organization_social` staat. Tot die tijd staat daar
