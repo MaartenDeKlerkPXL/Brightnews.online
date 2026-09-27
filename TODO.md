@@ -547,6 +547,59 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   het maanden te wachten op mensen die er nog niet zijn. *(Erik: het raakt
   Supabase en de betaallogica.)*
 
+- [ ] **49. Een nieuwsbrief.** *(Besluit Maarten 2026-09-27: bouwen.)*
+
+  Nagekeken: er is geen enkele nieuwsbriefcode in de repo, alleen een
+  vertaalsleutel in het privacybeleid. Voor een nieuwssite is dit hét kanaal
+  dat ontbreekt.
+
+  **Waarom het het sterkste idee van de lijst is.** Iemand die je via Google
+  vindt, komt niet terug. Een nieuwsbriefabonnee komt elke dag terug, en
+  terugkerende lezers zijn de mensen die betalen. De nieuwsbrief is daarmee
+  geen apart product maar de opstap naar het abonnement: wie dertig dagen
+  achter elkaar de mail opent, is een kandidaat.
+
+  **Wat er al ligt:** Supabase-accounts, en `data/marketing-feed.json` wordt
+  elke nacht gevuld met precies de inhoud die in zo'n mail hoort — per taal,
+  met dagoverzichten en de best scorende artikelen.
+
+  **Wat erbij moet:**
+  - een tabel `nieuwsbrief_inschrijvingen` in Supabase, met een
+    bevestigingsstap (double opt-in) en een uitschrijflink met token; zonder
+    die twee is het in strijd met de AVG
+  - een verzenddienst — Resend of Postmark, gratis tot een paar duizend mails
+    per maand. Server-side in de Action, dus de CSP hoeft niet open
+  - een sjabloon per taal, gevoed uit de feed
+  - inschrijfvelden: onder elk artikel, in de footer, op de homepage, en een
+    vinkje bij registratie. **Geen pop-up** — huisregel
+  - een regel in `Privacy.html`, in vijf talen
+
+  **Verwachting eerlijk houden:** bij 97 vertoningen per 28 dagen levert dit
+  nu één of twee inschrijvingen op. Het wordt pas iets ná de lancering
+  (punt 2). Bouwen mag eerder, rekenen erop niet.
+  *(Erik: het raakt Supabase en een externe dienst. Ik doe de front-end.)*
+
+- [ ] **50. IndexNow aanzetten.** *(Besluit Maarten 2026-09-27: doen.)*
+
+  Van de 2.927 URL's in de sitemap staan er 2.341 op "gevonden – momenteel
+  niet geïndexeerd" (punt 23). Een zoekmachine komt langs wanneer het hem
+  uitkomt, en bij een domein zonder geschiedenis is dat zelden. Met IndexNow
+  stuur je bij elke run zelf een seintje met de nieuwe URL's.
+
+  **Wat het wél en níét doet.** Het maakt je sneller ópgehaald, niet beter
+  gevonden. Of je hoog eindigt hangt af van je inhoud en van links van
+  buitenaf; daar verandert dit niets aan.
+
+  **En Google doet niet mee** — die heeft zijn eigen sitemap-ping in 2023
+  afgeschaft en ondersteunt IndexNow niet. Dit werkt voor Bing, Yandex en een
+  paar kleinere. Bing is klein in Nederland, maar het verkeer dat er nu is
+  komt vooral uit de Verenigde Staten, waar Bing groter is.
+
+  **Wat het kost:** een sleutelbestand in de root (`<sleutel>.txt`) en één
+  HTTP-aanroep per run met de nieuwe URL's, na `generate-sitemap.js`. Twintig
+  regels, geen kosten, geen account. *(Ik bouw het; het raakt `backend/`, dus
+  via een PR met Erik als reviewer.)*
+
 - [ ] **41. Lagere prioriteit uit de UI-doorlichting — nog één over.**
   *(2026-09-23; vier van de vijf afgewerkt op 2026-09-24.)*
 
