@@ -1,0 +1,78 @@
+/* Categoriepagina's (punt 55). De kaarten zelf lenen hun opmaak van
+   css/pages/index.css — het zijn dezelfde kaarten als op de homepage.
+   Hier staat alleen wat déze pagina extra heeft: de kop, de intro en de
+   verwijzingen naar de andere categorieën onderaan. */
+
+.categorie-pagina {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-4xl);
+}
+
+.categorie-pagina h1 {
+    margin: 0 0 var(--space-xs);
+}
+
+.categorie-intro {
+    color: var(--medium-text);
+    max-width: 60ch;
+    margin: 0 0 var(--space-2xl);
+}
+
+.categorie-leeg {
+    color: var(--medium-text);
+    padding: var(--space-2xl) 0;
+}
+
+/* Onderling doorlinken. Zonder deze links is elke categoriepagina een eiland
+   dat alleen via de sitemap te bereiken is, en dat is precies het probleem
+   dat deze pagina's moeten oplossen. */
+.categorie-andere {
+    margin-top: var(--space-4xl);
+    padding-top: var(--space-xl);
+    border-top: 1px solid var(--border-color);
+}
+
+.categorie-andere h2 {
+    font-size: var(--text-lg);
+    margin: 0 0 var(--space-md);
+}
+
+.categorie-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+}
+
+.categorie-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px; /* aanraakvlak, zie punt 41.2 */
+    padding: 0 var(--space-lg);
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    color: var(--dark-text);
+    text-decoration: none;
+    background: var(--white);
+    transition: border-color var(--duur-snel) var(--easing),
+                transform var(--duur-snel) var(--easing);
+}
+
+.categorie-links a:hover {
+    border-color: var(--bright-green);
+    transform: translateY(-2px);
+}
+
+.categorie-links a:focus-visible {
+    outline: 2px solid var(--bright-green);
+    outline-offset: 3px;
+}
+
+/* Vanaf een artikel terug naar de volledige categorie (punt 55). */
+.meer-categorie {
+    margin: var(--space-lg) 0 0;
+}
+
+.meer-categorie a {
+    font-weight: 700;
+    color: var(--dark-text);
+}

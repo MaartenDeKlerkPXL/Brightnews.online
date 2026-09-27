@@ -600,8 +600,15 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   regels, geen kosten, geen account. *(Ik bouw het; het raakt `backend/`, dus
   via een PR met Erik als reviewer.)*
 
-- [ ] **51. `max-image-preview:large` ontbreekt — nodig voor Google Discover.**
-  *(Besluit Maarten 2026-09-27: doen, maar alléén vooruit.)*
+- [x] **51. `max-image-preview:large` toegevoegd — nodig voor Google Discover.**
+  ✅ **2026-09-27.** De regel staat nu in het artikelsjabloon en op de elf
+  indexeerbare losse pagina's. **Niet** op `404.html`, `binnenkort.html` en
+  `marketing.html`: die staan op `noindex`, daar heeft het geen betekenis.
+  Het archief is zoals afgesproken niet opnieuw gegenereerd — nieuwe artikelen
+  hebben de regel vanaf de eerstvolgende run. `CACHE_NAME` naar v37, want
+  `index.html` zit in de precache.
+
+  *Oorspronkelijke tekst hieronder.*
 
   Nagekeken op 2026-09-27: die robots-instructie staat **nergens** — niet in
   `backend/generate-articles.js`, niet op één van de losse pagina's. Zonder
@@ -720,8 +727,36 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   parkeerbericht. Dus ook: na punt 2. *(Ik bouw de sitemap via een PR;
   Maarten doet de aanmelding.)*
 
-- [ ] **55. Er zijn geen categoriepagina's.** *(Besluit Maarten 2026-09-27:
-  doen.)*
+- [x] **55. Categoriepagina's gebouwd.** ✅ **2026-09-27** — 30 pagina's,
+  `backend/generate-categorieen.js`, draait mee in de Action.
+
+  **Wat er staat:** `/categories/{taal}/{categorie}.html`, met een vertaalde
+  slug (`/categories/nl/milieu.html`, niet `environment`). Per pagina de
+  laatste 60 artikelen van die categorie **in de HTML**, niet via JavaScript —
+  dat was het hele punt. Canonical, hreflang naar de vier andere talen plus
+  x-default, en onderaan links naar de vijf andere categorieën.
+
+  **De route naar binnen.** Alleen in de sitemap zetten zou niets oplossen:
+  daar staan al 2.341 URL's die Google wel kent en niet ophaalt. Daarom linkt
+  nu **elke artikelpagina** naar de categoriepagina van zijn eigen categorie,
+  onderaan bij "meer nieuws". Nagemeten in een proefdraai buiten de repo: 745
+  van de 750 artikelen kregen die link, en de vijf zonder zijn één artikel in
+  de categorie *General* — dat heeft geen pagina, en dat klopt.
+
+  **Nagemeten:** 720 artikellinks vanaf de categoriepagina's gecontroleerd,
+  nul kapot. Alle 30 doelen bestaan. Sitemap van 3.193 naar 3.223 URL's,
+  geldige XML. Op 375px geen horizontale overloop.
+
+  **Twee dingen om te weten.** De navigatiebalk en de footer worden bij het
+  genereren **uit `index.html` gelicht** in plaats van overgeschreven, zodat
+  ze niet achterlopen zodra iemand de footer wijzigt; de relatieve paden
+  worden daarbij absoluut gemaakt. En een bronfoto die niet meer laadt geeft
+  hier een leeg vak — de homepage valt via JavaScript terug op een
+  reservefoto, deze statische pagina's doen dat niet. Bij 8 van de 581
+  artikelen (punt 25) is dat nu te verwaarlozen; groeit dat getal, dan hoort
+  de terugval in de generator.
+
+  *Oorspronkelijke tekst hieronder.*
 
   Nagekeken op 2026-09-27: de site heeft vijf categorieën, maar het filteren
   gebeurt met JavaScript op de homepage. **Er bestaat dus geen enkele URL voor

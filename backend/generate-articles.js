@@ -131,6 +131,14 @@ function bouwBurenIndex(manifest) {
     return { rijen, positie };
 }
 
+// HOUD IN SYNC met categorieSlug() in backend/generate-categorieen.js: de
+// slug van een categoriepagina is de vertaalde naam van die categorie.
+const CATEGORIE_PAGINAS = ['Tech', 'Health', 'Science', 'Lifestyle', 'Environment', 'Finance'];
+function categoriePaginaHref(categorie, lang) {
+    if (!CATEGORIE_PAGINAS.includes(categorie)) return null;
+    return `/categories/${lang}/${maakSlug(t(lang, `filter_${categorie.toLowerCase()}`))}.html`;
+}
+
 function burenHtml(artikel, lang, burenIndex) {
     if (!burenIndex) return '';
     const { rijen, positie } = burenIndex;
@@ -173,6 +181,16 @@ function burenHtml(artikel, lang, burenIndex) {
     const kandidaten = gekozen;
     if (!kandidaten.length) return '';
 
+    // Eén link naar de volledige categoriepagina (punt 55). Zonder deze regel
+    // zijn die dertig pagina's alleen via de sitemap bereikbaar, en een
+    // sitemap is een suggestie waar Google bij dit domein weinig mee doet —
+    // zie punt 23. Een link is een aanbeveling.
+    const catHref = categoriePaginaHref(eigenCategorie, lang);
+    const catLabel = eigenCategorie ? t(lang, `filter_${eigenCategorie.toLowerCase()}`) : '';
+    const categorieLink = catHref
+        ? `            <p class="meer-categorie"><a href="${catHref}">${escapeHtml(t(lang, 'cat_titel').replace('{cat}', catLabel))}</a></p>`
+        : '';
+
     const items = kandidaten.map(r =>
         `                    <li><a href="/articles/${lang}/${r.slugs[lang]}-${r.id}.html">${escapeHtml(r.titles[lang])}</a></li>`
     ).join('\n');
@@ -188,6 +206,7 @@ function burenHtml(artikel, lang, burenIndex) {
             <ul>
 ${items}
             </ul>
+${categorieLink}
         </div>
     </nav>
 `;
@@ -290,6 +309,11 @@ ${artikel.refs.map(ref => {
     <link rel="icon" type="image/png" href="/assets/brightnews-logo-faviconv5.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Zonder deze regel mag Google alleen een miniatuur tonen, en een
+         Discover-kaart is juist een grote beeldkaart (punt 51). Bewust
+         alleen vooruit: het archief wordt niet opnieuw gegenereerd,
+         want Discover toont vrijwel alleen vers nieuws. -->
+    <meta name="robots" content="max-image-preview:large">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://www.googletagmanager.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
     <meta name="description" content="${escapeHtml(beschrijving)}">
     <title>${escapeHtml(artikel.title)} | BrightNews</title>
@@ -306,6 +330,7 @@ ${hreflangs}
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/components.css">
     <link rel="stylesheet" href="/css/pages/artikel.css">
+    <link rel="stylesheet" href="/css/pages/categorie.css">
     <meta name="theme-color" content="var(--bright-green)">
     <script src="/js/vendor/supabase-js-2.112.4.js" defer></script>
     <script src="/js/supabase-init.js" defer></script>

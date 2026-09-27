@@ -63,6 +63,26 @@ function themaUrls() {
   return urls;
 }
 
+// Categoriepagina's (punt 55, 2026-09-27): zes categorieën × vijf talen.
+// Ze worden ook vanaf elke artikelpagina gelinkt, maar horen hier net zo goed
+// in — het zijn ingangen, geen bijzaak, vandaar priority 0.8.
+// HOUD IN SYNC met backend/generate-categorieen.js: dezelfde zes namen en
+// dezelfde slug (de vertaalde categorienaam).
+function categorieUrls() {
+  const pad = path.join(__dirname, '..', 'categories');
+  if (!fs.existsSync(pad)) return [];
+  const urls = [];
+  for (const lang of fs.readdirSync(pad)) {
+    const map = path.join(pad, lang);
+    if (!fs.statSync(map).isDirectory()) continue;
+    for (const bestand of fs.readdirSync(map)) {
+      if (!bestand.endsWith('.html')) continue;
+      urls.push({ loc: `/categories/${lang}/${bestand}`, priority: '0.8', lastmod: LAST_MODIFIED });
+    }
+  }
+  return urls;
+}
+
 // Vangnet: slugs en ids zijn nu per constructie XML-veilig ([a-z0-9-]), maar
 // die garantie staat in twee andere bestanden — als die ooit verschuiven mag
 // de sitemap niet stilletjes ongeldig worden.
@@ -75,6 +95,7 @@ function generateSitemap() {
     ...PAGES.map(p => ({ ...p, lastmod: LAST_MODIFIED })),
     ...artikelUrls(),
     ...themaUrls(),
+    ...categorieUrls(),
   ];
   const urls = alles.map(({ loc, priority, lastmod }) => `  <url>
     <loc>${SITE_URL}${xmlEscape(loc)}</loc>

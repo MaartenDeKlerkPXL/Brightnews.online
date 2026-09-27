@@ -101,6 +101,12 @@ jobs:
           GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
         run: node backend/generate-rapport.js
 
+      # Ná generate-articles.js: de kaarten linken naar de statische
+      # artikelpagina's, dus articles/manifest.json moet actueel zijn.
+      # Vóór de sitemap, want die leest de map categories/ uit.
+      - name: 🗂️ Categoriepagina's genereren
+        run: node backend/generate-categorieen.js
+
       - name: 🗺️ Sitemap & robots.txt genereren
         run: node backend/generate-sitemap.js
 
@@ -114,7 +120,7 @@ jobs:
           # nooit per ongeluk publiek meegecommit wordt.
           # marketing-posts en rapporten staan sinds 2026-09-26 in Supabase
           # (RLS, team-only) — bedrijfscijfers horen niet in een publieke repo.
-          git add data/news_*.json data/seen_links.json data/last_run.json data/selectie-log.json data/digest-log.json data/selectie-archief.jsonl data/marketing-feed.json articles themas sitemap.xml robots.txt
+          git add data/news_*.json data/seen_links.json data/last_run.json data/selectie-log.json data/digest-log.json data/selectie-archief.jsonl data/marketing-feed.json articles themas categories sitemap.xml robots.txt
 
           # Controleer of er echt iets veranderd is voor we committen
           if git diff --quiet && git diff --staged --quiet; then
