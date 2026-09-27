@@ -242,12 +242,18 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   cockpit is gevoed (punt 24). PR #7 is op 2026-09-26 gemerged; de bewijsrun
   schreef meteen echte Search Console-cijfers in het W39-rapport.
 
-  **Eén klik blijft over (Maarten):** GA4 geeft nog een 403 omdat de **Google
-  Analytics Data API niet is aangezet** in het Google Cloud-project
-  (`498462657230`) — de Search Console API wél, vandaar dat die kant al werkt.
-  Aanzetten: console.cloud.google.com → APIs & Services → Library → "Google
-  Analytics Data API" → Enable. Daarna vullen de GA4-regels van het rapport
-  zichzelf; er hoeft verder niets te veranderen.
+  **De GA4-klik is gedaan (Maarten, 2026-09-27).** De Google Analytics Data
+  API stond niet aan in het Google Cloud-project (`brightnews-meetlus`) —
+  vandaar de 403, terwijl de Search Console-kant wél meteen cijfers gaf.
+  Status staat nu op Enabled.
+
+  **Bewijs volgt pas bij W40.** `backend/generate-rapport.js` is idempotent per
+  ISO-week: bestaat het rapport van die week al, dan slaat de run hem over.
+  W39 wordt dus niet alsnog bijgewerkt. De eerste run van maandag 28 september
+  schrijft W40, en daar horen de GA4-regels in te staan. **Blijven ze leeg, dan
+  is dit punt niet af** — kijk dan of het projectnummer uit de oude tekst
+  (`498462657230`) wel bij `brightnews-meetlus` hoort en niet bij een tweede
+  project.
 
   **Wat er nog open staat, allebei bewust later:**
   1. **Beslissen over directe koppelingen** (Meta, LinkedIn, Buffer). Het plan
