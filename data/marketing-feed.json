@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-09-26T16:22:48.206Z",
+ "gegenereerd": "2026-09-27T04:14:25.702Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -22,6 +22,14 @@
      "url": "https://brightnews.online/articles/nl/ethiopiers-planten-miljoenen-bomen-via-green-legacy-initiative-1790310928691595wrcopq.html"
     },
     {
+     "id": "1790482412739w2tqbovj0",
+     "titel": "Nike-oprichter Phil Knight schenkt miljard dollar aan Universiteit van Oregon",
+     "teaser": "Phil Knight, medeoprichter van Nike, heeft samen met zijn vrouw Penny een gift van 1 miljard dollar gedaan aan zijn alma mater, de Universiteit van Oregon. Volgens de New York Times is dit de grootste eenmalige donatie ooit aan een Amerikaanse openbare universiteit. Het geld stelt de universiteit in staat om een volledig nieuw college voor engineering op te richten,...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/nike-oprichter-phil-knight-schenkt-miljard-dollar-aan-universiteit-van-oregon-1790482412739w2tqbovj0.html"
+    },
+    {
      "id": "1790397618858z5yxsbuyb",
      "titel": "Weesbaby-neushoorn Tytan en zebra Notty onafscheidelijk na verlies moeders",
      "teaser": "Bij de Sheldrick Wildlife Trust in Nairobi, dat sinds 1977 gewonde en wees geraakte dieren in Oost-Afrika opvangt, ontstond een bijzondere band tussen twee jonge dieren. Zwarte neushoorn Tytan verloor zijn moeder toen hij acht maanden oud was, nadat ze van een klif viel. Een week later werd zebra Notty naar dezelfde opvang gebracht, nadat ook haar moeder op dezelfde...",
@@ -36,17 +44,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/ghana-koekoekswurger-duikt-na-13-jaar-weer-op-in-ivoorkust-1790397592265yflgpvt9s.html"
-    },
-    {
-     "id": "1790355679646pe6dardmc",
-     "titel": "Nonprofit Rise Up leidt ex-gedetineerden op tot machinebankwerker",
-     "teaser": "In een omgebouwde werkplaats in Zuidoost-San Diego leert de nonprofit Rise Up Industries mannen die decennia in de gevangenis zaten het vak van machinebankwerker. Het programma combineert een betaalde stage met therapie en casemanagement. De werkplaats vervult opdrachten voor onder meer de lucht- en ruimtevaart, medische apparatuur, auto-onderdelen en visaas. Volgens Rise Up recidiveert slechts 3% van de afgestudeerden, tegenover...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/nonprofit-rise-up-leidt-ex-gedetineerden-op-tot-machinebankwerker-1790355679646pe6dardmc.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260926-lifestyle",
+     "titel": "Boeken, een miljard dollar en tweede kansen: het goede nieuws van deze dagen",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-26",
+     "url": "https://brightnews.online/articles/nl/boeken-een-miljard-dollar-en-tweede-kansen-het-goede-nieuws-van-deze-dagen-dg-20260926-lifestyle.html"
+    },
     {
      "id": "dg-20260925-environment",
      "titel": "Vriendschap tussen wees dieren, een verdwenen vogel terug en groene stappen wereldwijd",
@@ -82,6 +89,14 @@
      "url": "https://brightnews.online/articles/en/ethiopians-plant-millions-of-trees-via-green-legacy-initiative-1790310928691595wrcopq.html"
     },
     {
+     "id": "1790482412739w2tqbovj0",
+     "titel": "Nike founder Phil Knight donates $1 billion to University of Oregon",
+     "teaser": "Phil Knight, co-founder of Nike, has made a $1 billion gift to his alma mater, the University of Oregon, together with his wife Penny. According to the New York Times, this is the largest single donation ever made to an American public university. The money will enable the university to establish an entirely new engineering college, something that university vice...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/nike-founder-phil-knight-donates-1-billion-to-university-of-oregon-1790482412739w2tqbovj0.html"
+    },
+    {
      "id": "1790397618858z5yxsbuyb",
      "titel": "Orphaned rhino Tytan and zebra Notty inseparable after losing their mothers",
      "teaser": "At the Sheldrick Wildlife Trust in Nairobi, which has been caring for injured and orphaned animals in East Africa since 1977, a special bond formed between two young animals. Black rhino Tytan lost his mother when he was eight months old after she fell from a cliff. A week later, zebra Notty was brought to the same sanctuary after her...",
@@ -96,17 +111,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/en/ghana-cuckoo-shrike-resurfaces-in-ivory-coast-after-13-years-1790397592265yflgpvt9s.html"
-    },
-    {
-     "id": "1790355679646pe6dardmc",
-     "titel": "Nonprofit Rise Up trains formerly incarcerated men as machinists",
-     "teaser": "In a converted workshop in Southeast San Diego, the nonprofit Rise Up Industries teaches men who spent decades in prison the trade of machinist. The program combines paid apprenticeships with therapy and case management. The workshop fulfills orders for aerospace, medical equipment, auto parts, and fishing lures, among others. According to Rise Up, only 3% of graduates reoffend, compared to...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/nonprofit-rise-up-trains-formerly-incarcerated-men-as-machinists-1790355679646pe6dardmc.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260926-lifestyle",
+     "titel": "Books, a billion dollars and second chances: the good news of these days",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-26",
+     "url": "https://brightnews.online/articles/en/books-a-billion-dollars-and-second-chances-the-good-news-of-these-days-dg-20260926-lifestyle.html"
+    },
     {
      "id": "dg-20260925-environment",
      "titel": "Friendship between orphaned animals, a missing bird returns and green steps worldwide",
@@ -142,6 +156,14 @@
      "url": "https://brightnews.online/articles/de/athiopier-pflanzen-millionen-baume-uber-green-legacy-initiative-1790310928691595wrcopq.html"
     },
     {
+     "id": "1790482412739w2tqbovj0",
+     "titel": "Nike-Gründer Phil Knight spendet eine Milliarde Dollar an die Universität von Oregon",
+     "teaser": "Phil Knight, Mitbegründer von Nike, hat zusammen mit seiner Frau Penny eine Spende von einer Milliarde Dollar an seine Alma Mater, die Universität von Oregon, getätigt. Nach Angaben der New York Times ist dies die größte Einzelspende, die je an eine amerikanische öffentliche Universität gegeben wurde. Das Geld ermöglicht es der Universität, ein völlig neues College für Ingenieurwesen zu gründen...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/nike-grunder-phil-knight-spendet-eine-milliarde-dollar-an-die-universitat-von-or-1790482412739w2tqbovj0.html"
+    },
+    {
      "id": "1790397618858z5yxsbuyb",
      "titel": "Waisenbaby-Nashorn Tytan und Zebra Notty unzertrennlich nach Trauer um ihre Mütter",
      "teaser": "Bei der Sheldrick Wildlife Trust in Nairobi, die seit 1977 verletzte und verwaiste Tiere in Ostafrika aufnimmt, entstand eine besondere Bindung zwischen zwei jungen Tieren. Das schwarze Nashorn Tytan verlor seine Mutter, als er acht Monate alt war, nachdem sie von einer Klippe stürzte. Eine Woche später wurde Zebra Notty in dieselbe Auffangstation gebracht, nachdem auch ihre Mutter auf die...",
@@ -156,17 +178,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/de/ghana-kuckuckswurger-nach-13-jahren-in-der-elfenbeinkuste-wiederentdeckt-1790397592265yflgpvt9s.html"
-    },
-    {
-     "id": "1790355679646pe6dardmc",
-     "titel": "Nonprofit Rise Up bildet ehemalige Häftlinge zu Zerspanungsmechanikern aus",
-     "teaser": "In einer umgebauten Werkstatt im Südosten von San Diego bildet die gemeinnützige Organisation Rise Up Industries Männer, die Jahrzehnte im Gefängnis verbracht haben, zu Zerspanungsmechanikern aus. Das Programm kombiniert ein bezahltes Praktikum mit Therapie und Fallmanagement. Die Werkstatt führt Aufträge unter anderem für Luft- und Raumfahrt, Medizingeräte, Autoteile und Fischköder aus. Nach Angaben von Rise Up rückfällig werden nur 3%...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/nonprofit-rise-up-bildet-ehemalige-haftlinge-zu-zerspanungsmechanikern-aus-1790355679646pe6dardmc.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260926-lifestyle",
+     "titel": "Bücher, eine Milliarde Dollar und zweite Chancen: die guten Nachrichten dieser Tage",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-26",
+     "url": "https://brightnews.online/articles/de/bucher-eine-milliarde-dollar-und-zweite-chancen-die-guten-nachrichten-dieser-tag-dg-20260926-lifestyle.html"
+    },
     {
      "id": "dg-20260925-environment",
      "titel": "Freundschaft zwischen Waisentieren, ein wiederentdeckter Vogel und grüne Schritte weltweit",
@@ -202,6 +223,14 @@
      "url": "https://brightnews.online/articles/fr/des-ethiopiens-plantent-des-millions-d-arbres-via-la-green-legacy-initiative-1790310928691595wrcopq.html"
     },
     {
+     "id": "1790482412739w2tqbovj0",
+     "titel": "Le fondateur de Nike Phil Knight fait don d'un milliard de dollars à l'Université de l'Oregon",
+     "teaser": "Phil Knight, cofondateur de Nike, a fait un don de 1 milliard de dollars à son alma mater, l'Université de l'Oregon, aux côtés de son épouse Penny. Selon le New York Times, il s'agit du plus important don unique jamais versé à une université publique américaine. Cette somme permettra à l'université de créer un tout nouveau collège d'ingénierie, un projet...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/le-fondateur-de-nike-phil-knight-fait-don-d-un-milliard-de-dollars-a-l-universit-1790482412739w2tqbovj0.html"
+    },
+    {
      "id": "1790397618858z5yxsbuyb",
      "titel": "Le bébé rhinocéros orphelin Tytan et le zèbre Notty inséparables après la perte de leurs mères",
      "teaser": "À la Sheldrick Wildlife Trust à Nairobi, qui accueille depuis 1977 les animaux blessés et orphelins d'Afrique de l'Est, un lien particulier s'est noué entre deux jeunes animaux. Le rhinocéros noir Tytan a perdu sa mère alors qu'il n'avait que huit mois, après qu'elle soit tombée d'une falaise. Une semaine plus tard, le zèbre Notty a été amené au même...",
@@ -216,17 +245,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/fr/le-coucou-etrangleur-du-ghana-reapparait-en-cote-d-ivoire-apres-13-ans-1790397592265yflgpvt9s.html"
-    },
-    {
-     "id": "1790355679646pe6dardmc",
-     "titel": "La nonprofit Rise Up forme d'anciens détenus au métier de fraiseur",
-     "teaser": "Dans un atelier réaménagé du sud-est de San Diego, la nonprofit Rise Up Industries enseigne à des hommes ayant passé des décennies en prison le métier de fraiseur. Le programme combine un stage rémunéré avec une thérapie et un suivi de cas. L'atelier exécute des commandes pour l'aéronautique et l'espace, les équipements médicaux, les pièces automobiles et les appâts de...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/la-nonprofit-rise-up-forme-d-anciens-detenus-au-metier-de-fraiseur-1790355679646pe6dardmc.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260926-lifestyle",
+     "titel": "Des livres, un milliard de dollars et des secondes chances : les bonnes nouvelles de ces jours-ci",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-26",
+     "url": "https://brightnews.online/articles/fr/des-livres-un-milliard-de-dollars-et-des-secondes-chances-les-bonnes-nouvelles-d-dg-20260926-lifestyle.html"
+    },
     {
      "id": "dg-20260925-environment",
      "titel": "L'amitié entre animaux orphelins, un oiseau disparu retrouvé et des avancées écologiques dans le monde",
@@ -262,6 +290,14 @@
      "url": "https://brightnews.online/articles/es/etiopes-plantan-millones-de-arboles-a-traves-de-green-legacy-initiative-1790310928691595wrcopq.html"
     },
     {
+     "id": "1790482412739w2tqbovj0",
+     "titel": "El fundador de Nike Phil Knight dona mil millones de dólares a la Universidad de Oregon",
+     "teaser": "Phil Knight, cofundador de Nike, ha realizado junto con su esposa Penny una donación de mil millones de dólares a su alma mater, la Universidad de Oregon. Según el New York Times, se trata de la mayor donación única jamás realizada a una universidad pública estadounidense. El dinero permitirá a la universidad crear un colegio completamente nuevo de ingeniería, algo...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/el-fundador-de-nike-phil-knight-dona-mil-millones-de-dolares-a-la-universidad-de-1790482412739w2tqbovj0.html"
+    },
+    {
      "id": "1790397618858z5yxsbuyb",
      "titel": "La cría de rinoceronte huérfana Tytan y la cebra Notty inseparables tras perder a sus madres",
      "teaser": "En la Sheldrick Wildlife Trust en Nairobi, que desde 1977 acoge a animales heridos y huérfanos en África Oriental, surgió un vínculo especial entre dos crías. La rinoceronte negra Tytan perdió a su madre cuando tenía ocho meses de edad, después de que cayera de un acantilado. Una semana después, la cebra Notty fue llevada al mismo centro de acogida,...",
@@ -276,17 +312,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/es/el-chotacabras-de-ghana-reaparece-en-costa-de-marfil-tras-13-anos-1790397592265yflgpvt9s.html"
-    },
-    {
-     "id": "1790355679646pe6dardmc",
-     "titel": "La organización Rise Up capacita a ex reclusos como operarios de máquinas",
-     "teaser": "En un taller reformado en el sureste de San Diego, la organización sin fines de lucro Rise Up Industries enseña a hombres que pasaron décadas en prisión el oficio de operario de máquinas. El programa combina una pasantía remunerada con terapia y gestión de casos. El taller ejecuta trabajos para la industria aeroespacial, equipos médicos, piezas automotrices y cebo de...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/la-organizacion-rise-up-capacita-a-ex-reclusos-como-operarios-de-maquinas-1790355679646pe6dardmc.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260926-lifestyle",
+     "titel": "Libros, mil millones de dólares y segundas oportunidades: las buenas noticias de estos días",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-26",
+     "url": "https://brightnews.online/articles/es/libros-mil-millones-de-dolares-y-segundas-oportunidades-las-buenas-noticias-de-e-dg-20260926-lifestyle.html"
+    },
     {
      "id": "dg-20260925-environment",
      "titel": "La amistad entre animales huérfanos, un ave desaparecida que regresa y avances verdes en todo el mundo",

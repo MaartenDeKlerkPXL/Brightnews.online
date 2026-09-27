@@ -1,5 +1,48 @@
 [
   {
+    "id": "dg-20260926-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-09-26",
+    "title": "Books, a billion dollars and second chances: the good news of these days",
+    "summary": "These days show that generosity takes many forms, from a city collecting books together to a gift larger than most people can imagine. What connects the stories is that people are investing in the future of others, sometimes with a few books, sometimes with millions of dollars, and sometimes with a second chance at a trade. In Raleigh, fans celebrated the first 'Imagination Library Day of Reading', in honor of Dolly Parton [1]. Governor Josh Stein made it an official day, referencing her hit '9 to 5' and her support for hurricane victims and young readers. Parton's Imagination Library has...",
+    "image_alt": "Books, a billion dollars and second chances: the good news of these days",
+    "meta_description": "Book drive for Dolly Parton, a billion-dollar gift to Oregon and formerly incarcerated people learning a trade: the good news of these days in a nutshell.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab6ce4acfea89c86c3e6d7b_dolly-parton-9-to-5-day-how-celebrate-featured.webp",
+    "date": "2026-09-27T04:14:25.220Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "1790435677680ci6xsstfv",
+        "title": "Dolly Parton fans celebrate first 'Imagination Library Day of Reading'"
+      },
+      {
+        "id": "1790482412739w2tqbovj0",
+        "title": "Nike founder Phil Knight donates $1 billion to University of Oregon"
+      },
+      {
+        "id": "1790355679646pe6dardmc",
+        "title": "Nonprofit Rise Up trains formerly incarcerated men as machinists"
+      }
+    ]
+  },
+  {
+    "id": "1790482412739w2tqbovj0",
+    "title": "Nike founder Phil Knight donates $1 billion to University of Oregon",
+    "summary": "Phil Knight, co-founder of Nike, has made a $1 billion gift to his alma mater, the University of Oregon, together with his wife Penny. According to the New York Times, this is the largest single donation ever made to an American public university. The money will enable the university to establish an entirely new engineering college, something that university vice...",
+    "image_alt": "Phil Knight, co-founder of Nike, making a multimillion-dollar gift to the University of Oregon",
+    "meta_description": "Nike founder Phil Knight donates $1 billion to University of Oregon for new engineering college.",
+    "meta_keywords": "Phil Knight, Nike, University of Oregon, donation, philanthropy, engineering, Penny Knight",
+    "link": "https://www.goodnewsnetwork.org/nike-founder-phil-knight-donates-1-billion-to-oregon-university/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2025/08/Phil-Knight-wife-Penny-and-Knight-Cancer-Institute-Director-Dr.-Druker-credit-OSHU-released.jpg",
+    "date": "2026-09-27T04:13:34.582Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
     "id": "1790435677680ci6xsstfv",
     "title": "Dolly Parton fans celebrate first 'Imagination Library Day of Reading'",
     "summary": "In Raleigh, North Carolina, Nick Blanchard and Kelly Forbes organized a children's book drive to honor the late music legend and philanthropist Dolly Parton. Governor Josh Stein officially declared September 25 as 'Dolly Parton's Imagination Library Day of Reading', referencing her hit '9 to 5' and her generosity toward Hurricane Helene victims and young readers. Parton's Imagination Library, launched in...",
@@ -2583,34 +2626,6 @@
     "image": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/090426_MR_shinglesvaccine_main.jpg?w=800",
     "date": "2026-09-10T04:22:12.537Z",
     "category": "Health",
-    "score": 9
-  },
-  {
-    "id": "1789014106021mjcfg4kfq",
-    "title": "Rare cave bat rescued at Omaha office",
-    "summary": "In September, staff at an office building in Omaha, Nebraska, found a small bat on the floor of their workspace. The Nebraska Humane Society Animal Control was called and brought the animal to Nebraska Wildlife Rehab. It turned out to be a cave myotis, a species that normally lives in Mexico and the southwestern United States and had never been...",
-    "image_alt": "Small cave myotis bat rescued from an office building in Omaha",
-    "meta_description": "Rare cave myotis bat found in Omaha office, first documented in Nebraska by Wildlife Rehab.",
-    "meta_keywords": "bat, cave myotis, Nebraska Wildlife Rehab, Omaha, animal rescue, Nebraska Humane Society",
-    "link": "https://www.goodgoodgood.co/articles/rare-cave-bat-species-omaha-nebraska",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa195dd499d76078cf489c3_6aa195dd7d585c586d1eb807_rare-cave-bat-species-omaha-nebraska-featured.webp",
-    "date": "2026-09-10T04:21:47.516Z",
-    "category": "Environment",
-    "score": 8
-  },
-  {
-    "id": "17890140425336oyar81ew",
-    "title": "Thousands of Trees Planted For 1 Million Good Deeds",
-    "summary": "To commemorate 25 years since 9/11, the nonprofit organization 9/11 Day aims to collect one million good deeds this year. One of the initiatives is Together We Grow, a collaboration with One Tree Planted. On September 9, a 15-foot tall swamp oak was planted in Battery Park in New York City, at the Labyrinth of Contemplation, a place that honors...",
-    "image_alt": "Volunteers plant a tree in Battery Park, New York, in commemoration of 9/11",
-    "meta_description": "To honor 25 years since 9/11, thousands of volunteers plant trees across the country, part of an initiative for 1 million good deeds.",
-    "meta_keywords": "9/11, 9/11 Day, Together We Grow, One Tree Planted, tree planting, Battery Park, commemoration, good deeds",
-    "link": "https://www.goodgoodgood.co/articles/9-11-tree-planting-memorial-good-deeds",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa1c5ba728f734bf762f7f5_6aa1c5b97263e44e758fd797_9-11-tree-planting-memorial-good-deeds-featured.webp",
-    "date": "2026-09-10T04:20:44.687Z",
-    "category": "Environment",
     "score": 9
   }
 ]
