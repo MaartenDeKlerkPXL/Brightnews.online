@@ -1,7 +1,7 @@
 // Bump deze versie bij elke inhoudelijke wijziging aan CSS/JS. Zonder dat
 // blijven bestaande bezoekers vastzitten op een oude cache en krijgen ze
 // nieuwe fixes nooit te zien (zie Fase 2-audit).
-const CACHE_NAME = 'brightnews-v35'; // v35: footer-Facebooklink naar de echte BrightNews-Pagina (index.html staat in de precache). v34: review-ronde 2026-09-26 — HTML met querystring niet meer cachen (de cache groeide onbegrensd), summary-guards in index.js, dode premium-code weg. Bumpen bij elke wijziging aan ASSETS-bestanden.
+const CACHE_NAME = 'brightnews-v36'; // v36: footer-LinkedInlink naar de nieuwe bedrijfspagina. v35: footer-Facebooklink naar de echte BrightNews-Pagina (index.html staat in de precache). v34: review-ronde 2026-09-26 — HTML met querystring niet meer cachen (de cache groeide onbegrensd), summary-guards in index.js, dode premium-code weg. Bumpen bij elke wijziging aan ASSETS-bestanden.
 const ASSETS = [
     '/',
     '/index.html',
