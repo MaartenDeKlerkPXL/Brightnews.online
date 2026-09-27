@@ -104,14 +104,24 @@ Doel: Google actief vertellen dat brightnews.online bestaat, de sitemap met
 > aanmelding bij Google News (Search Console dekt dit; een News-vermelding
 > kan later altijd nog via publishercenter.google.com).
 
-### Extra taak: social-media-pagina's (±20 min)
+### Extra taak: social-media-pagina's — grotendeels af (2026-09-27)
 
-De footer linkt sinds 2026-09-02 naar deze drie profielen — die moeten dus
-bestaan (claim de handles, of geef de juiste URL's door zodat de links
-aangepast worden):
-- Facebook: `facebook.com/brightnews.online`
-- Instagram: `instagram.com/brightnews.online`
-- LinkedIn: `linkedin.com/company/brightnews-online`
+Deze lijst ging ervan uit dat de handles nog geclaimd konden worden. Twee van
+de drie staan er nu; de derde kon niet.
+
+- **Facebook: ✅ Pagina** —
+  `facebook.com/people/BrightNews/61594888799297/`. De handle
+  `facebook.com/brightnews.online` bleek **bezet door een onbekende** (hij
+  verwijst door naar het profiel van ene "Bright New"), en de footer stuurde
+  daar tot 27 september 935 archiefpagina's naartoe. De Pagina heeft nog geen
+  gebruikersnaam; vandaar het nummeradres. Claimen mag later alsnog, het oude
+  adres blijft dan werken.
+- **Instagram: ✅** `instagram.com/brightnews.online`, sinds 27 september een
+  Business-account en gekoppeld aan de Pagina.
+- **LinkedIn: ❌ nog niet.** `linkedin.com/company/brightnews-online` bestaat
+  niet: LinkedIn weigert een bedrijfspagina omdat het BrightNews-account te
+  weinig connecties heeft. De footer wijst zolang naar het persoonlijke
+  profiel. Zie punt 45 in `TODO.md`.
 
 ---
 

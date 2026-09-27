@@ -1,8 +1,11 @@
 # TODO BrightNews
 
-> **Maarten, eerst even dit:** lees `SESSIEVERSLAG-VOOR-MAARTEN.md` (26 sep,
-> gewone taal) — je PR's zijn gemerged en de cockpit leest nu uit Supabase.
-> Daarna gewoon de checklist hieronder. Verwijder het verslag na het lezen.
+> **Stand 2026-09-27:** de twee kleine controles zijn gedaan — de GA4-API
+> staat aan (bewijs volgt bij het W40-rapport, zie punt 30) en de verhuizing
+> naar Supabase is nagemeten en compleet. Eriks `SESSIEVERSLAG-VOOR-MAARTEN.md`
+> is gelezen en verwijderd. Wat er voor Maarten overblijft is punt 45,
+> stap 1 t/m 3: de drie accounts, **LinkedIn eerst** omdat die goedkeuring
+> weken tot maanden duurt en al het werk van Erik erachter wacht.
 
 Werklijst, opgesteld 2026-09-10 na een ronde langs de projectdocumenten, de
 open pull requests en een paar eigen metingen op de site. Gesorteerd op
@@ -36,22 +39,27 @@ jouw naam open blijft:
 | **43** | De privacyregel over feedback nalezen | 24 sept |
 | **3** | De selectieprompt bijstellen op tien missers | 10 sept |
 | **26** | Anthropic auto-reload + wie de key houdt *(samen met Maarten)* | 19 sept |
-| **45** | Socials koppelen aan de marketing-agent — **nog niet te doen**, zie hieronder | 26 sept |
+| **45** | Socials koppelen — **Meta is vrij sinds 27 sept**, LinkedIn wacht nog | 26 sept |
 
-Voor Maarten kwamen er twee kleine puntjes bij: de **Google Analytics Data
-API aanzetten** in Google Cloud (zie punt 30) — tot die tijd toont het
-rapport alleen de Search Console-kant — en **de cockpit even nalopen**: die
-leest de concepten en het rapport sinds PR #8 uit Supabase in plaats van uit
-publieke bestanden (je bestaande posts en rapporten zijn gemigreerd).
+**Allebei de puntjes voor Maarten zijn afgehandeld op 2026-09-27.** De
+Google Analytics Data API staat aan (punt 30). En de verhuizing naar Supabase
+is nagemeten in plaats van aangenomen: er stond **geen migratiescript in de
+repo**, dus dat kon alleen met de hand. `marketing_posts` heeft 15 rijen — de
+14 dagen uit `data/marketing-posts.json` (9 sept, dan 14 t/m 26; het gat van
+10–13 is de Anthropic-storing) plus de 27e, die de fabriek zelf schreef.
+`rapporten` heeft W37, W38 en W39. Er is niets verloren gegaan.
 
-**Punt 45 staat er wél bij maar kun je nog niet oppakken.** Het koppelen van de
-marketing-agent aan Instagram, Facebook en LinkedIn wacht op drie dingen die
-alleen Maarten kan doen: er moet een Facebook-Pagina komen, Instagram moet op
-Business, en er moet een LinkedIn-bedrijfspagina zijn. Zonder die accounts is
-er niets om tegenaan te bouwen — een Meta-app hang je aan een Pagina, en de
-LinkedIn-aanvraag vraagt om een pagina waar je beheerder van bent. Het punt
-staat uitgewerkt zodat je weet wat eraan komt en wat de doorlooptijden zijn;
-**begin er niet aan tot Maarten stap 1 t/m 3 heeft afgevinkt.**
+**Punt 45 is op 27 september deels vrijgekomen.** De Facebook-Pagina staat er
+en Instagram is Business en eraan gekoppeld, dus **de Meta-kant kun je
+oppakken** — één app dekt Instagram én Facebook, en omdat we alleen naar onze
+eigen accounts posten is er géén App Review nodig. Vraag Maarten wel even om
+je beheerder te maken van de Pagina.
+
+**LinkedIn kun je nog niet.** Die bedrijfspagina bestaat niet: LinkedIn weigert
+hem omdat Maartens BrightNews-account te weinig connecties heeft. Kun jij hem
+vanaf je eigen account aanmaken en Maarten als beheerder toevoegen? Dan start
+de klok voor de Community Management API vandaag in plaats van over een week —
+dat is de langste doorlooptijd in het hele punt.
 
 **Wat er sinds 20 september op master is geland** (zodat je niet hoeft te
 graven): de artikelpagina's linken nu naar elkaar en het archief staat weer op
@@ -301,12 +309,25 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
 
   ### Stap 1 t/m 3 — Maarten, en dit moet éérst
 
-  - [ ] Facebook-**Pagina** aanmaken voor BrightNews, en het Instagram-account
-        eraan koppelen. *(kwartier)*
-  - [ ] Instagram omzetten naar een **Business**-account. *(minuten)*
+  **Stand 2026-09-27: twee van de drie staan er. Meta is daarmee vrij; Erik
+  kan aan stap 4 beginnen zonder op LinkedIn te wachten.**
+
+  - [x] Facebook-**Pagina** aanmaken voor BrightNews, en het Instagram-account
+        eraan koppelen. ✅ 2026-09-27. Onderweg bleek "professionele modus" op
+        een persoonlijk profiel géén Pagina te zijn — het geeft makersfuncties,
+        maar Meta's publicatie-API kan er niet naartoe posten en Instagram
+        Business laat zich er niet aan koppelen. Er is daarna een echte Pagina
+        gemaakt.
+  - [x] Instagram omzetten naar een **Business**-account. ✅ 2026-09-27,
+        gekoppeld aan de Pagina.
   - [ ] LinkedIn-**bedrijfspagina** aanmaken en meteen Community Management
         API aanvragen. **Dit als eerste de deur uit** — goedkeuring duurt weken
         tot maanden, dus het is de kritieke pad-stap.
+        **Loopt vast (2026-09-27): LinkedIn weigert een pagina omdat het
+        account te weinig connecties heeft.** Twee wegen: connecties
+        verzamelen op het BrightNews-profiel (dagen), of Erik maakt de pagina
+        aan vanaf zijn eigen account en zet Maarten meteen als beheerder erop
+        (vandaag). Voor de API-aanvraag maakt het niet uit wie hem aanmaakte.
   - [x] **Besluit over X: eruit** (Maarten, 2026-09-27). De postfabriek
         genereerde er elke nacht voor terwijl X niet eens als hoofdkanaal in
         `MARKETING-PLAN.md` staat, en een post mét link kost sinds 06-02-2026
@@ -316,9 +337,16 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
         kaarten per dag in plaats van vier; bestaande dagen houden hun
         X-kaart tot ze na 30 dagen vervallen. Terugdraaien is `'x'` op twee
         plekken terugzetten.
-  - [ ] De footerlinks bijwerken zodra de nieuwe accounts er zijn.
+  - [x] **Footerlinks omgezet** ✅ 2026-09-27, in 2.248 bestanden. Facebook
+        wijst nu naar de Pagina; Instagram wees al goed. LinkedIn blijft naar
+        het persoonlijke profiel wijzen zolang de bedrijfspagina er niet is.
+  - [ ] **Het Pagina-token aanleveren** zodra Erik de Meta-app heeft staan —
+        via GitHub Secrets, net als `ANTHROPIC_API_KEY`. **Bewust géén
+        Paginatoegang voor Erik**: dan blijft Meta op Maartens naam staan en
+        herhalen we punt 26 niet, waar de Anthropic-sleutel op Eriks account
+        bleek te staan.
 
-  ### Stap 4 — Erik, pas daarna
+  ### Stap 4 — Erik. **Meta is vrij sinds 2026-09-27**, LinkedIn nog niet
 
   **Meta (Instagram + Facebook) is de makkelijkste en de eerste die ik zou
   doen.** Eén app dekt allebei, want Instagram hangt onder de Pagina. En er
@@ -382,6 +410,35 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   [LinkedIn Community Management](https://learn.microsoft.com/en-us/linkedin/marketing/community-management/community-management-overview?view=li-lms-2026-09) ·
   [Facebook Pages API](https://developers.facebook.com/docs/pages-api/getting-started/) ·
   [X API-tarieven 2026](https://postproxy.dev/blog/x-api-pricing-2026/)
+
+- [ ] **46. De nachtelijke beoordeling draait niet meer sinds 18 september.**
+  *(Vastgesteld 2026-09-27. Eigenaar onbekend — dat is juist het punt.)*
+
+  `CLAUDE.md` beschrijft een agent die elke nacht om 04:00 Amsterdamse tijd de
+  verse artikelen nakijkt op bright-waardigheid, met zijn opdracht in
+  `backend/nachtelijke-beoordeling-prompt.md` en zijn bevindingen onderaan
+  `backend/selectie-prompt-analyse.md`. Dat is negen nachten netjes gebeurd:
+  10, 11, 12, 13, 14, 15, 16, 17 en 18 september, elke keer rond 04:00.
+  **Daarna niets meer.**
+
+  Nagekeken waar hij vandaan kwam, en het antwoord is: nergens uit de repo.
+  Er is **geen GitHub Action** (`.github/workflows/` bevat alleen
+  `update-news.yml` en `bewaak-cache-bump.yml`) en **geen geplande taak op
+  Maartens machine** (geen crontab-regel, geen LaunchAgent). Iemand heeft hem
+  dus met de hand of via een eigen planning gedraaid, en die is gestopt.
+
+  **Waarom dit ertoe doet.** Het is de enige controle die achteraf kijkt of de
+  selectie klopt — de tien missers uit punt 3 zijn er zo uitgekomen. Zolang
+  hij stilstaat draait de pipeline zonder terugkoppeling, en dat is precies de
+  periode waarin we naar de lancering toewerken. Negen dagen aan bevindingen
+  liet zien dat hij zijn werk deed.
+
+  **Eerst vaststellen van wie hij is** (Maarten of Erik), want dat bepaalt de
+  oplossing. Daarna: als hij de moeite waard blijkt, hoort hij als Action in
+  de repo te staan in plaats van op iemands laptop — dan valt hij niet
+  geruisloos stil en ziet de ander het ook. Wordt hij níét hervat, haal hem
+  dan uit `CLAUDE.md`, want daar staat nu beschreven dat hij draait.
+  *(Maarten + Erik: van wie is hij?)*
 
 - [ ] **41. Lagere prioriteit uit de UI-doorlichting — nog één over.**
   *(2026-09-23; vier van de vijf afgewerkt op 2026-09-24.)*
