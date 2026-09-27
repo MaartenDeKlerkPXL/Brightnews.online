@@ -1,8 +1,11 @@
 # TODO BrightNews
 
-> **Maarten, eerst even dit:** lees `SESSIEVERSLAG-VOOR-MAARTEN.md` (26 sep,
-> gewone taal) — je PR's zijn gemerged en de cockpit leest nu uit Supabase.
-> Daarna gewoon de checklist hieronder. Verwijder het verslag na het lezen.
+> **Stand 2026-09-27:** de twee kleine controles zijn gedaan — de GA4-API
+> staat aan (bewijs volgt bij het W40-rapport, zie punt 30) en de verhuizing
+> naar Supabase is nagemeten en compleet. `SESSIEVERSLAG-VOOR-MAARTEN.md`
+> (26 sep) is gelezen en mag weg. Wat er voor Maarten overblijft is punt 45,
+> stap 1 t/m 3: de drie accounts, **LinkedIn eerst** omdat die goedkeuring
+> weken tot maanden duurt en al het werk van Erik erachter wacht.
 
 Werklijst, opgesteld 2026-09-10 na een ronde langs de projectdocumenten, de
 open pull requests en een paar eigen metingen op de site. Gesorteerd op
@@ -38,11 +41,13 @@ jouw naam open blijft:
 | **26** | Anthropic auto-reload + wie de key houdt *(samen met Maarten)* | 19 sept |
 | **45** | Socials koppelen aan de marketing-agent — **nog niet te doen**, zie hieronder | 26 sept |
 
-Voor Maarten kwamen er twee kleine puntjes bij: de **Google Analytics Data
-API aanzetten** in Google Cloud (zie punt 30) — tot die tijd toont het
-rapport alleen de Search Console-kant — en **de cockpit even nalopen**: die
-leest de concepten en het rapport sinds PR #8 uit Supabase in plaats van uit
-publieke bestanden (je bestaande posts en rapporten zijn gemigreerd).
+**Allebei de puntjes voor Maarten zijn afgehandeld op 2026-09-27.** De
+Google Analytics Data API staat aan (punt 30). En de verhuizing naar Supabase
+is nagemeten in plaats van aangenomen: er stond **geen migratiescript in de
+repo**, dus dat kon alleen met de hand. `marketing_posts` heeft 15 rijen — de
+14 dagen uit `data/marketing-posts.json` (9 sept, dan 14 t/m 26; het gat van
+10–13 is de Anthropic-storing) plus de 27e, die de fabriek zelf schreef.
+`rapporten` heeft W37, W38 en W39. Er is niets verloren gegaan.
 
 **Punt 45 staat er wél bij maar kun je nog niet oppakken.** Het koppelen van de
 marketing-agent aan Instagram, Facebook en LinkedIn wacht op drie dingen die
