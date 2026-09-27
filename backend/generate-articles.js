@@ -212,7 +212,18 @@ ${categorieLink}
 `;
 }
 
+// RSS-autodiscovery (punt 47): de feed van déze taal bovenaan, want een
+// lezer-app pakt standaard de eerste.
+const RSS_TAALNAAM = { nl: 'Nederlands', en: 'English', de: 'Deutsch', fr: 'Français', es: 'Español' };
+function rssLinksHtml(eigenTaal) {
+    const volgorde = [eigenTaal, ...TALEN.filter(l => l !== eigenTaal)];
+    return volgorde
+        .map(l => `    <link rel="alternate" type="application/rss+xml" title="BrightNews (${RSS_TAALNAAM[l]})" href="/feed-${l}.xml">`)
+        .join('\n');
+}
+
 function paginaHtml(artikel, lang, slugsPerTaal, manifest, burenIndex) {
+    const rssLinks = rssLinksHtml(lang);
     const bestand = `${slugsPerTaal[lang]}-${artikel.id}.html`;
     const paginaUrl = `${SITE_URL}/articles/${lang}/${bestand}`;
     // Dagoverzichten (type 'digest') hebben server-side al een ruimere
@@ -314,6 +325,7 @@ ${artikel.refs.map(ref => {
          alleen vooruit: het archief wordt niet opnieuw gegenereerd,
          want Discover toont vrijwel alleen vers nieuws. -->
     <meta name="robots" content="max-image-preview:large">
+${rssLinks}
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://www.googletagmanager.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
     <meta name="description" content="${escapeHtml(beschrijving)}">
     <title>${escapeHtml(artikel.title)} | BrightNews</title>

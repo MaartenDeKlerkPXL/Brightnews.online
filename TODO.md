@@ -498,7 +498,24 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
 
   *(Maarten beslist; als het een Action wordt is het bouwwerk voor Erik of mij.)*
 
-- [ ] **47. Er is geen RSS-feed.** *(Besluit Maarten 2026-09-27: doen.)*
+- [x] **47. RSS-feeds gebouwd.** ✅ **2026-09-27** — vijf feeds,
+  `/feed-nl.xml` t/m `/feed-es.xml`, via `backend/generate-rss.js` in de
+  Action. Elke feed de laatste 30 artikelen met titel, samenvatting, link,
+  datum en de afbeelding als enclosure; kanaaltitel en -omschrijving zijn
+  dezelfde als op de homepage.
+
+  **Autodiscovery staat erbij**, anders vindt een lezer-app de feed niet: alle
+  vijf de feeds staan als `<link rel="alternate">` in de elf indexeerbare
+  losse pagina's, in het artikelsjabloon en op de categoriepagina's. Op een
+  pagina die zelf een taal heeft, staat die taal bovenaan — een lezer-app
+  pakt standaard de eerste.
+
+  Nagemeten: alle vijf geldige XML, 30 items elk. De XML-escaping dekt ook `'`
+  en `"` en haalt stuurtekens weg; één zo'n teken uit een bron maakt een hele
+  feed ongeldig en dan laat een lezer-app niet dat ene item maar de héle feed
+  vallen. *(Die `eslint-disable` bij de regex staat er bewust, met reden.)*
+
+  *Oorspronkelijke tekst hieronder.*
 
   Nagekeken op 2026-09-27: geen feedbestand, geen `application/rss+xml` in
   enige `<head>`, nergens een verwijzing. Voor een nieuwssite is dat
@@ -579,7 +596,24 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   (punt 2). Bouwen mag eerder, rekenen erop niet.
   *(Erik: het raakt Supabase en een externe dienst. Ik doe de front-end.)*
 
-- [ ] **50. IndexNow aanzetten.** *(Besluit Maarten 2026-09-27: doen.)*
+- [x] **50. IndexNow aangezet.** ✅ **2026-09-27** — `backend/indexnow.js`
+  draait mee in de Action, ná de sitemap. Hij leest `news-sitemap.xml` uit
+  (dat is precies "alles van de afgelopen 48 uur") en meldt die URL's plus de
+  homepage. **Eerste melding is geaccepteerd: 36 URL's, status 202.**
+
+  De sleutel `b022d2ba1243089fbcdd85248b11145c` staat als tekstbestand in de
+  root. **Dat is geen vergissing en geen secret:** IndexNow eist dat de
+  sleutel publiek te downloaden is, anders weigert de dienst de melding met
+  een 403. Het script controleert zelf of dat bestand er staat en klopt.
+
+  De stap heeft `continue-on-error: true`. Dit is een extraatje, geen
+  publicatiestap — valt de dienst uit, dan mag de nieuwsrun daar niet op
+  stuklopen.
+
+  **Verwachting eerlijk houden**, zoals hieronder al stond: dit maakt je
+  sneller ópgehaald, niet beter gevonden. En Google doet niet mee.
+
+  *Oorspronkelijke tekst hieronder.*
 
   Van de 2.927 URL's in de sitemap staan er 2.341 op "gevonden – momenteel
   niet geïndexeerd" (punt 23). Een zoekmachine komt langs wanneer het hem
@@ -705,8 +739,23 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   *(Erik bouwt 2, 3 en 4 mee met de publicatielus; onderdeel 1 is beeldwerk en
   kan ik doen.)*
 
-- [ ] **54. Een nieuwssitemap, en daarna aanmelden bij Google Publisher
-  Center.** *(Besluit Maarten 2026-09-27: doen.)*
+- [ ] **54. Aanmelden bij Google Publisher Center.** *(De nieuwssitemap is
+  af; de aanmelding is voor Maarten, ná de lancering.)*
+
+  ✅ **De nieuwssitemap staat er sinds 2026-09-27**: `/news-sitemap.xml`,
+  gegenereerd in `backend/generate-sitemap.js` en opgenomen in `robots.txt`
+  naast de gewone sitemap. Alleen artikelen van de **afgelopen 48 uur**, in
+  het `news:`-formaat met publicatiedatum, taal en titel — precies zoals
+  Google News het wil, inclusief de grens van maximaal 1.000 URL's. Bij de
+  eerste draai: 35 verse URL's, geldige XML. Artikelen zonder titel worden
+  overgeslagen; één ongeldig item laat Google de hele sitemap afwijzen.
+
+  ⏳ **Wat nog moet: de aanmelding zelf.** Die is voor Maarten en hoort **ná
+  de lancering** — Google beoordeelt wat het ziet, en dat is nu nog het
+  parkeerbericht. Punt 51 (grote beeldvoorbeelden) is inmiddels ook af, dus
+  technisch is alles klaar.
+
+  *Oorspronkelijke tekst hieronder.*
 
   `STAPPENPLAN-MAARTEN.md` zette Publisher Center weg als "niet nodig — Search
   Console dekt dit". Voor een gewone site klopt dat; voor een nieuwssite niet.

@@ -133,7 +133,16 @@ function kaartHtml(artikel, lang, manifest) {
             </article>`;
 }
 
+// RSS-autodiscovery (punt 47): eigen taal bovenaan.
+const RSS_TAALNAAM = { nl: 'Nederlands', en: 'English', de: 'Deutsch', fr: 'Français', es: 'Español' };
+function rssLinksHtml(eigenTaal) {
+    return [eigenTaal, ...TALEN.filter(l => l !== eigenTaal)]
+        .map(l => `    <link rel="alternate" type="application/rss+xml" title="BrightNews (${RSS_TAALNAAM[l]})" href="/feed-${l}.xml">`)
+        .join('\n');
+}
+
 function paginaHtml(categorie, lang, artikelen, manifest, schil) {
+    const rssLinks = rssLinksHtml(lang);
     const label = t(lang, `filter_${categorie.toLowerCase()}`);
     const titel = t(lang, 'cat_titel').replace('{cat}', label);
     const beschrijving = t(lang, 'cat_meta').replace('{cat}', label);
@@ -160,6 +169,7 @@ function paginaHtml(categorie, lang, artikelen, manifest, schil) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="max-image-preview:large">
+${rssLinks}
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://www.googletagmanager.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
     <meta name="description" content="${escapeHtml(beschrijving)}">
     <title>${escapeHtml(titel)} | BrightNews</title>
