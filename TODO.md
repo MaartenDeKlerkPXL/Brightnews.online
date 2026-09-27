@@ -402,6 +402,35 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   [Facebook Pages API](https://developers.facebook.com/docs/pages-api/getting-started/) ·
   [X API-tarieven 2026](https://postproxy.dev/blog/x-api-pricing-2026/)
 
+- [ ] **46. De nachtelijke beoordeling draait niet meer sinds 18 september.**
+  *(Vastgesteld 2026-09-27. Eigenaar onbekend — dat is juist het punt.)*
+
+  `CLAUDE.md` beschrijft een agent die elke nacht om 04:00 Amsterdamse tijd de
+  verse artikelen nakijkt op bright-waardigheid, met zijn opdracht in
+  `backend/nachtelijke-beoordeling-prompt.md` en zijn bevindingen onderaan
+  `backend/selectie-prompt-analyse.md`. Dat is negen nachten netjes gebeurd:
+  10, 11, 12, 13, 14, 15, 16, 17 en 18 september, elke keer rond 04:00.
+  **Daarna niets meer.**
+
+  Nagekeken waar hij vandaan kwam, en het antwoord is: nergens uit de repo.
+  Er is **geen GitHub Action** (`.github/workflows/` bevat alleen
+  `update-news.yml` en `bewaak-cache-bump.yml`) en **geen geplande taak op
+  Maartens machine** (geen crontab-regel, geen LaunchAgent). Iemand heeft hem
+  dus met de hand of via een eigen planning gedraaid, en die is gestopt.
+
+  **Waarom dit ertoe doet.** Het is de enige controle die achteraf kijkt of de
+  selectie klopt — de tien missers uit punt 3 zijn er zo uitgekomen. Zolang
+  hij stilstaat draait de pipeline zonder terugkoppeling, en dat is precies de
+  periode waarin we naar de lancering toewerken. Negen dagen aan bevindingen
+  liet zien dat hij zijn werk deed.
+
+  **Eerst vaststellen van wie hij is** (Maarten of Erik), want dat bepaalt de
+  oplossing. Daarna: als hij de moeite waard blijkt, hoort hij als Action in
+  de repo te staan in plaats van op iemands laptop — dan valt hij niet
+  geruisloos stil en ziet de ander het ook. Wordt hij níét hervat, haal hem
+  dan uit `CLAUDE.md`, want daar staat nu beschreven dat hij draait.
+  *(Maarten + Erik: van wie is hij?)*
+
 - [ ] **41. Lagere prioriteit uit de UI-doorlichting — nog één over.**
   *(2026-09-23; vier van de vijf afgewerkt op 2026-09-24.)*
 
