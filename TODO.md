@@ -340,11 +340,11 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   - [x] Instagram omzetten naar een **Business**-account. ✅ 2026-09-27,
         gekoppeld aan de Pagina.
   - [x] **LinkedIn-bedrijfspagina aangemaakt** ✅ 2026-09-27 —
-        `linkedin.com/company/brightnewsonline`. Lukte niet vanaf het
-        BrightNews-account (LinkedIn weigert dat bij te weinig connecties),
-        wél vanaf Maartens eigen profiel — en dat mag: LinkedIn koppelt een
-        pagina aan zijn beheerders, niet aan wie hem aanmaakte. Erik hoefde er
-        dus niet aan te pas te komen.
+        `linkedin.com/company/brightnewsonline`, met beschrijving, locatie en
+        omslagfoto. Lukte niet vanaf het BrightNews-account (LinkedIn weigert
+        dat bij te weinig connecties), wél vanaf Maartens eigen profiel — en
+        dat mag: LinkedIn koppelt een pagina aan zijn beheerders, niet aan wie
+        hem aanmaakte. Erik hoefde er dus niet aan te pas te komen.
   - [x] **Community Management API aangevraagd** ✅ 2026-09-27, in de app
         `BrightNews Publiceren` (id `266539195`).
 
@@ -356,12 +356,11 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
         geverifieerd zijn (Settings → Verify, link openen als paginabeheerder);
         een verificatie op de ene app telt niet voor de andere.
 
-        **Het aanvraagformulier is ingediend op 2026-09-27**, als *Direct
-        Advertiser* (alleen eigen kanalen) met Page management en Page
-        analytics. Die keuze is bewust: het formulier stond eerst op
-        *Platform*, en dat betekent LinkedIn inbouwen in een product waar
-        dérden hun account aan koppelen — een veel zwaardere toets, voor iets
-        wat we niet doen.
+        **Het formulier is ingediend**, als *Direct Advertiser* (alleen eigen
+        kanalen) met Page management en Page analytics. Die keuze is bewust:
+        het stond eerst op *Platform*, en dat betekent LinkedIn inbouwen in een
+        product waar dérden hun account aan koppelen — een veel zwaardere
+        toets, voor iets wat we niet doen.
 
         - [ ] **⏳ Wachten op de mail van "Microsoft Vetting Services"** op
               `info@brightnews.online`. LinkedIn verifieert daarmee het
@@ -373,28 +372,26 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
 
         Toegekend is het pas als bij Auth → OAuth 2.0 scopes
         `w_organization_social` staat. Tot die tijd staat daar
-        `No permissions added`. *(Maarten)*
-
-        *Oorspronkelijke opdracht hieronder, voor als de aanvraag opnieuw moet.*
-  - [ ] ~~**Community Management API aanvragen** op `developer.linkedin.com`:~~
-        eerst een app die aan deze pagina hangt, dan het product aanvragen.
-        **Dit is het langste pad van het hele punt** — weken tot maanden, dus
-        het hoort als eerste de deur uit. BrightNews staat ingeschreven bij de
-        KvK, dus de aanvraag is haalbaar: het product wordt alleen aan
-        rechtspersonen verleend. Het formulier vraagt KvK-naam, -nummer en
-        vestigingsadres, en die moeten exact overeenkomen met de inschrijving.
-  - [ ] **De pagina afmaken vóór de aanvraag** *(Maarten, tien minuten)* —
-        beschrijving, locatie en een omslagfoto. LinkedIn kijkt bij de
-        beoordeling naar de pagina zelf, en een lege pagina met nul volgers
-        helpt niet.
-  - [ ] **Erik beheerder maken van de Facebook-Pagina** *(Maarten)* — Pagina →
-        Instellingen → Paginatoegang. Zonder dat kan hij de Meta-app niet aan
-        de Pagina hangen.
-  - [ ] **De nieuwe URL's doorgeven** van de Pagina en het Instagram-account,
-        dan gaan de footerlinks om (die wijzen nu nog naar persoonlijke
-        profielen).
-  - [ ] Besluiten over X (zie hieronder) en de footerlinks bijwerken zodra de
-        nieuwe accounts er zijn.
+        `No permissions added`.
+  - [x] **Besluit over X: eruit** (Maarten, 2026-09-27). De postfabriek
+        genereerde er elke nacht voor terwijl X niet eens als hoofdkanaal in
+        `MARKETING-PLAN.md` staat, en een post mét link kost sinds 06-02-2026
+        $0,20 — ~$73 per jaar voor een kanaal zonder plan. `KANALEN` in
+        `backend/generate-posts.js` staat nu op drie en `marketing-prompt.md`
+        is v2. Vanaf de eerstvolgende nieuwe dag krijgt de cockpit dus drie
+        kaarten per dag in plaats van vier; bestaande dagen houden hun
+        X-kaart tot ze na 30 dagen vervallen. Terugdraaien is `'x'` op twee
+        plekken terugzetten.
+  - [x] **Footerlinks omgezet** ✅ 2026-09-27, alle drie, in 2.248 bestanden.
+        Bij Facebook én LinkedIn stonden er twee verschillende adressen in de
+        repo, en in beide gevallen was dat in het archief kapot: 935 pagina's
+        wezen naar het profiel van een onbekende die "Bright New" heet, en 385
+        naar een LinkedIn-bedrijfspagina die 404 gaf.
+  - [ ] **Het Pagina-token aanleveren** zodra Erik de Meta-app heeft staan —
+        via GitHub Secrets, net als `ANTHROPIC_API_KEY`. **Bewust géén
+        Paginatoegang voor Erik**: dan blijft Meta op Maartens naam staan en
+        herhalen we punt 26 niet, waar de Anthropic-sleutel op Eriks account
+        bleek te staan. *(Maarten)*
 
   ### Stap 4 — Erik. **Meta is vrij sinds 2026-09-27**, LinkedIn nog niet
 
