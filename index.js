@@ -369,6 +369,15 @@ async function toonDetail(id) {
     const filterWrapper = document.querySelector('.filter-wrapper');
     if (filterWrapper) filterWrapper.style.display = 'none';
 
+    // "Laad meer artikelen" hoort bij de lijst, niet bij een artikel. De knop
+    // staat bewust bùiten #news-container (het raster zou hem als kaartvak
+    // behandelen) en werd daardoor niet meeverborgen: hij bleef onder het
+    // geopende artikel staan terwijl er niets te laden viel. Terugverbergen
+    // hoeft niet — renderLijst() gooit de wikkel weg en werkLaadMeerKnopBij()
+    // bouwt hem opnieuw op bij terugkeer naar de lijst.
+    const laadMeerWikkel = document.getElementById('laad-meer-wikkel');
+    if (laadMeerWikkel) laadMeerWikkel.style.display = 'none';
+
     const artikel = alleArtikelen.find(a => String(a.id) === String(id));
     if (!artikel) {
         // Gedeelde link naar een artikel dat niet (meer) in de actuele lijst
