@@ -759,8 +759,23 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   sturen. Dit wordt pas zinvol als er na de lancering echt verkeer is.
   *(Erik — het raakt de selectieprompt, net als punt 3.)*
 
-- [ ] **57. "Laad meer artikelen" blijft staan op de artikeldetailpagina.**
-  *(Gemeld door Maarten 2026-09-27. Kleine bug, twee regels.)*
+- [x] **57. "Laad meer artikelen" bleef staan op de artikeldetailpagina.**
+  ✅ **2026-09-27** — één regel in `toonDetail()`, op dezelfde plek waar de
+  lijst en de filterbalk verdwijnen. Terugverbergen hoefde niet:
+  `renderLijst()` gooit de wikkel weg en `werkLaadMeerKnopBij()` bouwt hem
+  opnieuw op zodra je terug bent. Nagemeten op drie routes: homepage knop
+  zichtbaar (54px), artikel geopend knop weg, terug naar de lijst knop terug
+  en werkend (24 → 48 kaarten). Bij een directe link naar een artikel wordt
+  hij niet eens aangemaakt.
+
+  **Géén `CACHE_NAME`-bump**, en dat is een correctie op de gewoonte. Ik had
+  er eerst een gezet; Eriks cachebump-bewaker wees uit dat `index.js`
+  **helemaal niet in de precachelijst staat** — daar staat `js/main.js`. De
+  service worker cachet niet-HTML-bestanden ook nergens zelf, hij leest er
+  alleen uit, dus `index.js` komt altijd vers van het netwerk. Handig om te
+  onthouden: een wijziging aan `index.js` vraagt géén bump.
+
+  *Oorspronkelijke melding hieronder.*
 
   Open je een artikel vanaf de homepage, dan staat de knop "Laad meer
   artikelen" onder het artikel — terwijl er niets te laden valt. Op de
