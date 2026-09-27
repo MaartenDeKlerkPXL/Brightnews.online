@@ -1,10 +1,18 @@
 {
- "gegenereerd": "2026-09-27T04:14:25.702Z",
+ "gegenereerd": "2026-09-27T16:35:56.576Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "1790526952732zu9t81thr",
+     "titel": "New York City haalt 131 miljoen dollar op bij DoorDash voor bezorgers",
+     "teaser": "De New York City Department of Consumer and Worker Protection (DCWP) heeft een schikking van 131,5 miljoen dollar getroffen met DoorDash wegens overtreding van de lokale wetten voor bezorgers. Meer dan 260.000 werknemers werden onderbetaald, sommigen kregen helemaal niets uitbetaald of werden te laat betaald. Ruim 115 miljoen dollar gaat rechtstreeks naar de bezorgers, plus 16 miljoen dollar aan boetes...",
+     "score": 10,
+     "categorie": "Finance",
+     "url": "https://brightnews.online/articles/nl/new-york-city-haalt-131-miljoen-dollar-op-bij-doordash-voor-bezorgers-1790526952732zu9t81thr.html"
+    },
     {
      "id": "1790435677680ci6xsstfv",
      "titel": "Fans van Dolly Parton vieren eerste 'Imagination Library Day of Reading'",
@@ -12,14 +20,6 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/fans-van-dolly-parton-vieren-eerste-imagination-library-day-of-reading-1790435677680ci6xsstfv.html"
-    },
-    {
-     "id": "1790310928691595wrcopq",
-     "titel": "Ethiopiërs planten miljoenen bomen via Green Legacy Initiative",
-     "teaser": "Ethiopië verloor tussen 2000 en 2025 zo'n 560.000 hectare bos aan landbouw, houtkap en houtskoolproductie. In 2019 lanceerde de overheid het Green Legacy Initiative, waarbij burgers massaal bomen gingen planten. Yitebitu Moges van het REDD+-programma van UNEP zegt dat zelfs als maar de helft van de bomen overleeft, er al winst is voor vocht, bodem en koolstofopslag. Volgens hem is...",
-     "score": 10,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/ethiopiers-planten-miljoenen-bomen-via-green-legacy-initiative-1790310928691595wrcopq.html"
     },
     {
      "id": "1790482412739w2tqbovj0",
@@ -60,18 +60,19 @@
      "categorie": "Environment",
      "dag": "2026-09-25",
      "url": "https://brightnews.online/articles/nl/vriendschap-tussen-wees-dieren-een-verdwenen-vogel-terug-en-groene-stappen-werel-dg-20260925-environment.html"
-    },
-    {
-     "id": "dg-20260924-environment",
-     "titel": "Bomen, bevers en balen afval: het milieu boekt kleine overwinningen",
-     "categorie": "Environment",
-     "dag": "2026-09-24",
-     "url": "https://brightnews.online/articles/nl/bomen-bevers-en-balen-afval-het-milieu-boekt-kleine-overwinningen-dg-20260924-environment.html"
     }
    ]
   },
   "en": {
    "top": [
+    {
+     "id": "1790526952732zu9t81thr",
+     "titel": "New York City recovers $131 million from DoorDash for delivery workers",
+     "teaser": "The New York City Department of Consumer and Worker Protection (DCWP) has reached a settlement of $131.5 million with DoorDash for violating local delivery worker laws. More than 260,000 workers were underpaid, with some receiving no payment at all or being paid late. Over $115 million will go directly to delivery workers, plus $16 million in fines and costs. Employees...",
+     "score": 10,
+     "categorie": "Finance",
+     "url": "https://brightnews.online/articles/en/new-york-city-recovers-131-million-from-doordash-for-delivery-workers-1790526952732zu9t81thr.html"
+    },
     {
      "id": "1790435677680ci6xsstfv",
      "titel": "Dolly Parton fans celebrate first 'Imagination Library Day of Reading'",
@@ -79,14 +80,6 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/dolly-parton-fans-celebrate-first-imagination-library-day-of-reading-1790435677680ci6xsstfv.html"
-    },
-    {
-     "id": "1790310928691595wrcopq",
-     "titel": "Ethiopians plant millions of trees via Green Legacy Initiative",
-     "teaser": "Ethiopia lost around 560,000 hectares of forest between 2000 and 2025 to agriculture, logging and charcoal production. In 2019, the government launched the Green Legacy Initiative, which saw citizens planting trees on a massive scale. Yitebitu Moges of UNEP's REDD+ programme says that even if only half the trees survive, there are already gains for moisture, soil and carbon storage....",
-     "score": 10,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/ethiopians-plant-millions-of-trees-via-green-legacy-initiative-1790310928691595wrcopq.html"
     },
     {
      "id": "1790482412739w2tqbovj0",
@@ -127,18 +120,19 @@
      "categorie": "Environment",
      "dag": "2026-09-25",
      "url": "https://brightnews.online/articles/en/friendship-between-orphaned-animals-a-missing-bird-returns-and-green-steps-world-dg-20260925-environment.html"
-    },
-    {
-     "id": "dg-20260924-environment",
-     "titel": "Trees, beavers and bales of waste: the environment scores small victories",
-     "categorie": "Environment",
-     "dag": "2026-09-24",
-     "url": "https://brightnews.online/articles/en/trees-beavers-and-bales-of-waste-the-environment-scores-small-victories-dg-20260924-environment.html"
     }
    ]
   },
   "de": {
    "top": [
+    {
+     "id": "1790526952732zu9t81thr",
+     "titel": "New York City erhält 131 Millionen Dollar von DoorDash für Lieferanten",
+     "teaser": "Die New York City Department of Consumer and Worker Protection (DCWP) hat eine Einigung von 131,5 Millionen Dollar mit DoorDash wegen Verstoßes gegen lokale Gesetze für Lieferanten erzielt. Mehr als 260.000 Arbeitnehmer wurden unterbezahlt, einige erhielten überhaupt keine Zahlung oder wurden zu spät bezahlt. Über 115 Millionen Dollar gehen direkt an die Lieferanten, plus 16 Millionen Dollar an Bußgelder und...",
+     "score": 10,
+     "categorie": "Finance",
+     "url": "https://brightnews.online/articles/de/new-york-city-erhalt-131-millionen-dollar-von-doordash-fur-lieferanten-1790526952732zu9t81thr.html"
+    },
     {
      "id": "1790435677680ci6xsstfv",
      "titel": "Fans von Dolly Parton feiern ersten „Imagination Library Day of Reading\"",
@@ -146,14 +140,6 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/fans-von-dolly-parton-feiern-ersten-imagination-library-day-of-reading-1790435677680ci6xsstfv.html"
-    },
-    {
-     "id": "1790310928691595wrcopq",
-     "titel": "Äthiopier pflanzen Millionen Bäume über Green Legacy Initiative",
-     "teaser": "Äthiopien verlor zwischen 2000 und 2025 etwa 560.000 Hektar Wald durch Landwirtschaft, Holzeinschlag und Holzkohleproduktion. 2019 startete die Regierung die Green Legacy Initiative, bei der Bürger massenhaft Bäume pflanzten. Yitebitu Moges vom REDD+-Programm des UNEP sagt, dass selbst wenn nur die Hälfte der Bäume überlebt, es bereits Gewinne für Feuchtigkeit, Boden und Kohlenstoffspeicherung gibt. Nach seiner Aussage hat sich die...",
-     "score": 10,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/athiopier-pflanzen-millionen-baume-uber-green-legacy-initiative-1790310928691595wrcopq.html"
     },
     {
      "id": "1790482412739w2tqbovj0",
@@ -194,18 +180,19 @@
      "categorie": "Environment",
      "dag": "2026-09-25",
      "url": "https://brightnews.online/articles/de/freundschaft-zwischen-waisentieren-ein-wiederentdeckter-vogel-und-grune-schritte-dg-20260925-environment.html"
-    },
-    {
-     "id": "dg-20260924-environment",
-     "titel": "Bäume, Biber und Berge von Müll: Die Umwelt verbucht kleine Siege",
-     "categorie": "Environment",
-     "dag": "2026-09-24",
-     "url": "https://brightnews.online/articles/de/baume-biber-und-berge-von-mull-die-umwelt-verbucht-kleine-siege-dg-20260924-environment.html"
     }
    ]
   },
   "fr": {
    "top": [
+    {
+     "id": "1790526952732zu9t81thr",
+     "titel": "New York City réclame 131 millions de dollars à DoorDash pour les livreurs",
+     "teaser": "Le New York City Department of Consumer and Worker Protection (DCWP) a conclu un règlement de 131,5 millions de dollars avec DoorDash pour violation des lois locales relatives aux livreurs. Plus de 260 000 travailleurs ont été sous-payés, certains n'ayant reçu aucun paiement ou ayant été payés en retard. Plus de 115 millions de dollars iront directement aux livreurs, plus...",
+     "score": 10,
+     "categorie": "Finance",
+     "url": "https://brightnews.online/articles/fr/new-york-city-reclame-131-millions-de-dollars-a-doordash-pour-les-livreurs-1790526952732zu9t81thr.html"
+    },
     {
      "id": "1790435677680ci6xsstfv",
      "titel": "Les fans de Dolly Parton célèbrent le premier « Imagination Library Day of Reading »",
@@ -213,14 +200,6 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/les-fans-de-dolly-parton-celebrent-le-premier-imagination-library-day-of-reading-1790435677680ci6xsstfv.html"
-    },
-    {
-     "id": "1790310928691595wrcopq",
-     "titel": "Des Éthiopiens plantent des millions d'arbres via la Green Legacy Initiative",
-     "teaser": "L'Éthiopie a perdu entre 2000 et 2025 environ 560 000 hectares de forêt à cause de l'agriculture, de l'exploitation forestière et de la production de charbon de bois. En 2019, le gouvernement a lancé la Green Legacy Initiative, incitant les citoyens à planter massivement des arbres. Yitebitu Moges du programme REDD+ du PNUE affirme que même si seulement la moitié...",
-     "score": 10,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/des-ethiopiens-plantent-des-millions-d-arbres-via-la-green-legacy-initiative-1790310928691595wrcopq.html"
     },
     {
      "id": "1790482412739w2tqbovj0",
@@ -261,18 +240,19 @@
      "categorie": "Environment",
      "dag": "2026-09-25",
      "url": "https://brightnews.online/articles/fr/l-amitie-entre-animaux-orphelins-un-oiseau-disparu-retrouve-et-des-avancees-ecol-dg-20260925-environment.html"
-    },
-    {
-     "id": "dg-20260924-environment",
-     "titel": "Des arbres, des castors et des tonnes de déchets : l'environnement remporte de petites victoires",
-     "categorie": "Environment",
-     "dag": "2026-09-24",
-     "url": "https://brightnews.online/articles/fr/des-arbres-des-castors-et-des-tonnes-de-dechets-l-environnement-remporte-de-peti-dg-20260924-environment.html"
     }
    ]
   },
   "es": {
    "top": [
+    {
+     "id": "1790526952732zu9t81thr",
+     "titel": "Nueva York obtiene 131 millones de dólares de DoorDash para repartidores",
+     "teaser": "El New York City Department of Consumer and Worker Protection (DCWP) ha llegado a un acuerdo de 131,5 millones de dólares con DoorDash por incumplimiento de las leyes locales para repartidores. Más de 260.000 trabajadores fueron pagados insuficientemente, algunos no recibieron nada o fueron pagados tarde. Más de 115 millones de dólares irán directamente a los repartidores, además de 16...",
+     "score": 10,
+     "categorie": "Finance",
+     "url": "https://brightnews.online/articles/es/nueva-york-obtiene-131-millones-de-dolares-de-doordash-para-repartidores-1790526952732zu9t81thr.html"
+    },
     {
      "id": "1790435677680ci6xsstfv",
      "titel": "Los fans de Dolly Parton celebran el primer 'Imagination Library Day of Reading'",
@@ -280,14 +260,6 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/los-fans-de-dolly-parton-celebran-el-primer-imagination-library-day-of-reading-1790435677680ci6xsstfv.html"
-    },
-    {
-     "id": "1790310928691595wrcopq",
-     "titel": "Etíopes plantan millones de árboles a través de Green Legacy Initiative",
-     "teaser": "Etiopía perdió entre 2000 y 2025 aproximadamente 560.000 hectáreas de bosque por agricultura, tala y producción de carbón vegetal. En 2019, el gobierno lanzó Green Legacy Initiative, iniciativa mediante la cual los ciudadanos comenzaron a plantar árboles masivamente. Yitebitu Moges del programa REDD+ de UNEP señala que incluso si solo sobrevive la mitad de los árboles, ya hay ganancias para...",
-     "score": 10,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/etiopes-plantan-millones-de-arboles-a-traves-de-green-legacy-initiative-1790310928691595wrcopq.html"
     },
     {
      "id": "1790482412739w2tqbovj0",
@@ -328,13 +300,6 @@
      "categorie": "Environment",
      "dag": "2026-09-25",
      "url": "https://brightnews.online/articles/es/la-amistad-entre-animales-huerfanos-un-ave-desaparecida-que-regresa-y-avances-ve-dg-20260925-environment.html"
-    },
-    {
-     "id": "dg-20260924-environment",
-     "titel": "Árboles, castores y fardos de basura: el medio ambiente logra pequeñas victorias",
-     "categorie": "Environment",
-     "dag": "2026-09-24",
-     "url": "https://brightnews.online/articles/es/arboles-castores-y-fardos-de-basura-el-medio-ambiente-logra-pequenas-victorias-dg-20260924-environment.html"
     }
    ]
   }
