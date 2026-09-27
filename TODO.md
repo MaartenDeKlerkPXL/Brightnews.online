@@ -2,8 +2,8 @@
 
 > **Stand 2026-09-27:** de twee kleine controles zijn gedaan — de GA4-API
 > staat aan (bewijs volgt bij het W40-rapport, zie punt 30) en de verhuizing
-> naar Supabase is nagemeten en compleet. `SESSIEVERSLAG-VOOR-MAARTEN.md`
-> (26 sep) is gelezen en mag weg. Wat er voor Maarten overblijft is punt 45,
+> naar Supabase is nagemeten en compleet. Eriks `SESSIEVERSLAG-VOOR-MAARTEN.md`
+> is gelezen en verwijderd. Wat er voor Maarten overblijft is punt 45,
 > stap 1 t/m 3: de drie accounts, **LinkedIn eerst** omdat die goedkeuring
 > weken tot maanden duurt en al het werk van Erik erachter wacht.
 
