@@ -320,14 +320,23 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
         gemaakt.
   - [x] Instagram omzetten naar een **Business**-account. ✅ 2026-09-27,
         gekoppeld aan de Pagina.
-  - [ ] LinkedIn-**bedrijfspagina** aanmaken en meteen Community Management
-        API aanvragen. **Dit als eerste de deur uit** — goedkeuring duurt weken
-        tot maanden, dus het is de kritieke pad-stap.
-        **Loopt vast (2026-09-27): LinkedIn weigert een pagina omdat het
-        account te weinig connecties heeft.** Twee wegen: connecties
-        verzamelen op het BrightNews-profiel (dagen), of Erik maakt de pagina
-        aan vanaf zijn eigen account en zet Maarten meteen als beheerder erop
-        (vandaag). Voor de API-aanvraag maakt het niet uit wie hem aanmaakte.
+  - [x] **LinkedIn-bedrijfspagina aangemaakt** ✅ 2026-09-27 —
+        `linkedin.com/company/brightnewsonline`. Lukte niet vanaf het
+        BrightNews-account (LinkedIn weigert dat bij te weinig connecties),
+        wél vanaf Maartens eigen profiel — en dat mag: LinkedIn koppelt een
+        pagina aan zijn beheerders, niet aan wie hem aanmaakte. Erik hoefde er
+        dus niet aan te pas te komen.
+  - [ ] **Community Management API aanvragen** op `developer.linkedin.com`:
+        eerst een app die aan deze pagina hangt, dan het product aanvragen.
+        **Dit is het langste pad van het hele punt** — weken tot maanden, dus
+        het hoort als eerste de deur uit. BrightNews staat ingeschreven bij de
+        KvK, dus de aanvraag is haalbaar: het product wordt alleen aan
+        rechtspersonen verleend. Het formulier vraagt KvK-naam, -nummer en
+        vestigingsadres, en die moeten exact overeenkomen met de inschrijving.
+  - [ ] **De pagina afmaken vóór de aanvraag** *(Maarten, tien minuten)* —
+        beschrijving, locatie en een omslagfoto. LinkedIn kijkt bij de
+        beoordeling naar de pagina zelf, en een lege pagina met nul volgers
+        helpt niet.
   - [ ] **Erik beheerder maken van de Facebook-Pagina** *(Maarten)* — Pagina →
         Instellingen → Paginatoegang. Zonder dat kan hij de Meta-app niet aan
         de Pagina hangen.
