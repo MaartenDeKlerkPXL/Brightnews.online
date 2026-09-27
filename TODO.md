@@ -698,6 +698,67 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   *(Erik bouwt 2, 3 en 4 mee met de publicatielus; onderdeel 1 is beeldwerk en
   kan ik doen.)*
 
+- [ ] **54. Een nieuwssitemap, en daarna aanmelden bij Google Publisher
+  Center.** *(Besluit Maarten 2026-09-27: doen.)*
+
+  `STAPPENPLAN-MAARTEN.md` zette Publisher Center weg als "niet nodig — Search
+  Console dekt dit". Voor een gewone site klopt dat; voor een nieuwssite niet.
+  Google News en Discover zijn waar nieuwsverkeer vandaan komt, en die lopen
+  via Publisher Center. Aanmelden is geen bouwwerk, maar er hoort één stuk
+  techniek bij dat ontbreekt.
+
+  **De nieuwssitemap.** De huidige sitemap is één lijst van 3.193 URL's.
+  Google News wil daarnaast een **aparte sitemap met alleen de artikelen van
+  de afgelopen 48 uur**, in het `news:`-formaat met publicatiedatum en taal.
+  Dat is het verschil tussen "komt ooit langs" en "binnen een uur opgehaald",
+  en bij nieuws is een dag te laat hetzelfde als niet gepubliceerd.
+  `generate-sitemap.js` weet al welke artikelen vers zijn; er hoeft alleen een
+  tweede bestand uit te rollen, plus een regel in `robots.txt`.
+
+  **Volgorde:** eerst punt 51 (grote beeldvoorbeelden), dan deze sitemap, dan
+  pas aanmelden — Google beoordeelt wat het ziet, en wat het nu ziet is het
+  parkeerbericht. Dus ook: na punt 2. *(Ik bouw de sitemap via een PR;
+  Maarten doet de aanmelding.)*
+
+- [ ] **55. Er zijn geen categoriepagina's.** *(Besluit Maarten 2026-09-27:
+  doen.)*
+
+  Nagekeken op 2026-09-27: de site heeft vijf categorieën, maar het filteren
+  gebeurt met JavaScript op de homepage. **Er bestaat dus geen enkele URL voor
+  "milieunieuws" of "wetenschapsnieuws"** die Google kan indexeren.
+
+  Dat zijn **25 ontbrekende pagina's** — vijf categorieën maal vijf talen.
+  Elk zou een eigen ingang zijn met een eigen zoekwoord, en een plek waar
+  artikelen naartoe kunnen linken in plaats van alleen naar elkaar. Bij 2.341
+  URL's die op "gevonden – niet opgehaald" staan is dat precies wat ontbreekt:
+  routes naar binnen.
+
+  Te genereren uit dezelfde data als de artikelpagina's, dus het draait daarna
+  vanzelf mee. Denk aan: canonical, hreflang naar de vier andere talen,
+  opname in de sitemap, en een link vanuit de navigatie of de footer — een
+  pagina waar niets naartoe wijst helpt niet.
+  *(Ik bouw het; het raakt `backend/`, dus via een PR.)*
+
+- [ ] **56. Laat Search Console de selectie sturen.** *(Besluit Maarten
+  2026-09-27: doen. Wacht op echte cijfers.)*
+
+  De meetlus haalt sinds 2026-09-26 zoektermen uit Search Console, en die
+  belanden nu alleen in het weekrapport. Daar staat letterlijk in **waar
+  mensen op zoeken en waar we net niet op gevonden worden** — in W39
+  bijvoorbeeld "eu horizon 2030" op positie 64 met 7 vertoningen.
+
+  Voer die termen terug in `backend/selectie-prompt.md` en de selectie weet
+  welke onderwerpen publiek hebben. **Niet om achter trends aan te rennen** —
+  dat zou tegen het hele idee van de site ingaan — maar om bij twee
+  gelijkwaardige artikelen het onderwerp te kiezen waar iemand naar zoekt.
+
+  Dezelfde lus als punt 53.4, maar voor de site in plaats van de socials. De
+  data ligt er al; wat ontbreekt is de terugkoppeling.
+
+  **Wachten heeft zin:** met 25 vertoningen per week is er nog niets te
+  sturen. Dit wordt pas zinvol als er na de lancering echt verkeer is.
+  *(Erik — het raakt de selectieprompt, net als punt 3.)*
+
 - [ ] **41. Lagere prioriteit uit de UI-doorlichting — nog één over.**
   *(2026-09-23; vier van de vijf afgewerkt op 2026-09-24.)*
 
