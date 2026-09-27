@@ -480,12 +480,72 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   periode waarin we naar de lancering toewerken. Negen dagen aan bevindingen
   liet zien dat hij zijn werk deed.
 
-  **Eerst vaststellen van wie hij is** (Maarten of Erik), want dat bepaalt de
-  oplossing. Daarna: als hij de moeite waard blijkt, hoort hij als Action in
-  de repo te staan in plaats van op iemands laptop — dan valt hij niet
-  geruisloos stil en ziet de ander het ook. Wordt hij níét hervat, haal hem
-  dan uit `CLAUDE.md`, want daar staat nu beschreven dat hij draait.
-  *(Maarten + Erik: van wie is hij?)*
+  **Eigenaar bekend sinds 2026-09-27: hij is van Maarten.** Daarmee is ook
+  verklaard waarom hij stilviel — hij hing aan een handmatige of lokale
+  planning, en die is gestopt. Wat er nu moet gebeuren:
+
+  1. **Beslissen of hij hervat wordt.** Negen nachten bevindingen laten zien
+     dat hij zijn werk deed; de tien missers van punt 3 komen eruit.
+  2. **Zo ja: als GitHub Action in de repo**, niet op een laptop. Dan valt hij
+     niet geruisloos stil, ziet Erik het ook, en draait hij door als Maartens
+     machine uitstaat. De opdracht staat al in
+     `backend/nachtelijke-beoordeling-prompt.md`; er is een cron-regel en een
+     schrijfstap nodig. Let op: hij roept Claude aan, dus dit kost tokens per
+     nacht — dat is dezelfde sleutel als de nieuwsrun.
+  3. **Zo nee: haal hem uit `CLAUDE.md`**, want daar staat nu dat hij elke
+     nacht om 04:00 draait. Documentatie die iets beschrijft wat niet bestaat
+     is erger dan geen documentatie.
+
+  *(Maarten beslist; als het een Action wordt is het bouwwerk voor Erik of mij.)*
+
+- [ ] **47. Er is geen RSS-feed.** *(Besluit Maarten 2026-09-27: doen.)*
+
+  Nagekeken op 2026-09-27: geen feedbestand, geen `application/rss+xml` in
+  enige `<head>`, nergens een verwijzing. Voor een nieuwssite is dat
+  ongebruikelijk — RSS is hoe aggregators, lezers-apps en andere sites nieuwe
+  artikelen automatisch oppikken. Het is bereik dat vanzelf doorloopt zodra
+  het er staat, zonder verdere moeite en zonder kosten.
+
+  **Wat het wordt:** een `backend/generate-rss.js` naast de bestaande
+  `generate-sitemap.js`, die vijf feeds schrijft — één per taal —
+  bijvoorbeeld `/feed-nl.xml` t/m `/feed-es.xml`. Elke feed de laatste 20 tot
+  50 artikelen van die taal, met titel, samenvatting, link, datum en de
+  afbeelding. Meedraaien in de nieuws-Action, direct na de sitemap.
+
+  **Niet vergeten:** een `<link rel="alternate" type="application/rss+xml">`
+  in de `<head>` van elke pagina én in het artikelsjabloon, anders vinden
+  lezers-apps de feed niet automatisch. Dat raakt het sjabloon, dus 740
+  pagina's opnieuw genereren. En `CACHE_NAME` bumpen.
+
+  **Volgorde:** dit mag vóór de lancering gebouwd worden, maar het levert pas
+  iets op als de site open is — een aggregator die nu langskomt vindt het
+  parkeerbericht. *(Ik bouw het; het raakt `backend/`, dus via een PR met Erik
+  als reviewer.)*
+
+- [ ] **48. Het referral-systeem alsnog afmaken.** *(Besluit Maarten
+  2026-09-27: doen. Vervolg op punt 11.)*
+
+  Punt 11 stelde in september vast wat er níét is: de database-functie
+  `add_premium_reward` bestaat niet en `processReferralReward` in `js/main.js`
+  logt alleen. Er is dus geen kapotte aanroep, maar ook geen werkend systeem.
+  Dit punt is het bouwen zelf.
+
+  **Wat het is:** de enige echte groeilus in het plan — een bestaande lezer
+  brengt een nieuwe aan en krijgt daar iets voor terug. Anders dan elk ander
+  idee op deze lijst schaalt dit met het aantal lezers in plaats van met de
+  moeite die wij erin steken.
+
+  **Wat het vraagt:** een RPC met `security definer` die de beloning toekent,
+  een audit-trail zodat niet dezelfde verwijzing twee keer telt, en een
+  besluit over wát de beloning is (gratis maanden? een langere proefperiode?).
+  Dat laatste is een keuze van Maarten en Erik samen, geen code.
+
+  **Mijn kanttekening, en die staat hier zodat niemand hem later hoeft te
+  herontdekken: een verwijslus met één abonnee levert nul op.** De waarde
+  ontstaat ergens rond de 50 lezers. Bouwen mag, maar zet het achter punt 2
+  (de lancering), punt 3 (de selectieprompt) en de nieuwsbrief — anders staat
+  het maanden te wachten op mensen die er nog niet zijn. *(Erik: het raakt
+  Supabase en de betaallogica.)*
 
 - [ ] **41. Lagere prioriteit uit de UI-doorlichting — nog één over.**
   *(2026-09-23; vier van de vijf afgewerkt op 2026-09-24.)*
