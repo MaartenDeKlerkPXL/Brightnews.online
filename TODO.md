@@ -978,6 +978,70 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   wegwerp-e-mailadres, en schrijf op wat er misgaat. Dit is het soort ding dat
   je niet wilt ontdekken wanneer de eerste betalende bezoeker het ontdekt.
 
+- [ ] **62. Bedrijven benaderen voor gratis toegang voor hun mensen.**
+  *(Idee van Maarten, 2026-09-27. Goed idee — met drie aanpassingen.)*
+
+  Het idee: bedrijven met een positieve inslag aanschrijven en hun medewerkers
+  een tijd gratis BrightNews geven, in de hoop dat ze blijven.
+
+  **Waarom het kan werken.** Het brengt in één klap echte lezers binnen in
+  plaats van één voor één, en positief nieuws sluit aan bij waar bedrijven al
+  geld aan uitgeven: het welzijn van hun mensen. En het mechanisme ligt er al
+  — `redeem_promo_code` bestaat in Supabase (bevestigd bij punt 11).
+
+  **Drie dingen zou ik anders doen dan het idee zoals het er nu ligt:**
+
+  1. **Geen jaar, maar drie maanden.** Bij een jaar weet niemand aan het eind
+     nog dat hij zich ooit heeft aangemeld, en je leert een jaar lang niets.
+     Drie maanden is lang genoeg om een gewoonte te vormen en kort genoeg om
+     te meten.
+  2. **Niet iedereen automatisch, maar een code die je zelf activeert.** Wat
+     je cadeau krijgt zonder erom te vragen, waardeer je niet — en dan is de
+     conversie aan het eind bijna nul. Met een opt-in link activeren alleen de
+     mensen die het wíllen, en dat zijn precies de mensen die daarna kunnen
+     blijven. Bijkomend voordeel: je leert hoevéél procent het wilde, en dat
+     getal is op zichzelf waardevol.
+  3. **Vraag iets terug dat het bedrijf niets kost:** een vermelding in hun
+     interne nieuwsbrief, en een link op hun site. Dat tweede is het echte
+     rendement — zie punt 52, waar links van buitenaf het plafond onder alles
+     vormen.
+
+  **Wie:** B Corps, duurzaamheidsbedrijven, HR- en welzijnsplatforms, en
+  organisaties die jullie zelf kennen. Begin klein, met vijf tot tien, en kijk
+  wat de reacties zeggen voordat je honderd mails stuurt.
+
+  **Eén waarschuwing.** Dit werkt pas als de site open is (punt 2) en als je
+  weet dat mensen terugkomen. Weggeven wat nog niet bewezen is, kost je je
+  beste kans op een eerste indruk bij precies het publiek dat je wilt. Zet dit
+  dus ná de lancering en ná de nieuwsbrief. *(Maarten — dit is contact leggen;
+  Erik hoeft alleen de codes te regelen.)*
+
+- [ ] **63. Gratis aandacht offline: PXL, startersprijzen en regionale pers.**
+  *(Besluit Maarten 2026-09-27: alle drie proberen.)*
+
+  **Flyers, stickers en posters staan hier bewust niet tussen.** Je vraagt
+  iemand een adres over te typen voor iets waar hij nog niets van wil; dat
+  levert vrijwel niets op. Wat hieronder staat kost ook niets en heeft een
+  tweede opbrengst: **elk stuk aandacht komt met een link**, en dat is exact
+  wat punt 52 mist.
+
+  1. **PXL.** Een draaiende, geautomatiseerde nieuwssite in vijf talen,
+     gebouwd door twee studenten, is precies waar een hogeschool over
+     publiceert. Het levert een artikel op een `.be`-onderwijsdomein op — een
+     van de zwaarstwegende links die bestaan. Benader de communicatiedienst en
+     je docenten. **Hier zou ik beginnen.**
+  2. **Startersprijzen.** Bryo, StartUp Limburg, studentondernemer-
+     verkiezingen. Meedoen is gratis, en ook zonder winnen levert het
+     persaandacht, een netwerk, een scherpere pitch en meestal een vermelding
+     op hun site op.
+  3. **Regionale pers.** Het Belang van Limburg, een lokaal weekblad, een
+     streekradio. Het verhaal schrijft zichzelf: twee Limburgers bouwen een
+     nieuwssite die alleen goed nieuws brengt. Hoogste opbrengst per bestede
+     minuut van de hele lijst.
+
+  Podcasts als gast is het vierde idee uit dat gesprek; Maarten wil dat
+  bewaren voor later. *(Maarten — alle drie zijn gesprekken, geen bouwwerk.)*
+
 ## Afgerond
 
 - [x] **44. Tekst op een groen vlak is wit (besluit Maarten, 2026-09-24).**
