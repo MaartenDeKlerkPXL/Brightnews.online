@@ -659,6 +659,45 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   site met gezag doet meer dan alle punten 47 tot en met 50 samen.
   *(Maarten — dit is contact leggen, geen bouwen.)*
 
+- [ ] **53. De publicatielus slimmer maken — vier verbeteringen.**
+  *(Besluit Maarten 2026-09-27. **Wacht op stap 4 van punt 45**: zolang er
+  niets geplaatst wordt valt er niets te verbeteren.)*
+
+  De postfabriek schrijft teksten; deze vier gaan over wat er daarná mee
+  gebeurt. Geordend op wat ze opleveren.
+
+  **1. Beeldkaarten voor Instagram.** Instagram staat geen links toe in
+  bijschriften — de prompt weet dat en schrijft "link in bio". Het gevolg is
+  dat de post volledig van het beeld afhangt, en dat is nu de persfoto bij het
+  artikel: vaak generieke stock die niets zegt. Wat bij nieuwsaccounts werkt is
+  een **kaart met de kop erop**: grote tekst, het merkgroen, het logo klein in
+  de hoek. Te maken met een HTML-sjabloon dat naar PNG wordt gerenderd; het
+  merklettertype en de tokens liggen er al, dus het ziet er meteen uit als
+  BrightNews. **Dit is van de vier de grootste winst.**
+
+  **2. De link in de eerste reactie op LinkedIn.** LinkedIn drukt berichten
+  met een externe link naar beneden — het platform wil bezoekers niet zien
+  vertrekken. Post daarom de tekst zonder link en plaats de link direct erna
+  als eerste reactie. Twee API-aanroepen in plaats van één; verder verandert
+  er niets.
+
+  **3. Spreiden in plaats van alles tegelijk.** De Action draait om 0:00 en
+  12:00 UTC. Dat zijn niet de momenten waarop mensen kijken, en drie posts
+  tegelijk vanuit één account ziet er bovendien geautomatiseerd uit. Geef elk
+  kanaal een tijdvenster en plaats de wachtrij daarop. Wélk venster hoef je
+  niet te gokken: dat staat na een paar weken in Page analytics, die we voor
+  het weekrapport toch al ophalen.
+
+  **4. De meetlus doortrekken naar de prompt.** Dit is het slimste en het is
+  half af. De cockpit schrijft je oordelen weg en afwijzingen voeden de
+  volgende generatie via `{FEEDBACK}`. Wat er niet in zit is **welke posts het
+  in het echt goed deden.** Voeg bereik en kliks per post terug in de prompt
+  en de fabriek leert van het publiek in plaats van alleen van Maartens
+  oordeel. Dat is het verschil tussen een generator en iets dat beter wordt.
+
+  *(Erik bouwt 2, 3 en 4 mee met de publicatielus; onderdeel 1 is beeldwerk en
+  kan ik doen.)*
+
 - [ ] **41. Lagere prioriteit uit de UI-doorlichting — nog één over.**
   *(2026-09-23; vier van de vijf afgewerkt op 2026-09-24.)*
 
