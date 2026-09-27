@@ -320,14 +320,40 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
         gemaakt.
   - [x] Instagram omzetten naar een **Business**-account. ✅ 2026-09-27,
         gekoppeld aan de Pagina.
-  - [ ] LinkedIn-**bedrijfspagina** aanmaken en meteen Community Management
-        API aanvragen. **Dit als eerste de deur uit** — goedkeuring duurt weken
-        tot maanden, dus het is de kritieke pad-stap.
-        **Loopt vast (2026-09-27): LinkedIn weigert een pagina omdat het
-        account te weinig connecties heeft.** Twee wegen: connecties
-        verzamelen op het BrightNews-profiel (dagen), of Erik maakt de pagina
-        aan vanaf zijn eigen account en zet Maarten meteen als beheerder erop
-        (vandaag). Voor de API-aanvraag maakt het niet uit wie hem aanmaakte.
+  - [x] **LinkedIn-bedrijfspagina aangemaakt** ✅ 2026-09-27 —
+        `linkedin.com/company/brightnewsonline`, met beschrijving, locatie en
+        omslagfoto. Lukte niet vanaf het BrightNews-account (LinkedIn weigert
+        dat bij te weinig connecties), wél vanaf Maartens eigen profiel — en
+        dat mag: LinkedIn koppelt een pagina aan zijn beheerders, niet aan wie
+        hem aanmaakte. Erik hoefde er dus niet aan te pas te komen.
+  - [x] **Community Management API aangevraagd** ✅ 2026-09-27, in de app
+        `BrightNews Publiceren` (id `266539195`).
+
+        **Twee dingen zaten onderweg in de weg, voor wie dit ooit overdoet.**
+        Ten eerste: dit product moet het **enige** product op een app zijn, om
+        juridische redenen. Op de eerste app stond per ongeluk de Events
+        Management API, en daardoor bleef de knop grijs — vandaar een tweede
+        app. Ten tweede moet de koppeling met de bedrijfspagina **per app**
+        geverifieerd zijn (Settings → Verify, link openen als paginabeheerder);
+        een verificatie op de ene app telt niet voor de andere.
+
+        **Het formulier is ingediend**, als *Direct Advertiser* (alleen eigen
+        kanalen) met Page management en Page analytics. Die keuze is bewust:
+        het stond eerst op *Platform*, en dat betekent LinkedIn inbouwen in een
+        product waar dérden hun account aan koppelen — een veel zwaardere
+        toets, voor iets wat we niet doen.
+
+        - [ ] **⏳ Wachten op de mail van "Microsoft Vetting Services"** op
+              `info@brightnews.online`. LinkedIn verifieert daarmee het
+              bedrijf; zonder bevestiging loopt de beoordeling niet door. **Kijk
+              ook in spam** — die afzendernaam is precies wat een filter
+              tegenhoudt. Ze kunnen om extra documentatie vragen.
+              **Niets gehoord op 2026-10-18? Dan navragen bij developer
+              support.** *(Maarten)*
+
+        Toegekend is het pas als bij Auth → OAuth 2.0 scopes
+        `w_organization_social` staat. Tot die tijd staat daar
+        `No permissions added`.
   - [x] **Besluit over X: eruit** (Maarten, 2026-09-27). De postfabriek
         genereerde er elke nacht voor terwijl X niet eens als hoofdkanaal in
         `MARKETING-PLAN.md` staat, en een post mét link kost sinds 06-02-2026
@@ -337,14 +363,16 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
         kaarten per dag in plaats van vier; bestaande dagen houden hun
         X-kaart tot ze na 30 dagen vervallen. Terugdraaien is `'x'` op twee
         plekken terugzetten.
-  - [x] **Footerlinks omgezet** ✅ 2026-09-27, in 2.248 bestanden. Facebook
-        wijst nu naar de Pagina; Instagram wees al goed. LinkedIn blijft naar
-        het persoonlijke profiel wijzen zolang de bedrijfspagina er niet is.
+  - [x] **Footerlinks omgezet** ✅ 2026-09-27, alle drie, in 2.248 bestanden.
+        Bij Facebook én LinkedIn stonden er twee verschillende adressen in de
+        repo, en in beide gevallen was dat in het archief kapot: 935 pagina's
+        wezen naar het profiel van een onbekende die "Bright New" heet, en 385
+        naar een LinkedIn-bedrijfspagina die 404 gaf.
   - [ ] **Het Pagina-token aanleveren** zodra Erik de Meta-app heeft staan —
         via GitHub Secrets, net als `ANTHROPIC_API_KEY`. **Bewust géén
         Paginatoegang voor Erik**: dan blijft Meta op Maartens naam staan en
         herhalen we punt 26 niet, waar de Anthropic-sleutel op Eriks account
-        bleek te staan.
+        bleek te staan. *(Maarten)*
 
   ### Stap 4 — Erik. **Meta is vrij sinds 2026-09-27**, LinkedIn nog niet
 
