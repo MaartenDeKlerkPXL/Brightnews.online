@@ -1,11 +1,11 @@
 # TODO BrightNews
 
-> **Stand 2026-09-27:** de twee kleine controles zijn gedaan — de GA4-API
-> staat aan (bewijs volgt bij het W40-rapport, zie punt 30) en de verhuizing
-> naar Supabase is nagemeten en compleet. Eriks `SESSIEVERSLAG-VOOR-MAARTEN.md`
-> is gelezen en verwijderd. Wat er voor Maarten overblijft is punt 45,
-> stap 1 t/m 3: de drie accounts, **LinkedIn eerst** omdat die goedkeuring
-> weken tot maanden duurt en al het werk van Erik erachter wacht.
+> **Stand 2026-09-27, avond.** Maarten heeft alles afgewerkt wat alleen hij
+> kon doen. De GA4-API staat aan, de verhuizing naar Supabase is nagemeten en
+> compleet, en de drie social-kanalen bestaan nu écht. Eriks
+> `SESSIEVERSLAG-VOOR-MAARTEN.md` is gelezen en verwijderd. Wat er nog op
+> Maartens naam staat is één ding: wachten op de bedrijfsverificatie van
+> LinkedIn. **De bal ligt bij Erik** — zie zijn instap hieronder.
 
 Werklijst, opgesteld 2026-09-10 na een ronde langs de projectdocumenten, de
 open pull requests en een paar eigen metingen op de site. Gesorteerd op
@@ -22,44 +22,63 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
 
 ---
 
-## Voor Erik — je instap (bijgewerkt 2026-09-26, avond)
+## Voor Erik — je instap (bijgewerkt 2026-09-27, avond)
 
-**PR #6 en #7 zijn gereviewd en gemerged (2026-09-26)** — het alarm draait mee
-in de Action en de meetlus schreef meteen echte Search Console-cijfers in het
-weekrapport. Punt 11 is nagekeken en afgevinkt. Daarna is
-**[PR #8](https://github.com/MaartenDeKlerkPXL/Brightnews.online/pull/8)
-gemerged: een volledige review-ronde** (alarm dekt nu ook de
-continue-on-error-stappen, evergreen/digest-validaties, cachebump-bewaking,
-feedback-endpoint begrensd, en het weekrapport + de conceptposts zijn uit de
-publieke repo verhuisd naar RLS-tabellen — zie het Afgerond-blok). Wat er op
-jouw naam open blijft:
+**Begin bij [PR #10](https://github.com/MaartenDeKlerkPXL/Brightnews.online/pull/10).**
+Klein en schoon te mergen: X gaat uit de postfabriek. Sinds 06-02-2026 rekent
+X per post af en een post mét link kost $0,20 — onze posts bevatten er altijd
+een, dus ~$73 per jaar voor een kanaal dat niet eens als hoofdkanaal in
+`MARKETING-PLAN.md` staat. `KANALEN` gaat van vier naar drie en
+`marketing-prompt.md` is v2. De cockpit leest de kanalen uit de data en past
+zich vanzelf aan.
+
+Daarna, op jouw naam:
 
 | | Wat | Sinds |
 |---|---|---|
-| **43** | De privacyregel over feedback nalezen | 24 sept |
+| **45** | **Meta-app bouwen — dit kan nu** | 26 sept |
 | **3** | De selectieprompt bijstellen op tien missers | 10 sept |
+| **43** | De privacyregel over feedback nalezen | 24 sept |
 | **26** | Anthropic auto-reload + wie de key houdt *(samen met Maarten)* | 19 sept |
-| **45** | Socials koppelen — **Meta is vrij sinds 27 sept**, LinkedIn wacht nog | 26 sept |
+| **46** | **Nieuw:** van wie is de nachtelijke beoordeling? *(samen)* | 27 sept |
 
-**Allebei de puntjes voor Maarten zijn afgehandeld op 2026-09-27.** De
-Google Analytics Data API staat aan (punt 30). En de verhuizing naar Supabase
-is nagemeten in plaats van aangenomen: er stond **geen migratiescript in de
-repo**, dus dat kon alleen met de hand. `marketing_posts` heeft 15 rijen — de
-14 dagen uit `data/marketing-posts.json` (9 sept, dan 14 t/m 26; het gat van
-10–13 is de Anthropic-storing) plus de 27e, die de fabriek zelf schreef.
-`rapporten` heeft W37, W38 en W39. Er is niets verloren gegaan.
+### Punt 45: de Meta-kant is vrij
 
-**Punt 45 is op 27 september deels vrijgekomen.** De Facebook-Pagina staat er
-en Instagram is Business en eraan gekoppeld, dus **de Meta-kant kun je
-oppakken** — één app dekt Instagram én Facebook, en omdat we alleen naar onze
-eigen accounts posten is er géén App Review nodig. Vraag Maarten wel even om
-je beheerder te maken van de Pagina.
+De Facebook-Pagina bestaat (`facebook.com/people/BrightNews/61594888799297/`)
+en Instagram is omgezet naar Business en eraan gekoppeld. Daarmee kun je
+bouwen: één app dekt allebei, en **omdat we alleen naar onze eigen accounts
+posten is er géén App Review nodig** — een app in development-mode met het
+eigen account als Tester mag publiceren. Die review van 2–4 weken geldt pas
+als dérden hun account koppelen.
 
-**LinkedIn kun je nog niet.** Die bedrijfspagina bestaat niet: LinkedIn weigert
-hem omdat Maartens BrightNews-account te weinig connecties heeft. Kun jij hem
-vanaf je eigen account aanmaken en Maarten als beheerder toevoegen? Dan start
-de klok voor de Community Management API vandaag in plaats van over een week —
-dat is de langste doorlooptijd in het hele punt.
+**Vraag Maarten om het Pagina-token via GitHub Secrets, niet om
+Paginatoegang.** Dat is bewust: zo blijft Meta op zijn naam staan, en
+herhalen we punt 26 niet — daar bleek de Anthropic-sleutel achteraf op jouw
+account te staan en moet dat nu rechtgezet worden.
+
+Wat er gebouwd moet worden staat verderop bij punt 45 uitgeschreven. Eén ding
+daaruit is niet optioneel: **een publicatielog**, anders plaatst de Action bij
+elke run dezelfde post opnieuw.
+
+### Punt 45: LinkedIn loopt, niets te doen
+
+De bedrijfspagina staat er (`linkedin.com/company/brightnewsonline`) en de
+Community Management API is aangevraagd als Direct Advertiser. Nu wacht het op
+een bedrijfsverificatie van Microsoft Vetting Services bij Maarten. Pas als
+`w_organization_social` in de scopes verschijnt, valt er iets te bouwen.
+
+Twee dingen die tijd kostten en die je moet weten als je zelf aan die app
+komt: het product moet het **enige** product op een app zijn, en de
+paginakoppeling moet **per app** geverifieerd worden.
+
+### Wat er op 27 september nog meer op master is geland
+
+Drie kapotte footerlinks, gevonden bij het omzetten naar de nieuwe kanalen:
+935 archiefpagina's wezen naar het Facebook-profiel van een onbekende, 385
+naar een LinkedIn-bedrijfspagina die 404 gaf, en de rest naar persoonlijke
+profielen. Alle 2.248 bestanden zijn omgezet, het artikelsjabloon mee,
+`CACHE_NAME` op v36. **Je cachebump-bewaker draaide daarbij groen mee** — hij
+is dus in het echt getest en doet wat hij moet doen.
 
 **Wat er sinds 20 september op master is geland** (zodat je niet hoeft te
 graven): de artikelpagina's linken nu naar elkaar en het archief staat weer op
