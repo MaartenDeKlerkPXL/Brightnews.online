@@ -326,16 +326,31 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
         wél vanaf Maartens eigen profiel — en dat mag: LinkedIn koppelt een
         pagina aan zijn beheerders, niet aan wie hem aanmaakte. Erik hoefde er
         dus niet aan te pas te komen.
-  - [x] **Community Management API aangevraagd** ✅ 2026-09-27. App aangemaakt,
-        aan de pagina gekoppeld en geverifieerd; het product is via de
-        Products-tab aangevraagd. **Opvallend: er hoefde geen
-        bedrijfsformulier ingevuld te worden.** Dat kan twee dingen betekenen
-        — de Development-tier is self-service en meteen verleend (dan kan Erik
-        aan de slag), of het formulier voor de Standard-tier komt later. Wat
-        er echt is toegekend lees je af aan de Products- en Auth-tab van de
-        app: staan `w_organization_social` en `r_organization_social` bij de
-        scopes, dan is er toegang. **Loopt dit ná 2026-10-25 nog steeds niet,
-        dan is er iets mis en moet iemand navragen.**
+  - [x] **Community Management API aangevraagd** ✅ 2026-09-27, in de app
+        `BrightNews Publiceren` (id `266539195`).
+
+        **Twee dingen zaten onderweg in de weg, voor wie dit ooit overdoet.**
+        Ten eerste: dit product moet het **enige** product op een app zijn, om
+        juridische redenen. Op de eerste app stond per ongeluk de Events
+        Management API, en daardoor bleef de knop grijs — vandaar een tweede
+        app. Ten tweede moet de koppeling met de bedrijfspagina **per app**
+        geverifieerd zijn (Settings → Verify, link openen als paginabeheerder);
+        een verificatie op de ene app telt niet voor de andere.
+
+        - [ ] **⏳ HET AANVRAAGFORMULIER MOET NOG INGEVULD — uiterlijk
+              2026-10-18.** Op de Products-tab staat naast het product een link
+              "Access request form". LinkedIn geeft 21 dagen; daarna vervalt de
+              aanvraag en begint alles opnieuw. Het formulier vraagt om
+              KvK-naam, -nummer en vestigingsadres (BrightNews staat
+              ingeschreven) en om de beoogde toepassing. Houd die omschrijving
+              feitelijk en smal — eigen posts op de eigen pagina, geen
+              gegevens van derden — en vermeld dat de site nog in de laatste
+              testfase zit, want een beoordelaar die `brightnews.online`
+              opent ziet het parkeerbericht.
+
+        Toegekend is het pas als bij Auth → OAuth 2.0 scopes
+        `w_organization_social` staat. Tot die tijd staat daar
+        `No permissions added`. *(Maarten)*
 
         *Oorspronkelijke opdracht hieronder, voor als de aanvraag opnieuw moet.*
   - [ ] ~~**Community Management API aanvragen** op `developer.linkedin.com`:~~
