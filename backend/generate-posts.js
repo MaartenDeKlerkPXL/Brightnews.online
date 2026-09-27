@@ -1,5 +1,5 @@
 // Postfabriek (besluit Erik 2026-09-09, marketing fase M1): schrijft per dag
-// één conceptpost per kanaal (instagram/facebook/linkedin/x) over het beste
+// één conceptpost per kanaal (instagram/facebook/linkedin) over het beste
 // materiaal van vandaag, in het Nederlands (rol 'schrijven'), en vertaalt die
 // naar de andere vier talen (rol 'vertalen'). Concepten belanden in de
 // Supabase-tabel marketing_posts (review-ronde 2026-09-26: de site en de
@@ -19,7 +19,13 @@ const { aiCall, verwerkAIResponse } = require('./ai-adapter');
 
 const TALEN = ['nl', 'en', 'de', 'fr', 'es'];
 const TAAL_NAMEN = { nl: 'Nederlands', en: 'Engels', de: 'Duits', fr: 'Frans', es: 'Spaans' };
-const KANALEN = ['instagram', 'facebook', 'linkedin', 'x'];
+// X is er op 2026-09-27 uit (besluit Maarten). Sinds 06-02-2026 rekent X per
+// post af en een post mét link kost $0,20 — onze posts bevatten er altijd
+// een, dus één post per dag per taal is ~$73 per jaar. X staat bovendien niet
+// als hoofdkanaal in MARKETING-PLAN.md; de fabriek genereerde ertegenaan
+// zonder dat er een plan achter zat. Weer aanzetten = 'x' hier terugzetten
+// én het kanaal terug in marketing-prompt.md.
+const KANALEN = ['instagram', 'facebook', 'linkedin'];
 const BEWAAR_DAGEN = 30;
 
 const promptBestand = fs.readFileSync(`${__dirname}/marketing-prompt.md`, 'utf8');

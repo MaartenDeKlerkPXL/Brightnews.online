@@ -307,8 +307,16 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   - [ ] LinkedIn-**bedrijfspagina** aanmaken en meteen Community Management
         API aanvragen. **Dit als eerste de deur uit** — goedkeuring duurt weken
         tot maanden, dus het is de kritieke pad-stap.
-  - [ ] Besluiten over X (zie hieronder) en de footerlinks bijwerken zodra de
-        nieuwe accounts er zijn.
+  - [x] **Besluit over X: eruit** (Maarten, 2026-09-27). De postfabriek
+        genereerde er elke nacht voor terwijl X niet eens als hoofdkanaal in
+        `MARKETING-PLAN.md` staat, en een post mét link kost sinds 06-02-2026
+        $0,20 — ~$73 per jaar voor een kanaal zonder plan. `KANALEN` in
+        `backend/generate-posts.js` staat nu op drie en `marketing-prompt.md`
+        is v2. Vanaf de eerstvolgende nieuwe dag krijgt de cockpit dus drie
+        kaarten per dag in plaats van vier; bestaande dagen houden hun
+        X-kaart tot ze na 30 dagen vervallen. Terugdraaien is `'x'` op twee
+        plekken terugzetten.
+  - [ ] De footerlinks bijwerken zodra de nieuwe accounts er zijn.
 
   ### Stap 4 — Erik, pas daarna
 
