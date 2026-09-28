@@ -138,9 +138,13 @@ function generateNewsSitemap() {
   if (!fs.existsSync(manifestPad)) return null;
   const manifest = JSON.parse(fs.readFileSync(manifestPad, 'utf8'));
   const grens = Date.now() - NIEUWS_VENSTER_UREN * 3600 * 1000;
+  // Zelfde uitsluitlijst als de gewone sitemap (punt 3): een artikel met
+  // noindex aanmelden bij Google News zou een tegenstrijdig signaal zijn.
+  const uitgesloten = uitgeslotenIds();
 
   const items = [];
   for (const [id, entry] of Object.entries(manifest.articles || {})) {
+    if (uitgesloten.has(id)) continue;
     const tijd = entry.date ? Date.parse(entry.date) : NaN;
     if (!Number.isFinite(tijd) || tijd < grens) continue;
     for (const [lang, slug] of Object.entries(entry.slugs || {})) {
