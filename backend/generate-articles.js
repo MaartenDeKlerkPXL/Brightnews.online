@@ -564,6 +564,16 @@ function main() {
     }
 
     // Tweede ronde: schrijven, nu mét een complete burenindex.
+    // De uitsluitlijst (punt 3) hoort ook hiér gehonoreerd te worden: een
+    // uitgesloten artikel dat nog in de actuele nieuws-JSON staat wordt
+    // 2×/dag idempotent hergenereerd, en zonder deze regel zou dat de
+    // noindex van backend/verberg-uitgesloten.js er stilletjes weer
+    // afhalen. Voor gearchiveerde artikelen verandert dit niets.
+    let uitgesloten = new Set();
+    try {
+        const u = JSON.parse(fs.readFileSync(path.join(root, 'data/uitgesloten-artikelen.json'), 'utf8'));
+        uitgesloten = new Set(Object.keys(u.artikelen || {}));
+    } catch { /* geen lijst = niets uitgesloten */ }
     const burenIndex = bouwBurenIndex(manifest);
     for (const [id, perTaal, slugsPerTaal] of teSchrijven) {
         for (const lang of Object.keys(slugsPerTaal)) {
@@ -580,7 +590,11 @@ function main() {
             }
             const bestand = path.join(dir, naam);
             const bestondAl = fs.existsSync(bestand);
-            fs.writeFileSync(bestand, paginaHtml(perTaal[lang], lang, slugsPerTaal, manifest, burenIndex));
+            let html = paginaHtml(perTaal[lang], lang, slugsPerTaal, manifest, burenIndex);
+            if (uitgesloten.has(String(id))) {
+                html = html.replace('</title>', '</title>\n    <meta name="robots" content="noindex, follow">');
+            }
+            fs.writeFileSync(bestand, html);
             geschreven++;
             if (!bestondAl) nieuw++;
         }

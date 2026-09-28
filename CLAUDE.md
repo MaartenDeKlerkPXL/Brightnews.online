@@ -106,8 +106,14 @@ hard-refresh of privévenster; CSS/JS-wijzigingen zie je anders niet.
   eigen bevindingen — er is bewust nog niets gewijzigd.**
   Onderaan datzelfde bestand schrijft de nachtelijke controle zijn dagelijkse
   bevindingen weg.
-- `backend/nachtelijke-beoordeling-prompt.md` — opdracht voor de agent die elke
-  nacht om 04:00 Amsterdamse tijd de verse artikelen nakijkt op bright-waardigheid.
+- `backend/nachtelijke-beoordeling-prompt.md` — de opdracht voor de nachtelijke
+  controle op bright-waardigheid. **Draait sinds 2026-09-28 als GitHub Action**
+  (`.github/workflows/nachtelijke-beoordeling.yml`, 02:00 UTC = 04:00
+  Amsterdam in de zomer), aangestuurd door
+  `backend/nachtelijke-beoordeling.js`. Daarvóór hing hij aan een planning
+  buiten de repo en lag hij van 18 t/m 27 september stil zonder dat iemand het
+  zag — vandaar dat hij nu in de repo staat. Gedrag wijzigen doe je in het
+  prompt-bestand, niet in het script.
 - `backend/controleer-reservefotos.js` — telt of er nog genoeg reservefoto's
   zijn voor de homepage; draait mee in de nachtelijke controle (stap 7). Het
   logboek staat in `backend/reservefotos-log.md` en blijft stil zolang er
