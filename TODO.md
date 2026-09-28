@@ -1024,8 +1024,8 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   een drempel, geen slot. Wie hem echt wil omzeilen kan dat, en die had toch
   niet betaald. *(Erik: het raakt de premium-logica.)*
 
-- [ ] **60. Een welkomstreeks na registratie — gebouwd, wacht op twee
-  handelingen van Maarten (2026-09-28).** *(Besluit Maarten 2026-09-27: doen.)*
+- [x] **60. Een welkomstreeks na registratie — draait live (2026-09-28).**
+  *(Besluit Maarten 2026-09-27: doen.)*
 
   **Review + droogloop geslaagd (Erik, 2026-09-28 avond):** de Supabase-kant
   staat live (tabellen dicht voor anon — geverifieerd; `meld_af` lekt niets en
@@ -1071,6 +1071,28 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
      naar een `security definer`-functie die precies één ding kan: die ene rij
      op afgemeld zetten. Hij geeft niets terug waaruit je kunt afleiden of een
      token bestaat, dus je kunt er geen accounts mee aftasten.
+
+  ### ✅ Live sinds 2026-09-28, 21:21
+
+  Resend staat op `brightnews.online` in de EU-regio (Ireland). De DNS bij
+  **Strato** kostte de meeste tijd; voor de volgende keer, want dit komt terug:
+
+  - Resend vroeg **geen MX-record** ("Enable Receiving" staat uit), alleen één
+    TXT en twee CNAME's. De mailbox `info@brightnews.online` hoefde dus niet
+    te worden aangeraakt — en dat is maar goed ook, want die draait op
+    Strato's eigen MX (`smtp.rzone.de`).
+  - Strato plakt het domein zelf achter het **voorvoegsel**. Dus
+    `resend._domainkey`, niet `resend._domainkey.brightnews.online`.
+  - De DKIM-sleutel staat in Resend **afgekapt** op het scherm, met een
+    letterlijke `[...]` in het midden. Alleen de kopieerknop geeft de
+    volledige 218 tekens. Overtypen werkt gegarandeerd niet.
+  - Strato's `STRATO SPF-regel` en `STRATO DMARC` blijven staan zoals ze
+    stonden. Resend regelt SPF via de `send`-CNAME; zet je de Strato-SPF uit,
+    dan breek je de gewone mail.
+
+  **Uitkomst:** `📬 5 verstuurd, 0 overgeslagen, 0 mislukt` — en de mail kwam
+  in de **inbox** terecht, niet in de spam. Bij een domein van een uur oud is
+  dat niet vanzelfsprekend.
 
   **Wat jij nog moet doen, Maarten — en dit vraagt geen Erik:**
 
