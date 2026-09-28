@@ -35,7 +35,10 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          # 22, niet 20: supabase-js (realtime) vereist native WebSocket en
+          # createClient crashte op Node 20 zodra de service-key aanwezig was
+          # — zelfde gotcha als in update-news.yml gedocumenteerd staat.
+          node-version: '22'
           cache: 'npm'
 
       - run: npm ci
