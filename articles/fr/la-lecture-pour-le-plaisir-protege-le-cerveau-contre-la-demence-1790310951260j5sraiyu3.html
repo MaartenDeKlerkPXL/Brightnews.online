@@ -15,6 +15,16 @@
     <link rel="icon" type="image/png" href="/assets/brightnews-logo-faviconv5.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Zonder deze regel mag Google alleen een miniatuur tonen, en een
+         Discover-kaart is juist een grote beeldkaart (punt 51). Bewust
+         alleen vooruit: het archief wordt niet opnieuw gegenereerd,
+         want Discover toont vrijwel alleen vers nieuws. -->
+    <meta name="robots" content="max-image-preview:large">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Français)" href="/feed-fr.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Nederlands)" href="/feed-nl.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (English)" href="/feed-en.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Deutsch)" href="/feed-de.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Español)" href="/feed-es.xml">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://www.googletagmanager.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
     <meta name="description" content="Étude Cambridge : la lecture pour le plaisir améliore la mémoire et réduit le risque de démence, à tout âge.">
     <title>La lecture pour le plaisir protège le cerveau contre la démence | BrightNews</title>
@@ -35,6 +45,7 @@
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/components.css">
     <link rel="stylesheet" href="/css/pages/artikel.css">
+    <link rel="stylesheet" href="/css/pages/categorie.css">
     <meta name="theme-color" content="var(--bright-green)">
     <script src="/js/vendor/supabase-js-2.112.4.js" defer></script>
     <script src="/js/supabase-init.js" defer></script>
@@ -163,6 +174,7 @@
                     <li><a href="/articles/fr/des-ethiopiens-plantent-des-millions-d-arbres-via-la-green-legacy-initiative-1790310928691595wrcopq.html">Des Éthiopiens plantent des millions d&#39;arbres via la Green Legacy Initiative</a></li>
                     <li><a href="/articles/fr/une-camera-en-direct-filme-les-animaux-sauvages-a-un-point-d-eau-isole-a-watarrk-1790310899189q5vbeymu0.html">Une caméra en direct filme les animaux sauvages à un point d&#39;eau isolé à Watarrka</a></li>
             </ul>
+            <p class="meer-categorie"><a href="/categories/fr/sante.html">Bonnes nouvelles sur Santé</a></p>
         </div>
     </nav>
 </main>

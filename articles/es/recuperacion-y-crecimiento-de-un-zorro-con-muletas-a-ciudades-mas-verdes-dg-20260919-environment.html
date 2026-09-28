@@ -15,6 +15,16 @@
     <link rel="icon" type="image/png" href="/assets/brightnews-logo-faviconv5.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Zonder deze regel mag Google alleen een miniatuur tonen, en een
+         Discover-kaart is juist een grote beeldkaart (punt 51). Bewust
+         alleen vooruit: het archief wordt niet opnieuw gegenereerd,
+         want Discover toont vrijwel alleen vers nieuws. -->
+    <meta name="robots" content="max-image-preview:large">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Español)" href="/feed-es.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Nederlands)" href="/feed-nl.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (English)" href="/feed-en.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Deutsch)" href="/feed-de.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Français)" href="/feed-fr.xml">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://www.googletagmanager.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
     <meta name="description" content="El zorro Chance aprende a nadar, los cangrejos se recuperan y las ciudades se vuelven más verdes: las noticias positivas sobre la naturaleza de estos días ">
     <title>Recuperación y crecimiento: de un zorro con muletas a ciudades más verdes | BrightNews</title>
@@ -35,6 +45,7 @@
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/components.css">
     <link rel="stylesheet" href="/css/pages/artikel.css">
+    <link rel="stylesheet" href="/css/pages/categorie.css">
     <meta name="theme-color" content="var(--bright-green)">
     <script src="/js/vendor/supabase-js-2.112.4.js" defer></script>
     <script src="/js/supabase-init.js" defer></script>
@@ -172,6 +183,7 @@
                     <li><a href="/articles/es/el-zorro-chance-se-recupera-gracias-a-lecciones-de-natacion-1789878990544agz0dwnv9.html">El zorro Chance se recupera gracias a lecciones de natación</a></li>
                     <li><a href="/articles/es/nueva-york-devuelve-a-park-avenue-su-caracter-de-parque-verde-y-carril-bici-1789878960689vhpw1qp4x.html">Nueva York devuelve a Park Avenue su carácter de parque verde y carril bici</a></li>
             </ul>
+            <p class="meer-categorie"><a href="/categories/es/medio-ambiente.html">Buenas noticias sobre Medio ambiente</a></p>
         </div>
     </nav>
 </main>

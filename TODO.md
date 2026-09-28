@@ -1,11 +1,12 @@
 # TODO BrightNews
 
-> **Stand 2026-09-27, avond.** Maarten heeft alles afgewerkt wat alleen hij
-> kon doen. De GA4-API staat aan, de verhuizing naar Supabase is nagemeten en
-> compleet, en de drie social-kanalen bestaan nu écht. Eriks
-> `SESSIEVERSLAG-VOOR-MAARTEN.md` is gelezen en verwijderd. Wat er nog op
-> Maartens naam staat is één ding: wachten op de bedrijfsverificatie van
-> LinkedIn. **De bal ligt bij Erik** — zie zijn instap hieronder.
+> **Stand 2026-09-28, avond.** Vijf pull requests in één dag: #11 t/m #14 zijn
+> gemerged, #15 staat open. Daarmee zijn **punt 3, 46, 47, 50, 51, 53.1, 54
+> (techniek), 55, 57, 60 en 61 afgehandeld.** De welkomstreeks draait live —
+> vijf mails verstuurd, nul mislukt, en in de inbox in plaats van de spam.
+> Punt 59 (de metered paywall) is gebouwd en de Supabase-kant staat er al;
+> alleen de review ontbreekt nog. Wat op Maartens naam staat is nog steeds
+> één ding: wachten op de bedrijfsverificatie van LinkedIn (punt 45).
 
 Werklijst, opgesteld 2026-09-10 na een ronde langs de projectdocumenten, de
 open pull requests en een paar eigen metingen op de site. Gesorteerd op
@@ -22,25 +23,65 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
 
 ---
 
-## Voor Erik — je instap (bijgewerkt 2026-09-27, avond)
+## Voor Erik — je instap (bijgewerkt 2026-09-28, avond)
 
-**Begin bij [PR #10](https://github.com/MaartenDeKlerkPXL/Brightnews.online/pull/10).**
-Klein en schoon te mergen: X gaat uit de postfabriek. Sinds 06-02-2026 rekent
-X per post af en een post mét link kost $0,20 — onze posts bevatten er altijd
-een, dus ~$73 per jaar voor een kanaal dat niet eens als hoofdkanaal in
-`MARKETING-PLAN.md` staat. `KANALEN` gaat van vier naar drie en
-`marketing-prompt.md` is v2. De cockpit leest de kanalen uit de data en past
-zich vanzelf aan.
+**Begin bij [PR #15](https://github.com/MaartenDeKlerkPXL/Brightnews.online/pull/15).**
+Dat is het enige dat nog openstaat. Punt 59: de metered paywall. **Maarten
+heeft `supabase/metered-paywall-2026-09-28.sql` al gedraaid**, dus zodra jij
+mergt gaat hij meteen aan.
+
+De helft die ogen verdient is de SQL, want die kon hier niet getest worden —
+er staat geen Postgres of Docker op deze machine. Twee dingen in het
+bijzonder: of `lees_artikel()` als `security definer` niets teruggeeft wat een
+ánder aangaat, en of `count(distinct artikel_id)` per maand doet wat het moet.
+De front-end is wel getest, inclusief het geval dat de RPC ontbreekt.
 
 Daarna, op jouw naam:
 
 | | Wat | Sinds |
 |---|---|---|
 | **45** | **Meta-app bouwen — dit kan nu** | 26 sept |
-| **3** | De selectieprompt bijstellen op tien missers | 10 sept |
 | **43** | De privacyregel over feedback nalezen | 24 sept |
 | **26** | Anthropic auto-reload + wie de key houdt *(samen met Maarten)* | 19 sept |
-| **46** | **Nieuw:** van wie is de nachtelijke beoordeling? *(samen)* | 27 sept |
+| **48** | Het referral-systeem afmaken | 27 sept |
+| **49** | De nieuwsbrief *(de verzenddienst staat er nu, zie punt 60)* | 27 sept |
+| **56** | Search Console-termen terug in de selectieprompt | 27 sept |
+
+### Je vier review-fixes van 28 september — allemaal terecht
+
+Ze staan hier omdat ze precies het soort fout waren dat een auteur zelf niet
+ziet, en omdat de eerste twee een patroon blootleggen.
+
+1. **`verberg-uitgesloten.js` testte op een wíllekeurige robots-meta.** PR #11
+   gaf het artikelsjabloon een eigen robots-regel (`max-image-preview`), dus
+   na die merge zag mijn script die regel staan en sloeg hij de noindex over.
+   **Twee PR's die los van elkaar zijn gebouwd en elkaar pas bij de merge in
+   de weg lopen** — precies wat een reviewer wel ziet en een auteur niet.
+2. **`generate-articles.js` hergenereert 2×/dag** en haalde de noindex er
+   stilletjes weer af. Ik had aangenomen dat de vijf missers allemaal
+   gearchiveerd waren; dat was toevallig zo, maar het is geen garantie.
+3. **Node 20 → 22 in `welkomstreeks.yml`.** `supabase-js` heeft native
+   WebSocket nodig; `createClient` crasht op 20 zodra de service-key er is. De
+   mailrun zou dus precies gebroken zijn op het moment dat hij écht iets ging
+   doen. Dit stond gedocumenteerd in `update-news.yml` en ik heb het gemist.
+4. **`fetch-depth: 0` in `nachtelijke-beoordeling.yml`**, anders strandt de
+   `git pull --rebase` in de push-lus zodra master is opgeschoven.
+
+En je hebt de nieuwssitemap de uitsluitlijst laten honoreren — een artikel met
+noindex dat tegelijk bij Google News wordt aangemeld is een tegenstrijdig
+signaal.
+
+**Nagetrokken op 28 september, avond** (want een fix die niemand controleert
+is een aanname): 25 pagina's staan op noindex, 0 zonder. Nul uitgesloten
+artikelen in `sitemap.xml` (3.213 URL's) én in `news-sitemap.xml` (25 URL's).
+`generate-articles.js` opnieuw gedraaid en de noindex bleef staan — jouw fix
+doet wat hij belooft. `verberg-uitgesloten.js` is nog idempotent (0 gewijzigd,
+25 stonden er al op). `npx eslint .` → 0 errors.
+
+Bij diezelfde controleronde bleek dat **de 750 actuele artikelpagina's het
+sjabloon uit punt 51 nog niet hadden** — geen Discover-tag, geen
+RSS-autodiscovery. Ze zijn nu hergenereerd; de nachtelijke Action had dat
+vanzelf gedaan, maar dan pas om 0:00 UTC.
 
 ### Punt 45: de Meta-kant is vrij
 
@@ -60,6 +101,10 @@ Wat er gebouwd moet worden staat verderop bij punt 45 uitgeschreven. Eén ding
 daaruit is niet optioneel: **een publicatielog**, anders plaatst de Action bij
 elke run dezelfde post opnieuw.
 
+**Nieuw sinds 28 september:** de cockpit maakt nu beeldkaarten voor Instagram
+(punt 53.1). Zodra jij de publicatielus bouwt kan dezelfde tekenfunctie naar
+een server-side canvas — dan hoeft er niemand meer handmatig te downloaden.
+
 ### Punt 45: LinkedIn loopt, niets te doen
 
 De bedrijfspagina staat er (`linkedin.com/company/brightnewsonline`) en de
@@ -71,21 +116,20 @@ Twee dingen die tijd kostten en die je moet weten als je zelf aan die app
 komt: het product moet het **enige** product op een app zijn, en de
 paginakoppeling moet **per app** geverifieerd worden.
 
-### Wat er op 27 september nog meer op master is geland
+### Wat er op 28 september op master is geland
 
-Drie kapotte footerlinks, gevonden bij het omzetten naar de nieuwe kanalen:
-935 archiefpagina's wezen naar het Facebook-profiel van een onbekende, 385
-naar een LinkedIn-bedrijfspagina die 404 gaf, en de rest naar persoonlijke
-profielen. Alle 2.248 bestanden zijn omgezet, het artikelsjabloon mee,
-`CACHE_NAME` op v36. **Je cachebump-bewaker draaide daarbij groen mee** — hij
-is dus in het echt getest en doet wat hij moet doen.
+Vijf PR's. Kort, met het puntnummer erbij zodat je weet waar je moet kijken:
 
-**Wat er sinds 20 september op master is geland** (zodat je niet hoeft te
-graven): de artikelpagina's linken nu naar elkaar en het archief staat weer op
-één sjabloon, er is een ontwerpsysteem met tokens, een merklettertype
-(Schibsted Grotesk, zelf gehost), een feedbackformulier op `/feedback.html` met
-een eigen Supabase-tabel, en de 404 heeft navigatie en footer gekregen. Niets
-daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
+| PR | Punten | Wat |
+|---|---|---|
+| #11 | 47, 50, 51, 54, 55 | RSS-feeds, IndexNow, Discover-tag, nieuwssitemap, 30 categoriepagina's |
+| #12 | 46 | de nachtelijke beoordeling als GitHub Action |
+| #13 | 3 | koopjesfilter op de bron-URL + vijf missers op noindex |
+| #14 | 53.1, 60, 61 | Instagram-beeldkaarten en de welkomstreeks |
+| #15 | 59 | metered paywall — **staat open, wacht op jou** |
+
+De welkomstreeks draait sindsdien elke ochtend om 09:10. Resend is ingericht
+op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
 
 ---
 
@@ -173,6 +217,28 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   `data/uitgesloten-artikelen.json` met per artikel de reden;
   `backend/verberg-uitgesloten.js` zet de meta erop (idempotent) en
   `backend/generate-sitemap.js` slaat ze over. Sitemap: 3208 → 3183 URL's.
+
+  **Review door Erik, 2026-09-28 — twee fouten die ik zelf niet zag:**
+
+  1. `verberg-uitgesloten.js` testte op een *willekeurige* robots-meta.
+     PR #11 (punt 51) gaf het artikelsjabloon zelf een robots-regel met
+     `max-image-preview`, dus na die merge zag mijn script die staan en sloeg
+     hij de noindex over. **Twee PR's die los van elkaar gebouwd zijn en
+     elkaar pas bij de merge in de weg lopen.** Nu wordt specifiek op
+     `noindex` getest; twee robots-meta's naast elkaar zijn geldig en Google
+     combineert ze.
+  2. `generate-articles.js` hergenereert 2×/dag en haalde de noindex er
+     stilletjes weer af. Die honoreert nu de uitsluitlijst zelf. Ik was
+     ervan uitgegaan dat de vijf missers allemaal gearchiveerd waren — dat
+     was toevallig zo, maar het is geen garantie.
+
+  Erik liet daarnaast de **nieuwssitemap** de lijst honoreren: een artikel met
+  noindex dat tegelijk bij Google News wordt aangemeld is een tegenstrijdig
+  signaal.
+
+  **Nagetrokken 2026-09-28:** 25 pagina's op noindex, 0 zonder; 0 uitgesloten
+  artikelen in `sitemap.xml` én `news-sitemap.xml`; `generate-articles.js`
+  opnieuw gedraaid en de noindex bleef staan.
 
   **Wat bewust niet is gebeurd:** een nieuw uitsluitingslabel in
   `backend/selectie-prompt.md`. De afwijslijst noemt kortingsacties al
@@ -1003,6 +1069,13 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
 
 - [ ] **59. De paywall is hard — overweeg een metered model.**
   *(Besluit Maarten 2026-09-27: doen, aantal later bepalen — 5 of 10.)*
+
+  > **Gebouwd, staat in [PR #15](https://github.com/MaartenDeKlerkPXL/Brightnews.online/pull/15)
+  > (2026-09-28).** Het aantal staat op **5**. Maarten heeft
+  > `supabase/metered-paywall-2026-09-28.sql` al gedraaid, dus zodra die PR
+  > gemerged is gaat het meteen aan. De volledige uitwerking staat in de PR
+  > en in de TODO op die branch; hieronder blijft de oorspronkelijke analyse
+  > staan. Eén aanname daaruit bleek niet te kloppen — zie de PR.
 
   Nagekeken in `index.js`: een premium-artikel is volledig dicht tenzij je
   betaalt. Geen gratis artikelen, geen teller.
