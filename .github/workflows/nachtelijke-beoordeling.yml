@@ -30,6 +30,12 @@ jobs:
     steps:
       - name: 📂 Code ophalen
         uses: actions/checkout@v4
+        with:
+          # Volledige historie: de rebase-retry in de push-lus heeft een
+          # merge-base nodig, en een shallow clone (diepte 1) heeft die niet
+          # zodra master intussen is opgeschoven. Zelfde keuze als in
+          # update-news.yml.
+          fetch-depth: 0
 
       - name: ⏩ Doorspoelen naar de actuele branch-kop
         run: |
