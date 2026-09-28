@@ -101,8 +101,24 @@ jobs:
           GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
         run: node backend/generate-rapport.js
 
-      - name: 🗺️ Sitemap & robots.txt genereren
+      # Ná generate-articles.js: de kaarten linken naar de statische
+      # artikelpagina's, dus articles/manifest.json moet actueel zijn.
+      # Vóór de sitemap, want die leest de map categories/ uit.
+      - name: 🗂️ Categoriepagina's genereren
+        run: node backend/generate-categorieen.js
+
+      # Ná generate-articles.js: de feeds linken naar de statische pagina's.
+      - name: 📡 RSS-feeds genereren
+        run: node backend/generate-rss.js
+
+      - name: 🗺️ Sitemap, nieuwssitemap & robots.txt genereren
         run: node backend/generate-sitemap.js
+
+      # Leest news-sitemap.xml uit, dus ná de stap hierboven. Een extraatje:
+      # valt de dienst uit, dan mag de run daar niet op stuklopen.
+      - name: 📨 Verse URL's melden bij IndexNow
+        continue-on-error: true
+        run: node backend/indexnow.js
 
       - name: 💾 Wijzigingen opslaan
         run: |
@@ -114,7 +130,7 @@ jobs:
           # nooit per ongeluk publiek meegecommit wordt.
           # marketing-posts en rapporten staan sinds 2026-09-26 in Supabase
           # (RLS, team-only) — bedrijfscijfers horen niet in een publieke repo.
-          git add data/news_*.json data/seen_links.json data/last_run.json data/selectie-log.json data/digest-log.json data/selectie-archief.jsonl data/marketing-feed.json articles themas sitemap.xml robots.txt
+          git add data/news_*.json data/seen_links.json data/last_run.json data/selectie-log.json data/digest-log.json data/selectie-archief.jsonl data/marketing-feed.json articles themas categories sitemap.xml news-sitemap.xml robots.txt feed-*.xml
 
           # Controleer of er echt iets veranderd is voor we committen
           if git diff --quiet && git diff --staged --quiet; then

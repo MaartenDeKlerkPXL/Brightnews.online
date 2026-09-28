@@ -74,6 +74,26 @@ function themaUrls() {
   return urls;
 }
 
+// Categoriepagina's (punt 55, 2026-09-27): zes categorieën × vijf talen.
+// Ze worden ook vanaf elke artikelpagina gelinkt, maar horen hier net zo goed
+// in — het zijn ingangen, geen bijzaak, vandaar priority 0.8.
+// HOUD IN SYNC met backend/generate-categorieen.js: dezelfde zes namen en
+// dezelfde slug (de vertaalde categorienaam).
+function categorieUrls() {
+  const pad = path.join(__dirname, '..', 'categories');
+  if (!fs.existsSync(pad)) return [];
+  const urls = [];
+  for (const lang of fs.readdirSync(pad)) {
+    const map = path.join(pad, lang);
+    if (!fs.statSync(map).isDirectory()) continue;
+    for (const bestand of fs.readdirSync(map)) {
+      if (!bestand.endsWith('.html')) continue;
+      urls.push({ loc: `/categories/${lang}/${bestand}`, priority: '0.8', lastmod: LAST_MODIFIED });
+    }
+  }
+  return urls;
+}
+
 // Vangnet: slugs en ids zijn nu per constructie XML-veilig ([a-z0-9-]), maar
 // die garantie staat in twee andere bestanden — als die ooit verschuiven mag
 // de sitemap niet stilletjes ongeldig worden.
@@ -86,6 +106,7 @@ function generateSitemap() {
     ...PAGES.map(p => ({ ...p, lastmod: LAST_MODIFIED })),
     ...artikelUrls(),
     ...themaUrls(),
+    ...categorieUrls(),
   ];
   const urls = alles.map(({ loc, priority, lastmod }) => `  <url>
     <loc>${SITE_URL}${xmlEscape(loc)}</loc>
@@ -100,15 +121,80 @@ ${urls}
 `;
 }
 
+// Nieuwssitemap (punt 54, 2026-09-27). Google News wil naast de gewone
+// sitemap een aparte lijst met alléén de artikelen van de afgelopen 48 uur,
+// in het news:-formaat met publicatiedatum en taal. Dat is het verschil
+// tussen "komt ooit langs" en "binnen een uur opgehaald", en bij nieuws is
+// een dag te laat hetzelfde als niet gepubliceerd.
+//
+// Twee harde regels van Google, en die zitten hieronder ingebouwd: niets
+// ouder dan twee dagen, en maximaal 1.000 URL's.
+const NIEUWS_VENSTER_UREN = 48;
+const NIEUWS_MAX = 1000;
+const TAALNAAM = { nl: 'nl', en: 'en', de: 'de', fr: 'fr', es: 'es' };
+
+function generateNewsSitemap() {
+  const manifestPad = path.join(__dirname, '..', 'articles', 'manifest.json');
+  if (!fs.existsSync(manifestPad)) return null;
+  const manifest = JSON.parse(fs.readFileSync(manifestPad, 'utf8'));
+  const grens = Date.now() - NIEUWS_VENSTER_UREN * 3600 * 1000;
+  // Zelfde uitsluitlijst als de gewone sitemap (punt 3): een artikel met
+  // noindex aanmelden bij Google News zou een tegenstrijdig signaal zijn.
+  const uitgesloten = uitgeslotenIds();
+
+  const items = [];
+  for (const [id, entry] of Object.entries(manifest.articles || {})) {
+    if (uitgesloten.has(id)) continue;
+    const tijd = entry.date ? Date.parse(entry.date) : NaN;
+    if (!Number.isFinite(tijd) || tijd < grens) continue;
+    for (const [lang, slug] of Object.entries(entry.slugs || {})) {
+      const titel = entry.titles?.[lang];
+      // Zonder titel geen geldig news:title, en dan liever geen regel dan
+      // een ongeldige: één fout item laat Google de hele sitemap afwijzen.
+      if (!titel || !TAALNAAM[lang]) continue;
+      items.push({ loc: `/articles/${lang}/${slug}-${id}.html`, lang, titel, datum: new Date(tijd).toISOString() });
+    }
+  }
+  items.sort((a, b) => b.datum.localeCompare(a.datum));
+
+  const urls = items.slice(0, NIEUWS_MAX).map(i => `  <url>
+    <loc>${SITE_URL}${xmlEscape(i.loc)}</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>${TAALNAAM[i.lang]}</news:language>
+      </news:publication>
+      <news:publication_date>${i.datum}</news:publication_date>
+      <news:title>${xmlEscape(i.titel)}</news:title>
+    </news:news>
+  </url>`).join('\n');
+
+  return {
+    aantal: Math.min(items.length, NIEUWS_MAX),
+    xml: `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+${urls}
+</urlset>
+`,
+  };
+}
+
 function generateRobotsTxt() {
   return `User-agent: *
 Allow: /
 
 Sitemap: ${SITE_URL}/sitemap.xml
+Sitemap: ${SITE_URL}/news-sitemap.xml
 `;
 }
 
 const root = path.join(__dirname, '..');
 fs.writeFileSync(path.join(root, 'sitemap.xml'), generateSitemap());
 fs.writeFileSync(path.join(root, 'robots.txt'), generateRobotsTxt());
-console.log('sitemap.xml en robots.txt gegenereerd.');
+const nieuws = generateNewsSitemap();
+if (nieuws) {
+  fs.writeFileSync(path.join(root, 'news-sitemap.xml'), nieuws.xml);
+  console.log(`sitemap.xml, news-sitemap.xml (${nieuws.aantal} verse URL's) en robots.txt gegenereerd.`);
+} else {
+  console.log('sitemap.xml en robots.txt gegenereerd (geen manifest, dus geen nieuwssitemap).');
+}

@@ -1,18 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <!-- Google tag (gtag.js) — laadt pas na cookietoestemming, zie acceptCookies()/checkCookies() in index.js -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied',
-            'ad_storage': 'denied',
-            'ad_user_data': 'denied',
-            'ad_personalization': 'denied'
-        });
-    </script>
-    <link rel="icon" type="image/png" href="assets/brightnews-logo-faviconv5.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="max-image-preview:large">
@@ -22,76 +10,32 @@
     <link rel="alternate" type="application/rss+xml" title="BrightNews (Français)" href="/feed-fr.xml">
     <link rel="alternate" type="application/rss+xml" title="BrightNews (Español)" href="/feed-es.xml">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://www.googletagmanager.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
-    <title data-i18n="terms_page_title">Algemene Voorwaarden | BrightNews</title>
-    <link rel="canonical" href="https://brightnews.online/algemeene-voorwaarden.html">
-    <meta name="description" content="De algemene voorwaarden van BrightNews: abonnementen, betalingen en herroepingsrecht.">
-    <meta property="og:title" content="Algemene Voorwaarden | BrightNews">
-    <meta property="og:description" content="De algemene voorwaarden van BrightNews: abonnementen, betalingen en herroepingsrecht.">
-    <meta property="og:image" content="https://brightnews.online/assets/brightnews-logo-vierkant.png">
-    <meta property="og:url" content="https://brightnews.online/algemeene-voorwaarden.html">
+    <meta name="description" content="Elke dag een verse selectie positief nieuws over Tech uit de hele wereld.">
+    <title>Goed nieuws over Tech | BrightNews</title>
+    <link rel="canonical" href="https://brightnews.online/categories/nl/tech.html">
+    <link rel="alternate" hreflang="nl" href="https://brightnews.online/categories/nl/tech.html">
+    <link rel="alternate" hreflang="en" href="https://brightnews.online/categories/en/tech.html">
+    <link rel="alternate" hreflang="de" href="https://brightnews.online/categories/de/tech.html">
+    <link rel="alternate" hreflang="fr" href="https://brightnews.online/categories/fr/tech.html">
+    <link rel="alternate" hreflang="es" href="https://brightnews.online/categories/es/tech.html">
+    <link rel="alternate" hreflang="x-default" href="https://brightnews.online/categories/en/tech.html">
+    <meta property="og:title" content="Goed nieuws over Tech">
+    <meta property="og:description" content="Elke dag een verse selectie positief nieuws over Tech uit de hele wereld.">
+    <meta property="og:url" content="https://brightnews.online/categories/nl/tech.html">
     <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#32CD32">
-    <style>
-        body {
-            font-family: var(--font-tekst);
-            line-height: 1.6;
-            color: var(--dark-text);
-            margin: 0;
-            padding: 0;
-            background-color: var(--light-bg);
-        }
-
-        main {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1.5rem;
-            display: grid;
-            gap: 2rem;
-            background-color: var(--light-bg);
-        }
-
-        section {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-
-        h1, h2 {
-            color: var(--dark-text) !important;
-        }
-
-        ul {
-            padding-left: 1.2rem;
-        }
-
-
-        .back-link {
-            display: inline-block;
-            margin-bottom: 1rem;
-            color: var(--dark-text);
-            text-decoration: none;
-            font-weight: bold;
-        }
-       div.terms-header {
-            background: white;
-            padding: 2rem 1rem;
-            text-align: center;
-            margin-top: 0;
-        }
-        header{
-            margin-bottom: 0 !important;
-            border-bottom: none !important;
-        }
-    </style>
+    <meta property="og:image" content="https://brightnews.online/assets/brightnews-logo.png">
+    <link rel="icon" type="image/png" href="/assets/brightnews-logo-faviconv5.png">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <!-- .grid-container en .news-card staan in de paginastijl van de
+         homepage; deze pagina gebruikt dezelfde kaarten. -->
+    <link rel="stylesheet" href="/css/pages/index.css">
+    <link rel="stylesheet" href="/css/pages/categorie.css">
+    <script src="/data/translations.js" defer></script>
+    <script src="/js/main.js" defer></script>
 </head>
 <body>
 <a href="#main-content" class="skip-link" data-i18n="skip_to_content">Ga naar hoofdinhoud</a>
-
 <header>
     <nav class="container">
         <div class="nav-left-group">
@@ -100,7 +44,7 @@
                     <span class="taal-vlag">🇺🇸</span><span class="taal-naam">English</span><span class="taal-code" aria-hidden="true">EN</span> <span class="arrow">▼</span>
                 </summary>
                 <div class="dropdown-content">
-                    <a href="#" onclick="wisselTaal('en', '🇺🇸 English', event)"><span class="taal-vlag">🇺🇸</span> English</a>
+                        <a href="#" onclick="wisselTaal('en', '🇺🇸 English', event)"><span class="taal-vlag">🇺🇸</span> English</a>
                     <a href="#" onclick="wisselTaal('nl', '🇳🇱 Nederlands', event)"><span class="taal-vlag">🇳🇱</span> Nederlands</a>
                     <a href="#" onclick="wisselTaal('de', '🇩🇪 Deutsch', event)"><span class="taal-vlag">🇩🇪</span> Deutsch</a>
                     <a href="#" onclick="wisselTaal('fr', '🇫🇷 Français', event)"><span class="taal-vlag">🇫🇷</span> Français</a>
@@ -108,19 +52,19 @@
                 </div>
             </details>
 
-            <!--            <a href="index.html" class="logo">Bright<span>News</span></a>-->
+            <!--            <a href="/index.html" class="logo">Bright<span>News</span></a>-->
 
-            <a href="index.html"><img src="assets/brightnews-logo.png" height="94" width="463" class="nav-logo" alt="BrightNews"/></a></div>
+            <a href="/index.html"><img src="/assets/brightnews-logo.png" height="94" width="463" class="nav-logo" alt="BrightNews"/></a></div>
         <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu openen" data-i18n-aria-label="menu_open">
             <span></span><span></span><span></span>
         </button>
         <ul class="nav-links" id="mobileMenu">
-            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
-            <li><a href="over-ons.html" data-i18n="nav_about">Over Ons</a></li>
-            <li><a href="abonnementen.html" data-i18n="nav_premium">Abonnementen</a></li>
+            <li><a href="/index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="/over-ons.html" data-i18n="nav_about">Over Ons</a></li>
+            <li><a href="/abonnementen.html" data-i18n="nav_premium">Abonnementen</a></li>
 
             <li class="nav-profile-desktop">
-                <a href="profiel.html" class="profile-icon" aria-label="Profiel" data-i18n-aria-label="nav_profile">
+                <a href="/profiel.html" class="profile-icon" aria-label="Profiel" data-i18n-aria-label="nav_profile">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                         <circle cx="12" cy="7" r="4"></circle>
@@ -129,7 +73,7 @@
             </li>
 
             <li class="nav-profile-mobile">
-                <a href="profiel.html" class="profile-link-text">
+                <a href="/profiel.html" class="profile-link-text">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                         <circle cx="12" cy="7" r="4"></circle>
@@ -141,49 +85,69 @@
 
     </nav>
 </header>
+<main id="main-content" class="container categorie-pagina">
+    <h1>Goed nieuws over Tech</h1>
+    <p class="categorie-intro">Elke dag een verse selectie positief nieuws over Tech uit de hele wereld.</p>
 
-<div class="terms-header">
-    <h1 data-i18n="terms_title">Onze Afspraken ✨</h1>
-    <p data-i18n="terms_subtitle">Helderheid en positiviteit in alles wat we doen.</p>
-</div>
+    <div class="grid-container">
+            <article class="news-card">
+                <a href="/articles/nl/drone-training-uit-zuid-korea-voorkomt-doden-bij-overstroming-mozambique-1790014168286wv6pmjzvd.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/A-Mozambique-pilot-learns-to-pilot-a-drone-from-an-experienced-South-Korean-operator-credit-African-Development-Bank-released.jpg" alt="Dronepiloot bestuurt drone boven overstroomd gebied in Marracuene, Mozambique" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/nl/drone-training-uit-zuid-korea-voorkomt-doden-bij-overstroming-mozambique-1790014168286wv6pmjzvd.html">Drone-training uit Zuid-Korea voorkomt doden bij overstroming Mozambique</a></h3>
+                    <p>In januari trof een van de zwaarste overstromingen in decennia het district Marracuene in Mozambique, nadat de rivier In…</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/nl/van-gebarentaal-tot-huizen-uit-houtafval-techniek-die-problemen-oplost-dg-20260916-tech.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Press-photo-©-ZeroBionic-2.jpg" alt="Van gebarentaal tot huizen uit houtafval: techniek die problemen oplost" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/nl/van-gebarentaal-tot-huizen-uit-houtafval-techniek-die-problemen-oplost-dg-20260916-tech.html">Van gebarentaal tot huizen uit houtafval: techniek die problemen oplost</a></h3>
+                    <p>Deze dagen laat de techniek zien dat slimme uitvindingen niet per se ingewikkeld hoeven te zijn om veel te betekenen. Va…</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/nl/3d-geprinte-biohomes-van-houtafval-krijgen-negen-pilotwoningen-in-maine-1789663690801lle8wvp1r.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aac15fdc744413f58419284_6aac15fca5f1bfacb0a31b05_maine-biohome-3d-printed-housing-featured.webp" alt="Een 3D-geprint BioHome3D-huis gemaakt van houtresten uit lokale zagerijen in Maine" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/nl/3d-geprinte-biohomes-van-houtafval-krijgen-negen-pilotwoningen-in-maine-1789663690801lle8wvp1r.html">3D-geprinte BioHomes van houtafval krijgen negen pilotwoningen in Maine</a></h3>
+                    <p>Onderzoekers van de University of Maine&#39;s Advanced Structures and Composites Center werken samen met de non-profit Penqu…</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/nl/eerste-zonne-ambulance-getest-in-kenia-1789577008130zs40adub8.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://www.optimistdaily.com/wp-content/uploads/Depositphotos_23987521_L-1024x681.jpg" alt="Solar ambulance tijdens test in landelijk Kenia" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/nl/eerste-zonne-ambulance-getest-in-kenia-1789577008130zs40adub8.html">Eerste Zonne-ambulance Getest In Kenia</a></h3>
+                    <p>’s Werelds eerste solar ambulance heeft zijn eerste real-world test succesvol doorlopen in landelijk Kenia. Meer details…</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/nl/robothand-vertaalt-lerarenstem-naar-gebarentaal-1789409398854ryk5ehwtu.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Press-photo-©-ZeroBionic-2.jpg" alt="Robotische hand die gebarentaal vormt in een klaslokaal in Kenia" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/nl/robothand-vertaalt-lerarenstem-naar-gebarentaal-1789409398854ryk5ehwtu.html">Robothand Vertaalt Lerarenstem naar Gebarentaal</a></h3>
+                    <p>In Kenia heeft de 22-jarige ondernemer Norah Kimathi met haar startup ZeroBionic een robotische hand ontwikkeld die de s…</p>
+                </div>
+            </article>
+    </div>
 
-<main id="main-content" tabindex="-1">
-    <section>
-        <h2 data-i18n="terms_sec1_title">1. Onze Missie</h2>
-        <p data-i18n="terms_sec1_text">BrightNews brengt uitsluitend positief nieuws. Onze AI-engine scant wereldwijd bronnen om jou meerdere keren per dag te voorzien van een verse dosis optimisme. Door gebruik te maken van onze site, ga je akkoord met deze voorwaarden.</p>
-    </section>
-
-    <section>
-        <h2 data-i18n="terms_sec2_title">2. Gebruik van de Content</h2>
-        <p data-i18n="terms_sec2_text">Alles wat je op BrightNews leest, is bedoeld voor persoonlijk gebruik. Het is niet toegestaan om onze artikelen of data commercieel te verspreiden zonder schriftelijke toestemming van Maarten de Klerk.</p>
-    </section>
-
-    <section>
-        <h2 data-i18n="terms_sec3_title">3. Abonnementen (Premium)</h2>
-        <ul>
-            <li data-i18n="terms_sec3_list1"><strong>Toegang:</strong> Premium artikelen zijn exclusief voor leden met een actief abonnement.</li>
-            <li data-i18n="terms_sec3_list2"><strong>Betaling:</strong> Je betaalt vooraf voor de gekozen periode.</li>
-            <li data-i18n="terms_sec3_list4"><strong>Automatische verlenging:</strong> Je abonnement verlengt automatisch per gekozen periode (maand of jaar), ook na een gratis proefperiode, totdat je opzegt. Je ontvangt de aankoopbevestiging en facturen van Stripe.</li>
-            <li data-i18n="terms_sec3_list3"><strong>Opzeggen:</strong> Je kunt je abonnement op elk moment stopzetten via je profielpagina. De toegang blijft behouden tot de einddatum van de factuurperiode.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2 data-i18n="terms_sec6_title">6. Terugbetalingen & Contact</h2>
-        <p data-i18n="terms_sec6_text">Vragen over betalingen of terugbetalingen? Stuur een e-mail naar info@BrightNews.online. Vermeld in je bericht het e-mailadres van je account en het adres/rekeningnummer waarop we het geld kunnen storten.</p>
-    </section>
-
-    <section>
-        <h2 data-i18n="terms_sec4_title">4. De 'Bright' AI-Garantie</h2>
-        <p data-i18n="terms_sec4_text">Onze AI doet zijn best om alleen de meest positieve verhalen te selecteren. Hoewel we streven naar 100% nauwkeurigheid en positiviteit, is de content gegenereerd door AI en kan deze soms een interpretatiefout bevatten. BrightNews is niet aansprakelijk voor de gevolgen van informatie in de artikelen.</p>
-    </section>
-
-    <section>
-        <h2 data-i18n="terms_sec5_title">5. Wijzigingen</h2>
-        <p  data-i18n="terms_sec5_text">De wereld verandert, en BrightNews ook. We kunnen deze voorwaarden af en toe aanpassen om ze nog helderder te maken. De nieuwste versie staat altijd hier.</p>
-    </section>
+    <nav class="categorie-andere" aria-label="Andere categorieën">
+        <h2>Andere categorieën</h2>
+        <div class="categorie-links">
+            <a href="/categories/nl/gezondheid.html">Gezondheid</a>
+            <a href="/categories/nl/wetenschap.html">Wetenschap</a>
+            <a href="/categories/nl/lifestyle.html">Lifestyle</a>
+            <a href="/categories/nl/milieu.html">Milieu</a>
+            <a href="/categories/nl/financien.html">Financiën</a>
+        </div>
+    </nav>
 </main>
-
 <footer class="main-footer">
   <div class="container footer-grid">
     <!-- Kolom 1: Over & Transparantie -->
@@ -201,11 +165,11 @@
     <div class="footer-links">
       <h3 data-i18n="footer_explore">Ontdekken</h3>
       <ul>
-        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
-        <li><a href="over-ons.html" data-i18n="footer_mission">Onze Missie</a></li>
-        <li><a href="abonnementen.html" data-i18n="footer_subs">Abonnementen</a></li>
+        <li><a href="/index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="/over-ons.html" data-i18n="footer_mission">Onze Missie</a></li>
+        <li><a href="/abonnementen.html" data-i18n="footer_subs">Abonnementen</a></li>
         <li><a href="#" onclick="openCustomerPortal(event)" data-i18n="footer_manage_sub">Abonnement beheren</a></li>
-        <li><a href="profiel.html" data-i18n="footer_acc">Mijn Account</a></li>
+        <li><a href="/profiel.html" data-i18n="footer_acc">Mijn Account</a></li>
       </ul>
     </div>
 
@@ -213,11 +177,11 @@
     <div class="footer-links">
       <h3 data-i18n="footer_community">Community</h3>
       <ul>
-        <li><a href="Privacy.html" data-i18n="footer_privacy">Privacybeleid</a></li>
-        <li><a href="algemeene-voorwaarden.html" data-i18n="footer_service_terms">Algemene Voorwaarden</a></li>
-        <li><a href="refunds.html" data-i18n="footer_refunds">Terugbetalingen</a></li>
-        <li><a href="Privacy.html#cookies-section" data-i18n="footer_cookies">Cookies</a></li>
-        <li><a href="contact.html" data-i18n="footer_support">Klantenservice</a></li>
+        <li><a href="/Privacy.html" data-i18n="footer_privacy">Privacybeleid</a></li>
+        <li><a href="/algemeene-voorwaarden.html" data-i18n="footer_service_terms">Algemene Voorwaarden</a></li>
+        <li><a href="/refunds.html" data-i18n="footer_refunds">Terugbetalingen</a></li>
+        <li><a href="/Privacy.html#cookies-section" data-i18n="footer_cookies">Cookies</a></li>
+        <li><a href="/contact.html" data-i18n="footer_support">Klantenservice</a></li>
       </ul>
     </div>
 
@@ -233,25 +197,8 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p data-i18n="footer_created_by">&copy; 2026 BrightNews • Alle rechten voorbehouden • Gemaakt met 💚 in Nederland</p>
+    <p data-i18n="footer_created_by">&amp;copy; 2026 BrightNews • Alle rechten voorbehouden • Gemaakt met 💚 in Nederland</p>
   </div>
 </footer>
-
-<script src="js/betaal-config.js" defer></script>
-    <script src="data/translations.js" defer></script>
-<script src="index.js" defer></script>
-<script>
-    function toggleMobileMenu() {
-        const menu = document.getElementById('mobileMenu');
-        const hamburger = document.querySelector('.hamburger');
-
-        if (menu) {
-            menu.classList.toggle('active');
-            console.log("Menu status:", menu.classList.contains('active') ? "Open" : "Dicht");
-        } else {
-            console.error("Fout: Element #mobileMenu niet gevonden!");
-        }
-    }
-</script>
 </body>
 </html>

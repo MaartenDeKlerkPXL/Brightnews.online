@@ -1,96 +1,41 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="es">
 <head>
-    <!-- Google tag (gtag.js) — laadt pas na cookietoestemming, zie acceptCookies()/checkCookies() in index.js -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied',
-            'ad_storage': 'denied',
-            'ad_user_data': 'denied',
-            'ad_personalization': 'denied'
-        });
-    </script>
-    <link rel="icon" type="image/png" href="assets/brightnews-logo-faviconv5.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="max-image-preview:large">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Español)" href="/feed-es.xml">
     <link rel="alternate" type="application/rss+xml" title="BrightNews (Nederlands)" href="/feed-nl.xml">
     <link rel="alternate" type="application/rss+xml" title="BrightNews (English)" href="/feed-en.xml">
     <link rel="alternate" type="application/rss+xml" title="BrightNews (Deutsch)" href="/feed-de.xml">
     <link rel="alternate" type="application/rss+xml" title="BrightNews (Français)" href="/feed-fr.xml">
-    <link rel="alternate" type="application/rss+xml" title="BrightNews (Español)" href="/feed-es.xml">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://www.googletagmanager.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
-    <title data-i18n="refunds_page_title">Terugbetalingen | BrightNews</title>
-    <link rel="canonical" href="https://brightnews.online/refunds.html">
-    <meta name="description" content="Het terugbetalingsbeleid van BrightNews: 14 dagen niet-goed-geld-terug, ongeacht gebruik.">
-    <meta property="og:title" content="Refunds | BrightNews">
-    <meta property="og:description" content="Het terugbetalingsbeleid van BrightNews: 14 dagen niet-goed-geld-terug, ongeacht gebruik.">
-    <meta property="og:image" content="https://brightnews.online/assets/brightnews-logo-vierkant.png">
-    <meta property="og:url" content="https://brightnews.online/refunds.html">
+    <meta name="description" content="Cada día, una selección fresca de noticias positivas sobre Finanzas de todo el mundo.">
+    <title>Buenas noticias sobre Finanzas | BrightNews</title>
+    <link rel="canonical" href="https://brightnews.online/categories/es/finanzas.html">
+    <link rel="alternate" hreflang="nl" href="https://brightnews.online/categories/nl/financien.html">
+    <link rel="alternate" hreflang="en" href="https://brightnews.online/categories/en/finance.html">
+    <link rel="alternate" hreflang="de" href="https://brightnews.online/categories/de/finanzen.html">
+    <link rel="alternate" hreflang="fr" href="https://brightnews.online/categories/fr/finances.html">
+    <link rel="alternate" hreflang="es" href="https://brightnews.online/categories/es/finanzas.html">
+    <link rel="alternate" hreflang="x-default" href="https://brightnews.online/categories/en/finance.html">
+    <meta property="og:title" content="Buenas noticias sobre Finanzas">
+    <meta property="og:description" content="Cada día, una selección fresca de noticias positivas sobre Finanzas de todo el mundo.">
+    <meta property="og:url" content="https://brightnews.online/categories/es/finanzas.html">
     <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#32CD32">
-    <style>
-        body {
-            font-family: var(--font-tekst);
-            line-height: 1.6;
-            color: var(--dark-text);
-            margin: 0;
-            padding: 0;
-            background-color: var(--light-bg);
-        }
-
-        main {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1.5rem;
-            display: grid;
-            gap: 2rem;
-            background-color: var(--light-bg);
-        }
-
-        section {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-
-        h1, h2 {
-            color: var(--dark-text) !important;
-        }
-
-        ul {
-            padding-left: 1.2rem;
-        }
-
-        .back-link {
-            display: inline-block;
-            margin-bottom: 1rem;
-            color: var(--dark-text);
-            text-decoration: none;
-            font-weight: bold;
-        }
-       div.terms-header {
-            background: white;
-            padding: 2rem 1rem;
-            text-align: center;
-            margin-top: 0;
-        }
-        header{
-            margin-bottom: 0 !important;
-            border-bottom: none !important;
-        }
-    </style>
+    <meta property="og:image" content="https://brightnews.online/assets/brightnews-logo.png">
+    <link rel="icon" type="image/png" href="/assets/brightnews-logo-faviconv5.png">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <!-- .grid-container en .news-card staan in de paginastijl van de
+         homepage; deze pagina gebruikt dezelfde kaarten. -->
+    <link rel="stylesheet" href="/css/pages/index.css">
+    <link rel="stylesheet" href="/css/pages/categorie.css">
+    <script src="/data/translations.js" defer></script>
+    <script src="/js/main.js" defer></script>
 </head>
 <body>
-<a href="#main-content" class="skip-link" data-i18n="skip_to_content">Ga naar hoofdinhoud</a>
-
+<a href="#main-content" class="skip-link" data-i18n="skip_to_content">Saltar al contenido principal</a>
 <header>
     <nav class="container">
         <div class="nav-left-group">
@@ -99,7 +44,7 @@
                     <span class="taal-vlag">🇺🇸</span><span class="taal-naam">English</span><span class="taal-code" aria-hidden="true">EN</span> <span class="arrow">▼</span>
                 </summary>
                 <div class="dropdown-content">
-                    <a href="#" onclick="wisselTaal('en', '🇺🇸 English', event)"><span class="taal-vlag">🇺🇸</span> English</a>
+                        <a href="#" onclick="wisselTaal('en', '🇺🇸 English', event)"><span class="taal-vlag">🇺🇸</span> English</a>
                     <a href="#" onclick="wisselTaal('nl', '🇳🇱 Nederlands', event)"><span class="taal-vlag">🇳🇱</span> Nederlands</a>
                     <a href="#" onclick="wisselTaal('de', '🇩🇪 Deutsch', event)"><span class="taal-vlag">🇩🇪</span> Deutsch</a>
                     <a href="#" onclick="wisselTaal('fr', '🇫🇷 Français', event)"><span class="taal-vlag">🇫🇷</span> Français</a>
@@ -107,17 +52,19 @@
                 </div>
             </details>
 
-            <a href="index.html"><img src="assets/brightnews-logo.png" height="94" width="463" class="nav-logo" alt="BrightNews"/></a></div>
+            <!--            <a href="/index.html" class="logo">Bright<span>News</span></a>-->
+
+            <a href="/index.html"><img src="/assets/brightnews-logo.png" height="94" width="463" class="nav-logo" alt="BrightNews"/></a></div>
         <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu openen" data-i18n-aria-label="menu_open">
             <span></span><span></span><span></span>
         </button>
         <ul class="nav-links" id="mobileMenu">
-            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
-            <li><a href="over-ons.html" data-i18n="nav_about">Over Ons</a></li>
-            <li><a href="abonnementen.html" data-i18n="nav_premium">Abonnementen</a></li>
+            <li><a href="/index.html" data-i18n="nav_home">Inicio</a></li>
+            <li><a href="/over-ons.html" data-i18n="nav_about">Sobre nosotros</a></li>
+            <li><a href="/abonnementen.html" data-i18n="nav_premium">Suscripciones</a></li>
 
             <li class="nav-profile-desktop">
-                <a href="profiel.html" class="profile-icon" aria-label="Profiel" data-i18n-aria-label="nav_profile">
+                <a href="/profiel.html" class="profile-icon" aria-label="Profiel" data-i18n-aria-label="nav_profile">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                         <circle cx="12" cy="7" r="4"></circle>
@@ -126,46 +73,54 @@
             </li>
 
             <li class="nav-profile-mobile">
-                <a href="profiel.html" class="profile-link-text">
+                <a href="/profiel.html" class="profile-link-text">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                         <circle cx="12" cy="7" r="4"></circle>
                     </svg>
-                    <span data-i18n="nav_profile">Profiel</span>
+                    <span data-i18n="nav_profile">Perfil</span>
                 </a>
             </li>
         </ul>
 
     </nav>
 </header>
+<main id="main-content" class="container categorie-pagina">
+    <h1>Buenas noticias sobre Finanzas</h1>
+    <p class="categorie-intro">Cada día, una selección fresca de noticias positivas sobre Finanzas de todo el mundo.</p>
 
-<div class="terms-header">
-    <h1 data-i18n="refunds_title">Terugbetalingen ✨</h1>
-    <p data-i18n="refunds_subtitle">Niet tevreden? Je krijgt je geld terug.</p>
-</div>
+    <div class="grid-container">
+            <article class="news-card">
+                <a href="/articles/es/nueva-york-obtiene-131-millones-de-dolares-de-doordash-para-repartidores-1790526952732zu9t81thr.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/DoorDash-workers-reimbursed-New-York-City-Mayors-office-released-.jpg" alt="Repartidor en bicicleta con una bolsa de entrega de DoorDash en Nueva York" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/nueva-york-obtiene-131-millones-de-dolares-de-doordash-para-repartidores-1790526952732zu9t81thr.html">Nueva York obtiene 131 millones de dólares de DoorDash para repartidores</a></h3>
+                    <p>El New York City Department of Consumer and Worker Protection (DCWP) ha llegado a un acuerdo de 131,5 millones de dólare…</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/bonificacion-de-1000-dolares-por-ano-de-servicio-en-casino-1789533075925kr6cz4g9o.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/credit-Station-Casinos-released-to-the-press.jpg" alt="Empleados de Station Casinos celebran el 50 aniversario de la empresa" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/bonificacion-de-1000-dolares-por-ano-de-servicio-en-casino-1789533075925kr6cz4g9o.html">Bonificación de 1000 Dólares por Año de Servicio en Casino</a></h3>
+                    <p>En la celebración del 50 aniversario de Station Casinos, los 10.000 empleados recibieron una sorpresa: por cada año de s…</p>
+                </div>
+            </article>
+    </div>
 
-<main id="main-content" tabindex="-1">
-    <section>
-        <h2 data-i18n="refunds_sec1_title">1. 14 dagen niet-goed-geld-terug</h2>
-        <p data-i18n="refunds_sec1_text">Binnen 14 dagen na je aankoop van een Glow- of Shine-abonnement kun je op verzoek een volledige terugbetaling krijgen — ongeacht hoeveel artikelen je al hebt gelezen. Dit is een vrijwillige garantie van BrightNews, geen wettelijk verplicht recht (zie punt 2 hieronder).</p>
-    </section>
-
-    <section>
-        <h2 data-i18n="refunds_sec2_title">2. Verhouding tot je herroepingsrecht</h2>
-        <p data-i18n="refunds_sec2_text">Omdat je bij het afsluiten van een abonnement direct toegang krijgt tot premium content, vraag je bij het afrekenen expliciet om onmiddellijke levering en doe je daarmee afstand van het wettelijke herroepingsrecht van 14 dagen dat normaal voor digitale diensten geldt. Dat betekent dat we wettelijk niet verplicht zijn om terug te betalen. We bieden deze garantie toch aan, uit coulance — je betaalt pas echt als je tevreden bent.</p>
-    </section>
-
-    <section>
-        <h2 data-i18n="refunds_sec3_title">3. Hoe vraag je een terugbetaling aan?</h2>
-        <p data-i18n="refunds_sec3_text">Stuur een e-mail naar info@brightnews.online met het e-mailadres van je account en de datum van aankoop. We verwerken je verzoek binnen enkele werkdagen en betalen terug via Stripe, op dezelfde manier als je oorspronkelijke betaling.</p>
-    </section>
-
-    <section>
-        <h2 data-i18n="refunds_sec4_title">4. Na de eerste 14 dagen</h2>
-        <p data-i18n="refunds_sec4_text">Na deze periode kun je je abonnement op elk moment stopzetten via je profielpagina. Je toegang blijft dan actief tot het einde van de lopende factuurperiode, maar er volgt geen terugbetaling voor die resterende periode. Zie onze Algemene Voorwaarden voor de volledige opzegvoorwaarden.</p>
-    </section>
+    <nav class="categorie-andere" aria-label="Otras categorías">
+        <h2>Otras categorías</h2>
+        <div class="categorie-links">
+            <a href="/categories/es/tech.html">Tech</a>
+            <a href="/categories/es/salud.html">Salud</a>
+            <a href="/categories/es/ciencia.html">Ciencia</a>
+            <a href="/categories/es/estilo-de-vida.html">Estilo de vida</a>
+            <a href="/categories/es/medio-ambiente.html">Medio ambiente</a>
+        </div>
+    </nav>
 </main>
-
 <footer class="main-footer">
   <div class="container footer-grid">
     <!-- Kolom 1: Over & Transparantie -->
@@ -173,39 +128,39 @@
       <div class="footer-logo">Bright<span>News</span></div>
       <p data-i18n="footer_text">Opgericht en ontwikkeld door <strong>Maarten de Klerk</strong>. Maarten is de eigenaar en hoofdontwikkelaar van BrightNews, toegewijd aan het verspreiden van positieve vibes via technologie.</p>
       <div class="footer-legal-info">
-        <p data-i18n="footer_address">Vossenstraat 19, 6286BW Nijswiller, Nederland</p>
-        <p><span data-i18n="footer_kvk_label">KvK</span>: <span data-i18n="footer_kvk_val">42048341</span> · <span data-i18n="footer_btw_label">BTW</span>: <span data-i18n="footer_btw_val">NL005455019B94</span></p>
-        <p class="footer-mor-notice" data-i18n="footer_mor_notice">Betalingen worden veilig verwerkt door Stripe, onze Merchant of Record.</p>
+        <p data-i18n="footer_address">Vossenstraat 19, 6286BW Nijswiller, Países Bajos</p>
+        <p><span data-i18n="footer_kvk_label">KvK</span>: <span data-i18n="footer_kvk_val">42048341</span> · <span data-i18n="footer_btw_label">IVA</span>: <span data-i18n="footer_btw_val">NL005455019B94</span></p>
+        <p class="footer-mor-notice" data-i18n="footer_mor_notice">Los pagos son procesados de forma segura por Stripe, nuestro Merchant of Record.</p>
       </div>
     </div>
 
     <!-- Kolom 2: Explore -->
     <div class="footer-links">
-      <h3 data-i18n="footer_explore">Ontdekken</h3>
+      <h3 data-i18n="footer_explore">Explorar</h3>
       <ul>
-        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
-        <li><a href="over-ons.html" data-i18n="footer_mission">Onze Missie</a></li>
-        <li><a href="abonnementen.html" data-i18n="footer_subs">Abonnementen</a></li>
-        <li><a href="#" onclick="openCustomerPortal(event)" data-i18n="footer_manage_sub">Abonnement beheren</a></li>
-        <li><a href="profiel.html" data-i18n="footer_acc">Mijn Account</a></li>
+        <li><a href="/index.html" data-i18n="nav_home">Inicio</a></li>
+        <li><a href="/over-ons.html" data-i18n="footer_mission">Nuestra Misión</a></li>
+        <li><a href="/abonnementen.html" data-i18n="footer_subs">Suscripciones</a></li>
+        <li><a href="#" onclick="openCustomerPortal(event)" data-i18n="footer_manage_sub">Gestionar suscripción</a></li>
+        <li><a href="/profiel.html" data-i18n="footer_acc">Mi Cuenta</a></li>
       </ul>
     </div>
 
     <!-- Kolom 3: Community -->
     <div class="footer-links">
-      <h3 data-i18n="footer_community">Community</h3>
+      <h3 data-i18n="footer_community">Comunidad</h3>
       <ul>
-        <li><a href="Privacy.html" data-i18n="footer_privacy">Privacybeleid</a></li>
-        <li><a href="algemeene-voorwaarden.html" data-i18n="footer_service_terms">Algemene Voorwaarden</a></li>
-        <li><a href="refunds.html" data-i18n="footer_refunds">Terugbetalingen</a></li>
-        <li><a href="Privacy.html#cookies-section" data-i18n="footer_cookies">Cookies</a></li>
-        <li><a href="contact.html" data-i18n="footer_support">Klantenservice</a></li>
+        <li><a href="/Privacy.html" data-i18n="footer_privacy">Privacidad</a></li>
+        <li><a href="/algemeene-voorwaarden.html" data-i18n="footer_service_terms">Términos</a></li>
+        <li><a href="/refunds.html" data-i18n="footer_refunds">Reembolsos</a></li>
+        <li><a href="/Privacy.html#cookies-section" data-i18n="footer_cookies">Cookies</a></li>
+        <li><a href="/contact.html" data-i18n="footer_support">Soporte</a></li>
       </ul>
     </div>
 
     <!-- Kolom 4: Socials & Badge -->
     <div class="footer-socials">
-      <h3 data-i18n="footer_follow">Volg BrightNews</h3>
+      <h3 data-i18n="footer_follow">Seguir a BrightNews</h3>
       <div class="social-icons">
         <a href="https://www.facebook.com/people/BrightNews/61594888799297/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a>
         <a href="https://www.instagram.com/brightnews.online" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a>
@@ -215,25 +170,8 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p data-i18n="footer_created_by">&copy; 2026 BrightNews • Alle rechten voorbehouden • Gemaakt met 💚 in Nederland</p>
+    <p data-i18n="footer_created_by">&amp;copy; 2026 BrightNews • Todos los derechos reservados • Creado con 💚 en los Países Bajos</p>
   </div>
 </footer>
-
-<script src="js/betaal-config.js" defer></script>
-    <script src="data/translations.js" defer></script>
-<script src="index.js" defer></script>
-<script>
-    function toggleMobileMenu() {
-        const menu = document.getElementById('mobileMenu');
-        const hamburger = document.querySelector('.hamburger');
-
-        if (menu) {
-            menu.classList.toggle('active');
-            console.log("Menu status:", menu.classList.contains('active') ? "Open" : "Dicht");
-        } else {
-            console.error("Fout: Element #mobileMenu niet gevonden!");
-        }
-    }
-</script>
 </body>
 </html>

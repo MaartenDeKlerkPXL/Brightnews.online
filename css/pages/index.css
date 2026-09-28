@@ -28,6 +28,21 @@
     border-left: none !important; /* Verwijdert de blauwe streep */
 }
 
+/* Op de homepage is een kaart een <div> die door JavaScript klikbaar wordt
+   gemaakt; op de categoriepagina's (punt 55) is hij statische HTML en zit de
+   link in de kop, zodat een crawler hem volgt. Zonder deze regel staat die
+   titel in het standaard linkblauw met een streep eronder. */
+.news-card h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+.news-card h3 a:hover { text-decoration: underline; }
+.news-card h3 a:focus-visible {
+    outline: 2px solid var(--bright-green);
+    outline-offset: 3px;
+    border-radius: 3px;
+}
+
 .news-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.08);

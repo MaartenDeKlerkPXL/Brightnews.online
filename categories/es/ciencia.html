@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="max-image-preview:large">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Español)" href="/feed-es.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Nederlands)" href="/feed-nl.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (English)" href="/feed-en.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Deutsch)" href="/feed-de.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Français)" href="/feed-fr.xml">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://www.googletagmanager.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <meta name="description" content="Cada día, una selección fresca de noticias positivas sobre Ciencia de todo el mundo.">
+    <title>Buenas noticias sobre Ciencia | BrightNews</title>
+    <link rel="canonical" href="https://brightnews.online/categories/es/ciencia.html">
+    <link rel="alternate" hreflang="nl" href="https://brightnews.online/categories/nl/wetenschap.html">
+    <link rel="alternate" hreflang="en" href="https://brightnews.online/categories/en/science.html">
+    <link rel="alternate" hreflang="de" href="https://brightnews.online/categories/de/wissenschaft.html">
+    <link rel="alternate" hreflang="fr" href="https://brightnews.online/categories/fr/science.html">
+    <link rel="alternate" hreflang="es" href="https://brightnews.online/categories/es/ciencia.html">
+    <link rel="alternate" hreflang="x-default" href="https://brightnews.online/categories/en/science.html">
+    <meta property="og:title" content="Buenas noticias sobre Ciencia">
+    <meta property="og:description" content="Cada día, una selección fresca de noticias positivas sobre Ciencia de todo el mundo.">
+    <meta property="og:url" content="https://brightnews.online/categories/es/ciencia.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://brightnews.online/assets/brightnews-logo.png">
+    <link rel="icon" type="image/png" href="/assets/brightnews-logo-faviconv5.png">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <!-- .grid-container en .news-card staan in de paginastijl van de
+         homepage; deze pagina gebruikt dezelfde kaarten. -->
+    <link rel="stylesheet" href="/css/pages/index.css">
+    <link rel="stylesheet" href="/css/pages/categorie.css">
+    <script src="/data/translations.js" defer></script>
+    <script src="/js/main.js" defer></script>
+</head>
+<body>
+<a href="#main-content" class="skip-link" data-i18n="skip_to_content">Saltar al contenido principal</a>
+<header>
+    <nav class="container">
+        <div class="nav-left-group">
+            <details class="dropdown language-picker">
+                <summary class="dropbtn" id="current-lang">
+                    <span class="taal-vlag">🇺🇸</span><span class="taal-naam">English</span><span class="taal-code" aria-hidden="true">EN</span> <span class="arrow">▼</span>
+                </summary>
+                <div class="dropdown-content">
+                        <a href="#" onclick="wisselTaal('en', '🇺🇸 English', event)"><span class="taal-vlag">🇺🇸</span> English</a>
+                    <a href="#" onclick="wisselTaal('nl', '🇳🇱 Nederlands', event)"><span class="taal-vlag">🇳🇱</span> Nederlands</a>
+                    <a href="#" onclick="wisselTaal('de', '🇩🇪 Deutsch', event)"><span class="taal-vlag">🇩🇪</span> Deutsch</a>
+                    <a href="#" onclick="wisselTaal('fr', '🇫🇷 Français', event)"><span class="taal-vlag">🇫🇷</span> Français</a>
+                    <a href="#" onclick="wisselTaal('es', '🇪🇸 Español', event)"><span class="taal-vlag">🇪🇸</span> Español</a>
+                </div>
+            </details>
+
+            <!--            <a href="/index.html" class="logo">Bright<span>News</span></a>-->
+
+            <a href="/index.html"><img src="/assets/brightnews-logo.png" height="94" width="463" class="nav-logo" alt="BrightNews"/></a></div>
+        <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu openen" data-i18n-aria-label="menu_open">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="mobileMenu">
+            <li><a href="/index.html" data-i18n="nav_home">Inicio</a></li>
+            <li><a href="/over-ons.html" data-i18n="nav_about">Sobre nosotros</a></li>
+            <li><a href="/abonnementen.html" data-i18n="nav_premium">Suscripciones</a></li>
+
+            <li class="nav-profile-desktop">
+                <a href="/profiel.html" class="profile-icon" aria-label="Profiel" data-i18n-aria-label="nav_profile">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a>
+            </li>
+
+            <li class="nav-profile-mobile">
+                <a href="/profiel.html" class="profile-link-text">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span data-i18n="nav_profile">Perfil</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+<main id="main-content" class="container categorie-pagina">
+    <h1>Buenas noticias sobre Ciencia</h1>
+    <p class="categorie-intro">Cada día, una selección fresca de noticias positivas sobre Ciencia de todo el mundo.</p>
+
+    <div class="grid-container">
+            <article class="news-card">
+                <a href="/articles/es/arqueologos-rescatan-30-000-tesoros-del-museo-de-deir-ez-zor-antes-de-isis-1790568932914excz2ptad.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Evacuation-of-art-crates-from-Deir-ez-Zor-Museum-during-Syria-war-SWNS-cropped.jpeg" alt="Artefactos arqueológicos del Museo de Deir ez-Zor en Siria" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/arqueologos-rescatan-30-000-tesoros-del-museo-de-deir-ez-zor-antes-de-isis-1790568932914excz2ptad.html">Arqueólogos rescatan 30.000 tesoros del Museo de Deir ez-Zor antes de ISIS</a></h3>
+                    <p>Un nuevo estudio revela cómo arqueólogos arriesgaron sus vidas para rescatar aproximadamente 30.000 artefactos «invaluab…</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/investigadores-encuentran-aromas-que-alejan-a-las-abejas-meliferas-de-los-pestic-1790568906594wygath1u8.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Honeybee-by-Yu-Fang-University-of-California-Riverside-released.jpg" alt="Abeja melífera en una flor en un campo agrícola" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/investigadores-encuentran-aromas-que-alejan-a-las-abejas-meliferas-de-los-pestic-1790568906594wygath1u8.html">Investigadores encuentran aromas que alejan a las abejas melíferas de los pesticidas</a></h3>
+                    <p>Investigadores de la University of California, Riverside han identificado sustancias químicas que pueden disuadir de for…</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/nueva-especie-de-gato-salvaje-tilcayo-descubierta-en-bolivia-1790269232376v06i1r5ae.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://www.optimistdaily.com/wp-content/uploads/Leopardus_tilcayo_5x3_cropped-1024x613.jpg" alt="Gato tilcayo manchado en la selva nubosa de Yungas de Bolivia" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/nueva-especie-de-gato-salvaje-tilcayo-descubierta-en-bolivia-1790269232376v06i1r5ae.html">Nueva especie de gato salvaje tilcayo descubierta en Bolivia</a></h3>
+                    <p>En la selva nubosa de Yungas en Bolivia se ha confirmado una nueva especie de gato salvaje: el tilcayo, científicamente …</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/un-bano-quimico-recupera-hasta-el-95-de-capacidad-en-baterias-ev-antiguas-1790181687376puszm9r3e.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/A-conventional-battery-pack-credit-Getty-Images-via-Unsplash-.jpg" alt="Electrodos de una batería de iones de litio en un baño de regeneración química" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/un-bano-quimico-recupera-hasta-el-95-de-capacidad-en-baterias-ev-antiguas-1790181687376puszm9r3e.html">Un baño químico recupera hasta el 95% de capacidad en baterías EV antiguas</a></h3>
+                    <p>Científicos de Cornell University han desarrollado un método llamado Direct Electrode-to-Electrode Regeneration (DEER), …</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/un-gato-nuevo-arte-antiguo-y-tesoros-rescatados-la-ciencia-mira-hacia-atras-y-ha-dg-20260920-science.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/imrs-e1789720878162.jpg" alt="Un gato nuevo, arte antiguo y tesoros rescatados: la ciencia mira hacia atrás y hacia adelante" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/un-gato-nuevo-arte-antiguo-y-tesoros-rescatados-la-ciencia-mira-hacia-atras-y-ha-dg-20260920-science.html">Un gato nuevo, arte antiguo y tesoros rescatados: la ciencia mira hacia atrás y hacia adelante</a></h3>
+                    <p>En los últimos días, la ciencia demuestra cómo el pasado y el presente se tocan mutuamente. Una especie de gato desconoc…</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/los-humanos-primitivos-utilizaban-patrones-de-crecimiento-del-colmillo-de-mamut--1789965262786z6vu42lzy.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Ice-Age-craftspeople-mimicked-lines-of-mammoth-ivory-SWNS.jpeg" alt="Una figurilla de Venus de marfil de mamut de 18.000 años de antigüedad con patrones grabados que siguen las líneas de crecimiento naturales del colmillo" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/los-humanos-primitivos-utilizaban-patrones-de-crecimiento-del-colmillo-de-mamut--1789965262786z6vu42lzy.html">Los humanos primitivos utilizaban patrones de crecimiento del colmillo de mamut para un arte único</a></h3>
+                    <p>Científicos han descubierto que los artistas prehistóricos utilizaban las líneas de crecimiento naturales del marfil de …</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/arqueologos-rescatan-hallazgos-yup-ik-milenarios-en-alaska-1789832772703vb1b4cr0s.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/9504x5346+0+495/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe2%2F83%2Faa1de52e4126830ea0e403eb8347%2F260608-mcdolan-nunalleq-09374.jpg" alt="Arqueólogos y voluntarios buscan artefactos en el suelo del sitio de excavación Nunalleq cerca de Quinhagak, Alaska" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/arqueologos-rescatan-hallazgos-yup-ik-milenarios-en-alaska-1789832772703vb1b4cr0s.html">Arqueólogos rescatan hallazgos Yup&#39;ik milenarios en Alaska</a></h3>
+                    <p>Tras la tormenta originada por los restos del Tifón Halong el año pasado, miles de objetos milenarios fueron arrastrados…</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/nueva-especie-felina-tilcayo-descubierta-en-bolivia-1789791470039iv33h3zat.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/imrs-e1789720878162.jpg" alt="Pequeño gato salvaje con rosetas en el pelaje en el bosque de Yungas en Bolivia" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/nueva-especie-felina-tilcayo-descubierta-en-bolivia-1789791470039iv33h3zat.html">Nueva especie felina Tilcayo descubierta en Bolivia</a></h3>
+                    <p>Por primera vez en más de cien años se ha identificado una nueva especie felina: Leopardus tilcayo, hallada en Bolivia. …</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/satelites-un-chimpance-y-huellas-antiguas-la-ciencia-de-esta-semana-dg-20260917-science.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="/assets/fallback/science-2.jpg" alt="Satélites, un chimpancé y huellas antiguas: la ciencia de esta semana" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/satelites-un-chimpance-y-huellas-antiguas-la-ciencia-de-esta-semana-dg-20260917-science.html">Satélites, un chimpancé y huellas antiguas: la ciencia de esta semana</a></h3>
+                    <p>Esta semana demuestra lo amplio que puede ser el alcance de la ciencia: observar la tierra desde el espacio, presenciar …</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/satelites-sentinel-3c-y-flex-lanzados-para-estudiar-la-tierra-1789748294620m3jjyiit8.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="/assets/fallback/science-2.jpg" alt="Cohete Vega-C lanza Sentinel-3C y satélites FLEX desde la Guayana Francesa" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/satelites-sentinel-3c-y-flex-lanzados-para-estudiar-la-tierra-1789748294620m3jjyiit8.html">Satélites Sentinel-3C y FLEX lanzados para estudiar la tierra</a></h3>
+                    <p>Dos satélites europeos con importantes contribuciones británicas han sido lanzados con éxito para monitorear la salud de…</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/una-operacion-de-cataratas-devuelve-la-vista-al-chimpance-pierre-54-1789748141932lspr4jani.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Pierre-the-Chimp-recovering-from-cataract-surgery-credit-Chimp-Haven-supplied.jpg" alt="El chimpancé Pierre vuelve a ver tras una operación de cataratas exitosa en Chimp Haven" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/una-operacion-de-cataratas-devuelve-la-vista-al-chimpance-pierre-54-1789748141932lspr4jani.html">Una operación de cataratas devuelve la vista al chimpancé Pierre (54)</a></h3>
+                    <p>Pierre, un chimpancé de 54 años en Chimp Haven, el mayor santuario de chimpancés del mundo, había quedado completamente …</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/tumba-intacta-chimu-descubierta-en-chan-chan-peru-1789748111526c04fkqo0w.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/The-newly-discovered-tomb-seen-in-the-center-©-ANDINA-Editora-Peru.jpg" alt="Excavación de una tumba chimú intacta en el complejo palaciego Utzh An, Chan Chan, Perú" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/tumba-intacta-chimu-descubierta-en-chan-chan-peru-1789748111526c04fkqo0w.html">Tumba intacta chimú descubierta en Chan Chan, Perú</a></h3>
+                    <p>En la zona de patrimonio UNESCO Chan Chan, en Perú, se ha desenterrado una tumba intacta y hasta ahora desconocida de la…</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/pequenos-descubrimientos-gran-viaje-la-ciencia-de-los-ultimos-dias-dg-20260916-science.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa03f638060be9fa448829d_6aa03f5f48a9fbea52c6b9f9_tiny-backpacks-bird-migration-study-featured.webp" alt="Pequeños descubrimientos, gran viaje: la ciencia de los últimos días" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/pequenos-descubrimientos-gran-viaje-la-ciencia-de-los-ultimos-dias-dg-20260916-science.html">Pequeños descubrimientos, gran viaje: la ciencia de los últimos días</a></h3>
+                    <p>A veces, la gran noticia se esconde en el detalle más pequeño. Esta semana, la ciencia demuestra cómo investigadores de …</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/pajaros-cantores-llevan-mini-mochilas-para-investigacion-migratoria-1789587769579kxc57oav0.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa03f638060be9fa448829d_6aa03f5f48a9fbea52c6b9f9_tiny-backpacks-bird-migration-study-featured.webp" alt="Una curruca de obispillo amarillo con una pequeña mochila geolocalizadora en la espalda" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/pajaros-cantores-llevan-mini-mochilas-para-investigacion-migratoria-1789587769579kxc57oav0.html">Pájaros cantores llevan mini-mochilas para investigación migratoria</a></h3>
+                    <p>Investigadores han equipado a currucas de obispillo amarillo (también llamadas &#39;butter-butt&#39;) con diminutas mochilas geo…</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/la-esfinge-del-tabaco-oye-sin-orejas-gracias-a-pelos-sensibles-1789587740917gpvp67qfk.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a9addaab62c9d26c6f00e59_caterpillar-twitches-in-an-ultraquiet-chamber-are-helping-biologists-01.jpg" alt="Una esfinge del tabaco en una hoja en un jardín" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/la-esfinge-del-tabaco-oye-sin-orejas-gracias-a-pelos-sensibles-1789587740917gpvp67qfk.html">La esfinge del tabaco oye sin orejas gracias a pelos sensibles</a></h3>
+                    <p>Científicos investigan cómo la esfinge del tabaco puede percibir el peligro, como la aproximación de una avispa, a pesar…</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/la-elefantita-linh-mai-aprende-a-colaborar-en-su-propio-cuidado-medico-1789587655308jj5kk44jy.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aaae23697d81695653c40d9_6aaae235a354d8882503f278_elephants-zoos-training-medical-care-jobs-featured-2.webp" alt="La elefantita Linh Mai con su «tía» Swarna en la Smithsonian&#39;s National Zoo" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/la-elefantita-linh-mai-aprende-a-colaborar-en-su-propio-cuidado-medico-1789587655308jj5kk44jy.html">La elefantita Linh Mai aprende a colaborar en su propio cuidado médico</a></h3>
+                    <p>El 2 de febrero, la Smithsonian&#39;s National Zoo recibió su primera cría de elefante en casi 25 años: Linh Mai, hija de la…</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/nueva-especie-de-insecto-nombrada-en-honor-a-taylor-swift-17895865549041jzsjhr12.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa1a1aed5cae2561042f656_6aa1a1add5cae2561042f5a8_new-species-bug-named-after-taylor-swift-featured.webp" alt="Un insecto amarillo claro con acentos rojos, la especie recién descubierta Swiftiephylus nombrada en honor a Taylor Swift" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/nueva-especie-de-insecto-nombrada-en-honor-a-taylor-swift-17895865549041jzsjhr12.html">Nueva especie de insecto nombrada en honor a Taylor Swift</a></h3>
+                    <p>Sarah Schroeder, doctoranda en entomología de la University of California, Riverside y declarada swiftie de toda la vida…</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/la-mision-bepicolombo-llega-a-mercurio-como-tercera-nave-espacial-1789585879417ynho5tj0v.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/PICTURED-BepiColombo-arriving-at-Mercury-in-an-illustration.-PC-ESA-Standard-Licence-Copy.webp" alt="Ilustración de la sonda espacial BepiColombo a su llegada alrededor del planeta Mercurio" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/la-mision-bepicolombo-llega-a-mercurio-como-tercera-nave-espacial-1789585879417ynho5tj0v.html">La misión BepiColombo llega a Mercurio como tercera nave espacial</a></h3>
+                    <p>El 3 de septiembre, la Agencia Espacial Europea ESA celebró la llegada exitosa de su misión BepiColombo a Mercurio. Es a…</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/primer-rastro-de-t-rex-adulto-descubierto-en-north-dakota-1789585765262uc56lz1sv.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/T-rex-trackway-discovered-credit-Tyler-Lyson-cropped-released.jpeg" alt="Huella tridáctila de un T. rex adulto en roca en North Dakota" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/primer-rastro-de-t-rex-adulto-descubierto-en-north-dakota-1789585765262uc56lz1sv.html">Primer rastro de T. rex adulto descubierto en North Dakota</a></h3>
+                    <p>Científicos han confirmado el primer rastro conocido de un T. rex adulto: cuatro huellas tridáctilas de aproximadamente …</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/talento-joven-desiertos-rojos-e-inteligentes-elefantes-las-noticias-cientificas--dg-20260915-science.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&amp;q=80" alt="Talento joven, desiertos rojos e inteligentes elefantes: las noticias científicas de estos días" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/talento-joven-desiertos-rojos-e-inteligentes-elefantes-las-noticias-cientificas--dg-20260915-science.html">Talento joven, desiertos rojos e inteligentes elefantes: las noticias científicas de estos días</a></h3>
+                    <p>Esta semana demuestra que el progreso a menudo comienza con la búsqueda paciente de respuestas. Jóvenes investigadores s…</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/jovenes-investigadores-abordan-el-cancer-y-el-clima-1789577102747ecq0t1wdv.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&amp;q=80" alt="Jóvenes investigadores de Europa colaboran durante EU TalentOn en Brest" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/jovenes-investigadores-abordan-el-cancer-y-el-clima-1789577102747ecq0t1wdv.html">Jóvenes investigadores abordan el cáncer y el clima</a></h3>
+                    <p>Jóvenes investigadores de toda Europa se han unido para desarrollar soluciones innovadoras para algunos de los mayores d…</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/el-desierto-rojo-de-australia-puede-producir-hidrogeno-1789576831859ulekx38g9.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Classic-Australian-Pilbara-region-banded-iron-formations-credit-Edith-Cowan-University-released.jpg" alt="Desierto rojo en Australia Occidental con formaciones rocosas ricas en hierro" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/el-desierto-rojo-de-australia-puede-producir-hidrogeno-1789576831859ulekx38g9.html">El Desierto Rojo de Australia Puede Producir Hidrógeno</a></h3>
+                    <p>Investigadores de la Universidad de Edith Cowan han descubierto que la magnetita, un mineral en las reservas de mineral …</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/los-elefantes-pueden-controlar-sus-impulsos-1789447008594levnblqrg.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/elephant-experiment-Hope-et-al-2026-PLOS-One-via-SWNS.jpeg" alt="Elefante asiático examina una caja transparente con fruta durante un experimento cognitivo en Tailandia" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/los-elefantes-pueden-controlar-sus-impulsos-1789447008594levnblqrg.html">Los Elefantes Pueden Controlar Sus Impulsos</a></h3>
+                    <p>Una nueva investigación demuestra que los elefantes pueden reflexionar antes de actuar y reprimir el comportamiento impu…</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/ciencia-esta-semana-de-cuadros-antiguos-a-patas-de-arana-brillantes-dg-20260913-science.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/1026_art-col_main.jpg?w=800" alt="Ciencia esta semana: de cuadros antiguos a patas de araña brillantes" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/ciencia-esta-semana-de-cuadros-antiguos-a-patas-de-arana-brillantes-dg-20260913-science.html">Ciencia esta semana: de cuadros antiguos a patas de araña brillantes</a></h3>
+                    <p>Los últimos días demuestran que la curiosidad no tiene límites. Desde cuadros de hace siglos hasta la oscuridad de las p…</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/avance-sueco-acelera-computadoras-cuanticas-1789410013633mbo2iqe8k.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=800&amp;q=80" alt="Ilustración de tecnología de computadora cuántica con circuitos luminosos" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/avance-sueco-acelera-computadoras-cuanticas-1789410013633mbo2iqe8k.html">Avance Sueco Acelera Computadoras Cuánticas</a></h3>
+                    <p>Investigadores de Chalmers University of Technology han desarrollado, en colaboración con Tianjin University, un nuevo m…</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/dinero-para-excavacion-flag-fen-17894099894470nhy9489v.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://images.unsplash.com/photo-1554475901-4538ddfbccc2?w=800&amp;q=80" alt="Yacimiento arqueológico Flag Fen cerca de Peterborough" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/dinero-para-excavacion-flag-fen-17894099894470nhy9489v.html">Dinero Para Excavación Flag Fen</a></h3>
+                    <p>El ministerio británico DEFRA e Historic England, junto con el ministro de agricultura Stephen Morgan, han otorgado £700…</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/el-arte-revela-antiguos-secretos-de-la-naturaleza-1789409907513wmorhsw8z.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/1026_art-col_main.jpg?w=800" alt="Pintura histórica de Maria Sibylla Merian de los años 1690 con animales y plantas" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/el-arte-revela-antiguos-secretos-de-la-naturaleza-1789409907513wmorhsw8z.html">El Arte Revela Antiguos Secretos de la Naturaleza</a></h3>
+                    <p>Las obras de arte históricas pueden contener secretos científicos sobre la naturaleza. Según un artículo de Bethany Broo…</p>
+                </div>
+            </article>
+            <article class="news-card">
+                <a href="/articles/es/aranas-de-aguas-profundas-brillantes-1789409877924blp03uhq2.html" tabindex="-1" aria-hidden="true">
+                    <img class="card-img" src="https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/090826_JRL_glowingspiders_main.jpg?w=800" alt="Una araña de aguas profundas brillante con largas patas en la oscuridad del océano" loading="lazy" decoding="async" width="800" height="450">
+                </a>
+                <div class="card-content">
+                    <h3><a href="/articles/es/aranas-de-aguas-profundas-brillantes-1789409877924blp03uhq2.html">Arañas de Aguas Profundas Brillantes</a></h3>
+                    <p>Investigadores han descubierto un brillo notable y misterioso en una de las arañas marinas gigantes más grandes, Colosse…</p>
+                </div>
+            </article>
+    </div>
+
+    <nav class="categorie-andere" aria-label="Otras categorías">
+        <h2>Otras categorías</h2>
+        <div class="categorie-links">
+            <a href="/categories/es/tech.html">Tech</a>
+            <a href="/categories/es/salud.html">Salud</a>
+            <a href="/categories/es/estilo-de-vida.html">Estilo de vida</a>
+            <a href="/categories/es/medio-ambiente.html">Medio ambiente</a>
+            <a href="/categories/es/finanzas.html">Finanzas</a>
+        </div>
+    </nav>
+</main>
+<footer class="main-footer">
+  <div class="container footer-grid">
+    <!-- Kolom 1: Over & Transparantie -->
+    <div class="footer-about">
+      <div class="footer-logo">Bright<span>News</span></div>
+      <p data-i18n="footer_text">Opgericht en ontwikkeld door <strong>Maarten de Klerk</strong>. Maarten is de eigenaar en hoofdontwikkelaar van BrightNews, toegewijd aan het verspreiden van positieve vibes via technologie.</p>
+      <div class="footer-legal-info">
+        <p data-i18n="footer_address">Vossenstraat 19, 6286BW Nijswiller, Países Bajos</p>
+        <p><span data-i18n="footer_kvk_label">KvK</span>: <span data-i18n="footer_kvk_val">42048341</span> · <span data-i18n="footer_btw_label">IVA</span>: <span data-i18n="footer_btw_val">NL005455019B94</span></p>
+        <p class="footer-mor-notice" data-i18n="footer_mor_notice">Los pagos son procesados de forma segura por Stripe, nuestro Merchant of Record.</p>
+      </div>
+    </div>
+
+    <!-- Kolom 2: Explore -->
+    <div class="footer-links">
+      <h3 data-i18n="footer_explore">Explorar</h3>
+      <ul>
+        <li><a href="/index.html" data-i18n="nav_home">Inicio</a></li>
+        <li><a href="/over-ons.html" data-i18n="footer_mission">Nuestra Misión</a></li>
+        <li><a href="/abonnementen.html" data-i18n="footer_subs">Suscripciones</a></li>
+        <li><a href="#" onclick="openCustomerPortal(event)" data-i18n="footer_manage_sub">Gestionar suscripción</a></li>
+        <li><a href="/profiel.html" data-i18n="footer_acc">Mi Cuenta</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom 3: Community -->
+    <div class="footer-links">
+      <h3 data-i18n="footer_community">Comunidad</h3>
+      <ul>
+        <li><a href="/Privacy.html" data-i18n="footer_privacy">Privacidad</a></li>
+        <li><a href="/algemeene-voorwaarden.html" data-i18n="footer_service_terms">Términos</a></li>
+        <li><a href="/refunds.html" data-i18n="footer_refunds">Reembolsos</a></li>
+        <li><a href="/Privacy.html#cookies-section" data-i18n="footer_cookies">Cookies</a></li>
+        <li><a href="/contact.html" data-i18n="footer_support">Soporte</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom 4: Socials & Badge -->
+    <div class="footer-socials">
+      <h3 data-i18n="footer_follow">Seguir a BrightNews</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/people/BrightNews/61594888799297/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a>
+        <a href="https://www.instagram.com/brightnews.online" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a>
+        <a href="https://www.linkedin.com/company/brightnewsonline/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+        <a href="mailto:info@brightnews.online" class="social-btn" aria-label="E-mail"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p data-i18n="footer_created_by">&amp;copy; 2026 BrightNews • Todos los derechos reservados • Creado con 💚 en los Países Bajos</p>
+  </div>
+</footer>
+</body>
+</html>

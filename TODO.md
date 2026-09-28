@@ -567,7 +567,24 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
 
   *(Maarten beslist; als het een Action wordt is het bouwwerk voor Erik of mij.)*
 
-- [ ] **47. Er is geen RSS-feed.** *(Besluit Maarten 2026-09-27: doen.)*
+- [x] **47. RSS-feeds gebouwd.** ✅ **2026-09-27** — vijf feeds,
+  `/feed-nl.xml` t/m `/feed-es.xml`, via `backend/generate-rss.js` in de
+  Action. Elke feed de laatste 30 artikelen met titel, samenvatting, link,
+  datum en de afbeelding als enclosure; kanaaltitel en -omschrijving zijn
+  dezelfde als op de homepage.
+
+  **Autodiscovery staat erbij**, anders vindt een lezer-app de feed niet: alle
+  vijf de feeds staan als `<link rel="alternate">` in de elf indexeerbare
+  losse pagina's, in het artikelsjabloon en op de categoriepagina's. Op een
+  pagina die zelf een taal heeft, staat die taal bovenaan — een lezer-app
+  pakt standaard de eerste.
+
+  Nagemeten: alle vijf geldige XML, 30 items elk. De XML-escaping dekt ook `'`
+  en `"` en haalt stuurtekens weg; één zo'n teken uit een bron maakt een hele
+  feed ongeldig en dan laat een lezer-app niet dat ene item maar de héle feed
+  vallen. *(Die `eslint-disable` bij de regex staat er bewust, met reden.)*
+
+  *Oorspronkelijke tekst hieronder.*
 
   Nagekeken op 2026-09-27: geen feedbestand, geen `application/rss+xml` in
   enige `<head>`, nergens een verwijzing. Voor een nieuwssite is dat
@@ -648,7 +665,24 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   (punt 2). Bouwen mag eerder, rekenen erop niet.
   *(Erik: het raakt Supabase en een externe dienst. Ik doe de front-end.)*
 
-- [ ] **50. IndexNow aanzetten.** *(Besluit Maarten 2026-09-27: doen.)*
+- [x] **50. IndexNow aangezet.** ✅ **2026-09-27** — `backend/indexnow.js`
+  draait mee in de Action, ná de sitemap. Hij leest `news-sitemap.xml` uit
+  (dat is precies "alles van de afgelopen 48 uur") en meldt die URL's plus de
+  homepage. **Eerste melding is geaccepteerd: 36 URL's, status 202.**
+
+  De sleutel `b022d2ba1243089fbcdd85248b11145c` staat als tekstbestand in de
+  root. **Dat is geen vergissing en geen secret:** IndexNow eist dat de
+  sleutel publiek te downloaden is, anders weigert de dienst de melding met
+  een 403. Het script controleert zelf of dat bestand er staat en klopt.
+
+  De stap heeft `continue-on-error: true`. Dit is een extraatje, geen
+  publicatiestap — valt de dienst uit, dan mag de nieuwsrun daar niet op
+  stuklopen.
+
+  **Verwachting eerlijk houden**, zoals hieronder al stond: dit maakt je
+  sneller ópgehaald, niet beter gevonden. En Google doet niet mee.
+
+  *Oorspronkelijke tekst hieronder.*
 
   Van de 2.927 URL's in de sitemap staan er 2.341 op "gevonden – momenteel
   niet geïndexeerd" (punt 23). Een zoekmachine komt langs wanneer het hem
@@ -669,8 +703,15 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   regels, geen kosten, geen account. *(Ik bouw het; het raakt `backend/`, dus
   via een PR met Erik als reviewer.)*
 
-- [ ] **51. `max-image-preview:large` ontbreekt — nodig voor Google Discover.**
-  *(Besluit Maarten 2026-09-27: doen, maar alléén vooruit.)*
+- [x] **51. `max-image-preview:large` toegevoegd — nodig voor Google Discover.**
+  ✅ **2026-09-27.** De regel staat nu in het artikelsjabloon en op de elf
+  indexeerbare losse pagina's. **Niet** op `404.html`, `binnenkort.html` en
+  `marketing.html`: die staan op `noindex`, daar heeft het geen betekenis.
+  Het archief is zoals afgesproken niet opnieuw gegenereerd — nieuwe artikelen
+  hebben de regel vanaf de eerstvolgende run. `CACHE_NAME` naar v37, want
+  `index.html` zit in de precache.
+
+  *Oorspronkelijke tekst hieronder.*
 
   Nagekeken op 2026-09-27: die robots-instructie staat **nergens** — niet in
   `backend/generate-articles.js`, niet op één van de losse pagina's. Zonder
@@ -767,8 +808,23 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   *(Erik bouwt 2, 3 en 4 mee met de publicatielus; onderdeel 1 is beeldwerk en
   kan ik doen.)*
 
-- [ ] **54. Een nieuwssitemap, en daarna aanmelden bij Google Publisher
-  Center.** *(Besluit Maarten 2026-09-27: doen.)*
+- [ ] **54. Aanmelden bij Google Publisher Center.** *(De nieuwssitemap is
+  af; de aanmelding is voor Maarten, ná de lancering.)*
+
+  ✅ **De nieuwssitemap staat er sinds 2026-09-27**: `/news-sitemap.xml`,
+  gegenereerd in `backend/generate-sitemap.js` en opgenomen in `robots.txt`
+  naast de gewone sitemap. Alleen artikelen van de **afgelopen 48 uur**, in
+  het `news:`-formaat met publicatiedatum, taal en titel — precies zoals
+  Google News het wil, inclusief de grens van maximaal 1.000 URL's. Bij de
+  eerste draai: 35 verse URL's, geldige XML. Artikelen zonder titel worden
+  overgeslagen; één ongeldig item laat Google de hele sitemap afwijzen.
+
+  ⏳ **Wat nog moet: de aanmelding zelf.** Die is voor Maarten en hoort **ná
+  de lancering** — Google beoordeelt wat het ziet, en dat is nu nog het
+  parkeerbericht. Punt 51 (grote beeldvoorbeelden) is inmiddels ook af, dus
+  technisch is alles klaar.
+
+  *Oorspronkelijke tekst hieronder.*
 
   `STAPPENPLAN-MAARTEN.md` zette Publisher Center weg als "niet nodig — Search
   Console dekt dit". Voor een gewone site klopt dat; voor een nieuwssite niet.
@@ -789,8 +845,36 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   parkeerbericht. Dus ook: na punt 2. *(Ik bouw de sitemap via een PR;
   Maarten doet de aanmelding.)*
 
-- [ ] **55. Er zijn geen categoriepagina's.** *(Besluit Maarten 2026-09-27:
-  doen.)*
+- [x] **55. Categoriepagina's gebouwd.** ✅ **2026-09-27** — 30 pagina's,
+  `backend/generate-categorieen.js`, draait mee in de Action.
+
+  **Wat er staat:** `/categories/{taal}/{categorie}.html`, met een vertaalde
+  slug (`/categories/nl/milieu.html`, niet `environment`). Per pagina de
+  laatste 60 artikelen van die categorie **in de HTML**, niet via JavaScript —
+  dat was het hele punt. Canonical, hreflang naar de vier andere talen plus
+  x-default, en onderaan links naar de vijf andere categorieën.
+
+  **De route naar binnen.** Alleen in de sitemap zetten zou niets oplossen:
+  daar staan al 2.341 URL's die Google wel kent en niet ophaalt. Daarom linkt
+  nu **elke artikelpagina** naar de categoriepagina van zijn eigen categorie,
+  onderaan bij "meer nieuws". Nagemeten in een proefdraai buiten de repo: 745
+  van de 750 artikelen kregen die link, en de vijf zonder zijn één artikel in
+  de categorie *General* — dat heeft geen pagina, en dat klopt.
+
+  **Nagemeten:** 720 artikellinks vanaf de categoriepagina's gecontroleerd,
+  nul kapot. Alle 30 doelen bestaan. Sitemap van 3.193 naar 3.223 URL's,
+  geldige XML. Op 375px geen horizontale overloop.
+
+  **Twee dingen om te weten.** De navigatiebalk en de footer worden bij het
+  genereren **uit `index.html` gelicht** in plaats van overgeschreven, zodat
+  ze niet achterlopen zodra iemand de footer wijzigt; de relatieve paden
+  worden daarbij absoluut gemaakt. En een bronfoto die niet meer laadt geeft
+  hier een leeg vak — de homepage valt via JavaScript terug op een
+  reservefoto, deze statische pagina's doen dat niet. Bij 8 van de 581
+  artikelen (punt 25) is dat nu te verwaarlozen; groeit dat getal, dan hoort
+  de terugval in de generator.
+
+  *Oorspronkelijke tekst hieronder.*
 
   Nagekeken op 2026-09-27: de site heeft vijf categorieën, maar het filteren
   gebeurt met JavaScript op de homepage. **Er bestaat dus geen enkele URL voor
