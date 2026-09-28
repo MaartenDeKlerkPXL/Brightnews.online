@@ -137,20 +137,50 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   zodra jullie het sein geven; punt 6 is een keuze die jullie maken en de
   Search Console is voor Maarten. *(Maarten + Erik beslissen, ik voer uit)*
 
-- [ ] **3. Misser-artikelen: gedocumenteerd, opruimen is uitgesteld.** De negen
-  gepubliceerde missers van run 1 en 2 staan sinds 2026-09-10 uitgewerkt in
+- [x] **3. Misser-artikelen: opgeruimd, en de sluis dichtgezet (2026-09-28).**
+  De tien gedocumenteerde missers staan sinds 2026-09-10 uitgewerkt in
   `backend/selectie-prompt-analyse.md` (bijlage), met per artikel de reden.
-  **Besluit Maarten:** het opruimen zelf heeft geen haast — de site staat
-  geparkeerd achter `binnenkort.html`, dus ze doen nu weinig kwaad. Waar het om
-  gaat is dat Erik en Fable de prompt zo bijstellen dat dit type er niet meer
-  doorheen komt. **Aangevuld 2026-09-20:** er is een tiende bij gekomen, "15%
-  korting op Athleta" — een winkelaanbieding met `promo-code` in de bron-URL,
-  gevonden doordat Maarten hem toevallig tegenkwam bij het testen van de
-  deel-previews. Staat uitgewerkt in dezelfde bijlage, met het voorstel om de
-  categorie *koopjes en kortingen* expliciet in de afwijslijst te zetten. Het daadwerkelijk uit de feed en de sitemap halen kan later,
-  vóór de lancering; de werkwijze staat in die bijlage beschreven. *(Erik, na
-  het bijstellen van de prompt)*
+  Twee dingen zijn nu gebeurd.
 
+  **1. Een voorfilter op de bron-URL, vóór de AI-call.** De bijlage stelde het
+  voor bij de tiende misser ("15% korting op Athleta", met `promo-code`
+  letterlijk in de bron-URL): herken koopjes aan het adres in plaats van te
+  hopen dat het model ze onderweg wegstreept. Staat nu in
+  `backend/processor.js` als `isKoopjesUrl()`, direct achter de
+  `!item.link`-check — nog vóór het ophalen van de tekst en vóór de
+  sentimentfilter, dus het scheelt ook een betaalde call. De teller
+  `koopjeGeweigerd` komt mee in `data/last_run.json`.
+
+  Het onderscheid dat de functie maakt is de hele truc, en daarom staat het
+  hier: losse woorden als *deal*, *sale* en *discount* tellen **alleen als heel
+  padstuk** (`/deals/…`), want anders sneuvelt een kop als "a big deal for
+  turtles" of "whale sale ban lifted in Iceland". Samengestelde termen
+  (*promo-code*, *black-friday*) mogen overal in de URL staan. *Korting* zelf is
+  bewust géén afwijsreden: "NHS looft dagelijkse wandelaars met kortingen"
+  staat gewoon in het archief en is een echt BrightNews-verhaal. Nagemeten op
+  23 gevallen, waarvan elf die er juist dóór moesten.
+
+  **2. De missers zelf uit Google gehaald.** Het archief nagelopen met diezelfde
+  functie leverde **vijf** artikelen op, niet één: naast Athleta ook een
+  Patagonia-korting, korting op reisspullen bij Away, en twee keer dezelfde
+  verkooptrucs-listicle van `addicted2success.com/sales/`. Ze staan alle vijf
+  in vijf talen — 25 pagina's. Geen ervan stond nog op de homepage, maar
+  **alle 25 stonden wel in `sitemap.xml`**, en dat is precies wat Google leest
+  bij de aanmelding voor Publisher Center (punt 54).
+
+  Verwijderen mag niet (CLAUDE.md: geindexeerde URL's mogen niet sterven), dus
+  ze krijgen `noindex, follow` en vallen uit de sitemap. De lijst staat in
+  `data/uitgesloten-artikelen.json` met per artikel de reden;
+  `backend/verberg-uitgesloten.js` zet de meta erop (idempotent) en
+  `backend/generate-sitemap.js` slaat ze over. Sitemap: 3208 → 3183 URL's.
+
+  **Wat bewust niet is gebeurd:** een nieuw uitsluitingslabel in
+  `backend/selectie-prompt.md`. De afwijslijst noemt kortingsacties al
+  (regel 52), en een nieuw label verandert de prompt-hash — dan krijgt élk
+  eerder afgewezen item een herkansing, voor een categorie die de voorfilter
+  nu al tegenhoudt vóórdat het model hem ziet. *(Erik: kijk hier overheen als
+  je het anders ziet; de rest van de promptbijstelling uit de bijlage blijft
+  jouw punt.)*
 - [x] **4. Lemon Squeezy: alleen nog buiten de repo.** ✅ 2026-09-20 — winkel
   gesloten en Eriks Supabase-token ingetrokken, in die volgorde. Betalingen lopen sinds
   2026-09-05 volledig via **Stripe Managed Payments**; Lemon Squeezy wordt

@@ -32,14 +32,25 @@ const PAGES = [
   { loc: '/feedback.html', priority: '0.3' },
 ];
 
+// Artikelen die door de selectie heen glipten en niet in Google horen
+// (punt 3). Ze blijven bestaan en bereikbaar — alleen niet in de sitemap;
+// backend/verberg-uitgesloten.js zet er daarnaast 'noindex, follow' op.
+function uitgeslotenIds() {
+  const p = path.join(__dirname, '..', 'data', 'uitgesloten-artikelen.json');
+  if (!fs.existsSync(p)) return new Set();
+  return new Set(Object.keys(JSON.parse(fs.readFileSync(p, 'utf8')).artikelen || {}));
+}
+
 // Artikel-URL's uit het manifest van generate-articles.js. lastmod is de
 // publicatiedatum van het artikel (stabiel, dus geen commit-ruis).
 function artikelUrls() {
   const manifestPad = path.join(__dirname, '..', 'articles', 'manifest.json');
   if (!fs.existsSync(manifestPad)) return [];
   const manifest = JSON.parse(fs.readFileSync(manifestPad, 'utf8'));
+  const uitgesloten = uitgeslotenIds();
   const urls = [];
   for (const [id, entry] of Object.entries(manifest.articles || {})) {
+    if (uitgesloten.has(id)) continue;
     const lastmod = entry.date ? String(entry.date).slice(0, 10) : LAST_MODIFIED;
     for (const [lang, slug] of Object.entries(entry.slugs || {})) {
       urls.push({ loc: `/articles/${lang}/${slug}-${id}.html`, priority: '0.6', lastmod });

@@ -1,0 +1,10 @@
+{
+  "_toelichting": "Punt 3 uit TODO.md. Artikelen die door de selectie heen zijn geglipt en niet in Google horen. Ze worden NIET verwijderd — de URL's zijn geindexeerd en mogen niet sterven (zie CLAUDE.md). In plaats daarvan krijgen ze 'noindex, follow' en blijven ze uit de sitemap. Draai backend/verberg-uitgesloten.js na het toevoegen van een id.",
+  "artikelen": {
+    "1788322035532buhquc0ri": "Winkelaanbieding: 15% korting op Athleta (bron-URL bevat promo-code).",
+    "1788322028150p7wbsm34j": "Winkelaanbieding: Patagonia-korting (bron-URL bevat coupon).",
+    "1788322043452ujvjroq9k": "Winkelaanbieding: korting op reisspullen bij Away (bron-URL bevat promo-codes).",
+    "17882840078106a6s6ouqu": "Listicle: vijf verkooptrucs voor een startup-pipeline, zelfhulpadvies zonder verhaal.",
+    "1788322278851shuxthlf3": "Listicle: dezelfde bron als hierboven, tweede keer opgenomen."
+  }
+}
