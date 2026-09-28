@@ -924,6 +924,14 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
      "droog" aangevinkt. Dan zie je in het log wie er een mail zou krijgen,
      zonder dat er iets vertrekt. Klopt dat, dan vink je het uit.
 
+     **Let op: die workflow verschijnt pas in de lijst nadat deze PR gemerged
+     is.** GitHub toont alleen workflows die op `master` staan; zolang
+     `welkomstreeks.yml` op een branch leeft, staat hij niet in de linkerkolom
+     bij Actions. Maarten liep hier op 2026-09-28 tegenaan. Wie niet wil
+     wachten draait hem lokaal: `node backend/stuur-mails.js --droog` met
+     alleen `SUPABASE_SERVICE_ROLE_KEY` in `.env` — bij een droogloop is de
+     Resend-sleutel niet nodig.
+
   Zolang `RESEND_API_KEY` ontbreekt doet de Action niets en stopt hij groen —
   hij mag dus al bestaan voordat Resend er is.
 
