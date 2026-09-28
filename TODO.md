@@ -458,7 +458,46 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   [Facebook Pages API](https://developers.facebook.com/docs/pages-api/getting-started/) ·
   [X API-tarieven 2026](https://postproxy.dev/blog/x-api-pricing-2026/)
 
-- [ ] **46. De nachtelijke beoordeling draait niet meer sinds 18 september.**
+- [x] **46. De nachtelijke beoordeling draait weer — nu als GitHub Action.**
+  ✅ **2026-09-28.** Eigenaar bleek Maarten; hij hing aan een planning buiten
+  de repo en viel daarmee geruisloos stil. Nu
+  `.github/workflows/nachtelijke-beoordeling.yml`, elke nacht om **02:00 UTC**
+  (04:00 Amsterdam in de zomer, 03:00 in de winter — ruim ná de nieuwsrun van
+  00:00 UTC, dus hij beoordeelt altijd de artikelen van diezelfde nacht).
+
+  **Wat er anders is dan de agent-versie.** Git pullen, committen en pushen
+  doet de workflow, inclusief een retry als de nieuws-Action de branch
+  intussen heeft opgeschoven. Daarmee vervalt de wachtrij uit stap 9 van de
+  prompt: een Action die niet kan pushen faalt zichtbaar, en dát was het hele
+  probleem. Welke artikelen nieuw zijn, houdt
+  `data/beoordeling-stand.json` bij in plaats van dat het uit de vorige tekst
+  gelezen moet worden.
+
+  **Het model doet alleen het oordeel** — stap 3, 4, 5 en de beoordeling in
+  stap 6. Twee AI-calls per nacht, rol `beoordelen` (Sonnet; dit is een
+  oordeel met een motivering eronder, geen scoretaak).
+
+  **Wat het kost.** Op een gewone nacht 5 tot 20 artikelen; op maandag de hele
+  feed (nu 123). Dat is ruwweg **een paar euro per maand** op dezelfde
+  `ANTHROPIC_API_KEY` als de nieuwsrun — relevant voor punt 26, waar nog
+  besloten moet worden wie die sleutel houdt. Wordt het te veel, dan is de
+  maandagcontrole de knop om aan te draaien (stap 2 in de prompt).
+
+  **Nagemeten met een nagebootst antwoord**, zodat de plumbing bewezen is
+  zonder AI-kosten: 123 artikelen geselecteerd, de opdracht en de
+  selectieprompt zitten in het bericht, beide blokken belanden onder de juiste
+  kop, de negen bestaande blokken blijven intact, en de stand wordt
+  weggeschreven. Onderweg één echte fout gevonden en hersteld: de kop
+  "Dagelijkse beoordeling" staat in het bestand als `#` en niet als `##`,
+  waardoor de eerste versie er een tweede kop bij maakte los van de bestaande
+  blokken.
+
+  **Gedrag wijzigen doe je in `backend/nachtelijke-beoordeling-prompt.md`**,
+  niet in het script. Dat leest de prompt in plaats van hem over te schrijven.
+
+  *Oorspronkelijke tekst hieronder.*
+
+- [ ] ~~**46. De nachtelijke beoordeling draait niet meer sinds 18 september.**~~
   *(Vastgesteld 2026-09-27. Eigenaar onbekend — dat is juist het punt.)*
 
   `CLAUDE.md` beschrijft een agent die elke nacht om 04:00 Amsterdamse tijd de

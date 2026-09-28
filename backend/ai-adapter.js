@@ -9,6 +9,10 @@
 // - selectie:  goedkoop en deterministisch scoren (Claude Haiku 4.5, temp 0)
 // - schrijven: de moederteksten die lezers zien (Claude Sonnet 5)
 // - vertalen:  mechanisch werk (Claude Haiku 4.5, temp 0)
+// - beoordelen: de nachtelijke kwaliteitscontrole (punt 46). Bewust Sonnet en
+//   geen Haiku: dit is een oordeel met een motivering eronder die een mens
+//   moet kunnen wegen, geen scoretaak. Ruimer tokenbudget, want hij schrijft
+//   per afgekeurd artikel een alinea.
 // Mistral staat als slapende fallback in de keten: alleen actief als er een
 // MISTRAL_API_KEY in de omgeving staat (besluit 2026-09-05: geen PAYG, dus
 // in de praktijk leeg tot er ooit een tweede provider wordt aangesloten).
@@ -22,11 +26,13 @@ const CONFIG = {
         selectie: { model: 'claude-haiku-4-5', temperature: 0, maxTokens: 3000 },
         schrijven: { model: 'claude-sonnet-5', maxTokens: 4000 },
         vertalen: { model: 'claude-haiku-4-5', temperature: 0, maxTokens: 4000 },
+        beoordelen: { model: 'claude-sonnet-5', maxTokens: 8000 },
     },
     mistral: {
         selectie: { model: 'mistral-medium-latest', temperature: 0, maxTokens: 3000 },
         schrijven: { model: 'mistral-medium-latest', maxTokens: 4000 },
         vertalen: { model: 'mistral-small-latest', temperature: 0, maxTokens: 4000 },
+        beoordelen: { model: 'mistral-medium-latest', maxTokens: 8000 },
     },
 };
 
