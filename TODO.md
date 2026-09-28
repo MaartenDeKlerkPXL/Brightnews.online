@@ -7,6 +7,10 @@
 > Punt 59 (de metered paywall) is gebouwd en de Supabase-kant staat er al;
 > alleen de review ontbreekt nog. Wat op Maartens naam staat is nog steeds
 > één ding: wachten op de bedrijfsverificatie van LinkedIn (punt 45).
+>
+> **Nieuw op 28 september: punt 64** — de site loopt niet helemaal goed op
+> iPhone in Safari. Het grootste deel van het publiek komt via een telefoon,
+> dus dit hoort vóór de lancering recht.
 
 Werklijst, opgesteld 2026-09-10 na een ronde langs de projectdocumenten, de
 open pull requests en een paar eigen metingen op de site. Gesorteerd op
@@ -1214,6 +1218,61 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   Wat hierna nog open zou staan is een eigen mail met BrightNews-opmaak in
   plaats van Stripe's standaardmail. Dat is een luxe-versie van iets wat dan al
   werkt, en het kan later mee met de verzenddienst uit punt 60 — niet nu.
+
+- [ ] **64. De site loopt niet helemaal goed op iPhone in Safari.**
+  *(Gemeld door Maarten, 2026-09-28.)*
+
+  Maarten ziet op zijn iPhone dat de weergave niet klopt. **Wat er precies
+  misgaat staat hier nog niet** — dat is het eerste dat erbij moet, want de
+  verdachten hieronder geven verschillende symptomen en de juiste diagnose
+  scheelt een halve dag gokken.
+
+  **Zeg er dus bij: welke pagina, staand of liggend, en wát er misgaat** —
+  loopt er iets over de rand, zit er een strook wit onderaan, springt de
+  navigatiebalk bij het scrollen, of zoomt het scherm in als je een veld
+  aantikt?
+
+  ### Vijf verdachten, gevonden door de CSS na te lopen (2026-09-28)
+
+  1. **`min-height: 100vh` staat op zes plekken** (`components.css` 284 en
+     891, `pages/index.css` 14, `pages/profiel.css` 5 en 173). Dit is dé
+     klassieke iOS-Safari-bug: `100vh` is daar de hoogte **zonder** de
+     adresbalk, dus een vol-scherm-blok is altijd een stuk hoger dan wat je
+     ziet. Gevolg: een extra scroll van 60–100px en inhoud die onder de
+     onderbalk verdwijnt. Oplossing is `100dvh` met `100vh` als terugval —
+     `dvh` wordt nergens in de codebase gebruikt.
+  2. **`backdrop-filter: blur()` op drie plekken** (`pages/artikel.css` 38 en
+     350, `pages/profiel.css` 191). Op iOS is dat duur, en in combinatie met
+     `position: fixed` geeft het flikkering bij het scrollen.
+  3. **De vaste navigatiebalk.** `position: fixed` en `sticky` staan door
+     elkaar in `global.css` en `components.css`. Op iOS verschuift de
+     viewport wanneer de adresbalk in- en uitklapt, en dat is precies het
+     moment waarop een vaste balk lijkt te springen.
+  4. **`env(safe-area-inset-bottom)` wordt maar één keer gebruikt**, in de
+     cookiebalk (`components.css` 1146). Alle ándere vaste elementen — het
+     deelmenu, de modals op `profiel.html` — houden geen rekening met de
+     homebar van een iPhone zonder thuisknop.
+  5. **Invoervelden onder 16px.** iOS zoomt automatisch in zodra je een veld
+     aantikt dat kleiner is dan 16px, en zoomt daarna niet terug. De
+     inlogvelden gebruiken `--text-md` (precies 16px, dus goed), maar
+     `--text-base` is 15,2px en `--text-sm` 13,6px. Elk veld met die tokens
+     is verdacht.
+
+  ### Waarom dit vóór de lancering moet
+
+  Het grootste deel van je publiek komt via een telefoon binnen, en op een
+  positief-nieuwssite is de eerste indruk het product. Een pagina die
+  onderaan een lege strook heeft of waar de balk bij elke scroll verspringt,
+  leest als slordig — ook als de inhoud goed is.
+
+  Bovendien is de meting elders al gedaan: punt 41 stelde vast dat de site
+  nergens overloopt, óók niet op 320px. Maar dat is gemeten in een
+  bureaublad-browser op smal formaat, en **dat is niet hetzelfde als iOS
+  Safari** — precies de aanname die dit punt onderuithaalt.
+
+  *(Maarten meldt wat hij ziet; ik doe de diagnose en de fix. Puur visueel,
+  dus geen PR nodig — wel testen op het echte toestel, want een
+  bureaublad-browser op telefoonformaat bootst deze bugs niet na.)*
 
 - [ ] **41. Lagere prioriteit uit de UI-doorlichting — nog één over.**
   *(2026-09-23; vier van de vijf afgewerkt op 2026-09-24.)*
