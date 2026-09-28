@@ -1,0 +1,52 @@
+# De welkomstreeks na registratie (TODO punt 60).
+#
+# Draait één keer per dag en stuurt aan wie het toekomt de eerste, tweede of
+# derde mail. Het script bepaalt zelf wie er aan de beurt is en houdt dat bij
+# in de Supabase-tabel mail_log, dus twee keer draaien stuurt niets dubbel.
+#
+# Zonder de secret RESEND_API_KEY doet de run niets en stopt hij groen. De
+# workflow mag dus al bestaan voordat de verzenddienst is ingericht.
+#
+# 07:10 UTC = 09:10 Amsterdamse tijd (zomertijd), 08:10 in de winter. Bewust
+# in de ochtend en ná de nieuws-Action van 0:00, zodat de feed waar mail 2 zijn
+# artikel uit haalt die dag al vers is.
+
+name: Welkomstreeks
+
+on:
+  schedule:
+    - cron: '10 7 * * *'
+  workflow_dispatch:
+    inputs:
+      droog:
+        description: 'Droogloop: laat zien wie een mail zou krijgen, verstuur niets'
+        type: boolean
+        default: true
+
+concurrency:
+  group: welkomstreeks
+  cancel-in-progress: false
+
+jobs:
+  versturen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - name: Mails versturen
+        env:
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: |
+          if [ "${{ inputs.droog }}" = "true" ]; then
+            node backend/stuur-mails.js --droog
+          else
+            node backend/stuur-mails.js
+          fi

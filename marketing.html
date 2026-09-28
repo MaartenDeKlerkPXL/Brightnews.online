@@ -58,6 +58,15 @@
             border-radius: var(--radius-sm); padding: 12px 14px; font-size: .95rem;
         }
         .acties { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+        .kaartvak {
+            display: none; margin-top: 12px; gap: 14px; align-items: flex-start;
+        }
+        .kaartvak.open { display: flex; }
+        .kaartvak canvas {
+            width: 200px; height: 200px; border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm); background: #fff;
+        }
+        .kaartvak .uitleg { font-size: .85rem; color: var(--medium-text); max-width: 340px; }
         .acties button {
             border: 1px solid var(--border-color); background: #fff; border-radius: 8px;
             padding: 7px 14px; cursor: pointer; font-size: .9rem;
@@ -89,7 +98,8 @@
     </section>
 </main>
 <div class="toast" id="toast"></div>
-<script>
+<script type="module">
+import { tekenBeeldkaart, kaartBestandsnaam, downloadKaart } from './js/beeldkaart.js';
 (function () {
     const TALEN = ['nl', 'en', 'de', 'fr', 'es'];
     const inhoud = document.getElementById('inhoud');
@@ -206,6 +216,7 @@
             actieveTaal = taal;
             tekstEl.textContent = dagItem.perTaal?.[taal]?.[kanaal] ?? '(ontbreekt)';
             taalKnoppen.querySelectorAll('button').forEach(b => b.classList.toggle('actief', b.dataset.taal === taal));
+            if (kaartvak.classList.contains('open')) tekenVoorbeeld();
         }
         TALEN.forEach(taal => {
             if (!dagItem.perTaal?.[taal]?.[kanaal]) return;
@@ -215,6 +226,22 @@
             knop.addEventListener('click', () => toonTaal(taal));
             taalKnoppen.appendChild(knop);
         });
+
+        // Beeldkaart — alleen bij Instagram, want daar mag geen link in het
+        // bijschrift en hangt de post volledig van het beeld af (punt 53.1).
+        const kaartvak = document.createElement('div');
+        kaartvak.className = 'kaartvak';
+        let doek = null;
+        async function tekenVoorbeeld() {
+            if (!doek) return;
+            const titel = dagItem.onderwerp?.titelPerTaal?.[actieveTaal]
+                ?? dagItem.onderwerp?.titel ?? '';
+            await tekenBeeldkaart(doek, {
+                kop: titel,
+                soort: dagItem.onderwerp?.soort,
+                taal: actieveTaal,
+            });
+        }
 
         const acties = document.createElement('div');
         acties.className = 'acties';
@@ -241,7 +268,38 @@
         });
         acties.append(kopieer, goed, slecht);
 
-        kaart.append(kop, tekstEl, acties);
+        if (kanaal === 'instagram') {
+            const kaartKnop = document.createElement('button');
+            kaartKnop.textContent = '🖼 Beeldkaart';
+            kaartKnop.addEventListener('click', async () => {
+                if (!doek) {
+                    doek = document.createElement('canvas');
+                    const uitleg = document.createElement('p');
+                    uitleg.className = 'uitleg';
+                    uitleg.innerHTML = '1080 × 1080, klaar voor Instagram. '
+                        + 'De kaart volgt de taalknoppen hierboven.<br><br>';
+                    const download = document.createElement('button');
+                    download.textContent = '⬇ Download PNG';
+                    download.addEventListener('click', async () => {
+                        try {
+                            const titel = dagItem.onderwerp?.titelPerTaal?.[actieveTaal]
+                                ?? dagItem.onderwerp?.titel ?? '';
+                            await downloadKaart(doek, kaartBestandsnaam(titel, actieveTaal));
+                            toast('Beeldkaart gedownload');
+                        } catch (e) {
+                            toast('Download mislukt: ' + e.message);
+                        }
+                    });
+                    uitleg.appendChild(download);
+                    kaartvak.append(doek, uitleg);
+                }
+                kaartvak.classList.toggle('open');
+                if (kaartvak.classList.contains('open')) await tekenVoorbeeld();
+            });
+            acties.appendChild(kaartKnop);
+        }
+
+        kaart.append(kop, tekstEl, acties, kaartvak);
         toonTaal('nl');
         return kaart;
     }
