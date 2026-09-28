@@ -32,7 +32,11 @@ function slugsPerTaal(id) {
 
 function verberg(bestand) {
     let html = fs.readFileSync(bestand, 'utf8');
-    if (/<meta\s+name="robots"/i.test(html)) return false;
+    // Specifiek op 'noindex' testen, niet op een willekeurige robots-meta:
+    // het artikelsjabloon krijgt (punt 51) zelf een robots-regel met
+    // max-image-preview, en die mag een échte uitsluiting niet maskeren.
+    // Twee robots-meta's naast elkaar zijn geldig; Google combineert ze.
+    if (/<meta\s+name="robots"[^>]*noindex/i.test(html)) return false;
     // Direct na de titel, waar de canonical ook staat — één vaste plek,
     // zodat een volgende run hem terugvindt.
     const anker = html.indexOf('</title>');
