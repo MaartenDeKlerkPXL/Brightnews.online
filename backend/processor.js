@@ -169,6 +169,44 @@ const SELECTIE_PROMPT_HASH = require('crypto')
     .createHash('md5').update(selectiePromptSjabloon)
     .update(SNIPPET_SCHOON_VERSIE).digest('hex').slice(0, 8);
 
+// Koopjes en kortingen herkennen aan de bron-URL (punt 3). Twee soorten,
+// en dat onderscheid is de hele truc: een losstaand woord als "deal" mag
+// alleen tellen als het een héél padstuk is (`/deals/…`), want anders sneuvelt
+// een kop als "a big deal for turtles". Samengestelde termen als "promo-code"
+// zijn nergens anders voor te verwarren en mogen dus overal in de URL staan.
+// Uitgeschreven als losse functie zodat hij te testen is zonder een run.
+const KOOPJES_PADSTUKKEN = [
+    'promo', 'promos', 'promocode', 'promocodes', 'coupon', 'coupons',
+    'discount', 'discounts', 'deal', 'deals', 'sale', 'sales', 'shopping',
+];
+const KOOPJES_TERMEN = [
+    'promo-code', 'promo_code', 'promocode', 'coupon-code', 'discount-code',
+    'best-deals', 'black-friday', 'cyber-monday', 'prime-day',
+];
+// Woorden die ook los in een slug mogen staan (`/story/patagonia-coupon`),
+// maar dan wél tussen streepjes. Bewust een kórte lijst: "korting" is op
+// zichzelf geen afwijsreden — "NHS looft dagelijkse wandelaars met kortingen"
+// is een echt BrightNews-verhaal. Alleen woorden die in een nieuwskop
+// vrijwel nooit voorkomen staan hier; "deal", "sale" en "discount" blijven
+// daarom hierboven staan, als heel padstuk.
+const KOOPJES_WOORDDELEN = ['coupon', 'coupons', 'promo', 'promos'];
+function isKoopjesUrl(url) {
+    let u;
+    try {
+        u = new URL(String(url));
+    } catch {
+        // Geen geldige URL: niet weigeren — de rest van de lus vangt dat op.
+        return false;
+    }
+    const alles = (u.pathname + u.search).toLowerCase();
+    if (KOOPJES_TERMEN.some(term => alles.includes(term))) return true;
+    if (KOOPJES_WOORDDELEN.some(w => new RegExp(`[-_]${w}(?:[-_]|$)`).test(alles))) {
+        return true;
+    }
+    // Padstukken én query-sleutels/waarden: /deals/ maar ook ?type=coupon.
+    return alles.split(/[/?&=]/).some(stuk => KOOPJES_PADSTUKKEN.includes(stuk));
+}
+
 // WordPress-feeds (o.a. GoodNewsNetwork) sluiten contentSnippet af met
 // "The post <titel> appeared first on <bron>." — het selectiemodel las dat
 // als commerciële zelfpromotie en wees daardoor kernmateriaal af (run
@@ -363,6 +401,7 @@ async function processNews() {
         alGezien: 0,
         tekstOpgehaald: 0,
         tekstTeKort: 0,
+        koopjeGeweigerd: 0,
         sentimentGeweigerd: 0,
         selectieAfgewezen: 0,
         selectieHerkansing: 0,
@@ -398,6 +437,20 @@ async function processNews() {
             for (const item of feed.items.slice(0, 30)) {
                 if (!item.link) continue;
                 statistieken.kandidaten++;
+
+                // Nog goedkoper dan de sentimentfilter hieronder: koopjes en
+                // kortingen herken je al aan de bron-URL, vóór er ook maar
+                // tekst is opgehaald. Punt 3 (2026-09-20): "15% korting op
+                // Athleta" kwam door de selectie heen terwijl `promo-code`
+                // letterlijk in de URL stond. De afwijslijst in de prompt
+                // noemt kortingsacties wel, maar dan hoop je erop dat het
+                // model het onderweg wegstreept — dit scheelt die gok én een
+                // betaalde AI-call.
+                if (isKoopjesUrl(item.link)) {
+                    seenLinks[item.link] = { s: 'koopje', t: new Date().toISOString() };
+                    statistieken.koopjeGeweigerd++;
+                    continue;
+                }
 
                 const gezien = seenLinks[item.link];
                 const herkansing = gezien?.s === 'sel' && gezien.p !== SELECTIE_PROMPT_HASH;
