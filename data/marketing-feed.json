@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-09-28T04:15:56.073Z",
+ "gegenereerd": "2026-09-28T19:31:23.099Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -14,52 +14,66 @@
      "url": "https://brightnews.online/articles/nl/new-york-city-haalt-131-miljoen-dollar-op-bij-doordash-voor-bezorgers-1790526952732zu9t81thr.html"
     },
     {
-     "id": "1790435677680ci6xsstfv",
-     "titel": "Fans van Dolly Parton vieren eerste 'Imagination Library Day of Reading'",
-     "teaser": "In Raleigh, North Carolina, organiseerden Nick Blanchard en Kelly Forbes een inzamelactie voor kinderboeken ter ere van wijlen muzieklegende en filantroop Dolly Parton. Gouverneur Josh Stein riep 25 september officieel uit tot 'Dolly Parton’s Imagination Library Day of Reading', verwijzend naar haar hit '9 to 5' en haar vrijgevigheid richting slachtoffers van orkaan Helene en jonge lezers. Partons Imagination Library,...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/fans-van-dolly-parton-vieren-eerste-imagination-library-day-of-reading-1790435677680ci6xsstfv.html"
-    },
-    {
-     "id": "1790568932914excz2ptad",
-     "titel": "Archeologen redden 30.000 schatten uit Deir ez-Zor Museum voor ISIS",
-     "teaser": "Een nieuwe studie onthult hoe archeologen hun leven riskeerden om ongeveer 30.000 'onbetaalbare' artefacten te redden uit het Deir ez-Zor Museum in Syrië, vlak voordat de stad dreigde te vallen in handen van ISIS in 2014 en 2015. Studieauteur Maamoun Abdulkarim, destijds hoofd van Syrië's Directoraat-Generaal voor Oudheden en Musea, leidde de operatie. Het museum was slechts via een smalle,...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/nl/archeologen-redden-30-000-schatten-uit-deir-ez-zor-museum-voor-isis-1790568932914excz2ptad.html"
-    },
-    {
-     "id": "1790568906594wygath1u8",
-     "titel": "Onderzoekers Vinden Geuren Die Honingbijen Weghouden Van Pesticiden",
-     "teaser": "Onderzoekers van de University of California, Riverside hebben chemische stoffen geïdentificeerd die honingbijen veilig kunnen afschrikken van met pesticiden behandelde gewassen. Bioloog Anandasankar Ray en entomoloog Boris Baer ontwikkelden een machine-learning model, getraind op chemische structuren en gedragsdata van bijen en fruitvliegen, om geuren te vinden die bijen afstoten. Het model doorzocht meer dan 50 miljoen verbindingen en identificeerde ongeveer...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/nl/onderzoekers-vinden-geuren-die-honingbijen-weghouden-van-pesticiden-1790568906594wygath1u8.html"
-    },
-    {
-     "id": "1790482412739w2tqbovj0",
-     "titel": "Nike-oprichter Phil Knight schenkt miljard dollar aan Universiteit van Oregon",
-     "teaser": "Phil Knight, medeoprichter van Nike, heeft samen met zijn vrouw Penny een gift van 1 miljard dollar gedaan aan zijn alma mater, de Universiteit van Oregon. Volgens de New York Times is dit de grootste eenmalige donatie ooit aan een Amerikaanse openbare universiteit. Het geld stelt de universiteit in staat om een volledig nieuw college voor engineering op te richten,...",
+     "id": "17906236600718klq45n91",
+     "titel": "Vrouwengroep Lioness wint rechtszaak voor airconditioning in Texaanse gevangenissen",
+     "teaser": "Een groep voormalig gedetineerde vrouwen, verenigd in de nonprofit Lioness Justice Impacted Women's Alliance, heeft samen met twee andere organisaties een rechtszaak gewonnen tegen het Texas Department of Criminal Justice. Een federale rechter oordeelde dat de staat voor eind 2029 alle gevangenissen moet voorzien van airconditioning. Momenteel heeft slechts 37 procent van de circa 88.697 gedetineerden een 'koel bed'. Rechter...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/nike-oprichter-phil-knight-schenkt-miljard-dollar-aan-universiteit-van-oregon-1790482412739w2tqbovj0.html"
+     "url": "https://brightnews.online/articles/nl/vrouwengroep-lioness-wint-rechtszaak-voor-airconditioning-in-texaanse-gevangenis-17906236600718klq45n91.html"
+    },
+    {
+     "id": "1790623636477f2bjec92n",
+     "titel": "Weeshippo Bumpy krijgt tweede kans bij Sheldrick Wildlife Trust",
+     "teaser": "Op 2 mei 2026 kreeg de Kenya Wildlife Service een melding van een verweesde hippo in Naivasha, in de Great Rift Valley. De dagenoude hippo lag naast het lichaam van zijn moeder, die waarschijnlijk was gestorven terwijl ze haar kalf verdedigde. Na een lastige waterreddingsactie werd het dier, later Bumpy genoemd, naar Nairobi gebracht en overgedragen aan de Sheldrick Wildlife...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/weeshippo-bumpy-krijgt-tweede-kans-bij-sheldrick-wildlife-trust-1790623636477f2bjec92n.html"
+    },
+    {
+     "id": "1790623610181f2zlj49rp",
+     "titel": "Ellinikon Park wordt grootste kustpark van Europa",
+     "teaser": "Op het terrein van de voormalige luchthaven van Athene, in de zuidelijke buitenwijken, verrijst The Ellinikon Park: twee miljoen vierkante meter groen dat de grootste kustelijke stadspark van Europa wordt (200 hectare). Het park is ontworpen om de omgevingstemperatuur actief te verlagen, verwerkt 100 procent van zijn eigen regenwater ter plekke en houdt via sensorgestuurde irrigatie meer dan 520 plantensoorten...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/ellinikon-park-wordt-grootste-kustpark-van-europa-1790623610181f2zlj49rp.html"
+    },
+    {
+     "id": "1790623526076r2rxyrso1",
+     "titel": "18-jarige Bronx-tiener sponsort schoolkinderen in Ghana",
+     "teaser": "Max Owobu, een 18-jarige scholier uit de Bronx, richtte de Yenko Foundation op, een non-profitorganisatie die de schoolgang van kinderen in Ghana financiert. Owobu, wiens vader in Ghana opgroeide, bracht sinds zijn vijftiende zomers door in het land en zag leeftijdsgenoten werken in plaats van naar school gaan. Met geld van zijn zakgeld betaalde hij eerst de schoolgang van één...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/18-jarige-bronx-tiener-sponsort-schoolkinderen-in-ghana-1790623526076r2rxyrso1.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260927-environment",
+     "titel": "Een weeshippo, een koel park en tropisch fruit: het milieunieuws van deze dagen",
+     "categorie": "Environment",
+     "dag": "2026-09-27",
+     "url": "https://brightnews.online/articles/nl/een-weeshippo-een-koel-park-en-tropisch-fruit-het-milieunieuws-van-deze-dagen-dg-20260927-environment.html"
+    },
+    {
+     "id": "dg-20260927-lifestyle",
+     "titel": "Van gevangeniscellen tot schoolbanken: het goede nieuws van deze dagen",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-27",
+     "url": "https://brightnews.online/articles/nl/van-gevangeniscellen-tot-schoolbanken-het-goede-nieuws-van-deze-dagen-dg-20260927-lifestyle.html"
+    },
+    {
+     "id": "dg-20260927-science",
+     "titel": "Redden, bewaren en beschermen: het wetenschapsnieuws van deze week",
+     "categorie": "Science",
+     "dag": "2026-09-27",
+     "url": "https://brightnews.online/articles/nl/redden-bewaren-en-beschermen-het-wetenschapsnieuws-van-deze-week-dg-20260927-science.html"
+    },
     {
      "id": "dg-20260926-lifestyle",
      "titel": "Boeken, een miljard dollar en tweede kansen: het goede nieuws van deze dagen",
      "categorie": "Lifestyle",
      "dag": "2026-09-26",
      "url": "https://brightnews.online/articles/nl/boeken-een-miljard-dollar-en-tweede-kansen-het-goede-nieuws-van-deze-dagen-dg-20260926-lifestyle.html"
-    },
-    {
-     "id": "dg-20260925-environment",
-     "titel": "Vriendschap tussen wees dieren, een verdwenen vogel terug en groene stappen wereldwijd",
-     "categorie": "Environment",
-     "dag": "2026-09-25",
-     "url": "https://brightnews.online/articles/nl/vriendschap-tussen-wees-dieren-een-verdwenen-vogel-terug-en-groene-stappen-werel-dg-20260925-environment.html"
     }
    ]
   },
@@ -74,52 +88,66 @@
      "url": "https://brightnews.online/articles/en/new-york-city-recovers-131-million-from-doordash-for-delivery-workers-1790526952732zu9t81thr.html"
     },
     {
-     "id": "1790435677680ci6xsstfv",
-     "titel": "Dolly Parton fans celebrate first 'Imagination Library Day of Reading'",
-     "teaser": "In Raleigh, North Carolina, Nick Blanchard and Kelly Forbes organized a children's book drive to honor the late music legend and philanthropist Dolly Parton. Governor Josh Stein officially declared September 25 as 'Dolly Parton's Imagination Library Day of Reading', referencing her hit '9 to 5' and her generosity toward Hurricane Helene victims and young readers. Parton's Imagination Library, launched in...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/dolly-parton-fans-celebrate-first-imagination-library-day-of-reading-1790435677680ci6xsstfv.html"
-    },
-    {
-     "id": "1790568932914excz2ptad",
-     "titel": "Archaeologists rescue 30,000 treasures from Deir ez-Zor Museum before ISIS",
-     "teaser": "A new study reveals how archaeologists risked their lives to save approximately 30,000 'priceless' artifacts from the Deir ez-Zor Museum in Syria, just before the city threatened to fall into ISIS hands in 2014 and 2015. Study author Maamoun Abdulkarim, then head of Syria's Directorate-General of Antiquities and Museums, led the operation. The museum was connected to the military airfield...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/en/archaeologists-rescue-30-000-treasures-from-deir-ez-zor-museum-before-isis-1790568932914excz2ptad.html"
-    },
-    {
-     "id": "1790568906594wygath1u8",
-     "titel": "Researchers Find Scents That Keep Honeybees Away From Pesticides",
-     "teaser": "Researchers at the University of California, Riverside have identified chemical compounds that can safely deter honeybees from pesticide-treated crops. Biologist Anandasankar Ray and entomologist Boris Baer developed a machine-learning model trained on chemical structures and behavioral data from bees and fruit flies to find scents that repel bees. The model screened more than 50 million compounds and identified approximately 130...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/en/researchers-find-scents-that-keep-honeybees-away-from-pesticides-1790568906594wygath1u8.html"
-    },
-    {
-     "id": "1790482412739w2tqbovj0",
-     "titel": "Nike founder Phil Knight donates $1 billion to University of Oregon",
-     "teaser": "Phil Knight, co-founder of Nike, has made a $1 billion gift to his alma mater, the University of Oregon, together with his wife Penny. According to the New York Times, this is the largest single donation ever made to an American public university. The money will enable the university to establish an entirely new engineering college, something that university vice...",
+     "id": "17906236600718klq45n91",
+     "titel": "Women's group Lioness wins lawsuit for air conditioning in Texas prisons",
+     "teaser": "A group of formerly incarcerated women, united in the nonprofit Lioness Justice Impacted Women's Alliance, has won a lawsuit against the Texas Department of Criminal Justice alongside two other organizations. A federal judge ruled that the state must equip all prisons with air conditioning by the end of 2029. Currently, only 37 percent of approximately 88,697 incarcerated people have access...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/nike-founder-phil-knight-donates-1-billion-to-university-of-oregon-1790482412739w2tqbovj0.html"
+     "url": "https://brightnews.online/articles/en/women-s-group-lioness-wins-lawsuit-for-air-conditioning-in-texas-prisons-17906236600718klq45n91.html"
+    },
+    {
+     "id": "1790623636477f2bjec92n",
+     "titel": "Orphaned hippo Bumpy gets second chance at Sheldrick Wildlife Trust",
+     "teaser": "On May 2, 2026, the Kenya Wildlife Service received a report of an orphaned hippo in Naivasha, in the Great Rift Valley. The newborn hippo lay beside the body of his mother, who had likely died while defending her calf. After a difficult water rescue operation, the animal, later named Bumpy, was brought to Nairobi and handed over to the...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/orphaned-hippo-bumpy-gets-second-chance-at-sheldrick-wildlife-trust-1790623636477f2bjec92n.html"
+    },
+    {
+     "id": "1790623610181f2zlj49rp",
+     "titel": "Ellinikon Park becomes Europe's largest coastal park",
+     "teaser": "On the grounds of Athens' former airport in the southern suburbs, The Ellinikon Park is rising: two million square meters of green space that will become Europe's largest coastal urban park (200 hectares). The park is designed to actively lower ambient temperature, processes 100 percent of its own rainwater on-site, and maintains more than 520 plant species through sensor-controlled irrigation....",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/ellinikon-park-becomes-europe-s-largest-coastal-park-1790623610181f2zlj49rp.html"
+    },
+    {
+     "id": "1790623526076r2rxyrso1",
+     "titel": "18-year-old Bronx teen sponsors schoolchildren in Ghana",
+     "teaser": "Max Owobu, an 18-year-old student from the Bronx, founded the Yenko Foundation, a nonprofit organization that finances schooling for children in Ghana. Owobu, whose father grew up in Ghana, has spent summers in the country since age fifteen and witnessed peers working instead of attending school. Using his own allowance, he first paid for the schooling of one child, Matthew,...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/18-year-old-bronx-teen-sponsors-schoolchildren-in-ghana-1790623526076r2rxyrso1.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260927-environment",
+     "titel": "A baby hippo, a cool park and tropical fruit: the environmental news of these days",
+     "categorie": "Environment",
+     "dag": "2026-09-27",
+     "url": "https://brightnews.online/articles/en/a-baby-hippo-a-cool-park-and-tropical-fruit-the-environmental-news-of-these-days-dg-20260927-environment.html"
+    },
+    {
+     "id": "dg-20260927-lifestyle",
+     "titel": "From prison cells to school desks: the good news of these days",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-27",
+     "url": "https://brightnews.online/articles/en/from-prison-cells-to-school-desks-the-good-news-of-these-days-dg-20260927-lifestyle.html"
+    },
+    {
+     "id": "dg-20260927-science",
+     "titel": "Saving, preserving and protecting: this week's science news",
+     "categorie": "Science",
+     "dag": "2026-09-27",
+     "url": "https://brightnews.online/articles/en/saving-preserving-and-protecting-this-week-s-science-news-dg-20260927-science.html"
+    },
     {
      "id": "dg-20260926-lifestyle",
      "titel": "Books, a billion dollars and second chances: the good news of these days",
      "categorie": "Lifestyle",
      "dag": "2026-09-26",
      "url": "https://brightnews.online/articles/en/books-a-billion-dollars-and-second-chances-the-good-news-of-these-days-dg-20260926-lifestyle.html"
-    },
-    {
-     "id": "dg-20260925-environment",
-     "titel": "Friendship between orphaned animals, a missing bird returns and green steps worldwide",
-     "categorie": "Environment",
-     "dag": "2026-09-25",
-     "url": "https://brightnews.online/articles/en/friendship-between-orphaned-animals-a-missing-bird-returns-and-green-steps-world-dg-20260925-environment.html"
     }
    ]
   },
@@ -134,52 +162,66 @@
      "url": "https://brightnews.online/articles/de/new-york-city-erhalt-131-millionen-dollar-von-doordash-fur-lieferanten-1790526952732zu9t81thr.html"
     },
     {
-     "id": "1790435677680ci6xsstfv",
-     "titel": "Fans von Dolly Parton feiern ersten „Imagination Library Day of Reading\"",
-     "teaser": "In Raleigh, North Carolina, organisierten Nick Blanchard und Kelly Forbes eine Sammelaktion für Kinderbücher zu Ehren der verstorbenen Musiklegende und Philanthropin Dolly Parton. Gouverneur Josh Stein rief den 25. September offiziell zum „Dolly Parton's Imagination Library Day of Reading\" aus und verwies dabei auf ihren Hit „9 to 5\" sowie ihre Großzügigkeit gegenüber Opfern des Hurrikans Helene und jungen Lesern....",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/fans-von-dolly-parton-feiern-ersten-imagination-library-day-of-reading-1790435677680ci6xsstfv.html"
-    },
-    {
-     "id": "1790568932914excz2ptad",
-     "titel": "Archäologen retten 30.000 Schätze aus dem Deir ez-Zor Museum vor ISIS",
-     "teaser": "Eine neue Studie enthüllt, wie Archäologen ihr Leben riskierten, um etwa 30.000 „unschätzbare\" Artefakte aus dem Deir ez-Zor Museum in Syrien zu retten, kurz bevor die Stadt 2014 und 2015 in die Hände von ISIS zu fallen drohte. Studienautor Maamoun Abdulkarim, damals Leiter von Syriens Generaldirektion für Altertümer und Museen, leitete die Operation. Das Museum war nur über einen schmalen,...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/de/archaologen-retten-30-000-schatze-aus-dem-deir-ez-zor-museum-vor-isis-1790568932914excz2ptad.html"
-    },
-    {
-     "id": "1790568906594wygath1u8",
-     "titel": "Forscher finden Gerüche, die Honigbienen von Pestiziden fernhalten",
-     "teaser": "Forscher der University of California, Riverside haben chemische Stoffe identifiziert, die Honigbienen sicher von mit Pestiziden behandelten Pflanzen abschrecken können. Der Biologe Anandasankar Ray und der Entomologe Boris Baer entwickelten ein Machine-Learning-Modell, das auf chemischen Strukturen und Verhaltensdaten von Bienen und Fruchtfliegen trainiert wurde, um Gerüche zu finden, die Bienen abstoßen. Das Modell durchsuchte mehr als 50 Millionen Verbindungen und...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/de/forscher-finden-geruche-die-honigbienen-von-pestiziden-fernhalten-1790568906594wygath1u8.html"
-    },
-    {
-     "id": "1790482412739w2tqbovj0",
-     "titel": "Nike-Gründer Phil Knight spendet eine Milliarde Dollar an die Universität von Oregon",
-     "teaser": "Phil Knight, Mitbegründer von Nike, hat zusammen mit seiner Frau Penny eine Spende von einer Milliarde Dollar an seine Alma Mater, die Universität von Oregon, getätigt. Nach Angaben der New York Times ist dies die größte Einzelspende, die je an eine amerikanische öffentliche Universität gegeben wurde. Das Geld ermöglicht es der Universität, ein völlig neues College für Ingenieurwesen zu gründen...",
+     "id": "17906236600718klq45n91",
+     "titel": "Frauengruppe Lioness gewinnt Rechtsstreit für Klimaanlage in texanischen Gefängnissen",
+     "teaser": "Eine Gruppe ehemaliger inhaftierter Frauen, vereinigt in der gemeinnützigen Organisation Lioness Justice Impacted Women's Alliance, hat zusammen mit zwei weiteren Organisationen einen Rechtsstreit gegen das Texas Department of Criminal Justice gewonnen. Ein Bundesrichter entschied, dass der Staat bis Ende 2029 alle Gefängnisse mit Klimaanlagen ausstatten muss. Derzeit haben nur 37 Prozent der etwa 88.697 Inhaftierten ein „kühles Bett\". Richter Robert...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/nike-grunder-phil-knight-spendet-eine-milliarde-dollar-an-die-universitat-von-or-1790482412739w2tqbovj0.html"
+     "url": "https://brightnews.online/articles/de/frauengruppe-lioness-gewinnt-rechtsstreit-fur-klimaanlage-in-texanischen-gefangn-17906236600718klq45n91.html"
+    },
+    {
+     "id": "1790623636477f2bjec92n",
+     "titel": "Weeshippo Bumpy erhält zweite Chance bei Sheldrick Wildlife Trust",
+     "teaser": "Am 2. Mai 2026 erhielt die Kenya Wildlife Service eine Meldung über ein verwaistes Flusspferd in Naivasha, im Great Rift Valley. Das wenige Tage alte Flusspferd lag neben dem Körper seiner Mutter, die wahrscheinlich gestorben war, während sie ihr Kalb verteidigte. Nach einer schwierigen Wasserrettungsaktion wurde das Tier, später Bumpy genannt, nach Nairobi gebracht und der Sheldrick Wildlife Trust übergeben....",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/weeshippo-bumpy-erhalt-zweite-chance-bei-sheldrick-wildlife-trust-1790623636477f2bjec92n.html"
+    },
+    {
+     "id": "1790623610181f2zlj49rp",
+     "titel": "Ellinikon Park wird größter Küstenpark Europas",
+     "teaser": "Auf dem Gelände des ehemaligen Athener Flughafens in den südlichen Vororten entsteht The Ellinikon Park: zwei Millionen Quadratmeter Grünfläche, die zum größten Küstenstadtpark Europas wird (200 Hektar). Der Park wurde konzipiert, um die Umgebungstemperatur aktiv zu senken, verarbeitet 100 Prozent seines eigenen Regenwassers vor Ort und erhält über sensorgesteuerte Bewässerung mehr als 520 Pflanzenarten am Leben. Das Design begann mit...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/ellinikon-park-wird-gro-ter-kustenpark-europas-1790623610181f2zlj49rp.html"
+    },
+    {
+     "id": "1790623526076r2rxyrso1",
+     "titel": "18-Jähriger aus der Bronx sponsert Schulkinder in Ghana",
+     "teaser": "Max Owobu, ein 18-jähriger Schüler aus der Bronx, gründete die Yenko Foundation, eine gemeinnützige Organisation, die die Schulausbildung von Kindern in Ghana finanziert. Owobu, dessen Vater in Ghana aufwuchs, verbrachte seit seinem fünfzehnten Lebensjahr die Sommer im Land und sah Gleichaltrige arbeiten, statt zur Schule zu gehen. Mit Taschengeld bezahlte er zunächst die Schulausbildung eines Kindes, Matthew, auf einer Schule...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/18-jahriger-aus-der-bronx-sponsert-schulkinder-in-ghana-1790623526076r2rxyrso1.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260927-environment",
+     "titel": "Ein Flusspferd-Baby, ein kühler Park und tropische Früchte: die Umweltnachrichten dieser Tage",
+     "categorie": "Environment",
+     "dag": "2026-09-27",
+     "url": "https://brightnews.online/articles/de/ein-flusspferd-baby-ein-kuhler-park-und-tropische-fruchte-die-umweltnachrichten-dg-20260927-environment.html"
+    },
+    {
+     "id": "dg-20260927-lifestyle",
+     "titel": "Von Gefängniszellen bis zu Schulbänken: die guten Nachrichten dieser Tage",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-27",
+     "url": "https://brightnews.online/articles/de/von-gefangniszellen-bis-zu-schulbanken-die-guten-nachrichten-dieser-tage-dg-20260927-lifestyle.html"
+    },
+    {
+     "id": "dg-20260927-science",
+     "titel": "Retten, bewahren und schützen: die Wissenschaftsnachrichten dieser Woche",
+     "categorie": "Science",
+     "dag": "2026-09-27",
+     "url": "https://brightnews.online/articles/de/retten-bewahren-und-schutzen-die-wissenschaftsnachrichten-dieser-woche-dg-20260927-science.html"
+    },
     {
      "id": "dg-20260926-lifestyle",
      "titel": "Bücher, eine Milliarde Dollar und zweite Chancen: die guten Nachrichten dieser Tage",
      "categorie": "Lifestyle",
      "dag": "2026-09-26",
      "url": "https://brightnews.online/articles/de/bucher-eine-milliarde-dollar-und-zweite-chancen-die-guten-nachrichten-dieser-tag-dg-20260926-lifestyle.html"
-    },
-    {
-     "id": "dg-20260925-environment",
-     "titel": "Freundschaft zwischen Waisentieren, ein wiederentdeckter Vogel und grüne Schritte weltweit",
-     "categorie": "Environment",
-     "dag": "2026-09-25",
-     "url": "https://brightnews.online/articles/de/freundschaft-zwischen-waisentieren-ein-wiederentdeckter-vogel-und-grune-schritte-dg-20260925-environment.html"
     }
    ]
   },
@@ -194,52 +236,66 @@
      "url": "https://brightnews.online/articles/fr/new-york-city-reclame-131-millions-de-dollars-a-doordash-pour-les-livreurs-1790526952732zu9t81thr.html"
     },
     {
-     "id": "1790435677680ci6xsstfv",
-     "titel": "Les fans de Dolly Parton célèbrent le premier « Imagination Library Day of Reading »",
-     "teaser": "À Raleigh, en Caroline du Nord, Nick Blanchard et Kelly Forbes ont organisé une collecte de livres pour enfants en l'honneur de la légendaire musicienne et philanthrope Dolly Parton. Le gouverneur Josh Stein a officiellement proclamé le 25 septembre « Dolly Parton's Imagination Library Day of Reading », en référence à son succès « 9 to 5 » et à...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/les-fans-de-dolly-parton-celebrent-le-premier-imagination-library-day-of-reading-1790435677680ci6xsstfv.html"
-    },
-    {
-     "id": "1790568932914excz2ptad",
-     "titel": "Des archéologues sauvent 30 000 trésors du musée de Deir ez-Zor face à Daech",
-     "teaser": "Une nouvelle étude révèle comment des archéologues ont risqué leur vie pour sauver environ 30 000 artefacts « inestimables » du musée de Deir ez-Zor en Syrie, juste avant que la ville ne menace de tomber aux mains de Daech en 2014 et 2015. Maamoun Abdulkarim, auteur de l'étude et alors directeur général des Antiquités et des Musées de Syrie,...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/fr/des-archeologues-sauvent-30-000-tresors-du-musee-de-deir-ez-zor-face-a-daech-1790568932914excz2ptad.html"
-    },
-    {
-     "id": "1790568906594wygath1u8",
-     "titel": "Des chercheurs identifient des odeurs qui éloignent les abeilles des pesticides",
-     "teaser": "Des chercheurs de l'University of California, Riverside ont identifié des substances chimiques capables d'éloigner sans danger les abeilles mellifères des cultures traitées aux pesticides. La biologiste Anandasankar Ray et l'entomologiste Boris Baer ont développé un modèle d'apprentissage automatique, entraîné sur des structures chimiques et des données comportementales d'abeilles et de mouches à fruits, pour trouver des odeurs qui repoussent les...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/fr/des-chercheurs-identifient-des-odeurs-qui-eloignent-les-abeilles-des-pesticides-1790568906594wygath1u8.html"
-    },
-    {
-     "id": "1790482412739w2tqbovj0",
-     "titel": "Le fondateur de Nike Phil Knight fait don d'un milliard de dollars à l'Université de l'Oregon",
-     "teaser": "Phil Knight, cofondateur de Nike, a fait un don de 1 milliard de dollars à son alma mater, l'Université de l'Oregon, aux côtés de son épouse Penny. Selon le New York Times, il s'agit du plus important don unique jamais versé à une université publique américaine. Cette somme permettra à l'université de créer un tout nouveau collège d'ingénierie, un projet...",
+     "id": "17906236600718klq45n91",
+     "titel": "Le groupe de femmes Lioness remporte un procès pour la climatisation dans les prisons du Texas",
+     "teaser": "Un groupe de femmes anciennement détenues, unies au sein de la nonprofit Lioness Justice Impacted Women's Alliance, a remporté un procès aux côtés de deux autres organisations contre le Texas Department of Criminal Justice. Un juge fédéral a ordonné à l'État d'équiper toutes ses prisons de climatisation d'ici la fin 2029. Actuellement, seuls 37 pour cent des quelque 88 697...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/le-fondateur-de-nike-phil-knight-fait-don-d-un-milliard-de-dollars-a-l-universit-1790482412739w2tqbovj0.html"
+     "url": "https://brightnews.online/articles/fr/le-groupe-de-femmes-lioness-remporte-un-proces-pour-la-climatisation-dans-les-pr-17906236600718klq45n91.html"
+    },
+    {
+     "id": "1790623636477f2bjec92n",
+     "titel": "L'hippopotame orphelin Bumpy obtient une seconde chance auprès de Sheldrick Wildlife Trust",
+     "teaser": "Le 2 mai 2026, la Kenya Wildlife Service a reçu un signalement concernant un hippopotame orphelin à Naivasha, dans la Great Rift Valley. Le jeune hippopotame, âgé de quelques jours à peine, gisait aux côtés du cadavre de sa mère, qui avait probablement péri en défendant son petit. Après une opération de sauvetage aquatique délicate, l'animal, baptisé plus tard Bumpy,...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/l-hippopotame-orphelin-bumpy-obtient-une-seconde-chance-aupres-de-sheldrick-wild-1790623636477f2bjec92n.html"
+    },
+    {
+     "id": "1790623610181f2zlj49rp",
+     "titel": "Ellinikon Park devient le plus grand parc côtier d'Europe",
+     "teaser": "Sur le site de l'ancien aéroport d'Athènes, dans les banlieues sud, s'élève The Ellinikon Park : deux millions de mètres carrés de verdure qui deviendront le plus grand parc urbain côtier d'Europe (200 hectares). Le parc a été conçu pour réduire activement la température ambiante, traite 100 % de ses eaux pluviales sur place et maintient en vie plus de...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/ellinikon-park-devient-le-plus-grand-parc-cotier-d-europe-1790623610181f2zlj49rp.html"
+    },
+    {
+     "id": "1790623526076r2rxyrso1",
+     "titel": "Un adolescent du Bronx de 18 ans parraine des écoliers au Ghana",
+     "teaser": "Max Owobu, un lycéen de 18 ans originaire du Bronx, a fondé la Yenko Foundation, une organisation à but non lucratif qui finance la scolarité des enfants au Ghana. Owobu, dont le père a grandi au Ghana, passe les étés dans le pays depuis l'âge de quinze ans et a vu des camarades de son âge travailler au lieu d'aller...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/un-adolescent-du-bronx-de-18-ans-parraine-des-ecoliers-au-ghana-1790623526076r2rxyrso1.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260927-environment",
+     "titel": "Un bébé hippopotame, un parc rafraîchissant et des fruits tropicaux : les bonnes nouvelles environnementales de ces jours-ci",
+     "categorie": "Environment",
+     "dag": "2026-09-27",
+     "url": "https://brightnews.online/articles/fr/un-bebe-hippopotame-un-parc-rafraichissant-et-des-fruits-tropicaux-les-bonnes-no-dg-20260927-environment.html"
+    },
+    {
+     "id": "dg-20260927-lifestyle",
+     "titel": "Des cellules de prison aux bancs d'école : les bonnes nouvelles de ces jours-ci",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-27",
+     "url": "https://brightnews.online/articles/fr/des-cellules-de-prison-aux-bancs-d-ecole-les-bonnes-nouvelles-de-ces-jours-ci-dg-20260927-lifestyle.html"
+    },
+    {
+     "id": "dg-20260927-science",
+     "titel": "Sauver, préserver et protéger : l'actualité scientifique de la semaine",
+     "categorie": "Science",
+     "dag": "2026-09-27",
+     "url": "https://brightnews.online/articles/fr/sauver-preserver-et-proteger-l-actualite-scientifique-de-la-semaine-dg-20260927-science.html"
+    },
     {
      "id": "dg-20260926-lifestyle",
      "titel": "Des livres, un milliard de dollars et des secondes chances : les bonnes nouvelles de ces jours-ci",
      "categorie": "Lifestyle",
      "dag": "2026-09-26",
      "url": "https://brightnews.online/articles/fr/des-livres-un-milliard-de-dollars-et-des-secondes-chances-les-bonnes-nouvelles-d-dg-20260926-lifestyle.html"
-    },
-    {
-     "id": "dg-20260925-environment",
-     "titel": "L'amitié entre animaux orphelins, un oiseau disparu retrouvé et des avancées écologiques dans le monde",
-     "categorie": "Environment",
-     "dag": "2026-09-25",
-     "url": "https://brightnews.online/articles/fr/l-amitie-entre-animaux-orphelins-un-oiseau-disparu-retrouve-et-des-avancees-ecol-dg-20260925-environment.html"
     }
    ]
   },
@@ -254,52 +310,66 @@
      "url": "https://brightnews.online/articles/es/nueva-york-obtiene-131-millones-de-dolares-de-doordash-para-repartidores-1790526952732zu9t81thr.html"
     },
     {
-     "id": "1790435677680ci6xsstfv",
-     "titel": "Los fans de Dolly Parton celebran el primer 'Imagination Library Day of Reading'",
-     "teaser": "En Raleigh, Carolina del Norte, Nick Blanchard y Kelly Forbes organizaron una campaña de recolección de libros infantiles en honor a la difunta leyenda musical y filántropa Dolly Parton. El gobernador Josh Stein proclamó oficialmente el 25 de septiembre como «Dolly Parton's Imagination Library Day of Reading», haciendo referencia a su éxito «9 to 5» y su generosidad hacia las...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/los-fans-de-dolly-parton-celebran-el-primer-imagination-library-day-of-reading-1790435677680ci6xsstfv.html"
-    },
-    {
-     "id": "1790568932914excz2ptad",
-     "titel": "Arqueólogos rescatan 30.000 tesoros del Museo de Deir ez-Zor antes de ISIS",
-     "teaser": "Un nuevo estudio revela cómo arqueólogos arriesgaron sus vidas para rescatar aproximadamente 30.000 artefactos «invaluables» del Museo de Deir ez-Zor en Siria, poco antes de que la ciudad amenazara con caer en manos de ISIS en 2014 y 2015. Maamoun Abdulkarim, autor del estudio y entonces director general de la Dirección General de Antigüedades y Museos de Siria, lideró la...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/es/arqueologos-rescatan-30-000-tesoros-del-museo-de-deir-ez-zor-antes-de-isis-1790568932914excz2ptad.html"
-    },
-    {
-     "id": "1790568906594wygath1u8",
-     "titel": "Investigadores encuentran aromas que alejan a las abejas melíferas de los pesticidas",
-     "teaser": "Investigadores de la University of California, Riverside han identificado sustancias químicas que pueden disuadir de forma segura a las abejas melíferas de los cultivos tratados con pesticidas. El biólogo Anandasankar Ray y el entomólogo Boris Baer desarrollaron un modelo de aprendizaje automático, entrenado con estructuras químicas y datos de comportamiento de abejas y moscas de la fruta, para encontrar aromas...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/es/investigadores-encuentran-aromas-que-alejan-a-las-abejas-meliferas-de-los-pestic-1790568906594wygath1u8.html"
-    },
-    {
-     "id": "1790482412739w2tqbovj0",
-     "titel": "El fundador de Nike Phil Knight dona mil millones de dólares a la Universidad de Oregon",
-     "teaser": "Phil Knight, cofundador de Nike, ha realizado junto con su esposa Penny una donación de mil millones de dólares a su alma mater, la Universidad de Oregon. Según el New York Times, se trata de la mayor donación única jamás realizada a una universidad pública estadounidense. El dinero permitirá a la universidad crear un colegio completamente nuevo de ingeniería, algo...",
+     "id": "17906236600718klq45n91",
+     "titel": "Grupo de mujeres Lioness gana juicio por aire acondicionado en cárceles de Texas",
+     "teaser": "Un grupo de mujeres excarceladas, unidas en la organización sin fines de lucro Lioness Justice Impacted Women's Alliance, ha ganado junto con otras dos organizaciones un juicio contra el Texas Department of Criminal Justice. Un juez federal ordenó que el estado instale aire acondicionado en todas las cárceles antes de finales de 2029. Actualmente, solo el 37 por ciento de...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/el-fundador-de-nike-phil-knight-dona-mil-millones-de-dolares-a-la-universidad-de-1790482412739w2tqbovj0.html"
+     "url": "https://brightnews.online/articles/es/grupo-de-mujeres-lioness-gana-juicio-por-aire-acondicionado-en-carceles-de-texas-17906236600718klq45n91.html"
+    },
+    {
+     "id": "1790623636477f2bjec92n",
+     "titel": "La hipopótamo huérfana Bumpy recibe una segunda oportunidad en Sheldrick Wildlife Trust",
+     "teaser": "El 2 de mayo de 2026, el Kenya Wildlife Service recibió una notificación sobre una hipopótamo huérfana en Naivasha, en el Gran Valle del Rift. La hipopótamo de apenas días de vida yacía junto al cuerpo de su madre, que probablemente murió mientras defendía a su cría. Tras un difícil operativo de rescate acuático, el animal, posteriormente llamado Bumpy, fue...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/la-hipopotamo-huerfana-bumpy-recibe-una-segunda-oportunidad-en-sheldrick-wildlif-1790623636477f2bjec92n.html"
+    },
+    {
+     "id": "1790623610181f2zlj49rp",
+     "titel": "Ellinikon Park se convierte en el mayor parque costero de Europa",
+     "teaser": "En el terreno del antiguo aeropuerto de Atenas, en las afueras meridionales, surge The Ellinikon Park: dos millones de metros cuadrados de verde que se convertirán en el mayor parque urbano costero de Europa (200 hectáreas). El parque ha sido diseñado para reducir activamente la temperatura ambiental, procesa el 100 por ciento de su agua de lluvia in situ y...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/ellinikon-park-se-convierte-en-el-mayor-parque-costero-de-europa-1790623610181f2zlj49rp.html"
+    },
+    {
+     "id": "1790623526076r2rxyrso1",
+     "titel": "Adolescente del Bronx de 18 años patrocina la educación de niños en Ghana",
+     "teaser": "Max Owobu, un estudiante de 18 años del Bronx, fundó la Yenko Foundation, una organización sin fines de lucro que financia la educación de niños en Ghana. Owobu, cuyo padre creció en Ghana, ha pasado veranos en el país desde los quince años y vio a compañeros de su edad trabajar en lugar de asistir a la escuela. Con dinero...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/adolescente-del-bronx-de-18-anos-patrocina-la-educacion-de-ninos-en-ghana-1790623526076r2rxyrso1.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260927-environment",
+     "titel": "Un hipopótamo bebé, un parque fresco y frutas tropicales: las noticias ambientales de estos días",
+     "categorie": "Environment",
+     "dag": "2026-09-27",
+     "url": "https://brightnews.online/articles/es/un-hipopotamo-bebe-un-parque-fresco-y-frutas-tropicales-las-noticias-ambientales-dg-20260927-environment.html"
+    },
+    {
+     "id": "dg-20260927-lifestyle",
+     "titel": "De celdas de prisión a pupitres escolares: las buenas noticias de estos días",
+     "categorie": "Lifestyle",
+     "dag": "2026-09-27",
+     "url": "https://brightnews.online/articles/es/de-celdas-de-prision-a-pupitres-escolares-las-buenas-noticias-de-estos-dias-dg-20260927-lifestyle.html"
+    },
+    {
+     "id": "dg-20260927-science",
+     "titel": "Salvar, conservar y proteger: las noticias científicas de esta semana",
+     "categorie": "Science",
+     "dag": "2026-09-27",
+     "url": "https://brightnews.online/articles/es/salvar-conservar-y-proteger-las-noticias-cientificas-de-esta-semana-dg-20260927-science.html"
+    },
     {
      "id": "dg-20260926-lifestyle",
      "titel": "Libros, mil millones de dólares y segundas oportunidades: las buenas noticias de estos días",
      "categorie": "Lifestyle",
      "dag": "2026-09-26",
      "url": "https://brightnews.online/articles/es/libros-mil-millones-de-dolares-y-segundas-oportunidades-las-buenas-noticias-de-e-dg-20260926-lifestyle.html"
-    },
-    {
-     "id": "dg-20260925-environment",
-     "titel": "La amistad entre animales huérfanos, un ave desaparecida que regresa y avances verdes en todo el mundo",
-     "categorie": "Environment",
-     "dag": "2026-09-25",
-     "url": "https://brightnews.online/articles/es/la-amistad-entre-animales-huerfanos-un-ave-desaparecida-que-regresa-y-avances-ve-dg-20260925-environment.html"
     }
    ]
   }

@@ -1,5 +1,226 @@
 [
   {
+    "id": "dg-20260927-environment",
+    "type": "digest",
+    "digest_date": "2026-09-27",
+    "title": "A baby hippo, a cool park and tropical fruit: the environmental news of these days",
+    "summary": "These days, nature is showing us how animals, plants and people adapt to a changing world. From a vulnerable young animal to an entirely new urban park: good news is coming from every corner of the globe. Those who read the individual stories will discover a different kind of hope each time. In Kenya, the story of hippo Bumpy began dramatically. He was found as a baby next to his mother's body in the Great Rift Valley, following a difficult rescue operation in the water. At the Sheldrick Wildlife Trust, he received the care he needed: fed, swaddled and sleeping...",
+    "image_alt": "A baby hippo, a cool park and tropical fruit: the environmental news of these days",
+    "meta_description": "Baby hippo Bumpy, Europe's largest coastal park, protected langurs in Vietnam and tropical fruit in France: the positive environmental news of these days.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abaa9c460f01fe16ba2ada7_6abaa9c2d563e627c8c8114e_bumpy-baby-hippo-rescue-orphaned-featured.webp",
+    "date": "2026-09-28T19:31:22.614Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1790623636477f2bjec92n",
+        "title": "Orphaned hippo Bumpy gets second chance at Sheldrick Wildlife Trust"
+      },
+      {
+        "id": "1790623610181f2zlj49rp",
+        "title": "Ellinikon Park becomes Europe's largest coastal park"
+      },
+      {
+        "id": "1790623473034ngjkir1ra",
+        "title": "Vietnam protects last habitat of Delacour's langur"
+      },
+      {
+        "id": "1790623443776l2h758pev",
+        "title": "French farmers grow papayas and bananas thanks to warming"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260927-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-09-27",
+    "title": "From prison cells to school desks: the good news of these days",
+    "summary": "This week shows that good intentions lead to results in very different places: in a courtroom, in a classroom and in a clothing factory. From Texas to Bristol, from the Bronx to Ghana: people are taking steps that genuinely improve the lives of others. In Texas, formerly incarcerated women won a long-fought battle. The group Lioness Justice Impacted Women's Alliance spent years collecting letters from prisoners about the heat in Texan cells. A federal judge has now ruled in their favour: by the end of 2029, every prison in the state must have air conditioning. Currently, fewer than 40 per...",
+    "image_alt": "From prison cells to school desks: the good news of these days",
+    "meta_description": "From air conditioning in Texan cells to school fees in Ghana and fair fashion from Bristol: the good news of these days in a nutshell.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab985d54c7299bd38813ae1_2741910254-921a85b985-b-featured.webp",
+    "date": "2026-09-28T19:30:19.311Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "17906236600718klq45n91",
+        "title": "Women's group Lioness wins lawsuit for air conditioning in Texas prisons"
+      },
+      {
+        "id": "1790623526076r2rxyrso1",
+        "title": "18-year-old Bronx teen sponsors schoolchildren in Ghana"
+      },
+      {
+        "id": "1790623414220uasnkeihr",
+        "title": "Ethical fashion brand Yes Friends secures investment from Deborah Meaden"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260927-science",
+    "type": "digest",
+    "digest_date": "2026-09-27",
+    "title": "Saving, preserving and protecting: this week's science news",
+    "summary": "These days show how science and perseverance can save things that would otherwise be lost. From ancient treasures to bees, and from peace to young talent: everywhere people are stepping up to keep something precious safe. A new study reveals how archaeologists in Syria risked their lives to rescue some 30,000 irreplaceable pieces from the Deir ez-Zor Museum, just before ISIS threatened to take the city [1]. The collection contained artefacts from ancient sites such as Halaf, Dura-Europos and Mari, and the rescue operation went through a narrow, dangerous passage to the airport. Under the leadership of Maamoun Abdulkarim, ultimately...",
+    "image_alt": "Saving, preserving and protecting: this week's science news",
+    "meta_description": "From rescued heritage in Syria to bee-friendly scents and young talent in Kiel: this week's science news in brief.",
+    "meta_keywords": "Science",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Evacuation-of-art-crates-from-Deir-ez-Zor-Museum-during-Syria-war-SWNS-cropped.jpeg",
+    "date": "2026-09-28T19:29:11.242Z",
+    "category": "Science",
+    "refs": [
+      {
+        "id": "1790568932914excz2ptad",
+        "title": "Archaeologists rescue 30,000 treasures from Deir ez-Zor Museum before ISIS"
+      },
+      {
+        "id": "1790568906594wygath1u8",
+        "title": "Researchers Find Scents That Keep Honeybees Away From Pesticides"
+      },
+      {
+        "id": "1790623693825gvtmjwuzh",
+        "title": "Young scientists shine at EUCYS in Kiel"
+      },
+      {
+        "id": "17906235003386r8mn1zox",
+        "title": "Clay tablet with world's oldest peace treaty discovered"
+      }
+    ]
+  },
+  {
+    "id": "1790623693825gvtmjwuzh",
+    "title": "Young scientists shine at EUCYS in Kiel",
+    "summary": "During the 37th European Union Contest for Young Scientists (EUCYS), which concluded on 27 September in Kiel, Germany, young researchers were honoured for their innovative work. Some 140 participants aged 14 to 20 from nearly 40 countries presented projects on topics including biology, mathematics, cancer research and medical technology. Four projects won the main prize of €7,000 each: PlantLeaf from...",
+    "image_alt": "Young scientists present their research projects during EUCYS 2025 in Kiel, Germany.",
+    "meta_description": "Young scientists from nearly 40 countries win prizes at EUCYS 2025 in Kiel for groundbreaking research.",
+    "meta_keywords": "EUCYS, young scientists, Kiel, science competition, Science Comes to Town, research, innovation",
+    "link": "https://www.openaccessgovernment.org/europes-young-scientists-celebrated-for-groundbreaking-research/214760/",
+    "source": "Openaccessgovernment.org",
+    "image": "/assets/fallback/science-3.jpg",
+    "date": "2026-09-28T19:28:15.457Z",
+    "category": "Science",
+    "score": 8
+  },
+  {
+    "id": "17906236600718klq45n91",
+    "title": "Women's group Lioness wins lawsuit for air conditioning in Texas prisons",
+    "summary": "A group of formerly incarcerated women, united in the nonprofit Lioness Justice Impacted Women's Alliance, has won a lawsuit against the Texas Department of Criminal Justice alongside two other organizations. A federal judge ruled that the state must equip all prisons with air conditioning by the end of 2029. Currently, only 37 percent of approximately 88,697 incarcerated people have access...",
+    "image_alt": "Concrete and steel prison walls under the harsh Texas sun",
+    "meta_description": "Formerly incarcerated women win lawsuit: Texas must provide air conditioning in all prisons by 2029.",
+    "meta_keywords": "Lioness, Texas prisons, air conditioning, lawsuit, TDCJ, Eighth Amendment, prison heat",
+    "link": "https://www.goodgoodgood.co/articles/lioness-justice-formerly-incarcerated-prison-air-conditioning",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab985d54c7299bd38813ae1_2741910254-921a85b985-b-featured.webp",
+    "date": "2026-09-28T19:27:41.218Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "1790623636477f2bjec92n",
+    "title": "Orphaned hippo Bumpy gets second chance at Sheldrick Wildlife Trust",
+    "summary": "On May 2, 2026, the Kenya Wildlife Service received a report of an orphaned hippo in Naivasha, in the Great Rift Valley. The newborn hippo lay beside the body of his mother, who had likely died while defending her calf. After a difficult water rescue operation, the animal, later named Bumpy, was brought to Nairobi and handed over to the...",
+    "image_alt": "Newborn hippo Bumpy cuddled by his caregiver at the Sheldrick Wildlife Trust",
+    "meta_description": "Orphaned hippo Bumpy finds a second chance after tragic loss at Sheldrick Wildlife Trust in Kenya.",
+    "meta_keywords": "Bumpy hippo, Sheldrick Wildlife Trust, Kenya Wildlife Service, Naivasha, orphaned hippo, Kaluku Unit, Tsavo",
+    "link": "https://www.goodgoodgood.co/articles/bumpy-baby-hippo-rescue-orphaned",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abaa9c460f01fe16ba2ada7_6abaa9c2d563e627c8c8114e_bumpy-baby-hippo-rescue-orphaned-featured.webp",
+    "date": "2026-09-28T19:27:17.583Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790623610181f2zlj49rp",
+    "title": "Ellinikon Park becomes Europe's largest coastal park",
+    "summary": "On the grounds of Athens' former airport in the southern suburbs, The Ellinikon Park is rising: two million square meters of green space that will become Europe's largest coastal urban park (200 hectares). The park is designed to actively lower ambient temperature, processes 100 percent of its own rainwater on-site, and maintains more than 520 plant species through sensor-controlled irrigation....",
+    "image_alt": "Design of The Ellinikon Park on the grounds of Athens' former airport",
+    "meta_description": "Former Athens airport becomes Ellinikon Park: Europe's largest coastal park with climate design and 520 plant species.",
+    "meta_keywords": "Ellinikon Park, Athens, urban park, climate design, cooling, airport, green space, Europe",
+    "link": "https://www.optimistdaily.com/2026/09/athens-former-airport-is-becoming-europes-largest-coastal-urban-park/",
+    "source": "OptimistDaily.com",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/Coastal-Front_1-1024x756.jpg",
+    "date": "2026-09-28T19:26:51.510Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790623526076r2rxyrso1",
+    "title": "18-year-old Bronx teen sponsors schoolchildren in Ghana",
+    "summary": "Max Owobu, an 18-year-old student from the Bronx, founded the Yenko Foundation, a nonprofit organization that finances schooling for children in Ghana. Owobu, whose father grew up in Ghana, has spent summers in the country since age fifteen and witnessed peers working instead of attending school. Using his own allowance, he first paid for the schooling of one child, Matthew,...",
+    "image_alt": "18-year-old Max Owobu from the Bronx who sponsors schoolchildren in Ghana through his Yenko Foundation",
+    "meta_description": "18-year-old Max Owobu from the Bronx establishes Yenko Foundation to finance schooling for children in Ghana.",
+    "meta_keywords": "Max Owobu, Yenko Foundation, Ghana, Bronx, nonprofit, school sponsorship, Calvary Methodist, education Ghana",
+    "link": "https://www.goodnewsnetwork.org/18-year-old-from-the-bronx-starts-nonprofit-to-sponsor-school-children-in-ghana/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Max-Owobu-pictured-at-center-in-white-smiles-for-the-camera-surrounded-by-children-from-Calvary-Methodist-Elementary-School-credit-supplied-to-GNN.jpg",
+    "date": "2026-09-28T19:25:27.486Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "17906235003386r8mn1zox",
+    "title": "Clay tablet with world's oldest peace treaty discovered",
+    "summary": "Archaeologists have found a clay tablet in Turkey containing a fragment of the Treaty of Kadesh, the oldest known peace treaty in the world. The tablet, featuring articles 12 through 20, was excavated last year at the Hittite royal palace in Buyukkale, in the ancient Hittite capital Hattusa. Around 1300 BC, the armies of Pharaoh Ramses II and Hittite King...",
+    "image_alt": "Clay tablet with cuneiform script of the Treaty of Kadesh, found in Hattusa, Turkey",
+    "meta_description": "Archaeologists find clay tablet with the Treaty of Kadesh, the world's oldest peace treaty, in Hattusa, Turkey.",
+    "meta_keywords": "Treaty of Kadesh, clay tablet, Hattusa, Hittites, Ramses II, oldest peace treaty, cuneiform, Turkey, archaeology",
+    "link": "https://www.goodnewsnetwork.org/researchers-unearth-a-clay-tablet-inscribed-with-the-worlds-oldest-peace-treaty/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Turkiyes-ministry-of-culture-and-tourism.jpg",
+    "date": "2026-09-28T19:25:02.009Z",
+    "category": "Science",
+    "score": 8
+  },
+  {
+    "id": "1790623473034ngjkir1ra",
+    "title": "Vietnam protects last habitat of Delacour's langur",
+    "summary": "Vietnam has established a specially protected nature reserve for the Delacour's langur, one of the world's most endangered primates. Of this species, named after the French biologist who discovered it, only around 17 populations remain, totalling approximately 250 animals. Ninh Binh province has created the Kim Bang Delacour's Langur Habitat Conservation Area, covering 3,182 hectares spread across the districts of...",
+    "image_alt": "Delacour's langur in the forested limestone landscape of Ninh Binh, Vietnam",
+    "meta_description": "Vietnam establishes protected nature reserve for the Delacour's langur, one of the world's most endangered primate species.",
+    "meta_keywords": "Delacour's langur, Vietnam, Ninh Binh, nature conservation, endangered species, Tam Chuc, biodiversity",
+    "link": "https://www.goodnewsnetwork.org/vietnam-swiftly-protects-forests-containing-the-last-of-the-worlds-most-endangered-monkey/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Delacours_langur_Trachypithecus_delacouri_Van_Long_2.jpg",
+    "date": "2026-09-28T19:24:35.075Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790623443776l2h758pev",
+    "title": "French farmers grow papayas and bananas thanks to warming",
+    "summary": "In the Var department in southern France, near Toulon, farmers are capitalizing on the warming climate to cultivate tropical fruit. Dominique Berdin grows around 20 different tropical fruits in her greenhouse in Ollioules, including papaya, passion fruit and pineapple, without pesticides. Agronomist Johan Bultel cultivates 26 banana varieties from Honduras and Réunion among other places, both in greenhouses and on...",
+    "image_alt": "French farmer inspects papayas and tropical fruit in her greenhouse in Ollioules",
+    "meta_description": "French farmers in the Var grow papaya, bananas and other tropical fruit thanks to warming, pesticide-free and locally.",
+    "meta_keywords": "tropical fruit France, growing papayas, bananas France, climate change agriculture, Var department, dragon fruit, local cultivation",
+    "link": "https://www.goodnewsnetwork.org/resilient-french-farmers-use-warming-climate-to-grow-the-countrys-own-tropical-fruit/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/maxresdefault-2.jpg",
+    "date": "2026-09-28T19:24:05.380Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790623414220uasnkeihr",
+    "title": "Ethical fashion brand Yes Friends secures investment from Deborah Meaden",
+    "summary": "Bristol-based clothing brand Yes Friends proves that affordable fashion can be ethical. Founded in 2021 with a sustainable T-shirt priced at £7.99, the company has expanded to include underwear and corduroy jackets, with a focus on living wages and low-impact production. Through a tipping scheme, customers can donate money to textile workers; this has already raised over £56,000. Founder Sam...",
+    "image_alt": "Clothing from ethical fashion brand Yes Friends",
+    "meta_description": "Ethical fashion brand Yes Friends secures £20,000 from Deborah Meaden and proves sustainable fashion can be affordable.",
+    "meta_keywords": "Yes Friends, ethical fashion, Deborah Meaden, Dragons' Den, sustainable clothing, living wage, Bristol",
+    "link": "https://www.positive.news/economics/the-ethical-fashion-brand-championing-change-across-the-industry/",
+    "source": "Positive.News",
+    "image": "https://www.positive.news/wp-content/uploads/2026/09/deborahxyesfriends-2.jpg",
+    "date": "2026-09-28T19:23:36.944Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
     "id": "1790568932914excz2ptad",
     "title": "Archaeologists rescue 30,000 treasures from Deir ez-Zor Museum before ISIS",
     "summary": "A new study reveals how archaeologists risked their lives to save approximately 30,000 'priceless' artifacts from the Deir ez-Zor Museum in Syria, just before the city threatened to fall into ISIS hands in 2014 and 2015. Study author Maamoun Abdulkarim, then head of Syria's Directorate-General of Antiquities and Museums, led the operation. The museum was connected to the military airfield...",
@@ -2248,43 +2469,6 @@
     "score": 9
   },
   {
-    "id": "dg-20260914-lifestyle",
-    "type": "digest",
-    "digest_date": "2026-09-14",
-    "title": "Houses, neighbors in the dark and two determined perseverers: the lifestyle news of these days",
-    "summary": "These days show that caring for each other and perseverance often go hand in hand. From a homeless man who finally gets a permanent place, to a motorcyclist and a hiker who push boundaries, and a hotel that let a stuffed animal stay as a VIP guest: the lifestyle stories of recent days revolve around people who persevere or help someone else do so. In London, Michael, who became homeless in Plymouth in 2022, received his own apartment in London through the organization The Connection under the Solo Homes program. His support worker Gen helped with furnishing and access to...",
-    "image_alt": "Houses, neighbors in the dark and two determined perseverers: the lifestyle news of these days",
-    "meta_description": "From permanent homes to record journeys and a stuffed animal on vacation: the positive lifestyle news of recent days at BrightNews.",
-    "meta_keywords": "Lifestyle",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://www.positive.news/wp-content/uploads/2026/09/insta_photos.jpg",
-    "date": "2026-09-15T04:39:56.638Z",
-    "category": "Lifestyle",
-    "refs": [
-      {
-        "id": "17894468770162a9ki2qkf",
-        "title": "A Home First, Then Recovery"
-      },
-      {
-        "id": "1789409245357jsvwu6hgj",
-        "title": "Six Hours In The Dark: Strangers Became Neighbors"
-      },
-      {
-        "id": "1789409849831wxbubrpho",
-        "title": "Motorcyclist breaks four records for charity"
-      },
-      {
-        "id": "1789409470504s9irbn7j7",
-        "title": "91-year-old 'Greybeard' completes Appalachian Trail"
-      },
-      {
-        "id": "1789409347343xq0nmhfdb",
-        "title": "Hotel Gives Lost Stuffed Animal Rosie a VIP Vacation"
-      }
-    ]
-  },
-  {
     "id": "1789447008594levnblqrg",
     "title": "Elephants Can Control Their Impulses",
     "summary": "New research shows that elephants can think before they act and suppress impulsive behavior. In experiments at the National Elephant Institute in Thailand, Asian elephants were given a transparent box containing fruit. Instead of immediately reaching for the food, they chose the learned side opening. When the box was rotated, they first reached toward the old position, but quickly corrected...",
@@ -2356,51 +2540,6 @@
       {
         "id": "1789409877924blp03uhq2",
         "title": "Glowing Deep-Sea Spiders Discovered"
-      }
-    ]
-  },
-  {
-    "id": "dg-20260913-environment",
-    "type": "digest",
-    "digest_date": "2026-09-13",
-    "title": "From factory roof to backyard: where nature is reclaiming space these days",
-    "summary": "These days, the Environment category shows that nature restoration can begin at every scale: on an old industrial site, on a farm, even on the roof of a car factory. Time and again, it turns out that animals and plants return quickly once space becomes available for them, large or small. In England, a former landfill has developed into an important breeding ground. At Woolston Eyes Nature Reserve, created from land that became available during the construction of the Manchester Ship Canal, 64% of all ringed great crested grebes in the United Kingdom now breed [1]. In the United States,...",
-    "image_alt": "From factory roof to backyard: where nature is reclaiming space these days",
-    "meta_description": "Nature restoration happens at every scale: from factory roofs to backyards. Animals and plants return quickly when given space.",
-    "meta_keywords": "Environment",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/A-black-necked-grebe-credit-Stephan-Sprinz-CC-4.0.-Int.jpg",
-    "date": "2026-09-14T18:21:48.682Z",
-    "category": "Environment",
-    "refs": [
-      {
-        "id": "1789409118781d4hb22iln",
-        "title": "Former Landfill Becomes Home for 64% of UK Eared Grebes"
-      },
-      {
-        "id": "17894100450198ocoeho6u",
-        "title": "Save The Planet With Engineering"
-      },
-      {
-        "id": "1789409799360sobgjqj34",
-        "title": "Spring Paradise Full of Wild Animals"
-      },
-      {
-        "id": "178940973026501hd07gvz",
-        "title": "Egyptian Farmers Grow Under Solar Panels"
-      },
-      {
-        "id": "17894096599365200e9alx",
-        "title": "Colombia protects 42% Amazon"
-      },
-      {
-        "id": "1789409640713a0mtp9lqb",
-        "title": "Your Backyard As National Park"
-      },
-      {
-        "id": "1789409531647bvabwfmzh",
-        "title": "Green Roof on Ford's Giant Factory"
       }
     ]
   },
@@ -2487,145 +2626,5 @@
     "date": "2026-09-14T18:17:58.890Z",
     "category": "Science",
     "score": 8
-  },
-  {
-    "id": "1789409849831wxbubrpho",
-    "title": "Motorcyclist breaks four records for charity",
-    "summary": "American Patrick Cornell, known as 'Vroom Old Man', rode 201,901 miles (over 324,928 km) through the US and Canada on his 2025 Indian Pursuit over twelve consecutive months. He did this to raise money for the Myotonic Dystrophy Foundation, after multiple family members of his wife were affected by this rare genetic muscle disease. Cornell raised 150,000 dollars and set...",
-    "image_alt": "Patrick Cornell poses with his 2025 Indian Pursuit motorcycle",
-    "meta_description": "Patrick Cornell rode 201,901 miles in 12 months, broke 4 world records and raised $150,000 for the Myotonic Dystrophy Foundation.",
-    "meta_keywords": "Patrick Cornell, Vroom Old Man, Indian Pursuit, motorcycle world record, Myotonic Dystrophy Foundation, charity, Atlas World Records",
-    "link": "https://newatlas.com/motorcycles/indian-pursuit-four-world-records/",
-    "source": "Newatlas.com",
-    "image": "https://assets.newatlas.com/dims4/default/5a7545d/2147483647/strip/true/crop/2048x1536+0+0/resize/1280x960!/format/webp/quality/90/?url=https%3A%2F%2Fnewatlas-brightspot.s3.ap-southeast-2.amazonaws.com%2F3b%2F84%2F273e40fc44e5882367b18b6b84a1%2F6a9926c6c1099.jpg",
-    "date": "2026-09-14T18:17:31.189Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "1789409799360sobgjqj34",
-    "title": "Spring Paradise Full of Wild Animals",
-    "summary": "A trail camera in Idaho's remote backcountry captured remarkable footage for months at a hidden mountain spring. Peek Outdoors, a company specializing in trail cameras, shared the montage on YouTube. From June to August, a cougar with her three cubs, elk, deer, bears, fox kits and wild turkeys visited the spring to drink or play. The footage shows how important...",
-    "image_alt": "Trail camera image of a cougar with cubs at a mountain spring in Idaho",
-    "meta_description": "Trail camera in Idaho captures remarkable footage of bears, elk and cougars at the same mountain spring.",
-    "meta_keywords": "trail camera, Idaho, wildlife, cougar, biodiversity, nature photography, Peek Outdoors",
-    "link": "https://www.goodgoodgood.co/articles/trail-cameras-wildlife-cubs-idaho-stream",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa2f47e40652bf0c766d450_6aa2f47d0da1a7f7c33f3821_trail-cameras-wildlife-cubs-idaho-stream-featured.webp",
-    "date": "2026-09-14T18:16:40.468Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "178940973026501hd07gvz",
-    "title": "Egyptian Farmers Grow Under Solar Panels",
-    "summary": "Egyptian farmers are experimenting with agrivoltaic technology: solar panels above fields generate clean electricity and protect crops from heat and evaporation. Two pilot projects test different panel arrangements, such as a checkerboard pattern, allowing more light to reach crops while saving water. At Habiba Community in South Sinai, watermelons have been growing well under the panels since May. Worldwide, research...",
-    "image_alt": "Solar panels above an agricultural field with crops in Egypt",
-    "meta_description": "Egyptian farmers combine solar panels with agriculture: less water loss, less heat and clean electricity for irrigation.",
-    "meta_keywords": "agrivoltaic, solar panels, agriculture, Egypt, renewable energy, watermelon, water conservation",
-    "link": "https://www.goodgoodgood.co/articles/planting-crops-under-solar-panels-egypt",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a988da75a746d05f96cb454_6a988da66092e99ab11d38c0_planting-crops-under-solar-panels-egypt-featured.webp",
-    "date": "2026-09-14T18:15:31.727Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "17894096599365200e9alx",
-    "title": "Colombia protects 42% Amazon",
-    "summary": "Colombia's outgoing president has protected 42% of the country's Amazon region against mining. This emerges from an article by The Optimist Daily. Further details about the approach, background or consequences are not mentioned in the available source.",
-    "image_alt": "Amazon rainforest in Colombia",
-    "meta_description": "Colombia protects 42% of the Amazon against mining, reports The Optimist Daily.",
-    "meta_keywords": "Colombia, Amazon, mining, nature conservation, environment",
-    "link": "https://www.optimistdaily.com/2026/09/how-colombias-outgoing-president-protected-42-of-the-countrys-amazon-from-mining/",
-    "source": "OptimistDaily.com",
-    "image": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=800&q=80",
-    "date": "2026-09-14T18:14:20.928Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1789409640713a0mtp9lqb",
-    "title": "Your Backyard As National Park",
-    "summary": "Entomologist Doug Tallamy demonstrates on his 10-hectare property in Pennsylvania how planting native plants restores nature: more than 1,380 moth species and 62 breeding bird species. According to Tallamy, the solution to the biodiversity crisis lies not only in national parks, but especially in private gardens. Because 80 percent of land east of the Mississippi is privately owned, planting native...",
-    "image_alt": "Garden with native plants and butterflies as an example of nature restoration",
-    "meta_description": "Entomologist Doug Tallamy shows how native plants in your garden can help solve the biodiversity crisis.",
-    "meta_keywords": "Doug Tallamy, Homegrown National Park, native plants, biodiversity, nature conservation, backyard ecosystem",
-    "link": "https://reasonstobecheerful.world/the-national-park-that-stretches-from-coast-to-coast/",
-    "source": "ReasonsToBeCheerful.world",
-    "image": "https://reasonstobecheerful.world/wp-content/uploads/2026/09/J-Paddock_Lake-Oconee_GA_1759805474-scaled.jpg",
-    "date": "2026-09-14T18:14:01.980Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1789409531647bvabwfmzh",
-    "title": "Green Roof on Ford's Giant Factory",
-    "summary": "At Ford's Rogue plant in Dearborn, Michigan, a 'living roof' of 454,000 square feet has covered the final assembly building since 2002. The mix of sedum and wild plants attracted nesting plovers within five days, while Ford Raptors and F-150s roll off the line below. The roof of porous concrete, soil and sedum keeps the building 10 degrees warmer in...",
-    "image_alt": "Living roof with sedum and wild plants on Ford's Rogue plant in Dearborn",
-    "meta_description": "Ford's Rogue plant features a 454,000 square foot green roof that saves energy and attracts birds.",
-    "meta_keywords": "Ford, living roof, green roof, Rogue plant, Dearborn, sustainability, biodiversity, sedum, honeybees",
-    "link": "https://www.goodnewsnetwork.org/living-roof-grows-atop-fords-largest-factory-saving-energy-and-boosting-biodiversity/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Photographed-by-Michelle-Andonian-from-The-Henry-Ford-Collections-e1788942399679.jpg",
-    "date": "2026-09-14T18:12:13.431Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1789409470504s9irbn7j7",
-    "title": "91-year-old 'Greybeard' completes Appalachian Trail",
-    "summary": "Dale Sanders, nicknamed 'Grey Beard', became the oldest person to complete the Appalachian Trail at age 91. It took him 359 days, he fell 71 times and was briefly hospitalized once. Sanders, born in 1935 in Kentucky, had previously hiked the trail in 2017 at age 82. This time his route was unconventional: he started at Harper's Ferry, first headed...",
-    "image_alt": "91-year-old man with grey beard and trekking poles on a mountaintop in Maine after completing the Appalachian Trail",
-    "meta_description": "Dale Sanders (91) becomes the oldest person to complete the Appalachian Trail at his age, after 359 days and 71 falls.",
-    "meta_keywords": "Appalachian Trail, Dale Sanders, Grey Beard, thru-hike, oldest hiker, hiking, Maine, Katahdin",
-    "link": "https://www.goodnewsnetwork.org/91-yo-greybeard-becomes-oldest-person-to-hike-the-appalachian-trial-after-359-days-and-71-falls/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/788816681_122183674448886719_7715012929781245892_n-1.jpg",
-    "date": "2026-09-14T18:11:12.738Z",
-    "category": "Lifestyle",
-    "score": 8
-  },
-  {
-    "id": "1789409398854ryk5ehwtu",
-    "title": "Robot Hand Translates Teacher's Voice to Sign Language",
-    "summary": "In Kenya, 22-year-old entrepreneur Norah Kimathi has developed a robotic hand with her startup ZeroBionic that directly translates a teacher's voice into sign language. Of Kenya's 300,000 deaf or hard of hearing children, only a fraction attend school, partly because the country lacks a standardized sign language. The robot hand, 3D-printed from recycled plastic waste, costs 350 dollars, lasts three...",
-    "image_alt": "Robotic hand forming sign language in a classroom in Kenya",
-    "meta_description": "Kenyan startup ZeroBionic builds robot hands that translate teacher's voice into sign language for deaf students.",
-    "meta_keywords": "ZeroBionic, Kenya, sign language, robot hand, deaf students, Norah Kimathi, technology, education, Africa",
-    "link": "https://www.goodnewsnetwork.org/kenyan-startup-makes-robotic-hands-that-translate-teachers-voice-into-signs-for-deaf-students/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Press-photo-©-ZeroBionic-2.jpg",
-    "date": "2026-09-14T18:10:00.420Z",
-    "category": "Tech",
-    "score": 10
-  },
-  {
-    "id": "1789409347343xq0nmhfdb",
-    "title": "Hotel Gives Lost Stuffed Animal Rosie a VIP Vacation",
-    "summary": "During a stay at the Four Seasons in Taormina, Sicily, Julia's beloved stuffed animal Rosie accidentally left with the housekeeping bedding and was left behind in the room. Julia's mother sent the hotel a message with a photo of Rosie. The staff found the stuffed animal and came up with a funny surprise: photos showing Rosie enjoying the pool, the...",
-    "image_alt": "Stuffed animal Rosie by the pool at the Four Seasons in Taormina during a photoshoot by hotel staff",
-    "meta_description": "Hotel staff in Taormina gives lost stuffed animal Rosie a VIP vacation and sends her back to owner Julia with a sweet letter.",
-    "meta_keywords": "stuffed animal, hotel, Taormina, Four Seasons, lost toy, viral, TikTok, Sicily",
-    "link": "https://www.goodnewsnetwork.org/hotel-staff-give-girls-lost-plushie-the-vip-treatment-before-sending-her-home-with-a-note-look/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Rosie-the-bear-the-a-letter-written-by-the-hotel-credit-@drea_musa-via-TikTok.jpg",
-    "date": "2026-09-14T18:09:09.389Z",
-    "category": "Lifestyle",
-    "score": 8
-  },
-  {
-    "id": "1789409245357jsvwu6hgj",
-    "title": "Six Hours In The Dark: Strangers Became Neighbors",
-    "summary": "In November 1965, a major power outage struck the northeastern United States and parts of Canada, affecting 30 million people. More than 800,000 subway passengers in New York were stranded, including Lynn Lowin, who was traveling from Brooklyn to Manhattan. Without light, phones, or information, passengers remained together in the train for hours. They shared food, encouraged each other, and...",
-    "image_alt": "People wait in the dark at a subway station during the 1965 power outage in New York",
-    "meta_description": "During the 1965 blackout, 800,000 people were trapped in the NY subway and supported each other for hours in the dark.",
-    "meta_keywords": "blackout 1965, New York subway, power outage, solidarity, Lynn Lowin, Good News Network",
-    "link": "https://www.goodnewsnetwork.org/the-massive-blackout-of-65-left-people-inspired-by-each-other/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/New-York-City-Transit-Authority-poster-to-thank-subway-riders-for-their-response-to-blackout-of-1965-pubdomain-wikimedia.jpeg",
-    "date": "2026-09-14T18:07:27.781Z",
-    "category": "Lifestyle",
-    "score": 10
   }
 ]
