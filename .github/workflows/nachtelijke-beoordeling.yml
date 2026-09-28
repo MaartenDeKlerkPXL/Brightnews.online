@@ -1,0 +1,86 @@
+# Nachtelijke kwaliteitscontrole (punt 46).
+#
+# Deze controle draaide van 10 t/m 18 september 2026 en viel toen stil: hij
+# hing aan een planning buiten de repo. Niemand merkte het, terwijl CLAUDE.md
+# bleef beschrijven dat hij elke nacht om 04:00 liep. Als Action staat hij in
+# de repo, ziet iedereen zijn runs, en faalt hij zichtbaar in plaats van stil.
+name: "🌙 BrightNews: nachtelijke beoordeling"
+
+on:
+  schedule:
+    # 02:00 UTC = 04:00 Amsterdam in de zomer, 03:00 in de winter. In beide
+    # gevallen ruim ná de nieuwsrun van 00:00 UTC, dus hij beoordeelt altijd
+    # de artikelen van diezelfde nacht. Zie de toelichting bovenin
+    # backend/nachtelijke-beoordeling-prompt.md voordat je dit verzet.
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+# Twee runs tegelijk zouden allebei aan het eind van hetzelfde bestand
+# schrijven en elkaars push omverduwen.
+concurrency:
+  group: nachtelijke-beoordeling
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  beoordelen:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📂 Code ophalen
+        uses: actions/checkout@v4
+        with:
+          # Volledige historie: de rebase-retry in de push-lus heeft een
+          # merge-base nodig, en een shallow clone (diepte 1) heeft die niet
+          # zodra master intussen is opgeschoven. Zelfde keuze als in
+          # update-news.yml.
+          fetch-depth: 0
+
+      - name: ⏩ Doorspoelen naar de actuele branch-kop
+        run: |
+          git fetch origin "$GITHUB_REF_NAME"
+          git reset --hard "origin/$GITHUB_REF_NAME"
+
+      - name: 🟢 Node.js instellen
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: 📦 Dependencies installeren
+        run: npm ci
+
+      - name: "🌙 Beoordelen"
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node backend/nachtelijke-beoordeling.js
+
+      - name: 💾 Bevindingen opslaan
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "BrightNews Bot ✨"
+
+          # Uitsluitend de drie documentatiebestanden plus de stand. De
+          # opdracht verbiedt de agent expliciet om iets anders aan te raken;
+          # deze regel maakt dat hard. Artikelen, prompts, code en data
+          # blijven hoe dan ook buiten schot.
+          git add backend/selectie-prompt-analyse.md backend/vertaal-steekproef.md backend/reservefotos-log.md data/beoordeling-stand.json
+
+          if git diff --staged --quiet; then
+            echo "Niets toegevoegd — geen commit."
+            exit 0
+          fi
+
+          git commit -m "Nachtelijke beoordeling $(TZ=Europe/Amsterdam date '+%-d %B')" \
+                     -m "Automatisch weggeschreven door de nachtelijke controle. Zie backend/selectie-prompt-analyse.md voor de bevindingen."
+
+          # De nieuws-Action pusht 2×/dag naar dezelfde branch; is die
+          # intussen opgeschoven, dan zou de push falen en het werk (inclusief
+          # de AI-kosten van vannacht) verloren gaan.
+          for poging in 1 2 3; do
+            if git push origin "HEAD:$GITHUB_REF_NAME"; then exit 0; fi
+            echo "Push mislukt (poging $poging) — opnieuw proberen na een rebase."
+            git pull --rebase -X theirs origin "$GITHUB_REF_NAME" || exit 1
+          done
+          exit 1

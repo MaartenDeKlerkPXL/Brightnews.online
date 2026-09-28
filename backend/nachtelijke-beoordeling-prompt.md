@@ -1,8 +1,34 @@
 # Prompt: nachtelijke beoordeling van gepubliceerde artikelen
 
-Deze prompt is bedoeld voor een agent die elke nacht om **04:00 Europe/Amsterdam**
-draait. Plak de tekst onder de streep als opdracht; alles daarboven is
-toelichting voor ons.
+Deze prompt is de opdracht voor de nachtelijke controle. Alles onder de streep
+gaat naar het model; alles daarboven is toelichting voor ons.
+
+**Sinds 2026-09-28 draait hij als GitHub Action** —
+`.github/workflows/nachtelijke-beoordeling.yml`, elke nacht om 02:00 UTC
+(04:00 Amsterdam in de zomer, 03:00 in de winter). Daarvoor hing hij aan een
+planning buiten de repo, en toen die stopte viel hij negen dagen na de laatste
+run geruisloos stil zonder dat iemand het merkte. Zie punt 46 in `TODO.md`.
+
+`backend/nachtelijke-beoordeling.js` leest dit bestand in en stuurt het deel
+onder de streep mee. **Bewerk dus dit bestand om het gedrag te veranderen**,
+niet het script — dat is alleen de loopjongen.
+
+**Wat de Action anders doet dan een agent met tools:**
+
+- **Stap 1, 8 en 9 zijn niet meer van het model.** De workflow checkt uit,
+  commit en pusht, met een retry bij een botsing met de nieuws-Action. De
+  wachtrij uit stap 9 is daarmee overbodig: een Action die niet kan pushen
+  faalt zichtbaar in plaats van stil, en dát was het hele probleem.
+- **Stap 2, 6 en 7 doet het script.** Welke artikelen nieuw zijn (bijgehouden
+  in `data/beoordeling-stand.json` in plaats van uit de tekst gelezen), welke
+  taal vannacht aan de beurt is, en het draaien van
+  `controleer-reservefotos.js`.
+- **Het model doet stap 3, 4, 5 en de beoordeling in stap 6.** Twee AI-calls
+  per nacht, rol `beoordelen` (Sonnet — dit is een oordeel met een motivering
+  eronder, geen scoretaak).
+- **Alleen toevoegen blijft hard.** Het script schrijft uitsluitend aan het
+  eind van een bestand en de workflow stageert alleen de drie
+  documentatiebestanden plus de stand.
 
 ## Toelichting (niet meegeven aan de agent)
 
