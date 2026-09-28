@@ -230,6 +230,10 @@
 
                 <div id="upgrade-section">
                     <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+                    <!-- Leestegoed (punt 59): de stand van deze maand. Alleen
+                         zichtbaar voor een gratis account; leestegoed() geeft
+                         per definitie alleen je eigen cijfers terug. -->
+                    <p id="leestegoed-regel" style="display: none; font-weight: 600;"></p>
                     <p data-i18n="upgrade_text">Krijg onbeperkt toegang tot alle 500+ woorden artikelen.</p>
                     <button onclick="startUpgrade()" class="btn-upgrade-premium" data-i18n="btn_upgrade">
                         ✨ Upgrade naar Premium
@@ -251,9 +255,29 @@
                 }
                 let currentPortalUrl = null;
 
+                // Het maandtegoed ophalen en tonen. Faalt de RPC (nog niet
+                // gedraaid), dan blijft de regel gewoon verborgen — de pagina
+                // hoort niet stuk te gaan aan een functie die ontbreekt.
+                async function toonLeestegoed() {
+                    const el = document.getElementById('leestegoed-regel');
+                    if (!el || !window.supabaseClient) return;
+                    try {
+                        const { data, error } = await window.supabaseClient.rpc('leestegoed');
+                        if (error || !data) return;
+                        const over = Math.max(0, (data.limiet ?? 0) - (data.gebruikt ?? 0));
+                        el.textContent = getT('meter_profiel')
+                            .replace('{over}', String(over))
+                            .replace('{limiet}', String(data.limiet ?? 0));
+                        el.style.display = '';
+                    } catch {
+                        // stil: geen tegoedregel is beter dan een foutmelding
+                    }
+                }
+
                 function renderSubscriptionUI(isPremium, expiryDate = null, portalUrl = null, planType = null) {
                     const container = document.getElementById('subscription-status');
                     if (!container) return;
+                    if (!isPremium) toonLeestegoed();
 
                     currentPortalUrl = portalUrl || null;
 

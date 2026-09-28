@@ -1001,28 +1001,86 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   gebeurt; het is een waarschuwing, geen taak. *(Maarten, bij de eerstvolgende
   nieuwe link.)*
 
-- [ ] **59. De paywall is hard — overweeg een metered model.**
-  *(Besluit Maarten 2026-09-27: doen, aantal later bepalen — 5 of 10.)*
+- [ ] **59. Metered paywall — gebouwd, wacht op één SQL-script van Maarten
+  (2026-09-28).** *(Besluit Maarten 2026-09-27: doen.)*
 
-  Nagekeken in `index.js`: een premium-artikel is volledig dicht tenzij je
-  betaalt. Geen gratis artikelen, geen teller.
+  Een premium-artikel was volledig dicht tenzij je betaalde. Geen gratis
+  artikelen, geen teller. Vrijwel geen nieuwssite doet dat, en met reden:
+  niemand betaalt voor iets wat hij nooit gelezen heeft.
 
-  **Vrijwel geen nieuwssite doet dat, en met reden: niemand betaalt voor iets
-  wat hij nooit gelezen heeft.** Het standaardmodel is metered — een aantal
-  artikelen per maand gratis, daarna de vraag. Dan heeft iemand het product al
-  gebruikt op het moment dat je om geld vraagt, en weet hij wat hij misloopt.
+  **Nu: een gratis account leest 5 volledige artikelen per kalendermaand.**
 
-  Bij een onbekend merk met één abonnee is dit waarschijnlijk **de enige
-  ingreep op deze lijst die de conversie echt verandert.**
+  ### Waarom het tegoed niet in de browser kon
 
-  **Openstaand besluit (Maarten): 5 of 10 artikelen per maand.** Te bepalen
-  als er verkeer is; met de huidige cijfers is het gokken. Vuistregel: te laag
-  en niemand raakt gehecht, te hoog en niemand hoeft ooit te betalen.
+  Het oorspronkelijke punt zei: "een teller in `localStorage` is met één
+  privévenster omzeild, dat is bewust acceptabel". Bij het bouwen bleek die
+  afweging niet eens aan de orde. **De volledige tekst staat in
+  `articles_full` en komt nooit in de publieke JSON** — een teller in de
+  browser heeft dus niets om te ontgrendelen. Het tegoed moest naar dezelfde
+  plek waar de tekst vandaan komt. Bijvangst: een privévenster omzeilt hem
+  nu niet, want het tegoed hangt aan het account.
 
-  **Let op bij het bouwen:** een teller in `localStorage` is met één
-  privévenster omzeild. Dat is bewust acceptabel bij dit model — het doel is
-  een drempel, geen slot. Wie hem echt wil omzeilen kan dat, en die had toch
-  niet betaald. *(Erik: het raakt de premium-logica.)*
+  ### Wat dat betekent voor niet-ingelogde bezoekers
+
+  Die houden wat ze hadden: de samenvatting van ~60 woorden. Wat verandert is
+  de **vraag** eronder. Waar iedereen eerst "Premium Content ✨ — Nu Upgraden"
+  kreeg, krijgt een anonieme bezoeker nu *"Lees dit artikel gratis — maak een
+  gratis account en lees elke maand 5 volledige artikelen. Geen
+  betaalgegevens nodig."*
+
+  **Dat is het echte werk van dit punt.** De trap is nu heel: lezer wordt
+  account (kleine stap, geen kaart), account wordt abonnee (na vijf artikelen
+  waarvan hij de waarde kent). Eerst stond er één hoge drempel waar nu twee
+  lage staan.
+
+  | Wie | Ziet |
+  |---|---|
+  | Premium | het volledige artikel, verder niets |
+  | Gratis account, tegoed over | het volledige artikel + een rustige regel: "Dit was artikel 3 van je 5 gratis artikelen deze maand" |
+  | Gratis account, tegoed op | samenvatting + "Je gratis artikelen zijn op" met de proefperiode als haak |
+  | Niet ingelogd | samenvatting + "Lees dit artikel gratis" met de accountknop |
+
+  ### Wat er ligt
+
+  | Bestand | Wat |
+  |---|---|
+  | `supabase/metered-paywall-2026-09-28.sql` | tabel `gelezen_artikelen`, en de functies `lees_artikel()`, `leestegoed()` en `gratis_artikelen_per_maand()` |
+  | `index.js` | roept `lees_artikel()` aan en vertakt op de status |
+  | `profiel.html` | toont de stand van deze maand bij een gratis account |
+  | `css/pages/artikel.css` | de leesmeter |
+  | `data/translations.js` | 9 nieuwe sleutels × 5 talen (326 → 335) |
+
+  ### Drie besluiten om te onthouden
+
+  1. **Hetzelfde artikel twee keer openen kost geen tweede tegoed.**
+     `(uid, artikel_id, maand)` is de primaire sleutel. Dat is geen coulance
+     maar noodzaak: anders raakt iemand die terugscrollt naar een artikel van
+     vanmorgen zijn maand kwijt.
+  2. **Een artikel zonder tekst in `articles_full` kost geen tegoed.** Bij het
+     archief van vóór de paywall valt niets te ontgrendelen, dus daar mag ook
+     niets voor worden afgeschreven.
+  3. **Valt `lees_artikel()` weg, dan zakt alles terug op het oude gedrag.**
+     Getest met een premiumlezer terwijl de RPC ontbreekt: die krijgt zijn
+     volledige artikel gewoon via `get_full_article()`. De site hoort niet
+     stuk te gaan omdat één functie in Supabase ontbreekt — en dat is precies
+     de toestand tussen het mergen en het draaien van de SQL.
+
+  ### Wat Maarten nog moet doen
+
+  **De SQL draaien.** Supabase → SQL Editor → inhoud van
+  `supabase/metered-paywall-2026-09-28.sql` → Run. Tot dat moment gedraagt de
+  site zich exact als voorheen.
+
+  **Het getal staat op 5.** Jouw keuze was "5 of 10, later bepalen". Ik heb 5
+  genomen omdat omhoog bijstellen als een cadeau voelt en omlaag bijstellen
+  als iets afnemen. Wijzigen is één cijfer in
+  `gratis_artikelen_per_maand()` en dat opnieuw draaien.
+
+  **Wat ik niet kon testen:** de SQL zelf — er staat geen Postgres op deze
+  machine. Getest zijn alle vijf de statussen in de front-end met een
+  nagebootste RPC, de terugval als de RPC ontbreekt (óók voor een
+  premiumlezer), en de profielregel bij zowel een gratis als een premium
+  account. *(Erik: de SQL is de helft die nog een paar ogen verdient.)*
 
 - [ ] **60. Een welkomstreeks na registratie — gebouwd, wacht op twee
   handelingen van Maarten (2026-09-28).** *(Besluit Maarten 2026-09-27: doen.)*
