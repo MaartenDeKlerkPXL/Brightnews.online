@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-09-27T16:35:56.576Z",
+ "gegenereerd": "2026-09-28T04:15:56.073Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -22,28 +22,28 @@
      "url": "https://brightnews.online/articles/nl/fans-van-dolly-parton-vieren-eerste-imagination-library-day-of-reading-1790435677680ci6xsstfv.html"
     },
     {
+     "id": "1790568932914excz2ptad",
+     "titel": "Archeologen redden 30.000 schatten uit Deir ez-Zor Museum voor ISIS",
+     "teaser": "Een nieuwe studie onthult hoe archeologen hun leven riskeerden om ongeveer 30.000 'onbetaalbare' artefacten te redden uit het Deir ez-Zor Museum in Syrië, vlak voordat de stad dreigde te vallen in handen van ISIS in 2014 en 2015. Studieauteur Maamoun Abdulkarim, destijds hoofd van Syrië's Directoraat-Generaal voor Oudheden en Musea, leidde de operatie. Het museum was slechts via een smalle,...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/nl/archeologen-redden-30-000-schatten-uit-deir-ez-zor-museum-voor-isis-1790568932914excz2ptad.html"
+    },
+    {
+     "id": "1790568906594wygath1u8",
+     "titel": "Onderzoekers Vinden Geuren Die Honingbijen Weghouden Van Pesticiden",
+     "teaser": "Onderzoekers van de University of California, Riverside hebben chemische stoffen geïdentificeerd die honingbijen veilig kunnen afschrikken van met pesticiden behandelde gewassen. Bioloog Anandasankar Ray en entomoloog Boris Baer ontwikkelden een machine-learning model, getraind op chemische structuren en gedragsdata van bijen en fruitvliegen, om geuren te vinden die bijen afstoten. Het model doorzocht meer dan 50 miljoen verbindingen en identificeerde ongeveer...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/nl/onderzoekers-vinden-geuren-die-honingbijen-weghouden-van-pesticiden-1790568906594wygath1u8.html"
+    },
+    {
      "id": "1790482412739w2tqbovj0",
      "titel": "Nike-oprichter Phil Knight schenkt miljard dollar aan Universiteit van Oregon",
      "teaser": "Phil Knight, medeoprichter van Nike, heeft samen met zijn vrouw Penny een gift van 1 miljard dollar gedaan aan zijn alma mater, de Universiteit van Oregon. Volgens de New York Times is dit de grootste eenmalige donatie ooit aan een Amerikaanse openbare universiteit. Het geld stelt de universiteit in staat om een volledig nieuw college voor engineering op te richten,...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/nike-oprichter-phil-knight-schenkt-miljard-dollar-aan-universiteit-van-oregon-1790482412739w2tqbovj0.html"
-    },
-    {
-     "id": "1790397618858z5yxsbuyb",
-     "titel": "Weesbaby-neushoorn Tytan en zebra Notty onafscheidelijk na verlies moeders",
-     "teaser": "Bij de Sheldrick Wildlife Trust in Nairobi, dat sinds 1977 gewonde en wees geraakte dieren in Oost-Afrika opvangt, ontstond een bijzondere band tussen twee jonge dieren. Zwarte neushoorn Tytan verloor zijn moeder toen hij acht maanden oud was, nadat ze van een klif viel. Een week later werd zebra Notty naar dezelfde opvang gebracht, nadat ook haar moeder op dezelfde...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/weesbaby-neushoorn-tytan-en-zebra-notty-onafscheidelijk-na-verlies-moeders-1790397618858z5yxsbuyb.html"
-    },
-    {
-     "id": "1790397592265yflgpvt9s",
-     "titel": "Ghana-koekoekswurger duikt na 13 jaar weer op in Ivoorkust",
-     "teaser": "Onderzoekers Paulo Ditzel en Stephanie Bartlett van de International Bird Conservation Partnership (IBCP) hebben de Ghana-koekoekswurger (Lobotos lobatus) weer waargenomen, in Taï National Park in Côte d'Ivoire. De laatste bevestigde waarneming van deze opvallende oranje-geel-zwarte vogel dateerde uit 2013, in het Atewa-bos in Ghana. Tijdens een vogeltelling zag Ditzel de vogel tussen een groep andere soorten in het bladerdak, waarna...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/ghana-koekoekswurger-duikt-na-13-jaar-weer-op-in-ivoorkust-1790397592265yflgpvt9s.html"
     }
    ],
    "dagoverzichten": [
@@ -82,28 +82,28 @@
      "url": "https://brightnews.online/articles/en/dolly-parton-fans-celebrate-first-imagination-library-day-of-reading-1790435677680ci6xsstfv.html"
     },
     {
+     "id": "1790568932914excz2ptad",
+     "titel": "Archaeologists rescue 30,000 treasures from Deir ez-Zor Museum before ISIS",
+     "teaser": "A new study reveals how archaeologists risked their lives to save approximately 30,000 'priceless' artifacts from the Deir ez-Zor Museum in Syria, just before the city threatened to fall into ISIS hands in 2014 and 2015. Study author Maamoun Abdulkarim, then head of Syria's Directorate-General of Antiquities and Museums, led the operation. The museum was connected to the military airfield...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/en/archaeologists-rescue-30-000-treasures-from-deir-ez-zor-museum-before-isis-1790568932914excz2ptad.html"
+    },
+    {
+     "id": "1790568906594wygath1u8",
+     "titel": "Researchers Find Scents That Keep Honeybees Away From Pesticides",
+     "teaser": "Researchers at the University of California, Riverside have identified chemical compounds that can safely deter honeybees from pesticide-treated crops. Biologist Anandasankar Ray and entomologist Boris Baer developed a machine-learning model trained on chemical structures and behavioral data from bees and fruit flies to find scents that repel bees. The model screened more than 50 million compounds and identified approximately 130...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/en/researchers-find-scents-that-keep-honeybees-away-from-pesticides-1790568906594wygath1u8.html"
+    },
+    {
      "id": "1790482412739w2tqbovj0",
      "titel": "Nike founder Phil Knight donates $1 billion to University of Oregon",
      "teaser": "Phil Knight, co-founder of Nike, has made a $1 billion gift to his alma mater, the University of Oregon, together with his wife Penny. According to the New York Times, this is the largest single donation ever made to an American public university. The money will enable the university to establish an entirely new engineering college, something that university vice...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/nike-founder-phil-knight-donates-1-billion-to-university-of-oregon-1790482412739w2tqbovj0.html"
-    },
-    {
-     "id": "1790397618858z5yxsbuyb",
-     "titel": "Orphaned rhino Tytan and zebra Notty inseparable after losing their mothers",
-     "teaser": "At the Sheldrick Wildlife Trust in Nairobi, which has been caring for injured and orphaned animals in East Africa since 1977, a special bond formed between two young animals. Black rhino Tytan lost his mother when he was eight months old after she fell from a cliff. A week later, zebra Notty was brought to the same sanctuary after her...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/orphaned-rhino-tytan-and-zebra-notty-inseparable-after-losing-their-mothers-1790397618858z5yxsbuyb.html"
-    },
-    {
-     "id": "1790397592265yflgpvt9s",
-     "titel": "Ghana cuckoo-shrike resurfaces in Ivory Coast after 13 years",
-     "teaser": "Researchers Paulo Ditzel and Stephanie Bartlett of the International Bird Conservation Partnership (IBCP) have spotted the Ghana cuckoo-shrike (Lobotos lobatus) again, in Taï National Park in Côte d'Ivoire. The last confirmed sighting of this striking orange-yellow-black bird dated from 2013, in the Atewa forest in Ghana. During a bird count, Ditzel spotted the bird among a group of other species...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/ghana-cuckoo-shrike-resurfaces-in-ivory-coast-after-13-years-1790397592265yflgpvt9s.html"
     }
    ],
    "dagoverzichten": [
@@ -142,28 +142,28 @@
      "url": "https://brightnews.online/articles/de/fans-von-dolly-parton-feiern-ersten-imagination-library-day-of-reading-1790435677680ci6xsstfv.html"
     },
     {
+     "id": "1790568932914excz2ptad",
+     "titel": "Archäologen retten 30.000 Schätze aus dem Deir ez-Zor Museum vor ISIS",
+     "teaser": "Eine neue Studie enthüllt, wie Archäologen ihr Leben riskierten, um etwa 30.000 „unschätzbare\" Artefakte aus dem Deir ez-Zor Museum in Syrien zu retten, kurz bevor die Stadt 2014 und 2015 in die Hände von ISIS zu fallen drohte. Studienautor Maamoun Abdulkarim, damals Leiter von Syriens Generaldirektion für Altertümer und Museen, leitete die Operation. Das Museum war nur über einen schmalen,...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/de/archaologen-retten-30-000-schatze-aus-dem-deir-ez-zor-museum-vor-isis-1790568932914excz2ptad.html"
+    },
+    {
+     "id": "1790568906594wygath1u8",
+     "titel": "Forscher finden Gerüche, die Honigbienen von Pestiziden fernhalten",
+     "teaser": "Forscher der University of California, Riverside haben chemische Stoffe identifiziert, die Honigbienen sicher von mit Pestiziden behandelten Pflanzen abschrecken können. Der Biologe Anandasankar Ray und der Entomologe Boris Baer entwickelten ein Machine-Learning-Modell, das auf chemischen Strukturen und Verhaltensdaten von Bienen und Fruchtfliegen trainiert wurde, um Gerüche zu finden, die Bienen abstoßen. Das Modell durchsuchte mehr als 50 Millionen Verbindungen und...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/de/forscher-finden-geruche-die-honigbienen-von-pestiziden-fernhalten-1790568906594wygath1u8.html"
+    },
+    {
      "id": "1790482412739w2tqbovj0",
      "titel": "Nike-Gründer Phil Knight spendet eine Milliarde Dollar an die Universität von Oregon",
      "teaser": "Phil Knight, Mitbegründer von Nike, hat zusammen mit seiner Frau Penny eine Spende von einer Milliarde Dollar an seine Alma Mater, die Universität von Oregon, getätigt. Nach Angaben der New York Times ist dies die größte Einzelspende, die je an eine amerikanische öffentliche Universität gegeben wurde. Das Geld ermöglicht es der Universität, ein völlig neues College für Ingenieurwesen zu gründen...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/nike-grunder-phil-knight-spendet-eine-milliarde-dollar-an-die-universitat-von-or-1790482412739w2tqbovj0.html"
-    },
-    {
-     "id": "1790397618858z5yxsbuyb",
-     "titel": "Waisenbaby-Nashorn Tytan und Zebra Notty unzertrennlich nach Trauer um ihre Mütter",
-     "teaser": "Bei der Sheldrick Wildlife Trust in Nairobi, die seit 1977 verletzte und verwaiste Tiere in Ostafrika aufnimmt, entstand eine besondere Bindung zwischen zwei jungen Tieren. Das schwarze Nashorn Tytan verlor seine Mutter, als er acht Monate alt war, nachdem sie von einer Klippe stürzte. Eine Woche später wurde Zebra Notty in dieselbe Auffangstation gebracht, nachdem auch ihre Mutter auf die...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/waisenbaby-nashorn-tytan-und-zebra-notty-unzertrennlich-nach-trauer-um-ihre-mutt-1790397618858z5yxsbuyb.html"
-    },
-    {
-     "id": "1790397592265yflgpvt9s",
-     "titel": "Ghana-Kuckuckswürger nach 13 Jahren in der Elfenbeinküste wiederentdeckt",
-     "teaser": "Die Forscher Paulo Ditzel und Stephanie Bartlett von der International Bird Conservation Partnership (IBCP) haben den Ghana-Kuckuckswürger (Lobotos lobatus) wiederentdeckt – im Taï National Park in der Elfenbeinküste. Die letzte bestätigte Beobachtung dieses auffälligen orange-gelb-schwarzen Vogels stammte aus dem Jahr 2013 aus dem Atewa-Wald in Ghana. Bei einer Vogelzählung entdeckte Ditzel den Vogel zwischen einer Gruppe anderer Arten im Blätterdach,...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/ghana-kuckuckswurger-nach-13-jahren-in-der-elfenbeinkuste-wiederentdeckt-1790397592265yflgpvt9s.html"
     }
    ],
    "dagoverzichten": [
@@ -202,28 +202,28 @@
      "url": "https://brightnews.online/articles/fr/les-fans-de-dolly-parton-celebrent-le-premier-imagination-library-day-of-reading-1790435677680ci6xsstfv.html"
     },
     {
+     "id": "1790568932914excz2ptad",
+     "titel": "Des archéologues sauvent 30 000 trésors du musée de Deir ez-Zor face à Daech",
+     "teaser": "Une nouvelle étude révèle comment des archéologues ont risqué leur vie pour sauver environ 30 000 artefacts « inestimables » du musée de Deir ez-Zor en Syrie, juste avant que la ville ne menace de tomber aux mains de Daech en 2014 et 2015. Maamoun Abdulkarim, auteur de l'étude et alors directeur général des Antiquités et des Musées de Syrie,...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/fr/des-archeologues-sauvent-30-000-tresors-du-musee-de-deir-ez-zor-face-a-daech-1790568932914excz2ptad.html"
+    },
+    {
+     "id": "1790568906594wygath1u8",
+     "titel": "Des chercheurs identifient des odeurs qui éloignent les abeilles des pesticides",
+     "teaser": "Des chercheurs de l'University of California, Riverside ont identifié des substances chimiques capables d'éloigner sans danger les abeilles mellifères des cultures traitées aux pesticides. La biologiste Anandasankar Ray et l'entomologiste Boris Baer ont développé un modèle d'apprentissage automatique, entraîné sur des structures chimiques et des données comportementales d'abeilles et de mouches à fruits, pour trouver des odeurs qui repoussent les...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/fr/des-chercheurs-identifient-des-odeurs-qui-eloignent-les-abeilles-des-pesticides-1790568906594wygath1u8.html"
+    },
+    {
      "id": "1790482412739w2tqbovj0",
      "titel": "Le fondateur de Nike Phil Knight fait don d'un milliard de dollars à l'Université de l'Oregon",
      "teaser": "Phil Knight, cofondateur de Nike, a fait un don de 1 milliard de dollars à son alma mater, l'Université de l'Oregon, aux côtés de son épouse Penny. Selon le New York Times, il s'agit du plus important don unique jamais versé à une université publique américaine. Cette somme permettra à l'université de créer un tout nouveau collège d'ingénierie, un projet...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/le-fondateur-de-nike-phil-knight-fait-don-d-un-milliard-de-dollars-a-l-universit-1790482412739w2tqbovj0.html"
-    },
-    {
-     "id": "1790397618858z5yxsbuyb",
-     "titel": "Le bébé rhinocéros orphelin Tytan et le zèbre Notty inséparables après la perte de leurs mères",
-     "teaser": "À la Sheldrick Wildlife Trust à Nairobi, qui accueille depuis 1977 les animaux blessés et orphelins d'Afrique de l'Est, un lien particulier s'est noué entre deux jeunes animaux. Le rhinocéros noir Tytan a perdu sa mère alors qu'il n'avait que huit mois, après qu'elle soit tombée d'une falaise. Une semaine plus tard, le zèbre Notty a été amené au même...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/le-bebe-rhinoceros-orphelin-tytan-et-le-zebre-notty-inseparables-apres-la-perte--1790397618858z5yxsbuyb.html"
-    },
-    {
-     "id": "1790397592265yflgpvt9s",
-     "titel": "Le coucou-étrangleur du Ghana réapparaît en Côte d'Ivoire après 13 ans",
-     "teaser": "Les chercheurs Paulo Ditzel et Stephanie Bartlett de l'International Bird Conservation Partnership (IBCP) ont observé à nouveau le coucou-étrangleur du Ghana (Lobotos lobatus) au Parc national de Taï en Côte d'Ivoire. La dernière observation confirmée de cet oiseau remarquable aux couleurs orange, jaune et noir remontait à 2013, dans la forêt d'Atewa au Ghana. Lors d'un comptage d'oiseaux, Ditzel a...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/le-coucou-etrangleur-du-ghana-reapparait-en-cote-d-ivoire-apres-13-ans-1790397592265yflgpvt9s.html"
     }
    ],
    "dagoverzichten": [
@@ -262,28 +262,28 @@
      "url": "https://brightnews.online/articles/es/los-fans-de-dolly-parton-celebran-el-primer-imagination-library-day-of-reading-1790435677680ci6xsstfv.html"
     },
     {
+     "id": "1790568932914excz2ptad",
+     "titel": "Arqueólogos rescatan 30.000 tesoros del Museo de Deir ez-Zor antes de ISIS",
+     "teaser": "Un nuevo estudio revela cómo arqueólogos arriesgaron sus vidas para rescatar aproximadamente 30.000 artefactos «invaluables» del Museo de Deir ez-Zor en Siria, poco antes de que la ciudad amenazara con caer en manos de ISIS en 2014 y 2015. Maamoun Abdulkarim, autor del estudio y entonces director general de la Dirección General de Antigüedades y Museos de Siria, lideró la...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/es/arqueologos-rescatan-30-000-tesoros-del-museo-de-deir-ez-zor-antes-de-isis-1790568932914excz2ptad.html"
+    },
+    {
+     "id": "1790568906594wygath1u8",
+     "titel": "Investigadores encuentran aromas que alejan a las abejas melíferas de los pesticidas",
+     "teaser": "Investigadores de la University of California, Riverside han identificado sustancias químicas que pueden disuadir de forma segura a las abejas melíferas de los cultivos tratados con pesticidas. El biólogo Anandasankar Ray y el entomólogo Boris Baer desarrollaron un modelo de aprendizaje automático, entrenado con estructuras químicas y datos de comportamiento de abejas y moscas de la fruta, para encontrar aromas...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/es/investigadores-encuentran-aromas-que-alejan-a-las-abejas-meliferas-de-los-pestic-1790568906594wygath1u8.html"
+    },
+    {
      "id": "1790482412739w2tqbovj0",
      "titel": "El fundador de Nike Phil Knight dona mil millones de dólares a la Universidad de Oregon",
      "teaser": "Phil Knight, cofundador de Nike, ha realizado junto con su esposa Penny una donación de mil millones de dólares a su alma mater, la Universidad de Oregon. Según el New York Times, se trata de la mayor donación única jamás realizada a una universidad pública estadounidense. El dinero permitirá a la universidad crear un colegio completamente nuevo de ingeniería, algo...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/el-fundador-de-nike-phil-knight-dona-mil-millones-de-dolares-a-la-universidad-de-1790482412739w2tqbovj0.html"
-    },
-    {
-     "id": "1790397618858z5yxsbuyb",
-     "titel": "La cría de rinoceronte huérfana Tytan y la cebra Notty inseparables tras perder a sus madres",
-     "teaser": "En la Sheldrick Wildlife Trust en Nairobi, que desde 1977 acoge a animales heridos y huérfanos en África Oriental, surgió un vínculo especial entre dos crías. La rinoceronte negra Tytan perdió a su madre cuando tenía ocho meses de edad, después de que cayera de un acantilado. Una semana después, la cebra Notty fue llevada al mismo centro de acogida,...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/la-cria-de-rinoceronte-huerfana-tytan-y-la-cebra-notty-inseparables-tras-perder--1790397618858z5yxsbuyb.html"
-    },
-    {
-     "id": "1790397592265yflgpvt9s",
-     "titel": "El chotacabras de Ghana reaparece en Costa de Marfil tras 13 años",
-     "teaser": "Los investigadores Paulo Ditzel y Stephanie Bartlett de la International Bird Conservation Partnership (IBCP) han vuelto a avistar el chotacabras de Ghana (Lobotos lobatus) en el Taï National Park en Costa de Marfil. La última observación confirmada de esta llamativa ave de plumaje naranja, amarillo y negro se remontaba a 2013, en el bosque de Atewa en Ghana. Durante un...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/el-chotacabras-de-ghana-reaparece-en-costa-de-marfil-tras-13-anos-1790397592265yflgpvt9s.html"
     }
    ],
    "dagoverzichten": [
