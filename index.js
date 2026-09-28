@@ -410,23 +410,55 @@ async function toonDetail(id) {
 
     let displayContent = String(artikel.summary || '');
     let paywallHTML = "";
+    let tegoedHTML = "";
 
-    if (userStatus.premium === true) {
-        // Nieuwe artikelen staan alleen als teaser in de publieke JSON; de
-        // volledige tekst zit achter get_full_article() (checkt zelf premium-
-        // status server-side). Oudere artikelen (van vóór deze wijziging)
-        // hebben geen rij in articles_full — dan valt dit terug op de
-        // teaser/summary die al in de JSON stond (ongewijzigd gedrag).
+    // Metered paywall (punt 59). lees_artikel() doet alles in één aanroep: hij
+    // kent de premiumstatus, houdt het maandtegoed bij en geeft de tekst terug
+    // als die mag. Het tegoed móet daar leven en niet in localStorage — de
+    // volledige tekst staat niet in de publieke JSON, dus een teller in de
+    // browser zou niets te ontgrendelen hebben. Bijvangst: een privévenster
+    // omzeilt hem niet, want het tegoed hangt aan het account.
+    //
+    // Valt de RPC weg (nog niet gedraaid, of een storing), dan zakt dit terug
+    // op get_full_article() — precies het gedrag van vóór dit punt. De site
+    // hoort niet stuk te gaan omdat één functie in Supabase ontbreekt.
+    let meting = null;
+    try {
+        const { data, error } = await window.supabaseClient
+            .rpc('lees_artikel', { p_id: String(id), p_lang: window.huidigeTaal });
+        if (!error && data && typeof data === 'object') meting = data;
+    } catch (e) {
+        console.error("Leestegoed niet opgehaald:", e.message);
+    }
+
+    if (meting === null && userStatus.premium === true) {
         try {
             const { data: volledigeTekst, error } = await window.supabaseClient
                 .rpc('get_full_article', { p_id: String(id), p_lang: window.huidigeTaal });
-            if (!error && volledigeTekst) {
-                displayContent = volledigeTekst;
-            }
+            if (!error && volledigeTekst) meting = { status: 'premium', tekst: volledigeTekst };
         } catch (e) {
             console.error("Kon volledig artikel niet ophalen:", e.message);
         }
-    } else {
+    }
+
+    const status = meting?.status ?? (userStatus.premium === true ? 'premium' : 'anoniem');
+
+    if (meting?.tekst) {
+        displayContent = meting.tekst;
+    }
+
+    if (status === 'gratis') {
+        // Eén rustige regel onder het artikel, geen banner die meeschuift: de
+        // lezer is net klaar met lezen en dat is het moment waarop de stand
+        // ertoe doet. Bij het laatste gratis artikel wordt de toon anders.
+        const over = Math.max(0, (meting.limiet ?? 0) - (meting.gebruikt ?? 0));
+        const sleutel = over === 0 ? 'meter_laatste' : 'meter_stand';
+        const regel = getT(sleutel)
+            .replace('{gebruikt}', String(meting.gebruikt ?? 0))
+            .replace('{limiet}', String(meting.limiet ?? 0));
+        tegoedHTML = `<div class="leesmeter"><p>${regel}</p>`
+            + `<a href="/abonnementen.html" data-i18n="meter_link">${getT('meter_link')}</a></div>`;
+    } else if (status !== 'premium') {
         const summary = String(artikel.summary || '');
         const woorden = summary.split(' ');
         // Ook een teaser die al server-side is ingekort (eindigt op "...")
@@ -439,8 +471,22 @@ async function toonDetail(id) {
             displayContent = woorden.slice(0, 60).join(' ') + "...";
         }
         if (isIngekort) {
-            const i18nKey = userStatus.ingelogd ? 'btn_upgrade_now' : 'btn_login_to_read';
-            paywallHTML = `<div class="paywall-overlay"><div class="paywall-content"><h2 data-i18n="premium_title">${getT('premium_title')}</h2><p data-i18n="premium_text">${getT('premium_text')}</p><button onclick="window.location.href='/profiel.html'" class="btn-primary-editorial" data-i18n="${i18nKey}">${getT(i18nKey)}</button></div></div>`;
+            // Drie verschillende vragen, en het verschil is de hele winst van
+            // dit punt. Wie nog nooit iets las krijgt niet meteen de prijs
+            // voorgeschoteld maar de kleinere stap: maak een gratis account.
+            const opgebruikt = status === 'op';
+            const i18nKey = opgebruikt ? 'btn_upgrade_now'
+                : userStatus.ingelogd ? 'btn_upgrade_now' : 'btn_gratis_account';
+            // De kop hoort bij de vraag die eronder staat. Een anonieme
+            // bezoeker krijgt een oproep om een gratis account te maken; daar
+            // past "Premium Content" niet boven.
+            const titelKey = opgebruikt ? 'meter_op_titel'
+                : userStatus.ingelogd ? 'premium_title' : 'meter_gratis_titel';
+            let tekst = opgebruikt
+                ? getT('meter_op_tekst').replace('{limiet}', String(meting?.limiet ?? ''))
+                : userStatus.ingelogd ? getT('premium_text')
+                    : getT('meter_gratis_tekst').replace('{limiet}', String(meting?.limiet ?? ''));
+            paywallHTML = `<div class="paywall-overlay"><div class="paywall-content"><h2 data-i18n="${titelKey}">${getT(titelKey)}</h2><p>${tekst}</p><button onclick="window.location.href='/profiel.html'" class="btn-primary-editorial" data-i18n="${i18nKey}">${getT(i18nKey)}</button></div></div>`;
         }
     }
     const shareHtml = `
@@ -496,6 +542,7 @@ async function toonDetail(id) {
         <section class="article-body" itemprop="articleBody">
             <div data-role="body"></div>
             ${paywallHTML}
+            ${tegoedHTML}
             ${shareHtml}
         </section>
     </div>`;

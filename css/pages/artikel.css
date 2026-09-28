@@ -518,3 +518,40 @@
     color: var(--medium-text);
     font-size: var(--text-lg);
 }
+
+/* Leesmeter (punt 59): de stand van het maandtegoed, ónder een artikel dat de
+   lezer net helemaal heeft gekregen. Bewust geen banner die meeschuift en
+   geen overlay — er valt niets te verbergen, het artikel is al gelezen. Dit
+   is een rustige mededeling op het moment dat hij ertoe doet: je bent klaar,
+   dit is wat je nog hebt. Een groene rand links in plaats van een gevuld vlak,
+   zodat hij zich onderscheidt van de betaalmuur zonder ertegenop te schreeuwen. */
+.leesmeter {
+    margin-top: var(--space-3xl);
+    padding: var(--space-lg) var(--space-xl);
+    border-left: 4px solid var(--bright-green);
+    background: var(--neutral-025);
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+}
+
+.leesmeter p {
+    margin: 0;
+    color: var(--neutral-600);
+    font-size: var(--text-sm);
+}
+
+.leesmeter a {
+    color: var(--dark-text);
+    font-weight: 700;
+    font-size: var(--text-sm);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* Geen kleurwissel bij hover: #32CD32 op een lichte ondergrond haalt de
+   contrasteis niet, en een tweede, donkerder groen is voor dit project
+   bewust afgewezen. De lijn wordt dikker, dat is genoeg aanwijzing. */
+.leesmeter a:hover { text-decoration-thickness: 2px; }
