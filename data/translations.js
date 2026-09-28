@@ -317,7 +317,15 @@ window.translations = {
     "err404_title": "Pagina niet gevonden | BrightNews",
     "err404_h1": "Deze pagina hebben we niet kunnen vinden",
     "err404_intro": "Misschien is het adres verhuisd of staat er een tikfout in. Het goede nieuws staat er in elk geval nog — ga terug naar de voorpagina en lees verder.",
-    "err404_btn": "Naar de voorpagina"
+    "err404_btn": "Naar de voorpagina",
+    "afmeld_title": "Afmelden voor mails | BrightNews",
+    "afmeld_bezig_h1": "Even geduld",
+    "afmeld_bezig_p": "We verwerken je afmelding.",
+    "afmeld_klaar_h1": "Je bent afgemeld",
+    "afmeld_klaar_p": "Je krijgt geen mails meer van BrightNews. Je account blijft gewoon bestaan en je kunt blijven lezen.",
+    "afmeld_fout_h1": "Dat lukte niet",
+    "afmeld_fout_p": "De link klopt niet of is verlopen. Je kunt je ook afmelden door te antwoorden op een van onze mails.",
+    "afmeld_knop": "Naar de voorpagina",
   },
   "en": {
     "skip_to_content": "Skip to main content",
@@ -637,7 +645,15 @@ window.translations = {
     "err404_title": "Page not found | BrightNews",
     "err404_h1": "We couldn't find this page",
     "err404_intro": "The address may have moved, or there might be a typo in it. The good news is still here — head back to the homepage and read on.",
-    "err404_btn": "Back to the homepage"
+    "err404_btn": "Back to the homepage",
+    "afmeld_title": "Unsubscribe from emails | BrightNews",
+    "afmeld_bezig_h1": "One moment",
+    "afmeld_bezig_p": "We are processing your request.",
+    "afmeld_klaar_h1": "You have been unsubscribed",
+    "afmeld_klaar_p": "You will not receive any more emails from BrightNews. Your account stays as it is and you can keep reading.",
+    "afmeld_fout_h1": "That did not work",
+    "afmeld_fout_p": "The link is not valid or has expired. You can also unsubscribe by replying to one of our emails.",
+    "afmeld_knop": "Go to the homepage",
   },
   "de": {
     "skip_to_content": "Zum Hauptinhalt springen",
@@ -957,7 +973,15 @@ window.translations = {
     "err404_title": "Seite nicht gefunden | BrightNews",
     "err404_h1": "Diese Seite konnten wir nicht finden",
     "err404_intro": "Vielleicht ist die Adresse umgezogen oder es hat sich ein Tippfehler eingeschlichen. Die guten Nachrichten sind auf jeden Fall noch da — zurück zur Startseite und weiterlesen.",
-    "err404_btn": "Zur Startseite"
+    "err404_btn": "Zur Startseite",
+    "afmeld_title": "Von E-Mails abmelden | BrightNews",
+    "afmeld_bezig_h1": "Einen Moment",
+    "afmeld_bezig_p": "Wir verarbeiten deine Abmeldung.",
+    "afmeld_klaar_h1": "Du bist abgemeldet",
+    "afmeld_klaar_p": "Du bekommst keine E-Mails mehr von BrightNews. Dein Konto bleibt bestehen und du kannst weiterlesen.",
+    "afmeld_fout_h1": "Das hat nicht geklappt",
+    "afmeld_fout_p": "Der Link stimmt nicht oder ist abgelaufen. Du kannst dich auch abmelden, indem du auf eine unserer Mails antwortest.",
+    "afmeld_knop": "Zur Startseite",
   },
   "fr": {
     "skip_to_content": "Aller au contenu principal",
@@ -1277,7 +1301,15 @@ window.translations = {
     "err404_title": "Page introuvable | BrightNews",
     "err404_h1": "Nous n'avons pas trouvé cette page",
     "err404_intro": "L'adresse a peut-être changé, ou il s'y est glissé une faute de frappe. Les bonnes nouvelles sont toujours là — retournez à l'accueil et poursuivez votre lecture.",
-    "err404_btn": "Retour à l'accueil"
+    "err404_btn": "Retour à l'accueil",
+    "afmeld_title": "Se désabonner des e-mails | BrightNews",
+    "afmeld_bezig_h1": "Un instant",
+    "afmeld_bezig_p": "Nous traitons votre désabonnement.",
+    "afmeld_klaar_h1": "Vous êtes désabonné",
+    "afmeld_klaar_p": "Vous ne recevrez plus d’e-mails de BrightNews. Votre compte reste inchangé et vous pouvez continuer à lire.",
+    "afmeld_fout_h1": "Cela n’a pas fonctionné",
+    "afmeld_fout_p": "Le lien est incorrect ou a expiré. Vous pouvez aussi vous désabonner en répondant à l’un de nos e-mails.",
+    "afmeld_knop": "Aller à la page d’accueil",
   },
   "es": {
     "skip_to_content": "Saltar al contenido principal",
@@ -1597,6 +1629,14 @@ window.translations = {
     "err404_title": "Página no encontrada | BrightNews",
     "err404_h1": "No hemos encontrado esta página",
     "err404_intro": "Puede que la dirección haya cambiado o que contenga una errata. Las buenas noticias siguen aquí — vuelve a la portada y sigue leyendo.",
-    "err404_btn": "Volver a la portada"
+    "err404_btn": "Volver a la portada",
+    "afmeld_title": "Darse de baja de los correos | BrightNews",
+    "afmeld_bezig_h1": "Un momento",
+    "afmeld_bezig_p": "Estamos procesando tu baja.",
+    "afmeld_klaar_h1": "Te has dado de baja",
+    "afmeld_klaar_p": "No recibirás más correos de BrightNews. Tu cuenta sigue igual y puedes seguir leyendo.",
+    "afmeld_fout_h1": "No ha funcionado",
+    "afmeld_fout_p": "El enlace no es correcto o ha caducado. También puedes darte de baja respondiendo a uno de nuestros correos.",
+    "afmeld_knop": "Ir a la página de inicio",
   }
 };

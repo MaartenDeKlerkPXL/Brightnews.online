@@ -96,6 +96,18 @@ module.exports = [
         rules: { 'no-unused-vars': 'warn' },
     },
     {
+        // js/beeldkaart.js is bewust een ES-module: hij wordt alleen door de
+        // cockpit geïmporteerd (marketing.html, <script type="module">) en
+        // niet als klassiek script in elke pagina geladen.
+        files: ['js/beeldkaart.js'],
+        languageOptions: {
+            ecmaVersion: 2022,
+            sourceType: 'module',
+            globals: { ...globals.browser },
+        },
+        rules: { 'no-unused-vars': 'warn' },
+    },
+    {
         // Service worker draait in een eigen context, geen gewoon browservenster.
         files: ['sw.js'],
         languageOptions: {

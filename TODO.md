@@ -770,8 +770,9 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   *(Maarten — dit is contact leggen, geen bouwen.)*
 
 - [ ] **53. De publicatielus slimmer maken — vier verbeteringen.**
-  *(Besluit Maarten 2026-09-27. **Wacht op stap 4 van punt 45**: zolang er
-  niets geplaatst wordt valt er niets te verbeteren.)*
+  *(Besluit Maarten 2026-09-27. **Onderdeel 1 is af, 2026-09-28. Onderdeel 2,
+  3 en 4 wachten op stap 4 van punt 45**: die gaan over wat er ná het plaatsen
+  gebeurt, dus zolang er niets geplaatst wordt valt er niets te verbeteren.)*
 
   De postfabriek schrijft teksten; deze vier gaan over wat er daarná mee
   gebeurt. Geordend op wat ze opleveren.
@@ -807,6 +808,43 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
 
   *(Erik bouwt 2, 3 en 4 mee met de publicatielus; onderdeel 1 is beeldwerk en
   kan ik doen.)*
+
+  ### ✅ Onderdeel 1 — beeldkaarten (2026-09-28)
+
+  `js/beeldkaart.js` tekent de kaart, de cockpit (`marketing.html`) toont hem
+  onder elke Instagram-post met een knop **🖼 Beeldkaart** en een download naar
+  PNG van 1080 × 1080. De kaart volgt de taalknoppen: kop én chip wisselen mee.
+  Daarvoor schrijft `backend/generate-posts.js` nu ook `titelPerTaal` weg —
+  die stond al vertaald in de feed, dus dat kost geen AI-call.
+
+  **Het ontwerp is bewust niet het standaardrecept** (volvlak groen, witte
+  tekst, gecentreerd). De kaart is licht, met een dikke groene baan langs de
+  linkerrand en de kop links uitgelijnd in Schibsted Grotesk ExtraBold. In een
+  Instagram-feed vol schreeuwerige kaarten valt een rustige, redactionele kaart
+  juist óp, en die groene baan is dezelfde streep als de dagkop in de cockpit
+  en de accenten op de site — je ziet aan de vórm dat het BrightNews is. De kop
+  hangt aan de ónderkant van zijn vlak, zodat een kop van drie woorden op
+  dezelfde optische plek staat als een kop van twintig en de reeks als één
+  serie oogt. De lettergrootte zoekt zichzelf tussen 104px en 48px.
+
+  **Waarom een `<canvas>` in de browser en geen PNG uit de Action:** een PNG
+  server-side renderen vraagt `sharp` of een headless browser, en dat is een
+  nieuwe native afhankelijkheid voor iets wat de browser gratis doet. Een SVG
+  in een `<img>` was het alternatief, maar die laadt geen paginalettertypen —
+  dan valt de kop terug op een systeemletter, precies het merkkenmerk dat je
+  wilt houden. En de cockpit is toch waar de posts nagekeken en gekopieerd
+  worden. Zodra de publicatielus er is kan dezelfde tekenfunctie naar een
+  server-side canvas.
+
+  **Twee dingen die de eerste versie fout deden en nu goed staan:**
+  `assets/brightnews-logo-vierkant.png` is niet het vierkante icoon dat de naam
+  suggereert maar dezelfde wordmark op een vierkant doek vol witruimte — op
+  voetmaat volstrekt onleesbaar. Het is nu de horizontale wordmark, en de losse
+  regel "brightnews.online" eronder is weg omdat die al ín het logo staat.
+
+  Getest in de cockpit met een nagebootste sessie: de knop verschijnt alléén
+  bij Instagram (niet bij Facebook of LinkedIn), het voorbeeld tekent, de
+  taalknop NL → FR herrekent kop én chip, en de download geeft een PNG.
 
 - [ ] **54. Aanmelden bij Google Publisher Center.** *(De nieuwssitemap is
   af; de aanmelding is voor Maarten, ná de lancering.)*
@@ -986,35 +1024,92 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   een drempel, geen slot. Wie hem echt wil omzeilen kan dat, en die had toch
   niet betaald. *(Erik: het raakt de premium-logica.)*
 
-- [ ] **60. Een welkomstreeks na registratie.** *(Besluit Maarten 2026-09-27:
-  doen.)*
+- [ ] **60. Een welkomstreeks na registratie — gebouwd, wacht op twee
+  handelingen van Maarten (2026-09-28).** *(Besluit Maarten 2026-09-27: doen.)*
 
-  Na aanmelding volgt alleen de bevestigingsmail. Daarna niets. In
-  abonnementsbedrijven is juist die eerste week waarin de meeste conversie
-  valt.
+  Na aanmelding volgde alleen de bevestigingsmail. Daarna niets, terwijl juist
+  die eerste week de meeste conversie oplevert. Drie mails staan er nu:
+  bij aanmelding wat BrightNews doet en hoe de selectie werkt, na drie dagen
+  het best gelezen artikel, na een week wat Premium erbij geeft met de
+  proefperiode van 30 dagen als haak.
 
-  Drie mails, automatisch: bij aanmelding wat BrightNews doet en hoe de
-  selectie werkt, na drie dagen het best gelezen artikel van die week, na een
-  week wat premium extra biedt — met de proefperiode van 30 dagen als haak.
+  **Wat er ligt, alles in vijf talen:**
 
-  Draait op dezelfde verzenddienst als punt 49; bouw die twee samen, dan is
-  dit weinig extra werk. *(Erik: Supabase-trigger of Action; ik schrijf de
-  teksten in vijf talen.)*
+  | Bestand | Wat |
+  |---|---|
+  | `backend/mailteksten.js` | de drie mails × 5 talen, apart van de code zodat je de toon kunt bijstellen zonder door een script te hoeven |
+  | `backend/stuur-mails.js` | bepaalt wie vandaag welke mail toekomt, verstuurt via Resend, logt in `mail_log` |
+  | `.github/workflows/welkomstreeks.yml` | dagelijks 07:10 UTC, plus een handmatige droogloop |
+  | `supabase/welkomstreeks-2026-09-28.sql` | de twee tabellen en de afmeld-RPC |
+  | `afmelden.html` | uitschrijfpagina, in vijf talen, zonder inloggen |
 
-- [ ] **61. Levenscyclusmails via Stripe-webhooks.** *(Besluit Maarten
-  2026-09-27: doen.)*
+  **Meevaller:** `js/auth.js` slaat bij registratie al `preferred_lang` en
+  `full_name` op in de user-metadata. De reeks kan dus meteen in de juiste taal
+  en op voornaam, zonder dat daar iets voor hoefde te veranderen.
 
-  Stripe en de webhooks staan er al. Daarmee kun je reageren op momenten die
-  nu stil voorbijgaan:
+  **Drie ontwerpbesluiten die het waard zijn om te onthouden:**
 
-  - **een mislukte betaling** — dit is de belangrijkste. Een verlopen of
-    geweigerde kaart is een abonnee die je verliest zonder dat hij dat wilde,
-    en één mail lost dat meestal op;
-  - **de proefperiode loopt af** — 30 dagen is lang genoeg om te vergeten dat
-    je je hebt aangemeld;
-  - **iemand zegt op** — vragen waarom, en dat antwoord bewaren.
+  1. **Wie vier dagen te laat wordt opgepikt krijgt niet ineens drie mails.**
+     Het script kiest de laatste mail die iemand verdient en nog niet had. Lag
+     de Action een week stil, dan krijgt een nieuwe lezer alsnog één mail, niet
+     de hele reeks achter elkaar. Nagemeten op negen gevallen.
+  2. **`(uid, soort)` is de primaire sleutel van `mail_log`.** Dubbel verzenden
+     is daarmee niet iets wat het script moet onthouden maar iets wat de
+     database weigert — ook als de Action twee keer draait of halverwege
+     struikelt.
+  3. **De uitschrijflink vraagt niet om inloggen.** Een uitschrijflink die
+     eerst een wachtwoord wil is geen uitschrijflink. Het token in de URL gaat
+     naar een `security definer`-functie die precies één ding kan: die ene rij
+     op afgemeld zetten. Hij geeft niets terug waaruit je kunt afleiden of een
+     token bestaat, dus je kunt er geen accounts mee aftasten.
 
-  *(Erik: het raakt Stripe en Supabase.)*
+  **Wat jij nog moet doen, Maarten — en dit vraagt geen Erik:**
+
+  1. **De SQL draaien.** Supabase → SQL Editor → inhoud van
+     `supabase/welkomstreeks-2026-09-28.sql` plakken → Run. Het script is
+     idempotent, dus nog eens draaien kan geen kwaad.
+  2. **Resend inrichten.** `resend.com`, gratis tot 3.000 mails per maand.
+     Domein `brightnews.online` toevoegen en de drie DNS-regels zetten die ze
+     geven (SPF, DKIM, en een return-path) — zonder die regels komt alles in
+     de spam. Daarna een API-sleutel maken en die als **GitHub Secret**
+     `RESEND_API_KEY` zetten, net zoals je met `GA4_PROPERTY_ID` deed.
+  3. **Eerst droog draaien.** Actions → Welkomstreeks → Run workflow, met
+     "droog" aangevinkt. Dan zie je in het log wie er een mail zou krijgen,
+     zonder dat er iets vertrekt. Klopt dat, dan vink je het uit.
+
+  Zolang `RESEND_API_KEY` ontbreekt doet de Action niets en stopt hij groen —
+  hij mag dus al bestaan voordat Resend er is.
+
+  **Wat ik niet kon testen:** het daadwerkelijk versturen, want daar is de
+  sleutel en een geverifieerd domein voor nodig. Getest zijn de teksten (alle
+  drie compleet in alle vijf talen, geen onvervulde plaatshouders), de keuze
+  welke mail wanneer vertrekt (negen gevallen), en de opmaak van de mail zelf
+  in de browser.
+
+  *(Was gemarkeerd als Erik. Dat hoeft niet: de Supabase-kant is één keer SQL
+  plakken en de verzenddienst is een DNS-instelling plus een secret — allebei
+  dingen die Maarten zelf heeft.)*
+
+- [ ] **61. Levenscyclusmails — blijkt géén code te vragen (2026-09-28).**
+  *(Besluit Maarten 2026-09-27: doen.)*
+
+  Dit punt stond op "Erik: het raakt Stripe en Supabase". **Nagekeken, en dat
+  klopt niet: Stripe doet alle drie de momenten zelf, met schakelaars in het
+  dashboard.** Er hoeft niets gebouwd te worden, en er hoeft niemand aan de
+  webhook te komen.
+
+  | Moment | Waar | Wat |
+  |---|---|---|
+  | **Mislukte betaling** | Settings → Billing → Subscriptions and emails | "Send emails about failed payments" aan, plus Smart Retries. Dit is verreweg de belangrijkste: een verlopen kaart is een abonnee die je verliest zonder dat hij dat wilde |
+  | **Proefperiode loopt af** | dezelfde pagina | "Send trial ending notifications" — Stripe mailt 7 dagen vooraf. Bij 30 dagen proef is dat precies waar het moet |
+  | **Iemand zegt op** | Settings → Billing → Customer portal → Cancellations | "Ask for a cancellation reason" aan. De antwoorden komen in Stripe zelf te staan |
+
+  **Dit is dus een kwartiertje in het dashboard, Maarten, en het is van jou.**
+  Ik kan het niet voor je doen: ik klik niet in je Stripe-account.
+
+  Wat hierna nog open zou staan is een eigen mail met BrightNews-opmaak in
+  plaats van Stripe's standaardmail. Dat is een luxe-versie van iets wat dan al
+  werkt, en het kan later mee met de verzenddienst uit punt 60 — niet nu.
 
 - [ ] **41. Lagere prioriteit uit de UI-doorlichting — nog één over.**
   *(2026-09-23; vier van de vijf afgewerkt op 2026-09-24.)*

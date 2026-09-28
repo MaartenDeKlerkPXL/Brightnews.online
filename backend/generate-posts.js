@@ -78,9 +78,14 @@ function bouwMateriaal(feed) {
     // Elke taal linkt naar zijn éígen versie (de feed heeft per taal de
     // juiste URL; lichting 1 linkte overal naar de NL-pagina).
     keuze.urlPerTaal = {};
+    // En dezelfde kop per taal, voor de beeldkaart in de cockpit (punt 53.1).
+    // Die staat al vertaald in de feed, dus dit kost geen AI-call.
+    keuze.titelPerTaal = {};
     for (const lang of TALEN) {
         const lijst = [...(feed.perTaal?.[lang]?.dagoverzichten ?? []), ...(feed.perTaal?.[lang]?.top ?? [])];
-        keuze.urlPerTaal[lang] = lijst.find(x => x.id === keuze.id)?.url ?? keuze.url;
+        const treffer = lijst.find(x => x.id === keuze.id);
+        keuze.urlPerTaal[lang] = treffer?.url ?? keuze.url;
+        keuze.titelPerTaal[lang] = treffer?.titel ?? keuze.titel;
     }
     return keuze;
 }
@@ -193,7 +198,10 @@ async function main() {
         dag,
         inhoud: {
             prompthash: PROMPT_HASH,
-            onderwerp: { soort: onderwerp.soort, titel: onderwerp.titel, url: onderwerp.url },
+            onderwerp: {
+                soort: onderwerp.soort, titel: onderwerp.titel, url: onderwerp.url,
+                titelPerTaal: onderwerp.titelPerTaal,
+            },
             tokens,
             perTaal,
         },
