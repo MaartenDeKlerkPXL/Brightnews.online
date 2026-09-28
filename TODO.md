@@ -1027,6 +1027,15 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
 - [ ] **60. Een welkomstreeks na registratie — gebouwd, wacht op twee
   handelingen van Maarten (2026-09-28).** *(Besluit Maarten 2026-09-27: doen.)*
 
+  **Review + droogloop geslaagd (Erik, 2026-09-28 avond):** de Supabase-kant
+  staat live (tabellen dicht voor anon — geverifieerd; `meld_af` lekt niets en
+  de afmeldpagina werkt op de site), en de eerste droogloop vond 5 accounts
+  die elk correct op "dag zeven" in hun eigen taal uitkwamen — er vertrok
+  niets. Let op vóór het zetten van `RESEND_API_KEY`: die 5 bestaande
+  (team/test)accounts krijgen dan meteen hun Premium-mail — dat is de
+  bedoelde inhaal-logica, maar wees er niet verrast over. Node-versie in de
+  workflow is bij de review op 22 gezet (de service-key-crash op Node 20).
+
   Na aanmelding volgde alleen de bevestigingsmail. Daarna niets, terwijl juist
   die eerste week de meeste conversie oplevert. Drie mails staan er nu:
   bij aanmelding wat BrightNews doet en hoe de selectie werkt, na drie dagen
