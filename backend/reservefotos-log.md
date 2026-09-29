@@ -82,3 +82,21 @@ Adobe-foto (id `1986278256`, hond en kat op de bank) die Maarten zelf heeft
 gedownload. Van 4992px teruggeschaald naar 1400px, Lifestyle in
 `RESERVE_PER_CATEGORIE` van 8 naar 9. Daarmee staat de teller op **43
 reservefoto's** bij 26 nodig.
+
+## Nachtelijke meldingen
+
+### 2026-09-29
+
+Reservefoto's op 2026-09-29 — 150 artikelen op de homepage
+
+| Categorie | Beschikbaar | Nodig | Tekort |
+|---|---|---|---|
+| Environment | 10 | 11 | 1 |
+| Finance | 4 | 0 | — |
+| Health | 5 | 3 | — |
+| Lifestyle | 9 | 7 | — |
+| Science | 11 | 6 | — |
+| Tech | 4 | 0 | — |
+
+Totaal: 27 nodig, 43 beschikbaar.
+Geleend uit een andere categorie: 1 foto's. Dat valt nog niet op.

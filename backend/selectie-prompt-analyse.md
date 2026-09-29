@@ -1425,3 +1425,30 @@ relevantie. "Schimmels krijgen wereldwijd eigen beschermingsstatus als
 'Funga'" (Theecologist.org) over de inzet van wetenschappers en de Fungi
 Foundation om schimmels naast flora en fauna wettelijk erkend en beschermd
 te krijgen — relevant milieu- en wetenschapsnieuws zonder politieke lading.
+
+### 2026-09-29, 09:50 Europe/Amsterdam
+
+Beoordeeld: 13 artikelen, gepubliceerd tussen 2026-09-27 16:35 en 2026-09-29 04:47.
+Niet bright-waardig: 2. Twijfel: 2.
+
+#### Ethisch modemerk Yes Friends krijgt investering van Deborah Meaden
+- **Gepubliceerd:** 2026-09-28 19:23 · Lifestyle · Positive.News
+- **Waar het over gaat:** Een Bristols kledingmerk dat inzet op leefbare lonen en lage-impact productie krijgt een investering van een bekende investeerder en wordt geprezen om zijn fooienregeling voor textielarbeiders.
+- **Waarom dit niet goed genoeg is:** De kern van het stuk is een investeringsdeal in een commercieel modemerk — wie het bedrijf financiert, hoe het uitbreidde naar nieuwe productlijnen. Dat is bedrijfs- en productnieuws, ook al is de missie van het merk sympathiek. De selectieprompt sluit commerciële promotie en bedrijfsnieuws zonder bredere maatschappelijke betekenis expliciet uit, en dit voelt aan als precies dat: een succesverhaal voor één merk, geen maatschappelijk verhaal.
+
+#### Vrouwengroep Lioness wint rechtszaak voor airconditioning in Texaanse gevangenissen
+- **Gepubliceerd:** 2026-09-28 19:27 · Lifestyle · GoodGoodGood.co
+- **Waar het over gaat:** Een groep ex-gedetineerde vrouwen wint samen met andere organisaties een rechtszaak die de staat Texas verplicht om voor eind 2029 airconditioning te installeren in alle gevangenissen.
+- **Waarom dit niet goed genoeg is:** De uitkomst is op zichzelf verbetering van levensomstandigheden, maar het verhaal draait om een rechtszaak tegen een overheidsinstantie over gevangenisomstandigheden — een onderwerp waar de publieke opinie sterk verdeeld over is (verdienen gedetineerden dit comfort). Dat is precies de politieke categorie uit de selectieprompt: goed nieuws dat afhangt van welke mening je al hebt over het onderliggende beleidsvraagstuk, en de kern van het stuk (slechte, potentieel levensgevaarlijke omstandigheden) is iets wat misging, niet overstegen door een reddende gemeenschapsactie zoals de kernregel bedoelt.
+
+#### Twijfelgeval: New York City haalt 131 miljoen dollar op bij DoorDash voor bezorgers
+- **Gepubliceerd:** 2026-09-27 16:35 · Finance · GoodNewsNetwork.org
+- **Waar het over gaat:** NYC treft een schikking van 131,5 miljoen dollar met DoorDash wegens onderbetaling van meer dan 260.000 bezorgers; het grootste deel van het geld gaat rechtstreeks naar de gedupeerde werknemers.
+- **Waarom ik twijfel:** Er zit tastbaar herstel in voor een grote groep individuele mensen die eerder benadeeld werden, wat richting de kernregel (herstel na onrecht) trekt. Tegelijk is de kern een overheid die een bedrijf dwingt te betalen na overtreding van arbeidswetgeving — vergelijkbaar met het ijkvoorbeeld over teruggedraaide surveillance-financiering, waarbij "goed nieuws" afhangt van je opvatting over gig-economy-regulering. Ik zou het laten staan vanwege de concrete compensatie voor echte mensen, maar leg het bij Erik neer.
+
+#### Twijfelgeval: Kleitablet met oudste vredesverdrag ter wereld ontdekt
+- **Gepubliceerd:** 2026-09-28 19:25 · Science · GoodNewsNetwork.org
+- **Waar het over gaat:** Archeologen vinden in Turkije een kleitablet met een fragment van de Vrede van Kadesh, het oudste bekende vredesverdrag, opgegraven bij de Hettitische hoofdstad Hattusa.
+- **Waarom ik twijfel:** Wetenschappelijk en historisch interessant, en netjes geformuleerd zonder probleem-framing, maar het mist de warme, hoopgevende lading die het "goed gevoel"-criterium vraagt — het is vooral een feitelijke vondstmelding zonder mensen die geholpen worden of een verhaal dat je raakt. Ik zou het als grensgeval markeren: relevantie is prima, maar het gevoel blijft vlak.
+
+**Patroon:** twee van de vier vermelde items (de DoorDash-schikking en de Lioness-rechtszaak) draaien om een rechtszaak of overheidsdwang tegen een instelling wegens wangedrag jegens een kwetsbare groep. Beide voelen oprecht positief voor de gedupeerden, maar leunen tegen politiek beladen thema's (arbeidsrecht, gevangenisbeleid) aan waarbij "goed nieuws" afhangt van de politieke bril van de lezer. Het is de moeite waard om in de selectieprompt scherper te maken hoe dit soort "rechtszaak-als-herstel"-verhalen gewogen moeten worden ten opzichte van de politiek-categorie.

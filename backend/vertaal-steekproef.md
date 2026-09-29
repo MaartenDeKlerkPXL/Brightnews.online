@@ -425,3 +425,10 @@ zinsstijl, geen titelhoofdlettergebruik. `meta_description` en
 zelfstandig naamwoord, geen eigennaam), de eigennamen blijven ongewijzigd.
 De lopende tekst leest natuurlijk en gebruikt consequent Brits Engels
 ("programme" in plaats van "program"), passend bij het Britse onderwerp.
+
+### 2026-09-29, Duits
+
+**Artikel:** New York City haalt 131 miljoen dollar op bij DoorDash voor bezorgers
+**Oordeel:** niets aangetroffen.
+
+De eigennamen (New York City Department of Consumer and Worker Protection, DCWP, DoorDash) blijven onvertaald, alle bedragen en aantallen komen overeen met het Nederlands, en de titelstijl volgt de normale Duitse hoofdlettterregels voor zelfstandige naamwoorden zonder verder woord met hoofdletter te beginnen. Kop en tekst spreken elkaar niet tegen en de vertaling loopt natuurlijk.
