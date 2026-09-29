@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-es.xml" rel="self" type="application/rss+xml"/>
         <description>Cada día una selección fresca de buenas noticias de todo el mundo. ¡Feliz lectura!</description>
         <language>es-es</language>
-        <lastBuildDate>Mon, 28 Sep 2026 19:31:22 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Sep 2026 04:47:00 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Tu dosis diaria de positividad</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Cradle to Cradle: reutilizar todo en lugar de reciclar</title>
+            <link>https://brightnews.online/articles/es/cradle-to-cradle-reutilizar-todo-en-lugar-de-reciclar-1790657218277cgwve7kni.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/es/cradle-to-cradle-reutilizar-todo-en-lugar-de-reciclar-1790657218277cgwve7kni.html</guid>
+            <pubDate>Tue, 29 Sep 2026 04:47:00 GMT</pubDate>
+            <description>La ONG Cradle to Cradle, fundada por Nora Griefahn y Tim Janßen en 2012, demuestra cómo se pueden diseñar productos y edificios según el principio Cradle to Cradle: los materiales son biológicos y biodegradables, o bien técnicos e infinitamente reutilizables. Algunos ejemplos son el Shift Phone, un smartphone modular desmontable, y la moqueta Desso cuya capa EcoBase se puede separar...</description>
+            <enclosure url="https://reasonstobecheerful.world/wp-content/uploads/2026/09/33515_3-scaled.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Un hipopótamo bebé, un parque fresco y frutas tropicales: las noticias ambientales de estos días</title>
             <link>https://brightnews.online/articles/es/un-hipopotamo-bebe-un-parque-fresco-y-frutas-tropicales-las-noticias-ambientales-dg-20260927-environment.html</link>
@@ -243,14 +251,6 @@
             <pubDate>Thu, 24 Sep 2026 17:00:33 GMT</pubDate>
             <description>En la selva nubosa de Yungas en Bolivia se ha confirmado una nueva especie de gato salvaje: el tilcayo, científicamente denominado Leopardus tilcayo. Durante años, el felino manchado fue considerado un gato tigre común, pero las comunidades locales siempre lo llamaban de otra manera. Una investigación publicada en Current Biology demuestra mediante análisis de ADN de 38 gatos de varios...</description>
             <enclosure url="https://www.optimistdaily.com/wp-content/uploads/Leopardus_tilcayo_5x3_cropped-1024x613.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Corea del Sur recicla el 97 por ciento de sus residuos alimentarios</title>
-            <link>https://brightnews.online/articles/es/corea-del-sur-recicla-el-97-por-ciento-de-sus-residuos-alimentarios-1790269207385gyigs5nyu.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/es/corea-del-sur-recicla-el-97-por-ciento-de-sus-residuos-alimentarios-1790269207385gyigs5nyu.html</guid>
-            <pubDate>Thu, 24 Sep 2026 17:00:08 GMT</pubDate>
-            <description>En Seúl, Seunghwan Hong tira sus restos de comida en un cubo de basura inteligente: pasa su tarjeta, el cubo pesa los residuos y paga según el peso. Así, el porcentaje de reciclaje de residuos alimentarios de Corea del Sur pasó del 2,6 por ciento en 1996 a casi el 97 por ciento en 2023, gracias a las tasas volumétricas...</description>
-            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/Depositphotos_112863948_S.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-09-28T19:31:23.099Z",
+ "gegenereerd": "2026-09-29T04:47:01.200Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -12,6 +12,14 @@
      "score": 10,
      "categorie": "Finance",
      "url": "https://brightnews.online/articles/nl/new-york-city-haalt-131-miljoen-dollar-op-bij-doordash-voor-bezorgers-1790526952732zu9t81thr.html"
+    },
+    {
+     "id": "1790657218277cgwve7kni",
+     "titel": "Cradle to Cradle: alles hergebruiken in plaats van recyclen",
+     "teaser": "De Cradle to Cradle NGO, opgericht door Nora Griefahn en Tim Janßen in 2012, laat zien hoe producten en gebouwen ontworpen kunnen worden volgens het Cradle to Cradle-principe: materialen zijn ofwel biologisch en biologisch afbreekbaar, ofwel technisch en eindeloos herbruikbaar. Voorbeelden zijn de Shift Phone, een demontabele modulaire smartphone, en Desso-tapijt waarvan de EcoBase-laag gescheiden en gerecycled kan worden. Ook...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/cradle-to-cradle-alles-hergebruiken-in-plaats-van-recyclen-1790657218277cgwve7kni.html"
     },
     {
      "id": "17906236600718klq45n91",
@@ -36,14 +44,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/ellinikon-park-wordt-grootste-kustpark-van-europa-1790623610181f2zlj49rp.html"
-    },
-    {
-     "id": "1790623526076r2rxyrso1",
-     "titel": "18-jarige Bronx-tiener sponsort schoolkinderen in Ghana",
-     "teaser": "Max Owobu, een 18-jarige scholier uit de Bronx, richtte de Yenko Foundation op, een non-profitorganisatie die de schoolgang van kinderen in Ghana financiert. Owobu, wiens vader in Ghana opgroeide, bracht sinds zijn vijftiende zomers door in het land en zag leeftijdsgenoten werken in plaats van naar school gaan. Met geld van zijn zakgeld betaalde hij eerst de schoolgang van één...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/18-jarige-bronx-tiener-sponsort-schoolkinderen-in-ghana-1790623526076r2rxyrso1.html"
     }
    ],
    "dagoverzichten": [
@@ -67,13 +67,6 @@
      "categorie": "Science",
      "dag": "2026-09-27",
      "url": "https://brightnews.online/articles/nl/redden-bewaren-en-beschermen-het-wetenschapsnieuws-van-deze-week-dg-20260927-science.html"
-    },
-    {
-     "id": "dg-20260926-lifestyle",
-     "titel": "Boeken, een miljard dollar en tweede kansen: het goede nieuws van deze dagen",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-26",
-     "url": "https://brightnews.online/articles/nl/boeken-een-miljard-dollar-en-tweede-kansen-het-goede-nieuws-van-deze-dagen-dg-20260926-lifestyle.html"
     }
    ]
   },
@@ -86,6 +79,14 @@
      "score": 10,
      "categorie": "Finance",
      "url": "https://brightnews.online/articles/en/new-york-city-recovers-131-million-from-doordash-for-delivery-workers-1790526952732zu9t81thr.html"
+    },
+    {
+     "id": "1790657218277cgwve7kni",
+     "titel": "Cradle to Cradle: reuse everything instead of recycling",
+     "teaser": "The Cradle to Cradle NGO, founded by Nora Griefahn and Tim Janßen in 2012, demonstrates how products and buildings can be designed according to the Cradle to Cradle principle: materials are either biological and biodegradable, or technical and endlessly reusable. Examples include the Shift Phone, a disassemblable modular smartphone, and Desso carpet whose EcoBase layer can be separated and recycled....",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/cradle-to-cradle-reuse-everything-instead-of-recycling-1790657218277cgwve7kni.html"
     },
     {
      "id": "17906236600718klq45n91",
@@ -110,14 +111,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/en/ellinikon-park-becomes-europe-s-largest-coastal-park-1790623610181f2zlj49rp.html"
-    },
-    {
-     "id": "1790623526076r2rxyrso1",
-     "titel": "18-year-old Bronx teen sponsors schoolchildren in Ghana",
-     "teaser": "Max Owobu, an 18-year-old student from the Bronx, founded the Yenko Foundation, a nonprofit organization that finances schooling for children in Ghana. Owobu, whose father grew up in Ghana, has spent summers in the country since age fifteen and witnessed peers working instead of attending school. Using his own allowance, he first paid for the schooling of one child, Matthew,...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/18-year-old-bronx-teen-sponsors-schoolchildren-in-ghana-1790623526076r2rxyrso1.html"
     }
    ],
    "dagoverzichten": [
@@ -141,13 +134,6 @@
      "categorie": "Science",
      "dag": "2026-09-27",
      "url": "https://brightnews.online/articles/en/saving-preserving-and-protecting-this-week-s-science-news-dg-20260927-science.html"
-    },
-    {
-     "id": "dg-20260926-lifestyle",
-     "titel": "Books, a billion dollars and second chances: the good news of these days",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-26",
-     "url": "https://brightnews.online/articles/en/books-a-billion-dollars-and-second-chances-the-good-news-of-these-days-dg-20260926-lifestyle.html"
     }
    ]
   },
@@ -160,6 +146,14 @@
      "score": 10,
      "categorie": "Finance",
      "url": "https://brightnews.online/articles/de/new-york-city-erhalt-131-millionen-dollar-von-doordash-fur-lieferanten-1790526952732zu9t81thr.html"
+    },
+    {
+     "id": "1790657218277cgwve7kni",
+     "titel": "Cradle to Cradle: alles wiederverwenden statt recyceln",
+     "teaser": "Die Cradle to Cradle NGO, gegründet von Nora Griefahn und Tim Janßen im Jahr 2012, zeigt, wie Produkte und Gebäude nach dem Cradle to Cradle-Prinzip gestaltet werden können: Materialien sind entweder biologisch und biologisch abbaubar oder technisch und endlos wiederverwendbar. Beispiele sind das Shift Phone, ein zerlegbares modulares Smartphone, und Desso-Teppich, dessen EcoBase-Schicht getrennt und recycelt werden kann. Auch der...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/cradle-to-cradle-alles-wiederverwenden-statt-recyceln-1790657218277cgwve7kni.html"
     },
     {
      "id": "17906236600718klq45n91",
@@ -184,14 +178,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/de/ellinikon-park-wird-gro-ter-kustenpark-europas-1790623610181f2zlj49rp.html"
-    },
-    {
-     "id": "1790623526076r2rxyrso1",
-     "titel": "18-Jähriger aus der Bronx sponsert Schulkinder in Ghana",
-     "teaser": "Max Owobu, ein 18-jähriger Schüler aus der Bronx, gründete die Yenko Foundation, eine gemeinnützige Organisation, die die Schulausbildung von Kindern in Ghana finanziert. Owobu, dessen Vater in Ghana aufwuchs, verbrachte seit seinem fünfzehnten Lebensjahr die Sommer im Land und sah Gleichaltrige arbeiten, statt zur Schule zu gehen. Mit Taschengeld bezahlte er zunächst die Schulausbildung eines Kindes, Matthew, auf einer Schule...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/18-jahriger-aus-der-bronx-sponsert-schulkinder-in-ghana-1790623526076r2rxyrso1.html"
     }
    ],
    "dagoverzichten": [
@@ -215,13 +201,6 @@
      "categorie": "Science",
      "dag": "2026-09-27",
      "url": "https://brightnews.online/articles/de/retten-bewahren-und-schutzen-die-wissenschaftsnachrichten-dieser-woche-dg-20260927-science.html"
-    },
-    {
-     "id": "dg-20260926-lifestyle",
-     "titel": "Bücher, eine Milliarde Dollar und zweite Chancen: die guten Nachrichten dieser Tage",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-26",
-     "url": "https://brightnews.online/articles/de/bucher-eine-milliarde-dollar-und-zweite-chancen-die-guten-nachrichten-dieser-tag-dg-20260926-lifestyle.html"
     }
    ]
   },
@@ -234,6 +213,14 @@
      "score": 10,
      "categorie": "Finance",
      "url": "https://brightnews.online/articles/fr/new-york-city-reclame-131-millions-de-dollars-a-doordash-pour-les-livreurs-1790526952732zu9t81thr.html"
+    },
+    {
+     "id": "1790657218277cgwve7kni",
+     "titel": "Cradle to Cradle : tout réutiliser au lieu de recycler",
+     "teaser": "L'ONG Cradle to Cradle, fondée par Nora Griefahn et Tim Janßen en 2012, montre comment les produits et les bâtiments peuvent être conçus selon le principe Cradle to Cradle : les matériaux sont soit biologiques et biodégradables, soit techniques et infiniment réutilisables. Parmi les exemples figurent le Shift Phone, un smartphone modulaire démontable, et le tapis Desso dont la couche...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/cradle-to-cradle-tout-reutiliser-au-lieu-de-recycler-1790657218277cgwve7kni.html"
     },
     {
      "id": "17906236600718klq45n91",
@@ -258,14 +245,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/fr/ellinikon-park-devient-le-plus-grand-parc-cotier-d-europe-1790623610181f2zlj49rp.html"
-    },
-    {
-     "id": "1790623526076r2rxyrso1",
-     "titel": "Un adolescent du Bronx de 18 ans parraine des écoliers au Ghana",
-     "teaser": "Max Owobu, un lycéen de 18 ans originaire du Bronx, a fondé la Yenko Foundation, une organisation à but non lucratif qui finance la scolarité des enfants au Ghana. Owobu, dont le père a grandi au Ghana, passe les étés dans le pays depuis l'âge de quinze ans et a vu des camarades de son âge travailler au lieu d'aller...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/un-adolescent-du-bronx-de-18-ans-parraine-des-ecoliers-au-ghana-1790623526076r2rxyrso1.html"
     }
    ],
    "dagoverzichten": [
@@ -289,13 +268,6 @@
      "categorie": "Science",
      "dag": "2026-09-27",
      "url": "https://brightnews.online/articles/fr/sauver-preserver-et-proteger-l-actualite-scientifique-de-la-semaine-dg-20260927-science.html"
-    },
-    {
-     "id": "dg-20260926-lifestyle",
-     "titel": "Des livres, un milliard de dollars et des secondes chances : les bonnes nouvelles de ces jours-ci",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-26",
-     "url": "https://brightnews.online/articles/fr/des-livres-un-milliard-de-dollars-et-des-secondes-chances-les-bonnes-nouvelles-d-dg-20260926-lifestyle.html"
     }
    ]
   },
@@ -308,6 +280,14 @@
      "score": 10,
      "categorie": "Finance",
      "url": "https://brightnews.online/articles/es/nueva-york-obtiene-131-millones-de-dolares-de-doordash-para-repartidores-1790526952732zu9t81thr.html"
+    },
+    {
+     "id": "1790657218277cgwve7kni",
+     "titel": "Cradle to Cradle: reutilizar todo en lugar de reciclar",
+     "teaser": "La ONG Cradle to Cradle, fundada por Nora Griefahn y Tim Janßen en 2012, demuestra cómo se pueden diseñar productos y edificios según el principio Cradle to Cradle: los materiales son biológicos y biodegradables, o bien técnicos e infinitamente reutilizables. Algunos ejemplos son el Shift Phone, un smartphone modular desmontable, y la moqueta Desso cuya capa EcoBase se puede separar...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/cradle-to-cradle-reutilizar-todo-en-lugar-de-reciclar-1790657218277cgwve7kni.html"
     },
     {
      "id": "17906236600718klq45n91",
@@ -332,14 +312,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/es/ellinikon-park-se-convierte-en-el-mayor-parque-costero-de-europa-1790623610181f2zlj49rp.html"
-    },
-    {
-     "id": "1790623526076r2rxyrso1",
-     "titel": "Adolescente del Bronx de 18 años patrocina la educación de niños en Ghana",
-     "teaser": "Max Owobu, un estudiante de 18 años del Bronx, fundó la Yenko Foundation, una organización sin fines de lucro que financia la educación de niños en Ghana. Owobu, cuyo padre creció en Ghana, ha pasado veranos en el país desde los quince años y vio a compañeros de su edad trabajar en lugar de asistir a la escuela. Con dinero...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/adolescente-del-bronx-de-18-anos-patrocina-la-educacion-de-ninos-en-ghana-1790623526076r2rxyrso1.html"
     }
    ],
    "dagoverzichten": [
@@ -363,13 +335,6 @@
      "categorie": "Science",
      "dag": "2026-09-27",
      "url": "https://brightnews.online/articles/es/salvar-conservar-y-proteger-las-noticias-cientificas-de-esta-semana-dg-20260927-science.html"
-    },
-    {
-     "id": "dg-20260926-lifestyle",
-     "titel": "Libros, mil millones de dólares y segundas oportunidades: las buenas noticias de estos días",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-26",
-     "url": "https://brightnews.online/articles/es/libros-mil-millones-de-dolares-y-segundas-oportunidades-las-buenas-noticias-de-e-dg-20260926-lifestyle.html"
     }
    ]
   }

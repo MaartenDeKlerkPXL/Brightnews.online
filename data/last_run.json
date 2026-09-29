@@ -1,30 +1,25 @@
 {
-  "start": "2026-09-28T19:22:38.914Z",
+  "start": "2026-09-29T04:46:00.524Z",
   "kandidaten": 263,
-  "alGezien": 240,
-  "tekstOpgehaald": 21,
+  "alGezien": 261,
+  "tekstOpgehaald": 2,
   "tekstTeKort": 0,
   "koopjeGeweigerd": 0,
-  "sentimentGeweigerd": 6,
-  "selectieAfgewezen": 6,
+  "sentimentGeweigerd": 0,
+  "selectieAfgewezen": 0,
   "selectieHerkansing": 0,
-  "aiCalls": 56,
-  "aiTokens": 88669,
+  "aiCalls": 10,
+  "aiTokens": 15894,
   "perProvider": {
-    "anthropic": 56
+    "anthropic": 10
   },
-  "incompleet": 2,
-  "geaccepteerd": 9,
+  "incompleet": 1,
+  "geaccepteerd": 1,
   "opslaanMislukt": 0,
   "feedFouten": 0,
   "selectieFouten": 0,
   "selectieOvergeslagen": 0,
-  "selectieMismatch": 1,
-  "perUitsluiting": {
-    "listicle": 1,
-    "verzameleditie": 1,
-    "productnieuws": 1,
-    "te-weinig-inhoud": 1
-  },
-  "einde": "2026-09-28T19:28:15.484Z"
+  "selectieMismatch": 0,
+  "perUitsluiting": {},
+  "einde": "2026-09-29T04:47:00.394Z"
 }

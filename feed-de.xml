@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-de.xml" rel="self" type="application/rss+xml"/>
         <description>Jeden Tag eine frische Auswahl guter Nachrichten aus aller Welt. Viel Spaß beim Lesen!</description>
         <language>de-de</language>
-        <lastBuildDate>Mon, 28 Sep 2026 19:31:22 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Sep 2026 04:47:00 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Deine tägliche Dosis Positivität</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Cradle to Cradle: alles wiederverwenden statt recyceln</title>
+            <link>https://brightnews.online/articles/de/cradle-to-cradle-alles-wiederverwenden-statt-recyceln-1790657218277cgwve7kni.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/de/cradle-to-cradle-alles-wiederverwenden-statt-recyceln-1790657218277cgwve7kni.html</guid>
+            <pubDate>Tue, 29 Sep 2026 04:47:00 GMT</pubDate>
+            <description>Die Cradle to Cradle NGO, gegründet von Nora Griefahn und Tim Janßen im Jahr 2012, zeigt, wie Produkte und Gebäude nach dem Cradle to Cradle-Prinzip gestaltet werden können: Materialien sind entweder biologisch und biologisch abbaubar oder technisch und endlos wiederverwendbar. Beispiele sind das Shift Phone, ein zerlegbares modulares Smartphone, und Desso-Teppich, dessen EcoBase-Schicht getrennt </description>
+            <enclosure url="https://reasonstobecheerful.world/wp-content/uploads/2026/09/33515_3-scaled.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Ein Flusspferd-Baby, ein kühler Park und tropische Früchte: die Umweltnachrichten dieser Tage</title>
             <link>https://brightnews.online/articles/de/ein-flusspferd-baby-ein-kuhler-park-und-tropische-fruchte-die-umweltnachrichten-dg-20260927-environment.html</link>
@@ -243,14 +251,6 @@
             <pubDate>Thu, 24 Sep 2026 17:00:33 GMT</pubDate>
             <description>Im Yungas-Nebelwald in Bolivien ist eine neue Wildkatzenart bestätigt worden: die Tilcayo, wissenschaftlich Leopardus tilcayo genannt. Jahrelang wurde das gefleckte Tier als gewöhnliche Tigerkatz angesehen, doch lokale Gemeinden nannten es schon immer anders. Eine in Current Biology veröffentlichte Studie zeigt durch DNA-Analysen von 38 Katzen aus mehreren südamerikanischen Ländern, darunter acht </description>
             <enclosure url="https://www.optimistdaily.com/wp-content/uploads/Leopardus_tilcayo_5x3_cropped-1024x613.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Südkorea recycelt 97 Prozent seines Lebensmittelabfalls</title>
-            <link>https://brightnews.online/articles/de/sudkorea-recycelt-97-prozent-seines-lebensmittelabfalls-1790269207385gyigs5nyu.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/de/sudkorea-recycelt-97-prozent-seines-lebensmittelabfalls-1790269207385gyigs5nyu.html</guid>
-            <pubDate>Thu, 24 Sep 2026 17:00:08 GMT</pubDate>
-            <description>In Seoul wirft Seunghwan Hong seine Essensreste in einen intelligenten Abfallbehälter: Er hält seine Karte hin, der Behälter wiegt den Abfall und er bezahlt nach Gewicht. So stieg die Recyclingquote für Lebensmittelabfälle in Südkorea von 2,6 Prozent im Jahr 1996 auf knapp 97 Prozent im Jahr 2023 – dank volumenabhängiger Gebühren (1995), verpflichtender Mülltrennung (1997), einem Deponieverbod (20</description>
-            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/Depositphotos_112863948_S.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

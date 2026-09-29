@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-nl.xml" rel="self" type="application/rss+xml"/>
         <description>Elke dag een verse selectie goed nieuws uit de hele wereld, veel leesplezier!</description>
         <language>nl-nl</language>
-        <lastBuildDate>Mon, 28 Sep 2026 19:31:22 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 29 Sep 2026 04:47:00 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Jouw Dagelijkse Dosis Positiviteit</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Cradle to Cradle: alles hergebruiken in plaats van recyclen</title>
+            <link>https://brightnews.online/articles/nl/cradle-to-cradle-alles-hergebruiken-in-plaats-van-recyclen-1790657218277cgwve7kni.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/nl/cradle-to-cradle-alles-hergebruiken-in-plaats-van-recyclen-1790657218277cgwve7kni.html</guid>
+            <pubDate>Tue, 29 Sep 2026 04:47:00 GMT</pubDate>
+            <description>De Cradle to Cradle NGO, opgericht door Nora Griefahn en Tim Janßen in 2012, laat zien hoe producten en gebouwen ontworpen kunnen worden volgens het Cradle to Cradle-principe: materialen zijn ofwel biologisch en biologisch afbreekbaar, ofwel technisch en eindeloos herbruikbaar. Voorbeelden zijn de Shift Phone, een demontabele modulaire smartphone, en Desso-tapijt waarvan de EcoBase-laag gescheiden</description>
+            <enclosure url="https://reasonstobecheerful.world/wp-content/uploads/2026/09/33515_3-scaled.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Een weeshippo, een koel park en tropisch fruit: het milieunieuws van deze dagen</title>
             <link>https://brightnews.online/articles/nl/een-weeshippo-een-koel-park-en-tropisch-fruit-het-milieunieuws-van-deze-dagen-dg-20260927-environment.html</link>
@@ -243,14 +251,6 @@
             <pubDate>Thu, 24 Sep 2026 17:00:33 GMT</pubDate>
             <description>In het Yungas-nevelwoud in Bolivia is een nieuwe wilde kattensoort bevestigd: de tilcayo, wetenschappelijk Leopardus tilcayo genoemd. Jarenlang werd het gevlekte dier gezien als een gewone tijgerkat, maar lokale gemeenschappen noemden het al altijd anders. Onderzoek gepubliceerd in Current Biology toont via DNA-analyse van 38 katten uit meerdere Zuid-Amerikaanse landen, waaronder acht museumexempl</description>
             <enclosure url="https://www.optimistdaily.com/wp-content/uploads/Leopardus_tilcayo_5x3_cropped-1024x613.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Zuid-Korea recyclet 97 procent van al zijn voedselafval</title>
-            <link>https://brightnews.online/articles/nl/zuid-korea-recyclet-97-procent-van-al-zijn-voedselafval-1790269207385gyigs5nyu.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/nl/zuid-korea-recyclet-97-procent-van-al-zijn-voedselafval-1790269207385gyigs5nyu.html</guid>
-            <pubDate>Thu, 24 Sep 2026 17:00:08 GMT</pubDate>
-            <description>In Seoul gooit Seunghwan Hong zijn etensresten in een slimme afvalbak: hij tikt zijn pas, de bak weegt het afval en hij betaalt naar gewicht. Zo ging het voedselafval-recyclingpercentage van Zuid-Korea van 2,6 procent in 1996 naar bijna 97 procent in 2023, dankzij volumegebonden heffingen (1995), verplichte scheiding (1997), een stortverbod (2005) en RFID-slimme bakken (2010). New York verplichtte</description>
-            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/Depositphotos_112863948_S.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>
