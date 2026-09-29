@@ -1,6 +1,666 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://brightnews.online/articles/nl/mensen-en-dieren-vinden-elkaar-goed-nieuws-over-natuurbescherming-dg-20260928-environment.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:57:05.078Z</news:publication_date>
+      <news:title>Mensen en dieren vinden elkaar: goed nieuws over natuurbescherming</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/people-and-animals-find-each-other-good-news-about-nature-conservation-dg-20260928-environment.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:57:05.078Z</news:publication_date>
+      <news:title>People and animals find each other: good news about nature conservation</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/menschen-und-tiere-finden-zueinander-gute-nachrichten-zum-naturschutz-dg-20260928-environment.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:57:05.078Z</news:publication_date>
+      <news:title>Menschen und Tiere finden zueinander: gute Nachrichten zum Naturschutz</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/les-hommes-et-les-animaux-se-rencontrent-bonnes-nouvelles-pour-la-protection-de-dg-20260928-environment.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:57:05.078Z</news:publication_date>
+      <news:title>Les hommes et les animaux se rencontrent : bonnes nouvelles pour la protection de la nature</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/personas-y-animales-se-encuentran-buenas-noticias-sobre-conservacion-de-la-natur-dg-20260928-environment.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:57:05.078Z</news:publication_date>
+      <news:title>Personas y animales se encuentran: buenas noticias sobre conservación de la naturaleza</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/beurzen-voor-moedig-onderzoek-en-een-naam-voor-een-oeroude-amfibie-dg-20260928-science.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:56:14.154Z</news:publication_date>
+      <news:title>Beurzen voor moedig onderzoek en een naam voor een oeroude amfibie</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/grants-for-bold-research-and-a-name-for-an-ancient-amphibian-dg-20260928-science.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:56:14.154Z</news:publication_date>
+      <news:title>Grants for bold research and a name for an ancient amphibian</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/stipendien-fur-mutige-forschung-und-ein-name-fur-ein-uraltes-lurch-dg-20260928-science.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:56:14.154Z</news:publication_date>
+      <news:title>Stipendien für mutige Forschung und ein Name für ein uraltes Lurch</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/des-bourses-pour-la-recherche-courageuse-et-un-nom-pour-un-amphibien-prehistoriq-dg-20260928-science.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:56:14.154Z</news:publication_date>
+      <news:title>Des bourses pour la recherche courageuse et un nom pour un amphibien préhistorique</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/becas-para-la-investigacion-valiente-y-un-nombre-para-un-anfibio-ancestral-dg-20260928-science.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:56:14.154Z</news:publication_date>
+      <news:title>Becas para la investigación valiente y un nombre para un anfibio ancestral</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/macarthur-foundation-kent-genius-grants-toe-aan-20-wetenschappers-en-kunstenaars-1790704517255qb72iuc08.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:55:18.883Z</news:publication_date>
+      <news:title>MacArthur Foundation kent 'genius grants' toe aan 20 wetenschappers en kunstenaars</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/macarthur-foundation-awards-genius-grants-to-20-scientists-and-artists-1790704517255qb72iuc08.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:55:18.883Z</news:publication_date>
+      <news:title>MacArthur Foundation awards 'genius grants' to 20 scientists and artists</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/macarthur-foundation-vergibt-genius-grants-an-20-wissenschaftler-und-kunstler-1790704517255qb72iuc08.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:55:18.883Z</news:publication_date>
+      <news:title>MacArthur Foundation vergibt „Genius Grants" an 20 Wissenschaftler und Künstler</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/macarthur-foundation-attribue-des-genius-grants-a-20-scientifiques-et-artistes-1790704517255qb72iuc08.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:55:18.883Z</news:publication_date>
+      <news:title>MacArthur Foundation attribue des « genius grants » à 20 scientifiques et artistes</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/macarthur-foundation-otorga-genius-grants-a-20-cientificos-y-artistas-1790704517255qb72iuc08.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:55:18.883Z</news:publication_date>
+      <news:title>MacArthur Foundation otorga 'genius grants' a 20 científicos y artistas</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/forensisch-antropoloog-spradley-wint-macarthur-beurs-voor-werk-aan-wetenschap-en-1790704490895fnd9hccqb.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:54:51.996Z</news:publication_date>
+      <news:title>Forensisch antropoloog Spradley wint MacArthur-beurs voor werk aan wetenschap en gerechtigheid</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/forensic-anthropologist-spradley-wins-macarthur-fellowship-for-work-on-science-a-1790704490895fnd9hccqb.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:54:51.996Z</news:publication_date>
+      <news:title>Forensic anthropologist Spradley wins MacArthur Fellowship for work on science and justice</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/forensische-anthropologin-spradley-gewinnt-macarthur-stipendium-fur-arbeit-an-wi-1790704490895fnd9hccqb.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:54:51.996Z</news:publication_date>
+      <news:title>Forensische Anthropologin Spradley gewinnt MacArthur-Stipendium für Arbeit an Wissenschaft und Gerechtigkeit</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/l-anthropologue-judiciaire-spradley-remporte-une-bourse-macarthur-pour-ses-trava-1790704490895fnd9hccqb.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:54:51.996Z</news:publication_date>
+      <news:title>L'anthropologue judiciaire Spradley remporte une bourse MacArthur pour ses travaux en science et justice</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/la-antropologa-forense-spradley-gana-beca-macarthur-por-su-trabajo-en-ciencia-y-1790704490895fnd9hccqb.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:54:51.996Z</news:publication_date>
+      <news:title>La antropóloga forense Spradley gana beca MacArthur por su trabajo en ciencia y justicia</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/snor-van-pizza-john-haalt-miljoenen-op-voor-moederzorg-sierra-leone-179070446589916lhlftvz.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:54:27.205Z</news:publication_date>
+      <news:title>Snor van Pizza John haalt miljoenen op voor moederzorg Sierra Leone</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/pizza-john-s-mustache-raises-millions-for-maternal-care-in-sierra-leone-179070446589916lhlftvz.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:54:27.205Z</news:publication_date>
+      <news:title>Pizza John's mustache raises millions for maternal care in Sierra Leone</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/schnurrbart-von-pizza-john-sammelt-millionen-fur-muttergesundheit-in-sierra-leon-179070446589916lhlftvz.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:54:27.205Z</news:publication_date>
+      <news:title>Schnurrbart von Pizza John sammelt Millionen für Müttergesundheit in Sierra Leone</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/la-moustache-de-pizza-john-recolte-des-millions-pour-la-sante-maternelle-en-sier-179070446589916lhlftvz.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:54:27.205Z</news:publication_date>
+      <news:title>La moustache de Pizza John récolte des millions pour la santé maternelle en Sierra Leone</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/el-bigote-de-pizza-john-recauda-millones-para-la-salud-materna-en-sierra-leona-179070446589916lhlftvz.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:54:27.205Z</news:publication_date>
+      <news:title>El bigote de Pizza John recauda millones para la salud materna en Sierra Leona</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/sokkenactie-socktober-viert-15-jaar-lokale-vriendelijkheid-1790704437768s5e1giwo8.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:53:59.585Z</news:publication_date>
+      <news:title>Sokkenactie 'Socktober' viert 15 jaar lokale vriendelijkheid</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/sock-drive-socktober-celebrates-15-years-of-local-kindness-1790704437768s5e1giwo8.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:53:59.585Z</news:publication_date>
+      <news:title>Sock drive 'Socktober' celebrates 15 years of local kindness</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/socktoberaktion-feiert-15-jahre-lokale-hilfsbereitschaft-1790704437768s5e1giwo8.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:53:59.585Z</news:publication_date>
+      <news:title>Socktoberaktion feiert 15 Jahre lokale Hilfsbereitschaft</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/l-action-chaussettes-socktober-celebre-15-ans-de-solidarite-locale-1790704437768s5e1giwo8.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:53:59.585Z</news:publication_date>
+      <news:title>L'action chaussettes « Socktober » célèbre 15 ans de solidarité locale</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/la-campana-de-calcetines-socktober-celebra-15-anos-de-solidaridad-local-1790704437768s5e1giwo8.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:53:59.585Z</news:publication_date>
+      <news:title>La campaña de calcetines 'Socktober' celebra 15 años de solidaridad local</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/tanzaniaanse-boeren-geven-land-terug-aan-olifanten-1790704405966fz37a0dpl.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:53:27.607Z</news:publication_date>
+      <news:title>Tanzaniaanse boeren geven land terug aan olifanten</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/tanzanian-farmers-return-land-to-elephants-1790704405966fz37a0dpl.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:53:27.607Z</news:publication_date>
+      <news:title>Tanzanian farmers return land to elephants</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/tansanische-bauern-geben-land-an-elefanten-zuruck-1790704405966fz37a0dpl.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:53:27.607Z</news:publication_date>
+      <news:title>Tansanische Bauern geben Land an Elefanten zurück</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/des-agriculteurs-tanzaniens-restituent-des-terres-aux-elephants-1790704405966fz37a0dpl.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:53:27.607Z</news:publication_date>
+      <news:title>Des agriculteurs tanzaniens restituent des terres aux éléphants</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/agricultores-tanzanos-devuelven-tierra-a-los-elefantes-1790704405966fz37a0dpl.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:53:27.607Z</news:publication_date>
+      <news:title>Agricultores tanzanos devuelven tierra a los elefantes</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/japan-telt-recordaantal-van-107-677-honderdplussers-1790704314626iyt2vdzn2.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:51:55.724Z</news:publication_date>
+      <news:title>Japan telt recordaantal van 107.677 honderdplussers</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/japan-records-107-677-centenarians-surpassing-100-000-milestone-1790704314626iyt2vdzn2.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:51:55.724Z</news:publication_date>
+      <news:title>Japan records 107,677 centenarians, surpassing 100,000 milestone</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/japan-zahlt-rekordanzahl-von-107-677-hundertjahrigen-1790704314626iyt2vdzn2.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:51:55.724Z</news:publication_date>
+      <news:title>Japan zählt Rekordanzahl von 107.677 Hundertjährigen</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/le-japon-compte-un-nombre-record-de-107-677-centenaires-1790704314626iyt2vdzn2.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:51:55.724Z</news:publication_date>
+      <news:title>Le Japon compte un nombre record de 107.677 centenaires</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/japon-registra-un-numero-record-de-107-677-centenarios-1790704314626iyt2vdzn2.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:51:55.724Z</news:publication_date>
+      <news:title>Japón registra un número récord de 107.677 centenarios</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/studentes-noemen-309-miljoen-jaar-oude-jeanerpeton-mazonensis-naar-hun-moeders-1790704288436yrrol00ab.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:51:29.602Z</news:publication_date>
+      <news:title>Studentes noemen 309 miljoen jaar oude Jeanerpeton mazonensis naar hun moeders</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/students-name-309-million-year-old-jeanerpeton-mazonensis-after-their-mothers-1790704288436yrrol00ab.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:51:29.602Z</news:publication_date>
+      <news:title>Students name 309-million-year-old Jeanerpeton mazonensis after their mothers</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/studentinnen-benennen-309-millionen-jahre-alten-jeanerpeton-mazonensis-nach-ihre-1790704288436yrrol00ab.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:51:29.602Z</news:publication_date>
+      <news:title>Studentinnen benennen 309 Millionen Jahre alten Jeanerpeton mazonensis nach ihren Müttern</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/des-etudiantes-nomment-un-jeanerpeton-mazonensis-vieux-de-309-millions-d-annees-1790704288436yrrol00ab.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:51:29.602Z</news:publication_date>
+      <news:title>Des étudiantes nomment un Jeanerpeton mazonensis vieux de 309 millions d'années d'après leurs mères</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/estudiantes-nombran-anfibio-de-309-millones-de-anos-tras-sus-madres-1790704288436yrrol00ab.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:51:29.602Z</news:publication_date>
+      <news:title>Estudiantes nombran anfibio de 309 millones de años tras sus madres</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/noorwegen-beschermt-andfjorden-walvissen-en-koraal-veilig-1790704261430q3gkch2zq.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:51:02.909Z</news:publication_date>
+      <news:title>Noorwegen beschermt Andfjorden: walvissen en koraal veilig</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/norway-protects-andfjorden-whales-and-coral-safe-1790704261430q3gkch2zq.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:51:02.909Z</news:publication_date>
+      <news:title>Norway protects Andfjorden: whales and coral safe</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/norwegen-schutzt-andfjorden-wale-und-korallen-sicher-1790704261430q3gkch2zq.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:51:02.909Z</news:publication_date>
+      <news:title>Norwegen schützt Andfjorden: Wale und Korallen sicher</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/la-norvege-protege-l-andfjorden-baleines-et-corail-en-securite-1790704261430q3gkch2zq.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:51:02.909Z</news:publication_date>
+      <news:title>La Norvège protège l'Andfjorden : baleines et corail en sécurité</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/noruega-protege-el-andfjorden-ballenas-y-coral-a-salvo-1790704261430q3gkch2zq.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:51:02.909Z</news:publication_date>
+      <news:title>Noruega protege el Andfjorden: ballenas y coral a salvo</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/betaalde-foto-s-maken-jagers-tot-beschermers-van-borneo-s-orang-oetans-1790704221015snvd30kdl.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:50:22.444Z</news:publication_date>
+      <news:title>Betaalde foto's maken jagers tot beschermers van Borneo's orang-oetans</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/paid-photos-turn-borneo-hunters-into-orangutan-protectors-1790704221015snvd30kdl.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:50:22.444Z</news:publication_date>
+      <news:title>Paid photos turn Borneo hunters into orangutan protectors</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/bezahlte-fotos-machen-jager-zu-schutzern-von-borneos-orang-utans-1790704221015snvd30kdl.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:50:22.444Z</news:publication_date>
+      <news:title>Bezahlte Fotos machen Jäger zu Schützern von Borneos Orang-Utans</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/des-photos-remunerees-transforment-les-chasseurs-en-protecteurs-des-orangs-outan-1790704221015snvd30kdl.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:50:22.444Z</news:publication_date>
+      <news:title>Des photos rémunérées transforment les chasseurs en protecteurs des orangs-outans de Bornéo</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/las-fotos-pagadas-convierten-cazadores-en-protectores-de-los-orangutanes-de-born-1790704221015snvd30kdl.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:50:22.444Z</news:publication_date>
+      <news:title>Las fotos pagadas convierten cazadores en protectores de los orangutanes de Borneo</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/ashaninka-gemeenschap-voorkomt-bosbranden-in-peru-1790704188618teyxk6yw4.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:49:52.309Z</news:publication_date>
+      <news:title>Asháninka-gemeenschap voorkomt bosbranden in Peru</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/ashaninka-community-prevents-forest-fires-in-peru-1790704188618teyxk6yw4.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:49:52.309Z</news:publication_date>
+      <news:title>Asháninka community prevents forest fires in Peru</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/ashaninka-gemeinde-verhindert-waldbrande-in-peru-1790704188618teyxk6yw4.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:49:52.309Z</news:publication_date>
+      <news:title>Asháninka-Gemeinde verhindert Waldbrände in Peru</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/la-communaute-ashaninka-previent-les-incendies-de-foret-au-perou-1790704188618teyxk6yw4.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:49:52.309Z</news:publication_date>
+      <news:title>La communauté asháninka prévient les incendies de forêt au Pérou</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/comunidad-ashaninka-previene-incendios-forestales-en-peru-1790704188618teyxk6yw4.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-29T17:49:52.309Z</news:publication_date>
+      <news:title>Comunidad Asháninka previene incendios forestales en Perú</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://brightnews.online/articles/nl/cradle-to-cradle-alles-hergebruiken-in-plaats-van-recyclen-1790657218277cgwve7kni.html</loc>
     <news:news>
       <news:publication>
@@ -823,61 +1483,6 @@
       </news:publication>
       <news:publication_date>2026-09-28T04:15:09.422Z</news:publication_date>
       <news:title>Investigadores encuentran aromas que alejan a las abejas melíferas de los pesticidas</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/new-york-city-haalt-131-miljoen-dollar-op-bij-doordash-voor-bezorgers-1790526952732zu9t81thr.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-27T16:35:55.742Z</news:publication_date>
-      <news:title>New York City haalt 131 miljoen dollar op bij DoorDash voor bezorgers</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/new-york-city-recovers-131-million-from-doordash-for-delivery-workers-1790526952732zu9t81thr.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-27T16:35:55.742Z</news:publication_date>
-      <news:title>New York City recovers $131 million from DoorDash for delivery workers</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/new-york-city-erhalt-131-millionen-dollar-von-doordash-fur-lieferanten-1790526952732zu9t81thr.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-27T16:35:55.742Z</news:publication_date>
-      <news:title>New York City erhält 131 Millionen Dollar von DoorDash für Lieferanten</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/new-york-city-reclame-131-millions-de-dollars-a-doordash-pour-les-livreurs-1790526952732zu9t81thr.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-27T16:35:55.742Z</news:publication_date>
-      <news:title>New York City réclame 131 millions de dollars à DoorDash pour les livreurs</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/nueva-york-obtiene-131-millones-de-dolares-de-doordash-para-repartidores-1790526952732zu9t81thr.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-27T16:35:55.742Z</news:publication_date>
-      <news:title>Nueva York obtiene 131 millones de dólares de DoorDash para repartidores</news:title>
     </news:news>
   </url>
 </urlset>

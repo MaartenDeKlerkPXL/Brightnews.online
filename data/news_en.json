@@ -1,5 +1,211 @@
 [
   {
+    "id": "dg-20260928-environment",
+    "type": "digest",
+    "digest_date": "2026-09-28",
+    "title": "People and animals find each other: good news about nature conservation",
+    "summary": "This week highlights how often people and nature actually get along together rather than stand opposed to each other. From farmers giving up land to fishers and hunters becoming protectors: new ways of giving animals and ecosystems space are emerging all over the world, without leaving local communities behind. In Tanzania, 368 farmers gave up land in the Kilombero Valley so that elephants could safely migrate again between the Udzungwa Mountains and Nyerere National Park [1]. After seven years of preparation, this corridor received official protection in April 2025. Trail cameras have already recorded more than a thousand mammals using...",
+    "image_alt": "People and animals find each other: good news about nature conservation",
+    "meta_description": "From elephant corridors to protected seas: the positive nature news of September 28, 2026 at a glance, with stories that connect.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abbea7197fe67679528096d_6abbea377983489d5cd8dce0_trail-cameras-wildlife-corridor-tanzania-featured.jpeg",
+    "date": "2026-09-29T17:57:05.078Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1790704405966fz37a0dpl",
+        "title": "Tanzanian farmers return land to elephants"
+      },
+      {
+        "id": "1790704221015snvd30kdl",
+        "title": "Paid photos turn Borneo hunters into orangutan protectors"
+      },
+      {
+        "id": "1790704188618teyxk6yw4",
+        "title": "Asháninka community prevents forest fires in Peru"
+      },
+      {
+        "id": "1790657218277cgwve7kni",
+        "title": "Cradle to Cradle: reuse everything instead of recycling"
+      },
+      {
+        "id": "1790704261430q3gkch2zq",
+        "title": "Norway protects Andfjorden: whales and coral safe"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260928-science",
+    "type": "digest",
+    "digest_date": "2026-09-28",
+    "title": "Grants for bold research and a name for an ancient amphibian",
+    "summary": "This week highlights how science connects people, from today to the distant past. Twenty scientists and artists received major grants for their work, and two students gave a name to an animal that lived 309 million years ago. Both stories show that attention and care, whether applied to people or fossils, lead to beautiful discoveries. The MacArthur Foundation announced this week the winners of its annual fellowship, also known as the 'genius grant' [1]. The twenty laureates each receive $800,000, with no strings attached. Among them are climate scientists, a sociologist, a historian, and artists such as Christine Sun Kim...",
+    "image_alt": "Grants for bold research and a name for an ancient amphibian",
+    "meta_description": "Science news: MacArthur grants for bold research and a 309-million-year-old amphibian that finally got a name.",
+    "meta_keywords": "Science",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2400x1350+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F78%2F30%2F6f8b939143d9b9047b8ce0425d8b%2F6-images-4.jpg",
+    "date": "2026-09-29T17:56:14.154Z",
+    "category": "Science",
+    "refs": [
+      {
+        "id": "1790704517255qb72iuc08",
+        "title": "MacArthur Foundation awards 'genius grants' to 20 scientists and artists"
+      },
+      {
+        "id": "1790704490895fnd9hccqb",
+        "title": "Forensic anthropologist Spradley wins MacArthur Fellowship for work on science and justice"
+      },
+      {
+        "id": "1790704288436yrrol00ab",
+        "title": "Students name 309-million-year-old Jeanerpeton mazonensis after their mothers"
+      }
+    ]
+  },
+  {
+    "id": "1790704517255qb72iuc08",
+    "title": "MacArthur Foundation awards 'genius grants' to 20 scientists and artists",
+    "summary": "The MacArthur Foundation has announced the winners of its annual, no-strings-attached fellowships worth $800,000. Among the 20 laureates are diverse scientists and artists, including forensic anthropologist Kate Spradley, who repatriates the remains of migrants who died along the Texas-Mexico border, and labor economist Ellora Derenoncourt, who studies racial wage gaps. Climate scientists Kaiyu Guan and Marika Holland, sociologist Holly Jean...",
+    "image_alt": "Portraits of six MacArthur Fellows 2026, including Kate Spradley, Ellora Derenoncourt and Christine Sun Kim",
+    "meta_description": "MacArthur Foundation awards $800,000 'genius grants' to 20 scientists and artists with diverse expertise.",
+    "meta_keywords": "MacArthur Fellowship, genius grant, scientists, artists, Kate Spradley, Ellora Derenoncourt, Christine Sun Kim",
+    "link": "https://www.npr.org/2026/09/29/nx-s1-5980447/macarthur-genius-grants-2026-fellows",
+    "source": "NPR.org",
+    "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2400x1350+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F78%2F30%2F6f8b939143d9b9047b8ce0425d8b%2F6-images-4.jpg",
+    "date": "2026-09-29T17:55:18.883Z",
+    "category": "Science",
+    "score": 8
+  },
+  {
+    "id": "1790704490895fnd9hccqb",
+    "title": "Forensic anthropologist Spradley wins MacArthur Fellowship for work on science and justice",
+    "summary": "The MacArthur Foundation has announced its newest cohort of 20 fellows. Recipients each receive $800,000 with no strings attached. Among the winners are researchers working at the intersection of science and justice, including forensic anthropologist Kate Spradley of Texas State University and Felipe De Brigard. Spradley received the recognition for her work identifying deceased Central American migrants. What began as...",
+    "image_alt": "Portraits of MacArthur Fellows Kate Spradley and Felipe De Brigard",
+    "meta_description": "Forensic anthropologist Kate Spradley wins MacArthur Fellowship for work identifying deceased migrants in Texas.",
+    "meta_keywords": "MacArthur Fellows, Kate Spradley, forensic anthropology, Felipe De Brigard, science and justice, Texas",
+    "link": "https://www.npr.org/2026/09/29/nx-s1-5983444/this-years-macarthur-fellows-include-researchers-who-fuse-science-and-justice",
+    "source": "NPR.org",
+    "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6399x3599+0+153/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F66%2Fe3%2F2609d7384f10a465802e8ef2a3ab%2Fmcarthur-winners.jpg",
+    "date": "2026-09-29T17:54:51.996Z",
+    "category": "Science",
+    "score": 8
+  },
+  {
+    "id": "179070446589916lhlftvz",
+    "title": "Pizza John's mustache raises millions for maternal care in Sierra Leone",
+    "summary": "Pizzamas, the annual internet event by YouTubers Hank and John Green, has grown from a fan meme into a major fundraiser. It started in 2009 when John shaved on camera and fan Valerie Barr used a still to create the artwork character 'Pizza John'. Since 2012, Hank and John have sold temporary merchandise through their company DFTBA, such as t-shirts,...",
+    "image_alt": "Illustration of Pizza John, the mustache logo of the Pizzamas fundraiser",
+    "meta_description": "How an internet joke about YouTuber John Green's mustache grew into million-dollar support for maternal care in Sierra Leone.",
+    "meta_keywords": "Pizzamas, Hank Green, John Green, Nerdfighteria, Partners in Health, Sierra Leone, maternal care, DFTBA",
+    "link": "https://www.goodgoodgood.co/articles/pizzamas",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6334e4bcff7154be8b85dd6a_what-is-pizzamas.jpg",
+    "date": "2026-09-29T17:54:27.205Z",
+    "category": "Health",
+    "score": 9
+  },
+  {
+    "id": "1790704437768s5e1giwo8",
+    "title": "Sock drive 'Socktober' celebrates 15 years of local kindness",
+    "summary": "Socktober began 15 years ago when high school students wanted to help after learning that many people in their community were homeless or shuttling between shelters. A call to the local shelter revealed that socks were desperately needed but rarely donated. Schools, churches and businesses participated, collecting more socks than could fit in a car. The initiative grew through a...",
+    "image_alt": "Volunteers sort donated socks for a local homeless shelter during Socktober",
+    "meta_description": "Socktober celebrates 15 years: from a student idea to a global sock drive for the homeless.",
+    "meta_keywords": "Socktober, sock drive, homeless shelter, Kid President, Brad Montague, volunteering, donate socks",
+    "link": "https://www.goodgoodgood.co/articles/socktober",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/651337ee1ee8951f82c300a1_socktober-socks.jpg",
+    "date": "2026-09-29T17:53:59.585Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "1790704405966fz37a0dpl",
+    "title": "Tanzanian farmers return land to elephants",
+    "summary": "In the Kilombero Valley in Tanzania, 368 farmers have ceded land to provide elephants with safe passage between the Udzungwa Mountains and Nyerere National Park. After seven years of preparation by the Southern Tanzania Elephant Program (STEP) and partners, the Nyerere-Udzungwa Wildlife Corridor (NUWC) received official protection in April 2025, the first of its kind in Tanzania. The 200-meter-wide and...",
+    "image_alt": "A group of African savanna elephants crosses the Kilombero Valley via the new wildlife corridor in Tanzania.",
+    "meta_description": "368 farmers cede land so elephants can safely cross the Kilombero Valley in Tanzania's first protected wildlife corridor.",
+    "meta_keywords": "elephants, Tanzania, wildlife corridor, Udzungwa, Nyerere National Park, nature conservation, STEP",
+    "link": "https://www.goodgoodgood.co/articles/trail-cameras-wildlife-corridor-tanzania",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abbea7197fe67679528096d_6abbea377983489d5cd8dce0_trail-cameras-wildlife-corridor-tanzania-featured.jpeg",
+    "date": "2026-09-29T17:53:27.607Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790704314626iyt2vdzn2",
+    "title": "Japan records 107,677 centenarians, surpassing 100,000 milestone",
+    "summary": "According to recently published figures from the Ministry of Health, Japan has 107,677 residents aged 100 or older, marking the first time the 100,000 threshold has been exceeded. This makes Japan home to the world's largest population of centenarians. When the count began in 1963, there were 153; the 1,000 mark was crossed in 1981, and 10,000 in 1998. Eighty-eight...",
+    "image_alt": "Elderly Japanese people engaged in daily activities such as walking and cycling",
+    "meta_description": "Japan records 107,677 centenarians, a world record. Diet, exercise and technology play a key role, experts say.",
+    "meta_keywords": "Japan, centenarians, life expectancy, healthy aging, diet, exercise, aging population",
+    "link": "https://www.optimistdaily.com/2026/09/what-japans-107677-centenarians-reveal-about-diet-lifestyle-and-aging/",
+    "source": "OptimistDaily.com",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_55757129_S.jpg",
+    "date": "2026-09-29T17:51:55.724Z",
+    "category": "Health",
+    "score": 8
+  },
+  {
+    "id": "1790704288436yrrol00ab",
+    "title": "Students name 309-million-year-old Jeanerpeton mazonensis after their mothers",
+    "summary": "Student scientists Allison Sefcovic and Payton Kohlberg have named a newly identified early amphibian species after their mothers, both named Jean. Jeanerpeton mazonensis lived 309 million years ago, long before the dinosaurs, in the area around present-day Chicago, then a swampy river delta. The creature resembled a salamander but was stocky and pudgy like a frog. The fossil was found...",
+    "image_alt": "Fossil of the early amphibian species Jeanerpeton mazonensis from Mazon Creek",
+    "meta_description": "Students name 309-million-year-old amphibian species Jeanerpeton mazonensis after their mothers in Field Museum discovery.",
+    "meta_keywords": "Jeanerpeton mazonensis, fossil, Field Museum, Mazon Creek, paleontology, amphibian, Women in Science",
+    "link": "https://www.goodnewsnetwork.org/newly-identified-frog-like-creature-named-by-student-scientists-after-their-moms/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Allison-Sefcovic-and-Payton-Kohlberg-hold-epoxy-sculptures-of-new-species-Jeanerpeton-mazonensis-Credit-Chicago-Field-Museum.jpg",
+    "date": "2026-09-29T17:51:29.602Z",
+    "category": "Science",
+    "score": 8
+  },
+  {
+    "id": "1790704261430q3gkch2zq",
+    "title": "Norway protects Andfjorden: whales and coral safe",
+    "summary": "Norway established a new marine protected area on September 18: the Andfjorden Marine Protected Area, covering approximately 714 square miles (nearly 260,000 football fields). The area is located in northern Nordland and southern Troms, and encompasses waters near Andøy, Harstad and Senja. It harbors coral reefs, coral gardens, sponge and sea pen communities, kelp forests, shell sand and maërl beds,...",
+    "image_alt": "Aerial photo of Andfjorden in Norway with whales and a rich coastal landscape",
+    "meta_description": "Norway protects Andfjorden: 714 square miles of coral, whales and seabirds gain marine protected area status.",
+    "meta_keywords": "Andfjorden, marine protected area, Norway, whales, seabirds, coral reefs, biodiversity",
+    "link": "https://www.goodnewsnetwork.org/norways-newest-marine-protected-area-shelters-rich-marine-habitat-whales-and-seabirds/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/The-seascape-of-Anfjorden-credit-credit-Jan-Harald-TomassenStatsforvaltaren-i-Troms-and-Finnmark.jpg",
+    "date": "2026-09-29T17:51:02.909Z",
+    "category": "Environment",
+    "score": 8
+  },
+  {
+    "id": "1790704221015snvd30kdl",
+    "title": "Paid photos turn Borneo hunters into orangutan protectors",
+    "summary": "On the Indonesian island of Borneo, in West Kalimantan province, residents of 9 villages can earn money by taking photos or recording sounds of wild animals. Participants earn up to $200 per month, more for rare species. Where colorful birds were once hunted and deer and wild boar were culled to protect crops, residents now want to protect the animals...",
+    "image_alt": "A flat-headed cat photographed by a local resident on Borneo as part of the KehatiKu program",
+    "meta_description": "Villagers on Borneo earn money from wildlife photos, transforming hunters into protectors of orangutans.",
+    "meta_keywords": "Borneo, orangutan, KehatiKu, nature conservation, Indonesia, Borneo Futures, wildlife, West Kalimantan",
+    "link": "https://www.goodnewsnetwork.org/a-strategy-of-cash-for-photos-turns-animal-hunters-into-animal-protectors-in-indonesia/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/foto_pengamatan-20250924-003412_8446.jpg",
+    "date": "2026-09-29T17:50:22.444Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790704188618teyxk6yw4",
+    "title": "Asháninka community prevents forest fires in Peru",
+    "summary": "Forest fires have plagued Peru in recent years, with thousands of hectares of forest lost. Yet some indigenous communities are actually seeing a decline in fires. The Paamari program, a collaboration between Central Asháninka of the Ene River (CARE) and the organization Cool Earth, trains community members like brigadista Romer Quentimari Garcia, who uses satellite imagery, drones and radio systems...",
+    "image_alt": "An Asháninka community brigadista monitors the rainforest in Peru using satellite imagery and radio equipment",
+    "meta_description": "Indigenous Asháninka community in Peru combines traditional knowledge and technology to successfully prevent forest fires.",
+    "meta_keywords": "Peru, Asháninka, forest fires, Paamari, Cool Earth, CARE, indigenous communities, rainforest, climate",
+    "link": "https://www.positive.news/environment/the-forest-is-life-how-indigenous-communities-in-peru-are-preventing-wildfires/",
+    "source": "Positive.News",
+    "image": "https://www.positive.news/wp-content/uploads/2026/09/RS2995_IMG_7832-1_lpr.jpg",
+    "date": "2026-09-29T17:49:52.309Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
     "id": "1790657218277cgwve7kni",
     "title": "Cradle to Cradle: reuse everything instead of recycling",
     "summary": "The Cradle to Cradle NGO, founded by Nora Griefahn and Tim Janßen in 2012, demonstrates how products and buildings can be designed according to the Cradle to Cradle principle: materials are either biological and biodegradable, or technical and endlessly reusable. Examples include the Shift Phone, a disassemblable modular smartphone, and Desso carpet whose EcoBase layer can be separated and recycled....",
@@ -2384,35 +2590,6 @@
     "score": 8
   },
   {
-    "id": "dg-20260915-environment",
-    "type": "digest",
-    "digest_date": "2026-09-15",
-    "title": "Turtles, a park and European targets: three signs of progress",
-    "summary": "These days, environmental news shows that change is taking place at very different scales. In the Amazon region, indigenous women are rescuing vulnerable turtles, in Athens a new urban park is growing out of the ruins of an old airport, and in Brussels it turns out that major European environmental targets are simply on track. Small and large, local and continental: restoration work is happening everywhere. On the banks of the Aguarico River in Ecuador, a group of Siekopai women are protecting the endangered charapa turtle [1]. The seven women, who call themselves the \"turtle women\", combine the knowledge of...",
-    "image_alt": "Turtles, a park and European targets: three signs of progress",
-    "meta_description": "Turtle rescue in Ecuador, a cool urban park in Athens and European environmental targets on track: the positive nature news of these days.",
-    "meta_keywords": "Environment",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a9b323230fc1bcb8ea0524c_6a9b3231a8882f2b432393c5_indigenous-turtle-women-amazon-ecuador-featured-2.webp",
-    "date": "2026-09-16T04:36:56.462Z",
-    "category": "Environment",
-    "refs": [
-      {
-        "id": "1789533241648b5t78swge",
-        "title": "Siekopai women rescue endangered river turtles"
-      },
-      {
-        "id": "1789446944015wyj1x51fn",
-        "title": "Athens Builds Megapark on Old Airport"
-      },
-      {
-        "id": "17894099694691tfot2503",
-        "title": "EU missions on track for 2030 goals"
-      }
-    ]
-  },
-  {
     "id": "1789533361143slogkd3i2",
     "title": "Creative Help With Grief at School",
     "summary": "School counselors use creative methods such as play therapy, books and drawing to help grieving students. Counselor Deb Hill tells about a 4-year-old boy who began to talk only after seven play therapy sessions following a house fire. Approximately 8% of children lose a primary caregiver before adulthood. At the American School Counselor's Association conference, Hill and Dr. Anita Pool...",
@@ -2452,179 +2629,6 @@
     "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a9b323230fc1bcb8ea0524c_6a9b3231a8882f2b432393c5_indigenous-turtle-women-amazon-ecuador-featured-2.webp",
     "date": "2026-09-16T04:34:03.108Z",
     "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1789533075925kr6cz4g9o",
-    "title": "$1,000 Bonus Per Year of Service at Casino",
-    "summary": "During Station Casinos' 50th anniversary celebration, all 10,000 employees received a surprise: 1,000 dollars in company stock for each year of service, totaling 70 million dollars. The announcement came from owners Frank and Lorenzo Fertitta, sons of founder Frank Jr., who started the company in 1976 with the Bingo Palace. Employee Ida Johnson, employed since 1977, received 49,000 dollars in...",
-    "image_alt": "Station Casinos employees celebrate the company's 50th anniversary",
-    "meta_description": "Station Casinos surprises 10,000 employees with 70 million dollars in stock bonuses during 50th anniversary.",
-    "meta_keywords": "Station Casinos, bonus, employees, stock, anniversary, Fertitta, profit sharing",
-    "link": "https://www.goodnewsnetwork.org/1000-bonus-for-every-year-at-the-company-casino-employees-shocked-at-companys-50th-anniversary/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/credit-Station-Casinos-released-to-the-press.jpg",
-    "date": "2026-09-16T04:31:17.818Z",
-    "category": "Finance",
-    "score": 9
-  },
-  {
-    "id": "1789533027394a1hawnr3o",
-    "title": "Christian Bale Opens Foster Care Village For Families",
-    "summary": "Actor Christian Bale has opened the foster care village Together California in Palmdale, California. The project, which Bale has been working on for years, aims to prevent siblings from being separated when placed in foster care. The facility comprises 12 fully equipped homes on a 4.67-hectare site that was purchased in 2022. The Austrian American Council West raised over 9...",
-    "image_alt": "Christian Bale opens the foster care village Together California in Palmdale",
-    "meta_description": "Christian Bale opens foster care village Together California in Palmdale to keep siblings together.",
-    "meta_keywords": "Christian Bale, Together California, foster care, Palmdale, foster care, Leonardo DiCaprio, Kathryn Barger",
-    "link": "https://www.goodnewsnetwork.org/christian-bale-opens-long-dreamed-of-foster-care-village-aimed-at-keeping-siblings-together/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/credit-Together-California-.jpg",
-    "date": "2026-09-16T04:30:29.501Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "1789447008594levnblqrg",
-    "title": "Elephants Can Control Their Impulses",
-    "summary": "New research shows that elephants can think before they act and suppress impulsive behavior. In experiments at the National Elephant Institute in Thailand, Asian elephants were given a transparent box containing fruit. Instead of immediately reaching for the food, they chose the learned side opening. When the box was rotated, they first reached toward the old position, but quickly corrected...",
-    "image_alt": "Asian elephant examines transparent box with fruit during cognitive experiment in Thailand",
-    "meta_description": "Research shows that elephants can suppress impulses and make rational choices when solving problems.",
-    "meta_keywords": "elephants, cognition, animal research, impulse control, Thailand, PLOS One, Joshua Plotnik",
-    "link": "https://www.goodnewsnetwork.org/elephants-can-think-before-they-act-and-resist-impulsive-behavior/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/elephant-experiment-Hope-et-al-2026-PLOS-One-via-SWNS.jpeg",
-    "date": "2026-09-15T04:36:49.623Z",
-    "category": "Science",
-    "score": 8
-  },
-  {
-    "id": "1789446944015wyj1x51fn",
-    "title": "Athens Builds Megapark on Old Airport",
-    "summary": "On the site of Athens' former airport, the Ellinikon Park is rising: with 400 acres along the coast, it will be Europe's second-largest urban park. The park is designed to remain about 4°C cooler than surrounding asphalt, using simulations of air circulation and evaporation. It will feature 30,000 trees and 3 million smaller plants, spread across more than 520 species,...",
-    "image_alt": "Design impression of the Ellinikon Park on Athens' former airport, with green spaces and water features along the coast",
-    "meta_description": "Athens is building the Ellinikon Park on an old airport: a huge, cool and green urban park against extreme heat.",
-    "meta_keywords": "Ellinikon Park, Athens, urban park, green, climate adaptation, heat, airport, Greece",
-    "link": "https://www.goodnewsnetwork.org/athens-is-turning-its-old-airport-into-one-of-europes-largest-parks/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/The-Ellinikon-design-concept-for-Athens-airport-rehab-The-Ellinikon.jpg",
-    "date": "2026-09-15T04:35:45.682Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "17894468770162a9ki2qkf",
-    "title": "A Home First, Then Recovery",
-    "summary": "A housing model called Housing First gives homeless people a fixed home before tackling other problems. Michael, who became homeless in Plymouth and came to London, received an apartment and a support worker through Solo Homes from The Connection. His rent is paid through benefits, while care costs are covered by the charity. Since he has had a fixed home,...",
-    "image_alt": "A support worker helps someone settle into a new apartment through Housing First",
-    "meta_description": "How Housing First gives homeless people a permanent home first, resulting in sustained recovery and less return to rough sleeping.",
-    "meta_keywords": "Housing First, homelessness, rough sleeping, The Connection, Solo Homes, social housing, mental health care",
-    "link": "https://www.positive.news/society/how-housing-first-is-helping-people-leave-rough-sleeping-behind/",
-    "source": "Positive.News",
-    "image": "https://www.positive.news/wp-content/uploads/2026/09/insta_photos.jpg",
-    "date": "2026-09-15T04:34:39.460Z",
-    "category": "Lifestyle",
-    "score": 10
-  },
-  {
-    "id": "dg-20260913-science",
-    "type": "digest",
-    "digest_date": "2026-09-13",
-    "title": "Science this week: from old paintings to glowing spider legs",
-    "summary": "The past few days prove that curiosity knows no bounds. From centuries-old paintings to the darkness of the deep sea, from the bottom of a British marsh to the inside of a quantum computer: researchers are uncovering new secrets everywhere. What connects these stories is the idea that knowledge is sometimes hidden in unexpected places, waiting to be discovered. Take the art of yesteryear. According to an article by Bethany Brookshire, published on 11 September, old paintings reveal more than just pretty pictures [1]. A work by Maria Sibylla Merian from the 1690s, for example, shows bats eating birds and...",
-    "image_alt": "Science this week: from old paintings to glowing spider legs",
-    "meta_description": "From old paintings to glowing deep-sea spiders: the positive science news of 13 September 2026 at a glance.",
-    "meta_keywords": "Science",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/1026_art-col_main.jpg?w=800",
-    "date": "2026-09-14T18:22:44.734Z",
-    "category": "Science",
-    "refs": [
-      {
-        "id": "1789409907513wmorhsw8z",
-        "title": "Art Reveals Old Nature Secrets"
-      },
-      {
-        "id": "1789410013633mbo2iqe8k",
-        "title": "Swedish Breakthrough Accelerates Quantum Computers"
-      },
-      {
-        "id": "17894099894470nhy9489v",
-        "title": "Funding For Flag Fen Excavation"
-      },
-      {
-        "id": "1789409877924blp03uhq2",
-        "title": "Glowing Deep-Sea Spiders Discovered"
-      }
-    ]
-  },
-  {
-    "id": "17894100450198ocoeho6u",
-    "title": "Save The Planet With Engineering",
-    "summary": "PBS Nature published a blog post titled 'Want to Save the Planet? Try Engineering.' The post appeared on WNET/PBS's nature blog and emphasizes that engineering can play a role in saving the planet. Further details are not provided in the available material.",
-    "image_alt": "Image from the PBS Nature blog about engineering and saving the planet",
-    "meta_description": "PBS Nature blog: how engineering can help save the planet.",
-    "meta_keywords": "engineering, saving the planet, PBS Nature, sustainability, environment",
-    "link": "https://www.pbs.org/wnet/nature/blog/save-the-planet-engineering/",
-    "source": "PBS.org",
-    "image": "https://www.pbs.org/wnet/nature/files/2026/09/Katz_Becker_WWF-28-scaled.jpeg",
-    "date": "2026-09-14T18:20:46.016Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1789410013633mbo2iqe8k",
-    "title": "Swedish Breakthrough Accelerates Quantum Computers",
-    "summary": "Researchers from Chalmers University of Technology have, in collaboration with Tianjin University, developed a new method called single-period Floquet control. This technique uses so-called 'quantum lattice gates' to perform operations on bosonic quantum codes. According to the researchers, this method is more than a thousand times faster than previous approaches. This significantly reduces the risk of errors in quantum computers.",
-    "image_alt": "Illustration of quantum computer technology with glowing circuits",
-    "meta_description": "Swedish-Chinese breakthrough makes quantum computer operations a thousand times faster and significantly reduces error risks.",
-    "meta_keywords": "quantum computer, Chalmers University, Floquet control, quantum lattice gates, bosonic quantum codes, Tianjin University",
-    "link": "https://www.openaccessgovernment.org/1000-times-faster-swedish-breakthrough-cuts-quantum-computer-error-risks/214176/",
-    "source": "Openaccessgovernment.org",
-    "image": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=800&q=80",
-    "date": "2026-09-14T18:20:15.148Z",
-    "category": "Science",
-    "score": 8
-  },
-  {
-    "id": "17894099894470nhy9489v",
-    "title": "Funding For Flag Fen Excavation",
-    "summary": "The British Ministry DEFRA and Historic England, together with Agriculture Minister Stephen Morgan, have awarded £700,000 in subsidies for a major new archaeological excavation at Flag Fen Archaeology Park near Peterborough. The funding is intended to help unravel the secrets of this Bronze Age site.",
-    "image_alt": "Archaeological site Flag Fen near Peterborough",
-    "meta_description": "£700,000 subsidy for Bronze Age excavation at Flag Fen near Peterborough, announced by DEFRA and Historic England.",
-    "meta_keywords": "Flag Fen, archaeology, Bronze Age, Peterborough, DEFRA, Historic England, excavation",
-    "link": "https://www.openaccessgovernment.org/funding-secured-for-excavation-to-unlock-secrets-of-bronze-age-flag-fen-site/214226/",
-    "source": "Openaccessgovernment.org",
-    "image": "https://images.unsplash.com/photo-1554475901-4538ddfbccc2?w=800&q=80",
-    "date": "2026-09-14T18:19:50.457Z",
-    "category": "Science",
-    "score": 8
-  },
-  {
-    "id": "17894099694691tfot2503",
-    "title": "EU missions on track for 2030 goals",
-    "summary": "The five major Missions of the European Union within Horizon Europe are making steady progress in addressing some of Europe's most important societal and environmental challenges. This is shown by a new interim evaluation published by the European Commission.",
-    "image_alt": "Symbol of the European Union with flags, referring to EU policy and Horizon Europe",
-    "meta_description": "EU missions under Horizon Europe are making good progress towards 2030 targets, according to new evaluation.",
-    "meta_keywords": "EU Missions, Horizon Europe, European Commission, 2030 targets, sustainability",
-    "link": "https://www.openaccessgovernment.org/eu-missions-making-strong-progress-towards-2030-goals/214248/",
-    "source": "Openaccessgovernment.org",
-    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80",
-    "date": "2026-09-14T18:19:30.497Z",
-    "category": "Environment",
-    "score": 8
-  },
-  {
-    "id": "1789409907513wmorhsw8z",
-    "title": "Art Reveals Old Nature Secrets",
-    "summary": "Historical artworks can contain scientific secrets about nature. According to an article by Bethany Brookshire, published on September 11, 2026, paintings from the past provide insight into ecological relationships, such as bats eating birds and butterfly behavior. An example is an artwork from the 1690s by Maria Sibylla Merian, which helps modern scientists better understand animal behavior and mutual relationships....",
-    "image_alt": "Historical painting by Maria Sibylla Merian from the 1690s featuring animals and plants",
-    "meta_description": "Historical artworks such as those by Maria Sibylla Merian reveal surprising ecological secrets for modern scientists.",
-    "meta_keywords": "historical art, science, Maria Sibylla Merian, ecology, animal behavior, butterflies, nature art",
-    "link": "https://www.sciencenews.org/article/historical-art-hide-scientific-secrets",
-    "source": "Sciencenews.org",
-    "image": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/1026_art-col_main.jpg?w=800",
-    "date": "2026-09-14T18:18:28.478Z",
-    "category": "Science",
     "score": 9
   }
 ]

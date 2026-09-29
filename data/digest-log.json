@@ -1,5 +1,47 @@
 [
   {
+    "datum": "2026-09-29T17:57:05.078Z",
+    "dag": "2026-09-28",
+    "categorie": "Environment",
+    "ids": [
+      "1790704405966fz37a0dpl",
+      "1790704221015snvd30kdl",
+      "1790704188618teyxk6yw4",
+      "1790657218277cgwve7kni",
+      "1790704261430q3gkch2zq"
+    ],
+    "prompthash": "fd561df11314",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 11957,
+    "woorden": {
+      "nl": 358,
+      "en": 358,
+      "de": 340,
+      "fr": 430,
+      "es": 394
+    }
+  },
+  {
+    "datum": "2026-09-29T17:56:14.154Z",
+    "dag": "2026-09-28",
+    "categorie": "Science",
+    "ids": [
+      "1790704517255qb72iuc08",
+      "1790704490895fnd9hccqb",
+      "1790704288436yrrol00ab"
+    ],
+    "prompthash": "fd561df11314",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 12305,
+    "woorden": {
+      "nl": 347,
+      "en": 336,
+      "de": 344,
+      "fr": 386,
+      "es": 382
+    }
+  },
+  {
     "datum": "2026-09-28T19:31:22.614Z",
     "dag": "2026-09-27",
     "categorie": "Environment",

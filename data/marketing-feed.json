@@ -1,52 +1,66 @@
 {
- "gegenereerd": "2026-09-29T04:47:01.200Z",
+ "gegenereerd": "2026-09-29T17:57:05.562Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
     {
-     "id": "1790526952732zu9t81thr",
-     "titel": "New York City haalt 131 miljoen dollar op bij DoorDash voor bezorgers",
-     "teaser": "De New York City Department of Consumer and Worker Protection (DCWP) heeft een schikking van 131,5 miljoen dollar getroffen met DoorDash wegens overtreding van de lokale wetten voor bezorgers. Meer dan 260.000 werknemers werden onderbetaald, sommigen kregen helemaal niets uitbetaald of werden te laat betaald. Ruim 115 miljoen dollar gaat rechtstreeks naar de bezorgers, plus 16 miljoen dollar aan boetes...",
-     "score": 10,
-     "categorie": "Finance",
-     "url": "https://brightnews.online/articles/nl/new-york-city-haalt-131-miljoen-dollar-op-bij-doordash-voor-bezorgers-1790526952732zu9t81thr.html"
-    },
-    {
-     "id": "1790657218277cgwve7kni",
-     "titel": "Cradle to Cradle: alles hergebruiken in plaats van recyclen",
-     "teaser": "De Cradle to Cradle NGO, opgericht door Nora Griefahn en Tim Janßen in 2012, laat zien hoe producten en gebouwen ontworpen kunnen worden volgens het Cradle to Cradle-principe: materialen zijn ofwel biologisch en biologisch afbreekbaar, ofwel technisch en eindeloos herbruikbaar. Voorbeelden zijn de Shift Phone, een demontabele modulaire smartphone, en Desso-tapijt waarvan de EcoBase-laag gescheiden en gerecycled kan worden. Ook...",
+     "id": "179070446589916lhlftvz",
+     "titel": "Snor van Pizza John haalt miljoenen op voor moederzorg Sierra Leone",
+     "teaser": "Pizzamas, het jaarlijkse internetevenement van YouTubers Hank en John Green, is uitgegroeid van een fanmeme tot een grote fondsenwerving. Het begon in 2009 toen John zich op camera schoor en fan Valerie Barr een still gebruikte om de kunstwerk-figuur 'Pizza John' te maken. Sinds 2012 verkopen Hank en John via hun bedrijf DFTBA tijdelijke merchandise zoals t-shirts, tote bags en...",
      "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/cradle-to-cradle-alles-hergebruiken-in-plaats-van-recyclen-1790657218277cgwve7kni.html"
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/nl/snor-van-pizza-john-haalt-miljoenen-op-voor-moederzorg-sierra-leone-179070446589916lhlftvz.html"
     },
     {
-     "id": "17906236600718klq45n91",
-     "titel": "Vrouwengroep Lioness wint rechtszaak voor airconditioning in Texaanse gevangenissen",
-     "teaser": "Een groep voormalig gedetineerde vrouwen, verenigd in de nonprofit Lioness Justice Impacted Women's Alliance, heeft samen met twee andere organisaties een rechtszaak gewonnen tegen het Texas Department of Criminal Justice. Een federale rechter oordeelde dat de staat voor eind 2029 alle gevangenissen moet voorzien van airconditioning. Momenteel heeft slechts 37 procent van de circa 88.697 gedetineerden een 'koel bed'. Rechter...",
+     "id": "1790704437768s5e1giwo8",
+     "titel": "Sokkenactie 'Socktober' viert 15 jaar lokale vriendelijkheid",
+     "teaser": "Socktober begon 15 jaar geleden toen middelbare scholieren wilden helpen na te horen dat veel mensen in hun omgeving dakloos waren of tussen opvangcentra pendelden. Een telefoontje naar de lokale opvang leerde dat sokken juist heel hard nodig maar weinig gedoneerd werden. Scholen, kerken en bedrijven deden mee en er werden meer sokken ingezameld dan in een auto pasten. Het...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/vrouwengroep-lioness-wint-rechtszaak-voor-airconditioning-in-texaanse-gevangenis-17906236600718klq45n91.html"
+     "url": "https://brightnews.online/articles/nl/sokkenactie-socktober-viert-15-jaar-lokale-vriendelijkheid-1790704437768s5e1giwo8.html"
     },
     {
-     "id": "1790623636477f2bjec92n",
-     "titel": "Weeshippo Bumpy krijgt tweede kans bij Sheldrick Wildlife Trust",
-     "teaser": "Op 2 mei 2026 kreeg de Kenya Wildlife Service een melding van een verweesde hippo in Naivasha, in de Great Rift Valley. De dagenoude hippo lag naast het lichaam van zijn moeder, die waarschijnlijk was gestorven terwijl ze haar kalf verdedigde. Na een lastige waterreddingsactie werd het dier, later Bumpy genoemd, naar Nairobi gebracht en overgedragen aan de Sheldrick Wildlife...",
+     "id": "1790704405966fz37a0dpl",
+     "titel": "Tanzaniaanse boeren geven land terug aan olifanten",
+     "teaser": "In het Kilombero-vallei in Tanzania hebben 368 boeren land afgestaan om olifanten een veilige doorgang te geven tussen de Udzungwa-bergen en Nyerere National Park. Na zeven jaar voorbereiding door de Southern Tanzania Elephant Program (STEP) en partners kreeg de Nyerere-Udzungwa Wildlife Corridor (NUWC) in april 2025 officiële bescherming, de eerste in Tanzania. De 200 meter brede en 14 kilometer lange...",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/weeshippo-bumpy-krijgt-tweede-kans-bij-sheldrick-wildlife-trust-1790623636477f2bjec92n.html"
+     "url": "https://brightnews.online/articles/nl/tanzaniaanse-boeren-geven-land-terug-aan-olifanten-1790704405966fz37a0dpl.html"
     },
     {
-     "id": "1790623610181f2zlj49rp",
-     "titel": "Ellinikon Park wordt grootste kustpark van Europa",
-     "teaser": "Op het terrein van de voormalige luchthaven van Athene, in de zuidelijke buitenwijken, verrijst The Ellinikon Park: twee miljoen vierkante meter groen dat de grootste kustelijke stadspark van Europa wordt (200 hectare). Het park is ontworpen om de omgevingstemperatuur actief te verlagen, verwerkt 100 procent van zijn eigen regenwater ter plekke en houdt via sensorgestuurde irrigatie meer dan 520 plantensoorten...",
+     "id": "1790704221015snvd30kdl",
+     "titel": "Betaalde foto's maken jagers tot beschermers van Borneo's orang-oetans",
+     "teaser": "Op het Indonesische eiland Borneo, in de provincie West-Kalimantan, kunnen bewoners van 9 dorpen geld verdienen door foto's of geluidsopnames van wilde dieren te maken. Deelnemers verdienen tot 200 dollar per maand, meer bij zeldzame soorten. Waar vroeger vogels met kleurrijke veren werden gejaagd en herten en wilde zwijnen werden uitgeroeid om oogsten te beschermen, willen bewoners de dieren nu...",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/ellinikon-park-wordt-grootste-kustpark-van-europa-1790623610181f2zlj49rp.html"
+     "url": "https://brightnews.online/articles/nl/betaalde-foto-s-maken-jagers-tot-beschermers-van-borneo-s-orang-oetans-1790704221015snvd30kdl.html"
+    },
+    {
+     "id": "1790704188618teyxk6yw4",
+     "titel": "Asháninka-gemeenschap voorkomt bosbranden in Peru",
+     "teaser": "Bosbranden teisterden Peru de afgelopen jaren, met duizenden hectares verloren bosgebied. Toch zien sommige inheemse gemeenschappen juist een afname van branden. Het Paamari-programma, een samenwerking tussen Central Asháninka of the Ene River (CARE) en de organisatie Cool Earth, traint gemeenschapsleden zoals brigadista Romer Quentimari Garcia, die satellietbeelden, drones en radiosystemen gebruikt om branden vroeg op te sporen. Sinds de start...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/ashaninka-gemeenschap-voorkomt-bosbranden-in-peru-1790704188618teyxk6yw4.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260928-environment",
+     "titel": "Mensen en dieren vinden elkaar: goed nieuws over natuurbescherming",
+     "categorie": "Environment",
+     "dag": "2026-09-28",
+     "url": "https://brightnews.online/articles/nl/mensen-en-dieren-vinden-elkaar-goed-nieuws-over-natuurbescherming-dg-20260928-environment.html"
+    },
+    {
+     "id": "dg-20260928-science",
+     "titel": "Beurzen voor moedig onderzoek en een naam voor een oeroude amfibie",
+     "categorie": "Science",
+     "dag": "2026-09-28",
+     "url": "https://brightnews.online/articles/nl/beurzen-voor-moedig-onderzoek-en-een-naam-voor-een-oeroude-amfibie-dg-20260928-science.html"
+    },
     {
      "id": "dg-20260927-environment",
      "titel": "Een weeshippo, een koel park en tropisch fruit: het milieunieuws van deze dagen",
@@ -73,47 +87,61 @@
   "en": {
    "top": [
     {
-     "id": "1790526952732zu9t81thr",
-     "titel": "New York City recovers $131 million from DoorDash for delivery workers",
-     "teaser": "The New York City Department of Consumer and Worker Protection (DCWP) has reached a settlement of $131.5 million with DoorDash for violating local delivery worker laws. More than 260,000 workers were underpaid, with some receiving no payment at all or being paid late. Over $115 million will go directly to delivery workers, plus $16 million in fines and costs. Employees...",
-     "score": 10,
-     "categorie": "Finance",
-     "url": "https://brightnews.online/articles/en/new-york-city-recovers-131-million-from-doordash-for-delivery-workers-1790526952732zu9t81thr.html"
-    },
-    {
-     "id": "1790657218277cgwve7kni",
-     "titel": "Cradle to Cradle: reuse everything instead of recycling",
-     "teaser": "The Cradle to Cradle NGO, founded by Nora Griefahn and Tim Janßen in 2012, demonstrates how products and buildings can be designed according to the Cradle to Cradle principle: materials are either biological and biodegradable, or technical and endlessly reusable. Examples include the Shift Phone, a disassemblable modular smartphone, and Desso carpet whose EcoBase layer can be separated and recycled....",
+     "id": "179070446589916lhlftvz",
+     "titel": "Pizza John's mustache raises millions for maternal care in Sierra Leone",
+     "teaser": "Pizzamas, the annual internet event by YouTubers Hank and John Green, has grown from a fan meme into a major fundraiser. It started in 2009 when John shaved on camera and fan Valerie Barr used a still to create the artwork character 'Pizza John'. Since 2012, Hank and John have sold temporary merchandise through their company DFTBA, such as t-shirts,...",
      "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/cradle-to-cradle-reuse-everything-instead-of-recycling-1790657218277cgwve7kni.html"
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/en/pizza-john-s-mustache-raises-millions-for-maternal-care-in-sierra-leone-179070446589916lhlftvz.html"
     },
     {
-     "id": "17906236600718klq45n91",
-     "titel": "Women's group Lioness wins lawsuit for air conditioning in Texas prisons",
-     "teaser": "A group of formerly incarcerated women, united in the nonprofit Lioness Justice Impacted Women's Alliance, has won a lawsuit against the Texas Department of Criminal Justice alongside two other organizations. A federal judge ruled that the state must equip all prisons with air conditioning by the end of 2029. Currently, only 37 percent of approximately 88,697 incarcerated people have access...",
+     "id": "1790704437768s5e1giwo8",
+     "titel": "Sock drive 'Socktober' celebrates 15 years of local kindness",
+     "teaser": "Socktober began 15 years ago when high school students wanted to help after learning that many people in their community were homeless or shuttling between shelters. A call to the local shelter revealed that socks were desperately needed but rarely donated. Schools, churches and businesses participated, collecting more socks than could fit in a car. The initiative grew through a...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/women-s-group-lioness-wins-lawsuit-for-air-conditioning-in-texas-prisons-17906236600718klq45n91.html"
+     "url": "https://brightnews.online/articles/en/sock-drive-socktober-celebrates-15-years-of-local-kindness-1790704437768s5e1giwo8.html"
     },
     {
-     "id": "1790623636477f2bjec92n",
-     "titel": "Orphaned hippo Bumpy gets second chance at Sheldrick Wildlife Trust",
-     "teaser": "On May 2, 2026, the Kenya Wildlife Service received a report of an orphaned hippo in Naivasha, in the Great Rift Valley. The newborn hippo lay beside the body of his mother, who had likely died while defending her calf. After a difficult water rescue operation, the animal, later named Bumpy, was brought to Nairobi and handed over to the...",
+     "id": "1790704405966fz37a0dpl",
+     "titel": "Tanzanian farmers return land to elephants",
+     "teaser": "In the Kilombero Valley in Tanzania, 368 farmers have ceded land to provide elephants with safe passage between the Udzungwa Mountains and Nyerere National Park. After seven years of preparation by the Southern Tanzania Elephant Program (STEP) and partners, the Nyerere-Udzungwa Wildlife Corridor (NUWC) received official protection in April 2025, the first of its kind in Tanzania. The 200-meter-wide and...",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/orphaned-hippo-bumpy-gets-second-chance-at-sheldrick-wildlife-trust-1790623636477f2bjec92n.html"
+     "url": "https://brightnews.online/articles/en/tanzanian-farmers-return-land-to-elephants-1790704405966fz37a0dpl.html"
     },
     {
-     "id": "1790623610181f2zlj49rp",
-     "titel": "Ellinikon Park becomes Europe's largest coastal park",
-     "teaser": "On the grounds of Athens' former airport in the southern suburbs, The Ellinikon Park is rising: two million square meters of green space that will become Europe's largest coastal urban park (200 hectares). The park is designed to actively lower ambient temperature, processes 100 percent of its own rainwater on-site, and maintains more than 520 plant species through sensor-controlled irrigation....",
+     "id": "1790704221015snvd30kdl",
+     "titel": "Paid photos turn Borneo hunters into orangutan protectors",
+     "teaser": "On the Indonesian island of Borneo, in West Kalimantan province, residents of 9 villages can earn money by taking photos or recording sounds of wild animals. Participants earn up to $200 per month, more for rare species. Where colorful birds were once hunted and deer and wild boar were culled to protect crops, residents now want to protect the animals...",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/ellinikon-park-becomes-europe-s-largest-coastal-park-1790623610181f2zlj49rp.html"
+     "url": "https://brightnews.online/articles/en/paid-photos-turn-borneo-hunters-into-orangutan-protectors-1790704221015snvd30kdl.html"
+    },
+    {
+     "id": "1790704188618teyxk6yw4",
+     "titel": "Asháninka community prevents forest fires in Peru",
+     "teaser": "Forest fires have plagued Peru in recent years, with thousands of hectares of forest lost. Yet some indigenous communities are actually seeing a decline in fires. The Paamari program, a collaboration between Central Asháninka of the Ene River (CARE) and the organization Cool Earth, trains community members like brigadista Romer Quentimari Garcia, who uses satellite imagery, drones and radio systems...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/ashaninka-community-prevents-forest-fires-in-peru-1790704188618teyxk6yw4.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260928-environment",
+     "titel": "People and animals find each other: good news about nature conservation",
+     "categorie": "Environment",
+     "dag": "2026-09-28",
+     "url": "https://brightnews.online/articles/en/people-and-animals-find-each-other-good-news-about-nature-conservation-dg-20260928-environment.html"
+    },
+    {
+     "id": "dg-20260928-science",
+     "titel": "Grants for bold research and a name for an ancient amphibian",
+     "categorie": "Science",
+     "dag": "2026-09-28",
+     "url": "https://brightnews.online/articles/en/grants-for-bold-research-and-a-name-for-an-ancient-amphibian-dg-20260928-science.html"
+    },
     {
      "id": "dg-20260927-environment",
      "titel": "A baby hippo, a cool park and tropical fruit: the environmental news of these days",
@@ -140,47 +168,61 @@
   "de": {
    "top": [
     {
-     "id": "1790526952732zu9t81thr",
-     "titel": "New York City erhält 131 Millionen Dollar von DoorDash für Lieferanten",
-     "teaser": "Die New York City Department of Consumer and Worker Protection (DCWP) hat eine Einigung von 131,5 Millionen Dollar mit DoorDash wegen Verstoßes gegen lokale Gesetze für Lieferanten erzielt. Mehr als 260.000 Arbeitnehmer wurden unterbezahlt, einige erhielten überhaupt keine Zahlung oder wurden zu spät bezahlt. Über 115 Millionen Dollar gehen direkt an die Lieferanten, plus 16 Millionen Dollar an Bußgelder und...",
-     "score": 10,
-     "categorie": "Finance",
-     "url": "https://brightnews.online/articles/de/new-york-city-erhalt-131-millionen-dollar-von-doordash-fur-lieferanten-1790526952732zu9t81thr.html"
-    },
-    {
-     "id": "1790657218277cgwve7kni",
-     "titel": "Cradle to Cradle: alles wiederverwenden statt recyceln",
-     "teaser": "Die Cradle to Cradle NGO, gegründet von Nora Griefahn und Tim Janßen im Jahr 2012, zeigt, wie Produkte und Gebäude nach dem Cradle to Cradle-Prinzip gestaltet werden können: Materialien sind entweder biologisch und biologisch abbaubar oder technisch und endlos wiederverwendbar. Beispiele sind das Shift Phone, ein zerlegbares modulares Smartphone, und Desso-Teppich, dessen EcoBase-Schicht getrennt und recycelt werden kann. Auch der...",
+     "id": "179070446589916lhlftvz",
+     "titel": "Schnurrbart von Pizza John sammelt Millionen für Müttergesundheit in Sierra Leone",
+     "teaser": "Pizzamas, das jährliche Internet-Event der YouTuber Hank und John Green, hat sich von einem Fan-Meme zu einer großen Spendenaktion entwickelt. Alles begann 2009, als sich John vor der Kamera rasierte und die Fangemeinde Valerie Barr ein Standbild nutzte, um die Kunstfigur „Pizza John\" zu erschaffen. Seit 2012 verkaufen Hank und John über ihr Unternehmen DFTBA limitierte Merchandise-Artikel wie T-Shirts, Tragetaschen...",
      "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/cradle-to-cradle-alles-wiederverwenden-statt-recyceln-1790657218277cgwve7kni.html"
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/de/schnurrbart-von-pizza-john-sammelt-millionen-fur-muttergesundheit-in-sierra-leon-179070446589916lhlftvz.html"
     },
     {
-     "id": "17906236600718klq45n91",
-     "titel": "Frauengruppe Lioness gewinnt Rechtsstreit für Klimaanlage in texanischen Gefängnissen",
-     "teaser": "Eine Gruppe ehemaliger inhaftierter Frauen, vereinigt in der gemeinnützigen Organisation Lioness Justice Impacted Women's Alliance, hat zusammen mit zwei weiteren Organisationen einen Rechtsstreit gegen das Texas Department of Criminal Justice gewonnen. Ein Bundesrichter entschied, dass der Staat bis Ende 2029 alle Gefängnisse mit Klimaanlagen ausstatten muss. Derzeit haben nur 37 Prozent der etwa 88.697 Inhaftierten ein „kühles Bett\". Richter Robert...",
+     "id": "1790704437768s5e1giwo8",
+     "titel": "Socktoberaktion feiert 15 Jahre lokale Hilfsbereitschaft",
+     "teaser": "Socktober begann vor 15 Jahren, als Schüler helfen wollten, nachdem sie erfuhren, dass viele Menschen in ihrer Umgebung obdachlos waren oder zwischen Notunterkünften pendeln mussten. Ein Anruf bei der lokalen Unterkunft zeigte, dass Socken dringend benötigt, aber selten gespendet wurden. Schulen, Kirchen und Unternehmen beteiligten sich, und es wurden mehr Socken gesammelt, als in ein Auto passten. Die Initiative wuchs...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/frauengruppe-lioness-gewinnt-rechtsstreit-fur-klimaanlage-in-texanischen-gefangn-17906236600718klq45n91.html"
+     "url": "https://brightnews.online/articles/de/socktoberaktion-feiert-15-jahre-lokale-hilfsbereitschaft-1790704437768s5e1giwo8.html"
     },
     {
-     "id": "1790623636477f2bjec92n",
-     "titel": "Weeshippo Bumpy erhält zweite Chance bei Sheldrick Wildlife Trust",
-     "teaser": "Am 2. Mai 2026 erhielt die Kenya Wildlife Service eine Meldung über ein verwaistes Flusspferd in Naivasha, im Great Rift Valley. Das wenige Tage alte Flusspferd lag neben dem Körper seiner Mutter, die wahrscheinlich gestorben war, während sie ihr Kalb verteidigte. Nach einer schwierigen Wasserrettungsaktion wurde das Tier, später Bumpy genannt, nach Nairobi gebracht und der Sheldrick Wildlife Trust übergeben....",
+     "id": "1790704405966fz37a0dpl",
+     "titel": "Tansanische Bauern geben Land an Elefanten zurück",
+     "teaser": "Im Kilombero-Tal in Tansania haben 368 Bauern Land abgetreten, um Elefanten einen sicheren Durchgang zwischen den Udzungwa-Bergen und dem Nyerere National Park zu ermöglichen. Nach sieben Jahren Vorbereitung durch das Southern Tanzania Elephant Program (STEP) und Partner erhielt der Nyerere-Udzungwa Wildlife Corridor (NUWC) im April 2025 offiziellen Schutz – der erste in Tansania. Der 200 Meter breite und 14 Kilometer...",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/weeshippo-bumpy-erhalt-zweite-chance-bei-sheldrick-wildlife-trust-1790623636477f2bjec92n.html"
+     "url": "https://brightnews.online/articles/de/tansanische-bauern-geben-land-an-elefanten-zuruck-1790704405966fz37a0dpl.html"
     },
     {
-     "id": "1790623610181f2zlj49rp",
-     "titel": "Ellinikon Park wird größter Küstenpark Europas",
-     "teaser": "Auf dem Gelände des ehemaligen Athener Flughafens in den südlichen Vororten entsteht The Ellinikon Park: zwei Millionen Quadratmeter Grünfläche, die zum größten Küstenstadtpark Europas wird (200 Hektar). Der Park wurde konzipiert, um die Umgebungstemperatur aktiv zu senken, verarbeitet 100 Prozent seines eigenen Regenwassers vor Ort und erhält über sensorgesteuerte Bewässerung mehr als 520 Pflanzenarten am Leben. Das Design begann mit...",
+     "id": "1790704221015snvd30kdl",
+     "titel": "Bezahlte Fotos machen Jäger zu Schützern von Borneos Orang-Utans",
+     "teaser": "Auf der indonesischen Insel Borneo, in der Provinz Westkalimantan, können Bewohner von 9 Dörfern Geld verdienen, indem sie Fotos oder Tonaufnahmen von Wildtieren machen. Teilnehmer verdienen bis zu 200 Dollar pro Monat, mehr bei seltenen Arten. Wo früher Vögel mit farbenfrohem Gefieder gejagt und Hirsche und Wildschweine ausgerottet wurden, um Ernten zu schützen, wollen Bewohner die Tiere nun bewahren. Das...",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/ellinikon-park-wird-gro-ter-kustenpark-europas-1790623610181f2zlj49rp.html"
+     "url": "https://brightnews.online/articles/de/bezahlte-fotos-machen-jager-zu-schutzern-von-borneos-orang-utans-1790704221015snvd30kdl.html"
+    },
+    {
+     "id": "1790704188618teyxk6yw4",
+     "titel": "Asháninka-Gemeinde verhindert Waldbrände in Peru",
+     "teaser": "Waldbrände haben Peru in den letzten Jahren heimgesucht und Tausende Hektar Waldfläche zerstört. Doch einige indigene Gemeinden verzeichnen tatsächlich einen Rückgang der Brände. Das Paamari-Programm, eine Zusammenarbeit zwischen Central Asháninka of the Ene River (CARE) und der Organisation Cool Earth, schult Gemeindeglieder wie den Brigadisten Romer Quentimari Garcia, der Satellitenbilder, Drohnen und Funksysteme nutzt, um Brände frühzeitig zu erkennen. Seit...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/ashaninka-gemeinde-verhindert-waldbrande-in-peru-1790704188618teyxk6yw4.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260928-environment",
+     "titel": "Menschen und Tiere finden zueinander: gute Nachrichten zum Naturschutz",
+     "categorie": "Environment",
+     "dag": "2026-09-28",
+     "url": "https://brightnews.online/articles/de/menschen-und-tiere-finden-zueinander-gute-nachrichten-zum-naturschutz-dg-20260928-environment.html"
+    },
+    {
+     "id": "dg-20260928-science",
+     "titel": "Stipendien für mutige Forschung und ein Name für ein uraltes Lurch",
+     "categorie": "Science",
+     "dag": "2026-09-28",
+     "url": "https://brightnews.online/articles/de/stipendien-fur-mutige-forschung-und-ein-name-fur-ein-uraltes-lurch-dg-20260928-science.html"
+    },
     {
      "id": "dg-20260927-environment",
      "titel": "Ein Flusspferd-Baby, ein kühler Park und tropische Früchte: die Umweltnachrichten dieser Tage",
@@ -207,47 +249,61 @@
   "fr": {
    "top": [
     {
-     "id": "1790526952732zu9t81thr",
-     "titel": "New York City réclame 131 millions de dollars à DoorDash pour les livreurs",
-     "teaser": "Le New York City Department of Consumer and Worker Protection (DCWP) a conclu un règlement de 131,5 millions de dollars avec DoorDash pour violation des lois locales relatives aux livreurs. Plus de 260 000 travailleurs ont été sous-payés, certains n'ayant reçu aucun paiement ou ayant été payés en retard. Plus de 115 millions de dollars iront directement aux livreurs, plus...",
-     "score": 10,
-     "categorie": "Finance",
-     "url": "https://brightnews.online/articles/fr/new-york-city-reclame-131-millions-de-dollars-a-doordash-pour-les-livreurs-1790526952732zu9t81thr.html"
-    },
-    {
-     "id": "1790657218277cgwve7kni",
-     "titel": "Cradle to Cradle : tout réutiliser au lieu de recycler",
-     "teaser": "L'ONG Cradle to Cradle, fondée par Nora Griefahn et Tim Janßen en 2012, montre comment les produits et les bâtiments peuvent être conçus selon le principe Cradle to Cradle : les matériaux sont soit biologiques et biodégradables, soit techniques et infiniment réutilisables. Parmi les exemples figurent le Shift Phone, un smartphone modulaire démontable, et le tapis Desso dont la couche...",
+     "id": "179070446589916lhlftvz",
+     "titel": "La moustache de Pizza John récolte des millions pour la santé maternelle en Sierra Leone",
+     "teaser": "Pizzamas, l'événement internet annuel des YouTubers Hank et John Green, est passé d'un mème de fans à une grande collecte de fonds. Tout a commencé en 2009 quand John s'est rasé à la caméra et la fan Valerie Barr a utilisé une capture d'écran pour créer le personnage artistique « Pizza John ». Depuis 2012, Hank et John vendent via...",
      "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/cradle-to-cradle-tout-reutiliser-au-lieu-de-recycler-1790657218277cgwve7kni.html"
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/fr/la-moustache-de-pizza-john-recolte-des-millions-pour-la-sante-maternelle-en-sier-179070446589916lhlftvz.html"
     },
     {
-     "id": "17906236600718klq45n91",
-     "titel": "Le groupe de femmes Lioness remporte un procès pour la climatisation dans les prisons du Texas",
-     "teaser": "Un groupe de femmes anciennement détenues, unies au sein de la nonprofit Lioness Justice Impacted Women's Alliance, a remporté un procès aux côtés de deux autres organisations contre le Texas Department of Criminal Justice. Un juge fédéral a ordonné à l'État d'équiper toutes ses prisons de climatisation d'ici la fin 2029. Actuellement, seuls 37 pour cent des quelque 88 697...",
+     "id": "1790704437768s5e1giwo8",
+     "titel": "L'action chaussettes « Socktober » célèbre 15 ans de solidarité locale",
+     "teaser": "Socktober a commencé il y a 15 ans quand des lycéens ont voulu aider après avoir appris que beaucoup de personnes dans leur région étaient sans abri ou circulaient entre les centres d'accueil. Un coup de téléphone au centre d'accueil local a révélé que les chaussettes étaient justement très nécessaires mais peu données. Des écoles, des églises et des entreprises...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/le-groupe-de-femmes-lioness-remporte-un-proces-pour-la-climatisation-dans-les-pr-17906236600718klq45n91.html"
+     "url": "https://brightnews.online/articles/fr/l-action-chaussettes-socktober-celebre-15-ans-de-solidarite-locale-1790704437768s5e1giwo8.html"
     },
     {
-     "id": "1790623636477f2bjec92n",
-     "titel": "L'hippopotame orphelin Bumpy obtient une seconde chance auprès de Sheldrick Wildlife Trust",
-     "teaser": "Le 2 mai 2026, la Kenya Wildlife Service a reçu un signalement concernant un hippopotame orphelin à Naivasha, dans la Great Rift Valley. Le jeune hippopotame, âgé de quelques jours à peine, gisait aux côtés du cadavre de sa mère, qui avait probablement péri en défendant son petit. Après une opération de sauvetage aquatique délicate, l'animal, baptisé plus tard Bumpy,...",
+     "id": "1790704405966fz37a0dpl",
+     "titel": "Des agriculteurs tanzaniens restituent des terres aux éléphants",
+     "teaser": "Dans la vallée du Kilombero en Tanzanie, 368 agriculteurs ont cédé des terres pour offrir aux éléphants un passage sûr entre les monts Udzungwa et le Nyerere National Park. Après sept ans de préparation par le Southern Tanzania Elephant Program (STEP) et ses partenaires, le Nyerere-Udzungwa Wildlife Corridor (NUWC) a reçu une protection officielle en avril 2025, la première du...",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/l-hippopotame-orphelin-bumpy-obtient-une-seconde-chance-aupres-de-sheldrick-wild-1790623636477f2bjec92n.html"
+     "url": "https://brightnews.online/articles/fr/des-agriculteurs-tanzaniens-restituent-des-terres-aux-elephants-1790704405966fz37a0dpl.html"
     },
     {
-     "id": "1790623610181f2zlj49rp",
-     "titel": "Ellinikon Park devient le plus grand parc côtier d'Europe",
-     "teaser": "Sur le site de l'ancien aéroport d'Athènes, dans les banlieues sud, s'élève The Ellinikon Park : deux millions de mètres carrés de verdure qui deviendront le plus grand parc urbain côtier d'Europe (200 hectares). Le parc a été conçu pour réduire activement la température ambiante, traite 100 % de ses eaux pluviales sur place et maintient en vie plus de...",
+     "id": "1790704221015snvd30kdl",
+     "titel": "Des photos rémunérées transforment les chasseurs en protecteurs des orangs-outans de Bornéo",
+     "teaser": "Sur l'île indonésienne de Bornéo, dans la province du Kalimantan occidental, les habitants de 9 villages peuvent gagner de l'argent en prenant des photos ou des enregistrements sonores d'animaux sauvages. Les participants gagnent jusqu'à 200 dollars par mois, davantage pour les espèces rares. Là où autrefois les oiseaux aux plumes colorées étaient chassés et les cerfs et sangliers sauvages éliminés...",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/ellinikon-park-devient-le-plus-grand-parc-cotier-d-europe-1790623610181f2zlj49rp.html"
+     "url": "https://brightnews.online/articles/fr/des-photos-remunerees-transforment-les-chasseurs-en-protecteurs-des-orangs-outan-1790704221015snvd30kdl.html"
+    },
+    {
+     "id": "1790704188618teyxk6yw4",
+     "titel": "La communauté asháninka prévient les incendies de forêt au Pérou",
+     "teaser": "Les incendies de forêt ont ravagé le Pérou ces dernières années, avec des milliers d'hectares de forêt perdus. Pourtant, certaines communautés autochtones constatent une diminution des incendies. Le programme Paamari, une collaboration entre Central Asháninka of the Ene River (CARE) et l'organisation Cool Earth, forme des membres de la communauté comme le brigadista Romer Quentimari Garcia, qui utilise des images...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/la-communaute-ashaninka-previent-les-incendies-de-foret-au-perou-1790704188618teyxk6yw4.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260928-environment",
+     "titel": "Les hommes et les animaux se rencontrent : bonnes nouvelles pour la protection de la nature",
+     "categorie": "Environment",
+     "dag": "2026-09-28",
+     "url": "https://brightnews.online/articles/fr/les-hommes-et-les-animaux-se-rencontrent-bonnes-nouvelles-pour-la-protection-de-dg-20260928-environment.html"
+    },
+    {
+     "id": "dg-20260928-science",
+     "titel": "Des bourses pour la recherche courageuse et un nom pour un amphibien préhistorique",
+     "categorie": "Science",
+     "dag": "2026-09-28",
+     "url": "https://brightnews.online/articles/fr/des-bourses-pour-la-recherche-courageuse-et-un-nom-pour-un-amphibien-prehistoriq-dg-20260928-science.html"
+    },
     {
      "id": "dg-20260927-environment",
      "titel": "Un bébé hippopotame, un parc rafraîchissant et des fruits tropicaux : les bonnes nouvelles environnementales de ces jours-ci",
@@ -274,47 +330,61 @@
   "es": {
    "top": [
     {
-     "id": "1790526952732zu9t81thr",
-     "titel": "Nueva York obtiene 131 millones de dólares de DoorDash para repartidores",
-     "teaser": "El New York City Department of Consumer and Worker Protection (DCWP) ha llegado a un acuerdo de 131,5 millones de dólares con DoorDash por incumplimiento de las leyes locales para repartidores. Más de 260.000 trabajadores fueron pagados insuficientemente, algunos no recibieron nada o fueron pagados tarde. Más de 115 millones de dólares irán directamente a los repartidores, además de 16...",
-     "score": 10,
-     "categorie": "Finance",
-     "url": "https://brightnews.online/articles/es/nueva-york-obtiene-131-millones-de-dolares-de-doordash-para-repartidores-1790526952732zu9t81thr.html"
-    },
-    {
-     "id": "1790657218277cgwve7kni",
-     "titel": "Cradle to Cradle: reutilizar todo en lugar de reciclar",
-     "teaser": "La ONG Cradle to Cradle, fundada por Nora Griefahn y Tim Janßen en 2012, demuestra cómo se pueden diseñar productos y edificios según el principio Cradle to Cradle: los materiales son biológicos y biodegradables, o bien técnicos e infinitamente reutilizables. Algunos ejemplos son el Shift Phone, un smartphone modular desmontable, y la moqueta Desso cuya capa EcoBase se puede separar...",
+     "id": "179070446589916lhlftvz",
+     "titel": "El bigote de Pizza John recauda millones para la salud materna en Sierra Leona",
+     "teaser": "Pizzamas, el evento anual de internet de los YouTubers Hank y John Green, ha evolucionado de un meme de fans a una gran recaudación de fondos. Todo comenzó en 2009 cuando John se afeitó en cámara y la fan Valerie Barr utilizó una captura de pantalla para crear la figura artística «Pizza John». Desde 2012, Hank y John venden a...",
      "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/cradle-to-cradle-reutilizar-todo-en-lugar-de-reciclar-1790657218277cgwve7kni.html"
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/es/el-bigote-de-pizza-john-recauda-millones-para-la-salud-materna-en-sierra-leona-179070446589916lhlftvz.html"
     },
     {
-     "id": "17906236600718klq45n91",
-     "titel": "Grupo de mujeres Lioness gana juicio por aire acondicionado en cárceles de Texas",
-     "teaser": "Un grupo de mujeres excarceladas, unidas en la organización sin fines de lucro Lioness Justice Impacted Women's Alliance, ha ganado junto con otras dos organizaciones un juicio contra el Texas Department of Criminal Justice. Un juez federal ordenó que el estado instale aire acondicionado en todas las cárceles antes de finales de 2029. Actualmente, solo el 37 por ciento de...",
+     "id": "1790704437768s5e1giwo8",
+     "titel": "La campaña de calcetines 'Socktober' celebra 15 años de solidaridad local",
+     "teaser": "Socktober comenzó hace 15 años cuando estudiantes de secundaria quisieron ayudar después de enterarse de que muchas personas en su comunidad eran sin hogar o se movían entre centros de acogida. Una llamada al albergue local reveló que los calcetines eran urgentemente necesarios pero raramente donados. Escuelas, iglesias y empresas participaron y se recaudaron más calcetines de los que cabían...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/grupo-de-mujeres-lioness-gana-juicio-por-aire-acondicionado-en-carceles-de-texas-17906236600718klq45n91.html"
+     "url": "https://brightnews.online/articles/es/la-campana-de-calcetines-socktober-celebra-15-anos-de-solidaridad-local-1790704437768s5e1giwo8.html"
     },
     {
-     "id": "1790623636477f2bjec92n",
-     "titel": "La hipopótamo huérfana Bumpy recibe una segunda oportunidad en Sheldrick Wildlife Trust",
-     "teaser": "El 2 de mayo de 2026, el Kenya Wildlife Service recibió una notificación sobre una hipopótamo huérfana en Naivasha, en el Gran Valle del Rift. La hipopótamo de apenas días de vida yacía junto al cuerpo de su madre, que probablemente murió mientras defendía a su cría. Tras un difícil operativo de rescate acuático, el animal, posteriormente llamado Bumpy, fue...",
+     "id": "1790704405966fz37a0dpl",
+     "titel": "Agricultores tanzanos devuelven tierra a los elefantes",
+     "teaser": "En el valle de Kilombero en Tanzania, 368 agricultores cedieron tierra para permitir a los elefantes un paso seguro entre las montañas de Udzungwa y el Nyerere National Park. Tras siete años de preparación por parte del Southern Tanzania Elephant Program (STEP) y sus socios, el Nyerere-Udzungwa Wildlife Corridor (NUWC) recibió protección oficial en abril de 2025, la primera en...",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/la-hipopotamo-huerfana-bumpy-recibe-una-segunda-oportunidad-en-sheldrick-wildlif-1790623636477f2bjec92n.html"
+     "url": "https://brightnews.online/articles/es/agricultores-tanzanos-devuelven-tierra-a-los-elefantes-1790704405966fz37a0dpl.html"
     },
     {
-     "id": "1790623610181f2zlj49rp",
-     "titel": "Ellinikon Park se convierte en el mayor parque costero de Europa",
-     "teaser": "En el terreno del antiguo aeropuerto de Atenas, en las afueras meridionales, surge The Ellinikon Park: dos millones de metros cuadrados de verde que se convertirán en el mayor parque urbano costero de Europa (200 hectáreas). El parque ha sido diseñado para reducir activamente la temperatura ambiental, procesa el 100 por ciento de su agua de lluvia in situ y...",
+     "id": "1790704221015snvd30kdl",
+     "titel": "Las fotos pagadas convierten cazadores en protectores de los orangutanes de Borneo",
+     "teaser": "En la isla indonesia de Borneo, en la provincia de Kalimantan Occidental, los habitantes de 9 pueblos pueden ganar dinero tomando fotografías o grabaciones de sonido de animales salvajes. Los participantes ganan hasta 200 dólares al mes, más si se trata de especies raras. Donde antes se cazaban aves de plumas coloridas y se exterminaban ciervos y jabalíes salvajes para...",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/ellinikon-park-se-convierte-en-el-mayor-parque-costero-de-europa-1790623610181f2zlj49rp.html"
+     "url": "https://brightnews.online/articles/es/las-fotos-pagadas-convierten-cazadores-en-protectores-de-los-orangutanes-de-born-1790704221015snvd30kdl.html"
+    },
+    {
+     "id": "1790704188618teyxk6yw4",
+     "titel": "Comunidad Asháninka previene incendios forestales en Perú",
+     "teaser": "Los incendios forestales han azotado Perú en los últimos años, con miles de hectáreas de bosque perdidas. Sin embargo, algunas comunidades indígenas están experimentando una disminución de incendios. El programa Paamari, una colaboración entre Central Asháninka of the Ene River (CARE) y la organización Cool Earth, capacita a miembros de la comunidad como el brigadista Romer Quentimari Garcia, quien utiliza...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/comunidad-ashaninka-previene-incendios-forestales-en-peru-1790704188618teyxk6yw4.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20260928-environment",
+     "titel": "Personas y animales se encuentran: buenas noticias sobre conservación de la naturaleza",
+     "categorie": "Environment",
+     "dag": "2026-09-28",
+     "url": "https://brightnews.online/articles/es/personas-y-animales-se-encuentran-buenas-noticias-sobre-conservacion-de-la-natur-dg-20260928-environment.html"
+    },
+    {
+     "id": "dg-20260928-science",
+     "titel": "Becas para la investigación valiente y un nombre para un anfibio ancestral",
+     "categorie": "Science",
+     "dag": "2026-09-28",
+     "url": "https://brightnews.online/articles/es/becas-para-la-investigacion-valiente-y-un-nombre-para-un-anfibio-ancestral-dg-20260928-science.html"
+    },
     {
      "id": "dg-20260927-environment",
      "titel": "Un hipopótamo bebé, un parque fresco y frutas tropicales: las noticias ambientales de estos días",
