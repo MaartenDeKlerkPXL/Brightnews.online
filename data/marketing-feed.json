@@ -1,10 +1,34 @@
 {
- "gegenereerd": "2026-09-29T17:57:05.562Z",
+ "gegenereerd": "2026-09-30T04:33:24.955Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "1790742803309ouor5rc3j",
+     "titel": "Verweesde olifant Daba geadopteerd door kudde in Kenia",
+     "teaser": "Op 30 september 2025 vonden rangers van de Sheldrick Wildlife Trust en de Kenya Wildlife Service een 8 maanden oude olifant alleen ten noorden van de Galana-rivier. Ze vermoeden dat leeuwen zijn kudde, de Dabaduki-groep, hadden verjaagd. Het kalfje werd Daba genoemd, wat 'achtergelaten' betekent. Na de Voi Reintegration Unit werd hij naar de Nairobi Nursery gebracht voor specialistische zorg....",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/verweesde-olifant-daba-geadopteerd-door-kudde-in-kenia-1790742803309ouor5rc3j.html"
+    },
+    {
+     "id": "1790742751775ktybiafaw",
+     "titel": "Olifantstier 'adopteert' weesolifantje Talek tot redding kwam",
+     "teaser": "In juni 2023 werd bij het Maasai Mara National Reserve in Kenia een zeven maanden oud weesolifantje gesignaleerd. Toen rangers haar zochten, was ze verdwenen. Enkele dagen later dook ze weer op, dit keer volgend op een oudere mannelijke olifant die haar bescherming bood. Omdat de stier haar geen melk kon geven, gaf de Kenya Wildlife Service toestemming voor een...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/olifantstier-adopteert-weesolifantje-talek-tot-redding-kwam-1790742751775ktybiafaw.html"
+    },
+    {
+     "id": "1790742723599v7yuk22bc",
+     "titel": "12-jarige Sloan verzamelt 30.000 luiers voor Arizona voedselbank",
+     "teaser": "De 12-jarige Sloan uit Phoenix organiseerde voor het vijfde jaar op rij haar 'Diaper Drive', een inzamelingsactie voor luiers. Dit jaar mikte ze op 22.500 luiers, maar uiteindelijk kwamen er 30.000 stuks binnen, zoveel dat er nauwelijks nog ruimte was om in haar huis rond te lopen. De luiers, waaronder merken als Huggies, Pampers en Bluey, werden per Uhaul-truck afgeleverd...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/12-jarige-sloan-verzamelt-30-000-luiers-voor-arizona-voedselbank-1790742723599v7yuk22bc.html"
+    },
     {
      "id": "179070446589916lhlftvz",
      "titel": "Snor van Pizza John haalt miljoenen op voor moederzorg Sierra Leone",
@@ -20,30 +44,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/sokkenactie-socktober-viert-15-jaar-lokale-vriendelijkheid-1790704437768s5e1giwo8.html"
-    },
-    {
-     "id": "1790704405966fz37a0dpl",
-     "titel": "Tanzaniaanse boeren geven land terug aan olifanten",
-     "teaser": "In het Kilombero-vallei in Tanzania hebben 368 boeren land afgestaan om olifanten een veilige doorgang te geven tussen de Udzungwa-bergen en Nyerere National Park. Na zeven jaar voorbereiding door de Southern Tanzania Elephant Program (STEP) en partners kreeg de Nyerere-Udzungwa Wildlife Corridor (NUWC) in april 2025 officiële bescherming, de eerste in Tanzania. De 200 meter brede en 14 kilometer lange...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/tanzaniaanse-boeren-geven-land-terug-aan-olifanten-1790704405966fz37a0dpl.html"
-    },
-    {
-     "id": "1790704221015snvd30kdl",
-     "titel": "Betaalde foto's maken jagers tot beschermers van Borneo's orang-oetans",
-     "teaser": "Op het Indonesische eiland Borneo, in de provincie West-Kalimantan, kunnen bewoners van 9 dorpen geld verdienen door foto's of geluidsopnames van wilde dieren te maken. Deelnemers verdienen tot 200 dollar per maand, meer bij zeldzame soorten. Waar vroeger vogels met kleurrijke veren werden gejaagd en herten en wilde zwijnen werden uitgeroeid om oogsten te beschermen, willen bewoners de dieren nu...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/betaalde-foto-s-maken-jagers-tot-beschermers-van-borneo-s-orang-oetans-1790704221015snvd30kdl.html"
-    },
-    {
-     "id": "1790704188618teyxk6yw4",
-     "titel": "Asháninka-gemeenschap voorkomt bosbranden in Peru",
-     "teaser": "Bosbranden teisterden Peru de afgelopen jaren, met duizenden hectares verloren bosgebied. Toch zien sommige inheemse gemeenschappen juist een afname van branden. Het Paamari-programma, een samenwerking tussen Central Asháninka of the Ene River (CARE) en de organisatie Cool Earth, traint gemeenschapsleden zoals brigadista Romer Quentimari Garcia, die satellietbeelden, drones en radiosystemen gebruikt om branden vroeg op te sporen. Sinds de start...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/ashaninka-gemeenschap-voorkomt-bosbranden-in-peru-1790704188618teyxk6yw4.html"
     }
    ],
    "dagoverzichten": [
@@ -87,6 +87,30 @@
   "en": {
    "top": [
     {
+     "id": "1790742803309ouor5rc3j",
+     "titel": "Orphaned elephant Daba adopted by herd in Kenya",
+     "teaser": "On September 30, 2025, rangers from the Sheldrick Wildlife Trust and the Kenya Wildlife Service found an 8-month-old elephant alone north of the Galana River. They suspect that lions had chased away her herd, the Dabaduki group. The calf was named Daba, which means 'abandoned'. After the Voi Reintegration Unit, she was brought to the Nairobi Nursery for specialized care....",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/orphaned-elephant-daba-adopted-by-herd-in-kenya-1790742803309ouor5rc3j.html"
+    },
+    {
+     "id": "1790742751775ktybiafaw",
+     "titel": "Bull elephant 'adopts' orphan calf Talek until rescue came",
+     "teaser": "In June 2023, a seven-month-old orphaned elephant calf was spotted at the Maasai Mara National Reserve in Kenya. When rangers searched for her, she had disappeared. A few days later, she reappeared, this time following an older male elephant who offered her protection. Because the bull could not provide milk, the Kenya Wildlife Service authorized a rescue operation. The calf...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/bull-elephant-adopts-orphan-calf-talek-until-rescue-came-1790742751775ktybiafaw.html"
+    },
+    {
+     "id": "1790742723599v7yuk22bc",
+     "titel": "12-year-old Sloan collects 30,000 diapers for Arizona food bank",
+     "teaser": "For the fifth year in a row, 12-year-old Sloan from Phoenix organized her 'Diaper Drive', a diaper collection initiative. This year she aimed for 22,500 diapers, but ultimately 30,000 units arrived — so many that there was barely room to walk around in her house. The diapers, including brands such as Huggies, Pampers and Bluey, were delivered by Uhaul truck...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/12-year-old-sloan-collects-30-000-diapers-for-arizona-food-bank-1790742723599v7yuk22bc.html"
+    },
+    {
      "id": "179070446589916lhlftvz",
      "titel": "Pizza John's mustache raises millions for maternal care in Sierra Leone",
      "teaser": "Pizzamas, the annual internet event by YouTubers Hank and John Green, has grown from a fan meme into a major fundraiser. It started in 2009 when John shaved on camera and fan Valerie Barr used a still to create the artwork character 'Pizza John'. Since 2012, Hank and John have sold temporary merchandise through their company DFTBA, such as t-shirts,...",
@@ -101,30 +125,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/sock-drive-socktober-celebrates-15-years-of-local-kindness-1790704437768s5e1giwo8.html"
-    },
-    {
-     "id": "1790704405966fz37a0dpl",
-     "titel": "Tanzanian farmers return land to elephants",
-     "teaser": "In the Kilombero Valley in Tanzania, 368 farmers have ceded land to provide elephants with safe passage between the Udzungwa Mountains and Nyerere National Park. After seven years of preparation by the Southern Tanzania Elephant Program (STEP) and partners, the Nyerere-Udzungwa Wildlife Corridor (NUWC) received official protection in April 2025, the first of its kind in Tanzania. The 200-meter-wide and...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/tanzanian-farmers-return-land-to-elephants-1790704405966fz37a0dpl.html"
-    },
-    {
-     "id": "1790704221015snvd30kdl",
-     "titel": "Paid photos turn Borneo hunters into orangutan protectors",
-     "teaser": "On the Indonesian island of Borneo, in West Kalimantan province, residents of 9 villages can earn money by taking photos or recording sounds of wild animals. Participants earn up to $200 per month, more for rare species. Where colorful birds were once hunted and deer and wild boar were culled to protect crops, residents now want to protect the animals...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/paid-photos-turn-borneo-hunters-into-orangutan-protectors-1790704221015snvd30kdl.html"
-    },
-    {
-     "id": "1790704188618teyxk6yw4",
-     "titel": "Asháninka community prevents forest fires in Peru",
-     "teaser": "Forest fires have plagued Peru in recent years, with thousands of hectares of forest lost. Yet some indigenous communities are actually seeing a decline in fires. The Paamari program, a collaboration between Central Asháninka of the Ene River (CARE) and the organization Cool Earth, trains community members like brigadista Romer Quentimari Garcia, who uses satellite imagery, drones and radio systems...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/ashaninka-community-prevents-forest-fires-in-peru-1790704188618teyxk6yw4.html"
     }
    ],
    "dagoverzichten": [
@@ -168,6 +168,30 @@
   "de": {
    "top": [
     {
+     "id": "1790742803309ouor5rc3j",
+     "titel": "Verwaister Elefant Daba von Herde in Kenia adoptiert",
+     "teaser": "Am 30. September 2025 entdeckten Ranger des Sheldrick Wildlife Trust und des Kenya Wildlife Service einen acht Monate alten Elefanten allein nördlich des Galana-Flusses. Sie vermuten, dass Löwen seine Herde, die Dabaduki-Gruppe, vertrieben hatten. Das Kalb wurde Daba genannt, was „verlassen\" bedeutet. Nach der Voi Reintegration Unit wurde es zur Nairobi Nursery gebracht, um spezialisierte Pflege zu erhalten. Dort wurde...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/verwaister-elefant-daba-von-herde-in-kenia-adoptiert-1790742803309ouor5rc3j.html"
+    },
+    {
+     "id": "1790742751775ktybiafaw",
+     "titel": "Elefantenbulle „adoptiert\" Waisenkälbchen Talek zur Rettung kam",
+     "teaser": "Im Juni 2023 wurde bei der Maasai Mara National Reserve in Kenia ein sieben Monate altes Waisenkälbchen gesichtet. Als Ranger nach ihm suchten, war es verschwunden. Einige Tage später tauchte es wieder auf, diesmal neben einem älteren männlichen Elefanten, der ihm Schutz bot. Da der Bulle dem Kalb keine Milch geben konnte, genehmigte der Kenya Wildlife Service eine Rettungsaktion. Das...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/elefantenbulle-adoptiert-waisenkalbchen-talek-zur-rettung-kam-1790742751775ktybiafaw.html"
+    },
+    {
+     "id": "1790742723599v7yuk22bc",
+     "titel": "12-Jährige Sloan sammelt 30.000 Windeln für Arizonas Lebensmittelbank",
+     "teaser": "Die 12-jährige Sloan aus Phoenix organisierte zum fünften Jahr in Folge ihre „Diaper Drive\", eine Sammelaktion für Windeln. Dieses Jahr zielte sie auf 22.500 Windeln ab, doch am Ende kamen 30.000 Stück zusammen – so viele, dass es in ihrem Haus kaum noch Platz zum Gehen gab. Die Windeln, darunter Marken wie Huggies, Pampers und Bluey, wurden per Uhaul-Lastwagen bei...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/12-jahrige-sloan-sammelt-30-000-windeln-fur-arizonas-lebensmittelbank-1790742723599v7yuk22bc.html"
+    },
+    {
      "id": "179070446589916lhlftvz",
      "titel": "Schnurrbart von Pizza John sammelt Millionen für Müttergesundheit in Sierra Leone",
      "teaser": "Pizzamas, das jährliche Internet-Event der YouTuber Hank und John Green, hat sich von einem Fan-Meme zu einer großen Spendenaktion entwickelt. Alles begann 2009, als sich John vor der Kamera rasierte und die Fangemeinde Valerie Barr ein Standbild nutzte, um die Kunstfigur „Pizza John\" zu erschaffen. Seit 2012 verkaufen Hank und John über ihr Unternehmen DFTBA limitierte Merchandise-Artikel wie T-Shirts, Tragetaschen...",
@@ -182,30 +206,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/socktoberaktion-feiert-15-jahre-lokale-hilfsbereitschaft-1790704437768s5e1giwo8.html"
-    },
-    {
-     "id": "1790704405966fz37a0dpl",
-     "titel": "Tansanische Bauern geben Land an Elefanten zurück",
-     "teaser": "Im Kilombero-Tal in Tansania haben 368 Bauern Land abgetreten, um Elefanten einen sicheren Durchgang zwischen den Udzungwa-Bergen und dem Nyerere National Park zu ermöglichen. Nach sieben Jahren Vorbereitung durch das Southern Tanzania Elephant Program (STEP) und Partner erhielt der Nyerere-Udzungwa Wildlife Corridor (NUWC) im April 2025 offiziellen Schutz – der erste in Tansania. Der 200 Meter breite und 14 Kilometer...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/tansanische-bauern-geben-land-an-elefanten-zuruck-1790704405966fz37a0dpl.html"
-    },
-    {
-     "id": "1790704221015snvd30kdl",
-     "titel": "Bezahlte Fotos machen Jäger zu Schützern von Borneos Orang-Utans",
-     "teaser": "Auf der indonesischen Insel Borneo, in der Provinz Westkalimantan, können Bewohner von 9 Dörfern Geld verdienen, indem sie Fotos oder Tonaufnahmen von Wildtieren machen. Teilnehmer verdienen bis zu 200 Dollar pro Monat, mehr bei seltenen Arten. Wo früher Vögel mit farbenfrohem Gefieder gejagt und Hirsche und Wildschweine ausgerottet wurden, um Ernten zu schützen, wollen Bewohner die Tiere nun bewahren. Das...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/bezahlte-fotos-machen-jager-zu-schutzern-von-borneos-orang-utans-1790704221015snvd30kdl.html"
-    },
-    {
-     "id": "1790704188618teyxk6yw4",
-     "titel": "Asháninka-Gemeinde verhindert Waldbrände in Peru",
-     "teaser": "Waldbrände haben Peru in den letzten Jahren heimgesucht und Tausende Hektar Waldfläche zerstört. Doch einige indigene Gemeinden verzeichnen tatsächlich einen Rückgang der Brände. Das Paamari-Programm, eine Zusammenarbeit zwischen Central Asháninka of the Ene River (CARE) und der Organisation Cool Earth, schult Gemeindeglieder wie den Brigadisten Romer Quentimari Garcia, der Satellitenbilder, Drohnen und Funksysteme nutzt, um Brände frühzeitig zu erkennen. Seit...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/ashaninka-gemeinde-verhindert-waldbrande-in-peru-1790704188618teyxk6yw4.html"
     }
    ],
    "dagoverzichten": [
@@ -249,6 +249,30 @@
   "fr": {
    "top": [
     {
+     "id": "1790742803309ouor5rc3j",
+     "titel": "L'éléphanteau orphelin Daba adopté par un troupeau au Kenya",
+     "teaser": "Le 30 septembre 2025, des rangers de la Sheldrick Wildlife Trust et du Kenya Wildlife Service ont découvert un éléphanteau de 8 mois seul au nord de la rivière Galana. Ils soupçonnent que des lions avaient dispersé son troupeau, le groupe Dabaduki. Le petit a été nommé Daba, ce qui signifie « abandonné ». Après la Voi Reintegration Unit, il...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/l-elephanteau-orphelin-daba-adopte-par-un-troupeau-au-kenya-1790742803309ouor5rc3j.html"
+    },
+    {
+     "id": "1790742751775ktybiafaw",
+     "titel": "Un éléphant mâle « adopte » l'éléphanteau orphelin Talek jusqu'à son sauvetage",
+     "teaser": "En juin 2023, un éléphanteau orphelin âgé de sept mois a été signalé près de la Maasai Mara National Reserve au Kenya. Lorsque les rangers l'ont recherché, il avait disparu. Quelques jours plus tard, il a réapparu, suivant un éléphant mâle plus âgé qui lui offrait sa protection. Comme le mâle ne pouvait pas lui donner de lait, le Kenya...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/un-elephant-male-adopte-l-elephanteau-orphelin-talek-jusqu-a-son-sauvetage-1790742751775ktybiafaw.html"
+    },
+    {
+     "id": "1790742723599v7yuk22bc",
+     "titel": "Sloan, 12 ans, collecte 30 000 couches pour une banque alimentaire en Arizona",
+     "teaser": "Sloan, 12 ans, originaire de Phoenix, a organisé pour la cinquième année consécutive sa « Diaper Drive », une collecte de couches. Cette année, elle visait 22 500 couches, mais elle en a finalement reçu 30 000, tellement qu'il y avait à peine de la place pour se déplacer dans sa maison. Les couches, notamment des marques comme Huggies, Pampers...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/sloan-12-ans-collecte-30-000-couches-pour-une-banque-alimentaire-en-arizona-1790742723599v7yuk22bc.html"
+    },
+    {
      "id": "179070446589916lhlftvz",
      "titel": "La moustache de Pizza John récolte des millions pour la santé maternelle en Sierra Leone",
      "teaser": "Pizzamas, l'événement internet annuel des YouTubers Hank et John Green, est passé d'un mème de fans à une grande collecte de fonds. Tout a commencé en 2009 quand John s'est rasé à la caméra et la fan Valerie Barr a utilisé une capture d'écran pour créer le personnage artistique « Pizza John ». Depuis 2012, Hank et John vendent via...",
@@ -263,30 +287,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/l-action-chaussettes-socktober-celebre-15-ans-de-solidarite-locale-1790704437768s5e1giwo8.html"
-    },
-    {
-     "id": "1790704405966fz37a0dpl",
-     "titel": "Des agriculteurs tanzaniens restituent des terres aux éléphants",
-     "teaser": "Dans la vallée du Kilombero en Tanzanie, 368 agriculteurs ont cédé des terres pour offrir aux éléphants un passage sûr entre les monts Udzungwa et le Nyerere National Park. Après sept ans de préparation par le Southern Tanzania Elephant Program (STEP) et ses partenaires, le Nyerere-Udzungwa Wildlife Corridor (NUWC) a reçu une protection officielle en avril 2025, la première du...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/des-agriculteurs-tanzaniens-restituent-des-terres-aux-elephants-1790704405966fz37a0dpl.html"
-    },
-    {
-     "id": "1790704221015snvd30kdl",
-     "titel": "Des photos rémunérées transforment les chasseurs en protecteurs des orangs-outans de Bornéo",
-     "teaser": "Sur l'île indonésienne de Bornéo, dans la province du Kalimantan occidental, les habitants de 9 villages peuvent gagner de l'argent en prenant des photos ou des enregistrements sonores d'animaux sauvages. Les participants gagnent jusqu'à 200 dollars par mois, davantage pour les espèces rares. Là où autrefois les oiseaux aux plumes colorées étaient chassés et les cerfs et sangliers sauvages éliminés...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/des-photos-remunerees-transforment-les-chasseurs-en-protecteurs-des-orangs-outan-1790704221015snvd30kdl.html"
-    },
-    {
-     "id": "1790704188618teyxk6yw4",
-     "titel": "La communauté asháninka prévient les incendies de forêt au Pérou",
-     "teaser": "Les incendies de forêt ont ravagé le Pérou ces dernières années, avec des milliers d'hectares de forêt perdus. Pourtant, certaines communautés autochtones constatent une diminution des incendies. Le programme Paamari, une collaboration entre Central Asháninka of the Ene River (CARE) et l'organisation Cool Earth, forme des membres de la communauté comme le brigadista Romer Quentimari Garcia, qui utilise des images...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/la-communaute-ashaninka-previent-les-incendies-de-foret-au-perou-1790704188618teyxk6yw4.html"
     }
    ],
    "dagoverzichten": [
@@ -330,6 +330,30 @@
   "es": {
    "top": [
     {
+     "id": "1790742803309ouor5rc3j",
+     "titel": "Elefantillo huérfano Daba adoptado por manada en Kenia",
+     "teaser": "El 30 de septiembre de 2025, guardabosques de Sheldrick Wildlife Trust y Kenya Wildlife Service encontraron a un elefante de 8 meses solo al norte del río Galana. Sospechan que leones habían dispersado a su manada, el grupo Dabaduki. La cría fue nombrada Daba, que significa «abandonado». Tras pasar por la Voi Reintegration Unit, fue trasladado a la Nairobi Nursery...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/elefantillo-huerfano-daba-adoptado-por-manada-en-kenia-1790742803309ouor5rc3j.html"
+    },
+    {
+     "id": "1790742751775ktybiafaw",
+     "titel": "Un elefante macho «adopta» al elefantillo huérfano Talek hasta su rescate",
+     "teaser": "En junio de 2023 se avistó un elefantillo huérfano de siete meses en la Maasai Mara National Reserve en Kenia. Cuando los guardabosques lo buscaron, había desaparecido. Días después reapareci, esta vez siguiendo a un elefante macho adulto que le ofrecía protección. Como el toro no podía proporcionarle leche, el Kenya Wildlife Service autorizó una operación de rescate. La cría...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/un-elefante-macho-adopta-al-elefantillo-huerfano-talek-hasta-su-rescate-1790742751775ktybiafaw.html"
+    },
+    {
+     "id": "1790742723599v7yuk22bc",
+     "titel": "Sloan, de 12-jarige die 30.000 pañales recaudó para banco de alimentos",
+     "teaser": "La joven Sloan, de 12 años, de Phoenix, organizó por quinto año consecutivo su 'Diaper Drive', una campaña de recaudación de pañales. Este año se propuso como meta 22.500 pañales, pero finalmente llegaron 30.000 unidades, tantas que apenas quedaba espacio para caminar en su casa. Los pañales, incluyendo marcas como Huggies, Pampers y Bluey, fueron entregados en un camión Uhaul...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/sloan-de-12-jarige-die-30-000-panales-recaudo-para-banco-de-alimentos-1790742723599v7yuk22bc.html"
+    },
+    {
      "id": "179070446589916lhlftvz",
      "titel": "El bigote de Pizza John recauda millones para la salud materna en Sierra Leona",
      "teaser": "Pizzamas, el evento anual de internet de los YouTubers Hank y John Green, ha evolucionado de un meme de fans a una gran recaudación de fondos. Todo comenzó en 2009 cuando John se afeitó en cámara y la fan Valerie Barr utilizó una captura de pantalla para crear la figura artística «Pizza John». Desde 2012, Hank y John venden a...",
@@ -344,30 +368,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/la-campana-de-calcetines-socktober-celebra-15-anos-de-solidaridad-local-1790704437768s5e1giwo8.html"
-    },
-    {
-     "id": "1790704405966fz37a0dpl",
-     "titel": "Agricultores tanzanos devuelven tierra a los elefantes",
-     "teaser": "En el valle de Kilombero en Tanzania, 368 agricultores cedieron tierra para permitir a los elefantes un paso seguro entre las montañas de Udzungwa y el Nyerere National Park. Tras siete años de preparación por parte del Southern Tanzania Elephant Program (STEP) y sus socios, el Nyerere-Udzungwa Wildlife Corridor (NUWC) recibió protección oficial en abril de 2025, la primera en...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/agricultores-tanzanos-devuelven-tierra-a-los-elefantes-1790704405966fz37a0dpl.html"
-    },
-    {
-     "id": "1790704221015snvd30kdl",
-     "titel": "Las fotos pagadas convierten cazadores en protectores de los orangutanes de Borneo",
-     "teaser": "En la isla indonesia de Borneo, en la provincia de Kalimantan Occidental, los habitantes de 9 pueblos pueden ganar dinero tomando fotografías o grabaciones de sonido de animales salvajes. Los participantes ganan hasta 200 dólares al mes, más si se trata de especies raras. Donde antes se cazaban aves de plumas coloridas y se exterminaban ciervos y jabalíes salvajes para...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/las-fotos-pagadas-convierten-cazadores-en-protectores-de-los-orangutanes-de-born-1790704221015snvd30kdl.html"
-    },
-    {
-     "id": "1790704188618teyxk6yw4",
-     "titel": "Comunidad Asháninka previene incendios forestales en Perú",
-     "teaser": "Los incendios forestales han azotado Perú en los últimos años, con miles de hectáreas de bosque perdidas. Sin embargo, algunas comunidades indígenas están experimentando una disminución de incendios. El programa Paamari, una colaboración entre Central Asháninka of the Ene River (CARE) y la organización Cool Earth, capacita a miembros de la comunidad como el brigadista Romer Quentimari Garcia, quien utiliza...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/comunidad-ashaninka-previene-incendios-forestales-en-peru-1790704188618teyxk6yw4.html"
     }
    ],
    "dagoverzichten": [
