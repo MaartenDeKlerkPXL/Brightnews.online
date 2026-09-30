@@ -1,5 +1,195 @@
 [
   {
+    "id": "dg-20260929-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-09-29",
+    "title": "Giving takes center stage: from diapers to socks and a new home",
+    "summary": "The past few days show how many people are willing to do something for others, without expecting anything in return. From a media outlet raising money for a vulnerable community to a teenage girl collecting diapers and an actor making time for two dogs without a home: this week's good news keeps coming back to people looking out for each other. In Springfield, Ohio, The Bulwark held a live show on September 25th, with all proceeds going to the Haitian Support Center. This organization supports the Haitian community with food, transportation, and legal aid, especially now that arrests in the...",
+    "image_alt": "Giving takes center stage: from diapers to socks and a new home",
+    "meta_description": "From money for Haitians to free books, diapers, socks and a new home: the positive lifestyle news from late September 2026 in one overview.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abd3445e1a11fa225c805d2_the-bulwark-fundraiser-springfield-haitian-featured.webp",
+    "date": "2026-09-30T17:50:53.098Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "1790790463292h7qtw4jt5",
+        "title": "The Bulwark raises over $400,000 for Haitians in Springfield"
+      },
+      {
+        "id": "1790790404248qshlqgb5x",
+        "title": "Dolly Parton's Imagination Library doubles reach in London"
+      },
+      {
+        "id": "1790742723599v7yuk22bc",
+        "title": "12-year-old Sloan collects 30,000 diapers for Arizona food bank"
+      },
+      {
+        "id": "1790704437768s5e1giwo8",
+        "title": "Sock drive 'Socktober' celebrates 15 years of local kindness"
+      },
+      {
+        "id": "1790790318242kc5soggtq",
+        "title": "Chris Evans helps inseparable dogs Greg and Carley find new home"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260929-environment",
+    "type": "digest",
+    "digest_date": "2026-09-29",
+    "title": "Recovery in the wild: frogs, elephants and turtles get a second chance",
+    "summary": "Over the past few days, environmental news has shown one thing above all: animals are getting second chances, and people are actively helping make it happen. From a frog returning after fifty years to baby elephants being rescued from trouble, this week's stories are about recovery, patience and care. In Yosemite National Park, the red-legged frog has returned after fifty years of absence caused by habitat loss and invasive bullfrogs [1]. Park staff restored wetlands and riverbanks, and thanks to a breeding program by the San Francisco Zoo, this spring the 10,000th frog was released, named 'Twain'. Something unexpected also...",
+    "image_alt": "Recovery in the wild: frogs, elephants and turtles get a second chance",
+    "meta_description": "Daily environmental news roundup: a frog returns, baby elephants rescued in Kenya, new turtle nests and golf courses becoming wetlands.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abc003998cb09d8b3f6446c_6abc003898cb09d8b3f643d8_yosemite-red-legged-frog-conservation-release-featured.webp",
+    "date": "2026-09-30T17:49:54.594Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1790790490678v6e4byyna",
+        "title": "Red-legged frog returns to Yosemite after 50-year absence"
+      },
+      {
+        "id": "1790790432773ek5eaddeb",
+        "title": "Baby elephant Korbessa rescued from well becomes queen of Kaluku"
+      },
+      {
+        "id": "179079038205726bbynee2",
+        "title": "Olive ridley sea turtles nest for first time on US West Coast"
+      },
+      {
+        "id": "1790790354505pbkwaodi3",
+        "title": "Sandilands golf course becomes wetland for rare seabirds"
+      },
+      {
+        "id": "1790742803309ouor5rc3j",
+        "title": "Orphaned elephant Daba adopted by herd in Kenya"
+      },
+      {
+        "id": "1790742751775ktybiafaw",
+        "title": "Bull elephant 'adopts' orphan calf Talek until rescue came"
+      }
+    ]
+  },
+  {
+    "id": "179079052264500q9jt7s6",
+    "title": "Horizon Europe receives €500 million extra for research and innovation",
+    "summary": "The European Commission has released an additional €500 million for Horizon Europe, the EU's research and innovation programme, for 2026 and 2027. This brings the budget for these two years to approximately €14.8 billion. The funding will go towards two new calls for proposals: €237 million for eleven projects on biodiversity and a nature-positive economy, and €260 million for sixteen...",
+    "image_alt": "Researchers collaborate on a project within the EU's Horizon Europe programme",
+    "meta_description": "EU invests €500 million extra in Horizon Europe for research, innovation and biodiversity in 2026-2027.",
+    "meta_keywords": "Horizon Europe, EU research, innovation, biodiversity, artificial intelligence, funding",
+    "link": "https://www.openaccessgovernment.org/horizon-europe-gets-e500-million-boost-to-strengthen-eu-research-and-innovation/214905/",
+    "source": "Openaccessgovernment.org",
+    "image": "/assets/fallback/science-4.jpg",
+    "date": "2026-09-30T17:48:44.068Z",
+    "category": "Science",
+    "score": 8
+  },
+  {
+    "id": "1790790490678v6e4byyna",
+    "title": "Red-legged frog returns to Yosemite after 50-year absence",
+    "summary": "About fifty years ago, the red-legged frog disappeared from Yosemite National Park, due in part to habitat loss, invasive American bullfrogs, and an increase in raccoons. Park staff removed the bullfrogs and restored wetlands and riverbanks. In 2016, a breeding program began at the San Francisco Zoo, where frogs are raised from wild-collected eggs until they reach one to two...",
+    "image_alt": "A red-legged frog is released into a wetland in Yosemite National Park",
+    "meta_description": "After 50 years of absence, 10,000 red-legged frogs have been returned to Yosemite through a breeding program by San Francisco Zoo.",
+    "meta_keywords": "red-legged frog, Yosemite National Park, San Francisco Zoo, habitat restoration, frog population, bullfrog, wetland restoration",
+    "link": "https://www.goodgoodgood.co/articles/yosemite-red-legged-frog-conservation-release",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abc003998cb09d8b3f6446c_6abc003898cb09d8b3f643d8_yosemite-red-legged-frog-conservation-release-featured.webp",
+    "date": "2026-09-30T17:48:12.262Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790790463292h7qtw4jt5",
+    "title": "The Bulwark raises over $400,000 for Haitians in Springfield",
+    "summary": "Media outlet The Bulwark held a live show in Springfield, Ohio on September 25, with all proceeds going to the Haitian Support Center. This nonprofit assists the Haitian community with food, transportation, legal aid and other basic needs amid large-scale ICE operations in the city. A Supreme Court ruling allowed the Trump administration to end temporary protected status for approximately...",
+    "image_alt": "The Bulwark live show in Springfield, Ohio, benefiting the Haitian Support Center",
+    "meta_description": "The Bulwark raises $428,000 for Haitian community in Springfield through live show and donations.",
+    "meta_keywords": "The Bulwark, Springfield Ohio, Haitian Support Center, ICE, Haitian community, fundraising, temporary protected status",
+    "link": "https://www.goodgoodgood.co/articles/the-bulwark-springfield-ohio-haitians-ice",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abd3445e1a11fa225c805d2_the-bulwark-fundraiser-springfield-haitian-featured.webp",
+    "date": "2026-09-30T17:47:44.871Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "1790790432773ek5eaddeb",
+    "title": "Baby elephant Korbessa rescued from well becomes queen of Kaluku",
+    "summary": "In Meru National Park in Kenya, rangers from the Kenya Wildlife Service heard trumpeting elephants near an old well in the morning. They found an elephant calf no more than a few days old that had fallen into it the night before. The rangers lifted her out of the well and waited four hours to see if her mother would...",
+    "image_alt": "Baby elephant Korbessa at the Kaluku Neonate Nursery of the Sheldrick Wildlife Trust in Kenya",
+    "meta_description": "Baby elephant Korbessa fell into a well in Kenya as a baby and grew up to become the queen of the Kaluku sanctuary.",
+    "meta_keywords": "Korbessa, elephant, Sheldrick Wildlife Trust, Kenya, Meru National Park, animal rescue, orphan elephant",
+    "link": "https://www.goodgoodgood.co/articles/baby-elephant-korbessa-rescue-well",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abd48a320c6e73877608029_6abd48a29553c6353a00b269_baby-elephant-korbessa-rescue-well-featured.webp",
+    "date": "2026-09-30T17:47:21.616Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790790404248qshlqgb5x",
+    "title": "Dolly Parton's Imagination Library doubles reach in London",
+    "summary": "Dolly Parton's Imagination Library, which has been sending free books to children under five since 1995, is expanding in London. The programme is growing from five to ten of London's 32 boroughs, enabling 157,000 additional children to receive a free book each month. The expansion was announced less than a month after Parton's death this year. Jeff Conyers, president of...",
+    "image_alt": "Child reading a book from Dolly Parton's Imagination Library",
+    "meta_description": "Dolly Parton's Imagination Library doubles reach in London following her death: 157,000 more children receive free books.",
+    "meta_keywords": "Dolly Parton, Imagination Library, London, children's books, literacy, Postcode Lottery, charity",
+    "link": "https://www.optimistdaily.com/2026/09/dolly-partons-imagination-library-doubles-its-london-reach-even-after-her-death/",
+    "source": "OptimistDaily.com",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_871798200_S.jpg",
+    "date": "2026-09-30T17:46:45.363Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "179079038205726bbynee2",
+    "title": "Olive ridley sea turtles nest for first time on US West Coast",
+    "summary": "For the first time, olive ridley sea turtles have been spotted nesting on the American West Coast. A female laid eggs at Seal Beach, and three days later another did the same at Huntington Beach. Scientist Lindsey Peavey Reeves called it unexpected. NOAA and Fish and Wildlife Service installed nets and barriers for protection. Due to extreme tides and hurricanes...",
+    "image_alt": "An olive ridley sea turtle lays eggs on a beach in Southern California, surrounded by protective nets.",
+    "meta_description": "Olive ridley sea turtles nest for the first time on the US West Coast; eggs rescued and transferred to aquarium.",
+    "meta_keywords": "olive ridley, sea turtle, California, Seal Beach, Huntington Beach, NOAA, Fish and Wildlife Service, Aquarium of the Pacific, nesting eggs, climate change",
+    "link": "https://www.goodnewsnetwork.org/first-ever-recorded-sea-turtle-nests-on-americas-west-coast/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Eggs-from-an-olive-ridley-sea-turtle-were-laid-near-Seal-Beach-Credit-City-of-Huntington-Beach.jpg",
+    "date": "2026-09-30T17:46:24.254Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790790354505pbkwaodi3",
+    "title": "Sandilands golf course becomes wetland for rare seabirds",
+    "summary": "On the English coast, National Trust golf course Sandilands in Lincolnshire, purchased in 2020, has been transformed into a wetland nature reserve the size of 45 football pitches. No pesticides or drinking water are applied to the site anymore. Even before the official opening, curlews and oystercatchers were breeding there, and chicks of the little plover were spotted for the...",
+    "image_alt": "Wetland area with waterfowl on the former Sandilands golf course on the English coast",
+    "meta_description": "Sandilands golf course in England becomes wetland for rare seabirds; US golf courses also turning green.",
+    "meta_keywords": "Sandilands, National Trust, wetland, golf course, seabirds, CommonGround Golf Course, nature reserve, biodiversity",
+    "link": "https://www.goodnewsnetwork.org/coastal-golf-course-turned-into-vital-wetland-habitat-for-seabirds/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Sandilands-Nature-Reserve-credit-National-Trust-photo-by-John-Miller.jpg",
+    "date": "2026-09-30T17:45:57.153Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790790318242kc5soggtq",
+    "title": "Chris Evans helps inseparable dogs Greg and Carley find new home",
+    "summary": "Actor Chris Evans stepped in for two inseparable dogs, chihuahua Greg and golden retriever Carley, who needed to be adopted together. They were staying at the Animal Rescue League of Boston. Evans participated in 'Dream Date', a series by The Dodo in which Hollywood stars spend time with dogs looking for new homes. The series already has over 200 episodes...",
+    "image_alt": "Chris Evans plays with dogs Greg and Carley in a video for Dream Date",
+    "meta_description": "Chris Evans advocates for bonded dog pair Greg and Carley, who find a new home thanks to his video.",
+    "meta_keywords": "Chris Evans, Greg and Carley, Animal Rescue League of Boston, The Dodo, Dream Date, dog adoption",
+    "link": "https://www.goodnewsnetwork.org/chris-evans-puts-his-limelight-on-a-bonded-dog-pair-with-cute-video-immediately-sees-them-adopted/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Left-Greg-and-Carley-a-pair-bonded-dog-couple-right-Chris-Evans-in-2023-credits-Animal-Rescue-League-of-Boston-via-Facebook.jpg",
+    "date": "2026-09-30T17:45:29.128Z",
+    "category": "Lifestyle",
+    "score": 8
+  },
+  {
     "id": "1790742803309ouor5rc3j",
     "title": "Orphaned elephant Daba adopted by herd in Kenya",
     "summary": "On September 30, 2025, rangers from the Sheldrick Wildlife Trust and the Kenya Wildlife Service found an 8-month-old elephant alone north of the Galana River. They suspect that lions had chased away her herd, the Dabaduki group. The calf was named Daba, which means 'abandoned'. After the Voi Reintegration Unit, she was brought to the Nairobi Nursery for specialized care....",
@@ -1879,35 +2069,6 @@
     ]
   },
   {
-    "id": "dg-20260916-tech",
-    "type": "digest",
-    "digest_date": "2026-09-16",
-    "title": "From sign language to houses made from wood waste: technology that solves problems",
-    "summary": "These days, technology is showing that clever inventions don't need to be complicated to make a real difference. From a robotic hand that produces sign language to houses built from wood waste: solutions are popping up everywhere for problems that have existed for a long time. That's precisely what makes these stories worth reading further. In Kenya, 22-year-old Norah Kimathi built a robotic hand with her startup ZeroBionic that converts a teacher's voice directly into sign language [1]. Of the 300,000 deaf or hard of hearing children in Kenya, only a small fraction attend school, partly because there is no...",
-    "image_alt": "From sign language to houses made from wood waste: technology that solves problems",
-    "meta_description": "Robotic hand for sign language, houses made from wood waste and a solar ambulance: the technology news of September 16, 2026 at a glance.",
-    "meta_keywords": "Tech",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Press-photo-©-ZeroBionic-2.jpg",
-    "date": "2026-09-17T16:49:28.212Z",
-    "category": "Tech",
-    "refs": [
-      {
-        "id": "1789409398854ryk5ehwtu",
-        "title": "Robot Hand Translates Teacher's Voice to Sign Language"
-      },
-      {
-        "id": "1789663690801lle8wvp1r",
-        "title": "3D-printed BioHomes from wood waste get nine pilot homes in Maine"
-      },
-      {
-        "id": "1789577008130zs40adub8",
-        "title": "First Solar Ambulance Tested In Kenya"
-      }
-    ]
-  },
-  {
     "id": "17896637160761haxz39w5",
     "title": "Fungi gain global protection status as 'Funga'",
     "summary": "Scientists and the Fungi Foundation are working to have fungi recognized as a separate category alongside flora and fauna, through the 3F proposal (Flora, Fauna, Funga). Around 90 percent of the most diverse underground fungal systems currently lack protection, despite fungi being essential for carbon storage, soil restoration and biodiversity. In July, 'funga' was added to the Cambridge Dictionary, which...",
@@ -2441,165 +2602,5 @@
     "date": "2026-09-16T19:06:32.691Z",
     "category": "Lifestyle",
     "score": 9
-  },
-  {
-    "id": "dg-20260915-lifestyle",
-    "type": "digest",
-    "digest_date": "2026-09-15",
-    "title": "Shelter, music and baking: warmth in all its forms this week",
-    "summary": "These days, positive news in Lifestyle has largely revolved around people making room for one another. Literally, in the form of a room or a house, and figuratively, by sharing time, talent or money. From young people moving in with seniors to an actor building an entire village for foster families: the theme of togetherness has been everywhere this week. In Vermont, Kayla Mazza (31) and Honey Donegan (77) have been living together since 2023 thanks to HomeShare Vermont, an organization that matches young people needing a room with seniors who have space to spare. Mazza pays 650 dollars in...",
-    "image_alt": "Shelter, music and baking: warmth in all its forms this week",
-    "meta_description": "From sharing homes with seniors to a foster care village by Christian Bale: the positive lifestyle news of September 15, 2026 at a glance.",
-    "meta_keywords": "Lifestyle",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa838960816e4ca9113d05e_6aa8389558ce38385ea02a11_intergenerational-roommates-cheap-rent-featured.webp",
-    "date": "2026-09-16T16:48:05.964Z",
-    "category": "Lifestyle",
-    "refs": [
-      {
-        "id": "1789533305880mtme7702f",
-        "title": "Rent reduction and friendship by living with a senior"
-      },
-      {
-        "id": "1789576988252iy8ftuo0a",
-        "title": "Frisco students bake for their community"
-      },
-      {
-        "id": "17895769652876rwxbghgy",
-        "title": "Homeless Pianist Becomes Star And Raises 50,000 Dollars"
-      },
-      {
-        "id": "1789533027394a1hawnr3o",
-        "title": "Christian Bale Opens Foster Care Village For Families"
-      }
-    ]
-  },
-  {
-    "id": "dg-20260915-science",
-    "type": "digest",
-    "digest_date": "2026-09-15",
-    "title": "Young talent, red deserts and clever elephants: this week's science news",
-    "summary": "This week shows that progress often begins with patient searching for answers. Young researchers are tackling cancer and climate, geologists discover how desert sand can deliver clean energy, and elephants turn out to think before they act more than expected. Three very different stories, but all with the same core: understanding leads to better choices. In the French city of Brest, a hundred young scientists from 43 countries came together for the third edition of EU TalentOn. Between 21 and 35 years old, and already busy with major themes such as climate change, cancer, soil health and water pollution. The...",
-    "image_alt": "Young talent, red deserts and clever elephants: this week's science news",
-    "meta_description": "Young scientists tackle cancer and climate, desert sand produces hydrogen, and elephants show self-control.",
-    "meta_keywords": "Science",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
-    "date": "2026-09-16T16:47:06.218Z",
-    "category": "Science",
-    "refs": [
-      {
-        "id": "1789577102747ecq0t1wdv",
-        "title": "Young researchers tackle cancer and climate"
-      },
-      {
-        "id": "1789576831859ulekx38g9",
-        "title": "Australia's Red Desert Can Deliver Hydrogen"
-      },
-      {
-        "id": "1789447008594levnblqrg",
-        "title": "Elephants Can Control Their Impulses"
-      }
-    ]
-  },
-  {
-    "id": "1789577164254xqgpzyylg",
-    "title": "Ten Years of Stories For Regenerative Farming",
-    "summary": "Farmerama, a podcast sharing stories about regenerative farming, celebrates ten years. The founder started with her family's farm on 10 hectares in Chile and co-founded the podcast to support farmers and farmworkers operating ecologically. Over the years, the podcast has showcased the experiences of small-scale farmers, such as experiments with wood chip compost and agroforestry. These stories helped isolated farmers...",
-    "image_alt": "Farmer works on regenerative farming field with wood chip compost",
-    "meta_description": "Ten years of Farmerama: how a podcast shares stories about regenerative farming and connects farmers worldwide.",
-    "meta_keywords": "Farmerama, regenerative farming, agroforestry, organic farming, podcast, soil health, wood chip compost",
-    "link": "https://theecologist.org/2026/sep/16/stories-emerging-food-system",
-    "source": "Theecologist.org",
-    "image": "https://theecologist.org/sites/default/files/styles/facebook/public/2026-09/572f681a77b857b212bc75eee6f46cc0.webp_.jpeg?h=6c379592&amp;itok=yJQljLhr",
-    "date": "2026-09-16T16:46:06.138Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1789577102747ecq0t1wdv",
-    "title": "Young researchers tackle cancer and climate",
-    "summary": "Young researchers from across Europe have joined forces to develop innovative solutions to some of the continent's greatest challenges, including climate change, cancer, soil health and water pollution. The third edition of EU TalentOn concluded on 11 September in Brest, France. The event brought together 100 researchers at the beginning of their careers, aged between 21 and 35 years. They...",
-    "image_alt": "Young researchers from Europe collaborate during EU TalentOn in Brest",
-    "meta_description": "100 young researchers from 43 countries worked in Brest on solutions for cancer, climate and water pollution.",
-    "meta_keywords": "EU TalentOn, young researchers, climate change, cancer, soil health, water pollution, Brest, Europe",
-    "link": "https://www.openaccessgovernment.org/europes-young-researchers-tackle-cancer-climate-and-other-major-challenges/214357/",
-    "source": "Openaccessgovernment.org",
-    "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
-    "date": "2026-09-16T16:45:05.093Z",
-    "category": "Science",
-    "score": 9
-  },
-  {
-    "id": "1789577008130zs40adub8",
-    "title": "First Solar Ambulance Tested In Kenya",
-    "summary": "The world's first solar ambulance has successfully completed its first real-world test in rural Kenya. Further details about the test are not provided in the source.",
-    "image_alt": "Solar ambulance during test in rural Kenya",
-    "meta_description": "World's first solar ambulance passes initial real-world test in rural Kenya.",
-    "meta_keywords": "solar ambulance, Kenya, solar energy, healthcare, innovation",
-    "link": "https://www.optimistdaily.com/2026/09/the-worlds-first-solar-ambulance-just-completed-its-first-real-world-test-in-rural-kenya/",
-    "source": "OptimistDaily.com",
-    "image": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_23987521_L-1024x681.jpg",
-    "date": "2026-09-16T16:43:29.363Z",
-    "category": "Tech",
-    "score": 9
-  },
-  {
-    "id": "1789576988252iy8ftuo0a",
-    "title": "Frisco students bake for their community",
-    "summary": "Students in Frisco are channeling their passion for baking to make a difference in their community. Under the name Baked Bites, they combine their love of baking with positive change in the neighborhood. Further details about the initiative are not provided in the source.",
-    "image_alt": "Students from Frisco bake together for a good cause",
-    "meta_description": "Frisco students channel baking passion for community change with Baked Bites initiative.",
-    "meta_keywords": "Baked Bites, Frisco, students, baking, community, neighborhood",
-    "link": "https://www.optimistdaily.com/2026/09/baked-bites-how-frisco-students-turned-a-passion-for-baking-into-a-force-for-community-change/",
-    "source": "OptimistDaily.com",
-    "image": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_752259020_L-1024x682.jpg",
-    "date": "2026-09-16T16:43:09.699Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "17895769652876rwxbghgy",
-    "title": "Homeless Pianist Becomes Star And Raises 50,000 Dollars",
-    "summary": "Rhys Wynne-Jones was homeless for ten years in England when he played piano on a cold January evening at St. Mary's Church in Penzance, one of Britain's 'Nightchurches' that are open day and night for vulnerable people. A video of his performance of Queen's Bohemian Rhapsody went viral, making him known as 'The Nightchurch Pianist'. He performed at a charity...",
-    "image_alt": "Rhys Wynne-Jones plays piano at St. Mary's Church in Penzance",
-    "meta_description": "Homeless man goes viral as 'Nightchurch Pianist' and raises 54,000 dollars for charities after piano performance in church.",
-    "meta_keywords": "homeless, piano, viral, charities, Penzance, Nightchurch Pianist, Coastline Housing, Peter Andre",
-    "link": "https://www.goodnewsnetwork.org/homeless-guy-famous-for-playing-piano-in-church-raising-50k/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Formerly-homeless-Rhys-Wynne-Jones-w-piano-SWNS.jpeg",
-    "date": "2026-09-16T16:42:46.582Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "1789576899477ema9ouzfu",
-    "title": "Bison Return to Mexican Desert After 200 Years",
-    "summary": "Bison have returned to Mexico's Chihuahua desert region after a 200-year absence. Last year, the Fundación Pro Cuatrociénegas brought 48 animals to El Santuario Wildlife Reserve, part of the protected natural area Cuatrociénegas in Coahuila. The animals are considered a key species for dry grasslands: their hooves break open the ground, their fur spreads seeds, and their dung fertilizes the...",
-    "image_alt": "Herd of bison in the dry desert landscape of Cuatrociénegas, Mexico",
-    "meta_description": "After 200 years, bison have returned to Mexico's Chihuahua desert, where they help restore the fragile ecosystem of Cuatrociénegas.",
-    "meta_keywords": "bison Mexico, Cuatrociénegas, Chihuahua desert, ecosystem restoration, Fundación Pro Cuatrociénegas, nature conservation",
-    "link": "https://www.goodnewsnetwork.org/mexico-reintroduced-bison-into-precious-desert-ecosystem-after-century-long-absence/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/01/credit-Jordan-Crawford-via-Unsplash.jpg",
-    "date": "2026-09-16T16:41:41.051Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1789576831859ulekx38g9",
-    "title": "Australia's Red Desert Can Deliver Hydrogen",
-    "summary": "Researchers from Edith Cowan University have discovered that magnetite, a mineral in the iron ore reserves of the Pilbara region in Western Australia, can produce hydrogen gas when it reacts with hot water deep underground. By injecting a solution into banded iron formations, hydrogen production can be stimulated. In tests at 200°C and high pressure over 60 days, powdered magnetite...",
-    "image_alt": "Red desert in Western Australia with iron-rich rock formations",
-    "meta_description": "Australian scientists discover how magnetite in the Pilbara region can produce natural hydrogen for clean energy.",
-    "meta_keywords": "hydrogen, magnetite, Australia, Pilbara, green energy, iron ore, Edith Cowan University",
-    "link": "https://www.goodnewsnetwork.org/scientists-determine-australias-vast-red-deserts-could-fuel-a-hydrogen-powered-energy-revolution/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Classic-Australian-Pilbara-region-banded-iron-formations-credit-Edith-Cowan-University-released.jpg",
-    "date": "2026-09-16T16:40:35.027Z",
-    "category": "Science",
-    "score": 8
   }
 ]
