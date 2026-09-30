@@ -1452,3 +1452,21 @@ Niet bright-waardig: 2. Twijfel: 2.
 - **Waarom ik twijfel:** Wetenschappelijk en historisch interessant, en netjes geformuleerd zonder probleem-framing, maar het mist de warme, hoopgevende lading die het "goed gevoel"-criterium vraagt — het is vooral een feitelijke vondstmelding zonder mensen die geholpen worden of een verhaal dat je raakt. Ik zou het als grensgeval markeren: relevantie is prima, maar het gevoel blijft vlak.
 
 **Patroon:** twee van de vier vermelde items (de DoorDash-schikking en de Lioness-rechtszaak) draaien om een rechtszaak of overheidsdwang tegen een instelling wegens wangedrag jegens een kwetsbare groep. Beide voelen oprecht positief voor de gedupeerden, maar leunen tegen politiek beladen thema's (arbeidsrecht, gevangenisbeleid) aan waarbij "goed nieuws" afhangt van de politieke bril van de lezer. Het is de moeite waard om in de selectieprompt scherper te maken hoe dit soort "rechtszaak-als-herstel"-verhalen gewogen moeten worden ten opzichte van de politiek-categorie.
+
+### 2026-09-30, 09:53 Europe/Amsterdam
+
+Beoordeeld: 13 artikelen, gepubliceerd tussen 2026-09-29 17:49 en 2026-09-30 04:33.
+Niet bright-waardig: 1. Twijfel: 1.
+
+#### MacArthur Foundation kent 'genius grants' toe aan 20 wetenschappers en kunstenaars
+- **Gepubliceerd:** 2026-09-29 17:55 · Science · NPR.org
+- **Waar het over gaat:** Een opsomming van de twintig laureaten van de jaarlijkse MacArthur-fellowship, met korte vermeldingen van uiteenlopende vakgebieden: forensische antropologie, arbeidseconomie, klimaatwetenschap, sociologie en kunst.
+- **Waarom dit niet goed genoeg is:** Dit is in feite een verzameleditie in de vorm van één artikel — meerdere volstrekt niet-verwante onderwerpen (loonongelijkheid, klimaatmodellen, forensisch werk, kunst) worden alleen bij elkaar gezet omdat de subsidie ze toevallig verbindt. Er is geen doorlopend verhaal, geen kern die je kunt navertellen zonder een lijstje op te lezen. Dat is precies het "meerdere niet-verwante onderwerpen in één artikel"-kenmerk uit de afwijslijst. Het aparte artikel over Spradley (dat wél één samenhangend verhaal vertelt) staat hier los van en is prima bright-materiaal.
+- **Link:** /articles/nl/macarthur-foundation-kent-genius-grants-toe-aan-20-wetenschappers-en-kunstenaars-1790704517255qb72iuc08.html
+
+#### Twijfelgeval: Japan telt recordaantal van 107.677 honderdplussers
+- **Gepubliceerd:** 2026-09-29 17:51 · Health · OptimistDaily.com
+- **Waar het over gaat:** Officiële cijfers van het Japanse ministerie van Volksgezondheid laten zien dat het land voor het eerst meer dan 100.000 honderdplussers telt, met een historisch overzicht van de groei van dat aantal sinds 1963.
+- **Waarom ik twijfel:** Het is onmiskenbaar positief en maatschappelijk relevant (gezondheid, vergrijzing), maar er zit geen mens, gebeurtenis of verhaal in — het is een kaal statistiekbericht zonder herkenbare kern. Dat maakt het gevoel vlak in plaats van warm. Ik zou het laten staan omdat het feitelijk sterk en onomstreden positief is, maar het scheelt weinig met "te weinig inhoud"; graag het oordeel van Erik.
+
+**Patroon:** Twee keer leverde dezelfde bron op dezelfde nacht twee artikelen over vrijwel hetzelfde onderwerp: GoodGoodGood.co met twee losse olifant-adoptieverhalen (Talek en Daba) en NPR.org met zowel het individuele portret van Spradley als het bredere MacArthur-overzicht waarin zij opnieuw genoemd wordt. Bij de olifantenverhalen is dat geen probleem — het zijn twee echte, op zichzelf staande reddingsverhalen — maar bij NPR is het tweede artikel (het overzicht) inhoudelijk een verdunde, opgesomde herhaling van het eerste en had om die reden al bij de poort moeten sneuvelen.

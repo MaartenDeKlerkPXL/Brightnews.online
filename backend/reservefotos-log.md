@@ -100,3 +100,19 @@ Reservefoto's op 2026-09-29 — 150 artikelen op de homepage
 
 Totaal: 27 nodig, 43 beschikbaar.
 Geleend uit een andere categorie: 1 foto's. Dat valt nog niet op.
+
+### 2026-09-30
+
+Reservefoto's op 2026-09-30 — 149 artikelen op de homepage
+
+| Categorie | Beschikbaar | Nodig | Tekort |
+|---|---|---|---|
+| Environment | 10 | 11 | 1 |
+| Finance | 4 | 0 | — |
+| Health | 5 | 2 | — |
+| Lifestyle | 9 | 6 | — |
+| Science | 11 | 6 | — |
+| Tech | 4 | 0 | — |
+
+Totaal: 25 nodig, 43 beschikbaar.
+Geleend uit een andere categorie: 1 foto's. Dat valt nog niet op.

@@ -432,3 +432,10 @@ De lopende tekst leest natuurlijk en gebruikt consequent Brits Engels
 **Oordeel:** niets aangetroffen.
 
 De eigennamen (New York City Department of Consumer and Worker Protection, DCWP, DoorDash) blijven onvertaald, alle bedragen en aantallen komen overeen met het Nederlands, en de titelstijl volgt de normale Duitse hoofdlettterregels voor zelfstandige naamwoorden zonder verder woord met hoofdletter te beginnen. Kop en tekst spreken elkaar niet tegen en de vertaling loopt natuurlijk.
+
+### 2026-09-30, Frans
+
+**Artikel:** Asháninka-gemeenschap voorkomt bosbranden in Peru
+**Oordeel:** geen problemen aangetroffen.
+
+De titel gebruikt gewone zinsstijl, de eigennamen (Central Asháninka of the Ene River, CARE, Cool Earth, Romer Quentimari Garcia) blijven onvertaald, en er zijn geen toegevoegde feiten of ontbrekende elementen te zien in het beschikbare fragment. De tekst loopt natuurlijk en de kop dekt het verhaal.
