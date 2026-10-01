@@ -1,5 +1,201 @@
 [
   {
+    "id": "dg-20260930-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-09-30",
+    "title": "Atención, recuperación y regreso: las buenas noticias de estos días",
+    "summary": "Esta semana las buenas noticias en Lifestyle giran principalmente en torno a la atención: hacia los estudiantes, hacia los animales y las personas que necesitan recuperarse, hacia el arte que finalmente regresa a casa, y hacia los líderes que aprenden a escuchar mejor. Cuatro historias diferentes, pero siempre el mismo núcleo: quien mira y escucha bien, ve lo que es necesario. En Rhode Island, las clases de música tienen un efecto sorprendente en el absentismo escolar. Una investigación de Quadrant Research muestra que de los estudiantes que recibieron clases de música durante cuatro años, el 25,4 por ciento tenía ausencias...",
+    "image_alt": "Atención, recuperación y regreso: las buenas noticias de estos días",
+    "meta_description": "Clases de música contra el absentismo, un santuario de primates que ayuda a sanar, antigüedades griegas que regresan a casa y el poder de escuchar: las not",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abd2af75ca03452a19958cd_rhode-island-study-links-sustained-arts-education-01.jpg",
+    "date": "2026-10-01T18:17:11.468Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "1790829805595tcerjpnfc",
+        "title": "La educación musical se asocia con menos absentismo escolar en Rhode Island"
+      },
+      {
+        "id": "1790878357707kh42aq9k0",
+        "title": "Santuario de primates en Mississippi ayuda a veteranos y animales rescatados a sanar"
+      },
+      {
+        "id": "1790878309480irxn5zl52",
+        "title": "Antigüedades griegas robadas regresan a Grecia tras 5.000 años"
+      },
+      {
+        "id": "17908782525302uz6mdrsj",
+        "title": "El innovador social Ken Banks: escuchar hace mejores líderes"
+      }
+    ]
+  },
+  {
+    "id": "dg-20260930-environment",
+    "type": "digest",
+    "digest_date": "2026-09-30",
+    "title": "Vida nueva, rutas antiguas y un oso corpulento: las noticias de naturaleza de estos días",
+    "summary": "Esta semana demuestra que la naturaleza está recuperando espacio para restaurarse, crecer y ser celebrada en muchos lugares. Desde un rinoceronte huérfano en Kenia hasta un tren solar en los Andes, y desde una nueva cría de leopardo de las nieves hasta un oso que conquistó todos los corazones: las buenas noticias llegan de todos los rincones del mundo. En Alaska, el oso Backpack ganó el 30 de septiembre la Fat Bear Week del Katmai National Park and Reserve [4]. Obtuvo más de 100.000 votos y se adelantó por poco al Bear 910. El oso, de aproximadamente veinte años, recibió...",
+    "image_alt": "Vida nueva, rutas antiguas y un oso corpulento: las noticias de naturaleza de estos días",
+    "meta_description": "Desde un rinoceronte huérfano en Kenia hasta un tren solar en Argentina y un oso ganador en Alaska: las noticias positivas de naturaleza de finales de sept",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abe9e979fe86c2ea4f2601c_6abe9e952b26f0d09ffcb5b9_baby-rhino-chamboi-rescue-kenya-featured.webp",
+    "date": "2026-10-01T18:16:19.980Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1790878381747p9tmjsey9",
+        "title": "El rinoceronte huérfano Chamboi crece en un oasis de Kenia"
+      },
+      {
+        "id": "1790878333880u4o3ppvgq",
+        "title": "El tren solar revive una ancestral ruta de los Andes en Argentina"
+      },
+      {
+        "id": "1790829854660zgm6ulla0",
+        "title": "Nace cachorro de leopardo de las nieves en el Bronx Zoo"
+      },
+      {
+        "id": "1790878440611g98ouvpus",
+        "title": "Backpack gana Fat Bear Week y Google lo celebra con una animación"
+      },
+      {
+        "id": "1790878410748ijywqyc55",
+        "title": "La tortuga Pickett recupera su color natural tras ser pintada de azul"
+      }
+    ]
+  },
+  {
+    "id": "1790878463725e6mq4yj0y",
+    "title": "SpaceX lanza Crew-13 hacia la estación espacial internacional",
+    "summary": "Un cohete SpaceX Falcon 9 con la cápsula Dragon «Grace» fue lanzado desde la Estación de la Fuerza Espacial de Cabo Cañaveral en Florida con cuatro miembros de la tripulación para la misión Crew-13 de la NASA hacia la estación espacial internacional. A pesar de las preocupaciones por tormentas y fuertes ráfagas de viento, el lanzamiento se desarrolló sin problemas....",
+    "image_alt": "Cohete SpaceX Falcon 9 con cápsula Dragon despega desde Cabo Cañaveral con la tripulación de Crew-13 a bordo",
+    "meta_description": "SpaceX lanza Crew-13 de la NASA con cuatro astronautas hacia la estación espacial internacional desde Cabo Cañaveral.",
+    "meta_keywords": "SpaceX, Crew Dragon, NASA, Crew-13, ISS, Cabo Cañaveral, estación espacial, lanzamiento",
+    "link": "https://www.npr.org/2026/10/01/nx-s1-5987698/nasa-crew-13-spacex-international-space-station-iss",
+    "source": "NPR.org",
+    "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4153x2336+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fbe%2F12%2F29a56b2f41deabc5b8f65805d9f9%2Fgettyimages-2298077242.jpg",
+    "date": "2026-10-01T18:14:24.911Z",
+    "category": "Science",
+    "score": 8
+  },
+  {
+    "id": "1790878440611g98ouvpus",
+    "title": "Backpack gana Fat Bear Week y Google lo celebra con una animación",
+    "summary": "El oso Backpack ha ganado Fat Bear Week, el torneo en línea anual del Katmai National Park and Reserve en Alaska que desde 2014 atrae atención hacia la conservación de la naturaleza y atrae espectadores a las cámaras en directo del parque. Dieciséis grandes osos pardos compitieron en un sistema de eliminación directa, donde semanalmente el oso más popular avanzaba...",
+    "image_alt": "Un oso pardo gordo está de pie en el Brooks River en Katmai National Park, Alaska",
+    "meta_description": "Backpack gana Fat Bear Week 2024 en Alaska; Google honra el evento con una divertida animación interactiva.",
+    "meta_keywords": "Fat Bear Week, Backpack, Katmai National Park, oso pardo, Alaska, animación Google, conservación de la naturaleza, Brooks River",
+    "link": "https://www.goodgoodgood.co/articles/fat-bear-week-google-animation",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abd55a93ab2f53f35e97472_6abd55a801e452c3e7ee7738_fat-bear-week-google-animation-featured.webp",
+    "date": "2026-10-01T18:14:01.590Z",
+    "category": "Environment",
+    "score": 8
+  },
+  {
+    "id": "1790878410748ijywqyc55",
+    "title": "La tortuga Pickett recupera su color natural tras ser pintada de azul",
+    "summary": "En Campbellsville, Kentucky, la residente Venitia encontró una Eastern box turtle con una gruesa capa de pintura azul brillante en su caparazón en su nuevo patio trasero. Una vecina le contó que el anterior propietario había pintado deliberadamente a la tortuga, así como a otras tortugas, en rojo y blanco. Venitia llevó el animal al Wilderness Trail Wildlife Center en...",
+    "image_alt": "Una Eastern box turtle con el caparazón cubierto de pintura azul brillante, fotografiada durante la rehabilitación en un centro de vida silvestre.",
+    "meta_description": "La tortuga Pickett fue encontrada pintada de azul en Kentucky; expertos trabajan cuidadosamente en restaurar su camuflaje natural.",
+    "meta_keywords": "tortuga, Eastern box turtle, Kentucky, bienestar animal, rehabilitación de vida silvestre, eliminación de pintura, camuflaje",
+    "link": "https://www.goodgoodgood.co/articles/turtle-blue-painted-shell-rescued-kentucky",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abe9157ef01e1e620632c94_6abe915748eb306a277f0d66_turtle-blue-painted-shell-rescued-kentucky-featured.webp",
+    "date": "2026-10-01T18:13:32.210Z",
+    "category": "Environment",
+    "score": 8
+  },
+  {
+    "id": "1790878381747p9tmjsey9",
+    "title": "El rinoceronte huérfano Chamboi crece en un oasis de Kenia",
+    "summary": "El 6 de septiembre de 2023, los guardabosques de Tsavo Trust y Kenya Wildlife Service encontraron una cría de rinoceronte recién nacida sola en el Parque Nacional Tsavo West en Kenia. El pequeño animal, de apenas un día de edad y presuntamente nacido prematuramente, fue hallado hipoglucémico y temblando sin su madre cerca. Sheldrick Wildlife Trust lo rescató y lo...",
+    "image_alt": "El joven rinoceronte negro Chamboi con sus cuidadores en la Kaluku Neonate Nursery en Kenia",
+    "meta_description": "El rinoceronte huérfano Chamboi, rescatado como bebé de un día en Kenia, crece en un oasis con cuidadores y amigos animales.",
+    "meta_keywords": "Chamboi, rinoceronte negro, Sheldrick Wildlife Trust, Tsavo, Kenia, animal huérfano, rescate de rinoceronte",
+    "link": "https://www.goodgoodgood.co/articles/baby-rhino-chamboi-rescue-kenya",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abe9e979fe86c2ea4f2601c_6abe9e952b26f0d09ffcb5b9_baby-rhino-chamboi-rescue-kenya-featured.webp",
+    "date": "2026-10-01T18:13:03.851Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790878357707kh42aq9k0",
+    "title": "Santuario de primates en Mississippi ayuda a veteranos y animales rescatados a sanar",
+    "summary": "En Mississippi, April Stewart y su esposo, ambos veteranos, dirigen desde octubre de 2024 el Gulf Coast Primate Sanctuary. En el terreno de 15 hectáreas viven 22 primates rescatados, entre ellos monos araña, monos cara blanca y kinkajús, que frecuentemente provienen del tráfico ilegal de mascotas, entretenimiento, zoológicos o laboratorios. Un equipo de especialistas en primates y voluntarios los cuida...",
+    "image_alt": "Mono rescatado en un recinto exterior del Gulf Coast Primate Sanctuary en Mississippi",
+    "meta_description": "Santuario de primates en Mississippi rescata animales del tráfico ilegal y ayuda a veteranos con TEPT a recuperarse.",
+    "meta_keywords": "santuario de primates, Mississippi, veteranos, TEPT, primates, tráfico ilegal de mascotas, Gulf Coast Primate Sanctuary",
+    "link": "https://www.goodgoodgood.co/articles/gulf-coast-primate-sanctuary-monkey-rescue-veterans",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abea02698902f77d5d3a553_6abea02398902f77d5d3a49f_gulf-coast-primate-sanctuary-monkey-rescue-veterans-featured.webp",
+    "date": "2026-10-01T18:12:38.683Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "1790878333880u4o3ppvgq",
+    "title": "El tren solar revive una ancestral ruta de los Andes en Argentina",
+    "summary": "En la Quebrada de Humahuaca, un valle Patrimonio de la Humanidad de la UNESCO en la provincia argentina de Jujuy, circula desde junio de 2024 el Tren Solar de la Quebrada, el primer tren de energía solar de América Latina. El tren recorre 42 kilómetros entre seis pueblos, desde Volcán hasta Tilcara, por una ruta que lleva miles de años...",
+    "image_alt": "El tren solar Tren Solar circula por la Quebrada de Humahuaca en los Andes argentinos",
+    "meta_description": "El Tren Solar de Argentina devuelve el ferrocarril a un valle andino milenario, completamente con energía solar.",
+    "meta_keywords": "Tren Solar, Argentina, Jujuy, Quebrada de Humahuaca, energía solar, tren, Andes, transporte sostenible",
+    "link": "https://www.optimistdaily.com/2026/10/how-argentinas-battery-powered-tren-solar-is-recharging-an-ancient-andean-route/",
+    "source": "OptimistDaily.com",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/Tren_de_la_quebrada_01-1024x576.jpg",
+    "date": "2026-10-01T18:12:14.815Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790878309480irxn5zl52",
+    "title": "Antigüedades griegas robadas regresan a Grecia tras 5.000 años",
+    "summary": "Nueva York ha devuelto 15 obras de arte griegas antiguas, con un valor de millones de dólares, a Grecia. Las piezas, entre ellas dos cascos de bronce, placas abdominales de bronce, un busto de mármol de un emperador romano y una vasija de terracota, fueron descubiertas en el Metropolitan Museum of Art. Habían sido contrabandeadas y blanqueadas mediante procedencias falsas,...",
+    "image_alt": "Artefactos griegos antiguos devueltos, entre ellos cascos de bronce y un busto de mármol",
+    "meta_description": "15 artefactos griegos robados, de hasta 5.000 años de antigüedad, han sido devueltos a Grecia por Nueva York tras años de contrabando.",
+    "meta_keywords": "Grecia, arte robado, Metropolitan Museum, artefactos, repatriación, antigüedades",
+    "link": "https://www.goodnewsnetwork.org/stunning-collection-of-stolen-greek-artifacts-spanning-5000-years-were-just-returned-to-greece/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Greek-Ministry-of-Culture-released.jpg",
+    "date": "2026-10-01T18:11:50.603Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "17908782798106ax9e1mse",
+    "title": "Reactor chino logra fusión nuclear con hidrógeno-boro",
+    "summary": "Ingenieros chinos han logrado por primera vez en el mundo una fusión nuclear breve con hidrógeno-boro como combustible, una opción mucho más limpia y abundante que la mezcla convencional de deuterio-tritio. El grupo ENN Group, respaldado por el Estado, utilizó un láser y ondas de radio para generar plasma en un reactor tokamak esférico. En el proceso, un protón de...",
+    "image_alt": "Reactor tokamak esférico en el que ingenieros chinos lograron fusión nuclear con combustible de hidrógeno-boro",
+    "meta_description": "Reactor chino ENN Group logra primera fusión nuclear mundial con combustible limpio de hidrógeno-boro, sin radiación.",
+    "meta_keywords": "fusión nuclear, hidrógeno-boro, ENN Group, tokamak, China, energía limpia, plasma",
+    "link": "https://www.goodnewsnetwork.org/chinese-commercial-reactor-achieves-nuclear-fusion-with-clean-hydrogen-boron-fuel/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/ENN-Groups-EXL-50U-spherical-device-which-successfully-achieved-hydrogen-boron-fusion-reactions-credit-handout.jpg",
+    "date": "2026-10-01T18:11:21.204Z",
+    "category": "Science",
+    "score": 9
+  },
+  {
+    "id": "17908782525302uz6mdrsj",
+    "title": "El innovador social Ken Banks: escuchar hace mejores líderes",
+    "summary": "El innovador social Ken Banks sostiene que escuchar es una habilidad de liderazgo subestimada. Tras más de treinta años trabajando en conservación de la naturaleza, desarrollo internacional y tecnología, descubrió que las mejores lecciones no provenían de aportar soluciones, sino de darse cuenta de que la pregunta original era incorrecta. Durante su trabajo en África Oriental, vio que las comunidades...",
+    "image_alt": "Personas en conversación, escuchándose mutuamente como forma de liderazgo",
+    "meta_description": "El innovador social Ken Banks explica por qué escuchar es una habilidad de liderazgo crucial pero subestimada.",
+    "meta_keywords": "Ken Banks, liderazgo, escuchar, FrontlineSMS, desarrollo internacional, atención plena, innovación social",
+    "link": "https://www.positive.news/lifestyle/why-good-leaders-listen/",
+    "source": "Positive.News",
+    "image": "https://www.positive.news/wp-content/uploads/2026/09/iStock-2226795526-copy.jpg",
+    "date": "2026-10-01T18:10:55.802Z",
+    "category": "Lifestyle",
+    "score": 8
+  },
+  {
     "id": "1790829854660zgm6ulla0",
     "title": "Nace cachorro de leopardo de las nieves en el Bronx Zoo",
     "summary": "En el Bronx Zoo de Nueva York nació una cachorra hembra de leopardo de las nieves el 31 de mayo, hija de los progenitores Dariga y Moutig. La cachorra, llamada Sarka (nepalí para 'tiburón'), superó sus controles médicos y vacunaciones y ahora explora junto a su madre el recinto Himalayan Highlands del zoológico. El zoo alberga actualmente ocho leopardos de...",
@@ -2190,43 +2386,6 @@
     ]
   },
   {
-    "id": "dg-20260916-lifestyle",
-    "type": "digest",
-    "digest_date": "2026-09-16",
-    "title": "De osos a diamantes: las buenas noticias de esta semana",
-    "summary": "Estos días demuestran lo variado que puede ser una noticia positiva. Desde un encuentro inesperado en la naturaleza hasta un diamante que aparece accidentalmente dentro de una manzana, y desde edificios que se camuflan entre los árboles hasta un día en el que se recaudan millones de libras para obras benéficas. En conjunto, forman un panorama de personas que viven, comparten o devuelven algo extraordinario. Un hombre se encontró cara a cara con una osa grizzly y su cachorro durante un paseo en el Glacier National Park [1]. El oso se retiró, pero el momento despertó en el hombre recuerdos...",
-    "image_alt": "De osos a diamantes: las buenas noticias de esta semana",
-    "meta_description": "De un oso grizzly a un diamante oculto: las noticias positivas de estilo de vida del 16 de septiembre de 2026 resumidas.",
-    "meta_keywords": "Lifestyle",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://www.adventure-journal.com/wp-content/uploads/2026/08/GNAM_STEVEN-6123-684x1024.jpg",
-    "date": "2026-09-17T04:36:52.687Z",
-    "category": "Lifestyle",
-    "refs": [
-      {
-        "id": "1789587852097o5i3h66hb",
-        "title": "Confrontación con oso grizzly devuelve al hombre a su pasado en bandas"
-      },
-      {
-        "id": "1789586786470nofcj4hhu",
-        "title": "Diez edificios que se fusionan con la naturaleza"
-      },
-      {
-        "id": "17895861361353xl0joxxi",
-        "title": "La vela adaptada abre el mar a personas con discapacidad"
-      },
-      {
-        "id": "1789585955470athzntnbk",
-        "title": "Limpiadora muerde una manzana y descubre el diamante Grand Condé robado"
-      },
-      {
-        "id": "1789585589360an1gfz1cl",
-        "title": "BGC Group recauda 12 millones de libras en su Charity Day para organizaciones benéficas"
-      }
-    ]
-  },
-  {
     "id": "dg-20260916-environment",
     "type": "digest",
     "digest_date": "2026-09-16",
@@ -2476,145 +2635,5 @@
     "date": "2026-09-16T19:27:38.824Z",
     "category": "Lifestyle",
     "score": 8
-  },
-  {
-    "id": "1789586786470nofcj4hhu",
-    "title": "Diez edificios que se fusionan con la naturaleza",
-    "summary": "El World Architecture Festival (WAF) destaca este año edificios que se integran completamente en su entorno natural. Según el fundador Paul Finch, existe un creciente interés por incorporar la naturaleza en la arquitectura, a través de paisajes, balcones, terrazas y techos. Entre los proyectos nominados se encuentran un resort de Aslam Sham Architects con techos vegetados que camuflan el complejo,...",
-    "image_alt": "Edificio moderno con techo vegetado que se fusiona con el paisaje natural",
-    "meta_description": "El World Architecture Festival muestra diez edificios que se integran perfectamente en su entorno natural, desde Kerala hasta Miami.",
-    "meta_keywords": "arquitectura, World Architecture Festival, naturaleza, construcción sostenible, techos verdes, Paul Finch",
-    "link": "https://www.bbc.com/culture/article/20260907-10-stunning-buildings-blended-with-nature?ocid=global_culture_rss",
-    "source": "BBC.com/culture",
-    "image": "https://ychef.files.bbci.co.uk/800x450/p0p8cd91.jpg",
-    "date": "2026-09-16T19:26:27.911Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "17895865549041jzsjhr12",
-    "title": "Nueva especie de insecto nombrada en honor a Taylor Swift",
-    "summary": "Sarah Schroeder, doctoranda en entomología de la University of California, Riverside y declarada swiftie de toda la vida, ha nombrado un nuevo género de insectos en honor a Taylor Swift: Swiftiephylus. El 9 de septiembre publicó un estudio en la revista Brill en el que presenta 12 nuevas especies de insectos. Los insectos fitófagos australianos son amarillos con acentos rojos,...",
-    "image_alt": "Un insecto amarillo claro con acentos rojos, la especie recién descubierta Swiftiephylus nombrada en honor a Taylor Swift",
-    "meta_description": "Entomóloga nombra nueva especie de insecto en honor a Taylor Swift: Swiftiephylus, con cuatro especies inspiradas en sus canciones.",
-    "meta_keywords": "Taylor Swift, nueva especie de insecto, Swiftiephylus, entomología, taxonomía, conservación de la naturaleza, University of California Riverside",
-    "link": "https://www.goodgoodgood.co/articles/new-species-bug-named-after-taylor-swift",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa1a1aed5cae2561042f656_6aa1a1add5cae2561042f5a8_new-species-bug-named-after-taylor-swift-featured.webp",
-    "date": "2026-09-16T19:22:36.651Z",
-    "category": "Science",
-    "score": 9
-  },
-  {
-    "id": "1789586309732q90vwcvuu",
-    "title": "Nuevas directrices sobre infarto corrigen el infradiagnóstico en mujeres",
-    "summary": "Las cuatro principales organizaciones de salud cardiovascular del mundo han establecido por primera vez una definición universal de infarto de miocardio, anunciada en el congreso de la European Society of Cardiology en Múnich. Tres tipos de infarto que ocurren hasta diez veces más frecuentemente en mujeres reciben ahora la misma clasificación que el infarto causado por coágulos de sangre. Además,...",
-    "image_alt": "Médico observa monitor cardíaco durante examen de infarto en paciente",
-    "meta_description": "Nuevas directrices internacionales corrigen el infradiagnóstico de años de infartos en mujeres mediante clasificación adaptada y umbrales de pruebas de sangre.",
-    "meta_keywords": "infarto, mujeres, troponina, cardiología, diagnóstico, European Society of Cardiology, sanidad",
-    "link": "https://www.optimistdaily.com/2026/09/new-heart-attack-guidelines-correct-decades-of-under-diagnosis-in-women/",
-    "source": "OptimistDaily.com",
-    "image": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_212439798_L-1024x682.jpg",
-    "date": "2026-09-16T19:18:31.059Z",
-    "category": "Health",
-    "score": 10
-  },
-  {
-    "id": "1789586258486a9129lo8u",
-    "title": "Los castores restauran ecosistemas en Oregón",
-    "summary": "Oregón ha enfrentado durante los últimos veinte años la desaparición del salmón, incendios forestales y sequía. Los científicos descubrieron que las áreas con represas de castores albergaban mucho más salmón que las áreas sin ellas. Las represas de castores y sus brazos laterales constituían solo el nueve por ciento del hábitat, pero albergaban el 66 por ciento del salmón coho....",
-    "image_alt": "Un castor construye una represa en un río de Oregón",
-    "meta_description": "Los castores restauran hábitats de salmón y vías fluviales en Oregón tras siglos de ser considerados plagas.",
-    "meta_keywords": "castores, Oregón, salmón, ecosistema, gestión del agua, restauración natural, Beaver Works",
-    "link": "https://reasonstobecheerful.world/beavers-big-moment/",
-    "source": "ReasonsToBeCheerful.world",
-    "image": "https://reasonstobecheerful.world/wp-content/uploads/2026/09/Beaver-lodge-in-Sunriver-Oregon-djhumboldt-iNaturalist.jpg",
-    "date": "2026-09-16T19:17:39.690Z",
-    "category": "Environment",
-    "score": 8
-  },
-  {
-    "id": "17895861361353xl0joxxi",
-    "title": "La vela adaptada abre el mar a personas con discapacidad",
-    "summary": "En Baiona, España, la Adapted Sailing School del Monte Real Yacht Club ofrece desde 2012 lecciones de vela gratuitas a personas con discapacidades funcionales. Con la ayuda de sistemas de elevación y embarcaciones especialmente diseñadas GOS16 de dos plazas con quillas reforzadas, los participantes pueden navegar de forma segura. César Maquieira, quien utiliza silla de ruedas debido a una enfermedad...",
-    "image_alt": "Persona en silla de ruedas junto a una embarcación de vela adaptada en el puerto deportivo de Baiona",
-    "meta_description": "La escuela de vela adaptada en Baiona hace el mar accesible para personas con discapacidad gracias a embarcaciones especiales y lecciones gratuitas.",
-    "meta_keywords": "vela adaptada, handi-sailing, Monte Real Yacht Club, Baiona, accesibilidad, silla de ruedas, barco GOS16",
-    "link": "https://reasonstobecheerful.world/adapted-sailing-school/",
-    "source": "ReasonsToBeCheerful.world",
-    "image": "https://reasonstobecheerful.world/wp-content/uploads/2026/09/Credit-Monte-Real-Club-scaled.jpg",
-    "date": "2026-09-16T19:15:37.422Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "1789585955470athzntnbk",
-    "title": "Limpiadora muerde una manzana y descubre el diamante Grand Condé robado",
-    "summary": "En 1926, la camarera Suzanne Schiltz mordió una manzana en París sacada de la maleta de un huésped del hotel y se topó con algo duro: un diamante rosa del tamaño de una haba. Así resolvió sin saberlo el famoso robo de diamantes del Château de Chantilly, donde dos ladrones aficionados habían robado con solo una escalera el diamante Grand...",
-    "image_alt": "El diamante rosa Grand Condé, descubierto en una manzana tras un famoso robo",
-    "meta_description": "Cómo una limpiadora hambrienta descubrió en 1926 el diamante Grand Condé robado en una manzana.",
-    "meta_keywords": "diamante Grand Condé, Château de Chantilly, robo de diamantes, Musée Condé, diamante rosa, robo de arte",
-    "link": "https://www.goodnewsnetwork.org/a-hungry-cleaning-lady-bit-into-an-apple-and-solved-the-case-of-legendary-diamond-heist/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/The-Grande-Conde-diamond-credit-Benjamin-Chelly-Ecole-of-Jewelry-Arts-press-photo-e1789031159266.jpg",
-    "date": "2026-09-16T19:12:37.194Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "1789585879417ynho5tj0v",
-    "title": "La misión BepiColombo llega a Mercurio como tercera nave espacial",
-    "summary": "El 3 de septiembre, la Agencia Espacial Europea ESA celebró la llegada exitosa de su misión BepiColombo a Mercurio. Es apenas la tercera nave espacial que visita el planeta más interno de nuestro sistema solar. El viaje duró más de 8 años e incluyó 6 mil millones de millas, debido a la fuerte gravedad del sol que hace imposible un...",
-    "image_alt": "Ilustración de la sonda espacial BepiColombo a su llegada alrededor del planeta Mercurio",
-    "meta_description": "La misión BepiColombo de la ESA llega exitosamente a Mercurio tras un viaje de 8 años y 6 mil millones de millas.",
-    "meta_keywords": "BepiColombo, Mercurio, ESA, JAXA, astronáutica, Mercury Transfer Module, misión espacial",
-    "link": "https://www.goodnewsnetwork.org/humanitys-3rd-visit-to-mercury-kicks-off-with-the-successful-arrival-of-bepicolombo-mission/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/PICTURED-BepiColombo-arriving-at-Mercury-in-an-illustration.-PC-ESA-Standard-Licence-Copy.webp",
-    "date": "2026-09-16T19:11:21.638Z",
-    "category": "Science",
-    "score": 8
-  },
-  {
-    "id": "1789585765262uc56lz1sv",
-    "title": "Primer rastro de T. rex adulto descubierto en North Dakota",
-    "summary": "Científicos han confirmado el primer rastro conocido de un T. rex adulto: cuatro huellas tridáctilas de aproximadamente 90 centímetros cada una, encontradas en terrenos federales cerca de Marmarth, North Dakota. La serie de 7 metros de largo, descubierta por el cazador de fósiles aficionado y profesor Kent Hups, data de hace aproximadamente 66,5 millones de años y ha sido descrita...",
-    "image_alt": "Huella tridáctila de un T. rex adulto en roca en North Dakota",
-    "meta_description": "Primer rastro de un T. rex adulto descubierto en North Dakota por el cazador de fósiles aficionado y profesor Kent Hups.",
-    "meta_keywords": "T. rex, dinosaurio, rastro, North Dakota, formación Hell Creek, paleontología, Denver Museum of Nature & Science",
-    "link": "https://www.goodnewsnetwork.org/massive-footprints-reveal-first-ever-adult-t-rex-trackway/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/T-rex-trackway-discovered-credit-Tyler-Lyson-cropped-released.jpeg",
-    "date": "2026-09-16T19:09:26.995Z",
-    "category": "Science",
-    "score": 8
-  },
-  {
-    "id": "1789585690477bfnmq9za6",
-    "title": "Un martín pescador se posa en la mano de una mujer tras pedir una señal",
-    "summary": "Laura O'Brien, una trabajadora de mantenimiento de parques de 24 años de la Frome Town Council en Somerset, Inglaterra, acababa de 'pedir una señal' cuando de repente un martín pescador se posó en su mano. El ave permaneció diez minutos mientras ella regaba las flores. Contó a SWNS news que estaba sorprendida, porque el martín pescador euroasiático normalmente es tímido...",
-    "image_alt": "Martín pescador con plumas azules y pecho naranja posado en la mano de una mujer",
-    "meta_description": "Martín pescador se posa en la mano de la trabajadora Laura O'Brien y permanece diez minutos. Un momento extraordinario y mágico.",
-    "meta_keywords": "martín pescador, Laura O'Brien, Somerset, Frome Town Council, ave, Inglaterra, naturaleza, momento mágico",
-    "link": "https://www.goodnewsnetwork.org/woman-asked-for-a-sign-and-a-kingfisher-sits-on-her-hand/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Euro-kingfisher-bird-in-hand-SWNS-cropped.jpeg",
-    "date": "2026-09-16T19:08:12.169Z",
-    "category": "Lifestyle",
-    "score": 8
-  },
-  {
-    "id": "1789585642057cofti0iw9",
-    "title": "Los aerogeneradores dan a ganadero de Kansas la mitad de sus ingresos",
-    "summary": "En 2006 entró en funcionamiento en las Flint Hills de Kansas el mayor proyecto de energía eólica del estado. El ganadero Peter Ferrell, cuarta generación en sus tierras desde 1888, permitió instalar 50 turbinas en su propiedad. Las regalías que genera han representado desde entonces la mitad de sus ingresos y lo protegen contra la volatilidad de la ganadería. Gracias...",
-    "image_alt": "Aerogeneradores en las tierras de pastoreo de un ganadero en las Flint Hills, Kansas",
-    "meta_description": "Los aerogeneradores dan al ganadero de Kansas Peter Ferrell la mitad de sus ingresos y hacen posible la transferencia sin deudas.",
-    "meta_keywords": "energía eólica, Kansas, Flint Hills, ganadero, Elk River Wind Power, agricultura sostenible, aerogeneradores",
-    "link": "https://www.goodnewsnetwork.org/wind-turbines-have-made-up-half-this-ranchers-income-since-fateful-choice-to-allow-them-on-his-land/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/credit-supplied-to-the-Environmental-Defense-Fund-as-a-courtesy-by-Pete-Ferrell.jpg",
-    "date": "2026-09-16T19:07:24.204Z",
-    "category": "Environment",
-    "score": 9
   }
 ]
