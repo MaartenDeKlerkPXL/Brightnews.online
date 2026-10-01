@@ -6,13 +6,29 @@
         <atom:link href="https://brightnews.online/feed-en.xml" rel="self" type="application/rss+xml"/>
         <description>A fresh pick of good news from around the world, every day. Enjoy the read!</description>
         <language>en-us</language>
-        <lastBuildDate>Wed, 30 Sep 2026 17:50:53 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 01 Oct 2026 04:44:16 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Your Daily Dose of Positivity</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Snow leopard cub Sarka born at Bronx Zoo</title>
+            <link>https://brightnews.online/articles/en/snow-leopard-cub-sarka-born-at-bronx-zoo-1790829854660zgm6ulla0.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/snow-leopard-cub-sarka-born-at-bronx-zoo-1790829854660zgm6ulla0.html</guid>
+            <pubDate>Thu, 01 Oct 2026 04:44:16 GMT</pubDate>
+            <description>A female snow leopard cub has been born at the Bronx Zoo in New York on May 31, as the daughter of parents Dariga and Moutig. The cub, named Sarka (Nepali for &apos;shark&apos;), passed her medical examinations and vaccinations and is now exploring the Himalayan Highlands habitat of the zoo alongside her mother. The zoo currently houses eight snow leopards....</description>
+            <enclosure url="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abd4d555bfb5d042440d3c2_6abd4d543cda952857dabeec_bronx-zoo-snow-leopard-cub-featured.webp" type="image/jpeg" length="0"/>
+        </item>
+        <item>
+            <title>Music education linked to lower school absenteeism in Rhode Island</title>
+            <link>https://brightnews.online/articles/en/music-education-linked-to-lower-school-absenteeism-in-rhode-island-1790829805595tcerjpnfc.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/music-education-linked-to-lower-school-absenteeism-in-rhode-island-1790829805595tcerjpnfc.html</guid>
+            <pubDate>Thu, 01 Oct 2026 04:43:28 GMT</pubDate>
+            <description>A new study by Quadrant Research, commissioned by the Rhode Island State Council on the Arts, shows that students who take music lessons for four years are chronically absent from school less often. Among four-year music students, 25.4% were chronically absent, compared to 37.3% of students without four consecutive years of music. For arts subjects in general, the difference was...</description>
+            <enclosure url="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abd2af75ca03452a19958cd_rhode-island-study-links-sustained-arts-education-01.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Giving takes center stage: from diapers to socks and a new home</title>
             <link>https://brightnews.online/articles/en/giving-takes-center-stage-from-diapers-to-socks-and-a-new-home-dg-20260929-lifestyle.html</link>
@@ -235,21 +251,6 @@
             <pubDate>Mon, 28 Sep 2026 19:30:19 GMT</pubDate>
             <description>This week shows that good intentions lead to results in very different places: in a courtroom, in a classroom and in a clothing factory. From Texas to Bristol, from the Bronx to Ghana: people are taking steps that genuinely improve the lives of others. In Texas, formerly incarcerated women won a long-fought battle. The group Lioness Justice Impacted Women&apos;s Alliance spent years collecting letters </description>
             <enclosure url="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab985d54c7299bd38813ae1_2741910254-921a85b985-b-featured.webp" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Saving, preserving and protecting: this week&apos;s science news</title>
-            <link>https://brightnews.online/articles/en/saving-preserving-and-protecting-this-week-s-science-news-dg-20260927-science.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/saving-preserving-and-protecting-this-week-s-science-news-dg-20260927-science.html</guid>
-            <pubDate>Mon, 28 Sep 2026 19:29:11 GMT</pubDate>
-            <description>These days show how science and perseverance can save things that would otherwise be lost. From ancient treasures to bees, and from peace to young talent: everywhere people are stepping up to keep something precious safe. A new study reveals how archaeologists in Syria risked their lives to rescue some 30,000 irreplaceable pieces from the Deir ez-Zor Museum, just before ISIS threatened to take the</description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Evacuation-of-art-crates-from-Deir-ez-Zor-Museum-during-Syria-war-SWNS-cropped.jpeg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Young scientists shine at EUCYS in Kiel</title>
-            <link>https://brightnews.online/articles/en/young-scientists-shine-at-eucys-in-kiel-1790623693825gvtmjwuzh.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/young-scientists-shine-at-eucys-in-kiel-1790623693825gvtmjwuzh.html</guid>
-            <pubDate>Mon, 28 Sep 2026 19:28:15 GMT</pubDate>
-            <description>During the 37th European Union Contest for Young Scientists (EUCYS), which concluded on 27 September in Kiel, Germany, young researchers were honoured for their innovative work. Some 140 participants aged 14 to 20 from nearly 40 countries presented projects on topics including biology, mathematics, cancer research and medical technology. Four projects won the main prize of €7,000 each: PlantLeaf f</description>
         </item>
     </channel>
 </rss>

@@ -1,5 +1,53 @@
 [
  {
+  "datum": "2026-10-01T04:43:03.061Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "New Gobi Desert Fossil Rewrites a Chapter of Mammal Evolution",
+  "uitsluiting": "geen",
+  "gevoel": 1,
+  "formulering": 2,
+  "relevantie": 3,
+  "totaal": 6,
+  "besluit": "nee",
+  "reden": "Maatschappelijk relevant (wetenschap), maar de kern is technisch en abstract; geen warm of hoopvol gevoel voor een gewone lezer."
+ },
+ {
+  "datum": "2026-10-01T04:43:03.061Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "New study links sustained arts education to lower chronic absenteeism in schools",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 4,
+  "totaal": 10,
+  "besluit": "ja",
+  "reden": "Hartverwarmend verhaal over een toegewijde leraar en concrete impact van kunstonderwijs op scholieren; volledig positief geformuleerd en zeer relevant."
+ },
+ {
+  "datum": "2026-10-01T04:43:03.061Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "Fat Bear Week just crowned its winner. Google is celebrating with a viral animation",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Vrolijk, herkenbaar verhaal over een geliefde beer en conservatieawareness; positief geformuleerd en maatschappelijk relevant voor natuurbescherming."
+ },
+ {
+  "datum": "2026-10-01T04:43:03.061Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "An adorable new snow leopard cub was just born at the Bronx Zoo: 'One of the world's most elusive big cats'",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Hartverwarmend verhaal over een zeldzame sneeuwluipaard-geboorte en conservatiewinst; volledig positief geformuleerd en relevant voor dierenbescherming."
+ },
+ {
   "datum": "2026-09-30T17:44:48.101Z",
   "bron": "Positive.News",
   "titel": "I stopped reading bad news for 48 hours. Here’s what happened",
@@ -3550,53 +3598,5 @@
   "totaal": 10,
   "besluit": "ja",
   "reden": "Hartverwarmend verhaal van milieurestauratie met bipartisane steun, zeer relevant voor natuur en gemeenschap."
- },
- {
-  "datum": "2026-09-16T19:04:40.166Z",
-  "bron": "GoodNewsNetwork.org",
-  "titel": "Humanity’s 3rd Visit to Mercury Kicks Off with the Successful Arrival of BepiColombo Mission",
-  "uitsluiting": "geen",
-  "gevoel": 2,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 8,
-  "besluit": "ja",
-  "reden": "Inspirerend ruimteverkenningsnieuws, positief geformuleerd en maatschappelijk relevant voor wetenschap."
- },
- {
-  "datum": "2026-09-16T19:04:40.166Z",
-  "bron": "GoodNewsNetwork.org",
-  "titel": "A Hungry Cleaning Lady Bit into an Apple and Solved the Case of Legendary Diamond Heist",
-  "uitsluiting": "geen",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "Hartverwarmend verhaal van onverwachte redding van kunstschat door gewone persoon, goed geformuleerd en herkenbaar."
- },
- {
-  "datum": "2026-09-16T19:04:40.166Z",
-  "bron": "GoodNewsNetwork.org",
-  "titel": "Indie Comic Creator Sells Out Thanks to Viral Visit from Reviewer Who Stopped When Others Didn’t",
-  "uitsluiting": "geen",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 2,
-  "totaal": 8,
-  "besluit": "ja",
-  "reden": "Inspirerend verhaal van gemeenschapsteun en carrièregroei via sociale media, positief geformuleerd maar beperkt maatschappelijk bereik."
- },
- {
-  "datum": "2026-09-16T19:04:40.166Z",
-  "bron": "ReasonsToBeCheerful.world",
-  "titel": "What We’re Reading: 20,000 Salmon Return to the Klamath River",
-  "uitsluiting": "verzameleditie",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Dit is een weekoverzicht ('What We're Reading') van andermans content, geen eigen verhaal."
  }
 ]

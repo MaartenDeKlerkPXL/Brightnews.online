@@ -1,10 +1,26 @@
 {
- "gegenereerd": "2026-09-30T17:50:53.604Z",
+ "gegenereerd": "2026-10-01T04:44:17.864Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "1790829805595tcerjpnfc",
+     "titel": "Muziekonderwijs hangt samen met minder schoolverzuim in Rhode Island",
+     "teaser": "Een nieuw onderzoek van Quadrant Research, in opdracht van de Rhode Island State Council on the Arts, laat zien dat leerlingen die vier jaar lang muziekles volgen minder vaak chronisch afwezig zijn op school. Van de vierjarige muziekleerlingen was 25,4% chronisch afwezig, tegenover 37,3% van leerlingen zonder vier opeenvolgende jaren muziek. Voor kunstvakken in het algemeen was het verschil veel...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/muziekonderwijs-hangt-samen-met-minder-schoolverzuim-in-rhode-island-1790829805595tcerjpnfc.html"
+    },
+    {
+     "id": "1790829854660zgm6ulla0",
+     "titel": "Sneeuwluipaardwelp Sarka geboren in Bronx Zoo",
+     "teaser": "In de Bronx Zoo in New York is een vrouwelijke sneeuwluipaardwelp geboren op 31 mei, als dochter van ouders Dariga en Moutig. De welp, Sarka genaamd (Nepalees voor 'haai'), doorstond haar medische controles en vaccinaties en verkent nu samen met haar moeder het Himalayan Highlands-verblijf van de dierentuin. De zoo telt momenteel acht sneeuwluipaarden. De sneeuwluipaard geldt als een van...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/sneeuwluipaardwelp-sarka-geboren-in-bronx-zoo-1790829854660zgm6ulla0.html"
+    },
     {
      "id": "1790790490678v6e4byyna",
      "titel": "Roodpotige kikker keert terug in Yosemite na 50 jaar afwezigheid",
@@ -28,22 +44,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/olifantje-korbessa-gered-uit-put-wordt-koningin-van-kaluku-1790790432773ek5eaddeb.html"
-    },
-    {
-     "id": "1790790404248qshlqgb5x",
-     "titel": "Dolly Parton's Imagination Library verdubbelt bereik in Londen",
-     "teaser": "Dolly Parton's Imagination Library, dat sinds 1995 gratis boeken stuurt naar kinderen onder de vijf jaar, breidt uit in Londen. Het programma groeit van vijf naar tien van de 32 Londense boroughs, waardoor 157.000 extra kinderen elke maand een gratis boek kunnen ontvangen. De uitbreiding werd aangekondigd minder dan een maand na Partons overlijden dit jaar. Jeff Conyers, president van...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/dolly-parton-s-imagination-library-verdubbelt-bereik-in-londen-1790790404248qshlqgb5x.html"
-    },
-    {
-     "id": "179079038205726bbynee2",
-     "titel": "Olijfkleurige Zeeschildpadden Nestelen Voor Eerst Op Westkust",
-     "teaser": "Voor het eerst zijn olijfkleurige zeeschildpadden (olive ridley) gesignaleerd terwijl ze nesten bouwden op de Amerikaanse westkust. Een vrouwtje legde eieren op Seal Beach, drie dagen later volgde een tweede op Huntington Beach. Wetenschapper Lindsey Peavey Reeves noemde het onverwacht. NOAA en Fish and Wildlife Service plaatsten netten en afzettingen ter bescherming. Door extreme vloed en de orkanen Polo en...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/olijfkleurige-zeeschildpadden-nestelen-voor-eerst-op-westkust-179079038205726bbynee2.html"
     }
    ],
    "dagoverzichten": [
@@ -74,32 +74,27 @@
      "categorie": "Science",
      "dag": "2026-09-28",
      "url": "https://brightnews.online/articles/nl/beurzen-voor-moedig-onderzoek-en-een-naam-voor-een-oeroude-amfibie-dg-20260928-science.html"
-    },
-    {
-     "id": "dg-20260927-environment",
-     "titel": "Een weeshippo, een koel park en tropisch fruit: het milieunieuws van deze dagen",
-     "categorie": "Environment",
-     "dag": "2026-09-27",
-     "url": "https://brightnews.online/articles/nl/een-weeshippo-een-koel-park-en-tropisch-fruit-het-milieunieuws-van-deze-dagen-dg-20260927-environment.html"
-    },
-    {
-     "id": "dg-20260927-lifestyle",
-     "titel": "Van gevangeniscellen tot schoolbanken: het goede nieuws van deze dagen",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-27",
-     "url": "https://brightnews.online/articles/nl/van-gevangeniscellen-tot-schoolbanken-het-goede-nieuws-van-deze-dagen-dg-20260927-lifestyle.html"
-    },
-    {
-     "id": "dg-20260927-science",
-     "titel": "Redden, bewaren en beschermen: het wetenschapsnieuws van deze week",
-     "categorie": "Science",
-     "dag": "2026-09-27",
-     "url": "https://brightnews.online/articles/nl/redden-bewaren-en-beschermen-het-wetenschapsnieuws-van-deze-week-dg-20260927-science.html"
     }
    ]
   },
   "en": {
    "top": [
+    {
+     "id": "1790829805595tcerjpnfc",
+     "titel": "Music education linked to lower school absenteeism in Rhode Island",
+     "teaser": "A new study by Quadrant Research, commissioned by the Rhode Island State Council on the Arts, shows that students who take music lessons for four years are chronically absent from school less often. Among four-year music students, 25.4% were chronically absent, compared to 37.3% of students without four consecutive years of music. For arts subjects in general, the difference was...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/music-education-linked-to-lower-school-absenteeism-in-rhode-island-1790829805595tcerjpnfc.html"
+    },
+    {
+     "id": "1790829854660zgm6ulla0",
+     "titel": "Snow leopard cub Sarka born at Bronx Zoo",
+     "teaser": "A female snow leopard cub has been born at the Bronx Zoo in New York on May 31, as the daughter of parents Dariga and Moutig. The cub, named Sarka (Nepali for 'shark'), passed her medical examinations and vaccinations and is now exploring the Himalayan Highlands habitat of the zoo alongside her mother. The zoo currently houses eight snow leopards....",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/snow-leopard-cub-sarka-born-at-bronx-zoo-1790829854660zgm6ulla0.html"
+    },
     {
      "id": "1790790490678v6e4byyna",
      "titel": "Red-legged frog returns to Yosemite after 50-year absence",
@@ -123,22 +118,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/en/baby-elephant-korbessa-rescued-from-well-becomes-queen-of-kaluku-1790790432773ek5eaddeb.html"
-    },
-    {
-     "id": "1790790404248qshlqgb5x",
-     "titel": "Dolly Parton's Imagination Library doubles reach in London",
-     "teaser": "Dolly Parton's Imagination Library, which has been sending free books to children under five since 1995, is expanding in London. The programme is growing from five to ten of London's 32 boroughs, enabling 157,000 additional children to receive a free book each month. The expansion was announced less than a month after Parton's death this year. Jeff Conyers, president of...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/dolly-parton-s-imagination-library-doubles-reach-in-london-1790790404248qshlqgb5x.html"
-    },
-    {
-     "id": "179079038205726bbynee2",
-     "titel": "Olive ridley sea turtles nest for first time on US West Coast",
-     "teaser": "For the first time, olive ridley sea turtles have been spotted nesting on the American West Coast. A female laid eggs at Seal Beach, and three days later another did the same at Huntington Beach. Scientist Lindsey Peavey Reeves called it unexpected. NOAA and Fish and Wildlife Service installed nets and barriers for protection. Due to extreme tides and hurricanes...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/olive-ridley-sea-turtles-nest-for-first-time-on-us-west-coast-179079038205726bbynee2.html"
     }
    ],
    "dagoverzichten": [
@@ -169,32 +148,27 @@
      "categorie": "Science",
      "dag": "2026-09-28",
      "url": "https://brightnews.online/articles/en/grants-for-bold-research-and-a-name-for-an-ancient-amphibian-dg-20260928-science.html"
-    },
-    {
-     "id": "dg-20260927-environment",
-     "titel": "A baby hippo, a cool park and tropical fruit: the environmental news of these days",
-     "categorie": "Environment",
-     "dag": "2026-09-27",
-     "url": "https://brightnews.online/articles/en/a-baby-hippo-a-cool-park-and-tropical-fruit-the-environmental-news-of-these-days-dg-20260927-environment.html"
-    },
-    {
-     "id": "dg-20260927-lifestyle",
-     "titel": "From prison cells to school desks: the good news of these days",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-27",
-     "url": "https://brightnews.online/articles/en/from-prison-cells-to-school-desks-the-good-news-of-these-days-dg-20260927-lifestyle.html"
-    },
-    {
-     "id": "dg-20260927-science",
-     "titel": "Saving, preserving and protecting: this week's science news",
-     "categorie": "Science",
-     "dag": "2026-09-27",
-     "url": "https://brightnews.online/articles/en/saving-preserving-and-protecting-this-week-s-science-news-dg-20260927-science.html"
     }
    ]
   },
   "de": {
    "top": [
+    {
+     "id": "1790829805595tcerjpnfc",
+     "titel": "Musikunterricht hängt mit weniger Schulfehlzeiten in Rhode Island zusammen",
+     "teaser": "Eine neue Studie von Quadrant Research im Auftrag des Rhode Island State Council on the Arts zeigt, dass Schüler, die vier Jahre lang Musikunterricht erhalten, seltener chronisch in der Schule abwesend sind. Von den vierjährigen Musikschülern waren 25,4% chronisch abwesend, gegenüber 37,3% der Schüler ohne vier aufeinanderfolgende Jahre Musikunterricht. Bei Kunstfächern insgesamt war der Unterschied deutlich geringer: 1,9 Prozentpunkte. Der...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/musikunterricht-hangt-mit-weniger-schulfehlzeiten-in-rhode-island-zusammen-1790829805595tcerjpnfc.html"
+    },
+    {
+     "id": "1790829854660zgm6ulla0",
+     "titel": "Schneeleopardenjunges Sarka im Bronx Zoo geboren",
+     "teaser": "Im Bronx Zoo in New York wurde am 31. Mai ein weibliches Schneeleopardenjunges geboren, die Tochter der Eltern Dariga und Moutig. Das Jungtier, Sarka genannt (Nepalesisch für „Hai\"), bestand seine medizinischen Untersuchungen und Impfungen und erkundet nun zusammen mit seiner Mutter das Himalayan Highlands-Gehege des Zoos. Der Zoo beherbergt derzeit acht Schneeleoparden. Der Schneeleopard gilt als eine der scheuestens großen...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/schneeleopardenjunges-sarka-im-bronx-zoo-geboren-1790829854660zgm6ulla0.html"
+    },
     {
      "id": "1790790490678v6e4byyna",
      "titel": "Rotbauchige Frösche kehren nach 50 Jahren nach Yosemite zurück",
@@ -218,22 +192,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/de/elefantenbaby-korbessa-aus-brunnen-gerettet-wird-konigin-von-kaluku-1790790432773ek5eaddeb.html"
-    },
-    {
-     "id": "1790790404248qshlqgb5x",
-     "titel": "Dolly Partons Imagination Library verdoppelt ihre Reichweite in London",
-     "teaser": "Dolly Partons Imagination Library, die seit 1995 kostenlose Bücher an Kinder unter fünf Jahren versendet, expandiert in London. Das Programm wächst von fünf auf zehn der 32 Londoner Bezirke, wodurch 157.000 zusätzliche Kinder jeden Monat ein kostenloses Buch erhalten können. Die Expansion wurde weniger als einen Monat nach Partons Tod in diesem Jahr angekündigt. Jeff Conyers, Präsident der Dollywood Foundation,...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/dolly-partons-imagination-library-verdoppelt-ihre-reichweite-in-london-1790790404248qshlqgb5x.html"
-    },
-    {
-     "id": "179079038205726bbynee2",
-     "titel": "Olivfarbene Meeresschildkröten nisten erstmals an der Westküste",
-     "teaser": "Zum ersten Mal wurden olivfarbene Meeresschildkröten (olive ridley) dabei beobachtet, wie sie Nester an der amerikanischen Westküste bauten. Ein Weibchen legte Eier am Seal Beach, drei Tage später folgte ein zweites am Huntington Beach. Die Wissenschaftlerin Lindsey Peavey Reeves bezeichnete dies als unerwartet. NOAA und Fish and Wildlife Service stellten Netze und Absperrungen zum Schutz auf. Aufgrund extremer Flut und...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/olivfarbene-meeresschildkroten-nisten-erstmals-an-der-westkuste-179079038205726bbynee2.html"
     }
    ],
    "dagoverzichten": [
@@ -264,32 +222,27 @@
      "categorie": "Science",
      "dag": "2026-09-28",
      "url": "https://brightnews.online/articles/de/stipendien-fur-mutige-forschung-und-ein-name-fur-ein-uraltes-lurch-dg-20260928-science.html"
-    },
-    {
-     "id": "dg-20260927-environment",
-     "titel": "Ein Flusspferd-Baby, ein kühler Park und tropische Früchte: die Umweltnachrichten dieser Tage",
-     "categorie": "Environment",
-     "dag": "2026-09-27",
-     "url": "https://brightnews.online/articles/de/ein-flusspferd-baby-ein-kuhler-park-und-tropische-fruchte-die-umweltnachrichten-dg-20260927-environment.html"
-    },
-    {
-     "id": "dg-20260927-lifestyle",
-     "titel": "Von Gefängniszellen bis zu Schulbänken: die guten Nachrichten dieser Tage",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-27",
-     "url": "https://brightnews.online/articles/de/von-gefangniszellen-bis-zu-schulbanken-die-guten-nachrichten-dieser-tage-dg-20260927-lifestyle.html"
-    },
-    {
-     "id": "dg-20260927-science",
-     "titel": "Retten, bewahren und schützen: die Wissenschaftsnachrichten dieser Woche",
-     "categorie": "Science",
-     "dag": "2026-09-27",
-     "url": "https://brightnews.online/articles/de/retten-bewahren-und-schutzen-die-wissenschaftsnachrichten-dieser-woche-dg-20260927-science.html"
     }
    ]
   },
   "fr": {
    "top": [
+    {
+     "id": "1790829805595tcerjpnfc",
+     "titel": "L'enseignement musical est associé à moins d'absentéisme scolaire à Rhode Island",
+     "teaser": "Une nouvelle étude de Quadrant Research, commandée par le Rhode Island State Council on the Arts, montre que les élèves qui suivent des cours de musique pendant quatre ans sont moins souvent absents de manière chronique à l'école. Parmi les élèves musiciens sur quatre ans, 25,4 % étaient absents de manière chronique, contre 37,3 % chez les élèves sans quatre...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/l-enseignement-musical-est-associe-a-moins-d-absenteisme-scolaire-a-rhode-island-1790829805595tcerjpnfc.html"
+    },
+    {
+     "id": "1790829854660zgm6ulla0",
+     "titel": "Un léopard des neiges né à la Bronx Zoo",
+     "teaser": "À la Bronx Zoo de New York, un léopard des neiges femelle est né le 31 mai, fils des parents Dariga et Moutig. Le petit, nommé Sarka (« requin » en népalais), a réussi ses examens médicaux et ses vaccinations et explore désormais avec sa mère l'enclos Himalayan Highlands du zoo. Le zoo compte actuellement huit léopards des neiges. Le...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/un-leopard-des-neiges-ne-a-la-bronx-zoo-1790829854660zgm6ulla0.html"
+    },
     {
      "id": "1790790490678v6e4byyna",
      "titel": "La grenouille à pattes rouges fait son retour à Yosemite après 50 ans d'absence",
@@ -313,22 +266,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/fr/le-bebe-elephant-korbessa-sauve-d-un-puits-devient-reine-de-kaluku-1790790432773ek5eaddeb.html"
-    },
-    {
-     "id": "1790790404248qshlqgb5x",
-     "titel": "Dolly Parton's Imagination Library double sa portée à Londres",
-     "teaser": "Dolly Parton's Imagination Library, qui envoie gratuitement des livres aux enfants de moins de cinq ans depuis 1995, s'étend à Londres. Le programme passe de cinq à dix des 32 arrondissements londoniens, permettant à 157 000 enfants supplémentaires de recevoir chaque mois un livre gratuit. L'expansion a été annoncée moins d'un mois après le décès de Parton cette année. Jeff...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/dolly-parton-s-imagination-library-double-sa-portee-a-londres-1790790404248qshlqgb5x.html"
-    },
-    {
-     "id": "179079038205726bbynee2",
-     "titel": "Des tortues olivâtres nichent pour la première fois sur la côte ouest américaine",
-     "teaser": "Pour la première fois, des tortues olivâtres (olive ridley) ont été signalées en train de construire des nids sur la côte ouest américaine. Une femelle a pondu des œufs à Seal Beach, trois jours plus tard une deuxième a suivi à Huntington Beach. La scientifique Lindsey Peavey Reeves a qualifié cela d'inattendu. La NOAA et le Fish and Wildlife Service...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/des-tortues-olivatres-nichent-pour-la-premiere-fois-sur-la-cote-ouest-americaine-179079038205726bbynee2.html"
     }
    ],
    "dagoverzichten": [
@@ -359,32 +296,27 @@
      "categorie": "Science",
      "dag": "2026-09-28",
      "url": "https://brightnews.online/articles/fr/des-bourses-pour-la-recherche-courageuse-et-un-nom-pour-un-amphibien-prehistoriq-dg-20260928-science.html"
-    },
-    {
-     "id": "dg-20260927-environment",
-     "titel": "Un bébé hippopotame, un parc rafraîchissant et des fruits tropicaux : les bonnes nouvelles environnementales de ces jours-ci",
-     "categorie": "Environment",
-     "dag": "2026-09-27",
-     "url": "https://brightnews.online/articles/fr/un-bebe-hippopotame-un-parc-rafraichissant-et-des-fruits-tropicaux-les-bonnes-no-dg-20260927-environment.html"
-    },
-    {
-     "id": "dg-20260927-lifestyle",
-     "titel": "Des cellules de prison aux bancs d'école : les bonnes nouvelles de ces jours-ci",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-27",
-     "url": "https://brightnews.online/articles/fr/des-cellules-de-prison-aux-bancs-d-ecole-les-bonnes-nouvelles-de-ces-jours-ci-dg-20260927-lifestyle.html"
-    },
-    {
-     "id": "dg-20260927-science",
-     "titel": "Sauver, préserver et protéger : l'actualité scientifique de la semaine",
-     "categorie": "Science",
-     "dag": "2026-09-27",
-     "url": "https://brightnews.online/articles/fr/sauver-preserver-et-proteger-l-actualite-scientifique-de-la-semaine-dg-20260927-science.html"
     }
    ]
   },
   "es": {
    "top": [
+    {
+     "id": "1790829805595tcerjpnfc",
+     "titel": "La educación musical se asocia con menos absentismo escolar en Rhode Island",
+     "teaser": "Un nuevo estudio de Quadrant Research, encargado por el Rhode Island State Council on the Arts, muestra que los estudiantes que reciben clases de música durante cuatro años tienen menos ausencias crónicas en la escuela. Entre los estudiantes de música de cuatro años, el 25,4% faltaba crónicamente, en comparación con el 37,3% de los estudiantes sin cuatro años consecutivos de...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/la-educacion-musical-se-asocia-con-menos-absentismo-escolar-en-rhode-island-1790829805595tcerjpnfc.html"
+    },
+    {
+     "id": "1790829854660zgm6ulla0",
+     "titel": "Nace cachorro de leopardo de las nieves en el Bronx Zoo",
+     "teaser": "En el Bronx Zoo de Nueva York nació una cachorra hembra de leopardo de las nieves el 31 de mayo, hija de los progenitores Dariga y Moutig. La cachorra, llamada Sarka (nepalí para 'tiburón'), superó sus controles médicos y vacunaciones y ahora explora junto a su madre el recinto Himalayan Highlands del zoológico. El zoo alberga actualmente ocho leopardos de...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/nace-cachorro-de-leopardo-de-las-nieves-en-el-bronx-zoo-1790829854660zgm6ulla0.html"
+    },
     {
      "id": "1790790490678v6e4byyna",
      "titel": "La rana de patas rojas regresa a Yosemite tras 50 años de ausencia",
@@ -408,22 +340,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/es/elefantita-korbessa-rescatada-de-un-pozo-se-convierte-en-reina-de-kaluku-1790790432773ek5eaddeb.html"
-    },
-    {
-     "id": "1790790404248qshlqgb5x",
-     "titel": "Dolly Parton's Imagination Library duplica su alcance en Londres",
-     "teaser": "Dolly Parton's Imagination Library, que desde 1995 envía libros gratuitos a niños menores de cinco años, se expande en Londres. El programa crece de cinco a diez de los 32 distritos londinenses, lo que permite que 157.000 niños adicionales reciban un libro gratuito cada mes. La expansión se anunció menos de un mes después de la muerte de Parton este...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/dolly-parton-s-imagination-library-duplica-su-alcance-en-londres-1790790404248qshlqgb5x.html"
-    },
-    {
-     "id": "179079038205726bbynee2",
-     "titel": "Tortugas marinas oliváceas anidan por primera vez en la costa oeste",
-     "teaser": "Por primera vez se han detectado tortugas marinas oliváceas (olive ridley) construyendo nidos en la costa oeste estadounidense. Una hembra puso huevos en Seal Beach, tres días después otra lo hizo en Huntington Beach. La científica Lindsey Peavey Reeves calificó el hecho de inesperado. NOAA y Fish and Wildlife Service instalaron redes y barreras de protección. Debido a mareas extremas...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/tortugas-marinas-olivaceas-anidan-por-primera-vez-en-la-costa-oeste-179079038205726bbynee2.html"
     }
    ],
    "dagoverzichten": [
@@ -454,27 +370,6 @@
      "categorie": "Science",
      "dag": "2026-09-28",
      "url": "https://brightnews.online/articles/es/becas-para-la-investigacion-valiente-y-un-nombre-para-un-anfibio-ancestral-dg-20260928-science.html"
-    },
-    {
-     "id": "dg-20260927-environment",
-     "titel": "Un hipopótamo bebé, un parque fresco y frutas tropicales: las noticias ambientales de estos días",
-     "categorie": "Environment",
-     "dag": "2026-09-27",
-     "url": "https://brightnews.online/articles/es/un-hipopotamo-bebe-un-parque-fresco-y-frutas-tropicales-las-noticias-ambientales-dg-20260927-environment.html"
-    },
-    {
-     "id": "dg-20260927-lifestyle",
-     "titel": "De celdas de prisión a pupitres escolares: las buenas noticias de estos días",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-27",
-     "url": "https://brightnews.online/articles/es/de-celdas-de-prision-a-pupitres-escolares-las-buenas-noticias-de-estos-dias-dg-20260927-lifestyle.html"
-    },
-    {
-     "id": "dg-20260927-science",
-     "titel": "Salvar, conservar y proteger: las noticias científicas de esta semana",
-     "categorie": "Science",
-     "dag": "2026-09-27",
-     "url": "https://brightnews.online/articles/es/salvar-conservar-y-proteger-las-noticias-cientificas-de-esta-semana-dg-20260927-science.html"
     }
    ]
   }
