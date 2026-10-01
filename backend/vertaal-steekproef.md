@@ -439,3 +439,8 @@ De eigennamen (New York City Department of Consumer and Worker Protection, DCWP,
 **Oordeel:** geen problemen aangetroffen.
 
 De titel gebruikt gewone zinsstijl, de eigennamen (Central Asháninka of the Ene River, CARE, Cool Earth, Romer Quentimari Garcia) blijven onvertaald, en er zijn geen toegevoegde feiten of ontbrekende elementen te zien in het beschikbare fragment. De tekst loopt natuurlijk en de kop dekt het verhaal.
+
+### 2026-10-01, Spaans
+
+**Artikel:** Chris Evans helpt hondenduo Greg en Carley aan nieuw baasje
+**Oordeel:** niets aangetroffen, vertaling is correct en loopt natuurlijk.

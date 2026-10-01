@@ -1470,3 +1470,48 @@ Niet bright-waardig: 1. Twijfel: 1.
 - **Waarom ik twijfel:** Het is onmiskenbaar positief en maatschappelijk relevant (gezondheid, vergrijzing), maar er zit geen mens, gebeurtenis of verhaal in — het is een kaal statistiekbericht zonder herkenbare kern. Dat maakt het gevoel vlak in plaats van warm. Ik zou het laten staan omdat het feitelijk sterk en onomstreden positief is, maar het scheelt weinig met "te weinig inhoud"; graag het oordeel van Erik.
 
 **Patroon:** Twee keer leverde dezelfde bron op dezelfde nacht twee artikelen over vrijwel hetzelfde onderwerp: GoodGoodGood.co met twee losse olifant-adoptieverhalen (Talek en Daba) en NPR.org met zowel het individuele portret van Spradley als het bredere MacArthur-overzicht waarin zij opnieuw genoemd wordt. Bij de olifantenverhalen is dat geen probleem — het zijn twee echte, op zichzelf staande reddingsverhalen — maar bij NPR is het tweede artikel (het overzicht) inhoudelijk een verdunde, opgesomde herhaling van het eerste en had om die reden al bij de poort moeten sneuvelen.
+
+### 2026-10-01, 10:15 Europe/Amsterdam
+
+Beoordeeld: 10 artikelen, gepubliceerd tussen 2026-09-30 17:45 en 2026-10-01 04:44.
+Niet bright-waardig: 1. Twijfel: 1.
+
+#### Horizon Europe krijgt 500 miljoen euro extra voor onderzoek en innovatie
+- **Gepubliceerd:** 2026-09-30 17:48 · Science · Openaccessgovernment.org
+- **Waar het over gaat:** De Europese Commissie trekt 500 miljoen euro extra uit
+  voor het Horizon Europe-programma in 2026-2027, onder meer voor oproepen rond
+  biodiversiteit en een natuurpositieve economie.
+- **Waarom dit niet goed genoeg is:** Dit is in de kern een begrotingsbericht:
+  bedragen, programmanamen en verdeling over oproepen, zonder een mens, dier of
+  concrete gebeurtenis waar een lezer iets bij voelt. Het is maatschappelijk
+  relevant (wetenschap, onderzoek), maar mist de warmte en de positieve
+  formulering die de selectieprompt vraagt — het leest als een persbericht over
+  subsidieverdeling, niet als een verhaal. Daardoor haalt het op "goed gevoel"
+  niet de ondergrens, ook al is de relevantie op zich voldoende.
+- **Link:** n.v.t. (id: 179079052264500q9jt7s6)
+
+#### Twijfelgeval: The Bulwark haalt ruim $400.000 op voor Haïtianen in Springfield
+- **Gepubliceerd:** 2026-09-30 17:47 · Lifestyle · GoodGoodGood.co
+- **Waar het over gaat:** Een liveshow van media-outlet The Bulwark bracht geld
+  op voor het Haitian Support Center in Springfield, Ohio, dat de Haïtiaanse
+  gemeenschap daar helpt met voedsel, vervoer en juridische bijstand, in de
+  context van een ICE-handhavingsactie en een uitspraak van het Hooggerechtshof
+  over het intrekken van tijdelijke beschermde status.
+- **Waarom ik twijfel:** De kern — mensen die geld inzamelen om een gemeenschap
+  in nood te helpen — is precies het soort gemeenschapszin dat de kernregel
+  juist wél toelaat, vergelijkbaar met het ijkvoorbeeld van fans die geld
+  inzamelen voor een opgelicht kind. Tegelijk is het verhaal doordrenkt van
+  politieke lading: ICE-acties, de Trump-regering en een rechterlijke uitspraak
+  over beschermde status worden expliciet genoemd als reden waarom de hulp
+  nodig is. Dat maakt het een verhaal dat alleen als onverdeeld positief
+  aanvoelt als je er een bepaalde politieke kijk op nahoudt — precies de toets
+  uit de afwijslijst. Ik zou dit afkeuren als politiek gekleurd, maar leg het
+  met twijfel voor omdat de hulpactie zelf oprecht gemeenschapsgericht is.
+- **Link:** n.v.t. (id: 1790790463292h7qtw4jt5)
+
+De overige acht artikelen (Chris Evans en het hondenduo, de wetland-golfbaan,
+de nestelende zeeschildpadden, Dolly Parton's Imagination Library, het geredde
+olifantje Korbessa, de teruggekeerde roodpotige kikker, het onderzoek naar
+muziekonderwijs en schoolverzuim, en de geboorte van sneeuwluipaardwelp Sarka)
+voldoen ruim aan de maatstaf: eigen, afgeronde verhalen met een warme kern,
+positief geformuleerd en maatschappelijk of persoonlijk relevant.
