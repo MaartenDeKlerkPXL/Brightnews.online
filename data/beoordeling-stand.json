@@ -1,6 +1,6 @@
 {
-  "laatsteRun": "2026-10-01T08:15:36.340Z",
-  "laatsteArtikelDatum": "2026-10-01T04:44:16.824Z",
-  "aantalBeoordeeld": 10,
-  "reservefotosTabel": "| Categorie | Beschikbaar | Nodig | Tekort |\n|---|---|---|---|\n| Environment | 10 | 12 | 2 |\n| Finance | 4 | 0 | — |\n| Health | 5 | 2 | — |\n| Lifestyle | 9 | 7 | — |\n| Science | 11 | 5 | — |\n| Tech | 4 | 0 | — |\n\nTotaal: 26 nodig, 43 beschikbaar.\nGeleend uit een andere categorie: 2 foto's. Knelt bij Environment (2).\nAanvullen in `assets/fallback/` als `<categorie>-<nummer>.jpg`, en daarna het getal in `RESERVE_PER_CATEGORIE` in `index.js` mee ophogen."
+  "laatsteRun": "2026-10-02T07:53:49.613Z",
+  "laatsteArtikelDatum": "2026-10-02T04:35:46.556Z",
+  "aantalBeoordeeld": 12,
+  "reservefotosTabel": "| Categorie | Beschikbaar | Nodig | Tekort |\n|---|---|---|---|\n| Environment | 10 | 13 | 3 |\n| Finance | 4 | 0 | — |\n| Health | 5 | 2 | — |\n| Lifestyle | 9 | 6 | — |\n| Science | 11 | 6 | — |\n| Tech | 4 | 0 | — |\n\nTotaal: 27 nodig, 43 beschikbaar.\nGeleend uit een andere categorie: 3 foto's. Knelt bij Environment (3).\nAanvullen in `assets/fallback/` als `<categorie>-<nummer>.jpg`, en daarna het getal in `RESERVE_PER_CATEGORIE` in `index.js` mee ophogen."
 }

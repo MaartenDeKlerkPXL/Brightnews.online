@@ -1515,3 +1515,19 @@ olifantje Korbessa, de teruggekeerde roodpotige kikker, het onderzoek naar
 muziekonderwijs en schoolverzuim, en de geboorte van sneeuwluipaardwelp Sarka)
 voldoen ruim aan de maatstaf: eigen, afgeronde verhalen met een warme kern,
 positief geformuleerd en maatschappelijk of persoonlijk relevant.
+
+### 2026-10-02, 09:53 Europe/Amsterdam
+
+Beoordeeld: 12 artikelen, gepubliceerd tussen 2026-10-01 20:10 en 2026-10-02 06:35.
+Niet bright-waardig: 1. Twijfel: 1.
+
+#### SpaceX lanceert Crew-13 naar internationaal ruimtestation
+- **Gepubliceerd:** 2026-10-01 20:14 · Science · NPR.org
+- **Waar het over gaat:** Een SpaceX Falcon 9 met de Dragon-capsule 'Grace' is gelanceerd vanaf Cape Canaveral met vier bemanningsleden voor NASA's Crew-13-missie naar het ISS. De lancering verliep goed ondanks zorgen over onweer en wind.
+- **Waarom dit niet goed genoeg is:** Dit is een feitelijk verslag van een routinematige bedrijfslancering (SpaceX) zonder transformatief of hartverwarmend element. Er wordt niemand geholpen, niets hersteld en er zit geen doorbraak in die levens verbetert — het is in de kern bedrijfs- en missienieuws, vergelijkbaar met de productnieuws-categorie uit de afwijslijst: knap en indrukwekkend, maar geen BrightNews-verhaal. De formulering is overwegend neutraal-technisch, niet positief van toon.
+- **Link:** (zie data/news_nl.json, id 1790878463725e6mq4yj0y)
+
+#### Twijfelgeval: Social innovator Ken Banks: luisteren maakt leiders beter
+- **Gepubliceerd:** 2026-10-01 20:10 · Lifestyle · Positive.News
+- **Waar het over gaat:** Ken Banks reflecteert op dertig jaar werk in natuurbehoud, ontwikkeling en technologie en betoogt dat luisteren de belangrijkste onderschatte leiderschapsvaardigheid is, geïllustreerd met ervaringen uit Oost-Afrika.
+- **Waarom ik twijfel:** Er zit een persoonlijk, inhoudelijk verhaal in met een concrete aanleiding (zijn werk in Oost-Afrika), maar de insteek is vooral een advies-column over leiderschap zonder nieuwsgebeurtenis — dat raakt de listicle/zelfhulp-categorie uit de afwijslijst. Ik zou geneigd zijn hem te laten staan vanwege de echte ervaring erachter, maar het format trekt richting "dit moet je weten over leiderschap". Oordeel van Erik gewenst.

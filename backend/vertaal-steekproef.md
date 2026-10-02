@@ -444,3 +444,10 @@ De titel gebruikt gewone zinsstijl, de eigennamen (Central Asháninka of the Ene
 
 **Artikel:** Chris Evans helpt hondenduo Greg en Carley aan nieuw baasje
 **Oordeel:** niets aangetroffen, vertaling is correct en loopt natuurlijk.
+
+### 2026-10-02, Engels
+
+**Artikel:** Social innovator Ken Banks: listening makes better leaders
+**Oordeel:** niets aangetroffen.
+
+De vertaling volgt het Nederlands nauwkeurig: geen toegevoegde feiten, eigennamen blijven staan, titelstijl is correcte Engelse zinsstijl, en de tekst loopt natuurlijk.
