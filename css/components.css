@@ -282,6 +282,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* vh = viewport height (100% van het scherm) */
+    min-height: 100dvh; /* iOS Safari: zonder adresbalk meegerekend (punt 64) */
     margin: 0;         /* Weg met die witte randen! */
 }
 
@@ -889,6 +890,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Pak minimaal de volledige hoogte van de viewport */
+    min-height: 100dvh; /* iOS Safari: zonder adresbalk meegerekend (punt 64) */
 }
 
 /* 3. De 'magie': duw de footer naar de onderkant */
@@ -1369,6 +1371,10 @@ body {
     border-radius: 10px;
     background: var(--light-bg);
     font: inherit;
+    /* Minimaal 16px: iOS Safari zoomt in zodra je een kleiner veld aantikt en
+       zoomt daarna niet terug. Gemeten vóór deze regel: tekstvak 14,72px,
+       e-mailveld 13,12px (punt 64). max() houdt een grotere erfgrootte heel. */
+    font-size: max(16px, 1em);
     font-weight: 400;
     color: var(--dark-text);
     resize: vertical;

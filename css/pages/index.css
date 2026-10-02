@@ -12,6 +12,7 @@
        zonder deze regel stond de footer eerst bovenin en werd hij daarna
        een heel scherm omlaag geduwd (CLS 0.85). */
     min-height: 100vh;
+    min-height: 100dvh; /* iOS Safari: zonder adresbalk meegerekend (punt 64) */
 }
 
 .news-card {

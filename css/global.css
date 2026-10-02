@@ -192,6 +192,14 @@ button, input, select, textarea, optgroup {
     font-family: inherit;
 }
 
+/* Vangnet voor elk tóékomstig invoerveld zonder eigen lettergrootte: onder
+   16px zoomt iOS Safari in bij het aantikken (punt 64). Lage specificiteit
+   met opzet — een class die een eigen grootte zet wint gewoon, dus dit
+   verandert niets aan bestaande velden. */
+input, select, textarea {
+    font-size: max(16px, 1em);
+}
+
 /* 3. Basis Instellingen */
 html {
     scroll-behavior: smooth;

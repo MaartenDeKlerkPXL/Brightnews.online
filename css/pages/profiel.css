@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - 160px); /* Vult scherm minus nav/footer */
+    min-height: calc(100dvh - 160px); /* iOS Safari: zonder adresbalk meegerekend (punt 64) */
     padding: var(--space-4xl) var(--space-xl);
     background: linear-gradient(180deg, var(--white) 0%, var(--green-tint) 100%); /* Zachte groene gloed onderin */
 }
@@ -171,6 +172,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    min-height: 100dvh; /* iOS Safari: zonder adresbalk meegerekend (punt 64) */
     margin: 0;
 }
 

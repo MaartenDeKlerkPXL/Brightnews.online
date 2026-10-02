@@ -1258,6 +1258,31 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      `--text-base` is 15,2px en `--text-sm` 13,6px. Elk veld met die tokens
      is verdacht.
 
+  ### ✅ Twee van de vijf gerepareerd (2026-10-02)
+
+  **Verdachte 1 — `100vh`.** Onder elk van de acht échte `100vh`-regels
+  (`components.css` ×2, `pages/index.css`, `pages/profiel.css` ×2, en inline
+  in `index.html`, `binnenkort.html` en `thanks.html`) staat nu een
+  `100dvh`-tweeling. Een browser die `dvh` niet kent negeert die regel en
+  houdt `vh`, dus er kan niets achteruitgaan. Gemeten op 375×812: `dvh`
+  ondersteund, toegepast op het parkeerbericht, `body` en het artikelraster,
+  minimumhoogte exact de schermhoogte, geen horizontale scroll.
+
+  **Verdachte 5 — invoervelden onder 16px.** Eerst gemeten in plaats van
+  aangenomen: de zeven velden op `profiel.html` zaten al op precies 16px.
+  **De twee op `feedback.html` niet** — het tekstvak op 14,72px en het
+  e-mailveld op 13,12px. Die erfden hun grootte via `font: inherit`. Nu
+  `font-size: max(16px, 1em)`; daarna alle negen velden op 16px. Plus een
+  vangnet in `global.css` voor toekomstige velden, met lage specificiteit
+  zodat het niets aan bestaande velden verandert.
+
+  `CACHE_NAME` → v38 (`global.css`, `components.css` en `index.html` staan in
+  de precache).
+
+  **Nog open: verdachte 2, 3 en 4** (`backdrop-filter`, de vaste
+  navigatiebalk, `safe-area-inset`). Die geven elk een ander symptoom, en
+  daar is de melding van Maarten voor nodig: welke pagina en wát er misgaat.
+
   ### Waarom dit vóór de lancering moet
 
   Het grootste deel van je publiek komt via een telefoon binnen, en op een
