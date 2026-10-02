@@ -1,5 +1,76 @@
 [
   {
+    "id": "dg-20261001-science",
+    "type": "digest",
+    "digest_date": "2026-10-01",
+    "title": "Clean energy, a launch and more research funding",
+    "summary": "The days around October 1, 2026 demonstrate how broad scientific progress can be: from a breakthrough in energy generation to a crew on its way to the space station and more funding for European research. Three stories, three very different scales, but all focused on what knowledge and collaboration can deliver. In China, nuclear fusion has been achieved for the first time using hydrogen-boron as fuel, a cleaner and more abundantly available option than the conventional mix of deuterium and tritium [1]. The state-backed ENN Group generated plasma using lasers and radio waves in a spherical reactor, where hydrogen and...",
+    "image_alt": "Clean energy, a launch and more research funding",
+    "meta_description": "The days around October 1, 2026 demonstrate how broad scientific progress can be: from a breakthrough in energy generation to a crew on its way to the spac",
+    "meta_keywords": "Science",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/ENN-Groups-EXL-50U-spherical-device-which-successfully-achieved-hydrogen-boron-fusion-reactions-credit-handout.jpg",
+    "date": "2026-10-02T04:37:10.716Z",
+    "category": "Science",
+    "refs": [
+      {
+        "id": "17908782798106ax9e1mse",
+        "title": "Chinese reactor achieves nuclear fusion with hydrogen-boron"
+      },
+      {
+        "id": "1790878463725e6mq4yj0y",
+        "title": "SpaceX launches Crew-13 to international space station"
+      },
+      {
+        "id": "179079052264500q9jt7s6",
+        "title": "Horizon Europe receives €500 million extra for research and innovation"
+      }
+    ]
+  },
+  {
+    "id": "1790915745699jdltmr09h",
+    "title": "Extended paternity leave improves mother and baby health",
+    "summary": "A father took several weeks of paternity leave when his second child was born. During that time, he became more confident in his role as primary caregiver and built connections with other parents in his neighbourhood. Research shows that longer leave for the parent who gave birth, combined with moderate leave for their partner, improves babies' mental health and reduces...",
+    "image_alt": "Father with baby during paternity leave",
+    "meta_description": "Paternity leave improves the health of mother and baby and creates a more balanced distribution of family tasks.",
+    "meta_keywords": "paternity leave, parental leave, postpartum health, breastfeeding, family life, fathers",
+    "link": "https://www.goodgoodgood.co/articles/benefits-of-paternal-leave-policies",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abea24c311dd07800e88db3_6abea24b8c97d764568e439a_benefits-of-paternal-leave-policies-featured.webp",
+    "date": "2026-10-02T04:35:46.556Z",
+    "category": "Health",
+    "score": 10
+  },
+  {
+    "id": "1790915722910dy2bhv992",
+    "title": "Retired FBI agent saves 100-year-old apple trees from extinction",
+    "summary": "Since his retirement in 2012, former FBI agent Dave Benscoter from Washington has been searching for nearly extinct apple varieties in the northwestern United States. After pruning trees at a parishioner's home, he discovered unknown apple species and delved into natural studies, family recipes, and old newspaper articles from agricultural fairs. Together with Joanie Cooper and Sean Shepherd from the...",
+    "image_alt": "Old apple tree in an orchard with ripe apples",
+    "meta_description": "Former FBI agent Dave Benscoter has been tracking down nearly extinct apple varieties for 20 years through the Lost Apple Project.",
+    "meta_keywords": "Lost Apple Project, Dave Benscoter, apple trees, endangered apple varieties, Washington, DNA identification, Kittageskee",
+    "link": "https://www.goodgoodgood.co/articles/fbi-agent-retired-lost-apple-project",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abec7f5a9d9e28bb0e30156_6abec7f4d9fecf0aa42e3252_fbi-agent-retired-lost-apple-project-featured.webp",
+    "date": "2026-10-02T04:35:23.918Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790915698438o8uvk9fkv",
+    "title": "Sycamore Gap tree shows new shoots over a meter tall three years after felling",
+    "summary": "Three years after the illegal felling of the famous Sycamore Gap tree at Hadrian's Wall in Northumberland, new aerial photographs reveal that the stump is flourishing. Around the stump, a thick ring of new shoots has emerged, now reaching between two and three feet (approximately 60 to 90 centimetres) in height. Andrew Poad of the National Trust says that special...",
+    "image_alt": "Aerial photograph of the Sycamore Gap tree stump with a ring of new green shoots",
+    "meta_description": "Three years after the felling of the Sycamore Gap tree, new shoots over a metre tall are growing around the stump.",
+    "meta_keywords": "Sycamore Gap, Hadrian's Wall, National Trust, tree restoration, Northumberland, illegal felling",
+    "link": "https://www.goodnewsnetwork.org/flourishing-sycamore-gap-tree-has-ring-of-new-shoots-already-3-feet-tall/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/overlooking-the-sycamore-gap-stump-on-hadrians-wall.-credit-nt-images-annapurna-mellor.jpg",
+    "date": "2026-10-02T04:35:01.048Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
     "id": "dg-20260930-lifestyle",
     "type": "digest",
     "digest_date": "2026-09-30",
@@ -2180,39 +2251,6 @@
     "score": 9
   },
   {
-    "id": "dg-20260917-lifestyle",
-    "type": "digest",
-    "digest_date": "2026-09-17",
-    "title": "Silence, nature and a funny fox: the good life this week",
-    "summary": "These days, the Lifestyle section is all about something simple: people taking a closer look at nature, or becoming very still to feel it. Four stories, four ways to escape the hustle and bustle, with animals, silence and camping spots taking centre stage. In London, the immersive art experience Frameless is celebrating ten years of the Nikon Comedy Wildlife Photography Awards [1]. From 12 September, 91 funny photographs will be projected at full size, spread across seven natural environments, complete with the sound of waves and rustling leaves. For ten years, the competition has let people see animals differently through...",
-    "image_alt": "Silence, nature and a funny fox: the good life this week",
-    "meta_description": "From silent retreats to laughing animals: the positive lifestyle news of 17 September 2026 in one overview.",
-    "meta_keywords": "Lifestyle",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://www.positive.news/wp-content/uploads/2026/09/comedy-main.jpg",
-    "date": "2026-09-18T04:22:53.597Z",
-    "category": "Lifestyle",
-    "refs": [
-      {
-        "id": "17895875188314h0muykwt",
-        "title": "Ten years of Comedy Wildlife Photography Awards on display in London"
-      },
-      {
-        "id": "1789587495792ia5rvdpa9",
-        "title": "Self-confessed chatterbox finds peace on silent retreat in Eastbourne"
-      },
-      {
-        "id": "178958685689366bsxvshy",
-        "title": "Choosing a campsite follows age-old prospect-refuge theory"
-      },
-      {
-        "id": "1789585690477bfnmq9za6",
-        "title": "Kingfisher lands on woman's hand after she wished for a sign"
-      }
-    ]
-  },
-  {
     "id": "dg-20260917-environment",
     "type": "digest",
     "digest_date": "2026-09-17",
@@ -2592,48 +2630,6 @@
     "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/credit-Jerry-Vandiver-retrieved-from-Facebook.jpg",
     "date": "2026-09-16T19:39:13.834Z",
     "category": "Environment",
-    "score": 8
-  },
-  {
-    "id": "17895875188314h0muykwt",
-    "title": "Ten years of Comedy Wildlife Photography Awards on display in London",
-    "summary": "This autumn, the immersive art experience Frameless in London celebrates ten years of the Nikon Comedy Wildlife Photography Awards. From 12 September, 91 of the funniest and most memorable photographs from the competition will be projected at full size. The images are spread across seven natural habitats, from coastlines to forests and grasslands, with spatial sound of waves and rustling...",
-    "image_alt": "A brown bear pulls a funny face in the snow in Finland, part of the Comedy Wildlife Photography Awards",
-    "meta_description": "Ten years of Comedy Wildlife Photography Awards celebrated in new immersive experience Frameless in London, from 12 September.",
-    "meta_keywords": "Comedy Wildlife Photography Awards, Frameless London, wildlife photography, biodiversity, immersive experience, Nikon",
-    "link": "https://www.positive.news/environment/celebrating-10-years-of-the-nikon-comedy-wildlife-photography-awards/",
-    "source": "Positive.News",
-    "image": "https://www.positive.news/wp-content/uploads/2026/09/comedy-main.jpg",
-    "date": "2026-09-16T19:38:42.215Z",
-    "category": "Lifestyle",
-    "score": 8
-  },
-  {
-    "id": "1789587495792ia5rvdpa9",
-    "title": "Self-confessed chatterbox finds peace on silent retreat in Eastbourne",
-    "summary": "Angela Garwood, a self-confessed chatterbox, spent a weekend on a device-free silent retreat at Gayles, a converted family farmhouse in Eastbourne on the Sussex coast. After 36 hours without speaking, she swam in the sea by the white chalk cliffs of the Seven Sisters. The retreat, led by yoga teacher and former psychotherapist Roz Robinson (66), has rules such as...",
-    "image_alt": "Participants swim silently in the sea by the white cliffs of the Seven Sisters during a silent retreat",
-    "meta_description": "How a chatterbox found silence on a device-free retreat near Eastbourne, between the Seven Sisters cliffs.",
-    "meta_keywords": "silent retreat, Eastbourne, Gayles, Seven Sisters, yoga, mindfulness, digital detox, Sussex",
-    "link": "https://www.positive.news/lifestyle/the-sound-of-stillness-what-happened-when-i-stopped-filling-the-silence/",
-    "source": "Positive.News",
-    "image": "https://www.positive.news/wp-content/uploads/2026/09/Gayles_Retreats_Images_Them_Studio-6-copy-1800x0-c-centermain.jpeg",
-    "date": "2026-09-16T19:38:18.476Z",
-    "category": "Lifestyle",
-    "score": 8
-  },
-  {
-    "id": "178958685689366bsxvshy",
-    "title": "Choosing a campsite follows age-old prospect-refuge theory",
-    "summary": "During a backpacking trip in autumn 2025, a group of ten people with five dogs celebrated their friend Ace's birthday in a remote canyon in Utah, near a hundred-foot-high natural arch. Each person chose their own campsite: some by an alcove, others on a small hill or against a canyon wall. A year later, the author still remembers exactly where...",
-    "image_alt": "Backpackers set up camp near a large natural arch in a canyon in Utah",
-    "meta_description": "Backpackers choose campsites according to age-old prospect-refuge theory during birthday trip in Utah canyon.",
-    "meta_keywords": "prospect-refuge theory, backpacking, Utah canyon, Jay Appleton, campsite, natural arch",
-    "link": "https://www.adventure-journal.com/intro-42/",
-    "source": "Adventure-Journal.com",
-    "image": "/assets/fallback/lifestyle-2.jpg",
-    "date": "2026-09-16T19:27:38.824Z",
-    "category": "Lifestyle",
     "score": 8
   }
 ]

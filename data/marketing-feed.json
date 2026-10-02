@@ -1,10 +1,18 @@
 {
- "gegenereerd": "2026-10-01T18:17:12.069Z",
+ "gegenereerd": "2026-10-02T04:37:11.214Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "1790915745699jdltmr09h",
+     "titel": "Ruim vaderschapsverlof verbetert gezondheid moeder en baby",
+     "teaser": "Een vader kreeg bij de geboorte van zijn tweede kind enkele weken vaderschapsverlof. Tijdens die periode werd hij vertrouwder met de rol van hoofdverzorger en bouwde hij contacten op met andere ouders in de buurt. Onderzoek wijst uit dat langer verlof voor de bevallende ouder, gecombineerd met gematigd verlof voor de partner, de mentale gezondheid van baby's verbetert en postpartum-klachten...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/nl/ruim-vaderschapsverlof-verbetert-gezondheid-moeder-en-baby-1790915745699jdltmr09h.html"
+    },
     {
      "id": "1790829805595tcerjpnfc",
      "titel": "Muziekonderwijs hangt samen met minder schoolverzuim in Rhode Island",
@@ -14,39 +22,38 @@
      "url": "https://brightnews.online/articles/nl/muziekonderwijs-hangt-samen-met-minder-schoolverzuim-in-rhode-island-1790829805595tcerjpnfc.html"
     },
     {
+     "id": "1790915722910dy2bhv992",
+     "titel": "Gepensioneerde FBI-agent redt 100 jaar oude appelbomen van uitsterven",
+     "teaser": "Sinds zijn pensioen in 2012 speurt oud-FBI-agent Dave Benscoter uit Washington naar bijna uitgestorven appelrassen in het noordwesten van de VS. Na het snoeien van bomen bij een parochielid ontdekte hij onbekende appelsoorten en dook hij in natuurstudies, familierecepten en oude krantenberichten van landbouwbeurzen. Samen met Joanie Cooper en Sean Shepherd van de Temperate Orchard Conservancy analyseert hij de DNA...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/gepensioneerde-fbi-agent-redt-100-jaar-oude-appelbomen-van-uitsterven-1790915722910dy2bhv992.html"
+    },
+    {
+     "id": "1790915698438o8uvk9fkv",
+     "titel": "Sycamore Gap-boom laat drie jaar na kap al nieuwe scheuten van een meter zien",
+     "teaser": "Drie jaar na de illegale kap van de beroemde Sycamore Gap-boom bij de Muur van Hadrianus in Northumberland, laten nieuwe luchtfoto's zien dat de stronk floreert. Rond de stronk is een dikke ring van nieuwe scheuten ontstaan, die inmiddels tussen de twee en drie voet (ongeveer 60 tot 90 centimeter) hoog zijn. Andrew Poad van de National Trust zegt dat...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/sycamore-gap-boom-laat-drie-jaar-na-kap-al-nieuwe-scheuten-van-een-meter-zien-1790915698438o8uvk9fkv.html"
+    },
+    {
      "id": "1790878381747p9tmjsey9",
      "titel": "Weesneushoorn Chamboi groeit op in Keniaanse oase",
      "teaser": "Op 6 september 2023 vonden rangers van Tsavo Trust en Kenya Wildlife Service een pasgeboren neushoornkalf alleen in het Tsavo West National Park in Kenia. Het diertje, slechts één dag oud en vermoedelijk te vroeg geboren, werd hypoglykemisch en bibberig aangetroffen zonder moeder in de buurt. Sheldrick Wildlife Trust redde hem en bracht hem naar de Kaluku Neonate Nursery. De...",
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/weesneushoorn-chamboi-groeit-op-in-keniaanse-oase-1790878381747p9tmjsey9.html"
-    },
-    {
-     "id": "1790878357707kh42aq9k0",
-     "titel": "Apensanctuary in Mississippi helpt veteranen en geredde primaten helen",
-     "teaser": "In Mississippi runnen April Stewart en haar man, beiden veteranen, sinds oktober 2024 de Gulf Coast Primate Sanctuary. Op het 15 hectare grote terrein leven 22 geredde primaten, waaronder spinapen, doodshoofdaapjes en kinkajous, die vaak afkomstig zijn uit de illegale huisdierhandel, entertainment, dierentuinen of laboratoria. Een team van primatenspecialisten en vrijwilligers zorgt voor hen volgens de regels van het Animal...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/apensanctuary-in-mississippi-helpt-veteranen-en-geredde-primaten-helen-1790878357707kh42aq9k0.html"
-    },
-    {
-     "id": "1790878333880u4o3ppvgq",
-     "titel": "Zonnetrein doet oeroude Andes-route herleven in Argentinië",
-     "teaser": "In de Quebrada de Humahuaca, een UNESCO-werelderfgoedvallei in de Argentijnse provincie Jujuy, rijdt sinds juni 2024 de Tren Solar de la Quebrada, de eerste zonne-energietrein van Latijns-Amerika. De trein legt 42 kilometer af tussen zes dorpen, van Volcán tot Tilcara, over een route die al duizenden jaren wordt gebruikt, eerst door pre-Inca volkeren en later door Spaanse koloniale wegen. Dertig...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/zonnetrein-doet-oeroude-andes-route-herleven-in-argentinie-1790878333880u4o3ppvgq.html"
-    },
-    {
-     "id": "1790878309480irxn5zl52",
-     "titel": "Gestolen Griekse Oudheden na 5.000 Jaar Terug naar Griekenland",
-     "teaser": "New York heeft 15 oude Griekse kunstvoorwerpen, met een waarde van miljoenen dollars, teruggegeven aan Griekenland. De stukken, waaronder twee bronzen helmen, bronzen buikplaten, een marmeren buste van een Romeinse keizer en een terracotta kan, werden ontdekt in het Metropolitan Museum of Art. Ze waren gesmokkeld en witgewassen via valse herkomst, tentoonstellingen en museumschenkingen, aldus het Openbaar Ministerie van Manhattan....",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/gestolen-griekse-oudheden-na-5-000-jaar-terug-naar-griekenland-1790878309480irxn5zl52.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261001-science",
+     "titel": "Schone energie, een lancering en meer geld voor onderzoek",
+     "categorie": "Science",
+     "dag": "2026-10-01",
+     "url": "https://brightnews.online/articles/nl/schone-energie-een-lancering-en-meer-geld-voor-onderzoek-dg-20261001-science.html"
+    },
     {
      "id": "dg-20260930-lifestyle",
      "titel": "Aandacht, herstel en terugkeer: het goede nieuws van deze dagen",
@@ -80,6 +87,14 @@
   "en": {
    "top": [
     {
+     "id": "1790915745699jdltmr09h",
+     "titel": "Extended paternity leave improves mother and baby health",
+     "teaser": "A father took several weeks of paternity leave when his second child was born. During that time, he became more confident in his role as primary caregiver and built connections with other parents in his neighbourhood. Research shows that longer leave for the parent who gave birth, combined with moderate leave for their partner, improves babies' mental health and reduces...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/en/extended-paternity-leave-improves-mother-and-baby-health-1790915745699jdltmr09h.html"
+    },
+    {
      "id": "1790829805595tcerjpnfc",
      "titel": "Music education linked to lower school absenteeism in Rhode Island",
      "teaser": "A new study by Quadrant Research, commissioned by the Rhode Island State Council on the Arts, shows that students who take music lessons for four years are chronically absent from school less often. Among four-year music students, 25.4% were chronically absent, compared to 37.3% of students without four consecutive years of music. For arts subjects in general, the difference was...",
@@ -88,39 +103,38 @@
      "url": "https://brightnews.online/articles/en/music-education-linked-to-lower-school-absenteeism-in-rhode-island-1790829805595tcerjpnfc.html"
     },
     {
+     "id": "1790915722910dy2bhv992",
+     "titel": "Retired FBI agent saves 100-year-old apple trees from extinction",
+     "teaser": "Since his retirement in 2012, former FBI agent Dave Benscoter from Washington has been searching for nearly extinct apple varieties in the northwestern United States. After pruning trees at a parishioner's home, he discovered unknown apple species and delved into natural studies, family recipes, and old newspaper articles from agricultural fairs. Together with Joanie Cooper and Sean Shepherd from the...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/retired-fbi-agent-saves-100-year-old-apple-trees-from-extinction-1790915722910dy2bhv992.html"
+    },
+    {
+     "id": "1790915698438o8uvk9fkv",
+     "titel": "Sycamore Gap tree shows new shoots over a meter tall three years after felling",
+     "teaser": "Three years after the illegal felling of the famous Sycamore Gap tree at Hadrian's Wall in Northumberland, new aerial photographs reveal that the stump is flourishing. Around the stump, a thick ring of new shoots has emerged, now reaching between two and three feet (approximately 60 to 90 centimetres) in height. Andrew Poad of the National Trust says that special...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/sycamore-gap-tree-shows-new-shoots-over-a-meter-tall-three-years-after-felling-1790915698438o8uvk9fkv.html"
+    },
+    {
      "id": "1790878381747p9tmjsey9",
      "titel": "Orphaned rhino Chamboi grows up in Kenyan oasis",
      "teaser": "On September 6, 2023, rangers from Tsavo Trust and Kenya Wildlife Service found a newborn rhino calf alone in Tsavo West National Park in Kenya. The animal, just one day old and apparently born prematurely, was found hypoglycemic and shivering with no mother nearby. Sheldrick Wildlife Trust rescued him and brought him to the Kaluku Neonate Nursery. The rhino was...",
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/en/orphaned-rhino-chamboi-grows-up-in-kenyan-oasis-1790878381747p9tmjsey9.html"
-    },
-    {
-     "id": "1790878357707kh42aq9k0",
-     "titel": "Primate sanctuary in Mississippi helps veterans and rescued primates heal",
-     "teaser": "In Mississippi, April Stewart and her husband, both veterans, have been running the Gulf Coast Primate Sanctuary since October 2024. On the 15-hectare grounds live 22 rescued primates, including spider monkeys, squirrel monkeys and kinkajous, often sourced from illegal pet trade, entertainment, zoos or laboratories. A team of primate specialists and volunteers care for them according to Animal Welfare Act...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/primate-sanctuary-in-mississippi-helps-veterans-and-rescued-primates-heal-1790878357707kh42aq9k0.html"
-    },
-    {
-     "id": "1790878333880u4o3ppvgq",
-     "titel": "Solar train revives ancient Andes route in Argentina",
-     "teaser": "In the Quebrada de Humahuaca, a UNESCO World Heritage valley in Argentina's Jujuy province, the Tren Solar de la Quebrada has been running since June 2024 — Latin America's first solar-powered train. The train covers 42 kilometers between six villages, from Volcán to Tilcara, along a route that has been used for thousands of years, first by pre-Inca peoples and...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/solar-train-revives-ancient-andes-route-in-argentina-1790878333880u4o3ppvgq.html"
-    },
-    {
-     "id": "1790878309480irxn5zl52",
-     "titel": "Stolen Greek antiquities returned to Greece after 5,000 years",
-     "teaser": "New York has returned 15 ancient Greek artworks worth millions of dollars to Greece. The pieces, including two bronze helmets, bronze breastplates, a marble bust of a Roman emperor and a terracotta vessel, were discovered at the Metropolitan Museum of Art. They had been smuggled and laundered through false provenance, exhibitions and museum donations, according to the Manhattan District Attorney's...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/stolen-greek-antiquities-returned-to-greece-after-5-000-years-1790878309480irxn5zl52.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261001-science",
+     "titel": "Clean energy, a launch and more research funding",
+     "categorie": "Science",
+     "dag": "2026-10-01",
+     "url": "https://brightnews.online/articles/en/clean-energy-a-launch-and-more-research-funding-dg-20261001-science.html"
+    },
     {
      "id": "dg-20260930-lifestyle",
      "titel": "Attention, recovery and return: the good news of these days",
@@ -154,6 +168,14 @@
   "de": {
    "top": [
     {
+     "id": "1790915745699jdltmr09h",
+     "titel": "Ausreichender Vaterschaftsurlaub verbessert Gesundheit von Mutter und Baby",
+     "teaser": "Ein Vater nahm bei der Geburt seines zweiten Kindes mehrere Wochen Vaterschaftsurlaub. In dieser Zeit wurde er vertrauter mit seiner Rolle als Hauptbetreuer und knüpfte Kontakte zu anderen Eltern in der Nachbarschaft. Untersuchungen zeigen, dass längerer Urlaub für die Wöchnerin, kombiniert mit moderatem Urlaub für den Partner, die psychische Gesundheit von Babys verbessert und postpartale Beschwerden vermindert. Flexibler Vaterschaftsurlaub reduziert...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/de/ausreichender-vaterschaftsurlaub-verbessert-gesundheit-von-mutter-und-baby-1790915745699jdltmr09h.html"
+    },
+    {
      "id": "1790829805595tcerjpnfc",
      "titel": "Musikunterricht hängt mit weniger Schulfehlzeiten in Rhode Island zusammen",
      "teaser": "Eine neue Studie von Quadrant Research im Auftrag des Rhode Island State Council on the Arts zeigt, dass Schüler, die vier Jahre lang Musikunterricht erhalten, seltener chronisch in der Schule abwesend sind. Von den vierjährigen Musikschülern waren 25,4% chronisch abwesend, gegenüber 37,3% der Schüler ohne vier aufeinanderfolgende Jahre Musikunterricht. Bei Kunstfächern insgesamt war der Unterschied deutlich geringer: 1,9 Prozentpunkte. Der...",
@@ -162,39 +184,38 @@
      "url": "https://brightnews.online/articles/de/musikunterricht-hangt-mit-weniger-schulfehlzeiten-in-rhode-island-zusammen-1790829805595tcerjpnfc.html"
     },
     {
+     "id": "1790915722910dy2bhv992",
+     "titel": "Pensionierter FBI-Agent rettet 100 Jahre alte Apfelbäume vor dem Aussterben",
+     "teaser": "Seit seiner Pensionierung 2012 spürt der ehemalige FBI-Agent Dave Benscoter aus Washington fast ausgestorbene Apfelsorten im Nordwesten der USA auf. Nach dem Schneiden von Bäumen bei einem Gemeindemitglied entdeckte er unbekannte Apfelsorten und vertiefte sich in Naturstudien, Familienrezepte und alte Zeitungsberichte von Landwirtschaftsmessen. Zusammen mit Joanie Cooper und Sean Shepherd von der Temperate Orchard Conservancy analysiert er die DNA gefundener...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/pensionierter-fbi-agent-rettet-100-jahre-alte-apfelbaume-vor-dem-aussterben-1790915722910dy2bhv992.html"
+    },
+    {
+     "id": "1790915698438o8uvk9fkv",
+     "titel": "Sycamore Gap-Baum treibt drei Jahre nach Fällung bereits einen Meter hohe Triebe",
+     "teaser": "Drei Jahre nach der illegalen Fällung des berühmten Sycamore Gap-Baums an der Hadrianswall in Northumberland zeigen neue Luftaufnahmen, dass der Baumstumpf gedeiht. Rund um den Stumpf hat sich ein dichter Ring neuer Triebe gebildet, die mittlerweile zwischen 60 und 90 Zentimeter hoch sind. Andrew Poad vom National Trust erklärt, dass spezielle Maßnahmen wie die Verringerung der Bodenverdichtung um die Wurzeln...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/sycamore-gap-baum-treibt-drei-jahre-nach-fallung-bereits-einen-meter-hohe-triebe-1790915698438o8uvk9fkv.html"
+    },
+    {
      "id": "1790878381747p9tmjsey9",
      "titel": "Waisennashorn Chamboi wächst in kenianischer Oase auf",
      "teaser": "Am 6. September 2023 fanden Ranger des Tsavo Trust und des Kenya Wildlife Service ein neugeborenes Nashorn-Kalb allein im Tsavo West National Park in Kenia. Das Tier, erst einen Tag alt und vermutlich zu früh geboren, wurde hypoglykämisch und zitternd ohne Mutter in der Nähe angetroffen. Der Sheldrick Wildlife Trust rettete es und brachte es zur Kaluku Neonate Nursery. Das...",
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/de/waisennashorn-chamboi-wachst-in-kenianischer-oase-auf-1790878381747p9tmjsey9.html"
-    },
-    {
-     "id": "1790878357707kh42aq9k0",
-     "titel": "Affensanktuar in Mississippi hilft Veteranen und geretteten Primaten zu heilen",
-     "teaser": "In Mississippi betreiben April Stewart und ihr Mann, beide Veteranen, seit Oktober 2024 das Gulf Coast Primate Sanctuary. Auf dem 15 Hektar großen Gelände leben 22 gerettete Primaten, darunter Klammeraffen, Totenkopfäffchen und Wickelbären, die häufig aus dem illegalen Heimtierhandel, der Unterhaltungsindustrie, Zoos oder Laboratorien stammen. Ein Team von Primatenfachleuten und Freiwilligen kümmert sich nach den Regeln des Animal Welfare Act...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/affensanktuar-in-mississippi-hilft-veteranen-und-geretteten-primaten-zu-heilen-1790878357707kh42aq9k0.html"
-    },
-    {
-     "id": "1790878333880u4o3ppvgq",
-     "titel": "Sonnenzug erweckt uralte Andenroute in Argentinien zu neuem Leben",
-     "teaser": "In der Quebrada de Humahuaca, einem UNESCO-Welterbe-Tal in der argentinischen Provinz Jujuy, verkehrt seit Juni 2024 die Tren Solar de la Quebrada, der erste Sonnenenergiezug Lateinamerikas. Der Zug legt 42 Kilometer zwischen sechs Dörfern zurück, von Volcán bis Tilcara, auf einer Route, die seit Tausenden von Jahren genutzt wird – zunächst von präinkaischen Völkern und später auf spanischen Kolonialwegen. Vor...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/sonnenzug-erweckt-uralte-andenroute-in-argentinien-zu-neuem-leben-1790878333880u4o3ppvgq.html"
-    },
-    {
-     "id": "1790878309480irxn5zl52",
-     "titel": "Gestohlene griechische Altertümer nach 5.000 Jahren zu Griechenland zurück",
-     "teaser": "New York hat 15 antike griechische Kunstwerke im Wert von Millionen Dollar an Griechenland zurückgegeben. Die Objekte, darunter zwei Bronzehelme, Bronzebrustpanzer, eine Marmorbüste eines römischen Kaisers und ein Terrakotta-Gefäß, wurden im Metropolitan Museum of Art entdeckt. Sie waren geschmuggelt und gewaschen worden über gefälschte Herkunftsnachweise, Ausstellungen und Museumsspenden, wie die Staatsanwaltschaft von Manhattan mitteilte. Die Objekte stammen aus der Zeit...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/gestohlene-griechische-altertumer-nach-5-000-jahren-zu-griechenland-zuruck-1790878309480irxn5zl52.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261001-science",
+     "titel": "Saubere Energie, eine Raumfahrtmission und mehr Geld für Forschung",
+     "categorie": "Science",
+     "dag": "2026-10-01",
+     "url": "https://brightnews.online/articles/de/saubere-energie-eine-raumfahrtmission-und-mehr-geld-fur-forschung-dg-20261001-science.html"
+    },
     {
      "id": "dg-20260930-lifestyle",
      "titel": "Aufmerksamkeit, Heilung und Rückkehr: die guten Nachrichten dieser Tage",
@@ -228,6 +249,14 @@
   "fr": {
    "top": [
     {
+     "id": "1790915745699jdltmr09h",
+     "titel": "Un congé de paternité plus long améliore la santé de la mère et du bébé",
+     "teaser": "Un père a bénéficié de quelques semaines de congé de paternité à la naissance de son deuxième enfant. Durant cette période, il s'est familiarisé avec le rôle de principal pourvoyeur de soins et a noué des contacts avec d'autres parents du quartier. Des recherches montrent qu'un congé plus long pour le parent qui accouche, combiné à un congé modéré pour...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/fr/un-conge-de-paternite-plus-long-ameliore-la-sante-de-la-mere-et-du-bebe-1790915745699jdltmr09h.html"
+    },
+    {
      "id": "1790829805595tcerjpnfc",
      "titel": "L'enseignement musical est associé à moins d'absentéisme scolaire à Rhode Island",
      "teaser": "Une nouvelle étude de Quadrant Research, commandée par le Rhode Island State Council on the Arts, montre que les élèves qui suivent des cours de musique pendant quatre ans sont moins souvent absents de manière chronique à l'école. Parmi les élèves musiciens sur quatre ans, 25,4 % étaient absents de manière chronique, contre 37,3 % chez les élèves sans quatre...",
@@ -236,39 +265,38 @@
      "url": "https://brightnews.online/articles/fr/l-enseignement-musical-est-associe-a-moins-d-absenteisme-scolaire-a-rhode-island-1790829805595tcerjpnfc.html"
     },
     {
+     "id": "1790915722910dy2bhv992",
+     "titel": "Un ancien agent du FBI sauve des pommiers centenaires de l'extinction",
+     "teaser": "Depuis sa retraite en 2012, Dave Benscoter, ancien agent du FBI de Washington, recherche des variétés de pommes presque disparues dans le nord-ouest des États-Unis. Après avoir taillé des arbres chez un paroissien, il a découvert des espèces de pommes inconnues et s'est plongé dans des études naturalistes, des recettes familiales et de vieux articles de journaux sur les salons...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/un-ancien-agent-du-fbi-sauve-des-pommiers-centenaires-de-l-extinction-1790915722910dy2bhv992.html"
+    },
+    {
+     "id": "1790915698438o8uvk9fkv",
+     "titel": "Le Sycamore Gap repousse avec des pousses d'un mètre trois ans après l'abattage",
+     "teaser": "Trois ans après l'abattage illégal du célèbre Sycamore Gap près du Mur d'Hadrien en Northumberland, de nouvelles photos aériennes montrent que la souche prospère. Autour de la souche s'est formé un épais anneau de nouvelles pousses, qui mesurent désormais entre deux et trois pieds (environ 60 à 90 centimètres) de haut. Andrew Poad de la National Trust affirme que des...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/le-sycamore-gap-repousse-avec-des-pousses-d-un-metre-trois-ans-apres-l-abattage-1790915698438o8uvk9fkv.html"
+    },
+    {
      "id": "1790878381747p9tmjsey9",
      "titel": "Le jeune rhinocéros orphelin Chamboi grandit dans une oasis kenyane",
      "teaser": "Le 6 septembre 2023, les rangers de Tsavo Trust et du Kenya Wildlife Service ont découvert un jeune rhinocéros nouveau-né seul dans le parc national de Tsavo West au Kenya. L'animal, âgé d'à peine un jour et probablement né prématurément, présentait une hypoglycémie et tremblait sans sa mère à proximité. Le Sheldrick Wildlife Trust l'a secouru et l'a amené à...",
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/fr/le-jeune-rhinoceros-orphelin-chamboi-grandit-dans-une-oasis-kenyane-1790878381747p9tmjsey9.html"
-    },
-    {
-     "id": "1790878357707kh42aq9k0",
-     "titel": "Un sanctuaire de primates au Mississippi aide les vétérans et les primates secourus à guérir",
-     "teaser": "Au Mississippi, April Stewart et son mari, tous deux vétérans, gèrent depuis octobre 2024 le Gulf Coast Primate Sanctuary. Sur le terrain de 15 hectares vivent 22 primates secourus, notamment des araignées, des singes hurleurs et des kinkajous, souvent issus du commerce illégal d'animaux de compagnie, du divertissement, de zoos ou de laboratoires. Une équipe de spécialistes des primates et...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/un-sanctuaire-de-primates-au-mississippi-aide-les-veterans-et-les-primates-secou-1790878357707kh42aq9k0.html"
-    },
-    {
-     "id": "1790878333880u4o3ppvgq",
-     "titel": "Le train solaire ravive une ancienne route des Andes en Argentine",
-     "teaser": "Dans la Quebrada de Humahuaca, une vallée classée au patrimoine mondial de l'UNESCO dans la province de Jujuy en Argentine, circule depuis juin 2024 le Tren Solar de la Quebrada, le premier train fonctionnant à l'énergie solaire d'Amérique latine. Le train parcourt 42 kilomètres entre six villages, de Volcán à Tilcara, sur une route utilisée depuis des millénaires, d'abord par...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/le-train-solaire-ravive-une-ancienne-route-des-andes-en-argentine-1790878333880u4o3ppvgq.html"
-    },
-    {
-     "id": "1790878309480irxn5zl52",
-     "titel": "Des antiquités grecques volées restituées à la Grèce après 5.000 ans",
-     "teaser": "New York a restitué 15 anciens objets d'art grecs, d'une valeur de plusieurs millions de dollars, à la Grèce. Les pièces, dont deux casques en bronze, des plaques abdominales en bronze, un buste en marbre d'un empereur romain et une jarre en terre cuite, ont été découvertes au Metropolitan Museum of Art. Elles avaient été contrebandées et blanchies par le...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/des-antiquites-grecques-volees-restituees-a-la-grece-apres-5-000-ans-1790878309480irxn5zl52.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261001-science",
+     "titel": "Énergie propre, un lancement et davantage de financement pour la recherche",
+     "categorie": "Science",
+     "dag": "2026-10-01",
+     "url": "https://brightnews.online/articles/fr/energie-propre-un-lancement-et-davantage-de-financement-pour-la-recherche-dg-20261001-science.html"
+    },
     {
      "id": "dg-20260930-lifestyle",
      "titel": "Attention, guérison et retour : les bonnes nouvelles de ces jours-ci",
@@ -302,6 +330,14 @@
   "es": {
    "top": [
     {
+     "id": "1790915745699jdltmr09h",
+     "titel": "El permiso de paternidad ampliado mejora la salud de la madre y el bebé",
+     "teaser": "Un padre disfrutó de algunas semanas de permiso de paternidad cuando nació su segundo hijo. Durante ese período se familiarizó más con el rol de cuidador principal y estableció contactos con otros padres de la zona. La investigación demuestra que un permiso más largo para el progenitor que da a luz, combinado con un permiso moderado para la pareja, mejora...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/es/el-permiso-de-paternidad-ampliado-mejora-la-salud-de-la-madre-y-el-bebe-1790915745699jdltmr09h.html"
+    },
+    {
      "id": "1790829805595tcerjpnfc",
      "titel": "La educación musical se asocia con menos absentismo escolar en Rhode Island",
      "teaser": "Un nuevo estudio de Quadrant Research, encargado por el Rhode Island State Council on the Arts, muestra que los estudiantes que reciben clases de música durante cuatro años tienen menos ausencias crónicas en la escuela. Entre los estudiantes de música de cuatro años, el 25,4% faltaba crónicamente, en comparación con el 37,3% de los estudiantes sin cuatro años consecutivos de...",
@@ -310,39 +346,38 @@
      "url": "https://brightnews.online/articles/es/la-educacion-musical-se-asocia-con-menos-absentismo-escolar-en-rhode-island-1790829805595tcerjpnfc.html"
     },
     {
+     "id": "1790915722910dy2bhv992",
+     "titel": "Agente jubilada del FBI salva de la extinción manzanos de 100 años",
+     "teaser": "Desde su jubilación en 2012, el exagente del FBI Dave Benscoter de Washington busca variedades de manzanas casi extintas en el noroeste de Estados Unidos. Tras podar árboles en casa de un feligrés, descubrió especies de manzanas desconocidas e investigó estudios de historia natural, recetas familiares y antiguos artículos de periódicos sobre ferias agrícolas. Junto con Joanie Cooper y Sean...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/agente-jubilada-del-fbi-salva-de-la-extincion-manzanos-de-100-anos-1790915722910dy2bhv992.html"
+    },
+    {
+     "id": "1790915698438o8uvk9fkv",
+     "titel": "El tejo de Sycamore Gap muestra nuevos brotes de un metro tres años después de su tala",
+     "teaser": "Tres años después de la tala ilegal del famoso tejo de Sycamore Gap junto al Muro de Adriano en Northumberland, nuevas fotografías aéreas muestran que el tocón está floreciendo. Alrededor del tocón se ha formado un anillo denso de nuevos brotes que actualmente miden entre dos y tres pies (aproximadamente 60 a 90 centímetros) de altura. Andrew Poad de la...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/el-tejo-de-sycamore-gap-muestra-nuevos-brotes-de-un-metro-tres-anos-despues-de-s-1790915698438o8uvk9fkv.html"
+    },
+    {
      "id": "1790878381747p9tmjsey9",
      "titel": "El rinoceronte huérfano Chamboi crece en un oasis de Kenia",
      "teaser": "El 6 de septiembre de 2023, los guardabosques de Tsavo Trust y Kenya Wildlife Service encontraron una cría de rinoceronte recién nacida sola en el Parque Nacional Tsavo West en Kenia. El pequeño animal, de apenas un día de edad y presuntamente nacido prematuramente, fue hallado hipoglucémico y temblando sin su madre cerca. Sheldrick Wildlife Trust lo rescató y lo...",
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/es/el-rinoceronte-huerfano-chamboi-crece-en-un-oasis-de-kenia-1790878381747p9tmjsey9.html"
-    },
-    {
-     "id": "1790878357707kh42aq9k0",
-     "titel": "Santuario de primates en Mississippi ayuda a veteranos y animales rescatados a sanar",
-     "teaser": "En Mississippi, April Stewart y su esposo, ambos veteranos, dirigen desde octubre de 2024 el Gulf Coast Primate Sanctuary. En el terreno de 15 hectáreas viven 22 primates rescatados, entre ellos monos araña, monos cara blanca y kinkajús, que frecuentemente provienen del tráfico ilegal de mascotas, entretenimiento, zoológicos o laboratorios. Un equipo de especialistas en primates y voluntarios los cuida...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/santuario-de-primates-en-mississippi-ayuda-a-veteranos-y-animales-rescatados-a-s-1790878357707kh42aq9k0.html"
-    },
-    {
-     "id": "1790878333880u4o3ppvgq",
-     "titel": "El tren solar revive una ancestral ruta de los Andes en Argentina",
-     "teaser": "En la Quebrada de Humahuaca, un valle Patrimonio de la Humanidad de la UNESCO en la provincia argentina de Jujuy, circula desde junio de 2024 el Tren Solar de la Quebrada, el primer tren de energía solar de América Latina. El tren recorre 42 kilómetros entre seis pueblos, desde Volcán hasta Tilcara, por una ruta que lleva miles de años...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/el-tren-solar-revive-una-ancestral-ruta-de-los-andes-en-argentina-1790878333880u4o3ppvgq.html"
-    },
-    {
-     "id": "1790878309480irxn5zl52",
-     "titel": "Antigüedades griegas robadas regresan a Grecia tras 5.000 años",
-     "teaser": "Nueva York ha devuelto 15 obras de arte griegas antiguas, con un valor de millones de dólares, a Grecia. Las piezas, entre ellas dos cascos de bronce, placas abdominales de bronce, un busto de mármol de un emperador romano y una vasija de terracota, fueron descubiertas en el Metropolitan Museum of Art. Habían sido contrabandeadas y blanqueadas mediante procedencias falsas,...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/antiguedades-griegas-robadas-regresan-a-grecia-tras-5-000-anos-1790878309480irxn5zl52.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261001-science",
+     "titel": "Energía limpia, un lanzamiento y más dinero para la investigación",
+     "categorie": "Science",
+     "dag": "2026-10-01",
+     "url": "https://brightnews.online/articles/es/energia-limpia-un-lanzamiento-y-mas-dinero-para-la-investigacion-dg-20261001-science.html"
+    },
     {
      "id": "dg-20260930-lifestyle",
      "titel": "Atención, recuperación y regreso: las buenas noticias de estos días",

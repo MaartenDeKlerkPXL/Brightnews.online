@@ -1,6 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://brightnews.online/articles/nl/schone-energie-een-lancering-en-meer-geld-voor-onderzoek-dg-20261001-science.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-02T04:37:10.716Z</news:publication_date>
+      <news:title>Schone energie, een lancering en meer geld voor onderzoek</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/clean-energy-a-launch-and-more-research-funding-dg-20261001-science.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-02T04:37:10.716Z</news:publication_date>
+      <news:title>Clean energy, a launch and more research funding</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/saubere-energie-eine-raumfahrtmission-und-mehr-geld-fur-forschung-dg-20261001-science.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-02T04:37:10.716Z</news:publication_date>
+      <news:title>Saubere Energie, eine Raumfahrtmission und mehr Geld für Forschung</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/energie-propre-un-lancement-et-davantage-de-financement-pour-la-recherche-dg-20261001-science.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-02T04:37:10.716Z</news:publication_date>
+      <news:title>Énergie propre, un lancement et davantage de financement pour la recherche</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/energia-limpia-un-lanzamiento-y-mas-dinero-para-la-investigacion-dg-20261001-science.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-02T04:37:10.716Z</news:publication_date>
+      <news:title>Energía limpia, un lanzamiento y más dinero para la investigación</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/ruim-vaderschapsverlof-verbetert-gezondheid-moeder-en-baby-1790915745699jdltmr09h.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-02T04:35:46.556Z</news:publication_date>
+      <news:title>Ruim vaderschapsverlof verbetert gezondheid moeder en baby</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/extended-paternity-leave-improves-mother-and-baby-health-1790915745699jdltmr09h.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-02T04:35:46.556Z</news:publication_date>
+      <news:title>Extended paternity leave improves mother and baby health</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/ausreichender-vaterschaftsurlaub-verbessert-gesundheit-von-mutter-und-baby-1790915745699jdltmr09h.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-02T04:35:46.556Z</news:publication_date>
+      <news:title>Ausreichender Vaterschaftsurlaub verbessert Gesundheit von Mutter und Baby</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/un-conge-de-paternite-plus-long-ameliore-la-sante-de-la-mere-et-du-bebe-1790915745699jdltmr09h.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-02T04:35:46.556Z</news:publication_date>
+      <news:title>Un congé de paternité plus long améliore la santé de la mère et du bébé</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/el-permiso-de-paternidad-ampliado-mejora-la-salud-de-la-madre-y-el-bebe-1790915745699jdltmr09h.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-02T04:35:46.556Z</news:publication_date>
+      <news:title>El permiso de paternidad ampliado mejora la salud de la madre y el bebé</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/gepensioneerde-fbi-agent-redt-100-jaar-oude-appelbomen-van-uitsterven-1790915722910dy2bhv992.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-02T04:35:23.918Z</news:publication_date>
+      <news:title>Gepensioneerde FBI-agent redt 100 jaar oude appelbomen van uitsterven</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/retired-fbi-agent-saves-100-year-old-apple-trees-from-extinction-1790915722910dy2bhv992.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-02T04:35:23.918Z</news:publication_date>
+      <news:title>Retired FBI agent saves 100-year-old apple trees from extinction</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/pensionierter-fbi-agent-rettet-100-jahre-alte-apfelbaume-vor-dem-aussterben-1790915722910dy2bhv992.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-02T04:35:23.918Z</news:publication_date>
+      <news:title>Pensionierter FBI-Agent rettet 100 Jahre alte Apfelbäume vor dem Aussterben</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/un-ancien-agent-du-fbi-sauve-des-pommiers-centenaires-de-l-extinction-1790915722910dy2bhv992.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-02T04:35:23.918Z</news:publication_date>
+      <news:title>Un ancien agent du FBI sauve des pommiers centenaires de l'extinction</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/agente-jubilada-del-fbi-salva-de-la-extincion-manzanos-de-100-anos-1790915722910dy2bhv992.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-02T04:35:23.918Z</news:publication_date>
+      <news:title>Agente jubilada del FBI salva de la extinción manzanos de 100 años</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/sycamore-gap-boom-laat-drie-jaar-na-kap-al-nieuwe-scheuten-van-een-meter-zien-1790915698438o8uvk9fkv.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-02T04:35:01.048Z</news:publication_date>
+      <news:title>Sycamore Gap-boom laat drie jaar na kap al nieuwe scheuten van een meter zien</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/sycamore-gap-tree-shows-new-shoots-over-a-meter-tall-three-years-after-felling-1790915698438o8uvk9fkv.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-02T04:35:01.048Z</news:publication_date>
+      <news:title>Sycamore Gap tree shows new shoots over a meter tall three years after felling</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/sycamore-gap-baum-treibt-drei-jahre-nach-fallung-bereits-einen-meter-hohe-triebe-1790915698438o8uvk9fkv.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-02T04:35:01.048Z</news:publication_date>
+      <news:title>Sycamore Gap-Baum treibt drei Jahre nach Fällung bereits einen Meter hohe Triebe</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/le-sycamore-gap-repousse-avec-des-pousses-d-un-metre-trois-ans-apres-l-abattage-1790915698438o8uvk9fkv.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-02T04:35:01.048Z</news:publication_date>
+      <news:title>Le Sycamore Gap repousse avec des pousses d'un mètre trois ans après l'abattage</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/el-tejo-de-sycamore-gap-muestra-nuevos-brotes-de-un-metro-tres-anos-despues-de-s-1790915698438o8uvk9fkv.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-02T04:35:01.048Z</news:publication_date>
+      <news:title>El tejo de Sycamore Gap muestra nuevos brotes de un metro tres años después de su tala</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://brightnews.online/articles/nl/aandacht-herstel-en-terugkeer-het-goede-nieuws-van-deze-dagen-dg-20260930-lifestyle.html</loc>
     <news:news>
       <news:publication>
@@ -1263,171 +1483,6 @@
       </news:publication>
       <news:publication_date>2026-09-30T17:45:29.128Z</news:publication_date>
       <news:title>Chris Evans ayuda al dúo de perros Greg y Carley a encontrar nuevo dueño</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/verweesde-olifant-daba-geadopteerd-door-kudde-in-kenia-1790742803309ouor5rc3j.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-30T04:33:24.006Z</news:publication_date>
-      <news:title>Verweesde olifant Daba geadopteerd door kudde in Kenia</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/orphaned-elephant-daba-adopted-by-herd-in-kenya-1790742803309ouor5rc3j.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-30T04:33:24.006Z</news:publication_date>
-      <news:title>Orphaned elephant Daba adopted by herd in Kenya</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/verwaister-elefant-daba-von-herde-in-kenia-adoptiert-1790742803309ouor5rc3j.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-30T04:33:24.006Z</news:publication_date>
-      <news:title>Verwaister Elefant Daba von Herde in Kenia adoptiert</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/l-elephanteau-orphelin-daba-adopte-par-un-troupeau-au-kenya-1790742803309ouor5rc3j.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-30T04:33:24.006Z</news:publication_date>
-      <news:title>L'éléphanteau orphelin Daba adopté par un troupeau au Kenya</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/elefantillo-huerfano-daba-adoptado-por-manada-en-kenia-1790742803309ouor5rc3j.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-30T04:33:24.006Z</news:publication_date>
-      <news:title>Elefantillo huérfano Daba adoptado por manada en Kenia</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/olifantstier-adopteert-weesolifantje-talek-tot-redding-kwam-1790742751775ktybiafaw.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-30T04:32:33.541Z</news:publication_date>
-      <news:title>Olifantstier 'adopteert' weesolifantje Talek tot redding kwam</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/bull-elephant-adopts-orphan-calf-talek-until-rescue-came-1790742751775ktybiafaw.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-30T04:32:33.541Z</news:publication_date>
-      <news:title>Bull elephant 'adopts' orphan calf Talek until rescue came</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/elefantenbulle-adoptiert-waisenkalbchen-talek-zur-rettung-kam-1790742751775ktybiafaw.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-30T04:32:33.541Z</news:publication_date>
-      <news:title>Elefantenbulle „adoptiert" Waisenkälbchen Talek zur Rettung kam</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/un-elephant-male-adopte-l-elephanteau-orphelin-talek-jusqu-a-son-sauvetage-1790742751775ktybiafaw.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-30T04:32:33.541Z</news:publication_date>
-      <news:title>Un éléphant mâle « adopte » l'éléphanteau orphelin Talek jusqu'à son sauvetage</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/un-elefante-macho-adopta-al-elefantillo-huerfano-talek-hasta-su-rescate-1790742751775ktybiafaw.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-30T04:32:33.541Z</news:publication_date>
-      <news:title>Un elefante macho «adopta» al elefantillo huérfano Talek hasta su rescate</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/12-jarige-sloan-verzamelt-30-000-luiers-voor-arizona-voedselbank-1790742723599v7yuk22bc.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-30T04:32:05.972Z</news:publication_date>
-      <news:title>12-jarige Sloan verzamelt 30.000 luiers voor Arizona voedselbank</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/12-year-old-sloan-collects-30-000-diapers-for-arizona-food-bank-1790742723599v7yuk22bc.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-30T04:32:05.972Z</news:publication_date>
-      <news:title>12-year-old Sloan collects 30,000 diapers for Arizona food bank</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/12-jahrige-sloan-sammelt-30-000-windeln-fur-arizonas-lebensmittelbank-1790742723599v7yuk22bc.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-30T04:32:05.972Z</news:publication_date>
-      <news:title>12-Jährige Sloan sammelt 30.000 Windeln für Arizonas Lebensmittelbank</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/sloan-12-ans-collecte-30-000-couches-pour-une-banque-alimentaire-en-arizona-1790742723599v7yuk22bc.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-30T04:32:05.972Z</news:publication_date>
-      <news:title>Sloan, 12 ans, collecte 30 000 couches pour une banque alimentaire en Arizona</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/sloan-de-12-jarige-die-30-000-panales-recaudo-para-banco-de-alimentos-1790742723599v7yuk22bc.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-30T04:32:05.972Z</news:publication_date>
-      <news:title>Sloan, de 12-jarige die 30.000 pañales recaudó para banco de alimentos</news:title>
     </news:news>
   </url>
 </urlset>

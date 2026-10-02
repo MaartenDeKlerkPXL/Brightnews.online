@@ -1,5 +1,76 @@
 [
   {
+    "id": "dg-20261001-science",
+    "type": "digest",
+    "digest_date": "2026-10-01",
+    "title": "Energía limpia, un lanzamiento y más dinero para la investigación",
+    "summary": "Los días alrededor del 1 de octubre de 2026 muestran lo amplio que puede ser el progreso científico: desde un avance en la generación de energía hasta una tripulación en camino a la estación espacial y más financiación para la investigación europea. Tres noticias, tres escalas muy diferentes, pero todas orientadas a lo que pueden aportar el conocimiento y la cooperación. En China se ha logrado por primera vez la fusión nuclear con hidrógeno-boro como combustible, una opción más limpia y abundante que la mezcla convencional de deuterio y tritio [1]. El grupo ENN Group, respaldado por el Estado, generó...",
+    "image_alt": "Energía limpia, un lanzamiento y más dinero para la investigación",
+    "meta_description": "Energía limpia, un lanzamiento espacial y más financiación para la investigación europea marcan el progreso científico.",
+    "meta_keywords": "Science",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/ENN-Groups-EXL-50U-spherical-device-which-successfully-achieved-hydrogen-boron-fusion-reactions-credit-handout.jpg",
+    "date": "2026-10-02T04:37:10.716Z",
+    "category": "Science",
+    "refs": [
+      {
+        "id": "17908782798106ax9e1mse",
+        "title": "Reactor chino logra fusión nuclear con hidrógeno-boro"
+      },
+      {
+        "id": "1790878463725e6mq4yj0y",
+        "title": "SpaceX lanza Crew-13 hacia la estación espacial internacional"
+      },
+      {
+        "id": "179079052264500q9jt7s6",
+        "title": "Horizon Europe recibe 500 millones de euros adicionales para investigación e innovación"
+      }
+    ]
+  },
+  {
+    "id": "1790915745699jdltmr09h",
+    "title": "El permiso de paternidad ampliado mejora la salud de la madre y el bebé",
+    "summary": "Un padre disfrutó de algunas semanas de permiso de paternidad cuando nació su segundo hijo. Durante ese período se familiarizó más con el rol de cuidador principal y estableció contactos con otros padres de la zona. La investigación demuestra que un permiso más largo para el progenitor que da a luz, combinado con un permiso moderado para la pareja, mejora...",
+    "image_alt": "Padre con bebé durante el permiso de paternidad",
+    "meta_description": "El permiso de paternidad mejora la salud de la madre y el bebé, y favorece una distribución más equitativa de las tareas familiares.",
+    "meta_keywords": "permiso de paternidad, permiso parental, salud posparto, lactancia materna, vida familiar, padres",
+    "link": "https://www.goodgoodgood.co/articles/benefits-of-paternal-leave-policies",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abea24c311dd07800e88db3_6abea24b8c97d764568e439a_benefits-of-paternal-leave-policies-featured.webp",
+    "date": "2026-10-02T04:35:46.556Z",
+    "category": "Health",
+    "score": 10
+  },
+  {
+    "id": "1790915722910dy2bhv992",
+    "title": "Agente jubilada del FBI salva de la extinción manzanos de 100 años",
+    "summary": "Desde su jubilación en 2012, el exagente del FBI Dave Benscoter de Washington busca variedades de manzanas casi extintas en el noroeste de Estados Unidos. Tras podar árboles en casa de un feligrés, descubrió especies de manzanas desconocidas e investigó estudios de historia natural, recetas familiares y antiguos artículos de periódicos sobre ferias agrícolas. Junto con Joanie Cooper y Sean...",
+    "image_alt": "Manzano antiguo en un huerto con manzanas maduras",
+    "meta_description": "El exagente del FBI Dave Benscoter lleva 20 años rastreando variedades de manzanas casi extintas a través del Lost Apple Project.",
+    "meta_keywords": "Lost Apple Project, Dave Benscoter, manzanos, variedades de manzanas en peligro de extinción, Washington, identificación por ADN, Kittageskee",
+    "link": "https://www.goodgoodgood.co/articles/fbi-agent-retired-lost-apple-project",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abec7f5a9d9e28bb0e30156_6abec7f4d9fecf0aa42e3252_fbi-agent-retired-lost-apple-project-featured.webp",
+    "date": "2026-10-02T04:35:23.918Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1790915698438o8uvk9fkv",
+    "title": "El tejo de Sycamore Gap muestra nuevos brotes de un metro tres años después de su tala",
+    "summary": "Tres años después de la tala ilegal del famoso tejo de Sycamore Gap junto al Muro de Adriano en Northumberland, nuevas fotografías aéreas muestran que el tocón está floreciendo. Alrededor del tocón se ha formado un anillo denso de nuevos brotes que actualmente miden entre dos y tres pies (aproximadamente 60 a 90 centímetros) de altura. Andrew Poad de la...",
+    "image_alt": "Fotografía aérea del tocón del tejo de Sycamore Gap con un anillo de nuevos brotes verdes",
+    "meta_description": "Tres años después de la tala del tejo de Sycamore Gap, nuevos brotes de hasta un metro de altura crecen alrededor del tocón.",
+    "meta_keywords": "Sycamore Gap, Muro de Adriano, National Trust, recuperación de árboles, Northumberland, tala ilegal",
+    "link": "https://www.goodnewsnetwork.org/flourishing-sycamore-gap-tree-has-ring-of-new-shoots-already-3-feet-tall/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/overlooking-the-sycamore-gap-stump-on-hadrians-wall.-credit-nt-images-annapurna-mellor.jpg",
+    "date": "2026-10-02T04:35:01.049Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
     "id": "dg-20260930-lifestyle",
     "type": "digest",
     "digest_date": "2026-09-30",
@@ -2180,39 +2251,6 @@
     "score": 9
   },
   {
-    "id": "dg-20260917-lifestyle",
-    "type": "digest",
-    "digest_date": "2026-09-17",
-    "title": "Silencio, naturaleza y un zorro divertido: la buena vida de esta semana",
-    "summary": "Estos días, en la sección Lifestyle todo gira en torno a algo simple: personas que vuelven a observar bien la naturaleza, o que se quedan muy calladas para sentir esa naturaleza. Cuatro historias, cuatro formas de escapar del ajetreo, con animales, silencio y campamentos en el papel principal. En Londres, la experiencia de arte inmersivo Frameless celebra diez años de los Nikon Comedy Wildlife Photography Awards [1]. A partir del 12 de septiembre, 91 fotografías divertidas se proyectarán a tamaño real, distribuidas en siete entornos naturales, completos con sonidos de olas y hojas susurrantes. Durante diez años, el concurso permitió...",
-    "image_alt": "Silencio, naturaleza y un zorro divertido: la buena vida de esta semana",
-    "meta_description": "De retiros silenciosos a animales divertidos: las noticias positivas de lifestyle del 17 de septiembre de 2026 en un resumen.",
-    "meta_keywords": "Lifestyle",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://www.positive.news/wp-content/uploads/2026/09/comedy-main.jpg",
-    "date": "2026-09-18T04:22:53.597Z",
-    "category": "Lifestyle",
-    "refs": [
-      {
-        "id": "17895875188314h0muykwt",
-        "title": "Diez años de los Comedy Wildlife Photography Awards en Londres"
-      },
-      {
-        "id": "1789587495792ia5rvdpa9",
-        "title": "Una charlatana confesa encuentra paz en un retiro silencioso en Eastbourne"
-      },
-      {
-        "id": "178958685689366bsxvshy",
-        "title": "Elegir campamento sigue teoría ancestral de prospect-refuge"
-      },
-      {
-        "id": "1789585690477bfnmq9za6",
-        "title": "Un martín pescador se posa en la mano de una mujer tras pedir una señal"
-      }
-    ]
-  },
-  {
     "id": "dg-20260917-environment",
     "type": "digest",
     "digest_date": "2026-09-17",
@@ -2592,48 +2630,6 @@
     "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/credit-Jerry-Vandiver-retrieved-from-Facebook.jpg",
     "date": "2026-09-16T19:39:13.834Z",
     "category": "Environment",
-    "score": 8
-  },
-  {
-    "id": "17895875188314h0muykwt",
-    "title": "Diez años de los Comedy Wildlife Photography Awards en Londres",
-    "summary": "Este otoño, la experiencia de arte inmersivo Frameless en Londres celebra diez años de los Nikon Comedy Wildlife Photography Awards. A partir del 12 de septiembre, 91 de las fotografías más divertidas y memorables del concurso se proyectarán a tamaño real. Las imágenes se distribuyen en siete hábitats naturales, desde costas hasta bosques y praderas, con sonido espacial de olas...",
-    "image_alt": "Un oso pardo hace una mueca graciosa en la nieve en Finlandia, parte de los Comedy Wildlife Photography Awards",
-    "meta_description": "Diez años de los Comedy Wildlife Photography Awards conmemorados en la nueva experiencia inmersiva Frameless en Londres, a partir del 12 de septiembre.",
-    "meta_keywords": "Comedy Wildlife Photography Awards, Frameless Londres, fotografía de naturaleza, biodiversidad, experiencia inmersiva, Nikon",
-    "link": "https://www.positive.news/environment/celebrating-10-years-of-the-nikon-comedy-wildlife-photography-awards/",
-    "source": "Positive.News",
-    "image": "https://www.positive.news/wp-content/uploads/2026/09/comedy-main.jpg",
-    "date": "2026-09-16T19:38:42.215Z",
-    "category": "Lifestyle",
-    "score": 8
-  },
-  {
-    "id": "1789587495792ia5rvdpa9",
-    "title": "Una charlatana confesa encuentra paz en un retiro silencioso en Eastbourne",
-    "summary": "Angela Garwood, una autoproclamada charlatana, pasó un fin de semana en un retiro silencioso sin dispositivos en Gayles, una antigua granja familiar reconvertida en Eastbourne, en la costa de Sussex. Tras 36 horas sin hablar, se bañó en el mar junto a los acantilados blancos de tiza de las Seven Sisters. El retiro, dirigido por la profesora de yoga y...",
-    "image_alt": "Los participantes nadan en silencio en el mar junto a los acantilados blancos de las Seven Sisters durante un retiro silencioso",
-    "meta_description": "Cómo una charlatana encontró paz en un retiro sin dispositivos cerca de Eastbourne, entre los acantilados de las Seven Sisters.",
-    "meta_keywords": "retiro silencioso, Eastbourne, Gayles, Seven Sisters, yoga, mindfulness, desintoxicación digital, Sussex",
-    "link": "https://www.positive.news/lifestyle/the-sound-of-stillness-what-happened-when-i-stopped-filling-the-silence/",
-    "source": "Positive.News",
-    "image": "https://www.positive.news/wp-content/uploads/2026/09/Gayles_Retreats_Images_Them_Studio-6-copy-1800x0-c-centermain.jpeg",
-    "date": "2026-09-16T19:38:18.476Z",
-    "category": "Lifestyle",
-    "score": 8
-  },
-  {
-    "id": "178958685689366bsxvshy",
-    "title": "Elegir campamento sigue teoría ancestral de prospect-refuge",
-    "summary": "Durante una excursión de mochilero en otoño de 2025, un grupo de diez personas con cinco perros celebró el cumpleaños de su amigo Ace en un cañón remoto de Utah, junto a un arco natural de cien pies de altura. Cada uno eligió su propio lugar de campamento: algunos cerca de un alero, otros en una pequeña colina o contra...",
-    "image_alt": "Mochileros instalan su campamento junto a un gran arco natural en un cañón de Utah",
-    "meta_description": "Mochileros eligen campamentos según teoría ancestral prospect-refuge durante excursión de cumpleaños en cañón de Utah.",
-    "meta_keywords": "teoría prospect-refuge, mochilero, cañón Utah, Jay Appleton, campamento, arco natural",
-    "link": "https://www.adventure-journal.com/intro-42/",
-    "source": "Adventure-Journal.com",
-    "image": "/assets/fallback/lifestyle-2.jpg",
-    "date": "2026-09-16T19:27:38.824Z",
-    "category": "Lifestyle",
     "score": 8
   }
 ]
