@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-10-02T17:38:05.426Z",
+ "gegenereerd": "2026-10-03T04:17:40.168Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -67,20 +67,6 @@
      "categorie": "Environment",
      "dag": "2026-09-30",
      "url": "https://brightnews.online/articles/nl/nieuw-leven-oude-routes-en-een-dikke-beer-het-natuurnieuws-van-deze-dagen-dg-20260930-environment.html"
-    },
-    {
-     "id": "dg-20260929-lifestyle",
-     "titel": "Geven staat centraal: van luiers tot sokken en een nieuw baasje",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-29",
-     "url": "https://brightnews.online/articles/nl/geven-staat-centraal-van-luiers-tot-sokken-en-een-nieuw-baasje-dg-20260929-lifestyle.html"
-    },
-    {
-     "id": "dg-20260929-environment",
-     "titel": "Herstel in het wild: kikkers, olifanten en schildpadden krijgen een nieuwe kans",
-     "categorie": "Environment",
-     "dag": "2026-09-29",
-     "url": "https://brightnews.online/articles/nl/herstel-in-het-wild-kikkers-olifanten-en-schildpadden-krijgen-een-nieuwe-kans-dg-20260929-environment.html"
     }
    ]
   },
@@ -148,20 +134,6 @@
      "categorie": "Environment",
      "dag": "2026-09-30",
      "url": "https://brightnews.online/articles/en/new-life-old-routes-and-a-hefty-bear-this-week-s-nature-news-dg-20260930-environment.html"
-    },
-    {
-     "id": "dg-20260929-lifestyle",
-     "titel": "Giving takes center stage: from diapers to socks and a new home",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-29",
-     "url": "https://brightnews.online/articles/en/giving-takes-center-stage-from-diapers-to-socks-and-a-new-home-dg-20260929-lifestyle.html"
-    },
-    {
-     "id": "dg-20260929-environment",
-     "titel": "Recovery in the wild: frogs, elephants and turtles get a second chance",
-     "categorie": "Environment",
-     "dag": "2026-09-29",
-     "url": "https://brightnews.online/articles/en/recovery-in-the-wild-frogs-elephants-and-turtles-get-a-second-chance-dg-20260929-environment.html"
     }
    ]
   },
@@ -229,20 +201,6 @@
      "categorie": "Environment",
      "dag": "2026-09-30",
      "url": "https://brightnews.online/articles/de/neues-leben-alte-routen-und-ein-dicker-bar-die-naturmeldungen-dieser-tage-dg-20260930-environment.html"
-    },
-    {
-     "id": "dg-20260929-lifestyle",
-     "titel": "Geben steht im Mittelpunkt: von Windeln bis Socken und ein neues Zuhause",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-29",
-     "url": "https://brightnews.online/articles/de/geben-steht-im-mittelpunkt-von-windeln-bis-socken-und-ein-neues-zuhause-dg-20260929-lifestyle.html"
-    },
-    {
-     "id": "dg-20260929-environment",
-     "titel": "Rettung in der Wildnis: Frösche, Elefanten und Schildkröten bekommen eine zweite Chance",
-     "categorie": "Environment",
-     "dag": "2026-09-29",
-     "url": "https://brightnews.online/articles/de/rettung-in-der-wildnis-frosche-elefanten-und-schildkroten-bekommen-eine-zweite-c-dg-20260929-environment.html"
     }
    ]
   },
@@ -310,20 +268,6 @@
      "categorie": "Environment",
      "dag": "2026-09-30",
      "url": "https://brightnews.online/articles/fr/une-nouvelle-vie-des-routes-anciennes-et-un-gros-ours-les-nouvelles-de-la-nature-dg-20260930-environment.html"
-    },
-    {
-     "id": "dg-20260929-lifestyle",
-     "titel": "Donner est au cœur : des couches aux chaussettes et une nouvelle famille",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-29",
-     "url": "https://brightnews.online/articles/fr/donner-est-au-c-ur-des-couches-aux-chaussettes-et-une-nouvelle-famille-dg-20260929-lifestyle.html"
-    },
-    {
-     "id": "dg-20260929-environment",
-     "titel": "Restauration en milieu sauvage : les grenouilles, les éléphants et les tortues ont une nouvelle chance",
-     "categorie": "Environment",
-     "dag": "2026-09-29",
-     "url": "https://brightnews.online/articles/fr/restauration-en-milieu-sauvage-les-grenouilles-les-elephants-et-les-tortues-ont-dg-20260929-environment.html"
     }
    ]
   },
@@ -391,20 +335,6 @@
      "categorie": "Environment",
      "dag": "2026-09-30",
      "url": "https://brightnews.online/articles/es/vida-nueva-rutas-antiguas-y-un-oso-corpulento-las-noticias-de-naturaleza-de-esto-dg-20260930-environment.html"
-    },
-    {
-     "id": "dg-20260929-lifestyle",
-     "titel": "La generosidad en el centro: desde pañales hasta calcetines y una nueva familia",
-     "categorie": "Lifestyle",
-     "dag": "2026-09-29",
-     "url": "https://brightnews.online/articles/es/la-generosidad-en-el-centro-desde-panales-hasta-calcetines-y-una-nueva-familia-dg-20260929-lifestyle.html"
-    },
-    {
-     "id": "dg-20260929-environment",
-     "titel": "Recuperación en la naturaleza: ranas, elefantes y tortugas tienen una nueva oportunidad",
-     "categorie": "Environment",
-     "dag": "2026-09-29",
-     "url": "https://brightnews.online/articles/es/recuperacion-en-la-naturaleza-ranas-elefantes-y-tortugas-tienen-una-nueva-oportu-dg-20260929-environment.html"
     }
    ]
   }
