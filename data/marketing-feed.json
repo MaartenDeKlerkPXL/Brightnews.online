@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-10-03T04:17:40.168Z",
+ "gegenereerd": "2026-10-03T15:53:43.387Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -12,14 +12,6 @@
      "score": 10,
      "categorie": "Health",
      "url": "https://brightnews.online/articles/nl/ruim-vaderschapsverlof-verbetert-gezondheid-moeder-en-baby-1790915745699jdltmr09h.html"
-    },
-    {
-     "id": "1790829805595tcerjpnfc",
-     "titel": "Muziekonderwijs hangt samen met minder schoolverzuim in Rhode Island",
-     "teaser": "Een nieuw onderzoek van Quadrant Research, in opdracht van de Rhode Island State Council on the Arts, laat zien dat leerlingen die vier jaar lang muziekles volgen minder vaak chronisch afwezig zijn op school. Van de vierjarige muziekleerlingen was 25,4% chronisch afwezig, tegenover 37,3% van leerlingen zonder vier opeenvolgende jaren muziek. Voor kunstvakken in het algemeen was het verschil veel...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/muziekonderwijs-hangt-samen-met-minder-schoolverzuim-in-rhode-island-1790829805595tcerjpnfc.html"
     },
     {
      "id": "1790915722910dy2bhv992",
@@ -44,6 +36,14 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/weesneushoorn-chamboi-groeit-op-in-keniaanse-oase-1790878381747p9tmjsey9.html"
+    },
+    {
+     "id": "1790878357707kh42aq9k0",
+     "titel": "Apensanctuary in Mississippi helpt veteranen en geredde primaten helen",
+     "teaser": "In Mississippi runnen April Stewart en haar man, beiden veteranen, sinds oktober 2024 de Gulf Coast Primate Sanctuary. Op het 15 hectare grote terrein leven 22 geredde primaten, waaronder spinapen, doodshoofdaapjes en kinkajous, die vaak afkomstig zijn uit de illegale huisdierhandel, entertainment, dierentuinen of laboratoria. Een team van primatenspecialisten en vrijwilligers zorgt voor hen volgens de regels van het Animal...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/apensanctuary-in-mississippi-helpt-veteranen-en-geredde-primaten-helen-1790878357707kh42aq9k0.html"
     }
    ],
    "dagoverzichten": [
@@ -81,14 +81,6 @@
      "url": "https://brightnews.online/articles/en/extended-paternity-leave-improves-mother-and-baby-health-1790915745699jdltmr09h.html"
     },
     {
-     "id": "1790829805595tcerjpnfc",
-     "titel": "Music education linked to lower school absenteeism in Rhode Island",
-     "teaser": "A new study by Quadrant Research, commissioned by the Rhode Island State Council on the Arts, shows that students who take music lessons for four years are chronically absent from school less often. Among four-year music students, 25.4% were chronically absent, compared to 37.3% of students without four consecutive years of music. For arts subjects in general, the difference was...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/music-education-linked-to-lower-school-absenteeism-in-rhode-island-1790829805595tcerjpnfc.html"
-    },
-    {
      "id": "1790915722910dy2bhv992",
      "titel": "Retired FBI agent saves 100-year-old apple trees from extinction",
      "teaser": "Since his retirement in 2012, former FBI agent Dave Benscoter from Washington has been searching for nearly extinct apple varieties in the northwestern United States. After pruning trees at a parishioner's home, he discovered unknown apple species and delved into natural studies, family recipes, and old newspaper articles from agricultural fairs. Together with Joanie Cooper and Sean Shepherd from the...",
@@ -111,6 +103,14 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/en/orphaned-rhino-chamboi-grows-up-in-kenyan-oasis-1790878381747p9tmjsey9.html"
+    },
+    {
+     "id": "1790878357707kh42aq9k0",
+     "titel": "Primate sanctuary in Mississippi helps veterans and rescued primates heal",
+     "teaser": "In Mississippi, April Stewart and her husband, both veterans, have been running the Gulf Coast Primate Sanctuary since October 2024. On the 15-hectare grounds live 22 rescued primates, including spider monkeys, squirrel monkeys and kinkajous, often sourced from illegal pet trade, entertainment, zoos or laboratories. A team of primate specialists and volunteers care for them according to Animal Welfare Act...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/primate-sanctuary-in-mississippi-helps-veterans-and-rescued-primates-heal-1790878357707kh42aq9k0.html"
     }
    ],
    "dagoverzichten": [
@@ -148,14 +148,6 @@
      "url": "https://brightnews.online/articles/de/ausreichender-vaterschaftsurlaub-verbessert-gesundheit-von-mutter-und-baby-1790915745699jdltmr09h.html"
     },
     {
-     "id": "1790829805595tcerjpnfc",
-     "titel": "Musikunterricht hängt mit weniger Schulfehlzeiten in Rhode Island zusammen",
-     "teaser": "Eine neue Studie von Quadrant Research im Auftrag des Rhode Island State Council on the Arts zeigt, dass Schüler, die vier Jahre lang Musikunterricht erhalten, seltener chronisch in der Schule abwesend sind. Von den vierjährigen Musikschülern waren 25,4% chronisch abwesend, gegenüber 37,3% der Schüler ohne vier aufeinanderfolgende Jahre Musikunterricht. Bei Kunstfächern insgesamt war der Unterschied deutlich geringer: 1,9 Prozentpunkte. Der...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/musikunterricht-hangt-mit-weniger-schulfehlzeiten-in-rhode-island-zusammen-1790829805595tcerjpnfc.html"
-    },
-    {
      "id": "1790915722910dy2bhv992",
      "titel": "Pensionierter FBI-Agent rettet 100 Jahre alte Apfelbäume vor dem Aussterben",
      "teaser": "Seit seiner Pensionierung 2012 spürt der ehemalige FBI-Agent Dave Benscoter aus Washington fast ausgestorbene Apfelsorten im Nordwesten der USA auf. Nach dem Schneiden von Bäumen bei einem Gemeindemitglied entdeckte er unbekannte Apfelsorten und vertiefte sich in Naturstudien, Familienrezepte und alte Zeitungsberichte von Landwirtschaftsmessen. Zusammen mit Joanie Cooper und Sean Shepherd von der Temperate Orchard Conservancy analysiert er die DNA gefundener...",
@@ -178,6 +170,14 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/de/waisennashorn-chamboi-wachst-in-kenianischer-oase-auf-1790878381747p9tmjsey9.html"
+    },
+    {
+     "id": "1790878357707kh42aq9k0",
+     "titel": "Affensanktuar in Mississippi hilft Veteranen und geretteten Primaten zu heilen",
+     "teaser": "In Mississippi betreiben April Stewart und ihr Mann, beide Veteranen, seit Oktober 2024 das Gulf Coast Primate Sanctuary. Auf dem 15 Hektar großen Gelände leben 22 gerettete Primaten, darunter Klammeraffen, Totenkopfäffchen und Wickelbären, die häufig aus dem illegalen Heimtierhandel, der Unterhaltungsindustrie, Zoos oder Laboratorien stammen. Ein Team von Primatenfachleuten und Freiwilligen kümmert sich nach den Regeln des Animal Welfare Act...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/affensanktuar-in-mississippi-hilft-veteranen-und-geretteten-primaten-zu-heilen-1790878357707kh42aq9k0.html"
     }
    ],
    "dagoverzichten": [
@@ -215,14 +215,6 @@
      "url": "https://brightnews.online/articles/fr/un-conge-de-paternite-plus-long-ameliore-la-sante-de-la-mere-et-du-bebe-1790915745699jdltmr09h.html"
     },
     {
-     "id": "1790829805595tcerjpnfc",
-     "titel": "L'enseignement musical est associé à moins d'absentéisme scolaire à Rhode Island",
-     "teaser": "Une nouvelle étude de Quadrant Research, commandée par le Rhode Island State Council on the Arts, montre que les élèves qui suivent des cours de musique pendant quatre ans sont moins souvent absents de manière chronique à l'école. Parmi les élèves musiciens sur quatre ans, 25,4 % étaient absents de manière chronique, contre 37,3 % chez les élèves sans quatre...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/l-enseignement-musical-est-associe-a-moins-d-absenteisme-scolaire-a-rhode-island-1790829805595tcerjpnfc.html"
-    },
-    {
      "id": "1790915722910dy2bhv992",
      "titel": "Un ancien agent du FBI sauve des pommiers centenaires de l'extinction",
      "teaser": "Depuis sa retraite en 2012, Dave Benscoter, ancien agent du FBI de Washington, recherche des variétés de pommes presque disparues dans le nord-ouest des États-Unis. Après avoir taillé des arbres chez un paroissien, il a découvert des espèces de pommes inconnues et s'est plongé dans des études naturalistes, des recettes familiales et de vieux articles de journaux sur les salons...",
@@ -245,6 +237,14 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/fr/le-jeune-rhinoceros-orphelin-chamboi-grandit-dans-une-oasis-kenyane-1790878381747p9tmjsey9.html"
+    },
+    {
+     "id": "1790878357707kh42aq9k0",
+     "titel": "Un sanctuaire de primates au Mississippi aide les vétérans et les primates secourus à guérir",
+     "teaser": "Au Mississippi, April Stewart et son mari, tous deux vétérans, gèrent depuis octobre 2024 le Gulf Coast Primate Sanctuary. Sur le terrain de 15 hectares vivent 22 primates secourus, notamment des araignées, des singes hurleurs et des kinkajous, souvent issus du commerce illégal d'animaux de compagnie, du divertissement, de zoos ou de laboratoires. Une équipe de spécialistes des primates et...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/un-sanctuaire-de-primates-au-mississippi-aide-les-veterans-et-les-primates-secou-1790878357707kh42aq9k0.html"
     }
    ],
    "dagoverzichten": [
@@ -282,14 +282,6 @@
      "url": "https://brightnews.online/articles/es/el-permiso-de-paternidad-ampliado-mejora-la-salud-de-la-madre-y-el-bebe-1790915745699jdltmr09h.html"
     },
     {
-     "id": "1790829805595tcerjpnfc",
-     "titel": "La educación musical se asocia con menos absentismo escolar en Rhode Island",
-     "teaser": "Un nuevo estudio de Quadrant Research, encargado por el Rhode Island State Council on the Arts, muestra que los estudiantes que reciben clases de música durante cuatro años tienen menos ausencias crónicas en la escuela. Entre los estudiantes de música de cuatro años, el 25,4% faltaba crónicamente, en comparación con el 37,3% de los estudiantes sin cuatro años consecutivos de...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/la-educacion-musical-se-asocia-con-menos-absentismo-escolar-en-rhode-island-1790829805595tcerjpnfc.html"
-    },
-    {
      "id": "1790915722910dy2bhv992",
      "titel": "Agente jubilada del FBI salva de la extinción manzanos de 100 años",
      "teaser": "Desde su jubilación en 2012, el exagente del FBI Dave Benscoter de Washington busca variedades de manzanas casi extintas en el noroeste de Estados Unidos. Tras podar árboles en casa de un feligrés, descubrió especies de manzanas desconocidas e investigó estudios de historia natural, recetas familiares y antiguos artículos de periódicos sobre ferias agrícolas. Junto con Joanie Cooper y Sean...",
@@ -312,6 +304,14 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/es/el-rinoceronte-huerfano-chamboi-crece-en-un-oasis-de-kenia-1790878381747p9tmjsey9.html"
+    },
+    {
+     "id": "1790878357707kh42aq9k0",
+     "titel": "Santuario de primates en Mississippi ayuda a veteranos y animales rescatados a sanar",
+     "teaser": "En Mississippi, April Stewart y su esposo, ambos veteranos, dirigen desde octubre de 2024 el Gulf Coast Primate Sanctuary. En el terreno de 15 hectáreas viven 22 primates rescatados, entre ellos monos araña, monos cara blanca y kinkajús, que frecuentemente provienen del tráfico ilegal de mascotas, entretenimiento, zoológicos o laboratorios. Un equipo de especialistas en primates y voluntarios los cuida...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/santuario-de-primates-en-mississippi-ayuda-a-veteranos-y-animales-rescatados-a-s-1790878357707kh42aq9k0.html"
     }
    ],
    "dagoverzichten": [

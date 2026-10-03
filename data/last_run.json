@@ -1,8 +1,8 @@
 {
-  "start": "2026-10-03T04:16:55.674Z",
+  "start": "2026-10-03T15:52:55.989Z",
   "kandidaten": 263,
-  "alGezien": 260,
-  "tekstOpgehaald": 1,
+  "alGezien": 255,
+  "tekstOpgehaald": 3,
   "tekstTeKort": 0,
   "koopjeGeweigerd": 0,
   "sentimentGeweigerd": 0,
@@ -19,5 +19,5 @@
   "selectieOvergeslagen": 0,
   "selectieMismatch": 0,
   "perUitsluiting": {},
-  "einde": "2026-10-03T04:17:21.654Z"
+  "einde": "2026-10-03T15:53:24.482Z"
 }
