@@ -1,151 +1,26 @@
 {
- "gegenereerd": "2026-10-04T16:36:32.532Z",
+ "gegenereerd": "2026-10-05T04:37:08.312Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
-   "top": [
-    {
-     "id": "1790962649034k9gqz5jv7",
-     "titel": "BHP wint prijs voor 30 jaar nazorg bij Island Copper Mine",
-     "teaser": "In British Columbia heeft het BC Technical Research Committee on Reclamation (TRCR) zijn jaarlijkse Reclamation Award toegekend aan BHP, 's werelds grootste mijnbouwbedrijf, voor het werk aan de voormalige Island Copper Mine bij Port Hardy op Vancouver Island. De mijn, actief van 1971 tot 1995, had een hoofdput van ruim 1.320 voet diep en leverde onder meer koper, zilver, goud,...",
-     "score": 8,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/bhp-wint-prijs-voor-30-jaar-nazorg-bij-island-copper-mine-1790962649034k9gqz5jv7.html"
-    },
-    {
-     "id": "1790962626183fgaxwgrf0",
-     "titel": "Windturbines Ross Island besparen 122.000 gallons diesel",
-     "teaser": "Op Antarctica's Ross Island hebben drie windturbines in 15 jaar tijd ongeveer 122.000 gallons dieselverbruik bespaard. De Ross Island Wind Farm, gebouwd tussen 2008 en 2009 door het Nieuw-Zeelandse bedrijf Meridian Energy, voorziet het Amerikaanse McMurdo Station en de Nieuw-Zeelandse Scott Base van stroom. De speciaal ontworpen Enercon E33-turbines, elk goed voor 330 kilowatt, werden vastgezet op Crater Hill met...",
-     "score": 8,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/windturbines-ross-island-besparen-122-000-gallons-diesel-1790962626183fgaxwgrf0.html"
-    },
-    {
-     "id": "1790962599697ktmscal92",
-     "titel": "Britse Nationale Musea Blijven Gratis Voor Buitenlandse Bezoekers",
-     "teaser": "De Britse regering heeft besloten dat de 14 nationale musea, waaronder de National Gallery, het British Museum en het Natural History Museum, gratis toegankelijk blijven voor internationale bezoekers. Deze instellingen trekken samen tientallen miljoenen bezoekers per jaar. Het besluit volgt op maanden van overleg tussen ministeries, de toerismesector en Londense musea, na een onafhankelijk rapport van oud-Labour-minister Margaret Hodge in...",
-     "score": 8,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/britse-nationale-musea-blijven-gratis-voor-buitenlandse-bezoekers-1790962599697ktmscal92.html"
-    }
-   ],
+   "top": [],
    "dagoverzichten": []
   },
   "en": {
-   "top": [
-    {
-     "id": "1790962649034k9gqz5jv7",
-     "titel": "BHP wins award for 30 years of aftercare at Island Copper Mine",
-     "teaser": "In British Columbia, the BC Technical Research Committee on Reclamation (TRCR) has awarded its annual Reclamation Award to BHP, the world's largest mining company, for its work at the former Island Copper Mine near Port Hardy on Vancouver Island. The mine, which operated from 1971 to 1995, featured a main pit more than 1,320 feet deep and produced copper, silver,...",
-     "score": 8,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/bhp-wins-award-for-30-years-of-aftercare-at-island-copper-mine-1790962649034k9gqz5jv7.html"
-    },
-    {
-     "id": "1790962626183fgaxwgrf0",
-     "titel": "Wind turbines on Ross Island save 122,000 gallons of diesel",
-     "teaser": "Three wind turbines on Antarctica's Ross Island have saved approximately 122,000 gallons of diesel consumption over 15 years. The Ross Island Wind Farm, built between 2008 and 2009 by New Zealand company Meridian Energy, supplies power to the American McMurdo Station and the New Zealand Scott Base. The specially designed Enercon E33 turbines, each producing 330 kilowatts, were anchored on...",
-     "score": 8,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/wind-turbines-on-ross-island-save-122-000-gallons-of-diesel-1790962626183fgaxwgrf0.html"
-    },
-    {
-     "id": "1790962599697ktmscal92",
-     "titel": "British National Museums remain free for foreign visitors",
-     "teaser": "The British government has decided that the 14 national museums, including the National Gallery, the British Museum and the Natural History Museum, will remain free for international visitors. These institutions attract tens of millions of visitors combined each year. The decision follows months of consultation between government departments, the tourism sector and London museums, following an independent report by former...",
-     "score": 8,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/british-national-museums-remain-free-for-foreign-visitors-1790962599697ktmscal92.html"
-    }
-   ],
+   "top": [],
    "dagoverzichten": []
   },
   "de": {
-   "top": [
-    {
-     "id": "1790962649034k9gqz5jv7",
-     "titel": "BHP gewinnt Preis für 30 Jahre Nachsorge bei Island Copper Mine",
-     "teaser": "In British Columbia hat das BC Technical Research Committee on Reclamation (TRCR) seinen jährlichen Reclamation Award an BHP, das weltweit größte Bergbauunternehmen, verliehen. Die Auszeichnung würdigt die Arbeiten an der ehemaligen Island Copper Mine bei Port Hardy auf Vancouver Island. Die Mine, die von 1971 bis 1995 aktiv war, hatte einen Hauptschacht von über 1.320 Fuß Tiefe und förderte unter...",
-     "score": 8,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/bhp-gewinnt-preis-fur-30-jahre-nachsorge-bei-island-copper-mine-1790962649034k9gqz5jv7.html"
-    },
-    {
-     "id": "1790962626183fgaxwgrf0",
-     "titel": "Windkraftanlagen auf Ross Island sparen 122.000 Gallonen Diesel",
-     "teaser": "Auf der Ross Island in der Antarktis haben drei Windkraftanlagen in 15 Jahren etwa 122.000 Gallonen Dieselverbrauch eingespart. Der Ross Island Wind Farm, zwischen 2008 und 2009 vom neuseeländischen Unternehmen Meridian Energy errichtet, versorgt die amerikanische McMurdo Station und die neuseeländische Scott Base mit Strom. Die speziell konstruierten Enercon E33-Turbinen mit je 330 Kilowatt Leistung wurden auf dem Crater Hill...",
-     "score": 8,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/windkraftanlagen-auf-ross-island-sparen-122-000-gallonen-diesel-1790962626183fgaxwgrf0.html"
-    },
-    {
-     "id": "1790962599697ktmscal92",
-     "titel": "Britische Nationalmuseen bleiben für ausländische Besucher kostenlos",
-     "teaser": "Die britische Regierung hat entschieden, dass die 14 Nationalmuseen, darunter die National Gallery, das British Museum und das Natural History Museum, für internationale Besucher weiterhin kostenlos zugänglich bleiben. Diese Institutionen ziehen zusammen jährlich Dutzende Millionen Besucher an. Die Entscheidung folgt auf monatelange Gespräche zwischen Ministerien, dem Tourismussektor und Londoner Museen, nachdem ein unabhängiger Bericht der ehemaligen Labour-Ministerin Margaret Hodge im...",
-     "score": 8,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/britische-nationalmuseen-bleiben-fur-auslandische-besucher-kostenlos-1790962599697ktmscal92.html"
-    }
-   ],
+   "top": [],
    "dagoverzichten": []
   },
   "fr": {
-   "top": [
-    {
-     "id": "1790962649034k9gqz5jv7",
-     "titel": "BHP remporte un prix pour 30 ans de restauration à Island Copper Mine",
-     "teaser": "En Colombie-Britannique, le BC Technical Research Committee on Reclamation (TRCR) a décerné son prix annuel de restauration à BHP, le plus grand groupe minier du monde, pour ses travaux à la mine Island Copper Mine, anciennement exploitée, située près de Port Hardy sur l'île de Vancouver. La mine, active de 1971 à 1995, disposait d'un puits principal dépassant 1 320...",
-     "score": 8,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/bhp-remporte-un-prix-pour-30-ans-de-restauration-a-island-copper-mine-1790962649034k9gqz5jv7.html"
-    },
-    {
-     "id": "1790962626183fgaxwgrf0",
-     "titel": "Les éoliennes de Ross Island économisent 122.000 gallons de diesel",
-     "teaser": "Sur l'île de Ross en Antarctique, trois éoliennes ont économisé environ 122.000 gallons de consommation de diesel en 15 ans. La Ross Island Wind Farm, construite entre 2008 et 2009 par l'entreprise néo-zélandaise Meridian Energy, fournit l'électricité à la station McMurdo américaine et à la base Scott néo-zélandaise. Les turbines Enercon E33 spécialement conçues, chacune capable de produire 330 kilowatts,...",
-     "score": 8,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/les-eoliennes-de-ross-island-economisent-122-000-gallons-de-diesel-1790962626183fgaxwgrf0.html"
-    },
-    {
-     "id": "1790962599697ktmscal92",
-     "titel": "Les musées nationaux britanniques restent gratuits pour les visiteurs étrangers",
-     "teaser": "Le gouvernement britannique a décidé que les 14 musées nationaux, dont la National Gallery, le British Museum et le Natural History Museum, resteraient gratuits pour les visiteurs internationaux. Ces institutions attirent ensemble des dizaines de millions de visiteurs par an. Cette décision intervient après plusieurs mois de consultations entre les ministères, le secteur du tourisme et les musées londoniens, suite...",
-     "score": 8,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/les-musees-nationaux-britanniques-restent-gratuits-pour-les-visiteurs-etrangers-1790962599697ktmscal92.html"
-    }
-   ],
+   "top": [],
    "dagoverzichten": []
   },
   "es": {
-   "top": [
-    {
-     "id": "1790962649034k9gqz5jv7",
-     "titel": "BHP gana premio por 30 años de restauración en Island Copper Mine",
-     "teaser": "En British Columbia, el BC Technical Research Committee on Reclamation (TRCR) ha otorgado su premio anual de restauración a BHP, la mayor empresa minera del mundo, por su trabajo en la antigua Island Copper Mine cerca de Port Hardy en Vancouver Island. La mina, activa de 1971 a 1995, contaba con un pozo principal de más de 1.320 pies de...",
-     "score": 8,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/bhp-gana-premio-por-30-anos-de-restauracion-en-island-copper-mine-1790962649034k9gqz5jv7.html"
-    },
-    {
-     "id": "1790962626183fgaxwgrf0",
-     "titel": "Aerogeneradores de Ross Island ahorran 122.000 galones de diésel",
-     "teaser": "En la isla Ross de la Antártida, tres aerogeneradores han ahorrado aproximadamente 122.000 galones de consumo de diésel en 15 años. La Ross Island Wind Farm, construida entre 2008 y 2009 por la empresa neozelandesa Meridian Energy, suministra electricidad a la estación estadounidense McMurdo Station y a la base neozelandesa Scott Base. Los aerogeneradores Enercon E33 especialmente diseñados, cada uno...",
-     "score": 8,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/aerogeneradores-de-ross-island-ahorran-122-000-galones-de-diesel-1790962626183fgaxwgrf0.html"
-    },
-    {
-     "id": "1790962599697ktmscal92",
-     "titel": "Los museos nacionales británicos siguen siendo gratuitos para visitantes extranjeros",
-     "teaser": "El gobierno británico ha decidido que los 14 museos nacionales, entre ellos la National Gallery, el British Museum y el Natural History Museum, seguirán siendo de acceso gratuito para los visitantes internacionales. Estas instituciones atraen conjuntamente decenas de millones de visitantes al año. La decisión llega tras meses de consultas entre ministerios, el sector turístico y los museos londinenses, después...",
-     "score": 8,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/los-museos-nacionales-britanicos-siguen-siendo-gratuitos-para-visitantes-extranj-1790962599697ktmscal92.html"
-    }
-   ],
+   "top": [],
    "dagoverzichten": []
   }
  }
