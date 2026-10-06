@@ -1198,7 +1198,7 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   plakken en de verzenddienst is een DNS-instelling plus een secret — allebei
   dingen die Maarten zelf heeft.)*
 
-- [ ] **61. Levenscyclusmails — blijkt géén code te vragen (2026-09-28).**
+- [ ] **61. Levenscyclusmails — grotendeels ingesteld, drie checks open (2026-10-06).**
   *(Besluit Maarten 2026-09-27: doen.)*
 
   Dit punt stond op "Erik: het raakt Stripe en Supabase". **Nagekeken, en dat
@@ -1211,6 +1211,38 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   | **Mislukte betaling** | Settings → Billing → Subscriptions and emails | "Send emails about failed payments" aan, plus Smart Retries. Dit is verreweg de belangrijkste: een verlopen kaart is een abonnee die je verliest zonder dat hij dat wilde |
   | **Proefperiode loopt af** | dezelfde pagina | "Send trial ending notifications" — Stripe mailt 7 dagen vooraf. Bij 30 dagen proef is dat precies waar het moet |
   | **Iemand zegt op** | Settings → Billing → Customer portal → Cancellations | "Ask for a cancellation reason" aan. De antwoorden komen in Stripe zelf te staan |
+
+  ### Stand 2026-10-06 — grotendeels ingesteld, drie dingen nog te bevestigen
+
+  Maarten heeft het dashboard doorgelopen. **Gecontroleerd op screenshots:**
+
+  - *Revenue recovery → Emails*: mail bij mislukte kaartbetaling aan, met een
+    Stripe-pagina om de kaart te vervangen. Mail bij verlopende kaarten aan.
+  - *Revenue recovery → Retries*: voor kaarten staat een retrybeleid. Na een
+    mislukte verlenging blijft het abonnement *overdue* (de klant houdt toegang
+    zolang Stripe het opnieuw probeert). Als alle pogingen mislukken: **cancel
+    the subscription**. Dat is bewust zo gekozen, want de webhook leidt
+    `is_premium` af uit de status, en een abonnement dat eeuwig onbetaald
+    openstaat geeft een halve toestand.
+  - *Customer portal → Cancellations*: opzeggen kan, **aan het einde van de
+    betaalperiode**, de opzegreden wordt gevraagd en er is bewust **geen**
+    retention coupon. Eerst wil je weten waarom mensen weggaan.
+
+  **Nog niet bevestigd:**
+
+  1. Bij *Expiring cards email* stond **"Use custom link: BrightNews.online"**.
+     Daarmee komt een klant op de homepage, waar hij niets kan bijwerken, en
+     zonder `https://` is het niet eens een geldige link. Dat moet **Link to a
+     Stripe hosted page** worden.
+  2. De **herinnering 7 dagen voor het einde van de proefperiode** staat niet
+     onder Revenue recovery maar onder *Settings → Billing → Subscriptions and
+     emails* (`dashboard.stripe.com/settings/billing/automatic`).
+  3. **Welke betaalmethodes er op de Payment Links staan.** *Local payment
+     methods* heeft geen retries, en de mail bij een mislukte *bank debit*
+     staat uit. Bij alleen kaarten is dat irrelevant. Staat iDEAL of SEPA aan,
+     dan moeten beide aan, want elke vervolgbetaling na een iDEAL-start is een
+     SEPA-incasso. In de code wordt iDEAL nergens genoemd; dat regel je in
+     Stripe zelf.
 
   **Dit is dus een kwartiertje in het dashboard, Maarten, en het is van jou.**
   Ik kan het niet voor je doen: ik klik niet in je Stripe-account.
