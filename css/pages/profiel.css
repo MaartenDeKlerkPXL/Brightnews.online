@@ -190,6 +190,7 @@ body {
 }
 .custom-modal {
     animation: fadeIn 0.3s ease-out;
+    -webkit-backdrop-filter: blur(4px); /* Safari vóór iOS 18 kent alleen deze (punt 64) */
     backdrop-filter: blur(4px); /* Maakt de achtergrond wazig, erg chic! */
 }
 

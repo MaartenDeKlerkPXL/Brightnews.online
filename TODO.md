@@ -1251,7 +1251,7 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   plaats van Stripe's standaardmail. Dat is een luxe-versie van iets wat dan al
   werkt, en het kan later mee met de verzenddienst uit punt 60 — niet nu.
 
-- [ ] **64. De site loopt niet helemaal goed op iPhone in Safari.**
+- [x] **64. De site loopt niet helemaal goed op iPhone in Safari — drie fixes, daarna niets meer gevonden (2026-10-06).**
   *(Gemeld door Maarten, 2026-09-28.)*
 
   Maarten ziet op zijn iPhone dat de weergave niet klopt. **Wat er precies
@@ -1311,9 +1311,24 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   `CACHE_NAME` → v38 (`global.css`, `components.css` en `index.html` staan in
   de precache).
 
-  **Nog open: verdachte 2, 3 en 4** (`backdrop-filter`, de vaste
-  navigatiebalk, `safe-area-inset`). Die geven elk een ander symptoom, en
-  daar is de melding van Maarten voor nodig: welke pagina en wát er misgaat.
+  **Verdachte 2 — `backdrop-filter` (2026-10-06).** Stond op vier plekken
+  zónder `-webkit-backdrop-filter`. Safari kent de versie zonder voorvoegsel
+  pas sinds iOS 18; op oudere iPhones werd het wazige glasvlak dus niet
+  getekend. Nu staat de `-webkit-`-variant ernaast in `pages/artikel.css`
+  (×2), `pages/profiel.css` en de verwijdermodal in `profiel.html`. Geen van
+  die bestanden staat in de precache, dus geen bump.
+
+  **Maarten heeft daarna op telefoon én Mac Mini getest, in Chrome én Safari,
+  en niets meer gevonden.** Wat hij op 28 september zag is niet meer terug te
+  halen; het kan zijn dat de fixes van 2 oktober het al oplosten. Dat
+  verklaart ook waarom het `backdrop-filter`-gat op zijn toestel niet
+  opviel: dat heeft een recente iOS-versie.
+
+  **Niet aangepakt, bewust:** verdachte 3 (de vaste navigatiebalk) en 4
+  (`safe-area-inset`). Zonder symptoom is dat gokken, en de viewport-meta
+  heeft geen `viewport-fit=cover`, dus `env(safe-area-inset-*)` is overal
+  0 en Safari houdt zelf de homebar vrij. **Komt er weer iets boven, heropen
+  dit punt met de pagina en wat er misgaat.**
 
   ### Waarom dit vóór de lancering moet
 
