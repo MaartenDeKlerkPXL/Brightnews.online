@@ -1198,7 +1198,7 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   plakken en de verzenddienst is een DNS-instelling plus een secret — allebei
   dingen die Maarten zelf heeft.)*
 
-- [ ] **61. Levenscyclusmails — grotendeels ingesteld, drie checks open (2026-10-06).**
+- [x] **61. Levenscyclusmails — ingesteld in Stripe (2026-10-06).**
   *(Besluit Maarten 2026-09-27: doen.)*
 
   Dit punt stond op "Erik: het raakt Stripe en Supabase". **Nagekeken, en dat
@@ -1243,6 +1243,25 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      dan moeten beide aan, want elke vervolgbetaling na een iDEAL-start is een
      SEPA-incasso. In de code wordt iDEAL nergens genoemd; dat regel je in
      Stripe zelf.
+
+  ### ✅ Afgerond 2026-10-06
+
+  De drie open checks hierboven zijn opgelost. De link bij verlopende kaarten
+  gaat naar een Stripe-pagina, de mail bij een mislukte *bank debit* staat
+  aan, en de herinnering 7 dagen vóór het einde van de proefperiode staat aan.
+
+  **Dezelfde homepage-link zat op een tweede plek**: op *Subscriptions and
+  emails* stond *Payment method updates* op "Use a mix of both (Legacy)", en
+  daarmee wees de trial-herinnering naar `BrightNews.online`. Die staat nu op
+  een Stripe-pagina. Ook staat *"Include a link for customers to manage their
+  subscriptions"* aan, zodat in elke mail een opzeglink staat. Dat scheelt
+  terugboekingen van mensen die niet weten hoe ze moeten opzeggen.
+
+  De proefperiode en de betaalmethodes op de Payment Links zijn door Maarten
+  nagelopen, maar niet op een screenshot bekeken. De producten zelf tonen
+  "No trials"; dat klopt, want de trial staat op de Payment Link en niet op
+  het product. Het echte bewijs volgt bij punt 31, als de keten één keer in
+  het echt wordt doorlopen.
 
   **Dit is dus een kwartiertje in het dashboard, Maarten, en het is van jou.**
   Ik kan het niet voor je doen: ik klik niet in je Stripe-account.
