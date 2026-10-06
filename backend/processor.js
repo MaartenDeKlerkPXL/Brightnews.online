@@ -90,10 +90,54 @@ async function haalArtikelTekst(pageUrl, maxLen = 1200) {
         // JS-blokken bínnen een <p> mee, waardoor Sciencenews (80%) en
         // BBC-culture (21%) "onleesbare" snippets kregen en de selectie
         // die items op inhoudsloosheid afwees (analyse 2026-09-10, bev. 4).
-        const html = (await res.text()).slice(0, 300000)
+        let html = (await res.text()).slice(0, 300000)
             .replace(/<script[\s\S]*?<\/script>/gi, ' ')
             .replace(/<style[\s\S]*?<\/style>/gi, ' ')
             .replace(/<noscript[\s\S]*?<\/noscript>/gi, ' ');
+
+        // Paginaschil weg vóór we naar alinea's zoeken. Zonder dit leverde
+        // Sciencenews "Skip to content Subscribe today Every print
+        // subscription comes with full digital access…" op en NPR
+        // "Accessibility links Skip to main content Keyboard shortcuts for
+        // audio player…" — 1200 tekens menu waar het selectiemodel terecht
+        // "te-weinig-inhoud" van maakte. Dat verklaart 12 van de 13
+        // afwijzingen bij Sciencenews en 9 van de 32 bij NPR (gemeten
+        // 2026-09-29 in data/selectie-log.json), en daarmee ook waarom de
+        // wetenschapsbronnen structureel uitvielen.
+        html = html
+            .replace(/<header[\s\S]*?<\/header>/gi, ' ')
+            .replace(/<nav[\s\S]*?<\/nav>/gi, ' ')
+            .replace(/<footer[\s\S]*?<\/footer>/gi, ' ')
+            .replace(/<aside[\s\S]*?<\/aside>/gi, ' ')
+            .replace(/<form[\s\S]*?<\/form>/gi, ' ');
+
+        // Staat er een <article> of <main>, kijk dan alléén daarin: daar
+        // staan promotieblokken en "lees ook"-lijsten per definitie buiten.
+        // Wél de ínhoudrijkste nemen en niet de eerste — NPR opent met een
+        // <article> dat alleen de auteursnaam bevat, en dan zou je precies
+        // het verkeerde blok kiezen. Meten op de som van de alinea's, want
+        // een blok kan lang zijn van de opmaak en leeg van de tekst.
+        const alineaMassa = fragment => {
+            let n = 0;
+            for (const p of fragment.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)) {
+                n += p[1].replace(/<[^>]+>/g, ' ').trim().length;
+            }
+            return n;
+        };
+        let beste = null;
+        let besteMassa = 0;
+        for (const re of [/<article[^>]*>([\s\S]*?)<\/article>/gi, /<main[^>]*>([\s\S]*?)<\/main>/gi]) {
+            for (const m of html.matchAll(re)) {
+                const massa = alineaMassa(m[1]);
+                if (massa > besteMassa) { besteMassa = massa; beste = m[1]; }
+            }
+        }
+        if (beste && besteMassa >= 400) html = beste;
+
+        // Zinnen die nooit uit een artikel komen. Eén regel is genoeg om een
+        // hele "alinea" te diskwalificeren, want als dit erin staat is het
+        // een promo- of navigatieblok dat per ongeluk in een <p> zit.
+        const SCHIL = /skip to (content|main)|subscribe today|sign up for|newsletter|keyboard shortcuts|accessibility links|cookie|privacy policy|all rights reserved|©\s*\d{4}/i;
         const lijktCode = t => /[{};]|window\.|document\.|function\s*\(/.test(t);
         const alineas = [];
         for (const m of html.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)) {
@@ -101,7 +145,9 @@ async function haalArtikelTekst(pageUrl, maxLen = 1200) {
                 .replace(/\s+/g, ' ').trim();
             // korte <p>'s zijn vrijwel altijd navigatie/bijschriften;
             // code-achtige alinea's zijn restanten van ad-/consent-scripts
-            if (tekst.length >= 80 && !lijktCode(tekst)) alineas.push(tekst);
+            if (tekst.length >= 80 && !lijktCode(tekst) && !SCHIL.test(tekst)) {
+                alineas.push(tekst);
+            }
             if (alineas.join(' ').length > maxLen) break;
         }
         let tekst = alineas.join(' ');
@@ -318,7 +364,14 @@ const FEEDS = [
     { name: 'GoodNewsNetwork.org', url: 'https://www.goodnewsnetwork.org/category/news/feed/' },
     { name: 'ReasonsToBeCheerful.world', url: 'https://reasonstobecheerful.world/feed/' },
     { name: 'OptimistDaily.com', url: 'https://www.optimistdaily.com/feed/' },
-    { name: 'Squirrel-News.net', url: 'https://squirrel-news.net/feed/' },
+    // Squirrel-News eruit op 2026-09-29: 8 van de 8 beoordelingen afgewezen,
+    // állemaal als "verzameleditie". Dat is geen pech maar bouw — die site ís
+    // een linklijst-nieuwsbrief, en BrightNews maakt eigen dagoverzichten.
+    // Hij zou dus nooit iets opleveren, terwijl hij elke run wel wordt
+    // opgehaald en beoordeeld. Andere bronnen met 0% deze week blijven juist
+    // staan: ReasonsToBeCheerful zit over 300 beoordelingen op 47% en had
+    // toevallig een slechte week.
+    // { name: 'Squirrel-News.net', url: 'https://squirrel-news.net/feed/' },
     { name: 'GoodGoodGood.co', url: 'https://www.goodgoodgood.co/articles/rss.xml' },
     { name: 'YesMagazine.org', url: 'https://www.yesmagazine.org/feed' },
     // wetenschap, natuur & milieu met echte verhalen

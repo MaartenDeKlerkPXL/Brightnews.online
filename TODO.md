@@ -1219,6 +1219,83 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   plaats van Stripe's standaardmail. Dat is een luxe-versie van iets wat dan al
   werkt, en het kan later mee met de verzenddienst uit punt 60 — niet nu.
 
+- [x] **65. De scraper las het menu in plaats van het artikel (2026-09-29).**
+
+  Het W40-rapport adviseerde zeven bronnen met 0% acceptatie te schrappen.
+  **Dat advies was voor de helft fout**, en dat is de moeite waard om te
+  bewaren: het las één week met steekproeven van drie of vier items.
+  `data/selectie-log.json` (300 beoordelingen) zegt iets anders.
+
+  | Bron | W40 | Over 300 beoordelingen |
+  |---|---|---|
+  | ReasonsToBeCheerful | 0% | **8 van 17 = 47%** |
+  | Theecologist | 0% | 4 van 13 = 31% |
+  | Openaccessgovernment | 0% | 2 van 23 = 9% |
+  | Sciencenews | 0% | 0 van 13 |
+  | Squirrel-News | 0% | 0 van 8 |
+
+  ReasonsToBeCheerful is over de hele periode een van de **beste** bronnen.
+  Het advies opvolgen zou hem hebben weggegooid op drie ongelukkige items.
+
+  ### De echte vondst
+
+  Bij Sciencenews waren **12 van de 13 afwijzingen "te-weinig-inhoud"**, bij
+  NPR 9 van de 32. Dat is geen redactioneel oordeel maar een technisch
+  gebrek, en nameten liet zien wat er misging:
+
+  ```
+  Sciencenews → "Skip to content Subscribe today Every print subscription…"
+  NPR         → "Accessibility links Skip to main content Keyboard shortcuts…"
+  ```
+
+  **De scraper haalde 1.200 tekens navigatiemenu op en gaf dát aan het
+  selectiemodel.** Dat model deed precies wat het moest: het zag geen verhaal
+  en wees af. De schuld lag drie stappen eerder.
+
+  Dit is de rest van bevinding 4 uit `backend/selectie-prompt-analyse.md`. De
+  reparatie van 2026-09-10 haalde scripts en styles weg — echt, maar niet
+  genoeg, en het log liep dóór na die datum zonder verbetering.
+
+  ### Wat er veranderd is in `haalArtikelTekst()`
+
+  1. `<header>`, `<nav>`, `<footer>`, `<aside>` en `<form>` gaan eruit vóór
+     er naar alinea's wordt gezocht.
+  2. Staat er een `<article>` of `<main>`, dan wordt alléén daarin gekeken —
+     maar **de inhoudrijkste, niet de eerste.** NPR opent met een `<article>`
+     dat enkel de auteursnaam bevat; op "de eerste" zou je precies het
+     verkeerde blok kiezen. Er wordt gemeten op de som van de alinea's, want
+     een blok kan lang zijn van de opmaak en leeg van de tekst.
+  3. Een zwarte lijst van regels die nooit uit een artikel komen
+     ("skip to content", "subscribe today", "keyboard shortcuts"…).
+
+  **Nagemeten:** Sciencenews van menutekst naar 661 tekens echt artikel, NPR
+  naar 1.200. Daarnaast acht bronnen met de oude én de nieuwe functie naast
+  elkaar gezet op hun nieuwste artikel — Positive.News, GoodNewsNetwork,
+  GoodGoodGood, OptimistDaily, ReasonsToBeCheerful, Theecologist, BBC Culture
+  en Openaccessgovernment. **Alle acht identiek** (1200 tekens, bij
+  Positive.News 1199 tegen 1200). Er is dus niets gesneuveld dat het al deed.
+
+  ### En één bron is er wél uit
+
+  **Squirrel-News.net**: 8 van de 8 afgewezen, állemaal als "verzameleditie".
+  Dat is geen pech maar bouw — die site ís een linklijst-nieuwsbrief, en
+  BrightNews maakt eigen dagoverzichten. Hij kon dus nooit iets opleveren
+  terwijl hij elke run wel werd opgehaald en beoordeeld. Uitgecommentarieerd
+  met de reden erbij, niet verwijderd.
+
+  ### Wat dit voor de categoriescheefheid betekent
+
+  W40 telde **Environment 22 van de 44** tegenover Finance 1 en Tech 1. Die
+  scheefheid volgde uit de bronmix: GoodGoodGood en GoodNewsNetwork leverden
+  41 van de 44 en leunen allebei op milieu — juist omdat de
+  wetenschapsbronnen stelselmatig op een technisch gebrek uitvielen.
+  **Of dit de verdeling echt rechttrekt is een voorspelling, geen meting.**
+  Kijk bij W41 of Science en Tech omhoog gaan; zo niet, dan is het alsnog
+  redactioneel en hoort het in de prompt.
+
+  *(Erik: dit raakt `backend/processor.js`, dus het gaat als PR langs je. De
+  bronkeuze zelf — welke feeds erin horen — blijft een gezamenlijk besluit.)*
+
 - [ ] **64. De site loopt niet helemaal goed op iPhone in Safari.**
   *(Gemeld door Maarten, 2026-09-28.)*
 
