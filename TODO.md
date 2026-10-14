@@ -286,6 +286,25 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   768px. *(Maarten)*
 
 - [ ] **26. Anthropic: auto-reload aanzetten en key-eigendom beslissen.**
+
+  > 🚨 **STORING SINDS 2026-10-03 — het tegoed is opnieuw op.** Ontdekt op
+  > 2026-10-14, na elf dagen. Elke nieuws-run faalt: `aiCalls 0`,
+  > `geaccepteerd 0`, en het nieuwste artikel op de site is van **2 oktober**.
+  > De nachtelijke beoordeling faalt elke nacht met *"Your credit balance is
+  > too low"*, en de postfabriek schrijft geen nieuwe concepten meer. Dat is
+  > precies de storing van 10–13 september, maar dan vier keer zo lang.
+  >
+  > **Het alarm werkte wél** (alle runs staan rood), maar GitHub mailt een
+  > mislukte geplande workflow alleen naar wie de planning het laatst wijzigde,
+  > en niemand zag het. Een rood kruisje dat niemand ziet is geen alarm.
+  >
+  > **Snelste herstel:** wie bij de console kan waar de sleutel aan hangt,
+  > laadt tegoed bij en zet auto-reload aan; daarna de nieuws-Action handmatig
+  > draaien. De sleutel staat op Eriks account. Alternatief zonder Erik: Maarten
+  > maakt een eigen organisatie in `console.anthropic.com`, zet er een
+  > betaalmethode met auto-reload op, maakt een nieuwe sleutel en zet die als
+  > GitHub-secret `ANTHROPIC_API_KEY`. Daarmee is meteen onderdeel (b) van dit
+  > punt beslist.
   De storing van 10–13 september was een lege kredietbalans; de key blijkt op
   Eriks account te staan (Maartens console heeft geen organisatie). Erik:
   (a) zet auto-reload aan in console.anthropic.com → Billing, en (b) beslis
