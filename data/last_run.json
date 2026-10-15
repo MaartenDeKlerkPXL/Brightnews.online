@@ -1,11 +1,11 @@
 {
-  "start": "2026-10-15T03:39:22.883Z",
+  "start": "2026-10-15T16:30:05.327Z",
   "kandidaten": 263,
-  "alGezien": 153,
-  "tekstOpgehaald": 50,
+  "alGezien": 147,
+  "tekstOpgehaald": 54,
   "tekstTeKort": 0,
   "koopjeGeweigerd": 0,
-  "sentimentGeweigerd": 1,
+  "sentimentGeweigerd": 9,
   "selectieAfgewezen": 0,
   "selectieHerkansing": 0,
   "aiCalls": 0,
@@ -16,8 +16,8 @@
   "opslaanMislukt": 0,
   "feedFouten": 0,
   "selectieFouten": 2,
-  "selectieOvergeslagen": 89,
+  "selectieOvergeslagen": 87,
   "selectieMismatch": 0,
   "perUitsluiting": {},
-  "einde": "2026-10-15T03:40:33.906Z"
+  "einde": "2026-10-15T16:30:56.205Z"
 }
