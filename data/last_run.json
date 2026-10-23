@@ -1,11 +1,11 @@
 {
-  "start": "2026-10-22T16:47:50.866Z",
+  "start": "2026-10-23T03:47:52.927Z",
   "kandidaten": 263,
-  "alGezien": 136,
-  "tekstOpgehaald": 55,
+  "alGezien": 137,
+  "tekstOpgehaald": 54,
   "tekstTeKort": 0,
   "koopjeGeweigerd": 0,
-  "sentimentGeweigerd": 2,
+  "sentimentGeweigerd": 1,
   "selectieAfgewezen": 0,
   "selectieHerkansing": 0,
   "aiCalls": 0,
@@ -19,5 +19,5 @@
   "selectieOvergeslagen": 105,
   "selectieMismatch": 0,
   "perUitsluiting": {},
-  "einde": "2026-10-22T16:48:44.363Z"
+  "einde": "2026-10-23T03:48:46.777Z"
 }
