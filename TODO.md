@@ -1617,9 +1617,13 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      `/abonnementen.html` zonder het gekozen plan. Een `?plan=jaarlijks` of
      `maandelijks` daar oppakken scheelt de lezer een keuze.
   8. **Bij de lancering:** de v5-pagina's hernoemen naar de echte adressen
-     (`index.html`, `archief.html`, het artikelsjabloon), de
-     "Nieuws"/"Archief"-markering in de header volgt dan vanzelf, en de
-     onderwerplinks wijzen nog naar de categoriepagina's met de oude chips.
+     (`index.html`, `archief.html`, het artikelsjabloon) en die adressen in
+     `partials/v5/` en `js/v5/gedeeld.js` (`url`) zetten. Sinds 2026-10-29
+     linken de v5-pagina's alleen naar elkaar; een pagina die in v5 nog niet
+     bestaat (Thema's, Over ons, Inloggen, Premium, de categorieën, de
+     footerpagina's, artikelen van vóór de feed) staat er zonder link. Ook
+     de koppen van een oudere editie zijn daardoor nog geen links, terwijl
+     de uitlegnotitie zegt dat elke kop het artikel opent.
 
   ### Opruimen in Figma als v3 gekozen is
 

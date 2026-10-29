@@ -266,27 +266,15 @@
 
     // ── Adressen ─────────────────────────────────────────────────────────
 
-    function maakSlug(tekst) {
-        return String(tekst).toLowerCase()
-            .normalize('NFKD').replace(/[̀-ͯ]/g, '')
-            .replace(/[^a-z0-9]+/g, '-')
-            .replace(/^-+|-+$/g, '')
-            .slice(0, 80).replace(/-+$/, '');
-    }
-
-    // De voorbeeldpagina's linken naar elkaar.
+    // De voorbeeldpagina's linken alleen naar elkaar. Bestaat een pagina in
+    // v5 nog niet (categorie, thema, abonnementen, een artikel van vóór de
+    // feed), dan krijgt de link geen adres: null.
     const url = {
         home: () => '/v5-home.html',
         artikel: id => `/v5-artikel.html?id=${encodeURIComponent(id)}`,
         dagoverzicht: dag => `/v5-dagoverzicht.html?datum=${dag}`,
         editie: dag => `/v5-editie.html?datum=${dag}`,
         archief: maand => (maand ? `/v5-archief.html?maand=${maand}` : '/v5-archief.html'),
-        // De bestaande, live pagina's.
-        categorie: cat => `/categories/${taal()}/${maakSlug(categorieLabel(cat))}.html`,
-        statisch(id, manifest) {
-            const slug = manifest && manifest.articles && manifest.articles[id] && manifest.articles[id].slugs[taal()];
-            return slug ? `/articles/${taal()}/${slug}-${id}.html` : `/?id=${encodeURIComponent(id)}`;
-        },
     };
 
     // Houd ?vandaag= vast bij het doorklikken tussen de voorbeeldpagina's.
@@ -320,9 +308,11 @@
         return svg;
     }
 
+    // Zonder adres een <a> zonder href: zichtbaar, maar niet klikbaar en
+    // niet in de tabvolgorde (zie basis.css).
     function link(adres, klasse, tekst) {
         const a = el('a', klasse, tekst);
-        a.href = metTestdag(adres);
+        if (adres) a.href = metTestdag(adres);
         return a;
     }
 
@@ -377,9 +367,13 @@
         const item = el('article', 'headline-item');
         if (categorie) item.appendChild(el('span', 'categorie-label', categorieLabel(categorie)));
         const titel = el(kop, 'headline-item__titel');
-        const a = link(adres, 'headline-item__link', titelTekst);
-        if (id) a.addEventListener('click', () => markeerGelezen(id));
-        titel.appendChild(a);
+        if (adres) {
+            const a = link(adres, 'headline-item__link', titelTekst);
+            if (id) a.addEventListener('click', () => markeerGelezen(id));
+            titel.appendChild(a);
+        } else {
+            titel.textContent = titelTekst;
+        }
         item.appendChild(titel);
         return item;
     }

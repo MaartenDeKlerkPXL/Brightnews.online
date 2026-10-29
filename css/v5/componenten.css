@@ -1487,6 +1487,7 @@ body:has(.paywall) .navbar .btn--primary:hover {
 }
 
 .paywall__meer {
+    text-decoration: underline;
     font-size: var(--font-size-14);
     line-height: var(--line-height-20);
     font-weight: 500;

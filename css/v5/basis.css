@@ -140,6 +140,12 @@ p {
     fill: currentColor;
 }
 
+/* Een link zonder href: de pagina bestaat in v5 nog niet. Hij staat er
+   zoals in Figma, maar reageert niet op muis of toetsenbord. */
+a:not([href]) {
+    pointer-events: none;
+}
+
 .visueel-verborgen {
     position: absolute !important;
     width: 1px;

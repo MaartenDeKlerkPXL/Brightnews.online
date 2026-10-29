@@ -29,11 +29,16 @@
 
     // ── Huidige pagina ───────────────────────────────────────────────────
 
+    // Een pagina die bij een menu-item hoort zonder zelf in het menu te
+    // staan (een editie hoort bij Archief, een artikel bij Nieuws), zegt dat
+    // met <body data-sectie="archief">. Links zonder href (pagina nog niet
+    // gebouwd) slaan we over.
     function markeerHuidigePagina() {
         const pad = window.location.pathname.replace(/\/index\.html$/, '/');
-        document.querySelectorAll('.navbar__links .nav-link').forEach(link => {
+        const sectie = document.body.dataset.sectie;
+        document.querySelectorAll('.navbar__links .nav-link[href]').forEach(link => {
             const doel = new URL(link.href).pathname.replace(/\/index\.html$/, '/');
-            if (doel === pad) link.setAttribute('aria-current', 'page');
+            if (doel === pad || (sectie && link.dataset.sectie === sectie)) link.setAttribute('aria-current', 'page');
         });
     }
 

@@ -34,12 +34,16 @@
     <link rel="stylesheet" href="/css/v5/componenten.css">
     <link rel="stylesheet" href="/css/v5/paginas.css">
 </head>
-<body>
+<body data-sectie="nieuws">
 <!-- schil:v5-header -->
+<!-- Links in de v5-schil gaan alleen naar v5-pagina's. Is een pagina nog
+     niet gebouwd, dan staat de link er zonder href: zichtbaar zoals in
+     Figma, maar niet klikbaar en niet in de tabvolgorde. Bij de lancering
+     krijgen ze hun echte adressen (TODO punt 66). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Ga naar hoofdinhoud</span></a>
 <header class="site-header">
     <div class="container navbar">
-        <a class="logo" href="/" aria-label="BrightNews, naar de homepage" data-i18n-aria-label="schil_logo_label">
+        <a class="logo" href="/v5-home.html" aria-label="BrightNews, naar de homepage" data-i18n-aria-label="schil_logo_label">
             <svg class="logo__beeldmerk" viewBox="0 0 39.6151 40" aria-hidden="true">
                 <path d="M9 28a11 11 0 0 1 22 0H9Z" fill="#FFC933"/>
                 <path d="M35.25 29.5H4.75a1.75 1.75 0 0 0 0 3.5h30.5a1.75 1.75 0 0 0 0-3.5Z" fill="currentColor"/>
@@ -50,10 +54,10 @@
 
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
-                <li><a class="nav-link" href="/"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
-                <li><a class="nav-link" href="/themas.html"><span data-i18n="schil_themas">Thema's</span></a></li>
-                <li><a class="nav-link" href="/archief.html"><span data-i18n="schil_archief">Archief</span></a></li>
-                <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Over ons</span></a></li>
+                <li><a class="nav-link" href="/v5-home.html" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
+                <li><a class="nav-link"><span data-i18n="schil_themas">Thema's</span></a></li>
+                <li><a class="nav-link" href="/v5-archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archief</span></a></li>
+                <li><a class="nav-link"><span data-i18n="schil_over_ons">Over ons</span></a></li>
             </ul>
         </nav>
 
@@ -63,8 +67,8 @@
                 <span class="settings-trigger__label" data-i18n="schil_instellingen">Instellingen</span>
                 <svg class="icoon settings-trigger__chevron" aria-hidden="true"><use href="/assets/iconen.svg#keyboard_arrow_down"/></svg>
             </button>
-            <a class="btn btn--secondary navbar__inloggen" href="/profiel.html"><span data-i18n="schil_inloggen">Inloggen</span></a>
-            <a class="btn btn--primary" href="/abonnementen.html"><span data-i18n="schil_probeer_premium">Probeer Premium</span></a>
+            <a class="btn btn--secondary navbar__inloggen"><span data-i18n="schil_inloggen">Inloggen</span></a>
+            <a class="btn btn--primary"><span data-i18n="schil_probeer_premium">Probeer Premium</span></a>
         </div>
     </div>
 
@@ -145,7 +149,7 @@
     <div class="container site-footer__binnen">
         <div class="site-footer__rij">
             <div class="site-footer__merk">
-                <a class="logo" href="/" aria-label="BrightNews, naar de homepage" data-i18n-aria-label="schil_logo_label">
+                <a class="logo" href="/v5-home.html" aria-label="BrightNews, naar de homepage" data-i18n-aria-label="schil_logo_label">
                     <svg class="logo__beeldmerk" viewBox="0 0 39.6151 40" aria-hidden="true">
                         <path d="M9 28a11 11 0 0 1 22 0H9Z" fill="#FFC933"/>
                         <path d="M35.25 29.5H4.75a1.75 1.75 0 0 0 0 3.5h30.5a1.75 1.75 0 0 0 0-3.5Z" fill="currentColor"/>
@@ -164,30 +168,30 @@
             <nav class="footer-kolom" aria-labelledby="footer-lezen">
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Lezen</h2>
                 <ul>
-                    <li><a href="/"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
-                    <li><a href="/themas.html"><span data-i18n="schil_themas">Thema's</span></a></li>
-                    <li><a href="/archief.html"><span data-i18n="schil_archief">Archief</span></a></li>
-                    <li><a href="/categorieen.html"><span data-i18n="schil_categorieen">Categorieën</span></a></li>
+                    <li><a href="/v5-home.html"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
+                    <li><a><span data-i18n="schil_themas">Thema's</span></a></li>
+                    <li><a href="/v5-archief.html"><span data-i18n="schil_archief">Archief</span></a></li>
+                    <li><a><span data-i18n="schil_categorieen">Categorieën</span></a></li>
                 </ul>
             </nav>
 
             <nav class="footer-kolom" aria-labelledby="footer-merk">
                 <h2 class="footer-kolom__titel" id="footer-merk">BrightNews</h2>
                 <ul>
-                    <li><a href="/over-ons.html"><span data-i18n="schil_over_ons">Over ons</span></a></li>
-                    <li><a href="/zo-kiezen-we.html"><span data-i18n="schil_zo_kiezen_we">Zo kiezen we</span></a></li>
-                    <li><a href="/abonnementen.html"><span data-i18n="schil_premium">Premium</span></a></li>
-                    <li><a href="/Privacy.html"><span data-i18n="schil_privacy_voorwaarden">Privacy en voorwaarden</span></a></li>
+                    <li><a><span data-i18n="schil_over_ons">Over ons</span></a></li>
+                    <li><a><span data-i18n="schil_zo_kiezen_we">Zo kiezen we</span></a></li>
+                    <li><a><span data-i18n="schil_premium">Premium</span></a></li>
+                    <li><a><span data-i18n="schil_privacy_voorwaarden">Privacy en voorwaarden</span></a></li>
                 </ul>
             </nav>
 
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Hulp</h2>
                 <ul>
-                    <li><a href="/instellingen.html"><span data-i18n="schil_instellingen">Instellingen</span></a></li>
-                    <li><a href="/contact.html"><span data-i18n="schil_contact">Contact</span></a></li>
-                    <li><a href="/feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
-                    <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Terugbetalingen</span></a></li>
+                    <li><a><span data-i18n="schil_instellingen">Instellingen</span></a></li>
+                    <li><a><span data-i18n="schil_contact">Contact</span></a></li>
+                    <li><a><span data-i18n="schil_feedback">Feedback</span></a></li>
+                    <li><a><span data-i18n="schil_terugbetalingen">Terugbetalingen</span></a></li>
                 </ul>
             </nav>
         </div>

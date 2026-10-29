@@ -47,8 +47,9 @@
         plannen.appendChild(plan('maandelijks', t('plan_glow_name'), t('v5_prijs_maand'), false));
         blok.appendChild(plannen);
 
-        // De afrekening zelf zit op de abonnementenpagina.
-        blok.appendChild(B.knop('/abonnementen.html', t('v5_start_proef'), { klasse: 'btn btn--primary btn--vol' }));
+        // Naar de abonnementenpagina zodra die in v5 bestaat; tot dan zonder
+        // adres.
+        blok.appendChild(B.knop(null, t('v5_start_proef'), { klasse: 'btn btn--primary btn--vol' }));
 
         const proef = el('p', 'paywall__proef');
         proef.appendChild(el('span', 'paywall__nul', t('v5_nul_vandaag')));
@@ -59,7 +60,7 @@
             daarna.textContent = t(e.target.value === 'maandelijks' ? 'v5_daarna_maand' : 'v5_daarna_jaar');
         });
 
-        blok.appendChild(B.link('/abonnementen.html', 'paywall__meer', t('v5_wat_premium')));
+        blok.appendChild(B.link(null, 'paywall__meer', t('v5_wat_premium')));
         return blok;
     }
 
@@ -105,7 +106,7 @@
 
     async function teken() {
         const main = document.getElementById('inhoud');
-        const [feed, manifest] = await Promise.all([B.laadFeed(), B.laadManifest()]);
+        const feed = await B.laadFeed();
         const id = B.param('id');
         const artikel = feed.find(a => String(a.id) === id);
         if (!artikel) { nietGevonden(main); return; }
@@ -139,8 +140,7 @@
 
         // 4 Paywall, 5 Delen, 6 Bronvermelding
         blok.appendChild(paywall());
-        const deelAdres = new URL(B.url.statisch(artikel.id, manifest), window.location.origin).href;
-        blok.appendChild(B.deelBalk(deelAdres, artikel.title));
+        blok.appendChild(B.deelBalk(window.location.href, artikel.title));
         blok.appendChild(bronVermelding(artikel));
 
         main.replaceChildren(blok);

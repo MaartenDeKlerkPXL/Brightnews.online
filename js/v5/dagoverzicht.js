@@ -28,7 +28,7 @@
         return p;
     }
 
-    function bronItem(ref, nummer, artikel, manifest) {
+    function bronItem(ref, nummer, artikel) {
         const li = el('li', 'source-item');
         li.id = `bron-${nummer}`;
         li.appendChild(el('span', 'source-item__nummer', String(nummer)));
@@ -36,8 +36,9 @@
         if (artikel && artikel.category) tekst.appendChild(el('span', 'categorie-label', B.categorieLabel(artikel.category)));
         const titel = el('h3', 'source-item__titel');
         // Staat het verhaal nog in de feed, dan de v5-artikelpagina; anders
-        // de bestaande statische pagina.
-        titel.appendChild(B.link(artikel ? B.url.artikel(ref.id) : B.url.statisch(ref.id, manifest), null, artikel ? artikel.title : ref.title));
+        // is er in v5 nog geen pagina en is de kop gewone tekst.
+        if (artikel) titel.appendChild(B.link(B.url.artikel(ref.id), null, artikel.title));
+        else titel.textContent = ref.title;
         tekst.appendChild(titel);
         if (artikel) {
             const samenvatting = B.eersteZinnen(artikel.summary, 160);
@@ -59,7 +60,7 @@
 
     async function teken() {
         const main = document.getElementById('inhoud');
-        const [feed, manifest] = await Promise.all([B.laadFeed(), B.laadManifest()]);
+        const feed = await B.laadFeed();
 
         // ?datum=, of ?id= van één overzicht (dan de dag van dat overzicht).
         let dag = B.param('datum');
@@ -108,7 +109,7 @@
         bronnen.appendChild(bronKop);
         const lijst = el('ol', 'source-list');
         lijst.setAttribute('role', 'list');
-        refs.forEach((ref, i) => lijst.appendChild(bronItem(ref, i + 1, perId.get(String(ref.id)), manifest)));
+        refs.forEach((ref, i) => lijst.appendChild(bronItem(ref, i + 1, perId.get(String(ref.id)))));
         bronnen.appendChild(lijst);
         artikel.appendChild(bronnen);
 

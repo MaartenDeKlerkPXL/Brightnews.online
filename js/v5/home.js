@@ -116,7 +116,8 @@
         lijst.replaceChildren();
         for (const [cat, info] of Object.entries(B.CATEGORIEEN)) {
             const li = el('li');
-            const a = B.link(B.url.categorie(cat), 'topic-link');
+            // De categoriepagina's bestaan in v5 nog niet: zonder adres.
+            const a = B.link(null, 'topic-link');
             a.appendChild(B.icoon(info.icoon));
             a.appendChild(el('span', null, B.categorieLabel(cat)));
             a.appendChild(B.icoon('chevron_right', 'topic-link__chevron'));

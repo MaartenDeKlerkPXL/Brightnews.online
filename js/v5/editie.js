@@ -4,7 +4,8 @@
 // Recent (de dag staat nog helemaal in de feed, ±17 dagen): zoals de
 // homepage, met het dagoverzicht en foto's, in rijen van drie. Ouder: het
 // archief kent alleen kop, datum en adres, dus datum, aantal, een korte
-// uitleg en de koppen. Elke kop opent het bestaande artikel.
+// uitleg en de koppen. Oudere artikelen hebben nog geen v5-pagina, dus de
+// koppen zijn (nog) geen links.
 // Beide met navigatie naar de vorige en volgende dag (component Edition nav).
 
 (function () {
@@ -71,7 +72,7 @@
         return fragment;
     }
 
-    function ouder(dag, verhalen, manifest) {
+    function ouder(dag, verhalen) {
         const blok = el('div', 'container editie-oud');
         const kop = paginaKop(dag, verhalen.length ? B.aantalVerhalen(verhalen.length) : t('v5_geen_verhalen'));
         if (verhalen.length) {
@@ -87,8 +88,9 @@
             lijst.setAttribute('role', 'list');
             for (const v of verhalen) {
                 const li = el('li');
-                // Zonder categorie: die kent het archief (nog) niet.
-                li.appendChild(B.headlineItem(v.titel, B.url.statisch(v.id, manifest), { kop: 'h2' }));
+                // Zonder categorie: die kent het archief (nog) niet. Zonder
+                // link: oudere artikelen hebben nog geen v5-pagina.
+                li.appendChild(B.headlineItem(v.titel, null, { kop: 'h2' }));
                 lijst.appendChild(li);
             }
             blok.appendChild(lijst);
@@ -125,7 +127,7 @@
         // vaak half afgesneden; die telt alleen als hij compleet is.
         const isRecent = inFeed.length > 0 && (dag > oudsteFeedDag || inFeed.length >= inArchief.length);
 
-        main.replaceChildren(isRecent ? recent(dag, inFeed, feed) : ouder(dag, inArchief, manifest));
+        main.replaceChildren(isRecent ? recent(dag, inFeed, feed) : ouder(dag, inArchief));
         main.appendChild(editieNav(dag, eersteDag));
     }
 
