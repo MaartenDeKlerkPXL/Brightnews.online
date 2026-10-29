@@ -1386,7 +1386,9 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
 
 - [ ] **66. Redesign v3: ontwerpbesluiten en wat er technisch van klopt.**
   *(Maarten, 2026-10-29. Bron: Figma "UI Kit — BrightNews.online", pagina
-  "Webdesign", frame "v3 · Besluiten". v1 valt af, v3 bouwt voort op v2.)*
+  "Webdesign", frame "v3 · Besluiten". v1 valt af, v3 bouwt voort op v2.
+  **Volgende stap: v4, eerst alleen desktop, ontworpen binnen de grenzen
+  hieronder.**)*
 
   Per besluit staat erbij of het zo gebouwd kan worden. **Drie besluiten
   botsen met de werkelijkheid** (de edities, de anonieme gratis artikelen en
@@ -1479,7 +1481,12 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
 
   ### Donkere modus
 
-  Staat nog niet in het ontwerp, en de code heeft er nu niets voor. Advies:
+  **Besluit Maarten (2026-10-29):** standaard het systeem volgen; gebruikers
+  kunnen het aanpassen in de instellingen van de site. Die instellingen moeten
+  dus ook zonder account bereikbaar zijn (zie hieronder), en mogen geen pop-up
+  zijn. Ontwerp volgt in v4.
+
+  Oorspronkelijk advies, staat nog:
   - **Standaard het systeem volgen** (`prefers-color-scheme`). Dan hoeft de
     meeste mensen nooit iets in te stellen.
   - **Een keuze Systeem / Licht / Donker in hetzelfde menu als de taal**, zodat
