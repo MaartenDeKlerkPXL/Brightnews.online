@@ -1545,6 +1545,82 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   het artikelframe valt, en de eindtekst "Morgenochtend…" (er komt 's middags
   nog een run, dus neutraler formuleren).
 
+  ### Fase 3: de pagina's als voorbeeld (2026-10-29, branch `redesign/v5-paginas`)
+
+  Af, als noindex-voorbeeld naast de live pagina's (de live pagina's zijn niet
+  aangeraakt): `v5-home.html`, `v5-dagoverzicht.html?datum=…`,
+  `v5-archief.html`, `v5-editie.html?datum=…` en `v5-artikel.html?id=…`.
+  Pagina-JS in `js/v5/<pagina>.js` met gedeelde bouwstenen in
+  `js/v5/gedeeld.js`; paginaopbouw in `css/v5/paginas.css`. Nieuwe
+  componenten (Digest card, Archive day, Month heading, Page head, Note,
+  Source item, Share bar, Source attribution, Story card lg en "Show meta",
+  en een Melding voor `showNotification()`) staan in `componenten.css` en op
+  `stijlgids.html`. Acht nieuwe iconen in `assets/iconen.svg`. 63 nieuwe
+  vertaalsleutels (`v5_…`) in alle vijf talen. Getest in licht en donker, op
+  1440 en 375 px, met toetsenbord, in alle vijf talen.
+
+  **Testen zolang de data stilstaat:** `?vandaag=2026-10-02` laat elke
+  v5-pagina doen alsof het die dag is (blijft bewaard bij doorklikken).
+  Zonder parameter geldt de echte dag, en dan zijn Vandaag en Gisteren leeg
+  (punt 26).
+
+  Afwijkingen van Figma, met reden:
+  - **Het dagoverzicht is er per categorie, niet per dag** (2 à 3 per dag).
+    De homepage toont daarom "Het goede nieuws van {weekdag}" met de
+    samenvatting van het rijkste overzicht en de bronnen van alle
+    overzichten samen. De dagoverzichtpagina zet ze onder elkaar met elk een
+    eigen tussenkop, en maakt één genummerde bronnenlijst; [1]-verwijzingen
+    in de tekst linken naar dat nummer. De h1 is daarom zonder dubbele punt
+    en ondertitel, en de meta toont alleen de dag, geen tijd (het overzicht
+    wordt pas de dag erna gemaakt).
+  - **Eindtekst:** "In de loop van de dag kunnen er nieuwe bij komen" in
+    plaats van "Morgenochtend…" (er komt 's middags nog een run).
+  - **Gisteren zonder verhalen** heeft geen frame; daar staat de Day empty
+    met de tekst van de lege archiefdag.
+  - **Archief:** per keer een week (7 dagen) in plaats van 5.
+  - **Oudere editie:** koppen zonder categorie, want het manifest kent die
+    niet (zie hieronder).
+  - **Artikel:** de header toont "Inloggen" in plaats van "Mijn account";
+    het voorbeeld kent geen ingelogde staat.
+  - **Geen foto of foto laadt niet → merkbeeld** (zoals Figma), niet de
+    reservefoto's van de huidige site.
+  - Deelknoppen gebruiken de officiële logo's (Figma vraagt dat in de
+    componentbeschrijving); WhatsApp en X komen uit Simple Icons (CC0).
+  - Mobiel is niet ontworpen: de rasters vallen terug op 2 en 1 kolom.
+
+  #### Back-end voor v5 (Claude, sessie Maarten)
+
+  1. **Eerst moet het nieuws weer draaien (punt 26).** Zonder nieuwe
+     artikelen tonen de homepage en het archief vooral lege staten.
+  2. **Eén dagoverzicht per dag**, of een vast veld waarmee de front-end de
+     overzichten van één dag als één geheel kan tonen (titel voor de dag,
+     samenvatting van de dag). Nu zijn het er 2 à 3, per categorie.
+  3. **De tekst van een dagoverzicht in de publieke data is afgekapt**
+     (eindigt op "…"). Op de dagoverzichtpagina staat dus een afgebroken
+     tekst. Besluiten: is het dagoverzicht gratis (dan de volledige tekst in
+     `news_<taal>.json`), of komt het achter dezelfde paywall?
+  4. **Het manifest aanvullen met categorie** (en liefst foto en
+     samenvatting), zodat oudere edities de categorie tonen zoals Figma. Het
+     eenmalige script uit de git-geschiedenis staat hierboven al beschreven.
+  5. **Een storing is niet te onderscheiden van een lege dag.** 3 t/m 28
+     oktober staan in het archief als "Op deze dag haalde geen enkel verhaal
+     onze lat", terwijl de pijplijn stillag. Nodig: per dag of de runs
+     gelukt zijn (bijvoorbeeld een klein runlog naast het manifest), zodat
+     de front-end "storing" anders kan tonen dan "niets goed genoeg".
+  6. **De echte paywallstaat** uit `lees_artikel()` (PR #15): niet ingelogd,
+     tegoed over, tegoed op, Premium. Het voorbeeld toont nu altijd staat 3.
+     Daarvoor moeten de v5-pagina's Supabase en `js/auth.js` laden; dan wint
+     ook de oude `showNotification()` van de nieuwe Melding, en die moet dan
+     naar de v5-opmaak. In Figma ontbreken de paywalltypes Account en Credit
+     nog als frame (Maarten).
+  7. **Plankeuze doorgeven:** "Start 30 dagen gratis" gaat naar
+     `/abonnementen.html` zonder het gekozen plan. Een `?plan=jaarlijks` of
+     `maandelijks` daar oppakken scheelt de lezer een keuze.
+  8. **Bij de lancering:** de v5-pagina's hernoemen naar de echte adressen
+     (`index.html`, `archief.html`, het artikelsjabloon), de
+     "Nieuws"/"Archief"-markering in de header volgt dan vanzelf, en de
+     onderwerplinks wijzen nog naar de categoriepagina's met de oude chips.
+
   ### Opruimen in Figma als v3 gekozen is
 
   - Variabelecollectie Brand: modus "v1 Editorial" (Newsreader) verwijderen,
