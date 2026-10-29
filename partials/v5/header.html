@@ -1,0 +1,80 @@
+<a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Ga naar hoofdinhoud</span></a>
+<header class="site-header">
+    <div class="container navbar">
+        <a class="logo" href="/" aria-label="BrightNews, naar de homepage" data-i18n-aria-label="schil_logo_label">
+            <svg class="logo__beeldmerk" viewBox="0 0 39.6151 40" aria-hidden="true">
+                <path d="M9 28a11 11 0 0 1 22 0H9Z" fill="#FFC933"/>
+                <path d="M35.25 29.5H4.75a1.75 1.75 0 0 0 0 3.5h30.5a1.75 1.75 0 0 0 0-3.5Z" fill="currentColor"/>
+                <path d="M20 12.5V8M30.3 17.7l3.2-3.2M9.7 17.7l-3.2-3.2" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+            </svg>
+            <span class="logo__woordmerk">Bright<span>News</span></span>
+        </a>
+
+        <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
+            <ul class="navbar__links">
+                <li><a class="nav-link" href="/"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
+                <li><a class="nav-link" href="/themas.html"><span data-i18n="schil_themas">Thema's</span></a></li>
+                <li><a class="nav-link" href="/archief.html"><span data-i18n="schil_archief">Archief</span></a></li>
+                <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Over ons</span></a></li>
+            </ul>
+        </nav>
+
+        <div class="navbar__acties">
+            <button class="settings-trigger" type="button" aria-expanded="false" aria-controls="instellingen">
+                <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#tune"/></svg>
+                <span class="settings-trigger__label" data-i18n="schil_instellingen">Instellingen</span>
+                <svg class="icoon settings-trigger__chevron" aria-hidden="true"><use href="/assets/iconen.svg#keyboard_arrow_down"/></svg>
+            </button>
+            <a class="btn btn--secondary navbar__inloggen" href="/profiel.html"><span data-i18n="schil_inloggen">Inloggen</span></a>
+            <a class="btn btn--primary" href="/abonnementen.html"><span data-i18n="schil_probeer_premium">Probeer Premium</span></a>
+        </div>
+    </div>
+
+    <div class="settings-panel" id="instellingen" inert>
+        <div class="settings-panel__binnen">
+            <div class="container settings-panel__inhoud">
+                <div class="setting-groep">
+                    <h2 class="setting-groep__titel" id="instelling-weergave" data-i18n="instelling_weergave">Weergave</h2>
+                    <p class="setting-groep__uitleg" data-i18n="instelling_weergave_uitleg">Systeem volgt de licht- of donkerstand van je apparaat.</p>
+                    <div class="setting-groep__opties" role="radiogroup" aria-labelledby="instelling-weergave" data-instelling="thema">
+                        <button class="setting-option" type="button" role="radio" aria-checked="true" data-waarde="systeem">
+                            <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#computer"/></svg>
+                            <span data-i18n="instelling_systeem">Systeem</span>
+                            <svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg>
+                        </button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="licht">
+                            <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#light_mode"/></svg>
+                            <span data-i18n="instelling_licht">Licht</span>
+                            <svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg>
+                        </button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="donker">
+                            <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#dark_mode"/></svg>
+                            <span data-i18n="instelling_donker">Donker</span>
+                            <svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="setting-groep">
+                    <h2 class="setting-groep__titel" id="instelling-taal" data-i18n="instelling_taal">Taal</h2>
+                    <p class="setting-groep__uitleg" data-i18n="instelling_taal_uitleg">De taal van de site en van de artikelen.</p>
+                    <div class="setting-groep__opties" role="radiogroup" aria-labelledby="instelling-taal" data-instelling="taal">
+                        <button class="setting-option" type="button" role="radio" aria-checked="true" data-waarde="nl" lang="nl">Nederlands<svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="en" lang="en">English<svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="de" lang="de">Deutsch<svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="fr" lang="fr">Français<svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="es" lang="es">Español<svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></button>
+                    </div>
+                </div>
+
+                <div class="settings-panel__notitie">
+                    <button class="btn btn--secondary btn--sm" type="button" data-sluit-instellingen>
+                        <span data-i18n="instelling_sluiten">Sluiten</span>
+                        <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#close"/></svg>
+                    </button>
+                    <p data-i18n="instelling_bewaard">Je keuze wordt op dit apparaat bewaard, ook zonder account. Ingelogd? Dan vind je dezelfde instellingen in je profiel.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

@@ -165,6 +165,15 @@
     color-scheme: dark;
 }
 
+/* Mobiel is nog niet ontworpen (v5 is alleen desktop). Tot dat ontwerp er
+   is een voorlopige zijmarge, zodat smalle schermen niet 80 px verliezen. */
+@media (max-width: 767px) {
+    :root {
+        --layout-section-padding-x: 20px;
+        --grid-margin: 20px;
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     :root {
         --motion-duration-fast: 0ms;

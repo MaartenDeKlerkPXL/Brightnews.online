@@ -76,10 +76,20 @@ function leesSchil() {
     return { header: leesPartial('header.html'), footer: leesPartial('footer.html') };
 }
 
+// De schil van redesign v5 (partials/v5/). Staat los van de huidige, zodat
+// v5-pagina's naast de live pagina's kunnen bestaan tot de overstap.
+function leesSchilV5() {
+    return {
+        thema: leesPartial('thema-head.html'),
+        header: leesPartial('v5/header.html'),
+        footer: leesPartial('v5/footer.html'),
+    };
+}
+
 // De schil al vertaald naar één taal, voor gegenereerde pagina's.
 function schilVoorTaal(lang) {
     const { header, footer } = leesSchil();
     return { header: vertaalSchil(header, lang), footer: vertaalSchil(footer, lang) };
 }
 
-module.exports = { leesSchil, schilVoorTaal, vertaalSchil, maakPadenAbsoluut };
+module.exports = { leesSchil, leesSchilV5, schilVoorTaal, vertaalSchil, maakPadenAbsoluut };

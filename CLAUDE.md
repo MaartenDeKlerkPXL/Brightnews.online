@@ -54,6 +54,14 @@ verbeteringen van de één binnen een dag bij de ander landen:
   (`generate-articles.js`, `generate-categorieen.js`), die de schil zelf uit
   `backend/schil.js` halen. `node backend/stempel-schil.js --controle` faalt
   als een pagina achterloopt.
+- **Redesign v5 (branch `redesign/v5`)** staat los van de live schil:
+  `partials/v5/` (header met instellingenpaneel, footer), `css/v5/`
+  (`basis.css`, `componenten.css`, na `css/fonts.css` en `css/tokens.css`),
+  `js/v5/schil.js` en de iconen in `assets/iconen.svg` (gebruik
+  `<svg class="icoon"><use href="/assets/iconen.svg#naam"/></svg>`). Een
+  v5-pagina krijgt de markeringen `schil:v5-thema` (in `<head>`),
+  `schil:v5-header` en `schil:v5-footer`; dezelfde stempelaar vult ze. Alle
+  componenten met hun staten staan op `/stijlgids.html` (noindex).
 - Vertaalteksten: elke key bestaat in **5 talen** (nl/en/de/fr/es) in
   `data/translations.js`. Nieuwe key = 5 regels.
 - `data-i18n` op een element wist de children — tekst altijd in een eigen
