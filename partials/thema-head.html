@@ -1,0 +1,15 @@
+<script>
+    /* Weergave vóór de eerste weergave toepassen (redesign v5). Staat inline
+       en zo hoog mogelijk in <head>: een extern script zou pas laden nadat de
+       pagina al één keer in de systeemkleur getekend is, en dan flitst een
+       lezer die "donker" koos eerst wit. De CSP staat inline scripts toe.
+       Zonder eigen keuze doet dit niets en volgt css/tokens.css het systeem.
+       localStorage kan weigeren (privévenster, geblokkeerde opslag); dan valt
+       de site gewoon terug op het systeem. */
+    try {
+        var bnThema = localStorage.getItem('bn-thema');
+        if (bnThema === 'licht' || bnThema === 'donker') {
+            document.documentElement.setAttribute('data-theme', bnThema);
+        }
+    } catch (e) { /* geen opslag: systeem volgen */ }
+</script>
