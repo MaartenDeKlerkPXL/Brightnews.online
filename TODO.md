@@ -1384,6 +1384,125 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   dus geen PR nodig — wel testen op het echte toestel, want een
   bureaublad-browser op telefoonformaat bootst deze bugs niet na.)*
 
+- [ ] **66. Redesign v3: ontwerpbesluiten en wat er technisch van klopt.**
+  *(Maarten, 2026-10-29. Bron: Figma "UI Kit — BrightNews.online", pagina
+  "Webdesign", frame "v3 · Besluiten". v1 valt af, v3 bouwt voort op v2.)*
+
+  Per besluit staat erbij of het zo gebouwd kan worden. **Drie besluiten
+  botsen met de werkelijkheid** (de edities, de anonieme gratis artikelen en
+  de foto-regel); die moeten opnieuw bekeken worden vóór er gebouwd wordt.
+
+  ### Besloten — en kan zo
+
+  - **Eén groen: `#186F49`** vervangt `#32CD32`. Wit op het oude groen haalt
+    maar 2,12:1, op het nieuwe 6,16:1. Geel `#FFC933` blijft merkaccent;
+    nooit wit op geel (1,54:1), donkere tekst mag (10,9:1). Success-meldingen
+    gebruiken dezelfde groenreeks. Dit vervangt het eerdere besluit "één
+    groen, `#32CD32`".
+    *Technisch: groter dan het lijkt.* `#32CD32` staat ook hard in de
+    `theme-color` van 14 rootpagina's en van **1.410 archiefpagina's**, in 3
+    CSS-bestanden, `manifest.json` (PWA), `js/beeldkaart.js`,
+    `backend/stuur-mails.js`, en in het logo zelf (`brightnews-logo.png`, het
+    woord "News") plus de favicons en PWA-iconen. Het archief vraagt een
+    eenmalig vervangscript, net als bij de footerlinks in september.
+  - **Categorieën = de zes uit de pijplijn.** Tech, Gezondheid, Wetenschap,
+    Lifestyle, Milieu, Financiën. *Technisch: dat zijn nu al precies de
+    Nederlandse labels*, dus er verandert niets. Wel een valkuil: de slug van
+    een categoriepagina wordt afgeleid van het label
+    (`generate-categorieen.js:59`, `generate-articles.js:139`). Wie ooit een
+    label aanpast, verandert ongemerkt 30 URL's. Advies: de slugs vastzetten
+    in een vaste tabel.
+  - **Tekst op foto:** token `--text-on-image` (altijd wit, ook in dark
+    mode) op vaste scrim-tokens. Geen bruikbare foto → merkbeeld. Kan zo.
+  - **Letters:** Bricolage Grotesque (koppen) en Figtree (tekst), zelf
+    gehost als woff2 met latin-ext. Beide OFL. Bricolage heeft drie
+    variabele assen en is groot; alleen de gewichtsas meenemen. Mails
+    vallen in de meeste mailprogramma's terug op een systeemletter.
+  - **Mobiel eerst:** elke nieuwe pagina eerst op 390 px.
+  - **Nieuwe pagina's:** Archief (`archief.html`), Thema-overzicht
+    (`themas/{taal}/index.html`), Zo kiezen we (`zo-kiezen-we.html`).
+    *Technisch:* het archief kan statisch uit `articles/manifest.json`,
+    maar dat bevat alleen titels, slugs en datums, **geen foto's of
+    samenvattingen**. Een archief met beelden vraagt een uitgebreider
+    manifest, en dat werkt alleen vooruit.
+
+  ### Besloten — maar botst met de data
+
+  - **Edities op 02:00 en 14:00, en de homepage is één editie.** Gemeten
+    over 64 runs (5 september t/m 2 oktober):
+    - **gemiddeld 3,7 artikelen per run**; 40 van de 64 runs leverden er 3
+      of minder op, 13 runs nul. Het ontwerp rekent met 14.
+    - de runs **starten uren te laat**: GitHub vertraagt geplande runs onder
+      drukte. De nachtrun begon 28× rond **06:00**, de middagrun tussen
+      **17:00 en 21:00**. Sinds 25 oktober (wintertijd) valt `0 0,12 * * *`
+      UTC bovendien op 01:00 en 13:00.
+    Een "dunne editie" is dus geen uitzondering maar de normale toestand, en
+    "02:00" of "14:00" op de site klopt vrijwel nooit. Opties: een editie
+    per **dag** (beide runs samen, gemiddeld ±7 verhalen), de **echte
+    bijwerktijd** tonen uit de data in plaats van een vaste tijd, of de
+    pijplijn meer laten opleveren (dat is een besluit over de
+    selectiedrempel, met Erik). *Technisch kan groeperen per run al:*
+    `artikel.date` is het moment van verwerken, niet de brondatum.
+  - **Foto-regel in de pijplijn** (beeld onder 800 px, logo of effen vlak →
+    geen foto). Breedte meten kan zonder nieuwe afhankelijkheid, door de
+    eerste bytes van het bestand te lezen. "Logo of effen vlak" herkennen
+    vraagt pixelanalyse, en daarmee een native bibliotheek als `sharp`, of
+    een benadering (`logo` in de URL, extreme verhouding). Backendwerk, dus
+    een PR langs Erik.
+
+  ### Voorstel — nog af te stemmen met backend
+
+  - **Metered paywall: anoniem 3 → gratis account 5 → Premium.** De stap
+    "anoniem 3" kan niet met de huidige opzet. De volledige tekst zit
+    server-side achter `lees_artikel()`, en zonder account is er niets om
+    een teller aan te hangen. Dat kan alleen met Supabase *anonymous
+    sign-ins*, en Supabase raadt daarbij een captcha aan tegen misbruik. Die
+    captcha is een extern script, en dat botst met de CSP-regel. Advies:
+    lanceren met het model uit PR #15 (anoniem → samenvatting met "maak een
+    gratis account", account → 5 per maand) en "anoniem 3" pas toevoegen als
+    blijkt dat die drempel lezers kost.
+
+  ### Wat het redesign echt kost
+
+  - Navigatie en footer staan los gekopieerd in 13 pagina's, het
+    artikelsjabloon en drie generators. **Eerst een klein script bouwen dat
+    ze vanuit één bron in alle pagina's zet**, anders wordt elke
+    v3-aanpassing vijftien keer hetzelfde werk.
+  - Het archief (3.470 pagina's) heeft één uniforme opbouw (steekproef:
+    `detail-container`, `detail-header`, `article-body`). Een re-skin met
+    alleen CSS komt er dus vanzelf aan. Verandert de HTML van het artikel,
+    dan is een migratiescript nodig, want regenereren uit data kan niet: het
+    manifest heeft geen samenvattingen of beelden.
+  - `CACHE_NAME` bumpen, en alle nieuwe teksten in vijf talen.
+  - **Eerst moet het nieuws weer draaien** (punt 26). Zonder nieuwe
+    artikelen is het editiemodel niet met echte data te testen.
+
+  ### Donkere modus
+
+  Staat nog niet in het ontwerp, en de code heeft er nu niets voor. Advies:
+  - **Standaard het systeem volgen** (`prefers-color-scheme`). Dan hoeft de
+    meeste mensen nooit iets in te stellen.
+  - **Een keuze Systeem / Licht / Donker in hetzelfde menu als de taal**, zodat
+    óók bezoekers zonder account erbij kunnen. Opslaan in de browser; voor
+    ingelogde lezers later eventueel ook in het profiel.
+  - **Niet vragen bij het registreren**: dat is een extra stap in de
+    belangrijkste conversiestap, en de meeste bezoekers registreren nooit.
+    Alleen in de accountinstellingen zetten heeft hetzelfde probleem.
+  - Een klein script in de `<head>` zet het thema vóór de eerste weergave,
+    zodat het scherm niet eerst wit flitst (de CSP staat inline scripts
+    toe). Mails en Instagram-kaarten blijven licht.
+  - **Volgorde:** de tokens meteen in v3 meenemen (goedkoop), de donkere
+    modus zelf pas na de lancering. Dat verdubbelt anders het testwerk op
+    elke pagina.
+
+  ### Opruimen in Figma als v3 gekozen is
+
+  - Variabelecollectie Brand: modus "v1 Editorial" (Newsreader) verwijderen,
+    "v2 Modern" als enige houden.
+  - Foundations-documentatie (01.4 Colour, 01.5 Typography) bijwerken; de
+    hexcodes daar zijn losse tekst.
+  - De donkere v2 op de foto-kaarten repareren met `--text-on-image`.
+
 - [ ] **41. Lagere prioriteit uit de UI-doorlichting — nog één over.**
   *(2026-09-23; vier van de vijf afgewerkt op 2026-09-24.)*
 
