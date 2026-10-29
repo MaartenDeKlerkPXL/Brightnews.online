@@ -1502,6 +1502,28 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
     modus zelf pas na de lancering. Dat verdubbelt anders het testwerk op
     elke pagina.
 
+  ### v4 nagelopen (2026-10-29) — op naar v5
+
+  v4 (alleen desktop) is grotendeels te bouwen. Gemeten in de data:
+  - **De feed beslaat 17 dagen** (149 artikelen), het archief 28 dagen
+    (694 artikelen sinds 1 september). Vandaag én gisteren zijn er dus altijd.
+  - **Een dagoverzicht is er op 16 van de 17 dagen**, maar het wordt aan het
+    eind van de dag gemaakt (meestal rond 20:00) of de volgende ochtend.
+    Overdag is het nieuwste overzicht dus dat van gisteren.
+  - **Het dagoverzicht heeft `refs`** (id en titel van elk artikel erin). Die
+    id's zijn terug te vinden in de feed, dus kop, categorie, samenvatting,
+    bron en link per verhaal zijn wél te tonen. Een fotobijschrift bestaat
+    niet.
+  - **Het archief kent van oudere dagen alleen titels, slugs en datums**
+    (`articles/manifest.json`). Een oude editie met foto's lukt alleen binnen
+    de 17 dagen van de feed, totdat het manifest wordt uitgebreid met beeld,
+    categorie en bron. Dat kan vooruit, en achteraf door de bestaande
+    artikelpagina's uit te lezen.
+
+  Besluiten van Maarten voor v5: altijd de editie van vandaag **en**
+  gisteren tonen, geen bron en tijd op de fotokaarten van de homepage, het
+  dagoverzicht groot bovenaan, en eerdere edities via het archief.
+
   ### Opruimen in Figma als v3 gekozen is
 
   - Variabelecollectie Brand: modus "v1 Editorial" (Newsreader) verwijderen,
