@@ -155,6 +155,11 @@
         return formatteer(middag(dag), opties);
     }
 
+    // "28 oktober"
+    function dagMaand(dag) {
+        return formatteer(middag(dag), { timeZone: 'UTC', day: 'numeric', month: 'long' });
+    }
+
     function weekdag(dag) {
         return formatteer(middag(dag), { timeZone: 'UTC', weekday: 'long' });
     }
@@ -193,6 +198,21 @@
         for (const lijst of dagen.values()) {
             lijst.sort((a, b) => (b.score || 0) - (a.score || 0) || new Date(b.date) - new Date(a.date));
         }
+        return dagen;
+    }
+
+    // Het archief (articles/manifest.json) per dag: alleen id, titel en
+    // moment, want meer kent het manifest niet. Dagoverzichten (id dg-...)
+    // tellen niet als verhaal.
+    function archiefPerDag(manifest) {
+        const dagen = new Map();
+        for (const [id, item] of Object.entries(manifest.articles || {})) {
+            if (id.startsWith('dg-')) continue;
+            const dag = dagVan(item.date);
+            if (!dagen.has(dag)) dagen.set(dag, []);
+            dagen.get(dag).push({ id, date: item.date, titel: item.titles[taal()] || item.titles.en || '' });
+        }
+        for (const lijst of dagen.values()) lijst.sort((a, b) => new Date(b.date) - new Date(a.date));
         return dagen;
     }
 
@@ -577,8 +597,8 @@
     window.BN5 = {
         CATEGORIEEN, taal, t, vertaalPagina, param,
         laadFeed, laadManifest, isDigest,
-        dagVan, vandaag, verschuif, isDagSleutel, dagLang, weekdag, maandNaam, tijd, datumTijd, hoofdletter,
-        aantalVerhalen, perDag, digestsVan, nieuwsteDigestDag, verhalenVanDigests, laatsteMoment,
+        dagVan, vandaag, verschuif, isDagSleutel, dagLang, dagMaand, weekdag, maandNaam, tijd, datumTijd, hoofdletter,
+        aantalVerhalen, perDag, archiefPerDag, digestsVan, nieuwsteDigestDag, verhalenVanDigests, laatsteMoment,
         zonderVerwijzingen, eersteZinnen, url, metTestdag, categorieLabel,
         el, icoon, link, knop, beeld, merkbeeld, storyCard, headlineItem, editieRaster, digestCard,
         aanwijzing, bronnenRegel, leeg, gelezen, markeerGelezen, deelBalk, origineelLink, start,

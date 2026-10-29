@@ -1158,7 +1158,9 @@ body:has(.paywall) .navbar .btn--primary:hover {
         gap: var(--spacing-md);
     }
 
-    .archive-day__datum {
+    .archive-day__datum,
+    .archive-day__verhalen {
+        flex-basis: 100%;
         width: 100%;
     }
 }
