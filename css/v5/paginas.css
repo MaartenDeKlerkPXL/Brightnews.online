@@ -1,0 +1,390 @@
+/* BrightNews v5 — paginaopbouw.
+ *
+ * Hoe de componenten uit componenten.css op een pagina staan: secties,
+ * rasters en kolommen van de v5-frames (Home, Dagoverzicht, Archief, Editie,
+ * Artikel). Geen eigen componenten en geen losse kleuren; alles komt uit
+ * tokens.css. Laad na componenten.css.
+ *
+ * Alleen desktop is ontworpen. Onder 1024 px en 768 px vallen de rasters
+ * terug op minder kolommen, zodat niets breekt of zijwaarts scrollt.
+ */
+
+
+/* ── Secties ───────────────────────────────────────────────────────────── */
+
+.sectie {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xl);
+    padding-bottom: var(--section-sm);
+}
+
+.sectie--compact {
+    gap: var(--spacing-lg);
+}
+
+.sectie--top {
+    padding-top: var(--section-xs);
+}
+
+.sectie--kop {
+    padding-top: var(--section-xs);
+    padding-bottom: var(--spacing-2xl);
+}
+
+.sectie[hidden] {
+    display: none;
+}
+
+.sectie__kop {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xs);
+}
+
+.sectie__titel {
+    font-size: var(--type-heading-md-size);
+    line-height: var(--type-heading-md-line-height);
+    font-weight: 600;
+    letter-spacing: -0.12px;
+}
+
+.sectie__uitleg {
+    color: var(--text-secondary);
+}
+
+/* Dagoverzicht bovenaan de homepage: 40 px boven en onder. */
+.home-dagoverzicht {
+    padding-block: var(--section-xs);
+}
+
+
+/* ── Editieraster ──────────────────────────────────────────────────────
+   Besluit v5 · 05: één grote kaart met twee kaarten ernaast, daaronder
+   rijen van vier (homepage) of drie (eerdere editie). Twee verhalen: één
+   grote en één kleinere. */
+
+.editie-raster {
+    display: flex;
+    flex-direction: column;
+    gap: var(--grid-gutter);
+}
+
+.editie-raster__top {
+    display: grid;
+    grid-template-columns: minmax(0, 845fr) minmax(0, 411fr);
+    gap: var(--grid-gutter);
+}
+
+.editie-raster__top > .story-card--groot {
+    aspect-ratio: auto;
+    min-height: 584px;
+}
+
+.editie-raster__top--enkel {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.editie-raster__zij {
+    display: flex;
+    flex-direction: column;
+    gap: var(--grid-gutter);
+}
+
+.editie-raster__zij > .story-card--overlay {
+    flex: 1;
+    aspect-ratio: auto;
+    min-height: 200px;
+}
+
+.editie-raster__rij {
+    display: grid;
+    grid-template-columns: repeat(var(--kolommen, 4), minmax(0, 1fr));
+    gap: var(--grid-gutter);
+    align-items: start;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.editie-raster__rij--drie {
+    --kolommen: 3;
+}
+
+@media (max-width: 1023px) {
+    .editie-raster__top {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .editie-raster__top > .story-card--groot {
+        min-height: 440px;
+    }
+
+    .editie-raster__zij {
+        flex-direction: row;
+    }
+
+    .editie-raster__zij > * {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .editie-raster__rij {
+        --kolommen: 2;
+    }
+}
+
+@media (max-width: 599px) {
+    .editie-raster__zij {
+        flex-direction: column;
+    }
+
+    .editie-raster__zij > .story-card--overlay {
+        min-height: 240px;
+    }
+
+    .editie-raster__rij,
+    .editie-raster__rij--drie {
+        --kolommen: 1;
+    }
+}
+
+
+/* ── Koppen ────────────────────────────────────────────────────────────
+   Gisteren op de homepage: drie kolommen headline items, geen foto's. */
+
+.koppen-raster {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: var(--grid-gutter);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.koppen-lijst {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@media (max-width: 1023px) {
+    .koppen-raster {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 599px) {
+    .koppen-raster {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+/* Regel onder de koppen: waar de foto's en samenvattingen staan. */
+.verwijzing {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+    color: var(--text-secondary);
+}
+
+.verwijzing .icoon {
+    margin-top: 2px;
+}
+
+
+/* ── Einde ───────────────────────────────────────────────────────────── */
+
+.einde {
+    display: flex;
+    justify-content: center;
+    padding-bottom: var(--section-sm);
+}
+
+.einde .edition-end {
+    width: 100%;
+    max-width: 628px;
+}
+
+
+/* ── Archief ─────────────────────────────────────────────────────────── */
+
+.archief-maand {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    padding-bottom: var(--section-xs);
+}
+
+.archief-meer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding-bottom: var(--section-sm);
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+
+/* ── Eerdere editie ──────────────────────────────────────────────────── */
+
+.editie-digests {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding-bottom: var(--section-xs);
+}
+
+.editie-nav-wrap {
+    padding-bottom: var(--section-sm);
+}
+
+/* Oudere editie: links de kop met uitleg, rechts de koppen. */
+.editie-oud {
+    display: grid;
+    grid-template-columns: minmax(0, 400px) minmax(0, 840px);
+    justify-content: space-between;
+    gap: var(--spacing-3xl);
+    padding-block: var(--section-xs) var(--section-xs);
+}
+
+.editie-oud .page-head {
+    gap: var(--spacing-md);
+}
+
+@media (max-width: 1023px) {
+    .editie-oud {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+
+/* ── Artikel en dagoverzicht ─────────────────────────────────────────── */
+
+.artikel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-2xl);
+    padding-block: var(--section-xs) var(--section-sm);
+}
+
+.artikel > * {
+    width: 100%;
+    max-width: var(--layout-reading-width);
+}
+
+.artikel__beeld {
+    max-width: var(--layout-media-width);
+    aspect-ratio: 960 / 540;
+    border: var(--border-width-sm) solid var(--border-default);
+    border-radius: var(--radius-2xl);
+    background: var(--surface-muted);
+    object-fit: cover;
+}
+
+.artikel__beeld.merkbeeld {
+    border: 0;
+}
+
+.artikel__kop {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.artikel__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.artikel__titel {
+    font-size: var(--type-display-sm-size);
+    line-height: var(--type-display-sm-line-height);
+    font-weight: 500;
+    letter-spacing: -0.48px;
+}
+
+.artikel__tekst {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    color: var(--text-secondary);
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-28);
+}
+
+.artikel__tekst h2 {
+    color: var(--text-primary);
+    font-size: var(--type-heading-md-size);
+    line-height: var(--type-heading-md-line-height);
+    font-weight: 600;
+    letter-spacing: -0.12px;
+}
+
+.artikel__bronnen {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.bronverwijzing {
+    color: var(--text-link);
+    font-size: var(--font-size-14);
+    font-weight: 600;
+    text-decoration: none;
+    vertical-align: super;
+    line-height: 0;
+}
+
+.bronverwijzing:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+    .artikel__titel {
+        font-size: var(--type-heading-lg-size);
+        line-height: var(--type-heading-lg-line-height);
+        letter-spacing: -0.32px;
+    }
+}
+
+/* Meer uit deze editie: een band in het subtiele vlak. */
+.meer-band {
+    padding-block: var(--section-xs) var(--section-sm);
+    background: var(--surface-subtle);
+}
+
+.meer-band__binnen {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.meer-band__titel {
+    font-size: var(--type-heading-lg-size);
+    line-height: var(--type-heading-lg-line-height);
+    font-weight: 500;
+    letter-spacing: -0.32px;
+}
+
+
+/* ── Niet gevonden ─────────────────────────────────────────────────────
+   Een editie, dagoverzicht of artikel dat er niet (meer) is. */
+
+.niet-gevonden {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    padding-block: var(--section-xs) var(--section-sm);
+}
