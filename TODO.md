@@ -1515,14 +1515,35 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
     bron en link per verhaal zijn wél te tonen. Een fotobijschrift bestaat
     niet.
   - **Het archief kent van oudere dagen alleen titels, slugs en datums**
-    (`articles/manifest.json`). Een oude editie met foto's lukt alleen binnen
-    de 17 dagen van de feed, totdat het manifest wordt uitgebreid met beeld,
-    categorie en bron. Dat kan vooruit, en achteraf door de bestaande
-    artikelpagina's uit te lezen.
+    (`articles/manifest.json`). *Gecorrigeerd 2026-10-29:* de git-geschiedenis
+    van `data/news_nl.json` (231 versies sinds februari) bevat wél categorie,
+    foto en samenvatting. In een steekproef (elke 6e versie) waren 581 van de
+    694 artikelen terug te vinden. Een eenmalig script kan het manifest
+    daarmee aanvullen; daarna schrijft `generate-articles.js` die velden zelf
+    weg. De oude artikelpagina's zelf helpen niet: maar 207 van de 694 linken
+    naar hun categorie.
 
   Besluiten van Maarten voor v5: altijd de editie van vandaag **en**
   gisteren tonen, geen bron en tijd op de fotokaarten van de homepage, het
   dagoverzicht groot bovenaan, en eerdere edities via het archief.
+
+  ### v5 nagelopen (2026-10-29)
+
+  Grotendeels te bouwen. **Eén aanname in het ontwerp klopt niet:** het
+  dagoverzicht gaat altijd over **gisteren** (26 van de 26), en wordt pas de
+  dag erna gemaakt, rond 06:00 of rond 20:00. Tot dat moment is het nieuwste
+  overzicht dat van eergisteren. Nodig:
+  - **ontwerp:** het blok "Gisteren" in twee staten (compact als het
+    overzicht van gisteren er al is, met foto's als dat niet zo is), en het
+    label boven het overzicht naar zijn eigen `digest_date`;
+  - **backend (Erik):** het overzicht van gisteren altijd in de eerste run
+    van de dag maken, en dubbele overzichten voor één dag weggooien (29 en
+    30 september hebben er elk twee).
+
+  Verder open in Figma: Thema van de week / Thema-overzicht, de
+  categoriepagina met de oude chips, de knop "Lees het origineel" die buiten
+  het artikelframe valt, en de eindtekst "Morgenochtend…" (er komt 's middags
+  nog een run, dus neutraler formuleren).
 
   ### Opruimen in Figma als v3 gekozen is
 
