@@ -59,58 +59,11 @@ function categorieSlug(categorie, lang) {
     return maakSlug(t(lang, `filter_${categorie.toLowerCase()}`));
 }
 
-// --- De paginaschil uit index.html lichten ------------------------------
-// Bewust niet overgeschreven: de navigatiebalk en de footer staan al op
-// twaalf pagina's én in het artikelsjabloon, en een dertiende kopie zou
-// daarbij achterlopen zodra iemand er iets aan verandert. Door ze hier uit
-// index.html te halen volgen deze pagina's automatisch mee.
-function leesSchil() {
-    const bron = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
-
-    const headerStart = bron.indexOf('<header>');
-    const headerEind = bron.indexOf('</header>', headerStart);
-    if (headerStart < 0 || headerEind < 0) throw new Error('Kon <header> niet uit index.html lezen.');
-
-    // LET OP: zoeken vanáf de main-footer, niet vanaf 0. Het geparkeerde
-    // blok bovenin index.html bevat zelf ook een </footer>, en zoeken vanaf
-    // het begin levert dan een negatieve slice op (die fout is op 2026-09-24
-    // al een keer gemaakt bij feedback.html).
-    const footerStart = bron.indexOf('<footer class="main-footer"');
-    if (footerStart < 0) throw new Error('Kon <footer class="main-footer"> niet uit index.html lezen.');
-    const footerEind = bron.indexOf('</footer>', footerStart);
-    if (footerEind < 0) throw new Error('Kon het einde van de main-footer niet vinden.');
-
-    return {
-        header: maakPadenAbsoluut(bron.slice(headerStart, headerEind + '</header>'.length)),
-        footer: maakPadenAbsoluut(bron.slice(footerStart, footerEind + '</footer>'.length)),
-    };
-}
-
-// index.html staat in de root en gebruikt relatieve paden ("index.html",
-// "assets/brightnews-logo.png"). Deze pagina's staan twee mappen diep, dus
-// daar wijst zo'n pad naar /categories/nl/assets/... en is het logo stuk.
-// Alles wat niet met een schema, /, # of mailto: begint krijgt een slash.
-function maakPadenAbsoluut(html) {
-    return html.replace(/\b(src|href)="(?!https?:|\/|#|mailto:|tel:|data:)([^"]+)"/gi,
-        (heel, attr, pad) => `${attr}="/${pad}"`);
-}
-
-// De schil uit index.html staat in het Engels met data-i18n erop; op de
-// homepage vult JavaScript dat aan. Hier zetten we de juiste taal er meteen
-// in, zodat een bezoeker (en een crawler) zonder JavaScript al de goede
-// woorden ziet. Alleen elementen met platte tekst: staat er opmaak in (een
-// icoon naast de tekst), dan blijft het element ongemoeid — precies zoals
-// `data-i18n` op de site zelf werkt.
-function vertaalSchil(html, lang) {
-    return html.replace(
-        /(<(\w+)\b[^>]*\sdata-i18n="([a-z0-9_]+)"[^>]*>)([^<]*)(<\/\2>)/gi,
-        (heel, opening, tag, sleutel, tekst, sluiting) => {
-            const vertaling = t(lang, sleutel);
-            if (!vertaling || vertaling === sleutel) return heel;
-            return opening + escapeHtml(vertaling) + sluiting;
-        }
-    );
-}
+// --- De paginaschil ----------------------------------------------------
+// Header en footer komen uit partials/ via backend/schil.js, dezelfde bron
+// als de vaste pagina's en het artikelsjabloon. Tot 2026-10-29 werden ze hier
+// uit index.html gelicht; dat kon alleen zolang index.html de enige bron was.
+const { leesSchil, vertaalSchil } = require('./schil');
 
 function kaartHtml(artikel, lang, manifest) {
     const entry = manifest.articles?.[artikel.id];

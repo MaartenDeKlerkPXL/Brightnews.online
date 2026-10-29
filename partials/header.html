@@ -1,0 +1,48 @@
+<header>
+    <nav class="container">
+        <div class="nav-left-group">
+            <details class="dropdown language-picker">
+                <summary class="dropbtn" id="current-lang">
+                    <span class="taal-vlag">🇺🇸</span><span class="taal-naam">English</span><span class="taal-code" aria-hidden="true">EN</span> <span class="arrow">▼</span>
+                </summary>
+                <div class="dropdown-content">
+                        <a href="#" onclick="wisselTaal('en', '🇺🇸 English', event)"><span class="taal-vlag">🇺🇸</span> English</a>
+                    <a href="#" onclick="wisselTaal('nl', '🇳🇱 Nederlands', event)"><span class="taal-vlag">🇳🇱</span> Nederlands</a>
+                    <a href="#" onclick="wisselTaal('de', '🇩🇪 Deutsch', event)"><span class="taal-vlag">🇩🇪</span> Deutsch</a>
+                    <a href="#" onclick="wisselTaal('fr', '🇫🇷 Français', event)"><span class="taal-vlag">🇫🇷</span> Français</a>
+                    <a href="#" onclick="wisselTaal('es', '🇪🇸 Español', event)"><span class="taal-vlag">🇪🇸</span> Español</a>
+                </div>
+            </details>
+
+
+            <a href="/index.html"><img src="/assets/brightnews-logo.png" height="94" width="463" class="nav-logo" alt="BrightNews"/></a></div>
+        <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu openen" data-i18n-aria-label="menu_open">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="mobileMenu">
+            <li><a href="/index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="/over-ons.html" data-i18n="nav_about">Over Ons</a></li>
+            <li><a href="/abonnementen.html" data-i18n="nav_premium">Abonnementen</a></li>
+
+            <li class="nav-profile-desktop">
+                <a href="/profiel.html" class="profile-icon" aria-label="Profiel" data-i18n-aria-label="nav_profile">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a>
+            </li>
+
+            <li class="nav-profile-mobile">
+                <a href="/profiel.html" class="profile-link-text">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span data-i18n="nav_profile">Profiel</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>

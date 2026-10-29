@@ -46,6 +46,14 @@ verbeteringen van de één binnen een dag bij de ander landen:
 - Wijzig je het artikeltemplate in `backend/generate-articles.js` →
   `node backend/generate-articles.js` draaien (regenereert de actuele
   pagina's; archief blijft bewust staan) + `node backend/generate-sitemap.js`.
+- **Header en footer staan op één plek: `partials/header.html` en
+  `partials/footer.html`** (sinds 2026-10-29, redesign v5). Nooit meer in een
+  pagina zelf bewerken: tussen `<!-- schil:header -->` en
+  `<!-- /schil:header -->` wordt alles overschreven. Na een wijziging:
+  `node backend/stempel-schil.js` (vaste pagina's) en de generators draaien
+  (`generate-articles.js`, `generate-categorieen.js`), die de schil zelf uit
+  `backend/schil.js` halen. `node backend/stempel-schil.js --controle` faalt
+  als een pagina achterloopt.
 - Vertaalteksten: elke key bestaat in **5 talen** (nl/en/de/fr/es) in
   `data/translations.js`. Nieuwe key = 5 regels.
 - `data-i18n` op een element wist de children — tekst altijd in een eigen

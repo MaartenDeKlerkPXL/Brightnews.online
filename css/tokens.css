@@ -1,0 +1,174 @@
+/* BrightNews v5 — ontwerptokens.
+ *
+ * Eén op één overgenomen uit Figma ("UI Kit — BrightNews.online", de
+ * variabelen van de v5-frames). De namen zijn de CSS-namen die de ontwerper
+ * aan elke variabele heeft gegeven, zodat ontwerp en code dezelfde taal
+ * spreken. Pas een waarde liever eerst in Figma aan en daarna hier.
+ *
+ * Donkere modus: standaard volgt de site het systeem (prefers-color-scheme).
+ * Wie in de instellingen zelf kiest, krijgt data-theme="licht" of "donker" op
+ * <html>, en dat wint altijd van het systeem. Het kleine script dat dat
+ * attribuut zet staat inline in elke <head>, zodat er geen witte flits is.
+ *
+ * Contrast nagemeten op 2026-10-29: alle tekstkleuren halen 4,5:1 in beide
+ * modi, de sterke kaderlijnen 3:1. De laagste: kader op subtle in donker,
+ * 3,12:1.
+ */
+
+:root {
+    /* Kleur: merk */
+    --color-leaf-600: #186f49;   /* het énige groen (besluit v3) */
+    --color-sun-400: #ffc933;    /* merkaccent; nooit witte tekst erop (1,54:1) */
+    --color-neutral-0: #ffffff;
+    --color-neutral-50: #f7f8f3;
+    --brand-accent: #ffc933;
+
+    /* Kleur: tekst */
+    --text-primary: #152019;
+    --text-secondary: #4e574d;
+    --text-muted: #646d62;
+    --text-link: #186f49;
+    --text-on-action: #ffffff;
+    --text-on-image: #ffffff;        /* altijd wit, ook in donker */
+    --text-on-brand-strong: #152019; /* inkt op geel, in beide modi donker */
+
+    /* Kleur: vlakken */
+    --surface-default: #ffffff;
+    --surface-subtle: #f7f8f3;
+    --surface-muted: #eef1ea;
+    --surface-brand: #fff1c7;
+    --surface-brand-strong: #ffc933;
+    --surface-badge-brand: #fff1c7;
+    --action-primary-bg: #186f49;
+
+    /* Kleur: lijnen */
+    --border-default: #dfe3da;
+    --border-strong: #646d62;
+    --border-focus: #23895a;
+
+    /* Scrim achter tekst op foto's. Inkt 65% aan de bovenkant van het
+       tekstvlak tot 92% onderaan; op een witte lucht gemeten 6,8:1. */
+    --overlay-scrim-start: #15201900;
+    --overlay-scrim-mid: #152019a6;
+    --overlay-scrim-end: #152019eb;
+
+    /* Fout. Niet in Figma; overgenomen uit de huidige site tot de
+       ontwerper er een eigen reeks voor maakt. */
+    --color-error: #d93025;
+    --color-error-text: #a32219;
+    --color-error-bg: #fdf1f0;
+
+    /* Letters. Instrument Sans voor koppen (besluit v5 · 10), Figtree voor
+       tekst. Beide zelf gehost (CSP), met latin-ext voor é, ü, ß en ñ. */
+    --font-family-display: 'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-family-base: 'Figtree', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+    /* Lettergroottes: zes, niets onder 14 px (besluit v5 · 11) */
+    --font-size-14: 0.875rem;
+    --font-size-16: 1rem;
+    --font-size-18: 1.125rem;
+    --type-heading-md-size: 1.5rem;   /* 24 */
+    --type-heading-lg-size: 2rem;     /* 32 */
+    --type-display-sm-size: 3rem;     /* 48 */
+
+    --line-height-20: 1.25rem;
+    --line-height-24: 1.5rem;
+    --line-height-28: 1.75rem;
+    --type-heading-md-line-height: 2rem;
+    --type-heading-lg-line-height: 2.5rem;
+    --type-display-sm-line-height: 3.5rem;
+
+    /* Ruimte */
+    --spacing-2xs: 4px;
+    --spacing-xs: 8px;
+    --spacing-sm: 12px;
+    --spacing-md: 16px;
+    --spacing-lg: 20px;
+    --spacing-xl: 24px;
+    --spacing-2xl: 32px;
+    --spacing-3xl: 40px;
+    --section-xs: 40px;
+    --section-sm: 80px;
+
+    /* Layout */
+    --grid-columns: 12;
+    --grid-margin: 80px;
+    --grid-gutter: 24px;
+    --layout-section-padding-x: 80px;
+    --layout-section-gap: 40px;
+    --layout-section-padding-y-compact: 40px;
+    --layout-reading-width: 720px;
+    --layout-media-width: 960px;
+
+    /* Vormen */
+    --radius-xs: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-2xl: 24px;
+    --radius-full: 5000px;
+    --border-width-sm: 1px;
+    --border-width-md: 2px;
+
+    /* Bediening */
+    --control-height-sm: 32px;
+    --control-height-md: 40px;
+    --icon-size-md: 20px;
+    --progress-height-sm: 4px;
+
+    /* Beweging (besluit v4 · 13): drie duren en één easing */
+    --motion-duration-fast: 200ms;   /* hover, focus */
+    --motion-duration-base: 300ms;   /* paneel, kaarten */
+    --motion-duration-slow: 400ms;   /* wissel licht/donker */
+    --motion-easing: cubic-bezier(0.2, 0, 0, 1);
+
+    /* Focusring: 2 px pagina, dan 2 px groen (Figma: "Focus ring") */
+    --focus-ring: 0 0 0 2px var(--surface-default), 0 0 0 4px var(--border-focus);
+
+    color-scheme: light;
+}
+
+/* De donkere waarden staan twee keer: één keer voor wie het systeem volgt,
+   één keer voor wie zelf "donker" kiest. Dat is de enige manier om zowel het
+   systeem als een eigen keuze te ondersteunen zonder JavaScript in de CSS. */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="licht"]) {
+        --text-primary: #f7f8f3;
+        --text-secondary: #c6ccc0;
+        --text-muted: #98a094;
+        --text-link: #6fc294;
+        --text-on-action: #0a120d;
+        --surface-default: #0a120d;
+        --surface-subtle: #152019;
+        --surface-muted: #232b24;
+        --surface-brand: #232b24;
+        --surface-badge-brand: #ffc933;
+        --action-primary-bg: #3fa672;
+        --border-default: #232b24;
+        color-scheme: dark;
+    }
+}
+
+:root[data-theme="donker"] {
+    --text-primary: #f7f8f3;
+    --text-secondary: #c6ccc0;
+    --text-muted: #98a094;
+    --text-link: #6fc294;
+    --text-on-action: #0a120d;
+    --surface-default: #0a120d;
+    --surface-subtle: #152019;
+    --surface-muted: #232b24;
+    --surface-brand: #232b24;
+    --surface-badge-brand: #ffc933;
+    --action-primary-bg: #3fa672;
+    --border-default: #232b24;
+    color-scheme: dark;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    :root {
+        --motion-duration-fast: 0ms;
+        --motion-duration-base: 0ms;
+        --motion-duration-slow: 0ms;
+    }
+}

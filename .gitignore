@@ -8,3 +8,6 @@ node_modules/
 ._*
 __MACOSX/
 deno.lock
+
+# Werkbestanden van oh-my-claudecode, horen niet in de repo
+.omc/
