@@ -106,6 +106,15 @@ p {
     letter-spacing: -0.24px;
 }
 
+.type-overline {
+    color: var(--text-link);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 600;
+    letter-spacing: 1.12px;
+    text-transform: uppercase;
+}
+
 .type-body-lg {
     font-size: var(--font-size-18);
     line-height: var(--line-height-28);

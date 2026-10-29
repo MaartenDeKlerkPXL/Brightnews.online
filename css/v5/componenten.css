@@ -73,6 +73,13 @@
    Categorie op een kaart, of een kort label zoals "Bespaar 29%". In donker
    wordt het vlak geel; de inkt blijft donker. */
 
+/* Variant Success: groen, voor een voordeel zoals "Bespaar 29%" op de
+   abonnementenpagina. */
+.badge.badge--success {
+    background: var(--feedback-success-bg);
+    color: var(--feedback-success-fg);
+}
+
 .badge {
     display: inline-flex;
     align-items: center;
@@ -221,6 +228,12 @@ body:has(.paywall) .navbar .btn--primary {
 
 body:has(.paywall) .navbar .btn--primary:hover {
     background: var(--surface-muted);
+}
+
+/* Op de abonnementenpagina is "Start 30 dagen gratis" de enige primaire
+   knop; "Probeer Premium" in de header verdwijnt daar. */
+body[data-pagina="abonnementen"] .navbar .btn--primary {
+    display: none;
 }
 
 @media (max-width: 599px) {
@@ -1491,6 +1504,281 @@ body:has(.paywall) .navbar .btn--primary:hover {
     font-size: var(--font-size-14);
     line-height: var(--line-height-20);
     font-weight: 500;
+}
+
+
+/* ── Plan option ───────────────────────────────────────────────────────
+   Radiokaart voor een abonnement, in een fieldset met legend. De hele
+   kaart is het klikvlak (label); pijltjestoetsen wisselen. Gekozen =
+   rand van 2 px in de actiekleur (de tweede pixel als schaduw binnenin,
+   zodat de kaart niet verspringt). */
+
+.plan-option {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xs);
+    padding: var(--spacing-lg);
+    border: var(--border-width-sm) solid var(--border-default);
+    border-radius: var(--radius-lg);
+    background: var(--surface-default);
+    cursor: pointer;
+    transition: border-color var(--motion-duration-fast) var(--motion-easing);
+}
+
+.plan-option:hover {
+    border-color: var(--border-strong);
+}
+
+.plan-option:has(input:checked) {
+    border-color: var(--action-primary-bg);
+    box-shadow: inset 0 0 0 1px var(--action-primary-bg);
+}
+
+.plan-option:has(input:focus-visible) {
+    box-shadow: inset 0 0 0 1px var(--action-primary-bg), var(--focus-ring);
+}
+
+.plan-option__top {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.plan-option__naam {
+    flex: 1;
+    font-weight: 600;
+}
+
+.plan-option__detail {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xs);
+    padding-left: var(--spacing-2xl);
+}
+
+.plan-option__prijs {
+    font-family: var(--font-family-display);
+    font-size: var(--type-heading-md-size);
+    line-height: var(--type-heading-md-line-height);
+    font-weight: 600;
+    letter-spacing: -0.12px;
+}
+
+.plan-option__noot {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+/* De radioknop zelf, gedeeld met Plan in de paywall. */
+.plan-option input {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    border: 1.5px solid var(--border-strong);
+    border-radius: 50%;
+    background: var(--surface-default);
+    appearance: none;
+    cursor: pointer;
+    transition: border-width var(--motion-duration-fast) var(--motion-easing);
+}
+
+.plan-option input:checked {
+    border: 6px solid var(--action-primary-bg);
+}
+
+.plan-option input:focus-visible {
+    box-shadow: none;
+}
+
+
+/* ── Order summary ─────────────────────────────────────────────────────
+   "Samenvatting" vóór de knop: wat je vandaag betaalt en vanaf wanneer. */
+
+.order-summary {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    background: var(--surface-subtle);
+}
+
+.order-summary__rij {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+}
+
+.order-summary__rij strong {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.order-summary__uitleg {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+
+/* ── Checkbox ──────────────────────────────────────────────────────────
+   Echt vinkje (visueel verborgen) met een eigen vakje ernaast, zodat het
+   vakje in elke browser hetzelfde oogt. Nooit vooraf aangevinkt bij
+   toestemming. */
+
+.checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    cursor: pointer;
+}
+
+.checkbox__vak {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: var(--icon-size-md);
+    height: var(--icon-size-md);
+    border: var(--border-width-sm) solid var(--border-strong);
+    border-radius: var(--radius-xs);
+    background: var(--surface-default);
+    color: var(--text-on-action);
+    transition: background-color var(--motion-duration-fast) var(--motion-easing);
+}
+
+.checkbox__vak .icoon {
+    width: 16px;
+    height: 16px;
+    visibility: hidden;
+}
+
+.checkbox input:checked + .checkbox__vak {
+    border-color: var(--action-primary-bg);
+    background: var(--action-primary-bg);
+}
+
+.checkbox input:checked + .checkbox__vak .icoon {
+    visibility: visible;
+}
+
+.checkbox input:focus-visible + .checkbox__vak {
+    box-shadow: var(--focus-ring);
+}
+
+.checkbox input[aria-invalid="true"] + .checkbox__vak {
+    border-color: var(--feedback-error-fg);
+}
+
+
+/* ── Field error ───────────────────────────────────────────────────────
+   Foutmelding direct onder een veld: altijd icoon en tekst, nooit alleen
+   kleur. Het veld krijgt aria-invalid en aria-describedby. */
+
+.field-error {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+    padding-left: var(--spacing-2xl);
+    color: var(--feedback-error-fg);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 600;
+}
+
+.field-error[hidden] {
+    display: none;
+}
+
+
+/* ── Compare row ───────────────────────────────────────────────────────
+   Gratis of Premium als echte tabel. Een vinkje heeft de verborgen tekst
+   "inbegrepen". */
+
+.vergelijking {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.vergelijking th,
+.vergelijking td {
+    height: 40px;
+    padding: var(--spacing-xs) 0;
+    font-weight: 400;
+    text-align: left;
+}
+
+.vergelijking thead th {
+    font-weight: 600;
+}
+
+.vergelijking tbody tr {
+    border-top: var(--border-width-sm) solid var(--border-default);
+}
+
+.vergelijking td,
+.vergelijking thead th + th {
+    width: 112px;
+    text-align: center;
+}
+
+.vergelijking td .icoon {
+    display: inline-block;
+    color: var(--text-link);
+    vertical-align: middle;
+}
+
+.vergelijking td strong {
+    font-weight: 600;
+}
+
+
+/* ── Accordion item ────────────────────────────────────────────────────
+   Een vraag die openklapt, als <details>/<summary>. Chevron omlaag als
+   hij dicht is, omhoog als hij open is. */
+
+.accordion-item {
+    border-bottom: var(--border-width-sm) solid var(--border-default);
+}
+
+.accordion-item summary {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    font-weight: 600;
+    list-style: none;
+    cursor: pointer;
+}
+
+.accordion-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion-item summary:hover {
+    background: var(--surface-subtle);
+}
+
+.accordion-item summary span {
+    flex: 1;
+}
+
+.accordion-item summary .icoon {
+    transition: transform var(--motion-duration-base) var(--motion-easing);
+}
+
+.accordion-item[open] summary .icoon {
+    transform: rotate(180deg);
+}
+
+.accordion-item__inhoud {
+    padding: 0 var(--spacing-md) var(--spacing-md);
+    color: var(--text-secondary);
 }
 
 

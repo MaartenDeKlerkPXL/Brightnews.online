@@ -52,6 +52,13 @@
     --overlay-scrim-mid: #152019a6;
     --overlay-scrim-end: #152019eb;
 
+    /* Meldingen bij een veld of status (Figma: feedback/…), sinds de
+       abonnementenpagina. Succes voor de badge "Bespaar 29%", fout voor
+       Field error. */
+    --feedback-success-bg: #ecf7f0;
+    --feedback-success-fg: #13573a;
+    --feedback-error-fg: #b91c1c;
+
     /* Fout. Niet in Figma; overgenomen uit de huidige site tot de
        ontwerper er een eigen reeks voor maakt. */
     --color-error: #d93025;
@@ -89,6 +96,7 @@
     --spacing-3xl: 40px;
     --section-xs: 40px;
     --section-sm: 80px;
+    --section-md: 120px;
 
     /* Layout */
     --grid-columns: 12;
@@ -145,6 +153,9 @@
         --surface-badge-brand: #ffc933;
         --action-primary-bg: #3fa672;
         --border-default: #232b24;
+        --feedback-success-bg: #0e412c;
+        --feedback-success-fg: #d2eedc;
+        --feedback-error-fg: #fee2e2;
         color-scheme: dark;
     }
 }
@@ -162,6 +173,9 @@
     --surface-badge-brand: #ffc933;
     --action-primary-bg: #3fa672;
     --border-default: #232b24;
+    --feedback-success-bg: #0e412c;
+    --feedback-success-fg: #d2eedc;
+    --feedback-error-fg: #fee2e2;
     color-scheme: dark;
 }
 

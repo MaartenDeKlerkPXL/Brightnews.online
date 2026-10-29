@@ -388,3 +388,132 @@
     gap: var(--spacing-md);
     padding-block: var(--section-xs) var(--section-sm);
 }
+
+
+/* ── Abonnementen ────────────────────────────────────────────────────── */
+
+.abo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--section-xs);
+    padding-block: var(--section-xs) var(--section-md);
+}
+
+.abo__intro {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    max-width: var(--layout-reading-width);
+}
+
+.abo__intro p:last-child {
+    color: var(--text-secondary);
+}
+
+.abo__kolommen {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 480px);
+    align-items: start;
+    gap: var(--section-xs);
+}
+
+.abo__formulier {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    padding: var(--spacing-2xl);
+    border: var(--border-width-sm) solid var(--border-default);
+    border-radius: var(--radius-xl);
+    background: var(--surface-default);
+}
+
+.abo__plannen {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.abo__plannen legend {
+    margin-bottom: var(--spacing-sm);
+    padding: 0;
+}
+
+.abo__toestemming {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.kleine-lettertjes {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.kleine-lettertjes a,
+.abo__al-premium a {
+    color: var(--text-link);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.kleine-lettertjes .verwijzing {
+    gap: var(--spacing-xs);
+}
+
+.abo__aside {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.abo__vergelijk {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-xl);
+    background: var(--surface-subtle);
+}
+
+.abo__vergelijk > p {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.abo__al-premium {
+    padding-inline: var(--spacing-2xl);
+    color: var(--text-secondary);
+}
+
+.abo__faq {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    max-width: 760px;
+}
+
+@media (max-width: 1023px) {
+    .abo__kolommen {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 599px) {
+    .abo__formulier,
+    .abo__vergelijk {
+        padding: var(--spacing-lg);
+    }
+
+    .abo__al-premium {
+        padding-inline: 0;
+    }
+}

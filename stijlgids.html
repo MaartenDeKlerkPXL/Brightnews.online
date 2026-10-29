@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="/css/tokens.css">
     <link rel="stylesheet" href="/css/v5/basis.css">
     <link rel="stylesheet" href="/css/v5/componenten.css">
+    <link rel="stylesheet" href="/css/v5/paginas.css">
     <style>
         /* Alleen voor deze pagina: de opmaak van de gids zelf. */
         .gids { display: flex; flex-direction: column; gap: 72px; padding-block: 56px 96px; }
@@ -86,7 +87,7 @@
                 <svg class="icoon settings-trigger__chevron" aria-hidden="true"><use href="/assets/iconen.svg#keyboard_arrow_down"/></svg>
             </button>
             <a class="btn btn--secondary navbar__inloggen"><span data-i18n="schil_inloggen">Inloggen</span></a>
-            <a class="btn btn--primary"><span data-i18n="schil_probeer_premium">Probeer Premium</span></a>
+            <a class="btn btn--primary" href="/v5-abonnementen.html"><span data-i18n="schil_probeer_premium">Probeer Premium</span></a>
         </div>
     </div>
 
@@ -456,6 +457,60 @@
             <a class="btn btn--secondary" href="#">Donderdag 29 oktober<svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#arrow_forward"/></svg></a>
         </nav>
     </section>
+
+    <section class="gids__sectie" aria-labelledby="g-abo">
+        <h2 class="type-heading-lg" id="g-abo">Abonnementen</h2>
+        <p class="gids__noot">Overline, Plan option (radiokaarten in een fieldset), Badge Success, de samenvatting vóór de knop, Checkbox met Field error, Compare row als echte tabel en Accordion item als &lt;details&gt;.</p>
+        <div class="gids__rij">
+            <div class="gids__voorbeeld" style="flex: 1 1 480px">
+                <span class="gids__label">Overline en Plan option (Default en Selected)</span>
+                <p class="type-overline">BrightNews Premium</p>
+                <fieldset class="abo__plannen">
+                    <legend class="visueel-verborgen">Kies je abonnement</legend>
+                    <label class="plan-option">
+                        <span class="plan-option__top"><input type="radio" name="gids-plan" value="maandelijks"><span class="plan-option__naam">Glow · per maand</span></span>
+                        <span class="plan-option__detail"><span class="plan-option__prijs">€2,95 per maand</span><span class="plan-option__noot">Maandelijks opzegbaar.</span></span>
+                    </label>
+                    <label class="plan-option">
+                        <span class="plan-option__top"><input type="radio" name="gids-plan" value="jaarlijks" checked><span class="plan-option__naam">Shine · per jaar</span><span class="badge badge--success">Bespaar 29%</span></span>
+                        <span class="plan-option__detail"><span class="plan-option__prijs">€24,95 per jaar</span><span class="plan-option__noot">Dat is €2,08 per maand. Jaarlijks opzegbaar.</span></span>
+                    </label>
+                </fieldset>
+            </div>
+            <div class="gids__voorbeeld" style="flex: 1 1 400px">
+                <span class="gids__label">Order summary</span>
+                <div class="order-summary">
+                    <p class="order-summary__rij"><span>Vandaag te betalen</span><strong>€0,00</strong></p>
+                    <p class="order-summary__rij"><span>Vanaf 28 november 2026</span><strong>€24,95 per jaar</strong></p>
+                    <p class="order-summary__uitleg">Zeg je vóór 28 november op, dan betaal je niets.</p>
+                </div>
+                <span class="gids__label">Checkbox (leeg, aangevinkt) en Field error</span>
+                <label class="checkbox"><input class="visueel-verborgen" type="checkbox"><span class="checkbox__vak"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></span><span>Ik wil dat Premium meteen start.</span></label>
+                <label class="checkbox"><input class="visueel-verborgen" type="checkbox" checked><span class="checkbox__vak"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></span><span>Aangevinkt</span></label>
+                <label class="checkbox"><input class="visueel-verborgen" type="checkbox" aria-invalid="true" aria-describedby="gids-fout"><span class="checkbox__vak"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></span><span>Met fout</span></label>
+                <p class="field-error" id="gids-fout"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#error"/></svg><span>Vink dit vakje aan om Premium te starten.</span></p>
+            </div>
+        </div>
+        <div class="gids__rij">
+            <div class="gids__voorbeeld abo__vergelijk" style="flex: 1 1 420px">
+                <span class="gids__label">Compare row</span>
+                <table class="vergelijking">
+                    <thead><tr><th scope="col"><span class="visueel-verborgen">Wat je krijgt</span></th><th scope="col">Gratis</th><th scope="col">Premium</th></tr></thead>
+                    <tbody>
+                        <tr><th scope="row">In vijf talen</th><td><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg><span class="visueel-verborgen">inbegrepen</span></td><td><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg><span class="visueel-verborgen">inbegrepen</span></td></tr>
+                        <tr><th scope="row">Volledige artikelen</th><td>5 per maand</td><td><strong>Onbeperkt</strong></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="gids__voorbeeld" style="flex: 1 1 420px">
+                <span class="gids__label">Accordion item (open en dicht)</span>
+                <div>
+                    <details class="accordion-item" open><summary><span>Wanneer betaal ik voor het eerst?</span><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#keyboard_arrow_down"/></svg></summary><p class="accordion-item__inhoud">Na de proefperiode van 30 dagen.</p></details>
+                    <details class="accordion-item"><summary><span>Hoe zeg ik op?</span><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#keyboard_arrow_down"/></svg></summary><p class="accordion-item__inhoud">Zelf, in Mijn account.</p></details>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 <!-- schil:v5-footer -->
@@ -494,7 +549,7 @@
                 <ul>
                     <li><a><span data-i18n="schil_over_ons">Over ons</span></a></li>
                     <li><a><span data-i18n="schil_zo_kiezen_we">Zo kiezen we</span></a></li>
-                    <li><a><span data-i18n="schil_premium">Premium</span></a></li>
+                    <li><a href="/v5-abonnementen.html"><span data-i18n="schil_premium">Premium</span></a></li>
                     <li><a><span data-i18n="schil_privacy_voorwaarden">Privacy en voorwaarden</span></a></li>
                 </ul>
             </nav>

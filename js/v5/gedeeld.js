@@ -275,6 +275,7 @@
         dagoverzicht: dag => `/v5-dagoverzicht.html?datum=${dag}`,
         editie: dag => `/v5-editie.html?datum=${dag}`,
         archief: maand => (maand ? `/v5-archief.html?maand=${maand}` : '/v5-archief.html'),
+        abonnementen: plan => (plan ? `/v5-abonnementen.html?plan=${plan}` : '/v5-abonnementen.html'),
     };
 
     // Houd ?vandaag= vast bij het doorklikken tussen de voorbeeldpagina's.
@@ -589,7 +590,7 @@
     }
 
     window.BN5 = {
-        CATEGORIEEN, taal, t, vertaalPagina, param,
+        CATEGORIEEN, taal, t, vertaalPagina, param, locale: () => LOCALE[taal()],
         laadFeed, laadManifest, isDigest,
         dagVan, vandaag, verschuif, isDagSleutel, dagLang, dagMaand, weekdag, maandNaam, tijd, datumTijd, hoofdletter,
         aantalVerhalen, perDag, archiefPerDag, digestsVan, nieuwsteDigestDag, verhalenVanDigests, laatsteMoment,

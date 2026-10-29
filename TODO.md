@@ -1588,6 +1588,20 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
     componentbeschrijving); WhatsApp en X komen uit Simple Icons (CC0).
   - Mobiel is niet ontworpen: de rasters vallen terug op 2 en 1 kolom.
 
+  **Abonnementen (2026-10-29):** `v5-abonnementen.html` volgt de frames
+  "Abonnementen · Desktop" en de foutstaat "vinkje vergeten", met de
+  besluiten: Shine voorgeselecteerd, samenvatting vóór de knop (vandaag €0,00
+  en de datum vandaag + 30 dagen), verplicht vinkje voor het
+  herroepingsrecht met Field error zonder pop-up, de vergelijking als echte
+  tabel, de FAQ als `<details>`, en "Probeer Premium" in de header verborgen.
+  `?plan=maandelijks` kiest Glow voor; de paywall in het artikel geeft het
+  gekozen plan zo mee. Nieuwe tokens uit Figma: `--feedback-success-*`,
+  `--feedback-error-fg` (licht en donker) en `--section-md`.
+  Afwijkingen: de antwoorden op FAQ 2 t/m 4 staan niet in Figma (alleen de
+  vragen) en zijn geschreven uit wat de site nu doet; **Erik: klopt
+  "wisselen via Abonnement beheren"?** "Log in", "algemene voorwaarden" en
+  "refundbeleid" hebben nog geen v5-pagina en dus geen link.
+
   #### Back-end voor v5 (Claude, sessie Maarten)
 
   1. **Eerst moet het nieuws weer draaien (punt 26).** Zonder nieuwe
@@ -1613,9 +1627,14 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      ook de oude `showNotification()` van de nieuwe Melding, en die moet dan
      naar de v5-opmaak. In Figma ontbreken de paywalltypes Account en Credit
      nog als frame (Maarten).
-  7. **Plankeuze doorgeven:** "Start 30 dagen gratis" gaat naar
-     `/abonnementen.html` zonder het gekozen plan. Een `?plan=jaarlijks` of
-     `maandelijks` daar oppakken scheelt de lezer een keuze.
+  7. **De afrekening op `v5-abonnementen.html` koppelen** (betalingen, dus PR
+     langs Erik). De knop controleert nu alleen het vinkje en meldt dan dat de
+     betaling in het voorbeeld nog niet gekoppeld is. Het gekozen plan staat
+     in `input[name=plan]` (`jaarlijks` of `maandelijks`), en de paywall geeft
+     het al mee als `?plan=`. Open vraag uit Figma: moet je ingelogd zijn vóór
+     Stripe Checkout? Zo ja: niet ingelogd → naar de inlogpagina met
+     `?next=abonnementen` en daarna terug, met het plan bewaard. Juridische
+     tekst bij het vinkje nog laten controleren.
   8. **Bij de lancering:** de v5-pagina's hernoemen naar de echte adressen
      (`index.html`, `archief.html`, het artikelsjabloon) en die adressen in
      `partials/v5/` en `js/v5/gedeeld.js` (`url`) zetten. Sinds 2026-10-29

@@ -47,9 +47,9 @@
         plannen.appendChild(plan('maandelijks', t('plan_glow_name'), t('v5_prijs_maand'), false));
         blok.appendChild(plannen);
 
-        // Naar de abonnementenpagina zodra die in v5 bestaat; tot dan zonder
-        // adres.
-        blok.appendChild(B.knop(null, t('v5_start_proef'), { klasse: 'btn btn--primary btn--vol' }));
+        // Naar de abonnementenpagina, met het gekozen plan voorgeselecteerd.
+        const start = B.knop(B.url.abonnementen('jaarlijks'), t('v5_start_proef'), { klasse: 'btn btn--primary btn--vol' });
+        blok.appendChild(start);
 
         const proef = el('p', 'paywall__proef');
         proef.appendChild(el('span', 'paywall__nul', t('v5_nul_vandaag')));
@@ -58,9 +58,10 @@
         blok.appendChild(proef);
         plannen.addEventListener('change', e => {
             daarna.textContent = t(e.target.value === 'maandelijks' ? 'v5_daarna_maand' : 'v5_daarna_jaar');
+            start.href = B.metTestdag(B.url.abonnementen(e.target.value));
         });
 
-        blok.appendChild(B.link(null, 'paywall__meer', t('v5_wat_premium')));
+        blok.appendChild(B.link(B.url.abonnementen(), 'paywall__meer', t('v5_wat_premium')));
         return blok;
     }
 
