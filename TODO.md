@@ -1,5 +1,10 @@
 # TODO BrightNews
 
+> 🚨 **ZEER HOGE PRIORITEIT (2026-10-30): punt 67** — een skill "Is mijn
+> website goed beschermd" maken aan de hand van de pdf en een foto, en Oh My
+> Claude met al zijn agents over de site laten lopen om te zien of er nog
+> problemen opduiken. Staat bovenaan "Blokkeert de lancering".
+
 > **Stand 2026-09-28, avond.** Vijf pull requests in één dag: #11 t/m #14 zijn
 > gemerged, #15 staat open. Daarmee zijn **punt 3, 46, 47, 50, 51, 53.1, 54
 > (techniek), 55, 57, 60 en 61 afgehandeld.** De welkomstreeks draait live —
@@ -138,6 +143,29 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
 ---
 
 ## Blokkeert de lancering
+
+- [ ] **67. 🚨 ZEER HOGE PRIORITEIT: is de site goed beschermd? Skill maken
+  en een volledige controle met alle agents.**
+  *(Maarten, 2026-10-30. Gaat vóór al het andere werk op deze lijst.)*
+
+  1. **Een skill "Is mijn website goed beschermd" maken**, aan de hand van
+     de pdf en een foto die Maarten heeft. Die twee staan nog niet in de repo:
+     geef ze mee aan de sessie die de skill bouwt (of zet ze in
+     `assets/documents/`). De skill moet een vaste controlelijst worden die
+     elke Claude-sessie, bij Maarten en bij Erik, opnieuw kan draaien.
+  2. **Oh My Claude met al zijn agents laten draaien** over de hele site en
+     de repo, om te zien of er nog problemen opduiken. Die plugin moet daarvoor
+     in de sessie geïnstalleerd zijn.
+  3. **Wat eruit komt** als genummerde punten op deze lijst zetten, met naam.
+     Raakt het Supabase, betalingen, `backend/`, `sw.js` of secrets, dan is het
+     werk voor Erik (PR met review-verzoek, zie CLAUDE.md).
+
+  Aandachtspunten die er in elk geval in horen, omdat ze in deze repo al eens
+  misgingen of gevoelig zijn: de meta-CSP op alle pagina's en in het
+  artikelsjabloon, de Supabase-regels (RLS) en `security definer`-functies
+  zoals `lees_artikel()` (PR #15), dat er geen secrets in de repo staan, de
+  Stripe-webhooks, de service worker, en dat AI-tekst nergens via
+  `innerHTML` in een pagina komt.
 
 - [x] **1. De twee open pull requests vlottrekken.** ✅ 2026-09-16 (Fable-review): #5 gemerged + og:image-absoluutfix erachteraan; #1 lokaal gemerged (bronwerk integraal overgenomen, sw-conflict → v23) en pagina's geregenereerd. Oorspronkelijke tekst: Allebei hebben ze
   merge-conflicten (`mergeable=CONFLICTING`) en lopen achter op master:
