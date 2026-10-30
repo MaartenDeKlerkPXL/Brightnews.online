@@ -86,7 +86,9 @@
                 <span class="settings-trigger__label" data-i18n="schil_instellingen">Instellingen</span>
                 <svg class="icoon settings-trigger__chevron" aria-hidden="true"><use href="/assets/iconen.svg#keyboard_arrow_down"/></svg>
             </button>
-            <a class="btn btn--secondary navbar__inloggen" href="/v5-inloggen.html"><span data-i18n="schil_inloggen">Inloggen</span></a>
+            <!-- Ingelogd (<body data-ingelogd>): Mijn account in plaats van Inloggen. -->
+            <a class="btn btn--secondary navbar__inloggen" href="/v5-inloggen.html" data-alleen="uitgelogd"><span data-i18n="schil_inloggen">Inloggen</span></a>
+            <a class="btn btn--secondary navbar__account" href="/v5-profiel.html" data-alleen="ingelogd"><span data-i18n="schil_mijn_account">Mijn account</span></a>
             <a class="btn btn--primary" href="/v5-abonnementen.html"><span data-i18n="schil_probeer_premium">Probeer Premium</span></a>
         </div>
     </div>
@@ -533,6 +535,26 @@
                 </fieldset>
                 <span class="gids__label">Alert Error</span>
                 <div class="alert"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#error"/></svg><div class="alert__inhoud"><p class="alert__titel">Inloggen lukte niet</p><p class="alert__tekst">Het e-mailadres of het wachtwoord klopt niet.</p><button class="alert__actie" type="button">Stuur me een inloglink</button></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gids__sectie" aria-labelledby="g-account">
+        <h2 class="type-heading-lg" id="g-account">Mijn account</h2>
+        <p class="gids__noot">Badge md (Neutral en Success, naast een kop), Button Tertiary (een zijpad zoals Account verwijderen), Toggle (een echte checkbox met role="switch", geldt meteen) en Credit meter (alleen beeld; de tekst ernaast draagt de betekenis). In de header staat Mijn account in plaats van Inloggen zodra &lt;body data-ingelogd&gt; heeft.</p>
+        <div class="gids__rij">
+            <div class="gids__voorbeeld" style="flex: 1 1 400px">
+                <span class="gids__label">Badge md: Neutral en Success</span>
+                <div class="gids__rij"><span class="badge badge--md badge--neutral">Gratis account</span><span class="badge badge--md badge--success">Premium · proefperiode</span></div>
+                <span class="gids__label">Button Tertiary</span>
+                <div class="gids__rij"><a class="btn btn--tertiary" href="#">Account verwijderen</a><a class="btn btn--tertiary btn--sm" href="#">Klein</a></div>
+            </div>
+            <div class="gids__voorbeeld" style="flex: 1 1 400px">
+                <span class="gids__label">Toggle: aan en uit</span>
+                <label class="toggle"><input class="visueel-verborgen" type="checkbox" role="switch" checked><span class="toggle__baan" aria-hidden="true"></span><span>Mails van BrightNews</span></label>
+                <label class="toggle"><input class="visueel-verborgen" type="checkbox" role="switch"><span class="toggle__baan" aria-hidden="true"></span><span>Uit</span></label>
+                <span class="gids__label">Credit meter (3 van 5)</span>
+                <div class="credit-meter" aria-hidden="true"><span class="is-gelezen"></span><span class="is-gelezen"></span><span class="is-gelezen"></span><span></span><span></span></div>
             </div>
         </div>
     </section>

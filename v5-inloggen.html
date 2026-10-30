@@ -67,7 +67,9 @@
                 <span class="settings-trigger__label" data-i18n="schil_instellingen">Instellingen</span>
                 <svg class="icoon settings-trigger__chevron" aria-hidden="true"><use href="/assets/iconen.svg#keyboard_arrow_down"/></svg>
             </button>
-            <a class="btn btn--secondary navbar__inloggen" href="/v5-inloggen.html"><span data-i18n="schil_inloggen">Inloggen</span></a>
+            <!-- Ingelogd (<body data-ingelogd>): Mijn account in plaats van Inloggen. -->
+            <a class="btn btn--secondary navbar__inloggen" href="/v5-inloggen.html" data-alleen="uitgelogd"><span data-i18n="schil_inloggen">Inloggen</span></a>
+            <a class="btn btn--secondary navbar__account" href="/v5-profiel.html" data-alleen="ingelogd"><span data-i18n="schil_mijn_account">Mijn account</span></a>
             <a class="btn btn--primary" href="/v5-abonnementen.html"><span data-i18n="schil_probeer_premium">Probeer Premium</span></a>
         </div>
     </div>

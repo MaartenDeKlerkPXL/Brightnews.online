@@ -1647,6 +1647,37 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   maken" met een wachtwoord is niet apart ontworpen; het volgt het voorstel
   uit de besluiten (hulptekst "Minstens 8 tekens").
 
+  **Mijn account (2026-10-30):** `v5-profiel.html` volgt de frames "Mijn
+  account · Desktop" (Gratis, Premium (proefperiode), Promocode onbekend),
+  met de besluiten: de status als badge naast "Je abonnement", het
+  leestegoed in tekst met de Credit meter alleen als beeld, één primaire knop
+  (alleen bij een gratis account: "Probeer Premium 30 dagen gratis"),
+  "Abonnement beheren" secundair met het icoon voor een andere site, de
+  promocodefout als Field error zonder pop-up, en weergave en taal met
+  dezelfde keuzeknoppen als het instellingenpaneel (die twee lopen nu
+  gelijk; `js/v5/schil.js` koppelt elke radiogroep met `data-instelling`).
+  De header toont "Mijn account" in plaats van "Inloggen" zodra `<body>`
+  `data-ingelogd` heeft; in het voorbeeld zet alleen deze pagina dat.
+  Nieuwe componenten (ook op de stijlgids): Toggle, Credit meter, Badge md
+  Neutral en Button Tertiary. Het account is niet gekoppeld: e-mailadres,
+  leestegoed en abonnement zijn voorbeeldwaarden uit het adres
+  (`?staat=premium`, `?staat=promofout`, `?gelezen=0` t/m `5`, `?email=`);
+  de datums zijn echt (tegoed weer bij 0 op de 1e van de volgende maand,
+  proefperiode vandaag + 30 dagen). Toepassen, Uitloggen, Abonnement beheren
+  en de mails-toggle melden dat het voorbeeld niet gekoppeld is.
+  Afwijkingen en open punten:
+  - `.type-heading-md` stond op 500; Figma (Heading/md) zegt SemiBold
+    (600, −0,5%). Rechtgezet in `css/v5/basis.css`; de klasse werd alleen
+    op de stijlgids gebruikt.
+  - Nog zonder link: "Wijzigen" (e-mailadres), "Wachtwoord instellen" en
+    "Account verwijderen". De bevestigingsstap voor verwijderen is nog niet
+    ontworpen (Maarten, Figma).
+  - De andere statussen uit de besluiten (Premium actief, Opgezegd,
+    Betaling mislukt) hebben geen frame en zijn dus niet gebouwd. Daarvoor
+    is ook een Badge Warning nodig, met tokens die nog niet bestaan.
+  - Mobiel valt terug op één kolom; de knop "Mijn account" in de header
+    verdwijnt onder 600 px, net als "Inloggen".
+
   #### Back-end voor v5 (Claude, sessie Maarten)
 
   1. **Eerst moet het nieuws weer draaien (punt 26).** Zonder nieuwe
@@ -1694,6 +1725,19 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      Af te stemmen: de wachtwoordregel (voorstel: minstens 8 tekens) en
      "Stuur opnieuw" pas na 60 seconden, met de knop zolang uitgeschakeld.
      De foutmelding mag nooit verklappen of een e-mailadres bestaat.
+  10. **Mijn account koppelen op `v5-profiel.html`** (Supabase en Stripe,
+      dus PR langs Erik). Nodig per lezer: e-mailadres, inlogmanier (heeft
+      hij een wachtwoord? dan "Wachtwoord wijzigen"), status (gratis,
+      proefperiode, Premium actief, opgezegd met einddatum, betaling
+      mislukt), plan en einddatum van de proefperiode, en het aantal
+      gelezen artikelen deze maand (het tegoed begint opnieuw op de 1e om
+      00:00 Nederlandse tijd). Verder: `<body data-ingelogd>` zetten op elke
+      v5-pagina zodra iemand ingelogd is, "Abonnement beheren" laten
+      doorsturen naar het Stripe-klantportaal, Uitloggen, de mails-toggle
+      bewaren, en weergave en taal bij het account opslaan zodat ze op elk
+      apparaat gelden. Open vragen uit Figma: wat doet een promocode
+      (gratis Premium-periode of korting), en hoe gaat Account verwijderen
+      bij Premium (eerst opzeggen in het klantportaal)?
 
   ### Opruimen in Figma als v3 gekozen is
 

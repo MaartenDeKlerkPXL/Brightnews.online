@@ -641,3 +641,221 @@
         padding: var(--spacing-lg);
     }
 }
+
+
+/* ── Mijn account ────────────────────────────────────────────────────────
+   Intro, dan twee kolommen kaarten op het subtiele vlak: abonnement en
+   promocode links, instellingen en inloggen rechts (480 px). */
+
+.account {
+    padding-block: var(--section-xs) var(--section-md);
+    background: var(--surface-subtle);
+}
+
+.account__binnen {
+    display: flex;
+    flex-direction: column;
+    gap: var(--section-xs);
+}
+
+.account__intro {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    max-width: var(--layout-reading-width);
+}
+
+.account__intro p {
+    color: var(--text-secondary);
+    overflow-wrap: anywhere;
+}
+
+.account__kolommen {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 480px);
+    align-items: start;
+    gap: var(--section-xs);
+}
+
+.account__kolom {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+/* Promocode en Inloggen: 16 px tussen de delen in plaats van 24. */
+.form-card.account__kaart--dicht {
+    gap: var(--spacing-md);
+}
+
+.account__kop {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-sm);
+}
+
+.account__staat {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.account__secundair,
+.account__premium p {
+    color: var(--text-secondary);
+}
+
+.account__klein {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.account__premium,
+.account__beheren {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+}
+
+.account__beheren {
+    gap: var(--spacing-xs);
+}
+
+.leestegoed {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    background: var(--surface-subtle);
+}
+
+.leestegoed__label {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 600;
+}
+
+/* Gegevens van het abonnement: label links (200 px), waarde rechts. */
+.gegevens,
+.gegevens dd {
+    margin: 0;
+}
+
+.gegevens__rij {
+    display: flex;
+    gap: var(--spacing-md);
+    padding-block: var(--spacing-sm);
+    border-top: var(--border-width-sm) solid var(--border-default);
+}
+
+.gegevens__rij dt {
+    flex: 0 0 200px;
+    color: var(--text-secondary);
+}
+
+.gegevens__rij dd {
+    flex: 1;
+    min-width: 0;
+    font-weight: 600;
+}
+
+.account .setting-groep {
+    gap: var(--spacing-xs);
+}
+
+.account__lijn {
+    margin: 0;
+    border: 0;
+    border-top: var(--border-width-sm) solid var(--border-default);
+}
+
+.account__mails {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.promocode {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.promocode__rij {
+    display: flex;
+    align-items: flex-end;
+    gap: var(--spacing-sm);
+}
+
+.promocode__rij .invoer {
+    flex: 1;
+    min-width: 0;
+}
+
+.promocode .field-error {
+    padding-left: 0;
+}
+
+/* Inloggen: label boven de waarde, de actie rechts. */
+.gegevens-rij {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding-block: var(--spacing-sm);
+    border-bottom: var(--border-width-sm) solid var(--border-default);
+}
+
+.gegevens-rij__tekst {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: var(--spacing-2xs);
+    min-width: 0;
+}
+
+.gegevens-rij__label {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.gegevens-rij__waarde {
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.gegevens-rij__actie {
+    color: var(--text-link);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 500;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+@media (max-width: 1023px) {
+    .account__kolommen {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 599px) {
+    .gegevens__rij {
+        flex-direction: column;
+        gap: var(--spacing-2xs);
+    }
+
+    .gegevens__rij dt {
+        flex-basis: auto;
+    }
+
+    .gegevens-rij {
+        flex-wrap: wrap;
+    }
+}

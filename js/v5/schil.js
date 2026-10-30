@@ -3,7 +3,9 @@
 //
 // Het paneel duwt de pagina omlaag; het is geen overlay. Openen met de knop
 // Instellingen, sluiten met Sluiten, Esc of de knop zelf. De keuzes zijn
-// radiogroepen: klikken of de pijltjestoetsen kiezen meteen.
+// radiogroepen: klikken of de pijltjestoetsen kiezen meteen. Dezelfde
+// radiogroepen kunnen ook in de pagina staan (Mijn account); alle groepen
+// met hetzelfde data-instelling lopen gelijk.
 //
 // Opslag in localStorage, met dezelfde sleutels als de rest van de site:
 //   bn-thema          'licht' | 'donker' (afwezig = systeem volgen)
@@ -96,6 +98,15 @@
         if (metFocus) optie.focus();
     }
 
+    // Na een keuze in de ene groep tonen de andere groepen van dezelfde
+    // soort (paneel en pagina) dezelfde keuze.
+    function volgAndere(groep, waarde) {
+        document.querySelectorAll(`[role="radiogroup"][data-instelling="${groep.dataset.instelling}"]`).forEach(ander => {
+            const optie = ander !== groep && ander.querySelector(`[data-waarde="${waarde}"]`);
+            if (optie) kies(ander, optie, false);
+        });
+    }
+
     function zetBeginstand(groep) {
         const soort = groep.dataset.instelling;
         let waarde;
@@ -115,6 +126,7 @@
             const optie = e.target.closest('[role="radio"]');
             if (!optie || optie.getAttribute('aria-checked') === 'true') return;
             kies(groep, optie, false);
+            volgAndere(groep, optie.dataset.waarde);
             toepassen(optie.dataset.waarde);
         });
 
@@ -136,6 +148,7 @@
             e.preventDefault();
             if (kiestMeteen) {
                 kies(groep, volgende, true);
+                volgAndere(groep, volgende.dataset.waarde);
                 toepassen(volgende.dataset.waarde);
             } else {
                 lijst.forEach(o => { o.tabIndex = o === volgende ? 0 : -1; });
@@ -178,8 +191,6 @@
             const binnen = paneel.contains(document.activeElement) || document.activeElement === knop;
             sluit(binnen);
         });
-
-        paneel.querySelectorAll('[role="radiogroup"][data-instelling]').forEach(koppelGroep);
     }
 
     function start() {
@@ -191,6 +202,7 @@
             pasTaalToe(taal);
         }
         koppelPaneel();
+        document.querySelectorAll('[role="radiogroup"][data-instelling]').forEach(koppelGroep);
     }
 
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
