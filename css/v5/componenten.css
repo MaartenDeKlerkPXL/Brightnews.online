@@ -236,6 +236,12 @@ body[data-pagina="abonnementen"] .navbar .btn--primary {
     display: none;
 }
 
+/* Op de inlogpagina staan "Inloggen" en "Probeer Premium" er niet: de enige
+   primaire knop staat in het formulier. */
+body[data-pagina="inloggen"] .navbar .btn {
+    display: none;
+}
+
 @media (max-width: 599px) {
     .navbar__inloggen {
         display: none;
@@ -1570,8 +1576,9 @@ body[data-pagina="abonnementen"] .navbar .btn--primary {
     line-height: var(--line-height-20);
 }
 
-/* De radioknop zelf, gedeeld met Plan in de paywall. */
-.plan-option input {
+/* De radioknop zelf, gedeeld met Radio (formulieren). */
+.plan-option input,
+.radio input {
     flex-shrink: 0;
     width: 20px;
     height: 20px;
@@ -1584,12 +1591,17 @@ body[data-pagina="abonnementen"] .navbar .btn--primary {
     transition: border-width var(--motion-duration-fast) var(--motion-easing);
 }
 
-.plan-option input:checked {
+.plan-option input:checked,
+.radio input:checked {
     border: 6px solid var(--action-primary-bg);
 }
 
 .plan-option input:focus-visible {
     box-shadow: none;
+}
+
+.radio input:focus-visible {
+    box-shadow: var(--focus-ring);
 }
 
 
@@ -1779,6 +1791,197 @@ body[data-pagina="abonnementen"] .navbar .btn--primary {
 .accordion-item__inhoud {
     padding: 0 var(--spacing-md) var(--spacing-md);
     color: var(--text-secondary);
+}
+
+
+/* ── Tabs ──────────────────────────────────────────────────────────────
+   Inloggen / Account maken. Elk tabblad is een link met een eigen adres
+   (?tab=account), dus gewone navigatie: het gekozen tabblad heeft
+   aria-current en een groene lijn eronder. */
+
+.tabs {
+    display: flex;
+    border-bottom: var(--border-width-sm) solid var(--border-default);
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    height: var(--control-height-md);
+    margin-bottom: calc(-1 * var(--border-width-sm));
+    padding-inline: var(--spacing-md);
+    border-bottom: var(--border-width-md) solid transparent;
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color var(--motion-duration-fast) var(--motion-easing);
+}
+
+.tab:hover {
+    color: var(--text-primary);
+}
+
+.tab[aria-current="page"] {
+    border-bottom-color: var(--action-primary-bg);
+    color: var(--text-primary);
+}
+
+
+/* ── Input field ───────────────────────────────────────────────────────
+   Label, veld en (optioneel) hulptekst. Fout = rode rand plus een Field
+   error eronder; het veld krijgt aria-invalid en aria-describedby. */
+
+.invoer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.invoer__label {
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 600;
+}
+
+.invoer__veld {
+    width: 100%;
+    height: var(--control-height-md);
+    padding-inline: var(--spacing-sm);
+    border: var(--border-width-sm) solid var(--border-strong);
+    border-radius: var(--radius-md);
+    background: var(--surface-default);
+    color: var(--text-primary);
+    line-height: var(--line-height-24);
+    transition: border-color var(--motion-duration-fast) var(--motion-easing);
+}
+
+.invoer__veld::placeholder {
+    color: var(--text-muted);
+    opacity: 1;
+}
+
+.invoer__veld:hover {
+    border-color: var(--text-secondary);
+}
+
+.invoer__veld:focus-visible {
+    border-color: var(--border-focus);
+    border-radius: var(--radius-md);
+}
+
+.invoer__veld[aria-invalid="true"] {
+    border-color: var(--feedback-error-fg);
+}
+
+.invoer__hulp {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.invoer .field-error {
+    padding-left: 0;
+}
+
+
+/* ── Radio ─────────────────────────────────────────────────────────────
+   Keuze uit minstens twee opties, in een fieldset met legend. Uitleg onder
+   een optie schuift in tot onder het label (form/label-offset). */
+
+.keuzes {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.keuzes legend {
+    margin-bottom: var(--spacing-sm);
+    padding: 0;
+    font-weight: 600;
+}
+
+.radio-optie {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xs);
+}
+
+.radio {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    cursor: pointer;
+}
+
+.radio-optie__uitleg {
+    padding-left: var(--form-label-offset);
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+
+/* ── Alert ─────────────────────────────────────────────────────────────
+   Een melding in de pagina die blijft tot het probleem is opgelost.
+   Variant Error: rood vlak, eigen icoon, tekst blijft in de gewone
+   tekstkleuren. role="alert" en de focus erheen. */
+
+.alert {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    background: var(--feedback-error-bg);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.alert[hidden] {
+    display: none;
+}
+
+.alert:focus-visible {
+    border-radius: var(--radius-md);
+}
+
+.alert > .icoon {
+    color: var(--feedback-error-fg);
+}
+
+.alert__inhoud {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-2xs);
+}
+
+.alert__titel {
+    font-weight: 600;
+}
+
+.alert__tekst {
+    color: var(--text-secondary);
+}
+
+.alert__actie {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--feedback-error-fg);
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 

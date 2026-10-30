@@ -1630,6 +1630,23 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   "wisselen via Abonnement beheren"?** "Log in", "algemene voorwaarden" en
   "refundbeleid" hebben nog geen v5-pagina en dus geen link.
 
+  **Inloggen en registreren (2026-10-30):** `v5-inloggen.html` volgt de
+  frames "Inloggen · Desktop" (inloglink, wachtwoord, fout, inloglink
+  verstuurd) en "Account maken · Desktop", met de besluiten: één pagina met
+  twee tabbladen, elk met een eigen adres (`?tab=account`), de inloglink als
+  standaard, het wachtwoordveld pas na die keuze, "Wachtwoord tonen" als
+  gewoon vinkje, de juiste `autocomplete` per veld, de foutmelding bovenaan
+  de kaart zonder te verklappen wat er mis is (met de uitweg "Stuur me een
+  inloglink"), en geen "Inloggen" of "Probeer Premium" in de header.
+  `?next=` blijft bij het wisselen van tabblad bewaard. Inloggen zelf is
+  niet gekoppeld; de staten bekijk je met `?staat=fout` en
+  `?staat=verstuurd&email=…`. Nieuwe tokens uit Figma:
+  `--feedback-error-bg`, `--layout-form-width` en `--form-label-offset`.
+  Nog zonder link (pagina bestaat in v5 nog niet): "Wachtwoord vergeten?",
+  algemene voorwaarden en privacyverklaring. Het wachtwoordveld bij "Account
+  maken" met een wachtwoord is niet apart ontworpen; het volgt het voorstel
+  uit de besluiten (hulptekst "Minstens 8 tekens").
+
   #### Back-end voor v5 (Claude, sessie Maarten)
 
   1. **Eerst moet het nieuws weer draaien (punt 26).** Zonder nieuwe
@@ -1663,6 +1680,12 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      Stripe Checkout? Zo ja: niet ingelogd → naar de inlogpagina met
      `?next=abonnementen` en daarna terug, met het plan bewaard. Juridische
      tekst bij het vinkje nog laten controleren.
+  9. **Inloggen koppelen op `v5-inloggen.html`** (Supabase, Erik): inloglink
+     per mail (magic link), inloggen met wachtwoord, account maken met of
+     zonder wachtwoord, en daarna terug naar `?next=` (anders Mijn account).
+     Af te stemmen: de wachtwoordregel (voorstel: minstens 8 tekens) en
+     "Stuur opnieuw" pas na 60 seconden, met de knop zolang uitgeschakeld.
+     De foutmelding mag nooit verklappen of een e-mailadres bestaat.
   8. **Bij de lancering:** de v5-pagina's hernoemen naar de echte adressen
      (`index.html`, `archief.html`, het artikelsjabloon) en die adressen in
      `partials/v5/` en `js/v5/gedeeld.js` (`url`) zetten. Sinds 2026-10-29

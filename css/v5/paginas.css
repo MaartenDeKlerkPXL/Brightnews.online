@@ -517,3 +517,127 @@
         padding-inline: 0;
     }
 }
+
+
+/* ── Formulierpagina's (inloggen, account maken) ─────────────────────────
+   Eén smalle kolom (layout/form-width) op het subtiele vlak. */
+
+.formulierpagina {
+    padding-block: var(--section-md);
+    background: var(--surface-subtle);
+}
+
+.formulierpagina__kolom {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    max-width: calc(var(--layout-form-width) + 2 * var(--layout-section-padding-x));
+}
+
+.formulierpagina__kolom[hidden] {
+    display: none;
+}
+
+.formulier-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+}
+
+.formulier-intro p {
+    color: var(--text-secondary);
+}
+
+.formulier-intro > .icoon {
+    width: 48px;
+    height: 48px;
+    color: var(--text-link);
+}
+
+.form-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    padding: var(--spacing-2xl);
+    border: var(--border-width-sm) solid var(--border-default);
+    border-radius: var(--radius-xl);
+    background: var(--surface-default);
+}
+
+.form-card [hidden] {
+    display: none;
+}
+
+.form-card__blok {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.form-card__blok h2 {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+}
+
+.form-card__blok h2 + p {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.wachtwoord-opties {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-xs) var(--spacing-md);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.wachtwoord-opties a {
+    color: var(--text-link);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.knoppen-rij {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.formulier-akkoord {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.formulier-akkoord a {
+    color: var(--text-link);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.formulier-onder {
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+.formulier-onder a {
+    color: var(--text-link);
+    font-weight: 500;
+}
+
+@media (max-width: 599px) {
+    .formulierpagina {
+        padding-block: var(--section-xs);
+    }
+
+    .form-card {
+        padding: var(--spacing-lg);
+    }
+}

@@ -58,6 +58,7 @@
     --feedback-success-bg: #ecf7f0;
     --feedback-success-fg: #13573a;
     --feedback-error-fg: #b91c1c;
+    --feedback-error-bg: #fef2f2;
 
     /* Fout. Niet in Figma; overgenomen uit de huidige site tot de
        ontwerper er een eigen reeks voor maakt. */
@@ -107,6 +108,8 @@
     --layout-section-padding-y-compact: 40px;
     --layout-reading-width: 720px;
     --layout-media-width: 960px;
+    --layout-form-width: 480px;     /* formulierpagina's: inloggen, account */
+    --form-label-offset: 28px;      /* hulptekst onder een radio of vinkje */
 
     /* Vormen */
     --radius-xs: 4px;
@@ -156,6 +159,7 @@
         --feedback-success-bg: #0e412c;
         --feedback-success-fg: #d2eedc;
         --feedback-error-fg: #fee2e2;
+        --feedback-error-bg: #991b1b;
         color-scheme: dark;
     }
 }
@@ -176,6 +180,7 @@
     --feedback-success-bg: #0e412c;
     --feedback-success-fg: #d2eedc;
     --feedback-error-fg: #fee2e2;
+    --feedback-error-bg: #991b1b;
     color-scheme: dark;
 }
 
@@ -185,6 +190,7 @@
     :root {
         --layout-section-padding-x: 20px;
         --grid-margin: 20px;
+        --layout-form-width: 358px;
     }
 }
 

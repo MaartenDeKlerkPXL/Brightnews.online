@@ -86,7 +86,7 @@
                 <span class="settings-trigger__label" data-i18n="schil_instellingen">Instellingen</span>
                 <svg class="icoon settings-trigger__chevron" aria-hidden="true"><use href="/assets/iconen.svg#keyboard_arrow_down"/></svg>
             </button>
-            <a class="btn btn--secondary navbar__inloggen"><span data-i18n="schil_inloggen">Inloggen</span></a>
+            <a class="btn btn--secondary navbar__inloggen" href="/v5-inloggen.html"><span data-i18n="schil_inloggen">Inloggen</span></a>
             <a class="btn btn--primary" href="/v5-abonnementen.html"><span data-i18n="schil_probeer_premium">Probeer Premium</span></a>
         </div>
     </div>
@@ -508,6 +508,31 @@
                     <details class="accordion-item" open><summary><span>Wanneer betaal ik voor het eerst?</span><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#keyboard_arrow_down"/></svg></summary><p class="accordion-item__inhoud">Na de proefperiode van 30 dagen.</p></details>
                     <details class="accordion-item"><summary><span>Hoe zeg ik op?</span><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#keyboard_arrow_down"/></svg></summary><p class="accordion-item__inhoud">Zelf, in Mijn account.</p></details>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gids__sectie" aria-labelledby="g-formulieren">
+        <h2 class="type-heading-lg" id="g-formulieren">Formulieren</h2>
+        <p class="gids__noot">Tabs (elk tabblad een eigen adres), Input field (standaard, ingevuld, fout), Radio met uitleg onder het label (form/label-offset 28 px) en Alert Error. Formulierpagina's zijn layout/form-width breed (480 px).</p>
+        <div class="gids__rij">
+            <div class="gids__voorbeeld gids__smal" style="flex: 1 1 400px">
+                <span class="gids__label">Tabs</span>
+                <nav class="tabs" aria-label="Voorbeeld"><a class="tab" href="#" aria-current="page">Inloggen</a><a class="tab" href="#">Account maken</a></nav>
+                <span class="gids__label">Input field: leeg, ingevuld, fout</span>
+                <div class="invoer"><label class="invoer__label" for="gids-in-1">E-mailadres</label><input class="invoer__veld" id="gids-in-1" type="email" placeholder="naam@voorbeeld.nl"></div>
+                <div class="invoer"><label class="invoer__label" for="gids-in-2">Kies een wachtwoord</label><input class="invoer__veld" id="gids-in-2" type="password" value="geheim123" aria-describedby="gids-in-2-hulp"><p class="invoer__hulp" id="gids-in-2-hulp">Minstens 8 tekens.</p></div>
+                <div class="invoer"><label class="invoer__label" for="gids-in-3">E-mailadres</label><input class="invoer__veld" id="gids-in-3" type="email" value="jan@" aria-invalid="true" aria-describedby="gids-in-3-fout"><p class="field-error" id="gids-in-3-fout"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#error"/></svg><span>Vul een geldig e-mailadres in.</span></p></div>
+            </div>
+            <div class="gids__voorbeeld gids__smal" style="flex: 1 1 400px">
+                <span class="gids__label">Radio met uitleg</span>
+                <fieldset class="keuzes">
+                    <legend>Hoe wil je inloggen?</legend>
+                    <div class="radio-optie"><label class="radio"><input type="radio" name="gids-manier" checked><span>Met een inloglink per mail</span></label><p class="radio-optie__uitleg">Geen wachtwoord nodig. Je krijgt een mail met een knop om in te loggen.</p></div>
+                    <label class="radio"><input type="radio" name="gids-manier"><span>Met mijn wachtwoord</span></label>
+                </fieldset>
+                <span class="gids__label">Alert Error</span>
+                <div class="alert"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#error"/></svg><div class="alert__inhoud"><p class="alert__titel">Inloggen lukte niet</p><p class="alert__tekst">Het e-mailadres of het wachtwoord klopt niet.</p><button class="alert__actie" type="button">Stuur me een inloglink</button></div></div>
             </div>
         </div>
     </section>
