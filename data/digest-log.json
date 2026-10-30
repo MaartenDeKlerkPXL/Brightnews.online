@@ -1,5 +1,74 @@
 [
   {
+    "datum": "2026-10-30T18:24:08.429Z",
+    "dag": "2026-10-29",
+    "categorie": "Science",
+    "ids": [
+      "1793384161608kh30teuyg",
+      "1793383862814f9mcdvll4",
+      "1793384270563pkoj3k0wy",
+      "1793384249985xjpo9zpyd",
+      "1793384223770wl0xcjzrx"
+    ],
+    "prompthash": "fd561df11314",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 15223,
+    "woorden": {
+      "nl": 395,
+      "en": 401,
+      "de": 382,
+      "fr": 470,
+      "es": 461
+    }
+  },
+  {
+    "datum": "2026-10-30T18:22:55.644Z",
+    "dag": "2026-10-29",
+    "categorie": "Environment",
+    "ids": [
+      "17933829729423j7p4881e",
+      "1793382804799wiqr8zal6",
+      "17933827785551xdq3cwyb",
+      "1793382715712wkf3c24w4",
+      "1793384043255lbpha2iw0",
+      "1793383924314zvjyipnh7",
+      "1793383890241c7fuext63",
+      "17933837798258o0963pk9"
+    ],
+    "prompthash": "fd561df11314",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 14571,
+    "woorden": {
+      "nl": 462,
+      "en": 473,
+      "de": 445,
+      "fr": 556,
+      "es": 518
+    }
+  },
+  {
+    "datum": "2026-10-30T18:20:59.272Z",
+    "dag": "2026-10-29",
+    "categorie": "Health",
+    "ids": [
+      "17933843011651er3an5ge",
+      "1793383750932rcrb7m8t3",
+      "17933830831624gr34qja7",
+      "1793384113660kb1oa81oz",
+      "1793383509958r2oss5c4q"
+    ],
+    "prompthash": "fd561df11314",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 12492,
+    "woorden": {
+      "nl": 366,
+      "en": 377,
+      "de": 363,
+      "fr": 436,
+      "es": 418
+    }
+  },
+  {
     "datum": "2026-10-02T04:37:10.716Z",
     "dag": "2026-10-01",
     "categorie": "Science",

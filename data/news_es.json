@@ -1,5 +1,926 @@
 [
   {
+    "id": "dg-20261029-science",
+    "type": "digest",
+    "digest_date": "2026-10-29",
+    "title": "La colaboración como hilo conductor: las noticias científicas de finales de octubre",
+    "summary": "En los últimos días, la ciencia muestra especialmente una cosa: la colaboración funciona. Desde un simposio sobre diplomacia científica hasta nuevos descubrimientos en ríos y avances en la exploración espacial, en todas partes queda claro que las personas y los países avanzan más juntos. Cinco noticias muestran lo variada que puede ser esa colaboración. El 28 de octubre, científicos, diplomáticos y representantes de países se reunieron en SESAME en Jordania. Durante este simposio, debatieron cómo la investigación y la tecnología pueden conectar a los países entre sí, incluso cuando las relaciones políticas son difíciles. Oradores como la princesa Sumaya bint...",
+    "image_alt": "La colaboración como hilo conductor: las noticias científicas de finales de octubre",
+    "meta_description": "De la diplomacia científica en Jordania a nuevas especies de mejillones y noticias espaciales: las noticias científicas de finales de octubre de 2026 resum",
+    "meta_keywords": "Science",
+    "link": "",
+    "source": "BrightNews",
+    "image": "/assets/fallback/science-1.jpg",
+    "date": "2026-10-30T18:24:08.429Z",
+    "category": "Science",
+    "refs": [
+      {
+        "id": "1793384161608kh30teuyg",
+        "title": "Simposio en Jordania sobre diplomacia científica"
+      },
+      {
+        "id": "1793383862814f9mcdvll4",
+        "title": "Cinco nuevas especies de mejillones descubiertas en América del Norte"
+      },
+      {
+        "id": "1793384270563pkoj3k0wy",
+        "title": "Misión SpaceX de la NASA lleva experimentos y paneles solares a la ISS"
+      },
+      {
+        "id": "1793384249985xjpo9zpyd",
+        "title": "NASA invita a empresas a desarrollar la próxima generación de estaciones espaciales"
+      },
+      {
+        "id": "1793384223770wl0xcjzrx",
+        "title": "El satélite Sentinel-3C envía las primeras imágenes nítidas de la Tierra y datos climáticos"
+      }
+    ]
+  },
+  {
+    "id": "dg-20261029-environment",
+    "type": "digest",
+    "digest_date": "2026-10-29",
+    "title": "Agua limpia y nuevas oportunidades para los animales en todo el mundo",
+    "summary": "Esta semana en BrightNews gira mucho en torno al agua y los animales que dependen de ella. En Nueva Jersey, dos exalumnos de Princeton están probando un dispositivo que filtra microplásticos del agua residual, inspirado en plantas que repelen el agua pero atraen la suciedad. En Atlantic City está en marcha un ensayo de dos años, mientras que las pruebas de laboratorio ya demostraron que un prototipo podía eliminar el 98 por ciento de las partículas [1]. También en Inglaterra un río es protagonista: en Somerset, dieciocho voluntarios se pusieron en la piel de animales como salmones, nutrias y lombrices...",
+    "image_alt": "Agua limpia y nuevas oportunidades para los animales en todo el mundo",
+    "meta_description": "Agua limpia y nuevas oportunidades para los animales en todo el mundo",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/credit-supplied-to-WHYY-as-a-courtesy-PolyGone-Systems.jpg",
+    "date": "2026-10-30T18:22:55.644Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "17933829729423j7p4881e",
+        "title": "Alumnos de Princeton filtran microplásticos de aguas residuales en Atlantic City"
+      },
+      {
+        "id": "1793382804799wiqr8zal6",
+        "title": "Voluntarios se convierten en salmón y lombriz para salvar el río Tone"
+      },
+      {
+        "id": "17933827785551xdq3cwyb",
+        "title": "Cacaoboerin Susana Afrifa Ankrah protege el bosque tropical de Ghana"
+      },
+      {
+        "id": "1793382715712wkf3c24w4",
+        "title": "Lion Rangers protegen leones del desierto de Namibia con smartphones"
+      },
+      {
+        "id": "1793384043255lbpha2iw0",
+        "title": "Jaguar raro filmado cerca de la frontera Guatemala-Honduras"
+      },
+      {
+        "id": "1793383924314zvjyipnh7",
+        "title": "Oso bezudo Vasi recibe su primera prótesis de oso"
+      },
+      {
+        "id": "1793383890241c7fuext63",
+        "title": "Humedales flotantes devuelven la naturaleza al puerto de Bristol"
+      },
+      {
+        "id": "17933837798258o0963pk9",
+        "title": "Tres tribus en Michigan quieren traer de vuelta el salmón ártico desaparecido"
+      }
+    ]
+  },
+  {
+    "id": "dg-20261029-health",
+    "type": "digest",
+    "digest_date": "2026-10-29",
+    "title": "Noticias de salud esta semana: avances en muchos frentes",
+    "summary": "Esta semana demuestra que la salud puede mejorar en niveles muy diferentes. Desde una científica que continúa trabajando en la restauración de océanos durante su propio tratamiento, hasta un nuevo índice mundial que muestra cómo están las niñas. En conjunto, las noticias pintan un cuadro de progreso que a veces es grande y a veces muy personal. La Dra. Stacy Jupiter coordina la protección oceánica mundial para la Wildlife Conservation Society. El año pasado recibió un diagnóstico inesperado de cáncer de mama que ya se había diseminado a sus ganglios linfáticos. Se sometió a un tratamiento intenso en Boston con...",
+    "image_alt": "Noticias de salud esta semana: avances en muchos frentes",
+    "meta_description": "Desde investigación oceánica durante el cáncer hasta licencia parental remunerada: las noticias de salud positivas de esta semana en BrightNews.",
+    "meta_keywords": "Health",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.pbs.org/wnet/nature/files/2026/10/Stacy-Jupiter-Photo-1-1280x720.jpg",
+    "date": "2026-10-30T18:20:59.272Z",
+    "category": "Health",
+    "refs": [
+      {
+        "id": "17933843011651er3an5ge",
+        "title": "La defensora oceánica Stacy Jupiter lucha contra el cáncer de mama"
+      },
+      {
+        "id": "1793383750932rcrb7m8t3",
+        "title": "Enfermeras logran primer permiso parental remunerado a nivel de condado en EE.UU."
+      },
+      {
+        "id": "17933830831624gr34qja7",
+        "title": "Tratamiento de caries sin taladro con SDF cerca de la aprobación de la FDA"
+      },
+      {
+        "id": "1793384113660kb1oa81oz",
+        "title": "La psilocibina reduce los marcadores inflamatorios en pacientes con Parkinson"
+      },
+      {
+        "id": "1793383509958r2oss5c4q",
+        "title": "Índice mundial de niñas: avances sanitarios para niñas en 178 países"
+      }
+    ]
+  },
+  {
+    "id": "1793384399622qvwwopnkt",
+    "title": "La psicóloga deportiva Cindra Kamphoff comparte cuatro consejos contra el miedo al fracaso",
+    "summary": "La psicóloga Cindra Kamphoff, que asesora a deportistas de élite como Minnesota Vikings y USA Track & Field, comparte técnicas contra el miedo al fracaso en su libro «The Confidence Habit», publicado en septiembre. Durante un maratón en 2012, Kamphoff experimentó dudas en la milla 22, pero con frases positivas escritas en su brazo logró ganar la carrera en su...",
+    "image_alt": "La psicóloga deportiva Cindra Kamphoff durante una sesión de asesoramiento sobre confianza en uno mismo",
+    "meta_description": "La psicóloga deportiva Cindra Kamphoff comparte cuatro técnicas contra el miedo al fracaso de su libro The Confidence Habit.",
+    "meta_keywords": "Cindra Kamphoff, miedo al fracaso, confianza en uno mismo, psicología deportiva, The Confidence Habit, Minnesota Vikings, ansiedad de rendimiento",
+    "link": "https://ww2.kqed.org/mindshift/2026/10/16/learn-burn-return-4-ways-to-battle-performance-anxiety-according-to-a-confidence-coach/",
+    "source": "Ww2.kqed.org/mindshift",
+    "image": "https://cdn.kqed.org/wp-content/uploads/sites/23/2026/10/gettyimages-1352881588-41081b9a-2000x1334.jpeg",
+    "date": "2026-10-30T18:20:00.766Z",
+    "category": "Health",
+    "score": 8
+  },
+  {
+    "id": "1793384374234uamyih28z",
+    "title": "Las mujeres parisinas desafiaron la prohibición de pantalones en el siglo XIX",
+    "summary": "En 1800 se prohibió el uso de pantalones para las mujeres en París, con el objetivo de excluirlas de la vida política. Sin embargo, muchas mujeres parisinas continuaron transgrediendo u omitiendo esta ley durante el siglo XIX y principios del XX, vistiéndose e incluso viviendo como hombres. La escritora George Sand llevaba ropa de hombre por razones prácticas: le daba...",
+    "image_alt": "Fotografía histórica de una mujer parisina del siglo XIX vestida con ropa de hombre",
+    "meta_description": "Cómo las mujeres parisinas en el siglo XIX desafiaron la prohibición de pantalones y vivieron y se vistieron como hombres.",
+    "meta_keywords": "mujeres parisinas, prohibición de pantalones, George Sand, siglo XIX, derechos de las mujeres, Palais Galliera, ropa de hombre",
+    "link": "https://www.bbc.com/culture/article/20261027-10-images-of-19th-century-parisian-women-who-rebelled-against-the-trouser-ban?ocid=global_culture_rss",
+    "source": "BBC.com/culture",
+    "image": "https://ychef.files.bbci.co.uk/800x450/p0pjv1hc.jpg",
+    "date": "2026-10-30T18:19:35.162Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "17933843491953w1abzl96",
+    "title": "Las figuras redondas de Botero dan nueva vida a obras maestras clásicas",
+    "summary": "El artista colombiano Fernando Botero reinterpretó famosas obras de arte europeas, como la Mona Lisa, en su reconocible estilo redondeado, conocido como «Boterismo». Este estilo surgió en 1956 cuando accidentalmente pintó un agujero demasiado pequeño en una mandolina, lo que hizo que el instrumento pareciera «explotar» en forma y volumen. Según la directora de galería Belén Herrera Ottino, la exageración...",
+    "image_alt": "Pintura de Fernando Botero con una reinterpretación redonda y voluminosa de la Mona Lisa",
+    "meta_description": "Cómo los remakes redondos de obras maestras clásicas de Fernando Botero redefinen la historia del arte de manera alegre.",
+    "meta_keywords": "Fernando Botero, Boterismo, Mona Lisa, arte colombiano, historia del arte, Botero Museum, arte latinoamericano",
+    "link": "https://www.bbc.com/culture/article/20261030-what-boteros-rotund-remakes-of-classical-masterpieces-tell-us-about-art-history?ocid=global_culture_rss",
+    "source": "BBC.com/culture",
+    "image": "https://ychef.files.bbci.co.uk/800x450/p0pkg6n2.jpg",
+    "date": "2026-10-30T18:19:10.183Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "17933843253478dsqs8a8b",
+    "title": "Gabriela Ponce Santizo: 19 años de conservación de la naturaleza en Guatemala",
+    "summary": "Gabriela Ponce Santizo, bióloga guatemalteca, lleva 19 años trabajando activamente en la conservación de la naturaleza y es actualmente Directora de País de la Wildlife Conservation Society (WCS) en Guatemala. Criada entre granjas y playas de la costa del Pacífico de Guatemala, desarrolló desde joven una sensibilidad hacia problemas como la deforestación, el tráfico de fauna y la extinción de...",
+    "image_alt": "Gabriela Ponce Santizo examina un polluelo de guacamaya roja en el Parque Nacional Laguna del Tigre, Guatemala",
+    "meta_description": "La bióloga Gabriela Ponce Santizo habla sobre 19 años de conservación de la naturaleza en Guatemala con la Wildlife Conservation Society.",
+    "meta_keywords": "Gabriela Ponce Santizo, Guatemala, Wildlife Conservation Society, conservación de la naturaleza, Parque Nacional Tikal, guacamaya roja, jaguar, biología",
+    "link": "https://www.pbs.org/wnet/nature/blog/connecting-people-and-nature-in-guatemala-my-conservation-journey/",
+    "source": "PBS.org",
+    "image": "https://www.pbs.org/wnet/nature/files/2026/10/Gabriela-Ponce-Santizo-Photo-1-1280x720.jpg",
+    "date": "2026-10-30T18:18:46.487Z",
+    "category": "Environment",
+    "score": 8
+  },
+  {
+    "id": "17933843011651er3an5ge",
+    "title": "La defensora oceánica Stacy Jupiter lucha contra el cáncer de mama",
+    "summary": "La Dra. Stacy Jupiter, que coordina la conservación oceánica mundial para la Wildlife Conservation Society, recibió el diagnóstico inesperado de cáncer de mama en septiembre de 2025 durante unas vacaciones en Florida. No había tumor visible en su pecho, pero el cáncer ya se había propagado a los ganglios linfáticos. Para recibir tratamiento, regresó a Boston, donde se sometió a...",
+    "image_alt": "Stacy Jupiter enseña a su hijo a patinar durante un invierno frío en Boston.",
+    "meta_description": "La defensora oceánica Stacy Jupiter lucha contra el cáncer de mama mientras trabaja a nivel mundial en la restauración oceánica y la protección de especies marinas.",
+    "meta_keywords": "Stacy Jupiter, cáncer de mama, conservación oceánica, Wildlife Conservation Society, Mass General Brigham, Rachel Carson, arrecifes de coral, tiburones y rayas",
+    "link": "https://www.pbs.org/wnet/nature/blog/saving-the-ocean-while-saving-myself/",
+    "source": "PBS.org",
+    "image": "https://www.pbs.org/wnet/nature/files/2026/10/Stacy-Jupiter-Photo-1-1280x720.jpg",
+    "date": "2026-10-30T18:18:21.948Z",
+    "category": "Health",
+    "score": 10
+  },
+  {
+    "id": "1793384270563pkoj3k0wy",
+    "title": "Misión SpaceX de la NASA lleva experimentos y paneles solares a la ISS",
+    "summary": "La última misión de reabastecimiento de SpaceX de la NASA se lanzó exitosamente hacia la Estación Espacial Internacional (ISS). El vuelo transporta miles de libras de suministros, equipos científicos y nueva tecnología hacia la estación. Esta carga debe respaldar la investigación en órbita alrededor de la Tierra. Además de los suministros necesarios para la tripulación, la misión también incluye paneles...",
+    "image_alt": "Lanzamiento de la misión de reabastecimiento SpaceX de la NASA hacia la estación espacial internacional",
+    "meta_description": "La misión SpaceX de la NASA entrega experimentos científicos y paneles solares a la ISS para investigación espacial.",
+    "meta_keywords": "NASA, SpaceX, ISS, estación espacial, misión de reabastecimiento, paneles solares, investigación espacial",
+    "link": "https://www.openaccessgovernment.org/nasas-spacex-resupply-mission-delivers-science-experiments-and-solar-arrays-to-space-station/215505/",
+    "source": "Openaccessgovernment.org",
+    "image": "/assets/fallback/science-4.jpg",
+    "date": "2026-10-30T18:17:51.727Z",
+    "category": "Science",
+    "score": 8
+  },
+  {
+    "id": "1793384249985xjpo9zpyd",
+    "title": "NASA invita a empresas a desarrollar la próxima generación de estaciones espaciales",
+    "summary": "NASA publicó el 9 de octubre de 2026 una solicitud definitiva de propuestas para invitar a empresas estadounidenses a desarrollar la próxima generación de estaciones espaciales comerciales. El objetivo es que Estados Unidos mantenga presencia en órbita baja alrededor de la Tierra después de que la Estación Espacial Internacional (ISS) se retire. Las estaciones deben apoyar la investigación científica, el...",
+    "image_alt": "Impresión artística de una estación espacial comercial en órbita alrededor de la Tierra",
+    "meta_description": "NASA solicita a empresas estadounidenses presentar propuestas para nuevas estaciones espaciales comerciales como sucesoras de la ISS.",
+    "meta_keywords": "NASA, estaciones espaciales comerciales, ISS, exploración espacial, órbita baja terrestre, Luna, Marte",
+    "link": "https://www.openaccessgovernment.org/nasa-sends-invites-to-us-companies-to-develop-commercial-space-stations/215541/",
+    "source": "Openaccessgovernment.org",
+    "image": "/assets/fallback/science-2.jpg",
+    "date": "2026-10-30T18:17:30.895Z",
+    "category": "Science",
+    "score": 8
+  },
+  {
+    "id": "1793384223770wl0xcjzrx",
+    "title": "El satélite Sentinel-3C envía las primeras imágenes nítidas de la Tierra y datos climáticos",
+    "summary": "Dos semanas después de su lanzamiento, el satélite europeo Copernicus Sentinel-3C ha enviado sus primeras imágenes y mediciones a la Tierra. La Agencia Espacial Europea (ESA) publicó imágenes en color de gran fidelidad de Italia, el Archipiélago Ártico Canadiense y el Caribe, además de mediciones de altitud del manto de hielo de Groenlandia. El satélite dispone de instrumentos para obtención...",
+    "image_alt": "Imagen de satélite de aguas poco profundas del Caribe, capturada por Sentinel-3C",
+    "meta_description": "Sentinel-3C envía las primeras imágenes y datos climáticos: Italia, el Ártico y Groenlandia captados en detalle nítido por la ESA.",
+    "meta_keywords": "Sentinel-3C, Copernicus, ESA, satélite, datos climáticos, observación de la Tierra, Groenlandia, nivel del mar, Eumetsat",
+    "link": "https://www.openaccessgovernment.org/europes-sentinel-3c-satellite-delivers-first-earth-images-and-climate-data/215635/",
+    "source": "Openaccessgovernment.org",
+    "image": "https://www.openaccessgovernment.org/wp-content/uploads/2026/10/Sentinel-3C_captures_Caribbean_shallows_article.jpg",
+    "date": "2026-10-30T18:17:05.071Z",
+    "category": "Science",
+    "score": 8
+  },
+  {
+    "id": "179338418713800p31bsxr",
+    "title": "Europa lanza 13 nuevos hubs para datos de investigación abiertos",
+    "summary": "Los investigadores en Europa obtienen un acceso más sencillo a datos de investigación y servicios digitales gracias al lanzamiento de los primeros 13 hubs dentro de la European Open Science Cloud (EOSC) Federation. Estos denominados EOSC Nodes conectan recursos de investigación de diferentes organizaciones y ayudan a los científicos a colaborar más allá de fronteras nacionales y disciplinas. En total...",
+    "image_alt": "Red de instituciones de investigación europeas conectadas dentro de la European Open Science Cloud",
+    "meta_description": "Europa lanza 13 nuevos hubs EOSC que facilitan el intercambio de datos de investigación y servicios digitales entre países y disciplinas.",
+    "meta_keywords": "EOSC, ciencia abierta, datos de investigación, colaboración investigadora europea, EOSC Nodes, ciencia abierta",
+    "link": "https://www.openaccessgovernment.org/europe-expands-access-to-research-data-with-13-new-open-science-hubs/215672/",
+    "source": "Openaccessgovernment.org",
+    "image": "/assets/fallback/science-1.jpg",
+    "date": "2026-10-30T18:16:28.135Z",
+    "category": "Science",
+    "score": 8
+  },
+  {
+    "id": "1793384161608kh30teuyg",
+    "title": "Simposio en Jordania sobre diplomacia científica",
+    "summary": "El 28 de octubre de 2026, científicos, diplomáticos y representantes internacionales se reúnen en SESAME en Jordania para un simposio sobre el papel de la investigación y las infraestructuras tecnológicas en la diplomacia científica. El evento examina cómo las instalaciones científicas y los proyectos de colaboración pueden mantener conexiones entre países, incluso cuando las relaciones políticas están bajo presión. Entre...",
+    "image_alt": "Participantes en un simposio internacional sobre diplomacia científica en la instalación SESAME en Jordania",
+    "meta_description": "El simposio en SESAME en Jordania destaca cómo la ciencia fortalece la colaboración internacional y la confianza entre países.",
+    "meta_keywords": "diplomacia científica, SESAME, Jordania, colaboración internacional, infraestructura de investigación, Comisión Europea, UNESCO",
+    "link": "https://www.openaccessgovernment.org/building-connections-through-science-diplomacy/215845/",
+    "source": "Openaccessgovernment.org",
+    "image": "/assets/fallback/science-1.jpg",
+    "date": "2026-10-30T18:16:03.125Z",
+    "category": "Science",
+    "score": 9
+  },
+  {
+    "id": "17933841386518zl65dsi6",
+    "title": "NASA y DOE unen fuerzas para la propulsión nuclear espacial",
+    "summary": "NASA y el Departamento de Energía estadounidense (DOE) firmaron a principios de octubre una nueva acuerdo de colaboración durante la cumbre Science: A Golden Age Summit en Washington para acelerar la energía nuclear y la propulsión nuclear en misiones espaciales. El acuerdo abarca todo el proceso de desarrollo, desde la investigación y la producción de combustible hasta las pruebas, el...",
+    "image_alt": "Ilustración de un reactor nuclear en la superficie lunar para futuras misiones espaciales",
+    "meta_description": "NASA y DOE unen fuerzas para acelerar la energía nuclear en la exploración espacial, con miras a una base lunar y misiones a Marte.",
+    "meta_keywords": "NASA, DOE, energía nuclear, exploración espacial, base lunar, Lunar Reactor-1, Space Reactor-1 Freedom, Dragonfly, Rosalind Franklin, propulsión nuclear",
+    "link": "https://www.openaccessgovernment.org/advancing-nuclear-powered-space-exploration-through-collaboration/215942/",
+    "source": "Openaccessgovernment.org",
+    "image": "/assets/fallback/science-2.jpg",
+    "date": "2026-10-30T18:15:39.640Z",
+    "category": "Science",
+    "score": 8
+  },
+  {
+    "id": "1793384113660kb1oa81oz",
+    "title": "La psilocibina reduce los marcadores inflamatorios en pacientes con Parkinson",
+    "summary": "Investigadores de la University of California, San Francisco han demostrado por primera vez en humanos que la psilocibina, un psicodélico, puede reducir los marcadores inflamatorios. En un pequeño estudio piloto con 12 participantes con la enfermedad de Parkinson se midieron cinco moléculas señalizadoras de inflamación en sangre, antes y después de dos sesiones con psilocibina. Los participantes mostraron marcadores inflamatorios...",
+    "image_alt": "Ilustración del estudio sobre psilocibina e inhibición inflamatoria en pacientes con Parkinson",
+    "meta_description": "Un nuevo estudio demuestra por primera vez en humanos que la psilocibina puede reducir los marcadores inflamatorios en pacientes con Parkinson.",
+    "meta_keywords": "psilocibina, psicodélicos, inflamación, Parkinson, JAMA Psychiatry, UCSF, mitocondrias, salud",
+    "link": "https://www.npr.org/2026/10/21/nx-s1-6009441/psychedelics-brain-inflammation-immune-system",
+    "source": "NPR.org",
+    "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6240x3510+0+102/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fea%2F29%2F0361994a40cc8074c1bf20de2edb%2Fgettyimages-2200623380.jpg",
+    "date": "2026-10-30T18:15:15.713Z",
+    "category": "Health",
+    "score": 9
+  },
+  {
+    "id": "1793384087936ocqxnkzxe",
+    "title": "Los cuervos toman decisiones dos veces más rápido que los humanos",
+    "summary": "Una nueva investigación, publicada en la revista Science, demuestra que los cuervos convierten la información visual en decisiones a una velocidad vertiginosa, dos veces más rápido que los humanos y los primates. El investigador Andreas Nieder de la Universidad de Tübinga entrenó a cuervos para realizar una prueba clásica que también se utiliza en humanos y simios: reconocer la dirección...",
+    "image_alt": "Primer plano de un cuervo que observa una pantalla táctil con puntos en movimiento durante un experimento",
+    "meta_description": "Los cuervos toman decisiones dos veces más rápido que los humanos, según una nueva investigación en Science.",
+    "meta_keywords": "cuervos, cerebro de ave, inteligencia, Science, Andreas Nieder, córvidos, toma de decisiones",
+    "link": "https://www.npr.org/2026/10/22/nx-s1-6010587/should-bird-brain-be-a-compliment-heres-how-crows-think-fast",
+    "source": "NPR.org",
+    "image": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
+    "date": "2026-10-30T18:14:49.438Z",
+    "category": "Science",
+    "score": 8
+  },
+  {
+    "id": "1793384043255lbpha2iw0",
+    "title": "Jaguar raro filmado cerca de la frontera Guatemala-Honduras",
+    "summary": "En junio, cámaras trampa filmaron un jaguar macho en las zonas boscosas de Guatemala, cerca de la frontera con Honduras. La organización de conservación Panthera califica la grabación, que ocurre apenas una vez cada diez años, como un hito para la especie amenazada en Guatemala. El corredor entre ambos países resulta crucial para la conexión entre poblaciones de jaguares. Según...",
+    "image_alt": "Un jaguar macho capturado por una cámara trampa en el bosque cerca de la frontera de Guatemala y Honduras",
+    "meta_description": "Cámaras trampa capturan jaguar raro en frontera Guatemala-Honduras, signo esperanzador para especie amenazada.",
+    "meta_keywords": "jaguar, Guatemala, Honduras, Panthera, corredor de vida silvestre, conservación de la naturaleza, especies amenazadas",
+    "link": "https://www.goodgoodgood.co/articles/jaguar-endangered-species-panthera-wildlife-crossing",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ac69ff03d218c2decce112b_6ac69fefbe25a3aadb479aa0_jaguar-endangered-species-panthera-wildlife-crossing-featured.webp",
+    "date": "2026-10-30T18:14:04.206Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "17933840167889x3qeir9f",
+    "title": "Hombre libera a un cisne bebé de un anzuelo de pesca mientras sus padres observan",
+    "summary": "En el Waterfowl Sanctuary de Godmanchester, Inglaterra, Graham Porter recibió una llamada de un pescador cuya línea de pesca había enganchado a un joven cisne. El hombre había intentado liberar al animal por sí solo, pero fue atacado por el protector padre cisne. En treinta minutos, Porter llegó al lugar y remó en kayak hacia la familia de cisnes, mientras...",
+    "image_alt": "Hombre en kayak sostiene a un cisne bebé mientras desenreda cuidadosamente la línea de pesca",
+    "meta_description": "Rescatista libera a un cisne bebé de un anzuelo mientras un furioso padre cisne observa. Lee la historia completa.",
+    "meta_keywords": "cisne bebé, polluelo, anzuelo de pesca, Waterfowl Sanctuary, Graham Porter, rescate animal, Godmanchester",
+    "link": "https://www.goodgoodgood.co/articles/waterfowl-sanctuary-baby-swan-fishing-hook",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ac7bae3fa7ba945230fea73_6ac7bae2f3f863de97d1c1dd_waterfowl-sanctuary-baby-swan-fishing-hook-featured.webp",
+    "date": "2026-10-30T18:13:37.765Z",
+    "category": "Environment",
+    "score": 8
+  },
+  {
+    "id": "17933839909938lqbttwv4",
+    "title": "HART Rescue rescata gatos salvajes como gatos de granja",
+    "summary": "En 2015, Jennifer Cabral y Deb Mathews fundaron HART Rescue en Crossville, Tennessee. En lugar de sacrificar a gatos salvajes, semi-salvajes o antisociales, la organización los coloca como gatos de trabajo en granjas locales. Hasta ahora, 634 gatos han sido reubicados de esta manera. Gracias a esto, el refugio de animales del condado de Cumberland, dirigido por Andrea Henshaw, ya...",
+    "image_alt": "Un gato salvaje es colocado como gato de granja en un granero en Tennessee",
+    "meta_description": "HART Rescue coloca gatos callejeros inmanejables como gatos de granja en lugar de practicar eutanasia, con éxito contra las ratas.",
+    "meta_keywords": "HART Rescue, gatos de granja, feral cats, prevención de eutanasia, refugio de animales, Tennessee, Cumberland County",
+    "link": "https://www.goodgoodgood.co/articles/barn-cats-feral-animal-shelters-hunting-mice",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ac8009f6154b70b091a67a5_6ac8009ecff239ffa00f99bf_barn-cats-feral-animal-shelters-hunting-mice-featured.webp",
+    "date": "2026-10-30T18:13:12.627Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "1793383958266mxtf6o3nv",
+    "title": "Tiburón leopardo amenazado avistado por primera vez en aguas de Samoa",
+    "summary": "Científicos de National Geographic Pristine Seas han filmado por primera vez un tiburón leopardo, también conocido como tiburón cebra, en las aguas de Samoa. La grabación se realizó con un sistema de cámara submarina activada por cebo (BRUV), un dispositivo que se coloca en el fondo marino sin buceadores para captar la vida marina. Fue la primera vez que se...",
+    "image_alt": "Tiburón leopardo filmado en el fondo marino en las aguas de Samoa por una cámara submarina",
+    "meta_description": "Por primera vez se ha filmado un tiburón leopardo amenazado en las aguas de Samoa, gracias a una cámara submarina de National Geographic.",
+    "meta_keywords": "tiburón leopardo, tiburón cebra, Samoa, National Geographic, Pristine Seas, especies amenazadas, biodiversidad marina, BRUV",
+    "link": "https://www.goodgoodgood.co/articles/endangered-species-leopard-shark-zebra-nat-geo",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ac9289c4d9bf88b7b75c8c1_6ac9289b733f24c72bcaff23_endangered-species-leopard-shark-zebra-nat-geo-featured.webp",
+    "date": "2026-10-30T18:12:39.629Z",
+    "category": "Environment",
+    "score": 8
+  },
+  {
+    "id": "1793383924314zvjyipnh7",
+    "title": "Oso bezudo Vasi recibe su primera prótesis de oso",
+    "summary": "Vasikaran, un oso bezudo de India apodado Vasi, perdió su pata trasera izquierda en 2019 después de quedar atrapada en una trampa de lazo. La organización Wildlife SOS lo rescató, pero los veterinarios tuvieron que amputarle la pata. El ortoprotésico veterinario Derrick Campana, conocido como el «Wizard of Paws», fabrica prótesis para todo tipo de animales en todo el mundo....",
+    "image_alt": "Oso bezudo Vasi con su nueva prótesis en la pata trasera izquierda",
+    "meta_description": "Oso bezudo Vasi es el primer oso del mundo con prótesis, colocada por el ortoprotésico veterinario Derrick Campana.",
+    "meta_keywords": "oso bezudo, prótesis, Wildlife SOS, Derrick Campana, bienestar animal, India, Vasikaran",
+    "link": "https://www.goodgoodgood.co/articles/endangered-species-sloth-bear-prosthetic-limb",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6acaa45fbebc93df8b3b48b7_6acaa45ebebc93df8b3b485e_endangered-species-sloth-bear-prosthetic-limb-featured-2.webp",
+    "date": "2026-10-30T18:12:05.990Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1793383890241c7fuext63",
+    "title": "Humedales flotantes devuelven la naturaleza al puerto de Bristol",
+    "summary": "En el puerto de Bristol, activistas climáticos y la organización de conservación WWT han instalado humedales flotantes a lo largo de los muros de hormigón del muelle. Las plataformas, de 100 y 16 metros cuadrados, están completamente fabricadas con materiales reciclados, reciclables y biodegradables, como tuberías de agua antiguas y fibra de coco. Sobre una capa de gránulos de arcilla...",
+    "image_alt": "Humedal flotante con plantas verdes en el puerto de Bristol, rodeado de muros de hormigón del muelle",
+    "meta_description": "Activistas climáticos construyen humedales flotantes en el puerto de Bristol que restauran la naturaleza, la biodiversidad y la calidad del agua en la ciudad.",
+    "meta_keywords": "humedales flotantes, Bristol Harbour, WWT, biodiversidad, naturaleza urbana, adaptación climática, corredor de fauna",
+    "link": "https://www.goodgoodgood.co/articles/bristol-harbour-england-floating-wetlands",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6acff946832013fab7bf796b_6acff945cec66dcf02426812_bristol-harbour-england-floating-wetlands-featured.webp",
+    "date": "2026-10-30T18:11:31.071Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1793383862814f9mcdvll4",
+    "title": "Cinco nuevas especies de mejillones descubiertas en América del Norte",
+    "summary": "Los mejillones, ostras, almejas y vieiras filtran el agua y mejoran así la calidad del agua, mientras que las granjas de mejillones aumentan la biodiversidad circundante. Sin embargo, el 70% de las especies de mejillones nativos de América del Norte están amenazadas, especialmente por especies invasoras como el mejillón cebra y por la pérdida de hábitat. Investigadores de Shedd Aquarium,...",
+    "image_alt": "Investigador con esnórquel y máscara recolecta muestras de mejillones en un río",
+    "meta_description": "Científicos descubren cinco nuevas especies de mejillones en ríos de América del Norte, noticia importante para poblaciones amenazadas.",
+    "meta_keywords": "mejillones, nuevas especies, biodiversidad, América del Norte, Zootaxa, calidad del agua, Shedd Aquarium",
+    "link": "https://www.goodgoodgood.co/articles/new-species-mussels-seafood-shellfish-endangered",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ad271f7f9db253459ab18ae_6ad271f67af4f21090ceb91d_new-species-mussels-seafood-shellfish-endangered-featured.webp",
+    "date": "2026-10-30T18:11:04.210Z",
+    "category": "Science",
+    "score": 9
+  },
+  {
+    "id": "1793383829494s925wf6io",
+    "title": "El trabajo desde casa acerca más a los compañeros",
+    "summary": "Un nuevo estudio demuestra que el trabajo desde casa aproxima a los compañeros en lugar de distanciarlos. Un científico de gestión empresarial siguió a una empresa de servicios profesionales desde antes de la pandemia hasta 2024, realizando 275 entrevistas y aproximadamente 330 horas de observación, mientras los empleados pasaban a trabajar principalmente desde casa mediante videollamadas. Mientras que en la...",
+    "image_alt": "Persona en videollamada desde casa con compañeros en pantalla",
+    "meta_description": "Estudio: el trabajo desde casa acerca más a los compañeros y aumenta la apertura y la confianza en el trabajo.",
+    "meta_keywords": "trabajo desde casa, remote work, seguridad psicológica, videollamadas, relaciones laborales, Organization Science",
+    "link": "https://www.goodgoodgood.co/articles/new-study-remote-work-better-colleagues",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ad28c509bcb4fb760676b6d_6ad28c4ea5cf86c3a2d5699c_remote-work-actually-good-study-featured.webp",
+    "date": "2026-10-30T18:10:30.838Z",
+    "category": "Lifestyle",
+    "score": 8
+  },
+  {
+    "id": "17933837798258o0963pk9",
+    "title": "Tres tribus en Michigan quieren traer de vuelta el salmón ártico desaparecido",
+    "summary": "En Michigan, tres tribus indígenas colaboran con el estado para reintroducir el Arctic grayling, un pez que desapareció de la región desde los años treinta debido a la tala de bosques, la sobrepesca y la competencia de especies no nativas. La Grand Traverse Band, Little River Band y Little Traverse Bay Bands recibieron en 2025 huevos de una piscifactoría estatal,...",
+    "image_alt": "Peces Arctic grayling jóvenes con colores iridiscentes siendo contados en una piscifactoría en Michigan",
+    "meta_description": "Tres tribus de Michigan intentan traer de vuelta el Arctic grayling, desaparecido desde los años treinta, a ríos locales.",
+    "meta_keywords": "Arctic grayling, Michigan, Grand Traverse Band, Little River Band, Little Traverse Bay Bands, reintroducción de peces, especies nativas, río Boardman-Ottaway",
+    "link": "https://www.goodgoodgood.co/articles/michigan-arctic-grayling-tribes",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ada2bada6d2370eb3372851_6ada2ba4c547af990129d8bb_michigan-arctic-grayling-tribes-featured.jpeg",
+    "date": "2026-10-30T18:09:40.557Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1793383750932rcrb7m8t3",
+    "title": "Enfermeras logran primer permiso parental remunerado a nivel de condado en EE.UU.",
+    "summary": "Enfermeras del UPMC Magee-Womens Hospital en Pittsburgh, incluida la enfermera neonatal Jean Stone, se unieron con padres trabajadores, defensores y líderes electos para formar una coalición a favor del permiso parental remunerado. El 10 de mayo, Día de la Madre, lanzaron su campaña. El Consejo del Condado de Allegheny votó 11 a favor y 4 en contra de doce semanas...",
+    "image_alt": "Enfermera en cuidados intensivos neonatales junto a una incubadora",
+    "meta_description": "El Condado de Allegheny aprueba el primer permiso parental remunerado a nivel de condado en EE.UU., gracias a campaña de enfermeras.",
+    "meta_keywords": "permiso parental remunerado, Condado de Allegheny, enfermeras, Pittsburgh, sindicato, NICU, Jean Stone",
+    "link": "https://www.goodgoodgood.co/articles/pittsburgh-nurses-12-week-paid-parental-leave",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ada2d471918eb310df902c7_6ada2d3976c06d675290d34f_pittsburgh-nurses-12-week-paid-parental-leave-featured.jpeg",
+    "date": "2026-10-30T18:09:12.104Z",
+    "category": "Health",
+    "score": 10
+  },
+  {
+    "id": "1793383718920rpe7lsbzj",
+    "title": "Esqueletos de Halloween recaudan 2 millones de dólares para St. Jude",
+    "summary": "Más de 600 hogares estadounidenses participan en Skeletons for St. Jude, una campaña de recaudación de fondos que comenzó cuando Jeff Robertson de Holly Springs, Carolina del Norte compartió su decoración de Halloween con un niño con cáncer en 2020. Desde entonces, la iniciativa se ha convertido en una tradición anual que ya ha recaudado 1,2 millones de dólares para...",
+    "image_alt": "Una decoración de jardín de Halloween escalofriante con esqueletos para una causa benéfica",
+    "meta_description": "Más de 600 hogares decoran jardines con esqueletos para recaudar 2 millones de dólares para St. Jude Children's Research Hospital.",
+    "meta_keywords": "Halloween, St. Jude, cáncer infantil, Skeletons for St. Jude, recaudación de fondos, caridad, decoración de jardín",
+    "link": "https://www.goodgoodgood.co/articles/halloween-2026-skeletons-for-st-jude-cancer",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6adbd5c2061f5620b61cabc6_6adbd5c135881aaaf378b971_halloween-2026-skeletons-for-st-jude-cancer-featured.webp",
+    "date": "2026-10-30T18:08:39.866Z",
+    "category": "Lifestyle",
+    "score": 10
+  },
+  {
+    "id": "1793383690293t4rrao107",
+    "title": "Las nutrias marinas Juno, Lincoln y Uni Sushi juegan baloncesto con calabazas",
+    "summary": "El Oregon Zoo compartió el 24 de octubre un video de tres nutrias marinas rescatadas nadando, salpicando y lanzando calabazas en aros de baloncesto. Las nutrias Juno, Lincoln y Uni Sushi juegan regularmente baloncesto en su hábitat Steller Cove, donde el balón de goma se reemplaza por mini calabazas alrededor de Halloween. Según el zoológico, este entrenamiento de refuerzo positivo...",
+    "image_alt": "Tres nutrias marinas rescatadas juegan baloncesto con calabazas en su hábitat en Oregon Zoo",
+    "meta_description": "Oregon Zoo comparte video de nutrias marinas rescatadas que juegan baloncesto con calabazas para su bienestar.",
+    "meta_keywords": "nutrias marinas, Oregon Zoo, Juno, Lincoln, Uni Sushi, bienestar animal, Steller Cove, Halloween",
+    "link": "https://www.goodgoodgood.co/articles/otters-playing-basketball-halloween-pumpkins",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6adf87e6cca8030ef580c93b_6adf87e49806c40109016a31_otters-playing-basketball-halloween-pumpkins-featured.webp",
+    "date": "2026-10-30T18:08:11.850Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "1793383664855tzeakr9sr",
+    "title": "Adolescente de 15 años desarrolla código QR con información médica de emergencia",
+    "summary": "Después de que una amiga se desmayara en la escuela y nadie conociera sus datos médicos, la adolescente Aanya Mansani de Texas desarrolló la plataforma Emergen. A través de un código QR en una identificación, mochila o funda de teléfono, los transeúntes pueden ver directamente información esencial sin aplicación ni inicio de sesión, como alergias, medicamentos, condiciones médicas y contactos...",
+    "image_alt": "Adolescente muestra código QR para información médica de emergencia en un teléfono",
+    "meta_description": "Aanya Mansani de 15 años desarrolla la plataforma de código QR Emergen para acceso rápido a información médica de emergencia.",
+    "meta_keywords": "Emergen, código QR, información médica de emergencia, Aanya Mansani, Technovation World Summit, ayuda de emergencia, seguridad escolar",
+    "link": "https://www.goodgoodgood.co/articles/teen-invention-qr-code-aanya-mansani",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ae0d84dd53508f4b14b3d40_6ae0d84b836ffe665008aee4_teen-invention-qr-code-aanya-mansani-featured.webp",
+    "date": "2026-10-30T18:07:46.258Z",
+    "category": "Tech",
+    "score": 10
+  },
+  {
+    "id": "1793383630505h1pw71f0a",
+    "title": "Boyas con ojos y cometas de rapaces salvan aves marinas de las redes de pesca",
+    "summary": "Frente a la costa de Cornualles, investigadores probaron dos inventos ingeniosos para proteger a las aves marinas del ahogamiento en redes de pesca: boyas con grandes ojos giratorios y cometas en forma de rapaz. Un nuevo estudio publicado en Conservation Letters demuestra que ambos métodos son efectivos. Las redes con las cometas tenían un 71% menos de probabilidad de capturar...",
+    "image_alt": "Una boya con grandes ojos y una cometa de rapaz junto a redes de pesca frente a la costa de Cornualles para ahuyentar a las aves marinas",
+    "meta_description": "Nuevo estudio: las boyas con ojos y las cometas de rapaces reducen significativamente la captura incidental de aves marinas en redes de pesca en Cornualles.",
+    "meta_keywords": "aves marinas, redes de pesca, captura incidental, redes de enmalle, Cornualles, álca, protección de aves, Conservation Letters",
+    "link": "https://www.goodgoodgood.co/articles/buoy-kite-seabirds-fishing-nets",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ae0db309e0da5e8013cfd1e_6ae0db21fddce4e8a74c5916_buoy-kite-seabirds-fishing-nets-featured.jpeg",
+    "date": "2026-10-30T18:07:11.760Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1793383597218er891iiw6",
+    "title": "Seis crías de delfín nacidas: el delfín Irrawaddy en Camboya suma ahora 118 animales",
+    "summary": "En Camboya han nacido este año seis crías de delfín Irrawaddy, lo que eleva la población de este raro delfín fluvial a 118 animales. Los delfines viven en pozas profundas del río Mekong, como la poza de Kampi en la provincia de Kratie. El barquero Heang Koeurn avista a diario los animales desde hace once años y transporta turistas hacia...",
+    "image_alt": "Delfines Irrawaddy nadan en el río Mekong cerca de Kampi en Camboya, con un bote lleno de turistas de fondo.",
+    "meta_description": "Seis nuevas crías de delfín elevan el raro delfín Irrawaddy en el río Mekong de Camboya a un total de 118 animales.",
+    "meta_keywords": "delfín Irrawaddy, río Mekong, Camboya, Kampi, conservación de delfines, Orcaella brevirostris, delfín fluvial",
+    "link": "https://www.goodgoodgood.co/articles/mekong-river-irrawaddy-dolphins-cambodia",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ae21181bbebf19592cb6042_6ae211674e91beee5c25a896_mekong-river-irrawaddy-dolphins-cambodia-featured.jpeg",
+    "date": "2026-10-30T18:06:38.776Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "17933835623285zzxfvhr8",
+    "title": "La colmena tiene su propio sistema de defensa",
+    "summary": "Investigadores han descubierto que las colonias de abejas melíferas controlan los agentes patógenos gracias a un ingenioso «mapa químico» organizado. El estudio, publicado en ISME Communications, analizó 24 colonias de cinco apiarios en Nueva Gales del Sur. Se examinaron la miel, el propóleo, el polen, la cera y las abejas en busca de bacterias, hongos y actividad antimicrobiana.\n\nDe ello se...",
+    "image_alt": "Abejas melíferas en un panal dentro de una colmena",
+    "meta_description": "Un estudio demuestra que las colmenas tienen un sistema químico de defensa propio contra agentes patógenos, compuesto por miel, propóleo y polen.",
+    "meta_keywords": "abejas melíferas, colmena, sistema inmunológico, propóleo, salud de las abejas, antimicrobiano, ISME Communications",
+    "link": "https://www.goodgoodgood.co/articles/honey-bee-hives-immune-system",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ae21576218d1bd091aae9bc_6ae21574ab0e7f6caf2d4b4f_honey-bees-immune-system-featured.webp",
+    "date": "2026-10-30T18:06:03.388Z",
+    "category": "Science",
+    "score": 8
+  },
+  {
+    "id": "1793383535660vb37ygvqn",
+    "title": "Países Bajos dona 500 millones de dólares para selva tropical",
+    "summary": "Países Bajos se ha comprometido a donar 500 millones de dólares, distribuidos durante 10 años, a la Tropical Forest Forever Facility (TFFF). Este fondo fue creado para financiar la protección a largo plazo de los bosques tropicales. Según Países Bajos, la TFFF puede proteger entre 800 y 900 millones de hectáreas de bosque tropical, un área aproximadamente 200 veces más...",
+    "image_alt": "Crías de gorila de montaña juegan en el Bwindi Impenetrable Forest en Uganda",
+    "meta_description": "Países Bajos dona 500 millones de dólares a la TFFF para proteger selvas tropicales en todo el mundo.",
+    "meta_keywords": "TFFF, selva tropical, Países Bajos, conservación forestal, financiamiento climático, Brasil, WWF",
+    "link": "https://www.goodgoodgood.co/articles/netherlands-pledges-tropical-forests",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ae289e3aeef74a32270f7b1_6ae289e2aeef74a32270f771_netherlands-pledges-tropical-forests-featured.jpeg",
+    "date": "2026-10-30T18:05:36.806Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1793383509958r2oss5c4q",
+    "title": "Índice mundial de niñas: avances sanitarios para niñas en 178 países",
+    "summary": "El primer Global Girls' Index, desarrollado por Plan International Germany y el IFHV de la Universidad de la Ruhr Bochum, muestra que la salud de las niñas mejoró entre 2000 y 2023 en 178 de los 192 países estudiados. La mortalidad entre niñas se redujo más de la mitad y la tasa de natalidad entre niñas de 10 a 19...",
+    "image_alt": "Niñas en el África subsahariana, región con mayores avances sanitarios según el Global Girls' Index",
+    "meta_description": "Primer Global Girls' Index muestra avances sanitarios para niñas en 178 países entre 2000-2023, pese a desigualdades persistentes.",
+    "meta_keywords": "Global Girls' Index, salud de niñas, Plan International, mortalidad infantil, embarazo adolescente, Rwanda, África subsahariana",
+    "link": "https://squirrel-news.net/stories/first-global-girls-index-finds-health-gains-in-178-countries/",
+    "source": "Squirrel-News.net",
+    "image": "https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/10/girls-india.jpg",
+    "date": "2026-10-30T18:05:11.818Z",
+    "category": "Health",
+    "score": 9
+  },
+  {
+    "id": "1793383483557ulc7vq97w",
+    "title": "Los bancos de alimentos de Nueva York ahora también ofrecen comida para mascotas",
+    "summary": "Los bancos de alimentos en Nueva York ofrecen a partir de ahora comida para mascotas a las familias que atraviesan dificultades económicas. De esta manera, los hogares que ya acuden al banco de alimentos para sus propias compras también pueden llevarse alimento para sus animales domésticos.",
+    "image_alt": "Comida para mascotas en un estante de un banco de alimentos en Nueva York",
+    "meta_description": "Los bancos de alimentos en Nueva York ahora almacenan comida para mascotas para familias en situación de pobreza.",
+    "meta_keywords": "banco de alimentos, Nueva York, comida para mascotas, animales domésticos, pobreza",
+    "link": "https://www.optimistdaily.com/2026/10/nyc-food-pantries-are-now-stocking-pet-food-for-struggling-households/",
+    "source": "OptimistDaily.com",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/cat-food-in-scoop-on-Depositphotos_96912150_S.jpg",
+    "date": "2026-10-30T18:04:44.797Z",
+    "category": "Lifestyle",
+    "score": 10
+  },
+  {
+    "id": "1793383463464p07thgddb",
+    "title": "New Jersey Transit convierte estaciones en galerías de arte",
+    "summary": "New Jersey Transit transforma sus estaciones de tren en galerías de arte. La fuente no proporciona más detalles sobre el proyecto.",
+    "image_alt": "Una estación de tren de New Jersey Transit",
+    "meta_description": "New Jersey Transit transforma estaciones de viajeros en galerías de arte para pasajeros.",
+    "meta_keywords": "New Jersey Transit, arte, estaciones de tren, transporte público",
+    "link": "https://www.optimistdaily.com/2026/10/new-jersey-transit-is-turning-commuter-stations-into-art-galleries/",
+    "source": "OptimistDaily.com",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/new-jersey-transit-commuter-train-Depositphotos_473170438_S.jpg",
+    "date": "2026-10-30T18:04:24.698Z",
+    "category": "Lifestyle",
+    "score": 8
+  },
+  {
+    "id": "1793383447754f3bib3sdq",
+    "title": "Vivian Ho (17) construye una red de suministro basada en la dignidad",
+    "summary": "Vivian Ho, de 17 años, ha creado una red de suministro basada en la dignidad en lugar de la caridad. Su organización, All The Same Organization, recibe un premio por ello. No se proporcionan más detalles sobre la metodología o los antecedentes de la iniciativa.",
+    "image_alt": "All The Same Organization recibe un premio, con Vivian Ho",
+    "meta_description": "Vivian Ho (17) construyó una red de suministro basada en la dignidad; su organización recibe un premio.",
+    "meta_keywords": "Vivian Ho, All The Same Organization, dignidad, red de suministro, premio, iniciativa juvenil",
+    "link": "https://www.optimistdaily.com/2026/10/meet-vivian-ho-the-17-year-old-who-built-a-supply-network-around-dignity-not-charity/",
+    "source": "OptimistDaily.com",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/Local-Changemakers-Story-Covers-10-1.png",
+    "date": "2026-10-30T18:04:09.054Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "1793383429524kgb98nvr2",
+    "title": "Student Makers lleva STEM gratuito a tres continentes",
+    "summary": "Student Makers se dedica a hacer que la educación STEM gratuita sea accesible para estudiantes en tres continentes. La iniciativa, que se presenta a través de Business y Social Justice, se enfoca en compartir ciencia, tecnología, ingeniería y matemáticas con jóvenes en todo el mundo, sin que los participantes incurran en costos.",
+    "image_alt": "Foto cortesía de Student Makers, sobre educación STEM gratuita para estudiantes.",
+    "meta_description": "Student Makers ofrece educación STEM gratuita a estudiantes en tres continentes, según este comunicado de prensa.",
+    "meta_keywords": "Student Makers, educación STEM, educación gratuita, estudiantes, tres continentes",
+    "link": "https://www.optimistdaily.com/2026/10/student-makers-a-deeper-dive-bringing-free-stem-to-students-on-three-continents/",
+    "source": "OptimistDaily.com",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/Local-Changemakers-Story-Covers-6-1.png",
+    "date": "2026-10-30T18:03:50.628Z",
+    "category": "General",
+    "score": 9
+  },
+  {
+    "id": "1793383409460miu6j5iw1",
+    "title": "Kenia destina 160 millones de dólares para Maasai Mara y Tsavo",
+    "summary": "Kenia ha destinado 160 millones de dólares para la protección de los ecosistemas de Maasai Mara y Tsavo. Esta noticia fue compartida por The Optimist Daily, que se enfoca en noticias positivas sobre conservación de la naturaleza y desarrollo global.",
+    "image_alt": "Paisaje de Maasai Mara en Kenia",
+    "meta_description": "Kenia destina 160 millones de dólares para proteger los ecosistemas de Maasai Mara y Tsavo.",
+    "meta_keywords": "Kenia, Maasai Mara, Tsavo, conservación de la naturaleza, ecosistemas, financiación",
+    "link": "https://www.optimistdaily.com/2026/10/kenya-unlocks-160-million-to-protect-the-maasai-mara-and-tsavo-ecosystems/",
+    "source": "OptimistDaily.com",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/three-adult-giraffes-walking-line-Depositphotos_413297952_S.jpg",
+    "date": "2026-10-30T18:03:30.905Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1793383388104g6rrufn9p",
+    "title": "Periodistas ciudadanos recuperan las noticias locales y reducen la polarización",
+    "summary": "Mientras miles de medios de comunicación locales en EE.UU. se han reducido o cerrado, ciudadanos comunes están llenando el vacío. Jackie Jantzi, de Akron, Ohio, por ejemplo, asiste a reuniones de la junta escolar y publica resúmenes gratuitos en línea a través del programa Documenters, que ahora opera en 25 redes. Una investigación de la profesora Johanna Dunaway muestra que...",
+    "image_alt": "Una mujer toma notas en una laptop durante una reunión local de la junta escolar",
+    "meta_description": "Los ciudadanos llenan el vacío de los medios locales desaparecidos y devuelven matices a las conversaciones políticas sobre su comunidad.",
+    "meta_keywords": "noticias locales, Documenters, polarización, periodismo ciudadano, junta escolar, Akron Ohio, Johanna Dunaway",
+    "link": "https://reasonstobecheerful.world/want-the-news-to-unite-people-let-them-report-it/",
+    "source": "ReasonsToBeCheerful.world",
+    "image": "https://reasonstobecheerful.world/wp-content/uploads/2026/10/Documenter-on-assignment-in-Chicago-scaled.jpg",
+    "date": "2026-10-30T18:03:10.002Z",
+    "category": "Lifestyle",
+    "score": 8
+  },
+  {
+    "id": "1793383361055da2zrqy6s",
+    "title": "Republicanos y demócratas unidos contra los centros de datos",
+    "summary": "En Estados Unidos, republicanos, demócratas e independientes se unen en la resistencia contra la construcción de centros de datos de IA, que consumen enormes cantidades de agua y energía. En Grove City, Ohio, la empresa Headwaters quería construir un centro de datos de más de 300 hectáreas cerca de Pleasant y Jackson Township. Los residentes se organizaron a través de...",
+    "image_alt": "Residentes de Grove City protestan juntos contra la construcción de un centro de datos de IA",
+    "meta_description": "Republicanos y demócratas en Ohio trabajan juntos contra la llegada de centros de datos de IA en su comunidad.",
+    "meta_keywords": "centros de datos, IA, Grove City, Ohio, bipartidista, moratoria, comunidad, polarización",
+    "link": "https://reasonstobecheerful.world/data-center-opposition-ai-republicans-democrats-bipartisan-agreement/",
+    "source": "ReasonsToBeCheerful.world",
+    "image": "https://reasonstobecheerful.world/wp-content/uploads/2026/10/Patty-and-her-husband-on-their-land-2.jpg",
+    "date": "2026-10-30T18:02:42.312Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1793383329951u4ns80df3",
+    "title": "La joven morsa huérfana Annautaq tiene una nueva oportunidad en SeaWorld Orlando",
+    "summary": "Una cría huérfana de morsa del Pacífico, llamada Annautaq, ha encontrado un nuevo hogar en SeaWorld Orlando. El macho de cinco meses de edad, que pesa aproximadamente 220 libras, fue encontrado solo y acosado por carroñeros en una playa remota del norte de Alaska, después de que una manada de morsas se alejara durante un fuerte oleaje. La pasante de...",
+    "image_alt": "La joven morsa huérfana Annautaq es cuidada por el personal de SeaWorld Orlando",
+    "meta_description": "Cría huérfana de morsa Annautaq, rescatada en Alaska, encuentra nuevo hogar y cuidados en SeaWorld Orlando.",
+    "meta_keywords": "morsa, Annautaq, SeaWorld Orlando, Alaska SeaLife Center, rescate animal, morsa del Pacífico",
+    "link": "https://www.goodnewsnetwork.org/rescuers-ensure-orphaned-baby-walrus-gets-a-second-chance-look/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/A-USFWS-Intern-and-Annautaq-credit-supplied-to-GNN-by-SeaWorld-Orlando-Stephanie-Bechara-cropped.jpg",
+    "date": "2026-10-30T18:02:11.421Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1793383293193qgkt0ncbr",
+    "title": "Arizona obtiene su 64º Parque Nacional: «La tierra de las rocas erguidas»",
+    "summary": "Estados Unidos ha designado oficialmente Chiricahua en Arizona como parque nacional, el 64º del país. La zona, anteriormente un monumento nacional desde 1924, es conocida como «La tierra de las rocas erguidas» por sus impresionantes picos de riolita que se formaron hace unos 27 millones de años tras una erupción volcánica. Chiricahua se encuentra a 90 millas al este de...",
+    "image_alt": "Altos picos de riolita en Chiricahua National Park en Arizona",
+    "meta_description": "Chiricahua en Arizona es el 64º Parque Nacional de EE.UU., con formaciones rocosas y patrimonio Apache en el valle de Sulphur Springs.",
+    "meta_keywords": "Chiricahua National Park, Arizona, Apache, formaciones rocosas, Sulphur Springs Valley, National Park Service, Faraway Ranch",
+    "link": "https://www.goodnewsnetwork.org/new-us-national-park-preserves-land-of-standing-up-rocks/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Balancing-rocks-in-Chiricahua-National-Park-by-NPS-released.jpg",
+    "date": "2026-10-30T18:01:34.617Z",
+    "category": "Environment",
+    "score": 8
+  },
+  {
+    "id": "1793383257407x9i0ucuyo",
+    "title": "Hombre salta a un autobús escolar en movimiento y rescata a 18 niños",
+    "summary": "En St. Paul, Minnesota, el joven de 27 años Ebro Ahmed saltó a un autobús escolar en movimiento después de ver que el conductor sufría un ataque mientras el vehículo seguía circulando. Ahmed, quien estaba en su descanso laboral en Ya Bricks Snacks and Tobacco en el barrio de Dayton's Bluff, corrió hacia el autobús de Battle Creek Middle School,...",
+    "image_alt": "Imagen de cámara de vigilancia de un hombre saltando a un autobús escolar en movimiento para ayudar al conductor",
+    "meta_description": "Ebro Ahmed, de 27 años, salta a un autobús escolar en movimiento en Minnesota y rescata al conductor y 18 niños tras un ataque.",
+    "meta_keywords": "Ebro Ahmed, autobús escolar, Minnesota, St. Paul, rescate, Battle Creek Middle School, ataque del conductor",
+    "link": "https://www.goodnewsnetwork.org/st-paul-man-jumps-onto-runaway-school-bus-saves-18-children/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/surveillance-video-of-school-bus-Ya-Bricks-Snacks-and-Tobacco.jpg",
+    "date": "2026-10-30T18:00:59.164Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "1793383226387sna1ljtfg",
+    "title": "53 orangutanes rescatados de incendios forestales en Borneo",
+    "summary": "En Borneo se registran incendios forestales y de turberas desde hace meses que afectan la calidad del aire y destruyen el suministro de alimento de los orangutanes. La organización sin fines de lucro indonesia YIARI, activa en protección de primates desde hace 18 años, ha rescatado 53 orangutanes desde agosto. Muchos animales fueron reintroducidos en otras reservas forestales, incluido el...",
+    "image_alt": "La Dra. Karmele Llano Sanchez abraza a la joven orangutana Irene rescatada",
+    "meta_description": "YIARI rescató 53 orangutanes de incendios forestales en Borneo y reintrodujo a muchos en áreas forestales protegidas.",
+    "meta_keywords": "orangutanes, Borneo, incendios forestales, YIARI, rescate de animales, reintroducción, Indonesia",
+    "link": "https://www.goodnewsnetwork.org/53-orangutans-rescued-from-fires-in-borneo/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Dr-Karmele-Llano-Sanchez-rescues-baby-orangutan-Credit-YIARI-BKSDA-and-International-Animal-Rescue-RELEASED.jpg",
+    "date": "2026-10-30T18:00:28.027Z",
+    "category": "Environment",
+    "score": 8
+  },
+  {
+    "id": "1793383191308ektznbw95",
+    "title": "Cámara en directo muestra cinco cachorros de guepardo con su madre Zura",
+    "summary": "El 5 de octubre, la gueparda Zura dio a luz a cinco cachorros en el Smithsonian's Conservation Institute en Virginia. A través de una cámara en directo es posible ver día y noche cómo la madre cuida de sus crías, con sonidos de suaves chirridos, piar y ronroneos mientras los cachorros beben, se lavan o juegan. La misma cámara es...",
+    "image_alt": "La gueparda Zura cuida a sus cinco cachorros recién nacidos en su guarida",
+    "meta_description": "Cámara en directo muestra a la gueparda Zura con sus cinco nuevos cachorros en el Smithsonian's Conservation Institute en Virginia.",
+    "meta_keywords": "guepardo, Zura, cachorros, Smithsonian, cámara en directo, conservación de la naturaleza, Front Royal",
+    "link": "https://www.goodnewsnetwork.org/live-smithsonian-webcam-for-cheetah-den-and-5-cubs/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Cheetah-Cam-screenshot-via-Smithsonian-Conservation-Biology-Institute-.jpg",
+    "date": "2026-10-30T17:59:52.652Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1793383163484cw5ubl9r4",
+    "title": "El delfín del Irrawaddy en Camboya crece con 6 crías",
+    "summary": "El delfín del río Irrawaddy, una de las especies animales más amenazadas del mundo, muestra un crecimiento esperanzador en Camboya. La temporada de crías más reciente produjo 6 nuevos delfines bebé, lo que eleva la población a lo largo de un tramo de 75 millas del Mekong en el noreste del país a 118 animales. Este grupo camboyano es la...",
+    "image_alt": "Delfín del río Irrawaddy nada en la superficie del río Mekong en Camboya",
+    "meta_description": "Delfín del Irrawaddy en Camboya suma 6 crías: la población crece a 118 animales a lo largo del Mekong.",
+    "meta_keywords": "delfín Irrawaddy, delfín fluvial, Mekong, Camboya, especie amenazada, conservación de la naturaleza, WWF",
+    "link": "https://www.goodnewsnetwork.org/numbers-of-endangered-and-sacred-river-dolphin-grow-by-6-after-successful-breeding-season/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Irrawaddy-dolphin-CC-4.0.-Int-Stefan-Brending.jpg",
+    "date": "2026-10-30T17:59:25.001Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1793383136748zh80bxxgg",
+    "title": "Una salida equivocada salva a la familia de acogida Burke con 500 niños de un incendio",
+    "summary": "Un completo desconocido llamado Casey circulaba por la carretera 114 al sur de Lyerly, en el condado de Chattooga, Georgia, siguiendo una indicación errónea de su GPS, cuando vio humo de una casa en llamas. La casa pertenecía a los padres de acogida James y Larita Burke, quienes en ese momento tenían 11 niños y 1 nieto viviendo con ellos....",
+    "image_alt": "Vivienda incendiada de la familia de acogida Burke después del incendio en el condado de Chattooga, Georgia",
+    "meta_description": "Desconocido Casey salva a la familia de acogida Burke y sus niños de un incendio gracias a una salida equivocada del GPS en Georgia.",
+    "meta_keywords": "familia de acogida, incendio, Georgia, condado de Chattooga, James y Larita Burke, rescate, salida equivocada del GPS",
+    "link": "https://www.goodnewsnetwork.org/family-thats-fostered-500-children-saved-from-housefire-thanks-to-strangers-wrong-turn/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/The-Burke-Family-credit-Flourish-Foster-Care-Closet-Support.jpg",
+    "date": "2026-10-30T17:58:58.101Z",
+    "category": "Lifestyle",
+    "score": 8
+  },
+  {
+    "id": "17933830831624gr34qja7",
+    "title": "Tratamiento de caries sin taladro con SDF cerca de la aprobación de la FDA",
+    "summary": "La aprobación de la FDA para el fluoruro de diamina de plata (SDF), un líquido que detiene la caries en niños sin taladro, inyecciones ni anestesia, parece estar cada vez más cerca. Un estudio de Fase III, publicado en JAMA Pediatrics, siguió a 830 niños menores de 6 años en Michigan, Nueva York e Iowa. El SDF, aplicado con un...",
+    "image_alt": "Una muela de leche se trata con fluoruro de diamina de plata mediante un aplicador de esponja",
+    "meta_description": "El SDF detiene la caries en niños sin taladro. La aprobación de la FDA tras un exitoso estudio de Fase III parece inminente.",
+    "meta_keywords": "fluoruro de diamina de plata, SDF, aprobación de la FDA, caries, deterioro dental, odontología pediátrica, sin taladro, JAMA Pediatrics",
+    "link": "https://www.goodnewsnetwork.org/fda-approval-for-drill-free-cavity-care-may-be-imminent-after-great-phase-3-treatment-trial/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2018/01/Teeth-dentist-caveties-by-Ozkan-Guner-lQNl2Vdn0fs-unsplash.jpeg",
+    "date": "2026-10-30T17:58:05.078Z",
+    "category": "Health",
+    "score": 10
+  },
+  {
+    "id": "1793383029816w2djtnyyx",
+    "title": "Etsy lucha contra el contenido de IA engañoso",
+    "summary": "Etsy, el mayor mercado mundial de productos hechos a mano, implementa nuevas normas contra el contenido generado por IA engañoso. El vicepresidente James Ossman sostiene que la confianza entre compradores y vendedores es esencial. Los vendedores deben mostrar a partir de ahora al menos una foto auténtica sin editar de su producto; las fotos adicionales pueden editarse con IA, pero...",
+    "image_alt": "Productos hechos a mano en Etsy con fotos auténticas sin editar",
+    "meta_description": "Etsy implementa normas más estrictas contra el contenido de IA engañoso para proteger a los compradores en su mercado.",
+    "meta_keywords": "Etsy, contenido de IA, inteligencia artificial, comercio electrónico, productos hechos a mano, protección del consumidor, fraude",
+    "link": "https://www.goodnewsnetwork.org/etsy-cracks-down-on-ai-generated-content-to-protect-buyers-from-barrage-of-slop/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Etsys-offices-in-Ireland-CC-3.0.-BY-SA-Cograng-replicated-with-AI-for-humors-sake.jpg",
+    "date": "2026-10-30T17:57:11.374Z",
+    "category": "Tech",
+    "score": 8
+  },
+  {
+    "id": "1793382999661s9jt4nn4o",
+    "title": "Buceadores rescatan un canguro en medio del mar en Boston Bay",
+    "summary": "En Boston Bay, en el sur de Australia, un buceador y su tripulación rescataron a un joven canguro que se encontraba a la deriva en el mar a más de dos kilómetros y medio de la costa. El capitán Ryan Smith fue el primero en avistar al animal. Gracias a la plataforma de buceo del barco, la tripulación pudo acercarse...",
+    "image_alt": "Un joven canguro es rescatado del mar por un buceador en Boston Bay, Australia",
+    "meta_description": "Buceadores rescatan a un canguro agotado que nadaba a más de 3 kilómetros de la costa en Boston Bay, Australia.",
+    "meta_keywords": "rescate de canguro, Boston Bay, Australia, buceadores, Jake Murray, rescate de animales",
+    "link": "https://www.goodnewsnetwork.org/bizarre-rescue-sees-divers-save-kangaroo-that-found-itself-over-a-mile-from-dry-land/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Jake-Murray-and-the-rescued-roo-supplied-to-ABC-by-Jake-Murray.jpg",
+    "date": "2026-10-30T17:56:40.683Z",
+    "category": "Lifestyle",
+    "score": 8
+  },
+  {
+    "id": "17933829729423j7p4881e",
+    "title": "Alumnos de Princeton filtran microplásticos de aguas residuales en Atlantic City",
+    "summary": "Dos alumnos de Princeton, Nathanial Banks y Yidian Liu, han desarrollado a través de su startup PolyGone Technologies un nuevo dispositivo que filtra microplásticos de las aguas residuales. El sistema, inspirado en plantas hidrófobas que repelen el agua pero atraen microplásticos, ya está instalado en Atlantic City. La Atlantic County Utilities Authority (ACUA) en Nueva Jersey prueba el dispositivo durante...",
+    "image_alt": "Sistema de filtración a gran escala para microplásticos instalado en la planta de tratamiento de agua en Atlantic City",
+    "meta_description": "Alumnos de Princeton desarrollan un filtro innovador que elimina microplásticos de aguas residuales, ya activo en Atlantic City.",
+    "meta_keywords": "microplásticos, aguas residuales, PolyGone Technologies, Atlantic City, ACUA, tratamiento de agua, Princeton",
+    "link": "https://www.goodnewsnetwork.org/nature-inspired-tech-prevents-microplastics-entering-atlantic-ocean-through-wastewater/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/credit-supplied-to-WHYY-as-a-courtesy-PolyGone-Systems.jpg",
+    "date": "2026-10-30T17:56:14.730Z",
+    "category": "Environment",
+    "score": 10
+  },
+  {
+    "id": "1793382944218urcx6fpd9",
+    "title": "Observar aves mantiene el cerebro flexible y ralentiza el deterioro cognitivo",
+    "summary": "Una nueva investigación demuestra que la observación de aves favorece la neuroplasticidad cerebral, un factor importante contra el deterioro cognitivo relacionado con la edad. El investigador Erik Wing de la Baycrest Academy for Research and Education en Toronto descubrió mediante resonancias magnéticas que los observadores de aves experimentados muestran una mayor complejidad estructural en múltiples regiones cerebrales. Especialmente al identificar...",
+    "image_alt": "Un observador de aves con binoculares observa aves en la naturaleza",
+    "meta_description": "La investigación demuestra que la observación de aves mantiene el cerebro flexible y puede ralentizar el deterioro cognitivo en el envejecimiento.",
+    "meta_keywords": "observación de aves, birdwatching, neuroplasticidad, deterioro cognitivo, investigación cerebral, Erik Wing, Baycrest, envejecimiento saludable",
+    "link": "https://www.goodnewsnetwork.org/birdwatching-rewires-the-brain-and-slows-cognitive-decline/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/birdwatching-birding-birder-credit-Curated-Lifestyle.jpg",
+    "date": "2026-10-30T17:55:45.999Z",
+    "category": "Health",
+    "score": 8
+  },
+  {
+    "id": "1793382890861w6m803vdy",
+    "title": "Documental «Panther Pat» rinde homenaje a Pat Palinkas, primera mujer en el fútbol profesional",
+    "summary": "En 1970, la maestra Pat Palinkas se convirtió en la primera mujer en pisar el terreno de juego para un equipo de fútbol profesional, los Orlando Panthers. Su historia cayó casi en el olvido después. Ahora, la cineasta Ashley Brandon la rescata del olvido con «Panther Pat», un documental de 12 minutos que combina entrevistas y material de archivo con...",
+    "image_alt": "Fotograma del documental Panther Pat con muñecos que representan la historia del fútbol de Pat Palinkas",
+    "meta_description": "El documental «Panther Pat» cuenta con muñecos e imágenes de archivo la historia olvidada de Pat Palinkas, primera mujer en el fútbol profesional.",
+    "meta_keywords": "Panther Pat, Pat Palinkas, Ashley Brandon, documental, fútbol profesional, Slamdance Film Festival, Eli Manning, Robin Roberts",
+    "link": "https://www.goodnewsnetwork.org/panther-pat-shines-a-light-on-the-nearly-forgotten-first-woman-to-play-pro-football/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/CELEB-POST-PP-27-x-40-OFFICIAL-POSTER-e1793294882546.jpg",
+    "date": "2026-10-30T17:54:51.923Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "1793382864366l99apl4wk",
+    "title": "Un número de teléfono en un examen lleva a una amistad entre estudiante y productor de fresas",
+    "summary": "Cuando He Ziqi realizaba un examen de inglés en la escuela secundaria, notó un número de teléfono en un texto sobre un productor de fresas de Beijing. Por curiosidad, buscó el número a través de WeChat y descubrió que era real: pertenecía al cultivador de fresas Wang. Wang había estado recibiendo mensajes durante más de diez años de estudiantes que...",
+    "image_alt": "Un productor de fresas y un estudiante sonríen juntos, unidos por una pregunta de examen fortuita.",
+    "meta_description": "Una pregunta de examen sobre un productor de fresas genera una amistad especial con un estudiante años después en Beijing.",
+    "meta_keywords": "productor de fresas, pregunta de examen, China, estudiante, amistad, Beijing, admisión universitaria",
+    "link": "https://www.goodnewsnetwork.org/a-farmer-didnt-know-his-cell-number-was-on-an-exam-question-now-uses-the-calls-he-gets-as-opportunities-to-inspire/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Left-Mr.-He-and-Mr.-Wang-shake-hands-6-years-after-meeting-through-an-English-exam-question-credit-retrieved-from-social-media-Douyin.jpg",
+    "date": "2026-10-30T17:54:25.973Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "1793382839054fxzglq088",
+    "title": "Escuela primaria de Texas nombrada en honor a la conserje Miss Marilyn",
+    "summary": "Aubrey ISD en Texas ha nombrado su nueva escuela K-5 en honor a Marilyn Hampton, una conserje que trabajó 39 años para el distrito escolar. La superintendente Dra. Shannon Saylor la describió como «verdaderamente Aubrey ISD». Hampton hizo mucho más que limpiar: compraba y entregaba suministros escolares, ayudaba a los estudiantes a estudiar, dirigía la taquilla de entradas en los...",
+    "image_alt": "Marilyn Hampton desenrolla una alfombra roja con el nombre de su nueva escuela",
+    "meta_description": "Aubrey ISD en Texas nombra nueva escuela en honor a la conserje Marilyn Hampton, quien durante 39 años hizo mucho más que limpiar.",
+    "meta_keywords": "Marilyn Hampton, Aubrey ISD, Texas, escuela, conserje, Claudene Wilson, Missouri",
+    "link": "https://www.goodnewsnetwork.org/new-texas-school-is-named-for-longtime-janitor-miss-marilyn-watch-her-reaction/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Marilyn-Hampton-when-she-graduated-high-school-credit-family-photo.jpg",
+    "date": "2026-10-30T17:54:00.394Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "1793382804799wiqr8zal6",
+    "title": "Voluntarios se convierten en salmón y lombriz para salvar el río Tone",
+    "summary": "En Somerset, dieciocho voluntarios participaron en una investigación inusual: aprendieron a ponerse en la piel de la fisiología y los sentidos de un animal —como ciervo, salmón, nutria, cernícalo o lombriz— para experimentar las amenazas para la fauna silvestre alrededor del contaminado río Tone. El participante Jake Lawy nadó como salmón a través de agua contaminada y pobre en oxígeno...",
+    "image_alt": "Voluntario nada como salmón a través del río Tone contaminado en Somerset",
+    "meta_description": "Voluntarios experimentan perspectiva de fauna silvestre para salvar el río Tone contaminado con campaña de treinta años.",
+    "meta_keywords": "río Tone, Somerset, salmón, fauna silvestre, contaminación, restauración natural, biodiversidad",
+    "link": "https://www.positive.news/society/volunteers-became-salmon-deer-and-earthworms-then-they-set-out-to-save-their-river/",
+    "source": "Positive.News",
+    "image": "https://positivenews.kinsta.cloud/wp-content/uploads/2026/10/Atlantic-Salmon-001-©-Darren-Honeywill-2026.jpg",
+    "date": "2026-10-30T17:53:26.687Z",
+    "category": "Environment",
+    "score": 10
+  },
+  {
+    "id": "17933827785551xdq3cwyb",
+    "title": "Cacaoboerin Susana Afrifa Ankrah protege el bosque tropical de Ghana",
+    "summary": "En la Atewa Range de Ghana, la cacaoboerin Susana Afrifa Ankrah, de 62 años, ayuda a proteger una rara zona de bosque tropical que alberga búhos, atrapamoscas, antílopes y la mariposa giant swallowtail, entre otras especies. A través del Ghana Cocoa Forest REDD+ Programme (GCFRP), una iniciativa respaldada por la ONU que canaliza fondos del Banco Mundial desde países ricos...",
+    "image_alt": "Cacaoboerin Susana Afrifa Ankrah en el bosque tropical protegido de la Atewa Range en Ghana",
+    "meta_description": "Cacaoboerin Susana Afrifa Ankrah protege el bosque tropical de Ghana mediante el programa REDD+ y mejora la producción de cacao.",
+    "meta_keywords": "Ghana, cacao, bosque tropical, REDD+, Atewa Range, agricultura sostenible, Susana Afrifa Ankrah",
+    "link": "https://www.positive.news/society/the-farmer-growing-a-future-under-ghanas-trees/",
+    "source": "Positive.News",
+    "image": "https://www.positive.news/wp-content/uploads/2026/10/SharedLand_Story03b_WebHeader_1800x1080.jpg",
+    "date": "2026-10-30T17:53:01.111Z",
+    "category": "Environment",
+    "score": 10
+  },
+  {
+    "id": "1793382750546hpyow7okq",
+    "title": "Herramienta gratuita Vibe Check enseña a jóvenes hombres a reconocer conducta sexual abusiva",
+    "summary": "Drew Davis, director de iniciativas estratégicas de la organización estadounidense SafeBae, vio en Reddit innumerables mensajes de jóvenes hombres que dudaban si habían hecho daño sexual a alguien. Las respuestas eran a menudo extremas: condena feroz o aprobación desde la llamada manosphere. Por eso SafeBae desarrolló Vibe Check, una herramienta digital gratuita sin inteligencia artificial que funciona con un «árbol...",
+    "image_alt": "Jóvenes durante una reunión de SafeBae en el verano de 2025",
+    "meta_description": "Herramienta gratuita Vibe Check ayuda a jóvenes hombres a reflexionar sobre conducta sexual abusiva, como alternativa a la manosphere.",
+    "meta_keywords": "Vibe Check, SafeBae, violencia sexual, manosphere, jóvenes hombres, responsabilidad, consentimiento, prevención",
+    "link": "https://www.positive.news/society/free-tool-helps-young-men-to-take-responsibility-for-sexual-harm/",
+    "source": "Positive.News",
+    "image": "https://www.positive.news/wp-content/uploads/2026/10/SafeBAE-Students-2.jpg",
+    "date": "2026-10-30T17:52:32.461Z",
+    "category": "Lifestyle",
+    "score": 10
+  },
+  {
+    "id": "1793382715712wkf3c24w4",
+    "title": "Lion Rangers protegen leones del desierto de Namibia con smartphones",
+    "summary": "En el noroeste de Namibia, los rangers comunitarios del programa Lion Rangers ayudan a agricultores y leones a convivir de manera más pacífica. Desde un incidente en 2018, cuando leones atacaron una granja cerca de Khorixas, el conservancy Doro !Nawas ha desplegado rangers equipados con smartphones, cámaras trampa y collares GPS para monitorear los movimientos de los leones. El coordinador...",
+    "image_alt": "Lion Rangers en Namibia registran huellas de leones en el terreno",
+    "meta_description": "Los Lion Rangers de Namibia utilizan smartphones y conocimientos tradicionales para proteger a los leones del desierto y el ganado de los agricultores.",
+    "meta_keywords": "Lion Rangers, Namibia, leones del desierto, Kunene, conflicto humano-fauna, conservación, software SMART",
+    "link": "https://www.positive.news/society/smartphones-ancient-tracking-skills-and-a-future-for-desert-lions/",
+    "source": "Positive.News",
+    "image": "https://positivenews.kinsta.cloud/wp-content/uploads/2026/10/PN_SharedLand_Story04_WebHeader_1800x1080.jpg",
+    "date": "2026-10-30T17:51:58.808Z",
+    "category": "Environment",
+    "score": 10
+  },
+  {
     "id": "1790962649034k9gqz5jv7",
     "title": "BHP gana premio por 30 años de restauración en Island Copper Mine",
     "summary": "En British Columbia, el BC Technical Research Committee on Reclamation (TRCR) ha otorgado su premio anual de restauración a BHP, la mayor empresa minera del mundo, por su trabajo en la antigua Island Copper Mine cerca de Port Hardy en Vancouver Island. La mina, activa de 1971 a 1995, contaba con un pozo principal de más de 1.320 pies de...",
@@ -1559,1036 +2480,5 @@
     "date": "2026-09-23T16:40:58.864Z",
     "category": "Lifestyle",
     "score": 8
-  },
-  {
-    "id": "dg-20260922-health",
-    "type": "digest",
-    "digest_date": "2026-09-22",
-    "title": "Sueño, orina y ritmo cardíaco: tres pasos adelante en la sanidad",
-    "summary": "Estos días demuestran que el progreso sanitario a veces reside en pequeños pasos inteligentes. Una recompensa sencilla por dormir lo suficiente, una prueba de orina que detecta el cáncer, e inteligencia artificial que analiza un electrocardiograma: tres historias diferentes con un hilo conductor común. Hacen la sanidad más rápida, más precisa y a veces también más fácil de mantener. Tomemos el estudio de la University of Pittsburgh [1]. Más de 1.100 estudiantes recibieron una aplicación Fitbit y aproximadamente 468 de ellos ganaban alrededor de 5 dólares por noche si dormían siete horas. El resultado: 26% más noches con sueño suficiente...",
-    "image_alt": "Sueño, orina y ritmo cardíaco: tres pasos adelante en la sanidad",
-    "meta_description": "Recompensar el sueño, detectar cáncer de vejiga mediante orina e identificar enfermedades cardíacas con inteligencia artificial: tres noticias sanitarias e",
-    "meta_keywords": "Health",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aad7f471fbf338d1a44c36c_6aad7f45b52f83488b1f588b_researchers-pay-college-students-to-sleep-more-featured.webp",
-    "date": "2026-09-23T04:30:11.999Z",
-    "category": "Health",
-    "refs": [
-      {
-        "id": "1789965334441fmmtlceew",
-        "title": "Cinco dólares por noche de sueño mejoran las calificaciones de estudiantes"
-      },
-      {
-        "id": "1790137627194t8vksyuta",
-        "title": "La prueba de orina GALEAS detecta el cáncer de vejiga con precisión sorprendente"
-      },
-      {
-        "id": "1790051398328zl0crxok4",
-        "title": "Nueva herramienta de IA detecta enfermedades cardíacas mediante ECG convencional"
-      }
-    ]
-  },
-  {
-    "id": "dg-20260922-environment",
-    "type": "digest",
-    "digest_date": "2026-09-22",
-    "title": "Una ualabí reaparece, dos elefantillos encuentran un nuevo hogar",
-    "summary": "En estos días, las buenas noticias llegan desde rincones inesperados: un animal que parecía desaparecido hace cincuenta años, y dos jóvenes elefantes que gracias a manos humanas encontraron una nueva familia. Tres historias que demuestran cómo la paciencia y el cuidado a veces llegan justo a tiempo. En Australia Occidental, los investigadores buscaron durante medio siglo sin éxito entre la hierba rastros de la nabarlek. Ahora, la Australian Wildlife Conservancy confirmó el pequeño ualabí de roca nuevamente en el continente, gracias a cámaras trampa e investigación de excrementos [1]. En dos lugares de la región de Kimberley, separados hasta 170...",
-    "image_alt": "Una ualabí reaparece, dos elefantillos encuentran un nuevo hogar",
-    "meta_description": "Ualabí nabarlek reaparece en Australia tras 50 años y dos elefantillos huérfanos encuentran en Kenia un nuevo hogar y una amistad inquebrantable.",
-    "meta_keywords": "Environment",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab167478ba2d06d7ab7f39a_6ab16746237dffae5e47e8a3_tiny-wallaby-nabarlek-trail-cameras-australia-featured.webp",
-    "date": "2026-09-23T04:29:19.501Z",
-    "category": "Environment",
-    "refs": [
-      {
-        "id": "1790137706448cjjzj9eh0",
-        "title": "El nabarlek-wallaby vuelto a avistar en Australia tras 50 años"
-      },
-      {
-        "id": "1790137681223mewceid9h",
-        "title": "La pequeña elefanta huérfana Kaikai recibe tres guardabosques como «padres»"
-      },
-      {
-        "id": "1790137654165e7izh7pd0",
-        "title": "Elefantito Bungalu sobrevivió a un ataque de león y encontró una nueva familia"
-      }
-    ]
-  },
-  {
-    "id": "1790137706448cjjzj9eh0",
-    "title": "El nabarlek-wallaby vuelto a avistar en Australia tras 50 años",
-    "summary": "Investigadores de la Australian Wildlife Conservancy han confirmado por primera vez en 50 años la presencia del nabarlek en el continente australiano. Las cámaras trampa y el análisis de excrementos revelaron la presencia de este pequeño canguro de roca en dos nuevas ubicaciones en la región de Kimberley en Australia Occidental: en el Yampi Sound Training Area y aproximadamente 170...",
-    "image_alt": "Pequeño nabarlek-wallaby capturado por una cámara trampa en la región de Kimberley en Australia",
-    "meta_description": "Tras 50 años, nueva evidencia del raro nabarlek-wallaby en Australia, gracias a cámaras trampa e investigación en la región de Kimberley.",
-    "meta_keywords": "nabarlek, wallaby, Australia, Kimberley, Australian Wildlife Conservancy, especie amenazada, conservación de la naturaleza, cámara trampa",
-    "link": "https://www.goodgoodgood.co/articles/tiny-wallaby-nabarlek-trail-cameras-australia",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab167478ba2d06d7ab7f39a_6ab16746237dffae5e47e8a3_tiny-wallaby-nabarlek-trail-cameras-australia-featured.webp",
-    "date": "2026-09-23T04:28:27.084Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1790137681223mewceid9h",
-    "title": "La pequeña elefanta huérfana Kaikai recibe tres guardabosques como «padres»",
-    "summary": "El 26 de mayo de 2025, la Mara North Conservancy encontró a una elefanta recién nacida junto a su madre fallecida. Ninguna otra hembra de elefante podía amamantarla, y con la noche y los depredadores acechando, el Kenya Wildlife Service intervino. Junto con el Mara Elephant Project, la cría fue trasladada en Land Cruiser a un veterinario y a la...",
-    "image_alt": "La pequeña elefanta huérfana Kaikai con uno de sus tres cuidadores en la Sheldrick Wildlife Trust",
-    "meta_description": "La pequeña elefanta huérfana Kaikai perdió a su madre, pero tres guardabosques asumieron su cuidado y se convirtieron en sus nuevos «padres».",
-    "meta_keywords": "Kaikai, Sheldrick Wildlife Trust, elefanta huérfana, bienestar de elefantes, Kenia, rescate de animales, Mara North Conservancy",
-    "link": "https://www.goodgoodgood.co/articles/orphan-elephant-shared-custody-rangers",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab2c5ed932d71bd48f5030a_6ab2c5ec1ed52957fcf8d683_orphan-elephant-shared-custody-rangers-featured.webp",
-    "date": "2026-09-23T04:28:02.272Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1790137654165e7izh7pd0",
-    "title": "Elefantito Bungalu sobrevivió a un ataque de león y encontró una nueva familia",
-    "summary": "El elefantito africano Bungalu sobrevivió un mes solo después de ser atacado por un león. En febrero de 2026, la Kenya Wildlife Service recibió reportes de un elefantito solitario cerca de Bungule, junto al Monte Kasiagau. A pesar de las patrullas, permaneció escondido y huía cada vez por miedo, incluso cuando la Sheldrick Wildlife Trust intentó alcanzarlo en helicóptero. Tras...",
-    "image_alt": "Elefantito Bungalu en la Sheldrick Wildlife Trust con su biberón",
-    "meta_description": "Elefantito Bungalu sobrevivió a un ataque de león y un mes solo en la naturaleza. Ahora tiene una nueva familia en Sheldrick Wildlife Trust.",
-    "meta_keywords": "Bungalu, elefante, Sheldrick Wildlife Trust, elefanta huérfana, Kenia, Kaikai, conservación",
-    "link": "https://www.goodgoodgood.co/articles/baby-elephant-bungalu-rescued-lions",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab2de78850ca389675da402_6ab2de749388e05e49ac3373_baby-elephant-bungalu-rescued-lions-featured-3.webp",
-    "date": "2026-09-23T04:27:34.991Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1790137627194t8vksyuta",
-    "title": "La prueba de orina GALEAS detecta el cáncer de vejiga con precisión sorprendente",
-    "summary": "Un estudio observacional en el Reino Unido muestra resultados sólidos para GALEAS Bladder, una prueba urinaria genética no invasiva de Nonacus Clinical Services. En 964 pacientes derivados entre 2024 y 2025 para investigación urgente de hematuria, la prueba detectó 71 de los 77 casos de cáncer de vejiga confirmados mediante cistoscopia, incluidos los 17 tumores con invasión muscular y 35...",
-    "image_alt": "Muestra de orina siendo analizada para detectar marcadores genéticos de cáncer de vejiga",
-    "meta_description": "La nueva prueba de orina GALEAS detecta 71 de 77 casos de cáncer de vejiga, con valor predictivo negativo superior al 99%.",
-    "meta_keywords": "GALEAS Bladder, cáncer de vejiga, prueba de orina, Nonacus, hematuria, cistoscopia, diagnóstico de cáncer",
-    "link": "https://www.goodnewsnetwork.org/exceptional-detection-rates-of-bladder-cancer-recorded-in-study-of-simple-yet-state-of-the-art-test/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2024/06/woman-scientist-microscope-research-lab-test-pubdomain-National-Cancer-Institute.jpg",
-    "date": "2026-09-23T04:27:09.661Z",
-    "category": "Health",
-    "score": 9
-  },
-  {
-    "id": "17900955302019yo4v9fb2",
-    "title": "135.000 mascotas adoptadas a través de Clear The Shelters de NBC",
-    "summary": "La campaña anual «Clear The Shelters» de NBC y su empresa matriz Universal ha ayudado este año a 135.000 perros, gatos y otras mascotas a encontrar un nuevo hogar. La iniciativa se desarrolló de julio a septiembre y recaudó además $480.000 para más de 1.000 refugios de animales participantes. En los 12 años que lleva la campaña, se han colocado...",
-    "image_alt": "Mascotas en un refugio de animales esperando adopción durante la campaña Clear The Shelters",
-    "meta_description": "La campaña anual de adopción de NBC proporcionó 135.000 nuevos hogares para mascotas y $480.000 en donaciones para refugios.",
-    "meta_keywords": "Clear The Shelters, NBC, refugio de animales, adopción de mascotas, Universal, Telemundo, bienestar animal",
-    "link": "https://www.goodnewsnetwork.org/135000-shelter-pets-found-forever-homes-in-august-thanks-to-nbcs-annual-adopt-a-thon/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/generic-animal-shelter-image.jpg",
-    "date": "2026-09-22T16:45:31.363Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "17900955066950vyz7ysw6",
-    "title": "Un alcatraz buceador gana Bird Photographer of the Year",
-    "summary": "Se han anunciado los ganadores de Bird Photographer of the Year 2026. El primer premio fue para Henry Spiers del Reino Unido por su fotografía «Sunball Rocket», que captura un alcatraz mientras atraviesa la superficie del agua. La foto fue tomada en aguas escocesas y también ganó la categoría Birds in the Environment. Los alcatraces se lanzan desde alturas de...",
-    "image_alt": "Un alcatraz atraviesa la superficie del agua del mar, con el sol de fondo",
-    "meta_description": "Henry Spiers gana Bird Photographer of the Year 2026 con foto de alcatraz buceador en aguas escocesas.",
-    "meta_keywords": "Bird Photographer of the Year, alcatraz, Henry Spiers, fotografía de aves, fotografía de naturaleza, Birds on the Brink",
-    "link": "https://www.positive.news/environment/winners-of-bird-photographer-of-the-year-announced/",
-    "source": "Positive.News",
-    "image": "https://positivenews.kinsta.cloud/wp-content/uploads/2026/09/ADULT-OVERALL-WINNER-Sunball-Rocket-by-Henley-Spiers.jpg",
-    "date": "2026-09-22T16:45:09.402Z",
-    "category": "Lifestyle",
-    "score": 8
-  },
-  {
-    "id": "dg-20260921-environment",
-    "type": "digest",
-    "digest_date": "2026-09-21",
-    "title": "Del sumidero a la granja de hongos: la recuperación de la naturaleza esta semana",
-    "summary": "Estos días muestran cómo las personas dan una segunda oportunidad a los animales y la tierra, desde la sabana de Kenia hasta un granero en Iowa. Siempre se trata de paciencia y cooperación: guardabosques que aguantan horas, agricultores que transforman su negocio, y programas de cría que persisten durante décadas. El resultado es siempre la misma sensación de alivio y progreso. En Kenia, los guardabosques del Kenya Wildlife Service y la Sheldrick Wildlife Trust tuvieron que rescatar a un elefante toro adulto que estaba atrapado hasta los hombros en un sumidero cerca de Chakama. Sin sedación, sacaron al animal centímetro...",
-    "image_alt": "Del sumidero a la granja de hongos: la recuperación de la naturaleza esta semana",
-    "meta_description": "Rescates de elefantes en Kenia, caballos salvajes en Kazajistán y una granja que se transforma: las noticias ambientales positivas de estos días.",
-    "meta_keywords": "Environment",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab185b16ab24e972877d307_6ab185b18b9a45d15d2c4db9_elephant-rescued-sinkhole-kenya-featured-2.webp",
-    "date": "2026-09-22T04:32:33.311Z",
-    "category": "Environment",
-    "refs": [
-      {
-        "id": "1790051455373n0s5yx6a1",
-        "title": "Rangers liberan a elefante de un peligroso sumidero en Kenia"
-      },
-      {
-        "id": "17900514257619dlpca1k8",
-        "title": "Elefantillo huérfano Wangalla rescatado de una manada de cebras en Tsavo East"
-      },
-      {
-        "id": "1790014214783otpoivfi3",
-        "title": "Caballos de Przewalski salvajes nacen en Kazajistán tras 200 años de ausencia"
-      },
-      {
-        "id": "17899196420568hecmtvs3",
-        "title": "Estados estadounidenses ayudan a las mariposas monarca en su camino hacia México"
-      },
-      {
-        "id": "17900514999718iuojtalw",
-        "title": "Granja porcina en Iowa ahora cultiva hongos"
-      }
-    ]
-  },
-  {
-    "id": "17900514999718iuojtalw",
-    "title": "Granja porcina en Iowa ahora cultiva hongos",
-    "summary": "Una granja porcina en el centro de Iowa, que durante décadas crió miles de cerdos para el matadero, ha pasado a cultivar hongos especiales. La familia Faaborg llama a su empresa 1100 Farm, en referencia al número de cerdos que alojaban los establos anteriormente. Venden los hongos, entre ellos lion's mane, en forma de tinturas, mezclas de café y sal...",
-    "image_alt": "Tanner Faaborg posa en su granja en el centro de Iowa donde ahora se cultivan hongos en antiguos establos porcinos",
-    "meta_description": "Granja de Iowa cambia de cerdos a hongos con ayuda de The Transfarmation Project.",
-    "meta_keywords": "cultivo de hongos, granja de Iowa, Transfarmation Project, renovación de establos porcinos, agricultura sostenible, lion's mane",
-    "link": "https://www.npr.org/2026/09/21/nx-s1-5944503/iowa-hog-farm-growing-specialty-mushrooms",
-    "source": "NPR.org",
-    "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1370x771+0+71/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F76%2Ff0%2Fe977506b4da8b313d83bd18dc1d0%2Ftanner-faaborg-1100-farm-web.jpg",
-    "date": "2026-09-22T04:31:41.152Z",
-    "category": "Environment",
-    "score": 8
-  },
-  {
-    "id": "1790051455373n0s5yx6a1",
-    "title": "Rangers liberan a elefante de un peligroso sumidero en Kenia",
-    "summary": "El 25 de febrero, el Kenya Wildlife Service recibió reportes de un elefante toro atrapado hasta los hombros en un sumidero cerca de Chakama, aproximadamente 30 millas tierra adentro del océano Índico. El piloto Roan Carr-Hartley de Sheldrick Wildlife Trust voló al lugar y encontró allí al equipo anti-furtivos Kulalu y el KWS. El agujero era demasiado profundo y empinado...",
-    "image_alt": "Rangers utilizan correas y un vehículo para sacar a un elefante de un sumidero en Kenia",
-    "meta_description": "Rangers de Sheldrick Wildlife Trust liberan a elefante de sumidero en Chakama, Kenia, sin sedación.",
-    "meta_keywords": "elefante, sumidero, Sheldrick Wildlife Trust, Kenya Wildlife Service, Chakama, Great Rift Valley, rescate de elefantes",
-    "link": "https://www.goodgoodgood.co/articles/elephant-rescued-sinkhole-kenya",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab185b16ab24e972877d307_6ab185b18b9a45d15d2c4db9_elephant-rescued-sinkhole-kenya-featured-2.webp",
-    "date": "2026-09-22T04:30:56.272Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "17900514257619dlpca1k8",
-    "title": "Elefantillo huérfano Wangalla rescatado de una manada de cebras en Tsavo East",
-    "summary": "El 4 de noviembre de 2025, el Kenya Wildlife Service recibió una notificación sobre un elefante joven y huérfano en el Tsavo East National Park. Turistas avistaron al animal y proporcionaron su ubicación. Trevor, gerente de operaciones en Tsavo, lideró un equipo de búsqueda que encontró a la cría después de más de una hora en lo profundo de la...",
-    "image_alt": "Una pequeña elefanta llamada Wangalla junto a su cuidador en el santuario Sheldrick Wildlife Trust en Kenia",
-    "meta_description": "La elefantilla huérfana Wangalla fue rescatada de una manada de cebras en Tsavo East y encontró un nuevo hogar en Sheldrick Wildlife Trust.",
-    "meta_keywords": "Wangalla, Sheldrick Wildlife Trust, rescate de elefantes, Tsavo East, Kenya Wildlife Service, elefante huérfano, Misheck",
-    "link": "https://www.goodgoodgood.co/articles/baby-elephant-rescued-zebra-herd",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab196c9d7bede5a31eac123_6ab196c7176d5ce68dc3873f_baby-elephant-rescued-zebra-herd-featured.webp",
-    "date": "2026-09-22T04:30:27.261Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1790051398328zl0crxok4",
-    "title": "Nueva herramienta de IA detecta enfermedades cardíacas mediante ECG convencional",
-    "summary": "Investigadores en el Reino Unido han desarrollado un modelo de IA que puede detectar signos tempranos de enfermedades valvulares cardíacas e insuficiencia cardíaca a través de un ECG estándar. El modelo fue entrenado con millones de pacientes y se probó en 67.000 pacientes en Estados Unidos. En el estudio se identificó el 81% de los casos de insuficiencia cardíaca y...",
-    "image_alt": "Médico observa resultado de ECG en pantalla con análisis de IA de la actividad cardíaca",
-    "meta_description": "Un modelo de IA detecta signos tempranos de insuficiencia cardíaca y enfermedad valvular cardíaca mediante ECG convencional, según un gran estudio presentado en Múnich.",
-    "meta_keywords": "IA, ECG, enfermedad cardíaca, insuficiencia cardíaca, enfermedad valvular cardíaca, cardiología, British Heart Foundation, ecocardiograma",
-    "link": "https://www.goodnewsnetwork.org/new-ai-model-can-detect-heart-disease-markers-in-simple-electrocardiogram-readings-a-breakthrough/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/echocardiogram-Getty-Images-for-Unsplash-.jpg",
-    "date": "2026-09-22T04:30:00.829Z",
-    "category": "Health",
-    "score": 8
-  },
-  {
-    "id": "dg-20260920-science",
-    "type": "digest",
-    "digest_date": "2026-09-20",
-    "title": "Un gato nuevo, arte antiguo y tesoros rescatados: la ciencia mira hacia atrás y hacia adelante",
-    "summary": "En los últimos días, la ciencia demuestra cómo el pasado y el presente se tocan mutuamente. Una especie de gato desconocida aparece en Bolivia, un arte de marfil ancestral resulta haber sido elaborado con más cuidado del que se pensaba, y en Alaska los arqueólogos rescatan tesoros frágiles justo a tiempo. Tres historias muy diferentes, pero todas ellas muestran cuánto hay aún por descubrir y preservar. Comencemos con el gato. En Bolivia se ha identificado por primera vez en más de cien años una nueva especie felina: Leopardus tilcayo [1]. La historia comienza ya en 2016, cuando alguien llevó un...",
-    "image_alt": "Un gato nuevo, arte antiguo y tesoros rescatados: la ciencia mira hacia atrás y hacia adelante",
-    "meta_description": "De una nueva especie felina en Bolivia a tesoros Yup'ik rescatados en Alaska: las noticias científicas positivas de estos días en BrightNews.",
-    "meta_keywords": "Science",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/imrs-e1789720878162.jpg",
-    "date": "2026-09-21T18:13:14.426Z",
-    "category": "Science",
-    "refs": [
-      {
-        "id": "1789791470039iv33h3zat",
-        "title": "Nueva especie felina Tilcayo descubierta en Bolivia"
-      },
-      {
-        "id": "1789965262786z6vu42lzy",
-        "title": "Los humanos primitivos utilizaban patrones de crecimiento del colmillo de mamut para un arte único"
-      },
-      {
-        "id": "1789832772703vb1b4cr0s",
-        "title": "Arqueólogos rescatan hallazgos Yup'ik milenarios en Alaska"
-      }
-    ]
-  },
-  {
-    "id": "dg-20260920-lifestyle",
-    "type": "digest",
-    "digest_date": "2026-09-20",
-    "title": "Vida al aire libre con final feliz: un rescate, una ciclovía completa y familias de acogida leales",
-    "summary": "En estos días, en la categoría de estilo de vida todo gira en torno a estar al aire libre, perseverar y cuidarse mutuamente. Desde un excursionista que contra todo pronóstico es encontrado, hasta una ciclovía que después de treinta años finalmente está lista, y una pareja que durante años ha dado un hogar temporal a perros. Tres historias diferentes, pero todas con el mismo trasfondo: personas que no se rinden y que siguen esforzándose por los demás, humanos o animales. La historia más impactante proviene de Isle Royale National Park, donde Craig Berg, de 70 años, estuvo desaparecido durante once...",
-    "image_alt": "Vida al aire libre con final feliz: un rescate, una ciclovía completa y familias de acogida leales",
-    "meta_description": "Noticias de estilo de vida del 20 de septiembre de 2026: un excursionista rescatado, una ciclovía completada en Minnesota y una pareja que acoge perros.",
-    "meta_keywords": "Lifestyle",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab160ac37a1d4530ef86c2a_6ab160abf3154b9837b18bfe_craig-berg-missing-hiker-found-isle-royale-national-park-featured.webp",
-    "date": "2026-09-21T18:12:01.356Z",
-    "category": "Lifestyle",
-    "refs": [
-      {
-        "id": "1790014241811y3vfaki98",
-        "title": "Excursionista desaparecido Craig Berg rescatado tras 11 días en Isle Royale"
-      },
-      {
-        "id": "1789965311313qeajm49mh",
-        "title": "Mesabi Trail en Minnesota finalmente completado tras 30 años"
-      },
-      {
-        "id": "17899652880376z76s0lap",
-        "title": "Pareja británica acoge a 59 perros tras jubilarse"
-      }
-    ]
-  },
-  {
-    "id": "1790014241811y3vfaki98",
-    "title": "Excursionista desaparecido Craig Berg rescatado tras 11 días en Isle Royale",
-    "summary": "Craig Berg, de 70 años, realizaba una excursión en solitario de nueve días por Isle Royale National Park cuando se desvió del sendero el cuarto día y cayó en un pantano, empaпando su ropa, mochila, comida y teléfono. Durante once días gritó miles de veces pidiendo ayuda y sobrevivió con alimentos liofilizados y agua contaminada. Los equipos de búsqueda ampliaron...",
-    "image_alt": "Equipo de rescate y helicóptero de la Guardia Costera durante la operación de búsqueda del excursionista Craig Berg en Isle Royale",
-    "meta_description": "Craig Berg (70) desaparecido 11 días en Isle Royale, rescatado gracias a cámara de vigilancia y kayakistas tras caída en pantano.",
-    "meta_keywords": "Craig Berg, Isle Royale, excursionista desaparecido, operación de rescate, National Park Service, Guardia Costera, cámara de vigilancia",
-    "link": "https://www.goodgoodgood.co/articles/craig-berg-missing-hiker-found-isle-royale-national-park",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab160ac37a1d4530ef86c2a_6ab160abf3154b9837b18bfe_craig-berg-missing-hiker-found-isle-royale-national-park-featured.webp",
-    "date": "2026-09-21T18:10:43.397Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "1790014214783otpoivfi3",
-    "title": "Caballos de Przewalski salvajes nacen en Kazajistán tras 200 años de ausencia",
-    "summary": "En Kazajistán han nacido dos potros de caballo de Przewalski, los primeros caballos salvajes en territorio kazajo en más de 200 años. El primer potro, un semental, nació el 22 de agosto de la yegua Tessa, de 7 años. El segundo, también un semental, llegó el 31 de agosto de la yegua Umbra. Ambos tienen el mismo padre, el semental...",
-    "image_alt": "Dos caballos de Przewalski salvajes con sus potros en las estepas de Kazajistán",
-    "meta_description": "Dos potros de caballo de Przewalski nacen en Kazajistán: los primeros caballos salvajes allí en más de 200 años.",
-    "meta_keywords": "caballo de Przewalski, Kazajistán, caballos salvajes, Altyn Dala, ACBK, conservación de la naturaleza, reintroducción",
-    "link": "https://www.goodgoodgood.co/articles/wild-przewalskis-horses-born-kazakhstan-200-years",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa971cc857b7976aebc89e3_two-wild-przewalskis-horse-foals-born-in-kazakhstan-after-200-years-01.jpg",
-    "date": "2026-09-21T18:10:16.832Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1790014168286wv6pmjzvd",
-    "title": "Entrenamiento de drones de Corea del Sur evita muertes en inundación de Mozambique",
-    "summary": "En enero, una de las inundaciones más graves en décadas afectó el distrito de Marracuene en Mozambique, después de que el río Incomáti se desbordara. Sin embargo, no hubo víctimas mortales, gracias a un grupo de pilotos de drones capacitados a través del Proyecto de Gestión de Desastres Basado en Drones del Fondo KOAFEC del Banco Africano de Desarrollo. Treinta...",
-    "image_alt": "Piloto de drones controla un dron sobre un área inundada en Marracuene, Mozambique",
-    "meta_description": "Programa de entrenamiento de drones coreano ayuda a Mozambique a sobrevivir inundación sin víctimas mortales.",
-    "meta_keywords": "Mozambique, inundación, drones, Corea del Sur, KOAFEC, gestión de desastres, Banco Africano de Desarrollo, LiDAR",
-    "link": "https://www.goodnewsnetwork.org/korean-drone-rescue-program-helps-mozambique-achieve-zero-fatalities-during-worst-flood-in-decades/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/A-Mozambique-pilot-learns-to-pilot-a-drone-from-an-experienced-South-Korean-operator-credit-African-Development-Bank-released.jpg",
-    "date": "2026-09-21T18:09:31.742Z",
-    "category": "Tech",
-    "score": 9
-  },
-  {
-    "id": "1789965334441fmmtlceew",
-    "title": "Cinco dólares por noche de sueño mejoran las calificaciones de estudiantes",
-    "summary": "Investigadores de la University of Pittsburgh pagaron a más de 1.100 estudiantes a través de una aplicación Fitbit para dormir siete horas por noche. Los 468 estudiantes que recibieron aproximadamente 5 dólares por noche durmieron 26% más noches con sueño suficiente y 19 minutos más por noche escolar que un grupo de control sin pago. Su GPA aumentó ese semestre...",
-    "image_alt": "Estudiante con rastreador de actividad Fitbit durmiendo en la cama",
-    "meta_description": "Estudiantes pagados por dormir 7 horas obtuvieron mejores calificaciones. Investigación de Pittsburgh muestra efecto de incentivos de sueño.",
-    "meta_keywords": "sueño, estudiantes, GPA, Fitbit, University of Pittsburgh, investigación del sueño, incentivo financiero, resultados académicos",
-    "link": "https://www.goodgoodgood.co/articles/researchers-pay-college-students-to-sleep-more",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aad7f471fbf338d1a44c36c_6aad7f45b52f83488b1f588b_researchers-pay-college-students-to-sleep-more-featured.webp",
-    "date": "2026-09-21T04:35:35.883Z",
-    "category": "Health",
-    "score": 10
-  },
-  {
-    "id": "1789965311313qeajm49mh",
-    "title": "Mesabi Trail en Minnesota finalmente completado tras 30 años",
-    "summary": "Tras más de 30 años de planificación, construcción y recaudación de fondos, el Mesabi Trail en Minnesota ha sido oficialmente completado. La ruta asfaltada de 165 millas es así una de las más largas de América. El camino se extiende desde el río Misisipi hasta la naturaleza salvaje de las Boundary Waters, atravesando la Iron Range con sus históricas minas...",
-    "image_alt": "El sendero asfaltado de Mesabi serpentea a través de la boscosa Iron Range en Minnesota",
-    "meta_description": "Tras 30 años, el Mesabi Trail de 165 millas en Minnesota está completado, una de las rutas ciclistas más largas de América.",
-    "meta_keywords": "Mesabi Trail, Minnesota, sendero ciclista, Iron Range, Boundary Waters, Grand Rapids, Ely, IRRRB",
-    "link": "https://www.goodnewsnetwork.org/165mi-bike-trail-through-minnesota-finally-completed-after-30-yrs/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Iron-ridge-Minnesota-Mesabi-Trail-for-bikes-and-cyclists.jpg",
-    "date": "2026-09-21T04:35:12.794Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "17899652880376z76s0lap",
-    "title": "Pareja británica acoge a 59 perros tras jubilarse",
-    "summary": "Nicole y Gary Wordsworth, una pareja británica de sesenta y tantos años, acogen perros desde hace 15 años a través de Battersea Dogs Home en Buckinghamshire. Desde su jubilación, reciben perros a tiempo parcial, desde un husky siberiano hasta un Staffie. La duración de la estancia varía desde algunas noches hasta 18 meses. Su primer perro fue un Staffie llamado...",
-    "image_alt": "Pareja británica de edad avanzada acurrucada con un perro de acogida en su sala de estar",
-    "meta_description": "Pareja británica acoge perros desde hace 15 años a través de Battersea Dogs Home, con 59 perros y contando desde su jubilación.",
-    "meta_keywords": "perros de acogida, Battersea Dogs Home, adopción de perros, pareja jubilada, acogida de mascotas",
-    "link": "https://www.goodnewsnetwork.org/couple-fosters-59-dogs-in-retirement-we-love-to-get-them-out-of-the-kennels/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Dog-foster-parents-w-husky-Credit-Battersea-Dogs-Home-SWNS-.jpeg",
-    "date": "2026-09-21T04:34:49.342Z",
-    "category": "Lifestyle",
-    "score": 8
-  },
-  {
-    "id": "1789965262786z6vu42lzy",
-    "title": "Los humanos primitivos utilizaban patrones de crecimiento del colmillo de mamut para un arte único",
-    "summary": "Científicos han descubierto que los artistas prehistóricos utilizaban las líneas de crecimiento naturales del marfil de mamut como inspiración para las decoraciones en figurillas de Venus de 18.000 años de antigüedad. Una investigación de 18 figurillas de Mizyn, Ucrania, demuestra que las llamadas líneas de Schreger y Owen en los colmillos fueron imitadas deliberadamente en los grabados. El estudio, realizado...",
-    "image_alt": "Una figurilla de Venus de marfil de mamut de 18.000 años de antigüedad con patrones grabados que siguen las líneas de crecimiento naturales del colmillo",
-    "meta_description": "Una investigación demuestra que los artistas prehistóricos utilizaban patrones de crecimiento de colmillos de mamut para figurillas de Venus de Mizyn, Ucrania.",
-    "meta_keywords": "colmillo de mamut, figurillas de Venus, arte de la Edad de Hielo, prehistoria, Mizyn, arqueología, líneas de Schreger, Ucrania",
-    "link": "https://www.goodnewsnetwork.org/cavemen-used-mammoth-tusk-patterns-to-create-unique-art-reveals-new-research/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Ice-Age-craftspeople-mimicked-lines-of-mammoth-ivory-SWNS.jpeg",
-    "date": "2026-09-21T04:34:24.871Z",
-    "category": "Science",
-    "score": 8
-  },
-  {
-    "id": "17899196420568hecmtvs3",
-    "title": "Estados estadounidenses ayudan a las mariposas monarca en su camino hacia México",
-    "summary": "Las mariposas monarca orientales vuelan más de 3.200 kilómetros a través de la parte central de Estados Unidos para pasar el invierno en México. Varios estados participan en un proyecto que ayuda a estos polinizadores durante su largo viaje migratorio hacia el sur.",
-    "image_alt": "Mariposa monarca durante la migración hacia las zonas de invernada en México",
-    "meta_description": "Las mariposas monarca migran miles de kilómetros hacia México. Los estados ayudan a los polinizadores en el camino con un proyecto especial.",
-    "meta_keywords": "mariposas monarca, mariposas migratorias, México, polinizadores, conservación de la naturaleza",
-    "link": "https://www.npr.org/2026/09/20/nx-s1-5973267/monarch-butterflies-are-on-their-way-to-mexico-states-are-helping-them-on-their-way",
-    "source": "NPR.org",
-    "image": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
-    "date": "2026-09-20T15:54:04.352Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "dg-20260919-environment",
-    "type": "digest",
-    "digest_date": "2026-09-19",
-    "title": "Recuperación y crecimiento: de un zorro con muletas a ciudades más verdes",
-    "summary": "Estos días demuestran lo resiliente que puede ser la naturaleza, y cómo las ciudades mismas le echan una mano. Desde un zorro que aprende a nadar para volver a caminar, hasta cangrejos que regresan masivamente a una bahía, y desde un supermercado con huerto en la azotea hasta una avenida estadounidense que recupera su carácter verde. Cuatro historias, un mismo sentimiento: puede mejorar, y ya está sucediendo. En Nottinghamshire, el zorro Chance se recupera tras un accidente que le había paralizado las patas traseras. Gracias a la hidroterapia en una piscina para perros, acompañado por la cuidadora Chelsea, siente cada...",
-    "image_alt": "Recuperación y crecimiento: de un zorro con muletas a ciudades más verdes",
-    "meta_description": "El zorro Chance aprende a nadar, los cangrejos se recuperan y las ciudades se vuelven más verdes: las noticias positivas sobre la naturaleza de estos días ",
-    "meta_keywords": "Environment",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Fox-gets-hydrotherapy-at-Mansfield-Canine-Centre-by-Tom-Maddick-for-SWNS.jpeg",
-    "date": "2026-09-20T04:37:55.385Z",
-    "category": "Environment",
-    "refs": [
-      {
-        "id": "1789878990544agz0dwnv9",
-        "title": "El zorro Chance se recupera gracias a lecciones de natación"
-      },
-      {
-        "id": "1789879018001kzroh4o2p",
-        "title": "Los cangrejos azules de la bahía de Chesapeake se recuperan con fuerza"
-      },
-      {
-        "id": "1789878960689vhpw1qp4x",
-        "title": "Nueva York devuelve a Park Avenue su carácter de parque verde y carril bici"
-      },
-      {
-        "id": "1789748188321cbyjxyyfa",
-        "title": "Supermercado REWE en Berlín tiene huerto en la azotea"
-      }
-    ]
-  },
-  {
-    "id": "1789879018001kzroh4o2p",
-    "title": "Los cangrejos azules de la bahía de Chesapeake se recuperan con fuerza",
-    "summary": "Los conservacionistas ven buenas noticias en la bahía de Chesapeake: el estudio anual de dragado invernal del Maryland DNR y el Virginia Institute of Marine Sciences contabiliza este año 349 millones de cangrejos azules, un aumento del 46% respecto al año anterior y el nivel más alto desde 2019. También el número de cangrejos juveniles, estimado en 228 millones, es...",
-    "image_alt": "Cangrejos azules en la bahía de Chesapeake",
-    "meta_description": "Los cangrejos azules de la bahía de Chesapeake aumentan un 46% hasta 349 millones, nivel más alto desde 2019, gracias a medidas de recuperación.",
-    "meta_keywords": "bahía de Chesapeake, cangrejo azul, recuperación poblacional, Maryland, Virginia, hierba marina, conservación, bagre azul",
-    "link": "https://www.goodnewsnetwork.org/chesapeake-bay-blue-crab-numbers-see-encouraging-bounceback-in-new-survey/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Blue-crabs-by-J-Thomas-vM1Lz1ftMU8-unsplash.jpg",
-    "date": "2026-09-20T04:37:00.095Z",
-    "category": "Environment",
-    "score": 8
-  },
-  {
-    "id": "1789878990544agz0dwnv9",
-    "title": "El zorro Chance se recupera gracias a lecciones de natación",
-    "summary": "Un zorro llamado Chance, que fue atropellado en junio del año pasado en Nottinghamshire y perdió la movilidad de sus patas traseras, se recupera gracias a la hidroterapia. Un transeúnte dio la alarma después de que el animal hubiera estado herido varios días. Un veterinario temía al principio que Chance tuviera que ser sacrificado, pero los rescatistas de fauna silvestre...",
-    "image_alt": "Un zorro joven es guiado durante una sesión de hidroterapia en una piscina para perros",
-    "meta_description": "El zorro Chance se recupera tras sesiones de hidroterapia en piscina y tiene oportunidad de volver a la naturaleza.",
-    "meta_keywords": "zorro, Chance, hidroterapia, wildlife rescue, Mansfield, rehabilitación animal, animal atropellado",
-    "link": "https://www.goodnewsnetwork.org/fox-left-for-dead-on-road-is-recovering-thanks-to-swim-lessons/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Fox-gets-hydrotherapy-at-Mansfield-Canine-Centre-by-Tom-Maddick-for-SWNS.jpeg",
-    "date": "2026-09-20T04:36:31.937Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1789878960689vhpw1qp4x",
-    "title": "Nueva York devuelve a Park Avenue su carácter de parque verde y carril bici",
-    "summary": "Nueva York ha revelado un nuevo plan para devolver Park Avenue a su carácter verde original. La alcaldesa Mamdani y el NYC Department of Transportation renovarán 11 cuadras de la calle, desde la calle 46 hasta la 57, basándose en comentarios de residentes que solicitaban más espacios verdes y seguridad para ciclistas. El diseño amplía la mediana central con bancos,...",
-    "image_alt": "Diseño de Park Avenue con mediana verde, bancos y carril bici protegido en Nueva York",
-    "meta_description": "Nueva York transforma Park Avenue con medianas verdes y un carril bici protegido en 11 cuadras.",
-    "meta_keywords": "Park Avenue, Nueva York, carril bici, espacio verde, Mamdani, NYC DOT, Grand Central Terminal",
-    "link": "https://www.goodnewsnetwork.org/new-york-city-is-putting-the-park-back-in-park-avenue/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Park-Avenue-redesign-in-NYC-Credit-Starr-Whitehouse-Landscape-Architects-and-Planners.jpeg",
-    "date": "2026-09-20T04:36:03.452Z",
-    "category": "Environment",
-    "score": 8
-  },
-  {
-    "id": "1789832772703vb1b4cr0s",
-    "title": "Arqueólogos rescatan hallazgos Yup'ik milenarios en Alaska",
-    "summary": "Tras la tormenta originada por los restos del Tifón Halong el año pasado, miles de objetos milenarios fueron arrastrados desde el sitio de excavación Nunalleq cerca del pueblo de Quinhagak en Alaska. La residente Jenny Matthew encontró junto a su marido un cuenco de madera de entre 400 y 600 años de antigüedad. La tormenta dañó casas e infraestructura, y...",
-    "image_alt": "Arqueólogos y voluntarios buscan artefactos en el suelo del sitio de excavación Nunalleq cerca de Quinhagak, Alaska",
-    "meta_description": "Arqueólogos rescatan artefactos Yup'ik milenarios en Alaska tras daños de tormenta en el sitio Nunalleq.",
-    "meta_keywords": "Alaska, arqueología, Nunalleq, Yup'ik, Quinhagak, Tifón Halong, excavación, patrimonio cultural",
-    "link": "https://www.npr.org/2026/09/19/nx-s1-5966568/ex-typhoon-halong-nunallaq-artifacts-archaeological-dig-site-alaska-quinhagak",
-    "source": "NPR.org",
-    "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/9504x5346+0+495/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe2%2F83%2Faa1de52e4126830ea0e403eb8347%2F260608-mcdolan-nunalleq-09374.jpg",
-    "date": "2026-09-19T15:46:16.127Z",
-    "category": "Science",
-    "score": 8
-  },
-  {
-    "id": "dg-20260918-environment",
-    "type": "digest",
-    "digest_date": "2026-09-18",
-    "title": "Calles verdes, elefantes salvados y telas más limpias: las buenas noticias de la semana",
-    "summary": "Estos días demuestran que el progreso surge en lugares muy diversos: en un nuevo barrio, en la sabana, en una fábrica e incluso en un huerto. En todos los casos se trata de personas que idean algo que beneficia a la naturaleza, sin que la vida de las personas se vea perjudicada. En Toronto, esta idea toma forma literal. El barrio Ookwemin Minising reemplaza calles por parques y plazas, con Centre Commons como punto central: una ruta sin automóviles de 800 metros de largo con 400 árboles [1]. Las calles laterales siguen siendo accesibles para el tráfico, pero están diseñadas...",
-    "image_alt": "Calles verdes, elefantes salvados y telas más limpias: las buenas noticias de la semana",
-    "meta_description": "Nuevo barrio sin automóviles, elefante rescatado, tinte textil limpio y salvación genética para naranjos: las noticias ambientales positivas de estos días.",
-    "meta_keywords": "Environment",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aad79c22cbab444028063e1_6aad79c1ea4980ddc604f229_toronto-car-free-neighborhood-canada-ookwemin-minising-featured.webp",
-    "date": "2026-09-19T04:19:36.001Z",
-    "category": "Environment",
-    "refs": [
-      {
-        "id": "1789791521381pbrbcl1ls",
-        "title": "Toronto construye el barrio Ookwemin Minising con la calle sin autos más larga de Canadá"
-      },
-      {
-        "id": "1789791496249m76kxgprk",
-        "title": "Rangers rescatan a elefantita de 90 kilos de una pila de agua"
-      },
-      {
-        "id": "1789791445109brgtr24rs",
-        "title": "EverDye tiñe textiles con electricidad estática, sin agua"
-      },
-      {
-        "id": "1789748270317253ol1xnl",
-        "title": "La edición genética debe salvar los naranjos de Florida del huanglongbing"
-      },
-      {
-        "id": "1789748322371e4xhx0z9a",
-        "title": "The Book of Birds gana el Wainwright Prize 2026"
-      }
-    ]
-  },
-  {
-    "id": "1789791521381pbrbcl1ls",
-    "title": "Toronto construye el barrio Ookwemin Minising con la calle sin autos más larga de Canadá",
-    "summary": "Toronto desarrolla el nuevo barrio Ookwemin Minising, donde las calles se transforman en parques y plazas. Centre Commons, una ruta peatonal de 800 metros con 400 árboles, se presenta como la zona sin autos más larga y ambiciosa de Canadá, operativa todo el año. Las calles laterales sí permiten tráfico, pero priorizan el verde y funcionan como infraestructura climática: capturan...",
-    "image_alt": "Impresión de diseño de la calle principal verde y sin autos Centre Commons en el nuevo barrio torontoniano Ookwemin Minising",
-    "meta_description": "El nuevo barrio torontoniano Ookwemin Minising tendrá la calle sin autos más larga de Canadá, llena de verde, árboles e infraestructura climática.",
-    "meta_keywords": "Ookwemin Minising, Toronto, Centre Commons, calle sin autos, urbanismo verde, Growing Streets, infraestructura climática, desarrollo urbano",
-    "link": "https://www.goodgoodgood.co/articles/toronto-car-free-neighborhood-canada-ookwemin-minising",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aad79c22cbab444028063e1_6aad79c1ea4980ddc604f229_toronto-car-free-neighborhood-canada-ookwemin-minising-featured.webp",
-    "date": "2026-09-19T04:18:43.063Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1789791496249m76kxgprk",
-    "title": "Rangers rescatan a elefantita de 90 kilos de una pila de agua",
-    "summary": "La Sheldrick Wildlife Trust, activa desde 1977 en África Oriental, rescató el pasado septiembre a una elefantita atrapada en una pila de agua construida por humanos. La madre estaba cerca, angustiada, pero no podía ayudar. Los rangers se acercaron lo máximo posible a la pila y tocaron la bocina y aceleraron para ganar tiempo sin ahuyentar demasiado a la madre....",
-    "image_alt": "Rangers de Sheldrick Wildlife Trust ayudan a una elefantita a salir de una pila de agua mientras la madre observa",
-    "meta_description": "Rangers rescatan a una elefantita atrapada de una pila de agua y la reúnen con su madre que la espera.",
-    "meta_keywords": "Sheldrick Wildlife Trust, elefantita, rescate de elefantes, África Oriental, Orphans Project, conservación de vida silvestre",
-    "link": "https://www.goodgoodgood.co/articles/baby-elephant-rescued-watering-hole-mother",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aad8b4e7b68717ee32cf224_6aad8b4d1bf774aeccc70190_baby-elephant-rescued-watering-hole-mother-featured.webp",
-    "date": "2026-09-19T04:18:17.283Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1789791470039iv33h3zat",
-    "title": "Nueva especie felina Tilcayo descubierta en Bolivia",
-    "summary": "Por primera vez en más de cien años se ha identificado una nueva especie felina: Leopardus tilcayo, hallada en Bolivia. La historia comenzó en 2016 cuando un hombre llevó un «gato extraño» a un refugio de animales. La bióloga Paola Nogales-Ascarrunz del Bolivian Felids Research Program reconoció el animal como especial, con largos bigotes, orejas pequeñas y grandes rosetas. Inicialmente...",
-    "image_alt": "Pequeño gato salvaje con rosetas en el pelaje en el bosque de Yungas en Bolivia",
-    "meta_description": "Nueva especie felina Leopardus tilcayo descubierta en Bolivia, primera especie felina nueva desde 1923.",
-    "meta_keywords": "Tilcayo, Leopardus tilcayo, nueva especie felina, Bolivia, National Geographic, gato salvaje, Yungas, investigación genética",
-    "link": "https://www.goodnewsnetwork.org/new-cat-species-identified-for-the-first-time-in-over-100-years-meet-the-tilcayo/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/imrs-e1789720878162.jpg",
-    "date": "2026-09-19T04:17:51.774Z",
-    "category": "Science",
-    "score": 9
-  },
-  {
-    "id": "1789791445109brgtr24rs",
-    "title": "EverDye tiñe textiles con electricidad estática, sin agua",
-    "summary": "La startup francesa EverDye ha desarrollado un tinte textil no tóxico que se adhiere a los tejidos mediante electricidad estática, en lugar de agua hirviendo y fijadores químicos. Los pigmentos cargados positivamente, basados en residuos biológicos y minerales, se unen a temperatura ambiente a textiles pretratados con carga negativa. Esto reduce los costos energéticos en un 800% y el consumo...",
-    "image_alt": "Rollos de textiles teñidos producidos con el método de teñido electrostático de EverDye",
-    "meta_description": "EverDye tiñe textiles con electricidad estática: menos agua, energía y contaminación, sin pérdida de calidad.",
-    "meta_keywords": "EverDye, tinte textil, moda sostenible, tinte electrostático, ahorro de agua, industria textil, colorantes ecológicos",
-    "link": "https://www.goodnewsnetwork.org/companys-textile-dyes-work-through-magnetism-cutting-fashions-water-use-energy-and-pollution/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/credit-EverDye-e1789761780757.jpg",
-    "date": "2026-09-19T04:17:27.855Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "dg-20260917-science",
-    "type": "digest",
-    "digest_date": "2026-09-17",
-    "title": "Satélites, un chimpancé y huellas antiguas: la ciencia de esta semana",
-    "summary": "Esta semana demuestra lo amplio que puede ser el alcance de la ciencia: observar la tierra desde el espacio, presenciar la recuperación de un viejo amigo y explorar huellas de un pasado remoto. Desde un satélite lanzado hasta una tumba redescubierta e incluso las pisadas de un T. rex: en todas partes la paciencia y el trabajo cuidadoso conducen a resultados extraordinarios. El 15 de septiembre, los satélites Sentinel-3C y FLEX despegaron juntos a bordo de un cohete Vega-C desde French Guiana [1]. Sentinel-3C mide, entre otras cosas, las temperaturas del mar y la tierra, y ayuda a detectar floraciones...",
-    "image_alt": "Satélites, un chimpancé y huellas antiguas: la ciencia de esta semana",
-    "meta_description": "Satélites para el clima, un chimpancé que vuelve a ver, una tumba antigua en Perú y huellas de T. rex: las noticias científicas de esta semana.",
-    "meta_keywords": "Science",
-    "link": "",
-    "source": "BrightNews",
-    "image": "/assets/fallback/science-2.jpg",
-    "date": "2026-09-18T16:19:35.817Z",
-    "category": "Science",
-    "refs": [
-      {
-        "id": "1789748294620m3jjyiit8",
-        "title": "Satélites Sentinel-3C y FLEX lanzados para estudiar la tierra"
-      },
-      {
-        "id": "1789748141932lspr4jani",
-        "title": "Una operación de cataratas devuelve la vista al chimpancé Pierre (54)"
-      },
-      {
-        "id": "1789748111526c04fkqo0w",
-        "title": "Tumba intacta chimú descubierta en Chan Chan, Perú"
-      },
-      {
-        "id": "1789585765262uc56lz1sv",
-        "title": "Primer rastro de T. rex adulto descubierto en North Dakota"
-      }
-    ]
-  },
-  {
-    "id": "1789748322371e4xhx0z9a",
-    "title": "The Book of Birds gana el Wainwright Prize 2026",
-    "summary": "The Book of Birds de Jackie Morris y Robert Macfarlane ha sido galardonado con el Wainwright Prize Book of the Year 2026. El premio, la distinción más importante de Gran Bretaña para la literatura de naturaleza y medio ambiente, fue entregado durante una ceremonia en la Elmley Nature Reserve en Kent. El jurado describió el libro como „un libro hermoso...",
-    "image_alt": "Los libros ganadores del Wainwright Prize 2026, incluido The Book of Birds, durante la ceremonia de entrega de premios",
-    "meta_description": "The Book of Birds gana el Wainwright Prize 2026, el principal premio de escritura de naturaleza de Gran Bretaña, en ceremonia en Kent.",
-    "meta_keywords": "Wainwright Prize, The Book of Birds, Jackie Morris, Robert Macfarlane, escritura de naturaleza, aves, conservación, Otherlands",
-    "link": "https://theecologist.org/2026/sep/18/bird-book-tops-pecking-order",
-    "source": "Theecologist.org",
-    "image": "https://theecologist.org/sites/default/files/styles/facebook/public/2026-09/photography_credit_-_urszula_soltys.jpg?h=790be497&amp;itok=uip-qwBZ",
-    "date": "2026-09-18T16:18:43.902Z",
-    "category": "Environment",
-    "score": 8
-  },
-  {
-    "id": "1789748294620m3jjyiit8",
-    "title": "Satélites Sentinel-3C y FLEX lanzados para estudiar la tierra",
-    "summary": "Dos satélites europeos con importantes contribuciones británicas han sido lanzados con éxito para monitorear la salud del planeta y comprender mejor el cambio climático. Sentinel-3C y la misión FLEX de la Agencia Espacial Europea despegaron juntos a bordo de un cohete Vega-C desde la Guayana Francesa el 15 de septiembre de 2026. Sentinel-3C, parte del programa Copernicus, mide las temperaturas...",
-    "image_alt": "Cohete Vega-C lanza Sentinel-3C y satélites FLEX desde la Guayana Francesa",
-    "meta_description": "Sentinel-3C y FLEX lanzados: satélites europeos con contribución del Reino Unido monitorean la tierra y el cambio climático.",
-    "meta_keywords": "Sentinel-3C, FLEX, Copernicus, observación de la tierra, cambio climático, satélite, ESA, Vega-C",
-    "link": "https://www.openaccessgovernment.org/sentinel-3c-and-flex-satellites-launch-to-study-earth/214481/",
-    "source": "Openaccessgovernment.org",
-    "image": "/assets/fallback/science-2.jpg",
-    "date": "2026-09-18T16:18:15.659Z",
-    "category": "Science",
-    "score": 9
-  },
-  {
-    "id": "1789748270317253ol1xnl",
-    "title": "La edición genética debe salvar los naranjos de Florida del huanglongbing",
-    "summary": "La industria cítrica de Florida lleva años azotada por el huanglongbing, una infección bacteriana propagada por un pequeño insecto, el psílido asiático de los cítricos. La enfermedad debilita el sistema inmunológico de los árboles, lo que provoca que produzcan frutos amargos y mueran después de unos años. No existe cura. La empresa Soilcea, con sede en Tampa, desarrolló con tecnología...",
-    "image_alt": "Un inspector de la Florida Division of Plant Industry examina un naranjo para detectar el psílido asiático de los cítricos, el insecto que propaga el huanglongbing.",
-    "meta_description": "La edición genética con CRISPR ofrece nueva esperanza a la industria cítrica de Florida contra la enfermedad mortal del huanglongbing.",
-    "meta_keywords": "huanglongbing, CRISPR, edición genética, Florida, industria cítrica, Soilcea, patrón de injerto, psílido asiático de los cítricos",
-    "link": "https://www.npr.org/2026/09/18/nx-s1-5966501/trees-gene-editing-florida-citrus-industry",
-    "source": "NPR.org",
-    "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F28%2Fcc%2F39535a08424295524ffc4bb39d6d%2Fgettyimages-168672681.jpg",
-    "date": "2026-09-18T16:17:52.214Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "17897482454609nk17tmq1",
-    "title": "Senior Bridge: viviendas contenedor para adultos mayores sin hogar en Phoenix",
-    "summary": "En marzo abrió en Phoenix, Arizona el proyecto Senior Bridge: 40 estudios independientes construidos con contenedores de envío para personas sin hogar de 55 años o más. Los adultos mayores forman un grupo de población sin hogar de rápido crecimiento y ocupan aproximadamente el 40% de las camas de alojamiento de emergencia en Central Arizona Shelter Services. Las unidades de...",
-    "image_alt": "Fila de pequeñas viviendas construidas con contenedores de envío en el proyecto Senior Bridge para adultos mayores sin hogar en Phoenix.",
-    "meta_description": "Senior Bridge en Phoenix ofrece a adultos mayores sin hogar viviendas sostenibles en contenedores con energía solar y orientación hacia vivienda permanente.",
-    "meta_keywords": "Senior Bridge, adultos mayores sin hogar, viviendas contenedor, Phoenix, Mercy House, vivienda sostenible, alojamiento para personas sin hogar",
-    "link": "https://www.goodgoodgood.co/articles/phoenix-arizona-senior-bridge-shipping-container-housing",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aac212eabb06d2c1e768501_6aac212c09582c130a6f0d6a_phoenix-arizona-senior-bridge-shipping-container-housing-featured.webp",
-    "date": "2026-09-18T16:17:27.266Z",
-    "category": "Lifestyle",
-    "score": 10
-  },
-  {
-    "id": "1789748212479vifr7qzve",
-    "title": "La cafetería Heretic Coffee quiere construir un café gratuito «Department of Peace» en Gaza",
-    "summary": "Heretic Coffee de Portland, Oregón, que desde el 1 de noviembre del año pasado sirve desayuno gratuito diariamente a estadounidenses que perdieron su prestación SNAP, amplía su misión hacia Gaza. El propietario Josh White anunció el 18 de septiembre que la cafetería colabora con Humanite Peace Collective para construir una cafetería gratuita en Gaza Occidental, llamada «The Department of Peace»....",
-    "image_alt": "La cafetería Heretic Coffee de Portland anuncia plan para café gratuito en Gaza",
-    "meta_description": "La cafetería Heretic Coffee de Portland quiere construir un café gratuito «Department of Peace» en Gaza, tras un año de comidas gratis en EE.UU.",
-    "meta_keywords": "Heretic Coffee, Gaza, Department of Peace, Portland, SNAP, Humanite Peace Collective, comidas gratuitas",
-    "link": "https://www.goodgoodgood.co/articles/heretic-coffee-shop-portland-gaza-palestine-free-food",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aad3c287e2f97d3ffb24b73_6aad3c271926ad27c87ef0d8_heretic-coffee-gaza-palestine-free-food-featured.webp",
-    "date": "2026-09-18T16:16:54.319Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "1789748188321cbyjxyyfa",
-    "title": "Supermercado REWE en Berlín tiene huerto en la azotea",
-    "summary": "En el supermercado REWE de Lankwitz, en Berlín, se cultiva lechuga en un huerto situado directamente encima de la planta de ventas. La lechuga se cosecha, se empaqueta a mano y se baja antes de que lleguen la mayoría de los clientes. La tienda fue construida especialmente pensando en la granja, con lucernarios que permiten a los clientes mirar hacia...",
-    "image_alt": "Huerto en la azotea con plantas de lechuga encima de un supermercado REWE en Berlín",
-    "meta_description": "Supermercado REWE en Berlín cultiva lechuga en la azotea, directamente encima de la tienda, sin transporte adicional.",
-    "meta_keywords": "REWE, huerto en azotea, hidroponía, agricultura urbana, Berlín, supermercado, alimentos locales",
-    "link": "https://www.optimistdaily.com/2026/09/berlins-rewe-supermarket-the-grocery-store-with-a-working-rooftop-farm/",
-    "source": "OptimistDaily.com",
-    "image": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_886578344_S.jpg",
-    "date": "2026-09-18T16:16:30.551Z",
-    "category": "Environment",
-    "score": 8
-  },
-  {
-    "id": "1789748141932lspr4jani",
-    "title": "Una operación de cataratas devuelve la vista al chimpancé Pierre (54)",
-    "summary": "Pierre, un chimpancé de 54 años en Chimp Haven, el mayor santuario de chimpancés del mundo, había quedado completamente ciego por cataratas. Los cuidadores lo prepararon durante meses para una operación: mediante refuerzo positivo, Pierre aprendió, mientras aún estaba ciego, a ofrecer voluntariamente sus ojos para recibir cuidados como gotas oftálmicas. La doctora Kenneth Pierce realizó posteriormente la primera operación...",
-    "image_alt": "El chimpancé Pierre vuelve a ver tras una operación de cataratas exitosa en Chimp Haven",
-    "meta_description": "El chimpancé Pierre (54) recupera la vista tras operación de cataratas en Chimp Haven, el mayor santuario de chimpancés del mundo.",
-    "meta_keywords": "operación de cataratas, chimpancé, Chimp Haven, Pierre, cuidado animal, oftalmólogo, bienestar animal",
-    "link": "https://www.goodnewsnetwork.org/cataract-surgery-restores-sight-for-54-year-old-chimpanzee-the-first-such-procedure-at-chimp-haven/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Pierre-the-Chimp-recovering-from-cataract-surgery-credit-Chimp-Haven-supplied.jpg",
-    "date": "2026-09-18T16:15:43.537Z",
-    "category": "Science",
-    "score": 9
-  },
-  {
-    "id": "1789748111526c04fkqo0w",
-    "title": "Tumba intacta chimú descubierta en Chan Chan, Perú",
-    "summary": "En la zona de patrimonio UNESCO Chan Chan, en Perú, se ha desenterrado una tumba intacta y hasta ahora desconocida de la civilización chimú. La tumba, ubicada en el complejo palaciego Utzh An, contiene 38 esqueletos y numerosos ajuares funerarios. Al pie de una escalera se encuentra un mausoleo con un individuo cuyo cráneo presenta rastros de pigmento rojo. Dos...",
-    "image_alt": "Excavación de una tumba chimú intacta en el complejo palaciego Utzh An, Chan Chan, Perú",
-    "meta_description": "Tumba chimú intacta de 600 años descubierta en Chan Chan, Perú, con 38 esqueletos y ricos ajuares.",
-    "meta_keywords": "Chan Chan, chimú, Perú, tumba, arqueología, Utzh An, UNESCO, Jorge Meneses, Gabriel Prieto",
-    "link": "https://www.goodnewsnetwork.org/unsealed-for-the-first-time-this-600-yo-tomb-in-peru-was-just-declared-the-discovery-of-the-decade/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/The-newly-discovered-tomb-seen-in-the-center-©-ANDINA-Editora-Peru.jpg",
-    "date": "2026-09-18T16:15:14.368Z",
-    "category": "Science",
-    "score": 9
-  },
-  {
-    "id": "dg-20260917-environment",
-    "type": "digest",
-    "digest_date": "2026-09-17",
-    "title": "De 51 soluciones al cuidado de hongos y un cantautor que rescata zorros: las noticias ambientales de esta semana",
-    "summary": "Esta semana demuestra que el cambio positivo para el medio ambiente ocurre en muchos niveles simultáneamente: desde tratados mundiales hasta un cantautor que rescata zorros. Investigadores de la University of Exeter y el Earthshot Prize han identificado 51 soluciones que, según ellos, podrían cambiar positivamente el rumbo de la tierra. Algunas, como los coches eléctricos en Noruega y la energía solar, ya han alcanzado ese punto de inflexión. Otras, como la compra de cacao y soja libres de deforestación, los combustibles de cocina limpios y las áreas marinas protegidas, aún están en sus inicios. El nuevo Tratado sobre la Alta...",
-    "image_alt": "De 51 soluciones al cuidado de hongos y un cantautor que rescata zorros: las noticias ambientales de esta semana",
-    "meta_description": "De 51 soluciones ambientales a la protección de hongos y un cantautor que rescata zorros: las noticias de naturaleza positivas de los últimos días.",
-    "meta_keywords": "Environment",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://www.positive.news/wp-content/uploads/2026/09/iStock-178586669.jpeg",
-    "date": "2026-09-18T04:22:00.558Z",
-    "category": "Environment",
-    "refs": [
-      {
-        "id": "1789705236616wamg3fbav",
-        "title": "51 soluciones ambientales pueden hacer que la tierra cambie de rumbo"
-      },
-      {
-        "id": "17896637160761haxz39w5",
-        "title": "Los hongos obtienen estatus de protección mundial como «Funga»"
-      },
-      {
-        "id": "1789588160154ngrxcj868",
-        "title": "Resurgence & Ecologist celebra 60 años en Oxford"
-      },
-      {
-        "id": "17895875828712qxnyoryw",
-        "title": "Trout Unlimited obtiene el primer permiso para remediación de la mina Bodie en Washington"
-      },
-      {
-        "id": "1789587552474wo3kl3iu6",
-        "title": "Compositora de Nashville rescata zorros de la sarna"
-      }
-    ]
-  },
-  {
-    "id": "1789705236616wamg3fbav",
-    "title": "51 soluciones ambientales pueden hacer que la tierra cambie de rumbo",
-    "summary": "Investigadores del grupo Green Futures Solutions de la University of Exeter y el Earthshot Prize han identificado 51 soluciones ambientales listas para usar que, según ellos, con el apoyo adecuado, pueden desencadenar una ola irreversible de cambio positivo. Algunas soluciones, como el auge de los vehículos eléctricos en Noruega y el crecimiento mundial de la energía solar, ya han alcanzado...",
-    "image_alt": "Ilustración de soluciones ambientales mundiales como energía solar, protección forestal y cocinas limpias",
-    "meta_description": "Investigadores citan 51 soluciones ambientales que pueden provocar una reacción en cadena positiva e irreversible para el clima.",
-    "meta_keywords": "puntos de inflexión positivos, soluciones ambientales, deforestación, combustibles de cocina limpios, áreas marinas protegidas, Earthshot Prize, University of Exeter",
-    "link": "https://www.positive.news/society/51-ways-to-get-the-planet-tipping-the-right-way/",
-    "source": "Positive.News",
-    "image": "https://www.positive.news/wp-content/uploads/2026/09/iStock-178586669.jpeg",
-    "date": "2026-09-18T04:20:39.394Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "dg-20260916-health",
-    "type": "digest",
-    "digest_date": "2026-09-16",
-    "title": "Cuidado atento: de clínicas afganas a una prueba contra conmociones cerebrales",
-    "summary": "En estos días destaca cuántas veces la buena atención médica depende de actuar en el momento adecuado. Ya sea un parto en una aldea remota, la atención de una madre después de un parto difícil, o una prueba rápida en jóvenes deportistas: en todas partes queda claro que la intervención oportuna puede salvar vidas. Los tres reportajes de los últimos días muestran cuán variada puede ser esa atención, y cómo las personas en todo el mundo marcan la diferencia en ella. En Afganistán, uno de los países más peligrosos para ser madre, las llamadas family health houses ofrecen ayuda en...",
-    "image_alt": "Cuidado atento: de clínicas afganas a una prueba contra conmociones cerebrales",
-    "meta_description": "De comadronas en Afganistán a una prueba de conmoción cerebral de estudiantes de Harvard: las noticias de salud positivas de los últimos días resumidas.",
-    "meta_keywords": "Health",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://reasonstobecheerful.world/wp-content/uploads/2026/09/1000082074.jpg-1-scaled.jpeg",
-    "date": "2026-09-17T16:50:20.800Z",
-    "category": "Health",
-    "refs": [
-      {
-        "id": "178958809918291v7k5ka4",
-        "title": "Las casas de salud familiar afganas salvan a madres y bebés"
-      },
-      {
-        "id": "1789587795217koeu9678p",
-        "title": "Tatyana Ali se compromete con la salud materna de mujeres negras e indígenas"
-      },
-      {
-        "id": "178966363559407hk5irik",
-        "title": "Estudiantes de Harvard ganan el Dyson Award con prueba de conmoción cerebral"
-      }
-    ]
-  },
-  {
-    "id": "17896637160761haxz39w5",
-    "title": "Los hongos obtienen estatus de protección mundial como «Funga»",
-    "summary": "Científicos y la Fungi Foundation se esfuerzan por lograr que los hongos sean reconocidos como una categoría separada junto a la flora y la fauna, a través de la propuesta 3F (Flora, Fauna, Funga). Aproximadamente el 90 por ciento de los sistemas de hongos subterráneos más diversos carecen actualmente de protección, mientras que los hongos son esenciales para el almacenamiento...",
-    "image_alt": "Una caja con hongos de la colección de manejo del Fungarium de Kew Gardens en Londres",
-    "meta_description": "Científicos abogan por el reconocimiento de los hongos como un reino separado junto a la flora y la fauna, crucial para el clima y la biodiversidad.",
-    "meta_keywords": "hongos, funga, Fungi Foundation, propuesta 3F, biodiversidad, Fungal Conservation Pledge, micología, Cambridge Dictionary",
-    "link": "https://theecologist.org/2026/sep/17/scientists-push-fungi-protection",
-    "source": "Theecologist.org",
-    "image": "https://theecologist.org/sites/default/files/styles/facebook/public/2026-09/gettyimages-2215220506.jpg?h=0fd06656&amp;itok=BRAMWEO3",
-    "date": "2026-09-17T16:48:37.598Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1789663690801lle8wvp1r",
-    "title": "Casas BioHome 3D impresas en 3D con residuos de madera reciben nueve viviendas piloto en Maine",
-    "summary": "Investigadores del Advanced Structures and Composites Center de la University of Maine colaboran con la organización sin fines de lucro Penquis en nueve viviendas BioHome3D en la región de Greater Bangor. Las casas se imprimen en 3D con resina biológica fabricada a partir de residuos de madera de aserraderos locales. El proyecto, financiado con 4 millones de dólares en Congressionally...",
-    "image_alt": "Una casa BioHome3D impresa en 3D hecha con residuos de madera de aserraderos locales en Maine",
-    "meta_description": "Nueve BioHomes impresas en 3D con residuos de madera surgen en Maine como piloto para construcción de viviendas más rápida y asequible.",
-    "meta_keywords": "casas impresas en 3D, BioHome3D, University of Maine, residuos de madera, viviendas asequibles, construcción sostenible, Penquis",
-    "link": "https://www.goodgoodgood.co/articles/maine-biohome-3d-printed-housing",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aac15fdc744413f58419284_6aac15fca5f1bfacb0a31b05_maine-biohome-3d-printed-housing-featured.webp",
-    "date": "2026-09-17T16:48:11.891Z",
-    "category": "Tech",
-    "score": 9
-  },
-  {
-    "id": "1789663660786v9l3a8ldh",
-    "title": "El mayor transbordador eléctrico Hull 096 cruza el océano",
-    "summary": "El Hull 096, construido por el astillero Incat en Hobart, Tasmania, ha llegado a aguas sudamericanas tras atravesar el océano Pacífico. El transbordador de 130 metros de largo, originalmente encargado en 2019 como buque diésel por la empresa de transporte Buquebus, fue rediseñado durante la pandemia como un barco completamente eléctrico, convirtiéndose así en el vehículo eléctrico más grande jamás...",
-    "image_alt": "El gran transbordador eléctrico Hull 096 durante su llegada a Sudamérica",
-    "meta_description": "El Hull 096, el mayor transbordador eléctrico del mundo, llega tras cruzar el océano para prestar servicio entre Uruguay y Argentina.",
-    "meta_keywords": "transbordador eléctrico, Hull 096, Incat, Buquebus, China Zorrilla, Río de la Plata, buque de propulsión eléctrica por batería",
-    "link": "https://www.optimistdaily.com/2026/09/the-worlds-largest-battery-electric-ferry-just-crossed-an-ocean/",
-    "source": "OptimistDaily.com",
-    "image": "https://www.optimistdaily.com/wp-content/uploads/HSC_China_Zorrilla_at_Incat_June_2025_2.jpg",
-    "date": "2026-09-17T16:47:42.380Z",
-    "category": "General",
-    "score": 9
-  },
-  {
-    "id": "178966363559407hk5irik",
-    "title": "Estudiantes de Harvard ganan el Dyson Award con prueba de conmoción cerebral",
-    "summary": "Tres estudiantes de Harvard —Radhika Saran, Cleo Pontone y Sophia DeVito— ganaron el James Dyson Award 2026 para Estados Unidos con su invento «Rumble Rims». Se trata de un casco de seguimiento ocular asequible que permite a las escuelas detectar rápidamente conmociones cerebrales en jóvenes deportistas en 2 o 3 minutos. El casco utiliza luz infrarroja invisible y hace que...",
-    "image_alt": "Un entrenador prueba el casco de seguimiento ocular Rumble Rims con un joven deportista en el campo de juego.",
-    "meta_description": "Estudiantes de Harvard ganan James Dyson Award con Rumble Rims: un casco que detecta rápidamente conmociones cerebrales en jóvenes deportistas.",
-    "meta_keywords": "Rumble Rims, conmoción cerebral, James Dyson Award, Harvard, seguimiento ocular, deporte juvenil, conmoción, seguridad deportiva",
-    "link": "https://www.goodnewsnetwork.org/students-win-james-dyson-award-for-device-that-screens-students-for-concussions-in-just-60-seconds/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Radhika-Saran-Cleo-Pontone-and-Sophia-DeVito-inventors-of-Rumble-Rims-credit-James-Dyson-Award-released-to-the-media.jpg",
-    "date": "2026-09-17T16:47:18.099Z",
-    "category": "Health",
-    "score": 9
-  },
-  {
-    "id": "dg-20260916-science",
-    "type": "digest",
-    "digest_date": "2026-09-16",
-    "title": "Pequeños descubrimientos, gran viaje: la ciencia de los últimos días",
-    "summary": "A veces, la gran noticia se esconde en el detalle más pequeño. Esta semana, la ciencia demuestra cómo investigadores de todo el mundo siguen observando, escuchando y midiendo con paciencia, desde una oruga sin orejas hasta una nave espacial que finalmente llega después de años. Las historias son variadas, pero comparten una cosa: la atención que al final produce algo hermoso. Tomemos los escribanos de pecho amarillo de Alaska [1]. Estos pájaros cantores son demasiado pequeños para llevar transmisores pesados, así que recibieron geolocalizadores diminutos, no más grandes que un Tic Tac. Estos miden la presión del aire y la...",
-    "image_alt": "Pequeños descubrimientos, gran viaje: la ciencia de los últimos días",
-    "meta_description": "De geolocalizadores en pájaros cantores hasta BepiColombo en Mercurio: las noticias científicas de los últimos días, resumidas de forma ligera y esperanzad",
-    "meta_keywords": "Science",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa03f638060be9fa448829d_6aa03f5f48a9fbea52c6b9f9_tiny-backpacks-bird-migration-study-featured.webp",
-    "date": "2026-09-17T04:37:56.919Z",
-    "category": "Science",
-    "refs": [
-      {
-        "id": "1789587769579kxc57oav0",
-        "title": "Pájaros cantores llevan mini-mochilas para investigación migratoria"
-      },
-      {
-        "id": "1789587655308jj5kk44jy",
-        "title": "La elefantita Linh Mai aprende a colaborar en su propio cuidado médico"
-      },
-      {
-        "id": "17895865549041jzsjhr12",
-        "title": "Nueva especie de insecto nombrada en honor a Taylor Swift"
-      },
-      {
-        "id": "1789587740917gpvp67qfk",
-        "title": "La esfinge del tabaco oye sin orejas gracias a pelos sensibles"
-      },
-      {
-        "id": "1789585879417ynho5tj0v",
-        "title": "La misión BepiColombo llega a Mercurio como tercera nave espacial"
-      }
-    ]
-  },
-  {
-    "id": "1789588160154ngrxcj868",
-    "title": "Resurgence & Ecologist celebra 60 años en Oxford",
-    "summary": "Resurgence & Ecologist, la revista medioambiental más antigua de Gran Bretaña, celebra el sábado 12 de septiembre de 2026 su 60 aniversario con el evento agotado One with the Earth en Wadham College, University of Oxford. Entre los oradores se encuentran Caroline Lucas, Hugh Fearnley-Whittingstall y el fundador Satish Kumar, quien recientemente celebró su 90 cumpleaños. El programa incluye conferencias,...",
-    "image_alt": "Wadham College, University of Oxford, sede del 60 aniversario de Resurgence & Ecologist",
-    "meta_description": "Resurgence & Ecologist celebra 60 años con evento en Oxford, con oradores Lucas, Fearnley-Whittingstall y Kumar.",
-    "meta_keywords": "Resurgence & Ecologist, Satish Kumar, Caroline Lucas, Hugh Fearnley-Whittingstall, Wadham College, revista medioambiental, 60 aniversario",
-    "link": "https://theecologist.org/2026/sep/07/we-need-hold-hope",
-    "source": "Theecologist.org",
-    "image": "https://theecologist.org/sites/default/files/styles/facebook/public/2019-01/satishkumar_2.jpg?h=2992ba0a&amp;itok=sw-KYTy5",
-    "date": "2026-09-16T19:49:22.214Z",
-    "category": "Environment",
-    "score": 8
-  },
-  {
-    "id": "1789588132912dqjmmimea",
-    "title": "El túnel del amor ayuda al pequeño marsupial amenazado a reproducirse",
-    "summary": "En Australia, científicos construyeron un túnel bajo la Great Alpine Road para permitir que el mountain pygmy-possum (burramys), un marsupial críticamente amenazado, se apareara de forma segura. Este pequeño roedor marsupial, del tamaño de un hámster, tiene una cola más larga que su cuerpo y dispersa semillas del mountain plum-pine en frágiles zonas alpinas. Las hembras viven más arriba en...",
-    "image_alt": "Un mountain pygmy-possum, pequeño marsupial con una larga cola, entre las rocas en su hábitat alpino en Australia",
-    "meta_description": "Científicos construyeron un túnel bajo una carretera de montaña australiana para permitir que los marsupiales amenazados se apareen de forma segura.",
-    "meta_keywords": "mountain pygmy-possum, burramys, marsupial, Australia, túnel del amor, especie amenazada, Great Alpine Road",
-    "link": "https://www.goodgoodgood.co/articles/burramy-possums-tunnel-of-love",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa985a74eadf209aa6d07f0_6aa985a61db384410cfb7a83_burramy-possums-tunnel-of-love-featured.webp",
-    "date": "2026-09-16T19:48:55.490Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "178958809918291v7k5ka4",
-    "title": "Las casas de salud familiar afganas salvan a madres y bebés",
-    "summary": "En Afganistán, uno de los países más peligrosos del mundo para ser madre, las casas de salud familiar (Ashiana-e-Sehi) ofrecen atención crucial en zonas remotas. Gracias a este programa del UNFPA, iniciado en 2009, Ram Bibi en Helmand recibió controles prenatales de la comadrona Marzia, y la presentación de nalgas de Manawara fue tratada de forma segura. Más de 450...",
-    "image_alt": "Una comadrona afgana examina a una mujer embarazada en una casa de salud familiar local",
-    "meta_description": "Cómo las casas de salud familiar afganas salvan a madres y bebés en zonas remotas con apoyo del UNFPA.",
-    "meta_keywords": "Afganistán, casas de salud familiar, UNFPA, atención materna, comadronas, embarazo, sanidad",
-    "link": "https://reasonstobecheerful.world/how-afghan-women-are-rebuilding-reproductive-health-care/",
-    "source": "ReasonsToBeCheerful.world",
-    "image": "https://reasonstobecheerful.world/wp-content/uploads/2026/09/1000082074.jpg-1-scaled.jpeg",
-    "date": "2026-09-16T19:48:21.361Z",
-    "category": "Health",
-    "score": 10
-  },
-  {
-    "id": "1789587852097o5i3h66hb",
-    "title": "Confrontación con oso grizzly devuelve al hombre a su pasado en bandas",
-    "summary": "Durante un paseo cerca de Marias Pass en Glacier National Park, un hombre se encontró de repente cara a cara con un oso grizzly y su cachorro. El oso no atacó y se retiró, pero el momento despertó una profunda sensación de inseguridad que el hombre ha conocido toda su vida. Esto lo llevó a recordar sus años de adolescencia...",
-    "image_alt": "Oso grizzly con cachorro en un sendero de Glacier National Park",
-    "meta_description": "Una confrontación con un oso grizzly devuelve a un hombre a su pasado en bandas en los años 90 cerca de Chicago.",
-    "meta_keywords": "oso grizzly, Glacier National Park, vida en bandas, historia personal, juventud, adicción",
-    "link": "https://www.adventure-journal.com/from-gangs-to-grizzlies/",
-    "source": "Adventure-Journal.com",
-    "image": "https://www.adventure-journal.com/wp-content/uploads/2026/08/GNAM_STEVEN-6123-684x1024.jpg",
-    "date": "2026-09-16T19:44:13.207Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "1789587795217koeu9678p",
-    "title": "Tatyana Ali se compromete con la salud materna de mujeres negras e indígenas",
-    "summary": "La actriz y cantante Tatyana Ali, conocida por The Fresh Prince of Bel-Air, se compromete a mejorar la atención del parto para madres y bebés negros e indígenas. Su compromiso surge de lo que ella denomina „violencia obstétrica\" durante el parto de su hijo Aszi en 2016, cuando ignoraron su plan de parto y fue sujetada por varias personas. La...",
-    "image_alt": "Tatyana Ali sostiene una colcha Baby Yams que recauda fondos para trabajadores del parto negros e indígenas",
-    "meta_description": "Tatyana Ali aboga por una mejor atención materna para mujeres negras e indígenas tras el parto traumático de su hijo Aszi.",
-    "meta_keywords": "Tatyana Ali, salud materna, Black maternal health, violencia obstétrica, doula, comadrona, Fresh Prince of Bel-Air",
-    "link": "https://www.npr.org/2026/09/13/nx-s1-5966885/birth-black-and-indigenous-maternal-health",
-    "source": "NPR.org",
-    "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1398x786+0+291/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F61%2Fcd%2Fc86c24554061ba0c18f179044b0d%2Ftatyana-ali-2026-by-manfred-baumann-06.jpg",
-    "date": "2026-09-16T19:43:16.376Z",
-    "category": "Health",
-    "score": 10
-  },
-  {
-    "id": "1789587769579kxc57oav0",
-    "title": "Pájaros cantores llevan mini-mochilas para investigación migratoria",
-    "summary": "Investigadores han equipado a currucas de obispillo amarillo (también llamadas 'butter-butt') con diminutas mochilas geolocalizadoras del tamaño de un Tic Tac para trazar sus rutas migratorias. Los pájaros se reproducen en el norte de Alaska y las nuevas etiquetas multisensor miden la presión atmosférica y la luz para seguir su viaje hacia lugares de invernada desconocidos. Los métodos anteriores como...",
-    "image_alt": "Una curruca de obispillo amarillo con una pequeña mochila geolocalizadora en la espalda",
-    "meta_description": "Investigadores utilizan diminutas mochilas geolocalizadoras para descubrir las rutas migratorias de pájaros cantores.",
-    "meta_keywords": "migración de aves, geolocalizador, curruca de obispillo amarillo, warbler, investigación migratoria, GeoPressureR, investigación ornitológica",
-    "link": "https://www.goodgoodgood.co/articles/tiny-backpacks-bird-migration-study",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aa03f638060be9fa448829d_6aa03f5f48a9fbea52c6b9f9_tiny-backpacks-bird-migration-study-featured.webp",
-    "date": "2026-09-16T19:42:50.563Z",
-    "category": "Science",
-    "score": 9
-  },
-  {
-    "id": "1789587740917gpvp67qfk",
-    "title": "La esfinge del tabaco oye sin orejas gracias a pelos sensibles",
-    "summary": "Científicos investigan cómo la esfinge del tabaco puede percibir el peligro, como la aproximación de una avispa, a pesar de no tener orejas visibles. La investigación sugiere que la oruga posiblemente oye a través de pelos diminutos y extremadamente sensibles en su cuerpo. En una cámara anecoica completamente insonorizada, los investigadores probaron la reacción de las orugas ante vibraciones y...",
-    "image_alt": "Una esfinge del tabaco en una hoja en un jardín",
-    "meta_description": "Las orugas oyen sin orejas mediante pelos sensibles, descubrimiento que podría llevar a tecnología de micrófono más económica.",
-    "meta_keywords": "esfinge del tabaco, oír sin orejas, pelos sensibles, cámara anecoica, tecnología de micrófono, audífonos",
-    "link": "https://www.goodgoodgood.co/articles/caterpillars-hear-without-ears-hearing-aids",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a9addaab62c9d26c6f00e59_caterpillar-twitches-in-an-ultraquiet-chamber-are-helping-biologists-01.jpg",
-    "date": "2026-09-16T19:42:22.404Z",
-    "category": "Science",
-    "score": 8
-  },
-  {
-    "id": "1789587686544idd15ekui",
-    "title": "Cabras, ovejas y vacas protegen el Oeste estadounidense contra incendios forestales",
-    "summary": "En las praderas del Oeste estadounidense, los ganaderos utilizan cada vez más el ganado como prevención natural de incendios. Las vacas, cabras y ovejas pastan de forma selectiva el pasto alto y las plantas inflamables, lo que reduce el riesgo de incendios forestales devastadores. Este método, conocido como «targeted grazing», gana popularidad a medida que las temporadas de incendios se...",
-    "image_alt": "Rebaño de ovejas pastando en pastizal seco para prevenir incendios forestales en el Oeste estadounidense",
-    "meta_description": "Cabras, ovejas y vacas se utilizan como prevención natural de incendios forestales en el Oeste estadounidense mediante pastoreo selectivo.",
-    "meta_keywords": "targeted grazing, prevención de incendios forestales, ganado, Oeste estadounidense, Forest Service, wildfire, pastoreo, riesgo de incendio",
-    "link": "https://www.goodgoodgood.co/articles/goats-sheep-cattle-wildfire-prevention-pyrograzing",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a9b356d24a92d46ef35d4c9_6a9b356c7c3569aaa1d9c42a_goats-sheep-cattle-wildfire-prevention-pyrograzing-featured.webp",
-    "date": "2026-09-16T19:41:27.561Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1789587655308jj5kk44jy",
-    "title": "La elefantita Linh Mai aprende a colaborar en su propio cuidado médico",
-    "summary": "El 2 de febrero, la Smithsonian's National Zoo recibió su primera cría de elefante en casi 25 años: Linh Mai, hija de la madre Nhi Linh y el padre Spike. Cuando Nhi Linh pareció rechazar a su recién nacida, el equipo de cuidadores separó a los animales y alimentó a Linh Mai con biberón cada dos horas. La experimentada elefanta...",
-    "image_alt": "La elefantita Linh Mai con su «tía» Swarna en la Smithsonian's National Zoo",
-    "meta_description": "La elefantita Linh Mai aprende mediante entrenamiento positivo a colaborar en su propio cuidado médico en la National Zoo.",
-    "meta_keywords": "Linh Mai, cría de elefante, National Zoo, elefante asiático, cuidado animal, refuerzo positivo, Smithsonian",
-    "link": "https://www.goodgoodgood.co/articles/elephants-zoos-training-medical-care-jobs",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aaae23697d81695653c40d9_6aaae235a354d8882503f278_elephants-zoos-training-medical-care-jobs-featured-2.webp",
-    "date": "2026-09-16T19:40:56.355Z",
-    "category": "Science",
-    "score": 9
   }
 ]

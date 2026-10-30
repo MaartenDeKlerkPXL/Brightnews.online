@@ -1,27 +1,342 @@
 {
- "gegenereerd": "2026-10-30T04:49:50.665Z",
+ "gegenereerd": "2026-10-30T18:24:08.898Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
-   "top": [],
-   "dagoverzichten": []
+   "top": [
+    {
+     "id": "17933843011651er3an5ge",
+     "titel": "Oceaanbeschermer Stacy Jupiter vecht tegen borstkanker",
+     "teaser": "Dr. Stacy Jupiter, die wereldwijde oceaanconservering coördineert voor de Wildlife Conservation Society, kreeg in september 2025 onverwacht de diagnose borstkanker tijdens een vakantie in Florida. Er was geen tumor in haar borst zichtbaar, maar de kanker had zich al verspreid naar lymfeklieren. Voor behandeling keerde ze terug naar Boston, waar ze bij Mass General Brigham een klinische studie, operatie, chemotherapie...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/nl/oceaanbeschermer-stacy-jupiter-vecht-tegen-borstkanker-17933843011651er3an5ge.html"
+    },
+    {
+     "id": "1793383750932rcrb7m8t3",
+     "titel": "Verpleegkundigen behalen eerste betaald ouderschapsverlof op countyniveau in VS",
+     "teaser": "Verpleegkundigen van UPMC Magee-Womens Hospital in Pittsburgh, onder wie neonatologieverpleegkundige Jean Stone, vormden samen met werkende ouders, belangenbehartigers en gekozen leiders een coalitie voor betaald ouderschapsverlof. Op Moederdag, 10 mei, lanceerden zij hun campagne. De Allegheny County Council stemde met 11 tegen 4 voor twaalf weken betaald ouderschapsverlof, de eerste regeling op countyniveau in de Verenigde Staten. Zowel bevallende als...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/nl/verpleegkundigen-behalen-eerste-betaald-ouderschapsverlof-op-countyniveau-in-vs-1793383750932rcrb7m8t3.html"
+    },
+    {
+     "id": "1793383718920rpe7lsbzj",
+     "titel": "Halloween-skeletten halen 2 miljoen dollar op voor St. Jude",
+     "teaser": "Meer dan 600 Amerikaanse huishoudens doen mee aan Skeletons for St. Jude, een inzamelingsactie die begon toen Jeff Robertson uit Holly Springs, North Carolina in 2020 zijn Halloween-decoratie deelde met een kind met kanker. Sindsdien groeide het initiatief uit tot een jaarlijkse traditie die al 1,2 miljoen dollar opbracht voor St. Jude Children's Research Hospital. Dit jaar, het zevende jaar,...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/halloween-skeletten-halen-2-miljoen-dollar-op-voor-st-jude-1793383718920rpe7lsbzj.html"
+    },
+    {
+     "id": "1793383664855tzeakr9sr",
+     "titel": "15-jarige ontwikkelt QR-code met medische noodinformatie",
+     "teaser": "Nadat een vriendin op school flauwviel en niemand haar medische gegevens kende, ontwikkelde de 15-jarige Aanya Mansani uit Texas het platform Emergen. Via een QR-code op bijvoorbeeld een ID-badge, rugzak of telefoonhoesje kunnen omstanders zonder app of inlog direct essentiële informatie zien, zoals allergieën, medicijnen, aandoeningen en vertrouwde contactpersonen. Een extra toegangsniveau voor medische professionals wordt nog ontwikkeld en getest....",
+     "score": 10,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/nl/15-jarige-ontwikkelt-qr-code-met-medische-noodinformatie-1793383664855tzeakr9sr.html"
+    },
+    {
+     "id": "1793383483557ulc7vq97w",
+     "titel": "Voedselbanken New York bieden nu ook dierenvoeding aan",
+     "teaser": "Voedselbanken in New York City bieden voortaan ook dierenvoeding aan voor gezinnen die het financieel moeilijk hebben. Hiermee kunnen huishoudens die al bij de voedselbank terechtkunnen voor hun eigen boodschappen, ook voedsel voor hun huisdieren meekrijgen.",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/voedselbanken-new-york-bieden-nu-ook-dierenvoeding-aan-1793383483557ulc7vq97w.html"
+    }
+   ],
+   "dagoverzichten": [
+    {
+     "id": "dg-20261029-science",
+     "titel": "Samenwerking als rode draad: het wetenschapsnieuws van eind oktober",
+     "categorie": "Science",
+     "dag": "2026-10-29",
+     "url": "https://brightnews.online/articles/nl/samenwerking-als-rode-draad-het-wetenschapsnieuws-van-eind-oktober-dg-20261029-science.html"
+    },
+    {
+     "id": "dg-20261029-environment",
+     "titel": "Schoon water en nieuwe kansen voor dieren wereldwijd",
+     "categorie": "Environment",
+     "dag": "2026-10-29",
+     "url": "https://brightnews.online/articles/nl/schoon-water-en-nieuwe-kansen-voor-dieren-wereldwijd-dg-20261029-environment.html"
+    },
+    {
+     "id": "dg-20261029-health",
+     "titel": "Gezondheidsnieuws deze week: vooruitgang op veel fronten",
+     "categorie": "Health",
+     "dag": "2026-10-29",
+     "url": "https://brightnews.online/articles/nl/gezondheidsnieuws-deze-week-vooruitgang-op-veel-fronten-dg-20261029-health.html"
+    }
+   ]
   },
   "en": {
-   "top": [],
-   "dagoverzichten": []
+   "top": [
+    {
+     "id": "17933843011651er3an5ge",
+     "titel": "Ocean protector Stacy Jupiter fights breast cancer",
+     "teaser": "Dr. Stacy Jupiter, who coordinates global ocean conservation for the Wildlife Conservation Society, received an unexpected breast cancer diagnosis in September 2025 while on vacation in Florida. There was no visible tumor in her breast, but the cancer had already spread to her lymph nodes. She returned to Boston for treatment, where she underwent a clinical trial, surgery, chemotherapy and...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/en/ocean-protector-stacy-jupiter-fights-breast-cancer-17933843011651er3an5ge.html"
+    },
+    {
+     "id": "1793383750932rcrb7m8t3",
+     "titel": "Nurses secure first county-level paid parental leave in the US",
+     "teaser": "Nurses at UPMC Magee-Womens Hospital in Pittsburgh, including neonatal nurse Jean Stone, joined forces with working parents, advocates and elected officials to form a coalition for paid parental leave. On Mother's Day, May 10, they launched their campaign. The Allegheny County Council voted 11-4 in favor of twelve weeks of paid parental leave, the first policy of its kind at...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/en/nurses-secure-first-county-level-paid-parental-leave-in-the-us-1793383750932rcrb7m8t3.html"
+    },
+    {
+     "id": "1793383718920rpe7lsbzj",
+     "titel": "Halloween skeletons raise 2 million dollars for St. Jude",
+     "teaser": "More than 600 American households are participating in Skeletons for St. Jude, a fundraising initiative that began when Jeff Robertson from Holly Springs, North Carolina shared his Halloween decoration with a child battling cancer in 2020. Since then, the initiative has grown into an annual tradition that has already raised 1.2 million dollars for St. Jude Children's Research Hospital. This...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/halloween-skeletons-raise-2-million-dollars-for-st-jude-1793383718920rpe7lsbzj.html"
+    },
+    {
+     "id": "1793383664855tzeakr9sr",
+     "titel": "15-year-old develops QR code with medical emergency information",
+     "teaser": "After a classmate collapsed at school and no one knew her medical details, 15-year-old Aanya Mansani from Texas developed the platform Emergen. Via a QR code on an ID badge, backpack or phone case, for example, bystanders can see essential information directly without an app or login, such as allergies, medications, conditions and trusted contacts. An additional access level for...",
+     "score": 10,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/en/15-year-old-develops-qr-code-with-medical-emergency-information-1793383664855tzeakr9sr.html"
+    },
+    {
+     "id": "1793383483557ulc7vq97w",
+     "titel": "Food banks in New York now offer pet food too",
+     "teaser": "Food banks in New York City now provide pet food for families facing financial hardship. This allows households that already use food banks for their own groceries to also take home food for their pets.",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/food-banks-in-new-york-now-offer-pet-food-too-1793383483557ulc7vq97w.html"
+    }
+   ],
+   "dagoverzichten": [
+    {
+     "id": "dg-20261029-science",
+     "titel": "Collaboration as a common thread: the science news from late October",
+     "categorie": "Science",
+     "dag": "2026-10-29",
+     "url": "https://brightnews.online/articles/en/collaboration-as-a-common-thread-the-science-news-from-late-october-dg-20261029-science.html"
+    },
+    {
+     "id": "dg-20261029-environment",
+     "titel": "Clean water and new opportunities for animals worldwide",
+     "categorie": "Environment",
+     "dag": "2026-10-29",
+     "url": "https://brightnews.online/articles/en/clean-water-and-new-opportunities-for-animals-worldwide-dg-20261029-environment.html"
+    },
+    {
+     "id": "dg-20261029-health",
+     "titel": "Health news this week: progress on many fronts",
+     "categorie": "Health",
+     "dag": "2026-10-29",
+     "url": "https://brightnews.online/articles/en/health-news-this-week-progress-on-many-fronts-dg-20261029-health.html"
+    }
+   ]
   },
   "de": {
-   "top": [],
-   "dagoverzichten": []
+   "top": [
+    {
+     "id": "17933843011651er3an5ge",
+     "titel": "Meeresschützerin Stacy Jupiter kämpft gegen Brustkrebs",
+     "teaser": "Dr. Stacy Jupiter, die weltweite Meeresschutzmaßnahmen für die Wildlife Conservation Society koordiniert, erhielt im September 2025 unerwartet die Diagnose Brustkrebs während eines Urlaubs in Florida. Es war kein Tumor in ihrer Brust sichtbar, aber der Krebs hatte sich bereits auf Lymphknoten ausgebreitet. Zur Behandlung kehrte sie nach Boston zurück, wo sie sich bei Mass General Brigham einer klinischen Studie, einer...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/de/meeresschutzerin-stacy-jupiter-kampft-gegen-brustkrebs-17933843011651er3an5ge.html"
+    },
+    {
+     "id": "1793383750932rcrb7m8t3",
+     "titel": "Krankenschwestern erhalten erstes bezahltes Elternzeitgesetz auf County-Ebene in den USA",
+     "teaser": "Krankenschwestern des UPMC Magee-Womens Hospital in Pittsburgh, darunter die Neonatologiepflegerin Jean Stone, bildeten zusammen mit berufstätigen Eltern, Interessenvertretern und gewählten Führungskräften eine Koalition für bezahlten Elternurlaub. Am Muttertag, dem 10. Mai, starteten sie ihre Kampagne. Der Allegheny County Council stimmte mit 11 gegen 4 Stimmen für zwölf Wochen bezahlten Elternurlaub – die erste Regelung auf County-Ebene in den Vereinigten Staaten....",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/de/krankenschwestern-erhalten-erstes-bezahltes-elternzeitgesetz-auf-county-ebene-in-1793383750932rcrb7m8t3.html"
+    },
+    {
+     "id": "1793383718920rpe7lsbzj",
+     "titel": "Halloween-Skelette sammeln 2 Millionen Dollar für St. Jude",
+     "teaser": "Mehr als 600 amerikanische Haushalte beteiligen sich an Skeletons for St. Jude, einer Spendenaktion, die begann, als Jeff Robertson aus Holly Springs, North Carolina, 2020 seine Halloween-Dekoration mit einem krebskranken Kind teilte. Seitdem ist die Initiative zu einer jährlichen Tradition gewachsen, die bereits 1,2 Millionen Dollar für St. Jude Children's Research Hospital eingebracht hat. In diesem Jahr, dem siebten Jahr,...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/halloween-skelette-sammeln-2-millionen-dollar-fur-st-jude-1793383718920rpe7lsbzj.html"
+    },
+    {
+     "id": "1793383664855tzeakr9sr",
+     "titel": "15-Jährige entwickelt QR-Code mit medizinischen Notfallinformationen",
+     "teaser": "Nachdem eine Mitschülerin in der Schule ohnmächtig wurde und niemand ihre medizinischen Daten kannte, entwickelte die 15-jährige Aanya Mansani aus Texas die Plattform Emergen. Über einen QR-Code auf beispielsweise einem ID-Badge, Rucksack oder Handyhülle können Umstehende ohne App oder Login direkt wichtige Informationen einsehen, wie Allergien, Medikamente, Erkrankungen und vertrauenswürdige Kontaktpersonen. Eine zusätzliche Zugangsebene für medizinisches Fachpersonal wird noch entwickelt...",
+     "score": 10,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/de/15-jahrige-entwickelt-qr-code-mit-medizinischen-notfallinformationen-1793383664855tzeakr9sr.html"
+    },
+    {
+     "id": "1793383483557ulc7vq97w",
+     "titel": "Tierfutter in New Yorker Lebensmittelbanken verfügbar",
+     "teaser": "Lebensmittelbanken in New York City bieten ab sofort auch Tierfutter für Familien in finanziellen Schwierigkeiten an. Haushalte, die bereits die Lebensmittelbank für ihre eigenen Lebensmittel nutzen, können nun auch Futter für ihre Haustiere mitnehmen.",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/tierfutter-in-new-yorker-lebensmittelbanken-verfugbar-1793383483557ulc7vq97w.html"
+    }
+   ],
+   "dagoverzichten": [
+    {
+     "id": "dg-20261029-science",
+     "titel": "Zusammenarbeit als roter Faden: die Wissenschaftsnachrichten von Ende Oktober",
+     "categorie": "Science",
+     "dag": "2026-10-29",
+     "url": "https://brightnews.online/articles/de/zusammenarbeit-als-roter-faden-die-wissenschaftsnachrichten-von-ende-oktober-dg-20261029-science.html"
+    },
+    {
+     "id": "dg-20261029-environment",
+     "titel": "Sauberes Wasser und neue Chancen für Tiere weltweit",
+     "categorie": "Environment",
+     "dag": "2026-10-29",
+     "url": "https://brightnews.online/articles/de/sauberes-wasser-und-neue-chancen-fur-tiere-weltweit-dg-20261029-environment.html"
+    },
+    {
+     "id": "dg-20261029-health",
+     "titel": "Gesundheitsnachrichten diese Woche: Fortschritte auf vielen Ebenen",
+     "categorie": "Health",
+     "dag": "2026-10-29",
+     "url": "https://brightnews.online/articles/de/gesundheitsnachrichten-diese-woche-fortschritte-auf-vielen-ebenen-dg-20261029-health.html"
+    }
+   ]
   },
   "fr": {
-   "top": [],
-   "dagoverzichten": []
+   "top": [
+    {
+     "id": "17933843011651er3an5ge",
+     "titel": "L'océanographe Stacy Jupiter lutte contre le cancer du sein",
+     "teaser": "Dr. Stacy Jupiter, qui coordonne la conservation mondiale des océans pour la Wildlife Conservation Society, a reçu un diagnostic inattendu de cancer du sein en septembre 2025 pendant des vacances en Floride. Aucune tumeur n'était visible dans son sein, mais le cancer s'était déjà propagé aux ganglions lymphatiques. Pour suivre un traitement, elle est retournée à Boston, où elle a...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/fr/l-oceanographe-stacy-jupiter-lutte-contre-le-cancer-du-sein-17933843011651er3an5ge.html"
+    },
+    {
+     "id": "1793383750932rcrb7m8t3",
+     "titel": "Des infirmières obtiennent le premier congé parental rémunéré au niveau du comté aux États-Unis",
+     "teaser": "Des infirmières de UPMC Magee-Womens Hospital à Pittsburgh, dont l'infirmière néonatale Jean Stone, se sont unies avec des parents travailleurs, des défenseurs des droits et des élus pour former une coalition en faveur d'un congé parental rémunéré. Le jour de la Fête des Mères, le 10 mai, ils ont lancé leur campagne. Le Allegheny County Council a voté à 11...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/fr/des-infirmieres-obtiennent-le-premier-conge-parental-remunere-au-niveau-du-comte-1793383750932rcrb7m8t3.html"
+    },
+    {
+     "id": "1793383718920rpe7lsbzj",
+     "titel": "Des squelettes d'Halloween récoltent 2 millions de dollars pour St. Jude",
+     "teaser": "Plus de 600 foyers américains participent à Skeletons for St. Jude, une collecte de fonds lancée quand Jeff Robertson de Holly Springs, en Caroline du Nord, a partagé sa décoration d'Halloween avec un enfant atteint du cancer en 2020. Depuis, l'initiative s'est transformée en une tradition annuelle qui a déjà récolté 1,2 million de dollars pour St. Jude Children's Research...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/des-squelettes-d-halloween-recoltent-2-millions-de-dollars-pour-st-jude-1793383718920rpe7lsbzj.html"
+    },
+    {
+     "id": "1793383664855tzeakr9sr",
+     "titel": "Une adolescente de 15 ans développe un code QR avec informations médicales d'urgence",
+     "teaser": "Après qu'une camarade de classe se soit évanouie à l'école et que personne ne connaisse ses données médicales, Aanya Mansani, 15 ans, originaire du Texas, a développé la plateforme Emergen. Via un code QR sur un badge d'identité, un sac à dos ou une coque de téléphone par exemple, les passants peuvent voir directement les informations essentielles sans application ni...",
+     "score": 10,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/fr/une-adolescente-de-15-ans-developpe-un-code-qr-avec-informations-medicales-d-urg-1793383664855tzeakr9sr.html"
+    },
+    {
+     "id": "1793383483557ulc7vq97w",
+     "titel": "Les banques alimentaires de New York proposent désormais aussi de la nourriture pour animaux",
+     "teaser": "Les banques alimentaires de New York City proposent désormais de la nourriture pour animaux aux familles en difficulté financière. Ainsi, les ménages qui se rendent déjà à la banque alimentaire pour leurs courses peuvent également emporter de la nourriture pour leurs animaux de compagnie.",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/les-banques-alimentaires-de-new-york-proposent-desormais-aussi-de-la-nourriture-1793383483557ulc7vq97w.html"
+    }
+   ],
+   "dagoverzichten": [
+    {
+     "id": "dg-20261029-science",
+     "titel": "La collaboration comme fil rouge : l'actualité scientifique de fin octobre",
+     "categorie": "Science",
+     "dag": "2026-10-29",
+     "url": "https://brightnews.online/articles/fr/la-collaboration-comme-fil-rouge-l-actualite-scientifique-de-fin-octobre-dg-20261029-science.html"
+    },
+    {
+     "id": "dg-20261029-environment",
+     "titel": "De l'eau propre et de nouvelles chances pour les animaux dans le monde",
+     "categorie": "Environment",
+     "dag": "2026-10-29",
+     "url": "https://brightnews.online/articles/fr/de-l-eau-propre-et-de-nouvelles-chances-pour-les-animaux-dans-le-monde-dg-20261029-environment.html"
+    },
+    {
+     "id": "dg-20261029-health",
+     "titel": "Actualités santé cette semaine : des progrès sur de nombreux fronts",
+     "categorie": "Health",
+     "dag": "2026-10-29",
+     "url": "https://brightnews.online/articles/fr/actualites-sante-cette-semaine-des-progres-sur-de-nombreux-fronts-dg-20261029-health.html"
+    }
+   ]
   },
   "es": {
-   "top": [],
-   "dagoverzichten": []
+   "top": [
+    {
+     "id": "17933843011651er3an5ge",
+     "titel": "La defensora oceánica Stacy Jupiter lucha contra el cáncer de mama",
+     "teaser": "La Dra. Stacy Jupiter, que coordina la conservación oceánica mundial para la Wildlife Conservation Society, recibió el diagnóstico inesperado de cáncer de mama en septiembre de 2025 durante unas vacaciones en Florida. No había tumor visible en su pecho, pero el cáncer ya se había propagado a los ganglios linfáticos. Para recibir tratamiento, regresó a Boston, donde se sometió a...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/es/la-defensora-oceanica-stacy-jupiter-lucha-contra-el-cancer-de-mama-17933843011651er3an5ge.html"
+    },
+    {
+     "id": "1793383750932rcrb7m8t3",
+     "titel": "Enfermeras logran primer permiso parental remunerado a nivel de condado en EE.UU.",
+     "teaser": "Enfermeras del UPMC Magee-Womens Hospital en Pittsburgh, incluida la enfermera neonatal Jean Stone, se unieron con padres trabajadores, defensores y líderes electos para formar una coalición a favor del permiso parental remunerado. El 10 de mayo, Día de la Madre, lanzaron su campaña. El Consejo del Condado de Allegheny votó 11 a favor y 4 en contra de doce semanas...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/es/enfermeras-logran-primer-permiso-parental-remunerado-a-nivel-de-condado-en-ee-uu-1793383750932rcrb7m8t3.html"
+    },
+    {
+     "id": "1793383718920rpe7lsbzj",
+     "titel": "Esqueletos de Halloween recaudan 2 millones de dólares para St. Jude",
+     "teaser": "Más de 600 hogares estadounidenses participan en Skeletons for St. Jude, una campaña de recaudación de fondos que comenzó cuando Jeff Robertson de Holly Springs, Carolina del Norte compartió su decoración de Halloween con un niño con cáncer en 2020. Desde entonces, la iniciativa se ha convertido en una tradición anual que ya ha recaudado 1,2 millones de dólares para...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/esqueletos-de-halloween-recaudan-2-millones-de-dolares-para-st-jude-1793383718920rpe7lsbzj.html"
+    },
+    {
+     "id": "1793383664855tzeakr9sr",
+     "titel": "Adolescente de 15 años desarrolla código QR con información médica de emergencia",
+     "teaser": "Después de que una amiga se desmayara en la escuela y nadie conociera sus datos médicos, la adolescente Aanya Mansani de Texas desarrolló la plataforma Emergen. A través de un código QR en una identificación, mochila o funda de teléfono, los transeúntes pueden ver directamente información esencial sin aplicación ni inicio de sesión, como alergias, medicamentos, condiciones médicas y contactos...",
+     "score": 10,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/es/adolescente-de-15-anos-desarrolla-codigo-qr-con-informacion-medica-de-emergencia-1793383664855tzeakr9sr.html"
+    },
+    {
+     "id": "1793383483557ulc7vq97w",
+     "titel": "Los bancos de alimentos de Nueva York ahora también ofrecen comida para mascotas",
+     "teaser": "Los bancos de alimentos en Nueva York ofrecen a partir de ahora comida para mascotas a las familias que atraviesan dificultades económicas. De esta manera, los hogares que ya acuden al banco de alimentos para sus propias compras también pueden llevarse alimento para sus animales domésticos.",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/los-bancos-de-alimentos-de-nueva-york-ahora-tambien-ofrecen-comida-para-mascotas-1793383483557ulc7vq97w.html"
+    }
+   ],
+   "dagoverzichten": [
+    {
+     "id": "dg-20261029-science",
+     "titel": "La colaboración como hilo conductor: las noticias científicas de finales de octubre",
+     "categorie": "Science",
+     "dag": "2026-10-29",
+     "url": "https://brightnews.online/articles/es/la-colaboracion-como-hilo-conductor-las-noticias-cientificas-de-finales-de-octub-dg-20261029-science.html"
+    },
+    {
+     "id": "dg-20261029-environment",
+     "titel": "Agua limpia y nuevas oportunidades para los animales en todo el mundo",
+     "categorie": "Environment",
+     "dag": "2026-10-29",
+     "url": "https://brightnews.online/articles/es/agua-limpia-y-nuevas-oportunidades-para-los-animales-en-todo-el-mundo-dg-20261029-environment.html"
+    },
+    {
+     "id": "dg-20261029-health",
+     "titel": "Noticias de salud esta semana: avances en muchos frentes",
+     "categorie": "Health",
+     "dag": "2026-10-29",
+     "url": "https://brightnews.online/articles/es/noticias-de-salud-esta-semana-avances-en-muchos-frentes-dg-20261029-health.html"
+    }
+   ]
   }
  }
 }
