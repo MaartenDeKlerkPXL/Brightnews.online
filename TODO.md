@@ -1680,12 +1680,6 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      Stripe Checkout? Zo ja: niet ingelogd → naar de inlogpagina met
      `?next=abonnementen` en daarna terug, met het plan bewaard. Juridische
      tekst bij het vinkje nog laten controleren.
-  9. **Inloggen koppelen op `v5-inloggen.html`** (Supabase, Erik): inloglink
-     per mail (magic link), inloggen met wachtwoord, account maken met of
-     zonder wachtwoord, en daarna terug naar `?next=` (anders Mijn account).
-     Af te stemmen: de wachtwoordregel (voorstel: minstens 8 tekens) en
-     "Stuur opnieuw" pas na 60 seconden, met de knop zolang uitgeschakeld.
-     De foutmelding mag nooit verklappen of een e-mailadres bestaat.
   8. **Bij de lancering:** de v5-pagina's hernoemen naar de echte adressen
      (`index.html`, `archief.html`, het artikelsjabloon) en die adressen in
      `partials/v5/` en `js/v5/gedeeld.js` (`url`) zetten. Sinds 2026-10-29
@@ -1694,6 +1688,12 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      footerpagina's, artikelen van vóór de feed) staat er zonder link. Ook
      de koppen van een oudere editie zijn daardoor nog geen links, terwijl
      de uitlegnotitie zegt dat elke kop het artikel opent.
+  9. **Inloggen koppelen op `v5-inloggen.html`** (Supabase, Erik): inloglink
+     per mail (magic link), inloggen met wachtwoord, account maken met of
+     zonder wachtwoord, en daarna terug naar `?next=` (anders Mijn account).
+     Af te stemmen: de wachtwoordregel (voorstel: minstens 8 tekens) en
+     "Stuur opnieuw" pas na 60 seconden, met de knop zolang uitgeschakeld.
+     De foutmelding mag nooit verklappen of een e-mailadres bestaat.
 
   ### Opruimen in Figma als v3 gekozen is
 
