@@ -1,5 +1,77 @@
 [
  {
+  "datum": "2026-10-31T16:57:39.227Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "Retirees Who Lost Spouses Fall in Love Again at 88, After Meeting in the Gym",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 2,
+  "totaal": 8,
+  "besluit": "ja",
+  "reden": "Hartverwarmend verhaal over twee weduwen die onverwacht opnieuw liefde vinden op gevorderde leeftijd; positief geformuleerd en persoonlijk herkenbaar."
+ },
+ {
+  "datum": "2026-10-31T16:57:39.227Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "Your Halloween Horoscope Advice: ‘Free Will Astrology’ by Rob Brezsny",
+  "uitsluiting": "listicle",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Dit is een horoscoop-rubriek zonder verhaal; zelfhulp-clickbait zonder echte inhoud."
+ },
+ {
+  "datum": "2026-10-31T16:57:39.227Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "NGO Celebrates 70 Million Rainforest Acres Conserved After Protecting Area Called a ‘Link of Life’",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Maatschappelijk relevant natuurbeschermingsverhaal met concrete impact (70 miljoen acres); volledig positief geformuleerd en hoopgevend."
+ },
+ {
+  "datum": "2026-10-31T16:57:39.227Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "Good News This Week: October 31, 2026 - Bees, Costumes, & Sea Otters",
+  "uitsluiting": "verzameleditie",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Dit is een weekoverzicht van ander medium ('Good Good Good team'); BrightNews maakt eigen dagoverzichten, geen linklijstjes."
+ },
+ {
+  "datum": "2026-10-31T16:57:39.227Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "Researchers discover five new frog species in one of the most biologically diverse regions on the planet",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Hoopvol wetenschappelijk verhaal over biodiversiteitsdiscoveries en langdurige conservatiewerk; maatschappelijk relevant en positief geformuleerd."
+ },
+ {
+  "datum": "2026-10-31T16:57:39.227Z",
+  "bron": "NPR.org",
+  "titel": "Oyster stocks have plunged in the Chesapeake. This resident wants to bring them back",
+  "uitsluiting": "geen",
+  "gevoel": 2,
+  "formulering": 1,
+  "relevantie": 3,
+  "totaal": 6,
+  "besluit": "nee",
+  "reden": "Maatschappelijk relevant herstelproject, maar ingekaderd in probleem-framing ('plunged', 'overharvesting'); onvoldoende positieve formulering en te weinig inhoud om kern van verhaal te beoordelen."
+ },
+ {
   "datum": "2026-10-31T04:33:59.400Z",
   "bron": "GoodNewsNetwork.org",
   "titel": "Best Spud Harvest in a Decade Clears the Gloom of Crops Failing from Scorching Summer",
@@ -3526,77 +3598,5 @@
   "totaal": 8,
   "besluit": "ja",
   "reden": "Nieuwe wildkatsoort ontdekt; wetenschap en erkenning van lokale kennis samen."
- },
- {
-  "datum": "2026-09-24T16:58:34.509Z",
-  "bron": "NPR.org",
-  "titel": "There are still nearly pristine coral reefs. They're a blueprint for coral restoration",
-  "uitsluiting": "geen",
-  "gevoel": 2,
-  "formulering": 2,
-  "relevantie": 3,
-  "totaal": 7,
-  "besluit": "nee",
-  "reden": "Gezonde koraalriffen als blauwdruk voor herstel; hoop en onderzoek ondanks klimaatdreiging."
- },
- {
-  "datum": "2026-09-24T16:58:34.509Z",
-  "bron": "Openaccessgovernment.org",
-  "titel": "Atomic-scale “Rails” guide superconducting vortices in ultrathin materials",
-  "uitsluiting": "geen",
-  "gevoel": 0,
-  "formulering": 1,
-  "relevantie": 1,
-  "totaal": 2,
-  "besluit": "nee",
-  "reden": "Technische doorbraak in supergeleiding; vakjargon zonder persoonlijke of brede maatschappelijke betekenis."
- },
- {
-  "datum": "2026-09-24T16:58:34.509Z",
-  "bron": "Openaccessgovernment.org",
-  "titel": "SOFT Innovation Prize 2026 recognises three European fusion innovations",
-  "uitsluiting": "productnieuws",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Prijsuitreiking voor fusie-innovaties; bedrijfs- en onderzoeksnieuws zonder concreet verhaal."
- },
- {
-  "datum": "2026-09-24T16:58:34.509Z",
-  "bron": "BBC.com/culture",
-  "titel": "12 of the best films to watch this October",
-  "uitsluiting": "listicle",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Filmoverzicht voor oktober; consumptieve weeklijst zonder eigen verhaal."
- },
- {
-  "datum": "2026-09-24T04:23:27.012Z",
-  "bron": "GoodNewsNetwork.org",
-  "titel": "Bikes Outnumbered Cars on Scottish Rush Hour Route for the First Time Ever",
-  "uitsluiting": "geen",
-  "gevoel": 2,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 8,
-  "besluit": "ja",
-  "reden": "Positief verhaal over duurzame mobiliteit met maatschappelijke impact, goed geformuleerd en relevant voor stedelijke planning."
- },
- {
-  "datum": "2026-09-24T04:23:27.012Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "At 4 weeks old, this baby elephant was found hiding amongst a farmer's cattle. The discovery turned into a lifesaving mission",
-  "uitsluiting": "geen",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "Hartverwarmend reddingsverhaal van een jong olifantje met focus op deskundige hulp en conservatie, volledig positief geformuleerd."
  }
 ]
