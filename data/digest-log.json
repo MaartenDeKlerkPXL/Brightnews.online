@@ -1,5 +1,76 @@
 [
   {
+    "datum": "2026-10-31T04:39:30.052Z",
+    "dag": "2026-10-30",
+    "categorie": "Science",
+    "ids": [
+      "179338418713800p31bsxr",
+      "17933841386518zl65dsi6",
+      "1793384087936ocqxnkzxe",
+      "17933835623285zzxfvhr8"
+    ],
+    "prompthash": "fd561df11314",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 14730,
+    "woorden": {
+      "nl": 389,
+      "en": 404,
+      "de": 375,
+      "fr": 467,
+      "es": 469
+    }
+  },
+  {
+    "datum": "2026-10-31T04:38:17.277Z",
+    "dag": "2026-10-30",
+    "categorie": "Environment",
+    "ids": [
+      "17934212711084sy6icao8",
+      "1793383630505h1pw71f0a",
+      "1793383597218er891iiw6",
+      "1793383535660vb37ygvqn",
+      "1793383409460miu6j5iw1",
+      "1793383361055da2zrqy6s",
+      "1793383329951u4ns80df3",
+      "1793383191308ektznbw95"
+    ],
+    "prompthash": "fd561df11314",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 14350,
+    "woorden": {
+      "nl": 400,
+      "en": 401,
+      "de": 375,
+      "fr": 474,
+      "es": 447
+    }
+  },
+  {
+    "datum": "2026-10-31T04:37:13.630Z",
+    "dag": "2026-10-30",
+    "categorie": "Lifestyle",
+    "ids": [
+      "1793421296769hs16l0ker",
+      "1793383718920rpe7lsbzj",
+      "1793383483557ulc7vq97w",
+      "1793382750546hpyow7okq",
+      "1793421325018m899laeda",
+      "1793384374234uamyih28z",
+      "17933843491953w1abzl96",
+      "17933839909938lqbttwv4"
+    ],
+    "prompthash": "fd561df11314",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 14007,
+    "woorden": {
+      "nl": 408,
+      "en": 416,
+      "de": 396,
+      "fr": 452,
+      "es": 455
+    }
+  },
+  {
     "datum": "2026-10-30T18:24:08.429Z",
     "dag": "2026-10-29",
     "categorie": "Science",
