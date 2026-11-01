@@ -1,10 +1,18 @@
 {
- "gegenereerd": "2026-11-01T04:56:34.312Z",
+ "gegenereerd": "2026-11-01T17:46:55.871Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "1793555084446w70x69w4f",
+     "titel": "Howell High School vult voetbalveld met boodschappen voor voedselbanken",
+     "teaser": "Honderden leerlingen van Howell High School in New Jersey verzamelden vorige week meer dan een kwart miljoen pond voedsel tijdens de tweede editie van de 100-Yard Food Drive Challenge. Duizenden felgele donatiezakken bedekten het voetbalveld van de school van eindzone tot eindzone, de grootste voedselinzameling ooit voor non-profitorganisatie Dermer Dreams. Medeoprichter Dan Dermer zei dat de leerlingen meer deden dan...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/howell-high-school-vult-voetbalveld-met-boodschappen-voor-voedselbanken-1793555084446w70x69w4f.html"
+    },
     {
      "id": "1793421296769hs16l0ker",
      "titel": "Veteraan krijgt opgeknapte Hyundai Elantra van studenten",
@@ -36,17 +44,16 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/halloween-skeletten-halen-2-miljoen-dollar-op-voor-st-jude-1793383718920rpe7lsbzj.html"
-    },
-    {
-     "id": "1793383664855tzeakr9sr",
-     "titel": "15-jarige ontwikkelt QR-code met medische noodinformatie",
-     "teaser": "Nadat een vriendin op school flauwviel en niemand haar medische gegevens kende, ontwikkelde de 15-jarige Aanya Mansani uit Texas het platform Emergen. Via een QR-code op bijvoorbeeld een ID-badge, rugzak of telefoonhoesje kunnen omstanders zonder app of inlog direct essentiële informatie zien, zoals allergieën, medicijnen, aandoeningen en vertrouwde contactpersonen. Een extra toegangsniveau voor medische professionals wordt nog ontwikkeld en getest....",
-     "score": 10,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/nl/15-jarige-ontwikkelt-qr-code-met-medische-noodinformatie-1793383664855tzeakr9sr.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261031-lifestyle",
+     "titel": "Van blaffende hulphond tot basketballende otters: het goede nieuws van deze week",
+     "categorie": "Lifestyle",
+     "dag": "2026-10-31",
+     "url": "https://brightnews.online/articles/nl/van-blaffende-hulphond-tot-basketballende-otters-het-goede-nieuws-van-deze-week-dg-20261031-lifestyle.html"
+    },
     {
      "id": "dg-20261030-science",
      "titel": "Samenwerken, snel denken en slim verdedigen: wetenschapsnieuws van eind oktober",
@@ -94,6 +101,14 @@
   "en": {
    "top": [
     {
+     "id": "1793555084446w70x69w4f",
+     "titel": "Howell High School fills football field with donations for food banks",
+     "teaser": "Hundreds of students from Howell High School in New Jersey collected more than a quarter million pounds of food last week during the second edition of the 100-Yard Food Drive Challenge. Thousands of bright yellow donation bags covered the school's football field from end zone to end zone, marking the largest food collection ever for nonprofit organization Dermer Dreams. Co-founder...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/howell-high-school-fills-football-field-with-donations-for-food-banks-1793555084446w70x69w4f.html"
+    },
+    {
      "id": "1793421296769hs16l0ker",
      "titel": "Veteran receives restored Hyundai Elantra from students",
      "teaser": "Navy veteran Robert Hanson from Minneapolis had been without his own car for more than two years. Due to severe asthma and fibromyalgia, conditions that developed after his service with the U.S. Marine Corps (1993-1997), traveling by public transportation was extremely difficult for him. Through a referral from a social services agency in Hennepin County, he became eligible for the...",
@@ -124,17 +139,16 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/halloween-skeletons-raise-2-million-dollars-for-st-jude-1793383718920rpe7lsbzj.html"
-    },
-    {
-     "id": "1793383664855tzeakr9sr",
-     "titel": "15-year-old develops QR code with medical emergency information",
-     "teaser": "After a classmate collapsed at school and no one knew her medical details, 15-year-old Aanya Mansani from Texas developed the platform Emergen. Via a QR code on an ID badge, backpack or phone case, for example, bystanders can see essential information directly without an app or login, such as allergies, medications, conditions and trusted contacts. An additional access level for...",
-     "score": 10,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/en/15-year-old-develops-qr-code-with-medical-emergency-information-1793383664855tzeakr9sr.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261031-lifestyle",
+     "titel": "From barking service dogs to basketball-playing otters: the good news of this week",
+     "categorie": "Lifestyle",
+     "dag": "2026-10-31",
+     "url": "https://brightnews.online/articles/en/from-barking-service-dogs-to-basketball-playing-otters-the-good-news-of-this-wee-dg-20261031-lifestyle.html"
+    },
     {
      "id": "dg-20261030-science",
      "titel": "Collaboration, quick thinking and smart defense: science news from late October",
@@ -182,6 +196,14 @@
   "de": {
    "top": [
     {
+     "id": "1793555084446w70x69w4f",
+     "titel": "Howell High School füllt Fußballfeld mit Spenden für Lebensmittelbanken",
+     "teaser": "Hunderte Schüler der Howell High School in New Jersey sammelten in der vergangenen Woche mehr als eine Viertelmillion Pfund Lebensmittel während der zweiten Ausgabe der 100-Yard Food Drive Challenge. Tausende leuchtend gelbe Spendendtüten bedeckten das Fußballfeld der Schule von Endzone zu Endzone – die größte Lebensmittelsammlung aller Zeiten für die gemeinnützige Organisation Dermer Dreams. Mitbegründer Dan Dermer sagte, dass die...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/howell-high-school-fullt-fu-ballfeld-mit-spenden-fur-lebensmittelbanken-1793555084446w70x69w4f.html"
+    },
+    {
      "id": "1793421296769hs16l0ker",
      "titel": "Veteran erhält aufgearbeiteten Hyundai Elantra von Studierenden",
      "teaser": "Der Marineveteran Robert Hanson aus Minneapolis hatte mehr als zwei Jahre lang kein eigenes Auto. Aufgrund von schwerem Asthma und Fibromyalgie, die nach seinem Dienst bei der United States Marine Corps (1993–1997) auftraten, war die Nutzung öffentlicher Verkehrsmittel für ihn sehr schwierig. Über eine Empfehlung eines Wohlfahrtsdienstes im Hennepin County kam er für das Recycled Rides for Schools-Programm des National...",
@@ -212,17 +234,16 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/halloween-skelette-sammeln-2-millionen-dollar-fur-st-jude-1793383718920rpe7lsbzj.html"
-    },
-    {
-     "id": "1793383664855tzeakr9sr",
-     "titel": "15-Jährige entwickelt QR-Code mit medizinischen Notfallinformationen",
-     "teaser": "Nachdem eine Mitschülerin in der Schule ohnmächtig wurde und niemand ihre medizinischen Daten kannte, entwickelte die 15-jährige Aanya Mansani aus Texas die Plattform Emergen. Über einen QR-Code auf beispielsweise einem ID-Badge, Rucksack oder Handyhülle können Umstehende ohne App oder Login direkt wichtige Informationen einsehen, wie Allergien, Medikamente, Erkrankungen und vertrauenswürdige Kontaktpersonen. Eine zusätzliche Zugangsebene für medizinisches Fachpersonal wird noch entwickelt...",
-     "score": 10,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/de/15-jahrige-entwickelt-qr-code-mit-medizinischen-notfallinformationen-1793383664855tzeakr9sr.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261031-lifestyle",
+     "titel": "Von bellenden Assistenzhunden bis zu basketballspielenden Ottern: die guten Nachrichten dieser Woche",
+     "categorie": "Lifestyle",
+     "dag": "2026-10-31",
+     "url": "https://brightnews.online/articles/de/von-bellenden-assistenzhunden-bis-zu-basketballspielenden-ottern-die-guten-nachr-dg-20261031-lifestyle.html"
+    },
     {
      "id": "dg-20261030-science",
      "titel": "Zusammenarbeit, schnelles Denken und intelligente Verteidigung: Wissenschaftsnachrichten von Ende Oktober",
@@ -270,6 +291,14 @@
   "fr": {
    "top": [
     {
+     "id": "1793555084446w70x69w4f",
+     "titel": "Howell High School remplit son terrain de football de dons pour les banques alimentaires",
+     "teaser": "Des centaines d'élèves de Howell High School dans le New Jersey ont collecté la semaine dernière plus d'un quart de million de livres de nourriture lors de la deuxième édition du 100-Yard Food Drive Challenge. Des milliers de sacs de dons jaune vif couvraient le terrain de football de l'école d'une zone d'en-but à l'autre, la plus grande collecte alimentaire...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/howell-high-school-remplit-son-terrain-de-football-de-dons-pour-les-banques-alim-1793555084446w70x69w4f.html"
+    },
+    {
      "id": "1793421296769hs16l0ker",
      "titel": "Un vétéran reçoit une Hyundai Elantra rénovée de la part d'étudiants",
      "teaser": "Robert Hanson, vétéran de la marine américaine originaire de Minneapolis, n'avait pas eu sa propre voiture depuis plus de deux ans. En raison d'un asthme grave et d'une fibromyalgie apparus après son service dans la marine américaine (1993-1997), les transports en commun lui posaient d'énormes difficultés. Grâce à une recommandation d'un service d'aide sociale du comté de Hennepin, il a...",
@@ -300,17 +329,16 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/des-squelettes-d-halloween-recoltent-2-millions-de-dollars-pour-st-jude-1793383718920rpe7lsbzj.html"
-    },
-    {
-     "id": "1793383664855tzeakr9sr",
-     "titel": "Une adolescente de 15 ans développe un code QR avec informations médicales d'urgence",
-     "teaser": "Après qu'une camarade de classe se soit évanouie à l'école et que personne ne connaisse ses données médicales, Aanya Mansani, 15 ans, originaire du Texas, a développé la plateforme Emergen. Via un code QR sur un badge d'identité, un sac à dos ou une coque de téléphone par exemple, les passants peuvent voir directement les informations essentielles sans application ni...",
-     "score": 10,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/fr/une-adolescente-de-15-ans-developpe-un-code-qr-avec-informations-medicales-d-urg-1793383664855tzeakr9sr.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261031-lifestyle",
+     "titel": "Du chien d'assistance qui aboie aux loutres qui jouent au basketball : les bonnes nouvelles de la semaine",
+     "categorie": "Lifestyle",
+     "dag": "2026-10-31",
+     "url": "https://brightnews.online/articles/fr/du-chien-d-assistance-qui-aboie-aux-loutres-qui-jouent-au-basketball-les-bonnes-dg-20261031-lifestyle.html"
+    },
     {
      "id": "dg-20261030-science",
      "titel": "Collaborer, penser vite et se défendre intelligemment : l'actualité scientifique de fin octobre",
@@ -358,6 +386,14 @@
   "es": {
    "top": [
     {
+     "id": "1793555084446w70x69w4f",
+     "titel": "Howell High School llena el campo de fútbol con donaciones para bancos de alimentos",
+     "teaser": "Cientos de estudiantes de Howell High School en Nueva Jersey recopilaron la semana pasada más de un cuarto de millón de libras de alimentos durante la segunda edición del 100-Yard Food Drive Challenge. Miles de bolsas de donación amarillo brillante cubrieron el campo de fútbol de la escuela de una zona de anotación a la otra, la mayor recopilación de...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/howell-high-school-llena-el-campo-de-futbol-con-donaciones-para-bancos-de-alimen-1793555084446w70x69w4f.html"
+    },
+    {
      "id": "1793421296769hs16l0ker",
      "titel": "Veterano recibe Hyundai Elantra restaurado de estudiantes",
      "teaser": "Robert Hanson, veterano de la Marina de Minneapolis, llevaba más de dos años sin vehículo propio. Debido al asma grave y la fibromialgia que desarrolló tras su servicio en la Marina estadounidense (1993-1997), viajar en transporte público le resultaba muy difícil. A través de una derivación de un servicio de bienestar del condado de Hennepin, calificó para el programa Recycled...",
@@ -388,17 +424,16 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/esqueletos-de-halloween-recaudan-2-millones-de-dolares-para-st-jude-1793383718920rpe7lsbzj.html"
-    },
-    {
-     "id": "1793383664855tzeakr9sr",
-     "titel": "Adolescente de 15 años desarrolla código QR con información médica de emergencia",
-     "teaser": "Después de que una amiga se desmayara en la escuela y nadie conociera sus datos médicos, la adolescente Aanya Mansani de Texas desarrolló la plataforma Emergen. A través de un código QR en una identificación, mochila o funda de teléfono, los transeúntes pueden ver directamente información esencial sin aplicación ni inicio de sesión, como alergias, medicamentos, condiciones médicas y contactos...",
-     "score": 10,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/es/adolescente-de-15-anos-desarrolla-codigo-qr-con-informacion-medica-de-emergencia-1793383664855tzeakr9sr.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261031-lifestyle",
+     "titel": "Del perro de asistencia que ladra al nutria que juega al baloncesto: las buenas noticias de esta semana",
+     "categorie": "Lifestyle",
+     "dag": "2026-10-31",
+     "url": "https://brightnews.online/articles/es/del-perro-de-asistencia-que-ladra-al-nutria-que-juega-al-baloncesto-las-buenas-n-dg-20261031-lifestyle.html"
+    },
     {
      "id": "dg-20261030-science",
      "titel": "Colaborar, pensar rápido y defender con inteligencia: noticias científicas de finales de octubre",
