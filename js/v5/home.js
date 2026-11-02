@@ -7,6 +7,11 @@
 // toont alleen koppen; de foto's en samenvattingen staan dan al bovenaan.
 // Overdag is dat Gisteren, na het overzicht van vandaag is dat Vandaag. Is
 // het nieuwste overzicht ouder dan gisteren, dan tonen beide dagen foto's.
+//
+// Laadt het nieuws niet (fout, of na 10 seconden nog niets), dan de
+// foutstaat: "Het nieuws laadt even niet", één knop Opnieuw proberen, en de
+// onderwerpen als uitweg. Offline zegt de tekst dat we laden zodra er weer
+// verbinding is. Bekijken met ?staat=fout.
 
 (function () {
     'use strict';
@@ -112,18 +117,7 @@
     // ── Per onderwerp en einde ───────────────────────────────────────────
 
     function onderwerpen() {
-        const lijst = document.getElementById('onderwerpen');
-        lijst.replaceChildren();
-        for (const [cat, info] of Object.entries(B.CATEGORIEEN)) {
-            const li = el('li');
-            // De categoriepagina's bestaan in v5 nog niet: zonder adres.
-            const a = B.link(null, 'topic-link');
-            a.appendChild(B.icoon(info.icoon));
-            a.appendChild(el('span', null, B.categorieLabel(cat)));
-            a.appendChild(B.icoon('chevron_right', 'topic-link__chevron'));
-            li.appendChild(a);
-            lijst.appendChild(li);
-        }
+        B.onderwerpLinks(document.getElementById('onderwerpen'));
     }
 
     function einde(ochtend) {
@@ -139,9 +133,42 @@
 
     // ── Pagina ───────────────────────────────────────────────────────────
 
+    const GEDULD = 10000;
+    const NIEUWSBLOKKEN = ['dagoverzicht', 'vandaag', 'gisteren', 'einde'];
+
+    function metGeduld(belofte) {
+        return Promise.race([
+            belofte,
+            new Promise((_, nee) => setTimeout(() => nee(new Error('time-out')), GEDULD)),
+        ]);
+    }
+
+    // Fout: de nieuwsblokken weg, de foutstaat met de onderwerpen eronder.
+    // Bij null alles terug zoals het hoort.
+    function foutstaat(aan) {
+        const blok = document.getElementById('home-fout');
+        blok.hidden = !aan;
+        document.getElementById('home-kop').hidden = aan;
+        NIEUWSBLOKKEN.forEach(id => { if (aan) document.getElementById(id).hidden = true; });
+        ['vandaag', 'gisteren', 'einde'].forEach(id => { if (!aan) document.getElementById(id).hidden = false; });
+        if (aan) document.body.dataset.pagina = 'fout';
+        else delete document.body.dataset.pagina;
+        document.getElementById('home-fout-lead').textContent = t(navigator.onLine === false ? 'v5_fout_offline' : 'v5_fout_lead');
+    }
+
     async function teken() {
         document.title = `${t('v5_titel_nieuws')} · BrightNews`;
-        const feed = await B.laadFeed();
+        let feed;
+        try {
+            if (B.param('staat') === 'fout') throw new Error('voorbeeld');
+            feed = await metGeduld(B.laadFeed());
+        } catch (fout) {
+            console.warn('BrightNews v5: nieuws laadt niet', fout);
+            foutstaat(true);
+            onderwerpen();
+            return;
+        }
+        foutstaat(false);
         const dag0 = B.vandaag();
         const dag1 = B.verschuif(dag0, -1);
         const dagen = B.perDag(feed);
@@ -180,6 +207,14 @@
     }
 
     B.start(teken);
+
+    document.getElementById('home-fout-opnieuw').addEventListener('click', () => {
+        if (window.wisselTaal) window.wisselTaal(B.taal());
+    });
+    // Weer online: vanzelf opnieuw proberen.
+    window.addEventListener('online', () => {
+        if (!document.getElementById('home-fout').hidden && window.wisselTaal) window.wisselTaal(B.taal());
+    });
 
     // Terug van een artikel (ook uit de cache van de browser): de voortgang
     // opnieuw tellen.

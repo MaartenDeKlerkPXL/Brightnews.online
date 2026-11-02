@@ -315,9 +315,12 @@ body[data-pagina="wachtwoord"] :is(.navbar__acties, .mobiel-menu__account) .btn 
 }
 
 /* Op Contact en Feedback is de knop van het formulier de enige primaire
-   knop; "Probeer Premium" in de header verdwijnt daar. */
+   knop; "Probeer Premium" in de header verdwijnt daar. Net zo op 404 en de
+   foutstaat van de homepage (data-pagina="fout", gezet door home.js). */
 body[data-pagina="contact"] :is(.navbar, .mobiel-menu) .btn--primary,
-body[data-pagina="feedback"] :is(.navbar, .mobiel-menu) .btn--primary {
+body[data-pagina="feedback"] :is(.navbar, .mobiel-menu) .btn--primary,
+body[data-pagina="404"] :is(.navbar, .mobiel-menu) .btn--primary,
+body[data-pagina="fout"] :is(.navbar, .mobiel-menu) .btn--primary {
     display: none;
 }
 
@@ -2687,6 +2690,16 @@ body[data-pagina="bedankt"] :is(.navbar, .mobiel-menu) .btn--primary {
     box-shadow: var(--focus-ring);
 }
 
+/* State=Disabled: staat vast (Noodzakelijk in de cookiebalk). Gedimd, maar
+   het label blijft leesbaar. */
+.toggle:has(input:disabled) {
+    cursor: default;
+}
+
+.toggle input:disabled + .toggle__baan {
+    opacity: 0.5;
+}
+
 
 /* ── Credit meter ──────────────────────────────────────────────────────
    Leestegoed van een gratis account: vijf segmenten, gelezen in groen.
@@ -2823,4 +2836,168 @@ body[data-pagina="bedankt"] :is(.navbar, .mobiel-menu) .btn--primary {
     .site-footer__merk {
         grid-column: 1 / -1;
     }
+}
+
+
+/* ── Cookie bar ────────────────────────────────────────────────────────
+   Vast onderaan het scherm, zonder donkere laag: de pagina blijft
+   bruikbaar en de focus wordt niet vastgehouden (role="region"). De enige
+   onderbreking op de site. "Alleen noodzakelijk" en "Alles accepteren" zijn
+   allebei secundair en even groot: weigeren is net zo makkelijk. Twee
+   weergaven: de balk, en uitgeklapt met de keuzes (data-weergave). */
+
+.cookie-bar {
+    position: fixed;
+    inset: auto 0 0;
+    z-index: 40;
+    padding-block: var(--spacing-xl);
+    border-top: var(--border-width-sm) solid var(--border-default);
+    background: var(--surface-default);
+    box-shadow: 0 -8px 16px rgb(0 0 0 / 0.06);
+}
+
+.cookie-bar[hidden] {
+    display: none;
+}
+
+.cookie-bar__binnen {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2xl);
+}
+
+.cookie-bar[data-weergave="instellingen"] .cookie-bar__binnen {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-lg);
+}
+
+.cookie-bar__tekst {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: var(--spacing-2xs);
+    min-width: 0;
+}
+
+.cookie-bar__titel {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+}
+
+.cookie-bar__uitleg {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--spacing-2xs) var(--spacing-md);
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.cookie-bar__uitleg a {
+    color: var(--text-link);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.cookie-bar__kort,
+.cookie-bar__instellingen-kort {
+    display: none;
+}
+
+.cookie-bar__keuzes {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.cookie-bar__keuze {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xs);
+}
+
+.cookie-bar__keuze .toggle {
+    font-weight: 600;
+}
+
+.cookie-bar__keuze p {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.cookie-bar__knoppen {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+/* Per weergave alleen de eigen keuzes en knoppen. */
+.cookie-bar[data-weergave="balk"] :is(.cookie-bar__keuzes, [data-cookie="opslaan"]),
+.cookie-bar[data-weergave="instellingen"] :is([data-cookie="instellingen"], [data-cookie="noodzakelijk"], .cookie-bar__instellingen-kort) {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .cookie-bar {
+        padding-block: var(--spacing-lg);
+    }
+
+    .cookie-bar__binnen,
+    .cookie-bar[data-weergave="instellingen"] .cookie-bar__binnen {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--spacing-sm);
+    }
+
+    .cookie-bar__lang,
+    .cookie-bar__knoppen [data-cookie="instellingen"] {
+        display: none;
+    }
+
+    .cookie-bar__kort,
+    .cookie-bar__instellingen-kort {
+        display: inline;
+    }
+
+    .cookie-bar__instellingen-kort {
+        display: inline-flex;
+    }
+
+    .cookie-bar__uitleg {
+        gap: var(--spacing-xs) var(--spacing-md);
+    }
+
+    .cookie-bar__kort {
+        flex-basis: 100%;
+    }
+
+    .cookie-bar__knoppen {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+
+    .cookie-bar__knoppen .btn {
+        width: 100%;
+    }
+}
+
+/* Een knop die eruitziet als een footerlink (Cookie-instellingen). */
+.footer-kolom .footer-knop {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--text-secondary);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.footer-kolom .footer-knop:hover {
+    color: var(--text-primary);
+    text-decoration: underline;
 }

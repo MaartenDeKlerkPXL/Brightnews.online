@@ -1134,3 +1134,318 @@
 .feedback__samenvatting {
     color: var(--text-secondary);
 }
+
+
+/* ── Juridische pagina's ─────────────────────────────────────────────────
+   Inhoudsopgave links (layout/toc-width: 280), tekst rechts in de
+   leesbreedte (720), 80 ertussen. De inhoudsopgave schuift mee (sticky).
+   Onder 1024 staat hij ingeklapt boven de tekst en staan de andere
+   documenten onderaan. */
+
+.juridisch {
+    --layout-toc-width: 280px;
+    padding-block: var(--section-xs) var(--section-md);
+}
+
+.juridisch__binnen {
+    display: grid;
+    grid-template-columns: var(--layout-toc-width) minmax(0, var(--layout-reading-width));
+    align-items: start;
+    gap: var(--section-sm);
+}
+
+.juridisch__toc {
+    position: sticky;
+    top: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.juridisch__toc-details summary {
+    display: none;
+}
+
+.juridisch__toc-kop--breed {
+    margin-bottom: calc(var(--spacing-md) - var(--spacing-xl));
+}
+
+.juridisch__toc-details {
+    border: 0;
+}
+
+.juridisch__toc-kop {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 600;
+}
+
+.juridisch__toc-details > .juridisch__toc-lijst {
+    margin-top: 0;
+}
+
+.juridisch__toc .juridisch__toc-details::before {
+    content: none;
+}
+
+.juridisch__toc-lijst {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.juridisch__toc-lijst a {
+    display: block;
+    padding: var(--spacing-xs) 0 var(--spacing-xs) var(--spacing-sm);
+    border-left: var(--border-width-sm) solid var(--border-default);
+    color: var(--text-link);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.juridisch__toc-lijst a:hover {
+    text-decoration: underline;
+}
+
+.juridisch__toc-lijst a[aria-current] {
+    border-left: 3px solid var(--action-primary-bg);
+    padding-left: calc(var(--spacing-sm) - 2px);
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.juridisch__andere {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.juridisch__andere ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.juridisch__andere a,
+.juridisch__link {
+    color: var(--text-link);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.juridisch__andere a {
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.juridisch__andere--smal {
+    display: none;
+}
+
+.juridisch__tekst {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xl);
+    min-width: 0;
+}
+
+.juridisch__kop {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.juridisch__meta {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.juridisch__kort {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    background: var(--surface-subtle);
+}
+
+.juridisch__kort h2,
+.juridisch__h3 {
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+}
+
+.juridisch__sectie {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    scroll-margin-top: var(--spacing-xl);
+}
+
+.juridisch__sectie > p,
+.juridisch__lijst {
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-28);
+}
+
+.juridisch__lijst {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    margin: 0;
+    padding-left: var(--spacing-lg);
+}
+
+button.juridisch__link {
+    padding: 0;
+    border: 0;
+    background: none;
+    font: inherit;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media (max-width: 1023px) {
+    .juridisch {
+        --layout-toc-width: 358px;
+    }
+
+    .juridisch__binnen {
+        grid-template-columns: minmax(0, 1fr);
+        gap: var(--spacing-xl);
+    }
+
+    .juridisch__toc {
+        position: static;
+        max-width: var(--layout-toc-width);
+    }
+
+    .juridisch__toc-details {
+        border-block: var(--border-width-sm) solid var(--border-default);
+    }
+
+    .juridisch__toc-details summary {
+        display: flex;
+    }
+
+    .juridisch__toc-details summary .juridisch__toc-kop {
+        color: var(--text-primary);
+        font-size: var(--font-size-16);
+        line-height: var(--line-height-24);
+    }
+
+    .juridisch__toc-details > .juridisch__toc-lijst {
+        padding-bottom: var(--spacing-md);
+    }
+
+    .juridisch__andere--breed,
+    .juridisch__toc-kop--breed {
+        display: none;
+    }
+
+    .juridisch__andere--smal {
+        display: flex;
+        padding-top: var(--spacing-xl);
+        border-top: var(--border-width-sm) solid var(--border-default);
+    }
+}
+
+
+/* ── Statuspagina's (404, Afmelden) en de foutstaat van de homepage ──────
+   Eén kolom met een groot rond icoon, een titel in gewone taal en een
+   uitweg. 404 en de foutstaat staan op het witte vlak (720 breed); Afmelden
+   is een formulierpagina (480). */
+
+.status-pagina {
+    padding-block: var(--section-md);
+}
+
+.status-pagina__kolom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xl);
+}
+
+/* Links in de container; alleen de inhoud blijft binnen 720. */
+.status-pagina__kolom > * {
+    max-width: var(--layout-reading-width);
+}
+
+.status-pagina__tekst {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.status-pagina__tekst p:not(.type-overline),
+.status-pagina__hint {
+    color: var(--text-secondary);
+}
+
+.status-pagina__onderwerpen {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.status-icoon--fout {
+    background: var(--feedback-error-bg);
+    color: var(--feedback-error-fg);
+}
+
+/* Afmelden gelukt: uitleg in gewone tekst, 16 tussen tekst en knoppen. */
+.afmelden__kaart {
+    gap: var(--spacing-md);
+}
+
+/* Afmelden mislukt: drie andere routes, met een lijn ertussen. */
+.opties {
+    margin: 0 0 var(--spacing-xs);
+    padding: 0;
+    list-style: none;
+}
+
+.opties li {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xs);
+    padding-block: var(--spacing-sm);
+    border-top: var(--border-width-sm) solid var(--border-default);
+}
+
+.opties h3 {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+}
+
+.opties p {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.knoppen-rij .tekstlink {
+    align-self: center;
+}
+
+/* Homepage: de foutstaat staat boven Per onderwerp, met 80 eronder. */
+.home-fout {
+    padding-block: var(--section-md) var(--section-sm);
+}
+
+.home-fout[hidden] {
+    display: none;
+}

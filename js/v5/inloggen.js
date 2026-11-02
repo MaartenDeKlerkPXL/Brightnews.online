@@ -19,7 +19,7 @@
     'use strict';
 
     const B = window.BN5;
-    const { t, el } = B;
+    const { t } = B;
     const MIN_WACHTWOORD = 8;
 
     const $ = id => document.getElementById(id);
@@ -72,14 +72,13 @@
     }
 
     // "Met deze knop ga je akkoord met de {voorwaarden} en de {privacy}." De
-    // links staan op de plek van de plaatshouders; zonder adres, want die
-    // pagina's bestaan in v5 nog niet.
+    // links staan op de plek van de plaatshouders.
     function akkoordZin() {
         const p = $('in-akkoord');
         p.replaceChildren();
         t('v5_in_akkoord').split(/(\{voorwaarden\}|\{privacy\})/).forEach(deel => {
-            if (deel === '{voorwaarden}') p.appendChild(el('a', null, t('v5_abo_voorwaarden')));
-            else if (deel === '{privacy}') p.appendChild(el('a', null, t('v5_in_privacy')));
+            if (deel === '{voorwaarden}') p.appendChild(B.link(B.url.voorwaarden(), null, t('v5_abo_voorwaarden')));
+            else if (deel === '{privacy}') p.appendChild(B.link(B.url.privacy(), null, t('v5_in_privacy')));
             else if (deel) p.appendChild(document.createTextNode(deel));
         });
     }

@@ -582,8 +582,8 @@
                 <div class="invoer"><label class="invoer__label" for="gids-ta-2">Bericht</label><textarea class="invoer__veld invoer__veld--tekstvak" id="gids-ta-2" rows="3" aria-invalid="true" aria-describedby="gids-ta-2-teller gids-ta-2-fout"></textarea><p class="invoer__teller" id="gids-ta-2-teller">0 van 2000 tekens</p><p class="field-error" id="gids-ta-2-fout"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#error"/></svg><span>Schrijf een bericht van minstens een paar woorden.</span></p></div>
                 <span class="gids__label">Alert Warning</span>
                 <div class="alert alert--waarschuwing"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#info"/></svg><div class="alert__inhoud"><p class="alert__titel">Meld je niet opnieuw aan</p><p class="alert__tekst">Ververs de pagina over een minuut. Je betaalt niets dubbel.</p></div></div>
-                <span class="gids__label">Statusicoon: gelukt, bezig, wachten</span>
-                <div class="knoppen-rij"><span class="status-icoon"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#check_circle"/></svg></span><span class="status-icoon status-icoon--gedempt status-icoon--draait"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#progress_activity"/></svg></span><span class="status-icoon status-icoon--wacht"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#schedule"/></svg></span></div>
+                <span class="gids__label">Statusicoon: gelukt, bezig, wachten, fout</span>
+                <div class="knoppen-rij"><span class="status-icoon status-icoon--fout"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#error"/></svg></span><span class="status-icoon"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#check_circle"/></svg></span><span class="status-icoon status-icoon--gedempt status-icoon--draait"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#progress_activity"/></svg></span><span class="status-icoon status-icoon--wacht"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#schedule"/></svg></span></div>
             </div>
             <div class="gids__voorbeeld gids__smal" style="flex: 1 1 400px">
                 <span class="gids__label">Feature card, met en zonder link</span>
@@ -593,6 +593,9 @@
                 <span class="gids__label">Vinkjeslijst: wel en niet</span>
                 <ul class="vinklijst" role="list"><li><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg><span>De bron, met een link</span></li></ul>
                 <ul class="vinklijst vinklijst--nee" role="list"><li><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#close"/></svg><span>Reclame en productnieuws</span></li></ul>
+                <span class="gids__label">Toggle uitgeschakeld (vast aan)</span>
+                <label class="toggle"><input class="visueel-verborgen" type="checkbox" role="switch" checked disabled><span class="toggle__baan" aria-hidden="true"></span><span>Noodzakelijk</span></label>
+                <p class="gids__noot">De Cookie bar staat onderaan elke v5-pagina (partials/v5/footer.html). Opnieuw openen kan via Cookie-instellingen in de footer.</p>
                 <span class="gids__label">Snelle routes</span>
                 <ul class="routes" role="list"><li class="route"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#flag"/></svg><div class="route__tekst"><h3 class="route__titel">Fout in een artikel?</h3><p>Meld het bij het artikel of via Feedback.</p><a class="route__link" href="#">Naar Feedback</a></div></li></ul>
             </div>
@@ -657,7 +660,7 @@
                     <li><a href="/v5-over-ons.html"><span data-i18n="schil_over_ons">Over ons</span></a></li>
                     <li><a href="/v5-zo-kiezen-we.html"><span data-i18n="schil_zo_kiezen_we">Zo kiezen we</span></a></li>
                     <li><a href="/v5-abonnementen.html"><span data-i18n="schil_premium">Premium</span></a></li>
-                    <li><a><span data-i18n="schil_privacy_voorwaarden">Privacy en voorwaarden</span></a></li>
+                    <li><a href="/v5-privacy.html"><span data-i18n="schil_privacy_voorwaarden">Privacy en voorwaarden</span></a></li>
                 </ul>
             </nav>
 
@@ -667,7 +670,8 @@
                     <li><a><span data-i18n="schil_instellingen">Instellingen</span></a></li>
                     <li><a href="/v5-contact.html"><span data-i18n="schil_contact">Contact</span></a></li>
                     <li><a href="/v5-feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
-                    <li><a><span data-i18n="schil_terugbetalingen">Terugbetalingen</span></a></li>
+                    <li><a href="/v5-refundbeleid.html"><span data-i18n="schil_terugbetalingen">Terugbetalingen</span></a></li>
+                    <li><button class="footer-knop" type="button" data-cookie-instellingen><span data-i18n="v5_ck_footer">Cookie-instellingen</span></button></li>
                 </ul>
             </nav>
         </div>
@@ -678,6 +682,39 @@
         </div>
     </div>
 </footer>
+
+<!-- Cookiebalk (Figma: Cookie bar, Balk en Instellingen). Verschijnt zolang
+     er geen keuze is, of de keuze ouder is dan 12 maanden. Geen pop-up:
+     vast onderaan, zonder donkere laag. Gedrag: js/v5/schil.js. -->
+<section class="cookie-bar" id="cookiebalk" data-weergave="balk" aria-labelledby="cookiebalk-titel" hidden>
+    <div class="container cookie-bar__binnen">
+        <div class="cookie-bar__tekst">
+            <h2 class="cookie-bar__titel" id="cookiebalk-titel" data-i18n="v5_ck_titel">Cookies op BrightNews</h2>
+            <p class="cookie-bar__uitleg">
+                <span class="cookie-bar__lang" data-i18n="v5_ck_tekst">We gebruiken cookies die nodig zijn om de site te laten werken. Andere cookies alleen als jij dat goed vindt.</span>
+                <span class="cookie-bar__kort" data-i18n="v5_ck_tekst_kort">Nodig voor de site. Statistieken alleen met jouw toestemming.</span>
+                <a href="/v5-privacy.html#cookies"><span data-i18n="v5_ck_lees">Lees de privacyverklaring</span></a>
+                <button class="btn btn--tertiary btn--sm cookie-bar__instellingen-kort" type="button" data-cookie="instellingen" aria-expanded="false" aria-controls="cookiebalk-keuzes"><span data-i18n="v5_ck_instellingen">Instellingen</span></button>
+            </p>
+        </div>
+        <div class="cookie-bar__keuzes" id="cookiebalk-keuzes">
+            <div class="cookie-bar__keuze">
+                <label class="toggle"><input class="visueel-verborgen" type="checkbox" role="switch" checked disabled aria-describedby="cookie-noodzakelijk-uitleg"><span class="toggle__baan" aria-hidden="true"></span><span data-i18n="v5_ck_noodzakelijk">Noodzakelijk</span></label>
+                <p id="cookie-noodzakelijk-uitleg" data-i18n="v5_ck_noodzakelijk_uitleg">Om in te loggen en je taal en weergave te onthouden. Staat altijd aan.</p>
+            </div>
+            <div class="cookie-bar__keuze">
+                <label class="toggle"><input class="visueel-verborgen" type="checkbox" role="switch" id="cookie-statistieken" aria-describedby="cookie-statistieken-uitleg"><span class="toggle__baan" aria-hidden="true"></span><span data-i18n="v5_ck_statistieken">Statistieken</span></label>
+                <p id="cookie-statistieken-uitleg" data-i18n="v5_ck_statistieken_uitleg">Anoniem meten welke pagina’s worden gelezen, zodat we de site kunnen verbeteren.</p>
+            </div>
+        </div>
+        <div class="cookie-bar__knoppen">
+            <button class="btn btn--tertiary" type="button" data-cookie="instellingen" aria-expanded="false" aria-controls="cookiebalk-keuzes"><span data-i18n="v5_ck_instellingen">Instellingen</span></button>
+            <button class="btn btn--secondary" type="button" data-cookie="noodzakelijk"><span data-i18n="v5_ck_noodzakelijk_knop">Alleen noodzakelijk</span></button>
+            <button class="btn btn--secondary" type="button" data-cookie="opslaan"><span data-i18n="v5_ck_opslaan">Keuze opslaan</span></button>
+            <button class="btn btn--secondary" type="button" data-cookie="alles"><span data-i18n="v5_ck_alles">Alles accepteren</span></button>
+        </div>
+    </div>
+</section>
 <!-- /schil:v5-footer -->
 <script src="/data/translations.js" defer></script>
 <script src="/js/v5/schil.js" defer></script>

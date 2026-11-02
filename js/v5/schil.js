@@ -11,6 +11,11 @@
 //   bn-thema          'licht' | 'donker' (afwezig = systeem volgen)
 //   selectedLanguage  'nl' | 'en' | 'de' | 'fr' | 'es'
 // partials/thema-head.html leest bn-thema al vóór de eerste weergave.
+//
+// Daarnaast de cookiebalk (onderaan partials/v5/footer.html). Zelfde sleutel
+// als de live site, zodat een keuze op beide geldt:
+//   brightNews_cookies        'accepted' (statistieken aan) | 'essential'
+//   brightNews_cookies_datum  dag van de keuze; na 12 maanden vragen we opnieuw
 
 (function () {
     'use strict';
@@ -201,6 +206,98 @@
         });
     }
 
+    // ── Cookiebalk ───────────────────────────────────────────────────────
+
+    const COOKIE_SLEUTEL = 'brightNews_cookies';
+    const COOKIE_DATUM = 'brightNews_cookies_datum';
+    const COOKIE_GELDIG_DAGEN = 365;
+
+    function cookieKeuze() {
+        const keuze = lees(COOKIE_SLEUTEL);
+        if (keuze !== 'accepted' && keuze !== 'essential') return null;
+        // Een keuze van de live site heeft (nog) geen datum: die geldt.
+        const datum = Date.parse(lees(COOKIE_DATUM) || '');
+        if (datum && Date.now() - datum > COOKIE_GELDIG_DAGEN * 864e5) return null;
+        return keuze;
+    }
+
+    // Statistieken (Google Analytics) laden kan pas als de CSP van de
+    // v5-pagina's Google toestaat; dat gebeurt bij de lancering (TODO punt
+    // 66). Tot dan meldt de balk de keuze alleen als gebeurtenis.
+    function bewaarCookies(keuze) {
+        schrijf(COOKIE_SLEUTEL, keuze);
+        schrijf(COOKIE_DATUM, new Date().toISOString().slice(0, 10));
+        document.dispatchEvent(new CustomEvent('bn:cookies', { detail: { statistieken: keuze === 'accepted' } }));
+    }
+
+    function koppelCookiebalk() {
+        const balk = document.getElementById('cookiebalk');
+        if (!balk) return;
+        const statistieken = document.getElementById('cookie-statistieken');
+        const knoppen = [...balk.querySelectorAll('[data-cookie="instellingen"]')];
+
+        // De balk ligt over de onderkant van de pagina; zoveel ruimte houdt
+        // de pagina eronder vrij, zodat de footer leesbaar blijft.
+        const ruimte = new ResizeObserver(() => {
+            document.body.style.paddingBottom = balk.hidden ? '' : `${balk.offsetHeight}px`;
+        });
+        ruimte.observe(balk);
+
+        function weergave(welke) {
+            balk.dataset.weergave = welke;
+            knoppen.forEach(k => k.setAttribute('aria-expanded', String(welke === 'instellingen')));
+        }
+
+        function open(welke) {
+            statistieken.checked = cookieKeuze() === 'accepted';
+            weergave(welke);
+            balk.hidden = false;
+            document.body.style.paddingBottom = `${balk.offsetHeight}px`;
+        }
+
+        function sluit(keuze) {
+            bewaarCookies(keuze);
+            const hadFocus = balk.contains(document.activeElement);
+            balk.hidden = true;
+            document.body.style.paddingBottom = '';
+            // De focus niet laten verdwijnen met de balk.
+            if (hadFocus) {
+                const main = document.getElementById('inhoud');
+                if (main) {
+                    if (!main.hasAttribute('tabindex')) main.setAttribute('tabindex', '-1');
+                    main.focus({ preventScroll: true });
+                }
+            }
+        }
+
+        balk.addEventListener('click', e => {
+            const knop = e.target.closest('[data-cookie]');
+            if (!knop) return;
+            const actie = knop.dataset.cookie;
+            if (actie === 'instellingen') {
+                weergave('instellingen');
+                statistieken.focus();
+            } else if (actie === 'noodzakelijk') {
+                sluit('essential');
+            } else if (actie === 'opslaan') {
+                sluit(statistieken.checked ? 'accepted' : 'essential');
+            } else if (actie === 'alles') {
+                sluit('accepted');
+            }
+        });
+
+        // Opnieuw openen: "Cookie-instellingen" in de footer en "Cookie-
+        // instellingen aanpassen" in de privacyverklaring (ook als die later
+        // in de pagina komt).
+        document.addEventListener('click', e => {
+            if (!e.target.closest('[data-cookie-instellingen]')) return;
+            open('instellingen');
+            statistieken.focus();
+        });
+
+        if (!cookieKeuze()) open('balk');
+    }
+
     function start() {
         markeerHuidigePagina();
         zetJaartal();
@@ -211,6 +308,7 @@
         }
         koppelPaneel();
         document.querySelectorAll('[role="radiogroup"][data-instelling]').forEach(koppelGroep);
+        koppelCookiebalk();
     }
 
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);

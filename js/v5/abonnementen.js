@@ -20,7 +20,7 @@
     'use strict';
 
     const B = window.BN5;
-    const { t, el } = B;
+    const { t } = B;
     const PROEF_DAGEN = 30;
 
     const formulier = document.getElementById('abo-formulier');
@@ -45,13 +45,13 @@
 
     // "Met deze knop ga je akkoord met de {voorwaarden} en het {refund}."
     // De woordvolgorde verschilt per taal, dus de links komen op de plek van
-    // de plaatshouders. Zonder adres: die pagina's bestaan in v5 nog niet.
+    // de plaatshouders.
     function akkoordZin() {
         const p = document.getElementById('abo-akkoord');
         p.replaceChildren();
         t('v5_abo_akkoord').split(/(\{voorwaarden\}|\{refund\})/).forEach(deel => {
-            if (deel === '{voorwaarden}') p.appendChild(el('a', null, t('v5_abo_voorwaarden')));
-            else if (deel === '{refund}') p.appendChild(el('a', null, t('v5_abo_refund')));
+            if (deel === '{voorwaarden}') p.appendChild(B.link(B.url.voorwaarden(), null, t('v5_abo_voorwaarden')));
+            else if (deel === '{refund}') p.appendChild(B.link(B.url.refund(), null, t('v5_abo_refund')));
             else if (deel) p.appendChild(document.createTextNode(deel));
         });
     }

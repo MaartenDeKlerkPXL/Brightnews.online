@@ -1734,8 +1734,9 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      (`index.html`, `archief.html`, het artikelsjabloon) en die adressen in
      `partials/v5/` en `js/v5/gedeeld.js` (`url`) zetten. Sinds 2026-10-29
      linken de v5-pagina's alleen naar elkaar; een pagina die in v5 nog niet
-     bestaat (Thema's, de categorieën, Privacy en voorwaarden,
-     Terugbetalingen, artikelen van vóór de feed) staat er zonder link. Ook
+     bestaat (Thema's, de categorieën, artikelen van vóór de feed) staat er
+     zonder link. `v5-404.html` wordt dan `404.html` (GitHub Pages toont die
+     vanzelf). Ook
      de koppen van een oudere editie zijn daardoor nog geen links, terwijl
      de uitlegnotitie zegt dat elke kop het artikel opent.
   9. **Inloggen koppelen op `v5-inloggen.html`** (Supabase, Erik): inloglink
@@ -1787,6 +1788,27 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
       weggooien) plus een limiet per IP, geen captcha. Contact noemt
       bewust geen reactietermijn, e-mailadres of telefoonnummer; vul die
       in als ze er zijn.
+  14. **Afmelden voor mails koppelen op `v5-afmelden.html`**. De link uit de
+      mail moet zonder inloggen werken (token in de link), en de mails
+      krijgen een List-Unsubscribe-header (één klik in het mailprogramma).
+      Open: kan de link verlopen? "Toch weer aanmelden" zet de mails weer
+      aan; nu meldt de knop dat het voorbeeld niet gekoppeld is.
+  15. **Cookiebalk en Google Analytics** (sinds 2026-11-02 op elke
+      v5-pagina, onderaan `partials/v5/footer.html`). De keuze staat in
+      dezelfde sleutel als de live site (`brightNews_cookies`: `accepted` of
+      `essential`) plus `brightNews_cookies_datum`; na 12 maanden vraagt de
+      balk opnieuw. GA4 laden gebeurt nog niet: de CSP van de v5-pagina's
+      laat `googletagmanager.com` en `google-analytics.com` (nog) niet toe.
+      Bij de lancering: die hosts in de CSP zetten en `activateAnalytics()`
+      uit `index.js` aanroepen op de gebeurtenis `bn:cookies`
+      (`detail.statistieken`) en bij het laden als de keuze `accepted` is.
+  16. **Juridische teksten laten nakijken** (`v5-privacy.html`,
+      `v5-voorwaarden.html`, `v5-refundbeleid.html`, één sjabloon in
+      `js/v5/juridisch.js`). Alles tussen [haken] invullen (grondslagen,
+      bewaartermijnen, mailprovider, termijn bij wijzigingen) en het geheel
+      door een jurist laten controleren. De voorwaarden en het refundbeleid
+      volgen de huidige live teksten (14 dagen geld terug), aangevuld met de
+      proefperiode van 30 dagen.
 
   ### Opruimen in Figma als v3 gekozen is
 

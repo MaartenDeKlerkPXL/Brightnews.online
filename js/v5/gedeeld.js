@@ -287,6 +287,9 @@
         inloggen: () => '/v5-inloggen.html',
         contact: () => '/v5-contact.html',
         feedback: id => (id ? `/v5-feedback.html?artikel=${encodeURIComponent(id)}` : '/v5-feedback.html'),
+        privacy: () => '/v5-privacy.html',
+        voorwaarden: () => '/v5-voorwaarden.html',
+        refund: () => '/v5-refundbeleid.html',
     };
 
     // Houd ?vandaag= vast bij het doorklikken tussen de voorbeeldpagina's.
@@ -358,6 +361,21 @@
             else if (deel) fragment.appendChild(document.createTextNode(deel));
         });
         return fragment;
+    }
+
+    // De zes Topic links (homepage, 404, foutstaat). De categoriepagina's
+    // bestaan in v5 nog niet: zonder adres.
+    function onderwerpLinks(lijst) {
+        lijst.replaceChildren();
+        for (const [cat, info] of Object.entries(CATEGORIEEN)) {
+            const li = el('li');
+            const a = link(null, 'topic-link');
+            a.appendChild(icoon(info.icoon));
+            a.appendChild(el('span', null, categorieLabel(cat)));
+            a.appendChild(icoon('chevron_right', 'topic-link__chevron'));
+            li.appendChild(a);
+            lijst.appendChild(li);
+        }
     }
 
     function merkbeeld(klasse) {
@@ -643,7 +661,7 @@
         dagVan, vandaag, verschuif, isDagSleutel, dagLang, dagKort, dagMaand, weekdag, maandNaam, tijd, datumTijd, hoofdletter,
         aantalVerhalen, perDag, archiefPerDag, digestsVan, nieuwsteDigestDag, verhalenVanDigests, laatsteMoment,
         zonderVerwijzingen, eersteZinnen, url, metTestdag, categorieLabel,
-        el, icoon, link, knop, zinMetDelen, beeld, merkbeeld, storyCard, headlineItem, editieRaster, digestCard,
+        el, icoon, link, knop, zinMetDelen, onderwerpLinks, beeld, merkbeeld, storyCard, headlineItem, editieRaster, digestCard,
         aanwijzing, bronnenRegel, leeg, gelezen, markeerGelezen, deelBalk, origineelLink, start,
     };
 })();

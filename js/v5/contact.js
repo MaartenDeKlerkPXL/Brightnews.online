@@ -70,8 +70,7 @@
         bericht.placeholder = t('v5_ct_bericht_vb');
         teller();
 
-        // De privacyverklaring heeft nog geen v5-pagina: zonder adres.
-        $('ct-privacy').replaceChildren(B.zinMetDelen('v5_ct_privacy', { privacy: B.link(null, null, t('v5_in_privacy')) }));
+        $('ct-privacy').replaceChildren(B.zinMetDelen('v5_ct_privacy', { privacy: B.link(B.url.privacy(), null, t('v5_in_privacy')) }));
         const naar = { home: B.url.home(), feedback: B.url.feedback(), account: B.url.account(), inloggen: B.url.inloggen() };
         document.querySelectorAll('#inhoud [data-naar]').forEach(a => { a.href = B.metTestdag(naar[a.dataset.naar]); });
         if (antwoordNaar) $('ct-antwoord-naar').textContent = t('v5_ct_bedankt_tekst', { email: antwoordNaar });
