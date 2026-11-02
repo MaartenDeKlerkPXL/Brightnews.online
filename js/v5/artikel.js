@@ -1,12 +1,17 @@
-// Artikel van redesign v5 (Figma: v5 · Artikel — staat 3, tegoed op).
-// v5-artikel.html?id=<artikel-id>, uit data/news_<taal>.json.
+// Artikel van redesign v5 (Figma: v5 · Artikel — staat 1 t/m 4).
+// v5-artikel.html?id=<artikel-id>&staat=<1-4>, uit data/news_<taal>.json.
 //
-// Ontworpen is alleen staat 3: de lezer heeft zijn gratis artikelen deze
-// maand op. De paywall staat inline onder de samenvatting, nooit als pop-up.
-// Welke staat een lezer echt heeft, weet alleen de back-end (lees_artikel(),
-// zie PR #15); tot die koppeling er is toont deze voorbeeldpagina staat 3.
-// Met een paywall op de pagina wordt "Probeer Premium" in de header
-// secundair (besluit v5 · 18); dat regelt componenten.css.
+//   1  Premium: volledige tekst, geen paywall.
+//   2  Gratis account, tegoed over: volledige tekst en een rustige regel
+//      (Paywall type Credit).
+//   3  Gratis account, tegoed op: Premium, 30 dagen gratis (Subscribe).
+//   4  Niet ingelogd: gratis account maken (Account).
+// De paywall staat altijd inline, nooit als pop-up. Welke staat een lezer
+// echt heeft, weet alleen de back-end (lees_artikel(), zie PR #15); tot die
+// koppeling er is kies je hem met ?staat= (standaard 3). De volledige tekst
+// staat achter de paywall (articles_full); het voorbeeld toont daar de
+// samenvatting. Met een paywall op de pagina wordt "Probeer Premium" in de
+// header secundair (besluit v5 · 18); dat regelt componenten.css.
 
 (function () {
     'use strict';
@@ -62,6 +67,57 @@
         });
 
         blok.appendChild(B.link(B.url.abonnementen(), 'paywall__meer', t('v5_wat_premium')));
+        return blok;
+    }
+
+    // Paywall, type Credit: rustige regel onder de volledige tekst.
+    function tegoedRegel(over, totaal) {
+        const regel = el('div', 'paywall-credit');
+        const tekst = el('p', 'paywall-credit__tekst');
+        tekst.appendChild(B.icoon('info'));
+        tekst.appendChild(el('span', null, t('v5_paywall_tegoed', { x: over, n: totaal })));
+        regel.appendChild(tekst);
+        regel.appendChild(B.knop(B.url.abonnementen(), t('v5_onbeperkt_lezen'), { klasse: 'btn btn--secondary btn--sm', rechts: 'arrow_forward' }));
+        return regel;
+    }
+
+    // Paywall, type Account: niet ingelogd, gratis account zonder
+    // betaalgegevens. Het formulier gaat naar het tabblad Account maken.
+    function accountPaywall() {
+        const blok = el('section', 'paywall');
+        blok.setAttribute('aria-labelledby', 'paywall-titel');
+        const tekst = el('div', 'paywall__tekst');
+        const titel = el('h2', 'paywall__titel', t('v5_paywall_account_titel'));
+        titel.id = 'paywall-titel';
+        tekst.appendChild(titel);
+        tekst.appendChild(el('p', null, t('v5_paywall_account_tekst')));
+        blok.appendChild(tekst);
+
+        const form = el('form', 'paywall__formulier');
+        form.action = '/v5-inloggen.html';
+        form.method = 'get';
+        const tab = el('input');
+        tab.type = 'hidden';
+        tab.name = 'tab';
+        tab.value = 'account';
+        form.appendChild(tab);
+        const veld = el('div', 'invoer');
+        const label = el('label', 'invoer__label', t('v5_in_email'));
+        label.htmlFor = 'paywall-email';
+        const invoer = el('input', 'invoer__veld');
+        invoer.type = 'email';
+        invoer.id = 'paywall-email';
+        invoer.name = 'email';
+        invoer.autocomplete = 'email';
+        invoer.placeholder = t('v5_in_email_voorbeeld');
+        veld.append(label, invoer);
+        form.appendChild(veld);
+        const knop = el('button', 'btn btn--primary btn--vol', t('v5_maak_gratis_account'));
+        knop.type = 'submit';
+        form.appendChild(knop);
+        blok.appendChild(form);
+
+        blok.appendChild(B.link('/v5-inloggen.html', 'paywall__meer', t('v5_al_account')));
         return blok;
     }
 
@@ -139,8 +195,14 @@
         tekst.appendChild(el('p', null, artikel.summary));
         blok.appendChild(tekst);
 
-        // 4 Paywall, 5 Delen, 6 Bronvermelding
-        blok.appendChild(paywall());
+        // 4 Paywall per staat, 5 Delen, 6 Bronvermelding. De header volgt:
+        // ingelogd (1–3) toont Mijn account, Premium (1) geen Probeer Premium.
+        const staat = ['1', '2', '3', '4'].includes(B.param('staat')) ? B.param('staat') : '3';
+        if (staat !== '4') document.body.dataset.ingelogd = '';
+        if (staat === '1') document.body.dataset.premium = '';
+        if (staat === '2') blok.appendChild(tegoedRegel(2, 5));
+        if (staat === '3') blok.appendChild(paywall());
+        if (staat === '4') blok.appendChild(accountPaywall());
         blok.appendChild(B.deelBalk(window.location.href, artikel.title));
         blok.appendChild(bronVermelding(artikel));
 

@@ -38,7 +38,7 @@
     function markeerHuidigePagina() {
         const pad = window.location.pathname.replace(/\/index\.html$/, '/');
         const sectie = document.body.dataset.sectie;
-        document.querySelectorAll('.navbar__links .nav-link[href]').forEach(link => {
+        document.querySelectorAll('.navbar__links .nav-link[href], .mobiel-menu .menu-link[href]').forEach(link => {
             const doel = new URL(link.href).pathname.replace(/\/index\.html$/, '/');
             if (doel === pad || (sectie && link.dataset.sectie === sectie)) link.setAttribute('aria-current', 'page');
         });
@@ -159,36 +159,44 @@
 
     // ── Paneel ───────────────────────────────────────────────────────────
 
+    // Twee knoppen openen hetzelfde paneel: Instellingen op desktop en Menu
+    // onder 1024 px (dan staan navigatie en account bovenin het paneel).
+    // Er is er altijd maar één zichtbaar.
     function koppelPaneel() {
-        const knop = document.querySelector('.settings-trigger');
-        const paneel = knop && document.getElementById(knop.getAttribute('aria-controls'));
+        const knoppen = Array.from(document.querySelectorAll('.settings-trigger, .menu-knop'));
+        const paneel = knoppen[0] && document.getElementById(knoppen[0].getAttribute('aria-controls'));
         if (!paneel) return;
+        const zichtbareKnop = () => knoppen.find(k => k.offsetParent !== null) || knoppen[0];
+        const isOpen = () => paneel.classList.contains('is-open');
 
-        function open() {
+        function open(knop) {
             paneel.inert = false;
             paneel.classList.add('is-open');
-            knop.setAttribute('aria-expanded', 'true');
-            const eerste = paneel.querySelector('[role="radio"][aria-checked="true"]');
+            knoppen.forEach(k => k.setAttribute('aria-expanded', 'true'));
+            // Menu: naar de eerste link. Instellingen: naar de gekozen weergave.
+            const eerste = knop.classList.contains('menu-knop')
+                ? paneel.querySelector('.menu-link[href]')
+                : paneel.querySelector('[role="radio"][aria-checked="true"]');
             if (eerste) eerste.focus({ preventScroll: true });
         }
 
         function sluit(focusTerug) {
             paneel.classList.remove('is-open');
             paneel.inert = true;
-            knop.setAttribute('aria-expanded', 'false');
-            if (focusTerug) knop.focus();
+            knoppen.forEach(k => k.setAttribute('aria-expanded', 'false'));
+            if (focusTerug) zichtbareKnop().focus();
         }
 
-        knop.addEventListener('click', () => {
-            if (knop.getAttribute('aria-expanded') === 'true') sluit(false);
-            else open();
-        });
+        knoppen.forEach(knop => knop.addEventListener('click', () => {
+            if (isOpen()) sluit(false);
+            else open(knop);
+        }));
 
         paneel.querySelector('[data-sluit-instellingen]')?.addEventListener('click', () => sluit(true));
 
         document.addEventListener('keydown', e => {
-            if (e.key !== 'Escape' || knop.getAttribute('aria-expanded') !== 'true') return;
-            const binnen = paneel.contains(document.activeElement) || document.activeElement === knop;
+            if (e.key !== 'Escape' || !isOpen()) return;
+            const binnen = paneel.contains(document.activeElement) || knoppen.includes(document.activeElement);
             sluit(binnen);
         });
     }

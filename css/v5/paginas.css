@@ -5,8 +5,8 @@
  * Artikel). Geen eigen componenten en geen losse kleuren; alles komt uit
  * tokens.css. Laad na componenten.css.
  *
- * Alleen desktop is ontworpen. Onder 1024 px en 768 px vallen de rasters
- * terug op minder kolommen, zodat niets breekt of zijwaarts scrollt.
+ * Breekpunten (Figma: Mobiel · Besluiten): desktop vanaf 1024, tablet 768–1023
+ * (meestal twee kolommen), mobiel tot 767 (één kolom, zijmarge 16).
  */
 
 
@@ -134,13 +134,16 @@
     }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 767px) {
     .editie-raster__zij {
         flex-direction: column;
     }
 
+    /* Mobiel: de twee kleine overlaykaarten in 3:2 (Figma: 358 × 239). */
     .editie-raster__zij > .story-card--overlay {
-        min-height: 240px;
+        flex: none;
+        min-height: 0;
+        aspect-ratio: 3 / 2;
     }
 
     .editie-raster__rij,
@@ -176,7 +179,7 @@
     }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 767px) {
     .koppen-raster {
         grid-template-columns: minmax(0, 1fr);
     }
@@ -507,7 +510,7 @@
     }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 767px) {
     .abo__formulier,
     .abo__vergelijk {
         padding: var(--spacing-lg);
@@ -637,7 +640,7 @@
     font-weight: 500;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 767px) {
     .formulierpagina {
         padding-block: var(--section-xs);
     }
@@ -850,7 +853,7 @@
     }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 767px) {
     .gegevens__rij {
         flex-direction: column;
         gap: var(--spacing-2xs);

@@ -184,13 +184,20 @@
     color-scheme: dark;
 }
 
-/* Mobiel is nog niet ontworpen (v5 is alleen desktop). Tot dat ontwerp er
-   is een voorlopige zijmarge, zodat smalle schermen niet 80 px verliezen. */
+/* Mobiel (Figma: Mobiel · Besluiten). Tot 767 px: zijmarge 16, inhoud 358
+   op een scherm van 390, en de koppen een stap kleiner (display 48 → 32,
+   kop 32 → 24, kop 24 → 20). Tekst 18 / 16 / 14 blijft; niets onder 14. */
 @media (max-width: 767px) {
     :root {
-        --layout-section-padding-x: 20px;
-        --grid-margin: 20px;
+        --layout-section-padding-x: 16px;
+        --grid-margin: 16px;
         --layout-form-width: 358px;
+        --type-display-sm-size: 2rem;            /* 32 */
+        --type-display-sm-line-height: 2.5rem;
+        --type-heading-lg-size: 1.5rem;          /* 24 */
+        --type-heading-lg-line-height: 2rem;
+        --type-heading-md-size: 1.25rem;         /* 20 */
+        --type-heading-md-line-height: 1.75rem;
     }
 }
 

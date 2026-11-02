@@ -30,17 +30,21 @@
         nav.setAttribute('aria-label', t('v5_andere_edities'));
         const vorige = B.verschuif(dag, -1);
         if (vorige >= eersteDag) {
-            nav.appendChild(B.knop(B.url.editie(vorige), B.hoofdletter(B.dagLang(vorige)), { links: 'arrow_back' }));
+            const v = B.knop(B.url.editie(vorige), B.hoofdletter(B.dagLang(vorige)), { links: 'arrow_back', kort: B.dagKort(vorige) });
+            v.classList.add('edition-nav__vorige');
+            nav.appendChild(v);
         } else {
-            nav.appendChild(el('span'));
+            nav.appendChild(el('span', 'edition-nav__vorige'));
         }
-        nav.appendChild(B.knop(B.url.archief(dag.slice(0, 7)), t('v5_alle_edities'), { links: 'calendar_month' }));
+        const archief = B.knop(B.url.archief(dag.slice(0, 7)), t('v5_alle_edities'), { links: 'calendar_month' });
+        archief.classList.add('edition-nav__archief');
+        nav.appendChild(archief);
         const volgende = B.verschuif(dag, 1);
-        if (volgende >= B.vandaag()) {
-            nav.appendChild(B.knop(B.url.home(), t('v5_nieuws_van_vandaag'), { rechts: 'arrow_forward' }));
-        } else {
-            nav.appendChild(B.knop(B.url.editie(volgende), B.hoofdletter(B.dagLang(volgende)), { rechts: 'arrow_forward' }));
-        }
+        const v2 = volgende >= B.vandaag()
+            ? B.knop(B.url.home(), t('v5_nieuws_van_vandaag'), { rechts: 'arrow_forward' })
+            : B.knop(B.url.editie(volgende), B.hoofdletter(B.dagLang(volgende)), { rechts: 'arrow_forward', kort: B.dagKort(volgende) });
+        v2.classList.add('edition-nav__volgende');
+        nav.appendChild(v2);
         const wrap = el('div', 'container editie-nav-wrap');
         wrap.appendChild(nav);
         return wrap;

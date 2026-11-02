@@ -155,6 +155,13 @@
         return formatteer(middag(dag), opties);
     }
 
+    // "Di 29 sep" (edition nav op mobiel)
+    function dagKort(dag) {
+        const tekst = formatteer(middag(dag), { timeZone: 'UTC', weekday: 'short', day: 'numeric', month: 'short' })
+            .replace(/\./g, '').replace(/,/g, '');
+        return tekst.charAt(0).toUpperCase() + tekst.slice(1);
+    }
+
     // "28 oktober"
     function dagMaand(dag) {
         return formatteer(middag(dag), { timeZone: 'UTC', day: 'numeric', month: 'long' });
@@ -318,10 +325,19 @@
     }
 
     // Knop-link met icoon links of rechts.
-    function knop(adres, tekst, { klasse = 'btn btn--secondary', links, rechts } = {}) {
+    // Met `kort` krijgt de knop op mobiel een korter label ("Di 29 sep");
+    // het volledige label blijft er dan voor schermlezers.
+    function knop(adres, tekst, { klasse = 'btn btn--secondary', links, rechts, kort } = {}) {
         const a = link(adres, klasse);
         if (links) a.appendChild(icoon(links));
-        a.appendChild(el('span', null, tekst));
+        if (kort) {
+            a.appendChild(el('span', 'label-lang', tekst));
+            const k = el('span', 'label-kort', kort);
+            k.setAttribute('aria-hidden', 'true');
+            a.appendChild(k);
+        } else {
+            a.appendChild(el('span', null, tekst));
+        }
         if (rechts) a.appendChild(icoon(rechts));
         return a;
     }
@@ -512,7 +528,21 @@
         mail.setAttribute('aria-label', t('v5_deel_mail'));
         mail.appendChild(icoon('mail'));
         balk.appendChild(mail);
-        const kopieer = el('button', 'btn btn--secondary');
+        // Mobiel (Share bar, Breakpoint=Mobile): één knop Delen die het
+        // deelmenu van de telefoon opent. Alleen als de browser dat kan;
+        // anders blijven de platformknoppen staan. CSS kiest per breedte.
+        if (typeof navigator.share === 'function') {
+            balk.classList.add('share-bar--systeem');
+            const delen = el('button', 'btn btn--secondary share-bar__systeem');
+            delen.type = 'button';
+            delen.appendChild(icoon('share'));
+            delen.appendChild(el('span', null, t('share_label')));
+            delen.addEventListener('click', () => {
+                navigator.share({ title: titelTekst, url: adres }).catch(() => { /* geannuleerd */ });
+            });
+            balk.appendChild(delen);
+        }
+        const kopieer = el('button', 'btn btn--secondary share-bar__kopieer');
         kopieer.type = 'button';
         kopieer.appendChild(icoon('link'));
         kopieer.appendChild(el('span', null, t('v5_kopieer_link')));
@@ -592,7 +622,7 @@
     window.BN5 = {
         CATEGORIEEN, taal, t, vertaalPagina, param, locale: () => LOCALE[taal()],
         laadFeed, laadManifest, isDigest,
-        dagVan, vandaag, verschuif, isDagSleutel, dagLang, dagMaand, weekdag, maandNaam, tijd, datumTijd, hoofdletter,
+        dagVan, vandaag, verschuif, isDagSleutel, dagLang, dagKort, dagMaand, weekdag, maandNaam, tijd, datumTijd, hoofdletter,
         aantalVerhalen, perDag, archiefPerDag, digestsVan, nieuwsteDigestDag, verhalenVanDigests, laatsteMoment,
         zonderVerwijzingen, eersteZinnen, url, metTestdag, categorieLabel,
         el, icoon, link, knop, beeld, merkbeeld, storyCard, headlineItem, editieRaster, digestCard,

@@ -79,6 +79,30 @@
     width: 100%;
 }
 
+/* Raakvlak op touch (Mobiel · Besluiten): alles wat je aantikt is minstens
+   44 hoog. Knoppen blijven visueel 40 (md) of 32 (sm, socials); een
+   onzichtbare laag maakt de klikzone groter zonder dat het beeld verandert. */
+@media (pointer: coarse) {
+    .btn,
+    .social-knop,
+    .menu-knop {
+        position: relative;
+    }
+
+    .btn::after,
+    .social-knop::after,
+    .menu-knop::after {
+        content: "";
+        position: absolute;
+        inset: -2px 0;
+    }
+
+    .btn--sm::after,
+    .social-knop::after {
+        inset: -6px 0;
+    }
+}
+
 
 /* ── Badge "Brand" ─────────────────────────────────────────────────────
    Categorie op een kaart, of een kort label zoals "Bespaar 29%". In donker
@@ -213,78 +237,98 @@
     color: var(--text-primary);
 }
 
-/* Mobiel is nog niet ontworpen. Tot dan: logo en knoppen op de eerste rij,
-   de links eronder (horizontaal te schuiven), zodat niets wegvalt. */
+/* Mobiel en tablet (Figma: Header, Breakpoint=Mobile). Onder 1024 px staan
+   alleen het logo en de knop Menu in een balk van 64 px; links, knoppen en
+   instellingen zitten in het menu, dat het instellingenpaneel hergebruikt.
+   De header scrolt mee weg (niet sticky): een vaste balk met uitklapmenu
+   zou over de inhoud vallen. */
+.menu-knop {
+    display: none;
+}
+
 @media (max-width: 1023px) {
     .navbar {
-        flex-wrap: wrap;
-        row-gap: 0;
-        padding-block: var(--spacing-sm) 0;
+        min-height: 64px;
     }
 
-    .navbar > nav {
-        order: 3;
-        width: 100%;
-        overflow-x: auto;
-        scrollbar-width: none;
+    .navbar > nav,
+    .navbar__acties > :not(.menu-knop) {
+        display: none;
     }
 
-    /* Alleen het icoon; het label blijft er voor schermlezers. */
-    .settings-trigger__label {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        clip-path: inset(50%);
-        white-space: nowrap;
+    .menu-knop {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--spacing-xs);
+        height: var(--control-height-md);
+        padding-inline: var(--spacing-md);
+        border: var(--border-width-sm) solid var(--border-strong);
+        border-radius: var(--radius-md);
+        background: var(--surface-default);
+        color: var(--text-primary);
+        font-size: var(--font-size-14);
+        line-height: var(--line-height-20);
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .menu-knop:focus-visible {
+        border-radius: var(--radius-md);
+    }
+
+    /* Icoon en label staan direct in de knop-flex; dicht toont "Menu",
+       open toont "Sluiten". */
+    .menu-knop__dicht,
+    .menu-knop[aria-expanded="true"] .menu-knop__open {
+        display: contents;
+    }
+
+    .menu-knop__open,
+    .menu-knop[aria-expanded="true"] .menu-knop__dicht {
+        display: none;
     }
 }
 
 /* Eén primaire knop per scherm (besluit v5 · 18): staat er een paywall op
    de pagina, dan wordt "Probeer Premium" in de header secundair. */
-body:has(.paywall) .navbar .btn--primary {
+body:has(.paywall) :is(.navbar, .mobiel-menu) .btn--primary {
     border-color: var(--border-strong);
     background: var(--surface-default);
     color: var(--text-primary);
 }
 
-body:has(.paywall) .navbar .btn--primary:hover {
+body:has(.paywall) :is(.navbar, .mobiel-menu) .btn--primary:hover {
     background: var(--surface-muted);
 }
 
 /* Op de abonnementenpagina is "Start 30 dagen gratis" de enige primaire
    knop; "Probeer Premium" in de header verdwijnt daar. */
-body[data-pagina="abonnementen"] .navbar .btn--primary {
+body[data-pagina="abonnementen"] :is(.navbar, .mobiel-menu) .btn--primary {
     display: none;
 }
 
 /* Op de inlogpagina en Wachtwoord vergeten staan "Inloggen" en "Probeer
    Premium" er niet: de enige primaire knop staat in het formulier. */
-body[data-pagina="inloggen"] .navbar .btn,
-body[data-pagina="wachtwoord"] .navbar .btn {
+body[data-pagina="inloggen"] :is(.navbar__acties, .mobiel-menu__account) .btn,
+body[data-pagina="wachtwoord"] :is(.navbar__acties, .mobiel-menu__account) .btn {
     display: none;
 }
 
 /* Ingelogd of niet: <body data-ingelogd> toont Mijn account in plaats van
    Inloggen. In het voorbeeld zet alleen v5-profiel.html dat; na de koppeling
-   doet de back-end het (TODO punt 66). */
-body:not([data-ingelogd]) .navbar [data-alleen="ingelogd"],
-body[data-ingelogd] .navbar [data-alleen="uitgelogd"] {
+   doet de back-end het (TODO punt 66). Premium-leden (<body data-premium>)
+   zien "Probeer Premium" nergens. */
+body:not([data-ingelogd]) :is(.navbar, .mobiel-menu) [data-alleen="ingelogd"],
+body[data-ingelogd] :is(.navbar, .mobiel-menu) [data-alleen="uitgelogd"],
+body[data-premium] :is(.navbar, .mobiel-menu) .btn--primary {
     display: none;
 }
 
 /* Op Mijn account is er geen primaire knop in de header: bij een gratis
    account staat "Probeer Premium" al in de pagina, bij Premium hoort hij er
    niet. */
-body[data-pagina="profiel"] .navbar .btn--primary {
+body[data-pagina="profiel"] :is(.navbar, .mobiel-menu) .btn--primary {
     display: none;
-}
-
-@media (max-width: 599px) {
-    .navbar__inloggen,
-    .navbar__account {
-        display: none;
-    }
 }
 
 
@@ -459,6 +503,103 @@ body[data-pagina="profiel"] .navbar .btn--primary {
 
 .setting-option[aria-checked="true"] .setting-option__vinkje {
     display: block;
+}
+
+/* Instellingen in een smalle kolom (Mijn account): twee gelijke kolommen in
+   plaats van rafelig doorlopen. */
+.setting-groep__opties--raster {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+
+/* ── Mobile menu ───────────────────────────────────────────────────────
+   Het bovenste deel van het paneel op mobiel: navigatie (Menu link),
+   account en Probeer Premium. Op desktop bestaat dit deel niet; daar
+   staan dezelfde links en knoppen in de navbar. */
+
+.mobiel-menu {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+    .settings-panel {
+        background: var(--surface-default);
+    }
+
+    .settings-panel__inhoud {
+        flex-direction: column;
+        align-items: stretch;
+        flex-wrap: nowrap;
+        gap: var(--spacing-lg);
+        padding-block: var(--spacing-md) var(--spacing-xl);
+    }
+
+    .settings-panel__notitie {
+        display: none;
+    }
+
+    .setting-groep {
+        gap: var(--spacing-xs);
+    }
+
+    .setting-groep__opties {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .mobiel-menu {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-lg);
+    }
+
+    .mobiel-menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .mobiel-menu__account {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .mobiel-menu__account .btn {
+        width: 100%;
+    }
+
+    .mobiel-menu hr {
+        width: 100%;
+        margin: 0;
+        border: 0;
+        border-top: var(--border-width-sm) solid var(--border-default);
+    }
+}
+
+/* Menu link: 48 hoog, huidige pagina met een balk links en een subtiel
+   vlak. */
+.menu-link {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-left: 3px solid transparent;
+    color: var(--text-primary);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu-link[aria-current="page"] {
+    border-left-color: var(--action-primary-bg);
+    background: var(--surface-subtle);
+}
+
+.menu-link:focus-visible {
+    border-radius: 0;
 }
 
 
@@ -758,6 +899,9 @@ body[data-pagina="profiel"] .navbar .btn--primary {
     object-fit: cover;
 }
 
+/* Mobiel en tablet: gestapeld, foto boven (in de code staat de titel eerst;
+   de foto is decoratief). Tablet 16:9, mobiel 240 hoog (Figma). De titel
+   volgt de display-token: 48 op tablet, 32 op mobiel. */
 @media (max-width: 1023px) {
     .digest-hero {
         grid-template-columns: 1fr;
@@ -766,12 +910,23 @@ body[data-pagina="profiel"] .navbar .btn--primary {
 
     .digest-hero__beeld {
         order: -1;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+@media (max-width: 767px) {
+    .digest-hero {
+        gap: var(--spacing-lg);
+        padding: var(--spacing-lg);
+    }
+
+    .digest-hero__beeld {
+        height: 240px;
+        aspect-ratio: auto;
     }
 
     .digest-hero__titel {
-        font-size: var(--type-heading-lg-size);
-        line-height: var(--type-heading-lg-line-height);
-        letter-spacing: -0.32px;
+        letter-spacing: -0.48px;
     }
 }
 
@@ -1026,6 +1181,37 @@ body[data-pagina="profiel"] .navbar .btn--primary {
     border-bottom: var(--border-width-sm) solid var(--border-default);
 }
 
+.label-kort {
+    display: none;
+}
+
+/* Mobiel: vorige en volgende naast elkaar met een kort label, het archief
+   eronder over de volle breedte. */
+@media (max-width: 767px) {
+    .edition-nav {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-areas: "vorige volgende" "archief archief";
+    }
+
+    .edition-nav__vorige { grid-area: vorige; justify-self: start; }
+    .edition-nav__volgende { grid-area: volgende; justify-self: end; }
+    .edition-nav__archief { grid-area: archief; width: 100%; }
+
+    .edition-nav .label-lang {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+    }
+
+    .edition-nav .label-kort {
+        display: inline;
+    }
+}
+
 
 /* ── Digest card ───────────────────────────────────────────────────────
    Een dagoverzicht in een editie: eigen kleur, geen foto, met het aantal
@@ -1210,15 +1396,27 @@ body[data-pagina="profiel"] .navbar .btn--primary {
     color: var(--text-secondary);
 }
 
+/* Mobiel (Archive day, Breakpoint=Mobile): de datum boven de koppen, met de
+   weekdag en de datum op één regel (op de basislijn). */
 @media (max-width: 767px) {
     .archive-day {
-        flex-wrap: wrap;
-        gap: var(--spacing-md);
+        flex-direction: column;
+        gap: var(--spacing-sm);
     }
 
-    .archive-day__datum,
+    .archive-day__datum {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        column-gap: var(--spacing-xs);
+        width: 100%;
+    }
+
+    .archive-day__dag {
+        letter-spacing: -0.24px;
+    }
+
     .archive-day__verhalen {
-        flex-basis: 100%;
         width: 100%;
     }
 }
@@ -1363,6 +1561,21 @@ body[data-pagina="profiel"] .navbar .btn--primary {
 
 .share-bar .btn {
     padding-inline: var(--spacing-md);
+}
+
+.share-bar__systeem {
+    display: none;
+}
+
+/* Mobiel: alleen Delen (deelmenu van de telefoon) en Kopieer link. */
+@media (max-width: 767px) {
+    .share-bar--systeem > :not(.share-bar__systeem, .share-bar__kopieer) {
+        display: none;
+    }
+
+    .share-bar--systeem .share-bar__systeem {
+        display: inline-flex;
+    }
 }
 
 
@@ -1549,6 +1762,39 @@ body[data-pagina="profiel"] .navbar .btn--primary {
     font-size: var(--font-size-14);
     line-height: var(--line-height-20);
     font-weight: 500;
+}
+
+/* Paywall, type Account: e-mailadres en één primaire knop. */
+.paywall__formulier {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+/* Paywall, type Credit: rustige regel onder de volledige tekst, tussen twee
+   lijnen. Op mobiel komt de knop onder de tekst. */
+.paywall-credit {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-sm) var(--spacing-md);
+    padding-block: var(--spacing-md);
+    border-top: var(--border-width-sm) solid var(--border-default);
+    border-bottom: var(--border-width-sm) solid var(--border-default);
+}
+
+.paywall-credit__tekst {
+    display: flex;
+    flex: 1 1 280px;
+    align-items: center;
+    gap: var(--spacing-xs);
+    color: var(--text-secondary);
+}
+
+.paywall-credit__tekst .icoon {
+    width: 18px;
+    height: 18px;
 }
 
 
