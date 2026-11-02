@@ -6,13 +6,45 @@
         <atom:link href="https://brightnews.online/feed-es.xml" rel="self" type="application/rss+xml"/>
         <description>Cada día una selección fresca de buenas noticias de todo el mundo. ¡Feliz lectura!</description>
         <language>es-es</language>
-        <lastBuildDate>Mon, 02 Nov 2026 04:58:03 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 02 Nov 2026 21:31:20 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Tu dosis diaria de positividad</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Restaurantes sardos prohíben teléfonos en las comidas familiares</title>
+            <link>https://brightnews.online/articles/es/restaurantes-sardos-prohiben-telefonos-en-las-comidas-familiares-1793655079136s26oltnk3.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/es/restaurantes-sardos-prohiben-telefonos-en-las-comidas-familiares-1793655079136s26oltnk3.html</guid>
+            <pubDate>Mon, 02 Nov 2026 21:31:20 GMT</pubDate>
+            <description>En Cerdeña, los restaurantes están implementando una prohibición del uso de teléfonos para las familias durante la comida. La idea es que sin pantallas, las familias conversen más entre sí y presten mayor atención la una a la otra y a la comida. La noticia fue publicada por The Optimist Daily, un sitio de noticias enfocado en historias positivas, en...</description>
+            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/family-eating-in-the-garden-Depositphotos_10848206_S.jpg" type="image/jpeg" length="0"/>
+        </item>
+        <item>
+            <title>California legaliza paneles solares de balcón para inquilinos</title>
+            <link>https://brightnews.online/articles/es/california-legaliza-paneles-solares-de-balcon-para-inquilinos-1793655062861nilo30x9m.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/es/california-legaliza-paneles-solares-de-balcon-para-inquilinos-1793655062861nilo30x9m.html</guid>
+            <pubDate>Mon, 02 Nov 2026 21:31:03 GMT</pubDate>
+            <description>California ha legalizado la energía solar de balcón. Esto significa que los inquilinos y otros residentes ahora pueden instalar paneles solares en su balcón para generar su propia electricidad. La medida permite que más personas tengan acceso a la energía solar, incluso si no poseen un techo o vivienda propia. La noticia no menciona más detalles sobre la regulación exacta,...</description>
+            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/Balkonkraftwerk2-scaled-e1793582907457-1024x633.jpg" type="image/jpeg" length="0"/>
+        </item>
+        <item>
+            <title>Kenli Foundation otorga 67 becas a héroes tras accidente mortal en Texas</title>
+            <link>https://brightnews.online/articles/es/kenli-foundation-otorga-67-becas-a-heroes-tras-accidente-mortal-en-texas-179365504136328er9o23r.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/es/kenli-foundation-otorga-67-becas-a-heroes-tras-accidente-mortal-en-texas-179365504136328er9o23r.html</guid>
+            <pubDate>Mon, 02 Nov 2026 21:30:42 GMT</pubDate>
+            <description>Hace cinco años, Kenli Riney, de 18 años, perdió la vida en una colisión frontal en una autopista de Texas, cuando su auto se incendió. La familia Argote, que pasaba por casualidad, corrió hacia las llamas: Mike Argote sufrió quemaduras mientras sacaba a Riney del auto e iniciaba RCP, después su hija Ema, de 14 años, continuó con la reanimación....</description>
+            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/supplied-by-Marjohn-Riney.jpg" type="image/jpeg" length="0"/>
+        </item>
+        <item>
+            <title>Las galas de boxeo de Fight Back financian clases gratuitas para supervivientes de violencia doméstica</title>
+            <link>https://brightnews.online/articles/es/las-galas-de-boxeo-de-fight-back-financian-clases-gratuitas-para-supervivientes-1793655009947ou7j6x4x0.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/es/las-galas-de-boxeo-de-fight-back-financian-clases-gratuitas-para-supervivientes-1793655009947ou7j6x4x0.html</guid>
+            <pubDate>Mon, 02 Nov 2026 21:30:13 GMT</pubDate>
+            <description>El 28 de noviembre tendrá lugar en Londres la primera gala de boxeo de Fight Back Promotions, fundada por la exboksista del Team GB Lesley Sackey, la triple campeona nacional Shelly Sweeney y la empresaria Poppy Mason-Watts. Una cuarta parte de las ganancias irá a Fight Forward CIC, que ofrece entrenamiento de boxeo gratuito a supervivientes de violencia doméstica, como...</description>
+            <enclosure url="https://www.positive.news/wp-content/uploads/2026/10/BQ3A3519-scaled.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>La conexión es lo central: desde un banco en la parada de autobús hasta el amor en la vejez</title>
             <link>https://brightnews.online/articles/es/la-conexion-es-lo-central-desde-un-banco-en-la-parada-de-autobus-hasta-el-amor-e-dg-20261101-lifestyle.html</link>
@@ -216,35 +248,6 @@
             <guid isPermaLink="true">https://brightnews.online/articles/es/nasa-invita-a-empresas-a-desarrollar-la-proxima-generacion-de-estaciones-espacia-1793384249985xjpo9zpyd.html</guid>
             <pubDate>Fri, 30 Oct 2026 18:17:30 GMT</pubDate>
             <description>NASA publicó el 9 de octubre de 2026 una solicitud definitiva de propuestas para invitar a empresas estadounidenses a desarrollar la próxima generación de estaciones espaciales comerciales. El objetivo es que Estados Unidos mantenga presencia en órbita baja alrededor de la Tierra después de que la Estación Espacial Internacional (ISS) se retire. Las estaciones deben apoyar la investigación científ</description>
-        </item>
-        <item>
-            <title>El satélite Sentinel-3C envía las primeras imágenes nítidas de la Tierra y datos climáticos</title>
-            <link>https://brightnews.online/articles/es/el-satelite-sentinel-3c-envia-las-primeras-imagenes-nitidas-de-la-tierra-y-datos-1793384223770wl0xcjzrx.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/es/el-satelite-sentinel-3c-envia-las-primeras-imagenes-nitidas-de-la-tierra-y-datos-1793384223770wl0xcjzrx.html</guid>
-            <pubDate>Fri, 30 Oct 2026 18:17:05 GMT</pubDate>
-            <description>Dos semanas después de su lanzamiento, el satélite europeo Copernicus Sentinel-3C ha enviado sus primeras imágenes y mediciones a la Tierra. La Agencia Espacial Europea (ESA) publicó imágenes en color de gran fidelidad de Italia, el Archipiélago Ártico Canadiense y el Caribe, además de mediciones de altitud del manto de hielo de Groenlandia. El satélite dispone de instrumentos para obtención...</description>
-            <enclosure url="https://www.openaccessgovernment.org/wp-content/uploads/2026/10/Sentinel-3C_captures_Caribbean_shallows_article.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Europa lanza 13 nuevos hubs para datos de investigación abiertos</title>
-            <link>https://brightnews.online/articles/es/europa-lanza-13-nuevos-hubs-para-datos-de-investigacion-abiertos-179338418713800p31bsxr.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/es/europa-lanza-13-nuevos-hubs-para-datos-de-investigacion-abiertos-179338418713800p31bsxr.html</guid>
-            <pubDate>Fri, 30 Oct 2026 18:16:28 GMT</pubDate>
-            <description>Los investigadores en Europa obtienen un acceso más sencillo a datos de investigación y servicios digitales gracias al lanzamiento de los primeros 13 hubs dentro de la European Open Science Cloud (EOSC) Federation. Estos denominados EOSC Nodes conectan recursos de investigación de diferentes organizaciones y ayudan a los científicos a colaborar más allá de fronteras nacionales y disciplinas. En to</description>
-        </item>
-        <item>
-            <title>Simposio en Jordania sobre diplomacia científica</title>
-            <link>https://brightnews.online/articles/es/simposio-en-jordania-sobre-diplomacia-cientifica-1793384161608kh30teuyg.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/es/simposio-en-jordania-sobre-diplomacia-cientifica-1793384161608kh30teuyg.html</guid>
-            <pubDate>Fri, 30 Oct 2026 18:16:03 GMT</pubDate>
-            <description>El 28 de octubre de 2026, científicos, diplomáticos y representantes internacionales se reúnen en SESAME en Jordania para un simposio sobre el papel de la investigación y las infraestructuras tecnológicas en la diplomacia científica. El evento examina cómo las instalaciones científicas y los proyectos de colaboración pueden mantener conexiones entre países, incluso cuando las relaciones políticas </description>
-        </item>
-        <item>
-            <title>NASA y DOE unen fuerzas para la propulsión nuclear espacial</title>
-            <link>https://brightnews.online/articles/es/nasa-y-doe-unen-fuerzas-para-la-propulsion-nuclear-espacial-17933841386518zl65dsi6.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/es/nasa-y-doe-unen-fuerzas-para-la-propulsion-nuclear-espacial-17933841386518zl65dsi6.html</guid>
-            <pubDate>Fri, 30 Oct 2026 18:15:39 GMT</pubDate>
-            <description>NASA y el Departamento de Energía estadounidense (DOE) firmaron a principios de octubre una nueva acuerdo de colaboración durante la cumbre Science: A Golden Age Summit en Washington para acelerar la energía nuclear y la propulsión nuclear en misiones espaciales. El acuerdo abarca todo el proceso de desarrollo, desde la investigación y la producción de combustible hasta las pruebas, el...</description>
         </item>
     </channel>
 </rss>

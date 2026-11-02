@@ -6,13 +6,45 @@
         <atom:link href="https://brightnews.online/feed-fr.xml" rel="self" type="application/rss+xml"/>
         <description>Chaque jour une sélection fraîche de bonnes nouvelles du monde entier. Bonne lecture !</description>
         <language>fr-fr</language>
-        <lastBuildDate>Mon, 02 Nov 2026 04:58:03 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 02 Nov 2026 21:31:20 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Votre dose quotidienne de positivité</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Les restaurants sardes interdisent les téléphones aux familles pendant les repas</title>
+            <link>https://brightnews.online/articles/fr/les-restaurants-sardes-interdisent-les-telephones-aux-familles-pendant-les-repas-1793655079136s26oltnk3.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/fr/les-restaurants-sardes-interdisent-les-telephones-aux-familles-pendant-les-repas-1793655079136s26oltnk3.html</guid>
+            <pubDate>Mon, 02 Nov 2026 21:31:20 GMT</pubDate>
+            <description>En Sardaigne, les restaurants mettent en place une interdiction d&apos;utiliser son téléphone pour les familles pendant le repas. L&apos;idée est que sans écrans, les familles discutent davantage entre elles et accordent plus d&apos;attention les unes aux autres et au repas. L&apos;information a été publiée par The Optimist Daily, un site d&apos;actualités spécialisé dans les nouvelles positives, dans la catégorie Nutriti</description>
+            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/family-eating-in-the-garden-Depositphotos_10848206_S.jpg" type="image/jpeg" length="0"/>
+        </item>
+        <item>
+            <title>La Californie légalise les panneaux solaires de balcon pour les locataires</title>
+            <link>https://brightnews.online/articles/fr/la-californie-legalise-les-panneaux-solaires-de-balcon-pour-les-locataires-1793655062861nilo30x9m.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/fr/la-californie-legalise-les-panneaux-solaires-de-balcon-pour-les-locataires-1793655062861nilo30x9m.html</guid>
+            <pubDate>Mon, 02 Nov 2026 21:31:03 GMT</pubDate>
+            <description>La Californie a légalisé l&apos;énergie solaire de balcon. Cela signifie que les locataires et autres résidents peuvent désormais installer des panneaux solaires sur leur balcon pour produire eux-mêmes de l&apos;électricité. Cette mesure permet à davantage de personnes d&apos;accéder à l&apos;énergie solaire, même si elles ne possèdent pas leur propre toit ou maison. Le communiqué de presse ne mentionne pas d&apos;autres.</description>
+            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/Balkonkraftwerk2-scaled-e1793582907457-1024x633.jpg" type="image/jpeg" length="0"/>
+        </item>
+        <item>
+            <title>La Kenli Foundation remet 67 bourses à des héros après un accident mortel au Texas</title>
+            <link>https://brightnews.online/articles/fr/la-kenli-foundation-remet-67-bourses-a-des-heros-apres-un-accident-mortel-au-tex-179365504136328er9o23r.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/fr/la-kenli-foundation-remet-67-bourses-a-des-heros-apres-un-accident-mortel-au-tex-179365504136328er9o23r.html</guid>
+            <pubDate>Mon, 02 Nov 2026 21:30:42 GMT</pubDate>
+            <description>Il y a cinq ans, Kenli Riney, 18 ans, a perdu la vie dans une collision frontale sur une autoroute au Texas, sa voiture prenant feu. La famille Argote, qui passait par là, s&apos;est précipitée vers les flammes : Mike Argote s&apos;est lui-même brûlé en tirant Riney de la voiture et en commençant la réanimation, avant que sa fille Ema,...</description>
+            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/supplied-by-Marjohn-Riney.jpg" type="image/jpeg" length="0"/>
+        </item>
+        <item>
+            <title>Les galas de boxe Fight Back financent des cours de boxe gratuits pour les survivantes de violences conjugales</title>
+            <link>https://brightnews.online/articles/fr/les-galas-de-boxe-fight-back-financent-des-cours-de-boxe-gratuits-pour-les-survi-1793655009947ou7j6x4x0.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/fr/les-galas-de-boxe-fight-back-financent-des-cours-de-boxe-gratuits-pour-les-survi-1793655009947ou7j6x4x0.html</guid>
+            <pubDate>Mon, 02 Nov 2026 21:30:13 GMT</pubDate>
+            <description>Le premier gala de boxe de Fight Back Promotions se tiendra à Londres le 28 novembre, fondé par l&apos;ancienne boxeuse de Team GB Lesley Sackey, la triple championne nationale Shelly Sweeney et l&apos;entrepreneur Poppy Mason-Watts. Un quart des bénéfices est versé à Fight Forward CIC, qui propose un entraînement de boxe gratuit aux survivantes de violences conjugales, comme Saria (40...</description>
+            <enclosure url="https://www.positive.news/wp-content/uploads/2026/10/BQ3A3519-scaled.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>La connexion au cœur : d&apos;un banc à l&apos;arrêt de bus à l&apos;amour à un âge avancé</title>
             <link>https://brightnews.online/articles/fr/la-connexion-au-c-ur-d-un-banc-a-l-arret-de-bus-a-l-amour-a-un-age-avance-dg-20261101-lifestyle.html</link>
@@ -216,35 +248,6 @@
             <guid isPermaLink="true">https://brightnews.online/articles/fr/nasa-invite-les-entreprises-a-developper-la-prochaine-generation-de-stations-spa-1793384249985xjpo9zpyd.html</guid>
             <pubDate>Fri, 30 Oct 2026 18:17:30 GMT</pubDate>
             <description>NASA a publié le 9 octobre 2026 un appel d&apos;offres définitif invitant les entreprises américaines à développer la prochaine génération de stations spatiales commerciales. L&apos;objectif est que les États-Unis maintiennent une présence en orbite basse autour de la Terre après la retraite de la Station spatiale internationale (ISS). Les stations doivent soutenir la recherche scientifique, le développemen</description>
-        </item>
-        <item>
-            <title>Le satellite Sentinel-3C envoie ses premières images nettes et données climatiques</title>
-            <link>https://brightnews.online/articles/fr/le-satellite-sentinel-3c-envoie-ses-premieres-images-nettes-et-donnees-climatiqu-1793384223770wl0xcjzrx.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/fr/le-satellite-sentinel-3c-envoie-ses-premieres-images-nettes-et-donnees-climatiqu-1793384223770wl0xcjzrx.html</guid>
-            <pubDate>Fri, 30 Oct 2026 18:17:05 GMT</pubDate>
-            <description>Deux semaines après son lancement, le satellite européen Copernicus Sentinel-3C a transmis ses premières images et mesures vers la Terre. L&apos;Agence spatiale européenne (ESA) a publié des images en couleurs fidèles de l&apos;Italie, de l&apos;Archipel arctique canadien et des Caraïbes, ainsi que des mesures d&apos;altitude de la calotte glaciaire du Groenland. Le satellite est équipé d&apos;instruments d&apos;imagerie optiq</description>
-            <enclosure url="https://www.openaccessgovernment.org/wp-content/uploads/2026/10/Sentinel-3C_captures_Caribbean_shallows_article.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>L&apos;Europe lance 13 nouveaux hubs pour les données de recherche ouvertes</title>
-            <link>https://brightnews.online/articles/fr/l-europe-lance-13-nouveaux-hubs-pour-les-donnees-de-recherche-ouvertes-179338418713800p31bsxr.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/fr/l-europe-lance-13-nouveaux-hubs-pour-les-donnees-de-recherche-ouvertes-179338418713800p31bsxr.html</guid>
-            <pubDate>Fri, 30 Oct 2026 18:16:28 GMT</pubDate>
-            <description>Les chercheurs en Europe bénéficient d&apos;un accès simplifié aux données de recherche et aux services numériques grâce au lancement des 13 premiers hubs au sein de la Fédération European Open Science Cloud (EOSC). Ces nœuds EOSC, comme on les appelle, connectent les ressources de recherche de différentes organisations et aident les scientifiques à collaborer au-delà des frontières nationales et des..</description>
-        </item>
-        <item>
-            <title>Symposium en Jordanie sur la diplomatie scientifique</title>
-            <link>https://brightnews.online/articles/fr/symposium-en-jordanie-sur-la-diplomatie-scientifique-1793384161608kh30teuyg.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/fr/symposium-en-jordanie-sur-la-diplomatie-scientifique-1793384161608kh30teuyg.html</guid>
-            <pubDate>Fri, 30 Oct 2026 18:16:03 GMT</pubDate>
-            <description>Le 28 octobre 2026, des scientifiques, des diplomates et des représentants internationaux se réunissent à SESAME en Jordanie pour un symposium sur le rôle de la recherche et des infrastructures technologiques dans la diplomatie scientifique. L&apos;événement examine comment les installations scientifiques et les projets de collaboration peuvent maintenir les liens entre les pays, même lorsque les relat</description>
-        </item>
-        <item>
-            <title>La NASA et le DOE unissent leurs forces pour la propulsion nucléaire spatiale</title>
-            <link>https://brightnews.online/articles/fr/la-nasa-et-le-doe-unissent-leurs-forces-pour-la-propulsion-nucleaire-spatiale-17933841386518zl65dsi6.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/fr/la-nasa-et-le-doe-unissent-leurs-forces-pour-la-propulsion-nucleaire-spatiale-17933841386518zl65dsi6.html</guid>
-            <pubDate>Fri, 30 Oct 2026 18:15:39 GMT</pubDate>
-            <description>La NASA et le ministère américain de l&apos;Énergie (DOE) ont signé début octobre, lors du sommet Science: A Golden Age Summit à Washington, un nouvel accord de coopération visant à accélérer l&apos;énergie nucléaire et la propulsion nucléaire pour les missions spatiales. L&apos;accord couvre l&apos;ensemble du processus de développement, de la recherche et de la production de combustible fissile aux essais,...</description>
         </item>
     </channel>
 </rss>
