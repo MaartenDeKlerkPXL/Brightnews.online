@@ -283,6 +283,10 @@
         editie: dag => `/v5-editie.html?datum=${dag}`,
         archief: maand => (maand ? `/v5-archief.html?maand=${maand}` : '/v5-archief.html'),
         abonnementen: plan => (plan ? `/v5-abonnementen.html?plan=${plan}` : '/v5-abonnementen.html'),
+        account: () => '/v5-profiel.html',
+        inloggen: () => '/v5-inloggen.html',
+        contact: () => '/v5-contact.html',
+        feedback: id => (id ? `/v5-feedback.html?artikel=${encodeURIComponent(id)}` : '/v5-feedback.html'),
     };
 
     // Houd ?vandaag= vast bij het doorklikken tussen de voorbeeldpagina's.
@@ -340,6 +344,20 @@
         }
         if (rechts) a.appendChild(icoon(rechts));
         return a;
+    }
+
+    // Een zin met elementen erin: t('v5_ct_privacy') is "Lees de {privacy}."
+    // en `delen` geeft per {naam} het element (meestal een link). Zo blijft
+    // de woordvolgorde aan de vertaling, en de link een echt element.
+    function zinMetDelen(sleutel, delen, waarden) {
+        const fragment = document.createDocumentFragment();
+        const namen = Object.keys(delen).map(n => `\\{${n}\\}`).join('|');
+        t(sleutel, waarden).split(new RegExp(`(${namen})`)).forEach(deel => {
+            const naam = deel.slice(1, -1);
+            if (deel.startsWith('{') && delen[naam]) fragment.appendChild(delen[naam]);
+            else if (deel) fragment.appendChild(document.createTextNode(deel));
+        });
+        return fragment;
     }
 
     function merkbeeld(klasse) {
@@ -625,7 +643,7 @@
         dagVan, vandaag, verschuif, isDagSleutel, dagLang, dagKort, dagMaand, weekdag, maandNaam, tijd, datumTijd, hoofdletter,
         aantalVerhalen, perDag, archiefPerDag, digestsVan, nieuwsteDigestDag, verhalenVanDigests, laatsteMoment,
         zonderVerwijzingen, eersteZinnen, url, metTestdag, categorieLabel,
-        el, icoon, link, knop, beeld, merkbeeld, storyCard, headlineItem, editieRaster, digestCard,
+        el, icoon, link, knop, zinMetDelen, beeld, merkbeeld, storyCard, headlineItem, editieRaster, digestCard,
         aanwijzing, bronnenRegel, leeg, gelezen, markeerGelezen, deelBalk, origineelLink, start,
     };
 })();

@@ -573,6 +573,7 @@
     background: var(--surface-default);
 }
 
+.form-card[hidden],
 .form-card [hidden] {
     display: none;
 }
@@ -866,4 +867,270 @@
     .gegevens-rij {
         flex-wrap: wrap;
     }
+}
+
+
+/* ── Infopagina's (Over ons, Zo kiezen we) ──────────────────────────────
+   Secties onder elkaar die wisselen tussen surface/default en
+   surface/subtle (--subtiel). De tekst blijft in layout/reading-width
+   (720); alleen rijen kaarten gebruiken de volle breedte. De intro sluit
+   met 40 aan op de eerste sectie, die ook met 40 begint. */
+
+.info-sectie {
+    padding-block: var(--section-sm);
+}
+
+.info-sectie--intro {
+    padding-bottom: var(--section-xs);
+}
+
+.info-sectie--intro + .info-sectie {
+    padding-top: var(--section-xs);
+}
+
+.info-sectie--subtiel {
+    background: var(--surface-subtle);
+}
+
+.info-sectie__binnen {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xl);
+}
+
+.info-tekst {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+}
+
+/* De sectie zelf is een gewone container (links in de 1280); alleen de
+   inhoud blijft binnen de leesbreedte. */
+.info-tekst > *,
+.info-faq > * {
+    max-width: var(--layout-reading-width);
+}
+
+.info-tekst > p {
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-28);
+}
+
+.info-tekst > .info-tekst__lead,
+.info-kop p {
+    color: var(--text-secondary);
+}
+
+.leesbreedte {
+    max-width: var(--layout-reading-width);
+}
+
+.info-kop {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    max-width: var(--layout-reading-width);
+}
+
+.info-kop p {
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-28);
+}
+
+.info-tekst .knoppen-rij {
+    margin-top: var(--spacing-2xs);
+}
+
+/* Zo kiezen we: twee lijsten naast elkaar, elk in een eigen vlak. */
+.lijst-kaarten {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: var(--spacing-xl);
+}
+
+.lijst-kaart {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-xl);
+    background: var(--surface-default);
+}
+
+.info-faq {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.info-faq > div {
+    width: 100%;
+}
+
+@media (max-width: 1023px) {
+    .lijst-kaarten {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .lijst-kaart {
+        padding: var(--spacing-xl);
+    }
+}
+
+
+/* ── Bedankt ─────────────────────────────────────────────────────────────
+   Eén kolom (480) in het midden, met 120 boven en onder, ook op de
+   telefoon. Drie staten: gelukt, bezig (Premium wordt aangezet) en traag
+   (duurt langer dan normaal). */
+
+.bedankt {
+    padding-block: var(--section-md);
+}
+
+.bedankt .formulier-intro {
+    gap: var(--spacing-md);
+}
+
+.bedankt__tekst {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.bedankt__tekst p {
+    color: var(--text-secondary);
+}
+
+.bedankt .gegevens__rij dt {
+    flex-basis: 144px;
+}
+
+.bedankt__status {
+    gap: var(--spacing-xs);
+}
+
+.bedankt__status h2 {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+}
+
+.bedankt__status p,
+.bedankt__regel {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.bedankt__regel a {
+    color: var(--text-link);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+
+/* ── Contact ─────────────────────────────────────────────────────────────
+   Intro, dan het formulier (760) met rechts de snelle routes (480). Op de
+   telefoon eerst de routes, dan het formulier. */
+
+.contact {
+    padding-block: var(--section-xs) var(--section-md);
+    background: var(--surface-subtle);
+}
+
+.contact__binnen {
+    display: flex;
+    flex-direction: column;
+    gap: var(--section-xs);
+}
+
+.contact__kolommen {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 480px);
+    align-items: start;
+    gap: var(--section-xs);
+}
+
+.contact .form-card h2 {
+    font-family: var(--font-family-display);
+    font-size: var(--type-heading-md-size);
+    line-height: var(--type-heading-md-line-height);
+    font-weight: 600;
+}
+
+.form-card__twee {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.form-card > .btn,
+.contact__verstuurd .knoppen-rij {
+    align-self: flex-start;
+}
+
+.routes-kaart {
+    gap: var(--spacing-md);
+}
+
+.contact__verstuurd {
+    align-items: flex-start;
+}
+
+.contact__verstuurd p {
+    color: var(--text-secondary);
+}
+
+@media (max-width: 1023px) {
+    .contact__kolommen {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .routes-kaart {
+        order: -1;
+    }
+}
+
+@media (max-width: 767px) {
+    .form-card__twee {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+
+/* ── Feedback ────────────────────────────────────────────────────────────
+   Zoals de formulierpagina's, maar met 40 boven (de terugknop staat er
+   direct) en 120 onder, ook op de telefoon. Het vak "Over het artikel" staat bovenin de kaart. */
+
+.formulierpagina--dicht {
+    padding-block: var(--section-xs) var(--section-md);
+}
+
+.over-artikel {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xs);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    background: var(--surface-subtle);
+}
+
+.over-artikel__label {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 600;
+}
+
+.over-artikel__titel {
+    font-weight: 600;
+}
+
+.feedback__samenvatting {
+    color: var(--text-secondary);
 }

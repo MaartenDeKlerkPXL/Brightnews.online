@@ -314,6 +314,13 @@ body[data-pagina="wachtwoord"] :is(.navbar__acties, .mobiel-menu__account) .btn 
     display: none;
 }
 
+/* Op Contact en Feedback is de knop van het formulier de enige primaire
+   knop; "Probeer Premium" in de header verdwijnt daar. */
+body[data-pagina="contact"] :is(.navbar, .mobiel-menu) .btn--primary,
+body[data-pagina="feedback"] :is(.navbar, .mobiel-menu) .btn--primary {
+    display: none;
+}
+
 /* Ingelogd of niet: <body data-ingelogd> toont Mijn account in plaats van
    Inloggen. In het voorbeeld zet alleen v5-profiel.html dat; na de koppeling
    doet de back-end het (TODO punt 66). Premium-leden (<body data-premium>)
@@ -326,8 +333,9 @@ body[data-premium] :is(.navbar, .mobiel-menu) .btn--primary {
 
 /* Op Mijn account is er geen primaire knop in de header: bij een gratis
    account staat "Probeer Premium" al in de pagina, bij Premium hoort hij er
-   niet. */
-body[data-pagina="profiel"] :is(.navbar, .mobiel-menu) .btn--primary {
+   niet. Op Bedankt heeft de lezer zich net aangemeld: ook daar niet. */
+body[data-pagina="profiel"] :is(.navbar, .mobiel-menu) .btn--primary,
+body[data-pagina="bedankt"] :is(.navbar, .mobiel-menu) .btn--primary {
     display: none;
 }
 
@@ -2167,7 +2175,8 @@ body[data-pagina="profiel"] :is(.navbar, .mobiel-menu) .btn--primary {
     line-height: var(--line-height-20);
 }
 
-.invoer .field-error {
+.invoer .field-error,
+.keuzes .field-error {
     padding-left: 0;
 }
 
@@ -2267,6 +2276,352 @@ body[data-pagina="profiel"] :is(.navbar, .mobiel-menu) .btn--primary {
     font-weight: 500;
     text-decoration: underline;
     cursor: pointer;
+}
+
+
+/* Variant Warning: amber vlak, voor iets dat (nog) niet gelukt is maar
+   geen fout van de lezer is, zoals Premium dat langer duurt dan normaal. */
+.alert--waarschuwing {
+    background: var(--feedback-warning-bg);
+}
+
+.alert--waarschuwing > .icoon {
+    color: var(--feedback-warning-fg);
+}
+
+
+/* ── Dropdown ──────────────────────────────────────────────────────────
+   Een gewone <select> in de vorm van het Input field, met eigen chevron
+   (de pijl van de browser gaat weg). De chevron ligt erboven en laat
+   klikken door. */
+
+.keuzeveld {
+    position: relative;
+}
+
+.keuzeveld .invoer__veld {
+    padding-right: calc(var(--spacing-sm) + 28px);
+    appearance: none;
+    cursor: pointer;
+}
+
+.keuzeveld .invoer__veld:invalid {
+    color: var(--text-muted);
+}
+
+.keuzeveld option {
+    color: var(--text-primary);
+}
+
+.keuzeveld > .icoon {
+    position: absolute;
+    top: 50%;
+    right: var(--spacing-sm);
+    width: 20px;
+    height: 20px;
+    color: var(--text-secondary);
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+/* ── Text area ─────────────────────────────────────────────────────────
+   Meerdere regels, met een teller onder het veld. De teller telt mee
+   voor schermlezers via aria-describedby, maar praat niet bij elke
+   toets (geen aria-live). */
+
+.invoer__veld--tekstvak {
+    display: block;
+    height: auto;
+    min-height: 96px;
+    padding-block: var(--spacing-sm);
+    resize: vertical;
+}
+
+.invoer__teller {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-variant-numeric: tabular-nums;
+}
+
+.invoer__teller--vol {
+    color: var(--feedback-error-fg);
+}
+
+
+/* ── Feature card ──────────────────────────────────────────────────────
+   Icoon in een vierkant vlak, titel, tekst en (optioneel) een link
+   onderaan. Op Over ons: de drie stappen. */
+
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
+    gap: var(--spacing-xl);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    padding: var(--spacing-xl);
+    border: var(--border-width-sm) solid var(--border-default);
+    border-radius: var(--radius-lg);
+    background: var(--surface-default);
+}
+
+.feature-card__icoon {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: var(--surface-muted);
+}
+
+.feature-card__icoon .icoon {
+    width: 24px;
+    height: 24px;
+}
+
+.feature-card__tekst {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.feature-card__titel {
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+}
+
+.feature-card__tekst p {
+    color: var(--text-secondary);
+}
+
+.feature-card__link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2xs);
+}
+
+.feature-card__link .icoon {
+    width: 16px;
+    height: 16px;
+}
+
+.feature-card__link,
+.tekstlink {
+    color: var(--text-link);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.feature-card__link:hover,
+.tekstlink:hover {
+    text-decoration-thickness: 2px;
+}
+
+@media (max-width: 1023px) {
+    .feature-cards {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+
+/* ── Process step ──────────────────────────────────────────────────────
+   Genummerde stap in een <ol>: het nummer staat in een zonnige cirkel
+   (surface/brand) en komt uit de lijst zelf, dus een schermlezer leest
+   het één keer. */
+
+.process-steps {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: stap;
+}
+
+.process-step {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-lg);
+    counter-increment: stap;
+}
+
+.process-step::before {
+    content: counter(stap);
+    display: grid;
+    flex: none;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-full);
+    background: var(--surface-brand);
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+}
+
+.process-step__tekst {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xs);
+    padding-top: var(--spacing-xs);
+}
+
+.process-step__titel {
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+}
+
+.process-step__tekst p {
+    color: var(--text-secondary);
+}
+
+
+/* ── Vinkjeslijst ──────────────────────────────────────────────────────
+   Korte regels met een vinkje (groen, text/link) of, met --nee, een kruis
+   (text/secondary). Zelfde regel als de Pricing feature op Abonnementen. */
+
+.vinklijst {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.vinklijst li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+}
+
+.vinklijst .icoon {
+    flex: none;
+    width: 24px;
+    height: 24px;
+    color: var(--text-link);
+}
+
+.vinklijst--nee .icoon {
+    color: var(--text-secondary);
+}
+
+
+/* ── Snelle routes ─────────────────────────────────────────────────────
+   Lijst met icoon, titel, één regel uitleg en een link. Een lijn tussen
+   de routes. Op Contact: "Misschien ben je zo sneller klaar". */
+
+.routes {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.route {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    padding-block: var(--spacing-md);
+    border-top: var(--border-width-sm) solid var(--border-default);
+}
+
+.route > .icoon {
+    flex: none;
+    width: 24px;
+    height: 24px;
+    color: var(--text-link);
+}
+
+.route__tekst {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-2xs);
+    min-width: 0;
+}
+
+.route__titel {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+}
+
+.route__tekst p,
+.route__link {
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.route__tekst p {
+    color: var(--text-secondary);
+}
+
+.route__link {
+    color: var(--text-link);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+
+/* ── Statusicoon ───────────────────────────────────────────────────────
+   Groot rond icoon (80, icoon 48) boven een bevestiging. Zonnig bij
+   gelukt; gedempt bij bezig of wachten. Bezig draait het icoon in stapjes
+   van 400 ms; bij prefers-reduced-motion staat het stil. */
+
+.status-icoon {
+    display: grid;
+    flex: none;
+    place-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: var(--radius-full);
+    background: var(--surface-brand);
+    color: var(--text-link);
+}
+
+.status-icoon .icoon {
+    width: 48px;
+    height: 48px;
+}
+
+.status-icoon--gedempt {
+    background: var(--surface-muted);
+}
+
+.status-icoon--wacht {
+    background: var(--surface-muted);
+    color: var(--text-secondary);
+}
+
+.status-icoon--draait .icoon {
+    animation: status-draai 3.2s steps(8) infinite;
+}
+
+@keyframes status-draai {
+    to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .status-icoon--draait .icoon {
+        animation: none;
+    }
 }
 
 

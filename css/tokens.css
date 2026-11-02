@@ -59,6 +59,8 @@
     --feedback-success-fg: #13573a;
     --feedback-error-fg: #b91c1c;
     --feedback-error-bg: #fef2f2;
+    --feedback-warning-bg: #fffbeb;
+    --feedback-warning-fg: #92400e;
 
     /* Fout. Niet in Figma; overgenomen uit de huidige site tot de
        ontwerper er een eigen reeks voor maakt. */
@@ -160,6 +162,8 @@
         --feedback-success-fg: #d2eedc;
         --feedback-error-fg: #fee2e2;
         --feedback-error-bg: #991b1b;
+        --feedback-warning-bg: #92400e;
+        --feedback-warning-fg: #fef3c7;
         color-scheme: dark;
     }
 }
@@ -181,6 +185,8 @@
     --feedback-success-fg: #d2eedc;
     --feedback-error-fg: #fee2e2;
     --feedback-error-bg: #991b1b;
+    --feedback-warning-bg: #92400e;
+    --feedback-warning-fg: #fef3c7;
     color-scheme: dark;
 }
 

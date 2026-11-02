@@ -76,7 +76,7 @@
                 <li><a class="nav-link" href="/v5-home.html" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
                 <li><a class="nav-link"><span data-i18n="schil_themas">Thema's</span></a></li>
                 <li><a class="nav-link" href="/v5-archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archief</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_over_ons">Over ons</span></a></li>
+                <li><a class="nav-link" href="/v5-over-ons.html"><span data-i18n="schil_over_ons">Over ons</span></a></li>
             </ul>
         </nav>
 
@@ -115,7 +115,7 @@
                             <li><a class="menu-link" href="/v5-home.html" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
                             <li><a class="menu-link"><span data-i18n="schil_themas">Thema's</span></a></li>
                             <li><a class="menu-link" href="/v5-archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archief</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_over_ons">Over ons</span></a></li>
+                            <li><a class="menu-link" href="/v5-over-ons.html"><span data-i18n="schil_over_ons">Over ons</span></a></li>
                         </ul>
                     </nav>
                     <div class="mobiel-menu__account">
@@ -569,6 +569,36 @@
         </div>
     </section>
 
+    <section class="gids__sectie" aria-labelledby="g-info">
+        <h2 class="type-heading-lg" id="g-info">Formulieren (vervolg) en infopagina's</h2>
+        <p class="gids__noot">Dropdown (een gewone select met eigen chevron), Text area met teller, Alert Warning, Statusicoon (gelukt, bezig met draaiend icoon, wachten), Feature card, Process step (een &lt;ol&gt;), Vinkjeslijst (wel en niet) en Snelle routes. In gebruik op Bedankt, Over ons, Zo kiezen we, Contact en Feedback.</p>
+        <div class="gids__rij">
+            <div class="gids__voorbeeld gids__smal" style="flex: 1 1 400px">
+                <span class="gids__label">Dropdown: leeg en gekozen</span>
+                <div class="invoer"><label class="invoer__label" for="gids-dd-1">Waar gaat het over?</label><div class="keuzeveld"><select class="invoer__veld" id="gids-dd-1" required><option value="" disabled selected>Kies een onderwerp</option><option value="a">Idee of suggestie</option></select><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#keyboard_arrow_down"/></svg></div></div>
+                <div class="invoer"><label class="invoer__label" for="gids-dd-2">Waar gaat het over?</label><div class="keuzeveld"><select class="invoer__veld" id="gids-dd-2" required><option value="">Kies een onderwerp</option><option value="a" selected>Idee of suggestie</option></select><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#keyboard_arrow_down"/></svg></div></div>
+                <span class="gids__label">Text area met teller, en fout</span>
+                <div class="invoer"><label class="invoer__label" for="gids-ta-1">Bericht</label><textarea class="invoer__veld invoer__veld--tekstvak" id="gids-ta-1" rows="3" placeholder="Schrijf hier je bericht" aria-describedby="gids-ta-1-teller"></textarea><p class="invoer__teller" id="gids-ta-1-teller">0 van 2000 tekens</p></div>
+                <div class="invoer"><label class="invoer__label" for="gids-ta-2">Bericht</label><textarea class="invoer__veld invoer__veld--tekstvak" id="gids-ta-2" rows="3" aria-invalid="true" aria-describedby="gids-ta-2-teller gids-ta-2-fout"></textarea><p class="invoer__teller" id="gids-ta-2-teller">0 van 2000 tekens</p><p class="field-error" id="gids-ta-2-fout"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#error"/></svg><span>Schrijf een bericht van minstens een paar woorden.</span></p></div>
+                <span class="gids__label">Alert Warning</span>
+                <div class="alert alert--waarschuwing"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#info"/></svg><div class="alert__inhoud"><p class="alert__titel">Meld je niet opnieuw aan</p><p class="alert__tekst">Ververs de pagina over een minuut. Je betaalt niets dubbel.</p></div></div>
+                <span class="gids__label">Statusicoon: gelukt, bezig, wachten</span>
+                <div class="knoppen-rij"><span class="status-icoon"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#check_circle"/></svg></span><span class="status-icoon status-icoon--gedempt status-icoon--draait"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#progress_activity"/></svg></span><span class="status-icoon status-icoon--wacht"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#schedule"/></svg></span></div>
+            </div>
+            <div class="gids__voorbeeld gids__smal" style="flex: 1 1 400px">
+                <span class="gids__label">Feature card, met en zonder link</span>
+                <div class="feature-card"><span class="feature-card__icoon"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#checklist"/></svg></span><div class="feature-card__tekst"><h3 class="feature-card__titel">2. Kiezen</h3><p>AI geeft elk bericht een score.</p></div><a class="feature-card__link" href="#"><span>Zo kiezen we</span><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#arrow_forward"/></svg></a></div>
+                <span class="gids__label">Process step</span>
+                <ol class="process-steps"><li class="process-step"><div class="process-step__tekst"><h3 class="process-step__titel">Ophalen</h3><p>Een programma haalt elke dag nieuwe berichten op.</p></div></li><li class="process-step"><div class="process-step__tekst"><h3 class="process-step__titel">Beoordelen</h3><p>Claude geeft punten op drie criteria.</p></div></li></ol>
+                <span class="gids__label">Vinkjeslijst: wel en niet</span>
+                <ul class="vinklijst" role="list"><li><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg><span>De bron, met een link</span></li></ul>
+                <ul class="vinklijst vinklijst--nee" role="list"><li><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#close"/></svg><span>Reclame en productnieuws</span></li></ul>
+                <span class="gids__label">Snelle routes</span>
+                <ul class="routes" role="list"><li class="route"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#flag"/></svg><div class="route__tekst"><h3 class="route__titel">Fout in een artikel?</h3><p>Meld het bij het artikel of via Feedback.</p><a class="route__link" href="#">Naar Feedback</a></div></li></ul>
+            </div>
+        </div>
+    </section>
+
     <section class="gids__sectie" aria-labelledby="g-account">
         <h2 class="type-heading-lg" id="g-account">Mijn account</h2>
         <p class="gids__noot">Badge md (Neutral en Success, naast een kop), Button Tertiary (een zijpad zoals Account verwijderen), Toggle (een echte checkbox met role="switch", geldt meteen) en Credit meter (alleen beeld; de tekst ernaast draagt de betekenis). In de header staat Mijn account in plaats van Inloggen zodra &lt;body data-ingelogd&gt; heeft.</p>
@@ -624,8 +654,8 @@
             <nav class="footer-kolom" aria-labelledby="footer-merk">
                 <h2 class="footer-kolom__titel" id="footer-merk">BrightNews</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_over_ons">Over ons</span></a></li>
-                    <li><a><span data-i18n="schil_zo_kiezen_we">Zo kiezen we</span></a></li>
+                    <li><a href="/v5-over-ons.html"><span data-i18n="schil_over_ons">Over ons</span></a></li>
+                    <li><a href="/v5-zo-kiezen-we.html"><span data-i18n="schil_zo_kiezen_we">Zo kiezen we</span></a></li>
                     <li><a href="/v5-abonnementen.html"><span data-i18n="schil_premium">Premium</span></a></li>
                     <li><a><span data-i18n="schil_privacy_voorwaarden">Privacy en voorwaarden</span></a></li>
                 </ul>
@@ -635,8 +665,8 @@
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Hulp</h2>
                 <ul>
                     <li><a><span data-i18n="schil_instellingen">Instellingen</span></a></li>
-                    <li><a><span data-i18n="schil_contact">Contact</span></a></li>
-                    <li><a><span data-i18n="schil_feedback">Feedback</span></a></li>
+                    <li><a href="/v5-contact.html"><span data-i18n="schil_contact">Contact</span></a></li>
+                    <li><a href="/v5-feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
                     <li><a><span data-i18n="schil_terugbetalingen">Terugbetalingen</span></a></li>
                 </ul>
             </nav>

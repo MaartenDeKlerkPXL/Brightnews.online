@@ -1734,8 +1734,8 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      (`index.html`, `archief.html`, het artikelsjabloon) en die adressen in
      `partials/v5/` en `js/v5/gedeeld.js` (`url`) zetten. Sinds 2026-10-29
      linken de v5-pagina's alleen naar elkaar; een pagina die in v5 nog niet
-     bestaat (Thema's, Over ons, Inloggen, Premium, de categorieën, de
-     footerpagina's, artikelen van vóór de feed) staat er zonder link. Ook
+     bestaat (Thema's, de categorieën, Privacy en voorwaarden,
+     Terugbetalingen, artikelen van vóór de feed) staat er zonder link. Ook
      de koppen van een oudere editie zijn daardoor nog geen links, terwijl
      de uitlegnotitie zegt dat elke kop het artikel opent.
   9. **Inloggen koppelen op `v5-inloggen.html`** (Supabase, Erik): inloglink
@@ -1767,7 +1767,26 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
       account maken), hoe lang de link geldig is, en "Stuur opnieuw" pas na
       60 seconden. Een verlopen link toont het formulier met een Alert
       Warning "Deze link is verlopen. Vraag een nieuwe aan."; die variant
-      bestaat nog niet (zie hierboven).
+      bestaat sinds 2026-11-02 (`.alert--waarschuwing`).
+  12. **Bedankt koppelen op `v5-bedankt.html`** (Stripe en Supabase, dus PR
+      langs Erik). Stripe Checkout stuurt na de aanmelding hierheen, met
+      `?next=` als de lezer van een artikel kwam. Nodig: een vraag "staat
+      Premium aan voor deze sessie?" die de pagina elke 2 seconden stelt
+      (`premiumStaatAan()` in `js/v5/bedankt.js`), plus plan, datum en
+      bedrag van de eerste betaling en het e-mailadres van de bevestiging.
+      Na 30 seconden zonder Premium toont de pagina "duurt langer dan
+      normaal". Af te stemmen (staat in de besluiten): stuurt Stripe de
+      bevestigingsmail of wij, en gaat de proefperiode in bij de aanmelding
+      of pas als Premium aanstaat? De waarschuwing gaat uit van het tweede.
+  13. **Contact en Feedback laten versturen** (`v5-contact.html`,
+      `v5-feedback.html`). Nu controleert het formulier de velden en toont
+      het daarna de bevestiging, maar er gaat niets weg. Nodig: waar komen
+      berichten binnen (voorstel Figma: een Supabase-tabel; voor Feedback
+      met artikel-id, keuze, tekst en taal), en tegen spam een verborgen
+      honeypot-veld (`website`, staat al in beide formulieren: gevuld =
+      weggooien) plus een limiet per IP, geen captcha. Contact noemt
+      bewust geen reactietermijn, e-mailadres of telefoonnummer; vul die
+      in als ze er zijn.
 
   ### Opruimen in Figma als v3 gekozen is
 
