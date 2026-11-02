@@ -258,9 +258,10 @@ body[data-pagina="abonnementen"] .navbar .btn--primary {
     display: none;
 }
 
-/* Op de inlogpagina staan "Inloggen" en "Probeer Premium" er niet: de enige
-   primaire knop staat in het formulier. */
-body[data-pagina="inloggen"] .navbar .btn {
+/* Op de inlogpagina en Wachtwoord vergeten staan "Inloggen" en "Probeer
+   Premium" er niet: de enige primaire knop staat in het formulier. */
+body[data-pagina="inloggen"] .navbar .btn,
+body[data-pagina="wachtwoord"] .navbar .btn {
     display: none;
 }
 

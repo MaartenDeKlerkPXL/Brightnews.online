@@ -519,7 +519,7 @@
 }
 
 
-/* ── Formulierpagina's (inloggen, account maken) ─────────────────────────
+/* ── Formulierpagina's (inloggen, account maken, wachtwoord vergeten) ────
    Eén smalle kolom (layout/form-width) op het subtiele vlak. */
 
 .formulierpagina {
@@ -536,6 +536,11 @@
 
 .formulierpagina__kolom[hidden] {
     display: none;
+}
+
+/* "Terug naar inloggen" bovenaan de kolom: zo breed als de knop zelf. */
+.formulier-terug {
+    align-self: flex-start;
 }
 
 .formulier-intro {

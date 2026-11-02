@@ -1642,8 +1642,8 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   niet gekoppeld; de staten bekijk je met `?staat=fout` en
   `?staat=verstuurd&email=…`. Nieuwe tokens uit Figma:
   `--feedback-error-bg`, `--layout-form-width` en `--form-label-offset`.
-  Nog zonder link (pagina bestaat in v5 nog niet): "Wachtwoord vergeten?",
-  algemene voorwaarden en privacyverklaring. Het wachtwoordveld bij "Account
+  Nog zonder link (pagina bestaat in v5 nog niet): algemene voorwaarden en
+  privacyverklaring ("Wachtwoord vergeten?" linkt sinds 2026-11-02). Het wachtwoordveld bij "Account
   maken" met een wachtwoord is niet apart ontworpen; het volgt het voorstel
   uit de besluiten (hulptekst "Minstens 8 tekens").
 
@@ -1677,6 +1677,25 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
     is ook een Badge Warning nodig, met tokens die nog niet bestaan.
   - Mobiel valt terug op één kolom; de knop "Mijn account" in de header
     verdwijnt onder 600 px, net als "Inloggen".
+
+  **Wachtwoord vergeten (2026-11-02):** `v5-wachtwoord-vergeten.html` volgt
+  de vier frames "Wachtwoord vergeten · Desktop" (Formulier, Fout:
+  e-mailadres onvolledig, Mail verstuurd, Nieuw wachtwoord kiezen) met de
+  besluiten: zelfde opbouw als inloggen, header zonder "Inloggen" en
+  "Probeer Premium", "Terug naar inloggen" bovenaan als tertiaire knop met
+  pijl, en onder de knop de uitweg "Log in met een inloglink". De fout komt
+  alleen bij een onvolledig e-mailadres, als Field error met aria-invalid en
+  de focus terug naar het veld; de controle gebeurt in de browser (een punt
+  in het domein is verplicht, want `jan@voorbeeld` laat de browser zelf
+  door). "Kijk in je mail" zegt "Hoort … bij een account?", zodat de pagina
+  niet verklapt of een account bestaat. Staten bekijken: `?staat=fout`,
+  `?staat=verstuurd&email=…` en `?type=recovery&email=…` (nieuw wachtwoord
+  kiezen). "Wachtwoord vergeten?" op `v5-inloggen.html` linkt er nu naartoe.
+  Stuur link, Stuur opnieuw en Wachtwoord opslaan controleren de velden en
+  melden dan dat het voorbeeld niet gekoppeld is. Niet gebouwd: de staat
+  "link verlopen". Die staat alleen als tekst in de besluiten (formulier met
+  een Alert Warning) en de Alert heeft nog geen variant Warning; daarvoor
+  ontbreken de tokens (zelfde punt als de Badge Warning hierboven).
 
   #### Back-end voor v5 (Claude, sessie Maarten)
 
@@ -1738,6 +1757,17 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
       apparaat gelden. Open vragen uit Figma: wat doet een promocode
       (gratis Premium-periode of korting), en hoe gaat Account verwijderen
       bij Premium (eerst opzeggen in het klantportaal)?
+  11. **Wachtwoord herstellen koppelen op `v5-wachtwoord-vergeten.html`**
+      (Supabase, Erik). "Stuur link" vraagt de herstelmail aan
+      (`resetPasswordForEmail`) met als terugadres deze pagina met
+      `?type=recovery`; "Kijk in je mail" verschijnt altijd, ook bij een
+      onbekend adres. Op `?type=recovery` het nieuwe wachtwoord opslaan
+      (`updateUser`), daarna ingelogd door naar Mijn account. Af te stemmen
+      (staat in de besluiten): minimale lengte (voorstel 8, zoals bij
+      account maken), hoe lang de link geldig is, en "Stuur opnieuw" pas na
+      60 seconden. Een verlopen link toont het formulier met een Alert
+      Warning "Deze link is verlopen. Vraag een nieuwe aan."; die variant
+      bestaat nog niet (zie hierboven).
 
   ### Opruimen in Figma als v3 gekozen is
 

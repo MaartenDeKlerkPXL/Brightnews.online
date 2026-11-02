@@ -87,6 +87,7 @@
     function teken() {
         $('tab-inloggen').href = B.metTestdag(adres('inloggen'));
         $('tab-account').href = B.metTestdag(adres('account'));
+        $('in-vergeten').href = B.metTestdag('/v5-wachtwoord-vergeten.html');
         $(isAccount ? 'tab-account' : 'tab-inloggen').setAttribute('aria-current', 'page');
         $(isAccount ? 'tab-inloggen' : 'tab-account').removeAttribute('aria-current');
 
