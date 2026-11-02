@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-11-01T17:46:55.871Z",
+ "gegenereerd": "2026-11-02T04:58:03.992Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -14,87 +14,52 @@
      "url": "https://brightnews.online/articles/nl/howell-high-school-vult-voetbalveld-met-boodschappen-voor-voedselbanken-1793555084446w70x69w4f.html"
     },
     {
-     "id": "1793421296769hs16l0ker",
-     "titel": "Veteraan krijgt opgeknapte Hyundai Elantra van studenten",
-     "teaser": "Marineveteraan Robert Hanson uit Minneapolis had al meer dan twee jaar geen eigen auto meer. Door ernstige astma en fibromyalgie, ontstaan na zijn diensttijd bij de Amerikaanse marine (1993-1997), was reizen met het openbaar vervoer voor hem erg moeilijk. Via een verwijzing van een welzijnsdienst in Hennepin County kwam hij in aanmerking voor het Recycled Rides for Schools-programma van de...",
-     "score": 10,
+     "id": "1793595386959cin9sh8dj",
+     "titel": "Star-C Program haalt 16,5 miljoen dollar op voor huurhulp",
+     "teaser": "Het Atlanta-gebaseerde Star-C Program, opgericht door vastgoedeigenaar Marjy Stagmeier, heeft via zijn Eviction Relief Fund inmiddels meer dan 5.500 gezinnen geholpen hun huurwoning te behouden. Wat begon als een GoFundMe-actie van 50.000 dollar, groeide uit tot meer dan 16,5 miljoen dollar aan huurhulp. Stagmeier wijst erop dat huurachterstand niet alleen een inkomensprobleem is: stijgende huren en inflatie dwingen huurders tot...",
+     "score": 9,
+     "categorie": "Finance",
+     "url": "https://brightnews.online/articles/nl/star-c-program-haalt-16-5-miljoen-dollar-op-voor-huurhulp-1793595386959cin9sh8dj.html"
+    },
+    {
+     "id": "1793595351745s52awslnz",
+     "titel": "Portugees eiland Corvo dooft licht voor pijlstormvogels",
+     "teaser": "Op het Portugese eiland Corvo in de Azoren gaan elk jaar eind oktober, vijf nachten lang, van 21.00 tot 4.00 uur alle straatlichten uit. Dit beschermt jonge zeevogels zoals de Cory's shearwater, die 's nachts hun nest verlaten om naar zee te vliegen maar door kunstlicht gedesoriënteerd raken en neerstorten. De Azoren herbergen 65 tot 75 procent van de wereldwijde...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/portugees-eiland-corvo-dooft-licht-voor-pijlstormvogels-1793595351745s52awslnz.html"
+    },
+    {
+     "id": "1793555114323om6utmbe0",
+     "titel": "Hulphond Storm redt leven van dove Sandra na val van haar man Gary",
+     "teaser": "In Staffordshire, Engeland, heeft hulphond Storm het leven gered van Gary, de man van zijn dove eigenaresse Sandra Donally (62). Storm sprong kort na middernacht op Sandra's bed en bleef roerloos naar de overloop staren, ondanks dat Sandra dacht dat Gary gewoon naar het toilet was. Doordat Sandra de vreemde reactie van de hond serieus nam, ontdekte ze dat Gary...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/veteraan-krijgt-opgeknapte-hyundai-elantra-van-studenten-1793421296769hs16l0ker.html"
+     "url": "https://brightnews.online/articles/nl/hulphond-storm-redt-leven-van-dove-sandra-na-val-van-haar-man-gary-1793555114323om6utmbe0.html"
     },
     {
-     "id": "17933843011651er3an5ge",
-     "titel": "Oceaanbeschermer Stacy Jupiter vecht tegen borstkanker",
-     "teaser": "Dr. Stacy Jupiter, die wereldwijde oceaanconservering coördineert voor de Wildlife Conservation Society, kreeg in september 2025 onverwacht de diagnose borstkanker tijdens een vakantie in Florida. Er was geen tumor in haar borst zichtbaar, maar de kanker had zich al verspreid naar lymfeklieren. Voor behandeling keerde ze terug naar Boston, waar ze bij Mass General Brigham een klinische studie, operatie, chemotherapie...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/nl/oceaanbeschermer-stacy-jupiter-vecht-tegen-borstkanker-17933843011651er3an5ge.html"
-    },
-    {
-     "id": "1793383750932rcrb7m8t3",
-     "titel": "Verpleegkundigen behalen eerste betaald ouderschapsverlof op countyniveau in VS",
-     "teaser": "Verpleegkundigen van UPMC Magee-Womens Hospital in Pittsburgh, onder wie neonatologieverpleegkundige Jean Stone, vormden samen met werkende ouders, belangenbehartigers en gekozen leiders een coalitie voor betaald ouderschapsverlof. Op Moederdag, 10 mei, lanceerden zij hun campagne. De Allegheny County Council stemde met 11 tegen 4 voor twaalf weken betaald ouderschapsverlof, de eerste regeling op countyniveau in de Verenigde Staten. Zowel bevallende als...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/nl/verpleegkundigen-behalen-eerste-betaald-ouderschapsverlof-op-countyniveau-in-vs-1793383750932rcrb7m8t3.html"
-    },
-    {
-     "id": "1793383718920rpe7lsbzj",
-     "titel": "Halloween-skeletten halen 2 miljoen dollar op voor St. Jude",
-     "teaser": "Meer dan 600 Amerikaanse huishoudens doen mee aan Skeletons for St. Jude, een inzamelingsactie die begon toen Jeff Robertson uit Holly Springs, North Carolina in 2020 zijn Halloween-decoratie deelde met een kind met kanker. Sindsdien groeide het initiatief uit tot een jaarlijkse traditie die al 1,2 miljoen dollar opbracht voor St. Jude Children's Research Hospital. Dit jaar, het zevende jaar,...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/halloween-skeletten-halen-2-miljoen-dollar-op-voor-st-jude-1793383718920rpe7lsbzj.html"
+     "id": "1793508898612miskfxp66",
+     "titel": "Nieuw natuurreservaat Agua Dulce beschermt Iténez-rivier als 'link of life'",
+     "teaser": "Rainforest Trust heeft meegeholpen aan de oprichting van het 715.000 hectare grote Agua Dulce Municipal Wildlife Reserve langs de Iténez-rivier in Bolivia, door wetenschappers een 'link of life' genoemd. Het gebied herbergt onder meer jaguars, Amazonerivierdolfijnen, reuzenotters, laaglandtapirs, zwarte kaaimannen en 260 vissoorten, waarvan 25 nergens anders voorkomen. De reserve verbindt beschermde gebieden in Bolivia en Brazilië en werd gerealiseerd...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/nieuw-natuurreservaat-agua-dulce-beschermt-itenez-rivier-als-link-of-life-1793508898612miskfxp66.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261101-lifestyle",
+     "titel": "Verbinding staat centraal: van bankje bij de bushalte tot liefde op hoge leeftijd",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-01",
+     "url": "https://brightnews.online/articles/nl/verbinding-staat-centraal-van-bankje-bij-de-bushalte-tot-liefde-op-hoge-leeftijd-dg-20261101-lifestyle.html"
+    },
     {
      "id": "dg-20261031-lifestyle",
      "titel": "Van blaffende hulphond tot basketballende otters: het goede nieuws van deze week",
      "categorie": "Lifestyle",
      "dag": "2026-10-31",
      "url": "https://brightnews.online/articles/nl/van-blaffende-hulphond-tot-basketballende-otters-het-goede-nieuws-van-deze-week-dg-20261031-lifestyle.html"
-    },
-    {
-     "id": "dg-20261030-science",
-     "titel": "Samenwerken, snel denken en slim verdedigen: wetenschapsnieuws van eind oktober",
-     "categorie": "Science",
-     "dag": "2026-10-30",
-     "url": "https://brightnews.online/articles/nl/samenwerken-snel-denken-en-slim-verdedigen-wetenschapsnieuws-van-eind-oktober-dg-20261030-science.html"
-    },
-    {
-     "id": "dg-20261030-environment",
-     "titel": "Van aardappeloogst tot walrusjong: goed nieuws voor natuur komt uit alle hoeken",
-     "categorie": "Environment",
-     "dag": "2026-10-30",
-     "url": "https://brightnews.online/articles/nl/van-aardappeloogst-tot-walrusjong-goed-nieuws-voor-natuur-komt-uit-alle-hoeken-dg-20261030-environment.html"
-    },
-    {
-     "id": "dg-20261030-lifestyle",
-     "titel": "Van opgeknapte auto tot anonieme weldoener: het goede nieuws van eind oktober",
-     "categorie": "Lifestyle",
-     "dag": "2026-10-30",
-     "url": "https://brightnews.online/articles/nl/van-opgeknapte-auto-tot-anonieme-weldoener-het-goede-nieuws-van-eind-oktober-dg-20261030-lifestyle.html"
-    },
-    {
-     "id": "dg-20261029-science",
-     "titel": "Samenwerking als rode draad: het wetenschapsnieuws van eind oktober",
-     "categorie": "Science",
-     "dag": "2026-10-29",
-     "url": "https://brightnews.online/articles/nl/samenwerking-als-rode-draad-het-wetenschapsnieuws-van-eind-oktober-dg-20261029-science.html"
-    },
-    {
-     "id": "dg-20261029-environment",
-     "titel": "Schoon water en nieuwe kansen voor dieren wereldwijd",
-     "categorie": "Environment",
-     "dag": "2026-10-29",
-     "url": "https://brightnews.online/articles/nl/schoon-water-en-nieuwe-kansen-voor-dieren-wereldwijd-dg-20261029-environment.html"
-    },
-    {
-     "id": "dg-20261029-health",
-     "titel": "Gezondheidsnieuws deze week: vooruitgang op veel fronten",
-     "categorie": "Health",
-     "dag": "2026-10-29",
-     "url": "https://brightnews.online/articles/nl/gezondheidsnieuws-deze-week-vooruitgang-op-veel-fronten-dg-20261029-health.html"
     }
    ]
   },
@@ -109,87 +74,52 @@
      "url": "https://brightnews.online/articles/en/howell-high-school-fills-football-field-with-donations-for-food-banks-1793555084446w70x69w4f.html"
     },
     {
-     "id": "1793421296769hs16l0ker",
-     "titel": "Veteran receives restored Hyundai Elantra from students",
-     "teaser": "Navy veteran Robert Hanson from Minneapolis had been without his own car for more than two years. Due to severe asthma and fibromyalgia, conditions that developed after his service with the U.S. Marine Corps (1993-1997), traveling by public transportation was extremely difficult for him. Through a referral from a social services agency in Hennepin County, he became eligible for the...",
-     "score": 10,
+     "id": "1793595386959cin9sh8dj",
+     "titel": "Star-C Program raises $16.5 million for rental assistance",
+     "teaser": "The Atlanta-based Star-C Program, founded by real estate owner Marjy Stagmeier, has helped more than 5,500 families keep their rental homes through its Eviction Relief Fund. What started as a $50,000 GoFundMe campaign grew into more than $16.5 million in rental assistance. Stagmeier points out that rental arrears are not just an income problem: rising rents and inflation force renters...",
+     "score": 9,
+     "categorie": "Finance",
+     "url": "https://brightnews.online/articles/en/star-c-program-raises-16-5-million-for-rental-assistance-1793595386959cin9sh8dj.html"
+    },
+    {
+     "id": "1793595351745s52awslnz",
+     "titel": "Portuguese island Corvo turns off lights for shearwaters",
+     "teaser": "On the Portuguese island of Corvo in the Azores, all street lights are switched off every year in late October for five nights, from 9 p.m. to 4 a.m. This protects young seabirds such as Cory's shearwater, which leave their nests at night to fly out to sea but become disoriented by artificial light and crash. The Azores are home...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/portuguese-island-corvo-turns-off-lights-for-shearwaters-1793595351745s52awslnz.html"
+    },
+    {
+     "id": "1793555114323om6utmbe0",
+     "titel": "Service dog Storm saves life of deaf Sandra after her husband Gary's fall",
+     "teaser": "In Staffordshire, England, service dog Storm has saved the life of Gary, the husband of his deaf owner Sandra Donally (62). Storm jumped onto Sandra's bed shortly after midnight and stared motionless at the landing, even though Sandra thought Gary had simply gone to the toilet. Because Sandra took the dog's unusual behaviour seriously, she discovered that Gary had fallen...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/veteran-receives-restored-hyundai-elantra-from-students-1793421296769hs16l0ker.html"
+     "url": "https://brightnews.online/articles/en/service-dog-storm-saves-life-of-deaf-sandra-after-her-husband-gary-s-fall-1793555114323om6utmbe0.html"
     },
     {
-     "id": "17933843011651er3an5ge",
-     "titel": "Ocean protector Stacy Jupiter fights breast cancer",
-     "teaser": "Dr. Stacy Jupiter, who coordinates global ocean conservation for the Wildlife Conservation Society, received an unexpected breast cancer diagnosis in September 2025 while on vacation in Florida. There was no visible tumor in her breast, but the cancer had already spread to her lymph nodes. She returned to Boston for treatment, where she underwent a clinical trial, surgery, chemotherapy and...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/en/ocean-protector-stacy-jupiter-fights-breast-cancer-17933843011651er3an5ge.html"
-    },
-    {
-     "id": "1793383750932rcrb7m8t3",
-     "titel": "Nurses secure first county-level paid parental leave in the US",
-     "teaser": "Nurses at UPMC Magee-Womens Hospital in Pittsburgh, including neonatal nurse Jean Stone, joined forces with working parents, advocates and elected officials to form a coalition for paid parental leave. On Mother's Day, May 10, they launched their campaign. The Allegheny County Council voted 11-4 in favor of twelve weeks of paid parental leave, the first policy of its kind at...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/en/nurses-secure-first-county-level-paid-parental-leave-in-the-us-1793383750932rcrb7m8t3.html"
-    },
-    {
-     "id": "1793383718920rpe7lsbzj",
-     "titel": "Halloween skeletons raise 2 million dollars for St. Jude",
-     "teaser": "More than 600 American households are participating in Skeletons for St. Jude, a fundraising initiative that began when Jeff Robertson from Holly Springs, North Carolina shared his Halloween decoration with a child battling cancer in 2020. Since then, the initiative has grown into an annual tradition that has already raised 1.2 million dollars for St. Jude Children's Research Hospital. This...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/halloween-skeletons-raise-2-million-dollars-for-st-jude-1793383718920rpe7lsbzj.html"
+     "id": "1793508898612miskfxp66",
+     "titel": "New Agua Dulce nature reserve protects Iténez river as 'link of life'",
+     "teaser": "Rainforest Trust has helped establish the 715,000-hectare Agua Dulce Municipal Wildlife Reserve along the Iténez river in Bolivia, described by scientists as a 'link of life'. The area is home to jaguars, Amazon river dolphins, giant otters, lowland tapirs, black caimans and 260 fish species, 25 of which are found nowhere else. The reserve connects protected areas in Bolivia and...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/new-agua-dulce-nature-reserve-protects-itenez-river-as-link-of-life-1793508898612miskfxp66.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261101-lifestyle",
+     "titel": "Connection takes center stage: from a bench at the bus stop to love in later years",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-01",
+     "url": "https://brightnews.online/articles/en/connection-takes-center-stage-from-a-bench-at-the-bus-stop-to-love-in-later-year-dg-20261101-lifestyle.html"
+    },
     {
      "id": "dg-20261031-lifestyle",
      "titel": "From barking service dogs to basketball-playing otters: the good news of this week",
      "categorie": "Lifestyle",
      "dag": "2026-10-31",
      "url": "https://brightnews.online/articles/en/from-barking-service-dogs-to-basketball-playing-otters-the-good-news-of-this-wee-dg-20261031-lifestyle.html"
-    },
-    {
-     "id": "dg-20261030-science",
-     "titel": "Collaboration, quick thinking and smart defense: science news from late October",
-     "categorie": "Science",
-     "dag": "2026-10-30",
-     "url": "https://brightnews.online/articles/en/collaboration-quick-thinking-and-smart-defense-science-news-from-late-october-dg-20261030-science.html"
-    },
-    {
-     "id": "dg-20261030-environment",
-     "titel": "From potato harvest to walrus calf: good news for nature comes from all corners",
-     "categorie": "Environment",
-     "dag": "2026-10-30",
-     "url": "https://brightnews.online/articles/en/from-potato-harvest-to-walrus-calf-good-news-for-nature-comes-from-all-corners-dg-20261030-environment.html"
-    },
-    {
-     "id": "dg-20261030-lifestyle",
-     "titel": "From a restored car to an anonymous benefactor: the good news from late October",
-     "categorie": "Lifestyle",
-     "dag": "2026-10-30",
-     "url": "https://brightnews.online/articles/en/from-a-restored-car-to-an-anonymous-benefactor-the-good-news-from-late-october-dg-20261030-lifestyle.html"
-    },
-    {
-     "id": "dg-20261029-science",
-     "titel": "Collaboration as a common thread: the science news from late October",
-     "categorie": "Science",
-     "dag": "2026-10-29",
-     "url": "https://brightnews.online/articles/en/collaboration-as-a-common-thread-the-science-news-from-late-october-dg-20261029-science.html"
-    },
-    {
-     "id": "dg-20261029-environment",
-     "titel": "Clean water and new opportunities for animals worldwide",
-     "categorie": "Environment",
-     "dag": "2026-10-29",
-     "url": "https://brightnews.online/articles/en/clean-water-and-new-opportunities-for-animals-worldwide-dg-20261029-environment.html"
-    },
-    {
-     "id": "dg-20261029-health",
-     "titel": "Health news this week: progress on many fronts",
-     "categorie": "Health",
-     "dag": "2026-10-29",
-     "url": "https://brightnews.online/articles/en/health-news-this-week-progress-on-many-fronts-dg-20261029-health.html"
     }
    ]
   },
@@ -204,87 +134,52 @@
      "url": "https://brightnews.online/articles/de/howell-high-school-fullt-fu-ballfeld-mit-spenden-fur-lebensmittelbanken-1793555084446w70x69w4f.html"
     },
     {
-     "id": "1793421296769hs16l0ker",
-     "titel": "Veteran erhält aufgearbeiteten Hyundai Elantra von Studierenden",
-     "teaser": "Der Marineveteran Robert Hanson aus Minneapolis hatte mehr als zwei Jahre lang kein eigenes Auto. Aufgrund von schwerem Asthma und Fibromyalgie, die nach seinem Dienst bei der United States Marine Corps (1993–1997) auftraten, war die Nutzung öffentlicher Verkehrsmittel für ihn sehr schwierig. Über eine Empfehlung eines Wohlfahrtsdienstes im Hennepin County kam er für das Recycled Rides for Schools-Programm des National...",
-     "score": 10,
+     "id": "1793595386959cin9sh8dj",
+     "titel": "Star-C Program sammelt 16,5 Millionen Dollar für Mietunterstützung",
+     "teaser": "Das in Atlanta ansässige Star-C Program, gegründet von Immobilieneigentümer Marjy Stagmeier, hat über seinen Eviction Relief Fund bereits mehr als 5.500 Familien geholfen, ihre Mietwohnungen zu behalten. Was als GoFundMe-Aktion mit 50.000 Dollar begann, wuchs zu mehr als 16,5 Millionen Dollar an Mietunterstützung heran. Stagmeier weist darauf hin, dass Mietrückstände nicht nur ein Einkommensproblem sind: steigende Mieten und Inflation zwingen...",
+     "score": 9,
+     "categorie": "Finance",
+     "url": "https://brightnews.online/articles/de/star-c-program-sammelt-16-5-millionen-dollar-fur-mietunterstutzung-1793595386959cin9sh8dj.html"
+    },
+    {
+     "id": "1793595351745s52awslnz",
+     "titel": "Portugiesische Insel Corvo schaltet Licht für Sturmtaucher aus",
+     "teaser": "Auf der portugiesischen Insel Corvo auf den Azoren werden jeden Oktober Ende des Monats fünf Nächte lang von 21.00 bis 4.00 Uhr alle Straßenlaternen ausgeschaltet. Dies schützt junge Seevögel wie die Cory-Sturmtaucher, die nachts ihr Nest verlassen, um zum Meer zu fliegen, aber durch künstliches Licht desorientiert werden und abstürzen. Die Azoren beherbergen 65 bis 75 Prozent der weltweiten Brutpopulation...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/portugiesische-insel-corvo-schaltet-licht-fur-sturmtaucher-aus-1793595351745s52awslnz.html"
+    },
+    {
+     "id": "1793555114323om6utmbe0",
+     "titel": "Assistenzhund Storm rettet Leben von gehörloser Sandra nach Sturz ihres Mannes Gary",
+     "teaser": "In Staffordshire, England, hat Assistenzhund Storm das Leben von Gary gerettet, dem Ehemann seiner gehörlosen Besitzerin Sandra Donally (62). Storm sprang kurz nach Mitternacht auf Sandras Bett und starrte regungslos auf den Flur, obwohl Sandra dachte, dass Gary nur zur Toilette gegangen war. Weil Sandra die seltsame Reaktion des Hundes ernst nahm, entdeckte sie, dass Gary die Treppe hinuntergefallen war,...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/veteran-erhalt-aufgearbeiteten-hyundai-elantra-von-studierenden-1793421296769hs16l0ker.html"
+     "url": "https://brightnews.online/articles/de/assistenzhund-storm-rettet-leben-von-gehorloser-sandra-nach-sturz-ihres-mannes-g-1793555114323om6utmbe0.html"
     },
     {
-     "id": "17933843011651er3an5ge",
-     "titel": "Meeresschützerin Stacy Jupiter kämpft gegen Brustkrebs",
-     "teaser": "Dr. Stacy Jupiter, die weltweite Meeresschutzmaßnahmen für die Wildlife Conservation Society koordiniert, erhielt im September 2025 unerwartet die Diagnose Brustkrebs während eines Urlaubs in Florida. Es war kein Tumor in ihrer Brust sichtbar, aber der Krebs hatte sich bereits auf Lymphknoten ausgebreitet. Zur Behandlung kehrte sie nach Boston zurück, wo sie sich bei Mass General Brigham einer klinischen Studie, einer...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/de/meeresschutzerin-stacy-jupiter-kampft-gegen-brustkrebs-17933843011651er3an5ge.html"
-    },
-    {
-     "id": "1793383750932rcrb7m8t3",
-     "titel": "Krankenschwestern erhalten erstes bezahltes Elternzeitgesetz auf County-Ebene in den USA",
-     "teaser": "Krankenschwestern des UPMC Magee-Womens Hospital in Pittsburgh, darunter die Neonatologiepflegerin Jean Stone, bildeten zusammen mit berufstätigen Eltern, Interessenvertretern und gewählten Führungskräften eine Koalition für bezahlten Elternurlaub. Am Muttertag, dem 10. Mai, starteten sie ihre Kampagne. Der Allegheny County Council stimmte mit 11 gegen 4 Stimmen für zwölf Wochen bezahlten Elternurlaub – die erste Regelung auf County-Ebene in den Vereinigten Staaten....",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/de/krankenschwestern-erhalten-erstes-bezahltes-elternzeitgesetz-auf-county-ebene-in-1793383750932rcrb7m8t3.html"
-    },
-    {
-     "id": "1793383718920rpe7lsbzj",
-     "titel": "Halloween-Skelette sammeln 2 Millionen Dollar für St. Jude",
-     "teaser": "Mehr als 600 amerikanische Haushalte beteiligen sich an Skeletons for St. Jude, einer Spendenaktion, die begann, als Jeff Robertson aus Holly Springs, North Carolina, 2020 seine Halloween-Dekoration mit einem krebskranken Kind teilte. Seitdem ist die Initiative zu einer jährlichen Tradition gewachsen, die bereits 1,2 Millionen Dollar für St. Jude Children's Research Hospital eingebracht hat. In diesem Jahr, dem siebten Jahr,...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/halloween-skelette-sammeln-2-millionen-dollar-fur-st-jude-1793383718920rpe7lsbzj.html"
+     "id": "1793508898612miskfxp66",
+     "titel": "Neues Naturschutzgebiet Agua Dulce schützt Iténez-Fluss als 'link of life'",
+     "teaser": "Rainforest Trust hat bei der Gründung des 715.000 Hektar großen Agua Dulce Municipal Wildlife Reserve entlang des Iténez-Flusses in Bolivien mitgewirkt, das von Wissenschaftlern als „link of life\" bezeichnet wird. Das Gebiet beherbergt unter anderem Jaguare, Amazonas-Flussdelfine, Riesenotter, Flachland-Tapire, Schwarzkaimane und 260 Fischarten, von denen 25 nirgendwo sonst vorkommen. Das Schutzgebiet verbindet geschützte Gebiete in Bolivien und Brasilien und wurde...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/neues-naturschutzgebiet-agua-dulce-schutzt-itenez-fluss-als-link-of-life-1793508898612miskfxp66.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261101-lifestyle",
+     "titel": "Verbindung im Mittelpunkt: von der Bank an der Bushaltestelle bis zur Liebe im hohen Alter",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-01",
+     "url": "https://brightnews.online/articles/de/verbindung-im-mittelpunkt-von-der-bank-an-der-bushaltestelle-bis-zur-liebe-im-ho-dg-20261101-lifestyle.html"
+    },
     {
      "id": "dg-20261031-lifestyle",
      "titel": "Von bellenden Assistenzhunden bis zu basketballspielenden Ottern: die guten Nachrichten dieser Woche",
      "categorie": "Lifestyle",
      "dag": "2026-10-31",
      "url": "https://brightnews.online/articles/de/von-bellenden-assistenzhunden-bis-zu-basketballspielenden-ottern-die-guten-nachr-dg-20261031-lifestyle.html"
-    },
-    {
-     "id": "dg-20261030-science",
-     "titel": "Zusammenarbeit, schnelles Denken und intelligente Verteidigung: Wissenschaftsnachrichten von Ende Oktober",
-     "categorie": "Science",
-     "dag": "2026-10-30",
-     "url": "https://brightnews.online/articles/de/zusammenarbeit-schnelles-denken-und-intelligente-verteidigung-wissenschaftsnachr-dg-20261030-science.html"
-    },
-    {
-     "id": "dg-20261030-environment",
-     "titel": "Von der Kartoffelernte bis zum Walrossbaby: Gute Nachrichten für die Natur kommen von überall",
-     "categorie": "Environment",
-     "dag": "2026-10-30",
-     "url": "https://brightnews.online/articles/de/von-der-kartoffelernte-bis-zum-walrossbaby-gute-nachrichten-fur-die-natur-kommen-dg-20261030-environment.html"
-    },
-    {
-     "id": "dg-20261030-lifestyle",
-     "titel": "Von aufgemotztem Auto bis anonymem Wohltäter: die guten Nachrichten Ende Oktober",
-     "categorie": "Lifestyle",
-     "dag": "2026-10-30",
-     "url": "https://brightnews.online/articles/de/von-aufgemotztem-auto-bis-anonymem-wohltater-die-guten-nachrichten-ende-oktober-dg-20261030-lifestyle.html"
-    },
-    {
-     "id": "dg-20261029-science",
-     "titel": "Zusammenarbeit als roter Faden: die Wissenschaftsnachrichten von Ende Oktober",
-     "categorie": "Science",
-     "dag": "2026-10-29",
-     "url": "https://brightnews.online/articles/de/zusammenarbeit-als-roter-faden-die-wissenschaftsnachrichten-von-ende-oktober-dg-20261029-science.html"
-    },
-    {
-     "id": "dg-20261029-environment",
-     "titel": "Sauberes Wasser und neue Chancen für Tiere weltweit",
-     "categorie": "Environment",
-     "dag": "2026-10-29",
-     "url": "https://brightnews.online/articles/de/sauberes-wasser-und-neue-chancen-fur-tiere-weltweit-dg-20261029-environment.html"
-    },
-    {
-     "id": "dg-20261029-health",
-     "titel": "Gesundheitsnachrichten diese Woche: Fortschritte auf vielen Ebenen",
-     "categorie": "Health",
-     "dag": "2026-10-29",
-     "url": "https://brightnews.online/articles/de/gesundheitsnachrichten-diese-woche-fortschritte-auf-vielen-ebenen-dg-20261029-health.html"
     }
    ]
   },
@@ -299,87 +194,52 @@
      "url": "https://brightnews.online/articles/fr/howell-high-school-remplit-son-terrain-de-football-de-dons-pour-les-banques-alim-1793555084446w70x69w4f.html"
     },
     {
-     "id": "1793421296769hs16l0ker",
-     "titel": "Un vétéran reçoit une Hyundai Elantra rénovée de la part d'étudiants",
-     "teaser": "Robert Hanson, vétéran de la marine américaine originaire de Minneapolis, n'avait pas eu sa propre voiture depuis plus de deux ans. En raison d'un asthme grave et d'une fibromyalgie apparus après son service dans la marine américaine (1993-1997), les transports en commun lui posaient d'énormes difficultés. Grâce à une recommandation d'un service d'aide sociale du comté de Hennepin, il a...",
-     "score": 10,
+     "id": "1793595386959cin9sh8dj",
+     "titel": "Star-C Program lève 16,5 millions de dollars pour l'aide au loyer",
+     "teaser": "Star-C Program, basé à Atlanta et fondé par le propriétaire immobilier Marjy Stagmeier, a aidé plus de 5 500 familles à conserver leur logement locatif grâce à son Eviction Relief Fund. Ce qui a commencé comme une collecte GoFundMe de 50 000 dollars s'est transformé en plus de 16,5 millions de dollars d'aide au loyer. Stagmeier souligne que l'arriéré de...",
+     "score": 9,
+     "categorie": "Finance",
+     "url": "https://brightnews.online/articles/fr/star-c-program-leve-16-5-millions-de-dollars-pour-l-aide-au-loyer-1793595386959cin9sh8dj.html"
+    },
+    {
+     "id": "1793595351745s52awslnz",
+     "titel": "L'île portugaise de Corvo éteint ses lumières pour les puffins",
+     "teaser": "Sur l'île portugaise de Corvo, aux Açores, tous les réverbères s'éteignent chaque année fin octobre pendant cinq nuits, de 21h00 à 4h00. Cette mesure protège les jeunes oiseaux marins comme le puffin des Anglais, qui quittent leur nid la nuit pour gagner la mer mais sont désorientés par la lumière artificielle et s'écrasent au sol. Les Açores abritent 65 à...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/l-ile-portugaise-de-corvo-eteint-ses-lumieres-pour-les-puffins-1793595351745s52awslnz.html"
+    },
+    {
+     "id": "1793555114323om6utmbe0",
+     "titel": "Le chien d'assistance Storm sauve la vie de Gary, le mari de sa maîtresse sourde Sandra",
+     "teaser": "Dans le Staffordshire, en Angleterre, le chien d'assistance Storm a sauvé la vie de Gary, le mari de sa maîtresse sourde Sandra Donally (62 ans). Storm a sauté sur le lit de Sandra peu après minuit et s'est figé en fixant le palier, bien que Sandra ait cru que Gary était simplement allé aux toilettes. Parce que Sandra a pris...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/un-veteran-recoit-une-hyundai-elantra-renovee-de-la-part-d-etudiants-1793421296769hs16l0ker.html"
+     "url": "https://brightnews.online/articles/fr/le-chien-d-assistance-storm-sauve-la-vie-de-gary-le-mari-de-sa-maitresse-sourde-1793555114323om6utmbe0.html"
     },
     {
-     "id": "17933843011651er3an5ge",
-     "titel": "L'océanographe Stacy Jupiter lutte contre le cancer du sein",
-     "teaser": "Dr. Stacy Jupiter, qui coordonne la conservation mondiale des océans pour la Wildlife Conservation Society, a reçu un diagnostic inattendu de cancer du sein en septembre 2025 pendant des vacances en Floride. Aucune tumeur n'était visible dans son sein, mais le cancer s'était déjà propagé aux ganglions lymphatiques. Pour suivre un traitement, elle est retournée à Boston, où elle a...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/fr/l-oceanographe-stacy-jupiter-lutte-contre-le-cancer-du-sein-17933843011651er3an5ge.html"
-    },
-    {
-     "id": "1793383750932rcrb7m8t3",
-     "titel": "Des infirmières obtiennent le premier congé parental rémunéré au niveau du comté aux États-Unis",
-     "teaser": "Des infirmières de UPMC Magee-Womens Hospital à Pittsburgh, dont l'infirmière néonatale Jean Stone, se sont unies avec des parents travailleurs, des défenseurs des droits et des élus pour former une coalition en faveur d'un congé parental rémunéré. Le jour de la Fête des Mères, le 10 mai, ils ont lancé leur campagne. Le Allegheny County Council a voté à 11...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/fr/des-infirmieres-obtiennent-le-premier-conge-parental-remunere-au-niveau-du-comte-1793383750932rcrb7m8t3.html"
-    },
-    {
-     "id": "1793383718920rpe7lsbzj",
-     "titel": "Des squelettes d'Halloween récoltent 2 millions de dollars pour St. Jude",
-     "teaser": "Plus de 600 foyers américains participent à Skeletons for St. Jude, une collecte de fonds lancée quand Jeff Robertson de Holly Springs, en Caroline du Nord, a partagé sa décoration d'Halloween avec un enfant atteint du cancer en 2020. Depuis, l'initiative s'est transformée en une tradition annuelle qui a déjà récolté 1,2 million de dollars pour St. Jude Children's Research...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/des-squelettes-d-halloween-recoltent-2-millions-de-dollars-pour-st-jude-1793383718920rpe7lsbzj.html"
+     "id": "1793508898612miskfxp66",
+     "titel": "Une nouvelle réserve naturelle Agua Dulce protège la rivière Iténez comme « lien de vie »",
+     "teaser": "Rainforest Trust a contribué à la création de la réserve faunique municipale Agua Dulce de 715 000 hectares le long de la rivière Iténez en Bolivie, qualifiée de « lien de vie » par les scientifiques. La zone abrite notamment des jaguars, des dauphins de l'Amazone, des loutres géantes, des tapirs des terres basses, des caïmans noirs et 260 espèces...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/une-nouvelle-reserve-naturelle-agua-dulce-protege-la-riviere-itenez-comme-lien-d-1793508898612miskfxp66.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261101-lifestyle",
+     "titel": "La connexion au cœur : d'un banc à l'arrêt de bus à l'amour à un âge avancé",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-01",
+     "url": "https://brightnews.online/articles/fr/la-connexion-au-c-ur-d-un-banc-a-l-arret-de-bus-a-l-amour-a-un-age-avance-dg-20261101-lifestyle.html"
+    },
     {
      "id": "dg-20261031-lifestyle",
      "titel": "Du chien d'assistance qui aboie aux loutres qui jouent au basketball : les bonnes nouvelles de la semaine",
      "categorie": "Lifestyle",
      "dag": "2026-10-31",
      "url": "https://brightnews.online/articles/fr/du-chien-d-assistance-qui-aboie-aux-loutres-qui-jouent-au-basketball-les-bonnes-dg-20261031-lifestyle.html"
-    },
-    {
-     "id": "dg-20261030-science",
-     "titel": "Collaborer, penser vite et se défendre intelligemment : l'actualité scientifique de fin octobre",
-     "categorie": "Science",
-     "dag": "2026-10-30",
-     "url": "https://brightnews.online/articles/fr/collaborer-penser-vite-et-se-defendre-intelligemment-l-actualite-scientifique-de-dg-20261030-science.html"
-    },
-    {
-     "id": "dg-20261030-environment",
-     "titel": "De la récolte de pommes de terre au jeune morse : les bonnes nouvelles pour la nature viennent de partout",
-     "categorie": "Environment",
-     "dag": "2026-10-30",
-     "url": "https://brightnews.online/articles/fr/de-la-recolte-de-pommes-de-terre-au-jeune-morse-les-bonnes-nouvelles-pour-la-nat-dg-20261030-environment.html"
-    },
-    {
-     "id": "dg-20261030-lifestyle",
-     "titel": "D'une voiture rénovée au bienfaiteur anonyme : les bonnes nouvelles de fin octobre",
-     "categorie": "Lifestyle",
-     "dag": "2026-10-30",
-     "url": "https://brightnews.online/articles/fr/d-une-voiture-renovee-au-bienfaiteur-anonyme-les-bonnes-nouvelles-de-fin-octobre-dg-20261030-lifestyle.html"
-    },
-    {
-     "id": "dg-20261029-science",
-     "titel": "La collaboration comme fil rouge : l'actualité scientifique de fin octobre",
-     "categorie": "Science",
-     "dag": "2026-10-29",
-     "url": "https://brightnews.online/articles/fr/la-collaboration-comme-fil-rouge-l-actualite-scientifique-de-fin-octobre-dg-20261029-science.html"
-    },
-    {
-     "id": "dg-20261029-environment",
-     "titel": "De l'eau propre et de nouvelles chances pour les animaux dans le monde",
-     "categorie": "Environment",
-     "dag": "2026-10-29",
-     "url": "https://brightnews.online/articles/fr/de-l-eau-propre-et-de-nouvelles-chances-pour-les-animaux-dans-le-monde-dg-20261029-environment.html"
-    },
-    {
-     "id": "dg-20261029-health",
-     "titel": "Actualités santé cette semaine : des progrès sur de nombreux fronts",
-     "categorie": "Health",
-     "dag": "2026-10-29",
-     "url": "https://brightnews.online/articles/fr/actualites-sante-cette-semaine-des-progres-sur-de-nombreux-fronts-dg-20261029-health.html"
     }
    ]
   },
@@ -394,87 +254,52 @@
      "url": "https://brightnews.online/articles/es/howell-high-school-llena-el-campo-de-futbol-con-donaciones-para-bancos-de-alimen-1793555084446w70x69w4f.html"
     },
     {
-     "id": "1793421296769hs16l0ker",
-     "titel": "Veterano recibe Hyundai Elantra restaurado de estudiantes",
-     "teaser": "Robert Hanson, veterano de la Marina de Minneapolis, llevaba más de dos años sin vehículo propio. Debido al asma grave y la fibromialgia que desarrolló tras su servicio en la Marina estadounidense (1993-1997), viajar en transporte público le resultaba muy difícil. A través de una derivación de un servicio de bienestar del condado de Hennepin, calificó para el programa Recycled...",
-     "score": 10,
+     "id": "1793595386959cin9sh8dj",
+     "titel": "Star-C Program recauda 16,5 millones de dólares para ayuda de alquiler",
+     "teaser": "Star-C Program, con sede en Atlanta y fundado por la propietaria inmobiliaria Marjy Stagmeier, ha ayudado a más de 5.500 familias a mantener sus viviendas de alquiler a través de su Eviction Relief Fund. Lo que comenzó como una campaña de GoFundMe de 50.000 dólares creció hasta superar los 16,5 millones de dólares en ayuda de alquiler. Stagmeier señala que...",
+     "score": 9,
+     "categorie": "Finance",
+     "url": "https://brightnews.online/articles/es/star-c-program-recauda-16-5-millones-de-dolares-para-ayuda-de-alquiler-1793595386959cin9sh8dj.html"
+    },
+    {
+     "id": "1793595351745s52awslnz",
+     "titel": "La isla portuguesa de Corvo apaga las luces para proteger a los petreles",
+     "teaser": "En la isla portuguesa de Corvo, en las Azores, se apagan todos los faroles cada año a finales de octubre durante cinco noches, de las 21.00 a las 4.00 horas. Esta medida protege a las aves marinas jóvenes como el petrel de Cory, que abandonan sus nidos por la noche para volar hacia el mar pero se desorientan por la...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/la-isla-portuguesa-de-corvo-apaga-las-luces-para-proteger-a-los-petreles-1793595351745s52awslnz.html"
+    },
+    {
+     "id": "1793555114323om6utmbe0",
+     "titel": "La perra de asistencia Storm salva la vida de Gary, esposo de su dueña sorda Sandra",
+     "teaser": "En Staffordshire, Inglaterra, la perra de asistencia Storm ha salvado la vida de Gary, esposo de su dueña sorda Sandra Donally (62). Storm saltó a la cama de Sandra poco después de la medianoche y se quedó mirando fijamente hacia el rellano sin moverse, a pesar de que Sandra creía que Gary simplemente había ido al baño. Al tomar en...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/veterano-recibe-hyundai-elantra-restaurado-de-estudiantes-1793421296769hs16l0ker.html"
+     "url": "https://brightnews.online/articles/es/la-perra-de-asistencia-storm-salva-la-vida-de-gary-esposo-de-su-duena-sorda-sand-1793555114323om6utmbe0.html"
     },
     {
-     "id": "17933843011651er3an5ge",
-     "titel": "La defensora oceánica Stacy Jupiter lucha contra el cáncer de mama",
-     "teaser": "La Dra. Stacy Jupiter, que coordina la conservación oceánica mundial para la Wildlife Conservation Society, recibió el diagnóstico inesperado de cáncer de mama en septiembre de 2025 durante unas vacaciones en Florida. No había tumor visible en su pecho, pero el cáncer ya se había propagado a los ganglios linfáticos. Para recibir tratamiento, regresó a Boston, donde se sometió a...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/es/la-defensora-oceanica-stacy-jupiter-lucha-contra-el-cancer-de-mama-17933843011651er3an5ge.html"
-    },
-    {
-     "id": "1793383750932rcrb7m8t3",
-     "titel": "Enfermeras logran primer permiso parental remunerado a nivel de condado en EE.UU.",
-     "teaser": "Enfermeras del UPMC Magee-Womens Hospital en Pittsburgh, incluida la enfermera neonatal Jean Stone, se unieron con padres trabajadores, defensores y líderes electos para formar una coalición a favor del permiso parental remunerado. El 10 de mayo, Día de la Madre, lanzaron su campaña. El Consejo del Condado de Allegheny votó 11 a favor y 4 en contra de doce semanas...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/es/enfermeras-logran-primer-permiso-parental-remunerado-a-nivel-de-condado-en-ee-uu-1793383750932rcrb7m8t3.html"
-    },
-    {
-     "id": "1793383718920rpe7lsbzj",
-     "titel": "Esqueletos de Halloween recaudan 2 millones de dólares para St. Jude",
-     "teaser": "Más de 600 hogares estadounidenses participan en Skeletons for St. Jude, una campaña de recaudación de fondos que comenzó cuando Jeff Robertson de Holly Springs, Carolina del Norte compartió su decoración de Halloween con un niño con cáncer en 2020. Desde entonces, la iniciativa se ha convertido en una tradición anual que ya ha recaudado 1,2 millones de dólares para...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/esqueletos-de-halloween-recaudan-2-millones-de-dolares-para-st-jude-1793383718920rpe7lsbzj.html"
+     "id": "1793508898612miskfxp66",
+     "titel": "Nueva reserva natural Agua Dulce protege el río Iténez como 'eslabón de vida'",
+     "teaser": "Rainforest Trust ha contribuido a la creación de la Reserva Municipal de Vida Silvestre Agua Dulce de 715.000 hectáreas a lo largo del río Iténez en Bolivia, denominada 'eslabón de vida' por científicos. El área alberga jaguares, delfines de río Amazonas, nutrias gigantes, tapires de tierras bajas, caimanes negros y 260 especies de peces, de las cuales 25 no se...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/nueva-reserva-natural-agua-dulce-protege-el-rio-itenez-como-eslabon-de-vida-1793508898612miskfxp66.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261101-lifestyle",
+     "titel": "La conexión es lo central: desde un banco en la parada de autobús hasta el amor en la vejez",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-01",
+     "url": "https://brightnews.online/articles/es/la-conexion-es-lo-central-desde-un-banco-en-la-parada-de-autobus-hasta-el-amor-e-dg-20261101-lifestyle.html"
+    },
     {
      "id": "dg-20261031-lifestyle",
      "titel": "Del perro de asistencia que ladra al nutria que juega al baloncesto: las buenas noticias de esta semana",
      "categorie": "Lifestyle",
      "dag": "2026-10-31",
      "url": "https://brightnews.online/articles/es/del-perro-de-asistencia-que-ladra-al-nutria-que-juega-al-baloncesto-las-buenas-n-dg-20261031-lifestyle.html"
-    },
-    {
-     "id": "dg-20261030-science",
-     "titel": "Colaborar, pensar rápido y defender con inteligencia: noticias científicas de finales de octubre",
-     "categorie": "Science",
-     "dag": "2026-10-30",
-     "url": "https://brightnews.online/articles/es/colaborar-pensar-rapido-y-defender-con-inteligencia-noticias-cientificas-de-fina-dg-20261030-science.html"
-    },
-    {
-     "id": "dg-20261030-environment",
-     "titel": "De la cosecha de patatas al cachorro de morsa: buenas noticias para la naturaleza llegan de todas partes",
-     "categorie": "Environment",
-     "dag": "2026-10-30",
-     "url": "https://brightnews.online/articles/es/de-la-cosecha-de-patatas-al-cachorro-de-morsa-buenas-noticias-para-la-naturaleza-dg-20261030-environment.html"
-    },
-    {
-     "id": "dg-20261030-lifestyle",
-     "titel": "De un auto restaurado a un benefactor anónimo: las buenas noticias de finales de octubre",
-     "categorie": "Lifestyle",
-     "dag": "2026-10-30",
-     "url": "https://brightnews.online/articles/es/de-un-auto-restaurado-a-un-benefactor-anonimo-las-buenas-noticias-de-finales-de-dg-20261030-lifestyle.html"
-    },
-    {
-     "id": "dg-20261029-science",
-     "titel": "La colaboración como hilo conductor: las noticias científicas de finales de octubre",
-     "categorie": "Science",
-     "dag": "2026-10-29",
-     "url": "https://brightnews.online/articles/es/la-colaboracion-como-hilo-conductor-las-noticias-cientificas-de-finales-de-octub-dg-20261029-science.html"
-    },
-    {
-     "id": "dg-20261029-environment",
-     "titel": "Agua limpia y nuevas oportunidades para los animales en todo el mundo",
-     "categorie": "Environment",
-     "dag": "2026-10-29",
-     "url": "https://brightnews.online/articles/es/agua-limpia-y-nuevas-oportunidades-para-los-animales-en-todo-el-mundo-dg-20261029-environment.html"
-    },
-    {
-     "id": "dg-20261029-health",
-     "titel": "Noticias de salud esta semana: avances en muchos frentes",
-     "categorie": "Health",
-     "dag": "2026-10-29",
-     "url": "https://brightnews.online/articles/es/noticias-de-salud-esta-semana-avances-en-muchos-frentes-dg-20261029-health.html"
     }
    ]
   }

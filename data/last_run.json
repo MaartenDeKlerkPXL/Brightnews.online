@@ -1,5 +1,5 @@
 {
-  "start": "2026-11-01T17:43:58.035Z",
+  "start": "2026-11-02T04:55:05.238Z",
   "kandidaten": 253,
   "alGezien": 251,
   "tekstOpgehaald": 2,
@@ -9,7 +9,7 @@
   "selectieAfgewezen": 0,
   "selectieHerkansing": 0,
   "aiCalls": 11,
-  "aiTokens": 17289,
+  "aiTokens": 18575,
   "perProvider": {
     "anthropic": 11
   },
@@ -21,5 +21,5 @@
   "selectieOvergeslagen": 0,
   "selectieMismatch": 0,
   "perUitsluiting": {},
-  "einde": "2026-11-01T17:45:16.531Z"
+  "einde": "2026-11-02T04:56:28.612Z"
 }

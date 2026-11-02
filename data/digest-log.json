@@ -1,5 +1,27 @@
 [
   {
+    "datum": "2026-11-02T04:58:03.591Z",
+    "dag": "2026-11-01",
+    "categorie": "Lifestyle",
+    "ids": [
+      "17935088701815uajy6z29",
+      "1793465881717zghtn36fj",
+      "1793383829494s925wf6io",
+      "1793383463464p07thgddb",
+      "1793383388104g6rrufn9p"
+    ],
+    "prompthash": "fd561df11314",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 11222,
+    "woorden": {
+      "nl": 342,
+      "en": 344,
+      "de": 333,
+      "fr": 388,
+      "es": 402
+    }
+  },
+  {
     "datum": "2026-11-01T17:46:09.595Z",
     "dag": "2026-10-31",
     "categorie": "Lifestyle",
