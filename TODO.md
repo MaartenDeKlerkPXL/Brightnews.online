@@ -4,6 +4,11 @@
 > website goed beschermd" maken aan de hand van de pdf en een foto, en Oh My
 > Claude met al zijn agents over de site laten lopen om te zien of er nog
 > problemen opduiken. Staat bovenaan "Blokkeert de lancering".
+>
+> **Nieuw op 2026-11-03: punt 68 t/m 73**, uit een eerste ronde langs twee
+> controlelijstjes. Het belangrijkste: **punt 68**, de inlogmails van
+> Supabase (maximaal 2 per uur). Zonder die fix kan na de lancering bijna
+> niemand inloggen.
 
 > **Stand 2026-09-28, avond.** Vijf pull requests in één dag: #11 t/m #14 zijn
 > gemerged, #15 staat open. Daarmee zijn **punt 3, 46, 47, 50, 51, 53.1, 54
@@ -166,6 +171,138 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   zoals `lees_artikel()` (PR #15), dat er geen secrets in de repo staan, de
   Stripe-webhooks, de service worker, en dat AI-tekst nergens via
   `innerHTML` in een pagina komt.
+
+  #### Eerste ronde, 2026-11-03: twee controlelijstjes van Instagram
+
+  Maarten kwam twee lijstjes tegen ("20 things to tell Claude so your app
+  doesn't get hacked" en "Ready for 1,000 users?"). Ze zijn nagelopen tegen
+  de repo, de live site en Supabase (security-advisor). Ze horen bij de skill
+  uit stap 1. Wat al goed zit:
+
+  - **Geen secrets in de repo of de git-geschiedenis.** De hele geschiedenis is
+    doorzocht op sleutels van Stripe, Anthropic, Resend, AWS en Supabase
+    service_role: niets gevonden. `.env` staat in `.gitignore` en geeft 404
+    op de site. Dat is belangrijk, want **de repo is publiek**.
+  - **Gebruikersrechten (RLS):** RLS staat aan op alle 13 tabellen. De
+    zeven tabellen zonder policies zijn daardoor dicht, en dat is de
+    bedoeling. Wachtwoorden hasht Supabase zelf.
+  - **XSS:** AI-tekst komt overal via tekstknopen in de pagina. `innerHTML`
+    wordt alleen gebruikt voor onze eigen vertaalteksten, en elke pagina heeft
+    een meta-CSP.
+  - **Stripe-webhook:** controleert de handtekening over de rauwe body en
+    schrijft met `upsert`, dus een tweede aflevering van hetzelfde event doet
+    geen kwaad.
+  - **Race conditions in de Actions:** alle drie de geplande workflows hebben
+    een `concurrency`-groep.
+  - **Terugdraaien:** GitHub Pages is `git revert` plus `CACHE_NAME` bumpen.
+    Komt in het draaiboek voor 22 november (punt 2).
+
+  Wat niet van toepassing is: CORS (we hebben geen eigen API naast Supabase en
+  de webhook, die Stripe server-naar-server aanroept) en N+1-queries (de site
+  is statisch, één RPC per artikel).
+
+  Wat **wel** openstaat, staat als eigen punt hieronder: 68 (inlogmails),
+  69 (alarm bij storing en uitgaven), 70 (back-ups), 71 (packages), 72
+  (meldingen van de Supabase-advisor) en 73 (voorbeeldstaten uit bij de
+  lancering).
+
+  Bewust **niet** opgepakt: de **security headers**. GitHub Pages laat geen
+  eigen headers toe, en `frame-ancestors` (tegen clickjacking) werkt niet in
+  een meta-CSP. Dat kan alleen met een proxy zoals Cloudflare ervoor. Het
+  risico is klein, want er is geen knop die met één klik iets onherroepelijks
+  doet. Daarom staat het pas ná de lancering. Ook bewust zo: de map
+  `supabase/` (SQL), de prompts en `data/selectie-archief.jsonl` zijn te lezen
+  op brightnews.online. Er staat niets geheims in, en de repo is toch al
+  publiek.
+
+- [ ] **68. 🚨 De inlogmails van Supabase gaan nog via hun eigen
+  mailserver: maximaal 2 per uur.** *(Maarten, 2026-11-03)*
+  Volgens de overdracht (fase N, 5 september) is er nooit een eigen SMTP
+  ingesteld. Supabase stuurt via zijn standaardserver maar **2 auth-mails per
+  uur** voor het hele project. Bij de lancering loggen lezers in met een
+  inloglink. De derde lezer in hetzelfde uur krijgt dan geen mail, en ziet
+  geen foutmelding. **Dit blokkeert de lancering.**
+  Oplossing: Supabase → Authentication → Emails → SMTP Settings → Resend
+  (`smtp.resend.com`, poort 465, gebruiker `resend`, wachtwoord = een
+  Resend-API-sleutel, afzender `noreply@brightnews.online`). Het domein staat
+  al bij Resend (zie punt 60). Zet daarna de mail-limiet onder Rate Limits
+  op een redelijk getal (bijv. 30 per uur) en test inloglink, account maken
+  en wachtwoord vergeten.
+  **Let ook op de limiet van Resend zelf:** het gratis plan haalt 100 mails
+  per dag en 3.000 per maand. De welkomstreeks stuurt 5 mails per nieuwe
+  lezer, dus een drukke lanceringsdag zit daar snel aan. Kijk welk plan er
+  staat.
+
+- [ ] **69. Een alarm als het nieuws stilvalt, en uitgavenalarmen.**
+  *(Maarten, 2026-11-03)* Het nieuws lag van 2 oktober tot vandaag stil
+  zonder dat iemand het merkte: het Anthropic-tegoed was op (punt 26). Dat is
+  precies "error tracking" en "spend alerts" uit het lijstje.
+  1. **Gezondheidscontrole in de nieuws-Action:** een stap aan het eind die
+     faalt als er al 24 uur geen nieuw artikel is bijgekomen, of als de
+     AI-call een fout over tegoed of rate limit gaf. Een mislukte geplande
+     run mailt GitHub naar wie de cron het laatst wijzigde, dus controleer dat
+     dat Maarten is. Raakt `.github/` en `backend/`, dus via een PR.
+  2. **Uitgavenalarmen:** in console.anthropic.com een melding bij laag
+     tegoed naast de auto-reload (punt 26). Bekijk ook het gebruik bij
+     Supabase (gratis plan: 5 GB uitgaand verkeer, 50.000 maandelijks
+     actieve gebruikers) en bij Resend (punt 68).
+  3. **Fouten in de browser:** geen Sentry, want dat is een extern script
+     (CSP). Na de lancering eventueel een eigen klein foutlogje naar een
+     Supabase-tabel met alleen insert-rechten, zoals bij Feedback.
+
+- [ ] **70. Back-ups van Supabase: het gratis plan heeft er geen die we
+  kunnen terugzetten.** *(Maarten, 2026-11-03)* De volledige artikelteksten
+  (`articles_full`, 3.990 rijen) staan **alleen** in Supabase, dus niet in de
+  repo. Daarnaast de profielen en Premium-status, promocodes en
+  mailvoorkeuren. Gaat er iets mis met een migratie of een verkeerde
+  `delete`, dan is het weg. Opties:
+  - **Supabase Pro ($25 per maand):** dagelijkse back-ups, 7 dagen terug.
+    Daar zit ook de bescherming tegen gelekte wachtwoorden bij (punt 72).
+  - **Zelf een dump:** een Action met `pg_dump` naar een privéplek. **Niet**
+    in deze repo, want die is publiek en de dump bevat e-mailadressen.
+  Advies: Pro nemen vlak vóór de lancering. Dat is de minste moeite, en er
+  komen dan echte betalende lezers in de database.
+  Daarnaast: er is geen aparte testdatabase. Tests met Stripe-testmodus
+  schrijven naar de echte tabel `profiles`. Gebruik daarvoor een
+  wegwerpaccount en ruim het daarna op.
+
+- [ ] **71. Packages opruimen en bijwerken.** *(Maarten, 2026-11-03)*
+  `npm audit` geeft **5 hoge en 1 gemiddelde kwetsbaarheid** (axios,
+  form-data, follow-redirects, nodemailer, zod, ws). Die draaien alleen in de
+  GitHub Actions, niet in de browser, maar daar staan wel de secrets.
+  - **Ongebruikt, kan weg:** `axios`, `nodemailer` en `pdfkit` (nergens
+    meer aangeroepen in `backend/`). Daarmee verdwijnen de meeste meldingen
+    al. `@mistralai/mistralai` gaat weg samen met de Mistral-sleuf (punt
+    26).
+  - Daarna `npm audit fix` voor de rest, en de Action één keer handmatig
+    draaien als controle. Raakt `package.json` van de pijplijn, dus via een
+    PR.
+
+- [ ] **72. Meldingen van de Supabase-advisor (2026-11-03).**
+  *(Maarten, PR met SQL-bestand in `supabase/`)*
+  1. `cleanup_profile_after_user_delete()` en `feedback_volumerem()` zijn
+     triggerfuncties, maar iedereen kan ze als RPC aanroepen
+     (`security definer`, `anon`). `revoke execute … from anon,
+     authenticated, public`. De triggers blijven gewoon werken.
+  2. `gratis_artikelen_per_maand` heeft geen vaste `search_path`: zet
+     `set search_path = public, pg_temp`.
+  3. `lees_artikel`, `leestegoed`, `meld_af`, `get_full_article` en
+     `redeem_promo_code` zijn wél bedoeld om aan te roepen. Laat ze staan,
+     maar loop bij de review van PR #15 na dat het tellen van het tegoed
+     tegen dubbelklikken kan: twee tabbladen tegelijk mogen niet zes gratis
+     artikelen opleveren. Een unieke sleutel op (lezer, artikel) in
+     `gelezen_artikelen` regelt dat.
+  4. **Bescherming tegen gelekte wachtwoorden** (controle tegen
+     HaveIBeenPwned) staat uit. Dat kan alleen op Pro, zie punt 70.
+
+- [ ] **73. Bij de lancering: de voorbeeldstaten uitzetten.**
+  *(Maarten, 2026-11-03)* De v5-pagina's tonen nu elke staat via `?staat=`
+  (artikel, Bedankt, Contact, Feedback, Afmelden en andere). Live is dat
+  verwarrend: `v5-bedankt.html?staat=gelukt` zegt dat Premium aanstaat zonder
+  dat iemand betaald heeft. De echte tekst lekt niet, want die komt uit
+  `lees_artikel()`, maar het hoort er niet. Bij het koppelen (punt 66) moet
+  de echte staat het overnemen, en `?staat=` alleen nog werken op
+  `localhost`. Neem `?team=1` en het wachtwoord `happytester` mee in punt 2.
 
 - [x] **1. De twee open pull requests vlottrekken.** ✅ 2026-09-16 (Fable-review): #5 gemerged + og:image-absoluutfix erachteraan; #1 lokaal gemerged (bronwerk integraal overgenomen, sw-conflict → v23) en pagina's geregenereerd. Oorspronkelijke tekst: Allebei hebben ze
   merge-conflicten (`mergeable=CONFLICTING`) en lopen achter op master:

@@ -26,7 +26,18 @@ via een PR. Laat die PR eerst nakijken door een review-agent
 1. **Het nieuws weer laten draaien** (TODO 26). Sinds 2 oktober komen er geen
    artikelen bij, want het Anthropic-tegoed is op. Zonder nieuws is er niets
    te lanceren.
-2. **Beveiligingscontrole** (TODO 67, zeer hoge prioriteit).
+2. **Beveiligingscontrole** (TODO 67, zeer hoge prioriteit), plus wat de
+   eerste ronde op 3 november opleverde:
+   - **Inlogmails via Resend** in plaats van de mailserver van Supabase, die
+     er maar 2 per uur verstuurt (TODO 68). Zonder dit kan na de lancering
+     bijna niemand inloggen.
+   - **Een alarm als het nieuws stilvalt**, en uitgavenalarmen bij
+     Anthropic, Supabase en Resend (TODO 69).
+   - **Back-ups:** Supabase Pro vlak voor de lancering (TODO 70).
+   - **Packages:** ongebruikte packages weg en `npm audit fix` (TODO 71).
+   - **Supabase-advisor:** twee triggerfuncties dichtzetten en één
+     `search_path` vastzetten (TODO 72).
+   - **Voorbeeldstaten (`?staat=`)** live uitzetten (TODO 73).
 3. **De twee open PR's afmaken:** #15 (vijf gratis artikelen per maand, de
    functie `lees_artikel()`) en #16 (de scraper).
 4. **Inloggen, account en wachtwoord koppelen aan Supabase** (TODO 66, punten
@@ -84,7 +95,18 @@ via een PR. Laat die PR eerst nakijken door een review-agent
 - Controleren of de nachtruns van het nieuws goed gingen (artikelen,
   dagoverzicht, nachtelijke beoordeling).
 - Beveiligingscontrole (TODO 67): de skill maken met de pdf en de foto, de
-  volledige controle draaien en wat eruit komt meteen oplossen.
+  volledige controle draaien en wat eruit komt meteen oplossen. Neem de twee
+  Instagram-lijstjes mee in de skill; de eerste ronde staat al bij TODO 67.
+- ✅ Eerste ronde gedaan; wat eruit kwam staat in TODO 68 t/m 73.
+- **Meteen vandaag, het is klein werk met veel effect:**
+  - de SMTP van Supabase naar Resend zetten, de mail-limiet ophogen, en
+    inloglink en wachtwoord vergeten testen (TODO 68);
+  - kijken welk plan er bij Resend staat (TODO 68);
+  - een melding bij laag tegoed in console.anthropic.com (TODO 69.2).
+- Een PR met de opruiming: `axios`, `nodemailer` en `pdfkit` weg,
+  `npm audit fix`, en het SQL-bestand voor de Supabase-advisor (TODO 71 en 72).
+  Laat hem nakijken door een review-agent en draai de nieuws-Action
+  daarna één keer handmatig.
 - De juridische teksten (privacy, voorwaarden, refund) naar een jurist sturen,
   zodat het antwoord binnen is vóór 13 november.
 
@@ -111,7 +133,12 @@ via een PR. Laat die PR eerst nakijken door een review-agent
 
 **Zaterdag 7 november**
 - Contact en Feedback laten versturen: Supabase-tabellen met alleen
-  insert-rechten, honeypot en een limiet per IP (TODO 66, punt 13).
+  insert-rechten, honeypot en een limiet per IP (TODO 66, punt 13). Leg
+  ook een maximale lengte vast in de database (2000 en 1000 tekens), niet
+  alleen in het formulier.
+- De gezondheidscontrole in de nieuws-Action: een run faalt als er 24 uur
+  geen nieuw artikel bij is gekomen, en die mislukte run mailt Maarten
+  (TODO 69.1).
 - De nieuwsdata: één dagoverzicht per dag, volledige tekst van het
   dagoverzicht, categorie in het manifest, en een runlog zodat een storing
   anders oogt dan een lege dag (TODO 66, punten 2 t/m 5).
@@ -148,12 +175,18 @@ via een PR. Laat die PR eerst nakijken door een review-agent
 - Steekproef op de vertalingen in alle vijf talen.
 
 **Zaterdag 14 november**
+- Controleren of `?staat=` live niets meer doet (TODO 73).
+- Supabase naar Pro, zodat er dagelijkse back-ups zijn vóór de eerste
+  betalende lezers. Zet daar ook de bescherming tegen gelekte wachtwoorden
+  aan (TODO 70 en 72.4).
 - Alles naar master mergen, met de parkeerpagina nog aan. Testen op de echte
   site via `/?team=1`, op telefoon en computer, licht en donker.
 
 **Zondag 15 november**
 - Eindcontrole. Vanaf nu bouw je niets nieuws meer.
-- Het draaiboek voor 22 november klaarzetten (de zes stappen van TODO 2).
+- Het draaiboek voor 22 november klaarzetten (de zes stappen van TODO 2),
+  met daarbij hoe je terugdraait als het misgaat: `git revert` van de
+  merge, `CACHE_NAME` bumpen, en de parkeerpagina terugzetten.
 
 ### Week 3: buffer, 16 t/m 21 november
 
@@ -181,3 +214,12 @@ maar alleen als ze niets aan de bestaande site veranderen.
 - **De jurist** hangt niet van jou af. Stuur de teksten dinsdag 3 november.
 - **Het Anthropic-tegoed:** zonder auto-reload stopt het nieuws opnieuw
   zonder dat iemand het merkt. Zet het meteen aan.
+- **De inlogmails** (TODO 68): als het SMTP-werk van 3 november blijft
+  liggen, merk je het pas op de lanceringsdag, wanneer lezers vanaf de
+  derde mail per uur geen inloglink meer krijgen.
+
+### Mag ná de lancering (beveiliging)
+
+- Security headers via Cloudflare voor GitHub Pages (dat laat zelf geen
+  headers toe). Zie TODO 67, eerste ronde.
+- Een eigen klein foutlogje vanuit de browser naar Supabase (TODO 69.3).
