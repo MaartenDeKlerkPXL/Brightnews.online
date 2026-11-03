@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-en.xml" rel="self" type="application/rss+xml"/>
         <description>A fresh pick of good news from around the world, every day. Enjoy the read!</description>
         <language>en-us</language>
-        <lastBuildDate>Mon, 02 Nov 2026 21:31:20 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 03 Nov 2026 05:45:20 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Your Daily Dose of Positivity</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Looking out for each other: from a foundation born of tragedy to boxing without fear</title>
+            <link>https://brightnews.online/articles/en/looking-out-for-each-other-from-a-foundation-born-of-tragedy-to-boxing-without-f-dg-20261102-lifestyle.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/looking-out-for-each-other-from-a-foundation-born-of-tragedy-to-boxing-without-f-dg-20261102-lifestyle.html</guid>
+            <pubDate>Tue, 03 Nov 2026 05:45:20 GMT</pubDate>
+            <description>This week, our Lifestyle section showcases how people care for one another in remarkably different ways. One story follows a courageous rescue that grew into a foundation, another explores boxing as support after violence, and a third reveals a simple dinner table rule that brings families closer together. In Kerrville, Texas, the Kenli Foundation exists because of a tragic accident five years ago</description>
+            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/supplied-by-Marjohn-Riney.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Sardinian restaurants ban phones during family dinners</title>
             <link>https://brightnews.online/articles/en/sardinian-restaurants-ban-phones-during-family-dinners-1793655079136s26oltnk3.html</link>
@@ -241,13 +249,6 @@
             <guid isPermaLink="true">https://brightnews.online/articles/en/nasa-spacex-mission-delivers-experiments-and-solar-panels-to-iss-1793384270563pkoj3k0wy.html</guid>
             <pubDate>Fri, 30 Oct 2026 18:17:51 GMT</pubDate>
             <description>NASA&apos;s latest SpaceX cargo resupply mission has successfully launched toward the International Space Station (ISS). The flight carries thousands of pounds of supplies, scientific equipment, and new technology to the station. This cargo is intended to support research in Earth orbit. In addition to crew necessities, the mission also includes solar panels for the ISS.</description>
-        </item>
-        <item>
-            <title>NASA invites companies to develop next-generation space stations</title>
-            <link>https://brightnews.online/articles/en/nasa-invites-companies-to-develop-next-generation-space-stations-1793384249985xjpo9zpyd.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/nasa-invites-companies-to-develop-next-generation-space-stations-1793384249985xjpo9zpyd.html</guid>
-            <pubDate>Fri, 30 Oct 2026 18:17:30 GMT</pubDate>
-            <description>On October 9, 2026, NASA published a final request for proposals inviting American companies to develop the next generation of commercial space stations. The goal is to ensure the United States maintains a presence in low Earth orbit after the International Space Station (ISS) retires. The stations must support scientific research, technology development and astronaut training, and contribute to f</description>
         </item>
     </channel>
 </rss>

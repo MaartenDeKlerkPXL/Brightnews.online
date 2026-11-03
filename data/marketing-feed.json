@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-11-02T21:31:20.822Z",
+ "gegenereerd": "2026-11-03T05:45:21.262Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -47,6 +47,13 @@
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261102-lifestyle",
+     "titel": "Zorg voor elkaar: van een stichting na een ongeluk tot boksen zonder angst",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-02",
+     "url": "https://brightnews.online/articles/nl/zorg-voor-elkaar-van-een-stichting-na-een-ongeluk-tot-boksen-zonder-angst-dg-20261102-lifestyle.html"
+    },
     {
      "id": "dg-20261101-lifestyle",
      "titel": "Verbinding staat centraal: van bankje bij de bushalte tot liefde op hoge leeftijd",
@@ -108,6 +115,13 @@
    ],
    "dagoverzichten": [
     {
+     "id": "dg-20261102-lifestyle",
+     "titel": "Looking out for each other: from a foundation born of tragedy to boxing without fear",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-02",
+     "url": "https://brightnews.online/articles/en/looking-out-for-each-other-from-a-foundation-born-of-tragedy-to-boxing-without-f-dg-20261102-lifestyle.html"
+    },
+    {
      "id": "dg-20261101-lifestyle",
      "titel": "Connection takes center stage: from a bench at the bus stop to love in later years",
      "categorie": "Lifestyle",
@@ -167,6 +181,13 @@
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261102-lifestyle",
+     "titel": "Füreinander sorgen: von einer Stiftung nach einem Unfall bis zum Boxen ohne Angst",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-02",
+     "url": "https://brightnews.online/articles/de/fureinander-sorgen-von-einer-stiftung-nach-einem-unfall-bis-zum-boxen-ohne-angst-dg-20261102-lifestyle.html"
+    },
     {
      "id": "dg-20261101-lifestyle",
      "titel": "Verbindung im Mittelpunkt: von der Bank an der Bushaltestelle bis zur Liebe im hohen Alter",
@@ -228,6 +249,13 @@
    ],
    "dagoverzichten": [
     {
+     "id": "dg-20261102-lifestyle",
+     "titel": "Prendre soin les uns des autres : d'une fondation née d'un accident à la boxe sans peur",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-02",
+     "url": "https://brightnews.online/articles/fr/prendre-soin-les-uns-des-autres-d-une-fondation-nee-d-un-accident-a-la-boxe-sans-dg-20261102-lifestyle.html"
+    },
+    {
      "id": "dg-20261101-lifestyle",
      "titel": "La connexion au cœur : d'un banc à l'arrêt de bus à l'amour à un âge avancé",
      "categorie": "Lifestyle",
@@ -287,6 +315,13 @@
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261102-lifestyle",
+     "titel": "Cuidarse mutuamente: de una fundación tras un accidente al boxeo sin miedo",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-02",
+     "url": "https://brightnews.online/articles/es/cuidarse-mutuamente-de-una-fundacion-tras-un-accidente-al-boxeo-sin-miedo-dg-20261102-lifestyle.html"
+    },
     {
      "id": "dg-20261101-lifestyle",
      "titel": "La conexión es lo central: desde un banco en la parada de autobús hasta el amor en la vejez",

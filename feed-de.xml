@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-de.xml" rel="self" type="application/rss+xml"/>
         <description>Jeden Tag eine frische Auswahl guter Nachrichten aus aller Welt. Viel Spaß beim Lesen!</description>
         <language>de-de</language>
-        <lastBuildDate>Mon, 02 Nov 2026 21:31:20 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 03 Nov 2026 05:45:20 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Deine tägliche Dosis Positivität</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Füreinander sorgen: von einer Stiftung nach einem Unfall bis zum Boxen ohne Angst</title>
+            <link>https://brightnews.online/articles/de/fureinander-sorgen-von-einer-stiftung-nach-einem-unfall-bis-zum-boxen-ohne-angst-dg-20261102-lifestyle.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/de/fureinander-sorgen-von-einer-stiftung-nach-einem-unfall-bis-zum-boxen-ohne-angst-dg-20261102-lifestyle.html</guid>
+            <pubDate>Tue, 03 Nov 2026 05:45:20 GMT</pubDate>
+            <description>In diesen Tagen zeigt die Kategorie Lifestyle, wie Menschen auf ganz unterschiedliche Weise füreinander sorgen. Die eine Geschichte handelt von einer mutigen Rettung, die sich zu einer Stiftung entwickelte, eine andere vom Boxen als Unterstützung nach Gewalt, und die dritte von einer einfachen Regel am Esstisch, die Familien näher zusammenbringt. In Kerrville, Texas, existiert die Kenli Foundation</description>
+            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/supplied-by-Marjohn-Riney.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Sardische Restaurants verbannen Handys bei Familienmahlzeiten</title>
             <link>https://brightnews.online/articles/de/sardische-restaurants-verbannen-handys-bei-familienmahlzeiten-1793655079136s26oltnk3.html</link>
@@ -241,13 +249,6 @@
             <guid isPermaLink="true">https://brightnews.online/articles/de/nasa-spacex-mission-bringt-experimente-und-solarpanels-zur-iss-1793384270563pkoj3k0wy.html</guid>
             <pubDate>Fri, 30 Oct 2026 18:17:51 GMT</pubDate>
             <description>Die neueste Versorgungsmission der NASA mit SpaceX ist erfolgreich in Richtung der Internationalen Raumstation (ISS) gestartet. Der Flug bringt Tausende Pfund an Vorräten, wissenschaftliche Ausrüstung und neue Technologie zur Station. Diese Fracht soll Forschungen in einer Umlaufbahn um die Erde unterstützen. Neben Bedarfsartikeln für die Besatzung enthält die Mission auch Solarpanels für die ISS.</description>
-        </item>
-        <item>
-            <title>NASA lädt Unternehmen zur Entwicklung neuer Raumstationen ein</title>
-            <link>https://brightnews.online/articles/de/nasa-ladt-unternehmen-zur-entwicklung-neuer-raumstationen-ein-1793384249985xjpo9zpyd.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/de/nasa-ladt-unternehmen-zur-entwicklung-neuer-raumstationen-ein-1793384249985xjpo9zpyd.html</guid>
-            <pubDate>Fri, 30 Oct 2026 18:17:30 GMT</pubDate>
-            <description>NASA hat am 9. Oktober 2026 eine endgültige Aufforderung zur Einreichung von Vorschlägen veröffentlicht, mit der amerikanische Unternehmen eingeladen werden, die nächste Generation kommerzieller Raumstationen zu entwickeln. Ziel ist es, dass die Vereinigten Staaten nach dem Ausscheiden der Internationalen Raumstation (ISS) weiterhin in einer niedrigen Erdumlaufbahn präsent sind. Die Stationen soll</description>
         </item>
     </channel>
 </rss>

@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-es.xml" rel="self" type="application/rss+xml"/>
         <description>Cada día una selección fresca de buenas noticias de todo el mundo. ¡Feliz lectura!</description>
         <language>es-es</language>
-        <lastBuildDate>Mon, 02 Nov 2026 21:31:20 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 03 Nov 2026 05:45:20 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Tu dosis diaria de positividad</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Cuidarse mutuamente: de una fundación tras un accidente al boxeo sin miedo</title>
+            <link>https://brightnews.online/articles/es/cuidarse-mutuamente-de-una-fundacion-tras-un-accidente-al-boxeo-sin-miedo-dg-20261102-lifestyle.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/es/cuidarse-mutuamente-de-una-fundacion-tras-un-accidente-al-boxeo-sin-miedo-dg-20261102-lifestyle.html</guid>
+            <pubDate>Tue, 03 Nov 2026 05:45:20 GMT</pubDate>
+            <description>Estos días, la categoría Lifestyle muestra cómo las personas se cuidan mutuamente de formas muy diferentes. Una historia trata sobre un rescate valiente que se convirtió en una fundación, otra sobre el boxeo como apoyo después de la violencia, y la tercera sobre una simple regla en la mesa que acerca a las familias. En Kerrville, Texas, existe la Kenli Foundation gracias a un trágico accidente hac</description>
+            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/supplied-by-Marjohn-Riney.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Restaurantes sardos prohíben teléfonos en las comidas familiares</title>
             <link>https://brightnews.online/articles/es/restaurantes-sardos-prohiben-telefonos-en-las-comidas-familiares-1793655079136s26oltnk3.html</link>
@@ -241,13 +249,6 @@
             <guid isPermaLink="true">https://brightnews.online/articles/es/mision-spacex-de-la-nasa-lleva-experimentos-y-paneles-solares-a-la-iss-1793384270563pkoj3k0wy.html</guid>
             <pubDate>Fri, 30 Oct 2026 18:17:51 GMT</pubDate>
             <description>La última misión de reabastecimiento de SpaceX de la NASA se lanzó exitosamente hacia la Estación Espacial Internacional (ISS). El vuelo transporta miles de libras de suministros, equipos científicos y nueva tecnología hacia la estación. Esta carga debe respaldar la investigación en órbita alrededor de la Tierra. Además de los suministros necesarios para la tripulación, la misión también incluye p</description>
-        </item>
-        <item>
-            <title>NASA invita a empresas a desarrollar la próxima generación de estaciones espaciales</title>
-            <link>https://brightnews.online/articles/es/nasa-invita-a-empresas-a-desarrollar-la-proxima-generacion-de-estaciones-espacia-1793384249985xjpo9zpyd.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/es/nasa-invita-a-empresas-a-desarrollar-la-proxima-generacion-de-estaciones-espacia-1793384249985xjpo9zpyd.html</guid>
-            <pubDate>Fri, 30 Oct 2026 18:17:30 GMT</pubDate>
-            <description>NASA publicó el 9 de octubre de 2026 una solicitud definitiva de propuestas para invitar a empresas estadounidenses a desarrollar la próxima generación de estaciones espaciales comerciales. El objetivo es que Estados Unidos mantenga presencia en órbita baja alrededor de la Tierra después de que la Estación Espacial Internacional (ISS) se retire. Las estaciones deben apoyar la investigación científ</description>
         </item>
     </channel>
 </rss>

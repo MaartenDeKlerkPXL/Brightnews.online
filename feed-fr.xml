@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-fr.xml" rel="self" type="application/rss+xml"/>
         <description>Chaque jour une sélection fraîche de bonnes nouvelles du monde entier. Bonne lecture !</description>
         <language>fr-fr</language>
-        <lastBuildDate>Mon, 02 Nov 2026 21:31:20 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 03 Nov 2026 05:45:20 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Votre dose quotidienne de positivité</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Prendre soin les uns des autres : d&apos;une fondation née d&apos;un accident à la boxe sans peur</title>
+            <link>https://brightnews.online/articles/fr/prendre-soin-les-uns-des-autres-d-une-fondation-nee-d-un-accident-a-la-boxe-sans-dg-20261102-lifestyle.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/fr/prendre-soin-les-uns-des-autres-d-une-fondation-nee-d-un-accident-a-la-boxe-sans-dg-20261102-lifestyle.html</guid>
+            <pubDate>Tue, 03 Nov 2026 05:45:20 GMT</pubDate>
+            <description>Ces jours-ci, la rubrique Lifestyle montre comment les gens prennent soin les uns des autres de manières très différentes. Une histoire parle d&apos;un sauvetage courageux qui s&apos;est transformé en fondation, une autre de la boxe comme soutien après la violence, et la troisième d&apos;une simple règle à table qui rapproche les familles. À Kerrville, au Texas, la Kenli Foundation existe grâce à un accident tra</description>
+            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/supplied-by-Marjohn-Riney.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Les restaurants sardes interdisent les téléphones aux familles pendant les repas</title>
             <link>https://brightnews.online/articles/fr/les-restaurants-sardes-interdisent-les-telephones-aux-familles-pendant-les-repas-1793655079136s26oltnk3.html</link>
@@ -241,13 +249,6 @@
             <guid isPermaLink="true">https://brightnews.online/articles/fr/une-mission-nasa-spacex-livre-des-experiences-et-des-panneaux-solaires-a-l-iss-1793384270563pkoj3k0wy.html</guid>
             <pubDate>Fri, 30 Oct 2026 18:17:51 GMT</pubDate>
             <description>La dernière mission d&apos;approvisionnement SpaceX de la NASA a été lancée avec succès en direction de la Station spatiale internationale (ISS). Le vol transporte des milliers de livres de fournitures, d&apos;équipements scientifiques et de nouvelles technologies vers la station. Cette cargaison doit soutenir la recherche en orbite terrestre. Outre les besoins de l&apos;équipage, la mission contient également d</description>
-        </item>
-        <item>
-            <title>NASA invite les entreprises à développer la prochaine génération de stations spatiales</title>
-            <link>https://brightnews.online/articles/fr/nasa-invite-les-entreprises-a-developper-la-prochaine-generation-de-stations-spa-1793384249985xjpo9zpyd.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/fr/nasa-invite-les-entreprises-a-developper-la-prochaine-generation-de-stations-spa-1793384249985xjpo9zpyd.html</guid>
-            <pubDate>Fri, 30 Oct 2026 18:17:30 GMT</pubDate>
-            <description>NASA a publié le 9 octobre 2026 un appel d&apos;offres définitif invitant les entreprises américaines à développer la prochaine génération de stations spatiales commerciales. L&apos;objectif est que les États-Unis maintiennent une présence en orbite basse autour de la Terre après la retraite de la Station spatiale internationale (ISS). Les stations doivent soutenir la recherche scientifique, le développemen</description>
         </item>
     </channel>
 </rss>

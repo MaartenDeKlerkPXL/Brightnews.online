@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-nl.xml" rel="self" type="application/rss+xml"/>
         <description>Elke dag een verse selectie goed nieuws uit de hele wereld, veel leesplezier!</description>
         <language>nl-nl</language>
-        <lastBuildDate>Mon, 02 Nov 2026 21:31:20 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 03 Nov 2026 05:45:20 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Jouw Dagelijkse Dosis Positiviteit</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Zorg voor elkaar: van een stichting na een ongeluk tot boksen zonder angst</title>
+            <link>https://brightnews.online/articles/nl/zorg-voor-elkaar-van-een-stichting-na-een-ongeluk-tot-boksen-zonder-angst-dg-20261102-lifestyle.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/nl/zorg-voor-elkaar-van-een-stichting-na-een-ongeluk-tot-boksen-zonder-angst-dg-20261102-lifestyle.html</guid>
+            <pubDate>Tue, 03 Nov 2026 05:45:20 GMT</pubDate>
+            <description>Deze dagen laat de categorie Lifestyle zien hoe mensen op heel verschillende manieren voor elkaar zorgen. Het ene verhaal gaat over een moedige redding die uitgroeide tot een stichting, het andere over boksen als steun na geweld, en het derde over een simpele regel aan tafel die gezinnen dichter bij elkaar brengt. In Kerrville, Texas, bestaat de Kenli Foundation dankzij een tragisch ongeluk van vi</description>
+            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/supplied-by-Marjohn-Riney.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Sardinische restaurants weren telefoons bij gezinsdiners</title>
             <link>https://brightnews.online/articles/nl/sardinische-restaurants-weren-telefoons-bij-gezinsdiners-1793655079136s26oltnk3.html</link>
@@ -241,13 +249,6 @@
             <guid isPermaLink="true">https://brightnews.online/articles/nl/nasa-spacex-missie-brengt-experimenten-en-zonnepanelen-naar-iss-1793384270563pkoj3k0wy.html</guid>
             <pubDate>Fri, 30 Oct 2026 18:17:51 GMT</pubDate>
             <description>NASA&apos;s nieuwste SpaceX-bevoorradingsmissie is succesvol gelanceerd richting het Internationaal Ruimtestation (ISS). De vlucht brengt duizenden ponden aan voorraden, wetenschappelijke apparatuur en nieuwe technologie naar het station. Deze lading moet onderzoek in een baan om de aarde ondersteunen. Naast benodigdheden voor de bemanning bevat de missie ook zonnepanelen voor het ISS.</description>
-        </item>
-        <item>
-            <title>NASA nodigt bedrijven uit voor nieuwe generatie ruimtestations</title>
-            <link>https://brightnews.online/articles/nl/nasa-nodigt-bedrijven-uit-voor-nieuwe-generatie-ruimtestations-1793384249985xjpo9zpyd.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/nl/nasa-nodigt-bedrijven-uit-voor-nieuwe-generatie-ruimtestations-1793384249985xjpo9zpyd.html</guid>
-            <pubDate>Fri, 30 Oct 2026 18:17:30 GMT</pubDate>
-            <description>NASA heeft op 9 oktober 2026 een definitief verzoek om voorstellen gepubliceerd waarmee Amerikaanse bedrijven worden uitgenodigd om de volgende generatie commerciële ruimtestations te ontwikkelen. Doel is dat de Verenigde Staten aanwezig blijven in een lage baan om de aarde nadat het International Space Station (ISS) met pensioen gaat. De stations moeten wetenschappelijk onderzoek, technologieontw</description>
         </item>
     </channel>
 </rss>
