@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-11-04T05:20:15.831Z",
+ "gegenereerd": "2026-11-04T19:30:52.231Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -22,28 +22,28 @@
      "url": "https://brightnews.online/articles/nl/boksgala-s-fight-back-financieren-gratis-bokslessen-voor-overlevenden-van-huisel-1793655009947ou7j6x4x0.html"
     },
     {
+     "id": "17938206195450tb2nv2m9",
+     "titel": "Scholieren openen autowerkplaats voor publiek in Houston",
+     "teaser": "In de Fifth Ward van Houston is een autowerkplaats geopend die wordt gerund door scholieren. Het initiatief komt van het Barbara Jordan Career Center, onderdeel van Houston Independent School District, dat werkgelegenheid en stages wil creëren voor leerlingen in veelgevraagde beroepen. Het centrum bedient 12 schoolcampussen en meer dan 1.200 leerlingen. Elke vrijdag van 9.00 tot 15.00 uur voeren opgeleide...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/scholieren-openen-autowerkplaats-voor-publiek-in-houston-17938206195450tb2nv2m9.html"
+    },
+    {
+     "id": "1793820590416jpudzw0hp",
+     "titel": "Student maakt chocoladereep van volledig Britse cacao",
+     "teaser": "Maha Khan, masterstudent voedselzekerheid aan de University of Reading, maakte een chocoladereep volledig van Britse ingrediënten, inclusief de cacaobonen zelf. Ze oogstte cacaopeulen uit de kassen van de universiteit en combineerde die met Britse melk en suiker tot zes repen, genaamd The Reading 100, ter ere van het honderdjarig bestaan van de universiteit. De peulen komen uit het International Cocoa...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/nl/student-maakt-chocoladereep-van-volledig-britse-cacao-1793820590416jpudzw0hp.html"
+    },
+    {
      "id": "1793769512699wwo2nsoyi",
      "titel": "Gebleekt koraal heelt door aanraking",
      "teaser": "Wetenschappers van Stanford hebben ontdekt dat gebleekt koraal kan herstellen door aanraking. Dit inzicht komt uit onderzoek naar koraalherstel en biedt mogelijk nieuwe aanknopingspunten voor het behoud van koraalriffen.",
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/nl/gebleekt-koraal-heelt-door-aanraking-1793769512699wwo2nsoyi.html"
-    },
-    {
-     "id": "1793769496499udef1tpv4",
-     "titel": "Maya Higa bouwt wildlife sanctuary via Twitch",
-     "teaser": "Maya Higa heeft een wildlife sanctuary opgezet, gefinancierd door de mensen die haar op Twitch volgen. Het natuurreservaat staat bekend als Alveus Sanctuary. Higa deelde haar verhaal ook tijdens een TED Talk.",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/maya-higa-bouwt-wildlife-sanctuary-via-twitch-1793769496499udef1tpv4.html"
-    },
-    {
-     "id": "17937694795126qpt1w8g5",
-     "titel": "Terrorisme-expert Farah Pandith leert gemeenschappen compassie toepassen",
-     "teaser": "Farah Pandith werkte decennialang in de contraterrorisme-sector, onder meer voor de regeringen Obama, George W. Bush en George H.W. Bush. Ze onderzocht waarom mensen vervallen in ideologieën die de wereld verdelen in 'wij versus zij', en ontdekte dat extremisme vaak voortkomt uit onzekerheid en een zoektocht naar erkenning of een plek in de wereld. Na de aanslagen van 11 september...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/terrorisme-expert-farah-pandith-leert-gemeenschappen-compassie-toepassen-17937694795126qpt1w8g5.html"
     }
    ],
    "dagoverzichten": [
@@ -89,28 +89,28 @@
      "url": "https://brightnews.online/articles/en/boxing-galas-by-fight-back-finance-free-lessons-for-domestic-abuse-survivors-1793655009947ou7j6x4x0.html"
     },
     {
+     "id": "17938206195450tb2nv2m9",
+     "titel": "Students open auto repair shop to the public in Houston",
+     "teaser": "An auto repair shop run by students has opened in Houston's Fifth Ward. The initiative comes from the Barbara Jordan Career Center, part of Houston Independent School District, which aims to create employment and internship opportunities for students in high-demand trades. The center serves 12 school campuses and more than 1,200 students. Every Friday from 9:00 a.m. to 3:00 p.m.,...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/students-open-auto-repair-shop-to-the-public-in-houston-17938206195450tb2nv2m9.html"
+    },
+    {
+     "id": "1793820590416jpudzw0hp",
+     "titel": "Student makes chocolate bar from entirely British cocoa",
+     "teaser": "Maha Khan, a master's student in food security at the University of Reading, has created a chocolate bar made entirely from British ingredients, including the cocoa beans themselves. She harvested cocoa pods from the university's greenhouses and combined them with British milk and sugar to produce six bars, named The Reading 100, in honour of the university's centenary. The pods...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/en/student-makes-chocolate-bar-from-entirely-british-cocoa-1793820590416jpudzw0hp.html"
+    },
+    {
      "id": "1793769512699wwo2nsoyi",
      "titel": "Bleached coral heals through touch",
      "teaser": "Scientists at Stanford have discovered that bleached coral can recover through touch. This insight comes from research into coral restoration and may offer new avenues for preserving coral reefs.",
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/en/bleached-coral-heals-through-touch-1793769512699wwo2nsoyi.html"
-    },
-    {
-     "id": "1793769496499udef1tpv4",
-     "titel": "Maya Higa builds wildlife sanctuary via Twitch",
-     "teaser": "Maya Higa has established a wildlife sanctuary funded by the people who follow her on Twitch. The nature reserve is known as Alveus Sanctuary. Higa also shared her story during a TED Talk.",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/maya-higa-builds-wildlife-sanctuary-via-twitch-1793769496499udef1tpv4.html"
-    },
-    {
-     "id": "17937694795126qpt1w8g5",
-     "titel": "Counterterrorism expert Farah Pandith teaches communities to practice compassion",
-     "teaser": "Farah Pandith spent decades working in the counterterrorism sector, including for the administrations of Obama, George W. Bush, and George H.W. Bush. She investigated why people fall into ideologies that divide the world into „us versus them,\" and discovered that extremism often stems from insecurity and a search for recognition or a place in the world. After the September 11...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/counterterrorism-expert-farah-pandith-teaches-communities-to-practice-compassion-17937694795126qpt1w8g5.html"
     }
    ],
    "dagoverzichten": [
@@ -156,28 +156,28 @@
      "url": "https://brightnews.online/articles/de/boxgalas-von-fight-back-finanzieren-kostenlosen-boxunterricht-fur-opfer-von-haus-1793655009947ou7j6x4x0.html"
     },
     {
+     "id": "17938206195450tb2nv2m9",
+     "titel": "Schüler eröffnen Autowerkstatt für die Öffentlichkeit in Houston",
+     "teaser": "In der Fifth Ward von Houston hat eine Autowerkstatt eröffnet, die von Schülern betrieben wird. Die Initiative geht auf das Barbara Jordan Career Center zurück, das Teil des Houston Independent School District ist und Beschäftigungs- und Praktikumsmöglichkeiten für Schüler in gefragten Berufen schaffen möchte. Das Zentrum betreut 12 Schulcampus und mehr als 1.200 Schüler. Jeden Freitag von 9.00 bis 15.00...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/schuler-eroffnen-autowerkstatt-fur-die-offentlichkeit-in-houston-17938206195450tb2nv2m9.html"
+    },
+    {
+     "id": "1793820590416jpudzw0hp",
+     "titel": "Studentin stellt Schokoladenriegel aus britischem Kakao her",
+     "teaser": "Maha Khan, Masterstudentin für Ernährungssicherheit an der University of Reading, hat einen Schokoladenriegel vollständig aus britischen Zutaten hergestellt, einschließlich der Kakaobohnen selbst. Sie erntete Kakaohülsen aus den Gewächshäusern der Universität und kombinierte diese mit britischer Milch und Zucker zu sechs Riegeln namens The Reading 100, um das hundertjährige Bestehen der Universität zu würdigen. Die Hülsen stammen aus dem International Cocoa...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/de/studentin-stellt-schokoladenriegel-aus-britischem-kakao-her-1793820590416jpudzw0hp.html"
+    },
+    {
      "id": "1793769512699wwo2nsoyi",
      "titel": "Gebleichtes Korall heilt durch Berührung",
      "teaser": "Wissenschaftler der Stanford haben entdeckt, dass gebleichtes Korall sich durch Berührung erholen kann. Diese Erkenntnis stammt aus der Forschung zur Korallenwiederherstellung und bietet möglicherweise neue Ansatzpunkte für den Schutz von Korallenriffen.",
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/de/gebleichtes-korall-heilt-durch-beruhrung-1793769512699wwo2nsoyi.html"
-    },
-    {
-     "id": "1793769496499udef1tpv4",
-     "titel": "Maya Higa baut Wildtier-Schutzgebiet über Twitch",
-     "teaser": "Maya Higa hat ein Wildtier-Schutzgebiet aufgebaut, das von den Menschen finanziert wird, die ihr auf Twitch folgen. Das Naturschutzgebiet ist als Alveus Sanctuary bekannt. Higa teilte ihre Geschichte auch während eines TED Talk.",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/maya-higa-baut-wildtier-schutzgebiet-uber-twitch-1793769496499udef1tpv4.html"
-    },
-    {
-     "id": "17937694795126qpt1w8g5",
-     "titel": "Terrorismus-Expertin Farah Pandith lehrt Gemeinden Mitgefühl",
-     "teaser": "Farah Pandith arbeitete jahrzehntelang im Bereich Terrorismusbekämpfung, unter anderem für die Regierungen Obama, George W. Bush und George H.W. Bush. Sie untersuchte, warum Menschen in Ideologien verfallen, die die Welt in „Wir gegen Sie\" aufteilen, und entdeckte, dass Extremismus oft aus Unsicherheit und der Suche nach Anerkennung oder einem Platz in der Welt entsteht. Nach den Anschlägen vom 11. September...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/terrorismus-expertin-farah-pandith-lehrt-gemeinden-mitgefuhl-17937694795126qpt1w8g5.html"
     }
    ],
    "dagoverzichten": [
@@ -223,28 +223,28 @@
      "url": "https://brightnews.online/articles/fr/les-galas-de-boxe-fight-back-financent-des-cours-de-boxe-gratuits-pour-les-survi-1793655009947ou7j6x4x0.html"
     },
     {
+     "id": "17938206195450tb2nv2m9",
+     "titel": "Des lycéens ouvrent un atelier automobile au public à Houston",
+     "teaser": "Dans le Fifth Ward de Houston, un atelier automobile a ouvert ses portes et est géré par des lycéens. L'initiative provient du Barbara Jordan Career Center, qui fait partie du Houston Independent School District et souhaite créer des emplois et des stages pour les élèves dans des métiers très demandés. Le centre dessert 12 campus scolaires et plus de 1...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/des-lyceens-ouvrent-un-atelier-automobile-au-public-a-houston-17938206195450tb2nv2m9.html"
+    },
+    {
+     "id": "1793820590416jpudzw0hp",
+     "titel": "Une étudiante fabrique une tablette de chocolat à partir de cacao entièrement britannique",
+     "teaser": "Maha Khan, étudiante en master en sécurité alimentaire à l'University of Reading, a fabriqué une tablette de chocolat entièrement à partir d'ingrédients britanniques, y compris les fèves de cacao elles-mêmes. Elle a récolté des cabosses de cacao dans les serres de l'université et les a combinées avec du lait et du sucre britanniques pour créer six tablettes, nommées The Reading...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/fr/une-etudiante-fabrique-une-tablette-de-chocolat-a-partir-de-cacao-entierement-br-1793820590416jpudzw0hp.html"
+    },
+    {
      "id": "1793769512699wwo2nsoyi",
      "titel": "Le corail blanchi guérit au toucher",
      "teaser": "Des chercheurs de Stanford ont découvert que le corail blanchi peut se rétablir au toucher. Cette découverte provient de recherches sur la restauration des coraux et offre de nouvelles pistes possibles pour la préservation des récifs coralliens.",
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/fr/le-corail-blanchi-guerit-au-toucher-1793769512699wwo2nsoyi.html"
-    },
-    {
-     "id": "1793769496499udef1tpv4",
-     "titel": "Maya Higa crée un sanctuaire animalier via Twitch",
-     "teaser": "Maya Higa a créé un sanctuaire animalier financé par les personnes qui la suivent sur Twitch. La réserve naturelle est connue sous le nom d'Alveus Sanctuary. Higa a également partagé son histoire lors d'une conférence TED Talk.",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/maya-higa-cree-un-sanctuaire-animalier-via-twitch-1793769496499udef1tpv4.html"
-    },
-    {
-     "id": "17937694795126qpt1w8g5",
-     "titel": "L'experte en terrorisme Farah Pandith enseigne aux communautés à cultiver la compassion",
-     "teaser": "Farah Pandith a travaillé pendant des décennies dans le secteur de la lutte antiterroriste, notamment pour les gouvernements Obama, George W. Bush et George H.W. Bush. Elle a étudié pourquoi les gens adhèrent à des idéologies qui divisent le monde en « nous contre eux », et a découvert que l'extrémisme découle souvent de l'insécurité et de la quête de...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/l-experte-en-terrorisme-farah-pandith-enseigne-aux-communautes-a-cultiver-la-com-17937694795126qpt1w8g5.html"
     }
    ],
    "dagoverzichten": [
@@ -290,28 +290,28 @@
      "url": "https://brightnews.online/articles/es/las-galas-de-boxeo-de-fight-back-financian-clases-gratuitas-para-supervivientes-1793655009947ou7j6x4x0.html"
     },
     {
+     "id": "17938206195450tb2nv2m9",
+     "titel": "Estudiantes abren taller de automóviles al público en Houston",
+     "teaser": "En la Fifth Ward de Houston se ha abierto un taller de automóviles dirigido por estudiantes de secundaria. La iniciativa proviene del Barbara Jordan Career Center, parte del Houston Independent School District, que busca crear empleo y prácticas para alumnos en profesiones muy demandadas. El centro atiende a 12 campus escolares y más de 1.200 estudiantes. Cada viernes de 9.00...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/estudiantes-abren-taller-de-automoviles-al-publico-en-houston-17938206195450tb2nv2m9.html"
+    },
+    {
+     "id": "1793820590416jpudzw0hp",
+     "titel": "Estudiante elabora una tableta de chocolate con cacao completamente británico",
+     "teaser": "Maha Khan, estudiante de máster en seguridad alimentaria en la University of Reading, elaboró una tableta de chocolate completamente con ingredientes británicos, incluidos los granos de cacao. Cosechó vainas de cacao de los invernaderos de la universidad y las combinó con leche y azúcar británicas para crear seis tabletas, denominadas The Reading 100, en honor al centenario de la universidad....",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/es/estudiante-elabora-una-tableta-de-chocolate-con-cacao-completamente-britanico-1793820590416jpudzw0hp.html"
+    },
+    {
      "id": "1793769512699wwo2nsoyi",
      "titel": "El coral blanqueado se recupera al tacto",
      "teaser": "Científicos de Stanford han descubierto que el coral blanqueado puede recuperarse mediante el contacto físico. Este hallazgo surge de investigaciones sobre la restauración coralina y ofrece posibles nuevas perspectivas para la conservación de arrecifes de coral.",
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/es/el-coral-blanqueado-se-recupera-al-tacto-1793769512699wwo2nsoyi.html"
-    },
-    {
-     "id": "1793769496499udef1tpv4",
-     "titel": "Maya Higa construye un santuario de vida silvestre a través de Twitch",
-     "teaser": "Maya Higa ha establecido un santuario de vida silvestre financiado por las personas que la siguen en Twitch. La reserva natural es conocida como Alveus Sanctuary. Higa también compartió su historia durante una TED Talk.",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/maya-higa-construye-un-santuario-de-vida-silvestre-a-traves-de-twitch-1793769496499udef1tpv4.html"
-    },
-    {
-     "id": "17937694795126qpt1w8g5",
-     "titel": "La experta en terrorismo Farah Pandith enseña a las comunidades a practicar la compasión",
-     "teaser": "Farah Pandith trabajó durante décadas en el sector de la lucha antiterrorista, incluso para los gobiernos de Obama, George W. Bush y George H.W. Bush. Investigó por qué las personas caen en ideologías que dividen el mundo en «nosotros versus ellos», y descubrió que el extremismo a menudo surge de la incertidumbre y la búsqueda de reconocimiento o un lugar...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/la-experta-en-terrorismo-farah-pandith-ensena-a-las-comunidades-a-practicar-la-c-17937694795126qpt1w8g5.html"
     }
    ],
    "dagoverzichten": [
