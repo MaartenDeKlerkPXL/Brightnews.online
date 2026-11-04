@@ -1,5 +1,123 @@
 [
   {
+    "id": "dg-20261103-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-11-03",
+    "title": "Connection in three forms: from compassion to skateboarding and village life",
+    "summary": "These days show that progress often begins with something simple: being together with others, without fixed roles or labels. Whether it's countering extremism, relearning how to move after an accident, or rethinking what care actually means, it always comes down to people who truly see each other. Farah Pandith spent decades of her career in the counterterrorism sector, including work for three American administrations. She discovered that extremism often arises from uncertainty and a search for recognition, not from pure hatred. After 9/11, she began working at USAID and the National Security Council, where she developed an approach centered on...",
+    "image_alt": "Connection in three forms: from compassion to skateboarding and village life",
+    "meta_description": "From compassion against extremism to wheelchair skateboarding and care without labels: three stories about connection on November 3, 2026.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://reasonstobecheerful.world/wp-content/uploads/2026/11/U.S._Special_Representative_to_Muslim_Communities_Farah_Pandith_visits_Pesantren_Sirojul_Munir_in_Bekasi_6025301458.jpg",
+    "date": "2026-11-04T05:20:15.347Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "17937694795126qpt1w8g5",
+        "title": "Counterterrorism expert Farah Pandith teaches communities to practice compassion"
+      },
+      {
+        "id": "1793733306502wvehv8k6h",
+        "title": "Xie Junwu Teaches Others Wheelchair Skateboarding in China"
+      },
+      {
+        "id": "17937332369596ss98f5gb",
+        "title": "Village Botton shows care without the 'service' label"
+      }
+    ]
+  },
+  {
+    "id": "dg-20261103-environment",
+    "type": "digest",
+    "digest_date": "2026-11-03",
+    "title": "Animals return and lights go out for birds: good news from nature",
+    "summary": "These days show how people are making space for animals and ecosystems in very different ways. From a loch in Scotland to an island in the Azores: everywhere, choices are being made that give nature more room to breathe. In Scotland, beavers are getting a place around Loch Ness after 500 years. On 30 October, conservation organisation NatureScot gave permission to the non-profits Trees for Life and Beaver Trust to release up to 15 beaver families over the next three years in the River Ness catchment area [2]. The last beavers were seen here between 1526 and 1527. Research showed...",
+    "image_alt": "Animals return and lights go out for birds: good news from nature",
+    "meta_description": "Beavers return to Loch Ness, lights out for birds on Corvo and more good nature news from early November 2026.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/Local-Changemakers-Story-Covers-12.png",
+    "date": "2026-11-04T05:19:23.778Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1793769496499udef1tpv4",
+        "title": "Maya Higa builds wildlife sanctuary via Twitch"
+      },
+      {
+        "id": "1793769453371lj3rxqr3y",
+        "title": "Beavers return to Loch Ness after 500 years"
+      },
+      {
+        "id": "1793733350635zxe818kte",
+        "title": "Carbon credits open Great Koala National Park in NSW"
+      },
+      {
+        "id": "1793595351745s52awslnz",
+        "title": "Portuguese island Corvo turns off lights for shearwaters"
+      }
+    ]
+  },
+  {
+    "id": "1793769512699wwo2nsoyi",
+    "title": "Bleached coral heals through touch",
+    "summary": "Scientists at Stanford have discovered that bleached coral can recover through touch. This insight comes from research into coral restoration and may offer new avenues for preserving coral reefs.",
+    "image_alt": "Close-up of bleached coral underwater",
+    "meta_description": "Stanford research shows bleached coral can heal through touch, a hopeful discovery for coral restoration.",
+    "meta_keywords": "bleached coral, coral restoration, Stanford, coral reefs, ocean research",
+    "link": "https://www.optimistdaily.com/2026/11/stanford-scientists-discovered-bleached-coral-can-heal-through-touch/",
+    "source": "OptimistDaily.com",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/colorful-coral-reef-with-hard-Depositphotos_18119259_S.jpg",
+    "date": "2026-11-04T05:18:33.473Z",
+    "category": "Science",
+    "score": 9
+  },
+  {
+    "id": "1793769496499udef1tpv4",
+    "title": "Maya Higa builds wildlife sanctuary via Twitch",
+    "summary": "Maya Higa has established a wildlife sanctuary funded by the people who follow her on Twitch. The nature reserve is known as Alveus Sanctuary. Higa also shared her story during a TED Talk.",
+    "image_alt": "Maya Higa during a TED Talk, photo courtesy of Alveus Sanctuary",
+    "meta_description": "Maya Higa built a wildlife sanctuary on Twitch, funded by her viewers.",
+    "meta_keywords": "Maya Higa, Twitch, wildlife sanctuary, Alveus Sanctuary, TED Talk",
+    "link": "https://www.optimistdaily.com/2026/11/maya-higa-built-a-wildlife-sanctuary-on-twitch-funded-by-the-people-who-watch-it/",
+    "source": "OptimistDaily.com",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/Local-Changemakers-Story-Covers-12.png",
+    "date": "2026-11-04T05:18:17.776Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "17937694795126qpt1w8g5",
+    "title": "Counterterrorism expert Farah Pandith teaches communities to practice compassion",
+    "summary": "Farah Pandith spent decades working in the counterterrorism sector, including for the administrations of Obama, George W. Bush, and George H.W. Bush. She investigated why people fall into ideologies that divide the world into „us versus them,\" and discovered that extremism often stems from insecurity and a search for recognition or a place in the world. After the September 11...",
+    "image_alt": "Farah Pandith sits in her bright living room in Arlington, Virginia",
+    "meta_description": "How counterterrorism expert Farah Pandith uses her knowledge to foster compassion and understanding between communities.",
+    "meta_keywords": "Farah Pandith, counterterrorism, extremism, compassion, depolarization, ADL Daniel Pearl Award, soft power",
+    "link": "https://reasonstobecheerful.world/counter-extremism-expert-farah-pandith-compassion-rebuilding-connection/",
+    "source": "ReasonsToBeCheerful.world",
+    "image": "https://reasonstobecheerful.world/wp-content/uploads/2026/11/U.S._Special_Representative_to_Muslim_Communities_Farah_Pandith_visits_Pesantren_Sirojul_Munir_in_Bekasi_6025301458.jpg",
+    "date": "2026-11-04T05:18:00.789Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "1793769453371lj3rxqr3y",
+    "title": "Beavers return to Loch Ness after 500 years",
+    "summary": "After 500 years of absence, beavers are getting a new home around Loch Ness in Scotland. On 30 October, conservation organisation NatureScot granted a licence to the non-profits Trees for Life and Beaver Trust to release up to 15 beaver families over the next three years in the River Ness catchment, of which the loch forms part. Beavers were last...",
+    "image_alt": "A beaver swims in the water near Loch Ness in Scotland",
+    "meta_description": "After 500 years, beavers are granted permission to return to Loch Ness, with support from the local majority.",
+    "meta_keywords": "beavers, Loch Ness, Scotland, NatureScot, Trees for Life, Beaver Trust, reintroduction, biodiversity",
+    "link": "https://www.goodnewsnetwork.org/loch-ness-is-about-to-welcome-a-new-monster-the-beaver-500-years-since-it-last-lived-there/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-NatureScot.jpg",
+    "date": "2026-11-04T05:17:35.864Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
     "id": "1793733350635zxe818kte",
     "title": "Carbon credits open Great Koala National Park in NSW",
     "summary": "In New South Wales, Australia, carbon credits have played a role in making the Great Koala National Park possible. Further details about the process or background are not provided in the source.",
@@ -2454,105 +2572,6 @@
     "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Evacuation-of-art-crates-from-Deir-ez-Zor-Museum-during-Syria-war-SWNS-cropped.jpeg",
     "date": "2026-09-28T04:15:34.017Z",
     "category": "Science",
-    "score": 9
-  },
-  {
-    "id": "1790568906594wygath1u8",
-    "title": "Researchers Find Scents That Keep Honeybees Away From Pesticides",
-    "summary": "Researchers at the University of California, Riverside have identified chemical compounds that can safely deter honeybees from pesticide-treated crops. Biologist Anandasankar Ray and entomologist Boris Baer developed a machine-learning model trained on chemical structures and behavioral data from bees and fruit flies to find scents that repel bees. The model screened more than 50 million compounds and identified approximately 130...",
-    "image_alt": "Honeybee on a flower in an agricultural field",
-    "meta_description": "UC Riverside researchers find scents that drive honeybees away from pesticides using machine learning and lab tests.",
-    "meta_keywords": "honeybees, pesticides, bee decline, machine learning, University of California Riverside, pollinators, insect scent",
-    "link": "https://www.goodnewsnetwork.org/ca-researchers-identify-odors-that-repel-honeybees-from-pesticides/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Honeybee-by-Yu-Fang-University-of-California-Riverside-released.jpg",
-    "date": "2026-09-28T04:15:09.422Z",
-    "category": "Science",
-    "score": 9
-  },
-  {
-    "id": "1790526952732zu9t81thr",
-    "title": "New York City recovers $131 million from DoorDash for delivery workers",
-    "summary": "The New York City Department of Consumer and Worker Protection (DCWP) has reached a settlement of $131.5 million with DoorDash for violating local delivery worker laws. More than 260,000 workers were underpaid, with some receiving no payment at all or being paid late. Over $115 million will go directly to delivery workers, plus $16 million in fines and costs. Employees...",
-    "image_alt": "Delivery worker on a bicycle with a DoorDash delivery bag in New York City",
-    "meta_description": "NYC recovers $131.5 million from DoorDash for 260,000 underpaid delivery workers and launches new monitoring system.",
-    "meta_keywords": "DoorDash, New York City, delivery workers, DCWP, underpayment, settlement, minimum wage, Workers Algorithm Observatory",
-    "link": "https://www.goodnewsnetwork.org/nyc-collects-131-million-from-doordash-for-delivery-workers-unfairly-paid/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/DoorDash-workers-reimbursed-New-York-City-Mayors-office-released-.jpg",
-    "date": "2026-09-27T16:35:55.742Z",
-    "category": "Finance",
-    "score": 10
-  },
-  {
-    "id": "dg-20260926-lifestyle",
-    "type": "digest",
-    "digest_date": "2026-09-26",
-    "title": "Books, a billion dollars and second chances: the good news of these days",
-    "summary": "These days show that generosity takes many forms, from a city collecting books together to a gift larger than most people can imagine. What connects the stories is that people are investing in the future of others, sometimes with a few books, sometimes with millions of dollars, and sometimes with a second chance at a trade. In Raleigh, fans celebrated the first 'Imagination Library Day of Reading', in honor of Dolly Parton [1]. Governor Josh Stein made it an official day, referencing her hit '9 to 5' and her support for hurricane victims and young readers. Parton's Imagination Library has...",
-    "image_alt": "Books, a billion dollars and second chances: the good news of these days",
-    "meta_description": "Book drive for Dolly Parton, a billion-dollar gift to Oregon and formerly incarcerated people learning a trade: the good news of these days in a nutshell.",
-    "meta_keywords": "Lifestyle",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab6ce4acfea89c86c3e6d7b_dolly-parton-9-to-5-day-how-celebrate-featured.webp",
-    "date": "2026-09-27T04:14:25.220Z",
-    "category": "Lifestyle",
-    "refs": [
-      {
-        "id": "1790435677680ci6xsstfv",
-        "title": "Dolly Parton fans celebrate first 'Imagination Library Day of Reading'"
-      },
-      {
-        "id": "1790482412739w2tqbovj0",
-        "title": "Nike founder Phil Knight donates $1 billion to University of Oregon"
-      },
-      {
-        "id": "1790355679646pe6dardmc",
-        "title": "Nonprofit Rise Up trains formerly incarcerated men as machinists"
-      }
-    ]
-  },
-  {
-    "id": "1790482412739w2tqbovj0",
-    "title": "Nike founder Phil Knight donates $1 billion to University of Oregon",
-    "summary": "Phil Knight, co-founder of Nike, has made a $1 billion gift to his alma mater, the University of Oregon, together with his wife Penny. According to the New York Times, this is the largest single donation ever made to an American public university. The money will enable the university to establish an entirely new engineering college, something that university vice...",
-    "image_alt": "Phil Knight, co-founder of Nike, making a multimillion-dollar gift to the University of Oregon",
-    "meta_description": "Nike founder Phil Knight donates $1 billion to University of Oregon for new engineering college.",
-    "meta_keywords": "Phil Knight, Nike, University of Oregon, donation, philanthropy, engineering, Penny Knight",
-    "link": "https://www.goodnewsnetwork.org/nike-founder-phil-knight-donates-1-billion-to-oregon-university/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2025/08/Phil-Knight-wife-Penny-and-Knight-Cancer-Institute-Director-Dr.-Druker-credit-OSHU-released.jpg",
-    "date": "2026-09-27T04:13:34.582Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "1790435677680ci6xsstfv",
-    "title": "Dolly Parton fans celebrate first 'Imagination Library Day of Reading'",
-    "summary": "In Raleigh, North Carolina, Nick Blanchard and Kelly Forbes organized a children's book drive to honor the late music legend and philanthropist Dolly Parton. Governor Josh Stein officially declared September 25 as 'Dolly Parton's Imagination Library Day of Reading', referencing her hit '9 to 5' and her generosity toward Hurricane Helene victims and young readers. Parton's Imagination Library, launched in...",
-    "image_alt": "Volunteers behind a table with children's books for the Imagination Library book drive at a library in Raleigh",
-    "meta_description": "Dolly Parton fans honor the music legend with a book drive on the first 'Imagination Library Day of Reading' in North Carolina.",
-    "meta_keywords": "Dolly Parton, Imagination Library, children's books, literacy, Raleigh, North Carolina, Day of Reading, charity",
-    "link": "https://www.goodgoodgood.co/articles/dolly-parton-9-to-5-day-how-celebrate",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab6ce4acfea89c86c3e6d7b_dolly-parton-9-to-5-day-how-celebrate-featured.webp",
-    "date": "2026-09-26T15:14:39.571Z",
-    "category": "Lifestyle",
-    "score": 10
-  },
-  {
-    "id": "1790397618858z5yxsbuyb",
-    "title": "Orphaned rhino Tytan and zebra Notty inseparable after losing their mothers",
-    "summary": "At the Sheldrick Wildlife Trust in Nairobi, which has been caring for injured and orphaned animals in East Africa since 1977, a special bond formed between two young animals. Black rhino Tytan lost his mother when he was eight months old after she fell from a cliff. A week later, zebra Notty was brought to the same sanctuary after her...",
-    "image_alt": "Baby rhino Tytan and zebra Notty together at the Sheldrick Wildlife Trust sanctuary in Nairobi",
-    "meta_description": "Orphaned rhino Tytan and zebra Notty both lost their mothers and have been inseparable at Sheldrick Wildlife Trust.",
-    "meta_keywords": "Sheldrick Wildlife Trust, rhino, zebra, Tytan, Notty, Kenya, animal sanctuary, orphaned animals",
-    "link": "https://www.goodgoodgood.co/articles/baby-rhino-zebra-sheldrick-wildlife-trust",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab6ac71383c10cebf598d90_6ab6ac6f8a54eecb452e68b4_baby-rhino-zebra-sheldrick-wildlife-trust-featured.webp",
-    "date": "2026-09-26T04:40:19.938Z",
-    "category": "Environment",
     "score": 9
   }
 ]

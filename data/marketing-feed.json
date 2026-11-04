@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-11-03T19:16:28.994Z",
+ "gegenereerd": "2026-11-04T05:20:15.831Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -22,44 +22,51 @@
      "url": "https://brightnews.online/articles/nl/boksgala-s-fight-back-financieren-gratis-bokslessen-voor-overlevenden-van-huisel-1793655009947ou7j6x4x0.html"
     },
     {
-     "id": "1793733350635zxe818kte",
-     "titel": "Koolstofkredieten openen Great Koala National Park in NSW",
-     "teaser": "In New South Wales, Australië, hebben koolstofkredieten een rol gespeeld bij het mogelijk maken van het Great Koala National Park. Verdere details over de werkwijze of achtergrond worden in de bron niet gegeven.",
+     "id": "1793769512699wwo2nsoyi",
+     "titel": "Gebleekt koraal heelt door aanraking",
+     "teaser": "Wetenschappers van Stanford hebben ontdekt dat gebleekt koraal kan herstellen door aanraking. Dit inzicht komt uit onderzoek naar koraalherstel en biedt mogelijk nieuwe aanknopingspunten voor het behoud van koraalriffen.",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/nl/gebleekt-koraal-heelt-door-aanraking-1793769512699wwo2nsoyi.html"
+    },
+    {
+     "id": "1793769496499udef1tpv4",
+     "titel": "Maya Higa bouwt wildlife sanctuary via Twitch",
+     "teaser": "Maya Higa heeft een wildlife sanctuary opgezet, gefinancierd door de mensen die haar op Twitch volgen. Het natuurreservaat staat bekend als Alveus Sanctuary. Higa deelde haar verhaal ook tijdens een TED Talk.",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/koolstofkredieten-openen-great-koala-national-park-in-nsw-1793733350635zxe818kte.html"
+     "url": "https://brightnews.online/articles/nl/maya-higa-bouwt-wildlife-sanctuary-via-twitch-1793769496499udef1tpv4.html"
     },
     {
-     "id": "1793733306502wvehv8k6h",
-     "titel": "Xie Junwu Leert Anderen Rolstoelskateboarden In China",
-     "teaser": "Xie Junwu, een rolstoelgebonden atleet uit Nanchang, beklom bergen, liep marathons en skateboardt nu. Op zijn 19e viel hij tijdens een geologie-stage uit een boom en raakte verlamd vanaf zijn middel. Na acht jaar thuis, en de dood van zijn moeder in 2000 die hem aanspoorde, begon hij wielerende technieken te oefenen via buitenlandse video's. In 2012 vestigde hij een...",
+     "id": "17937694795126qpt1w8g5",
+     "titel": "Terrorisme-expert Farah Pandith leert gemeenschappen compassie toepassen",
+     "teaser": "Farah Pandith werkte decennialang in de contraterrorisme-sector, onder meer voor de regeringen Obama, George W. Bush en George H.W. Bush. Ze onderzocht waarom mensen vervallen in ideologieën die de wereld verdelen in 'wij versus zij', en ontdekte dat extremisme vaak voortkomt uit onzekerheid en een zoektocht naar erkenning of een plek in de wereld. Na de aanslagen van 11 september...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/xie-junwu-leert-anderen-rolstoelskateboarden-in-china-1793733306502wvehv8k6h.html"
-    },
-    {
-     "id": "1793733265326g3m9mhohy",
-     "titel": "Politieagent doneert zeldzaam anti-D bloed 545 keer bij alle 85 bloedbanken van Australië",
-     "teaser": "Trevor Bergman, een 59-jarige politieagent uit Melbourne, heeft als een van de 150 bekende Australiërs met de zeldzame anti-D antistof in zijn bloed, dit nu 545 keer gedoneerd bij alle 85 Australische donatiecentra. Anti-D wordt toegediend aan zwangere vrouwen van wie de pasgeborene risico loopt op hemolytische ziekte. Bergman kreeg het idee tijdens een vakantie in Perth en reisde vervolgens...",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/nl/politieagent-doneert-zeldzaam-anti-d-bloed-545-keer-bij-alle-85-bloedbanken-van-1793733265326g3m9mhohy.html"
+     "url": "https://brightnews.online/articles/nl/terrorisme-expert-farah-pandith-leert-gemeenschappen-compassie-toepassen-17937694795126qpt1w8g5.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261103-lifestyle",
+     "titel": "Verbinding in drie vormen: van compassie tot skateboard en dorpsleven",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-03",
+     "url": "https://brightnews.online/articles/nl/verbinding-in-drie-vormen-van-compassie-tot-skateboard-en-dorpsleven-dg-20261103-lifestyle.html"
+    },
+    {
+     "id": "dg-20261103-environment",
+     "titel": "Terugkeer van dieren en licht uit voor vogels: goed nieuws uit de natuur",
+     "categorie": "Environment",
+     "dag": "2026-11-03",
+     "url": "https://brightnews.online/articles/nl/terugkeer-van-dieren-en-licht-uit-voor-vogels-goed-nieuws-uit-de-natuur-dg-20261103-environment.html"
+    },
     {
      "id": "dg-20261102-lifestyle",
      "titel": "Zorg voor elkaar: van een stichting na een ongeluk tot boksen zonder angst",
      "categorie": "Lifestyle",
      "dag": "2026-11-02",
      "url": "https://brightnews.online/articles/nl/zorg-voor-elkaar-van-een-stichting-na-een-ongeluk-tot-boksen-zonder-angst-dg-20261102-lifestyle.html"
-    },
-    {
-     "id": "dg-20261101-lifestyle",
-     "titel": "Verbinding staat centraal: van bankje bij de bushalte tot liefde op hoge leeftijd",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-01",
-     "url": "https://brightnews.online/articles/nl/verbinding-staat-centraal-van-bankje-bij-de-bushalte-tot-liefde-op-hoge-leeftijd-dg-20261101-lifestyle.html"
     }
    ]
   },
@@ -82,44 +89,51 @@
      "url": "https://brightnews.online/articles/en/boxing-galas-by-fight-back-finance-free-lessons-for-domestic-abuse-survivors-1793655009947ou7j6x4x0.html"
     },
     {
-     "id": "1793733350635zxe818kte",
-     "titel": "Carbon credits open Great Koala National Park in NSW",
-     "teaser": "In New South Wales, Australia, carbon credits have played a role in making the Great Koala National Park possible. Further details about the process or background are not provided in the source.",
+     "id": "1793769512699wwo2nsoyi",
+     "titel": "Bleached coral heals through touch",
+     "teaser": "Scientists at Stanford have discovered that bleached coral can recover through touch. This insight comes from research into coral restoration and may offer new avenues for preserving coral reefs.",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/en/bleached-coral-heals-through-touch-1793769512699wwo2nsoyi.html"
+    },
+    {
+     "id": "1793769496499udef1tpv4",
+     "titel": "Maya Higa builds wildlife sanctuary via Twitch",
+     "teaser": "Maya Higa has established a wildlife sanctuary funded by the people who follow her on Twitch. The nature reserve is known as Alveus Sanctuary. Higa also shared her story during a TED Talk.",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/carbon-credits-open-great-koala-national-park-in-nsw-1793733350635zxe818kte.html"
+     "url": "https://brightnews.online/articles/en/maya-higa-builds-wildlife-sanctuary-via-twitch-1793769496499udef1tpv4.html"
     },
     {
-     "id": "1793733306502wvehv8k6h",
-     "titel": "Xie Junwu Teaches Others Wheelchair Skateboarding in China",
-     "teaser": "Xie Junwu, a wheelchair athlete from Nanchang, has climbed mountains, run marathons and now skateboards. At 19, he fell from a tree during a geology internship and became paralyzed from the waist down. After eight years at home, and spurred by his mother's death in 2000, he began practicing wheeling techniques through foreign videos. In 2012, he set a Guinness...",
+     "id": "17937694795126qpt1w8g5",
+     "titel": "Counterterrorism expert Farah Pandith teaches communities to practice compassion",
+     "teaser": "Farah Pandith spent decades working in the counterterrorism sector, including for the administrations of Obama, George W. Bush, and George H.W. Bush. She investigated why people fall into ideologies that divide the world into „us versus them,\" and discovered that extremism often stems from insecurity and a search for recognition or a place in the world. After the September 11...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/xie-junwu-teaches-others-wheelchair-skateboarding-in-china-1793733306502wvehv8k6h.html"
-    },
-    {
-     "id": "1793733265326g3m9mhohy",
-     "titel": "Police officer donates rare anti-D blood 545 times across all 85 Australian blood banks",
-     "teaser": "Trevor Bergman, a 59-year-old police officer from Melbourne, has donated rare anti-D antibodies in his blood 545 times across all 85 Australian donation centres, making him one of only 150 known Australians with this precious blood type. Anti-D is administered to pregnant women whose newborns are at risk of haemolytic disease. Bergman got the idea during a holiday in Perth...",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/en/police-officer-donates-rare-anti-d-blood-545-times-across-all-85-australian-bloo-1793733265326g3m9mhohy.html"
+     "url": "https://brightnews.online/articles/en/counterterrorism-expert-farah-pandith-teaches-communities-to-practice-compassion-17937694795126qpt1w8g5.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261103-lifestyle",
+     "titel": "Connection in three forms: from compassion to skateboarding and village life",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-03",
+     "url": "https://brightnews.online/articles/en/connection-in-three-forms-from-compassion-to-skateboarding-and-village-life-dg-20261103-lifestyle.html"
+    },
+    {
+     "id": "dg-20261103-environment",
+     "titel": "Animals return and lights go out for birds: good news from nature",
+     "categorie": "Environment",
+     "dag": "2026-11-03",
+     "url": "https://brightnews.online/articles/en/animals-return-and-lights-go-out-for-birds-good-news-from-nature-dg-20261103-environment.html"
+    },
     {
      "id": "dg-20261102-lifestyle",
      "titel": "Looking out for each other: from a foundation born of tragedy to boxing without fear",
      "categorie": "Lifestyle",
      "dag": "2026-11-02",
      "url": "https://brightnews.online/articles/en/looking-out-for-each-other-from-a-foundation-born-of-tragedy-to-boxing-without-f-dg-20261102-lifestyle.html"
-    },
-    {
-     "id": "dg-20261101-lifestyle",
-     "titel": "Connection takes center stage: from a bench at the bus stop to love in later years",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-01",
-     "url": "https://brightnews.online/articles/en/connection-takes-center-stage-from-a-bench-at-the-bus-stop-to-love-in-later-year-dg-20261101-lifestyle.html"
     }
    ]
   },
@@ -142,44 +156,51 @@
      "url": "https://brightnews.online/articles/de/boxgalas-von-fight-back-finanzieren-kostenlosen-boxunterricht-fur-opfer-von-haus-1793655009947ou7j6x4x0.html"
     },
     {
-     "id": "1793733350635zxe818kte",
-     "titel": "Kohlenstoffgutschriften ermöglichen Great Koala National Park in NSW",
-     "teaser": "In New South Wales, Australien, haben Kohlenstoffgutschriften eine Rolle bei der Ermöglichung des Great Koala National Park gespielt. Weitere Details über die Arbeitsweise oder den Hintergrund werden in der Quelle nicht gegeben.",
+     "id": "1793769512699wwo2nsoyi",
+     "titel": "Gebleichtes Korall heilt durch Berührung",
+     "teaser": "Wissenschaftler der Stanford haben entdeckt, dass gebleichtes Korall sich durch Berührung erholen kann. Diese Erkenntnis stammt aus der Forschung zur Korallenwiederherstellung und bietet möglicherweise neue Ansatzpunkte für den Schutz von Korallenriffen.",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/de/gebleichtes-korall-heilt-durch-beruhrung-1793769512699wwo2nsoyi.html"
+    },
+    {
+     "id": "1793769496499udef1tpv4",
+     "titel": "Maya Higa baut Wildtier-Schutzgebiet über Twitch",
+     "teaser": "Maya Higa hat ein Wildtier-Schutzgebiet aufgebaut, das von den Menschen finanziert wird, die ihr auf Twitch folgen. Das Naturschutzgebiet ist als Alveus Sanctuary bekannt. Higa teilte ihre Geschichte auch während eines TED Talk.",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/kohlenstoffgutschriften-ermoglichen-great-koala-national-park-in-nsw-1793733350635zxe818kte.html"
+     "url": "https://brightnews.online/articles/de/maya-higa-baut-wildtier-schutzgebiet-uber-twitch-1793769496499udef1tpv4.html"
     },
     {
-     "id": "1793733306502wvehv8k6h",
-     "titel": "Xie Junwu lehrt andere Rollstuhlskateboardfahren in China",
-     "teaser": "Xie Junwu, ein querschnittsgelähmter Athlet aus Nanchang, erklomm Berge, lief Marathons und skateboard nun. Mit 19 Jahren stürzte er während eines Geologie-Praktikums aus einem Baum und wurde von der Hüfte abwärts gelähmt. Nach acht Jahren zu Hause und dem Tod seiner Mutter im Jahr 2000, der ihn antrieb, begann er, Wheelie-Techniken anhand ausländischer Videos zu trainieren. 2012 stellte er einen...",
+     "id": "17937694795126qpt1w8g5",
+     "titel": "Terrorismus-Expertin Farah Pandith lehrt Gemeinden Mitgefühl",
+     "teaser": "Farah Pandith arbeitete jahrzehntelang im Bereich Terrorismusbekämpfung, unter anderem für die Regierungen Obama, George W. Bush und George H.W. Bush. Sie untersuchte, warum Menschen in Ideologien verfallen, die die Welt in „Wir gegen Sie\" aufteilen, und entdeckte, dass Extremismus oft aus Unsicherheit und der Suche nach Anerkennung oder einem Platz in der Welt entsteht. Nach den Anschlägen vom 11. September...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/xie-junwu-lehrt-andere-rollstuhlskateboardfahren-in-china-1793733306502wvehv8k6h.html"
-    },
-    {
-     "id": "1793733265326g3m9mhohy",
-     "titel": "Polizist spendet seltenes Anti-D-Blut 545-mal bei allen 85 Blutbanken Australiens",
-     "teaser": "Trevor Bergman, ein 59-jähriger Polizist aus Melbourne, hat als einer von etwa 150 bekannten Australiern mit dem seltenen Anti-D-Antistoff in seinem Blut, diesen nun 545-mal bei allen 85 australischen Spendenzentren abgegeben. Anti-D wird schwangeren Frauen verabreicht, deren Neugeborenes das Risiko einer hämolytischen Erkrankung trägt. Bergman kam auf die Idee während eines Urlaubs in Perth und reiste anschließend die Ostküste entlang,...",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/de/polizist-spendet-seltenes-anti-d-blut-545-mal-bei-allen-85-blutbanken-australien-1793733265326g3m9mhohy.html"
+     "url": "https://brightnews.online/articles/de/terrorismus-expertin-farah-pandith-lehrt-gemeinden-mitgefuhl-17937694795126qpt1w8g5.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261103-lifestyle",
+     "titel": "Verbindung in drei Formen: von Mitgefühl bis Skateboard und Dorfleben",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-03",
+     "url": "https://brightnews.online/articles/de/verbindung-in-drei-formen-von-mitgefuhl-bis-skateboard-und-dorfleben-dg-20261103-lifestyle.html"
+    },
+    {
+     "id": "dg-20261103-environment",
+     "titel": "Rückkehr von Tieren und Licht aus für Vögel: gute Nachrichten aus der Natur",
+     "categorie": "Environment",
+     "dag": "2026-11-03",
+     "url": "https://brightnews.online/articles/de/ruckkehr-von-tieren-und-licht-aus-fur-vogel-gute-nachrichten-aus-der-natur-dg-20261103-environment.html"
+    },
     {
      "id": "dg-20261102-lifestyle",
      "titel": "Füreinander sorgen: von einer Stiftung nach einem Unfall bis zum Boxen ohne Angst",
      "categorie": "Lifestyle",
      "dag": "2026-11-02",
      "url": "https://brightnews.online/articles/de/fureinander-sorgen-von-einer-stiftung-nach-einem-unfall-bis-zum-boxen-ohne-angst-dg-20261102-lifestyle.html"
-    },
-    {
-     "id": "dg-20261101-lifestyle",
-     "titel": "Verbindung im Mittelpunkt: von der Bank an der Bushaltestelle bis zur Liebe im hohen Alter",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-01",
-     "url": "https://brightnews.online/articles/de/verbindung-im-mittelpunkt-von-der-bank-an-der-bushaltestelle-bis-zur-liebe-im-ho-dg-20261101-lifestyle.html"
     }
    ]
   },
@@ -202,44 +223,51 @@
      "url": "https://brightnews.online/articles/fr/les-galas-de-boxe-fight-back-financent-des-cours-de-boxe-gratuits-pour-les-survi-1793655009947ou7j6x4x0.html"
     },
     {
-     "id": "1793733350635zxe818kte",
-     "titel": "Les crédits carbone ouvrent le Great Koala National Park en Nouvelle-Galles du Sud",
-     "teaser": "En Nouvelle-Galles du Sud, en Australie, les crédits carbone ont joué un rôle déterminant dans la création du Great Koala National Park. La source ne fournit pas de détails supplémentaires sur le fonctionnement ou le contexte de cette initiative.",
+     "id": "1793769512699wwo2nsoyi",
+     "titel": "Le corail blanchi guérit au toucher",
+     "teaser": "Des chercheurs de Stanford ont découvert que le corail blanchi peut se rétablir au toucher. Cette découverte provient de recherches sur la restauration des coraux et offre de nouvelles pistes possibles pour la préservation des récifs coralliens.",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/fr/le-corail-blanchi-guerit-au-toucher-1793769512699wwo2nsoyi.html"
+    },
+    {
+     "id": "1793769496499udef1tpv4",
+     "titel": "Maya Higa crée un sanctuaire animalier via Twitch",
+     "teaser": "Maya Higa a créé un sanctuaire animalier financé par les personnes qui la suivent sur Twitch. La réserve naturelle est connue sous le nom d'Alveus Sanctuary. Higa a également partagé son histoire lors d'une conférence TED Talk.",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/les-credits-carbone-ouvrent-le-great-koala-national-park-en-nouvelle-galles-du-s-1793733350635zxe818kte.html"
+     "url": "https://brightnews.online/articles/fr/maya-higa-cree-un-sanctuaire-animalier-via-twitch-1793769496499udef1tpv4.html"
     },
     {
-     "id": "1793733306502wvehv8k6h",
-     "titel": "Xie Junwu enseigne le skateboard en fauteuil roulant en Chine",
-     "teaser": "Xie Junwu, athlète en fauteuil roulant originaire de Nanchang, a gravi des montagnes, couru des marathons et pratique désormais le skateboard. À 19 ans, il est tombé d'un arbre lors d'un stage de géologie et s'est retrouvé paralysé à partir de la taille. Après huit ans à la maison, et suite au décès de sa mère en 2000 qui l'a...",
+     "id": "17937694795126qpt1w8g5",
+     "titel": "L'experte en terrorisme Farah Pandith enseigne aux communautés à cultiver la compassion",
+     "teaser": "Farah Pandith a travaillé pendant des décennies dans le secteur de la lutte antiterroriste, notamment pour les gouvernements Obama, George W. Bush et George H.W. Bush. Elle a étudié pourquoi les gens adhèrent à des idéologies qui divisent le monde en « nous contre eux », et a découvert que l'extrémisme découle souvent de l'insécurité et de la quête de...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/xie-junwu-enseigne-le-skateboard-en-fauteuil-roulant-en-chine-1793733306502wvehv8k6h.html"
-    },
-    {
-     "id": "1793733265326g3m9mhohy",
-     "titel": "Agent de police fait don de sang anti-D rare 545 fois dans les 85 banques de sang d'Australie",
-     "teaser": "Trevor Bergman, un agent de police de 59 ans originaire de Melbourne, est l'un des 150 Australiens connus porteurs de l'anticorps rare anti-D dans son sang. Il a fait don 545 fois dans tous les 85 centres de collecte australiens. L'anti-D est administré aux femmes enceintes dont le nouveau-né risque de souffrir d'une maladie hémolytique. Bergman a eu l'idée lors...",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/fr/agent-de-police-fait-don-de-sang-anti-d-rare-545-fois-dans-les-85-banques-de-san-1793733265326g3m9mhohy.html"
+     "url": "https://brightnews.online/articles/fr/l-experte-en-terrorisme-farah-pandith-enseigne-aux-communautes-a-cultiver-la-com-17937694795126qpt1w8g5.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261103-lifestyle",
+     "titel": "La connexion sous trois formes : de la compassion au skateboard et à la vie villageoise",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-03",
+     "url": "https://brightnews.online/articles/fr/la-connexion-sous-trois-formes-de-la-compassion-au-skateboard-et-a-la-vie-villag-dg-20261103-lifestyle.html"
+    },
+    {
+     "id": "dg-20261103-environment",
+     "titel": "Le retour des animaux et les lumières éteintes pour les oiseaux : des bonnes nouvelles de la nature",
+     "categorie": "Environment",
+     "dag": "2026-11-03",
+     "url": "https://brightnews.online/articles/fr/le-retour-des-animaux-et-les-lumieres-eteintes-pour-les-oiseaux-des-bonnes-nouve-dg-20261103-environment.html"
+    },
     {
      "id": "dg-20261102-lifestyle",
      "titel": "Prendre soin les uns des autres : d'une fondation née d'un accident à la boxe sans peur",
      "categorie": "Lifestyle",
      "dag": "2026-11-02",
      "url": "https://brightnews.online/articles/fr/prendre-soin-les-uns-des-autres-d-une-fondation-nee-d-un-accident-a-la-boxe-sans-dg-20261102-lifestyle.html"
-    },
-    {
-     "id": "dg-20261101-lifestyle",
-     "titel": "La connexion au cœur : d'un banc à l'arrêt de bus à l'amour à un âge avancé",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-01",
-     "url": "https://brightnews.online/articles/fr/la-connexion-au-c-ur-d-un-banc-a-l-arret-de-bus-a-l-amour-a-un-age-avance-dg-20261101-lifestyle.html"
     }
    ]
   },
@@ -262,44 +290,51 @@
      "url": "https://brightnews.online/articles/es/las-galas-de-boxeo-de-fight-back-financian-clases-gratuitas-para-supervivientes-1793655009947ou7j6x4x0.html"
     },
     {
-     "id": "1793733350635zxe818kte",
-     "titel": "Los créditos de carbono abren el Great Koala National Park en Nueva Gales del Sur",
-     "teaser": "En Nueva Gales del Sur, Australia, los créditos de carbono han jugado un papel importante en hacer posible el Great Koala National Park. La fuente no proporciona más detalles sobre el funcionamiento o los antecedentes.",
+     "id": "1793769512699wwo2nsoyi",
+     "titel": "El coral blanqueado se recupera al tacto",
+     "teaser": "Científicos de Stanford han descubierto que el coral blanqueado puede recuperarse mediante el contacto físico. Este hallazgo surge de investigaciones sobre la restauración coralina y ofrece posibles nuevas perspectivas para la conservación de arrecifes de coral.",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/es/el-coral-blanqueado-se-recupera-al-tacto-1793769512699wwo2nsoyi.html"
+    },
+    {
+     "id": "1793769496499udef1tpv4",
+     "titel": "Maya Higa construye un santuario de vida silvestre a través de Twitch",
+     "teaser": "Maya Higa ha establecido un santuario de vida silvestre financiado por las personas que la siguen en Twitch. La reserva natural es conocida como Alveus Sanctuary. Higa también compartió su historia durante una TED Talk.",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/los-creditos-de-carbono-abren-el-great-koala-national-park-en-nueva-gales-del-su-1793733350635zxe818kte.html"
+     "url": "https://brightnews.online/articles/es/maya-higa-construye-un-santuario-de-vida-silvestre-a-traves-de-twitch-1793769496499udef1tpv4.html"
     },
     {
-     "id": "1793733306502wvehv8k6h",
-     "titel": "Xie Junwu enseña a otros a practicar skateboard en silla de ruedas en China",
-     "teaser": "Xie Junwu, un atleta en silla de ruedas de Nanchang, escaló montañas, corrió maratones y ahora practica skateboard. A los 19 años se cayó de un árbol durante una práctica de geología y quedó paralizado de la cintura hacia abajo. Después de ocho años en casa, y tras la muerte de su madre en 2000 que lo impulsó, comenzó a...",
+     "id": "17937694795126qpt1w8g5",
+     "titel": "La experta en terrorismo Farah Pandith enseña a las comunidades a practicar la compasión",
+     "teaser": "Farah Pandith trabajó durante décadas en el sector de la lucha antiterrorista, incluso para los gobiernos de Obama, George W. Bush y George H.W. Bush. Investigó por qué las personas caen en ideologías que dividen el mundo en «nosotros versus ellos», y descubrió que el extremismo a menudo surge de la incertidumbre y la búsqueda de reconocimiento o un lugar...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/xie-junwu-ensena-a-otros-a-practicar-skateboard-en-silla-de-ruedas-en-china-1793733306502wvehv8k6h.html"
-    },
-    {
-     "id": "1793733265326g3m9mhohy",
-     "titel": "Policía dona sangre anti-D poco común 545 veces en los 85 bancos de sangre de Australia",
-     "teaser": "Trevor Bergman, un policía de 59 años de Melbourne, ha donado sangre 545 veces en todos los centros de donación australianos como uno de los 150 australianos conocidos con el anticuerpo anti-D poco común en su sangre. El anti-D se administra a mujeres embarazadas cuyo recién nacido corre riesgo de enfermedad hemolítica. Bergman tuvo la idea durante unas vacaciones en...",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/es/policia-dona-sangre-anti-d-poco-comun-545-veces-en-los-85-bancos-de-sangre-de-au-1793733265326g3m9mhohy.html"
+     "url": "https://brightnews.online/articles/es/la-experta-en-terrorismo-farah-pandith-ensena-a-las-comunidades-a-practicar-la-c-17937694795126qpt1w8g5.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261103-lifestyle",
+     "titel": "Conexión en tres formas: de la compasión al skateboard y la vida rural",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-03",
+     "url": "https://brightnews.online/articles/es/conexion-en-tres-formas-de-la-compasion-al-skateboard-y-la-vida-rural-dg-20261103-lifestyle.html"
+    },
+    {
+     "id": "dg-20261103-environment",
+     "titel": "El regreso de los animales y las luces apagadas para las aves: buenas noticias de la naturaleza",
+     "categorie": "Environment",
+     "dag": "2026-11-03",
+     "url": "https://brightnews.online/articles/es/el-regreso-de-los-animales-y-las-luces-apagadas-para-las-aves-buenas-noticias-de-dg-20261103-environment.html"
+    },
     {
      "id": "dg-20261102-lifestyle",
      "titel": "Cuidarse mutuamente: de una fundación tras un accidente al boxeo sin miedo",
      "categorie": "Lifestyle",
      "dag": "2026-11-02",
      "url": "https://brightnews.online/articles/es/cuidarse-mutuamente-de-una-fundacion-tras-un-accidente-al-boxeo-sin-miedo-dg-20261102-lifestyle.html"
-    },
-    {
-     "id": "dg-20261101-lifestyle",
-     "titel": "La conexión es lo central: desde un banco en la parada de autobús hasta el amor en la vejez",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-01",
-     "url": "https://brightnews.online/articles/es/la-conexion-es-lo-central-desde-un-banco-en-la-parada-de-autobus-hasta-el-amor-e-dg-20261101-lifestyle.html"
     }
    ]
   }
