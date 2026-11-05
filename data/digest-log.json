@@ -1,5 +1,25 @@
 [
   {
+    "datum": "2026-11-05T19:41:38.696Z",
+    "dag": "2026-11-04",
+    "categorie": "Science",
+    "ids": [
+      "1793820590416jpudzw0hp",
+      "1793769512699wwo2nsoyi",
+      "1793907647245k7dr7jdjw"
+    ],
+    "prompthash": "fd561df11314",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 10277,
+    "woorden": {
+      "nl": 318,
+      "en": 322,
+      "de": 316,
+      "fr": 378,
+      "es": 375
+    }
+  },
+  {
     "datum": "2026-11-05T05:39:54.425Z",
     "dag": "2026-11-04",
     "categorie": "Lifestyle",

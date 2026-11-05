@@ -1,10 +1,18 @@
 {
- "gegenereerd": "2026-11-05T05:39:54.878Z",
+ "gegenereerd": "2026-11-05T19:41:39.191Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "1793907606024s2635r9hy",
+     "titel": "Grote Sterns Keren Terug naar Britse Zuidkust na Vogelgriep",
+     "teaser": "Dankzij gerichte natuurbescherming hebben grote sterns een kolonie aan de Engelse zuidkust heroverd, drie jaar nadat vogelgriep de populatie volledig had weggevaagd. Ook kleine sterns, bontbekplevieren, kokmeeuwen en scholeksters namen in aantal toe dankzij hetzelfde beschermingswerk van de Royal Society for the Protection of Birds (RSPB). In 2022 werden sandwich terns, kokmeeuwen en Mediterrane meeuwen zwaar getroffen door vogelgriep, wat...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/grote-sterns-keren-terug-naar-britse-zuidkust-na-vogelgriep-1793907606024s2635r9hy.html"
+    },
     {
      "id": "1793857142350b36d1cek1",
      "titel": "Gepersonaliseerde hersentherapie geeft 68 procent remissie bij PTSS",
@@ -36,17 +44,16 @@
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/nl/student-maakt-chocoladereep-van-volledig-britse-cacao-1793820590416jpudzw0hp.html"
-    },
-    {
-     "id": "1793769512699wwo2nsoyi",
-     "titel": "Gebleekt koraal heelt door aanraking",
-     "teaser": "Wetenschappers van Stanford hebben ontdekt dat gebleekt koraal kan herstellen door aanraking. Dit inzicht komt uit onderzoek naar koraalherstel en biedt mogelijk nieuwe aanknopingspunten voor het behoud van koraalriffen.",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/nl/gebleekt-koraal-heelt-door-aanraking-1793769512699wwo2nsoyi.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261104-science",
+     "titel": "Chocolade uit Reading, koraal dat geneest en gratis publiceren voor heel Europa",
+     "categorie": "Science",
+     "dag": "2026-11-04",
+     "url": "https://brightnews.online/articles/nl/chocolade-uit-reading-koraal-dat-geneest-en-gratis-publiceren-voor-heel-europa-dg-20261104-science.html"
+    },
     {
      "id": "dg-20261104-lifestyle",
      "titel": "Sleutels, puzzelstukjes en zoute golven: het goede nieuws van begin november",
@@ -67,18 +74,19 @@
      "categorie": "Environment",
      "dag": "2026-11-03",
      "url": "https://brightnews.online/articles/nl/terugkeer-van-dieren-en-licht-uit-voor-vogels-goed-nieuws-uit-de-natuur-dg-20261103-environment.html"
-    },
-    {
-     "id": "dg-20261102-lifestyle",
-     "titel": "Zorg voor elkaar: van een stichting na een ongeluk tot boksen zonder angst",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-02",
-     "url": "https://brightnews.online/articles/nl/zorg-voor-elkaar-van-een-stichting-na-een-ongeluk-tot-boksen-zonder-angst-dg-20261102-lifestyle.html"
     }
    ]
   },
   "en": {
    "top": [
+    {
+     "id": "1793907606024s2635r9hy",
+     "titel": "Great Terns Return to British South Coast After Bird Flu",
+     "teaser": "Thanks to targeted nature conservation, great terns have reclaimed a colony on England's south coast, three years after bird flu wiped out the population entirely. Little terns, ringed plovers, common terns and oystercatchers also increased in numbers thanks to the same conservation work by the Royal Society for the Protection of Birds (RSPB). In 2022, sandwich terns, common terns and...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/great-terns-return-to-british-south-coast-after-bird-flu-1793907606024s2635r9hy.html"
+    },
     {
      "id": "1793857142350b36d1cek1",
      "titel": "Personalized brain therapy achieves 68 percent remission in PTSD",
@@ -110,17 +118,16 @@
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/en/student-makes-chocolate-bar-from-entirely-british-cocoa-1793820590416jpudzw0hp.html"
-    },
-    {
-     "id": "1793769512699wwo2nsoyi",
-     "titel": "Bleached coral heals through touch",
-     "teaser": "Scientists at Stanford have discovered that bleached coral can recover through touch. This insight comes from research into coral restoration and may offer new avenues for preserving coral reefs.",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/en/bleached-coral-heals-through-touch-1793769512699wwo2nsoyi.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261104-science",
+     "titel": "Chocolate from Reading, healing coral and free publishing across Europe",
+     "categorie": "Science",
+     "dag": "2026-11-04",
+     "url": "https://brightnews.online/articles/en/chocolate-from-reading-healing-coral-and-free-publishing-across-europe-dg-20261104-science.html"
+    },
     {
      "id": "dg-20261104-lifestyle",
      "titel": "Keys, puzzle pieces and salty waves: the good news from early November",
@@ -141,18 +148,19 @@
      "categorie": "Environment",
      "dag": "2026-11-03",
      "url": "https://brightnews.online/articles/en/animals-return-and-lights-go-out-for-birds-good-news-from-nature-dg-20261103-environment.html"
-    },
-    {
-     "id": "dg-20261102-lifestyle",
-     "titel": "Looking out for each other: from a foundation born of tragedy to boxing without fear",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-02",
-     "url": "https://brightnews.online/articles/en/looking-out-for-each-other-from-a-foundation-born-of-tragedy-to-boxing-without-f-dg-20261102-lifestyle.html"
     }
    ]
   },
   "de": {
    "top": [
+    {
+     "id": "1793907606024s2635r9hy",
+     "titel": "Große Seeschwalben kehren an die britische Südküste zurück",
+     "teaser": "Dank gezieltem Naturschutz haben Große Seeschwalben eine Kolonie an der englischen Südküste zurückerobert, drei Jahre nachdem die Vogelgrippe die Population vollständig ausgelöscht hatte. Auch Zwergseeschwalben, Flussregenpfeifer, Lachseeschwalben und Austernfischer nahmen an Zahl zu dank desselben Schutzwerks der Royal Society for the Protection of Birds (RSPB). 2022 wurden Brandseeschwalben, Lachseeschwalben und Mittelmeermöwen schwer von der Vogelgrippe getroffen, was zum Verlassen ihrer...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/gro-e-seeschwalben-kehren-an-die-britische-sudkuste-zuruck-1793907606024s2635r9hy.html"
+    },
     {
      "id": "1793857142350b36d1cek1",
      "titel": "Personalisierte Hirntherapie führt zu 68 Prozent Remission bei PTBS",
@@ -184,17 +192,16 @@
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/de/studentin-stellt-schokoladenriegel-aus-britischem-kakao-her-1793820590416jpudzw0hp.html"
-    },
-    {
-     "id": "1793769512699wwo2nsoyi",
-     "titel": "Gebleichtes Korall heilt durch Berührung",
-     "teaser": "Wissenschaftler der Stanford haben entdeckt, dass gebleichtes Korall sich durch Berührung erholen kann. Diese Erkenntnis stammt aus der Forschung zur Korallenwiederherstellung und bietet möglicherweise neue Ansatzpunkte für den Schutz von Korallenriffen.",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/de/gebleichtes-korall-heilt-durch-beruhrung-1793769512699wwo2nsoyi.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261104-science",
+     "titel": "Schokolade aus Reading, heilende Korallen und kostenlose Veröffentlichungen für ganz Europa",
+     "categorie": "Science",
+     "dag": "2026-11-04",
+     "url": "https://brightnews.online/articles/de/schokolade-aus-reading-heilende-korallen-und-kostenlose-veroffentlichungen-fur-g-dg-20261104-science.html"
+    },
     {
      "id": "dg-20261104-lifestyle",
      "titel": "Schlüssel, Puzzleteile und salzige Wellen: die guten Nachrichten von Anfang November",
@@ -215,18 +222,19 @@
      "categorie": "Environment",
      "dag": "2026-11-03",
      "url": "https://brightnews.online/articles/de/ruckkehr-von-tieren-und-licht-aus-fur-vogel-gute-nachrichten-aus-der-natur-dg-20261103-environment.html"
-    },
-    {
-     "id": "dg-20261102-lifestyle",
-     "titel": "Füreinander sorgen: von einer Stiftung nach einem Unfall bis zum Boxen ohne Angst",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-02",
-     "url": "https://brightnews.online/articles/de/fureinander-sorgen-von-einer-stiftung-nach-einem-unfall-bis-zum-boxen-ohne-angst-dg-20261102-lifestyle.html"
     }
    ]
   },
   "fr": {
    "top": [
+    {
+     "id": "1793907606024s2635r9hy",
+     "titel": "Les grandes sternes reviennent sur la côte sud britannique après la grippe aviaire",
+     "teaser": "Grâce à des efforts ciblés de conservation de la nature, les grandes sternes ont repris une colonie sur la côte sud de l'Angleterre, trois ans après que la grippe aviaire ait décimé complètement la population. Les petites sternes, les pluviers à collier interrompu, les mouettes tridactyles et les huîtriers-pie ont également vu leurs effectifs augmenter grâce aux mêmes travaux de...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/les-grandes-sternes-reviennent-sur-la-cote-sud-britannique-apres-la-grippe-aviai-1793907606024s2635r9hy.html"
+    },
     {
      "id": "1793857142350b36d1cek1",
      "titel": "Une thérapie cérébrale personnalisée offre 68 % de rémission dans le TSPT",
@@ -258,17 +266,16 @@
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/fr/une-etudiante-fabrique-une-tablette-de-chocolat-a-partir-de-cacao-entierement-br-1793820590416jpudzw0hp.html"
-    },
-    {
-     "id": "1793769512699wwo2nsoyi",
-     "titel": "Le corail blanchi guérit au toucher",
-     "teaser": "Des chercheurs de Stanford ont découvert que le corail blanchi peut se rétablir au toucher. Cette découverte provient de recherches sur la restauration des coraux et offre de nouvelles pistes possibles pour la préservation des récifs coralliens.",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/fr/le-corail-blanchi-guerit-au-toucher-1793769512699wwo2nsoyi.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261104-science",
+     "titel": "Du chocolat de Reading, du corail qui guérit et la publication gratuite pour toute l'Europe",
+     "categorie": "Science",
+     "dag": "2026-11-04",
+     "url": "https://brightnews.online/articles/fr/du-chocolat-de-reading-du-corail-qui-guerit-et-la-publication-gratuite-pour-tout-dg-20261104-science.html"
+    },
     {
      "id": "dg-20261104-lifestyle",
      "titel": "Des clés, des pièces de puzzle et des vagues salées : les bonnes nouvelles de début novembre",
@@ -289,18 +296,19 @@
      "categorie": "Environment",
      "dag": "2026-11-03",
      "url": "https://brightnews.online/articles/fr/le-retour-des-animaux-et-les-lumieres-eteintes-pour-les-oiseaux-des-bonnes-nouve-dg-20261103-environment.html"
-    },
-    {
-     "id": "dg-20261102-lifestyle",
-     "titel": "Prendre soin les uns des autres : d'une fondation née d'un accident à la boxe sans peur",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-02",
-     "url": "https://brightnews.online/articles/fr/prendre-soin-les-uns-des-autres-d-une-fondation-nee-d-un-accident-a-la-boxe-sans-dg-20261102-lifestyle.html"
     }
    ]
   },
   "es": {
    "top": [
+    {
+     "id": "1793907606024s2635r9hy",
+     "titel": "Los charranes mayores regresan a la costa sur británica tras la gripe aviar",
+     "teaser": "Gracias a la conservación de la naturaleza dirigida, los charranes mayores han recuperado una colonia en la costa sur inglesa, tres años después de que la gripe aviar arrasara completamente la población. También los charranes menores, los chorlitejos patinegros, las gaviotas reidoras y los ostrero euroasiáticos aumentaron en número gracias al mismo trabajo de protección de la Royal Society for...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/los-charranes-mayores-regresan-a-la-costa-sur-britanica-tras-la-gripe-aviar-1793907606024s2635r9hy.html"
+    },
     {
      "id": "1793857142350b36d1cek1",
      "titel": "Terapia cerebral personalizada logra 68 por ciento de remisión en TEPT",
@@ -332,17 +340,16 @@
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/es/estudiante-elabora-una-tableta-de-chocolate-con-cacao-completamente-britanico-1793820590416jpudzw0hp.html"
-    },
-    {
-     "id": "1793769512699wwo2nsoyi",
-     "titel": "El coral blanqueado se recupera al tacto",
-     "teaser": "Científicos de Stanford han descubierto que el coral blanqueado puede recuperarse mediante el contacto físico. Este hallazgo surge de investigaciones sobre la restauración coralina y ofrece posibles nuevas perspectivas para la conservación de arrecifes de coral.",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/es/el-coral-blanqueado-se-recupera-al-tacto-1793769512699wwo2nsoyi.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261104-science",
+     "titel": "Chocolate de Reading, coral que sana y publicación gratuita para toda Europa",
+     "categorie": "Science",
+     "dag": "2026-11-04",
+     "url": "https://brightnews.online/articles/es/chocolate-de-reading-coral-que-sana-y-publicacion-gratuita-para-toda-europa-dg-20261104-science.html"
+    },
     {
      "id": "dg-20261104-lifestyle",
      "titel": "Llaves, piezas de puzle y olas saladas: las buenas noticias de principios de noviembre",
@@ -363,13 +370,6 @@
      "categorie": "Environment",
      "dag": "2026-11-03",
      "url": "https://brightnews.online/articles/es/el-regreso-de-los-animales-y-las-luces-apagadas-para-las-aves-buenas-noticias-de-dg-20261103-environment.html"
-    },
-    {
-     "id": "dg-20261102-lifestyle",
-     "titel": "Cuidarse mutuamente: de una fundación tras un accidente al boxeo sin miedo",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-02",
-     "url": "https://brightnews.online/articles/es/cuidarse-mutuamente-de-una-fundacion-tras-un-accidente-al-boxeo-sin-miedo-dg-20261102-lifestyle.html"
     }
    ]
   }

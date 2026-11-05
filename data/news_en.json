@@ -1,5 +1,62 @@
 [
   {
+    "id": "dg-20261104-science",
+    "type": "digest",
+    "digest_date": "2026-11-04",
+    "title": "Chocolate from Reading, healing coral and free publishing across Europe",
+    "summary": "Early November shows that science doesn't only happen in laboratories, but also comes to life in unexpected places. A student makes a chocolate bar from entirely British soil, researchers discover that damaged coral can heal through simple contact, and European scientists gain more room to share their work for free. Three different stories, but they all revolve around protecting and sharing something valuable. Maha Khan, a master's student in food security at the University of Reading, harvested cacao pods from her university's greenhouses and made, together with British milk and sugar, six bars called The Reading 100 [1]. The pods...",
+    "image_alt": "Chocolate from Reading, healing coral and free publishing across Europe",
+    "meta_description": "Chocolate from British cacao, healing coral and free publishing in Europe: the positive science news from early November 2026 in brief.",
+    "meta_keywords": "Science",
+    "link": "",
+    "source": "BrightNews",
+    "image": "/assets/fallback/science-2.jpg",
+    "date": "2026-11-05T19:41:38.695Z",
+    "category": "Science",
+    "refs": [
+      {
+        "id": "1793820590416jpudzw0hp",
+        "title": "Student makes chocolate bar from entirely British cocoa"
+      },
+      {
+        "id": "1793769512699wwo2nsoyi",
+        "title": "Bleached coral heals through touch"
+      },
+      {
+        "id": "1793907647245k7dr7jdjw",
+        "title": "Open Research Europe expands free publishing to 11 countries"
+      }
+    ]
+  },
+  {
+    "id": "1793907647245k7dr7jdjw",
+    "title": "Open Research Europe expands free publishing to 11 countries",
+    "summary": "Researchers from 11 European countries can now publish free of charge via Open Research Europe (ORE), the European Commission's open access platform. This follows an expansion of the initiative, giving more scientists in Europe access to publishing without having to pay publication fees.",
+    "image_alt": "Logo of Open Research Europe, the European Commission's open access publishing platform",
+    "meta_description": "Open Research Europe expands free publishing to researchers in 11 European countries without publication costs.",
+    "meta_keywords": "Open Research Europe, open access, European Commission, free publishing, scientific research",
+    "link": "https://www.openaccessgovernment.org/open-research-europe-expands-free-publishing-access-to-research-in-11-countries/216152/",
+    "source": "Openaccessgovernment.org",
+    "image": "/assets/fallback/science-4.jpg",
+    "date": "2026-11-05T19:40:49.552Z",
+    "category": "Science",
+    "score": 8
+  },
+  {
+    "id": "1793907606024s2635r9hy",
+    "title": "Great Terns Return to British South Coast After Bird Flu",
+    "summary": "Thanks to targeted nature conservation, great terns have reclaimed a colony on England's south coast, three years after bird flu wiped out the population entirely. Little terns, ringed plovers, common terns and oystercatchers also increased in numbers thanks to the same conservation work by the Royal Society for the Protection of Birds (RSPB). In 2022, sandwich terns, common terns and...",
+    "image_alt": "Great terns breed on the beach at Pagham Harbour on England's south coast",
+    "meta_description": "Great terns make spectacular recovery on England's south coast thanks to years of nature conservation following bird flu outbreak.",
+    "meta_keywords": "great tern, bird flu, RSPB, Pagham Harbour, nature conservation, Solent Seascape, seabirds, England",
+    "link": "https://www.goodnewsnetwork.org/miracle-recovery-sees-seabirds-reclaim-former-colony-after-avian-flu-wiped-them-out/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-David-Kinchin-Smith-RSPB.jpg",
+    "date": "2026-11-05T19:40:10.059Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
     "id": "dg-20261104-lifestyle",
     "type": "digest",
     "digest_date": "2026-11-04",
@@ -2453,39 +2510,6 @@
     "score": 9
   },
   {
-    "id": "dg-20260927-environment",
-    "type": "digest",
-    "digest_date": "2026-09-27",
-    "title": "A baby hippo, a cool park and tropical fruit: the environmental news of these days",
-    "summary": "These days, nature is showing us how animals, plants and people adapt to a changing world. From a vulnerable young animal to an entirely new urban park: good news is coming from every corner of the globe. Those who read the individual stories will discover a different kind of hope each time. In Kenya, the story of hippo Bumpy began dramatically. He was found as a baby next to his mother's body in the Great Rift Valley, following a difficult rescue operation in the water. At the Sheldrick Wildlife Trust, he received the care he needed: fed, swaddled and sleeping...",
-    "image_alt": "A baby hippo, a cool park and tropical fruit: the environmental news of these days",
-    "meta_description": "Baby hippo Bumpy, Europe's largest coastal park, protected langurs in Vietnam and tropical fruit in France: the positive environmental news of these days.",
-    "meta_keywords": "Environment",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abaa9c460f01fe16ba2ada7_6abaa9c2d563e627c8c8114e_bumpy-baby-hippo-rescue-orphaned-featured.webp",
-    "date": "2026-09-28T19:31:22.614Z",
-    "category": "Environment",
-    "refs": [
-      {
-        "id": "1790623636477f2bjec92n",
-        "title": "Orphaned hippo Bumpy gets second chance at Sheldrick Wildlife Trust"
-      },
-      {
-        "id": "1790623610181f2zlj49rp",
-        "title": "Ellinikon Park becomes Europe's largest coastal park"
-      },
-      {
-        "id": "1790623473034ngjkir1ra",
-        "title": "Vietnam protects last habitat of Delacour's langur"
-      },
-      {
-        "id": "1790623443776l2h758pev",
-        "title": "French farmers grow papayas and bananas thanks to warming"
-      }
-    ]
-  },
-  {
     "id": "1790623693825gvtmjwuzh",
     "title": "Young scientists shine at EUCYS in Kiel",
     "summary": "During the 37th European Union Contest for Young Scientists (EUCYS), which concluded on 27 September in Kiel, Germany, young researchers were honoured for their innovative work. Some 140 participants aged 14 to 20 from nearly 40 countries presented projects on topics including biology, mathematics, cancer research and medical technology. Four projects won the main prize of €7,000 each: PlantLeaf from...",
@@ -2524,20 +2548,6 @@
     "source": "GoodGoodGood.co",
     "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abaa9c460f01fe16ba2ada7_6abaa9c2d563e627c8c8114e_bumpy-baby-hippo-rescue-orphaned-featured.webp",
     "date": "2026-09-28T19:27:17.583Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1790623610181f2zlj49rp",
-    "title": "Ellinikon Park becomes Europe's largest coastal park",
-    "summary": "On the grounds of Athens' former airport in the southern suburbs, The Ellinikon Park is rising: two million square meters of green space that will become Europe's largest coastal urban park (200 hectares). The park is designed to actively lower ambient temperature, processes 100 percent of its own rainwater on-site, and maintains more than 520 plant species through sensor-controlled irrigation....",
-    "image_alt": "Design of The Ellinikon Park on the grounds of Athens' former airport",
-    "meta_description": "Former Athens airport becomes Ellinikon Park: Europe's largest coastal park with climate design and 520 plant species.",
-    "meta_keywords": "Ellinikon Park, Athens, urban park, climate design, cooling, airport, green space, Europe",
-    "link": "https://www.optimistdaily.com/2026/09/athens-former-airport-is-becoming-europes-largest-coastal-urban-park/",
-    "source": "OptimistDaily.com",
-    "image": "https://www.optimistdaily.com/wp-content/uploads/Coastal-Front_1-1024x756.jpg",
-    "date": "2026-09-28T19:26:51.510Z",
     "category": "Environment",
     "score": 9
   }

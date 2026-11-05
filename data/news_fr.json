@@ -1,5 +1,62 @@
 [
   {
+    "id": "dg-20261104-science",
+    "type": "digest",
+    "digest_date": "2026-11-04",
+    "title": "Du chocolat de Reading, du corail qui guérit et la publication gratuite pour toute l'Europe",
+    "summary": "Début novembre montre que la science ne se fait pas seulement dans les laboratoires, mais prend aussi vie dans des endroits inattendus. Une étudiante fabrique une tablette de chocolat entièrement issue du sol britannique, des chercheurs découvrent que le corail endommagé peut se régénérer par simple contact, et les scientifiques européens disposent de plus d'espace pour partager gratuitement leurs travaux. Trois histoires différentes, mais toutes portent sur la protection et le partage de quelque chose de précieux. Maha Khan, étudiante en master en sécurité alimentaire à l'University of Reading, a récolté des fèves de cacao dans les serres de son...",
+    "image_alt": "Du chocolat de Reading, du corail qui guérit et la publication gratuite pour toute l'Europe",
+    "meta_description": "Du chocolat issu du cacao britannique, du corail qui guérit et la publication gratuite en Europe : les bonnes nouvelles scientifiques de début novembre 202",
+    "meta_keywords": "Science",
+    "link": "",
+    "source": "BrightNews",
+    "image": "/assets/fallback/science-2.jpg",
+    "date": "2026-11-05T19:41:38.695Z",
+    "category": "Science",
+    "refs": [
+      {
+        "id": "1793820590416jpudzw0hp",
+        "title": "Une étudiante fabrique une tablette de chocolat à partir de cacao entièrement britannique"
+      },
+      {
+        "id": "1793769512699wwo2nsoyi",
+        "title": "Le corail blanchi guérit au toucher"
+      },
+      {
+        "id": "1793907647245k7dr7jdjw",
+        "title": "Open Research Europe étend la publication gratuite à 11 pays"
+      }
+    ]
+  },
+  {
+    "id": "1793907647245k7dr7jdjw",
+    "title": "Open Research Europe étend la publication gratuite à 11 pays",
+    "summary": "Les chercheurs de 11 pays européens peuvent désormais publier gratuitement via Open Research Europe (ORE), la plateforme d'accès ouvert de la Commission européenne. Cette extension de l'initiative permet à davantage de scientifiques en Europe d'accéder à la publication sans avoir à supporter de frais de publication.",
+    "image_alt": "Logo d'Open Research Europe, la plateforme de publication en accès ouvert de la Commission européenne",
+    "meta_description": "Open Research Europe étend la publication gratuite aux chercheurs de 11 pays européens sans frais de publication.",
+    "meta_keywords": "Open Research Europe, accès ouvert, Commission européenne, publication gratuite, recherche scientifique",
+    "link": "https://www.openaccessgovernment.org/open-research-europe-expands-free-publishing-access-to-research-in-11-countries/216152/",
+    "source": "Openaccessgovernment.org",
+    "image": "/assets/fallback/science-4.jpg",
+    "date": "2026-11-05T19:40:49.552Z",
+    "category": "Science",
+    "score": 8
+  },
+  {
+    "id": "1793907606024s2635r9hy",
+    "title": "Les grandes sternes reviennent sur la côte sud britannique après la grippe aviaire",
+    "summary": "Grâce à des efforts ciblés de conservation de la nature, les grandes sternes ont repris une colonie sur la côte sud de l'Angleterre, trois ans après que la grippe aviaire ait décimé complètement la population. Les petites sternes, les pluviers à collier interrompu, les mouettes tridactyles et les huîtriers-pie ont également vu leurs effectifs augmenter grâce aux mêmes travaux de...",
+    "image_alt": "Les grandes sternes se reproduisent sur la plage à Pagham Harbour sur la côte sud de l'Angleterre",
+    "meta_description": "Les grandes sternes se rétablissent spectaculairement sur la côte sud de l'Angleterre grâce à des années de conservation après l'épidémie de grippe aviaire.",
+    "meta_keywords": "grande sterne, grippe aviaire, RSPB, Pagham Harbour, conservation de la nature, Solent Seascape, oiseaux marins, Angleterre",
+    "link": "https://www.goodnewsnetwork.org/miracle-recovery-sees-seabirds-reclaim-former-colony-after-avian-flu-wiped-them-out/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-David-Kinchin-Smith-RSPB.jpg",
+    "date": "2026-11-05T19:40:10.059Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
     "id": "dg-20261104-lifestyle",
     "type": "digest",
     "digest_date": "2026-11-04",
@@ -2453,39 +2510,6 @@
     "score": 9
   },
   {
-    "id": "dg-20260927-environment",
-    "type": "digest",
-    "digest_date": "2026-09-27",
-    "title": "Un bébé hippopotame, un parc rafraîchissant et des fruits tropicaux : les bonnes nouvelles environnementales de ces jours-ci",
-    "summary": "Ces jours-ci, la nature montre comment les animaux, les plantes et les humains s'adaptent à un monde en mutation. D'un jeune animal fragile à un tout nouveau parc urbain : les bonnes nouvelles viennent de tous les coins de la planète. Qui lit les différentes dépêches découvre à chaque fois une forme d'espoir différente. Au Kenya, l'histoire de l'hippopotame Bumpy a commencé de manière dramatique. Il a été retrouvé bébé à côté du corps de sa mère dans la Great Rift Valley, après une opération de sauvetage difficile dans l'eau. À la Sheldrick Wildlife Trust, il a reçu les soins...",
-    "image_alt": "Un bébé hippopotame, un parc rafraîchissant et des fruits tropicaux : les bonnes nouvelles environnementales de ces jours-ci",
-    "meta_description": "Bébé hippopotame Bumpy, le plus grand parc côtier d'Europe, langurs protégés au Vietnam et fruits tropicaux en France : les bonnes nouvelles environnementa",
-    "meta_keywords": "Environment",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abaa9c460f01fe16ba2ada7_6abaa9c2d563e627c8c8114e_bumpy-baby-hippo-rescue-orphaned-featured.webp",
-    "date": "2026-09-28T19:31:22.614Z",
-    "category": "Environment",
-    "refs": [
-      {
-        "id": "1790623636477f2bjec92n",
-        "title": "L'hippopotame orphelin Bumpy obtient une seconde chance auprès de Sheldrick Wildlife Trust"
-      },
-      {
-        "id": "1790623610181f2zlj49rp",
-        "title": "Ellinikon Park devient le plus grand parc côtier d'Europe"
-      },
-      {
-        "id": "1790623473034ngjkir1ra",
-        "title": "Le Vietnam protège le dernier habitat du langur de Delacour"
-      },
-      {
-        "id": "1790623443776l2h758pev",
-        "title": "Des agriculteurs français cultivent des papayes et des bananes grâce au réchauffement"
-      }
-    ]
-  },
-  {
     "id": "1790623693825gvtmjwuzh",
     "title": "De jeunes scientifiques brillent à l'EUCYS à Kiel",
     "summary": "Lors du 37e European Union Contest for Young Scientists (EUCYS), qui s'est déroulé le 27 septembre à Kiel, en Allemagne, de jeunes chercheurs ont été honorés pour leurs travaux innovants. Quelque 140 participants âgés de 14 à 20 ans en provenance de près de 40 pays ont présenté des projets portant notamment sur la biologie, les mathématiques, la recherche sur...",
@@ -2524,20 +2548,6 @@
     "source": "GoodGoodGood.co",
     "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abaa9c460f01fe16ba2ada7_6abaa9c2d563e627c8c8114e_bumpy-baby-hippo-rescue-orphaned-featured.webp",
     "date": "2026-09-28T19:27:17.583Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1790623610181f2zlj49rp",
-    "title": "Ellinikon Park devient le plus grand parc côtier d'Europe",
-    "summary": "Sur le site de l'ancien aéroport d'Athènes, dans les banlieues sud, s'élève The Ellinikon Park : deux millions de mètres carrés de verdure qui deviendront le plus grand parc urbain côtier d'Europe (200 hectares). Le parc a été conçu pour réduire activement la température ambiante, traite 100 % de ses eaux pluviales sur place et maintient en vie plus de...",
-    "image_alt": "Conception de The Ellinikon Park sur le site de l'ancien aéroport d'Athènes",
-    "meta_description": "L'ancien aéroport d'Athènes devient Ellinikon Park : le plus grand parc côtier d'Europe avec conception climatique et 520 espèces végétales.",
-    "meta_keywords": "Ellinikon Park, Athènes, parc urbain, conception climatique, refroidissement, aéroport, espace vert, Europe",
-    "link": "https://www.optimistdaily.com/2026/09/athens-former-airport-is-becoming-europes-largest-coastal-urban-park/",
-    "source": "OptimistDaily.com",
-    "image": "https://www.optimistdaily.com/wp-content/uploads/Coastal-Front_1-1024x756.jpg",
-    "date": "2026-09-28T19:26:51.510Z",
     "category": "Environment",
     "score": 9
   }
