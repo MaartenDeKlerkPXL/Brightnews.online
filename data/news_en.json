@@ -1,5 +1,76 @@
 [
   {
+    "id": "dg-20261104-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-11-04",
+    "title": "Keys, puzzle pieces and salty waves: the good news from early November",
+    "summary": "These days show how people build things in very different ways: a trade, a bond with family, or a record at sea. From a school workshop in Houston to a swimming journey along the entire California coast, it's always about perseverance and doing something for another person. In Houston's Fifth Ward, high school students have recently been running their own auto repair shop. The Barbara Jordan Career Center, which serves 12 school campuses and more than 1,200 students, wants to give young people a chance at work that really pays. Every Friday, trained students perform oil changes, tire replacements and...",
+    "image_alt": "Keys, puzzle pieces and salty waves: the good news from early November",
+    "meta_description": "From a student workshop in Houston to a record-breaking swim along California: early November's positive lifestyle news in a nutshell.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/YouTube-Screengrab-Houston-Independent-School-District.jpg",
+    "date": "2026-11-05T05:39:54.425Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "17938206195450tb2nv2m9",
+        "title": "Students open auto repair shop to the public in Houston"
+      },
+      {
+        "id": "1793857093984y8jny2obn",
+        "title": "Jigsaw puzzle of castle brings granddaughter closer to taciturn grandfather"
+      },
+      {
+        "id": "1793820648815qj0f78wz7",
+        "title": "Catherine Breed becomes first to swim entire California coast"
+      }
+    ]
+  },
+  {
+    "id": "1793857142350b36d1cek1",
+    "title": "Personalized brain therapy achieves 68 percent remission in PTSD",
+    "summary": "A personalized form of brain therapy results in remission for 68 percent of people with PTSD. This figure is cited in a report from The Optimist Daily, though further details about the precise mechanism, study design, or researchers involved are lacking. The news is presented as a positive development in mental health care and technology.",
+    "image_alt": "Illustration of brain therapy in the treatment of PTSD",
+    "meta_description": "Personalized brain therapy leads to 68% remission in people with PTSD, reports The Optimist Daily.",
+    "meta_keywords": "PTSD, brain therapy, remission, mental health, treatment",
+    "link": "https://www.optimistdaily.com/2026/11/personalized-brain-therapy-hits-68-percent-remission-for-ptsd/",
+    "source": "OptimistDaily.com",
+    "image": "/assets/fallback/health-5.jpg",
+    "date": "2026-11-05T05:39:03.608Z",
+    "category": "Health",
+    "score": 9
+  },
+  {
+    "id": "1793857124364imh34spkm",
+    "title": "Brazil's Pantanal National Park Significantly Expanded",
+    "summary": "Brazilian environmental authorities have expanded the Pantanal Matogrossense National Park by more than 25%: from 523 square miles to 185 additional square miles, roughly equivalent to adding the American Redwoods National Park. The expansion protects the Pantanal, the world's largest flooded grasslands and one of the richest and most vulnerable biomes on Earth. It is home to 463 bird species,...",
+    "image_alt": "Flooded grassland of the Pantanal with wildlife in Brazil",
+    "meta_description": "Brazil expands the Pantanal Matogrossense National Park by 25% to protect vulnerable biodiversity.",
+    "meta_keywords": "Pantanal, Brazil, national park, biodiversity, ICMBio, nature conservation, jaguars, wetlands",
+    "link": "https://www.goodnewsnetwork.org/brazil-expands-protected-area-for-one-of-the-richest-and-most-sensitive-biomes-on-the-planet/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/The-Pantanal-landscape-credit-Filipe-Frazao-CC-3.0-BY-SA-1.jpg",
+    "date": "2026-11-05T05:38:45.528Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1793857093984y8jny2obn",
+    "title": "Jigsaw puzzle of castle brings granddaughter closer to taciturn grandfather",
+    "summary": "Filmmaker Ora DeKornfeld made the documentary The Grandfather Puzzle to get closer to her 99-year-old grandfather, who never wanted to talk about his life in Hungary as a baron. She photographed the castle where he grew up and had a jigsaw puzzle made from it. During her visit, she was welcomed in the small town as a returning baroness, but...",
+    "image_alt": "A jigsaw puzzle featuring a photograph of a Hungarian castle, made for a documentary about a grandfather and his granddaughter",
+    "meta_description": "Documentary The Grandfather Puzzle: a granddaughter uses a jigsaw puzzle to get closer to her taciturn grandfather.",
+    "meta_keywords": "The Grandfather Puzzle, Ora DeKornfeld, JoyDrops, documentary, Good News Network, Hungary, family history",
+    "link": "https://www.goodnewsnetwork.org/the-grandfather-puzzle-pieces-together-a-family-history-one-man-wouldnt-talk-about/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Screenshot-2026-11-03-at-6.05.22-PM.png",
+    "date": "2026-11-05T05:38:16.774Z",
+    "category": "Lifestyle",
+    "score": 8
+  },
+  {
     "id": "1793820648815qj0f78wz7",
     "title": "Catherine Breed becomes first to swim entire California coast",
     "summary": "Long-distance swimmer Catherine Breed is the first person to swim the entire California coastline: 900 miles in 111 days. She started on July 1 at the Oregon-California border and completed the journey on October 19, passing the Mexico border roughly 3 miles offshore to avoid pollution from the Tijuana River. Along the way, she faced eight shark encounters, severe storms...",
@@ -2415,68 +2486,6 @@
     ]
   },
   {
-    "id": "dg-20260927-lifestyle",
-    "type": "digest",
-    "digest_date": "2026-09-27",
-    "title": "From prison cells to school desks: the good news of these days",
-    "summary": "This week shows that good intentions lead to results in very different places: in a courtroom, in a classroom and in a clothing factory. From Texas to Bristol, from the Bronx to Ghana: people are taking steps that genuinely improve the lives of others. In Texas, formerly incarcerated women won a long-fought battle. The group Lioness Justice Impacted Women's Alliance spent years collecting letters from prisoners about the heat in Texan cells. A federal judge has now ruled in their favour: by the end of 2029, every prison in the state must have air conditioning. Currently, fewer than 40 per...",
-    "image_alt": "From prison cells to school desks: the good news of these days",
-    "meta_description": "From air conditioning in Texan cells to school fees in Ghana and fair fashion from Bristol: the good news of these days in a nutshell.",
-    "meta_keywords": "Lifestyle",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab985d54c7299bd38813ae1_2741910254-921a85b985-b-featured.webp",
-    "date": "2026-09-28T19:30:19.311Z",
-    "category": "Lifestyle",
-    "refs": [
-      {
-        "id": "17906236600718klq45n91",
-        "title": "Women's group Lioness wins lawsuit for air conditioning in Texas prisons"
-      },
-      {
-        "id": "1790623526076r2rxyrso1",
-        "title": "18-year-old Bronx teen sponsors schoolchildren in Ghana"
-      },
-      {
-        "id": "1790623414220uasnkeihr",
-        "title": "Ethical fashion brand Yes Friends secures investment from Deborah Meaden"
-      }
-    ]
-  },
-  {
-    "id": "dg-20260927-science",
-    "type": "digest",
-    "digest_date": "2026-09-27",
-    "title": "Saving, preserving and protecting: this week's science news",
-    "summary": "These days show how science and perseverance can save things that would otherwise be lost. From ancient treasures to bees, and from peace to young talent: everywhere people are stepping up to keep something precious safe. A new study reveals how archaeologists in Syria risked their lives to rescue some 30,000 irreplaceable pieces from the Deir ez-Zor Museum, just before ISIS threatened to take the city [1]. The collection contained artefacts from ancient sites such as Halaf, Dura-Europos and Mari, and the rescue operation went through a narrow, dangerous passage to the airport. Under the leadership of Maamoun Abdulkarim, ultimately...",
-    "image_alt": "Saving, preserving and protecting: this week's science news",
-    "meta_description": "From rescued heritage in Syria to bee-friendly scents and young talent in Kiel: this week's science news in brief.",
-    "meta_keywords": "Science",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Evacuation-of-art-crates-from-Deir-ez-Zor-Museum-during-Syria-war-SWNS-cropped.jpeg",
-    "date": "2026-09-28T19:29:11.242Z",
-    "category": "Science",
-    "refs": [
-      {
-        "id": "1790568932914excz2ptad",
-        "title": "Archaeologists rescue 30,000 treasures from Deir ez-Zor Museum before ISIS"
-      },
-      {
-        "id": "1790568906594wygath1u8",
-        "title": "Researchers Find Scents That Keep Honeybees Away From Pesticides"
-      },
-      {
-        "id": "1790623693825gvtmjwuzh",
-        "title": "Young scientists shine at EUCYS in Kiel"
-      },
-      {
-        "id": "17906235003386r8mn1zox",
-        "title": "Clay tablet with world's oldest peace treaty discovered"
-      }
-    ]
-  },
-  {
     "id": "1790623693825gvtmjwuzh",
     "title": "Young scientists shine at EUCYS in Kiel",
     "summary": "During the 37th European Union Contest for Young Scientists (EUCYS), which concluded on 27 September in Kiel, Germany, young researchers were honoured for their innovative work. Some 140 participants aged 14 to 20 from nearly 40 countries presented projects on topics including biology, mathematics, cancer research and medical technology. Four projects won the main prize of €7,000 each: PlantLeaf from...",
@@ -2529,48 +2538,6 @@
     "source": "OptimistDaily.com",
     "image": "https://www.optimistdaily.com/wp-content/uploads/Coastal-Front_1-1024x756.jpg",
     "date": "2026-09-28T19:26:51.510Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1790623526076r2rxyrso1",
-    "title": "18-year-old Bronx teen sponsors schoolchildren in Ghana",
-    "summary": "Max Owobu, an 18-year-old student from the Bronx, founded the Yenko Foundation, a nonprofit organization that finances schooling for children in Ghana. Owobu, whose father grew up in Ghana, has spent summers in the country since age fifteen and witnessed peers working instead of attending school. Using his own allowance, he first paid for the schooling of one child, Matthew,...",
-    "image_alt": "18-year-old Max Owobu from the Bronx who sponsors schoolchildren in Ghana through his Yenko Foundation",
-    "meta_description": "18-year-old Max Owobu from the Bronx establishes Yenko Foundation to finance schooling for children in Ghana.",
-    "meta_keywords": "Max Owobu, Yenko Foundation, Ghana, Bronx, nonprofit, school sponsorship, Calvary Methodist, education Ghana",
-    "link": "https://www.goodnewsnetwork.org/18-year-old-from-the-bronx-starts-nonprofit-to-sponsor-school-children-in-ghana/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Max-Owobu-pictured-at-center-in-white-smiles-for-the-camera-surrounded-by-children-from-Calvary-Methodist-Elementary-School-credit-supplied-to-GNN.jpg",
-    "date": "2026-09-28T19:25:27.486Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "17906235003386r8mn1zox",
-    "title": "Clay tablet with world's oldest peace treaty discovered",
-    "summary": "Archaeologists have found a clay tablet in Turkey containing a fragment of the Treaty of Kadesh, the oldest known peace treaty in the world. The tablet, featuring articles 12 through 20, was excavated last year at the Hittite royal palace in Buyukkale, in the ancient Hittite capital Hattusa. Around 1300 BC, the armies of Pharaoh Ramses II and Hittite King...",
-    "image_alt": "Clay tablet with cuneiform script of the Treaty of Kadesh, found in Hattusa, Turkey",
-    "meta_description": "Archaeologists find clay tablet with the Treaty of Kadesh, the world's oldest peace treaty, in Hattusa, Turkey.",
-    "meta_keywords": "Treaty of Kadesh, clay tablet, Hattusa, Hittites, Ramses II, oldest peace treaty, cuneiform, Turkey, archaeology",
-    "link": "https://www.goodnewsnetwork.org/researchers-unearth-a-clay-tablet-inscribed-with-the-worlds-oldest-peace-treaty/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Turkiyes-ministry-of-culture-and-tourism.jpg",
-    "date": "2026-09-28T19:25:02.009Z",
-    "category": "Science",
-    "score": 8
-  },
-  {
-    "id": "1790623473034ngjkir1ra",
-    "title": "Vietnam protects last habitat of Delacour's langur",
-    "summary": "Vietnam has established a specially protected nature reserve for the Delacour's langur, one of the world's most endangered primates. Of this species, named after the French biologist who discovered it, only around 17 populations remain, totalling approximately 250 animals. Ninh Binh province has created the Kim Bang Delacour's Langur Habitat Conservation Area, covering 3,182 hectares spread across the districts of...",
-    "image_alt": "Delacour's langur in the forested limestone landscape of Ninh Binh, Vietnam",
-    "meta_description": "Vietnam establishes protected nature reserve for the Delacour's langur, one of the world's most endangered primate species.",
-    "meta_keywords": "Delacour's langur, Vietnam, Ninh Binh, nature conservation, endangered species, Tam Chuc, biodiversity",
-    "link": "https://www.goodnewsnetwork.org/vietnam-swiftly-protects-forests-containing-the-last-of-the-worlds-most-endangered-monkey/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Delacours_langur_Trachypithecus_delacouri_Van_Long_2.jpg",
-    "date": "2026-09-28T19:24:35.075Z",
     "category": "Environment",
     "score": 9
   }

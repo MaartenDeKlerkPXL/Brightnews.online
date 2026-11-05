@@ -1,5 +1,76 @@
 [
   {
+    "id": "dg-20261104-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-11-04",
+    "title": "Llaves, piezas de puzle y olas saladas: las buenas noticias de principios de noviembre",
+    "summary": "Estos días muestran cómo las personas construyen algo de maneras muy diferentes: un oficio, una relación con la familia, o un récord en el mar. Desde un taller escolar en Houston hasta una travesía a nado por toda la costa de California, siempre se trata de perseverar y hacer algo por otro. En la Fifth Ward de Houston, estudiantes de secundaria dirigen desde hace poco su propio taller de automóviles. El Barbara Jordan Career Center, que atiende a 12 campus escolares y más de 1.200 alumnos, quiere dar a los jóvenes la oportunidad de un trabajo que realmente valga la...",
+    "image_alt": "Llaves, piezas de puzle y olas saladas: las buenas noticias de principios de noviembre",
+    "meta_description": "Desde un taller escolar en Houston hasta una travesía a nado récord por California: las buenas noticias de estilo de vida de principios de noviembre.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/YouTube-Screengrab-Houston-Independent-School-District.jpg",
+    "date": "2026-11-05T05:39:54.425Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "17938206195450tb2nv2m9",
+        "title": "Estudiantes abren taller de automóviles al público en Houston"
+      },
+      {
+        "id": "1793857093984y8jny2obn",
+        "title": "Un puzle del castillo acerca a la nieta con su abuelo silencioso"
+      },
+      {
+        "id": "1793820648815qj0f78wz7",
+        "title": "Catherine Breed nada por primera vez toda la costa de California"
+      }
+    ]
+  },
+  {
+    "id": "1793857142350b36d1cek1",
+    "title": "Terapia cerebral personalizada logra 68 por ciento de remisión en TEPT",
+    "summary": "Una forma personalizada de terapia cerebral logra remisión en el 68 por ciento de las personas con TEPT. Este porcentaje se menciona en un artículo de The Optimist Daily, aunque faltan más detalles sobre el funcionamiento exacto, el diseño del estudio o los investigadores involucrados. La noticia se presenta como un desarrollo positivo en el campo de la salud mental...",
+    "image_alt": "Ilustración de terapia cerebral en el tratamiento del TEPT",
+    "meta_description": "Terapia cerebral personalizada logra 68% de remisión en personas con TEPT, según The Optimist Daily.",
+    "meta_keywords": "TEPT, terapia cerebral, remisión, salud mental, tratamiento",
+    "link": "https://www.optimistdaily.com/2026/11/personalized-brain-therapy-hits-68-percent-remission-for-ptsd/",
+    "source": "OptimistDaily.com",
+    "image": "/assets/fallback/health-5.jpg",
+    "date": "2026-11-05T05:39:03.608Z",
+    "category": "Health",
+    "score": 9
+  },
+  {
+    "id": "1793857124364imh34spkm",
+    "title": "Parque Nacional Pantanal de Brasil se expande significativamente",
+    "summary": "Las autoridades ambientales brasileñas han ampliado el Parque Nacional Pantanal Matogrossense en más del 25%: de 523 millas cuadradas a 185 millas cuadradas adicionales, aproximadamente equivalente a añadir el Redwoods National Park estadounidense. La expansión protege el Pantanal, los humedales más grandes del mundo y uno de los biomas más ricos y vulnerables del planeta. Aquí viven 463 especies de...",
+    "image_alt": "Humedal inundado del Pantanal con fauna silvestre en Brasil",
+    "meta_description": "Brasil amplía el Parque Nacional Pantanal Matogrossense un 25% para proteger la biodiversidad vulnerable.",
+    "meta_keywords": "Pantanal, Brasil, parque nacional, biodiversidad, ICMBio, conservación de la naturaleza, jaguares, humedales",
+    "link": "https://www.goodnewsnetwork.org/brazil-expands-protected-area-for-one-of-the-richest-and-most-sensitive-biomes-on-the-planet/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/The-Pantanal-landscape-credit-Filipe-Frazao-CC-3.0-BY-SA-1.jpg",
+    "date": "2026-11-05T05:38:45.528Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1793857093984y8jny2obn",
+    "title": "Un puzle del castillo acerca a la nieta con su abuelo silencioso",
+    "summary": "La cineasta Ora DeKornfeld realizó el documental The Grandfather Puzzle para acercarse a su abuelo de 99 años, quien nunca quiso hablar sobre su vida en Hungría como barón. Fotografió el castillo donde él creció e hizo que le confeccionaran un puzle con esa imagen. Durante su visita, fue recibida en el pueblo como una baronesa que regresaba, pero nadie...",
+    "image_alt": "Un puzle con la fotografía de un castillo húngaro, realizado para un documental sobre un abuelo y su nieta",
+    "meta_description": "Documental The Grandfather Puzzle: una nieta utiliza un puzle para acercarse a su abuelo silencioso.",
+    "meta_keywords": "The Grandfather Puzzle, Ora DeKornfeld, JoyDrops, documental, Good News Network, Hungría, historia familiar",
+    "link": "https://www.goodnewsnetwork.org/the-grandfather-puzzle-pieces-together-a-family-history-one-man-wouldnt-talk-about/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Screenshot-2026-11-03-at-6.05.22-PM.png",
+    "date": "2026-11-05T05:38:16.774Z",
+    "category": "Lifestyle",
+    "score": 8
+  },
+  {
     "id": "1793820648815qj0f78wz7",
     "title": "Catherine Breed nada por primera vez toda la costa de California",
     "summary": "La nadadora de larga distancia Catherine Breed es la primera persona que ha recorrido a nado toda la línea costera de California: 900 millas en 111 días. Comenzó el 1 de julio en la frontera entre Oregón y California y completó el viaje el 19 de octubre, cruzando la frontera con México a más de 3 millas de la costa...",
@@ -2415,68 +2486,6 @@
     ]
   },
   {
-    "id": "dg-20260927-lifestyle",
-    "type": "digest",
-    "digest_date": "2026-09-27",
-    "title": "De celdas de prisión a pupitres escolares: las buenas noticias de estos días",
-    "summary": "Esta semana demuestra que las buenas intenciones generan resultados en lugares muy distintos: en una sala de justicia, en un aula escolar y en una fábrica de ropa. De Texas a Bristol, del Bronx a Ghana: personas dan pasos que realmente mejoran la vida de otros. En Texas, mujeres excarceladas ganaron una larga batalla. El grupo Lioness Justice Impacted Women's Alliance recopiló durante años cartas de prisioneras sobre el calor en las celdas de Texas. Un juez federal les dio la razón: antes de finales de 2029, todas las prisiones del estado deben tener aire acondicionado. Actualmente, menos del 40...",
-    "image_alt": "De celdas de prisión a pupitres escolares: las buenas noticias de estos días",
-    "meta_description": "Del aire acondicionado en celdas de Texas al dinero para la escuela en Ghana y la moda justa de Bristol: las buenas noticias de estos días resumidas.",
-    "meta_keywords": "Lifestyle",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab985d54c7299bd38813ae1_2741910254-921a85b985-b-featured.webp",
-    "date": "2026-09-28T19:30:19.311Z",
-    "category": "Lifestyle",
-    "refs": [
-      {
-        "id": "17906236600718klq45n91",
-        "title": "Grupo de mujeres Lioness gana juicio por aire acondicionado en cárceles de Texas"
-      },
-      {
-        "id": "1790623526076r2rxyrso1",
-        "title": "Adolescente del Bronx de 18 años patrocina la educación de niños en Ghana"
-      },
-      {
-        "id": "1790623414220uasnkeihr",
-        "title": "La marca de moda ética Yes Friends recibe inversión de Deborah Meaden"
-      }
-    ]
-  },
-  {
-    "id": "dg-20260927-science",
-    "type": "digest",
-    "digest_date": "2026-09-27",
-    "title": "Salvar, conservar y proteger: las noticias científicas de esta semana",
-    "summary": "Estos días demuestran cómo la ciencia y la perseverancia pueden salvar cosas que de otro modo se perderían. Desde tesoros antiguos hasta abejas, y desde la paz hasta el talento joven: por todas partes aparecen personas que quieren poner a salvo algo valioso. Así lo demuestra un nuevo estudio sobre cómo arqueólogos en Siria arriesgaron sus vidas para rescatar unos 30.000 piezas insustituibles del Museo de Deir ez-Zor, justo antes de que ISIS amenazara con tomar la ciudad [1]. La colección contenía piezas de antiguos yacimientos como Halaf, Dura-Europos y Mari, y la operación de rescate se realizó a través...",
-    "image_alt": "Salvar, conservar y proteger: las noticias científicas de esta semana",
-    "meta_description": "Del patrimonio rescatado en Siria hasta aromas seguros para abejas y talento joven en Kiel: las noticias científicas de estos días en resumen.",
-    "meta_keywords": "Science",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Evacuation-of-art-crates-from-Deir-ez-Zor-Museum-during-Syria-war-SWNS-cropped.jpeg",
-    "date": "2026-09-28T19:29:11.242Z",
-    "category": "Science",
-    "refs": [
-      {
-        "id": "1790568932914excz2ptad",
-        "title": "Arqueólogos rescatan 30.000 tesoros del Museo de Deir ez-Zor antes de ISIS"
-      },
-      {
-        "id": "1790568906594wygath1u8",
-        "title": "Investigadores encuentran aromas que alejan a las abejas melíferas de los pesticidas"
-      },
-      {
-        "id": "1790623693825gvtmjwuzh",
-        "title": "Jóvenes científicos brillan en EUCYS en Kiel"
-      },
-      {
-        "id": "17906235003386r8mn1zox",
-        "title": "Descubren tablilla de arcilla con el tratado de paz más antiguo del mundo"
-      }
-    ]
-  },
-  {
     "id": "1790623693825gvtmjwuzh",
     "title": "Jóvenes científicos brillan en EUCYS en Kiel",
     "summary": "Durante la 37ª edición del European Union Contest for Young Scientists (EUCYS), que concluyó el 27 de septiembre en Kiel, Alemania, se han honrado a jóvenes investigadores por su trabajo innovador. Aproximadamente 140 participantes de entre 14 y 20 años procedentes de casi 40 países presentaron proyectos sobre biología, matemáticas, investigación del cáncer y tecnología médica, entre otros temas. Cuatro...",
@@ -2529,48 +2538,6 @@
     "source": "OptimistDaily.com",
     "image": "https://www.optimistdaily.com/wp-content/uploads/Coastal-Front_1-1024x756.jpg",
     "date": "2026-09-28T19:26:51.511Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1790623526076r2rxyrso1",
-    "title": "Adolescente del Bronx de 18 años patrocina la educación de niños en Ghana",
-    "summary": "Max Owobu, un estudiante de 18 años del Bronx, fundó la Yenko Foundation, una organización sin fines de lucro que financia la educación de niños en Ghana. Owobu, cuyo padre creció en Ghana, ha pasado veranos en el país desde los quince años y vio a compañeros de su edad trabajar en lugar de asistir a la escuela. Con dinero...",
-    "image_alt": "Max Owobu, adolescente de 18 años del Bronx, que patrocina la educación de niños en Ghana a través de su fundación Yenko Foundation",
-    "meta_description": "Max Owobu, adolescente de 18 años del Bronx, funda Yenko Foundation para financiar la educación de niños en Ghana.",
-    "meta_keywords": "Max Owobu, Yenko Foundation, Ghana, Bronx, sin fines de lucro, patrocinio educativo, Calvary Methodist, educación Ghana",
-    "link": "https://www.goodnewsnetwork.org/18-year-old-from-the-bronx-starts-nonprofit-to-sponsor-school-children-in-ghana/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Max-Owobu-pictured-at-center-in-white-smiles-for-the-camera-surrounded-by-children-from-Calvary-Methodist-Elementary-School-credit-supplied-to-GNN.jpg",
-    "date": "2026-09-28T19:25:27.486Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "17906235003386r8mn1zox",
-    "title": "Descubren tablilla de arcilla con el tratado de paz más antiguo del mundo",
-    "summary": "Arqueólogos han encontrado en Turquía una tablilla de arcilla con un fragmento de la Paz de Kadesh, el tratado de paz más antiguo conocido del mundo. La tablilla, que contiene los artículos 12 al 20, fue excavada el año pasado en el palacio real hitita de Buyukkale, en la antigua capital hitita Hattusa. Alrededor del 1300 antes de Cristo, los...",
-    "image_alt": "Tablilla de arcilla con escritura cuneiforme de la Paz de Kadesh, encontrada en Hattusa, Turquía",
-    "meta_description": "Arqueólogos descubren tablilla de arcilla con la Paz de Kadesh, el tratado de paz más antiguo del mundo, en Hattusa, Turquía.",
-    "meta_keywords": "Paz de Kadesh, tablilla de arcilla, Hattusa, hititas, Ramsés II, tratado de paz más antiguo, escritura cuneiforme, Turquía, arqueología",
-    "link": "https://www.goodnewsnetwork.org/researchers-unearth-a-clay-tablet-inscribed-with-the-worlds-oldest-peace-treaty/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Turkiyes-ministry-of-culture-and-tourism.jpg",
-    "date": "2026-09-28T19:25:02.009Z",
-    "category": "Science",
-    "score": 8
-  },
-  {
-    "id": "1790623473034ngjkir1ra",
-    "title": "Vietnam protege el último hábitat del langur de Delacour",
-    "summary": "Vietnam ha establecido un área natural especialmente protegida para el langur de Delacour, uno de los primates más amenazados del mundo. De esta especie, nombrada así por el biólogo francés que la descubrió, quedan alrededor de 17 poblaciones con aproximadamente 250 animales en total. La provincia de Ninh Binh creó el Kim Bang Delacour's Langur Habitat Conservation Area, que abarca...",
-    "image_alt": "Langur de Delacour en el paisaje de piedra caliza boscosa de Ninh Binh, Vietnam",
-    "meta_description": "Vietnam establece un área natural protegida para el langur de Delacour, uno de los primates más amenazados del mundo.",
-    "meta_keywords": "langur de Delacour, Vietnam, Ninh Binh, conservación de la naturaleza, especies animales amenazadas, Tam Chuc, biodiversidad",
-    "link": "https://www.goodnewsnetwork.org/vietnam-swiftly-protects-forests-containing-the-last-of-the-worlds-most-endangered-monkey/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Delacours_langur_Trachypithecus_delacouri_Van_Long_2.jpg",
-    "date": "2026-09-28T19:24:35.075Z",
     "category": "Environment",
     "score": 9
   }

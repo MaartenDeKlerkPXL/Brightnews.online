@@ -1,25 +1,25 @@
 {
- "gegenereerd": "2026-11-04T19:30:52.231Z",
+ "gegenereerd": "2026-11-05T05:39:54.878Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
     {
-     "id": "179365504136328er9o23r",
-     "titel": "Kenli Foundation geeft 67 beurzen aan helden na dodelijk ongeluk in Texas",
-     "teaser": "Vijf jaar geleden kwam de 18-jarige Kenli Riney om het leven na een frontale botsing op een snelweg in Texas, waarbij haar auto in brand vloog. De familie Argote, die toevallig langsreed, rende naar de vlammen: Mike Argote raakte zelf verbrand terwijl hij Riney uit de auto trok en CPR begon, waarna zijn 14-jarige dochter Ema het overnam. Riney overleed...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/kenli-foundation-geeft-67-beurzen-aan-helden-na-dodelijk-ongeluk-in-texas-179365504136328er9o23r.html"
+     "id": "1793857142350b36d1cek1",
+     "titel": "Gepersonaliseerde hersentherapie geeft 68 procent remissie bij PTSS",
+     "teaser": "Een gepersonaliseerde vorm van hersentherapie zorgt voor remissie bij 68 procent van de mensen met PTSS. Dit percentage wordt genoemd in een bericht van The Optimist Daily, al ontbreken verdere details over de precieze werking, de onderzoeksopzet of de betrokken onderzoekers. Het nieuws wordt gepresenteerd als een positieve ontwikkeling op het gebied van geestelijke gezondheidszorg en technologie.",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/nl/gepersonaliseerde-hersentherapie-geeft-68-procent-remissie-bij-ptss-1793857142350b36d1cek1.html"
     },
     {
-     "id": "1793655009947ou7j6x4x0",
-     "titel": "Boksgala's Fight Back financieren gratis bokslessen voor overlevenden van huiselijk geweld",
-     "teaser": "In Londen vindt op 28 november het eerste boksgala van Fight Back Promotions plaats, opgericht door oud-Team GB-bokser Lesley Sackey, drievoudig nationaal kampioen Shelly Sweeney en ondernemer Poppy Mason-Watts. Een kwart van de winst gaat naar Fight Forward CIC, dat gratis bokstraining geeft aan overlevenden van huiselijk geweld, zoals Saria (40), die zegt dat het programma haar leven redde. Het...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/boksgala-s-fight-back-financieren-gratis-bokslessen-voor-overlevenden-van-huisel-1793655009947ou7j6x4x0.html"
+     "id": "1793857124364imh34spkm",
+     "titel": "Braziliaans Nationaal Park Pantanal Fors Uitgebreid",
+     "teaser": "Braziliaanse milieuautoriteiten hebben het Pantanal Matogrossense Nationaal Park met meer dan 25% uitgebreid: van 523 vierkante mijl naar 185 vierkante mijl extra, ongeveer gelijk aan het toevoegen van het Amerikaanse Redwoods National Park. De uitbreiding beschermt de Pantanal, 's werelds grootste overstroomde graslanden en een van de rijkste en meest kwetsbare biomen ter wereld. Hier leven 463 vogelsoorten, 269 vissoorten,...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/braziliaans-nationaal-park-pantanal-fors-uitgebreid-1793857124364imh34spkm.html"
     },
     {
      "id": "17938206195450tb2nv2m9",
@@ -48,6 +48,13 @@
    ],
    "dagoverzichten": [
     {
+     "id": "dg-20261104-lifestyle",
+     "titel": "Sleutels, puzzelstukjes en zoute golven: het goede nieuws van begin november",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-04",
+     "url": "https://brightnews.online/articles/nl/sleutels-puzzelstukjes-en-zoute-golven-het-goede-nieuws-van-begin-november-dg-20261104-lifestyle.html"
+    },
+    {
      "id": "dg-20261103-lifestyle",
      "titel": "Verbinding in drie vormen: van compassie tot skateboard en dorpsleven",
      "categorie": "Lifestyle",
@@ -73,20 +80,20 @@
   "en": {
    "top": [
     {
-     "id": "179365504136328er9o23r",
-     "titel": "Kenli Foundation awards 67 scholarships to heroes after fatal Texas crash",
-     "teaser": "Five years ago, 18-year-old Kenli Riney lost her life in a head-on collision on a Texas highway, her car engulfed in flames. The Argote family, passing by by chance, ran toward the fire: Mike Argote suffered severe burns while pulling Riney from the vehicle and beginning CPR, then his 14-year-old daughter Ema took over. Riney died at the scene, and...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/kenli-foundation-awards-67-scholarships-to-heroes-after-fatal-texas-crash-179365504136328er9o23r.html"
+     "id": "1793857142350b36d1cek1",
+     "titel": "Personalized brain therapy achieves 68 percent remission in PTSD",
+     "teaser": "A personalized form of brain therapy results in remission for 68 percent of people with PTSD. This figure is cited in a report from The Optimist Daily, though further details about the precise mechanism, study design, or researchers involved are lacking. The news is presented as a positive development in mental health care and technology.",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/en/personalized-brain-therapy-achieves-68-percent-remission-in-ptsd-1793857142350b36d1cek1.html"
     },
     {
-     "id": "1793655009947ou7j6x4x0",
-     "titel": "Boxing galas by Fight Back finance free lessons for domestic abuse survivors",
-     "teaser": "London will host Fight Back Promotions' first boxing gala on 28 November, founded by former Team GB boxer Lesley Sackey, three-time national champion Shelly Sweeney and entrepreneur Poppy Mason-Watts. A quarter of the profits go to Fight Forward CIC, which provides free boxing training to domestic abuse survivors, such as Saria (40), who says the programme saved her life. The...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/boxing-galas-by-fight-back-finance-free-lessons-for-domestic-abuse-survivors-1793655009947ou7j6x4x0.html"
+     "id": "1793857124364imh34spkm",
+     "titel": "Brazil's Pantanal National Park Significantly Expanded",
+     "teaser": "Brazilian environmental authorities have expanded the Pantanal Matogrossense National Park by more than 25%: from 523 square miles to 185 additional square miles, roughly equivalent to adding the American Redwoods National Park. The expansion protects the Pantanal, the world's largest flooded grasslands and one of the richest and most vulnerable biomes on Earth. It is home to 463 bird species,...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/brazil-s-pantanal-national-park-significantly-expanded-1793857124364imh34spkm.html"
     },
     {
      "id": "17938206195450tb2nv2m9",
@@ -115,6 +122,13 @@
    ],
    "dagoverzichten": [
     {
+     "id": "dg-20261104-lifestyle",
+     "titel": "Keys, puzzle pieces and salty waves: the good news from early November",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-04",
+     "url": "https://brightnews.online/articles/en/keys-puzzle-pieces-and-salty-waves-the-good-news-from-early-november-dg-20261104-lifestyle.html"
+    },
+    {
      "id": "dg-20261103-lifestyle",
      "titel": "Connection in three forms: from compassion to skateboarding and village life",
      "categorie": "Lifestyle",
@@ -140,20 +154,20 @@
   "de": {
    "top": [
     {
-     "id": "179365504136328er9o23r",
-     "titel": "Kenli Foundation vergibt 67 Stipendien an Helden nach tödlichem Unfall in Texas",
-     "teaser": "Vor fünf Jahren kam die 18-jährige Kenli Riney bei einem Frontalzusammenstoß auf einer Schnellstraße in Texas ums Leben, wobei ihr Auto in Flammen aufging. Die Familie Argote, die zufällig vorbeifuhr, rannte in die Flammen: Mike Argote erlitt selbst Verbrennungen, während er Riney aus dem Auto zog und mit der Herz-Lungen-Wiederbelebung begann, woraufhin seine 14-jährige Tochter Ema übernahm. Riney starb an...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/kenli-foundation-vergibt-67-stipendien-an-helden-nach-todlichem-unfall-in-texas-179365504136328er9o23r.html"
+     "id": "1793857142350b36d1cek1",
+     "titel": "Personalisierte Hirntherapie führt zu 68 Prozent Remission bei PTBS",
+     "teaser": "Eine personalisierte Form der Hirntherapie führt bei 68 Prozent der Menschen mit PTBS zu einer Remission. Diesen Prozentsatz nennt The Optimist Daily in einer Mitteilung, wobei weitere Details zur genauen Funktionsweise, zum Forschungsdesign oder zu den beteiligten Forschern fehlen. Die Nachricht wird als positive Entwicklung im Bereich der psychischen Gesundheit und Technologie präsentiert.",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/de/personalisierte-hirntherapie-fuhrt-zu-68-prozent-remission-bei-ptbs-1793857142350b36d1cek1.html"
     },
     {
-     "id": "1793655009947ou7j6x4x0",
-     "titel": "Boxgalas von Fight Back finanzieren kostenlosen Boxunterricht für Opfer von häuslicher Gewalt",
-     "teaser": "Am 28. November findet in London die erste Boxgala von Fight Back Promotions statt, gegründet von der ehemaligen Team GB-Boxerin Lesley Sackey, der dreifachen nationalen Meisterin Shelly Sweeney und der Unternehmerin Poppy Mason-Watts. Ein Viertel des Gewinns fließt an Fight Forward CIC, das kostenloses Boxtraining für Opfer von häuslicher Gewalt anbietet, wie Saria (40), die sagt, dass das Programm ihr...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/boxgalas-von-fight-back-finanzieren-kostenlosen-boxunterricht-fur-opfer-von-haus-1793655009947ou7j6x4x0.html"
+     "id": "1793857124364imh34spkm",
+     "titel": "Brasilianischer Nationalpark Pantanal erheblich erweitert",
+     "teaser": "Brasilianische Umweltbehörden haben den Nationalpark Pantanal Matogrossense um mehr als 25% erweitert: von 523 Quadratmeilen auf 185 Quadratmeilen zusätzlich, etwa gleichbedeutend mit der Hinzufügung des amerikanischen Redwoods National Park. Die Erweiterung schützt das Pantanal, die größten Überschwemmungsgrasflächen der Welt und eines der reichsten und anfälligsten Biome der Erde. Hier leben 463 Vogelarten, 269 Fischarten, mehr als 100 Reptilien- und Amphibienarten...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/brasilianischer-nationalpark-pantanal-erheblich-erweitert-1793857124364imh34spkm.html"
     },
     {
      "id": "17938206195450tb2nv2m9",
@@ -182,6 +196,13 @@
    ],
    "dagoverzichten": [
     {
+     "id": "dg-20261104-lifestyle",
+     "titel": "Schlüssel, Puzzleteile und salzige Wellen: die guten Nachrichten von Anfang November",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-04",
+     "url": "https://brightnews.online/articles/de/schlussel-puzzleteile-und-salzige-wellen-die-guten-nachrichten-von-anfang-novemb-dg-20261104-lifestyle.html"
+    },
+    {
      "id": "dg-20261103-lifestyle",
      "titel": "Verbindung in drei Formen: von Mitgefühl bis Skateboard und Dorfleben",
      "categorie": "Lifestyle",
@@ -207,20 +228,20 @@
   "fr": {
    "top": [
     {
-     "id": "179365504136328er9o23r",
-     "titel": "La Kenli Foundation remet 67 bourses à des héros après un accident mortel au Texas",
-     "teaser": "Il y a cinq ans, Kenli Riney, 18 ans, a perdu la vie dans une collision frontale sur une autoroute au Texas, sa voiture prenant feu. La famille Argote, qui passait par là, s'est précipitée vers les flammes : Mike Argote s'est lui-même brûlé en tirant Riney de la voiture et en commençant la réanimation, avant que sa fille Ema,...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/la-kenli-foundation-remet-67-bourses-a-des-heros-apres-un-accident-mortel-au-tex-179365504136328er9o23r.html"
+     "id": "1793857142350b36d1cek1",
+     "titel": "Une thérapie cérébrale personnalisée offre 68 % de rémission dans le TSPT",
+     "teaser": "Une forme personnalisée de thérapie cérébrale permet une rémission chez 68 % des personnes atteintes de TSPT. Ce pourcentage est mentionné dans un article de The Optimist Daily, bien que des détails supplémentaires sur le fonctionnement précis, la conception de l'étude ou les chercheurs impliqués fassent défaut. L'information est présentée comme une évolution positive dans le domaine de la santé...",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/fr/une-therapie-cerebrale-personnalisee-offre-68-de-remission-dans-le-tspt-1793857142350b36d1cek1.html"
     },
     {
-     "id": "1793655009947ou7j6x4x0",
-     "titel": "Les galas de boxe Fight Back financent des cours de boxe gratuits pour les survivantes de violences conjugales",
-     "teaser": "Le premier gala de boxe de Fight Back Promotions se tiendra à Londres le 28 novembre, fondé par l'ancienne boxeuse de Team GB Lesley Sackey, la triple championne nationale Shelly Sweeney et l'entrepreneur Poppy Mason-Watts. Un quart des bénéfices est versé à Fight Forward CIC, qui propose un entraînement de boxe gratuit aux survivantes de violences conjugales, comme Saria (40...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/les-galas-de-boxe-fight-back-financent-des-cours-de-boxe-gratuits-pour-les-survi-1793655009947ou7j6x4x0.html"
+     "id": "1793857124364imh34spkm",
+     "titel": "Le parc national du Pantanal au Brésil considérablement agrandi",
+     "teaser": "Les autorités environnementales brésiliennes ont agrandi le parc national Pantanal Matogrossense de plus de 25 % : de 523 milles carrés à 185 milles carrés supplémentaires, ce qui équivaut approximativement à l'ajout du Redwoods National Park américain. Cette expansion protège le Pantanal, les plus grands prairies inondables du monde et l'un des biomes les plus riches et les plus fragiles...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/le-parc-national-du-pantanal-au-bresil-considerablement-agrandi-1793857124364imh34spkm.html"
     },
     {
      "id": "17938206195450tb2nv2m9",
@@ -249,6 +270,13 @@
    ],
    "dagoverzichten": [
     {
+     "id": "dg-20261104-lifestyle",
+     "titel": "Des clés, des pièces de puzzle et des vagues salées : les bonnes nouvelles de début novembre",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-04",
+     "url": "https://brightnews.online/articles/fr/des-cles-des-pieces-de-puzzle-et-des-vagues-salees-les-bonnes-nouvelles-de-debut-dg-20261104-lifestyle.html"
+    },
+    {
      "id": "dg-20261103-lifestyle",
      "titel": "La connexion sous trois formes : de la compassion au skateboard et à la vie villageoise",
      "categorie": "Lifestyle",
@@ -274,20 +302,20 @@
   "es": {
    "top": [
     {
-     "id": "179365504136328er9o23r",
-     "titel": "Kenli Foundation otorga 67 becas a héroes tras accidente mortal en Texas",
-     "teaser": "Hace cinco años, Kenli Riney, de 18 años, perdió la vida en una colisión frontal en una autopista de Texas, cuando su auto se incendió. La familia Argote, que pasaba por casualidad, corrió hacia las llamas: Mike Argote sufrió quemaduras mientras sacaba a Riney del auto e iniciaba RCP, después su hija Ema, de 14 años, continuó con la reanimación....",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/kenli-foundation-otorga-67-becas-a-heroes-tras-accidente-mortal-en-texas-179365504136328er9o23r.html"
+     "id": "1793857142350b36d1cek1",
+     "titel": "Terapia cerebral personalizada logra 68 por ciento de remisión en TEPT",
+     "teaser": "Una forma personalizada de terapia cerebral logra remisión en el 68 por ciento de las personas con TEPT. Este porcentaje se menciona en un artículo de The Optimist Daily, aunque faltan más detalles sobre el funcionamiento exacto, el diseño del estudio o los investigadores involucrados. La noticia se presenta como un desarrollo positivo en el campo de la salud mental...",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/es/terapia-cerebral-personalizada-logra-68-por-ciento-de-remision-en-tept-1793857142350b36d1cek1.html"
     },
     {
-     "id": "1793655009947ou7j6x4x0",
-     "titel": "Las galas de boxeo de Fight Back financian clases gratuitas para supervivientes de violencia doméstica",
-     "teaser": "El 28 de noviembre tendrá lugar en Londres la primera gala de boxeo de Fight Back Promotions, fundada por la exboksista del Team GB Lesley Sackey, la triple campeona nacional Shelly Sweeney y la empresaria Poppy Mason-Watts. Una cuarta parte de las ganancias irá a Fight Forward CIC, que ofrece entrenamiento de boxeo gratuito a supervivientes de violencia doméstica, como...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/las-galas-de-boxeo-de-fight-back-financian-clases-gratuitas-para-supervivientes-1793655009947ou7j6x4x0.html"
+     "id": "1793857124364imh34spkm",
+     "titel": "Parque Nacional Pantanal de Brasil se expande significativamente",
+     "teaser": "Las autoridades ambientales brasileñas han ampliado el Parque Nacional Pantanal Matogrossense en más del 25%: de 523 millas cuadradas a 185 millas cuadradas adicionales, aproximadamente equivalente a añadir el Redwoods National Park estadounidense. La expansión protege el Pantanal, los humedales más grandes del mundo y uno de los biomas más ricos y vulnerables del planeta. Aquí viven 463 especies de...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/parque-nacional-pantanal-de-brasil-se-expande-significativamente-1793857124364imh34spkm.html"
     },
     {
      "id": "17938206195450tb2nv2m9",
@@ -315,6 +343,13 @@
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261104-lifestyle",
+     "titel": "Llaves, piezas de puzle y olas saladas: las buenas noticias de principios de noviembre",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-04",
+     "url": "https://brightnews.online/articles/es/llaves-piezas-de-puzle-y-olas-saladas-las-buenas-noticias-de-principios-de-novie-dg-20261104-lifestyle.html"
+    },
     {
      "id": "dg-20261103-lifestyle",
      "titel": "Conexión en tres formas: de la compasión al skateboard y la vida rural",

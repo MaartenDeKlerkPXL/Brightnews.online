@@ -1,5 +1,53 @@
 [
  {
+  "datum": "2026-11-05T05:37:52.005Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "The Grandfather Puzzle Pieces Together a Family History One Man Wouldn’t Talk About",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 2,
+  "totaal": 8,
+  "besluit": "ja",
+  "reden": "Een kleindochter die de familiegeschiedenis van haar grootvader ontsluit is een hartverwarmend verhaal over verbinding en erfenis, positief geformuleerd en persoonlijk herkenbaar."
+ },
+ {
+  "datum": "2026-11-05T05:37:52.005Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "Brazil Expands Protected Area for ‘One of the Richest and Most Sensitive Biomes on the Planet’",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Uitbreiding van een natuurreservaat is maatschappelijk relevant milieunieuws, volledig positief geformuleerd en geeft hoop voor natuurbehoud."
+ },
+ {
+  "datum": "2026-11-05T05:37:52.005Z",
+  "bron": "OptimistDaily.com",
+  "titel": "Personalized brain therapy hits 68 percent remission for PTSD",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Een medische doorbraak met 68% remissie voor PTSD is maatschappelijk relevant gezondheidsnieuws dat levens verbetert, positief geformuleerd en hoopgevend."
+ },
+ {
+  "datum": "2026-11-05T05:37:52.005Z",
+  "bron": "OptimistDaily.com",
+  "titel": "8 surprising household uses for toothpaste, from a pro cleaner",
+  "uitsluiting": "listicle",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Dit is een listicle ('8 surprising uses') zonder verhaal of maatschappelijke betekenis, puur consumptief adviesnieuws."
+ },
+ {
   "datum": "2026-11-04T19:29:18.525Z",
   "bron": "Positive.News",
   "titel": "Who needs a golden ticket? The race to future-proof chocolate",
@@ -3550,53 +3598,5 @@
   "totaal": 9,
   "besluit": "ja",
   "reden": "Hartverwarmend verhaal over jonge ondernemer die onderwijs sponsort in Ghana; gemeenschapszin en transformatie."
- },
- {
-  "datum": "2026-09-28T19:23:02.819Z",
-  "bron": "GoodNewsNetwork.org",
-  "titel": "Newly Identified Frog-like Creature Named by Student Scientists After Their Moms",
-  "uitsluiting": "geen",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 2,
-  "totaal": 8,
-  "besluit": "ja",
-  "reden": "Charmant en positief verhaal over jonge wetenschappers, hoewel de maatschappelijke relevantie beperkt is."
- },
- {
-  "datum": "2026-09-28T19:23:02.819Z",
-  "bron": "ReasonsToBeCheerful.world",
-  "titel": "Forget Recycling. What If We Could Compost or Reuse Everything?",
-  "uitsluiting": "geen",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "Inspirerend verhaal over circulaire economie en duurzame innovatie met concrete voorbeelden en maatschappelijke impact."
- },
- {
-  "datum": "2026-09-28T19:23:02.819Z",
-  "bron": "OptimistDaily.com",
-  "titel": "Soft productivity is the smarter way to work, and here’s how to start",
-  "uitsluiting": "listicle",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Dit is zelfhulpadvies in listicle-vorm ('hoe te starten') zonder echt verhaal of concrete voorbeelden."
- },
- {
-  "datum": "2026-09-28T19:23:02.819Z",
-  "bron": "OptimistDaily.com",
-  "titel": "Athens’ former airport is becoming Europe’s largest coastal urban park",
-  "uitsluiting": "geen",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "Hoopvol verhaal over transformatie van verlaten luchthaven naar groot groen park met concrete duurzame doelen."
  }
 ]
