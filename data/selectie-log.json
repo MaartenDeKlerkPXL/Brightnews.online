@@ -1,5 +1,77 @@
 [
  {
+  "datum": "2026-11-06T05:35:20.556Z",
+  "bron": "Positive.News",
+  "titel": "What went right this week: the good news that matters",
+  "uitsluiting": "verzameleditie",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Dit is een weekoverzicht van ander media ('What went right this week') met meerdere losse onderwerpen; BrightNews maakt eigen dagoverzichten, niet andermans bundels."
+ },
+ {
+  "datum": "2026-11-06T05:35:20.556Z",
+  "bron": "Positive.News",
+  "titel": "The butterfly effect: a brighter way to make paint?",
+  "uitsluiting": "geen",
+  "gevoel": 2,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 8,
+  "besluit": "ja",
+  "reden": "Onderzoek naar veiliger, chemievrije verfproducten via natuurinspiratie is maatschappelijk relevant en positief geformuleerd; geeft hoop op duurzamere oplossingen."
+ },
+ {
+  "datum": "2026-11-06T05:35:20.556Z",
+  "bron": "ReasonsToBeCheerful.world",
+  "titel": "The Montana Ranch Where Autistic People Are Wranglers and Guides",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Hartverwarmend verhaal over autistische mensen die betekenisvolle werk vinden en hun leven transformeren; maatschappelijk relevant en persoonlijk herkenbaar."
+ },
+ {
+  "datum": "2026-11-06T05:35:20.556Z",
+  "bron": "OptimistDaily.com",
+  "titel": "Solar kits are changing what disaster relief looks like",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Concrete hulp via zonnepanelen in noodsituaties; kern is redding en herstel, niet de ramp zelf; maatschappelijk relevant en hoopgevend."
+ },
+ {
+  "datum": "2026-11-06T05:35:20.556Z",
+  "bron": "OptimistDaily.com",
+  "titel": "The best places to volunteer this Thanksgiving: 17 options for every schedule",
+  "uitsluiting": "listicle",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Dit is een listicle ('17 opties voor elk schema') zonder echt verhaal; zelfhulp-clickbait zonder concrete kern."
+ },
+ {
+  "datum": "2026-11-06T05:35:20.556Z",
+  "bron": "Squirrel-News.net",
+  "titel": "US midterm elections sees historic wins for progressive candidates, social care community, multi-cancer blood test",
+  "uitsluiting": "politiek",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Verkiezingsresultaten en politieke 'firsts' zijn inherent polariserend; goed nieuws alleen voor wie deze kandidaten steunt."
+ },
+ {
   "datum": "2026-11-05T19:39:17.315Z",
   "bron": "Positive.News",
   "titel": "The butterfly effect: a brighter way to make paint?",
@@ -3526,77 +3598,5 @@
   "totaal": 9,
   "besluit": "ja",
   "reden": "Verlaten olifantje gered en geadopteerd door kudde — redding en gemeenschapszin als kern, hartverwarmend en maatschappelijk relevant."
- },
- {
-  "datum": "2026-09-29T17:49:17.930Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "This national park is home to the quietest spot in the continental US: 'Listen to a concert by the natural world'",
-  "uitsluiting": "geen",
-  "gevoel": 2,
-  "formulering": 3,
-  "relevantie": 2,
-  "totaal": 7,
-  "besluit": "nee",
-  "reden": "Stille plek in natuur als onderzoeks- en reflectieplek — positief verhaal over natuurbehoud en welzijn, inspirerend en herkenbaar."
- },
- {
-  "datum": "2026-09-29T17:49:17.930Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "368 farmers gave up part of their land so elephants could cross the valley safely. Trail cameras show 529 already have",
-  "uitsluiting": "geen",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "Boeren geven land af voor veilige olifantmigratie — gemeenschapszin en natuurbescherming als kern, maatschappelijk relevant en hoopvol."
- },
- {
-  "datum": "2026-09-29T17:49:24.099Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "'Socktober' celebrates 15 years of local kindness",
-  "uitsluiting": "geen",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "Gemeenschapszin en hulp aan daklozen als kern; hartverwarmend verhaal over jongeren die initiatief nemen."
- },
- {
-  "datum": "2026-09-29T17:49:24.099Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "Hank and John Green's 'Pizzamas' holiday turns mustaches and merch into maternal healthcare",
-  "uitsluiting": "geen",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "Organische gemeenschapsvorming en miljoenenbedragen voor gezondheidszorg; warm, hoopvol en maatschappelijk relevant."
- },
- {
-  "datum": "2026-09-29T17:49:24.099Z",
-  "bron": "Sciencenews.org",
-  "titel": "‘The Deep End’ podcast is back to explore what makes your voice yours",
-  "uitsluiting": "te-weinig-inhoud",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Tekst is grotendeels navigatiecode en rubriekslijsten; onvoldoende inhoud om het verhaal te beoordelen."
- },
- {
-  "datum": "2026-09-29T17:49:24.099Z",
-  "bron": "NPR.org",
-  "titel": "This year's MacArthur Fellows include researchers who fuse science and justice",
-  "uitsluiting": "geen",
-  "gevoel": 2,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 8,
-  "besluit": "ja",
-  "reden": "Erkenning van onderzoek dat wetenschap en rechtvaardigheid verbindt; positief en maatschappelijk relevant, maar wat afstandelijk."
  }
 ]

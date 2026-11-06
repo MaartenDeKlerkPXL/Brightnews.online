@@ -1,10 +1,26 @@
 {
- "gegenereerd": "2026-11-05T19:41:39.191Z",
+ "gegenereerd": "2026-11-06T05:36:24.884Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "1793943382665j7gwcx3pt",
+     "titel": "Solar kits veranderen rampenhulp",
+     "teaser": "Solar kits zorgen voor een nieuwe aanpak van rampenhulp. Volgens The Optimist Daily verandert deze vorm van zonne-energie de manier waarop hulp na rampen wordt georganiseerd en geleverd.",
+     "score": 9,
+     "categorie": "General",
+     "url": "https://brightnews.online/articles/nl/solar-kits-veranderen-rampenhulp-1793943382665j7gwcx3pt.html"
+    },
+    {
+     "id": "1793943368286vof54g93p",
+     "titel": "Erik's Ranch in Montana: autistische gidsen en wranglers verwelkomen gasten",
+     "teaser": "Bij Erik's Ranch & Retreats in Montana, nabij Yellowstone National Park, werken autistische mensen als concierges, gidsen, wranglers en koks. Veel van hen wonen ook op het 230 hectare grote terrein. Oprichtster Kathryn Nordberg begon het initiatief in 2014 vanuit zorgen over de toekomst van haar autistische zoon Erik. De hutten zijn speciaal ontworpen voor neurodivergente gasten: rustige kleuren, geluiddempende...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/erik-s-ranch-in-montana-autistische-gidsen-en-wranglers-verwelkomen-gasten-1793943368286vof54g93p.html"
+    },
     {
      "id": "1793907606024s2635r9hy",
      "titel": "Grote Sterns Keren Terug naar Britse Zuidkust na Vogelgriep",
@@ -28,22 +44,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/braziliaans-nationaal-park-pantanal-fors-uitgebreid-1793857124364imh34spkm.html"
-    },
-    {
-     "id": "17938206195450tb2nv2m9",
-     "titel": "Scholieren openen autowerkplaats voor publiek in Houston",
-     "teaser": "In de Fifth Ward van Houston is een autowerkplaats geopend die wordt gerund door scholieren. Het initiatief komt van het Barbara Jordan Career Center, onderdeel van Houston Independent School District, dat werkgelegenheid en stages wil creëren voor leerlingen in veelgevraagde beroepen. Het centrum bedient 12 schoolcampussen en meer dan 1.200 leerlingen. Elke vrijdag van 9.00 tot 15.00 uur voeren opgeleide...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/scholieren-openen-autowerkplaats-voor-publiek-in-houston-17938206195450tb2nv2m9.html"
-    },
-    {
-     "id": "1793820590416jpudzw0hp",
-     "titel": "Student maakt chocoladereep van volledig Britse cacao",
-     "teaser": "Maha Khan, masterstudent voedselzekerheid aan de University of Reading, maakte een chocoladereep volledig van Britse ingrediënten, inclusief de cacaobonen zelf. Ze oogstte cacaopeulen uit de kassen van de universiteit en combineerde die met Britse melk en suiker tot zes repen, genaamd The Reading 100, ter ere van het honderdjarig bestaan van de universiteit. De peulen komen uit het International Cocoa...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/nl/student-maakt-chocoladereep-van-volledig-britse-cacao-1793820590416jpudzw0hp.html"
     }
    ],
    "dagoverzichten": [
@@ -60,25 +60,27 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-04",
      "url": "https://brightnews.online/articles/nl/sleutels-puzzelstukjes-en-zoute-golven-het-goede-nieuws-van-begin-november-dg-20261104-lifestyle.html"
-    },
-    {
-     "id": "dg-20261103-lifestyle",
-     "titel": "Verbinding in drie vormen: van compassie tot skateboard en dorpsleven",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-03",
-     "url": "https://brightnews.online/articles/nl/verbinding-in-drie-vormen-van-compassie-tot-skateboard-en-dorpsleven-dg-20261103-lifestyle.html"
-    },
-    {
-     "id": "dg-20261103-environment",
-     "titel": "Terugkeer van dieren en licht uit voor vogels: goed nieuws uit de natuur",
-     "categorie": "Environment",
-     "dag": "2026-11-03",
-     "url": "https://brightnews.online/articles/nl/terugkeer-van-dieren-en-licht-uit-voor-vogels-goed-nieuws-uit-de-natuur-dg-20261103-environment.html"
     }
    ]
   },
   "en": {
    "top": [
+    {
+     "id": "1793943382665j7gwcx3pt",
+     "titel": "Solar kits transform disaster relief",
+     "teaser": "Solar kits are bringing a new approach to disaster relief. According to The Optimist Daily, this form of solar energy is changing the way aid is organized and delivered after disasters.",
+     "score": 9,
+     "categorie": "General",
+     "url": "https://brightnews.online/articles/en/solar-kits-transform-disaster-relief-1793943382665j7gwcx3pt.html"
+    },
+    {
+     "id": "1793943368286vof54g93p",
+     "titel": "Erik's Ranch in Montana: autistic guides and wranglers welcome guests",
+     "teaser": "At Erik's Ranch & Retreats in Montana, near Yellowstone National Park, autistic people work as concierges, guides, wranglers and cooks. Many of them also live on the 230-hectare property. Founder Kathryn Nordberg started the initiative in 2014 out of concern for the future of her autistic son Erik. The cabins are specially designed for neurodivergent guests: calm colors, soundproof doors...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/erik-s-ranch-in-montana-autistic-guides-and-wranglers-welcome-guests-1793943368286vof54g93p.html"
+    },
     {
      "id": "1793907606024s2635r9hy",
      "titel": "Great Terns Return to British South Coast After Bird Flu",
@@ -102,22 +104,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/en/brazil-s-pantanal-national-park-significantly-expanded-1793857124364imh34spkm.html"
-    },
-    {
-     "id": "17938206195450tb2nv2m9",
-     "titel": "Students open auto repair shop to the public in Houston",
-     "teaser": "An auto repair shop run by students has opened in Houston's Fifth Ward. The initiative comes from the Barbara Jordan Career Center, part of Houston Independent School District, which aims to create employment and internship opportunities for students in high-demand trades. The center serves 12 school campuses and more than 1,200 students. Every Friday from 9:00 a.m. to 3:00 p.m.,...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/students-open-auto-repair-shop-to-the-public-in-houston-17938206195450tb2nv2m9.html"
-    },
-    {
-     "id": "1793820590416jpudzw0hp",
-     "titel": "Student makes chocolate bar from entirely British cocoa",
-     "teaser": "Maha Khan, a master's student in food security at the University of Reading, has created a chocolate bar made entirely from British ingredients, including the cocoa beans themselves. She harvested cocoa pods from the university's greenhouses and combined them with British milk and sugar to produce six bars, named The Reading 100, in honour of the university's centenary. The pods...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/en/student-makes-chocolate-bar-from-entirely-british-cocoa-1793820590416jpudzw0hp.html"
     }
    ],
    "dagoverzichten": [
@@ -134,25 +120,27 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-04",
      "url": "https://brightnews.online/articles/en/keys-puzzle-pieces-and-salty-waves-the-good-news-from-early-november-dg-20261104-lifestyle.html"
-    },
-    {
-     "id": "dg-20261103-lifestyle",
-     "titel": "Connection in three forms: from compassion to skateboarding and village life",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-03",
-     "url": "https://brightnews.online/articles/en/connection-in-three-forms-from-compassion-to-skateboarding-and-village-life-dg-20261103-lifestyle.html"
-    },
-    {
-     "id": "dg-20261103-environment",
-     "titel": "Animals return and lights go out for birds: good news from nature",
-     "categorie": "Environment",
-     "dag": "2026-11-03",
-     "url": "https://brightnews.online/articles/en/animals-return-and-lights-go-out-for-birds-good-news-from-nature-dg-20261103-environment.html"
     }
    ]
   },
   "de": {
    "top": [
+    {
+     "id": "1793943382665j7gwcx3pt",
+     "titel": "Solar-Kits verändern die Katastrophenhilfe",
+     "teaser": "Solar-Kits ermöglichen einen neuen Ansatz in der Katastrophenhilfe. Laut The Optimist Daily verändert diese Form der Solarenergie die Art und Weise, wie Hilfe nach Katastrophen organisiert und bereitgestellt wird.",
+     "score": 9,
+     "categorie": "General",
+     "url": "https://brightnews.online/articles/de/solar-kits-verandern-die-katastrophenhilfe-1793943382665j7gwcx3pt.html"
+    },
+    {
+     "id": "1793943368286vof54g93p",
+     "titel": "Erik's Ranch in Montana: autistische Guides und Wranglers heißen Gäste willkommen",
+     "teaser": "Bei Erik's Ranch & Retreats in Montana, in der Nähe des Yellowstone National Park, arbeiten autistische Menschen als Concierges, Guides, Wranglers und Köche. Viele von ihnen leben auch auf dem 230 Hektar großen Gelände. Gründerin Kathryn Nordberg startete die Initiative 2014 aus Sorge um die Zukunft ihres autistischen Sohnes Erik. Die Hütten sind speziell für neurodivergente Gäste gestaltet: ruhige Farben,...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/erik-s-ranch-in-montana-autistische-guides-und-wranglers-hei-en-gaste-willkommen-1793943368286vof54g93p.html"
+    },
     {
      "id": "1793907606024s2635r9hy",
      "titel": "Große Seeschwalben kehren an die britische Südküste zurück",
@@ -176,22 +164,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/de/brasilianischer-nationalpark-pantanal-erheblich-erweitert-1793857124364imh34spkm.html"
-    },
-    {
-     "id": "17938206195450tb2nv2m9",
-     "titel": "Schüler eröffnen Autowerkstatt für die Öffentlichkeit in Houston",
-     "teaser": "In der Fifth Ward von Houston hat eine Autowerkstatt eröffnet, die von Schülern betrieben wird. Die Initiative geht auf das Barbara Jordan Career Center zurück, das Teil des Houston Independent School District ist und Beschäftigungs- und Praktikumsmöglichkeiten für Schüler in gefragten Berufen schaffen möchte. Das Zentrum betreut 12 Schulcampus und mehr als 1.200 Schüler. Jeden Freitag von 9.00 bis 15.00...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/schuler-eroffnen-autowerkstatt-fur-die-offentlichkeit-in-houston-17938206195450tb2nv2m9.html"
-    },
-    {
-     "id": "1793820590416jpudzw0hp",
-     "titel": "Studentin stellt Schokoladenriegel aus britischem Kakao her",
-     "teaser": "Maha Khan, Masterstudentin für Ernährungssicherheit an der University of Reading, hat einen Schokoladenriegel vollständig aus britischen Zutaten hergestellt, einschließlich der Kakaobohnen selbst. Sie erntete Kakaohülsen aus den Gewächshäusern der Universität und kombinierte diese mit britischer Milch und Zucker zu sechs Riegeln namens The Reading 100, um das hundertjährige Bestehen der Universität zu würdigen. Die Hülsen stammen aus dem International Cocoa...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/de/studentin-stellt-schokoladenriegel-aus-britischem-kakao-her-1793820590416jpudzw0hp.html"
     }
    ],
    "dagoverzichten": [
@@ -208,25 +180,27 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-04",
      "url": "https://brightnews.online/articles/de/schlussel-puzzleteile-und-salzige-wellen-die-guten-nachrichten-von-anfang-novemb-dg-20261104-lifestyle.html"
-    },
-    {
-     "id": "dg-20261103-lifestyle",
-     "titel": "Verbindung in drei Formen: von Mitgefühl bis Skateboard und Dorfleben",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-03",
-     "url": "https://brightnews.online/articles/de/verbindung-in-drei-formen-von-mitgefuhl-bis-skateboard-und-dorfleben-dg-20261103-lifestyle.html"
-    },
-    {
-     "id": "dg-20261103-environment",
-     "titel": "Rückkehr von Tieren und Licht aus für Vögel: gute Nachrichten aus der Natur",
-     "categorie": "Environment",
-     "dag": "2026-11-03",
-     "url": "https://brightnews.online/articles/de/ruckkehr-von-tieren-und-licht-aus-fur-vogel-gute-nachrichten-aus-der-natur-dg-20261103-environment.html"
     }
    ]
   },
   "fr": {
    "top": [
+    {
+     "id": "1793943382665j7gwcx3pt",
+     "titel": "Les kits solaires transforment l'aide d'urgence",
+     "teaser": "Les kits solaires offrent une nouvelle approche de l'aide d'urgence. Selon The Optimist Daily, cette forme d'énergie solaire transforme la manière dont l'aide après sinistre est organisée et fournie.",
+     "score": 9,
+     "categorie": "General",
+     "url": "https://brightnews.online/articles/fr/les-kits-solaires-transforment-l-aide-d-urgence-1793943382665j7gwcx3pt.html"
+    },
+    {
+     "id": "1793943368286vof54g93p",
+     "titel": "Erik's Ranch au Montana : des guides autistes et des wranglers accueillent les visiteurs",
+     "teaser": "À Erik's Ranch & Retreats au Montana, près du Yellowstone National Park, des personnes autistes travaillent comme concierges, guides, wranglers et cuisiniers. Beaucoup d'entre elles vivent également sur le domaine de 230 hectares. La fondatrice Kathryn Nordberg a lancé cette initiative en 2014, préoccupée par l'avenir de son fils autiste Erik. Les cabanes sont spécialement conçues pour les visiteurs neurodivergents...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/erik-s-ranch-au-montana-des-guides-autistes-et-des-wranglers-accueillent-les-vis-1793943368286vof54g93p.html"
+    },
     {
      "id": "1793907606024s2635r9hy",
      "titel": "Les grandes sternes reviennent sur la côte sud britannique après la grippe aviaire",
@@ -250,22 +224,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/fr/le-parc-national-du-pantanal-au-bresil-considerablement-agrandi-1793857124364imh34spkm.html"
-    },
-    {
-     "id": "17938206195450tb2nv2m9",
-     "titel": "Des lycéens ouvrent un atelier automobile au public à Houston",
-     "teaser": "Dans le Fifth Ward de Houston, un atelier automobile a ouvert ses portes et est géré par des lycéens. L'initiative provient du Barbara Jordan Career Center, qui fait partie du Houston Independent School District et souhaite créer des emplois et des stages pour les élèves dans des métiers très demandés. Le centre dessert 12 campus scolaires et plus de 1...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/des-lyceens-ouvrent-un-atelier-automobile-au-public-a-houston-17938206195450tb2nv2m9.html"
-    },
-    {
-     "id": "1793820590416jpudzw0hp",
-     "titel": "Une étudiante fabrique une tablette de chocolat à partir de cacao entièrement britannique",
-     "teaser": "Maha Khan, étudiante en master en sécurité alimentaire à l'University of Reading, a fabriqué une tablette de chocolat entièrement à partir d'ingrédients britanniques, y compris les fèves de cacao elles-mêmes. Elle a récolté des cabosses de cacao dans les serres de l'université et les a combinées avec du lait et du sucre britanniques pour créer six tablettes, nommées The Reading...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/fr/une-etudiante-fabrique-une-tablette-de-chocolat-a-partir-de-cacao-entierement-br-1793820590416jpudzw0hp.html"
     }
    ],
    "dagoverzichten": [
@@ -282,25 +240,27 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-04",
      "url": "https://brightnews.online/articles/fr/des-cles-des-pieces-de-puzzle-et-des-vagues-salees-les-bonnes-nouvelles-de-debut-dg-20261104-lifestyle.html"
-    },
-    {
-     "id": "dg-20261103-lifestyle",
-     "titel": "La connexion sous trois formes : de la compassion au skateboard et à la vie villageoise",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-03",
-     "url": "https://brightnews.online/articles/fr/la-connexion-sous-trois-formes-de-la-compassion-au-skateboard-et-a-la-vie-villag-dg-20261103-lifestyle.html"
-    },
-    {
-     "id": "dg-20261103-environment",
-     "titel": "Le retour des animaux et les lumières éteintes pour les oiseaux : des bonnes nouvelles de la nature",
-     "categorie": "Environment",
-     "dag": "2026-11-03",
-     "url": "https://brightnews.online/articles/fr/le-retour-des-animaux-et-les-lumieres-eteintes-pour-les-oiseaux-des-bonnes-nouve-dg-20261103-environment.html"
     }
    ]
   },
   "es": {
    "top": [
+    {
+     "id": "1793943382665j7gwcx3pt",
+     "titel": "Los kits solares transforman la ayuda en desastres",
+     "teaser": "Los kits solares representan un nuevo enfoque en la ayuda humanitaria tras desastres. Según The Optimist Daily, esta forma de energía solar está cambiando la manera en que se organiza y se entrega la asistencia después de catástrofes.",
+     "score": 9,
+     "categorie": "General",
+     "url": "https://brightnews.online/articles/es/los-kits-solares-transforman-la-ayuda-en-desastres-1793943382665j7gwcx3pt.html"
+    },
+    {
+     "id": "1793943368286vof54g93p",
+     "titel": "Erik's Ranch en Montana: guías y vaqueros autistas reciben a los huéspedes",
+     "teaser": "En Erik's Ranch & Retreats en Montana, cerca del Parque Nacional de Yellowstone, personas autistas trabajan como conserjes, guías, vaqueros y cocineros. Muchos de ellos también viven en el terreno de 230 hectáreas. La fundadora Kathryn Nordberg comenzó la iniciativa en 2014 por preocupaciones sobre el futuro de su hijo autista Erik. Las cabañas están especialmente diseñadas para huéspedes neurodivergentes:...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/erik-s-ranch-en-montana-guias-y-vaqueros-autistas-reciben-a-los-huespedes-1793943368286vof54g93p.html"
+    },
     {
      "id": "1793907606024s2635r9hy",
      "titel": "Los charranes mayores regresan a la costa sur británica tras la gripe aviar",
@@ -324,22 +284,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/es/parque-nacional-pantanal-de-brasil-se-expande-significativamente-1793857124364imh34spkm.html"
-    },
-    {
-     "id": "17938206195450tb2nv2m9",
-     "titel": "Estudiantes abren taller de automóviles al público en Houston",
-     "teaser": "En la Fifth Ward de Houston se ha abierto un taller de automóviles dirigido por estudiantes de secundaria. La iniciativa proviene del Barbara Jordan Career Center, parte del Houston Independent School District, que busca crear empleo y prácticas para alumnos en profesiones muy demandadas. El centro atiende a 12 campus escolares y más de 1.200 estudiantes. Cada viernes de 9.00...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/estudiantes-abren-taller-de-automoviles-al-publico-en-houston-17938206195450tb2nv2m9.html"
-    },
-    {
-     "id": "1793820590416jpudzw0hp",
-     "titel": "Estudiante elabora una tableta de chocolate con cacao completamente británico",
-     "teaser": "Maha Khan, estudiante de máster en seguridad alimentaria en la University of Reading, elaboró una tableta de chocolate completamente con ingredientes británicos, incluidos los granos de cacao. Cosechó vainas de cacao de los invernaderos de la universidad y las combinó con leche y azúcar británicas para crear seis tabletas, denominadas The Reading 100, en honor al centenario de la universidad....",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/es/estudiante-elabora-una-tableta-de-chocolate-con-cacao-completamente-britanico-1793820590416jpudzw0hp.html"
     }
    ],
    "dagoverzichten": [
@@ -356,20 +300,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-04",
      "url": "https://brightnews.online/articles/es/llaves-piezas-de-puzle-y-olas-saladas-las-buenas-noticias-de-principios-de-novie-dg-20261104-lifestyle.html"
-    },
-    {
-     "id": "dg-20261103-lifestyle",
-     "titel": "Conexión en tres formas: de la compasión al skateboard y la vida rural",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-03",
-     "url": "https://brightnews.online/articles/es/conexion-en-tres-formas-de-la-compasion-al-skateboard-y-la-vida-rural-dg-20261103-lifestyle.html"
-    },
-    {
-     "id": "dg-20261103-environment",
-     "titel": "El regreso de los animales y las luces apagadas para las aves: buenas noticias de la naturaleza",
-     "categorie": "Environment",
-     "dag": "2026-11-03",
-     "url": "https://brightnews.online/articles/es/el-regreso-de-los-animales-y-las-luces-apagadas-para-las-aves-buenas-noticias-de-dg-20261103-environment.html"
     }
    ]
   }
