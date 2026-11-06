@@ -1,5 +1,112 @@
 [
   {
+    "id": "dg-20261105-environment",
+    "type": "digest",
+    "digest_date": "2026-11-05",
+    "title": "Rückkehr, Schutz und Wärme: die Umweltnachrichten von Anfang November",
+    "summary": "In den letzten Tagen zeigt die Natur, dass Durchhaltevermögen sich lohnt. Von einem Primaten, der stillschweigend überlebte, bis zu einem Nationalpark, der stark wächst, und von Vögeln, die zu einer Kolonie zurückkehren, bis zu Häusern, die bald ohne Gas warm werden: die guten Nachrichten kommen aus allen Ecken. Nehmen Sie die Bangka slow loris [2], einen giftigen Primaten, der seit den 1930er Jahren nicht mehr wissenschaftlich beobachtet wurde und 2015 als möglicherweise ausgestorben galt. Das Tier wurde die ganze Zeit über vom Alobi Wildlife Rescue Center gerettet, das zwischen 2015 und 2025 mehr als neunzig Tiere aufnahm und 86 davon...",
+    "image_alt": "Rückkehr, Schutz und Wärme: die Umweltnachrichten von Anfang November",
+    "meta_description": "Von einer geretteten giftigen Loris bis zur Erweiterung des Pantanal und Geothermie-Häusern: die hoffnungsvollen Umweltnachrichten von Anfang November 2026",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://theecologist.org/sites/default/files/styles/facebook/public/2019-01/satishkumar_2.jpg?h=2992ba0a&amp;itok=sw-KYTy5",
+    "date": "2026-11-06T19:03:46.769Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "17939917345584tddw5axb",
+        "title": "Satish Kumar gewinnt Future Icons Award für Friedensmarsch über 8.000 Meilen"
+      },
+      {
+        "id": "1793991652315mthd40ah5",
+        "title": "Giftige Bangka-Loris war nie wirklich ausgestorben"
+      },
+      {
+        "id": "1793907606024s2635r9hy",
+        "title": "Große Seeschwalben kehren an die britische Südküste zurück"
+      },
+      {
+        "id": "1793857124364imh34spkm",
+        "title": "Brasilianischer Nationalpark Pantanal erheblich erweitert"
+      },
+      {
+        "id": "1793991687622bmh7f4zst",
+        "title": "Vermont Gas bringt Geothermie zu erschwinglichen Wohnungen"
+      }
+    ]
+  },
+  {
+    "id": "17939917594065oi547svn",
+    "title": "Vom Obdachlosen zum Oscar: die Geschichte hinter Rocky und Sylvester Stallone",
+    "summary": "In den siebziger Jahren war Sylvester Stallone obdachlos in New York und arbeitete lange Tage lang Fische aus, während er Audition um Audition verpasste. Sein Ehrgeiz, Schauspieler zu werden, wurde nicht ernst genommen, auch wegen einer teilweisen Gesichtslähmung und eines Sprachproblems durch eine schwierige Geburt. Frustriert darüber, dass er immer wieder als Schurke besetzt wurde, begann er, selbst Drehbücher zu...",
+    "image_alt": "Sylvester Stallone als junger, unbekannter Schauspieler, bevor er mit Rocky weltberühmt wurde",
+    "meta_description": "Wie ein obdachloser, abgelehnter Schauspieler Sylvester Stallone zum Schöpfer des Oscargewinners Rocky aufstieg.",
+    "meta_keywords": "Sylvester Stallone, Rocky, I Play Rocky, Peter Farrelly, Anthony Ippolito, Oscar, Underdog-Geschichte",
+    "link": "https://www.bbc.com/culture/article/20261104-how-sylvester-stallone-created-underdog-icon-rocky?ocid=global_culture_rss",
+    "source": "BBC.com/culture",
+    "image": "https://ychef.files.bbci.co.uk/800x450/p0plmjc9.jpg",
+    "date": "2026-11-06T19:02:41.012Z",
+    "category": "Lifestyle",
+    "score": 8
+  },
+  {
+    "id": "17939917345584tddw5axb",
+    "title": "Satish Kumar gewinnt Future Icons Award für Friedensmarsch über 8.000 Meilen",
+    "summary": "Country & Town House hat die Gewinner der Future Icons Awards 2027 und der Future Icons Power List 2027 bekannt gegeben. Satish Kumar, Gründer der Resurgence Trust, die The Ecologist herausgibt, wurde geehrt, weil er in den sechziger Jahren ohne Geld 8.000 Meilen durch 15 Länder für den Frieden marschierte und 1991 Schumacher College gründete. Die Preise gehen an Menschen,...",
+    "image_alt": "Satish Kumar, Gründer der Resurgence Trust, geehrt mit einem Future Icons Award",
+    "meta_description": "Satish Kumar gewinnt Future Icons Award für seinen Friedensmarsch über 8.000 Meilen und die Gründung von Schumacher College.",
+    "meta_keywords": "Future Icons Awards, Satish Kumar, Resurgence Trust, Annie Lennox, Sabrina Elba, Country & Town House, Nachhaltigkeit",
+    "link": "https://theecologist.org/2026/nov/06/and-i-would-walk-8000-miles",
+    "source": "Theecologist.org",
+    "image": "https://theecologist.org/sites/default/files/styles/facebook/public/2019-01/satishkumar_2.jpg?h=2992ba0a&amp;itok=sw-KYTy5",
+    "date": "2026-11-06T19:02:16.632Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1793991704874mb5trfigv",
+    "title": "Europäischer Innovationsrat erhält 1,8 Milliarden für 2027",
+    "summary": "Die Europäische Kommission hat 1,8 Milliarden Euro Finanzierung für 2027 über den European Innovation Council (EIC) angekündigt. Mit diesem Budget möchte die Kommission die Entwicklung bahnbrechender Technologien beschleunigen und ehrgeizige Startups unterstützen. Ziel ist es, Europas Position im globalen Innovationswettbewerb zu stärken.",
+    "image_alt": "Logo des European Innovation Council mit Europäischer Flagge im Hintergrund",
+    "meta_description": "EU stellt 1,8 Milliarden Euro für Innovation 2027 über den European Innovation Council bereit, um Startups und Technologie zu fördern.",
+    "meta_keywords": "European Innovation Council, EIC, EU-Finanzierung, Innovation, Startups, Europäische Kommission, 2027",
+    "link": "https://www.openaccessgovernment.org/european-innovation-council-announces-e1-8-billion-funding-programme-for-2027/216191/",
+    "source": "Openaccessgovernment.org",
+    "image": "/assets/fallback/finance-4.jpg",
+    "date": "2026-11-06T19:01:46.780Z",
+    "category": "Finance",
+    "score": 8
+  },
+  {
+    "id": "1793991687622bmh7f4zst",
+    "title": "Vermont Gas bringt Geothermie zu erschwinglichen Wohnungen",
+    "summary": "Vermont Gas hat einen bahnbrechenden Deal mit dem Geothermie-Entwickler Dandelion Energy geschlossen, um das 44 Wohneinheiten umfassende Projekt Riggs Meadow in Hinesburg mit Geothermie-Heizung und -Kühlung auszustatten. Es ist das erste Projekt in den USA, bei dem ein Versorgungsunternehmen die Anlagen selbst besitzt und verwaltet wie Gasleitungen. Die Bohrarbeiten beginnen Anfang 2027, Bewohner können Ende des Jahres einziehen. Jede Wohnung...",
+    "image_alt": "Bohranlage für ein Geothermie-Heizsystem bei einem erschwinglichen Wohnungsprojekt",
+    "meta_description": "Vermont Gas und Dandelion Energy bringen Geothermie zu erschwinglichen Wohnungen mit bis zu 40% niedrigeren Energiekosten.",
+    "meta_keywords": "Geothermische Energie, Vermont Gas, Dandelion Energy, erschwingliche Wohnungen, Energieeinsparung, nachhaltige Heizung",
+    "link": "https://www.goodnewsnetwork.org/geothermal-utilities-power-wave-of-us-affordable-housing-with-40-energy-savings/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Geothermal-boring-at-Riggs-Meadow-Housing-Development-credit-Dandelion-Energy-released.jpg",
+    "date": "2026-11-06T19:01:29.621Z",
+    "category": "Environment",
+    "score": 8
+  },
+  {
+    "id": "1793991652315mthd40ah5",
+    "title": "Giftige Bangka-Loris war nie wirklich ausgestorben",
+    "summary": "Der Bangka-Slow-Loris, ein Primat, der seit den 1930er Jahren nicht mehr wissenschaftlich beobachtet worden war und 2015 als möglicherweise ausgestorben galt, hat die ganze Zeit überlebt. Das entdeckten österreichische Wissenschaftler dank eines Feldführers aus dem Jahr 2022, der auf das Alobi Wildlife Rescue Center auf der Insel Bangka verwies. Dieses Zentrum rettet und setzt die Tiere seit 2015 wieder aus,...",
+    "image_alt": "Bangka-Slow-Loris mit großen Augen in der Natur",
+    "meta_description": "Bangka-Slow-Loris, lange für ausgestorben befunden, lebt dank lokalen Rettungszentrums seit Jahren sicher in der Wildnis.",
+    "meta_keywords": "Bangka-Slow-Loris, ausgestorben, Alobi Wildlife Rescue Center, giftiger Primat, Indonesien, Naturschutz",
+    "link": "https://www.goodnewsnetwork.org/venomous-primate-believed-extinct-for-100-years-was-hiding-in-plain-sight-all-along/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/The-Bangka-slow-loris-credit-Gunay-M.E.-CC-4.0.-BY-SA.jpg",
+    "date": "2026-11-06T19:00:55.547Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
     "id": "1793943382665j7gwcx3pt",
     "title": "Solar-Kits verändern die Katastrophenhilfe",
     "summary": "Solar-Kits ermöglichen einen neuen Ansatz in der Katastrophenhilfe. Laut The Optimist Daily verändert diese Form der Solarenergie die Art und Weise, wie Hilfe nach Katastrophen organisiert und bereitgestellt wird.",
@@ -2332,43 +2439,6 @@
     "score": 9
   },
   {
-    "id": "dg-20260928-environment",
-    "type": "digest",
-    "digest_date": "2026-09-28",
-    "title": "Menschen und Tiere finden zueinander: gute Nachrichten zum Naturschutz",
-    "summary": "Diese Woche zeigt sich, wie oft Menschen und Natur tatsächlich zusammenpassen, statt sich gegenüberzustehen. Von Bauern, die Land abtreten, bis zu Fischern und Jägern, die zu Schützern werden: überall auf der Welt entstehen neue Wege, um Tieren und Ökosystemen Raum zu geben, ohne lokale Gemeinden zu vergessen. In Tansania gaben 368 Bauern Land im Kilombero-Tal ab, damit Elefanten wieder sicher zwischen den Udzungwa-Bergen und dem Nyerere National Park wandern können [1]. Nach sieben Jahren Vorbereitung erhielt dieser Korridor im April 2025 offiziellen Schutz. Wildkameras registrierten bereits mehr als tausend Säugetiere, die die Passage nutzen, von Elefanten bis zu Honigdachsen. Die...",
-    "image_alt": "Menschen und Tiere finden zueinander: gute Nachrichten zum Naturschutz",
-    "meta_description": "Von Elefantenkorridoren bis zu geschützten Meeren: die positiven Naturmeldungen vom 28. September 2026 auf einen Blick, mit verbindenden Geschichten.",
-    "meta_keywords": "Environment",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abbea7197fe67679528096d_6abbea377983489d5cd8dce0_trail-cameras-wildlife-corridor-tanzania-featured.jpeg",
-    "date": "2026-09-29T17:57:05.078Z",
-    "category": "Environment",
-    "refs": [
-      {
-        "id": "1790704405966fz37a0dpl",
-        "title": "Tansanische Bauern geben Land an Elefanten zurück"
-      },
-      {
-        "id": "1790704221015snvd30kdl",
-        "title": "Bezahlte Fotos machen Jäger zu Schützern von Borneos Orang-Utans"
-      },
-      {
-        "id": "1790704188618teyxk6yw4",
-        "title": "Asháninka-Gemeinde verhindert Waldbrände in Peru"
-      },
-      {
-        "id": "1790657218277cgwve7kni",
-        "title": "Cradle to Cradle: alles wiederverwenden statt recyceln"
-      },
-      {
-        "id": "1790704261430q3gkch2zq",
-        "title": "Norwegen schützt Andfjorden: Wale und Korallen sicher"
-      }
-    ]
-  },
-  {
     "id": "dg-20260928-science",
     "type": "digest",
     "digest_date": "2026-09-28",
@@ -2480,75 +2550,5 @@
     "date": "2026-09-29T17:51:55.724Z",
     "category": "Health",
     "score": 8
-  },
-  {
-    "id": "1790704288436yrrol00ab",
-    "title": "Studentinnen benennen 309 Millionen Jahre alten Jeanerpeton mazonensis nach ihren Müttern",
-    "summary": "Die Studentenwissenschaftlerinnen Allison Sefcovic und Payton Kohlberg haben eine neu identifizierte frühe Amphibienart nach ihren Müttern benannt, die beide Jean hießen. Jeanerpeton mazonensis lebte vor 309 Millionen Jahren, lange vor den Dinosauriern, in der Gegend des heutigen Chicago, damals ein sumpfiges Flussdelta. Das Tier ähnelte einem Salamander, war aber gedrungen und mollig wie ein Frosch. Das Fossil wurde vor Jahren...",
-    "image_alt": "Fossil der frühen Amphibienart Jeanerpeton mazonensis aus Mazon Creek",
-    "meta_description": "Studentinnen benennen 309 Millionen Jahre alte Amphibienart Jeanerpeton mazonensis nach ihren Müttern bei Entdeckung im Field Museum.",
-    "meta_keywords": "Jeanerpeton mazonensis, Fossil, Field Museum, Mazon Creek, Paläontologie, Amphibie, Women in Science",
-    "link": "https://www.goodnewsnetwork.org/newly-identified-frog-like-creature-named-by-student-scientists-after-their-moms/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Allison-Sefcovic-and-Payton-Kohlberg-hold-epoxy-sculptures-of-new-species-Jeanerpeton-mazonensis-Credit-Chicago-Field-Museum.jpg",
-    "date": "2026-09-29T17:51:29.602Z",
-    "category": "Science",
-    "score": 8
-  },
-  {
-    "id": "1790704261430q3gkch2zq",
-    "title": "Norwegen schützt Andfjorden: Wale und Korallen sicher",
-    "summary": "Norwegen hat am 18. September ein neues Meeresschutzgebiet eingerichtet: das Andfjorden Marine Protected Area, das etwa 714 Quadratmeilen groß ist (fast 260.000 Fußballfelder). Das Gebiet liegt im Norden von Nordland und im Süden von Troms und umfasst Gewässer bei Andøy, Harstad und Senja. Es beherbergt Korallenriffe, Korallengärten, Schwamm- und Seefedergemeinden, Kelptangwälder, Muschelkalk- und Maërlbetten, die als Laich-, Aufzucht- und Nahrungsgebiet...",
-    "image_alt": "Luftaufnahme der Andfjorden in Norwegen mit Walen und einer reichen Küstenlandschaft",
-    "meta_description": "Norwegen schützt die Andfjorden: 714 Quadratmeilen Korallen, Wale und Seevögel erhalten Status als Meeresschutzgebiet.",
-    "meta_keywords": "Andfjorden, Meeresschutzgebiet, Norwegen, Wale, Seevögel, Korallenriffe, Biodiversität",
-    "link": "https://www.goodnewsnetwork.org/norways-newest-marine-protected-area-shelters-rich-marine-habitat-whales-and-seabirds/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/The-seascape-of-Anfjorden-credit-credit-Jan-Harald-TomassenStatsforvaltaren-i-Troms-and-Finnmark.jpg",
-    "date": "2026-09-29T17:51:02.909Z",
-    "category": "Environment",
-    "score": 8
-  },
-  {
-    "id": "1790704221015snvd30kdl",
-    "title": "Bezahlte Fotos machen Jäger zu Schützern von Borneos Orang-Utans",
-    "summary": "Auf der indonesischen Insel Borneo, in der Provinz Westkalimantan, können Bewohner von 9 Dörfern Geld verdienen, indem sie Fotos oder Tonaufnahmen von Wildtieren machen. Teilnehmer verdienen bis zu 200 Dollar pro Monat, mehr bei seltenen Arten. Wo früher Vögel mit farbenfrohem Gefieder gejagt und Hirsche und Wildschweine ausgerottet wurden, um Ernten zu schützen, wollen Bewohner die Tiere nun bewahren. Das...",
-    "image_alt": "Ein Flachkopf-Katzenhai, fotografiert von einem lokalen Bewohner auf Borneo als Teil des KehatiKu-Programms",
-    "meta_description": "Auf Borneo verdienen Dorfbewohner Geld mit Tierfotos und wandeln Jäger in Schützer von Orang-Utans um.",
-    "meta_keywords": "Borneo, Orang-Utan, KehatiKu, Naturschutz, Indonesien, Borneo Futures, Wildtiere, Westkalimantan",
-    "link": "https://www.goodnewsnetwork.org/a-strategy-of-cash-for-photos-turns-animal-hunters-into-animal-protectors-in-indonesia/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/foto_pengamatan-20250924-003412_8446.jpg",
-    "date": "2026-09-29T17:50:22.444Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1790704188618teyxk6yw4",
-    "title": "Asháninka-Gemeinde verhindert Waldbrände in Peru",
-    "summary": "Waldbrände haben Peru in den letzten Jahren heimgesucht und Tausende Hektar Waldfläche zerstört. Doch einige indigene Gemeinden verzeichnen tatsächlich einen Rückgang der Brände. Das Paamari-Programm, eine Zusammenarbeit zwischen Central Asháninka of the Ene River (CARE) und der Organisation Cool Earth, schult Gemeindeglieder wie den Brigadisten Romer Quentimari Garcia, der Satellitenbilder, Drohnen und Funksysteme nutzt, um Brände frühzeitig zu erkennen. Seit...",
-    "image_alt": "Ein Brigadist der Asháninka-Gemeinde überwacht mit Satellitenbildern und Funkgeräten den Regenwald in Peru",
-    "meta_description": "Indigene Asháninka-Gemeinde in Peru kombiniert traditionelles Wissen und Technologie, um Waldbrände erfolgreich zu verhindern.",
-    "meta_keywords": "Peru, Asháninka, Waldbrände, Paamari, Cool Earth, CARE, indigene Gemeinden, Regenwald, Klima",
-    "link": "https://www.positive.news/environment/the-forest-is-life-how-indigenous-communities-in-peru-are-preventing-wildfires/",
-    "source": "Positive.News",
-    "image": "https://www.positive.news/wp-content/uploads/2026/09/RS2995_IMG_7832-1_lpr.jpg",
-    "date": "2026-09-29T17:49:52.309Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1790657218277cgwve7kni",
-    "title": "Cradle to Cradle: alles wiederverwenden statt recyceln",
-    "summary": "Die Cradle to Cradle NGO, gegründet von Nora Griefahn und Tim Janßen im Jahr 2012, zeigt, wie Produkte und Gebäude nach dem Cradle to Cradle-Prinzip gestaltet werden können: Materialien sind entweder biologisch und biologisch abbaubar oder technisch und endlos wiederverwendbar. Beispiele sind das Shift Phone, ein zerlegbares modulares Smartphone, und Desso-Teppich, dessen EcoBase-Schicht getrennt und recycelt werden kann. Auch der...",
-    "image_alt": "Büroraum der Cradle to Cradle NGO nach zirkulären Designprinzipien eingerichtet",
-    "meta_description": "Cradle to Cradle NGO zeigt, wie Produkte und Gebäude vollständig wiederverwendbar oder kompostierbar gestaltet werden können.",
-    "meta_keywords": "Cradle to Cradle, Zirkularwirtschaft, Wiederverwendung, Kompostierung, nachhaltiges Bauen, Nora Griefahn, Michael Braungart",
-    "link": "https://reasonstobecheerful.world/forget-recycling-what-if-we-could-compost-or-reuse-everything/",
-    "source": "ReasonsToBeCheerful.world",
-    "image": "https://reasonstobecheerful.world/wp-content/uploads/2026/09/33515_3-scaled.jpg",
-    "date": "2026-09-29T04:47:00.368Z",
-    "category": "Environment",
-    "score": 9
   }
 ]

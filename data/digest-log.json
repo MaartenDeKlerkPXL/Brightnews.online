@@ -1,5 +1,27 @@
 [
   {
+    "datum": "2026-11-06T19:03:46.769Z",
+    "dag": "2026-11-05",
+    "categorie": "Environment",
+    "ids": [
+      "17939917345584tddw5axb",
+      "1793991652315mthd40ah5",
+      "1793907606024s2635r9hy",
+      "1793857124364imh34spkm",
+      "1793991687622bmh7f4zst"
+    ],
+    "prompthash": "fd561df11314",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 13811,
+    "woorden": {
+      "nl": 369,
+      "en": 393,
+      "de": 365,
+      "fr": 442,
+      "es": 418
+    }
+  },
+  {
     "datum": "2026-11-05T19:41:38.696Z",
     "dag": "2026-11-04",
     "categorie": "Science",

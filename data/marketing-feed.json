@@ -1,10 +1,26 @@
 {
- "gegenereerd": "2026-11-06T05:36:24.884Z",
+ "gegenereerd": "2026-11-06T19:03:47.277Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "17939917345584tddw5axb",
+     "titel": "Satish Kumar wint Future Icons Award voor vredeswandeling van 8.000 mijl",
+     "teaser": "Country & Town House heeft de winnaars van de Future Icons Awards 2027 en de Future Icons Power List 2027 bekendgemaakt. Satish Kumar, oprichter van de Resurgence Trust die The Ecologist uitgeeft, werd geëerd omdat hij in de jaren zestig zonder geld 8.000 mijl door 15 landen liep voor vrede en in 1991 Schumacher College oprichtte. De prijzen gaan naar...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/satish-kumar-wint-future-icons-award-voor-vredeswandeling-van-8-000-mijl-17939917345584tddw5axb.html"
+    },
+    {
+     "id": "1793991652315mthd40ah5",
+     "titel": "Giftige Bangka-loris blijkt al die tijd niet uitgestorven",
+     "teaser": "De Bangka slow loris, een primaat die sinds de jaren 30 niet meer wetenschappelijk was waargenomen en in 2015 als mogelijk uitgestorven gold, blijkt al die tijd te hebben overleefd. Dat ontdekten Oostenrijkse wetenschappers dankzij een veldgids uit 2022 die verwees naar het Alobi Wildlife Rescue Center op het eiland Bangka. Dit centrum redt en herintroduceert de dieren al sinds...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/giftige-bangka-loris-blijkt-al-die-tijd-niet-uitgestorven-1793991652315mthd40ah5.html"
+    },
     {
      "id": "1793943382665j7gwcx3pt",
      "titel": "Solar kits veranderen rampenhulp",
@@ -28,25 +44,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/grote-sterns-keren-terug-naar-britse-zuidkust-na-vogelgriep-1793907606024s2635r9hy.html"
-    },
-    {
-     "id": "1793857142350b36d1cek1",
-     "titel": "Gepersonaliseerde hersentherapie geeft 68 procent remissie bij PTSS",
-     "teaser": "Een gepersonaliseerde vorm van hersentherapie zorgt voor remissie bij 68 procent van de mensen met PTSS. Dit percentage wordt genoemd in een bericht van The Optimist Daily, al ontbreken verdere details over de precieze werking, de onderzoeksopzet of de betrokken onderzoekers. Het nieuws wordt gepresenteerd als een positieve ontwikkeling op het gebied van geestelijke gezondheidszorg en technologie.",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/nl/gepersonaliseerde-hersentherapie-geeft-68-procent-remissie-bij-ptss-1793857142350b36d1cek1.html"
-    },
-    {
-     "id": "1793857124364imh34spkm",
-     "titel": "Braziliaans Nationaal Park Pantanal Fors Uitgebreid",
-     "teaser": "Braziliaanse milieuautoriteiten hebben het Pantanal Matogrossense Nationaal Park met meer dan 25% uitgebreid: van 523 vierkante mijl naar 185 vierkante mijl extra, ongeveer gelijk aan het toevoegen van het Amerikaanse Redwoods National Park. De uitbreiding beschermt de Pantanal, 's werelds grootste overstroomde graslanden en een van de rijkste en meest kwetsbare biomen ter wereld. Hier leven 463 vogelsoorten, 269 vissoorten,...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/braziliaans-nationaal-park-pantanal-fors-uitgebreid-1793857124364imh34spkm.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261105-environment",
+     "titel": "Terugkeer, bescherming en warmte: het milieunieuws van begin november",
+     "categorie": "Environment",
+     "dag": "2026-11-05",
+     "url": "https://brightnews.online/articles/nl/terugkeer-bescherming-en-warmte-het-milieunieuws-van-begin-november-dg-20261105-environment.html"
+    },
     {
      "id": "dg-20261104-science",
      "titel": "Chocolade uit Reading, koraal dat geneest en gratis publiceren voor heel Europa",
@@ -65,6 +72,22 @@
   },
   "en": {
    "top": [
+    {
+     "id": "17939917345584tddw5axb",
+     "titel": "Satish Kumar wins Future Icons Award for 8,000-mile peace walk",
+     "teaser": "Country & Town House has announced the winners of the Future Icons Awards 2027 and the Future Icons Power List 2027. Satish Kumar, founder of the Resurgence Trust which publishes The Ecologist, was honoured for walking 8,000 miles through 15 countries in the 1960s without money for peace and for founding Schumacher College in 1991. The awards recognise people, brands...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/satish-kumar-wins-future-icons-award-for-8-000-mile-peace-walk-17939917345584tddw5axb.html"
+    },
+    {
+     "id": "1793991652315mthd40ah5",
+     "titel": "Toxic Bangka loris turns out not to have gone extinct after all",
+     "teaser": "The Bangka slow loris, a primate that had not been scientifically observed since the 1930s and was considered possibly extinct in 2015, has apparently survived all along. Austrian scientists discovered this thanks to a 2022 field guide that referenced the Alobi Wildlife Rescue Center on the island of Bangka. This center has been rescuing and reintroducing the animals since 2015,...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/toxic-bangka-loris-turns-out-not-to-have-gone-extinct-after-all-1793991652315mthd40ah5.html"
+    },
     {
      "id": "1793943382665j7gwcx3pt",
      "titel": "Solar kits transform disaster relief",
@@ -88,25 +111,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/en/great-terns-return-to-british-south-coast-after-bird-flu-1793907606024s2635r9hy.html"
-    },
-    {
-     "id": "1793857142350b36d1cek1",
-     "titel": "Personalized brain therapy achieves 68 percent remission in PTSD",
-     "teaser": "A personalized form of brain therapy results in remission for 68 percent of people with PTSD. This figure is cited in a report from The Optimist Daily, though further details about the precise mechanism, study design, or researchers involved are lacking. The news is presented as a positive development in mental health care and technology.",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/en/personalized-brain-therapy-achieves-68-percent-remission-in-ptsd-1793857142350b36d1cek1.html"
-    },
-    {
-     "id": "1793857124364imh34spkm",
-     "titel": "Brazil's Pantanal National Park Significantly Expanded",
-     "teaser": "Brazilian environmental authorities have expanded the Pantanal Matogrossense National Park by more than 25%: from 523 square miles to 185 additional square miles, roughly equivalent to adding the American Redwoods National Park. The expansion protects the Pantanal, the world's largest flooded grasslands and one of the richest and most vulnerable biomes on Earth. It is home to 463 bird species,...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/brazil-s-pantanal-national-park-significantly-expanded-1793857124364imh34spkm.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261105-environment",
+     "titel": "Return, protection and warmth: the environmental news from early November",
+     "categorie": "Environment",
+     "dag": "2026-11-05",
+     "url": "https://brightnews.online/articles/en/return-protection-and-warmth-the-environmental-news-from-early-november-dg-20261105-environment.html"
+    },
     {
      "id": "dg-20261104-science",
      "titel": "Chocolate from Reading, healing coral and free publishing across Europe",
@@ -125,6 +139,22 @@
   },
   "de": {
    "top": [
+    {
+     "id": "17939917345584tddw5axb",
+     "titel": "Satish Kumar gewinnt Future Icons Award für Friedensmarsch über 8.000 Meilen",
+     "teaser": "Country & Town House hat die Gewinner der Future Icons Awards 2027 und der Future Icons Power List 2027 bekannt gegeben. Satish Kumar, Gründer der Resurgence Trust, die The Ecologist herausgibt, wurde geehrt, weil er in den sechziger Jahren ohne Geld 8.000 Meilen durch 15 Länder für den Frieden marschierte und 1991 Schumacher College gründete. Die Preise gehen an Menschen,...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/satish-kumar-gewinnt-future-icons-award-fur-friedensmarsch-uber-8-000-meilen-17939917345584tddw5axb.html"
+    },
+    {
+     "id": "1793991652315mthd40ah5",
+     "titel": "Giftige Bangka-Loris war nie wirklich ausgestorben",
+     "teaser": "Der Bangka-Slow-Loris, ein Primat, der seit den 1930er Jahren nicht mehr wissenschaftlich beobachtet worden war und 2015 als möglicherweise ausgestorben galt, hat die ganze Zeit überlebt. Das entdeckten österreichische Wissenschaftler dank eines Feldführers aus dem Jahr 2022, der auf das Alobi Wildlife Rescue Center auf der Insel Bangka verwies. Dieses Zentrum rettet und setzt die Tiere seit 2015 wieder aus,...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/giftige-bangka-loris-war-nie-wirklich-ausgestorben-1793991652315mthd40ah5.html"
+    },
     {
      "id": "1793943382665j7gwcx3pt",
      "titel": "Solar-Kits verändern die Katastrophenhilfe",
@@ -148,25 +178,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/de/gro-e-seeschwalben-kehren-an-die-britische-sudkuste-zuruck-1793907606024s2635r9hy.html"
-    },
-    {
-     "id": "1793857142350b36d1cek1",
-     "titel": "Personalisierte Hirntherapie führt zu 68 Prozent Remission bei PTBS",
-     "teaser": "Eine personalisierte Form der Hirntherapie führt bei 68 Prozent der Menschen mit PTBS zu einer Remission. Diesen Prozentsatz nennt The Optimist Daily in einer Mitteilung, wobei weitere Details zur genauen Funktionsweise, zum Forschungsdesign oder zu den beteiligten Forschern fehlen. Die Nachricht wird als positive Entwicklung im Bereich der psychischen Gesundheit und Technologie präsentiert.",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/de/personalisierte-hirntherapie-fuhrt-zu-68-prozent-remission-bei-ptbs-1793857142350b36d1cek1.html"
-    },
-    {
-     "id": "1793857124364imh34spkm",
-     "titel": "Brasilianischer Nationalpark Pantanal erheblich erweitert",
-     "teaser": "Brasilianische Umweltbehörden haben den Nationalpark Pantanal Matogrossense um mehr als 25% erweitert: von 523 Quadratmeilen auf 185 Quadratmeilen zusätzlich, etwa gleichbedeutend mit der Hinzufügung des amerikanischen Redwoods National Park. Die Erweiterung schützt das Pantanal, die größten Überschwemmungsgrasflächen der Welt und eines der reichsten und anfälligsten Biome der Erde. Hier leben 463 Vogelarten, 269 Fischarten, mehr als 100 Reptilien- und Amphibienarten...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/brasilianischer-nationalpark-pantanal-erheblich-erweitert-1793857124364imh34spkm.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261105-environment",
+     "titel": "Rückkehr, Schutz und Wärme: die Umweltnachrichten von Anfang November",
+     "categorie": "Environment",
+     "dag": "2026-11-05",
+     "url": "https://brightnews.online/articles/de/ruckkehr-schutz-und-warme-die-umweltnachrichten-von-anfang-november-dg-20261105-environment.html"
+    },
     {
      "id": "dg-20261104-science",
      "titel": "Schokolade aus Reading, heilende Korallen und kostenlose Veröffentlichungen für ganz Europa",
@@ -185,6 +206,22 @@
   },
   "fr": {
    "top": [
+    {
+     "id": "17939917345584tddw5axb",
+     "titel": "Satish Kumar remporte le Future Icons Award pour sa marche pour la paix de 8 000 miles",
+     "teaser": "Country & Town House a annoncé les lauréats des Future Icons Awards 2027 et de la Future Icons Power List 2027. Satish Kumar, fondateur de la Resurgence Trust qui édite The Ecologist, a été honoré pour avoir parcouru 8 000 miles à pied sans argent à travers 15 pays dans les années soixante pour la paix et pour avoir fondé...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/satish-kumar-remporte-le-future-icons-award-pour-sa-marche-pour-la-paix-de-8-000-17939917345584tddw5axb.html"
+    },
+    {
+     "id": "1793991652315mthd40ah5",
+     "titel": "Le loris lent de Bangka n'a jamais disparu",
+     "teaser": "Le loris lent de Bangka, un primate qui n'avait pas été observé scientifiquement depuis les années 30 et était considéré comme possiblement éteint en 2015, a en réalité survécu tout ce temps. Des scientifiques autrichiens l'ont découvert grâce à un guide de terrain de 2022 qui mentionnait le Alobi Wildlife Rescue Center sur l'île de Bangka. Ce centre sauve et...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/le-loris-lent-de-bangka-n-a-jamais-disparu-1793991652315mthd40ah5.html"
+    },
     {
      "id": "1793943382665j7gwcx3pt",
      "titel": "Les kits solaires transforment l'aide d'urgence",
@@ -208,25 +245,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/fr/les-grandes-sternes-reviennent-sur-la-cote-sud-britannique-apres-la-grippe-aviai-1793907606024s2635r9hy.html"
-    },
-    {
-     "id": "1793857142350b36d1cek1",
-     "titel": "Une thérapie cérébrale personnalisée offre 68 % de rémission dans le TSPT",
-     "teaser": "Une forme personnalisée de thérapie cérébrale permet une rémission chez 68 % des personnes atteintes de TSPT. Ce pourcentage est mentionné dans un article de The Optimist Daily, bien que des détails supplémentaires sur le fonctionnement précis, la conception de l'étude ou les chercheurs impliqués fassent défaut. L'information est présentée comme une évolution positive dans le domaine de la santé...",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/fr/une-therapie-cerebrale-personnalisee-offre-68-de-remission-dans-le-tspt-1793857142350b36d1cek1.html"
-    },
-    {
-     "id": "1793857124364imh34spkm",
-     "titel": "Le parc national du Pantanal au Brésil considérablement agrandi",
-     "teaser": "Les autorités environnementales brésiliennes ont agrandi le parc national Pantanal Matogrossense de plus de 25 % : de 523 milles carrés à 185 milles carrés supplémentaires, ce qui équivaut approximativement à l'ajout du Redwoods National Park américain. Cette expansion protège le Pantanal, les plus grands prairies inondables du monde et l'un des biomes les plus riches et les plus fragiles...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/le-parc-national-du-pantanal-au-bresil-considerablement-agrandi-1793857124364imh34spkm.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261105-environment",
+     "titel": "Retour, protection et chaleur : les nouvelles environnementales de début novembre",
+     "categorie": "Environment",
+     "dag": "2026-11-05",
+     "url": "https://brightnews.online/articles/fr/retour-protection-et-chaleur-les-nouvelles-environnementales-de-debut-novembre-dg-20261105-environment.html"
+    },
     {
      "id": "dg-20261104-science",
      "titel": "Du chocolat de Reading, du corail qui guérit et la publication gratuite pour toute l'Europe",
@@ -245,6 +273,22 @@
   },
   "es": {
    "top": [
+    {
+     "id": "17939917345584tddw5axb",
+     "titel": "Satish Kumar gana el Future Icons Award por su caminata por la paz de 8.000 millas",
+     "teaser": "Country & Town House ha anunciado los ganadores de los Future Icons Awards 2027 y la Future Icons Power List 2027. Satish Kumar, fundador de Resurgence Trust que publica The Ecologist, fue honrado por haber caminado 8.000 millas sin dinero a través de 15 países en los años sesenta en favor de la paz y por haber fundado Schumacher College...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/satish-kumar-gana-el-future-icons-award-por-su-caminata-por-la-paz-de-8-000-mill-17939917345584tddw5axb.html"
+    },
+    {
+     "id": "1793991652315mthd40ah5",
+     "titel": "El lóris lento de Bangka venenoso no estaba extinto después de todo",
+     "teaser": "El lóris lento de Bangka, un primate que no había sido observado científicamente desde los años 30 y se consideraba posiblemente extinto en 2015, ha estado vivo todo este tiempo. Científicos austriacos lo descubrieron gracias a una guía de campo de 2022 que hacía referencia al Alobi Wildlife Rescue Center en la isla de Bangka. Este centro ha estado rescatando...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/el-loris-lento-de-bangka-venenoso-no-estaba-extinto-despues-de-todo-1793991652315mthd40ah5.html"
+    },
     {
      "id": "1793943382665j7gwcx3pt",
      "titel": "Los kits solares transforman la ayuda en desastres",
@@ -268,25 +312,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/es/los-charranes-mayores-regresan-a-la-costa-sur-britanica-tras-la-gripe-aviar-1793907606024s2635r9hy.html"
-    },
-    {
-     "id": "1793857142350b36d1cek1",
-     "titel": "Terapia cerebral personalizada logra 68 por ciento de remisión en TEPT",
-     "teaser": "Una forma personalizada de terapia cerebral logra remisión en el 68 por ciento de las personas con TEPT. Este porcentaje se menciona en un artículo de The Optimist Daily, aunque faltan más detalles sobre el funcionamiento exacto, el diseño del estudio o los investigadores involucrados. La noticia se presenta como un desarrollo positivo en el campo de la salud mental...",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/es/terapia-cerebral-personalizada-logra-68-por-ciento-de-remision-en-tept-1793857142350b36d1cek1.html"
-    },
-    {
-     "id": "1793857124364imh34spkm",
-     "titel": "Parque Nacional Pantanal de Brasil se expande significativamente",
-     "teaser": "Las autoridades ambientales brasileñas han ampliado el Parque Nacional Pantanal Matogrossense en más del 25%: de 523 millas cuadradas a 185 millas cuadradas adicionales, aproximadamente equivalente a añadir el Redwoods National Park estadounidense. La expansión protege el Pantanal, los humedales más grandes del mundo y uno de los biomas más ricos y vulnerables del planeta. Aquí viven 463 especies de...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/parque-nacional-pantanal-de-brasil-se-expande-significativamente-1793857124364imh34spkm.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261105-environment",
+     "titel": "Regreso, protección y calor: las noticias ambientales de principios de noviembre",
+     "categorie": "Environment",
+     "dag": "2026-11-05",
+     "url": "https://brightnews.online/articles/es/regreso-proteccion-y-calor-las-noticias-ambientales-de-principios-de-noviembre-dg-20261105-environment.html"
+    },
     {
      "id": "dg-20261104-science",
      "titel": "Chocolate de Reading, coral que sana y publicación gratuita para toda Europa",
