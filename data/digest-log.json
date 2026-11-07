@@ -1,5 +1,25 @@
 [
   {
+    "datum": "2026-11-07T17:34:53.234Z",
+    "dag": "2026-11-06",
+    "categorie": "Lifestyle",
+    "ids": [
+      "1793943368286vof54g93p",
+      "1794072836263vh3ooew93",
+      "17939917594065oi547svn"
+    ],
+    "prompthash": "fd561df11314",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 11417,
+    "woorden": {
+      "nl": 401,
+      "en": 394,
+      "de": 395,
+      "fr": 454,
+      "es": 424
+    }
+  },
+  {
     "datum": "2026-11-06T19:03:46.769Z",
     "dag": "2026-11-05",
     "categorie": "Environment",
@@ -1263,28 +1283,6 @@
       "de": 326,
       "fr": 391,
       "es": 377
-    }
-  },
-  {
-    "datum": "2026-09-06T04:15:38.532Z",
-    "dag": "2026-09-05",
-    "categorie": "Science",
-    "ids": [
-      "1788647709263hp99h6be9",
-      "1788647579010wxcreq06i",
-      "1788646234804g1sgv91ia",
-      "17886485649093lmuettpf",
-      "178864553146221lp57tcj"
-    ],
-    "prompthash": "da803f5c2a08",
-    "model": "moeder+vertaal (anthropic)",
-    "tokens": 13868,
-    "woorden": {
-      "nl": 358,
-      "en": 348,
-      "de": 344,
-      "fr": 411,
-      "es": 369
     }
   }
 ]

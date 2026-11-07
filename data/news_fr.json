@@ -1,5 +1,48 @@
 [
   {
+    "id": "dg-20261106-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-11-06",
+    "title": "Les persévérants et les rêveurs : l'actualité qui a marqué cette semaine",
+    "summary": "Parfois, il semble que la vie donne à chacun les mêmes chances, mais les histoires de cette semaine racontent autre chose : des gens qui ont trouvé leur propre chemin, aussi long ou sinueux soit-il. D'un ranch au Montana aux rues de Hull et d'un plateau de cinéma consacré à un boxeur que personne n'avait vu venir, il s'agit toujours de persévérance et de trouver une place où l'on est reconnu. Au Montana, près du parc national de Yellowstone, Erik's Ranch & Retreats fonctionne entièrement grâce au travail de personnes autistes [1]. Elles y sont guides, wranglers, cuisiniers ou concierges,...",
+    "image_alt": "Les persévérants et les rêveurs : l'actualité qui a marqué cette semaine",
+    "meta_description": "D'un ranch pour employés autistes à la réunion de Bushby et au Rocky de Stallone : l'actualité lifestyle chaleureuse de cette semaine.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://reasonstobecheerful.world/wp-content/uploads/2026/10/EriksRanch-010-scaled.jpeg",
+    "date": "2026-11-07T17:34:53.234Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "1793943368286vof54g93p",
+        "title": "Erik's Ranch au Montana : des guides autistes et des wranglers accueillent les visiteurs"
+      },
+      {
+        "id": "1794072836263vh3ooew93",
+        "title": "Karl Bushby embrasse sa mère après 28 ans de marche autour du monde"
+      },
+      {
+        "id": "17939917594065oi547svn",
+        "title": "De sans-abri à Oscar : l'histoire de Rocky et Sylvester Stallone"
+      }
+    ]
+  },
+  {
+    "id": "1794072836263vh3ooew93",
+    "title": "Karl Bushby embrasse sa mère après 28 ans de marche autour du monde",
+    "summary": "L'aventurier britannique Karl Bushby est revenu dans sa ville natale de Hull après 28 ans, où il a embrassé sa mère Angela en larmes. L'ancien parachutiste a quitté son domicile en 1998 pour une expédition de 31 000 milles à travers 30 pays, entièrement à pied. En chemin, il a affronté le Darien Gap, a été arrêté en Russie et...",
+    "image_alt": "Karl Bushby embrasse sa mère Angela au portail de sa maison à Hull après 28 ans de marche",
+    "meta_description": "L'aventurier Karl Bushby embrasse sa mère à Hull après 28 ans et 31 000 milles de marche autour du monde.",
+    "meta_keywords": "Karl Bushby, marche mondiale, Hull, Darien Gap, mer Caspienne, traversée de la Manche, détroit de Béring, aventurier",
+    "link": "https://www.goodnewsnetwork.org/adventurer-finally-hugs-mom-after-28-year-walk-around-the-world-from-home-in-uk/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Karl-Bushby-reunites-with-mom-after-walking-around-world-–-SWNS.jpeg",
+    "date": "2026-11-07T17:33:59.458Z",
+    "category": "Lifestyle",
+    "score": 8
+  },
+  {
     "id": "1794027777393q7fy9vdx3",
     "title": "Le monde rachète le Rothbury Estate pour restaurer la nature",
     "summary": "Le Rothbury Estate en Northumberland, propriété des ducs de Northumberland depuis le 13e siècle pendant 800 ans, a été acquis par les Wildlife Trusts. Plus de 25 000 donateurs de 50 pays ont réuni ensemble 30 millions de livres sterling pour ce domaine de 9 400 hectares. Il deviendra partie intégrante d'un corridor naturel de 40 miles entre Druridge Bay...",
@@ -2521,34 +2564,6 @@
     "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6334e4bcff7154be8b85dd6a_what-is-pizzamas.jpg",
     "date": "2026-09-29T17:54:27.205Z",
     "category": "Health",
-    "score": 9
-  },
-  {
-    "id": "1790704437768s5e1giwo8",
-    "title": "L'action chaussettes « Socktober » célèbre 15 ans de solidarité locale",
-    "summary": "Socktober a commencé il y a 15 ans quand des lycéens ont voulu aider après avoir appris que beaucoup de personnes dans leur région étaient sans abri ou circulaient entre les centres d'accueil. Un coup de téléphone au centre d'accueil local a révélé que les chaussettes étaient justement très nécessaires mais peu données. Des écoles, des églises et des entreprises...",
-    "image_alt": "Des bénévoles trient les chaussettes données pour un centre d'accueil pour sans-abri local pendant Socktober",
-    "meta_description": "Socktober célèbre 15 ans : d'une idée d'étudiants à une collecte de chaussettes mondiale pour les sans-abri.",
-    "meta_keywords": "Socktober, collecte de chaussettes, centre d'accueil pour sans-abri, Kid President, Brad Montague, bénévolat, donner des chaussettes",
-    "link": "https://www.goodgoodgood.co/articles/socktober",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/651337ee1ee8951f82c300a1_socktober-socks.jpg",
-    "date": "2026-09-29T17:53:59.585Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "1790704405966fz37a0dpl",
-    "title": "Des agriculteurs tanzaniens restituent des terres aux éléphants",
-    "summary": "Dans la vallée du Kilombero en Tanzanie, 368 agriculteurs ont cédé des terres pour offrir aux éléphants un passage sûr entre les monts Udzungwa et le Nyerere National Park. Après sept ans de préparation par le Southern Tanzania Elephant Program (STEP) et ses partenaires, le Nyerere-Udzungwa Wildlife Corridor (NUWC) a reçu une protection officielle en avril 2025, la première du...",
-    "image_alt": "Un groupe d'éléphants de savane africains traverse la vallée du Kilombero via le nouveau corridor faunique en Tanzanie.",
-    "meta_description": "368 agriculteurs cèdent des terres pour que les éléphants traversent en sécurité la vallée du Kilombero dans le premier corridor faunique protégé de Tanzanie.",
-    "meta_keywords": "éléphants, Tanzanie, corridor faunique, Udzungwa, Nyerere National Park, conservation de la nature, STEP",
-    "link": "https://www.goodgoodgood.co/articles/trail-cameras-wildlife-corridor-tanzania",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abbea7197fe67679528096d_6abbea377983489d5cd8dce0_trail-cameras-wildlife-corridor-tanzania-featured.jpeg",
-    "date": "2026-09-29T17:53:27.607Z",
-    "category": "Environment",
     "score": 9
   }
 ]
