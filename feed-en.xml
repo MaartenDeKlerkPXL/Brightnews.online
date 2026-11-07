@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-en.xml" rel="self" type="application/rss+xml"/>
         <description>A fresh pick of good news from around the world, every day. Enjoy the read!</description>
         <language>en-us</language>
-        <lastBuildDate>Fri, 06 Nov 2026 19:03:46 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 07 Nov 2026 05:03:00 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Your Daily Dose of Positivity</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>World buys Rothbury Estate for nature restoration</title>
+            <link>https://brightnews.online/articles/en/world-buys-rothbury-estate-for-nature-restoration-1794027777393q7fy9vdx3.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/world-buys-rothbury-estate-for-nature-restoration-1794027777393q7fy9vdx3.html</guid>
+            <pubDate>Sat, 07 Nov 2026 05:03:00 GMT</pubDate>
+            <description>The Rothbury Estate in Northumberland, owned by the Dukes of Northumberland for 800 years since the 13th century, has been purchased by the Wildlife Trusts. More than 25,000 donors from 50 countries raised £30 million together for the 9,400-hectare estate. It will become part of a 40-mile nature corridor between Druridge Bay and an existing nature reserve. The estate is...</description>
+            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-drone-image-of-the-site-of-the-Bronze-Age-Lordenshaw-Hill-Fort-credit-The-Wildlife-Trusts-©.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Return, protection and warmth: the environmental news from early November</title>
             <link>https://brightnews.online/articles/en/return-protection-and-warmth-the-environmental-news-from-early-november-dg-20261105-environment.html</link>
@@ -238,14 +246,6 @@
             <pubDate>Tue, 03 Nov 2026 19:14:01 GMT</pubDate>
             <description>In the English village of Botton, part of the Esk Valley Camphill Community in the North York Moors, people with and without learning disabilities live together as a community rather than as care provider and care recipient. The author visited the village through a childhood friend, Max, and took part in a conservation project on a farm field, alongside co-worker...</description>
             <enclosure url="https://www.positive.news/wp-content/uploads/2026/11/iStock-2180754914.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Looking out for each other: from a foundation born of tragedy to boxing without fear</title>
-            <link>https://brightnews.online/articles/en/looking-out-for-each-other-from-a-foundation-born-of-tragedy-to-boxing-without-f-dg-20261102-lifestyle.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/looking-out-for-each-other-from-a-foundation-born-of-tragedy-to-boxing-without-f-dg-20261102-lifestyle.html</guid>
-            <pubDate>Tue, 03 Nov 2026 05:45:20 GMT</pubDate>
-            <description>This week, our Lifestyle section showcases how people care for one another in remarkably different ways. One story follows a courageous rescue that grew into a foundation, another explores boxing as support after violence, and a third reveals a simple dinner table rule that brings families closer together. In Kerrville, Texas, the Kenli Foundation exists because of a tragic accident five years ago</description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/supplied-by-Marjohn-Riney.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

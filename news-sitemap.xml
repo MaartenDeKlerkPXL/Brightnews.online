@@ -1,6 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://brightnews.online/articles/nl/wereld-koopt-rothbury-estate-vrij-voor-natuurherstel-1794027777393q7fy9vdx3.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-07T05:03:00.215Z</news:publication_date>
+      <news:title>Wereld koopt Rothbury Estate vrij voor natuurherstel</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/world-buys-rothbury-estate-for-nature-restoration-1794027777393q7fy9vdx3.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-07T05:03:00.215Z</news:publication_date>
+      <news:title>World buys Rothbury Estate for nature restoration</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/welt-kauft-rothbury-estate-fur-naturschutz-frei-1794027777393q7fy9vdx3.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-07T05:03:00.215Z</news:publication_date>
+      <news:title>Welt kauft Rothbury Estate für Naturschutz frei</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/le-monde-rachete-le-rothbury-estate-pour-restaurer-la-nature-1794027777393q7fy9vdx3.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-07T05:03:00.215Z</news:publication_date>
+      <news:title>Le monde rachète le Rothbury Estate pour restaurer la nature</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/el-mundo-compra-la-libertad-de-rothbury-estate-para-restaurar-la-naturaleza-1794027777393q7fy9vdx3.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-07T05:03:00.215Z</news:publication_date>
+      <news:title>El mundo compra la libertad de Rothbury Estate para restaurar la naturaleza</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://brightnews.online/articles/nl/terugkeer-bescherming-en-warmte-het-milieunieuws-van-begin-november-dg-20261105-environment.html</loc>
     <news:news>
       <news:publication>
@@ -878,171 +933,6 @@
       </news:publication>
       <news:publication_date>2026-11-05T05:38:16.774Z</news:publication_date>
       <news:title>Un puzle del castillo acerca a la nieta con su abuelo silencioso</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/catherine-breed-zwemt-als-eerste-de-hele-californische-kust-1793820648815qj0f78wz7.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-04T19:30:51.408Z</news:publication_date>
-      <news:title>Catherine Breed zwemt als eerste de hele Californische kust</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/catherine-breed-becomes-first-to-swim-entire-california-coast-1793820648815qj0f78wz7.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-04T19:30:51.408Z</news:publication_date>
-      <news:title>Catherine Breed becomes first to swim entire California coast</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/catherine-breed-schwimmt-als-erste-die-gesamte-kalifornische-kuste-1793820648815qj0f78wz7.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-04T19:30:51.408Z</news:publication_date>
-      <news:title>Catherine Breed schwimmt als erste die gesamte kalifornische Küste</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/catherine-breed-nage-pour-la-premiere-fois-toute-la-cote-californienne-1793820648815qj0f78wz7.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-04T19:30:51.408Z</news:publication_date>
-      <news:title>Catherine Breed nage pour la première fois toute la côte californienne</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/catherine-breed-nada-por-primera-vez-toda-la-costa-de-california-1793820648815qj0f78wz7.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-04T19:30:51.408Z</news:publication_date>
-      <news:title>Catherine Breed nada por primera vez toda la costa de California</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/scholieren-openen-autowerkplaats-voor-publiek-in-houston-17938206195450tb2nv2m9.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-04T19:30:22.682Z</news:publication_date>
-      <news:title>Scholieren openen autowerkplaats voor publiek in Houston</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/students-open-auto-repair-shop-to-the-public-in-houston-17938206195450tb2nv2m9.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-04T19:30:22.682Z</news:publication_date>
-      <news:title>Students open auto repair shop to the public in Houston</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/schuler-eroffnen-autowerkstatt-fur-die-offentlichkeit-in-houston-17938206195450tb2nv2m9.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-04T19:30:22.682Z</news:publication_date>
-      <news:title>Schüler eröffnen Autowerkstatt für die Öffentlichkeit in Houston</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/des-lyceens-ouvrent-un-atelier-automobile-au-public-a-houston-17938206195450tb2nv2m9.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-04T19:30:22.682Z</news:publication_date>
-      <news:title>Des lycéens ouvrent un atelier automobile au public à Houston</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/estudiantes-abren-taller-de-automoviles-al-publico-en-houston-17938206195450tb2nv2m9.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-04T19:30:22.682Z</news:publication_date>
-      <news:title>Estudiantes abren taller de automóviles al público en Houston</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/student-maakt-chocoladereep-van-volledig-britse-cacao-1793820590416jpudzw0hp.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-04T19:29:54.704Z</news:publication_date>
-      <news:title>Student maakt chocoladereep van volledig Britse cacao</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/student-makes-chocolate-bar-from-entirely-british-cocoa-1793820590416jpudzw0hp.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-04T19:29:54.704Z</news:publication_date>
-      <news:title>Student makes chocolate bar from entirely British cocoa</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/studentin-stellt-schokoladenriegel-aus-britischem-kakao-her-1793820590416jpudzw0hp.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-04T19:29:54.704Z</news:publication_date>
-      <news:title>Studentin stellt Schokoladenriegel aus britischem Kakao her</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/une-etudiante-fabrique-une-tablette-de-chocolat-a-partir-de-cacao-entierement-br-1793820590416jpudzw0hp.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-04T19:29:54.704Z</news:publication_date>
-      <news:title>Une étudiante fabrique une tablette de chocolat à partir de cacao entièrement britannique</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/estudiante-elabora-una-tableta-de-chocolate-con-cacao-completamente-britanico-1793820590416jpudzw0hp.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-04T19:29:54.704Z</news:publication_date>
-      <news:title>Estudiante elabora una tableta de chocolate con cacao completamente británico</news:title>
     </news:news>
   </url>
 </urlset>

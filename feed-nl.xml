@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-nl.xml" rel="self" type="application/rss+xml"/>
         <description>Elke dag een verse selectie goed nieuws uit de hele wereld, veel leesplezier!</description>
         <language>nl-nl</language>
-        <lastBuildDate>Fri, 06 Nov 2026 19:03:46 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 07 Nov 2026 05:03:00 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Jouw Dagelijkse Dosis Positiviteit</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Wereld koopt Rothbury Estate vrij voor natuurherstel</title>
+            <link>https://brightnews.online/articles/nl/wereld-koopt-rothbury-estate-vrij-voor-natuurherstel-1794027777393q7fy9vdx3.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/nl/wereld-koopt-rothbury-estate-vrij-voor-natuurherstel-1794027777393q7fy9vdx3.html</guid>
+            <pubDate>Sat, 07 Nov 2026 05:03:00 GMT</pubDate>
+            <description>Het Rothbury Estate in Northumberland, 800 jaar eigendom van de hertogen van Northumberland sinds de 13e eeuw, is aangekocht door de Wildlife Trusts. Meer dan 25.000 donateurs uit 50 landen brachten samen £30 miljoen bijeen voor het 9.400 hectare grote landgoed. Het wordt onderdeel van een 40 mijl lange natuurcorridor tussen Druridge Bay en een bestaand natuurreservaat. Op het landgoed...</description>
+            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-drone-image-of-the-site-of-the-Bronze-Age-Lordenshaw-Hill-Fort-credit-The-Wildlife-Trusts-©.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Terugkeer, bescherming en warmte: het milieunieuws van begin november</title>
             <link>https://brightnews.online/articles/nl/terugkeer-bescherming-en-warmte-het-milieunieuws-van-begin-november-dg-20261105-environment.html</link>
@@ -238,14 +246,6 @@
             <pubDate>Tue, 03 Nov 2026 19:14:01 GMT</pubDate>
             <description>In het Engelse dorp Botton, onderdeel van de Esk Valley Camphill Community in de North York Moors, leven mensen met en zonder leerbeperking samen als gemeenschap in plaats van als zorgverlener en zorgontvanger. De auteur bezocht het dorp via een jeugdvriend, Max, en werkte mee aan een conservation project op een boerenveld, samen met co-worker Richard, vrijwilligers en bewoners van...</description>
             <enclosure url="https://www.positive.news/wp-content/uploads/2026/11/iStock-2180754914.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Zorg voor elkaar: van een stichting na een ongeluk tot boksen zonder angst</title>
-            <link>https://brightnews.online/articles/nl/zorg-voor-elkaar-van-een-stichting-na-een-ongeluk-tot-boksen-zonder-angst-dg-20261102-lifestyle.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/nl/zorg-voor-elkaar-van-een-stichting-na-een-ongeluk-tot-boksen-zonder-angst-dg-20261102-lifestyle.html</guid>
-            <pubDate>Tue, 03 Nov 2026 05:45:20 GMT</pubDate>
-            <description>Deze dagen laat de categorie Lifestyle zien hoe mensen op heel verschillende manieren voor elkaar zorgen. Het ene verhaal gaat over een moedige redding die uitgroeide tot een stichting, het andere over boksen als steun na geweld, en het derde over een simpele regel aan tafel die gezinnen dichter bij elkaar brengt. In Kerrville, Texas, bestaat de Kenli Foundation dankzij een tragisch ongeluk van vi</description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/supplied-by-Marjohn-Riney.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

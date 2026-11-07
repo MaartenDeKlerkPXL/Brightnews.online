@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-es.xml" rel="self" type="application/rss+xml"/>
         <description>Cada día una selección fresca de buenas noticias de todo el mundo. ¡Feliz lectura!</description>
         <language>es-es</language>
-        <lastBuildDate>Fri, 06 Nov 2026 19:03:46 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 07 Nov 2026 05:03:00 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Tu dosis diaria de positividad</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>El mundo compra la libertad de Rothbury Estate para restaurar la naturaleza</title>
+            <link>https://brightnews.online/articles/es/el-mundo-compra-la-libertad-de-rothbury-estate-para-restaurar-la-naturaleza-1794027777393q7fy9vdx3.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/es/el-mundo-compra-la-libertad-de-rothbury-estate-para-restaurar-la-naturaleza-1794027777393q7fy9vdx3.html</guid>
+            <pubDate>Sat, 07 Nov 2026 05:03:00 GMT</pubDate>
+            <description>El Rothbury Estate en Northumberland, durante 800 años propiedad de los duques de Northumberland desde el siglo XIII, ha sido adquirido por Wildlife Trusts. Más de 25.000 donantes de 50 países reunieron conjuntamente £30 millones para la finca de 9.400 hectáreas. Se convertirá en parte de un corredor natural de 40 millas entre Druridge Bay y una reserva natural existente....</description>
+            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-drone-image-of-the-site-of-the-Bronze-Age-Lordenshaw-Hill-Fort-credit-The-Wildlife-Trusts-©.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Regreso, protección y calor: las noticias ambientales de principios de noviembre</title>
             <link>https://brightnews.online/articles/es/regreso-proteccion-y-calor-las-noticias-ambientales-de-principios-de-noviembre-dg-20261105-environment.html</link>
@@ -238,14 +246,6 @@
             <pubDate>Tue, 03 Nov 2026 19:14:01 GMT</pubDate>
             <description>En el pueblo inglés de Botton, parte de la Esk Valley Camphill Community en North York Moors, personas con y sin discapacidad intelectual conviven como comunidad en lugar de como prestadores y receptores de cuidados. El autor visitó el pueblo a través de un amigo de juventud, Max, y participó en un proyecto de conservación en un campo agrícola, junto...</description>
             <enclosure url="https://www.positive.news/wp-content/uploads/2026/11/iStock-2180754914.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Cuidarse mutuamente: de una fundación tras un accidente al boxeo sin miedo</title>
-            <link>https://brightnews.online/articles/es/cuidarse-mutuamente-de-una-fundacion-tras-un-accidente-al-boxeo-sin-miedo-dg-20261102-lifestyle.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/es/cuidarse-mutuamente-de-una-fundacion-tras-un-accidente-al-boxeo-sin-miedo-dg-20261102-lifestyle.html</guid>
-            <pubDate>Tue, 03 Nov 2026 05:45:20 GMT</pubDate>
-            <description>Estos días, la categoría Lifestyle muestra cómo las personas se cuidan mutuamente de formas muy diferentes. Una historia trata sobre un rescate valiente que se convirtió en una fundación, otra sobre el boxeo como apoyo después de la violencia, y la tercera sobre una simple regla en la mesa que acerca a las familias. En Kerrville, Texas, existe la Kenli Foundation gracias a un trágico accidente hac</description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/supplied-by-Marjohn-Riney.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>
