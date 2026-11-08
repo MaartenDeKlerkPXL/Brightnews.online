@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-11-07T17:34:53.665Z",
+ "gegenereerd": "2026-11-08T04:58:19.882Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -60,13 +60,6 @@
      "categorie": "Environment",
      "dag": "2026-11-05",
      "url": "https://brightnews.online/articles/nl/terugkeer-bescherming-en-warmte-het-milieunieuws-van-begin-november-dg-20261105-environment.html"
-    },
-    {
-     "id": "dg-20261104-science",
-     "titel": "Chocolade uit Reading, koraal dat geneest en gratis publiceren voor heel Europa",
-     "categorie": "Science",
-     "dag": "2026-11-04",
-     "url": "https://brightnews.online/articles/nl/chocolade-uit-reading-koraal-dat-geneest-en-gratis-publiceren-voor-heel-europa-dg-20261104-science.html"
     }
    ]
   },
@@ -127,13 +120,6 @@
      "categorie": "Environment",
      "dag": "2026-11-05",
      "url": "https://brightnews.online/articles/en/return-protection-and-warmth-the-environmental-news-from-early-november-dg-20261105-environment.html"
-    },
-    {
-     "id": "dg-20261104-science",
-     "titel": "Chocolate from Reading, healing coral and free publishing across Europe",
-     "categorie": "Science",
-     "dag": "2026-11-04",
-     "url": "https://brightnews.online/articles/en/chocolate-from-reading-healing-coral-and-free-publishing-across-europe-dg-20261104-science.html"
     }
    ]
   },
@@ -194,13 +180,6 @@
      "categorie": "Environment",
      "dag": "2026-11-05",
      "url": "https://brightnews.online/articles/de/ruckkehr-schutz-und-warme-die-umweltnachrichten-von-anfang-november-dg-20261105-environment.html"
-    },
-    {
-     "id": "dg-20261104-science",
-     "titel": "Schokolade aus Reading, heilende Korallen und kostenlose Veröffentlichungen für ganz Europa",
-     "categorie": "Science",
-     "dag": "2026-11-04",
-     "url": "https://brightnews.online/articles/de/schokolade-aus-reading-heilende-korallen-und-kostenlose-veroffentlichungen-fur-g-dg-20261104-science.html"
     }
    ]
   },
@@ -261,13 +240,6 @@
      "categorie": "Environment",
      "dag": "2026-11-05",
      "url": "https://brightnews.online/articles/fr/retour-protection-et-chaleur-les-nouvelles-environnementales-de-debut-novembre-dg-20261105-environment.html"
-    },
-    {
-     "id": "dg-20261104-science",
-     "titel": "Du chocolat de Reading, du corail qui guérit et la publication gratuite pour toute l'Europe",
-     "categorie": "Science",
-     "dag": "2026-11-04",
-     "url": "https://brightnews.online/articles/fr/du-chocolat-de-reading-du-corail-qui-guerit-et-la-publication-gratuite-pour-tout-dg-20261104-science.html"
     }
    ]
   },
@@ -328,13 +300,6 @@
      "categorie": "Environment",
      "dag": "2026-11-05",
      "url": "https://brightnews.online/articles/es/regreso-proteccion-y-calor-las-noticias-ambientales-de-principios-de-noviembre-dg-20261105-environment.html"
-    },
-    {
-     "id": "dg-20261104-science",
-     "titel": "Chocolate de Reading, coral que sana y publicación gratuita para toda Europa",
-     "categorie": "Science",
-     "dag": "2026-11-04",
-     "url": "https://brightnews.online/articles/es/chocolate-de-reading-coral-que-sana-y-publicacion-gratuita-para-toda-europa-dg-20261104-science.html"
     }
    ]
   }

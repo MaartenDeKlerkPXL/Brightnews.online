@@ -1,5 +1,17 @@
 [
  {
+  "datum": "2026-11-08T04:57:55.074Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "Mayor Uses AirTag to Catch Capstone Thief who was Stealing 18th-Century Stones Across the Countryside",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Een burgemeester lost slim een diefstal op en herstelt historisch erfgoed — de kern is redding en gemeenschapszin, niet het misdrijf zelf."
+ },
+ {
   "datum": "2026-11-07T17:33:22.777Z",
   "bron": "GoodNewsNetwork.org",
   "titel": "Adventurer Finally Hugs Mom After 28-Year Walk Around the World From Home in UK",
@@ -3586,17 +3598,5 @@
   "totaal": 0,
   "besluit": "nee",
   "reden": "De tekst bevat alleen navigatie- en menuelementen, geen daadwerkelijke nieuwsinhoud over ademhaling en reactietijd."
- },
- {
-  "datum": "2026-09-30T17:44:54.264Z",
-  "bron": "NPR.org",
-  "titel": "A startup wants to build a massive nuclear-powered data center on public land in Utah",
-  "uitsluiting": "te-weinig-inhoud",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "De tekst bevat alleen navigatie- en menuelementen, geen daadwerkelijke nieuwsinhoud over het kernverhaal."
  }
 ]
