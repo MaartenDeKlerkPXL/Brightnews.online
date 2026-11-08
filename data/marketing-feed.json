@@ -1,10 +1,18 @@
 {
- "gegenereerd": "2026-11-08T04:58:19.882Z",
+ "gegenereerd": "2026-11-08T17:45:41.315Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "1794159938644e31835khm",
+     "titel": "Burgemeester vangt stenendief met AirTag in Rufford",
+     "teaser": "Een Engelse burgemeester, Matt Smith, loste zelf een diefstal op nadat de politie in het Lancashire-dorp Rufford niet kon helpen door gebrek aan camerabeelden. Vanaf mei werden stenen gestolen van een 300 jaar oude muur, met een geschatte waarde van zo'n $9.000. Nadat waarschuwingsborden niet hielpen en camera's te duur waren, plaatste Smith een Apple AirTag in een losse steen....",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/burgemeester-vangt-stenendief-met-airtag-in-rufford-1794159938644e31835khm.html"
+    },
     {
      "id": "1794027777393q7fy9vdx3",
      "titel": "Wereld koopt Rothbury Estate vrij voor natuurherstel",
@@ -30,20 +38,12 @@
      "url": "https://brightnews.online/articles/nl/giftige-bangka-loris-blijkt-al-die-tijd-niet-uitgestorven-1793991652315mthd40ah5.html"
     },
     {
-     "id": "1793943382665j7gwcx3pt",
-     "titel": "Solar kits veranderen rampenhulp",
-     "teaser": "Solar kits zorgen voor een nieuwe aanpak van rampenhulp. Volgens The Optimist Daily verandert deze vorm van zonne-energie de manier waarop hulp na rampen wordt georganiseerd en geleverd.",
-     "score": 9,
-     "categorie": "General",
-     "url": "https://brightnews.online/articles/nl/solar-kits-veranderen-rampenhulp-1793943382665j7gwcx3pt.html"
-    },
-    {
-     "id": "1793943368286vof54g93p",
-     "titel": "Erik's Ranch in Montana: autistische gidsen en wranglers verwelkomen gasten",
-     "teaser": "Bij Erik's Ranch & Retreats in Montana, nabij Yellowstone National Park, werken autistische mensen als concierges, gidsen, wranglers en koks. Veel van hen wonen ook op het 230 hectare grote terrein. Oprichtster Kathryn Nordberg begon het initiatief in 2014 vanuit zorgen over de toekomst van haar autistische zoon Erik. De hutten zijn speciaal ontworpen voor neurodivergente gasten: rustige kleuren, geluiddempende...",
-     "score": 9,
+     "id": "1794159908740k3cmzwac9",
+     "titel": "Ontsnapte parkiet Luna teruggevonden in regenput na tip automobilist",
+     "teaser": "Een parkiet genaamd Luna is terecht nadat ze was weggevlogen toen storm Boelo een keukenraam in Northampton, Engeland openblies. Een voorbijrijdende automobilist zag het vogeltje in een regenput aan de kant van de weg hoppen en waarschuwde de RSPCA. Inspecteur Richard Durant en stagiair Rosie Cowie kwamen ter plaatse en troffen Luna's snaveltje aan, piepend uit een pijp in de...",
+     "score": 8,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/erik-s-ranch-in-montana-autistische-gidsen-en-wranglers-verwelkomen-gasten-1793943368286vof54g93p.html"
+     "url": "https://brightnews.online/articles/nl/ontsnapte-parkiet-luna-teruggevonden-in-regenput-na-tip-automobilist-1794159908740k3cmzwac9.html"
     }
    ],
    "dagoverzichten": [
@@ -65,6 +65,14 @@
   },
   "en": {
    "top": [
+    {
+     "id": "1794159938644e31835khm",
+     "titel": "Mayor catches stone thief with AirTag in Rufford",
+     "teaser": "An English mayor, Matt Smith, solved a theft himself after police in the Lancashire village of Rufford could not help due to lack of camera footage. From May onwards, stones were stolen from a 300-year-old wall, with an estimated value of around $9,000. After warning signs proved ineffective and cameras were too expensive, Smith placed an Apple AirTag in a...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/mayor-catches-stone-thief-with-airtag-in-rufford-1794159938644e31835khm.html"
+    },
     {
      "id": "1794027777393q7fy9vdx3",
      "titel": "World buys Rothbury Estate for nature restoration",
@@ -90,20 +98,12 @@
      "url": "https://brightnews.online/articles/en/toxic-bangka-loris-turns-out-not-to-have-gone-extinct-after-all-1793991652315mthd40ah5.html"
     },
     {
-     "id": "1793943382665j7gwcx3pt",
-     "titel": "Solar kits transform disaster relief",
-     "teaser": "Solar kits are bringing a new approach to disaster relief. According to The Optimist Daily, this form of solar energy is changing the way aid is organized and delivered after disasters.",
-     "score": 9,
-     "categorie": "General",
-     "url": "https://brightnews.online/articles/en/solar-kits-transform-disaster-relief-1793943382665j7gwcx3pt.html"
-    },
-    {
-     "id": "1793943368286vof54g93p",
-     "titel": "Erik's Ranch in Montana: autistic guides and wranglers welcome guests",
-     "teaser": "At Erik's Ranch & Retreats in Montana, near Yellowstone National Park, autistic people work as concierges, guides, wranglers and cooks. Many of them also live on the 230-hectare property. Founder Kathryn Nordberg started the initiative in 2014 out of concern for the future of her autistic son Erik. The cabins are specially designed for neurodivergent guests: calm colors, soundproof doors...",
-     "score": 9,
+     "id": "1794159908740k3cmzwac9",
+     "titel": "Escaped parakeet Luna found in drain after motorist's tip",
+     "teaser": "A parakeet named Luna has been reunited with her owner after flying away when storm Boelo blew open a kitchen window in Northampton, England. A passing motorist spotted the little bird hopping in a roadside drain and alerted the RSPCA. Inspector Richard Durant and trainee Rosie Cowie attended the scene and found Luna's beak, chirping from a pipe in the...",
+     "score": 8,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/erik-s-ranch-in-montana-autistic-guides-and-wranglers-welcome-guests-1793943368286vof54g93p.html"
+     "url": "https://brightnews.online/articles/en/escaped-parakeet-luna-found-in-drain-after-motorist-s-tip-1794159908740k3cmzwac9.html"
     }
    ],
    "dagoverzichten": [
@@ -125,6 +125,14 @@
   },
   "de": {
    "top": [
+    {
+     "id": "1794159938644e31835khm",
+     "titel": "Bürgermeister fängt Steindieb mit AirTag",
+     "teaser": "Ein englischer Bürgermeister, Matt Smith, löste selbst einen Diebstahl auf, nachdem die Polizei im Lancashire-Dorf Rufford nicht helfen konnte, da Kamerabilder fehlten. Ab Mai wurden Steine von einer 300 Jahre alten Mauer gestohlen, mit einem geschätzten Wert von etwa $9.000. Nachdem Warnschilder nicht halfen und Kameras zu teuer waren, platzierte Smith einen Apple AirTag in einem losen Stein. Nach dem...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/burgermeister-fangt-steindieb-mit-airtag-1794159938644e31835khm.html"
+    },
     {
      "id": "1794027777393q7fy9vdx3",
      "titel": "Welt kauft Rothbury Estate für Naturschutz frei",
@@ -150,20 +158,12 @@
      "url": "https://brightnews.online/articles/de/giftige-bangka-loris-war-nie-wirklich-ausgestorben-1793991652315mthd40ah5.html"
     },
     {
-     "id": "1793943382665j7gwcx3pt",
-     "titel": "Solar-Kits verändern die Katastrophenhilfe",
-     "teaser": "Solar-Kits ermöglichen einen neuen Ansatz in der Katastrophenhilfe. Laut The Optimist Daily verändert diese Form der Solarenergie die Art und Weise, wie Hilfe nach Katastrophen organisiert und bereitgestellt wird.",
-     "score": 9,
-     "categorie": "General",
-     "url": "https://brightnews.online/articles/de/solar-kits-verandern-die-katastrophenhilfe-1793943382665j7gwcx3pt.html"
-    },
-    {
-     "id": "1793943368286vof54g93p",
-     "titel": "Erik's Ranch in Montana: autistische Guides und Wranglers heißen Gäste willkommen",
-     "teaser": "Bei Erik's Ranch & Retreats in Montana, in der Nähe des Yellowstone National Park, arbeiten autistische Menschen als Concierges, Guides, Wranglers und Köche. Viele von ihnen leben auch auf dem 230 Hektar großen Gelände. Gründerin Kathryn Nordberg startete die Initiative 2014 aus Sorge um die Zukunft ihres autistischen Sohnes Erik. Die Hütten sind speziell für neurodivergente Gäste gestaltet: ruhige Farben,...",
-     "score": 9,
+     "id": "1794159908740k3cmzwac9",
+     "titel": "Entflogener Wellensittich Luna in Regenwasserrinne gefunden – Tipp eines Autofahrers führt zum Erfolg",
+     "teaser": "Ein Wellensittich namens Luna ist wohlbehalten zurück, nachdem er davongeflogen war, als Sturm Boelo ein Küchenfenster in Northampton, England aufgerissen hatte. Ein vorbeifahrender Autofahrer entdeckte den kleinen Vogel in einer Regenwasserrinne am Straßenrand hüpfend und alarmierte die RSPCA. Inspekteur Richard Durant und Praktikantin Rosie Cowie kamen vor Ort und hörten Lunas Schnäbelchen aus einem Rohr in der Rinne piepsen. Rosie...",
+     "score": 8,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/erik-s-ranch-in-montana-autistische-guides-und-wranglers-hei-en-gaste-willkommen-1793943368286vof54g93p.html"
+     "url": "https://brightnews.online/articles/de/entflogener-wellensittich-luna-in-regenwasserrinne-gefunden-tipp-eines-autofahre-1794159908740k3cmzwac9.html"
     }
    ],
    "dagoverzichten": [
@@ -185,6 +185,14 @@
   },
   "fr": {
    "top": [
+    {
+     "id": "1794159938644e31835khm",
+     "titel": "Un maire attrape un voleur de pierres grâce à une AirTag",
+     "teaser": "Un maire anglais, Matt Smith, a résolu lui-même un vol après que la police du village de Rufford dans le Lancashire n'ait pu intervenir faute de images de caméra. Depuis mai, des pierres ont été dérobées d'un mur vieux de 300 ans, pour une valeur estimée à environ 9 000 dollars. Après que des panneaux d'avertissement se soient avérés inefficaces...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/un-maire-attrape-un-voleur-de-pierres-grace-a-une-airtag-1794159938644e31835khm.html"
+    },
     {
      "id": "1794027777393q7fy9vdx3",
      "titel": "Le monde rachète le Rothbury Estate pour restaurer la nature",
@@ -210,20 +218,12 @@
      "url": "https://brightnews.online/articles/fr/le-loris-lent-de-bangka-n-a-jamais-disparu-1793991652315mthd40ah5.html"
     },
     {
-     "id": "1793943382665j7gwcx3pt",
-     "titel": "Les kits solaires transforment l'aide d'urgence",
-     "teaser": "Les kits solaires offrent une nouvelle approche de l'aide d'urgence. Selon The Optimist Daily, cette forme d'énergie solaire transforme la manière dont l'aide après sinistre est organisée et fournie.",
-     "score": 9,
-     "categorie": "General",
-     "url": "https://brightnews.online/articles/fr/les-kits-solaires-transforment-l-aide-d-urgence-1793943382665j7gwcx3pt.html"
-    },
-    {
-     "id": "1793943368286vof54g93p",
-     "titel": "Erik's Ranch au Montana : des guides autistes et des wranglers accueillent les visiteurs",
-     "teaser": "À Erik's Ranch & Retreats au Montana, près du Yellowstone National Park, des personnes autistes travaillent comme concierges, guides, wranglers et cuisiniers. Beaucoup d'entre elles vivent également sur le domaine de 230 hectares. La fondatrice Kathryn Nordberg a lancé cette initiative en 2014, préoccupée par l'avenir de son fils autiste Erik. Les cabanes sont spécialement conçues pour les visiteurs neurodivergents...",
-     "score": 9,
+     "id": "1794159908740k3cmzwac9",
+     "titel": "La perruche Luna retrouvée dans une gouttière après le signalement d'un automobiliste",
+     "teaser": "Une perruche nommée Luna a été retrouvée après s'être envolée lorsque la tempête Boelo a ouvert une fenêtre de cuisine à Northampton, en Angleterre. Un automobiliste de passage a aperçu le petit oiseau sautillant dans une gouttière au bord de la route et a alerté la RSPCA. L'inspecteur Richard Durant et la stagiaire Rosie Cowie se sont rendus sur place...",
+     "score": 8,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/erik-s-ranch-au-montana-des-guides-autistes-et-des-wranglers-accueillent-les-vis-1793943368286vof54g93p.html"
+     "url": "https://brightnews.online/articles/fr/la-perruche-luna-retrouvee-dans-une-gouttiere-apres-le-signalement-d-un-automobi-1794159908740k3cmzwac9.html"
     }
    ],
    "dagoverzichten": [
@@ -245,6 +245,14 @@
   },
   "es": {
    "top": [
+    {
+     "id": "1794159938644e31835khm",
+     "titel": "Alcalde atrapa al ladrón de piedras con AirTag de Apple",
+     "teaser": "Un alcalde inglés, Matt Smith, resolvió por sí solo un robo después de que la policía no pudiera ayudar en el pueblo de Rufford, Lancashire, por falta de imágenes de cámaras. Desde mayo se robaban piedras de un muro de 300 años de antigüedad, con un valor estimado de unos $9.000. Después de que las señales de advertencia no funcionaran...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/alcalde-atrapa-al-ladron-de-piedras-con-airtag-de-apple-1794159938644e31835khm.html"
+    },
     {
      "id": "1794027777393q7fy9vdx3",
      "titel": "El mundo compra la libertad de Rothbury Estate para restaurar la naturaleza",
@@ -270,20 +278,12 @@
      "url": "https://brightnews.online/articles/es/el-loris-lento-de-bangka-venenoso-no-estaba-extinto-despues-de-todo-1793991652315mthd40ah5.html"
     },
     {
-     "id": "1793943382665j7gwcx3pt",
-     "titel": "Los kits solares transforman la ayuda en desastres",
-     "teaser": "Los kits solares representan un nuevo enfoque en la ayuda humanitaria tras desastres. Según The Optimist Daily, esta forma de energía solar está cambiando la manera en que se organiza y se entrega la asistencia después de catástrofes.",
-     "score": 9,
-     "categorie": "General",
-     "url": "https://brightnews.online/articles/es/los-kits-solares-transforman-la-ayuda-en-desastres-1793943382665j7gwcx3pt.html"
-    },
-    {
-     "id": "1793943368286vof54g93p",
-     "titel": "Erik's Ranch en Montana: guías y vaqueros autistas reciben a los huéspedes",
-     "teaser": "En Erik's Ranch & Retreats en Montana, cerca del Parque Nacional de Yellowstone, personas autistas trabajan como conserjes, guías, vaqueros y cocineros. Muchos de ellos también viven en el terreno de 230 hectáreas. La fundadora Kathryn Nordberg comenzó la iniciativa en 2014 por preocupaciones sobre el futuro de su hijo autista Erik. Las cabañas están especialmente diseñadas para huéspedes neurodivergentes:...",
-     "score": 9,
+     "id": "1794159908740k3cmzwac9",
+     "titel": "Encontrada la cotorra Luna escapada en una alcantarilla tras aviso de un automovilista",
+     "teaser": "Una cotorra llamada Luna ha sido recuperada después de escapar cuando la tormenta Boelo abrió una ventana de la cocina en Northampton, Inglaterra. Un automovilista que pasaba por allí vio al pequeño pájaro saltando en una alcantarilla al borde de la carretera y alertó a la RSPCA. El inspector Richard Durant y la pasante Rosie Cowie acudieron al lugar y...",
+     "score": 8,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/erik-s-ranch-en-montana-guias-y-vaqueros-autistas-reciben-a-los-huespedes-1793943368286vof54g93p.html"
+     "url": "https://brightnews.online/articles/es/encontrada-la-cotorra-luna-escapada-en-una-alcantarilla-tras-aviso-de-un-automov-1794159908740k3cmzwac9.html"
     }
    ],
    "dagoverzichten": [
