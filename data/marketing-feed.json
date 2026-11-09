@@ -1,10 +1,42 @@
 {
- "gegenereerd": "2026-11-09T05:06:33.913Z",
+ "gegenereerd": "2026-11-09T22:06:22.560Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "179426177536734o0a4akh",
+     "titel": "Tiener bouwt app Kora die autistische kinderen helpt begrijpen",
+     "teaser": "Een middelbare scholier uit New Jersey, Shashank Madala, zag hoe volwassenen de emotionele signalen van zijn autistische neefje verkeerd interpreteerden tijdens familiebijeenkomsten. Op zijn vijftiende, met slechts één informaticales achter de rug, leerde hij zichzelf machine learning en bouwde de gratis app Kora. De app biedt caregivers via een telefooncamera meerdere mogelijke interpretaties van emoties (blij, verdrietig, boos, bang, neutraal)...",
+     "score": 10,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/nl/tiener-bouwt-app-kora-die-autistische-kinderen-helpt-begrijpen-179426177536734o0a4akh.html"
+    },
+    {
+     "id": "1794261892401mgfywqisu",
+     "titel": "Victoria verbiedt onnodige operaties bij interseksekinderen",
+     "teaser": "Interseks is een menselijke eigenschap die net zo vaak voorkomt als rood haar of groene ogen. Volgens seksuologe Anne Fausto-Sterling wordt tot 1,7% van de wereldbevolking geboren met chromosomale, hormonale of anatomische variaties die afwijken van de typische definities van man of vrouw. Vaak ondergaan deze kinderen vóór hun tweede levensjaar 'corrigerende' operaties, die soms succesvol zijn maar ook kunnen...",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/nl/victoria-verbiedt-onnodige-operaties-bij-interseksekinderen-1794261892401mgfywqisu.html"
+    },
+    {
+     "id": "17942618376320zr0nsc0o",
+     "titel": "Glimwormen Keren Terug In Nosterfield Na Eeuw Afwezigheid",
+     "teaser": "De glimworm maakt een comeback in Noord-Yorkshire dankzij onbetaald werk van natuurliefhebber Peter Cooper. In zijn vrije tijd kweekt hij glimwormen in een tuinschuur en laat hij de larven los in Nosterfield Nature Reserve, waar het dier al honderd jaar niet meer was gezien. Reservebeheerder Simon Warwick prees Coopers 'rauwe passie en enthousiasme'. Nosterfield, ongeveer 600 hectare oude kalksteengroeves die...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/glimwormen-keren-terug-in-nosterfield-na-eeuw-afwezigheid-17942618376320zr0nsc0o.html"
+    },
+    {
+     "id": "1794261806053etimbu6da",
+     "titel": "Verbod op dreggen redt roze zeewier maerl bij Summer Isles",
+     "teaser": "Een tien jaar geleden ingevoerd verbod op industrieel schelpdierdreggen heeft de magenta-kleurige zeewiersoort maerl rond de Summer Isles in Schotland beschermd. Maerl vormt harde, kalkachtige knobbels op de zeebodem en biedt leefgebied voor vissen. Dankzij het verbod, afgedwongen door burgerwetenschappers en activisten zoals Diyanna Ross en de Scottish Creel Fishermen's Federation, herstelden sint-jakobsschelpen zich 'als dag en nacht', aldus visser...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/verbod-op-dreggen-redt-roze-zeewier-maerl-bij-summer-isles-1794261806053etimbu6da.html"
+    },
     {
      "id": "1794159938644e31835khm",
      "titel": "Burgemeester vangt stenendief met AirTag in Rufford",
@@ -12,36 +44,52 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/burgemeester-vangt-stenendief-met-airtag-in-rufford-1794159938644e31835khm.html"
-    },
-    {
-     "id": "1794159908740k3cmzwac9",
-     "titel": "Ontsnapte parkiet Luna teruggevonden in regenput na tip automobilist",
-     "teaser": "Een parkiet genaamd Luna is terecht nadat ze was weggevlogen toen storm Boelo een keukenraam in Northampton, Engeland openblies. Een voorbijrijdende automobilist zag het vogeltje in een regenput aan de kant van de weg hoppen en waarschuwde de RSPCA. Inspecteur Richard Durant en stagiair Rosie Cowie kwamen ter plaatse en troffen Luna's snaveltje aan, piepend uit een pijp in de...",
-     "score": 8,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/ontsnapte-parkiet-luna-teruggevonden-in-regenput-na-tip-automobilist-1794159908740k3cmzwac9.html"
-    },
-    {
-     "id": "1794072836263vh3ooew93",
-     "titel": "Karl Bushby omhelst moeder na 28 jaar wandelen rond de wereld",
-     "teaser": "Britse avonturier Karl Bushby is na 28 jaar teruggekeerd naar zijn geboortestad Hull, waar hij zijn in tranen uitbarstende moeder Angela omhelsde. De oud-parachutist vertrok in 1998 aan een tocht van 31.000 mijl door 30 landen, volledig te voet. Onderweg trotseerde hij de Darien Gap, werd hij gearresteerd in Rusland en zwom hij 170 mijl over de Kaspische Zee van...",
-     "score": 8,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/karl-bushby-omhelst-moeder-na-28-jaar-wandelen-rond-de-wereld-1794072836263vh3ooew93.html"
     }
    ],
    "dagoverzichten": [
     {
-     "id": "dg-20261106-lifestyle",
-     "titel": "Doorzetters en dromers: het nieuws dat deze week warm maakte",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-06",
-     "url": "https://brightnews.online/articles/nl/doorzetters-en-dromers-het-nieuws-dat-deze-week-warm-maakte-dg-20261106-lifestyle.html"
+     "id": "dg-20261108-environment",
+     "titel": "Natuur herstelt: glimwormen, zeewier en een landgoed krijgen nieuwe kans",
+     "categorie": "Environment",
+     "dag": "2026-11-08",
+     "url": "https://brightnews.online/articles/nl/natuur-herstelt-glimwormen-zeewier-en-een-landgoed-krijgen-nieuwe-kans-dg-20261108-environment.html"
     }
    ]
   },
   "en": {
    "top": [
+    {
+     "id": "179426177536734o0a4akh",
+     "titel": "Teen builds app Kora to help autistic children understand emotions",
+     "teaser": "A high school student from New Jersey, Shashank Madala, witnessed adults misinterpreting the emotional signals of his autistic cousin during family gatherings. At fifteen, with just one computer science class under his belt, he taught himself machine learning and built the free app Kora. The app offers caregivers multiple possible interpretations of emotions (happy, sad, angry, scared, neutral) via a...",
+     "score": 10,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/en/teen-builds-app-kora-to-help-autistic-children-understand-emotions-179426177536734o0a4akh.html"
+    },
+    {
+     "id": "1794261892401mgfywqisu",
+     "titel": "Victoria bans unnecessary surgeries on intersex children",
+     "teaser": "Intersex is a human trait that occurs as frequently as red hair or green eyes. According to sexologist Anne Fausto-Sterling, up to 1.7% of the world's population is born with chromosomal, hormonal or anatomical variations that deviate from typical definitions of male or female. Often, these children undergo 'corrective' surgeries before their second birthday, which are sometimes successful but can...",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/en/victoria-bans-unnecessary-surgeries-on-intersex-children-1794261892401mgfywqisu.html"
+    },
+    {
+     "id": "17942618376320zr0nsc0o",
+     "titel": "Glow-worms return to Nosterfield after a century away",
+     "teaser": "The glow-worm is making a comeback in North Yorkshire thanks to the unpaid work of nature enthusiast Peter Cooper. In his spare time, he breeds glow-worms in a garden shed and releases the larvae at Nosterfield Nature Reserve, where the creature has not been seen for a hundred years. Reserve manager Simon Warwick praised Cooper's „raw passion and enthusiasm\". Nosterfield,...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/glow-worms-return-to-nosterfield-after-a-century-away-17942618376320zr0nsc0o.html"
+    },
+    {
+     "id": "1794261806053etimbu6da",
+     "titel": "Ban on dredging saves pink seaweed maerl at Summer Isles",
+     "teaser": "A ban on industrial shellfish dredging introduced a decade ago has protected the magenta-coloured seaweed species maerl around the Summer Isles in Scotland. Maerl forms hard, chalky nodules on the seabed and provides habitat for fish. Thanks to the ban, enforced by citizen scientists and activists such as Diyanna Ross and the Scottish Creel Fishermen's Federation, scallop populations recovered „like...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/ban-on-dredging-saves-pink-seaweed-maerl-at-summer-isles-1794261806053etimbu6da.html"
+    },
     {
      "id": "1794159938644e31835khm",
      "titel": "Mayor catches stone thief with AirTag in Rufford",
@@ -49,36 +97,52 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/mayor-catches-stone-thief-with-airtag-in-rufford-1794159938644e31835khm.html"
-    },
-    {
-     "id": "1794159908740k3cmzwac9",
-     "titel": "Escaped parakeet Luna found in drain after motorist's tip",
-     "teaser": "A parakeet named Luna has been reunited with her owner after flying away when storm Boelo blew open a kitchen window in Northampton, England. A passing motorist spotted the little bird hopping in a roadside drain and alerted the RSPCA. Inspector Richard Durant and trainee Rosie Cowie attended the scene and found Luna's beak, chirping from a pipe in the...",
-     "score": 8,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/escaped-parakeet-luna-found-in-drain-after-motorist-s-tip-1794159908740k3cmzwac9.html"
-    },
-    {
-     "id": "1794072836263vh3ooew93",
-     "titel": "Karl Bushby embraces mother after 28 years walking around the world",
-     "teaser": "British adventurer Karl Bushby has returned to his birthplace Hull after 28 years, where he embraced his tearful mother Angela. The former parachutist set out in 1998 on a 31,000-mile journey through 30 countries, entirely on foot. Along the way, he braved the Darien Gap, was arrested in Russia and swam 170 miles across the Caspian Sea from Kazakhstan to...",
-     "score": 8,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/karl-bushby-embraces-mother-after-28-years-walking-around-the-world-1794072836263vh3ooew93.html"
     }
    ],
    "dagoverzichten": [
     {
-     "id": "dg-20261106-lifestyle",
-     "titel": "Perseverers and dreamers: the news that captured hearts this week",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-06",
-     "url": "https://brightnews.online/articles/en/perseverers-and-dreamers-the-news-that-captured-hearts-this-week-dg-20261106-lifestyle.html"
+     "id": "dg-20261108-environment",
+     "titel": "Nature recovers: glowworms, seaweed and an estate get a second chance",
+     "categorie": "Environment",
+     "dag": "2026-11-08",
+     "url": "https://brightnews.online/articles/en/nature-recovers-glowworms-seaweed-and-an-estate-get-a-second-chance-dg-20261108-environment.html"
     }
    ]
   },
   "de": {
    "top": [
+    {
+     "id": "179426177536734o0a4akh",
+     "titel": "Teenager entwickelt App Kora zur Unterstützung autistischer Kinder",
+     "teaser": "Ein Schüler aus New Jersey, Shashank Madala, beobachtete, wie Erwachsene die emotionalen Signale seines autistischen Neffen bei Familientreffen falsch interpretierten. Mit fünfzehn Jahren und nur einer Informatikstunde Erfahrung brachte er sich selbst Machine Learning bei und entwickelte die kostenlose App Kora. Die App bietet Betreuungspersonen über die Smartphonekamera mehrere mögliche Interpretationen von Emotionen (froh, traurig, wütend, ängstlich, neutral) ohne Bewertungen...",
+     "score": 10,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/de/teenager-entwickelt-app-kora-zur-unterstutzung-autistischer-kinder-179426177536734o0a4akh.html"
+    },
+    {
+     "id": "1794261892401mgfywqisu",
+     "titel": "Victoria verbietet unnötige Operationen bei intersexuellen Kindern",
+     "teaser": "Intersexualität ist eine menschliche Eigenschaft, die genauso häufig vorkommt wie rotes Haar oder grüne Augen. Der Sexuologin Anne Fausto-Sterling zufolge werden bis zu 1,7% der Weltbevölkerung mit chromosomalen, hormonalen oder anatomischen Variationen geboren, die von den typischen Definitionen von Mann oder Frau abweichen. Häufig unterziehen sich diese Kinder vor ihrem zweiten Lebensjahr „korrigierenden\" Operationen, die manchmal erfolgreich sind, aber auch...",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/de/victoria-verbietet-unnotige-operationen-bei-intersexuellen-kindern-1794261892401mgfywqisu.html"
+    },
+    {
+     "id": "17942618376320zr0nsc0o",
+     "titel": "Glühwürmchen kehren nach hundert Jahren nach Nosterfield zurück",
+     "teaser": "Das Glühwürmchen erlebt ein Comeback in Nord-Yorkshire dank der unbezahlten Arbeit des Naturliebhabers Peter Cooper. In seiner Freizeit züchtet er Glühwürmchen in einem Gartenschuppen und setzt die Larven im Nosterfield Nature Reserve aus, wo das Tier seit hundert Jahren nicht mehr gesichtet wurde. Reserveverwalter Simon Warwick lobte Coopers „rohe Leidenschaft und Enthusiasmus\". Nosterfield, etwa 600 Hektar alte Kalksteinbrüche, die von...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/gluhwurmchen-kehren-nach-hundert-jahren-nach-nosterfield-zuruck-17942618376320zr0nsc0o.html"
+    },
+    {
+     "id": "1794261806053etimbu6da",
+     "titel": "Verbot der Muschelzucht rettet rosa Meeresalge Maerl bei Summer Isles",
+     "teaser": "Ein vor zehn Jahren eingeführtes Verbot der industriellen Muschelzucht hat die magentafarbene Meeresalgenart Maerl rund um die Summer Isles in Schottland geschützt. Maerl bildet harte, kalkhaltige Knollen auf dem Meeresboden und bietet Lebensraum für Fische. Dank des Verbots, das von Bürgerwissenschaftlern und Aktivisten wie Diyanna Ross und der Scottish Creel Fishermen's Federation durchgesetzt wurde, erholten sich Jakobsmuscheln „wie Tag und...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/verbot-der-muschelzucht-rettet-rosa-meeresalge-maerl-bei-summer-isles-1794261806053etimbu6da.html"
+    },
     {
      "id": "1794159938644e31835khm",
      "titel": "Bürgermeister fängt Steindieb mit AirTag",
@@ -86,36 +150,52 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/burgermeister-fangt-steindieb-mit-airtag-1794159938644e31835khm.html"
-    },
-    {
-     "id": "1794159908740k3cmzwac9",
-     "titel": "Entflogener Wellensittich Luna in Regenwasserrinne gefunden – Tipp eines Autofahrers führt zum Erfolg",
-     "teaser": "Ein Wellensittich namens Luna ist wohlbehalten zurück, nachdem er davongeflogen war, als Sturm Boelo ein Küchenfenster in Northampton, England aufgerissen hatte. Ein vorbeifahrender Autofahrer entdeckte den kleinen Vogel in einer Regenwasserrinne am Straßenrand hüpfend und alarmierte die RSPCA. Inspekteur Richard Durant und Praktikantin Rosie Cowie kamen vor Ort und hörten Lunas Schnäbelchen aus einem Rohr in der Rinne piepsen. Rosie...",
-     "score": 8,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/entflogener-wellensittich-luna-in-regenwasserrinne-gefunden-tipp-eines-autofahre-1794159908740k3cmzwac9.html"
-    },
-    {
-     "id": "1794072836263vh3ooew93",
-     "titel": "Karl Bushby umarmt Mutter nach 28 Jahren Wanderung um die Welt",
-     "teaser": "Der britische Abenteurer Karl Bushby ist nach 28 Jahren in seine Geburtsstadt Hull zurückgekehrt, wo er seine in Tränen ausgebrochene Mutter Angela umarmte. Der ehemalige Fallschirmspringer brach 1998 zu einer Wanderung von 31.000 Meilen durch 30 Länder auf, vollständig zu Fuß. Unterwegs trotzte er der Darien Gap, wurde in Russland verhaftet und schwamm 170 Meilen über das Kaspische Meer von...",
-     "score": 8,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/karl-bushby-umarmt-mutter-nach-28-jahren-wanderung-um-die-welt-1794072836263vh3ooew93.html"
     }
    ],
    "dagoverzichten": [
     {
-     "id": "dg-20261106-lifestyle",
-     "titel": "Durchhaltevermögen und Träume: die Nachrichten, die diese Woche bewegten",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-06",
-     "url": "https://brightnews.online/articles/de/durchhaltevermogen-und-traume-die-nachrichten-die-diese-woche-bewegten-dg-20261106-lifestyle.html"
+     "id": "dg-20261108-environment",
+     "titel": "Die Natur erholt sich: Glühwürmchen, Meeresalgen und ein Landgut bekommen eine zweite Chance",
+     "categorie": "Environment",
+     "dag": "2026-11-08",
+     "url": "https://brightnews.online/articles/de/die-natur-erholt-sich-gluhwurmchen-meeresalgen-und-ein-landgut-bekommen-eine-zwe-dg-20261108-environment.html"
     }
    ]
   },
   "fr": {
    "top": [
+    {
+     "id": "179426177536734o0a4akh",
+     "titel": "Un adolescent crée l'app Kora pour aider les enfants autistes à comprendre",
+     "teaser": "Un lycéen du New Jersey, Shashank Madala, a observé comment les adultes interprétaient mal les signaux émotionnels de son cousin autiste lors des réunions familiales. À quinze ans, avec seulement un cours d'informatique à son actif, il s'est autoformé au machine learning et a créé l'application gratuite Kora. L'app offre aux soignants, via la caméra d'un téléphone, plusieurs interprétations possibles...",
+     "score": 10,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/fr/un-adolescent-cree-l-app-kora-pour-aider-les-enfants-autistes-a-comprendre-179426177536734o0a4akh.html"
+    },
+    {
+     "id": "1794261892401mgfywqisu",
+     "titel": "Victoria interdit les opérations inutiles chez les enfants intersexes",
+     "teaser": "L'intersexualité est une caractéristique humaine aussi courante que les cheveux roux ou les yeux verts. Selon la sexologue Anne Fausto-Sterling, jusqu'à 1,7 % de la population mondiale naît avec des variations chromosomiques, hormonales ou anatomiques qui s'écartent des définitions typiques du masculin ou du féminin. Souvent, ces enfants subissent avant leur deuxième année de vie des opérations « correctives »...",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/fr/victoria-interdit-les-operations-inutiles-chez-les-enfants-intersexes-1794261892401mgfywqisu.html"
+    },
+    {
+     "id": "17942618376320zr0nsc0o",
+     "titel": "Les vers luisants font leur retour à Nosterfield après un siècle d'absence",
+     "teaser": "Le ver luisant fait un grand retour en North Yorkshire grâce au travail bénévole du naturaliste Peter Cooper. Pendant son temps libre, il élève des vers luisants dans un abri de jardin et relâche les larves à Nosterfield Nature Reserve, où l'animal n'avait pas été observé depuis cent ans. Le gestionnaire de la réserve Simon Warwick a salué la «...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/les-vers-luisants-font-leur-retour-a-nosterfield-apres-un-siecle-d-absence-17942618376320zr0nsc0o.html"
+    },
+    {
+     "id": "1794261806053etimbu6da",
+     "titel": "L'interdiction du dragage sauve l'algue rose maerl aux Summer Isles",
+     "teaser": "Une interdiction du dragage industriel des coquillages mise en place il y a dix ans a protégé l'espèce d'algue marine de couleur magenta maerl autour des Summer Isles en Écosse. Le maerl forme des nodules durs et calcaires sur le fond marin et offre un habitat aux poissons. Grâce à l'interdiction, imposée par des citoyens-scientifiques et des activistes comme Diyanna...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/l-interdiction-du-dragage-sauve-l-algue-rose-maerl-aux-summer-isles-1794261806053etimbu6da.html"
+    },
     {
      "id": "1794159938644e31835khm",
      "titel": "Un maire attrape un voleur de pierres grâce à une AirTag",
@@ -123,36 +203,52 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/un-maire-attrape-un-voleur-de-pierres-grace-a-une-airtag-1794159938644e31835khm.html"
-    },
-    {
-     "id": "1794159908740k3cmzwac9",
-     "titel": "La perruche Luna retrouvée dans une gouttière après le signalement d'un automobiliste",
-     "teaser": "Une perruche nommée Luna a été retrouvée après s'être envolée lorsque la tempête Boelo a ouvert une fenêtre de cuisine à Northampton, en Angleterre. Un automobiliste de passage a aperçu le petit oiseau sautillant dans une gouttière au bord de la route et a alerté la RSPCA. L'inspecteur Richard Durant et la stagiaire Rosie Cowie se sont rendus sur place...",
-     "score": 8,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/la-perruche-luna-retrouvee-dans-une-gouttiere-apres-le-signalement-d-un-automobi-1794159908740k3cmzwac9.html"
-    },
-    {
-     "id": "1794072836263vh3ooew93",
-     "titel": "Karl Bushby embrasse sa mère après 28 ans de marche autour du monde",
-     "teaser": "L'aventurier britannique Karl Bushby est revenu dans sa ville natale de Hull après 28 ans, où il a embrassé sa mère Angela en larmes. L'ancien parachutiste a quitté son domicile en 1998 pour une expédition de 31 000 milles à travers 30 pays, entièrement à pied. En chemin, il a affronté le Darien Gap, a été arrêté en Russie et...",
-     "score": 8,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/karl-bushby-embrasse-sa-mere-apres-28-ans-de-marche-autour-du-monde-1794072836263vh3ooew93.html"
     }
    ],
    "dagoverzichten": [
     {
-     "id": "dg-20261106-lifestyle",
-     "titel": "Les persévérants et les rêveurs : l'actualité qui a marqué cette semaine",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-06",
-     "url": "https://brightnews.online/articles/fr/les-perseverants-et-les-reveurs-l-actualite-qui-a-marque-cette-semaine-dg-20261106-lifestyle.html"
+     "id": "dg-20261108-environment",
+     "titel": "La nature se rétablit : vers luisants, algues et un domaine ont une nouvelle chance",
+     "categorie": "Environment",
+     "dag": "2026-11-08",
+     "url": "https://brightnews.online/articles/fr/la-nature-se-retablit-vers-luisants-algues-et-un-domaine-ont-une-nouvelle-chance-dg-20261108-environment.html"
     }
    ]
   },
   "es": {
    "top": [
+    {
+     "id": "179426177536734o0a4akh",
+     "titel": "Adolescente crea la app Kora para ayudar a niños autistas a comprender emociones",
+     "teaser": "Un estudiante de secundaria de Nueva Jersey, Shashank Madala, presenció cómo los adultos interpretaban erróneamente las señales emocionales de su primo autista durante reuniones familiares. A los quince años, con apenas una clase de informática completada, se enseñó a sí mismo aprendizaje automático y construyó la app gratuita Kora. La aplicación ofrece a los cuidadores, a través de la cámara...",
+     "score": 10,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/es/adolescente-crea-la-app-kora-para-ayudar-a-ninos-autistas-a-comprender-emociones-179426177536734o0a4akh.html"
+    },
+    {
+     "id": "1794261892401mgfywqisu",
+     "titel": "Victoria prohíbe operaciones innecesarias en niños intersexuales",
+     "teaser": "La intersexualidad es una característica humana que aparece con la misma frecuencia que el cabello rojo u los ojos verdes. Según la sexóloga Anne Fausto-Sterling, entre el 1,7% de la población mundial nace con variaciones cromosómicas, hormonales o anatómicas que se desvían de las definiciones típicas de hombre o mujer. A menudo, estos niños se someten antes de cumplir dos...",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/es/victoria-prohibe-operaciones-innecesarias-en-ninos-intersexuales-1794261892401mgfywqisu.html"
+    },
+    {
+     "id": "17942618376320zr0nsc0o",
+     "titel": "Las luciérnagas regresan a Nosterfield tras un siglo de ausencia",
+     "teaser": "La luciérnaga hace su regreso a Yorkshire del Norte gracias al trabajo desinteresado del naturalista Peter Cooper. En su tiempo libre, cría luciérnagas en un cobertizo de jardín y libera las larvas en la Reserva Natural de Nosterfield, donde el animal no había sido visto en cien años. El gestor de la reserva, Simon Warwick, elogió la «pasión y entusiasmo...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/las-luciernagas-regresan-a-nosterfield-tras-un-siglo-de-ausencia-17942618376320zr0nsc0o.html"
+    },
+    {
+     "id": "1794261806053etimbu6da",
+     "titel": "La prohibición del dragado salva el alga marina rosa maerl en las Summer Isles",
+     "teaser": "Una prohibición sobre el dragado industrial de mariscos introducida hace diez años ha protegido la especie de alga marina de color magenta maerl alrededor de las Summer Isles en Escocia. Maerl forma nódulos duros y calcáreos en el fondo marino y proporciona hábitat para los peces. Gracias a la prohibición, impuesta por científicos ciudadanos y activistas como Diyanna Ross y...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/la-prohibicion-del-dragado-salva-el-alga-marina-rosa-maerl-en-las-summer-isles-1794261806053etimbu6da.html"
+    },
     {
      "id": "1794159938644e31835khm",
      "titel": "Alcalde atrapa al ladrón de piedras con AirTag de Apple",
@@ -160,31 +256,15 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/alcalde-atrapa-al-ladron-de-piedras-con-airtag-de-apple-1794159938644e31835khm.html"
-    },
-    {
-     "id": "1794159908740k3cmzwac9",
-     "titel": "Encontrada la cotorra Luna escapada en una alcantarilla tras aviso de un automovilista",
-     "teaser": "Una cotorra llamada Luna ha sido recuperada después de escapar cuando la tormenta Boelo abrió una ventana de la cocina en Northampton, Inglaterra. Un automovilista que pasaba por allí vio al pequeño pájaro saltando en una alcantarilla al borde de la carretera y alertó a la RSPCA. El inspector Richard Durant y la pasante Rosie Cowie acudieron al lugar y...",
-     "score": 8,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/encontrada-la-cotorra-luna-escapada-en-una-alcantarilla-tras-aviso-de-un-automov-1794159908740k3cmzwac9.html"
-    },
-    {
-     "id": "1794072836263vh3ooew93",
-     "titel": "Karl Bushby abraza a su madre tras 28 años caminando alrededor del mundo",
-     "teaser": "El aventurero británico Karl Bushby ha regresado a su ciudad natal Hull después de 28 años, donde abrazó a su madre Angela, quien rompió en lágrimas. El ex paracaidista partió en 1998 en una expedición de 31.000 millas a través de 30 países, completamente a pie. Durante el camino, atravesó la Darien Gap, fue arrestado en Rusia y nadó 170...",
-     "score": 8,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/karl-bushby-abraza-a-su-madre-tras-28-anos-caminando-alrededor-del-mundo-1794072836263vh3ooew93.html"
     }
    ],
    "dagoverzichten": [
     {
-     "id": "dg-20261106-lifestyle",
-     "titel": "Perseverantes y soñadores: las noticias que han marcado esta semana",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-06",
-     "url": "https://brightnews.online/articles/es/perseverantes-y-sonadores-las-noticias-que-han-marcado-esta-semana-dg-20261106-lifestyle.html"
+     "id": "dg-20261108-environment",
+     "titel": "La naturaleza se recupera: luciérnagas, algas y una finca histórica tienen una nueva oportunidad",
+     "categorie": "Environment",
+     "dag": "2026-11-08",
+     "url": "https://brightnews.online/articles/es/la-naturaleza-se-recupera-luciernagas-algas-y-una-finca-historica-tienen-una-nue-dg-20261108-environment.html"
     }
    ]
   }

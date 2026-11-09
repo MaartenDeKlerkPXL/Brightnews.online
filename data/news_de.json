@@ -1,5 +1,104 @@
 [
   {
+    "id": "dg-20261108-environment",
+    "type": "digest",
+    "digest_date": "2026-11-08",
+    "title": "Die Natur erholt sich: Glühwürmchen, Meeresalgen und ein Landgut bekommen eine zweite Chance",
+    "summary": "In diesen Tagen zeigt die Natur, dass Erholung möglich ist – manchmal braucht es Jahre Geduld, manchmal reichen eine Handvoll Freiwilliger oder Tausende Spender weltweit aus. Von einem leuchtenden Insekt, das nach einem Jahrhundert zurückkehrt, über Meeresalgen, die endlich in Ruhe gelassen werden, bis hin zu einem jahrhundertealten Landgut, das den Besitzer wechselt, um Wildtieren Platz zu geben: Die guten Nachrichten kommen aus den unterschiedlichsten Ecken. In North Yorkshire wird hart an der Rückkehr des Glühwürmchens gearbeitet. Naturliebhaber Peter Cooper züchtet die Larven in seinem eigenen Gartenschuppen und setzt sie im Nosterfield Nature Reserve aus, einem Gebiet alter Kalksteinbrüche, in...",
+    "image_alt": "Die Natur erholt sich: Glühwürmchen, Meeresalgen und ein Landgut bekommen eine zweite Chance",
+    "meta_description": "Glühwürmchen, geschützte Meeresalgen und ein neues Naturlandgut: drei hoffnungsvolle Geschichten über Naturerholung aus den vergangenen Tagen.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/glowworms-unsplash.jpg",
+    "date": "2026-11-09T22:06:22.075Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "17942618376320zr0nsc0o",
+        "title": "Glühwürmchen kehren nach hundert Jahren nach Nosterfield zurück"
+      },
+      {
+        "id": "1794261806053etimbu6da",
+        "title": "Verbot der Muschelzucht rettet rosa Meeresalge Maerl bei Summer Isles"
+      },
+      {
+        "id": "1794027777393q7fy9vdx3",
+        "title": "Welt kauft Rothbury Estate für Naturschutz frei"
+      }
+    ]
+  },
+  {
+    "id": "1794261915908mf5cbpuot",
+    "title": "Queere Freundschaften sind gut für die Gesundheit",
+    "summary": "Forscher der Michigan State University und der University of Kentucky entdeckten, dass Freundschaften mit einer gemeinsamen Identität für Menschen aus der LGBTQ+ Gemeinde wichtig sind. Basierend auf Daten aus der zweijährigen Umfrage „American Friendship Project\" zeigte sich, dass Menschen mit mindestens einem Freund derselben Identität (wie zwei Bisexuelle oder zwei Lesben) mehr Lebenszufriedenheit und weniger Einsamkeit berichteten als Menschen ohne...",
+    "image_alt": "Zwei Freunde aus der LGBTQ+ Gemeinde im Gespräch",
+    "meta_description": "Studie: Freundschaften mit gemeinsamer LGBTQ+ Identität erhöhen Lebenszufriedenheit und verringern Einsamkeit.",
+    "meta_keywords": "queere Freundschaften, LGBTQ+, Wohlbefinden, Einsamkeit, Lebenszufriedenheit, American Friendship Project",
+    "link": "https://www.goodgoodgood.co/articles/new-study-queer-friendship-health",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6af1f288bdcdefc967667671_6af1f285946f0fab106ab27c_new-study-queer-friendship-health-featured.webp",
+    "date": "2026-11-09T22:05:18.163Z",
+    "category": "Health",
+    "score": 8
+  },
+  {
+    "id": "1794261892401mgfywqisu",
+    "title": "Victoria verbietet unnötige Operationen bei intersexuellen Kindern",
+    "summary": "Intersexualität ist eine menschliche Eigenschaft, die genauso häufig vorkommt wie rotes Haar oder grüne Augen. Der Sexuologin Anne Fausto-Sterling zufolge werden bis zu 1,7% der Weltbevölkerung mit chromosomalen, hormonalen oder anatomischen Variationen geboren, die von den typischen Definitionen von Mann oder Frau abweichen. Häufig unterziehen sich diese Kinder vor ihrem zweiten Lebensjahr „korrigierenden\" Operationen, die manchmal erfolgreich sind, aber auch...",
+    "image_alt": "Symbolisches Bild der Intersex-Flagge als Zeichen des neuen Operationsverbots in Victoria, Australien",
+    "meta_description": "Victoria verbietet als erster australischer Bundesstaat unnötige Operationen bei intersexuellen Kindern, ein Meilenstein für Menschenrechte.",
+    "meta_keywords": "Intersexualität, Victoria, Australien, Operationsverbot, Menschenrechte, Tony Briffa",
+    "link": "https://www.goodgoodgood.co/articles/australia-intersex-surgeries-infants-ban",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6af1ff9e8333e3454a0c61c8_6af1ff9d944dd3b0ebf05ca0_australia-intersex-surgeries-infants-ban-featured.webp",
+    "date": "2026-11-09T22:04:54.509Z",
+    "category": "Health",
+    "score": 9
+  },
+  {
+    "id": "17942618376320zr0nsc0o",
+    "title": "Glühwürmchen kehren nach hundert Jahren nach Nosterfield zurück",
+    "summary": "Das Glühwürmchen erlebt ein Comeback in Nord-Yorkshire dank der unbezahlten Arbeit des Naturliebhabers Peter Cooper. In seiner Freizeit züchtet er Glühwürmchen in einem Gartenschuppen und setzt die Larven im Nosterfield Nature Reserve aus, wo das Tier seit hundert Jahren nicht mehr gesichtet wurde. Reserveverwalter Simon Warwick lobte Coopers „rohe Leidenschaft und Enthusiasmus\". Nosterfield, etwa 600 Hektar alte Kalksteinbrüche, die von...",
+    "image_alt": "Glühwürmchen erleuchten das Gras im Nosterfield Nature Reserve in Nord-Yorkshire",
+    "meta_description": "Naturliebhaber Peter Cooper züchtet Glühwürmchen in seinem Gartenschuppen und führt sie nach hundert Jahren Abwesenheit in Nord-Yorkshire wieder ein.",
+    "meta_keywords": "Glühwürmchen, Nosterfield Nature Reserve, Peter Cooper, Nord-Yorkshire, Lampyridae, Naturschutz, Lower Ure Conservation Trust",
+    "link": "https://www.goodnewsnetwork.org/glowworms-shine-again-in-the-uk-from-larvae-reared-pro-bono-in-garden-shed/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/glowworms-unsplash.jpg",
+    "date": "2026-11-09T22:04:00.572Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1794261806053etimbu6da",
+    "title": "Verbot der Muschelzucht rettet rosa Meeresalge Maerl bei Summer Isles",
+    "summary": "Ein vor zehn Jahren eingeführtes Verbot der industriellen Muschelzucht hat die magentafarbene Meeresalgenart Maerl rund um die Summer Isles in Schottland geschützt. Maerl bildet harte, kalkhaltige Knollen auf dem Meeresboden und bietet Lebensraum für Fische. Dank des Verbots, das von Bürgerwissenschaftlern und Aktivisten wie Diyanna Ross und der Scottish Creel Fishermen's Federation durchgesetzt wurde, erholten sich Jakobsmuscheln „wie Tag und...",
+    "image_alt": "Rosa Maerl-Meeresalge auf dem Meeresboden bei den Summer Isles in Schottland",
+    "meta_description": "Verbot der Muschelzucht rettet seltene rosa Meeresalge Maerl und lässt Fischbestände bei schottischen Summer Isles sich erholen.",
+    "meta_keywords": "Maerl, Summer Isles, Muschelzucht, Meeresalge, Meeresschutz, Schottland, Fischbestände",
+    "link": "https://www.goodnewsnetwork.org/fish-stocks-thrive-thanks-to-this-strange-seaweed-and-locals-who-protected-it/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Maerl-beds-in-French-waters-credit-Olivier-Dugornay-CC-4.0.-BY.jpg",
+    "date": "2026-11-09T22:03:28.506Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "179426177536734o0a4akh",
+    "title": "Teenager entwickelt App Kora zur Unterstützung autistischer Kinder",
+    "summary": "Ein Schüler aus New Jersey, Shashank Madala, beobachtete, wie Erwachsene die emotionalen Signale seines autistischen Neffen bei Familientreffen falsch interpretierten. Mit fünfzehn Jahren und nur einer Informatikstunde Erfahrung brachte er sich selbst Machine Learning bei und entwickelte die kostenlose App Kora. Die App bietet Betreuungspersonen über die Smartphonekamera mehrere mögliche Interpretationen von Emotionen (froh, traurig, wütend, ängstlich, neutral) ohne Bewertungen...",
+    "image_alt": "Teenager Shashank Madala zeigt die App Kora auf einem Smartphone, die emotionale Signale eines autistischen Kindes interpretiert",
+    "meta_description": "Teenager Shashank Madala entwickelt kostenlose App Kora, die Familien hilft, Emotionen autistischer Kinder zu verstehen.",
+    "meta_keywords": "Kora App, Autismus, Shashank Madala, Machine Learning, Congressional App Challenge, Autismus-Therapie, Emotionserkennung",
+    "link": "https://www.goodnewsnetwork.org/15-yo-teaches-himself-machine-learning-to-build-app-that-interprets-autistic-communication/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Shashank-Madala-stands-with-his-Congressional-recognition-credit-courtesy-of-Shashank-Madala.jpg",
+    "date": "2026-11-09T22:02:58.955Z",
+    "category": "Tech",
+    "score": 10
+  },
+  {
     "id": "1794159938644e31835khm",
     "title": "Bürgermeister fängt Steindieb mit AirTag",
     "summary": "Ein englischer Bürgermeister, Matt Smith, löste selbst einen Diebstahl auf, nachdem die Polizei im Lancashire-Dorf Rufford nicht helfen konnte, da Kamerabilder fehlten. Ab Mai wurden Steine von einer 300 Jahre alten Mauer gestohlen, mit einem geschätzten Wert von etwa $9.000. Nachdem Warnschilder nicht halfen und Kameras zu teuer waren, platzierte Smith einen Apple AirTag in einem losen Stein. Nach dem...",
@@ -2292,43 +2391,6 @@
     "score": 10
   },
   {
-    "id": "dg-20260929-lifestyle",
-    "type": "digest",
-    "digest_date": "2026-09-29",
-    "title": "Geben steht im Mittelpunkt: von Windeln bis Socken und ein neues Zuhause",
-    "summary": "Die vergangenen Tage zeigen, wie viele Menschen bereit sind, etwas für andere zu tun, ohne dass sie dafür etwas zurückbekommen. Von einem Medienunternehmen, das Geld für eine gefährdete Gemeinde sammelt, bis zu einem Teenager-Mädchen, das Windeln sammelt, und einem Schauspieler, der Zeit für zwei hundelose Hunde aufbringt: Die guten Nachrichten dieser Woche handeln immer wieder von Menschen, die aufeinander achten. In Springfield, Ohio, veranstaltete The Bulwark am 25. September eine Live-Show, deren gesamte Einnahmen an das Haitian Support Center gingen. Diese Organisation unterstützt die haitianische Gemeinde mit Lebensmitteln, Transport und rechtlicher Hilfe, besonders jetzt, da die Verhaftungen in der Stadt...",
-    "image_alt": "Geben steht im Mittelpunkt: von Windeln bis Socken und ein neues Zuhause",
-    "meta_description": "Von Geld für Haitianer bis zu kostenlosen Büchern, Windeln, Socken und einem neuen Zuhause: Die positiven Lifestyle-Nachrichten von Ende September 2026 im ",
-    "meta_keywords": "Lifestyle",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abd3445e1a11fa225c805d2_the-bulwark-fundraiser-springfield-haitian-featured.webp",
-    "date": "2026-09-30T17:50:53.098Z",
-    "category": "Lifestyle",
-    "refs": [
-      {
-        "id": "1790790463292h7qtw4jt5",
-        "title": "The Bulwark sammelt über $400.000 für Haitianer in Springfield"
-      },
-      {
-        "id": "1790790404248qshlqgb5x",
-        "title": "Dolly Partons Imagination Library verdoppelt ihre Reichweite in London"
-      },
-      {
-        "id": "1790742723599v7yuk22bc",
-        "title": "12-Jährige Sloan sammelt 30.000 Windeln für Arizonas Lebensmittelbank"
-      },
-      {
-        "id": "1790704437768s5e1giwo8",
-        "title": "Socktoberaktion feiert 15 Jahre lokale Hilfsbereitschaft"
-      },
-      {
-        "id": "1790790318242kc5soggtq",
-        "title": "Chris Evans hilft Hundeduo Greg und Carley zu neuem Besitzer"
-      }
-    ]
-  },
-  {
     "id": "dg-20260929-environment",
     "type": "digest",
     "digest_date": "2026-09-29",
@@ -2466,75 +2528,5 @@
     "date": "2026-09-30T17:45:57.153Z",
     "category": "Environment",
     "score": 9
-  },
-  {
-    "id": "1790790318242kc5soggtq",
-    "title": "Chris Evans hilft Hundeduo Greg und Carley zu neuem Besitzer",
-    "summary": "Schauspieler Chris Evans setzte sich für zwei unzertrennliche Hunde ein, den Chihuahua Greg und den Golden Retriever Carley, die zusammen adoptiert werden sollten. Sie befanden sich bei der Animal Rescue League of Boston. Evans nahm an „Dream Date\" teil, einer Serie von The Dodo, in der Hollywood-Stars Zeit mit Hunden verbringen, die ein neues Zuhause suchen. Die Serie hat bereits...",
-    "image_alt": "Chris Evans spielt mit den Hunden Greg und Carley in einem Video für Dream Date",
-    "meta_description": "Chris Evans setzt sich für das verbundene Hundepaar Greg und Carley ein, das dank seines Videos ein neues Zuhause findet.",
-    "meta_keywords": "Chris Evans, Greg und Carley, Animal Rescue League of Boston, The Dodo, Dream Date, Hundeadoption",
-    "link": "https://www.goodnewsnetwork.org/chris-evans-puts-his-limelight-on-a-bonded-dog-pair-with-cute-video-immediately-sees-them-adopted/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Left-Greg-and-Carley-a-pair-bonded-dog-couple-right-Chris-Evans-in-2023-credits-Animal-Rescue-League-of-Boston-via-Facebook.jpg",
-    "date": "2026-09-30T17:45:29.128Z",
-    "category": "Lifestyle",
-    "score": 8
-  },
-  {
-    "id": "1790742803309ouor5rc3j",
-    "title": "Verwaister Elefant Daba von Herde in Kenia adoptiert",
-    "summary": "Am 30. September 2025 entdeckten Ranger des Sheldrick Wildlife Trust und des Kenya Wildlife Service einen acht Monate alten Elefanten allein nördlich des Galana-Flusses. Sie vermuten, dass Löwen seine Herde, die Dabaduki-Gruppe, vertrieben hatten. Das Kalb wurde Daba genannt, was „verlassen\" bedeutet. Nach der Voi Reintegration Unit wurde es zur Nairobi Nursery gebracht, um spezialisierte Pflege zu erhalten. Dort wurde...",
-    "image_alt": "Junger verwaister Elefant Daba inmitten seiner neuen Herde im Sheldrick Wildlife Trust in Kenia",
-    "meta_description": "Verwaister Elefant Daba gerettet und von Herde verwaister Elefanten im Sheldrick Wildlife Trust, Kenia, adoptiert.",
-    "meta_keywords": "Daba, Sheldrick Wildlife Trust, Elefant, verwaiste Elefanten, Kenya Wildlife Service, Nairobi Nursery, Herde",
-    "link": "https://www.goodgoodgood.co/articles/baby-elephant-daba-rescued-orphaned",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abbf243612d4c02ed5c2b86_6abbf2425219f8eed4958391_baby-elephant-daba-rescued-orphaned-featured.webp",
-    "date": "2026-09-30T04:33:24.006Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1790742751775ktybiafaw",
-    "title": "Elefantenbulle „adoptiert\" Waisenkälbchen Talek zur Rettung kam",
-    "summary": "Im Juni 2023 wurde bei der Maasai Mara National Reserve in Kenia ein sieben Monate altes Waisenkälbchen gesichtet. Als Ranger nach ihm suchten, war es verschwunden. Einige Tage später tauchte es wieder auf, diesmal neben einem älteren männlichen Elefanten, der ihm Schutz bot. Da der Bulle dem Kalb keine Milch geben konnte, genehmigte der Kenya Wildlife Service eine Rettungsaktion. Das...",
-    "image_alt": "Ein junges Elefantenkälbchen läuft neben einem älteren männlichen Elefanten in der Maasai Mara National Reserve in Kenia",
-    "meta_description": "Waisenkälbchen Talek überlebte dank eines schützenden Elefantenbullen, bis Ranger es retten und zur Sheldrick Wildlife Trust bringen konnten.",
-    "meta_keywords": "Sheldrick Wildlife Trust, Elefant, Waisenkälbchen, Kenia, Maasai Mara, Tierrettungen, Naturschutz",
-    "link": "https://www.goodgoodgood.co/articles/baby-elephant-talek-rescue-kenya",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abc14af21c94a14ed3075a8_6abc14ae5dd5af5183aaaa2b_baby-elephant-talek-rescue-kenya-featured.webp",
-    "date": "2026-09-30T04:32:33.541Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1790742723599v7yuk22bc",
-    "title": "12-Jährige Sloan sammelt 30.000 Windeln für Arizonas Lebensmittelbank",
-    "summary": "Die 12-jährige Sloan aus Phoenix organisierte zum fünften Jahr in Folge ihre „Diaper Drive\", eine Sammelaktion für Windeln. Dieses Jahr zielte sie auf 22.500 Windeln ab, doch am Ende kamen 30.000 Stück zusammen – so viele, dass es in ihrem Haus kaum noch Platz zum Gehen gab. Die Windeln, darunter Marken wie Huggies, Pampers und Bluey, wurden per Uhaul-Lastwagen bei...",
-    "image_alt": "Ein Uhaul-Lastwagen voller gespendeter Windeln wird bei einer Lebensmittelbank in Phoenix, Arizona abgeliefert",
-    "meta_description": "12-Jährige Sloan sammelt 30.000 Windeln für Lebensmittelbank Nourish Phoenix während ihrer fünften jährlichen „Diaper Drive\".",
-    "meta_keywords": "Windeln, Lebensmittelbank, Wohltätigkeit, Sloan, Arizona, Nourish Phoenix, Diaper Drive",
-    "link": "https://www.goodnewsnetwork.org/12-yos-annual-diaper-drive-dumps-30000-diapers-off-at-arizona-food-bank/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Sloan-at-the-end-of-her-5th-annual-Diaper-Drive-credit-Sloans-Diaper-Drive.jpg",
-    "date": "2026-09-30T04:32:05.972Z",
-    "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "1790704517255qb72iuc08",
-    "title": "MacArthur Foundation vergibt „Genius Grants\" an 20 Wissenschaftler und Künstler",
-    "summary": "Die MacArthur Foundation hat die Gewinner ihrer jährlichen, zweckfreien Stipendien in Höhe von 800.000 Dollar bekannt gegeben. Unter den 20 Preisträgern sind vielfältige Wissenschaftler und Künstler, darunter die forensische Anthropologin Kate Spradley, die die Überreste verstorbener Migranten an der Grenze zwischen Texas und Mexiko repatriiert, und die Arbeitsökonomin Ellora Derenoncourt, die rassische Lohnunterschiede erforscht. Auch die Klimawissenschaftler Kaiyu Guan und...",
-    "image_alt": "Porträts von sechs MacArthur Fellows 2026, darunter Kate Spradley, Ellora Derenoncourt und Christine Sun Kim",
-    "meta_description": "MacArthur Foundation vergibt 800.000 Dollar „Genius Grants\" an 20 Wissenschaftler und Künstler mit vielfältiger Expertise.",
-    "meta_keywords": "MacArthur Fellowship, Genius Grant, Wissenschaftler, Künstler, Kate Spradley, Ellora Derenoncourt, Christine Sun Kim",
-    "link": "https://www.npr.org/2026/09/29/nx-s1-5980447/macarthur-genius-grants-2026-fellows",
-    "source": "NPR.org",
-    "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2400x1350+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F78%2F30%2F6f8b939143d9b9047b8ce0425d8b%2F6-images-4.jpg",
-    "date": "2026-09-29T17:55:18.883Z",
-    "category": "Science",
-    "score": 8
   }
 ]
