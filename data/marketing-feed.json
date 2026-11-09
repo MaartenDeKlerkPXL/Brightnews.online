@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-11-08T17:45:41.315Z",
+ "gegenereerd": "2026-11-09T05:06:33.913Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -14,36 +14,20 @@
      "url": "https://brightnews.online/articles/nl/burgemeester-vangt-stenendief-met-airtag-in-rufford-1794159938644e31835khm.html"
     },
     {
-     "id": "1794027777393q7fy9vdx3",
-     "titel": "Wereld koopt Rothbury Estate vrij voor natuurherstel",
-     "teaser": "Het Rothbury Estate in Northumberland, 800 jaar eigendom van de hertogen van Northumberland sinds de 13e eeuw, is aangekocht door de Wildlife Trusts. Meer dan 25.000 donateurs uit 50 landen brachten samen £30 miljoen bijeen voor het 9.400 hectare grote landgoed. Het wordt onderdeel van een 40 mijl lange natuurcorridor tussen Druridge Bay en een bestaand natuurreservaat. Op het landgoed...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/wereld-koopt-rothbury-estate-vrij-voor-natuurherstel-1794027777393q7fy9vdx3.html"
-    },
-    {
-     "id": "17939917345584tddw5axb",
-     "titel": "Satish Kumar wint Future Icons Award voor vredeswandeling van 8.000 mijl",
-     "teaser": "Country & Town House heeft de winnaars van de Future Icons Awards 2027 en de Future Icons Power List 2027 bekendgemaakt. Satish Kumar, oprichter van de Resurgence Trust die The Ecologist uitgeeft, werd geëerd omdat hij in de jaren zestig zonder geld 8.000 mijl door 15 landen liep voor vrede en in 1991 Schumacher College oprichtte. De prijzen gaan naar...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/satish-kumar-wint-future-icons-award-voor-vredeswandeling-van-8-000-mijl-17939917345584tddw5axb.html"
-    },
-    {
-     "id": "1793991652315mthd40ah5",
-     "titel": "Giftige Bangka-loris blijkt al die tijd niet uitgestorven",
-     "teaser": "De Bangka slow loris, een primaat die sinds de jaren 30 niet meer wetenschappelijk was waargenomen en in 2015 als mogelijk uitgestorven gold, blijkt al die tijd te hebben overleefd. Dat ontdekten Oostenrijkse wetenschappers dankzij een veldgids uit 2022 die verwees naar het Alobi Wildlife Rescue Center op het eiland Bangka. Dit centrum redt en herintroduceert de dieren al sinds...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/giftige-bangka-loris-blijkt-al-die-tijd-niet-uitgestorven-1793991652315mthd40ah5.html"
-    },
-    {
      "id": "1794159908740k3cmzwac9",
      "titel": "Ontsnapte parkiet Luna teruggevonden in regenput na tip automobilist",
      "teaser": "Een parkiet genaamd Luna is terecht nadat ze was weggevlogen toen storm Boelo een keukenraam in Northampton, Engeland openblies. Een voorbijrijdende automobilist zag het vogeltje in een regenput aan de kant van de weg hoppen en waarschuwde de RSPCA. Inspecteur Richard Durant en stagiair Rosie Cowie kwamen ter plaatse en troffen Luna's snaveltje aan, piepend uit een pijp in de...",
      "score": 8,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/ontsnapte-parkiet-luna-teruggevonden-in-regenput-na-tip-automobilist-1794159908740k3cmzwac9.html"
+    },
+    {
+     "id": "1794072836263vh3ooew93",
+     "titel": "Karl Bushby omhelst moeder na 28 jaar wandelen rond de wereld",
+     "teaser": "Britse avonturier Karl Bushby is na 28 jaar teruggekeerd naar zijn geboortestad Hull, waar hij zijn in tranen uitbarstende moeder Angela omhelsde. De oud-parachutist vertrok in 1998 aan een tocht van 31.000 mijl door 30 landen, volledig te voet. Onderweg trotseerde hij de Darien Gap, werd hij gearresteerd in Rusland en zwom hij 170 mijl over de Kaspische Zee van...",
+     "score": 8,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/karl-bushby-omhelst-moeder-na-28-jaar-wandelen-rond-de-wereld-1794072836263vh3ooew93.html"
     }
    ],
    "dagoverzichten": [
@@ -53,13 +37,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-06",
      "url": "https://brightnews.online/articles/nl/doorzetters-en-dromers-het-nieuws-dat-deze-week-warm-maakte-dg-20261106-lifestyle.html"
-    },
-    {
-     "id": "dg-20261105-environment",
-     "titel": "Terugkeer, bescherming en warmte: het milieunieuws van begin november",
-     "categorie": "Environment",
-     "dag": "2026-11-05",
-     "url": "https://brightnews.online/articles/nl/terugkeer-bescherming-en-warmte-het-milieunieuws-van-begin-november-dg-20261105-environment.html"
     }
    ]
   },
@@ -74,36 +51,20 @@
      "url": "https://brightnews.online/articles/en/mayor-catches-stone-thief-with-airtag-in-rufford-1794159938644e31835khm.html"
     },
     {
-     "id": "1794027777393q7fy9vdx3",
-     "titel": "World buys Rothbury Estate for nature restoration",
-     "teaser": "The Rothbury Estate in Northumberland, owned by the Dukes of Northumberland for 800 years since the 13th century, has been purchased by the Wildlife Trusts. More than 25,000 donors from 50 countries raised £30 million together for the 9,400-hectare estate. It will become part of a 40-mile nature corridor between Druridge Bay and an existing nature reserve. The estate is...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/world-buys-rothbury-estate-for-nature-restoration-1794027777393q7fy9vdx3.html"
-    },
-    {
-     "id": "17939917345584tddw5axb",
-     "titel": "Satish Kumar wins Future Icons Award for 8,000-mile peace walk",
-     "teaser": "Country & Town House has announced the winners of the Future Icons Awards 2027 and the Future Icons Power List 2027. Satish Kumar, founder of the Resurgence Trust which publishes The Ecologist, was honoured for walking 8,000 miles through 15 countries in the 1960s without money for peace and for founding Schumacher College in 1991. The awards recognise people, brands...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/satish-kumar-wins-future-icons-award-for-8-000-mile-peace-walk-17939917345584tddw5axb.html"
-    },
-    {
-     "id": "1793991652315mthd40ah5",
-     "titel": "Toxic Bangka loris turns out not to have gone extinct after all",
-     "teaser": "The Bangka slow loris, a primate that had not been scientifically observed since the 1930s and was considered possibly extinct in 2015, has apparently survived all along. Austrian scientists discovered this thanks to a 2022 field guide that referenced the Alobi Wildlife Rescue Center on the island of Bangka. This center has been rescuing and reintroducing the animals since 2015,...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/toxic-bangka-loris-turns-out-not-to-have-gone-extinct-after-all-1793991652315mthd40ah5.html"
-    },
-    {
      "id": "1794159908740k3cmzwac9",
      "titel": "Escaped parakeet Luna found in drain after motorist's tip",
      "teaser": "A parakeet named Luna has been reunited with her owner after flying away when storm Boelo blew open a kitchen window in Northampton, England. A passing motorist spotted the little bird hopping in a roadside drain and alerted the RSPCA. Inspector Richard Durant and trainee Rosie Cowie attended the scene and found Luna's beak, chirping from a pipe in the...",
      "score": 8,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/escaped-parakeet-luna-found-in-drain-after-motorist-s-tip-1794159908740k3cmzwac9.html"
+    },
+    {
+     "id": "1794072836263vh3ooew93",
+     "titel": "Karl Bushby embraces mother after 28 years walking around the world",
+     "teaser": "British adventurer Karl Bushby has returned to his birthplace Hull after 28 years, where he embraced his tearful mother Angela. The former parachutist set out in 1998 on a 31,000-mile journey through 30 countries, entirely on foot. Along the way, he braved the Darien Gap, was arrested in Russia and swam 170 miles across the Caspian Sea from Kazakhstan to...",
+     "score": 8,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/karl-bushby-embraces-mother-after-28-years-walking-around-the-world-1794072836263vh3ooew93.html"
     }
    ],
    "dagoverzichten": [
@@ -113,13 +74,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-06",
      "url": "https://brightnews.online/articles/en/perseverers-and-dreamers-the-news-that-captured-hearts-this-week-dg-20261106-lifestyle.html"
-    },
-    {
-     "id": "dg-20261105-environment",
-     "titel": "Return, protection and warmth: the environmental news from early November",
-     "categorie": "Environment",
-     "dag": "2026-11-05",
-     "url": "https://brightnews.online/articles/en/return-protection-and-warmth-the-environmental-news-from-early-november-dg-20261105-environment.html"
     }
    ]
   },
@@ -134,36 +88,20 @@
      "url": "https://brightnews.online/articles/de/burgermeister-fangt-steindieb-mit-airtag-1794159938644e31835khm.html"
     },
     {
-     "id": "1794027777393q7fy9vdx3",
-     "titel": "Welt kauft Rothbury Estate für Naturschutz frei",
-     "teaser": "Das Rothbury Estate in Northumberland, seit dem 13. Jahrhundert 800 Jahre lang Eigentum der Herzöge von Northumberland, wurde von den Wildlife Trusts erworben. Mehr als 25.000 Spender aus 50 Ländern brachten zusammen £30 Millionen auf für das 9.400 Hektar große Landgut. Es wird Teil eines 40 Meilen langen Naturkorridors zwischen Druridge Bay und einem bestehenden Naturschutzgebiet. Auf dem Landgut leben...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/welt-kauft-rothbury-estate-fur-naturschutz-frei-1794027777393q7fy9vdx3.html"
-    },
-    {
-     "id": "17939917345584tddw5axb",
-     "titel": "Satish Kumar gewinnt Future Icons Award für Friedensmarsch über 8.000 Meilen",
-     "teaser": "Country & Town House hat die Gewinner der Future Icons Awards 2027 und der Future Icons Power List 2027 bekannt gegeben. Satish Kumar, Gründer der Resurgence Trust, die The Ecologist herausgibt, wurde geehrt, weil er in den sechziger Jahren ohne Geld 8.000 Meilen durch 15 Länder für den Frieden marschierte und 1991 Schumacher College gründete. Die Preise gehen an Menschen,...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/satish-kumar-gewinnt-future-icons-award-fur-friedensmarsch-uber-8-000-meilen-17939917345584tddw5axb.html"
-    },
-    {
-     "id": "1793991652315mthd40ah5",
-     "titel": "Giftige Bangka-Loris war nie wirklich ausgestorben",
-     "teaser": "Der Bangka-Slow-Loris, ein Primat, der seit den 1930er Jahren nicht mehr wissenschaftlich beobachtet worden war und 2015 als möglicherweise ausgestorben galt, hat die ganze Zeit überlebt. Das entdeckten österreichische Wissenschaftler dank eines Feldführers aus dem Jahr 2022, der auf das Alobi Wildlife Rescue Center auf der Insel Bangka verwies. Dieses Zentrum rettet und setzt die Tiere seit 2015 wieder aus,...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/giftige-bangka-loris-war-nie-wirklich-ausgestorben-1793991652315mthd40ah5.html"
-    },
-    {
      "id": "1794159908740k3cmzwac9",
      "titel": "Entflogener Wellensittich Luna in Regenwasserrinne gefunden – Tipp eines Autofahrers führt zum Erfolg",
      "teaser": "Ein Wellensittich namens Luna ist wohlbehalten zurück, nachdem er davongeflogen war, als Sturm Boelo ein Küchenfenster in Northampton, England aufgerissen hatte. Ein vorbeifahrender Autofahrer entdeckte den kleinen Vogel in einer Regenwasserrinne am Straßenrand hüpfend und alarmierte die RSPCA. Inspekteur Richard Durant und Praktikantin Rosie Cowie kamen vor Ort und hörten Lunas Schnäbelchen aus einem Rohr in der Rinne piepsen. Rosie...",
      "score": 8,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/entflogener-wellensittich-luna-in-regenwasserrinne-gefunden-tipp-eines-autofahre-1794159908740k3cmzwac9.html"
+    },
+    {
+     "id": "1794072836263vh3ooew93",
+     "titel": "Karl Bushby umarmt Mutter nach 28 Jahren Wanderung um die Welt",
+     "teaser": "Der britische Abenteurer Karl Bushby ist nach 28 Jahren in seine Geburtsstadt Hull zurückgekehrt, wo er seine in Tränen ausgebrochene Mutter Angela umarmte. Der ehemalige Fallschirmspringer brach 1998 zu einer Wanderung von 31.000 Meilen durch 30 Länder auf, vollständig zu Fuß. Unterwegs trotzte er der Darien Gap, wurde in Russland verhaftet und schwamm 170 Meilen über das Kaspische Meer von...",
+     "score": 8,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/karl-bushby-umarmt-mutter-nach-28-jahren-wanderung-um-die-welt-1794072836263vh3ooew93.html"
     }
    ],
    "dagoverzichten": [
@@ -173,13 +111,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-06",
      "url": "https://brightnews.online/articles/de/durchhaltevermogen-und-traume-die-nachrichten-die-diese-woche-bewegten-dg-20261106-lifestyle.html"
-    },
-    {
-     "id": "dg-20261105-environment",
-     "titel": "Rückkehr, Schutz und Wärme: die Umweltnachrichten von Anfang November",
-     "categorie": "Environment",
-     "dag": "2026-11-05",
-     "url": "https://brightnews.online/articles/de/ruckkehr-schutz-und-warme-die-umweltnachrichten-von-anfang-november-dg-20261105-environment.html"
     }
    ]
   },
@@ -194,36 +125,20 @@
      "url": "https://brightnews.online/articles/fr/un-maire-attrape-un-voleur-de-pierres-grace-a-une-airtag-1794159938644e31835khm.html"
     },
     {
-     "id": "1794027777393q7fy9vdx3",
-     "titel": "Le monde rachète le Rothbury Estate pour restaurer la nature",
-     "teaser": "Le Rothbury Estate en Northumberland, propriété des ducs de Northumberland depuis le 13e siècle pendant 800 ans, a été acquis par les Wildlife Trusts. Plus de 25 000 donateurs de 50 pays ont réuni ensemble 30 millions de livres sterling pour ce domaine de 9 400 hectares. Il deviendra partie intégrante d'un corridor naturel de 40 miles entre Druridge Bay...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/le-monde-rachete-le-rothbury-estate-pour-restaurer-la-nature-1794027777393q7fy9vdx3.html"
-    },
-    {
-     "id": "17939917345584tddw5axb",
-     "titel": "Satish Kumar remporte le Future Icons Award pour sa marche pour la paix de 8 000 miles",
-     "teaser": "Country & Town House a annoncé les lauréats des Future Icons Awards 2027 et de la Future Icons Power List 2027. Satish Kumar, fondateur de la Resurgence Trust qui édite The Ecologist, a été honoré pour avoir parcouru 8 000 miles à pied sans argent à travers 15 pays dans les années soixante pour la paix et pour avoir fondé...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/satish-kumar-remporte-le-future-icons-award-pour-sa-marche-pour-la-paix-de-8-000-17939917345584tddw5axb.html"
-    },
-    {
-     "id": "1793991652315mthd40ah5",
-     "titel": "Le loris lent de Bangka n'a jamais disparu",
-     "teaser": "Le loris lent de Bangka, un primate qui n'avait pas été observé scientifiquement depuis les années 30 et était considéré comme possiblement éteint en 2015, a en réalité survécu tout ce temps. Des scientifiques autrichiens l'ont découvert grâce à un guide de terrain de 2022 qui mentionnait le Alobi Wildlife Rescue Center sur l'île de Bangka. Ce centre sauve et...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/le-loris-lent-de-bangka-n-a-jamais-disparu-1793991652315mthd40ah5.html"
-    },
-    {
      "id": "1794159908740k3cmzwac9",
      "titel": "La perruche Luna retrouvée dans une gouttière après le signalement d'un automobiliste",
      "teaser": "Une perruche nommée Luna a été retrouvée après s'être envolée lorsque la tempête Boelo a ouvert une fenêtre de cuisine à Northampton, en Angleterre. Un automobiliste de passage a aperçu le petit oiseau sautillant dans une gouttière au bord de la route et a alerté la RSPCA. L'inspecteur Richard Durant et la stagiaire Rosie Cowie se sont rendus sur place...",
      "score": 8,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/la-perruche-luna-retrouvee-dans-une-gouttiere-apres-le-signalement-d-un-automobi-1794159908740k3cmzwac9.html"
+    },
+    {
+     "id": "1794072836263vh3ooew93",
+     "titel": "Karl Bushby embrasse sa mère après 28 ans de marche autour du monde",
+     "teaser": "L'aventurier britannique Karl Bushby est revenu dans sa ville natale de Hull après 28 ans, où il a embrassé sa mère Angela en larmes. L'ancien parachutiste a quitté son domicile en 1998 pour une expédition de 31 000 milles à travers 30 pays, entièrement à pied. En chemin, il a affronté le Darien Gap, a été arrêté en Russie et...",
+     "score": 8,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/karl-bushby-embrasse-sa-mere-apres-28-ans-de-marche-autour-du-monde-1794072836263vh3ooew93.html"
     }
    ],
    "dagoverzichten": [
@@ -233,13 +148,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-06",
      "url": "https://brightnews.online/articles/fr/les-perseverants-et-les-reveurs-l-actualite-qui-a-marque-cette-semaine-dg-20261106-lifestyle.html"
-    },
-    {
-     "id": "dg-20261105-environment",
-     "titel": "Retour, protection et chaleur : les nouvelles environnementales de début novembre",
-     "categorie": "Environment",
-     "dag": "2026-11-05",
-     "url": "https://brightnews.online/articles/fr/retour-protection-et-chaleur-les-nouvelles-environnementales-de-debut-novembre-dg-20261105-environment.html"
     }
    ]
   },
@@ -254,36 +162,20 @@
      "url": "https://brightnews.online/articles/es/alcalde-atrapa-al-ladron-de-piedras-con-airtag-de-apple-1794159938644e31835khm.html"
     },
     {
-     "id": "1794027777393q7fy9vdx3",
-     "titel": "El mundo compra la libertad de Rothbury Estate para restaurar la naturaleza",
-     "teaser": "El Rothbury Estate en Northumberland, durante 800 años propiedad de los duques de Northumberland desde el siglo XIII, ha sido adquirido por Wildlife Trusts. Más de 25.000 donantes de 50 países reunieron conjuntamente £30 millones para la finca de 9.400 hectáreas. Se convertirá en parte de un corredor natural de 40 millas entre Druridge Bay y una reserva natural existente....",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/el-mundo-compra-la-libertad-de-rothbury-estate-para-restaurar-la-naturaleza-1794027777393q7fy9vdx3.html"
-    },
-    {
-     "id": "17939917345584tddw5axb",
-     "titel": "Satish Kumar gana el Future Icons Award por su caminata por la paz de 8.000 millas",
-     "teaser": "Country & Town House ha anunciado los ganadores de los Future Icons Awards 2027 y la Future Icons Power List 2027. Satish Kumar, fundador de Resurgence Trust que publica The Ecologist, fue honrado por haber caminado 8.000 millas sin dinero a través de 15 países en los años sesenta en favor de la paz y por haber fundado Schumacher College...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/satish-kumar-gana-el-future-icons-award-por-su-caminata-por-la-paz-de-8-000-mill-17939917345584tddw5axb.html"
-    },
-    {
-     "id": "1793991652315mthd40ah5",
-     "titel": "El lóris lento de Bangka venenoso no estaba extinto después de todo",
-     "teaser": "El lóris lento de Bangka, un primate que no había sido observado científicamente desde los años 30 y se consideraba posiblemente extinto en 2015, ha estado vivo todo este tiempo. Científicos austriacos lo descubrieron gracias a una guía de campo de 2022 que hacía referencia al Alobi Wildlife Rescue Center en la isla de Bangka. Este centro ha estado rescatando...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/el-loris-lento-de-bangka-venenoso-no-estaba-extinto-despues-de-todo-1793991652315mthd40ah5.html"
-    },
-    {
      "id": "1794159908740k3cmzwac9",
      "titel": "Encontrada la cotorra Luna escapada en una alcantarilla tras aviso de un automovilista",
      "teaser": "Una cotorra llamada Luna ha sido recuperada después de escapar cuando la tormenta Boelo abrió una ventana de la cocina en Northampton, Inglaterra. Un automovilista que pasaba por allí vio al pequeño pájaro saltando en una alcantarilla al borde de la carretera y alertó a la RSPCA. El inspector Richard Durant y la pasante Rosie Cowie acudieron al lugar y...",
      "score": 8,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/encontrada-la-cotorra-luna-escapada-en-una-alcantarilla-tras-aviso-de-un-automov-1794159908740k3cmzwac9.html"
+    },
+    {
+     "id": "1794072836263vh3ooew93",
+     "titel": "Karl Bushby abraza a su madre tras 28 años caminando alrededor del mundo",
+     "teaser": "El aventurero británico Karl Bushby ha regresado a su ciudad natal Hull después de 28 años, donde abrazó a su madre Angela, quien rompió en lágrimas. El ex paracaidista partió en 1998 en una expedición de 31.000 millas a través de 30 países, completamente a pie. Durante el camino, atravesó la Darien Gap, fue arrestado en Rusia y nadó 170...",
+     "score": 8,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/karl-bushby-abraza-a-su-madre-tras-28-anos-caminando-alrededor-del-mundo-1794072836263vh3ooew93.html"
     }
    ],
    "dagoverzichten": [
@@ -293,13 +185,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-06",
      "url": "https://brightnews.online/articles/es/perseverantes-y-sonadores-las-noticias-que-han-marcado-esta-semana-dg-20261106-lifestyle.html"
-    },
-    {
-     "id": "dg-20261105-environment",
-     "titel": "Regreso, protección y calor: las noticias ambientales de principios de noviembre",
-     "categorie": "Environment",
-     "dag": "2026-11-05",
-     "url": "https://brightnews.online/articles/es/regreso-proteccion-y-calor-las-noticias-ambientales-de-principios-de-noviembre-dg-20261105-environment.html"
     }
    ]
   }
