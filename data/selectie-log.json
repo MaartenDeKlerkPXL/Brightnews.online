@@ -1,5 +1,65 @@
 [
  {
+  "datum": "2026-11-10T06:22:44.020Z",
+  "bron": "Positive.News",
+  "titel": "‘Digital advances are reshaping nature conservation’ say experts",
+  "uitsluiting": "te-weinig-inhoud",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Tekst breekt abrupt af mid-zin; onvoldoende inhoud om het verhaal te beoordelen."
+ },
+ {
+  "datum": "2026-11-10T06:22:44.020Z",
+  "bron": "OptimistDaily.com",
+  "titel": "Electric ferries that fly above water are arriving in the US",
+  "uitsluiting": "te-weinig-inhoud",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Tekst is vrijwel leeg; alleen een titel en een verwijzing naar een ander artikel, geen daadwerkelijke inhoud."
+ },
+ {
+  "datum": "2026-11-10T06:22:44.020Z",
+  "bron": "GoodGoodGood.co",
+  "titel": "This farm spent $100K a year to keep 10,000 gophers at bay. Then they realized coyotes could do the work for them",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 4,
+  "totaal": 10,
+  "besluit": "ja",
+  "reden": "Hartverwarmend verhaal over boeren die harmonie met natuur vinden door coyotes in plaats van dure bestrijding; maatschappelijk relevant en persoonlijk herkenbaar."
+ },
+ {
+  "datum": "2026-11-10T06:22:44.020Z",
+  "bron": "Sciencenews.org",
+  "titel": "Fossil fuel emissions are down in 2026. Green energy isn’t the reason",
+  "uitsluiting": "te-weinig-inhoud",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Tekst is slechts navigatie en rubriekslijsten; geen daadwerkelijke nieuwsinhoud aanwezig."
+ },
+ {
+  "datum": "2026-11-10T06:22:44.020Z",
+  "bron": "NPR.org",
+  "titel": "Scientists think they've found ancient remnants of dinosaur blood",
+  "uitsluiting": "te-weinig-inhoud",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Tekst breekt af en bevat vooral navigatie-elementen; onvoldoende inhoud om het verhaal te beoordelen."
+ },
+ {
   "datum": "2026-11-09T22:02:02.817Z",
   "bron": "Positive.News",
   "titel": "‘Digital advances are reshaping nature conservation’ say experts",
@@ -3538,65 +3598,5 @@
   "totaal": 0,
   "besluit": "nee",
   "reden": "Dit is een productlancering van Google zonder maatschappelijke betekenis buiten bedrijfsbelang."
- },
- {
-  "datum": "2026-10-02T04:34:34.756Z",
-  "bron": "Ww2.kqed.org/mindshift",
-  "titel": "Schools Are Experimenting With AI With Little Evidence or Policy to Guide Them",
-  "uitsluiting": "geen",
-  "gevoel": 2,
-  "formulering": 2,
-  "relevantie": 3,
-  "totaal": 7,
-  "besluit": "nee",
-  "reden": "Experiment met AI voor sociaal-emotioneel leren bij kwetsbare jongeren is maatschappelijk relevant en toont positieve verbinding."
- },
- {
-  "datum": "2026-10-01T18:10:26.487Z",
-  "bron": "Positive.News",
-  "titel": "Why good leaders listen",
-  "uitsluiting": "geen",
-  "gevoel": 2,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 8,
-  "besluit": "ja",
-  "reden": "Inspirerend verhaal over luisteren als ondergewaardeerde leiderschapskwaliteit met brede maatschappelijke relevantie."
- },
- {
-  "datum": "2026-10-01T18:10:26.487Z",
-  "bron": "GoodNewsNetwork.org",
-  "titel": "Chinese Commercial Reactor Achieves Nuclear Fusion with Clean Hydrogen-Boron Fuel",
-  "uitsluiting": "geen",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "Baanbrekende wetenschappelijke doorbraak in schone energieproductie die levens kan verbeteren."
- },
- {
-  "datum": "2026-10-01T18:10:26.487Z",
-  "bron": "GoodNewsNetwork.org",
-  "titel": "Genetic Analysis All But Confirms the Most Unique of Humpback Populations Is Actually a Subspecies",
-  "uitsluiting": "geen",
-  "gevoel": 2,
-  "formulering": 2,
-  "relevantie": 2,
-  "totaal": 6,
-  "besluit": "nee",
-  "reden": "Positief natuurwetenschappelijk onderzoek met conservatiewaarde, maar vooral voor gespecialiseerd publiek."
- },
- {
-  "datum": "2026-10-01T18:10:26.487Z",
-  "bron": "GoodNewsNetwork.org",
-  "titel": "Stunning Collection of Stolen Greek Artifacts Spanning 5,000 Years Were Just Returned to Greece",
-  "uitsluiting": "geen",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "Herstel en repatriëring van gestolen erfgoed; kern is rechtsherstel en culturele terugkeer."
  }
 ]
