@@ -29,6 +29,7 @@
             secties: [
                 { id: 'wie-we-zijn', titel: 'v5_pv_s1', blokken: [{ p: 'v5_pv_s1_p' }] },
                 { id: 'welke-gegevens', titel: 'v5_pv_s2', blokken: [
+                    { h3: 'v5_pv_s2_h0' }, { p: 'v5_pv_s2_p0' },
                     { h3: 'v5_pv_s2_h1' }, { p: 'v5_pv_s2_p1' },
                     { h3: 'v5_pv_s2_h2' }, { p: 'v5_pv_s2_p2' },
                     { h3: 'v5_pv_s2_h3' }, { p: 'v5_pv_s2_p3' },
