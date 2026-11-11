@@ -102,14 +102,18 @@ serve(async (req) => {
                 console.log(`↪️ Sessie voltooid maar payment_status=${obj.payment_status} — geen actie`)
                 return new Response(JSON.stringify({ message: "Nog niet betaald" }), { status: 200 })
             }
-            const { error } = await supabaseClient.from('profiles').upsert({
+            // plan_type alleen als de sessie het meegeeft: anders zou dit event,
+            // als het na customer.subscription.created binnenkomt, het plan
+            // dat daar uit de prijs is gehaald weer op null zetten.
+            const profiel: Record<string, unknown> = {
                 id: userId,
                 is_premium: true,
                 // Exacte einddatum volgt direct hierna via customer.subscription.*
                 stripe_customer_id: obj.customer ? String(obj.customer) : null,
-                plan_type: obj.metadata?.plan ?? null,
                 updated_at: new Date().toISOString()
-            }, { onConflict: 'id' })
+            }
+            if (obj.metadata?.plan) profiel.plan_type = obj.metadata.plan
+            const { error } = await supabaseClient.from('profiles').upsert(profiel, { onConflict: 'id' })
             if (error) throw error
             console.log(`✅ ${userId} is nu Premium (checkout voltooid)`)
             return new Response(JSON.stringify({ message: "Premium geactiveerd ✨" }), { status: 200 })
@@ -135,12 +139,24 @@ serve(async (req) => {
                 ? new Date(periodeEindeSec * 1000).toISOString()
                 : null
 
+            // Voor Mijn account en Bedankt (TODO 66 punt 10 en 12): de status
+            // zelf (trialing, active, past_due, canceled …), of de lezer heeft
+            // opgezegd (loopt door tot premium_until), tot wanneer de
+            // proefperiode loopt, en het plan uit de prijs (maand of jaar).
+            const interval = obj.items?.data?.[0]?.price?.recurring?.interval
+            const plan = interval === 'year' ? 'jaarlijks' : interval === 'month' ? 'maandelijks' : null
+            const update: Record<string, unknown> = {
+                is_premium: geeftToegang,
+                premium_until: geeftToegang ? periodeEinde : null,
+                abo_status: type === 'customer.subscription.deleted' ? 'canceled' : (status || null),
+                opgezegd: Boolean(obj.cancel_at_period_end || obj.cancel_at),
+                proef_tot: obj.trial_end ? new Date(obj.trial_end * 1000).toISOString() : null,
+                updated_at: new Date().toISOString()
+            }
+            if (plan) update.plan_type = plan
+
             const { data, error } = await supabaseClient.from('profiles')
-                .update({
-                    is_premium: geeftToegang,
-                    premium_until: geeftToegang ? periodeEinde : null,
-                    updated_at: new Date().toISOString()
-                })
+                .update(update)
                 .eq('stripe_customer_id', customerId)
                 .select('id')
             if (error) throw error
