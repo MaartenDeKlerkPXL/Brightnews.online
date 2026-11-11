@@ -305,6 +305,38 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   de echte staat het overnemen, en `?staat=` alleen nog werken op
   `localhost`. Neem `?team=1` en het wachtwoord `happytester` mee in punt 2.
 
+- [ ] **74. Alle mails naar de v5-huisstijl, in de taal van de lezer.**
+  *(Maarten, 2026-11-11. Pas doen als de rebranding live gaat, maar niet
+  vergeten: het hoort bij de lancering.)*
+  Aanleiding: de testmail "wachtwoord opnieuw instellen" kwam op 11 november
+  goed aan, maar ziet er nog uit als de oude site. Wat eraan moet:
+  - **Oude huisstijl:** het oude logo moet eruit (het woord "News" in
+    `#32CD32`), de knop is nog het oude felgroen, en de rest volgt v5 nog
+    niet. Wordt het v5-groen `#186F49`, de v5-woordmerk en Figtree, met een
+    systeemletter als terugval in mailprogramma's.
+  - **Twee talen door elkaar:** de tekst staat in het Nederlands en het
+    Engels tegelijk. Een Duitse, Franse of Spaanse lezer snapt er weinig van.
+    Eén mail in de taal van de lezer. Dat kan in de mailsjablonen van Supabase
+    zelf met een voorwaarde op de metadata van de gebruiker
+    (`{{ if eq .Data.taal "de" }}…{{ end }}`). Dan moet de taal wel bij het
+    aanmaken van het account in `user_metadata` komen (meenemen in TODO 66
+    punt 9). Zonder taal: Engels.
+
+  **Alle mails die BrightNews verstuurt, op één rij:**
+  1. **Supabase-sjablonen** (Authentication → Emails → Templates; staan
+     alleen in het dashboard, niet in de repo): inloglink, account
+     bevestigen, wachtwoord opnieuw instellen, e-mailadres wijzigen en
+     uitnodigen. Bewaar de nieuwe versies ook in `supabase/templates/`,
+     zodat ze niet nog eens alleen in het dashboard staan.
+  2. **De welkomstreeks** via Resend (`backend/mailteksten.js` en
+     `backend/stuur-mails.js`, punt 60): vijf mails. Zijn ze al per taal?
+     Nakijken. Ook de afmeldlink moet naar de v5-pagina Afmelden.
+  3. **De mails van Stripe** (bon, proefperiode bijna voorbij, betaling
+     mislukt; punt 61): Stripe vertaalt die zelf. Alleen de branding instellen
+     in Stripe → Settings → Branding (logo, kleur `#186F49`).
+  Afzender overal hetzelfde: `BrightNews`. Na de wijziging elke mail één keer
+  echt versturen, in licht en donker in Gmail en op de iPhone.
+
 - [x] **1. De twee open pull requests vlottrekken.** ✅ 2026-09-16 (Fable-review): #5 gemerged + og:image-absoluutfix erachteraan; #1 lokaal gemerged (bronwerk integraal overgenomen, sw-conflict → v23) en pagina's geregenereerd. Oorspronkelijke tekst: Allebei hebben ze
   merge-conflicten (`mergeable=CONFLICTING`) en lopen achter op master:
   [#1](https://github.com/MaartenDeKlerkPXL/Brightnews.online/pull/1)

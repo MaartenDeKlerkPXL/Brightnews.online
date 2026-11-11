@@ -157,6 +157,9 @@ via een PR. Laat die PR eerst nakijken door een review-agent
 **Dinsdag 10 november**
 - De v5-pagina's naar hun echte adressen zetten, de oude adressen laten
   werken, en de adressen in `partials/v5/` en `js/v5/gedeeld.js` aanpassen.
+- Alle mails naar de v5-huisstijl, één taal per lezer in plaats van NL en EN
+  door elkaar: de Supabase-sjablonen, de welkomstreeks en de branding in
+  Stripe (TODO 74).
 
 **Woensdag 11 november**
 - CSP op alle pagina's en in het artikelsjabloon (Supabase, Stripe, Google).
