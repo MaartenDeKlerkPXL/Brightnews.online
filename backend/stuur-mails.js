@@ -177,8 +177,13 @@ async function main() {
 
         let vk = voorkeur.get(g.id);
         if (!vk) {
+            // Vinkte de lezer bij Account maken "Stuur me geen welkomstmails"
+            // aan (v5-inloggen.html), dan begint hij afgemeld. Zo klopt ook de
+            // mails-schakelaar in Mijn account meteen.
+            const afgemeld = g.user_metadata?.geen_welkomstmails === true;
             const { data, error } = await db.from('mail_voorkeuren')
-                .insert({ uid: g.id }).select('uid, token, afgemeld').single();
+                .insert({ uid: g.id, afgemeld, ...(afgemeld ? { afgemeld_op: new Date().toISOString() } : {}) })
+                .select('uid, token, afgemeld').single();
             if (error) { console.warn(`⚠️  voorkeuren aanmaken mislukt voor ${g.id}: ${error.message}`); mislukt++; continue; }
             vk = data;
         }
