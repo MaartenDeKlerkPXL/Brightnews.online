@@ -112,12 +112,14 @@ via een PR. Laat die PR eerst nakijken door een review-agent
 
 ### Vrijdag 13 november
 
-- Supabase in de v5-pagina's laden: inloggen met inloglink en met
+- ✅ (vervroegd naar 12 november) Supabase in de v5-pagina's laden: inloggen met inloglink en met
   wachtwoord, account maken (de taal van de lezer in `user_metadata`, nodig
   voor TODO 74), wachtwoord vergeten, uitloggen, en `data-ingelogd` op elke
   pagina (TODO 66, punten 9 en 11).
-- De ontbrekende staten van Wachtwoord vergeten (link verlopen, wachtwoord te
-  kort).
+- ✅ De ontbrekende staten van Wachtwoord vergeten (link verlopen, wachtwoord
+  te kort, en "zelfde als nu").
+- Nog door Maarten: één echte test met een wegwerpadres (account maken met
+  inloglink, wachtwoord vergeten).
 
 ### Zaterdag 14 november
 

@@ -53,9 +53,8 @@
 
     // Alleen een adres op deze site: ?next= mag de lezer niet wegsturen.
     function doel() {
-        if (next && /^\/(?![/\\])/.test(next)) return next;
         if (next && /^[a-z-]+$/.test(next)) return `/v5-${next}.html`;
-        return '/v5-profiel.html';
+        return B.eigenPad(next) || '/v5-profiel.html';
     }
 
     function manier() {
@@ -147,10 +146,17 @@
         return { preferred_lang: B.taal(), geen_welkomstmails: $('in-geen-mails').checked };
     }
 
-    // Te vaak, geen verbinding of een storing: dat mag de lezer weten. Elke
-    // andere weigering (zoals "dit adres kent geen account") niet.
+    // Bij inloggen met wachtwoord mag de lezer weten dat het te vaak was, of
+    // dat er geen verbinding is. Elke andere weigering niet.
     function moetMelden(fout) {
         return !fout.status || fout.status === 429 || fout.status >= 500;
+    }
+
+    // Bij het versturen van een mail alleen geen verbinding of een storing.
+    // Ook "te vaak" niet: Supabase remt alleen adressen mét een account, dus
+    // die melding zou verklappen wie er een account heeft.
+    function isStoring(fout) {
+        return !fout.status || fout.status >= 500;
     }
 
     function meldFout(fout) {
@@ -167,7 +173,7 @@
                 ...(isAccount ? { data: metadata() } : {}),
             },
         });
-        if (error && moetMelden(error)) throw error;
+        if (error && isStoring(error)) throw error;
         if (error) console.warn('BrightNews v5: inloglink niet verstuurd', error.message);
     }
 
@@ -193,7 +199,7 @@
             wachtwoord.focus();
             return;
         }
-        if (error && moetMelden(error)) throw error;
+        if (error && isStoring(error)) throw error;
         if (data?.session) { window.location.href = doel(); return; }
         // Bevestigen per mail. Bestond het adres al, dan zegt Supabase dat
         // niet, en wij dus ook niet.
@@ -276,15 +282,18 @@
         }
     });
 
-    $('in-opnieuw').addEventListener('click', async () => {
+    $('in-opnieuw').addEventListener('click', async e => {
+        const opnieuwKnop = e.currentTarget;
         // In het voorbeeld (?staat=verstuurd) is er niets om opnieuw te sturen.
         if (!opnieuw) { window.showNotification(t('v5_in_opnieuw_gestuurd')); return; }
+        opnieuwKnop.disabled = true;
         try {
             const resultaat = await opnieuw();
-            if (resultaat?.error && moetMelden(resultaat.error)) throw resultaat.error;
+            if (resultaat?.error && isStoring(resultaat.error)) throw resultaat.error;
             window.showNotification(t('v5_in_opnieuw_gestuurd'));
-            B.wachtKnop($('in-opnieuw'), WACHTTIJD);
+            B.wachtKnop(opnieuwKnop, WACHTTIJD);
         } catch (fout) {
+            opnieuwKnop.disabled = false;
             meldFout(fout);
         }
     });

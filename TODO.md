@@ -2102,7 +2102,18 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      bij Redirect URLs `https://brightnews.online/**` laten staan of
      toevoegen, en voor lokaal testen `http://localhost:8945/**`. Anders
      stuurt de inloglink je naar de Site URL in plaats van terug naar de
-     pagina. Daarna één keer echt testen met een wegwerpadres.
+     pagina. ✅ Redirect URLs staan goed (2026-11-12, Maarten). Daarna één
+     keer echt testen met een wegwerpadres.
+     **Uit de review (2026-11-12), verwerkt:** een open redirect via
+     `?next=/%09/evil.com` (nu `B.eigenPad()`, ook op Bedankt); "te vaak"
+     bij het versturen van een mail toont nu ook "Kijk in je mail", omdat
+     Supabase alleen bestaande adressen remt. **Blijft bestaan, en is
+     inherent aan Supabase:** wie zelf de API aanroept met de publieke
+     anon-key, ziet aan `shouldCreateUser: false` of een adres een account
+     heeft. De pagina verklapt het niet. **Te overwegen (Maarten):**
+     Authentication → Providers → Email → "Secure password change" aan,
+     zodat een ingelogde sessie niet zonder het oude wachtwoord een nieuw
+     kan kiezen.
      Oorspronkelijke tekst: **Inloggen koppelen op `v5-inloggen.html`** (Supabase, Erik): inloglink
      per mail (magic link), inloggen met wachtwoord, account maken met of
      zonder wachtwoord, en daarna terug naar `?next=` (anders Mijn account).

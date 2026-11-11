@@ -38,8 +38,7 @@
 
     // Alleen een adres op deze site: ?next= mag de lezer niet wegsturen.
     function volgende() {
-        const next = B.param('next');
-        return next && /^\/(?![/\\])/.test(next) ? next : null;
+        return B.eigenPad(B.param('next'));
     }
 
     function datumLang(dag) {

@@ -84,13 +84,14 @@
         window.showNotification(t(fout?.status === 429 ? 'v5_in_fout_te_vaak' : 'v5_in_fout_algemeen'), 'error');
     }
 
-    // Te vaak, geen verbinding of een storing: dat mag de lezer weten. Een
-    // onbekend adres niet.
+    // Alleen geen verbinding of een storing mag de lezer weten. Ook "te vaak"
+    // niet: Supabase remt alleen adressen mét een account, dus die melding
+    // zou verklappen wie er een account heeft.
     async function stuurHerstel() {
         const { error } = await client.auth.resetPasswordForEmail(mailAdres, {
             redirectTo: `${window.location.origin}/v5-wachtwoord-vergeten.html?type=recovery`,
         });
-        if (error && (!error.status || error.status === 429 || error.status >= 500)) throw error;
+        if (error && (!error.status || error.status >= 500)) throw error;
         if (error) console.warn('BrightNews v5: herstelmail niet verstuurd', error.message);
     }
 
@@ -108,9 +109,15 @@
     } else if (isHerstel && linkFout) {
         toonVerlopen();
     } else if (isHerstel) {
-        // Wachten tot Supabase de link uit het adres heeft verwerkt.
+        // Wachten tot Supabase de link uit het adres heeft verwerkt; tot dan
+        // staat de knop uit (aria-busy: hij houdt zijn kleur).
         toon('nieuw');
+        const opslaan = $('wv-nieuw').querySelector('button[type="submit"]');
+        opslaan.disabled = true;
+        opslaan.setAttribute('aria-busy', 'true');
         (window.bnAccount || Promise.resolve({ gebruiker: null })).then(({ gebruiker }) => {
+            opslaan.disabled = false;
+            opslaan.removeAttribute('aria-busy');
             if (!gebruiker) { toonVerlopen(); return; }
             mailAdres = gebruiker.email || '';
             teken();
@@ -153,13 +160,16 @@
         if (email.hasAttribute('aria-invalid') && VOLLEDIG.test(email.value.trim())) veldFout(email, $('wv-email-fout'), false);
     });
 
-    $('wv-opnieuw').addEventListener('click', async () => {
+    $('wv-opnieuw').addEventListener('click', async e => {
+        const opnieuwKnop = e.currentTarget;
         if (!client || !mailAdres || staat) { window.showNotification(t('v5_in_opnieuw_gestuurd')); return; }
+        opnieuwKnop.disabled = true;
         try {
             await stuurHerstel();
             window.showNotification(t('v5_in_opnieuw_gestuurd'));
-            B.wachtKnop($('wv-opnieuw'));
+            B.wachtKnop(opnieuwKnop);
         } catch (fout) {
+            opnieuwKnop.disabled = false;
             meldFout(fout);
         }
     });
@@ -189,7 +199,7 @@
                 return;
             }
             // Sessie weg of verlopen: opnieuw een link aanvragen.
-            if (error?.status === 401 || error?.code === 'session_not_found') { toonVerlopen(); return; }
+            if (error?.status === 401 || error?.code === 'session_not_found' || error?.name === 'AuthSessionMissingError') { toonVerlopen(); return; }
             if (error) throw error;
             window.showNotification(t('v5_wv_opgeslagen'));
             setTimeout(() => { window.location.href = '/v5-profiel.html'; }, 1200);

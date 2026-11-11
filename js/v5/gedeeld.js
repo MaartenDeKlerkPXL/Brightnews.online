@@ -606,6 +606,24 @@
         return a;
     }
 
+    // ── Terugsturen ──────────────────────────────────────────────────────
+
+    // ?next= en dergelijke: alleen een pad op deze site, anders null. Laat de
+    // browser het adres lezen in plaats van een regex: die liet "/\t/evil.com"
+    // door, en de browser haalt de tab weg en maakt er //evil.com van.
+    function eigenPad(waarde) {
+        if (!waarde) return null;
+        try {
+            const u = new URL(waarde, window.location.origin);
+            if (u.origin !== window.location.origin) return null;
+            // "/.//evil.com" blijft op dit domein, maar het pad "//evil.com"
+            // leest de browser daarna als een ander domein.
+            return u.pathname.replace(/^\/+/, '/') + u.search + u.hash;
+        } catch {
+            return null;
+        }
+    }
+
     // ── Opnieuw versturen ────────────────────────────────────────────────
 
     // "Stuur opnieuw" pas na een wachttijd, met de resterende seconden in de
@@ -685,6 +703,6 @@
         aantalVerhalen, perDag, archiefPerDag, digestsVan, nieuwsteDigestDag, verhalenVanDigests, laatsteMoment,
         zonderVerwijzingen, eersteZinnen, url, metTestdag, categorieLabel,
         el, icoon, link, knop, zinMetDelen, onderwerpLinks, beeld, merkbeeld, storyCard, headlineItem, editieRaster, digestCard,
-        aanwijzing, bronnenRegel, leeg, gelezen, markeerGelezen, deelBalk, origineelLink, start, wachtKnop,
+        aanwijzing, bronnenRegel, leeg, gelezen, markeerGelezen, deelBalk, origineelLink, start, wachtKnop, eigenPad,
     };
 })();
