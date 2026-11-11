@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-es.xml" rel="self" type="application/rss+xml"/>
         <description>Cada día una selección fresca de buenas noticias de todo el mundo. ¡Feliz lectura!</description>
         <language>es-es</language>
-        <lastBuildDate>Tue, 10 Nov 2026 19:29:42 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 11 Nov 2026 05:08:12 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Tu dosis diaria de positividad</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Brasil presenta el primer mapa de ruta mundial para eliminar combustibles fósiles</title>
+            <link>https://brightnews.online/articles/es/brasil-presenta-el-primer-mapa-de-ruta-mundial-para-eliminar-combustibles-fosile-1794373689644spmeqye98.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/es/brasil-presenta-el-primer-mapa-de-ruta-mundial-para-eliminar-combustibles-fosile-1794373689644spmeqye98.html</guid>
+            <pubDate>Wed, 11 Nov 2026 05:08:12 GMT</pubDate>
+            <description>Brasil ha publicado como primer país del mundo un mapa de ruta para la eliminación gradual de combustibles fósiles. El documento marca un paso único en la política climática internacional, siendo Brasil la primera nación que hace público un plan de eliminación tan concreto.</description>
+            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/oil-pumps-on-sunset-Depositphotos_5186129_S.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Cuidado, coraje y un AirTag inteligente: las buenas noticias de la semana</title>
             <link>https://brightnews.online/articles/es/cuidado-coraje-y-un-airtag-inteligente-las-buenas-noticias-de-la-semana-dg-20261109-lifestyle.html</link>
@@ -240,14 +248,6 @@
             <pubDate>Thu, 05 Nov 2026 19:40:10 GMT</pubDate>
             <description>Gracias a la conservación de la naturaleza dirigida, los charranes mayores han recuperado una colonia en la costa sur inglesa, tres años después de que la gripe aviar arrasara completamente la población. También los charranes menores, los chorlitejos patinegros, las gaviotas reidoras y los ostrero euroasiáticos aumentaron en número gracias al mismo trabajo de protección de la Royal Society for...</description>
             <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-David-Kinchin-Smith-RSPB.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Llaves, piezas de puzle y olas saladas: las buenas noticias de principios de noviembre</title>
-            <link>https://brightnews.online/articles/es/llaves-piezas-de-puzle-y-olas-saladas-las-buenas-noticias-de-principios-de-novie-dg-20261104-lifestyle.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/es/llaves-piezas-de-puzle-y-olas-saladas-las-buenas-noticias-de-principios-de-novie-dg-20261104-lifestyle.html</guid>
-            <pubDate>Thu, 05 Nov 2026 05:39:54 GMT</pubDate>
-            <description>Estos días muestran cómo las personas construyen algo de maneras muy diferentes: un oficio, una relación con la familia, o un récord en el mar. Desde un taller escolar en Houston hasta una travesía a nado por toda la costa de California, siempre se trata de perseverar y hacer algo por otro. En la Fifth Ward de Houston, estudiantes de secundaria dirigen desde hace poco su propio taller de automóvil</description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/YouTube-Screengrab-Houston-Independent-School-District.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-fr.xml" rel="self" type="application/rss+xml"/>
         <description>Chaque jour une sélection fraîche de bonnes nouvelles du monde entier. Bonne lecture !</description>
         <language>fr-fr</language>
-        <lastBuildDate>Tue, 10 Nov 2026 19:29:42 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 11 Nov 2026 05:08:12 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Votre dose quotidienne de positivité</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Le Brésil présente la première feuille de route mondiale sur les combustibles fossiles</title>
+            <link>https://brightnews.online/articles/fr/le-bresil-presente-la-premiere-feuille-de-route-mondiale-sur-les-combustibles-fo-1794373689644spmeqye98.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/fr/le-bresil-presente-la-premiere-feuille-de-route-mondiale-sur-les-combustibles-fo-1794373689644spmeqye98.html</guid>
+            <pubDate>Wed, 11 Nov 2026 05:08:12 GMT</pubDate>
+            <description>Le Brésil a publié la première feuille de route au monde pour l&apos;élimination progressive des combustibles fossiles. Le document marque une étape unique dans la politique climatique internationale, le Brésil étant la première nation à rendre public un tel plan d&apos;élimination progressive concret.</description>
+            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/oil-pumps-on-sunset-Depositphotos_5186129_S.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Soins, courage et une AirTag intelligente : les bonnes nouvelles de la semaine</title>
             <link>https://brightnews.online/articles/fr/soins-courage-et-une-airtag-intelligente-les-bonnes-nouvelles-de-la-semaine-dg-20261109-lifestyle.html</link>
@@ -240,14 +248,6 @@
             <pubDate>Thu, 05 Nov 2026 19:40:10 GMT</pubDate>
             <description>Grâce à des efforts ciblés de conservation de la nature, les grandes sternes ont repris une colonie sur la côte sud de l&apos;Angleterre, trois ans après que la grippe aviaire ait décimé complètement la population. Les petites sternes, les pluviers à collier interrompu, les mouettes tridactyles et les huîtriers-pie ont également vu leurs effectifs augmenter grâce aux mêmes travaux de...</description>
             <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-David-Kinchin-Smith-RSPB.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Des clés, des pièces de puzzle et des vagues salées : les bonnes nouvelles de début novembre</title>
-            <link>https://brightnews.online/articles/fr/des-cles-des-pieces-de-puzzle-et-des-vagues-salees-les-bonnes-nouvelles-de-debut-dg-20261104-lifestyle.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/fr/des-cles-des-pieces-de-puzzle-et-des-vagues-salees-les-bonnes-nouvelles-de-debut-dg-20261104-lifestyle.html</guid>
-            <pubDate>Thu, 05 Nov 2026 05:39:54 GMT</pubDate>
-            <description>Ces jours-ci montrent comment les gens construisent quelque chose de manières très différentes : un métier, une relation avec la famille, ou un record en mer. D&apos;un atelier scolaire à Houston à une traversée à la nage le long de toute la côte californienne, il s&apos;agit toujours de persévérance et de faire quelque chose pour autrui. Dans le Fifth Ward de Houston, des lycéens gèrent depuis peu leur pro</description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/YouTube-Screengrab-Houston-Independent-School-District.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

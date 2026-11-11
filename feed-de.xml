@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-de.xml" rel="self" type="application/rss+xml"/>
         <description>Jeden Tag eine frische Auswahl guter Nachrichten aus aller Welt. Viel Spaß beim Lesen!</description>
         <language>de-de</language>
-        <lastBuildDate>Tue, 10 Nov 2026 19:29:42 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 11 Nov 2026 05:08:12 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Deine tägliche Dosis Positivität</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Brasilien präsentiert weltweit erste Roadmap für fossile Brennstoffe</title>
+            <link>https://brightnews.online/articles/de/brasilien-prasentiert-weltweit-erste-roadmap-fur-fossile-brennstoffe-1794373689644spmeqye98.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/de/brasilien-prasentiert-weltweit-erste-roadmap-fur-fossile-brennstoffe-1794373689644spmeqye98.html</guid>
+            <pubDate>Wed, 11 Nov 2026 05:08:12 GMT</pubDate>
+            <description>Brasilien hat als erstes Land der Welt eine Roadmap zur Ausstiegsstrategie aus fossilen Brennstoffen veröffentlicht. Das Dokument markiert einen einzigartigen Schritt in der internationalen Klimapolitik, wobei Brasilien die erste Nation ist, die einen derartigen konkreten Ausstiegsplan öffentlich macht.</description>
+            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/oil-pumps-on-sunset-Depositphotos_5186129_S.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Fürsorge, Mut und ein cleveres AirTag: die guten Nachrichten der Woche</title>
             <link>https://brightnews.online/articles/de/fursorge-mut-und-ein-cleveres-airtag-die-guten-nachrichten-der-woche-dg-20261109-lifestyle.html</link>
@@ -240,14 +248,6 @@
             <pubDate>Thu, 05 Nov 2026 19:40:10 GMT</pubDate>
             <description>Dank gezieltem Naturschutz haben Große Seeschwalben eine Kolonie an der englischen Südküste zurückerobert, drei Jahre nachdem die Vogelgrippe die Population vollständig ausgelöscht hatte. Auch Zwergseeschwalben, Flussregenpfeifer, Lachseeschwalben und Austernfischer nahmen an Zahl zu dank desselben Schutzwerks der Royal Society for the Protection of Birds (RSPB). 2022 wurden Brandseeschwalben, Lac</description>
             <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-David-Kinchin-Smith-RSPB.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Schlüssel, Puzzleteile und salzige Wellen: die guten Nachrichten von Anfang November</title>
-            <link>https://brightnews.online/articles/de/schlussel-puzzleteile-und-salzige-wellen-die-guten-nachrichten-von-anfang-novemb-dg-20261104-lifestyle.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/de/schlussel-puzzleteile-und-salzige-wellen-die-guten-nachrichten-von-anfang-novemb-dg-20261104-lifestyle.html</guid>
-            <pubDate>Thu, 05 Nov 2026 05:39:54 GMT</pubDate>
-            <description>Diese Tage zeigen, wie Menschen auf ganz unterschiedliche Weise etwas aufbauen: ein Handwerk, eine Beziehung zur Familie oder einen Rekord im Meer. Von einer Schulwerkstatt in Houston bis zu einer Schwimmtour entlang der gesamten kalifornischen Küste geht es immer um Durchhaltevermögen und darum, etwas für einen anderen zu tun. In der Fifth Ward von Houston betreiben Schüler seit kurzem ihre eigen</description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/YouTube-Screengrab-Houston-Independent-School-District.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

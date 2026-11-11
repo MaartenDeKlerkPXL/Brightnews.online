@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-en.xml" rel="self" type="application/rss+xml"/>
         <description>A fresh pick of good news from around the world, every day. Enjoy the read!</description>
         <language>en-us</language>
-        <lastBuildDate>Tue, 10 Nov 2026 19:29:42 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 11 Nov 2026 05:08:12 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Your Daily Dose of Positivity</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Brazil presents world&apos;s first fossil fuel phase-out roadmap</title>
+            <link>https://brightnews.online/articles/en/brazil-presents-world-s-first-fossil-fuel-phase-out-roadmap-1794373689644spmeqye98.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/brazil-presents-world-s-first-fossil-fuel-phase-out-roadmap-1794373689644spmeqye98.html</guid>
+            <pubDate>Wed, 11 Nov 2026 05:08:12 GMT</pubDate>
+            <description>Brazil has become the first country in the world to publish a roadmap for phasing out fossil fuels. The document marks a unique step in international climate policy, making Brazil the first nation to publicly release such a concrete phase-out plan.</description>
+            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/oil-pumps-on-sunset-Depositphotos_5186129_S.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Care, courage and a clever AirTag: the week&apos;s good news</title>
             <link>https://brightnews.online/articles/en/care-courage-and-a-clever-airtag-the-week-s-good-news-dg-20261109-lifestyle.html</link>
@@ -240,14 +248,6 @@
             <pubDate>Thu, 05 Nov 2026 19:40:10 GMT</pubDate>
             <description>Thanks to targeted nature conservation, great terns have reclaimed a colony on England&apos;s south coast, three years after bird flu wiped out the population entirely. Little terns, ringed plovers, common terns and oystercatchers also increased in numbers thanks to the same conservation work by the Royal Society for the Protection of Birds (RSPB). In 2022, sandwich terns, common terns and...</description>
             <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-David-Kinchin-Smith-RSPB.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Keys, puzzle pieces and salty waves: the good news from early November</title>
-            <link>https://brightnews.online/articles/en/keys-puzzle-pieces-and-salty-waves-the-good-news-from-early-november-dg-20261104-lifestyle.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/keys-puzzle-pieces-and-salty-waves-the-good-news-from-early-november-dg-20261104-lifestyle.html</guid>
-            <pubDate>Thu, 05 Nov 2026 05:39:54 GMT</pubDate>
-            <description>These days show how people build things in very different ways: a trade, a bond with family, or a record at sea. From a school workshop in Houston to a swimming journey along the entire California coast, it&apos;s always about perseverance and doing something for another person. In Houston&apos;s Fifth Ward, high school students have recently been running their own auto repair shop. The Barbara Jordan Caree</description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/YouTube-Screengrab-Houston-Independent-School-District.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

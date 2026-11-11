@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-11-10T19:29:43.003Z",
+ "gegenereerd": "2026-11-11T05:08:13.417Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -22,6 +22,14 @@
      "url": "https://brightnews.online/articles/nl/tiener-bouwt-app-kora-die-autistische-kinderen-helpt-begrijpen-179426177536734o0a4akh.html"
     },
     {
+     "id": "1794373689644spmeqye98",
+     "titel": "Brazilië presenteert wereldwijd eerste fossiele brandstoffen-roadmap",
+     "teaser": "Brazilië heeft als eerste land ter wereld een roadmap gepubliceerd voor het uitfaseren van fossiele brandstoffen. Het document markeert een unieke stap in het internationale klimaatbeleid, waarbij Brazilië de eerste natie is die een dergelijk concreet uitfaseringsplan openbaar maakt.",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/brazilie-presenteert-wereldwijd-eerste-fossiele-brandstoffen-roadmap-1794373689644spmeqye98.html"
+    },
+    {
      "id": "17943388881162owlla8e3",
      "titel": "Italië steekt $2,2 miljoen in redding van vechthonden",
      "teaser": "Italië heeft 2 miljoen euro (circa $2,2 miljoen) vrijgemaakt om honden te redden uit illegale hondengevechten en hen te helpen herstellen. Het geld gaat naar opvangcentra en revalidatiefaciliteiten die zorg en gedragstraining bieden, zodat getraumatiseerde honden herplaatst kunnen worden bij gezinnen. De financiering komt er na jarenlange inzet van Humane World for Animals Italy en Fondazione Cave Canem via het...",
@@ -36,14 +44,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/woestijn-atacama-kleurt-door-record-bloei-na-jaren-droogte-1794338863435j7325tvr1.html"
-    },
-    {
-     "id": "1794338838098cpxyt1m0c",
-     "titel": "Viral deurbelvideo haalt 76.000 dollar op voor mantelzorger Suzanna Metcalf",
-     "teaser": "Een video van een deurbelcamera in Castle Rock, Colorado, ging vorig jaar viraal en bracht inmiddels meer dan 76.000 dollar op voor pizzabezorgster Suzanna Metcalf. Toen Metcalf een verkeerde pizzabestelling kwam melden bij dominee Neal Seiwert, zag hij dat ze worstelde. Metcalf werkt als bezorger terwijl ze fulltime zorgt voor haar 82-jarige moeder, inclusief verzorging, medische zaken en huishoudelijke kosten....",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/viral-deurbelvideo-haalt-76-000-dollar-op-voor-mantelzorger-suzanna-metcalf-1794338838098cpxyt1m0c.html"
     }
    ],
    "dagoverzichten": [
@@ -82,6 +82,14 @@
      "url": "https://brightnews.online/articles/en/teen-builds-app-kora-to-help-autistic-children-understand-emotions-179426177536734o0a4akh.html"
     },
     {
+     "id": "1794373689644spmeqye98",
+     "titel": "Brazil presents world's first fossil fuel phase-out roadmap",
+     "teaser": "Brazil has become the first country in the world to publish a roadmap for phasing out fossil fuels. The document marks a unique step in international climate policy, making Brazil the first nation to publicly release such a concrete phase-out plan.",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/brazil-presents-world-s-first-fossil-fuel-phase-out-roadmap-1794373689644spmeqye98.html"
+    },
+    {
      "id": "17943388881162owlla8e3",
      "titel": "Italy invests $2.2 million in fighting dog rescue",
      "teaser": "Italy has allocated 2 million euros (approximately $2.2 million) to rescue dogs from illegal dogfighting operations and help them recover. The funds will go to shelters and rehabilitation facilities that provide care and behavioral training, enabling traumatized dogs to be rehomed with families. The financing comes after years of advocacy by Humane World for Animals Italy and Fondazione Cave Canem...",
@@ -96,14 +104,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/en/atacama-desert-blooms-in-record-colors-after-years-of-drought-1794338863435j7325tvr1.html"
-    },
-    {
-     "id": "1794338838098cpxyt1m0c",
-     "titel": "Viral doorbell video raises $76,000 for caregiver Suzanna Metcalf",
-     "teaser": "A doorbell camera video from Castle Rock, Colorado, went viral last year and has since raised more than $76,000 for pizza delivery driver Suzanna Metcalf. When Metcalf came to report an incorrect pizza order to Pastor Neal Seiwert, he noticed she was struggling. Metcalf works as a delivery driver while providing full-time care for her 82-year-old mother, including medical care...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/viral-doorbell-video-raises-76-000-for-caregiver-suzanna-metcalf-1794338838098cpxyt1m0c.html"
     }
    ],
    "dagoverzichten": [
@@ -142,6 +142,14 @@
      "url": "https://brightnews.online/articles/de/teenager-entwickelt-app-kora-zur-unterstutzung-autistischer-kinder-179426177536734o0a4akh.html"
     },
     {
+     "id": "1794373689644spmeqye98",
+     "titel": "Brasilien präsentiert weltweit erste Roadmap für fossile Brennstoffe",
+     "teaser": "Brasilien hat als erstes Land der Welt eine Roadmap zur Ausstiegsstrategie aus fossilen Brennstoffen veröffentlicht. Das Dokument markiert einen einzigartigen Schritt in der internationalen Klimapolitik, wobei Brasilien die erste Nation ist, die einen derartigen konkreten Ausstiegsplan öffentlich macht.",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/brasilien-prasentiert-weltweit-erste-roadmap-fur-fossile-brennstoffe-1794373689644spmeqye98.html"
+    },
+    {
      "id": "17943388881162owlla8e3",
      "titel": "Italien investiert 2,2 Millionen Dollar zur Rettung von Kampfhunden",
      "teaser": "Italien hat 2 Millionen Euro (etwa 2,2 Millionen Dollar) bereitgestellt, um Hunde aus illegalen Hundekämpfen zu retten und ihnen bei der Genesung zu helfen. Das Geld fließt in Auffangstationen und Rehabilitationszentren, die Pflege und Verhaltensschulung anbieten, damit traumatisierte Hunde bei Familien untergebracht werden können. Die Finanzierung ist das Ergebnis jahrelanger Arbeit von Humane World for Animals Italy und Fondazione Cave...",
@@ -156,14 +164,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/de/atacama-wuste-erbluht-nach-jahren-der-trockenheit-in-rekordblute-1794338863435j7325tvr1.html"
-    },
-    {
-     "id": "1794338838098cpxyt1m0c",
-     "titel": "Virale Türklingelvideo bringt über 76.000 Dollar für Pflegeperson Suzanna Metcalf auf",
-     "teaser": "Ein Video einer Türklingel-Kamera in Castle Rock, Colorado, wurde im vergangenen Jahr viral und hat inzwischen über 76.000 Dollar für Pizzaboterin Suzanna Metcalf eingebracht. Als Metcalf bei Pfarrer Neal Seiwert eine falsche Pizzabestellung meldete, bemerkte er, dass sie kämpfte. Metcalf arbeitet als Boterin, während sie sich vollzeitig um ihre 82-jährige Mutter kümmert, einschließlich Pflege, medizinischer Angelegenheiten und Haushaltskosten. Anstatt wütend...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/virale-turklingelvideo-bringt-uber-76-000-dollar-fur-pflegeperson-suzanna-metcal-1794338838098cpxyt1m0c.html"
     }
    ],
    "dagoverzichten": [
@@ -202,6 +202,14 @@
      "url": "https://brightnews.online/articles/fr/un-adolescent-cree-l-app-kora-pour-aider-les-enfants-autistes-a-comprendre-179426177536734o0a4akh.html"
     },
     {
+     "id": "1794373689644spmeqye98",
+     "titel": "Le Brésil présente la première feuille de route mondiale sur les combustibles fossiles",
+     "teaser": "Le Brésil a publié la première feuille de route au monde pour l'élimination progressive des combustibles fossiles. Le document marque une étape unique dans la politique climatique internationale, le Brésil étant la première nation à rendre public un tel plan d'élimination progressive concret.",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/le-bresil-presente-la-premiere-feuille-de-route-mondiale-sur-les-combustibles-fo-1794373689644spmeqye98.html"
+    },
+    {
      "id": "17943388881162owlla8e3",
      "titel": "L'Italie investit 2,2 millions de dollars pour sauver les chiens de combat",
      "teaser": "L'Italie a débloqué 2 millions d'euros (environ 2,2 millions de dollars) pour sauver des chiens issus de combats clandestins et les aider à se rétablir. L'argent est destiné aux centres d'accueil et aux installations de réadaptation qui offrent des soins et un entraînement comportemental, permettant aux chiens traumatisés d'être replacés dans des familles. Le financement intervient après des années d'engagement...",
@@ -216,14 +224,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/fr/le-desert-d-atacama-se-colore-d-une-floraison-record-apres-des-annees-de-sechere-1794338863435j7325tvr1.html"
-    },
-    {
-     "id": "1794338838098cpxyt1m0c",
-     "titel": "Une vidéo de sonnette virale récolte 76 000 dollars pour l'aidante Suzanna Metcalf",
-     "teaser": "Une vidéo de caméra de sonnette à Castle Rock, au Colorado, est devenue virale l'année dernière et a récolté plus de 76 000 dollars pour Suzanna Metcalf, livreuse de pizzas. Lorsque Metcalf s'est présentée chez le pasteur Neal Seiwert pour signaler une mauvaise commande de pizza, il a remarqué qu'elle avait des difficultés. Metcalf travaille comme livreuse tout en s'occupant...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/une-video-de-sonnette-virale-recolte-76-000-dollars-pour-l-aidante-suzanna-metca-1794338838098cpxyt1m0c.html"
     }
    ],
    "dagoverzichten": [
@@ -262,6 +262,14 @@
      "url": "https://brightnews.online/articles/es/adolescente-crea-la-app-kora-para-ayudar-a-ninos-autistas-a-comprender-emociones-179426177536734o0a4akh.html"
     },
     {
+     "id": "1794373689644spmeqye98",
+     "titel": "Brasil presenta el primer mapa de ruta mundial para eliminar combustibles fósiles",
+     "teaser": "Brasil ha publicado como primer país del mundo un mapa de ruta para la eliminación gradual de combustibles fósiles. El documento marca un paso único en la política climática internacional, siendo Brasil la primera nación que hace público un plan de eliminación tan concreto.",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/brasil-presenta-el-primer-mapa-de-ruta-mundial-para-eliminar-combustibles-fosile-1794373689644spmeqye98.html"
+    },
+    {
      "id": "17943388881162owlla8e3",
      "titel": "Italia invierte $2,2 millones en el rescate de perros de pelea",
      "teaser": "Italia ha destinado 2 millones de euros (aproximadamente $2,2 millones) para rescatar perros de peleas ilegales y ayudarles a recuperarse. El dinero se destina a centros de acogida e instalaciones de rehabilitación que ofrecen cuidados y entrenamiento conductual, permitiendo que los perros traumatizados sean recolocados en familias. La financiación llega tras años de trabajo de Humane World for Animals Italy...",
@@ -276,14 +284,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/es/el-desierto-de-atacama-se-tine-de-color-por-una-floracion-record-tras-anos-de-se-1794338863435j7325tvr1.html"
-    },
-    {
-     "id": "1794338838098cpxyt1m0c",
-     "titel": "Video viral de timbre recauda 76.000 dólares para cuidadora Suzanna Metcalf",
-     "teaser": "Un video de una cámara de timbre en Castle Rock, Colorado, se hizo viral el año pasado y ha recaudado más de 76.000 dólares para la repartidora de pizzas Suzanna Metcalf. Cuando Metcalf fue a reportar un pedido de pizza incorrecto al pastor Neal Seiwert, él notó que estaba pasando dificultades. Metcalf trabaja como repartidora mientras cuida a tiempo completo...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/video-viral-de-timbre-recauda-76-000-dolares-para-cuidadora-suzanna-metcalf-1794338838098cpxyt1m0c.html"
     }
    ],
    "dagoverzichten": [
