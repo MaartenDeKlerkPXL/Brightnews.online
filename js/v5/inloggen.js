@@ -98,6 +98,7 @@
         document.title = `${t(isAccount ? 'v5_in_account_tab' : 'schil_inloggen')} · BrightNews`;
         email.placeholder = t('v5_in_email_voorbeeld');
         $('in-akkoord').hidden = !isAccount;
+        $('in-mails-keuze').hidden = !isAccount;
         $('in-premium').hidden = !isAccount;
         akkoordZin();
         werkKaartBij();

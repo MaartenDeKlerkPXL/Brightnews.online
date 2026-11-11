@@ -214,6 +214,15 @@
                 </div>
             </div>
 
+            <!-- Alleen bij Account maken. Standaard uit: de derde welkomstmail legt
+                 Premium uit, en voor reclame per mail moet nee zeggen bij het
+                 aanmelden kunnen (Telecommunicatiewet 11.7, TODO 75). -->
+            <label class="checkbox" id="in-mails-keuze" hidden>
+                <input class="visueel-verborgen" type="checkbox" id="in-geen-mails" name="geen_welkomstmails">
+                <span class="checkbox__vak"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></span>
+                <span data-i18n="v5_in_geen_mails">Stuur me geen welkomstmails</span>
+            </label>
+
             <button class="btn btn--primary btn--vol" type="submit"><span id="in-knop"></span></button>
             <p class="formulier-akkoord" id="in-akkoord" hidden></p>
         </form>

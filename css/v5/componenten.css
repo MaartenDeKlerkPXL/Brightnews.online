@@ -1945,6 +1945,10 @@ body[data-pagina="bedankt"] :is(.navbar, .mobiel-menu) .btn--primary {
     cursor: pointer;
 }
 
+.checkbox[hidden] {
+    display: none;
+}
+
 .checkbox__vak {
     display: grid;
     place-items: center;

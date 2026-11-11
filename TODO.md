@@ -461,8 +461,18 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      2026-11-11). Op `v5-inloggen.html?tab=account` staat achter de
      akkoordzin: "Je krijgt drie welkomstmails. Afmelden kan met één klik
      onder elke mail." (`v5_in_welkomstmails`, vijf talen). Geldt alleen
-     voor Account maken, niet voor inloggen. Het ontwerp in Figma heeft de
-     zin nog niet.
+     voor Account maken, niet voor inloggen.
+     **Aangevuld 2026-11-11 (besluit Maarten):** mail 3 legt Premium uit en
+     is dus reclame. Voor reclame per mail moet de lezer bij het aanmelden
+     meteen nee kunnen zeggen (Telecommunicatiewet art. 11.7). Daarom staat
+     er nu een vinkje "Stuur me geen welkomstmails" (`v5_in_geen_mails`,
+     standaard uit, `name="geen_welkomstmails"`), en de zin is "Zonder vinkje
+     krijg je drie welkomstmails. Afmelden kan ook later, met één klik onder
+     elke mail." **Bij het koppelen (TODO 66 punt 9):** staat het vinkje
+     aan, zet dan direct na het aanmaken `mail_voorkeuren.afgemeld = true`
+     voor die lezer (of geef het mee in `user_metadata` en laat
+     `stuur-mails.js` dat lezen). Het ontwerp in Figma heeft het vinkje en
+     de zin nog niet.
 
   **De proefperiode begint bij Stripe bij het afrekenen**, niet als Premium
   aanstaat. De teksten op Bedankt passen daar sinds 11 november bij; er is
@@ -2050,6 +2060,8 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      Af te stemmen: de wachtwoordregel (voorstel: minstens 8 tekens) en
      "Stuur opnieuw" pas na 60 seconden, met de knop zolang uitgeschakeld.
      De foutmelding mag nooit verklappen of een e-mailadres bestaat.
+     Bij Account maken ook de taal van de lezer en het vinkje "Stuur me geen
+     welkomstmails" (`geen_welkomstmails`) opslaan; zie TODO 74 en 75.
   10. **Mijn account koppelen op `v5-profiel.html`** (Supabase en Stripe,
       dus PR langs Erik). Nodig per lezer: e-mailadres, inlogmanier (heeft
       hij een wachtwoord? dan "Wachtwoord wijzigen"), status (gratis,
