@@ -1,5 +1,45 @@
 [
   {
+    "datum": "2026-11-11T19:24:29.497Z",
+    "dag": "2026-11-10",
+    "categorie": "Environment",
+    "ids": [
+      "17944248919439uxdg6k76",
+      "1794373689644spmeqye98",
+      "1794338863435j7325tvr1"
+    ],
+    "prompthash": "fd561df11314",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 11319,
+    "woorden": {
+      "nl": 366,
+      "en": 377,
+      "de": 362,
+      "fr": 438,
+      "es": 420
+    }
+  },
+  {
+    "datum": "2026-11-11T19:23:38.590Z",
+    "dag": "2026-11-10",
+    "categorie": "Lifestyle",
+    "ids": [
+      "17944249637321olk07x2s",
+      "1794424942669ry7xjuj33",
+      "1794424918029ogfmvv8rv"
+    ],
+    "prompthash": "fd561df11314",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 11962,
+    "woorden": {
+      "nl": 428,
+      "en": 429,
+      "de": 412,
+      "fr": 488,
+      "es": 459
+    }
+  },
+  {
     "datum": "2026-11-10T19:29:42.484Z",
     "dag": "2026-11-09",
     "categorie": "Lifestyle",
@@ -1237,51 +1277,6 @@
       "de": 361,
       "fr": 433,
       "es": 419
-    }
-  },
-  {
-    "datum": "2026-09-06T15:24:31.617Z",
-    "dag": "2026-09-05",
-    "categorie": "Environment",
-    "ids": [
-      "1788645872913v6p9gh7ws",
-      "1788647218036re517hbkv",
-      "1788647086622ilhiogf10",
-      "1788645690381vacqodhek",
-      "1788645362502ubnvc3z3k",
-      "1788645292822m5wh38774"
-    ],
-    "prompthash": "da803f5c2a08",
-    "model": "moeder+vertaal (anthropic)",
-    "tokens": 16634,
-    "woorden": {
-      "nl": 359,
-      "en": 385,
-      "de": 348,
-      "fr": 438,
-      "es": 401
-    }
-  },
-  {
-    "datum": "2026-09-06T15:23:29.557Z",
-    "dag": "2026-09-05",
-    "categorie": "Tech",
-    "ids": [
-      "1788647384130wkqh8u5kt",
-      "178864608674649fh0dl49",
-      "1788647519997iqucy27jj",
-      "1788646955438obijzrd5e",
-      "1788646140552gfkjr3900"
-    ],
-    "prompthash": "da803f5c2a08",
-    "model": "moeder+vertaal (anthropic)",
-    "tokens": 14458,
-    "woorden": {
-      "nl": 297,
-      "en": 312,
-      "de": 302,
-      "fr": 375,
-      "es": 339
     }
   }
 ]

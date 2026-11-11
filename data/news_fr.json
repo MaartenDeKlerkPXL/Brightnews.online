@@ -1,5 +1,119 @@
 [
   {
+    "id": "dg-20261110-environment",
+    "type": "digest",
+    "digest_date": "2026-11-10",
+    "title": "Des ours, des fleurs et un plan : trois signes de rétablissement sur terre",
+    "summary": "Ces jours-ci montrent que la nature peut se rétablir si les humains lui en laissent l'espace, et que les pays font parfois des pas concrets surprenants. Des montagnes du nord de l'Espagne au désert le plus aride du monde : partout émergent des signaux montrant que la protection et les bonnes politiques fonctionnent. Dans le domaine de la politique climatique aussi, quelque chose de nouveau se produit, avec un pays qui énonce pour la première fois clairement sur papier comment il entend se sevrer des combustibles fossiles. En Espagne, l'ours brun des Cantabres a doublé en vingt ans, passant d'environ...",
+    "image_alt": "Des ours, des fleurs et un plan : trois signes de rétablissement sur terre",
+    "meta_description": "La population d'ours en Espagne a doublé, le Brésil présente une feuille de route sur les combustibles fossiles et le désert d'Atacama se colore sous les p",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-Cantabrian-brown-bear-credit-Juan-Iacruz-CC-BY-SA-4.0.jpg",
+    "date": "2026-11-11T19:24:29.497Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "17944248919439uxdg6k76",
+        "title": "La population d'ours bruns en Espagne a doublé grâce à la protection"
+      },
+      {
+        "id": "1794373689644spmeqye98",
+        "title": "Le Brésil présente la première feuille de route mondiale sur les combustibles fossiles"
+      },
+      {
+        "id": "1794338863435j7325tvr1",
+        "title": "Le désert d'Atacama se colore d'une floraison record après des années de sécheresse"
+      }
+    ]
+  },
+  {
+    "id": "dg-20261110-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-11-10",
+    "title": "Trois histoires de promesses tenues, d'aide et de retour",
+    "summary": "Parfois, les bonnes nouvelles commencent par une petite idée qui se transforme en quelque chose de plus grand. Ces jours-ci le montrent de différentes façons : un poète qui rassemble cent confrères pour une bonne cause, une pianiste qui tient une promesse qu'elle s'est faite, et une étudiante qui sauve deux vies en quelques minutes. Ces trois histoires parlent de gens qui donnent en retour, à des moments où on ne s'y attend pas. Dans le nord-est de l'Angleterre, une région aux taux de sans-abrisme les plus élevés du pays, le poète Andrew Mears a eu une idée l'année dernière....",
+    "image_alt": "Trois histoires de promesses tenues, d'aide et de retour",
+    "meta_description": "Un recueil de poésie pour les sans-abri, une pianiste qui tient sa promesse et une étudiante qui sauve deux vies : les bonnes nouvelles du début novembre.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6af4b73eb417c64866415f92_6af4b73d2f34a1d30dd8f1b0_poets-words-on-ne-street-homelessness-featured.webp",
+    "date": "2026-11-11T19:23:38.590Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "17944249637321olk07x2s",
+        "title": "100 poètes écrivent un recueil sur le sans-abrisme pour une bonne cause"
+      },
+      {
+        "id": "1794424942669ry7xjuj33",
+        "title": "Pianiste paralysée (84 ans) tient sa promesse à la maison de retraite Bryn Mawr Village"
+      },
+      {
+        "id": "1794424918029ogfmvv8rv",
+        "title": "Étudiant en navigation sauve un père et son fils de la noyade"
+      }
+    ]
+  },
+  {
+    "id": "17944249637321olk07x2s",
+    "title": "100 poètes écrivent un recueil sur le sans-abrisme pour une bonne cause",
+    "summary": "Le poète Andrew Mears, originaire du nord-est de l'Angleterre, une région aux taux de sans-abrisme les plus élevés du pays, a eu l'idée en 2025 de demander à 100 écrivains d'écrire chacun un poème sur le sans-abrisme. Les poèmes ont été rassemblés dans une anthologie autoéditée intitulée « Words on a NE Street ». Avant Noël, Mears avait vendu suffisamment...",
+    "image_alt": "Le poète Andrew Mears présente le recueil de poèmes Words on a NE Street",
+    "meta_description": "100 poètes ont écrit 100 poèmes sur le sans-abrisme ; les recettes ont été versées à un refuge pour sans-abri à Newcastle.",
+    "meta_keywords": "sans-abrisme, poésie, Newcastle, bonne cause, Words on a NE Street, Andrew Mears",
+    "link": "https://www.goodgoodgood.co/articles/poets-words-on-ne-street-homelessness",
+    "source": "GoodGoodGood.co",
+    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6af4b73eb417c64866415f92_6af4b73d2f34a1d30dd8f1b0_poets-words-on-ne-street-homelessness-featured.webp",
+    "date": "2026-11-11T19:22:44.686Z",
+    "category": "Lifestyle",
+    "score": 10
+  },
+  {
+    "id": "1794424942669ry7xjuj33",
+    "title": "Pianiste paralysée (84 ans) tient sa promesse à la maison de retraite Bryn Mawr Village",
+    "summary": "Bonnie Fay (84 ans) est arrivée comme patiente à la maison de retraite Bryn Mawr Village en Pennsylvanie, paralysée par le syndrome de Guillain-Barré. Pendant sa convalescence difficile, elle a trouvé du réconfort en jouant du piano, une passion qu'elle cultive depuis l'âge de sept ans. Elle s'est promis de revenir un jour y jouer. Elle tient maintenant cette promesse...",
+    "image_alt": "Une femme de 84 ans joue du piano à la maison de retraite pour les résidents en convalescence",
+    "meta_description": "Comment une femme de 84 ans tient sa promesse après une paralysie en jouant du piano pour les résidents en convalescence de Bryn Mawr Village.",
+    "meta_keywords": "Bonnie Fay, Bryn Mawr Village, syndrome de Guillain-Barré, piano, maison de retraite, convalescence, musicothérapie",
+    "link": "https://www.goodnewsnetwork.org/paralyzed-woman-promised-to-return-and-play-piano-for-rehab-patients-she-kept-her-word/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Bonnie-Fay-playing-the-piano-at-Bryn-Mawr-Village-supplied-to-GNN-e1794387097651.jpg",
+    "date": "2026-11-11T19:22:23.905Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "1794424918029ogfmvv8rv",
+    "title": "Étudiant en navigation sauve un père et son fils de la noyade",
+    "summary": "Un cadet de la California Polytechnic State University Marine Academy a sauvé un père et son fils âgé de 25 ans de la noyade dans une piscine à Foster City, en Californie. Zion Jerge a entendu des cris et s'est précipité vers un complexe d'appartements, où il a sauté par-dessus une clôture et s'est jeté à l'eau. Il a d'abord...",
+    "image_alt": "Cadet de la Cal Poly Maritime Academy qui a sauvé un père et un fils de la noyade dans une piscine",
+    "meta_description": "Le cadet en navigation Zion Jerge sauve un père et son fils de la noyade dans une piscine à Foster City, Californie.",
+    "meta_keywords": "sauvetage, noyade, Cal Poly Maritime Academy, Foster City, réanimation cardiopulmonaire, acte de bravoure",
+    "link": "https://www.goodnewsnetwork.org/i-pulled-him-out-i-heard-more-screaming-how-a-cadet-saved-a-father-and-son-from-drowning/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Jerge-Zion-is-recognized-at-the-Cal-Poly-Maritime-Academy-credit-@calpoly_maritime.jpg",
+    "date": "2026-11-11T19:21:59.757Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "17944248919439uxdg6k76",
+    "title": "La population d'ours bruns en Espagne a doublé grâce à la protection",
+    "summary": "L'ours brun cantabrique a doublé en nombre en vingt ans : d'environ 140 animaux au début de ce siècle à 370 aujourd'hui. Les ours ne vivent plus seulement en Cantabrie, mais aussi en Asturies, León, Galice et Palencia, sur une zone de plus de 17 000 kilomètres carrés (6 500 milles carrés). Une étude de 2023 publiée dans Conservation Science...",
+    "image_alt": "Ours brun dans les montagnes de Cantabrie, Espagne",
+    "meta_description": "L'ours brun cantabrique double en nombre : de 140 à 370 animaux en vingt ans grâce à la protection de la nature en Espagne.",
+    "meta_keywords": "ours brun, Cantabrie, Espagne, protection de la nature, rétablissement des espèces, biodiversité",
+    "link": "https://www.goodnewsnetwork.org/spain-sees-incredible-doubling-of-her-brown-bear-population-and-its-breeding-range/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-Cantabrian-brown-bear-credit-Juan-Iacruz-CC-BY-SA-4.0.jpg",
+    "date": "2026-11-11T19:21:34.909Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
     "id": "1794373689644spmeqye98",
     "title": "Le Brésil présente la première feuille de route mondiale sur les combustibles fossiles",
     "summary": "Le Brésil a publié la première feuille de route au monde pour l'élimination progressive des combustibles fossiles. Le document marque une étape unique dans la politique climatique internationale, le Brésil étant la première nation à rendre public un tel plan d'élimination progressive concret.",
@@ -2217,35 +2331,6 @@
     "score": 8
   },
   {
-    "id": "dg-20261001-science",
-    "type": "digest",
-    "digest_date": "2026-10-01",
-    "title": "Énergie propre, un lancement et davantage de financement pour la recherche",
-    "summary": "Les jours autour du 1er octobre 2026 montrent à quel point les progrès scientifiques peuvent être variés : d'une percée dans la production d'énergie à un équipage en route vers la station spatiale et davantage de financement pour la recherche européenne. Trois informations, trois échelles très différentes, mais toutes orientées vers ce que le savoir et la coopération peuvent apporter. En Chine, la fusion nucléaire a été réalisée pour la première fois avec l'hydrogène-bore comme carburant, une option plus propre et plus abondante que le mélange conventionnel de deutérium et de tritium [1]. Le groupe ENN Group, soutenu par l'État,...",
-    "image_alt": "Énergie propre, un lancement et davantage de financement pour la recherche",
-    "meta_description": "Énergie propre, un lancement et davantage de financement pour la recherche",
-    "meta_keywords": "Science",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/ENN-Groups-EXL-50U-spherical-device-which-successfully-achieved-hydrogen-boron-fusion-reactions-credit-handout.jpg",
-    "date": "2026-10-02T04:37:10.716Z",
-    "category": "Science",
-    "refs": [
-      {
-        "id": "17908782798106ax9e1mse",
-        "title": "Un réacteur chinois atteint la fusion nucléaire hydrogène-bore"
-      },
-      {
-        "id": "1790878463725e6mq4yj0y",
-        "title": "SpaceX lance Crew-13 vers la station spatiale internationale"
-      },
-      {
-        "id": "179079052264500q9jt7s6",
-        "title": "Horizon Europe reçoit 500 millions d'euros supplémentaires pour la recherche et l'innovation"
-      }
-    ]
-  },
-  {
     "id": "1790915745699jdltmr09h",
     "title": "Un congé de paternité plus long améliore la santé de la mère et du bébé",
     "summary": "Un père a bénéficié de quelques semaines de congé de paternité à la naissance de son deuxième enfant. Durant cette période, il s'est familiarisé avec le rôle de principal pourvoyeur de soins et a noué des contacts avec d'autres parents du quartier. Des recherches montrent qu'un congé plus long pour le parent qui accouche, combiné à un congé modéré pour...",
@@ -2453,90 +2538,6 @@
     "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Greek-Ministry-of-Culture-released.jpg",
     "date": "2026-10-01T18:11:50.603Z",
     "category": "Lifestyle",
-    "score": 9
-  },
-  {
-    "id": "17908782798106ax9e1mse",
-    "title": "Un réacteur chinois atteint la fusion nucléaire hydrogène-bore",
-    "summary": "Des ingénieurs chinois ont réalisé pour la première fois au monde une fusion nucléaire brève utilisant l'hydrogène-bore comme carburant, une option beaucoup plus propre et abondante que le mélange deutérium-tritium conventionnel. Le groupe ENN Group, soutenu par l'État, a utilisé un laser et des ondes radio pour générer du plasma dans un réacteur tokamak de forme sphérique. Un proton d'hydrogène...",
-    "image_alt": "Réacteur tokamak de forme sphérique dans lequel des ingénieurs chinois ont atteint la fusion nucléaire avec carburant hydrogène-bore",
-    "meta_description": "Le réacteur ENN Group atteint la première fusion nucléaire mondiale avec carburant hydrogène-bore propre, sans rayonnement radioactif.",
-    "meta_keywords": "fusion nucléaire, hydrogène-bore, ENN Group, tokamak, Chine, énergie propre, plasma",
-    "link": "https://www.goodnewsnetwork.org/chinese-commercial-reactor-achieves-nuclear-fusion-with-clean-hydrogen-boron-fuel/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/ENN-Groups-EXL-50U-spherical-device-which-successfully-achieved-hydrogen-boron-fusion-reactions-credit-handout.jpg",
-    "date": "2026-10-01T18:11:21.204Z",
-    "category": "Science",
-    "score": 9
-  },
-  {
-    "id": "17908782525302uz6mdrsj",
-    "title": "L'innovateur social Ken Banks : écouter rend les leaders meilleurs",
-    "summary": "L'innovateur social Ken Banks affirme que l'écoute est une compétence de leadership sous-estimée. Après plus de trente ans de travail dans la conservation de la nature, le développement international et la technologie, il a découvert que les meilleures leçons ne venaient pas de l'apport de solutions, mais de la prise de conscience que la question initiale était mal posée. Lors...",
-    "image_alt": "Des personnes en conversation, s'écoutant mutuellement comme forme de leadership",
-    "meta_description": "L'innovateur social Ken Banks explique pourquoi l'écoute est une compétence de leadership cruciale mais sous-estimée.",
-    "meta_keywords": "Ken Banks, leadership, écoute, FrontlineSMS, développement international, pleine conscience, innovation sociale",
-    "link": "https://www.positive.news/lifestyle/why-good-leaders-listen/",
-    "source": "Positive.News",
-    "image": "https://www.positive.news/wp-content/uploads/2026/09/iStock-2226795526-copy.jpg",
-    "date": "2026-10-01T18:10:55.802Z",
-    "category": "Lifestyle",
-    "score": 8
-  },
-  {
-    "id": "1790829854660zgm6ulla0",
-    "title": "Un léopard des neiges né à la Bronx Zoo",
-    "summary": "À la Bronx Zoo de New York, un léopard des neiges femelle est né le 31 mai, fils des parents Dariga et Moutig. Le petit, nommé Sarka (« requin » en népalais), a réussi ses examens médicaux et ses vaccinations et explore désormais avec sa mère l'enclos Himalayan Highlands du zoo. Le zoo compte actuellement huit léopards des neiges. Le...",
-    "image_alt": "Le jeune léopard des neiges Sarka explore son enclos à la Bronx Zoo",
-    "meta_description": "Un léopard des neiges né à la Bronx Zoo : nouveau chapitre plein d'espoir pour les « fantômes des montagnes » menacés.",
-    "meta_keywords": "léopard des neiges, Bronx Zoo, Sarka, zoo, espèce menacée, conservation, WCS",
-    "link": "https://www.goodgoodgood.co/articles/bronx-zoo-snow-leopard-cub",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abd4d555bfb5d042440d3c2_6abd4d543cda952857dabeec_bronx-zoo-snow-leopard-cub-featured.webp",
-    "date": "2026-10-01T04:44:16.824Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1790829805595tcerjpnfc",
-    "title": "L'enseignement musical est associé à moins d'absentéisme scolaire à Rhode Island",
-    "summary": "Une nouvelle étude de Quadrant Research, commandée par le Rhode Island State Council on the Arts, montre que les élèves qui suivent des cours de musique pendant quatre ans sont moins souvent absents de manière chronique à l'école. Parmi les élèves musiciens sur quatre ans, 25,4 % étaient absents de manière chronique, contre 37,3 % chez les élèves sans quatre...",
-    "image_alt": "Des élèves jouent d'instruments lors d'un cours de musique dans un collège",
-    "meta_description": "Une étude à Rhode Island lie les cours de musique de longue durée à moins d'absentéisme chronique chez les collégiens.",
-    "meta_keywords": "enseignement musical, absentéisme scolaire, Rhode Island, enseignement artistique, absentéisme chronique, Quadrant Research",
-    "link": "https://www.goodgoodgood.co/articles/arts-education-linked-to-chronic-absenteeism",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abd2af75ca03452a19958cd_rhode-island-study-links-sustained-arts-education-01.jpg",
-    "date": "2026-10-01T04:43:28.926Z",
-    "category": "Lifestyle",
-    "score": 10
-  },
-  {
-    "id": "179079052264500q9jt7s6",
-    "title": "Horizon Europe reçoit 500 millions d'euros supplémentaires pour la recherche et l'innovation",
-    "summary": "La Commission européenne a débloqué 500 millions d'euros supplémentaires pour Horizon Europe, le programme de recherche et d'innovation de l'UE, pour 2026 et 2027. Le budget pour ces deux années s'élève ainsi à environ 14,8 milliards d'euros. Ces fonds sont notamment destinés à deux nouveaux appels à projets : 237 millions d'euros pour onze projets portant sur la biodiversité et...",
-    "image_alt": "Des chercheurs collaborent à un projet dans le cadre du programme Horizon Europe de l'UE",
-    "meta_description": "L'UE investit 500 millions d'euros supplémentaires dans Horizon Europe pour la recherche, l'innovation et la biodiversité en 2026-2027.",
-    "meta_keywords": "Horizon Europe, recherche UE, innovation, biodiversité, intelligence artificielle, financement",
-    "link": "https://www.openaccessgovernment.org/horizon-europe-gets-e500-million-boost-to-strengthen-eu-research-and-innovation/214905/",
-    "source": "Openaccessgovernment.org",
-    "image": "/assets/fallback/science-4.jpg",
-    "date": "2026-09-30T17:48:44.068Z",
-    "category": "Science",
-    "score": 8
-  },
-  {
-    "id": "1790790490678v6e4byyna",
-    "title": "La grenouille à pattes rouges fait son retour à Yosemite après 50 ans d'absence",
-    "summary": "Il y a environ cinquante ans, la grenouille à pattes rouges a disparu de Yosemite National Park, notamment en raison de la perte d'habitat, de l'invasion de grenouilles-taureaux américaines et de l'augmentation du nombre de ratons laveurs. Les agents du parc ont éliminé les grenouilles-taureaux et restauré les zones humides et les berges des rivières. En 2016, un programme d'élevage...",
-    "image_alt": "Une grenouille à pattes rouges est relâchée dans une zone humide de Yosemite National Park",
-    "meta_description": "Après 50 ans d'absence, 10 000 grenouilles à pattes rouges ont été réintroduites à Yosemite grâce à un programme d'élevage de la San Francisco Zoo.",
-    "meta_keywords": "grenouille à pattes rouges, Yosemite National Park, San Francisco Zoo, restauration écologique, population de grenouilles, grenouille-taureau, restauration de zones humides",
-    "link": "https://www.goodgoodgood.co/articles/yosemite-red-legged-frog-conservation-release",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abc003998cb09d8b3f6446c_6abc003898cb09d8b3f643d8_yosemite-red-legged-frog-conservation-release-featured.webp",
-    "date": "2026-09-30T17:48:12.262Z",
-    "category": "Environment",
     "score": 9
   }
 ]

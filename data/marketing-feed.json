@@ -1,10 +1,18 @@
 {
- "gegenereerd": "2026-11-11T05:08:13.417Z",
+ "gegenereerd": "2026-11-11T19:24:29.987Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "17944249637321olk07x2s",
+     "titel": "100 dichters schrijven bundel over dakloosheid voor goed doel",
+     "teaser": "Dichter Andrew Mears uit het noordoosten van Engeland, een regio met de hoogste dakloosheidscijfers van het land, kreeg in 2025 het idee om 100 schrijvers te vragen elk een gedicht over dakloosheid te schrijven. De gedichten werden gebundeld in de zelf uitgegeven bloemlezing 'Words on a NE Street'. Tegen Kerstmis had Mears genoeg exemplaren verkocht om £4.200 te doneren aan...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/100-dichters-schrijven-bundel-over-dakloosheid-voor-goed-doel-17944249637321olk07x2s.html"
+    },
     {
      "id": "17943389119158r0jm6tmv",
      "titel": "Flag football groeit snel in populariteit onder meisjes",
@@ -22,31 +30,37 @@
      "url": "https://brightnews.online/articles/nl/tiener-bouwt-app-kora-die-autistische-kinderen-helpt-begrijpen-179426177536734o0a4akh.html"
     },
     {
-     "id": "1794373689644spmeqye98",
-     "titel": "Brazilië presenteert wereldwijd eerste fossiele brandstoffen-roadmap",
-     "teaser": "Brazilië heeft als eerste land ter wereld een roadmap gepubliceerd voor het uitfaseren van fossiele brandstoffen. Het document markeert een unieke stap in het internationale klimaatbeleid, waarbij Brazilië de eerste natie is die een dergelijk concreet uitfaseringsplan openbaar maakt.",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/brazilie-presenteert-wereldwijd-eerste-fossiele-brandstoffen-roadmap-1794373689644spmeqye98.html"
-    },
-    {
-     "id": "17943388881162owlla8e3",
-     "titel": "Italië steekt $2,2 miljoen in redding van vechthonden",
-     "teaser": "Italië heeft 2 miljoen euro (circa $2,2 miljoen) vrijgemaakt om honden te redden uit illegale hondengevechten en hen te helpen herstellen. Het geld gaat naar opvangcentra en revalidatiefaciliteiten die zorg en gedragstraining bieden, zodat getraumatiseerde honden herplaatst kunnen worden bij gezinnen. De financiering komt er na jarenlange inzet van Humane World for Animals Italy en Fondazione Cave Canem via het...",
+     "id": "1794424942669ry7xjuj33",
+     "titel": "Verlamde pianiste (84) houdt belofte aan verpleeghuis Bryn Mawr Village",
+     "teaser": "Bonnie Fay (84) kwam als patiënt naar Bryn Mawr Village nursing home in Pennsylvania, verlamd door het syndroom van Guillain-Barré. Tijdens haar moeizame herstel vond ze troost in pianospelen, iets wat ze al sinds haar zevende deed. Ze beloofde zichzelf ooit terug te komen om er te spelen. Die belofte maakt ze nu waar: ze speelt regelmatig piano voor bewoners...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/italie-steekt-2-2-miljoen-in-redding-van-vechthonden-17943388881162owlla8e3.html"
+     "url": "https://brightnews.online/articles/nl/verlamde-pianiste-84-houdt-belofte-aan-verpleeghuis-bryn-mawr-village-1794424942669ry7xjuj33.html"
     },
     {
-     "id": "1794338863435j7325tvr1",
-     "titel": "Woestijn Atacama kleurt door record-bloei na jaren droogte",
-     "teaser": "De Atacama-woestijn in Chili, normaal de droogste plek op aarde, is bedekt met zo'n 200 bloeiende plantensoorten. Sommige bloemen zijn te zien op plekken waar ze sinds voor het jaar 2000 niet meer groeiden. Het fenomeen, bekend als de 'bloeiende woestijn', ontstaat wanneer regenval en temperatuur samenvallen en sluimerende zaden onder het zand wakker maken. Dankzij Super El Niño viel...",
+     "id": "1794424918029ogfmvv8rv",
+     "titel": "Scheepvaartstudent redt vader en zoon van verdrinking",
+     "teaser": "Een cadet van de California Polytechnic State University Marine Academy heeft een vader en zijn 25-jarige zoon gered van verdrinking in een zwembad in Foster City, Californië. Zion Jerge hoorde geschreeuw en rende naar een appartementencomplex, waar hij over een hek sprong en het water in dook. Hij trok eerst de vader uit het water, die hij drijvend aantrof, en...",
      "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/woestijn-atacama-kleurt-door-record-bloei-na-jaren-droogte-1794338863435j7325tvr1.html"
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/scheepvaartstudent-redt-vader-en-zoon-van-verdrinking-1794424918029ogfmvv8rv.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261110-environment",
+     "titel": "Beren, bloemen en een plan: drie tekenen van herstel op aarde",
+     "categorie": "Environment",
+     "dag": "2026-11-10",
+     "url": "https://brightnews.online/articles/nl/beren-bloemen-en-een-plan-drie-tekenen-van-herstel-op-aarde-dg-20261110-environment.html"
+    },
+    {
+     "id": "dg-20261110-lifestyle",
+     "titel": "Drie verhalen over beloftes houden, helpen en terugkomen",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-10",
+     "url": "https://brightnews.online/articles/nl/drie-verhalen-over-beloftes-houden-helpen-en-terugkomen-dg-20261110-lifestyle.html"
+    },
     {
      "id": "dg-20261109-lifestyle",
      "titel": "Zorg, moed en een slimme AirTag: het goede nieuws van de week",
@@ -66,6 +80,14 @@
   "en": {
    "top": [
     {
+     "id": "17944249637321olk07x2s",
+     "titel": "100 poets write anthology on homelessness for charity",
+     "teaser": "Poet Andrew Mears from northeast England, a region with the country's highest homelessness rates, came up with the idea in 2025 to ask 100 writers to each write a poem about homelessness. The poems were collected in the self-published anthology 'Words on a NE Street'. By Christmas, Mears had sold enough copies to donate £4,200 to Newcastle Helping Street Friends,...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/100-poets-write-anthology-on-homelessness-for-charity-17944249637321olk07x2s.html"
+    },
+    {
      "id": "17943389119158r0jm6tmv",
      "titel": "Flag football surges in popularity among girls",
      "teaser": "Flag football, long seen as an alternative to tackle football, is gaining strong popularity among girls. According to USA Football, participation by girls aged 6 to 17 has risen 57% over the past decade, reaching over 267,000 participants in 2024. In 2023, the California Interscholastic Federation added girls flag football as a high school sport, and in 2028 the sport...",
@@ -82,31 +104,37 @@
      "url": "https://brightnews.online/articles/en/teen-builds-app-kora-to-help-autistic-children-understand-emotions-179426177536734o0a4akh.html"
     },
     {
-     "id": "1794373689644spmeqye98",
-     "titel": "Brazil presents world's first fossil fuel phase-out roadmap",
-     "teaser": "Brazil has become the first country in the world to publish a roadmap for phasing out fossil fuels. The document marks a unique step in international climate policy, making Brazil the first nation to publicly release such a concrete phase-out plan.",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/brazil-presents-world-s-first-fossil-fuel-phase-out-roadmap-1794373689644spmeqye98.html"
-    },
-    {
-     "id": "17943388881162owlla8e3",
-     "titel": "Italy invests $2.2 million in fighting dog rescue",
-     "teaser": "Italy has allocated 2 million euros (approximately $2.2 million) to rescue dogs from illegal dogfighting operations and help them recover. The funds will go to shelters and rehabilitation facilities that provide care and behavioral training, enabling traumatized dogs to be rehomed with families. The financing comes after years of advocacy by Humane World for Animals Italy and Fondazione Cave Canem...",
+     "id": "1794424942669ry7xjuj33",
+     "titel": "Paralyzed pianist (84) keeps promise to Bryn Mawr Village nursing home",
+     "teaser": "Bonnie Fay (84) arrived as a patient at Bryn Mawr Village nursing home in Pennsylvania, paralyzed by Guillain-Barré syndrome. During her difficult recovery, she found solace in playing piano, something she had done since age seven. She promised herself she would one day return to play there. Now she is making good on that promise: she plays piano regularly for...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/italy-invests-2-2-million-in-fighting-dog-rescue-17943388881162owlla8e3.html"
+     "url": "https://brightnews.online/articles/en/paralyzed-pianist-84-keeps-promise-to-bryn-mawr-village-nursing-home-1794424942669ry7xjuj33.html"
     },
     {
-     "id": "1794338863435j7325tvr1",
-     "titel": "Atacama Desert blooms in record colors after years of drought",
-     "teaser": "The Atacama Desert in Chile, normally the driest place on Earth, is covered with some 200 flowering plant species. Some flowers are appearing in places where they haven't been seen since before the year 2000. The phenomenon, known as the 'blooming desert', occurs when rainfall and temperature coincide and dormant seeds beneath the sand awaken. Thanks to Super El Niño,...",
+     "id": "1794424918029ogfmvv8rv",
+     "titel": "Maritime student rescues father and son from drowning",
+     "teaser": "A cadet from the California Polytechnic State University Marine Academy rescued a father and his 25-year-old son from drowning in a swimming pool in Foster City, California. Zion Jerge heard screaming and ran to an apartment complex, where he jumped over a fence and dove into the water. He first pulled the father out of the water, whom he found...",
      "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/atacama-desert-blooms-in-record-colors-after-years-of-drought-1794338863435j7325tvr1.html"
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/maritime-student-rescues-father-and-son-from-drowning-1794424918029ogfmvv8rv.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261110-environment",
+     "titel": "Bears, flowers and a plan: three signs of recovery on Earth",
+     "categorie": "Environment",
+     "dag": "2026-11-10",
+     "url": "https://brightnews.online/articles/en/bears-flowers-and-a-plan-three-signs-of-recovery-on-earth-dg-20261110-environment.html"
+    },
+    {
+     "id": "dg-20261110-lifestyle",
+     "titel": "Three stories about keeping promises, helping and coming back",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-10",
+     "url": "https://brightnews.online/articles/en/three-stories-about-keeping-promises-helping-and-coming-back-dg-20261110-lifestyle.html"
+    },
     {
      "id": "dg-20261109-lifestyle",
      "titel": "Care, courage and a clever AirTag: the week's good news",
@@ -126,6 +154,14 @@
   "de": {
    "top": [
     {
+     "id": "17944249637321olk07x2s",
+     "titel": "100 Dichter schreiben Gedichtsammlung über Obdachlosigkeit für gemeinnützigen Zweck",
+     "teaser": "Der Dichter Andrew Mears aus Nordostengland, einer Region mit den höchsten Obdachlosenzahlen des Landes, hatte 2025 die Idee, 100 Schriftsteller zu bitten, jeweils ein Gedicht über Obdachlosigkeit zu schreiben. Die Gedichte wurden in der Eigenverlagsanthologie „Words on a NE Street\" zusammengefasst. Bis Weihnachten hatte Mears genug Exemplare verkauft, um £4.200 an Newcastle Helping Street Friends zu spenden, eine kleine Freiwilligenorganisation....",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/100-dichter-schreiben-gedichtsammlung-uber-obdachlosigkeit-fur-gemeinnutzigen-zw-17944249637321olk07x2s.html"
+    },
+    {
      "id": "17943389119158r0jm6tmv",
      "titel": "Flag Football wächst schnell an Popularität unter Mädchen",
      "teaser": "Flag Football, lange als Alternative zu Tackle Football angesehen, gewinnt stark an Popularität bei Mädchen. Laut USA Football ist die Teilnahme von Mädchen zwischen 6 und 17 Jahren in den letzten zehn Jahren um 57 % gestiegen, auf über 267.000 Teilnehmer im Jahr 2024. 2023 fügte die California Interscholastic Federation Flag Football für Mädchen als Schulsport der Sekundarstufe hinzu, und...",
@@ -142,31 +178,37 @@
      "url": "https://brightnews.online/articles/de/teenager-entwickelt-app-kora-zur-unterstutzung-autistischer-kinder-179426177536734o0a4akh.html"
     },
     {
-     "id": "1794373689644spmeqye98",
-     "titel": "Brasilien präsentiert weltweit erste Roadmap für fossile Brennstoffe",
-     "teaser": "Brasilien hat als erstes Land der Welt eine Roadmap zur Ausstiegsstrategie aus fossilen Brennstoffen veröffentlicht. Das Dokument markiert einen einzigartigen Schritt in der internationalen Klimapolitik, wobei Brasilien die erste Nation ist, die einen derartigen konkreten Ausstiegsplan öffentlich macht.",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/brasilien-prasentiert-weltweit-erste-roadmap-fur-fossile-brennstoffe-1794373689644spmeqye98.html"
-    },
-    {
-     "id": "17943388881162owlla8e3",
-     "titel": "Italien investiert 2,2 Millionen Dollar zur Rettung von Kampfhunden",
-     "teaser": "Italien hat 2 Millionen Euro (etwa 2,2 Millionen Dollar) bereitgestellt, um Hunde aus illegalen Hundekämpfen zu retten und ihnen bei der Genesung zu helfen. Das Geld fließt in Auffangstationen und Rehabilitationszentren, die Pflege und Verhaltensschulung anbieten, damit traumatisierte Hunde bei Familien untergebracht werden können. Die Finanzierung ist das Ergebnis jahrelanger Arbeit von Humane World for Animals Italy und Fondazione Cave...",
+     "id": "1794424942669ry7xjuj33",
+     "titel": "Gelähmte Pianistin (84) erfüllt Versprechen an Bryn Mawr Village",
+     "teaser": "Bonnie Fay (84) kam als Patientin ins Bryn Mawr Village Pflegeheim in Pennsylvania, gelähmt durch das Guillain-Barré-Syndrom. Während ihrer mühsamen Genesung fand sie Trost im Klavierspiel, das sie bereits seit ihrem siebten Lebensjahr betreibt. Sie versprach sich selbst, eines Tages zurückzukommen und dort zu spielen. Dieses Versprechen löst sie nun ein: Sie spielt regelmäßig Klavier für Bewohner, die sich von...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/italien-investiert-2-2-millionen-dollar-zur-rettung-von-kampfhunden-17943388881162owlla8e3.html"
+     "url": "https://brightnews.online/articles/de/gelahmte-pianistin-84-erfullt-versprechen-an-bryn-mawr-village-1794424942669ry7xjuj33.html"
     },
     {
-     "id": "1794338863435j7325tvr1",
-     "titel": "Atacama-Wüste erblüht nach Jahren der Trockenheit in Rekordblüte",
-     "teaser": "Die Atacama-Wüste in Chile, normalerweise der trockenste Ort der Erde, ist mit etwa 200 blühenden Pflanzenarten bedeckt. Einige Blumen sind an Orten zu sehen, wo sie seit vor dem Jahr 2000 nicht mehr wuchsen. Das Phänomen, bekannt als die „blühende Wüste\", entsteht, wenn Niederschlag und Temperatur zusammentreffen und schlummernde Samen unter dem Sand erwachen. Dank Super El Niño fiel im...",
+     "id": "1794424918029ogfmvv8rv",
+     "titel": "Schifffahrtsstudent rettet Vater und Sohn vor dem Ertrinken",
+     "teaser": "Ein Kadett der California Polytechnic State University Marine Academy hat einen Vater und seinen 25-jährigen Sohn vor dem Ertrinken in einem Schwimmbad in Foster City, Kalifornien, gerettet. Zion Jerge hörte Schreie und rannte zu einem Apartmentkomplex, wo er über einen Zaun sprang und ins Wasser tauchte. Er zog zunächst den Vater aus dem Wasser, den er treibend vorfand, und hörte...",
      "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/atacama-wuste-erbluht-nach-jahren-der-trockenheit-in-rekordblute-1794338863435j7325tvr1.html"
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/schifffahrtsstudent-rettet-vater-und-sohn-vor-dem-ertrinken-1794424918029ogfmvv8rv.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261110-environment",
+     "titel": "Bären, Blüten und ein Plan: drei Zeichen der Erholung auf der Erde",
+     "categorie": "Environment",
+     "dag": "2026-11-10",
+     "url": "https://brightnews.online/articles/de/baren-bluten-und-ein-plan-drei-zeichen-der-erholung-auf-der-erde-dg-20261110-environment.html"
+    },
+    {
+     "id": "dg-20261110-lifestyle",
+     "titel": "Drei Geschichten über das Einlösen von Versprechen, Helfen und Zurückkehren",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-10",
+     "url": "https://brightnews.online/articles/de/drei-geschichten-uber-das-einlosen-von-versprechen-helfen-und-zuruckkehren-dg-20261110-lifestyle.html"
+    },
     {
      "id": "dg-20261109-lifestyle",
      "titel": "Fürsorge, Mut und ein cleveres AirTag: die guten Nachrichten der Woche",
@@ -186,6 +228,14 @@
   "fr": {
    "top": [
     {
+     "id": "17944249637321olk07x2s",
+     "titel": "100 poètes écrivent un recueil sur le sans-abrisme pour une bonne cause",
+     "teaser": "Le poète Andrew Mears, originaire du nord-est de l'Angleterre, une région aux taux de sans-abrisme les plus élevés du pays, a eu l'idée en 2025 de demander à 100 écrivains d'écrire chacun un poème sur le sans-abrisme. Les poèmes ont été rassemblés dans une anthologie autoéditée intitulée « Words on a NE Street ». Avant Noël, Mears avait vendu suffisamment...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/100-poetes-ecrivent-un-recueil-sur-le-sans-abrisme-pour-une-bonne-cause-17944249637321olk07x2s.html"
+    },
+    {
      "id": "17943389119158r0jm6tmv",
      "titel": "Le flag football gagne rapidement en popularité chez les filles",
      "teaser": "Le flag football, longtemps considéré comme une alternative au tackle football, gagne fortement en popularité chez les filles. Selon USA Football, la participation des filles âgées de 6 à 17 ans a augmenté de 57 % au cours de la dernière décennie, atteignant plus de 267 000 participants en 2024. En 2023, la California Interscholastic Federation a ajouté le flag...",
@@ -202,31 +252,37 @@
      "url": "https://brightnews.online/articles/fr/un-adolescent-cree-l-app-kora-pour-aider-les-enfants-autistes-a-comprendre-179426177536734o0a4akh.html"
     },
     {
-     "id": "1794373689644spmeqye98",
-     "titel": "Le Brésil présente la première feuille de route mondiale sur les combustibles fossiles",
-     "teaser": "Le Brésil a publié la première feuille de route au monde pour l'élimination progressive des combustibles fossiles. Le document marque une étape unique dans la politique climatique internationale, le Brésil étant la première nation à rendre public un tel plan d'élimination progressive concret.",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/le-bresil-presente-la-premiere-feuille-de-route-mondiale-sur-les-combustibles-fo-1794373689644spmeqye98.html"
-    },
-    {
-     "id": "17943388881162owlla8e3",
-     "titel": "L'Italie investit 2,2 millions de dollars pour sauver les chiens de combat",
-     "teaser": "L'Italie a débloqué 2 millions d'euros (environ 2,2 millions de dollars) pour sauver des chiens issus de combats clandestins et les aider à se rétablir. L'argent est destiné aux centres d'accueil et aux installations de réadaptation qui offrent des soins et un entraînement comportemental, permettant aux chiens traumatisés d'être replacés dans des familles. Le financement intervient après des années d'engagement...",
+     "id": "1794424942669ry7xjuj33",
+     "titel": "Pianiste paralysée (84 ans) tient sa promesse à la maison de retraite Bryn Mawr Village",
+     "teaser": "Bonnie Fay (84 ans) est arrivée comme patiente à la maison de retraite Bryn Mawr Village en Pennsylvanie, paralysée par le syndrome de Guillain-Barré. Pendant sa convalescence difficile, elle a trouvé du réconfort en jouant du piano, une passion qu'elle cultive depuis l'âge de sept ans. Elle s'est promis de revenir un jour y jouer. Elle tient maintenant cette promesse...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/l-italie-investit-2-2-millions-de-dollars-pour-sauver-les-chiens-de-combat-17943388881162owlla8e3.html"
+     "url": "https://brightnews.online/articles/fr/pianiste-paralysee-84-ans-tient-sa-promesse-a-la-maison-de-retraite-bryn-mawr-vi-1794424942669ry7xjuj33.html"
     },
     {
-     "id": "1794338863435j7325tvr1",
-     "titel": "Le désert d'Atacama se colore d'une floraison record après des années de sécheresse",
-     "teaser": "Le désert d'Atacama au Chili, normalement l'endroit le plus aride de la terre, est recouvert d'environ 200 espèces de plantes en fleur. Certaines fleurs sont visibles à des endroits où elles n'avaient pas poussé depuis avant l'an 2000. Le phénomène, connu sous le nom de « désert en fleur », se produit lorsque les précipitations et la température coïncident et...",
+     "id": "1794424918029ogfmvv8rv",
+     "titel": "Étudiant en navigation sauve un père et son fils de la noyade",
+     "teaser": "Un cadet de la California Polytechnic State University Marine Academy a sauvé un père et son fils âgé de 25 ans de la noyade dans une piscine à Foster City, en Californie. Zion Jerge a entendu des cris et s'est précipité vers un complexe d'appartements, où il a sauté par-dessus une clôture et s'est jeté à l'eau. Il a d'abord...",
      "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/le-desert-d-atacama-se-colore-d-une-floraison-record-apres-des-annees-de-sechere-1794338863435j7325tvr1.html"
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/etudiant-en-navigation-sauve-un-pere-et-son-fils-de-la-noyade-1794424918029ogfmvv8rv.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261110-environment",
+     "titel": "Des ours, des fleurs et un plan : trois signes de rétablissement sur terre",
+     "categorie": "Environment",
+     "dag": "2026-11-10",
+     "url": "https://brightnews.online/articles/fr/des-ours-des-fleurs-et-un-plan-trois-signes-de-retablissement-sur-terre-dg-20261110-environment.html"
+    },
+    {
+     "id": "dg-20261110-lifestyle",
+     "titel": "Trois histoires de promesses tenues, d'aide et de retour",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-10",
+     "url": "https://brightnews.online/articles/fr/trois-histoires-de-promesses-tenues-d-aide-et-de-retour-dg-20261110-lifestyle.html"
+    },
     {
      "id": "dg-20261109-lifestyle",
      "titel": "Soins, courage et une AirTag intelligente : les bonnes nouvelles de la semaine",
@@ -246,6 +302,14 @@
   "es": {
    "top": [
     {
+     "id": "17944249637321olk07x2s",
+     "titel": "100 poetas escriben un poemario sobre la falta de vivienda con fines benéficos",
+     "teaser": "El poeta Andrew Mears del noreste de Inglaterra, una región con las cifras más altas de falta de vivienda del país, tuvo la idea en 2025 de pedir a 100 escritores que escribieran cada uno un poema sobre la falta de vivienda. Los poemas se reunieron en la antología autopublicada «Words on a NE Street». Para Navidad, Mears había vendido...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/100-poetas-escriben-un-poemario-sobre-la-falta-de-vivienda-con-fines-beneficos-17944249637321olk07x2s.html"
+    },
+    {
      "id": "17943389119158r0jm6tmv",
      "titel": "El flag football crece rápidamente en popularidad entre las niñas",
      "teaser": "El flag football, durante mucho tiempo considerado una alternativa al tackle football, gana fuerte popularidad entre las niñas. Según USA Football, la participación de niñas entre 6 y 17 años aumentó un 57% en la última década, llegando a más de 267.000 participantes en 2024. En 2023, la California Interscholastic Federation añadió el flag football femenino como deporte de secundaria,...",
@@ -262,31 +326,37 @@
      "url": "https://brightnews.online/articles/es/adolescente-crea-la-app-kora-para-ayudar-a-ninos-autistas-a-comprender-emociones-179426177536734o0a4akh.html"
     },
     {
-     "id": "1794373689644spmeqye98",
-     "titel": "Brasil presenta el primer mapa de ruta mundial para eliminar combustibles fósiles",
-     "teaser": "Brasil ha publicado como primer país del mundo un mapa de ruta para la eliminación gradual de combustibles fósiles. El documento marca un paso único en la política climática internacional, siendo Brasil la primera nación que hace público un plan de eliminación tan concreto.",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/brasil-presenta-el-primer-mapa-de-ruta-mundial-para-eliminar-combustibles-fosile-1794373689644spmeqye98.html"
-    },
-    {
-     "id": "17943388881162owlla8e3",
-     "titel": "Italia invierte $2,2 millones en el rescate de perros de pelea",
-     "teaser": "Italia ha destinado 2 millones de euros (aproximadamente $2,2 millones) para rescatar perros de peleas ilegales y ayudarles a recuperarse. El dinero se destina a centros de acogida e instalaciones de rehabilitación que ofrecen cuidados y entrenamiento conductual, permitiendo que los perros traumatizados sean recolocados en familias. La financiación llega tras años de trabajo de Humane World for Animals Italy...",
+     "id": "1794424942669ry7xjuj33",
+     "titel": "Pianista paralizada (84) cumple su promesa en la residencia Bryn Mawr Village",
+     "teaser": "Bonnie Fay (84) llegó como paciente a la residencia de enfermería Bryn Mawr Village en Pensilvania, paralizada por el síndrome de Guillain-Barré. Durante su difícil recuperación, encontró consuelo tocando piano, algo que hacía desde los siete años. Se prometió a sí misma que algún día volvería para tocar allí. Ahora cumple esa promesa: toca piano regularmente para los residentes que...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/italia-invierte-2-2-millones-en-el-rescate-de-perros-de-pelea-17943388881162owlla8e3.html"
+     "url": "https://brightnews.online/articles/es/pianista-paralizada-84-cumple-su-promesa-en-la-residencia-bryn-mawr-village-1794424942669ry7xjuj33.html"
     },
     {
-     "id": "1794338863435j7325tvr1",
-     "titel": "El desierto de Atacama se tiñe de color por una floración récord tras años de sequía",
-     "teaser": "El desierto de Atacama en Chile, normalmente el lugar más seco de la tierra, está cubierto de alrededor de 200 especies de plantas en flor. Algunas flores se ven en lugares donde no habían crecido desde antes del año 2000. El fenómeno, conocido como el «desierto florido», ocurre cuando la lluvia y la temperatura coinciden y despiertan las semillas latentes...",
+     "id": "1794424918029ogfmvv8rv",
+     "titel": "Estudiante de navegación salva a padre e hijo del ahogamiento",
+     "teaser": "Un cadete de la California Polytechnic State University Marine Academy rescató a un padre y su hijo de 25 años del ahogamiento en una piscina en Foster City, California. Zion Jerge escuchó gritos y corrió hacia un complejo de apartamentos, donde saltó una valla y se lanzó al agua. Primero sacó al padre del agua, a quien encontró flotando, y...",
      "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/el-desierto-de-atacama-se-tine-de-color-por-una-floracion-record-tras-anos-de-se-1794338863435j7325tvr1.html"
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/estudiante-de-navegacion-salva-a-padre-e-hijo-del-ahogamiento-1794424918029ogfmvv8rv.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261110-environment",
+     "titel": "Osos, flores y un plan: tres señales de recuperación en la tierra",
+     "categorie": "Environment",
+     "dag": "2026-11-10",
+     "url": "https://brightnews.online/articles/es/osos-flores-y-un-plan-tres-senales-de-recuperacion-en-la-tierra-dg-20261110-environment.html"
+    },
+    {
+     "id": "dg-20261110-lifestyle",
+     "titel": "Tres historias sobre cumplir promesas, ayudar y volver",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-10",
+     "url": "https://brightnews.online/articles/es/tres-historias-sobre-cumplir-promesas-ayudar-y-volver-dg-20261110-lifestyle.html"
+    },
     {
      "id": "dg-20261109-lifestyle",
      "titel": "Cuidado, coraje y un AirTag inteligente: las buenas noticias de la semana",
