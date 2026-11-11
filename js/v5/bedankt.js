@@ -12,8 +12,14 @@
 // "proefperiode", nooit "betaling gelukt", en noemen de eerste betaling met
 // bedrag en datum (30 dagen na vandaag).
 //
-// De status komt straks van de back-end (TODO punt 66). Tot dan:
-//   geen ?staat=        een paar seconden bezig, dan gelukt (de gewone route)
+// Gekoppeld (TODO 66 punt 12): Stripe stuurt hierheen na de aanmelding (in
+// de betaallinks ingesteld als "na betaling doorsturen"). De pagina vraagt
+// profiles via window.bnVerversAccount(); plan, eerste betaling en
+// e-mailadres komen uit het profiel en de sessie, het artikel om verder te
+// lezen uit ?next= of uit wat Abonnementen in sessionStorage zette
+// ('bn-afrekenen'). Niet ingelogd in deze browser: eerst inloggen, dan terug.
+//
+// Om de staten te bekijken zonder account (dan wordt er niets opgehaald):
 //   ?staat=bezig        blijft vragen; na 30 seconden traag
 //   ?staat=gelukt       meteen gelukt
 //   ?staat=traag        meteen traag
@@ -28,17 +34,35 @@
     const { t } = B;
     const ELKE = 2000;
     const GEDULD = 30000;
-    const VOORBEELD_KLAAR_NA = 3;     // keer vragen in het voorbeeld zonder ?staat=
     const PROEF_DAGEN = 30;
+    const SLEUTEL = 'bn-afrekenen';
 
     const $ = id => document.getElementById(id);
-    const staat = B.param('staat');
-    const perMaand = B.param('plan') === 'maandelijks';
-    const email = B.param('email') || 'jan@voorbeeld.nl';
+    const staat = ['bezig', 'gelukt', 'traag'].includes(B.param('staat')) ? B.param('staat') : null;
+    const client = window.supabaseClient;
+    const voorbeeld = Boolean(staat) || !client;
+
+    function bewaard() {
+        try { return JSON.parse(sessionStorage.getItem(SLEUTEL) || 'null'); } catch { return null; }
+    }
+
+    // Wat er in de teksten komt. In het voorbeeld uit het adres; echt uit
+    // het profiel (gegevensVan()).
+    const vertrek = bewaard();
+    let perMaand = B.param('plan') === 'maandelijks' || vertrek?.plan === 'maandelijks';
+    let email = B.param('email') || 'jan@voorbeeld.nl';
+    let eersteDag = null;
 
     // Alleen een adres op deze site: ?next= mag de lezer niet wegsturen.
     function volgende() {
-        return B.eigenPad(B.param('next'));
+        return B.eigenPad(B.param('next')) || B.eigenPad(vertrek?.next);
+    }
+
+    function gegevensVan({ gebruiker, profiel }) {
+        if (gebruiker?.email) email = gebruiker.email;
+        if (/^(maandelijks|glow)$/i.test(profiel?.plan_type || '')) perMaand = true;
+        if (/^(jaarlijks|shine)$/i.test(profiel?.plan_type || '')) perMaand = false;
+        if (profiel?.proef_tot) eersteDag = B.dagVan(profiel.proef_tot);
     }
 
     function datumLang(dag) {
@@ -54,7 +78,7 @@
     }
 
     function teken() {
-        const eersteBetaling = datumLang(B.verschuif(B.vandaag(), PROEF_DAGEN));
+        const eersteBetaling = datumLang(eersteDag || B.verschuif(B.vandaag(), PROEF_DAGEN));
         const bedrag = t(perMaand ? 'v5_bd_bedrag_maand' : 'v5_bd_bedrag_jaar');
         const plan = `${t(perMaand ? 'plan_glow_name' : 'plan_shine_name')} · ${t(perMaand ? 'v5_bd_per_maand' : 'v5_bd_per_jaar')}`;
 
@@ -73,41 +97,61 @@
         $('bd-account-regel').replaceChildren(B.zinMetDelen('v5_bd_account_regel', { account }));
     }
 
-    // Straks: de back-end vragen of Premium aanstaat voor deze sessie.
-    let gevraagd = 0;
-    function premiumStaatAan() {
-        gevraagd += 1;
-        return Promise.resolve(!staat && gevraagd >= VOORBEELD_KLAAR_NA);
+    // Staat Premium aan voor deze lezer? In het voorbeeld (?staat=bezig) nooit.
+    async function premiumStaatAan() {
+        if (voorbeeld) return false;
+        const account = await window.bnVerversAccount();
+        gegevensVan(account);
+        return account.premium;
+    }
+
+    function klaar() {
+        try { sessionStorage.removeItem(SLEUTEL); } catch { /* niets te wissen */ }
+        document.body.dataset.premium = '';
+        teken();
+        toon('gelukt');
     }
 
     function wacht() {
         const begin = Date.now();
         const vraag = async () => {
-            if (await premiumStaatAan()) {
-                document.body.dataset.premium = '';
-                toon('gelukt');
-                return;
-            }
+            if (await premiumStaatAan()) { klaar(); return; }
             if (Date.now() - begin >= GEDULD) { toon('traag'); return; }
             setTimeout(vraag, ELKE);
         };
         setTimeout(vraag, ELKE);
     }
 
-    // De lezer is ingelogd (Mijn account in de header); Premium pas als het
-    // aanstaat, dan verdwijnt Probeer Premium.
-    document.body.dataset.ingelogd = '';
     $('bd-verversen').addEventListener('click', () => window.location.reload());
 
     // Teksten opnieuw bij een andere taal; de staat en het vragen één keer.
-    B.start(teken);
-    if (staat === 'gelukt') {
-        document.body.dataset.premium = '';
-        toon('gelukt');
-    } else if (staat === 'traag') {
-        toon('traag');
+    if (voorbeeld) {
+        B.start(teken);
+        // De lezer is ingelogd (Mijn account in de header); Premium pas als
+        // het aanstaat, dan verdwijnt Probeer Premium.
+        document.body.dataset.ingelogd = '';
+        if (staat === 'gelukt') {
+            document.body.dataset.premium = '';
+            toon('gelukt');
+        } else if (staat === 'traag') {
+            toon('traag');
+        } else {
+            toon('bezig');
+            wacht();
+        }
     } else {
         toon('bezig');
-        wacht();
+        window.bnAccount.then(account => {
+            if (!account.gebruiker) {
+                const hier = window.location.pathname + window.location.search;
+                window.location.replace(`/v5-inloggen.html?next=${encodeURIComponent(hier)}`);
+                return;
+            }
+            // Pas tekenen als het e-mailadres en het plan bekend zijn.
+            gegevensVan(account);
+            B.start(teken);
+            if (account.premium) klaar();
+            else wacht();
+        });
     }
 })();

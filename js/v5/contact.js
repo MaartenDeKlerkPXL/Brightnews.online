@@ -108,6 +108,10 @@
 
     // ── Staten om te bekijken ────────────────────────────────────────────
 
+    // ?onderwerp= kiest het onderwerp vooraf (Account verwijderen in Mijn account).
+    const voorkeur = B.param('onderwerp');
+    if (voorkeur && [...onderwerp.options].some(o => o.value === voorkeur && !o.disabled)) onderwerp.value = voorkeur;
+
     const staat = B.param('staat');
     if (staat === 'fout') {
         $('ct-naam').value = 'Jan';

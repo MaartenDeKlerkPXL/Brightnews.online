@@ -97,6 +97,9 @@
 
     // ── Staten ───────────────────────────────────────────────────────────
 
+    // Vanuit Mijn account (Wachtwoord instellen of wijzigen) staat het adres al klaar.
+    if (!staat && !isHerstel && mailAdres) email.value = mailAdres;
+
     if (staat === 'nieuw') {
         toon('nieuw');
     } else if (staat === 'verstuurd') {
@@ -191,7 +194,7 @@
         knop.disabled = true;
         knop.setAttribute('aria-busy', 'true');
         try {
-            const { error } = await client.auth.updateUser({ password: wachtwoord.value });
+            const { error } = await client.auth.updateUser({ password: wachtwoord.value, data: { heeft_wachtwoord: true } });
             if (error?.code === 'weak_password' || error?.code === 'same_password') {
                 foutTekst.textContent = t(error.code === 'same_password' ? 'v5_wv_fout_zelfde' : 'v5_in_fout_nieuw');
                 veldFout(wachtwoord, $('wv-wachtwoord-fout'), true, 'wv-wachtwoord-hulp');

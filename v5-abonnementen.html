@@ -156,8 +156,8 @@
 
 <!-- Voorbeeld van redesign v5 (Figma: Abonnementen · Desktop, en de foutstaat
      "vinkje vergeten"). Niet geïndexeerd; de live pagina blijft
-     abonnementen.html, met de echte afrekening. Hier is de betaling bewust
-     nog niet gekoppeld (zie TODO punt 66). Gedrag: js/v5/abonnementen.js. -->
+     abonnementen.html. De afrekening gaat via de Stripe-betaallinks uit
+     js/betaal-config.js (TODO 66 punt 7). Gedrag: js/v5/abonnementen.js. -->
 <main id="inhoud" class="container abo">
     <div class="abo__intro">
         <p class="type-overline" data-i18n="v5_abo_overline">BrightNews Premium</p>
@@ -167,6 +167,13 @@
 
     <div class="abo__kolommen">
         <form class="abo__formulier" id="abo-formulier" novalidate>
+            <div class="alert alert--waarschuwing" id="abo-terug" role="status" tabindex="-1" hidden>
+                <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#info"/></svg>
+                <div class="alert__inhoud">
+                    <p class="alert__titel" data-i18n="v5_abo_terug_titel">Je bent terug van Stripe</p>
+                    <p class="alert__tekst" data-i18n="v5_abo_terug_tekst">Er is niets afgesloten en je betaalt niets. Wil je Premium toch starten, vink dan het vakje opnieuw aan.</p>
+                </div>
+            </div>
             <fieldset class="abo__plannen">
                 <legend><h2 class="type-heading-lg" data-i18n="v5_abo_kies">Kies je abonnement</h2></legend>
                 <label class="plan-option">
@@ -361,6 +368,7 @@
 <script src="/data/translations.js" defer></script>
 <script src="/js/v5/schil.js" defer></script>
 <script src="/js/v5/gedeeld.js" defer></script>
+<script src="/js/betaal-config.js" defer></script>
 <script src="/js/v5/abonnementen.js" defer></script>
 </body>
 </html>

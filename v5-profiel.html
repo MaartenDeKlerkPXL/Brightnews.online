@@ -167,7 +167,7 @@
             <p class="type-body-lg" id="pr-ingelogd"></p>
         </div>
 
-        <div class="account__kolommen">
+        <div class="account__kolommen" id="pr-kolommen">
             <div class="account__kolom">
                 <section class="form-card" aria-labelledby="pr-abonnement-titel">
                     <div class="account__kop">
@@ -190,15 +190,22 @@
                     </div>
 
                     <div class="account__staat" id="pr-premium" hidden>
+                        <div class="alert alert--waarschuwing" id="pr-mislukt" hidden>
+                            <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#info"/></svg>
+                            <div class="alert__inhoud">
+                                <p class="alert__titel" data-i18n="v5_pr_mislukt_titel">Je laatste betaling is niet gelukt</p>
+                                <p class="alert__tekst" data-i18n="v5_pr_mislukt_tekst">Stripe probeert het de komende dagen opnieuw. Pas je betaalmethode aan via Abonnement beheren; daarna staat Premium meteen weer aan.</p>
+                            </div>
+                        </div>
                         <dl class="gegevens">
-                            <div class="gegevens__rij"><dt data-i18n="v5_pr_plan">Plan</dt><dd data-i18n="v5_abo_shine">Shine · per jaar</dd></div>
-                            <div class="gegevens__rij"><dt data-i18n="v5_pr_proef_tot">Proefperiode tot</dt><dd id="pr-proef-tot"></dd></div>
-                            <div class="gegevens__rij"><dt data-i18n="v5_pr_daarna">Daarna</dt><dd data-i18n="v5_pr_daarna_jaar">€24,95 per jaar, automatisch verlengd</dd></div>
-                            <div class="gegevens__rij"><dt data-i18n="v5_pr_lezen">Lezen</dt><dd data-i18n="v5_pr_onbeperkt">Onbeperkt, alle artikelen volledig</dd></div>
+                            <div class="gegevens__rij"><dt data-i18n="v5_pr_plan">Plan</dt><dd id="pr-plan"></dd></div>
+                            <div class="gegevens__rij"><dt id="pr-datum-label"></dt><dd id="pr-proef-tot"></dd></div>
+                            <div class="gegevens__rij" id="pr-daarna-rij"><dt data-i18n="v5_pr_daarna">Daarna</dt><dd id="pr-daarna"></dd></div>
+                            <div class="gegevens__rij" id="pr-lezen-rij"><dt data-i18n="v5_pr_lezen">Lezen</dt><dd data-i18n="v5_pr_onbeperkt">Onbeperkt, alle artikelen volledig</dd></div>
                         </dl>
                         <p id="pr-opzeggen"></p>
-                        <div class="account__beheren">
-                            <!-- Opent straks het klantportaal van Stripe (TODO punt 66). -->
+                        <div class="account__beheren" id="pr-beheren-blok">
+                            <!-- Het klantportaal van Stripe (inlogcode per mail), zie js/betaal-config.js. -->
                             <button class="btn btn--secondary" type="button" id="pr-beheren" aria-describedby="pr-beheren-uitleg">
                                 <span data-i18n="v5_pr_beheren">Abonnement beheren</span>
                                 <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#open_in_new"/></svg>
@@ -274,28 +281,29 @@
 
                 <section class="form-card account__kaart--dicht" aria-labelledby="pr-inloggen-titel">
                     <h2 class="type-heading-md" id="pr-inloggen-titel" data-i18n="schil_inloggen">Inloggen</h2>
-                    <!-- Wijzigen en Wachtwoord instellen staan er zonder adres:
-                         die stappen bestaan in v5 nog niet. -->
+                    <!-- Wachtwoord instellen of wijzigen gaat via een herstelmail
+                         (js/v5/profiel.js); zo kan een open sessie alleen het
+                         wachtwoord niet veranderen. -->
                     <div class="gegevens-lijst">
                         <div class="gegevens-rij">
                             <div class="gegevens-rij__tekst">
                                 <p class="gegevens-rij__label" data-i18n="v5_in_email">E-mailadres</p>
                                 <p class="gegevens-rij__waarde" id="pr-email"></p>
                             </div>
-                            <a class="gegevens-rij__actie"><span data-i18n="v5_pr_wijzigen">Wijzigen</span></a>
+                            <!-- E-mailadres wijzigen is nog niet ontworpen; tot dan via Contact. -->
                         </div>
                         <div class="gegevens-rij">
                             <div class="gegevens-rij__tekst">
                                 <p class="gegevens-rij__label" data-i18n="v5_pr_inlogmanier">Inlogmanier</p>
-                                <p class="gegevens-rij__waarde" data-i18n="v5_pr_inloglink">Inloglink per mail</p>
+                                <p class="gegevens-rij__waarde" id="pr-inlogmanier"></p>
                             </div>
-                            <a class="gegevens-rij__actie"><span data-i18n="v5_pr_wachtwoord_instellen">Wachtwoord instellen</span></a>
+                            <a class="gegevens-rij__actie" id="pr-wachtwoord"><span id="pr-wachtwoord-tekst"></span></a>
                         </div>
                     </div>
                     <div class="knoppen-rij">
                         <button class="btn btn--secondary" type="button" id="pr-uitloggen"><span data-i18n="btn_logout">Uitloggen</span></button>
-                        <!-- Leidt straks naar een eigen bevestigingsstap; die is nog niet ontworpen. -->
-                        <a class="btn btn--tertiary"><span data-i18n="v5_pr_verwijderen">Account verwijderen</span></a>
+                        <!-- Zoals de privacyverklaring belooft: verwijderen vraag je via Contact. -->
+                        <a class="btn btn--tertiary" id="pr-verwijderen" href="/v5-contact.html?onderwerp=account"><span data-i18n="v5_pr_verwijderen">Account verwijderen</span></a>
                     </div>
                 </section>
             </div>
@@ -406,6 +414,7 @@
 <script src="/data/translations.js" defer></script>
 <script src="/js/v5/schil.js" defer></script>
 <script src="/js/v5/gedeeld.js" defer></script>
+<script src="/js/betaal-config.js" defer></script>
 <script src="/js/v5/profiel.js" defer></script>
 </body>
 </html>

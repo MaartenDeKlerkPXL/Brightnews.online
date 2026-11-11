@@ -143,6 +143,13 @@
     padding: var(--spacing-xs) var(--spacing-sm);
 }
 
+/* Variant Warning: iets dat aandacht vraagt maar geen fout van de lezer is,
+   zoals Betaling mislukt in Mijn account. */
+.badge.badge--waarschuwing {
+    background: var(--feedback-warning-bg);
+    color: var(--feedback-warning-fg);
+}
+
 /* Variant Neutral: status zonder betekenis, zoals Gratis account. */
 .badge.badge--neutral {
     background: var(--surface-muted);

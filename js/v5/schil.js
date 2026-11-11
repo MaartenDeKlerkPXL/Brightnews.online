@@ -34,25 +34,29 @@
     // hier al ingelogd. Premium-voorwaarde gelijk aan lees_artikel().
     async function laadAccount() {
         const client = window.supabaseClient;
-        if (!client) return { gebruiker: null, premium: false };
+        if (!client) return { gebruiker: null, premium: false, profiel: null };
         try {
             const { data } = await client.auth.getSession();
             const gebruiker = data.session?.user || null;
-            if (!gebruiker) return { gebruiker: null, premium: false };
+            if (!gebruiker) return { gebruiker: null, premium: false, profiel: null };
             document.body.dataset.ingelogd = '';
+            // Alle kolommen: Mijn account en Bedankt lezen ook de
+            // abonnementsstatus (abo_status, opgezegd, proef_tot).
             const { data: profiel } = await client.from('profiles')
-                .select('is_premium, premium_until').eq('id', gebruiker.id).maybeSingle();
+                .select('*').eq('id', gebruiker.id).maybeSingle();
             const premium = !!profiel?.is_premium
                 && (!profiel.premium_until || new Date(profiel.premium_until) > new Date());
             if (premium) document.body.dataset.premium = '';
-            return { gebruiker, premium };
+            return { gebruiker, premium, profiel: profiel || null };
         } catch (e) {
             console.warn('BrightNews v5: account niet geladen', e);
-            return { gebruiker: null, premium: false };
+            return { gebruiker: null, premium: false, profiel: null };
         }
     }
 
     window.bnAccount = laadAccount();
+    // Opnieuw ophalen, na een promocode of terwijl Bedankt op de webhook wacht.
+    window.bnVerversAccount = () => (window.bnAccount = laadAccount());
 
     function lees(sleutel) {
         try { return localStorage.getItem(sleutel); } catch { return null; }

@@ -1,5 +1,5 @@
 // Artikel van redesign v5 (Figma: v5 · Artikel — staat 1 t/m 4).
-// v5-artikel.html?id=<artikel-id>&staat=<1-4>, uit data/news_<taal>.json.
+// v5-artikel.html?id=<artikel-id>, uit data/news_<taal>.json.
 //
 //   1  Premium: volledige tekst, geen paywall.
 //   2  Gratis account, tegoed over: volledige tekst en een rustige regel
@@ -7,17 +7,27 @@
 //   3  Gratis account, tegoed op: Premium, 30 dagen gratis (Subscribe).
 //   4  Niet ingelogd: gratis account maken (Account).
 // De paywall staat altijd inline, nooit als pop-up. Welke staat een lezer
-// echt heeft, weet alleen de back-end (lees_artikel(), zie PR #15); tot die
-// koppeling er is kies je hem met ?staat= (standaard 3). De volledige tekst
-// staat achter de paywall (articles_full); het voorbeeld toont daar de
-// samenvatting. Met een paywall op de pagina wordt "Probeer Premium" in de
-// header secundair (besluit v5 · 18); dat regelt componenten.css.
+// heeft, zegt lees_artikel() (TODO 66 punt 6): die geeft ook de volledige
+// tekst uit articles_full, en telt het artikel van het tegoed af. Een
+// artikel zonder volledige tekst (ouder dan de paywall) toont de
+// samenvatting zonder paywall.
+// Om de staten te bekijken zonder account: ?staat=1..4 (dan wordt er niets
+// opgehaald en staat de samenvatting op de plek van de tekst).
+// Met een paywall op de pagina wordt "Probeer Premium" in de header
+// secundair (besluit v5 · 18); dat regelt componenten.css.
 
 (function () {
     'use strict';
 
     const B = window.BN5;
     const { t, el } = B;
+
+    // Naar Abonnementen, en na Bedankt terug naar dit artikel.
+    function naarPremium(plan) {
+        const hier = encodeURIComponent(window.location.pathname + window.location.search);
+        const adres = B.url.abonnementen(plan);
+        return `${adres}${adres.includes('?') ? '&' : '?'}next=${hier}`;
+    }
 
     function plan(waarde, naam, prijs, gekozen, badge) {
         const label = el('label', 'plan');
@@ -53,7 +63,7 @@
         blok.appendChild(plannen);
 
         // Naar de abonnementenpagina, met het gekozen plan voorgeselecteerd.
-        const start = B.knop(B.url.abonnementen('jaarlijks'), t('v5_start_proef'), { klasse: 'btn btn--primary btn--vol' });
+        const start = B.knop(naarPremium('jaarlijks'), t('v5_start_proef'), { klasse: 'btn btn--primary btn--vol' });
         blok.appendChild(start);
 
         const proef = el('p', 'paywall__proef');
@@ -63,10 +73,10 @@
         blok.appendChild(proef);
         plannen.addEventListener('change', e => {
             daarna.textContent = t(e.target.value === 'maandelijks' ? 'v5_daarna_maand' : 'v5_daarna_jaar');
-            start.href = B.metTestdag(B.url.abonnementen(e.target.value));
+            start.href = B.metTestdag(naarPremium(e.target.value));
         });
 
-        blok.appendChild(B.link(B.url.abonnementen(), 'paywall__meer', t('v5_wat_premium')));
+        blok.appendChild(B.link(naarPremium(), 'paywall__meer', t('v5_wat_premium')));
         return blok;
     }
 
@@ -77,7 +87,7 @@
         tekst.appendChild(B.icoon('info'));
         tekst.appendChild(el('span', null, t('v5_paywall_tegoed', { x: over, n: totaal })));
         regel.appendChild(tekst);
-        regel.appendChild(B.knop(B.url.abonnementen(), t('v5_onbeperkt_lezen'), { klasse: 'btn btn--secondary btn--sm', rechts: 'arrow_forward' }));
+        regel.appendChild(B.knop(naarPremium(), t('v5_onbeperkt_lezen'), { klasse: 'btn btn--secondary btn--sm', rechts: 'arrow_forward' }));
         return regel;
     }
 
@@ -167,6 +177,38 @@
         main.replaceChildren(blok);
     }
 
+    // Welke staat, en welke tekst. In het voorbeeld (?staat=) uit het adres;
+    // de header volgt dan ook: ingelogd (1–3) toont Mijn account, Premium (1)
+    // geen Probeer Premium. Echt: de header zet js/v5/schil.js zelf.
+    async function leesStaat(id) {
+        const gevraagd = B.param('staat');
+        if (['1', '2', '3', '4'].includes(gevraagd)) {
+            if (gevraagd !== '4') document.body.dataset.ingelogd = '';
+            if (gevraagd === '1') document.body.dataset.premium = '';
+            return { staat: gevraagd, over: 2, limiet: 5 };
+        }
+        const client = window.supabaseClient;
+        if (!client) return { staat: '4' };
+        await window.bnAccount;
+        const { data, error } = await client.rpc('lees_artikel', { p_id: String(id), p_lang: B.taal() });
+        if (error || !data) {
+            // Geen verbinding of een storing: de samenvatting, zonder paywall
+            // die de lezer onterecht zou zeggen dat zijn tegoed op is.
+            console.warn('BrightNews v5: lees_artikel', error);
+            window.showNotification(t('v5_in_fout_algemeen'), 'error');
+            return { staat: null };
+        }
+        const limiet = Number(data.limiet) || 5;
+        switch (data.status) {
+            case 'anoniem': return { staat: '4' };
+            case 'premium': return { staat: '1', tekst: data.tekst };
+            case 'op': return { staat: '3' };
+            case 'gratis':
+                return { staat: '2', tekst: data.tekst, over: Math.max(limiet - (Number(data.gebruikt) || 0), 0), limiet };
+            default: return { staat: null };    // geen_tekst: alleen de samenvatting
+        }
+    }
+
     async function teken() {
         const main = document.getElementById('inhoud');
         const feed = await B.laadFeed();
@@ -195,20 +237,19 @@
         kop.appendChild(el('h1', 'artikel__titel', artikel.title));
         blok.appendChild(kop);
 
-        // 3 Tekst: de openbare samenvatting. De volledige tekst staat achter
-        // de paywall (articles_full) en komt niet in de publieke data.
+        // 3 Tekst: de volledige tekst als lees_artikel() die geeft, anders de
+        // openbare samenvatting. De volledige tekst staat nooit in de
+        // publieke data.
+        const lezen = await leesStaat(artikel.id);
         const tekst = el('div', 'artikel__tekst');
-        tekst.appendChild(el('p', null, artikel.summary));
+        const alineas = String(lezen.tekst || '').split(/\n+/).map(a => a.trim()).filter(Boolean);
+        (alineas.length ? alineas : [artikel.summary]).forEach(a => tekst.appendChild(el('p', null, a)));
         blok.appendChild(tekst);
 
-        // 4 Paywall per staat, 5 Delen, 6 Bronvermelding. De header volgt:
-        // ingelogd (1–3) toont Mijn account, Premium (1) geen Probeer Premium.
-        const staat = ['1', '2', '3', '4'].includes(B.param('staat')) ? B.param('staat') : '3';
-        if (staat !== '4') document.body.dataset.ingelogd = '';
-        if (staat === '1') document.body.dataset.premium = '';
-        if (staat === '2') blok.appendChild(tegoedRegel(2, 5));
-        if (staat === '3') blok.appendChild(paywall());
-        if (staat === '4') blok.appendChild(accountPaywall());
+        // 4 Paywall per staat, 5 Delen, 6 Bronvermelding.
+        if (lezen.staat === '2') blok.appendChild(tegoedRegel(lezen.over, lezen.limiet));
+        if (lezen.staat === '3') blok.appendChild(paywall());
+        if (lezen.staat === '4') blok.appendChild(accountPaywall());
         blok.appendChild(B.deelBalk(window.location.href, artikel.title));
         blok.appendChild(bronVermelding(artikel));
 

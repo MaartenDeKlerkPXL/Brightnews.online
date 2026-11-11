@@ -178,8 +178,16 @@
     }
 
     async function logInMetWachtwoord(adresLezer) {
-        const { error } = await client.auth.signInWithPassword({ email: adresLezer, password: wachtwoord.value });
-        if (!error) { window.location.href = doel(); return; }
+        const { data, error } = await client.auth.signInWithPassword({ email: adresLezer, password: wachtwoord.value });
+        if (!error) {
+            // Mijn account toont dan "Wachtwoord wijzigen" (accounts van vóór
+            // deze vlag krijgen hem zo bij de eerste keer inloggen).
+            if (data?.user?.user_metadata?.heeft_wachtwoord !== true) {
+                await client.auth.updateUser({ data: { heeft_wachtwoord: true } }).catch(() => {});
+            }
+            window.location.href = doel();
+            return;
+        }
         if (moetMelden(error)) throw error;
         // Onbekend adres, verkeerd wachtwoord of nog niet bevestigd: één
         // melding, met de inloglink als uitweg.
@@ -191,7 +199,7 @@
         const { data, error } = await client.auth.signUp({
             email: adresLezer,
             password: wachtwoord.value,
-            options: { emailRedirectTo: `${window.location.origin}${doel()}`, data: metadata() },
+            options: { emailRedirectTo: `${window.location.origin}${doel()}`, data: { ...metadata(), heeft_wachtwoord: true } },
         });
         if (error?.code === 'weak_password') {
             $('in-wachtwoord-fouttekst').textContent = t('v5_in_fout_nieuw');
