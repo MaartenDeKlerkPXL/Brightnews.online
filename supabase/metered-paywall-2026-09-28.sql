@@ -56,12 +56,12 @@ create or replace function public.lees_artikel(p_id text, p_lang text)
 returns jsonb
 language plpgsql
 security definer
-set search_path to 'public'
+set search_path = public, pg_temp
 as $$
 declare
     v_uid        uuid := auth.uid();
     v_premium    boolean;
-    v_maand      date := date_trunc('month', now())::date;
+    v_maand      date := date_trunc('month', now() at time zone 'Europe/Amsterdam')::date; -- de 1e om 00:00 Nederlandse tijd, zoals de teksten beloven
     v_limiet     integer := public.gratis_artikelen_per_maand();
     v_al_gelezen boolean;
     v_gebruikt   integer;
@@ -134,11 +134,11 @@ create or replace function public.leestegoed()
 returns jsonb
 language plpgsql
 security definer
-set search_path to 'public'
+set search_path = public, pg_temp
 as $$
 declare
     v_uid      uuid := auth.uid();
-    v_maand    date := date_trunc('month', now())::date;
+    v_maand    date := date_trunc('month', now() at time zone 'Europe/Amsterdam')::date; -- de 1e om 00:00 Nederlandse tijd, zoals de teksten beloven
     v_gebruikt integer := 0;
 begin
     if v_uid is null then

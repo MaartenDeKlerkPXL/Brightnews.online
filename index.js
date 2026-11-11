@@ -423,12 +423,19 @@ async function toonDetail(id) {
     // op get_full_article() — precies het gedrag van vóór dit punt. De site
     // hoort niet stuk te gaan omdat één functie in Supabase ontbreekt.
     let meting = null;
+    let tegoedFout = false;
     try {
-        const { data, error } = await window.supabaseClient
-            .rpc('lees_artikel', { p_id: String(id), p_lang: window.huidigeTaal });
-        if (!error && data && typeof data === 'object') meting = data;
+        const antwoord = await window.supabaseClient?.rpc('lees_artikel', { p_id: String(id), p_lang: window.huidigeTaal });
+        if (antwoord && !antwoord.error && antwoord.data && typeof antwoord.data === 'object') meting = antwoord.data;
+        else if (antwoord?.error) { tegoedFout = true; console.warn("Leestegoed niet opgehaald:", antwoord.error.message); }
     } catch (e) {
-        console.error("Leestegoed niet opgehaald:", e.message);
+        tegoedFout = true;
+        console.warn("Leestegoed niet opgehaald:", e.message);
+    }
+    // Zonder dit ziet een gratis lezer met tegoed over bij een storing of
+    // zonder verbinding de upgrade-box, alsof zijn artikelen op zijn.
+    if (tegoedFout && userStatus.ingelogd && !userStatus.premium && typeof showNotification === 'function') {
+        showNotification(getT('notif_tegoed_fout', 'Je artikel kon niet worden geladen. Controleer je verbinding en probeer het opnieuw.'), 'error');
     }
 
     if (meting === null && userStatus.premium === true) {
