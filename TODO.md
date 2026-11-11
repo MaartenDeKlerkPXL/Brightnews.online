@@ -498,6 +498,14 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      in. Voeg info@brightnews.online of een eigen adres toe onder Settings →
      Team en zet het factuuradres goed.
 
+- [ ] **77. Ná de lancering: welke accounts hangen nog aan het studentenadres?**
+  *(Maarten, 2026-11-12)* Resend staat op 12401091@student.pxl.be (punt
+  76). Loop alle diensten van BrightNews na en zet ze op een blijvend adres
+  (info@brightnews.online of een eigen adres), zodat je er na je studie nog
+  in kunt: GitHub, Supabase, Stripe, Anthropic, Resend, Google (Analytics,
+  Search Console), Figma, Strato, en de sociale kanalen. Kijk per dienst
+  ook naar het factuuradres en wie er nog meer toegang heeft.
+
 - [x] **1. De twee open pull requests vlottrekken.** ✅ 2026-09-16 (Fable-review): #5 gemerged + og:image-absoluutfix erachteraan; #1 lokaal gemerged (bronwerk integraal overgenomen, sw-conflict → v23) en pagina's geregenereerd. Oorspronkelijke tekst: Allebei hebben ze
   merge-conflicten (`mergeable=CONFLICTING`) en lopen achter op master:
   [#1](https://github.com/MaartenDeKlerkPXL/Brightnews.online/pull/1)

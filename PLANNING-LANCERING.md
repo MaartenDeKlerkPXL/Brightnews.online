@@ -224,3 +224,5 @@ via een PR. Laat die PR eerst nakijken door een review-agent
 - Security headers via Cloudflare voor GitHub Pages (dat laat zelf geen
   headers toe). Zie TODO 67, eerste ronde.
 - Een eigen klein foutlogje vanuit de browser naar Supabase (TODO 69.3).
+- Alle accounts die nog aan het studentenadres hangen naar een blijvend
+  adres zetten (TODO 77).
