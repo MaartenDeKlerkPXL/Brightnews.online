@@ -365,8 +365,11 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   3. **Doorgifte buiten de EU** (`v5_pv_s4_p2`): Google, Stripe, GitHub,
      Supabase en Resend zijn (onderdeel van) Amerikaanse bedrijven; de tekst
      zegt dat dat gaat via het EU-VS-gegevensprivacykader of de
-     standaardcontractbepalingen. **Nog nakijken (Erik):** per leverancier
-     in zijn verwerkersovereenkomst (DPA) of dat klopt.
+     standaardcontractbepalingen. ✅ Nagekeken 2026-11-11: Resend staat op
+     de lijst van het EU-VS-kader en heeft daarnaast standaardcontract-
+     bepalingen in zijn DPA; Supabase gebruikt de standaardcontract-
+     bepalingen uit zijn DPA. Google, Stripe en GitHub (Microsoft) vallen
+     onder het EU-VS-kader. De tekst klopt dus.
   4. **Rechten en privacy-adres** (`v5_pv_s7_p`): de volledige lijst rechten
      uit de AVG, info@brightnews.online als adres, antwoord binnen een maand.
   5. **Geen uitsluiting van aansprakelijkheid meer** (`v5_av_s2_p`). Een
@@ -394,22 +397,29 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
       footer ook. Dat vinden we genoeg; er verandert niets.
 
   **Feitenblad: wat we bewaren, waar en hoe lang.** De kolom "Nu" zegt wat
-  er echt gebeurt; waar die afwijkt van de tekst, is er werk (Erik).
+  er echt gebeurt; waar die afwijkt van de tekst, is er werk (Maarten, met
+  Claude). Nagekeken in de live database op 2026-11-11.
 
   | Gegeven | Waar | De tekst belooft | Nu |
   |---|---|---|---|
   | Account: e-mailadres, inlogmanier, inlogtijden | Supabase Auth (Ierland) | zolang het account bestaat; na een verzoek binnen 30 dagen gewist | verwijderen gaat met de hand in het Supabase-dashboard |
   | Plan en status (`profiles`) | Supabase | idem | gaat mee met het account |
-  | Gelezen artikelen (`gelezen_artikelen`, PR #15) | Supabase | idem | moet `on delete cascade` krijgen bij het koppelen |
+  | Gelezen artikelen (`gelezen_artikelen`, PR #15) | Supabase | idem | `on delete cascade`: gaat mee |
   | Mails (`mail_log`, `mail_voorkeuren`) | Supabase | idem | `on delete cascade`: gaat mee |
   | Gebruikte promocodes (`promo_redemptions`) | Supabase | idem | `on delete cascade`: gaat mee |
-  | Mislukte promocodepogingen (`promo_attempts`) | Supabase | "alleen het tijdstip, alleen kort" | **wordt pas gewist bij een volgende poging van dezelfde lezer, en heeft geen koppeling met het account: blijft staan als een account weg is. Erik: een opruimtaak** |
-  | Feedback (`feedback`) | Supabase | hooguit twee jaar | **nog geen opruiming. Erik: alles ouder dan twee jaar wissen (eenmaal per jaar met de hand, of `pg_cron`)** |
-  | Contactberichten | nog niet gekoppeld | hooguit twee jaar | **bij het koppelen meteen regelen** |
+  | Mislukte promocodepogingen (`promo_attempts`) | Supabase | "alleen het tijdstip, hooguit een dag" | dagelijkse opruiming met `pg_cron` in `supabase/opruimen-2026-11-11.sql` (PR #17); **nog draaien** |
+  | Feedback (`feedback`) | Supabase | hooguit twee jaar | idem, alles ouder dan twee jaar; **nog draaien**. Een e-mailadres dat iemand zelf invulde, hangt niet aan het account en blijft dus ook na verwijderen staan, tot die twee jaar om zijn |
+  | Contactberichten | nog niet gekoppeld | hooguit twee jaar | **bij het koppelen (TODO 66 punt 13) de tabel toevoegen aan dezelfde opruiming** |
   | IP-adressen in logboeken | GitHub, Supabase | (geen termijn genoemd) | termijn van de leverancier |
   | Google Analytics | Google | hooguit 14 maanden per bezoek | ✅ nagekeken 2026-11-11: gebeurtenisgegevens 2 maanden, gebruikersgegevens 14 maanden, Google-signalen uit, gegevens delen helemaal uit |
   | Betaalgegevens | Stripe | zo lang als de wet van een verkoper vraagt | regelt Stripe |
   | Mailadres bij het versturen | Strato, Resend | (geen termijn genoemd) | termijn van de leverancier |
+
+  **Werkwijze bij een verzoek om je account te verwijderen** (de tekst
+  belooft binnen 30 dagen): heeft de lezer Premium, eerst opzeggen in
+  Stripe. Daarna in Supabase → Authentication → Users de gebruiker
+  verwijderen. Alles in het feitenblad met "gaat mee" verdwijnt dan vanzelf.
+  Antwoord de lezer dat het gedaan is.
 
   **Nog te beslissen of na te kijken (Maarten):**
   1. ✅ **Jaarabonnement (Shine): optie a gekozen** (Maarten, 2026-11-11).
@@ -425,11 +435,15 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      Stripe-dashboard het abonnement laten stoppen op de laatste dag van de
      lopende maand ("Opzeggen" → "Op een aangepaste datum") en het
      ongebruikte deel van de laatste factuur terugbetalen ("Terugbetalen" →
-     gedeeltelijk bedrag), binnen een paar werkdagen. **Erik, vóór december
-     2027:** de Stripe-webhook laat een mail naar info@brightnews.online
+     gedeeltelijk bedrag), binnen een paar werkdagen. Het klantportaal van
+     Stripe toont na het opzeggen eerst nog het einde van het jáár; stuur de
+     lezer daarom na het aanpassen een korte mail met de echte einddatum en
+     het bedrag dat terugkomt. **Maarten, vóór december 2027 (PR met
+     review-agent):** de Stripe-webhook laat een mail naar info@brightnews.online
      sturen zodra een Shine-abonnement dat al eens verlengd is, wordt
      opgezegd, zodat niemand het mist.
-  2. **De prijzen in Stripe: inclusief btw?** De teksten zeggen "inclusief
+  2. ✅ **De prijzen in Stripe staan op inclusief btw** (nagekeken door
+     Maarten, 2026-11-11). Oorspronkelijke vraag: de teksten zeggen "inclusief
      btw". Bij beide prijzen staat "Belasting in prijs opnemen" nu op
      "Automatisch". Dan volgt Stripe de standaardinstelling van het account;
      staat die ook op automatisch, dan kiest Stripe zelf op basis van de
