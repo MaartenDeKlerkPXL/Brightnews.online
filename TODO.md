@@ -222,8 +222,11 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   **custom SMTP aan via Strato**: `smtp.strato.com`, poort 465, afzender
   `info@brightnews.online`. **Laten staan.**
   Nog te doen:
-  1. Onder Authentication → Rate Limits de mail-limiet nakijken. Met eigen
-     SMTP staat die standaard op 30 per uur; voor de lancering is dat genoeg.
+  1. **Nagekeken 2026-11-11: de mail-limiet stond nog op 2 per uur**, ook
+     met eigen SMTP. Het oorspronkelijke probleem was dus toch echt. Ophogen
+     naar 30 per uur (Authentication → Rate Limits → Save changes), en op de
+     lanceringsdag eventueel tijdelijk hoger. De overige limieten staan op de
+     standaardwaarden; laten staan.
   2. Eén keer een inloglink en een "wachtwoord vergeten" testen met een
      wegwerpadres, en in de spammap kijken.
   3. Overstappen naar Resend is niet nodig. Het kan later, als Strato een
