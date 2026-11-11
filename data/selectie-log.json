@@ -1,5 +1,29 @@
 [
  {
+  "datum": "2026-11-11T23:05:42.947Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "Oh Whale! Revisits the Exploding Whale That Became One of the Internet’s First Viral Videos",
+  "uitsluiting": "geen",
+  "gevoel": 2,
+  "formulering": 3,
+  "relevantie": 1,
+  "totaal": 6,
+  "besluit": "nee",
+  "reden": "Positief geformuleerd en vermakelijk, maar de kern (een historisch virale video) is niet maatschappelijk relevant en niet persoonlijk herkenbaar voor een breed publiek."
+ },
+ {
+  "datum": "2026-11-11T23:05:42.947Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "For Centuries, Visitors Walked Right by 280 Unseen Ice Age Cave Paintings",
+  "uitsluiting": "geen",
+  "gevoel": 2,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 8,
+  "besluit": "ja",
+  "reden": "Ontdekking van eeuwenoude kunstwerken is maatschappelijk relevant (archeologie, erfgoed), positief geformuleerd en geeft een mild warm gevoel van wonder en herontdekking."
+ },
+ {
   "datum": "2026-11-11T19:21:01.109Z",
   "bron": "GoodNewsNetwork.org",
   "titel": "Brown Bear Population in Spain Doubles With Incredible Increase of its Breeding Range",
@@ -3574,29 +3598,5 @@
   "totaal": 0,
   "besluit": "nee",
   "reden": "Weekoverzicht van TV-aanbevelingen zonder eigen verhaal; puur consumptieve content."
- },
- {
-  "datum": "2026-10-30T17:51:30.889Z",
-  "bron": "BBC.com/culture",
-  "titel": "Why the real Christopher Robin resented Pooh Bear",
-  "uitsluiting": "geen",
-  "gevoel": 1,
-  "formulering": 1,
-  "relevantie": 2,
-  "totaal": 4,
-  "besluit": "nee",
-  "reden": "Kern is ressentiment en ongenoegen van Christopher Robin; geen positieve transformatie of herstel."
- },
- {
-  "datum": "2026-10-30T17:51:30.889Z",
-  "bron": "BBC.com/culture",
-  "titel": "Why women are wild for freaky film romance Wicker",
-  "uitsluiting": "listicle",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Entertainment-clickbait over een filmtrailer; geen maatschappelijk relevant verhaal."
  }
 ]

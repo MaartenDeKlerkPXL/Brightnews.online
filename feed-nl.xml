@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-nl.xml" rel="self" type="application/rss+xml"/>
         <description>Elke dag een verse selectie goed nieuws uit de hele wereld, veel leesplezier!</description>
         <language>nl-nl</language>
-        <lastBuildDate>Wed, 11 Nov 2026 19:24:29 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 11 Nov 2026 23:06:13 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Jouw Dagelijkse Dosis Positiviteit</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>280 onopgemerkte ijstijdgravures ontdekt in Spaanse grot</title>
+            <link>https://brightnews.online/articles/nl/280-onopgemerkte-ijstijdgravures-ontdekt-in-spaanse-grot-1794438369251cckz8f0n6.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/nl/280-onopgemerkte-ijstijdgravures-ontdekt-in-spaanse-grot-1794438369251cckz8f0n6.html</guid>
+            <pubDate>Wed, 11 Nov 2026 23:06:13 GMT</pubDate>
+            <description>In de Cova de la Font Major in Catalonië hebben onderzoekers 280 gravures uit het Paleolithicum ontdekt, de op twee na grootste verzameling ijstijd-gravures ooit gevonden aan de Spaanse Middellandse Zeekust. Meer dan zestig jaar lang liepen bezoekers, grotonderzoekers en schattenjagers er pal langs, zonder de prehistorische oorsprong te herkennen. Sommigen kerfden zelfs namen en data over de afbee</description>
+            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-horse-representaion-where-cave-floor-is-used-to-represent-the-ground-credit-2026-Verges-et-al.-Antiquiry-CC-4.0.-BY-SA-e1794413594768.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Beren, bloemen en een plan: drie tekenen van herstel op aarde</title>
             <link>https://brightnews.online/articles/nl/beren-bloemen-en-een-plan-drie-tekenen-van-herstel-op-aarde-dg-20261110-environment.html</link>
@@ -243,14 +251,6 @@
             <pubDate>Fri, 06 Nov 2026 19:01:29 GMT</pubDate>
             <description>Vermont Gas heeft een baanbrekende deal gesloten met geothermisch ontwikkelaar Dandelion Energy om het 44 wooneenheden tellende betaalbare woningproject Riggs Meadow in Hinesburg te voorzien van geothermische verwarming en koeling. Het is het eerste project in de VS waarbij een nutsbedrijf de installaties zelf bezit en beheert zoals gasleidingen. Boringen starten begin 2027, bewoners kunnen eind d</description>
             <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Geothermal-boring-at-Riggs-Meadow-Housing-Development-credit-Dandelion-Energy-released.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Giftige Bangka-loris blijkt al die tijd niet uitgestorven</title>
-            <link>https://brightnews.online/articles/nl/giftige-bangka-loris-blijkt-al-die-tijd-niet-uitgestorven-1793991652315mthd40ah5.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/nl/giftige-bangka-loris-blijkt-al-die-tijd-niet-uitgestorven-1793991652315mthd40ah5.html</guid>
-            <pubDate>Fri, 06 Nov 2026 19:00:55 GMT</pubDate>
-            <description>De Bangka slow loris, een primaat die sinds de jaren 30 niet meer wetenschappelijk was waargenomen en in 2015 als mogelijk uitgestorven gold, blijkt al die tijd te hebben overleefd. Dat ontdekten Oostenrijkse wetenschappers dankzij een veldgids uit 2022 die verwees naar het Alobi Wildlife Rescue Center op het eiland Bangka. Dit centrum redt en herintroduceert de dieren al sinds...</description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/The-Bangka-slow-loris-credit-Gunay-M.E.-CC-4.0.-BY-SA.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

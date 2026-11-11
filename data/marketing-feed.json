@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-11-11T19:24:29.987Z",
+ "gegenereerd": "2026-11-11T23:06:14.255Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -22,14 +22,6 @@
      "url": "https://brightnews.online/articles/nl/flag-football-groeit-snel-in-populariteit-onder-meisjes-17943389119158r0jm6tmv.html"
     },
     {
-     "id": "179426177536734o0a4akh",
-     "titel": "Tiener bouwt app Kora die autistische kinderen helpt begrijpen",
-     "teaser": "Een middelbare scholier uit New Jersey, Shashank Madala, zag hoe volwassenen de emotionele signalen van zijn autistische neefje verkeerd interpreteerden tijdens familiebijeenkomsten. Op zijn vijftiende, met slechts één informaticales achter de rug, leerde hij zichzelf machine learning en bouwde de gratis app Kora. De app biedt caregivers via een telefooncamera meerdere mogelijke interpretaties van emoties (blij, verdrietig, boos, bang, neutraal)...",
-     "score": 10,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/nl/tiener-bouwt-app-kora-die-autistische-kinderen-helpt-begrijpen-179426177536734o0a4akh.html"
-    },
-    {
      "id": "1794424942669ry7xjuj33",
      "titel": "Verlamde pianiste (84) houdt belofte aan verpleeghuis Bryn Mawr Village",
      "teaser": "Bonnie Fay (84) kwam als patiënt naar Bryn Mawr Village nursing home in Pennsylvania, verlamd door het syndroom van Guillain-Barré. Tijdens haar moeizame herstel vond ze troost in pianospelen, iets wat ze al sinds haar zevende deed. Ze beloofde zichzelf ooit terug te komen om er te spelen. Die belofte maakt ze nu waar: ze speelt regelmatig piano voor bewoners...",
@@ -44,6 +36,14 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/scheepvaartstudent-redt-vader-en-zoon-van-verdrinking-1794424918029ogfmvv8rv.html"
+    },
+    {
+     "id": "17944248919439uxdg6k76",
+     "titel": "Bruine berenpopulatie in Spanje verdubbeld dankzij bescherming",
+     "teaser": "De Cantabrische bruine beer is in twintig jaar tijd verdubbeld in aantal: van circa 140 dieren begin deze eeuw naar 370 nu. De beren leven niet meer alleen in Cantabrië, maar ook in Asturië, León, Galicië en Palencia, over een gebied van ruim 17.000 vierkante kilometer (6.500 vierkante mijl). Een studie uit 2023 in Conservation Science and Practice wijt het...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/bruine-berenpopulatie-in-spanje-verdubbeld-dankzij-bescherming-17944248919439uxdg6k76.html"
     }
    ],
    "dagoverzichten": [
@@ -67,13 +67,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-09",
      "url": "https://brightnews.online/articles/nl/zorg-moed-en-een-slimme-airtag-het-goede-nieuws-van-de-week-dg-20261109-lifestyle.html"
-    },
-    {
-     "id": "dg-20261108-environment",
-     "titel": "Natuur herstelt: glimwormen, zeewier en een landgoed krijgen nieuwe kans",
-     "categorie": "Environment",
-     "dag": "2026-11-08",
-     "url": "https://brightnews.online/articles/nl/natuur-herstelt-glimwormen-zeewier-en-een-landgoed-krijgen-nieuwe-kans-dg-20261108-environment.html"
     }
    ]
   },
@@ -96,14 +89,6 @@
      "url": "https://brightnews.online/articles/en/flag-football-surges-in-popularity-among-girls-17943389119158r0jm6tmv.html"
     },
     {
-     "id": "179426177536734o0a4akh",
-     "titel": "Teen builds app Kora to help autistic children understand emotions",
-     "teaser": "A high school student from New Jersey, Shashank Madala, witnessed adults misinterpreting the emotional signals of his autistic cousin during family gatherings. At fifteen, with just one computer science class under his belt, he taught himself machine learning and built the free app Kora. The app offers caregivers multiple possible interpretations of emotions (happy, sad, angry, scared, neutral) via a...",
-     "score": 10,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/en/teen-builds-app-kora-to-help-autistic-children-understand-emotions-179426177536734o0a4akh.html"
-    },
-    {
      "id": "1794424942669ry7xjuj33",
      "titel": "Paralyzed pianist (84) keeps promise to Bryn Mawr Village nursing home",
      "teaser": "Bonnie Fay (84) arrived as a patient at Bryn Mawr Village nursing home in Pennsylvania, paralyzed by Guillain-Barré syndrome. During her difficult recovery, she found solace in playing piano, something she had done since age seven. She promised herself she would one day return to play there. Now she is making good on that promise: she plays piano regularly for...",
@@ -118,6 +103,14 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/maritime-student-rescues-father-and-son-from-drowning-1794424918029ogfmvv8rv.html"
+    },
+    {
+     "id": "17944248919439uxdg6k76",
+     "titel": "Brown bear population in Spain doubles thanks to protection",
+     "teaser": "The Cantabrian brown bear has doubled in number over twenty years: from around 140 animals at the start of this century to 370 now. The bears no longer live exclusively in Cantabria, but also in Asturias, León, Galicia and Palencia, across an area of more than 17,000 square kilometres (6,500 square miles). A 2023 study in Conservation Science and Practice...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/brown-bear-population-in-spain-doubles-thanks-to-protection-17944248919439uxdg6k76.html"
     }
    ],
    "dagoverzichten": [
@@ -141,13 +134,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-09",
      "url": "https://brightnews.online/articles/en/care-courage-and-a-clever-airtag-the-week-s-good-news-dg-20261109-lifestyle.html"
-    },
-    {
-     "id": "dg-20261108-environment",
-     "titel": "Nature recovers: glowworms, seaweed and an estate get a second chance",
-     "categorie": "Environment",
-     "dag": "2026-11-08",
-     "url": "https://brightnews.online/articles/en/nature-recovers-glowworms-seaweed-and-an-estate-get-a-second-chance-dg-20261108-environment.html"
     }
    ]
   },
@@ -170,14 +156,6 @@
      "url": "https://brightnews.online/articles/de/flag-football-wachst-schnell-an-popularitat-unter-madchen-17943389119158r0jm6tmv.html"
     },
     {
-     "id": "179426177536734o0a4akh",
-     "titel": "Teenager entwickelt App Kora zur Unterstützung autistischer Kinder",
-     "teaser": "Ein Schüler aus New Jersey, Shashank Madala, beobachtete, wie Erwachsene die emotionalen Signale seines autistischen Neffen bei Familientreffen falsch interpretierten. Mit fünfzehn Jahren und nur einer Informatikstunde Erfahrung brachte er sich selbst Machine Learning bei und entwickelte die kostenlose App Kora. Die App bietet Betreuungspersonen über die Smartphonekamera mehrere mögliche Interpretationen von Emotionen (froh, traurig, wütend, ängstlich, neutral) ohne Bewertungen...",
-     "score": 10,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/de/teenager-entwickelt-app-kora-zur-unterstutzung-autistischer-kinder-179426177536734o0a4akh.html"
-    },
-    {
      "id": "1794424942669ry7xjuj33",
      "titel": "Gelähmte Pianistin (84) erfüllt Versprechen an Bryn Mawr Village",
      "teaser": "Bonnie Fay (84) kam als Patientin ins Bryn Mawr Village Pflegeheim in Pennsylvania, gelähmt durch das Guillain-Barré-Syndrom. Während ihrer mühsamen Genesung fand sie Trost im Klavierspiel, das sie bereits seit ihrem siebten Lebensjahr betreibt. Sie versprach sich selbst, eines Tages zurückzukommen und dort zu spielen. Dieses Versprechen löst sie nun ein: Sie spielt regelmäßig Klavier für Bewohner, die sich von...",
@@ -192,6 +170,14 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/schifffahrtsstudent-rettet-vater-und-sohn-vor-dem-ertrinken-1794424918029ogfmvv8rv.html"
+    },
+    {
+     "id": "17944248919439uxdg6k76",
+     "titel": "Braunbärenpopulation in Spanien dank Schutzmaßnahmen verdoppelt",
+     "teaser": "Der Kantabrische Braunbär hat sich in zwanzig Jahren verdoppelt: von etwa 140 Tieren zu Beginn dieses Jahrhunderts auf 370 heute. Die Bären leben nicht mehr nur in Kantabrien, sondern auch in Asturien, León, Galizien und Palencia, über ein Gebiet von mehr als 17.000 Quadratkilometern (6.500 Quadratmeilen). Eine Studie aus dem Jahr 2023 in Conservation Science and Practice führt die Erholung...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/braunbarenpopulation-in-spanien-dank-schutzma-nahmen-verdoppelt-17944248919439uxdg6k76.html"
     }
    ],
    "dagoverzichten": [
@@ -215,13 +201,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-09",
      "url": "https://brightnews.online/articles/de/fursorge-mut-und-ein-cleveres-airtag-die-guten-nachrichten-der-woche-dg-20261109-lifestyle.html"
-    },
-    {
-     "id": "dg-20261108-environment",
-     "titel": "Die Natur erholt sich: Glühwürmchen, Meeresalgen und ein Landgut bekommen eine zweite Chance",
-     "categorie": "Environment",
-     "dag": "2026-11-08",
-     "url": "https://brightnews.online/articles/de/die-natur-erholt-sich-gluhwurmchen-meeresalgen-und-ein-landgut-bekommen-eine-zwe-dg-20261108-environment.html"
     }
    ]
   },
@@ -244,14 +223,6 @@
      "url": "https://brightnews.online/articles/fr/le-flag-football-gagne-rapidement-en-popularite-chez-les-filles-17943389119158r0jm6tmv.html"
     },
     {
-     "id": "179426177536734o0a4akh",
-     "titel": "Un adolescent crée l'app Kora pour aider les enfants autistes à comprendre",
-     "teaser": "Un lycéen du New Jersey, Shashank Madala, a observé comment les adultes interprétaient mal les signaux émotionnels de son cousin autiste lors des réunions familiales. À quinze ans, avec seulement un cours d'informatique à son actif, il s'est autoformé au machine learning et a créé l'application gratuite Kora. L'app offre aux soignants, via la caméra d'un téléphone, plusieurs interprétations possibles...",
-     "score": 10,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/fr/un-adolescent-cree-l-app-kora-pour-aider-les-enfants-autistes-a-comprendre-179426177536734o0a4akh.html"
-    },
-    {
      "id": "1794424942669ry7xjuj33",
      "titel": "Pianiste paralysée (84 ans) tient sa promesse à la maison de retraite Bryn Mawr Village",
      "teaser": "Bonnie Fay (84 ans) est arrivée comme patiente à la maison de retraite Bryn Mawr Village en Pennsylvanie, paralysée par le syndrome de Guillain-Barré. Pendant sa convalescence difficile, elle a trouvé du réconfort en jouant du piano, une passion qu'elle cultive depuis l'âge de sept ans. Elle s'est promis de revenir un jour y jouer. Elle tient maintenant cette promesse...",
@@ -266,6 +237,14 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/etudiant-en-navigation-sauve-un-pere-et-son-fils-de-la-noyade-1794424918029ogfmvv8rv.html"
+    },
+    {
+     "id": "17944248919439uxdg6k76",
+     "titel": "La population d'ours bruns en Espagne a doublé grâce à la protection",
+     "teaser": "L'ours brun cantabrique a doublé en nombre en vingt ans : d'environ 140 animaux au début de ce siècle à 370 aujourd'hui. Les ours ne vivent plus seulement en Cantabrie, mais aussi en Asturies, León, Galice et Palencia, sur une zone de plus de 17 000 kilomètres carrés (6 500 milles carrés). Une étude de 2023 publiée dans Conservation Science...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/la-population-d-ours-bruns-en-espagne-a-double-grace-a-la-protection-17944248919439uxdg6k76.html"
     }
    ],
    "dagoverzichten": [
@@ -289,13 +268,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-09",
      "url": "https://brightnews.online/articles/fr/soins-courage-et-une-airtag-intelligente-les-bonnes-nouvelles-de-la-semaine-dg-20261109-lifestyle.html"
-    },
-    {
-     "id": "dg-20261108-environment",
-     "titel": "La nature se rétablit : vers luisants, algues et un domaine ont une nouvelle chance",
-     "categorie": "Environment",
-     "dag": "2026-11-08",
-     "url": "https://brightnews.online/articles/fr/la-nature-se-retablit-vers-luisants-algues-et-un-domaine-ont-une-nouvelle-chance-dg-20261108-environment.html"
     }
    ]
   },
@@ -318,14 +290,6 @@
      "url": "https://brightnews.online/articles/es/el-flag-football-crece-rapidamente-en-popularidad-entre-las-ninas-17943389119158r0jm6tmv.html"
     },
     {
-     "id": "179426177536734o0a4akh",
-     "titel": "Adolescente crea la app Kora para ayudar a niños autistas a comprender emociones",
-     "teaser": "Un estudiante de secundaria de Nueva Jersey, Shashank Madala, presenció cómo los adultos interpretaban erróneamente las señales emocionales de su primo autista durante reuniones familiares. A los quince años, con apenas una clase de informática completada, se enseñó a sí mismo aprendizaje automático y construyó la app gratuita Kora. La aplicación ofrece a los cuidadores, a través de la cámara...",
-     "score": 10,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/es/adolescente-crea-la-app-kora-para-ayudar-a-ninos-autistas-a-comprender-emociones-179426177536734o0a4akh.html"
-    },
-    {
      "id": "1794424942669ry7xjuj33",
      "titel": "Pianista paralizada (84) cumple su promesa en la residencia Bryn Mawr Village",
      "teaser": "Bonnie Fay (84) llegó como paciente a la residencia de enfermería Bryn Mawr Village en Pensilvania, paralizada por el síndrome de Guillain-Barré. Durante su difícil recuperación, encontró consuelo tocando piano, algo que hacía desde los siete años. Se prometió a sí misma que algún día volvería para tocar allí. Ahora cumple esa promesa: toca piano regularmente para los residentes que...",
@@ -340,6 +304,14 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/estudiante-de-navegacion-salva-a-padre-e-hijo-del-ahogamiento-1794424918029ogfmvv8rv.html"
+    },
+    {
+     "id": "17944248919439uxdg6k76",
+     "titel": "La población de osos pardos en España se ha duplicado gracias a la protección",
+     "teaser": "El oso pardo cantábrico se ha duplicado en veinte años: de aproximadamente 140 animales a principios de este siglo a 370 en la actualidad. Los osos ya no viven solo en Cantabria, sino también en Asturias, León, Galicia y Palencia, en un área de más de 17.000 kilómetros cuadrados (6.500 millas cuadradas). Un estudio de 2023 en Conservation Science and...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/la-poblacion-de-osos-pardos-en-espana-se-ha-duplicado-gracias-a-la-proteccion-17944248919439uxdg6k76.html"
     }
    ],
    "dagoverzichten": [
@@ -363,13 +335,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-09",
      "url": "https://brightnews.online/articles/es/cuidado-coraje-y-un-airtag-inteligente-las-buenas-noticias-de-la-semana-dg-20261109-lifestyle.html"
-    },
-    {
-     "id": "dg-20261108-environment",
-     "titel": "La naturaleza se recupera: luciérnagas, algas y una finca histórica tienen una nueva oportunidad",
-     "categorie": "Environment",
-     "dag": "2026-11-08",
-     "url": "https://brightnews.online/articles/es/la-naturaleza-se-recupera-luciernagas-algas-y-una-finca-historica-tienen-una-nue-dg-20261108-environment.html"
     }
    ]
   }

@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-es.xml" rel="self" type="application/rss+xml"/>
         <description>Cada día una selección fresca de buenas noticias de todo el mundo. ¡Feliz lectura!</description>
         <language>es-es</language>
-        <lastBuildDate>Wed, 11 Nov 2026 19:24:29 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 11 Nov 2026 23:06:13 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Tu dosis diaria de positividad</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>280 grabados de la edad de hielo descubiertos en una cueva española</title>
+            <link>https://brightnews.online/articles/es/280-grabados-de-la-edad-de-hielo-descubiertos-en-una-cueva-espanola-1794438369251cckz8f0n6.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/es/280-grabados-de-la-edad-de-hielo-descubiertos-en-una-cueva-espanola-1794438369251cckz8f0n6.html</guid>
+            <pubDate>Wed, 11 Nov 2026 23:06:13 GMT</pubDate>
+            <description>En la Cova de la Font Major en Cataluña, investigadores han descubierto 280 grabados del Paleolítico, la segunda mayor colección de grabados de la edad de hielo jamás encontrada en la costa mediterránea española. Durante más de sesenta años, visitantes, espeleólogos y buscadores de tesoros pasaron junto a ellos sin reconocer su origen prehistórico. Algunos incluso grabaron nombres y fechas...</description>
+            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-horse-representaion-where-cave-floor-is-used-to-represent-the-ground-credit-2026-Verges-et-al.-Antiquiry-CC-4.0.-BY-SA-e1794413594768.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Osos, flores y un plan: tres señales de recuperación en la tierra</title>
             <link>https://brightnews.online/articles/es/osos-flores-y-un-plan-tres-senales-de-recuperacion-en-la-tierra-dg-20261110-environment.html</link>
@@ -243,14 +251,6 @@
             <pubDate>Fri, 06 Nov 2026 19:01:29 GMT</pubDate>
             <description>Vermont Gas ha cerrado un acuerdo pionero con la desarrolladora geotérmica Dandelion Energy para dotar de calefacción y refrigeración geotérmica al proyecto de vivienda asequible Riggs Meadow en Hinesburg, que cuenta con 44 unidades residenciales. Es el primer proyecto en EE.UU. en el que una empresa de servicios públicos es propietaria y gestiona las instalaciones como si fueran tuberías de...</description>
             <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Geothermal-boring-at-Riggs-Meadow-Housing-Development-credit-Dandelion-Energy-released.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>El lóris lento de Bangka venenoso no estaba extinto después de todo</title>
-            <link>https://brightnews.online/articles/es/el-loris-lento-de-bangka-venenoso-no-estaba-extinto-despues-de-todo-1793991652315mthd40ah5.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/es/el-loris-lento-de-bangka-venenoso-no-estaba-extinto-despues-de-todo-1793991652315mthd40ah5.html</guid>
-            <pubDate>Fri, 06 Nov 2026 19:00:55 GMT</pubDate>
-            <description>El lóris lento de Bangka, un primate que no había sido observado científicamente desde los años 30 y se consideraba posiblemente extinto en 2015, ha estado vivo todo este tiempo. Científicos austriacos lo descubrieron gracias a una guía de campo de 2022 que hacía referencia al Alobi Wildlife Rescue Center en la isla de Bangka. Este centro ha estado rescatando...</description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/The-Bangka-slow-loris-credit-Gunay-M.E.-CC-4.0.-BY-SA.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

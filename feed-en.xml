@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-en.xml" rel="self" type="application/rss+xml"/>
         <description>A fresh pick of good news from around the world, every day. Enjoy the read!</description>
         <language>en-us</language>
-        <lastBuildDate>Wed, 11 Nov 2026 19:24:29 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 11 Nov 2026 23:06:13 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Your Daily Dose of Positivity</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>280 overlooked ice age engravings discovered in Spanish cave</title>
+            <link>https://brightnews.online/articles/en/280-overlooked-ice-age-engravings-discovered-in-spanish-cave-1794438369251cckz8f0n6.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/280-overlooked-ice-age-engravings-discovered-in-spanish-cave-1794438369251cckz8f0n6.html</guid>
+            <pubDate>Wed, 11 Nov 2026 23:06:13 GMT</pubDate>
+            <description>At the Cova de la Font Major in Catalonia, researchers have discovered 280 engravings from the Paleolithic period, the second-largest collection of ice age engravings ever found on Spain&apos;s Mediterranean coast. For more than sixty years, visitors, cave explorers and treasure hunters walked past them without recognizing their prehistoric origin. Some even carved names and dates over the images. Rese</description>
+            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-horse-representaion-where-cave-floor-is-used-to-represent-the-ground-credit-2026-Verges-et-al.-Antiquiry-CC-4.0.-BY-SA-e1794413594768.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Bears, flowers and a plan: three signs of recovery on Earth</title>
             <link>https://brightnews.online/articles/en/bears-flowers-and-a-plan-three-signs-of-recovery-on-earth-dg-20261110-environment.html</link>
@@ -243,14 +251,6 @@
             <pubDate>Fri, 06 Nov 2026 19:01:29 GMT</pubDate>
             <description>Vermont Gas has struck a groundbreaking deal with geothermal developer Dandelion Energy to equip the 44-unit affordable housing project Riggs Meadow in Hinesburg with geothermal heating and cooling. It is the first project in the US where a utility company owns and manages the installations itself, similar to gas pipelines. Drilling begins in early 2027, with residents able to move...</description>
             <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Geothermal-boring-at-Riggs-Meadow-Housing-Development-credit-Dandelion-Energy-released.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Toxic Bangka loris turns out not to have gone extinct after all</title>
-            <link>https://brightnews.online/articles/en/toxic-bangka-loris-turns-out-not-to-have-gone-extinct-after-all-1793991652315mthd40ah5.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/toxic-bangka-loris-turns-out-not-to-have-gone-extinct-after-all-1793991652315mthd40ah5.html</guid>
-            <pubDate>Fri, 06 Nov 2026 19:00:55 GMT</pubDate>
-            <description>The Bangka slow loris, a primate that had not been scientifically observed since the 1930s and was considered possibly extinct in 2015, has apparently survived all along. Austrian scientists discovered this thanks to a 2022 field guide that referenced the Alobi Wildlife Rescue Center on the island of Bangka. This center has been rescuing and reintroducing the animals since 2015,...</description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/The-Bangka-slow-loris-credit-Gunay-M.E.-CC-4.0.-BY-SA.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

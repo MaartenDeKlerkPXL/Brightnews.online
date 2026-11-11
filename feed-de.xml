@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-de.xml" rel="self" type="application/rss+xml"/>
         <description>Jeden Tag eine frische Auswahl guter Nachrichten aus aller Welt. Viel Spaß beim Lesen!</description>
         <language>de-de</language>
-        <lastBuildDate>Wed, 11 Nov 2026 19:24:29 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 11 Nov 2026 23:06:13 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Deine tägliche Dosis Positivität</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>280 unbemerkte Eiszeitgravuren in spanischer Höhle entdeckt</title>
+            <link>https://brightnews.online/articles/de/280-unbemerkte-eiszeitgravuren-in-spanischer-hohle-entdeckt-1794438369251cckz8f0n6.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/de/280-unbemerkte-eiszeitgravuren-in-spanischer-hohle-entdeckt-1794438369251cckz8f0n6.html</guid>
+            <pubDate>Wed, 11 Nov 2026 23:06:13 GMT</pubDate>
+            <description>In der Cova de la Font Major in Katalonien haben Forscher 280 Gravuren aus dem Paläolithikum entdeckt – die zweitgrößte Sammlung von Eiszeitgravuren, die je an der spanischen Mittelmeerküste gefunden wurde. Mehr als sechzig Jahre lang liefen Besucher, Höhlenforscher und Schatzsucher direkt daran vorbei, ohne den prähistorischen Ursprung zu erkennen. Einige ritzten sogar Namen und Daten über die Ab</description>
+            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-horse-representaion-where-cave-floor-is-used-to-represent-the-ground-credit-2026-Verges-et-al.-Antiquiry-CC-4.0.-BY-SA-e1794413594768.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Bären, Blüten und ein Plan: drei Zeichen der Erholung auf der Erde</title>
             <link>https://brightnews.online/articles/de/baren-bluten-und-ein-plan-drei-zeichen-der-erholung-auf-der-erde-dg-20261110-environment.html</link>
@@ -243,14 +251,6 @@
             <pubDate>Fri, 06 Nov 2026 19:01:29 GMT</pubDate>
             <description>Vermont Gas hat einen bahnbrechenden Deal mit dem Geothermie-Entwickler Dandelion Energy geschlossen, um das 44 Wohneinheiten umfassende Projekt Riggs Meadow in Hinesburg mit Geothermie-Heizung und -Kühlung auszustatten. Es ist das erste Projekt in den USA, bei dem ein Versorgungsunternehmen die Anlagen selbst besitzt und verwaltet wie Gasleitungen. Die Bohrarbeiten beginnen Anfang 2027, Bewohner </description>
             <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Geothermal-boring-at-Riggs-Meadow-Housing-Development-credit-Dandelion-Energy-released.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Giftige Bangka-Loris war nie wirklich ausgestorben</title>
-            <link>https://brightnews.online/articles/de/giftige-bangka-loris-war-nie-wirklich-ausgestorben-1793991652315mthd40ah5.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/de/giftige-bangka-loris-war-nie-wirklich-ausgestorben-1793991652315mthd40ah5.html</guid>
-            <pubDate>Fri, 06 Nov 2026 19:00:55 GMT</pubDate>
-            <description>Der Bangka-Slow-Loris, ein Primat, der seit den 1930er Jahren nicht mehr wissenschaftlich beobachtet worden war und 2015 als möglicherweise ausgestorben galt, hat die ganze Zeit überlebt. Das entdeckten österreichische Wissenschaftler dank eines Feldführers aus dem Jahr 2022, der auf das Alobi Wildlife Rescue Center auf der Insel Bangka verwies. Dieses Zentrum rettet und setzt die Tiere seit 2015 </description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/The-Bangka-slow-loris-credit-Gunay-M.E.-CC-4.0.-BY-SA.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

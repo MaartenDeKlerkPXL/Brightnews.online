@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-fr.xml" rel="self" type="application/rss+xml"/>
         <description>Chaque jour une sélection fraîche de bonnes nouvelles du monde entier. Bonne lecture !</description>
         <language>fr-fr</language>
-        <lastBuildDate>Wed, 11 Nov 2026 19:24:29 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 11 Nov 2026 23:06:13 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Votre dose quotidienne de positivité</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>280 gravures de l&apos;âge de glace découvertes dans une grotte espagnole</title>
+            <link>https://brightnews.online/articles/fr/280-gravures-de-l-age-de-glace-decouvertes-dans-une-grotte-espagnole-1794438369251cckz8f0n6.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/fr/280-gravures-de-l-age-de-glace-decouvertes-dans-une-grotte-espagnole-1794438369251cckz8f0n6.html</guid>
+            <pubDate>Wed, 11 Nov 2026 23:06:13 GMT</pubDate>
+            <description>Dans la Cova de la Font Major en Catalogne, des chercheurs ont découvert 280 gravures du Paléolithique, la deuxième plus grande collection de gravures de l&apos;âge de glace jamais trouvée sur la côte méditerranéenne espagnole. Pendant plus de soixante ans, des visiteurs, des spéléologues et des chercheurs de trésors sont passés à côté sans reconnaître l&apos;origine préhistorique. Certains ont même...</description>
+            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-horse-representaion-where-cave-floor-is-used-to-represent-the-ground-credit-2026-Verges-et-al.-Antiquiry-CC-4.0.-BY-SA-e1794413594768.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Des ours, des fleurs et un plan : trois signes de rétablissement sur terre</title>
             <link>https://brightnews.online/articles/fr/des-ours-des-fleurs-et-un-plan-trois-signes-de-retablissement-sur-terre-dg-20261110-environment.html</link>
@@ -243,14 +251,6 @@
             <pubDate>Fri, 06 Nov 2026 19:01:29 GMT</pubDate>
             <description>Vermont Gas a conclu un accord novateur avec le développeur géothermique Dandelion Energy pour équiper le projet de logements abordables Riggs Meadow à Hinesburg, comptant 44 unités résidentielles, de chauffage et de refroidissement géothermiques. C&apos;est le premier projet aux États-Unis où une entreprise de services publics possède et gère elle-même les installations, comme elle le ferait pour les </description>
             <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Geothermal-boring-at-Riggs-Meadow-Housing-Development-credit-Dandelion-Energy-released.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Le loris lent de Bangka n&apos;a jamais disparu</title>
-            <link>https://brightnews.online/articles/fr/le-loris-lent-de-bangka-n-a-jamais-disparu-1793991652315mthd40ah5.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/fr/le-loris-lent-de-bangka-n-a-jamais-disparu-1793991652315mthd40ah5.html</guid>
-            <pubDate>Fri, 06 Nov 2026 19:00:55 GMT</pubDate>
-            <description>Le loris lent de Bangka, un primate qui n&apos;avait pas été observé scientifiquement depuis les années 30 et était considéré comme possiblement éteint en 2015, a en réalité survécu tout ce temps. Des scientifiques autrichiens l&apos;ont découvert grâce à un guide de terrain de 2022 qui mentionnait le Alobi Wildlife Rescue Center sur l&apos;île de Bangka. Ce centre sauve et...</description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/The-Bangka-slow-loris-credit-Gunay-M.E.-CC-4.0.-BY-SA.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>
