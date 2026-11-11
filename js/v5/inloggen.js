@@ -72,7 +72,9 @@
     }
 
     // "Met deze knop ga je akkoord met de {voorwaarden} en de {privacy}." De
-    // links staan op de plek van de plaatshouders.
+    // links staan op de plek van de plaatshouders. Daarna de zin over de
+    // welkomstmails: die gaan zonder vinkje naar elk nieuw account, dus de
+    // lezer moet bij het aanmaken horen dat ze komen en dat afmelden kan.
     function akkoordZin() {
         const p = $('in-akkoord');
         p.replaceChildren();
@@ -81,6 +83,7 @@
             else if (deel === '{privacy}') p.appendChild(B.link(B.url.privacy(), null, t('v5_in_privacy')));
             else if (deel) p.appendChild(document.createTextNode(deel));
         });
+        p.appendChild(document.createTextNode(` ${t('v5_in_welkomstmails')}`));
     }
 
     function teken() {

@@ -407,7 +407,7 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   | Feedback (`feedback`) | Supabase | hooguit twee jaar | **nog geen opruiming. Erik: alles ouder dan twee jaar wissen (eenmaal per jaar met de hand, of `pg_cron`)** |
   | Contactberichten | nog niet gekoppeld | hooguit twee jaar | **bij het koppelen meteen regelen** |
   | IP-adressen in logboeken | GitHub, Supabase | (geen termijn genoemd) | termijn van de leverancier |
-  | Google Analytics | Google | hooguit 14 maanden per bezoek | **Maarten: in GA4 → Beheer → Gegevensbewaring op 2 of 14 maanden zetten (14 is het maximum), en Google Signals uit** |
+  | Google Analytics | Google | hooguit 14 maanden per bezoek | ✅ nagekeken 2026-11-11: gebeurtenisgegevens 2 maanden, gebruikersgegevens 14 maanden, Google-signalen uit, gegevens delen helemaal uit |
   | Betaalgegevens | Stripe | zo lang als de wet van een verkoper vraagt | regelt Stripe |
   | Mailadres bij het versturen | Strato, Resend | (geen termijn genoemd) | termijn van de leverancier |
 
@@ -443,11 +443,12 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      staat Managed Payments niet meer vanzelf aan (TODO 58).
   3. ✅ **Het vinkje voor het herroepingsrecht blijft** (Maarten,
      2026-11-11). `v5_abo_toestemming` en `v5_rf_s3_p` blijven zoals ze zijn.
-  4. **De welkomstreeks zonder vooraf gevraagde toestemming.** Dat mag
-     waarschijnlijk alleen als je bij het aanmaken van het account meteen
-     hoort dat de mails komen en dat afmelden kan. Voorstel: bij Account
-     maken één zin onder de knop: "Je krijgt drie welkomstmails. Afmelden
-     kan met één klik onder elke mail." (nieuwe sleutel, nog niet gebouwd).
+  4. ✅ **De welkomstreeks: de lezer hoort het bij het aanmaken** (Maarten,
+     2026-11-11). Op `v5-inloggen.html?tab=account` staat achter de
+     akkoordzin: "Je krijgt drie welkomstmails. Afmelden kan met één klik
+     onder elke mail." (`v5_in_welkomstmails`, vijf talen). Geldt alleen
+     voor Account maken, niet voor inloggen. Het ontwerp in Figma heeft de
+     zin nog niet.
 
   **De proefperiode begint bij Stripe bij het afrekenen**, niet als Premium
   aanstaat. De teksten op Bedankt passen daar sinds 11 november bij; er is
