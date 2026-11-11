@@ -92,16 +92,16 @@ via een PR. Laat die PR eerst nakijken door een review-agent
   weg, `npm audit fix` en het SQL-bestand voor de Supabase-advisor (TODO 71
   en 72).
 - ✅ Inlogmails nagekeken: de eigen SMTP via Strato werkt, de mail komt in
-  de inbox. De mail-limiet stond op 2 per uur en moet naar 30 (TODO 68).
+  de inbox. De mail-limiet staat op 30 per uur (TODO 68).
 - ✅ **Juridische teksten:** er komt geen jurist. De teksten zeggen wat de
   site echt doet en alle [haken] zijn ingevuld. Jouw besluiten staan in
   TODO 75: het jaarabonnement, de btw-instelling in Stripe, het vinkje en
   één zin bij Account maken.
-- PR #17 mergen, het SQL-bestand draaien in Supabase en de nieuws-Action één
-  keer handmatig draaien.
-- Kleine dingen die alleen jij kunt: het secret `MISTRAL_API_KEY` weghalen,
-  een melding bij laag tegoed in console.anthropic.com (TODO 69.2), en kijken
-  welk plan er bij Resend staat.
+- ✅ PR #17 gemerged, beide SQL-bestanden gedraaid (`pg_cron` met twee
+  opruimtaken), nieuws-Action handmatig gedraaid.
+- ✅ `MISTRAL_API_KEY` weg, plan bij Resend nagekeken (gratis is genoeg).
+- Nog open: Erik stelt auto-reload en een maandlimiet in bij Anthropic
+  (TODO 69.2), en de Resend-sleutel naar alleen versturen (TODO 76).
 
 ### Donderdag 12 november
 
@@ -165,8 +165,8 @@ via een PR. Laat die PR eerst nakijken door een review-agent
 - CSP op alle pagina's en in het artikelsjabloon (Supabase, Stripe, Google).
 - De cookiebalk laat GA4 laden na toestemming (TODO 66, punt 15).
 - Service worker: precache naar de v5-bestanden, `CACHE_NAME` bumpen.
-- Jouw besluiten uit TODO 75 verwerken in de juridische teksten, en de
-  privacyregel over feedback nalezen (TODO 43).
+- ✅ De besluiten uit TODO 75 staan al in de teksten (11 november). Nog wel:
+  de privacyregel over feedback nalezen (TODO 43).
 - Steekproef op de vertalingen in alle vijf talen.
 
 ### Vrijdag 20 november
