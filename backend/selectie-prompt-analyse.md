@@ -1425,3 +1425,109 @@ relevantie. "Schimmels krijgen wereldwijd eigen beschermingsstatus als
 'Funga'" (Theecologist.org) over de inzet van wetenschappers en de Fungi
 Foundation om schimmels naast flora en fauna wettelijk erkend en beschermd
 te krijgen — relevant milieu- en wetenschapsnieuws zonder politieke lading.
+
+### 2026-09-29, 09:50 Europe/Amsterdam
+
+Beoordeeld: 13 artikelen, gepubliceerd tussen 2026-09-27 16:35 en 2026-09-29 04:47.
+Niet bright-waardig: 2. Twijfel: 2.
+
+#### Ethisch modemerk Yes Friends krijgt investering van Deborah Meaden
+- **Gepubliceerd:** 2026-09-28 19:23 · Lifestyle · Positive.News
+- **Waar het over gaat:** Een Bristols kledingmerk dat inzet op leefbare lonen en lage-impact productie krijgt een investering van een bekende investeerder en wordt geprezen om zijn fooienregeling voor textielarbeiders.
+- **Waarom dit niet goed genoeg is:** De kern van het stuk is een investeringsdeal in een commercieel modemerk — wie het bedrijf financiert, hoe het uitbreidde naar nieuwe productlijnen. Dat is bedrijfs- en productnieuws, ook al is de missie van het merk sympathiek. De selectieprompt sluit commerciële promotie en bedrijfsnieuws zonder bredere maatschappelijke betekenis expliciet uit, en dit voelt aan als precies dat: een succesverhaal voor één merk, geen maatschappelijk verhaal.
+
+#### Vrouwengroep Lioness wint rechtszaak voor airconditioning in Texaanse gevangenissen
+- **Gepubliceerd:** 2026-09-28 19:27 · Lifestyle · GoodGoodGood.co
+- **Waar het over gaat:** Een groep ex-gedetineerde vrouwen wint samen met andere organisaties een rechtszaak die de staat Texas verplicht om voor eind 2029 airconditioning te installeren in alle gevangenissen.
+- **Waarom dit niet goed genoeg is:** De uitkomst is op zichzelf verbetering van levensomstandigheden, maar het verhaal draait om een rechtszaak tegen een overheidsinstantie over gevangenisomstandigheden — een onderwerp waar de publieke opinie sterk verdeeld over is (verdienen gedetineerden dit comfort). Dat is precies de politieke categorie uit de selectieprompt: goed nieuws dat afhangt van welke mening je al hebt over het onderliggende beleidsvraagstuk, en de kern van het stuk (slechte, potentieel levensgevaarlijke omstandigheden) is iets wat misging, niet overstegen door een reddende gemeenschapsactie zoals de kernregel bedoelt.
+
+#### Twijfelgeval: New York City haalt 131 miljoen dollar op bij DoorDash voor bezorgers
+- **Gepubliceerd:** 2026-09-27 16:35 · Finance · GoodNewsNetwork.org
+- **Waar het over gaat:** NYC treft een schikking van 131,5 miljoen dollar met DoorDash wegens onderbetaling van meer dan 260.000 bezorgers; het grootste deel van het geld gaat rechtstreeks naar de gedupeerde werknemers.
+- **Waarom ik twijfel:** Er zit tastbaar herstel in voor een grote groep individuele mensen die eerder benadeeld werden, wat richting de kernregel (herstel na onrecht) trekt. Tegelijk is de kern een overheid die een bedrijf dwingt te betalen na overtreding van arbeidswetgeving — vergelijkbaar met het ijkvoorbeeld over teruggedraaide surveillance-financiering, waarbij "goed nieuws" afhangt van je opvatting over gig-economy-regulering. Ik zou het laten staan vanwege de concrete compensatie voor echte mensen, maar leg het bij Erik neer.
+
+#### Twijfelgeval: Kleitablet met oudste vredesverdrag ter wereld ontdekt
+- **Gepubliceerd:** 2026-09-28 19:25 · Science · GoodNewsNetwork.org
+- **Waar het over gaat:** Archeologen vinden in Turkije een kleitablet met een fragment van de Vrede van Kadesh, het oudste bekende vredesverdrag, opgegraven bij de Hettitische hoofdstad Hattusa.
+- **Waarom ik twijfel:** Wetenschappelijk en historisch interessant, en netjes geformuleerd zonder probleem-framing, maar het mist de warme, hoopgevende lading die het "goed gevoel"-criterium vraagt — het is vooral een feitelijke vondstmelding zonder mensen die geholpen worden of een verhaal dat je raakt. Ik zou het als grensgeval markeren: relevantie is prima, maar het gevoel blijft vlak.
+
+**Patroon:** twee van de vier vermelde items (de DoorDash-schikking en de Lioness-rechtszaak) draaien om een rechtszaak of overheidsdwang tegen een instelling wegens wangedrag jegens een kwetsbare groep. Beide voelen oprecht positief voor de gedupeerden, maar leunen tegen politiek beladen thema's (arbeidsrecht, gevangenisbeleid) aan waarbij "goed nieuws" afhangt van de politieke bril van de lezer. Het is de moeite waard om in de selectieprompt scherper te maken hoe dit soort "rechtszaak-als-herstel"-verhalen gewogen moeten worden ten opzichte van de politiek-categorie.
+
+### 2026-09-30, 09:53 Europe/Amsterdam
+
+Beoordeeld: 13 artikelen, gepubliceerd tussen 2026-09-29 17:49 en 2026-09-30 04:33.
+Niet bright-waardig: 1. Twijfel: 1.
+
+#### MacArthur Foundation kent 'genius grants' toe aan 20 wetenschappers en kunstenaars
+- **Gepubliceerd:** 2026-09-29 17:55 · Science · NPR.org
+- **Waar het over gaat:** Een opsomming van de twintig laureaten van de jaarlijkse MacArthur-fellowship, met korte vermeldingen van uiteenlopende vakgebieden: forensische antropologie, arbeidseconomie, klimaatwetenschap, sociologie en kunst.
+- **Waarom dit niet goed genoeg is:** Dit is in feite een verzameleditie in de vorm van één artikel — meerdere volstrekt niet-verwante onderwerpen (loonongelijkheid, klimaatmodellen, forensisch werk, kunst) worden alleen bij elkaar gezet omdat de subsidie ze toevallig verbindt. Er is geen doorlopend verhaal, geen kern die je kunt navertellen zonder een lijstje op te lezen. Dat is precies het "meerdere niet-verwante onderwerpen in één artikel"-kenmerk uit de afwijslijst. Het aparte artikel over Spradley (dat wél één samenhangend verhaal vertelt) staat hier los van en is prima bright-materiaal.
+- **Link:** /articles/nl/macarthur-foundation-kent-genius-grants-toe-aan-20-wetenschappers-en-kunstenaars-1790704517255qb72iuc08.html
+
+#### Twijfelgeval: Japan telt recordaantal van 107.677 honderdplussers
+- **Gepubliceerd:** 2026-09-29 17:51 · Health · OptimistDaily.com
+- **Waar het over gaat:** Officiële cijfers van het Japanse ministerie van Volksgezondheid laten zien dat het land voor het eerst meer dan 100.000 honderdplussers telt, met een historisch overzicht van de groei van dat aantal sinds 1963.
+- **Waarom ik twijfel:** Het is onmiskenbaar positief en maatschappelijk relevant (gezondheid, vergrijzing), maar er zit geen mens, gebeurtenis of verhaal in — het is een kaal statistiekbericht zonder herkenbare kern. Dat maakt het gevoel vlak in plaats van warm. Ik zou het laten staan omdat het feitelijk sterk en onomstreden positief is, maar het scheelt weinig met "te weinig inhoud"; graag het oordeel van Erik.
+
+**Patroon:** Twee keer leverde dezelfde bron op dezelfde nacht twee artikelen over vrijwel hetzelfde onderwerp: GoodGoodGood.co met twee losse olifant-adoptieverhalen (Talek en Daba) en NPR.org met zowel het individuele portret van Spradley als het bredere MacArthur-overzicht waarin zij opnieuw genoemd wordt. Bij de olifantenverhalen is dat geen probleem — het zijn twee echte, op zichzelf staande reddingsverhalen — maar bij NPR is het tweede artikel (het overzicht) inhoudelijk een verdunde, opgesomde herhaling van het eerste en had om die reden al bij de poort moeten sneuvelen.
+
+### 2026-10-01, 10:15 Europe/Amsterdam
+
+Beoordeeld: 10 artikelen, gepubliceerd tussen 2026-09-30 17:45 en 2026-10-01 04:44.
+Niet bright-waardig: 1. Twijfel: 1.
+
+#### Horizon Europe krijgt 500 miljoen euro extra voor onderzoek en innovatie
+- **Gepubliceerd:** 2026-09-30 17:48 · Science · Openaccessgovernment.org
+- **Waar het over gaat:** De Europese Commissie trekt 500 miljoen euro extra uit
+  voor het Horizon Europe-programma in 2026-2027, onder meer voor oproepen rond
+  biodiversiteit en een natuurpositieve economie.
+- **Waarom dit niet goed genoeg is:** Dit is in de kern een begrotingsbericht:
+  bedragen, programmanamen en verdeling over oproepen, zonder een mens, dier of
+  concrete gebeurtenis waar een lezer iets bij voelt. Het is maatschappelijk
+  relevant (wetenschap, onderzoek), maar mist de warmte en de positieve
+  formulering die de selectieprompt vraagt — het leest als een persbericht over
+  subsidieverdeling, niet als een verhaal. Daardoor haalt het op "goed gevoel"
+  niet de ondergrens, ook al is de relevantie op zich voldoende.
+- **Link:** n.v.t. (id: 179079052264500q9jt7s6)
+
+#### Twijfelgeval: The Bulwark haalt ruim $400.000 op voor Haïtianen in Springfield
+- **Gepubliceerd:** 2026-09-30 17:47 · Lifestyle · GoodGoodGood.co
+- **Waar het over gaat:** Een liveshow van media-outlet The Bulwark bracht geld
+  op voor het Haitian Support Center in Springfield, Ohio, dat de Haïtiaanse
+  gemeenschap daar helpt met voedsel, vervoer en juridische bijstand, in de
+  context van een ICE-handhavingsactie en een uitspraak van het Hooggerechtshof
+  over het intrekken van tijdelijke beschermde status.
+- **Waarom ik twijfel:** De kern — mensen die geld inzamelen om een gemeenschap
+  in nood te helpen — is precies het soort gemeenschapszin dat de kernregel
+  juist wél toelaat, vergelijkbaar met het ijkvoorbeeld van fans die geld
+  inzamelen voor een opgelicht kind. Tegelijk is het verhaal doordrenkt van
+  politieke lading: ICE-acties, de Trump-regering en een rechterlijke uitspraak
+  over beschermde status worden expliciet genoemd als reden waarom de hulp
+  nodig is. Dat maakt het een verhaal dat alleen als onverdeeld positief
+  aanvoelt als je er een bepaalde politieke kijk op nahoudt — precies de toets
+  uit de afwijslijst. Ik zou dit afkeuren als politiek gekleurd, maar leg het
+  met twijfel voor omdat de hulpactie zelf oprecht gemeenschapsgericht is.
+- **Link:** n.v.t. (id: 1790790463292h7qtw4jt5)
+
+De overige acht artikelen (Chris Evans en het hondenduo, de wetland-golfbaan,
+de nestelende zeeschildpadden, Dolly Parton's Imagination Library, het geredde
+olifantje Korbessa, de teruggekeerde roodpotige kikker, het onderzoek naar
+muziekonderwijs en schoolverzuim, en de geboorte van sneeuwluipaardwelp Sarka)
+voldoen ruim aan de maatstaf: eigen, afgeronde verhalen met een warme kern,
+positief geformuleerd en maatschappelijk of persoonlijk relevant.
+
+### 2026-10-02, 09:53 Europe/Amsterdam
+
+Beoordeeld: 12 artikelen, gepubliceerd tussen 2026-10-01 20:10 en 2026-10-02 06:35.
+Niet bright-waardig: 1. Twijfel: 1.
+
+#### SpaceX lanceert Crew-13 naar internationaal ruimtestation
+- **Gepubliceerd:** 2026-10-01 20:14 · Science · NPR.org
+- **Waar het over gaat:** Een SpaceX Falcon 9 met de Dragon-capsule 'Grace' is gelanceerd vanaf Cape Canaveral met vier bemanningsleden voor NASA's Crew-13-missie naar het ISS. De lancering verliep goed ondanks zorgen over onweer en wind.
+- **Waarom dit niet goed genoeg is:** Dit is een feitelijk verslag van een routinematige bedrijfslancering (SpaceX) zonder transformatief of hartverwarmend element. Er wordt niemand geholpen, niets hersteld en er zit geen doorbraak in die levens verbetert — het is in de kern bedrijfs- en missienieuws, vergelijkbaar met de productnieuws-categorie uit de afwijslijst: knap en indrukwekkend, maar geen BrightNews-verhaal. De formulering is overwegend neutraal-technisch, niet positief van toon.
+- **Link:** (zie data/news_nl.json, id 1790878463725e6mq4yj0y)
+
+#### Twijfelgeval: Social innovator Ken Banks: luisteren maakt leiders beter
+- **Gepubliceerd:** 2026-10-01 20:10 · Lifestyle · Positive.News
+- **Waar het over gaat:** Ken Banks reflecteert op dertig jaar werk in natuurbehoud, ontwikkeling en technologie en betoogt dat luisteren de belangrijkste onderschatte leiderschapsvaardigheid is, geïllustreerd met ervaringen uit Oost-Afrika.
+- **Waarom ik twijfel:** Er zit een persoonlijk, inhoudelijk verhaal in met een concrete aanleiding (zijn werk in Oost-Afrika), maar de insteek is vooral een advies-column over leiderschap zonder nieuwsgebeurtenis — dat raakt de listicle/zelfhulp-categorie uit de afwijslijst. Ik zou geneigd zijn hem te laten staan vanwege de echte ervaring erachter, maar het format trekt richting "dit moet je weten over leiderschap". Oordeel van Erik gewenst.

@@ -15,6 +15,16 @@
     <link rel="icon" type="image/png" href="/assets/brightnews-logo-faviconv5.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Zonder deze regel mag Google alleen een miniatuur tonen, en een
+         Discover-kaart is juist een grote beeldkaart (punt 51). Bewust
+         alleen vooruit: het archief wordt niet opnieuw gegenereerd,
+         want Discover toont vrijwel alleen vers nieuws. -->
+    <meta name="robots" content="max-image-preview:large">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Deutsch)" href="/feed-de.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Nederlands)" href="/feed-nl.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (English)" href="/feed-en.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Français)" href="/feed-fr.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Español)" href="/feed-es.xml">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://www.googletagmanager.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
     <meta name="description" content="Wissenschaftler bauten einen Tunnel unter einer australischen Bergstraße, um bedrohte Beuteltiere sicher paaren zu lassen.">
     <title>Liebestunnel hilft bedrohtem Beutelwombat bei der Fortpflanzung | BrightNews</title>
@@ -35,6 +45,7 @@
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/components.css">
     <link rel="stylesheet" href="/css/pages/artikel.css">
+    <link rel="stylesheet" href="/css/pages/categorie.css">
     <meta name="theme-color" content="var(--bright-green)">
     <script src="/js/vendor/supabase-js-2.112.4.js" defer></script>
     <script src="/js/supabase-init.js" defer></script>
@@ -163,6 +174,7 @@
                     <li><a href="/articles/de/afghanische-family-health-houses-retten-mutter-und-babys-178958809918291v7k5ka4.html">Afghanische family health houses retten Mütter und Babys</a></li>
                     <li><a href="/articles/de/grizzlybegegnung-fuhrt-mann-zu-seiner-bandevergangenheit-zuruck-1789587852097o5i3h66hb.html">Grizzlybegegnung führt Mann zu seiner Bandevergangenheit zurück</a></li>
             </ul>
+            <p class="meer-categorie"><a href="/categories/de/umwelt.html">Gute Nachrichten über Umwelt</a></p>
         </div>
     </nav>
 </main>

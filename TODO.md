@@ -1,11 +1,16 @@
 # TODO BrightNews
 
-> **Stand 2026-09-27, avond.** Maarten heeft alles afgewerkt wat alleen hij
-> kon doen. De GA4-API staat aan, de verhuizing naar Supabase is nagemeten en
-> compleet, en de drie social-kanalen bestaan nu écht. Eriks
-> `SESSIEVERSLAG-VOOR-MAARTEN.md` is gelezen en verwijderd. Wat er nog op
-> Maartens naam staat is één ding: wachten op de bedrijfsverificatie van
-> LinkedIn. **De bal ligt bij Erik** — zie zijn instap hieronder.
+> **Stand 2026-09-28, avond.** Vijf pull requests in één dag: #11 t/m #14 zijn
+> gemerged, #15 staat open. Daarmee zijn **punt 3, 46, 47, 50, 51, 53.1, 54
+> (techniek), 55, 57, 60 en 61 afgehandeld.** De welkomstreeks draait live —
+> vijf mails verstuurd, nul mislukt, en in de inbox in plaats van de spam.
+> Punt 59 (de metered paywall) is gebouwd en de Supabase-kant staat er al;
+> alleen de review ontbreekt nog. Wat op Maartens naam staat is nog steeds
+> één ding: wachten op de bedrijfsverificatie van LinkedIn (punt 45).
+>
+> **Nieuw op 28 september: punt 64** — de site loopt niet helemaal goed op
+> iPhone in Safari. Het grootste deel van het publiek komt via een telefoon,
+> dus dit hoort vóór de lancering recht.
 
 Werklijst, opgesteld 2026-09-10 na een ronde langs de projectdocumenten, de
 open pull requests en een paar eigen metingen op de site. Gesorteerd op
@@ -22,25 +27,65 @@ vervangen door `[x]` en zet er kort bij wat er gebeurd is.
 
 ---
 
-## Voor Erik — je instap (bijgewerkt 2026-09-27, avond)
+## Voor Erik — je instap (bijgewerkt 2026-09-28, avond)
 
-**Begin bij [PR #10](https://github.com/MaartenDeKlerkPXL/Brightnews.online/pull/10).**
-Klein en schoon te mergen: X gaat uit de postfabriek. Sinds 06-02-2026 rekent
-X per post af en een post mét link kost $0,20 — onze posts bevatten er altijd
-een, dus ~$73 per jaar voor een kanaal dat niet eens als hoofdkanaal in
-`MARKETING-PLAN.md` staat. `KANALEN` gaat van vier naar drie en
-`marketing-prompt.md` is v2. De cockpit leest de kanalen uit de data en past
-zich vanzelf aan.
+**Begin bij [PR #15](https://github.com/MaartenDeKlerkPXL/Brightnews.online/pull/15).**
+Dat is het enige dat nog openstaat. Punt 59: de metered paywall. **Maarten
+heeft `supabase/metered-paywall-2026-09-28.sql` al gedraaid**, dus zodra jij
+mergt gaat hij meteen aan.
+
+De helft die ogen verdient is de SQL, want die kon hier niet getest worden —
+er staat geen Postgres of Docker op deze machine. Twee dingen in het
+bijzonder: of `lees_artikel()` als `security definer` niets teruggeeft wat een
+ánder aangaat, en of `count(distinct artikel_id)` per maand doet wat het moet.
+De front-end is wel getest, inclusief het geval dat de RPC ontbreekt.
 
 Daarna, op jouw naam:
 
 | | Wat | Sinds |
 |---|---|---|
 | **45** | **Meta-app bouwen — dit kan nu** | 26 sept |
-| **3** | De selectieprompt bijstellen op tien missers | 10 sept |
 | **43** | De privacyregel over feedback nalezen | 24 sept |
 | **26** | Anthropic auto-reload + wie de key houdt *(samen met Maarten)* | 19 sept |
-| **46** | **Nieuw:** van wie is de nachtelijke beoordeling? *(samen)* | 27 sept |
+| **48** | Het referral-systeem afmaken | 27 sept |
+| **49** | De nieuwsbrief *(de verzenddienst staat er nu, zie punt 60)* | 27 sept |
+| **56** | Search Console-termen terug in de selectieprompt | 27 sept |
+
+### Je vier review-fixes van 28 september — allemaal terecht
+
+Ze staan hier omdat ze precies het soort fout waren dat een auteur zelf niet
+ziet, en omdat de eerste twee een patroon blootleggen.
+
+1. **`verberg-uitgesloten.js` testte op een wíllekeurige robots-meta.** PR #11
+   gaf het artikelsjabloon een eigen robots-regel (`max-image-preview`), dus
+   na die merge zag mijn script die regel staan en sloeg hij de noindex over.
+   **Twee PR's die los van elkaar zijn gebouwd en elkaar pas bij de merge in
+   de weg lopen** — precies wat een reviewer wel ziet en een auteur niet.
+2. **`generate-articles.js` hergenereert 2×/dag** en haalde de noindex er
+   stilletjes weer af. Ik had aangenomen dat de vijf missers allemaal
+   gearchiveerd waren; dat was toevallig zo, maar het is geen garantie.
+3. **Node 20 → 22 in `welkomstreeks.yml`.** `supabase-js` heeft native
+   WebSocket nodig; `createClient` crasht op 20 zodra de service-key er is. De
+   mailrun zou dus precies gebroken zijn op het moment dat hij écht iets ging
+   doen. Dit stond gedocumenteerd in `update-news.yml` en ik heb het gemist.
+4. **`fetch-depth: 0` in `nachtelijke-beoordeling.yml`**, anders strandt de
+   `git pull --rebase` in de push-lus zodra master is opgeschoven.
+
+En je hebt de nieuwssitemap de uitsluitlijst laten honoreren — een artikel met
+noindex dat tegelijk bij Google News wordt aangemeld is een tegenstrijdig
+signaal.
+
+**Nagetrokken op 28 september, avond** (want een fix die niemand controleert
+is een aanname): 25 pagina's staan op noindex, 0 zonder. Nul uitgesloten
+artikelen in `sitemap.xml` (3.213 URL's) én in `news-sitemap.xml` (25 URL's).
+`generate-articles.js` opnieuw gedraaid en de noindex bleef staan — jouw fix
+doet wat hij belooft. `verberg-uitgesloten.js` is nog idempotent (0 gewijzigd,
+25 stonden er al op). `npx eslint .` → 0 errors.
+
+Bij diezelfde controleronde bleek dat **de 750 actuele artikelpagina's het
+sjabloon uit punt 51 nog niet hadden** — geen Discover-tag, geen
+RSS-autodiscovery. Ze zijn nu hergenereerd; de nachtelijke Action had dat
+vanzelf gedaan, maar dan pas om 0:00 UTC.
 
 ### Punt 45: de Meta-kant is vrij
 
@@ -60,6 +105,10 @@ Wat er gebouwd moet worden staat verderop bij punt 45 uitgeschreven. Eén ding
 daaruit is niet optioneel: **een publicatielog**, anders plaatst de Action bij
 elke run dezelfde post opnieuw.
 
+**Nieuw sinds 28 september:** de cockpit maakt nu beeldkaarten voor Instagram
+(punt 53.1). Zodra jij de publicatielus bouwt kan dezelfde tekenfunctie naar
+een server-side canvas — dan hoeft er niemand meer handmatig te downloaden.
+
 ### Punt 45: LinkedIn loopt, niets te doen
 
 De bedrijfspagina staat er (`linkedin.com/company/brightnewsonline`) en de
@@ -71,21 +120,20 @@ Twee dingen die tijd kostten en die je moet weten als je zelf aan die app
 komt: het product moet het **enige** product op een app zijn, en de
 paginakoppeling moet **per app** geverifieerd worden.
 
-### Wat er op 27 september nog meer op master is geland
+### Wat er op 28 september op master is geland
 
-Drie kapotte footerlinks, gevonden bij het omzetten naar de nieuwe kanalen:
-935 archiefpagina's wezen naar het Facebook-profiel van een onbekende, 385
-naar een LinkedIn-bedrijfspagina die 404 gaf, en de rest naar persoonlijke
-profielen. Alle 2.248 bestanden zijn omgezet, het artikelsjabloon mee,
-`CACHE_NAME` op v36. **Je cachebump-bewaker draaide daarbij groen mee** — hij
-is dus in het echt getest en doet wat hij moet doen.
+Vijf PR's. Kort, met het puntnummer erbij zodat je weet waar je moet kijken:
 
-**Wat er sinds 20 september op master is geland** (zodat je niet hoeft te
-graven): de artikelpagina's linken nu naar elkaar en het archief staat weer op
-één sjabloon, er is een ontwerpsysteem met tokens, een merklettertype
-(Schibsted Grotesk, zelf gehost), een feedbackformulier op `/feedback.html` met
-een eigen Supabase-tabel, en de 404 heeft navigatie en footer gekregen. Niets
-daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
+| PR | Punten | Wat |
+|---|---|---|
+| #11 | 47, 50, 51, 54, 55 | RSS-feeds, IndexNow, Discover-tag, nieuwssitemap, 30 categoriepagina's |
+| #12 | 46 | de nachtelijke beoordeling als GitHub Action |
+| #13 | 3 | koopjesfilter op de bron-URL + vijf missers op noindex |
+| #14 | 53.1, 60, 61 | Instagram-beeldkaarten en de welkomstreeks |
+| #15 | 59 | metered paywall — **staat open, wacht op jou** |
+
+De welkomstreeks draait sindsdien elke ochtend om 09:10. Resend is ingericht
+op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
 
 ---
 
@@ -174,6 +222,28 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   `backend/verberg-uitgesloten.js` zet de meta erop (idempotent) en
   `backend/generate-sitemap.js` slaat ze over. Sitemap: 3208 → 3183 URL's.
 
+  **Review door Erik, 2026-09-28 — twee fouten die ik zelf niet zag:**
+
+  1. `verberg-uitgesloten.js` testte op een *willekeurige* robots-meta.
+     PR #11 (punt 51) gaf het artikelsjabloon zelf een robots-regel met
+     `max-image-preview`, dus na die merge zag mijn script die staan en sloeg
+     hij de noindex over. **Twee PR's die los van elkaar gebouwd zijn en
+     elkaar pas bij de merge in de weg lopen.** Nu wordt specifiek op
+     `noindex` getest; twee robots-meta's naast elkaar zijn geldig en Google
+     combineert ze.
+  2. `generate-articles.js` hergenereert 2×/dag en haalde de noindex er
+     stilletjes weer af. Die honoreert nu de uitsluitlijst zelf. Ik was
+     ervan uitgegaan dat de vijf missers allemaal gearchiveerd waren — dat
+     was toevallig zo, maar het is geen garantie.
+
+  Erik liet daarnaast de **nieuwssitemap** de lijst honoreren: een artikel met
+  noindex dat tegelijk bij Google News wordt aangemeld is een tegenstrijdig
+  signaal.
+
+  **Nagetrokken 2026-09-28:** 25 pagina's op noindex, 0 zonder; 0 uitgesloten
+  artikelen in `sitemap.xml` én `news-sitemap.xml`; `generate-articles.js`
+  opnieuw gedraaid en de noindex bleef staan.
+
   **Wat bewust niet is gebeurd:** een nieuw uitsluitingslabel in
   `backend/selectie-prompt.md`. De afwijslijst noemt kortingsacties al
   (regel 52), en een nieuw label verandert de prompt-hash — dan krijgt élk
@@ -216,6 +286,25 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   768px. *(Maarten)*
 
 - [ ] **26. Anthropic: auto-reload aanzetten en key-eigendom beslissen.**
+
+  > 🚨 **STORING SINDS 2026-10-03 — het tegoed is opnieuw op.** Ontdekt op
+  > 2026-10-14, na elf dagen. Elke nieuws-run faalt: `aiCalls 0`,
+  > `geaccepteerd 0`, en het nieuwste artikel op de site is van **2 oktober**.
+  > De nachtelijke beoordeling faalt elke nacht met *"Your credit balance is
+  > too low"*, en de postfabriek schrijft geen nieuwe concepten meer. Dat is
+  > precies de storing van 10–13 september, maar dan vier keer zo lang.
+  >
+  > **Het alarm werkte wél** (alle runs staan rood), maar GitHub mailt een
+  > mislukte geplande workflow alleen naar wie de planning het laatst wijzigde,
+  > en niemand zag het. Een rood kruisje dat niemand ziet is geen alarm.
+  >
+  > **Snelste herstel:** wie bij de console kan waar de sleutel aan hangt,
+  > laadt tegoed bij en zet auto-reload aan; daarna de nieuws-Action handmatig
+  > draaien. De sleutel staat op Eriks account. Alternatief zonder Erik: Maarten
+  > maakt een eigen organisatie in `console.anthropic.com`, zet er een
+  > betaalmethode met auto-reload op, maakt een nieuwe sleutel en zet die als
+  > GitHub-secret `ANTHROPIC_API_KEY`. Daarmee is meteen onderdeel (b) van dit
+  > punt beslist.
   De storing van 10–13 september was een lege kredietbalans; de key blijkt op
   Eriks account te staan (Maartens console heeft geen organisatie). Erik:
   (a) zet auto-reload aan in console.anthropic.com → Billing, en (b) beslis
@@ -1082,8 +1171,8 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   premiumlezer), en de profielregel bij zowel een gratis als een premium
   account. *(Erik: de SQL is de helft die nog een paar ogen verdient.)*
 
-- [ ] **60. Een welkomstreeks na registratie — gebouwd, wacht op twee
-  handelingen van Maarten (2026-09-28).** *(Besluit Maarten 2026-09-27: doen.)*
+- [x] **60. Een welkomstreeks na registratie — draait live (2026-09-28).**
+  *(Besluit Maarten 2026-09-27: doen.)*
 
   **Review + droogloop geslaagd (Erik, 2026-09-28 avond):** de Supabase-kant
   staat live (tabellen dicht voor anon — geverifieerd; `meld_af` lekt niets en
@@ -1130,6 +1219,28 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
      op afgemeld zetten. Hij geeft niets terug waaruit je kunt afleiden of een
      token bestaat, dus je kunt er geen accounts mee aftasten.
 
+  ### ✅ Live sinds 2026-09-28, 21:21
+
+  Resend staat op `brightnews.online` in de EU-regio (Ireland). De DNS bij
+  **Strato** kostte de meeste tijd; voor de volgende keer, want dit komt terug:
+
+  - Resend vroeg **geen MX-record** ("Enable Receiving" staat uit), alleen één
+    TXT en twee CNAME's. De mailbox `info@brightnews.online` hoefde dus niet
+    te worden aangeraakt — en dat is maar goed ook, want die draait op
+    Strato's eigen MX (`smtp.rzone.de`).
+  - Strato plakt het domein zelf achter het **voorvoegsel**. Dus
+    `resend._domainkey`, niet `resend._domainkey.brightnews.online`.
+  - De DKIM-sleutel staat in Resend **afgekapt** op het scherm, met een
+    letterlijke `[...]` in het midden. Alleen de kopieerknop geeft de
+    volledige 218 tekens. Overtypen werkt gegarandeerd niet.
+  - Strato's `STRATO SPF-regel` en `STRATO DMARC` blijven staan zoals ze
+    stonden. Resend regelt SPF via de `send`-CNAME; zet je de Strato-SPF uit,
+    dan breek je de gewone mail.
+
+  **Uitkomst:** `📬 5 verstuurd, 0 overgeslagen, 0 mislukt` — en de mail kwam
+  in de **inbox** terecht, niet in de spam. Bij een domein van een uur oud is
+  dat niet vanzelfsprekend.
+
   **Wat jij nog moet doen, Maarten — en dit vraagt geen Erik:**
 
   1. **De SQL draaien.** Supabase → SQL Editor → inhoud van
@@ -1157,7 +1268,7 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   plakken en de verzenddienst is een DNS-instelling plus een secret — allebei
   dingen die Maarten zelf heeft.)*
 
-- [ ] **61. Levenscyclusmails — blijkt géén code te vragen (2026-09-28).**
+- [x] **61. Levenscyclusmails — ingesteld in Stripe (2026-10-06).**
   *(Besluit Maarten 2026-09-27: doen.)*
 
   Dit punt stond op "Erik: het raakt Stripe en Supabase". **Nagekeken, en dat
@@ -1171,12 +1282,327 @@ daarvan raakt de backend, de pipeline of de betalingen — dat blijft jouw kant.
   | **Proefperiode loopt af** | dezelfde pagina | "Send trial ending notifications" — Stripe mailt 7 dagen vooraf. Bij 30 dagen proef is dat precies waar het moet |
   | **Iemand zegt op** | Settings → Billing → Customer portal → Cancellations | "Ask for a cancellation reason" aan. De antwoorden komen in Stripe zelf te staan |
 
+  ### Stand 2026-10-06 — grotendeels ingesteld, drie dingen nog te bevestigen
+
+  Maarten heeft het dashboard doorgelopen. **Gecontroleerd op screenshots:**
+
+  - *Revenue recovery → Emails*: mail bij mislukte kaartbetaling aan, met een
+    Stripe-pagina om de kaart te vervangen. Mail bij verlopende kaarten aan.
+  - *Revenue recovery → Retries*: voor kaarten staat een retrybeleid. Na een
+    mislukte verlenging blijft het abonnement *overdue* (de klant houdt toegang
+    zolang Stripe het opnieuw probeert). Als alle pogingen mislukken: **cancel
+    the subscription**. Dat is bewust zo gekozen, want de webhook leidt
+    `is_premium` af uit de status, en een abonnement dat eeuwig onbetaald
+    openstaat geeft een halve toestand.
+  - *Customer portal → Cancellations*: opzeggen kan, **aan het einde van de
+    betaalperiode**, de opzegreden wordt gevraagd en er is bewust **geen**
+    retention coupon. Eerst wil je weten waarom mensen weggaan.
+
+  **Nog niet bevestigd:**
+
+  1. Bij *Expiring cards email* stond **"Use custom link: BrightNews.online"**.
+     Daarmee komt een klant op de homepage, waar hij niets kan bijwerken, en
+     zonder `https://` is het niet eens een geldige link. Dat moet **Link to a
+     Stripe hosted page** worden.
+  2. De **herinnering 7 dagen voor het einde van de proefperiode** staat niet
+     onder Revenue recovery maar onder *Settings → Billing → Subscriptions and
+     emails* (`dashboard.stripe.com/settings/billing/automatic`).
+  3. **Welke betaalmethodes er op de Payment Links staan.** *Local payment
+     methods* heeft geen retries, en de mail bij een mislukte *bank debit*
+     staat uit. Bij alleen kaarten is dat irrelevant. Staat iDEAL of SEPA aan,
+     dan moeten beide aan, want elke vervolgbetaling na een iDEAL-start is een
+     SEPA-incasso. In de code wordt iDEAL nergens genoemd; dat regel je in
+     Stripe zelf.
+
+  ### ✅ Afgerond 2026-10-06
+
+  De drie open checks hierboven zijn opgelost. De link bij verlopende kaarten
+  gaat naar een Stripe-pagina, de mail bij een mislukte *bank debit* staat
+  aan, en de herinnering 7 dagen vóór het einde van de proefperiode staat aan.
+
+  **Dezelfde homepage-link zat op een tweede plek**: op *Subscriptions and
+  emails* stond *Payment method updates* op "Use a mix of both (Legacy)", en
+  daarmee wees de trial-herinnering naar `BrightNews.online`. Die staat nu op
+  een Stripe-pagina. Ook staat *"Include a link for customers to manage their
+  subscriptions"* aan, zodat in elke mail een opzeglink staat. Dat scheelt
+  terugboekingen van mensen die niet weten hoe ze moeten opzeggen.
+
+  De proefperiode en de betaalmethodes op de Payment Links zijn door Maarten
+  nagelopen, maar niet op een screenshot bekeken. De producten zelf tonen
+  "No trials"; dat klopt, want de trial staat op de Payment Link en niet op
+  het product. Het echte bewijs volgt bij punt 31, als de keten één keer in
+  het echt wordt doorlopen.
+
   **Dit is dus een kwartiertje in het dashboard, Maarten, en het is van jou.**
   Ik kan het niet voor je doen: ik klik niet in je Stripe-account.
 
   Wat hierna nog open zou staan is een eigen mail met BrightNews-opmaak in
   plaats van Stripe's standaardmail. Dat is een luxe-versie van iets wat dan al
   werkt, en het kan later mee met de verzenddienst uit punt 60 — niet nu.
+
+- [x] **64. De site loopt niet helemaal goed op iPhone in Safari — drie fixes, daarna niets meer gevonden (2026-10-06).**
+  *(Gemeld door Maarten, 2026-09-28.)*
+
+  Maarten ziet op zijn iPhone dat de weergave niet klopt. **Wat er precies
+  misgaat staat hier nog niet** — dat is het eerste dat erbij moet, want de
+  verdachten hieronder geven verschillende symptomen en de juiste diagnose
+  scheelt een halve dag gokken.
+
+  **Zeg er dus bij: welke pagina, staand of liggend, en wát er misgaat** —
+  loopt er iets over de rand, zit er een strook wit onderaan, springt de
+  navigatiebalk bij het scrollen, of zoomt het scherm in als je een veld
+  aantikt?
+
+  ### Vijf verdachten, gevonden door de CSS na te lopen (2026-09-28)
+
+  1. **`min-height: 100vh` staat op zes plekken** (`components.css` 284 en
+     891, `pages/index.css` 14, `pages/profiel.css` 5 en 173). Dit is dé
+     klassieke iOS-Safari-bug: `100vh` is daar de hoogte **zonder** de
+     adresbalk, dus een vol-scherm-blok is altijd een stuk hoger dan wat je
+     ziet. Gevolg: een extra scroll van 60–100px en inhoud die onder de
+     onderbalk verdwijnt. Oplossing is `100dvh` met `100vh` als terugval —
+     `dvh` wordt nergens in de codebase gebruikt.
+  2. **`backdrop-filter: blur()` op drie plekken** (`pages/artikel.css` 38 en
+     350, `pages/profiel.css` 191). Op iOS is dat duur, en in combinatie met
+     `position: fixed` geeft het flikkering bij het scrollen.
+  3. **De vaste navigatiebalk.** `position: fixed` en `sticky` staan door
+     elkaar in `global.css` en `components.css`. Op iOS verschuift de
+     viewport wanneer de adresbalk in- en uitklapt, en dat is precies het
+     moment waarop een vaste balk lijkt te springen.
+  4. **`env(safe-area-inset-bottom)` wordt maar één keer gebruikt**, in de
+     cookiebalk (`components.css` 1146). Alle ándere vaste elementen — het
+     deelmenu, de modals op `profiel.html` — houden geen rekening met de
+     homebar van een iPhone zonder thuisknop.
+  5. **Invoervelden onder 16px.** iOS zoomt automatisch in zodra je een veld
+     aantikt dat kleiner is dan 16px, en zoomt daarna niet terug. De
+     inlogvelden gebruiken `--text-md` (precies 16px, dus goed), maar
+     `--text-base` is 15,2px en `--text-sm` 13,6px. Elk veld met die tokens
+     is verdacht.
+
+  ### ✅ Twee van de vijf gerepareerd (2026-10-02)
+
+  **Verdachte 1 — `100vh`.** Onder elk van de acht échte `100vh`-regels
+  (`components.css` ×2, `pages/index.css`, `pages/profiel.css` ×2, en inline
+  in `index.html`, `binnenkort.html` en `thanks.html`) staat nu een
+  `100dvh`-tweeling. Een browser die `dvh` niet kent negeert die regel en
+  houdt `vh`, dus er kan niets achteruitgaan. Gemeten op 375×812: `dvh`
+  ondersteund, toegepast op het parkeerbericht, `body` en het artikelraster,
+  minimumhoogte exact de schermhoogte, geen horizontale scroll.
+
+  **Verdachte 5 — invoervelden onder 16px.** Eerst gemeten in plaats van
+  aangenomen: de zeven velden op `profiel.html` zaten al op precies 16px.
+  **De twee op `feedback.html` niet** — het tekstvak op 14,72px en het
+  e-mailveld op 13,12px. Die erfden hun grootte via `font: inherit`. Nu
+  `font-size: max(16px, 1em)`; daarna alle negen velden op 16px. Plus een
+  vangnet in `global.css` voor toekomstige velden, met lage specificiteit
+  zodat het niets aan bestaande velden verandert.
+
+  `CACHE_NAME` → v38 (`global.css`, `components.css` en `index.html` staan in
+  de precache).
+
+  **Verdachte 2 — `backdrop-filter` (2026-10-06).** Stond op vier plekken
+  zónder `-webkit-backdrop-filter`. Safari kent de versie zonder voorvoegsel
+  pas sinds iOS 18; op oudere iPhones werd het wazige glasvlak dus niet
+  getekend. Nu staat de `-webkit-`-variant ernaast in `pages/artikel.css`
+  (×2), `pages/profiel.css` en de verwijdermodal in `profiel.html`. Geen van
+  die bestanden staat in de precache, dus geen bump.
+
+  **Maarten heeft daarna op telefoon én Mac Mini getest, in Chrome én Safari,
+  en niets meer gevonden.** Wat hij op 28 september zag is niet meer terug te
+  halen; het kan zijn dat de fixes van 2 oktober het al oplosten. Dat
+  verklaart ook waarom het `backdrop-filter`-gat op zijn toestel niet
+  opviel: dat heeft een recente iOS-versie.
+
+  **Niet aangepakt, bewust:** verdachte 3 (de vaste navigatiebalk) en 4
+  (`safe-area-inset`). Zonder symptoom is dat gokken, en de viewport-meta
+  heeft geen `viewport-fit=cover`, dus `env(safe-area-inset-*)` is overal
+  0 en Safari houdt zelf de homebar vrij. **Komt er weer iets boven, heropen
+  dit punt met de pagina en wat er misgaat.**
+
+  ### Waarom dit vóór de lancering moet
+
+  Het grootste deel van je publiek komt via een telefoon binnen, en op een
+  positief-nieuwssite is de eerste indruk het product. Een pagina die
+  onderaan een lege strook heeft of waar de balk bij elke scroll verspringt,
+  leest als slordig — ook als de inhoud goed is.
+
+  Bovendien is de meting elders al gedaan: punt 41 stelde vast dat de site
+  nergens overloopt, óók niet op 320px. Maar dat is gemeten in een
+  bureaublad-browser op smal formaat, en **dat is niet hetzelfde als iOS
+  Safari** — precies de aanname die dit punt onderuithaalt.
+
+  *(Maarten meldt wat hij ziet; ik doe de diagnose en de fix. Puur visueel,
+  dus geen PR nodig — wel testen op het echte toestel, want een
+  bureaublad-browser op telefoonformaat bootst deze bugs niet na.)*
+
+- [ ] **66. Redesign v3: ontwerpbesluiten en wat er technisch van klopt.**
+  *(Maarten, 2026-10-29. Bron: Figma "UI Kit — BrightNews.online", pagina
+  "Webdesign", frame "v3 · Besluiten". v1 valt af, v3 bouwt voort op v2.
+  **Volgende stap: v4, eerst alleen desktop, ontworpen binnen de grenzen
+  hieronder.**)*
+
+  Per besluit staat erbij of het zo gebouwd kan worden. **Drie besluiten
+  botsen met de werkelijkheid** (de edities, de anonieme gratis artikelen en
+  de foto-regel); die moeten opnieuw bekeken worden vóór er gebouwd wordt.
+
+  ### Besloten — en kan zo
+
+  - **Eén groen: `#186F49`** vervangt `#32CD32`. Wit op het oude groen haalt
+    maar 2,12:1, op het nieuwe 6,16:1. Geel `#FFC933` blijft merkaccent;
+    nooit wit op geel (1,54:1), donkere tekst mag (10,9:1). Success-meldingen
+    gebruiken dezelfde groenreeks. Dit vervangt het eerdere besluit "één
+    groen, `#32CD32`".
+    *Technisch: groter dan het lijkt.* `#32CD32` staat ook hard in de
+    `theme-color` van 14 rootpagina's en van **1.410 archiefpagina's**, in 3
+    CSS-bestanden, `manifest.json` (PWA), `js/beeldkaart.js`,
+    `backend/stuur-mails.js`, en in het logo zelf (`brightnews-logo.png`, het
+    woord "News") plus de favicons en PWA-iconen. Het archief vraagt een
+    eenmalig vervangscript, net als bij de footerlinks in september.
+  - **Categorieën = de zes uit de pijplijn.** Tech, Gezondheid, Wetenschap,
+    Lifestyle, Milieu, Financiën. *Technisch: dat zijn nu al precies de
+    Nederlandse labels*, dus er verandert niets. Wel een valkuil: de slug van
+    een categoriepagina wordt afgeleid van het label
+    (`generate-categorieen.js:59`, `generate-articles.js:139`). Wie ooit een
+    label aanpast, verandert ongemerkt 30 URL's. Advies: de slugs vastzetten
+    in een vaste tabel.
+  - **Tekst op foto:** token `--text-on-image` (altijd wit, ook in dark
+    mode) op vaste scrim-tokens. Geen bruikbare foto → merkbeeld. Kan zo.
+  - **Letters:** Bricolage Grotesque (koppen) en Figtree (tekst), zelf
+    gehost als woff2 met latin-ext. Beide OFL. Bricolage heeft drie
+    variabele assen en is groot; alleen de gewichtsas meenemen. Mails
+    vallen in de meeste mailprogramma's terug op een systeemletter.
+  - **Mobiel eerst:** elke nieuwe pagina eerst op 390 px.
+  - **Nieuwe pagina's:** Archief (`archief.html`), Thema-overzicht
+    (`themas/{taal}/index.html`), Zo kiezen we (`zo-kiezen-we.html`).
+    *Technisch:* het archief kan statisch uit `articles/manifest.json`,
+    maar dat bevat alleen titels, slugs en datums, **geen foto's of
+    samenvattingen**. Een archief met beelden vraagt een uitgebreider
+    manifest, en dat werkt alleen vooruit.
+
+  ### Besloten — maar botst met de data
+
+  - **Edities op 02:00 en 14:00, en de homepage is één editie.** Gemeten
+    over 64 runs (5 september t/m 2 oktober):
+    - **gemiddeld 3,7 artikelen per run**; 40 van de 64 runs leverden er 3
+      of minder op, 13 runs nul. Het ontwerp rekent met 14.
+    - de runs **starten uren te laat**: GitHub vertraagt geplande runs onder
+      drukte. De nachtrun begon 28× rond **06:00**, de middagrun tussen
+      **17:00 en 21:00**. Sinds 25 oktober (wintertijd) valt `0 0,12 * * *`
+      UTC bovendien op 01:00 en 13:00.
+    Een "dunne editie" is dus geen uitzondering maar de normale toestand, en
+    "02:00" of "14:00" op de site klopt vrijwel nooit. Opties: een editie
+    per **dag** (beide runs samen, gemiddeld ±7 verhalen), de **echte
+    bijwerktijd** tonen uit de data in plaats van een vaste tijd, of de
+    pijplijn meer laten opleveren (dat is een besluit over de
+    selectiedrempel, met Erik). *Technisch kan groeperen per run al:*
+    `artikel.date` is het moment van verwerken, niet de brondatum.
+  - **Foto-regel in de pijplijn** (beeld onder 800 px, logo of effen vlak →
+    geen foto). Breedte meten kan zonder nieuwe afhankelijkheid, door de
+    eerste bytes van het bestand te lezen. "Logo of effen vlak" herkennen
+    vraagt pixelanalyse, en daarmee een native bibliotheek als `sharp`, of
+    een benadering (`logo` in de URL, extreme verhouding). Backendwerk, dus
+    een PR langs Erik.
+
+  ### Voorstel — nog af te stemmen met backend
+
+  - **Metered paywall: anoniem 3 → gratis account 5 → Premium.** De stap
+    "anoniem 3" kan niet met de huidige opzet. De volledige tekst zit
+    server-side achter `lees_artikel()`, en zonder account is er niets om
+    een teller aan te hangen. Dat kan alleen met Supabase *anonymous
+    sign-ins*, en Supabase raadt daarbij een captcha aan tegen misbruik. Die
+    captcha is een extern script, en dat botst met de CSP-regel. Advies:
+    lanceren met het model uit PR #15 (anoniem → samenvatting met "maak een
+    gratis account", account → 5 per maand) en "anoniem 3" pas toevoegen als
+    blijkt dat die drempel lezers kost.
+
+  ### Wat het redesign echt kost
+
+  - Navigatie en footer staan los gekopieerd in 13 pagina's, het
+    artikelsjabloon en drie generators. **Eerst een klein script bouwen dat
+    ze vanuit één bron in alle pagina's zet**, anders wordt elke
+    v3-aanpassing vijftien keer hetzelfde werk.
+  - Het archief (3.470 pagina's) heeft één uniforme opbouw (steekproef:
+    `detail-container`, `detail-header`, `article-body`). Een re-skin met
+    alleen CSS komt er dus vanzelf aan. Verandert de HTML van het artikel,
+    dan is een migratiescript nodig, want regenereren uit data kan niet: het
+    manifest heeft geen samenvattingen of beelden.
+  - `CACHE_NAME` bumpen, en alle nieuwe teksten in vijf talen.
+  - **Eerst moet het nieuws weer draaien** (punt 26). Zonder nieuwe
+    artikelen is het editiemodel niet met echte data te testen.
+
+  ### Donkere modus
+
+  **Besluit Maarten (2026-10-29):** standaard het systeem volgen; gebruikers
+  kunnen het aanpassen in de instellingen van de site. Die instellingen moeten
+  dus ook zonder account bereikbaar zijn (zie hieronder), en mogen geen pop-up
+  zijn. Ontwerp volgt in v4.
+
+  Oorspronkelijk advies, staat nog:
+  - **Standaard het systeem volgen** (`prefers-color-scheme`). Dan hoeft de
+    meeste mensen nooit iets in te stellen.
+  - **Een keuze Systeem / Licht / Donker in hetzelfde menu als de taal**, zodat
+    óók bezoekers zonder account erbij kunnen. Opslaan in de browser; voor
+    ingelogde lezers later eventueel ook in het profiel.
+  - **Niet vragen bij het registreren**: dat is een extra stap in de
+    belangrijkste conversiestap, en de meeste bezoekers registreren nooit.
+    Alleen in de accountinstellingen zetten heeft hetzelfde probleem.
+  - Een klein script in de `<head>` zet het thema vóór de eerste weergave,
+    zodat het scherm niet eerst wit flitst (de CSP staat inline scripts
+    toe). Mails en Instagram-kaarten blijven licht.
+  - **Volgorde:** de tokens meteen in v3 meenemen (goedkoop), de donkere
+    modus zelf pas na de lancering. Dat verdubbelt anders het testwerk op
+    elke pagina.
+
+  ### v4 nagelopen (2026-10-29) — op naar v5
+
+  v4 (alleen desktop) is grotendeels te bouwen. Gemeten in de data:
+  - **De feed beslaat 17 dagen** (149 artikelen), het archief 28 dagen
+    (694 artikelen sinds 1 september). Vandaag én gisteren zijn er dus altijd.
+  - **Een dagoverzicht is er op 16 van de 17 dagen**, maar het wordt aan het
+    eind van de dag gemaakt (meestal rond 20:00) of de volgende ochtend.
+    Overdag is het nieuwste overzicht dus dat van gisteren.
+  - **Het dagoverzicht heeft `refs`** (id en titel van elk artikel erin). Die
+    id's zijn terug te vinden in de feed, dus kop, categorie, samenvatting,
+    bron en link per verhaal zijn wél te tonen. Een fotobijschrift bestaat
+    niet.
+  - **Het archief kent van oudere dagen alleen titels, slugs en datums**
+    (`articles/manifest.json`). *Gecorrigeerd 2026-10-29:* de git-geschiedenis
+    van `data/news_nl.json` (231 versies sinds februari) bevat wél categorie,
+    foto en samenvatting. In een steekproef (elke 6e versie) waren 581 van de
+    694 artikelen terug te vinden. Een eenmalig script kan het manifest
+    daarmee aanvullen; daarna schrijft `generate-articles.js` die velden zelf
+    weg. De oude artikelpagina's zelf helpen niet: maar 207 van de 694 linken
+    naar hun categorie.
+
+  Besluiten van Maarten voor v5: altijd de editie van vandaag **en**
+  gisteren tonen, geen bron en tijd op de fotokaarten van de homepage, het
+  dagoverzicht groot bovenaan, en eerdere edities via het archief.
+
+  ### v5 nagelopen (2026-10-29)
+
+  Grotendeels te bouwen. **Eén aanname in het ontwerp klopt niet:** het
+  dagoverzicht gaat altijd over **gisteren** (26 van de 26), en wordt pas de
+  dag erna gemaakt, rond 06:00 of rond 20:00. Tot dat moment is het nieuwste
+  overzicht dat van eergisteren. Nodig:
+  - **ontwerp:** het blok "Gisteren" in twee staten (compact als het
+    overzicht van gisteren er al is, met foto's als dat niet zo is), en het
+    label boven het overzicht naar zijn eigen `digest_date`;
+  - **backend (Erik):** het overzicht van gisteren altijd in de eerste run
+    van de dag maken, en dubbele overzichten voor één dag weggooien (29 en
+    30 september hebben er elk twee).
+
+  Verder open in Figma: Thema van de week / Thema-overzicht, de
+  categoriepagina met de oude chips, de knop "Lees het origineel" die buiten
+  het artikelframe valt, en de eindtekst "Morgenochtend…" (er komt 's middags
+  nog een run, dus neutraler formuleren).
+
+  ### Opruimen in Figma als v3 gekozen is
+
+  - Variabelecollectie Brand: modus "v1 Editorial" (Newsreader) verwijderen,
+    "v2 Modern" als enige houden.
+  - Foundations-documentatie (01.4 Colour, 01.5 Typography) bijwerken; de
+    hexcodes daar zijn losse tekst.
+  - De donkere v2 op de foto-kaarten repareren met `--text-on-image`.
 
 - [ ] **41. Lagere prioriteit uit de UI-doorlichting — nog één over.**
   *(2026-09-23; vier van de vijf afgewerkt op 2026-09-24.)*

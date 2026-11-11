@@ -15,6 +15,16 @@
     <link rel="icon" type="image/png" href="/assets/brightnews-logo-faviconv5.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Zonder deze regel mag Google alleen een miniatuur tonen, en een
+         Discover-kaart is juist een grote beeldkaart (punt 51). Bewust
+         alleen vooruit: het archief wordt niet opnieuw gegenereerd,
+         want Discover toont vrijwel alleen vers nieuws. -->
+    <meta name="robots" content="max-image-preview:large">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (English)" href="/feed-en.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Nederlands)" href="/feed-nl.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Deutsch)" href="/feed-de.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Français)" href="/feed-fr.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Español)" href="/feed-es.xml">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://www.googletagmanager.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
     <meta name="description" content="How a chatterbox found silence on a device-free retreat near Eastbourne, between the Seven Sisters cliffs.">
     <title>Self-confessed chatterbox finds peace on silent retreat in Eastbourne | BrightNews</title>
@@ -35,6 +45,7 @@
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/components.css">
     <link rel="stylesheet" href="/css/pages/artikel.css">
+    <link rel="stylesheet" href="/css/pages/categorie.css">
     <meta name="theme-color" content="var(--bright-green)">
     <script src="/js/vendor/supabase-js-2.112.4.js" defer></script>
     <script src="/js/supabase-init.js" defer></script>
@@ -163,6 +174,7 @@
                     <li><a href="/articles/en/health-news-this-week-fairer-diagnoses-space-for-grief-and-a-disease-that-disapp-dg-20260915-health.html">Health news this week: fairer diagnoses, space for grief, and a disease that disappears</a></li>
                     <li><a href="/articles/en/ten-buildings-that-merge-with-nature-1789586786470nofcj4hhu.html">Ten buildings that merge with nature</a></li>
             </ul>
+            <p class="meer-categorie"><a href="/categories/en/lifestyle.html">Good news about Lifestyle</a></p>
         </div>
     </nav>
 </main>

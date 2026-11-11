@@ -425,3 +425,29 @@ zinsstijl, geen titelhoofdlettergebruik. `meta_description` en
 zelfstandig naamwoord, geen eigennaam), de eigennamen blijven ongewijzigd.
 De lopende tekst leest natuurlijk en gebruikt consequent Brits Engels
 ("programme" in plaats van "program"), passend bij het Britse onderwerp.
+
+### 2026-09-29, Duits
+
+**Artikel:** New York City haalt 131 miljoen dollar op bij DoorDash voor bezorgers
+**Oordeel:** niets aangetroffen.
+
+De eigennamen (New York City Department of Consumer and Worker Protection, DCWP, DoorDash) blijven onvertaald, alle bedragen en aantallen komen overeen met het Nederlands, en de titelstijl volgt de normale Duitse hoofdlettterregels voor zelfstandige naamwoorden zonder verder woord met hoofdletter te beginnen. Kop en tekst spreken elkaar niet tegen en de vertaling loopt natuurlijk.
+
+### 2026-09-30, Frans
+
+**Artikel:** Asháninka-gemeenschap voorkomt bosbranden in Peru
+**Oordeel:** geen problemen aangetroffen.
+
+De titel gebruikt gewone zinsstijl, de eigennamen (Central Asháninka of the Ene River, CARE, Cool Earth, Romer Quentimari Garcia) blijven onvertaald, en er zijn geen toegevoegde feiten of ontbrekende elementen te zien in het beschikbare fragment. De tekst loopt natuurlijk en de kop dekt het verhaal.
+
+### 2026-10-01, Spaans
+
+**Artikel:** Chris Evans helpt hondenduo Greg en Carley aan nieuw baasje
+**Oordeel:** niets aangetroffen, vertaling is correct en loopt natuurlijk.
+
+### 2026-10-02, Engels
+
+**Artikel:** Social innovator Ken Banks: listening makes better leaders
+**Oordeel:** niets aangetroffen.
+
+De vertaling volgt het Nederlands nauwkeurig: geen toegevoegde feiten, eigennamen blijven staan, titelstijl is correcte Engelse zinsstijl, en de tekst loopt natuurlijk.

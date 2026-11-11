@@ -15,6 +15,16 @@
     <link rel="icon" type="image/png" href="/assets/brightnews-logo-faviconv5.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Zonder deze regel mag Google alleen een miniatuur tonen, en een
+         Discover-kaart is juist een grote beeldkaart (punt 51). Bewust
+         alleen vooruit: het archief wordt niet opnieuw gegenereerd,
+         want Discover toont vrijwel alleen vers nieuws. -->
+    <meta name="robots" content="max-image-preview:large">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (English)" href="/feed-en.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Nederlands)" href="/feed-nl.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Deutsch)" href="/feed-de.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Français)" href="/feed-fr.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Español)" href="/feed-es.xml">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://www.googletagmanager.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
     <meta name="description" content="How archaeologists rescued 30,000 treasures from Deir ez-Zor Museum before ISIS during the Syrian civil war.">
     <title>Archaeologists rescue 30,000 treasures from Deir ez-Zor Museum before ISIS | BrightNews</title>
@@ -35,6 +45,7 @@
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/components.css">
     <link rel="stylesheet" href="/css/pages/artikel.css">
+    <link rel="stylesheet" href="/css/pages/categorie.css">
     <meta name="theme-color" content="var(--bright-green)">
     <script src="/js/vendor/supabase-js-2.112.4.js" defer></script>
     <script src="/js/supabase-init.js" defer></script>
@@ -157,10 +168,13 @@
                  Nederlandse links. -->
             <ul>
                     <li><a href="/articles/en/researchers-find-scents-that-keep-honeybees-away-from-pesticides-1790568906594wygath1u8.html">Researchers Find Scents That Keep Honeybees Away From Pesticides</a></li>
-                    <li><a href="/articles/en/new-wild-cat-species-tilcayo-discovered-in-bolivia-1790269232376v06i1r5ae.html">New wild cat species tilcayo discovered in Bolivia</a></li>
+                    <li><a href="/articles/en/clay-tablet-with-world-s-oldest-peace-treaty-discovered-17906235003386r8mn1zox.html">Clay tablet with world&#39;s oldest peace treaty discovered</a></li>
+                    <li><a href="/articles/en/ethical-fashion-brand-yes-friends-secures-investment-from-deborah-meaden-1790623414220uasnkeihr.html">Ethical fashion brand Yes Friends secures investment from Deborah Meaden</a></li>
+                    <li><a href="/articles/en/french-farmers-grow-papayas-and-bananas-thanks-to-warming-1790623443776l2h758pev.html">French farmers grow papayas and bananas thanks to warming</a></li>
                     <li><a href="/articles/en/new-york-city-recovers-131-million-from-doordash-for-delivery-workers-1790526952732zu9t81thr.html">New York City recovers $131 million from DoorDash for delivery workers</a></li>
                     <li><a href="/articles/en/books-a-billion-dollars-and-second-chances-the-good-news-of-these-days-dg-20260926-lifestyle.html">Books, a billion dollars and second chances: the good news of these days</a></li>
             </ul>
+            <p class="meer-categorie"><a href="/categories/en/science.html">Good news about Science</a></p>
         </div>
     </nav>
 </main>
