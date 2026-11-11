@@ -482,6 +482,22 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   "vraag het via Contact" of per mail. Wordt die functie gebouwd (TODO 66
   punt 10), pas dan `v5_pv_kort4`, `v5_pv_s7_p` en `v5_av_s3_p` aan.
 
+- [ ] **76. Resend: de API-sleutel kleiner maken en het account op een blijvend adres.**
+  *(Maarten, 2026-11-12)* Resend blijft nodig: het verstuurt de drie
+  welkomstmails (`welkomstreeks.yml`, secret `RESEND_API_KEY`). Het gratis
+  plan is genoeg (100 per dag ≈ 33 aanmeldingen; een mail die op de limiet
+  stuit, wordt de volgende dag opnieuw geprobeerd). Twee dingen wel:
+  1. **De sleutel "Brightnews" heeft Full access** (alle domeinen, ook
+     instellingen wijzigen). Maak een nieuwe sleutel met **Sending access**,
+     alleen voor `brightnews.online`, zet die als `RESEND_API_KEY` in GitHub
+     (Settings → Secrets and variables → Actions → potloodje), draai
+     `welkomstreeks.yml` één keer handmatig, en verwijder daarna de oude
+     sleutel in Resend.
+  2. **Het account staat op een studentenadres** (team "pxl", factuuradres
+     en land UK). Verloopt dat adres na je studie, dan kom je er niet meer
+     in. Voeg info@brightnews.online of een eigen adres toe onder Settings →
+     Team en zet het factuuradres goed.
+
 - [x] **1. De twee open pull requests vlottrekken.** ✅ 2026-09-16 (Fable-review): #5 gemerged + og:image-absoluutfix erachteraan; #1 lokaal gemerged (bronwerk integraal overgenomen, sw-conflict → v23) en pagina's geregenereerd. Oorspronkelijke tekst: Allebei hebben ze
   merge-conflicten (`mergeable=CONFLICTING`) en lopen achter op master:
   [#1](https://github.com/MaartenDeKlerkPXL/Brightnews.online/pull/1)
