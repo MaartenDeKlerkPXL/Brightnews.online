@@ -108,8 +108,7 @@ async function haalArtikelTekst(pageUrl, maxLen = 1200) {
             .replace(/<header[\s\S]*?<\/header>/gi, ' ')
             .replace(/<nav[\s\S]*?<\/nav>/gi, ' ')
             .replace(/<footer[\s\S]*?<\/footer>/gi, ' ')
-            .replace(/<aside[\s\S]*?<\/aside>/gi, ' ')
-            .replace(/<form[\s\S]*?<\/form>/gi, ' ');
+            .replace(/<aside[\s\S]*?<\/aside>/gi, ' ');
 
         // Staat er een <article> of <main>, kijk dan alléén daarin: daar
         // staan promotieblokken en "lees ook"-lijsten per definitie buiten.
@@ -132,12 +131,24 @@ async function haalArtikelTekst(pageUrl, maxLen = 1200) {
                 if (massa > besteMassa) { besteMassa = massa; beste = m[1]; }
             }
         }
-        if (beste && besteMassa >= 400) html = beste;
+        // <form> pas weghalen als er geen artikelblok is: een <form> om de
+        // hele pagina (ASP.NET) zou anders alles wissen. Een
+        // nieuwsbriefformulier in het artikel vangt SCHIL hieronder alsnog.
+        // <header> gaat wél altijd weg, ook binnen <article>: NPR zet daar
+        // podcastreclame in. Een openingsalinea in een <header> kost dat soms.
+        if (beste && besteMassa >= 400) {
+            html = beste;
+        } else {
+            html = html.replace(/<form[\s\S]*?<\/form>/gi, ' ');
+        }
 
         // Zinnen die nooit uit een artikel komen. Eén regel is genoeg om een
         // hele "alinea" te diskwalificeren, want als dit erin staat is het
         // een promo- of navigatieblok dat per ongeluk in een <p> zit.
-        const SCHIL = /skip to (content|main)|subscribe today|sign up for|newsletter|keyboard shortcuts|accessibility links|cookie|privacy policy|all rights reserved|©\s*\d{4}/i;
+        // Bewust geen losse "cookie", "newsletter" of "sign up for": die staan
+        // ook in gewone goednieuwsverhalen (vrijwilligers die zich aanmelden,
+        // een bakkerij).
+        const SCHIL = /skip to (content|main)|subscribe today|(sign up for|subscribe to) (our|the) [^.]{0,40}newsletter|newsletter sign.?up|keyboard shortcuts|accessibility links|we use cookies|cookie (policy|settings|preferences)|privacy policy|all rights reserved|©\s*\d{4}/i;
         const lijktCode = t => /[{};]|window\.|document\.|function\s*\(/.test(t);
         const alineas = [];
         for (const m of html.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/gi)) {
