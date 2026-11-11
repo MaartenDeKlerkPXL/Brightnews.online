@@ -29,6 +29,7 @@ create or replace function public.gratis_artikelen_per_maand()
 returns integer
 language sql
 immutable
+set search_path = public, pg_temp
 as $$ select 5 $$;
 
 -- Welke artikelen iemand deze maand al opende. (uid, artikel_id, maand) is de
@@ -84,6 +85,11 @@ begin
     if coalesce(v_premium, false) then
         return jsonb_build_object('status', 'premium', 'tekst', v_tekst);
     end if;
+
+    -- Eén aanroep tegelijk per lezer, tot het einde van de transactie. Anders
+    -- lezen twee tabbladen die tegelijk een ander artikel openen allebei
+    -- "4 van 5 gebruikt" en krijgen ze allebei de tekst (2026-11-12).
+    perform pg_advisory_xact_lock(hashtext(v_uid::text));
 
     -- Dit artikel deze maand al geopend? Dan gewoon opnieuw geven.
     select exists (
