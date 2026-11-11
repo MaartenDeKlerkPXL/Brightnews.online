@@ -28,9 +28,8 @@ via een PR. Laat die PR eerst nakijken door een review-agent
    te lanceren.
 2. **Beveiligingscontrole** (TODO 67, zeer hoge prioriteit), plus wat de
    eerste ronde op 3 november opleverde:
-   - **Inlogmails via Resend** in plaats van de mailserver van Supabase, die
-     er maar 2 per uur verstuurt (TODO 68). Zonder dit kan na de lancering
-     bijna niemand inloggen.
+   - **Inlogmails:** de eigen SMTP via Strato staat al aan. Alleen de
+     limiet nakijken en één keer testen (TODO 68).
    - **Een alarm als het nieuws stilvalt**, en uitgavenalarmen bij
      Anthropic, Supabase en Resend (TODO 69).
    - **Back-ups:** Supabase Pro vlak voor de lancering (TODO 70).
@@ -99,9 +98,9 @@ via een PR. Laat die PR eerst nakijken door een review-agent
   Instagram-lijstjes mee in de skill; de eerste ronde staat al bij TODO 67.
 - ✅ Eerste ronde gedaan; wat eruit kwam staat in TODO 68 t/m 73.
 - **Meteen vandaag, het is klein werk met veel effect:**
-  - de SMTP van Supabase naar Resend zetten, de mail-limiet ophogen, en
-    inloglink en wachtwoord vergeten testen (TODO 68);
-  - kijken welk plan er bij Resend staat (TODO 68);
+  - de mail-limiet in Supabase nakijken en inloglink en wachtwoord vergeten
+    testen. De eigen SMTP via Strato staat al aan; laten staan (TODO 68);
+  - kijken welk plan er bij Resend staat, voor de welkomstreeks (TODO 68);
   - een melding bij laag tegoed in console.anthropic.com (TODO 69.2).
 - Een PR met de opruiming: `axios`, `nodemailer` en `pdfkit` weg,
   `npm audit fix`, en het SQL-bestand voor de Supabase-advisor (TODO 71 en 72).
@@ -214,9 +213,9 @@ maar alleen als ze niets aan de bestaande site veranderen.
 - **De jurist** hangt niet van jou af. Stuur de teksten dinsdag 3 november.
 - **Het Anthropic-tegoed:** zonder auto-reload stopt het nieuws opnieuw
   zonder dat iemand het merkt. Zet het meteen aan.
-- **De inlogmails** (TODO 68): als het SMTP-werk van 3 november blijft
-  liggen, merk je het pas op de lanceringsdag, wanneer lezers vanaf de
-  derde mail per uur geen inloglink meer krijgen.
+- **De inlogmails** (TODO 68): test ze vóór de lancering één keer echt. Een
+  mail in de spammap merk je anders pas als lezers klagen dat de inloglink
+  niet komt.
 
 ### Mag ná de lancering (beveiliging)
 

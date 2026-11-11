@@ -6,9 +6,8 @@
 > problemen opduiken. Staat bovenaan "Blokkeert de lancering".
 >
 > **Nieuw op 2026-11-03: punt 68 t/m 73**, uit een eerste ronde langs twee
-> controlelijstjes. Het belangrijkste: **punt 68**, de inlogmails van
-> Supabase (maximaal 2 per uur). Zonder die fix kan na de lancering bijna
-> niemand inloggen.
+> controlelijstjes. Punt 68 (inlogmails) bleek op 2026-11-11 een vals
+> alarm: er stond al een eigen SMTP via Strato. Alleen de limiet nakijken.
 
 > **Stand 2026-09-28, avond.** Vijf pull requests in één dag: #11 t/m #14 zijn
 > gemerged, #15 staat open. Daarmee zijn **punt 3, 46, 47, 50, 51, 53.1, 54
@@ -215,23 +214,22 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   op brightnews.online. Er staat niets geheims in, en de repo is toch al
   publiek.
 
-- [ ] **68. 🚨 De inlogmails van Supabase gaan nog via hun eigen
-  mailserver: maximaal 2 per uur.** *(Maarten, 2026-11-03)*
-  Volgens de overdracht (fase N, 5 september) is er nooit een eigen SMTP
-  ingesteld. Supabase stuurt via zijn standaardserver maar **2 auth-mails per
-  uur** voor het hele project. Bij de lancering loggen lezers in met een
-  inloglink. De derde lezer in hetzelfde uur krijgt dan geen mail, en ziet
-  geen foutmelding. **Dit blokkeert de lancering.**
-  Oplossing: Supabase → Authentication → Emails → SMTP Settings → Resend
-  (`smtp.resend.com`, poort 465, gebruiker `resend`, wachtwoord = een
-  Resend-API-sleutel, afzender `noreply@brightnews.online`). Het domein staat
-  al bij Resend (zie punt 60). Zet daarna de mail-limiet onder Rate Limits
-  op een redelijk getal (bijv. 30 per uur) en test inloglink, account maken
-  en wachtwoord vergeten.
-  **Let ook op de limiet van Resend zelf:** het gratis plan haalt 100 mails
-  per dag en 3.000 per maand. De welkomstreeks stuurt 5 mails per nieuwe
-  lezer, dus een drukke lanceringsdag zit daar snel aan. Kijk welk plan er
-  staat.
+- [ ] **68. De inlogmails van Supabase: limiet nakijken.**
+  *(Maarten, 2026-11-03, gecorrigeerd 2026-11-11)*
+  Op 3 november stond hier dat er geen eigen SMTP was en dat Supabase dus
+  maar 2 inlogmails per uur stuurt. **Dat klopte niet.** De overdracht (fase
+  N, 5 september) was verouderd. In Supabase staat sinds een eerdere datum
+  **custom SMTP aan via Strato**: `smtp.strato.com`, poort 465, afzender
+  `info@brightnews.online`. **Laten staan.**
+  Nog te doen:
+  1. Onder Authentication → Rate Limits de mail-limiet nakijken. Met eigen
+     SMTP staat die standaard op 30 per uur; voor de lancering is dat genoeg.
+  2. Eén keer een inloglink en een "wachtwoord vergeten" testen met een
+     wegwerpadres, en in de spammap kijken.
+  3. Overstappen naar Resend is niet nodig. Het kan later, als Strato een
+     verzendlimiet blijkt te hebben of mails in de spam belanden. Resend
+     verstuurt nu alleen de welkomstreeks (punt 60). Het gratis plan haalt
+     100 mails per dag: kijk welk plan er staat vóór de lancering.
 
 - [ ] **69. Een alarm als het nieuws stilvalt, en uitgavenalarmen.**
   *(Maarten, 2026-11-03)* Het nieuws lag van 2 oktober tot vandaag stil
