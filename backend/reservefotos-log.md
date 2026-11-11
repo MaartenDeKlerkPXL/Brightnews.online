@@ -100,3 +100,53 @@ Reservefoto's op 2026-09-29 — 150 artikelen op de homepage
 
 Totaal: 27 nodig, 43 beschikbaar.
 Geleend uit een andere categorie: 1 foto's. Dat valt nog niet op.
+
+### 2026-09-30
+
+Reservefoto's op 2026-09-30 — 149 artikelen op de homepage
+
+| Categorie | Beschikbaar | Nodig | Tekort |
+|---|---|---|---|
+| Environment | 10 | 11 | 1 |
+| Finance | 4 | 0 | — |
+| Health | 5 | 2 | — |
+| Lifestyle | 9 | 6 | — |
+| Science | 11 | 6 | — |
+| Tech | 4 | 0 | — |
+
+Totaal: 25 nodig, 43 beschikbaar.
+Geleend uit een andere categorie: 1 foto's. Dat valt nog niet op.
+
+### 2026-10-01
+
+Reservefoto's op 2026-10-01 — 150 artikelen op de homepage
+
+| Categorie | Beschikbaar | Nodig | Tekort |
+|---|---|---|---|
+| Environment | 10 | 12 | 2 |
+| Finance | 4 | 0 | — |
+| Health | 5 | 2 | — |
+| Lifestyle | 9 | 7 | — |
+| Science | 11 | 5 | — |
+| Tech | 4 | 0 | — |
+
+Totaal: 26 nodig, 43 beschikbaar.
+Geleend uit een andere categorie: 2 foto's. Knelt bij Environment (2).
+Aanvullen in `assets/fallback/` als `<categorie>-<nummer>.jpg`, en daarna het getal in `RESERVE_PER_CATEGORIE` in `index.js` mee ophogen.
+
+### 2026-10-02
+
+Reservefoto's op 2026-10-02 — 150 artikelen op de homepage
+
+| Categorie | Beschikbaar | Nodig | Tekort |
+|---|---|---|---|
+| Environment | 10 | 13 | 3 |
+| Finance | 4 | 0 | — |
+| Health | 5 | 2 | — |
+| Lifestyle | 9 | 6 | — |
+| Science | 11 | 6 | — |
+| Tech | 4 | 0 | — |
+
+Totaal: 27 nodig, 43 beschikbaar.
+Geleend uit een andere categorie: 3 foto's. Knelt bij Environment (3).
+Aanvullen in `assets/fallback/` als `<categorie>-<nummer>.jpg`, en daarna het getal in `RESERVE_PER_CATEGORIE` in `index.js` mee ophogen.
