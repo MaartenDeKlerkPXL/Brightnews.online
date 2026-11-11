@@ -1,16 +1,15 @@
 # Planning lancering BrightNews v5: zondag 22 november 2026
 
-Gemaakt op maandag 2 november 2026. Alle taken staan op naam van Maarten,
-ook wat eerst bij Erik lag. Het werk is af op **zondag 15 november**; van 16
-tot en met 21 november is buffer voor problemen en fouten. Op 22 november
-gaat de site live.
+Gemaakt op maandag 2 november 2026, **herzien op woensdag 11 november**.
+Alle taken staan op naam van Maarten, ook wat eerst bij Erik lag.
 
-- **Week 1 (2 t/m 8 november):** vakantie, dus hele dagen. Hier zit het
-  zware werk: nieuws, beveiliging en alles met Supabase en Stripe.
-- **Week 2 (9 t/m 15 november):** minder tijd (ongeveer 2 à 3 uur per dag).
-  Lanceringswerk dat in kleine stukken kan.
-- **Week 3 (16 t/m 21 november):** buffer. Geen nieuwe dingen bouwen, alleen
-  repareren en testen.
+**Stand op 11 november:** de planning liep 8 dagen achter. Van 4 tot en met
+10 november is er niets gebouwd, dus het zware werk met Supabase en Stripe
+staat nog open. **Besluit Maarten (11 november): 22 november blijft staan,
+en de buffer van 16 tot en met 21 november wordt bouwtijd.** Er is dus geen
+reserve meer. Daarom staat er op maandag 16 november een beslismoment: ligt
+het werk dan niet op schema, dan gaat er iets uit de lancering (zie "Waar het
+kan misgaan").
 
 Eén afspraak verandert nu Erik niet meer meekijkt: werk dat betalingen,
 Supabase, `backend/`, `sw.js` of `js/betaal-config.js` raakt, gaat nog steeds
@@ -79,123 +78,112 @@ via een PR. Laat die PR eerst nakijken door een review-agent
 
 ## Per dag
 
-### Week 1: vakantie, hele dagen
+### Wat er van 2 tot en met 10 november gebeurd is
 
-**Maandag 2 november**
-- ✅ Bedankt, Over ons, Zo kiezen we, Contact en Feedback gebouwd.
-- ✅ Juridische pagina's, 404, Afmelden, cookiebalk en de foutstaat van de
-  homepage gebouwd.
-- Het nieuws weer aanzetten (TODO 26): een eigen organisatie in
-  `console.anthropic.com`, betaalmethode met auto-reload, nieuwe sleutel als
-  GitHub-secret `ANTHROPIC_API_KEY`, en de nieuws-Action handmatig draaien.
-  Haal ook het secret `MISTRAL_API_KEY` weg.
+- ✅ Bedankt, Over ons, Zo kiezen we, Contact, Feedback, de juridische
+  pagina's, 404, Afmelden, de cookiebalk en de foutstaat van de homepage
+  gebouwd (2 november).
+- ✅ Het nieuws draait weer sinds 2 november, met nieuw Anthropic-tegoed (TODO 26).
+- ✅ Eerste beveiligingsronde (3 november); de uitkomst staat in TODO 68 t/m 73.
 
-**Dinsdag 3 november**
-- Controleren of de nachtruns van het nieuws goed gingen (artikelen,
-  dagoverzicht, nachtelijke beoordeling).
-- Beveiligingscontrole (TODO 67): de skill maken met de pdf en de foto, de
-  volledige controle draaien en wat eruit komt meteen oplossen. Neem de twee
-  Instagram-lijstjes mee in de skill; de eerste ronde staat al bij TODO 67.
-- ✅ Eerste ronde gedaan; wat eruit kwam staat in TODO 68 t/m 73.
-- **Meteen vandaag, het is klein werk met veel effect:**
-  - de mail-limiet in Supabase nakijken en inloglink en wachtwoord vergeten
-    testen. De eigen SMTP via Strato staat al aan; laten staan (TODO 68);
-  - kijken welk plan er bij Resend staat, voor de welkomstreeks (TODO 68);
-  - een melding bij laag tegoed in console.anthropic.com (TODO 69.2).
-- Een PR met de opruiming: `axios`, `nodemailer` en `pdfkit` weg,
-  `npm audit fix`, en het SQL-bestand voor de Supabase-advisor (TODO 71 en 72).
-  Laat hem nakijken door een review-agent en draai de nieuws-Action
-  daarna één keer handmatig.
-- De juridische teksten (privacy, voorwaarden, refund) naar een jurist sturen,
-  zodat het antwoord binnen is vóór 13 november.
+### Woensdag 11 november (vandaag, avond)
 
-**Woensdag 4 november**
+- ✅ Opruim-PR #17 gemaakt en goedgekeurd door een review-agent: packages
+  weg, `npm audit fix` en het SQL-bestand voor de Supabase-advisor (TODO 71
+  en 72).
+- ✅ Inlogmails nagekeken: de eigen SMTP via Strato werkt, de mail komt in
+  de inbox. De mail-limiet stond op 2 per uur en moet naar 30 (TODO 68).
+- **De juridische teksten naar een jurist sturen** (privacy, voorwaarden,
+  refund). Dit is het enige dat van iemand anders afhangt, en het is al 8
+  dagen te laat.
+- PR #17 mergen, het SQL-bestand draaien in Supabase en de nieuws-Action één
+  keer handmatig draaien.
+- Kleine dingen die alleen jij kunt: het secret `MISTRAL_API_KEY` weghalen,
+  een melding bij laag tegoed in console.anthropic.com (TODO 69.2), en kijken
+  welk plan er bij Resend staat.
+
+### Donderdag 12 november
+
+- Nakijken of de nachtelijke controle weer draait.
 - PR #15 (vijf gratis artikelen per maand) en PR #16 (scraper) nakijken met
-  een review-agent, testen en mergen.
-- Supabase in de v5-pagina's laden: inloggen met inloglink en met wachtwoord,
-  account maken, wachtwoord vergeten, uitloggen, en `data-ingelogd` op elke
-  pagina (TODO 66, punten 9 en 11).
+  een review-agent, testen en mergen. Neem in #15 de vaste `search_path` van
+  `gratis_artikelen_per_maand` over (zie PR #17).
 
-**Donderdag 5 november**
+### Vrijdag 13 november
+
+- Supabase in de v5-pagina's laden: inloggen met inloglink en met
+  wachtwoord, account maken (de taal van de lezer in `user_metadata`, nodig
+  voor TODO 74), wachtwoord vergeten, uitloggen, en `data-ingelogd` op elke
+  pagina (TODO 66, punten 9 en 11).
+- De ontbrekende staten van Wachtwoord vergeten (link verlopen, wachtwoord te
+  kort).
+
+### Zaterdag 14 november
+
 - Mijn account koppelen: status, plan, tegoed, de mails-toggle en Abonnement
-  beheren via het Stripe-klantportaal (TODO 66, punt 10).
+  beheren via het Stripe-klantportaal (TODO 66, punt 10), plus de ontbrekende
+  staten (Premium actief, opgezegd, betaling mislukt, account verwijderen).
 - De echte paywallstaat op de artikelpagina via `lees_artikel()` (TODO 66,
   punt 6).
-- De ontbrekende staten van Mijn account en Wachtwoord vergeten bouwen.
 
-**Vrijdag 6 november**
+### Zondag 15 november
+
 - Stripe Checkout op Abonnementen, met het gekozen plan en `?next=` (TODO
-  66, punt 7).
+  66, punt 7), plus de staat "terug van Stripe".
 - Bedankt koppelen: Premium ziet aangaan via de webhook (TODO 66, punt 12).
-- De staat "terug van Stripe" op Abonnementen bouwen.
 - Alles testen in de testmodus van Stripe.
 
-**Zaterdag 7 november**
-- Contact en Feedback laten versturen: Supabase-tabellen met alleen
-  insert-rechten, honeypot en een limiet per IP (TODO 66, punt 13). Leg
-  ook een maximale lengte vast in de database (2000 en 1000 tekens), niet
-  alleen in het formulier.
-- De gezondheidscontrole in de nieuws-Action: een run faalt als er 24 uur
-  geen nieuw artikel bij is gekomen, en die mislukte run mailt Maarten
-  (TODO 69.1).
-- De nieuwsdata: één dagoverzicht per dag, volledige tekst van het
-  dagoverzicht, categorie in het manifest, en een runlog zodat een storing
-  anders oogt dan een lege dag (TODO 66, punten 2 t/m 5).
+### Maandag 16 november: beslismoment
 
-**Zondag 8 november**
+- **Eerst kijken:** werken inloggen, Mijn account, de paywall en betalen in de
+  testmodus? Zo niet, dan beslis je vandaag wat er uit de lancering gaat (zie
+  "Waar het kan misgaan").
+- Contact en Feedback laten versturen: Supabase-tabellen met alleen
+  insert-rechten, honeypot, een limiet per IP en een maximale lengte in de
+  database (2000 en 1000 tekens) (TODO 66, punt 13).
+- De gezondheidscontrole in de nieuws-Action: een run faalt als er 24 uur geen
+  nieuw artikel is bijgekomen (TODO 69.1).
+
+### Dinsdag 17 november
+
 - Het artikelsjabloon (`backend/generate-articles.js`) naar v5 omzetten en de
   actuele artikelen opnieuw maken.
-- Bepalen hoe het archief meegaat (de oude artikelpagina's), zodat dat maandag
-  kan draaien.
-
-### Week 2: minder tijd, 2 à 3 uur per dag
-
-**Maandag 9 november**
 - Het archief opnieuw maken in het v5-sjabloon, steekproef nakijken, sitemap
   opnieuw maken. Niets verwijderen.
 
-**Dinsdag 10 november**
+### Woensdag 18 november
+
 - De v5-pagina's naar hun echte adressen zetten, de oude adressen laten
-  werken, en de adressen in `partials/v5/` en `js/v5/gedeeld.js` aanpassen.
-- Alle mails naar de v5-huisstijl, één taal per lezer in plaats van NL en EN
-  door elkaar: de Supabase-sjablonen, de welkomstreeks en de branding in
-  Stripe (TODO 74).
+  werken, `v5-404.html` wordt `404.html`, en de adressen in `partials/v5/` en
+  `js/v5/gedeeld.js` aanpassen (TODO 66, punt 8).
+- `?staat=` werkt alleen nog op `localhost` (TODO 73).
+- Alle mails naar de v5-huisstijl, één taal per lezer (TODO 74).
 
-**Woensdag 11 november**
+### Donderdag 19 november
+
 - CSP op alle pagina's en in het artikelsjabloon (Supabase, Stripe, Google).
-- De cookiebalk laat GA4 laden na toestemming.
+- De cookiebalk laat GA4 laden na toestemming (TODO 66, punt 15).
 - Service worker: precache naar de v5-bestanden, `CACHE_NAME` bumpen.
-- Snelheid meten (Lighthouse: LCP en CLS) op home, artikel en archief.
-
-**Donderdag 12 november**
-- De hele keten echt doorlopen met een echte kaart en een wegwerp-
-  e-mailadres (TODO 31). Opschrijven wat misgaat en dat oplossen.
-
-**Vrijdag 13 november**
 - De juridische teksten van de jurist verwerken, alle [haken] invullen, en de
   privacyregel over feedback nalezen (TODO 43).
 - Steekproef op de vertalingen in alle vijf talen.
 
-**Zaterdag 14 november**
-- Controleren of `?staat=` live niets meer doet (TODO 73).
-- Supabase naar Pro, zodat er dagelijkse back-ups zijn vóór de eerste
-  betalende lezers. Zet daar ook de bescherming tegen gelekte wachtwoorden
-  aan (TODO 70 en 72.4).
+### Vrijdag 20 november
+
+- Supabase naar Pro (dagelijkse back-ups) en de bescherming tegen gelekte
+  wachtwoorden aanzetten (TODO 70 en 72.4).
 - Alles naar master mergen, met de parkeerpagina nog aan. Testen op de echte
   site via `/?team=1`, op telefoon en computer, licht en donker.
+- De hele keten echt doorlopen met een echte kaart en een wegwerp-e-mailadres
+  (TODO 31): account maken, inloggen, betalen, Premium lezen, opzeggen.
+- Snelheid meten (Lighthouse: LCP en CLS) op home, artikel en archief.
 
-**Zondag 15 november**
-- Eindcontrole. Vanaf nu bouw je niets nieuws meer.
-- Het draaiboek voor 22 november klaarzetten (de zes stappen van TODO 2),
-  met daarbij hoe je terugdraait als het misgaat: `git revert` van de
-  merge, `CACHE_NAME` bumpen, en de parkeerpagina terugzetten.
+### Zaterdag 21 november
 
-### Week 3: buffer, 16 t/m 21 november
-
-Elke dag hetzelfde rondje: staat het nieuws van vandaag erop, gingen de
-nachtruns goed, en lukt een testbetaling nog. Wat misgaat, los je op. Is er
-niets mis, dan zijn de punten van "mag ná de lancering" eventueel een optie,
-maar alleen als ze niets aan de bestaande site veranderen.
+- Repareren wat vrijdag misging. **Niets nieuws meer bouwen.**
+- Het draaiboek voor 22 november klaarzetten (de zes stappen van TODO 2), met
+  daarbij hoe je terugdraait: `git revert` van de merge, `CACHE_NAME` bumpen
+  en de parkeerpagina terugzetten.
 
 ### Zondag 22 november: lancering
 
@@ -210,15 +198,26 @@ maar alleen als ze niets aan de bestaande site veranderen.
 
 ## Waar het kan misgaan
 
-- **Week 1 is vol.** Supabase en Stripe koppelen is het grootste en minst
-  voorspelbare werk. Loopt het uit, dan schuift het in week 2. De buffer
-  van week 3 blijft er dan nog.
-- **De jurist** hangt niet van jou af. Stuur de teksten dinsdag 3 november.
+- **Er is geen buffer meer.** Van 12 tot en met 16 november staat er meer werk
+  per dag dan de 2 à 3 uur die je in week 2 per dag hebt. Lukt dat niet, dan valt
+  op maandag 16 november een besluit over wat eruit gaat. In volgorde van
+  "kan het makkelijkst wachten":
+  1. **De nieuwsdata** (TODO 66, punten 2 t/m 5): de site werkt ook met de
+     huidige data.
+  2. **Het archief in v5:** de oude artikelpagina's blijven dan in de oude
+     opmaak, en alleen de actuele artikelen gaan mee.
+  3. **Contact en Feedback versturen:** tijdelijk een mailadres op die
+     pagina's in plaats van een formulier.
+  4. **De mails in de v5-huisstijl** (TODO 74): kan een week na de lancering.
+  Wat **niet** kan wachten: inloggen, de paywall, betalen, de CSP en de
+  juridische teksten.
+- **De jurist** hangt niet van jou af. Stuur de teksten vandaag. Komt er
+  vóór 19 november geen antwoord, dan lanceer je met de huidige live teksten
+  (die gelden nu ook al) en verwerk je het advies erna.
 - **Het Anthropic-tegoed:** zonder auto-reload stopt het nieuws opnieuw
   zonder dat iemand het merkt. Zet het meteen aan.
-- **De inlogmails** (TODO 68): test ze vóór de lancering één keer echt. Een
-  mail in de spammap merk je anders pas als lezers klagen dat de inloglink
-  niet komt.
+- **De inlogmails** (TODO 68): getest op 11 november en ze komen in de
+  inbox. Vergeet niet de mail-limiet van 2 naar 30 per uur te zetten.
 
 ### Mag ná de lancering (beveiliging)
 
