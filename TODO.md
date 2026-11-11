@@ -214,7 +214,7 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   op brightnews.online. Er staat niets geheims in, en de repo is toch al
   publiek.
 
-- [ ] **68. De inlogmails van Supabase: limiet nakijken.**
+- [x] **68. De inlogmails van Supabase: limiet nakijken.** ✅ 2026-11-12: limiet staat op 30 per uur (Maarten), en de mail "wachtwoord opnieuw instellen" kwam aan in de inbox. Nog open en elders belegd: het plan bij Resend (punt 69.2) en de huisstijl van de mails (punt 74).
   *(Maarten, 2026-11-03, gecorrigeerd 2026-11-11)*
   Op 3 november stond hier dat er geen eigen SMTP was en dat Supabase dus
   maar 2 inlogmails per uur stuurt. **Dat klopte niet.** De overdracht (fase
@@ -267,7 +267,7 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   schrijven naar de echte tabel `profiles`. Gebruik daarvoor een
   wegwerpaccount en ruim het daarna op.
 
-- [ ] **71. Packages opruimen en bijwerken.** *(Maarten, 2026-11-03)*
+- [x] **71. Packages opruimen en bijwerken.** ✅ 2026-11-12: PR #17 gemerged (axios, nodemailer en pdfkit weg, `npm audit fix`; 0 kwetsbaarheden in de pakketten van de Actions). *(Maarten, 2026-11-03)*
   `npm audit` geeft **5 hoge en 1 gemiddelde kwetsbaarheid** (axios,
   form-data, follow-redirects, nodemailer, zod, ws). Die draaien alleen in de
   GitHub Actions, niet in de browser, maar daar staan wel de secrets.
@@ -279,7 +279,7 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
     draaien als controle. Raakt `package.json` van de pijplijn, dus via een
     PR.
 
-- [ ] **72. Meldingen van de Supabase-advisor (2026-11-03).**
+- [x] **72. Meldingen van de Supabase-advisor (2026-11-03).** ✅ 2026-11-12: `advisor-2026-11-11.sql` gedraaid; de advisor meldt de twee triggerfuncties en de `search_path` niet meer. Ook `opruimen-2026-11-11.sql` gedraaid: `pg_cron` staat aan met twee nachtelijke opruimtaken (TODO 75). Wat de advisor nog meldt is bedoeld (`lees_artikel`, `leestegoed`, `meld_af`, `get_full_article`, `redeem_promo_code`) of wacht op Supabase Pro (gelekte wachtwoorden, 72.4).
   *(Maarten, PR met SQL-bestand in `supabase/`)*
   1. `cleanup_profile_after_user_delete()` en `feedback_volumerem()` zijn
      triggerfuncties, maar iedereen kan ze als RPC aanroepen
