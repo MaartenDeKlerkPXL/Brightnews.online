@@ -9,8 +9,8 @@
 // die ingeklapt boven de tekst ("Op deze pagina") en staan de andere
 // documenten onderaan. Minder dan vier secties: geen inhoudsopgave.
 //
-// De teksten zijn een concept: alles tussen [haken] moet nog worden
-// ingevuld, en een jurist moet het geheel opstellen of controleren.
+// Er komt geen jurist: Maarten en Erik beslissen over de teksten (TODO 75).
+// Verandert een tekst inhoudelijk, zet dan de datum van dat document bij.
 
 (function () {
     'use strict';
@@ -35,8 +35,11 @@
                     { h3: 'v5_pv_s2_h3' }, { p: 'v5_pv_s2_p3' },
                     { h3: 'v5_pv_s2_h4' }, { p: 'v5_pv_s2_p4' },
                 ] },
-                { id: 'waarom', titel: 'v5_pv_s3', blokken: [{ p: 'v5_pv_s3_p' }] },
-                { id: 'met-wie', titel: 'v5_pv_s4', blokken: [{ ul: ['v5_pv_s4_l1', 'v5_pv_s4_l2', 'v5_pv_s4_l3', 'v5_pv_s4_l4', 'v5_pv_s4_l5', 'v5_pv_s4_l6'] }, { p: 'v5_pv_s4_p' }] },
+                { id: 'waarom', titel: 'v5_pv_s3', blokken: [
+                    { p: 'v5_pv_s3_p' }, { p: 'v5_pv_s3_p2' },
+                    { ul: ['v5_pv_s3_l1', 'v5_pv_s3_l2', 'v5_pv_s3_l3', 'v5_pv_s3_l4', 'v5_pv_s3_l5'] },
+                ] },
+                { id: 'met-wie', titel: 'v5_pv_s4', blokken: [{ ul: ['v5_pv_s4_l1', 'v5_pv_s4_l2', 'v5_pv_s4_l3', 'v5_pv_s4_l4', 'v5_pv_s4_l5', 'v5_pv_s4_l6'] }, { p: 'v5_pv_s4_p' }, { p: 'v5_pv_s4_p2' }] },
                 { id: 'bewaren', titel: 'v5_pv_s5', blokken: [{ p: 'v5_pv_s5_p' }] },
                 { id: 'cookies', titel: 'v5_pv_s6', blokken: [{ p: 'v5_pv_s6_p' }, { link: 'v5_pv_s6_link', actie: 'cookies' }] },
                 { id: 'rechten', titel: 'v5_pv_s7', blokken: [{ p: 'v5_pv_s7_p' }] },
@@ -51,16 +54,17 @@
                 { id: 'wat-brightnews-doet', titel: 'v5_av_s2', blokken: [{ p: 'v5_av_s2_p' }] },
                 { id: 'account', titel: 'v5_av_s3', blokken: [{ p: 'v5_av_s3_p' }] },
                 { id: 'premium', titel: 'v5_av_s4', blokken: [
-                    { ul: ['v5_av_s4_l1', 'v5_av_s4_l2', 'v5_av_s4_l3', 'v5_av_s4_l4'] },
+                    { ul: ['v5_av_s4_l1', 'v5_av_s4_l2', 'v5_av_s4_l3', 'v5_av_s4_l4', 'v5_av_s4_l5'] },
                     { p: 'v5_av_s4_p' }, { link: 'v5_jr_refund', naar: () => B.url.refund() },
                 ] },
                 { id: 'inhoud', titel: 'v5_av_s5', blokken: [{ p: 'v5_av_s5_p' }] },
                 { id: 'wijzigingen', titel: 'v5_av_s6', blokken: [{ p: 'v5_av_s6_p' }] },
+                { id: 'overig', titel: 'v5_av_s7', blokken: [{ ul: ['v5_av_s7_l1', 'v5_av_s7_l2', 'v5_av_s7_l3', 'v5_av_s7_l4', 'v5_av_s7_l5'] }] },
                 { id: 'vragen', titel: 'v5_jr_vragen', blokken: contact },
             ],
         },
         refund: {
-            titel: 'v5_jr_refund', datum: '2026-11-02', versie: '1.0',
+            titel: 'v5_jr_refund', datum: '2026-11-11', versie: '1.0',
             kort: ['v5_rf_kort1', 'v5_rf_kort2', 'v5_rf_kort3'],
             secties: [
                 { id: 'proefperiode', titel: 'v5_rf_s1', blokken: [{ p: 'v5_rf_s1_p' }] },

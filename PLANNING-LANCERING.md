@@ -93,9 +93,10 @@ via een PR. Laat die PR eerst nakijken door een review-agent
   en 72).
 - ✅ Inlogmails nagekeken: de eigen SMTP via Strato werkt, de mail komt in
   de inbox. De mail-limiet stond op 2 per uur en moet naar 30 (TODO 68).
-- **De juridische teksten naar een jurist sturen** (privacy, voorwaarden,
-  refund). Dit is het enige dat van iemand anders afhangt, en het is al 8
-  dagen te laat.
+- ✅ **Juridische teksten:** er komt geen jurist. De teksten zeggen wat de
+  site echt doet en alle [haken] zijn ingevuld. Jouw besluiten staan in
+  TODO 75: het jaarabonnement, de btw-instelling in Stripe, het vinkje en
+  één zin bij Account maken.
 - PR #17 mergen, het SQL-bestand draaien in Supabase en de nieuws-Action één
   keer handmatig draaien.
 - Kleine dingen die alleen jij kunt: het secret `MISTRAL_API_KEY` weghalen,
@@ -164,7 +165,7 @@ via een PR. Laat die PR eerst nakijken door een review-agent
 - CSP op alle pagina's en in het artikelsjabloon (Supabase, Stripe, Google).
 - De cookiebalk laat GA4 laden na toestemming (TODO 66, punt 15).
 - Service worker: precache naar de v5-bestanden, `CACHE_NAME` bumpen.
-- De juridische teksten van de jurist verwerken, alle [haken] invullen, en de
+- Jouw besluiten uit TODO 75 verwerken in de juridische teksten, en de
   privacyregel over feedback nalezen (TODO 43).
 - Steekproef op de vertalingen in alle vijf talen.
 
@@ -211,9 +212,8 @@ via een PR. Laat die PR eerst nakijken door een review-agent
   4. **De mails in de v5-huisstijl** (TODO 74): kan een week na de lancering.
   Wat **niet** kan wachten: inloggen, de paywall, betalen, de CSP en de
   juridische teksten.
-- **De jurist** hangt niet van jou af. Stuur de teksten vandaag. Komt er
-  vóór 19 november geen antwoord, dan lanceer je met de huidige live teksten
-  (die gelden nu ook al) en verwerk je het advies erna.
+- **De juridische teksten:** er komt geen jurist. Jij en Erik beslissen;
+  de open punten staan in TODO 75. Het jaarabonnement is het belangrijkste.
 - **Het Anthropic-tegoed:** zonder auto-reload stopt het nieuws opnieuw
   zonder dat iemand het merkt. Zet het meteen aan.
 - **De inlogmails** (TODO 68): getest op 11 november en ze komen in de

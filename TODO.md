@@ -337,50 +337,114 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   Afzender overal hetzelfde: `BrightNews`. Na de wijziging elke mail één keer
   echt versturen, in licht en donker in Gmail en op de iPhone.
 
-- [ ] **75. De juridische teksten: wat we zelf rechtzetten en wat naar de
-  jurist gaat.** *(Maarten, 2026-11-11)*
-  Een tweede Claude-sessie las de drie documenten naast wat de site echt
-  doet. **Rechtgezet op 11 november** (in vijf talen):
-  - de cookiebalk zegt niet meer "anoniem meten";
-  - "hoeveel artikelen" werd "welke artikelen en wanneer";
-  - de gegevens van Contact, Feedback, promocodes en mails staan erin;
-  - de IP-adressen bij GitHub, Supabase en de foto's van bronnen staan erin;
-  - de welkomstmails staan erin, met afmelden;
-  - Stripe is de officiële verkoper (merchant of record);
-  - prijzen inclusief btw;
-  - Strato, Resend en GitHub staan bij de leveranciers;
-  - Supabase staat in Ierland;
-  - Bedankt belooft niet meer dat de proefperiode pas begint als Premium
-    aanstaat.
+- [ ] **75. De juridische teksten: er komt geen jurist, dus wij beslissen.**
+  *(Maarten, 2026-11-11)* Maarten, Erik en Claude zijn samen de controle.
+  De vragen die voor een jurist bedoeld waren, zijn besluiten geworden. De
+  meeste zijn al genomen en staan in de teksten; wat nog een keuze van
+  Maarten vraagt, staat onder "Nog te beslissen".
+
+  **Rechtgezet op 11 november** (drie rondes, alles in vijf talen):
+  - wat de site echt doet: geen "anoniem meten" meer, welke artikelen je las
+    en wanneer, de gegevens van Contact, Feedback, promocodes en mails, de
+    IP-adressen bij GitHub, Supabase en de foto's van bronnen, en drie
+    welkomstmails met afmelden;
+  - Stripe als officiële verkoper (merchant of record), ook bij het
+    afrekenen; prijzen inclusief btw;
+  - de leveranciers: Supabase (Ierland), Stripe, Google, Strato, Resend en
+    GitHub;
+  - alle [haken] zijn ingevuld en de jurist-opmerkingen zijn weg. De datum
+    van de drie documenten staat op 11 november.
+
+  **Besluiten die in de teksten staan** (voorstel van Claude; Maarten en
+  Erik bevestigen of veranderen ze):
+  1. **Grondslagen** (`v5_pv_s3_p2`, `v5_pv_s3_l1` t/m `l5`): uitvoering van
+     de overeenkomst voor inloggen, tegoed en abonnement; gerechtvaardigd
+     belang voor de welkomstmails, het beantwoorden van berichten, misbruik
+     van promocodes en de logboeken; toestemming voor Google Analytics.
+  2. **Bewaartermijnen** (`v5_pv_s5_p`): zie het feitenblad hieronder.
+  3. **Doorgifte buiten de EU** (`v5_pv_s4_p2`): Google, Stripe, GitHub,
+     Supabase en Resend zijn (onderdeel van) Amerikaanse bedrijven; de tekst
+     zegt dat dat gaat via het EU-VS-gegevensprivacykader of de
+     standaardcontractbepalingen. **Nog nakijken (Erik):** per leverancier
+     in zijn verwerkersovereenkomst (DPA) of dat klopt.
+  4. **Rechten en privacy-adres** (`v5_pv_s7_p`): de volledige lijst rechten
+     uit de AVG, info@brightnews.online als adres, antwoord binnen een maand.
+  5. **Geen uitsluiting van aansprakelijkheid meer** (`v5_av_s2_p`). Een
+     algemene uitsluiting tegenover consumenten houdt waarschijnlijk geen
+     stand; zonder zo'n zin geldt gewoon de wet. In de plaats: "neem
+     belangrijke beslissingen niet alleen op basis van een samenvatting" en
+     fouten melden via Feedback.
+  6. **Auteursrecht** (`v5_av_s5_p`): de artikelen en foto's blijven van hun
+     makers, en een rechthebbende kan via Contact vragen iets weg te halen;
+     dat doen we zo snel mogelijk. Het risico zelf blijft (samenvattingen
+     van andermans artikelen, foto's van de bron); dit beperkt het.
+  7. **Wijzigingen en prijs** (`v5_av_s6_p`, `v5_av_s4_l5`): minstens 30
+     dagen vooraf per mail, en opzeggen kan vóór de wijziging ingaat.
+  8. **Nieuwe sectie "Overige afspraken"** (`v5_av_s7`, `l1` t/m `l5`):
+     minimumleeftijd 16 (de site controleert dat niet), wanneer we een
+     account mogen afsluiten (na een waarschuwing, met terugbetaling van
+     het ongebruikte deel), de Nederlandse tekst is leidend, Nederlands
+     recht met behoud van het consumentenrecht van het eigen EU-land, en
+     contact via info@brightnews.online.
+  9. **Herroepingsrecht** (`v5_rf_s3_p`): uitgelegd zonder "digitale
+     diensten" of "digitale inhoud" te noemen: je ziet bij het afrekenen af
+     van de 14 dagen, maar merkt daar niets van door de gratis proefperiode
+     en de 14 dagen geld terug na de eerste betaling.
+  10. **AI-verordening (art. 50):** elk artikel zegt "AI-samengevat" en de
+      footer ook. Dat vinden we genoeg; er verandert niets.
+
+  **Feitenblad: wat we bewaren, waar en hoe lang.** De kolom "Nu" zegt wat
+  er echt gebeurt; waar die afwijkt van de tekst, is er werk (Erik).
+
+  | Gegeven | Waar | De tekst belooft | Nu |
+  |---|---|---|---|
+  | Account: e-mailadres, inlogmanier, inlogtijden | Supabase Auth (Ierland) | zolang het account bestaat; na een verzoek binnen 30 dagen gewist | verwijderen gaat met de hand in het Supabase-dashboard |
+  | Plan en status (`profiles`) | Supabase | idem | gaat mee met het account |
+  | Gelezen artikelen (`gelezen_artikelen`, PR #15) | Supabase | idem | moet `on delete cascade` krijgen bij het koppelen |
+  | Mails (`mail_log`, `mail_voorkeuren`) | Supabase | idem | `on delete cascade`: gaat mee |
+  | Gebruikte promocodes (`promo_redemptions`) | Supabase | idem | `on delete cascade`: gaat mee |
+  | Mislukte promocodepogingen (`promo_attempts`) | Supabase | "alleen het tijdstip, alleen kort" | **wordt pas gewist bij een volgende poging van dezelfde lezer, en heeft geen koppeling met het account: blijft staan als een account weg is. Erik: een opruimtaak** |
+  | Feedback (`feedback`) | Supabase | hooguit twee jaar | **nog geen opruiming. Erik: alles ouder dan twee jaar wissen (eenmaal per jaar met de hand, of `pg_cron`)** |
+  | Contactberichten | nog niet gekoppeld | hooguit twee jaar | **bij het koppelen meteen regelen** |
+  | IP-adressen in logboeken | GitHub, Supabase | (geen termijn genoemd) | termijn van de leverancier |
+  | Google Analytics | Google | hooguit 14 maanden per bezoek | **Maarten: in GA4 → Beheer → Gegevensbewaring op 2 of 14 maanden zetten (14 is het maximum), en Google Signals uit** |
+  | Betaalgegevens | Stripe | zo lang als de wet van een verkoper vraagt | regelt Stripe |
+  | Mailadres bij het versturen | Strato, Resend | (geen termijn genoemd) | termijn van de leverancier |
+
+  **Nog te beslissen of na te kijken (Maarten):**
+  1. **Jaarabonnement (Shine).** Het verlengt nu stilzwijgend een vol jaar.
+     Bij consumenten mag dat na de eerste periode waarschijnlijk alleen als
+     het daarna per maand opzegbaar is (art. 6:236 onder j BW). Het grootste
+     risico van de lijst. Twee opties:
+     - **a. (voorstel)** Na het eerste jaar kun je op elk moment opzeggen en
+       krijg je de maanden terug die je nog niet gebruikte. Dat kan met de
+       hand via het Stripe-dashboard. Teksten die dan veranderen:
+       `v5_av_s4_l3`, `v5_av_s4_l4`, `v5_rf_kort3` en `v5_rf_s5_p`.
+     - **b.** Shine verlengt niet automatisch; na een jaar vragen we of je
+       wilt verlengen. Dat vraagt een wijziging in Stripe en een mail.
+  2. **De prijzen in Stripe: inclusief btw?** De teksten zeggen "inclusief
+     btw". Kijk in het Stripe-dashboard bij de prijzen van de twee Payment
+     Links (Glow en Shine) of "Inclusief belasting" aanstaat. Staat het op
+     "exclusief", dan telt Stripe er btw bij op en klopt de tekst niet.
+  3. **Het vinkje voor het herroepingsrecht** (`v5_abo_toestemming`).
+     Omdat de eerste betaling pas op dag 30 komt en je daarna toch 14 dagen
+     je geld terugkrijgt, doet het vinkje voor de lezer bijna niets, maar het
+     schrikt wel af. Voorstel: houden. De site had het vinkje al toen Stripe
+     Managed Payments goedkeurde, en weghalen kan altijd nog. Wil je het
+     weghalen, dan verandert ook `v5_rf_s3_p`.
+  4. **De welkomstreeks zonder vooraf gevraagde toestemming.** Dat mag
+     waarschijnlijk alleen als je bij het aanmaken van het account meteen
+     hoort dat de mails komen en dat afmelden kan. Voorstel: bij Account
+     maken één zin onder de knop: "Je krijgt drie welkomstmails. Afmelden
+     kan met één klik onder elke mail." (nieuwe sleutel, nog niet gebouwd).
+
+  **De proefperiode begint bij Stripe bij het afrekenen**, niet als Premium
+  aanstaat. De teksten op Bedankt passen daar sinds 11 november bij; er is
+  niets meer te beslissen.
 
   **Zelf je account verwijderen bestaat nog niet.** De teksten zeggen nu
-  "vraag het via Contact". Wordt die functie gebouwd (TODO 66 punt 10), zet
-  dan de drie zinnen terug: `v5_pv_kort4`, `v5_pv_s7_p` en `v5_av_s3_p`.
-
-  **Besluiten voor Maarten**, vóór de jurist:
-  1. **Jaarabonnement (Shine) verlengt stilzwijgend een vol jaar.** Bij
-     consumenten mag dat na de eerste periode waarschijnlijk alleen als het
-     daarna per maand opzegbaar is (art. 6:236 onder j BW). Opties: na het
-     eerste jaar per maand opzegbaar met terugbetaling van de rest, of niet
-     automatisch verlengen. Het grootste juridische risico van de lijst.
-  2. **De proefperiode begint bij Stripe bij het afrekenen**, niet als
-     Premium aanstaat. Duurt het aanzetten lang, dan verliest de lezer een
-     stukje proefperiode. Klein, maar de teksten moeten erbij passen.
-
-  **Vragen voor de jurist** (deel B van de controle):
-  - afstand van het herroepingsrecht: digitale dienst of digitale inhoud;
-  - heeft het vinkje zin als de eerste betaling pas op dag 30 komt;
-  - stuurt Stripe de vereiste bevestiging;
-  - past dit bij de voorwaarden van Stripe Managed Payments;
-  - is de uitsluiting van aansprakelijkheid geldig tegenover consumenten;
-  - auteursrecht op AI-samenvattingen en op de foto's van bronnen;
-  - AVG art. 13: doorgifte buiten de EU, de volledige lijst rechten en een
-    privacy-e-mailadres;
-  - mag de welkomstreeks zonder vooraf gevraagde toestemming;
-  - ontbrekend in de voorwaarden: toepasselijk recht en geschillen, wanneer
-    we een account mogen afsluiten, prijsverhoging bij verlengen, en welke
-    taal leidend is;
-  - is de AI-melding genoeg voor de AI-verordening (art. 50).
+  "vraag het via Contact" of per mail. Wordt die functie gebouwd (TODO 66
+  punt 10), pas dan `v5_pv_kort4`, `v5_pv_s7_p` en `v5_av_s3_p` aan.
 
 - [x] **1. De twee open pull requests vlottrekken.** ✅ 2026-09-16 (Fable-review): #5 gemerged + og:image-absoluutfix erachteraan; #1 lokaal gemerged (bronwerk integraal overgenomen, sw-conflict → v23) en pagina's geregenereerd. Oorspronkelijke tekst: Allebei hebben ze
   merge-conflicten (`mergeable=CONFLICTING`) en lopen achter op master:
@@ -2017,13 +2081,10 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
       Bij de lancering: die hosts in de CSP zetten en `activateAnalytics()`
       uit `index.js` aanroepen op de gebeurtenis `bn:cookies`
       (`detail.statistieken`) en bij het laden als de keuze `accepted` is.
-  16. **Juridische teksten laten nakijken** (`v5-privacy.html`,
-      `v5-voorwaarden.html`, `v5-refundbeleid.html`, één sjabloon in
-      `js/v5/juridisch.js`). Alles tussen [haken] invullen (grondslagen,
-      bewaartermijnen, mailprovider, termijn bij wijzigingen) en het geheel
-      door een jurist laten controleren. De voorwaarden en het refundbeleid
-      volgen de huidige live teksten (14 dagen geld terug), aangevuld met de
-      proefperiode van 30 dagen.
+  16. **Juridische teksten** (`v5-privacy.html`, `v5-voorwaarden.html`,
+      `v5-refundbeleid.html`, één sjabloon in `js/v5/juridisch.js`). ✅ Alle
+      [haken] ingevuld op 2026-11-11. Er komt geen jurist; wat nog een
+      besluit vraagt, staat in TODO 75.
 
   ### Opruimen in Figma als v3 gekozen is
 
