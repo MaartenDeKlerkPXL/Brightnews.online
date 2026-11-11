@@ -24,7 +24,7 @@
     const contact = [{ p: 'v5_jr_vragen_p' }, { link: 'v5_jr_naar_contact', naar: () => B.url.contact() }];
     const DOCUMENTEN = {
         privacy: {
-            titel: 'v5_jr_privacy', datum: '2026-11-02', versie: '1.0',
+            titel: 'v5_jr_privacy', datum: '2026-11-11', versie: '1.0',
             kort: ['v5_pv_kort1', 'v5_pv_kort2', 'v5_pv_kort3', 'v5_pv_kort4'],
             secties: [
                 { id: 'wie-we-zijn', titel: 'v5_pv_s1', blokken: [{ p: 'v5_pv_s1_p' }] },
@@ -32,9 +32,10 @@
                     { h3: 'v5_pv_s2_h1' }, { p: 'v5_pv_s2_p1' },
                     { h3: 'v5_pv_s2_h2' }, { p: 'v5_pv_s2_p2' },
                     { h3: 'v5_pv_s2_h3' }, { p: 'v5_pv_s2_p3' },
+                    { h3: 'v5_pv_s2_h4' }, { p: 'v5_pv_s2_p4' },
                 ] },
                 { id: 'waarom', titel: 'v5_pv_s3', blokken: [{ p: 'v5_pv_s3_p' }] },
-                { id: 'met-wie', titel: 'v5_pv_s4', blokken: [{ ul: ['v5_pv_s4_l1', 'v5_pv_s4_l2', 'v5_pv_s4_l3', 'v5_pv_s4_l4'] }, { p: 'v5_pv_s4_p' }] },
+                { id: 'met-wie', titel: 'v5_pv_s4', blokken: [{ ul: ['v5_pv_s4_l1', 'v5_pv_s4_l2', 'v5_pv_s4_l3', 'v5_pv_s4_l4', 'v5_pv_s4_l5', 'v5_pv_s4_l6'] }, { p: 'v5_pv_s4_p' }] },
                 { id: 'bewaren', titel: 'v5_pv_s5', blokken: [{ p: 'v5_pv_s5_p' }] },
                 { id: 'cookies', titel: 'v5_pv_s6', blokken: [{ p: 'v5_pv_s6_p' }, { link: 'v5_pv_s6_link', actie: 'cookies' }] },
                 { id: 'rechten', titel: 'v5_pv_s7', blokken: [{ p: 'v5_pv_s7_p' }] },
@@ -42,7 +43,7 @@
             ],
         },
         voorwaarden: {
-            titel: 'v5_jr_voorwaarden', datum: '2026-11-02', versie: '1.0',
+            titel: 'v5_jr_voorwaarden', datum: '2026-11-11', versie: '1.0',
             kort: ['v5_av_kort1', 'v5_av_kort2', 'v5_av_kort3', 'v5_av_kort4'],
             secties: [
                 { id: 'over', titel: 'v5_av_s1', blokken: [{ p: 'v5_av_s1_p' }] },

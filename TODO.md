@@ -337,6 +337,51 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   Afzender overal hetzelfde: `BrightNews`. Na de wijziging elke mail één keer
   echt versturen, in licht en donker in Gmail en op de iPhone.
 
+- [ ] **75. De juridische teksten: wat we zelf rechtzetten en wat naar de
+  jurist gaat.** *(Maarten, 2026-11-11)*
+  Een tweede Claude-sessie las de drie documenten naast wat de site echt
+  doet. **Rechtgezet op 11 november** (in vijf talen):
+  - de cookiebalk zegt niet meer "anoniem meten";
+  - "hoeveel artikelen" werd "welke artikelen en wanneer";
+  - de gegevens van Contact, Feedback, promocodes en mails staan erin;
+  - de IP-adressen bij GitHub, Supabase en de foto's van bronnen staan erin;
+  - de welkomstmails staan erin, met afmelden;
+  - Stripe is de officiële verkoper (merchant of record);
+  - prijzen inclusief btw;
+  - Strato, Resend en GitHub staan bij de leveranciers;
+  - Supabase staat in Ierland;
+  - Bedankt belooft niet meer dat de proefperiode pas begint als Premium
+    aanstaat.
+
+  **Zelf je account verwijderen bestaat nog niet.** De teksten zeggen nu
+  "vraag het via Contact". Wordt die functie gebouwd (TODO 66 punt 10), zet
+  dan de drie zinnen terug: `v5_pv_kort4`, `v5_pv_s7_p` en `v5_av_s3_p`.
+
+  **Besluiten voor Maarten**, vóór de jurist:
+  1. **Jaarabonnement (Shine) verlengt stilzwijgend een vol jaar.** Bij
+     consumenten mag dat na de eerste periode waarschijnlijk alleen als het
+     daarna per maand opzegbaar is (art. 6:236 onder j BW). Opties: na het
+     eerste jaar per maand opzegbaar met terugbetaling van de rest, of niet
+     automatisch verlengen. Het grootste juridische risico van de lijst.
+  2. **De proefperiode begint bij Stripe bij het afrekenen**, niet als
+     Premium aanstaat. Duurt het aanzetten lang, dan verliest de lezer een
+     stukje proefperiode. Klein, maar de teksten moeten erbij passen.
+
+  **Vragen voor de jurist** (deel B van de controle):
+  - afstand van het herroepingsrecht: digitale dienst of digitale inhoud;
+  - heeft het vinkje zin als de eerste betaling pas op dag 30 komt;
+  - stuurt Stripe de vereiste bevestiging;
+  - past dit bij de voorwaarden van Stripe Managed Payments;
+  - is de uitsluiting van aansprakelijkheid geldig tegenover consumenten;
+  - auteursrecht op AI-samenvattingen en op de foto's van bronnen;
+  - AVG art. 13: doorgifte buiten de EU, de volledige lijst rechten en een
+    privacy-e-mailadres;
+  - mag de welkomstreeks zonder vooraf gevraagde toestemming;
+  - ontbrekend in de voorwaarden: toepasselijk recht en geschillen, wanneer
+    we een account mogen afsluiten, prijsverhoging bij verlengen, en welke
+    taal leidend is;
+  - is de AI-melding genoeg voor de AI-verordening (art. 50).
+
 - [x] **1. De twee open pull requests vlottrekken.** ✅ 2026-09-16 (Fable-review): #5 gemerged + og:image-absoluutfix erachteraan; #1 lokaal gemerged (bronwerk integraal overgenomen, sw-conflict → v23) en pagina's geregenereerd. Oorspronkelijke tekst: Allebei hebben ze
   merge-conflicten (`mergeable=CONFLICTING`) en lopen achter op master:
   [#1](https://github.com/MaartenDeKlerkPXL/Brightnews.online/pull/1)
