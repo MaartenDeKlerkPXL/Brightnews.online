@@ -412,26 +412,37 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   | Mailadres bij het versturen | Strato, Resend | (geen termijn genoemd) | termijn van de leverancier |
 
   **Nog te beslissen of na te kijken (Maarten):**
-  1. **Jaarabonnement (Shine).** Het verlengt nu stilzwijgend een vol jaar.
-     Bij consumenten mag dat na de eerste periode waarschijnlijk alleen als
-     het daarna per maand opzegbaar is (art. 6:236 onder j BW). Het grootste
-     risico van de lijst. Twee opties:
-     - **a. (voorstel)** Na het eerste jaar kun je op elk moment opzeggen en
-       krijg je de maanden terug die je nog niet gebruikte. Dat kan met de
-       hand via het Stripe-dashboard. Teksten die dan veranderen:
-       `v5_av_s4_l3`, `v5_av_s4_l4`, `v5_rf_kort3` en `v5_rf_s5_p`.
-     - **b.** Shine verlengt niet automatisch; na een jaar vragen we of je
-       wilt verlengen. Dat vraagt een wijziging in Stripe en een mail.
+  1. ✅ **Jaarabonnement (Shine): optie a gekozen** (Maarten, 2026-11-11).
+     Shine verlengt nog steeds per jaar, maar is na de eerste verlenging op
+     elk moment opzegbaar: Premium loopt tot het einde van de lopende maand
+     en de lezer krijgt de volle maanden daarna terug (voorbeeld in de
+     tekst: opzeggen in de vijfde maand van het tweede jaar = 7/12 van
+     €24,95 = €14,55). Zo voldoet het aan art. 6:236 onder j BW. Aangepast
+     in vijf talen: `v5_av_s4_l3`, `v5_av_s4_l4`, `v5_rf_kort3`,
+     `v5_rf_s5_p`, `v5_abo_shine_noot` en `v5_abo_faq2_a`.
+     **Werkwijze (Maarten), nodig vanaf de eerste verlenging (december
+     2027):** zegt iemand Shine op na een verlenging, dan in het
+     Stripe-dashboard het abonnement laten stoppen op de laatste dag van de
+     lopende maand ("Opzeggen" → "Op een aangepaste datum") en het
+     ongebruikte deel van de laatste factuur terugbetalen ("Terugbetalen" →
+     gedeeltelijk bedrag), binnen een paar werkdagen. **Erik, vóór december
+     2027:** de Stripe-webhook laat een mail naar info@brightnews.online
+     sturen zodra een Shine-abonnement dat al eens verlengd is, wordt
+     opgezegd, zodat niemand het mist.
   2. **De prijzen in Stripe: inclusief btw?** De teksten zeggen "inclusief
-     btw". Kijk in het Stripe-dashboard bij de prijzen van de twee Payment
-     Links (Glow en Shine) of "Inclusief belasting" aanstaat. Staat het op
-     "exclusief", dan telt Stripe er btw bij op en klopt de tekst niet.
-  3. **Het vinkje voor het herroepingsrecht** (`v5_abo_toestemming`).
-     Omdat de eerste betaling pas op dag 30 komt en je daarna toch 14 dagen
-     je geld terugkrijgt, doet het vinkje voor de lezer bijna niets, maar het
-     schrikt wel af. Voorstel: houden. De site had het vinkje al toen Stripe
-     Managed Payments goedkeurde, en weghalen kan altijd nog. Wil je het
-     weghalen, dan verandert ook `v5_rf_s3_p`.
+     btw". Bij beide prijzen staat "Belasting in prijs opnemen" nu op
+     "Automatisch". Dan volgt Stripe de standaardinstelling van het account;
+     staat die ook op automatisch, dan kiest Stripe zelf op basis van de
+     munt, en bij euro is dat inclusief. **Voorstel:** zet het bij Glow en
+     Shine expliciet op "Ja" (inclusief), zodat het niet afhangt van een
+     andere instelling. Weigert Stripe dat bij een bestaande prijs, laat het
+     dan staan en controleer het zo: open beide Payment Links in een
+     privévenster, kies bij het adres Duitsland en daarna Frankrijk, en kijk
+     of het bedrag na de proefperiode €2,95 en €24,95 blijft. Blijft het
+     gelijk, dan klopt "inclusief btw". Maak geen nieuwe Payment Links: dan
+     staat Managed Payments niet meer vanzelf aan (TODO 58).
+  3. ✅ **Het vinkje voor het herroepingsrecht blijft** (Maarten,
+     2026-11-11). `v5_abo_toestemming` en `v5_rf_s3_p` blijven zoals ze zijn.
   4. **De welkomstreeks zonder vooraf gevraagde toestemming.** Dat mag
      waarschijnlijk alleen als je bij het aanmaken van het account meteen
      hoort dat de mails komen en dat afmelden kan. Voorstel: bij Account
