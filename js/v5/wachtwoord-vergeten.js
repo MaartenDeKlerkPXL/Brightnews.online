@@ -4,16 +4,22 @@
 //
 // Zelfde opbouw als inloggen. De controle op het e-mailadres gebeurt in de
 // browser, vóór er iets wordt verstuurd: alleen een onvolledig adres geeft
-// een fout. "Kijk in je mail" verschijnt straks altijd, ook bij een onbekend
-// adres, zodat de pagina niet verklapt of er een account bestaat.
+// een fout. "Kijk in je mail" verschijnt altijd, ook bij een onbekend adres,
+// zodat de pagina niet verklapt of er een account bestaat.
 //
-// Herstellen zelf is bewust nog niet gekoppeld (Supabase, TODO punt 66). De
-// knoppen controleren de velden en melden dan via showNotification() dat het
-// voorbeeld niet gekoppeld is. Om de staten te bekijken:
+// Gekoppeld aan Supabase (TODO 66 punt 11):
+//   Stuur link       resetPasswordForEmail, terug naar deze pagina met
+//                    ?type=recovery. "Stuur opnieuw" pas na 60 seconden.
+//   ?type=recovery   de link uit de mail. Supabase logt de lezer daarmee in;
+//                    updateUser zet het nieuwe wachtwoord, daarna door naar
+//                    Mijn account. Is de link verlopen of al gebruikt, dan
+//                    het formulier met de melding "Deze link is verlopen".
+//
+// Om de staten te bekijken (zonder Supabase):
 //   ?staat=fout       het onvolledige adres met de foutmelding
 //   ?staat=verstuurd  kijk in je mail (met ?email= het adres in de tekst)
-//   ?type=recovery    nieuw wachtwoord kiezen, waar de link uit de mail heen
-//                     gaat (met ?email= het adres van het account)
+//   ?staat=nieuw      nieuw wachtwoord kiezen (met ?email=)
+//   ?staat=verlopen   het formulier met de melding over de verlopen link
 
 (function () {
     'use strict';
@@ -27,10 +33,15 @@
     const VOLLEDIG = /^[^\s@]+@[^\s@.]+(\.[^\s@.]+)+$/;
 
     const $ = id => document.getElementById(id);
+    const client = window.supabaseClient;
     const email = $('wv-email');
     const wachtwoord = $('wv-wachtwoord');
+    const foutTekst = $('wv-wachtwoord-fout').querySelector('span');
     const staat = B.param('staat');
     const isHerstel = B.param('type') === 'recovery';
+    // Supabase zet een mislukte link als fout in het adres (#error_code=otp_expired).
+    const linkFout = /(^|[#&])error(_code)?=/.test(window.location.hash);
+    let mailAdres = B.param('email') || '';
 
     // Field error aan of uit. Het wachtwoordveld houdt zijn hulptekst erbij.
     function veldFout(veld, melding, aan, hulp) {
@@ -43,60 +54,151 @@
     }
 
     function teken() {
-        document.title = `${t(isHerstel ? 'v5_wv_nieuw_titel' : 'v5_in_vergeten')} · BrightNews`;
+        document.title = `${t($('wv-nieuwstaat').hidden ? 'v5_in_vergeten' : 'v5_wv_nieuw_titel')} · BrightNews`;
         email.placeholder = t('v5_in_email_voorbeeld');
         document.querySelectorAll('[data-naar="inloggen"]').forEach(a => {
             a.href = B.metTestdag('/v5-inloggen.html');
         });
 
-        const adres = B.param('email');
-        $('wv-mail-naar').textContent = adres
-            ? t('v5_wv_mail_naar', { email: adres })
+        $('wv-mail-naar').textContent = mailAdres
+            ? t('v5_wv_mail_naar', { email: mailAdres })
             : t('v5_wv_mail_naar_zonder');
-        $('wv-nieuw-voor').textContent = t('v5_wv_nieuw_tekst', { email: adres || t('v5_in_email_voorbeeld') });
+        $('wv-nieuw-voor').textContent = t('v5_wv_nieuw_tekst', { email: mailAdres || t('v5_in_email_voorbeeld') });
     }
 
-    // ── Staten om te bekijken ────────────────────────────────────────────
+    function toon(welke) {
+        $('wv-formulierstaat').hidden = welke !== 'formulier';
+        $('wv-verstuurdstaat').hidden = welke !== 'verstuurd';
+        $('wv-nieuwstaat').hidden = welke !== 'nieuw';
+    }
 
-    if (isHerstel) {
-        $('wv-formulierstaat').hidden = true;
-        $('wv-nieuwstaat').hidden = false;
+    function toonVerlopen() {
+        toon('formulier');
+        teken();
+        $('wv-verlopen').hidden = false;
+        $('wv-verlopen').focus();
+    }
+
+    function meldFout(fout) {
+        console.warn('BrightNews v5: wachtwoord herstellen', fout);
+        window.showNotification(t(fout?.status === 429 ? 'v5_in_fout_te_vaak' : 'v5_in_fout_algemeen'), 'error');
+    }
+
+    // Te vaak, geen verbinding of een storing: dat mag de lezer weten. Een
+    // onbekend adres niet.
+    async function stuurHerstel() {
+        const { error } = await client.auth.resetPasswordForEmail(mailAdres, {
+            redirectTo: `${window.location.origin}/v5-wachtwoord-vergeten.html?type=recovery`,
+        });
+        if (error && (!error.status || error.status === 429 || error.status >= 500)) throw error;
+        if (error) console.warn('BrightNews v5: herstelmail niet verstuurd', error.message);
+    }
+
+    // ── Staten ───────────────────────────────────────────────────────────
+
+    if (staat === 'nieuw') {
+        toon('nieuw');
     } else if (staat === 'verstuurd') {
-        $('wv-formulierstaat').hidden = true;
-        $('wv-verstuurdstaat').hidden = false;
+        toon('verstuurd');
+    } else if (staat === 'verlopen') {
+        $('wv-verlopen').hidden = false;
     } else if (staat === 'fout') {
         email.value = VOORBEELD_ONVOLLEDIG;
         veldFout(email, $('wv-email-fout'), true);
+    } else if (isHerstel && linkFout) {
+        toonVerlopen();
+    } else if (isHerstel) {
+        // Wachten tot Supabase de link uit het adres heeft verwerkt.
+        toon('nieuw');
+        (window.bnAccount || Promise.resolve({ gebruiker: null })).then(({ gebruiker }) => {
+            if (!gebruiker) { toonVerlopen(); return; }
+            mailAdres = gebruiker.email || '';
+            teken();
+            wachtwoord.focus();
+        });
     }
 
     // ── Gedrag ───────────────────────────────────────────────────────────
 
-    const nietGekoppeld = () => window.showNotification(t('v5_wv_niet_gekoppeld'));
-
-    $('wv-formulier').addEventListener('submit', e => {
+    $('wv-formulier').addEventListener('submit', async e => {
         e.preventDefault();
+        const knop = e.currentTarget.querySelector('button[type="submit"]');
+        if (knop.disabled) return;
         const goed = VOLLEDIG.test(email.value.trim());
         veldFout(email, $('wv-email-fout'), !goed);
         if (!goed) { email.focus(); return; }
-        nietGekoppeld();
+        if (!client || staat) { window.showNotification(t('v5_wv_niet_gekoppeld')); return; }
+
+        mailAdres = email.value.trim();
+        knop.disabled = true;
+        knop.setAttribute('aria-busy', 'true');
+        try {
+            await stuurHerstel();
+            $('wv-verlopen').hidden = true;
+            teken();
+            toon('verstuurd');
+            const kop = $('wv-verstuurdstaat').querySelector('h1');
+            kop.tabIndex = -1;
+            kop.focus();
+            B.wachtKnop($('wv-opnieuw'));
+        } catch (fout) {
+            meldFout(fout);
+        } finally {
+            knop.disabled = false;
+            knop.removeAttribute('aria-busy');
+        }
     });
 
     email.addEventListener('input', () => {
         if (email.hasAttribute('aria-invalid') && VOLLEDIG.test(email.value.trim())) veldFout(email, $('wv-email-fout'), false);
     });
 
-    $('wv-opnieuw').addEventListener('click', nietGekoppeld);
+    $('wv-opnieuw').addEventListener('click', async () => {
+        if (!client || !mailAdres || staat) { window.showNotification(t('v5_in_opnieuw_gestuurd')); return; }
+        try {
+            await stuurHerstel();
+            window.showNotification(t('v5_in_opnieuw_gestuurd'));
+            B.wachtKnop($('wv-opnieuw'));
+        } catch (fout) {
+            meldFout(fout);
+        }
+    });
 
     $('wv-tonen').addEventListener('change', e => {
         wachtwoord.type = e.target.checked ? 'text' : 'password';
     });
 
-    $('wv-nieuw').addEventListener('submit', e => {
+    $('wv-nieuw').addEventListener('submit', async e => {
         e.preventDefault();
+        const knop = e.currentTarget.querySelector('button[type="submit"]');
+        if (knop.disabled) return;
         const goed = wachtwoord.value.length >= MIN_WACHTWOORD;
+        foutTekst.textContent = t('v5_in_fout_nieuw');
         veldFout(wachtwoord, $('wv-wachtwoord-fout'), !goed, 'wv-wachtwoord-hulp');
         if (!goed) { wachtwoord.focus(); return; }
-        nietGekoppeld();
+        if (!client || !isHerstel) { window.showNotification(t('v5_wv_niet_gekoppeld')); return; }
+
+        knop.disabled = true;
+        knop.setAttribute('aria-busy', 'true');
+        try {
+            const { error } = await client.auth.updateUser({ password: wachtwoord.value });
+            if (error?.code === 'weak_password' || error?.code === 'same_password') {
+                foutTekst.textContent = t(error.code === 'same_password' ? 'v5_wv_fout_zelfde' : 'v5_in_fout_nieuw');
+                veldFout(wachtwoord, $('wv-wachtwoord-fout'), true, 'wv-wachtwoord-hulp');
+                wachtwoord.focus();
+                return;
+            }
+            // Sessie weg of verlopen: opnieuw een link aanvragen.
+            if (error?.status === 401 || error?.code === 'session_not_found') { toonVerlopen(); return; }
+            if (error) throw error;
+            window.showNotification(t('v5_wv_opgeslagen'));
+            setTimeout(() => { window.location.href = '/v5-profiel.html'; }, 1200);
+        } catch (fout) {
+            meldFout(fout);
+        } finally {
+            knop.disabled = false;
+            knop.removeAttribute('aria-busy');
+        }
     });
 
     wachtwoord.addEventListener('input', () => {

@@ -606,6 +606,29 @@
         return a;
     }
 
+    // ── Opnieuw versturen ────────────────────────────────────────────────
+
+    // "Stuur opnieuw" pas na een wachttijd, met de resterende seconden in de
+    // knop (Inloggen en Wachtwoord vergeten). De knop heeft een <span> voor
+    // de tekst.
+    function wachtKnop(knopEl, seconden = 60) {
+        const tekst = knopEl.querySelector('span');
+        let over = seconden;
+        knopEl.disabled = true;
+        const tik = () => {
+            if (over <= 0) {
+                clearInterval(klok);
+                knopEl.disabled = false;
+                tekst.textContent = t('v5_in_opnieuw');
+                return;
+            }
+            tekst.textContent = t('v5_in_opnieuw_over', { s: over });
+            over--;
+        };
+        const klok = setInterval(tik, 1000);
+        tik();
+    }
+
     // ── Meldingen ────────────────────────────────────────────────────────
 
     // Zelfde aanroep als in js/auth.js, maar in de v5-opmaak (component
@@ -662,6 +685,6 @@
         aantalVerhalen, perDag, archiefPerDag, digestsVan, nieuwsteDigestDag, verhalenVanDigests, laatsteMoment,
         zonderVerwijzingen, eersteZinnen, url, metTestdag, categorieLabel,
         el, icoon, link, knop, zinMetDelen, onderwerpLinks, beeld, merkbeeld, storyCard, headlineItem, editieRaster, digestCard,
-        aanwijzing, bronnenRegel, leeg, gelezen, markeerGelezen, deelBalk, origineelLink, start,
+        aanwijzing, bronnenRegel, leeg, gelezen, markeerGelezen, deelBalk, origineelLink, start, wachtKnop,
     };
 })();

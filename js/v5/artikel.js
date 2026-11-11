@@ -101,6 +101,12 @@
         tab.name = 'tab';
         tab.value = 'account';
         form.appendChild(tab);
+        // Na het inloggen terug naar dit artikel.
+        const terug = el('input');
+        terug.type = 'hidden';
+        terug.name = 'next';
+        terug.value = window.location.pathname + window.location.search;
+        form.appendChild(terug);
         const veld = el('div', 'invoer');
         const label = el('label', 'invoer__label', t('v5_in_email'));
         label.htmlFor = 'paywall-email';
@@ -117,7 +123,7 @@
         form.appendChild(knop);
         blok.appendChild(form);
 
-        blok.appendChild(B.link('/v5-inloggen.html', 'paywall__meer', t('v5_al_account')));
+        blok.appendChild(B.link(`/v5-inloggen.html?next=${encodeURIComponent(window.location.pathname + window.location.search)}`, 'paywall__meer', t('v5_al_account')));
         return blok;
     }
 

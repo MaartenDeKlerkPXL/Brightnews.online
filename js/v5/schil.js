@@ -16,12 +16,43 @@
 // als de live site, zodat een keuze op beide geldt:
 //   brightNews_cookies        'accepted' (statistieken aan) | 'essential'
 //   brightNews_cookies_datum  dag van de keuze; na 12 maanden vragen we opnieuw
+//
+// En het account: window.bnAccount is een belofte op { gebruiker, premium }.
+// Is iemand ingelogd, dan krijgt <body> data-ingelogd (Mijn account in plaats
+// van Inloggen), met Premium ook data-premium (geen "Probeer Premium").
 
 (function () {
     'use strict';
 
     const THEMA_SLEUTEL = 'bn-thema';
     const TAAL_SLEUTEL = 'selectedLanguage';
+
+    // ── Account ──────────────────────────────────────────────────────────
+
+    // getSession() wacht ook op een inloglink in het adres (detectSessionInUrl),
+    // dus een lezer die vanuit de mail op een willekeurige v5-pagina landt, is
+    // hier al ingelogd. Premium-voorwaarde gelijk aan lees_artikel().
+    async function laadAccount() {
+        const client = window.supabaseClient;
+        if (!client) return { gebruiker: null, premium: false };
+        try {
+            const { data } = await client.auth.getSession();
+            const gebruiker = data.session?.user || null;
+            if (!gebruiker) return { gebruiker: null, premium: false };
+            document.body.dataset.ingelogd = '';
+            const { data: profiel } = await client.from('profiles')
+                .select('is_premium, premium_until').eq('id', gebruiker.id).maybeSingle();
+            const premium = !!profiel?.is_premium
+                && (!profiel.premium_until || new Date(profiel.premium_until) > new Date());
+            if (premium) document.body.dataset.premium = '';
+            return { gebruiker, premium };
+        } catch (e) {
+            console.warn('BrightNews v5: account niet geladen', e);
+            return { gebruiker: null, premium: false };
+        }
+    }
+
+    window.bnAccount = laadAccount();
 
     function lees(sleutel) {
         try { return localStorage.getItem(sleutel); } catch { return null; }

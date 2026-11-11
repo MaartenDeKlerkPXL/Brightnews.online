@@ -2089,7 +2089,21 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      vanzelf). Ook
      de koppen van een oudere editie zijn daardoor nog geen links, terwijl
      de uitlegnotitie zegt dat elke kop het artikel opent.
-  9. **Inloggen koppelen op `v5-inloggen.html`** (Supabase, Erik): inloglink
+  9. ✅ **Gekoppeld op 2026-11-13** (Maarten, met Claude). Supabase laadt nu
+     op elke v5-pagina (via `partials/v5/footer.html`, CSP met `connect-src`
+     naar Supabase); `js/v5/schil.js` zet `data-ingelogd` en `data-premium`.
+     Inloglink (`signInWithOtp`), wachtwoord (`signInWithPassword`), account
+     maken (`signUp` of inloglink) met `preferred_lang` en
+     `geen_welkomstmails` in `user_metadata`, terug naar `?next=`, "Stuur
+     opnieuw" na 60 seconden, uitloggen in Mijn account. Al ingelogd op de
+     inlogpagina: meteen door. Getest met een nepversie van Supabase in de
+     browser (alle routes), en de echte verbinding met een leesaanroep.
+     **Nog door Maarten:** in Supabase → Authentication → URL Configuration
+     bij Redirect URLs `https://brightnews.online/**` laten staan of
+     toevoegen, en voor lokaal testen `http://localhost:8945/**`. Anders
+     stuurt de inloglink je naar de Site URL in plaats van terug naar de
+     pagina. Daarna één keer echt testen met een wegwerpadres.
+     Oorspronkelijke tekst: **Inloggen koppelen op `v5-inloggen.html`** (Supabase, Erik): inloglink
      per mail (magic link), inloggen met wachtwoord, account maken met of
      zonder wachtwoord, en daarna terug naar `?next=` (anders Mijn account).
      Af te stemmen: de wachtwoordregel (voorstel: minstens 8 tekens) en
@@ -2110,7 +2124,11 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
       apparaat gelden. Open vragen uit Figma: wat doet een promocode
       (gratis Premium-periode of korting), en hoe gaat Account verwijderen
       bij Premium (eerst opzeggen in het klantportaal)?
-  11. **Wachtwoord herstellen koppelen op `v5-wachtwoord-vergeten.html`**
+  11. ✅ **Gekoppeld op 2026-11-13**, samen met punt 9: `resetPasswordForEmail`
+      terug naar `?type=recovery`, `updateUser` met aparte meldingen voor te
+      kort en "zelfde als nu", een verlopen link toont het formulier met de
+      waarschuwing. Voorbeeldstaten nu `?staat=nieuw` en `?staat=verlopen`.
+      Oorspronkelijke tekst: **Wachtwoord herstellen koppelen op `v5-wachtwoord-vergeten.html`**
       (Supabase, Erik). "Stuur link" vraagt de herstelmail aan
       (`resetPasswordForEmail`) met als terugadres deze pagina met
       `?type=recovery`; "Kijk in je mail" verschijnt altijd, ook bij een

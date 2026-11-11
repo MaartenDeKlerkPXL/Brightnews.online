@@ -69,6 +69,16 @@
     background: var(--surface-muted);
 }
 
+/* Uitgeschakeld, zoals "Stuur opnieuw" in de eerste 60 seconden. Een knop die
+   even uit staat tijdens het versturen (aria-busy) houdt zijn kleur, anders
+   flitst hij grijs. */
+.btn:disabled:not([aria-busy]) {
+    background: var(--surface-muted);
+    border-color: var(--border-default);
+    color: var(--text-secondary);
+    cursor: not-allowed;
+}
+
 .btn--sm {
     height: var(--control-height-sm);
     padding-inline: var(--spacing-sm);

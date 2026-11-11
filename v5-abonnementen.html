@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
     <meta name="robots" content="noindex, nofollow">
     <title>Premium (v5-voorbeeld) · BrightNews</title>
     <!-- schil:v5-thema -->
@@ -350,6 +350,13 @@
         </div>
     </div>
 </section>
+
+<!-- Supabase op elke v5-pagina (TODO 66 punt 9): js/v5/schil.js zet daarmee
+     data-ingelogd en data-premium op <body>, en de inloglink uit de mail mag
+     op elke pagina landen. Vóór de paginascripts, zodat window.supabaseClient
+     klaarstaat (defer houdt de volgorde aan). -->
+<script src="/js/vendor/supabase-js-2.112.4.js" defer></script>
+<script src="/js/supabase-init.js" defer></script>
 <!-- /schil:v5-footer -->
 <script src="/data/translations.js" defer></script>
 <script src="/js/v5/schil.js" defer></script>

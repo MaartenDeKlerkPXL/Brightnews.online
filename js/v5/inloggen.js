@@ -3,17 +3,25 @@
 // Desktop).
 //
 // Eén pagina, twee tabbladen, elk met een eigen adres: zonder parameter
-// Inloggen, met ?tab=account Account maken. ?next= (bijvoorbeeld
-// abonnementen) blijft bij het wisselen bewaard; daar gaat de lezer na het
-// inloggen naartoe zodra de back-end gekoppeld is.
+// Inloggen, met ?tab=account Account maken. ?next= blijft bij het wisselen
+// bewaard; daar gaat de lezer na het inloggen naartoe (een pad op deze site,
+// of een korte naam als "abonnementen"). Zonder ?next=: Mijn account.
+// ?email= vult het e-mailadres in (de paywall stuurt het mee).
 //
 // De inloglink is de standaard. Kies je je wachtwoord, dan verschijnt het
 // wachtwoordveld in de kaart (geen pop-up) en volgt de knoptekst de keuze.
 //
-// Inloggen zelf is bewust nog niet gekoppeld (Supabase, TODO punt 66). De
-// knop controleert de velden en meldt dan via showNotification() dat het
-// voorbeeld niet gekoppeld is. Om de staten te bekijken: ?staat=fout (de
-// melding bovenaan de kaart) en ?staat=verstuurd (kijk in je mail).
+// Gekoppeld aan Supabase (TODO 66 punt 9):
+//   inloglink   signInWithOtp; bij Inloggen alleen voor bestaande accounts
+//   wachtwoord  signInWithPassword, of signUp bij Account maken
+// De pagina verklapt nooit of een e-mailadres een account heeft: een
+// inloglink "gaat altijd weg", ook als Supabase het adres niet kent. Bij een
+// nieuw account gaan de taal (preferred_lang) en het vinkje "geen
+// welkomstmails" (geen_welkomstmails) mee in user_metadata; backend/
+// stuur-mails.js leest die. "Stuur opnieuw" kan pas na 60 seconden.
+//
+// Om de staten te bekijken: ?staat=fout (de melding bovenaan de kaart) en
+// ?staat=verstuurd (kijk in je mail).
 
 (function () {
     'use strict';
@@ -21,14 +29,18 @@
     const B = window.BN5;
     const { t } = B;
     const MIN_WACHTWOORD = 8;
+    const WACHTTIJD = 60;
 
     const $ = id => document.getElementById(id);
+    const client = window.supabaseClient;
     const formulier = $('in-formulier');
     const email = $('in-email');
     const wachtwoord = $('in-wachtwoord');
+    const knop = formulier.querySelector('button[type="submit"]');
     const isAccount = B.param('tab') === 'account';
     const staat = B.param('staat');
     const next = B.param('next');
+    let opnieuw = null;
 
     // Adres van deze pagina, met tab en next.
     function adres(tab) {
@@ -37,6 +49,13 @@
         if (next) p.set('next', next);
         const q = p.toString();
         return `/v5-inloggen.html${q ? `?${q}` : ''}`;
+    }
+
+    // Alleen een adres op deze site: ?next= mag de lezer niet wegsturen.
+    function doel() {
+        if (next && /^\/(?![/\\])/.test(next)) return next;
+        if (next && /^[a-z-]+$/.test(next)) return `/v5-${next}.html`;
+        return '/v5-profiel.html';
     }
 
     function manier() {
@@ -65,10 +84,10 @@
         $('in-vergeten').hidden = isAccount;
         // Bij een nieuw wachtwoord verwijst het veld ook naar de regel.
         if (isAccount && !wachtwoord.hasAttribute('aria-invalid')) wachtwoord.setAttribute('aria-describedby', 'in-wachtwoord-hulp');
-        let knop = 'v5_in_stuur_link';
-        if (isAccount) knop = 'v5_in_account_tab';
-        else if (metWachtwoord) knop = 'schil_inloggen';
-        $('in-knop').textContent = t(knop);
+        let tekst = 'v5_in_stuur_link';
+        if (isAccount) tekst = 'v5_in_account_tab';
+        else if (metWachtwoord) tekst = 'schil_inloggen';
+        $('in-knop').textContent = t(tekst);
     }
 
     // "Met deze knop ga je akkoord met de {voorwaarden} en de {privacy}." De
@@ -103,11 +122,83 @@
         akkoordZin();
         werkKaartBij();
 
-        const verstuurdNaar = B.param('email');
+        const verstuurdNaar = email.value.trim() || B.param('email');
         $('in-mail-naar').textContent = verstuurdNaar
             ? t('v5_in_mail_naar', { email: verstuurdNaar })
             : t('v5_in_mail_naar_zonder');
         $('in-ander').href = B.metTestdag(adres(isAccount ? 'account' : 'inloggen'));
+    }
+
+    // ── Na het versturen ─────────────────────────────────────────────────
+
+    function toonVerstuurd(adresVerstuurd) {
+        $('in-formulierstaat').hidden = true;
+        $('in-verstuurdstaat').hidden = false;
+        $('in-mail-naar').textContent = t('v5_in_mail_naar', { email: adresVerstuurd });
+        const kop = $('in-verstuurdstaat').querySelector('h1');
+        kop.tabIndex = -1;
+        kop.focus();
+        B.wachtKnop($('in-opnieuw'), WACHTTIJD);
+    }
+
+    // ── Supabase ─────────────────────────────────────────────────────────
+
+    function metadata() {
+        return { preferred_lang: B.taal(), geen_welkomstmails: $('in-geen-mails').checked };
+    }
+
+    // Te vaak, geen verbinding of een storing: dat mag de lezer weten. Elke
+    // andere weigering (zoals "dit adres kent geen account") niet.
+    function moetMelden(fout) {
+        return !fout.status || fout.status === 429 || fout.status >= 500;
+    }
+
+    function meldFout(fout) {
+        console.warn('BrightNews v5: inloggen', fout);
+        window.showNotification(t(fout?.status === 429 ? 'v5_in_fout_te_vaak' : 'v5_in_fout_algemeen'), 'error');
+    }
+
+    async function stuurLink(adresLezer) {
+        const { error } = await client.auth.signInWithOtp({
+            email: adresLezer,
+            options: {
+                shouldCreateUser: isAccount,
+                emailRedirectTo: `${window.location.origin}${doel()}`,
+                ...(isAccount ? { data: metadata() } : {}),
+            },
+        });
+        if (error && moetMelden(error)) throw error;
+        if (error) console.warn('BrightNews v5: inloglink niet verstuurd', error.message);
+    }
+
+    async function logInMetWachtwoord(adresLezer) {
+        const { error } = await client.auth.signInWithPassword({ email: adresLezer, password: wachtwoord.value });
+        if (!error) { window.location.href = doel(); return; }
+        if (moetMelden(error)) throw error;
+        // Onbekend adres, verkeerd wachtwoord of nog niet bevestigd: één
+        // melding, met de inloglink als uitweg.
+        $('in-fout').hidden = false;
+        $('in-fout').focus();
+    }
+
+    async function maakAccountMetWachtwoord(adresLezer) {
+        const { data, error } = await client.auth.signUp({
+            email: adresLezer,
+            password: wachtwoord.value,
+            options: { emailRedirectTo: `${window.location.origin}${doel()}`, data: metadata() },
+        });
+        if (error?.code === 'weak_password') {
+            $('in-wachtwoord-fouttekst').textContent = t('v5_in_fout_nieuw');
+            veldFout(wachtwoord, $('in-wachtwoord-fout'), true);
+            wachtwoord.focus();
+            return;
+        }
+        if (error && moetMelden(error)) throw error;
+        if (data?.session) { window.location.href = doel(); return; }
+        // Bevestigen per mail. Bestond het adres al, dan zegt Supabase dat
+        // niet, en wij dus ook niet.
+        opnieuw = () => client.auth.resend({ type: 'signup', email: adresLezer, options: { emailRedirectTo: `${window.location.origin}${doel()}` } });
+        toonVerstuurd(adresLezer);
     }
 
     // ── Staten om te bekijken ────────────────────────────────────────────
@@ -119,6 +210,10 @@
     } else if (staat === 'fout' && !isAccount) {
         formulier.querySelector('input[value="wachtwoord"]').checked = true;
         $('in-fout').hidden = false;
+    } else {
+        if (B.param('email')) email.value = B.param('email');
+        // Al ingelogd? Dan heeft deze pagina niets te doen.
+        window.bnAccount?.then(({ gebruiker }) => { if (gebruiker) window.location.replace(doel()); });
     }
 
     // ── Gedrag ───────────────────────────────────────────────────────────
@@ -137,11 +232,12 @@
         formulier.querySelector('input[value="link"]').checked = true;
         $('in-fout').hidden = true;
         werkKaartBij();
-        formulier.querySelector('button[type="submit"]').focus();
+        knop.focus();
     });
 
-    formulier.addEventListener('submit', e => {
+    formulier.addEventListener('submit', async e => {
         e.preventDefault();
+        if (knop.disabled) return;
         const emailGoed = email.value.trim() !== '' && email.validity.valid;
         veldFout(email, $('in-email-fout'), !emailGoed);
 
@@ -156,10 +252,42 @@
 
         if (!emailGoed) { email.focus(); return; }
         if (!wachtwoordGoed) { wachtwoord.focus(); return; }
-        window.showNotification(t('v5_in_niet_gekoppeld'));
+        if (!client) { meldFout(null); return; }
+
+        const adresLezer = email.value.trim();
+        $('in-fout').hidden = true;
+        knop.disabled = true;
+        knop.setAttribute('aria-busy', 'true');
+        try {
+            if (manier() === 'link') {
+                await stuurLink(adresLezer);
+                opnieuw = () => stuurLink(adresLezer);
+                toonVerstuurd(adresLezer);
+            } else if (isAccount) {
+                await maakAccountMetWachtwoord(adresLezer);
+            } else {
+                await logInMetWachtwoord(adresLezer);
+            }
+        } catch (fout) {
+            meldFout(fout);
+        } finally {
+            knop.disabled = false;
+            knop.removeAttribute('aria-busy');
+        }
     });
 
-    $('in-opnieuw').addEventListener('click', () => window.showNotification(t('v5_in_niet_gekoppeld')));
+    $('in-opnieuw').addEventListener('click', async () => {
+        // In het voorbeeld (?staat=verstuurd) is er niets om opnieuw te sturen.
+        if (!opnieuw) { window.showNotification(t('v5_in_opnieuw_gestuurd')); return; }
+        try {
+            const resultaat = await opnieuw();
+            if (resultaat?.error && moetMelden(resultaat.error)) throw resultaat.error;
+            window.showNotification(t('v5_in_opnieuw_gestuurd'));
+            B.wachtKnop($('in-opnieuw'), WACHTTIJD);
+        } catch (fout) {
+            meldFout(fout);
+        }
+    });
 
     B.start(teken);
 

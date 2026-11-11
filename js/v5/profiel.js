@@ -10,9 +10,9 @@
 // Datums zijn wel echt: het tegoed begint opnieuw op de 1e van de volgende
 // maand (Nederlandse tijd), de proefperiode loopt 30 dagen.
 //
-// Knoppen die iets bij de back-end zouden doen (Toepassen, Uitloggen,
-// Abonnement beheren, de mails aan of uit) melden via showNotification() dat
-// het voorbeeld niet gekoppeld is.
+// Knoppen die iets bij de back-end zouden doen (Toepassen, Abonnement
+// beheren, de mails aan of uit) melden via showNotification() dat het
+// voorbeeld niet gekoppeld is. Uitloggen werkt wel (Supabase, TODO 66 punt 9).
 
 (function () {
     'use strict';
@@ -126,7 +126,15 @@
     });
 
     $('pr-mails').addEventListener('change', nietGekoppeld);
-    $('pr-uitloggen').addEventListener('click', nietGekoppeld);
+    $('pr-uitloggen').addEventListener('click', async () => {
+        const client = window.supabaseClient;
+        if (!client) { nietGekoppeld(); return; }
+        // scope 'local': alleen dit apparaat. Lukt het niet (geen verbinding),
+        // dan wist signOut de sessie in deze browser toch.
+        const { error } = await client.auth.signOut({ scope: 'local' });
+        if (error) console.warn('BrightNews v5: uitloggen', error);
+        window.location.href = '/v5-home.html';
+    });
     $('pr-beheren').addEventListener('click', () => window.showNotification(t('v5_pr_portaal_niet_gekoppeld')));
 
     B.start(teken);
