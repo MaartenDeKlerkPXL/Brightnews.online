@@ -1457,7 +1457,18 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   gebeurt; het is een waarschuwing, geen taak. *(Maarten, bij de eerstvolgende
   nieuwe link.)*
 
-- [ ] **59. De paywall is hard — overweeg een metered model.**
+- [x] **59. De paywall is hard — overweeg een metered model.** ✅ 2026-11-12:
+  PR #15 gemerged (een gratis account leest 5 volledige artikelen per maand).
+  Na de review ook live in Supabase: een slot per lezer in `lees_artikel()`
+  (twee tabbladen tegelijk leveren geen zesde artikel op), de maand begint om
+  00:00 Nederlandse tijd, en `search_path = public, pg_temp` op de drie
+  functies. Live en `supabase/metered-paywall-2026-09-28.sql` zijn gelijk.
+  Bewust niet opgepakt (oude site, wordt vervangen door v5): bij het opnieuw
+  openen van een al gelezen artikel toont de melding het maandtotaal, en een
+  oud artikel zonder volledige tekst toont bij tegoed op toch de "op"-melding.
+  Neem die twee mee bij het koppelen van de v5-paywall (TODO 66 punt 6).
+  PR #16 (de scraper, punt 65) is dezelfde dag gemerged, met een strengere
+  lijst menuzinnen uit de review.
   *(Besluit Maarten 2026-09-27: doen, aantal later bepalen — 5 of 10.)*
 
   > **Gebouwd, staat in [PR #15](https://github.com/MaartenDeKlerkPXL/Brightnews.online/pull/15)

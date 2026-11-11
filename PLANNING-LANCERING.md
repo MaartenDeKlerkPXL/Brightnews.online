@@ -106,7 +106,7 @@ via een PR. Laat die PR eerst nakijken door een review-agent
 ### Donderdag 12 november
 
 - Nakijken of de nachtelijke controle weer draait.
-- PR #15 (vijf gratis artikelen per maand) en PR #16 (scraper) nakijken met
+- ✅ PR #15 (vijf gratis artikelen per maand) en PR #16 (scraper) nakijken met
   een review-agent, testen en mergen. Neem in #15 de vaste `search_path` van
   `gratis_artikelen_per_maand` over (zie PR #17).
 
