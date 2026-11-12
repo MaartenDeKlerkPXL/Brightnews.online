@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
     <meta name="robots" content="max-image-preview:large">
-    <link rel="alternate" type="application/rss+xml" title="BrightNews (English)" href="/feed-en.xml">
-    <link rel="alternate" type="application/rss+xml" title="BrightNews (Nederlands)" href="/feed-nl.xml">
-    <link rel="alternate" type="application/rss+xml" title="BrightNews (Deutsch)" href="/feed-de.xml">
-    <link rel="alternate" type="application/rss+xml" title="BrightNews (Français)" href="/feed-fr.xml">
-    <link rel="alternate" type="application/rss+xml" title="BrightNews (Español)" href="/feed-es.xml">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://www.googletagmanager.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
-    <meta name="description" content="A fresh selection of positive Finance news from around the world, every day.">
     <title>Good news about Finance | BrightNews</title>
+<script>
+    /* Weergave vóór de eerste weergave toepassen (redesign v5). Staat inline
+       en zo hoog mogelijk in <head>: een extern script zou pas laden nadat de
+       pagina al één keer in de systeemkleur getekend is, en dan flitst een
+       lezer die "donker" koos eerst wit. De CSP staat inline scripts toe.
+       Zonder eigen keuze doet dit niets en volgt css/tokens.css het systeem.
+       localStorage kan weigeren (privévenster, geblokkeerde opslag); dan valt
+       de site gewoon terug op het systeem. */
+    try {
+        var bnThema = localStorage.getItem('bn-thema');
+        if (bnThema === 'licht' || bnThema === 'donker') {
+            document.documentElement.setAttribute('data-theme', bnThema);
+        }
+    } catch (e) { /* geen opslag: systeem volgen */ }
+</script>
+    <meta name="description" content="A fresh selection of positive Finance news from around the world, every day.">
     <link rel="canonical" href="https://brightnews.online/categories/en/finance.html">
     <link rel="alternate" hreflang="nl" href="https://brightnews.online/categories/nl/financien.html">
     <link rel="alternate" hreflang="en" href="https://brightnews.online/categories/en/finance.html">
@@ -19,158 +29,277 @@
     <link rel="alternate" hreflang="fr" href="https://brightnews.online/categories/fr/finances.html">
     <link rel="alternate" hreflang="es" href="https://brightnews.online/categories/es/finanzas.html">
     <link rel="alternate" hreflang="x-default" href="https://brightnews.online/categories/en/finance.html">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (English)" href="/feed-en.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Nederlands)" href="/feed-nl.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Deutsch)" href="/feed-de.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Français)" href="/feed-fr.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Español)" href="/feed-es.xml">
     <meta property="og:title" content="Good news about Finance">
     <meta property="og:description" content="A fresh selection of positive Finance news from around the world, every day.">
     <meta property="og:url" content="https://brightnews.online/categories/en/finance.html">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://brightnews.online/assets/brightnews-logo.png">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0a120d" media="(prefers-color-scheme: dark)">
     <link rel="icon" type="image/png" href="/assets/brightnews-logo-faviconv5.png">
-    <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/components.css">
-    <!-- .grid-container en .news-card staan in de paginastijl van de
-         homepage; deze pagina gebruikt dezelfde kaarten. -->
-    <link rel="stylesheet" href="/css/pages/index.css">
-    <link rel="stylesheet" href="/css/pages/categorie.css">
-    <script src="/data/translations.js" defer></script>
-    <script src="/js/main.js" defer></script>
+    <link rel="preload" href="/assets/fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/tokens.css">
+    <link rel="stylesheet" href="/css/v5/basis.css">
+    <link rel="stylesheet" href="/css/v5/componenten.css">
+    <link rel="stylesheet" href="/css/v5/paginas.css">
 </head>
-<body>
-<a href="#main-content" class="skip-link" data-i18n="skip_to_content">Skip to main content</a>
-<header>
-    <nav class="container">
-        <div class="nav-left-group">
-            <details class="dropdown language-picker">
-                <summary class="dropbtn" id="current-lang">
-                    <span class="taal-vlag">🇺🇸</span><span class="taal-naam">English</span><span class="taal-code" aria-hidden="true">EN</span> <span class="arrow">▼</span>
-                </summary>
-                <div class="dropdown-content">
-                        <a href="#" onclick="wisselTaal('en', '🇺🇸 English', event)"><span class="taal-vlag">🇺🇸</span> English</a>
-                    <a href="#" onclick="wisselTaal('nl', '🇳🇱 Nederlands', event)"><span class="taal-vlag">🇳🇱</span> Nederlands</a>
-                    <a href="#" onclick="wisselTaal('de', '🇩🇪 Deutsch', event)"><span class="taal-vlag">🇩🇪</span> Deutsch</a>
-                    <a href="#" onclick="wisselTaal('fr', '🇫🇷 Français', event)"><span class="taal-vlag">🇫🇷</span> Français</a>
-                    <a href="#" onclick="wisselTaal('es', '🇪🇸 Español', event)"><span class="taal-vlag">🇪🇸</span> Español</a>
-                </div>
-            </details>
+<body data-sectie="nieuws" data-alt-nl="/categories/nl/financien.html" data-alt-en="/categories/en/finance.html" data-alt-de="/categories/de/finanzen.html" data-alt-fr="/categories/fr/finances.html" data-alt-es="/categories/es/finanzas.html">
+<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
+     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
+     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
+     tabvolgorde. -->
+<a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Skip to main content</span></a>
+<header class="site-header">
+    <div class="container navbar">
+        <a class="logo" href="/" aria-label="BrightNews, naar de homepage" data-i18n-aria-label="schil_logo_label">
+            <svg class="logo__beeldmerk" viewBox="0 0 39.6151 40" aria-hidden="true">
+                <path d="M9 28a11 11 0 0 1 22 0H9Z" fill="#FFC933"/>
+                <path d="M35.25 29.5H4.75a1.75 1.75 0 0 0 0 3.5h30.5a1.75 1.75 0 0 0 0-3.5Z" fill="currentColor"/>
+                <path d="M20 12.5V8M30.3 17.7l3.2-3.2M9.7 17.7l-3.2-3.2" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+            </svg>
+            <span class="logo__woordmerk">Bright<span>News</span></span>
+        </a>
 
+        <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
+            <ul class="navbar__links">
+                <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">News</span></a></li>
+                <li><a class="nav-link"><span data-i18n="schil_themas">Topics</span></a></li>
+                <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archive</span></a></li>
+                <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
+            </ul>
+        </nav>
 
-            <a href="/index.html"><img src="/assets/brightnews-logo.png" height="94" width="463" class="nav-logo" alt="BrightNews"/></a></div>
-        <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu openen" data-i18n-aria-label="menu_open">
-            <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-links" id="mobileMenu">
-            <li><a href="/index.html" data-i18n="nav_home">Home</a></li>
-            <li><a href="/over-ons.html" data-i18n="nav_about">About Us</a></li>
-            <li><a href="/abonnementen.html" data-i18n="nav_premium">Subscriptions</a></li>
-
-            <li class="nav-profile-desktop">
-                <a href="/profiel.html" class="profile-icon" aria-label="Profiel" data-i18n-aria-label="nav_profile">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="12" cy="7" r="4"></circle>
-                    </svg>
-                </a>
-            </li>
-
-            <li class="nav-profile-mobile">
-                <a href="/profiel.html" class="profile-link-text">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="12" cy="7" r="4"></circle>
-                    </svg>
-                    <span data-i18n="nav_profile">Profile</span>
-                </a>
-            </li>
-        </ul>
-
-    </nav>
-</header>
-<main id="main-content" class="container categorie-pagina">
-    <h1>Good news about Finance</h1>
-    <p class="categorie-intro">A fresh selection of positive Finance news from around the world, every day.</p>
-
-    <div class="grid-container">
-            <article class="news-card">
-                <a href="/articles/en/european-innovation-council-receives-1-8-billion-for-2027-1793991704874mb5trfigv.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="/assets/fallback/finance-4.jpg" alt="Logo of the European Innovation Council with European flag in the background" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/european-innovation-council-receives-1-8-billion-for-2027-1793991704874mb5trfigv.html">European Innovation Council receives €1.8 billion for 2027</a></h3>
-                    <p>The European Commission has announced €1.8 billion in funding for 2027 through the European Innovation Council (EIC). Wi…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/star-c-program-raises-16-5-million-for-rental-assistance-1793595386959cin9sh8dj.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Kids-in-the-Star-C-Program-submitted-by-nonprofit.jpeg" alt="Apartment complex in Atlanta supported by the Star-C Program for affordable housing" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/star-c-program-raises-16-5-million-for-rental-assistance-1793595386959cin9sh8dj.html">Star-C Program raises $16.5 million for rental assistance</a></h3>
-                    <p>The Atlanta-based Star-C Program, founded by real estate owner Marjy Stagmeier, has helped more than 5,500 families keep…</p>
-                </div>
-            </article>
-    </div>
-
-    <nav class="categorie-andere" aria-label="Other categories">
-        <h2>Other categories</h2>
-        <div class="categorie-links">
-            <a href="/categories/en/tech.html">Tech</a>
-            <a href="/categories/en/health.html">Health</a>
-            <a href="/categories/en/science.html">Science</a>
-            <a href="/categories/en/lifestyle.html">Lifestyle</a>
-            <a href="/categories/en/environment.html">Environment</a>
+        <div class="navbar__acties">
+            <button class="settings-trigger" type="button" aria-expanded="false" aria-controls="instellingen">
+                <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#tune"/></svg>
+                <span class="settings-trigger__label" data-i18n="schil_instellingen">Settings</span>
+                <svg class="icoon settings-trigger__chevron" aria-hidden="true"><use href="/assets/iconen.svg#keyboard_arrow_down"/></svg>
+            </button>
+            <!-- Ingelogd (<body data-ingelogd>): Mijn account in plaats van Inloggen. -->
+            <a class="btn btn--secondary navbar__inloggen" href="/inloggen.html" data-alleen="uitgelogd"><span data-i18n="schil_inloggen">Log in</span></a>
+            <a class="btn btn--secondary navbar__account" href="/profiel.html" data-alleen="ingelogd"><span data-i18n="schil_mijn_account">My account</span></a>
+            <a class="btn btn--primary" href="/abonnementen.html"><span data-i18n="schil_probeer_premium">Try Premium</span></a>
+            <!-- Onder 1024 px: één knop die het menu opent (zelfde paneel). -->
+            <button class="menu-knop" type="button" aria-expanded="false" aria-controls="instellingen">
+                <span class="menu-knop__dicht">
+                    <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#menu"/></svg>
+                    <span data-i18n="schil_menu">Menu</span>
+                </span>
+                <span class="menu-knop__open">
+                    <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#close"/></svg>
+                    <span data-i18n="instelling_sluiten">Close</span>
+                </span>
+            </button>
         </div>
-    </nav>
+    </div>
+
+    <div class="settings-panel" id="instellingen" inert>
+        <div class="settings-panel__binnen">
+            <div class="container settings-panel__inhoud">
+                <!-- Alleen op mobiel zichtbaar (Mobile menu); op desktop staan
+                     deze links en knoppen in de navbar. -->
+                <div class="mobiel-menu">
+                    <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
+                        <ul>
+                            <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">News</span></a></li>
+                            <li><a class="menu-link"><span data-i18n="schil_themas">Topics</span></a></li>
+                            <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archive</span></a></li>
+                            <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
+                        </ul>
+                    </nav>
+                    <div class="mobiel-menu__account">
+                        <a class="btn btn--secondary" href="/inloggen.html" data-alleen="uitgelogd"><span data-i18n="schil_inloggen">Log in</span></a>
+                        <a class="btn btn--secondary" href="/profiel.html" data-alleen="ingelogd"><span data-i18n="schil_mijn_account">My account</span></a>
+                        <a class="btn btn--primary" href="/abonnementen.html"><span data-i18n="schil_probeer_premium">Try Premium</span></a>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="setting-groep">
+                    <h2 class="setting-groep__titel" id="instelling-weergave" data-i18n="instelling_weergave">Appearance</h2>
+                    <p class="setting-groep__uitleg" data-i18n="instelling_weergave_uitleg">System follows the light or dark mode of your device.</p>
+                    <div class="setting-groep__opties" role="radiogroup" aria-labelledby="instelling-weergave" data-instelling="thema">
+                        <button class="setting-option" type="button" role="radio" aria-checked="true" data-waarde="systeem">
+                            <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#computer"/></svg>
+                            <span data-i18n="instelling_systeem">System</span>
+                            <svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg>
+                        </button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="licht">
+                            <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#light_mode"/></svg>
+                            <span data-i18n="instelling_licht">Light</span>
+                            <svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg>
+                        </button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="donker">
+                            <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#dark_mode"/></svg>
+                            <span data-i18n="instelling_donker">Dark</span>
+                            <svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="setting-groep">
+                    <h2 class="setting-groep__titel" id="instelling-taal" data-i18n="instelling_taal">Language</h2>
+                    <p class="setting-groep__uitleg" data-i18n="instelling_taal_uitleg">The language of the site and the articles.</p>
+                    <div class="setting-groep__opties" role="radiogroup" aria-labelledby="instelling-taal" data-instelling="taal">
+                        <button class="setting-option" type="button" role="radio" aria-checked="true" data-waarde="nl" lang="nl">Nederlands<svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="en" lang="en">English<svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="de" lang="de">Deutsch<svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="fr" lang="fr">Français<svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="es" lang="es">Español<svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></button>
+                    </div>
+                </div>
+
+                <div class="settings-panel__notitie">
+                    <button class="btn btn--secondary btn--sm" type="button" data-sluit-instellingen>
+                        <span data-i18n="instelling_sluiten">Close</span>
+                        <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#close"/></svg>
+                    </button>
+                    <p data-i18n="instelling_bewaard">Your choice is saved on this device, even without an account. Logged in? You will find the same settings in your profile.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main id="inhoud">
+    <section class="info-sectie info-sectie--intro" aria-labelledby="cat-titel">
+        <div class="container info-tekst">
+            <p class="type-overline">Finance</p>
+            <h1 class="type-display-sm" id="cat-titel">Good news about Finance</h1>
+            <p class="info-tekst__lead">A fresh selection of positive Finance news from around the world, every day.</p>
+        </div>
+    </section>
+
+    <section class="info-sectie" aria-label="Good news about Finance">
+        <div class="container">
+        <ul class="editie-raster__rij editie-raster__rij--drie" role="list">
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="/assets/fallback/finance-4.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/european-innovation-council-receives-1-8-billion-for-2027-1793991704874mb5trfigv.html">European Innovation Council receives €1.8 billion for 2027</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Kids-in-the-Star-C-Program-submitted-by-nonprofit.jpeg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/star-c-program-raises-16-5-million-for-rental-assistance-1793595386959cin9sh8dj.html">Star-C Program raises $16.5 million for rental assistance</a></h2></div></article></li>
+        </ul>
+        </div>
+    </section>
+
+    <section class="info-sectie info-sectie--subtiel" aria-labelledby="cat-andere">
+        <div class="container info-sectie__binnen">
+            <h2 class="type-heading-lg" id="cat-andere">Other categories</h2>
+            <ul class="topic-links" role="list">
+            <li><a class="topic-link" href="/categories/en/tech.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#lightbulb"/></svg><span>Tech</span><svg class="icoon topic-link__chevron" aria-hidden="true"><use href="/assets/iconen.svg#chevron_right"/></svg></a></li>
+            <li><a class="topic-link" href="/categories/en/health.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#ecg_heart"/></svg><span>Health</span><svg class="icoon topic-link__chevron" aria-hidden="true"><use href="/assets/iconen.svg#chevron_right"/></svg></a></li>
+            <li><a class="topic-link" href="/categories/en/science.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#science"/></svg><span>Science</span><svg class="icoon topic-link__chevron" aria-hidden="true"><use href="/assets/iconen.svg#chevron_right"/></svg></a></li>
+            <li><a class="topic-link" href="/categories/en/lifestyle.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#spa"/></svg><span>Lifestyle</span><svg class="icoon topic-link__chevron" aria-hidden="true"><use href="/assets/iconen.svg#chevron_right"/></svg></a></li>
+            <li><a class="topic-link" href="/categories/en/environment.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#eco"/></svg><span>Environment</span><svg class="icoon topic-link__chevron" aria-hidden="true"><use href="/assets/iconen.svg#chevron_right"/></svg></a></li>
+            </ul>
+        </div>
+    </section>
 </main>
-<footer class="main-footer">
-  <div class="container footer-grid">
-    <!-- Kolom 1: Over & Transparantie -->
-    <div class="footer-about">
-      <div class="footer-logo">Bright<span>News</span></div>
-      <p data-i18n="footer_text">Founded and developed by <strong>Maarten de Klerk</strong>. Maarten is the owner and lead developer of BrightNews, dedicated to spreading positive vibes through tech.</p>
-      <div class="footer-legal-info">
-        <p data-i18n="footer_address">Vossenstraat 19, 6286BW Nijswiller, The Netherlands</p>
-        <p><span data-i18n="footer_kvk_label">KvK</span>: <span data-i18n="footer_kvk_val">42048341</span> · <span data-i18n="footer_btw_label">VAT</span>: <span data-i18n="footer_btw_val">NL005455019B94</span></p>
-        <p class="footer-mor-notice" data-i18n="footer_mor_notice">Payments are securely processed by Stripe, our Merchant of Record.</p>
-      </div>
-    </div>
 
-    <!-- Kolom 2: Explore -->
-    <div class="footer-links">
-      <h3 data-i18n="footer_explore">Explore</h3>
-      <ul>
-        <li><a href="/index.html" data-i18n="nav_home">Home</a></li>
-        <li><a href="/over-ons.html" data-i18n="footer_mission">Our Mission</a></li>
-        <li><a href="/abonnementen.html" data-i18n="footer_subs">Subscriptions</a></li>
-        <li><a href="#" onclick="openCustomerPortal(event)" data-i18n="footer_manage_sub">Manage Subscription</a></li>
-        <li><a href="/profiel.html" data-i18n="footer_acc">My Account</a></li>
-      </ul>
-    </div>
+<footer class="site-footer">
+    <div class="container site-footer__binnen">
+        <div class="site-footer__rij">
+            <div class="site-footer__merk">
+                <a class="logo" href="/" aria-label="BrightNews, naar de homepage" data-i18n-aria-label="schil_logo_label">
+                    <svg class="logo__beeldmerk" viewBox="0 0 39.6151 40" aria-hidden="true">
+                        <path d="M9 28a11 11 0 0 1 22 0H9Z" fill="#FFC933"/>
+                        <path d="M35.25 29.5H4.75a1.75 1.75 0 0 0 0 3.5h30.5a1.75 1.75 0 0 0 0-3.5Z" fill="currentColor"/>
+                        <path d="M20 12.5V8M30.3 17.7l3.2-3.2M9.7 17.7l-3.2-3.2" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+                    </svg>
+                    <span class="logo__woordmerk">Bright<span>News</span></span>
+                </a>
+                <p data-i18n="schil_tagline">A little better news every day, in five languages.</p>
+                <ul class="socials" aria-label="Volg BrightNews" data-i18n-aria-label="schil_volg_ons">
+                    <li><a class="social-knop" href="https://www.facebook.com/people/BrightNews/61594888799297/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a></li>
+                    <li><a class="social-knop" href="https://www.instagram.com/brightnews.online" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a></li>
+                    <li><a class="social-knop" href="https://www.linkedin.com/company/brightnewsonline/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+                </ul>
+            </div>
 
-    <!-- Kolom 3: Community -->
-    <div class="footer-links">
-      <h3 data-i18n="footer_community">Community</h3>
-      <ul>
-        <li><a href="/Privacy.html" data-i18n="footer_privacy">Privacy Policy</a></li>
-        <li><a href="/algemeene-voorwaarden.html" data-i18n="footer_service_terms">Terms of Service</a></li>
-        <li><a href="/refunds.html" data-i18n="footer_refunds">Refunds</a></li>
-        <li><a href="/Privacy.html#cookies-section" data-i18n="footer_cookies">Cookies</a></li>
-        <li><a href="/contact.html" data-i18n="footer_support">Contact Support</a></li>
-      </ul>
-    </div>
+            <nav class="footer-kolom" aria-labelledby="footer-lezen">
+                <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Read</h2>
+                <ul>
+                    <li><a href="/"><span data-i18n="schil_nieuws">News</span></a></li>
+                    <li><a><span data-i18n="schil_themas">Topics</span></a></li>
+                    <li><a href="/archief.html"><span data-i18n="schil_archief">Archive</span></a></li>
+                    <li><a><span data-i18n="schil_categorieen">Categories</span></a></li>
+                </ul>
+            </nav>
 
-    <!-- Kolom 4: Socials & Badge -->
-    <div class="footer-socials">
-      <h3 data-i18n="footer_follow">Follow BrightNews</h3>
-      <div class="social-icons">
-        <a href="https://www.facebook.com/people/BrightNews/61594888799297/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a>
-        <a href="https://www.instagram.com/brightnews.online" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a>
-        <a href="https://www.linkedin.com/company/brightnewsonline/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-        <a href="mailto:info@brightnews.online" class="social-btn" aria-label="E-mail"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
-      </div>
+            <nav class="footer-kolom" aria-labelledby="footer-merk">
+                <h2 class="footer-kolom__titel" id="footer-merk">BrightNews</h2>
+                <ul>
+                    <li><a href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
+                    <li><a href="/zo-kiezen-we.html"><span data-i18n="schil_zo_kiezen_we">How we choose</span></a></li>
+                    <li><a href="/abonnementen.html"><span data-i18n="schil_premium">Premium</span></a></li>
+                    <li><a href="/Privacy.html"><span data-i18n="schil_privacy_voorwaarden">Privacy and terms</span></a></li>
+                </ul>
+            </nav>
+
+            <nav class="footer-kolom" aria-labelledby="footer-hulp">
+                <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Help</h2>
+                <ul>
+                    <li><a><span data-i18n="schil_instellingen">Settings</span></a></li>
+                    <li><a href="/contact.html"><span data-i18n="schil_contact">Contact</span></a></li>
+                    <li><a href="/feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
+                    <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Refunds</span></a></li>
+                    <li><button class="footer-knop" type="button" data-cookie-instellingen><span data-i18n="v5_ck_footer">Cookie settings</span></button></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="site-footer__onder">
+            <p data-i18n="schil_copyright">© 2026 BrightNews. Summarised with AI from reliable sources.</p>
+            <p data-i18n="schil_bedrijfsgegevens">Vossenstraat 19, 6286 BW Nijswiller, the Netherlands · Chamber of Commerce 42048341 · VAT NL005455019B94</p>
+        </div>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <p data-i18n="footer_created_by">&copy; 2026 BrightNews • All rights reserved • Created with 💚 in the Netherlands</p>
-  </div>
 </footer>
+
+<!-- Cookiebalk (Figma: Cookie bar, Balk en Instellingen). Verschijnt zolang
+     er geen keuze is, of de keuze ouder is dan 12 maanden. Geen pop-up:
+     vast onderaan, zonder donkere laag. Gedrag: js/v5/schil.js. -->
+<section class="cookie-bar" id="cookiebalk" data-weergave="balk" aria-labelledby="cookiebalk-titel" hidden>
+    <div class="container cookie-bar__binnen">
+        <div class="cookie-bar__tekst">
+            <h2 class="cookie-bar__titel" id="cookiebalk-titel" data-i18n="v5_ck_titel">Cookies on BrightNews</h2>
+            <p class="cookie-bar__uitleg">
+                <span class="cookie-bar__lang" data-i18n="v5_ck_tekst">We use cookies that are needed to make the site work. Other cookies only if you're OK with it.</span>
+                <span class="cookie-bar__kort" data-i18n="v5_ck_tekst_kort">Needed for the site. Statistics only with your permission.</span>
+                <a href="/Privacy.html#cookies"><span data-i18n="v5_ck_lees">Read the privacy statement</span></a>
+                <button class="btn btn--tertiary btn--sm cookie-bar__instellingen-kort" type="button" data-cookie="instellingen" aria-expanded="false" aria-controls="cookiebalk-keuzes"><span data-i18n="v5_ck_instellingen">Settings</span></button>
+            </p>
+        </div>
+        <div class="cookie-bar__keuzes" id="cookiebalk-keuzes">
+            <div class="cookie-bar__keuze">
+                <label class="toggle"><input class="visueel-verborgen" type="checkbox" role="switch" checked disabled aria-describedby="cookie-noodzakelijk-uitleg"><span class="toggle__baan" aria-hidden="true"></span><span data-i18n="v5_ck_noodzakelijk">Necessary</span></label>
+                <p id="cookie-noodzakelijk-uitleg" data-i18n="v5_ck_noodzakelijk_uitleg">To log you in and remember your language and display. Always on.</p>
+            </div>
+            <div class="cookie-bar__keuze">
+                <label class="toggle"><input class="visueel-verborgen" type="checkbox" role="switch" id="cookie-statistieken" aria-describedby="cookie-statistieken-uitleg"><span class="toggle__baan" aria-hidden="true"></span><span data-i18n="v5_ck_statistieken">Statistics</span></label>
+                <p id="cookie-statistieken-uitleg" data-i18n="v5_ck_statistieken_uitleg">Measuring which pages are read, so we can improve the site. Google Analytics does this with a cookie holding a random code, without your name.</p>
+            </div>
+        </div>
+        <div class="cookie-bar__knoppen">
+            <button class="btn btn--tertiary" type="button" data-cookie="instellingen" aria-expanded="false" aria-controls="cookiebalk-keuzes"><span data-i18n="v5_ck_instellingen">Settings</span></button>
+            <button class="btn btn--secondary" type="button" data-cookie="noodzakelijk"><span data-i18n="v5_ck_noodzakelijk_knop">Necessary only</span></button>
+            <button class="btn btn--secondary" type="button" data-cookie="opslaan"><span data-i18n="v5_ck_opslaan">Save choice</span></button>
+            <button class="btn btn--secondary" type="button" data-cookie="alles"><span data-i18n="v5_ck_alles">Accept all</span></button>
+        </div>
+    </div>
+</section>
+
+<!-- Supabase op elke v5-pagina (TODO 66 punt 9): js/v5/schil.js zet daarmee
+     data-ingelogd en data-premium op <body>, en de inloglink uit de mail mag
+     op elke pagina landen. Vóór de paginascripts, zodat window.supabaseClient
+     klaarstaat (defer houdt de volgorde aan). -->
+<script src="/js/vendor/supabase-js-2.112.4.js" defer></script>
+<script src="/js/supabase-init.js" defer></script>
+<script src="/data/translations.js" defer></script>
+<script src="/js/v5/schil.js" defer></script>
+
 </body>
 </html>

@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
     <meta name="robots" content="max-image-preview:large">
-    <link rel="alternate" type="application/rss+xml" title="BrightNews (English)" href="/feed-en.xml">
-    <link rel="alternate" type="application/rss+xml" title="BrightNews (Nederlands)" href="/feed-nl.xml">
-    <link rel="alternate" type="application/rss+xml" title="BrightNews (Deutsch)" href="/feed-de.xml">
-    <link rel="alternate" type="application/rss+xml" title="BrightNews (Français)" href="/feed-fr.xml">
-    <link rel="alternate" type="application/rss+xml" title="BrightNews (Español)" href="/feed-es.xml">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://www.googletagmanager.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
-    <meta name="description" content="A fresh selection of positive Environment news from around the world, every day.">
     <title>Good news about Environment | BrightNews</title>
+<script>
+    /* Weergave vóór de eerste weergave toepassen (redesign v5). Staat inline
+       en zo hoog mogelijk in <head>: een extern script zou pas laden nadat de
+       pagina al één keer in de systeemkleur getekend is, en dan flitst een
+       lezer die "donker" koos eerst wit. De CSP staat inline scripts toe.
+       Zonder eigen keuze doet dit niets en volgt css/tokens.css het systeem.
+       localStorage kan weigeren (privévenster, geblokkeerde opslag); dan valt
+       de site gewoon terug op het systeem. */
+    try {
+        var bnThema = localStorage.getItem('bn-thema');
+        if (bnThema === 'licht' || bnThema === 'donker') {
+            document.documentElement.setAttribute('data-theme', bnThema);
+        }
+    } catch (e) { /* geen opslag: systeem volgen */ }
+</script>
+    <meta name="description" content="A fresh selection of positive Environment news from around the world, every day.">
     <link rel="canonical" href="https://brightnews.online/categories/en/environment.html">
     <link rel="alternate" hreflang="nl" href="https://brightnews.online/categories/nl/milieu.html">
     <link rel="alternate" hreflang="en" href="https://brightnews.online/categories/en/environment.html">
@@ -19,626 +29,329 @@
     <link rel="alternate" hreflang="fr" href="https://brightnews.online/categories/fr/environnement.html">
     <link rel="alternate" hreflang="es" href="https://brightnews.online/categories/es/medio-ambiente.html">
     <link rel="alternate" hreflang="x-default" href="https://brightnews.online/categories/en/environment.html">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (English)" href="/feed-en.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Nederlands)" href="/feed-nl.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Deutsch)" href="/feed-de.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Français)" href="/feed-fr.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Español)" href="/feed-es.xml">
     <meta property="og:title" content="Good news about Environment">
     <meta property="og:description" content="A fresh selection of positive Environment news from around the world, every day.">
     <meta property="og:url" content="https://brightnews.online/categories/en/environment.html">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://brightnews.online/assets/brightnews-logo.png">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0a120d" media="(prefers-color-scheme: dark)">
     <link rel="icon" type="image/png" href="/assets/brightnews-logo-faviconv5.png">
-    <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/components.css">
-    <!-- .grid-container en .news-card staan in de paginastijl van de
-         homepage; deze pagina gebruikt dezelfde kaarten. -->
-    <link rel="stylesheet" href="/css/pages/index.css">
-    <link rel="stylesheet" href="/css/pages/categorie.css">
-    <script src="/data/translations.js" defer></script>
-    <script src="/js/main.js" defer></script>
+    <link rel="preload" href="/assets/fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/tokens.css">
+    <link rel="stylesheet" href="/css/v5/basis.css">
+    <link rel="stylesheet" href="/css/v5/componenten.css">
+    <link rel="stylesheet" href="/css/v5/paginas.css">
 </head>
-<body>
-<a href="#main-content" class="skip-link" data-i18n="skip_to_content">Skip to main content</a>
-<header>
-    <nav class="container">
-        <div class="nav-left-group">
-            <details class="dropdown language-picker">
-                <summary class="dropbtn" id="current-lang">
-                    <span class="taal-vlag">🇺🇸</span><span class="taal-naam">English</span><span class="taal-code" aria-hidden="true">EN</span> <span class="arrow">▼</span>
-                </summary>
-                <div class="dropdown-content">
-                        <a href="#" onclick="wisselTaal('en', '🇺🇸 English', event)"><span class="taal-vlag">🇺🇸</span> English</a>
-                    <a href="#" onclick="wisselTaal('nl', '🇳🇱 Nederlands', event)"><span class="taal-vlag">🇳🇱</span> Nederlands</a>
-                    <a href="#" onclick="wisselTaal('de', '🇩🇪 Deutsch', event)"><span class="taal-vlag">🇩🇪</span> Deutsch</a>
-                    <a href="#" onclick="wisselTaal('fr', '🇫🇷 Français', event)"><span class="taal-vlag">🇫🇷</span> Français</a>
-                    <a href="#" onclick="wisselTaal('es', '🇪🇸 Español', event)"><span class="taal-vlag">🇪🇸</span> Español</a>
-                </div>
-            </details>
+<body data-sectie="nieuws" data-alt-nl="/categories/nl/milieu.html" data-alt-en="/categories/en/environment.html" data-alt-de="/categories/de/umwelt.html" data-alt-fr="/categories/fr/environnement.html" data-alt-es="/categories/es/medio-ambiente.html">
+<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
+     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
+     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
+     tabvolgorde. -->
+<a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Skip to main content</span></a>
+<header class="site-header">
+    <div class="container navbar">
+        <a class="logo" href="/" aria-label="BrightNews, naar de homepage" data-i18n-aria-label="schil_logo_label">
+            <svg class="logo__beeldmerk" viewBox="0 0 39.6151 40" aria-hidden="true">
+                <path d="M9 28a11 11 0 0 1 22 0H9Z" fill="#FFC933"/>
+                <path d="M35.25 29.5H4.75a1.75 1.75 0 0 0 0 3.5h30.5a1.75 1.75 0 0 0 0-3.5Z" fill="currentColor"/>
+                <path d="M20 12.5V8M30.3 17.7l3.2-3.2M9.7 17.7l-3.2-3.2" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+            </svg>
+            <span class="logo__woordmerk">Bright<span>News</span></span>
+        </a>
 
+        <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
+            <ul class="navbar__links">
+                <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">News</span></a></li>
+                <li><a class="nav-link"><span data-i18n="schil_themas">Topics</span></a></li>
+                <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archive</span></a></li>
+                <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
+            </ul>
+        </nav>
 
-            <a href="/index.html"><img src="/assets/brightnews-logo.png" height="94" width="463" class="nav-logo" alt="BrightNews"/></a></div>
-        <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu openen" data-i18n-aria-label="menu_open">
-            <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-links" id="mobileMenu">
-            <li><a href="/index.html" data-i18n="nav_home">Home</a></li>
-            <li><a href="/over-ons.html" data-i18n="nav_about">About Us</a></li>
-            <li><a href="/abonnementen.html" data-i18n="nav_premium">Subscriptions</a></li>
-
-            <li class="nav-profile-desktop">
-                <a href="/profiel.html" class="profile-icon" aria-label="Profiel" data-i18n-aria-label="nav_profile">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="12" cy="7" r="4"></circle>
-                    </svg>
-                </a>
-            </li>
-
-            <li class="nav-profile-mobile">
-                <a href="/profiel.html" class="profile-link-text">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="12" cy="7" r="4"></circle>
-                    </svg>
-                    <span data-i18n="nav_profile">Profile</span>
-                </a>
-            </li>
-        </ul>
-
-    </nav>
-</header>
-<main id="main-content" class="container categorie-pagina">
-    <h1>Good news about Environment</h1>
-    <p class="categorie-intro">A fresh selection of positive Environment news from around the world, every day.</p>
-
-    <div class="grid-container">
-            <article class="news-card">
-                <a href="/articles/en/los-angeles-bans-oil-drilling-permanently-1794463996470mjxfozzef.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.optimistdaily.com/wp-content/uploads/oil-pump-jack-city-limits-Depositphotos_199434004_S.jpg" alt="An oil well surrounded by residential homes in Los Angeles" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/los-angeles-bans-oil-drilling-permanently-1794463996470mjxfozzef.html">Los Angeles bans oil drilling permanently</a></h3>
-                    <p>After more than a decade of activism by residents, the Los Angeles City Council voted on October 28 in favor of an ordin…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/bears-flowers-and-a-plan-three-signs-of-recovery-on-earth-dg-20261110-environment.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-Cantabrian-brown-bear-credit-Juan-Iacruz-CC-BY-SA-4.0.jpg" alt="Bears, flowers and a plan: three signs of recovery on Earth" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/bears-flowers-and-a-plan-three-signs-of-recovery-on-earth-dg-20261110-environment.html">Bears, flowers and a plan: three signs of recovery on Earth</a></h3>
-                    <p>These days show that nature can bounce back when people give it space, and that countries sometimes take surprisingly co…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/brown-bear-population-in-spain-doubles-thanks-to-protection-17944248919439uxdg6k76.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-Cantabrian-brown-bear-credit-Juan-Iacruz-CC-BY-SA-4.0.jpg" alt="Brown bear in the mountains of Cantabria, Spain" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/brown-bear-population-in-spain-doubles-thanks-to-protection-17944248919439uxdg6k76.html">Brown bear population in Spain doubles thanks to protection</a></h3>
-                    <p>The Cantabrian brown bear has doubled in number over twenty years: from around 140 animals at the start of this century …</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/brazil-presents-world-s-first-fossil-fuel-phase-out-roadmap-1794373689644spmeqye98.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.optimistdaily.com/wp-content/uploads/oil-pumps-on-sunset-Depositphotos_5186129_S.jpg" alt="Symbolic image accompanying news about Brazil&#39;s fossil fuel roadmap" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/brazil-presents-world-s-first-fossil-fuel-phase-out-roadmap-1794373689644spmeqye98.html">Brazil presents world&#39;s first fossil fuel phase-out roadmap</a></h3>
-                    <p>Brazil has become the first country in the world to publish a roadmap for phasing out fossil fuels. The document marks a…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/atacama-desert-blooms-in-record-colors-after-years-of-drought-1794338863435j7325tvr1.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Juan-Cortez-Estay-Unsplash.jpg" alt="Colorful flower fields in the normally barren Atacama Desert in Chile" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/atacama-desert-blooms-in-record-colors-after-years-of-drought-1794338863435j7325tvr1.html">Atacama Desert blooms in record colors after years of drought</a></h3>
-                    <p>The Atacama Desert in Chile, normally the driest place on Earth, is covered with some 200 flowering plant species. Some …</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/nature-recovers-glowworms-seaweed-and-an-estate-get-a-second-chance-dg-20261108-environment.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/glowworms-unsplash.jpg" alt="Nature recovers: glowworms, seaweed and an estate get a second chance" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/nature-recovers-glowworms-seaweed-and-an-estate-get-a-second-chance-dg-20261108-environment.html">Nature recovers: glowworms, seaweed and an estate get a second chance</a></h3>
-                    <p>These days, nature is showing us that recovery is possible—sometimes requiring years of patience, sometimes thanks to a …</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/glow-worms-return-to-nosterfield-after-a-century-away-17942618376320zr0nsc0o.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/glowworms-unsplash.jpg" alt="Glow-worms illuminate the grass at Nosterfield Nature Reserve in North Yorkshire" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/glow-worms-return-to-nosterfield-after-a-century-away-17942618376320zr0nsc0o.html">Glow-worms return to Nosterfield after a century away</a></h3>
-                    <p>The glow-worm is making a comeback in North Yorkshire thanks to the unpaid work of nature enthusiast Peter Cooper. In hi…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/ban-on-dredging-saves-pink-seaweed-maerl-at-summer-isles-1794261806053etimbu6da.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Maerl-beds-in-French-waters-credit-Olivier-Dugornay-CC-4.0.-BY.jpg" alt="Pink maerl seaweed on the seabed at the Summer Isles in Scotland" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/ban-on-dredging-saves-pink-seaweed-maerl-at-summer-isles-1794261806053etimbu6da.html">Ban on dredging saves pink seaweed maerl at Summer Isles</a></h3>
-                    <p>A ban on industrial shellfish dredging introduced a decade ago has protected the magenta-coloured seaweed species maerl …</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/world-buys-rothbury-estate-for-nature-restoration-1794027777393q7fy9vdx3.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-drone-image-of-the-site-of-the-Bronze-Age-Lordenshaw-Hill-Fort-credit-The-Wildlife-Trusts-©.jpg" alt="Rolling heathlands and woodlands of the Rothbury Estate in Northumberland" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/world-buys-rothbury-estate-for-nature-restoration-1794027777393q7fy9vdx3.html">World buys Rothbury Estate for nature restoration</a></h3>
-                    <p>The Rothbury Estate in Northumberland, owned by the Dukes of Northumberland for 800 years since the 13th century, has be…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/return-protection-and-warmth-the-environmental-news-from-early-november-dg-20261105-environment.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://theecologist.org/sites/default/files/styles/facebook/public/2019-01/satishkumar_2.jpg?h=2992ba0a&amp;amp;itok=sw-KYTy5" alt="Return, protection and warmth: the environmental news from early November" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/return-protection-and-warmth-the-environmental-news-from-early-november-dg-20261105-environment.html">Return, protection and warmth: the environmental news from early November</a></h3>
-                    <p>Over the past few days, nature has shown that persistence pays off. From a primate that quietly survived to a national p…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/satish-kumar-wins-future-icons-award-for-8-000-mile-peace-walk-17939917345584tddw5axb.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://theecologist.org/sites/default/files/styles/facebook/public/2019-01/satishkumar_2.jpg?h=2992ba0a&amp;amp;itok=sw-KYTy5" alt="Satish Kumar, founder of the Resurgence Trust, honoured with a Future Icons Award" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/satish-kumar-wins-future-icons-award-for-8-000-mile-peace-walk-17939917345584tddw5axb.html">Satish Kumar wins Future Icons Award for 8,000-mile peace walk</a></h3>
-                    <p>Country &amp; Town House has announced the winners of the Future Icons Awards 2027 and the Future Icons Power List 2027. Sat…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/vermont-gas-brings-geothermal-heating-to-affordable-homes-1793991687622bmh7f4zst.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Geothermal-boring-at-Riggs-Meadow-Housing-Development-credit-Dandelion-Energy-released.jpg" alt="Drilling rig for a geothermal heating system at an affordable housing project" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/vermont-gas-brings-geothermal-heating-to-affordable-homes-1793991687622bmh7f4zst.html">Vermont Gas brings geothermal heating to affordable homes</a></h3>
-                    <p>Vermont Gas has struck a groundbreaking deal with geothermal developer Dandelion Energy to equip the 44-unit affordable …</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/toxic-bangka-loris-turns-out-not-to-have-gone-extinct-after-all-1793991652315mthd40ah5.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/The-Bangka-slow-loris-credit-Gunay-M.E.-CC-4.0.-BY-SA.jpg" alt="Bangka slow loris with large eyes in nature" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/toxic-bangka-loris-turns-out-not-to-have-gone-extinct-after-all-1793991652315mthd40ah5.html">Toxic Bangka loris turns out not to have gone extinct after all</a></h3>
-                    <p>The Bangka slow loris, a primate that had not been scientifically observed since the 1930s and was considered possibly e…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/great-terns-return-to-british-south-coast-after-bird-flu-1793907606024s2635r9hy.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-David-Kinchin-Smith-RSPB.jpg" alt="Great terns breed on the beach at Pagham Harbour on England&#39;s south coast" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/great-terns-return-to-british-south-coast-after-bird-flu-1793907606024s2635r9hy.html">Great Terns Return to British South Coast After Bird Flu</a></h3>
-                    <p>Thanks to targeted nature conservation, great terns have reclaimed a colony on England&#39;s south coast, three years after …</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/brazil-s-pantanal-national-park-significantly-expanded-1793857124364imh34spkm.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/The-Pantanal-landscape-credit-Filipe-Frazao-CC-3.0-BY-SA-1.jpg" alt="Flooded grassland of the Pantanal with wildlife in Brazil" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/brazil-s-pantanal-national-park-significantly-expanded-1793857124364imh34spkm.html">Brazil&#39;s Pantanal National Park Significantly Expanded</a></h3>
-                    <p>Brazilian environmental authorities have expanded the Pantanal Matogrossense National Park by more than 25%: from 523 sq…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/animals-return-and-lights-go-out-for-birds-good-news-from-nature-dg-20261103-environment.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.optimistdaily.com/wp-content/uploads/Local-Changemakers-Story-Covers-12.png" alt="Animals return and lights go out for birds: good news from nature" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/animals-return-and-lights-go-out-for-birds-good-news-from-nature-dg-20261103-environment.html">Animals return and lights go out for birds: good news from nature</a></h3>
-                    <p>These days show how people are making space for animals and ecosystems in very different ways. From a loch in Scotland t…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/maya-higa-builds-wildlife-sanctuary-via-twitch-1793769496499udef1tpv4.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.optimistdaily.com/wp-content/uploads/Local-Changemakers-Story-Covers-12.png" alt="Maya Higa during a TED Talk, photo courtesy of Alveus Sanctuary" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/maya-higa-builds-wildlife-sanctuary-via-twitch-1793769496499udef1tpv4.html">Maya Higa builds wildlife sanctuary via Twitch</a></h3>
-                    <p>Maya Higa has established a wildlife sanctuary funded by the people who follow her on Twitch. The nature reserve is know…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/beavers-return-to-loch-ness-after-500-years-1793769453371lj3rxqr3y.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-NatureScot.jpg" alt="A beaver swims in the water near Loch Ness in Scotland" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/beavers-return-to-loch-ness-after-500-years-1793769453371lj3rxqr3y.html">Beavers return to Loch Ness after 500 years</a></h3>
-                    <p>After 500 years of absence, beavers are getting a new home around Loch Ness in Scotland. On 30 October, conservation org…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/carbon-credits-open-great-koala-national-park-in-nsw-1793733350635zxe818kte.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.optimistdaily.com/wp-content/uploads/koala-Depositphotos_18324133_S.jpg" alt="Koala in a tree, symbol for the Great Koala National Park in NSW" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/carbon-credits-open-great-koala-national-park-in-nsw-1793733350635zxe818kte.html">Carbon credits open Great Koala National Park in NSW</a></h3>
-                    <p>In New South Wales, Australia, carbon credits have played a role in making the Great Koala National Park possible. Furth…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/portuguese-island-corvo-turns-off-lights-for-shearwaters-1793595351745s52awslnz.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Corys-shearwater-on-Wikipedia-by-Hobbyfotowiki-CC0.jpeg" alt="Dark streets on the island of Corvo during the annual blackout to protect young shearwaters" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/portuguese-island-corvo-turns-off-lights-for-shearwaters-1793595351745s52awslnz.html">Portuguese island Corvo turns off lights for shearwaters</a></h3>
-                    <p>On the Portuguese island of Corvo in the Azores, all street lights are switched off every year in late October for five …</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/new-agua-dulce-nature-reserve-protects-itenez-river-as-link-of-life-1793508898612miskfxp66.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Sunrise-on-the-Itenez-River-credit-Gabriela-Villaneuva-CC-4.0.-BY-SA-e1793094098653.jpg" alt="The Iténez river in Bolivia, surrounded by rainforest, with habitat for jaguars and river dolphins" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/new-agua-dulce-nature-reserve-protects-itenez-river-as-link-of-life-1793508898612miskfxp66.html">New Agua Dulce nature reserve protects Iténez river as &#39;link of life&#39;</a></h3>
-                    <p>Rainforest Trust has helped establish the 715,000-hectare Agua Dulce Municipal Wildlife Reserve along the Iténez river i…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/from-potato-harvest-to-walrus-calf-good-news-for-nature-comes-from-all-corners-dg-20261030-environment.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2022/12/potato-unsplash.jpg" alt="From potato harvest to walrus calf: good news for nature comes from all corners" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/from-potato-harvest-to-walrus-calf-good-news-for-nature-comes-from-all-corners-dg-20261030-environment.html">From potato harvest to walrus calf: good news for nature comes from all corners</a></h3>
-                    <p>These days show that caring for nature works in many different ways. Sometimes it involves millions of dollars for an en…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/best-potato-harvest-in-ten-years-on-hokkaido-17934212711084sy6icao8.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2022/12/potato-unsplash.jpg" alt="Potato harvest in the field in Hokkaido, Japan" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/best-potato-harvest-in-ten-years-on-hokkaido-17934212711084sy6icao8.html">Best potato harvest in ten years on Hokkaido</a></h3>
-                    <p>While heat and drought affected crops worldwide this year, Japan&#39;s Hokkaido island experienced its best potato harvest i…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/clean-water-and-new-opportunities-for-animals-worldwide-dg-20261029-environment.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/credit-supplied-to-WHYY-as-a-courtesy-PolyGone-Systems.jpg" alt="Clean water and new opportunities for animals worldwide" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/clean-water-and-new-opportunities-for-animals-worldwide-dg-20261029-environment.html">Clean water and new opportunities for animals worldwide</a></h3>
-                    <p>This week at BrightNews, much revolves around water and the animals that depend on it. In New Jersey, two Princeton alum…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/gabriela-ponce-santizo-19-years-of-nature-conservation-in-guatemala-17933843253478dsqs8a8b.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.pbs.org/wnet/nature/files/2026/10/Gabriela-Ponce-Santizo-Photo-1-1280x720.jpg" alt="Gabriela Ponce Santizo examines a scarlet macaw chick in Laguna del Tigre National Park, Guatemala" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/gabriela-ponce-santizo-19-years-of-nature-conservation-in-guatemala-17933843253478dsqs8a8b.html">Gabriela Ponce Santizo: 19 years of nature conservation in Guatemala</a></h3>
-                    <p>Gabriela Ponce Santizo, a Guatemalan biologist, has been active in nature conservation for 19 years and is now Country D…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/rare-jaguar-filmed-near-guatemala-honduras-border-1793384043255lbpha2iw0.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ac69ff03d218c2decce112b_6ac69fefbe25a3aadb479aa0_jaguar-endangered-species-panthera-wildlife-crossing-featured.webp" alt="A male jaguar captured by a camera trap in the forest near the Guatemala and Honduras border" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/rare-jaguar-filmed-near-guatemala-honduras-border-1793384043255lbpha2iw0.html">Rare jaguar filmed near Guatemala-Honduras border</a></h3>
-                    <p>In June, camera traps captured a male jaguar in Guatemala&#39;s forest areas, close to the border with Honduras. Conservatio…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/man-rescues-baby-swan-from-fishing-hook-as-parents-watch-17933840167889x3qeir9f.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ac7bae3fa7ba945230fea73_6ac7bae2f3f863de97d1c1dd_waterfowl-sanctuary-baby-swan-fishing-hook-featured.webp" alt="Man in kayak holds a baby swan while carefully untangling fishing line" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/man-rescues-baby-swan-from-fishing-hook-as-parents-watch-17933840167889x3qeir9f.html">Man rescues baby swan from fishing hook as parents watch</a></h3>
-                    <p>At the Waterfowl Sanctuary in Godmanchester, England, Graham Porter received a call from an angler whose fishing line ha…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/threatened-leopard-shark-spotted-for-first-time-in-samoan-waters-1793383958266mxtf6o3nv.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ac9289c4d9bf88b7b75c8c1_6ac9289b733f24c72bcaff23_endangered-species-leopard-shark-zebra-nat-geo-featured.webp" alt="Leopard shark filmed on the seafloor in Samoan waters by an underwater camera" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/threatened-leopard-shark-spotted-for-first-time-in-samoan-waters-1793383958266mxtf6o3nv.html">Threatened leopard shark spotted for first time in Samoan waters</a></h3>
-                    <p>Scientists from National Geographic Pristine Seas have filmed a leopard shark, also known as a zebra shark, in Samoan wa…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/sloth-bear-vasi-receives-first-ever-bear-prosthetic-1793383924314zvjyipnh7.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6acaa45fbebc93df8b3b48b7_6acaa45ebebc93df8b3b485e_endangered-species-sloth-bear-prosthetic-limb-featured-2.webp" alt="Sloth bear Vasi with his new prosthetic on his left hind leg" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/sloth-bear-vasi-receives-first-ever-bear-prosthetic-1793383924314zvjyipnh7.html">Sloth bear Vasi receives first-ever bear prosthetic</a></h3>
-                    <p>Vasikaran, a sloth bear from India nicknamed Vasi, lost his left hind leg in 2019 after it became trapped in a snare. Th…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/floating-wetlands-bring-nature-back-to-bristol-harbour-1793383890241c7fuext63.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6acff946832013fab7bf796b_6acff945cec66dcf02426812_bristol-harbour-england-floating-wetlands-featured.webp" alt="Floating wetland with green plants in Bristol Harbour, surrounded by concrete quay walls" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/floating-wetlands-bring-nature-back-to-bristol-harbour-1793383890241c7fuext63.html">Floating wetlands bring nature back to Bristol Harbour</a></h3>
-                    <p>Climate activists and conservation charity WWT have created floating wetlands along the concrete quays of Bristol Harbou…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/three-michigan-tribes-aim-to-restore-vanished-arctic-grayling-17933837798258o0963pk9.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ada2bada6d2370eb3372851_6ada2ba4c547af990129d8bb_michigan-arctic-grayling-tribes-featured.jpeg" alt="Young Arctic grayling fish with iridescent colors are counted at a hatchery in Michigan" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/three-michigan-tribes-aim-to-restore-vanished-arctic-grayling-17933837798258o0963pk9.html">Three Michigan tribes aim to restore vanished Arctic grayling</a></h3>
-                    <p>In Michigan, three Native American tribes are working together with the state to bring back the Arctic grayling, a fish …</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/eye-buoys-and-raptor-kites-save-seabirds-from-fishing-nets-1793383630505h1pw71f0a.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ae0db309e0da5e8013cfd1e_6ae0db21fddce4e8a74c5916_buoy-kite-seabirds-fishing-nets-featured.jpeg" alt="A buoy with large eyes and a raptor kite at fishing nets off the coast of Cornwall to deter seabirds" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/eye-buoys-and-raptor-kites-save-seabirds-from-fishing-nets-1793383630505h1pw71f0a.html">Eye buoys and raptor kites save seabirds from fishing nets</a></h3>
-                    <p>Off the coast of Cornwall, researchers tested two clever inventions to protect seabirds from drowning in fishing nets: b…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/six-dolphin-calves-born-irrawaddy-dolphin-population-in-cambodia-now-numbers-118-1793383597218er891iiw6.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ae21181bbebf19592cb6042_6ae211674e91beee5c25a896_mekong-river-irrawaddy-dolphins-cambodia-featured.jpeg" alt="Irrawaddy dolphins swim in the Mekong River near Kampi in Cambodia, with a boat full of tourists in the background." loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/six-dolphin-calves-born-irrawaddy-dolphin-population-in-cambodia-now-numbers-118-1793383597218er891iiw6.html">Six dolphin calves born: Irrawaddy dolphin population in Cambodia now numbers 118</a></h3>
-                    <p>Six baby Irrawaddy dolphins have been born in Cambodia this year, bringing the population of this rare river dolphin to …</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/netherlands-pledges-500-million-dollars-for-tropical-rainforest-1793383535660vb37ygvqn.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ae289e3aeef74a32270f7b1_6ae289e2aeef74a32270f771_netherlands-pledges-tropical-forests-featured.jpeg" alt="Baby mountain gorillas play in Bwindi Impenetrable Forest in Uganda" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/netherlands-pledges-500-million-dollars-for-tropical-rainforest-1793383535660vb37ygvqn.html">Netherlands pledges 500 million dollars for tropical rainforest</a></h3>
-                    <p>The Netherlands has committed to donating 500 million dollars, spread over 10 years, to the Tropical Forest Forever Faci…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/kenya-allocates-160-million-dollars-for-maasai-mara-and-tsavo-1793383409460miu6j5iw1.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.optimistdaily.com/wp-content/uploads/three-adult-giraffes-walking-line-Depositphotos_413297952_S.jpg" alt="Landscape of the Maasai Mara in Kenya" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/kenya-allocates-160-million-dollars-for-maasai-mara-and-tsavo-1793383409460miu6j5iw1.html">Kenya allocates 160 million dollars for Maasai Mara and Tsavo</a></h3>
-                    <p>Kenya has allocated 160 million dollars for the protection of the Maasai Mara and Tsavo ecosystems. This news was shared…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/republicans-and-democrats-united-against-data-centers-1793383361055da2zrqy6s.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://reasonstobecheerful.world/wp-content/uploads/2026/10/Patty-and-her-husband-on-their-land-2.jpg" alt="Residents of Grove City protest together against the construction of an AI data center" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/republicans-and-democrats-united-against-data-centers-1793383361055da2zrqy6s.html">Republicans and Democrats united against data centers</a></h3>
-                    <p>In the United States, Republicans, Democrats, and Independents are finding common ground in opposing the construction of…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/orphaned-walrus-annautaq-gets-new-chance-at-seaworld-orlando-1793383329951u4ns80df3.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/A-USFWS-Intern-and-Annautaq-credit-supplied-to-GNN-by-SeaWorld-Orlando-Stephanie-Bechara-cropped.jpg" alt="Young orphaned walrus Annautaq is cared for by SeaWorld Orlando staff" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/orphaned-walrus-annautaq-gets-new-chance-at-seaworld-orlando-1793383329951u4ns80df3.html">Orphaned walrus Annautaq gets new chance at SeaWorld Orlando</a></h3>
-                    <p>An orphaned Pacific walrus calf named Annautaq has found a new home at SeaWorld Orlando. The five-month-old male, weighi…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/arizona-gets-64th-national-park-land-of-the-standing-up-rocks-1793383293193qgkt0ncbr.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Balancing-rocks-in-Chiricahua-National-Park-by-NPS-released.jpg" alt="Tall rhyolite rock peaks in Chiricahua National Park in Arizona" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/arizona-gets-64th-national-park-land-of-the-standing-up-rocks-1793383293193qgkt0ncbr.html">Arizona gets 64th National Park: &#39;Land of the Standing-Up Rocks&#39;</a></h3>
-                    <p>The United States has officially designated Chiricahua in Arizona as a national park, the 64th in the country. The area,…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/53-orangutans-rescued-from-forest-fires-on-borneo-1793383226387sna1ljtfg.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Dr-Karmele-Llano-Sanchez-rescues-baby-orangutan-Credit-YIARI-BKSDA-and-International-Animal-Rescue-RELEASED.jpg" alt="Dr. Karmele Llano Sanchez cuddles rescued young orangutan Irene" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/53-orangutans-rescued-from-forest-fires-on-borneo-1793383226387sna1ljtfg.html">53 orangutans rescued from forest fires on Borneo</a></h3>
-                    <p>Forest and peatland fires have been raging on Borneo for months, damaging air quality and destroying the food supply for…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/live-webcam-shows-five-cheetah-cubs-with-mother-zura-1793383191308ektznbw95.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Cheetah-Cam-screenshot-via-Smithsonian-Conservation-Biology-Institute-.jpg" alt="Cheetah Zura cares for her five newborn cubs in their den" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/live-webcam-shows-five-cheetah-cubs-with-mother-zura-1793383191308ektznbw95.html">Live webcam shows five cheetah cubs with mother Zura</a></h3>
-                    <p>On October 5, cheetah Zura gave birth to five cubs at the Smithsonian&#39;s Conservation Institute in Virginia. Through a li…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/sacred-irrawaddy-river-dolphin-in-cambodia-grows-with-6-calves-1793383163484cw5ubl9r4.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Irrawaddy-dolphin-CC-4.0.-Int-Stefan-Brending.jpg" alt="Irrawaddy river dolphin swims at the surface of the Mekong River in Cambodia" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/sacred-irrawaddy-river-dolphin-in-cambodia-grows-with-6-calves-1793383163484cw5ubl9r4.html">Sacred Irrawaddy river dolphin in Cambodia grows with 6 calves</a></h3>
-                    <p>The Irrawaddy river dolphin, one of the world&#39;s most endangered species, is showing hopeful growth in Cambodia. The most…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/princeton-alumni-filter-microplastics-from-wastewater-in-atlantic-city-17933829729423j7p4881e.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/credit-supplied-to-WHYY-as-a-courtesy-PolyGone-Systems.jpg" alt="Large-scale microplastics filter system installed at water treatment facility in Atlantic City" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/princeton-alumni-filter-microplastics-from-wastewater-in-atlantic-city-17933829729423j7p4881e.html">Princeton alumni filter microplastics from wastewater in Atlantic City</a></h3>
-                    <p>Two Princeton alumni, Nathanial Banks and Yidian Liu, have developed a new device through their startup PolyGone Technol…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/volunteers-become-salmon-and-earthworm-to-save-the-river-tone-1793382804799wiqr8zal6.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://positivenews.kinsta.cloud/wp-content/uploads/2026/10/Atlantic-Salmon-001-©-Darren-Honeywill-2026.jpg" alt="Volunteer swims as a salmon through the polluted River Tone in Somerset" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/volunteers-become-salmon-and-earthworm-to-save-the-river-tone-1793382804799wiqr8zal6.html">Volunteers become salmon and earthworm to save the River Tone</a></h3>
-                    <p>In Somerset, eighteen volunteers took part in an unusual study: they learned to empathize with the physiology and senses…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/cocoa-farmer-susana-afrifa-ankrah-protects-ghanaian-rainforest-17933827785551xdq3cwyb.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.positive.news/wp-content/uploads/2026/10/SharedLand_Story03b_WebHeader_1800x1080.jpg" alt="Cocoa farmer Susana Afrifa Ankrah in the protected rainforest of the Atewa Range in Ghana" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/cocoa-farmer-susana-afrifa-ankrah-protects-ghanaian-rainforest-17933827785551xdq3cwyb.html">Cocoa farmer Susana Afrifa Ankrah protects Ghanaian rainforest</a></h3>
-                    <p>In the Atewa Range in Ghana, cocoa farmer Susana Afrifa Ankrah, 62, is helping protect a rare stretch of tropical rainfo…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/lion-rangers-protect-namibian-desert-lions-with-smartphones-1793382715712wkf3c24w4.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://positivenews.kinsta.cloud/wp-content/uploads/2026/10/PN_SharedLand_Story04_WebHeader_1800x1080.jpg" alt="Lion Rangers in Namibia record lion tracks in the field" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/lion-rangers-protect-namibian-desert-lions-with-smartphones-1793382715712wkf3c24w4.html">Lion Rangers protect Namibian desert lions with smartphones</a></h3>
-                    <p>In northwestern Namibia, community rangers from the Lion Rangers program help farmers and lions coexist more peacefully.…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/bhp-wins-award-for-30-years-of-aftercare-at-island-copper-mine-1790962649034k9gqz5jv7.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Left-Island-Copper-Mine-site-and-pit-lake-looking-east-right-a-BHP-representaive-accepting-the-award-credit-left-BHP-supplied-right-TRCR-Awards-Subcommittee-released.jpg" alt="Mine lake filled with seawater at the former Island Copper Mine on Vancouver Island" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/bhp-wins-award-for-30-years-of-aftercare-at-island-copper-mine-1790962649034k9gqz5jv7.html">BHP wins award for 30 years of aftercare at Island Copper Mine</a></h3>
-                    <p>In British Columbia, the BC Technical Research Committee on Reclamation (TRCR) has awarded its annual Reclamation Award …</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/wind-turbines-on-ross-island-save-122-000-gallons-of-diesel-1790962626183fgaxwgrf0.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Ross-Island-Wind-Farm-credit-retrived-from-Meridian-Energy-e1790930850358.jpg" alt="White wind turbine on snow-covered Ross Island in Antarctica near McMurdo Station" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/wind-turbines-on-ross-island-save-122-000-gallons-of-diesel-1790962626183fgaxwgrf0.html">Wind turbines on Ross Island save 122,000 gallons of diesel</a></h3>
-                    <p>Three wind turbines on Antarctica&#39;s Ross Island have saved approximately 122,000 gallons of diesel consumption over 15 y…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/retired-fbi-agent-saves-100-year-old-apple-trees-from-extinction-1790915722910dy2bhv992.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abec7f5a9d9e28bb0e30156_6abec7f4d9fecf0aa42e3252_fbi-agent-retired-lost-apple-project-featured.webp" alt="Old apple tree in an orchard with ripe apples" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/retired-fbi-agent-saves-100-year-old-apple-trees-from-extinction-1790915722910dy2bhv992.html">Retired FBI agent saves 100-year-old apple trees from extinction</a></h3>
-                    <p>Since his retirement in 2012, former FBI agent Dave Benscoter from Washington has been searching for nearly extinct appl…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/sycamore-gap-tree-shows-new-shoots-over-a-meter-tall-three-years-after-felling-1790915698438o8uvk9fkv.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/overlooking-the-sycamore-gap-stump-on-hadrians-wall.-credit-nt-images-annapurna-mellor.jpg" alt="Aerial photograph of the Sycamore Gap tree stump with a ring of new green shoots" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/sycamore-gap-tree-shows-new-shoots-over-a-meter-tall-three-years-after-felling-1790915698438o8uvk9fkv.html">Sycamore Gap tree shows new shoots over a meter tall three years after felling</a></h3>
-                    <p>Three years after the illegal felling of the famous Sycamore Gap tree at Hadrian&#39;s Wall in Northumberland, new aerial ph…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/new-life-old-routes-and-a-hefty-bear-this-week-s-nature-news-dg-20260930-environment.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abe9e979fe86c2ea4f2601c_6abe9e952b26f0d09ffcb5b9_baby-rhino-chamboi-rescue-kenya-featured.webp" alt="New life, old routes and a hefty bear: this week&#39;s nature news" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/new-life-old-routes-and-a-hefty-bear-this-week-s-nature-news-dg-20260930-environment.html">New life, old routes and a hefty bear: this week&#39;s nature news</a></h3>
-                    <p>This week shows that nature is being given space to recover, grow and be celebrated in many places around the world. Fro…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/bear-backpack-wins-fat-bear-week-google-celebrates-with-animation-1790878440611g98ouvpus.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abd55a93ab2f53f35e97472_6abd55a801e452c3e7ee7738_fat-bear-week-google-animation-featured.webp" alt="A fat brown bear stands in the Brooks River in Katmai National Park, Alaska" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/bear-backpack-wins-fat-bear-week-google-celebrates-with-animation-1790878440611g98ouvpus.html">Bear Backpack wins Fat Bear Week, Google celebrates with animation</a></h3>
-                    <p>Bear Backpack has won Fat Bear Week, the annual online tournament of Katmai National Park and Reserve in Alaska that has…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/blue-painted-turtle-pickett-regains-her-natural-color-1790878410748ijywqyc55.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abe9157ef01e1e620632c94_6abe915748eb306a277f0d66_turtle-blue-painted-shell-rescued-kentucky-featured.webp" alt="An Eastern box turtle with a shell covered in bright blue paint, photographed during rehabilitation at a wildlife center." loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/blue-painted-turtle-pickett-regains-her-natural-color-1790878410748ijywqyc55.html">Blue-painted turtle Pickett regains her natural color</a></h3>
-                    <p>In Campbellsville, Kentucky, resident Venitia discovered an Eastern box turtle with a thick layer of bright blue paint o…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/orphaned-rhino-chamboi-grows-up-in-kenyan-oasis-1790878381747p9tmjsey9.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abe9e979fe86c2ea4f2601c_6abe9e952b26f0d09ffcb5b9_baby-rhino-chamboi-rescue-kenya-featured.webp" alt="Young black rhino Chamboi with his caregivers at the Kaluku Neonate Nursery in Kenya" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/orphaned-rhino-chamboi-grows-up-in-kenyan-oasis-1790878381747p9tmjsey9.html">Orphaned rhino Chamboi grows up in Kenyan oasis</a></h3>
-                    <p>On September 6, 2023, rangers from Tsavo Trust and Kenya Wildlife Service found a newborn rhino calf alone in Tsavo West…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/solar-train-revives-ancient-andes-route-in-argentina-1790878333880u4o3ppvgq.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.optimistdaily.com/wp-content/uploads/Tren_de_la_quebrada_01-1024x576.jpg" alt="The solar train Tren Solar travels through the Quebrada de Humahuaca in the Argentine Andes" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/solar-train-revives-ancient-andes-route-in-argentina-1790878333880u4o3ppvgq.html">Solar train revives ancient Andes route in Argentina</a></h3>
-                    <p>In the Quebrada de Humahuaca, a UNESCO World Heritage valley in Argentina&#39;s Jujuy province, the Tren Solar de la Quebrad…</p>
-                </div>
-            </article>
-    </div>
-
-    <nav class="categorie-andere" aria-label="Other categories">
-        <h2>Other categories</h2>
-        <div class="categorie-links">
-            <a href="/categories/en/tech.html">Tech</a>
-            <a href="/categories/en/health.html">Health</a>
-            <a href="/categories/en/science.html">Science</a>
-            <a href="/categories/en/lifestyle.html">Lifestyle</a>
-            <a href="/categories/en/finance.html">Finance</a>
+        <div class="navbar__acties">
+            <button class="settings-trigger" type="button" aria-expanded="false" aria-controls="instellingen">
+                <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#tune"/></svg>
+                <span class="settings-trigger__label" data-i18n="schil_instellingen">Settings</span>
+                <svg class="icoon settings-trigger__chevron" aria-hidden="true"><use href="/assets/iconen.svg#keyboard_arrow_down"/></svg>
+            </button>
+            <!-- Ingelogd (<body data-ingelogd>): Mijn account in plaats van Inloggen. -->
+            <a class="btn btn--secondary navbar__inloggen" href="/inloggen.html" data-alleen="uitgelogd"><span data-i18n="schil_inloggen">Log in</span></a>
+            <a class="btn btn--secondary navbar__account" href="/profiel.html" data-alleen="ingelogd"><span data-i18n="schil_mijn_account">My account</span></a>
+            <a class="btn btn--primary" href="/abonnementen.html"><span data-i18n="schil_probeer_premium">Try Premium</span></a>
+            <!-- Onder 1024 px: één knop die het menu opent (zelfde paneel). -->
+            <button class="menu-knop" type="button" aria-expanded="false" aria-controls="instellingen">
+                <span class="menu-knop__dicht">
+                    <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#menu"/></svg>
+                    <span data-i18n="schil_menu">Menu</span>
+                </span>
+                <span class="menu-knop__open">
+                    <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#close"/></svg>
+                    <span data-i18n="instelling_sluiten">Close</span>
+                </span>
+            </button>
         </div>
-    </nav>
+    </div>
+
+    <div class="settings-panel" id="instellingen" inert>
+        <div class="settings-panel__binnen">
+            <div class="container settings-panel__inhoud">
+                <!-- Alleen op mobiel zichtbaar (Mobile menu); op desktop staan
+                     deze links en knoppen in de navbar. -->
+                <div class="mobiel-menu">
+                    <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
+                        <ul>
+                            <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">News</span></a></li>
+                            <li><a class="menu-link"><span data-i18n="schil_themas">Topics</span></a></li>
+                            <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archive</span></a></li>
+                            <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
+                        </ul>
+                    </nav>
+                    <div class="mobiel-menu__account">
+                        <a class="btn btn--secondary" href="/inloggen.html" data-alleen="uitgelogd"><span data-i18n="schil_inloggen">Log in</span></a>
+                        <a class="btn btn--secondary" href="/profiel.html" data-alleen="ingelogd"><span data-i18n="schil_mijn_account">My account</span></a>
+                        <a class="btn btn--primary" href="/abonnementen.html"><span data-i18n="schil_probeer_premium">Try Premium</span></a>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="setting-groep">
+                    <h2 class="setting-groep__titel" id="instelling-weergave" data-i18n="instelling_weergave">Appearance</h2>
+                    <p class="setting-groep__uitleg" data-i18n="instelling_weergave_uitleg">System follows the light or dark mode of your device.</p>
+                    <div class="setting-groep__opties" role="radiogroup" aria-labelledby="instelling-weergave" data-instelling="thema">
+                        <button class="setting-option" type="button" role="radio" aria-checked="true" data-waarde="systeem">
+                            <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#computer"/></svg>
+                            <span data-i18n="instelling_systeem">System</span>
+                            <svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg>
+                        </button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="licht">
+                            <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#light_mode"/></svg>
+                            <span data-i18n="instelling_licht">Light</span>
+                            <svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg>
+                        </button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="donker">
+                            <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#dark_mode"/></svg>
+                            <span data-i18n="instelling_donker">Dark</span>
+                            <svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="setting-groep">
+                    <h2 class="setting-groep__titel" id="instelling-taal" data-i18n="instelling_taal">Language</h2>
+                    <p class="setting-groep__uitleg" data-i18n="instelling_taal_uitleg">The language of the site and the articles.</p>
+                    <div class="setting-groep__opties" role="radiogroup" aria-labelledby="instelling-taal" data-instelling="taal">
+                        <button class="setting-option" type="button" role="radio" aria-checked="true" data-waarde="nl" lang="nl">Nederlands<svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="en" lang="en">English<svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="de" lang="de">Deutsch<svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="fr" lang="fr">Français<svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="es" lang="es">Español<svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></button>
+                    </div>
+                </div>
+
+                <div class="settings-panel__notitie">
+                    <button class="btn btn--secondary btn--sm" type="button" data-sluit-instellingen>
+                        <span data-i18n="instelling_sluiten">Close</span>
+                        <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#close"/></svg>
+                    </button>
+                    <p data-i18n="instelling_bewaard">Your choice is saved on this device, even without an account. Logged in? You will find the same settings in your profile.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main id="inhoud">
+    <section class="info-sectie info-sectie--intro" aria-labelledby="cat-titel">
+        <div class="container info-tekst">
+            <p class="type-overline">Environment</p>
+            <h1 class="type-display-sm" id="cat-titel">Good news about Environment</h1>
+            <p class="info-tekst__lead">A fresh selection of positive Environment news from around the world, every day.</p>
+        </div>
+    </section>
+
+    <section class="info-sectie" aria-label="Good news about Environment">
+        <div class="container">
+        <ul class="editie-raster__rij editie-raster__rij--drie" role="list">
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://reasonstobecheerful.world/wp-content/uploads/2026/11/Wallisfurth_Moos-Graffiti-Kuenstler-im-Einkaufszentrum.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/moss-graffiti-by-wallisfurth-shows-potential-of-moss-as-urban-cooling-1794500748712egh3itfz6.html">Moss graffiti by Wallisfurth shows potential of moss as urban cooling</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.optimistdaily.com/wp-content/uploads/oil-pump-jack-city-limits-Depositphotos_199434004_S.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/los-angeles-bans-oil-drilling-permanently-1794463996470mjxfozzef.html">Los Angeles bans oil drilling permanently</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-Cantabrian-brown-bear-credit-Juan-Iacruz-CC-BY-SA-4.0.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/bears-flowers-and-a-plan-three-signs-of-recovery-on-earth-dg-20261110-environment.html">Bears, flowers and a plan: three signs of recovery on Earth</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-Cantabrian-brown-bear-credit-Juan-Iacruz-CC-BY-SA-4.0.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/brown-bear-population-in-spain-doubles-thanks-to-protection-17944248919439uxdg6k76.html">Brown bear population in Spain doubles thanks to protection</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.optimistdaily.com/wp-content/uploads/oil-pumps-on-sunset-Depositphotos_5186129_S.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/brazil-presents-world-s-first-fossil-fuel-phase-out-roadmap-1794373689644spmeqye98.html">Brazil presents world&#39;s first fossil fuel phase-out roadmap</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Juan-Cortez-Estay-Unsplash.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/atacama-desert-blooms-in-record-colors-after-years-of-drought-1794338863435j7325tvr1.html">Atacama Desert blooms in record colors after years of drought</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/glowworms-unsplash.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/nature-recovers-glowworms-seaweed-and-an-estate-get-a-second-chance-dg-20261108-environment.html">Nature recovers: glowworms, seaweed and an estate get a second chance</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/glowworms-unsplash.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/glow-worms-return-to-nosterfield-after-a-century-away-17942618376320zr0nsc0o.html">Glow-worms return to Nosterfield after a century away</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Maerl-beds-in-French-waters-credit-Olivier-Dugornay-CC-4.0.-BY.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/ban-on-dredging-saves-pink-seaweed-maerl-at-summer-isles-1794261806053etimbu6da.html">Ban on dredging saves pink seaweed maerl at Summer Isles</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-drone-image-of-the-site-of-the-Bronze-Age-Lordenshaw-Hill-Fort-credit-The-Wildlife-Trusts-©.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/world-buys-rothbury-estate-for-nature-restoration-1794027777393q7fy9vdx3.html">World buys Rothbury Estate for nature restoration</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://theecologist.org/sites/default/files/styles/facebook/public/2019-01/satishkumar_2.jpg?h=2992ba0a&amp;amp;itok=sw-KYTy5" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/return-protection-and-warmth-the-environmental-news-from-early-november-dg-20261105-environment.html">Return, protection and warmth: the environmental news from early November</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://theecologist.org/sites/default/files/styles/facebook/public/2019-01/satishkumar_2.jpg?h=2992ba0a&amp;amp;itok=sw-KYTy5" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/satish-kumar-wins-future-icons-award-for-8-000-mile-peace-walk-17939917345584tddw5axb.html">Satish Kumar wins Future Icons Award for 8,000-mile peace walk</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Geothermal-boring-at-Riggs-Meadow-Housing-Development-credit-Dandelion-Energy-released.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/vermont-gas-brings-geothermal-heating-to-affordable-homes-1793991687622bmh7f4zst.html">Vermont Gas brings geothermal heating to affordable homes</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/The-Bangka-slow-loris-credit-Gunay-M.E.-CC-4.0.-BY-SA.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/toxic-bangka-loris-turns-out-not-to-have-gone-extinct-after-all-1793991652315mthd40ah5.html">Toxic Bangka loris turns out not to have gone extinct after all</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-David-Kinchin-Smith-RSPB.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/great-terns-return-to-british-south-coast-after-bird-flu-1793907606024s2635r9hy.html">Great Terns Return to British South Coast After Bird Flu</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/The-Pantanal-landscape-credit-Filipe-Frazao-CC-3.0-BY-SA-1.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/brazil-s-pantanal-national-park-significantly-expanded-1793857124364imh34spkm.html">Brazil&#39;s Pantanal National Park Significantly Expanded</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.optimistdaily.com/wp-content/uploads/Local-Changemakers-Story-Covers-12.png" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/animals-return-and-lights-go-out-for-birds-good-news-from-nature-dg-20261103-environment.html">Animals return and lights go out for birds: good news from nature</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.optimistdaily.com/wp-content/uploads/Local-Changemakers-Story-Covers-12.png" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/maya-higa-builds-wildlife-sanctuary-via-twitch-1793769496499udef1tpv4.html">Maya Higa builds wildlife sanctuary via Twitch</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-NatureScot.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/beavers-return-to-loch-ness-after-500-years-1793769453371lj3rxqr3y.html">Beavers return to Loch Ness after 500 years</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.optimistdaily.com/wp-content/uploads/koala-Depositphotos_18324133_S.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/carbon-credits-open-great-koala-national-park-in-nsw-1793733350635zxe818kte.html">Carbon credits open Great Koala National Park in NSW</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Corys-shearwater-on-Wikipedia-by-Hobbyfotowiki-CC0.jpeg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/portuguese-island-corvo-turns-off-lights-for-shearwaters-1793595351745s52awslnz.html">Portuguese island Corvo turns off lights for shearwaters</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Sunrise-on-the-Itenez-River-credit-Gabriela-Villaneuva-CC-4.0.-BY-SA-e1793094098653.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/new-agua-dulce-nature-reserve-protects-itenez-river-as-link-of-life-1793508898612miskfxp66.html">New Agua Dulce nature reserve protects Iténez river as &#39;link of life&#39;</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2022/12/potato-unsplash.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/from-potato-harvest-to-walrus-calf-good-news-for-nature-comes-from-all-corners-dg-20261030-environment.html">From potato harvest to walrus calf: good news for nature comes from all corners</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2022/12/potato-unsplash.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/best-potato-harvest-in-ten-years-on-hokkaido-17934212711084sy6icao8.html">Best potato harvest in ten years on Hokkaido</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/credit-supplied-to-WHYY-as-a-courtesy-PolyGone-Systems.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/clean-water-and-new-opportunities-for-animals-worldwide-dg-20261029-environment.html">Clean water and new opportunities for animals worldwide</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.pbs.org/wnet/nature/files/2026/10/Gabriela-Ponce-Santizo-Photo-1-1280x720.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/gabriela-ponce-santizo-19-years-of-nature-conservation-in-guatemala-17933843253478dsqs8a8b.html">Gabriela Ponce Santizo: 19 years of nature conservation in Guatemala</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ac69ff03d218c2decce112b_6ac69fefbe25a3aadb479aa0_jaguar-endangered-species-panthera-wildlife-crossing-featured.webp" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/rare-jaguar-filmed-near-guatemala-honduras-border-1793384043255lbpha2iw0.html">Rare jaguar filmed near Guatemala-Honduras border</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ac7bae3fa7ba945230fea73_6ac7bae2f3f863de97d1c1dd_waterfowl-sanctuary-baby-swan-fishing-hook-featured.webp" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/man-rescues-baby-swan-from-fishing-hook-as-parents-watch-17933840167889x3qeir9f.html">Man rescues baby swan from fishing hook as parents watch</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ac9289c4d9bf88b7b75c8c1_6ac9289b733f24c72bcaff23_endangered-species-leopard-shark-zebra-nat-geo-featured.webp" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/threatened-leopard-shark-spotted-for-first-time-in-samoan-waters-1793383958266mxtf6o3nv.html">Threatened leopard shark spotted for first time in Samoan waters</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6acaa45fbebc93df8b3b48b7_6acaa45ebebc93df8b3b485e_endangered-species-sloth-bear-prosthetic-limb-featured-2.webp" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/sloth-bear-vasi-receives-first-ever-bear-prosthetic-1793383924314zvjyipnh7.html">Sloth bear Vasi receives first-ever bear prosthetic</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6acff946832013fab7bf796b_6acff945cec66dcf02426812_bristol-harbour-england-floating-wetlands-featured.webp" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/floating-wetlands-bring-nature-back-to-bristol-harbour-1793383890241c7fuext63.html">Floating wetlands bring nature back to Bristol Harbour</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ada2bada6d2370eb3372851_6ada2ba4c547af990129d8bb_michigan-arctic-grayling-tribes-featured.jpeg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/three-michigan-tribes-aim-to-restore-vanished-arctic-grayling-17933837798258o0963pk9.html">Three Michigan tribes aim to restore vanished Arctic grayling</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ae0db309e0da5e8013cfd1e_6ae0db21fddce4e8a74c5916_buoy-kite-seabirds-fishing-nets-featured.jpeg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/eye-buoys-and-raptor-kites-save-seabirds-from-fishing-nets-1793383630505h1pw71f0a.html">Eye buoys and raptor kites save seabirds from fishing nets</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ae21181bbebf19592cb6042_6ae211674e91beee5c25a896_mekong-river-irrawaddy-dolphins-cambodia-featured.jpeg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/six-dolphin-calves-born-irrawaddy-dolphin-population-in-cambodia-now-numbers-118-1793383597218er891iiw6.html">Six dolphin calves born: Irrawaddy dolphin population in Cambodia now numbers 118</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ae289e3aeef74a32270f7b1_6ae289e2aeef74a32270f771_netherlands-pledges-tropical-forests-featured.jpeg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/netherlands-pledges-500-million-dollars-for-tropical-rainforest-1793383535660vb37ygvqn.html">Netherlands pledges 500 million dollars for tropical rainforest</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.optimistdaily.com/wp-content/uploads/three-adult-giraffes-walking-line-Depositphotos_413297952_S.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/kenya-allocates-160-million-dollars-for-maasai-mara-and-tsavo-1793383409460miu6j5iw1.html">Kenya allocates 160 million dollars for Maasai Mara and Tsavo</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://reasonstobecheerful.world/wp-content/uploads/2026/10/Patty-and-her-husband-on-their-land-2.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/republicans-and-democrats-united-against-data-centers-1793383361055da2zrqy6s.html">Republicans and Democrats united against data centers</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/A-USFWS-Intern-and-Annautaq-credit-supplied-to-GNN-by-SeaWorld-Orlando-Stephanie-Bechara-cropped.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/orphaned-walrus-annautaq-gets-new-chance-at-seaworld-orlando-1793383329951u4ns80df3.html">Orphaned walrus Annautaq gets new chance at SeaWorld Orlando</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Balancing-rocks-in-Chiricahua-National-Park-by-NPS-released.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/arizona-gets-64th-national-park-land-of-the-standing-up-rocks-1793383293193qgkt0ncbr.html">Arizona gets 64th National Park: &#39;Land of the Standing-Up Rocks&#39;</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Dr-Karmele-Llano-Sanchez-rescues-baby-orangutan-Credit-YIARI-BKSDA-and-International-Animal-Rescue-RELEASED.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/53-orangutans-rescued-from-forest-fires-on-borneo-1793383226387sna1ljtfg.html">53 orangutans rescued from forest fires on Borneo</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Cheetah-Cam-screenshot-via-Smithsonian-Conservation-Biology-Institute-.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/live-webcam-shows-five-cheetah-cubs-with-mother-zura-1793383191308ektznbw95.html">Live webcam shows five cheetah cubs with mother Zura</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Irrawaddy-dolphin-CC-4.0.-Int-Stefan-Brending.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/sacred-irrawaddy-river-dolphin-in-cambodia-grows-with-6-calves-1793383163484cw5ubl9r4.html">Sacred Irrawaddy river dolphin in Cambodia grows with 6 calves</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/credit-supplied-to-WHYY-as-a-courtesy-PolyGone-Systems.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/princeton-alumni-filter-microplastics-from-wastewater-in-atlantic-city-17933829729423j7p4881e.html">Princeton alumni filter microplastics from wastewater in Atlantic City</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://positivenews.kinsta.cloud/wp-content/uploads/2026/10/Atlantic-Salmon-001-©-Darren-Honeywill-2026.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/volunteers-become-salmon-and-earthworm-to-save-the-river-tone-1793382804799wiqr8zal6.html">Volunteers become salmon and earthworm to save the River Tone</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.positive.news/wp-content/uploads/2026/10/SharedLand_Story03b_WebHeader_1800x1080.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/cocoa-farmer-susana-afrifa-ankrah-protects-ghanaian-rainforest-17933827785551xdq3cwyb.html">Cocoa farmer Susana Afrifa Ankrah protects Ghanaian rainforest</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://positivenews.kinsta.cloud/wp-content/uploads/2026/10/PN_SharedLand_Story04_WebHeader_1800x1080.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/lion-rangers-protect-namibian-desert-lions-with-smartphones-1793382715712wkf3c24w4.html">Lion Rangers protect Namibian desert lions with smartphones</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Left-Island-Copper-Mine-site-and-pit-lake-looking-east-right-a-BHP-representaive-accepting-the-award-credit-left-BHP-supplied-right-TRCR-Awards-Subcommittee-released.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/bhp-wins-award-for-30-years-of-aftercare-at-island-copper-mine-1790962649034k9gqz5jv7.html">BHP wins award for 30 years of aftercare at Island Copper Mine</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Ross-Island-Wind-Farm-credit-retrived-from-Meridian-Energy-e1790930850358.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/wind-turbines-on-ross-island-save-122-000-gallons-of-diesel-1790962626183fgaxwgrf0.html">Wind turbines on Ross Island save 122,000 gallons of diesel</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abec7f5a9d9e28bb0e30156_6abec7f4d9fecf0aa42e3252_fbi-agent-retired-lost-apple-project-featured.webp" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/retired-fbi-agent-saves-100-year-old-apple-trees-from-extinction-1790915722910dy2bhv992.html">Retired FBI agent saves 100-year-old apple trees from extinction</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/overlooking-the-sycamore-gap-stump-on-hadrians-wall.-credit-nt-images-annapurna-mellor.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/sycamore-gap-tree-shows-new-shoots-over-a-meter-tall-three-years-after-felling-1790915698438o8uvk9fkv.html">Sycamore Gap tree shows new shoots over a meter tall three years after felling</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abe9e979fe86c2ea4f2601c_6abe9e952b26f0d09ffcb5b9_baby-rhino-chamboi-rescue-kenya-featured.webp" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/new-life-old-routes-and-a-hefty-bear-this-week-s-nature-news-dg-20260930-environment.html">New life, old routes and a hefty bear: this week&#39;s nature news</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abd55a93ab2f53f35e97472_6abd55a801e452c3e7ee7738_fat-bear-week-google-animation-featured.webp" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/bear-backpack-wins-fat-bear-week-google-celebrates-with-animation-1790878440611g98ouvpus.html">Bear Backpack wins Fat Bear Week, Google celebrates with animation</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abe9157ef01e1e620632c94_6abe915748eb306a277f0d66_turtle-blue-painted-shell-rescued-kentucky-featured.webp" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/blue-painted-turtle-pickett-regains-her-natural-color-1790878410748ijywqyc55.html">Blue-painted turtle Pickett regains her natural color</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abe9e979fe86c2ea4f2601c_6abe9e952b26f0d09ffcb5b9_baby-rhino-chamboi-rescue-kenya-featured.webp" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/orphaned-rhino-chamboi-grows-up-in-kenyan-oasis-1790878381747p9tmjsey9.html">Orphaned rhino Chamboi grows up in Kenyan oasis</a></h2></div></article></li>
+        </ul>
+        </div>
+    </section>
+
+    <section class="info-sectie info-sectie--subtiel" aria-labelledby="cat-andere">
+        <div class="container info-sectie__binnen">
+            <h2 class="type-heading-lg" id="cat-andere">Other categories</h2>
+            <ul class="topic-links" role="list">
+            <li><a class="topic-link" href="/categories/en/tech.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#lightbulb"/></svg><span>Tech</span><svg class="icoon topic-link__chevron" aria-hidden="true"><use href="/assets/iconen.svg#chevron_right"/></svg></a></li>
+            <li><a class="topic-link" href="/categories/en/health.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#ecg_heart"/></svg><span>Health</span><svg class="icoon topic-link__chevron" aria-hidden="true"><use href="/assets/iconen.svg#chevron_right"/></svg></a></li>
+            <li><a class="topic-link" href="/categories/en/science.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#science"/></svg><span>Science</span><svg class="icoon topic-link__chevron" aria-hidden="true"><use href="/assets/iconen.svg#chevron_right"/></svg></a></li>
+            <li><a class="topic-link" href="/categories/en/lifestyle.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#spa"/></svg><span>Lifestyle</span><svg class="icoon topic-link__chevron" aria-hidden="true"><use href="/assets/iconen.svg#chevron_right"/></svg></a></li>
+            <li><a class="topic-link" href="/categories/en/finance.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#euro"/></svg><span>Finance</span><svg class="icoon topic-link__chevron" aria-hidden="true"><use href="/assets/iconen.svg#chevron_right"/></svg></a></li>
+            </ul>
+        </div>
+    </section>
 </main>
-<footer class="main-footer">
-  <div class="container footer-grid">
-    <!-- Kolom 1: Over & Transparantie -->
-    <div class="footer-about">
-      <div class="footer-logo">Bright<span>News</span></div>
-      <p data-i18n="footer_text">Founded and developed by <strong>Maarten de Klerk</strong>. Maarten is the owner and lead developer of BrightNews, dedicated to spreading positive vibes through tech.</p>
-      <div class="footer-legal-info">
-        <p data-i18n="footer_address">Vossenstraat 19, 6286BW Nijswiller, The Netherlands</p>
-        <p><span data-i18n="footer_kvk_label">KvK</span>: <span data-i18n="footer_kvk_val">42048341</span> · <span data-i18n="footer_btw_label">VAT</span>: <span data-i18n="footer_btw_val">NL005455019B94</span></p>
-        <p class="footer-mor-notice" data-i18n="footer_mor_notice">Payments are securely processed by Stripe, our Merchant of Record.</p>
-      </div>
-    </div>
 
-    <!-- Kolom 2: Explore -->
-    <div class="footer-links">
-      <h3 data-i18n="footer_explore">Explore</h3>
-      <ul>
-        <li><a href="/index.html" data-i18n="nav_home">Home</a></li>
-        <li><a href="/over-ons.html" data-i18n="footer_mission">Our Mission</a></li>
-        <li><a href="/abonnementen.html" data-i18n="footer_subs">Subscriptions</a></li>
-        <li><a href="#" onclick="openCustomerPortal(event)" data-i18n="footer_manage_sub">Manage Subscription</a></li>
-        <li><a href="/profiel.html" data-i18n="footer_acc">My Account</a></li>
-      </ul>
-    </div>
+<footer class="site-footer">
+    <div class="container site-footer__binnen">
+        <div class="site-footer__rij">
+            <div class="site-footer__merk">
+                <a class="logo" href="/" aria-label="BrightNews, naar de homepage" data-i18n-aria-label="schil_logo_label">
+                    <svg class="logo__beeldmerk" viewBox="0 0 39.6151 40" aria-hidden="true">
+                        <path d="M9 28a11 11 0 0 1 22 0H9Z" fill="#FFC933"/>
+                        <path d="M35.25 29.5H4.75a1.75 1.75 0 0 0 0 3.5h30.5a1.75 1.75 0 0 0 0-3.5Z" fill="currentColor"/>
+                        <path d="M20 12.5V8M30.3 17.7l3.2-3.2M9.7 17.7l-3.2-3.2" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+                    </svg>
+                    <span class="logo__woordmerk">Bright<span>News</span></span>
+                </a>
+                <p data-i18n="schil_tagline">A little better news every day, in five languages.</p>
+                <ul class="socials" aria-label="Volg BrightNews" data-i18n-aria-label="schil_volg_ons">
+                    <li><a class="social-knop" href="https://www.facebook.com/people/BrightNews/61594888799297/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a></li>
+                    <li><a class="social-knop" href="https://www.instagram.com/brightnews.online" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a></li>
+                    <li><a class="social-knop" href="https://www.linkedin.com/company/brightnewsonline/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+                </ul>
+            </div>
 
-    <!-- Kolom 3: Community -->
-    <div class="footer-links">
-      <h3 data-i18n="footer_community">Community</h3>
-      <ul>
-        <li><a href="/Privacy.html" data-i18n="footer_privacy">Privacy Policy</a></li>
-        <li><a href="/algemeene-voorwaarden.html" data-i18n="footer_service_terms">Terms of Service</a></li>
-        <li><a href="/refunds.html" data-i18n="footer_refunds">Refunds</a></li>
-        <li><a href="/Privacy.html#cookies-section" data-i18n="footer_cookies">Cookies</a></li>
-        <li><a href="/contact.html" data-i18n="footer_support">Contact Support</a></li>
-      </ul>
-    </div>
+            <nav class="footer-kolom" aria-labelledby="footer-lezen">
+                <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Read</h2>
+                <ul>
+                    <li><a href="/"><span data-i18n="schil_nieuws">News</span></a></li>
+                    <li><a><span data-i18n="schil_themas">Topics</span></a></li>
+                    <li><a href="/archief.html"><span data-i18n="schil_archief">Archive</span></a></li>
+                    <li><a><span data-i18n="schil_categorieen">Categories</span></a></li>
+                </ul>
+            </nav>
 
-    <!-- Kolom 4: Socials & Badge -->
-    <div class="footer-socials">
-      <h3 data-i18n="footer_follow">Follow BrightNews</h3>
-      <div class="social-icons">
-        <a href="https://www.facebook.com/people/BrightNews/61594888799297/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a>
-        <a href="https://www.instagram.com/brightnews.online" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a>
-        <a href="https://www.linkedin.com/company/brightnewsonline/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-        <a href="mailto:info@brightnews.online" class="social-btn" aria-label="E-mail"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
-      </div>
+            <nav class="footer-kolom" aria-labelledby="footer-merk">
+                <h2 class="footer-kolom__titel" id="footer-merk">BrightNews</h2>
+                <ul>
+                    <li><a href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
+                    <li><a href="/zo-kiezen-we.html"><span data-i18n="schil_zo_kiezen_we">How we choose</span></a></li>
+                    <li><a href="/abonnementen.html"><span data-i18n="schil_premium">Premium</span></a></li>
+                    <li><a href="/Privacy.html"><span data-i18n="schil_privacy_voorwaarden">Privacy and terms</span></a></li>
+                </ul>
+            </nav>
+
+            <nav class="footer-kolom" aria-labelledby="footer-hulp">
+                <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Help</h2>
+                <ul>
+                    <li><a><span data-i18n="schil_instellingen">Settings</span></a></li>
+                    <li><a href="/contact.html"><span data-i18n="schil_contact">Contact</span></a></li>
+                    <li><a href="/feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
+                    <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Refunds</span></a></li>
+                    <li><button class="footer-knop" type="button" data-cookie-instellingen><span data-i18n="v5_ck_footer">Cookie settings</span></button></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="site-footer__onder">
+            <p data-i18n="schil_copyright">© 2026 BrightNews. Summarised with AI from reliable sources.</p>
+            <p data-i18n="schil_bedrijfsgegevens">Vossenstraat 19, 6286 BW Nijswiller, the Netherlands · Chamber of Commerce 42048341 · VAT NL005455019B94</p>
+        </div>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <p data-i18n="footer_created_by">&copy; 2026 BrightNews • All rights reserved • Created with 💚 in the Netherlands</p>
-  </div>
 </footer>
+
+<!-- Cookiebalk (Figma: Cookie bar, Balk en Instellingen). Verschijnt zolang
+     er geen keuze is, of de keuze ouder is dan 12 maanden. Geen pop-up:
+     vast onderaan, zonder donkere laag. Gedrag: js/v5/schil.js. -->
+<section class="cookie-bar" id="cookiebalk" data-weergave="balk" aria-labelledby="cookiebalk-titel" hidden>
+    <div class="container cookie-bar__binnen">
+        <div class="cookie-bar__tekst">
+            <h2 class="cookie-bar__titel" id="cookiebalk-titel" data-i18n="v5_ck_titel">Cookies on BrightNews</h2>
+            <p class="cookie-bar__uitleg">
+                <span class="cookie-bar__lang" data-i18n="v5_ck_tekst">We use cookies that are needed to make the site work. Other cookies only if you're OK with it.</span>
+                <span class="cookie-bar__kort" data-i18n="v5_ck_tekst_kort">Needed for the site. Statistics only with your permission.</span>
+                <a href="/Privacy.html#cookies"><span data-i18n="v5_ck_lees">Read the privacy statement</span></a>
+                <button class="btn btn--tertiary btn--sm cookie-bar__instellingen-kort" type="button" data-cookie="instellingen" aria-expanded="false" aria-controls="cookiebalk-keuzes"><span data-i18n="v5_ck_instellingen">Settings</span></button>
+            </p>
+        </div>
+        <div class="cookie-bar__keuzes" id="cookiebalk-keuzes">
+            <div class="cookie-bar__keuze">
+                <label class="toggle"><input class="visueel-verborgen" type="checkbox" role="switch" checked disabled aria-describedby="cookie-noodzakelijk-uitleg"><span class="toggle__baan" aria-hidden="true"></span><span data-i18n="v5_ck_noodzakelijk">Necessary</span></label>
+                <p id="cookie-noodzakelijk-uitleg" data-i18n="v5_ck_noodzakelijk_uitleg">To log you in and remember your language and display. Always on.</p>
+            </div>
+            <div class="cookie-bar__keuze">
+                <label class="toggle"><input class="visueel-verborgen" type="checkbox" role="switch" id="cookie-statistieken" aria-describedby="cookie-statistieken-uitleg"><span class="toggle__baan" aria-hidden="true"></span><span data-i18n="v5_ck_statistieken">Statistics</span></label>
+                <p id="cookie-statistieken-uitleg" data-i18n="v5_ck_statistieken_uitleg">Measuring which pages are read, so we can improve the site. Google Analytics does this with a cookie holding a random code, without your name.</p>
+            </div>
+        </div>
+        <div class="cookie-bar__knoppen">
+            <button class="btn btn--tertiary" type="button" data-cookie="instellingen" aria-expanded="false" aria-controls="cookiebalk-keuzes"><span data-i18n="v5_ck_instellingen">Settings</span></button>
+            <button class="btn btn--secondary" type="button" data-cookie="noodzakelijk"><span data-i18n="v5_ck_noodzakelijk_knop">Necessary only</span></button>
+            <button class="btn btn--secondary" type="button" data-cookie="opslaan"><span data-i18n="v5_ck_opslaan">Save choice</span></button>
+            <button class="btn btn--secondary" type="button" data-cookie="alles"><span data-i18n="v5_ck_alles">Accept all</span></button>
+        </div>
+    </div>
+</section>
+
+<!-- Supabase op elke v5-pagina (TODO 66 punt 9): js/v5/schil.js zet daarmee
+     data-ingelogd en data-premium op <body>, en de inloglink uit de mail mag
+     op elke pagina landen. Vóór de paginascripts, zodat window.supabaseClient
+     klaarstaat (defer houdt de volgorde aan). -->
+<script src="/js/vendor/supabase-js-2.112.4.js" defer></script>
+<script src="/js/supabase-init.js" defer></script>
+<script src="/data/translations.js" defer></script>
+<script src="/js/v5/schil.js" defer></script>
+
 </body>
 </html>

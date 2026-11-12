@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
     <meta name="robots" content="max-image-preview:large">
-    <link rel="alternate" type="application/rss+xml" title="BrightNews (Español)" href="/feed-es.xml">
-    <link rel="alternate" type="application/rss+xml" title="BrightNews (Nederlands)" href="/feed-nl.xml">
-    <link rel="alternate" type="application/rss+xml" title="BrightNews (English)" href="/feed-en.xml">
-    <link rel="alternate" type="application/rss+xml" title="BrightNews (Deutsch)" href="/feed-de.xml">
-    <link rel="alternate" type="application/rss+xml" title="BrightNews (Français)" href="/feed-fr.xml">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://www.googletagmanager.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
-    <meta name="description" content="Cada día, una selección fresca de noticias positivas sobre Salud de todo el mundo.">
     <title>Buenas noticias sobre Salud | BrightNews</title>
+<script>
+    /* Weergave vóór de eerste weergave toepassen (redesign v5). Staat inline
+       en zo hoog mogelijk in <head>: een extern script zou pas laden nadat de
+       pagina al één keer in de systeemkleur getekend is, en dan flitst een
+       lezer die "donker" koos eerst wit. De CSP staat inline scripts toe.
+       Zonder eigen keuze doet dit niets en volgt css/tokens.css het systeem.
+       localStorage kan weigeren (privévenster, geblokkeerde opslag); dan valt
+       de site gewoon terug op het systeem. */
+    try {
+        var bnThema = localStorage.getItem('bn-thema');
+        if (bnThema === 'licht' || bnThema === 'donker') {
+            document.documentElement.setAttribute('data-theme', bnThema);
+        }
+    } catch (e) { /* geen opslag: systeem volgen */ }
+</script>
+    <meta name="description" content="Cada día, una selección fresca de noticias positivas sobre Salud de todo el mundo.">
     <link rel="canonical" href="https://brightnews.online/categories/es/salud.html">
     <link rel="alternate" hreflang="nl" href="https://brightnews.online/categories/nl/gezondheid.html">
     <link rel="alternate" hreflang="en" href="https://brightnews.online/categories/en/health.html">
@@ -19,257 +29,288 @@
     <link rel="alternate" hreflang="fr" href="https://brightnews.online/categories/fr/sante.html">
     <link rel="alternate" hreflang="es" href="https://brightnews.online/categories/es/salud.html">
     <link rel="alternate" hreflang="x-default" href="https://brightnews.online/categories/en/health.html">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Español)" href="/feed-es.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Nederlands)" href="/feed-nl.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (English)" href="/feed-en.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Deutsch)" href="/feed-de.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Français)" href="/feed-fr.xml">
     <meta property="og:title" content="Buenas noticias sobre Salud">
     <meta property="og:description" content="Cada día, una selección fresca de noticias positivas sobre Salud de todo el mundo.">
     <meta property="og:url" content="https://brightnews.online/categories/es/salud.html">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://brightnews.online/assets/brightnews-logo.png">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0a120d" media="(prefers-color-scheme: dark)">
     <link rel="icon" type="image/png" href="/assets/brightnews-logo-faviconv5.png">
-    <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/components.css">
-    <!-- .grid-container en .news-card staan in de paginastijl van de
-         homepage; deze pagina gebruikt dezelfde kaarten. -->
-    <link rel="stylesheet" href="/css/pages/index.css">
-    <link rel="stylesheet" href="/css/pages/categorie.css">
-    <script src="/data/translations.js" defer></script>
-    <script src="/js/main.js" defer></script>
+    <link rel="preload" href="/assets/fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/tokens.css">
+    <link rel="stylesheet" href="/css/v5/basis.css">
+    <link rel="stylesheet" href="/css/v5/componenten.css">
+    <link rel="stylesheet" href="/css/v5/paginas.css">
 </head>
-<body>
-<a href="#main-content" class="skip-link" data-i18n="skip_to_content">Saltar al contenido principal</a>
-<header>
-    <nav class="container">
-        <div class="nav-left-group">
-            <details class="dropdown language-picker">
-                <summary class="dropbtn" id="current-lang">
-                    <span class="taal-vlag">🇺🇸</span><span class="taal-naam">English</span><span class="taal-code" aria-hidden="true">EN</span> <span class="arrow">▼</span>
-                </summary>
-                <div class="dropdown-content">
-                        <a href="#" onclick="wisselTaal('en', '🇺🇸 English', event)"><span class="taal-vlag">🇺🇸</span> English</a>
-                    <a href="#" onclick="wisselTaal('nl', '🇳🇱 Nederlands', event)"><span class="taal-vlag">🇳🇱</span> Nederlands</a>
-                    <a href="#" onclick="wisselTaal('de', '🇩🇪 Deutsch', event)"><span class="taal-vlag">🇩🇪</span> Deutsch</a>
-                    <a href="#" onclick="wisselTaal('fr', '🇫🇷 Français', event)"><span class="taal-vlag">🇫🇷</span> Français</a>
-                    <a href="#" onclick="wisselTaal('es', '🇪🇸 Español', event)"><span class="taal-vlag">🇪🇸</span> Español</a>
-                </div>
-            </details>
+<body data-sectie="nieuws" data-alt-nl="/categories/nl/gezondheid.html" data-alt-en="/categories/en/health.html" data-alt-de="/categories/de/gesundheit.html" data-alt-fr="/categories/fr/sante.html" data-alt-es="/categories/es/salud.html">
+<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
+     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
+     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
+     tabvolgorde. -->
+<a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Saltar al contenido principal</span></a>
+<header class="site-header">
+    <div class="container navbar">
+        <a class="logo" href="/" aria-label="BrightNews, naar de homepage" data-i18n-aria-label="schil_logo_label">
+            <svg class="logo__beeldmerk" viewBox="0 0 39.6151 40" aria-hidden="true">
+                <path d="M9 28a11 11 0 0 1 22 0H9Z" fill="#FFC933"/>
+                <path d="M35.25 29.5H4.75a1.75 1.75 0 0 0 0 3.5h30.5a1.75 1.75 0 0 0 0-3.5Z" fill="currentColor"/>
+                <path d="M20 12.5V8M30.3 17.7l3.2-3.2M9.7 17.7l-3.2-3.2" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+            </svg>
+            <span class="logo__woordmerk">Bright<span>News</span></span>
+        </a>
 
+        <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
+            <ul class="navbar__links">
+                <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
+                <li><a class="nav-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
+                <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
+            </ul>
+        </nav>
 
-            <a href="/index.html"><img src="/assets/brightnews-logo.png" height="94" width="463" class="nav-logo" alt="BrightNews"/></a></div>
-        <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu openen" data-i18n-aria-label="menu_open">
-            <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-links" id="mobileMenu">
-            <li><a href="/index.html" data-i18n="nav_home">Inicio</a></li>
-            <li><a href="/over-ons.html" data-i18n="nav_about">Sobre nosotros</a></li>
-            <li><a href="/abonnementen.html" data-i18n="nav_premium">Suscripciones</a></li>
-
-            <li class="nav-profile-desktop">
-                <a href="/profiel.html" class="profile-icon" aria-label="Profiel" data-i18n-aria-label="nav_profile">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="12" cy="7" r="4"></circle>
-                    </svg>
-                </a>
-            </li>
-
-            <li class="nav-profile-mobile">
-                <a href="/profiel.html" class="profile-link-text">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="12" cy="7" r="4"></circle>
-                    </svg>
-                    <span data-i18n="nav_profile">Perfil</span>
-                </a>
-            </li>
-        </ul>
-
-    </nav>
-</header>
-<main id="main-content" class="container categorie-pagina">
-    <h1>Buenas noticias sobre Salud</h1>
-    <p class="categorie-intro">Cada día, una selección fresca de noticias positivas sobre Salud de todo el mundo.</p>
-
-    <div class="grid-container">
-            <article class="news-card">
-                <a href="/articles/es/las-amistades-queer-resultan-beneficiosas-para-la-salud-1794261915908mf5cbpuot.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6af1f288bdcdefc967667671_6af1f285946f0fab106ab27c_new-study-queer-friendship-health-featured.webp" alt="Dos amigos de la comunidad LGBTQ+ en conversación" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/es/las-amistades-queer-resultan-beneficiosas-para-la-salud-1794261915908mf5cbpuot.html">Las amistades queer resultan beneficiosas para la salud</a></h3>
-                    <p>Investigadores de Michigan State University y la University of Kentucky descubrieron que las amistades con una identidad…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/es/victoria-prohibe-operaciones-innecesarias-en-ninos-intersexuales-1794261892401mgfywqisu.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6af1ff9e8333e3454a0c61c8_6af1ff9d944dd3b0ebf05ca0_australia-intersex-surgeries-infants-ban-featured.webp" alt="Imagen simbólica de la bandera intersexual como signo de la nueva prohibición de operaciones en Victoria, Australia" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/es/victoria-prohibe-operaciones-innecesarias-en-ninos-intersexuales-1794261892401mgfywqisu.html">Victoria prohíbe operaciones innecesarias en niños intersexuales</a></h3>
-                    <p>La intersexualidad es una característica humana que aparece con la misma frecuencia que el cabello rojo u los ojos verde…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/es/terapia-cerebral-personalizada-logra-68-por-ciento-de-remision-en-tept-1793857142350b36d1cek1.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="/assets/fallback/health-5.jpg" alt="Ilustración de terapia cerebral en el tratamiento del TEPT" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/es/terapia-cerebral-personalizada-logra-68-por-ciento-de-remision-en-tept-1793857142350b36d1cek1.html">Terapia cerebral personalizada logra 68 por ciento de remisión en TEPT</a></h3>
-                    <p>Una forma personalizada de terapia cerebral logra remisión en el 68 por ciento de las personas con TEPT. Este porcentaje…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/es/policia-dona-sangre-anti-d-poco-comun-545-veces-en-los-85-bancos-de-sangre-de-au-1793733265326g3m9mhohy.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/supplied-to-ABC-News-by-Trevor-Bergman.jpg" alt="Trevor Bergman disfruta de bromas y un zumo durante su última donación de sangre" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/es/policia-dona-sangre-anti-d-poco-comun-545-veces-en-los-85-bancos-de-sangre-de-au-1793733265326g3m9mhohy.html">Policía dona sangre anti-D poco común 545 veces en los 85 bancos de sangre de Australia</a></h3>
-                    <p>Trevor Bergman, un policía de 59 años de Melbourne, ha donado sangre 545 veces en todos los centros de donación australi…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/es/noticias-de-salud-esta-semana-avances-en-muchos-frentes-dg-20261029-health.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.pbs.org/wnet/nature/files/2026/10/Stacy-Jupiter-Photo-1-1280x720.jpg" alt="Noticias de salud esta semana: avances en muchos frentes" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/es/noticias-de-salud-esta-semana-avances-en-muchos-frentes-dg-20261029-health.html">Noticias de salud esta semana: avances en muchos frentes</a></h3>
-                    <p>Esta semana demuestra que la salud puede mejorar en niveles muy diferentes. Desde una científica que continúa trabajando…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/es/la-psicologa-deportiva-cindra-kamphoff-comparte-cuatro-consejos-contra-el-miedo-1793384399622qvwwopnkt.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.kqed.org/wp-content/uploads/sites/23/2026/10/gettyimages-1352881588-41081b9a-2000x1334.jpeg" alt="La psicóloga deportiva Cindra Kamphoff durante una sesión de asesoramiento sobre confianza en uno mismo" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/es/la-psicologa-deportiva-cindra-kamphoff-comparte-cuatro-consejos-contra-el-miedo-1793384399622qvwwopnkt.html">La psicóloga deportiva Cindra Kamphoff comparte cuatro consejos contra el miedo al fracaso</a></h3>
-                    <p>La psicóloga Cindra Kamphoff, que asesora a deportistas de élite como Minnesota Vikings y USA Track &amp; Field, comparte té…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/es/la-defensora-oceanica-stacy-jupiter-lucha-contra-el-cancer-de-mama-17933843011651er3an5ge.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.pbs.org/wnet/nature/files/2026/10/Stacy-Jupiter-Photo-1-1280x720.jpg" alt="Stacy Jupiter enseña a su hijo a patinar durante un invierno frío en Boston." loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/es/la-defensora-oceanica-stacy-jupiter-lucha-contra-el-cancer-de-mama-17933843011651er3an5ge.html">La defensora oceánica Stacy Jupiter lucha contra el cáncer de mama</a></h3>
-                    <p>La Dra. Stacy Jupiter, que coordina la conservación oceánica mundial para la Wildlife Conservation Society, recibió el d…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/es/la-psilocibina-reduce-los-marcadores-inflamatorios-en-pacientes-con-parkinson-1793384113660kb1oa81oz.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6240x3510+0+102/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fea%2F29%2F0361994a40cc8074c1bf20de2edb%2Fgettyimages-2200623380.jpg" alt="Ilustración del estudio sobre psilocibina e inhibición inflamatoria en pacientes con Parkinson" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/es/la-psilocibina-reduce-los-marcadores-inflamatorios-en-pacientes-con-parkinson-1793384113660kb1oa81oz.html">La psilocibina reduce los marcadores inflamatorios en pacientes con Parkinson</a></h3>
-                    <p>Investigadores de la University of California, San Francisco han demostrado por primera vez en humanos que la psilocibin…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/es/enfermeras-logran-primer-permiso-parental-remunerado-a-nivel-de-condado-en-ee-uu-1793383750932rcrb7m8t3.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ada2d471918eb310df902c7_6ada2d3976c06d675290d34f_pittsburgh-nurses-12-week-paid-parental-leave-featured.jpeg" alt="Enfermera en cuidados intensivos neonatales junto a una incubadora" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/es/enfermeras-logran-primer-permiso-parental-remunerado-a-nivel-de-condado-en-ee-uu-1793383750932rcrb7m8t3.html">Enfermeras logran primer permiso parental remunerado a nivel de condado en EE.UU.</a></h3>
-                    <p>Enfermeras del UPMC Magee-Womens Hospital en Pittsburgh, incluida la enfermera neonatal Jean Stone, se unieron con padre…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/es/indice-mundial-de-ninas-avances-sanitarios-para-ninas-en-178-paises-1793383509958r2oss5c4q.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/10/girls-india.jpg" alt="Niñas en el África subsahariana, región con mayores avances sanitarios según el Global Girls&#39; Index" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/es/indice-mundial-de-ninas-avances-sanitarios-para-ninas-en-178-paises-1793383509958r2oss5c4q.html">Índice mundial de niñas: avances sanitarios para niñas en 178 países</a></h3>
-                    <p>El primer Global Girls&#39; Index, desarrollado por Plan International Germany y el IFHV de la Universidad de la Ruhr Bochum…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/es/tratamiento-de-caries-sin-taladro-con-sdf-cerca-de-la-aprobacion-de-la-fda-17933830831624gr34qja7.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2018/01/Teeth-dentist-caveties-by-Ozkan-Guner-lQNl2Vdn0fs-unsplash.jpeg" alt="Una muela de leche se trata con fluoruro de diamina de plata mediante un aplicador de esponja" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/es/tratamiento-de-caries-sin-taladro-con-sdf-cerca-de-la-aprobacion-de-la-fda-17933830831624gr34qja7.html">Tratamiento de caries sin taladro con SDF cerca de la aprobación de la FDA</a></h3>
-                    <p>La aprobación de la FDA para el fluoruro de diamina de plata (SDF), un líquido que detiene la caries en niños sin taladr…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/es/observar-aves-mantiene-el-cerebro-flexible-y-ralentiza-el-deterioro-cognitivo-1793382944218urcx6fpd9.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/birdwatching-birding-birder-credit-Curated-Lifestyle.jpg" alt="Un observador de aves con binoculares observa aves en la naturaleza" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/es/observar-aves-mantiene-el-cerebro-flexible-y-ralentiza-el-deterioro-cognitivo-1793382944218urcx6fpd9.html">Observar aves mantiene el cerebro flexible y ralentiza el deterioro cognitivo</a></h3>
-                    <p>Una nueva investigación demuestra que la observación de aves favorece la neuroplasticidad cerebral, un factor importante…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/es/el-permiso-de-paternidad-ampliado-mejora-la-salud-de-la-madre-y-el-bebe-1790915745699jdltmr09h.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abea24c311dd07800e88db3_6abea24b8c97d764568e439a_benefits-of-paternal-leave-policies-featured.webp" alt="Padre con bebé durante el permiso de paternidad" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/es/el-permiso-de-paternidad-ampliado-mejora-la-salud-de-la-madre-y-el-bebe-1790915745699jdltmr09h.html">El permiso de paternidad ampliado mejora la salud de la madre y el bebé</a></h3>
-                    <p>Un padre disfrutó de algunas semanas de permiso de paternidad cuando nació su segundo hijo. Durante ese período se famil…</p>
-                </div>
-            </article>
-    </div>
-
-    <nav class="categorie-andere" aria-label="Otras categorías">
-        <h2>Otras categorías</h2>
-        <div class="categorie-links">
-            <a href="/categories/es/tech.html">Tech</a>
-            <a href="/categories/es/ciencia.html">Ciencia</a>
-            <a href="/categories/es/estilo-de-vida.html">Estilo de vida</a>
-            <a href="/categories/es/medio-ambiente.html">Medio ambiente</a>
-            <a href="/categories/es/finanzas.html">Finanzas</a>
+        <div class="navbar__acties">
+            <button class="settings-trigger" type="button" aria-expanded="false" aria-controls="instellingen">
+                <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#tune"/></svg>
+                <span class="settings-trigger__label" data-i18n="schil_instellingen">Ajustes</span>
+                <svg class="icoon settings-trigger__chevron" aria-hidden="true"><use href="/assets/iconen.svg#keyboard_arrow_down"/></svg>
+            </button>
+            <!-- Ingelogd (<body data-ingelogd>): Mijn account in plaats van Inloggen. -->
+            <a class="btn btn--secondary navbar__inloggen" href="/inloggen.html" data-alleen="uitgelogd"><span data-i18n="schil_inloggen">Iniciar sesión</span></a>
+            <a class="btn btn--secondary navbar__account" href="/profiel.html" data-alleen="ingelogd"><span data-i18n="schil_mijn_account">Mi cuenta</span></a>
+            <a class="btn btn--primary" href="/abonnementen.html"><span data-i18n="schil_probeer_premium">Prueba Premium</span></a>
+            <!-- Onder 1024 px: één knop die het menu opent (zelfde paneel). -->
+            <button class="menu-knop" type="button" aria-expanded="false" aria-controls="instellingen">
+                <span class="menu-knop__dicht">
+                    <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#menu"/></svg>
+                    <span data-i18n="schil_menu">Menú</span>
+                </span>
+                <span class="menu-knop__open">
+                    <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#close"/></svg>
+                    <span data-i18n="instelling_sluiten">Cerrar</span>
+                </span>
+            </button>
         </div>
-    </nav>
+    </div>
+
+    <div class="settings-panel" id="instellingen" inert>
+        <div class="settings-panel__binnen">
+            <div class="container settings-panel__inhoud">
+                <!-- Alleen op mobiel zichtbaar (Mobile menu); op desktop staan
+                     deze links en knoppen in de navbar. -->
+                <div class="mobiel-menu">
+                    <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
+                        <ul>
+                            <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
+                            <li><a class="menu-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                            <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
+                            <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
+                        </ul>
+                    </nav>
+                    <div class="mobiel-menu__account">
+                        <a class="btn btn--secondary" href="/inloggen.html" data-alleen="uitgelogd"><span data-i18n="schil_inloggen">Iniciar sesión</span></a>
+                        <a class="btn btn--secondary" href="/profiel.html" data-alleen="ingelogd"><span data-i18n="schil_mijn_account">Mi cuenta</span></a>
+                        <a class="btn btn--primary" href="/abonnementen.html"><span data-i18n="schil_probeer_premium">Prueba Premium</span></a>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="setting-groep">
+                    <h2 class="setting-groep__titel" id="instelling-weergave" data-i18n="instelling_weergave">Apariencia</h2>
+                    <p class="setting-groep__uitleg" data-i18n="instelling_weergave_uitleg">Sistema sigue el modo claro u oscuro de tu dispositivo.</p>
+                    <div class="setting-groep__opties" role="radiogroup" aria-labelledby="instelling-weergave" data-instelling="thema">
+                        <button class="setting-option" type="button" role="radio" aria-checked="true" data-waarde="systeem">
+                            <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#computer"/></svg>
+                            <span data-i18n="instelling_systeem">Sistema</span>
+                            <svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg>
+                        </button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="licht">
+                            <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#light_mode"/></svg>
+                            <span data-i18n="instelling_licht">Claro</span>
+                            <svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg>
+                        </button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="donker">
+                            <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#dark_mode"/></svg>
+                            <span data-i18n="instelling_donker">Oscuro</span>
+                            <svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="setting-groep">
+                    <h2 class="setting-groep__titel" id="instelling-taal" data-i18n="instelling_taal">Idioma</h2>
+                    <p class="setting-groep__uitleg" data-i18n="instelling_taal_uitleg">El idioma del sitio y de los artículos.</p>
+                    <div class="setting-groep__opties" role="radiogroup" aria-labelledby="instelling-taal" data-instelling="taal">
+                        <button class="setting-option" type="button" role="radio" aria-checked="true" data-waarde="nl" lang="nl">Nederlands<svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="en" lang="en">English<svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="de" lang="de">Deutsch<svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="fr" lang="fr">Français<svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="es" lang="es">Español<svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></button>
+                    </div>
+                </div>
+
+                <div class="settings-panel__notitie">
+                    <button class="btn btn--secondary btn--sm" type="button" data-sluit-instellingen>
+                        <span data-i18n="instelling_sluiten">Cerrar</span>
+                        <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#close"/></svg>
+                    </button>
+                    <p data-i18n="instelling_bewaard">Tu elección se guarda en este dispositivo, incluso sin cuenta. ¿Has iniciado sesión? Encontrarás los mismos ajustes en tu perfil.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main id="inhoud">
+    <section class="info-sectie info-sectie--intro" aria-labelledby="cat-titel">
+        <div class="container info-tekst">
+            <p class="type-overline">Salud</p>
+            <h1 class="type-display-sm" id="cat-titel">Buenas noticias sobre Salud</h1>
+            <p class="info-tekst__lead">Cada día, una selección fresca de noticias positivas sobre Salud de todo el mundo.</p>
+        </div>
+    </section>
+
+    <section class="info-sectie" aria-label="Buenas noticias sobre Salud">
+        <div class="container">
+        <ul class="editie-raster__rij editie-raster__rij--drie" role="list">
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6af1f288bdcdefc967667671_6af1f285946f0fab106ab27c_new-study-queer-friendship-health-featured.webp" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/es/las-amistades-queer-resultan-beneficiosas-para-la-salud-1794261915908mf5cbpuot.html">Las amistades queer resultan beneficiosas para la salud</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6af1ff9e8333e3454a0c61c8_6af1ff9d944dd3b0ebf05ca0_australia-intersex-surgeries-infants-ban-featured.webp" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/es/victoria-prohibe-operaciones-innecesarias-en-ninos-intersexuales-1794261892401mgfywqisu.html">Victoria prohíbe operaciones innecesarias en niños intersexuales</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="/assets/fallback/health-5.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/es/terapia-cerebral-personalizada-logra-68-por-ciento-de-remision-en-tept-1793857142350b36d1cek1.html">Terapia cerebral personalizada logra 68 por ciento de remisión en TEPT</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/supplied-to-ABC-News-by-Trevor-Bergman.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/es/policia-dona-sangre-anti-d-poco-comun-545-veces-en-los-85-bancos-de-sangre-de-au-1793733265326g3m9mhohy.html">Policía dona sangre anti-D poco común 545 veces en los 85 bancos de sangre de Australia</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.pbs.org/wnet/nature/files/2026/10/Stacy-Jupiter-Photo-1-1280x720.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/es/noticias-de-salud-esta-semana-avances-en-muchos-frentes-dg-20261029-health.html">Noticias de salud esta semana: avances en muchos frentes</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.kqed.org/wp-content/uploads/sites/23/2026/10/gettyimages-1352881588-41081b9a-2000x1334.jpeg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/es/la-psicologa-deportiva-cindra-kamphoff-comparte-cuatro-consejos-contra-el-miedo-1793384399622qvwwopnkt.html">La psicóloga deportiva Cindra Kamphoff comparte cuatro consejos contra el miedo al fracaso</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.pbs.org/wnet/nature/files/2026/10/Stacy-Jupiter-Photo-1-1280x720.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/es/la-defensora-oceanica-stacy-jupiter-lucha-contra-el-cancer-de-mama-17933843011651er3an5ge.html">La defensora oceánica Stacy Jupiter lucha contra el cáncer de mama</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6240x3510+0+102/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fea%2F29%2F0361994a40cc8074c1bf20de2edb%2Fgettyimages-2200623380.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/es/la-psilocibina-reduce-los-marcadores-inflamatorios-en-pacientes-con-parkinson-1793384113660kb1oa81oz.html">La psilocibina reduce los marcadores inflamatorios en pacientes con Parkinson</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ada2d471918eb310df902c7_6ada2d3976c06d675290d34f_pittsburgh-nurses-12-week-paid-parental-leave-featured.jpeg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/es/enfermeras-logran-primer-permiso-parental-remunerado-a-nivel-de-condado-en-ee-uu-1793383750932rcrb7m8t3.html">Enfermeras logran primer permiso parental remunerado a nivel de condado en EE.UU.</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/10/girls-india.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/es/indice-mundial-de-ninas-avances-sanitarios-para-ninas-en-178-paises-1793383509958r2oss5c4q.html">Índice mundial de niñas: avances sanitarios para niñas en 178 países</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2018/01/Teeth-dentist-caveties-by-Ozkan-Guner-lQNl2Vdn0fs-unsplash.jpeg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/es/tratamiento-de-caries-sin-taladro-con-sdf-cerca-de-la-aprobacion-de-la-fda-17933830831624gr34qja7.html">Tratamiento de caries sin taladro con SDF cerca de la aprobación de la FDA</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/birdwatching-birding-birder-credit-Curated-Lifestyle.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/es/observar-aves-mantiene-el-cerebro-flexible-y-ralentiza-el-deterioro-cognitivo-1793382944218urcx6fpd9.html">Observar aves mantiene el cerebro flexible y ralentiza el deterioro cognitivo</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abea24c311dd07800e88db3_6abea24b8c97d764568e439a_benefits-of-paternal-leave-policies-featured.webp" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/es/el-permiso-de-paternidad-ampliado-mejora-la-salud-de-la-madre-y-el-bebe-1790915745699jdltmr09h.html">El permiso de paternidad ampliado mejora la salud de la madre y el bebé</a></h2></div></article></li>
+        </ul>
+        </div>
+    </section>
+
+    <section class="info-sectie info-sectie--subtiel" aria-labelledby="cat-andere">
+        <div class="container info-sectie__binnen">
+            <h2 class="type-heading-lg" id="cat-andere">Otras categorías</h2>
+            <ul class="topic-links" role="list">
+            <li><a class="topic-link" href="/categories/es/tech.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#lightbulb"/></svg><span>Tech</span><svg class="icoon topic-link__chevron" aria-hidden="true"><use href="/assets/iconen.svg#chevron_right"/></svg></a></li>
+            <li><a class="topic-link" href="/categories/es/ciencia.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#science"/></svg><span>Ciencia</span><svg class="icoon topic-link__chevron" aria-hidden="true"><use href="/assets/iconen.svg#chevron_right"/></svg></a></li>
+            <li><a class="topic-link" href="/categories/es/estilo-de-vida.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#spa"/></svg><span>Estilo de vida</span><svg class="icoon topic-link__chevron" aria-hidden="true"><use href="/assets/iconen.svg#chevron_right"/></svg></a></li>
+            <li><a class="topic-link" href="/categories/es/medio-ambiente.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#eco"/></svg><span>Medio ambiente</span><svg class="icoon topic-link__chevron" aria-hidden="true"><use href="/assets/iconen.svg#chevron_right"/></svg></a></li>
+            <li><a class="topic-link" href="/categories/es/finanzas.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#euro"/></svg><span>Finanzas</span><svg class="icoon topic-link__chevron" aria-hidden="true"><use href="/assets/iconen.svg#chevron_right"/></svg></a></li>
+            </ul>
+        </div>
+    </section>
 </main>
-<footer class="main-footer">
-  <div class="container footer-grid">
-    <!-- Kolom 1: Over & Transparantie -->
-    <div class="footer-about">
-      <div class="footer-logo">Bright<span>News</span></div>
-      <p data-i18n="footer_text">Fundado y desarrollado por <strong>Maarten de Klerk</strong>. Maarten es el dueño de BrightNews, dedicado a difundir vibras positivas.</p>
-      <div class="footer-legal-info">
-        <p data-i18n="footer_address">Vossenstraat 19, 6286BW Nijswiller, Países Bajos</p>
-        <p><span data-i18n="footer_kvk_label">KvK</span>: <span data-i18n="footer_kvk_val">42048341</span> · <span data-i18n="footer_btw_label">IVA</span>: <span data-i18n="footer_btw_val">NL005455019B94</span></p>
-        <p class="footer-mor-notice" data-i18n="footer_mor_notice">Los pagos son procesados de forma segura por Stripe, nuestro Merchant of Record.</p>
-      </div>
-    </div>
 
-    <!-- Kolom 2: Explore -->
-    <div class="footer-links">
-      <h3 data-i18n="footer_explore">Explorar</h3>
-      <ul>
-        <li><a href="/index.html" data-i18n="nav_home">Inicio</a></li>
-        <li><a href="/over-ons.html" data-i18n="footer_mission">Nuestra Misión</a></li>
-        <li><a href="/abonnementen.html" data-i18n="footer_subs">Suscripciones</a></li>
-        <li><a href="#" onclick="openCustomerPortal(event)" data-i18n="footer_manage_sub">Gestionar suscripción</a></li>
-        <li><a href="/profiel.html" data-i18n="footer_acc">Mi Cuenta</a></li>
-      </ul>
-    </div>
+<footer class="site-footer">
+    <div class="container site-footer__binnen">
+        <div class="site-footer__rij">
+            <div class="site-footer__merk">
+                <a class="logo" href="/" aria-label="BrightNews, naar de homepage" data-i18n-aria-label="schil_logo_label">
+                    <svg class="logo__beeldmerk" viewBox="0 0 39.6151 40" aria-hidden="true">
+                        <path d="M9 28a11 11 0 0 1 22 0H9Z" fill="#FFC933"/>
+                        <path d="M35.25 29.5H4.75a1.75 1.75 0 0 0 0 3.5h30.5a1.75 1.75 0 0 0 0-3.5Z" fill="currentColor"/>
+                        <path d="M20 12.5V8M30.3 17.7l3.2-3.2M9.7 17.7l-3.2-3.2" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+                    </svg>
+                    <span class="logo__woordmerk">Bright<span>News</span></span>
+                </a>
+                <p data-i18n="schil_tagline">Cada día noticias un poco mejores, en cinco idiomas.</p>
+                <ul class="socials" aria-label="Volg BrightNews" data-i18n-aria-label="schil_volg_ons">
+                    <li><a class="social-knop" href="https://www.facebook.com/people/BrightNews/61594888799297/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a></li>
+                    <li><a class="social-knop" href="https://www.instagram.com/brightnews.online" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a></li>
+                    <li><a class="social-knop" href="https://www.linkedin.com/company/brightnewsonline/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+                </ul>
+            </div>
 
-    <!-- Kolom 3: Community -->
-    <div class="footer-links">
-      <h3 data-i18n="footer_community">Comunidad</h3>
-      <ul>
-        <li><a href="/Privacy.html" data-i18n="footer_privacy">Privacidad</a></li>
-        <li><a href="/algemeene-voorwaarden.html" data-i18n="footer_service_terms">Términos</a></li>
-        <li><a href="/refunds.html" data-i18n="footer_refunds">Reembolsos</a></li>
-        <li><a href="/Privacy.html#cookies-section" data-i18n="footer_cookies">Cookies</a></li>
-        <li><a href="/contact.html" data-i18n="footer_support">Soporte</a></li>
-      </ul>
-    </div>
+            <nav class="footer-kolom" aria-labelledby="footer-lezen">
+                <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Leer</h2>
+                <ul>
+                    <li><a href="/"><span data-i18n="schil_nieuws">Noticias</span></a></li>
+                    <li><a><span data-i18n="schil_themas">Temas</span></a></li>
+                    <li><a href="/archief.html"><span data-i18n="schil_archief">Archivo</span></a></li>
+                    <li><a><span data-i18n="schil_categorieen">Categorías</span></a></li>
+                </ul>
+            </nav>
 
-    <!-- Kolom 4: Socials & Badge -->
-    <div class="footer-socials">
-      <h3 data-i18n="footer_follow">Seguir a BrightNews</h3>
-      <div class="social-icons">
-        <a href="https://www.facebook.com/people/BrightNews/61594888799297/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a>
-        <a href="https://www.instagram.com/brightnews.online" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a>
-        <a href="https://www.linkedin.com/company/brightnewsonline/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-        <a href="mailto:info@brightnews.online" class="social-btn" aria-label="E-mail"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
-      </div>
+            <nav class="footer-kolom" aria-labelledby="footer-merk">
+                <h2 class="footer-kolom__titel" id="footer-merk">BrightNews</h2>
+                <ul>
+                    <li><a href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
+                    <li><a href="/zo-kiezen-we.html"><span data-i18n="schil_zo_kiezen_we">Cómo elegimos</span></a></li>
+                    <li><a href="/abonnementen.html"><span data-i18n="schil_premium">Premium</span></a></li>
+                    <li><a href="/Privacy.html"><span data-i18n="schil_privacy_voorwaarden">Privacidad y condiciones</span></a></li>
+                </ul>
+            </nav>
+
+            <nav class="footer-kolom" aria-labelledby="footer-hulp">
+                <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Ayuda</h2>
+                <ul>
+                    <li><a><span data-i18n="schil_instellingen">Ajustes</span></a></li>
+                    <li><a href="/contact.html"><span data-i18n="schil_contact">Contacto</span></a></li>
+                    <li><a href="/feedback.html"><span data-i18n="schil_feedback">Comentarios</span></a></li>
+                    <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Reembolsos</span></a></li>
+                    <li><button class="footer-knop" type="button" data-cookie-instellingen><span data-i18n="v5_ck_footer">Configuración de cookies</span></button></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="site-footer__onder">
+            <p data-i18n="schil_copyright">© 2026 BrightNews. Resumido con IA a partir de fuentes fiables.</p>
+            <p data-i18n="schil_bedrijfsgegevens">Vossenstraat 19, 6286 BW Nijswiller, Países Bajos · KvK 42048341 · IVA NL005455019B94</p>
+        </div>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <p data-i18n="footer_created_by">&copy; 2026 BrightNews • Todos los derechos reservados • Creado con 💚 en los Países Bajos</p>
-  </div>
 </footer>
+
+<!-- Cookiebalk (Figma: Cookie bar, Balk en Instellingen). Verschijnt zolang
+     er geen keuze is, of de keuze ouder is dan 12 maanden. Geen pop-up:
+     vast onderaan, zonder donkere laag. Gedrag: js/v5/schil.js. -->
+<section class="cookie-bar" id="cookiebalk" data-weergave="balk" aria-labelledby="cookiebalk-titel" hidden>
+    <div class="container cookie-bar__binnen">
+        <div class="cookie-bar__tekst">
+            <h2 class="cookie-bar__titel" id="cookiebalk-titel" data-i18n="v5_ck_titel">Cookies en BrightNews</h2>
+            <p class="cookie-bar__uitleg">
+                <span class="cookie-bar__lang" data-i18n="v5_ck_tekst">Usamos las cookies necesarias para que la web funcione. Otras, solo si tú quieres.</span>
+                <span class="cookie-bar__kort" data-i18n="v5_ck_tekst_kort">Necesarias para la web. Estadísticas solo con tu permiso.</span>
+                <a href="/Privacy.html#cookies"><span data-i18n="v5_ck_lees">Leer la declaración de privacidad</span></a>
+                <button class="btn btn--tertiary btn--sm cookie-bar__instellingen-kort" type="button" data-cookie="instellingen" aria-expanded="false" aria-controls="cookiebalk-keuzes"><span data-i18n="v5_ck_instellingen">Ajustes</span></button>
+            </p>
+        </div>
+        <div class="cookie-bar__keuzes" id="cookiebalk-keuzes">
+            <div class="cookie-bar__keuze">
+                <label class="toggle"><input class="visueel-verborgen" type="checkbox" role="switch" checked disabled aria-describedby="cookie-noodzakelijk-uitleg"><span class="toggle__baan" aria-hidden="true"></span><span data-i18n="v5_ck_noodzakelijk">Necesarias</span></label>
+                <p id="cookie-noodzakelijk-uitleg" data-i18n="v5_ck_noodzakelijk_uitleg">Para iniciar sesión y recordar tu idioma y visualización. Siempre activas.</p>
+            </div>
+            <div class="cookie-bar__keuze">
+                <label class="toggle"><input class="visueel-verborgen" type="checkbox" role="switch" id="cookie-statistieken" aria-describedby="cookie-statistieken-uitleg"><span class="toggle__baan" aria-hidden="true"></span><span data-i18n="v5_ck_statistieken">Estadísticas</span></label>
+                <p id="cookie-statistieken-uitleg" data-i18n="v5_ck_statistieken_uitleg">Medir qué páginas se leen, para mejorar la web. Google Analytics lo hace con una cookie con un código aleatorio, sin tu nombre.</p>
+            </div>
+        </div>
+        <div class="cookie-bar__knoppen">
+            <button class="btn btn--tertiary" type="button" data-cookie="instellingen" aria-expanded="false" aria-controls="cookiebalk-keuzes"><span data-i18n="v5_ck_instellingen">Ajustes</span></button>
+            <button class="btn btn--secondary" type="button" data-cookie="noodzakelijk"><span data-i18n="v5_ck_noodzakelijk_knop">Solo necesarias</span></button>
+            <button class="btn btn--secondary" type="button" data-cookie="opslaan"><span data-i18n="v5_ck_opslaan">Guardar elección</span></button>
+            <button class="btn btn--secondary" type="button" data-cookie="alles"><span data-i18n="v5_ck_alles">Aceptar todas</span></button>
+        </div>
+    </div>
+</section>
+
+<!-- Supabase op elke v5-pagina (TODO 66 punt 9): js/v5/schil.js zet daarmee
+     data-ingelogd en data-premium op <body>, en de inloglink uit de mail mag
+     op elke pagina landen. Vóór de paginascripts, zodat window.supabaseClient
+     klaarstaat (defer houdt de volgorde aan). -->
+<script src="/js/vendor/supabase-js-2.112.4.js" defer></script>
+<script src="/js/supabase-init.js" defer></script>
+<script src="/data/translations.js" defer></script>
+<script src="/js/v5/schil.js" defer></script>
+
 </body>
 </html>

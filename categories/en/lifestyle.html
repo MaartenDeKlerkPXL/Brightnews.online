@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
     <meta name="robots" content="max-image-preview:large">
-    <link rel="alternate" type="application/rss+xml" title="BrightNews (English)" href="/feed-en.xml">
-    <link rel="alternate" type="application/rss+xml" title="BrightNews (Nederlands)" href="/feed-nl.xml">
-    <link rel="alternate" type="application/rss+xml" title="BrightNews (Deutsch)" href="/feed-de.xml">
-    <link rel="alternate" type="application/rss+xml" title="BrightNews (Français)" href="/feed-fr.xml">
-    <link rel="alternate" type="application/rss+xml" title="BrightNews (Español)" href="/feed-es.xml">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://www.googletagmanager.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
-    <meta name="description" content="A fresh selection of positive Lifestyle news from around the world, every day.">
     <title>Good news about Lifestyle | BrightNews</title>
+<script>
+    /* Weergave vóór de eerste weergave toepassen (redesign v5). Staat inline
+       en zo hoog mogelijk in <head>: een extern script zou pas laden nadat de
+       pagina al één keer in de systeemkleur getekend is, en dan flitst een
+       lezer die "donker" koos eerst wit. De CSP staat inline scripts toe.
+       Zonder eigen keuze doet dit niets en volgt css/tokens.css het systeem.
+       localStorage kan weigeren (privévenster, geblokkeerde opslag); dan valt
+       de site gewoon terug op het systeem. */
+    try {
+        var bnThema = localStorage.getItem('bn-thema');
+        if (bnThema === 'licht' || bnThema === 'donker') {
+            document.documentElement.setAttribute('data-theme', bnThema);
+        }
+    } catch (e) { /* geen opslag: systeem volgen */ }
+</script>
+    <meta name="description" content="A fresh selection of positive Lifestyle news from around the world, every day.">
     <link rel="canonical" href="https://brightnews.online/categories/en/lifestyle.html">
     <link rel="alternate" hreflang="nl" href="https://brightnews.online/categories/nl/lifestyle.html">
     <link rel="alternate" hreflang="en" href="https://brightnews.online/categories/en/lifestyle.html">
@@ -19,635 +29,331 @@
     <link rel="alternate" hreflang="fr" href="https://brightnews.online/categories/fr/lifestyle.html">
     <link rel="alternate" hreflang="es" href="https://brightnews.online/categories/es/estilo-de-vida.html">
     <link rel="alternate" hreflang="x-default" href="https://brightnews.online/categories/en/lifestyle.html">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (English)" href="/feed-en.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Nederlands)" href="/feed-nl.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Deutsch)" href="/feed-de.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Français)" href="/feed-fr.xml">
+    <link rel="alternate" type="application/rss+xml" title="BrightNews (Español)" href="/feed-es.xml">
     <meta property="og:title" content="Good news about Lifestyle">
     <meta property="og:description" content="A fresh selection of positive Lifestyle news from around the world, every day.">
     <meta property="og:url" content="https://brightnews.online/categories/en/lifestyle.html">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://brightnews.online/assets/brightnews-logo.png">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0a120d" media="(prefers-color-scheme: dark)">
     <link rel="icon" type="image/png" href="/assets/brightnews-logo-faviconv5.png">
-    <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/components.css">
-    <!-- .grid-container en .news-card staan in de paginastijl van de
-         homepage; deze pagina gebruikt dezelfde kaarten. -->
-    <link rel="stylesheet" href="/css/pages/index.css">
-    <link rel="stylesheet" href="/css/pages/categorie.css">
-    <script src="/data/translations.js" defer></script>
-    <script src="/js/main.js" defer></script>
+    <link rel="preload" href="/assets/fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/tokens.css">
+    <link rel="stylesheet" href="/css/v5/basis.css">
+    <link rel="stylesheet" href="/css/v5/componenten.css">
+    <link rel="stylesheet" href="/css/v5/paginas.css">
 </head>
-<body>
-<a href="#main-content" class="skip-link" data-i18n="skip_to_content">Skip to main content</a>
-<header>
-    <nav class="container">
-        <div class="nav-left-group">
-            <details class="dropdown language-picker">
-                <summary class="dropbtn" id="current-lang">
-                    <span class="taal-vlag">🇺🇸</span><span class="taal-naam">English</span><span class="taal-code" aria-hidden="true">EN</span> <span class="arrow">▼</span>
-                </summary>
-                <div class="dropdown-content">
-                        <a href="#" onclick="wisselTaal('en', '🇺🇸 English', event)"><span class="taal-vlag">🇺🇸</span> English</a>
-                    <a href="#" onclick="wisselTaal('nl', '🇳🇱 Nederlands', event)"><span class="taal-vlag">🇳🇱</span> Nederlands</a>
-                    <a href="#" onclick="wisselTaal('de', '🇩🇪 Deutsch', event)"><span class="taal-vlag">🇩🇪</span> Deutsch</a>
-                    <a href="#" onclick="wisselTaal('fr', '🇫🇷 Français', event)"><span class="taal-vlag">🇫🇷</span> Français</a>
-                    <a href="#" onclick="wisselTaal('es', '🇪🇸 Español', event)"><span class="taal-vlag">🇪🇸</span> Español</a>
-                </div>
-            </details>
+<body data-sectie="nieuws" data-alt-nl="/categories/nl/lifestyle.html" data-alt-en="/categories/en/lifestyle.html" data-alt-de="/categories/de/lifestyle.html" data-alt-fr="/categories/fr/lifestyle.html" data-alt-es="/categories/es/estilo-de-vida.html">
+<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
+     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
+     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
+     tabvolgorde. -->
+<a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Skip to main content</span></a>
+<header class="site-header">
+    <div class="container navbar">
+        <a class="logo" href="/" aria-label="BrightNews, naar de homepage" data-i18n-aria-label="schil_logo_label">
+            <svg class="logo__beeldmerk" viewBox="0 0 39.6151 40" aria-hidden="true">
+                <path d="M9 28a11 11 0 0 1 22 0H9Z" fill="#FFC933"/>
+                <path d="M35.25 29.5H4.75a1.75 1.75 0 0 0 0 3.5h30.5a1.75 1.75 0 0 0 0-3.5Z" fill="currentColor"/>
+                <path d="M20 12.5V8M30.3 17.7l3.2-3.2M9.7 17.7l-3.2-3.2" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+            </svg>
+            <span class="logo__woordmerk">Bright<span>News</span></span>
+        </a>
 
+        <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
+            <ul class="navbar__links">
+                <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">News</span></a></li>
+                <li><a class="nav-link"><span data-i18n="schil_themas">Topics</span></a></li>
+                <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archive</span></a></li>
+                <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
+            </ul>
+        </nav>
 
-            <a href="/index.html"><img src="/assets/brightnews-logo.png" height="94" width="463" class="nav-logo" alt="BrightNews"/></a></div>
-        <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu openen" data-i18n-aria-label="menu_open">
-            <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-links" id="mobileMenu">
-            <li><a href="/index.html" data-i18n="nav_home">Home</a></li>
-            <li><a href="/over-ons.html" data-i18n="nav_about">About Us</a></li>
-            <li><a href="/abonnementen.html" data-i18n="nav_premium">Subscriptions</a></li>
-
-            <li class="nav-profile-desktop">
-                <a href="/profiel.html" class="profile-icon" aria-label="Profiel" data-i18n-aria-label="nav_profile">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="12" cy="7" r="4"></circle>
-                    </svg>
-                </a>
-            </li>
-
-            <li class="nav-profile-mobile">
-                <a href="/profiel.html" class="profile-link-text">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="12" cy="7" r="4"></circle>
-                    </svg>
-                    <span data-i18n="nav_profile">Profile</span>
-                </a>
-            </li>
-        </ul>
-
-    </nav>
-</header>
-<main id="main-content" class="container categorie-pagina">
-    <h1>Good news about Lifestyle</h1>
-    <p class="categorie-intro">A fresh selection of positive Lifestyle news from around the world, every day.</p>
-
-    <div class="grid-container">
-            <article class="news-card">
-                <a href="/articles/en/three-stories-about-keeping-promises-helping-and-coming-back-dg-20261110-lifestyle.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6af4b73eb417c64866415f92_6af4b73d2f34a1d30dd8f1b0_poets-words-on-ne-street-homelessness-featured.webp" alt="Three stories about keeping promises, helping and coming back" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/three-stories-about-keeping-promises-helping-and-coming-back-dg-20261110-lifestyle.html">Three stories about keeping promises, helping and coming back</a></h3>
-                    <p>Sometimes good news starts with a small idea that grows into something bigger. These days show that in different ways: a…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/100-poets-write-anthology-on-homelessness-for-charity-17944249637321olk07x2s.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6af4b73eb417c64866415f92_6af4b73d2f34a1d30dd8f1b0_poets-words-on-ne-street-homelessness-featured.webp" alt="Poet Andrew Mears presents the poetry collection Words on a NE Street" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/100-poets-write-anthology-on-homelessness-for-charity-17944249637321olk07x2s.html">100 poets write anthology on homelessness for charity</a></h3>
-                    <p>Poet Andrew Mears from northeast England, a region with the country&#39;s highest homelessness rates, came up with the idea …</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/paralyzed-pianist-84-keeps-promise-to-bryn-mawr-village-nursing-home-1794424942669ry7xjuj33.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Bonnie-Fay-playing-the-piano-at-Bryn-Mawr-Village-supplied-to-GNN-e1794387097651.jpg" alt="84-year-old woman plays piano at nursing home for recovering residents" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/paralyzed-pianist-84-keeps-promise-to-bryn-mawr-village-nursing-home-1794424942669ry7xjuj33.html">Paralyzed pianist (84) keeps promise to Bryn Mawr Village nursing home</a></h3>
-                    <p>Bonnie Fay (84) arrived as a patient at Bryn Mawr Village nursing home in Pennsylvania, paralyzed by Guillain-Barré synd…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/maritime-student-rescues-father-and-son-from-drowning-1794424918029ogfmvv8rv.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Jerge-Zion-is-recognized-at-the-Cal-Poly-Maritime-Academy-credit-@calpoly_maritime.jpg" alt="Cadet from Cal Poly Maritime Academy who rescued a father and son from drowning in a swimming pool" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/maritime-student-rescues-father-and-son-from-drowning-1794424918029ogfmvv8rv.html">Maritime student rescues father and son from drowning</a></h3>
-                    <p>A cadet from the California Polytechnic State University Marine Academy rescued a father and his 25-year-old son from dr…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/care-courage-and-a-clever-airtag-the-week-s-good-news-dg-20261109-lifestyle.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.kqed.org/wp-content/uploads/sites/23/2026/11/GettyImages-2173655411-b93be8dc-2000x1418.jpg" alt="Care, courage and a clever AirTag: the week&#39;s good news" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/care-courage-and-a-clever-airtag-the-week-s-good-news-dg-20261109-lifestyle.html">Care, courage and a clever AirTag: the week&#39;s good news</a></h3>
-                    <p>These days show how people care for each other, animals and their surroundings in many different ways. From a sports fie…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/flag-football-surges-in-popularity-among-girls-17943389119158r0jm6tmv.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.kqed.org/wp-content/uploads/sites/23/2026/11/GettyImages-2173655411-b93be8dc-2000x1418.jpg" alt="Girls play flag football at a high school in Oakland" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/flag-football-surges-in-popularity-among-girls-17943389119158r0jm6tmv.html">Flag football surges in popularity among girls</a></h3>
-                    <p>Flag football, long seen as an alternative to tackle football, is gaining strong popularity among girls. According to US…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/italy-invests-2-2-million-in-fighting-dog-rescue-17943388881162owlla8e3.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6af354285cb0734cee00a85e_6af3542740ffdc98b024557c_dogfighting-rings-italy-rescue-rehabilitation-featured.webp" alt="A rescued fighting dog looks calmly at the camera during rehabilitation training" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/italy-invests-2-2-million-in-fighting-dog-rescue-17943388881162owlla8e3.html">Italy invests $2.2 million in fighting dog rescue</a></h3>
-                    <p>Italy has allocated 2 million euros (approximately $2.2 million) to rescue dogs from illegal dogfighting operations and …</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/viral-doorbell-video-raises-76-000-for-caregiver-suzanna-metcalf-1794338838098cpxyt1m0c.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/seiwert-ring-camera-.webp" alt="A family prays on the street for a pizza delivery driver captured on a doorbell camera" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/viral-doorbell-video-raises-76-000-for-caregiver-suzanna-metcalf-1794338838098cpxyt1m0c.html">Viral doorbell video raises $76,000 for caregiver Suzanna Metcalf</a></h3>
-                    <p>A doorbell camera video from Castle Rock, Colorado, went viral last year and has since raised more than $76,000 for pizz…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/actor-peter-marinker-85-performs-in-krapp-s-last-tape-despite-alzheimer-s-1794338810899xda622hdp.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.positive.news/wp-content/uploads/2026/11/Horizontal-resizer-2.png" alt="Elderly actor on stage during a solo performance with a tape recorder" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/actor-peter-marinker-85-performs-in-krapp-s-last-tape-despite-alzheimer-s-1794338810899xda622hdp.html">Actor Peter Marinker (85) performs in Krapp&#39;s Last Tape despite Alzheimer&#39;s</a></h3>
-                    <p>The 85-year-old actor Peter Marinker returned to the stage this autumn, despite an Alzheimer&#39;s diagnosis. He plays the d…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/mayor-catches-stone-thief-with-airtag-in-rufford-1794159938644e31835khm.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Councillor-Matt-Smith-with-GPS-AirTag-SWNS.jpeg" alt="Historic stone wall in Rufford, Lancashire, where centuries-old coping stones were stolen" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/mayor-catches-stone-thief-with-airtag-in-rufford-1794159938644e31835khm.html">Mayor catches stone thief with AirTag in Rufford</a></h3>
-                    <p>An English mayor, Matt Smith, solved a theft himself after police in the Lancashire village of Rufford could not help du…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/escaped-parakeet-luna-found-in-drain-after-motorist-s-tip-1794159908740k3cmzwac9.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Bird-rescued-from-sewer-pipe-RSPCA-and-SWNS.jpeg" alt="A parakeet peers out of the drain where she had crawled away" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/escaped-parakeet-luna-found-in-drain-after-motorist-s-tip-1794159908740k3cmzwac9.html">Escaped parakeet Luna found in drain after motorist&#39;s tip</a></h3>
-                    <p>A parakeet named Luna has been reunited with her owner after flying away when storm Boelo blew open a kitchen window in …</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/perseverers-and-dreamers-the-news-that-captured-hearts-this-week-dg-20261106-lifestyle.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://reasonstobecheerful.world/wp-content/uploads/2026/10/EriksRanch-010-scaled.jpeg" alt="Perseverers and dreamers: the news that captured hearts this week" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/perseverers-and-dreamers-the-news-that-captured-hearts-this-week-dg-20261106-lifestyle.html">Perseverers and dreamers: the news that captured hearts this week</a></h3>
-                    <p>Sometimes it seems life gives everyone the same chance, but this week&#39;s stories tell a different tale: people who found …</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/karl-bushby-embraces-mother-after-28-years-walking-around-the-world-1794072836263vh3ooew93.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Karl-Bushby-reunites-with-mom-after-walking-around-world-–-SWNS.jpeg" alt="Karl Bushby embraces his mother Angela at the gate of her house in Hull after 28 years of walking" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/karl-bushby-embraces-mother-after-28-years-walking-around-the-world-1794072836263vh3ooew93.html">Karl Bushby embraces mother after 28 years walking around the world</a></h3>
-                    <p>British adventurer Karl Bushby has returned to his birthplace Hull after 28 years, where he embraced his tearful mother …</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/from-homeless-to-oscar-the-story-behind-rocky-and-sylvester-stallone-17939917594065oi547svn.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://ychef.files.bbci.co.uk/800x450/p0plmjc9.jpg" alt="Sylvester Stallone as a young, unknown actor before he became world-famous with Rocky" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/from-homeless-to-oscar-the-story-behind-rocky-and-sylvester-stallone-17939917594065oi547svn.html">From homeless to Oscar: the story behind Rocky and Sylvester Stallone</a></h3>
-                    <p>In the nineteen seventies, Sylvester Stallone was homeless in New York and worked long days filleting fish, while auditi…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/erik-s-ranch-in-montana-autistic-guides-and-wranglers-welcome-guests-1793943368286vof54g93p.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://reasonstobecheerful.world/wp-content/uploads/2026/10/EriksRanch-010-scaled.jpeg" alt="An autistic staff member of Erik&#39;s Ranch guides guests on horseback with a view of the Absaroka-Beartooth Mountains in Montana." loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/erik-s-ranch-in-montana-autistic-guides-and-wranglers-welcome-guests-1793943368286vof54g93p.html">Erik&#39;s Ranch in Montana: autistic guides and wranglers welcome guests</a></h3>
-                    <p>At Erik&#39;s Ranch &amp; Retreats in Montana, near Yellowstone National Park, autistic people work as concierges, guides, wrang…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/keys-puzzle-pieces-and-salty-waves-the-good-news-from-early-november-dg-20261104-lifestyle.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/YouTube-Screengrab-Houston-Independent-School-District.jpg" alt="Keys, puzzle pieces and salty waves: the good news from early November" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/keys-puzzle-pieces-and-salty-waves-the-good-news-from-early-november-dg-20261104-lifestyle.html">Keys, puzzle pieces and salty waves: the good news from early November</a></h3>
-                    <p>These days show how people build things in very different ways: a trade, a bond with family, or a record at sea. From a …</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/jigsaw-puzzle-of-castle-brings-granddaughter-closer-to-taciturn-grandfather-1793857093984y8jny2obn.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Screenshot-2026-11-03-at-6.05.22-PM.png" alt="A jigsaw puzzle featuring a photograph of a Hungarian castle, made for a documentary about a grandfather and his granddaughter" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/jigsaw-puzzle-of-castle-brings-granddaughter-closer-to-taciturn-grandfather-1793857093984y8jny2obn.html">Jigsaw puzzle of castle brings granddaughter closer to taciturn grandfather</a></h3>
-                    <p>Filmmaker Ora DeKornfeld made the documentary The Grandfather Puzzle to get closer to her 99-year-old grandfather, who n…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/catherine-breed-becomes-first-to-swim-entire-california-coast-1793820648815qj0f78wz7.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Catherine-Breed-swins-in-the-open-ocean-south-of-the-Golden-Gate-Bridge-credit-Catherine-Breed-press-photo.jpg" alt="Catherine Breed swimming in the ocean off the California coast" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/catherine-breed-becomes-first-to-swim-entire-california-coast-1793820648815qj0f78wz7.html">Catherine Breed becomes first to swim entire California coast</a></h3>
-                    <p>Long-distance swimmer Catherine Breed is the first person to swim the entire California coastline: 900 miles in 111 days…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/students-open-auto-repair-shop-to-the-public-in-houston-17938206195450tb2nv2m9.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/YouTube-Screengrab-Houston-Independent-School-District.jpg" alt="Students work on a car at the new workshop of the Barbara Jordan Career Center in Houston" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/students-open-auto-repair-shop-to-the-public-in-houston-17938206195450tb2nv2m9.html">Students open auto repair shop to the public in Houston</a></h3>
-                    <p>An auto repair shop run by students has opened in Houston&#39;s Fifth Ward. The initiative comes from the Barbara Jordan Car…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/connection-in-three-forms-from-compassion-to-skateboarding-and-village-life-dg-20261103-lifestyle.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://reasonstobecheerful.world/wp-content/uploads/2026/11/U.S._Special_Representative_to_Muslim_Communities_Farah_Pandith_visits_Pesantren_Sirojul_Munir_in_Bekasi_6025301458.jpg" alt="Connection in three forms: from compassion to skateboarding and village life" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/connection-in-three-forms-from-compassion-to-skateboarding-and-village-life-dg-20261103-lifestyle.html">Connection in three forms: from compassion to skateboarding and village life</a></h3>
-                    <p>These days show that progress often begins with something simple: being together with others, without fixed roles or lab…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/counterterrorism-expert-farah-pandith-teaches-communities-to-practice-compassion-17937694795126qpt1w8g5.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://reasonstobecheerful.world/wp-content/uploads/2026/11/U.S._Special_Representative_to_Muslim_Communities_Farah_Pandith_visits_Pesantren_Sirojul_Munir_in_Bekasi_6025301458.jpg" alt="Farah Pandith sits in her bright living room in Arlington, Virginia" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/counterterrorism-expert-farah-pandith-teaches-communities-to-practice-compassion-17937694795126qpt1w8g5.html">Counterterrorism expert Farah Pandith teaches communities to practice compassion</a></h3>
-                    <p>Farah Pandith spent decades working in the counterterrorism sector, including for the administrations of Obama, George W…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/xie-junwu-teaches-others-wheelchair-skateboarding-in-china-1793733306502wvehv8k6h.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/YouTube-screengrab-credit-Xie-Junwu-.jpg" alt="Xie Junwu demonstrates wheelchair skateboarding at a training center" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/xie-junwu-teaches-others-wheelchair-skateboarding-in-china-1793733306502wvehv8k6h.html">Xie Junwu Teaches Others Wheelchair Skateboarding in China</a></h3>
-                    <p>Xie Junwu, a wheelchair athlete from Nanchang, has climbed mountains, run marathons and now skateboards. At 19, he fell …</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/village-botton-shows-care-without-the-service-label-17937332369596ss98f5gb.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.positive.news/wp-content/uploads/2026/11/iStock-2180754914.jpg" alt="The entrance to Botton village in the North Yorkshire Moors National Park" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/village-botton-shows-care-without-the-service-label-17937332369596ss98f5gb.html">Village Botton shows care without the &#39;service&#39; label</a></h3>
-                    <p>In the English village of Botton, part of the Esk Valley Camphill Community in the North York Moors, people with and wit…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/looking-out-for-each-other-from-a-foundation-born-of-tragedy-to-boxing-without-f-dg-20261102-lifestyle.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/supplied-by-Marjohn-Riney.jpg" alt="Looking out for each other: from a foundation born of tragedy to boxing without fear" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/looking-out-for-each-other-from-a-foundation-born-of-tragedy-to-boxing-without-f-dg-20261102-lifestyle.html">Looking out for each other: from a foundation born of tragedy to boxing without fear</a></h3>
-                    <p>This week, our Lifestyle section showcases how people care for one another in remarkably different ways. One story follo…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/sardinian-restaurants-ban-phones-during-family-dinners-1793655079136s26oltnk3.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.optimistdaily.com/wp-content/uploads/family-eating-in-the-garden-Depositphotos_10848206_S.jpg" alt="Family at table in a restaurant without phones" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/sardinian-restaurants-ban-phones-during-family-dinners-1793655079136s26oltnk3.html">Sardinian restaurants ban phones during family dinners</a></h3>
-                    <p>Restaurants in Sardinia are introducing a ban on phone use for families during meals. The idea is that families without …</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/kenli-foundation-awards-67-scholarships-to-heroes-after-fatal-texas-crash-179365504136328er9o23r.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/supplied-by-Marjohn-Riney.jpg" alt="A Texas highway where a fatal car crash occurred five years ago, leading to the establishment of the Kenli Foundation" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/kenli-foundation-awards-67-scholarships-to-heroes-after-fatal-texas-crash-179365504136328er9o23r.html">Kenli Foundation awards 67 scholarships to heroes after fatal Texas crash</a></h3>
-                    <p>Five years ago, 18-year-old Kenli Riney lost her life in a head-on collision on a Texas highway, her car engulfed in fla…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/boxing-galas-by-fight-back-finance-free-lessons-for-domestic-abuse-survivors-1793655009947ou7j6x4x0.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.positive.news/wp-content/uploads/2026/10/BQ3A3519-scaled.jpg" alt="Women train together in a boxing gym as part of the Fight Forward programme" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/boxing-galas-by-fight-back-finance-free-lessons-for-domestic-abuse-survivors-1793655009947ou7j6x4x0.html">Boxing galas by Fight Back finance free lessons for domestic abuse survivors</a></h3>
-                    <p>London will host Fight Back Promotions&#39; first boxing gala on 28 November, founded by former Team GB boxer Lesley Sackey,…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/connection-takes-center-stage-from-a-bench-at-the-bus-stop-to-love-in-later-year-dg-20261101-lifestyle.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Bus-stop-kindness-Courtesy-of-TikTok-Teacher-and-Traveler.jpg" alt="Connection takes center stage: from a bench at the bus stop to love in later years" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/connection-takes-center-stage-from-a-bench-at-the-bus-stop-to-love-in-later-year-dg-20261101-lifestyle.html">Connection takes center stage: from a bench at the bus stop to love in later years</a></h3>
-                    <p>In late October and early November 2026, lifestyle news has largely revolved around people drawing closer together, some…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/from-barking-service-dogs-to-basketball-playing-otters-the-good-news-of-this-wee-dg-20261031-lifestyle.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Football-field-full-of-food-bank-donations-in-NY-Credit-Tommy-Pantaleo-for-Dermer-Dreams-submitted.jpg" alt="From barking service dogs to basketball-playing otters: the good news of this week" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/from-barking-service-dogs-to-basketball-playing-otters-the-good-news-of-this-wee-dg-20261031-lifestyle.html">From barking service dogs to basketball-playing otters: the good news of this week</a></h3>
-                    <p>These days show how people and animals help each other in the most diverse ways. From a school that fills an entire foot…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/service-dog-storm-saves-life-of-deaf-sandra-after-her-husband-gary-s-fall-1793555114323om6utmbe0.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Gary-with-Support-Dog-named-Storm-SWNS.jpeg" alt="Service dog Storm, the dog who saved the life of her deaf owner Sandra Donally&#39;s husband" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/service-dog-storm-saves-life-of-deaf-sandra-after-her-husband-gary-s-fall-1793555114323om6utmbe0.html">Service dog Storm saves life of deaf Sandra after her husband Gary&#39;s fall</a></h3>
-                    <p>In Staffordshire, England, service dog Storm has saved the life of Gary, the husband of his deaf owner Sandra Donally (6…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/howell-high-school-fills-football-field-with-donations-for-food-banks-1793555084446w70x69w4f.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Football-field-full-of-food-bank-donations-in-NY-Credit-Tommy-Pantaleo-for-Dermer-Dreams-submitted.jpg" alt="Howell High School&#39;s football field completely covered with yellow donation bags of food" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/howell-high-school-fills-football-field-with-donations-for-food-banks-1793555084446w70x69w4f.html">Howell High School fills football field with donations for food banks</a></h3>
-                    <p>Hundreds of students from Howell High School in New Jersey collected more than a quarter million pounds of food last wee…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/bench-at-bus-stop-surprises-girl-on-teachers-driveway-17935088701815uajy6z29.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Bus-stop-kindness-Courtesy-of-TikTok-Teacher-and-Traveler.jpg" alt="Girl jumps with joy at newly placed bench at her bus stop" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/bench-at-bus-stop-surprises-girl-on-teachers-driveway-17935088701815uajy6z29.html">Bench at bus stop surprises girl on teachers&#39; driveway</a></h3>
-                    <p>Florida teachers Maren and David Douglass noticed through their security camera that a girl was sitting on the ground wa…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/barbara-89-and-fred-88-find-love-again-at-the-gym-1793465881717zghtn36fj.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Seniors-working-out-w-weights-in-gym-by-ExtraCare-Charitable-Trust-via-SWNS.jpeg" alt="Barbara and Fred, two happy elderly people, together at the gym" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/barbara-89-and-fred-88-find-love-again-at-the-gym-1793465881717zghtn36fj.html">Barbara (89) and Fred (88) find love again at the gym</a></h3>
-                    <p>Barbara Thompson and Fred Jenkins, both widowed, have found love again at the age of 88 at the gym of Oscott Retirement …</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/from-a-restored-car-to-an-anonymous-benefactor-the-good-news-from-late-october-dg-20261030-lifestyle.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/4cafc2d5-67da-40f6-a326-76e7548bf9ad.jpg" alt="From a restored car to an anonymous benefactor: the good news from late October" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/from-a-restored-car-to-an-anonymous-benefactor-the-good-news-from-late-october-dg-20261030-lifestyle.html">From a restored car to an anonymous benefactor: the good news from late October</a></h3>
-                    <p>The final days of October show that people stand by each other in many different ways. Sometimes it&#39;s a grand gesture, l…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/unknown-diner-pays-420-lunch-bill-for-27-people-with-disabilities-in-incheon-1793421325018m899laeda.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Getty-Images-for-Unsplash-.jpg" alt="Group of people at a barbecue restaurant in Incheon, South Korea" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/unknown-diner-pays-420-lunch-bill-for-27-people-with-disabilities-in-incheon-1793421325018m899laeda.html">Unknown diner pays $420 lunch bill for 27 people with disabilities in Incheon</a></h3>
-                    <p>In the South Korean city of Incheon, a group of 27 people — residents of a care facility for people with disabilities an…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/veteran-receives-restored-hyundai-elantra-from-students-1793421296769hs16l0ker.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/4cafc2d5-67da-40f6-a326-76e7548bf9ad.jpg" alt="Veteran Robert Hanson receives a restored Hyundai Elantra from students at Dunwoody College of Engineering" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/veteran-receives-restored-hyundai-elantra-from-students-1793421296769hs16l0ker.html">Veteran receives restored Hyundai Elantra from students</a></h3>
-                    <p>Navy veteran Robert Hanson from Minneapolis had been without his own car for more than two years. Due to severe asthma a…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/parisian-women-defied-trouser-ban-in-19th-century-1793384374234uamyih28z.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://ychef.files.bbci.co.uk/800x450/p0pjv1hc.jpg" alt="Historical photograph of a 19th-century Parisian woman dressed in men&#39;s clothing" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/parisian-women-defied-trouser-ban-in-19th-century-1793384374234uamyih28z.html">Parisian women defied trouser ban in 19th century</a></h3>
-                    <p>In 1800, wearing trousers was banned for women in Paris, intended to keep women out of political life. Yet throughout th…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/botero-s-round-figures-breathe-new-life-into-classical-masterpieces-17933843491953w1abzl96.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://ychef.files.bbci.co.uk/800x450/p0pkg6n2.jpg" alt="Painting by Fernando Botero featuring a round, voluminous reinterpretation of the Mona Lisa" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/botero-s-round-figures-breathe-new-life-into-classical-masterpieces-17933843491953w1abzl96.html">Botero&#39;s round figures breathe new life into classical masterpieces</a></h3>
-                    <p>Colombian artist Fernando Botero reimagined famous European artworks, such as the Mona Lisa, in his distinctive rounded …</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/hart-rescue-saves-feral-cats-as-farm-cats-17933839909938lqbttwv4.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ac8009f6154b70b091a67a5_6ac8009ecff239ffa00f99bf_barn-cats-feral-animal-shelters-hunting-mice-featured.webp" alt="A feral cat is placed as a farm cat at a barn in Tennessee" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/hart-rescue-saves-feral-cats-as-farm-cats-17933839909938lqbttwv4.html">HART Rescue saves feral cats as farm cats</a></h3>
-                    <p>In 2015, Jennifer Cabral and Deb Mathews founded HART Rescue in Crossville, Tennessee. Instead of euthanizing feral, sem…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/working-from-home-actually-brings-colleagues-closer-together-1793383829494s925wf6io.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ad28c509bcb4fb760676b6d_6ad28c4ea5cf86c3a2d5699c_remote-work-actually-good-study-featured.webp" alt="Person in video call from home with colleagues on screen" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/working-from-home-actually-brings-colleagues-closer-together-1793383829494s925wf6io.html">Working from home actually brings colleagues closer together</a></h3>
-                    <p>A new study shows that working from home brings colleagues closer together rather than driving them apart. A management …</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/halloween-skeletons-raise-2-million-dollars-for-st-jude-1793383718920rpe7lsbzj.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6adbd5c2061f5620b61cabc6_6adbd5c135881aaaf378b971_halloween-2026-skeletons-for-st-jude-cancer-featured.webp" alt="A spooky Halloween yard decoration with skeletons for a good cause" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/halloween-skeletons-raise-2-million-dollars-for-st-jude-1793383718920rpe7lsbzj.html">Halloween skeletons raise 2 million dollars for St. Jude</a></h3>
-                    <p>More than 600 American households are participating in Skeletons for St. Jude, a fundraising initiative that began when …</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/sea-otters-juno-lincoln-and-uni-sushi-play-basketball-with-pumpkins-1793383690293t4rrao107.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6adf87e6cca8030ef580c93b_6adf87e49806c40109016a31_otters-playing-basketball-halloween-pumpkins-featured.webp" alt="Three rescued sea otters play basketball with pumpkins in their habitat at Oregon Zoo" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/sea-otters-juno-lincoln-and-uni-sushi-play-basketball-with-pumpkins-1793383690293t4rrao107.html">Sea otters Juno, Lincoln and Uni Sushi play basketball with pumpkins</a></h3>
-                    <p>The Oregon Zoo shared a video on October 24 of three rescued sea otters swimming, splashing and tossing pumpkins into ba…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/food-banks-in-new-york-now-offer-pet-food-too-1793383483557ulc7vq97w.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.optimistdaily.com/wp-content/uploads/cat-food-in-scoop-on-Depositphotos_96912150_S.jpg" alt="Pet food on a shelf at a food bank in New York" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/food-banks-in-new-york-now-offer-pet-food-too-1793383483557ulc7vq97w.html">Food banks in New York now offer pet food too</a></h3>
-                    <p>Food banks in New York City now provide pet food for families facing financial hardship. This allows households that alr…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/new-jersey-transit-turns-train-stations-into-art-galleries-1793383463464p07thgddb.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.optimistdaily.com/wp-content/uploads/new-jersey-transit-commuter-train-Depositphotos_473170438_S.jpg" alt="A train station of New Jersey Transit" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/new-jersey-transit-turns-train-stations-into-art-galleries-1793383463464p07thgddb.html">New Jersey Transit turns train stations into art galleries</a></h3>
-                    <p>New Jersey Transit is converting train stations into art galleries. Further details about the project are not provided i…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/vivian-ho-17-builds-supply-network-based-on-dignity-1793383447754f3bib3sdq.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.optimistdaily.com/wp-content/uploads/Local-Changemakers-Story-Covers-10-1.png" alt="The All The Same Organization receives an award, with Vivian Ho" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/vivian-ho-17-builds-supply-network-based-on-dignity-1793383447754f3bib3sdq.html">Vivian Ho (17) builds supply network based on dignity</a></h3>
-                    <p>Vivian Ho, 17 years old, has set up a supply network based on dignity rather than charity. Her organization, All The Sam…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/citizen-journalists-bring-local-news-back-and-reduce-polarization-1793383388104g6rrufn9p.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://reasonstobecheerful.world/wp-content/uploads/2026/10/Documenter-on-assignment-in-Chicago-scaled.jpg" alt="A woman takes notes on a laptop during a local school board meeting" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/citizen-journalists-bring-local-news-back-and-reduce-polarization-1793383388104g6rrufn9p.html">Citizen journalists bring local news back and reduce polarization</a></h3>
-                    <p>With thousands of local news outlets in the US shrinking or closing, ordinary citizens are filling the gap. Jackie Jantz…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/man-jumps-onto-moving-school-bus-and-saves-18-children-1793383257407x9i0ucuyo.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/surveillance-video-of-school-bus-Ya-Bricks-Snacks-and-Tobacco.jpg" alt="Security camera footage of a man jumping onto a moving school bus to help the driver" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/man-jumps-onto-moving-school-bus-and-saves-18-children-1793383257407x9i0ucuyo.html">Man jumps onto moving school bus and saves 18 children</a></h3>
-                    <p>In St. Paul, Minnesota, 27-year-old Ebro Ahmed jumped onto a moving school bus after witnessing the driver suffer a seiz…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/wrong-gps-turn-saves-foster-family-burke-with-500-children-from-house-fire-1793383136748zh80bxxgg.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/The-Burke-Family-credit-Flourish-Foster-Care-Closet-Support.jpg" alt="Burned-out home of foster family Burke after house fire in Chattooga County, Georgia" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/wrong-gps-turn-saves-foster-family-burke-with-500-children-from-house-fire-1793383136748zh80bxxgg.html">Wrong GPS turn saves foster family Burke with 500 children from house fire</a></h3>
-                    <p>A complete stranger named Casey was following incorrect GPS directions on Highway 114 south of Lyerly in Chattooga Count…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/divers-rescue-kangaroo-in-the-middle-of-the-sea-off-boston-bay-1793382999661s9jt4nn4o.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Jake-Murray-and-the-rescued-roo-supplied-to-ABC-by-Jake-Murray.jpg" alt="A young kangaroo is rescued from the sea by a diver off Boston Bay, Australia" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/divers-rescue-kangaroo-in-the-middle-of-the-sea-off-boston-bay-1793382999661s9jt4nn4o.html">Divers rescue kangaroo in the middle of the sea off Boston Bay</a></h3>
-                    <p>Off Boston Bay in South Australia, a diver and his crew rescued a young kangaroo that had drifted more than a mile and a…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/documentary-panther-pat-honors-pat-palinkas-first-woman-in-professional-football-1793382890861w6m803vdy.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/CELEB-POST-PP-27-x-40-OFFICIAL-POSTER-e1793294882546.jpg" alt="Film still from the documentary Panther Pat featuring puppets depicting Pat Palinkas&#39; football history" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/documentary-panther-pat-honors-pat-palinkas-first-woman-in-professional-football-1793382890861w6m803vdy.html">Documentary &#39;Panther Pat&#39; honors Pat Palinkas, first woman in professional football</a></h3>
-                    <p>In 1970, teacher Pat Palinkas became the first woman ever to take the field for a professional football team, the Orland…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/phone-number-on-exam-question-leads-to-friendship-between-student-and-strawberry-1793382864366l99apl4wk.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Left-Mr.-He-and-Mr.-Wang-shake-hands-6-years-after-meeting-through-an-English-exam-question-credit-retrieved-from-social-media-Douyin.jpg" alt="A strawberry farmer and a student smile together, connected by a chance exam question." loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/phone-number-on-exam-question-leads-to-friendship-between-student-and-strawberry-1793382864366l99apl4wk.html">Phone number on exam question leads to friendship between student and strawberry farmer</a></h3>
-                    <p>When He Ziqi took an English exam in secondary school, he noticed a phone number in a text about a strawberry farmer fro…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/texas-elementary-school-named-after-custodian-miss-marilyn-1793382839054fxzglq088.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Marilyn-Hampton-when-she-graduated-high-school-credit-family-photo.jpg" alt="Marilyn Hampton unfurls a red carpet with the name of her new school on it" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/texas-elementary-school-named-after-custodian-miss-marilyn-1793382839054fxzglq088.html">Texas elementary school named after custodian Miss Marilyn</a></h3>
-                    <p>Aubrey ISD in Texas has named a new K-5 school after Marilyn Hampton, a custodian who worked for the school district for…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/free-tool-vibe-check-teaches-young-men-to-recognize-sexual-boundary-violations-1793382750546hpyow7okq.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.positive.news/wp-content/uploads/2026/10/SafeBAE-Students-2.jpg" alt="Young people at a SafeBae meeting in summer 2025" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/free-tool-vibe-check-teaches-young-men-to-recognize-sexual-boundary-violations-1793382750546hpyow7okq.html">Free tool Vibe Check teaches young men to recognize sexual boundary violations</a></h3>
-                    <p>Drew Davis, director of strategic initiatives at US-based organization SafeBae, noticed countless posts on Reddit from y…</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/british-national-museums-remain-free-for-foreign-visitors-1790962599697ktmscal92.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://www.goodnewsnetwork.org/wp-content/uploads/2024/06/The-British-Museum-credit-Luke-Massey-the-Greater-London-National-Park-City-Initiative.jpg" alt="Visitors at the entrance of a British national museum" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/british-national-museums-remain-free-for-foreign-visitors-1790962599697ktmscal92.html">British National Museums remain free for foreign visitors</a></h3>
-                    <p>The British government has decided that the 14 national museums, including the National Gallery, the British Museum and …</p>
-                </div>
-            </article>
-            <article class="news-card">
-                <a href="/articles/en/primate-sanctuary-in-mississippi-helps-veterans-and-rescued-primates-heal-1790878357707kh42aq9k0.html" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abea02698902f77d5d3a553_6abea02398902f77d5d3a49f_gulf-coast-primate-sanctuary-monkey-rescue-veterans-featured.webp" alt="Rescued primate in an outdoor enclosure at the Gulf Coast Primate Sanctuary in Mississippi" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="/articles/en/primate-sanctuary-in-mississippi-helps-veterans-and-rescued-primates-heal-1790878357707kh42aq9k0.html">Primate sanctuary in Mississippi helps veterans and rescued primates heal</a></h3>
-                    <p>In Mississippi, April Stewart and her husband, both veterans, have been running the Gulf Coast Primate Sanctuary since O…</p>
-                </div>
-            </article>
-    </div>
-
-    <nav class="categorie-andere" aria-label="Other categories">
-        <h2>Other categories</h2>
-        <div class="categorie-links">
-            <a href="/categories/en/tech.html">Tech</a>
-            <a href="/categories/en/health.html">Health</a>
-            <a href="/categories/en/science.html">Science</a>
-            <a href="/categories/en/environment.html">Environment</a>
-            <a href="/categories/en/finance.html">Finance</a>
+        <div class="navbar__acties">
+            <button class="settings-trigger" type="button" aria-expanded="false" aria-controls="instellingen">
+                <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#tune"/></svg>
+                <span class="settings-trigger__label" data-i18n="schil_instellingen">Settings</span>
+                <svg class="icoon settings-trigger__chevron" aria-hidden="true"><use href="/assets/iconen.svg#keyboard_arrow_down"/></svg>
+            </button>
+            <!-- Ingelogd (<body data-ingelogd>): Mijn account in plaats van Inloggen. -->
+            <a class="btn btn--secondary navbar__inloggen" href="/inloggen.html" data-alleen="uitgelogd"><span data-i18n="schil_inloggen">Log in</span></a>
+            <a class="btn btn--secondary navbar__account" href="/profiel.html" data-alleen="ingelogd"><span data-i18n="schil_mijn_account">My account</span></a>
+            <a class="btn btn--primary" href="/abonnementen.html"><span data-i18n="schil_probeer_premium">Try Premium</span></a>
+            <!-- Onder 1024 px: één knop die het menu opent (zelfde paneel). -->
+            <button class="menu-knop" type="button" aria-expanded="false" aria-controls="instellingen">
+                <span class="menu-knop__dicht">
+                    <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#menu"/></svg>
+                    <span data-i18n="schil_menu">Menu</span>
+                </span>
+                <span class="menu-knop__open">
+                    <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#close"/></svg>
+                    <span data-i18n="instelling_sluiten">Close</span>
+                </span>
+            </button>
         </div>
-    </nav>
+    </div>
+
+    <div class="settings-panel" id="instellingen" inert>
+        <div class="settings-panel__binnen">
+            <div class="container settings-panel__inhoud">
+                <!-- Alleen op mobiel zichtbaar (Mobile menu); op desktop staan
+                     deze links en knoppen in de navbar. -->
+                <div class="mobiel-menu">
+                    <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
+                        <ul>
+                            <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">News</span></a></li>
+                            <li><a class="menu-link"><span data-i18n="schil_themas">Topics</span></a></li>
+                            <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archive</span></a></li>
+                            <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
+                        </ul>
+                    </nav>
+                    <div class="mobiel-menu__account">
+                        <a class="btn btn--secondary" href="/inloggen.html" data-alleen="uitgelogd"><span data-i18n="schil_inloggen">Log in</span></a>
+                        <a class="btn btn--secondary" href="/profiel.html" data-alleen="ingelogd"><span data-i18n="schil_mijn_account">My account</span></a>
+                        <a class="btn btn--primary" href="/abonnementen.html"><span data-i18n="schil_probeer_premium">Try Premium</span></a>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="setting-groep">
+                    <h2 class="setting-groep__titel" id="instelling-weergave" data-i18n="instelling_weergave">Appearance</h2>
+                    <p class="setting-groep__uitleg" data-i18n="instelling_weergave_uitleg">System follows the light or dark mode of your device.</p>
+                    <div class="setting-groep__opties" role="radiogroup" aria-labelledby="instelling-weergave" data-instelling="thema">
+                        <button class="setting-option" type="button" role="radio" aria-checked="true" data-waarde="systeem">
+                            <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#computer"/></svg>
+                            <span data-i18n="instelling_systeem">System</span>
+                            <svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg>
+                        </button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="licht">
+                            <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#light_mode"/></svg>
+                            <span data-i18n="instelling_licht">Light</span>
+                            <svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg>
+                        </button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="donker">
+                            <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#dark_mode"/></svg>
+                            <span data-i18n="instelling_donker">Dark</span>
+                            <svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="setting-groep">
+                    <h2 class="setting-groep__titel" id="instelling-taal" data-i18n="instelling_taal">Language</h2>
+                    <p class="setting-groep__uitleg" data-i18n="instelling_taal_uitleg">The language of the site and the articles.</p>
+                    <div class="setting-groep__opties" role="radiogroup" aria-labelledby="instelling-taal" data-instelling="taal">
+                        <button class="setting-option" type="button" role="radio" aria-checked="true" data-waarde="nl" lang="nl">Nederlands<svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="en" lang="en">English<svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="de" lang="de">Deutsch<svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="fr" lang="fr">Français<svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></button>
+                        <button class="setting-option" type="button" role="radio" aria-checked="false" data-waarde="es" lang="es">Español<svg class="setting-option__vinkje" aria-hidden="true"><use href="/assets/iconen.svg#check"/></svg></button>
+                    </div>
+                </div>
+
+                <div class="settings-panel__notitie">
+                    <button class="btn btn--secondary btn--sm" type="button" data-sluit-instellingen>
+                        <span data-i18n="instelling_sluiten">Close</span>
+                        <svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#close"/></svg>
+                    </button>
+                    <p data-i18n="instelling_bewaard">Your choice is saved on this device, even without an account. Logged in? You will find the same settings in your profile.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main id="inhoud">
+    <section class="info-sectie info-sectie--intro" aria-labelledby="cat-titel">
+        <div class="container info-tekst">
+            <p class="type-overline">Lifestyle</p>
+            <h1 class="type-display-sm" id="cat-titel">Good news about Lifestyle</h1>
+            <p class="info-tekst__lead">A fresh selection of positive Lifestyle news from around the world, every day.</p>
+        </div>
+    </section>
+
+    <section class="info-sectie" aria-label="Good news about Lifestyle">
+        <div class="container">
+        <ul class="editie-raster__rij editie-raster__rij--drie" role="list">
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-Britanny-Grant-via-Facebook.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/teenagers-rescue-flooded-neighbors-on-paddleboard-in-florida-1794500717896bmb6ztw21.html">Teenagers rescue flooded neighbors on paddleboard in Florida</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/fw-gretchen.png" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/100-year-old-gretchen-sollo-surprised-with-first-birthday-party-at-lowe-s-1794500666584b54okt9qk.html">100-year-old Gretchen Sollo surprised with first birthday party at Lowe&#39;s</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6af4b73eb417c64866415f92_6af4b73d2f34a1d30dd8f1b0_poets-words-on-ne-street-homelessness-featured.webp" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/three-stories-about-keeping-promises-helping-and-coming-back-dg-20261110-lifestyle.html">Three stories about keeping promises, helping and coming back</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6af4b73eb417c64866415f92_6af4b73d2f34a1d30dd8f1b0_poets-words-on-ne-street-homelessness-featured.webp" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/100-poets-write-anthology-on-homelessness-for-charity-17944249637321olk07x2s.html">100 poets write anthology on homelessness for charity</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Bonnie-Fay-playing-the-piano-at-Bryn-Mawr-Village-supplied-to-GNN-e1794387097651.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/paralyzed-pianist-84-keeps-promise-to-bryn-mawr-village-nursing-home-1794424942669ry7xjuj33.html">Paralyzed pianist (84) keeps promise to Bryn Mawr Village nursing home</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Jerge-Zion-is-recognized-at-the-Cal-Poly-Maritime-Academy-credit-@calpoly_maritime.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/maritime-student-rescues-father-and-son-from-drowning-1794424918029ogfmvv8rv.html">Maritime student rescues father and son from drowning</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.kqed.org/wp-content/uploads/sites/23/2026/11/GettyImages-2173655411-b93be8dc-2000x1418.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/care-courage-and-a-clever-airtag-the-week-s-good-news-dg-20261109-lifestyle.html">Care, courage and a clever AirTag: the week&#39;s good news</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.kqed.org/wp-content/uploads/sites/23/2026/11/GettyImages-2173655411-b93be8dc-2000x1418.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/flag-football-surges-in-popularity-among-girls-17943389119158r0jm6tmv.html">Flag football surges in popularity among girls</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6af354285cb0734cee00a85e_6af3542740ffdc98b024557c_dogfighting-rings-italy-rescue-rehabilitation-featured.webp" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/italy-invests-2-2-million-in-fighting-dog-rescue-17943388881162owlla8e3.html">Italy invests $2.2 million in fighting dog rescue</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/seiwert-ring-camera-.webp" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/viral-doorbell-video-raises-76-000-for-caregiver-suzanna-metcalf-1794338838098cpxyt1m0c.html">Viral doorbell video raises $76,000 for caregiver Suzanna Metcalf</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.positive.news/wp-content/uploads/2026/11/Horizontal-resizer-2.png" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/actor-peter-marinker-85-performs-in-krapp-s-last-tape-despite-alzheimer-s-1794338810899xda622hdp.html">Actor Peter Marinker (85) performs in Krapp&#39;s Last Tape despite Alzheimer&#39;s</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Councillor-Matt-Smith-with-GPS-AirTag-SWNS.jpeg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/mayor-catches-stone-thief-with-airtag-in-rufford-1794159938644e31835khm.html">Mayor catches stone thief with AirTag in Rufford</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Bird-rescued-from-sewer-pipe-RSPCA-and-SWNS.jpeg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/escaped-parakeet-luna-found-in-drain-after-motorist-s-tip-1794159908740k3cmzwac9.html">Escaped parakeet Luna found in drain after motorist&#39;s tip</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://reasonstobecheerful.world/wp-content/uploads/2026/10/EriksRanch-010-scaled.jpeg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/perseverers-and-dreamers-the-news-that-captured-hearts-this-week-dg-20261106-lifestyle.html">Perseverers and dreamers: the news that captured hearts this week</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Karl-Bushby-reunites-with-mom-after-walking-around-world-–-SWNS.jpeg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/karl-bushby-embraces-mother-after-28-years-walking-around-the-world-1794072836263vh3ooew93.html">Karl Bushby embraces mother after 28 years walking around the world</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://ychef.files.bbci.co.uk/800x450/p0plmjc9.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/from-homeless-to-oscar-the-story-behind-rocky-and-sylvester-stallone-17939917594065oi547svn.html">From homeless to Oscar: the story behind Rocky and Sylvester Stallone</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://reasonstobecheerful.world/wp-content/uploads/2026/10/EriksRanch-010-scaled.jpeg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/erik-s-ranch-in-montana-autistic-guides-and-wranglers-welcome-guests-1793943368286vof54g93p.html">Erik&#39;s Ranch in Montana: autistic guides and wranglers welcome guests</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/YouTube-Screengrab-Houston-Independent-School-District.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/keys-puzzle-pieces-and-salty-waves-the-good-news-from-early-november-dg-20261104-lifestyle.html">Keys, puzzle pieces and salty waves: the good news from early November</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Screenshot-2026-11-03-at-6.05.22-PM.png" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/jigsaw-puzzle-of-castle-brings-granddaughter-closer-to-taciturn-grandfather-1793857093984y8jny2obn.html">Jigsaw puzzle of castle brings granddaughter closer to taciturn grandfather</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Catherine-Breed-swins-in-the-open-ocean-south-of-the-Golden-Gate-Bridge-credit-Catherine-Breed-press-photo.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/catherine-breed-becomes-first-to-swim-entire-california-coast-1793820648815qj0f78wz7.html">Catherine Breed becomes first to swim entire California coast</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/YouTube-Screengrab-Houston-Independent-School-District.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/students-open-auto-repair-shop-to-the-public-in-houston-17938206195450tb2nv2m9.html">Students open auto repair shop to the public in Houston</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://reasonstobecheerful.world/wp-content/uploads/2026/11/U.S._Special_Representative_to_Muslim_Communities_Farah_Pandith_visits_Pesantren_Sirojul_Munir_in_Bekasi_6025301458.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/connection-in-three-forms-from-compassion-to-skateboarding-and-village-life-dg-20261103-lifestyle.html">Connection in three forms: from compassion to skateboarding and village life</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://reasonstobecheerful.world/wp-content/uploads/2026/11/U.S._Special_Representative_to_Muslim_Communities_Farah_Pandith_visits_Pesantren_Sirojul_Munir_in_Bekasi_6025301458.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/counterterrorism-expert-farah-pandith-teaches-communities-to-practice-compassion-17937694795126qpt1w8g5.html">Counterterrorism expert Farah Pandith teaches communities to practice compassion</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/YouTube-screengrab-credit-Xie-Junwu-.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/xie-junwu-teaches-others-wheelchair-skateboarding-in-china-1793733306502wvehv8k6h.html">Xie Junwu Teaches Others Wheelchair Skateboarding in China</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.positive.news/wp-content/uploads/2026/11/iStock-2180754914.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/village-botton-shows-care-without-the-service-label-17937332369596ss98f5gb.html">Village Botton shows care without the &#39;service&#39; label</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/supplied-by-Marjohn-Riney.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/looking-out-for-each-other-from-a-foundation-born-of-tragedy-to-boxing-without-f-dg-20261102-lifestyle.html">Looking out for each other: from a foundation born of tragedy to boxing without fear</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.optimistdaily.com/wp-content/uploads/family-eating-in-the-garden-Depositphotos_10848206_S.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/sardinian-restaurants-ban-phones-during-family-dinners-1793655079136s26oltnk3.html">Sardinian restaurants ban phones during family dinners</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/supplied-by-Marjohn-Riney.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/kenli-foundation-awards-67-scholarships-to-heroes-after-fatal-texas-crash-179365504136328er9o23r.html">Kenli Foundation awards 67 scholarships to heroes after fatal Texas crash</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.positive.news/wp-content/uploads/2026/10/BQ3A3519-scaled.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/boxing-galas-by-fight-back-finance-free-lessons-for-domestic-abuse-survivors-1793655009947ou7j6x4x0.html">Boxing galas by Fight Back finance free lessons for domestic abuse survivors</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Bus-stop-kindness-Courtesy-of-TikTok-Teacher-and-Traveler.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/connection-takes-center-stage-from-a-bench-at-the-bus-stop-to-love-in-later-year-dg-20261101-lifestyle.html">Connection takes center stage: from a bench at the bus stop to love in later years</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Football-field-full-of-food-bank-donations-in-NY-Credit-Tommy-Pantaleo-for-Dermer-Dreams-submitted.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/from-barking-service-dogs-to-basketball-playing-otters-the-good-news-of-this-wee-dg-20261031-lifestyle.html">From barking service dogs to basketball-playing otters: the good news of this week</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Gary-with-Support-Dog-named-Storm-SWNS.jpeg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/service-dog-storm-saves-life-of-deaf-sandra-after-her-husband-gary-s-fall-1793555114323om6utmbe0.html">Service dog Storm saves life of deaf Sandra after her husband Gary&#39;s fall</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Football-field-full-of-food-bank-donations-in-NY-Credit-Tommy-Pantaleo-for-Dermer-Dreams-submitted.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/howell-high-school-fills-football-field-with-donations-for-food-banks-1793555084446w70x69w4f.html">Howell High School fills football field with donations for food banks</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Bus-stop-kindness-Courtesy-of-TikTok-Teacher-and-Traveler.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/bench-at-bus-stop-surprises-girl-on-teachers-driveway-17935088701815uajy6z29.html">Bench at bus stop surprises girl on teachers&#39; driveway</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Seniors-working-out-w-weights-in-gym-by-ExtraCare-Charitable-Trust-via-SWNS.jpeg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/barbara-89-and-fred-88-find-love-again-at-the-gym-1793465881717zghtn36fj.html">Barbara (89) and Fred (88) find love again at the gym</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/4cafc2d5-67da-40f6-a326-76e7548bf9ad.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/from-a-restored-car-to-an-anonymous-benefactor-the-good-news-from-late-october-dg-20261030-lifestyle.html">From a restored car to an anonymous benefactor: the good news from late October</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Getty-Images-for-Unsplash-.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/unknown-diner-pays-420-lunch-bill-for-27-people-with-disabilities-in-incheon-1793421325018m899laeda.html">Unknown diner pays $420 lunch bill for 27 people with disabilities in Incheon</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/4cafc2d5-67da-40f6-a326-76e7548bf9ad.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/veteran-receives-restored-hyundai-elantra-from-students-1793421296769hs16l0ker.html">Veteran receives restored Hyundai Elantra from students</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://ychef.files.bbci.co.uk/800x450/p0pjv1hc.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/parisian-women-defied-trouser-ban-in-19th-century-1793384374234uamyih28z.html">Parisian women defied trouser ban in 19th century</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://ychef.files.bbci.co.uk/800x450/p0pkg6n2.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/botero-s-round-figures-breathe-new-life-into-classical-masterpieces-17933843491953w1abzl96.html">Botero&#39;s round figures breathe new life into classical masterpieces</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ac8009f6154b70b091a67a5_6ac8009ecff239ffa00f99bf_barn-cats-feral-animal-shelters-hunting-mice-featured.webp" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/hart-rescue-saves-feral-cats-as-farm-cats-17933839909938lqbttwv4.html">HART Rescue saves feral cats as farm cats</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ad28c509bcb4fb760676b6d_6ad28c4ea5cf86c3a2d5699c_remote-work-actually-good-study-featured.webp" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/working-from-home-actually-brings-colleagues-closer-together-1793383829494s925wf6io.html">Working from home actually brings colleagues closer together</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6adbd5c2061f5620b61cabc6_6adbd5c135881aaaf378b971_halloween-2026-skeletons-for-st-jude-cancer-featured.webp" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/halloween-skeletons-raise-2-million-dollars-for-st-jude-1793383718920rpe7lsbzj.html">Halloween skeletons raise 2 million dollars for St. Jude</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6adf87e6cca8030ef580c93b_6adf87e49806c40109016a31_otters-playing-basketball-halloween-pumpkins-featured.webp" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/sea-otters-juno-lincoln-and-uni-sushi-play-basketball-with-pumpkins-1793383690293t4rrao107.html">Sea otters Juno, Lincoln and Uni Sushi play basketball with pumpkins</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.optimistdaily.com/wp-content/uploads/cat-food-in-scoop-on-Depositphotos_96912150_S.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/food-banks-in-new-york-now-offer-pet-food-too-1793383483557ulc7vq97w.html">Food banks in New York now offer pet food too</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.optimistdaily.com/wp-content/uploads/new-jersey-transit-commuter-train-Depositphotos_473170438_S.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/new-jersey-transit-turns-train-stations-into-art-galleries-1793383463464p07thgddb.html">New Jersey Transit turns train stations into art galleries</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.optimistdaily.com/wp-content/uploads/Local-Changemakers-Story-Covers-10-1.png" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/vivian-ho-17-builds-supply-network-based-on-dignity-1793383447754f3bib3sdq.html">Vivian Ho (17) builds supply network based on dignity</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://reasonstobecheerful.world/wp-content/uploads/2026/10/Documenter-on-assignment-in-Chicago-scaled.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/citizen-journalists-bring-local-news-back-and-reduce-polarization-1793383388104g6rrufn9p.html">Citizen journalists bring local news back and reduce polarization</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/surveillance-video-of-school-bus-Ya-Bricks-Snacks-and-Tobacco.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/man-jumps-onto-moving-school-bus-and-saves-18-children-1793383257407x9i0ucuyo.html">Man jumps onto moving school bus and saves 18 children</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/The-Burke-Family-credit-Flourish-Foster-Care-Closet-Support.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/wrong-gps-turn-saves-foster-family-burke-with-500-children-from-house-fire-1793383136748zh80bxxgg.html">Wrong GPS turn saves foster family Burke with 500 children from house fire</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Jake-Murray-and-the-rescued-roo-supplied-to-ABC-by-Jake-Murray.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/divers-rescue-kangaroo-in-the-middle-of-the-sea-off-boston-bay-1793382999661s9jt4nn4o.html">Divers rescue kangaroo in the middle of the sea off Boston Bay</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/CELEB-POST-PP-27-x-40-OFFICIAL-POSTER-e1793294882546.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/documentary-panther-pat-honors-pat-palinkas-first-woman-in-professional-football-1793382890861w6m803vdy.html">Documentary &#39;Panther Pat&#39; honors Pat Palinkas, first woman in professional football</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Left-Mr.-He-and-Mr.-Wang-shake-hands-6-years-after-meeting-through-an-English-exam-question-credit-retrieved-from-social-media-Douyin.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/phone-number-on-exam-question-leads-to-friendship-between-student-and-strawberry-1793382864366l99apl4wk.html">Phone number on exam question leads to friendship between student and strawberry farmer</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Marilyn-Hampton-when-she-graduated-high-school-credit-family-photo.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/texas-elementary-school-named-after-custodian-miss-marilyn-1793382839054fxzglq088.html">Texas elementary school named after custodian Miss Marilyn</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.positive.news/wp-content/uploads/2026/10/SafeBAE-Students-2.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/free-tool-vibe-check-teaches-young-men-to-recognize-sexual-boundary-violations-1793382750546hpyow7okq.html">Free tool Vibe Check teaches young men to recognize sexual boundary violations</a></h2></div></article></li>
+            <li><article class="story-card story-card--stacked"><img class="story-card__beeld" src="https://www.goodnewsnetwork.org/wp-content/uploads/2024/06/The-British-Museum-credit-Luke-Massey-the-Greater-London-National-Park-City-Initiative.jpg" alt="" loading="lazy" decoding="async"><div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="/articles/en/british-national-museums-remain-free-for-foreign-visitors-1790962599697ktmscal92.html">British National Museums remain free for foreign visitors</a></h2></div></article></li>
+        </ul>
+        </div>
+    </section>
+
+    <section class="info-sectie info-sectie--subtiel" aria-labelledby="cat-andere">
+        <div class="container info-sectie__binnen">
+            <h2 class="type-heading-lg" id="cat-andere">Other categories</h2>
+            <ul class="topic-links" role="list">
+            <li><a class="topic-link" href="/categories/en/tech.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#lightbulb"/></svg><span>Tech</span><svg class="icoon topic-link__chevron" aria-hidden="true"><use href="/assets/iconen.svg#chevron_right"/></svg></a></li>
+            <li><a class="topic-link" href="/categories/en/health.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#ecg_heart"/></svg><span>Health</span><svg class="icoon topic-link__chevron" aria-hidden="true"><use href="/assets/iconen.svg#chevron_right"/></svg></a></li>
+            <li><a class="topic-link" href="/categories/en/science.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#science"/></svg><span>Science</span><svg class="icoon topic-link__chevron" aria-hidden="true"><use href="/assets/iconen.svg#chevron_right"/></svg></a></li>
+            <li><a class="topic-link" href="/categories/en/environment.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#eco"/></svg><span>Environment</span><svg class="icoon topic-link__chevron" aria-hidden="true"><use href="/assets/iconen.svg#chevron_right"/></svg></a></li>
+            <li><a class="topic-link" href="/categories/en/finance.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#euro"/></svg><span>Finance</span><svg class="icoon topic-link__chevron" aria-hidden="true"><use href="/assets/iconen.svg#chevron_right"/></svg></a></li>
+            </ul>
+        </div>
+    </section>
 </main>
-<footer class="main-footer">
-  <div class="container footer-grid">
-    <!-- Kolom 1: Over & Transparantie -->
-    <div class="footer-about">
-      <div class="footer-logo">Bright<span>News</span></div>
-      <p data-i18n="footer_text">Founded and developed by <strong>Maarten de Klerk</strong>. Maarten is the owner and lead developer of BrightNews, dedicated to spreading positive vibes through tech.</p>
-      <div class="footer-legal-info">
-        <p data-i18n="footer_address">Vossenstraat 19, 6286BW Nijswiller, The Netherlands</p>
-        <p><span data-i18n="footer_kvk_label">KvK</span>: <span data-i18n="footer_kvk_val">42048341</span> · <span data-i18n="footer_btw_label">VAT</span>: <span data-i18n="footer_btw_val">NL005455019B94</span></p>
-        <p class="footer-mor-notice" data-i18n="footer_mor_notice">Payments are securely processed by Stripe, our Merchant of Record.</p>
-      </div>
-    </div>
 
-    <!-- Kolom 2: Explore -->
-    <div class="footer-links">
-      <h3 data-i18n="footer_explore">Explore</h3>
-      <ul>
-        <li><a href="/index.html" data-i18n="nav_home">Home</a></li>
-        <li><a href="/over-ons.html" data-i18n="footer_mission">Our Mission</a></li>
-        <li><a href="/abonnementen.html" data-i18n="footer_subs">Subscriptions</a></li>
-        <li><a href="#" onclick="openCustomerPortal(event)" data-i18n="footer_manage_sub">Manage Subscription</a></li>
-        <li><a href="/profiel.html" data-i18n="footer_acc">My Account</a></li>
-      </ul>
-    </div>
+<footer class="site-footer">
+    <div class="container site-footer__binnen">
+        <div class="site-footer__rij">
+            <div class="site-footer__merk">
+                <a class="logo" href="/" aria-label="BrightNews, naar de homepage" data-i18n-aria-label="schil_logo_label">
+                    <svg class="logo__beeldmerk" viewBox="0 0 39.6151 40" aria-hidden="true">
+                        <path d="M9 28a11 11 0 0 1 22 0H9Z" fill="#FFC933"/>
+                        <path d="M35.25 29.5H4.75a1.75 1.75 0 0 0 0 3.5h30.5a1.75 1.75 0 0 0 0-3.5Z" fill="currentColor"/>
+                        <path d="M20 12.5V8M30.3 17.7l3.2-3.2M9.7 17.7l-3.2-3.2" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+                    </svg>
+                    <span class="logo__woordmerk">Bright<span>News</span></span>
+                </a>
+                <p data-i18n="schil_tagline">A little better news every day, in five languages.</p>
+                <ul class="socials" aria-label="Volg BrightNews" data-i18n-aria-label="schil_volg_ons">
+                    <li><a class="social-knop" href="https://www.facebook.com/people/BrightNews/61594888799297/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a></li>
+                    <li><a class="social-knop" href="https://www.instagram.com/brightnews.online" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a></li>
+                    <li><a class="social-knop" href="https://www.linkedin.com/company/brightnewsonline/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></li>
+                </ul>
+            </div>
 
-    <!-- Kolom 3: Community -->
-    <div class="footer-links">
-      <h3 data-i18n="footer_community">Community</h3>
-      <ul>
-        <li><a href="/Privacy.html" data-i18n="footer_privacy">Privacy Policy</a></li>
-        <li><a href="/algemeene-voorwaarden.html" data-i18n="footer_service_terms">Terms of Service</a></li>
-        <li><a href="/refunds.html" data-i18n="footer_refunds">Refunds</a></li>
-        <li><a href="/Privacy.html#cookies-section" data-i18n="footer_cookies">Cookies</a></li>
-        <li><a href="/contact.html" data-i18n="footer_support">Contact Support</a></li>
-      </ul>
-    </div>
+            <nav class="footer-kolom" aria-labelledby="footer-lezen">
+                <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Read</h2>
+                <ul>
+                    <li><a href="/"><span data-i18n="schil_nieuws">News</span></a></li>
+                    <li><a><span data-i18n="schil_themas">Topics</span></a></li>
+                    <li><a href="/archief.html"><span data-i18n="schil_archief">Archive</span></a></li>
+                    <li><a><span data-i18n="schil_categorieen">Categories</span></a></li>
+                </ul>
+            </nav>
 
-    <!-- Kolom 4: Socials & Badge -->
-    <div class="footer-socials">
-      <h3 data-i18n="footer_follow">Follow BrightNews</h3>
-      <div class="social-icons">
-        <a href="https://www.facebook.com/people/BrightNews/61594888799297/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a>
-        <a href="https://www.instagram.com/brightnews.online" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a>
-        <a href="https://www.linkedin.com/company/brightnewsonline/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-        <a href="mailto:info@brightnews.online" class="social-btn" aria-label="E-mail"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
-      </div>
+            <nav class="footer-kolom" aria-labelledby="footer-merk">
+                <h2 class="footer-kolom__titel" id="footer-merk">BrightNews</h2>
+                <ul>
+                    <li><a href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
+                    <li><a href="/zo-kiezen-we.html"><span data-i18n="schil_zo_kiezen_we">How we choose</span></a></li>
+                    <li><a href="/abonnementen.html"><span data-i18n="schil_premium">Premium</span></a></li>
+                    <li><a href="/Privacy.html"><span data-i18n="schil_privacy_voorwaarden">Privacy and terms</span></a></li>
+                </ul>
+            </nav>
+
+            <nav class="footer-kolom" aria-labelledby="footer-hulp">
+                <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Help</h2>
+                <ul>
+                    <li><a><span data-i18n="schil_instellingen">Settings</span></a></li>
+                    <li><a href="/contact.html"><span data-i18n="schil_contact">Contact</span></a></li>
+                    <li><a href="/feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
+                    <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Refunds</span></a></li>
+                    <li><button class="footer-knop" type="button" data-cookie-instellingen><span data-i18n="v5_ck_footer">Cookie settings</span></button></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="site-footer__onder">
+            <p data-i18n="schil_copyright">© 2026 BrightNews. Summarised with AI from reliable sources.</p>
+            <p data-i18n="schil_bedrijfsgegevens">Vossenstraat 19, 6286 BW Nijswiller, the Netherlands · Chamber of Commerce 42048341 · VAT NL005455019B94</p>
+        </div>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <p data-i18n="footer_created_by">&copy; 2026 BrightNews • All rights reserved • Created with 💚 in the Netherlands</p>
-  </div>
 </footer>
+
+<!-- Cookiebalk (Figma: Cookie bar, Balk en Instellingen). Verschijnt zolang
+     er geen keuze is, of de keuze ouder is dan 12 maanden. Geen pop-up:
+     vast onderaan, zonder donkere laag. Gedrag: js/v5/schil.js. -->
+<section class="cookie-bar" id="cookiebalk" data-weergave="balk" aria-labelledby="cookiebalk-titel" hidden>
+    <div class="container cookie-bar__binnen">
+        <div class="cookie-bar__tekst">
+            <h2 class="cookie-bar__titel" id="cookiebalk-titel" data-i18n="v5_ck_titel">Cookies on BrightNews</h2>
+            <p class="cookie-bar__uitleg">
+                <span class="cookie-bar__lang" data-i18n="v5_ck_tekst">We use cookies that are needed to make the site work. Other cookies only if you're OK with it.</span>
+                <span class="cookie-bar__kort" data-i18n="v5_ck_tekst_kort">Needed for the site. Statistics only with your permission.</span>
+                <a href="/Privacy.html#cookies"><span data-i18n="v5_ck_lees">Read the privacy statement</span></a>
+                <button class="btn btn--tertiary btn--sm cookie-bar__instellingen-kort" type="button" data-cookie="instellingen" aria-expanded="false" aria-controls="cookiebalk-keuzes"><span data-i18n="v5_ck_instellingen">Settings</span></button>
+            </p>
+        </div>
+        <div class="cookie-bar__keuzes" id="cookiebalk-keuzes">
+            <div class="cookie-bar__keuze">
+                <label class="toggle"><input class="visueel-verborgen" type="checkbox" role="switch" checked disabled aria-describedby="cookie-noodzakelijk-uitleg"><span class="toggle__baan" aria-hidden="true"></span><span data-i18n="v5_ck_noodzakelijk">Necessary</span></label>
+                <p id="cookie-noodzakelijk-uitleg" data-i18n="v5_ck_noodzakelijk_uitleg">To log you in and remember your language and display. Always on.</p>
+            </div>
+            <div class="cookie-bar__keuze">
+                <label class="toggle"><input class="visueel-verborgen" type="checkbox" role="switch" id="cookie-statistieken" aria-describedby="cookie-statistieken-uitleg"><span class="toggle__baan" aria-hidden="true"></span><span data-i18n="v5_ck_statistieken">Statistics</span></label>
+                <p id="cookie-statistieken-uitleg" data-i18n="v5_ck_statistieken_uitleg">Measuring which pages are read, so we can improve the site. Google Analytics does this with a cookie holding a random code, without your name.</p>
+            </div>
+        </div>
+        <div class="cookie-bar__knoppen">
+            <button class="btn btn--tertiary" type="button" data-cookie="instellingen" aria-expanded="false" aria-controls="cookiebalk-keuzes"><span data-i18n="v5_ck_instellingen">Settings</span></button>
+            <button class="btn btn--secondary" type="button" data-cookie="noodzakelijk"><span data-i18n="v5_ck_noodzakelijk_knop">Necessary only</span></button>
+            <button class="btn btn--secondary" type="button" data-cookie="opslaan"><span data-i18n="v5_ck_opslaan">Save choice</span></button>
+            <button class="btn btn--secondary" type="button" data-cookie="alles"><span data-i18n="v5_ck_alles">Accept all</span></button>
+        </div>
+    </div>
+</section>
+
+<!-- Supabase op elke v5-pagina (TODO 66 punt 9): js/v5/schil.js zet daarmee
+     data-ingelogd en data-premium op <body>, en de inloglink uit de mail mag
+     op elke pagina landen. Vóór de paginascripts, zodat window.supabaseClient
+     klaarstaat (defer houdt de volgorde aan). -->
+<script src="/js/vendor/supabase-js-2.112.4.js" defer></script>
+<script src="/js/supabase-init.js" defer></script>
+<script src="/data/translations.js" defer></script>
+<script src="/js/v5/schil.js" defer></script>
+
 </body>
 </html>
