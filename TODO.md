@@ -247,6 +247,7 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      GitHub → Settings → Notifications → Custom routing de repo
      Brightnews.online naar je Gmail laten gaan, en onder System → Actions
      "Only notify for failed workflows" aan. Zie ook TODO 77.
+     ✅ Gedaan door Maarten (2026-11-12): meldingen gaan naar Gmail.
      *Gecorrigeerd 2026-11-12:* Custom routing bestaat alleen voor
      organisaties. Voor deze repo (van een persoonlijk account) gaan
      meldingen naar het "Default notifications email" onder
@@ -2195,7 +2196,11 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
       Stripe-events zetten Premium niet meer terug aan (`stripe_event_op`,
       en `premium_until` op nu in plaats van null bij opzeggen; getest in
       `supabase/functions/stripe-webhook/volgorde.test.mjs`), en een paar
-      kleinere punten. **Nog te besluiten (Maarten):**
+      kleinere punten. **Besloten (Maarten, 2026-11-12): alle vijf zoals
+      hieronder geadviseerd, dus niets bouwen.** (1) zo laten en na een paar
+      maanden kijken of mensen het doen; (2) geen respijt, Mijn account legt
+      het uit; (3) handmatig terugbetalen in Stripe; (4) zo laten, promocodes
+      zijn voor testers; (5) alleen onthouden. De punten:
       1. Wie opzegt, kan meteen opnieuw 30 dagen gratis proberen (Stripe
          beperkt de proef niet tot één keer). Eventueel een aparte betaallink
          zonder proef voor wie al eens een abonnement had.
