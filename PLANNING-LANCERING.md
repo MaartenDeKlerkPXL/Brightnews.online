@@ -132,8 +132,9 @@ via een PR. Laat die PR eerst nakijken door een review-agent
   staten (Premium actief, opgezegd, betaling mislukt, account verwijderen).
 - ✅ (vervroegd naar 12 november) De echte paywallstaat op de artikelpagina
   via `lees_artikel()` (TODO 66, punt 6).
-- Nog: de PR met de abonnementsstatus en de mails-functies mergen, de SQL
-  draaien en de webhook deployen (Maartens akkoord).
+- ✅ PR #19 gemerged (12 november, met Maartens akkoord): beide SQL-bestanden
+  gedraaid, de webhook (versie 8) gedeployed, Contact en Feedback één keer
+  echt getest (testberichten daarna verwijderd).
 
 ### Zondag 15 november
 

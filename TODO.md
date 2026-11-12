@@ -2165,8 +2165,8 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
       account of gegevens verwijderen"), zoals de privacyverklaring al zegt;
       E-mailadres wijzigen staat er niet meer (nog niet ontworpen; tot dan
       via Contact); weergave en taal per apparaat, niet per account (na de
-      lancering). **Nodig vóór het live gaat:** de PR met
-      `supabase/account-koppeling-2026-11-12.sql` en de nieuwe webhook.
+      lancering). ✅ **Back-end live sinds 2026-11-12** (PR #19: beide
+      SQL-bestanden gedraaid, webhook versie 8).
       Zonder die PR toont Mijn account Premium zonder onderscheid en staat
       de mails-schakelaar uit. Bestaande Premium-lezers krijgen hun
       `abo_status` pas bij het volgende Stripe-event; tot dan "Premium" met
