@@ -247,6 +247,11 @@ via een PR. Laat die PR eerst nakijken door een review-agent
   pagina laten valideren (TODO 78).
 - Snelheid meten (Lighthouse: LCP en CLS) op home, artikel en archief.
 
+- Branding (TODO 80): favicon, app-iconen, één nieuwe deelafbeelding en de
+  profielen op Facebook, Instagram en LinkedIn in de v5-stijl.
+- Al een paar posts op sociale media (TODO 81), zodat de kanalen niet leeg
+  zijn bij de lancering.
+
 ### Zaterdag 21 november
 
 - Repareren wat vrijdag misging. **Niets nieuws meer bouwen.**

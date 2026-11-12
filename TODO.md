@@ -148,6 +148,35 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
 
 ## Blokkeert de lancering
 
+- [ ] **80. Branding vóór de lancering: favicon, deelafbeelding en sociale
+  media in de v5-stijl.** *(Maarten, 2026-11-12)* De site is v5, maar wat
+  eromheen hangt nog niet overal:
+  1. **Favicon en app-icoon:** `assets/brightnews-logo-faviconv5.png` nalopen
+     op het nieuwe beeldmerk (zon met lijn), plus `icon-192.png` en
+     `icon-512.png` (voor wie de site op het beginscherm zet) en een
+     `apple-touch-icon`. In `assets/` staan nog vijf oude varianten
+     (favicon v1 t/m v3, `favicon-brightnews.png`): niet verwijderen zolang
+     iets ernaar linkt.
+  2. **Deelafbeelding (og:image):** de home deelt
+     `brightnews-logo-vierkant.png`, en de categorie-, thema- en
+     artikelpagina's zonder eigen foto delen `brightnews-logo.png` (het oude
+     logo; `backend/schil.js` en `backend/generate-articles.js`). Eén nieuwe
+     deelafbeelding van 1200×630 in de v5-stijl, en die overal gebruiken.
+  3. **Sociale media:** profielfoto en banner op Facebook, Instagram en
+     LinkedIn naar het nieuwe logo en de nieuwe kleuren (`#186F49`), en de
+     bio en de link naar brightnews.online nalopen.
+  4. Het logo in de mails is nu tekst (`backend/mailopmaak.js`); dat mag zo
+     blijven.
+
+- [ ] **81. Vóór de lancering al iets op sociale media plaatsen.**
+  *(Maarten, 2026-11-12)* Zodat de kanalen niet leeg zijn als de eerste
+  bezoekers komen kijken, en als opwarming voor de lancering en de inzending
+  bij PXL StudentStartUP (Ambassador Award, vóór 22 november 23.59 uur).
+  Bijvoorbeeld drie à vier posts vóór de 22e: een teaser van het nieuwe
+  ontwerp, een paar goede-nieuwsverhalen van die week (de postfabriek maakt
+  daar al concepten voor, punt 30 en 45), en de lanceringspost zelf. Plaatsen
+  doet Maarten met de hand zolang punt 45 (automatisch plaatsen) niet af is.
+
 - [ ] **67. 🚨 ZEER HOGE PRIORITEIT: is de site goed beschermd? Skill maken
   en een volledige controle met alle agents.**
   *(Maarten, 2026-10-30. Gaat vóór al het andere werk op deze lijst.)*
