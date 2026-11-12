@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-11-12T17:49:35.120Z",
+ "gegenereerd": "2026-11-12T19:41:25.984Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -22,12 +22,12 @@
      "url": "https://brightnews.online/articles/nl/100-dichters-schrijven-bundel-over-dakloosheid-voor-goed-doel-17944249637321olk07x2s.html"
     },
     {
-     "id": "17943389119158r0jm6tmv",
-     "titel": "Flag football groeit snel in populariteit onder meisjes",
-     "teaser": "Flag football, lang gezien als alternatief voor tackle football, wint sterk aan populariteit bij meisjes. Volgens USA Football steeg de deelname van meisjes tussen 6 en 17 jaar de afgelopen tien jaar met 57%, naar ruim 267.000 deelnemers in 2024. In 2023 voegde de California Interscholastic Federation meisjes flag football toe als middelbare schoolsport, en in 2028 debuteert de sport...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/flag-football-groeit-snel-in-populariteit-onder-meisjes-17943389119158r0jm6tmv.html"
+     "id": "1794512393169a6sm5uwey",
+     "titel": "China schakelt grootste vloeibare-luchtbatterij ter wereld in",
+     "teaser": "In de Chinese provincie Qinghai is de grootste demonstratiecentrale ter wereld voor liquid-air energy storage (LAES) in gebruik genomen. De installatie gebruikt groene stroom om lucht samen te persen tot extreme dichtheid, waarna het vloeibaar wordt bij circa -190°C. Bij vraag wordt de vloeistof weer opgewarmd, waardoor ze snel uitzet tot gas en een turbine aandrijft die stroom teruglevert aan...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/china-schakelt-grootste-vloeibare-luchtbatterij-ter-wereld-in-1794512393169a6sm5uwey.html"
     },
     {
      "id": "1794505697568p3w3b6tmd",
@@ -48,6 +48,13 @@
    ],
    "dagoverzichten": [
     {
+     "id": "dg-20261111-environment",
+     "titel": "Steden kiezen voor schone lucht, grote opslag en groen op de gevel",
+     "categorie": "Environment",
+     "dag": "2026-11-11",
+     "url": "https://brightnews.online/articles/nl/steden-kiezen-voor-schone-lucht-grote-opslag-en-groen-op-de-gevel-dg-20261111-environment.html"
+    },
+    {
      "id": "dg-20261111-lifestyle",
      "titel": "Herenigde medailles, gered door buren en honderd jaar wandelen: het goede nieuws van deze dagen",
      "categorie": "Lifestyle",
@@ -67,13 +74,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-10",
      "url": "https://brightnews.online/articles/nl/drie-verhalen-over-beloftes-houden-helpen-en-terugkomen-dg-20261110-lifestyle.html"
-    },
-    {
-     "id": "dg-20261109-lifestyle",
-     "titel": "Zorg, moed en een slimme AirTag: het goede nieuws van de week",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-09",
-     "url": "https://brightnews.online/articles/nl/zorg-moed-en-een-slimme-airtag-het-goede-nieuws-van-de-week-dg-20261109-lifestyle.html"
     }
    ]
   },
@@ -96,12 +96,12 @@
      "url": "https://brightnews.online/articles/en/100-poets-write-anthology-on-homelessness-for-charity-17944249637321olk07x2s.html"
     },
     {
-     "id": "17943389119158r0jm6tmv",
-     "titel": "Flag football surges in popularity among girls",
-     "teaser": "Flag football, long seen as an alternative to tackle football, is gaining strong popularity among girls. According to USA Football, participation by girls aged 6 to 17 has risen 57% over the past decade, reaching over 267,000 participants in 2024. In 2023, the California Interscholastic Federation added girls flag football as a high school sport, and in 2028 the sport...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/flag-football-surges-in-popularity-among-girls-17943389119158r0jm6tmv.html"
+     "id": "1794512393169a6sm5uwey",
+     "titel": "China switches on world's largest liquid-air battery",
+     "teaser": "In China's Qinghai province, the world's largest demonstration facility for liquid-air energy storage (LAES) has been put into operation. The installation uses green electricity to compress air to extreme density, after which it becomes liquid at approximately -190°C. When demand arises, the liquid is reheated, causing it to rapidly expand into gas and drive a turbine that feeds electricity back...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/china-switches-on-world-s-largest-liquid-air-battery-1794512393169a6sm5uwey.html"
     },
     {
      "id": "1794505697568p3w3b6tmd",
@@ -122,6 +122,13 @@
    ],
    "dagoverzichten": [
     {
+     "id": "dg-20261111-environment",
+     "titel": "Cities choose clean air, massive storage and green on the facade",
+     "categorie": "Environment",
+     "dag": "2026-11-11",
+     "url": "https://brightnews.online/articles/en/cities-choose-clean-air-massive-storage-and-green-on-the-facade-dg-20261111-environment.html"
+    },
+    {
      "id": "dg-20261111-lifestyle",
      "titel": "Reunited medals, rescued by neighbors and a hundred years of walking: the good news of these days",
      "categorie": "Lifestyle",
@@ -141,13 +148,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-10",
      "url": "https://brightnews.online/articles/en/three-stories-about-keeping-promises-helping-and-coming-back-dg-20261110-lifestyle.html"
-    },
-    {
-     "id": "dg-20261109-lifestyle",
-     "titel": "Care, courage and a clever AirTag: the week's good news",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-09",
-     "url": "https://brightnews.online/articles/en/care-courage-and-a-clever-airtag-the-week-s-good-news-dg-20261109-lifestyle.html"
     }
    ]
   },
@@ -170,12 +170,12 @@
      "url": "https://brightnews.online/articles/de/100-dichter-schreiben-gedichtsammlung-uber-obdachlosigkeit-fur-gemeinnutzigen-zw-17944249637321olk07x2s.html"
     },
     {
-     "id": "17943389119158r0jm6tmv",
-     "titel": "Flag Football wächst schnell an Popularität unter Mädchen",
-     "teaser": "Flag Football, lange als Alternative zu Tackle Football angesehen, gewinnt stark an Popularität bei Mädchen. Laut USA Football ist die Teilnahme von Mädchen zwischen 6 und 17 Jahren in den letzten zehn Jahren um 57 % gestiegen, auf über 267.000 Teilnehmer im Jahr 2024. 2023 fügte die California Interscholastic Federation Flag Football für Mädchen als Schulsport der Sekundarstufe hinzu, und...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/flag-football-wachst-schnell-an-popularitat-unter-madchen-17943389119158r0jm6tmv.html"
+     "id": "1794512393169a6sm5uwey",
+     "titel": "China schaltet weltgrößte Flüssiglufbatterie ein",
+     "teaser": "In der chinesischen Provinz Qinghai ist das weltweit größte Demonstrationskraftwerk für Flüssigluftenergiespeicherung (LAES) in Betrieb genommen worden. Die Anlage nutzt grünen Strom, um Luft auf extreme Dichte zu komprimieren, woraufhin sie bei etwa -190°C flüssig wird. Bei Bedarf wird die Flüssigkeit wieder erwärmt, wodurch sie schnell zu Gas expandiert und eine Turbine antreibt, die Strom ins Netz zurückliefert. Das Kraftwerk...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/china-schaltet-weltgro-te-flussiglufbatterie-ein-1794512393169a6sm5uwey.html"
     },
     {
      "id": "1794505697568p3w3b6tmd",
@@ -196,6 +196,13 @@
    ],
    "dagoverzichten": [
     {
+     "id": "dg-20261111-environment",
+     "titel": "Städte setzen auf saubere Luft, große Speicher und Grün an der Fassade",
+     "categorie": "Environment",
+     "dag": "2026-11-11",
+     "url": "https://brightnews.online/articles/de/stadte-setzen-auf-saubere-luft-gro-e-speicher-und-grun-an-der-fassade-dg-20261111-environment.html"
+    },
+    {
      "id": "dg-20261111-lifestyle",
      "titel": "Wiedergefundene Medaillen, von Nachbarn gerettet und hundert Jahre Spaziergang: die guten Nachrichten dieser Tage",
      "categorie": "Lifestyle",
@@ -215,13 +222,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-10",
      "url": "https://brightnews.online/articles/de/drei-geschichten-uber-das-einlosen-von-versprechen-helfen-und-zuruckkehren-dg-20261110-lifestyle.html"
-    },
-    {
-     "id": "dg-20261109-lifestyle",
-     "titel": "Fürsorge, Mut und ein cleveres AirTag: die guten Nachrichten der Woche",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-09",
-     "url": "https://brightnews.online/articles/de/fursorge-mut-und-ein-cleveres-airtag-die-guten-nachrichten-der-woche-dg-20261109-lifestyle.html"
     }
    ]
   },
@@ -244,12 +244,12 @@
      "url": "https://brightnews.online/articles/fr/100-poetes-ecrivent-un-recueil-sur-le-sans-abrisme-pour-une-bonne-cause-17944249637321olk07x2s.html"
     },
     {
-     "id": "17943389119158r0jm6tmv",
-     "titel": "Le flag football gagne rapidement en popularité chez les filles",
-     "teaser": "Le flag football, longtemps considéré comme une alternative au tackle football, gagne fortement en popularité chez les filles. Selon USA Football, la participation des filles âgées de 6 à 17 ans a augmenté de 57 % au cours de la dernière décennie, atteignant plus de 267 000 participants en 2024. En 2023, la California Interscholastic Federation a ajouté le flag...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/le-flag-football-gagne-rapidement-en-popularite-chez-les-filles-17943389119158r0jm6tmv.html"
+     "id": "1794512393169a6sm5uwey",
+     "titel": "La Chine met en service la plus grande batterie à air liquide du monde",
+     "teaser": "Dans la province chinoise du Qinghai, la plus grande centrale de démonstration mondiale de stockage d'énergie par air liquide (LAES) a été mise en service. L'installation utilise l'électricité verte pour comprimer l'air à une densité extrême, ce qui le rend liquide à environ -190°C. À la demande, le liquide est réchauffé, ce qui le fait rapidement se dilater en gaz...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/la-chine-met-en-service-la-plus-grande-batterie-a-air-liquide-du-monde-1794512393169a6sm5uwey.html"
     },
     {
      "id": "1794505697568p3w3b6tmd",
@@ -270,6 +270,13 @@
    ],
    "dagoverzichten": [
     {
+     "id": "dg-20261111-environment",
+     "titel": "Les villes optent pour un air pur, un stockage massif et de la verdure en façade",
+     "categorie": "Environment",
+     "dag": "2026-11-11",
+     "url": "https://brightnews.online/articles/fr/les-villes-optent-pour-un-air-pur-un-stockage-massif-et-de-la-verdure-en-facade-dg-20261111-environment.html"
+    },
+    {
      "id": "dg-20261111-lifestyle",
      "titel": "Des médailles retrouvées, sauvées par des voisins et cent ans de marche : les bonnes nouvelles de ces jours-ci",
      "categorie": "Lifestyle",
@@ -289,13 +296,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-10",
      "url": "https://brightnews.online/articles/fr/trois-histoires-de-promesses-tenues-d-aide-et-de-retour-dg-20261110-lifestyle.html"
-    },
-    {
-     "id": "dg-20261109-lifestyle",
-     "titel": "Soins, courage et une AirTag intelligente : les bonnes nouvelles de la semaine",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-09",
-     "url": "https://brightnews.online/articles/fr/soins-courage-et-une-airtag-intelligente-les-bonnes-nouvelles-de-la-semaine-dg-20261109-lifestyle.html"
     }
    ]
   },
@@ -318,12 +318,12 @@
      "url": "https://brightnews.online/articles/es/100-poetas-escriben-un-poemario-sobre-la-falta-de-vivienda-con-fines-beneficos-17944249637321olk07x2s.html"
     },
     {
-     "id": "17943389119158r0jm6tmv",
-     "titel": "El flag football crece rápidamente en popularidad entre las niñas",
-     "teaser": "El flag football, durante mucho tiempo considerado una alternativa al tackle football, gana fuerte popularidad entre las niñas. Según USA Football, la participación de niñas entre 6 y 17 años aumentó un 57% en la última década, llegando a más de 267.000 participantes en 2024. En 2023, la California Interscholastic Federation añadió el flag football femenino como deporte de secundaria,...",
-     "score": 10,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/el-flag-football-crece-rapidamente-en-popularidad-entre-las-ninas-17943389119158r0jm6tmv.html"
+     "id": "1794512393169a6sm5uwey",
+     "titel": "China pone en marcha la mayor batería de aire líquido del mundo",
+     "teaser": "En la provincia china de Qinghai se ha puesto en funcionamiento la mayor central de demostración mundial de almacenamiento de energía de aire líquido (LAES). La instalación utiliza electricidad verde para comprimir aire hasta una densidad extrema, tras lo cual se vuelve líquido a aproximadamente -190°C. Cuando hay demanda, el líquido se calienta nuevamente, lo que hace que se expanda...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/china-pone-en-marcha-la-mayor-bateria-de-aire-liquido-del-mundo-1794512393169a6sm5uwey.html"
     },
     {
      "id": "1794505697568p3w3b6tmd",
@@ -344,6 +344,13 @@
    ],
    "dagoverzichten": [
     {
+     "id": "dg-20261111-environment",
+     "titel": "Las ciudades apuestan por aire limpio, almacenamiento masivo y verde en las fachadas",
+     "categorie": "Environment",
+     "dag": "2026-11-11",
+     "url": "https://brightnews.online/articles/es/las-ciudades-apuestan-por-aire-limpio-almacenamiento-masivo-y-verde-en-las-facha-dg-20261111-environment.html"
+    },
+    {
      "id": "dg-20261111-lifestyle",
      "titel": "Medallas reunidas, salvadas por vecinos y cien años caminando: las buenas noticias de estos días",
      "categorie": "Lifestyle",
@@ -363,13 +370,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-10",
      "url": "https://brightnews.online/articles/es/tres-historias-sobre-cumplir-promesas-ayudar-y-volver-dg-20261110-lifestyle.html"
-    },
-    {
-     "id": "dg-20261109-lifestyle",
-     "titel": "Cuidado, coraje y un AirTag inteligente: las buenas noticias de la semana",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-09",
-     "url": "https://brightnews.online/articles/es/cuidado-coraje-y-un-airtag-inteligente-las-buenas-noticias-de-la-semana-dg-20261109-lifestyle.html"
     }
    ]
   }

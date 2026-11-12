@@ -1,5 +1,48 @@
 [
   {
+    "id": "dg-20261111-environment",
+    "type": "digest",
+    "digest_date": "2026-11-11",
+    "title": "Las ciudades apuestan por aire limpio, almacenamiento masivo y verde en las fachadas",
+    "summary": "Esta semana demuestra que el clima avanza en múltiples frentes. Una ciudad elimina el petróleo de su futuro de forma definitiva, China pone en funcionamiento un enorme almacenamiento de energía y un artista muestra cómo el musgo puede mantener las ciudades frescas. Tres historias diferentes, pero todas con el mismo objetivo: menos contaminación y ciudades más habitables. En Los Ángeles, el consejo municipal votó el 28 de octubre a favor de una ordenanza que prohíbe completamente la extracción de petróleo dentro de los límites de la ciudad [1]. No se permiten nuevas perforaciones, los pozos existentes no pueden profundizarse más...",
+    "image_alt": "Las ciudades apuestan por aire limpio, almacenamiento masivo y verde en las fachadas",
+    "meta_description": "Los Ángeles prohíbe el petróleo, China abre una enorme batería de aire y el musgo enfría las ciudades: las noticias climáticas de estos días resumidas.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/oil-pump-jack-city-limits-Depositphotos_199434004_S.jpg",
+    "date": "2026-11-12T19:41:23.413Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1794463996470mjxfozzef",
+        "title": "Los Angeles prohíbe definitivamente la extracción de petróleo"
+      },
+      {
+        "id": "1794512393169a6sm5uwey",
+        "title": "China pone en marcha la mayor batería de aire líquido del mundo"
+      },
+      {
+        "id": "1794500748712egh3itfz6",
+        "title": "El musgrafiti de Wallisfurth muestra el potencial del musgo como refrigeración urbana"
+      }
+    ]
+  },
+  {
+    "id": "1794512393169a6sm5uwey",
+    "title": "China pone en marcha la mayor batería de aire líquido del mundo",
+    "summary": "En la provincia china de Qinghai se ha puesto en funcionamiento la mayor central de demostración mundial de almacenamiento de energía de aire líquido (LAES). La instalación utiliza electricidad verde para comprimir aire hasta una densidad extrema, tras lo cual se vuelve líquido a aproximadamente -190°C. Cuando hay demanda, el líquido se calienta nuevamente, lo que hace que se expanda...",
+    "image_alt": "Gran instalación industrial para almacenamiento de energía de aire líquido en la provincia de Qinghai, China",
+    "meta_description": "China inaugura la mayor central de almacenamiento de energía de aire líquido del mundo en Qinghai: 600MWh de almacenamiento de electricidad verde a bajo costo.",
+    "meta_keywords": "almacenamiento de aire líquido, LAES, China, Qinghai, energía verde, almacenamiento de energía, energía renovable, almacenamiento en baterías",
+    "link": "https://www.goodnewsnetwork.org/worlds-largest-liquid-air-renewable-energy-storage-system-switches-on/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Qinghai-60MW-Liquid-Air-Energy-Storage-Project-credit-China-Green-Development-Investment-Group.jpg",
+    "date": "2026-11-12T19:39:55.526Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
     "id": "dg-20261111-lifestyle",
     "type": "digest",
     "digest_date": "2026-11-11",
@@ -2497,34 +2540,6 @@
     "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4153x2336+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fbe%2F12%2F29a56b2f41deabc5b8f65805d9f9%2Fgettyimages-2298077242.jpg",
     "date": "2026-10-01T18:14:24.911Z",
     "category": "Science",
-    "score": 8
-  },
-  {
-    "id": "1790878440611g98ouvpus",
-    "title": "Backpack gana Fat Bear Week y Google lo celebra con una animación",
-    "summary": "El oso Backpack ha ganado Fat Bear Week, el torneo en línea anual del Katmai National Park and Reserve en Alaska que desde 2014 atrae atención hacia la conservación de la naturaleza y atrae espectadores a las cámaras en directo del parque. Dieciséis grandes osos pardos compitieron en un sistema de eliminación directa, donde semanalmente el oso más popular avanzaba...",
-    "image_alt": "Un oso pardo gordo está de pie en el Brooks River en Katmai National Park, Alaska",
-    "meta_description": "Backpack gana Fat Bear Week 2024 en Alaska; Google honra el evento con una divertida animación interactiva.",
-    "meta_keywords": "Fat Bear Week, Backpack, Katmai National Park, oso pardo, Alaska, animación Google, conservación de la naturaleza, Brooks River",
-    "link": "https://www.goodgoodgood.co/articles/fat-bear-week-google-animation",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abd55a93ab2f53f35e97472_6abd55a801e452c3e7ee7738_fat-bear-week-google-animation-featured.webp",
-    "date": "2026-10-01T18:14:01.590Z",
-    "category": "Environment",
-    "score": 8
-  },
-  {
-    "id": "1790878410748ijywqyc55",
-    "title": "La tortuga Pickett recupera su color natural tras ser pintada de azul",
-    "summary": "En Campbellsville, Kentucky, la residente Venitia encontró una Eastern box turtle con una gruesa capa de pintura azul brillante en su caparazón en su nuevo patio trasero. Una vecina le contó que el anterior propietario había pintado deliberadamente a la tortuga, así como a otras tortugas, en rojo y blanco. Venitia llevó el animal al Wilderness Trail Wildlife Center en...",
-    "image_alt": "Una Eastern box turtle con el caparazón cubierto de pintura azul brillante, fotografiada durante la rehabilitación en un centro de vida silvestre.",
-    "meta_description": "La tortuga Pickett fue encontrada pintada de azul en Kentucky; expertos trabajan cuidadosamente en restaurar su camuflaje natural.",
-    "meta_keywords": "tortuga, Eastern box turtle, Kentucky, bienestar animal, rehabilitación de vida silvestre, eliminación de pintura, camuflaje",
-    "link": "https://www.goodgoodgood.co/articles/turtle-blue-painted-shell-rescued-kentucky",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abe9157ef01e1e620632c94_6abe915748eb306a277f0d66_turtle-blue-painted-shell-rescued-kentucky-featured.webp",
-    "date": "2026-10-01T18:13:32.210Z",
-    "category": "Environment",
     "score": 8
   }
 ]

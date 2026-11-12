@@ -6,13 +6,29 @@
         <atom:link href="https://brightnews.online/feed-en.xml" rel="self" type="application/rss+xml"/>
         <description>A fresh pick of good news from around the world, every day. Enjoy the read!</description>
         <language>en-us</language>
-        <lastBuildDate>Thu, 12 Nov 2026 17:49:29 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Nov 2026 19:41:23 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Your Daily Dose of Positivity</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Cities choose clean air, massive storage and green on the facade</title>
+            <link>https://brightnews.online/articles/en/cities-choose-clean-air-massive-storage-and-green-on-the-facade-dg-20261111-environment.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/cities-choose-clean-air-massive-storage-and-green-on-the-facade-dg-20261111-environment.html</guid>
+            <pubDate>Thu, 12 Nov 2026 19:41:23 GMT</pubDate>
+            <description>This week shows that climate progress is being made on multiple fronts. One city is phasing out oil for good, China is putting a massive power storage facility into operation, and an artist is demonstrating how moss can keep cities cool. Three different stories, but all with the same goal: less pollution and more livable cities. In Los Angeles, the city council voted on October 28 in favor of an o</description>
+            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/oil-pump-jack-city-limits-Depositphotos_199434004_S.jpg" type="image/jpeg" length="0"/>
+        </item>
+        <item>
+            <title>China switches on world&apos;s largest liquid-air battery</title>
+            <link>https://brightnews.online/articles/en/china-switches-on-world-s-largest-liquid-air-battery-1794512393169a6sm5uwey.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/china-switches-on-world-s-largest-liquid-air-battery-1794512393169a6sm5uwey.html</guid>
+            <pubDate>Thu, 12 Nov 2026 19:39:55 GMT</pubDate>
+            <description>In China&apos;s Qinghai province, the world&apos;s largest demonstration facility for liquid-air energy storage (LAES) has been put into operation. The installation uses green electricity to compress air to extreme density, after which it becomes liquid at approximately -190°C. When demand arises, the liquid is reheated, causing it to rapidly expand into gas and drive a turbine that feeds electricity back..</description>
+            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Qinghai-60MW-Liquid-Air-Energy-Storage-Project-credit-China-Green-Development-Investment-Group.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Reunited medals, rescued by neighbors and a hundred years of walking: the good news of these days</title>
             <link>https://brightnews.online/articles/en/reunited-medals-rescued-by-neighbors-and-a-hundred-years-of-walking-the-good-new-dg-20261111-lifestyle.html</link>
@@ -236,22 +252,6 @@
             <pubDate>Sun, 08 Nov 2026 17:45:11 GMT</pubDate>
             <description>A parakeet named Luna has been reunited with her owner after flying away when storm Boelo blew open a kitchen window in Northampton, England. A passing motorist spotted the little bird hopping in a roadside drain and alerted the RSPCA. Inspector Richard Durant and trainee Rosie Cowie attended the scene and found Luna&apos;s beak, chirping from a pipe in the...</description>
             <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Bird-rescued-from-sewer-pipe-RSPCA-and-SWNS.jpeg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Perseverers and dreamers: the news that captured hearts this week</title>
-            <link>https://brightnews.online/articles/en/perseverers-and-dreamers-the-news-that-captured-hearts-this-week-dg-20261106-lifestyle.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/perseverers-and-dreamers-the-news-that-captured-hearts-this-week-dg-20261106-lifestyle.html</guid>
-            <pubDate>Sat, 07 Nov 2026 17:34:53 GMT</pubDate>
-            <description>Sometimes it seems life gives everyone the same chance, but this week&apos;s stories tell a different tale: people who found their own path, no matter how long or winding it was. From a ranch in Montana to the streets of Hull and a film set about a boxer no one saw coming, it&apos;s always about perseverance and finding a place where you&apos;re seen. In Montana, near Yellowstone National Park, Erik&apos;s Ranch &amp; Re</description>
-            <enclosure url="https://reasonstobecheerful.world/wp-content/uploads/2026/10/EriksRanch-010-scaled.jpeg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Karl Bushby embraces mother after 28 years walking around the world</title>
-            <link>https://brightnews.online/articles/en/karl-bushby-embraces-mother-after-28-years-walking-around-the-world-1794072836263vh3ooew93.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/karl-bushby-embraces-mother-after-28-years-walking-around-the-world-1794072836263vh3ooew93.html</guid>
-            <pubDate>Sat, 07 Nov 2026 17:33:59 GMT</pubDate>
-            <description>British adventurer Karl Bushby has returned to his birthplace Hull after 28 years, where he embraced his tearful mother Angela. The former parachutist set out in 1998 on a 31,000-mile journey through 30 countries, entirely on foot. Along the way, he braved the Darien Gap, was arrested in Russia and swam 170 miles across the Caspian Sea from Kazakhstan to...</description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Karl-Bushby-reunites-with-mom-after-walking-around-world-–-SWNS.jpeg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>
