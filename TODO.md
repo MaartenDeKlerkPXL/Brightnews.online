@@ -598,6 +598,14 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      in. Voeg info@brightnews.online of een eigen adres toe onder Settings →
      Team en zet het factuuradres goed.
 
+- [ ] **82. Ná de lancering: een zoekfunctie.** *(Maarten, 2026-11-12, uit
+  de UX-review)* Er staan 4.000+ artikelen op de site, maar wie "dat verhaal
+  over die bever" zoekt, kan alleen per datum bladeren. Eenvoudigste vorm: een
+  zoekveld dat zoekt in de titels uit `articles/manifest.json` (al per taal
+  aanwezig, geen server nodig), met de resultaten als koppenlijst. Eerst met
+  een paar lezers testen of ze er echt om vragen, en waar ze het verwachten
+  (in de header of op Archief).
+
 - [ ] **77. Ná de lancering: welke accounts hangen nog aan het studentenadres?**
   *(Maarten, 2026-11-12)* Resend staat op 12401091@student.pxl.be (punt
   76). Loop alle diensten van BrightNews na en zet ze op een blijvend adres
