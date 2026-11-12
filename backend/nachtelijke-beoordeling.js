@@ -133,7 +133,18 @@ ${materiaal}
 </artikelen>`;
 
     const antwoord = await aiCall({ rol: 'beoordelen', prompt });
+    controleerStop(antwoord);
     return String(antwoord.tekst || '').trim();
+}
+
+// Alleen een volledig antwoord telt (end_turn). max_tokens = afgekapt of
+// alleen gedacht; refusal = geweigerd. Beide gaven eerder stil een lege tekst.
+function controleerStop(antwoord) {
+    if (!antwoord.stop || antwoord.stop === 'end_turn') return;
+    const uitleg = antwoord.stop === 'max_tokens'
+        ? 'Verhoog maxTokens of verlaag effort voor de rol beoordelen in backend/ai-adapter.js.'
+        : 'Kijk in het log welke inhoud de weigering uitlokte.';
+    throw new Error(`Antwoord gestopt met ${antwoord.stop} (${String(antwoord.tekst || '').length} tekens tekst). ${uitleg}`);
 }
 
 async function beoordeelVertaling(artikelNl, artikelVertaald, taal, opdracht) {
@@ -163,6 +174,7 @@ samenvatting: ${artikelVertaald.summary || ''}
 </vertaling>`;
 
     const antwoord = await aiCall({ rol: 'beoordelen', prompt });
+    controleerStop(antwoord);
     return String(antwoord.tekst || '').trim();
 }
 

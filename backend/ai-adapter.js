@@ -26,7 +26,13 @@ const CONFIG = {
         selectie: { model: 'claude-haiku-4-5', temperature: 0, maxTokens: 3000 },
         schrijven: { model: 'claude-sonnet-5', maxTokens: 4000 },
         vertalen: { model: 'claude-haiku-4-5', temperature: 0, maxTokens: 4000 },
-        beoordelen: { model: 'claude-sonnet-5', maxTokens: 8000 },
+        // Sonnet 5 denkt standaard na (adaptief, effort high) en dat denken
+        // telt mee in max_tokens. Met 8000 en ruim 100 artikelen ging het
+        // hele budget op aan denken en kwam er een leeg antwoord terug (de
+        // nachtelijke controle faalde zo van 7 t/m 11 november 2026).
+        // 16000 is de grens zonder streaming; effort medium houdt het denken
+        // binnen de perken.
+        beoordelen: { model: 'claude-sonnet-5', maxTokens: 16000, effort: 'medium' },
     },
     mistral: {
         selectie: { model: 'mistral-medium-latest', temperature: 0, maxTokens: 3000 },
@@ -63,11 +69,14 @@ async function callAnthropic(cfg, prompt) {
         model: cfg.model,
         max_tokens: cfg.maxTokens,
         ...(cfg.temperature !== undefined ? { temperature: cfg.temperature } : {}),
+        ...(cfg.effort ? { output_config: { effort: cfg.effort } } : {}),
         messages: [{ role: 'user', content: prompt }],
     });
     return {
         tekst: antwoord.content.map(b => (b.type === 'text' ? b.text : '')).join(''),
         tokens: (antwoord.usage?.input_tokens ?? 0) + (antwoord.usage?.output_tokens ?? 0),
+        // max_tokens betekent: afgekapt (of alleen gedacht, geen tekst).
+        stop: antwoord.stop_reason,
     };
 }
 
