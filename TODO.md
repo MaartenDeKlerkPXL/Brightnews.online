@@ -148,6 +148,40 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
 
 ## Blokkeert de lancering
 
+- [ ] **83. Feedback uit de UX-review (2026-11-12), in vier fases.** *(Maarten
+  en Claude)* Elke fase heeft een eigen branch en PR, wordt lokaal getest
+  (computer, mobiel, licht en donker) en pas na een live controle afgesloten;
+  fase 4 krijgt ook een review-ronde.
+  **Besluiten van Maarten:**
+  - de groene lijn onder het actieve menu-item blijft;
+  - het dagoverzicht gaat naar het blok "Gisteren";
+  - een dagoverzicht kost geen gratis artikel meer (Supabase, `lees_artikel`).
+  1. **Schil en navigatie:**
+     - menu-lijntjes alleen bij hover;
+     - header blijft zichtbaar bij scrollen;
+     - overal "Onderwerpen" (de zes rubrieken) en "Weekthema's" (de weekpagina's), in vijf talen;
+     - op categoriepagina's bovenaan ook een onderwerpkeuze;
+     - nakijken of Contact de knoppen in de header niet onnodig verbergt.
+  2. **Home:**
+     - een korte introzin bovenaan die meescrollt (niet vast);
+     - foto's bij de verhalen van gisteren;
+     - een zonnetje bij "Je bent helemaal bij";
+     - het dagoverzicht in het blok "Gisteren".
+  3. **Artikel, paywall en teksten:**
+     - een vaste plek voor de paywall (geen verspringen);
+     - op Premium precies zeggen wat gratis is;
+     - de tekst bij het vinkje verduidelijken;
+     - de koppen in het archief worden links;
+     - "1 bron" in plaats van "1 bronnen";
+     - het mailadres onder het contactformulier;
+     - het dagoverzicht kost geen tegoed meer.
+  4. **Pipeline:**
+     - het dagoverzicht alleen met verhalen van die dag, en de daggrens in Nederlandse tijd (nu 3 dagen en UTC);
+     - één dagoverzicht per dag;
+     - geen datum in de lopende tekst (`digest-prompt.md`);
+     - Nederlandse titels in zinsstijl (selectie- en vertaalprompt);
+     - directe links naar de artikelpagina's (TODO 78).
+
 - [ ] **80. Branding vóór de lancering: favicon, deelafbeelding en sociale
   media in de v5-stijl.** *(Maarten, 2026-11-12)* De site is v5, maar wat
   eromheen hangt nog niet overal:
