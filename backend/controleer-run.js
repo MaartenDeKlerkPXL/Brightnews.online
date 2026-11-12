@@ -13,7 +13,13 @@
 const fs = require('fs');
 const path = require('path');
 
-const MAX_DAGEN_ZONDER_ARTIKEL = 3;
+// 24 uur (TODO 69.1, planning 16 november; was 3 dagen). Met twee runs per
+// dag en ±20% runs zonder artikel gaat dit ongeveer eens per maand af op een
+// rustige dag; dat is de prijs voor een storing die binnen een dag opvalt in
+// plaats van na drie. Let op: GitHub mailt een mislukte geplande run naar
+// wie de cron-regel het laatst wijzigde. In oktober 2026 faalden 55 runs en
+// zag niemand het (TODO 69: de meldingen naar het juiste adres laten gaan).
+const MAX_DAGEN_ZONDER_ARTIKEL = 1;
 
 function lees(bestand) {
     const pad = path.join(__dirname, '..', 'data', bestand);

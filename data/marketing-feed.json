@@ -1,27 +1,342 @@
 {
- "gegenereerd": "2026-10-29T04:50:06.225Z",
+ "gegenereerd": "2026-11-12T06:13:19.936Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
-   "top": [],
-   "dagoverzichten": []
+   "top": [
+    {
+     "id": "1794463996470mjxfozzef",
+     "titel": "Los Angeles verbiedt oliewinning definitief",
+     "teaser": "Na meer dan tien jaar actievoeren door bewoners heeft de gemeenteraad van Los Angeles op 28 oktober ingestemd met een verordening die oliewinning binnen de stadsgrenzen verbiedt. Nieuwe boringen zijn per direct verboden, bestaande putten mogen niet dieper geboord of opnieuw aangeboord worden, en alle actieve operaties moeten binnen twintig jaar volledig afgebouwd zijn. Los Angeles is daarmee de grootste...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/los-angeles-verbiedt-oliewinning-definitief-1794463996470mjxfozzef.html"
+    },
+    {
+     "id": "17944249637321olk07x2s",
+     "titel": "100 dichters schrijven bundel over dakloosheid voor goed doel",
+     "teaser": "Dichter Andrew Mears uit het noordoosten van Engeland, een regio met de hoogste dakloosheidscijfers van het land, kreeg in 2025 het idee om 100 schrijvers te vragen elk een gedicht over dakloosheid te schrijven. De gedichten werden gebundeld in de zelf uitgegeven bloemlezing 'Words on a NE Street'. Tegen Kerstmis had Mears genoeg exemplaren verkocht om £4.200 te doneren aan...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/100-dichters-schrijven-bundel-over-dakloosheid-voor-goed-doel-17944249637321olk07x2s.html"
+    },
+    {
+     "id": "17943389119158r0jm6tmv",
+     "titel": "Flag football groeit snel in populariteit onder meisjes",
+     "teaser": "Flag football, lang gezien als alternatief voor tackle football, wint sterk aan populariteit bij meisjes. Volgens USA Football steeg de deelname van meisjes tussen 6 en 17 jaar de afgelopen tien jaar met 57%, naar ruim 267.000 deelnemers in 2024. In 2023 voegde de California Interscholastic Federation meisjes flag football toe als middelbare schoolsport, en in 2028 debuteert de sport...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/flag-football-groeit-snel-in-populariteit-onder-meisjes-17943389119158r0jm6tmv.html"
+    },
+    {
+     "id": "1794424942669ry7xjuj33",
+     "titel": "Verlamde pianiste (84) houdt belofte aan verpleeghuis Bryn Mawr Village",
+     "teaser": "Bonnie Fay (84) kwam als patiënt naar Bryn Mawr Village nursing home in Pennsylvania, verlamd door het syndroom van Guillain-Barré. Tijdens haar moeizame herstel vond ze troost in pianospelen, iets wat ze al sinds haar zevende deed. Ze beloofde zichzelf ooit terug te komen om er te spelen. Die belofte maakt ze nu waar: ze speelt regelmatig piano voor bewoners...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/verlamde-pianiste-84-houdt-belofte-aan-verpleeghuis-bryn-mawr-village-1794424942669ry7xjuj33.html"
+    },
+    {
+     "id": "1794424918029ogfmvv8rv",
+     "titel": "Scheepvaartstudent redt vader en zoon van verdrinking",
+     "teaser": "Een cadet van de California Polytechnic State University Marine Academy heeft een vader en zijn 25-jarige zoon gered van verdrinking in een zwembad in Foster City, Californië. Zion Jerge hoorde geschreeuw en rende naar een appartementencomplex, waar hij over een hek sprong en het water in dook. Hij trok eerst de vader uit het water, die hij drijvend aantrof, en...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/scheepvaartstudent-redt-vader-en-zoon-van-verdrinking-1794424918029ogfmvv8rv.html"
+    }
+   ],
+   "dagoverzichten": [
+    {
+     "id": "dg-20261110-environment",
+     "titel": "Beren, bloemen en een plan: drie tekenen van herstel op aarde",
+     "categorie": "Environment",
+     "dag": "2026-11-10",
+     "url": "https://brightnews.online/articles/nl/beren-bloemen-en-een-plan-drie-tekenen-van-herstel-op-aarde-dg-20261110-environment.html"
+    },
+    {
+     "id": "dg-20261110-lifestyle",
+     "titel": "Drie verhalen over beloftes houden, helpen en terugkomen",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-10",
+     "url": "https://brightnews.online/articles/nl/drie-verhalen-over-beloftes-houden-helpen-en-terugkomen-dg-20261110-lifestyle.html"
+    },
+    {
+     "id": "dg-20261109-lifestyle",
+     "titel": "Zorg, moed en een slimme AirTag: het goede nieuws van de week",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-09",
+     "url": "https://brightnews.online/articles/nl/zorg-moed-en-een-slimme-airtag-het-goede-nieuws-van-de-week-dg-20261109-lifestyle.html"
+    }
+   ]
   },
   "en": {
-   "top": [],
-   "dagoverzichten": []
+   "top": [
+    {
+     "id": "1794463996470mjxfozzef",
+     "titel": "Los Angeles bans oil drilling permanently",
+     "teaser": "After more than a decade of activism by residents, the Los Angeles City Council voted on October 28 in favor of an ordinance that prohibits oil drilling within city limits. New wells are banned immediately, existing wells cannot be drilled deeper or re-drilled, and all active operations must be completely shut down within twenty years. Los Angeles is now the...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/los-angeles-bans-oil-drilling-permanently-1794463996470mjxfozzef.html"
+    },
+    {
+     "id": "17944249637321olk07x2s",
+     "titel": "100 poets write anthology on homelessness for charity",
+     "teaser": "Poet Andrew Mears from northeast England, a region with the country's highest homelessness rates, came up with the idea in 2025 to ask 100 writers to each write a poem about homelessness. The poems were collected in the self-published anthology 'Words on a NE Street'. By Christmas, Mears had sold enough copies to donate £4,200 to Newcastle Helping Street Friends,...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/100-poets-write-anthology-on-homelessness-for-charity-17944249637321olk07x2s.html"
+    },
+    {
+     "id": "17943389119158r0jm6tmv",
+     "titel": "Flag football surges in popularity among girls",
+     "teaser": "Flag football, long seen as an alternative to tackle football, is gaining strong popularity among girls. According to USA Football, participation by girls aged 6 to 17 has risen 57% over the past decade, reaching over 267,000 participants in 2024. In 2023, the California Interscholastic Federation added girls flag football as a high school sport, and in 2028 the sport...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/flag-football-surges-in-popularity-among-girls-17943389119158r0jm6tmv.html"
+    },
+    {
+     "id": "1794424942669ry7xjuj33",
+     "titel": "Paralyzed pianist (84) keeps promise to Bryn Mawr Village nursing home",
+     "teaser": "Bonnie Fay (84) arrived as a patient at Bryn Mawr Village nursing home in Pennsylvania, paralyzed by Guillain-Barré syndrome. During her difficult recovery, she found solace in playing piano, something she had done since age seven. She promised herself she would one day return to play there. Now she is making good on that promise: she plays piano regularly for...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/paralyzed-pianist-84-keeps-promise-to-bryn-mawr-village-nursing-home-1794424942669ry7xjuj33.html"
+    },
+    {
+     "id": "1794424918029ogfmvv8rv",
+     "titel": "Maritime student rescues father and son from drowning",
+     "teaser": "A cadet from the California Polytechnic State University Marine Academy rescued a father and his 25-year-old son from drowning in a swimming pool in Foster City, California. Zion Jerge heard screaming and ran to an apartment complex, where he jumped over a fence and dove into the water. He first pulled the father out of the water, whom he found...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/maritime-student-rescues-father-and-son-from-drowning-1794424918029ogfmvv8rv.html"
+    }
+   ],
+   "dagoverzichten": [
+    {
+     "id": "dg-20261110-environment",
+     "titel": "Bears, flowers and a plan: three signs of recovery on Earth",
+     "categorie": "Environment",
+     "dag": "2026-11-10",
+     "url": "https://brightnews.online/articles/en/bears-flowers-and-a-plan-three-signs-of-recovery-on-earth-dg-20261110-environment.html"
+    },
+    {
+     "id": "dg-20261110-lifestyle",
+     "titel": "Three stories about keeping promises, helping and coming back",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-10",
+     "url": "https://brightnews.online/articles/en/three-stories-about-keeping-promises-helping-and-coming-back-dg-20261110-lifestyle.html"
+    },
+    {
+     "id": "dg-20261109-lifestyle",
+     "titel": "Care, courage and a clever AirTag: the week's good news",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-09",
+     "url": "https://brightnews.online/articles/en/care-courage-and-a-clever-airtag-the-week-s-good-news-dg-20261109-lifestyle.html"
+    }
+   ]
   },
   "de": {
-   "top": [],
-   "dagoverzichten": []
+   "top": [
+    {
+     "id": "1794463996470mjxfozzef",
+     "titel": "Los Angeles verbietet Ölförderung endgültig",
+     "teaser": "Nach mehr als zehn Jahren Aktivismus von Anwohnern hat der Stadtrat von Los Angeles am 28. Oktober einer Verordnung zugestimmt, die Ölförderung innerhalb der Stadtgrenzen verbietet. Neue Bohrungen sind sofort untersagt, bestehende Bohrlöcher dürfen nicht tiefer gebohrt oder erneut angebohrt werden, und alle aktiven Operationen müssen innerhalb von zwanzig Jahren vollständig eingestellt werden. Los Angeles ist damit die größte Stadt...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/los-angeles-verbietet-olforderung-endgultig-1794463996470mjxfozzef.html"
+    },
+    {
+     "id": "17944249637321olk07x2s",
+     "titel": "100 Dichter schreiben Gedichtsammlung über Obdachlosigkeit für gemeinnützigen Zweck",
+     "teaser": "Der Dichter Andrew Mears aus Nordostengland, einer Region mit den höchsten Obdachlosenzahlen des Landes, hatte 2025 die Idee, 100 Schriftsteller zu bitten, jeweils ein Gedicht über Obdachlosigkeit zu schreiben. Die Gedichte wurden in der Eigenverlagsanthologie „Words on a NE Street\" zusammengefasst. Bis Weihnachten hatte Mears genug Exemplare verkauft, um £4.200 an Newcastle Helping Street Friends zu spenden, eine kleine Freiwilligenorganisation....",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/100-dichter-schreiben-gedichtsammlung-uber-obdachlosigkeit-fur-gemeinnutzigen-zw-17944249637321olk07x2s.html"
+    },
+    {
+     "id": "17943389119158r0jm6tmv",
+     "titel": "Flag Football wächst schnell an Popularität unter Mädchen",
+     "teaser": "Flag Football, lange als Alternative zu Tackle Football angesehen, gewinnt stark an Popularität bei Mädchen. Laut USA Football ist die Teilnahme von Mädchen zwischen 6 und 17 Jahren in den letzten zehn Jahren um 57 % gestiegen, auf über 267.000 Teilnehmer im Jahr 2024. 2023 fügte die California Interscholastic Federation Flag Football für Mädchen als Schulsport der Sekundarstufe hinzu, und...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/flag-football-wachst-schnell-an-popularitat-unter-madchen-17943389119158r0jm6tmv.html"
+    },
+    {
+     "id": "1794424942669ry7xjuj33",
+     "titel": "Gelähmte Pianistin (84) erfüllt Versprechen an Bryn Mawr Village",
+     "teaser": "Bonnie Fay (84) kam als Patientin ins Bryn Mawr Village Pflegeheim in Pennsylvania, gelähmt durch das Guillain-Barré-Syndrom. Während ihrer mühsamen Genesung fand sie Trost im Klavierspiel, das sie bereits seit ihrem siebten Lebensjahr betreibt. Sie versprach sich selbst, eines Tages zurückzukommen und dort zu spielen. Dieses Versprechen löst sie nun ein: Sie spielt regelmäßig Klavier für Bewohner, die sich von...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/gelahmte-pianistin-84-erfullt-versprechen-an-bryn-mawr-village-1794424942669ry7xjuj33.html"
+    },
+    {
+     "id": "1794424918029ogfmvv8rv",
+     "titel": "Schifffahrtsstudent rettet Vater und Sohn vor dem Ertrinken",
+     "teaser": "Ein Kadett der California Polytechnic State University Marine Academy hat einen Vater und seinen 25-jährigen Sohn vor dem Ertrinken in einem Schwimmbad in Foster City, Kalifornien, gerettet. Zion Jerge hörte Schreie und rannte zu einem Apartmentkomplex, wo er über einen Zaun sprang und ins Wasser tauchte. Er zog zunächst den Vater aus dem Wasser, den er treibend vorfand, und hörte...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/schifffahrtsstudent-rettet-vater-und-sohn-vor-dem-ertrinken-1794424918029ogfmvv8rv.html"
+    }
+   ],
+   "dagoverzichten": [
+    {
+     "id": "dg-20261110-environment",
+     "titel": "Bären, Blüten und ein Plan: drei Zeichen der Erholung auf der Erde",
+     "categorie": "Environment",
+     "dag": "2026-11-10",
+     "url": "https://brightnews.online/articles/de/baren-bluten-und-ein-plan-drei-zeichen-der-erholung-auf-der-erde-dg-20261110-environment.html"
+    },
+    {
+     "id": "dg-20261110-lifestyle",
+     "titel": "Drei Geschichten über das Einlösen von Versprechen, Helfen und Zurückkehren",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-10",
+     "url": "https://brightnews.online/articles/de/drei-geschichten-uber-das-einlosen-von-versprechen-helfen-und-zuruckkehren-dg-20261110-lifestyle.html"
+    },
+    {
+     "id": "dg-20261109-lifestyle",
+     "titel": "Fürsorge, Mut und ein cleveres AirTag: die guten Nachrichten der Woche",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-09",
+     "url": "https://brightnews.online/articles/de/fursorge-mut-und-ein-cleveres-airtag-die-guten-nachrichten-der-woche-dg-20261109-lifestyle.html"
+    }
+   ]
   },
   "fr": {
-   "top": [],
-   "dagoverzichten": []
+   "top": [
+    {
+     "id": "1794463996470mjxfozzef",
+     "titel": "Los Angeles interdit définitivement l'extraction pétrolière",
+     "teaser": "Après plus de dix ans de mobilisation citoyenne, le conseil municipal de Los Angeles a approuvé le 28 octobre une ordonnance interdisant l'extraction pétrolière dans les limites de la ville. Les nouveaux forages sont immédiatement interdits, les puits existants ne peuvent pas être approfondis ou réactivés, et toutes les opérations actives doivent être complètement fermées dans les vingt ans. Los...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/los-angeles-interdit-definitivement-l-extraction-petroliere-1794463996470mjxfozzef.html"
+    },
+    {
+     "id": "17944249637321olk07x2s",
+     "titel": "100 poètes écrivent un recueil sur le sans-abrisme pour une bonne cause",
+     "teaser": "Le poète Andrew Mears, originaire du nord-est de l'Angleterre, une région aux taux de sans-abrisme les plus élevés du pays, a eu l'idée en 2025 de demander à 100 écrivains d'écrire chacun un poème sur le sans-abrisme. Les poèmes ont été rassemblés dans une anthologie autoéditée intitulée « Words on a NE Street ». Avant Noël, Mears avait vendu suffisamment...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/100-poetes-ecrivent-un-recueil-sur-le-sans-abrisme-pour-une-bonne-cause-17944249637321olk07x2s.html"
+    },
+    {
+     "id": "17943389119158r0jm6tmv",
+     "titel": "Le flag football gagne rapidement en popularité chez les filles",
+     "teaser": "Le flag football, longtemps considéré comme une alternative au tackle football, gagne fortement en popularité chez les filles. Selon USA Football, la participation des filles âgées de 6 à 17 ans a augmenté de 57 % au cours de la dernière décennie, atteignant plus de 267 000 participants en 2024. En 2023, la California Interscholastic Federation a ajouté le flag...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/le-flag-football-gagne-rapidement-en-popularite-chez-les-filles-17943389119158r0jm6tmv.html"
+    },
+    {
+     "id": "1794424942669ry7xjuj33",
+     "titel": "Pianiste paralysée (84 ans) tient sa promesse à la maison de retraite Bryn Mawr Village",
+     "teaser": "Bonnie Fay (84 ans) est arrivée comme patiente à la maison de retraite Bryn Mawr Village en Pennsylvanie, paralysée par le syndrome de Guillain-Barré. Pendant sa convalescence difficile, elle a trouvé du réconfort en jouant du piano, une passion qu'elle cultive depuis l'âge de sept ans. Elle s'est promis de revenir un jour y jouer. Elle tient maintenant cette promesse...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/pianiste-paralysee-84-ans-tient-sa-promesse-a-la-maison-de-retraite-bryn-mawr-vi-1794424942669ry7xjuj33.html"
+    },
+    {
+     "id": "1794424918029ogfmvv8rv",
+     "titel": "Étudiant en navigation sauve un père et son fils de la noyade",
+     "teaser": "Un cadet de la California Polytechnic State University Marine Academy a sauvé un père et son fils âgé de 25 ans de la noyade dans une piscine à Foster City, en Californie. Zion Jerge a entendu des cris et s'est précipité vers un complexe d'appartements, où il a sauté par-dessus une clôture et s'est jeté à l'eau. Il a d'abord...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/etudiant-en-navigation-sauve-un-pere-et-son-fils-de-la-noyade-1794424918029ogfmvv8rv.html"
+    }
+   ],
+   "dagoverzichten": [
+    {
+     "id": "dg-20261110-environment",
+     "titel": "Des ours, des fleurs et un plan : trois signes de rétablissement sur terre",
+     "categorie": "Environment",
+     "dag": "2026-11-10",
+     "url": "https://brightnews.online/articles/fr/des-ours-des-fleurs-et-un-plan-trois-signes-de-retablissement-sur-terre-dg-20261110-environment.html"
+    },
+    {
+     "id": "dg-20261110-lifestyle",
+     "titel": "Trois histoires de promesses tenues, d'aide et de retour",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-10",
+     "url": "https://brightnews.online/articles/fr/trois-histoires-de-promesses-tenues-d-aide-et-de-retour-dg-20261110-lifestyle.html"
+    },
+    {
+     "id": "dg-20261109-lifestyle",
+     "titel": "Soins, courage et une AirTag intelligente : les bonnes nouvelles de la semaine",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-09",
+     "url": "https://brightnews.online/articles/fr/soins-courage-et-une-airtag-intelligente-les-bonnes-nouvelles-de-la-semaine-dg-20261109-lifestyle.html"
+    }
+   ]
   },
   "es": {
-   "top": [],
-   "dagoverzichten": []
+   "top": [
+    {
+     "id": "1794463996470mjxfozzef",
+     "titel": "Los Angeles prohíbe definitivamente la extracción de petróleo",
+     "teaser": "Tras más de diez años de activismo ciudadano, el consejo municipal de Los Angeles aprobó el 28 de octubre una ordenanza que prohíbe la extracción de petróleo dentro de los límites de la ciudad. Las nuevas perforaciones quedan prohibidas de inmediato, los pozos existentes no pueden profundizarse ni reabrirse, y todas las operaciones activas deben cerrarse completamente en el plazo...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/los-angeles-prohibe-definitivamente-la-extraccion-de-petroleo-1794463996470mjxfozzef.html"
+    },
+    {
+     "id": "17944249637321olk07x2s",
+     "titel": "100 poetas escriben un poemario sobre la falta de vivienda con fines benéficos",
+     "teaser": "El poeta Andrew Mears del noreste de Inglaterra, una región con las cifras más altas de falta de vivienda del país, tuvo la idea en 2025 de pedir a 100 escritores que escribieran cada uno un poema sobre la falta de vivienda. Los poemas se reunieron en la antología autopublicada «Words on a NE Street». Para Navidad, Mears había vendido...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/100-poetas-escriben-un-poemario-sobre-la-falta-de-vivienda-con-fines-beneficos-17944249637321olk07x2s.html"
+    },
+    {
+     "id": "17943389119158r0jm6tmv",
+     "titel": "El flag football crece rápidamente en popularidad entre las niñas",
+     "teaser": "El flag football, durante mucho tiempo considerado una alternativa al tackle football, gana fuerte popularidad entre las niñas. Según USA Football, la participación de niñas entre 6 y 17 años aumentó un 57% en la última década, llegando a más de 267.000 participantes en 2024. En 2023, la California Interscholastic Federation añadió el flag football femenino como deporte de secundaria,...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/el-flag-football-crece-rapidamente-en-popularidad-entre-las-ninas-17943389119158r0jm6tmv.html"
+    },
+    {
+     "id": "1794424942669ry7xjuj33",
+     "titel": "Pianista paralizada (84) cumple su promesa en la residencia Bryn Mawr Village",
+     "teaser": "Bonnie Fay (84) llegó como paciente a la residencia de enfermería Bryn Mawr Village en Pensilvania, paralizada por el síndrome de Guillain-Barré. Durante su difícil recuperación, encontró consuelo tocando piano, algo que hacía desde los siete años. Se prometió a sí misma que algún día volvería para tocar allí. Ahora cumple esa promesa: toca piano regularmente para los residentes que...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/pianista-paralizada-84-cumple-su-promesa-en-la-residencia-bryn-mawr-village-1794424942669ry7xjuj33.html"
+    },
+    {
+     "id": "1794424918029ogfmvv8rv",
+     "titel": "Estudiante de navegación salva a padre e hijo del ahogamiento",
+     "teaser": "Un cadete de la California Polytechnic State University Marine Academy rescató a un padre y su hijo de 25 años del ahogamiento en una piscina en Foster City, California. Zion Jerge escuchó gritos y corrió hacia un complejo de apartamentos, donde saltó una valla y se lanzó al agua. Primero sacó al padre del agua, a quien encontró flotando, y...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/estudiante-de-navegacion-salva-a-padre-e-hijo-del-ahogamiento-1794424918029ogfmvv8rv.html"
+    }
+   ],
+   "dagoverzichten": [
+    {
+     "id": "dg-20261110-environment",
+     "titel": "Osos, flores y un plan: tres señales de recuperación en la tierra",
+     "categorie": "Environment",
+     "dag": "2026-11-10",
+     "url": "https://brightnews.online/articles/es/osos-flores-y-un-plan-tres-senales-de-recuperacion-en-la-tierra-dg-20261110-environment.html"
+    },
+    {
+     "id": "dg-20261110-lifestyle",
+     "titel": "Tres historias sobre cumplir promesas, ayudar y volver",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-10",
+     "url": "https://brightnews.online/articles/es/tres-historias-sobre-cumplir-promesas-ayudar-y-volver-dg-20261110-lifestyle.html"
+    },
+    {
+     "id": "dg-20261109-lifestyle",
+     "titel": "Cuidado, coraje y un AirTag inteligente: las buenas noticias de la semana",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-09",
+     "url": "https://brightnews.online/articles/es/cuidado-coraje-y-un-airtag-inteligente-las-buenas-noticias-de-la-semana-dg-20261109-lifestyle.html"
+    }
+   ]
   }
  }
 }

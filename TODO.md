@@ -1509,32 +1509,83 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   lijst menuzinnen uit de review.
   *(Besluit Maarten 2026-09-27: doen, aantal later bepalen — 5 of 10.)*
 
-  > **Gebouwd, staat in [PR #15](https://github.com/MaartenDeKlerkPXL/Brightnews.online/pull/15)
-  > (2026-09-28).** Het aantal staat op **5**. Maarten heeft
-  > `supabase/metered-paywall-2026-09-28.sql` al gedraaid, dus zodra die PR
-  > gemerged is gaat het meteen aan. De volledige uitwerking staat in de PR
-  > en in de TODO op die branch; hieronder blijft de oorspronkelijke analyse
-  > staan. Eén aanname daaruit bleek niet te kloppen — zie de PR.
+  Een premium-artikel was volledig dicht tenzij je betaalde. Geen gratis
+  artikelen, geen teller. Vrijwel geen nieuwssite doet dat, en met reden:
+  niemand betaalt voor iets wat hij nooit gelezen heeft.
 
-  Nagekeken in `index.js`: een premium-artikel is volledig dicht tenzij je
-  betaalt. Geen gratis artikelen, geen teller.
+  **Nu: een gratis account leest 5 volledige artikelen per kalendermaand.**
 
-  **Vrijwel geen nieuwssite doet dat, en met reden: niemand betaalt voor iets
-  wat hij nooit gelezen heeft.** Het standaardmodel is metered — een aantal
-  artikelen per maand gratis, daarna de vraag. Dan heeft iemand het product al
-  gebruikt op het moment dat je om geld vraagt, en weet hij wat hij misloopt.
+  ### Waarom het tegoed niet in de browser kon
 
-  Bij een onbekend merk met één abonnee is dit waarschijnlijk **de enige
-  ingreep op deze lijst die de conversie echt verandert.**
+  Het oorspronkelijke punt zei: "een teller in `localStorage` is met één
+  privévenster omzeild, dat is bewust acceptabel". Bij het bouwen bleek die
+  afweging niet eens aan de orde. **De volledige tekst staat in
+  `articles_full` en komt nooit in de publieke JSON** — een teller in de
+  browser heeft dus niets om te ontgrendelen. Het tegoed moest naar dezelfde
+  plek waar de tekst vandaan komt. Bijvangst: een privévenster omzeilt hem
+  nu niet, want het tegoed hangt aan het account.
 
-  **Openstaand besluit (Maarten): 5 of 10 artikelen per maand.** Te bepalen
-  als er verkeer is; met de huidige cijfers is het gokken. Vuistregel: te laag
-  en niemand raakt gehecht, te hoog en niemand hoeft ooit te betalen.
+  ### Wat dat betekent voor niet-ingelogde bezoekers
 
-  **Let op bij het bouwen:** een teller in `localStorage` is met één
-  privévenster omzeild. Dat is bewust acceptabel bij dit model — het doel is
-  een drempel, geen slot. Wie hem echt wil omzeilen kan dat, en die had toch
-  niet betaald. *(Erik: het raakt de premium-logica.)*
+  Die houden wat ze hadden: de samenvatting van ~60 woorden. Wat verandert is
+  de **vraag** eronder. Waar iedereen eerst "Premium Content ✨ — Nu Upgraden"
+  kreeg, krijgt een anonieme bezoeker nu *"Lees dit artikel gratis — maak een
+  gratis account en lees elke maand 5 volledige artikelen. Geen
+  betaalgegevens nodig."*
+
+  **Dat is het echte werk van dit punt.** De trap is nu heel: lezer wordt
+  account (kleine stap, geen kaart), account wordt abonnee (na vijf artikelen
+  waarvan hij de waarde kent). Eerst stond er één hoge drempel waar nu twee
+  lage staan.
+
+  | Wie | Ziet |
+  |---|---|
+  | Premium | het volledige artikel, verder niets |
+  | Gratis account, tegoed over | het volledige artikel + een rustige regel: "Dit was artikel 3 van je 5 gratis artikelen deze maand" |
+  | Gratis account, tegoed op | samenvatting + "Je gratis artikelen zijn op" met de proefperiode als haak |
+  | Niet ingelogd | samenvatting + "Lees dit artikel gratis" met de accountknop |
+
+  ### Wat er ligt
+
+  | Bestand | Wat |
+  |---|---|
+  | `supabase/metered-paywall-2026-09-28.sql` | tabel `gelezen_artikelen`, en de functies `lees_artikel()`, `leestegoed()` en `gratis_artikelen_per_maand()` |
+  | `index.js` | roept `lees_artikel()` aan en vertakt op de status |
+  | `profiel.html` | toont de stand van deze maand bij een gratis account |
+  | `css/pages/artikel.css` | de leesmeter |
+  | `data/translations.js` | 9 nieuwe sleutels × 5 talen (326 → 335) |
+
+  ### Drie besluiten om te onthouden
+
+  1. **Hetzelfde artikel twee keer openen kost geen tweede tegoed.**
+     `(uid, artikel_id, maand)` is de primaire sleutel. Dat is geen coulance
+     maar noodzaak: anders raakt iemand die terugscrollt naar een artikel van
+     vanmorgen zijn maand kwijt.
+  2. **Een artikel zonder tekst in `articles_full` kost geen tegoed.** Bij het
+     archief van vóór de paywall valt niets te ontgrendelen, dus daar mag ook
+     niets voor worden afgeschreven.
+  3. **Valt `lees_artikel()` weg, dan zakt alles terug op het oude gedrag.**
+     Getest met een premiumlezer terwijl de RPC ontbreekt: die krijgt zijn
+     volledige artikel gewoon via `get_full_article()`. De site hoort niet
+     stuk te gaan omdat één functie in Supabase ontbreekt — en dat is precies
+     de toestand tussen het mergen en het draaien van de SQL.
+
+  ### Wat Maarten nog moet doen
+
+  **De SQL draaien.** Supabase → SQL Editor → inhoud van
+  `supabase/metered-paywall-2026-09-28.sql` → Run. Tot dat moment gedraagt de
+  site zich exact als voorheen.
+
+  **Het getal staat op 5.** Jouw keuze was "5 of 10, later bepalen". Ik heb 5
+  genomen omdat omhoog bijstellen als een cadeau voelt en omlaag bijstellen
+  als iets afnemen. Wijzigen is één cijfer in
+  `gratis_artikelen_per_maand()` en dat opnieuw draaien.
+
+  **Wat ik niet kon testen:** de SQL zelf — er staat geen Postgres op deze
+  machine. Getest zijn alle vijf de statussen in de front-end met een
+  nagebootste RPC, de terugval als de RPC ontbreekt (óók voor een
+  premiumlezer), en de profielregel bij zowel een gratis als een premium
+  account. *(Erik: de SQL is de helft die nog een paar ogen verdient.)*
 
 - [x] **60. Een welkomstreeks na registratie — draait live (2026-09-28).**
   *(Besluit Maarten 2026-09-27: doen.)*
@@ -1704,6 +1755,83 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   Wat hierna nog open zou staan is een eigen mail met BrightNews-opmaak in
   plaats van Stripe's standaardmail. Dat is een luxe-versie van iets wat dan al
   werkt, en het kan later mee met de verzenddienst uit punt 60 — niet nu.
+
+- [x] **65. De scraper las het menu in plaats van het artikel (2026-09-29).**
+
+  Het W40-rapport adviseerde zeven bronnen met 0% acceptatie te schrappen.
+  **Dat advies was voor de helft fout**, en dat is de moeite waard om te
+  bewaren: het las één week met steekproeven van drie of vier items.
+  `data/selectie-log.json` (300 beoordelingen) zegt iets anders.
+
+  | Bron | W40 | Over 300 beoordelingen |
+  |---|---|---|
+  | ReasonsToBeCheerful | 0% | **8 van 17 = 47%** |
+  | Theecologist | 0% | 4 van 13 = 31% |
+  | Openaccessgovernment | 0% | 2 van 23 = 9% |
+  | Sciencenews | 0% | 0 van 13 |
+  | Squirrel-News | 0% | 0 van 8 |
+
+  ReasonsToBeCheerful is over de hele periode een van de **beste** bronnen.
+  Het advies opvolgen zou hem hebben weggegooid op drie ongelukkige items.
+
+  ### De echte vondst
+
+  Bij Sciencenews waren **12 van de 13 afwijzingen "te-weinig-inhoud"**, bij
+  NPR 9 van de 32. Dat is geen redactioneel oordeel maar een technisch
+  gebrek, en nameten liet zien wat er misging:
+
+  ```
+  Sciencenews → "Skip to content Subscribe today Every print subscription…"
+  NPR         → "Accessibility links Skip to main content Keyboard shortcuts…"
+  ```
+
+  **De scraper haalde 1.200 tekens navigatiemenu op en gaf dát aan het
+  selectiemodel.** Dat model deed precies wat het moest: het zag geen verhaal
+  en wees af. De schuld lag drie stappen eerder.
+
+  Dit is de rest van bevinding 4 uit `backend/selectie-prompt-analyse.md`. De
+  reparatie van 2026-09-10 haalde scripts en styles weg — echt, maar niet
+  genoeg, en het log liep dóór na die datum zonder verbetering.
+
+  ### Wat er veranderd is in `haalArtikelTekst()`
+
+  1. `<header>`, `<nav>`, `<footer>`, `<aside>` en `<form>` gaan eruit vóór
+     er naar alinea's wordt gezocht.
+  2. Staat er een `<article>` of `<main>`, dan wordt alléén daarin gekeken —
+     maar **de inhoudrijkste, niet de eerste.** NPR opent met een `<article>`
+     dat enkel de auteursnaam bevat; op "de eerste" zou je precies het
+     verkeerde blok kiezen. Er wordt gemeten op de som van de alinea's, want
+     een blok kan lang zijn van de opmaak en leeg van de tekst.
+  3. Een zwarte lijst van regels die nooit uit een artikel komen
+     ("skip to content", "subscribe today", "keyboard shortcuts"…).
+
+  **Nagemeten:** Sciencenews van menutekst naar 661 tekens echt artikel, NPR
+  naar 1.200. Daarnaast acht bronnen met de oude én de nieuwe functie naast
+  elkaar gezet op hun nieuwste artikel — Positive.News, GoodNewsNetwork,
+  GoodGoodGood, OptimistDaily, ReasonsToBeCheerful, Theecologist, BBC Culture
+  en Openaccessgovernment. **Alle acht identiek** (1200 tekens, bij
+  Positive.News 1199 tegen 1200). Er is dus niets gesneuveld dat het al deed.
+
+  ### En één bron is er wél uit
+
+  **Squirrel-News.net**: 8 van de 8 afgewezen, állemaal als "verzameleditie".
+  Dat is geen pech maar bouw — die site ís een linklijst-nieuwsbrief, en
+  BrightNews maakt eigen dagoverzichten. Hij kon dus nooit iets opleveren
+  terwijl hij elke run wel werd opgehaald en beoordeeld. Uitgecommentarieerd
+  met de reden erbij, niet verwijderd.
+
+  ### Wat dit voor de categoriescheefheid betekent
+
+  W40 telde **Environment 22 van de 44** tegenover Finance 1 en Tech 1. Die
+  scheefheid volgde uit de bronmix: GoodGoodGood en GoodNewsNetwork leverden
+  41 van de 44 en leunen allebei op milieu — juist omdat de
+  wetenschapsbronnen stelselmatig op een technisch gebrek uitvielen.
+  **Of dit de verdeling echt rechttrekt is een voorspelling, geen meting.**
+  Kijk bij W41 of Science en Tech omhoog gaan; zo niet, dan is het alsnog
+  redactioneel en hoort het in de prompt.
+
+  *(Erik: dit raakt `backend/processor.js`, dus het gaat als PR langs je. De
+  bronkeuze zelf — welke feeds erin horen — blijft een gezamenlijk besluit.)*
 
 - [x] **64. De site loopt niet helemaal goed op iPhone in Safari — drie fixes, daarna niets meer gevonden (2026-10-06).**
   *(Gemeld door Maarten, 2026-09-28.)*
