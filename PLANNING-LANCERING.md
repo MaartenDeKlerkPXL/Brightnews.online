@@ -142,8 +142,9 @@ via een PR. Laat die PR eerst nakijken door een review-agent
   66, punt 7), plus de staat "terug van Stripe".
 - ✅ (vervroegd naar 12 november) Bedankt koppelen: Premium ziet aangaan via de webhook (TODO 66, punt 12).
 - Getest met een nepversie van Supabase (alle staten) en de echte
-  Supabase zonder account. **Nog door Maarten:** in Stripe de doorstuurlink
-  van beide betaallinks naar Bedankt zetten, en één testrun in de testmodus
+  Supabase zonder account. ✅ *2026-11-12:* de betaallinks sturen door naar
+  `thanks.html`, die na de merge doorstuurt naar `bedankt.html` (`bedankt.html`
+  zelf bestaat vóór de merge nog niet live). Nog door Maarten: één testrun in de testmodus
   (testbetaallinks plus tijdelijk `STRIPE_ALLOW_TEST=true` op de webhook),
   of anders de echte kaarttest van 20 november.
 
@@ -190,7 +191,7 @@ via een PR. Laat die PR eerst nakijken door een review-agent
   List-Unsubscribe-header), en de vijf Supabase-sjablonen in
   `supabase/templates/` (gemaakt door `backend/maak-mailsjablonen.js`).
   ✅ *2026-11-12 15:19:* de sjablonen staan in Supabase (backup in
-  `vorige.json`). Nog: elke mail testen in nl en en.
+  `vorige.json`). Engels getest (inloglink werkt); Nederlands volgt (account op `nl` gezet).
   **Maarten:** de sjablonen in Supabase zetten: `SUPABASE_ACCESS_TOKEN=…
   node backend/maak-mailsjablonen.js --zet` (token van
   supabase.com/dashboard/account/tokens, alleen in je eigen terminal), of met
