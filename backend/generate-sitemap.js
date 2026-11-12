@@ -31,6 +31,7 @@ const PAGES = [
   { loc: '/archief.html', priority: '0.8' },
   { loc: '/over-ons.html', priority: '0.8' },
   { loc: '/zo-kiezen-we.html', priority: '0.6' },
+  { loc: '/themas.html', priority: '0.7' },
   { loc: '/abonnementen.html', priority: '0.8' },
   { loc: '/Privacy.html', priority: '0.3' },
   { loc: '/algemeene-voorwaarden.html', priority: '0.3' },

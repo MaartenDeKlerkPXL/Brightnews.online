@@ -103,7 +103,7 @@ function escapeAttr(s) {
 // varianten: { taal: pad } van dezelfde pagina in elke taal. Die worden de
 // hreflangs, en data-alt-{taal} op <body>: daarmee gaat een taalkeuze in het
 // instellingenpaneel naar die variant (js/v5/schil.js).
-function v5Pagina({ lang, titel, beschrijving, pad, varianten, ogType = 'website', ogImage, main, scripts = [] }) {
+function v5Pagina({ lang, titel, beschrijving, pad, varianten, ogType = 'website', ogImage, sectie = 'nieuws', main, scripts = [] }) {
     const SITE = 'https://brightnews.online';
     const { thema, header, footer } = leesSchilV5();
     const talen = Object.keys(varianten);
@@ -142,7 +142,7 @@ ${rss}
     <link rel="stylesheet" href="/css/v5/componenten.css">
     <link rel="stylesheet" href="/css/v5/paginas.css">
 </head>
-<body data-sectie="nieuws"${alt}>
+<body data-sectie="${sectie}"${alt}>
 ${vertaalSchil(header, lang)}
 
 <main id="inhoud">

@@ -125,7 +125,7 @@ ${andere}
         </div>
     </section>`;
 
-    return v5Pagina({ lang, titel, beschrijving, pad: varianten[lang], varianten, main });
+    return v5Pagina({ lang, titel, beschrijving, pad: varianten[lang], varianten, sectie: 'themas', main });
 }
 
 function main() {

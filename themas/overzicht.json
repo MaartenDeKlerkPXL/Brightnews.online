@@ -1,0 +1,222 @@
+{
+ "nl": [
+  {
+   "titel": "Lifestyle Verhalen Deze Week: Moed, Zorg En Gemeenschap",
+   "pad": "/themas/nl/lifestyle-verhalen-deze-week-moed-zorg-en-gemeenschap-2026-w46.html",
+   "datum": "2026-11-09",
+   "categorie": "Lifestyle"
+  },
+  {
+   "titel": "Lifestyle-nieuws: helden, hulp en hoop deze week",
+   "pad": "/themas/nl/lifestyle-nieuws-helden-hulp-en-hoop-deze-week-2026-w45.html",
+   "datum": "2026-11-02",
+   "categorie": "Lifestyle"
+  },
+  {
+   "titel": "Milieunieuws van de Week: Natuurherstel Wereldwijd",
+   "pad": "/themas/nl/milieunieuws-van-de-week-natuurherstel-wereldwijd-2026-w44.html",
+   "datum": "2026-10-30",
+   "categorie": "Environment"
+  },
+  {
+   "titel": "Positief Milieunieuws van deze Week: Bomen, Dieren en Recycling",
+   "pad": "/themas/nl/positief-milieunieuws-van-deze-week-bomen-dieren-en-recycling-2026-w40.html",
+   "datum": "2026-09-28",
+   "categorie": "Environment"
+  },
+  {
+   "titel": "Groen Nieuws Deze Week: Natuurherstel en Duurzame Doorbraken",
+   "pad": "/themas/nl/groen-nieuws-deze-week-natuurherstel-en-duurzame-doorbraken.html",
+   "datum": "2026-09-21",
+   "categorie": "Environment"
+  },
+  {
+   "titel": "Milieuhoop Deze Week: Natuur En Groene Innovatie",
+   "pad": "/themas/nl/milieuhoop-deze-week-natuur-en-groene-innovatie.html",
+   "datum": "2026-09-14",
+   "categorie": "Environment"
+  },
+  {
+   "titel": "Natuurherstel En Groene Energie: Het Milieunieuws Van Deze Week",
+   "pad": "/themas/nl/natuurherstel-en-groene-energie-het-milieunieuws-van-deze-week.html",
+   "datum": "2026-09-09",
+   "categorie": "Environment"
+  }
+ ],
+ "en": [
+  {
+   "titel": "Lifestyle Stories This Week: Courage, Care and Community",
+   "pad": "/themas/en/lifestyle-stories-this-week-courage-care-and-community-2026-w46.html",
+   "datum": "2026-11-09",
+   "categorie": "Lifestyle"
+  },
+  {
+   "titel": "Lifestyle news: heroes, help and hope this week",
+   "pad": "/themas/en/lifestyle-news-heroes-help-and-hope-this-week-2026-w45.html",
+   "datum": "2026-11-02",
+   "categorie": "Lifestyle"
+  },
+  {
+   "titel": "Environmental news of the week: Nature restoration worldwide",
+   "pad": "/themas/en/environmental-news-of-the-week-nature-restoration-worldwide-2026-w44.html",
+   "datum": "2026-10-30",
+   "categorie": "Environment"
+  },
+  {
+   "titel": "Positive environmental news this week: trees, animals and recycling",
+   "pad": "/themas/en/positive-environmental-news-this-week-trees-animals-and-recycling-2026-w40.html",
+   "datum": "2026-09-28",
+   "categorie": "Environment"
+  },
+  {
+   "titel": "Green News This Week: Nature Restoration and Sustainable Breakthroughs",
+   "pad": "/themas/en/green-news-this-week-nature-restoration-and-sustainable-breakthroughs.html",
+   "datum": "2026-09-21",
+   "categorie": "Environment"
+  },
+  {
+   "titel": "Environmental Hope This Week: Nature And Green Innovation",
+   "pad": "/themas/en/environmental-hope-this-week-nature-and-green-innovation.html",
+   "datum": "2026-09-14",
+   "categorie": "Environment"
+  },
+  {
+   "titel": "Nature Restoration And Green Energy: This Week's Environmental News",
+   "pad": "/themas/en/nature-restoration-and-green-energy-this-week-s-environmental-news.html",
+   "datum": "2026-09-09",
+   "categorie": "Environment"
+  }
+ ],
+ "de": [
+  {
+   "titel": "Lifestyle-Geschichten diese Woche: Mut, Fürsorge und Gemeinschaft",
+   "pad": "/themas/de/lifestyle-geschichten-diese-woche-mut-fursorge-und-gemeinschaft-2026-w46.html",
+   "datum": "2026-11-09",
+   "categorie": "Lifestyle"
+  },
+  {
+   "titel": "Lifestyle-Nachrichten: Helden, Hilfe und Hoffnung diese Woche",
+   "pad": "/themas/de/lifestyle-nachrichten-helden-hilfe-und-hoffnung-diese-woche-2026-w45.html",
+   "datum": "2026-11-02",
+   "categorie": "Lifestyle"
+  },
+  {
+   "titel": "Umweltnachrichten der Woche: Naturwiederherstellung weltweit",
+   "pad": "/themas/de/umweltnachrichten-der-woche-naturwiederherstellung-weltweit-2026-w44.html",
+   "datum": "2026-10-30",
+   "categorie": "Environment"
+  },
+  {
+   "titel": "Positive Umweltnachrichten dieser Woche: Bäume, Tiere und Recycling",
+   "pad": "/themas/de/positive-umweltnachrichten-dieser-woche-baume-tiere-und-recycling-2026-w40.html",
+   "datum": "2026-09-28",
+   "categorie": "Environment"
+  },
+  {
+   "titel": "Grüne Nachrichten diese Woche: Naturwiederherstellung und nachhaltige Durchbrüche",
+   "pad": "/themas/de/grune-nachrichten-diese-woche-naturwiederherstellung-und-nachhaltige-durchbruche.html",
+   "datum": "2026-09-21",
+   "categorie": "Environment"
+  },
+  {
+   "titel": "Umwelthoffnung Diese Woche: Natur Und Grüne Innovation",
+   "pad": "/themas/de/umwelthoffnung-diese-woche-natur-und-grune-innovation.html",
+   "datum": "2026-09-14",
+   "categorie": "Environment"
+  },
+  {
+   "titel": "Naturschutz Und Grüne Energie: Die Umweltnachrichten Der Woche",
+   "pad": "/themas/de/naturschutz-und-grune-energie-die-umweltnachrichten-der-woche.html",
+   "datum": "2026-09-09",
+   "categorie": "Environment"
+  }
+ ],
+ "fr": [
+  {
+   "titel": "Histoires de style de vie cette semaine : courage, bienveillance et communauté",
+   "pad": "/themas/fr/histoires-de-style-de-vie-cette-semaine-courage-bienveillance-et-communaute-2026-w46.html",
+   "datum": "2026-11-09",
+   "categorie": "Lifestyle"
+  },
+  {
+   "titel": "Actualités lifestyle : des héros, de l'aide et de l'espoir cette semaine",
+   "pad": "/themas/fr/actualites-lifestyle-des-heros-de-l-aide-et-de-l-espoir-cette-semaine-2026-w45.html",
+   "datum": "2026-11-02",
+   "categorie": "Lifestyle"
+  },
+  {
+   "titel": "Actualités environnementales de la semaine : restauration de la nature dans le monde",
+   "pad": "/themas/fr/actualites-environnementales-de-la-semaine-restauration-de-la-nature-dans-le-mon-2026-w44.html",
+   "datum": "2026-10-30",
+   "categorie": "Environment"
+  },
+  {
+   "titel": "Les bonnes nouvelles environnementales de cette semaine : arbres, animaux et recyclage",
+   "pad": "/themas/fr/les-bonnes-nouvelles-environnementales-de-cette-semaine-arbres-animaux-et-recycl-2026-w40.html",
+   "datum": "2026-09-28",
+   "categorie": "Environment"
+  },
+  {
+   "titel": "Actualités vertes cette semaine : restauration de la nature et avancées durables",
+   "pad": "/themas/fr/actualites-vertes-cette-semaine-restauration-de-la-nature-et-avancees-durables.html",
+   "datum": "2026-09-21",
+   "categorie": "Environment"
+  },
+  {
+   "titel": "Espoir Environnemental Cette Semaine : Nature Et Innovation Verte",
+   "pad": "/themas/fr/espoir-environnemental-cette-semaine-nature-et-innovation-verte.html",
+   "datum": "2026-09-14",
+   "categorie": "Environment"
+  },
+  {
+   "titel": "Restauration De La Nature Et Énergie Verte : Les Actualités Environnementales De Cette Semaine",
+   "pad": "/themas/fr/restauration-de-la-nature-et-energie-verte-les-actualites-environnementales-de-c.html",
+   "datum": "2026-09-09",
+   "categorie": "Environment"
+  }
+ ],
+ "es": [
+  {
+   "titel": "Historias de estilo de vida esta semana: valor, cuidado y comunidad",
+   "pad": "/themas/es/historias-de-estilo-de-vida-esta-semana-valor-cuidado-y-comunidad-2026-w46.html",
+   "datum": "2026-11-09",
+   "categorie": "Lifestyle"
+  },
+  {
+   "titel": "Noticias de estilo de vida: héroes, ayuda y esperanza esta semana",
+   "pad": "/themas/es/noticias-de-estilo-de-vida-heroes-ayuda-y-esperanza-esta-semana-2026-w45.html",
+   "datum": "2026-11-02",
+   "categorie": "Lifestyle"
+  },
+  {
+   "titel": "Noticias ambientales de la semana: restauración de la naturaleza en todo el mundo",
+   "pad": "/themas/es/noticias-ambientales-de-la-semana-restauracion-de-la-naturaleza-en-todo-el-mundo-2026-w44.html",
+   "datum": "2026-10-30",
+   "categorie": "Environment"
+  },
+  {
+   "titel": "Noticias ambientales positivas de esta semana: árboles, animales y reciclaje",
+   "pad": "/themas/es/noticias-ambientales-positivas-de-esta-semana-arboles-animales-y-reciclaje-2026-w40.html",
+   "datum": "2026-09-28",
+   "categorie": "Environment"
+  },
+  {
+   "titel": "Noticias verdes esta semana: restauración de la naturaleza e innovaciones sostenibles",
+   "pad": "/themas/es/noticias-verdes-esta-semana-restauracion-de-la-naturaleza-e-innovaciones-sosteni.html",
+   "datum": "2026-09-21",
+   "categorie": "Environment"
+  },
+  {
+   "titel": "Esperanza Ambiental Esta Semana: Naturaleza E Innovación Verde",
+   "pad": "/themas/es/esperanza-ambiental-esta-semana-naturaleza-e-innovacion-verde.html",
+   "datum": "2026-09-14",
+   "categorie": "Environment"
+  },
+  {
+   "titel": "Restauración De La Naturaleza Y Energía Verde: Las Noticias Ambientales De Esta Semana",
+   "pad": "/themas/es/restauracion-de-la-naturaleza-y-energia-verde-las-noticias-ambientales-de-esta-s.html",
+   "datum": "2026-09-09",
+   "categorie": "Environment"
+  }
+ ]
+}
