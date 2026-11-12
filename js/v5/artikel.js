@@ -29,15 +29,7 @@
     const B = window.BN5;
     const { t, el } = B;
 
-    // HOUD IN SYNC met maakSlug() in backend/generate-articles.js: zo heet de
-    // statische pagina van een artikel uit de feed.
-    function maakSlug(titel) {
-        return String(titel).toLowerCase()
-            .normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
-            .replace(/[^a-z0-9]+/g, '-')
-            .replace(/^-+|-+$/g, '')
-            .slice(0, 80).replace(/-+$/, '') || 'artikel';
-    }
+    const { maakSlug } = B;
 
     // Naar Abonnementen, en na Bedankt terug naar dit artikel.
     function naarPremium(plan) {

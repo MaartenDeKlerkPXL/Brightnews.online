@@ -208,18 +208,23 @@ via een PR. Laat die PR eerst nakijken door een review-agent
   betaallinks "na betaling doorsturen" op `https://brightnews.online/bedankt.html`
   (het echte adres, niet meer `v5-bedankt.html`).
 
-### Donderdag 19 november
+### Donderdag 19 november (vervroegd naar 12 november)
 
-- CSP op alle pagina's en in het artikelsjabloon (Supabase, Stripe, Google).
-- De cookiebalk laat GA4 laden na toestemming (TODO 66, punt 15).
-- Service worker: precache naar de v5-bestanden, `CACHE_NAME` bumpen.
-- ✅ De besluiten uit TODO 75 staan al in de teksten (11 november). Nog wel:
-  de privacyregel over feedback nalezen (TODO 43).
-- Steekproef op de vertalingen in alle vijf talen.
-- Categorie- en themapagina's in de v5-schil (TODO 79, besluit 12 november):
-  v5-header, -footer en -CSS, de artikelen als de bestaande v5-kaarten. Geen
-  nieuw ontwerp; dat volgt na de lancering. Op donderdag en niet op zaterdag,
-  zodat het meegaat in de merge en de test van vrijdag.
+- ✅ CSP op alle v5-pagina's en in het artikelsjabloon: Supabase en Google
+  Analytics. Stripe hoeft er niet in: de betaallinks zijn gewone
+  doorverwijzingen, er laadt geen Stripe-script.
+- ✅ De cookiebalk laadt GA4 pas na toestemming, en zet het meten meteen uit
+  als de lezer die intrekt (js/v5/schil.js). Alleen op brightnews.online.
+- ✅ Service worker v40: precache van de v5-bestanden, alles netwerk-eerst
+  (geen bump meer nodig bij elke CSS- of JS-wijziging), en de v5-pagina's
+  registreren hem zelf.
+- ✅ TODO 43: de privacyregel over Feedback klopt nu met wat het v5-formulier
+  bewaart (geen toestel meer), in vijf talen.
+- ✅ Steekproef op de vertalingen: alle 581 v5-teksten bestaan in vijf talen;
+  de 149 artikelen van deze week zijn volledig vertaald.
+- ✅ Categorie- en themapagina's in de v5-schil (TODO 79). De 35
+  themapagina's zijn omgezet (`backend/migreer-themas-v5.js`); de 30
+  categoriepagina's maakt de nieuws-Action na de merge vanzelf opnieuw.
 
 ### Vrijdag 20 november
 

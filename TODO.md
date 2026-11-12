@@ -311,7 +311,7 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   4. **Bescherming tegen gelekte wachtwoorden** (controle tegen
      HaveIBeenPwned) staat uit. Dat kan alleen op Pro, zie punt 70.
 
-- [ ] **79. Categorie- en themapagina's nog in het oude ontwerp.**
+- [x] **79. Categorie- en themapagina's nog in het oude ontwerp.** ✅ 2026-11-12: v5-schil via `v5Pagina()` in backend/schil.js; themapagina's omgezet met backend/migreer-themas-v5.js. Na de lancering nog: een eigen ontwerp, en een overzichtspagina voor Thema's en Categorieën (de links in de header en footer hebben nog geen adres).
   *(Claude, 2026-11-12)* De artikelpagina's en het archief zijn v5, maar
   `backend/generate-categorieen.js` (30 pagina's, `categories/{taal}/…`) en
   `backend/generate-evergreen.js` (`themas/…`) maken nog pagina's met de oude
@@ -850,7 +850,7 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   Zolang de site geparkeerd staat heeft plaatsen weinig zin: een bezoeker
   komt dan op één artikel en kan verder nergens heen.
 
-- [ ] **43. De privacyregel over feedback nalezen.** *(Erik)* Op 2026-09-24
+- [x] **43. De privacyregel over feedback nalezen.** ✅ 2026-11-12: de v5-tekst (`v5_pv_s2_p4`) noemt nu wat `artikel_feedback` echt bewaart (keuze, toelichting, artikel, taal, e-mail); het oude formulier met toestel bestaat niet meer. *(Erik)* Op 2026-09-24
   is er een bullet bijgekomen onder "Jouw Privacy" op `Privacy.html`, in vijf
   talen (`privacy_list_feedback`). Hij beschrijft wat het feedbackformulier
   bewaart: de antwoorden, de toelichting, een zelf ingevuld e-mailadres, plus
@@ -2467,7 +2467,7 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
       krijgen een List-Unsubscribe-header (één klik in het mailprogramma).
       Open: kan de link verlopen? "Toch weer aanmelden" zet de mails weer
       aan; nu meldt de knop dat het voorbeeld niet gekoppeld is.
-  15. **Cookiebalk en Google Analytics** (sinds 2026-11-02 op elke
+  15. ✅ *2026-11-12: GA4 laadt na toestemming (js/v5/schil.js), CSP aangepast.* **Cookiebalk en Google Analytics** (sinds 2026-11-02 op elke
       v5-pagina, onderaan `partials/v5/footer.html`). De keuze staat in
       dezelfde sleutel als de live site (`brightNews_cookies`: `accepted` of
       `essential`) plus `brightNews_cookies_datum`; na 12 maanden vraagt de

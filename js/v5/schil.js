@@ -119,8 +119,13 @@
                 .then(({ data }) => zetAccountTaal(taal, data.session?.user))
                 .catch(() => {});
         }
-        // Op de huidige pagina's vertaalt index.js; die kent ook de
-        // taalvarianten van statische artikelen.
+        // Gegenereerde pagina met een eigen adres per taal (categorie, thema):
+        // naar die variant.
+        const variant = document.body.dataset[`alt${taal.charAt(0).toUpperCase()}${taal.slice(1)}`];
+        if (eigenKeuze && variant && taal !== document.documentElement.lang) {
+            window.location.href = variant;
+            return;
+        }
         if (typeof window.wisselTaal === 'function') {
             window.wisselTaal(taal);
             return;
@@ -277,12 +282,34 @@
         return keuze;
     }
 
-    // Statistieken (Google Analytics) laden kan pas als de CSP van de
-    // v5-pagina's Google toestaat; dat gebeurt bij de lancering (TODO punt
-    // 66). Tot dan meldt de balk de keuze alleen als gebeurtenis.
+    // Google Analytics, alleen na toestemming (keuze 'accepted'). Trekt de
+    // lezer die later in, dan stopt het meten op deze pagina meteen.
+    const GA_ID = 'G-ZNFX3R9BQV';
+    function statistieken(aan) {
+        // Alleen op de echte site: lokaal testen telt niet als bezoek.
+        if (window.location.hostname !== 'brightnews.online') return;
+        if (!aan && !window.__gaGeladen) return;
+        window.dataLayer = window.dataLayer || [];
+        // gtag moet het arguments-object doorgeven, geen array.
+        window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+        window.gtag('consent', window.__gaGeladen ? 'update' : 'default', {
+            analytics_storage: aan ? 'granted' : 'denied',
+            ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
+        });
+        if (!aan || window.__gaGeladen) return;
+        window.__gaGeladen = true;
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+        document.head.appendChild(script);
+        window.gtag('js', new Date());
+        window.gtag('config', GA_ID);
+    }
+
     function bewaarCookies(keuze) {
         schrijf(COOKIE_SLEUTEL, keuze);
         schrijf(COOKIE_DATUM, new Date().toISOString().slice(0, 10));
+        statistieken(keuze === 'accepted');
         document.dispatchEvent(new CustomEvent('bn:cookies', { detail: { statistieken: keuze === 'accepted' } }));
     }
 
@@ -359,12 +386,20 @@
         zetJaartal();
         // Zonder index.js zet niemand anders de bewaarde taal bij het laden.
         const taal = lees(TAAL_SLEUTEL);
-        if (taal && typeof window.wisselTaal !== 'function' && taal !== document.documentElement.lang) {
+        // Een pagina met varianten per taal (data-alt-*) staat al in haar eigen taal.
+        const heeftVarianten = Object.keys(document.body.dataset).some(k => /^alt[A-Z][a-z]$/.test(k));
+        if (taal && !heeftVarianten && typeof window.wisselTaal !== 'function' && taal !== document.documentElement.lang) {
             pasTaalToe(taal);
         }
         koppelPaneel();
         document.querySelectorAll('[role="radiogroup"][data-instelling]').forEach(koppelGroep);
         koppelCookiebalk();
+        if (cookieKeuze() === 'accepted') statistieken(true);
+        // De service worker (sw.js): offline terugval. Root-scope, dus ook
+        // vanaf /articles/ en /categories/.
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(() => {}));
+        }
     }
 
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);

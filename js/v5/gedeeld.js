@@ -33,6 +33,16 @@
         Finance: { sleutel: 'filter_finance', icoon: 'euro' },
     };
 
+    // HOUD IN SYNC met maakSlug() in backend/generate-articles.js en
+    // backend/generate-categorieen.js: zo heten de statische pagina's.
+    function maakSlug(tekst, terugval = 'artikel') {
+        return String(tekst).toLowerCase()
+            .normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-+|-+$/g, '')
+            .slice(0, 80).replace(/-+$/, '') || terugval;
+    }
+
     function lees(sleutel) {
         try { return localStorage.getItem(sleutel); } catch { return null; }
     }
@@ -287,6 +297,8 @@
         home: () => '/',
         artikel: id => `/artikel.html?id=${encodeURIComponent(id)}`,
         dagoverzicht: dag => `/dagoverzicht.html?datum=${dag}`,
+        // De categoriepagina (backend/generate-categorieen.js): de slug is de vertaalde naam.
+        categorie: cat => (CATEGORIEEN[cat] ? `/categories/${taal()}/${maakSlug(t(CATEGORIEEN[cat].sleutel), 'categorie')}.html` : null),
         editie: dag => `/editie.html?datum=${dag}`,
         archief: maand => (maand ? `/archief.html?maand=${maand}` : '/archief.html'),
         abonnementen: plan => (plan ? `/abonnementen.html?plan=${plan}` : '/abonnementen.html'),
@@ -376,7 +388,7 @@
         lijst.replaceChildren();
         for (const [cat, info] of Object.entries(CATEGORIEEN)) {
             const li = el('li');
-            const a = link(null, 'topic-link');
+            const a = link(url.categorie(cat), 'topic-link');
             a.appendChild(icoon(info.icoon));
             a.appendChild(el('span', null, categorieLabel(cat)));
             a.appendChild(icoon('chevron_right', 'topic-link__chevron'));
@@ -705,7 +717,7 @@
 
     window.BN5 = {
         CATEGORIEEN, taal, t, vertaalPagina, param, locale: () => LOCALE[taal()],
-        laadFeed, laadManifest, isDigest,
+        laadFeed, laadManifest, isDigest, maakSlug,
         dagVan, vandaag, verschuif, isDagSleutel, dagLang, dagKort, dagMaand, weekdag, maandNaam, tijd, datumTijd, hoofdletter,
         aantalVerhalen, perDag, archiefPerDag, digestsVan, nieuwsteDigestDag, verhalenVanDigests, laatsteMoment,
         zonderVerwijzingen, eersteZinnen, url, metTestdag, categorieLabel,

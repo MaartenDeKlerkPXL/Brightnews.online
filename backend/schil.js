@@ -92,4 +92,70 @@ function schilVoorTaal(lang) {
     return { header: vertaalSchil(header, lang), footer: vertaalSchil(footer, lang) };
 }
 
-module.exports = { leesSchil, leesSchilV5, schilVoorTaal, vertaalSchil, maakPadenAbsoluut };
+const CSP_V5 = "default-src 'self'; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'";
+const RSS_TAALNAAM = { nl: 'Nederlands', en: 'English', de: 'Deutsch', fr: 'Français', es: 'Español' };
+
+function escapeAttr(s) {
+    return String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+// Een gegenereerde v5-pagina (categorie, thema) met de v5-schil in één taal.
+// varianten: { taal: pad } van dezelfde pagina in elke taal. Die worden de
+// hreflangs, en data-alt-{taal} op <body>: daarmee gaat een taalkeuze in het
+// instellingenpaneel naar die variant (js/v5/schil.js).
+function v5Pagina({ lang, titel, beschrijving, pad, varianten, ogType = 'website', ogImage, main, scripts = [] }) {
+    const SITE = 'https://brightnews.online';
+    const { thema, header, footer } = leesSchilV5();
+    const talen = Object.keys(varianten);
+    const hreflangs = talen.map(l => `    <link rel="alternate" hreflang="${l}" href="${SITE}${varianten[l]}">`).join('\n');
+    const xDefault = varianten.en || varianten[lang];
+    const rss = [lang, ...Object.keys(RSS_TAALNAAM).filter(l => l !== lang)]
+        .map(l => `    <link rel="alternate" type="application/rss+xml" title="BrightNews (${RSS_TAALNAAM[l]})" href="/feed-${l}.xml">`).join('\n');
+    const alt = talen.map(l => ` data-alt-${l}="${escapeAttr(varianten[l])}"`).join('');
+    return `<!DOCTYPE html>
+<html lang="${lang}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="${CSP_V5}">
+    <meta name="robots" content="max-image-preview:large">
+    <title>${escapeAttr(titel)} | BrightNews</title>
+${thema}
+    <meta name="description" content="${escapeAttr(beschrijving)}">
+    <link rel="canonical" href="${SITE}${pad}">
+${hreflangs}
+    <link rel="alternate" hreflang="x-default" href="${SITE}${xDefault}">
+${rss}
+    <meta property="og:title" content="${escapeAttr(titel)}">
+    <meta property="og:description" content="${escapeAttr(beschrijving)}">
+    <meta property="og:url" content="${SITE}${pad}">
+    <meta property="og:type" content="${ogType}">
+    <meta property="og:image" content="${escapeAttr(ogImage || `${SITE}/assets/brightnews-logo.png`)}">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0a120d" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" href="/assets/brightnews-logo-faviconv5.png">
+    <link rel="preload" href="/assets/fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/tokens.css">
+    <link rel="stylesheet" href="/css/v5/basis.css">
+    <link rel="stylesheet" href="/css/v5/componenten.css">
+    <link rel="stylesheet" href="/css/v5/paginas.css">
+</head>
+<body data-sectie="nieuws"${alt}>
+${vertaalSchil(header, lang)}
+
+<main id="inhoud">
+${main}
+</main>
+
+${vertaalSchil(footer, lang)}
+<script src="/data/translations.js" defer></script>
+<script src="/js/v5/schil.js" defer></script>
+${scripts.map(src => `<script src="${src}" defer></script>`).join('\n')}
+</body>
+</html>
+`;
+}
+
+module.exports = { leesSchil, leesSchilV5, schilVoorTaal, vertaalSchil, maakPadenAbsoluut, v5Pagina, CSP_V5 };

@@ -1449,3 +1449,24 @@ button.juridisch__link {
 .home-fout[hidden] {
     display: none;
 }
+
+/* ── Themapagina's ─────────────────────────────────────────────────────
+   backend/generate-evergreen.js: de datum onder de kop, en bij elk verhaal
+   één zin waarom het de moeite waard is. */
+
+.info-tekst > .info-tekst__datum {
+    margin-top: calc(-1 * var(--spacing-xs));
+    color: var(--text-secondary);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-24);
+}
+
+.info-tekst > .koppen-lijst {
+    width: 100%;
+}
+
+.headline-item__tekst {
+    color: var(--text-secondary);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-24);
+}

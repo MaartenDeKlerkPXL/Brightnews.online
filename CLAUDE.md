@@ -40,15 +40,19 @@ verbeteringen van de één binnen een dag bij de ander landen:
 
 ## Vaste conventies (duur betaald — echt doen)
 - `npx eslint .` → 0 errors is de norm (bekende warnings mogen blijven).
-- Wijzig je `css/global.css`, `css/components.css`, `js/main.js`,
-  `index.html` of `assets/brightnews-logo.png` → **bump `CACHE_NAME` in
-  sw.js** (anders zien bezoekers je wijziging niet).
+- Sinds 2026-11-12 (sw.js v40) haalt de service worker alles eerst van het
+  netwerk; de cache is alleen offline terugval. `CACHE_NAME` bumpen hoeft dus
+  alleen nog als je `sw.js` zelf of de `ASSETS`-lijst daarin wijzigt.
 - Wijzig je het artikeltemplate in `backend/generate-articles.js` →
   `node backend/migreer-archief-v5.js` (het archief, uit de gegevens in elke
   pagina) en `node backend/generate-articles.js` (de actuele pagina's) draaien,
   plus `node backend/generate-sitemap.js`. Sinds redesign v5 (2026-11-12)
   volgt het hele archief het sjabloon; de nieuws-Action doet beide stappen
   ook zelf. Nooit pagina's verwijderen.
+- Categorie- en themapagina's gebruiken sinds 2026-11-12 ook de v5-schil, via
+  `v5Pagina()` in `backend/schil.js`. Na een wijziging:
+  `node backend/generate-categorieen.js` en `node backend/migreer-themas-v5.js`
+  (die maakt elke themapagina opnieuw uit haar eigen `#thema-gegevens`).
 - **Header en footer staan op één plek: `partials/header.html` en
   `partials/footer.html`** (sinds 2026-10-29, redesign v5). Nooit meer in een
   pagina zelf bewerken: tussen `<!-- schil:header -->` en

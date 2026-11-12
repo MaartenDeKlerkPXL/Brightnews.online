@@ -17,7 +17,6 @@ const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
 
-const SITE_URL = 'https://brightnews.online';
 const TALEN = ['nl', 'en', 'de', 'fr', 'es'];
 const root = path.join(__dirname, '..');
 const UITVOERMAP = 'categories';
@@ -59,113 +58,74 @@ function categorieSlug(categorie, lang) {
     return maakSlug(t(lang, `filter_${categorie.toLowerCase()}`));
 }
 
-// --- De paginaschil ----------------------------------------------------
-// Header en footer komen uit partials/ via backend/schil.js, dezelfde bron
-// als de vaste pagina's en het artikelsjabloon. Tot 2026-10-29 werden ze hier
-// uit index.html gelicht; dat kon alleen zolang index.html de enige bron was.
-const { leesSchil, vertaalSchil } = require('./schil');
+// --- De pagina (redesign v5, sinds 2026-11-12) --------------------------
+// De v5-schil en -opmaak via v5Pagina() in backend/schil.js. De kaarten zijn
+// de story cards uit de stijlgids, hier al in de HTML (dat is het punt van
+// deze pagina's: Google ziet de links zonder JavaScript).
+const { v5Pagina } = require('./schil');
+
+// HOUD IN SYNC met CATEGORIEEN in js/v5/gedeeld.js (de iconen).
+const ICOON = { Tech: 'lightbulb', Health: 'ecg_heart', Science: 'science', Lifestyle: 'spa', Environment: 'eco', Finance: 'euro' };
+
+function icoon(naam, klasse = '') {
+    return `<svg class="icoon${klasse ? ` ${klasse}` : ''}" aria-hidden="true"><use href="/assets/iconen.svg#${naam}"/></svg>`;
+}
 
 function kaartHtml(artikel, lang, manifest) {
-    const entry = manifest.articles?.[artikel.id];
-    const slug = entry?.slugs?.[lang];
-    // Zonder slug bestaat er (nog) geen statische pagina; dan de
-    // homepage-variant, net als generate-evergreen.js doet.
+    const slug = manifest.articles?.[artikel.id]?.slugs?.[lang];
+    // Zonder slug bestaat er (nog) geen statische pagina: dan de v5-artikelpagina.
     const href = slug
         ? `/articles/${lang}/${slug}-${artikel.id}.html`
-        : `/?id=${encodeURIComponent(artikel.id)}`;
-    const samenvatting = String(artikel.summary || '').slice(0, 120);
-    const alt = artikel.image_alt || artikel.title;
-    return `            <article class="news-card">
-                <a href="${escapeHtml(href)}" tabindex="-1" aria-hidden="true">
-                    <img class="card-img" src="${escapeHtml(artikel.image || '/assets/brightnews-logo.png')}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async" width="800" height="450">
-                </a>
-                <div class="card-content">
-                    <h3><a href="${escapeHtml(href)}">${escapeHtml(artikel.title)}</a></h3>
-                    <p>${escapeHtml(samenvatting)}${samenvatting.length === 120 ? '…' : ''}</p>
-                </div>
-            </article>`;
+        : `/artikel.html?id=${encodeURIComponent(artikel.id)}`;
+    const beeld = /^(https:\/\/|\/)/.test(artikel.image || '')
+        ? `<img class="story-card__beeld" src="${escapeHtml(artikel.image)}" alt="" loading="lazy" decoding="async">`
+        : '<div class="story-card__beeld merkbeeld" aria-hidden="true"></div>';
+    return `            <li><article class="story-card story-card--stacked">${beeld}<div class="story-card__tekst"><h2 class="story-card__titel"><a class="story-card__link" href="${escapeHtml(href)}">${escapeHtml(artikel.title)}</a></h2></div></article></li>`;
 }
 
-// RSS-autodiscovery (punt 47): eigen taal bovenaan.
-const RSS_TAALNAAM = { nl: 'Nederlands', en: 'English', de: 'Deutsch', fr: 'Français', es: 'Español' };
-function rssLinksHtml(eigenTaal) {
-    return [eigenTaal, ...TALEN.filter(l => l !== eigenTaal)]
-        .map(l => `    <link rel="alternate" type="application/rss+xml" title="BrightNews (${RSS_TAALNAAM[l]})" href="/feed-${l}.xml">`)
-        .join('\n');
-}
-
-function paginaHtml(categorie, lang, artikelen, manifest, schil) {
-    const rssLinks = rssLinksHtml(lang);
+function paginaHtml(categorie, lang, artikelen, manifest) {
     const label = t(lang, `filter_${categorie.toLowerCase()}`);
     const titel = t(lang, 'cat_titel').replace('{cat}', label);
     const beschrijving = t(lang, 'cat_meta').replace('{cat}', label);
-    const paginaUrl = `${SITE_URL}/${UITVOERMAP}/${lang}/${categorieSlug(categorie, lang)}.html`;
-
-    const hreflangs = TALEN
-        .map(l => `    <link rel="alternate" hreflang="${l}" href="${SITE_URL}/${UITVOERMAP}/${l}/${categorieSlug(categorie, l)}.html">`)
-        .join('\n');
+    const varianten = Object.fromEntries(TALEN.map(l => [l, `/${UITVOERMAP}/${l}/${categorieSlug(categorie, l)}.html`]));
 
     const kaarten = artikelen.length
-        ? artikelen.map(a => kaartHtml(a, lang, manifest)).join('\n')
-        : `            <p class="categorie-leeg">${escapeHtml(t(lang, 'cat_leeg'))}</p>`;
+        ? `        <ul class="editie-raster__rij editie-raster__rij--drie" role="list">
+${artikelen.map(a => kaartHtml(a, lang, manifest)).join('\n')}
+        </ul>`
+        : `        <p>${escapeHtml(t(lang, 'cat_leeg'))}</p>`;
 
     // Onderling doorlinken: elke categoriepagina wijst naar de vijf andere.
     // Zonder die links zijn het losse eilanden die alleen via de sitemap te
-    // bereiken zijn — hetzelfde probleem als de artikelpagina's hadden.
+    // bereiken zijn, hetzelfde probleem als de artikelpagina's hadden.
     const andere = CATEGORIEEN.filter(c => c !== categorie)
-        .map(c => `<a href="/${UITVOERMAP}/${lang}/${categorieSlug(c, lang)}.html">${escapeHtml(t(lang, `filter_${c.toLowerCase()}`))}</a>`)
-        .join('\n            ');
+        .map(c => `            <li><a class="topic-link" href="/${UITVOERMAP}/${lang}/${categorieSlug(c, lang)}.html">${icoon(ICOON[c])}<span>${escapeHtml(t(lang, `filter_${c.toLowerCase()}`))}</span>${icoon('chevron_right', 'topic-link__chevron')}</a></li>`)
+        .join('\n');
 
-    return `<!DOCTYPE html>
-<html lang="${lang}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="max-image-preview:large">
-${rssLinks}
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://www.googletagmanager.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
-    <meta name="description" content="${escapeHtml(beschrijving)}">
-    <title>${escapeHtml(titel)} | BrightNews</title>
-    <link rel="canonical" href="${paginaUrl}">
-${hreflangs}
-    <link rel="alternate" hreflang="x-default" href="${SITE_URL}/${UITVOERMAP}/en/${categorieSlug(categorie, 'en')}.html">
-    <meta property="og:title" content="${escapeHtml(titel)}">
-    <meta property="og:description" content="${escapeHtml(beschrijving)}">
-    <meta property="og:url" content="${paginaUrl}">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="${SITE_URL}/assets/brightnews-logo.png">
-    <link rel="icon" type="image/png" href="/assets/brightnews-logo-faviconv5.png">
-    <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/components.css">
-    <!-- .grid-container en .news-card staan in de paginastijl van de
-         homepage; deze pagina gebruikt dezelfde kaarten. -->
-    <link rel="stylesheet" href="/css/pages/index.css">
-    <link rel="stylesheet" href="/css/pages/categorie.css">
-    <script src="/data/translations.js" defer></script>
-    <script src="/js/main.js" defer></script>
-</head>
-<body>
-<a href="#main-content" class="skip-link" data-i18n="skip_to_content">${escapeHtml(t(lang, 'skip_to_content'))}</a>
-${schil.header}
-<main id="main-content" class="container categorie-pagina">
-    <h1>${escapeHtml(titel)}</h1>
-    <p class="categorie-intro">${escapeHtml(beschrijving)}</p>
-
-    <div class="grid-container">
-${kaarten}
-    </div>
-
-    <nav class="categorie-andere" aria-label="${escapeHtml(t(lang, 'cat_andere'))}">
-        <h2>${escapeHtml(t(lang, 'cat_andere'))}</h2>
-        <div class="categorie-links">
-            ${andere}
+    const main = `    <section class="info-sectie info-sectie--intro" aria-labelledby="cat-titel">
+        <div class="container info-tekst">
+            <p class="type-overline">${escapeHtml(label)}</p>
+            <h1 class="type-display-sm" id="cat-titel">${escapeHtml(titel)}</h1>
+            <p class="info-tekst__lead">${escapeHtml(beschrijving)}</p>
         </div>
-    </nav>
-</main>
-${schil.footer}
-</body>
-</html>
-`;
+    </section>
+
+    <section class="info-sectie" aria-label="${escapeHtml(titel)}">
+        <div class="container">
+${kaarten}
+        </div>
+    </section>
+
+    <section class="info-sectie info-sectie--subtiel" aria-labelledby="cat-andere">
+        <div class="container info-sectie__binnen">
+            <h2 class="type-heading-lg" id="cat-andere">${escapeHtml(t(lang, 'cat_andere'))}</h2>
+            <ul class="topic-links" role="list">
+${andere}
+            </ul>
+        </div>
+    </section>`;
+
+    return v5Pagina({ lang, titel, beschrijving, pad: varianten[lang], varianten, main });
 }
 
 function main() {
@@ -175,7 +135,6 @@ function main() {
         ? JSON.parse(fs.readFileSync(manifestPad, 'utf8'))
         : { articles: {} };
 
-    const ruweSchil = leesSchil();
     let geschreven = 0;
     const telling = {};
 
@@ -186,10 +145,6 @@ function main() {
             continue;
         }
         const alle = JSON.parse(fs.readFileSync(pad, 'utf8'));
-        const schil = {
-            header: vertaalSchil(ruweSchil.header, lang),
-            footer: vertaalSchil(ruweSchil.footer, lang),
-        };
 
         for (const categorie of CATEGORIEEN) {
             const artikelen = alle
@@ -200,7 +155,7 @@ function main() {
             const map = path.join(root, UITVOERMAP, lang);
             fs.mkdirSync(map, { recursive: true });
             const bestand = path.join(map, `${categorieSlug(categorie, lang)}.html`);
-            fs.writeFileSync(bestand, paginaHtml(categorie, lang, artikelen, manifest, schil));
+            fs.writeFileSync(bestand, paginaHtml(categorie, lang, artikelen, manifest));
             geschreven++;
             telling[`${lang}/${categorie}`] = artikelen.length;
         }
@@ -211,4 +166,6 @@ function main() {
     if (leeg.length) console.log(`   Zonder artikelen (nog): ${leeg.join(', ')}`);
 }
 
-main();
+if (require.main === module) main();
+
+module.exports = { paginaHtml, categorieSlug, CATEGORIEEN };
