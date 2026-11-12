@@ -139,7 +139,29 @@ ${items}
     </section>
     <script type="application/json" id="thema-gegevens">${gegevens}</script>`;
 
-    return v5Pagina({ lang, titel: pagina.titel, beschrijving, pad: varianten[lang], varianten, ogType: 'article', main });
+    return v5Pagina({ lang, titel: pagina.titel, beschrijving, pad: varianten[lang], varianten, ogType: 'article', sectie: 'themas', main });
+}
+
+// Het overzicht voor /themas.html: per taal alle themapagina's, nieuwste
+// week eerst, met de titel uit de pagina zelf (#thema-gegevens).
+function schrijfOverzicht() {
+    const manifest = JSON.parse(fs.readFileSync(path.join(root, 'themas/manifest.json'), 'utf8'));
+    const overzicht = Object.fromEntries(TALEN.map(l => [l, []]));
+    const weken = Object.entries(manifest.themas || {}).sort((a, b) => b[0].localeCompare(a[0]));
+    for (const [, entry] of weken) {
+        for (const lang of TALEN) {
+            const slug = entry.slugs?.[lang];
+            const bestand = slug && path.join(root, 'themas', lang, `${slug}.html`);
+            if (!bestand || !fs.existsSync(bestand)) continue;
+            const json = fs.readFileSync(bestand, 'utf8').match(/<script type="application\/json" id="thema-gegevens">([\s\S]*?)<\/script>/)?.[1];
+            let titel = null;
+            try { titel = JSON.parse(json).titel; } catch { /* oude opmaak: overslaan */ }
+            if (!titel) continue;
+            overzicht[lang].push({ titel, pad: `/themas/${lang}/${slug}.html`, datum: entry.datum || null, categorie: entry.categorie || null });
+        }
+    }
+    fs.writeFileSync(path.join(root, 'themas/overzicht.json'), `${JSON.stringify(overzicht, null, 1)}\n`);
+    return overzicht;
 }
 
 async function main() {
@@ -231,6 +253,7 @@ Antwoord UITSLUITEND met geldig JSON — regeleindes binnen een tekstveld als \\
         ids: artikelen.map(a => a.id),
     };
     await fs.outputJson(manifestPad, manifest, { spaces: 1 });
+    schrijfOverzicht();
     console.log(`✨ Themapagina's ${week} geschreven (${TALEN.length} talen): ${teksten.nl.titel}`);
 }
 
@@ -241,4 +264,4 @@ if (require.main === module) {
     });
 }
 
-module.exports = { paginaHtml };
+module.exports = { paginaHtml, schrijfOverzicht };

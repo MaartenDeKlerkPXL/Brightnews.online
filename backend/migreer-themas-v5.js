@@ -14,7 +14,7 @@
 // zoals het is en eindigt het script met een fout.
 const fs = require('fs');
 const path = require('path');
-const { paginaHtml } = require('./generate-evergreen');
+const { paginaHtml, schrijfOverzicht } = require('./generate-evergreen');
 
 const root = path.join(__dirname, '..');
 
@@ -83,6 +83,8 @@ function main() {
     }
 
     console.log(`🌿 ${geschreven} themapagina's ${droog ? 'gelezen (droog)' : 'in het v5-sjabloon'}.`);
+    // Het overzicht voor /themas.html, uit de pagina's zoals ze nu zijn.
+    if (!droog) schrijfOverzicht();
     if (mislukt.length) {
         console.error(`❌ ${mislukt.length} niet omgezet (bestand ongemoeid):\n   ${mislukt.join('\n   ')}`);
         process.exit(1);
