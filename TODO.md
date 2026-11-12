@@ -247,6 +247,11 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      GitHub → Settings → Notifications → Custom routing de repo
      Brightnews.online naar je Gmail laten gaan, en onder System → Actions
      "Only notify for failed workflows" aan. Zie ook TODO 77.
+     *Gecorrigeerd 2026-11-12:* Custom routing bestaat alleen voor
+     organisaties. Voor deze repo (van een persoonlijk account) gaan
+     meldingen naar het "Default notifications email" onder
+     github.com/settings/notifications; dat is een accountinstelling, niet
+     een instelling van de repo.
      Oorspronkelijke tekst: **Gezondheidscontrole in de nieuws-Action:** een stap aan het eind die
      faalt als er al 24 uur geen nieuw artikel is bijgekomen, of als de
      AI-call een fout over tegoed of rate limit gaf. Een mislukte geplande
@@ -304,6 +309,18 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      `gelezen_artikelen` regelt dat.
   4. **Bescherming tegen gelekte wachtwoorden** (controle tegen
      HaveIBeenPwned) staat uit. Dat kan alleen op Pro, zie punt 70.
+
+- [ ] **78. Search Console: "Dubbele pagina zonder door de gebruiker
+  geselecteerde canonieke versie".** *(Maarten, mail van 2026-11-12)* Eén
+  pagina, nieuw sinds deze week. Niet nu repareren: op 18 november krijgen
+  alle pagina's nieuwe adressen (de v5-pagina's worden de echte), en dan
+  verandert wat dubbel is. Dan elke pagina een eigen `<link rel="canonical">`
+  geven, de sitemap alleen de echte adressen laten noemen, en op 20 november
+  in Search Console de sitemap opnieuw indienen en de melding laten
+  valideren. Ter info uit hetzelfde rapport: 1.180 pagina's geïndexeerd,
+  2.870 "gevonden, nog niet geïndexeerd". Dat laatste is normaal voor een
+  site die geparkeerd staat achter `binnenkort.html`; het hoort na de
+  lancering te dalen.
 
 - [ ] **73. Bij de lancering: de voorbeeldstaten uitzetten.**
   *(Maarten, 2026-11-03)* De v5-pagina's tonen nu elke staat via `?staat=`

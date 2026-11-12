@@ -172,6 +172,12 @@ via een PR. Laat die PR eerst nakijken door een review-agent
   `js/v5/gedeeld.js` aanpassen (TODO 66, punt 8).
 - `?staat=` werkt alleen nog op `localhost` (TODO 73).
 - Alle mails naar de v5-huisstijl, één taal per lezer (TODO 74).
+- Elke pagina een eigen `<link rel="canonical">` naar haar echte adres, en de
+  sitemap alleen met die adressen (TODO 78: de Search Console-melding
+  "Dubbele pagina zonder door de gebruiker geselecteerde canonieke versie").
+- **Maarten, zodra de echte adressen er zijn:** in Stripe bij beide
+  betaallinks "na betaling doorsturen" op `https://brightnews.online/bedankt.html`
+  (het echte adres, niet meer `v5-bedankt.html`).
 
 ### Donderdag 19 november
 
@@ -189,7 +195,12 @@ via een PR. Laat die PR eerst nakijken door een review-agent
 - Alles naar master mergen, met de parkeerpagina nog aan. Testen op de echte
   site via `/?team=1`, op telefoon en computer, licht en donker.
 - De hele keten echt doorlopen met een echte kaart en een wegwerp-e-mailadres
-  (TODO 31): account maken, inloggen, betalen, Premium lezen, opzeggen.
+  (TODO 31): account maken met een inloglink, wachtwoord vergeten, inloggen,
+  betalen, Bedankt, Premium lezen, Mijn account, opzeggen. Dit vervangt de
+  losse tests met een wegwerpadres en in de testmodus van Stripe: die doen we
+  pas op de echte adressen.
+- Search Console: de sitemap opnieuw indienen en de melding over de dubbele
+  pagina laten valideren (TODO 78).
 - Snelheid meten (Lighthouse: LCP en CLS) op home, artikel en archief.
 
 ### Zaterdag 21 november
