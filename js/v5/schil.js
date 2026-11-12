@@ -1,0 +1,419 @@
+// Gedrag van de v5-schil: de huidige pagina in het menu, en het
+// instellingenpaneel onder de header (weergave en taal).
+//
+// Het paneel duwt de pagina omlaag; het is geen overlay. Openen met de knop
+// Instellingen, sluiten met Sluiten, Esc of de knop zelf. De keuzes zijn
+// radiogroepen: klikken of de pijltjestoetsen kiezen meteen. Dezelfde
+// radiogroepen kunnen ook in de pagina staan (Mijn account); alle groepen
+// met hetzelfde data-instelling lopen gelijk.
+//
+// Opslag in localStorage, met dezelfde sleutels als de rest van de site:
+//   bn-thema          'licht' | 'donker' (afwezig = systeem volgen)
+//   selectedLanguage  'nl' | 'en' | 'de' | 'fr' | 'es'
+// partials/thema-head.html leest bn-thema al vóór de eerste weergave.
+//
+// Daarnaast de cookiebalk (onderaan partials/v5/footer.html). Zelfde sleutel
+// als de live site, zodat een keuze op beide geldt:
+//   brightNews_cookies        'accepted' (statistieken aan) | 'essential'
+//   brightNews_cookies_datum  dag van de keuze; na 12 maanden vragen we opnieuw
+//
+// En het account: window.bnAccount is een belofte op { gebruiker, premium }.
+// Is iemand ingelogd, dan krijgt <body> data-ingelogd (Mijn account in plaats
+// van Inloggen), met Premium ook data-premium (geen "Probeer Premium").
+
+(function () {
+    'use strict';
+
+    const THEMA_SLEUTEL = 'bn-thema';
+    const TAAL_SLEUTEL = 'selectedLanguage';
+
+    // ── Account ──────────────────────────────────────────────────────────
+
+    // getSession() wacht ook op een inloglink in het adres (detectSessionInUrl),
+    // dus een lezer die vanuit de mail op een willekeurige v5-pagina landt, is
+    // hier al ingelogd. Premium-voorwaarde gelijk aan lees_artikel().
+    async function laadAccount() {
+        const client = window.supabaseClient;
+        if (!client) return { gebruiker: null, premium: false, profiel: null };
+        try {
+            const { data } = await client.auth.getSession();
+            const gebruiker = data.session?.user || null;
+            if (!gebruiker) return { gebruiker: null, premium: false, profiel: null };
+            document.body.dataset.ingelogd = '';
+            // Heeft het account nog geen taal, dan die van de site. Daarna
+            // alleen bij een eigen keuze (pasTaalToe), anders wisselt de taal
+            // van de mails mee met het laatst gebruikte apparaat.
+            if (!gebruiker.user_metadata?.preferred_lang) zetAccountTaal(lees(TAAL_SLEUTEL), gebruiker);
+            // Alle kolommen: Mijn account en Bedankt lezen ook de
+            // abonnementsstatus (abo_status, opgezegd, proef_tot).
+            const { data: profiel, error } = await client.from('profiles')
+                .select('*').eq('id', gebruiker.id).maybeSingle();
+            // fout: het profiel kon niet gelezen worden. Wie dan "geen
+            // Premium" ziet, mag nog niet afrekenen (abonnementen.js).
+            if (error) return { gebruiker, premium: false, profiel: null, fout: true };
+            const premium = !!profiel?.is_premium
+                && (!profiel.premium_until || new Date(profiel.premium_until) > new Date());
+            if (premium) document.body.dataset.premium = '';
+            return { gebruiker, premium, profiel: profiel || null };
+        } catch (e) {
+            console.warn('BrightNews v5: account niet geladen', e);
+            return { gebruiker: null, premium: false, profiel: null, fout: true };
+        }
+    }
+
+    window.bnAccount = laadAccount();
+    // Opnieuw ophalen, na een promocode of terwijl Bedankt op de webhook wacht.
+    window.bnVerversAccount = () => (window.bnAccount = laadAccount());
+
+    function lees(sleutel) {
+        try { return localStorage.getItem(sleutel); } catch { return null; }
+    }
+
+    function schrijf(sleutel, waarde) {
+        try {
+            if (waarde === null) localStorage.removeItem(sleutel);
+            else localStorage.setItem(sleutel, waarde);
+        } catch { /* geen opslag: de keuze geldt alleen voor deze pagina */ }
+    }
+
+    // ── Huidige pagina ───────────────────────────────────────────────────
+
+    // Een pagina die bij een menu-item hoort zonder zelf in het menu te
+    // staan (een editie hoort bij Archief, een artikel bij Nieuws), zegt dat
+    // met <body data-sectie="archief">. Links zonder href (pagina nog niet
+    // gebouwd) slaan we over.
+    function markeerHuidigePagina() {
+        const pad = window.location.pathname.replace(/\/index\.html$/, '/');
+        const sectie = document.body.dataset.sectie;
+        document.querySelectorAll('.navbar__links .nav-link[href], .mobiel-menu .menu-link[href]').forEach(link => {
+            const doel = new URL(link.href).pathname.replace(/\/index\.html$/, '/');
+            if (doel === pad || (sectie && link.dataset.sectie === sectie)) link.setAttribute('aria-current', 'page');
+        });
+    }
+
+    // ── Keuzes ───────────────────────────────────────────────────────────
+
+    function pasThemaToe(waarde) {
+        if (waarde === 'licht' || waarde === 'donker') {
+            document.documentElement.setAttribute('data-theme', waarde);
+            schrijf(THEMA_SLEUTEL, waarde);
+        } else {
+            document.documentElement.removeAttribute('data-theme');
+            schrijf(THEMA_SLEUTEL, null);
+        }
+    }
+
+    // De taal bij het account, zodat de mails van Supabase en de
+    // welkomstreeks in die taal komen (TODO 74).
+    function zetAccountTaal(taal, gebruiker) {
+        const client = window.supabaseClient;
+        if (!client || !gebruiker || !['nl', 'en', 'de', 'fr', 'es'].includes(taal)) return;
+        if (gebruiker.user_metadata?.preferred_lang === taal) return;
+        client.auth.updateUser({ data: { preferred_lang: taal } }).catch(() => { /* volgende keuze opnieuw */ });
+    }
+
+    function pasTaalToe(taal, eigenKeuze) {
+        schrijf(TAAL_SLEUTEL, taal);
+        if (eigenKeuze) {
+            window.supabaseClient?.auth.getSession()
+                .then(({ data }) => zetAccountTaal(taal, data.session?.user))
+                .catch(() => {});
+        }
+        // Gegenereerde pagina met een eigen adres per taal (categorie, thema):
+        // naar die variant.
+        const variant = document.body.dataset[`alt${taal.charAt(0).toUpperCase()}${taal.slice(1)}`];
+        if (eigenKeuze && variant && taal !== document.documentElement.lang) {
+            window.location.href = variant;
+            return;
+        }
+        if (typeof window.wisselTaal === 'function') {
+            window.wisselTaal(taal);
+            return;
+        }
+        // Zonder index.js (zoals op de stijlgids): alleen de schil vertalen,
+        // met dezelfde innerHTML-regel als index.js, als data/translations.js
+        // geladen is.
+        document.documentElement.lang = taal;
+        const T = window.translations && (window.translations[taal] || window.translations.en);
+        if (T) {
+            document.querySelectorAll('.site-header [data-i18n], .site-footer [data-i18n]').forEach(el => {
+                if (T[el.dataset.i18n]) el.innerHTML = T[el.dataset.i18n];
+            });
+            document.querySelectorAll('.site-header [data-i18n-aria-label], .site-footer [data-i18n-aria-label]').forEach(el => {
+                if (T[el.dataset.i18nAriaLabel]) el.setAttribute('aria-label', T[el.dataset.i18nAriaLabel]);
+            });
+        }
+        zetJaartal();
+    }
+
+    // Het jaartal in de copyrightregel staat vast in de vertaling; zet het
+    // op het huidige jaar.
+    function zetJaartal() {
+        const regel = document.querySelector('[data-i18n="schil_copyright"]');
+        if (regel) regel.textContent = regel.textContent.replace(/\b20\d\d\b/, String(new Date().getFullYear()));
+    }
+
+    const TOEPASSEN = { thema: pasThemaToe, taal: pasTaalToe };
+
+    function kies(groep, optie, metFocus) {
+        groep.querySelectorAll('[role="radio"]').forEach(o => {
+            const gekozen = o === optie;
+            o.setAttribute('aria-checked', String(gekozen));
+            o.tabIndex = gekozen ? 0 : -1;
+        });
+        if (metFocus) optie.focus();
+    }
+
+    // Na een keuze in de ene groep tonen de andere groepen van dezelfde
+    // soort (paneel en pagina) dezelfde keuze.
+    function volgAndere(groep, waarde) {
+        document.querySelectorAll(`[role="radiogroup"][data-instelling="${groep.dataset.instelling}"]`).forEach(ander => {
+            const optie = ander !== groep && ander.querySelector(`[data-waarde="${waarde}"]`);
+            if (optie) kies(ander, optie, false);
+        });
+    }
+
+    // Pagina met een eigen adres per taal (data-alt-* op <body>): die staat
+    // al in haar eigen taal, ongeacht de opgeslagen keuze.
+    function heeftVarianten() {
+        return Object.keys(document.body.dataset).some(k => /^alt[A-Z][a-z]$/.test(k));
+    }
+
+    function zetBeginstand(groep) {
+        const soort = groep.dataset.instelling;
+        let waarde;
+        if (soort === 'thema') waarde = lees(THEMA_SLEUTEL) || 'systeem';
+        if (soort === 'taal') waarde = (heeftVarianten() ? document.documentElement.lang : lees(TAAL_SLEUTEL)) || document.documentElement.lang || 'nl';
+        const optie = groep.querySelector(`[data-waarde="${waarde}"]`) || groep.querySelector('[role="radio"]');
+        kies(groep, optie, false);
+    }
+
+    function koppelGroep(groep) {
+        const toepassen = TOEPASSEN[groep.dataset.instelling];
+        const opties = () => Array.from(groep.querySelectorAll('[role="radio"]'));
+
+        zetBeginstand(groep);
+
+        groep.addEventListener('click', e => {
+            const optie = e.target.closest('[role="radio"]');
+            if (!optie || optie.getAttribute('aria-checked') === 'true') return;
+            kies(groep, optie, false);
+            volgAndere(groep, optie.dataset.waarde);
+            toepassen(optie.dataset.waarde, true);
+        });
+
+        // Pijltjes, Home en End. Bij weergave kiest dat meteen (zoals een
+        // gewone radiogroep). Bij taal alleen de focus verplaatsen: een
+        // taalwissel kan naar een andere pagina gaan (taalvariant van een
+        // artikel), dus die kies je met Enter, spatie of een klik.
+        const kiestMeteen = groep.dataset.instelling !== 'taal';
+
+        groep.addEventListener('keydown', e => {
+            const lijst = opties();
+            const nu = lijst.indexOf(document.activeElement);
+            const stap = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[e.key];
+            let volgende;
+            if (stap) volgende = lijst[(nu + stap + lijst.length) % lijst.length];
+            else if (e.key === 'Home') volgende = lijst[0];
+            else if (e.key === 'End') volgende = lijst[lijst.length - 1];
+            else return;
+            e.preventDefault();
+            if (kiestMeteen) {
+                kies(groep, volgende, true);
+                volgAndere(groep, volgende.dataset.waarde);
+                toepassen(volgende.dataset.waarde);
+            } else {
+                lijst.forEach(o => { o.tabIndex = o === volgende ? 0 : -1; });
+                volgende.focus();
+            }
+        });
+    }
+
+    // ── Paneel ───────────────────────────────────────────────────────────
+
+    // Twee knoppen openen hetzelfde paneel: Instellingen op desktop en Menu
+    // onder 1024 px (dan staan navigatie en account bovenin het paneel).
+    // Er is er altijd maar één zichtbaar.
+    function koppelPaneel() {
+        const knoppen = Array.from(document.querySelectorAll('.settings-trigger, .menu-knop'));
+        const paneel = knoppen[0] && document.getElementById(knoppen[0].getAttribute('aria-controls'));
+        if (!paneel) return;
+        const zichtbareKnop = () => knoppen.find(k => k.offsetParent !== null) || knoppen[0];
+        const isOpen = () => paneel.classList.contains('is-open');
+
+        function open(knop) {
+            paneel.inert = false;
+            paneel.classList.add('is-open');
+            knoppen.forEach(k => k.setAttribute('aria-expanded', 'true'));
+            // Menu: naar de eerste link. Instellingen: naar de gekozen weergave.
+            const eerste = knop.classList.contains('menu-knop')
+                ? paneel.querySelector('.menu-link[href]')
+                : paneel.querySelector('[role="radio"][aria-checked="true"]');
+            if (eerste) eerste.focus({ preventScroll: true });
+        }
+
+        function sluit(focusTerug) {
+            paneel.classList.remove('is-open');
+            paneel.inert = true;
+            knoppen.forEach(k => k.setAttribute('aria-expanded', 'false'));
+            if (focusTerug) zichtbareKnop().focus();
+        }
+
+        knoppen.forEach(knop => knop.addEventListener('click', () => {
+            if (isOpen()) sluit(false);
+            else open(knop);
+        }));
+
+        paneel.querySelector('[data-sluit-instellingen]')?.addEventListener('click', () => sluit(true));
+
+        document.addEventListener('keydown', e => {
+            if (e.key !== 'Escape' || !isOpen()) return;
+            const binnen = paneel.contains(document.activeElement) || knoppen.includes(document.activeElement);
+            sluit(binnen);
+        });
+    }
+
+    // ── Cookiebalk ───────────────────────────────────────────────────────
+
+    const COOKIE_SLEUTEL = 'brightNews_cookies';
+    const COOKIE_DATUM = 'brightNews_cookies_datum';
+    const COOKIE_GELDIG_DAGEN = 365;
+
+    function cookieKeuze() {
+        const keuze = lees(COOKIE_SLEUTEL);
+        if (keuze !== 'accepted' && keuze !== 'essential') return null;
+        // Een keuze van de live site heeft (nog) geen datum: die geldt.
+        const datum = Date.parse(lees(COOKIE_DATUM) || '');
+        if (datum && Date.now() - datum > COOKIE_GELDIG_DAGEN * 864e5) return null;
+        return keuze;
+    }
+
+    // Google Analytics, alleen na toestemming (keuze 'accepted'). Trekt de
+    // lezer die later in, dan stopt het meten op deze pagina meteen.
+    const GA_ID = 'G-ZNFX3R9BQV';
+    function statistieken(aan) {
+        // Alleen op de echte site: lokaal testen telt niet als bezoek.
+        if (window.location.hostname !== 'brightnews.online') return;
+        if (!aan && !window.__gaGeladen) return;
+        // Uit: gtag.js stuurt dan ook geen cookieloze pings meer, en de
+        // GA-cookies gaan weg. Aan (opnieuw): de vlag weer vrijgeven.
+        window[`ga-disable-${GA_ID}`] = !aan;
+        if (!aan) {
+            document.cookie.split(';').map(c => c.split('=')[0].trim())
+                .filter(naam => naam === '_ga' || naam.startsWith('_ga_'))
+                .forEach(naam => { document.cookie = `${naam}=; Max-Age=0; path=/; domain=.brightnews.online`; });
+        }
+        window.dataLayer = window.dataLayer || [];
+        // gtag moet het arguments-object doorgeven, geen array.
+        window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+        window.gtag('consent', window.__gaGeladen ? 'update' : 'default', {
+            analytics_storage: aan ? 'granted' : 'denied',
+            ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
+        });
+        if (!aan || window.__gaGeladen) return;
+        window.__gaGeladen = true;
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+        document.head.appendChild(script);
+        window.gtag('js', new Date());
+        window.gtag('config', GA_ID);
+    }
+
+    function bewaarCookies(keuze) {
+        schrijf(COOKIE_SLEUTEL, keuze);
+        schrijf(COOKIE_DATUM, new Date().toISOString().slice(0, 10));
+        statistieken(keuze === 'accepted');
+        document.dispatchEvent(new CustomEvent('bn:cookies', { detail: { statistieken: keuze === 'accepted' } }));
+    }
+
+    function koppelCookiebalk() {
+        const balk = document.getElementById('cookiebalk');
+        if (!balk) return;
+        const statistieken = document.getElementById('cookie-statistieken');
+        const knoppen = [...balk.querySelectorAll('[data-cookie="instellingen"]')];
+
+        // De balk ligt over de onderkant van de pagina; zoveel ruimte houdt
+        // de pagina eronder vrij, zodat de footer leesbaar blijft.
+        const ruimte = new ResizeObserver(() => {
+            document.body.style.paddingBottom = balk.hidden ? '' : `${balk.offsetHeight}px`;
+        });
+        ruimte.observe(balk);
+
+        function weergave(welke) {
+            balk.dataset.weergave = welke;
+            knoppen.forEach(k => k.setAttribute('aria-expanded', String(welke === 'instellingen')));
+        }
+
+        function open(welke) {
+            statistieken.checked = cookieKeuze() === 'accepted';
+            weergave(welke);
+            balk.hidden = false;
+            document.body.style.paddingBottom = `${balk.offsetHeight}px`;
+        }
+
+        function sluit(keuze) {
+            bewaarCookies(keuze);
+            const hadFocus = balk.contains(document.activeElement);
+            balk.hidden = true;
+            document.body.style.paddingBottom = '';
+            // De focus niet laten verdwijnen met de balk.
+            if (hadFocus) {
+                const main = document.getElementById('inhoud');
+                if (main) {
+                    if (!main.hasAttribute('tabindex')) main.setAttribute('tabindex', '-1');
+                    main.focus({ preventScroll: true });
+                }
+            }
+        }
+
+        balk.addEventListener('click', e => {
+            const knop = e.target.closest('[data-cookie]');
+            if (!knop) return;
+            const actie = knop.dataset.cookie;
+            if (actie === 'instellingen') {
+                weergave('instellingen');
+                statistieken.focus();
+            } else if (actie === 'noodzakelijk') {
+                sluit('essential');
+            } else if (actie === 'opslaan') {
+                sluit(statistieken.checked ? 'accepted' : 'essential');
+            } else if (actie === 'alles') {
+                sluit('accepted');
+            }
+        });
+
+        // Opnieuw openen: "Cookie-instellingen" in de footer en "Cookie-
+        // instellingen aanpassen" in de privacyverklaring (ook als die later
+        // in de pagina komt).
+        document.addEventListener('click', e => {
+            if (!e.target.closest('[data-cookie-instellingen]')) return;
+            open('instellingen');
+            statistieken.focus();
+        });
+
+        if (!cookieKeuze()) open('balk');
+    }
+
+    function start() {
+        markeerHuidigePagina();
+        zetJaartal();
+        // Zonder index.js zet niemand anders de bewaarde taal bij het laden.
+        const taal = lees(TAAL_SLEUTEL);
+        if (taal && !heeftVarianten() && typeof window.wisselTaal !== 'function' && taal !== document.documentElement.lang) {
+            pasTaalToe(taal);
+        }
+        koppelPaneel();
+        document.querySelectorAll('[role="radiogroup"][data-instelling]').forEach(koppelGroep);
+        koppelCookiebalk();
+        if (cookieKeuze() === 'accepted') statistieken(true);
+        // De service worker (sw.js): offline terugval. Root-scope, dus ook
+        // vanaf /articles/ en /categories/.
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(() => {}));
+        }
+    }
+
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
+    else start();
+})();

@@ -1,0 +1,1472 @@
+/* BrightNews v5 — paginaopbouw.
+ *
+ * Hoe de componenten uit componenten.css op een pagina staan: secties,
+ * rasters en kolommen van de v5-frames (Home, Dagoverzicht, Archief, Editie,
+ * Artikel). Geen eigen componenten en geen losse kleuren; alles komt uit
+ * tokens.css. Laad na componenten.css.
+ *
+ * Breekpunten (Figma: Mobiel · Besluiten): desktop vanaf 1024, tablet 768–1023
+ * (meestal twee kolommen), mobiel tot 767 (één kolom, zijmarge 16).
+ */
+
+
+/* ── Secties ───────────────────────────────────────────────────────────── */
+
+.sectie {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xl);
+    padding-bottom: var(--section-sm);
+}
+
+.sectie--compact {
+    gap: var(--spacing-lg);
+}
+
+.sectie--top {
+    padding-top: var(--section-xs);
+}
+
+.sectie--kop {
+    padding-top: var(--section-xs);
+    padding-bottom: var(--spacing-2xl);
+}
+
+.sectie[hidden] {
+    display: none;
+}
+
+.sectie__kop {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xs);
+}
+
+.sectie__titel {
+    font-size: var(--type-heading-md-size);
+    line-height: var(--type-heading-md-line-height);
+    font-weight: 600;
+    letter-spacing: -0.12px;
+}
+
+.sectie__uitleg {
+    color: var(--text-secondary);
+}
+
+/* Dagoverzicht bovenaan de homepage: 40 px boven en onder. */
+.home-dagoverzicht {
+    padding-block: var(--section-xs);
+}
+
+
+/* ── Editieraster ──────────────────────────────────────────────────────
+   Besluit v5 · 05: één grote kaart met twee kaarten ernaast, daaronder
+   rijen van vier (homepage) of drie (eerdere editie). Twee verhalen: één
+   grote en één kleinere. */
+
+.editie-raster {
+    display: flex;
+    flex-direction: column;
+    gap: var(--grid-gutter);
+}
+
+.editie-raster__top {
+    display: grid;
+    grid-template-columns: minmax(0, 845fr) minmax(0, 411fr);
+    gap: var(--grid-gutter);
+}
+
+.editie-raster__top > .story-card--groot {
+    aspect-ratio: auto;
+    min-height: 584px;
+}
+
+.editie-raster__top--enkel {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.editie-raster__zij {
+    display: flex;
+    flex-direction: column;
+    gap: var(--grid-gutter);
+}
+
+.editie-raster__zij > .story-card--overlay {
+    flex: 1;
+    aspect-ratio: auto;
+    min-height: 200px;
+}
+
+.editie-raster__rij {
+    display: grid;
+    grid-template-columns: repeat(var(--kolommen, 4), minmax(0, 1fr));
+    gap: var(--grid-gutter);
+    align-items: start;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.editie-raster__rij--drie {
+    --kolommen: 3;
+}
+
+@media (max-width: 1023px) {
+    .editie-raster__top {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .editie-raster__top > .story-card--groot {
+        min-height: 440px;
+    }
+
+    .editie-raster__zij {
+        flex-direction: row;
+    }
+
+    .editie-raster__zij > * {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .editie-raster__rij {
+        --kolommen: 2;
+    }
+}
+
+@media (max-width: 767px) {
+    .editie-raster__zij {
+        flex-direction: column;
+    }
+
+    /* Mobiel: de twee kleine overlaykaarten in 3:2 (Figma: 358 × 239). */
+    .editie-raster__zij > .story-card--overlay {
+        flex: none;
+        min-height: 0;
+        aspect-ratio: 3 / 2;
+    }
+
+    .editie-raster__rij,
+    .editie-raster__rij--drie {
+        --kolommen: 1;
+    }
+}
+
+
+/* ── Koppen ────────────────────────────────────────────────────────────
+   Gisteren op de homepage: drie kolommen headline items, geen foto's. */
+
+.koppen-raster {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: var(--grid-gutter);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.koppen-lijst {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@media (max-width: 1023px) {
+    .koppen-raster {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 767px) {
+    .koppen-raster {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+/* Regel onder de koppen: waar de foto's en samenvattingen staan. */
+.verwijzing {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+    color: var(--text-secondary);
+}
+
+.verwijzing .icoon {
+    margin-top: 2px;
+}
+
+
+/* ── Einde ───────────────────────────────────────────────────────────── */
+
+.einde {
+    display: flex;
+    justify-content: center;
+    padding-bottom: var(--section-sm);
+}
+
+.einde .edition-end {
+    width: 100%;
+    max-width: 628px;
+}
+
+
+/* ── Archief ─────────────────────────────────────────────────────────── */
+
+.archief-maand {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    padding-bottom: var(--section-xs);
+}
+
+.archief-meer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding-bottom: var(--section-sm);
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+
+/* ── Eerdere editie ──────────────────────────────────────────────────── */
+
+.editie-digests {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding-bottom: var(--section-xs);
+}
+
+.editie-nav-wrap {
+    padding-bottom: var(--section-sm);
+}
+
+/* Oudere editie: links de kop met uitleg, rechts de koppen. */
+.editie-oud {
+    display: grid;
+    grid-template-columns: minmax(0, 400px) minmax(0, 840px);
+    justify-content: space-between;
+    gap: var(--spacing-3xl);
+    padding-block: var(--section-xs) var(--section-xs);
+}
+
+.editie-oud .page-head {
+    gap: var(--spacing-md);
+}
+
+@media (max-width: 1023px) {
+    .editie-oud {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+
+/* ── Artikel en dagoverzicht ─────────────────────────────────────────── */
+
+.artikel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-2xl);
+    padding-block: var(--section-xs) var(--section-sm);
+}
+
+.artikel > * {
+    width: 100%;
+    max-width: var(--layout-reading-width);
+}
+
+.artikel__beeld {
+    max-width: var(--layout-media-width);
+    aspect-ratio: 960 / 540;
+    border: var(--border-width-sm) solid var(--border-default);
+    border-radius: var(--radius-2xl);
+    background: var(--surface-muted);
+    object-fit: cover;
+}
+
+.artikel__beeld.merkbeeld {
+    border: 0;
+}
+
+.artikel__kop {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.artikel__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.artikel__titel {
+    font-size: var(--type-display-sm-size);
+    line-height: var(--type-display-sm-line-height);
+    font-weight: 500;
+    letter-spacing: -0.48px;
+}
+
+.artikel__tekst {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    color: var(--text-secondary);
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-28);
+}
+
+.artikel__tekst h2 {
+    color: var(--text-primary);
+    font-size: var(--type-heading-md-size);
+    line-height: var(--type-heading-md-line-height);
+    font-weight: 600;
+    letter-spacing: -0.12px;
+}
+
+.artikel__bronnen {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.bronverwijzing {
+    color: var(--text-link);
+    font-size: var(--font-size-14);
+    font-weight: 600;
+    text-decoration: none;
+    vertical-align: super;
+    line-height: 0;
+}
+
+.bronverwijzing:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+    .artikel__titel {
+        font-size: var(--type-heading-lg-size);
+        line-height: var(--type-heading-lg-line-height);
+        letter-spacing: -0.32px;
+    }
+}
+
+/* Meer uit deze editie: een band in het subtiele vlak. */
+.meer-band {
+    padding-block: var(--section-xs) var(--section-sm);
+    background: var(--surface-subtle);
+}
+
+.meer-band__binnen {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.meer-band__titel {
+    font-size: var(--type-heading-lg-size);
+    line-height: var(--type-heading-lg-line-height);
+    font-weight: 500;
+    letter-spacing: -0.32px;
+}
+
+
+/* ── Niet gevonden ─────────────────────────────────────────────────────
+   Een editie, dagoverzicht of artikel dat er niet (meer) is. */
+
+.niet-gevonden {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    padding-block: var(--section-xs) var(--section-sm);
+}
+
+
+/* ── Abonnementen ────────────────────────────────────────────────────── */
+
+.abo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--section-xs);
+    padding-block: var(--section-xs) var(--section-md);
+}
+
+.abo__intro {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    max-width: var(--layout-reading-width);
+}
+
+.abo__intro p:last-child {
+    color: var(--text-secondary);
+}
+
+.abo__kolommen {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 480px);
+    align-items: start;
+    gap: var(--section-xs);
+}
+
+.abo__formulier {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    padding: var(--spacing-2xl);
+    border: var(--border-width-sm) solid var(--border-default);
+    border-radius: var(--radius-xl);
+    background: var(--surface-default);
+}
+
+.abo__plannen {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.abo__plannen legend {
+    margin-bottom: var(--spacing-sm);
+    padding: 0;
+}
+
+.abo__toestemming {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.kleine-lettertjes {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.kleine-lettertjes a,
+.abo__al-premium a {
+    color: var(--text-link);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.kleine-lettertjes .verwijzing {
+    gap: var(--spacing-xs);
+}
+
+.abo__aside {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.abo__vergelijk {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-xl);
+    background: var(--surface-subtle);
+}
+
+.abo__vergelijk > p {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.abo__al-premium {
+    padding-inline: var(--spacing-2xl);
+    color: var(--text-secondary);
+}
+
+.abo__faq {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    max-width: 760px;
+}
+
+@media (max-width: 1023px) {
+    .abo__kolommen {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .abo__formulier,
+    .abo__vergelijk {
+        padding: var(--spacing-lg);
+    }
+
+    .abo__al-premium {
+        padding-inline: 0;
+    }
+}
+
+
+/* ── Formulierpagina's (inloggen, account maken, wachtwoord vergeten) ────
+   Eén smalle kolom (layout/form-width) op het subtiele vlak. */
+
+.formulierpagina {
+    padding-block: var(--section-md);
+    background: var(--surface-subtle);
+}
+
+.formulierpagina__kolom {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    max-width: calc(var(--layout-form-width) + 2 * var(--layout-section-padding-x));
+}
+
+.formulierpagina__kolom[hidden] {
+    display: none;
+}
+
+/* "Terug naar inloggen" bovenaan de kolom: zo breed als de knop zelf. */
+.formulier-terug {
+    align-self: flex-start;
+}
+
+.formulier-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+}
+
+.formulier-intro p {
+    color: var(--text-secondary);
+}
+
+.formulier-intro > .icoon {
+    width: 48px;
+    height: 48px;
+    color: var(--text-link);
+}
+
+.form-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    padding: var(--spacing-2xl);
+    border: var(--border-width-sm) solid var(--border-default);
+    border-radius: var(--radius-xl);
+    background: var(--surface-default);
+}
+
+.form-card[hidden],
+.form-card [hidden] {
+    display: none;
+}
+
+.form-card__blok {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.form-card__blok h2 {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+}
+
+.form-card__blok h2 + p {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.wachtwoord-opties {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-xs) var(--spacing-md);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.wachtwoord-opties a {
+    color: var(--text-link);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.knoppen-rij {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.formulier-akkoord {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.formulier-akkoord a {
+    color: var(--text-link);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.formulier-onder {
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+.formulier-onder a {
+    color: var(--text-link);
+    font-weight: 500;
+}
+
+@media (max-width: 767px) {
+    .formulierpagina {
+        padding-block: var(--section-xs);
+    }
+
+    .form-card {
+        padding: var(--spacing-lg);
+    }
+}
+
+
+/* ── Mijn account ────────────────────────────────────────────────────────
+   Intro, dan twee kolommen kaarten op het subtiele vlak: abonnement en
+   promocode links, instellingen en inloggen rechts (480 px). */
+
+.account {
+    padding-block: var(--section-xs) var(--section-md);
+    background: var(--surface-subtle);
+}
+
+.account__binnen {
+    display: flex;
+    flex-direction: column;
+    gap: var(--section-xs);
+}
+
+.account__intro {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    max-width: var(--layout-reading-width);
+}
+
+.account__intro p {
+    color: var(--text-secondary);
+    overflow-wrap: anywhere;
+}
+
+.account__kolommen {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 480px);
+    align-items: start;
+    gap: var(--section-xs);
+}
+
+.account__kolom {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+/* Promocode en Inloggen: 16 px tussen de delen in plaats van 24. */
+.form-card.account__kaart--dicht {
+    gap: var(--spacing-md);
+}
+
+.account__kop {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-sm);
+}
+
+.account__staat {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.account__secundair,
+.account__premium p {
+    color: var(--text-secondary);
+}
+
+.account__klein {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.account__premium,
+.account__beheren {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+}
+
+.account__beheren {
+    gap: var(--spacing-xs);
+}
+
+.leestegoed {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    background: var(--surface-subtle);
+}
+
+.leestegoed__label {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 600;
+}
+
+/* Gegevens van het abonnement: label links (200 px), waarde rechts. */
+.gegevens,
+.gegevens dd {
+    margin: 0;
+}
+
+.gegevens__rij {
+    display: flex;
+    gap: var(--spacing-md);
+    padding-block: var(--spacing-sm);
+    border-top: var(--border-width-sm) solid var(--border-default);
+}
+
+.gegevens__rij dt {
+    flex: 0 0 200px;
+    color: var(--text-secondary);
+}
+
+.gegevens__rij dd {
+    flex: 1;
+    min-width: 0;
+    font-weight: 600;
+}
+
+.account .setting-groep {
+    gap: var(--spacing-xs);
+}
+
+.account__lijn {
+    margin: 0;
+    border: 0;
+    border-top: var(--border-width-sm) solid var(--border-default);
+}
+
+.account__mails {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.promocode {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.promocode__rij {
+    display: flex;
+    align-items: flex-end;
+    gap: var(--spacing-sm);
+}
+
+.promocode__rij .invoer {
+    flex: 1;
+    min-width: 0;
+}
+
+.promocode .field-error {
+    padding-left: 0;
+}
+
+/* Inloggen: label boven de waarde, de actie rechts. */
+.gegevens-rij {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding-block: var(--spacing-sm);
+    border-bottom: var(--border-width-sm) solid var(--border-default);
+}
+
+.gegevens-rij__tekst {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: var(--spacing-2xs);
+    min-width: 0;
+}
+
+.gegevens-rij__label {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.gegevens-rij__waarde {
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.gegevens-rij__actie {
+    color: var(--text-link);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 500;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+@media (max-width: 1023px) {
+    .account__kolommen {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .gegevens__rij {
+        flex-direction: column;
+        gap: var(--spacing-2xs);
+    }
+
+    .gegevens__rij dt {
+        flex-basis: auto;
+    }
+
+    .gegevens-rij {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* ── Infopagina's (Over ons, Zo kiezen we) ──────────────────────────────
+   Secties onder elkaar die wisselen tussen surface/default en
+   surface/subtle (--subtiel). De tekst blijft in layout/reading-width
+   (720); alleen rijen kaarten gebruiken de volle breedte. De intro sluit
+   met 40 aan op de eerste sectie, die ook met 40 begint. */
+
+.info-sectie {
+    padding-block: var(--section-sm);
+}
+
+.info-sectie--intro {
+    padding-bottom: var(--section-xs);
+}
+
+.info-sectie--intro + .info-sectie {
+    padding-top: var(--section-xs);
+}
+
+.info-sectie--subtiel {
+    background: var(--surface-subtle);
+}
+
+.info-sectie__binnen {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xl);
+}
+
+.info-tekst {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+}
+
+/* De sectie zelf is een gewone container (links in de 1280); alleen de
+   inhoud blijft binnen de leesbreedte. */
+.info-tekst > *,
+.info-faq > * {
+    max-width: var(--layout-reading-width);
+}
+
+.info-tekst > p {
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-28);
+}
+
+.info-tekst > .info-tekst__lead,
+.info-kop p {
+    color: var(--text-secondary);
+}
+
+.leesbreedte {
+    max-width: var(--layout-reading-width);
+}
+
+.info-kop {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    max-width: var(--layout-reading-width);
+}
+
+.info-kop p {
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-28);
+}
+
+.info-tekst .knoppen-rij {
+    margin-top: var(--spacing-2xs);
+}
+
+/* Zo kiezen we: twee lijsten naast elkaar, elk in een eigen vlak. */
+.lijst-kaarten {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: var(--spacing-xl);
+}
+
+.lijst-kaart {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-xl);
+    background: var(--surface-default);
+}
+
+.info-faq {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.info-faq > div {
+    width: 100%;
+}
+
+@media (max-width: 1023px) {
+    .lijst-kaarten {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .lijst-kaart {
+        padding: var(--spacing-xl);
+    }
+}
+
+
+/* ── Bedankt ─────────────────────────────────────────────────────────────
+   Eén kolom (480) in het midden, met 120 boven en onder, ook op de
+   telefoon. Drie staten: gelukt, bezig (Premium wordt aangezet) en traag
+   (duurt langer dan normaal). */
+
+.bedankt {
+    padding-block: var(--section-md);
+}
+
+.bedankt .formulier-intro {
+    gap: var(--spacing-md);
+}
+
+.bedankt__tekst {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.bedankt__tekst p {
+    color: var(--text-secondary);
+}
+
+.bedankt .gegevens__rij dt {
+    flex-basis: 144px;
+}
+
+.bedankt__status {
+    gap: var(--spacing-xs);
+}
+
+.bedankt__status h2 {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+}
+
+.bedankt__status p,
+.bedankt__regel {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.bedankt__regel a {
+    color: var(--text-link);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+
+/* ── Contact ─────────────────────────────────────────────────────────────
+   Intro, dan het formulier (760) met rechts de snelle routes (480). Op de
+   telefoon eerst de routes, dan het formulier. */
+
+.contact {
+    padding-block: var(--section-xs) var(--section-md);
+    background: var(--surface-subtle);
+}
+
+.contact__binnen {
+    display: flex;
+    flex-direction: column;
+    gap: var(--section-xs);
+}
+
+.contact__kolommen {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 480px);
+    align-items: start;
+    gap: var(--section-xs);
+}
+
+.contact .form-card h2 {
+    font-family: var(--font-family-display);
+    font-size: var(--type-heading-md-size);
+    line-height: var(--type-heading-md-line-height);
+    font-weight: 600;
+}
+
+.form-card__twee {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.form-card > .btn,
+.contact__verstuurd .knoppen-rij {
+    align-self: flex-start;
+}
+
+.routes-kaart {
+    gap: var(--spacing-md);
+}
+
+.contact__verstuurd {
+    align-items: flex-start;
+}
+
+.contact__verstuurd p {
+    color: var(--text-secondary);
+}
+
+@media (max-width: 1023px) {
+    .contact__kolommen {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .routes-kaart {
+        order: -1;
+    }
+}
+
+@media (max-width: 767px) {
+    .form-card__twee {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+
+/* ── Feedback ────────────────────────────────────────────────────────────
+   Zoals de formulierpagina's, maar met 40 boven (de terugknop staat er
+   direct) en 120 onder, ook op de telefoon. Het vak "Over het artikel" staat bovenin de kaart. */
+
+.formulierpagina--dicht {
+    padding-block: var(--section-xs) var(--section-md);
+}
+
+.over-artikel {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xs);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    background: var(--surface-subtle);
+}
+
+.over-artikel__label {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 600;
+}
+
+.over-artikel__titel {
+    font-weight: 600;
+}
+
+.feedback__samenvatting {
+    color: var(--text-secondary);
+}
+
+
+/* ── Juridische pagina's ─────────────────────────────────────────────────
+   Inhoudsopgave links (layout/toc-width: 280), tekst rechts in de
+   leesbreedte (720), 80 ertussen. De inhoudsopgave schuift mee (sticky).
+   Onder 1024 staat hij ingeklapt boven de tekst en staan de andere
+   documenten onderaan. */
+
+.juridisch {
+    --layout-toc-width: 280px;
+    padding-block: var(--section-xs) var(--section-md);
+}
+
+.juridisch__binnen {
+    display: grid;
+    grid-template-columns: var(--layout-toc-width) minmax(0, var(--layout-reading-width));
+    align-items: start;
+    gap: var(--section-sm);
+}
+
+.juridisch__toc {
+    position: sticky;
+    top: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.juridisch__toc-details summary {
+    display: none;
+}
+
+.juridisch__toc-kop--breed {
+    margin-bottom: calc(var(--spacing-md) - var(--spacing-xl));
+}
+
+.juridisch__toc-details {
+    border: 0;
+}
+
+.juridisch__toc-kop {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 600;
+}
+
+.juridisch__toc-details > .juridisch__toc-lijst {
+    margin-top: 0;
+}
+
+.juridisch__toc .juridisch__toc-details::before {
+    content: none;
+}
+
+.juridisch__toc-lijst {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.juridisch__toc-lijst a {
+    display: block;
+    padding: var(--spacing-xs) 0 var(--spacing-xs) var(--spacing-sm);
+    border-left: var(--border-width-sm) solid var(--border-default);
+    color: var(--text-link);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.juridisch__toc-lijst a:hover {
+    text-decoration: underline;
+}
+
+.juridisch__toc-lijst a[aria-current] {
+    border-left: 3px solid var(--action-primary-bg);
+    padding-left: calc(var(--spacing-sm) - 2px);
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.juridisch__andere {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.juridisch__andere ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.juridisch__andere a,
+.juridisch__link {
+    color: var(--text-link);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.juridisch__andere a {
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.juridisch__andere--smal {
+    display: none;
+}
+
+.juridisch__tekst {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xl);
+    min-width: 0;
+}
+
+.juridisch__kop {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.juridisch__meta {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.juridisch__kort {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    background: var(--surface-subtle);
+}
+
+.juridisch__kort h2,
+.juridisch__h3 {
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+}
+
+.juridisch__sectie {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    scroll-margin-top: var(--spacing-xl);
+}
+
+.juridisch__sectie > p,
+.juridisch__lijst {
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-28);
+}
+
+.juridisch__lijst {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    margin: 0;
+    padding-left: var(--spacing-lg);
+}
+
+button.juridisch__link {
+    padding: 0;
+    border: 0;
+    background: none;
+    font: inherit;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media (max-width: 1023px) {
+    .juridisch {
+        --layout-toc-width: 358px;
+    }
+
+    .juridisch__binnen {
+        grid-template-columns: minmax(0, 1fr);
+        gap: var(--spacing-xl);
+    }
+
+    .juridisch__toc {
+        position: static;
+        max-width: var(--layout-toc-width);
+    }
+
+    .juridisch__toc-details {
+        border-block: var(--border-width-sm) solid var(--border-default);
+    }
+
+    .juridisch__toc-details summary {
+        display: flex;
+    }
+
+    .juridisch__toc-details summary .juridisch__toc-kop {
+        color: var(--text-primary);
+        font-size: var(--font-size-16);
+        line-height: var(--line-height-24);
+    }
+
+    .juridisch__toc-details > .juridisch__toc-lijst {
+        padding-bottom: var(--spacing-md);
+    }
+
+    .juridisch__andere--breed,
+    .juridisch__toc-kop--breed {
+        display: none;
+    }
+
+    .juridisch__andere--smal {
+        display: flex;
+        padding-top: var(--spacing-xl);
+        border-top: var(--border-width-sm) solid var(--border-default);
+    }
+}
+
+
+/* ── Statuspagina's (404, Afmelden) en de foutstaat van de homepage ──────
+   Eén kolom met een groot rond icoon, een titel in gewone taal en een
+   uitweg. 404 en de foutstaat staan op het witte vlak (720 breed); Afmelden
+   is een formulierpagina (480). */
+
+.status-pagina {
+    padding-block: var(--section-md);
+}
+
+.status-pagina__kolom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xl);
+}
+
+/* Links in de container; alleen de inhoud blijft binnen 720. */
+.status-pagina__kolom > * {
+    max-width: var(--layout-reading-width);
+}
+
+.status-pagina__tekst {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.status-pagina__tekst p:not(.type-overline),
+.status-pagina__hint {
+    color: var(--text-secondary);
+}
+
+.status-pagina__onderwerpen {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.status-icoon--fout {
+    background: var(--feedback-error-bg);
+    color: var(--feedback-error-fg);
+}
+
+/* Afmelden gelukt: uitleg in gewone tekst, 16 tussen tekst en knoppen. */
+.afmelden__kaart {
+    gap: var(--spacing-md);
+}
+
+/* Afmelden mislukt: drie andere routes, met een lijn ertussen. */
+.opties {
+    margin: 0 0 var(--spacing-xs);
+    padding: 0;
+    list-style: none;
+}
+
+.opties li {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xs);
+    padding-block: var(--spacing-sm);
+    border-top: var(--border-width-sm) solid var(--border-default);
+}
+
+.opties h3 {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+}
+
+.opties p {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.knoppen-rij .tekstlink {
+    align-self: center;
+}
+
+/* Homepage: de foutstaat staat boven Per onderwerp, met 80 eronder. */
+.home-fout {
+    padding-block: var(--section-md) var(--section-sm);
+}
+
+.home-fout[hidden] {
+    display: none;
+}
+
+/* ── Themapagina's ─────────────────────────────────────────────────────
+   backend/generate-evergreen.js: de datum onder de kop, en bij elk verhaal
+   één zin waarom het de moeite waard is. */
+
+.info-tekst > .info-tekst__datum {
+    margin-top: calc(-1 * var(--spacing-xs));
+    color: var(--text-secondary);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-24);
+}
+
+.info-tekst > .koppen-lijst {
+    width: 100%;
+}
+
+.headline-item__tekst {
+    color: var(--text-secondary);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-24);
+}

@@ -1,0 +1,3024 @@
+/* BrightNews v5 — componenten.
+ *
+ * Elke klasse hoort bij één component uit Figma ("v5 · Componenten" op de
+ * pagina Webdesign); de Figma-naam staat erboven. Wijzig een component hier,
+ * niet per pagina. Zie stijlgids.html voor alle componenten met hun staten,
+ * in licht en donker.
+ *
+ * Hover en focus volgen Figma: titels krijgen een onderstreping, knoppen en
+ * kaders een rustige vlakkleur, en alles wat focus krijgt de groene ring.
+ */
+
+
+/* ── Button ────────────────────────────────────────────────────────────
+   Primary = de ene hoofdactie per scherm. Secondary = al het andere.
+   Tertiary = een zijpad zoals Account verwijderen: zelfde rand, zonder
+   vlak. Maat md (40 px) of sm (32 px). */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    height: var(--control-height-md);
+    padding-inline: var(--spacing-md);
+    border: var(--border-width-sm) solid transparent;
+    border-radius: var(--radius-md);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    transition:
+        background-color var(--motion-duration-fast) var(--motion-easing),
+        border-color var(--motion-duration-fast) var(--motion-easing);
+}
+
+.btn:focus-visible {
+    border-radius: var(--radius-md);
+}
+
+.btn--primary {
+    background: var(--action-primary-bg);
+    color: var(--text-on-action);
+}
+
+.btn--primary:hover {
+    background: color-mix(in srgb, var(--action-primary-bg) 86%, var(--text-primary));
+}
+
+.btn--secondary {
+    background: var(--surface-default);
+    border-color: var(--border-strong);
+    color: var(--text-primary);
+}
+
+.btn--secondary:hover {
+    background: var(--surface-muted);
+}
+
+.btn--tertiary {
+    background: transparent;
+    border-color: var(--border-strong);
+    color: var(--text-primary);
+}
+
+.btn--tertiary:hover {
+    background: var(--surface-muted);
+}
+
+/* Uitgeschakeld, zoals "Stuur opnieuw" in de eerste 60 seconden. Een knop die
+   even uit staat tijdens het versturen (aria-busy) houdt zijn kleur, anders
+   flitst hij grijs. */
+.btn:disabled:not([aria-busy]) {
+    background: var(--surface-muted);
+    border-color: var(--border-default);
+    color: var(--text-secondary);
+    cursor: not-allowed;
+}
+
+.btn--sm {
+    height: var(--control-height-sm);
+    padding-inline: var(--spacing-sm);
+    gap: var(--spacing-2xs);
+}
+
+.btn--vol {
+    width: 100%;
+}
+
+/* Raakvlak op touch (Mobiel · Besluiten): alles wat je aantikt is minstens
+   44 hoog. Knoppen blijven visueel 40 (md) of 32 (sm, socials); een
+   onzichtbare laag maakt de klikzone groter zonder dat het beeld verandert. */
+@media (pointer: coarse) {
+    .btn,
+    .social-knop,
+    .menu-knop {
+        position: relative;
+    }
+
+    .btn::after,
+    .social-knop::after,
+    .menu-knop::after {
+        content: "";
+        position: absolute;
+        inset: -2px 0;
+    }
+
+    .btn--sm::after,
+    .social-knop::after {
+        inset: -6px 0;
+    }
+}
+
+
+/* ── Badge "Brand" ─────────────────────────────────────────────────────
+   Categorie op een kaart, of een kort label zoals "Bespaar 29%". In donker
+   wordt het vlak geel; de inkt blijft donker. */
+
+/* Variant Success: groen, voor een voordeel zoals "Bespaar 29%" op de
+   abonnementenpagina. */
+.badge.badge--success {
+    background: var(--feedback-success-bg);
+    color: var(--feedback-success-fg);
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--spacing-2xs) var(--spacing-sm);
+    border-radius: var(--radius-full);
+    background: var(--surface-badge-brand);
+    color: var(--text-on-brand-strong);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* Size md: hoger vlak, naast een kop (Je abonnement · Gratis account). */
+.badge.badge--md {
+    padding: var(--spacing-xs) var(--spacing-sm);
+}
+
+/* Variant Warning: iets dat aandacht vraagt maar geen fout van de lezer is,
+   zoals Betaling mislukt in Mijn account. */
+.badge.badge--waarschuwing {
+    background: var(--feedback-warning-bg);
+    color: var(--feedback-warning-fg);
+}
+
+/* Variant Neutral: status zonder betekenis, zoals Gratis account. */
+.badge.badge--neutral {
+    background: var(--surface-muted);
+    color: var(--text-secondary);
+}
+
+
+/* ── Logo ──────────────────────────────────────────────────────────────
+   Beeldmerk als inline SVG (zon geel, horizon en stralen in tekstkleur) en
+   het woordmerk als echte tekst, zodat het meekleurt met de weergave. */
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    height: 40px;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.logo__beeldmerk {
+    width: 39.6px;
+    height: 40px;
+}
+
+.logo__woordmerk {
+    font-family: var(--font-family-display);
+    font-size: 26px;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: -0.39px;
+    white-space: nowrap;
+}
+
+.logo__woordmerk span {
+    color: var(--text-link);
+}
+
+.logo:focus-visible {
+    border-radius: var(--radius-md);
+}
+
+
+/* ── Header / Navbar ───────────────────────────────────────────────── */
+
+/* De lijn onder de header staat op de volle breedte (de navbar zelf is de
+   container van max. 1440 px). Met het paneel open komt de lijn onder het
+   paneel, en scheidt de bovenrand van het paneel het van de navbar. */
+.site-header {
+    position: relative;
+    z-index: 10;
+    border-bottom: var(--border-width-sm) solid var(--border-default);
+    background: var(--surface-default);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-xl);
+    min-height: 72px;
+}
+
+.navbar__links {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xl);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar__acties {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+/* _Nav link: Current = groene lijn onder de pagina waar je bent. */
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding-block: var(--spacing-xs);
+    border-bottom: var(--border-width-md) solid transparent;
+    color: var(--text-secondary);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-24);
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    white-space: nowrap;
+    transition: color var(--motion-duration-fast) var(--motion-easing);
+}
+
+.nav-link:hover {
+    color: var(--text-primary);
+}
+
+.nav-link[aria-current="page"] {
+    border-bottom-color: var(--action-primary-bg);
+    color: var(--text-primary);
+}
+
+/* Mobiel en tablet (Figma: Header, Breakpoint=Mobile). Onder 1024 px staan
+   alleen het logo en de knop Menu in een balk van 64 px; links, knoppen en
+   instellingen zitten in het menu, dat het instellingenpaneel hergebruikt.
+   De header scrolt mee weg (niet sticky): een vaste balk met uitklapmenu
+   zou over de inhoud vallen. */
+.menu-knop {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+    .navbar {
+        min-height: 64px;
+    }
+
+    .navbar > nav,
+    .navbar__acties > :not(.menu-knop) {
+        display: none;
+    }
+
+    .menu-knop {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--spacing-xs);
+        height: var(--control-height-md);
+        padding-inline: var(--spacing-md);
+        border: var(--border-width-sm) solid var(--border-strong);
+        border-radius: var(--radius-md);
+        background: var(--surface-default);
+        color: var(--text-primary);
+        font-size: var(--font-size-14);
+        line-height: var(--line-height-20);
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .menu-knop:focus-visible {
+        border-radius: var(--radius-md);
+    }
+
+    /* Icoon en label staan direct in de knop-flex; dicht toont "Menu",
+       open toont "Sluiten". */
+    .menu-knop__dicht,
+    .menu-knop[aria-expanded="true"] .menu-knop__open {
+        display: contents;
+    }
+
+    .menu-knop__open,
+    .menu-knop[aria-expanded="true"] .menu-knop__dicht {
+        display: none;
+    }
+}
+
+/* Eén primaire knop per scherm (besluit v5 · 18): staat er een paywall op
+   de pagina, dan wordt "Probeer Premium" in de header secundair. */
+body:has(.paywall) :is(.navbar, .mobiel-menu) .btn--primary {
+    border-color: var(--border-strong);
+    background: var(--surface-default);
+    color: var(--text-primary);
+}
+
+body:has(.paywall) :is(.navbar, .mobiel-menu) .btn--primary:hover {
+    background: var(--surface-muted);
+}
+
+/* Op de abonnementenpagina is "Start 30 dagen gratis" de enige primaire
+   knop; "Probeer Premium" in de header verdwijnt daar. */
+body[data-pagina="abonnementen"] :is(.navbar, .mobiel-menu) .btn--primary {
+    display: none;
+}
+
+/* Op de inlogpagina en Wachtwoord vergeten staan "Inloggen" en "Probeer
+   Premium" er niet: de enige primaire knop staat in het formulier. */
+body[data-pagina="inloggen"] :is(.navbar__acties, .mobiel-menu__account) .btn,
+body[data-pagina="wachtwoord"] :is(.navbar__acties, .mobiel-menu__account) .btn {
+    display: none;
+}
+
+/* Op Contact en Feedback is de knop van het formulier de enige primaire
+   knop; "Probeer Premium" in de header verdwijnt daar. Net zo op 404 en de
+   foutstaat van de homepage (data-pagina="fout", gezet door home.js). */
+body[data-pagina="contact"] :is(.navbar, .mobiel-menu) .btn--primary,
+body[data-pagina="feedback"] :is(.navbar, .mobiel-menu) .btn--primary,
+body[data-pagina="404"] :is(.navbar, .mobiel-menu) .btn--primary,
+body[data-pagina="fout"] :is(.navbar, .mobiel-menu) .btn--primary {
+    display: none;
+}
+
+/* Ingelogd of niet: <body data-ingelogd> toont Mijn account in plaats van
+   Inloggen. In het voorbeeld zet alleen v5-profiel.html dat; na de koppeling
+   doet de back-end het (TODO punt 66). Premium-leden (<body data-premium>)
+   zien "Probeer Premium" nergens. */
+body:not([data-ingelogd]) :is(.navbar, .mobiel-menu) [data-alleen="ingelogd"],
+body[data-ingelogd] :is(.navbar, .mobiel-menu) [data-alleen="uitgelogd"],
+body[data-premium] :is(.navbar, .mobiel-menu) .btn--primary {
+    display: none;
+}
+
+/* Op Mijn account is er geen primaire knop in de header: bij een gratis
+   account staat "Probeer Premium" al in de pagina, bij Premium hoort hij er
+   niet. Op Bedankt heeft de lezer zich net aangemeld: ook daar niet. */
+body[data-pagina="profiel"] :is(.navbar, .mobiel-menu) .btn--primary,
+body[data-pagina="bedankt"] :is(.navbar, .mobiel-menu) .btn--primary {
+    display: none;
+}
+
+
+/* ── Settings trigger ──────────────────────────────────────────────────
+   Opent het instellingenpaneel. Expanded (aria-expanded="true"): muted vlak,
+   donkere rand, chevron omhoog. */
+
+.settings-trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    height: var(--control-height-md);
+    padding-inline: var(--spacing-md);
+    border: var(--border-width-sm) solid var(--border-strong);
+    border-radius: var(--radius-md);
+    background: var(--surface-default);
+    color: var(--text-primary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+    transition:
+        background-color var(--motion-duration-fast) var(--motion-easing),
+        border-color var(--motion-duration-fast) var(--motion-easing);
+}
+
+.settings-trigger:hover {
+    background: var(--surface-subtle);
+}
+
+.settings-trigger:focus-visible {
+    border-radius: var(--radius-md);
+}
+
+.settings-trigger[aria-expanded="true"] {
+    background: var(--surface-muted);
+    border-color: var(--text-primary);
+}
+
+.settings-trigger__chevron {
+    transition: transform var(--motion-duration-base) var(--motion-easing);
+}
+
+.settings-trigger[aria-expanded="true"] .settings-trigger__chevron {
+    transform: rotate(180deg);
+}
+
+
+/* ── Settings panel ────────────────────────────────────────────────────
+   Klapt uit onder de header en duwt de pagina omlaag: geen overlay. Dicht
+   is het inert (niet te bereiken met tab). De hoogte animeert via de
+   grid-rij van 0fr naar 1fr. */
+
+.settings-panel {
+    display: grid;
+    grid-template-rows: 0fr;
+    visibility: hidden;
+    background: var(--surface-subtle);
+    transition:
+        grid-template-rows var(--motion-duration-base) var(--motion-easing),
+        visibility 0s linear var(--motion-duration-base);
+}
+
+.settings-panel.is-open {
+    grid-template-rows: 1fr;
+    visibility: visible;
+    transition:
+        grid-template-rows var(--motion-duration-base) var(--motion-easing),
+        visibility 0s;
+}
+
+.settings-panel__binnen {
+    min-height: 0;
+    overflow: hidden;
+}
+
+.settings-panel.is-open .settings-panel__binnen {
+    border-top: var(--border-width-sm) solid var(--border-default);
+}
+
+.settings-panel__inhoud {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: var(--section-xs);
+    padding-block: var(--spacing-2xl);
+}
+
+.setting-groep {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.setting-groep__titel {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+}
+
+.setting-groep__uitleg {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.setting-groep__opties {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+}
+
+.settings-panel__notitie {
+    display: flex;
+    flex: 1 1 280px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: var(--spacing-sm);
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    text-align: right;
+}
+
+/* Setting option: keuzeknop (role="radio"). Gekozen = groene rand van 2 px
+   en een vinkje. De tweede pixel is een schaduw aan de binnenkant, zodat de
+   knop niet verspringt bij het kiezen. */
+.setting-option {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: var(--border-width-sm) solid var(--border-default);
+    border-radius: var(--radius-lg);
+    background: var(--surface-default);
+    color: var(--text-primary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+        border-color var(--motion-duration-fast) var(--motion-easing),
+        background-color var(--motion-duration-fast) var(--motion-easing);
+}
+
+.setting-option:hover {
+    background: var(--surface-muted);
+}
+
+.setting-option:focus-visible {
+    border-radius: var(--radius-lg);
+}
+
+.setting-option__vinkje {
+    display: none;
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+    color: var(--text-link);
+}
+
+.setting-option[aria-checked="true"] {
+    border-color: var(--action-primary-bg);
+    box-shadow: inset 0 0 0 1px var(--action-primary-bg);
+}
+
+.setting-option[aria-checked="true"]:focus-visible {
+    box-shadow: inset 0 0 0 1px var(--action-primary-bg), var(--focus-ring);
+}
+
+.setting-option[aria-checked="true"] .setting-option__vinkje {
+    display: block;
+}
+
+/* Instellingen in een smalle kolom (Mijn account): twee gelijke kolommen in
+   plaats van rafelig doorlopen. */
+.setting-groep__opties--raster {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+
+/* ── Mobile menu ───────────────────────────────────────────────────────
+   Het bovenste deel van het paneel op mobiel: navigatie (Menu link),
+   account en Probeer Premium. Op desktop bestaat dit deel niet; daar
+   staan dezelfde links en knoppen in de navbar. */
+
+.mobiel-menu {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+    .settings-panel {
+        background: var(--surface-default);
+    }
+
+    .settings-panel__inhoud {
+        flex-direction: column;
+        align-items: stretch;
+        flex-wrap: nowrap;
+        gap: var(--spacing-lg);
+        padding-block: var(--spacing-md) var(--spacing-xl);
+    }
+
+    .settings-panel__notitie {
+        display: none;
+    }
+
+    .setting-groep {
+        gap: var(--spacing-xs);
+    }
+
+    .setting-groep__opties {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .mobiel-menu {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-lg);
+    }
+
+    .mobiel-menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .mobiel-menu__account {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .mobiel-menu__account .btn {
+        width: 100%;
+    }
+
+    .mobiel-menu hr {
+        width: 100%;
+        margin: 0;
+        border: 0;
+        border-top: var(--border-width-sm) solid var(--border-default);
+    }
+}
+
+/* Menu link: 48 hoog, huidige pagina met een balk links en een subtiel
+   vlak. */
+.menu-link {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-left: 3px solid transparent;
+    color: var(--text-primary);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu-link[aria-current="page"] {
+    border-left-color: var(--action-primary-bg);
+    background: var(--surface-subtle);
+}
+
+.menu-link:focus-visible {
+    border-radius: 0;
+}
+
+
+/* ── Merkbeeld ─────────────────────────────────────────────────────────
+   Staat in voor een ontbrekende foto (Digest hero "zonder foto", en kaarten
+   zonder bruikbaar beeld): groen vlak met de opkomende zon in de hoek. */
+
+.merkbeeld {
+    position: relative;
+    overflow: hidden;
+    background: var(--color-leaf-600);
+}
+
+.merkbeeld::after {
+    content: "";
+    position: absolute;
+    top: -18%;
+    right: -9%;
+    width: 34%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: var(--color-sun-400);
+}
+
+
+/* ── Story card ────────────────────────────────────────────────────────
+   Twee vormen. Overlay: titel op de foto, met een scrim alleen op het
+   tekstvlak (en 64 px vervloeiing erboven). Stacked: foto met kader erboven,
+   tekst eronder. De hele kaart is klikbaar via de link in de titel. */
+
+.story-card {
+    position: relative;
+    isolation: isolate;
+}
+
+.story-card__link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.story-card__link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    border-radius: inherit;
+}
+
+.story-card__link:focus-visible {
+    box-shadow: none;
+}
+
+.story-card:has(.story-card__link:focus-visible) {
+    box-shadow: var(--focus-ring);
+}
+
+.story-card:hover .story-card__link,
+.story-card__link:focus-visible {
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 3px;
+}
+
+.story-card__titel {
+    text-wrap: pretty;
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+}
+
+.story-card--overlay {
+    display: grid;
+    align-content: end;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    border-radius: var(--radius-2xl);
+    color: var(--text-on-image);
+    background: var(--surface-muted);
+}
+
+.story-card--overlay .story-card__beeld {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Eén verloop over het tekstvlak plus 64 px erboven: eerst van doorzichtig
+   naar de middelste scrim (de vervloeiing), daarna naar de donkerste. Het
+   tekstvlak is bewust niet gepositioneerd, zodat de klikbare laag van de
+   link de hele kaart dekt. */
+.story-card--overlay .story-card__tekst {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    padding: calc(64px + var(--spacing-xl)) var(--spacing-xl) var(--spacing-xl);
+    background: linear-gradient(
+        var(--overlay-scrim-start) 0,
+        var(--overlay-scrim-mid) 64px,
+        var(--overlay-scrim-end) 100%
+    );
+}
+
+.story-card--overlay .story-card__titel {
+    color: var(--text-on-image);
+}
+
+.story-card--stacked {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    border-radius: var(--radius-xl);
+}
+
+.story-card--stacked .story-card__beeld {
+    width: 100%;
+    height: 200px;
+    border: var(--border-width-sm) solid var(--border-default);
+    border-radius: var(--radius-xl);
+    object-fit: cover;
+    background: var(--surface-muted);
+}
+
+.story-card--stacked .story-card__tekst {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+/* Size lg: de grote kaart bovenaan een editie. Kop in displaymaat, 40 px
+   binnenruimte. */
+.story-card--groot .story-card__tekst {
+    gap: var(--spacing-md);
+    padding: calc(64px + var(--spacing-3xl)) var(--spacing-3xl) var(--spacing-3xl);
+}
+
+.story-card--groot .story-card__titel {
+    font-weight: 500;
+    font-size: var(--type-display-sm-size);
+    line-height: var(--type-display-sm-line-height);
+    letter-spacing: -0.72px;
+}
+
+.story-card--groot .story-card__link:focus-visible,
+.story-card--groot:hover .story-card__link {
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+/* Show meta: bron en tijd. Uit op de homepage en de editiepagina's, aan op
+   artikel- en categoriepagina's (besluit v5 · 06). */
+.story-card__meta {
+    color: var(--text-muted);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+/* No photo: het merkbeeld neemt de plek van de foto in. */
+.story-card--stacked .story-card__beeld.merkbeeld {
+    border: 0;
+    background: var(--color-leaf-600);
+}
+
+@media (max-width: 767px) {
+    .story-card--groot .story-card__tekst {
+        padding: calc(64px + var(--spacing-xl)) var(--spacing-xl) var(--spacing-xl);
+    }
+
+    .story-card--groot .story-card__titel {
+        font-size: var(--type-heading-md-size);
+        line-height: var(--type-heading-md-line-height);
+        letter-spacing: -0.24px;
+    }
+}
+
+.categorie-label {
+    color: var(--text-link);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 600;
+    letter-spacing: 0.07px;
+}
+
+
+/* ── Digest hero ───────────────────────────────────────────────────────
+   Bovenaan de homepage. De titel is de h1 en de link; "Lees het
+   dagoverzicht" is de zichtbare aanwijzing, geen tweede link. */
+
+.digest-hero {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 640px);
+    align-items: center;
+    gap: var(--section-xs);
+    padding: var(--spacing-3xl);
+    border-radius: var(--radius-2xl);
+    background: var(--surface-brand);
+}
+
+.digest-hero:has(.digest-hero__link:focus-visible) {
+    box-shadow: var(--focus-ring);
+}
+
+.digest-hero__inhoud {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-lg);
+    min-width: 0;
+}
+
+.digest-hero__label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.digest-hero__label strong {
+    font-weight: 600;
+}
+
+.digest-hero__label span {
+    color: var(--text-secondary);
+}
+
+.digest-hero__titel {
+    font-size: var(--type-display-sm-size);
+    line-height: var(--type-display-sm-line-height);
+    font-weight: 500;
+    letter-spacing: -0.72px;
+}
+
+.digest-hero__link {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.digest-hero__link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: var(--radius-2xl);
+}
+
+.digest-hero__link:focus-visible {
+    box-shadow: none;
+}
+
+.digest-hero:hover .digest-hero__link,
+.digest-hero__link:focus-visible {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+.digest-hero__samenvatting {
+    color: var(--text-secondary);
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-28);
+}
+
+.digest-hero__bronnen {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.digest-hero__aanwijzing {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2xs);
+    color: var(--text-link);
+    font-weight: 600;
+}
+
+.digest-hero__aanwijzing .icoon {
+    transition: transform var(--motion-duration-fast) var(--motion-easing);
+}
+
+.digest-hero:hover .digest-hero__aanwijzing .icoon {
+    transform: translateX(3px);
+}
+
+.digest-hero__beeld {
+    width: 100%;
+    aspect-ratio: 640 / 420;
+    border: var(--border-width-sm) solid var(--border-default);
+    border-radius: var(--radius-xl);
+    object-fit: cover;
+}
+
+/* Mobiel en tablet: gestapeld, foto boven (in de code staat de titel eerst;
+   de foto is decoratief). Tablet 16:9, mobiel 240 hoog (Figma). De titel
+   volgt de display-token: 48 op tablet, 32 op mobiel. */
+@media (max-width: 1023px) {
+    .digest-hero {
+        grid-template-columns: 1fr;
+        padding: var(--spacing-xl);
+    }
+
+    .digest-hero__beeld {
+        order: -1;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+@media (max-width: 767px) {
+    .digest-hero {
+        gap: var(--spacing-lg);
+        padding: var(--spacing-lg);
+    }
+
+    .digest-hero__beeld {
+        height: 240px;
+        aspect-ratio: auto;
+    }
+
+    .digest-hero__titel {
+        letter-spacing: -0.48px;
+    }
+}
+
+
+/* ── Day header ────────────────────────────────────────────────────────
+   Kop boven "Vandaag" en "Gisteren". Alleen bij vandaag een voortgang. */
+
+.day-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+    border-bottom: var(--border-width-sm) solid var(--border-default);
+}
+
+.day-header__titel {
+    font-size: var(--type-heading-lg-size);
+    line-height: var(--type-heading-lg-line-height);
+    font-weight: 500;
+    letter-spacing: -0.32px;
+}
+
+.day-header__meta {
+    color: var(--text-secondary);
+}
+
+.voortgang {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    width: 260px;
+    max-width: 100%;
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 600;
+}
+
+.voortgang progress {
+    width: 100%;
+    height: var(--progress-height-sm);
+    border: 0;
+    border-radius: var(--radius-full);
+    background: var(--surface-muted);
+    color: var(--action-primary-bg);
+    appearance: none;
+    overflow: hidden;
+}
+
+.voortgang progress::-webkit-progress-bar {
+    background: var(--surface-muted);
+}
+
+.voortgang progress::-webkit-progress-value {
+    background: var(--action-primary-bg);
+    border-radius: var(--radius-full);
+    transition: width var(--motion-duration-base) var(--motion-easing);
+}
+
+.voortgang progress::-moz-progress-bar {
+    background: var(--action-primary-bg);
+    border-radius: var(--radius-full);
+}
+
+
+/* ── Day empty ─────────────────────────────────────────────────────────
+   Lege staat van "Vandaag": vroege ochtend of een dag zonder verhalen. */
+
+.day-empty {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    background: var(--surface-subtle);
+}
+
+.icoon-cirkel {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-full);
+    background: var(--surface-brand-strong);
+    color: var(--text-on-brand-strong);
+}
+
+.icoon-cirkel .icoon {
+    width: 24px;
+    height: 24px;
+}
+
+.icoon-cirkel--groot {
+    width: 56px;
+    height: 56px;
+}
+
+.icoon-cirkel--groot .icoon {
+    width: 28px;
+    height: 28px;
+}
+
+.day-empty__tekst {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xs);
+}
+
+.day-empty__titel {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+}
+
+.day-empty__tekst p {
+    color: var(--text-secondary);
+}
+
+
+/* ── Headline item ─────────────────────────────────────────────────────
+   Een kop zonder foto, in de lijst van gisteren. */
+
+.headline-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xs);
+    padding-block: var(--spacing-md);
+    border-top: var(--border-width-sm) solid var(--border-default);
+}
+
+.headline-item__titel {
+    text-wrap: pretty;
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+}
+
+.headline-item__link {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.headline-item__link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+.headline-item:hover .headline-item__link,
+.headline-item__link:focus-visible {
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 3px;
+}
+
+.headline-item__link:focus-visible {
+    box-shadow: none;
+}
+
+.headline-item:has(.headline-item__link:focus-visible) {
+    border-radius: var(--radius-xs);
+    box-shadow: var(--focus-ring);
+}
+
+
+/* ── Topic link ────────────────────────────────────────────────────────
+   Link naar een categoriepagina. Geen filter en geen gekozen stand; de
+   chevron zegt dat je naar een andere pagina gaat. */
+
+.topic-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.topic-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    height: 48px;
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-sm);
+    border: var(--border-width-sm) solid var(--border-default);
+    border-radius: var(--radius-lg);
+    background: var(--surface-default);
+    color: var(--text-primary);
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color var(--motion-duration-fast) var(--motion-easing);
+}
+
+.topic-link:hover {
+    background: var(--surface-muted);
+}
+
+.topic-link:focus-visible {
+    border-radius: var(--radius-lg);
+}
+
+.topic-link__chevron {
+    color: var(--text-secondary);
+}
+
+
+/* ── Edition end ───────────────────────────────────────────────────────
+   Sluit de editie af in plaats van een eindeloze lijst. Eén route verder:
+   het archief. */
+
+.edition-end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-3xl) var(--spacing-xl);
+    border-radius: var(--radius-2xl);
+    background: var(--surface-brand);
+    text-align: center;
+}
+
+.edition-end__titel {
+    font-size: var(--type-heading-lg-size);
+    line-height: var(--type-heading-lg-line-height);
+    font-weight: 500;
+    letter-spacing: -0.32px;
+}
+
+.edition-end p {
+    max-width: 36ch;
+    color: var(--text-secondary);
+}
+
+
+/* ── Edition nav ───────────────────────────────────────────────────────
+   Vorige dag, archief, volgende dag. */
+
+.edition-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-sm);
+    padding-block: var(--spacing-lg);
+    border-top: var(--border-width-sm) solid var(--border-default);
+    border-bottom: var(--border-width-sm) solid var(--border-default);
+}
+
+.label-kort {
+    display: none;
+}
+
+/* Mobiel: vorige en volgende naast elkaar met een kort label, het archief
+   eronder over de volle breedte. */
+@media (max-width: 767px) {
+    .edition-nav {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-areas: "vorige volgende" "archief archief";
+    }
+
+    .edition-nav__vorige { grid-area: vorige; justify-self: start; }
+    .edition-nav__volgende { grid-area: volgende; justify-self: end; }
+    .edition-nav__archief { grid-area: archief; width: 100%; }
+
+    .edition-nav .label-lang {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+    }
+
+    .edition-nav .label-kort {
+        display: inline;
+    }
+}
+
+
+/* ── Digest card ───────────────────────────────────────────────────────
+   Een dagoverzicht in een editie: eigen kleur, geen foto, met het aantal
+   bronnen. De titel is de link; de hele kaart is klikbaar. */
+
+.digest-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-2xl);
+    background: var(--surface-brand);
+}
+
+.digest-card:has(.digest-card__link:focus-visible) {
+    box-shadow: var(--focus-ring);
+}
+
+.digest-card__titel {
+    font-size: var(--type-heading-md-size);
+    line-height: var(--type-heading-md-line-height);
+    font-weight: 600;
+    letter-spacing: -0.12px;
+}
+
+.digest-card__link {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.digest-card__link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius-2xl);
+}
+
+.digest-card__link:focus-visible {
+    box-shadow: none;
+}
+
+.digest-card:hover .digest-card__link,
+.digest-card__link:focus-visible {
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 4px;
+}
+
+.digest-card__samenvatting {
+    color: var(--text-secondary);
+}
+
+.digest-card .digest-hero__aanwijzing {
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.digest-card .digest-hero__aanwijzing .icoon {
+    width: 18px;
+    height: 18px;
+}
+
+
+/* ── Page head ─────────────────────────────────────────────────────────
+   Kop van een editie- of archiefpagina: terugknop, label, h1 en meta. */
+
+.page-head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+}
+
+.page-head__label {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 600;
+}
+
+.page-head__meta {
+    color: var(--text-secondary);
+}
+
+.page-head__intro {
+    color: var(--text-secondary);
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-28);
+}
+
+
+/* ── Note ──────────────────────────────────────────────────────────────
+   Rustige uitleg met een icoon, bijvoorbeeld bij een oudere editie. */
+
+.note {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-lg);
+    background: var(--surface-subtle);
+    color: var(--text-secondary);
+}
+
+.note .icoon {
+    margin-top: 2px;
+    color: var(--text-primary);
+}
+
+
+/* ── Archive day ───────────────────────────────────────────────────────
+   Eén dag in het archief: datum, aantal verhalen, drie koppen en de knop
+   naar die editie. Empty = een dag zonder verhalen, eerlijk getoond. */
+
+.archive-day {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-3xl);
+    padding: var(--spacing-xl) var(--spacing-lg);
+    border-radius: var(--radius-xl);
+}
+
+.archive-day + .archive-day {
+    border-top: var(--border-width-sm) solid var(--border-default);
+    border-radius: 0;
+}
+
+.archive-day__datum {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xs);
+    flex-shrink: 0;
+    width: 220px;
+}
+
+.archive-day__weekdag {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 600;
+}
+
+.archive-day__dag {
+    font-size: var(--type-heading-lg-size);
+    line-height: var(--type-heading-lg-line-height);
+    font-weight: 500;
+    letter-spacing: -0.32px;
+}
+
+.archive-day__verhalen {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    min-width: 0;
+}
+
+.archive-day__aantal {
+    color: var(--text-link);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 600;
+    letter-spacing: 0.07px;
+}
+
+.archive-day__koppen {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.archive-day--leeg .archive-day__aantal {
+    color: var(--text-muted);
+}
+
+.archive-day--leeg .archive-day__verhalen p {
+    color: var(--text-secondary);
+}
+
+/* Mobiel (Archive day, Breakpoint=Mobile): de datum boven de koppen, met de
+   weekdag en de datum op één regel (op de basislijn). */
+@media (max-width: 767px) {
+    .archive-day {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .archive-day__datum {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        column-gap: var(--spacing-xs);
+        width: 100%;
+    }
+
+    .archive-day__dag {
+        letter-spacing: -0.24px;
+    }
+
+    .archive-day__verhalen {
+        width: 100%;
+    }
+}
+
+
+/* ── Month heading ─────────────────────────────────────────────────────
+   Maand in het archief, met de knop "Kies een maand". Die knop klapt een
+   lijst met maanden uit (geen pop-up: de lijst duwt de pagina omlaag). */
+
+.month-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-sm);
+}
+
+.month-heading__titel {
+    font-size: var(--type-heading-md-size);
+    line-height: var(--type-heading-md-line-height);
+    font-weight: 600;
+    letter-spacing: -0.12px;
+}
+
+.maandkiezer__lijst {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: var(--spacing-xs);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.maandkiezer__lijst[hidden] {
+    display: none;
+}
+
+.month-heading .btn[aria-expanded="true"] .icoon:last-child {
+    transform: rotate(180deg);
+}
+
+
+/* ── Source item ───────────────────────────────────────────────────────
+   De bronnenlijst van een dagoverzicht: per verhaal nummer, categorie, kop,
+   samenvatting en de tekstlink naar het origineel. */
+
+.source-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: var(--border-width-sm) solid var(--border-default);
+}
+
+.source-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    padding-block: var(--spacing-md);
+    border-bottom: var(--border-width-sm) solid var(--border-default);
+}
+
+.source-item__nummer {
+    flex-shrink: 0;
+    width: 24px;
+    color: var(--text-link);
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+}
+
+.source-item__tekst {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-2xs);
+    min-width: 0;
+}
+
+.source-item__titel {
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+}
+
+.source-item__titel a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.source-item__titel a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 3px;
+}
+
+.source-item__samenvatting {
+    color: var(--text-secondary);
+}
+
+/* Original link: tekstlink met icoon, opent in een nieuw venster. */
+.original-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2xs);
+    color: var(--text-link);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 500;
+}
+
+.original-link .icoon {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* ── Share bar ─────────────────────────────────────────────────────────
+   Delen via WhatsApp, Facebook, X, LinkedIn, e-mail en link kopiëren. Elke
+   knop heeft een aria-label met de naam van het platform. */
+
+.share-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--spacing-xs);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.share-bar__label {
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 600;
+}
+
+.share-bar .btn {
+    padding-inline: var(--spacing-md);
+}
+
+.share-bar__systeem {
+    display: none;
+}
+
+/* Mobiel: alleen Delen (deelmenu van de telefoon) en Kopieer link. */
+@media (max-width: 767px) {
+    .share-bar--systeem > :not(.share-bar__systeem, .share-bar__kopieer) {
+        display: none;
+    }
+
+    .share-bar--systeem .share-bar__systeem {
+        display: inline-flex;
+    }
+}
+
+
+/* ── Source attribution ────────────────────────────────────────────────
+   Altijd de laatste regel van een artikel: AI-samengevat uit [bron], met
+   een link naar het origineel. */
+
+.source-attribution {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+    padding-top: var(--spacing-lg);
+    border-top: var(--border-width-sm) solid var(--border-default);
+    color: var(--text-secondary);
+}
+
+
+/* ── Melding ───────────────────────────────────────────────────────────
+   Nog niet in Figma. Korte bevestiging onderaan het scherm, voor
+   showNotification() op de v5-pagina's (bijvoorbeeld "Link gekopieerd").
+   Verdwijnt vanzelf; schermlezers horen hem via aria-live. */
+
+.melding-houder {
+    position: fixed;
+    bottom: var(--spacing-xl);
+    left: 50%;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-xs);
+    width: max-content;
+    max-width: calc(100% - 2 * var(--spacing-md));
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.melding {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-md);
+    background: var(--text-primary);
+    color: var(--surface-default);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 600;
+    transition: opacity var(--motion-duration-base) var(--motion-easing);
+}
+
+.melding--fout {
+    background: var(--color-error-text);
+    color: var(--text-on-image);
+}
+
+.melding.is-weg {
+    opacity: 0;
+}
+
+
+/* ── Paywall ───────────────────────────────────────────────────────────
+   Altijd inline in het artikel, nooit een pop-up. De plannen zijn echte
+   radioknoppen; het gekozen plan krijgt de groene rand. */
+
+.paywall {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-2xl) var(--spacing-xl);
+    border: var(--border-width-sm) solid var(--border-default);
+    border-radius: var(--radius-2xl);
+    background: var(--surface-subtle);
+}
+
+.paywall__tekst {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.paywall__titel {
+    font-size: var(--type-heading-lg-size);
+    line-height: var(--type-heading-lg-line-height);
+    font-weight: 500;
+    letter-spacing: -0.32px;
+}
+
+.paywall__tekst p {
+    color: var(--text-secondary);
+}
+
+.paywall__plannen {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    border: var(--border-width-sm) solid var(--border-default);
+    border-radius: var(--radius-lg);
+    background: var(--surface-default);
+    cursor: pointer;
+    transition: border-color var(--motion-duration-fast) var(--motion-easing);
+}
+
+.plan:hover {
+    border-color: var(--border-strong);
+}
+
+.plan:has(input:checked) {
+    border-color: var(--action-primary-bg);
+    box-shadow: inset 0 0 0 1px var(--action-primary-bg);
+}
+
+.plan:has(input:focus-visible) {
+    box-shadow: inset 0 0 0 1px var(--action-primary-bg), var(--focus-ring);
+}
+
+.plan input {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    border: 1.5px solid var(--border-strong);
+    border-radius: 50%;
+    background: var(--surface-default);
+    appearance: none;
+    cursor: pointer;
+    transition: border-width var(--motion-duration-fast) var(--motion-easing);
+}
+
+.plan input:checked {
+    border: 6px solid var(--action-primary-bg);
+}
+
+.plan input:focus-visible {
+    box-shadow: none;
+}
+
+.plan__naam {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.plan__naam strong {
+    font-weight: 600;
+}
+
+.plan__naam span {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.paywall__proef {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.paywall__nul {
+    flex-shrink: 0;
+    padding: var(--spacing-2xs) var(--spacing-xs);
+    border-radius: var(--radius-xs);
+    background: var(--surface-brand-strong);
+    color: var(--text-on-brand-strong);
+    font-weight: 600;
+    letter-spacing: 0.07px;
+}
+
+.paywall__meer {
+    text-decoration: underline;
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 500;
+}
+
+/* Paywall, type Account: e-mailadres en één primaire knop. */
+.paywall__formulier {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+/* Paywall, type Credit: rustige regel onder de volledige tekst, tussen twee
+   lijnen. Op mobiel komt de knop onder de tekst. */
+.paywall-credit {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-sm) var(--spacing-md);
+    padding-block: var(--spacing-md);
+    border-top: var(--border-width-sm) solid var(--border-default);
+    border-bottom: var(--border-width-sm) solid var(--border-default);
+}
+
+.paywall-credit__tekst {
+    display: flex;
+    flex: 1 1 280px;
+    align-items: center;
+    gap: var(--spacing-xs);
+    color: var(--text-secondary);
+}
+
+.paywall-credit__tekst .icoon {
+    width: 18px;
+    height: 18px;
+}
+
+
+/* ── Plan option ───────────────────────────────────────────────────────
+   Radiokaart voor een abonnement, in een fieldset met legend. De hele
+   kaart is het klikvlak (label); pijltjestoetsen wisselen. Gekozen =
+   rand van 2 px in de actiekleur (de tweede pixel als schaduw binnenin,
+   zodat de kaart niet verspringt). */
+
+.plan-option {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xs);
+    padding: var(--spacing-lg);
+    border: var(--border-width-sm) solid var(--border-default);
+    border-radius: var(--radius-lg);
+    background: var(--surface-default);
+    cursor: pointer;
+    transition: border-color var(--motion-duration-fast) var(--motion-easing);
+}
+
+.plan-option:hover {
+    border-color: var(--border-strong);
+}
+
+.plan-option:has(input:checked) {
+    border-color: var(--action-primary-bg);
+    box-shadow: inset 0 0 0 1px var(--action-primary-bg);
+}
+
+.plan-option:has(input:focus-visible) {
+    box-shadow: inset 0 0 0 1px var(--action-primary-bg), var(--focus-ring);
+}
+
+.plan-option__top {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.plan-option__naam {
+    flex: 1;
+    font-weight: 600;
+}
+
+.plan-option__detail {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xs);
+    padding-left: var(--spacing-2xl);
+}
+
+.plan-option__prijs {
+    font-family: var(--font-family-display);
+    font-size: var(--type-heading-md-size);
+    line-height: var(--type-heading-md-line-height);
+    font-weight: 600;
+    letter-spacing: -0.12px;
+}
+
+.plan-option__noot {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+/* De radioknop zelf, gedeeld met Radio (formulieren). */
+.plan-option input,
+.radio input {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    border: 1.5px solid var(--border-strong);
+    border-radius: 50%;
+    background: var(--surface-default);
+    appearance: none;
+    cursor: pointer;
+    transition: border-width var(--motion-duration-fast) var(--motion-easing);
+}
+
+.plan-option input:checked,
+.radio input:checked {
+    border: 6px solid var(--action-primary-bg);
+}
+
+.plan-option input:focus-visible {
+    box-shadow: none;
+}
+
+.radio input:focus-visible {
+    box-shadow: var(--focus-ring);
+}
+
+
+/* ── Order summary ─────────────────────────────────────────────────────
+   "Samenvatting" vóór de knop: wat je vandaag betaalt en vanaf wanneer. */
+
+.order-summary {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    background: var(--surface-subtle);
+}
+
+.order-summary__rij {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+}
+
+.order-summary__rij strong {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.order-summary__uitleg {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+
+/* ── Checkbox ──────────────────────────────────────────────────────────
+   Echt vinkje (visueel verborgen) met een eigen vakje ernaast, zodat het
+   vakje in elke browser hetzelfde oogt. Nooit vooraf aangevinkt bij
+   toestemming. */
+
+.checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    cursor: pointer;
+}
+
+.checkbox[hidden] {
+    display: none;
+}
+
+.checkbox__vak {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: var(--icon-size-md);
+    height: var(--icon-size-md);
+    border: var(--border-width-sm) solid var(--border-strong);
+    border-radius: var(--radius-xs);
+    background: var(--surface-default);
+    color: var(--text-on-action);
+    transition: background-color var(--motion-duration-fast) var(--motion-easing);
+}
+
+.checkbox__vak .icoon {
+    width: 16px;
+    height: 16px;
+    visibility: hidden;
+}
+
+.checkbox input:checked + .checkbox__vak {
+    border-color: var(--action-primary-bg);
+    background: var(--action-primary-bg);
+}
+
+.checkbox input:checked + .checkbox__vak .icoon {
+    visibility: visible;
+}
+
+.checkbox input:focus-visible + .checkbox__vak {
+    box-shadow: var(--focus-ring);
+}
+
+.checkbox input[aria-invalid="true"] + .checkbox__vak {
+    border-color: var(--feedback-error-fg);
+}
+
+
+/* ── Field error ───────────────────────────────────────────────────────
+   Foutmelding direct onder een veld: altijd icoon en tekst, nooit alleen
+   kleur. Het veld krijgt aria-invalid en aria-describedby. */
+
+.field-error {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+    padding-left: var(--spacing-2xl);
+    color: var(--feedback-error-fg);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 600;
+}
+
+.field-error[hidden] {
+    display: none;
+}
+
+
+/* ── Compare row ───────────────────────────────────────────────────────
+   Gratis of Premium als echte tabel. Een vinkje heeft de verborgen tekst
+   "inbegrepen". */
+
+.vergelijking {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.vergelijking th,
+.vergelijking td {
+    height: 40px;
+    padding: var(--spacing-xs) 0;
+    font-weight: 400;
+    text-align: left;
+}
+
+.vergelijking thead th {
+    font-weight: 600;
+}
+
+.vergelijking tbody tr {
+    border-top: var(--border-width-sm) solid var(--border-default);
+}
+
+.vergelijking td,
+.vergelijking thead th + th {
+    width: 112px;
+    text-align: center;
+}
+
+.vergelijking td .icoon {
+    display: inline-block;
+    color: var(--text-link);
+    vertical-align: middle;
+}
+
+.vergelijking td strong {
+    font-weight: 600;
+}
+
+
+/* ── Accordion item ────────────────────────────────────────────────────
+   Een vraag die openklapt, als <details>/<summary>. Chevron omlaag als
+   hij dicht is, omhoog als hij open is. */
+
+.accordion-item {
+    border-bottom: var(--border-width-sm) solid var(--border-default);
+}
+
+.accordion-item summary {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    font-weight: 600;
+    list-style: none;
+    cursor: pointer;
+}
+
+.accordion-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion-item summary:hover {
+    background: var(--surface-subtle);
+}
+
+.accordion-item summary span {
+    flex: 1;
+}
+
+.accordion-item summary .icoon {
+    transition: transform var(--motion-duration-base) var(--motion-easing);
+}
+
+.accordion-item[open] summary .icoon {
+    transform: rotate(180deg);
+}
+
+.accordion-item__inhoud {
+    padding: 0 var(--spacing-md) var(--spacing-md);
+    color: var(--text-secondary);
+}
+
+
+/* ── Tabs ──────────────────────────────────────────────────────────────
+   Inloggen / Account maken. Elk tabblad is een link met een eigen adres
+   (?tab=account), dus gewone navigatie: het gekozen tabblad heeft
+   aria-current en een groene lijn eronder. */
+
+.tabs {
+    display: flex;
+    border-bottom: var(--border-width-sm) solid var(--border-default);
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    height: var(--control-height-md);
+    margin-bottom: calc(-1 * var(--border-width-sm));
+    padding-inline: var(--spacing-md);
+    border-bottom: var(--border-width-md) solid transparent;
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color var(--motion-duration-fast) var(--motion-easing);
+}
+
+.tab:hover {
+    color: var(--text-primary);
+}
+
+.tab[aria-current="page"] {
+    border-bottom-color: var(--action-primary-bg);
+    color: var(--text-primary);
+}
+
+
+/* ── Input field ───────────────────────────────────────────────────────
+   Label, veld en (optioneel) hulptekst. Fout = rode rand plus een Field
+   error eronder; het veld krijgt aria-invalid en aria-describedby. */
+
+.invoer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.invoer__label {
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 600;
+}
+
+.invoer__veld {
+    width: 100%;
+    height: var(--control-height-md);
+    padding-inline: var(--spacing-sm);
+    border: var(--border-width-sm) solid var(--border-strong);
+    border-radius: var(--radius-md);
+    background: var(--surface-default);
+    color: var(--text-primary);
+    line-height: var(--line-height-24);
+    transition: border-color var(--motion-duration-fast) var(--motion-easing);
+}
+
+.invoer__veld::placeholder {
+    color: var(--text-muted);
+    opacity: 1;
+}
+
+.invoer__veld:hover {
+    border-color: var(--text-secondary);
+}
+
+.invoer__veld:focus-visible {
+    border-color: var(--border-focus);
+    border-radius: var(--radius-md);
+}
+
+.invoer__veld[aria-invalid="true"] {
+    border-color: var(--feedback-error-fg);
+}
+
+.invoer__hulp {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.invoer .field-error,
+.keuzes .field-error {
+    padding-left: 0;
+}
+
+
+/* ── Radio ─────────────────────────────────────────────────────────────
+   Keuze uit minstens twee opties, in een fieldset met legend. Uitleg onder
+   een optie schuift in tot onder het label (form/label-offset). */
+
+.keuzes {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.keuzes legend {
+    margin-bottom: var(--spacing-sm);
+    padding: 0;
+    font-weight: 600;
+}
+
+.radio-optie {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xs);
+}
+
+.radio {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    cursor: pointer;
+}
+
+.radio-optie__uitleg {
+    padding-left: var(--form-label-offset);
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+
+/* ── Alert ─────────────────────────────────────────────────────────────
+   Een melding in de pagina die blijft tot het probleem is opgelost.
+   Variant Error: rood vlak, eigen icoon, tekst blijft in de gewone
+   tekstkleuren. role="alert" en de focus erheen. */
+
+.alert {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    background: var(--feedback-error-bg);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.alert[hidden] {
+    display: none;
+}
+
+.alert:focus-visible {
+    border-radius: var(--radius-md);
+}
+
+.alert > .icoon {
+    color: var(--feedback-error-fg);
+}
+
+.alert__inhoud {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-2xs);
+}
+
+.alert__titel {
+    font-weight: 600;
+}
+
+.alert__tekst {
+    color: var(--text-secondary);
+}
+
+.alert__actie {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--feedback-error-fg);
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* Variant Warning: amber vlak, voor iets dat (nog) niet gelukt is maar
+   geen fout van de lezer is, zoals Premium dat langer duurt dan normaal. */
+.alert--waarschuwing {
+    background: var(--feedback-warning-bg);
+}
+
+.alert--waarschuwing > .icoon {
+    color: var(--feedback-warning-fg);
+}
+
+
+/* ── Dropdown ──────────────────────────────────────────────────────────
+   Een gewone <select> in de vorm van het Input field, met eigen chevron
+   (de pijl van de browser gaat weg). De chevron ligt erboven en laat
+   klikken door. */
+
+.keuzeveld {
+    position: relative;
+}
+
+.keuzeveld .invoer__veld {
+    padding-right: calc(var(--spacing-sm) + 28px);
+    appearance: none;
+    cursor: pointer;
+}
+
+.keuzeveld .invoer__veld:invalid {
+    color: var(--text-muted);
+}
+
+.keuzeveld option {
+    color: var(--text-primary);
+}
+
+.keuzeveld > .icoon {
+    position: absolute;
+    top: 50%;
+    right: var(--spacing-sm);
+    width: 20px;
+    height: 20px;
+    color: var(--text-secondary);
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+/* ── Text area ─────────────────────────────────────────────────────────
+   Meerdere regels, met een teller onder het veld. De teller telt mee
+   voor schermlezers via aria-describedby, maar praat niet bij elke
+   toets (geen aria-live). */
+
+.invoer__veld--tekstvak {
+    display: block;
+    height: auto;
+    min-height: 96px;
+    padding-block: var(--spacing-sm);
+    resize: vertical;
+}
+
+.invoer__teller {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-variant-numeric: tabular-nums;
+}
+
+.invoer__teller--vol {
+    color: var(--feedback-error-fg);
+}
+
+
+/* ── Feature card ──────────────────────────────────────────────────────
+   Icoon in een vierkant vlak, titel, tekst en (optioneel) een link
+   onderaan. Op Over ons: de drie stappen. */
+
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
+    gap: var(--spacing-xl);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    padding: var(--spacing-xl);
+    border: var(--border-width-sm) solid var(--border-default);
+    border-radius: var(--radius-lg);
+    background: var(--surface-default);
+}
+
+.feature-card__icoon {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    background: var(--surface-muted);
+}
+
+.feature-card__icoon .icoon {
+    width: 24px;
+    height: 24px;
+}
+
+.feature-card__tekst {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.feature-card__titel {
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+}
+
+.feature-card__tekst p {
+    color: var(--text-secondary);
+}
+
+.feature-card__link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2xs);
+}
+
+.feature-card__link .icoon {
+    width: 16px;
+    height: 16px;
+}
+
+.feature-card__link,
+.tekstlink {
+    color: var(--text-link);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.feature-card__link:hover,
+.tekstlink:hover {
+    text-decoration-thickness: 2px;
+}
+
+@media (max-width: 1023px) {
+    .feature-cards {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+
+/* ── Process step ──────────────────────────────────────────────────────
+   Genummerde stap in een <ol>: het nummer staat in een zonnige cirkel
+   (surface/brand) en komt uit de lijst zelf, dus een schermlezer leest
+   het één keer. */
+
+.process-steps {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: stap;
+}
+
+.process-step {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-lg);
+    counter-increment: stap;
+}
+
+.process-step::before {
+    content: counter(stap);
+    display: grid;
+    flex: none;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-full);
+    background: var(--surface-brand);
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+}
+
+.process-step__tekst {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xs);
+    padding-top: var(--spacing-xs);
+}
+
+.process-step__titel {
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+}
+
+.process-step__tekst p {
+    color: var(--text-secondary);
+}
+
+
+/* ── Vinkjeslijst ──────────────────────────────────────────────────────
+   Korte regels met een vinkje (groen, text/link) of, met --nee, een kruis
+   (text/secondary). Zelfde regel als de Pricing feature op Abonnementen. */
+
+.vinklijst {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.vinklijst li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+}
+
+.vinklijst .icoon {
+    flex: none;
+    width: 24px;
+    height: 24px;
+    color: var(--text-link);
+}
+
+.vinklijst--nee .icoon {
+    color: var(--text-secondary);
+}
+
+
+/* ── Snelle routes ─────────────────────────────────────────────────────
+   Lijst met icoon, titel, één regel uitleg en een link. Een lijn tussen
+   de routes. Op Contact: "Misschien ben je zo sneller klaar". */
+
+.routes {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.route {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    padding-block: var(--spacing-md);
+    border-top: var(--border-width-sm) solid var(--border-default);
+}
+
+.route > .icoon {
+    flex: none;
+    width: 24px;
+    height: 24px;
+    color: var(--text-link);
+}
+
+.route__tekst {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-2xs);
+    min-width: 0;
+}
+
+.route__titel {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+}
+
+.route__tekst p,
+.route__link {
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.route__tekst p {
+    color: var(--text-secondary);
+}
+
+.route__link {
+    color: var(--text-link);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+
+/* ── Statusicoon ───────────────────────────────────────────────────────
+   Groot rond icoon (80, icoon 48) boven een bevestiging. Zonnig bij
+   gelukt; gedempt bij bezig of wachten. Bezig draait het icoon in stapjes
+   van 400 ms; bij prefers-reduced-motion staat het stil. */
+
+.status-icoon {
+    display: grid;
+    flex: none;
+    place-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: var(--radius-full);
+    background: var(--surface-brand);
+    color: var(--text-link);
+}
+
+.status-icoon .icoon {
+    width: 48px;
+    height: 48px;
+}
+
+.status-icoon--gedempt {
+    background: var(--surface-muted);
+}
+
+.status-icoon--wacht {
+    background: var(--surface-muted);
+    color: var(--text-secondary);
+}
+
+.status-icoon--draait .icoon {
+    animation: status-draai 3.2s steps(8) infinite;
+}
+
+@keyframes status-draai {
+    to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .status-icoon--draait .icoon {
+        animation: none;
+    }
+}
+
+
+/* ── Toggle ────────────────────────────────────────────────────────────
+   Instelling die meteen geldt, zonder knop Opslaan. Een echte checkbox met
+   role="switch"; de baan (36 × 20) en de knop (16) zijn alleen beeld. */
+
+.toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    cursor: pointer;
+}
+
+.toggle__baan {
+    position: relative;
+    flex: none;
+    width: 36px;
+    height: 20px;
+    border: var(--border-width-sm) solid var(--border-strong);
+    border-radius: var(--radius-full);
+    background: var(--surface-muted);
+    transition:
+        background-color var(--motion-duration-fast) var(--motion-easing),
+        border-color var(--motion-duration-fast) var(--motion-easing);
+}
+
+.toggle__baan::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 16px;
+    height: 16px;
+    border-radius: var(--radius-full);
+    background: var(--surface-default);
+    /* 1 px binnen de rand: 2 px rondom in de baan van 20 px. */
+    box-shadow: 0 1px 2px color-mix(in srgb, var(--text-primary) 30%, transparent);
+    transition: transform var(--motion-duration-fast) var(--motion-easing);
+}
+
+.toggle:hover .toggle__baan {
+    border-color: var(--text-secondary);
+}
+
+.toggle input:checked + .toggle__baan {
+    border-color: var(--action-primary-bg);
+    background: var(--action-primary-bg);
+}
+
+.toggle:hover input:checked + .toggle__baan {
+    border-color: color-mix(in srgb, var(--action-primary-bg) 86%, var(--text-primary));
+    background: color-mix(in srgb, var(--action-primary-bg) 86%, var(--text-primary));
+}
+
+.toggle input:checked + .toggle__baan::after {
+    transform: translateX(16px);
+}
+
+.toggle input:focus-visible + .toggle__baan {
+    box-shadow: var(--focus-ring);
+}
+
+/* State=Disabled: staat vast (Noodzakelijk in de cookiebalk). Gedimd, maar
+   het label blijft leesbaar. */
+.toggle:has(input:disabled) {
+    cursor: default;
+}
+
+.toggle input:disabled + .toggle__baan {
+    opacity: 0.5;
+}
+
+
+/* ── Credit meter ──────────────────────────────────────────────────────
+   Leestegoed van een gratis account: vijf segmenten, gelezen in groen.
+   Alleen beeld (aria-hidden); de tekst ernaast draagt de betekenis. */
+
+.credit-meter {
+    display: flex;
+    gap: var(--spacing-2xs);
+}
+
+.credit-meter span {
+    flex: 1;
+    height: 8px;
+    border-radius: var(--radius-full);
+    background: var(--border-default);
+}
+
+.credit-meter span.is-gelezen {
+    background: var(--action-primary-bg);
+}
+
+
+/* ── Footer ────────────────────────────────────────────────────────── */
+
+.site-footer {
+    border-top: var(--border-width-sm) solid var(--border-default);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.site-footer__binnen {
+    display: flex;
+    flex-direction: column;
+    gap: var(--section-xs);
+    padding-block: var(--spacing-3xl);
+}
+
+.site-footer__rij {
+    display: grid;
+    grid-template-columns: 308px repeat(3, minmax(0, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.site-footer__merk {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+}
+
+.site-footer__merk p {
+    color: var(--text-secondary);
+}
+
+.socials {
+    display: flex;
+    gap: var(--spacing-xs);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social-knop {
+    display: grid;
+    place-items: center;
+    width: 46px;
+    height: var(--control-height-sm);
+    border: var(--border-width-sm) solid var(--border-strong);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    transition: background-color var(--motion-duration-fast) var(--motion-easing);
+}
+
+.social-knop:hover {
+    background: var(--surface-muted);
+}
+
+.social-knop:focus-visible {
+    border-radius: var(--radius-md);
+}
+
+.social-knop svg {
+    width: 16px;
+    height: 16px;
+}
+
+.footer-kolom {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.footer-kolom__titel {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+    font-weight: 600;
+}
+
+.footer-kolom ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-kolom a {
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.footer-kolom a:hover {
+    color: var(--text-primary);
+    text-decoration: underline;
+}
+
+.site-footer__onder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--spacing-xs) var(--spacing-xl);
+    padding-top: var(--spacing-xl);
+    border-top: var(--border-width-sm) solid var(--border-default);
+    color: var(--text-muted);
+}
+
+@media (max-width: 1023px) {
+    .site-footer__rij {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .site-footer__merk {
+        grid-column: 1 / -1;
+    }
+}
+
+
+/* ── Cookie bar ────────────────────────────────────────────────────────
+   Vast onderaan het scherm, zonder donkere laag: de pagina blijft
+   bruikbaar en de focus wordt niet vastgehouden (role="region"). De enige
+   onderbreking op de site. "Alleen noodzakelijk" en "Alles accepteren" zijn
+   allebei secundair en even groot: weigeren is net zo makkelijk. Twee
+   weergaven: de balk, en uitgeklapt met de keuzes (data-weergave). */
+
+.cookie-bar {
+    position: fixed;
+    inset: auto 0 0;
+    z-index: 40;
+    padding-block: var(--spacing-xl);
+    border-top: var(--border-width-sm) solid var(--border-default);
+    background: var(--surface-default);
+    box-shadow: 0 -8px 16px rgb(0 0 0 / 0.06);
+}
+
+.cookie-bar[hidden] {
+    display: none;
+}
+
+.cookie-bar__binnen {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2xl);
+}
+
+.cookie-bar[data-weergave="instellingen"] .cookie-bar__binnen {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-lg);
+}
+
+.cookie-bar__tekst {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: var(--spacing-2xs);
+    min-width: 0;
+}
+
+.cookie-bar__titel {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-24);
+    font-weight: 600;
+}
+
+.cookie-bar__uitleg {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--spacing-2xs) var(--spacing-md);
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.cookie-bar__uitleg a {
+    color: var(--text-link);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.cookie-bar__kort,
+.cookie-bar__instellingen-kort {
+    display: none;
+}
+
+.cookie-bar__keuzes {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.cookie-bar__keuze {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xs);
+}
+
+.cookie-bar__keuze .toggle {
+    font-weight: 600;
+}
+
+.cookie-bar__keuze p {
+    color: var(--text-secondary);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-20);
+}
+
+.cookie-bar__knoppen {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+/* Per weergave alleen de eigen keuzes en knoppen. */
+.cookie-bar[data-weergave="balk"] :is(.cookie-bar__keuzes, [data-cookie="opslaan"]),
+.cookie-bar[data-weergave="instellingen"] :is([data-cookie="instellingen"], [data-cookie="noodzakelijk"], .cookie-bar__instellingen-kort) {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .cookie-bar {
+        padding-block: var(--spacing-lg);
+    }
+
+    .cookie-bar__binnen,
+    .cookie-bar[data-weergave="instellingen"] .cookie-bar__binnen {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--spacing-sm);
+    }
+
+    .cookie-bar__lang,
+    .cookie-bar__knoppen [data-cookie="instellingen"] {
+        display: none;
+    }
+
+    .cookie-bar__kort,
+    .cookie-bar__instellingen-kort {
+        display: inline;
+    }
+
+    .cookie-bar__instellingen-kort {
+        display: inline-flex;
+    }
+
+    .cookie-bar__uitleg {
+        gap: var(--spacing-xs) var(--spacing-md);
+    }
+
+    .cookie-bar__kort {
+        flex-basis: 100%;
+    }
+
+    .cookie-bar__knoppen {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+
+    .cookie-bar__knoppen .btn {
+        width: 100%;
+    }
+}
+
+/* Een knop die eruitziet als een footerlink (Cookie-instellingen). */
+.footer-kolom .footer-knop {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--text-secondary);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.footer-kolom .footer-knop:hover {
+    color: var(--text-primary);
+    text-decoration: underline;
+}

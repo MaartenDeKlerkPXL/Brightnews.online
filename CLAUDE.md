@@ -40,12 +40,37 @@ verbeteringen van de één binnen een dag bij de ander landen:
 
 ## Vaste conventies (duur betaald — echt doen)
 - `npx eslint .` → 0 errors is de norm (bekende warnings mogen blijven).
-- Wijzig je `css/global.css`, `css/components.css`, `js/main.js`,
-  `index.html` of `assets/brightnews-logo.png` → **bump `CACHE_NAME` in
-  sw.js** (anders zien bezoekers je wijziging niet).
+- Sinds 2026-11-12 (sw.js v40) haalt de service worker alles eerst van het
+  netwerk; de cache is alleen offline terugval. `CACHE_NAME` bumpen hoeft dus
+  alleen nog als je `sw.js` zelf of de `ASSETS`-lijst daarin wijzigt.
 - Wijzig je het artikeltemplate in `backend/generate-articles.js` →
-  `node backend/generate-articles.js` draaien (regenereert de actuele
-  pagina's; archief blijft bewust staan) + `node backend/generate-sitemap.js`.
+  `node backend/migreer-archief-v5.js` (het archief, uit de gegevens in elke
+  pagina) en `node backend/generate-articles.js` (de actuele pagina's) draaien,
+  plus `node backend/generate-sitemap.js`. Sinds redesign v5 (2026-11-12)
+  volgt het hele archief het sjabloon; de nieuws-Action doet beide stappen
+  ook zelf. Nooit pagina's verwijderen.
+- Categorie- en themapagina's gebruiken sinds 2026-11-12 ook de v5-schil, via
+  `v5Pagina()` in `backend/schil.js`. Na een wijziging:
+  `node backend/generate-categorieen.js` en `node backend/migreer-themas-v5.js`
+  (die maakt elke themapagina opnieuw uit haar eigen `#thema-gegevens`).
+- **Header en footer staan op één plek: `partials/header.html` en
+  `partials/footer.html`** (sinds 2026-10-29, redesign v5). Nooit meer in een
+  pagina zelf bewerken: tussen `<!-- schil:header -->` en
+  `<!-- /schil:header -->` wordt alles overschreven. Na een wijziging:
+  `node backend/stempel-schil.js` (vaste pagina's) en de generators draaien
+  (`generate-articles.js`, `generate-categorieen.js`), die de schil zelf uit
+  `backend/schil.js` halen. `node backend/stempel-schil.js --controle` faalt
+  als een pagina achterloopt.
+- **Redesign v5** (sinds 2026-11-18 op de echte adressen: `index.html`,
+  `profiel.html` enzovoort; `v5-*.html` zijn alleen nog doorstuurpagina's) heeft
+  een eigen schil:
+  `partials/v5/` (header met instellingenpaneel, footer), `css/v5/`
+  (`basis.css`, `componenten.css`, na `css/fonts.css` en `css/tokens.css`),
+  `js/v5/schil.js` en de iconen in `assets/iconen.svg` (gebruik
+  `<svg class="icoon"><use href="/assets/iconen.svg#naam"/></svg>`). Een
+  v5-pagina krijgt de markeringen `schil:v5-thema` (in `<head>`),
+  `schil:v5-header` en `schil:v5-footer`; dezelfde stempelaar vult ze. Alle
+  componenten met hun staten staan op `/stijlgids.html` (noindex).
 - Vertaalteksten: elke key bestaat in **5 talen** (nl/en/de/fr/es) in
   `data/translations.js`. Nieuwe key = 5 regels.
 - `data-i18n` op een element wist de children — tekst altijd in een eigen

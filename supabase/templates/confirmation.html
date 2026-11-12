@@ -1,0 +1,126 @@
+{{ $taal := printf "%v" (or .Data.preferred_lang "en") }}{{ if eq $taal "nl" }}<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><meta name="supported-color-schemes" content="light"><title>Welkom bij BrightNews</title></head>
+<body style="margin:0;padding:0;background:#f7f8f3">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f7f8f3">
+<tr><td align="center" style="padding:32px 16px;font-family:Figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px">
+  <tr><td style="padding:0 4px 20px;font-family:Figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:22px;font-weight:600;letter-spacing:-0.3px;color:#152019">Bright<span style="color:#186F49">News</span></td></tr>
+  <tr><td style="background:#ffffff;border:1px solid #dfe3da;border-radius:16px;padding:32px 32px 28px;font-family:Figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+    <h1 style="margin:0 0 16px;font-size:26px;line-height:1.25;font-weight:500;letter-spacing:-0.3px;color:#152019">Welkom bij BrightNews</h1>
+    <p style="margin:0 0 16px;font-size:16px;line-height:1.6;color:#4e574d;">Bevestig je e-mailadres en je gratis account is klaar. Je leest dan 5 volledige artikelen per maand.</p>
+    <table role="presentation" cellpadding="0" cellspacing="0" style="margin:8px 0 20px"><tr><td style="border-radius:999px;background:#186F49">
+      <a href="{{ .ConfirmationURL }}" style="display:inline-block;padding:13px 24px;font-family:Figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:16px;font-weight:600;color:#ffffff;text-decoration:none;border-radius:999px">E-mailadres bevestigen</a>
+    </td></tr></table>
+    <p style="margin:0 0 16px;font-size:16px;line-height:1.6;color:#4e574d;font-size:14px;margin-bottom:8px">Heb je geen account gemaakt? Dan kun je deze mail negeren; er gebeurt niets.</p>
+    <p style="margin:0 0 16px;font-size:16px;line-height:1.6;color:#4e574d;font-size:14px;margin-bottom:8px">Werkt de knop niet? Plak deze link in je browser:<br><a href="{{ .ConfirmationURL }}" style="color:#186F49;word-break:break-all">{{ .ConfirmationURL }}</a></p>
+  </td></tr>
+  <tr><td style="padding:20px 4px 0;font-family:Figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+    <p style="margin:0 0 6px;font-size:13px;line-height:1.5;color:#4e574d">Je krijgt deze mail omdat er op brightnews.online om werd gevraagd met dit e-mailadres.</p>
+    <p style="margin:0 0 6px;font-size:13px;line-height:1.5;color:#4e574d">BrightNews · brightnews.online</p>
+  </td></tr>
+</table>
+</td></tr>
+</table>
+</body>
+</html>{{ else if eq $taal "de" }}<!DOCTYPE html>
+<html lang="de">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><meta name="supported-color-schemes" content="light"><title>Willkommen bei BrightNews</title></head>
+<body style="margin:0;padding:0;background:#f7f8f3">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f7f8f3">
+<tr><td align="center" style="padding:32px 16px;font-family:Figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px">
+  <tr><td style="padding:0 4px 20px;font-family:Figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:22px;font-weight:600;letter-spacing:-0.3px;color:#152019">Bright<span style="color:#186F49">News</span></td></tr>
+  <tr><td style="background:#ffffff;border:1px solid #dfe3da;border-radius:16px;padding:32px 32px 28px;font-family:Figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+    <h1 style="margin:0 0 16px;font-size:26px;line-height:1.25;font-weight:500;letter-spacing:-0.3px;color:#152019">Willkommen bei BrightNews</h1>
+    <p style="margin:0 0 16px;font-size:16px;line-height:1.6;color:#4e574d;">Bestätige deine E-Mail-Adresse, dann ist dein kostenloses Konto bereit. Du liest dann 5 vollständige Artikel pro Monat.</p>
+    <table role="presentation" cellpadding="0" cellspacing="0" style="margin:8px 0 20px"><tr><td style="border-radius:999px;background:#186F49">
+      <a href="{{ .ConfirmationURL }}" style="display:inline-block;padding:13px 24px;font-family:Figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:16px;font-weight:600;color:#ffffff;text-decoration:none;border-radius:999px">E-Mail-Adresse bestätigen</a>
+    </td></tr></table>
+    <p style="margin:0 0 16px;font-size:16px;line-height:1.6;color:#4e574d;font-size:14px;margin-bottom:8px">Du hast kein Konto angelegt? Dann kannst du diese Mail ignorieren; es passiert nichts.</p>
+    <p style="margin:0 0 16px;font-size:16px;line-height:1.6;color:#4e574d;font-size:14px;margin-bottom:8px">Der Button funktioniert nicht? Füge diesen Link in deinen Browser ein:<br><a href="{{ .ConfirmationURL }}" style="color:#186F49;word-break:break-all">{{ .ConfirmationURL }}</a></p>
+  </td></tr>
+  <tr><td style="padding:20px 4px 0;font-family:Figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+    <p style="margin:0 0 6px;font-size:13px;line-height:1.5;color:#4e574d">Du bekommst diese Mail, weil sie auf brightnews.online mit dieser E-Mail-Adresse angefordert wurde.</p>
+    <p style="margin:0 0 6px;font-size:13px;line-height:1.5;color:#4e574d">BrightNews · brightnews.online</p>
+  </td></tr>
+</table>
+</td></tr>
+</table>
+</body>
+</html>{{ else if eq $taal "fr" }}<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><meta name="supported-color-schemes" content="light"><title>Bienvenue sur BrightNews</title></head>
+<body style="margin:0;padding:0;background:#f7f8f3">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f7f8f3">
+<tr><td align="center" style="padding:32px 16px;font-family:Figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px">
+  <tr><td style="padding:0 4px 20px;font-family:Figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:22px;font-weight:600;letter-spacing:-0.3px;color:#152019">Bright<span style="color:#186F49">News</span></td></tr>
+  <tr><td style="background:#ffffff;border:1px solid #dfe3da;border-radius:16px;padding:32px 32px 28px;font-family:Figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+    <h1 style="margin:0 0 16px;font-size:26px;line-height:1.25;font-weight:500;letter-spacing:-0.3px;color:#152019">Bienvenue sur BrightNews</h1>
+    <p style="margin:0 0 16px;font-size:16px;line-height:1.6;color:#4e574d;">Confirmez votre adresse e-mail et votre compte gratuit est prêt. Vous pourrez alors lire 5 articles complets par mois.</p>
+    <table role="presentation" cellpadding="0" cellspacing="0" style="margin:8px 0 20px"><tr><td style="border-radius:999px;background:#186F49">
+      <a href="{{ .ConfirmationURL }}" style="display:inline-block;padding:13px 24px;font-family:Figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:16px;font-weight:600;color:#ffffff;text-decoration:none;border-radius:999px">Confirmer l’adresse e-mail</a>
+    </td></tr></table>
+    <p style="margin:0 0 16px;font-size:16px;line-height:1.6;color:#4e574d;font-size:14px;margin-bottom:8px">Vous n’avez pas créé de compte ? Ignorez ce message, rien ne se passera.</p>
+    <p style="margin:0 0 16px;font-size:16px;line-height:1.6;color:#4e574d;font-size:14px;margin-bottom:8px">Le bouton ne fonctionne pas ? Collez ce lien dans votre navigateur :<br><a href="{{ .ConfirmationURL }}" style="color:#186F49;word-break:break-all">{{ .ConfirmationURL }}</a></p>
+  </td></tr>
+  <tr><td style="padding:20px 4px 0;font-family:Figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+    <p style="margin:0 0 6px;font-size:13px;line-height:1.5;color:#4e574d">Vous recevez ce message parce qu’il a été demandé sur brightnews.online avec cette adresse e-mail.</p>
+    <p style="margin:0 0 6px;font-size:13px;line-height:1.5;color:#4e574d">BrightNews · brightnews.online</p>
+  </td></tr>
+</table>
+</td></tr>
+</table>
+</body>
+</html>{{ else if eq $taal "es" }}<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><meta name="supported-color-schemes" content="light"><title>Te damos la bienvenida a BrightNews</title></head>
+<body style="margin:0;padding:0;background:#f7f8f3">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f7f8f3">
+<tr><td align="center" style="padding:32px 16px;font-family:Figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px">
+  <tr><td style="padding:0 4px 20px;font-family:Figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:22px;font-weight:600;letter-spacing:-0.3px;color:#152019">Bright<span style="color:#186F49">News</span></td></tr>
+  <tr><td style="background:#ffffff;border:1px solid #dfe3da;border-radius:16px;padding:32px 32px 28px;font-family:Figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+    <h1 style="margin:0 0 16px;font-size:26px;line-height:1.25;font-weight:500;letter-spacing:-0.3px;color:#152019">Te damos la bienvenida a BrightNews</h1>
+    <p style="margin:0 0 16px;font-size:16px;line-height:1.6;color:#4e574d;">Confirma tu dirección de correo y tu cuenta gratuita estará lista. Podrás leer 5 artículos completos al mes.</p>
+    <table role="presentation" cellpadding="0" cellspacing="0" style="margin:8px 0 20px"><tr><td style="border-radius:999px;background:#186F49">
+      <a href="{{ .ConfirmationURL }}" style="display:inline-block;padding:13px 24px;font-family:Figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:16px;font-weight:600;color:#ffffff;text-decoration:none;border-radius:999px">Confirmar correo</a>
+    </td></tr></table>
+    <p style="margin:0 0 16px;font-size:16px;line-height:1.6;color:#4e574d;font-size:14px;margin-bottom:8px">¿No has creado una cuenta? Ignora este correo; no pasará nada.</p>
+    <p style="margin:0 0 16px;font-size:16px;line-height:1.6;color:#4e574d;font-size:14px;margin-bottom:8px">¿El botón no funciona? Pega este enlace en tu navegador:<br><a href="{{ .ConfirmationURL }}" style="color:#186F49;word-break:break-all">{{ .ConfirmationURL }}</a></p>
+  </td></tr>
+  <tr><td style="padding:20px 4px 0;font-family:Figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+    <p style="margin:0 0 6px;font-size:13px;line-height:1.5;color:#4e574d">Recibes este correo porque se pidió en brightnews.online con esta dirección.</p>
+    <p style="margin:0 0 6px;font-size:13px;line-height:1.5;color:#4e574d">BrightNews · brightnews.online</p>
+  </td></tr>
+</table>
+</td></tr>
+</table>
+</body>
+</html>{{ else }}<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><meta name="supported-color-schemes" content="light"><title>Welcome to BrightNews</title></head>
+<body style="margin:0;padding:0;background:#f7f8f3">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f7f8f3">
+<tr><td align="center" style="padding:32px 16px;font-family:Figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px">
+  <tr><td style="padding:0 4px 20px;font-family:Figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:22px;font-weight:600;letter-spacing:-0.3px;color:#152019">Bright<span style="color:#186F49">News</span></td></tr>
+  <tr><td style="background:#ffffff;border:1px solid #dfe3da;border-radius:16px;padding:32px 32px 28px;font-family:Figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+    <h1 style="margin:0 0 16px;font-size:26px;line-height:1.25;font-weight:500;letter-spacing:-0.3px;color:#152019">Welcome to BrightNews</h1>
+    <p style="margin:0 0 16px;font-size:16px;line-height:1.6;color:#4e574d;">Confirm your email address and your free account is ready. You can then read 5 full articles a month.</p>
+    <table role="presentation" cellpadding="0" cellspacing="0" style="margin:8px 0 20px"><tr><td style="border-radius:999px;background:#186F49">
+      <a href="{{ .ConfirmationURL }}" style="display:inline-block;padding:13px 24px;font-family:Figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:16px;font-weight:600;color:#ffffff;text-decoration:none;border-radius:999px">Confirm email address</a>
+    </td></tr></table>
+    <p style="margin:0 0 16px;font-size:16px;line-height:1.6;color:#4e574d;font-size:14px;margin-bottom:8px">Didn’t create an account? You can ignore this email; nothing will happen.</p>
+    <p style="margin:0 0 16px;font-size:16px;line-height:1.6;color:#4e574d;font-size:14px;margin-bottom:8px">Button not working? Paste this link into your browser:<br><a href="{{ .ConfirmationURL }}" style="color:#186F49;word-break:break-all">{{ .ConfirmationURL }}</a></p>
+  </td></tr>
+  <tr><td style="padding:20px 4px 0;font-family:Figtree, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+    <p style="margin:0 0 6px;font-size:13px;line-height:1.5;color:#4e574d">You’re receiving this because it was requested on brightnews.online with this email address.</p>
+    <p style="margin:0 0 6px;font-size:13px;line-height:1.5;color:#4e574d">BrightNews · brightnews.online</p>
+  </td></tr>
+</table>
+</td></tr>
+</table>
+</body>
+</html>{{ end }}

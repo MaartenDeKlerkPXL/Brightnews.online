@@ -15,15 +15,22 @@ const SITE_URL = 'https://brightnews.online';
 // elke run onnodig laten committen (de "geen wijzigingen"-check hieronder
 // zou nooit meer stil zijn). Werk deze datum handmatig bij zodra je een
 // van de PAGES daadwerkelijk inhoudelijk wijzigt.
-const LAST_MODIFIED = '2026-09-01';
+const LAST_MODIFIED = '2026-11-12'; // overstap naar redesign v5 (adressen)
 
 // Bijgehouden lijst statische pagina's (Fase 4/5-opschoning gecontroleerd:
 // dit zijn de .html-bestanden in de root op het moment van schrijven, minus
 // profiel.html, wachtwoord-vergeten.html en thanks.html: account-/
 // transactiepagina's zonder indexeerbare meerwaarde, bewust weggelaten).
+// Sinds redesign v5 (2026-11-18): precies de pagina's zonder noindex. Niet
+// erin: inloggen, profiel, wachtwoord-vergeten, bedankt, afmelden, 404, de
+// doorstuurpagina's (v5-*.html, thanks.html) en de pagina's die per datum of
+// id opgebouwd worden (artikel, editie, dagoverzicht; het archief en de
+// statische artikelen zijn de indexeerbare ingang).
 const PAGES = [
   { loc: '/', priority: '1.0' },
+  { loc: '/archief.html', priority: '0.8' },
   { loc: '/over-ons.html', priority: '0.8' },
+  { loc: '/zo-kiezen-we.html', priority: '0.6' },
   { loc: '/abonnementen.html', priority: '0.8' },
   { loc: '/Privacy.html', priority: '0.3' },
   { loc: '/algemeene-voorwaarden.html', priority: '0.3' },

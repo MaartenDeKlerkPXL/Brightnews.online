@@ -53,6 +53,8 @@ function main() {
             telling.bekeken++;
             let html = fs.readFileSync(bestand, 'utf8');
             const origineel = html;
+            // Pagina's in het v5-sjabloon hebben hun eigen "Meer goed nieuws".
+            if (html.includes('id="artikel-gegevens"')) continue;
 
             if (!html.includes('class="meer-nieuws"')) {
                 const blok = burenHtml({ id }, lang, burenIndex);

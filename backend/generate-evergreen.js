@@ -10,7 +10,6 @@ const path = require('path');
 require('dotenv').config();
 const { aiCall, verwerkAIResponse } = require('./ai-adapter');
 
-const SITE_URL = 'https://brightnews.online';
 const TALEN = ['nl', 'en', 'de', 'fr', 'es'];
 const TAAL_NAMEN = { nl: 'Nederlands', en: 'Engels', de: 'Duits', fr: 'Frans', es: 'Spaans' };
 const LOCALES = { nl: 'nl-NL', en: 'en-US', de: 'de-DE', fr: 'fr-FR', es: 'es-ES' };
@@ -77,72 +76,70 @@ Antwoord UITSLUITEND met geldig JSON in exact dezelfde vorm — regeleindes binn
     return null;
 }
 
-function paginaHtml(lang, data, artikelen, slugsPerTaal, artikelManifest) {
-    const slug = slugsPerTaal[lang];
-    const paginaUrl = `${SITE_URL}/themas/${lang}/${slug}.html`;
-    const hreflangs = TALEN
-        .map(l => `    <link rel="alternate" hreflang="${l}" href="${SITE_URL}/themas/${l}/${slugsPerTaal[l]}.html">`)
-        .join('\n');
-    const intro = String(data.intro).split(/\n+/).map(s => s.trim()).filter(Boolean)
-        .map(p => `            <p>${escapeHtml(p)}</p>`).join('\n');
-    const items = data.items.map(item => {
-        const artikel = artikelen[item.nr - 1];
-        const entry = artikelManifest.articles?.[artikel.id];
-        const href = entry?.slugs?.[lang]
-            ? `/articles/${lang}/${entry.slugs[lang]}-${artikel.id}.html`
-            : `/?id=${encodeURIComponent(artikel.id)}`;
-        const titel = artikel.perTaal[lang]?.title ?? artikel.perTaal.nl.title;
-        return `            <li>
-                <a href="${href}">${escapeHtml(titel)}</a>
-                <p>${escapeHtml(item.waarom ?? '')}</p>
-            </li>`;
-    }).join('\n');
-    const datum = new Date().toLocaleDateString(LOCALES[lang], { year: 'numeric', month: 'long', day: 'numeric' });
+// Teksten van de site (filter_*, v5_thema_*), zoals in de andere generators.
+const vm = require('vm');
+const { v5Pagina } = require('./schil');
+const sandbox = { window: {} };
+vm.runInNewContext(fs.readFileSync(path.join(root, 'data/translations.js'), 'utf8'), sandbox);
+function t(lang, key) {
+    const T = sandbox.window.translations;
+    return (T[lang] && T[lang][key]) || (T.en && T.en[key]) || key;
+}
 
-    return `<!DOCTYPE html>
-<html lang="${lang}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; object-src 'none'; base-uri 'self'; form-action 'self'">
-    <meta name="description" content="${escapeHtml(String(data.meta_d ?? '').slice(0, 155))}">
-    <title>${escapeHtml(data.titel)} | BrightNews</title>
-    <link rel="canonical" href="${paginaUrl}">
-${hreflangs}
-    <link rel="alternate" hreflang="x-default" href="${SITE_URL}/themas/en/${slugsPerTaal.en}.html">
-    <meta property="og:title" content="${escapeHtml(data.titel)}">
-    <meta property="og:description" content="${escapeHtml(String(data.meta_d ?? '').slice(0, 155))}">
-    <meta property="og:url" content="${paginaUrl}">
-    <meta property="og:type" content="website">
-    <link rel="icon" type="image/png" href="/assets/brightnews-logo-faviconv5.png">
-    <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/components.css">
-    <style>
-        .thema { max-width: 760px; margin: 0 auto; padding: 26px 20px 70px; }
-        .thema header a img { max-width: 232px; height: auto; }
-        .thema h1 { margin: 22px 0 6px; }
-        .thema .datum { color: var(--medium-text); margin-bottom: 20px; }
-        .thema ul { list-style: none; padding: 0; margin: 26px 0 0; display: flex; flex-direction: column; gap: 16px; }
-        .thema li { background: #fff; border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 14px 18px; }
-        .thema li a { font-weight: 700; color: var(--dark-text); }
-        .thema li p { margin: 6px 0 0; color: var(--medium-text); font-size: .95rem; }
-        .thema footer { margin-top: 40px; color: var(--medium-text); font-size: .85rem; }
-    </style>
-</head>
-<body>
-<main class="thema">
-    <header><a href="/"><img src="/assets/brightnews-logo.png" width="463" height="94" alt="BrightNews"></a></header>
-    <h1>${escapeHtml(data.titel)}</h1>
-    <p class="datum">${escapeHtml(datum)} · BrightNews</p>
+// De links per item, uit het artikelmanifest (statische pagina) of anders
+// de v5-artikelpagina.
+function itemsVoorTaal(lang, data, artikelen, artikelManifest) {
+    return data.items.map(item => {
+        const artikel = artikelen[item.nr - 1];
+        const slug = artikelManifest.articles?.[artikel.id]?.slugs?.[lang];
+        return {
+            href: slug ? `/articles/${lang}/${slug}-${artikel.id}.html` : `/artikel.html?id=${encodeURIComponent(artikel.id)}`,
+            titel: artikel.perTaal[lang]?.title ?? artikel.perTaal.nl.title,
+            waarom: item.waarom ?? '',
+        };
+    });
+}
+
+// Eén themapagina in redesign v5. pagina: { titel, intro, meta_d, datum
+// (YYYY-MM-DD), categorie, items: [{ href, titel, waarom }] }. Die gegevens
+// staan ook als JSON in de pagina (#thema-gegevens), zodat een volgende
+// sjabloonwijziging de pagina opnieuw kan maken (backend/migreer-themas-v5.js).
+function paginaHtml(lang, pagina, slugsPerTaal) {
+    const varianten = Object.fromEntries(TALEN.filter(l => slugsPerTaal[l]).map(l => [l, `/themas/${l}/${slugsPerTaal[l]}.html`]));
+    const beschrijving = String(pagina.meta_d ?? '').slice(0, 155);
+    const datum = pagina.datum
+        ? new Date(`${pagina.datum}T12:00:00Z`).toLocaleDateString(LOCALES[lang], { timeZone: 'Europe/Amsterdam', year: 'numeric', month: 'long', day: 'numeric' })
+        : '';
+    const label = pagina.categorie ? t(lang, `filter_${String(pagina.categorie).toLowerCase()}`) : '';
+    const overline = label && !label.startsWith('filter_') ? label : 'BrightNews';
+    const intro = String(pagina.intro).split(/\n+/).map(s => s.trim()).filter(Boolean)
+        .map(p => `            <p>${escapeHtml(p)}</p>`).join('\n');
+    const eigen = /^\/(articles\/[a-z]{2}\/[a-z0-9-]+\.html|artikel\.html\?id=[A-Za-z0-9%-]+|\?id=[A-Za-z0-9%-]+)$/;
+    const items = pagina.items.map(item => {
+        const href = eigen.test(item.href || '') ? item.href : '/archief.html';
+        return `            <li><article class="headline-item"><h2 class="headline-item__titel"><a class="headline-item__link" href="${escapeHtml(href)}">${escapeHtml(item.titel)}</a></h2>${item.waarom ? `<p class="headline-item__tekst">${escapeHtml(item.waarom)}</p>` : ''}</article></li>`;
+    }).join('\n');
+    const gegevens = JSON.stringify(pagina).replace(/</g, '\\u003c');
+
+    const main = `    <section class="info-sectie info-sectie--intro" aria-labelledby="thema-titel">
+        <div class="container info-tekst">
+            <p class="type-overline">${escapeHtml(overline)}</p>
+            <h1 class="type-display-sm" id="thema-titel">${escapeHtml(pagina.titel)}</h1>${datum ? `
+            <p class="info-tekst__datum"><time datetime="${escapeHtml(pagina.datum)}">${escapeHtml(datum)}</time></p>` : ''}
 ${intro}
-    <ul>
+        </div>
+    </section>
+
+    <section class="info-sectie" aria-label="${escapeHtml(pagina.titel)}">
+        <div class="container info-tekst">
+            <ul class="koppen-lijst" role="list">
 ${items}
-    </ul>
-    <footer>© BrightNews · <a href="/">brightnews.online</a></footer>
-</main>
-</body>
-</html>
-`;
+            </ul>
+        </div>
+    </section>
+    <script type="application/json" id="thema-gegevens">${gegevens}</script>`;
+
+    return v5Pagina({ lang, titel: pagina.titel, beschrijving, pad: varianten[lang], varianten, ogType: 'article', main });
 }
 
 async function main() {
@@ -220,8 +217,12 @@ Antwoord UITSLUITEND met geldig JSON — regeleindes binnen een tekstveld als \\
     for (const lang of TALEN) {
         const dir = path.join(root, 'themas', lang);
         await fs.mkdirp(dir);
-        await fs.writeFile(path.join(dir, `${slugsPerTaal[lang]}.html`),
-            paginaHtml(lang, teksten[lang], artikelen, slugsPerTaal, artikelManifest));
+        const pagina = {
+            titel: teksten[lang].titel, intro: teksten[lang].intro, meta_d: teksten[lang].meta_d,
+            datum: new Date().toISOString().slice(0, 10), categorie,
+            items: itemsVoorTaal(lang, teksten[lang], artikelen, artikelManifest),
+        };
+        await fs.writeFile(path.join(dir, `${slugsPerTaal[lang]}.html`), paginaHtml(lang, pagina, slugsPerTaal));
     }
     manifest.themas[week] = {
         categorie,
@@ -233,7 +234,11 @@ Antwoord UITSLUITEND met geldig JSON — regeleindes binnen een tekstveld als \\
     console.log(`✨ Themapagina's ${week} geschreven (${TALEN.length} talen): ${teksten.nl.titel}`);
 }
 
-main().catch(err => {
-    console.error('💥 Evergreen mislukt:', err);
-    process.exit(1);
-});
+if (require.main === module) {
+    main().catch(err => {
+        console.error('💥 Evergreen mislukt:', err);
+        process.exit(1);
+    });
+}
+
+module.exports = { paginaHtml };

@@ -1,14 +1,29 @@
-// Bump deze versie bij elke inhoudelijke wijziging aan CSS/JS. Zonder dat
-// blijven bestaande bezoekers vastzitten op een oude cache en krijgen ze
-// nieuwe fixes nooit te zien (zie Fase 2-audit).
-const CACHE_NAME = 'brightnews-v38'; // v38: iOS Safari (punt 64) — 100dvh naast 100vh en invoervelden minimaal 16px; raakt global.css, components.css en index.html. v37: max-image-preview:large (punt 51) én de RSS-autodiscovery-regels (punt 47) op alle indexeerbare pagina's — twee wijzigingen aan index.html onder één versie. v36: footer-LinkedInlink naar de nieuwe bedrijfspagina. v35: footer-Facebooklink naar de echte BrightNews-Pagina (index.html staat in de precache). v34: review-ronde 2026-09-26 — HTML met querystring niet meer cachen (de cache groeide onbegrensd), summary-guards in index.js, dode premium-code weg. Bumpen bij elke wijziging aan ASSETS-bestanden.
+// Bump deze versie alleen als dit bestand of de ASSETS-lijst verandert. Sinds
+// v40 haalt de worker CSS en JS eerst van het netwerk (zie fetch hieronder),
+// dus een wijziging is zonder bump te zien, binnen de HTTP-cache van GitHub
+// Pages (max-age=600: tot tien minuten na een deploy).
+const CACHE_NAME = 'brightnews-v40'; // v40 (2026-11-12): precache naar de v5-bestanden; alles netwerk-eerst, de cache is alleen nog offline terugval. v39: overstap naar redesign v5. Oudere versies: zie git log van sw.js.
+// Wat de v5-home nodig heeft om offline te openen. Een bestand dat ontbreekt,
+// blokkeert de installatie niet (zie install).
 const ASSETS = [
     '/',
     '/index.html',
-    '/css/global.css',
-    '/css/components.css',
-    '/js/main.js',
-    '/assets/brightnews-logo.png'
+    '/css/fonts.css',
+    '/css/tokens.css',
+    '/css/v5/basis.css',
+    '/css/v5/componenten.css',
+    '/css/v5/paginas.css',
+    '/js/v5/gedeeld.js',
+    '/js/v5/schil.js',
+    '/js/v5/home.js',
+    '/js/supabase-init.js',
+    '/js/vendor/supabase-js-2.112.4.js',
+    '/data/translations.js',
+    '/assets/iconen.svg',
+    '/assets/fonts/figtree-latin.woff2',
+    '/assets/fonts/instrument-sans-latin.woff2',
+    '/assets/brightnews-logo.png',
+    '/assets/brightnews-logo-faviconv5.png'
 ];
 
 // Installeren van de Service Worker
@@ -18,7 +33,9 @@ self.addEventListener('install', (event) => {
             // cache: 'reload' — vers van het netwerk, niet uit de HTTP-cache.
             // Zonder dit bakte een install vlak na een deploy de oude versie
             // van een asset (max-age 600) permanent in de nieuwe SW-cache.
-            return cache.addAll(ASSETS.map((url) => new Request(url, { cache: 'reload' })));
+            // Per bestand en zonder te falen: met addAll hield één ontbrekend
+            // bestand iedereen voor altijd op de vorige worker.
+            return Promise.all(ASSETS.map((url) => cache.add(new Request(url, { cache: 'reload' })).catch(() => {})));
         }).then(() => self.skipWaiting()) // Nieuwe SW meteen actief, niet pas na sluiten van alle tabs
     );
 });
@@ -37,14 +54,16 @@ self.addEventListener('activate', (event) => {
     );
 });
 
-// Verzoeken afhandelen (Offline support).
-// HTML/navigaties: network-first — bezoekers zien nieuwe deploys direct,
-// de cache is alleen nog terugval bij offline. Zonder dit bleven bestaande
-// bezoekers op de oude site hangen tot een handmatige CACHE_NAME-bump.
-// Overige assets: cache-first zoals voorheen (alleen de precache-lijst
-// wordt ooit gevuld; er wordt bewust niets dynamisch bijgecachet, zodat
-// nieuws-JSON en premium-content nooit in de cache belanden).
+// Verzoeken afhandelen. Alleen GET op de eigen site; de rest (Supabase,
+// Google, Stripe) gaat buiten de worker om.
+// Alles netwerk-eerst: bezoekers zien een nieuwe deploy meteen, ook van CSS
+// en JS. De cache is alleen terugval als er geen verbinding is. Er wordt niets
+// dynamisch bijgecachet behalve HTML zonder querystring, zodat nieuws-JSON
+// en premium-tekst nooit in de cache belanden.
 self.addEventListener('fetch', (event) => {
+    const url = new URL(event.request.url);
+    if (event.request.method !== 'GET' || url.origin !== self.location.origin) return;
+
     const isHtml = event.request.mode === 'navigate'
         || (event.request.headers.get('accept') || '').includes('text/html');
 
@@ -52,13 +71,11 @@ self.addEventListener('fetch', (event) => {
         event.respondWith(
             fetch(event.request)
                 .then((response) => {
-                    // Alleen succesvolle same-origin pagina's zónder querystring als
-                    // offline-terugval bewaren: elke ?id=/?v=-variant apart cachen
-                    // liet de cache onbegrensd groeien (duizenden entries).
-                    const url = new URL(event.request.url);
-                    if (response.ok && url.origin === self.location.origin && !url.search) {
+                    // Elke ?id=/?v=-variant apart cachen liet de cache
+                    // onbegrensd groeien (duizenden entries).
+                    if (response.ok && !url.search) {
                         const kopie = response.clone();
-                        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, kopie));
+                        event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.put(event.request, kopie)));
                     }
                     return response;
                 })
@@ -67,9 +84,18 @@ self.addEventListener('fetch', (event) => {
         return;
     }
 
+    // De bestanden uit ASSETS ververst de worker meteen, zodat de offline-
+    // terugval bij de HTML van de laatste keer past.
+    const isAsset = ASSETS.includes(url.pathname) && !url.search;
     event.respondWith(
-        caches.match(event.request).then((response) => {
-            return response || fetch(event.request);
-        })
+        fetch(event.request)
+            .then((response) => {
+                if (isAsset && response.ok) {
+                    const kopie = response.clone();
+                    event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.put(url.pathname, kopie)));
+                }
+                return response;
+            })
+            .catch(() => caches.match(event.request).then((r) => r || Response.error()))
     );
 });

@@ -1,5 +1,14 @@
 # TODO BrightNews
 
+> 🚨 **ZEER HOGE PRIORITEIT (2026-10-30): punt 67** — een skill "Is mijn
+> website goed beschermd" maken aan de hand van de pdf en een foto, en Oh My
+> Claude met al zijn agents over de site laten lopen om te zien of er nog
+> problemen opduiken. Staat bovenaan "Blokkeert de lancering".
+>
+> **Nieuw op 2026-11-03: punt 68 t/m 73**, uit een eerste ronde langs twee
+> controlelijstjes. Punt 68 (inlogmails) bleek op 2026-11-11 een vals
+> alarm: er stond al een eigen SMTP via Strato. Alleen de limiet nakijken.
+
 > **Stand 2026-09-28, avond.** Vijf pull requests in één dag: #11 t/m #14 zijn
 > gemerged, #15 staat open. Daarmee zijn **punt 3, 46, 47, 50, 51, 53.1, 54
 > (techniek), 55, 57, 60 en 61 afgehandeld.** De welkomstreeks draait live —
@@ -138,6 +147,435 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
 ---
 
 ## Blokkeert de lancering
+
+- [ ] **67. 🚨 ZEER HOGE PRIORITEIT: is de site goed beschermd? Skill maken
+  en een volledige controle met alle agents.**
+  *(Maarten, 2026-10-30. Gaat vóór al het andere werk op deze lijst.)*
+
+  1. **Een skill "Is mijn website goed beschermd" maken**, aan de hand van
+     de pdf en een foto die Maarten heeft. Die twee staan nog niet in de repo:
+     geef ze mee aan de sessie die de skill bouwt (of zet ze in
+     `assets/documents/`). De skill moet een vaste controlelijst worden die
+     elke Claude-sessie, bij Maarten en bij Erik, opnieuw kan draaien.
+  2. **Oh My Claude met al zijn agents laten draaien** over de hele site en
+     de repo, om te zien of er nog problemen opduiken. Die plugin moet daarvoor
+     in de sessie geïnstalleerd zijn.
+  3. **Wat eruit komt** als genummerde punten op deze lijst zetten, met naam.
+     Raakt het Supabase, betalingen, `backend/`, `sw.js` of secrets, dan is het
+     werk voor Erik (PR met review-verzoek, zie CLAUDE.md).
+
+  Aandachtspunten die er in elk geval in horen, omdat ze in deze repo al eens
+  misgingen of gevoelig zijn: de meta-CSP op alle pagina's en in het
+  artikelsjabloon, de Supabase-regels (RLS) en `security definer`-functies
+  zoals `lees_artikel()` (PR #15), dat er geen secrets in de repo staan, de
+  Stripe-webhooks, de service worker, en dat AI-tekst nergens via
+  `innerHTML` in een pagina komt.
+
+  #### Eerste ronde, 2026-11-03: twee controlelijstjes van Instagram
+
+  Maarten kwam twee lijstjes tegen ("20 things to tell Claude so your app
+  doesn't get hacked" en "Ready for 1,000 users?"). Ze zijn nagelopen tegen
+  de repo, de live site en Supabase (security-advisor). Ze horen bij de skill
+  uit stap 1. Wat al goed zit:
+
+  - **Geen secrets in de repo of de git-geschiedenis.** De hele geschiedenis is
+    doorzocht op sleutels van Stripe, Anthropic, Resend, AWS en Supabase
+    service_role: niets gevonden. `.env` staat in `.gitignore` en geeft 404
+    op de site. Dat is belangrijk, want **de repo is publiek**.
+  - **Gebruikersrechten (RLS):** RLS staat aan op alle 13 tabellen. De
+    zeven tabellen zonder policies zijn daardoor dicht, en dat is de
+    bedoeling. Wachtwoorden hasht Supabase zelf.
+  - **XSS:** AI-tekst komt overal via tekstknopen in de pagina. `innerHTML`
+    wordt alleen gebruikt voor onze eigen vertaalteksten, en elke pagina heeft
+    een meta-CSP.
+  - **Stripe-webhook:** controleert de handtekening over de rauwe body en
+    schrijft met `upsert`, dus een tweede aflevering van hetzelfde event doet
+    geen kwaad.
+  - **Race conditions in de Actions:** alle drie de geplande workflows hebben
+    een `concurrency`-groep.
+  - **Terugdraaien:** GitHub Pages is `git revert` plus `CACHE_NAME` bumpen.
+    Komt in het draaiboek voor 22 november (punt 2).
+
+  Wat niet van toepassing is: CORS (we hebben geen eigen API naast Supabase en
+  de webhook, die Stripe server-naar-server aanroept) en N+1-queries (de site
+  is statisch, één RPC per artikel).
+
+  Wat **wel** openstaat, staat als eigen punt hieronder: 68 (inlogmails),
+  69 (alarm bij storing en uitgaven), 70 (back-ups), 71 (packages), 72
+  (meldingen van de Supabase-advisor) en 73 (voorbeeldstaten uit bij de
+  lancering).
+
+  Bewust **niet** opgepakt: de **security headers**. GitHub Pages laat geen
+  eigen headers toe, en `frame-ancestors` (tegen clickjacking) werkt niet in
+  een meta-CSP. Dat kan alleen met een proxy zoals Cloudflare ervoor. Het
+  risico is klein, want er is geen knop die met één klik iets onherroepelijks
+  doet. Daarom staat het pas ná de lancering. Ook bewust zo: de map
+  `supabase/` (SQL), de prompts en `data/selectie-archief.jsonl` zijn te lezen
+  op brightnews.online. Er staat niets geheims in, en de repo is toch al
+  publiek.
+
+- [x] **68. De inlogmails van Supabase: limiet nakijken.** ✅ 2026-11-12: limiet staat op 30 per uur (Maarten), en de mail "wachtwoord opnieuw instellen" kwam aan in de inbox. Nog open en elders belegd: het plan bij Resend (punt 69.2) en de huisstijl van de mails (punt 74).
+  *(Maarten, 2026-11-03, gecorrigeerd 2026-11-11)*
+  Op 3 november stond hier dat er geen eigen SMTP was en dat Supabase dus
+  maar 2 inlogmails per uur stuurt. **Dat klopte niet.** De overdracht (fase
+  N, 5 september) was verouderd. In Supabase staat sinds een eerdere datum
+  **custom SMTP aan via Strato**: `smtp.strato.com`, poort 465, afzender
+  `info@brightnews.online`. **Laten staan.**
+  Nog te doen:
+  1. **Nagekeken 2026-11-11: de mail-limiet stond nog op 2 per uur**, ook
+     met eigen SMTP. Het oorspronkelijke probleem was dus toch echt. Ophogen
+     naar 30 per uur (Authentication → Rate Limits → Save changes), en op de
+     lanceringsdag eventueel tijdelijk hoger. De overige limieten staan op de
+     standaardwaarden; laten staan.
+  2. Eén keer een inloglink en een "wachtwoord vergeten" testen met een
+     wegwerpadres, en in de spammap kijken.
+  3. Overstappen naar Resend is niet nodig. Het kan later, als Strato een
+     verzendlimiet blijkt te hebben of mails in de spam belanden. Resend
+     verstuurt nu alleen de welkomstreeks (punt 60). Het gratis plan haalt
+     100 mails per dag: kijk welk plan er staat vóór de lancering.
+
+- [ ] **69. Een alarm als het nieuws stilvalt, en uitgavenalarmen.**
+  *(Maarten, 2026-11-03)* Het nieuws lag van 2 oktober tot vandaag stil
+  zonder dat iemand het merkte: het Anthropic-tegoed was op (punt 26). Dat is
+  precies "error tracking" en "spend alerts" uit het lijstje.
+  1. ✅ **2026-11-12:** de controle bestond al (`backend/controleer-run.js`,
+     sinds september) en de drempel staat nu op 24 uur in plaats van 3
+     dagen. **De echte oorzaak van oktober:** de controle werkte wél, 55
+     runs waren rood, maar GitHub mailt een mislukte geplande run naar het
+     account dat de cron-regel het laatst wijzigde (Maarten, 10 augustus),
+     en dat mailadres is het studentenadres. **Nog door Maarten:** op
+     GitHub → Settings → Notifications → Custom routing de repo
+     Brightnews.online naar je Gmail laten gaan, en onder System → Actions
+     "Only notify for failed workflows" aan. Zie ook TODO 77.
+     ✅ Gedaan door Maarten (2026-11-12): meldingen gaan naar Gmail.
+     *Gecorrigeerd 2026-11-12:* Custom routing bestaat alleen voor
+     organisaties. Voor deze repo (van een persoonlijk account) gaan
+     meldingen naar het "Default notifications email" onder
+     github.com/settings/notifications; dat is een accountinstelling, niet
+     een instelling van de repo.
+     Oorspronkelijke tekst: **Gezondheidscontrole in de nieuws-Action:** een stap aan het eind die
+     faalt als er al 24 uur geen nieuw artikel is bijgekomen, of als de
+     AI-call een fout over tegoed of rate limit gaf. Een mislukte geplande
+     run mailt GitHub naar wie de cron het laatst wijzigde, dus controleer dat
+     dat Maarten is. Raakt `.github/` en `backend/`, dus via een PR.
+  2. **Uitgavenalarmen:** in console.anthropic.com een melding bij laag
+     tegoed naast de auto-reload (punt 26). Bekijk ook het gebruik bij
+     Supabase (gratis plan: 5 GB uitgaand verkeer, 50.000 maandelijks
+     actieve gebruikers) en bij Resend (punt 68).
+  3. **Fouten in de browser:** geen Sentry, want dat is een extern script
+     (CSP). Na de lancering eventueel een eigen klein foutlogje naar een
+     Supabase-tabel met alleen insert-rechten, zoals bij Feedback.
+
+- [ ] **70. Back-ups van Supabase: het gratis plan heeft er geen die we
+  kunnen terugzetten.** *(Maarten, 2026-11-03)* De volledige artikelteksten
+  (`articles_full`, 3.990 rijen) staan **alleen** in Supabase, dus niet in de
+  repo. Daarnaast de profielen en Premium-status, promocodes en
+  mailvoorkeuren. Gaat er iets mis met een migratie of een verkeerde
+  `delete`, dan is het weg. Opties:
+  - **Supabase Pro ($25 per maand):** dagelijkse back-ups, 7 dagen terug.
+    Daar zit ook de bescherming tegen gelekte wachtwoorden bij (punt 72).
+  - **Zelf een dump:** een Action met `pg_dump` naar een privéplek. **Niet**
+    in deze repo, want die is publiek en de dump bevat e-mailadressen.
+  Advies: Pro nemen vlak vóór de lancering. Dat is de minste moeite, en er
+  komen dan echte betalende lezers in de database.
+  Daarnaast: er is geen aparte testdatabase. Tests met Stripe-testmodus
+  schrijven naar de echte tabel `profiles`. Gebruik daarvoor een
+  wegwerpaccount en ruim het daarna op.
+
+- [x] **71. Packages opruimen en bijwerken.** ✅ 2026-11-12: PR #17 gemerged (axios, nodemailer en pdfkit weg, `npm audit fix`; 0 kwetsbaarheden in de pakketten van de Actions). *(Maarten, 2026-11-03)*
+  `npm audit` geeft **5 hoge en 1 gemiddelde kwetsbaarheid** (axios,
+  form-data, follow-redirects, nodemailer, zod, ws). Die draaien alleen in de
+  GitHub Actions, niet in de browser, maar daar staan wel de secrets.
+  - **Ongebruikt, kan weg:** `axios`, `nodemailer` en `pdfkit` (nergens
+    meer aangeroepen in `backend/`). Daarmee verdwijnen de meeste meldingen
+    al. `@mistralai/mistralai` gaat weg samen met de Mistral-sleuf (punt
+    26).
+  - Daarna `npm audit fix` voor de rest, en de Action één keer handmatig
+    draaien als controle. Raakt `package.json` van de pijplijn, dus via een
+    PR.
+
+- [x] **72. Meldingen van de Supabase-advisor (2026-11-03).** ✅ 2026-11-12: `advisor-2026-11-11.sql` gedraaid; de advisor meldt de twee triggerfuncties en de `search_path` niet meer. Ook `opruimen-2026-11-11.sql` gedraaid: `pg_cron` staat aan met twee nachtelijke opruimtaken (TODO 75). Wat de advisor nog meldt is bedoeld (`lees_artikel`, `leestegoed`, `meld_af`, `get_full_article`, `redeem_promo_code`) of wacht op Supabase Pro (gelekte wachtwoorden, 72.4).
+  *(Maarten, PR met SQL-bestand in `supabase/`)*
+  1. `cleanup_profile_after_user_delete()` en `feedback_volumerem()` zijn
+     triggerfuncties, maar iedereen kan ze als RPC aanroepen
+     (`security definer`, `anon`). `revoke execute … from anon,
+     authenticated, public`. De triggers blijven gewoon werken.
+  2. `gratis_artikelen_per_maand` heeft geen vaste `search_path`: zet
+     `set search_path = public, pg_temp`.
+  3. `lees_artikel`, `leestegoed`, `meld_af`, `get_full_article` en
+     `redeem_promo_code` zijn wél bedoeld om aan te roepen. Laat ze staan,
+     maar loop bij de review van PR #15 na dat het tellen van het tegoed
+     tegen dubbelklikken kan: twee tabbladen tegelijk mogen niet zes gratis
+     artikelen opleveren. Een unieke sleutel op (lezer, artikel) in
+     `gelezen_artikelen` regelt dat.
+  4. **Bescherming tegen gelekte wachtwoorden** (controle tegen
+     HaveIBeenPwned) staat uit. Dat kan alleen op Pro, zie punt 70.
+
+- [x] **79. Categorie- en themapagina's nog in het oude ontwerp.** ✅ 2026-11-12: v5-schil via `v5Pagina()` in backend/schil.js; themapagina's omgezet met backend/migreer-themas-v5.js. Na de lancering nog: een eigen ontwerp, en een overzichtspagina voor Thema's en Categorieën (de links in de header en footer hebben nog geen adres).
+  *(Claude, 2026-11-12)* De artikelpagina's en het archief zijn v5, maar
+  `backend/generate-categorieen.js` (30 pagina's, `categories/{taal}/…`) en
+  `backend/generate-evergreen.js` (`themas/…`) maken nog pagina's met de oude
+  schil en de oude CSS. De v5-artikelen linken onder "Meer goed nieuws" naar
+  de categoriepagina van hun categorie (die link houdt die pagina's voor
+  Google bereikbaar). In Figma ontbreken de categoriepagina (met de oude
+  chips) en het thema-overzicht nog (zie punt 66). Besluit nodig: vóór de
+  lancering omzetten (dan eerst ontwerpen), of na de lancering en tot dan
+  de oude opmaak laten staan.
+  **Besluit (Maarten, 2026-11-12):** vóór de lancering de v5-schil: header,
+  footer en CSS van v5, de artikelen als de bestaande v5-kaarten, zonder eigen
+  Figma-ontwerp. Gepland op donderdag 19 november. Het eigen ontwerp van de
+  categoriepagina en het thema-overzicht volgt na de lancering.
+
+- [ ] **78. Search Console: "Dubbele pagina zonder door de gebruiker
+  geselecteerde canonieke versie".** *(Maarten, mail van 2026-11-12)*
+  ✅ *2026-11-12:* elke indexeerbare pagina heeft nu één canonical, de rest
+  staat op noindex, en de sitemap noemt alleen de indexeerbare adressen. Nog:
+  op 20 november de sitemap opnieuw indienen en de melding laten valideren. Eén
+  pagina, nieuw sinds deze week. Niet nu repareren: op 18 november krijgen
+  alle pagina's nieuwe adressen (de v5-pagina's worden de echte), en dan
+  verandert wat dubbel is. Dan elke pagina een eigen `<link rel="canonical">`
+  geven, de sitemap alleen de echte adressen laten noemen, en op 20 november
+  in Search Console de sitemap opnieuw indienen en de melding laten
+  valideren. Ter info uit hetzelfde rapport: 1.180 pagina's geïndexeerd,
+  2.870 "gevonden, nog niet geïndexeerd". Dat laatste is normaal voor een
+  site die geparkeerd staat achter `binnenkort.html`; het hoort na de
+  lancering te dalen.
+  **Nog open uit de review van 2026-11-12:** de kaarten op de home, de editie
+  en het dagoverzicht linken naar `artikel.html?id=` (noindex), dat met JS
+  doorstuurt naar de statische pagina. Google krijgt zo geen interne links
+  naar de artikelpagina's, alleen de sitemap en "Meer goed nieuws". Oplossing:
+  `generate-articles.js` zet per artikel de slug in `data/news_<taal>.json`,
+  en `B.url.artikel` linkt dan meteen naar `/articles/<taal>/<slug>-<id>.html`.
+  Het manifest (670 kB) is te zwaar om daarvoor op elke pagina te laden.
+  Na de overstap van 20 november oppakken. Wat ook nog openstaat: tijdens de
+  parkeerstand zijn het archief en zo-kiezen-we openbaar en staan ze in de
+  sitemap. Dat is bewust zo gelaten, omdat de site twee dagen later live gaat.
+  En de welkomstmail linkt naar `/`, dus naar het parkeerbericht. Ook dat
+  blijft zo tot de lancering.
+
+- [x] **73. Bij de lancering: de voorbeeldstaten uitzetten.** ✅ 2026-11-12: `?staat=`, `?vandaag=` en `?gelezen=` werken alleen nog op localhost (`B.param()` in js/v5/gedeeld.js). `?team=1` en het wachtwoord blijven bij punt 2 (de lanceringsdag).
+  *(Maarten, 2026-11-03)* De v5-pagina's tonen nu elke staat via `?staat=`
+  (artikel, Bedankt, Contact, Feedback, Afmelden en andere). Live is dat
+  verwarrend: `v5-bedankt.html?staat=gelukt` zegt dat Premium aanstaat zonder
+  dat iemand betaald heeft. De echte tekst lekt niet, want die komt uit
+  `lees_artikel()`, maar het hoort er niet. Bij het koppelen (punt 66) moet
+  de echte staat het overnemen, en `?staat=` alleen nog werken op
+  `localhost`. Neem `?team=1` en het wachtwoord `happytester` mee in punt 2.
+
+- [ ] **74. Alle mails naar de v5-huisstijl, in de taal van de lezer.**
+  ✅ *Gebouwd 2026-11-12 (planning 18 november).* Eén opmaak voor alle mails
+  (`backend/mailopmaak.js`): woordmerk als tekst, v5-groen, Figtree met een
+  systeemletter als terugval, altijd licht. De welkomstreeks gebruikt hem (al
+  per taal; nu ook met een List-Unsubscribe-header en de afmeldlink naar de
+  v5-pagina). De vijf Supabase-sjablonen staan in `supabase/templates/`,
+  gemaakt door `backend/maak-mailsjablonen.js`, en kiezen hun taal op
+  `user_metadata.preferred_lang` (Engels zonder taal). De site houdt
+  `preferred_lang` gelijk aan de taal die de lezer kiest (js/v5/schil.js; bij
+  een nieuw account de taal van de site). `--zet` maakt eerst een backup,
+  `--terug` zet die terug. **Nog door
+  Maarten:** ~~de sjablonen in Supabase zetten~~ (✅ 2026-11-12, met
+  `--zet`), ~~Stripe-branding~~ ✅. De inloglink is in en en nl ontvangen in
+  Gmail en werkt. Nog: één keer op de iPhone bekijken. De sjablonen zijn niet met Go getest
+  (geen Go op deze Mac); de structuur wel.
+  *(Maarten, 2026-11-11. Pas doen als de rebranding live gaat, maar niet
+  vergeten: het hoort bij de lancering.)*
+  Aanleiding: de testmail "wachtwoord opnieuw instellen" kwam op 11 november
+  goed aan, maar ziet er nog uit als de oude site. Wat eraan moet:
+  - **Oude huisstijl:** het oude logo moet eruit (het woord "News" in
+    `#32CD32`), de knop is nog het oude felgroen, en de rest volgt v5 nog
+    niet. Wordt het v5-groen `#186F49`, de v5-woordmerk en Figtree, met een
+    systeemletter als terugval in mailprogramma's.
+  - **Twee talen door elkaar:** de tekst staat in het Nederlands en het
+    Engels tegelijk. Een Duitse, Franse of Spaanse lezer snapt er weinig van.
+    Eén mail in de taal van de lezer. Dat kan in de mailsjablonen van Supabase
+    zelf met een voorwaarde op de metadata van de gebruiker
+    (`{{ if eq .Data.taal "de" }}…{{ end }}`). Dan moet de taal wel bij het
+    aanmaken van het account in `user_metadata` komen (meenemen in TODO 66
+    punt 9). Zonder taal: Engels.
+
+  **Alle mails die BrightNews verstuurt, op één rij:**
+  1. **Supabase-sjablonen** (Authentication → Emails → Templates; staan
+     alleen in het dashboard, niet in de repo): inloglink, account
+     bevestigen, wachtwoord opnieuw instellen, e-mailadres wijzigen en
+     uitnodigen. Bewaar de nieuwe versies ook in `supabase/templates/`,
+     zodat ze niet nog eens alleen in het dashboard staan.
+  2. **De welkomstreeks** via Resend (`backend/mailteksten.js` en
+     `backend/stuur-mails.js`, punt 60): vijf mails. Zijn ze al per taal?
+     Nakijken. Ook de afmeldlink moet naar de v5-pagina Afmelden.
+  3. **De mails van Stripe** (bon, proefperiode bijna voorbij, betaling
+     mislukt; punt 61): Stripe vertaalt die zelf. Alleen de branding instellen
+     in Stripe → Settings → Branding (logo, kleur `#186F49`).
+  Afzender overal hetzelfde: `BrightNews`. Na de wijziging elke mail één keer
+  echt versturen, in licht en donker in Gmail en op de iPhone.
+
+- [ ] **75. De juridische teksten: er komt geen jurist, dus wij beslissen.**
+  *(Maarten, 2026-11-11)* Maarten, Erik en Claude zijn samen de controle.
+  De vragen die voor een jurist bedoeld waren, zijn besluiten geworden. De
+  meeste zijn al genomen en staan in de teksten; wat nog een keuze van
+  Maarten vraagt, staat onder "Nog te beslissen".
+
+  **Rechtgezet op 11 november** (drie rondes, alles in vijf talen):
+  - wat de site echt doet: geen "anoniem meten" meer, welke artikelen je las
+    en wanneer, de gegevens van Contact, Feedback, promocodes en mails, de
+    IP-adressen bij GitHub, Supabase en de foto's van bronnen, en drie
+    welkomstmails met afmelden;
+  - Stripe als officiële verkoper (merchant of record), ook bij het
+    afrekenen; prijzen inclusief btw;
+  - de leveranciers: Supabase (Ierland), Stripe, Google, Strato, Resend en
+    GitHub;
+  - alle [haken] zijn ingevuld en de jurist-opmerkingen zijn weg. De datum
+    van de drie documenten staat op 11 november.
+
+  **Besluiten die in de teksten staan** (voorstel van Claude; Maarten en
+  Erik bevestigen of veranderen ze):
+  1. **Grondslagen** (`v5_pv_s3_p2`, `v5_pv_s3_l1` t/m `l5`): uitvoering van
+     de overeenkomst voor inloggen, tegoed en abonnement; gerechtvaardigd
+     belang voor de welkomstmails, het beantwoorden van berichten, misbruik
+     van promocodes en de logboeken; toestemming voor Google Analytics.
+  2. **Bewaartermijnen** (`v5_pv_s5_p`): zie het feitenblad hieronder.
+  3. **Doorgifte buiten de EU** (`v5_pv_s4_p2`): Google, Stripe, GitHub,
+     Supabase en Resend zijn (onderdeel van) Amerikaanse bedrijven; de tekst
+     zegt dat dat gaat via het EU-VS-gegevensprivacykader of de
+     standaardcontractbepalingen. ✅ Nagekeken 2026-11-11: Resend staat op
+     de lijst van het EU-VS-kader en heeft daarnaast standaardcontract-
+     bepalingen in zijn DPA; Supabase gebruikt de standaardcontract-
+     bepalingen uit zijn DPA. Google, Stripe en GitHub (Microsoft) vallen
+     onder het EU-VS-kader. De tekst klopt dus.
+  4. **Rechten en privacy-adres** (`v5_pv_s7_p`): de volledige lijst rechten
+     uit de AVG, info@brightnews.online als adres, antwoord binnen een maand.
+  5. **Geen uitsluiting van aansprakelijkheid meer** (`v5_av_s2_p`). Een
+     algemene uitsluiting tegenover consumenten houdt waarschijnlijk geen
+     stand; zonder zo'n zin geldt gewoon de wet. In de plaats: "neem
+     belangrijke beslissingen niet alleen op basis van een samenvatting" en
+     fouten melden via Feedback.
+  6. **Auteursrecht** (`v5_av_s5_p`): de artikelen en foto's blijven van hun
+     makers, en een rechthebbende kan via Contact vragen iets weg te halen;
+     dat doen we zo snel mogelijk. Het risico zelf blijft (samenvattingen
+     van andermans artikelen, foto's van de bron); dit beperkt het.
+  7. **Wijzigingen en prijs** (`v5_av_s6_p`, `v5_av_s4_l5`): minstens 30
+     dagen vooraf per mail, en opzeggen kan vóór de wijziging ingaat.
+  8. **Nieuwe sectie "Overige afspraken"** (`v5_av_s7`, `l1` t/m `l5`):
+     minimumleeftijd 16 (de site controleert dat niet), wanneer we een
+     account mogen afsluiten (na een waarschuwing, met terugbetaling van
+     het ongebruikte deel), de Nederlandse tekst is leidend, Nederlands
+     recht met behoud van het consumentenrecht van het eigen EU-land, en
+     contact via info@brightnews.online.
+  9. **Herroepingsrecht** (`v5_rf_s3_p`): uitgelegd zonder "digitale
+     diensten" of "digitale inhoud" te noemen: je ziet bij het afrekenen af
+     van de 14 dagen, maar merkt daar niets van door de gratis proefperiode
+     en de 14 dagen geld terug na de eerste betaling.
+  10. **AI-verordening (art. 50):** elk artikel zegt "AI-samengevat" en de
+      footer ook. Dat vinden we genoeg; er verandert niets.
+
+  **Feitenblad: wat we bewaren, waar en hoe lang.** De kolom "Nu" zegt wat
+  er echt gebeurt; waar die afwijkt van de tekst, is er werk (Maarten, met
+  Claude). Nagekeken in de live database op 2026-11-11.
+
+  | Gegeven | Waar | De tekst belooft | Nu |
+  |---|---|---|---|
+  | Account: e-mailadres, inlogmanier, inlogtijden | Supabase Auth (Ierland) | zolang het account bestaat; na een verzoek binnen 30 dagen gewist | verwijderen gaat met de hand in het Supabase-dashboard |
+  | Plan en status (`profiles`) | Supabase | idem | gaat mee met het account |
+  | Gelezen artikelen (`gelezen_artikelen`, PR #15) | Supabase | idem | `on delete cascade`: gaat mee |
+  | Mails (`mail_log`, `mail_voorkeuren`) | Supabase | idem | `on delete cascade`: gaat mee |
+  | Gebruikte promocodes (`promo_redemptions`) | Supabase | idem | `on delete cascade`: gaat mee |
+  | Mislukte promocodepogingen (`promo_attempts`) | Supabase | "alleen het tijdstip, hooguit een dag" | dagelijkse opruiming met `pg_cron` in `supabase/opruimen-2026-11-11.sql` (PR #17); **nog draaien** |
+  | Feedback (`feedback`) | Supabase | hooguit twee jaar | idem, alles ouder dan twee jaar; **nog draaien**. Een e-mailadres dat iemand zelf invulde, hangt niet aan het account en blijft dus ook na verwijderen staan, tot die twee jaar om zijn |
+  | Contactberichten | nog niet gekoppeld | hooguit twee jaar | **bij het koppelen (TODO 66 punt 13) de tabel toevoegen aan dezelfde opruiming** |
+  | IP-adressen in logboeken | GitHub, Supabase | (geen termijn genoemd) | termijn van de leverancier |
+  | Google Analytics | Google | hooguit 14 maanden per bezoek | ✅ nagekeken 2026-11-11: gebeurtenisgegevens 2 maanden, gebruikersgegevens 14 maanden, Google-signalen uit, gegevens delen helemaal uit |
+  | Betaalgegevens | Stripe | zo lang als de wet van een verkoper vraagt | regelt Stripe |
+  | Mailadres bij het versturen | Strato, Resend | (geen termijn genoemd) | termijn van de leverancier |
+
+  **Werkwijze bij een verzoek om je account te verwijderen** (de tekst
+  belooft binnen 30 dagen): heeft de lezer Premium, eerst opzeggen in
+  Stripe. Daarna in Supabase → Authentication → Users de gebruiker
+  verwijderen. Alles in het feitenblad met "gaat mee" verdwijnt dan vanzelf.
+  Antwoord de lezer dat het gedaan is.
+
+  **Nog te beslissen of na te kijken (Maarten):**
+  1. ✅ **Jaarabonnement (Shine): optie a gekozen** (Maarten, 2026-11-11).
+     Shine verlengt nog steeds per jaar, maar is na de eerste verlenging op
+     elk moment opzegbaar: Premium loopt tot het einde van de lopende maand
+     en de lezer krijgt de volle maanden daarna terug (voorbeeld in de
+     tekst: opzeggen in de vijfde maand van het tweede jaar = 7/12 van
+     €24,95 = €14,55). Zo voldoet het aan art. 6:236 onder j BW. Aangepast
+     in vijf talen: `v5_av_s4_l3`, `v5_av_s4_l4`, `v5_rf_kort3`,
+     `v5_rf_s5_p`, `v5_abo_shine_noot` en `v5_abo_faq2_a`.
+     **Werkwijze (Maarten), nodig vanaf de eerste verlenging (december
+     2027):** zegt iemand Shine op na een verlenging, dan in het
+     Stripe-dashboard het abonnement laten stoppen op de laatste dag van de
+     lopende maand ("Opzeggen" → "Op een aangepaste datum") en het
+     ongebruikte deel van de laatste factuur terugbetalen ("Terugbetalen" →
+     gedeeltelijk bedrag), binnen een paar werkdagen. Het klantportaal van
+     Stripe toont na het opzeggen eerst nog het einde van het jáár; stuur de
+     lezer daarom na het aanpassen een korte mail met de echte einddatum en
+     het bedrag dat terugkomt. **Maarten, vóór december 2027 (PR met
+     review-agent):** de Stripe-webhook laat een mail naar info@brightnews.online
+     sturen zodra een Shine-abonnement dat al eens verlengd is, wordt
+     opgezegd, zodat niemand het mist.
+  2. ✅ **De prijzen in Stripe staan op inclusief btw** (nagekeken door
+     Maarten, 2026-11-11). Oorspronkelijke vraag: de teksten zeggen "inclusief
+     btw". Bij beide prijzen staat "Belasting in prijs opnemen" nu op
+     "Automatisch". Dan volgt Stripe de standaardinstelling van het account;
+     staat die ook op automatisch, dan kiest Stripe zelf op basis van de
+     munt, en bij euro is dat inclusief. **Voorstel:** zet het bij Glow en
+     Shine expliciet op "Ja" (inclusief), zodat het niet afhangt van een
+     andere instelling. Weigert Stripe dat bij een bestaande prijs, laat het
+     dan staan en controleer het zo: open beide Payment Links in een
+     privévenster, kies bij het adres Duitsland en daarna Frankrijk, en kijk
+     of het bedrag na de proefperiode €2,95 en €24,95 blijft. Blijft het
+     gelijk, dan klopt "inclusief btw". Maak geen nieuwe Payment Links: dan
+     staat Managed Payments niet meer vanzelf aan (TODO 58).
+  3. ✅ **Het vinkje voor het herroepingsrecht blijft** (Maarten,
+     2026-11-11). `v5_abo_toestemming` en `v5_rf_s3_p` blijven zoals ze zijn.
+  4. ✅ **De welkomstreeks: de lezer hoort het bij het aanmaken** (Maarten,
+     2026-11-11). Op `v5-inloggen.html?tab=account` staat achter de
+     akkoordzin: "Je krijgt drie welkomstmails. Afmelden kan met één klik
+     onder elke mail." (`v5_in_welkomstmails`, vijf talen). Geldt alleen
+     voor Account maken, niet voor inloggen.
+     **Aangevuld 2026-11-11 (besluit Maarten):** mail 3 legt Premium uit en
+     is dus reclame. Voor reclame per mail moet de lezer bij het aanmelden
+     meteen nee kunnen zeggen (Telecommunicatiewet art. 11.7). Daarom staat
+     er nu een vinkje "Stuur me geen welkomstmails" (`v5_in_geen_mails`,
+     standaard uit, `name="geen_welkomstmails"`), en de zin is "Zonder vinkje
+     krijg je drie welkomstmails. Afmelden kan ook later, met één klik onder
+     elke mail." **Bij het koppelen (TODO 66 punt 9):** staat het vinkje
+     aan, zet dan direct na het aanmaken `mail_voorkeuren.afgemeld = true`
+     voor die lezer (of geef het mee in `user_metadata` en laat
+     `stuur-mails.js` dat lezen). Het ontwerp in Figma heeft het vinkje en
+     de zin nog niet.
+
+  **De proefperiode begint bij Stripe bij het afrekenen**, niet als Premium
+  aanstaat. De teksten op Bedankt passen daar sinds 11 november bij; er is
+  niets meer te beslissen.
+
+  **Zelf je account verwijderen bestaat nog niet.** De teksten zeggen nu
+  "vraag het via Contact" of per mail. Wordt die functie gebouwd (TODO 66
+  punt 10), pas dan `v5_pv_kort4`, `v5_pv_s7_p` en `v5_av_s3_p` aan.
+
+- [ ] **76. Resend: de API-sleutel kleiner maken en het account op een blijvend adres.**
+  *(Maarten, 2026-11-12)* Resend blijft nodig: het verstuurt de drie
+  welkomstmails (`welkomstreeks.yml`, secret `RESEND_API_KEY`). Het gratis
+  plan is genoeg (100 per dag ≈ 33 aanmeldingen; een mail die op de limiet
+  stuit, wordt de volgende dag opnieuw geprobeerd). Twee dingen wel:
+  1. **De sleutel "Brightnews" heeft Full access** (alle domeinen, ook
+     instellingen wijzigen). Maak een nieuwe sleutel met **Sending access**,
+     alleen voor `brightnews.online`, zet die als `RESEND_API_KEY` in GitHub
+     (Settings → Secrets and variables → Actions → potloodje), draai
+     `welkomstreeks.yml` één keer handmatig, en verwijder daarna de oude
+     sleutel in Resend.
+  2. **Het account staat op een studentenadres** (team "pxl", factuuradres
+     en land UK). Verloopt dat adres na je studie, dan kom je er niet meer
+     in. Voeg info@brightnews.online of een eigen adres toe onder Settings →
+     Team en zet het factuuradres goed.
+
+- [ ] **77. Ná de lancering: welke accounts hangen nog aan het studentenadres?**
+  *(Maarten, 2026-11-12)* Resend staat op 12401091@student.pxl.be (punt
+  76). Loop alle diensten van BrightNews na en zet ze op een blijvend adres
+  (info@brightnews.online of een eigen adres), zodat je er na je studie nog
+  in kunt: GitHub, Supabase, Stripe, Anthropic, Resend, Google (Analytics,
+  Search Console), Figma, Strato, en de sociale kanalen. Kijk per dienst
+  ook naar het factuuradres en wie er nog meer toegang heeft.
 
 - [x] **1. De twee open pull requests vlottrekken.** ✅ 2026-09-16 (Fable-review): #5 gemerged + og:image-absoluutfix erachteraan; #1 lokaal gemerged (bronwerk integraal overgenomen, sw-conflict → v23) en pagina's geregenereerd. Oorspronkelijke tekst: Allebei hebben ze
   merge-conflicten (`mergeable=CONFLICTING`) en lopen achter op master:
@@ -412,7 +850,7 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   Zolang de site geparkeerd staat heeft plaatsen weinig zin: een bezoeker
   komt dan op één artikel en kan verder nergens heen.
 
-- [ ] **43. De privacyregel over feedback nalezen.** *(Erik)* Op 2026-09-24
+- [x] **43. De privacyregel over feedback nalezen.** ✅ 2026-11-12: de v5-tekst (`v5_pv_s2_p4`) noemt nu wat `artikel_feedback` echt bewaart (keuze, toelichting, artikel, taal, e-mail); het oude formulier met toestel bestaat niet meer. *(Erik)* Op 2026-09-24
   is er een bullet bijgekomen onder "Jouw Privacy" op `Privacy.html`, in vijf
   talen (`privacy_list_feedback`). Hij beschrijft wat het feedbackformulier
   bewaart: de antwoorden, de toelichting, een zelf ingevuld e-mailadres, plus
@@ -1090,8 +1528,19 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   gebeurt; het is een waarschuwing, geen taak. *(Maarten, bij de eerstvolgende
   nieuwe link.)*
 
-- [ ] **59. Metered paywall — gebouwd, wacht op één SQL-script van Maarten
-  (2026-09-28).** *(Besluit Maarten 2026-09-27: doen.)*
+- [x] **59. De paywall is hard — overweeg een metered model.** ✅ 2026-11-12:
+  PR #15 gemerged (een gratis account leest 5 volledige artikelen per maand).
+  Na de review ook live in Supabase: een slot per lezer in `lees_artikel()`
+  (twee tabbladen tegelijk leveren geen zesde artikel op), de maand begint om
+  00:00 Nederlandse tijd, en `search_path = public, pg_temp` op de drie
+  functies. Live en `supabase/metered-paywall-2026-09-28.sql` zijn gelijk.
+  Bewust niet opgepakt (oude site, wordt vervangen door v5): bij het opnieuw
+  openen van een al gelezen artikel toont de melding het maandtotaal, en een
+  oud artikel zonder volledige tekst toont bij tegoed op toch de "op"-melding.
+  Neem die twee mee bij het koppelen van de v5-paywall (TODO 66 punt 6).
+  PR #16 (de scraper, punt 65) is dezelfde dag gemerged, met een strengere
+  lijst menuzinnen uit de review.
+  *(Besluit Maarten 2026-09-27: doen, aantal later bepalen — 5 of 10.)*
 
   Een premium-artikel was volledig dicht tenzij je betaalde. Geen gratis
   artikelen, geen teller. Vrijwel geen nieuwssite doet dat, en met reden:
@@ -1672,6 +2121,365 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   categoriepagina met de oude chips, de knop "Lees het origineel" die buiten
   het artikelframe valt, en de eindtekst "Morgenochtend…" (er komt 's middags
   nog een run, dus neutraler formuleren).
+
+  ### Fase 3: de pagina's als voorbeeld (2026-10-29, branch `redesign/v5-paginas`)
+
+  Af, als noindex-voorbeeld naast de live pagina's (de live pagina's zijn niet
+  aangeraakt): `v5-home.html`, `v5-dagoverzicht.html?datum=…`,
+  `v5-archief.html`, `v5-editie.html?datum=…` en `v5-artikel.html?id=…`.
+  Pagina-JS in `js/v5/<pagina>.js` met gedeelde bouwstenen in
+  `js/v5/gedeeld.js`; paginaopbouw in `css/v5/paginas.css`. Nieuwe
+  componenten (Digest card, Archive day, Month heading, Page head, Note,
+  Source item, Share bar, Source attribution, Story card lg en "Show meta",
+  en een Melding voor `showNotification()`) staan in `componenten.css` en op
+  `stijlgids.html`. Acht nieuwe iconen in `assets/iconen.svg`. 63 nieuwe
+  vertaalsleutels (`v5_…`) in alle vijf talen. Getest in licht en donker, op
+  1440 en 375 px, met toetsenbord, in alle vijf talen.
+
+  **Testen zolang de data stilstaat:** `?vandaag=2026-10-02` laat elke
+  v5-pagina doen alsof het die dag is (blijft bewaard bij doorklikken).
+  Zonder parameter geldt de echte dag, en dan zijn Vandaag en Gisteren leeg
+  (punt 26).
+
+  Afwijkingen van Figma, met reden:
+  - **Het dagoverzicht is er per categorie, niet per dag** (2 à 3 per dag).
+    De homepage toont daarom "Het goede nieuws van {weekdag}" met de
+    samenvatting van het rijkste overzicht en de bronnen van alle
+    overzichten samen. De dagoverzichtpagina zet ze onder elkaar met elk een
+    eigen tussenkop, en maakt één genummerde bronnenlijst; [1]-verwijzingen
+    in de tekst linken naar dat nummer. De h1 is daarom zonder dubbele punt
+    en ondertitel, en de meta toont alleen de dag, geen tijd (het overzicht
+    wordt pas de dag erna gemaakt).
+  - **Eindtekst:** "In de loop van de dag kunnen er nieuwe bij komen" in
+    plaats van "Morgenochtend…" (er komt 's middags nog een run).
+  - **Gisteren zonder verhalen** heeft geen frame; daar staat de Day empty
+    met de tekst van de lege archiefdag.
+  - **Archief:** per keer een week (7 dagen) in plaats van 5.
+  - **Oudere editie:** koppen zonder categorie, want het manifest kent die
+    niet (zie hieronder).
+  - **Artikel:** de header toont "Inloggen" in plaats van "Mijn account";
+    het voorbeeld kent geen ingelogde staat.
+  - **Geen foto of foto laadt niet → merkbeeld** (zoals Figma), niet de
+    reservefoto's van de huidige site.
+  - Deelknoppen gebruiken de officiële logo's (Figma vraagt dat in de
+    componentbeschrijving); WhatsApp en X komen uit Simple Icons (CC0).
+  - Mobiel is niet ontworpen: de rasters vallen terug op 2 en 1 kolom.
+
+  **Abonnementen (2026-10-29):** `v5-abonnementen.html` volgt de frames
+  "Abonnementen · Desktop" en de foutstaat "vinkje vergeten", met de
+  besluiten: Shine voorgeselecteerd, samenvatting vóór de knop (vandaag €0,00
+  en de datum vandaag + 30 dagen), verplicht vinkje voor het
+  herroepingsrecht met Field error zonder pop-up, de vergelijking als echte
+  tabel, de FAQ als `<details>`, en "Probeer Premium" in de header verborgen.
+  `?plan=maandelijks` kiest Glow voor; de paywall in het artikel geeft het
+  gekozen plan zo mee. Nieuwe tokens uit Figma: `--feedback-success-*`,
+  `--feedback-error-fg` (licht en donker) en `--section-md`.
+  Afwijkingen: de antwoorden op FAQ 2 t/m 4 staan niet in Figma (alleen de
+  vragen) en zijn geschreven uit wat de site nu doet; **Erik: klopt
+  "wisselen via Abonnement beheren"?** "Log in", "algemene voorwaarden" en
+  "refundbeleid" hebben nog geen v5-pagina en dus geen link.
+
+  **Inloggen en registreren (2026-10-30):** `v5-inloggen.html` volgt de
+  frames "Inloggen · Desktop" (inloglink, wachtwoord, fout, inloglink
+  verstuurd) en "Account maken · Desktop", met de besluiten: één pagina met
+  twee tabbladen, elk met een eigen adres (`?tab=account`), de inloglink als
+  standaard, het wachtwoordveld pas na die keuze, "Wachtwoord tonen" als
+  gewoon vinkje, de juiste `autocomplete` per veld, de foutmelding bovenaan
+  de kaart zonder te verklappen wat er mis is (met de uitweg "Stuur me een
+  inloglink"), en geen "Inloggen" of "Probeer Premium" in de header.
+  `?next=` blijft bij het wisselen van tabblad bewaard. Inloggen zelf is
+  niet gekoppeld; de staten bekijk je met `?staat=fout` en
+  `?staat=verstuurd&email=…`. Nieuwe tokens uit Figma:
+  `--feedback-error-bg`, `--layout-form-width` en `--form-label-offset`.
+  Nog zonder link (pagina bestaat in v5 nog niet): algemene voorwaarden en
+  privacyverklaring ("Wachtwoord vergeten?" linkt sinds 2026-11-02). Het wachtwoordveld bij "Account
+  maken" met een wachtwoord is niet apart ontworpen; het volgt het voorstel
+  uit de besluiten (hulptekst "Minstens 8 tekens").
+
+  **Mijn account (2026-10-30):** `v5-profiel.html` volgt de frames "Mijn
+  account · Desktop" (Gratis, Premium (proefperiode), Promocode onbekend),
+  met de besluiten: de status als badge naast "Je abonnement", het
+  leestegoed in tekst met de Credit meter alleen als beeld, één primaire knop
+  (alleen bij een gratis account: "Probeer Premium 30 dagen gratis"),
+  "Abonnement beheren" secundair met het icoon voor een andere site, de
+  promocodefout als Field error zonder pop-up, en weergave en taal met
+  dezelfde keuzeknoppen als het instellingenpaneel (die twee lopen nu
+  gelijk; `js/v5/schil.js` koppelt elke radiogroep met `data-instelling`).
+  De header toont "Mijn account" in plaats van "Inloggen" zodra `<body>`
+  `data-ingelogd` heeft; in het voorbeeld zet alleen deze pagina dat.
+  Nieuwe componenten (ook op de stijlgids): Toggle, Credit meter, Badge md
+  Neutral en Button Tertiary. Het account is niet gekoppeld: e-mailadres,
+  leestegoed en abonnement zijn voorbeeldwaarden uit het adres
+  (`?staat=premium`, `?staat=promofout`, `?gelezen=0` t/m `5`, `?email=`);
+  de datums zijn echt (tegoed weer bij 0 op de 1e van de volgende maand,
+  proefperiode vandaag + 30 dagen). Toepassen, Uitloggen, Abonnement beheren
+  en de mails-toggle melden dat het voorbeeld niet gekoppeld is.
+  Afwijkingen en open punten:
+  - `.type-heading-md` stond op 500; Figma (Heading/md) zegt SemiBold
+    (600, −0,5%). Rechtgezet in `css/v5/basis.css`; de klasse werd alleen
+    op de stijlgids gebruikt.
+  - Nog zonder link: "Wijzigen" (e-mailadres), "Wachtwoord instellen" en
+    "Account verwijderen". De bevestigingsstap voor verwijderen is nog niet
+    ontworpen (Maarten, Figma).
+  - De andere statussen uit de besluiten (Premium actief, Opgezegd,
+    Betaling mislukt) hebben geen frame en zijn dus niet gebouwd. Daarvoor
+    is ook een Badge Warning nodig, met tokens die nog niet bestaan.
+  - Mobiel valt terug op één kolom; de knop "Mijn account" in de header
+    verdwijnt onder 600 px, net als "Inloggen".
+
+  **Wachtwoord vergeten (2026-11-02):** `v5-wachtwoord-vergeten.html` volgt
+  de vier frames "Wachtwoord vergeten · Desktop" (Formulier, Fout:
+  e-mailadres onvolledig, Mail verstuurd, Nieuw wachtwoord kiezen) met de
+  besluiten: zelfde opbouw als inloggen, header zonder "Inloggen" en
+  "Probeer Premium", "Terug naar inloggen" bovenaan als tertiaire knop met
+  pijl, en onder de knop de uitweg "Log in met een inloglink". De fout komt
+  alleen bij een onvolledig e-mailadres, als Field error met aria-invalid en
+  de focus terug naar het veld; de controle gebeurt in de browser (een punt
+  in het domein is verplicht, want `jan@voorbeeld` laat de browser zelf
+  door). "Kijk in je mail" zegt "Hoort … bij een account?", zodat de pagina
+  niet verklapt of een account bestaat. Staten bekijken: `?staat=fout`,
+  `?staat=verstuurd&email=…` en `?type=recovery&email=…` (nieuw wachtwoord
+  kiezen). "Wachtwoord vergeten?" op `v5-inloggen.html` linkt er nu naartoe.
+  Stuur link, Stuur opnieuw en Wachtwoord opslaan controleren de velden en
+  melden dan dat het voorbeeld niet gekoppeld is. Niet gebouwd: de staat
+  "link verlopen". Die staat alleen als tekst in de besluiten (formulier met
+  een Alert Warning) en de Alert heeft nog geen variant Warning; daarvoor
+  ontbreken de tokens (zelfde punt als de Badge Warning hierboven).
+
+  #### Back-end voor v5 (Claude, sessie Maarten)
+
+  1. **Eerst moet het nieuws weer draaien (punt 26).** Zonder nieuwe
+     artikelen tonen de homepage en het archief vooral lege staten.
+  2. **Eén dagoverzicht per dag**, of een vast veld waarmee de front-end de
+     overzichten van één dag als één geheel kan tonen (titel voor de dag,
+     samenvatting van de dag). Nu zijn het er 2 à 3, per categorie.
+  3. **De tekst van een dagoverzicht in de publieke data is afgekapt**
+     (eindigt op "…"). Op de dagoverzichtpagina staat dus een afgebroken
+     tekst. Besluiten: is het dagoverzicht gratis (dan de volledige tekst in
+     `news_<taal>.json`), of komt het achter dezelfde paywall?
+  4. **Het manifest aanvullen met categorie** (en liefst foto en
+     samenvatting), zodat oudere edities de categorie tonen zoals Figma. Het
+     eenmalige script uit de git-geschiedenis staat hierboven al beschreven.
+  5. **Een storing is niet te onderscheiden van een lege dag.** 3 t/m 28
+     oktober staan in het archief als "Op deze dag haalde geen enkel verhaal
+     onze lat", terwijl de pijplijn stillag. Nodig: per dag of de runs
+     gelukt zijn (bijvoorbeeld een klein runlog naast het manifest), zodat
+     de front-end "storing" anders kan tonen dan "niets goed genoeg".
+  6. ✅ **Gekoppeld op 2026-11-12** (vervroegd van 14 november). De staat en de
+     volledige tekst komen uit `lees_artikel()`; bij een storing de
+     samenvatting zonder paywall en een melding, nooit onterecht "op". De
+     paywallknoppen geven het artikel mee als `?next=`. In de PR met
+     `supabase/account-koppeling-2026-11-12.sql` geeft `lees_artikel()` nu
+     `geen_tekst` vóór "op" (het tweede punt uit TODO 59). Het eerste punt
+     uit 59 (maandtotaal bij een al gelezen artikel) is in v5 geen probleem:
+     de regel zegt "nog {x} van {n}", en dat klopt ook dan.
+     Oorspronkelijke tekst: **De echte paywallstaat** uit `lees_artikel()` (PR #15): niet ingelogd,
+     tegoed over, tegoed op, Premium. Het voorbeeld toont nu altijd staat 3.
+     Daarvoor moeten de v5-pagina's Supabase en `js/auth.js` laden; dan wint
+     ook de oude `showNotification()` van de nieuwe Melding, en die moet dan
+     naar de v5-opmaak. In Figma ontbreken de paywalltypes Account en Credit
+     nog als frame (Maarten).
+  7. ✅ **Gekoppeld op 2026-11-12** (vervroegd van 15 november). Met vinkje naar
+     de Stripe-betaallink uit `js/betaal-config.js` met `client_reference_id`,
+     `prefilled_email` en `locale`. Niet ingelogd: eerst een gratis account
+     (`?tab=account`), daarna terug met het plan en het artikel bewaard. Al
+     Premium: naar Mijn account, zodat niemand twee abonnementen afsluit.
+     Terug met de terugknop: de melding "Je bent terug van Stripe" en het
+     vinkje weer leeg (`?staat=terug` om te bekijken).
+      **Nog door Maarten in Stripe (dashboard, live):** bij beide
+      betaallinks "Na betaling: doorsturen naar je website" op
+      `https://brightnews.online/v5-bedankt.html` (vanaf 18 november
+      `bedankt.html`, met de echte adressen), en in het klantportaal de
+      terugkeerlink naar Mijn account. Testen in de testmodus vraagt
+      testbetaallinks en tijdelijk `STRIPE_ALLOW_TEST=true` plus
+      `STRIPE_WEBHOOK_SECRET_TEST` op de webhook; daarna weer uit.
+     Oorspronkelijke tekst: **De afrekening op `v5-abonnementen.html` koppelen** (betalingen, dus PR
+     langs Erik). De knop controleert nu alleen het vinkje en meldt dan dat de
+     betaling in het voorbeeld nog niet gekoppeld is. Het gekozen plan staat
+     in `input[name=plan]` (`jaarlijks` of `maandelijks`), en de paywall geeft
+     het al mee als `?plan=`. Open vraag uit Figma: moet je ingelogd zijn vóór
+     Stripe Checkout? Zo ja: niet ingelogd → naar de inlogpagina met
+     `?next=abonnementen` en daarna terug, met het plan bewaard. Juridische
+     tekst bij het vinkje nog laten controleren.
+  8. ✅ **Gedaan op 2026-11-12** (planning 18 november); zie de planning.
+     Oorspronkelijke tekst: **Bij de lancering:** de v5-pagina's hernoemen naar de echte adressen
+     (`index.html`, `archief.html`, het artikelsjabloon) en die adressen in
+     `partials/v5/` en `js/v5/gedeeld.js` (`url`) zetten. Sinds 2026-10-29
+     linken de v5-pagina's alleen naar elkaar; een pagina die in v5 nog niet
+     bestaat (Thema's, de categorieën, artikelen van vóór de feed) staat er
+     zonder link. `v5-404.html` wordt dan `404.html` (GitHub Pages toont die
+     vanzelf). Ook
+     de koppen van een oudere editie zijn daardoor nog geen links, terwijl
+     de uitlegnotitie zegt dat elke kop het artikel opent.
+  9. ✅ **Gekoppeld op 2026-11-13** (Maarten, met Claude). Supabase laadt nu
+     op elke v5-pagina (via `partials/v5/footer.html`, CSP met `connect-src`
+     naar Supabase); `js/v5/schil.js` zet `data-ingelogd` en `data-premium`.
+     Inloglink (`signInWithOtp`), wachtwoord (`signInWithPassword`), account
+     maken (`signUp` of inloglink) met `preferred_lang` en
+     `geen_welkomstmails` in `user_metadata`, terug naar `?next=`, "Stuur
+     opnieuw" na 60 seconden, uitloggen in Mijn account. Al ingelogd op de
+     inlogpagina: meteen door. Getest met een nepversie van Supabase in de
+     browser (alle routes), en de echte verbinding met een leesaanroep.
+     **Nog door Maarten:** in Supabase → Authentication → URL Configuration
+     bij Redirect URLs `https://brightnews.online/**` laten staan of
+     toevoegen, en voor lokaal testen `http://localhost:8945/**`. Anders
+     stuurt de inloglink je naar de Site URL in plaats van terug naar de
+     pagina. ✅ Redirect URLs staan goed (2026-11-12, Maarten). Daarna één
+     keer echt testen met een wegwerpadres.
+     **Uit de review (2026-11-12), verwerkt:** een open redirect via
+     `?next=/%09/evil.com` (nu `B.eigenPad()`, ook op Bedankt); "te vaak"
+     bij het versturen van een mail toont nu ook "Kijk in je mail", omdat
+     Supabase alleen bestaande adressen remt. **Blijft bestaan, en is
+     inherent aan Supabase:** wie zelf de API aanroept met de publieke
+     anon-key, ziet aan `shouldCreateUser: false` of een adres een account
+     heeft. De pagina verklapt het niet. **Te overwegen (Maarten):**
+     Authentication → Providers → Email → "Secure password change" aan,
+     zodat een ingelogde sessie niet zonder het oude wachtwoord een nieuw
+     kan kiezen.
+     Oorspronkelijke tekst: **Inloggen koppelen op `v5-inloggen.html`** (Supabase, Erik): inloglink
+     per mail (magic link), inloggen met wachtwoord, account maken met of
+     zonder wachtwoord, en daarna terug naar `?next=` (anders Mijn account).
+     Af te stemmen: de wachtwoordregel (voorstel: minstens 8 tekens) en
+     "Stuur opnieuw" pas na 60 seconden, met de knop zolang uitgeschakeld.
+     De foutmelding mag nooit verklappen of een e-mailadres bestaat.
+     Bij Account maken ook de taal van de lezer en het vinkje "Stuur me geen
+     welkomstmails" (`geen_welkomstmails`) opslaan; zie TODO 74 en 75.
+  10. ✅ **Gekoppeld op 2026-11-12** (vervroegd van 14 november). Niet ingelogd →
+      Inloggen. Staten: gratis (met tegoed), proefperiode, Premium, opgezegd,
+      betaling mislukt en Premium via een promocode; te bekijken met
+      `?staat=`. De mails-schakelaar via `mails_aan()`/`zet_mails()`,
+      promocodes via `redeem_promo_code()` met een melding per reden,
+      Abonnement beheren opent het klantportaal met het adres ingevuld.
+      Wachtwoord instellen of wijzigen gaat via een herstelmail (zo kan een
+      open sessie alleen het wachtwoord niet veranderen). **Besluiten
+      genomen:** Account verwijderen gaat via Contact (onderwerp "Mijn
+      account of gegevens verwijderen"), zoals de privacyverklaring al zegt;
+      E-mailadres wijzigen staat er niet meer (nog niet ontworpen; tot dan
+      via Contact); weergave en taal per apparaat, niet per account (na de
+      lancering). ✅ **Back-end live sinds 2026-11-12** (PR #19: beide
+      SQL-bestanden gedraaid, webhook versie 8).
+      Zonder die PR toont Mijn account Premium zonder onderscheid en staat
+      de mails-schakelaar uit. Bestaande Premium-lezers krijgen hun
+      `abo_status` pas bij het volgende Stripe-event; tot dan "Premium" met
+      "Volgende betaling".
+      **Uit de review (2026-11-12), verwerkt:** geen tweede abonnement
+      (Abonnementen haalt het profiel vers op en blokkeert ook bij een
+      lopend abonnement met een mislukte betaling; de webhook koppelt een
+      tweede klant niet als er al een abonnement loopt), late of herhaalde
+      Stripe-events zetten Premium niet meer terug aan (`stripe_event_op`,
+      en `premium_until` op nu in plaats van null bij opzeggen; getest in
+      `supabase/functions/stripe-webhook/volgorde.test.mjs`), en een paar
+      kleinere punten. **Besloten (Maarten, 2026-11-12): alle vijf zoals
+      hieronder geadviseerd, dus niets bouwen.** (1) zo laten en na een paar
+      maanden kijken of mensen het doen; (2) geen respijt, Mijn account legt
+      het uit; (3) handmatig terugbetalen in Stripe; (4) zo laten, promocodes
+      zijn voor testers; (5) alleen onthouden. De punten:
+      1. Wie opzegt, kan meteen opnieuw 30 dagen gratis proberen (Stripe
+         beperkt de proef niet tot één keer). Eventueel een aparte betaallink
+         zonder proef voor wie al eens een abonnement had.
+      2. Bij een mislukte betaling gaat Premium meteen uit, terwijl Stripe
+         nog dagen opnieuw probeert. Een paar dagen respijt kan.
+      3. Wie toch twee keer afrekent (twee tabbladen tegelijk), krijgt het
+         tweede abonnement niet gekoppeld; dat staat als 🚨 in het log van
+         de webhook en moet in Stripe worden terugbetaald.
+      4. Een lopende promocode-termijn en een abonnement delen één
+         `premium_until`: wie met een promocode abonneert of later opzegt,
+         verliest de rest van de promotermijn. Bewust zo laten, of de
+         promocode een eigen einddatum geven?
+      5. Een betaallink zonder proefperiode: de webhook vangt de volgorde in
+         dezelfde seconde nu af (getest), maar test zo'n link apart in de
+         testmodus voor je hem gebruikt.
+      Oorspronkelijke tekst: **Mijn account koppelen op `v5-profiel.html`** (Supabase en Stripe,
+      dus PR langs Erik). Nodig per lezer: e-mailadres, inlogmanier (heeft
+      hij een wachtwoord? dan "Wachtwoord wijzigen"), status (gratis,
+      proefperiode, Premium actief, opgezegd met einddatum, betaling
+      mislukt), plan en einddatum van de proefperiode, en het aantal
+      gelezen artikelen deze maand (het tegoed begint opnieuw op de 1e om
+      00:00 Nederlandse tijd). Verder: `<body data-ingelogd>` zetten op elke
+      v5-pagina zodra iemand ingelogd is, "Abonnement beheren" laten
+      doorsturen naar het Stripe-klantportaal, Uitloggen, de mails-toggle
+      bewaren, en weergave en taal bij het account opslaan zodat ze op elk
+      apparaat gelden. Open vragen uit Figma: wat doet een promocode
+      (gratis Premium-periode of korting), en hoe gaat Account verwijderen
+      bij Premium (eerst opzeggen in het klantportaal)?
+  11. ✅ **Gekoppeld op 2026-11-13**, samen met punt 9: `resetPasswordForEmail`
+      terug naar `?type=recovery`, `updateUser` met aparte meldingen voor te
+      kort en "zelfde als nu", een verlopen link toont het formulier met de
+      waarschuwing. Voorbeeldstaten nu `?staat=nieuw` en `?staat=verlopen`.
+      Oorspronkelijke tekst: **Wachtwoord herstellen koppelen op `v5-wachtwoord-vergeten.html`**
+      (Supabase, Erik). "Stuur link" vraagt de herstelmail aan
+      (`resetPasswordForEmail`) met als terugadres deze pagina met
+      `?type=recovery`; "Kijk in je mail" verschijnt altijd, ook bij een
+      onbekend adres. Op `?type=recovery` het nieuwe wachtwoord opslaan
+      (`updateUser`), daarna ingelogd door naar Mijn account. Af te stemmen
+      (staat in de besluiten): minimale lengte (voorstel 8, zoals bij
+      account maken), hoe lang de link geldig is, en "Stuur opnieuw" pas na
+      60 seconden. Een verlopen link toont het formulier met een Alert
+      Warning "Deze link is verlopen. Vraag een nieuwe aan."; die variant
+      bestaat sinds 2026-11-02 (`.alert--waarschuwing`).
+  12. ✅ **Gekoppeld op 2026-11-12** (vervroegd van 15 november). Vraagt elke 2
+      seconden het profiel op tot Premium aanstaat; plan, eerste betaling
+      (`proef_tot`) en e-mailadres uit profiel en sessie; "Verder lezen" naar
+      het artikel uit `?next=` of uit wat Abonnementen bewaarde. Niet
+      ingelogd in deze browser: eerst inloggen, dan terug. Besluit: Stripe
+      stuurt de bevestigingsmail (Managed Payments), niet wij.
+      Oorspronkelijke tekst: **Bedankt koppelen op `v5-bedankt.html`** (Stripe en Supabase, dus PR
+      langs Erik). Stripe Checkout stuurt na de aanmelding hierheen, met
+      `?next=` als de lezer van een artikel kwam. Nodig: een vraag "staat
+      Premium aan voor deze sessie?" die de pagina elke 2 seconden stelt
+      (`premiumStaatAan()` in `js/v5/bedankt.js`), plus plan, datum en
+      bedrag van de eerste betaling en het e-mailadres van de bevestiging.
+      Na 30 seconden zonder Premium toont de pagina "duurt langer dan
+      normaal". Af te stemmen (staat in de besluiten): stuurt Stripe de
+      bevestigingsmail of wij, en gaat de proefperiode in bij de aanmelding
+      of pas als Premium aanstaat? De waarschuwing gaat uit van het tweede.
+  13. ✅ **Gekoppeld op 2026-11-12** (vervroegd van 16 november). Contact schrijft
+      in `contactberichten`, Feedback in `artikel_feedback`: alleen
+      insert-rechten, de database controleert alles opnieuw (lengtes 2000 en
+      1000, vaste onderwerpen en keuzes, e-mailadres), per IP hooguit 5
+      berichten en 20 meldingen per uur plus 200 per uur in totaal. Het IP
+      zelf wordt niet bewaard, alleen een hash die elke dag verandert en na
+      een dag weg is; de privacyverklaring zegt dat nu ook. Honeypot gevuld:
+      de pagina doet alsof het gelukt is. Na twee jaar ruimt pg_cron alles
+      op. SQL: `supabase/formulieren-2026-11-12.sql` (in dezelfde PR als
+      punt 10). Contact heeft er een onderwerp "Mijn account of gegevens
+      verwijderen" bij. **Lezen** doe je in Supabase → Table Editor; er gaat
+      (nog) geen mail uit bij een nieuw bericht, dus kijk er geregeld in.
+      **Na het draaien van de SQL:** één testbericht via elke pagina sturen,
+      en in Supabase → Logs nakijken of de header `cf-connecting-ip`
+      binnenkomt (anders valt de limiet per IP terug op `x-forwarded-for`,
+      dat een bezoeker zelf kan meesturen; de totaallimiet van 200 per uur
+      blijft dan het vangnet, met een eigen melding die het mailadres noemt).
+      Oorspronkelijke tekst: **Contact en Feedback laten versturen** (`v5-contact.html`,
+      `v5-feedback.html`). Nu controleert het formulier de velden en toont
+      het daarna de bevestiging, maar er gaat niets weg. Nodig: waar komen
+      berichten binnen (voorstel Figma: een Supabase-tabel; voor Feedback
+      met artikel-id, keuze, tekst en taal), en tegen spam een verborgen
+      honeypot-veld (`website`, staat al in beide formulieren: gevuld =
+      weggooien) plus een limiet per IP, geen captcha. Contact noemt
+      bewust geen reactietermijn, e-mailadres of telefoonnummer; vul die
+      in als ze er zijn.
+  14. ✅ **Gekoppeld op 2026-11-12** aan `meld_af()` (token in de link); "Toch
+      weer aanmelden" gaat naar Mijn account. List-Unsubscribe staat in de
+      welkomstmails (zonder één-klik: GitHub Pages kan geen POST).
+      Oorspronkelijke tekst: **Afmelden voor mails koppelen op `v5-afmelden.html`**. De link uit de
+      mail moet zonder inloggen werken (token in de link), en de mails
+      krijgen een List-Unsubscribe-header (één klik in het mailprogramma).
+      Open: kan de link verlopen? "Toch weer aanmelden" zet de mails weer
+      aan; nu meldt de knop dat het voorbeeld niet gekoppeld is.
+  15. ✅ *2026-11-12: GA4 laadt na toestemming (js/v5/schil.js), CSP aangepast.* **Cookiebalk en Google Analytics** (sinds 2026-11-02 op elke
+      v5-pagina, onderaan `partials/v5/footer.html`). De keuze staat in
+      dezelfde sleutel als de live site (`brightNews_cookies`: `accepted` of
+      `essential`) plus `brightNews_cookies_datum`; na 12 maanden vraagt de
+      balk opnieuw. GA4 laden gebeurt nog niet: de CSP van de v5-pagina's
+      laat `googletagmanager.com` en `google-analytics.com` (nog) niet toe.
+      Bij de lancering: die hosts in de CSP zetten en `activateAnalytics()`
+      uit `index.js` aanroepen op de gebeurtenis `bn:cookies`
+      (`detail.statistieken`) en bij het laden als de keuze `accepted` is.
+  16. **Juridische teksten** (`v5-privacy.html`, `v5-voorwaarden.html`,
+      `v5-refundbeleid.html`, één sjabloon in `js/v5/juridisch.js`). ✅ Alle
+      [haken] ingevuld op 2026-11-11. Er komt geen jurist; wat nog een
+      besluit vraagt, staat in TODO 75.
 
   ### Opruimen in Figma als v3 gekozen is
 
