@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-en.xml" rel="self" type="application/rss+xml"/>
         <description>A fresh pick of good news from around the world, every day. Enjoy the read!</description>
         <language>en-us</language>
-        <lastBuildDate>Wed, 11 Nov 2026 23:06:13 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Nov 2026 06:13:19 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Your Daily Dose of Positivity</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Los Angeles bans oil drilling permanently</title>
+            <link>https://brightnews.online/articles/en/los-angeles-bans-oil-drilling-permanently-1794463996470mjxfozzef.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/los-angeles-bans-oil-drilling-permanently-1794463996470mjxfozzef.html</guid>
+            <pubDate>Thu, 12 Nov 2026 06:13:19 GMT</pubDate>
+            <description>After more than a decade of activism by residents, the Los Angeles City Council voted on October 28 in favor of an ordinance that prohibits oil drilling within city limits. New wells are banned immediately, existing wells cannot be drilled deeper or re-drilled, and all active operations must be completely shut down within twenty years. Los Angeles is now the...</description>
+            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/oil-pump-jack-city-limits-Depositphotos_199434004_S.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>280 overlooked ice age engravings discovered in Spanish cave</title>
             <link>https://brightnews.online/articles/en/280-overlooked-ice-age-engravings-discovered-in-spanish-cave-1794438369251cckz8f0n6.html</link>
@@ -243,14 +251,6 @@
             <guid isPermaLink="true">https://brightnews.online/articles/en/european-innovation-council-receives-1-8-billion-for-2027-1793991704874mb5trfigv.html</guid>
             <pubDate>Fri, 06 Nov 2026 19:01:46 GMT</pubDate>
             <description>The European Commission has announced €1.8 billion in funding for 2027 through the European Innovation Council (EIC). With this budget, the Commission aims to accelerate the development of breakthrough technologies and support ambitious startups. The goal is to strengthen Europe&apos;s position in the global innovation race.</description>
-        </item>
-        <item>
-            <title>Vermont Gas brings geothermal heating to affordable homes</title>
-            <link>https://brightnews.online/articles/en/vermont-gas-brings-geothermal-heating-to-affordable-homes-1793991687622bmh7f4zst.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/vermont-gas-brings-geothermal-heating-to-affordable-homes-1793991687622bmh7f4zst.html</guid>
-            <pubDate>Fri, 06 Nov 2026 19:01:29 GMT</pubDate>
-            <description>Vermont Gas has struck a groundbreaking deal with geothermal developer Dandelion Energy to equip the 44-unit affordable housing project Riggs Meadow in Hinesburg with geothermal heating and cooling. It is the first project in the US where a utility company owns and manages the installations itself, similar to gas pipelines. Drilling begins in early 2027, with residents able to move...</description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Geothermal-boring-at-Riggs-Meadow-Housing-Development-credit-Dandelion-Energy-released.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

@@ -1,10 +1,18 @@
 {
- "gegenereerd": "2026-11-11T23:22:56.945Z",
+ "gegenereerd": "2026-11-12T06:13:19.936Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "1794463996470mjxfozzef",
+     "titel": "Los Angeles verbiedt oliewinning definitief",
+     "teaser": "Na meer dan tien jaar actievoeren door bewoners heeft de gemeenteraad van Los Angeles op 28 oktober ingestemd met een verordening die oliewinning binnen de stadsgrenzen verbiedt. Nieuwe boringen zijn per direct verboden, bestaande putten mogen niet dieper geboord of opnieuw aangeboord worden, en alle actieve operaties moeten binnen twintig jaar volledig afgebouwd zijn. Los Angeles is daarmee de grootste...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/los-angeles-verbiedt-oliewinning-definitief-1794463996470mjxfozzef.html"
+    },
     {
      "id": "17944249637321olk07x2s",
      "titel": "100 dichters schrijven bundel over dakloosheid voor goed doel",
@@ -36,14 +44,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/scheepvaartstudent-redt-vader-en-zoon-van-verdrinking-1794424918029ogfmvv8rv.html"
-    },
-    {
-     "id": "17944248919439uxdg6k76",
-     "titel": "Bruine berenpopulatie in Spanje verdubbeld dankzij bescherming",
-     "teaser": "De Cantabrische bruine beer is in twintig jaar tijd verdubbeld in aantal: van circa 140 dieren begin deze eeuw naar 370 nu. De beren leven niet meer alleen in Cantabrië, maar ook in Asturië, León, Galicië en Palencia, over een gebied van ruim 17.000 vierkante kilometer (6.500 vierkante mijl). Een studie uit 2023 in Conservation Science and Practice wijt het...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/bruine-berenpopulatie-in-spanje-verdubbeld-dankzij-bescherming-17944248919439uxdg6k76.html"
     }
    ],
    "dagoverzichten": [
@@ -72,6 +72,14 @@
   },
   "en": {
    "top": [
+    {
+     "id": "1794463996470mjxfozzef",
+     "titel": "Los Angeles bans oil drilling permanently",
+     "teaser": "After more than a decade of activism by residents, the Los Angeles City Council voted on October 28 in favor of an ordinance that prohibits oil drilling within city limits. New wells are banned immediately, existing wells cannot be drilled deeper or re-drilled, and all active operations must be completely shut down within twenty years. Los Angeles is now the...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/los-angeles-bans-oil-drilling-permanently-1794463996470mjxfozzef.html"
+    },
     {
      "id": "17944249637321olk07x2s",
      "titel": "100 poets write anthology on homelessness for charity",
@@ -103,14 +111,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/maritime-student-rescues-father-and-son-from-drowning-1794424918029ogfmvv8rv.html"
-    },
-    {
-     "id": "17944248919439uxdg6k76",
-     "titel": "Brown bear population in Spain doubles thanks to protection",
-     "teaser": "The Cantabrian brown bear has doubled in number over twenty years: from around 140 animals at the start of this century to 370 now. The bears no longer live exclusively in Cantabria, but also in Asturias, León, Galicia and Palencia, across an area of more than 17,000 square kilometres (6,500 square miles). A 2023 study in Conservation Science and Practice...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/brown-bear-population-in-spain-doubles-thanks-to-protection-17944248919439uxdg6k76.html"
     }
    ],
    "dagoverzichten": [
@@ -139,6 +139,14 @@
   },
   "de": {
    "top": [
+    {
+     "id": "1794463996470mjxfozzef",
+     "titel": "Los Angeles verbietet Ölförderung endgültig",
+     "teaser": "Nach mehr als zehn Jahren Aktivismus von Anwohnern hat der Stadtrat von Los Angeles am 28. Oktober einer Verordnung zugestimmt, die Ölförderung innerhalb der Stadtgrenzen verbietet. Neue Bohrungen sind sofort untersagt, bestehende Bohrlöcher dürfen nicht tiefer gebohrt oder erneut angebohrt werden, und alle aktiven Operationen müssen innerhalb von zwanzig Jahren vollständig eingestellt werden. Los Angeles ist damit die größte Stadt...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/los-angeles-verbietet-olforderung-endgultig-1794463996470mjxfozzef.html"
+    },
     {
      "id": "17944249637321olk07x2s",
      "titel": "100 Dichter schreiben Gedichtsammlung über Obdachlosigkeit für gemeinnützigen Zweck",
@@ -170,14 +178,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/schifffahrtsstudent-rettet-vater-und-sohn-vor-dem-ertrinken-1794424918029ogfmvv8rv.html"
-    },
-    {
-     "id": "17944248919439uxdg6k76",
-     "titel": "Braunbärenpopulation in Spanien dank Schutzmaßnahmen verdoppelt",
-     "teaser": "Der Kantabrische Braunbär hat sich in zwanzig Jahren verdoppelt: von etwa 140 Tieren zu Beginn dieses Jahrhunderts auf 370 heute. Die Bären leben nicht mehr nur in Kantabrien, sondern auch in Asturien, León, Galizien und Palencia, über ein Gebiet von mehr als 17.000 Quadratkilometern (6.500 Quadratmeilen). Eine Studie aus dem Jahr 2023 in Conservation Science and Practice führt die Erholung...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/braunbarenpopulation-in-spanien-dank-schutzma-nahmen-verdoppelt-17944248919439uxdg6k76.html"
     }
    ],
    "dagoverzichten": [
@@ -206,6 +206,14 @@
   },
   "fr": {
    "top": [
+    {
+     "id": "1794463996470mjxfozzef",
+     "titel": "Los Angeles interdit définitivement l'extraction pétrolière",
+     "teaser": "Après plus de dix ans de mobilisation citoyenne, le conseil municipal de Los Angeles a approuvé le 28 octobre une ordonnance interdisant l'extraction pétrolière dans les limites de la ville. Les nouveaux forages sont immédiatement interdits, les puits existants ne peuvent pas être approfondis ou réactivés, et toutes les opérations actives doivent être complètement fermées dans les vingt ans. Los...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/los-angeles-interdit-definitivement-l-extraction-petroliere-1794463996470mjxfozzef.html"
+    },
     {
      "id": "17944249637321olk07x2s",
      "titel": "100 poètes écrivent un recueil sur le sans-abrisme pour une bonne cause",
@@ -237,14 +245,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/etudiant-en-navigation-sauve-un-pere-et-son-fils-de-la-noyade-1794424918029ogfmvv8rv.html"
-    },
-    {
-     "id": "17944248919439uxdg6k76",
-     "titel": "La population d'ours bruns en Espagne a doublé grâce à la protection",
-     "teaser": "L'ours brun cantabrique a doublé en nombre en vingt ans : d'environ 140 animaux au début de ce siècle à 370 aujourd'hui. Les ours ne vivent plus seulement en Cantabrie, mais aussi en Asturies, León, Galice et Palencia, sur une zone de plus de 17 000 kilomètres carrés (6 500 milles carrés). Une étude de 2023 publiée dans Conservation Science...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/la-population-d-ours-bruns-en-espagne-a-double-grace-a-la-protection-17944248919439uxdg6k76.html"
     }
    ],
    "dagoverzichten": [
@@ -273,6 +273,14 @@
   },
   "es": {
    "top": [
+    {
+     "id": "1794463996470mjxfozzef",
+     "titel": "Los Angeles prohíbe definitivamente la extracción de petróleo",
+     "teaser": "Tras más de diez años de activismo ciudadano, el consejo municipal de Los Angeles aprobó el 28 de octubre una ordenanza que prohíbe la extracción de petróleo dentro de los límites de la ciudad. Las nuevas perforaciones quedan prohibidas de inmediato, los pozos existentes no pueden profundizarse ni reabrirse, y todas las operaciones activas deben cerrarse completamente en el plazo...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/los-angeles-prohibe-definitivamente-la-extraccion-de-petroleo-1794463996470mjxfozzef.html"
+    },
     {
      "id": "17944249637321olk07x2s",
      "titel": "100 poetas escriben un poemario sobre la falta de vivienda con fines benéficos",
@@ -304,14 +312,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/estudiante-de-navegacion-salva-a-padre-e-hijo-del-ahogamiento-1794424918029ogfmvv8rv.html"
-    },
-    {
-     "id": "17944248919439uxdg6k76",
-     "titel": "La población de osos pardos en España se ha duplicado gracias a la protección",
-     "teaser": "El oso pardo cantábrico se ha duplicado en veinte años: de aproximadamente 140 animales a principios de este siglo a 370 en la actualidad. Los osos ya no viven solo en Cantabria, sino también en Asturias, León, Galicia y Palencia, en un área de más de 17.000 kilómetros cuadrados (6.500 millas cuadradas). Un estudio de 2023 en Conservation Science and...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/la-poblacion-de-osos-pardos-en-espana-se-ha-duplicado-gracias-a-la-proteccion-17944248919439uxdg6k76.html"
     }
    ],
    "dagoverzichten": [

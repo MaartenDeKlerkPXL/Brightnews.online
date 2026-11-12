@@ -1,5 +1,29 @@
 [
  {
+  "datum": "2026-11-12T06:12:55.330Z",
+  "bron": "OptimistDaily.com",
+  "titel": "After a decade of community pressure, LA bans oil drilling for good",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 4,
+  "totaal": 10,
+  "besluit": "ja",
+  "reden": "Decennialange gemeenschapsactie leidt tot concrete milieuwinst; kern is redding en herstel van gezondheid in dicht bevolkte wijken."
+ },
+ {
+  "datum": "2026-11-12T06:12:55.330Z",
+  "bron": "OptimistDaily.com",
+  "titel": "The dermatologist guide to a skin-friendly shower routine",
+  "uitsluiting": "listicle",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Dit is zelfhulpadvies in listicle-vorm ('gids tot routine') zonder verhaal of maatschappelijke kern."
+ },
+ {
   "datum": "2026-11-11T23:05:42.947Z",
   "bron": "GoodNewsNetwork.org",
   "titel": "Oh Whale! Revisits the Exploding Whale That Became One of the Internet’s First Viral Videos",
@@ -3574,29 +3598,5 @@
   "totaal": 4,
   "besluit": "nee",
   "reden": "Ondanks literaire waardering blijft de kern een boek over zelfdoding; formulering is probleem-gericht ('bleak', 'deathly')."
- },
- {
-  "datum": "2026-10-30T17:51:21.856Z",
-  "bron": "BBC.com/culture",
-  "titel": "The Parisian women who lived and dressed as men",
-  "uitsluiting": "geen",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "Inspirerend verhaal over vrouwen die zich tegen onderdrukking verzetten; hartverwarmend, positief geformuleerd en historisch relevant."
- },
- {
-  "datum": "2026-10-30T17:51:30.889Z",
-  "bron": "BBC.com/culture",
-  "titel": "12 of the best TV shows to watch this November",
-  "uitsluiting": "listicle",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Weekoverzicht van TV-aanbevelingen zonder eigen verhaal; puur consumptieve content."
  }
 ]

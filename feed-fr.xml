@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-fr.xml" rel="self" type="application/rss+xml"/>
         <description>Chaque jour une sélection fraîche de bonnes nouvelles du monde entier. Bonne lecture !</description>
         <language>fr-fr</language>
-        <lastBuildDate>Wed, 11 Nov 2026 23:06:13 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Nov 2026 06:13:19 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Votre dose quotidienne de positivité</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Los Angeles interdit définitivement l&apos;extraction pétrolière</title>
+            <link>https://brightnews.online/articles/fr/los-angeles-interdit-definitivement-l-extraction-petroliere-1794463996470mjxfozzef.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/fr/los-angeles-interdit-definitivement-l-extraction-petroliere-1794463996470mjxfozzef.html</guid>
+            <pubDate>Thu, 12 Nov 2026 06:13:19 GMT</pubDate>
+            <description>Après plus de dix ans de mobilisation citoyenne, le conseil municipal de Los Angeles a approuvé le 28 octobre une ordonnance interdisant l&apos;extraction pétrolière dans les limites de la ville. Les nouveaux forages sont immédiatement interdits, les puits existants ne peuvent pas être approfondis ou réactivés, et toutes les opérations actives doivent être complètement fermées dans les vingt ans. Los..</description>
+            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/oil-pump-jack-city-limits-Depositphotos_199434004_S.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>280 gravures de l&apos;âge de glace découvertes dans une grotte espagnole</title>
             <link>https://brightnews.online/articles/fr/280-gravures-de-l-age-de-glace-decouvertes-dans-une-grotte-espagnole-1794438369251cckz8f0n6.html</link>
@@ -243,14 +251,6 @@
             <guid isPermaLink="true">https://brightnews.online/articles/fr/le-conseil-europeen-de-l-innovation-recoit-1-8-milliard-pour-2027-1793991704874mb5trfigv.html</guid>
             <pubDate>Fri, 06 Nov 2026 19:01:46 GMT</pubDate>
             <description>La Commission européenne a annoncé un financement de 1,8 milliard d&apos;euros pour 2027 via le European Innovation Council (EIC). Avec ce budget, la Commission souhaite accélérer le développement de technologies révolutionnaires et soutenir les startups ambitieuses. L&apos;objectif est de renforcer la position de l&apos;Europe dans la course mondiale à l&apos;innovation.</description>
-        </item>
-        <item>
-            <title>Vermont Gas apporte le chauffage géothermique aux logements abordables</title>
-            <link>https://brightnews.online/articles/fr/vermont-gas-apporte-le-chauffage-geothermique-aux-logements-abordables-1793991687622bmh7f4zst.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/fr/vermont-gas-apporte-le-chauffage-geothermique-aux-logements-abordables-1793991687622bmh7f4zst.html</guid>
-            <pubDate>Fri, 06 Nov 2026 19:01:29 GMT</pubDate>
-            <description>Vermont Gas a conclu un accord novateur avec le développeur géothermique Dandelion Energy pour équiper le projet de logements abordables Riggs Meadow à Hinesburg, comptant 44 unités résidentielles, de chauffage et de refroidissement géothermiques. C&apos;est le premier projet aux États-Unis où une entreprise de services publics possède et gère elle-même les installations, comme elle le ferait pour les </description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Geothermal-boring-at-Riggs-Meadow-Housing-Development-credit-Dandelion-Energy-released.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

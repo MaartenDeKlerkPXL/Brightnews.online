@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-nl.xml" rel="self" type="application/rss+xml"/>
         <description>Elke dag een verse selectie goed nieuws uit de hele wereld, veel leesplezier!</description>
         <language>nl-nl</language>
-        <lastBuildDate>Wed, 11 Nov 2026 23:06:13 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Nov 2026 06:13:19 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Jouw Dagelijkse Dosis Positiviteit</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Los Angeles verbiedt oliewinning definitief</title>
+            <link>https://brightnews.online/articles/nl/los-angeles-verbiedt-oliewinning-definitief-1794463996470mjxfozzef.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/nl/los-angeles-verbiedt-oliewinning-definitief-1794463996470mjxfozzef.html</guid>
+            <pubDate>Thu, 12 Nov 2026 06:13:19 GMT</pubDate>
+            <description>Na meer dan tien jaar actievoeren door bewoners heeft de gemeenteraad van Los Angeles op 28 oktober ingestemd met een verordening die oliewinning binnen de stadsgrenzen verbiedt. Nieuwe boringen zijn per direct verboden, bestaande putten mogen niet dieper geboord of opnieuw aangeboord worden, en alle actieve operaties moeten binnen twintig jaar volledig afgebouwd zijn. Los Angeles is daarmee de gr</description>
+            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/oil-pump-jack-city-limits-Depositphotos_199434004_S.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>280 onopgemerkte ijstijdgravures ontdekt in Spaanse grot</title>
             <link>https://brightnews.online/articles/nl/280-onopgemerkte-ijstijdgravures-ontdekt-in-spaanse-grot-1794438369251cckz8f0n6.html</link>
@@ -243,14 +251,6 @@
             <guid isPermaLink="true">https://brightnews.online/articles/nl/europese-innovatie-raad-krijgt-1-8-miljard-voor-2027-1793991704874mb5trfigv.html</guid>
             <pubDate>Fri, 06 Nov 2026 19:01:46 GMT</pubDate>
             <description>De Europese Commissie heeft 1,8 miljard euro aan financiering aangekondigd voor 2027 via de European Innovation Council (EIC). Met dit budget wil de Commissie de ontwikkeling van baanbrekende technologieën versnellen en ambitieuze startups ondersteunen. Het doel is om Europa&apos;s positie in de wereldwijde innovatierace te versterken.</description>
-        </item>
-        <item>
-            <title>Vermont Gas brengt geothermische verwarming naar betaalbare woningen</title>
-            <link>https://brightnews.online/articles/nl/vermont-gas-brengt-geothermische-verwarming-naar-betaalbare-woningen-1793991687622bmh7f4zst.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/nl/vermont-gas-brengt-geothermische-verwarming-naar-betaalbare-woningen-1793991687622bmh7f4zst.html</guid>
-            <pubDate>Fri, 06 Nov 2026 19:01:29 GMT</pubDate>
-            <description>Vermont Gas heeft een baanbrekende deal gesloten met geothermisch ontwikkelaar Dandelion Energy om het 44 wooneenheden tellende betaalbare woningproject Riggs Meadow in Hinesburg te voorzien van geothermische verwarming en koeling. Het is het eerste project in de VS waarbij een nutsbedrijf de installaties zelf bezit en beheert zoals gasleidingen. Boringen starten begin 2027, bewoners kunnen eind d</description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Geothermal-boring-at-Riggs-Meadow-Housing-Development-credit-Dandelion-Energy-released.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

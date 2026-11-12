@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-de.xml" rel="self" type="application/rss+xml"/>
         <description>Jeden Tag eine frische Auswahl guter Nachrichten aus aller Welt. Viel Spaß beim Lesen!</description>
         <language>de-de</language>
-        <lastBuildDate>Wed, 11 Nov 2026 23:06:13 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 Nov 2026 06:13:19 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Deine tägliche Dosis Positivität</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Los Angeles verbietet Ölförderung endgültig</title>
+            <link>https://brightnews.online/articles/de/los-angeles-verbietet-olforderung-endgultig-1794463996470mjxfozzef.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/de/los-angeles-verbietet-olforderung-endgultig-1794463996470mjxfozzef.html</guid>
+            <pubDate>Thu, 12 Nov 2026 06:13:19 GMT</pubDate>
+            <description>Nach mehr als zehn Jahren Aktivismus von Anwohnern hat der Stadtrat von Los Angeles am 28. Oktober einer Verordnung zugestimmt, die Ölförderung innerhalb der Stadtgrenzen verbietet. Neue Bohrungen sind sofort untersagt, bestehende Bohrlöcher dürfen nicht tiefer gebohrt oder erneut angebohrt werden, und alle aktiven Operationen müssen innerhalb von zwanzig Jahren vollständig eingestellt werden. Los</description>
+            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/oil-pump-jack-city-limits-Depositphotos_199434004_S.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>280 unbemerkte Eiszeitgravuren in spanischer Höhle entdeckt</title>
             <link>https://brightnews.online/articles/de/280-unbemerkte-eiszeitgravuren-in-spanischer-hohle-entdeckt-1794438369251cckz8f0n6.html</link>
@@ -243,14 +251,6 @@
             <guid isPermaLink="true">https://brightnews.online/articles/de/europaischer-innovationsrat-erhalt-1-8-milliarden-fur-2027-1793991704874mb5trfigv.html</guid>
             <pubDate>Fri, 06 Nov 2026 19:01:46 GMT</pubDate>
             <description>Die Europäische Kommission hat 1,8 Milliarden Euro Finanzierung für 2027 über den European Innovation Council (EIC) angekündigt. Mit diesem Budget möchte die Kommission die Entwicklung bahnbrechender Technologien beschleunigen und ehrgeizige Startups unterstützen. Ziel ist es, Europas Position im globalen Innovationswettbewerb zu stärken.</description>
-        </item>
-        <item>
-            <title>Vermont Gas bringt Geothermie zu erschwinglichen Wohnungen</title>
-            <link>https://brightnews.online/articles/de/vermont-gas-bringt-geothermie-zu-erschwinglichen-wohnungen-1793991687622bmh7f4zst.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/de/vermont-gas-bringt-geothermie-zu-erschwinglichen-wohnungen-1793991687622bmh7f4zst.html</guid>
-            <pubDate>Fri, 06 Nov 2026 19:01:29 GMT</pubDate>
-            <description>Vermont Gas hat einen bahnbrechenden Deal mit dem Geothermie-Entwickler Dandelion Energy geschlossen, um das 44 Wohneinheiten umfassende Projekt Riggs Meadow in Hinesburg mit Geothermie-Heizung und -Kühlung auszustatten. Es ist das erste Projekt in den USA, bei dem ein Versorgungsunternehmen die Anlagen selbst besitzt und verwaltet wie Gasleitungen. Die Bohrarbeiten beginnen Anfang 2027, Bewohner </description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Geothermal-boring-at-Riggs-Meadow-Housing-Development-credit-Dandelion-Energy-released.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>
