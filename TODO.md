@@ -369,8 +369,8 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   `preferred_lang` gelijk aan de taal die de lezer kiest (js/v5/schil.js; bij
   een nieuw account de taal van de site). `--zet` maakt eerst een backup,
   `--terug` zet die terug. **Nog door
-  Maarten:** de sjablonen in Supabase zetten (`--zet` met een eigen
-  toegangstoken, of plakken), Stripe-branding, en elke mail één keer echt
+  Maarten:** ~~de sjablonen in Supabase zetten~~ (✅ 2026-11-12, met
+  `--zet`), Stripe-branding, en elke mail één keer echt
   ontvangen in Gmail en op de iPhone. De sjablonen zijn niet met Go getest
   (geen Go op deze Mac); de structuur wel.
   *(Maarten, 2026-11-11. Pas doen als de rebranding live gaat, maar niet

@@ -189,6 +189,8 @@ via een PR. Laat die PR eerst nakijken door een review-agent
   `backend/mailopmaak.js` voor alle mails, de welkomstreeks omgezet (met een
   List-Unsubscribe-header), en de vijf Supabase-sjablonen in
   `supabase/templates/` (gemaakt door `backend/maak-mailsjablonen.js`).
+  ✅ *2026-11-12 15:19:* de sjablonen staan in Supabase (backup in
+  `vorige.json`). Nog: elke mail testen in nl en en.
   **Maarten:** de sjablonen in Supabase zetten: `SUPABASE_ACCESS_TOKEN=…
   node backend/maak-mailsjablonen.js --zet` (token van
   supabase.com/dashboard/account/tokens, alleen in je eigen terminal), of met
