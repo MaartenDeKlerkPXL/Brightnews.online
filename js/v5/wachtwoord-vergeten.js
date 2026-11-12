@@ -57,7 +57,7 @@
         document.title = `${t($('wv-nieuwstaat').hidden ? 'v5_in_vergeten' : 'v5_wv_nieuw_titel')} · BrightNews`;
         email.placeholder = t('v5_in_email_voorbeeld');
         document.querySelectorAll('[data-naar="inloggen"]').forEach(a => {
-            a.href = B.metTestdag('/v5-inloggen.html');
+            a.href = B.metTestdag('/inloggen.html');
         });
 
         $('wv-mail-naar').textContent = mailAdres
@@ -89,7 +89,7 @@
     // zou verklappen wie er een account heeft.
     async function stuurHerstel() {
         const { error } = await client.auth.resetPasswordForEmail(mailAdres, {
-            redirectTo: `${window.location.origin}/v5-wachtwoord-vergeten.html?type=recovery`,
+            redirectTo: `${window.location.origin}/wachtwoord-vergeten.html?type=recovery`,
         });
         if (error && (!error.status || error.status >= 500)) throw error;
         if (error) console.warn('BrightNews v5: herstelmail niet verstuurd', error.message);
@@ -210,7 +210,7 @@
             if (error?.status === 401 || error?.code === 'session_not_found' || error?.name === 'AuthSessionMissingError') { toonVerlopen(); return; }
             if (error) throw error;
             window.showNotification(t('v5_wv_opgeslagen'));
-            setTimeout(() => { window.location.href = '/v5-profiel.html'; }, 1200);
+            setTimeout(() => { window.location.href = '/profiel.html'; }, 1200);
         } catch (fout) {
             meldFout(fout);
         } finally {

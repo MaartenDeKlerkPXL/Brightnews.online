@@ -116,8 +116,8 @@
         // uitgelogd bent), maar melden.
         if (fout && !gebruiker) { window.showNotification(t('v5_in_fout_algemeen'), 'error'); return; }
         if (!gebruiker) {
-            const terug = `/v5-abonnementen.html?plan=${plan}${next ? `&next=${encodeURIComponent(next)}` : ''}`;
-            window.location.href = `/v5-inloggen.html?tab=account&next=${encodeURIComponent(terug)}`;
+            const terug = `/abonnementen.html?plan=${plan}${next ? `&next=${encodeURIComponent(next)}` : ''}`;
+            window.location.href = `/inloggen.html?tab=account&next=${encodeURIComponent(terug)}`;
             return;
         }
         // Al Premium, een abonnement dat nog loopt (ook als de betaling

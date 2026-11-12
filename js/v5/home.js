@@ -17,6 +17,10 @@
     'use strict';
 
     const B = window.BN5;
+
+    // Oude deellinks (/?id=…, de site van vóór v5): naar het artikel.
+    const oudId = B.param('id');
+    if (oudId) { window.location.replace(B.url.artikel(oudId)); return; }
     const { t, el } = B;
 
     // ── Dagoverzicht bovenaan ────────────────────────────────────────────

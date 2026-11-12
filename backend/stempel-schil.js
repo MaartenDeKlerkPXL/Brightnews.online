@@ -31,6 +31,9 @@ const CONTROLE = process.argv.includes('--controle');
 
 // Pagina's zonder navigatie: de parkeerpagina en de interne cockpit.
 const OVERSLAAN = new Set(['binnenkort.html', 'marketing.html']);
+// Doorstuurpagina's: de voorbeeldadressen v5-*.html en thanks.html sturen
+// sinds de overstap (2026-11-18) door naar hun echte adres en hebben geen schil.
+const isDoorstuur = f => f.startsWith('v5-') || f === 'thanks.html';
 
 function blok(naam, inhoud) {
     return `<!-- schil:${naam} -->\n${inhoud}\n<!-- /schil:${naam} -->`;
@@ -58,7 +61,7 @@ function vervangBlok(html, naam, inhoud, zoekStart, zoekEind) {
 function main() {
     const { header, footer } = leesSchil();
     const v5 = leesSchilV5();
-    const paginas = fs.readdirSync(root).filter(f => f.endsWith('.html') && !OVERSLAAN.has(f)).sort();
+    const paginas = fs.readdirSync(root).filter(f => f.endsWith('.html') && !OVERSLAAN.has(f) && !isDoorstuur(f)).sort();
 
     let gewijzigd = 0;
     const achter = [];

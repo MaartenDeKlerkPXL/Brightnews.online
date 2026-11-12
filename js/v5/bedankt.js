@@ -150,7 +150,7 @@
         window.bnAccount.then(account => {
             if (!account.gebruiker) {
                 const hier = window.location.pathname + window.location.search;
-                window.location.replace(`/v5-inloggen.html?next=${encodeURIComponent(hier)}`);
+                window.location.replace(`/inloggen.html?next=${encodeURIComponent(hier)}`);
                 return;
             }
             // Pas tekenen als het e-mailadres en het plan bekend zijn.

@@ -7,10 +7,15 @@
 // abonnement blijven komen. Mislukt is rustig: drie andere routes, geen
 // primaire knop.
 //
-// Afmelden zelf is nog niet gekoppeld (TODO punt 66: een token in de link,
-// zonder inloggen, en de List-Unsubscribe-header voor één klik in het
-// mailprogramma). Tot dan:
-//   geen ?staat=      even bezig, dan gelukt (de gewone route)
+// Gekoppeld (2026-11-18, TODO 66 punt 14): het token uit de link (?t=, zie
+// backend/stuur-mails.js) gaat naar meld_af(), dezelfde functie als de oude
+// afmeldpagina. Geen inloggen: een afmeldlink die eerst een wachtwoord vraagt
+// is geen afmeldlink. Zonder token of bij een fout: mislukt. "Toch weer
+// aanmelden" gaat naar Mijn account, waar de mails-schakelaar staat.
+// Nog niet: de List-Unsubscribe-header in de mails (één klik in het
+// mailprogramma).
+//
+// Om de staten te bekijken (alleen lokaal):
 //   ?staat=bezig      blijft bezig
 //   ?staat=gelukt     meteen gelukt
 //   ?staat=mislukt    meteen mislukt
@@ -21,7 +26,6 @@
 
     const B = window.BN5;
     const { t } = B;
-    const VOORBEELD_DUUR = 1500;
 
     const $ = id => document.getElementById(id);
     const staat = B.param('staat');
@@ -50,12 +54,23 @@
         $('af-waarom').replaceChildren(B.zinMetDelen('v5_af_waarom', { link }));
     }
 
-    // Straks: de back-end meldt het adres uit het token af.
-    function meldAf() {
-        return new Promise(klaar => setTimeout(() => klaar(true), VOORBEELD_DUUR));
+    // meld_af() meldt alleen de rij met dit token af en zegt niets terug
+    // (ook niet of het token bestond): zo verklapt de pagina niets.
+    async function meldAf() {
+        const token = new URLSearchParams(window.location.search).get('t');
+        const client = window.supabaseClient;
+        if (!token || !/^[0-9a-f-]{36}$/i.test(token) || !client) return false;
+        try {
+            const { error } = await client.rpc('meld_af', { p_token: token });
+            if (error) console.warn('BrightNews v5: afmelden', error);
+            return !error;
+        } catch (fout) {
+            console.warn('BrightNews v5: afmelden', fout);
+            return false;
+        }
     }
 
-    $('af-weer-aan').addEventListener('click', () => window.showNotification(t('v5_af_niet_gekoppeld')));
+    $('af-weer-aan').addEventListener('click', () => { window.location.href = B.url.account(); });
     $('af-opnieuw').addEventListener('click', () => window.location.reload());
 
     B.start(teken);

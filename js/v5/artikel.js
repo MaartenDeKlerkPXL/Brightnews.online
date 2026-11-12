@@ -1,5 +1,5 @@
 // Artikel van redesign v5 (Figma: v5 · Artikel — staat 1 t/m 4).
-// v5-artikel.html?id=<artikel-id>, uit data/news_<taal>.json.
+// artikel.html?id=<artikel-id>, uit data/news_<taal>.json.
 //
 //   1  Premium: volledige tekst, geen paywall.
 //   2  Gratis account, tegoed over: volledige tekst en een rustige regel
@@ -28,6 +28,16 @@
 
     const B = window.BN5;
     const { t, el } = B;
+
+    // HOUD IN SYNC met maakSlug() in backend/generate-articles.js: zo heet de
+    // statische pagina van een artikel uit de feed.
+    function maakSlug(titel) {
+        return String(titel).toLowerCase()
+            .normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-+|-+$/g, '')
+            .slice(0, 80).replace(/-+$/, '') || 'artikel';
+    }
 
     // Naar Abonnementen, en na Bedankt terug naar dit artikel.
     function naarPremium(plan) {
@@ -111,7 +121,7 @@
         blok.appendChild(tekst);
 
         const form = el('form', 'paywall__formulier');
-        form.action = '/v5-inloggen.html';
+        form.action = '/inloggen.html';
         form.method = 'get';
         const tab = el('input');
         tab.type = 'hidden';
@@ -140,7 +150,7 @@
         form.appendChild(knop);
         blok.appendChild(form);
 
-        blok.appendChild(B.link(`/v5-inloggen.html?next=${encodeURIComponent(window.location.pathname + window.location.search)}`, 'paywall__meer', t('v5_al_account')));
+        blok.appendChild(B.link(`/inloggen.html?next=${encodeURIComponent(window.location.pathname + window.location.search)}`, 'paywall__meer', t('v5_al_account')));
         return blok;
     }
 
@@ -229,6 +239,14 @@
         if (!artikel) { nietGevonden(main); return; }
         // Een dagoverzicht heeft zijn eigen pagina.
         if (B.isDigest(artikel)) { window.location.replace(B.metTestdag(B.url.dagoverzicht(artikel.digest_date))); return; }
+        // Bestaat de statische pagina (backend/generate-articles.js), dan daarheen:
+        // die heeft de canonical, de deel-preview en "Meer goed nieuws".
+        if (!B.param('staat')) {
+            const statisch = `/articles/${B.taal()}/${maakSlug(artikel.title)}-${artikel.id}.html`;
+            try {
+                if ((await fetch(statisch, { method: 'HEAD' })).ok) { window.location.replace(statisch); return; }
+            } catch { /* geen verbinding: dan hier tonen */ }
+        }
 
         document.title = `${artikel.title} · BrightNews`;
         B.markeerGelezen(artikel.id);

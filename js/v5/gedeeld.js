@@ -41,7 +41,14 @@
         try { localStorage.setItem(sleutel, waarde); } catch { /* geen opslag */ }
     }
 
+    // Voorbeeldparameters werken alleen lokaal (TODO 73): live zou
+    // bedankt.html?staat=gelukt anders zeggen dat Premium aanstaat zonder dat
+    // iemand betaalde, en ?vandaag= de dag van de site verzetten.
+    const LOKAAL = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(window.location.hostname);
+    const ALLEEN_LOKAAL = new Set(['staat', 'vandaag', 'gelezen']);
+
     function param(naam) {
+        if (ALLEEN_LOKAAL.has(naam) && !LOKAAL) return null;
         return new URLSearchParams(window.location.search).get(naam);
     }
 
@@ -277,25 +284,25 @@
     // v5 nog niet (categorie, thema, abonnementen, een artikel van vóór de
     // feed), dan krijgt de link geen adres: null.
     const url = {
-        home: () => '/v5-home.html',
-        artikel: id => `/v5-artikel.html?id=${encodeURIComponent(id)}`,
-        dagoverzicht: dag => `/v5-dagoverzicht.html?datum=${dag}`,
-        editie: dag => `/v5-editie.html?datum=${dag}`,
-        archief: maand => (maand ? `/v5-archief.html?maand=${maand}` : '/v5-archief.html'),
-        abonnementen: plan => (plan ? `/v5-abonnementen.html?plan=${plan}` : '/v5-abonnementen.html'),
-        account: () => '/v5-profiel.html',
-        inloggen: () => '/v5-inloggen.html',
-        contact: () => '/v5-contact.html',
-        feedback: id => (id ? `/v5-feedback.html?artikel=${encodeURIComponent(id)}` : '/v5-feedback.html'),
-        privacy: () => '/v5-privacy.html',
-        voorwaarden: () => '/v5-voorwaarden.html',
-        refund: () => '/v5-refundbeleid.html',
+        home: () => '/',
+        artikel: id => `/artikel.html?id=${encodeURIComponent(id)}`,
+        dagoverzicht: dag => `/dagoverzicht.html?datum=${dag}`,
+        editie: dag => `/editie.html?datum=${dag}`,
+        archief: maand => (maand ? `/archief.html?maand=${maand}` : '/archief.html'),
+        abonnementen: plan => (plan ? `/abonnementen.html?plan=${plan}` : '/abonnementen.html'),
+        account: () => '/profiel.html',
+        inloggen: () => '/inloggen.html',
+        contact: () => '/contact.html',
+        feedback: id => (id ? `/feedback.html?artikel=${encodeURIComponent(id)}` : '/feedback.html'),
+        privacy: () => '/Privacy.html',
+        voorwaarden: () => '/algemeene-voorwaarden.html',
+        refund: () => '/refunds.html',
     };
 
     // Houd ?vandaag= vast bij het doorklikken tussen de voorbeeldpagina's.
     function metTestdag(adres) {
         const test = param('vandaag');
-        if (!isDagSleutel(test) || !adres.startsWith('/v5-')) return adres;
+        if (!isDagSleutel(test) || !adres.startsWith('/') || adres.startsWith('//')) return adres;
         return adres + (adres.includes('?') ? '&' : '?') + `vandaag=${test}`;
     }
 

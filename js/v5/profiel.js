@@ -85,7 +85,7 @@
     async function laad() {
         const { gebruiker, premium, profiel } = await window.bnAccount;
         if (!gebruiker) {
-            window.location.replace('/v5-inloggen.html?next=profiel');
+            window.location.replace('/inloggen.html?next=profiel');
             return false;
         }
         const soort = soortVan(profiel, premium);
@@ -234,7 +234,7 @@
         $('pr-wachtwoord-tekst').textContent = t(acc.wachtwoord ? 'v5_pr_wachtwoord_wijzigen' : 'v5_pr_wachtwoord_instellen');
         // Zonder ?email=: het adres hoort niet in de geschiedenis; de pagina
         // haalt het zelf uit de sessie.
-        $('pr-wachtwoord').href = '/v5-wachtwoord-vergeten.html';
+        $('pr-wachtwoord').href = '/wachtwoord-vergeten.html';
 
         // Een getoonde foutmelding volgt de taal.
         if (!codeFout.hidden && voorbeeld) {
@@ -325,7 +325,7 @@
         // dan wist signOut de sessie in deze browser toch.
         const { error } = await client.auth.signOut({ scope: 'local' });
         if (error) console.warn('BrightNews v5: uitloggen', error);
-        window.location.href = '/v5-home.html';
+        window.location.href = '/';
     });
 
     // Het no-code klantportaal van Stripe: de lezer krijgt daar een

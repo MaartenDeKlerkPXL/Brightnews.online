@@ -48,13 +48,13 @@
         if (tab === 'account') p.set('tab', 'account');
         if (next) p.set('next', next);
         const q = p.toString();
-        return `/v5-inloggen.html${q ? `?${q}` : ''}`;
+        return `/inloggen.html${q ? `?${q}` : ''}`;
     }
 
     // Alleen een adres op deze site: ?next= mag de lezer niet wegsturen.
     function doel() {
-        if (next && /^[a-z-]+$/.test(next)) return `/v5-${next}.html`;
-        return B.eigenPad(next) || '/v5-profiel.html';
+        if (next && /^[a-z-]+$/.test(next)) return `/${next}.html`;
+        return B.eigenPad(next) || '/profiel.html';
     }
 
     function manier() {
@@ -107,7 +107,7 @@
     function teken() {
         $('tab-inloggen').href = B.metTestdag(adres('inloggen'));
         $('tab-account').href = B.metTestdag(adres('account'));
-        $('in-vergeten').href = B.metTestdag('/v5-wachtwoord-vergeten.html');
+        $('in-vergeten').href = B.metTestdag('/wachtwoord-vergeten.html');
         $(isAccount ? 'tab-account' : 'tab-inloggen').setAttribute('aria-current', 'page');
         $(isAccount ? 'tab-inloggen' : 'tab-account').removeAttribute('aria-current');
 
