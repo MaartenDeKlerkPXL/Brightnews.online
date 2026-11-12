@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20260927-environment","title":"A baby hippo, a cool park and tropical fruit: the environmental news of these days","summary":"These days, nature is showing us how animals, plants and people adapt to a changing world. From a vulnerable young animal to an entirely new urban park: good news is coming from every corner of the globe. Those who read the individual stories will discover a different kind of hope each time. In Kenya, the story of hippo Bumpy began dramatically. He was found as a baby next to his mother's body in the Great Rift Valley, following a difficult rescue operation in the water. At the Sheldrick Wildlife Trust, he received the care he needed: fed, swaddled and sleeping...","image":"https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abaa9c460f01fe16ba2ada7_6abaa9c2d563e627c8c8114e_bumpy-baby-hippo-rescue-orphaned-featured.webp","image_alt":"A baby hippo, a cool park and tropical fruit: the environmental news of these days","date":"2026-09-28T19:31:22.614Z","category":"Environment","source":null,"link":null,"type":"digest","refs":[{"id":"1790623636477f2bjec92n","title":"Orphaned hippo Bumpy gets second chance at Sheldrick Wildlife Trust","href":"/articles/en/orphaned-hippo-bumpy-gets-second-chance-at-sheldrick-wildlife-trust-1790623636477f2bjec92n.html"},{"id":"1790623610181f2zlj49rp","title":"Ellinikon Park becomes Europe's largest coastal park","href":"/articles/en/ellinikon-park-becomes-europe-s-largest-coastal-park-1790623610181f2zlj49rp.html"},{"id":"1790623473034ngjkir1ra","title":"Vietnam protects last habitat of Delacour's langur","href":"/articles/en/vietnam-protects-last-habitat-of-delacour-s-langur-1790623473034ngjkir1ra.html"},{"id":"1790623443776l2h758pev","title":"French farmers grow papayas and bananas thanks to warming","href":"/articles/en/french-farmers-grow-papayas-and-bananas-thanks-to-warming-1790623443776l2h758pev.html"}],"meta_description":"Baby hippo Bumpy, Europe's largest coastal park, protected langurs in Vietnam and tropical fruit in France: the positive environmental news of these days.","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Skip to main content</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">News</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Topics</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Topics</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archive</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">News</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Topics</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Topics</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archive</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
                         </ul>
@@ -236,9 +235,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Read</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">News</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Topics</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Topics</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archive</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categories</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categories</span></a></li>
                 </ul>
             </nav>
 
@@ -255,7 +254,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Help</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Settings</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Settings</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contact</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Refunds</span></a></li>

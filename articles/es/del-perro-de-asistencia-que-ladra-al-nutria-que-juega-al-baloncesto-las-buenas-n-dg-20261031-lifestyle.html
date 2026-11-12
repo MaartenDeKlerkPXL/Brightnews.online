@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20261031-lifestyle","title":"Del perro de asistencia que ladra al nutria que juega al baloncesto: las buenas noticias de esta semana","summary":"Estos días demuestran cómo las personas y los animales se ayudan mutuamente de las formas más variadas. Desde una escuela que llena un campo de fútbol completo con alimentos hasta una nutria que encesta una calabaza en un aro de baloncesto: las noticias positivas están en los detalles. En Nueva Jersey, estudiantes de Howell High School recopilaron más de un cuarto de millón de libras de alimentos para treinta bancos de alimentos, distribuidos en miles de bolsas amarillas en el campo escolar [1]. También Vivian Ho, de diecisiete años, se dedica a ayudar a otros: construyó una red de suministros...","image":"https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Football-field-full-of-food-bank-donations-in-NY-Credit-Tommy-Pantaleo-for-Dermer-Dreams-submitted.jpg","image_alt":"Del perro de asistencia que ladra al nutria que juega al baloncesto: las buenas noticias de esta semana","date":"2026-11-01T17:46:09.595Z","category":"Lifestyle","source":"BrightNews","link":null,"type":"digest","refs":[{"id":"1793555084446w70x69w4f","title":"Howell High School llena el campo de fútbol con donaciones para bancos de alimentos","href":null},{"id":"1793555114323om6utmbe0","title":"La perra de asistencia Storm salva la vida de Gary, esposo de su dueña sorda Sandra","href":null},{"id":"1793383690293t4rrao107","title":"Las nutrias marinas Juno, Lincoln y Uni Sushi juegan baloncesto con calabazas","href":null},{"id":"1793383447754f3bib3sdq","title":"Vivian Ho (17) construye una red de suministro basada en la dignidad","href":null},{"id":"1793383257407x9i0ucuyo","title":"Hombre salta a un autobús escolar en movimiento y rescata a 18 niños","href":null},{"id":"1793382890861w6m803vdy","title":"Documental «Panther Pat» rinde homenaje a Pat Palinkas, primera mujer en el fútbol profesional","href":null},{"id":"1793382864366l99apl4wk","title":"Un número de teléfono en un examen lleva a una amistad entre estudiante y productor de fresas","href":null},{"id":"1793382839054fxzglq088","title":"Escuela primaria de Texas nombrada en honor a la conserje Miss Marilyn","href":null}],"meta_description":"Del perro de asistencia que rescata hasta la nutria que juega al baloncesto: lee las noticias positivas de estilo de vida de finales de octubre de 2026 en ","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Saltar al contenido principal</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
                         </ul>
@@ -240,9 +239,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Leer</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Temas</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Temas</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archivo</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categorías</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categorías</span></a></li>
                 </ul>
             </nav>
 
@@ -259,7 +258,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Ayuda</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Ajustes</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Ajustes</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contacto</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Comentarios</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Reembolsos</span></a></li>

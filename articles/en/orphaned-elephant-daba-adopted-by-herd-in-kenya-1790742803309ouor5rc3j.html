@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"1790742803309ouor5rc3j","title":"Orphaned elephant Daba adopted by herd in Kenya","summary":"On September 30, 2025, rangers from the Sheldrick Wildlife Trust and the Kenya Wildlife Service found an 8-month-old elephant alone north of the Galana River. They suspect that lions had chased away her herd, the Dabaduki group. The calf was named Daba, which means 'abandoned'. After the Voi Reintegration Unit, she was brought to the Nairobi Nursery for specialized care....","image":"https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abbf243612d4c02ed5c2b86_6abbf2425219f8eed4958391_baby-elephant-daba-rescued-orphaned-featured.webp","image_alt":"Young orphaned elephant Daba among her new herd at the Sheldrick Wildlife Trust in Kenya","date":"2026-09-30T04:33:24.006Z","category":"Environment","source":"GoodGoodGood.co","link":"https://www.goodgoodgood.co/articles/baby-elephant-daba-rescued-orphaned","type":null,"refs":[],"meta_description":"Orphaned elephant Daba rescued and adopted by herd of orphaned calves at Sheldrick Wildlife Trust, Kenya.","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Skip to main content</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">News</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Topics</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Topics</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archive</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">News</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Topics</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Topics</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archive</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
                         </ul>
@@ -230,9 +229,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Read</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">News</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Topics</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Topics</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archive</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categories</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categories</span></a></li>
                 </ul>
             </nav>
 
@@ -249,7 +248,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Help</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Settings</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Settings</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contact</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Refunds</span></a></li>

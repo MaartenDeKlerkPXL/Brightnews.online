@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20261030-science","title":"Samenwerken, snel denken en slim verdedigen: wetenschapsnieuws van eind oktober","summary":"Deze dagen laat de wetenschap zien hoe samenwerking en slimme organisatie vooruitgang brengen. Van Europese data-netwerken tot de hersenen van kraaien en de chemie in een bijenkorf: steeds blijkt dat verbinding en structuur het verschil maken. In Florence werd tijdens het EOSC Symposium 2026 de start gevierd van de eerste dertien hubs binnen de European Open Science Cloud Federation [1]. Deze EOSC Nodes verbinden onderzoeksmiddelen van verschillende organisaties, zodat wetenschappers makkelijker over landsgrenzen en vakgebieden heen kunnen samenwerken. In totaal worden 27 van deze hubs verwacht, verdeeld over twee golven in 2025 en 2026. Gebruikers krijgen inspraak via het EOSC...","image":"/assets/fallback/science-1.jpg","image_alt":"Samenwerken, snel denken en slim verdedigen: wetenschapsnieuws van eind oktober","date":"2026-10-31T04:39:30.052Z","category":"Science","source":"BrightNews","link":null,"type":"digest","refs":[{"id":"179338418713800p31bsxr","title":"Europa lanceert 13 nieuwe hubs voor open onderzoeksdata","href":null},{"id":"17933841386518zl65dsi6","title":"NASA en DOE bundelen krachten voor nucleaire ruimtevaart","href":null},{"id":"1793384087936ocqxnkzxe","title":"Kraaien nemen besluiten twee keer zo snel als mensen","href":null},{"id":"17933835623285zzxfvhr8","title":"Bijenkorf blijkt eigen afweersysteem te hebben","href":null}],"meta_description":"Wetenschapsnieuws: Europese data-hubs, nucleaire ruimtevaart, supersnelle kraaien en de chemische afweer van bijenkorven in één overzicht.","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Ga naar hoofdinhoud</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Thema's</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Thema's</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archief</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Over ons</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Thema's</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Thema's</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archief</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Over ons</span></a></li>
                         </ul>
@@ -236,9 +235,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Lezen</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Thema's</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Thema's</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archief</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categorieën</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categorieën</span></a></li>
                 </ul>
             </nav>
 
@@ -255,7 +254,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Hulp</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Instellingen</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Instellingen</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contact</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Terugbetalingen</span></a></li>

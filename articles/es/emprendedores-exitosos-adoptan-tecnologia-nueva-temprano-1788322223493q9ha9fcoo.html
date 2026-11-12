@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"1788322223493q9ha9fcoo","title":"Emprendedores exitosos adoptan tecnología nueva temprano","summary":"El éxito en el emprendimiento suele depender de aprovechar oportunidades antes de que sean evidentes. Más allá de la perseverancia, el instinto y el sentido comercial, otra cualidad gana relevancia: saber cuándo invertir en tecnología moderna. Los mejores fundadores no adoptan tecnología nueva ciegamente, sino que toman decisiones estratégicas para impulsar sus empresas.","image":"https://addicted2success.com/wp-content/uploads/2026/08/Entrepreneur-Man-setting-up-VR-headsets-in-his-office-1000x600.jpeg","image_alt":"Un emprendedor sosteniendo una tableta rodeado de elementos tecnológicos futuristas como un holograma y un símbolo de IA.","date":"2026-09-02T04:10:24.515Z","category":null,"source":"Addicted2success.com","link":"https://addicted2success.com/ai/successful-entrepreneurs-early-adopters-new-technology/","type":null,"refs":[],"meta_description":"Descubre por qué los emprendedores exitosos adoptan tecnología nueva temprano. Explora consejos estratégicos sobre adopción tecnológica.","ingekort":false}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Saltar al contenido principal</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
                         </ul>
@@ -227,9 +226,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Leer</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Temas</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Temas</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archivo</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categorías</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categorías</span></a></li>
                 </ul>
             </nav>
 
@@ -246,7 +245,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Ayuda</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Ajustes</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Ajustes</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contacto</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Comentarios</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Reembolsos</span></a></li>

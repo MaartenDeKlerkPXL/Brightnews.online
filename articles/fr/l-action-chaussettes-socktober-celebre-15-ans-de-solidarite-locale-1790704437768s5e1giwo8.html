@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"1790704437768s5e1giwo8","title":"L'action chaussettes « Socktober » célèbre 15 ans de solidarité locale","summary":"Socktober a commencé il y a 15 ans quand des lycéens ont voulu aider après avoir appris que beaucoup de personnes dans leur région étaient sans abri ou circulaient entre les centres d'accueil. Un coup de téléphone au centre d'accueil local a révélé que les chaussettes étaient justement très nécessaires mais peu données. Des écoles, des églises et des entreprises...","image":"https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/651337ee1ee8951f82c300a1_socktober-socks.jpg","image_alt":"Des bénévoles trient les chaussettes données pour un centre d'accueil pour sans-abri local pendant Socktober","date":"2026-09-29T17:53:59.585Z","category":"Lifestyle","source":"GoodGoodGood.co","link":"https://www.goodgoodgood.co/articles/socktober","type":null,"refs":[],"meta_description":"Socktober célèbre 15 ans : d'une idée d'étudiants à une collecte de chaussettes mondiale pour les sans-abri.","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Aller au contenu principal</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Actualités</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Thèmes</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Thèmes</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archives</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">À propos</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Actualités</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Thèmes</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Thèmes</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archives</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">À propos</span></a></li>
                         </ul>
@@ -230,9 +229,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Lire</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Actualités</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Thèmes</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Thèmes</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archives</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Catégories</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Catégories</span></a></li>
                 </ul>
             </nav>
 
@@ -249,7 +248,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Aide</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Réglages</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Réglages</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contact</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Avis</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Remboursements</span></a></li>

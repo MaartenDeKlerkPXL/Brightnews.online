@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20260928-science","title":"Des bourses pour la recherche courageuse et un nom pour un amphibien préhistorique","summary":"Cette semaine illustre comment la science relie les gens, du présent au passé lointain. Vingt chercheurs et artistes ont reçu une importante bourse pour leurs travaux, et deux étudiantes ont donné un nom à un animal qui vivait il y a 309 millions d'années. Ces deux histoires montrent que l'attention et la rigueur, qu'elles s'appliquent aux humains ou aux fossiles, mènent à de belles découvertes. La MacArthur Foundation a annoncé cette semaine les lauréats de sa bourse annuelle, aussi appelée « genius grant » [1]. Les vingt lauréats reçoivent chacun 800 000 dollars, sans conditions. Parmi eux se trouvent des...","image":"https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2400x1350+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F78%2F30%2F6f8b939143d9b9047b8ce0425d8b%2F6-images-4.jpg","image_alt":"Des bourses pour la recherche courageuse et un nom pour un amphibien préhistorique","date":"2026-09-29T17:56:14.154Z","category":"Science","source":null,"link":null,"type":"digest","refs":[{"id":"1790704517255qb72iuc08","title":"MacArthur Foundation attribue des « genius grants » à 20 scientifiques et artistes","href":"/articles/fr/macarthur-foundation-attribue-des-genius-grants-a-20-scientifiques-et-artistes-1790704517255qb72iuc08.html"},{"id":"1790704490895fnd9hccqb","title":"L'anthropologue judiciaire Spradley remporte une bourse MacArthur pour ses travaux en science et justice","href":"/articles/fr/l-anthropologue-judiciaire-spradley-remporte-une-bourse-macarthur-pour-ses-trava-1790704490895fnd9hccqb.html"},{"id":"1790704288436yrrol00ab","title":"Des étudiantes nomment un Jeanerpeton mazonensis vieux de 309 millions d'années d'après leurs mères","href":"/articles/fr/des-etudiantes-nomment-un-jeanerpeton-mazonensis-vieux-de-309-millions-d-annees-1790704288436yrrol00ab.html"}],"meta_description":"Actualités scientifiques : bourses MacArthur pour la recherche courageuse et un amphibien vieux de 309 millions d'années qui a enfin reçu un nom.","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Aller au contenu principal</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Actualités</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Thèmes</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Thèmes</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archives</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">À propos</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Actualités</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Thèmes</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Thèmes</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archives</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">À propos</span></a></li>
                         </ul>
@@ -235,9 +234,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Lire</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Actualités</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Thèmes</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Thèmes</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archives</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Catégories</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Catégories</span></a></li>
                 </ul>
             </nav>
 
@@ -254,7 +253,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Aide</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Réglages</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Réglages</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contact</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Avis</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Remboursements</span></a></li>

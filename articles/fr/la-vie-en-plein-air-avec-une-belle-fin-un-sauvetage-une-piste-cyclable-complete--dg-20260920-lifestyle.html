@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20260920-lifestyle","title":"La vie en plein air avec une belle fin : un sauvetage, une piste cyclable complète et des familles d'accueil dévouées","summary":"Ces jours-ci, dans la catégorie lifestyle, il s'agit de vivre dehors, de persévérer et de prendre soin les uns des autres. D'un randonneur retrouvé contre toute attente, à une piste cyclable enfin terminée après trente ans, en passant par un couple qui accueille depuis des années des chiens dans un foyer temporaire. Trois histoires différentes, mais toutes avec la même tonalité : des gens qui n'abandonnent pas et qui continuent à s'investir pour les autres, humains ou animaux. L'histoire la plus frappante vient d'Isle Royale National Park, où Craig Berg, 70 ans, a disparu pendant onze jours lors d'une randonnée...","image":"https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab160ac37a1d4530ef86c2a_6ab160abf3154b9837b18bfe_craig-berg-missing-hiker-found-isle-royale-national-park-featured.webp","image_alt":"La vie en plein air avec une belle fin : un sauvetage, une piste cyclable complète et des familles d'accueil dévouées","date":"2026-09-21T18:12:01.356Z","category":"Lifestyle","source":null,"link":null,"type":"digest","refs":[{"id":"1790014241811y3vfaki98","title":"Randonneur disparu Craig Berg secouru après 11 jours sur Isle Royale","href":"/articles/fr/randonneur-disparu-craig-berg-secouru-apres-11-jours-sur-isle-royale-1790014241811y3vfaki98.html"},{"id":"1789965311313qeajm49mh","title":"La Mesabi Trail au Minnesota enfin achevée après 30 ans","href":"/articles/fr/la-mesabi-trail-au-minnesota-enfin-achevee-apres-30-ans-1789965311313qeajm49mh.html"},{"id":"17899652880376z76s0lap","title":"Un couple britannique accueille 59 chiens en famille d'accueil","href":"/articles/fr/un-couple-britannique-accueille-59-chiens-en-famille-d-accueil-17899652880376z76s0lap.html"}],"meta_description":"Actualités lifestyle du 20 septembre 2026 : un randonneur secouru, une piste cyclable achevée au Minnesota et un couple qui accueille des chiens.","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Aller au contenu principal</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Actualités</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Thèmes</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Thèmes</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archives</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">À propos</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Actualités</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Thèmes</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Thèmes</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archives</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">À propos</span></a></li>
                         </ul>
@@ -235,9 +234,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Lire</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Actualités</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Thèmes</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Thèmes</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archives</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Catégories</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Catégories</span></a></li>
                 </ul>
             </nav>
 
@@ -254,7 +253,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Aide</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Réglages</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Réglages</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contact</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Avis</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Remboursements</span></a></li>

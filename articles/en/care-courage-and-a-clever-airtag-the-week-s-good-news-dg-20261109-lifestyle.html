@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20261109-lifestyle","title":"Care, courage and a clever AirTag: the week's good news","summary":"These days show how people care for each other, animals and their surroundings in many different ways. From a sports field in Oakland to a theatre hall in London: stories of perseverance and small acts with big consequences are popping up everywhere. At Oakland Technical middle school, flag football is growing rapidly among girls [1]. Nationally, the number of female participants aged 6 to 17 has risen by 57 percent over the past decade, to just over 267,000 in 2024. The sport is now becoming an official school sport in California and will make its debut at the 2028 Olympic...","image":"https://cdn.kqed.org/wp-content/uploads/sites/23/2026/11/GettyImages-2173655411-b93be8dc-2000x1418.jpg","image_alt":"Care, courage and a clever AirTag: the week's good news","date":"2026-11-10T19:29:42.484Z","category":"Lifestyle","source":"BrightNews","link":null,"type":"digest","refs":[{"id":"17943389119158r0jm6tmv","title":"Flag football surges in popularity among girls","href":null},{"id":"17943388881162owlla8e3","title":"Italy invests $2.2 million in fighting dog rescue","href":null},{"id":"1794338838098cpxyt1m0c","title":"Viral doorbell video raises $76,000 for caregiver Suzanna Metcalf","href":null},{"id":"1794338810899xda622hdp","title":"Actor Peter Marinker (85) performs in Krapp's Last Tape despite Alzheimer's","href":null},{"id":"1794159938644e31835khm","title":"Mayor catches stone thief with AirTag in Rufford","href":null}],"meta_description":"Lifestyle news from 9 November: flag football for girls, rescued fighting dogs, a viral gift, theatre despite Alzheimer's and an AirTag catch.","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Skip to main content</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">News</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Topics</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Topics</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archive</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">News</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Topics</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Topics</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archive</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
                         </ul>
@@ -237,9 +236,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Read</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">News</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Topics</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Topics</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archive</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categories</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categories</span></a></li>
                 </ul>
             </nav>
 
@@ -256,7 +255,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Help</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Settings</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Settings</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contact</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Refunds</span></a></li>

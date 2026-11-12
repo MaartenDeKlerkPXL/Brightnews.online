@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20260917-science","title":"Satellites, a chimpanzee and ancient footprints: the science of this week","summary":"This week shows just how broad science can look: at the earth from space, at the recovery of an old friend, and at traces from a distant past. From a launched satellite to a rediscovered tomb and even the footprints of a T. rex: everywhere, patience and careful work lead to beautiful results. On 15 September, the satellites Sentinel-3C and FLEX departed together aboard a Vega-C rocket from French Guiana [1]. Sentinel-3C measures, among other things, sea and land temperatures and helps detect algal blooms and extreme heat. FLEX looks at plants: it measures the fluorescence they emit during photosynthesis,...","image":"/assets/fallback/science-2.jpg","image_alt":"Satellites, a chimpanzee and ancient footprints: the science of this week","date":"2026-09-18T16:19:35.817Z","category":"Science","source":null,"link":null,"type":"digest","refs":[{"id":"1789748294620m3jjyiit8","title":"Sentinel-3C and FLEX satellites launched to study Earth","href":"/articles/en/sentinel-3c-and-flex-satellites-launched-to-study-earth-1789748294620m3jjyiit8.html"},{"id":"1789748141932lspr4jani","title":"Cataract surgery restores sight to chimpanzee Pierre, 54","href":"/articles/en/cataract-surgery-restores-sight-to-chimpanzee-pierre-54-1789748141932lspr4jani.html"},{"id":"1789748111526c04fkqo0w","title":"Intact Chimú tomb discovered in Peru's Chan Chan","href":"/articles/en/intact-chimu-tomb-discovered-in-peru-s-chan-chan-1789748111526c04fkqo0w.html"},{"id":"1789585765262uc56lz1sv","title":"First trackway of adult T. rex discovered in North Dakota","href":"/articles/en/first-trackway-of-adult-t-rex-discovered-in-north-dakota-1789585765262uc56lz1sv.html"}],"meta_description":"Satellites for the climate, a chimpanzee that can see again, an ancient tomb in Peru and T. rex footprints: this week's science news.","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Skip to main content</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">News</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Topics</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Topics</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archive</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">News</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Topics</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Topics</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archive</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
                         </ul>
@@ -236,9 +235,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Read</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">News</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Topics</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Topics</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archive</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categories</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categories</span></a></li>
                 </ul>
             </nav>
 
@@ -255,7 +254,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Help</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Settings</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Settings</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contact</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Refunds</span></a></li>

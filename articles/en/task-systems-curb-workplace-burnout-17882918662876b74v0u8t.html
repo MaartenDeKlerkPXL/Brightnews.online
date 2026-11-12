@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"17882918662876b74v0u8t","title":"Task systems curb workplace burnout","summary":"The World Health Organization (WHO) classifies workplace burnout as an occupational phenomenon, not a medical condition. It is defined by exhaustion, growing mental distance from work, and reduced effectiveness. Two of these three factors relate directly to the work itself, not the worker. Task management systems can help address this by reducing workload pressure.","image":"https://addicted2success.com/wp-content/uploads/2026/08/Male-entrepreneur-CEO-on-tablet-working-on-productivity-systems-for-the-workplace-to-avoid-burnout-1000x600.jpeg","image_alt":"A person working organized at a desk with a laptop and notebook, surrounded by a tidy workspace.","date":"2026-09-01T19:44:27.822Z","category":null,"source":"Addicted2success.com","link":"https://addicted2success.com/business-advice/task-management-systems-antidote-workplace-burnout/","type":null,"refs":[],"meta_description":"Learn how task management systems can reduce workplace burnout as defined by the WHO. Practical tips for a healthier work-life balance.","ingekort":false}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Skip to main content</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">News</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Topics</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Topics</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archive</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">News</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Topics</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Topics</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archive</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
                         </ul>
@@ -227,9 +226,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Read</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">News</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Topics</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Topics</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archive</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categories</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categories</span></a></li>
                 </ul>
             </nav>
 
@@ -246,7 +245,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Help</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Settings</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Settings</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contact</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Refunds</span></a></li>

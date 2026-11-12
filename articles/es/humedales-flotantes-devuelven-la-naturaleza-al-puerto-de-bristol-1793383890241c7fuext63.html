@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"1793383890241c7fuext63","title":"Humedales flotantes devuelven la naturaleza al puerto de Bristol","summary":"En el puerto de Bristol, activistas climáticos y la organización de conservación WWT han instalado humedales flotantes a lo largo de los muros de hormigón del muelle. Las plataformas, de 100 y 16 metros cuadrados, están completamente fabricadas con materiales reciclados, reciclables y biodegradables, como tuberías de agua antiguas y fibra de coco. Sobre una capa de gránulos de arcilla...","image":"https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6acff946832013fab7bf796b_6acff945cec66dcf02426812_bristol-harbour-england-floating-wetlands-featured.webp","image_alt":"Humedal flotante con plantas verdes en el puerto de Bristol, rodeado de muros de hormigón del muelle","date":"2026-10-30T18:11:31.071Z","category":"Environment","source":"GoodGoodGood.co","link":"https://www.goodgoodgood.co/articles/bristol-harbour-england-floating-wetlands","type":null,"refs":[],"meta_description":"Activistas climáticos construyen humedales flotantes en el puerto de Bristol que restauran la naturaleza, la biodiversidad y la calidad del agua en la ciudad.","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Saltar al contenido principal</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
                         </ul>
@@ -230,9 +229,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Leer</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Temas</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Temas</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archivo</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categorías</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categorías</span></a></li>
                 </ul>
             </nav>
 
@@ -249,7 +248,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Ayuda</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Ajustes</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Ajustes</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contacto</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Comentarios</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Reembolsos</span></a></li>

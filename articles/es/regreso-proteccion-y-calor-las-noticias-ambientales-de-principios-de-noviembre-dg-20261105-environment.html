@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20261105-environment","title":"Regreso, protección y calor: las noticias ambientales de principios de noviembre","summary":"En los últimos días, la naturaleza demuestra que la perseverancia vale la pena. Desde un primate que sobrevivió en silencio hasta un parque nacional que crece considerablemente, y desde aves que regresan a una colonia hasta casas que pronto se calentarán sin gas: las buenas noticias llegan desde todos los rincones. Tomemos el lóris lento de Bangka [2], un primate venenoso que no había sido visto científicamente desde los años treinta y que en 2015 se consideraba posiblemente extinto. El animal había estado siendo rescatado todo ese tiempo por el Alobi Wildlife Rescue Center, que entre 2015 y 2025 acogió...","image":"https://theecologist.org/sites/default/files/styles/facebook/public/2019-01/satishkumar_2.jpg?h=2992ba0a&amp;itok=sw-KYTy5","image_alt":"Regreso, protección y calor: las noticias ambientales de principios de noviembre","date":"2026-11-06T19:03:46.769Z","category":"Environment","source":"BrightNews","link":null,"type":"digest","refs":[{"id":"17939917345584tddw5axb","title":"Satish Kumar gana el Future Icons Award por su caminata por la paz de 8.000 millas","href":null},{"id":"1793991652315mthd40ah5","title":"El lóris lento de Bangka venenoso no estaba extinto después de todo","href":null},{"id":"1793907606024s2635r9hy","title":"Los charranes mayores regresan a la costa sur británica tras la gripe aviar","href":null},{"id":"1793857124364imh34spkm","title":"Parque Nacional Pantanal de Brasil se expande significativamente","href":null},{"id":"1793991687622bmh7f4zst","title":"Vermont Gas lleva calefacción geotérmica a viviendas asequibles","href":null}],"meta_description":"Desde un lóris venenoso rescatado hasta la expansión del Pantanal y casas geotérmicas: las noticias ambientales esperanzadoras de principios de noviembre d","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Saltar al contenido principal</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
                         </ul>
@@ -237,9 +236,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Leer</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Temas</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Temas</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archivo</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categorías</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categorías</span></a></li>
                 </ul>
             </nav>
 
@@ -256,7 +255,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Ayuda</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Ajustes</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Ajustes</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contacto</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Comentarios</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Reembolsos</span></a></li>

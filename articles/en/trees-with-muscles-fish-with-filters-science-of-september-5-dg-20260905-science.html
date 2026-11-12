@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20260905-science","title":"Trees with muscles, fish with filters: science of September 5","summary":"Today's science shows how broad research can be: from trees that pull themselves upright to fish that filter out their own electrical signals. Funding for young researchers and the rescue of an almost extinct tree species also feature. A day to spark curiosity. The European Commission is investing in the next generation of scientists. €105.5 million is going to 29 doctoral and postdoctoral programmes under the Marie Skłodowska-Curie Actions COFUND programme [1]. More than 400 organisations from 38 countries are participating, with France as the largest coordinator. The programmes cover life sciences, quantum physics and space travel, all in the...","image":"https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&q=80","image_alt":"Trees with muscles, fish with filters: science of September 5","date":"2026-09-06T04:15:38.531Z","category":"Science","source":null,"link":null,"type":"digest","refs":[{"id":"1788647709263hp99h6be9","title":"EU allocates €105.5 million for researchers","href":"/articles/en/eu-allocates-105-5-million-for-researchers-1788647709263hp99h6be9.html"},{"id":"1788647579010wxcreq06i","title":"Trees have their own 'muscles', researchers find","href":"/articles/en/trees-have-their-own-muscles-researchers-find-1788647579010wxcreq06i.html"},{"id":"1788646234804g1sgv91ia","title":"American chestnut gets genetic lifeline","href":"/articles/en/american-chestnut-gets-genetic-lifeline-1788646234804g1sgv91ia.html"},{"id":"17886485649093lmuettpf","title":"Fish brain filters its own signals cleverly","href":"/articles/en/fish-brain-filters-its-own-signals-cleverly-17886485649093lmuettpf.html"},{"id":"178864553146221lp57tcj","title":"AI music banned from Australian charts","href":"/articles/en/ai-music-banned-from-australian-charts-178864553146221lp57tcj.html"}],"meta_description":"From muscle power in trees to fish brains that filter noise: the science news of September 5, 2026 in a nutshell.","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Skip to main content</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">News</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Topics</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Topics</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archive</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">News</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Topics</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Topics</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archive</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
                         </ul>
@@ -237,9 +236,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Read</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">News</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Topics</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Topics</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archive</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categories</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categories</span></a></li>
                 </ul>
             </nav>
 
@@ -256,7 +255,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Help</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Settings</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Settings</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contact</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Refunds</span></a></li>

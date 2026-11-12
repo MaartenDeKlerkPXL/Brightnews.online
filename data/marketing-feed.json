@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-11-12T16:25:56.349Z",
+ "gegenereerd": "2026-11-12T17:49:35.120Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -30,23 +30,30 @@
      "url": "https://brightnews.online/articles/nl/flag-football-groeit-snel-in-populariteit-onder-meisjes-17943389119158r0jm6tmv.html"
     },
     {
+     "id": "1794505697568p3w3b6tmd",
+     "titel": "103-jarige D-Day-veteraan Douglas Halley krijgt verloren oorlogsmedailles terug",
+     "teaser": "De 103-jarige D-Day-veteraan Douglas Halley heeft zijn verloren oorlogsmedailles teruggekregen, precies op tijd voor Remembrance Day. Halley landde als 20-jarige op de stranden van Normandië bij de Royal Artillery en raakte zijn drie medailles - de 1939-45 Star, de France and Germany Star en de War Medal 1939-45 - kwijt toen hij in 1945 zijn uniform inleverde, met de medailles...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/103-jarige-d-day-veteraan-douglas-halley-krijgt-verloren-oorlogsmedailles-terug-1794505697568p3w3b6tmd.html"
+    },
+    {
      "id": "1794500717896bmb6ztw21",
      "titel": "Tieners redden overstroomde buren op paddleboard in Florida",
      "teaser": "In Brevard County, Florida, zorgde een '1000-jaar regenval' voor overstromingen in onder meer Melbourne, Port Lucie en Palm Bay. Brittany Grant zat met haar zoon en 3 honden op het aanrecht terwijl het water bleef stijgen; 911 kon haar niet bereiken. Via Facebook riep ze om hulp. Buurvrouw Stephanie Fanguy stuurde haar zoons Jonah (15) en Lucas (17) op paddleboards...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/tieners-redden-overstroomde-buren-op-paddleboard-in-florida-1794500717896bmb6ztw21.html"
-    },
-    {
-     "id": "1794424942669ry7xjuj33",
-     "titel": "Verlamde pianiste (84) houdt belofte aan verpleeghuis Bryn Mawr Village",
-     "teaser": "Bonnie Fay (84) kwam als patiënt naar Bryn Mawr Village nursing home in Pennsylvania, verlamd door het syndroom van Guillain-Barré. Tijdens haar moeizame herstel vond ze troost in pianospelen, iets wat ze al sinds haar zevende deed. Ze beloofde zichzelf ooit terug te komen om er te spelen. Die belofte maakt ze nu waar: ze speelt regelmatig piano voor bewoners...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/verlamde-pianiste-84-houdt-belofte-aan-verpleeghuis-bryn-mawr-village-1794424942669ry7xjuj33.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261111-lifestyle",
+     "titel": "Herenigde medailles, gered door buren en honderd jaar wandelen: het goede nieuws van deze dagen",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-11",
+     "url": "https://brightnews.online/articles/nl/herenigde-medailles-gered-door-buren-en-honderd-jaar-wandelen-het-goede-nieuws-v-dg-20261111-lifestyle.html"
+    },
     {
      "id": "dg-20261110-environment",
      "titel": "Beren, bloemen en een plan: drie tekenen van herstel op aarde",
@@ -97,23 +104,30 @@
      "url": "https://brightnews.online/articles/en/flag-football-surges-in-popularity-among-girls-17943389119158r0jm6tmv.html"
     },
     {
+     "id": "1794505697568p3w3b6tmd",
+     "titel": "103-year-old D-Day veteran Douglas Halley gets lost war medals back",
+     "teaser": "103-year-old D-Day veteran Douglas Halley has recovered his lost war medals, just in time for Remembrance Day. Halley landed on the beaches of Normandy at age 20 with the Royal Artillery and lost his three medals — the 1939-45 Star, the France and Germany Star and the War Medal 1939-45 — when he handed in his uniform in 1945 with...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/103-year-old-d-day-veteran-douglas-halley-gets-lost-war-medals-back-1794505697568p3w3b6tmd.html"
+    },
+    {
      "id": "1794500717896bmb6ztw21",
      "titel": "Teenagers rescue flooded neighbors on paddleboard in Florida",
      "teaser": "In Brevard County, Florida, a '1000-year rainfall' caused flooding in Melbourne, Port Lucie and Palm Bay, among other areas. Brittany Grant sat on her kitchen counter with her son and 3 dogs as water continued to rise; 911 couldn't reach her. She called for help via Facebook. Neighbor Stephanie Fanguy sent her sons Jonah (15) and Lucas (17) out on...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/teenagers-rescue-flooded-neighbors-on-paddleboard-in-florida-1794500717896bmb6ztw21.html"
-    },
-    {
-     "id": "1794424942669ry7xjuj33",
-     "titel": "Paralyzed pianist (84) keeps promise to Bryn Mawr Village nursing home",
-     "teaser": "Bonnie Fay (84) arrived as a patient at Bryn Mawr Village nursing home in Pennsylvania, paralyzed by Guillain-Barré syndrome. During her difficult recovery, she found solace in playing piano, something she had done since age seven. She promised herself she would one day return to play there. Now she is making good on that promise: she plays piano regularly for...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/paralyzed-pianist-84-keeps-promise-to-bryn-mawr-village-nursing-home-1794424942669ry7xjuj33.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261111-lifestyle",
+     "titel": "Reunited medals, rescued by neighbors and a hundred years of walking: the good news of these days",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-11",
+     "url": "https://brightnews.online/articles/en/reunited-medals-rescued-by-neighbors-and-a-hundred-years-of-walking-the-good-new-dg-20261111-lifestyle.html"
+    },
     {
      "id": "dg-20261110-environment",
      "titel": "Bears, flowers and a plan: three signs of recovery on Earth",
@@ -164,23 +178,30 @@
      "url": "https://brightnews.online/articles/de/flag-football-wachst-schnell-an-popularitat-unter-madchen-17943389119158r0jm6tmv.html"
     },
     {
+     "id": "1794505697568p3w3b6tmd",
+     "titel": "103-jähriger D-Day-Veteran Douglas Halley erhält verlorene Kriegsmedaillen zurück",
+     "teaser": "Der 103-jährige D-Day-Veteran Douglas Halley hat seine verlorenen Kriegsmedaillen zurückerhalten, genau rechtzeitig zur Remembrance Day. Halley landete als 20-Jähriger an den Stränden der Normandie bei der Royal Artillery und verlor seine drei Medaillen – den 1939-45 Star, den France and Germany Star und die War Medal 1939-45 – als er 1945 seine Uniform abgab, wobei die Medaillen noch daran befestigt...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/103-jahriger-d-day-veteran-douglas-halley-erhalt-verlorene-kriegsmedaillen-zuruc-1794505697568p3w3b6tmd.html"
+    },
+    {
      "id": "1794500717896bmb6ztw21",
      "titel": "Teenager retten überflutete Nachbarn auf Paddleboard in Florida",
      "teaser": "In Brevard County, Florida, sorgte ein „1000-Jahre-Regen\" für Überschwemmungen unter anderem in Melbourne, Port Lucie und Palm Bay. Brittany Grant saß mit ihrem Sohn und 3 Hunden auf der Küchentheke, während das Wasser weiter stieg; 911 konnte sie nicht erreichen. Über Facebook rief sie um Hilfe. Nachbarin Stephanie Fanguy schickte ihre Söhne Jonah (15) und Lucas (17) auf Paddleboards los....",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/teenager-retten-uberflutete-nachbarn-auf-paddleboard-in-florida-1794500717896bmb6ztw21.html"
-    },
-    {
-     "id": "1794424942669ry7xjuj33",
-     "titel": "Gelähmte Pianistin (84) erfüllt Versprechen an Bryn Mawr Village",
-     "teaser": "Bonnie Fay (84) kam als Patientin ins Bryn Mawr Village Pflegeheim in Pennsylvania, gelähmt durch das Guillain-Barré-Syndrom. Während ihrer mühsamen Genesung fand sie Trost im Klavierspiel, das sie bereits seit ihrem siebten Lebensjahr betreibt. Sie versprach sich selbst, eines Tages zurückzukommen und dort zu spielen. Dieses Versprechen löst sie nun ein: Sie spielt regelmäßig Klavier für Bewohner, die sich von...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/gelahmte-pianistin-84-erfullt-versprechen-an-bryn-mawr-village-1794424942669ry7xjuj33.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261111-lifestyle",
+     "titel": "Wiedergefundene Medaillen, von Nachbarn gerettet und hundert Jahre Spaziergang: die guten Nachrichten dieser Tage",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-11",
+     "url": "https://brightnews.online/articles/de/wiedergefundene-medaillen-von-nachbarn-gerettet-und-hundert-jahre-spaziergang-di-dg-20261111-lifestyle.html"
+    },
     {
      "id": "dg-20261110-environment",
      "titel": "Bären, Blüten und ein Plan: drei Zeichen der Erholung auf der Erde",
@@ -231,23 +252,30 @@
      "url": "https://brightnews.online/articles/fr/le-flag-football-gagne-rapidement-en-popularite-chez-les-filles-17943389119158r0jm6tmv.html"
     },
     {
+     "id": "1794505697568p3w3b6tmd",
+     "titel": "Vétéran du D-Day âgé de 103 ans, Douglas Halley retrouve ses médailles de guerre",
+     "teaser": "Le vétéran du D-Day Douglas Halley, âgé de 103 ans, a retrouvé ses médailles de guerre perdues, juste à temps pour le Remembrance Day. Halley a débarqué à l'âge de 20 ans sur les plages de Normandie avec la Royal Artillery et a perdu ses trois médailles — la 1939-45 Star, la France and Germany Star et la War Medal...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/veteran-du-d-day-age-de-103-ans-douglas-halley-retrouve-ses-medailles-de-guerre-1794505697568p3w3b6tmd.html"
+    },
+    {
      "id": "1794500717896bmb6ztw21",
      "titel": "Des adolescents sauvent des voisins sur paddle lors d'inondations en Floride",
      "teaser": "Dans le comté de Brevard, en Floride, une « pluie millénaire » a provoqué des inondations dans plusieurs villes dont Melbourne, Port Lucie et Palm Bay. Brittany Grant s'était réfugiée avec son fils et ses 3 chiens sur le plan de travail de sa cuisine tandis que l'eau continuait de monter ; le 911 ne pouvait pas la joindre. Elle...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/des-adolescents-sauvent-des-voisins-sur-paddle-lors-d-inondations-en-floride-1794500717896bmb6ztw21.html"
-    },
-    {
-     "id": "1794424942669ry7xjuj33",
-     "titel": "Pianiste paralysée (84 ans) tient sa promesse à la maison de retraite Bryn Mawr Village",
-     "teaser": "Bonnie Fay (84 ans) est arrivée comme patiente à la maison de retraite Bryn Mawr Village en Pennsylvanie, paralysée par le syndrome de Guillain-Barré. Pendant sa convalescence difficile, elle a trouvé du réconfort en jouant du piano, une passion qu'elle cultive depuis l'âge de sept ans. Elle s'est promis de revenir un jour y jouer. Elle tient maintenant cette promesse...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/pianiste-paralysee-84-ans-tient-sa-promesse-a-la-maison-de-retraite-bryn-mawr-vi-1794424942669ry7xjuj33.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261111-lifestyle",
+     "titel": "Des médailles retrouvées, sauvées par des voisins et cent ans de marche : les bonnes nouvelles de ces jours-ci",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-11",
+     "url": "https://brightnews.online/articles/fr/des-medailles-retrouvees-sauvees-par-des-voisins-et-cent-ans-de-marche-les-bonne-dg-20261111-lifestyle.html"
+    },
     {
      "id": "dg-20261110-environment",
      "titel": "Des ours, des fleurs et un plan : trois signes de rétablissement sur terre",
@@ -298,23 +326,30 @@
      "url": "https://brightnews.online/articles/es/el-flag-football-crece-rapidamente-en-popularidad-entre-las-ninas-17943389119158r0jm6tmv.html"
     },
     {
+     "id": "1794505697568p3w3b6tmd",
+     "titel": "Veterano de D-Day de 103 años recupera sus medallas de guerra perdidas",
+     "teaser": "El veterano de D-Day Douglas Halley, de 103 años, ha recuperado sus medallas de guerra perdidas, justo a tiempo para Remembrance Day. Halley desembarcó a los 20 años en las playas de Normandía con la Royal Artillery y perdió sus tres medallas —la 1939-45 Star, la France and Germany Star y la War Medal 1939-45— cuando entregó su uniforme en...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/veterano-de-d-day-de-103-anos-recupera-sus-medallas-de-guerra-perdidas-1794505697568p3w3b6tmd.html"
+    },
+    {
      "id": "1794500717896bmb6ztw21",
      "titel": "Adolescentes rescatan a vecinos inundados en tabla de remo en Florida",
      "teaser": "En Brevard County, Florida, una «lluvia de mil años» provocó inundaciones en localidades como Melbourne, Port Lucie y Palm Bay. Brittany Grant estaba con su hijo y 3 perros en la encimera mientras el agua seguía subiendo; el 911 no podía localizarla. A través de Facebook pidió ayuda. Su vecina Stephanie Fanguy envió a sus hijos Jonah (15) y Lucas...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/adolescentes-rescatan-a-vecinos-inundados-en-tabla-de-remo-en-florida-1794500717896bmb6ztw21.html"
-    },
-    {
-     "id": "1794424942669ry7xjuj33",
-     "titel": "Pianista paralizada (84) cumple su promesa en la residencia Bryn Mawr Village",
-     "teaser": "Bonnie Fay (84) llegó como paciente a la residencia de enfermería Bryn Mawr Village en Pensilvania, paralizada por el síndrome de Guillain-Barré. Durante su difícil recuperación, encontró consuelo tocando piano, algo que hacía desde los siete años. Se prometió a sí misma que algún día volvería para tocar allí. Ahora cumple esa promesa: toca piano regularmente para los residentes que...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/pianista-paralizada-84-cumple-su-promesa-en-la-residencia-bryn-mawr-village-1794424942669ry7xjuj33.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261111-lifestyle",
+     "titel": "Medallas reunidas, salvadas por vecinos y cien años caminando: las buenas noticias de estos días",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-11",
+     "url": "https://brightnews.online/articles/es/medallas-reunidas-salvadas-por-vecinos-y-cien-anos-caminando-las-buenas-noticias-dg-20261111-lifestyle.html"
+    },
     {
      "id": "dg-20261110-environment",
      "titel": "Osos, flores y un plan: tres señales de recuperación en la tierra",

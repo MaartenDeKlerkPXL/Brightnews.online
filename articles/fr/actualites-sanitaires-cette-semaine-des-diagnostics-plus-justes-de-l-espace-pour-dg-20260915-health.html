@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20260915-health","title":"Actualités sanitaires cette semaine : des diagnostics plus justes, de l'espace pour le deuil et une maladie qui disparaît","summary":"Ces derniers jours, le secteur de la santé montre que les vieilles habitudes peuvent changer quand il y a de bonnes raisons de le faire. Les médecins adaptent les directives, les écoles cherchent de nouvelles façons de soutenir les enfants, et toute une région se libère d'une maladie qui provoque la cécité. Trois informations qui montrent que les soins peuvent être plus justes et plus accessibles, pour ceux qui en ont le plus besoin. Ainsi, les quatre plus grandes organisations cardiovasculaires du monde ont établi ensemble, pour la première fois, une définition universelle d'une crise cardiaque [1]. Trois types de...","image":"https://www.optimistdaily.com/wp-content/uploads/Depositphotos_212439798_L-1024x682.jpg","image_alt":"Actualités sanitaires cette semaine : des diagnostics plus justes, de l'espace pour le deuil et une maladie qui disparaît","date":"2026-09-16T19:28:43.721Z","category":"Health","source":null,"link":null,"type":"digest","refs":[{"id":"1789586309732q90vwcvuu","title":"Les nouvelles directives sur l'infarctus corrigent le sous-diagnostic chez les femmes","href":"/articles/fr/les-nouvelles-directives-sur-l-infarctus-corrigent-le-sous-diagnostic-chez-les-f-1789586309732q90vwcvuu.html"},{"id":"1789533361143slogkd3i2","title":"Aide Créative Face au Deuil à l'École","href":"/articles/fr/aide-creative-face-au-deuil-a-l-ecole-1789533361143slogkd3i2.html"},{"id":"1789409040112vqs98u8v1","title":"Tout le Sud-Est Asiatique Libre du Trachome","href":"/articles/fr/tout-le-sud-est-asiatique-libre-du-trachome-1789409040112vqs98u8v1.html"}],"meta_description":"Des diagnostics cardiaques plus justes pour les femmes, du réconfort pour les enfants en deuil et un Asie du Sud-Est sans trachome : l'actualité sanitaire ","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Aller au contenu principal</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Actualités</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Thèmes</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Thèmes</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archives</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">À propos</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Actualités</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Thèmes</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Thèmes</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archives</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">À propos</span></a></li>
                         </ul>
@@ -235,9 +234,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Lire</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Actualités</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Thèmes</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Thèmes</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archives</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Catégories</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Catégories</span></a></li>
                 </ul>
             </nav>
 
@@ -254,7 +253,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Aide</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Réglages</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Réglages</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contact</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Avis</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Remboursements</span></a></li>

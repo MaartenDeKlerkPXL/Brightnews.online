@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"17884268509234u4ht4ilx","title":"Heimkehr für Familie und Freiheit","summary":"Dean Chou zog 1999 zum Studium nach Los Angeles und baute dort ein Leben auf. 2018 wurde er US-Bürger und führte zwei Unternehmen. Nach dem Tod seiner Frau 2021 beschloss er, näher bei seinen alternden Eltern zu leben. 2025 zog er nach Taipei, wo er eine kleine Wohnung für etwa 1.200 US-Dollar monatlich mietet. Seine Lebenshaltungskosten betragen rund 2.500 US-Dollar,...","image":"https://i.insider.com/6a98dba13c906e69480d59c9?format=jpeg","image_alt":"Dean Chou steht mit seinen Eltern und seinem Cousin in einem Wohnzimmer in Taipei und lächelt in die Kamera.","date":"2026-09-03T09:14:12.030Z","category":null,"source":"BusinessInsider.com","link":"https://www.businessinsider.com/gen-x-american-moved-taipei-close-to-aging-parents-taiwan-2026-9","type":null,"refs":[],"meta_description":"Ein Mann kehrt nach Taipei zurück, nachdem er in Los Angeles lebte, um näher bei seinen Eltern zu sein. Entdecken Sie seine Geschichte über Familie, Freihe","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Zum Hauptinhalt springen</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nachrichten</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Themen</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Themen</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archiv</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Über uns</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nachrichten</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Themen</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Themen</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archiv</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Über uns</span></a></li>
                         </ul>
@@ -227,9 +226,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Lesen</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Nachrichten</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Themen</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Themen</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archiv</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Kategorien</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Kategorien</span></a></li>
                 </ul>
             </nav>
 
@@ -246,7 +245,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Hilfe</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Einstellungen</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Einstellungen</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Kontakt</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Erstattungen</span></a></li>

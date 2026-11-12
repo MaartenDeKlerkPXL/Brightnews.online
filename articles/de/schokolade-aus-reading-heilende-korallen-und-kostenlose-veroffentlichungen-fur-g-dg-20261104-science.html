@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20261104-science","title":"Schokolade aus Reading, heilende Korallen und kostenlose Veröffentlichungen für ganz Europa","summary":"Anfang November zeigt sich, dass Wissenschaft nicht nur in Laboratorien stattfindet, sondern auch an unerwarteten Orten zum Leben erwacht. Eine Studentin stellt eine Schokoladentafel aus vollständig britischen Rohstoffen her, Forscher entdecken, dass beschädigte Korallen durch einfachen Kontakt heilen können, und europäische Wissenschaftler erhalten mehr Raum, um ihre Arbeiten kostenlos zu teilen. Drei verschiedene Geschichten, aber alle handeln davon, etwas Wertvolles zu schützen und zu teilen. Maha Khan, Masterstudentin für Ernährungssicherheit an der University of Reading, erntete Kakaohülsen aus den Gewächshäusern ihrer Universität und stellte daraus zusammen mit britischer Milch und Zucker sechs Tafeln namens The Reading 100 [1] her. Die...","image":"/assets/fallback/science-2.jpg","image_alt":"Schokolade aus Reading, heilende Korallen und kostenlose Veröffentlichungen für ganz Europa","date":"2026-11-05T19:41:38.695Z","category":"Science","source":"BrightNews","link":null,"type":"digest","refs":[{"id":"1793820590416jpudzw0hp","title":"Studentin stellt Schokoladenriegel aus britischem Kakao her","href":null},{"id":"1793769512699wwo2nsoyi","title":"Gebleichtes Korall heilt durch Berührung","href":null},{"id":"1793907647245k7dr7jdjw","title":"Open Research Europe erweitert kostenloses Publizieren auf 11 Länder","href":null}],"meta_description":"Schokolade aus britischem Kakao, heilende Korallen und kostenlose Veröffentlichungen in Europa: die positiven Wissenschaftsnachrichten von Anfang November ","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Zum Hauptinhalt springen</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nachrichten</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Themen</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Themen</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archiv</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Über uns</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nachrichten</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Themen</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Themen</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archiv</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Über uns</span></a></li>
                         </ul>
@@ -235,9 +234,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Lesen</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Nachrichten</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Themen</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Themen</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archiv</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Kategorien</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Kategorien</span></a></li>
                 </ul>
             </nav>
 
@@ -254,7 +253,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Hilfe</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Einstellungen</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Einstellungen</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Kontakt</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Erstattungen</span></a></li>

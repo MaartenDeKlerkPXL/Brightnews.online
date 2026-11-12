@@ -1,5 +1,29 @@
 [
  {
+  "datum": "2026-11-12T17:47:54.149Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "Documentarian Helps 103-yo D-Day Survivor Recover His Lost War Medals–Just in Time for Veterans Day",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Hartverwarmend verhaal over terugvinden en herstel (verloren medailles teruggegeven aan veteraan) met sterke persoonlijke en maatschappelijke betekenis."
+ },
+ {
+  "datum": "2026-11-12T17:47:54.149Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "‘There’s a Georgia O’Keeffe in the Closet’ – Words that Led to Painting’s Joyous Rediscovery",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 2,
+  "totaal": 8,
+  "besluit": "ja",
+  "reden": "Blijmakend verhaal over onverwachte kunstontdekking met herkenbare menselijke verrassing, hoewel beperkt maatschappelijk relevant."
+ },
+ {
   "datum": "2026-11-12T16:24:02.836Z",
   "bron": "GoodNewsNetwork.org",
   "titel": "100-Year-Old ‘Store Mom’ Surprised With Her First Birthday Party",
@@ -3574,29 +3598,5 @@
   "totaal": 8,
   "besluit": "ja",
   "reden": "Persoonlijk transformatieverhaal van conservationist; maatschappelijk relevant en herkenbaar voor lezers geïnteresseerd in natuur en carrière."
- },
- {
-  "datum": "2026-10-30T17:51:11.293Z",
-  "bron": "PBS.org",
-  "titel": "Patagonia, My Gateway to Nature",
-  "uitsluiting": "geen",
-  "gevoel": 2,
-  "formulering": 3,
-  "relevantie": 2,
-  "totaal": 7,
-  "besluit": "nee",
-  "reden": "Persoonlijk verhaal over verbinding met natuur; positief geformuleerd, vooral herkenbaar voor natuurliefhebbers."
- },
- {
-  "datum": "2026-10-30T17:51:21.856Z",
-  "bron": "Theecologist.org",
-  "titel": "A framework for peace in Ukraine",
-  "uitsluiting": "politiek",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "De kern is een politiek voorstel voor vredesonderhandelingen; dit is inherent polariserend en afhankelijk van politieke overtuiging."
  }
 ]

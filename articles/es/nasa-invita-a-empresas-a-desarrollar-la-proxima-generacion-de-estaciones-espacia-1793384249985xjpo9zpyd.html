@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"1793384249985xjpo9zpyd","title":"NASA invita a empresas a desarrollar la próxima generación de estaciones espaciales","summary":"NASA publicó el 9 de octubre de 2026 una solicitud definitiva de propuestas para invitar a empresas estadounidenses a desarrollar la próxima generación de estaciones espaciales comerciales. El objetivo es que Estados Unidos mantenga presencia en órbita baja alrededor de la Tierra después de que la Estación Espacial Internacional (ISS) se retire. Las estaciones deben apoyar la investigación científica, el...","image":"/assets/fallback/science-2.jpg","image_alt":"Impresión artística de una estación espacial comercial en órbita alrededor de la Tierra","date":"2026-10-30T18:17:30.895Z","category":"Science","source":"Openaccessgovernment.org","link":"https://www.openaccessgovernment.org/nasa-sends-invites-to-us-companies-to-develop-commercial-space-stations/215541/","type":null,"refs":[],"meta_description":"NASA solicita a empresas estadounidenses presentar propuestas para nuevas estaciones espaciales comerciales como sucesoras de la ISS.","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Saltar al contenido principal</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
                         </ul>
@@ -230,9 +229,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Leer</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Temas</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Temas</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archivo</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categorías</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categorías</span></a></li>
                 </ul>
             </nav>
 
@@ -249,7 +248,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Ayuda</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Ajustes</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Ajustes</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contacto</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Comentarios</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Reembolsos</span></a></li>

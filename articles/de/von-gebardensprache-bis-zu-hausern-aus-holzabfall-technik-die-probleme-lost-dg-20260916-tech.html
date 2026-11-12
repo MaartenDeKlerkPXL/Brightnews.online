@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20260916-tech","title":"Von Gebärdensprache bis zu Häusern aus Holzabfall: Technik, die Probleme löst","summary":"In diesen Tagen zeigt die Technik, dass intelligente Erfindungen nicht zwingend kompliziert sein müssen, um viel zu bewirken. Von einer Roboterhand, die Gebärdensprache umsetzt, bis zu Häusern aus Holzabfall: überall entstehen Lösungen für Probleme, die es schon lange gibt. Genau das macht diese Meldungen lesenswert. In Kenia baute die 22-jährige Norah Kimathi mit ihrem Startup ZeroBionic eine Roboterhand, die die Stimme eines Lehrers direkt in Gebärdensprache umsetzt [1]. Von den 300.000 gehörlosen oder schwerhörigen Kindern in Kenia gehen nur wenige zur Schule, teilweise weil es keine einheitliche Gebärdensprache gibt. Die Hand ist aus recyceltem Kunststoffabfall 3D-gedruckt und kostet 350 Dollar....","image":"https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Press-photo-©-ZeroBionic-2.jpg","image_alt":"Von Gebärdensprache bis zu Häusern aus Holzabfall: Technik, die Probleme löst","date":"2026-09-17T16:49:28.212Z","category":"Tech","source":null,"link":null,"type":"digest","refs":[{"id":"1789409398854ryk5ehwtu","title":"Roboterhand Übersetzt Lehrerstimme in Gebärdensprache","href":"/articles/de/roboterhand-ubersetzt-lehrerstimme-in-gebardensprache-1789409398854ryk5ehwtu.html"},{"id":"1789663690801lle8wvp1r","title":"3D-gedruckte BioHomes aus Holzabfall erhalten neun Pilothäuser in Maine","href":"/articles/de/3d-gedruckte-biohomes-aus-holzabfall-erhalten-neun-pilothauser-in-maine-1789663690801lle8wvp1r.html"},{"id":"1789577008130zs40adub8","title":"Erste Solarambulanz in Kenia getestet","href":"/articles/de/erste-solarambulanz-in-kenia-getestet-1789577008130zs40adub8.html"}],"meta_description":"Roboterhand für Gebärdensprache, Häuser aus Holzabfall und eine Sonnen-Ambulanz: die Technik-Nachrichten vom 16. September 2026 im Überblick.","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Zum Hauptinhalt springen</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nachrichten</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Themen</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Themen</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archiv</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Über uns</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nachrichten</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Themen</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Themen</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archiv</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Über uns</span></a></li>
                         </ul>
@@ -235,9 +234,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Lesen</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Nachrichten</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Themen</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Themen</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archiv</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Kategorien</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Kategorien</span></a></li>
                 </ul>
             </nav>
 
@@ -254,7 +253,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Hilfe</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Einstellungen</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Einstellungen</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Kontakt</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Erstattungen</span></a></li>

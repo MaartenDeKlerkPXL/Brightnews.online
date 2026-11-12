@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20260915-environment","title":"Tortugas, un parque y objetivos europeos: tres señales de progreso","summary":"En estos días, las noticias ambientales muestran que el cambio ocurre a escalas muy diferentes. En la región amazónica, mujeres indígenas rescatan tortugas vulnerables, en Atenas crece un nuevo parque urbano entre las ruinas de un antiguo aeropuerto, y en Bruselas resulta que los grandes objetivos ambientales europeos avanzan según lo previsto. Pequeño y grande, local y continental: en todas partes se trabaja en la restauración. A orillas del río Aguarico en Ecuador, un grupo de mujeres Siekopai protege la tortuga charapa en peligro de extinción [1]. Las siete mujeres, que se llaman a sí mismas las \"mujeres tortuga\", combinan...","image":"https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a9b323230fc1bcb8ea0524c_6a9b3231a8882f2b432393c5_indigenous-turtle-women-amazon-ecuador-featured-2.webp","image_alt":"Tortugas, un parque y objetivos europeos: tres señales de progreso","date":"2026-09-16T04:36:56.462Z","category":"Environment","source":null,"link":null,"type":"digest","refs":[{"id":"1789533241648b5t78swge","title":"Mujeres Siekopai salvan tortugas de río amenazadas","href":"/articles/es/mujeres-siekopai-salvan-tortugas-de-rio-amenazadas-1789533241648b5t78swge.html"},{"id":"1789446944015wyj1x51fn","title":"Atenas Construye Megaparque en Aeropuerto Antiguo","href":"/articles/es/atenas-construye-megaparque-en-aeropuerto-antiguo-1789446944015wyj1x51fn.html"},{"id":"17894099694691tfot2503","title":"Misiones de la UE en buen camino para 2030","href":"/articles/es/misiones-de-la-ue-en-buen-camino-para-2030-17894099694691tfot2503.html"}],"meta_description":"Rescate de tortugas en Ecuador, un parque urbano fresco en Atenas y objetivos ambientales europeos en camino: las noticias positivas de la naturaleza de es","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Saltar al contenido principal</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
                         </ul>
@@ -235,9 +234,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Leer</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Temas</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Temas</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archivo</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categorías</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categorías</span></a></li>
                 </ul>
             </nav>
 
@@ -254,7 +253,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Ayuda</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Ajustes</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Ajustes</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contacto</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Comentarios</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Reembolsos</span></a></li>

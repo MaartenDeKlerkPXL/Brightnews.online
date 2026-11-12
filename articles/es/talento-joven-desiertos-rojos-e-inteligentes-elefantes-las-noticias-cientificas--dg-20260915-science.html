@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20260915-science","title":"Talento joven, desiertos rojos e inteligentes elefantes: las noticias científicas de estos días","summary":"Esta semana demuestra que el progreso a menudo comienza con la búsqueda paciente de respuestas. Jóvenes investigadores se dedican al cáncer y el clima, los geólogos descubren cómo la arena del desierto puede proporcionar energía limpia, y los elefantes resultan pensar mejor antes de actuar de lo que se creía. Tres historias muy diferentes, pero todas con el mismo núcleo: la comprensión conduce a mejores decisiones. En la francesa Brest se reunieron cien jóvenes científicos de 43 países para la tercera edición de EU TalentOn. Entre 21 y 35 años de edad, y ya ocupados con grandes temas como el...","image":"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80","image_alt":"Talento joven, desiertos rojos e inteligentes elefantes: las noticias científicas de estos días","date":"2026-09-16T16:47:06.218Z","category":"Science","source":null,"link":null,"type":"digest","refs":[{"id":"1789577102747ecq0t1wdv","title":"Jóvenes investigadores abordan el cáncer y el clima","href":"/articles/es/jovenes-investigadores-abordan-el-cancer-y-el-clima-1789577102747ecq0t1wdv.html"},{"id":"1789576831859ulekx38g9","title":"El Desierto Rojo de Australia Puede Producir Hidrógeno","href":"/articles/es/el-desierto-rojo-de-australia-puede-producir-hidrogeno-1789576831859ulekx38g9.html"},{"id":"1789447008594levnblqrg","title":"Los Elefantes Pueden Controlar Sus Impulsos","href":"/articles/es/los-elefantes-pueden-controlar-sus-impulsos-1789447008594levnblqrg.html"}],"meta_description":"Talento joven, desiertos rojos e inteligentes elefantes: las noticias científicas de estos días","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Saltar al contenido principal</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
                         </ul>
@@ -235,9 +234,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Leer</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Temas</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Temas</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archivo</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categorías</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categorías</span></a></li>
                 </ul>
             </nav>
 
@@ -254,7 +253,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Ayuda</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Ajustes</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Ajustes</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contacto</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Comentarios</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Reembolsos</span></a></li>

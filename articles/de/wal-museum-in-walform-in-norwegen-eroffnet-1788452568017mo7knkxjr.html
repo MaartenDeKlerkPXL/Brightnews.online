@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"1788452568017mo7knkxjr","title":"Wal-Museum in Walform in Norwegen eröffnet","summary":"In Norwegen wird am 4. Juni 2027 ein neues Museum eröffnet, das sich den Walen widmet. Das Wal-Museum zeigt Wissenschaft, Verhalten, Evolution und Kulturgeschichte der Wale durch immersive Kunst, Geschichten, Klang und Architektur. Das Gebäude, das wie ein auftauchender Buckelwal geformt ist, entsteht in Andenes, einem Dorf nahe dem Polarkreis. Der Ort ist bekannt für Walwanderungen.","image":"https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6a970313a4dc95ec20915621_6a9703126cd76a4d008860d1_norway-the-whale-museum-featured.webp","image_alt":"Visualisierung eines Wal-Museums, das wie ein auftauchender Buckelwal aus dem Boden ragt, umgeben von einer felsigen Küstenlandschaft.","date":"2026-09-03T16:22:49.504Z","category":"Environment","source":"GoodGoodGood.co","link":"https://www.goodgoodgood.co/articles/norway-the-whale-museum","type":null,"refs":[],"meta_description":"In Norwegen öffnet 2027 ein einzigartiges Wal-Museum in Walform. Erleben Sie Walwissenschaft und Kultur auf immersive Weise.","ingekort":false}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Zum Hauptinhalt springen</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nachrichten</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Themen</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Themen</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archiv</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Über uns</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nachrichten</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Themen</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Themen</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archiv</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Über uns</span></a></li>
                         </ul>
@@ -230,9 +229,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Lesen</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Nachrichten</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Themen</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Themen</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archiv</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Kategorien</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Kategorien</span></a></li>
                 </ul>
             </nav>
 
@@ -249,7 +248,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Hilfe</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Einstellungen</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Einstellungen</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Kontakt</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Erstattungen</span></a></li>

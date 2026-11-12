@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20260922-health","title":"Sueño, orina y ritmo cardíaco: tres pasos adelante en la sanidad","summary":"Estos días demuestran que el progreso sanitario a veces reside en pequeños pasos inteligentes. Una recompensa sencilla por dormir lo suficiente, una prueba de orina que detecta el cáncer, e inteligencia artificial que analiza un electrocardiograma: tres historias diferentes con un hilo conductor común. Hacen la sanidad más rápida, más precisa y a veces también más fácil de mantener. Tomemos el estudio de la University of Pittsburgh [1]. Más de 1.100 estudiantes recibieron una aplicación Fitbit y aproximadamente 468 de ellos ganaban alrededor de 5 dólares por noche si dormían siete horas. El resultado: 26% más noches con sueño suficiente...","image":"https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aad7f471fbf338d1a44c36c_6aad7f45b52f83488b1f588b_researchers-pay-college-students-to-sleep-more-featured.webp","image_alt":"Sueño, orina y ritmo cardíaco: tres pasos adelante en la sanidad","date":"2026-09-23T04:30:11.999Z","category":"Health","source":null,"link":null,"type":"digest","refs":[{"id":"1789965334441fmmtlceew","title":"Cinco dólares por noche de sueño mejoran las calificaciones de estudiantes","href":"/articles/es/cinco-dolares-por-noche-de-sueno-mejoran-las-calificaciones-de-estudiantes-1789965334441fmmtlceew.html"},{"id":"1790137627194t8vksyuta","title":"La prueba de orina GALEAS detecta el cáncer de vejiga con precisión sorprendente","href":"/articles/es/la-prueba-de-orina-galeas-detecta-el-cancer-de-vejiga-con-precision-sorprendente-1790137627194t8vksyuta.html"},{"id":"1790051398328zl0crxok4","title":"Nueva herramienta de IA detecta enfermedades cardíacas mediante ECG convencional","href":"/articles/es/nueva-herramienta-de-ia-detecta-enfermedades-cardiacas-mediante-ecg-convencional-1790051398328zl0crxok4.html"}],"meta_description":"Recompensar el sueño, detectar cáncer de vejiga mediante orina e identificar enfermedades cardíacas con inteligencia artificial: tres noticias sanitarias e","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Saltar al contenido principal</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
                         </ul>
@@ -235,9 +234,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Leer</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Temas</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Temas</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archivo</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categorías</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categorías</span></a></li>
                 </ul>
             </nav>
 
@@ -254,7 +253,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Ayuda</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Ajustes</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Ajustes</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contacto</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Comentarios</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Reembolsos</span></a></li>

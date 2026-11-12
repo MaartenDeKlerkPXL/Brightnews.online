@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20260919-environment","title":"Recuperación y crecimiento: de un zorro con muletas a ciudades más verdes","summary":"Estos días demuestran lo resiliente que puede ser la naturaleza, y cómo las ciudades mismas le echan una mano. Desde un zorro que aprende a nadar para volver a caminar, hasta cangrejos que regresan masivamente a una bahía, y desde un supermercado con huerto en la azotea hasta una avenida estadounidense que recupera su carácter verde. Cuatro historias, un mismo sentimiento: puede mejorar, y ya está sucediendo. En Nottinghamshire, el zorro Chance se recupera tras un accidente que le había paralizado las patas traseras. Gracias a la hidroterapia en una piscina para perros, acompañado por la cuidadora Chelsea, siente cada...","image":"https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Fox-gets-hydrotherapy-at-Mansfield-Canine-Centre-by-Tom-Maddick-for-SWNS.jpeg","image_alt":"Recuperación y crecimiento: de un zorro con muletas a ciudades más verdes","date":"2026-09-20T04:37:55.385Z","category":"Environment","source":null,"link":null,"type":"digest","refs":[{"id":"1789878990544agz0dwnv9","title":"El zorro Chance se recupera gracias a lecciones de natación","href":"/articles/es/el-zorro-chance-se-recupera-gracias-a-lecciones-de-natacion-1789878990544agz0dwnv9.html"},{"id":"1789879018001kzroh4o2p","title":"Los cangrejos azules de la bahía de Chesapeake se recuperan con fuerza","href":"/articles/es/los-cangrejos-azules-de-la-bahia-de-chesapeake-se-recuperan-con-fuerza-1789879018001kzroh4o2p.html"},{"id":"1789878960689vhpw1qp4x","title":"Nueva York devuelve a Park Avenue su carácter de parque verde y carril bici","href":"/articles/es/nueva-york-devuelve-a-park-avenue-su-caracter-de-parque-verde-y-carril-bici-1789878960689vhpw1qp4x.html"},{"id":"1789748188321cbyjxyyfa","title":"Supermercado REWE en Berlín tiene huerto en la azotea","href":"/articles/es/supermercado-rewe-en-berlin-tiene-huerto-en-la-azotea-1789748188321cbyjxyyfa.html"}],"meta_description":"El zorro Chance aprende a nadar, los cangrejos se recuperan y las ciudades se vuelven más verdes: las noticias positivas sobre la naturaleza de estos días ","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Saltar al contenido principal</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
                         </ul>
@@ -236,9 +235,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Leer</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Temas</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Temas</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archivo</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categorías</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categorías</span></a></li>
                 </ul>
             </nav>
 
@@ -255,7 +254,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Ayuda</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Ajustes</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Ajustes</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contacto</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Comentarios</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Reembolsos</span></a></li>

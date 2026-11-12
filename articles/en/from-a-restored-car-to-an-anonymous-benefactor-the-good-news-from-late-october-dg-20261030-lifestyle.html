@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20261030-lifestyle","title":"From a restored car to an anonymous benefactor: the good news from late October","summary":"The final days of October show that people stand by each other in many different ways. Sometimes it's a grand gesture, like a restored car. Sometimes it's a small act of kindness that happens to be noticed. And sometimes it's a tradition that grows year after year. Together, these stories paint a beautiful picture of what people can mean to each other. In Minneapolis, Navy veteran Robert Hanson received a restored Hyundai Elantra after two years without a car, built by students from Dunwoody College of Engineering [1]. Also in Incheon, South Korea, an unknown guest surprised a group of...","image":"https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/4cafc2d5-67da-40f6-a326-76e7548bf9ad.jpg","image_alt":"From a restored car to an anonymous benefactor: the good news from late October","date":"2026-10-31T04:37:13.630Z","category":"Lifestyle","source":"BrightNews","link":null,"type":"digest","refs":[{"id":"1793421296769hs16l0ker","title":"Veteran receives restored Hyundai Elantra from students","href":null},{"id":"1793383718920rpe7lsbzj","title":"Halloween skeletons raise 2 million dollars for St. Jude","href":null},{"id":"1793383483557ulc7vq97w","title":"Food banks in New York now offer pet food too","href":null},{"id":"1793382750546hpyow7okq","title":"Free tool Vibe Check teaches young men to recognize sexual boundary violations","href":null},{"id":"1793421325018m899laeda","title":"Unknown diner pays $420 lunch bill for 27 people with disabilities in Incheon","href":null},{"id":"1793384374234uamyih28z","title":"Parisian women defied trouser ban in 19th century","href":null},{"id":"17933843491953w1abzl96","title":"Botero's round figures breathe new life into classical masterpieces","href":null},{"id":"17933839909938lqbttwv4","title":"HART Rescue saves feral cats as farm cats","href":null}],"meta_description":"From a restored car and anonymous benefactor to cats with a new purpose: the positive lifestyle news from late October 2026 at a glance.","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Skip to main content</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">News</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Topics</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Topics</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archive</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">News</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Topics</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Topics</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archive</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
                         </ul>
@@ -240,9 +239,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Read</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">News</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Topics</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Topics</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archive</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categories</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categories</span></a></li>
                 </ul>
             </nav>
 
@@ -259,7 +258,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Help</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Settings</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Settings</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contact</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Refunds</span></a></li>

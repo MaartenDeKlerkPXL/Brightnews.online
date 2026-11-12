@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20260927-science","title":"Redden, bewaren en beschermen: het wetenschapsnieuws van deze week","summary":"Deze dagen laten zien hoe wetenschap en doorzettingsvermogen dingen kunnen redden die anders verloren zouden gaan. Van oude schatten tot bijen, en van vrede tot jong talent: overal duiken mensen op die iets kostbaars veilig willen stellen. Zo blijkt uit een nieuwe studie hoe archeologen in Syrië hun leven op het spel zetten om zo'n 30.000 onvervangbare stukken te redden uit het Deir ez-Zor Museum, vlak voordat ISIS de stad dreigde in te nemen [1]. De collectie bevatte stukken uit oude vindplaatsen als Halaf, Dura-Europos en Mari, en de reddingsoperatie liep via een smalle, gevaarlijke doorgang naar het vliegveld. Onder...","image":"https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Evacuation-of-art-crates-from-Deir-ez-Zor-Museum-during-Syria-war-SWNS-cropped.jpeg","image_alt":"Redden, bewaren en beschermen: het wetenschapsnieuws van deze week","date":"2026-09-28T19:29:11.242Z","category":"Science","source":null,"link":null,"type":"digest","refs":[{"id":"1790568932914excz2ptad","title":"Archeologen redden 30.000 schatten uit Deir ez-Zor Museum voor ISIS","href":"/articles/nl/archeologen-redden-30-000-schatten-uit-deir-ez-zor-museum-voor-isis-1790568932914excz2ptad.html"},{"id":"1790568906594wygath1u8","title":"Onderzoekers Vinden Geuren Die Honingbijen Weghouden Van Pesticiden","href":"/articles/nl/onderzoekers-vinden-geuren-die-honingbijen-weghouden-van-pesticiden-1790568906594wygath1u8.html"},{"id":"1790623693825gvtmjwuzh","title":"Jonge wetenschappers schitteren op EUCYS in Kiel","href":"/articles/nl/jonge-wetenschappers-schitteren-op-eucys-in-kiel-1790623693825gvtmjwuzh.html"},{"id":"17906235003386r8mn1zox","title":"Kleitablet met oudste vredesverdrag ter wereld ontdekt","href":"/articles/nl/kleitablet-met-oudste-vredesverdrag-ter-wereld-ontdekt-17906235003386r8mn1zox.html"}],"meta_description":"Van gered erfgoed in Syrië tot bijenvriendelijke geuren en jong talent in Kiel: het wetenschapsnieuws van deze dagen op een rij.","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Ga naar hoofdinhoud</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Thema's</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Thema's</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archief</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Over ons</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Thema's</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Thema's</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archief</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Over ons</span></a></li>
                         </ul>
@@ -236,9 +235,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Lezen</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Thema's</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Thema's</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archief</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categorieën</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categorieën</span></a></li>
                 </ul>
             </nav>
 
@@ -255,7 +254,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Hulp</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Instellingen</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Instellingen</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contact</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Terugbetalingen</span></a></li>

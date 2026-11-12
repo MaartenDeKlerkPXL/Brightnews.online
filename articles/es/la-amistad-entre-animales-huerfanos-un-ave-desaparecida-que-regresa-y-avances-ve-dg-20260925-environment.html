@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20260925-environment","title":"La amistad entre animales huérfanos, un ave desaparecida que regresa y avances verdes en todo el mundo","summary":"Estos días demuestran que el cuidado de los animales y la naturaleza tiene sentido, desde la sabana hasta la ciudad. Hay un hilo conductor en las noticias: donde las personas perseveran con paciencia, mediante rescate, investigación o políticas inteligentes, surge algo hermoso. Todo comienza con una historia conmovedora de Nairobi y termina con carriles para bicicletas en Edimburgo. En la Sheldrick Wildlife Trust creció un vínculo especial entre dos animales jóvenes que perdieron a sus madres. El rinoceronte negro Tytan y la cebra Notty encontraron consuelo el uno en el otro y ahora viajan juntos por el parque, hasta que...","image":"https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab6ac71383c10cebf598d90_6ab6ac6f8a54eecb452e68b4_baby-rhino-zebra-sheldrick-wildlife-trust-featured.webp","image_alt":"La amistad entre animales huérfanos, un ave desaparecida que regresa y avances verdes en todo el mundo","date":"2026-09-26T04:41:19.855Z","category":"Environment","source":null,"link":null,"type":"digest","refs":[{"id":"1790397618858z5yxsbuyb","title":"La cría de rinoceronte huérfana Tytan y la cebra Notty inseparables tras perder a sus madres","href":"/articles/es/la-cria-de-rinoceronte-huerfana-tytan-y-la-cebra-notty-inseparables-tras-perder--1790397618858z5yxsbuyb.html"},{"id":"1790397592265yflgpvt9s","title":"El chotacabras de Ghana reaparece en Costa de Marfil tras 13 años","href":"/articles/es/el-chotacabras-de-ghana-reaparece-en-costa-de-marfil-tras-13-anos-1790397592265yflgpvt9s.html"},{"id":"1790310899189q5vbeymu0","title":"Transmisión en directo muestra animales salvajes en un pozo de agua remoto en Watarrka","href":"/articles/es/transmision-en-directo-muestra-animales-salvajes-en-un-pozo-de-agua-remoto-en-wa-1790310899189q5vbeymu0.html"},{"id":"1790269178731b0lo49hxw","title":"Empresa portuguesa de corcho aísla naves espaciales","href":"/articles/es/empresa-portuguesa-de-corcho-aisla-naves-espaciales-1790269178731b0lo49hxw.html"},{"id":"1790223832101xr2olieuk","title":"Las bicicletas superan a los coches durante la hora punta en Leith Walk en Edimburgo","href":"/articles/es/las-bicicletas-superan-a-los-coches-durante-la-hora-punta-en-leith-walk-en-edimb-1790223832101xr2olieuk.html"}],"meta_description":"Animales huérfanos que forjan amistades, un ave reencontrada y más ciclistas que coches: las noticias positivas sobre naturaleza de estos días.","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Saltar al contenido principal</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
                         </ul>
@@ -237,9 +236,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Leer</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Temas</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Temas</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archivo</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categorías</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categorías</span></a></li>
                 </ul>
             </nav>
 
@@ -256,7 +255,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Ayuda</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Ajustes</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Ajustes</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contacto</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Comentarios</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Reembolsos</span></a></li>

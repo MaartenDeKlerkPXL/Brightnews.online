@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20260927-lifestyle","title":"Von Gefängniszellen bis zu Schulbänken: die guten Nachrichten dieser Tage","summary":"Diese Woche zeigt, dass gute Absichten an ganz unterschiedlichen Orten zu Ergebnissen führen: in einem Gerichtssaal, in einem Klassenzimmer und in einer Kleidungsfabrik. Von Texas bis Bristol, von der Bronx bis Ghana: Menschen unternehmen Schritte, die das Leben anderer wirklich besser machen. In Texas gewannen früher inhaftierte Frauen einen langen Kampf. Die Gruppe Lioness Justice Impacted Women's Alliance sammelte jahrelang Briefe von Gefangenen über die Hitze in texanischen Zellen. Ein Bundesrichter gab ihnen nun recht: Bis Ende 2029 muss jedes Gefängnis im Staat eine Klimaanlage bekommen. Derzeit haben noch nicht 40 Prozent der knapp 89.000 Inhaftierten ein kühles Bett, während...","image":"https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab985d54c7299bd38813ae1_2741910254-921a85b985-b-featured.webp","image_alt":"Von Gefängniszellen bis zu Schulbänken: die guten Nachrichten dieser Tage","date":"2026-09-28T19:30:19.311Z","category":"Lifestyle","source":null,"link":null,"type":"digest","refs":[{"id":"17906236600718klq45n91","title":"Frauengruppe Lioness gewinnt Rechtsstreit für Klimaanlage in texanischen Gefängnissen","href":"/articles/de/frauengruppe-lioness-gewinnt-rechtsstreit-fur-klimaanlage-in-texanischen-gefangn-17906236600718klq45n91.html"},{"id":"1790623526076r2rxyrso1","title":"18-Jähriger aus der Bronx sponsert Schulkinder in Ghana","href":"/articles/de/18-jahriger-aus-der-bronx-sponsert-schulkinder-in-ghana-1790623526076r2rxyrso1.html"},{"id":"1790623414220uasnkeihr","title":"Ethisches Modeunternehmen Yes Friends erhält Investition von Deborah Meaden","href":"/articles/de/ethisches-modeunternehmen-yes-friends-erhalt-investition-von-deborah-meaden-1790623414220uasnkeihr.html"}],"meta_description":"Von Klimaanlagen in texanischen Zellen bis zu Schulgeld in Ghana und fairer Mode aus Bristol: die guten Nachrichten dieser Tage im Überblick.","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Zum Hauptinhalt springen</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nachrichten</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Themen</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Themen</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archiv</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Über uns</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nachrichten</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Themen</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Themen</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archiv</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Über uns</span></a></li>
                         </ul>
@@ -235,9 +234,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Lesen</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Nachrichten</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Themen</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Themen</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archiv</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Kategorien</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Kategorien</span></a></li>
                 </ul>
             </nav>
 
@@ -254,7 +253,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Hilfe</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Einstellungen</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Einstellungen</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Kontakt</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Erstattungen</span></a></li>

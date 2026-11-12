@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20260926-lifestyle","title":"Boeken, een miljard dollar en tweede kansen: het goede nieuws van deze dagen","summary":"Deze dagen laten zien dat vrijgevigheid vele vormen aanneemt, van een stad die samen boeken inzamelt tot een gift die groter is dan de meeste mensen zich kunnen voorstellen. Wat de verhalen verbindt, is dat mensen investeren in de toekomst van anderen, soms met een paar boeken, soms met miljoenen dollars, en soms met een tweede kans op een vak. In Raleigh vierden fans het eerste 'Imagination Library Day of Reading', ter ere van Dolly Parton [1]. Gouverneur Josh Stein maakte er een officiële dag van, verwijzend naar haar hit '9 to 5' en haar steun aan orkaanslachtoffers en jonge...","image":"https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6ab6ce4acfea89c86c3e6d7b_dolly-parton-9-to-5-day-how-celebrate-featured.webp","image_alt":"Boeken, een miljard dollar en tweede kansen: het goede nieuws van deze dagen","date":"2026-09-27T04:14:25.220Z","category":"Lifestyle","source":null,"link":null,"type":"digest","refs":[{"id":"1790435677680ci6xsstfv","title":"Fans van Dolly Parton vieren eerste 'Imagination Library Day of Reading'","href":"/articles/nl/fans-van-dolly-parton-vieren-eerste-imagination-library-day-of-reading-1790435677680ci6xsstfv.html"},{"id":"1790482412739w2tqbovj0","title":"Nike-oprichter Phil Knight schenkt miljard dollar aan Universiteit van Oregon","href":"/articles/nl/nike-oprichter-phil-knight-schenkt-miljard-dollar-aan-universiteit-van-oregon-1790482412739w2tqbovj0.html"},{"id":"1790355679646pe6dardmc","title":"Nonprofit Rise Up leidt ex-gedetineerden op tot machinebankwerker","href":"/articles/nl/nonprofit-rise-up-leidt-ex-gedetineerden-op-tot-machinebankwerker-1790355679646pe6dardmc.html"}],"meta_description":"Boekenactie voor Dolly Parton, een miljardengift aan Oregon en ex-gedetineerden die een vak leren: het goede nieuws van deze dagen op een rij.","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Ga naar hoofdinhoud</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Thema's</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Thema's</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archief</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Over ons</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Thema's</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Thema's</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archief</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Over ons</span></a></li>
                         </ul>
@@ -235,9 +234,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Lezen</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Thema's</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Thema's</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archief</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categorieën</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categorieën</span></a></li>
                 </ul>
             </nav>
 
@@ -254,7 +253,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Hulp</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Instellingen</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Instellingen</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contact</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Terugbetalingen</span></a></li>

@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20260920-science","title":"Un gato nuevo, arte antiguo y tesoros rescatados: la ciencia mira hacia atrás y hacia adelante","summary":"En los últimos días, la ciencia demuestra cómo el pasado y el presente se tocan mutuamente. Una especie de gato desconocida aparece en Bolivia, un arte de marfil ancestral resulta haber sido elaborado con más cuidado del que se pensaba, y en Alaska los arqueólogos rescatan tesoros frágiles justo a tiempo. Tres historias muy diferentes, pero todas ellas muestran cuánto hay aún por descubrir y preservar. Comencemos con el gato. En Bolivia se ha identificado por primera vez en más de cien años una nueva especie felina: Leopardus tilcayo [1]. La historia comienza ya en 2016, cuando alguien llevó un...","image":"https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/imrs-e1789720878162.jpg","image_alt":"Un gato nuevo, arte antiguo y tesoros rescatados: la ciencia mira hacia atrás y hacia adelante","date":"2026-09-21T18:13:14.426Z","category":"Science","source":null,"link":null,"type":"digest","refs":[{"id":"1789791470039iv33h3zat","title":"Nueva especie felina Tilcayo descubierta en Bolivia","href":"/articles/es/nueva-especie-felina-tilcayo-descubierta-en-bolivia-1789791470039iv33h3zat.html"},{"id":"1789965262786z6vu42lzy","title":"Los humanos primitivos utilizaban patrones de crecimiento del colmillo de mamut para un arte único","href":"/articles/es/los-humanos-primitivos-utilizaban-patrones-de-crecimiento-del-colmillo-de-mamut--1789965262786z6vu42lzy.html"},{"id":"1789832772703vb1b4cr0s","title":"Arqueólogos rescatan hallazgos Yup'ik milenarios en Alaska","href":"/articles/es/arqueologos-rescatan-hallazgos-yup-ik-milenarios-en-alaska-1789832772703vb1b4cr0s.html"}],"meta_description":"De una nueva especie felina en Bolivia a tesoros Yup'ik rescatados en Alaska: las noticias científicas positivas de estos días en BrightNews.","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Saltar al contenido principal</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
                         </ul>
@@ -235,9 +234,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Leer</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Temas</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Temas</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archivo</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categorías</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categorías</span></a></li>
                 </ul>
             </nav>
 
@@ -254,7 +253,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Ayuda</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Ajustes</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Ajustes</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contacto</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Comentarios</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Reembolsos</span></a></li>

@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"1788452358039hlgfy6s35","title":"Wereldwijde vooruitgang in leren","summary":"De wereldbevolking heeft grote stappen gezet in geletterdheid: van 1 op de 10 die kon lezen en schrijven in 1820 naar slechts 1 op de 10 die nog analfabeet is. Het aantal kinderen dat niet naar school gaat, daalde van 390 miljoen in 2000 naar 244 miljoen in 2023, ondanks bevolkingsgroei. Sinds 2020 krijgen 466 miljoen kinderen wereldwijd schoolmaaltijden, een...","image":"https://cdn1-2010d.kxcdn.com/wp-content/uploads/2026/08/Schulkinder-Haiti.jpg","image_alt":"Kinderen in een klaslokaal met boeken en schoolspullen, symboliserend wereldwijde vooruitgang in onderwijs en geletterdheid.","date":"2026-09-03T16:19:19.519Z","category":null,"source":"Squirrel-News.net","link":"https://squirrel-news.net/news/special-edition-on-global-progress/","type":null,"refs":[],"meta_description":"Ontdek hoe de wereldwijde geletterdheid en schooltoegang sterk zijn verbeterd in de afgelopen eeuwen en decennia.","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Ga naar hoofdinhoud</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Thema's</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Thema's</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archief</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Over ons</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Thema's</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Thema's</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archief</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Over ons</span></a></li>
                         </ul>
@@ -227,9 +226,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Lezen</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Thema's</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Thema's</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archief</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categorieën</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categorieën</span></a></li>
                 </ul>
             </nav>
 
@@ -246,7 +245,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Hulp</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Instellingen</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Instellingen</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contact</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Terugbetalingen</span></a></li>

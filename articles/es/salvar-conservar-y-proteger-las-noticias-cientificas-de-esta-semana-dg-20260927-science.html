@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20260927-science","title":"Salvar, conservar y proteger: las noticias científicas de esta semana","summary":"Estos días demuestran cómo la ciencia y la perseverancia pueden salvar cosas que de otro modo se perderían. Desde tesoros antiguos hasta abejas, y desde la paz hasta el talento joven: por todas partes aparecen personas que quieren poner a salvo algo valioso. Así lo demuestra un nuevo estudio sobre cómo arqueólogos en Siria arriesgaron sus vidas para rescatar unos 30.000 piezas insustituibles del Museo de Deir ez-Zor, justo antes de que ISIS amenazara con tomar la ciudad [1]. La colección contenía piezas de antiguos yacimientos como Halaf, Dura-Europos y Mari, y la operación de rescate se realizó a través...","image":"https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Evacuation-of-art-crates-from-Deir-ez-Zor-Museum-during-Syria-war-SWNS-cropped.jpeg","image_alt":"Salvar, conservar y proteger: las noticias científicas de esta semana","date":"2026-09-28T19:29:11.242Z","category":"Science","source":null,"link":null,"type":"digest","refs":[{"id":"1790568932914excz2ptad","title":"Arqueólogos rescatan 30.000 tesoros del Museo de Deir ez-Zor antes de ISIS","href":"/articles/es/arqueologos-rescatan-30-000-tesoros-del-museo-de-deir-ez-zor-antes-de-isis-1790568932914excz2ptad.html"},{"id":"1790568906594wygath1u8","title":"Investigadores encuentran aromas que alejan a las abejas melíferas de los pesticidas","href":"/articles/es/investigadores-encuentran-aromas-que-alejan-a-las-abejas-meliferas-de-los-pestic-1790568906594wygath1u8.html"},{"id":"1790623693825gvtmjwuzh","title":"Jóvenes científicos brillan en EUCYS en Kiel","href":"/articles/es/jovenes-cientificos-brillan-en-eucys-en-kiel-1790623693825gvtmjwuzh.html"},{"id":"17906235003386r8mn1zox","title":"Descubren tablilla de arcilla con el tratado de paz más antiguo del mundo","href":"/articles/es/descubren-tablilla-de-arcilla-con-el-tratado-de-paz-mas-antiguo-del-mundo-17906235003386r8mn1zox.html"}],"meta_description":"Del patrimonio rescatado en Siria hasta aromas seguros para abejas y talento joven en Kiel: las noticias científicas de estos días en resumen.","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Saltar al contenido principal</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
                         </ul>
@@ -236,9 +235,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Leer</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Temas</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Temas</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archivo</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categorías</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categorías</span></a></li>
                 </ul>
             </nav>
 
@@ -255,7 +254,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Ayuda</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Ajustes</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Ajustes</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contacto</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Comentarios</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Reembolsos</span></a></li>

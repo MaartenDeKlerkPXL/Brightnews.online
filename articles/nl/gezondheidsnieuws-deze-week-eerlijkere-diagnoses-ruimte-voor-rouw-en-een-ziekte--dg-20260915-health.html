@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20260915-health","title":"Gezondheidsnieuws deze week: eerlijkere diagnoses, ruimte voor rouw en een ziekte die verdwijnt","summary":"De afgelopen dagen laat de gezondheidszorg zien dat oude gewoontes kunnen veranderen als daar goede reden voor is. Artsen passen richtlijnen aan, scholen zoeken nieuwe manieren om kinderen te steunen, en een hele regio wordt vrij van een ziekte die blindheid veroorzaakt. Drie berichten die laten zien dat zorg eerlijker en toegankelijker kan worden, voor wie er het meest bij gebaat is. Zo hebben de vier grootste hart- en vaatorganisaties ter wereld voor het eerst samen een universele definitie van een hartaanval vastgesteld [1]. Drie hartaanval-typen die tot tien keer vaker bij vrouwen voorkomen, krijgen nu een hogere status in...","image":"https://www.optimistdaily.com/wp-content/uploads/Depositphotos_212439798_L-1024x682.jpg","image_alt":"Gezondheidsnieuws deze week: eerlijkere diagnoses, ruimte voor rouw en een ziekte die verdwijnt","date":"2026-09-16T19:28:43.721Z","category":"Health","source":null,"link":null,"type":"digest","refs":[{"id":"1789586309732q90vwcvuu","title":"Nieuwe hartaanval-richtlijnen corrigeren onderdiagnose bij vrouwen","href":"/articles/nl/nieuwe-hartaanval-richtlijnen-corrigeren-onderdiagnose-bij-vrouwen-1789586309732q90vwcvuu.html"},{"id":"1789533361143slogkd3i2","title":"Creatieve Hulp Bij Verdriet Op School","href":"/articles/nl/creatieve-hulp-bij-verdriet-op-school-1789533361143slogkd3i2.html"},{"id":"1789409040112vqs98u8v1","title":"Heel Zuidoost-Azië Nu Vrij Van Trachoom","href":"/articles/nl/heel-zuidoost-azie-nu-vrij-van-trachoom-1789409040112vqs98u8v1.html"}],"meta_description":"Eerlijkere hartdiagnoses voor vrouwen, troost voor rouwende kinderen en een trachoomvrij Zuidoost-Azië: het gezondheidsnieuws van deze dagen.","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Ga naar hoofdinhoud</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Thema's</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Thema's</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archief</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Over ons</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Thema's</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Thema's</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archief</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Over ons</span></a></li>
                         </ul>
@@ -235,9 +234,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Lezen</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Thema's</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Thema's</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archief</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categorieën</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categorieën</span></a></li>
                 </ul>
             </nav>
 
@@ -254,7 +253,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Hulp</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Instellingen</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Instellingen</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contact</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Terugbetalingen</span></a></li>

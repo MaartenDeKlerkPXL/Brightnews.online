@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20260916-lifestyle","title":"From bears to diamonds: the good news of this week","summary":"These days show how varied positive news can be. From an unexpected encounter in nature to a diamond that accidentally turns up in an apple, and from buildings that hide among the trees to a day when millions of pounds are raised for good causes. Together, they paint a picture of people experiencing, sharing or giving back something special. A man came face to face with a grizzly bear and her cub while hiking in Glacier National Park [1]. The bear retreated, but the moment stirred up memories for the man of a difficult period in his teenage years. After...","image":"https://www.adventure-journal.com/wp-content/uploads/2026/08/GNAM_STEVEN-6123-684x1024.jpg","image_alt":"From bears to diamonds: the good news of this week","date":"2026-09-17T04:36:52.686Z","category":"Lifestyle","source":null,"link":null,"type":"digest","refs":[{"id":"1789587852097o5i3h66hb","title":"Grizzly bear encounter brings man back to gang past","href":"/articles/en/grizzly-bear-encounter-brings-man-back-to-gang-past-1789587852097o5i3h66hb.html"},{"id":"1789586786470nofcj4hhu","title":"Ten buildings that merge with nature","href":"/articles/en/ten-buildings-that-merge-with-nature-1789586786470nofcj4hhu.html"},{"id":"17895861361353xl0joxxi","title":"Adapted sailing opens the sea for people with disabilities","href":"/articles/en/adapted-sailing-opens-the-sea-for-people-with-disabilities-17895861361353xl0joxxi.html"},{"id":"1789585955470athzntnbk","title":"Cleaner bites into apple and discovers stolen Grand Condé diamond","href":"/articles/en/cleaner-bites-into-apple-and-discovers-stolen-grand-conde-diamond-1789585955470athzntnbk.html"},{"id":"1789585589360an1gfz1cl","title":"BGC Group raises £12 million for charity on Charity Day","href":"/articles/en/bgc-group-raises-12-million-for-charity-on-charity-day-1789585589360an1gfz1cl.html"}],"meta_description":"From a grizzly bear to a hidden diamond: the positive lifestyle news of September 16, 2026 at a glance.","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Skip to main content</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">News</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Topics</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Topics</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archive</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">News</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Topics</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Topics</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archive</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
                         </ul>
@@ -237,9 +236,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Read</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">News</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Topics</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Topics</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archive</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categories</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categories</span></a></li>
                 </ul>
             </nav>
 
@@ -256,7 +255,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Help</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Settings</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Settings</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contact</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Refunds</span></a></li>

@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20260930-lifestyle","title":"Atención, recuperación y regreso: las buenas noticias de estos días","summary":"Esta semana las buenas noticias en Lifestyle giran principalmente en torno a la atención: hacia los estudiantes, hacia los animales y las personas que necesitan recuperarse, hacia el arte que finalmente regresa a casa, y hacia los líderes que aprenden a escuchar mejor. Cuatro historias diferentes, pero siempre el mismo núcleo: quien mira y escucha bien, ve lo que es necesario. En Rhode Island, las clases de música tienen un efecto sorprendente en el absentismo escolar. Una investigación de Quadrant Research muestra que de los estudiantes que recibieron clases de música durante cuatro años, el 25,4 por ciento tenía ausencias...","image":"https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abd2af75ca03452a19958cd_rhode-island-study-links-sustained-arts-education-01.jpg","image_alt":"Atención, recuperación y regreso: las buenas noticias de estos días","date":"2026-10-01T18:17:11.468Z","category":"Lifestyle","source":null,"link":null,"type":"digest","refs":[{"id":"1790829805595tcerjpnfc","title":"La educación musical se asocia con menos absentismo escolar en Rhode Island","href":"/articles/es/la-educacion-musical-se-asocia-con-menos-absentismo-escolar-en-rhode-island-1790829805595tcerjpnfc.html"},{"id":"1790878357707kh42aq9k0","title":"Santuario de primates en Mississippi ayuda a veteranos y animales rescatados a sanar","href":"/articles/es/santuario-de-primates-en-mississippi-ayuda-a-veteranos-y-animales-rescatados-a-s-1790878357707kh42aq9k0.html"},{"id":"1790878309480irxn5zl52","title":"Antigüedades griegas robadas regresan a Grecia tras 5.000 años","href":"/articles/es/antiguedades-griegas-robadas-regresan-a-grecia-tras-5-000-anos-1790878309480irxn5zl52.html"},{"id":"17908782525302uz6mdrsj","title":"El innovador social Ken Banks: escuchar hace mejores líderes","href":"/articles/es/el-innovador-social-ken-banks-escuchar-hace-mejores-lideres-17908782525302uz6mdrsj.html"}],"meta_description":"Clases de música contra el absentismo, un santuario de primates que ayuda a sanar, antigüedades griegas que regresan a casa y el poder de escuchar: las not","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Saltar al contenido principal</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
                         </ul>
@@ -236,9 +235,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Leer</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Temas</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Temas</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archivo</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categorías</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categorías</span></a></li>
                 </ul>
             </nav>
 
@@ -255,7 +254,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Ayuda</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Ajustes</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Ajustes</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contacto</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Comentarios</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Reembolsos</span></a></li>

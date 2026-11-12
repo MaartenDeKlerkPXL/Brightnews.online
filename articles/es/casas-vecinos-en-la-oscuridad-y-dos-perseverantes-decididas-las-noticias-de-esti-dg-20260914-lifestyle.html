@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20260914-lifestyle","title":"Casas, vecinos en la oscuridad y dos perseverantes decididas: las noticias de estilo de vida de estos días","summary":"Estos días demuestran que cuidarse mutuamente y perseverar a menudo van de la mano. Desde un hombre sin hogar que finalmente obtiene un lugar fijo, hasta un motociclista y un caminante que amplían límites, y un hotel que dejó alojar a un peluche como huésped VIP: las noticias de estilo de vida de los últimos días giran en torno a personas que perseveran en algo o ayudan a otros a hacerlo. En Londres, Michael, quien quedó sin hogar en 2022 en Plymouth, obtuvo su propio apartamento a través de la organización The Connection bajo el programa Solo Homes. Su trabajadora...","image":"https://www.positive.news/wp-content/uploads/2026/09/insta_photos.jpg","image_alt":"Casas, vecinos en la oscuridad y dos perseverantes decididas: las noticias de estilo de vida de estos días","date":"2026-09-15T04:39:56.638Z","category":"Lifestyle","source":null,"link":null,"type":"digest","refs":[{"id":"17894468770162a9ki2qkf","title":"Primero una Casa, Luego la Recuperación","href":"/articles/es/primero-una-casa-luego-la-recuperacion-17894468770162a9ki2qkf.html"},{"id":"1789409245357jsvwu6hgj","title":"Seis Horas En La Oscuridad: Extraños Se Convirtieron En Vecinos","href":"/articles/es/seis-horas-en-la-oscuridad-extranos-se-convirtieron-en-vecinos-1789409245357jsvwu6hgj.html"},{"id":"1789409849831wxbubrpho","title":"Motorista bate cuatro récords por caridad","href":"/articles/es/motorista-bate-cuatro-records-por-caridad-1789409849831wxbubrpho.html"},{"id":"1789409470504s9irbn7j7","title":"Grey Beard de 91 años completa la Appalachian Trail","href":"/articles/es/grey-beard-de-91-anos-completa-la-appalachian-trail-1789409470504s9irbn7j7.html"},{"id":"1789409347343xq0nmhfdb","title":"Hotel Regala a Rosie, el Peluche Perdido, unas Vacaciones VIP","href":"/articles/es/hotel-regala-a-rosie-el-peluche-perdido-unas-vacaciones-vip-1789409347343xq0nmhfdb.html"}],"meta_description":"De casas fijas a viajes récord y un peluche de vacaciones: las noticias positivas de estilo de vida de los últimos días en BrightNews.","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Saltar al contenido principal</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
                         </ul>
@@ -237,9 +236,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Leer</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Temas</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Temas</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archivo</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categorías</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categorías</span></a></li>
                 </ul>
             </nav>
 
@@ -256,7 +255,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Ayuda</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Ajustes</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Ajustes</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contacto</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Comentarios</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Reembolsos</span></a></li>

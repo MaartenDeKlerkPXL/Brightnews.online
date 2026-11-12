@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20261030-lifestyle","title":"De un auto restaurado a un benefactor anónimo: las buenas noticias de finales de octubre","summary":"Los últimos días de octubre demuestran que las personas se apoyan mutuamente de formas muy diversas. A veces se trata de un gesto importante, como un auto restaurado. A veces de una pequeña amabilidad que casualmente se nota. Y a veces de una tradición que crece año tras año. En conjunto, estas historias ofrecen un hermoso panorama de lo que las personas pueden significar las unas para las otras. En Minneapolis, el veterano de la marina Robert Hanson recibió un Hyundai Elantra restaurado después de dos años sin auto, construido por estudiantes del Dunwoody College of Engineering [1]. También en...","image":"https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/4cafc2d5-67da-40f6-a326-76e7548bf9ad.jpg","image_alt":"De un auto restaurado a un benefactor anónimo: las buenas noticias de finales de octubre","date":"2026-10-31T04:37:13.630Z","category":"Lifestyle","source":"BrightNews","link":null,"type":"digest","refs":[{"id":"1793421296769hs16l0ker","title":"Veterano recibe Hyundai Elantra restaurado de estudiantes","href":null},{"id":"1793383718920rpe7lsbzj","title":"Esqueletos de Halloween recaudan 2 millones de dólares para St. Jude","href":null},{"id":"1793383483557ulc7vq97w","title":"Los bancos de alimentos de Nueva York ahora también ofrecen comida para mascotas","href":null},{"id":"1793382750546hpyow7okq","title":"Herramienta gratuita Vibe Check enseña a jóvenes hombres a reconocer conducta sexual abusiva","href":null},{"id":"1793421325018m899laeda","title":"Un desconocido paga la cuenta de almuerzo de $420 para 27 personas con discapacidad en Incheon","href":null},{"id":"1793384374234uamyih28z","title":"Las mujeres parisinas desafiaron la prohibición de pantalones en el siglo XIX","href":null},{"id":"17933843491953w1abzl96","title":"Las figuras redondas de Botero dan nueva vida a obras maestras clásicas","href":null},{"id":"17933839909938lqbttwv4","title":"HART Rescue rescata gatos salvajes como gatos de granja","href":null}],"meta_description":"De un auto restaurado y un benefactor anónimo a gatos con un nuevo propósito: las noticias positivas de estilo de vida de finales de octubre de 2026 resumi","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Saltar al contenido principal</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Temas</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Temas</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archivo</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Sobre nosotros</span></a></li>
                         </ul>
@@ -240,9 +239,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Leer</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Noticias</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Temas</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Temas</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archivo</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categorías</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categorías</span></a></li>
                 </ul>
             </nav>
 
@@ -259,7 +258,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Ayuda</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Ajustes</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Ajustes</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contacto</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Comentarios</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Reembolsos</span></a></li>

@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20261029-science","title":"La collaboration comme fil rouge : l'actualité scientifique de fin octobre","summary":"Ces derniers jours, la science montre surtout une chose : la collaboration fonctionne. D'un symposium sur la diplomatie scientifique à de nouvelles découvertes dans les rivières et aux progrès de l'astronautique, partout il apparaît que les gens et les pays avancent ensemble. Cinq messages montrent à quel point cette collaboration peut être variée. Le 28 octobre, des scientifiques, des diplomates et des représentants de pays se sont réunis à SESAME en Jordanie. Lors de ce symposium, ils ont discuté de la façon dont la recherche et la technologie peuvent relier les pays les uns aux autres, même lorsque les relations...","image":"/assets/fallback/science-1.jpg","image_alt":"La collaboration comme fil rouge : l'actualité scientifique de fin octobre","date":"2026-10-30T18:24:08.429Z","category":"Science","source":"BrightNews","link":null,"type":"digest","refs":[{"id":"1793384161608kh30teuyg","title":"Symposium en Jordanie sur la diplomatie scientifique","href":null},{"id":"1793383862814f9mcdvll4","title":"Cinq nouvelles espèces de moules découvertes en Amérique du Nord","href":null},{"id":"1793384270563pkoj3k0wy","title":"Une mission NASA SpaceX livre des expériences et des panneaux solaires à l'ISS","href":null},{"id":"1793384249985xjpo9zpyd","title":"NASA invite les entreprises à développer la prochaine génération de stations spatiales","href":null},{"id":"1793384223770wl0xcjzrx","title":"Le satellite Sentinel-3C envoie ses premières images nettes et données climatiques","href":null}],"meta_description":"De la diplomatie scientifique en Jordanie aux nouvelles espèces de moules et aux actualités spatiales : l'actualité scientifique de fin octobre 2026 en rés","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Aller au contenu principal</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Actualités</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Thèmes</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Thèmes</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archives</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">À propos</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Actualités</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Thèmes</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Thèmes</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archives</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">À propos</span></a></li>
                         </ul>
@@ -237,9 +236,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Lire</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Actualités</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Thèmes</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Thèmes</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archives</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Catégories</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Catégories</span></a></li>
                 </ul>
             </nav>
 
@@ -256,7 +255,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Aide</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Réglages</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Réglages</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contact</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Avis</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Remboursements</span></a></li>

@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20260918-environment","title":"Green streets, rescued elephants and cleaner fabrics: the week's good news","summary":"These days show that progress is happening in very different places: in a new neighborhood, on the savanna, in a factory hall and even in an orchard. Each time it's about people coming up with ideas that benefit nature, without making people's lives worse. In Toronto, this idea is taking literal form. The Ookwemin Minising neighborhood is replacing streets with parks and squares, with Centre Commons as its centerpiece: an 800-meter-long car-free route with 400 trees [1]. The side streets remain accessible to traffic, but are primarily designed to capture rainwater and reduce heat. By the early 2030s, some 21,000...","image":"https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6aad79c22cbab444028063e1_6aad79c1ea4980ddc604f229_toronto-car-free-neighborhood-canada-ookwemin-minising-featured.webp","image_alt":"Green streets, rescued elephants and cleaner fabrics: the week's good news","date":"2026-09-19T04:19:36.001Z","category":"Environment","source":null,"link":null,"type":"digest","refs":[{"id":"1789791521381pbrbcl1ls","title":"Toronto builds Ookwemin Minising neighbourhood with Canada's longest car-free street","href":"/articles/en/toronto-builds-ookwemin-minising-neighbourhood-with-canada-s-longest-car-free-st-1789791521381pbrbcl1ls.html"},{"id":"1789791496249m76kxgprk","title":"Rangers rescue 90-kilogram baby elephant from water trough","href":"/articles/en/rangers-rescue-90-kilogram-baby-elephant-from-water-trough-1789791496249m76kxgprk.html"},{"id":"1789791445109brgtr24rs","title":"EverDye dyes textiles with static electricity, no water needed","href":"/articles/en/everdye-dyes-textiles-with-static-electricity-no-water-needed-1789791445109brgtr24rs.html"},{"id":"1789748270317253ol1xnl","title":"Gene editing aims to save Florida's orange trees from citrus greening","href":"/articles/en/gene-editing-aims-to-save-florida-s-orange-trees-from-citrus-greening-1789748270317253ol1xnl.html"},{"id":"1789748322371e4xhx0z9a","title":"The Book of Birds wins Wainwright Prize 2026","href":"/articles/en/the-book-of-birds-wins-wainwright-prize-2026-1789748322371e4xhx0z9a.html"}],"meta_description":"New car-free neighborhood, rescued elephant, clean textile dye and gene rescue for orange trees: this week's positive environmental news.","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Skip to main content</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">News</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Topics</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Topics</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archive</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">News</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Topics</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Topics</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archive</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">About us</span></a></li>
                         </ul>
@@ -237,9 +236,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Read</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">News</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Topics</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Topics</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archive</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Categories</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categories</span></a></li>
                 </ul>
             </nav>
 
@@ -256,7 +255,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Help</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Settings</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Settings</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Contact</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Refunds</span></a></li>

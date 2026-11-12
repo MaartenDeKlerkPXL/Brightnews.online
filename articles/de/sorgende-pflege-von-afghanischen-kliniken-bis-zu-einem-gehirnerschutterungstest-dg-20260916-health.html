@@ -56,10 +56,9 @@
     <script type="application/json" id="artikel-gegevens">{"id":"dg-20260916-health","title":"Sorgende Pflege: Von afghanischen Kliniken bis zu einem Gehirnerschütterungstest","summary":"In diesen Tagen fällt auf, wie oft gute Pflege davon abhängt, zur richtigen Zeit aufmerksam zu sein. Ob es um eine Entbindung in einem abgelegenen Dorf geht, die Behandlung einer Mutter nach einer schwierigen Geburt oder einen schnellen Test bei jungen Sportlern: überall zeigt sich, dass rechtzeitiges Handeln Leben retten kann. Die drei Meldungen der vergangenen Tage zeigen, wie unterschiedlich diese Pflege aussehen kann und wie Menschen überall auf der Welt den Unterschied machen. In Afghanistan, einem der gefährlichsten Länder, um Mutter zu werden, bieten sogenannte family health houses Hilfe in Gegenden, wo es sonst nichts gibt. Mehr als 450...","image":"https://reasonstobecheerful.world/wp-content/uploads/2026/09/1000082074.jpg-1-scaled.jpeg","image_alt":"Sorgende Pflege: Von afghanischen Kliniken bis zu einem Gehirnerschütterungstest","date":"2026-09-17T16:50:20.800Z","category":"Health","source":null,"link":null,"type":"digest","refs":[{"id":"178958809918291v7k5ka4","title":"Afghanische family health houses retten Mütter und Babys","href":"/articles/de/afghanische-family-health-houses-retten-mutter-und-babys-178958809918291v7k5ka4.html"},{"id":"1789587795217koeu9678p","title":"Tatyana Ali setzt sich für schwarze und indigene Müttergesundheit ein","href":"/articles/de/tatyana-ali-setzt-sich-fur-schwarze-und-indigene-muttergesundheit-ein-1789587795217koeu9678p.html"},{"id":"178966363559407hk5irik","title":"Harvard-Studenten gewinnen Dyson Award mit Gehirnerschütterungstest","href":"/articles/de/harvard-studenten-gewinnen-dyson-award-mit-gehirnerschutterungstest-178966363559407hk5irik.html"}],"meta_description":"Von Hebammen in Afghanistan bis zu einem Gehirnerschütterungstest von Harvard-Studentinnen: die positiven Gesundheitsnachrichten der vergangenen Tage im Üb","ingekort":true}</script>
 </head>
 <body data-sectie="nieuws">
-<!-- Sinds 2026-11-18 staan de links op de echte adressen. Is een pagina
-     nog niet gebouwd (Thema's, Categorieën), dan staat de link er zonder
-     href: zichtbaar zoals in Figma, maar niet klikbaar en niet in de
-     tabvolgorde. -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
+     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
+     en themapagina's horen bij die sectie (data-sectie="themas"). -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Zum Hauptinhalt springen</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -75,7 +74,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nachrichten</span></a></li>
-                <li><a class="nav-link"><span data-i18n="schil_themas">Themen</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Themen</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archiv</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Über uns</span></a></li>
             </ul>
@@ -114,7 +113,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nachrichten</span></a></li>
-                            <li><a class="menu-link"><span data-i18n="schil_themas">Themen</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Themen</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archiv</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Über uns</span></a></li>
                         </ul>
@@ -235,9 +234,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Lesen</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Nachrichten</span></a></li>
-                    <li><a><span data-i18n="schil_themas">Themen</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Themen</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archiv</span></a></li>
-                    <li><a><span data-i18n="schil_categorieen">Kategorien</span></a></li>
+                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Kategorien</span></a></li>
                 </ul>
             </nav>
 
@@ -254,7 +253,7 @@
             <nav class="footer-kolom" aria-labelledby="footer-hulp">
                 <h2 class="footer-kolom__titel" id="footer-hulp" data-i18n="schil_hulp">Hilfe</h2>
                 <ul>
-                    <li><a><span data-i18n="schil_instellingen">Einstellungen</span></a></li>
+                    <li><button class="footer-knop" type="button" data-open-instellingen><span data-i18n="schil_instellingen">Einstellungen</span></button></li>
                     <li><a href="/contact.html"><span data-i18n="schil_contact">Kontakt</span></a></li>
                     <li><a href="/feedback.html"><span data-i18n="schil_feedback">Feedback</span></a></li>
                     <li><a href="/refunds.html"><span data-i18n="schil_terugbetalingen">Erstattungen</span></a></li>
