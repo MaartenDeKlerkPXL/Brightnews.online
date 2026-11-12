@@ -20,7 +20,7 @@
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
-const { leesSchilV5, vertaalSchil } = require('./schil');
+const { leesSchilV5, vertaalSchil, CSP_V5 } = require('./schil');
 
 const SITE_URL = 'https://brightnews.online';
 const TALEN = ['nl', 'en', 'de', 'fr', 'es'];
@@ -389,7 +389,7 @@ ${refs.map(ref => {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="Content-Security-Policy" content="${CSP_V5}">
     <!-- Een grote beeldkaart in Google Discover mag (punt 51). -->
     <meta name="robots" content="max-image-preview:large">
     <title>${escapeHtml(artikel.title)} | BrightNews</title>

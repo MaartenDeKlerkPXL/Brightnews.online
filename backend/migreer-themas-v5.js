@@ -44,9 +44,10 @@ function leesV5(html) {
 
 // Een oude /?id=-link naar de statische pagina, als het manifest die kent.
 function beterAdres(href, lang, artikelManifest) {
-    const id = href.match(/^\/(?:\?id=|artikel\.html\?id=)([^&#]+)$/)?.[1];
-    const slug = id && artikelManifest.articles?.[decodeURIComponent(id)]?.slugs?.[lang];
-    return slug ? `/articles/${lang}/${slug}-${decodeURIComponent(id)}.html` : href;
+    let id = href.match(/^\/(?:\?id=|artikel\.html\?id=)([^&#]+)$/)?.[1];
+    try { id = id && decodeURIComponent(id); } catch { return href; }
+    const slug = id && artikelManifest.articles?.[id]?.slugs?.[lang];
+    return slug ? `/articles/${lang}/${slug}-${id}.html` : href;
 }
 
 function main() {

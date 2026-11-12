@@ -382,8 +382,7 @@
         return fragment;
     }
 
-    // De zes Topic links (homepage, 404, foutstaat). De categoriepagina's
-    // bestaan in v5 nog niet: zonder adres.
+    // De zes Topic links (homepage, 404, foutstaat), naar de categoriepagina's.
     function onderwerpLinks(lijst) {
         lijst.replaceChildren();
         for (const [cat, info] of Object.entries(CATEGORIEEN)) {

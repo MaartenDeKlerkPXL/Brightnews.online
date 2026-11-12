@@ -1,6 +1,7 @@
 // Bump deze versie alleen als dit bestand of de ASSETS-lijst verandert. Sinds
 // v40 haalt de worker CSS en JS eerst van het netwerk (zie fetch hieronder),
-// dus een wijziging aan een stylesheet of script is zonder bump te zien.
+// dus een wijziging is zonder bump te zien, binnen de HTTP-cache van GitHub
+// Pages (max-age=600: tot tien minuten na een deploy).
 const CACHE_NAME = 'brightnews-v40'; // v40 (2026-11-12): precache naar de v5-bestanden; alles netwerk-eerst, de cache is alleen nog offline terugval. v39: overstap naar redesign v5. Oudere versies: zie git log van sw.js.
 // Wat de v5-home nodig heeft om offline te openen. Een bestand dat ontbreekt,
 // blokkeert de installatie niet (zie install).
@@ -74,7 +75,7 @@ self.addEventListener('fetch', (event) => {
                     // onbegrensd groeien (duizenden entries).
                     if (response.ok && !url.search) {
                         const kopie = response.clone();
-                        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, kopie));
+                        event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.put(event.request, kopie)));
                     }
                     return response;
                 })
@@ -83,7 +84,18 @@ self.addEventListener('fetch', (event) => {
         return;
     }
 
+    // De bestanden uit ASSETS ververst de worker meteen, zodat de offline-
+    // terugval bij de HTML van de laatste keer past.
+    const isAsset = ASSETS.includes(url.pathname) && !url.search;
     event.respondWith(
-        fetch(event.request).catch(() => caches.match(event.request).then((r) => r || Response.error()))
+        fetch(event.request)
+            .then((response) => {
+                if (isAsset && response.ok) {
+                    const kopie = response.clone();
+                    event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.put(url.pathname, kopie)));
+                }
+                return response;
+            })
+            .catch(() => caches.match(event.request).then((r) => r || Response.error()))
     );
 });

@@ -77,9 +77,11 @@ jobs:
       # nieuws-update niet tegenhouden.
       - name: 🗄️ Archief in het actuele sjabloon
         continue-on-error: true
-        run: |
-          node backend/migreer-archief-v5.js
-          node backend/migreer-themas-v5.js
+        run: node backend/migreer-archief-v5.js
+
+      - name: 🌿 Themapagina's in het actuele sjabloon
+        continue-on-error: true
+        run: node backend/migreer-themas-v5.js
 
       - name: 📄 Statische artikelpagina's genereren
         run: node backend/generate-articles.js

@@ -173,11 +173,17 @@
         });
     }
 
+    // Pagina met een eigen adres per taal (data-alt-* op <body>): die staat
+    // al in haar eigen taal, ongeacht de opgeslagen keuze.
+    function heeftVarianten() {
+        return Object.keys(document.body.dataset).some(k => /^alt[A-Z][a-z]$/.test(k));
+    }
+
     function zetBeginstand(groep) {
         const soort = groep.dataset.instelling;
         let waarde;
         if (soort === 'thema') waarde = lees(THEMA_SLEUTEL) || 'systeem';
-        if (soort === 'taal') waarde = lees(TAAL_SLEUTEL) || document.documentElement.lang || 'nl';
+        if (soort === 'taal') waarde = (heeftVarianten() ? document.documentElement.lang : lees(TAAL_SLEUTEL)) || document.documentElement.lang || 'nl';
         const optie = groep.querySelector(`[data-waarde="${waarde}"]`) || groep.querySelector('[role="radio"]');
         kies(groep, optie, false);
     }
@@ -289,6 +295,14 @@
         // Alleen op de echte site: lokaal testen telt niet als bezoek.
         if (window.location.hostname !== 'brightnews.online') return;
         if (!aan && !window.__gaGeladen) return;
+        // Uit: gtag.js stuurt dan ook geen cookieloze pings meer, en de
+        // GA-cookies gaan weg. Aan (opnieuw): de vlag weer vrijgeven.
+        window[`ga-disable-${GA_ID}`] = !aan;
+        if (!aan) {
+            document.cookie.split(';').map(c => c.split('=')[0].trim())
+                .filter(naam => naam === '_ga' || naam.startsWith('_ga_'))
+                .forEach(naam => { document.cookie = `${naam}=; Max-Age=0; path=/; domain=.brightnews.online`; });
+        }
         window.dataLayer = window.dataLayer || [];
         // gtag moet het arguments-object doorgeven, geen array.
         window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
@@ -386,9 +400,7 @@
         zetJaartal();
         // Zonder index.js zet niemand anders de bewaarde taal bij het laden.
         const taal = lees(TAAL_SLEUTEL);
-        // Een pagina met varianten per taal (data-alt-*) staat al in haar eigen taal.
-        const heeftVarianten = Object.keys(document.body.dataset).some(k => /^alt[A-Z][a-z]$/.test(k));
-        if (taal && !heeftVarianten && typeof window.wisselTaal !== 'function' && taal !== document.documentElement.lang) {
+        if (taal && !heeftVarianten() && typeof window.wisselTaal !== 'function' && taal !== document.documentElement.lang) {
             pasTaalToe(taal);
         }
         koppelPaneel();
