@@ -321,6 +321,10 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   chips) en het thema-overzicht nog (zie punt 66). Besluit nodig: vóór de
   lancering omzetten (dan eerst ontwerpen), of na de lancering en tot dan
   de oude opmaak laten staan.
+  **Besluit (Maarten, 2026-11-12):** vóór de lancering de v5-schil: header,
+  footer en CSS van v5, de artikelen als de bestaande v5-kaarten, zonder eigen
+  Figma-ontwerp. Gepland op donderdag 19 november. Het eigen ontwerp van de
+  categoriepagina en het thema-overzicht volgt na de lancering.
 
 - [ ] **78. Search Console: "Dubbele pagina zonder door de gebruiker
   geselecteerde canonieke versie".** *(Maarten, mail van 2026-11-12)*
@@ -370,8 +374,8 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   een nieuw account de taal van de site). `--zet` maakt eerst een backup,
   `--terug` zet die terug. **Nog door
   Maarten:** ~~de sjablonen in Supabase zetten~~ (✅ 2026-11-12, met
-  `--zet`), Stripe-branding, en elke mail één keer echt
-  ontvangen in Gmail en op de iPhone. De sjablonen zijn niet met Go getest
+  `--zet`), ~~Stripe-branding~~ ✅. De inloglink is in en en nl ontvangen in
+  Gmail en werkt. Nog: één keer op de iPhone bekijken. De sjablonen zijn niet met Go getest
   (geen Go op deze Mac); de structuur wel.
   *(Maarten, 2026-11-11. Pas doen als de rebranding live gaat, maar niet
   vergeten: het hoort bij de lancering.)*
