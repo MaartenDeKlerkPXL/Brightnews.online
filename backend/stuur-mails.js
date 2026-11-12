@@ -184,8 +184,13 @@ async function main() {
             const { data, error } = await db.from('mail_voorkeuren')
                 .insert({ uid: g.id, afgemeld, ...(afgemeld ? { afgemeld_op: new Date().toISOString() } : {}) })
                 .select('uid, token, afgemeld').single();
-            if (error) { console.warn(`⚠️  voorkeuren aanmaken mislukt voor ${g.id}: ${error.message}`); mislukt++; continue; }
-            vk = data;
+            if (error?.code === '23505') {
+                // Intussen zelf aangemaakt via Mijn account (zet_mails): die rij geldt.
+                const opnieuw = await db.from('mail_voorkeuren').select('uid, token, afgemeld').eq('uid', g.id).single();
+                if (opnieuw.error) { console.warn(`⚠️  voorkeuren lezen mislukt voor ${g.id}: ${opnieuw.error.message}`); mislukt++; continue; }
+                vk = opnieuw.data;
+            } else if (error) { console.warn(`⚠️  voorkeuren aanmaken mislukt voor ${g.id}: ${error.message}`); mislukt++; continue; }
+            else vk = data;
         }
         if (vk.afgemeld) { overgeslagen++; continue; }
 

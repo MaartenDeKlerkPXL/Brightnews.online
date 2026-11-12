@@ -44,6 +44,18 @@ async function verifieerStripeSignature(rawBody: string, header: string | null, 
     return diff === 0
 }
 
+// Stripe belooft geen volgorde, levert events soms tegelijk af, en herhaalt
+// ze tot drie dagen lang. Een subscription-event dat ouder is dan het laatst
+// verwerkte subscription-event van dit profiel (kolom stripe_event_op)
+// verandert niets meer: anders zet een late subscription.updated Premium
+// terug aan na subscription.deleted (review 2026-11-12). De controle zit in
+// de update zelf (één stap), zodat twee events die tegelijk binnenkomen
+// elkaar niet kunnen inhalen. Alleen subscription-events schrijven de kolom;
+// een subscription.created die eerst 409 kreeg (checkout nog niet binnen) en
+// later opnieuw komt, wordt zo niet onterecht overgeslagen. event.created
+// telt in hele seconden: bij een gelijke seconde telt subscription.created
+// als ouder (created en de eerste updated vallen vaak in dezelfde seconde).
+
 serve(async (req) => {
     const rawBody = await req.text()
     const secret = Deno.env.get("STRIPE_WEBHOOK_SECRET") ?? ""
@@ -102,14 +114,49 @@ serve(async (req) => {
                 console.log(`↪️ Sessie voltooid maar payment_status=${obj.payment_status} — geen actie`)
                 return new Response(JSON.stringify({ message: "Nog niet betaald" }), { status: 200 })
             }
-            const { error } = await supabaseClient.from('profiles').upsert({
+            const { data: bestaand, error: leesFout } = await supabaseClient.from('profiles')
+                .select('stripe_customer_id, abo_status')
+                .eq('id', userId).maybeSingle()
+            if (leesFout) throw leesFout
+            const nieuweKlant = obj.customer ? String(obj.customer) : null
+            // Deze klant is al gekoppeld: alleen een checkout koppelt, dus deze
+            // is al verwerkt (een herhaalde of te late aflevering). Niets meer
+            // veranderen; de subscription-events bepalen de status.
+            if (bestaand?.stripe_customer_id && bestaand.stripe_customer_id === nieuweKlant) {
+                console.log(`↪️ ${userId}: checkout voor een al gekoppelde klant — status komt uit de subscription-events`)
+                return new Response(JSON.stringify({ message: "Al verwerkt" }), { status: 200 })
+            }
+            // Een lopend abonnement van een ándere Stripe-klant niet
+            // overschrijven: dat is een tweede afrekening, of iemand die het
+            // user-id van een ander als client_reference_id meegaf. Dan
+            // houdt het bestaande abonnement de koppeling; het nieuwe meldt
+            // zich in de logs (en moet in Stripe terugbetaald worden).
+            if (bestaand?.stripe_customer_id && nieuweKlant && bestaand.stripe_customer_id !== nieuweKlant
+                && ['active', 'trialing', 'past_due', 'unpaid', 'incomplete'].includes(String(bestaand.abo_status))) {
+                console.error(`🚨 ${userId} heeft al een lopend abonnement (${bestaand.stripe_customer_id}); nieuwe klant ${nieuweKlant} niet gekoppeld`)
+                return new Response(JSON.stringify({ message: "Tweede abonnement niet gekoppeld" }), { status: 200 })
+            }
+            // plan_type alleen als de sessie het meegeeft: anders zou dit event,
+            // als het na customer.subscription.created binnenkomt, het plan
+            // dat daar uit de prijs is gehaald weer op null zetten.
+            const profiel: Record<string, unknown> = {
                 id: userId,
                 is_premium: true,
-                // Exacte einddatum volgt direct hierna via customer.subscription.*
-                stripe_customer_id: obj.customer ? String(obj.customer) : null,
-                plan_type: obj.metadata?.plan ?? null,
+                // Voorlopig twee dagen; de exacte einddatum volgt direct hierna
+                // via customer.subscription.*. Niet null: dat betekent "loopt
+                // nooit af".
+                premium_until: new Date(Date.now() + 2 * 86400000).toISOString(),
+                stripe_customer_id: nieuweKlant,
+                // Een nieuwe klant begint schoon; de oude status hoort bij het
+                // vorige abonnement.
+                abo_status: null,
+                opgezegd: false,
+                proef_tot: null,
+                stripe_event_op: null,
                 updated_at: new Date().toISOString()
-            }, { onConflict: 'id' })
+            }
+            if (obj.metadata?.plan) profiel.plan_type = obj.metadata.plan
+            const { error } = await supabaseClient.from('profiles').upsert(profiel, { onConflict: 'id' })
             if (error) throw error
             console.log(`✅ ${userId} is nu Premium (checkout voltooid)`)
             return new Response(JSON.stringify({ message: "Premium geactiveerd ✨" }), { status: 200 })
@@ -135,16 +182,46 @@ serve(async (req) => {
                 ? new Date(periodeEindeSec * 1000).toISOString()
                 : null
 
-            const { data, error } = await supabaseClient.from('profiles')
-                .update({
-                    is_premium: geeftToegang,
-                    premium_until: geeftToegang ? periodeEinde : null,
-                    updated_at: new Date().toISOString()
-                })
+            // Voor Mijn account en Bedankt (TODO 66 punt 10 en 12): de status
+            // zelf (trialing, active, past_due, canceled …), of de lezer heeft
+            // opgezegd (loopt door tot premium_until), tot wanneer de
+            // proefperiode loopt, en het plan uit de prijs (maand of jaar).
+            const interval = obj.items?.data?.[0]?.price?.recurring?.interval
+            const plan = interval === 'year' ? 'jaarlijks' : interval === 'month' ? 'maandelijks' : null
+            const eventOp = typeof event.created === 'number' ? new Date(event.created * 1000).toISOString() : null
+
+            // Geen toegang: premium_until op nu, niet op null. Null betekent in
+            // de Premium-regel "loopt nooit af"; een is_premium dat later toch
+            // op true komt, zou dan voor altijd gelden.
+            const update: Record<string, unknown> = {
+                is_premium: geeftToegang,
+                premium_until: geeftToegang ? periodeEinde : new Date().toISOString(),
+                stripe_event_op: eventOp,
+                abo_status: type === 'customer.subscription.deleted' ? 'canceled' : (status || null),
+                opgezegd: Boolean(obj.cancel_at_period_end || obj.cancel_at),
+                proef_tot: obj.trial_end ? new Date(obj.trial_end * 1000).toISOString() : null,
+                updated_at: new Date().toISOString()
+            }
+            if (plan) update.plan_type = plan
+
+            let query = supabaseClient.from('profiles')
+                .update(update)
                 .eq('stripe_customer_id', customerId)
-                .select('id')
+            if (eventOp) {
+                const vergelijk = type === 'customer.subscription.created' ? 'lt' : 'lte'
+                query = query.or(`stripe_event_op.is.null,stripe_event_op.${vergelijk}."${eventOp}"`)
+            }
+            const { data, error } = await query.select('id')
             if (error) throw error
             if (!data || data.length === 0) {
+                // Wel gekoppeld, maar er is al een nieuwer event verwerkt.
+                const { data: gekoppeld, error: leesFout } = await supabaseClient.from('profiles')
+                    .select('id').eq('stripe_customer_id', customerId).limit(1)
+                if (leesFout) throw leesFout
+                if (gekoppeld?.length) {
+                    console.log(`↪️ ${type} voor ${customerId} ouder dan het laatst verwerkte — overgeslagen`)
+                    return new Response(JSON.stringify({ message: "Ouder event genegeerd" }), { status: 200 })
+                }
                 // checkout.session.completed kan nog onderweg zijn; Stripe
                 // herhaalt dit event bij een non-2xx-status vanzelf.
                 console.warn(`⚠️ Geen profiel met stripe_customer_id=${customerId} — retry aangevraagd`)
