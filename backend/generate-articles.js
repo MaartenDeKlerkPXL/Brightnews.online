@@ -20,7 +20,7 @@
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
-const { schilVoorTaal } = require('./schil');
+const { leesSchilV5, vertaalSchil } = require('./schil');
 
 const SITE_URL = 'https://brightnews.online';
 const TALEN = ['nl', 'en', 'de', 'fr', 'es'];
@@ -140,11 +140,13 @@ function categoriePaginaHref(categorie, lang) {
     return `/categories/${lang}/${maakSlug(t(lang, `filter_${categorie.toLowerCase()}`))}.html`;
 }
 
-function burenHtml(artikel, lang, burenIndex) {
-    if (!burenIndex) return '';
+// De keuze van de buren, los van de opmaak: gedeeld door burenHtml() (oude
+// sjabloon, nog gebruikt door backend/migratie-meer-nieuws.js) en burenV5().
+function kiesBuren(artikel, lang, burenIndex) {
+    if (!burenIndex) return [];
     const { rijen, positie } = burenIndex;
     const i = positie.get(String(artikel.id));
-    if (i === undefined) return '';
+    if (i === undefined) return [];
 
     const bruikbaar = r => r.slugs[lang] && r.titles[lang];
     const gekozen = [];
@@ -179,8 +181,13 @@ function burenHtml(artikel, lang, burenIndex) {
         }
     }
 
-    const kandidaten = gekozen;
+    return gekozen;
+}
+
+function burenHtml(artikel, lang, burenIndex) {
+    const kandidaten = kiesBuren(artikel, lang, burenIndex);
     if (!kandidaten.length) return '';
+    const eigenCategorie = burenIndex.rijen[burenIndex.positie.get(String(artikel.id))].category;
 
     // Eén link naar de volledige categoriepagina (punt 55). Zonder deze regel
     // zijn die dertig pagina's alleen via de sitemap bereikbaar, en een
@@ -223,31 +230,90 @@ function rssLinksHtml(eigenTaal) {
         .join('\n');
 }
 
+// Datum en tijd zoals de v5-artikelpagina ze toont ("Woensdag 28 oktober
+// 2026, 14:05"), vast in Nederlandse tijd: een statische pagina kent de
+// tijdzone van de lezer niet.
+function datumTijd(iso, lang) {
+    const d = new Date(iso);
+    if (Number.isNaN(d.getTime())) return '';
+    const datum = new Intl.DateTimeFormat(LOCALES[lang], { timeZone: 'Europe/Amsterdam', weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).format(d);
+    const tijd = new Intl.DateTimeFormat(LOCALES[lang], { timeZone: 'Europe/Amsterdam', hour: '2-digit', minute: '2-digit' }).format(d);
+    return `${datum.charAt(0).toLocaleUpperCase(LOCALES[lang])}${datum.slice(1)}, ${tijd}`;
+}
+
+function icoon(naam) {
+    return `<svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#${naam}"/></svg>`;
+}
+
+function vul(tekst, waarden) {
+    return String(tekst).replace(/\{(\w+)\}/g, (heel, k) => (k in waarden ? waarden[k] : heel));
+}
+
+// "Meer goed nieuws" in v5: dezelfde keuze als burenHtml() (de datumketting
+// plus twee uit dezelfde categorie), als koppenlijst in de band onderaan.
+// Hier niet aan morrelen zonder de bereikbaarheid na te rekenen: deze links
+// houden het hele archief voor Google bereikbaar (punt 36).
+function burenV5(artikel, lang, burenIndex) {
+    const gekozen = kiesBuren(artikel, lang, burenIndex);
+    if (!gekozen.length) return '';
+    const eigenCategorie = burenIndex.rijen[burenIndex.positie.get(String(artikel.id))]?.category;
+    const catHref = categoriePaginaHref(eigenCategorie, lang);
+    const catLabel = eigenCategorie ? t(lang, `filter_${eigenCategorie.toLowerCase()}`) : '';
+    const items = gekozen.map(r => {
+        const label = CATEGORIE_PAGINAS.includes(r.category)
+            ? `<span class="categorie-label">${escapeHtml(t(lang, `filter_${r.category.toLowerCase()}`))}</span>` : '';
+        return `            <li><article class="headline-item">${label}<h3 class="headline-item__titel"><a class="headline-item__link" href="/articles/${lang}/${r.slugs[lang]}-${r.id}.html">${escapeHtml(r.titles[lang])}</a></h3></article></li>`;
+    }).join('\n');
+    const categorieLink = catHref
+        ? `\n        <p class="verwijzing"><a href="${catHref}">${escapeHtml(t(lang, 'cat_titel').replace('{cat}', catLabel))}</a></p>`
+        : '';
+    return `
+<section class="meer-band" aria-labelledby="kop-meer">
+    <div class="container meer-band__binnen">
+        <h2 class="meer-band__titel" id="kop-meer">${escapeHtml(t(lang, 'related_title'))}</h2>
+        <ul class="koppen-raster" role="list">
+${items}
+        </ul>${categorieLink}
+    </div>
+</section>`;
+}
+
+// De pagina van één artikel in redesign v5. Wat er statisch in staat (tekst,
+// foto, bron, buren) is wat Google en een lezer zonder JavaScript zien; de
+// paywall en de deelknoppen zet js/v5/artikel.js erbij (statische modus).
+//
+// artikel: { id, title, summary, image, image_alt, date, category, source,
+// link, type, refs[{id,title,href?}], meta_description, ingekort? }. Het archief komt
+// hier ook langs (backend/migreer-archief-v5.js), met wat het uit de oude
+// pagina las. Daarom staan die velden ook als JSON in de pagina
+// (#artikel-gegevens): zo kan elke pagina later opnieuw gemaakt worden,
+// ook als het artikel allang niet meer in de nieuws-JSON staat.
 function paginaHtml(artikel, lang, slugsPerTaal, manifest, burenIndex) {
-    // Header en footer uit partials/, al vertaald naar deze taal. Zelfde bron
-    // als de vaste pagina's en de categoriepagina's (backend/schil.js).
-    const schil = schilVoorTaal(lang);
+    const schil = leesSchilV5();
+    const header = vertaalSchil(schil.header, lang);
+    const footer = vertaalSchil(schil.footer, lang);
     const rssLinks = rssLinksHtml(lang);
     const bestand = `${slugsPerTaal[lang]}-${artikel.id}.html`;
     const paginaUrl = `${SITE_URL}/articles/${lang}/${bestand}`;
-    // Dagoverzichten (type 'digest') hebben server-side al een ruimere
-    // teaser (~100 woorden) gekregen: niet opnieuw op 60 afkappen.
-    const teaser = artikel.type === 'digest'
-        ? String(artikel.summary || '')
-        : maakTeaser(artikel.summary);
-    const isIngekort = teaser !== String(artikel.summary || '') || String(artikel.summary || '').trim().endsWith('...');
+    const isDigest = artikel.type === 'digest';
+    // Dagoverzichten hebben server-side al een ruimere teaser (~100 woorden)
+    // gekregen: niet opnieuw op 60 afkappen.
+    const teaser = isDigest ? String(artikel.summary || '') : maakTeaser(artikel.summary);
+    // Is er meer dan deze samenvatting? Alleen dan heeft een paywall zin
+    // (zelfde regel als het oude sjabloon). Het archief geeft het mee uit de
+    // oude pagina (die had dan een paywall).
+    const ingekort = typeof artikel.ingekort === 'boolean'
+        ? artikel.ingekort
+        : teaser !== String(artikel.summary || '') || String(artikel.summary || '').trim().endsWith('...');
     const beschrijving = (artikel.meta_description || teaser).slice(0, 155);
     const afbeelding = veiligeAfbeelding(artikel.image, reserveAfbeelding(artikel));
     // og:image en JSON-LD vereisen een absolute URL; een root-relatieve
-    // reservefoto zou deel-previews (WhatsApp/LinkedIn) breken. De <img> op
-    // de pagina zelf mag wél relatief blijven.
+    // reservefoto zou deel-previews (WhatsApp/LinkedIn) breken.
     const afbeeldingAbsoluut = afbeelding.startsWith('/') ? SITE_URL + afbeelding : afbeelding;
-    const bron = artikel.source || t(lang, 'unknown_source');
+    const bron = artikel.source || '';
     const bronLink = veiligeUrl(artikel.link, null);
-    const isoDatum = artikel.date ? new Date(artikel.date).toISOString() : '';
-    const toonDatum = artikel.date
-        ? new Date(artikel.date).toLocaleDateString(LOCALES[lang], { year: 'numeric', month: 'long', day: 'numeric' })
-        : '';
+    const isoDatum = artikel.date && !Number.isNaN(new Date(artikel.date).getTime()) ? new Date(artikel.date).toISOString() : '';
+    const toonDatum = isoDatum ? datumTijd(isoDatum, lang) : '';
 
     const hreflangs = TALEN.filter(l => slugsPerTaal[l])
         .map(l => `    <link rel="alternate" hreflang="${l}" href="${SITE_URL}/articles/${l}/${slugsPerTaal[l]}-${artikel.id}.html">`)
@@ -255,8 +321,8 @@ function paginaHtml(artikel, lang, slugsPerTaal, manifest, burenIndex) {
     const xDefaultSlug = slugsPerTaal.en || slugsPerTaal[lang];
     const xDefaultLang = slugsPerTaal.en ? 'en' : lang;
     const altAttrs = TALEN.filter(l => slugsPerTaal[l])
-        .map(l => `data-alt-${l}="/articles/${l}/${slugsPerTaal[l]}-${artikel.id}.html"`)
-        .join(' ');
+        .map(l => ` data-alt-${l}="/articles/${l}/${slugsPerTaal[l]}-${artikel.id}.html"`)
+        .join('');
 
     const jsonLd = JSON.stringify({
         '@context': 'https://schema.org',
@@ -276,66 +342,63 @@ function paginaHtml(artikel, lang, slugsPerTaal, manifest, burenIndex) {
         },
     }).replace(/</g, '\\u003c');
 
+    const refs = Array.isArray(artikel.refs) ? artikel.refs.filter(r => r && r.title) : [];
+    const gegevens = JSON.stringify({
+        id: String(artikel.id), title: artikel.title, summary: teaser, image: artikel.image || null,
+        image_alt: artikel.image_alt || null, date: isoDatum || null, category: artikel.category || null,
+        source: bron || null, link: bronLink, type: isDigest ? 'digest' : null,
+        refs: refs.map(r => ({ id: r.id ? String(r.id) : null, title: r.title, href: r.href || null })),
+        meta_description: artikel.meta_description || null, ingekort,
+    }).replace(/</g, '\\u003c');
+
     const alineas = teaser.split(/\n+/).map(s => s.trim()).filter(Boolean)
-        .map(p => `                <p>${escapeHtml(p)}</p>`).join('\n') || `                <p>${escapeHtml(teaser)}</p>`;
+        .map(p => `            <p>${escapeHtml(p)}</p>`).join('\n');
 
-    const paywall = isIngekort ? `
-            <div class="paywall-overlay"><div class="paywall-content">
-                <h2 data-i18n="premium_title">${escapeHtml(t(lang, 'premium_title'))}</h2>
-                <p data-i18n="premium_text">${escapeHtml(t(lang, 'premium_text'))}</p>
-                <button onclick="window.location.href='/profiel.html'" class="btn-primary-editorial" data-i18n="btn_login_to_read">${escapeHtml(t(lang, 'btn_login_to_read'))}</button>
-            </div></div>` : '';
+    const categorie = CATEGORIE_PAGINAS.includes(artikel.category)
+        ? `<span class="badge">${escapeHtml(t(lang, `filter_${artikel.category.toLowerCase()}`))}</span>` : '';
 
-    // Dagoverzicht: klikbare lijst van de besproken artikelen — naar hun
-    // statische pagina als het manifest die kent, anders de SPA-route (?id=).
-    const refsHtml = Array.isArray(artikel.refs) && artikel.refs.length ? `
-            <div class="digest-refs">
-                <h2 data-i18n="digest_refs_title">${escapeHtml(t(lang, 'digest_refs_title'))}</h2>
-                <ol>
-${artikel.refs.map(ref => {
-        const slug = manifest?.articles?.[ref.id]?.slugs?.[lang];
-        const href = slug ? `/articles/${lang}/${slug}-${ref.id}.html` : `/?id=${encodeURIComponent(ref.id)}`;
-        return `                    <li><a href="${escapeHtml(href)}">${escapeHtml(ref.title)}</a></li>`;
+    // Foto: de echte, anders de reservefoto die processor.js koos. Laadt hij
+    // niet, dan maakt js/v5/artikel.js er het merkbeeld van (zoals in v5).
+    const beeld = `<img class="artikel__beeld" src="${escapeHtml(afbeelding)}" alt="${escapeHtml(artikel.image_alt || '')}" width="960" height="540" fetchpriority="high" decoding="async">`;
+
+    // Dagoverzicht: de besproken artikelen, naar hun statische pagina als het
+    // manifest die kent, anders de oude route (?id=).
+    const refsHtml = refs.length ? `
+        <section class="artikel__bronnen" aria-labelledby="kop-besproken">
+            <h2 class="type-heading-md" id="kop-besproken">${escapeHtml(t(lang, 'digest_refs_title'))}</h2>
+            <ul class="koppen-raster" role="list">
+${refs.map(ref => {
+        const slug = ref.id && manifest?.articles?.[ref.id]?.slugs?.[lang];
+        // Een bewaarde href alleen als hij naar een eigen artikel wijst.
+        const eigen = typeof ref.href === 'string' && /^\/(articles\/[a-z]{2}\/[a-z0-9-]+\.html|\?id=[A-Za-z0-9-]+)$/.test(ref.href);
+        const href = slug ? `/articles/${lang}/${slug}-${ref.id}.html` : eigen ? ref.href : `/?id=${encodeURIComponent(ref.id || '')}`;
+        return `                <li><article class="headline-item"><h3 class="headline-item__titel"><a class="headline-item__link" href="${escapeHtml(href)}">${escapeHtml(ref.title)}</a></h3></article></li>`;
     }).join('\n')}
-                </ol>
-            </div>` : '';
+            </ul>
+        </section>` : '';
 
-    const disclaimerTekst = artikel.type === 'digest'
-        ? String(t(lang, 'digest_notice'))
-        : String(t(lang, 'ai_summary_notice')).replace('{source}', bron);
-    const disclaimerLink = bronLink
-        ? ` <a href="${escapeHtml(bronLink)}" target="_blank" rel="noopener noreferrer">${escapeHtml(`${t(lang, 'read_original')} ${bron}`.trim())}</a>`
-        : '';
+    const bronBlok = isDigest
+        ? `        <div class="source-attribution"><p>${escapeHtml(t(lang, 'digest_notice'))}</p></div>`
+        : `        <div class="source-attribution">
+            <p>${escapeHtml(vul(t(lang, 'v5_bron_artikel'), { bron: bron || t(lang, 'unknown_source') }))}</p>${bronLink ? `
+            <a class="btn btn--secondary btn--sm" href="${escapeHtml(bronLink)}" target="_blank" rel="noopener noreferrer"><span>${escapeHtml(t(lang, 'v5_lees_origineel'))}</span><span class="visueel-verborgen"> ${escapeHtml(t(lang, 'v5_nieuw_venster'))}</span>${icoon('open_in_new')}</a>` : ''}
+        </div>`;
 
     return `<!DOCTYPE html>
 <html lang="${lang}">
 <head>
-    <!-- Google tag (gtag.js) — laadt pas na cookietoestemming, zie acceptCookies()/checkCookies() in index.js -->
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('consent', 'default', {
-            'analytics_storage': 'denied',
-            'ad_storage': 'denied',
-            'ad_user_data': 'denied',
-            'ad_personalization': 'denied'
-        });
-    </script>
-    <link rel="icon" type="image/png" href="/assets/brightnews-logo-faviconv5.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Zonder deze regel mag Google alleen een miniatuur tonen, en een
-         Discover-kaart is juist een grote beeldkaart (punt 51). Bewust
-         alleen vooruit: het archief wordt niet opnieuw gegenereerd,
-         want Discover toont vrijwel alleen vers nieuws. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <!-- Een grote beeldkaart in Google Discover mag (punt 51). -->
     <meta name="robots" content="max-image-preview:large">
-${rssLinks}
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://www.googletagmanager.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
-    <meta name="description" content="${escapeHtml(beschrijving)}">
     <title>${escapeHtml(artikel.title)} | BrightNews</title>
+${schil.thema}
+    <meta name="description" content="${escapeHtml(beschrijving)}">
     <link rel="canonical" href="${paginaUrl}">
 ${hreflangs}
     <link rel="alternate" hreflang="x-default" href="${SITE_URL}/articles/${xDefaultLang}/${xDefaultSlug}-${artikel.id}.html">
+${rssLinks}
     <meta property="og:title" content="${escapeHtml(artikel.title)}">
     <meta property="og:description" content="${escapeHtml(beschrijving)}">
     <meta property="og:image" content="${escapeHtml(afbeeldingAbsoluut)}">
@@ -343,82 +406,46 @@ ${hreflangs}
     <meta property="og:type" content="article">
     <meta property="article:published_time" content="${isoDatum}">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/components.css">
-    <link rel="stylesheet" href="/css/pages/artikel.css">
-    <link rel="stylesheet" href="/css/pages/categorie.css">
-    <meta name="theme-color" content="var(--bright-green)">
-    <script src="/js/vendor/supabase-js-2.112.4.js" defer></script>
-    <script src="/js/supabase-init.js" defer></script>
-    <script src="/js/betaal-config.js" defer></script>
-    <script src="/js/auth.js" defer></script>
-    <script src="/data/translations.js" defer></script>
-    <script src="/js/main.js" defer></script>
-    <script src="/index.js" defer></script>
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0a120d" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" href="/assets/brightnews-logo-faviconv5.png">
+    <link rel="preload" href="/assets/fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/tokens.css">
+    <link rel="stylesheet" href="/css/v5/basis.css">
+    <link rel="stylesheet" href="/css/v5/componenten.css">
+    <link rel="stylesheet" href="/css/v5/paginas.css">
     <script type="application/ld+json">${jsonLd}</script>
+    <script type="application/json" id="artikel-gegevens">${gegevens}</script>
 </head>
-<body>
-<a href="#main-content" class="skip-link" data-i18n="skip_to_content">${escapeHtml(t(lang, 'skip_to_content'))}</a>
-${schil.header}
-<main class="container" id="main-content" tabindex="-1">
-    <div style="padding-top: 20px;">
-        <div class="top-nav-alignment" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
-            <a href="/index.html" class="back-btn-pill">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <path d="M19 12H5M12 19l-7-7 7-7"/>
-                </svg>
-                <span data-i18n="back">${escapeHtml(t(lang, 'back'))}</span>
-            </a>
-        </div>
-    </div>
+<body data-sectie="nieuws">
+${header}
 
-    <div class="detail-container" data-static-article data-article-id="${escapeHtml(String(artikel.id))}" data-article-lang="${lang}" ${altAttrs}>
-    <div class="detail-hero">
-        <img class="detail-img" src="${escapeHtml(afbeelding)}" alt="${escapeHtml(artikel.image_alt || artikel.title)}" width="800" height="450" fetchpriority="high" decoding="async" onerror="this.onerror=null;this.src='${reserveAfbeelding(artikel)}';">
-    </div>
-    <div class="article-container" style="max-width: 800px; margin: 0 auto; padding: 20px;" itemscope itemtype="https://schema.org/NewsArticle">
-        <header class="detail-header">
-            <h1 itemprop="headline" style="margin-bottom: 10px;">${escapeHtml(artikel.title)}</h1>
-${toonDatum ? `            <p class="artikel-datum">
-                <time itemprop="datePublished" datetime="${isoDatum}">${escapeHtml(toonDatum)}</time>
-            </p>` : ''}
+<main id="inhoud">
+    <article class="container artikel" data-statisch-artikel data-artikel-id="${escapeHtml(String(artikel.id))}" data-artikel-taal="${lang}"${ingekort ? ' data-ingekort' : ''}${altAttrs}>
+        ${beeld}
+        <header class="artikel__kop">
+            <p class="artikel__meta">${categorie}${toonDatum ? `<time datetime="${isoDatum}">${escapeHtml(toonDatum)}</time>` : ''}</p>
+            <h1 class="artikel__titel">${escapeHtml(artikel.title)}</h1>
         </header>
+        <div class="artikel__tekst">
+${alineas}
+        </div>${refsHtml}
+        <div data-deelbalk></div>
+${bronBlok}
+    </article>
+${burenV5(artikel, lang, burenIndex)}
+</main>
 
-        <section class="article-body" itemprop="articleBody">
-            <div data-role="body">
-${alineas}${refsHtml}
-            </div>${paywall}
-    <div class="share-section">
-        <p class="share-title" data-i18n="share_article">${escapeHtml(t(lang, 'share_article'))}</p>
-        <div class="share-wrapper">
-            <button onclick="toggleShareMenu(event)" class="share-main-btn" id="mainShareBtn">
-                <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg> <span id="share-btn-text" data-i18n="share_label">${escapeHtml(t(lang, 'share_label'))}</span>
-            </button>
-            <div id="shareMenu" class="share-dropdown">
-                <a href="#" id="share-wa" target="_blank"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
-                <a href="#" id="share-fb" target="_blank"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a>
-                <a href="#" id="share-x" target="_blank"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a>
-                <a href="#" id="share-li" target="_blank"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-                <a href="#" id="share-mail"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
-                <button onclick="copyLink(event)"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></button>
-            </div>
-        </div>
-    </div>
-<p class="ai-disclaimer" style="text-align: center; font-style: italic; color: var(--neutral-500); margin-top: 30px; font-size: 0.85em;">${escapeHtml(disclaimerTekst)}${disclaimerLink}</p>
-        </section>
-    </div>
-    </div>
-${burenHtml(artikel, lang, burenIndex)}</main>
-
-${schil.footer}
-<script>
-    function toggleMobileMenu() {
-        const menu = document.getElementById('mobileMenu');
-        if (menu) menu.classList.toggle('active');
-    }
-</script>
+${footer}
+<script src="/data/translations.js" defer></script>
+<script src="/js/v5/schil.js" defer></script>
+<script src="/js/v5/gedeeld.js" defer></script>
+<script src="/js/v5/artikel.js" defer></script>
 </body>
-</html>`;
+</html>
+`;
 }
 
 function main() {
@@ -520,4 +547,4 @@ function main() {
 // in plaats van er een tweede kopie van te onderhouden.
 if (require.main === module) main();
 
-module.exports = { bouwBurenIndex, burenHtml, BUREN_PER_KANT };
+module.exports = { bouwBurenIndex, burenHtml, BUREN_PER_KANT, paginaHtml, maakSlug, maakTeaser };

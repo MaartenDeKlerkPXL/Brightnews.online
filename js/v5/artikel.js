@@ -13,6 +13,13 @@
 // samenvatting zonder paywall.
 // Om de staten te bekijken zonder account: ?staat=1..4 (dan wordt er niets
 // opgehaald en staat de samenvatting op de plek van de tekst).
+//
+// Statische modus: op de gegenereerde artikelpagina's
+// (articles/{taal}/{slug}-{id}.html, backend/generate-articles.js) staan
+// foto, kop, samenvatting, bron en "Meer goed nieuws" al in de HTML. Dan
+// bouwt dit script de pagina niet op uit de feed, maar zet het alleen de
+// volledige tekst, de paywall en de deelknoppen erbij. Een andere taal kiezen
+// gaat daar naar dezelfde pagina in die taal (data-alt-{taal}).
 // Met een paywall op de pagina wordt "Probeer Premium" in de header
 // secundair (besluit v5 · 18); dat regelt componenten.css.
 
@@ -180,7 +187,7 @@
     // Welke staat, en welke tekst. In het voorbeeld (?staat=) uit het adres;
     // de header volgt dan ook: ingelogd (1–3) toont Mijn account, Premium (1)
     // geen Probeer Premium. Echt: de header zet js/v5/schil.js zelf.
-    async function leesStaat(id) {
+    async function leesStaat(id, taal = B.taal()) {
         const gevraagd = B.param('staat');
         if (['1', '2', '3', '4'].includes(gevraagd)) {
             if (gevraagd !== '4') document.body.dataset.ingelogd = '';
@@ -190,7 +197,7 @@
         const client = window.supabaseClient;
         if (!client) return { staat: '4' };
         await window.bnAccount;
-        const { data, error } = await client.rpc('lees_artikel', { p_id: String(id), p_lang: B.taal() });
+        const { data, error } = await client.rpc('lees_artikel', { p_id: String(id), p_lang: taal });
         if (error || !data) {
             // Geen verbinding of een storing: de samenvatting, zonder paywall
             // die de lezer onterecht zou zeggen dat zijn tegoed op is.
@@ -264,5 +271,66 @@
         if (meer) main.appendChild(meer);
     }
 
-    B.start(teken);
+    function startStatisch(blok) {
+        const id = blok.dataset.artikelId;
+        const taal = blok.dataset.artikelTaal;
+        const titel = blok.querySelector('.artikel__titel').textContent;
+        const canoniek = document.querySelector('link[rel="canonical"]')?.href || window.location.href;
+
+        // Foto die niet laadt (of al niet laadde vóór dit script): merkbeeld.
+        const img = blok.querySelector('img.artikel__beeld');
+        if (img) {
+            const vervang = () => img.replaceWith(B.merkbeeld('artikel__beeld'));
+            if (img.complete && !img.naturalWidth) vervang();
+            else img.addEventListener('error', vervang, { once: true });
+        }
+        B.markeerGelezen(id);
+        // Nog geen taal gekozen (nieuwe bezoeker, Google): die van de pagina,
+        // anders krijgt een Engelse pagina een Nederlandse schil.
+        try { if (!localStorage.getItem('selectedLanguage')) localStorage.setItem('selectedLanguage', taal); } catch { /* geen opslag */ }
+
+        let ronde = 0;
+        B.start(async () => {
+            const mijnRonde = ++ronde;
+            const plek = blok.querySelector('[data-deelbalk]');
+            // Is er niets meer dan deze samenvatting, dan geen paywall en geen
+            // aanroep: alleen de deelknoppen.
+            if (!blok.hasAttribute('data-ingekort')) {
+                plek.replaceChildren(B.deelBalk(canoniek, titel));
+                return;
+            }
+            let lezen;
+            try {
+                lezen = await leesStaat(id, taal);
+            } catch (fout) {
+                // Nooit de statische tekst weghalen (dat zou B.start doen).
+                console.warn('BrightNews v5: artikel', fout);
+                lezen = { staat: null };
+            }
+            if (mijnRonde !== ronde) return;
+            const alineas = String(lezen.tekst || '').split(/\n+/).map(a => a.trim()).filter(Boolean);
+            if (alineas.length) blok.querySelector('.artikel__tekst').replaceChildren(...alineas.map(a => el('p', null, a)));
+            blok.querySelectorAll(':scope > .paywall, :scope > .paywall-credit').forEach(n => n.remove());
+            if (lezen.staat === '2') plek.before(tegoedRegel(lezen.over, lezen.limiet));
+            if (lezen.staat === '3') plek.before(paywall());
+            if (lezen.staat === '4') plek.before(accountPaywall());
+            plek.replaceChildren(B.deelBalk(canoniek, titel));
+        });
+
+        // Een andere taal: dezelfde pagina in die taal, als die bestaat.
+        const gewoon = window.wisselTaal;
+        window.wisselTaal = nieuweTaal => {
+            const ander = blok.dataset[`alt${nieuweTaal.charAt(0).toUpperCase()}${nieuweTaal.slice(1)}`];
+            if (ander && nieuweTaal !== taal) {
+                try { localStorage.setItem('selectedLanguage', nieuweTaal); } catch { /* alleen deze pagina */ }
+                window.location.href = ander;
+                return;
+            }
+            gewoon(nieuweTaal);
+        };
+    }
+
+    const statisch = document.querySelector('[data-statisch-artikel]');
+    if (statisch) startStatisch(statisch);
+    else B.start(teken);
 })();

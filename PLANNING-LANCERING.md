@@ -160,10 +160,21 @@ via een PR. Laat die PR eerst nakijken door een review-agent
 
 ### Dinsdag 17 november
 
-- Het artikelsjabloon (`backend/generate-articles.js`) naar v5 omzetten en de
+- ✅ (vervroegd naar 12 november) Het artikelsjabloon (`backend/generate-articles.js`) naar v5 omzetten en de
   actuele artikelen opnieuw maken.
-- Het archief opnieuw maken in het v5-sjabloon, steekproef nakijken, sitemap
-  opnieuw maken. Niets verwijderen.
+- ✅ (vervroegd naar 12 november) Het archief opnieuw maken in het v5-sjabloon, steekproef nakijken, sitemap
+  opnieuw maken. Niets verwijderen. Nieuw script `backend/migreer-archief-v5.js`
+  leest elke pagina en schrijft haar op hetzelfde adres in v5. Getest op alle
+  3.470 pagina's: alles leesbaar, voor de 745 artikelen uit de feed precies
+  dezelfde gegevens, 19.625 interne links heel, tweede run verandert niets.
+  De sitemap verandert niet (de adressen blijven gelijk). **De omgezette
+  pagina's staan bewust nog niet in de branch:** master schrijft er twee keer
+  per dag nieuwe bij, dus committen nu geeft bij de merge honderden
+  conflicten. De nieuws-Action zet het archief om (nieuwe stap); de eerste run
+  na de merge op 20 november doet het hele archief.
+- Nog in het oude ontwerp: de 30 categoriepagina's (`generate-categorieen.js`)
+  en de themapagina's (`generate-evergreen.js`). De v5-artikelen linken naar de
+  categoriepagina's. Zie TODO 79.
 
 ### Woensdag 18 november
 
@@ -192,7 +203,9 @@ via een PR. Laat die PR eerst nakijken door een review-agent
 
 - Supabase naar Pro (dagelijkse back-ups) en de bescherming tegen gelekte
   wachtwoorden aanzetten (TODO 70 en 72.4).
-- Alles naar master mergen, met de parkeerpagina nog aan. Testen op de echte
+- Alles naar master mergen, met de parkeerpagina nog aan. Daarna de
+  nieuws-Action één keer handmatig draaien: die zet het hele archief om naar
+  v5 (stap "Archief in het actuele sjabloon"). Steekproef van vijf pagina's. Testen op de echte
   site via `/?team=1`, op telefoon en computer, licht en donker.
 - De hele keten echt doorlopen met een echte kaart en een wegwerp-e-mailadres
   (TODO 31): account maken met een inloglink, wachtwoord vergeten, inloggen,

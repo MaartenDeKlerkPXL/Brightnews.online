@@ -311,6 +311,17 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   4. **Bescherming tegen gelekte wachtwoorden** (controle tegen
      HaveIBeenPwned) staat uit. Dat kan alleen op Pro, zie punt 70.
 
+- [ ] **79. Categorie- en themapagina's nog in het oude ontwerp.**
+  *(Claude, 2026-11-12)* De artikelpagina's en het archief zijn v5, maar
+  `backend/generate-categorieen.js` (30 pagina's, `categories/{taal}/…`) en
+  `backend/generate-evergreen.js` (`themas/…`) maken nog pagina's met de oude
+  schil en de oude CSS. De v5-artikelen linken onder "Meer goed nieuws" naar
+  de categoriepagina van hun categorie (die link houdt die pagina's voor
+  Google bereikbaar). In Figma ontbreken de categoriepagina (met de oude
+  chips) en het thema-overzicht nog (zie punt 66). Besluit nodig: vóór de
+  lancering omzetten (dan eerst ontwerpen), of na de lancering en tot dan
+  de oude opmaak laten staan.
+
 - [ ] **78. Search Console: "Dubbele pagina zonder door de gebruiker
   geselecteerde canonieke versie".** *(Maarten, mail van 2026-11-12)* Eén
   pagina, nieuw sinds deze week. Niet nu repareren: op 18 november krijgen

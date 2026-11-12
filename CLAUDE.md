@@ -44,8 +44,11 @@ verbeteringen van de één binnen een dag bij de ander landen:
   `index.html` of `assets/brightnews-logo.png` → **bump `CACHE_NAME` in
   sw.js** (anders zien bezoekers je wijziging niet).
 - Wijzig je het artikeltemplate in `backend/generate-articles.js` →
-  `node backend/generate-articles.js` draaien (regenereert de actuele
-  pagina's; archief blijft bewust staan) + `node backend/generate-sitemap.js`.
+  `node backend/migreer-archief-v5.js` (het archief, uit de gegevens in elke
+  pagina) en `node backend/generate-articles.js` (de actuele pagina's) draaien,
+  plus `node backend/generate-sitemap.js`. Sinds redesign v5 (2026-11-12)
+  volgt het hele archief het sjabloon; de nieuws-Action doet beide stappen
+  ook zelf. Nooit pagina's verwijderen.
 - **Header en footer staan op één plek: `partials/header.html` en
   `partials/footer.html`** (sinds 2026-10-29, redesign v5). Nooit meer in een
   pagina zelf bewerken: tussen `<!-- schil:header -->` en

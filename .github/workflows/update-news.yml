@@ -69,6 +69,16 @@ jobs:
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: node backend/digest.js
 
+      # Het archief volgt het artikelsjabloon (sinds redesign v5, 2026-11-12):
+      # pagina's die niet meer in de feed staan, worden opnieuw gemaakt uit de
+      # gegevens in de pagina zelf. Schrijft alleen wat verandert; de eerste
+      # run na de merge zet het hele archief om naar v5. Een pagina die niet
+      # te lezen is, blijft staan en laat deze stap rood worden, maar mag de
+      # nieuws-update niet tegenhouden.
+      - name: 🗄️ Archief in het actuele sjabloon
+        continue-on-error: true
+        run: node backend/migreer-archief-v5.js
+
       - name: 📄 Statische artikelpagina's genereren
         run: node backend/generate-articles.js
 
