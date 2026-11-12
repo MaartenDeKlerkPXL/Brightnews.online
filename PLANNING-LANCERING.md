@@ -191,7 +191,7 @@ via een PR. Laat die PR eerst nakijken door een review-agent
   List-Unsubscribe-header), en de vijf Supabase-sjablonen in
   `supabase/templates/` (gemaakt door `backend/maak-mailsjablonen.js`).
   ✅ *2026-11-12 15:19:* de sjablonen staan in Supabase (backup in
-  `vorige.json`). Engels getest (inloglink werkt); Nederlands volgt (account op `nl` gezet).
+  `vorige.json`). Engels en Nederlands getest (inloglink, knop werkt). Stripe-branding gedaan.
   **Maarten:** de sjablonen in Supabase zetten: `SUPABASE_ACCESS_TOKEN=…
   node backend/maak-mailsjablonen.js --zet` (token van
   supabase.com/dashboard/account/tokens, alleen in je eigen terminal), of met
@@ -216,6 +216,10 @@ via een PR. Laat die PR eerst nakijken door een review-agent
 - ✅ De besluiten uit TODO 75 staan al in de teksten (11 november). Nog wel:
   de privacyregel over feedback nalezen (TODO 43).
 - Steekproef op de vertalingen in alle vijf talen.
+- Categorie- en themapagina's in de v5-schil (TODO 79, besluit 12 november):
+  v5-header, -footer en -CSS, de artikelen als de bestaande v5-kaarten. Geen
+  nieuw ontwerp; dat volgt na de lancering. Op donderdag en niet op zaterdag,
+  zodat het meegaat in de merge en de test van vrijdag.
 
 ### Vrijdag 20 november
 
