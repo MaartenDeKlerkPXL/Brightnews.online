@@ -230,10 +230,14 @@ via een PR. Laat die PR eerst nakijken door een review-agent
 
 - Supabase naar Pro (dagelijkse back-ups) en de bescherming tegen gelekte
   wachtwoorden aanzetten (TODO 70 en 72.4).
-- Alles naar master mergen, met de parkeerpagina nog aan. Daarna de
-  nieuws-Action één keer handmatig draaien: die zet het hele archief om naar
-  v5 (stap "Archief in het actuele sjabloon"). Steekproef van vijf pagina's. Testen op de echte
-  site via `/?team=1`, op telefoon en computer, licht en donker.
+- ✅ *Vervroegd naar 12 november:* gemerged naar master (PR #20, tag
+  `v1-laatste` op de laatste oude versie), met de parkeerpagina nog aan. De
+  nieuws-Action heeft 4.150 archiefpagina's, 35 themapagina's en 30
+  categoriepagina's omgezet, met 0 fouten. Live gecontroleerd: het publiek ziet
+  de parkeermuur, `/?team=1` toont v5, een oud artikel staat in v5, en GA4
+  laadt pas na toestemming en stopt bij intrekken. **Nog door Maarten (weekend
+  van 14 november):** alles nalopen via `/?team=1`, op telefoon en computer,
+  licht en donker.
 - De hele keten echt doorlopen met een echte kaart en een wegwerp-e-mailadres
   (TODO 31): account maken met een inloglink, wachtwoord vergeten, inloggen,
   betalen, Bedankt, Premium lezen, Mijn account, opzeggen. Dit vervangt de
