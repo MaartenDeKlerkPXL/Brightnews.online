@@ -175,6 +175,14 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      - "1 bron" in plaats van "1 bronnen";
      - het mailadres onder het contactformulier;
      - het dagoverzicht kost geen tegoed meer.
+     - **Meldingen naar info@brightnews.online** (besluit Maarten): een
+       contactbericht komt direct als mail, met de afzender als antwoordadres
+       (Supabase-trigger, Edge Function en Resend, met een maximum per uur
+       tegen spam). De feedback op artikelen komt in één verzamelmail per
+       ochtend (GitHub Action, met de sleutels die er al zijn). Maarten zet
+       daarvoor één keer `RESEND_API_KEY` als secret bij de Edge Functions in
+       Supabase. Tot dan staat alles alleen in de tabellen
+       `contactberichten` en `artikel_feedback`.
   4. **Pipeline:**
      - het dagoverzicht alleen met verhalen van die dag, en de daggrens in Nederlandse tijd (nu 3 dagen en UTC);
      - één dagoverzicht per dag;
