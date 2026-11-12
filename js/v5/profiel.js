@@ -70,7 +70,9 @@
         if (!premium) return 'gratis';
         if (p.opgezegd) return 'opgezegd';
         if (p.abo_status === 'trialing') return 'proef';
-        if (p.abo_status === 'active' || p.stripe_customer_id) return 'actief';
+        // Zonder abo_status: een abonnement van vóór die kolom (tot het
+        // volgende Stripe-event). canceled met Premium = een promocode erna.
+        if (p.abo_status === 'active' || (!p.abo_status && p.stripe_customer_id)) return 'actief';
         return 'code';
     }
 
@@ -96,7 +98,11 @@
             gelezen: 0,
             limiet: 5,
             wachtwoord: gebruiker.user_metadata?.heeft_wachtwoord === true,
-            portaal: Boolean(profiel?.stripe_customer_id),
+            // Ook bij een promocode als er nog een abonnement loopt (bijvoorbeeld
+            // met een mislukte betaling): dan moet opzeggen of de betaalmethode
+            // aanpassen kunnen.
+            portaal: Boolean(profiel?.stripe_customer_id)
+                && (soort !== 'code' || ['trialing', 'active', 'past_due', 'unpaid', 'incomplete'].includes(profiel?.abo_status)),
         };
 
         // Tegoed en mails tegelijk; valt er één weg, dan blijft de rest staan.
@@ -113,6 +119,7 @@
             mails.disabled = true;
         } else {
             mails.checked = aan.data;
+            mails.disabled = false;
         }
         return true;
     }
@@ -225,7 +232,9 @@
 
         $('pr-inlogmanier').textContent = t(acc.wachtwoord ? 'v5_pr_wachtwoord_of_link' : 'v5_pr_inloglink');
         $('pr-wachtwoord-tekst').textContent = t(acc.wachtwoord ? 'v5_pr_wachtwoord_wijzigen' : 'v5_pr_wachtwoord_instellen');
-        $('pr-wachtwoord').href = `/v5-wachtwoord-vergeten.html?email=${encodeURIComponent(acc.email)}`;
+        // Zonder ?email=: het adres hoort niet in de geschiedenis; de pagina
+        // haalt het zelf uit de sessie.
+        $('pr-wachtwoord').href = '/v5-wachtwoord-vergeten.html';
 
         // Een getoonde foutmelding volgt de taal.
         if (!codeFout.hidden && voorbeeld) {
@@ -252,7 +261,7 @@
     $('pr-promo').addEventListener('submit', async e => {
         e.preventDefault();
         const knop = e.currentTarget.querySelector('button[type="submit"]');
-        if (knop.disabled) return;
+        if (knop.getAttribute('aria-disabled') === 'true') return;
         if (!code.value.trim()) {
             codeFoutTonen(t('v5_pr_code_leeg'));
             code.focus();
@@ -261,7 +270,8 @@
         codeFoutTonen(null);
         if (voorbeeld || !client) { nietGekoppeld(); return; }
 
-        knop.disabled = true;
+        // aria-disabled in plaats van disabled: zo houdt de knop de focus.
+        knop.setAttribute('aria-disabled', 'true');
         knop.setAttribute('aria-busy', 'true');
         try {
             const { data, error } = await client.rpc('redeem_promo_code', { p_code: code.value.trim() });
@@ -278,7 +288,7 @@
         } catch (fout) {
             melding(fout);
         } finally {
-            knop.disabled = false;
+            knop.removeAttribute('aria-disabled');
             knop.removeAttribute('aria-busy');
         }
     });
@@ -287,10 +297,15 @@
         if (code.hasAttribute('aria-invalid')) codeFoutTonen(null);
     });
 
+    // Tijdens het opslaan geen tweede klik, maar ook geen disabled: dan
+    // verliest een toetsenbordgebruiker de focus.
+    let mailsBezig = false;
+    mails.addEventListener('click', e => { if (mailsBezig) e.preventDefault(); });
     mails.addEventListener('change', async () => {
         if (voorbeeld || !client) { nietGekoppeld(); return; }
         const aan = mails.checked;
-        mails.disabled = true;
+        mailsBezig = true;
+        mails.setAttribute('aria-disabled', 'true');
         try {
             const { error } = await client.rpc('zet_mails', { p_aan: aan });
             if (error) throw error;
@@ -299,7 +314,8 @@
             mails.checked = !aan;
             melding(fout);
         } finally {
-            mails.disabled = false;
+            mailsBezig = false;
+            mails.removeAttribute('aria-disabled');
         }
     });
 

@@ -109,15 +109,25 @@
         const client = window.supabaseClient;
         if (!link || !client) { window.showNotification(t('v5_abo_niet_gekoppeld')); return; }
 
-        const { gebruiker, premium } = await window.bnAccount;
+        // Vers ophalen: in een ander tabblad kan intussen al afgerekend zijn.
+        const { gebruiker, premium, profiel, fout } = await window.bnVerversAccount();
         const next = B.eigenPad(B.param('next'));
+        // Geen verbinding: niet naar Inloggen sturen (dan lijkt het alsof je
+        // uitgelogd bent), maar melden.
+        if (fout && !gebruiker) { window.showNotification(t('v5_in_fout_algemeen'), 'error'); return; }
         if (!gebruiker) {
             const terug = `/v5-abonnementen.html?plan=${plan}${next ? `&next=${encodeURIComponent(next)}` : ''}`;
             window.location.href = `/v5-inloggen.html?tab=account&next=${encodeURIComponent(terug)}`;
             return;
         }
-        if (premium) {
-            window.showNotification(t('v5_abo_al_premium_melding'));
+        // Al Premium, een abonnement dat nog loopt (ook als de betaling
+        // mislukte), of het profiel niet te lezen: niet nog eens afrekenen,
+        // maar naar Mijn account.
+        const lopend = ['trialing', 'active', 'past_due', 'unpaid', 'incomplete'].includes(profiel?.abo_status);
+        if (premium || lopend || fout) {
+            const mislukt = ['past_due', 'unpaid'].includes(profiel?.abo_status);
+            if (fout) window.showNotification(t('v5_in_fout_algemeen'), 'error');
+            else window.showNotification(t(mislukt ? 'v5_abo_lopend_mislukt' : 'v5_abo_al_premium_melding'));
             setTimeout(() => { window.location.href = B.url.account(); }, 1500);
             return;
         }
@@ -170,8 +180,11 @@
         melding.focus();
     }
 
+    // Alleen bij de terugknop (uit de bfcache of opnieuw geladen), niet bij
+    // een gewone bezoek: dan kan de lezer net wél afgerekend hebben.
     window.addEventListener('pageshow', e => { if (e.persisted) terugVanStripe(false); });
 
     B.start(teken);
-    terugVanStripe(B.param('staat') === 'terug');
+    const viaTerug = performance.getEntriesByType('navigation')[0]?.type === 'back_forward';
+    if (viaTerug || B.param('staat') === 'terug') terugVanStripe(B.param('staat') === 'terug');
 })();

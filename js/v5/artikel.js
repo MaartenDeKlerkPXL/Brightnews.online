@@ -209,7 +209,12 @@
         }
     }
 
+    // Een taalwissel tekent opnieuw; komt een oudere lees_artikel-aanroep
+    // als laatste terug, dan mag die niet meer tekenen.
+    let ronde = 0;
+
     async function teken() {
+        const mijnRonde = ++ronde;
         const main = document.getElementById('inhoud');
         const feed = await B.laadFeed();
         const id = B.param('id');
@@ -241,6 +246,7 @@
         // openbare samenvatting. De volledige tekst staat nooit in de
         // publieke data.
         const lezen = await leesStaat(artikel.id);
+        if (mijnRonde !== ronde) return;
         const tekst = el('div', 'artikel__tekst');
         const alineas = String(lezen.tekst || '').split(/\n+/).map(a => a.trim()).filter(Boolean);
         (alineas.length ? alineas : [artikel.summary]).forEach(a => tekst.appendChild(el('p', null, a)));

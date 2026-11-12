@@ -7,9 +7,13 @@
 // focus naar het eerste foute veld. Is een veld eenmaal fout, dan verdwijnt
 // de melding zodra het klopt.
 //
-// Versturen is nog niet gekoppeld (TODO punt 66: mail of Supabase-tabel,
-// honeypot en een limiet per IP). Tot dan toont de pagina na de controle de
-// bevestiging, zonder dat er iets weggaat. Om de staten te bekijken:
+// Versturen (TODO 66 punt 13): een insert in de Supabase-tabel
+// contactberichten (alleen insert-rechten; lezen doet het team in het
+// dashboard). De database controleert de velden nog een keer en houdt een
+// limiet per IP bij (supabase/formulieren-2026-11-12.sql). Is het verborgen
+// veld `website` ingevuld, dan is het een bot: de pagina doet alsof het
+// gelukt is en verstuurt niets. Om de staten te bekijken (er gaat dan niets
+// weg):
 //   ?staat=fout        een onvolledig adres en een leeg bericht
 //   ?staat=verstuurd   de bevestiging (met ?email= het adres in de tekst)
 
@@ -33,7 +37,7 @@
     const velden = [
         { veld: email, fout: $('ct-email-fout'), goed: () => VOLLEDIG.test(email.value.trim()) },
         { veld: onderwerp, fout: $('ct-onderwerp-fout'), goed: () => onderwerp.value !== '' },
-        { veld: bericht, fout: $('ct-bericht-fout'), goed: () => bericht.value.trim().length >= MIN_BERICHT, hulp: 'ct-teller' },
+        { veld: bericht, fout: $('ct-bericht-fout'), goed: () => [...bericht.value.trim()].length >= MIN_BERICHT, hulp: 'ct-teller' },
     ];
 
     function veldFout({ veld, fout, hulp }, aan) {
@@ -78,14 +82,49 @@
 
     // ── Gedrag ───────────────────────────────────────────────────────────
 
-    formulier.addEventListener('submit', e => {
+    const knop = formulier.querySelector('button[type="submit"]');
+
+    // De database meldt te_vaak (deze lezer) of te_vaak_totaal (iedereen
+    // samen); bij dat laatste noemt de melding het mailadres.
+    function formulierFout(fout) {
+        const tekst = fout?.message || '';
+        if (tekst.includes('te_vaak_totaal')) return 'v5_form_te_druk';
+        if (tekst.includes('te_vaak')) return 'v5_form_te_vaak';
+        return 'v5_in_fout_algemeen';
+    }
+
+    formulier.addEventListener('submit', async e => {
         e.preventDefault();
+        if (knop.getAttribute('aria-disabled') === 'true') return;
         const fout = velden.filter(v => !v.goed());
         velden.forEach(v => veldFout(v, fout.includes(v)));
         if (fout.length) { fout[0].veld.focus(); return; }
-        // Het honeypot-veld (ct-website) gaat straks mee; de back-end gooit
-        // het bericht weg als het gevuld is.
-        verstuurd(email.value.trim()).focus();
+
+        const adres = email.value.trim();
+        const client = window.supabaseClient;
+        if ($('ct-website').value || B.param('staat')) { verstuurd(adres).focus(); return; }
+        if (!client) { window.showNotification(t('v5_in_fout_algemeen'), 'error'); return; }
+
+        // aria-disabled in plaats van disabled: zo houdt de knop de focus.
+        knop.setAttribute('aria-disabled', 'true');
+        knop.setAttribute('aria-busy', 'true');
+        try {
+            const { error } = await client.from('contactberichten').insert({
+                naam: $('ct-naam').value.trim().slice(0, 100) || null,
+                email: adres,
+                onderwerp: onderwerp.value,
+                bericht: bericht.value.trim(),
+                taal: B.taal(),
+            });
+            if (error) throw error;
+            verstuurd(adres).focus();
+        } catch (fout) {
+            console.warn('BrightNews v5: contactbericht', fout);
+            window.showNotification(t(formulierFout(fout)), 'error');
+        } finally {
+            knop.removeAttribute('aria-disabled');
+            knop.removeAttribute('aria-busy');
+        }
     });
 
     velden.forEach(v => {

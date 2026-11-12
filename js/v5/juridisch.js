@@ -24,7 +24,7 @@
     const contact = [{ p: 'v5_jr_vragen_p' }, { link: 'v5_jr_naar_contact', naar: () => B.url.contact() }];
     const DOCUMENTEN = {
         privacy: {
-            titel: 'v5_jr_privacy', datum: '2026-11-11', versie: '1.0',
+            titel: 'v5_jr_privacy', datum: '2026-11-12', versie: '1.0',
             kort: ['v5_pv_kort1', 'v5_pv_kort2', 'v5_pv_kort3', 'v5_pv_kort4'],
             secties: [
                 { id: 'wie-we-zijn', titel: 'v5_pv_s1', blokken: [{ p: 'v5_pv_s1_p' }] },

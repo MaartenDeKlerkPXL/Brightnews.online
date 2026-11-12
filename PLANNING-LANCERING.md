@@ -105,7 +105,11 @@ via een PR. Laat die PR eerst nakijken door een review-agent
 
 ### Donderdag 12 november
 
-- Nakijken of de nachtelijke controle weer draait.
+- ✅ Nakijken of de nachtelijke controle weer draait: **nee**, hij faalde
+  van 7 t/m 11 november met een leeg antwoord. Sonnet 5 denkt standaard na
+  en dat denken at het hele budget van 8000 tokens op. Gerepareerd in de
+  back-end-PR (16000 tokens, effort medium, een duidelijke fout bij
+  afkappen). Na het mergen de eerstvolgende nacht nakijken.
 - ✅ PR #15 (vijf gratis artikelen per maand) en PR #16 (scraper) nakijken met
   een review-agent, testen en mergen. Neem in #15 de vaste `search_path` van
   `gratis_artikelen_per_maand` over (zie PR #17).
@@ -123,28 +127,34 @@ via een PR. Laat die PR eerst nakijken door een review-agent
 
 ### Zaterdag 14 november
 
-- Mijn account koppelen: status, plan, tegoed, de mails-toggle en Abonnement
+- ✅ (vervroegd naar 12 november) Mijn account koppelen: status, plan, tegoed, de mails-toggle en Abonnement
   beheren via het Stripe-klantportaal (TODO 66, punt 10), plus de ontbrekende
   staten (Premium actief, opgezegd, betaling mislukt, account verwijderen).
-- De echte paywallstaat op de artikelpagina via `lees_artikel()` (TODO 66,
-  punt 6).
+- ✅ (vervroegd naar 12 november) De echte paywallstaat op de artikelpagina
+  via `lees_artikel()` (TODO 66, punt 6).
+- Nog: de PR met de abonnementsstatus en de mails-functies mergen, de SQL
+  draaien en de webhook deployen (Maartens akkoord).
 
 ### Zondag 15 november
 
-- Stripe Checkout op Abonnementen, met het gekozen plan en `?next=` (TODO
+- ✅ (vervroegd naar 12 november) Stripe Checkout op Abonnementen, met het gekozen plan en `?next=` (TODO
   66, punt 7), plus de staat "terug van Stripe".
-- Bedankt koppelen: Premium ziet aangaan via de webhook (TODO 66, punt 12).
-- Alles testen in de testmodus van Stripe.
+- ✅ (vervroegd naar 12 november) Bedankt koppelen: Premium ziet aangaan via de webhook (TODO 66, punt 12).
+- Getest met een nepversie van Supabase (alle staten) en de echte
+  Supabase zonder account. **Nog door Maarten:** in Stripe de doorstuurlink
+  van beide betaallinks naar Bedankt zetten, en één testrun in de testmodus
+  (testbetaallinks plus tijdelijk `STRIPE_ALLOW_TEST=true` op de webhook),
+  of anders de echte kaarttest van 20 november.
 
 ### Maandag 16 november: beslismoment
 
 - **Eerst kijken:** werken inloggen, Mijn account, de paywall en betalen in de
   testmodus? Zo niet, dan beslis je vandaag wat er uit de lancering gaat (zie
   "Waar het kan misgaan").
-- Contact en Feedback laten versturen: Supabase-tabellen met alleen
+- ✅ (vervroegd naar 12 november) Contact en Feedback laten versturen: Supabase-tabellen met alleen
   insert-rechten, honeypot, een limiet per IP en een maximale lengte in de
   database (2000 en 1000 tekens) (TODO 66, punt 13).
-- De gezondheidscontrole in de nieuws-Action: een run faalt als er 24 uur geen
+- ✅ (vervroegd naar 12 november; de mailroute zet Maarten zelf) De gezondheidscontrole in de nieuws-Action: een run faalt als er 24 uur geen
   nieuw artikel is bijgekomen (TODO 69.1).
 
 ### Dinsdag 17 november

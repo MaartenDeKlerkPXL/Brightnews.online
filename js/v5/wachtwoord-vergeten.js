@@ -97,8 +97,13 @@
 
     // ── Staten ───────────────────────────────────────────────────────────
 
-    // Vanuit Mijn account (Wachtwoord instellen of wijzigen) staat het adres al klaar.
-    if (!staat && !isHerstel && mailAdres) email.value = mailAdres;
+    // Vanuit Mijn account (Wachtwoord instellen of wijzigen): het adres uit
+    // de sessie, niet uit het adres van de pagina.
+    if (!staat && !isHerstel && window.bnAccount) {
+        window.bnAccount.then(({ gebruiker }) => {
+            if (gebruiker?.email && !email.value) email.value = gebruiker.email;
+        });
+    }
 
     if (staat === 'nieuw') {
         toon('nieuw');

@@ -42,15 +42,18 @@
             document.body.dataset.ingelogd = '';
             // Alle kolommen: Mijn account en Bedankt lezen ook de
             // abonnementsstatus (abo_status, opgezegd, proef_tot).
-            const { data: profiel } = await client.from('profiles')
+            const { data: profiel, error } = await client.from('profiles')
                 .select('*').eq('id', gebruiker.id).maybeSingle();
+            // fout: het profiel kon niet gelezen worden. Wie dan "geen
+            // Premium" ziet, mag nog niet afrekenen (abonnementen.js).
+            if (error) return { gebruiker, premium: false, profiel: null, fout: true };
             const premium = !!profiel?.is_premium
                 && (!profiel.premium_until || new Date(profiel.premium_until) > new Date());
             if (premium) document.body.dataset.premium = '';
             return { gebruiker, premium, profiel: profiel || null };
         } catch (e) {
             console.warn('BrightNews v5: account niet geladen', e);
-            return { gebruiker: null, premium: false, profiel: null };
+            return { gebruiker: null, premium: false, profiel: null, fout: true };
         }
     }
 

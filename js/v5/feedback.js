@@ -12,9 +12,12 @@
 // versturen, met de focus naar het eerste foute veld (bij de keuze: de
 // eerste radio).
 //
-// Versturen is nog niet gekoppeld (TODO punt 66: Supabase-tabel met
-// artikel-id, keuze, tekst en taal; honeypot en limiet per IP). Tot dan toont
-// de pagina na de controle de bevestiging. Om de staten te bekijken:
+// Versturen (TODO 66 punt 13): een insert in de Supabase-tabel
+// artikel_feedback met artikel-id, keuze, toelichting, e-mailadres en taal
+// (alleen insert-rechten; de database controleert alles nog een keer en
+// houdt een limiet per IP bij, supabase/formulieren-2026-11-12.sql). Is het
+// verborgen veld `website` ingevuld, dan doet de pagina alsof het gelukt is
+// en verstuurt niets. Om de staten te bekijken (er gaat dan niets weg):
 //   ?staat=fout        geen keuze gemaakt
 //   ?staat=verstuurd   de bevestiging (zonder e-mailadres)
 
@@ -120,11 +123,38 @@
 
     // ── Gedrag ───────────────────────────────────────────────────────────
 
+    // De database meldt te_vaak (deze lezer) of te_vaak_totaal (iedereen
+    // samen); bij dat laatste noemt de melding het mailadres.
+    function formulierFout(fout) {
+        const tekst = fout?.message || '';
+        if (tekst.includes('te_vaak_totaal')) return 'v5_form_te_druk';
+        if (tekst.includes('te_vaak')) return 'v5_form_te_vaak';
+        return 'v5_in_fout_algemeen';
+    }
+
+    // De keuze is een vertaalsleutel (v5_fb_k_bron); in de database staat
+    // alleen het laatste deel (bron).
+    async function verstuur(keuze, adres) {
+        const client = window.supabaseClient;
+        if ($('fb-website').value || B.param('staat')) return;
+        if (!client) throw new Error('geen verbinding met Supabase');
+        const { error } = await client.from('artikel_feedback').insert({
+            artikel_id: artikel ? String(artikel.id) : null,
+            keuze: keuze.replace(/^v5_fb_k_/, ''),
+            toelichting: toelichting.value.trim() || null,
+            email: adres || null,
+            taal: B.taal(),
+        });
+        if (error) throw error;
+    }
+
     function koppel() {
-        formulier.addEventListener('submit', e => {
+        const knop = formulier.querySelector('button[type="submit"]');
+        formulier.addEventListener('submit', async e => {
             e.preventDefault();
+            if (knop.getAttribute('aria-disabled') === 'true') return;
             const keuzeFout = !gekozen();
-            const toelichtingFout = andersGekozen() && toelichting.value.trim().length < MIN_TOELICHTING;
+            const toelichtingFout = andersGekozen() && [...toelichting.value.trim()].length < MIN_TOELICHTING;
             const emailFout = email.value.trim() !== '' && !VOLLEDIG.test(email.value.trim());
 
             const eersteRadio = formulier.querySelector('input[name="keuze"]');
@@ -137,8 +167,21 @@
             if (keuzeFout) { eersteRadio.focus(); return; }
             if (toelichtingFout) { toelichting.focus(); return; }
             if (emailFout) { email.focus(); return; }
-            verstuurd(gekozen().value, email.value.trim());
-            $('fb-bedankt-kop').focus();
+            const keuze = gekozen().value;
+            const adres = email.value.trim();
+            knop.setAttribute('aria-disabled', 'true');
+            knop.setAttribute('aria-busy', 'true');
+            try {
+                await verstuur(keuze, adres);
+                verstuurd(keuze, adres);
+                $('fb-bedankt-kop').focus();
+            } catch (fout) {
+                console.warn('BrightNews v5: feedback', fout);
+                window.showNotification(t(formulierFout(fout)), 'error');
+            } finally {
+                knop.removeAttribute('aria-disabled');
+                knop.removeAttribute('aria-busy');
+            }
         });
 
         $('fb-keuzes').addEventListener('change', () => {
@@ -149,7 +192,7 @@
 
         toelichting.addEventListener('input', () => {
             teller();
-            if (toelichting.hasAttribute('aria-invalid') && toelichting.value.trim().length >= MIN_TOELICHTING) {
+            if (toelichting.hasAttribute('aria-invalid') && [...toelichting.value.trim()].length >= MIN_TOELICHTING) {
                 veldFout(toelichting, $('fb-toelichting-fout'), false, 'fb-teller');
             }
         });

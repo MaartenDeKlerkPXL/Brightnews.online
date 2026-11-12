@@ -49,6 +49,8 @@
     // Wat er in de teksten komt. In het voorbeeld uit het adres; echt uit
     // het profiel (gegevensVan()).
     const vertrek = bewaard();
+    // Meteen wissen: Abonnementen mag hierna geen "terug van Stripe" tonen.
+    if (!staat) { try { sessionStorage.removeItem(SLEUTEL); } catch { /* niets te wissen */ } }
     let perMaand = B.param('plan') === 'maandelijks' || vertrek?.plan === 'maandelijks';
     let email = B.param('email') || 'jan@voorbeeld.nl';
     let eersteDag = null;
@@ -62,7 +64,11 @@
         if (gebruiker?.email) email = gebruiker.email;
         if (/^(maandelijks|glow)$/i.test(profiel?.plan_type || '')) perMaand = true;
         if (/^(jaarlijks|shine)$/i.test(profiel?.plan_type || '')) perMaand = false;
-        if (profiel?.proef_tot) eersteDag = B.dagVan(profiel.proef_tot);
+        // Alleen een lopende proef; een proef_tot van een vorig abonnement
+        // zou een eerste betaling in het verleden geven.
+        if (profiel?.abo_status === 'trialing' && profiel.proef_tot && new Date(profiel.proef_tot) > new Date()) {
+            eersteDag = B.dagVan(profiel.proef_tot);
+        }
     }
 
     function datumLang(dag) {

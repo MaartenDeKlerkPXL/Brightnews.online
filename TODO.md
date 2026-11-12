@@ -238,7 +238,16 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   *(Maarten, 2026-11-03)* Het nieuws lag van 2 oktober tot vandaag stil
   zonder dat iemand het merkte: het Anthropic-tegoed was op (punt 26). Dat is
   precies "error tracking" en "spend alerts" uit het lijstje.
-  1. **Gezondheidscontrole in de nieuws-Action:** een stap aan het eind die
+  1. ✅ **2026-11-12:** de controle bestond al (`backend/controleer-run.js`,
+     sinds september) en de drempel staat nu op 24 uur in plaats van 3
+     dagen. **De echte oorzaak van oktober:** de controle werkte wél, 55
+     runs waren rood, maar GitHub mailt een mislukte geplande run naar het
+     account dat de cron-regel het laatst wijzigde (Maarten, 10 augustus),
+     en dat mailadres is het studentenadres. **Nog door Maarten:** op
+     GitHub → Settings → Notifications → Custom routing de repo
+     Brightnews.online naar je Gmail laten gaan, en onder System → Actions
+     "Only notify for failed workflows" aan. Zie ook TODO 77.
+     Oorspronkelijke tekst: **Gezondheidscontrole in de nieuws-Action:** een stap aan het eind die
      faalt als er al 24 uur geen nieuw artikel is bijgekomen, of als de
      AI-call een fout over tegoed of rate limit gaf. Een mislukte geplande
      run mailt GitHub naar wie de cron het laatst wijzigde, dus controleer dat
@@ -2066,13 +2075,35 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      onze lat", terwijl de pijplijn stillag. Nodig: per dag of de runs
      gelukt zijn (bijvoorbeeld een klein runlog naast het manifest), zodat
      de front-end "storing" anders kan tonen dan "niets goed genoeg".
-  6. **De echte paywallstaat** uit `lees_artikel()` (PR #15): niet ingelogd,
+  6. ✅ **Gekoppeld op 2026-11-12** (vervroegd van 14 november). De staat en de
+     volledige tekst komen uit `lees_artikel()`; bij een storing de
+     samenvatting zonder paywall en een melding, nooit onterecht "op". De
+     paywallknoppen geven het artikel mee als `?next=`. In de PR met
+     `supabase/account-koppeling-2026-11-12.sql` geeft `lees_artikel()` nu
+     `geen_tekst` vóór "op" (het tweede punt uit TODO 59). Het eerste punt
+     uit 59 (maandtotaal bij een al gelezen artikel) is in v5 geen probleem:
+     de regel zegt "nog {x} van {n}", en dat klopt ook dan.
+     Oorspronkelijke tekst: **De echte paywallstaat** uit `lees_artikel()` (PR #15): niet ingelogd,
      tegoed over, tegoed op, Premium. Het voorbeeld toont nu altijd staat 3.
      Daarvoor moeten de v5-pagina's Supabase en `js/auth.js` laden; dan wint
      ook de oude `showNotification()` van de nieuwe Melding, en die moet dan
      naar de v5-opmaak. In Figma ontbreken de paywalltypes Account en Credit
      nog als frame (Maarten).
-  7. **De afrekening op `v5-abonnementen.html` koppelen** (betalingen, dus PR
+  7. ✅ **Gekoppeld op 2026-11-12** (vervroegd van 15 november). Met vinkje naar
+     de Stripe-betaallink uit `js/betaal-config.js` met `client_reference_id`,
+     `prefilled_email` en `locale`. Niet ingelogd: eerst een gratis account
+     (`?tab=account`), daarna terug met het plan en het artikel bewaard. Al
+     Premium: naar Mijn account, zodat niemand twee abonnementen afsluit.
+     Terug met de terugknop: de melding "Je bent terug van Stripe" en het
+     vinkje weer leeg (`?staat=terug` om te bekijken).
+      **Nog door Maarten in Stripe (dashboard, live):** bij beide
+      betaallinks "Na betaling: doorsturen naar je website" op
+      `https://brightnews.online/v5-bedankt.html` (vanaf 18 november
+      `bedankt.html`, met de echte adressen), en in het klantportaal de
+      terugkeerlink naar Mijn account. Testen in de testmodus vraagt
+      testbetaallinks en tijdelijk `STRIPE_ALLOW_TEST=true` plus
+      `STRIPE_WEBHOOK_SECRET_TEST` op de webhook; daarna weer uit.
+     Oorspronkelijke tekst: **De afrekening op `v5-abonnementen.html` koppelen** (betalingen, dus PR
      langs Erik). De knop controleert nu alleen het vinkje en meldt dan dat de
      betaling in het voorbeeld nog niet gekoppeld is. Het gekozen plan staat
      in `input[name=plan]` (`jaarlijks` of `maandelijks`), en de paywall geeft
@@ -2122,7 +2153,48 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      De foutmelding mag nooit verklappen of een e-mailadres bestaat.
      Bij Account maken ook de taal van de lezer en het vinkje "Stuur me geen
      welkomstmails" (`geen_welkomstmails`) opslaan; zie TODO 74 en 75.
-  10. **Mijn account koppelen op `v5-profiel.html`** (Supabase en Stripe,
+  10. ✅ **Gekoppeld op 2026-11-12** (vervroegd van 14 november). Niet ingelogd →
+      Inloggen. Staten: gratis (met tegoed), proefperiode, Premium, opgezegd,
+      betaling mislukt en Premium via een promocode; te bekijken met
+      `?staat=`. De mails-schakelaar via `mails_aan()`/`zet_mails()`,
+      promocodes via `redeem_promo_code()` met een melding per reden,
+      Abonnement beheren opent het klantportaal met het adres ingevuld.
+      Wachtwoord instellen of wijzigen gaat via een herstelmail (zo kan een
+      open sessie alleen het wachtwoord niet veranderen). **Besluiten
+      genomen:** Account verwijderen gaat via Contact (onderwerp "Mijn
+      account of gegevens verwijderen"), zoals de privacyverklaring al zegt;
+      E-mailadres wijzigen staat er niet meer (nog niet ontworpen; tot dan
+      via Contact); weergave en taal per apparaat, niet per account (na de
+      lancering). **Nodig vóór het live gaat:** de PR met
+      `supabase/account-koppeling-2026-11-12.sql` en de nieuwe webhook.
+      Zonder die PR toont Mijn account Premium zonder onderscheid en staat
+      de mails-schakelaar uit. Bestaande Premium-lezers krijgen hun
+      `abo_status` pas bij het volgende Stripe-event; tot dan "Premium" met
+      "Volgende betaling".
+      **Uit de review (2026-11-12), verwerkt:** geen tweede abonnement
+      (Abonnementen haalt het profiel vers op en blokkeert ook bij een
+      lopend abonnement met een mislukte betaling; de webhook koppelt een
+      tweede klant niet als er al een abonnement loopt), late of herhaalde
+      Stripe-events zetten Premium niet meer terug aan (`stripe_event_op`,
+      en `premium_until` op nu in plaats van null bij opzeggen; getest in
+      `supabase/functions/stripe-webhook/volgorde.test.mjs`), en een paar
+      kleinere punten. **Nog te besluiten (Maarten):**
+      1. Wie opzegt, kan meteen opnieuw 30 dagen gratis proberen (Stripe
+         beperkt de proef niet tot één keer). Eventueel een aparte betaallink
+         zonder proef voor wie al eens een abonnement had.
+      2. Bij een mislukte betaling gaat Premium meteen uit, terwijl Stripe
+         nog dagen opnieuw probeert. Een paar dagen respijt kan.
+      3. Wie toch twee keer afrekent (twee tabbladen tegelijk), krijgt het
+         tweede abonnement niet gekoppeld; dat staat als 🚨 in het log van
+         de webhook en moet in Stripe worden terugbetaald.
+      4. Een lopende promocode-termijn en een abonnement delen één
+         `premium_until`: wie met een promocode abonneert of later opzegt,
+         verliest de rest van de promotermijn. Bewust zo laten, of de
+         promocode een eigen einddatum geven?
+      5. Een betaallink zonder proefperiode: de webhook vangt de volgorde in
+         dezelfde seconde nu af (getest), maar test zo'n link apart in de
+         testmodus voor je hem gebruikt.
+      Oorspronkelijke tekst: **Mijn account koppelen op `v5-profiel.html`** (Supabase en Stripe,
       dus PR langs Erik). Nodig per lezer: e-mailadres, inlogmanier (heeft
       hij een wachtwoord? dan "Wachtwoord wijzigen"), status (gratis,
       proefperiode, Premium actief, opgezegd met einddatum, betaling
@@ -2150,7 +2222,13 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
       60 seconden. Een verlopen link toont het formulier met een Alert
       Warning "Deze link is verlopen. Vraag een nieuwe aan."; die variant
       bestaat sinds 2026-11-02 (`.alert--waarschuwing`).
-  12. **Bedankt koppelen op `v5-bedankt.html`** (Stripe en Supabase, dus PR
+  12. ✅ **Gekoppeld op 2026-11-12** (vervroegd van 15 november). Vraagt elke 2
+      seconden het profiel op tot Premium aanstaat; plan, eerste betaling
+      (`proef_tot`) en e-mailadres uit profiel en sessie; "Verder lezen" naar
+      het artikel uit `?next=` of uit wat Abonnementen bewaarde. Niet
+      ingelogd in deze browser: eerst inloggen, dan terug. Besluit: Stripe
+      stuurt de bevestigingsmail (Managed Payments), niet wij.
+      Oorspronkelijke tekst: **Bedankt koppelen op `v5-bedankt.html`** (Stripe en Supabase, dus PR
       langs Erik). Stripe Checkout stuurt na de aanmelding hierheen, met
       `?next=` als de lezer van een artikel kwam. Nodig: een vraag "staat
       Premium aan voor deze sessie?" die de pagina elke 2 seconden stelt
@@ -2160,7 +2238,24 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
       normaal". Af te stemmen (staat in de besluiten): stuurt Stripe de
       bevestigingsmail of wij, en gaat de proefperiode in bij de aanmelding
       of pas als Premium aanstaat? De waarschuwing gaat uit van het tweede.
-  13. **Contact en Feedback laten versturen** (`v5-contact.html`,
+  13. ✅ **Gekoppeld op 2026-11-12** (vervroegd van 16 november). Contact schrijft
+      in `contactberichten`, Feedback in `artikel_feedback`: alleen
+      insert-rechten, de database controleert alles opnieuw (lengtes 2000 en
+      1000, vaste onderwerpen en keuzes, e-mailadres), per IP hooguit 5
+      berichten en 20 meldingen per uur plus 200 per uur in totaal. Het IP
+      zelf wordt niet bewaard, alleen een hash die elke dag verandert en na
+      een dag weg is; de privacyverklaring zegt dat nu ook. Honeypot gevuld:
+      de pagina doet alsof het gelukt is. Na twee jaar ruimt pg_cron alles
+      op. SQL: `supabase/formulieren-2026-11-12.sql` (in dezelfde PR als
+      punt 10). Contact heeft er een onderwerp "Mijn account of gegevens
+      verwijderen" bij. **Lezen** doe je in Supabase → Table Editor; er gaat
+      (nog) geen mail uit bij een nieuw bericht, dus kijk er geregeld in.
+      **Na het draaien van de SQL:** één testbericht via elke pagina sturen,
+      en in Supabase → Logs nakijken of de header `cf-connecting-ip`
+      binnenkomt (anders valt de limiet per IP terug op `x-forwarded-for`,
+      dat een bezoeker zelf kan meesturen; de totaallimiet van 200 per uur
+      blijft dan het vangnet, met een eigen melding die het mailadres noemt).
+      Oorspronkelijke tekst: **Contact en Feedback laten versturen** (`v5-contact.html`,
       `v5-feedback.html`). Nu controleert het formulier de velden en toont
       het daarna de bevestiging, maar er gaat niets weg. Nodig: waar komen
       berichten binnen (voorstel Figma: een Supabase-tabel; voor Feedback
