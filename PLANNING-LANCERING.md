@@ -178,12 +178,27 @@ via een PR. Laat die PR eerst nakijken door een review-agent
 
 ### Woensdag 18 november
 
-- De v5-pagina's naar hun echte adressen zetten, de oude adressen laten
+- ✅ (vervroegd naar 12 november) De v5-pagina's naar hun echte adressen zetten, de oude adressen laten
   werken, `v5-404.html` wordt `404.html`, en de adressen in `partials/v5/` en
-  `js/v5/gedeeld.js` aanpassen (TODO 66, punt 8).
-- `?staat=` werkt alleen nog op `localhost` (TODO 73).
-- Alle mails naar de v5-huisstijl, één taal per lezer (TODO 74).
-- Elke pagina een eigen `<link rel="canonical">` naar haar echte adres, en de
+  `js/v5/gedeeld.js` aanpassen (TODO 66, punt 8). Bekende adressen houden hun
+  naam (ook `Privacy.html`, `algemeene-voorwaarden.html`, `refunds.html`);
+  `v5-*.html` en `thanks.html` sturen door. `index.html` is de v5-home mét de
+  parkeerstand. Afmelden is meteen gekoppeld (de welkomstmails linken ernaar).
+- ✅ `?staat=` werkt alleen nog op `localhost` (TODO 73), net als `?vandaag=`.
+- ✅ Alle mails naar de v5-huisstijl, één taal per lezer (TODO 74):
+  `backend/mailopmaak.js` voor alle mails, de welkomstreeks omgezet (met een
+  List-Unsubscribe-header), en de vijf Supabase-sjablonen in
+  `supabase/templates/` (gemaakt door `backend/maak-mailsjablonen.js`).
+  **Maarten:** de sjablonen in Supabase zetten: `SUPABASE_ACCESS_TOKEN=…
+  node backend/maak-mailsjablonen.js --zet` (token van
+  supabase.com/dashboard/account/tokens, alleen in je eigen terminal), of met
+  de hand plakken uit `supabase/templates/` (onderwerpen in
+  `onderwerpen.json`). `--zet` bewaart eerst de oude sjablonen in
+  `supabase/templates/vorige.json`. Daarna meteen elke mail (inloglink,
+  bevestiging, wachtwoord, nieuw adres) in nl en en naar jezelf; gaat er één
+  mis, dan `--terug` met hetzelfde token. En in Stripe →
+  Settings → Branding het logo en de kleur `#186F49`.
+- ✅ Elke pagina een eigen `<link rel="canonical">` naar haar echte adres, en de
   sitemap alleen met die adressen (TODO 78: de Search Console-melding
   "Dubbele pagina zonder door de gebruiker geselecteerde canonieke versie").
 - **Maarten, zodra de echte adressen er zijn:** in Stripe bij beide

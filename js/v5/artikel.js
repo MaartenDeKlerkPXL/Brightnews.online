@@ -236,11 +236,21 @@
         const feed = await B.laadFeed();
         const id = B.param('id');
         const artikel = feed.find(a => String(a.id) === id);
-        if (!artikel) { nietGevonden(main); return; }
         // Een dagoverzicht heeft zijn eigen pagina.
         if (B.isDigest(artikel)) { window.location.replace(B.metTestdag(B.url.dagoverzicht(artikel.digest_date))); return; }
         // Bestaat de statische pagina (backend/generate-articles.js), dan daarheen:
         // die heeft de canonical, de deel-preview en "Meer goed nieuws".
+        // Eerst het manifest: dat kent ook artikelen die niet meer in de feed
+        // staan, en de opgeslagen slug (die kan afwijken van de titel).
+        if (!B.param('staat')) {
+            const manifest = await B.laadManifest().catch(() => null);
+            const slug = manifest?.articles?.[id]?.slugs?.[B.taal()];
+            if (slug && /^[a-z0-9-]+$/.test(slug)) {
+                window.location.replace(`/articles/${B.taal()}/${slug}-${encodeURIComponent(id)}.html`);
+                return;
+            }
+        }
+        if (!artikel) { nietGevonden(main); return; }
         if (!B.param('staat')) {
             const statisch = `/articles/${B.taal()}/${maakSlug(artikel.title)}-${artikel.id}.html`;
             try {

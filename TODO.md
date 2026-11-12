@@ -323,7 +323,10 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   de oude opmaak laten staan.
 
 - [ ] **78. Search Console: "Dubbele pagina zonder door de gebruiker
-  geselecteerde canonieke versie".** *(Maarten, mail van 2026-11-12)* Eén
+  geselecteerde canonieke versie".** *(Maarten, mail van 2026-11-12)*
+  ✅ *2026-11-12:* elke indexeerbare pagina heeft nu één canonical, de rest
+  staat op noindex, en de sitemap noemt alleen de indexeerbare adressen. Nog:
+  op 20 november de sitemap opnieuw indienen en de melding laten valideren. Eén
   pagina, nieuw sinds deze week. Niet nu repareren: op 18 november krijgen
   alle pagina's nieuwe adressen (de v5-pagina's worden de echte), en dan
   verandert wat dubbel is. Dan elke pagina een eigen `<link rel="canonical">`
@@ -333,8 +336,20 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   2.870 "gevonden, nog niet geïndexeerd". Dat laatste is normaal voor een
   site die geparkeerd staat achter `binnenkort.html`; het hoort na de
   lancering te dalen.
+  **Nog open uit de review van 2026-11-12:** de kaarten op de home, de editie
+  en het dagoverzicht linken naar `artikel.html?id=` (noindex), dat met JS
+  doorstuurt naar de statische pagina. Google krijgt zo geen interne links
+  naar de artikelpagina's, alleen de sitemap en "Meer goed nieuws". Oplossing:
+  `generate-articles.js` zet per artikel de slug in `data/news_<taal>.json`,
+  en `B.url.artikel` linkt dan meteen naar `/articles/<taal>/<slug>-<id>.html`.
+  Het manifest (670 kB) is te zwaar om daarvoor op elke pagina te laden.
+  Na de overstap van 20 november oppakken. Wat ook nog openstaat: tijdens de
+  parkeerstand zijn het archief en zo-kiezen-we openbaar en staan ze in de
+  sitemap. Dat is bewust zo gelaten, omdat de site twee dagen later live gaat.
+  En de welkomstmail linkt naar `/`, dus naar het parkeerbericht. Ook dat
+  blijft zo tot de lancering.
 
-- [ ] **73. Bij de lancering: de voorbeeldstaten uitzetten.**
+- [x] **73. Bij de lancering: de voorbeeldstaten uitzetten.** ✅ 2026-11-12: `?staat=`, `?vandaag=` en `?gelezen=` werken alleen nog op localhost (`B.param()` in js/v5/gedeeld.js). `?team=1` en het wachtwoord blijven bij punt 2 (de lanceringsdag).
   *(Maarten, 2026-11-03)* De v5-pagina's tonen nu elke staat via `?staat=`
   (artikel, Bedankt, Contact, Feedback, Afmelden en andere). Live is dat
   verwarrend: `v5-bedankt.html?staat=gelukt` zegt dat Premium aanstaat zonder
@@ -344,6 +359,20 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   `localhost`. Neem `?team=1` en het wachtwoord `happytester` mee in punt 2.
 
 - [ ] **74. Alle mails naar de v5-huisstijl, in de taal van de lezer.**
+  ✅ *Gebouwd 2026-11-12 (planning 18 november).* Eén opmaak voor alle mails
+  (`backend/mailopmaak.js`): woordmerk als tekst, v5-groen, Figtree met een
+  systeemletter als terugval, altijd licht. De welkomstreeks gebruikt hem (al
+  per taal; nu ook met een List-Unsubscribe-header en de afmeldlink naar de
+  v5-pagina). De vijf Supabase-sjablonen staan in `supabase/templates/`,
+  gemaakt door `backend/maak-mailsjablonen.js`, en kiezen hun taal op
+  `user_metadata.preferred_lang` (Engels zonder taal). De site houdt
+  `preferred_lang` gelijk aan de taal die de lezer kiest (js/v5/schil.js; bij
+  een nieuw account de taal van de site). `--zet` maakt eerst een backup,
+  `--terug` zet die terug. **Nog door
+  Maarten:** de sjablonen in Supabase zetten (`--zet` met een eigen
+  toegangstoken, of plakken), Stripe-branding, en elke mail één keer echt
+  ontvangen in Gmail en op de iPhone. De sjablonen zijn niet met Go getest
+  (geen Go op deze Mac); de structuur wel.
   *(Maarten, 2026-11-11. Pas doen als de rebranding live gaat, maar niet
   vergeten: het hoort bij de lancering.)*
   Aanleiding: de testmail "wachtwoord opnieuw instellen" kwam op 11 november
@@ -2268,7 +2297,8 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      Stripe Checkout? Zo ja: niet ingelogd → naar de inlogpagina met
      `?next=abonnementen` en daarna terug, met het plan bewaard. Juridische
      tekst bij het vinkje nog laten controleren.
-  8. **Bij de lancering:** de v5-pagina's hernoemen naar de echte adressen
+  8. ✅ **Gedaan op 2026-11-12** (planning 18 november); zie de planning.
+     Oorspronkelijke tekst: **Bij de lancering:** de v5-pagina's hernoemen naar de echte adressen
      (`index.html`, `archief.html`, het artikelsjabloon) en die adressen in
      `partials/v5/` en `js/v5/gedeeld.js` (`url`) zetten. Sinds 2026-10-29
      linken de v5-pagina's alleen naar elkaar; een pagina die in v5 nog niet
@@ -2425,7 +2455,10 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
       weggooien) plus een limiet per IP, geen captcha. Contact noemt
       bewust geen reactietermijn, e-mailadres of telefoonnummer; vul die
       in als ze er zijn.
-  14. **Afmelden voor mails koppelen op `v5-afmelden.html`**. De link uit de
+  14. ✅ **Gekoppeld op 2026-11-12** aan `meld_af()` (token in de link); "Toch
+      weer aanmelden" gaat naar Mijn account. List-Unsubscribe staat in de
+      welkomstmails (zonder één-klik: GitHub Pages kan geen POST).
+      Oorspronkelijke tekst: **Afmelden voor mails koppelen op `v5-afmelden.html`**. De link uit de
       mail moet zonder inloggen werken (token in de link), en de mails
       krijgen een List-Unsubscribe-header (één klik in het mailprogramma).
       Open: kan de link verlopen? "Toch weer aanmelden" zet de mails weer

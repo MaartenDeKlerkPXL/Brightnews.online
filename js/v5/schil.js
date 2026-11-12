@@ -40,6 +40,10 @@
             const gebruiker = data.session?.user || null;
             if (!gebruiker) return { gebruiker: null, premium: false, profiel: null };
             document.body.dataset.ingelogd = '';
+            // Heeft het account nog geen taal, dan die van de site. Daarna
+            // alleen bij een eigen keuze (pasTaalToe), anders wisselt de taal
+            // van de mails mee met het laatst gebruikte apparaat.
+            if (!gebruiker.user_metadata?.preferred_lang) zetAccountTaal(lees(TAAL_SLEUTEL), gebruiker);
             // Alle kolommen: Mijn account en Bedankt lezen ook de
             // abonnementsstatus (abo_status, opgezegd, proef_tot).
             const { data: profiel, error } = await client.from('profiles')
@@ -99,8 +103,22 @@
         }
     }
 
-    function pasTaalToe(taal) {
+    // De taal bij het account, zodat de mails van Supabase en de
+    // welkomstreeks in die taal komen (TODO 74).
+    function zetAccountTaal(taal, gebruiker) {
+        const client = window.supabaseClient;
+        if (!client || !gebruiker || !['nl', 'en', 'de', 'fr', 'es'].includes(taal)) return;
+        if (gebruiker.user_metadata?.preferred_lang === taal) return;
+        client.auth.updateUser({ data: { preferred_lang: taal } }).catch(() => { /* volgende keuze opnieuw */ });
+    }
+
+    function pasTaalToe(taal, eigenKeuze) {
         schrijf(TAAL_SLEUTEL, taal);
+        if (eigenKeuze) {
+            window.supabaseClient?.auth.getSession()
+                .then(({ data }) => zetAccountTaal(taal, data.session?.user))
+                .catch(() => {});
+        }
         // Op de huidige pagina's vertaalt index.js; die kent ook de
         // taalvarianten van statische artikelen.
         if (typeof window.wisselTaal === 'function') {
@@ -170,7 +188,7 @@
             if (!optie || optie.getAttribute('aria-checked') === 'true') return;
             kies(groep, optie, false);
             volgAndere(groep, optie.dataset.waarde);
-            toepassen(optie.dataset.waarde);
+            toepassen(optie.dataset.waarde, true);
         });
 
         // Pijltjes, Home en End. Bij weergave kiest dat meteen (zoals een

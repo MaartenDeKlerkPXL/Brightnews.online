@@ -15,7 +15,7 @@ const SITE_URL = 'https://brightnews.online';
 // elke run onnodig laten committen (de "geen wijzigingen"-check hieronder
 // zou nooit meer stil zijn). Werk deze datum handmatig bij zodra je een
 // van de PAGES daadwerkelijk inhoudelijk wijzigt.
-const LAST_MODIFIED = '2026-11-18'; // overstap naar redesign v5
+const LAST_MODIFIED = '2026-11-12'; // overstap naar redesign v5 (adressen)
 
 // Bijgehouden lijst statische pagina's (Fase 4/5-opschoning gecontroleerd:
 // dit zijn de .html-bestanden in de root op het moment van schrijven, minus

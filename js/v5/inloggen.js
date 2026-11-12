@@ -53,6 +53,13 @@
 
     // Alleen een adres op deze site: ?next= mag de lezer niet wegsturen.
     function doel() {
+        // Korte namen, ook die van de oude v5-adressen (v5-home, v5-privacy).
+        const KORT = {
+            home: '/', profiel: '/profiel.html', abonnementen: '/abonnementen.html',
+            privacy: '/Privacy.html', voorwaarden: '/algemeene-voorwaarden.html',
+            refundbeleid: '/refunds.html', archief: '/archief.html',
+        };
+        if (next && Object.hasOwn(KORT, next)) return KORT[next];
         if (next && /^[a-z-]+$/.test(next)) return `/${next}.html`;
         return B.eigenPad(next) || '/profiel.html';
     }

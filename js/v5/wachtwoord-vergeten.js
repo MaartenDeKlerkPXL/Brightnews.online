@@ -38,7 +38,8 @@
     const wachtwoord = $('wv-wachtwoord');
     const foutTekst = $('wv-wachtwoord-fout').querySelector('span');
     const staat = B.param('staat');
-    const isHerstel = B.param('type') === 'recovery';
+    // De oude herstelmails (vóór v5) zetten type=recovery alleen in de hash.
+    const isHerstel = B.param('type') === 'recovery' || /(^|[#&])type=recovery(&|$)/.test(window.location.hash);
     // Supabase zet een mislukte link als fout in het adres (#error_code=otp_expired).
     const linkFout = /(^|[#&])error(_code)?=/.test(window.location.hash);
     let mailAdres = B.param('email') || '';

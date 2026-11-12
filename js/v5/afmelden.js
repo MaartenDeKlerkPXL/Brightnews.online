@@ -12,8 +12,9 @@
 // afmeldpagina. Geen inloggen: een afmeldlink die eerst een wachtwoord vraagt
 // is geen afmeldlink. Zonder token of bij een fout: mislukt. "Toch weer
 // aanmelden" gaat naar Mijn account, waar de mails-schakelaar staat.
-// Nog niet: de List-Unsubscribe-header in de mails (één klik in het
-// mailprogramma).
+// De mails sturen dit adres ook mee als List-Unsubscribe-header (de
+// afmeldknop van het mailprogramma); een programma dat het adres zonder JS
+// ophaalt, meldt dus niets af. Dat is bewust: er is geen server voor een POST.
 //
 // Om de staten te bekijken (alleen lokaal):
 //   ?staat=bezig      blijft bezig

@@ -57,7 +57,9 @@ verbeteringen van de één binnen een dag bij de ander landen:
   (`generate-articles.js`, `generate-categorieen.js`), die de schil zelf uit
   `backend/schil.js` halen. `node backend/stempel-schil.js --controle` faalt
   als een pagina achterloopt.
-- **Redesign v5 (branch `redesign/v5`)** staat los van de live schil:
+- **Redesign v5** (sinds 2026-11-18 op de echte adressen: `index.html`,
+  `profiel.html` enzovoort; `v5-*.html` zijn alleen nog doorstuurpagina's) heeft
+  een eigen schil:
   `partials/v5/` (header met instellingenpaneel, footer), `css/v5/`
   (`basis.css`, `componenten.css`, na `css/fonts.css` en `css/tokens.css`),
   `js/v5/schil.js` en de iconen in `assets/iconen.svg` (gebruik

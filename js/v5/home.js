@@ -21,6 +21,8 @@
     // Oude deellinks (/?id=…, de site van vóór v5): naar het artikel.
     const oudId = B.param('id');
     if (oudId) { window.location.replace(B.url.artikel(oudId)); return; }
+    // Geparkeerd (index.html): het nieuws blijft verborgen, dus ook niet ophalen.
+    if (document.documentElement.classList.contains('geparkeerd')) return;
     const { t, el } = B;
 
     // ── Dagoverzicht bovenaan ────────────────────────────────────────────

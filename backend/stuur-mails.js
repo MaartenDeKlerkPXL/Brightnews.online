@@ -24,14 +24,13 @@ const { createClient } = require('@supabase/supabase-js');
 require('dotenv').config();
 
 const { MAILS, VOET, TALEN, SOORTEN, DAGEN, vulIn } = require('./mailteksten');
+const { mailHtml, escape } = require('./mailopmaak');
 
 const SITE = 'https://brightnews.online';
 const AFZENDER = 'BrightNews <info@brightnews.online>';
 const SUPABASE_URL = 'https://rquuqypgaannrakdrabj.supabase.co';
 const DROOG = process.argv.includes('--droog');
 
-const GROEN = '#32CD32';
-const DONKER = '#1A1A1A';
 
 function client() {
     const sleutel = process.env.SUPABASE_SERVICE_ROLE_KEY;
@@ -81,52 +80,34 @@ function besteArtikel(taal) {
     return top ? { titel: top.titel, url: top.url } : null;
 }
 
-function escape(s) {
-    return String(s)
-        .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;');
-}
-
-// Eén sjabloon voor alle drie de mails. Tabel-layout en inline stijlen: dat is
-// geen slordigheid maar de enige opmaak die Outlook en Gmail allebei correct
-// tonen. Geen externe afbeeldingen, dus niets valt weg als beelden uitstaan.
+// Eén opmaak voor alle drie de mails: de v5-huisstijl uit backend/mailopmaak.js,
+// dezelfde als de mails van Supabase (TODO 74).
 function bouwHtml({ kop, alinea, knop, knopUrl, taal, afmeldUrl }) {
     const voet = VOET[taal] || VOET.nl;
-    const alineas = alinea.map(a =>
-        `<p style="margin:0 0 16px;font-size:16px;line-height:1.6;color:${DONKER}">${escape(a)}</p>`
-    ).join('');
-    return `<!DOCTYPE html>
-<html lang="${taal}"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"></head>
-<body style="margin:0;padding:0;background:#F8FBF8">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#F8FBF8">
-<tr><td align="center" style="padding:32px 16px">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;background:#ffffff;border-radius:12px;overflow:hidden">
-  <tr><td style="height:6px;background:${GROEN};font-size:0;line-height:0">&nbsp;</td></tr>
-  <tr><td style="padding:32px 32px 8px">
-    <p style="margin:0 0 4px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:${GROEN}">BrightNews</p>
-    <h1 style="margin:0 0 20px;font-size:26px;line-height:1.25;color:${DONKER};font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif">${escape(kop)}</h1>
-  </td></tr>
-  <tr><td style="padding:0 32px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif">${alineas}</td></tr>
-  <tr><td style="padding:12px 32px 36px">
-    <a href="${escape(knopUrl)}" style="display:inline-block;background:${GROEN};color:#ffffff;text-decoration:none;font-weight:700;font-size:16px;padding:14px 26px;border-radius:8px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif">${escape(knop)}</a>
-  </td></tr>
-  <tr><td style="padding:20px 32px 28px;border-top:1px solid #E6EDE6;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif">
-    <p style="margin:0 0 6px;font-size:12px;line-height:1.5;color:#6B726B">${escape(voet.reden)}</p>
-    <p style="margin:0;font-size:12px;line-height:1.5;color:#6B726B">${escape(voet.afmeld)}
-      <a href="${escape(afmeldUrl)}" style="color:#6B726B">${escape(voet.afmeldLink)}</a></p>
-  </td></tr>
-</table></td></tr></table></body></html>`;
+    return mailHtml({
+        taal,
+        kop: escape(kop),
+        alineas: alinea.map(escape),
+        knop: escape(knop),
+        knopUrl: escape(knopUrl),
+        voet: [
+            escape(voet.reden),
+            `${escape(voet.afmeld)} <a href="${escape(afmeldUrl)}" style="color:#4e574d">${escape(voet.afmeldLink)}</a>`,
+        ],
+    });
 }
 
-async function verstuur({ naar, onderwerp, html }) {
+async function verstuur({ naar, onderwerp, html, afmeldUrl }) {
     const res = await fetch('https://api.resend.com/emails', {
         method: 'POST',
         headers: {
             'Authorization': `Bearer ${process.env.RESEND_API_KEY}`,
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ from: AFZENDER, to: [naar], subject: onderwerp, html }),
+        // List-Unsubscribe: Gmail en Apple Mail tonen dan zelf een afmeldknop.
+        // Zonder List-Unsubscribe-Post (één klik vraagt een POST-adres, en
+        // GitHub Pages kan geen POST): de knop opent de afmeldpagina.
+        body: JSON.stringify({ from: AFZENDER, to: [naar], subject: onderwerp, html, headers: { 'List-Unsubscribe': `<${afmeldUrl}>` } }),
     });
     if (!res.ok) throw new Error(`Resend ${res.status}: ${(await res.text()).slice(0, 200)}`);
     return (await res.json()).id ?? null;
@@ -229,7 +210,7 @@ async function main() {
         }
 
         try {
-            const id = await verstuur({ naar: g.email, onderwerp: sjabloon.onderwerp, html });
+            const id = await verstuur({ naar: g.email, onderwerp: sjabloon.onderwerp, html, afmeldUrl: `${SITE}/afmelden.html?t=${vk.token}` });
             const { error } = await db.from('mail_log')
                 .insert({ uid: g.id, soort, provider_id: id });
             if (error) console.warn(`⚠️  ${g.email}: verstuurd maar niet gelogd — ${error.message}`);
