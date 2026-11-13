@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-de.xml" rel="self" type="application/rss+xml"/>
         <description>Jeden Tag eine frische Auswahl guter Nachrichten aus aller Welt. Viel Spaß beim Lesen!</description>
         <language>de-de</language>
-        <lastBuildDate>Thu, 12 Nov 2026 19:41:23 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 13 Nov 2026 05:34:42 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Deine tägliche Dosis Positivität</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Mikroplastikfilter von PolyGone Systems geht in Atlantic City in Betrieb</title>
+            <link>https://brightnews.online/articles/de/mikroplastikfilter-von-polygone-systems-geht-in-atlantic-city-in-betrieb-1794548079470lejspo3ad.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/de/mikroplastikfilter-von-polygone-systems-geht-in-atlantic-city-in-betrieb-1794548079470lejspo3ad.html</guid>
+            <pubDate>Fri, 13 Nov 2026 05:34:42 GMT</pubDate>
+            <description>Eine Wasseraufbereitungsanlage in Atlantic City, New Jersey, ist weltweit die erste, die mit einem System ausgestattet ist, das Mikroplastiken aus Abwasser entfernt, bevor es in den Ozean gelangt. Keine Vorschrift verlangt dies bislang, doch das Startup PolyGone Systems baute es trotzdem. Die Gründer Nathaniel Banks und Yidian Liu, beide ehemalige Princeton-Studenten, entwickelten die sogenannten </description>
+            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/modern-urban-wastewater-treatment-plant-Depositphotos_10917326_S.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Städte setzen auf saubere Luft, große Speicher und Grün an der Fassade</title>
             <link>https://brightnews.online/articles/de/stadte-setzen-auf-saubere-luft-gro-e-speicher-und-grun-an-der-fassade-dg-20261111-environment.html</link>
@@ -244,14 +252,6 @@
             <pubDate>Sun, 08 Nov 2026 17:45:40 GMT</pubDate>
             <description>Ein englischer Bürgermeister, Matt Smith, löste selbst einen Diebstahl auf, nachdem die Polizei im Lancashire-Dorf Rufford nicht helfen konnte, da Kamerabilder fehlten. Ab Mai wurden Steine von einer 300 Jahre alten Mauer gestohlen, mit einem geschätzten Wert von etwa $9.000. Nachdem Warnschilder nicht halfen und Kameras zu teuer waren, platzierte Smith einen Apple AirTag in einem losen Stein. Nac</description>
             <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Councillor-Matt-Smith-with-GPS-AirTag-SWNS.jpeg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Entflogener Wellensittich Luna in Regenwasserrinne gefunden – Tipp eines Autofahrers führt zum Erfolg</title>
-            <link>https://brightnews.online/articles/de/entflogener-wellensittich-luna-in-regenwasserrinne-gefunden-tipp-eines-autofahre-1794159908740k3cmzwac9.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/de/entflogener-wellensittich-luna-in-regenwasserrinne-gefunden-tipp-eines-autofahre-1794159908740k3cmzwac9.html</guid>
-            <pubDate>Sun, 08 Nov 2026 17:45:11 GMT</pubDate>
-            <description>Ein Wellensittich namens Luna ist wohlbehalten zurück, nachdem er davongeflogen war, als Sturm Boelo ein Küchenfenster in Northampton, England aufgerissen hatte. Ein vorbeifahrender Autofahrer entdeckte den kleinen Vogel in einer Regenwasserrinne am Straßenrand hüpfend und alarmierte die RSPCA. Inspekteur Richard Durant und Praktikantin Rosie Cowie kamen vor Ort und hörten Lunas Schnäbelchen aus e</description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Bird-rescued-from-sewer-pipe-RSPCA-and-SWNS.jpeg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

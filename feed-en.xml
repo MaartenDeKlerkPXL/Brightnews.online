@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-en.xml" rel="self" type="application/rss+xml"/>
         <description>A fresh pick of good news from around the world, every day. Enjoy the read!</description>
         <language>en-us</language>
-        <lastBuildDate>Thu, 12 Nov 2026 19:41:23 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 13 Nov 2026 05:34:42 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Your Daily Dose of Positivity</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>PolyGone Systems microplastics filter launches in Atlantic City</title>
+            <link>https://brightnews.online/articles/en/polygone-systems-microplastics-filter-launches-in-atlantic-city-1794548079470lejspo3ad.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/polygone-systems-microplastics-filter-launches-in-atlantic-city-1794548079470lejspo3ad.html</guid>
+            <pubDate>Fri, 13 Nov 2026 05:34:42 GMT</pubDate>
+            <description>A water treatment facility in Atlantic City, New Jersey, has become the first in the world to be equipped with a system that removes microplastics from wastewater before it enters the ocean. No law currently requires this, but startup PolyGone Systems built it anyway. Founders Nathaniel Banks and Yidian Liu, both former Princeton students, designed the so-called Polypods: a system...</description>
+            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/modern-urban-wastewater-treatment-plant-Depositphotos_10917326_S.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Cities choose clean air, massive storage and green on the facade</title>
             <link>https://brightnews.online/articles/en/cities-choose-clean-air-massive-storage-and-green-on-the-facade-dg-20261111-environment.html</link>
@@ -244,14 +252,6 @@
             <pubDate>Sun, 08 Nov 2026 17:45:40 GMT</pubDate>
             <description>An English mayor, Matt Smith, solved a theft himself after police in the Lancashire village of Rufford could not help due to lack of camera footage. From May onwards, stones were stolen from a 300-year-old wall, with an estimated value of around $9,000. After warning signs proved ineffective and cameras were too expensive, Smith placed an Apple AirTag in a...</description>
             <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Councillor-Matt-Smith-with-GPS-AirTag-SWNS.jpeg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Escaped parakeet Luna found in drain after motorist&apos;s tip</title>
-            <link>https://brightnews.online/articles/en/escaped-parakeet-luna-found-in-drain-after-motorist-s-tip-1794159908740k3cmzwac9.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/escaped-parakeet-luna-found-in-drain-after-motorist-s-tip-1794159908740k3cmzwac9.html</guid>
-            <pubDate>Sun, 08 Nov 2026 17:45:11 GMT</pubDate>
-            <description>A parakeet named Luna has been reunited with her owner after flying away when storm Boelo blew open a kitchen window in Northampton, England. A passing motorist spotted the little bird hopping in a roadside drain and alerted the RSPCA. Inspector Richard Durant and trainee Rosie Cowie attended the scene and found Luna&apos;s beak, chirping from a pipe in the...</description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Bird-rescued-from-sewer-pipe-RSPCA-and-SWNS.jpeg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

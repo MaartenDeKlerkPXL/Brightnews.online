@@ -1,5 +1,53 @@
 [
  {
+  "datum": "2026-11-13T05:33:56.057Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "‘There’s a Georgia O’Keeffe in the Closet’ – Words that Led to Painting’s Joyous Rediscovery",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 2,
+  "totaal": 8,
+  "besluit": "ja",
+  "reden": "Terugvinding van verloren kunstwerk is hartverwarmend; positief geformuleerd; persoonlijk verhaal met beperkte maatschappelijke lading maar sterke emotionele resonantie."
+ },
+ {
+  "datum": "2026-11-13T05:33:56.057Z",
+  "bron": "OptimistDaily.com",
+  "titel": "How two Princeton graduates built the world’s first microplastics removal system",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Doorbraak in milieuprobleem door innovatieve oplossing; hoopgevend en maatschappelijk relevant; volledig positief geformuleerd."
+ },
+ {
+  "datum": "2026-11-13T05:33:56.057Z",
+  "bron": "OptimistDaily.com",
+  "titel": "Why spiders show up in your home every fall, and what to do about it",
+  "uitsluiting": "geen",
+  "gevoel": 1,
+  "formulering": 2,
+  "relevantie": 2,
+  "totaal": 5,
+  "besluit": "nee",
+  "reden": "Informatief stuk over natuurverschijnsel; mild positief maar vooral praktisch-neutraal van toon; geen hartverwarmend of hoopgevend kernverhaal."
+ },
+ {
+  "datum": "2026-11-13T05:33:56.057Z",
+  "bron": "NPR.org",
+  "titel": "This week in science: PTSD prediction, phishing while tired, an exoplanet",
+  "uitsluiting": "verzameleditie",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Dit is een podcast-transcript dat drie losse wetenschapsverhalen bundelt; een weekoverzicht in gespreksformaat, niet een eigen verhaal."
+ },
+ {
   "datum": "2026-11-12T19:39:28.563Z",
   "bron": "GoodNewsNetwork.org",
   "titel": "China Switches on World’s Biggest Example of New, Cheap Green Energy Storage",
@@ -3550,53 +3598,5 @@
   "totaal": 0,
   "besluit": "nee",
   "reden": "Titel en tekst geven onvoldoende inhoud om de betekenis of het verhaal te begrijpen."
- },
- {
-  "datum": "2026-10-30T17:51:11.293Z",
-  "bron": "Openaccessgovernment.org",
-  "titel": "NASA’s SpaceX resupply mission delivers science experiments and solar arrays to space station",
-  "uitsluiting": "geen",
-  "gevoel": 2,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 8,
-  "besluit": "ja",
-  "reden": "Maatschappelijk relevant ruimtevaartnieuws; positief geformuleerd over succesvolle missie en onderzoek."
- },
- {
-  "datum": "2026-10-30T17:51:11.293Z",
-  "bron": "PBS.org",
-  "titel": "Saving the Ocean While Saving Myself",
-  "uitsluiting": "geen",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 4,
-  "totaal": 10,
-  "besluit": "ja",
-  "reden": "Persoonlijk transformatieverhaal waarin kankerdiagnose aanleiding is, maar genezing en betekenis de kern vormen; zeer herkenbaar."
- },
- {
-  "datum": "2026-10-30T17:51:11.293Z",
-  "bron": "PBS.org",
-  "titel": "Conservacion hasta la tambora/ Conservation to the Core",
-  "uitsluiting": "te-weinig-inhoud",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Tekst breekt af en geeft onvoldoende inhoud; onmogelijk te beoordelen wat het verhaal werkelijk is."
- },
- {
-  "datum": "2026-10-30T17:51:11.293Z",
-  "bron": "PBS.org",
-  "titel": "How the Yerevan Biodiversity Conference Can Help Save Asia’s Vanishing Wild Pigs",
-  "uitsluiting": "geen",
-  "gevoel": 2,
-  "formulering": 2,
-  "relevantie": 3,
-  "totaal": 7,
-  "besluit": "nee",
-  "reden": "Maatschappelijk relevant natuurbeschermingsverhaal; positief gericht op oplossingen via conferentie, ondanks ernstige aanleiding."
  }
 ]

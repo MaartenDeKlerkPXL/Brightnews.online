@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-nl.xml" rel="self" type="application/rss+xml"/>
         <description>Elke dag een verse selectie goed nieuws uit de hele wereld, veel leesplezier!</description>
         <language>nl-nl</language>
-        <lastBuildDate>Thu, 12 Nov 2026 19:41:23 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 13 Nov 2026 05:34:42 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Jouw Dagelijkse Dosis Positiviteit</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Microplasticfilter van PolyGone Systems gaat in Atlantic City draaien</title>
+            <link>https://brightnews.online/articles/nl/microplasticfilter-van-polygone-systems-gaat-in-atlantic-city-draaien-1794548079470lejspo3ad.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/nl/microplasticfilter-van-polygone-systems-gaat-in-atlantic-city-draaien-1794548079470lejspo3ad.html</guid>
+            <pubDate>Fri, 13 Nov 2026 05:34:42 GMT</pubDate>
+            <description>Een waterzuiveringsinstallatie in Atlantic City, New Jersey, is als eerste ter wereld uitgerust met een systeem dat microplastics uit afvalwater haalt voordat het de oceaan instroomt. Geen enkele wet verplicht dit nog, maar startup PolyGone Systems bouwde het toch. Oprichters Nathaniel Banks en Yidian Liu, beiden voormalig Princeton-student, ontwierpen de zogeheten Polypods: een systeem dat het op</description>
+            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/modern-urban-wastewater-treatment-plant-Depositphotos_10917326_S.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Steden kiezen voor schone lucht, grote opslag en groen op de gevel</title>
             <link>https://brightnews.online/articles/nl/steden-kiezen-voor-schone-lucht-grote-opslag-en-groen-op-de-gevel-dg-20261111-environment.html</link>
@@ -244,14 +252,6 @@
             <pubDate>Sun, 08 Nov 2026 17:45:40 GMT</pubDate>
             <description>Een Engelse burgemeester, Matt Smith, loste zelf een diefstal op nadat de politie in het Lancashire-dorp Rufford niet kon helpen door gebrek aan camerabeelden. Vanaf mei werden stenen gestolen van een 300 jaar oude muur, met een geschatte waarde van zo&apos;n $9.000. Nadat waarschuwingsborden niet hielpen en camera&apos;s te duur waren, plaatste Smith een Apple AirTag in een losse steen....</description>
             <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Councillor-Matt-Smith-with-GPS-AirTag-SWNS.jpeg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Ontsnapte parkiet Luna teruggevonden in regenput na tip automobilist</title>
-            <link>https://brightnews.online/articles/nl/ontsnapte-parkiet-luna-teruggevonden-in-regenput-na-tip-automobilist-1794159908740k3cmzwac9.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/nl/ontsnapte-parkiet-luna-teruggevonden-in-regenput-na-tip-automobilist-1794159908740k3cmzwac9.html</guid>
-            <pubDate>Sun, 08 Nov 2026 17:45:11 GMT</pubDate>
-            <description>Een parkiet genaamd Luna is terecht nadat ze was weggevlogen toen storm Boelo een keukenraam in Northampton, Engeland openblies. Een voorbijrijdende automobilist zag het vogeltje in een regenput aan de kant van de weg hoppen en waarschuwde de RSPCA. Inspecteur Richard Durant en stagiair Rosie Cowie kwamen ter plaatse en troffen Luna&apos;s snaveltje aan, piepend uit een pijp in de...</description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Bird-rescued-from-sewer-pipe-RSPCA-and-SWNS.jpeg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

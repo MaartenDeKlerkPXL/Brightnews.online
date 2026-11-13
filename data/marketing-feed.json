@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-11-12T19:41:25.984Z",
+ "gegenereerd": "2026-11-13T05:34:46.954Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -22,6 +22,14 @@
      "url": "https://brightnews.online/articles/nl/100-dichters-schrijven-bundel-over-dakloosheid-voor-goed-doel-17944249637321olk07x2s.html"
     },
     {
+     "id": "1794548079470lejspo3ad",
+     "titel": "Microplasticfilter van PolyGone Systems gaat in Atlantic City draaien",
+     "teaser": "Een waterzuiveringsinstallatie in Atlantic City, New Jersey, is als eerste ter wereld uitgerust met een systeem dat microplastics uit afvalwater haalt voordat het de oceaan instroomt. Geen enkele wet verplicht dit nog, maar startup PolyGone Systems bouwde het toch. Oprichters Nathaniel Banks en Yidian Liu, beiden voormalig Princeton-student, ontwierpen de zogeheten Polypods: een systeem dat het oppervlak van ultrahydrofobe moerasplanten...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/microplasticfilter-van-polygone-systems-gaat-in-atlantic-city-draaien-1794548079470lejspo3ad.html"
+    },
+    {
      "id": "1794512393169a6sm5uwey",
      "titel": "China schakelt grootste vloeibare-luchtbatterij ter wereld in",
      "teaser": "In de Chinese provincie Qinghai is de grootste demonstratiecentrale ter wereld voor liquid-air energy storage (LAES) in gebruik genomen. De installatie gebruikt groene stroom om lucht samen te persen tot extreme dichtheid, waarna het vloeibaar wordt bij circa -190°C. Bij vraag wordt de vloeistof weer opgewarmd, waardoor ze snel uitzet tot gas en een turbine aandrijft die stroom teruglevert aan...",
@@ -36,14 +44,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/103-jarige-d-day-veteraan-douglas-halley-krijgt-verloren-oorlogsmedailles-terug-1794505697568p3w3b6tmd.html"
-    },
-    {
-     "id": "1794500717896bmb6ztw21",
-     "titel": "Tieners redden overstroomde buren op paddleboard in Florida",
-     "teaser": "In Brevard County, Florida, zorgde een '1000-jaar regenval' voor overstromingen in onder meer Melbourne, Port Lucie en Palm Bay. Brittany Grant zat met haar zoon en 3 honden op het aanrecht terwijl het water bleef stijgen; 911 kon haar niet bereiken. Via Facebook riep ze om hulp. Buurvrouw Stephanie Fanguy stuurde haar zoons Jonah (15) en Lucas (17) op paddleboards...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/tieners-redden-overstroomde-buren-op-paddleboard-in-florida-1794500717896bmb6ztw21.html"
     }
    ],
    "dagoverzichten": [
@@ -96,6 +96,14 @@
      "url": "https://brightnews.online/articles/en/100-poets-write-anthology-on-homelessness-for-charity-17944249637321olk07x2s.html"
     },
     {
+     "id": "1794548079470lejspo3ad",
+     "titel": "PolyGone Systems microplastics filter launches in Atlantic City",
+     "teaser": "A water treatment facility in Atlantic City, New Jersey, has become the first in the world to be equipped with a system that removes microplastics from wastewater before it enters the ocean. No law currently requires this, but startup PolyGone Systems built it anyway. Founders Nathaniel Banks and Yidian Liu, both former Princeton students, designed the so-called Polypods: a system...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/polygone-systems-microplastics-filter-launches-in-atlantic-city-1794548079470lejspo3ad.html"
+    },
+    {
      "id": "1794512393169a6sm5uwey",
      "titel": "China switches on world's largest liquid-air battery",
      "teaser": "In China's Qinghai province, the world's largest demonstration facility for liquid-air energy storage (LAES) has been put into operation. The installation uses green electricity to compress air to extreme density, after which it becomes liquid at approximately -190°C. When demand arises, the liquid is reheated, causing it to rapidly expand into gas and drive a turbine that feeds electricity back...",
@@ -110,14 +118,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/103-year-old-d-day-veteran-douglas-halley-gets-lost-war-medals-back-1794505697568p3w3b6tmd.html"
-    },
-    {
-     "id": "1794500717896bmb6ztw21",
-     "titel": "Teenagers rescue flooded neighbors on paddleboard in Florida",
-     "teaser": "In Brevard County, Florida, a '1000-year rainfall' caused flooding in Melbourne, Port Lucie and Palm Bay, among other areas. Brittany Grant sat on her kitchen counter with her son and 3 dogs as water continued to rise; 911 couldn't reach her. She called for help via Facebook. Neighbor Stephanie Fanguy sent her sons Jonah (15) and Lucas (17) out on...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/teenagers-rescue-flooded-neighbors-on-paddleboard-in-florida-1794500717896bmb6ztw21.html"
     }
    ],
    "dagoverzichten": [
@@ -170,6 +170,14 @@
      "url": "https://brightnews.online/articles/de/100-dichter-schreiben-gedichtsammlung-uber-obdachlosigkeit-fur-gemeinnutzigen-zw-17944249637321olk07x2s.html"
     },
     {
+     "id": "1794548079470lejspo3ad",
+     "titel": "Mikroplastikfilter von PolyGone Systems geht in Atlantic City in Betrieb",
+     "teaser": "Eine Wasseraufbereitungsanlage in Atlantic City, New Jersey, ist weltweit die erste, die mit einem System ausgestattet ist, das Mikroplastiken aus Abwasser entfernt, bevor es in den Ozean gelangt. Keine Vorschrift verlangt dies bislang, doch das Startup PolyGone Systems baute es trotzdem. Die Gründer Nathaniel Banks und Yidian Liu, beide ehemalige Princeton-Studenten, entwickelten die sogenannten Polypods: ein System, das die Oberfläche...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/mikroplastikfilter-von-polygone-systems-geht-in-atlantic-city-in-betrieb-1794548079470lejspo3ad.html"
+    },
+    {
      "id": "1794512393169a6sm5uwey",
      "titel": "China schaltet weltgrößte Flüssiglufbatterie ein",
      "teaser": "In der chinesischen Provinz Qinghai ist das weltweit größte Demonstrationskraftwerk für Flüssigluftenergiespeicherung (LAES) in Betrieb genommen worden. Die Anlage nutzt grünen Strom, um Luft auf extreme Dichte zu komprimieren, woraufhin sie bei etwa -190°C flüssig wird. Bei Bedarf wird die Flüssigkeit wieder erwärmt, wodurch sie schnell zu Gas expandiert und eine Turbine antreibt, die Strom ins Netz zurückliefert. Das Kraftwerk...",
@@ -184,14 +192,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/103-jahriger-d-day-veteran-douglas-halley-erhalt-verlorene-kriegsmedaillen-zuruc-1794505697568p3w3b6tmd.html"
-    },
-    {
-     "id": "1794500717896bmb6ztw21",
-     "titel": "Teenager retten überflutete Nachbarn auf Paddleboard in Florida",
-     "teaser": "In Brevard County, Florida, sorgte ein „1000-Jahre-Regen\" für Überschwemmungen unter anderem in Melbourne, Port Lucie und Palm Bay. Brittany Grant saß mit ihrem Sohn und 3 Hunden auf der Küchentheke, während das Wasser weiter stieg; 911 konnte sie nicht erreichen. Über Facebook rief sie um Hilfe. Nachbarin Stephanie Fanguy schickte ihre Söhne Jonah (15) und Lucas (17) auf Paddleboards los....",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/teenager-retten-uberflutete-nachbarn-auf-paddleboard-in-florida-1794500717896bmb6ztw21.html"
     }
    ],
    "dagoverzichten": [
@@ -244,6 +244,14 @@
      "url": "https://brightnews.online/articles/fr/100-poetes-ecrivent-un-recueil-sur-le-sans-abrisme-pour-une-bonne-cause-17944249637321olk07x2s.html"
     },
     {
+     "id": "1794548079470lejspo3ad",
+     "titel": "Le filtre à microplastiques de PolyGone Systems se met en marche à Atlantic City",
+     "teaser": "Une installation de traitement des eaux à Atlantic City, New Jersey, est la première au monde à être équipée d'un système qui extrait les microplastiques des eaux usées avant qu'elles ne se déversent dans l'océan. Aucune loi n'impose cela pour l'instant, mais la startup PolyGone Systems l'a construit de toute façon. Les fondateurs Nathaniel Banks et Yidian Liu, tous deux...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/le-filtre-a-microplastiques-de-polygone-systems-se-met-en-marche-a-atlantic-city-1794548079470lejspo3ad.html"
+    },
+    {
      "id": "1794512393169a6sm5uwey",
      "titel": "La Chine met en service la plus grande batterie à air liquide du monde",
      "teaser": "Dans la province chinoise du Qinghai, la plus grande centrale de démonstration mondiale de stockage d'énergie par air liquide (LAES) a été mise en service. L'installation utilise l'électricité verte pour comprimer l'air à une densité extrême, ce qui le rend liquide à environ -190°C. À la demande, le liquide est réchauffé, ce qui le fait rapidement se dilater en gaz...",
@@ -258,14 +266,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/veteran-du-d-day-age-de-103-ans-douglas-halley-retrouve-ses-medailles-de-guerre-1794505697568p3w3b6tmd.html"
-    },
-    {
-     "id": "1794500717896bmb6ztw21",
-     "titel": "Des adolescents sauvent des voisins sur paddle lors d'inondations en Floride",
-     "teaser": "Dans le comté de Brevard, en Floride, une « pluie millénaire » a provoqué des inondations dans plusieurs villes dont Melbourne, Port Lucie et Palm Bay. Brittany Grant s'était réfugiée avec son fils et ses 3 chiens sur le plan de travail de sa cuisine tandis que l'eau continuait de monter ; le 911 ne pouvait pas la joindre. Elle...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/des-adolescents-sauvent-des-voisins-sur-paddle-lors-d-inondations-en-floride-1794500717896bmb6ztw21.html"
     }
    ],
    "dagoverzichten": [
@@ -318,6 +318,14 @@
      "url": "https://brightnews.online/articles/es/100-poetas-escriben-un-poemario-sobre-la-falta-de-vivienda-con-fines-beneficos-17944249637321olk07x2s.html"
     },
     {
+     "id": "1794548079470lejspo3ad",
+     "titel": "El filtro de microplásticos de PolyGone Systems entra en funcionamiento en Atlantic City",
+     "teaser": "Una planta de tratamiento de aguas residuales en Atlantic City, Nueva Jersey, es la primera del mundo equipada con un sistema que extrae microplásticos del agua residual antes de que llegue al océano. Ninguna ley lo exige aún, pero la startup PolyGone Systems lo construyó de todas formas. Los fundadores Nathaniel Banks y Yidian Liu, ambos antiguos estudiantes de Princeton,...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/el-filtro-de-microplasticos-de-polygone-systems-entra-en-funcionamiento-en-atlan-1794548079470lejspo3ad.html"
+    },
+    {
      "id": "1794512393169a6sm5uwey",
      "titel": "China pone en marcha la mayor batería de aire líquido del mundo",
      "teaser": "En la provincia china de Qinghai se ha puesto en funcionamiento la mayor central de demostración mundial de almacenamiento de energía de aire líquido (LAES). La instalación utiliza electricidad verde para comprimir aire hasta una densidad extrema, tras lo cual se vuelve líquido a aproximadamente -190°C. Cuando hay demanda, el líquido se calienta nuevamente, lo que hace que se expanda...",
@@ -332,14 +340,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/veterano-de-d-day-de-103-anos-recupera-sus-medallas-de-guerra-perdidas-1794505697568p3w3b6tmd.html"
-    },
-    {
-     "id": "1794500717896bmb6ztw21",
-     "titel": "Adolescentes rescatan a vecinos inundados en tabla de remo en Florida",
-     "teaser": "En Brevard County, Florida, una «lluvia de mil años» provocó inundaciones en localidades como Melbourne, Port Lucie y Palm Bay. Brittany Grant estaba con su hijo y 3 perros en la encimera mientras el agua seguía subiendo; el 911 no podía localizarla. A través de Facebook pidió ayuda. Su vecina Stephanie Fanguy envió a sus hijos Jonah (15) y Lucas...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/adolescentes-rescatan-a-vecinos-inundados-en-tabla-de-remo-en-florida-1794500717896bmb6ztw21.html"
     }
    ],
    "dagoverzichten": [
