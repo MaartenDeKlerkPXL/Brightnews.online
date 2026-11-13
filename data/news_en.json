@@ -1,5 +1,76 @@
 [
   {
+    "id": "dg-20261112-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-11-12",
+    "title": "Hidden treasures and old bonds come to light",
+    "summary": "Sometimes it takes years before something hidden surfaces again. This week, three stories show how patience and chance combine to create something beautiful: a family that finds each other after decades, a neighbor who stands ready for his neighbors during a flood, and a painting that has been quietly waiting in a closet all this time. Rodney Anderson from England is 81 years old and never knew who his real father was [1]. His mother had him in 1945, after a relationship with a Canadian soldier during the war. In Canada, his cousin Bethany Allen had been searching for this...",
+    "image_alt": "Hidden treasures and old bonds come to light",
+    "meta_description": "A family secret solved after 80 years, a neighbor who rescues during a flood, and a lost O'Keeffe painting recovered.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Left-Charles-Blackney-holding-his-Canadian-daughter-in-1942-right-Yvonne-Anderson-holding-Rodney-in-1945-credits-Dawn-Anderson.jpg",
+    "date": "2026-11-13T19:22:56.128Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "1794597697977w9jqwal0r",
+        "title": "DNA test solves 80-year-old family secret after WWII romance"
+      },
+      {
+        "id": "1794597672167ip5gkm2wn",
+        "title": "Man rescues vulnerable neighbors from 'biblical' Florida flooding"
+      },
+      {
+        "id": "17945977229611snnbca6a",
+        "title": "Lost Georgia O'Keeffe painting rediscovered in closet"
+      }
+    ]
+  },
+  {
+    "id": "17945977229611snnbca6a",
+    "title": "Lost Georgia O'Keeffe painting rediscovered in closet",
+    "summary": "A woman introducing herself as Betsy discovered an oil painting in a closet of her East Village apartment four years after a remark from her deceased aunt. It turned out to be 'Near Abiquiu, New Mexico I', painted by Georgia O'Keeffe in 1930. The work was given to the aunt in 1963 by O'Keeffe's art dealer in Manhattan as a...",
+    "image_alt": "Painting 'Near Abiquiu, New Mexico I' by Georgia O'Keeffe, rediscovered in a closet",
+    "meta_description": "Lost Georgia O'Keeffe painting discovered in closet, to be auctioned at Christie's for an estimated $3 million.",
+    "meta_keywords": "Georgia O'Keeffe, Christie's, art auction, Near Abiquiu New Mexico, rediscovered painting, Downtown Gallery",
+    "link": "https://www.goodnewsnetwork.org/theres-a-georgia-okeefe-in-the-closet-words-that-led-to-paintings-joyous-rediscovery/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-Christies-released.jpg",
+    "date": "2026-11-13T19:22:04.390Z",
+    "category": "Lifestyle",
+    "score": 8
+  },
+  {
+    "id": "1794597697977w9jqwal0r",
+    "title": "DNA test solves 80-year-old family secret after WWII romance",
+    "summary": "Rodney Anderson (81) from England never knew who his real father was. His mother Yvonne had him in 1945 in Farnham, following a relationship with Canadian soldier Charles Blakney during World War II. In Canada, Bethany Allen had been searching since 2008 for this mysterious uncle, after discovering through divorce papers that her grandfather Blakney had fathered a child in...",
+    "image_alt": "Elderly English man looks at old family photos after discovering his Canadian roots",
+    "meta_description": "DNA test reunites 81-year-old Brit with Canadian family, 80 years after WWII romance between his mother and a Canadian soldier.",
+    "meta_keywords": "DNA test, World War II, family reunion, Ancestry, Canada, England, long-lost family",
+    "link": "https://www.goodnewsnetwork.org/canadian-family-finally-identifies-grandfathers-long-lost-wwii-baby-in-england-after-80-years/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Left-Charles-Blackney-holding-his-Canadian-daughter-in-1942-right-Yvonne-Anderson-holding-Rodney-in-1945-credits-Dawn-Anderson.jpg",
+    "date": "2026-11-13T19:21:39.552Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "1794597672167ip5gkm2wn",
+    "title": "Man rescues vulnerable neighbors from 'biblical' Florida flooding",
+    "summary": "Rick Addante from Palm Bay, Florida, rescued his vulnerable neighbors during a flood he himself described as 'biblical'. On Monday, between 16 and 22 inches of rain fell in a single day, part of what is being called a 1,000-year rainfall event. Addante helped his 80-year-old neighbor Terry, who had recently undergone open-heart surgery and was struggling to breathe, from...",
+    "image_alt": "Rescue workers with airboat assist residents during flooding in Palm Bay, Florida",
+    "meta_description": "Rick Addante rescued his vulnerable neighbors during a 'biblical' flood in Palm Bay, Florida, with the help of airboats.",
+    "meta_keywords": "Florida flooding, Palm Bay, rescue operation, Rick Addante, airboat, ALS, helping neighbors",
+    "link": "https://www.goodnewsnetwork.org/update-stories-of-daring-rescues-continue-to-surface-from-flooded-florida-communities/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-@rickaddante-via-X.jpg",
+    "date": "2026-11-13T19:21:14.645Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
     "id": "1794548079470lejspo3ad",
     "title": "PolyGone Systems microplastics filter launches in Atlantic City",
     "summary": "A water treatment facility in Atlantic City, New Jersey, has become the first in the world to be equipped with a system that removes microplastics from wastewater before it enters the ocean. No law currently requires this, but startup PolyGone Systems built it anyway. Founders Nathaniel Banks and Yidian Liu, both former Princeton students, designed the so-called Polypods: a system...",
@@ -2485,61 +2556,5 @@
     "date": "2026-10-02T17:37:07.751Z",
     "category": "Environment",
     "score": 8
-  },
-  {
-    "id": "1790962599697ktmscal92",
-    "title": "British National Museums remain free for foreign visitors",
-    "summary": "The British government has decided that the 14 national museums, including the National Gallery, the British Museum and the Natural History Museum, will remain free for international visitors. These institutions attract tens of millions of visitors combined each year. The decision follows months of consultation between government departments, the tourism sector and London museums, following an independent report by former...",
-    "image_alt": "Visitors at the entrance of a British national museum",
-    "meta_description": "British national museums remain free for foreign visitors, despite advice for admission charges.",
-    "meta_keywords": "British museums, free access, British Museum, National Gallery, Natural History Museum, Margaret Hodge, Sadiq Khan, tourism",
-    "link": "https://www.goodnewsnetwork.org/uks-national-museums-to-continue-25-year-policy-of-free-entry-for-foreign-visitors/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2024/06/The-British-Museum-credit-Luke-Massey-the-Greater-London-National-Park-City-Initiative.jpg",
-    "date": "2026-10-02T17:36:42.000Z",
-    "category": "Lifestyle",
-    "score": 8
-  },
-  {
-    "id": "1790915745699jdltmr09h",
-    "title": "Extended paternity leave improves mother and baby health",
-    "summary": "A father took several weeks of paternity leave when his second child was born. During that time, he became more confident in his role as primary caregiver and built connections with other parents in his neighbourhood. Research shows that longer leave for the parent who gave birth, combined with moderate leave for their partner, improves babies' mental health and reduces...",
-    "image_alt": "Father with baby during paternity leave",
-    "meta_description": "Paternity leave improves the health of mother and baby and creates a more balanced distribution of family tasks.",
-    "meta_keywords": "paternity leave, parental leave, postpartum health, breastfeeding, family life, fathers",
-    "link": "https://www.goodgoodgood.co/articles/benefits-of-paternal-leave-policies",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abea24c311dd07800e88db3_6abea24b8c97d764568e439a_benefits-of-paternal-leave-policies-featured.webp",
-    "date": "2026-10-02T04:35:46.556Z",
-    "category": "Health",
-    "score": 10
-  },
-  {
-    "id": "1790915722910dy2bhv992",
-    "title": "Retired FBI agent saves 100-year-old apple trees from extinction",
-    "summary": "Since his retirement in 2012, former FBI agent Dave Benscoter from Washington has been searching for nearly extinct apple varieties in the northwestern United States. After pruning trees at a parishioner's home, he discovered unknown apple species and delved into natural studies, family recipes, and old newspaper articles from agricultural fairs. Together with Joanie Cooper and Sean Shepherd from the...",
-    "image_alt": "Old apple tree in an orchard with ripe apples",
-    "meta_description": "Former FBI agent Dave Benscoter has been tracking down nearly extinct apple varieties for 20 years through the Lost Apple Project.",
-    "meta_keywords": "Lost Apple Project, Dave Benscoter, apple trees, endangered apple varieties, Washington, DNA identification, Kittageskee",
-    "link": "https://www.goodgoodgood.co/articles/fbi-agent-retired-lost-apple-project",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abec7f5a9d9e28bb0e30156_6abec7f4d9fecf0aa42e3252_fbi-agent-retired-lost-apple-project-featured.webp",
-    "date": "2026-10-02T04:35:23.918Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1790915698438o8uvk9fkv",
-    "title": "Sycamore Gap tree shows new shoots over a meter tall three years after felling",
-    "summary": "Three years after the illegal felling of the famous Sycamore Gap tree at Hadrian's Wall in Northumberland, new aerial photographs reveal that the stump is flourishing. Around the stump, a thick ring of new shoots has emerged, now reaching between two and three feet (approximately 60 to 90 centimetres) in height. Andrew Poad of the National Trust says that special...",
-    "image_alt": "Aerial photograph of the Sycamore Gap tree stump with a ring of new green shoots",
-    "meta_description": "Three years after the felling of the Sycamore Gap tree, new shoots over a metre tall are growing around the stump.",
-    "meta_keywords": "Sycamore Gap, Hadrian's Wall, National Trust, tree restoration, Northumberland, illegal felling",
-    "link": "https://www.goodnewsnetwork.org/flourishing-sycamore-gap-tree-has-ring-of-new-shoots-already-3-feet-tall/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/overlooking-the-sycamore-gap-stump-on-hadrians-wall.-credit-nt-images-annapurna-mellor.jpg",
-    "date": "2026-10-02T04:35:01.048Z",
-    "category": "Environment",
-    "score": 9
   }
 ]

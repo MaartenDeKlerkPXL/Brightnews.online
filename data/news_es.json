@@ -1,5 +1,76 @@
 [
   {
+    "id": "dg-20261112-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-11-12",
+    "title": "Tesoros ocultos y lazos antiguos salen a la luz",
+    "summary": "A veces pasan años antes de que algo oculto vuelva a emerger. Esta semana, tres historias muestran cómo la paciencia y la casualidad juntas producen algo hermoso: una familia que se reencuentra después de decenas de años, un vecino que está presente para sus vecinos durante una inundación, y un cuadro que todo ese tiempo estuvo esperando en silencio dentro de un armario. Rodney Anderson, de Inglaterra, tiene 81 años y nunca supo quién era su verdadero padre [1]. Su madre lo tuvo en 1945, después de una relación con un soldado canadiense durante la guerra. En Canadá, su prima...",
+    "image_alt": "Tesoros ocultos y lazos antiguos salen a la luz",
+    "meta_description": "Un secreto familiar resuelto después de 80 años, un vecino que rescata durante una inundación y un cuadro perdido de O'Keeffe recuperado.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Left-Charles-Blackney-holding-his-Canadian-daughter-in-1942-right-Yvonne-Anderson-holding-Rodney-in-1945-credits-Dawn-Anderson.jpg",
+    "date": "2026-11-13T19:22:56.128Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "1794597697977w9jqwal0r",
+        "title": "Prueba de ADN resuelve secreto familiar de 80 años tras romance en la IIGM"
+      },
+      {
+        "id": "1794597672167ip5gkm2wn",
+        "title": "Hombre rescata a vecinos vulnerables de inundación «bíblica» en Florida"
+      },
+      {
+        "id": "17945977229611snnbca6a",
+        "title": "Cuadro perdido de Georgia O'Keeffe reaparece en un armario"
+      }
+    ]
+  },
+  {
+    "id": "17945977229611snnbca6a",
+    "title": "Cuadro perdido de Georgia O'Keeffe reaparece en un armario",
+    "summary": "Una mujer que se presenta como Betsy encontró cuatro años después de una observación de su tía fallecida un óleo en un armario de su apartamento en East Village. Se trataba de «Near Abiquiu, New Mexico I», pintado por Georgia O'Keeffe en 1930. La obra fue entregada en 1963 por el marchante de arte de O'Keeffe en Manhattan a la...",
+    "image_alt": "Cuadro «Near Abiquiu, New Mexico I» de Georgia O'Keeffe, reaparecido en un armario",
+    "meta_description": "Cuadro perdido de Georgia O'Keeffe descubierto en un armario, subastado en Christie's por aproximadamente 3 millones de dólares.",
+    "meta_keywords": "Georgia O'Keeffe, Christie's, subasta de arte, Near Abiquiu New Mexico, cuadro redescubierto, Downtown Gallery",
+    "link": "https://www.goodnewsnetwork.org/theres-a-georgia-okeefe-in-the-closet-words-that-led-to-paintings-joyous-rediscovery/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-Christies-released.jpg",
+    "date": "2026-11-13T19:22:04.390Z",
+    "category": "Lifestyle",
+    "score": 8
+  },
+  {
+    "id": "1794597697977w9jqwal0r",
+    "title": "Prueba de ADN resuelve secreto familiar de 80 años tras romance en la IIGM",
+    "summary": "Rodney Anderson (81) de Inglaterra nunca supo quién era su verdadero padre. Su madre Yvonne lo tuvo en 1945 en Farnham, tras una relación con el soldado canadiense Charles Blakney durante la Segunda Guerra Mundial. En Canadá, Bethany Allen buscaba desde 2008 a este misterioso tío, después de descubrir a través de documentos de divorcio que su abuelo Blakney había...",
+    "image_alt": "Hombre inglés mayor observa fotografías antiguas de la familia tras descubrir sus raíces canadienses",
+    "meta_description": "Prueba de ADN une a británico de 81 años con familia canadiense, 80 años después del romance de su madre con un soldado canadiense en la IIGM.",
+    "meta_keywords": "prueba de ADN, Segunda Guerra Mundial, reencuentro familiar, Ancestry, Canadá, Inglaterra, familia perdida hace años",
+    "link": "https://www.goodnewsnetwork.org/canadian-family-finally-identifies-grandfathers-long-lost-wwii-baby-in-england-after-80-years/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Left-Charles-Blackney-holding-his-Canadian-daughter-in-1942-right-Yvonne-Anderson-holding-Rodney-in-1945-credits-Dawn-Anderson.jpg",
+    "date": "2026-11-13T19:21:39.552Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
+    "id": "1794597672167ip5gkm2wn",
+    "title": "Hombre rescata a vecinos vulnerables de inundación «bíblica» en Florida",
+    "summary": "Rick Addante de Palm Bay, Florida, rescató a sus vecinos vulnerables durante una inundación que él mismo calificó de «bíblica». El lunes cayeron entre 16 y 22 pulgadas de lluvia en un solo día, parte de lo que se considera una lluvia de 1.000 años. Addante ayudó a su vecino Terry, de 80 años, quien acababa de someterse a una...",
+    "image_alt": "Trabajadores de rescate con airboat ayudan a residentes durante la inundación en Palm Bay, Florida",
+    "meta_description": "Rick Addante rescató a sus vecinos vulnerables durante una inundación «bíblica» en Palm Bay, Florida, con ayuda de airboats.",
+    "meta_keywords": "inundación en Florida, Palm Bay, operación de rescate, Rick Addante, airboat, ELA, ayuda a vecinos",
+    "link": "https://www.goodnewsnetwork.org/update-stories-of-daring-rescues-continue-to-surface-from-flooded-florida-communities/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-@rickaddante-via-X.jpg",
+    "date": "2026-11-13T19:21:14.645Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
     "id": "1794548079470lejspo3ad",
     "title": "El filtro de microplásticos de PolyGone Systems entra en funcionamiento en Atlantic City",
     "summary": "Una planta de tratamiento de aguas residuales en Atlantic City, Nueva Jersey, es la primera del mundo equipada con un sistema que extrae microplásticos del agua residual antes de que llegue al océano. Ninguna ley lo exige aún, pero la startup PolyGone Systems lo construyó de todas formas. Los fundadores Nathaniel Banks y Yidian Liu, ambos antiguos estudiantes de Princeton,...",
@@ -2485,61 +2556,5 @@
     "date": "2026-10-02T17:37:07.751Z",
     "category": "Environment",
     "score": 8
-  },
-  {
-    "id": "1790962599697ktmscal92",
-    "title": "Los museos nacionales británicos siguen siendo gratuitos para visitantes extranjeros",
-    "summary": "El gobierno británico ha decidido que los 14 museos nacionales, entre ellos la National Gallery, el British Museum y el Natural History Museum, seguirán siendo de acceso gratuito para los visitantes internacionales. Estas instituciones atraen conjuntamente decenas de millones de visitantes al año. La decisión llega tras meses de consultas entre ministerios, el sector turístico y los museos londinenses, después...",
-    "image_alt": "Visitantes en la entrada de un museo nacional británico",
-    "meta_description": "Los museos nacionales británicos siguen siendo gratuitos para visitantes extranjeros, a pesar del consejo de cobrar entrada.",
-    "meta_keywords": "museos británicos, acceso gratuito, British Museum, National Gallery, Natural History Museum, Margaret Hodge, Sadiq Khan, turismo",
-    "link": "https://www.goodnewsnetwork.org/uks-national-museums-to-continue-25-year-policy-of-free-entry-for-foreign-visitors/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2024/06/The-British-Museum-credit-Luke-Massey-the-Greater-London-National-Park-City-Initiative.jpg",
-    "date": "2026-10-02T17:36:42.000Z",
-    "category": "Lifestyle",
-    "score": 8
-  },
-  {
-    "id": "1790915745699jdltmr09h",
-    "title": "El permiso de paternidad ampliado mejora la salud de la madre y el bebé",
-    "summary": "Un padre disfrutó de algunas semanas de permiso de paternidad cuando nació su segundo hijo. Durante ese período se familiarizó más con el rol de cuidador principal y estableció contactos con otros padres de la zona. La investigación demuestra que un permiso más largo para el progenitor que da a luz, combinado con un permiso moderado para la pareja, mejora...",
-    "image_alt": "Padre con bebé durante el permiso de paternidad",
-    "meta_description": "El permiso de paternidad mejora la salud de la madre y el bebé, y favorece una distribución más equitativa de las tareas familiares.",
-    "meta_keywords": "permiso de paternidad, permiso parental, salud posparto, lactancia materna, vida familiar, padres",
-    "link": "https://www.goodgoodgood.co/articles/benefits-of-paternal-leave-policies",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abea24c311dd07800e88db3_6abea24b8c97d764568e439a_benefits-of-paternal-leave-policies-featured.webp",
-    "date": "2026-10-02T04:35:46.556Z",
-    "category": "Health",
-    "score": 10
-  },
-  {
-    "id": "1790915722910dy2bhv992",
-    "title": "Agente jubilada del FBI salva de la extinción manzanos de 100 años",
-    "summary": "Desde su jubilación en 2012, el exagente del FBI Dave Benscoter de Washington busca variedades de manzanas casi extintas en el noroeste de Estados Unidos. Tras podar árboles en casa de un feligrés, descubrió especies de manzanas desconocidas e investigó estudios de historia natural, recetas familiares y antiguos artículos de periódicos sobre ferias agrícolas. Junto con Joanie Cooper y Sean...",
-    "image_alt": "Manzano antiguo en un huerto con manzanas maduras",
-    "meta_description": "El exagente del FBI Dave Benscoter lleva 20 años rastreando variedades de manzanas casi extintas a través del Lost Apple Project.",
-    "meta_keywords": "Lost Apple Project, Dave Benscoter, manzanos, variedades de manzanas en peligro de extinción, Washington, identificación por ADN, Kittageskee",
-    "link": "https://www.goodgoodgood.co/articles/fbi-agent-retired-lost-apple-project",
-    "source": "GoodGoodGood.co",
-    "image": "https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6abec7f5a9d9e28bb0e30156_6abec7f4d9fecf0aa42e3252_fbi-agent-retired-lost-apple-project-featured.webp",
-    "date": "2026-10-02T04:35:23.918Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1790915698438o8uvk9fkv",
-    "title": "El tejo de Sycamore Gap muestra nuevos brotes de un metro tres años después de su tala",
-    "summary": "Tres años después de la tala ilegal del famoso tejo de Sycamore Gap junto al Muro de Adriano en Northumberland, nuevas fotografías aéreas muestran que el tocón está floreciendo. Alrededor del tocón se ha formado un anillo denso de nuevos brotes que actualmente miden entre dos y tres pies (aproximadamente 60 a 90 centímetros) de altura. Andrew Poad de la...",
-    "image_alt": "Fotografía aérea del tocón del tejo de Sycamore Gap con un anillo de nuevos brotes verdes",
-    "meta_description": "Tres años después de la tala del tejo de Sycamore Gap, nuevos brotes de hasta un metro de altura crecen alrededor del tocón.",
-    "meta_keywords": "Sycamore Gap, Muro de Adriano, National Trust, recuperación de árboles, Northumberland, tala ilegal",
-    "link": "https://www.goodnewsnetwork.org/flourishing-sycamore-gap-tree-has-ring-of-new-shoots-already-3-feet-tall/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/overlooking-the-sycamore-gap-stump-on-hadrians-wall.-credit-nt-images-annapurna-mellor.jpg",
-    "date": "2026-10-02T04:35:01.049Z",
-    "category": "Environment",
-    "score": 9
   }
 ]

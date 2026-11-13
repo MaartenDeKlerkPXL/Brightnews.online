@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-11-13T05:34:46.954Z",
+ "gegenereerd": "2026-11-13T19:23:00.716Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -14,12 +14,20 @@
      "url": "https://brightnews.online/articles/nl/los-angeles-verbiedt-oliewinning-definitief-1794463996470mjxfozzef.html"
     },
     {
-     "id": "17944249637321olk07x2s",
-     "titel": "100 dichters schrijven bundel over dakloosheid voor goed doel",
-     "teaser": "Dichter Andrew Mears uit het noordoosten van Engeland, een regio met de hoogste dakloosheidscijfers van het land, kreeg in 2025 het idee om 100 schrijvers te vragen elk een gedicht over dakloosheid te schrijven. De gedichten werden gebundeld in de zelf uitgegeven bloemlezing 'Words on a NE Street'. Tegen Kerstmis had Mears genoeg exemplaren verkocht om £4.200 te doneren aan...",
-     "score": 10,
+     "id": "1794597697977w9jqwal0r",
+     "titel": "DNA-test lost 80 jaar oud familiegeheim op na WWII-romance",
+     "teaser": "Rodney Anderson (81) uit Engeland wist nooit wie zijn echte vader was. Zijn moeder Yvonne kreeg hem in 1945 in Farnham, na een relatie met de Canadese soldaat Charles Blakney tijdens de Tweede Wereldoorlog. In Canada zocht Bethany Allen sinds 2008 naar deze mysterieuze oom, nadat ze via scheidingspapieren ontdekte dat haar grootvader Blakney in 1944 een kind had gekregen...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/100-dichters-schrijven-bundel-over-dakloosheid-voor-goed-doel-17944249637321olk07x2s.html"
+     "url": "https://brightnews.online/articles/nl/dna-test-lost-80-jaar-oud-familiegeheim-op-na-wwii-romance-1794597697977w9jqwal0r.html"
+    },
+    {
+     "id": "1794597672167ip5gkm2wn",
+     "titel": "Man redt kwetsbare buren uit 'bijbelse' overstroming Florida",
+     "teaser": "Rick Addante uit Palm Bay, Florida, redde zijn kwetsbare buren tijdens een overstroming die hij zelf 'bijbels' noemde. Op maandag viel binnen één dag tussen de 16 en 22 inch regen, onderdeel van wat een 1.000-jaarlijkse regenval wordt genoemd. Addante hielp zijn 80-jarige buurman Terry, die net een openhartoperatie had ondergaan en moeite had met ademhalen, uit zijn huis naar...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/man-redt-kwetsbare-buren-uit-bijbelse-overstroming-florida-1794597672167ip5gkm2wn.html"
     },
     {
      "id": "1794548079470lejspo3ad",
@@ -36,17 +44,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/china-schakelt-grootste-vloeibare-luchtbatterij-ter-wereld-in-1794512393169a6sm5uwey.html"
-    },
-    {
-     "id": "1794505697568p3w3b6tmd",
-     "titel": "103-jarige D-Day-veteraan Douglas Halley krijgt verloren oorlogsmedailles terug",
-     "teaser": "De 103-jarige D-Day-veteraan Douglas Halley heeft zijn verloren oorlogsmedailles teruggekregen, precies op tijd voor Remembrance Day. Halley landde als 20-jarige op de stranden van Normandië bij de Royal Artillery en raakte zijn drie medailles - de 1939-45 Star, de France and Germany Star en de War Medal 1939-45 - kwijt toen hij in 1945 zijn uniform inleverde, met de medailles...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/103-jarige-d-day-veteraan-douglas-halley-krijgt-verloren-oorlogsmedailles-terug-1794505697568p3w3b6tmd.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261112-lifestyle",
+     "titel": "Verborgen schatten en oude banden komen aan het licht",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-12",
+     "url": "https://brightnews.online/articles/nl/verborgen-schatten-en-oude-banden-komen-aan-het-licht-dg-20261112-lifestyle.html"
+    },
     {
      "id": "dg-20261111-environment",
      "titel": "Steden kiezen voor schone lucht, grote opslag en groen op de gevel",
@@ -88,12 +95,20 @@
      "url": "https://brightnews.online/articles/en/los-angeles-bans-oil-drilling-permanently-1794463996470mjxfozzef.html"
     },
     {
-     "id": "17944249637321olk07x2s",
-     "titel": "100 poets write anthology on homelessness for charity",
-     "teaser": "Poet Andrew Mears from northeast England, a region with the country's highest homelessness rates, came up with the idea in 2025 to ask 100 writers to each write a poem about homelessness. The poems were collected in the self-published anthology 'Words on a NE Street'. By Christmas, Mears had sold enough copies to donate £4,200 to Newcastle Helping Street Friends,...",
-     "score": 10,
+     "id": "1794597697977w9jqwal0r",
+     "titel": "DNA test solves 80-year-old family secret after WWII romance",
+     "teaser": "Rodney Anderson (81) from England never knew who his real father was. His mother Yvonne had him in 1945 in Farnham, following a relationship with Canadian soldier Charles Blakney during World War II. In Canada, Bethany Allen had been searching since 2008 for this mysterious uncle, after discovering through divorce papers that her grandfather Blakney had fathered a child in...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/100-poets-write-anthology-on-homelessness-for-charity-17944249637321olk07x2s.html"
+     "url": "https://brightnews.online/articles/en/dna-test-solves-80-year-old-family-secret-after-wwii-romance-1794597697977w9jqwal0r.html"
+    },
+    {
+     "id": "1794597672167ip5gkm2wn",
+     "titel": "Man rescues vulnerable neighbors from 'biblical' Florida flooding",
+     "teaser": "Rick Addante from Palm Bay, Florida, rescued his vulnerable neighbors during a flood he himself described as 'biblical'. On Monday, between 16 and 22 inches of rain fell in a single day, part of what is being called a 1,000-year rainfall event. Addante helped his 80-year-old neighbor Terry, who had recently undergone open-heart surgery and was struggling to breathe, from...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/man-rescues-vulnerable-neighbors-from-biblical-florida-flooding-1794597672167ip5gkm2wn.html"
     },
     {
      "id": "1794548079470lejspo3ad",
@@ -110,17 +125,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/en/china-switches-on-world-s-largest-liquid-air-battery-1794512393169a6sm5uwey.html"
-    },
-    {
-     "id": "1794505697568p3w3b6tmd",
-     "titel": "103-year-old D-Day veteran Douglas Halley gets lost war medals back",
-     "teaser": "103-year-old D-Day veteran Douglas Halley has recovered his lost war medals, just in time for Remembrance Day. Halley landed on the beaches of Normandy at age 20 with the Royal Artillery and lost his three medals — the 1939-45 Star, the France and Germany Star and the War Medal 1939-45 — when he handed in his uniform in 1945 with...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/103-year-old-d-day-veteran-douglas-halley-gets-lost-war-medals-back-1794505697568p3w3b6tmd.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261112-lifestyle",
+     "titel": "Hidden treasures and old bonds come to light",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-12",
+     "url": "https://brightnews.online/articles/en/hidden-treasures-and-old-bonds-come-to-light-dg-20261112-lifestyle.html"
+    },
     {
      "id": "dg-20261111-environment",
      "titel": "Cities choose clean air, massive storage and green on the facade",
@@ -162,12 +176,20 @@
      "url": "https://brightnews.online/articles/de/los-angeles-verbietet-olforderung-endgultig-1794463996470mjxfozzef.html"
     },
     {
-     "id": "17944249637321olk07x2s",
-     "titel": "100 Dichter schreiben Gedichtsammlung über Obdachlosigkeit für gemeinnützigen Zweck",
-     "teaser": "Der Dichter Andrew Mears aus Nordostengland, einer Region mit den höchsten Obdachlosenzahlen des Landes, hatte 2025 die Idee, 100 Schriftsteller zu bitten, jeweils ein Gedicht über Obdachlosigkeit zu schreiben. Die Gedichte wurden in der Eigenverlagsanthologie „Words on a NE Street\" zusammengefasst. Bis Weihnachten hatte Mears genug Exemplare verkauft, um £4.200 an Newcastle Helping Street Friends zu spenden, eine kleine Freiwilligenorganisation....",
-     "score": 10,
+     "id": "1794597697977w9jqwal0r",
+     "titel": "DNA-Test löst 80 Jahre altes Familiengeheimnis nach WWII-Romanze",
+     "teaser": "Rodney Anderson (81) aus England wusste nie, wer sein leiblicher Vater war. Seine Mutter Yvonne bekam ihn 1945 in Farnham nach einer Beziehung mit dem kanadischen Soldaten Charles Blakney während des Zweiten Weltkriegs. In Kanada suchte Bethany Allen seit 2008 nach diesem mysteriösen Onkel, nachdem sie durch Scheidungspapiere entdeckt hatte, dass ihr Großvater Blakney 1944 ein Kind in England bekommen...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/100-dichter-schreiben-gedichtsammlung-uber-obdachlosigkeit-fur-gemeinnutzigen-zw-17944249637321olk07x2s.html"
+     "url": "https://brightnews.online/articles/de/dna-test-lost-80-jahre-altes-familiengeheimnis-nach-wwii-romanze-1794597697977w9jqwal0r.html"
+    },
+    {
+     "id": "1794597672167ip5gkm2wn",
+     "titel": "Mann rettet gefährdete Nachbarn aus „biblischer\" Überschwemmung in Florida",
+     "teaser": "Rick Addante aus Palm Bay, Florida, rettete seine gefährdeten Nachbarn während einer Überschwemmung, die er selbst als „biblisch\" bezeichnete. Am Montag fielen innerhalb eines Tages zwischen 16 und 22 Zoll Regen, Teil dessen, was als Niederschlag eines 1.000-Jahres-Ereignisses gilt. Addante half seinem 80-jährigen Nachbarn Terry, der gerade eine Herzoperation hinter sich hatte und Atemprobleme hatte, aus seinem Haus zum höchsten...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/mann-rettet-gefahrdete-nachbarn-aus-biblischer-uberschwemmung-in-florida-1794597672167ip5gkm2wn.html"
     },
     {
      "id": "1794548079470lejspo3ad",
@@ -184,17 +206,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/de/china-schaltet-weltgro-te-flussiglufbatterie-ein-1794512393169a6sm5uwey.html"
-    },
-    {
-     "id": "1794505697568p3w3b6tmd",
-     "titel": "103-jähriger D-Day-Veteran Douglas Halley erhält verlorene Kriegsmedaillen zurück",
-     "teaser": "Der 103-jährige D-Day-Veteran Douglas Halley hat seine verlorenen Kriegsmedaillen zurückerhalten, genau rechtzeitig zur Remembrance Day. Halley landete als 20-Jähriger an den Stränden der Normandie bei der Royal Artillery und verlor seine drei Medaillen – den 1939-45 Star, den France and Germany Star und die War Medal 1939-45 – als er 1945 seine Uniform abgab, wobei die Medaillen noch daran befestigt...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/103-jahriger-d-day-veteran-douglas-halley-erhalt-verlorene-kriegsmedaillen-zuruc-1794505697568p3w3b6tmd.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261112-lifestyle",
+     "titel": "Verborgene Schätze und alte Bindungen kommen ans Licht",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-12",
+     "url": "https://brightnews.online/articles/de/verborgene-schatze-und-alte-bindungen-kommen-ans-licht-dg-20261112-lifestyle.html"
+    },
     {
      "id": "dg-20261111-environment",
      "titel": "Städte setzen auf saubere Luft, große Speicher und Grün an der Fassade",
@@ -236,12 +257,20 @@
      "url": "https://brightnews.online/articles/fr/los-angeles-interdit-definitivement-l-extraction-petroliere-1794463996470mjxfozzef.html"
     },
     {
-     "id": "17944249637321olk07x2s",
-     "titel": "100 poètes écrivent un recueil sur le sans-abrisme pour une bonne cause",
-     "teaser": "Le poète Andrew Mears, originaire du nord-est de l'Angleterre, une région aux taux de sans-abrisme les plus élevés du pays, a eu l'idée en 2025 de demander à 100 écrivains d'écrire chacun un poème sur le sans-abrisme. Les poèmes ont été rassemblés dans une anthologie autoéditée intitulée « Words on a NE Street ». Avant Noël, Mears avait vendu suffisamment...",
-     "score": 10,
+     "id": "1794597697977w9jqwal0r",
+     "titel": "Un test ADN résout un secret de famille vieux de 80 ans après une romance de la Seconde Guerre mondiale",
+     "teaser": "Rodney Anderson (81 ans) d'Angleterre n'a jamais su qui était son vrai père. Sa mère Yvonne l'a eu en 1945 à Farnham, suite à une relation avec le soldat canadien Charles Blakney pendant la Seconde Guerre mondiale. Au Canada, Bethany Allen cherchait depuis 2008 ce mystérieux oncle, après avoir découvert via des papiers de divorce que son grand-père Blakney avait...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/100-poetes-ecrivent-un-recueil-sur-le-sans-abrisme-pour-une-bonne-cause-17944249637321olk07x2s.html"
+     "url": "https://brightnews.online/articles/fr/un-test-adn-resout-un-secret-de-famille-vieux-de-80-ans-apres-une-romance-de-la-1794597697977w9jqwal0r.html"
+    },
+    {
+     "id": "1794597672167ip5gkm2wn",
+     "titel": "Un homme sauve ses voisins vulnérables lors d'une inondation « biblique » en Floride",
+     "teaser": "Rick Addante de Palm Bay, en Floride, a secouru ses voisins vulnérables lors d'une inondation qu'il a lui-même qualifiée de « biblique ». Lundi, entre 16 et 22 pouces de pluie sont tombés en une seule journée, ce qui constitue ce qu'on appelle une pluie millénaire. Addante a aidé son voisin Terry, âgé de 80 ans, qui venait de subir...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/un-homme-sauve-ses-voisins-vulnerables-lors-d-une-inondation-biblique-en-floride-1794597672167ip5gkm2wn.html"
     },
     {
      "id": "1794548079470lejspo3ad",
@@ -258,17 +287,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/fr/la-chine-met-en-service-la-plus-grande-batterie-a-air-liquide-du-monde-1794512393169a6sm5uwey.html"
-    },
-    {
-     "id": "1794505697568p3w3b6tmd",
-     "titel": "Vétéran du D-Day âgé de 103 ans, Douglas Halley retrouve ses médailles de guerre",
-     "teaser": "Le vétéran du D-Day Douglas Halley, âgé de 103 ans, a retrouvé ses médailles de guerre perdues, juste à temps pour le Remembrance Day. Halley a débarqué à l'âge de 20 ans sur les plages de Normandie avec la Royal Artillery et a perdu ses trois médailles — la 1939-45 Star, la France and Germany Star et la War Medal...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/veteran-du-d-day-age-de-103-ans-douglas-halley-retrouve-ses-medailles-de-guerre-1794505697568p3w3b6tmd.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261112-lifestyle",
+     "titel": "Des trésors cachés et des liens anciens refont surface",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-12",
+     "url": "https://brightnews.online/articles/fr/des-tresors-caches-et-des-liens-anciens-refont-surface-dg-20261112-lifestyle.html"
+    },
     {
      "id": "dg-20261111-environment",
      "titel": "Les villes optent pour un air pur, un stockage massif et de la verdure en façade",
@@ -310,12 +338,20 @@
      "url": "https://brightnews.online/articles/es/los-angeles-prohibe-definitivamente-la-extraccion-de-petroleo-1794463996470mjxfozzef.html"
     },
     {
-     "id": "17944249637321olk07x2s",
-     "titel": "100 poetas escriben un poemario sobre la falta de vivienda con fines benéficos",
-     "teaser": "El poeta Andrew Mears del noreste de Inglaterra, una región con las cifras más altas de falta de vivienda del país, tuvo la idea en 2025 de pedir a 100 escritores que escribieran cada uno un poema sobre la falta de vivienda. Los poemas se reunieron en la antología autopublicada «Words on a NE Street». Para Navidad, Mears había vendido...",
-     "score": 10,
+     "id": "1794597697977w9jqwal0r",
+     "titel": "Prueba de ADN resuelve secreto familiar de 80 años tras romance en la IIGM",
+     "teaser": "Rodney Anderson (81) de Inglaterra nunca supo quién era su verdadero padre. Su madre Yvonne lo tuvo en 1945 en Farnham, tras una relación con el soldado canadiense Charles Blakney durante la Segunda Guerra Mundial. En Canadá, Bethany Allen buscaba desde 2008 a este misterioso tío, después de descubrir a través de documentos de divorcio que su abuelo Blakney había...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/100-poetas-escriben-un-poemario-sobre-la-falta-de-vivienda-con-fines-beneficos-17944249637321olk07x2s.html"
+     "url": "https://brightnews.online/articles/es/prueba-de-adn-resuelve-secreto-familiar-de-80-anos-tras-romance-en-la-iigm-1794597697977w9jqwal0r.html"
+    },
+    {
+     "id": "1794597672167ip5gkm2wn",
+     "titel": "Hombre rescata a vecinos vulnerables de inundación «bíblica» en Florida",
+     "teaser": "Rick Addante de Palm Bay, Florida, rescató a sus vecinos vulnerables durante una inundación que él mismo calificó de «bíblica». El lunes cayeron entre 16 y 22 pulgadas de lluvia en un solo día, parte de lo que se considera una lluvia de 1.000 años. Addante ayudó a su vecino Terry, de 80 años, quien acababa de someterse a una...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/hombre-rescata-a-vecinos-vulnerables-de-inundacion-biblica-en-florida-1794597672167ip5gkm2wn.html"
     },
     {
      "id": "1794548079470lejspo3ad",
@@ -332,17 +368,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/es/china-pone-en-marcha-la-mayor-bateria-de-aire-liquido-del-mundo-1794512393169a6sm5uwey.html"
-    },
-    {
-     "id": "1794505697568p3w3b6tmd",
-     "titel": "Veterano de D-Day de 103 años recupera sus medallas de guerra perdidas",
-     "teaser": "El veterano de D-Day Douglas Halley, de 103 años, ha recuperado sus medallas de guerra perdidas, justo a tiempo para Remembrance Day. Halley desembarcó a los 20 años en las playas de Normandía con la Royal Artillery y perdió sus tres medallas —la 1939-45 Star, la France and Germany Star y la War Medal 1939-45— cuando entregó su uniforme en...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/veterano-de-d-day-de-103-anos-recupera-sus-medallas-de-guerra-perdidas-1794505697568p3w3b6tmd.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261112-lifestyle",
+     "titel": "Tesoros ocultos y lazos antiguos salen a la luz",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-12",
+     "url": "https://brightnews.online/articles/es/tesoros-ocultos-y-lazos-antiguos-salen-a-la-luz-dg-20261112-lifestyle.html"
+    },
     {
      "id": "dg-20261111-environment",
      "titel": "Las ciudades apuestan por aire limpio, almacenamiento masivo y verde en las fachadas",
