@@ -1,5 +1,29 @@
 [
  {
+  "datum": "2026-11-14T05:25:32.194Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "Dr. King’s Lost Draft of ‘I Have a Dream’ Emerges from a Desk Drawer",
+  "uitsluiting": "te-weinig-inhoud",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "De tekst breekt af mid-zin en geeft onvoldoende inhoud om het verhaal te beoordelen; het lijkt een fragment zonder volledige context."
+ },
+ {
+  "datum": "2026-11-14T05:25:32.194Z",
+  "bron": "OptimistDaily.com",
+  "titel": "Podcast Transcript November 13th, 2026— This midterm’s historic governor firsts, flying electric ferries, and eat-your-skincare",
+  "uitsluiting": "verzameleditie",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Dit is een podcast-transcript dat meerdere losse onderwerpen bundelt (gouverneurs, elektrische veren, skincare); BrightNews publiceert eigen dagoverzichten, niet andermans weekoverzichten."
+ },
+ {
   "datum": "2026-11-13T19:20:42.981Z",
   "bron": "GoodNewsNetwork.org",
   "titel": "Man Rescues Trapped Neighbors from ‘Biblical’ Florida Flooding ",
@@ -3574,29 +3598,5 @@
   "totaal": 9,
   "besluit": "ja",
   "reden": "Wetenschap als brug tussen landen in gespannen tijden; maatschappelijk relevant en hoopgevend geformuleerd."
- },
- {
-  "datum": "2026-10-30T17:51:01.195Z",
-  "bron": "Openaccessgovernment.org",
-  "titel": "Smithsonian scientists launch “Lumina” simulation to model early universe",
-  "uitsluiting": "geen",
-  "gevoel": 2,
-  "formulering": 2,
-  "relevantie": 3,
-  "totaal": 7,
-  "besluit": "nee",
-  "reden": "Wetenschappelijke doorbraak in kosmologie; maatschappelijk relevant maar technisch en afstandelijk gepresenteerd."
- },
- {
-  "datum": "2026-10-30T17:51:01.195Z",
-  "bron": "Openaccessgovernment.org",
-  "titel": "EU and Western Balkans strengthen research and innovation ties to support EU integration",
-  "uitsluiting": "geen",
-  "gevoel": 2,
-  "formulering": 2,
-  "relevantie": 3,
-  "totaal": 7,
-  "besluit": "nee",
-  "reden": "Samenwerking en integratie als kern; maatschappelijk relevant maar formeel en zakelijk geformuleerd."
  }
 ]

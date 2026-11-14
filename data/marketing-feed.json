@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-11-13T19:23:00.716Z",
+ "gegenereerd": "2026-11-14T05:25:36.487Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -67,20 +67,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-11",
      "url": "https://brightnews.online/articles/nl/herenigde-medailles-gered-door-buren-en-honderd-jaar-wandelen-het-goede-nieuws-v-dg-20261111-lifestyle.html"
-    },
-    {
-     "id": "dg-20261110-environment",
-     "titel": "Beren, bloemen en een plan: drie tekenen van herstel op aarde",
-     "categorie": "Environment",
-     "dag": "2026-11-10",
-     "url": "https://brightnews.online/articles/nl/beren-bloemen-en-een-plan-drie-tekenen-van-herstel-op-aarde-dg-20261110-environment.html"
-    },
-    {
-     "id": "dg-20261110-lifestyle",
-     "titel": "Drie verhalen over beloftes houden, helpen en terugkomen",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-10",
-     "url": "https://brightnews.online/articles/nl/drie-verhalen-over-beloftes-houden-helpen-en-terugkomen-dg-20261110-lifestyle.html"
     }
    ]
   },
@@ -148,20 +134,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-11",
      "url": "https://brightnews.online/articles/en/reunited-medals-rescued-by-neighbors-and-a-hundred-years-of-walking-the-good-new-dg-20261111-lifestyle.html"
-    },
-    {
-     "id": "dg-20261110-environment",
-     "titel": "Bears, flowers and a plan: three signs of recovery on Earth",
-     "categorie": "Environment",
-     "dag": "2026-11-10",
-     "url": "https://brightnews.online/articles/en/bears-flowers-and-a-plan-three-signs-of-recovery-on-earth-dg-20261110-environment.html"
-    },
-    {
-     "id": "dg-20261110-lifestyle",
-     "titel": "Three stories about keeping promises, helping and coming back",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-10",
-     "url": "https://brightnews.online/articles/en/three-stories-about-keeping-promises-helping-and-coming-back-dg-20261110-lifestyle.html"
     }
    ]
   },
@@ -229,20 +201,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-11",
      "url": "https://brightnews.online/articles/de/wiedergefundene-medaillen-von-nachbarn-gerettet-und-hundert-jahre-spaziergang-di-dg-20261111-lifestyle.html"
-    },
-    {
-     "id": "dg-20261110-environment",
-     "titel": "Bären, Blüten und ein Plan: drei Zeichen der Erholung auf der Erde",
-     "categorie": "Environment",
-     "dag": "2026-11-10",
-     "url": "https://brightnews.online/articles/de/baren-bluten-und-ein-plan-drei-zeichen-der-erholung-auf-der-erde-dg-20261110-environment.html"
-    },
-    {
-     "id": "dg-20261110-lifestyle",
-     "titel": "Drei Geschichten über das Einlösen von Versprechen, Helfen und Zurückkehren",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-10",
-     "url": "https://brightnews.online/articles/de/drei-geschichten-uber-das-einlosen-von-versprechen-helfen-und-zuruckkehren-dg-20261110-lifestyle.html"
     }
    ]
   },
@@ -310,20 +268,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-11",
      "url": "https://brightnews.online/articles/fr/des-medailles-retrouvees-sauvees-par-des-voisins-et-cent-ans-de-marche-les-bonne-dg-20261111-lifestyle.html"
-    },
-    {
-     "id": "dg-20261110-environment",
-     "titel": "Des ours, des fleurs et un plan : trois signes de rétablissement sur terre",
-     "categorie": "Environment",
-     "dag": "2026-11-10",
-     "url": "https://brightnews.online/articles/fr/des-ours-des-fleurs-et-un-plan-trois-signes-de-retablissement-sur-terre-dg-20261110-environment.html"
-    },
-    {
-     "id": "dg-20261110-lifestyle",
-     "titel": "Trois histoires de promesses tenues, d'aide et de retour",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-10",
-     "url": "https://brightnews.online/articles/fr/trois-histoires-de-promesses-tenues-d-aide-et-de-retour-dg-20261110-lifestyle.html"
     }
    ]
   },
@@ -391,20 +335,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-11",
      "url": "https://brightnews.online/articles/es/medallas-reunidas-salvadas-por-vecinos-y-cien-anos-caminando-las-buenas-noticias-dg-20261111-lifestyle.html"
-    },
-    {
-     "id": "dg-20261110-environment",
-     "titel": "Osos, flores y un plan: tres señales de recuperación en la tierra",
-     "categorie": "Environment",
-     "dag": "2026-11-10",
-     "url": "https://brightnews.online/articles/es/osos-flores-y-un-plan-tres-senales-de-recuperacion-en-la-tierra-dg-20261110-environment.html"
-    },
-    {
-     "id": "dg-20261110-lifestyle",
-     "titel": "Tres historias sobre cumplir promesas, ayudar y volver",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-10",
-     "url": "https://brightnews.online/articles/es/tres-historias-sobre-cumplir-promesas-ayudar-y-volver-dg-20261110-lifestyle.html"
     }
    ]
   }
