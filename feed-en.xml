@@ -6,13 +6,29 @@
         <atom:link href="https://brightnews.online/feed-en.xml" rel="self" type="application/rss+xml"/>
         <description>A fresh pick of good news from around the world, every day. Enjoy the read!</description>
         <language>en-us</language>
-        <lastBuildDate>Fri, 13 Nov 2026 19:22:56 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 14 Nov 2026 17:45:52 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Your Daily Dose of Positivity</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Ada Le Poidevin hid British soldiers from Nazis on Guernsey</title>
+            <link>https://brightnews.online/articles/en/ada-le-poidevin-hid-british-soldiers-from-nazis-on-guernsey-17946783500847nw336pba.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/ada-le-poidevin-hid-british-soldiers-from-nazis-on-guernsey-17946783500847nw336pba.html</guid>
+            <pubDate>Sat, 14 Nov 2026 17:45:52 GMT</pubDate>
+            <description>The heroic wartime deeds of British shopkeeper Ada Le Poidevin have come to light 40 years after her death. During the Second World War, she and her husband Walter hid three British commandos — corporal Dennis Dumper, soldier Fred Drain and soldier Andrew Ross — in their garden shed on Nazi-occupied Guernsey, despite German troops living next door. All three...</description>
+            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Ada-Le-Poidevin-during-WW-and-niece-Liz-Walton-SWNS.jpeg" type="image/jpeg" length="0"/>
+        </item>
+        <item>
+            <title>Atolls Bikar and Bokak become new marine reserve</title>
+            <link>https://brightnews.online/articles/en/atolls-bikar-and-bokak-become-new-marine-reserve-1794678322616t56aulc0t.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/atolls-bikar-and-bokak-become-new-marine-reserve-1794678322616t56aulc0t.html</guid>
+            <pubDate>Sat, 14 Nov 2026 17:45:25 GMT</pubDate>
+            <description>In the Marshall Islands, the coral atolls Bikar and Bokak have been designated as part of the country&apos;s first national marine reserve. Scientists describe the two remote atolls, located between Hawaii and the Philippines, as one of the last virtually pristine ecosystems in the world. Researchers conducted extensive surveys in 2023 of the sea, land and air ecosystems, including counts...</description>
+            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Shark-in-reef-habitat-at-Bikar-in-Marshall-island-in-Pacific-Ocean-by-Manu-San-Felix-via-SWNS.jpeg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Hidden treasures and old bonds come to light</title>
             <link>https://brightnews.online/articles/en/hidden-treasures-and-old-bonds-come-to-light-dg-20261112-lifestyle.html</link>
@@ -236,22 +252,6 @@
             <pubDate>Mon, 09 Nov 2026 22:06:22 GMT</pubDate>
             <description>These days, nature is showing us that recovery is possible—sometimes requiring years of patience, sometimes thanks to a handful of volunteers or thousands of donors worldwide. From a luminescent insect returning after a century, to seaweed finally left in peace, and a centuries-old estate changing hands to make room for wildlife: good news is coming from all directions. In North Yorkshire, efforts</description>
             <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/glowworms-unsplash.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Queer friendships prove beneficial for health</title>
-            <link>https://brightnews.online/articles/en/queer-friendships-prove-beneficial-for-health-1794261915908mf5cbpuot.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/queer-friendships-prove-beneficial-for-health-1794261915908mf5cbpuot.html</guid>
-            <pubDate>Mon, 09 Nov 2026 22:05:18 GMT</pubDate>
-            <description>Researchers from Michigan State University and the University of Kentucky discovered that friendships with a shared identity are important for people in the LGBTQ+ community. Based on data from the two-year survey „American Friendship Project,&quot; people with at least one friend of the same identity (such as two bisexuals or two lesbians) reported greater life satisfaction and less loneliness than...</description>
-            <enclosure url="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6af1f288bdcdefc967667671_6af1f285946f0fab106ab27c_new-study-queer-friendship-health-featured.webp" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Victoria bans unnecessary surgeries on intersex children</title>
-            <link>https://brightnews.online/articles/en/victoria-bans-unnecessary-surgeries-on-intersex-children-1794261892401mgfywqisu.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/victoria-bans-unnecessary-surgeries-on-intersex-children-1794261892401mgfywqisu.html</guid>
-            <pubDate>Mon, 09 Nov 2026 22:04:54 GMT</pubDate>
-            <description>Intersex is a human trait that occurs as frequently as red hair or green eyes. According to sexologist Anne Fausto-Sterling, up to 1.7% of the world&apos;s population is born with chromosomal, hormonal or anatomical variations that deviate from typical definitions of male or female. Often, these children undergo &apos;corrective&apos; surgeries before their second birthday, which are sometimes successful but can</description>
-            <enclosure url="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6af1ff9e8333e3454a0c61c8_6af1ff9d944dd3b0ebf05ca0_australia-intersex-surgeries-infants-ban-featured.webp" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

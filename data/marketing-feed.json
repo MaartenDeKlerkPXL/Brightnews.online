@@ -1,17 +1,25 @@
 {
- "gegenereerd": "2026-11-14T05:25:36.487Z",
+ "gegenereerd": "2026-11-14T17:45:54.817Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
     {
-     "id": "1794463996470mjxfozzef",
-     "titel": "Los Angeles verbiedt oliewinning definitief",
-     "teaser": "Na meer dan tien jaar actievoeren door bewoners heeft de gemeenteraad van Los Angeles op 28 oktober ingestemd met een verordening die oliewinning binnen de stadsgrenzen verbiedt. Nieuwe boringen zijn per direct verboden, bestaande putten mogen niet dieper geboord of opnieuw aangeboord worden, en alle actieve operaties moeten binnen twintig jaar volledig afgebouwd zijn. Los Angeles is daarmee de grootste...",
-     "score": 10,
+     "id": "17946783500847nw336pba",
+     "titel": "Ada Le Poidevin verborg Britse soldaten voor nazi's op Guernsey",
+     "teaser": "De heldhaftige oorlogsdaden van de Britse winkelierster Ada Le Poidevin zijn 40 jaar na haar dood aan het licht gekomen. Tijdens de Tweede Wereldoorlog verborg zij, samen met haar man Walter, drie Britse commando's - korporaal Dennis Dumper, soldaat Fred Drain en soldaat Andrew Ross - in hun tuinschuur op het door nazi's bezette Guernsey, ondanks Duitse troepen die naast...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/ada-le-poidevin-verborg-britse-soldaten-voor-nazi-s-op-guernsey-17946783500847nw336pba.html"
+    },
+    {
+     "id": "1794678322616t56aulc0t",
+     "titel": "Atollen Bikar en Bokak worden nieuw zeereservaat",
+     "teaser": "In de Marshalleilanden zijn de koraalatollen Bikar en Bokak uitgeroepen tot onderdeel van het eerste nationale zeereservaat van het land. Wetenschappers noemen de twee afgelegen atollen, gelegen tussen Hawaï en de Filipijnen, een van de laatste vrijwel ongerepte ecosystemen ter wereld. Onderzoekers brachten in 2023 uitgebreid de zee-, land- en luchtecosystemen in kaart, met tellingen van zeevogelkolonies, schildpadnesten, koraalriffen en...",
+     "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/los-angeles-verbiedt-oliewinning-definitief-1794463996470mjxfozzef.html"
+     "url": "https://brightnews.online/articles/nl/atollen-bikar-en-bokak-worden-nieuw-zeereservaat-1794678322616t56aulc0t.html"
     },
     {
      "id": "1794597697977w9jqwal0r",
@@ -36,14 +44,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/microplasticfilter-van-polygone-systems-gaat-in-atlantic-city-draaien-1794548079470lejspo3ad.html"
-    },
-    {
-     "id": "1794512393169a6sm5uwey",
-     "titel": "China schakelt grootste vloeibare-luchtbatterij ter wereld in",
-     "teaser": "In de Chinese provincie Qinghai is de grootste demonstratiecentrale ter wereld voor liquid-air energy storage (LAES) in gebruik genomen. De installatie gebruikt groene stroom om lucht samen te persen tot extreme dichtheid, waarna het vloeibaar wordt bij circa -190°C. Bij vraag wordt de vloeistof weer opgewarmd, waardoor ze snel uitzet tot gas en een turbine aandrijft die stroom teruglevert aan...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/china-schakelt-grootste-vloeibare-luchtbatterij-ter-wereld-in-1794512393169a6sm5uwey.html"
     }
    ],
    "dagoverzichten": [
@@ -73,12 +73,20 @@
   "en": {
    "top": [
     {
-     "id": "1794463996470mjxfozzef",
-     "titel": "Los Angeles bans oil drilling permanently",
-     "teaser": "After more than a decade of activism by residents, the Los Angeles City Council voted on October 28 in favor of an ordinance that prohibits oil drilling within city limits. New wells are banned immediately, existing wells cannot be drilled deeper or re-drilled, and all active operations must be completely shut down within twenty years. Los Angeles is now the...",
-     "score": 10,
+     "id": "17946783500847nw336pba",
+     "titel": "Ada Le Poidevin hid British soldiers from Nazis on Guernsey",
+     "teaser": "The heroic wartime deeds of British shopkeeper Ada Le Poidevin have come to light 40 years after her death. During the Second World War, she and her husband Walter hid three British commandos — corporal Dennis Dumper, soldier Fred Drain and soldier Andrew Ross — in their garden shed on Nazi-occupied Guernsey, despite German troops living next door. All three...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/ada-le-poidevin-hid-british-soldiers-from-nazis-on-guernsey-17946783500847nw336pba.html"
+    },
+    {
+     "id": "1794678322616t56aulc0t",
+     "titel": "Atolls Bikar and Bokak become new marine reserve",
+     "teaser": "In the Marshall Islands, the coral atolls Bikar and Bokak have been designated as part of the country's first national marine reserve. Scientists describe the two remote atolls, located between Hawaii and the Philippines, as one of the last virtually pristine ecosystems in the world. Researchers conducted extensive surveys in 2023 of the sea, land and air ecosystems, including counts...",
+     "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/los-angeles-bans-oil-drilling-permanently-1794463996470mjxfozzef.html"
+     "url": "https://brightnews.online/articles/en/atolls-bikar-and-bokak-become-new-marine-reserve-1794678322616t56aulc0t.html"
     },
     {
      "id": "1794597697977w9jqwal0r",
@@ -103,14 +111,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/en/polygone-systems-microplastics-filter-launches-in-atlantic-city-1794548079470lejspo3ad.html"
-    },
-    {
-     "id": "1794512393169a6sm5uwey",
-     "titel": "China switches on world's largest liquid-air battery",
-     "teaser": "In China's Qinghai province, the world's largest demonstration facility for liquid-air energy storage (LAES) has been put into operation. The installation uses green electricity to compress air to extreme density, after which it becomes liquid at approximately -190°C. When demand arises, the liquid is reheated, causing it to rapidly expand into gas and drive a turbine that feeds electricity back...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/china-switches-on-world-s-largest-liquid-air-battery-1794512393169a6sm5uwey.html"
     }
    ],
    "dagoverzichten": [
@@ -140,12 +140,20 @@
   "de": {
    "top": [
     {
-     "id": "1794463996470mjxfozzef",
-     "titel": "Los Angeles verbietet Ölförderung endgültig",
-     "teaser": "Nach mehr als zehn Jahren Aktivismus von Anwohnern hat der Stadtrat von Los Angeles am 28. Oktober einer Verordnung zugestimmt, die Ölförderung innerhalb der Stadtgrenzen verbietet. Neue Bohrungen sind sofort untersagt, bestehende Bohrlöcher dürfen nicht tiefer gebohrt oder erneut angebohrt werden, und alle aktiven Operationen müssen innerhalb von zwanzig Jahren vollständig eingestellt werden. Los Angeles ist damit die größte Stadt...",
-     "score": 10,
+     "id": "17946783500847nw336pba",
+     "titel": "Ada Le Poidevin verbarg britische Soldaten vor Nazis auf Guernsey",
+     "teaser": "Die heldenhaften Kriegstaten der britischen Ladenbesitzerin Ada Le Poidevin sind 40 Jahre nach ihrem Tod ans Licht gekommen. Während des Zweiten Weltkriegs verbarg sie zusammen mit ihrem Mann Walter drei britische Kommandos – Unteroffizier Dennis Dumper, Soldat Fred Drain und Soldat Andrew Ross – in ihrem Gartenschuppen auf dem von Nazis besetzten Guernsey, obwohl deutsche Truppen neben ihnen wohnten. Alle...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/ada-le-poidevin-verbarg-britische-soldaten-vor-nazis-auf-guernsey-17946783500847nw336pba.html"
+    },
+    {
+     "id": "1794678322616t56aulc0t",
+     "titel": "Atolle Bikar und Bokak werden neues Meeresschutzgebiet",
+     "teaser": "In den Marshallinseln sind die Korallenatolle Bikar und Bokak zum Teil des ersten nationalen Meeresschutzgebiets des Landes erklärt worden. Wissenschaftler bezeichnen die beiden abgelegenen Atolle, die zwischen Hawaii und den Philippinen liegen, als eines der letzten weitgehend unberührten Ökosysteme der Welt. Forscher kartografierten 2023 umfassend die See-, Land- und Luftökosysteme, mit Zählungen von Seevogelkolonien, Schildkrötennestern, Korallenriffen und Fischen. Sie fanden...",
+     "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/los-angeles-verbietet-olforderung-endgultig-1794463996470mjxfozzef.html"
+     "url": "https://brightnews.online/articles/de/atolle-bikar-und-bokak-werden-neues-meeresschutzgebiet-1794678322616t56aulc0t.html"
     },
     {
      "id": "1794597697977w9jqwal0r",
@@ -170,14 +178,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/de/mikroplastikfilter-von-polygone-systems-geht-in-atlantic-city-in-betrieb-1794548079470lejspo3ad.html"
-    },
-    {
-     "id": "1794512393169a6sm5uwey",
-     "titel": "China schaltet weltgrößte Flüssiglufbatterie ein",
-     "teaser": "In der chinesischen Provinz Qinghai ist das weltweit größte Demonstrationskraftwerk für Flüssigluftenergiespeicherung (LAES) in Betrieb genommen worden. Die Anlage nutzt grünen Strom, um Luft auf extreme Dichte zu komprimieren, woraufhin sie bei etwa -190°C flüssig wird. Bei Bedarf wird die Flüssigkeit wieder erwärmt, wodurch sie schnell zu Gas expandiert und eine Turbine antreibt, die Strom ins Netz zurückliefert. Das Kraftwerk...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/china-schaltet-weltgro-te-flussiglufbatterie-ein-1794512393169a6sm5uwey.html"
     }
    ],
    "dagoverzichten": [
@@ -207,12 +207,20 @@
   "fr": {
    "top": [
     {
-     "id": "1794463996470mjxfozzef",
-     "titel": "Los Angeles interdit définitivement l'extraction pétrolière",
-     "teaser": "Après plus de dix ans de mobilisation citoyenne, le conseil municipal de Los Angeles a approuvé le 28 octobre une ordonnance interdisant l'extraction pétrolière dans les limites de la ville. Les nouveaux forages sont immédiatement interdits, les puits existants ne peuvent pas être approfondis ou réactivés, et toutes les opérations actives doivent être complètement fermées dans les vingt ans. Los...",
-     "score": 10,
+     "id": "17946783500847nw336pba",
+     "titel": "Ada Le Poidevin cachait des soldats britanniques aux nazis à Guernesey",
+     "teaser": "Les actes de bravoure de la commerçante britannique Ada Le Poidevin ont été révélés 40 ans après sa mort. Pendant la Seconde Guerre mondiale, elle a caché, avec son mari Walter, trois commandos britanniques — le caporal Dennis Dumper, le soldat Fred Drain et le soldat Andrew Ross — dans leur remise de jardin à Guernesey occupée par les nazis,...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/ada-le-poidevin-cachait-des-soldats-britanniques-aux-nazis-a-guernesey-17946783500847nw336pba.html"
+    },
+    {
+     "id": "1794678322616t56aulc0t",
+     "titel": "Les atolls Bikar et Bokak deviennent une nouvelle réserve marine",
+     "teaser": "Aux Îles Marshall, les atolls coralliens Bikar et Bokak ont été désignés comme faisant partie de la première réserve marine nationale du pays. Les scientifiques considèrent ces deux atolls isolés, situés entre Hawaï et les Philippines, comme l'un des derniers écosystèmes pratiquement intacts au monde. Les chercheurs ont cartographié en détail les écosystèmes marins, terrestres et aériens en 2023, avec...",
+     "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/los-angeles-interdit-definitivement-l-extraction-petroliere-1794463996470mjxfozzef.html"
+     "url": "https://brightnews.online/articles/fr/les-atolls-bikar-et-bokak-deviennent-une-nouvelle-reserve-marine-1794678322616t56aulc0t.html"
     },
     {
      "id": "1794597697977w9jqwal0r",
@@ -237,14 +245,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/fr/le-filtre-a-microplastiques-de-polygone-systems-se-met-en-marche-a-atlantic-city-1794548079470lejspo3ad.html"
-    },
-    {
-     "id": "1794512393169a6sm5uwey",
-     "titel": "La Chine met en service la plus grande batterie à air liquide du monde",
-     "teaser": "Dans la province chinoise du Qinghai, la plus grande centrale de démonstration mondiale de stockage d'énergie par air liquide (LAES) a été mise en service. L'installation utilise l'électricité verte pour comprimer l'air à une densité extrême, ce qui le rend liquide à environ -190°C. À la demande, le liquide est réchauffé, ce qui le fait rapidement se dilater en gaz...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/la-chine-met-en-service-la-plus-grande-batterie-a-air-liquide-du-monde-1794512393169a6sm5uwey.html"
     }
    ],
    "dagoverzichten": [
@@ -274,12 +274,20 @@
   "es": {
    "top": [
     {
-     "id": "1794463996470mjxfozzef",
-     "titel": "Los Angeles prohíbe definitivamente la extracción de petróleo",
-     "teaser": "Tras más de diez años de activismo ciudadano, el consejo municipal de Los Angeles aprobó el 28 de octubre una ordenanza que prohíbe la extracción de petróleo dentro de los límites de la ciudad. Las nuevas perforaciones quedan prohibidas de inmediato, los pozos existentes no pueden profundizarse ni reabrirse, y todas las operaciones activas deben cerrarse completamente en el plazo...",
-     "score": 10,
+     "id": "17946783500847nw336pba",
+     "titel": "Ada Le Poidevin escondió soldados británicos de los nazis en Guernsey",
+     "teaser": "Los actos heroicos de guerra de la comerciante británica Ada Le Poidevin salieron a la luz 40 años después de su muerte. Durante la Segunda Guerra Mundial, ella y su marido Walter escondieron a tres comandos británicos —el cabo Dennis Dumper, el soldado Fred Drain y el soldado Andrew Ross— en su cobertizo de jardín en Guernsey, ocupada por los...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/ada-le-poidevin-escondio-soldados-britanicos-de-los-nazis-en-guernsey-17946783500847nw336pba.html"
+    },
+    {
+     "id": "1794678322616t56aulc0t",
+     "titel": "Los atolones Bikar y Bokak se convierten en nueva reserva marina",
+     "teaser": "En las Islas Marshall, los atolones coralinos Bikar y Bokak han sido designados como parte de la primera reserva marina nacional del país. Los científicos consideran estos dos atolones remotos, ubicados entre Hawái y Filipinas, uno de los últimos ecosistemas prácticamente intactos del mundo. Los investigadores realizaron en 2023 un mapeo exhaustivo de los ecosistemas marino, terrestre y aéreo, con...",
+     "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/los-angeles-prohibe-definitivamente-la-extraccion-de-petroleo-1794463996470mjxfozzef.html"
+     "url": "https://brightnews.online/articles/es/los-atolones-bikar-y-bokak-se-convierten-en-nueva-reserva-marina-1794678322616t56aulc0t.html"
     },
     {
      "id": "1794597697977w9jqwal0r",
@@ -304,14 +312,6 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/es/el-filtro-de-microplasticos-de-polygone-systems-entra-en-funcionamiento-en-atlan-1794548079470lejspo3ad.html"
-    },
-    {
-     "id": "1794512393169a6sm5uwey",
-     "titel": "China pone en marcha la mayor batería de aire líquido del mundo",
-     "teaser": "En la provincia china de Qinghai se ha puesto en funcionamiento la mayor central de demostración mundial de almacenamiento de energía de aire líquido (LAES). La instalación utiliza electricidad verde para comprimir aire hasta una densidad extrema, tras lo cual se vuelve líquido a aproximadamente -190°C. Cuando hay demanda, el líquido se calienta nuevamente, lo que hace que se expanda...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/china-pone-en-marcha-la-mayor-bateria-de-aire-liquido-del-mundo-1794512393169a6sm5uwey.html"
     }
    ],
    "dagoverzichten": [
