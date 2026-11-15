@@ -1,5 +1,29 @@
 [
  {
+  "datum": "2026-11-15T05:21:40.381Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "Couple with Autism and ADHD Find Passion Cleaning Filthy Street Signs",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Een echtpaar met autisme en ADHD vindt samen passie en doel in een gemeenschapsproject; hartverwarmend verhaal over transformatie en inclusie."
+ },
+ {
+  "datum": "2026-11-15T05:21:40.381Z",
+  "bron": "NPR.org",
+  "titel": "SpaceX successfully catches Starship and makes history",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Historische doorbraak in ruimtevaart (eerste midair-catch van Starship) met maatschappelijke betekenis voor toekomstige maanmissies; hoopvol en inspirerend."
+ },
+ {
   "datum": "2026-11-14T17:44:58.716Z",
   "bron": "GoodNewsNetwork.org",
   "titel": "Two of the ‘Last Wild Ecosystems’ Untouched by Humans Are Declared New Sanctuaries",
@@ -3574,29 +3598,5 @@
   "totaal": 0,
   "besluit": "nee",
   "reden": "Analyse van EU-beleid en governance; polariserend onderwerp zonder concrete positieve wending."
- },
- {
-  "datum": "2026-10-30T17:50:51.706Z",
-  "bron": "Openaccessgovernment.org",
-  "titel": "Cambridge study challenges century-old theory on comets seeding life on Earth",
-  "uitsluiting": "geen",
-  "gevoel": 1,
-  "formulering": 1,
-  "relevantie": 3,
-  "totaal": 5,
-  "besluit": "nee",
-  "reden": "Wetenschappelijke doorbraak (maatschappelijk relevant) maar negatief geformuleerd ('unlikely', 'vaporise') en geen warm gevoel."
- },
- {
-  "datum": "2026-10-30T17:50:51.706Z",
-  "bron": "Openaccessgovernment.org",
-  "titel": "Advancing nuclear-powered space exploration through collaboration",
-  "uitsluiting": "geen",
-  "gevoel": 2,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 8,
-  "besluit": "ja",
-  "reden": "Positieve samenwerking voor toekomstige ruimteverkenning; hoopvol geformuleerd en maatschappelijk relevant voor wetenschap en innovatie."
  }
 ]

@@ -6,13 +6,29 @@
         <atom:link href="https://brightnews.online/feed-en.xml" rel="self" type="application/rss+xml"/>
         <description>A fresh pick of good news from around the world, every day. Enjoy the read!</description>
         <language>en-us</language>
-        <lastBuildDate>Sat, 14 Nov 2026 17:45:52 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 15 Nov 2026 05:22:29 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Your Daily Dose of Positivity</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>SpaceX catches Starship with mechanical arms and makes history</title>
+            <link>https://brightnews.online/articles/en/spacex-catches-starship-with-mechanical-arms-and-makes-history-1794720147520eg4u3pab2.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/spacex-catches-starship-with-mechanical-arms-and-makes-history-1794720147520eg4u3pab2.html</guid>
+            <pubDate>Sun, 15 Nov 2026 05:22:29 GMT</pubDate>
+            <description>SpaceX has for the first time caught a Starship spacecraft with mechanical arms at its launch facility in Texas, 22 hours after launch. According to the company, this demonstrates Starship&apos;s full reusability, intended for trips to the moon and Mars. The first-stage booster exploded shortly after launch on Friday, preventing the hoped-for double catch. SpaceX had previously successfully caught a...</description>
+            <enclosure url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/8068x4538+0+0/resize/1400/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F1a%2F90%2Fff5836a94be4aff14474cce4144c%2Fstarship.jpg" type="image/jpeg" length="0"/>
+        </item>
+        <item>
+            <title>Couple with autism and ADHD clean dirty street signs in Brighton</title>
+            <link>https://brightnews.online/articles/en/couple-with-autism-and-adhd-clean-dirty-street-signs-in-brighton-17947201234945qled3tv1.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/couple-with-autism-and-adhd-clean-dirty-street-signs-in-brighton-17947201234945qled3tv1.html</guid>
+            <pubDate>Sun, 15 Nov 2026 05:22:05 GMT</pubDate>
+            <description>Paul and Ruth Richmond-Watson from Brighton, England, have been cleaning dirty street signs in East Sussex since September. The couple, both autistic with ADHD, were looking for a hobby to do together. Paul (47), originally from New Zealand and a former window cleaner, and Ruth (25) clean at least one sign per day, which takes each 20 to 25 minutes...</description>
+            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Before-and-after-cleaning-road-signs-in-East-Sussex-SWNS.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Ada Le Poidevin hid British soldiers from Nazis on Guernsey</title>
             <link>https://brightnews.online/articles/en/ada-le-poidevin-hid-british-soldiers-from-nazis-on-guernsey-17946783500847nw336pba.html</link>
@@ -236,22 +252,6 @@
             <pubDate>Tue, 10 Nov 2026 19:27:20 GMT</pubDate>
             <description>A doorbell camera video from Castle Rock, Colorado, went viral last year and has since raised more than $76,000 for pizza delivery driver Suzanna Metcalf. When Metcalf came to report an incorrect pizza order to Pastor Neal Seiwert, he noticed she was struggling. Metcalf works as a delivery driver while providing full-time care for her 82-year-old mother, including medical care...</description>
             <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/seiwert-ring-camera-.webp" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Actor Peter Marinker (85) performs in Krapp&apos;s Last Tape despite Alzheimer&apos;s</title>
-            <link>https://brightnews.online/articles/en/actor-peter-marinker-85-performs-in-krapp-s-last-tape-despite-alzheimer-s-1794338810899xda622hdp.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/actor-peter-marinker-85-performs-in-krapp-s-last-tape-despite-alzheimer-s-1794338810899xda622hdp.html</guid>
-            <pubDate>Tue, 10 Nov 2026 19:26:54 GMT</pubDate>
-            <description>The 85-year-old actor Peter Marinker returned to the stage this autumn, despite an Alzheimer&apos;s diagnosis. He plays the demanding role of Krapp in Samuel Beckett&apos;s solo piece Krapp&apos;s Last Tape, at the Cockpit Theatre in London. The diagnosis came after difficulties during rehearsals for an earlier production. The performance was supported with an autocue, an earpiece, and extra rehearsal time,...</description>
-            <enclosure url="https://www.positive.news/wp-content/uploads/2026/11/Horizontal-resizer-2.png" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Nature recovers: glowworms, seaweed and an estate get a second chance</title>
-            <link>https://brightnews.online/articles/en/nature-recovers-glowworms-seaweed-and-an-estate-get-a-second-chance-dg-20261108-environment.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/nature-recovers-glowworms-seaweed-and-an-estate-get-a-second-chance-dg-20261108-environment.html</guid>
-            <pubDate>Mon, 09 Nov 2026 22:06:22 GMT</pubDate>
-            <description>These days, nature is showing us that recovery is possible—sometimes requiring years of patience, sometimes thanks to a handful of volunteers or thousands of donors worldwide. From a luminescent insect returning after a century, to seaweed finally left in peace, and a centuries-old estate changing hands to make room for wildlife: good news is coming from all directions. In North Yorkshire, efforts</description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/glowworms-unsplash.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

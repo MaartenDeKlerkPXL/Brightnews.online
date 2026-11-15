@@ -1,10 +1,26 @@
 {
- "gegenereerd": "2026-11-14T17:45:54.817Z",
+ "gegenereerd": "2026-11-15T05:22:33.444Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "1794720147520eg4u3pab2",
+     "titel": "SpaceX vangt Starship met mechanische armen en schrijft geschiedenis",
+     "teaser": "SpaceX heeft voor het eerst een Starship-ruimtevaartuig opgevangen met mechanische armen bij de lanceerbasis in Texas, 22 uur na de lancering. Dit toont volgens het bedrijf de volledige herbruikbaarheid van Starship aan, bedoeld voor reizen naar de maan en Mars. De eerste-traps-booster explodeerde kort na de lancering op vrijdag, waardoor de gehoopte dubbele vangst niet lukte. SpaceX had eerder al...",
+     "score": 9,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/nl/spacex-vangt-starship-met-mechanische-armen-en-schrijft-geschiedenis-1794720147520eg4u3pab2.html"
+    },
+    {
+     "id": "17947201234945qled3tv1",
+     "titel": "Echtpaar met autisme en ADHD maakt vieze straatborden schoon in Brighton",
+     "teaser": "Paul en Ruth Richmond-Watson uit Brighton, Engeland, zijn sinds september bezig met het schoonmaken van vieze straatborden in East Sussex. Het koppel, beiden autistisch met ADHD, zocht een hobby om samen te doen. Paul (47), afkomstig uit Nieuw-Zeeland en voormalig ramenwasser, en Ruth (25) reinigen minstens één bord per dag, wat elk 20 tot 25 minuten kost met een rugzak-waterpomp,...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/echtpaar-met-autisme-en-adhd-maakt-vieze-straatborden-schoon-in-brighton-17947201234945qled3tv1.html"
+    },
     {
      "id": "17946783500847nw336pba",
      "titel": "Ada Le Poidevin verborg Britse soldaten voor nazi's op Guernsey",
@@ -28,22 +44,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/dna-test-lost-80-jaar-oud-familiegeheim-op-na-wwii-romance-1794597697977w9jqwal0r.html"
-    },
-    {
-     "id": "1794597672167ip5gkm2wn",
-     "titel": "Man redt kwetsbare buren uit 'bijbelse' overstroming Florida",
-     "teaser": "Rick Addante uit Palm Bay, Florida, redde zijn kwetsbare buren tijdens een overstroming die hij zelf 'bijbels' noemde. Op maandag viel binnen één dag tussen de 16 en 22 inch regen, onderdeel van wat een 1.000-jaarlijkse regenval wordt genoemd. Addante hielp zijn 80-jarige buurman Terry, die net een openhartoperatie had ondergaan en moeite had met ademhalen, uit zijn huis naar...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/man-redt-kwetsbare-buren-uit-bijbelse-overstroming-florida-1794597672167ip5gkm2wn.html"
-    },
-    {
-     "id": "1794548079470lejspo3ad",
-     "titel": "Microplasticfilter van PolyGone Systems gaat in Atlantic City draaien",
-     "teaser": "Een waterzuiveringsinstallatie in Atlantic City, New Jersey, is als eerste ter wereld uitgerust met een systeem dat microplastics uit afvalwater haalt voordat het de oceaan instroomt. Geen enkele wet verplicht dit nog, maar startup PolyGone Systems bouwde het toch. Oprichters Nathaniel Banks en Yidian Liu, beiden voormalig Princeton-student, ontwierpen de zogeheten Polypods: een systeem dat het oppervlak van ultrahydrofobe moerasplanten...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/microplasticfilter-van-polygone-systems-gaat-in-atlantic-city-draaien-1794548079470lejspo3ad.html"
     }
    ],
    "dagoverzichten": [
@@ -53,25 +53,27 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-12",
      "url": "https://brightnews.online/articles/nl/verborgen-schatten-en-oude-banden-komen-aan-het-licht-dg-20261112-lifestyle.html"
-    },
-    {
-     "id": "dg-20261111-environment",
-     "titel": "Steden kiezen voor schone lucht, grote opslag en groen op de gevel",
-     "categorie": "Environment",
-     "dag": "2026-11-11",
-     "url": "https://brightnews.online/articles/nl/steden-kiezen-voor-schone-lucht-grote-opslag-en-groen-op-de-gevel-dg-20261111-environment.html"
-    },
-    {
-     "id": "dg-20261111-lifestyle",
-     "titel": "Herenigde medailles, gered door buren en honderd jaar wandelen: het goede nieuws van deze dagen",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-11",
-     "url": "https://brightnews.online/articles/nl/herenigde-medailles-gered-door-buren-en-honderd-jaar-wandelen-het-goede-nieuws-v-dg-20261111-lifestyle.html"
     }
    ]
   },
   "en": {
    "top": [
+    {
+     "id": "1794720147520eg4u3pab2",
+     "titel": "SpaceX catches Starship with mechanical arms and makes history",
+     "teaser": "SpaceX has for the first time caught a Starship spacecraft with mechanical arms at its launch facility in Texas, 22 hours after launch. According to the company, this demonstrates Starship's full reusability, intended for trips to the moon and Mars. The first-stage booster exploded shortly after launch on Friday, preventing the hoped-for double catch. SpaceX had previously successfully caught a...",
+     "score": 9,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/en/spacex-catches-starship-with-mechanical-arms-and-makes-history-1794720147520eg4u3pab2.html"
+    },
+    {
+     "id": "17947201234945qled3tv1",
+     "titel": "Couple with autism and ADHD clean dirty street signs in Brighton",
+     "teaser": "Paul and Ruth Richmond-Watson from Brighton, England, have been cleaning dirty street signs in East Sussex since September. The couple, both autistic with ADHD, were looking for a hobby to do together. Paul (47), originally from New Zealand and a former window cleaner, and Ruth (25) clean at least one sign per day, which takes each 20 to 25 minutes...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/couple-with-autism-and-adhd-clean-dirty-street-signs-in-brighton-17947201234945qled3tv1.html"
+    },
     {
      "id": "17946783500847nw336pba",
      "titel": "Ada Le Poidevin hid British soldiers from Nazis on Guernsey",
@@ -95,22 +97,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/dna-test-solves-80-year-old-family-secret-after-wwii-romance-1794597697977w9jqwal0r.html"
-    },
-    {
-     "id": "1794597672167ip5gkm2wn",
-     "titel": "Man rescues vulnerable neighbors from 'biblical' Florida flooding",
-     "teaser": "Rick Addante from Palm Bay, Florida, rescued his vulnerable neighbors during a flood he himself described as 'biblical'. On Monday, between 16 and 22 inches of rain fell in a single day, part of what is being called a 1,000-year rainfall event. Addante helped his 80-year-old neighbor Terry, who had recently undergone open-heart surgery and was struggling to breathe, from...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/man-rescues-vulnerable-neighbors-from-biblical-florida-flooding-1794597672167ip5gkm2wn.html"
-    },
-    {
-     "id": "1794548079470lejspo3ad",
-     "titel": "PolyGone Systems microplastics filter launches in Atlantic City",
-     "teaser": "A water treatment facility in Atlantic City, New Jersey, has become the first in the world to be equipped with a system that removes microplastics from wastewater before it enters the ocean. No law currently requires this, but startup PolyGone Systems built it anyway. Founders Nathaniel Banks and Yidian Liu, both former Princeton students, designed the so-called Polypods: a system...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/polygone-systems-microplastics-filter-launches-in-atlantic-city-1794548079470lejspo3ad.html"
     }
    ],
    "dagoverzichten": [
@@ -120,25 +106,27 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-12",
      "url": "https://brightnews.online/articles/en/hidden-treasures-and-old-bonds-come-to-light-dg-20261112-lifestyle.html"
-    },
-    {
-     "id": "dg-20261111-environment",
-     "titel": "Cities choose clean air, massive storage and green on the facade",
-     "categorie": "Environment",
-     "dag": "2026-11-11",
-     "url": "https://brightnews.online/articles/en/cities-choose-clean-air-massive-storage-and-green-on-the-facade-dg-20261111-environment.html"
-    },
-    {
-     "id": "dg-20261111-lifestyle",
-     "titel": "Reunited medals, rescued by neighbors and a hundred years of walking: the good news of these days",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-11",
-     "url": "https://brightnews.online/articles/en/reunited-medals-rescued-by-neighbors-and-a-hundred-years-of-walking-the-good-new-dg-20261111-lifestyle.html"
     }
    ]
   },
   "de": {
    "top": [
+    {
+     "id": "1794720147520eg4u3pab2",
+     "titel": "SpaceX fängt Starship mit mechanischen Armen und schreibt Geschichte",
+     "teaser": "SpaceX hat erstmals ein Starship-Raumfahrzeug mit mechanischen Armen an der Startanlage in Texas abgefangen, 22 Stunden nach dem Start. Dies zeigt nach Angaben des Unternehmens die vollständige Wiederverwendbarkeit von Starship, das für Reisen zum Mond und zum Mars vorgesehen ist. Die erste Stufe des Boosters explodierte kurz nach dem Start am Freitag, wodurch der erhoffte doppelte Fang nicht gelang. SpaceX...",
+     "score": 9,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/de/spacex-fangt-starship-mit-mechanischen-armen-und-schreibt-geschichte-1794720147520eg4u3pab2.html"
+    },
+    {
+     "id": "17947201234945qled3tv1",
+     "titel": "Ehepaar mit Autismus und ADHS reinigt schmutzige Straßenschilder in Brighton",
+     "teaser": "Paul und Ruth Richmond-Watson aus Brighton, England, reinigen seit September schmutzige Straßenschilder in East Sussex. Das Paar, beide autistisch mit ADHS, suchte nach einem gemeinsamen Hobby. Paul (47), aus Neuseeland stammend und ehemaliger Fensterputzer, und Ruth (25) reinigen mindestens ein Schild pro Tag, was jeweils 20 bis 25 Minuten mit einem Rucksack-Wasserpumpe, einer Schneeschschaum-Sprühflasche mit umweltfreundlichem Schaum und einer langen...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/ehepaar-mit-autismus-und-adhs-reinigt-schmutzige-stra-enschilder-in-brighton-17947201234945qled3tv1.html"
+    },
     {
      "id": "17946783500847nw336pba",
      "titel": "Ada Le Poidevin verbarg britische Soldaten vor Nazis auf Guernsey",
@@ -162,22 +150,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/dna-test-lost-80-jahre-altes-familiengeheimnis-nach-wwii-romanze-1794597697977w9jqwal0r.html"
-    },
-    {
-     "id": "1794597672167ip5gkm2wn",
-     "titel": "Mann rettet gefährdete Nachbarn aus „biblischer\" Überschwemmung in Florida",
-     "teaser": "Rick Addante aus Palm Bay, Florida, rettete seine gefährdeten Nachbarn während einer Überschwemmung, die er selbst als „biblisch\" bezeichnete. Am Montag fielen innerhalb eines Tages zwischen 16 und 22 Zoll Regen, Teil dessen, was als Niederschlag eines 1.000-Jahres-Ereignisses gilt. Addante half seinem 80-jährigen Nachbarn Terry, der gerade eine Herzoperation hinter sich hatte und Atemprobleme hatte, aus seinem Haus zum höchsten...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/mann-rettet-gefahrdete-nachbarn-aus-biblischer-uberschwemmung-in-florida-1794597672167ip5gkm2wn.html"
-    },
-    {
-     "id": "1794548079470lejspo3ad",
-     "titel": "Mikroplastikfilter von PolyGone Systems geht in Atlantic City in Betrieb",
-     "teaser": "Eine Wasseraufbereitungsanlage in Atlantic City, New Jersey, ist weltweit die erste, die mit einem System ausgestattet ist, das Mikroplastiken aus Abwasser entfernt, bevor es in den Ozean gelangt. Keine Vorschrift verlangt dies bislang, doch das Startup PolyGone Systems baute es trotzdem. Die Gründer Nathaniel Banks und Yidian Liu, beide ehemalige Princeton-Studenten, entwickelten die sogenannten Polypods: ein System, das die Oberfläche...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/mikroplastikfilter-von-polygone-systems-geht-in-atlantic-city-in-betrieb-1794548079470lejspo3ad.html"
     }
    ],
    "dagoverzichten": [
@@ -187,25 +159,27 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-12",
      "url": "https://brightnews.online/articles/de/verborgene-schatze-und-alte-bindungen-kommen-ans-licht-dg-20261112-lifestyle.html"
-    },
-    {
-     "id": "dg-20261111-environment",
-     "titel": "Städte setzen auf saubere Luft, große Speicher und Grün an der Fassade",
-     "categorie": "Environment",
-     "dag": "2026-11-11",
-     "url": "https://brightnews.online/articles/de/stadte-setzen-auf-saubere-luft-gro-e-speicher-und-grun-an-der-fassade-dg-20261111-environment.html"
-    },
-    {
-     "id": "dg-20261111-lifestyle",
-     "titel": "Wiedergefundene Medaillen, von Nachbarn gerettet und hundert Jahre Spaziergang: die guten Nachrichten dieser Tage",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-11",
-     "url": "https://brightnews.online/articles/de/wiedergefundene-medaillen-von-nachbarn-gerettet-und-hundert-jahre-spaziergang-di-dg-20261111-lifestyle.html"
     }
    ]
   },
   "fr": {
    "top": [
+    {
+     "id": "1794720147520eg4u3pab2",
+     "titel": "SpaceX attrape Starship avec des bras mécaniques et entre dans l'histoire",
+     "teaser": "SpaceX a capturé pour la première fois un vaisseau spatial Starship avec des bras mécaniques à la base de lancement au Texas, 22 heures après le décollage. Selon l'entreprise, cela démontre la réutilisabilité complète de Starship, destiné aux voyages vers la lune et Mars. Le propulseur du premier étage a explosé peu après le décollage vendredi, ce qui a empêché...",
+     "score": 9,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/fr/spacex-attrape-starship-avec-des-bras-mecaniques-et-entre-dans-l-histoire-1794720147520eg4u3pab2.html"
+    },
+    {
+     "id": "17947201234945qled3tv1",
+     "titel": "Un couple autiste avec TDAH nettoie les panneaux routiers sales à Brighton",
+     "teaser": "Paul et Ruth Richmond-Watson de Brighton, en Angleterre, nettoient depuis septembre les panneaux routiers sales du East Sussex. Le couple, tous deux autistes avec un TDAH, cherchait un loisir à partager. Paul (47 ans), originaire de Nouvelle-Zélande et ancien nettoyeur de vitres, et Ruth (25 ans) nettoient au moins un panneau par jour, ce qui prend chacun 20 à 25...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/un-couple-autiste-avec-tdah-nettoie-les-panneaux-routiers-sales-a-brighton-17947201234945qled3tv1.html"
+    },
     {
      "id": "17946783500847nw336pba",
      "titel": "Ada Le Poidevin cachait des soldats britanniques aux nazis à Guernesey",
@@ -229,22 +203,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/un-test-adn-resout-un-secret-de-famille-vieux-de-80-ans-apres-une-romance-de-la-1794597697977w9jqwal0r.html"
-    },
-    {
-     "id": "1794597672167ip5gkm2wn",
-     "titel": "Un homme sauve ses voisins vulnérables lors d'une inondation « biblique » en Floride",
-     "teaser": "Rick Addante de Palm Bay, en Floride, a secouru ses voisins vulnérables lors d'une inondation qu'il a lui-même qualifiée de « biblique ». Lundi, entre 16 et 22 pouces de pluie sont tombés en une seule journée, ce qui constitue ce qu'on appelle une pluie millénaire. Addante a aidé son voisin Terry, âgé de 80 ans, qui venait de subir...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/un-homme-sauve-ses-voisins-vulnerables-lors-d-une-inondation-biblique-en-floride-1794597672167ip5gkm2wn.html"
-    },
-    {
-     "id": "1794548079470lejspo3ad",
-     "titel": "Le filtre à microplastiques de PolyGone Systems se met en marche à Atlantic City",
-     "teaser": "Une installation de traitement des eaux à Atlantic City, New Jersey, est la première au monde à être équipée d'un système qui extrait les microplastiques des eaux usées avant qu'elles ne se déversent dans l'océan. Aucune loi n'impose cela pour l'instant, mais la startup PolyGone Systems l'a construit de toute façon. Les fondateurs Nathaniel Banks et Yidian Liu, tous deux...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/le-filtre-a-microplastiques-de-polygone-systems-se-met-en-marche-a-atlantic-city-1794548079470lejspo3ad.html"
     }
    ],
    "dagoverzichten": [
@@ -254,25 +212,27 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-12",
      "url": "https://brightnews.online/articles/fr/des-tresors-caches-et-des-liens-anciens-refont-surface-dg-20261112-lifestyle.html"
-    },
-    {
-     "id": "dg-20261111-environment",
-     "titel": "Les villes optent pour un air pur, un stockage massif et de la verdure en façade",
-     "categorie": "Environment",
-     "dag": "2026-11-11",
-     "url": "https://brightnews.online/articles/fr/les-villes-optent-pour-un-air-pur-un-stockage-massif-et-de-la-verdure-en-facade-dg-20261111-environment.html"
-    },
-    {
-     "id": "dg-20261111-lifestyle",
-     "titel": "Des médailles retrouvées, sauvées par des voisins et cent ans de marche : les bonnes nouvelles de ces jours-ci",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-11",
-     "url": "https://brightnews.online/articles/fr/des-medailles-retrouvees-sauvees-par-des-voisins-et-cent-ans-de-marche-les-bonne-dg-20261111-lifestyle.html"
     }
    ]
   },
   "es": {
    "top": [
+    {
+     "id": "1794720147520eg4u3pab2",
+     "titel": "SpaceX atrapa el Starship con brazos mecánicos e ingresa en la historia",
+     "teaser": "SpaceX ha atrapado por primera vez una nave espacial Starship con brazos mecánicos en la base de lanzamiento de Texas, 22 horas después del despegue. Según la empresa, esto demuestra la reutilización completa del Starship, destinado a viajes a la luna y Marte. El impulsor de primera etapa explotó poco después del lanzamiento el viernes, lo que impidió el doble...",
+     "score": 9,
+     "categorie": "Tech",
+     "url": "https://brightnews.online/articles/es/spacex-atrapa-el-starship-con-brazos-mecanicos-e-ingresa-en-la-historia-1794720147520eg4u3pab2.html"
+    },
+    {
+     "id": "17947201234945qled3tv1",
+     "titel": "Una pareja con autismo y TDAH limpia señales sucias en Brighton",
+     "teaser": "Paul y Ruth Richmond-Watson de Brighton, Inglaterra, llevan desde septiembre limpiando señales de tráfico sucias en East Sussex. La pareja, ambos autistas con TDAH, buscaba un hobby para hacer juntos. Paul (47), originario de Nueva Zelanda y antiguo limpiador de ventanas, y Ruth (25) limpian al menos una señal al día, lo que les lleva entre 20 y 25 minutos...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/una-pareja-con-autismo-y-tdah-limpia-senales-sucias-en-brighton-17947201234945qled3tv1.html"
+    },
     {
      "id": "17946783500847nw336pba",
      "titel": "Ada Le Poidevin escondió soldados británicos de los nazis en Guernsey",
@@ -296,22 +256,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/prueba-de-adn-resuelve-secreto-familiar-de-80-anos-tras-romance-en-la-iigm-1794597697977w9jqwal0r.html"
-    },
-    {
-     "id": "1794597672167ip5gkm2wn",
-     "titel": "Hombre rescata a vecinos vulnerables de inundación «bíblica» en Florida",
-     "teaser": "Rick Addante de Palm Bay, Florida, rescató a sus vecinos vulnerables durante una inundación que él mismo calificó de «bíblica». El lunes cayeron entre 16 y 22 pulgadas de lluvia en un solo día, parte de lo que se considera una lluvia de 1.000 años. Addante ayudó a su vecino Terry, de 80 años, quien acababa de someterse a una...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/hombre-rescata-a-vecinos-vulnerables-de-inundacion-biblica-en-florida-1794597672167ip5gkm2wn.html"
-    },
-    {
-     "id": "1794548079470lejspo3ad",
-     "titel": "El filtro de microplásticos de PolyGone Systems entra en funcionamiento en Atlantic City",
-     "teaser": "Una planta de tratamiento de aguas residuales en Atlantic City, Nueva Jersey, es la primera del mundo equipada con un sistema que extrae microplásticos del agua residual antes de que llegue al océano. Ninguna ley lo exige aún, pero la startup PolyGone Systems lo construyó de todas formas. Los fundadores Nathaniel Banks y Yidian Liu, ambos antiguos estudiantes de Princeton,...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/el-filtro-de-microplasticos-de-polygone-systems-entra-en-funcionamiento-en-atlan-1794548079470lejspo3ad.html"
     }
    ],
    "dagoverzichten": [
@@ -321,20 +265,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-12",
      "url": "https://brightnews.online/articles/es/tesoros-ocultos-y-lazos-antiguos-salen-a-la-luz-dg-20261112-lifestyle.html"
-    },
-    {
-     "id": "dg-20261111-environment",
-     "titel": "Las ciudades apuestan por aire limpio, almacenamiento masivo y verde en las fachadas",
-     "categorie": "Environment",
-     "dag": "2026-11-11",
-     "url": "https://brightnews.online/articles/es/las-ciudades-apuestan-por-aire-limpio-almacenamiento-masivo-y-verde-en-las-facha-dg-20261111-environment.html"
-    },
-    {
-     "id": "dg-20261111-lifestyle",
-     "titel": "Medallas reunidas, salvadas por vecinos y cien años caminando: las buenas noticias de estos días",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-11",
-     "url": "https://brightnews.online/articles/es/medallas-reunidas-salvadas-por-vecinos-y-cien-anos-caminando-las-buenas-noticias-dg-20261111-lifestyle.html"
     }
    ]
   }
