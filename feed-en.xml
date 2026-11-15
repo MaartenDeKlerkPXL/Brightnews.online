@@ -6,13 +6,29 @@
         <atom:link href="https://brightnews.online/feed-en.xml" rel="self" type="application/rss+xml"/>
         <description>A fresh pick of good news from around the world, every day. Enjoy the read!</description>
         <language>en-us</language>
-        <lastBuildDate>Sun, 15 Nov 2026 05:22:29 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 15 Nov 2026 18:36:45 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Your Daily Dose of Positivity</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Big money, small effort and an old secret: three forms of goodness</title>
+            <link>https://brightnews.online/articles/en/big-money-small-effort-and-an-old-secret-three-forms-of-goodness-dg-20261114-lifestyle.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/big-money-small-effort-and-an-old-secret-three-forms-of-goodness-dg-20261114-lifestyle.html</guid>
+            <pubDate>Sun, 15 Nov 2026 18:36:45 GMT</pubDate>
+            <description>Sometimes good news comes in large sums, sometimes in a few minutes of work per day, and sometimes it only comes to light decades later. This week, three very different stories show that people want to give something back in their own way, whether now or long ago. In San Francisco, Airbnb founder Brian Chesky announced last week together with Mayor Daniel Lurie that he is donating $100 million to </description>
+            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2015/05/San-Francisco-davidyuweb-CC.jpg" type="image/jpeg" length="0"/>
+        </item>
+        <item>
+            <title>Airbnb founder Chesky donates $100 million to San Francisco parks</title>
+            <link>https://brightnews.online/articles/en/airbnb-founder-chesky-donates-100-million-to-san-francisco-parks-1794767752178r7rk1mqo1.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/airbnb-founder-chesky-donates-100-million-to-san-francisco-parks-1794767752178r7rk1mqo1.html</guid>
+            <pubDate>Sun, 15 Nov 2026 18:35:55 GMT</pubDate>
+            <description>Airbnb CEO Brian Chesky has donated $100 million to San Francisco&apos;s parks, the largest gift from an individual donor in the city&apos;s history. The announcement was made alongside Mayor Daniel Lurie last week in Golden Gate Park. Chesky founded Airbnb 18 years ago in San Francisco, where the company remains headquartered. With the donation, he wants to give back to...</description>
+            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2015/05/San-Francisco-davidyuweb-CC.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>SpaceX catches Starship with mechanical arms and makes history</title>
             <link>https://brightnews.online/articles/en/spacex-catches-starship-with-mechanical-arms-and-makes-history-1794720147520eg4u3pab2.html</link>
@@ -236,22 +252,6 @@
             <pubDate>Tue, 10 Nov 2026 19:28:09 GMT</pubDate>
             <description>Italy has allocated 2 million euros (approximately $2.2 million) to rescue dogs from illegal dogfighting operations and help them recover. The funds will go to shelters and rehabilitation facilities that provide care and behavioral training, enabling traumatized dogs to be rehomed with families. The financing comes after years of advocacy by Humane World for Animals Italy and Fondazione Cave Canem</description>
             <enclosure url="https://cdn.prod.website-files.com/5f6cc9cd16d59d990c8fca33/6af354285cb0734cee00a85e_6af3542740ffdc98b024557c_dogfighting-rings-italy-rescue-rehabilitation-featured.webp" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Atacama Desert blooms in record colors after years of drought</title>
-            <link>https://brightnews.online/articles/en/atacama-desert-blooms-in-record-colors-after-years-of-drought-1794338863435j7325tvr1.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/atacama-desert-blooms-in-record-colors-after-years-of-drought-1794338863435j7325tvr1.html</guid>
-            <pubDate>Tue, 10 Nov 2026 19:27:45 GMT</pubDate>
-            <description>The Atacama Desert in Chile, normally the driest place on Earth, is covered with some 200 flowering plant species. Some flowers are appearing in places where they haven&apos;t been seen since before the year 2000. The phenomenon, known as the &apos;blooming desert&apos;, occurs when rainfall and temperature coincide and dormant seeds beneath the sand awaken. Thanks to Super El Niño,...</description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Juan-Cortez-Estay-Unsplash.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Viral doorbell video raises $76,000 for caregiver Suzanna Metcalf</title>
-            <link>https://brightnews.online/articles/en/viral-doorbell-video-raises-76-000-for-caregiver-suzanna-metcalf-1794338838098cpxyt1m0c.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/viral-doorbell-video-raises-76-000-for-caregiver-suzanna-metcalf-1794338838098cpxyt1m0c.html</guid>
-            <pubDate>Tue, 10 Nov 2026 19:27:20 GMT</pubDate>
-            <description>A doorbell camera video from Castle Rock, Colorado, went viral last year and has since raised more than $76,000 for pizza delivery driver Suzanna Metcalf. When Metcalf came to report an incorrect pizza order to Pastor Neal Seiwert, he noticed she was struggling. Metcalf works as a delivery driver while providing full-time care for her 82-year-old mother, including medical care...</description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/seiwert-ring-camera-.webp" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

@@ -1,5 +1,48 @@
 [
   {
+    "id": "dg-20261114-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-11-14",
+    "title": "Big money, small effort and an old secret: three forms of goodness",
+    "summary": "Sometimes good news comes in large sums, sometimes in a few minutes of work per day, and sometimes it only comes to light decades later. This week, three very different stories show that people want to give something back in their own way, whether now or long ago. In San Francisco, Airbnb founder Brian Chesky announced last week together with Mayor Daniel Lurie that he is donating $100 million to the city's parks. It is the largest gift from an individual donor in San Francisco's history. Chesky founded Airbnb 18 years ago in that same city and now wants to...",
+    "image_alt": "Big money, small effort and an old secret: three forms of goodness",
+    "meta_description": "From a million-pound gift to parks to clean street signs and a hidden war story: the good news of 14 November 2026.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2015/05/San-Francisco-davidyuweb-CC.jpg",
+    "date": "2026-11-15T18:36:45.543Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "1794767752178r7rk1mqo1",
+        "title": "Airbnb founder Chesky donates $100 million to San Francisco parks"
+      },
+      {
+        "id": "17947201234945qled3tv1",
+        "title": "Couple with autism and ADHD clean dirty street signs in Brighton"
+      },
+      {
+        "id": "17946783500847nw336pba",
+        "title": "Ada Le Poidevin hid British soldiers from Nazis on Guernsey"
+      }
+    ]
+  },
+  {
+    "id": "1794767752178r7rk1mqo1",
+    "title": "Airbnb founder Chesky donates $100 million to San Francisco parks",
+    "summary": "Airbnb CEO Brian Chesky has donated $100 million to San Francisco's parks, the largest gift from an individual donor in the city's history. The announcement was made alongside Mayor Daniel Lurie last week in Golden Gate Park. Chesky founded Airbnb 18 years ago in San Francisco, where the company remains headquartered. With the donation, he wants to give back to...",
+    "image_alt": "Brian Chesky and Mayor Daniel Lurie announce $100 million donation for San Francisco parks in Golden Gate Park",
+    "meta_description": "Airbnb founder Brian Chesky donates $100 million to San Francisco parks, the largest gift ever to the city.",
+    "meta_keywords": "Brian Chesky, Airbnb, San Francisco, parks, donation, Golden Gate Park, Embarcadero Park, Daniel Lurie",
+    "link": "https://www.goodnewsnetwork.org/san-francisco-gets-100m-gift-for-public-parks-from-airbnb-ceo/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2015/05/San-Francisco-davidyuweb-CC.jpg",
+    "date": "2026-11-15T18:35:55.275Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
     "id": "1794720147520eg4u3pab2",
     "title": "SpaceX catches Starship with mechanical arms and makes history",
     "summary": "SpaceX has for the first time caught a Starship spacecraft with mechanical arms at its launch facility in Texas, 22 hours after launch. According to the company, this demonstrates Starship's full reusability, intended for trips to the moon and Mars. The first-stage booster exploded shortly after launch on Friday, preventing the hoped-for double catch. SpaceX had previously successfully caught a...",
@@ -2528,33 +2571,5 @@
     "date": "2026-10-30T17:54:00.394Z",
     "category": "Lifestyle",
     "score": 9
-  },
-  {
-    "id": "1793382804799wiqr8zal6",
-    "title": "Volunteers become salmon and earthworm to save the River Tone",
-    "summary": "In Somerset, eighteen volunteers took part in an unusual study: they learned to empathize with the physiology and senses of an animal – such as red deer, salmon, otter, kestrel or earthworm – to experience the threats to wildlife around the polluted River Tone. Participant Jake Lawy swam as a salmon through polluted, oxygen-poor water and immediately spotted possible solutions,...",
-    "image_alt": "Volunteer swims as a salmon through the polluted River Tone in Somerset",
-    "meta_description": "Volunteers experience wildlife perspective to save polluted River Tone with thirty-year campaign.",
-    "meta_keywords": "River Tone, Somerset, salmon, wildlife, pollution, nature restoration, biodiversity",
-    "link": "https://www.positive.news/society/volunteers-became-salmon-deer-and-earthworms-then-they-set-out-to-save-their-river/",
-    "source": "Positive.News",
-    "image": "https://positivenews.kinsta.cloud/wp-content/uploads/2026/10/Atlantic-Salmon-001-©-Darren-Honeywill-2026.jpg",
-    "date": "2026-10-30T17:53:26.687Z",
-    "category": "Environment",
-    "score": 10
-  },
-  {
-    "id": "17933827785551xdq3cwyb",
-    "title": "Cocoa farmer Susana Afrifa Ankrah protects Ghanaian rainforest",
-    "summary": "In the Atewa Range in Ghana, cocoa farmer Susana Afrifa Ankrah, 62, is helping protect a rare stretch of tropical rainforest that is home to owls, flycatchers, antelopes and giant swallowtail butterflies. Through the Ghana Cocoa Forest REDD+ Programme (GCFRP), a UN-backed initiative that channels money from wealthy countries to forest-rich nations via the World Bank, farmers like Susana learn...",
-    "image_alt": "Cocoa farmer Susana Afrifa Ankrah in the protected rainforest of the Atewa Range in Ghana",
-    "meta_description": "Cocoa farmer Susana Afrifa Ankrah protects Ghanaian rainforest via REDD+ programme and improves cocoa yields.",
-    "meta_keywords": "Ghana, cocoa, rainforest, REDD+, Atewa Range, sustainable agriculture, Susana Afrifa Ankrah",
-    "link": "https://www.positive.news/society/the-farmer-growing-a-future-under-ghanas-trees/",
-    "source": "Positive.News",
-    "image": "https://www.positive.news/wp-content/uploads/2026/10/SharedLand_Story03b_WebHeader_1800x1080.jpg",
-    "date": "2026-10-30T17:53:01.111Z",
-    "category": "Environment",
-    "score": 10
   }
 ]

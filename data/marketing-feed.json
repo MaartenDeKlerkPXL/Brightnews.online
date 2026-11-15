@@ -1,10 +1,18 @@
 {
- "gegenereerd": "2026-11-15T05:22:33.444Z",
+ "gegenereerd": "2026-11-15T18:36:48.589Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "1794767752178r7rk1mqo1",
+     "titel": "Airbnb-oprichter Chesky schenkt $100 miljoen aan parken San Francisco",
+     "teaser": "Airbnb-CEO Brian Chesky heeft $100 miljoen gedoneerd aan de parken van San Francisco, de grootste gift van een individuele donor in de geschiedenis van de stad. De aankondiging gebeurde samen met burgemeester Daniel Lurie vorige week in Golden Gate Park. Chesky richtte Airbnb 18 jaar geleden op in San Francisco, waar het bedrijf nog altijd is gevestigd. Met de donatie...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/airbnb-oprichter-chesky-schenkt-100-miljoen-aan-parken-san-francisco-1794767752178r7rk1mqo1.html"
+    },
     {
      "id": "1794720147520eg4u3pab2",
      "titel": "SpaceX vangt Starship met mechanische armen en schrijft geschiedenis",
@@ -36,17 +44,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/nl/atollen-bikar-en-bokak-worden-nieuw-zeereservaat-1794678322616t56aulc0t.html"
-    },
-    {
-     "id": "1794597697977w9jqwal0r",
-     "titel": "DNA-test lost 80 jaar oud familiegeheim op na WWII-romance",
-     "teaser": "Rodney Anderson (81) uit Engeland wist nooit wie zijn echte vader was. Zijn moeder Yvonne kreeg hem in 1945 in Farnham, na een relatie met de Canadese soldaat Charles Blakney tijdens de Tweede Wereldoorlog. In Canada zocht Bethany Allen sinds 2008 naar deze mysterieuze oom, nadat ze via scheidingspapieren ontdekte dat haar grootvader Blakney in 1944 een kind had gekregen...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/dna-test-lost-80-jaar-oud-familiegeheim-op-na-wwii-romance-1794597697977w9jqwal0r.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261114-lifestyle",
+     "titel": "Groot geld, kleine moeite en een oud geheim: drie vormen van goedheid",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-14",
+     "url": "https://brightnews.online/articles/nl/groot-geld-kleine-moeite-en-een-oud-geheim-drie-vormen-van-goedheid-dg-20261114-lifestyle.html"
+    },
     {
      "id": "dg-20261112-lifestyle",
      "titel": "Verborgen schatten en oude banden komen aan het licht",
@@ -58,6 +65,14 @@
   },
   "en": {
    "top": [
+    {
+     "id": "1794767752178r7rk1mqo1",
+     "titel": "Airbnb founder Chesky donates $100 million to San Francisco parks",
+     "teaser": "Airbnb CEO Brian Chesky has donated $100 million to San Francisco's parks, the largest gift from an individual donor in the city's history. The announcement was made alongside Mayor Daniel Lurie last week in Golden Gate Park. Chesky founded Airbnb 18 years ago in San Francisco, where the company remains headquartered. With the donation, he wants to give back to...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/airbnb-founder-chesky-donates-100-million-to-san-francisco-parks-1794767752178r7rk1mqo1.html"
+    },
     {
      "id": "1794720147520eg4u3pab2",
      "titel": "SpaceX catches Starship with mechanical arms and makes history",
@@ -89,17 +104,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/en/atolls-bikar-and-bokak-become-new-marine-reserve-1794678322616t56aulc0t.html"
-    },
-    {
-     "id": "1794597697977w9jqwal0r",
-     "titel": "DNA test solves 80-year-old family secret after WWII romance",
-     "teaser": "Rodney Anderson (81) from England never knew who his real father was. His mother Yvonne had him in 1945 in Farnham, following a relationship with Canadian soldier Charles Blakney during World War II. In Canada, Bethany Allen had been searching since 2008 for this mysterious uncle, after discovering through divorce papers that her grandfather Blakney had fathered a child in...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/dna-test-solves-80-year-old-family-secret-after-wwii-romance-1794597697977w9jqwal0r.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261114-lifestyle",
+     "titel": "Big money, small effort and an old secret: three forms of goodness",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-14",
+     "url": "https://brightnews.online/articles/en/big-money-small-effort-and-an-old-secret-three-forms-of-goodness-dg-20261114-lifestyle.html"
+    },
     {
      "id": "dg-20261112-lifestyle",
      "titel": "Hidden treasures and old bonds come to light",
@@ -111,6 +125,14 @@
   },
   "de": {
    "top": [
+    {
+     "id": "1794767752178r7rk1mqo1",
+     "titel": "Airbnb-Gründer Chesky spendet $100 Millionen an Parks in San Francisco",
+     "teaser": "Airbnb-CEO Brian Chesky hat $100 Millionen an die Parks von San Francisco gespendet – die größte Einzelspende in der Geschichte der Stadt. Die Ankündigung erfolgte zusammen mit Bürgermeister Daniel Lurie in der vergangenen Woche im Golden Gate Park. Chesky gründete Airbnb vor 18 Jahren in San Francisco, wo das Unternehmen noch immer ansässig ist. Mit der Spende möchte er der...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/airbnb-grunder-chesky-spendet-100-millionen-an-parks-in-san-francisco-1794767752178r7rk1mqo1.html"
+    },
     {
      "id": "1794720147520eg4u3pab2",
      "titel": "SpaceX fängt Starship mit mechanischen Armen und schreibt Geschichte",
@@ -142,17 +164,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/de/atolle-bikar-und-bokak-werden-neues-meeresschutzgebiet-1794678322616t56aulc0t.html"
-    },
-    {
-     "id": "1794597697977w9jqwal0r",
-     "titel": "DNA-Test löst 80 Jahre altes Familiengeheimnis nach WWII-Romanze",
-     "teaser": "Rodney Anderson (81) aus England wusste nie, wer sein leiblicher Vater war. Seine Mutter Yvonne bekam ihn 1945 in Farnham nach einer Beziehung mit dem kanadischen Soldaten Charles Blakney während des Zweiten Weltkriegs. In Kanada suchte Bethany Allen seit 2008 nach diesem mysteriösen Onkel, nachdem sie durch Scheidungspapiere entdeckt hatte, dass ihr Großvater Blakney 1944 ein Kind in England bekommen...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/dna-test-lost-80-jahre-altes-familiengeheimnis-nach-wwii-romanze-1794597697977w9jqwal0r.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261114-lifestyle",
+     "titel": "Großzügige Spenden, kleine Mühe und ein altes Geheimnis: drei Formen der Güte",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-14",
+     "url": "https://brightnews.online/articles/de/gro-zugige-spenden-kleine-muhe-und-ein-altes-geheimnis-drei-formen-der-gute-dg-20261114-lifestyle.html"
+    },
     {
      "id": "dg-20261112-lifestyle",
      "titel": "Verborgene Schätze und alte Bindungen kommen ans Licht",
@@ -164,6 +185,14 @@
   },
   "fr": {
    "top": [
+    {
+     "id": "1794767752178r7rk1mqo1",
+     "titel": "Le fondateur d'Airbnb Chesky offre $100 millions aux parcs de San Francisco",
+     "teaser": "Le PDG d'Airbnb Brian Chesky a donné $100 millions aux parcs de San Francisco, le plus grand don d'un donateur individuel de l'histoire de la ville. L'annonce a été faite conjointement avec le maire Daniel Lurie la semaine dernière à Golden Gate Park. Chesky a fondé Airbnb il y a 18 ans à San Francisco, où l'entreprise est toujours basée....",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/le-fondateur-d-airbnb-chesky-offre-100-millions-aux-parcs-de-san-francisco-1794767752178r7rk1mqo1.html"
+    },
     {
      "id": "1794720147520eg4u3pab2",
      "titel": "SpaceX attrape Starship avec des bras mécaniques et entre dans l'histoire",
@@ -195,17 +224,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/fr/les-atolls-bikar-et-bokak-deviennent-une-nouvelle-reserve-marine-1794678322616t56aulc0t.html"
-    },
-    {
-     "id": "1794597697977w9jqwal0r",
-     "titel": "Un test ADN résout un secret de famille vieux de 80 ans après une romance de la Seconde Guerre mondiale",
-     "teaser": "Rodney Anderson (81 ans) d'Angleterre n'a jamais su qui était son vrai père. Sa mère Yvonne l'a eu en 1945 à Farnham, suite à une relation avec le soldat canadien Charles Blakney pendant la Seconde Guerre mondiale. Au Canada, Bethany Allen cherchait depuis 2008 ce mystérieux oncle, après avoir découvert via des papiers de divorce que son grand-père Blakney avait...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/un-test-adn-resout-un-secret-de-famille-vieux-de-80-ans-apres-une-romance-de-la-1794597697977w9jqwal0r.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261114-lifestyle",
+     "titel": "Gros argent, petit effort et un vieux secret : trois formes de générosité",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-14",
+     "url": "https://brightnews.online/articles/fr/gros-argent-petit-effort-et-un-vieux-secret-trois-formes-de-generosite-dg-20261114-lifestyle.html"
+    },
     {
      "id": "dg-20261112-lifestyle",
      "titel": "Des trésors cachés et des liens anciens refont surface",
@@ -217,6 +245,14 @@
   },
   "es": {
    "top": [
+    {
+     "id": "1794767752178r7rk1mqo1",
+     "titel": "El fundador de Airbnb, Chesky, dona $100 millones a parques de San Francisco",
+     "teaser": "El CEO de Airbnb, Brian Chesky, ha donado $100 millones a los parques de San Francisco, el mayor regalo de un donante individual en la historia de la ciudad. El anuncio se realizó junto con el alcalde Daniel Lurie la semana pasada en Golden Gate Park. Chesky fundó Airbnb hace 18 años en San Francisco, donde la empresa sigue teniendo...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/el-fundador-de-airbnb-chesky-dona-100-millones-a-parques-de-san-francisco-1794767752178r7rk1mqo1.html"
+    },
     {
      "id": "1794720147520eg4u3pab2",
      "titel": "SpaceX atrapa el Starship con brazos mecánicos e ingresa en la historia",
@@ -248,17 +284,16 @@
      "score": 9,
      "categorie": "Environment",
      "url": "https://brightnews.online/articles/es/los-atolones-bikar-y-bokak-se-convierten-en-nueva-reserva-marina-1794678322616t56aulc0t.html"
-    },
-    {
-     "id": "1794597697977w9jqwal0r",
-     "titel": "Prueba de ADN resuelve secreto familiar de 80 años tras romance en la IIGM",
-     "teaser": "Rodney Anderson (81) de Inglaterra nunca supo quién era su verdadero padre. Su madre Yvonne lo tuvo en 1945 en Farnham, tras una relación con el soldado canadiense Charles Blakney durante la Segunda Guerra Mundial. En Canadá, Bethany Allen buscaba desde 2008 a este misterioso tío, después de descubrir a través de documentos de divorcio que su abuelo Blakney había...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/prueba-de-adn-resuelve-secreto-familiar-de-80-anos-tras-romance-en-la-iigm-1794597697977w9jqwal0r.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261114-lifestyle",
+     "titel": "Dinero grande, poco esfuerzo y un secreto antiguo: tres formas de bondad",
+     "categorie": "Lifestyle",
+     "dag": "2026-11-14",
+     "url": "https://brightnews.online/articles/es/dinero-grande-poco-esfuerzo-y-un-secreto-antiguo-tres-formas-de-bondad-dg-20261114-lifestyle.html"
+    },
     {
      "id": "dg-20261112-lifestyle",
      "titel": "Tesoros ocultos y lazos antiguos salen a la luz",

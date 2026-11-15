@@ -1,5 +1,48 @@
 [
   {
+    "id": "dg-20261114-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-11-14",
+    "title": "Großzügige Spenden, kleine Mühe und ein altes Geheimnis: drei Formen der Güte",
+    "summary": "Manchmal steckt gute Nachricht in großen Summen, manchmal in ein paar Minuten Arbeit pro Tag, und manchmal kommt sie erst Jahrzehnte später ans Licht. Diese Woche zeigen drei ganz unterschiedliche Geschichten, dass Menschen auf ihre eigene Weise etwas geben möchten, jetzt oder lange Zeit zurück. In San Francisco kündigten Airbnb-Gründer Brian Chesky und Bürgermeister Daniel Lurie vergangene Woche an, dass er 100 Millionen Dollar an die Parks der Stadt spendet. Es ist die größte Spende eines einzelnen Spenders in der Geschichte von San Francisco. Chesky gründete Airbnb vor 18 Jahren in derselben Stadt und möchte nun etwas zurückgeben. Ein erster...",
+    "image_alt": "Großzügige Spenden, kleine Mühe und ein altes Geheimnis: drei Formen der Güte",
+    "meta_description": "Von einer Millionenspende an Parks über saubere Straßenschilder bis zu einer verborgenen Kriegsgeschichte: die guten Nachrichten vom 14. November 2026.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2015/05/San-Francisco-davidyuweb-CC.jpg",
+    "date": "2026-11-15T18:36:45.543Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "1794767752178r7rk1mqo1",
+        "title": "Airbnb-Gründer Chesky spendet $100 Millionen an Parks in San Francisco"
+      },
+      {
+        "id": "17947201234945qled3tv1",
+        "title": "Ehepaar mit Autismus und ADHS reinigt schmutzige Straßenschilder in Brighton"
+      },
+      {
+        "id": "17946783500847nw336pba",
+        "title": "Ada Le Poidevin verbarg britische Soldaten vor Nazis auf Guernsey"
+      }
+    ]
+  },
+  {
+    "id": "1794767752178r7rk1mqo1",
+    "title": "Airbnb-Gründer Chesky spendet $100 Millionen an Parks in San Francisco",
+    "summary": "Airbnb-CEO Brian Chesky hat $100 Millionen an die Parks von San Francisco gespendet – die größte Einzelspende in der Geschichte der Stadt. Die Ankündigung erfolgte zusammen mit Bürgermeister Daniel Lurie in der vergangenen Woche im Golden Gate Park. Chesky gründete Airbnb vor 18 Jahren in San Francisco, wo das Unternehmen noch immer ansässig ist. Mit der Spende möchte er der...",
+    "image_alt": "Brian Chesky und Bürgermeister Daniel Lurie kündigen $100 Millionen Spende für Parks in San Francisco im Golden Gate Park an",
+    "meta_description": "Airbnb-Gründer Brian Chesky spendet $100 Millionen an Parks in San Francisco, die größte Spende in der Stadtgeschichte.",
+    "meta_keywords": "Brian Chesky, Airbnb, San Francisco, Parks, Spende, Golden Gate Park, Embarcadero Park, Daniel Lurie",
+    "link": "https://www.goodnewsnetwork.org/san-francisco-gets-100m-gift-for-public-parks-from-airbnb-ceo/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2015/05/San-Francisco-davidyuweb-CC.jpg",
+    "date": "2026-11-15T18:35:55.275Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
     "id": "1794720147520eg4u3pab2",
     "title": "SpaceX fängt Starship mit mechanischen Armen und schreibt Geschichte",
     "summary": "SpaceX hat erstmals ein Starship-Raumfahrzeug mit mechanischen Armen an der Startanlage in Texas abgefangen, 22 Stunden nach dem Start. Dies zeigt nach Angaben des Unternehmens die vollständige Wiederverwendbarkeit von Starship, das für Reisen zum Mond und zum Mars vorgesehen ist. Die erste Stufe des Boosters explodierte kurz nach dem Start am Freitag, wodurch der erhoffte doppelte Fang nicht gelang. SpaceX...",
@@ -2528,33 +2571,5 @@
     "date": "2026-10-30T17:54:00.394Z",
     "category": "Lifestyle",
     "score": 9
-  },
-  {
-    "id": "1793382804799wiqr8zal6",
-    "title": "Freiwillige werden Lachs und Regenwurm, um den Fluss Tone zu retten",
-    "summary": "In Somerset nahmen achtzehn Freiwillige an einer ungewöhnlichen Untersuchung teil: Sie lernten, sich in die Physiologie und Sinne eines Tieres einzufühlen – wie Edelhirsch, Lachs, Otter, Turmfalke oder Regenwurm – um die Bedrohungen für die Tierwelt rund um den verschmutzten Fluss Tone zu erleben. Teilnehmer Jake Lawy schwamm als Lachs durch verschmutztes, sauerstoffarmes Wasser und erkannte sofort mögliche Lösungen, wie...",
-    "image_alt": "Freiwilliger schwimmt als Lachs durch den verschmutzten Fluss Tone in Somerset",
-    "meta_description": "Freiwillige erleben Tierperspektive, um den verschmutzten Fluss Tone mit dreißigjähriger Kampagne zu retten.",
-    "meta_keywords": "Fluss Tone, Somerset, Lachs, Tierwelt, Verschmutzung, Naturwiederherstellung, Biodiversität",
-    "link": "https://www.positive.news/society/volunteers-became-salmon-deer-and-earthworms-then-they-set-out-to-save-their-river/",
-    "source": "Positive.News",
-    "image": "https://positivenews.kinsta.cloud/wp-content/uploads/2026/10/Atlantic-Salmon-001-©-Darren-Honeywill-2026.jpg",
-    "date": "2026-10-30T17:53:26.687Z",
-    "category": "Environment",
-    "score": 10
-  },
-  {
-    "id": "17933827785551xdq3cwyb",
-    "title": "Kakaobäuerin Susana Afrifa Ankrah schützt ghanaischen Regenwald",
-    "summary": "In der Atewa Range in Ghana hilft die 62-jährige Kakaobäuerin Susana Afrifa Ankrah dabei, ein seltenes Stück Tropenwald zu schützen, das unter anderem Schimpansen, Fliegenschnäpper, Antilopen und den Riesenschwalbenschwanz beherbergt. Über das Ghana Cocoa Forest REDD+ Programme (GCFRP), eine von den Vereinten Nationen unterstützte Initiative, die über die Weltbank Gelder von wohlhabenden Ländern in waldreiche Länder kanalisiert, lernen Bauern wie...",
-    "image_alt": "Kakaobäuerin Susana Afrifa Ankrah im geschützten Regenwald der Atewa Range in Ghana",
-    "meta_description": "Kakaobäuerin Susana Afrifa Ankrah schützt ghanaischen Regenwald via REDD+-Programm und verbessert Kakaoertrag.",
-    "meta_keywords": "Ghana, Kakao, Regenwald, REDD+, Atewa Range, nachhaltige Landwirtschaft, Susana Afrifa Ankrah",
-    "link": "https://www.positive.news/society/the-farmer-growing-a-future-under-ghanas-trees/",
-    "source": "Positive.News",
-    "image": "https://www.positive.news/wp-content/uploads/2026/10/SharedLand_Story03b_WebHeader_1800x1080.jpg",
-    "date": "2026-10-30T17:53:01.111Z",
-    "category": "Environment",
-    "score": 10
   }
 ]

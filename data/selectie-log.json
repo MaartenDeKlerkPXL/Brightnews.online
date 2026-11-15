@@ -1,5 +1,29 @@
 [
  {
+  "datum": "2026-11-15T18:35:29.905Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "San Francisco Gets its Largest-Ever Gift: $100M for Public Parks From Airbnb Founder",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Hartverwarmend verhaal over grootschalige filantropie die direct de gemeenschap ten goede komt; volledig positief geformuleerd en maatschappelijk relevant voor stadsgroen en publieke welzijn."
+ },
+ {
+  "datum": "2026-11-15T18:35:29.905Z",
+  "bron": "NPR.org",
+  "titel": "SpaceX deploys Starlink satellites in Starship test, but booster crashes into Gulf",
+  "uitsluiting": "misdaad-of-ramp",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "De kern van het verhaal is een technisch mislukking (booster crash); hoewel satellietdeployment slaagde, staat het ongeluk centraal en wordt niet overstegen door redding of herstel."
+ },
+ {
   "datum": "2026-11-15T05:21:40.381Z",
   "bron": "GoodNewsNetwork.org",
   "titel": "Couple with Autism and ADHD Find Passion Cleaning Filthy Street Signs",
@@ -3574,29 +3598,5 @@
   "totaal": 0,
   "besluit": "nee",
   "reden": "Tekst breekt af; onvoldoende inhoud om te beoordelen wat het verhaal werkelijk inhoudt."
- },
- {
-  "datum": "2026-10-30T17:50:51.706Z",
-  "bron": "Openaccessgovernment.org",
-  "titel": "UK chancellor sets out £600m AI investment plan to boost British innovation and security",
-  "uitsluiting": "productnieuws",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Aankondiging van een overheidsbudget voor AI zonder concrete maatschappelijke impact of verhaal."
- },
- {
-  "datum": "2026-10-30T17:50:51.706Z",
-  "bron": "Openaccessgovernment.org",
-  "titel": "The blind spot on AI at work in Europe",
-  "uitsluiting": "politiek",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Analyse van EU-beleid en governance; polariserend onderwerp zonder concrete positieve wending."
  }
 ]

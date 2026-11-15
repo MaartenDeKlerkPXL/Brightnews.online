@@ -1,5 +1,48 @@
 [
   {
+    "id": "dg-20261114-lifestyle",
+    "type": "digest",
+    "digest_date": "2026-11-14",
+    "title": "Dinero grande, poco esfuerzo y un secreto antiguo: tres formas de bondad",
+    "summary": "A veces las buenas noticias vienen en grandes cantidades, a veces en unos pocos minutos de trabajo al día, y a veces salen a la luz décadas después. Esta semana, tres historias muy diferentes muestran que las personas quieren dar algo a su manera, ahora o hace mucho tiempo. En San Francisco, el fundador de Airbnb Brian Chesky anunció la semana pasada junto con el alcalde Daniel Lueri que dona $100 millones a los parques de la ciudad. Es el mayor regalo de un donante individual en la historia de San Francisco. Chesky fundó Airbnb hace 18 años en esa...",
+    "image_alt": "Dinero grande, poco esfuerzo y un secreto antiguo: tres formas de bondad",
+    "meta_description": "De un regalo de millones para parques a señales limpias y una historia de guerra oculta: las buenas noticias del 14 de noviembre de 2026.",
+    "meta_keywords": "Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2015/05/San-Francisco-davidyuweb-CC.jpg",
+    "date": "2026-11-15T18:36:45.543Z",
+    "category": "Lifestyle",
+    "refs": [
+      {
+        "id": "1794767752178r7rk1mqo1",
+        "title": "El fundador de Airbnb, Chesky, dona $100 millones a parques de San Francisco"
+      },
+      {
+        "id": "17947201234945qled3tv1",
+        "title": "Una pareja con autismo y TDAH limpia señales sucias en Brighton"
+      },
+      {
+        "id": "17946783500847nw336pba",
+        "title": "Ada Le Poidevin escondió soldados británicos de los nazis en Guernsey"
+      }
+    ]
+  },
+  {
+    "id": "1794767752178r7rk1mqo1",
+    "title": "El fundador de Airbnb, Chesky, dona $100 millones a parques de San Francisco",
+    "summary": "El CEO de Airbnb, Brian Chesky, ha donado $100 millones a los parques de San Francisco, el mayor regalo de un donante individual en la historia de la ciudad. El anuncio se realizó junto con el alcalde Daniel Lurie la semana pasada en Golden Gate Park. Chesky fundó Airbnb hace 18 años en San Francisco, donde la empresa sigue teniendo...",
+    "image_alt": "Brian Chesky y el alcalde Daniel Lurie anuncian una donación de $100 millones para parques en San Francisco en Golden Gate Park",
+    "meta_description": "El fundador de Airbnb, Brian Chesky, dona $100 millones a parques de San Francisco, el mayor regalo jamás hecho a la ciudad.",
+    "meta_keywords": "Brian Chesky, Airbnb, San Francisco, parques, donación, Golden Gate Park, Embarcadero Park, Daniel Lurie",
+    "link": "https://www.goodnewsnetwork.org/san-francisco-gets-100m-gift-for-public-parks-from-airbnb-ceo/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2015/05/San-Francisco-davidyuweb-CC.jpg",
+    "date": "2026-11-15T18:35:55.275Z",
+    "category": "Lifestyle",
+    "score": 9
+  },
+  {
     "id": "1794720147520eg4u3pab2",
     "title": "SpaceX atrapa el Starship con brazos mecánicos e ingresa en la historia",
     "summary": "SpaceX ha atrapado por primera vez una nave espacial Starship con brazos mecánicos en la base de lanzamiento de Texas, 22 horas después del despegue. Según la empresa, esto demuestra la reutilización completa del Starship, destinado a viajes a la luna y Marte. El impulsor de primera etapa explotó poco después del lanzamiento el viernes, lo que impidió el doble...",
@@ -2528,33 +2571,5 @@
     "date": "2026-10-30T17:54:00.394Z",
     "category": "Lifestyle",
     "score": 9
-  },
-  {
-    "id": "1793382804799wiqr8zal6",
-    "title": "Voluntarios se convierten en salmón y lombriz para salvar el río Tone",
-    "summary": "En Somerset, dieciocho voluntarios participaron en una investigación inusual: aprendieron a ponerse en la piel de la fisiología y los sentidos de un animal —como ciervo, salmón, nutria, cernícalo o lombriz— para experimentar las amenazas para la fauna silvestre alrededor del contaminado río Tone. El participante Jake Lawy nadó como salmón a través de agua contaminada y pobre en oxígeno...",
-    "image_alt": "Voluntario nada como salmón a través del río Tone contaminado en Somerset",
-    "meta_description": "Voluntarios experimentan perspectiva de fauna silvestre para salvar el río Tone contaminado con campaña de treinta años.",
-    "meta_keywords": "río Tone, Somerset, salmón, fauna silvestre, contaminación, restauración natural, biodiversidad",
-    "link": "https://www.positive.news/society/volunteers-became-salmon-deer-and-earthworms-then-they-set-out-to-save-their-river/",
-    "source": "Positive.News",
-    "image": "https://positivenews.kinsta.cloud/wp-content/uploads/2026/10/Atlantic-Salmon-001-©-Darren-Honeywill-2026.jpg",
-    "date": "2026-10-30T17:53:26.687Z",
-    "category": "Environment",
-    "score": 10
-  },
-  {
-    "id": "17933827785551xdq3cwyb",
-    "title": "Cacaoboerin Susana Afrifa Ankrah protege el bosque tropical de Ghana",
-    "summary": "En la Atewa Range de Ghana, la cacaoboerin Susana Afrifa Ankrah, de 62 años, ayuda a proteger una rara zona de bosque tropical que alberga búhos, atrapamoscas, antílopes y la mariposa giant swallowtail, entre otras especies. A través del Ghana Cocoa Forest REDD+ Programme (GCFRP), una iniciativa respaldada por la ONU que canaliza fondos del Banco Mundial desde países ricos...",
-    "image_alt": "Cacaoboerin Susana Afrifa Ankrah en el bosque tropical protegido de la Atewa Range en Ghana",
-    "meta_description": "Cacaoboerin Susana Afrifa Ankrah protege el bosque tropical de Ghana mediante el programa REDD+ y mejora la producción de cacao.",
-    "meta_keywords": "Ghana, cacao, bosque tropical, REDD+, Atewa Range, agricultura sostenible, Susana Afrifa Ankrah",
-    "link": "https://www.positive.news/society/the-farmer-growing-a-future-under-ghanas-trees/",
-    "source": "Positive.News",
-    "image": "https://www.positive.news/wp-content/uploads/2026/10/SharedLand_Story03b_WebHeader_1800x1080.jpg",
-    "date": "2026-10-30T17:53:01.111Z",
-    "category": "Environment",
-    "score": 10
   }
 ]
