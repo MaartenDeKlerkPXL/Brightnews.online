@@ -1,5 +1,119 @@
 [
   {
+    "id": "dg-20261115-environment",
+    "type": "digest",
+    "digest_date": "2026-11-15",
+    "title": "D'un phoque sauvé à une eau plus propre : les actualités environnementales de ces jours",
+    "summary": "Ces derniers jours, la nature montre que la protection fonctionne, d'une falaise sur une île grecque aux rivières d'Angleterre et un endroit reculé du Pacifique. Trois informations qui, à première vue, n'ont guère de lien entre elles, racontent ensemble une histoire de gens qui interviennent, mesurent et protègent, avec des résultats. Sur Kythira, des grimpeurs ont trouvé un phoque moine orphelin au pied d'une falaise inaccessible [1]. Le phoque moine méditerranéen, une espèce en danger critique, ne pesait qu'environ 15 kilogrammes à l'âge d'un an et était gravement déshydraté. Les grimpeurs ont transporté l'animal en sécurité vers le haut dans...",
+    "image_alt": "D'un phoque sauvé à une eau plus propre : les actualités environnementales de ces jours",
+    "meta_description": "Un phoque sauvé, des rivières anglaises plus propres et une nouvelle réserve marine aux îles Marshall : l'actualité environnementale de mi-novembre 2026.",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Greek-baby-seal-rescue-NEEDS-CAPTION.jpg",
+    "date": "2026-11-16T18:36:13.963Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1794854037591wmdyahw4b",
+        "title": "Des grimpeurs sauvent un phoque moine orphelin d'une falaise à Kythira"
+      },
+      {
+        "id": "1794853981739yc0grc843",
+        "title": "Les niveaux de PFAS dans les rivières anglaises baissent de 30%, de 49% chez les poissons"
+      },
+      {
+        "id": "1794678322616t56aulc0t",
+        "title": "Les atolls Bikar et Bokak deviennent une nouvelle réserve marine"
+      }
+    ]
+  },
+  {
+    "id": "dg-20261115-health",
+    "type": "digest",
+    "digest_date": "2026-11-15",
+    "title": "Un nouvel espoir dans les soins : des jeunes satisfaits, des tics apaisés et un sang guéri",
+    "summary": "Cette semaine montre que les progrès dans les soins commencent souvent en silence : par une enquête, un bracelet ou un seul patient qui, après des années, va enfin mieux. Trois informations nationales et internationales partagent un fil rouge : elles prouvent que des traitements qui semblent parfois encore controversés ou expérimentaux aident réellement les gens dans la pratique. La plus grande étude menée à ce jour auprès de jeunes transgenres et de genre divers aux États-Unis montre que quelque 97 pour cent sont satisfaits de leur choix de thérapie hormonale d'affirmation de genre [1]. Sur les près de 400...",
+    "image_alt": "Un nouvel espoir dans les soins : des jeunes satisfaits, des tics apaisés et un sang guéri",
+    "meta_description": "Des jeunes transgenres satisfaits, moins de tics grâce à un bracelet et une première mondiale avec la moelle osseuse : l'actualité sanitaire de ces jours.",
+    "meta_keywords": "Health",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/11/111026_AC_transyouth_main.jpg?w=800",
+    "date": "2026-11-16T18:35:13.199Z",
+    "category": "Health",
+    "refs": [
+      {
+        "id": "1794854058075teinzciwt",
+        "title": "Presque tous les jeunes transgenres satisfaits de l'hormonothérapie"
+      },
+      {
+        "id": "17948161639284hg989uc1",
+        "title": "Le bracelet Neupulse réduit presque de moitié les tics de Tourette dans un essai britannique"
+      },
+      {
+        "id": "1794806430494dh8oi8f6e",
+        "title": "Première mondiale : une greffe de moelle osseuse guérit l'anémie aplasique"
+      }
+    ]
+  },
+  {
+    "id": "1794854058075teinzciwt",
+    "title": "Presque tous les jeunes transgenres satisfaits de l'hormonothérapie",
+    "summary": "Une très grande majorité de jeunes transgenres et de genre divers aux États-Unis sont satisfaits de leur choix d'hormonothérapie d'affirmation de genre. C'est ce qui ressort d'une enquête menée auprès de près de 400 jeunes transgenres et de genre divers, la plus grande enquête de ce type à ce jour. Environ 97 % ont déclaré que c'était la bonne décision....",
+    "image_alt": "Jeune transgenre en discussion sur l'hormonothérapie",
+    "meta_description": "97 % des jeunes transgenres satisfaits de l'hormonothérapie, selon la plus grande étude à ce jour, publiée dans JAMA Pediatrics.",
+    "meta_keywords": "transgenre, hormonothérapie, soins d'affirmation de genre, JAMA Pediatrics, jeunes transgenres, jeunes de genre divers",
+    "link": "https://www.sciencenews.org/article/hormone-therapy-transgender-youth",
+    "source": "Sciencenews.org",
+    "image": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/11/111026_AC_transyouth_main.jpg?w=800",
+    "date": "2026-11-16T18:34:18.996Z",
+    "category": "Health",
+    "score": 9
+  },
+  {
+    "id": "1794854037591wmdyahw4b",
+    "title": "Des grimpeurs sauvent un phoque moine orphelin d'une falaise à Kythira",
+    "summary": "Sur l'île grecque de Kythira, des grimpeurs ont découvert un phoque moine orphelin au pied d'une falaise lors d'une randonnée sur la plage inaccessible de Kalamia. Le jeune animal, un phoque moine de Méditerranée en danger critique d'extinction, avait probablement été séparé de sa mère par une grande vague près d'une grotte marine voisine. Les grimpeurs ont placé le petit...",
+    "image_alt": "Des grimpeurs portent un phoque moine orphelin dans un sac à dos en escaladant une falaise près de Kalamia Beach à Kythira",
+    "meta_description": "Des grimpeurs sauvent un phoque moine orphelin en danger critique d'une plage inaccessible à Kythira, Grèce.",
+    "meta_keywords": "sauvetage de phoque, phoque moine de Méditerranée, Kythira, Grèce, MOm, Animal Aid Kythira, espèce menacée, sauvetage en falaise",
+    "link": "https://www.goodnewsnetwork.org/climbers-lug-endangered-and-orphaned-seal-pup-up-a-cliff-to-safety/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Greek-baby-seal-rescue-NEEDS-CAPTION.jpg",
+    "date": "2026-11-16T18:33:58.679Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1794854007223k458nb764",
+    "title": "Tokyo combat le problème des déchets avec des poubelles intelligentes",
+    "summary": "Le Japon est connu pour l'absence de poubelles publiques, c'est intentionnel : des déchets difficiles à jeter inciteraient les gens à en produire moins et éviterait les débordements. Pour les touristes, c'est cependant déroutant et frustrant. Tokyo a supprimé toutes les poubelles du métro en 2022. Parallèlement, des villes comme Tokyo et Kyoto collaborent avec des entreprises pour trouver des...",
+    "image_alt": "Une poubelle alimentée à l'énergie solaire avec technologie de compactage dans une rue de Tokyo",
+    "meta_description": "Tokyo s'attaque au problème des déchets avec des poubelles solaires et des robots de collecte autonomes aux gares.",
+    "meta_keywords": "Tokyo, Japon, poubelles, SmaGO, Cartken, robots de déchets, Shinjuku, tourisme Japon",
+    "link": "https://www.goodnewsnetwork.org/tokyo-tackles-trash-troubles-with-new-generation-of-robotic-street-waste-bins/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Smart-solar-powered-trash-compacters-credit-Forectec.jpg",
+    "date": "2026-11-16T18:33:29.035Z",
+    "category": "Tech",
+    "score": 8
+  },
+  {
+    "id": "1794853981739yc0grc843",
+    "title": "Les niveaux de PFAS dans les rivières anglaises baissent de 30%, de 49% chez les poissons",
+    "summary": "Deux « polluants éternels » interdits, le PFOA et le PFOS, sont détectés à des concentrations bien plus faibles dans les rivières et les poissons anglais. Une étude de la UK Environment Agency montre une baisse de 29% pour le PFOA et de 30% pour le PFOS dans l'eau, et même de 49% chez les poissons. Ces substances ont été...",
+    "image_alt": "Rivière en Angleterre avec des poissons, symbole de la baisse des concentrations de PFAS",
+    "meta_description": "Les produits chimiques PFAS baissent fortement dans les rivières et les poissons anglais, grâce à des années de réglementation et d'interdictions.",
+    "meta_keywords": "PFAS, polluants éternels, PFOA, PFOS, Angleterre, rivières, poissons, Environment Agency, Convention de Stockholm",
+    "link": "https://www.goodnewsnetwork.org/30-drop-in-levels-of-forever-chemicals-in-englands-rivers-49-in-fish-brilliant-to-see/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2021/11/River-Thames-London-Tower-Bridge-pubdomain-Pietro-De-Grandi.jpg",
+    "date": "2026-11-16T18:33:04.376Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
     "id": "17948161639284hg989uc1",
     "title": "Le bracelet Neupulse réduit presque de moitié les tics de Tourette dans un essai britannique",
     "summary": "Un essai clinique au Royaume-Uni auprès de 121 participants a montré que le port d'un prototype de bracelet, Neupulse, réduisait la fréquence des tics en moyenne de 25 pour cent. L'appareil, développé par l'University of Nottingham et sa spin-off Neurotherapeutics Ltd, envoie des impulsions électriques rythmiques vers le nerf du poignet qui influence les zones cérébrales contrôlant les mouvements. Les...",
@@ -2487,89 +2601,5 @@
     "date": "2026-10-30T17:59:52.652Z",
     "category": "Environment",
     "score": 9
-  },
-  {
-    "id": "1793383163484cw5ubl9r4",
-    "title": "Le dauphin de l'Irrawaddy sacré au Cambodge grandit avec 6 veaux",
-    "summary": "Le dauphin de l'Irrawaddy, l'une des espèces animales les plus menacées au monde, affiche une croissance prometteuse au Cambodge. La dernière saison des naissances a produit 6 nouveaux dauphineaux, portant la population le long d'un trajet de 75 miles du Mékong dans le nord-est du pays à 118 individus. Ce groupe cambodgien constitue la plus grande population fluviale de cette...",
-    "image_alt": "Le dauphin de l'Irrawaddy nage à la surface du fleuve Mékong au Cambodge",
-    "meta_description": "Le dauphin de l'Irrawaddy au Cambodge accueille 6 veaux : la population croît à 118 individus le long du Mékong.",
-    "meta_keywords": "dauphin Irrawaddy, dauphin fluvial, Mékong, Cambodge, espèce menacée, conservation de la nature, WWF",
-    "link": "https://www.goodnewsnetwork.org/numbers-of-endangered-and-sacred-river-dolphin-grow-by-6-after-successful-breeding-season/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Irrawaddy-dolphin-CC-4.0.-Int-Stefan-Brending.jpg",
-    "date": "2026-10-30T17:59:25.001Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1793383136748zh80bxxgg",
-    "title": "Une mauvaise sortie sauve la famille d'accueil Burke et 500 enfants d'un incendie",
-    "summary": "Un parfait étranger nommé Casey empruntait une mauvaise direction indiquée par son GPS sur la Highway 114 au sud de Lyerly, dans le comté de Chattooga en Géorgie, quand il a aperçu de la fumée s'échappant d'une maison en feu. La maison appartenait aux parents d'accueil James et Larita Burke, chez qui vivaient à ce moment 11 enfants et 1...",
-    "image_alt": "Maison incendiée de la famille d'accueil Burke après l'incendie dans le comté de Chattooga, Géorgie",
-    "meta_description": "L'étranger Casey sauve la famille d'accueil Burke et ses enfants d'un incendie en Géorgie grâce à une mauvaise sortie GPS.",
-    "meta_keywords": "famille d'accueil, incendie, Géorgie, comté de Chattooga, James et Larita Burke, sauvetage, mauvaise sortie GPS",
-    "link": "https://www.goodnewsnetwork.org/family-thats-fostered-500-children-saved-from-housefire-thanks-to-strangers-wrong-turn/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/The-Burke-Family-credit-Flourish-Foster-Care-Closet-Support.jpg",
-    "date": "2026-10-30T17:58:58.101Z",
-    "category": "Lifestyle",
-    "score": 8
-  },
-  {
-    "id": "17933830831624gr34qja7",
-    "title": "Traitement de la carie sans fraise avec SDF près de l'approbation FDA",
-    "summary": "L'approbation FDA pour le fluorure de diamine argentique (SDF), un liquide qui arrête la carie dentaire chez l'enfant sans fraise, injection ni anesthésie, semble se rapprocher. Une étude de phase III, publiée dans JAMA Pediatrics, a suivi 830 enfants de moins de 6 ans au Michigan, à New York et en Iowa. Le SDF, appliqué avec un applicateur à éponge,...",
-    "image_alt": "Une molaire de lait est traitée au fluorure de diamine argentique via un applicateur à éponge",
-    "meta_description": "Le SDF arrête la carie chez l'enfant sans fraise. L'approbation FDA après une étude de phase III réussie semble imminente.",
-    "meta_keywords": "fluorure de diamine argentique, SDF, approbation FDA, carie, détérioration dentaire, odontopédiatrie, sans fraise, JAMA Pediatrics",
-    "link": "https://www.goodnewsnetwork.org/fda-approval-for-drill-free-cavity-care-may-be-imminent-after-great-phase-3-treatment-trial/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2018/01/Teeth-dentist-caveties-by-Ozkan-Guner-lQNl2Vdn0fs-unsplash.jpeg",
-    "date": "2026-10-30T17:58:05.078Z",
-    "category": "Health",
-    "score": 10
-  },
-  {
-    "id": "1793383029816w2djtnyyx",
-    "title": "Etsy s'attaque au contenu IA trompeur",
-    "summary": "Etsy, la plus grande place de marché mondiale de produits faits main, introduit de nouvelles règles contre le contenu généré par IA trompeur. Le vice-président James Ossman affirme que la confiance entre acheteurs et vendeurs est essentielle. Les vendeurs doivent désormais afficher au moins une photo authentique et non retouchée de leur produit ; les photos supplémentaires peuvent être retouchées...",
-    "image_alt": "Produits faits main sur Etsy avec des photos authentiques et non retouchées",
-    "meta_description": "Etsy renforce ses règles contre le contenu IA trompeur pour protéger les acheteurs sur sa place de marché.",
-    "meta_keywords": "Etsy, contenu IA, intelligence artificielle, commerce électronique, produits faits main, protection des consommateurs, fraude",
-    "link": "https://www.goodnewsnetwork.org/etsy-cracks-down-on-ai-generated-content-to-protect-buyers-from-barrage-of-slop/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Etsys-offices-in-Ireland-CC-3.0.-BY-SA-Cograng-replicated-with-AI-for-humors-sake.jpg",
-    "date": "2026-10-30T17:57:11.374Z",
-    "category": "Tech",
-    "score": 8
-  },
-  {
-    "id": "1793382999661s9jt4nn4o",
-    "title": "Des plongeurs sauvent un kangourou en pleine mer dans la baie de Boston",
-    "summary": "Dans la baie de Boston, en Australie-Méridionale, un plongeur et son équipage ont secouru un jeune kangourou qui dérivait en mer à plus de deux kilomètres et demi de la côte. Le capitaine Ryan Smith a d'abord repéré l'animal. Grâce à la plateforme de plongée du bateau, l'équipage a pu s'approcher près de la surface de l'eau, puis le plongeur...",
-    "image_alt": "Un jeune kangourou est secouru de la mer par un plongeur dans la baie de Boston, Australie",
-    "meta_description": "Des plongeurs sauvent un kangourou épuisé qui nageait à plus de 3 kilomètres de la côte dans la baie de Boston, Australie.",
-    "meta_keywords": "sauvetage kangourou, baie de Boston, Australie, plongeurs, Jake Murray, sauvetage animal",
-    "link": "https://www.goodnewsnetwork.org/bizarre-rescue-sees-divers-save-kangaroo-that-found-itself-over-a-mile-from-dry-land/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Jake-Murray-and-the-rescued-roo-supplied-to-ABC-by-Jake-Murray.jpg",
-    "date": "2026-10-30T17:56:40.683Z",
-    "category": "Lifestyle",
-    "score": 8
-  },
-  {
-    "id": "17933829729423j7p4881e",
-    "title": "Des anciens de Princeton filtrent les microplastiques des eaux usées à Atlantic City",
-    "summary": "Deux anciens de Princeton, Nathanial Banks et Yidian Liu, ont développé via leur startup PolyGone Technologies un nouvel appareil qui filtre les microplastiques des eaux usées. Le système, inspiré par des plantes hydrophobes qui repoussent l'eau mais attirent les microplastiques, est déjà installé à Atlantic City. L'Atlantic County Utilities Authority (ACUA) du New Jersey teste l'appareil pendant deux ans dans...",
-    "image_alt": "Système de filtration à grande échelle pour les microplastiques installé à la station d'épuration d'Atlantic City",
-    "meta_description": "Des anciens de Princeton développent un filtre révolutionnaire qui élimine les microplastiques des eaux usées, déjà actif à Atlantic City.",
-    "meta_keywords": "microplastiques, eaux usées, PolyGone Technologies, Atlantic City, ACUA, épuration de l'eau, Princeton",
-    "link": "https://www.goodnewsnetwork.org/nature-inspired-tech-prevents-microplastics-entering-atlantic-ocean-through-wastewater/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/credit-supplied-to-WHYY-as-a-courtesy-PolyGone-Systems.jpg",
-    "date": "2026-10-30T17:56:14.730Z",
-    "category": "Environment",
-    "score": 10
   }
 ]

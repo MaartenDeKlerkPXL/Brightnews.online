@@ -1,6 +1,336 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://brightnews.online/articles/nl/van-geredde-zeehondenpup-tot-schoner-water-het-milieunieuws-van-deze-dagen-dg-20261115-environment.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:36:13.963Z</news:publication_date>
+      <news:title>Van geredde zeehondenpup tot schoner water: het milieunieuws van deze dagen</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/from-rescued-seal-pup-to-cleaner-water-the-environmental-news-of-these-days-dg-20261115-environment.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:36:13.963Z</news:publication_date>
+      <news:title>From rescued seal pup to cleaner water: the environmental news of these days</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/von-geretteter-seehundwelpe-bis-zu-sauberem-wasser-die-umweltnachrichten-dieser-dg-20261115-environment.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:36:13.963Z</news:publication_date>
+      <news:title>Von geretteter Seehundwelpe bis zu sauberem Wasser: die Umweltnachrichten dieser Tage</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/d-un-phoque-sauve-a-une-eau-plus-propre-les-actualites-environnementales-de-ces-dg-20261115-environment.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:36:13.963Z</news:publication_date>
+      <news:title>D'un phoque sauvé à une eau plus propre : les actualités environnementales de ces jours</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/de-una-cria-de-foca-rescatada-a-aguas-mas-limpias-las-noticias-ambientales-de-es-dg-20261115-environment.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:36:13.963Z</news:publication_date>
+      <news:title>De una cría de foca rescatada a aguas más limpias: las noticias ambientales de estos días</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/nieuwe-hoop-in-de-zorg-tevreden-jongeren-rustige-tics-en-genezen-bloed-dg-20261115-health.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:35:13.199Z</news:publication_date>
+      <news:title>Nieuwe hoop in de zorg: tevreden jongeren, rustige tics en genezen bloed</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/new-hope-in-healthcare-satisfied-youth-quieter-tics-and-healed-blood-dg-20261115-health.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:35:13.199Z</news:publication_date>
+      <news:title>New hope in healthcare: satisfied youth, quieter tics and healed blood</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/neue-hoffnung-im-gesundheitswesen-zufriedene-jugendliche-weniger-tics-und-geheil-dg-20261115-health.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:35:13.199Z</news:publication_date>
+      <news:title>Neue Hoffnung im Gesundheitswesen: zufriedene Jugendliche, weniger Tics und geheiltes Blut</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/un-nouvel-espoir-dans-les-soins-des-jeunes-satisfaits-des-tics-apaises-et-un-san-dg-20261115-health.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:35:13.199Z</news:publication_date>
+      <news:title>Un nouvel espoir dans les soins : des jeunes satisfaits, des tics apaisés et un sang guéri</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/nueva-esperanza-en-la-sanidad-jovenes-satisfechos-tics-reducidos-y-sangre-curada-dg-20261115-health.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:35:13.199Z</news:publication_date>
+      <news:title>Nueva esperanza en la sanidad: jóvenes satisfechos, tics reducidos y sangre curada</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/bijna-alle-transgender-jongeren-tevreden-over-hormoontherapie-1794854058075teinzciwt.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:34:18.996Z</news:publication_date>
+      <news:title>Bijna alle transgender jongeren tevreden over hormoontherapie</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/nearly-all-transgender-youth-satisfied-with-hormone-therapy-1794854058075teinzciwt.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:34:18.996Z</news:publication_date>
+      <news:title>Nearly all transgender youth satisfied with hormone therapy</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/fast-alle-transgender-jugendlichen-zufrieden-mit-hormontherapie-1794854058075teinzciwt.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:34:18.996Z</news:publication_date>
+      <news:title>Fast alle transgender Jugendlichen zufrieden mit Hormontherapie</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/presque-tous-les-jeunes-transgenres-satisfaits-de-l-hormonotherapie-1794854058075teinzciwt.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:34:18.996Z</news:publication_date>
+      <news:title>Presque tous les jeunes transgenres satisfaits de l'hormonothérapie</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/casi-todos-los-jovenes-transgenero-satisfechos-con-la-terapia-hormonal-1794854058075teinzciwt.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:34:18.996Z</news:publication_date>
+      <news:title>Casi todos los jóvenes transgénero satisfechos con la terapia hormonal</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/klimmers-redden-verweesde-zeehondenpup-van-klif-op-kythira-1794854037591wmdyahw4b.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:33:58.679Z</news:publication_date>
+      <news:title>Klimmers Redden Verweesde Zeehondenpup Van Klif Op Kythira</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/climbers-rescue-orphaned-seal-pup-from-cliff-on-kythira-1794854037591wmdyahw4b.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:33:58.679Z</news:publication_date>
+      <news:title>Climbers rescue orphaned seal pup from cliff on Kythira</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/kletterer-retten-verwaiste-seehundwelpe-von-klippe-auf-kythira-1794854037591wmdyahw4b.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:33:58.679Z</news:publication_date>
+      <news:title>Kletterer retten verwaiste Seehundwelpe von Klippe auf Kythira</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/des-grimpeurs-sauvent-un-phoque-moine-orphelin-d-une-falaise-a-kythira-1794854037591wmdyahw4b.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:33:58.679Z</news:publication_date>
+      <news:title>Des grimpeurs sauvent un phoque moine orphelin d'une falaise à Kythira</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/escaladores-rescatan-a-una-cria-de-foca-huerfana-de-un-acantilado-en-citera-1794854037591wmdyahw4b.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:33:58.679Z</news:publication_date>
+      <news:title>Escaladores rescatan a una cría de foca huérfana de un acantilado en Citera</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/tokio-bestrijdt-afvalprobleem-met-slimme-prullenbakken-1794854007223k458nb764.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:33:29.035Z</news:publication_date>
+      <news:title>Tokio bestrijdt afvalprobleem met slimme prullenbakken</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/tokyo-tackles-waste-problem-with-smart-trash-bins-1794854007223k458nb764.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:33:29.035Z</news:publication_date>
+      <news:title>Tokyo tackles waste problem with smart trash bins</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/tokio-bekampft-abfallproblem-mit-intelligenten-mulleimern-1794854007223k458nb764.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:33:29.035Z</news:publication_date>
+      <news:title>Tokio bekämpft Abfallproblem mit intelligenten Mülleimern</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/tokyo-combat-le-probleme-des-dechets-avec-des-poubelles-intelligentes-1794854007223k458nb764.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:33:29.035Z</news:publication_date>
+      <news:title>Tokyo combat le problème des déchets avec des poubelles intelligentes</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/tokio-combate-el-problema-de-residuos-con-papeleras-inteligentes-1794854007223k458nb764.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:33:29.035Z</news:publication_date>
+      <news:title>Tokio combate el problema de residuos con papeleras inteligentes</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/pfas-niveaus-in-engelse-rivieren-dalen-30-in-vis-zelfs-49-1794853981739yc0grc843.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:33:04.376Z</news:publication_date>
+      <news:title>PFAS-niveaus in Engelse rivieren dalen 30%, in vis zelfs 49%</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/pfas-levels-in-english-rivers-fall-30-in-fish-even-49-1794853981739yc0grc843.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:33:04.376Z</news:publication_date>
+      <news:title>PFAS levels in English rivers fall 30%, in fish even 49%</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/pfas-werte-in-englischen-flussen-um-30-gesunken-in-fischen-sogar-um-49-1794853981739yc0grc843.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:33:04.376Z</news:publication_date>
+      <news:title>PFAS-Werte in englischen Flüssen um 30% gesunken, in Fischen sogar um 49%</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/les-niveaux-de-pfas-dans-les-rivieres-anglaises-baissent-de-30-de-49-chez-les-po-1794853981739yc0grc843.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:33:04.376Z</news:publication_date>
+      <news:title>Les niveaux de PFAS dans les rivières anglaises baissent de 30%, de 49% chez les poissons</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/los-niveles-de-pfas-en-rios-ingleses-descienden-un-30-en-peces-hasta-un-49-1794853981739yc0grc843.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T18:33:04.376Z</news:publication_date>
+      <news:title>Los niveles de PFAS en ríos ingleses descienden un 30%, en peces hasta un 49%</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://brightnews.online/articles/nl/neupulse-polsapparaat-halveert-bijna-tourette-tics-in-britse-proef-17948161639284hg989uc1.html</loc>
     <news:news>
       <news:publication>
@@ -438,116 +768,6 @@
       </news:publication>
       <news:publication_date>2026-11-15T05:22:05.928Z</news:publication_date>
       <news:title>Una pareja con autismo y TDAH limpia señales sucias en Brighton</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/ada-le-poidevin-verborg-britse-soldaten-voor-nazi-s-op-guernsey-17946783500847nw336pba.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T17:45:52.129Z</news:publication_date>
-      <news:title>Ada Le Poidevin verborg Britse soldaten voor nazi's op Guernsey</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/ada-le-poidevin-hid-british-soldiers-from-nazis-on-guernsey-17946783500847nw336pba.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T17:45:52.129Z</news:publication_date>
-      <news:title>Ada Le Poidevin hid British soldiers from Nazis on Guernsey</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/ada-le-poidevin-verbarg-britische-soldaten-vor-nazis-auf-guernsey-17946783500847nw336pba.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T17:45:52.129Z</news:publication_date>
-      <news:title>Ada Le Poidevin verbarg britische Soldaten vor Nazis auf Guernsey</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/ada-le-poidevin-cachait-des-soldats-britanniques-aux-nazis-a-guernesey-17946783500847nw336pba.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T17:45:52.129Z</news:publication_date>
-      <news:title>Ada Le Poidevin cachait des soldats britanniques aux nazis à Guernesey</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/ada-le-poidevin-escondio-soldados-britanicos-de-los-nazis-en-guernsey-17946783500847nw336pba.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T17:45:52.129Z</news:publication_date>
-      <news:title>Ada Le Poidevin escondió soldados británicos de los nazis en Guernsey</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/atollen-bikar-en-bokak-worden-nieuw-zeereservaat-1794678322616t56aulc0t.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T17:45:25.902Z</news:publication_date>
-      <news:title>Atollen Bikar en Bokak worden nieuw zeereservaat</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/atolls-bikar-and-bokak-become-new-marine-reserve-1794678322616t56aulc0t.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T17:45:25.902Z</news:publication_date>
-      <news:title>Atolls Bikar and Bokak become new marine reserve</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/atolle-bikar-und-bokak-werden-neues-meeresschutzgebiet-1794678322616t56aulc0t.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T17:45:25.902Z</news:publication_date>
-      <news:title>Atolle Bikar und Bokak werden neues Meeresschutzgebiet</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/les-atolls-bikar-et-bokak-deviennent-une-nouvelle-reserve-marine-1794678322616t56aulc0t.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T17:45:25.902Z</news:publication_date>
-      <news:title>Les atolls Bikar et Bokak deviennent une nouvelle réserve marine</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/los-atolones-bikar-y-bokak-se-convierten-en-nueva-reserva-marina-1794678322616t56aulc0t.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T17:45:25.902Z</news:publication_date>
-      <news:title>Los atolones Bikar y Bokak se convierten en nueva reserva marina</news:title>
     </news:news>
   </url>
 </urlset>

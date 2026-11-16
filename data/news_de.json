@@ -1,5 +1,119 @@
 [
   {
+    "id": "dg-20261115-environment",
+    "type": "digest",
+    "digest_date": "2026-11-15",
+    "title": "Von geretteter Seehundwelpe bis zu sauberem Wasser: die Umweltnachrichten dieser Tage",
+    "summary": "In den vergangenen Tagen zeigt die Natur, dass Schutz wirkt – von einer Klippe auf einer griechischen Insel bis zu den Flüssen Englands und einem abgelegenen Ort im Pazifik. Drei Meldungen, die auf den ersten Blick wenig miteinander zu tun haben, erzählen zusammen eine Geschichte von Menschen, die eingreifen, messen und schützen – mit Erfolg. Auf Kythira fanden Kletterer einen verwaisten Seehundwelpen am Fuß einer unzugänglichen Klippe [1]. Die Mittelmeer-Mönchsrobbe, eine kritisch bedrohte Art, wog im Alter von einem Jahr nur 15 Kilogramm und war schwer dehydriert. Die Kletterer trugen das Tier sicher in einem Rucksack nach oben und alarmierten...",
+    "image_alt": "Von geretteter Seehundwelpe bis zu sauberem Wasser: die Umweltnachrichten dieser Tage",
+    "meta_description": "Ein geretteter Seehundwelpe, saubere englische Flüsse und ein neues Meeresschutzgebiet bei den Marshallinseln: die Umweltnachrichten von Mitte November 202",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Greek-baby-seal-rescue-NEEDS-CAPTION.jpg",
+    "date": "2026-11-16T18:36:13.963Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1794854037591wmdyahw4b",
+        "title": "Kletterer retten verwaiste Seehundwelpe von Klippe auf Kythira"
+      },
+      {
+        "id": "1794853981739yc0grc843",
+        "title": "PFAS-Werte in englischen Flüssen um 30% gesunken, in Fischen sogar um 49%"
+      },
+      {
+        "id": "1794678322616t56aulc0t",
+        "title": "Atolle Bikar und Bokak werden neues Meeresschutzgebiet"
+      }
+    ]
+  },
+  {
+    "id": "dg-20261115-health",
+    "type": "digest",
+    "digest_date": "2026-11-15",
+    "title": "Neue Hoffnung im Gesundheitswesen: zufriedene Jugendliche, weniger Tics und geheiltes Blut",
+    "summary": "Diese Woche zeigt, dass Fortschritt im Gesundheitswesen oft still beginnt: mit einer Umfrage, einem Armband oder einem einzelnen Patienten, dem es nach Jahren endlich bessergeht. Drei Meldungen aus dem In- und Ausland verbindet ein roter Faden: Sie beweisen, dass Behandlungen, die manchmal noch umstritten oder experimentell klingen, in der Praxis Menschen tatsächlich helfen. Aus der bislang größten Studie unter transgender und genderdiversen Jugendlichen in den Vereinigten Staaten geht hervor, dass etwa 97 Prozent mit ihrer Wahl für eine geschlechtsbestätigende Hormontherapie zufrieden sind [1]. Von den knapp 400 befragten Jugendlichen gaben nur zehn Personen an, es zu bereuen, von denen sieben...",
+    "image_alt": "Neue Hoffnung im Gesundheitswesen: zufriedene Jugendliche, weniger Tics und geheiltes Blut",
+    "meta_description": "Zufriedene transgender Jugendliche, weniger Tics durch ein Armgerät und eine Weltpremiere mit Knochenmark: die Gesundheitsnachrichten dieser Tage.",
+    "meta_keywords": "Health",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/11/111026_AC_transyouth_main.jpg?w=800",
+    "date": "2026-11-16T18:35:13.199Z",
+    "category": "Health",
+    "refs": [
+      {
+        "id": "1794854058075teinzciwt",
+        "title": "Fast alle transgender Jugendlichen zufrieden mit Hormontherapie"
+      },
+      {
+        "id": "17948161639284hg989uc1",
+        "title": "Neupulse-Armband halbiert Tourette-Tics in britischer Studie"
+      },
+      {
+        "id": "1794806430494dh8oi8f6e",
+        "title": "Weltpremiere: Knochenmarktransplantation heilt aplastische Anämie"
+      }
+    ]
+  },
+  {
+    "id": "1794854058075teinzciwt",
+    "title": "Fast alle transgender Jugendlichen zufrieden mit Hormontherapie",
+    "summary": "Eine überwiegende Mehrheit von transgender und genderdiversen Jugendlichen in den Vereinigten Staaten ist mit ihrer Entscheidung für geschlechtsbestätigende Hormontherapie zufrieden. Das geht aus einer Umfrage unter knapp 400 transgender und genderdiversen Jugendlichen hervor – der bislang größten Befragung dieser Art. Etwa 97 Prozent gaben an, dass es die richtige Entscheidung war. Nur etwa 3 Prozent, also 10 Personen, sagten, dass...",
+    "image_alt": "Transgender Jugendlicher im Gespräch über Hormontherapie",
+    "meta_description": "97 % der transgender Jugendlichen zufrieden mit Hormontherapie – Ergebnisse der größten Studie bislang in JAMA Pediatrics veröffentlicht.",
+    "meta_keywords": "transgender, Hormontherapie, geschlechtsbestätigende Versorgung, JAMA Pediatrics, transgender Jugendliche, genderdiverse Jugendliche",
+    "link": "https://www.sciencenews.org/article/hormone-therapy-transgender-youth",
+    "source": "Sciencenews.org",
+    "image": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/11/111026_AC_transyouth_main.jpg?w=800",
+    "date": "2026-11-16T18:34:18.996Z",
+    "category": "Health",
+    "score": 9
+  },
+  {
+    "id": "1794854037591wmdyahw4b",
+    "title": "Kletterer retten verwaiste Seehundwelpe von Klippe auf Kythira",
+    "summary": "Auf der griechischen Insel Kythira entdeckten Kletterer während einer Wanderung einen verwaisten Seehundwelpen am Fuße einer Klippe am unzugänglichen Kalamia Beach. Das Tier, eine kritisch bedrohte Mittelmeer-Mönchsrobbe, war wahrscheinlich durch eine große Welle von seiner Mutter bei einer nahegelegenen Meeresgrotte getrennt worden. Die Kletterer packten den Welpen sicher in einen Rucksack und erklommen die Klippe erneut. Sie schalteten sofort MOm...",
+    "image_alt": "Kletterer tragen einen verwaisten Seehundwelpen in einem Rucksack eine Klippe hinauf bei Kalamia Beach auf Kythira",
+    "meta_description": "Kletterer retten verwaisten, kritisch bedrohten Seehundwelpen von unzugänglichem Strand auf Kythira, Griechenland.",
+    "meta_keywords": "Seehund Rettung, Mittelmeer-Mönchsrobbe, Kythira, Griechenland, MOm, Animal Aid Kythira, bedrohte Art, Klifpenrettung",
+    "link": "https://www.goodnewsnetwork.org/climbers-lug-endangered-and-orphaned-seal-pup-up-a-cliff-to-safety/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Greek-baby-seal-rescue-NEEDS-CAPTION.jpg",
+    "date": "2026-11-16T18:33:58.679Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1794854007223k458nb764",
+    "title": "Tokio bekämpft Abfallproblem mit intelligenten Mülleimern",
+    "summary": "Japan ist bekannt für das Fehlen von öffentlichen Mülleimern – mit Absicht: Schwer zu entsorgender Abfall soll Menschen weniger geneigt machen, Müll zu produzieren, und verhindert übervolle Behälter. Für Touristen ist dies jedoch verwirrend und frustrierend. Tokio entfernte 2022 noch alle Mülleimer aus der U-Bahn. Gleichzeitig arbeiten Städte wie Tokio und Kyoto mit Unternehmen an intelligenteren Lösungen. Forcetec installiert Solarenergie-Behälter...",
+    "image_alt": "Ein Solarenergie-Mülleimer mit Verdichter-Technologie auf einer Straße in Tokio",
+    "meta_description": "Tokio geht das Abfallproblem mit Solarenergie-Mülleimern und selbstfahrenden Abfallrobotern an belebten Bahnhöfen an.",
+    "meta_keywords": "Tokio, Japan, Mülleimer, SmaGO, Cartken, Abfallroboter, Shinjuku, Tourismus Japan",
+    "link": "https://www.goodnewsnetwork.org/tokyo-tackles-trash-troubles-with-new-generation-of-robotic-street-waste-bins/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Smart-solar-powered-trash-compacters-credit-Forectec.jpg",
+    "date": "2026-11-16T18:33:29.035Z",
+    "category": "Tech",
+    "score": 8
+  },
+  {
+    "id": "1794853981739yc0grc843",
+    "title": "PFAS-Werte in englischen Flüssen um 30% gesunken, in Fischen sogar um 49%",
+    "summary": "Zwei verbotene „Ewigkeitschemikalien\", PFOA und PFOS, werden in englischen Flüssen und Fischen in deutlich niedrigeren Konzentrationen nachgewiesen. Eine Untersuchung der UK Environment Agency zeigt einen Rückgang von 29% bei PFOA und 30% bei PFOS im Wasser sowie sogar 49% in Fischbeständen. Die Stoffe wurden jahrzehntelang in wasser- und flammabweisenden sowie antihaftbeschichteten Produkten verwendet, wurden aber aufgrund von Gesundheitsrisiken unter das...",
+    "image_alt": "Fluss in England mit Fischen, Symbol für sinkende PFAS-Konzentrationen",
+    "meta_description": "PFAS-Chemikalien sinken deutlich in englischen Flüssen und Fischen dank jahrelanger Regulierung und Stoffverbote.",
+    "meta_keywords": "PFAS, Ewigkeitschemikalien, PFOA, PFOS, England, Flüsse, Fische, Environment Agency, Stockholmer Übereinkommen",
+    "link": "https://www.goodnewsnetwork.org/30-drop-in-levels-of-forever-chemicals-in-englands-rivers-49-in-fish-brilliant-to-see/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2021/11/River-Thames-London-Tower-Bridge-pubdomain-Pietro-De-Grandi.jpg",
+    "date": "2026-11-16T18:33:04.376Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
     "id": "17948161639284hg989uc1",
     "title": "Neupulse-Armband halbiert Tourette-Tics in britischer Studie",
     "summary": "Eine klinische Studie im Vereinigten Königreich mit 121 Teilnehmern zeigte, dass das Tragen eines Prototyp-Armband-Geräts namens Neupulse die Häufigkeit von Tics im Durchschnitt um 25 Prozent reduzierte. Das Gerät, entwickelt von der University of Nottingham und dem Spin-off Neurotherapeutics Ltd, sendet rhythmische elektrische Impulse an den Nerv im Handgelenk, der die Gehirnregionen für die Bewegungskontrolle beeinflusst. Nutzer berichten von stärkeren...",
@@ -2487,89 +2601,5 @@
     "date": "2026-10-30T17:59:52.652Z",
     "category": "Environment",
     "score": 9
-  },
-  {
-    "id": "1793383163484cw5ubl9r4",
-    "title": "Heiliger Irawadi-Flussdelfin in Kambodscha wächst um 6 Kälber",
-    "summary": "Der Irawadi-Flussdelfin, eine der weltweit am stärksten bedrohten Tierarten, zeigt hoffnungsvolles Wachstum in Kambodscha. Die jüngste Kalbungszeit brachte 6 neue Baby-Delfine hervor, wodurch die Population entlang eines 75 Meilen langen Abschnitts des Mekong im Nordosten des Landes auf 118 Tiere anwächst. Diese kambodschanische Gruppe ist die größte Flusspopulation dieser Delfinart weltweit. Lokale Bevölkerungsgruppen in Kambodscha und Laos betrachten die Delfine...",
-    "image_alt": "Irawadi-Flussdelfin schwimmt an der Oberfläche des Mekong in Kambodscha",
-    "meta_description": "Irawadi-Flussdelfin in Kambodscha bekommt 6 Kälber: Population wächst auf 118 Tiere am Mekong.",
-    "meta_keywords": "Irawadi-Delfin, Flussdelfin, Mekong, Kambodscha, bedrohte Tierart, Naturschutz, WWF",
-    "link": "https://www.goodnewsnetwork.org/numbers-of-endangered-and-sacred-river-dolphin-grow-by-6-after-successful-breeding-season/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Irrawaddy-dolphin-CC-4.0.-Int-Stefan-Brending.jpg",
-    "date": "2026-10-30T17:59:25.000Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1793383136748zh80bxxgg",
-    "title": "Falsche GPS-Abfahrt rettet Pflegefamilie Burke mit 500 Kindern vor Hausbrand",
-    "summary": "Ein völlig Fremder namens Casey folgte einer falschen GPS-Anweisung auf dem Highway 114 südlich von Lyerly im Chattooga County, Georgia, als er Rauch von einem brennenden Haus sah. Das Haus gehörte den Pflegeeltern James und Larita Burke, bei denen zu diesem Zeitpunkt 11 Kinder und 1 Enkel lebten. James Burke war Samstaggnacht in seinem Sessel eingeschlafen und wurde von Casey...",
-    "image_alt": "Ausgebranntes Wohnhaus der Pflegefamilie Burke nach Hausbrand im Chattooga County, Georgia",
-    "meta_description": "Fremder Casey rettet Pflegefamilie Burke und ihre Kinder dank falscher GPS-Abfahrt vor Hausbrand in Georgia.",
-    "meta_keywords": "Pflegefamilie, Hausbrand, Georgia, Chattooga County, James und Larita Burke, Rettungsaktion, GPS falsche Abfahrt",
-    "link": "https://www.goodnewsnetwork.org/family-thats-fostered-500-children-saved-from-housefire-thanks-to-strangers-wrong-turn/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/The-Burke-Family-credit-Flourish-Foster-Care-Closet-Support.jpg",
-    "date": "2026-10-30T17:58:58.101Z",
-    "category": "Lifestyle",
-    "score": 8
-  },
-  {
-    "id": "17933830831624gr34qja7",
-    "title": "Bohrfreie Kariestherapie mit SDF kurz vor FDA-Zulassung",
-    "summary": "Die FDA-Zulassung für Silberdiaminfluorid (SDF), eine Flüssigkeit, die Karies bei Kindern ohne Bohren, Spritzen oder Narkose stoppt, rückt näher. Eine Phase-III-Studie, veröffentlicht in JAMA Pediatrics, verfolgte 830 Kinder unter 6 Jahren in Michigan, New York und Iowa. SDF, mit einem Schwammapplikator aufgetragen, stoppte Zahnverfall bei mehr als der Hälfte der betroffenen Milchzähne, wenn es alle sechs Monate angewendet wurde. Das...",
-    "image_alt": "Ein Milchzahn wird mit Silberdiaminfluorid über einen Schwammapplikator behandelt",
-    "meta_description": "SDF stoppt Karies bei Kindern ohne Bohren. FDA-Zulassung nach erfolgreicher Phase-III-Studie in Sicht.",
-    "meta_keywords": "Silberdiaminfluorid, SDF, FDA-Zulassung, Karies, Zahnverfall, Kinderzahnheilkunde, bohrfrei, JAMA Pediatrics",
-    "link": "https://www.goodnewsnetwork.org/fda-approval-for-drill-free-cavity-care-may-be-imminent-after-great-phase-3-treatment-trial/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2018/01/Teeth-dentist-caveties-by-Ozkan-Guner-lQNl2Vdn0fs-unsplash.jpeg",
-    "date": "2026-10-30T17:58:05.078Z",
-    "category": "Health",
-    "score": 10
-  },
-  {
-    "id": "1793383029816w2djtnyyx",
-    "title": "Etsy geht gegen irreführende KI-Inhalte vor",
-    "summary": "Etsy, der weltweit größte Marktplatz für handgefertigte Produkte, führt neue Regeln gegen irreführende KI-generierte Inhalte ein. Vizepräsident James Ossman betont, dass Vertrauen zwischen Käufern und Verkäufern essentiell ist. Verkäufer müssen künftig mindestens ein unbearbeitetes, authentisches Foto ihres Produkts zeigen; zusätzliche Fotos dürfen mit KI bearbeitet sein, müssen das Produkt aber realistisch darstellen. Bei Verstößen können Verkäufer verpflichtet werden, Kunden zu...",
-    "image_alt": "Handgefertigte Produkte auf Etsy mit authentischen, unbearbeiteten Fotos",
-    "meta_description": "Etsy führt strengere Regeln gegen irreführende KI-Inhalte ein, um Käufer auf seinem Marktplatz zu schützen.",
-    "meta_keywords": "Etsy, KI-Inhalte, künstliche Intelligenz, E-Commerce, handgefertigte Produkte, Verbraucherschutz, Betrug",
-    "link": "https://www.goodnewsnetwork.org/etsy-cracks-down-on-ai-generated-content-to-protect-buyers-from-barrage-of-slop/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Etsys-offices-in-Ireland-CC-3.0.-BY-SA-Cograng-replicated-with-AI-for-humors-sake.jpg",
-    "date": "2026-10-30T17:57:11.374Z",
-    "category": "Tech",
-    "score": 8
-  },
-  {
-    "id": "1793382999661s9jt4nn4o",
-    "title": "Taucher retten Känguru mitten auf dem Meer in der Boston Bay",
-    "summary": "In der Boston Bay in Südaustralien haben ein Taucher und seine Besatzung ein junges Känguru gerettet, das mehr als zweieinhalb Kilometer vor der Küste im Meer trieb. Kapitän Ryan Smith bemerkte das Tier zuerst. Dank des Wasserdecks des Bootes konnte die Besatzung dicht an die Wasseroberfläche heranfahren, woraufhin Taucher Jake Murray das erschöpfte Känguru hochhob. Murray, der auch Farmer ist,...",
-    "image_alt": "Ein junges Känguru wird von einem Taucher aus dem Meer gerettet in der Boston Bay, Australien",
-    "meta_description": "Taucher retten ein erschöpftes Känguru, das über 3 Kilometer vor der Küste im Meer schwamm, in der Boston Bay, Australien.",
-    "meta_keywords": "Känguru Rettung, Boston Bay, Australien, Taucher, Jake Murray, Tierrettung",
-    "link": "https://www.goodnewsnetwork.org/bizarre-rescue-sees-divers-save-kangaroo-that-found-itself-over-a-mile-from-dry-land/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Jake-Murray-and-the-rescued-roo-supplied-to-ABC-by-Jake-Murray.jpg",
-    "date": "2026-10-30T17:56:40.683Z",
-    "category": "Lifestyle",
-    "score": 8
-  },
-  {
-    "id": "17933829729423j7p4881e",
-    "title": "Princeton-Alumni filtern Mikroplastik aus Abwasser in Atlantic City",
-    "summary": "Zwei Princeton-Alumni, Nathanial Banks und Yidian Liu, haben über ihr Startup PolyGone Technologies ein neues Gerät entwickelt, das Mikroplastik aus Abwasser filtert. Das System, inspiriert von hydrophoben Pflanzen, die Wasser abstoßen, aber Mikroplastik anziehen, ist bereits in Atlantic City installiert. Die Atlantic County Utilities Authority (ACUA) in New Jersey testet das Gerät zwei Jahre lang in der Stadt mit 40.000...",
-    "image_alt": "Großflächiges Filtersystem für Mikroplastik in der Wasseraufbereitungsanlage von Atlantic City installiert",
-    "meta_description": "Princeton-Alumni entwickeln bahnbrechendes Filter, das Mikroplastik aus Abwasser entfernt, bereits in Atlantic City aktiv.",
-    "meta_keywords": "Mikroplastik, Abwasser, PolyGone Technologies, Atlantic City, ACUA, Wasseraufbereitung, Princeton",
-    "link": "https://www.goodnewsnetwork.org/nature-inspired-tech-prevents-microplastics-entering-atlantic-ocean-through-wastewater/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/credit-supplied-to-WHYY-as-a-courtesy-PolyGone-Systems.jpg",
-    "date": "2026-10-30T17:56:14.730Z",
-    "category": "Environment",
-    "score": 10
   }
 ]

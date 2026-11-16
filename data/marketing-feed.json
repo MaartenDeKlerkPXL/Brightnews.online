@@ -1,10 +1,34 @@
 {
- "gegenereerd": "2026-11-16T08:02:51.998Z",
+ "gegenereerd": "2026-11-16T18:36:17.401Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "1794854058075teinzciwt",
+     "titel": "Bijna alle transgender jongeren tevreden over hormoontherapie",
+     "teaser": "Een overgrote meerderheid van transgender en genderdiverse jongeren in de Verenigde Staten is tevreden met hun keuze voor gender-bevestigende hormoontherapie. Dat blijkt uit een onderzoek onder bijna 400 transgender en genderdiverse jongeren, de grootste enquête in zijn soort tot nu toe. Zo'n 97 procent gaf aan dat het de juiste beslissing was. Slechts ongeveer 3 procent, oftewel 10 personen, zei...",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/nl/bijna-alle-transgender-jongeren-tevreden-over-hormoontherapie-1794854058075teinzciwt.html"
+    },
+    {
+     "id": "1794854037591wmdyahw4b",
+     "titel": "Klimmers Redden Verweesde Zeehondenpup Van Klif Op Kythira",
+     "teaser": "Op het Griekse eiland Kythira vonden klimmers tijdens een wandeltocht een verweesde zeehondenpup onderaan een klif op het ontoegankelijke Kalamia Beach. Het diertje, een kritisch bedreigde Mediterrane monniksrob, was waarschijnlijk door een grote golf van zijn moeder gescheiden bij een nabijgelegen zeegrot. De klimmers stopten de pup veilig in een rugzak en beklommen de klif opnieuw. Ze schakelden direct MOm...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/klimmers-redden-verweesde-zeehondenpup-van-klif-op-kythira-1794854037591wmdyahw4b.html"
+    },
+    {
+     "id": "1794853981739yc0grc843",
+     "titel": "PFAS-niveaus in Engelse rivieren dalen 30%, in vis zelfs 49%",
+     "teaser": "Twee verboden 'forever chemicals', PFOA en PFOS, worden in veel lagere concentraties aangetroffen in Engelse rivieren en vis. Onderzoek van de UK Environment Agency toont een daling van 29% voor PFOA en 30% voor PFOS in water, en zelfs 49% in viseten. De stoffen werden decennialang gebruikt in waterafstotende, vlamvertragende en antiaanbakproducten, maar werden onder de Stockholm Convention verboden wegens...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/pfas-niveaus-in-engelse-rivieren-dalen-30-in-vis-zelfs-49-1794853981739yc0grc843.html"
+    },
     {
      "id": "17948161639284hg989uc1",
      "titel": "Neupulse-polsapparaat halveert bijna Tourette-tics in Britse proef",
@@ -20,33 +44,23 @@
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/nl/voyager-1-bereikt-een-lichtdag-van-de-aarde-1794806456816y2t6lzgo5.html"
-    },
-    {
-     "id": "1794806430494dh8oi8f6e",
-     "titel": "Wereldprimeur: beenmergtransplantatie geneest aplastische anemie",
-     "teaser": "Een katholiek zorgsysteem in het Amerikaanse Midwesten, Franciscan Health, heeft de wereldwijd eerste gemelde beenmergtransplantatie voor een niet-kwaadaardige ziekte succesvol voltooid. Artsen gebruikten beenmerg van een overleden orgaandonor om een 40-jarige vrouw met aplastische anemie te behandelen. Na tien jaar ziekte en meerdere mislukte behandelingen onderging zij op 18 april een stamceltransplantatie. Zes maanden later heeft het donormerg aangeslagen en...",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/nl/wereldprimeur-beenmergtransplantatie-geneest-aplastische-anemie-1794806430494dh8oi8f6e.html"
-    },
-    {
-     "id": "1794767752178r7rk1mqo1",
-     "titel": "Airbnb-oprichter Chesky schenkt $100 miljoen aan parken San Francisco",
-     "teaser": "Airbnb-CEO Brian Chesky heeft $100 miljoen gedoneerd aan de parken van San Francisco, de grootste gift van een individuele donor in de geschiedenis van de stad. De aankondiging gebeurde samen met burgemeester Daniel Lurie vorige week in Golden Gate Park. Chesky richtte Airbnb 18 jaar geleden op in San Francisco, waar het bedrijf nog altijd is gevestigd. Met de donatie...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/airbnb-oprichter-chesky-schenkt-100-miljoen-aan-parken-san-francisco-1794767752178r7rk1mqo1.html"
-    },
-    {
-     "id": "1794720147520eg4u3pab2",
-     "titel": "SpaceX vangt Starship met mechanische armen en schrijft geschiedenis",
-     "teaser": "SpaceX heeft voor het eerst een Starship-ruimtevaartuig opgevangen met mechanische armen bij de lanceerbasis in Texas, 22 uur na de lancering. Dit toont volgens het bedrijf de volledige herbruikbaarheid van Starship aan, bedoeld voor reizen naar de maan en Mars. De eerste-traps-booster explodeerde kort na de lancering op vrijdag, waardoor de gehoopte dubbele vangst niet lukte. SpaceX had eerder al...",
-     "score": 9,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/nl/spacex-vangt-starship-met-mechanische-armen-en-schrijft-geschiedenis-1794720147520eg4u3pab2.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261115-environment",
+     "titel": "Van geredde zeehondenpup tot schoner water: het milieunieuws van deze dagen",
+     "categorie": "Environment",
+     "dag": "2026-11-15",
+     "url": "https://brightnews.online/articles/nl/van-geredde-zeehondenpup-tot-schoner-water-het-milieunieuws-van-deze-dagen-dg-20261115-environment.html"
+    },
+    {
+     "id": "dg-20261115-health",
+     "titel": "Nieuwe hoop in de zorg: tevreden jongeren, rustige tics en genezen bloed",
+     "categorie": "Health",
+     "dag": "2026-11-15",
+     "url": "https://brightnews.online/articles/nl/nieuwe-hoop-in-de-zorg-tevreden-jongeren-rustige-tics-en-genezen-bloed-dg-20261115-health.html"
+    },
     {
      "id": "dg-20261114-lifestyle",
      "titel": "Groot geld, kleine moeite en een oud geheim: drie vormen van goedheid",
@@ -58,6 +72,30 @@
   },
   "en": {
    "top": [
+    {
+     "id": "1794854058075teinzciwt",
+     "titel": "Nearly all transgender youth satisfied with hormone therapy",
+     "teaser": "A vast majority of transgender and gender-diverse youth in the United States are satisfied with their choice of gender-affirming hormone therapy. This emerges from a survey of nearly 400 transgender and gender-diverse youth, the largest survey of its kind to date. About 97 percent said it was the right decision. Only approximately 3 percent, or 10 people, said they regretted...",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/en/nearly-all-transgender-youth-satisfied-with-hormone-therapy-1794854058075teinzciwt.html"
+    },
+    {
+     "id": "1794854037591wmdyahw4b",
+     "titel": "Climbers rescue orphaned seal pup from cliff on Kythira",
+     "teaser": "On the Greek island of Kythira, climbers discovered an orphaned seal pup at the base of a cliff on the inaccessible Kalamia Beach during a hiking trip. The animal, a critically endangered Mediterranean monk seal, had likely been separated from its mother by a large wave near a nearby sea cave. The climbers safely placed the pup in a backpack...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/climbers-rescue-orphaned-seal-pup-from-cliff-on-kythira-1794854037591wmdyahw4b.html"
+    },
+    {
+     "id": "1794853981739yc0grc843",
+     "titel": "PFAS levels in English rivers fall 30%, in fish even 49%",
+     "teaser": "Two banned 'forever chemicals', PFOA and PFOS, are being found in much lower concentrations in English rivers and fish. Research by the UK Environment Agency shows a decline of 29% for PFOA and 30% for PFOS in water, and even 49% in fish tissue. The substances were used for decades in water-repellent, flame-retardant and non-stick products, but were banned under...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/pfas-levels-in-english-rivers-fall-30-in-fish-even-49-1794853981739yc0grc843.html"
+    },
     {
      "id": "17948161639284hg989uc1",
      "titel": "Neupulse wristband nearly halves Tourette tics in British trial",
@@ -73,33 +111,23 @@
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/en/voyager-1-reaches-one-light-day-from-earth-1794806456816y2t6lzgo5.html"
-    },
-    {
-     "id": "1794806430494dh8oi8f6e",
-     "titel": "World premiere: bone marrow transplant cures aplastic anemia",
-     "teaser": "A Catholic healthcare system in the American Midwest, Franciscan Health, has successfully completed the world's first reported bone marrow transplant for a non-malignant disease. Doctors used bone marrow from a deceased organ donor to treat a 40-year-old woman with aplastic anemia. After ten years of illness and multiple failed treatments, she underwent a stem cell transplant on April 18. Six...",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/en/world-premiere-bone-marrow-transplant-cures-aplastic-anemia-1794806430494dh8oi8f6e.html"
-    },
-    {
-     "id": "1794767752178r7rk1mqo1",
-     "titel": "Airbnb founder Chesky donates $100 million to San Francisco parks",
-     "teaser": "Airbnb CEO Brian Chesky has donated $100 million to San Francisco's parks, the largest gift from an individual donor in the city's history. The announcement was made alongside Mayor Daniel Lurie last week in Golden Gate Park. Chesky founded Airbnb 18 years ago in San Francisco, where the company remains headquartered. With the donation, he wants to give back to...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/airbnb-founder-chesky-donates-100-million-to-san-francisco-parks-1794767752178r7rk1mqo1.html"
-    },
-    {
-     "id": "1794720147520eg4u3pab2",
-     "titel": "SpaceX catches Starship with mechanical arms and makes history",
-     "teaser": "SpaceX has for the first time caught a Starship spacecraft with mechanical arms at its launch facility in Texas, 22 hours after launch. According to the company, this demonstrates Starship's full reusability, intended for trips to the moon and Mars. The first-stage booster exploded shortly after launch on Friday, preventing the hoped-for double catch. SpaceX had previously successfully caught a...",
-     "score": 9,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/en/spacex-catches-starship-with-mechanical-arms-and-makes-history-1794720147520eg4u3pab2.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261115-environment",
+     "titel": "From rescued seal pup to cleaner water: the environmental news of these days",
+     "categorie": "Environment",
+     "dag": "2026-11-15",
+     "url": "https://brightnews.online/articles/en/from-rescued-seal-pup-to-cleaner-water-the-environmental-news-of-these-days-dg-20261115-environment.html"
+    },
+    {
+     "id": "dg-20261115-health",
+     "titel": "New hope in healthcare: satisfied youth, quieter tics and healed blood",
+     "categorie": "Health",
+     "dag": "2026-11-15",
+     "url": "https://brightnews.online/articles/en/new-hope-in-healthcare-satisfied-youth-quieter-tics-and-healed-blood-dg-20261115-health.html"
+    },
     {
      "id": "dg-20261114-lifestyle",
      "titel": "Big money, small effort and an old secret: three forms of goodness",
@@ -111,6 +139,30 @@
   },
   "de": {
    "top": [
+    {
+     "id": "1794854058075teinzciwt",
+     "titel": "Fast alle transgender Jugendlichen zufrieden mit Hormontherapie",
+     "teaser": "Eine überwiegende Mehrheit von transgender und genderdiversen Jugendlichen in den Vereinigten Staaten ist mit ihrer Entscheidung für geschlechtsbestätigende Hormontherapie zufrieden. Das geht aus einer Umfrage unter knapp 400 transgender und genderdiversen Jugendlichen hervor – der bislang größten Befragung dieser Art. Etwa 97 Prozent gaben an, dass es die richtige Entscheidung war. Nur etwa 3 Prozent, also 10 Personen, sagten, dass...",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/de/fast-alle-transgender-jugendlichen-zufrieden-mit-hormontherapie-1794854058075teinzciwt.html"
+    },
+    {
+     "id": "1794854037591wmdyahw4b",
+     "titel": "Kletterer retten verwaiste Seehundwelpe von Klippe auf Kythira",
+     "teaser": "Auf der griechischen Insel Kythira entdeckten Kletterer während einer Wanderung einen verwaisten Seehundwelpen am Fuße einer Klippe am unzugänglichen Kalamia Beach. Das Tier, eine kritisch bedrohte Mittelmeer-Mönchsrobbe, war wahrscheinlich durch eine große Welle von seiner Mutter bei einer nahegelegenen Meeresgrotte getrennt worden. Die Kletterer packten den Welpen sicher in einen Rucksack und erklommen die Klippe erneut. Sie schalteten sofort MOm...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/kletterer-retten-verwaiste-seehundwelpe-von-klippe-auf-kythira-1794854037591wmdyahw4b.html"
+    },
+    {
+     "id": "1794853981739yc0grc843",
+     "titel": "PFAS-Werte in englischen Flüssen um 30% gesunken, in Fischen sogar um 49%",
+     "teaser": "Zwei verbotene „Ewigkeitschemikalien\", PFOA und PFOS, werden in englischen Flüssen und Fischen in deutlich niedrigeren Konzentrationen nachgewiesen. Eine Untersuchung der UK Environment Agency zeigt einen Rückgang von 29% bei PFOA und 30% bei PFOS im Wasser sowie sogar 49% in Fischbeständen. Die Stoffe wurden jahrzehntelang in wasser- und flammabweisenden sowie antihaftbeschichteten Produkten verwendet, wurden aber aufgrund von Gesundheitsrisiken unter das...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/pfas-werte-in-englischen-flussen-um-30-gesunken-in-fischen-sogar-um-49-1794853981739yc0grc843.html"
+    },
     {
      "id": "17948161639284hg989uc1",
      "titel": "Neupulse-Armband halbiert Tourette-Tics in britischer Studie",
@@ -126,33 +178,23 @@
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/de/voyager-1-erreicht-einen-lichttag-entfernung-von-der-erde-1794806456816y2t6lzgo5.html"
-    },
-    {
-     "id": "1794806430494dh8oi8f6e",
-     "titel": "Weltpremiere: Knochenmarktransplantation heilt aplastische Anämie",
-     "teaser": "Ein katholisches Gesundheitssystem im amerikanischen Mittleren Westen, Franciscan Health, hat die weltweit erste gemeldete Knochenmarktransplantation für eine nicht-bösartige Erkrankung erfolgreich abgeschlossen. Ärzte verwendeten Knochenmark eines verstorbenen Organspenders, um eine 40-jährige Frau mit aplastischer Anämie zu behandeln. Nach zehn Jahren Krankheit und mehreren fehlgeschlagenen Behandlungen unterzog sie sich am 18. April einer Stammzelltransplantation. Sechs Monate später war das Spendermark angewachsen und...",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/de/weltpremiere-knochenmarktransplantation-heilt-aplastische-anamie-1794806430494dh8oi8f6e.html"
-    },
-    {
-     "id": "1794767752178r7rk1mqo1",
-     "titel": "Airbnb-Gründer Chesky spendet $100 Millionen an Parks in San Francisco",
-     "teaser": "Airbnb-CEO Brian Chesky hat $100 Millionen an die Parks von San Francisco gespendet – die größte Einzelspende in der Geschichte der Stadt. Die Ankündigung erfolgte zusammen mit Bürgermeister Daniel Lurie in der vergangenen Woche im Golden Gate Park. Chesky gründete Airbnb vor 18 Jahren in San Francisco, wo das Unternehmen noch immer ansässig ist. Mit der Spende möchte er der...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/airbnb-grunder-chesky-spendet-100-millionen-an-parks-in-san-francisco-1794767752178r7rk1mqo1.html"
-    },
-    {
-     "id": "1794720147520eg4u3pab2",
-     "titel": "SpaceX fängt Starship mit mechanischen Armen und schreibt Geschichte",
-     "teaser": "SpaceX hat erstmals ein Starship-Raumfahrzeug mit mechanischen Armen an der Startanlage in Texas abgefangen, 22 Stunden nach dem Start. Dies zeigt nach Angaben des Unternehmens die vollständige Wiederverwendbarkeit von Starship, das für Reisen zum Mond und zum Mars vorgesehen ist. Die erste Stufe des Boosters explodierte kurz nach dem Start am Freitag, wodurch der erhoffte doppelte Fang nicht gelang. SpaceX...",
-     "score": 9,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/de/spacex-fangt-starship-mit-mechanischen-armen-und-schreibt-geschichte-1794720147520eg4u3pab2.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261115-environment",
+     "titel": "Von geretteter Seehundwelpe bis zu sauberem Wasser: die Umweltnachrichten dieser Tage",
+     "categorie": "Environment",
+     "dag": "2026-11-15",
+     "url": "https://brightnews.online/articles/de/von-geretteter-seehundwelpe-bis-zu-sauberem-wasser-die-umweltnachrichten-dieser-dg-20261115-environment.html"
+    },
+    {
+     "id": "dg-20261115-health",
+     "titel": "Neue Hoffnung im Gesundheitswesen: zufriedene Jugendliche, weniger Tics und geheiltes Blut",
+     "categorie": "Health",
+     "dag": "2026-11-15",
+     "url": "https://brightnews.online/articles/de/neue-hoffnung-im-gesundheitswesen-zufriedene-jugendliche-weniger-tics-und-geheil-dg-20261115-health.html"
+    },
     {
      "id": "dg-20261114-lifestyle",
      "titel": "Großzügige Spenden, kleine Mühe und ein altes Geheimnis: drei Formen der Güte",
@@ -164,6 +206,30 @@
   },
   "fr": {
    "top": [
+    {
+     "id": "1794854058075teinzciwt",
+     "titel": "Presque tous les jeunes transgenres satisfaits de l'hormonothérapie",
+     "teaser": "Une très grande majorité de jeunes transgenres et de genre divers aux États-Unis sont satisfaits de leur choix d'hormonothérapie d'affirmation de genre. C'est ce qui ressort d'une enquête menée auprès de près de 400 jeunes transgenres et de genre divers, la plus grande enquête de ce type à ce jour. Environ 97 % ont déclaré que c'était la bonne décision....",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/fr/presque-tous-les-jeunes-transgenres-satisfaits-de-l-hormonotherapie-1794854058075teinzciwt.html"
+    },
+    {
+     "id": "1794854037591wmdyahw4b",
+     "titel": "Des grimpeurs sauvent un phoque moine orphelin d'une falaise à Kythira",
+     "teaser": "Sur l'île grecque de Kythira, des grimpeurs ont découvert un phoque moine orphelin au pied d'une falaise lors d'une randonnée sur la plage inaccessible de Kalamia. Le jeune animal, un phoque moine de Méditerranée en danger critique d'extinction, avait probablement été séparé de sa mère par une grande vague près d'une grotte marine voisine. Les grimpeurs ont placé le petit...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/des-grimpeurs-sauvent-un-phoque-moine-orphelin-d-une-falaise-a-kythira-1794854037591wmdyahw4b.html"
+    },
+    {
+     "id": "1794853981739yc0grc843",
+     "titel": "Les niveaux de PFAS dans les rivières anglaises baissent de 30%, de 49% chez les poissons",
+     "teaser": "Deux « polluants éternels » interdits, le PFOA et le PFOS, sont détectés à des concentrations bien plus faibles dans les rivières et les poissons anglais. Une étude de la UK Environment Agency montre une baisse de 29% pour le PFOA et de 30% pour le PFOS dans l'eau, et même de 49% chez les poissons. Ces substances ont été...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/les-niveaux-de-pfas-dans-les-rivieres-anglaises-baissent-de-30-de-49-chez-les-po-1794853981739yc0grc843.html"
+    },
     {
      "id": "17948161639284hg989uc1",
      "titel": "Le bracelet Neupulse réduit presque de moitié les tics de Tourette dans un essai britannique",
@@ -179,33 +245,23 @@
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/fr/voyager-1-atteint-un-jour-lumiere-de-la-terre-1794806456816y2t6lzgo5.html"
-    },
-    {
-     "id": "1794806430494dh8oi8f6e",
-     "titel": "Première mondiale : une greffe de moelle osseuse guérit l'anémie aplasique",
-     "teaser": "Franciscan Health, un système de santé catholique du Midwest américain, a mené à bien la première greffe de moelle osseuse signalée au monde pour une maladie non maligne. Les médecins ont utilisé de la moelle osseuse d'un donneur d'organes décédé pour traiter une femme de 40 ans atteinte d'anémie aplasique. Après dix ans de maladie et plusieurs traitements infructueux, elle...",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/fr/premiere-mondiale-une-greffe-de-moelle-osseuse-guerit-l-anemie-aplasique-1794806430494dh8oi8f6e.html"
-    },
-    {
-     "id": "1794767752178r7rk1mqo1",
-     "titel": "Le fondateur d'Airbnb Chesky offre $100 millions aux parcs de San Francisco",
-     "teaser": "Le PDG d'Airbnb Brian Chesky a donné $100 millions aux parcs de San Francisco, le plus grand don d'un donateur individuel de l'histoire de la ville. L'annonce a été faite conjointement avec le maire Daniel Lurie la semaine dernière à Golden Gate Park. Chesky a fondé Airbnb il y a 18 ans à San Francisco, où l'entreprise est toujours basée....",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/le-fondateur-d-airbnb-chesky-offre-100-millions-aux-parcs-de-san-francisco-1794767752178r7rk1mqo1.html"
-    },
-    {
-     "id": "1794720147520eg4u3pab2",
-     "titel": "SpaceX attrape Starship avec des bras mécaniques et entre dans l'histoire",
-     "teaser": "SpaceX a capturé pour la première fois un vaisseau spatial Starship avec des bras mécaniques à la base de lancement au Texas, 22 heures après le décollage. Selon l'entreprise, cela démontre la réutilisabilité complète de Starship, destiné aux voyages vers la lune et Mars. Le propulseur du premier étage a explosé peu après le décollage vendredi, ce qui a empêché...",
-     "score": 9,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/fr/spacex-attrape-starship-avec-des-bras-mecaniques-et-entre-dans-l-histoire-1794720147520eg4u3pab2.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261115-environment",
+     "titel": "D'un phoque sauvé à une eau plus propre : les actualités environnementales de ces jours",
+     "categorie": "Environment",
+     "dag": "2026-11-15",
+     "url": "https://brightnews.online/articles/fr/d-un-phoque-sauve-a-une-eau-plus-propre-les-actualites-environnementales-de-ces-dg-20261115-environment.html"
+    },
+    {
+     "id": "dg-20261115-health",
+     "titel": "Un nouvel espoir dans les soins : des jeunes satisfaits, des tics apaisés et un sang guéri",
+     "categorie": "Health",
+     "dag": "2026-11-15",
+     "url": "https://brightnews.online/articles/fr/un-nouvel-espoir-dans-les-soins-des-jeunes-satisfaits-des-tics-apaises-et-un-san-dg-20261115-health.html"
+    },
     {
      "id": "dg-20261114-lifestyle",
      "titel": "Gros argent, petit effort et un vieux secret : trois formes de générosité",
@@ -217,6 +273,30 @@
   },
   "es": {
    "top": [
+    {
+     "id": "1794854058075teinzciwt",
+     "titel": "Casi todos los jóvenes transgénero satisfechos con la terapia hormonal",
+     "teaser": "Una gran mayoría de jóvenes transgénero y de género diverso en Estados Unidos está satisfecha con su decisión de someterse a terapia hormonal de afirmación de género. Así lo demuestra una encuesta realizada a casi 400 jóvenes transgénero y de género diverso, la más grande de su tipo hasta ahora. Aproximadamente el 97 por ciento indicó que fue la decisión...",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/es/casi-todos-los-jovenes-transgenero-satisfechos-con-la-terapia-hormonal-1794854058075teinzciwt.html"
+    },
+    {
+     "id": "1794854037591wmdyahw4b",
+     "titel": "Escaladores rescatan a una cría de foca huérfana de un acantilado en Citera",
+     "teaser": "En la isla griega de Citera, escaladores encontraron durante una excursión a una cría de foca huérfana al pie de un acantilado en la inaccesible playa de Kalamia. El animal, una foca monje del Mediterráneo críticamente amenazada, probablemente fue separado de su madre por una gran ola cerca de una cueva marina cercana. Los escaladores colocaron la cría de forma...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/escaladores-rescatan-a-una-cria-de-foca-huerfana-de-un-acantilado-en-citera-1794854037591wmdyahw4b.html"
+    },
+    {
+     "id": "1794853981739yc0grc843",
+     "titel": "Los niveles de PFAS en ríos ingleses descienden un 30%, en peces hasta un 49%",
+     "teaser": "Dos «químicos eternos» prohibidos, PFOA y PFOS, se detectan en concentraciones mucho más bajas en ríos y peces ingleses. Una investigación de la UK Environment Agency muestra un descenso del 29% para PFOA y del 30% para PFOS en agua, e incluso del 49% en tejidos de peces. Estas sustancias se utilizaron durante décadas en productos repelentes al agua, retardantes...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/los-niveles-de-pfas-en-rios-ingleses-descienden-un-30-en-peces-hasta-un-49-1794853981739yc0grc843.html"
+    },
     {
      "id": "17948161639284hg989uc1",
      "titel": "El dispositivo de muñeca Neupulse reduce casi a la mitad los tics de Tourette en ensayo británico",
@@ -232,33 +312,23 @@
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/es/voyager-1-alcanza-un-dia-luz-de-distancia-de-la-tierra-1794806456816y2t6lzgo5.html"
-    },
-    {
-     "id": "1794806430494dh8oi8f6e",
-     "titel": "Primicia mundial: trasplante de médula ósea cura la anemia aplásica",
-     "teaser": "Un sistema de salud católico en el Medio Oeste estadounidense, Franciscan Health, ha completado con éxito el primer trasplante de médula ósea reportado en el mundo para una enfermedad no maligna. Los médicos utilizaron médula ósea de un donante de órganos fallecido para tratar a una mujer de 40 años con anemia aplásica. Después de diez años de enfermedad y...",
-     "score": 9,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/es/primicia-mundial-trasplante-de-medula-osea-cura-la-anemia-aplasica-1794806430494dh8oi8f6e.html"
-    },
-    {
-     "id": "1794767752178r7rk1mqo1",
-     "titel": "El fundador de Airbnb, Chesky, dona $100 millones a parques de San Francisco",
-     "teaser": "El CEO de Airbnb, Brian Chesky, ha donado $100 millones a los parques de San Francisco, el mayor regalo de un donante individual en la historia de la ciudad. El anuncio se realizó junto con el alcalde Daniel Lurie la semana pasada en Golden Gate Park. Chesky fundó Airbnb hace 18 años en San Francisco, donde la empresa sigue teniendo...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/el-fundador-de-airbnb-chesky-dona-100-millones-a-parques-de-san-francisco-1794767752178r7rk1mqo1.html"
-    },
-    {
-     "id": "1794720147520eg4u3pab2",
-     "titel": "SpaceX atrapa el Starship con brazos mecánicos e ingresa en la historia",
-     "teaser": "SpaceX ha atrapado por primera vez una nave espacial Starship con brazos mecánicos en la base de lanzamiento de Texas, 22 horas después del despegue. Según la empresa, esto demuestra la reutilización completa del Starship, destinado a viajes a la luna y Marte. El impulsor de primera etapa explotó poco después del lanzamiento el viernes, lo que impidió el doble...",
-     "score": 9,
-     "categorie": "Tech",
-     "url": "https://brightnews.online/articles/es/spacex-atrapa-el-starship-con-brazos-mecanicos-e-ingresa-en-la-historia-1794720147520eg4u3pab2.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261115-environment",
+     "titel": "De una cría de foca rescatada a aguas más limpias: las noticias ambientales de estos días",
+     "categorie": "Environment",
+     "dag": "2026-11-15",
+     "url": "https://brightnews.online/articles/es/de-una-cria-de-foca-rescatada-a-aguas-mas-limpias-las-noticias-ambientales-de-es-dg-20261115-environment.html"
+    },
+    {
+     "id": "dg-20261115-health",
+     "titel": "Nueva esperanza en la sanidad: jóvenes satisfechos, tics reducidos y sangre curada",
+     "categorie": "Health",
+     "dag": "2026-11-15",
+     "url": "https://brightnews.online/articles/es/nueva-esperanza-en-la-sanidad-jovenes-satisfechos-tics-reducidos-y-sangre-curada-dg-20261115-health.html"
+    },
     {
      "id": "dg-20261114-lifestyle",
      "titel": "Dinero grande, poco esfuerzo y un secreto antiguo: tres formas de bondad",

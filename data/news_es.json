@@ -1,5 +1,119 @@
 [
   {
+    "id": "dg-20261115-environment",
+    "type": "digest",
+    "digest_date": "2026-11-15",
+    "title": "De una cría de foca rescatada a aguas más limpias: las noticias ambientales de estos días",
+    "summary": "En los últimos días, la naturaleza demuestra que la protección funciona, desde un acantilado en una isla griega hasta los ríos de Inglaterra y un lugar remoto en el océano Pacífico. Tres noticias que a primera vista parecen no tener mucho en común cuentan juntas una historia sobre personas que intervienen, miden y protegen, con resultados. En Citera, escaladores encontraron una cría huérfana de foca monje al pie de un acantilado inaccesible [1]. La foca monje mediterránea, una especie en peligro crítico, pesaba a la edad de un año apenas 15 kilogramos y estaba gravemente deshidratada. Los escaladores trasladaron al...",
+    "image_alt": "De una cría de foca rescatada a aguas más limpias: las noticias ambientales de estos días",
+    "meta_description": "Una cría de foca rescatada, ríos ingleses más limpios y una nueva reserva marina en las Islas Marshall: las noticias ambientales de mediados de noviembre d",
+    "meta_keywords": "Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Greek-baby-seal-rescue-NEEDS-CAPTION.jpg",
+    "date": "2026-11-16T18:36:13.963Z",
+    "category": "Environment",
+    "refs": [
+      {
+        "id": "1794854037591wmdyahw4b",
+        "title": "Escaladores rescatan a una cría de foca huérfana de un acantilado en Citera"
+      },
+      {
+        "id": "1794853981739yc0grc843",
+        "title": "Los niveles de PFAS en ríos ingleses descienden un 30%, en peces hasta un 49%"
+      },
+      {
+        "id": "1794678322616t56aulc0t",
+        "title": "Los atolones Bikar y Bokak se convierten en nueva reserva marina"
+      }
+    ]
+  },
+  {
+    "id": "dg-20261115-health",
+    "type": "digest",
+    "digest_date": "2026-11-15",
+    "title": "Nueva esperanza en la sanidad: jóvenes satisfechos, tics reducidos y sangre curada",
+    "summary": "Esta semana demuestra que el progreso en la sanidad a menudo comienza en silencio: con una encuesta, una pulsera o un único paciente que después de años finalmente mejora. Tres noticias de dentro y fuera del país comparten un hilo conductor: prueban que los tratamientos que a veces aún suenan controvertidos o experimentales, en la práctica realmente ayudan a las personas. Del mayor estudio realizado hasta ahora entre jóvenes transgénero y de género diverso en Estados Unidos se desprende que aproximadamente el 97 por ciento está satisfecho con su elección de terapia hormonal de afirmación de género [1]. De los...",
+    "image_alt": "Nueva esperanza en la sanidad: jóvenes satisfechos, tics reducidos y sangre curada",
+    "meta_description": "Jóvenes transgénero satisfechos, menos tics gracias a una pulsera y un primer mundial con médula ósea: las noticias de salud de estos días.",
+    "meta_keywords": "Health",
+    "link": "",
+    "source": "BrightNews",
+    "image": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/11/111026_AC_transyouth_main.jpg?w=800",
+    "date": "2026-11-16T18:35:13.199Z",
+    "category": "Health",
+    "refs": [
+      {
+        "id": "1794854058075teinzciwt",
+        "title": "Casi todos los jóvenes transgénero satisfechos con la terapia hormonal"
+      },
+      {
+        "id": "17948161639284hg989uc1",
+        "title": "El dispositivo de muñeca Neupulse reduce casi a la mitad los tics de Tourette en ensayo británico"
+      },
+      {
+        "id": "1794806430494dh8oi8f6e",
+        "title": "Primicia mundial: trasplante de médula ósea cura la anemia aplásica"
+      }
+    ]
+  },
+  {
+    "id": "1794854058075teinzciwt",
+    "title": "Casi todos los jóvenes transgénero satisfechos con la terapia hormonal",
+    "summary": "Una gran mayoría de jóvenes transgénero y de género diverso en Estados Unidos está satisfecha con su decisión de someterse a terapia hormonal de afirmación de género. Así lo demuestra una encuesta realizada a casi 400 jóvenes transgénero y de género diverso, la más grande de su tipo hasta ahora. Aproximadamente el 97 por ciento indicó que fue la decisión...",
+    "image_alt": "Joven transgénero en conversación sobre terapia hormonal",
+    "meta_description": "El 97% de jóvenes transgénero satisfechos con la terapia hormonal, según el mayor estudio realizado hasta ahora, publicado en JAMA Pediatrics.",
+    "meta_keywords": "transgénero, terapia hormonal, gender-affirming care, JAMA Pediatrics, jóvenes transgénero, jóvenes de género diverso",
+    "link": "https://www.sciencenews.org/article/hormone-therapy-transgender-youth",
+    "source": "Sciencenews.org",
+    "image": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/11/111026_AC_transyouth_main.jpg?w=800",
+    "date": "2026-11-16T18:34:18.996Z",
+    "category": "Health",
+    "score": 9
+  },
+  {
+    "id": "1794854037591wmdyahw4b",
+    "title": "Escaladores rescatan a una cría de foca huérfana de un acantilado en Citera",
+    "summary": "En la isla griega de Citera, escaladores encontraron durante una excursión a una cría de foca huérfana al pie de un acantilado en la inaccesible playa de Kalamia. El animal, una foca monje del Mediterráneo críticamente amenazada, probablemente fue separado de su madre por una gran ola cerca de una cueva marina cercana. Los escaladores colocaron la cría de forma...",
+    "image_alt": "Escaladores cargan una cría de foca huérfana en una mochila subiendo un acantilado cerca de la playa de Kalamia en Citera",
+    "meta_description": "Escaladores rescatan a una cría de foca huérfana críticamente amenazada de una playa inaccesible en Citera, Grecia.",
+    "meta_keywords": "rescate de foca, foca monje del Mediterráneo, Citera, Grecia, MOm, Animal Aid Kythira, especie amenazada, rescate en acantilado",
+    "link": "https://www.goodnewsnetwork.org/climbers-lug-endangered-and-orphaned-seal-pup-up-a-cliff-to-safety/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Greek-baby-seal-rescue-NEEDS-CAPTION.jpg",
+    "date": "2026-11-16T18:33:58.679Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
+    "id": "1794854007223k458nb764",
+    "title": "Tokio combate el problema de residuos con papeleras inteligentes",
+    "summary": "Japón es conocido por la ausencia de papeleras públicas, deliberadamente: la dificultad para deshacerse de los residuos desalentaría a las personas de generar basura y evitaría que los contenedores se desbordaran. Para los turistas, sin embargo, esto resulta confuso y frustrante. Tokio eliminó todas las papeleras del metro en 2022. Simultáneamente, ciudades como Tokio y Kioto colaboran con empresas en...",
+    "image_alt": "Una papelera de energía solar con tecnología de compactador en una calle de Tokio",
+    "meta_description": "Tokio aborda el problema de residuos con papeleras de energía solar y robots de basura autónomos en estaciones concurridas.",
+    "meta_keywords": "Tokio, Japón, papeleras, SmaGO, Cartken, residuos robóticos, Shinjuku, turismo Japón",
+    "link": "https://www.goodnewsnetwork.org/tokyo-tackles-trash-troubles-with-new-generation-of-robotic-street-waste-bins/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Smart-solar-powered-trash-compacters-credit-Forectec.jpg",
+    "date": "2026-11-16T18:33:29.035Z",
+    "category": "Tech",
+    "score": 8
+  },
+  {
+    "id": "1794853981739yc0grc843",
+    "title": "Los niveles de PFAS en ríos ingleses descienden un 30%, en peces hasta un 49%",
+    "summary": "Dos «químicos eternos» prohibidos, PFOA y PFOS, se detectan en concentraciones mucho más bajas en ríos y peces ingleses. Una investigación de la UK Environment Agency muestra un descenso del 29% para PFOA y del 30% para PFOS en agua, e incluso del 49% en tejidos de peces. Estas sustancias se utilizaron durante décadas en productos repelentes al agua, retardantes...",
+    "image_alt": "Río en Inglaterra con peces, símbolo de concentraciones decrecientes de PFAS",
+    "meta_description": "Los químicos PFAS descienden significativamente en ríos y peces ingleses, gracias a años de regulación y prohibición de sustancias.",
+    "meta_keywords": "PFAS, químicos eternos, PFOA, PFOS, Inglaterra, ríos, peces, Environment Agency, Convención de Estocolmo",
+    "link": "https://www.goodnewsnetwork.org/30-drop-in-levels-of-forever-chemicals-in-englands-rivers-49-in-fish-brilliant-to-see/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2021/11/River-Thames-London-Tower-Bridge-pubdomain-Pietro-De-Grandi.jpg",
+    "date": "2026-11-16T18:33:04.376Z",
+    "category": "Environment",
+    "score": 9
+  },
+  {
     "id": "17948161639284hg989uc1",
     "title": "El dispositivo de muñeca Neupulse reduce casi a la mitad los tics de Tourette en ensayo británico",
     "summary": "Un ensayo clínico en el Reino Unido con 121 participantes demostró que el uso de un prototipo de dispositivo de muñeca, Neupulse, redujo la frecuencia de tics en un promedio del 25 por ciento. El aparato, desarrollado por la University of Nottingham y su spin-off Neurotherapeutics Ltd, envía pulsos eléctricos rítmicos al nervio de la muñeca que afecta las áreas...",
@@ -2487,89 +2601,5 @@
     "date": "2026-10-30T17:59:52.652Z",
     "category": "Environment",
     "score": 9
-  },
-  {
-    "id": "1793383163484cw5ubl9r4",
-    "title": "El delfín del Irrawaddy en Camboya crece con 6 crías",
-    "summary": "El delfín del río Irrawaddy, una de las especies animales más amenazadas del mundo, muestra un crecimiento esperanzador en Camboya. La temporada de crías más reciente produjo 6 nuevos delfines bebé, lo que eleva la población a lo largo de un tramo de 75 millas del Mekong en el noreste del país a 118 animales. Este grupo camboyano es la...",
-    "image_alt": "Delfín del río Irrawaddy nada en la superficie del río Mekong en Camboya",
-    "meta_description": "Delfín del Irrawaddy en Camboya suma 6 crías: la población crece a 118 animales a lo largo del Mekong.",
-    "meta_keywords": "delfín Irrawaddy, delfín fluvial, Mekong, Camboya, especie amenazada, conservación de la naturaleza, WWF",
-    "link": "https://www.goodnewsnetwork.org/numbers-of-endangered-and-sacred-river-dolphin-grow-by-6-after-successful-breeding-season/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Irrawaddy-dolphin-CC-4.0.-Int-Stefan-Brending.jpg",
-    "date": "2026-10-30T17:59:25.001Z",
-    "category": "Environment",
-    "score": 9
-  },
-  {
-    "id": "1793383136748zh80bxxgg",
-    "title": "Una salida equivocada salva a la familia de acogida Burke con 500 niños de un incendio",
-    "summary": "Un completo desconocido llamado Casey circulaba por la carretera 114 al sur de Lyerly, en el condado de Chattooga, Georgia, siguiendo una indicación errónea de su GPS, cuando vio humo de una casa en llamas. La casa pertenecía a los padres de acogida James y Larita Burke, quienes en ese momento tenían 11 niños y 1 nieto viviendo con ellos....",
-    "image_alt": "Vivienda incendiada de la familia de acogida Burke después del incendio en el condado de Chattooga, Georgia",
-    "meta_description": "Desconocido Casey salva a la familia de acogida Burke y sus niños de un incendio gracias a una salida equivocada del GPS en Georgia.",
-    "meta_keywords": "familia de acogida, incendio, Georgia, condado de Chattooga, James y Larita Burke, rescate, salida equivocada del GPS",
-    "link": "https://www.goodnewsnetwork.org/family-thats-fostered-500-children-saved-from-housefire-thanks-to-strangers-wrong-turn/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/The-Burke-Family-credit-Flourish-Foster-Care-Closet-Support.jpg",
-    "date": "2026-10-30T17:58:58.101Z",
-    "category": "Lifestyle",
-    "score": 8
-  },
-  {
-    "id": "17933830831624gr34qja7",
-    "title": "Tratamiento de caries sin taladro con SDF cerca de la aprobación de la FDA",
-    "summary": "La aprobación de la FDA para el fluoruro de diamina de plata (SDF), un líquido que detiene la caries en niños sin taladro, inyecciones ni anestesia, parece estar cada vez más cerca. Un estudio de Fase III, publicado en JAMA Pediatrics, siguió a 830 niños menores de 6 años en Michigan, Nueva York e Iowa. El SDF, aplicado con un...",
-    "image_alt": "Una muela de leche se trata con fluoruro de diamina de plata mediante un aplicador de esponja",
-    "meta_description": "El SDF detiene la caries en niños sin taladro. La aprobación de la FDA tras un exitoso estudio de Fase III parece inminente.",
-    "meta_keywords": "fluoruro de diamina de plata, SDF, aprobación de la FDA, caries, deterioro dental, odontología pediátrica, sin taladro, JAMA Pediatrics",
-    "link": "https://www.goodnewsnetwork.org/fda-approval-for-drill-free-cavity-care-may-be-imminent-after-great-phase-3-treatment-trial/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2018/01/Teeth-dentist-caveties-by-Ozkan-Guner-lQNl2Vdn0fs-unsplash.jpeg",
-    "date": "2026-10-30T17:58:05.078Z",
-    "category": "Health",
-    "score": 10
-  },
-  {
-    "id": "1793383029816w2djtnyyx",
-    "title": "Etsy lucha contra el contenido de IA engañoso",
-    "summary": "Etsy, el mayor mercado mundial de productos hechos a mano, implementa nuevas normas contra el contenido generado por IA engañoso. El vicepresidente James Ossman sostiene que la confianza entre compradores y vendedores es esencial. Los vendedores deben mostrar a partir de ahora al menos una foto auténtica sin editar de su producto; las fotos adicionales pueden editarse con IA, pero...",
-    "image_alt": "Productos hechos a mano en Etsy con fotos auténticas sin editar",
-    "meta_description": "Etsy implementa normas más estrictas contra el contenido de IA engañoso para proteger a los compradores en su mercado.",
-    "meta_keywords": "Etsy, contenido de IA, inteligencia artificial, comercio electrónico, productos hechos a mano, protección del consumidor, fraude",
-    "link": "https://www.goodnewsnetwork.org/etsy-cracks-down-on-ai-generated-content-to-protect-buyers-from-barrage-of-slop/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Etsys-offices-in-Ireland-CC-3.0.-BY-SA-Cograng-replicated-with-AI-for-humors-sake.jpg",
-    "date": "2026-10-30T17:57:11.374Z",
-    "category": "Tech",
-    "score": 8
-  },
-  {
-    "id": "1793382999661s9jt4nn4o",
-    "title": "Buceadores rescatan un canguro en medio del mar en Boston Bay",
-    "summary": "En Boston Bay, en el sur de Australia, un buceador y su tripulación rescataron a un joven canguro que se encontraba a la deriva en el mar a más de dos kilómetros y medio de la costa. El capitán Ryan Smith fue el primero en avistar al animal. Gracias a la plataforma de buceo del barco, la tripulación pudo acercarse...",
-    "image_alt": "Un joven canguro es rescatado del mar por un buceador en Boston Bay, Australia",
-    "meta_description": "Buceadores rescatan a un canguro agotado que nadaba a más de 3 kilómetros de la costa en Boston Bay, Australia.",
-    "meta_keywords": "rescate de canguro, Boston Bay, Australia, buceadores, Jake Murray, rescate de animales",
-    "link": "https://www.goodnewsnetwork.org/bizarre-rescue-sees-divers-save-kangaroo-that-found-itself-over-a-mile-from-dry-land/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Jake-Murray-and-the-rescued-roo-supplied-to-ABC-by-Jake-Murray.jpg",
-    "date": "2026-10-30T17:56:40.683Z",
-    "category": "Lifestyle",
-    "score": 8
-  },
-  {
-    "id": "17933829729423j7p4881e",
-    "title": "Alumnos de Princeton filtran microplásticos de aguas residuales en Atlantic City",
-    "summary": "Dos alumnos de Princeton, Nathanial Banks y Yidian Liu, han desarrollado a través de su startup PolyGone Technologies un nuevo dispositivo que filtra microplásticos de las aguas residuales. El sistema, inspirado en plantas hidrófobas que repelen el agua pero atraen microplásticos, ya está instalado en Atlantic City. La Atlantic County Utilities Authority (ACUA) en Nueva Jersey prueba el dispositivo durante...",
-    "image_alt": "Sistema de filtración a gran escala para microplásticos instalado en la planta de tratamiento de agua en Atlantic City",
-    "meta_description": "Alumnos de Princeton desarrollan un filtro innovador que elimina microplásticos de aguas residuales, ya activo en Atlantic City.",
-    "meta_keywords": "microplásticos, aguas residuales, PolyGone Technologies, Atlantic City, ACUA, tratamiento de agua, Princeton",
-    "link": "https://www.goodnewsnetwork.org/nature-inspired-tech-prevents-microplastics-entering-atlantic-ocean-through-wastewater/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/credit-supplied-to-WHYY-as-a-courtesy-PolyGone-Systems.jpg",
-    "date": "2026-10-30T17:56:14.730Z",
-    "category": "Environment",
-    "score": 10
   }
 ]
