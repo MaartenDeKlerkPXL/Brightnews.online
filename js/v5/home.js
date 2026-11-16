@@ -25,7 +25,9 @@
     if (document.documentElement.classList.contains('geparkeerd')) return;
     const { t, el } = B;
 
-    // ── Dagoverzicht bovenaan ────────────────────────────────────────────
+    // ── Dagoverzicht, als kop van het blok Gisteren ───────────────────────
+    // (besluit Maarten, 2026-11-16: Vandaag bovenaan; het overzicht gaat over
+    // gisteren en staat dus daar.)
 
     function digestHero(digests, dag, feed) {
         const hoofd = digests[0];
@@ -39,8 +41,9 @@
         label.appendChild(el('span', null, t('v5_dagoverzicht_van', { datum: B.dagLang(dag) })));
         inhoud.appendChild(label);
 
-        // De titel is de h1 en de link (besluit v5 · 04), met de echte dag.
-        const titel = el('h1', 'digest-hero__titel');
+        // De titel is de link (besluit v5 · 04), met de echte dag. Een h3:
+        // het staat onder de h2 Gisteren.
+        const titel = el('h3', 'digest-hero__titel');
         titel.id = 'kop-dagoverzicht';
         titel.appendChild(B.link(B.url.dagoverzicht(dag), 'digest-hero__link', t('v5_goede_nieuws_van', { dag: B.weekdag(dag) })));
         inhoud.appendChild(titel);
@@ -89,34 +92,28 @@
         return kop;
     }
 
-    // ── Een dag: met foto's, alleen koppen, of leeg ──────────────────────
+    // ── Een dag: met foto's, of leeg ─────────────────────────────────────
 
-    function koppen(artikelen, notitieSleutel) {
-        const fragment = document.createDocumentFragment();
-        const lijst = el('ul', 'koppen-raster');
+    // Gisteren: rijen van vier kaarten met foto, zonder grote kaart (die
+    // plek heeft het dagoverzicht).
+    function rijen(artikelen) {
+        const lijst = el('ul', 'editie-raster__rij');
         lijst.setAttribute('role', 'list');
         for (const a of artikelen) {
             const li = el('li');
-            li.appendChild(B.headlineItem(a.title, B.url.artikel(a.id), { categorie: a.category, id: a.id }));
+            li.appendChild(B.storyCard(a, { vorm: 'stacked' }));
             lijst.appendChild(li);
         }
-        fragment.appendChild(lijst);
-        const noot = el('p', 'verwijzing');
-        noot.appendChild(B.icoon('summarize'));
-        noot.appendChild(el('span', null, t(notitieSleutel)));
-        fragment.appendChild(noot);
-        return fragment;
+        return lijst;
     }
 
-    function tekenDag(sectie, { id, titel, dag, artikelen, compact, notitie, metVoortgang, leegTitel, leegTekst }) {
+    function tekenDag(sectie, { id, titel, dag, artikelen, metVoortgang, leegTitel, leegTekst, digest, groot }) {
         sectie.replaceChildren(dagKop(id, titel, dag, artikelen, metVoortgang));
-        sectie.classList.toggle('sectie--compact', compact || artikelen.length === 0);
+        if (digest) sectie.appendChild(digest);
         if (artikelen.length === 0) {
-            sectie.appendChild(B.leeg(leegTitel, leegTekst));
-        } else if (compact) {
-            sectie.appendChild(koppen(artikelen, notitie));
+            if (!digest) sectie.appendChild(B.leeg(leegTitel, leegTekst));
         } else {
-            sectie.appendChild(B.editieRaster(artikelen, 4));
+            sectie.appendChild(groot ? B.editieRaster(artikelen, 4) : rijen(artikelen));
         }
     }
 
@@ -126,11 +123,17 @@
         B.onderwerpLinks(document.getElementById('onderwerpen'));
     }
 
+    // Het zonnetje uit het logo (besluit Maarten, 2026-11-16), in plaats van
+    // een vinkje in een gele cirkel. Vaste, eigen opmaak: geen invoer.
+    const ZON = '<svg class="edition-end__zon" viewBox="0 0 39.6151 40" aria-hidden="true">'
+        + '<path d="M9 28a11 11 0 0 1 22 0H9Z" fill="#FFC933"/>'
+        + '<path d="M35.25 29.5H4.75a1.75 1.75 0 0 0 0 3.5h30.5a1.75 1.75 0 0 0 0-3.5Z" fill="currentColor"/>'
+        + '<path d="M20 12.5V8M30.3 17.7l3.2-3.2M9.7 17.7l-3.2-3.2" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" fill="none"/>'
+        + '</svg>';
+
     function einde(ochtend) {
         const blok = el('div', 'edition-end');
-        const cirkel = el('span', 'icoon-cirkel icoon-cirkel--groot');
-        cirkel.appendChild(B.icoon('check_circle'));
-        blok.appendChild(cirkel);
+        blok.insertAdjacentHTML('beforeend', ZON);
         blok.appendChild(el('h2', 'edition-end__titel', t('v5_bij_titel')));
         blok.appendChild(el('p', null, t(ochtend ? 'v5_bij_tekst_ochtend' : 'v5_bij_tekst')));
         blok.appendChild(B.knop(B.url.archief(), t('v5_eerdere_edities')));
@@ -140,7 +143,7 @@
     // ── Pagina ───────────────────────────────────────────────────────────
 
     const GEDULD = 10000;
-    const NIEUWSBLOKKEN = ['dagoverzicht', 'vandaag', 'gisteren', 'einde'];
+    const NIEUWSBLOKKEN = ['vandaag', 'gisteren', 'einde'];
 
     function metGeduld(belofte) {
         return Promise.race([
@@ -181,31 +184,19 @@
         const vandaag = dagen.get(dag0) || [];
         const gisteren = dagen.get(dag1) || [];
 
-        // Het nieuwste dagoverzicht tot en met vandaag. Meestal dat van
-        // gisteren; het label noemt altijd zijn eigen dag.
-        const kandidaten = feed.filter(a => B.isDigest(a) && a.digest_date <= dag0);
-        const digestDag = B.nieuwsteDigestDag(kandidaten);
-        const digests = digestDag ? B.digestsVan(feed, digestDag) : [];
-
-        const houder = document.getElementById('dagoverzicht');
-        const verborgenKop = document.getElementById('home-kop');
-        if (digests.length) {
-            houder.replaceChildren(digestHero(digests, digestDag, feed));
-            houder.hidden = false;
-            verborgenKop.hidden = true;
-        } else {
-            houder.hidden = true;
-            verborgenKop.hidden = false;
-        }
+        // Het dagoverzicht van gisteren, als kop van dat blok. Is het er
+        // (nog) niet, dan staan daar alleen de verhalen.
+        const digests = B.digestsVan(feed, dag1);
+        const digest = digests.length ? digestHero(digests, dag1, feed) : null;
 
         tekenDag(document.getElementById('vandaag'), {
             id: 'kop-vandaag', titel: t('v5_vandaag'), dag: dag0, artikelen: vandaag,
-            compact: digestDag === dag0, notitie: 'v5_vandaag_noot', metVoortgang: true,
+            metVoortgang: true, groot: true,
             leegTitel: t('v5_leeg_vandaag_titel'), leegTekst: t('v5_leeg_vandaag_tekst'),
         });
         tekenDag(document.getElementById('gisteren'), {
             id: 'kop-gisteren', titel: t('v5_gisteren'), dag: dag1, artikelen: gisteren,
-            compact: digestDag === dag1, notitie: 'v5_gisteren_noot', metVoortgang: false,
+            metVoortgang: false, digest,
             leegTitel: t('v5_geen_verhalen'), leegTekst: t('v5_geen_verhalen_tekst'),
         });
         onderwerpen();
