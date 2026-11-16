@@ -54,9 +54,9 @@
         inhoud.appendChild(B.aanwijzing(t('v5_lees_dagoverzicht')));
         hero.appendChild(inhoud);
 
-        // De foto van een van de verhalen; het merkbeeld als die ontbreekt.
-        const foto = digests.map(d => d.image).find(Boolean);
-        hero.appendChild(B.beeld(foto, 'digest-hero__beeld'));
+        // Altijd het merkbeeld: de foto van een van de verhalen stond er sinds
+        // fase 2 dubbel, want die verhalen staan in hetzelfde blok (fase 5).
+        hero.appendChild(B.merkbeeld('digest-hero__beeld'));
         return hero;
     }
 

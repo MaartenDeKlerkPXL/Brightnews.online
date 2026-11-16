@@ -159,7 +159,7 @@ function main() {
 
         for (const categorie of CATEGORIEEN) {
             const artikelen = alle
-                .filter(a => a.category === categorie && a.id && a.title)
+                .filter(a => a.category === categorie && a.type !== 'digest' && a.id && a.title)
                 .sort((a, b) => String(b.date || '').localeCompare(String(a.date || '')))
                 .slice(0, MAX_PER_PAGINA);
 

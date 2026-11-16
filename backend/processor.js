@@ -407,12 +407,16 @@ const FALLBACK_PAD = '/assets/fallback';
 const maakLijst = (naam, aantal) =>
     Array.from({ length: aantal }, (_, i) => `${FALLBACK_PAD}/${naam}-${i + 1}.jpg`);
 
+// Aantallen gelijk aan assets/fallback/ en RESERVE_PER_CATEGORIE in
+// generate-articles.js. Hier stonden nog de aantallen van vóór de aanvulling
+// van 20 september: Wetenschap gebruikte 4 van de 11 foto's en herhaalde ze
+// daardoor op de onderwerppagina (UX-review fase 5, 2026-11-16).
 const categoryFallbacks = {
     'Tech': maakLijst('tech', 4),
     'Health': maakLijst('health', 5),
-    'Science': maakLijst('science', 4),
-    'Lifestyle': maakLijst('lifestyle', 4),
-    'Environment': maakLijst('environment', 5),
+    'Science': maakLijst('science', 11),
+    'Lifestyle': maakLijst('lifestyle', 9),
+    'Environment': maakLijst('environment', 10),
     'Finance': maakLijst('finance', 4)
 };
 

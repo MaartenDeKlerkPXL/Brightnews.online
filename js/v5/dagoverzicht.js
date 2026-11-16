@@ -77,8 +77,9 @@
 
         const artikel = el('article', 'container artikel');
 
-        // 1 Foto: die van een van de verhalen; het merkbeeld als die ontbreekt.
-        artikel.appendChild(B.beeld(digests.map(d => d.image).find(Boolean), 'artikel__beeld', digests[0].image_alt));
+        // 1 Het merkbeeld, niet de foto van een van de verhalen: die staan
+        // er direct onder (dubbele foto's, UX-review fase 5).
+        artikel.appendChild(B.merkbeeld('artikel__beeld'));
 
         // 2 Kop
         const kop = el('header', 'artikel__kop');

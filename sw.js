@@ -2,7 +2,7 @@
 // v40 haalt de worker CSS en JS eerst van het netwerk (zie fetch hieronder),
 // dus een wijziging is zonder bump te zien, binnen de HTTP-cache van GitHub
 // Pages (max-age=600: tot tien minuten na een deploy).
-const CACHE_NAME = 'brightnews-v40'; // v40 (2026-11-12): precache naar de v5-bestanden; alles netwerk-eerst, de cache is alleen nog offline terugval. v39: overstap naar redesign v5. Oudere versies: zie git log van sw.js.
+const CACHE_NAME = 'brightnews-v41'; // v41 (2026-11-16): altijd bij de server navragen (cache: 'no-cache'), zodat HTML en JS na een deploy nooit uit de pas lopen. v40 (2026-11-12): precache naar de v5-bestanden; alles netwerk-eerst, de cache is alleen nog offline terugval. v39: overstap naar redesign v5. Oudere versies: zie git log van sw.js.
 // Wat de v5-home nodig heeft om offline te openen. Een bestand dat ontbreekt,
 // blokkeert de installatie niet (zie install).
 const ASSETS = [
@@ -57,7 +57,10 @@ self.addEventListener('activate', (event) => {
 // Verzoeken afhandelen. Alleen GET op de eigen site; de rest (Supabase,
 // Google, Stripe) gaat buiten de worker om.
 // Alles netwerk-eerst: bezoekers zien een nieuwe deploy meteen, ook van CSS
-// en JS. De cache is alleen terugval als er geen verbinding is. Er wordt niets
+// en JS. Met cache: 'no-cache' vraagt de browser elke keer even na of een
+// bestand nog klopt (een 304 is klein). Zonder dat haalde fetch() een JS-bestand
+// tot 10 minuten uit de HTTP-cache van GitHub Pages, en kreeg een terugkerende
+// bezoeker vlak na een deploy nieuwe HTML met oude JS (UX-review fase 5). De cache is alleen terugval als er geen verbinding is. Er wordt niets
 // dynamisch bijgecachet behalve HTML zonder querystring, zodat nieuws-JSON
 // en premium-tekst nooit in de cache belanden.
 self.addEventListener('fetch', (event) => {
@@ -69,7 +72,10 @@ self.addEventListener('fetch', (event) => {
 
     if (isHtml) {
         event.respondWith(
-            fetch(event.request)
+            // Een navigatie kan niet met extra opties opnieuw verpakt worden:
+            // daarom een nieuw verzoek op hetzelfde adres. redirect 'manual'
+            // geeft een doorverwijzing ongewijzigd terug aan de browser.
+            fetch(new Request(event.request.url, { cache: 'no-cache', credentials: 'same-origin', redirect: 'manual' }))
                 .then((response) => {
                     // Elke ?id=/?v=-variant apart cachen liet de cache
                     // onbegrensd groeien (duizenden entries).
@@ -88,7 +94,7 @@ self.addEventListener('fetch', (event) => {
     // terugval bij de HTML van de laatste keer past.
     const isAsset = ASSETS.includes(url.pathname) && !url.search;
     event.respondWith(
-        fetch(event.request)
+        fetch(event.request, { cache: 'no-cache' })
             .then((response) => {
                 if (isAsset && response.ok) {
                     const kopie = response.clone();

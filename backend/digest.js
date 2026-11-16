@@ -280,7 +280,9 @@ Antwoord UITSLUITEND met geldig JSON — alinea-scheidingen binnen "tekst" schri
                         meta_keywords: onderwerpen,
                         link: '',
                         source: 'BrightNews',
-                        image: top[0].image || null,
+                        // Geen foto: een dagoverzicht krijgt overal het merkbeeld,
+                        // anders staat de foto van een verhaal er dubbel (fase 5).
+                        image: null,
                         date: new Date().toISOString(),
                         // Geen categorie: het overzicht gaat over alle onderwerpen
                         // en staat dus niet op een onderwerppagina.
