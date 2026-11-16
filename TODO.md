@@ -195,12 +195,48 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      paywall, inloggen, Premium, Contact en Feedback, het archief, de
      onderwerpen en weekthema's, en de console op fouten. Daarna een
      review-ronde over alle wijzigingen van fase 1 t/m 4 samen.
+     **Mee te nemen in fase 5 (gevonden op 2026-11-16):**
+     - **Dubbele foto's.** Vier soorten, gemeten op 2026-11-16:
+       1. *Dagoverzicht en verhaal:* alle 23 dagoverzichten gebruiken de foto
+          van een van hun eigen verhalen (`digest.js` neemt de foto van een
+          bron). Op de home staan ze sinds fase 2 in verschillende blokken,
+          maar op een onderwerppagina staan ze naast elkaar. Mogelijke oplossing:
+          dagoverzichten van de onderwerppagina's weglaten (ze hebben een
+          eigen plek), of het dagoverzicht een eigen merkbeeld geven.
+       2. *Onderwerppagina's:* 20 van de 30 tonen dezelfde foto meer dan eens,
+          tot 12 keer op `de/lifestyle.html`. Oorzaak: punt 1 (dagoverzicht en
+          zijn verhalen op dezelfde pagina).
+       3. *Reservefoto's in de feed:* 3 foto's
+          (`science-1/2/4.jpg`) staan bij meerdere artikelen die geen eigen
+          foto hadden. Klein, maar zichtbaar als ze naast elkaar komen.
+       4. *Archief:* 113 foto's komen op meer dan één artikelpagina voor,
+          samen op 375 van de 852 Nederlandse pagina's. Vooral de oude
+          Unsplash-reservefoto's (één tot 19 keer). Per pagina niet storend,
+          wel op een onderwerppagina of in "Meer goed nieuws". Oplossing pas
+          na de lancering: meer reservefoto's, of een merkbeeld in plaats
+          van een herhaalde stockfoto.
+     - **Dagoverzicht te laat:** het dagoverzicht van dag X komt pas de avond
+       van X+1 (rond 19:30), en op 13 en 15 november kwam er geen. Sinds
+       fase 2 staat het in het blok Gisteren, dus overdag ontbreekt het daar.
+       Hoort bij fase 4 (`digest.js`: maken in de eerste run na middernacht,
+       Nederlandse tijd).
+     - **HTML en JS kunnen even uit de pas lopen:** GitHub Pages laat
+       bestanden tot 10 minuten cachen. Een terugkerende bezoeker kan vlak na
+       een deploy nieuwe HTML met de oude JS krijgen, en dan geeft de pagina
+       een laadfout (lokaal gezien bij fase 2). Oplossing: een versie in de
+       scriptadressen (`?v=…`, door stempel-schil.js), of scripts die een
+       ontbrekend element overslaan.
   - ✅ *Fase 1 klaar op 2026-11-16:*
     - menu-lijntjes alleen bij hover (de groene lijn blijft);
     - de header blijft staan, een lang mobiel menu scrolt binnen zichzelf;
     - overal "Onderwerpen" en "Weekthema's" (vijf talen; `schil_categorieen` is weg);
     - een onderwerpkeuze bovenaan elke onderwerppagina;
     - "Probeer Premium" op Contact, Feedback en 404 secundair in plaats van verborgen.
+  - ✅ *Fase 2 klaar op 2026-11-16:*
+    - een introzin bovenaan de home (scrolt mee weg);
+    - Vandaag bovenaan;
+    - Gisteren met foto's en het dagoverzicht als kop;
+    - het zonnetje uit het logo bij "Je bent helemaal bij".
 
 - [ ] **80. Branding vóór de lancering: favicon, deelafbeelding en sociale
   media in de v5-stijl.** *(Maarten, 2026-11-12)* De site is v5, maar wat

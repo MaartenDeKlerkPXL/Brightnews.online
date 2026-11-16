@@ -54,8 +54,14 @@
 }
 
 /* Dagoverzicht bovenaan de homepage: 40 px boven en onder. */
-.home-dagoverzicht {
-    padding-block: var(--section-xs);
+/* De introzin bovenaan de home, voor wie voor het eerst komt. */
+.home-intro {
+    margin: 0;
+    padding-top: var(--section-xs);
+    padding-bottom: var(--spacing-2xl);
+    color: var(--text-secondary);
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-28);
 }
 
 

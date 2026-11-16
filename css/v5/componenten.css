@@ -1186,6 +1186,13 @@ body[data-pagina="bedankt"] :is(.navbar, .mobiel-menu) .btn--primary {
    Sluit de editie af in plaats van een eindeloze lijst. Eén route verder:
    het archief. */
 
+/* Het zonnetje uit het logo bovenaan het einde van de editie. */
+.edition-end__zon {
+    width: 64px;
+    height: 64px;
+    color: var(--text-primary);
+}
+
 .edition-end {
     display: flex;
     flex-direction: column;
