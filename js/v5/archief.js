@@ -35,7 +35,7 @@
             koppen.setAttribute('role', 'list');
             verhalen.slice(0, 3).forEach(v => {
                 const li = el('li');
-                li.appendChild(B.link(B.url.artikel(v.id), 'archive-day__kop', v.titel));
+                li.appendChild(B.link(B.url.artikel(v.id, v.slug), 'archive-day__kop', v.titel));
                 koppen.appendChild(li);
             });
             blok.appendChild(koppen);

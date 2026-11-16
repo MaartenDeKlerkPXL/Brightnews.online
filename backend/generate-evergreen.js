@@ -61,7 +61,7 @@ async function vertaalThema(moeder, lang) {
     for (let poging = 0; poging < 2; poging++) {
         const antwoord = await aiCall({
             rol: 'vertalen',
-            prompt: `Vertaal deze BrightNews-themapagina van het Nederlands naar het ${TAAL_NAMEN[lang]}. Vertaal natuurlijk en journalistiek, als iemand die de doeltaal als moedertaal schrijft. Regels (steekproef 2026-09-10): (1) behoud het geslacht uit het origineel — kop en tekst mogen elkaar nooit tegenspreken; (2) vertaal namen van organisaties, merken, producten en instellingen NIET; (3) voeg NIETS toe en laat NIETS weg; (4) volg de titelconventie van de doeltaal — Frans en Spaans gebruiken gewone zinsstijl, geen hoofdletter op elk woord; (5) laat verwijzingen tussen blokhaken zoals [1] exact staan; (6) schrijf aanhalingstekens bínnen een tekstveld als typografische tekens („…“, ‘…’ of »…«) en nooit als kaal recht teken " — dat maakt het JSON ongeldig. "meta_d" blijft maximaal 155 tekens; het aantal items en hun "nr" blijven exact gelijk.
+            prompt: `Vertaal deze BrightNews-themapagina van het Nederlands naar het ${TAAL_NAMEN[lang]}. Vertaal natuurlijk en journalistiek, als iemand die de doeltaal als moedertaal schrijft. Regels (steekproef 2026-09-10): (1) behoud het geslacht uit het origineel — kop en tekst mogen elkaar nooit tegenspreken; (2) vertaal namen van organisaties, merken, producten en instellingen NIET; (3) voeg NIETS toe en laat NIETS weg; (4) volg de titelconventie van de doeltaal: Engels, Frans en Spaans gebruiken gewone zinsstijl, Duits alleen hoofdletters op zelfstandige naamwoorden; nooit een hoofdletter op elk woord; (5) laat verwijzingen tussen blokhaken zoals [1] exact staan; (6) schrijf aanhalingstekens bínnen een tekstveld als typografische tekens („…“, ‘…’ of »…«) en nooit als kaal recht teken " — dat maakt het JSON ongeldig. "meta_d" blijft maximaal 155 tekens; het aantal items en hun "nr" blijven exact gelijk.
 INVOER:
 ${JSON.stringify(moeder)}
 Antwoord UITSLUITEND met geldig JSON in exact dezelfde vorm — regeleindes binnen een tekstveld als \\n\\n: {"titel": "..", "intro": "..", "meta_d": "..", "items": [{"nr": 1, "waarom": ".."}]}`,
@@ -202,7 +202,7 @@ async function main() {
         const antwoord = await aiCall({
             rol: 'schrijven',
             prompt: `Je bent redacteur bij BrightNews, een nieuwssite met uitsluitend positief nieuws. Schrijf in het Nederlands een themapagina over de beste ${categorie}-verhalen van deze week, op basis van de ${artikelen.length} berichten hieronder. Doel: een blijvende overzichtspagina die via zoekmachines gevonden wordt.
-- "titel": aantrekkelijke, zoekbare titel (bevat het thema, niet het woord "inspirerend", geen woorden langer dan 24 letters)
+- "titel": aantrekkelijke, zoekbare titel in Nederlandse zinsstijl: alleen het eerste woord en eigennamen met een hoofdletter (dus "Glimwormen keren terug in Nosterfield", niet "Glimwormen Keren Terug In Nosterfield") (bevat het thema, niet het woord "inspirerend", geen woorden langer dan 24 letters)
 - "intro": 150-250 woorden die het thema van deze week vangen, in alinea's gescheiden door een lege regel; gebruik UITSLUITEND informatie uit de berichten, verzin niets
 - "items": voor elk bericht (nr 1 t/m ${artikelen.length}) één concrete zin "waarom" die nieuwsgierig maakt
 - "meta_d": SEO-metabeschrijving van maximaal 155 tekens

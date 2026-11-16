@@ -498,6 +498,21 @@ function main() {
         teSchrijven.push([id, perTaal, slugsPerTaal]);
     }
 
+    // De slug ook in de nieuws-JSON (TODO 78): dan linken de kaarten op de
+    // site direct naar de statische pagina, zonder omweg via artikel.html.
+    for (const lang of TALEN) {
+        const pad = path.join(root, `data/news_${lang}.json`);
+        if (!fs.existsSync(pad)) continue;
+        const items = JSON.parse(fs.readFileSync(pad, 'utf8'));
+        let veranderd = false;
+        for (const a of items) {
+            const slug = a.id && manifest.articles[a.id]?.slugs?.[lang];
+            // Zelfde regel als de veilige bestandsnaam hieronder: geen pagina, geen link.
+            if (slug && /^[a-z0-9][a-z0-9-]*$/.test(`${slug}-${a.id}`) && a.slug !== slug) { a.slug = slug; veranderd = true; }
+        }
+        if (veranderd) fs.writeFileSync(pad, `${JSON.stringify(items, null, 2)}\n`);
+    }
+
     // Tweede ronde: schrijven, nu mét een complete burenindex.
     // De uitsluitlijst (punt 3) hoort ook hiér gehonoreerd te worden: een
     // uitgesloten artikel dat nog in de actuele nieuws-JSON staat wordt

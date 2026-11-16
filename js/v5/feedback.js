@@ -39,6 +39,7 @@
     const email = $('fb-email');
     const artikelId = B.param('artikel');
     let artikel = null;
+    let artikelTaal = null;   // de feed is per taal: de slug hoort bij deze taal
     let verstuurdMet = null;
 
     function veldFout(veld, melding, aan, hulp) {
@@ -110,7 +111,7 @@
         $('fb-naar-vandaag').href = B.metTestdag(B.url.home());
 
         if (artikel) {
-            const terug = B.metTestdag(B.url.artikel(artikel.id));
+            const terug = B.metTestdag(B.url.artikel(artikel.id, B.taal() === artikelTaal ? artikel.slug : null));
             [$('fb-terug'), $('fb-terug-artikel')].forEach(a => { a.href = terug; a.hidden = false; });
             const cat = B.categorieLabel(artikel.category);
             document.querySelectorAll('[data-artikel]').forEach(vak => {
@@ -211,6 +212,7 @@
         try {
             const feed = await B.laadFeed();
             artikel = feed.find(a => String(a.id) === artikelId) || null;
+            artikelTaal = B.taal();
         } catch {
             artikel = null;
         }

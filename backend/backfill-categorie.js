@@ -53,7 +53,8 @@ function main() {
     for (const [id, e] of Object.entries(arts)) {
         if (e.category) continue;
         const m = /^dg-\d+-([a-z]+)$/.exec(id);
-        if (m) { e.category = hoofdletter(m[1]); bron.digestId++; }
+        // dg-…-dag (sinds fase 4) gaat over alle onderwerpen: geen categorie.
+        if (m && m[1] !== 'dag') { e.category = hoofdletter(m[1]); bron.digestId++; }
     }
 
     // 3. de reservefoto in de Nederlandse pagina

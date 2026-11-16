@@ -253,6 +253,18 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
     - **Maarten, één keer:** in Supabase → Project Settings → Vault een secret
       `resend_api_key` met de Resend-sleutel. Tot dan gaan contactberichten mee
       in de verzamelmail van de ochtend.
+  - ✅ *Fase 4 gebouwd op 2026-11-16 (branch `maarten/ux-fase4-pipeline`):*
+    - één dagoverzicht per dag over alle onderwerpen (`dg-YYYYMMDD-dag`,
+      zonder categorie, dus niet op de onderwerppagina's), alleen met de
+      verhalen van die dag, daggrens Nederlandse tijd; gemaakt in de nachtrun
+      (0:00 UTC = 01:00/02:00 in Nederland), minimaal 2 verhalen, bij 2–3
+      verhalen een korter overzicht;
+    - `digest-prompt.md` v2: geen datum of weekdag in de tekst, titel in zinsstijl;
+    - Nederlandse titels in zinsstijl (artikel-, thema- en dagoverzichtprompt),
+      en de vertaalregel geldt nu voor alle talen;
+    - directe links naar de artikelpagina's (TODO 78): `generate-articles.js`
+      zet de slug in `data/news_<taal>.json`, `B.url.artikel(id, slug)`.
+    - Eerste echte dagoverzicht: de nachtrun van 17 november (over 16 november).
 
 - [ ] **80. Branding vóór de lancering: favicon, deelafbeelding en sociale
   media in de v5-stijl.** *(Maarten, 2026-11-12)* De site is v5, maar wat

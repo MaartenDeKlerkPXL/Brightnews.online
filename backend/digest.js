@@ -1,11 +1,16 @@
-// Dagelijks categorie-artikel ("digest"): één AI-geschreven artikel per
-// categorie over de top-artikelen van gisteren (UTC), met [n]-verwijzingen
-// naar de besproken artikelen. Doel: interesse wekken (besluit 2026-09-05).
+// Het dagoverzicht ("digest"): één AI-geschreven artikel per dag over de
+// verhalen van gisteren, met [n]-verwijzingen naar de besproken artikelen.
+// Doel: interesse wekken (besluit 2026-09-05).
 //
-// Draait elke Action-run maar is idempotent: bestaat de digest van gisteren
-// voor een categorie al in news_nl.json, dan wordt hij overgeslagen. De
-// nachtcron (0:00 UTC) maakt ze dus normaal; de middagrun vangt een
-// mislukte nacht op. Prompt/tone-of-voice is itereerbaar via
+// Sinds UX-review fase 4 (TODO 83, 2026-11-16): één overzicht per dag, over
+// alle onderwerpen samen (geen categorie), met alleen de verhalen van die dag.
+// Een dag loopt van 00:00 tot 24:00 Nederlandse tijd, net als Vandaag en
+// Gisteren op de site. Daarvóór: één per categorie, uit de laatste 3 dagen,
+// op UTC; dat gaf soms twee overzichten op één dag en soms geen.
+//
+// Draait elke Action-run maar is idempotent: bestaat er al een overzicht van
+// gisteren, dan gebeurt er niets. De nachtrun (0:00 UTC, dus 01:00 of 02:00 in
+// Nederland) maakt hem normaal; de middagrun vangt een mislukte nacht op. Prompt/tone-of-voice is itereerbaar via
 // digest-prompt.md (zelfde lus als selectie-prompt.md); elke digest logt
 // zijn prompthash in data/digest-log.json.
 //
@@ -25,9 +30,10 @@ const { verwijderVerweesdeDigests } = require('./digest-opruiming');
 
 const TALEN = ['nl', 'en', 'de', 'fr', 'es'];
 const TAAL_NAMEN = { nl: 'Nederlands', en: 'Engels', de: 'Duits', fr: 'Frans', es: 'Spaans' };
-const TAAL_LOCALES = { nl: 'nl-NL', en: 'en-GB', de: 'de-DE', fr: 'fr-FR', es: 'es-ES' };
+// Regels uit de vertaalsteekproef (2026-09-10); de titelregel sinds fase 4.
+const VERTAAL_OPDRACHT = lang => `Vertaal dit BrightNews-dagoverzicht van het Nederlands naar het ${TAAL_NAMEN[lang]}. Vertaal natuurlijk en journalistiek, als iemand die de doeltaal als moedertaal schrijft. Regels: (1) behoud het geslacht uit het origineel — kop en tekst mogen elkaar nooit tegenspreken; (2) vertaal namen van organisaties, merken, producten en instellingen NIET; (3) voeg NIETS toe en laat NIETS weg; (4) volg de titelconventie van de doeltaal: Engels, Frans en Spaans gebruiken gewone zinsstijl, Duits alleen hoofdletters op zelfstandige naamwoorden; nooit een hoofdletter op elk woord; (5) laat verwijzingen tussen blokhaken zoals [1] exact staan; (6) schrijf aanhalingstekens bínnen een tekstveld als typografische tekens („…“, ‘…’ of »…«) en nooit als kaal recht teken " — dat maakt het JSON ongeldig; (7) noem geen datum of weekdag die niet in het origineel staat. Behoud de alinea-indeling (lege regels). "meta_d" blijft maximaal 155 tekens.`;
 
-const MIN_ARTIKELEN = 3;   // minder dan dit → geen digest voor die categorie
+const MIN_ARTIKELEN = 2;   // minder dan dit → geen dagoverzicht (een dag heeft er 2 tot 8)
 const BASIS_TOP = 5;       // "top 5", …
 const MAX_ARTIKELEN = 8;   // …aangevuld met extra 9+-scoorders tot max 8
 const TEASER_WOORDEN = 100; // ruimere teaser dan gewone artikelen (60)
@@ -99,16 +105,31 @@ async function haalVolledigeTeksten(ids, lang, perTaalIndex) {
     });
 }
 
-function bouwPrompt(lang, categorie, datum, items) {
-    const datumTekst = datum.toLocaleDateString(TAAL_LOCALES[lang], {
-        year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC',
-    });
+// Een dag met weinig verhalen krijgt een korter overzicht: anders vult de AI
+// aan met algemeenheden. [prompt, ondergrens, bovengrens] in woorden.
+function lengte(aantal) {
+    return aantal <= 3 ? ['200 tot 300', 150, 450] : ['350 tot 500', 250, 700];
+}
+
+// De dag (YYYY-MM-DD) van een moment, in Nederlandse tijd, zoals dagVan() in
+// js/v5/gedeeld.js.
+const dagFormaat = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Europe/Amsterdam', year: 'numeric', month: '2-digit', day: '2-digit',
+});
+const dagVan = moment => dagFormaat.format(new Date(moment));
+
+// Gisteren in Nederland. Via 12:00 UTC van vandaag, zodat zomertijd geen
+// dag kan overslaan.
+function gisterenVan(nu) {
+    return dagVan(Date.parse(`${dagVan(nu)}T12:00:00Z`) - 24 * 3600 * 1000);
+}
+
+function bouwPrompt(lang, items) {
     const itemTekst = items.map((it, i) =>
-        `[${i + 1}] Titel: ${it.titel}\nTekst: ${it.tekst}`).join('\n\n');
+        `[${i + 1}] Onderwerp: ${it.categorie}\nTitel: ${it.titel}\nTekst: ${it.tekst}`).join('\n\n');
     return promptSjabloon
         .replaceAll('{TAAL}', TAAL_NAMEN[lang])
-        .replaceAll('{CATEGORIE}', categorie)
-        .replaceAll('{DATUM}', datumTekst)
+        .replaceAll('{WOORDEN}', lengte(items.length)[0])
         .replaceAll('{AANTAL}', String(items.length))
         // Functie-vorm: een string-vervanger interpreteert $-patronen ($&, $'
         // e.d.) in de artikeltekst en zou de prompt daarmee stil verminken.
@@ -140,10 +161,9 @@ async function main() {
         process.exit(1);
     }
 
-    // "Die dag" = gisteren in UTC; de nachtcron draait vlak ná middernacht.
     const nu = new Date();
-    const gisteren = new Date(Date.UTC(nu.getUTCFullYear(), nu.getUTCMonth(), nu.getUTCDate() - 1));
-    const dagString = gisteren.toISOString().slice(0, 10);
+    const dagString = gisterenVan(nu);
+    const digestId = `dg-${dagString.replaceAll('-', '')}-dag`;
 
     const perTaalIndex = {};
     const languages = {};
@@ -154,159 +174,140 @@ async function main() {
 
     const digestLog = await fs.readJson('./data/digest-log.json').catch(() => []);
 
-    // Kandidaten: de afgelopen 3 dagen i.p.v. alleen gisteren (2026-09-09):
-    // onder drempel 8 levert een dag 2–6 artikelen en haalde geen enkele
-    // categorie nog de digest-grens van 3. Artikelen die al in een eerder
-    // dagoverzicht besproken zijn, tellen niet opnieuw mee (digest-log kent
-    // per digest de ids). Idempotentie blijft per categorie per dag.
-    const VENSTER_MS = 3 * 24 * 3600 * 1000;
+    // Kandidaten: alle verhalen van die dag, over alle onderwerpen. Een
+    // verhaal dat al in een eerder overzicht stond (digest-log kent de ids),
+    // telt niet opnieuw mee.
     const alBesproken = new Set(digestLog.flatMap(d => d.ids ?? []));
-    const perCategorie = {};
-    for (const artikel of languages.nl) {
-        if (artikel.type === 'digest') continue;
-        if (alBesproken.has(artikel.id)) continue;
-        const leeftijd = nu - new Date(artikel.date || 0);
-        if (!(leeftijd >= 0 && leeftijd <= VENSTER_MS)) continue;
-        (perCategorie[artikel.category || 'General'] ??= []).push(artikel);
-    }
-    let mislukteCategorieenOpRij = 0;
+    const kandidaten = languages.nl.filter(a => a.type !== 'digest' && a.date
+        && dagVan(a.date) === dagString && !alBesproken.has(a.id));
 
-    for (const [categorie, kandidaten] of Object.entries(perCategorie)) {
-        const digestId = `dg-${dagString.replaceAll('-', '')}-${categorie.toLowerCase()}`;
-        if (perTaalIndex.nl[digestId]) continue; // al gemaakt (idempotent)
-        if (kandidaten.length < MIN_ARTIKELEN) {
-            console.log(`ℹ️ ${categorie}: ${kandidaten.length} artikel(en) op ${dagString} — te weinig voor een digest.`);
-            continue;
-        }
+    // shortcut: alleen gisteren. Mislukken beide runs van vandaag, dan krijgt
+    // gisteren geen overzicht meer (controleer-run.js slaat dan alarm). Pas
+    // inhalen als dat vaker gebeurt.
+    // Idempotent: één overzicht per dag. Ook een overzicht van vóór fase 4
+    // (één per categorie) telt, anders staan er op de overgangsdag twee.
+    if (languages.nl.some(a => a.type === 'digest' && a.digest_date === dagString)) {
+        console.log(`ℹ️ Dagoverzicht van ${dagString} bestaat al.`);
+    } else if (kandidaten.length < MIN_ARTIKELEN) {
+        console.log(`ℹ️ ${kandidaten.length} verhaal/verhalen op ${dagString}: te weinig voor een dagoverzicht.`);
+    } else {
         const top = kiesTop(kandidaten);
-        console.log(`📰 Digest ${categorie} ${dagString}: ${top.length} artikelen (scores: ${top.map(a => a.score ?? '-').join(', ')})`);
+        const [, ondergrens, bovengrens] = lengte(top.length);
+        console.log(`📰 Dagoverzicht ${dagString}: ${top.length} artikelen (scores: ${top.map(a => a.score ?? '-').join(', ')})`);
         if (dryRun) {
-            top.forEach((a, i) => console.log(`   [${i + 1}] ${a.title}`));
-            continue;
-        }
-
-        // Circuitbreaker: falen twee categorieën volledig achter elkaar
-        // (bijv. aanhoudende 429's), dan is doorproberen zinloos.
-        if (mislukteCategorieenOpRij >= 2) {
-            console.error('🛑 Twee categorieën op rij mislukt — digest-run gestopt; volgende run probeert opnieuw.');
-            break;
-        }
-
-        try {
-            const ids = top.map(a => a.id);
-            // Moeder + vertaal: één Nederlandse moedertekst (rol 'schrijven'),
-            // daarna per taal één vertaalcall (rol 'vertalen'). De
-            // [n]-verwijzingen moeten de vertaling exact overleven.
-            const perTaal = {};
-            const nlTeksten = await haalVolledigeTeksten(ids, 'nl', perTaalIndex);
-            const nlItems = ids.map((id, i) => ({
-                titel: perTaalIndex.nl?.[id]?.title || top[i].title,
-                tekst: nlTeksten[i],
-            }));
-            await wacht(1000);
-            const moederAntwoord = await aiCall({
-                rol: 'schrijven',
-                prompt: bouwPrompt('nl', categorie, gisteren, nlItems),
-            });
-            const moeder = verwerkAIResponse(moederAntwoord.tekst);
-            const moederWoorden = telWoorden(moeder?.tekst);
-            if (moeder?.titel && !verwijzingenKloppen(moeder.tekst, ids.length)) {
-                console.error(`🔎 Rauwe respons (kop): ${String(moederAntwoord.tekst).replace(/\s+/g, ' ').slice(0, 300)}`);
-                throw new Error(`digest-verwijzingen kloppen niet: [${[...verwijzingen(moeder.tekst)].join(',')}] bij ${ids.length} bronnen`);
-            }
-            if (!moeder?.titel || moederWoorden < 250 || moederWoorden > 700) {
-                // Diagnose (2026-09-06): nachtcron 1 verloor Health+Tech aan
-                // parse-uitval zonder spoor — log de kop van de rauwe respons.
-                console.error(`🔎 Rauwe respons (kop): ${String(moederAntwoord.tekst).replace(/\s+/g, ' ').slice(0, 300)}`);
-                throw new Error(`onbruikbare digest-moedertekst: ${moederWoorden} woorden`);
-            }
-            perTaal.nl = {
-                titel: String(moeder.titel).trim(),
-                tekst: String(moeder.tekst).trim(),
-                meta_d: String(moeder.meta_d || '').slice(0, 155),
-                tokens: moederAntwoord.tokens,
-            };
-            for (const lang of TALEN.filter(l => l !== 'nl')) {
-                // Twee pogingen per taal (2026-09-09): zelfde stochastische
-                // parse-uitval als in de artikel-vertaalstap.
-                for (let poging = 0; poging < 2; poging++) {
-                    await wacht(1000);
-                    const antwoord = await aiCall({
-                        rol: 'vertalen',
-                        prompt: `Vertaal dit BrightNews-dagoverzicht van het Nederlands naar het ${TAAL_NAMEN[lang]}. Vertaal natuurlijk en journalistiek, als iemand die de doeltaal als moedertaal schrijft. Regels (steekproef 2026-09-10): (1) behoud het geslacht uit het origineel — kop en tekst mogen elkaar nooit tegenspreken; (2) vertaal namen van organisaties, merken, producten en instellingen NIET; (3) voeg NIETS toe en laat NIETS weg; (4) volg de titelconventie van de doeltaal — Frans en Spaans gebruiken gewone zinsstijl, geen hoofdletter op elk woord; (5) laat verwijzingen tussen blokhaken zoals [1] exact staan; (6) schrijf aanhalingstekens bínnen een tekstveld als typografische tekens („…“, ‘…’ of »…«) en nooit als kaal recht teken " — dat maakt het JSON ongeldig. Behoud de alinea-indeling (lege regels). "meta_d" blijft maximaal 155 tekens.
+            top.forEach((a, i) => console.log(`   [${i + 1}] ${a.category}: ${a.title}`));
+        } else {
+            try {
+                const ids = top.map(a => a.id);
+                // Moeder + vertaal: één Nederlandse moedertekst (rol 'schrijven'),
+                // daarna per taal één vertaalcall (rol 'vertalen'). De
+                // [n]-verwijzingen moeten de vertaling exact overleven.
+                const perTaal = {};
+                const nlTeksten = await haalVolledigeTeksten(ids, 'nl', perTaalIndex);
+                const nlItems = ids.map((id, i) => ({
+                    categorie: top[i].category || 'General',
+                    titel: perTaalIndex.nl?.[id]?.title || top[i].title,
+                    tekst: nlTeksten[i],
+                }));
+                await wacht(1000);
+                const moederAntwoord = await aiCall({ rol: 'schrijven', prompt: bouwPrompt('nl', nlItems) });
+                const moeder = verwerkAIResponse(moederAntwoord.tekst);
+                const moederWoorden = telWoorden(moeder?.tekst);
+                if (moeder?.titel && !verwijzingenKloppen(moeder.tekst, ids.length)) {
+                    console.error(`🔎 Rauwe respons (kop): ${String(moederAntwoord.tekst).replace(/\s+/g, ' ').slice(0, 300)}`);
+                    throw new Error(`digest-verwijzingen kloppen niet: [${[...verwijzingen(moeder.tekst)].join(',')}] bij ${ids.length} bronnen`);
+                }
+                if (!moeder?.titel || moederWoorden < ondergrens || moederWoorden > bovengrens) {
+                    // Diagnose (2026-09-06): log de kop van de rauwe respons.
+                    console.error(`🔎 Rauwe respons (kop): ${String(moederAntwoord.tekst).replace(/\s+/g, ' ').slice(0, 300)}`);
+                    throw new Error(`onbruikbare digest-moedertekst: ${moederWoorden} woorden`);
+                }
+                perTaal.nl = {
+                    titel: String(moeder.titel).trim(),
+                    tekst: String(moeder.tekst).trim(),
+                    meta_d: String(moeder.meta_d || '').slice(0, 155),
+                    tokens: moederAntwoord.tokens,
+                };
+                for (const lang of TALEN.filter(l => l !== 'nl')) {
+                    // Twee pogingen per taal (2026-09-09): zelfde stochastische
+                    // parse-uitval als in de artikel-vertaalstap.
+                    for (let poging = 0; poging < 2; poging++) {
+                        await wacht(1000);
+                        const antwoord = await aiCall({
+                            rol: 'vertalen',
+                            prompt: `${VERTAAL_OPDRACHT(lang)}
 INVOER:
 ${JSON.stringify({ titel: perTaal.nl.titel, tekst: perTaal.nl.tekst, meta_d: perTaal.nl.meta_d })}
 Antwoord UITSLUITEND met geldig JSON — alinea-scheidingen binnen "tekst" schrijf je als \\n\\n, nooit als echt regeleinde: {"titel": "..", "tekst": "..", "meta_d": ".."}`,
-                    });
-                    const data = verwerkAIResponse(antwoord.tekst);
-                    const woorden = telWoorden(data?.tekst);
-                    // De verwijzingen moeten de vertaling exact overleven —
-                    // de bronnenlijst staat in élke taal onder het artikel.
-                    if (data?.titel && woorden >= 200 && verwijzingenKloppen(data.tekst, ids.length)) {
-                        perTaal[lang] = {
-                            titel: String(data.titel).trim(),
-                            tekst: String(data.tekst).trim(),
-                            meta_d: String(data.meta_d || '').slice(0, 155),
-                            tokens: antwoord.tokens,
-                        };
-                        break;
-                    }
-                    console.error(`🔎 Digest-vertaling ${lang} onbruikbaar (poging ${poging + 1}), rauwe kop: ${String(antwoord.tekst).replace(/\s+/g, ' ').slice(0, 200)}`);
-                    if (poging === 1) {
-                        throw new Error(`onbruikbare digest-vertaling (${lang}): ${woorden} woorden`);
+                        });
+                        const data = verwerkAIResponse(antwoord.tekst);
+                        const woorden = telWoorden(data?.tekst);
+                        // De verwijzingen moeten de vertaling exact overleven:
+                        // de bronnenlijst staat in élke taal onder het artikel.
+                        if (data?.titel && woorden >= ondergrens * 0.8 && verwijzingenKloppen(data.tekst, ids.length)) {
+                            perTaal[lang] = {
+                                titel: String(data.titel).trim(),
+                                tekst: String(data.tekst).trim(),
+                                meta_d: String(data.meta_d || '').slice(0, 155),
+                                tokens: antwoord.tokens,
+                            };
+                            break;
+                        }
+                        console.error(`🔎 Digest-vertaling ${lang} onbruikbaar (poging ${poging + 1}), rauwe kop: ${String(antwoord.tekst).replace(/\s+/g, ' ').slice(0, 200)}`);
+                        if (poging === 1) throw new Error(`onbruikbare digest-vertaling (${lang}): ${woorden} woorden`);
                     }
                 }
-            }
 
-            // Atomair: eerst álle talen in articles_full, dan pas publiceren.
-            for (const lang of TALEN) {
-                const { error } = await supabaseAdmin.from('articles_full').upsert({
-                    id: digestId, lang, full_text: perTaal[lang].tekst,
-                }, { onConflict: 'id,lang' });
-                if (error) throw new Error(`opslaan mislukt (${lang}): ${error.message}`);
-            }
+                // Atomair: eerst álle talen in articles_full, dan pas publiceren.
+                for (const lang of TALEN) {
+                    const { error } = await supabaseAdmin.from('articles_full').upsert({
+                        id: digestId, lang, full_text: perTaal[lang].tekst,
+                    }, { onConflict: 'id,lang' });
+                    if (error) throw new Error(`opslaan mislukt (${lang}): ${error.message}`);
+                }
 
-            for (const lang of TALEN) {
-                const teaser = maakTeaser(perTaal[lang].tekst, TEASER_WOORDEN);
-                languages[lang].unshift({
-                    id: digestId,
-                    type: 'digest',
-                    digest_date: dagString,
-                    title: perTaal[lang].titel,
-                    summary: teaser,
-                    image_alt: perTaal[lang].titel,
-                    meta_description: perTaal[lang].meta_d || teaser.slice(0, 155),
-                    meta_keywords: categorie,
-                    link: '',
-                    source: 'BrightNews',
-                    image: top[0].image || null,
-                    date: new Date().toISOString(),
-                    category: categorie,
-                    refs: ids.map((id, i) => ({
-                        id,
-                        title: perTaalIndex[lang]?.[id]?.title || top[i].title,
-                    })),
+                const onderwerpen = [...new Set(top.map(a => a.category).filter(Boolean))].join(', ');
+                for (const lang of TALEN) {
+                    const teaser = maakTeaser(perTaal[lang].tekst, TEASER_WOORDEN);
+                    languages[lang].unshift({
+                        id: digestId,
+                        type: 'digest',
+                        digest_date: dagString,
+                        title: perTaal[lang].titel,
+                        summary: teaser,
+                        image_alt: perTaal[lang].titel,
+                        meta_description: perTaal[lang].meta_d || teaser.slice(0, 155),
+                        meta_keywords: onderwerpen,
+                        link: '',
+                        source: 'BrightNews',
+                        image: top[0].image || null,
+                        date: new Date().toISOString(),
+                        // Geen categorie: het overzicht gaat over alle onderwerpen
+                        // en staat dus niet op een onderwerppagina.
+                        category: null,
+                        refs: ids.map((id, i) => ({
+                            id,
+                            title: perTaalIndex[lang]?.[id]?.title || top[i].title,
+                        })),
+                    });
+                    if (languages[lang].length > 150) languages[lang].pop();
+                }
+
+                digestLog.unshift({
+                    datum: new Date().toISOString(),
+                    dag: dagString,
+                    categorie: null,
+                    ids,
+                    prompthash: PROMPT_HASH,
+                    model: `moeder+vertaal (${moederAntwoord.provider})`,
+                    tokens: TALEN.reduce((som, l) => som + perTaal[l].tokens, 0),
+                    woorden: Object.fromEntries(TALEN.map(l => [l, telWoorden(perTaal[l].tekst)])),
                 });
-                if (languages[lang].length > 150) languages[lang].pop();
+                console.log(`✨ Dagoverzicht gepubliceerd: ${perTaal.nl.titel}`);
+            } catch (err) {
+                // Niets half publiceren; de volgende run probeert het opnieuw.
+                console.error(`❌ Dagoverzicht ${dagString} mislukt: ${err.message}`);
             }
-
-            digestLog.unshift({
-                datum: new Date().toISOString(),
-                dag: dagString,
-                categorie,
-                ids,
-                prompthash: PROMPT_HASH,
-                model: `moeder+vertaal (${moederAntwoord.provider})`,
-                tokens: TALEN.reduce((som, l) => som + perTaal[l].tokens, 0),
-                woorden: Object.fromEntries(TALEN.map(l => [l, telWoorden(perTaal[l].tekst)])),
-            });
-            mislukteCategorieenOpRij = 0;
-            console.log(`✨ Digest gepubliceerd: ${perTaal.nl.titel}`);
-        } catch (err) {
-            // Niets half publiceren; volgende run probeert deze categorie
-            // opnieuw (idempotentie-check hierboven).
-            mislukteCategorieenOpRij++;
-            console.error(`❌ Digest ${categorie} mislukt: ${err.message}`);
         }
     }
 
@@ -317,7 +318,7 @@ Antwoord UITSLUITEND met geldig JSON — alinea-scheidingen binnen "tekst" schri
         languages[lang] = items;
         if (lang === 'nl') {
             for (const d of verwijderd) {
-                console.log(`🧹 Dagoverzicht verwijderd: ${d.categorie} ${d.dag} — nog ${d.levend} van ${d.totaal} bronnen.`);
+                console.log(`🧹 Dagoverzicht verwijderd: ${d.categorie ?? 'dag'} ${d.dag} — nog ${d.levend} van ${d.totaal} bronnen.`);
             }
         }
     }
