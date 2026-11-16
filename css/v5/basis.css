@@ -14,6 +14,9 @@
 html {
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
+    /* De header blijft staan (componenten.css): een anker (#inhoud, een
+       sectie) mag er niet onder verdwijnen. 72 px header plus wat lucht. */
+    scroll-padding-top: 88px;
 }
 
 body {

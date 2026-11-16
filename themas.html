@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://rquuqypgaannrakdrabj.supabase.co https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
     <meta name="robots" content="max-image-preview:large">
-    <title>Thema's · BrightNews</title>
+    <title>Onderwerpen · BrightNews</title>
     <link rel="canonical" href="https://brightnews.online/themas.html">
     <meta name="description" content="Goed nieuws per onderwerp: tech, gezondheid, wetenschap, lifestyle, milieu en financiën. En elke week een overzicht van het sterkste thema.">
     <!-- schil:v5-thema -->
@@ -38,9 +38,12 @@
 </head>
 <body data-sectie="themas">
 <!-- schil:v5-header -->
-<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
-     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
-     en themapagina's horen bij die sectie (data-sectie="themas"). -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Onderwerpen
+     gaat naar het overzicht (/themas.html) met de zes onderwerpen en de
+     weekthema's; de onderwerp- en weekthemapagina's horen bij die sectie
+     (data-sectie="themas"). Eén woord per soort pagina (2026-11-16):
+     "Onderwerpen" voor de zes vaste rubrieken, "Weekthema's" voor de
+     weekpagina's. -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Ga naar hoofdinhoud</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -56,7 +59,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
-                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Thema's</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Onderwerpen</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archief</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Over ons</span></a></li>
             </ul>
@@ -95,7 +98,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
-                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Thema's</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Onderwerpen</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archief</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Over ons</span></a></li>
                         </ul>
@@ -164,14 +167,14 @@
     <section class="info-sectie info-sectie--intro" aria-labelledby="th-titel">
         <div class="container info-tekst">
             <p class="type-overline">BrightNews</p>
-            <h1 class="type-display-sm" id="th-titel" data-i18n="schil_themas">Thema's</h1>
-            <p class="info-tekst__lead" data-i18n="v5_th_lead">Goed nieuws per onderwerp, en elke week een overzicht van het sterkste thema.</p>
+            <h1 class="type-display-sm" id="th-titel" data-i18n="schil_themas">Onderwerpen</h1>
+            <p class="info-tekst__lead" data-i18n="v5_th_lead">Goed nieuws per onderwerp, en elke week een weekthema met de beste verhalen.</p>
         </div>
     </section>
 
     <section class="info-sectie" aria-labelledby="onderwerpen-kop">
         <div class="container info-sectie__binnen">
-            <h2 class="type-heading-lg" id="onderwerpen-kop" data-i18n="v5_th_onderwerpen">Onderwerpen</h2>
+            <h2 class="type-heading-lg" id="onderwerpen-kop" data-i18n="v5_th_onderwerpen">Alle onderwerpen</h2>
             <ul class="topic-links" id="onderwerpen" role="list"></ul>
         </div>
     </section>
@@ -210,9 +213,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Lezen</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
-                    <li><a href="/themas.html"><span data-i18n="schil_themas">Thema's</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Onderwerpen</span></a></li>
+                    <li><a href="/themas.html#week-kop"><span data-i18n="v5_th_week">Weekthema's</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archief</span></a></li>
-                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categorieën</span></a></li>
                 </ul>
             </nav>
 

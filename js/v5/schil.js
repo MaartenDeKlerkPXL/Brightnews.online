@@ -266,9 +266,8 @@
 
         paneel.querySelector('[data-sluit-instellingen]')?.addEventListener('click', () => sluit(true));
 
-        // "Instellingen" in de footer: naar boven en het paneel open.
+        // "Instellingen" in de footer: het paneel open, in de vaste header.
         document.querySelectorAll('[data-open-instellingen]').forEach(knop => knop.addEventListener('click', () => {
-            window.scrollTo({ top: 0 });
             if (!isOpen()) open(zichtbareKnop());
         }));
 

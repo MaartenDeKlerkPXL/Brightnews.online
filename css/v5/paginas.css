@@ -1470,3 +1470,9 @@ button.juridisch__link {
     font-size: var(--font-size-16);
     line-height: var(--line-height-24);
 }
+
+/* De onderwerpkeuze bovenaan een onderwerppagina (generate-categorieen.js):
+   de volle breedte, zodat de zes knoppen op één rij passen. */
+.info-tekst > .onderwerp-keuze {
+    max-width: none;
+}
