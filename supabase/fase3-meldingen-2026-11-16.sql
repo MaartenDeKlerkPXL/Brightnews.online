@@ -107,7 +107,8 @@ $function$;
 
 -- ── 2. Meldingen ───────────────────────────────────────────────────────
 
-create extension if not exists pg_net;
+-- In het schema extensions, niet public (advies van de Supabase-linter).
+create extension if not exists pg_net with schema extensions;
 
 alter table public.contactberichten add column if not exists gemeld_op timestamptz;
 alter table public.artikel_feedback add column if not exists gemeld_op timestamptz;
