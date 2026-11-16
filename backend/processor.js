@@ -802,7 +802,7 @@ async function processNews() {
         languages[lang] = items;
         if (lang === 'nl' && verwijderd.length) {
             for (const d of verwijderd) {
-                console.log(`🧹 Dagoverzicht verwijderd: ${d.categorie} ${d.dag} — nog ${d.levend} van ${d.totaal} bronnen.`);
+                console.log(`🧹 Dagoverzicht verwijderd: ${d.categorie ?? 'dag'} ${d.dag} — nog ${d.levend} van ${d.totaal} bronnen.`);
             }
         }
     }

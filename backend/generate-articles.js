@@ -507,7 +507,8 @@ function main() {
         let veranderd = false;
         for (const a of items) {
             const slug = a.id && manifest.articles[a.id]?.slugs?.[lang];
-            if (slug && a.slug !== slug) { a.slug = slug; veranderd = true; }
+            // Zelfde regel als de veilige bestandsnaam hieronder: geen pagina, geen link.
+            if (slug && /^[a-z0-9][a-z0-9-]*$/.test(`${slug}-${a.id}`) && a.slug !== slug) { a.slug = slug; veranderd = true; }
         }
         if (veranderd) fs.writeFileSync(pad, `${JSON.stringify(items, null, 2)}\n`);
     }

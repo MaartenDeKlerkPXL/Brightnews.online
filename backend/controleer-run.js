@@ -94,37 +94,26 @@ if (Array.isArray(nieuws) && nieuws.length) {
 }
 
 // 4. Dagoverzichten (review-ronde 2026-09-26): de digest-stap draait met
-//    continue-on-error en kan dus wekenlang stil falen — precies de fout die
-//    deze controle bij de processor al vangt. Alarm alleen als er volgens de
-//    digest-regels zelf wél materiaal lag (een categorie met ≥ 3 verse, nog
-//    niet besproken artikelen) en er desondanks al > 2 dagen geen overzicht
-//    is verschenen. Een rustige week zonder rijpe categorie blijft stil.
+//    continue-on-error en kan dus stil falen. Sinds UX-review fase 4
+//    (2026-11-16) dezelfde regel als backend/digest.js: één overzicht per dag
+//    (Nederlandse tijd) zodra die dag ≥ 2 nog niet besproken verhalen had.
+//    Alarm pas in de middagrun: de nachtrun mag één keer mislukken, de
+//    middagrun probeert het opnieuw.
 const digestLog = lees('digest-log.json') || [];
 if (Array.isArray(nieuws) && nieuws.length) {
-    const VENSTER_MS = 3 * 24 * 3600 * 1000;
+    const dagFormaat = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Amsterdam', year: 'numeric', month: '2-digit', day: '2-digit' });
+    const dagVan = moment => dagFormaat.format(new Date(moment));
+    const gisteren = dagVan(Date.parse(`${dagVan(Date.now())}T12:00:00Z`) - 86400000);
+    const uur = Number(new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Amsterdam', hour: 'numeric', hourCycle: 'h23' }).format(new Date()));
     const alBesproken = new Set(digestLog.flatMap(d => d.ids ?? []));
-    const perCategorie = {};
-    for (const a of nieuws) {
-        if (a.type === 'digest' || alBesproken.has(a.id)) continue;
-        const leeftijd = Date.now() - new Date(a.date || 0).getTime();
-        if (leeftijd >= 0 && leeftijd <= VENSTER_MS) {
-            const c = a.category || 'General';
-            perCategorie[c] = (perCategorie[c] ?? 0) + 1;
-        }
-    }
-    const rijp = Object.entries(perCategorie).filter(([, n]) => n >= 3).map(([c]) => c);
-    const nieuwsteDigest = digestLog.map(d => d.datum).filter(Boolean).sort().pop();
-    const digestDagen = nieuwsteDigest
-        ? (Date.now() - new Date(nieuwsteDigest).getTime()) / 86400000
-        : Infinity;
-    if (nieuwsteDigest) {
-        opmerkingen.push(`nieuwste dagoverzicht: ${nieuwsteDigest} (${digestDagen.toFixed(1)} dagen oud)`);
-    }
-    if (rijp.length && digestDagen > 2) {
+    const materiaal = nieuws.filter(a => a.type !== 'digest' && a.date && dagVan(a.date) === gisteren && !alBesproken.has(a.id)).length;
+    const heeftOverzicht = nieuws.some(a => a.type === 'digest' && a.digest_date === gisteren);
+    opmerkingen.push(`dagoverzicht van ${gisteren}: ${heeftOverzicht ? 'er' : `nog niet (${materiaal} verhalen beschikbaar)`}`);
+    if (!heeftOverzicht && materiaal >= 2 && uur >= 10) {
         alarmen.push([
-            `Geen dagoverzicht sinds ${nieuwsteDigest ?? 'ooit'}, terwijl ${rijp.join(', ')} genoeg vers materiaal ${rijp.length === 1 ? 'heeft' : 'hebben'} (≥ 3 onbesproken artikelen).`,
+            `Geen dagoverzicht van ${gisteren}, terwijl er ${materiaal} verhalen voor klaarlagen.`,
             'De digest-stap draait met continue-on-error en faalt dus zonder rode run. ' +
-            'Kijk in het log van de stap "📰 Dagoverzichten per categorie".'
+            'Kijk in het log van de stap "📰 Dagoverzicht (digest)".'
         ]);
     }
 }

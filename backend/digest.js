@@ -181,6 +181,9 @@ async function main() {
     const kandidaten = languages.nl.filter(a => a.type !== 'digest' && a.date
         && dagVan(a.date) === dagString && !alBesproken.has(a.id));
 
+    // shortcut: alleen gisteren. Mislukken beide runs van vandaag, dan krijgt
+    // gisteren geen overzicht meer (controleer-run.js slaat dan alarm). Pas
+    // inhalen als dat vaker gebeurt.
     // Idempotent: één overzicht per dag. Ook een overzicht van vóór fase 4
     // (één per categorie) telt, anders staan er op de overgangsdag twee.
     if (languages.nl.some(a => a.type === 'digest' && a.digest_date === dagString)) {
@@ -315,7 +318,7 @@ Antwoord UITSLUITEND met geldig JSON — alinea-scheidingen binnen "tekst" schri
         languages[lang] = items;
         if (lang === 'nl') {
             for (const d of verwijderd) {
-                console.log(`🧹 Dagoverzicht verwijderd: ${d.categorie} ${d.dag} — nog ${d.levend} van ${d.totaal} bronnen.`);
+                console.log(`🧹 Dagoverzicht verwijderd: ${d.categorie ?? 'dag'} ${d.dag} — nog ${d.levend} van ${d.totaal} bronnen.`);
             }
         }
     }

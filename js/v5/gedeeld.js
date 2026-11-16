@@ -297,7 +297,7 @@
         home: () => '/',
         // Direct naar de statische pagina als de feed of het manifest de slug
         // kent (TODO 78); anders artikel.html, dat doorstuurt.
-        artikel: (id, slug) => (slug && /^[a-z0-9-]+$/.test(slug)
+        artikel: (id, slug) => (slug && /^[a-z0-9][a-z0-9-]*$/.test(`${slug}-${id}`)
             ? `/articles/${taal()}/${slug}-${encodeURIComponent(id)}.html`
             : `/artikel.html?id=${encodeURIComponent(id)}`),
         dagoverzicht: dag => `/dagoverzicht.html?datum=${dag}`,

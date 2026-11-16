@@ -60,7 +60,7 @@ jobs:
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: node backend/processor.js
 
-      - name: 📰 Dagoverzichten per categorie (digest)
+      - name: 📰 Dagoverzicht (digest)
         # Een mislukte digest mag nooit de nieuws-update (en datacommit) van
         # de processor-stap laten sneuvelen; de volgende run herkanst vanzelf.
         continue-on-error: true
