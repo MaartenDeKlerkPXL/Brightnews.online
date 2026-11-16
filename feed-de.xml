@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-de.xml" rel="self" type="application/rss+xml"/>
         <description>Jeden Tag eine frische Auswahl guter Nachrichten aus aller Welt. Viel Spaß beim Lesen!</description>
         <language>de-de</language>
-        <lastBuildDate>Mon, 16 Nov 2026 05:20:58 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 16 Nov 2026 08:02:46 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Deine tägliche Dosis Positivität</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Neupulse-Armband halbiert Tourette-Tics in britischer Studie</title>
+            <link>https://brightnews.online/articles/de/neupulse-armband-halbiert-tourette-tics-in-britischer-studie-17948161639284hg989uc1.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/de/neupulse-armband-halbiert-tourette-tics-in-britischer-studie-17948161639284hg989uc1.html</guid>
+            <pubDate>Mon, 16 Nov 2026 08:02:46 GMT</pubDate>
+            <description>Eine klinische Studie im Vereinigten Königreich mit 121 Teilnehmern zeigte, dass das Tragen eines Prototyp-Armband-Geräts namens Neupulse die Häufigkeit von Tics im Durchschnitt um 25 Prozent reduzierte. Das Gerät, entwickelt von der University of Nottingham und dem Spin-off Neurotherapeutics Ltd, sendet rhythmische elektrische Impulse an den Nerv im Handgelenk, der die Gehirnregionen für die Bewe</description>
+            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/close-up-female-hand-with-Depositphotos_190349414_XL-1024x784.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Voyager 1 erreicht einen Lichttag Entfernung von der Erde</title>
             <link>https://brightnews.online/articles/de/voyager-1-erreicht-einen-lichttag-entfernung-von-der-erde-1794806456816y2t6lzgo5.html</link>
@@ -244,14 +252,6 @@
             <pubDate>Wed, 11 Nov 2026 19:21:34 GMT</pubDate>
             <description>Der Kantabrische Braunbär hat sich in zwanzig Jahren verdoppelt: von etwa 140 Tieren zu Beginn dieses Jahrhunderts auf 370 heute. Die Bären leben nicht mehr nur in Kantabrien, sondern auch in Asturien, León, Galizien und Palencia, über ein Gebiet von mehr als 17.000 Quadratkilometern (6.500 Quadratmeilen). Eine Studie aus dem Jahr 2023 in Conservation Science and Practice führt die Erholung...</description>
             <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-Cantabrian-brown-bear-credit-Juan-Iacruz-CC-BY-SA-4.0.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Brasilien präsentiert weltweit erste Roadmap für fossile Brennstoffe</title>
-            <link>https://brightnews.online/articles/de/brasilien-prasentiert-weltweit-erste-roadmap-fur-fossile-brennstoffe-1794373689644spmeqye98.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/de/brasilien-prasentiert-weltweit-erste-roadmap-fur-fossile-brennstoffe-1794373689644spmeqye98.html</guid>
-            <pubDate>Wed, 11 Nov 2026 05:08:12 GMT</pubDate>
-            <description>Brasilien hat als erstes Land der Welt eine Roadmap zur Ausstiegsstrategie aus fossilen Brennstoffen veröffentlicht. Das Dokument markiert einen einzigartigen Schritt in der internationalen Klimapolitik, wobei Brasilien die erste Nation ist, die einen derartigen konkreten Ausstiegsplan öffentlich macht.</description>
-            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/oil-pumps-on-sunset-Depositphotos_5186129_S.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

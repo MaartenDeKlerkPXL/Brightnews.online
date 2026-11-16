@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-fr.xml" rel="self" type="application/rss+xml"/>
         <description>Chaque jour une sélection fraîche de bonnes nouvelles du monde entier. Bonne lecture !</description>
         <language>fr-fr</language>
-        <lastBuildDate>Mon, 16 Nov 2026 05:20:58 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 16 Nov 2026 08:02:46 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Votre dose quotidienne de positivité</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Le bracelet Neupulse réduit presque de moitié les tics de Tourette dans un essai britannique</title>
+            <link>https://brightnews.online/articles/fr/le-bracelet-neupulse-reduit-presque-de-moitie-les-tics-de-tourette-dans-un-essai-17948161639284hg989uc1.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/fr/le-bracelet-neupulse-reduit-presque-de-moitie-les-tics-de-tourette-dans-un-essai-17948161639284hg989uc1.html</guid>
+            <pubDate>Mon, 16 Nov 2026 08:02:46 GMT</pubDate>
+            <description>Un essai clinique au Royaume-Uni auprès de 121 participants a montré que le port d&apos;un prototype de bracelet, Neupulse, réduisait la fréquence des tics en moyenne de 25 pour cent. L&apos;appareil, développé par l&apos;University of Nottingham et sa spin-off Neurotherapeutics Ltd, envoie des impulsions électriques rythmiques vers le nerf du poignet qui influence les zones cérébrales contrôlant les mouvements.</description>
+            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/close-up-female-hand-with-Depositphotos_190349414_XL-1024x784.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Voyager 1 atteint un jour-lumière de la Terre</title>
             <link>https://brightnews.online/articles/fr/voyager-1-atteint-un-jour-lumiere-de-la-terre-1794806456816y2t6lzgo5.html</link>
@@ -244,14 +252,6 @@
             <pubDate>Wed, 11 Nov 2026 19:21:34 GMT</pubDate>
             <description>L&apos;ours brun cantabrique a doublé en nombre en vingt ans : d&apos;environ 140 animaux au début de ce siècle à 370 aujourd&apos;hui. Les ours ne vivent plus seulement en Cantabrie, mais aussi en Asturies, León, Galice et Palencia, sur une zone de plus de 17 000 kilomètres carrés (6 500 milles carrés). Une étude de 2023 publiée dans Conservation Science...</description>
             <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-Cantabrian-brown-bear-credit-Juan-Iacruz-CC-BY-SA-4.0.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Le Brésil présente la première feuille de route mondiale sur les combustibles fossiles</title>
-            <link>https://brightnews.online/articles/fr/le-bresil-presente-la-premiere-feuille-de-route-mondiale-sur-les-combustibles-fo-1794373689644spmeqye98.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/fr/le-bresil-presente-la-premiere-feuille-de-route-mondiale-sur-les-combustibles-fo-1794373689644spmeqye98.html</guid>
-            <pubDate>Wed, 11 Nov 2026 05:08:12 GMT</pubDate>
-            <description>Le Brésil a publié la première feuille de route au monde pour l&apos;élimination progressive des combustibles fossiles. Le document marque une étape unique dans la politique climatique internationale, le Brésil étant la première nation à rendre public un tel plan d&apos;élimination progressive concret.</description>
-            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/oil-pumps-on-sunset-Depositphotos_5186129_S.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

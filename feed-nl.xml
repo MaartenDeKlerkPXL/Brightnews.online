@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-nl.xml" rel="self" type="application/rss+xml"/>
         <description>Elke dag een verse selectie goed nieuws uit de hele wereld, veel leesplezier!</description>
         <language>nl-nl</language>
-        <lastBuildDate>Mon, 16 Nov 2026 05:20:58 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 16 Nov 2026 08:02:46 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Jouw Dagelijkse Dosis Positiviteit</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Neupulse-polsapparaat halveert bijna Tourette-tics in Britse proef</title>
+            <link>https://brightnews.online/articles/nl/neupulse-polsapparaat-halveert-bijna-tourette-tics-in-britse-proef-17948161639284hg989uc1.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/nl/neupulse-polsapparaat-halveert-bijna-tourette-tics-in-britse-proef-17948161639284hg989uc1.html</guid>
+            <pubDate>Mon, 16 Nov 2026 08:02:46 GMT</pubDate>
+            <description>Een klinische proef in het Verenigd Koninkrijk met 121 deelnemers toonde aan dat het dragen van een prototype polsapparaat, Neupulse, de frequentie van tics gemiddeld met 25 procent verminderde. Het apparaat, ontwikkeld door de University of Nottingham en spin-off Neurotherapeutics Ltd, stuurt ritmische elektrische pulsen naar de zenuw in de pols die de hersengebieden voor bewegingscontrole beïnvl</description>
+            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/close-up-female-hand-with-Depositphotos_190349414_XL-1024x784.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Voyager 1 bereikt één lichtdag van de Aarde</title>
             <link>https://brightnews.online/articles/nl/voyager-1-bereikt-een-lichtdag-van-de-aarde-1794806456816y2t6lzgo5.html</link>
@@ -244,14 +252,6 @@
             <pubDate>Wed, 11 Nov 2026 19:21:34 GMT</pubDate>
             <description>De Cantabrische bruine beer is in twintig jaar tijd verdubbeld in aantal: van circa 140 dieren begin deze eeuw naar 370 nu. De beren leven niet meer alleen in Cantabrië, maar ook in Asturië, León, Galicië en Palencia, over een gebied van ruim 17.000 vierkante kilometer (6.500 vierkante mijl). Een studie uit 2023 in Conservation Science and Practice wijt het...</description>
             <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-Cantabrian-brown-bear-credit-Juan-Iacruz-CC-BY-SA-4.0.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Brazilië presenteert wereldwijd eerste fossiele brandstoffen-roadmap</title>
-            <link>https://brightnews.online/articles/nl/brazilie-presenteert-wereldwijd-eerste-fossiele-brandstoffen-roadmap-1794373689644spmeqye98.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/nl/brazilie-presenteert-wereldwijd-eerste-fossiele-brandstoffen-roadmap-1794373689644spmeqye98.html</guid>
-            <pubDate>Wed, 11 Nov 2026 05:08:12 GMT</pubDate>
-            <description>Brazilië heeft als eerste land ter wereld een roadmap gepubliceerd voor het uitfaseren van fossiele brandstoffen. Het document markeert een unieke stap in het internationale klimaatbeleid, waarbij Brazilië de eerste natie is die een dergelijk concreet uitfaseringsplan openbaar maakt.</description>
-            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/oil-pumps-on-sunset-Depositphotos_5186129_S.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

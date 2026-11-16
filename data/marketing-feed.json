@@ -1,10 +1,18 @@
 {
- "gegenereerd": "2026-11-16T05:21:02.779Z",
+ "gegenereerd": "2026-11-16T08:02:51.998Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "17948161639284hg989uc1",
+     "titel": "Neupulse-polsapparaat halveert bijna Tourette-tics in Britse proef",
+     "teaser": "Een klinische proef in het Verenigd Koninkrijk met 121 deelnemers toonde aan dat het dragen van een prototype polsapparaat, Neupulse, de frequentie van tics gemiddeld met 25 procent verminderde. Het apparaat, ontwikkeld door de University of Nottingham en spin-off Neurotherapeutics Ltd, stuurt ritmische elektrische pulsen naar de zenuw in de pols die de hersengebieden voor bewegingscontrole beïnvloedt. Gebruikers melden sterkere...",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/nl/neupulse-polsapparaat-halveert-bijna-tourette-tics-in-britse-proef-17948161639284hg989uc1.html"
+    },
     {
      "id": "1794806456816y2t6lzgo5",
      "titel": "Voyager 1 bereikt één lichtdag van de Aarde",
@@ -36,14 +44,6 @@
      "score": 9,
      "categorie": "Tech",
      "url": "https://brightnews.online/articles/nl/spacex-vangt-starship-met-mechanische-armen-en-schrijft-geschiedenis-1794720147520eg4u3pab2.html"
-    },
-    {
-     "id": "17947201234945qled3tv1",
-     "titel": "Echtpaar met autisme en ADHD maakt vieze straatborden schoon in Brighton",
-     "teaser": "Paul en Ruth Richmond-Watson uit Brighton, Engeland, zijn sinds september bezig met het schoonmaken van vieze straatborden in East Sussex. Het koppel, beiden autistisch met ADHD, zocht een hobby om samen te doen. Paul (47), afkomstig uit Nieuw-Zeeland en voormalig ramenwasser, en Ruth (25) reinigen minstens één bord per dag, wat elk 20 tot 25 minuten kost met een rugzak-waterpomp,...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/echtpaar-met-autisme-en-adhd-maakt-vieze-straatborden-schoon-in-brighton-17947201234945qled3tv1.html"
     }
    ],
    "dagoverzichten": [
@@ -58,6 +58,14 @@
   },
   "en": {
    "top": [
+    {
+     "id": "17948161639284hg989uc1",
+     "titel": "Neupulse wristband nearly halves Tourette tics in British trial",
+     "teaser": "A clinical trial in the United Kingdom involving 121 participants showed that wearing a prototype wristband device, Neupulse, reduced the frequency of tics by an average of 25 percent. The device, developed by the University of Nottingham and spin-off Neurotherapeutics Ltd, sends rhythmic electrical pulses to the nerve in the wrist that affects brain regions controlling movement. Users report stronger...",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/en/neupulse-wristband-nearly-halves-tourette-tics-in-british-trial-17948161639284hg989uc1.html"
+    },
     {
      "id": "1794806456816y2t6lzgo5",
      "titel": "Voyager 1 reaches one light-day from Earth",
@@ -89,14 +97,6 @@
      "score": 9,
      "categorie": "Tech",
      "url": "https://brightnews.online/articles/en/spacex-catches-starship-with-mechanical-arms-and-makes-history-1794720147520eg4u3pab2.html"
-    },
-    {
-     "id": "17947201234945qled3tv1",
-     "titel": "Couple with autism and ADHD clean dirty street signs in Brighton",
-     "teaser": "Paul and Ruth Richmond-Watson from Brighton, England, have been cleaning dirty street signs in East Sussex since September. The couple, both autistic with ADHD, were looking for a hobby to do together. Paul (47), originally from New Zealand and a former window cleaner, and Ruth (25) clean at least one sign per day, which takes each 20 to 25 minutes...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/couple-with-autism-and-adhd-clean-dirty-street-signs-in-brighton-17947201234945qled3tv1.html"
     }
    ],
    "dagoverzichten": [
@@ -111,6 +111,14 @@
   },
   "de": {
    "top": [
+    {
+     "id": "17948161639284hg989uc1",
+     "titel": "Neupulse-Armband halbiert Tourette-Tics in britischer Studie",
+     "teaser": "Eine klinische Studie im Vereinigten Königreich mit 121 Teilnehmern zeigte, dass das Tragen eines Prototyp-Armband-Geräts namens Neupulse die Häufigkeit von Tics im Durchschnitt um 25 Prozent reduzierte. Das Gerät, entwickelt von der University of Nottingham und dem Spin-off Neurotherapeutics Ltd, sendet rhythmische elektrische Impulse an den Nerv im Handgelenk, der die Gehirnregionen für die Bewegungskontrolle beeinflusst. Nutzer berichten von stärkeren...",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/de/neupulse-armband-halbiert-tourette-tics-in-britischer-studie-17948161639284hg989uc1.html"
+    },
     {
      "id": "1794806456816y2t6lzgo5",
      "titel": "Voyager 1 erreicht einen Lichttag Entfernung von der Erde",
@@ -142,14 +150,6 @@
      "score": 9,
      "categorie": "Tech",
      "url": "https://brightnews.online/articles/de/spacex-fangt-starship-mit-mechanischen-armen-und-schreibt-geschichte-1794720147520eg4u3pab2.html"
-    },
-    {
-     "id": "17947201234945qled3tv1",
-     "titel": "Ehepaar mit Autismus und ADHS reinigt schmutzige Straßenschilder in Brighton",
-     "teaser": "Paul und Ruth Richmond-Watson aus Brighton, England, reinigen seit September schmutzige Straßenschilder in East Sussex. Das Paar, beide autistisch mit ADHS, suchte nach einem gemeinsamen Hobby. Paul (47), aus Neuseeland stammend und ehemaliger Fensterputzer, und Ruth (25) reinigen mindestens ein Schild pro Tag, was jeweils 20 bis 25 Minuten mit einem Rucksack-Wasserpumpe, einer Schneeschschaum-Sprühflasche mit umweltfreundlichem Schaum und einer langen...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/ehepaar-mit-autismus-und-adhs-reinigt-schmutzige-stra-enschilder-in-brighton-17947201234945qled3tv1.html"
     }
    ],
    "dagoverzichten": [
@@ -164,6 +164,14 @@
   },
   "fr": {
    "top": [
+    {
+     "id": "17948161639284hg989uc1",
+     "titel": "Le bracelet Neupulse réduit presque de moitié les tics de Tourette dans un essai britannique",
+     "teaser": "Un essai clinique au Royaume-Uni auprès de 121 participants a montré que le port d'un prototype de bracelet, Neupulse, réduisait la fréquence des tics en moyenne de 25 pour cent. L'appareil, développé par l'University of Nottingham et sa spin-off Neurotherapeutics Ltd, envoie des impulsions électriques rythmiques vers le nerf du poignet qui influence les zones cérébrales contrôlant les mouvements. Les...",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/fr/le-bracelet-neupulse-reduit-presque-de-moitie-les-tics-de-tourette-dans-un-essai-17948161639284hg989uc1.html"
+    },
     {
      "id": "1794806456816y2t6lzgo5",
      "titel": "Voyager 1 atteint un jour-lumière de la Terre",
@@ -195,14 +203,6 @@
      "score": 9,
      "categorie": "Tech",
      "url": "https://brightnews.online/articles/fr/spacex-attrape-starship-avec-des-bras-mecaniques-et-entre-dans-l-histoire-1794720147520eg4u3pab2.html"
-    },
-    {
-     "id": "17947201234945qled3tv1",
-     "titel": "Un couple autiste avec TDAH nettoie les panneaux routiers sales à Brighton",
-     "teaser": "Paul et Ruth Richmond-Watson de Brighton, en Angleterre, nettoient depuis septembre les panneaux routiers sales du East Sussex. Le couple, tous deux autistes avec un TDAH, cherchait un loisir à partager. Paul (47 ans), originaire de Nouvelle-Zélande et ancien nettoyeur de vitres, et Ruth (25 ans) nettoient au moins un panneau par jour, ce qui prend chacun 20 à 25...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/un-couple-autiste-avec-tdah-nettoie-les-panneaux-routiers-sales-a-brighton-17947201234945qled3tv1.html"
     }
    ],
    "dagoverzichten": [
@@ -217,6 +217,14 @@
   },
   "es": {
    "top": [
+    {
+     "id": "17948161639284hg989uc1",
+     "titel": "El dispositivo de muñeca Neupulse reduce casi a la mitad los tics de Tourette en ensayo británico",
+     "teaser": "Un ensayo clínico en el Reino Unido con 121 participantes demostró que el uso de un prototipo de dispositivo de muñeca, Neupulse, redujo la frecuencia de tics en un promedio del 25 por ciento. El aparato, desarrollado por la University of Nottingham y su spin-off Neurotherapeutics Ltd, envía pulsos eléctricos rítmicos al nervio de la muñeca que afecta las áreas...",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/es/el-dispositivo-de-muneca-neupulse-reduce-casi-a-la-mitad-los-tics-de-tourette-en-17948161639284hg989uc1.html"
+    },
     {
      "id": "1794806456816y2t6lzgo5",
      "titel": "Voyager 1 alcanza un día luz de distancia de la Tierra",
@@ -248,14 +256,6 @@
      "score": 9,
      "categorie": "Tech",
      "url": "https://brightnews.online/articles/es/spacex-atrapa-el-starship-con-brazos-mecanicos-e-ingresa-en-la-historia-1794720147520eg4u3pab2.html"
-    },
-    {
-     "id": "17947201234945qled3tv1",
-     "titel": "Una pareja con autismo y TDAH limpia señales sucias en Brighton",
-     "teaser": "Paul y Ruth Richmond-Watson de Brighton, Inglaterra, llevan desde septiembre limpiando señales de tráfico sucias en East Sussex. La pareja, ambos autistas con TDAH, buscaba un hobby para hacer juntos. Paul (47), originario de Nueva Zelanda y antiguo limpiador de ventanas, y Ruth (25) limpian al menos una señal al día, lo que les lleva entre 20 y 25 minutos...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/una-pareja-con-autismo-y-tdah-limpia-senales-sucias-en-brighton-17947201234945qled3tv1.html"
     }
    ],
    "dagoverzichten": [

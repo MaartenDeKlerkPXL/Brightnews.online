@@ -1,5 +1,41 @@
 [
  {
+  "datum": "2026-11-16T08:02:18.997Z",
+  "bron": "OptimistDaily.com",
+  "titel": "This Tourette’s wrist device cut tics by a quarter in a UK trial",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Medische doorbraak die Tourette's-patiënten werkelijk helpt; genezing/herstel als kern met concrete resultaten en menselijke impact."
+ },
+ {
+  "datum": "2026-11-16T08:02:18.997Z",
+  "bron": "OptimistDaily.com",
+  "titel": "8 simple habits time management experts say build a better morning",
+  "uitsluiting": "listicle",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Zelfhulpadvies in listicle-vorm ('8 simple habits') zonder echt verhaal of concrete voorbeelden van echte mensen."
+ },
+ {
+  "datum": "2026-11-16T08:02:18.997Z",
+  "bron": "Theecologist.org",
+  "titel": "Darwinism is not survival of the fittest",
+  "uitsluiting": "geen",
+  "gevoel": 2,
+  "formulering": 2,
+  "relevantie": 3,
+  "totaal": 7,
+  "besluit": "nee",
+  "reden": "Wetenschappelijke correctie die misverstanden over evolutie helpt opheffen; maatschappelijk relevant en verhelderend zonder alarmering."
+ },
+ {
   "datum": "2026-11-16T05:19:44.397Z",
   "bron": "GoodNewsNetwork.org",
   "titel": "They Became Pen Pals as Teens, Now 32 Years Later They’re Happily Married",
@@ -3562,41 +3598,5 @@
   "totaal": 0,
   "besluit": "nee",
   "reden": "Titel suggereert interessant interview, maar tekst is alleen website-navigatie zonder artikel of inhoud."
- },
- {
-  "datum": "2026-10-30T17:50:41.074Z",
-  "bron": "NPR.org",
-  "titel": "The latest in space science: We look back at the Big Bang",
-  "uitsluiting": "te-weinig-inhoud",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Titel belooft ruimtewetenschappelijk verhaal, maar tekst bevat uitsluitend navigatiemenu's zonder inhoud."
- },
- {
-  "datum": "2026-10-30T17:50:41.074Z",
-  "bron": "NPR.org",
-  "titel": "Should 'bird brain' be a compliment? Here's how crows think fast",
-  "uitsluiting": "geen",
-  "gevoel": 2,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 8,
-  "besluit": "ja",
-  "reden": "Positief onderzoek dat een negatief stereotype omkeert; goed geformuleerd en wetenschappelijk relevant met persoonlijke appeal."
- },
- {
-  "datum": "2026-10-30T17:50:41.074Z",
-  "bron": "NPR.org",
-  "titel": "New human data hints at psychedelics' potential to combat inflammation",
-  "uitsluiting": "geen",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "Hoopvol onderzoek naar genezing van neurodegeneratieve ziekten; positief geformuleerd en maatschappelijk zeer relevant."
  }
 ]

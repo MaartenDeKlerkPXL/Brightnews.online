@@ -6,13 +6,21 @@
         <atom:link href="https://brightnews.online/feed-es.xml" rel="self" type="application/rss+xml"/>
         <description>Cada día una selección fresca de buenas noticias de todo el mundo. ¡Feliz lectura!</description>
         <language>es-es</language>
-        <lastBuildDate>Mon, 16 Nov 2026 05:20:58 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 16 Nov 2026 08:02:46 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Tu dosis diaria de positividad</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>El dispositivo de muñeca Neupulse reduce casi a la mitad los tics de Tourette en ensayo británico</title>
+            <link>https://brightnews.online/articles/es/el-dispositivo-de-muneca-neupulse-reduce-casi-a-la-mitad-los-tics-de-tourette-en-17948161639284hg989uc1.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/es/el-dispositivo-de-muneca-neupulse-reduce-casi-a-la-mitad-los-tics-de-tourette-en-17948161639284hg989uc1.html</guid>
+            <pubDate>Mon, 16 Nov 2026 08:02:46 GMT</pubDate>
+            <description>Un ensayo clínico en el Reino Unido con 121 participantes demostró que el uso de un prototipo de dispositivo de muñeca, Neupulse, redujo la frecuencia de tics en un promedio del 25 por ciento. El aparato, desarrollado por la University of Nottingham y su spin-off Neurotherapeutics Ltd, envía pulsos eléctricos rítmicos al nervio de la muñeca que afecta las áreas...</description>
+            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/close-up-female-hand-with-Depositphotos_190349414_XL-1024x784.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Voyager 1 alcanza un día luz de distancia de la Tierra</title>
             <link>https://brightnews.online/articles/es/voyager-1-alcanza-un-dia-luz-de-distancia-de-la-tierra-1794806456816y2t6lzgo5.html</link>
@@ -244,14 +252,6 @@
             <pubDate>Wed, 11 Nov 2026 19:21:34 GMT</pubDate>
             <description>El oso pardo cantábrico se ha duplicado en veinte años: de aproximadamente 140 animales a principios de este siglo a 370 en la actualidad. Los osos ya no viven solo en Cantabria, sino también en Asturias, León, Galicia y Palencia, en un área de más de 17.000 kilómetros cuadrados (6.500 millas cuadradas). Un estudio de 2023 en Conservation Science and...</description>
             <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-Cantabrian-brown-bear-credit-Juan-Iacruz-CC-BY-SA-4.0.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Brasil presenta el primer mapa de ruta mundial para eliminar combustibles fósiles</title>
-            <link>https://brightnews.online/articles/es/brasil-presenta-el-primer-mapa-de-ruta-mundial-para-eliminar-combustibles-fosile-1794373689644spmeqye98.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/es/brasil-presenta-el-primer-mapa-de-ruta-mundial-para-eliminar-combustibles-fosile-1794373689644spmeqye98.html</guid>
-            <pubDate>Wed, 11 Nov 2026 05:08:12 GMT</pubDate>
-            <description>Brasil ha publicado como primer país del mundo un mapa de ruta para la eliminación gradual de combustibles fósiles. El documento marca un paso único en la política climática internacional, siendo Brasil la primera nación que hace público un plan de eliminación tan concreto.</description>
-            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/oil-pumps-on-sunset-Depositphotos_5186129_S.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>
