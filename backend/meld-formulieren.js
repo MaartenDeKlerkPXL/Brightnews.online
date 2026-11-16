@@ -9,7 +9,7 @@
 // Nodig als secret: SUPABASE_SERVICE_ROLE_KEY en RESEND_API_KEY (bestaan al).
 // Zonder RESEND_API_KEY stopt het script netjes.
 //
-//   node backend/meld-formulieren.js --droog    toont de mail, verstuurt niets
+//   node backend/meld-formulieren.js --droog    telt wat er in de mail zou komen, verstuurt niets
 
 const fs = require('fs');
 const path = require('path');
@@ -92,7 +92,9 @@ async function main() {
 
     const manifest = JSON.parse(fs.readFileSync(path.join(__dirname, '../articles/manifest.json'), 'utf8'));
     const mail = bouwMail(fb.data, ct.data, manifest);
-    if (DROOG) { console.log(`Onderwerp: ${mail.onderwerp}\n\n${mail.tekst}`); return; }
+    // Het log van een Action in deze openbare repo is voor iedereen te lezen:
+    // alleen aantallen, nooit de berichten of mailadressen.
+    if (DROOG) { console.log(`🧪 Droog: "${mail.onderwerp}" (${fb.data.length} feedback, ${ct.data.length} contact).`); return; }
 
     // Eén contactbericht: dan kan Beantwoorden meteen naar de afzender.
     const antwoord = !fb.data.length && ct.data.length === 1 ? { reply_to: ct.data[0].email } : {};
