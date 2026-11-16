@@ -198,8 +198,12 @@
 /* De lijn onder de header staat op de volle breedte (de navbar zelf is de
    container van max. 1440 px). Met het paneel open komt de lijn onder het
    paneel, en scheidt de bovenrand van het paneel het van de navbar. */
+/* De header blijft bovenaan staan bij scrollen (besluit Maarten,
+   2026-11-16). Het paneel eronder scrolt zelf als het hoger is dan het
+   scherm (zie .settings-panel__binnen). */
 .site-header {
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 10;
     border-bottom: var(--border-width-sm) solid var(--border-default);
     background: var(--surface-default);
@@ -238,15 +242,22 @@
     font-size: var(--font-size-16);
     line-height: var(--line-height-24);
     font-weight: 500;
-    text-decoration: underline;
+    text-decoration: none;
     text-decoration-thickness: 1px;
     text-underline-offset: 3px;
     white-space: nowrap;
     transition: color var(--motion-duration-fast) var(--motion-easing);
 }
 
+/* Een lijn alleen bij hover (besluit Maarten, 2026-11-16); de huidige
+   pagina houdt haar groene lijn. */
 .nav-link:hover {
     color: var(--text-primary);
+    text-decoration: underline;
+}
+
+.nav-link[aria-current="page"]:hover {
+    text-decoration: none;
 }
 
 .nav-link[aria-current="page"] {
@@ -257,8 +268,8 @@
 /* Mobiel en tablet (Figma: Header, Breakpoint=Mobile). Onder 1024 px staan
    alleen het logo en de knop Menu in een balk van 64 px; links, knoppen en
    instellingen zitten in het menu, dat het instellingenpaneel hergebruikt.
-   De header scrolt mee weg (niet sticky): een vaste balk met uitklapmenu
-   zou over de inhoud vallen. */
+   Net als op desktop blijft de balk bovenaan staan; een open menu scrolt
+   binnen zichzelf. */
 .menu-knop {
     display: none;
 }
@@ -307,14 +318,17 @@
 }
 
 /* Eén primaire knop per scherm (besluit v5 · 18): staat er een paywall op
-   de pagina, dan wordt "Probeer Premium" in de header secundair. */
-body:has(.paywall) :is(.navbar, .mobiel-menu) .btn--primary {
+   de pagina, of is de knop van een formulier de hoofdactie (Contact,
+   Feedback, 404, de foutstaat van de home), dan wordt "Probeer Premium" in
+   de header secundair. Sinds 2026-11-16 secundair in plaats van verborgen:
+   de header blijft dan op elke pagina gelijk. */
+body:is(:has(.paywall), [data-pagina="contact"], [data-pagina="feedback"], [data-pagina="404"], [data-pagina="fout"]) :is(.navbar, .mobiel-menu) .btn--primary {
     border-color: var(--border-strong);
     background: var(--surface-default);
     color: var(--text-primary);
 }
 
-body:has(.paywall) :is(.navbar, .mobiel-menu) .btn--primary:hover {
+body:is(:has(.paywall), [data-pagina="contact"], [data-pagina="feedback"], [data-pagina="404"], [data-pagina="fout"]) :is(.navbar, .mobiel-menu) .btn--primary:hover {
     background: var(--surface-muted);
 }
 
@@ -328,16 +342,6 @@ body[data-pagina="abonnementen"] :is(.navbar, .mobiel-menu) .btn--primary {
    Premium" er niet: de enige primaire knop staat in het formulier. */
 body[data-pagina="inloggen"] :is(.navbar__acties, .mobiel-menu__account) .btn,
 body[data-pagina="wachtwoord"] :is(.navbar__acties, .mobiel-menu__account) .btn {
-    display: none;
-}
-
-/* Op Contact en Feedback is de knop van het formulier de enige primaire
-   knop; "Probeer Premium" in de header verdwijnt daar. Net zo op 404 en de
-   foutstaat van de homepage (data-pagina="fout", gezet door home.js). */
-body[data-pagina="contact"] :is(.navbar, .mobiel-menu) .btn--primary,
-body[data-pagina="feedback"] :is(.navbar, .mobiel-menu) .btn--primary,
-body[data-pagina="404"] :is(.navbar, .mobiel-menu) .btn--primary,
-body[data-pagina="fout"] :is(.navbar, .mobiel-menu) .btn--primary {
     display: none;
 }
 
@@ -435,6 +439,11 @@ body[data-pagina="bedankt"] :is(.navbar, .mobiel-menu) .btn--primary {
 }
 
 .settings-panel.is-open .settings-panel__binnen {
+    /* Nooit hoger dan het scherm onder de header: anders valt het einde van
+       een lang menu (mobiel) buiten beeld en is het niet te bereiken. */
+    max-height: calc(100dvh - 72px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
     border-top: var(--border-width-sm) solid var(--border-default);
 }
 
@@ -1160,6 +1169,12 @@ body[data-pagina="bedankt"] :is(.navbar, .mobiel-menu) .btn--primary {
 
 .topic-link:focus-visible {
     border-radius: var(--radius-lg);
+}
+
+/* Het onderwerp waar je nu bent (de keuze bovenaan een onderwerppagina). */
+.topic-link[aria-current="page"] {
+    border-color: var(--action-primary-bg);
+    background: var(--surface-muted);
 }
 
 .topic-link__chevron {

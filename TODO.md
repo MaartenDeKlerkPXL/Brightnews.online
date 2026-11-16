@@ -189,6 +189,18 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      - geen datum in de lopende tekst (`digest-prompt.md`);
      - Nederlandse titels in zinsstijl (selectie- en vertaalprompt);
      - directe links naar de artikelpagina's (TODO 78).
+  5. **Alles opnieuw testen (dubbel controleren, besluit Maarten
+     2026-11-16):** de hele site live doorlopen op computer en mobiel, licht en
+     donker, in alle vijf talen: alle pagina's, het menu, het taalmenu, de
+     paywall, inloggen, Premium, Contact en Feedback, het archief, de
+     onderwerpen en weekthema's, en de console op fouten. Daarna een
+     review-ronde over alle wijzigingen van fase 1 t/m 4 samen.
+  - ✅ *Fase 1 klaar op 2026-11-16:*
+    - menu-lijntjes alleen bij hover (de groene lijn blijft);
+    - de header blijft staan, een lang mobiel menu scrolt binnen zichzelf;
+    - overal "Onderwerpen" en "Weekthema's" (vijf talen; `schil_categorieen` is weg);
+    - een onderwerpkeuze bovenaan elke onderwerppagina;
+    - "Probeer Premium" op Contact, Feedback en 404 secundair in plaats van verborgen.
 
 - [ ] **80. Branding vóór de lancering: favicon, deelafbeelding en sociale
   media in de v5-stijl.** *(Maarten, 2026-11-12)* De site is v5, maar wat

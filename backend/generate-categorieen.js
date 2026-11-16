@@ -95,6 +95,12 @@ ${artikelen.map(a => kaartHtml(a, lang, manifest)).join('\n')}
         </ul>`
         : `        <p>${escapeHtml(t(lang, 'cat_leeg'))}</p>`;
 
+    // Bovenaan: alle zes, de huidige gemarkeerd, om snel te wisselen
+    // (besluit Maarten, 2026-11-16). Onderaan blijft de keuze uit de andere vijf.
+    const keuze = CATEGORIEEN
+        .map(c => `                <li><a class="topic-link" href="/${UITVOERMAP}/${lang}/${categorieSlug(c, lang)}.html"${c === categorie ? ' aria-current="page"' : ''}>${icoon(ICOON[c])}<span>${escapeHtml(t(lang, `filter_${c.toLowerCase()}`))}</span></a></li>`)
+        .join('\n');
+
     // Onderling doorlinken: elke categoriepagina wijst naar de vijf andere.
     // Zonder die links zijn het losse eilanden die alleen via de sitemap te
     // bereiken zijn, hetzelfde probleem als de artikelpagina's hadden.
@@ -107,6 +113,11 @@ ${artikelen.map(a => kaartHtml(a, lang, manifest)).join('\n')}
             <p class="type-overline">${escapeHtml(label)}</p>
             <h1 class="type-display-sm" id="cat-titel">${escapeHtml(titel)}</h1>
             <p class="info-tekst__lead">${escapeHtml(beschrijving)}</p>
+            <nav class="onderwerp-keuze" aria-label="${escapeHtml(t(lang, 'v5_cat_kies'))}">
+                <ul class="topic-links" role="list">
+${keuze}
+                </ul>
+            </nav>
         </div>
     </section>
 

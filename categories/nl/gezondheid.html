@@ -51,9 +51,12 @@
     <link rel="stylesheet" href="/css/v5/paginas.css">
 </head>
 <body data-sectie="themas" data-alt-nl="/categories/nl/gezondheid.html" data-alt-en="/categories/en/health.html" data-alt-de="/categories/de/gesundheit.html" data-alt-fr="/categories/fr/sante.html" data-alt-es="/categories/es/salud.html">
-<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Thema's gaat
-     naar het overzicht met de onderwerpen en de weekthema's; de categorie-
-     en themapagina's horen bij die sectie (data-sectie="themas"). -->
+<!-- Sinds 2026-11-12 staan alle links op de echte adressen. Onderwerpen
+     gaat naar het overzicht (/themas.html) met de zes onderwerpen en de
+     weekthema's; de onderwerp- en weekthemapagina's horen bij die sectie
+     (data-sectie="themas"). Eén woord per soort pagina (2026-11-16):
+     "Onderwerpen" voor de zes vaste rubrieken, "Weekthema's" voor de
+     weekpagina's. -->
 <a class="skip-link" href="#inhoud"><span data-i18n="skip_to_content">Ga naar hoofdinhoud</span></a>
 <header class="site-header">
     <div class="container navbar">
@@ -69,7 +72,7 @@
         <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
             <ul class="navbar__links">
                 <li><a class="nav-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
-                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Thema's</span></a></li>
+                <li><a class="nav-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Onderwerpen</span></a></li>
                 <li><a class="nav-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archief</span></a></li>
                 <li><a class="nav-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Over ons</span></a></li>
             </ul>
@@ -108,7 +111,7 @@
                     <nav aria-label="Hoofdmenu" data-i18n-aria-label="schil_hoofdmenu">
                         <ul>
                             <li><a class="menu-link" href="/" data-sectie="nieuws"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
-                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Thema's</span></a></li>
+                            <li><a class="menu-link" href="/themas.html" data-sectie="themas"><span data-i18n="schil_themas">Onderwerpen</span></a></li>
                             <li><a class="menu-link" href="/archief.html" data-sectie="archief"><span data-i18n="schil_archief">Archief</span></a></li>
                             <li><a class="menu-link" href="/over-ons.html"><span data-i18n="schil_over_ons">Over ons</span></a></li>
                         </ul>
@@ -173,6 +176,16 @@
             <p class="type-overline">Gezondheid</p>
             <h1 class="type-display-sm" id="cat-titel">Goed nieuws over Gezondheid</h1>
             <p class="info-tekst__lead">Elke dag een verse selectie positief nieuws over Gezondheid uit de hele wereld.</p>
+            <nav class="onderwerp-keuze" aria-label="Kies een onderwerp">
+                <ul class="topic-links" role="list">
+                <li><a class="topic-link" href="/categories/nl/tech.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#lightbulb"/></svg><span>Tech</span></a></li>
+                <li><a class="topic-link" href="/categories/nl/gezondheid.html" aria-current="page"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#ecg_heart"/></svg><span>Gezondheid</span></a></li>
+                <li><a class="topic-link" href="/categories/nl/wetenschap.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#science"/></svg><span>Wetenschap</span></a></li>
+                <li><a class="topic-link" href="/categories/nl/lifestyle.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#spa"/></svg><span>Lifestyle</span></a></li>
+                <li><a class="topic-link" href="/categories/nl/milieu.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#eco"/></svg><span>Milieu</span></a></li>
+                <li><a class="topic-link" href="/categories/nl/financien.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#euro"/></svg><span>Financiën</span></a></li>
+                </ul>
+            </nav>
         </div>
     </section>
 
@@ -198,7 +211,7 @@
 
     <section class="info-sectie info-sectie--subtiel" aria-labelledby="cat-andere">
         <div class="container info-sectie__binnen">
-            <h2 class="type-heading-lg" id="cat-andere">Andere categorieën</h2>
+            <h2 class="type-heading-lg" id="cat-andere">Andere onderwerpen</h2>
             <ul class="topic-links" role="list">
             <li><a class="topic-link" href="/categories/nl/tech.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#lightbulb"/></svg><span>Tech</span><svg class="icoon topic-link__chevron" aria-hidden="true"><use href="/assets/iconen.svg#chevron_right"/></svg></a></li>
             <li><a class="topic-link" href="/categories/nl/wetenschap.html"><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#science"/></svg><span>Wetenschap</span><svg class="icoon topic-link__chevron" aria-hidden="true"><use href="/assets/iconen.svg#chevron_right"/></svg></a></li>
@@ -234,9 +247,9 @@
                 <h2 class="footer-kolom__titel" id="footer-lezen" data-i18n="schil_lezen">Lezen</h2>
                 <ul>
                     <li><a href="/"><span data-i18n="schil_nieuws">Nieuws</span></a></li>
-                    <li><a href="/themas.html"><span data-i18n="schil_themas">Thema's</span></a></li>
+                    <li><a href="/themas.html"><span data-i18n="schil_themas">Onderwerpen</span></a></li>
+                    <li><a href="/themas.html#week-kop"><span data-i18n="v5_th_week">Weekthema's</span></a></li>
                     <li><a href="/archief.html"><span data-i18n="schil_archief">Archief</span></a></li>
-                    <li><a href="/themas.html#onderwerpen-kop"><span data-i18n="schil_categorieen">Categorieën</span></a></li>
                 </ul>
             </nav>
 
