@@ -1,10 +1,26 @@
 {
- "gegenereerd": "2026-11-15T18:36:48.589Z",
+ "gegenereerd": "2026-11-16T05:21:02.779Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "1794806456816y2t6lzgo5",
+     "titel": "Voyager 1 bereikt één lichtdag van de Aarde",
+     "teaser": "NASA's Voyager 1, het verst gereisde door mensen gemaakte object, bereikt woensdag om 5:16 uur ET een nieuwe mijlpaal: een afstand van één lichtdag van de Aarde, meer dan 16 miljard mijl, na 49 jaar, twee maanden en 11 dagen reizen. NASA viert dit met 'Shine Bright for Voyager's Light-Day' en vraagt het publiek om dinsdagavond de roepnaam V-G-R in...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/nl/voyager-1-bereikt-een-lichtdag-van-de-aarde-1794806456816y2t6lzgo5.html"
+    },
+    {
+     "id": "1794806430494dh8oi8f6e",
+     "titel": "Wereldprimeur: beenmergtransplantatie geneest aplastische anemie",
+     "teaser": "Een katholiek zorgsysteem in het Amerikaanse Midwesten, Franciscan Health, heeft de wereldwijd eerste gemelde beenmergtransplantatie voor een niet-kwaadaardige ziekte succesvol voltooid. Artsen gebruikten beenmerg van een overleden orgaandonor om een 40-jarige vrouw met aplastische anemie te behandelen. Na tien jaar ziekte en meerdere mislukte behandelingen onderging zij op 18 april een stamceltransplantatie. Zes maanden later heeft het donormerg aangeslagen en...",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/nl/wereldprimeur-beenmergtransplantatie-geneest-aplastische-anemie-1794806430494dh8oi8f6e.html"
+    },
     {
      "id": "1794767752178r7rk1mqo1",
      "titel": "Airbnb-oprichter Chesky schenkt $100 miljoen aan parken San Francisco",
@@ -28,22 +44,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/echtpaar-met-autisme-en-adhd-maakt-vieze-straatborden-schoon-in-brighton-17947201234945qled3tv1.html"
-    },
-    {
-     "id": "17946783500847nw336pba",
-     "titel": "Ada Le Poidevin verborg Britse soldaten voor nazi's op Guernsey",
-     "teaser": "De heldhaftige oorlogsdaden van de Britse winkelierster Ada Le Poidevin zijn 40 jaar na haar dood aan het licht gekomen. Tijdens de Tweede Wereldoorlog verborg zij, samen met haar man Walter, drie Britse commando's - korporaal Dennis Dumper, soldaat Fred Drain en soldaat Andrew Ross - in hun tuinschuur op het door nazi's bezette Guernsey, ondanks Duitse troepen die naast...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/ada-le-poidevin-verborg-britse-soldaten-voor-nazi-s-op-guernsey-17946783500847nw336pba.html"
-    },
-    {
-     "id": "1794678322616t56aulc0t",
-     "titel": "Atollen Bikar en Bokak worden nieuw zeereservaat",
-     "teaser": "In de Marshalleilanden zijn de koraalatollen Bikar en Bokak uitgeroepen tot onderdeel van het eerste nationale zeereservaat van het land. Wetenschappers noemen de twee afgelegen atollen, gelegen tussen Hawaï en de Filipijnen, een van de laatste vrijwel ongerepte ecosystemen ter wereld. Onderzoekers brachten in 2023 uitgebreid de zee-, land- en luchtecosystemen in kaart, met tellingen van zeevogelkolonies, schildpadnesten, koraalriffen en...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/atollen-bikar-en-bokak-worden-nieuw-zeereservaat-1794678322616t56aulc0t.html"
     }
    ],
    "dagoverzichten": [
@@ -53,18 +53,27 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-14",
      "url": "https://brightnews.online/articles/nl/groot-geld-kleine-moeite-en-een-oud-geheim-drie-vormen-van-goedheid-dg-20261114-lifestyle.html"
-    },
-    {
-     "id": "dg-20261112-lifestyle",
-     "titel": "Verborgen schatten en oude banden komen aan het licht",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-12",
-     "url": "https://brightnews.online/articles/nl/verborgen-schatten-en-oude-banden-komen-aan-het-licht-dg-20261112-lifestyle.html"
     }
    ]
   },
   "en": {
    "top": [
+    {
+     "id": "1794806456816y2t6lzgo5",
+     "titel": "Voyager 1 reaches one light-day from Earth",
+     "teaser": "NASA's Voyager 1, the farthest human-made object ever to travel, reaches a new milestone on Wednesday at 5:16 a.m. ET: a distance of one light-day from Earth, more than 16 billion miles, after 49 years, two months and 11 days of travel. NASA is celebrating this with 'Shine Bright for Voyager's Light-Day' and is asking the public to signal the...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/en/voyager-1-reaches-one-light-day-from-earth-1794806456816y2t6lzgo5.html"
+    },
+    {
+     "id": "1794806430494dh8oi8f6e",
+     "titel": "World premiere: bone marrow transplant cures aplastic anemia",
+     "teaser": "A Catholic healthcare system in the American Midwest, Franciscan Health, has successfully completed the world's first reported bone marrow transplant for a non-malignant disease. Doctors used bone marrow from a deceased organ donor to treat a 40-year-old woman with aplastic anemia. After ten years of illness and multiple failed treatments, she underwent a stem cell transplant on April 18. Six...",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/en/world-premiere-bone-marrow-transplant-cures-aplastic-anemia-1794806430494dh8oi8f6e.html"
+    },
     {
      "id": "1794767752178r7rk1mqo1",
      "titel": "Airbnb founder Chesky donates $100 million to San Francisco parks",
@@ -88,22 +97,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/couple-with-autism-and-adhd-clean-dirty-street-signs-in-brighton-17947201234945qled3tv1.html"
-    },
-    {
-     "id": "17946783500847nw336pba",
-     "titel": "Ada Le Poidevin hid British soldiers from Nazis on Guernsey",
-     "teaser": "The heroic wartime deeds of British shopkeeper Ada Le Poidevin have come to light 40 years after her death. During the Second World War, she and her husband Walter hid three British commandos — corporal Dennis Dumper, soldier Fred Drain and soldier Andrew Ross — in their garden shed on Nazi-occupied Guernsey, despite German troops living next door. All three...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/ada-le-poidevin-hid-british-soldiers-from-nazis-on-guernsey-17946783500847nw336pba.html"
-    },
-    {
-     "id": "1794678322616t56aulc0t",
-     "titel": "Atolls Bikar and Bokak become new marine reserve",
-     "teaser": "In the Marshall Islands, the coral atolls Bikar and Bokak have been designated as part of the country's first national marine reserve. Scientists describe the two remote atolls, located between Hawaii and the Philippines, as one of the last virtually pristine ecosystems in the world. Researchers conducted extensive surveys in 2023 of the sea, land and air ecosystems, including counts...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/atolls-bikar-and-bokak-become-new-marine-reserve-1794678322616t56aulc0t.html"
     }
    ],
    "dagoverzichten": [
@@ -113,18 +106,27 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-14",
      "url": "https://brightnews.online/articles/en/big-money-small-effort-and-an-old-secret-three-forms-of-goodness-dg-20261114-lifestyle.html"
-    },
-    {
-     "id": "dg-20261112-lifestyle",
-     "titel": "Hidden treasures and old bonds come to light",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-12",
-     "url": "https://brightnews.online/articles/en/hidden-treasures-and-old-bonds-come-to-light-dg-20261112-lifestyle.html"
     }
    ]
   },
   "de": {
    "top": [
+    {
+     "id": "1794806456816y2t6lzgo5",
+     "titel": "Voyager 1 erreicht einen Lichttag Entfernung von der Erde",
+     "teaser": "NASAs Voyager 1, das am weitesten gereiste von Menschen geschaffene Objekt, erreicht am Mittwoch um 5:16 Uhr ET einen neuen Meilenstein: eine Entfernung von einem Lichttag von der Erde, mehr als 16 Milliarden Meilen, nach 49 Jahren, zwei Monaten und 11 Tagen Reise. NASA feiert dies mit »Shine Bright for Voyager's Light-Day« und fordert die Öffentlichkeit auf, am Dienstagabend den...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/de/voyager-1-erreicht-einen-lichttag-entfernung-von-der-erde-1794806456816y2t6lzgo5.html"
+    },
+    {
+     "id": "1794806430494dh8oi8f6e",
+     "titel": "Weltpremiere: Knochenmarktransplantation heilt aplastische Anämie",
+     "teaser": "Ein katholisches Gesundheitssystem im amerikanischen Mittleren Westen, Franciscan Health, hat die weltweit erste gemeldete Knochenmarktransplantation für eine nicht-bösartige Erkrankung erfolgreich abgeschlossen. Ärzte verwendeten Knochenmark eines verstorbenen Organspenders, um eine 40-jährige Frau mit aplastischer Anämie zu behandeln. Nach zehn Jahren Krankheit und mehreren fehlgeschlagenen Behandlungen unterzog sie sich am 18. April einer Stammzelltransplantation. Sechs Monate später war das Spendermark angewachsen und...",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/de/weltpremiere-knochenmarktransplantation-heilt-aplastische-anamie-1794806430494dh8oi8f6e.html"
+    },
     {
      "id": "1794767752178r7rk1mqo1",
      "titel": "Airbnb-Gründer Chesky spendet $100 Millionen an Parks in San Francisco",
@@ -148,22 +150,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/ehepaar-mit-autismus-und-adhs-reinigt-schmutzige-stra-enschilder-in-brighton-17947201234945qled3tv1.html"
-    },
-    {
-     "id": "17946783500847nw336pba",
-     "titel": "Ada Le Poidevin verbarg britische Soldaten vor Nazis auf Guernsey",
-     "teaser": "Die heldenhaften Kriegstaten der britischen Ladenbesitzerin Ada Le Poidevin sind 40 Jahre nach ihrem Tod ans Licht gekommen. Während des Zweiten Weltkriegs verbarg sie zusammen mit ihrem Mann Walter drei britische Kommandos – Unteroffizier Dennis Dumper, Soldat Fred Drain und Soldat Andrew Ross – in ihrem Gartenschuppen auf dem von Nazis besetzten Guernsey, obwohl deutsche Truppen neben ihnen wohnten. Alle...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/ada-le-poidevin-verbarg-britische-soldaten-vor-nazis-auf-guernsey-17946783500847nw336pba.html"
-    },
-    {
-     "id": "1794678322616t56aulc0t",
-     "titel": "Atolle Bikar und Bokak werden neues Meeresschutzgebiet",
-     "teaser": "In den Marshallinseln sind die Korallenatolle Bikar und Bokak zum Teil des ersten nationalen Meeresschutzgebiets des Landes erklärt worden. Wissenschaftler bezeichnen die beiden abgelegenen Atolle, die zwischen Hawaii und den Philippinen liegen, als eines der letzten weitgehend unberührten Ökosysteme der Welt. Forscher kartografierten 2023 umfassend die See-, Land- und Luftökosysteme, mit Zählungen von Seevogelkolonien, Schildkrötennestern, Korallenriffen und Fischen. Sie fanden...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/atolle-bikar-und-bokak-werden-neues-meeresschutzgebiet-1794678322616t56aulc0t.html"
     }
    ],
    "dagoverzichten": [
@@ -173,18 +159,27 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-14",
      "url": "https://brightnews.online/articles/de/gro-zugige-spenden-kleine-muhe-und-ein-altes-geheimnis-drei-formen-der-gute-dg-20261114-lifestyle.html"
-    },
-    {
-     "id": "dg-20261112-lifestyle",
-     "titel": "Verborgene Schätze und alte Bindungen kommen ans Licht",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-12",
-     "url": "https://brightnews.online/articles/de/verborgene-schatze-und-alte-bindungen-kommen-ans-licht-dg-20261112-lifestyle.html"
     }
    ]
   },
   "fr": {
    "top": [
+    {
+     "id": "1794806456816y2t6lzgo5",
+     "titel": "Voyager 1 atteint un jour-lumière de la Terre",
+     "teaser": "Voyager 1 de la NASA, l'objet fabriqué par l'homme ayant voyagé le plus loin, atteint mercredi à 5h16 ET une nouvelle étape : une distance d'un jour-lumière de la Terre, plus de 16 milliards de miles, après 49 ans, deux mois et 11 jours de voyage. La NASA célèbre cela avec « Shine Bright for Voyager's Light-Day » et demande...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/fr/voyager-1-atteint-un-jour-lumiere-de-la-terre-1794806456816y2t6lzgo5.html"
+    },
+    {
+     "id": "1794806430494dh8oi8f6e",
+     "titel": "Première mondiale : une greffe de moelle osseuse guérit l'anémie aplasique",
+     "teaser": "Franciscan Health, un système de santé catholique du Midwest américain, a mené à bien la première greffe de moelle osseuse signalée au monde pour une maladie non maligne. Les médecins ont utilisé de la moelle osseuse d'un donneur d'organes décédé pour traiter une femme de 40 ans atteinte d'anémie aplasique. Après dix ans de maladie et plusieurs traitements infructueux, elle...",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/fr/premiere-mondiale-une-greffe-de-moelle-osseuse-guerit-l-anemie-aplasique-1794806430494dh8oi8f6e.html"
+    },
     {
      "id": "1794767752178r7rk1mqo1",
      "titel": "Le fondateur d'Airbnb Chesky offre $100 millions aux parcs de San Francisco",
@@ -208,22 +203,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/un-couple-autiste-avec-tdah-nettoie-les-panneaux-routiers-sales-a-brighton-17947201234945qled3tv1.html"
-    },
-    {
-     "id": "17946783500847nw336pba",
-     "titel": "Ada Le Poidevin cachait des soldats britanniques aux nazis à Guernesey",
-     "teaser": "Les actes de bravoure de la commerçante britannique Ada Le Poidevin ont été révélés 40 ans après sa mort. Pendant la Seconde Guerre mondiale, elle a caché, avec son mari Walter, trois commandos britanniques — le caporal Dennis Dumper, le soldat Fred Drain et le soldat Andrew Ross — dans leur remise de jardin à Guernesey occupée par les nazis,...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/ada-le-poidevin-cachait-des-soldats-britanniques-aux-nazis-a-guernesey-17946783500847nw336pba.html"
-    },
-    {
-     "id": "1794678322616t56aulc0t",
-     "titel": "Les atolls Bikar et Bokak deviennent une nouvelle réserve marine",
-     "teaser": "Aux Îles Marshall, les atolls coralliens Bikar et Bokak ont été désignés comme faisant partie de la première réserve marine nationale du pays. Les scientifiques considèrent ces deux atolls isolés, situés entre Hawaï et les Philippines, comme l'un des derniers écosystèmes pratiquement intacts au monde. Les chercheurs ont cartographié en détail les écosystèmes marins, terrestres et aériens en 2023, avec...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/les-atolls-bikar-et-bokak-deviennent-une-nouvelle-reserve-marine-1794678322616t56aulc0t.html"
     }
    ],
    "dagoverzichten": [
@@ -233,18 +212,27 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-14",
      "url": "https://brightnews.online/articles/fr/gros-argent-petit-effort-et-un-vieux-secret-trois-formes-de-generosite-dg-20261114-lifestyle.html"
-    },
-    {
-     "id": "dg-20261112-lifestyle",
-     "titel": "Des trésors cachés et des liens anciens refont surface",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-12",
-     "url": "https://brightnews.online/articles/fr/des-tresors-caches-et-des-liens-anciens-refont-surface-dg-20261112-lifestyle.html"
     }
    ]
   },
   "es": {
    "top": [
+    {
+     "id": "1794806456816y2t6lzgo5",
+     "titel": "Voyager 1 alcanza un día luz de distancia de la Tierra",
+     "teaser": "Voyager 1 de NASA, el objeto fabricado por humanos que ha viajado más lejos, alcanza el miércoles a las 5:16 horas ET un nuevo hito: una distancia de un día luz de la Tierra, más de 16 mil millones de millas, después de 49 años, dos meses y 11 días de viaje. NASA celebra esto con «Shine Bright for Voyager's...",
+     "score": 9,
+     "categorie": "Science",
+     "url": "https://brightnews.online/articles/es/voyager-1-alcanza-un-dia-luz-de-distancia-de-la-tierra-1794806456816y2t6lzgo5.html"
+    },
+    {
+     "id": "1794806430494dh8oi8f6e",
+     "titel": "Primicia mundial: trasplante de médula ósea cura la anemia aplásica",
+     "teaser": "Un sistema de salud católico en el Medio Oeste estadounidense, Franciscan Health, ha completado con éxito el primer trasplante de médula ósea reportado en el mundo para una enfermedad no maligna. Los médicos utilizaron médula ósea de un donante de órganos fallecido para tratar a una mujer de 40 años con anemia aplásica. Después de diez años de enfermedad y...",
+     "score": 9,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/es/primicia-mundial-trasplante-de-medula-osea-cura-la-anemia-aplasica-1794806430494dh8oi8f6e.html"
+    },
     {
      "id": "1794767752178r7rk1mqo1",
      "titel": "El fundador de Airbnb, Chesky, dona $100 millones a parques de San Francisco",
@@ -268,22 +256,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/una-pareja-con-autismo-y-tdah-limpia-senales-sucias-en-brighton-17947201234945qled3tv1.html"
-    },
-    {
-     "id": "17946783500847nw336pba",
-     "titel": "Ada Le Poidevin escondió soldados británicos de los nazis en Guernsey",
-     "teaser": "Los actos heroicos de guerra de la comerciante británica Ada Le Poidevin salieron a la luz 40 años después de su muerte. Durante la Segunda Guerra Mundial, ella y su marido Walter escondieron a tres comandos británicos —el cabo Dennis Dumper, el soldado Fred Drain y el soldado Andrew Ross— en su cobertizo de jardín en Guernsey, ocupada por los...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/ada-le-poidevin-escondio-soldados-britanicos-de-los-nazis-en-guernsey-17946783500847nw336pba.html"
-    },
-    {
-     "id": "1794678322616t56aulc0t",
-     "titel": "Los atolones Bikar y Bokak se convierten en nueva reserva marina",
-     "teaser": "En las Islas Marshall, los atolones coralinos Bikar y Bokak han sido designados como parte de la primera reserva marina nacional del país. Los científicos consideran estos dos atolones remotos, ubicados entre Hawái y Filipinas, uno de los últimos ecosistemas prácticamente intactos del mundo. Los investigadores realizaron en 2023 un mapeo exhaustivo de los ecosistemas marino, terrestre y aéreo, con...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/los-atolones-bikar-y-bokak-se-convierten-en-nueva-reserva-marina-1794678322616t56aulc0t.html"
     }
    ],
    "dagoverzichten": [
@@ -293,13 +265,6 @@
      "categorie": "Lifestyle",
      "dag": "2026-11-14",
      "url": "https://brightnews.online/articles/es/dinero-grande-poco-esfuerzo-y-un-secreto-antiguo-tres-formas-de-bondad-dg-20261114-lifestyle.html"
-    },
-    {
-     "id": "dg-20261112-lifestyle",
-     "titel": "Tesoros ocultos y lazos antiguos salen a la luz",
-     "categorie": "Lifestyle",
-     "dag": "2026-11-12",
-     "url": "https://brightnews.online/articles/es/tesoros-ocultos-y-lazos-antiguos-salen-a-la-luz-dg-20261112-lifestyle.html"
     }
    ]
   }

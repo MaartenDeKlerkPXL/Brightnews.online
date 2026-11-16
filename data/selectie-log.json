@@ -1,5 +1,41 @@
 [
  {
+  "datum": "2026-11-16T05:19:44.397Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "They Became Pen Pals as Teens, Now 32 Years Later They’re Happily Married",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 2,
+  "totaal": 8,
+  "besluit": "ja",
+  "reden": "Een hartverwarmend verhaal over twee tieners die via penvriendenschap hun grote liefde vonden, positief geformuleerd en persoonlijk herkenbaar."
+ },
+ {
+  "datum": "2026-11-16T05:19:44.397Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "World-First Bone Marrow Transplant Successfully Treats Non-Malignant Disease",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Een medische doorbraak die een patiënt na tien jaar ziekte geneest; kern is herstel en hoop, maatschappelijk relevant en hoopgevend geformuleerd."
+ },
+ {
+  "datum": "2026-11-16T05:19:44.397Z",
+  "bron": "NPR.org",
+  "titel": "Far from home. Voyager 1 is now farther than anything man has sent into space",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Een inspirerend verhaal over menselijke verkenning en collectieve vieringen; positief geformuleerd met een oproep tot gemeenschappelijk handelen."
+ },
+ {
   "datum": "2026-11-15T18:35:29.905Z",
   "bron": "GoodNewsNetwork.org",
   "titel": "San Francisco Gets its Largest-Ever Gift: $100M for Public Parks From Airbnb Founder",
@@ -3562,41 +3598,5 @@
   "totaal": 9,
   "besluit": "ja",
   "reden": "Hoopvol onderzoek naar genezing van neurodegeneratieve ziekten; positief geformuleerd en maatschappelijk zeer relevant."
- },
- {
-  "datum": "2026-10-30T17:50:51.706Z",
-  "bron": "NPR.org",
-  "titel": "How much does pregnancy cost? Be prepared with these tips",
-  "uitsluiting": "listicle",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Zelfhulpadvies in listicle-vorm ('5 tips') zonder verhaal of concrete situatie."
- },
- {
-  "datum": "2026-10-30T17:50:51.706Z",
-  "bron": "NPR.org",
-  "titel": "A Kelvin wave raised sea levels on the West Coast. More are coming",
-  "uitsluiting": "misdaad-of-ramp",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "De kern is een klimaatgerelateerde natuurverschijnsel met waarschuwing ('meer komen'); geen herstel of positieve wending."
- },
- {
-  "datum": "2026-10-30T17:50:51.706Z",
-  "bron": "NPR.org",
-  "titel": "What time is it on the moon?",
-  "uitsluiting": "te-weinig-inhoud",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Tekst breekt af; onvoldoende inhoud om te beoordelen wat het verhaal werkelijk inhoudt."
  }
 ]
