@@ -117,7 +117,7 @@
         artikel.appendChild(B.deelBalk(window.location.href, titelTekst));
         const bronVermelding = el('div', 'source-attribution');
         const aantalBronnen = new Set(refs.map(r => perId.get(String(r.id))?.source).filter(Boolean)).size || refs.length;
-        bronVermelding.appendChild(el('p', null, t('v5_bron_digest', { n: aantalBronnen })));
+        bronVermelding.appendChild(el('p', null, aantalBronnen === 1 ? t('v5_bron_digest_een') : t('v5_bron_digest', { n: aantalBronnen })));
         artikel.appendChild(bronVermelding);
 
         main.replaceChildren(artikel);

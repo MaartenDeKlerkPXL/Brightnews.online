@@ -322,13 +322,13 @@
    Feedback, 404, de foutstaat van de home), dan wordt "Probeer Premium" in
    de header secundair. Sinds 2026-11-16 secundair in plaats van verborgen:
    de header blijft dan op elke pagina gelijk. */
-body:is(:has(.paywall), [data-pagina="contact"], [data-pagina="feedback"], [data-pagina="404"], [data-pagina="fout"]) :is(.navbar, .mobiel-menu) .btn--primary {
+body:is(:has(.paywall, .paywall-plek), [data-pagina="contact"], [data-pagina="feedback"], [data-pagina="404"], [data-pagina="fout"]) :is(.navbar, .mobiel-menu) .btn--primary {
     border-color: var(--border-strong);
     background: var(--surface-default);
     color: var(--text-primary);
 }
 
-body:is(:has(.paywall), [data-pagina="contact"], [data-pagina="feedback"], [data-pagina="404"], [data-pagina="fout"]) :is(.navbar, .mobiel-menu) .btn--primary:hover {
+body:is(:has(.paywall, .paywall-plek), [data-pagina="contact"], [data-pagina="feedback"], [data-pagina="404"], [data-pagina="fout"]) :is(.navbar, .mobiel-menu) .btn--primary:hover {
     background: var(--surface-muted);
 }
 
@@ -1438,6 +1438,19 @@ body[data-pagina="bedankt"] :is(.navbar, .mobiel-menu) .btn--primary {
     list-style: none;
 }
 
+/* Een kop in het archief gaat direct naar het artikel (UX-review fase 3). */
+.archive-day__kop {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.archive-day__kop:hover,
+.archive-day__kop:focus-visible {
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 3px;
+}
+
 .archive-day--leeg .archive-day__aantal {
     color: var(--text-muted);
 }
@@ -1812,6 +1825,23 @@ body[data-pagina="bedankt"] :is(.navbar, .mobiel-menu) .btn--primary {
     font-size: var(--font-size-14);
     line-height: var(--line-height-20);
     font-weight: 500;
+}
+
+/* De vaste plek van de paywall, al in de HTML van een ingekort artikel. Zo
+   verspringt de pagina niet als lees_artikel() na een tel antwoordt, en
+   ziet de lezer meteen waarom de tekst afbreekt (UX-review fase 3). Even
+   hoog als de paywall voor wie niet ingelogd is, de meest voorkomende. */
+.paywall-plek {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 360px;
+    padding: var(--spacing-2xl) var(--spacing-xl);
+    border: var(--border-width-sm) solid var(--border-default);
+    border-radius: var(--radius-2xl);
+    background: var(--surface-subtle);
+    color: var(--text-secondary);
+    text-align: center;
 }
 
 /* Paywall, type Account: e-mailadres en één primaire knop. */

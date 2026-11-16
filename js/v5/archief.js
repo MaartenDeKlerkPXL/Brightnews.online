@@ -1,6 +1,6 @@
 // Archief van redesign v5 (Figma: v5 · Archief). Elke dag één editie, van
 // nieuw naar oud, per maand. Per dag het aantal verhalen, de eerste drie
-// koppen en "Lees de editie". Een dag zonder verhalen staat er ook, eerlijk
+// koppen (links naar het artikel) en "Lees de editie". Een dag zonder verhalen staat er ook, eerlijk
 // (component Archive day, staat Empty).
 //
 // Bron: articles/manifest.json (alleen titels, slugs en datums). De lijst
@@ -33,7 +33,11 @@
             blok.appendChild(el('p', 'archive-day__aantal', B.aantalVerhalen(verhalen.length)));
             const koppen = el('ul', 'archive-day__koppen');
             koppen.setAttribute('role', 'list');
-            verhalen.slice(0, 3).forEach(v => koppen.appendChild(el('li', null, v.titel)));
+            verhalen.slice(0, 3).forEach(v => {
+                const li = el('li');
+                li.appendChild(B.link(B.url.artikel(v.id), 'archive-day__kop', v.titel));
+                koppen.appendChild(li);
+            });
             blok.appendChild(koppen);
         }
         item.appendChild(blok);
