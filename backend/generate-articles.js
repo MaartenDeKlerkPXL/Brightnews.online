@@ -431,7 +431,8 @@ ${header}
         </header>
         <div class="artikel__tekst">
 ${alineas}
-        </div>${refsHtml}
+        </div>${refsHtml}${ingekort ? `
+        <div class="paywall-plek" data-paywall-plek role="status"><p data-i18n="v5_paywall_laden">${escapeHtml(t(lang, 'v5_paywall_laden'))}</p></div>` : ''}
         <div data-deelbalk></div>
 ${bronBlok}
     </article>

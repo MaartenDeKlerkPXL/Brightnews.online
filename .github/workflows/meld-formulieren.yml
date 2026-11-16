@@ -1,0 +1,46 @@
+# De verzamelmail van de ochtend naar info@brightnews.online (TODO 83, fase 3):
+# de feedback op artikelen, en contactberichten die niet direct gemaild zijn.
+# Het script houdt in Supabase bij wat al gemeld is (gemeld_op), dus twee keer
+# draaien stuurt niets dubbel. Niets nieuws: geen mail.
+#
+# 06:30 UTC = 07:30 Amsterdamse tijd in de winter, 08:30 in de zomer.
+
+name: Meldingen van de formulieren
+
+on:
+  schedule:
+    - cron: '30 6 * * *'
+  workflow_dispatch:
+    inputs:
+      droog:
+        description: 'Droogloop: laat de mail zien, verstuur niets'
+        type: boolean
+        default: true
+
+concurrency:
+  group: meld-formulieren
+  cancel-in-progress: false
+
+jobs:
+  melden:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - name: Verzamelmail versturen
+        env:
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: |
+          if [ "${{ inputs.droog }}" = "true" ]; then
+            node backend/meld-formulieren.js --droog
+          else
+            node backend/meld-formulieren.js
+          fi

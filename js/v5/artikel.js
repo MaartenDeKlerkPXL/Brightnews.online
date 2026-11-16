@@ -198,7 +198,10 @@
         }
         const client = window.supabaseClient;
         if (!client) return { staat: '4' };
-        await window.bnAccount;
+        // Niet ingelogd: dat weet de pagina zelf al, zonder aanroep (scheelt
+        // een rondje naar Supabase voor de paywall verschijnt).
+        const account = await window.bnAccount;
+        if (!account?.gebruiker && !account?.fout) return { staat: '4' };
         const { data, error } = await client.rpc('lees_artikel', { p_id: String(id), p_lang: taal });
         if (error || !data) {
             // Geen verbinding of een storing: de samenvatting, zonder paywall
@@ -212,6 +215,8 @@
             case 'anoniem': return { staat: '4' };
             case 'premium': return { staat: '1', tekst: data.tekst };
             case 'op': return { staat: '3' };
+            // Een dagoverzicht kost geen tegoed: de hele tekst, geen paywall.
+            case 'dagoverzicht': return { staat: null, tekst: data.tekst };
             case 'gratis':
                 return { staat: '2', tekst: data.tekst, over: Math.max(limiet - (Number(data.gebruikt) || 0), 0), limiet };
             default: return { staat: null };    // geen_tekst: alleen de samenvatting
@@ -331,9 +336,12 @@
             const alineas = String(lezen.tekst || '').split(/\n+/).map(a => a.trim()).filter(Boolean);
             if (alineas.length) blok.querySelector('.artikel__tekst').replaceChildren(...alineas.map(a => el('p', null, a)));
             blok.querySelectorAll(':scope > .paywall, :scope > .paywall-credit').forEach(n => n.remove());
-            if (lezen.staat === '2') plek.before(tegoedRegel(lezen.over, lezen.limiet));
-            if (lezen.staat === '3') plek.before(paywall());
-            if (lezen.staat === '4') plek.before(accountPaywall());
+            // De vaste plek (in de HTML, zie generate-articles.js) maakt
+            // plaats voor de echte paywall, of verdwijnt als er geen komt.
+            const wacht = blok.querySelector(':scope > [data-paywall-plek]');
+            const nieuw = { 2: () => tegoedRegel(lezen.over, lezen.limiet), 3: paywall, 4: accountPaywall }[lezen.staat]?.();
+            if (nieuw) (wacht || plek).before(nieuw);
+            wacht?.remove();
             plek.replaceChildren(B.deelBalk(canoniek, titel));
         });
 

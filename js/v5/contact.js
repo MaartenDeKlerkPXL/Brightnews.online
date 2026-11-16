@@ -75,6 +75,7 @@
         teller();
 
         $('ct-privacy').replaceChildren(B.zinMetDelen('v5_ct_privacy', { privacy: B.link(B.url.privacy(), null, t('v5_in_privacy')) }));
+        $('ct-mail').replaceChildren(B.zinMetDelen('v5_ct_liever_mail', { adres: B.link('mailto:info@brightnews.online', null, 'info@brightnews.online') }));
         const naar = { home: B.url.home(), feedback: B.url.feedback(), account: B.url.account(), inloggen: B.url.inloggen() };
         document.querySelectorAll('#inhoud [data-naar]').forEach(a => { a.href = B.metTestdag(naar[a.dataset.naar]); });
         if (antwoordNaar) $('ct-antwoord-naar').textContent = t('v5_ct_bedankt_tekst', { email: antwoordNaar });

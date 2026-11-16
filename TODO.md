@@ -237,6 +237,22 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
     - Vandaag bovenaan;
     - Gisteren met foto's en het dagoverzicht als kop;
     - het zonnetje uit het logo bij "Je bent helemaal bij".
+  - ✅ *Fase 3 gebouwd op 2026-11-16 (PR `maarten/ux-fase3-artikel-teksten`):*
+    - een vaste plek voor de paywall in de HTML ("Even kijken hoe je verder
+      kunt lezen…"), even hoog als de paywall; niet ingelogd vraagt de pagina
+      Supabase niets meer;
+    - Premium en de paywall zeggen precies wat gratis is (het begin van elk
+      verhaal; met een account 5 per maand en elk dagoverzicht);
+    - het vinkje: "Ik wil dat mijn gratis proefmaand van Premium meteen begint…";
+    - koppen in het archief zijn links; "1 bron"; het mailadres onder Contact;
+    - `supabase/fase3-meldingen-2026-11-16.sql`: dagoverzicht kost geen tegoed
+      (status `dagoverzicht`), contactbericht direct als mail (trigger, pg_net,
+      Resend; hooguit 20 per uur), `gemeld_op` op beide tabellen;
+    - `backend/meld-formulieren.js` + Action "Meldingen van de formulieren"
+      (06:30 UTC): de verzamelmail met feedback en niet-gemailde contactberichten.
+    - **Maarten, één keer:** in Supabase → Project Settings → Vault een secret
+      `resend_api_key` met de Resend-sleutel. Tot dan gaan contactberichten mee
+      in de verzamelmail van de ochtend.
 
 - [ ] **80. Branding vóór de lancering: favicon, deelafbeelding en sociale
   media in de v5-stijl.** *(Maarten, 2026-11-12)* De site is v5, maar wat
