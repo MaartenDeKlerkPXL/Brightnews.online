@@ -35,9 +35,9 @@
         const tekst = el('div', 'source-item__tekst');
         if (artikel && artikel.category) tekst.appendChild(el('span', 'categorie-label', B.categorieLabel(artikel.category)));
         const titel = el('h3', 'source-item__titel');
-        // Staat het verhaal nog in de feed, dan de v5-artikelpagina; anders
-        // is er in v5 nog geen pagina en is de kop gewone tekst.
-        if (artikel) titel.appendChild(B.link(B.url.artikel(ref.id), null, artikel.title));
+        // Staat het verhaal nog in de feed, dan zijn artikelpagina; anders
+        // is de kop gewone tekst.
+        if (artikel) titel.appendChild(B.link(B.url.artikel(ref.id, artikel.slug), null, artikel.title));
         else titel.textContent = ref.title;
         tekst.appendChild(titel);
         if (artikel) {

@@ -110,7 +110,7 @@
         $('fb-naar-vandaag').href = B.metTestdag(B.url.home());
 
         if (artikel) {
-            const terug = B.metTestdag(B.url.artikel(artikel.id));
+            const terug = B.metTestdag(B.url.artikel(artikel.id, artikel.slug));
             [$('fb-terug'), $('fb-terug-artikel')].forEach(a => { a.href = terug; a.hidden = false; });
             const cat = B.categorieLabel(artikel.category);
             document.querySelectorAll('[data-artikel]').forEach(vak => {

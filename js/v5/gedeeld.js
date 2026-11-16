@@ -234,7 +234,7 @@
             if (id.startsWith('dg-')) continue;
             const dag = dagVan(item.date);
             if (!dagen.has(dag)) dagen.set(dag, []);
-            dagen.get(dag).push({ id, date: item.date, titel: item.titles[taal()] || item.titles.en || '' });
+            dagen.get(dag).push({ id, date: item.date, titel: item.titles[taal()] || item.titles.en || '', slug: item.titles[taal()] ? item.slugs?.[taal()] : null });
         }
         for (const lijst of dagen.values()) lijst.sort((a, b) => new Date(b.date) - new Date(a.date));
         return dagen;
@@ -295,7 +295,11 @@
     // feed), dan krijgt de link geen adres: null.
     const url = {
         home: () => '/',
-        artikel: id => `/artikel.html?id=${encodeURIComponent(id)}`,
+        // Direct naar de statische pagina als de feed of het manifest de slug
+        // kent (TODO 78); anders artikel.html, dat doorstuurt.
+        artikel: (id, slug) => (slug && /^[a-z0-9-]+$/.test(slug)
+            ? `/articles/${taal()}/${slug}-${encodeURIComponent(id)}.html`
+            : `/artikel.html?id=${encodeURIComponent(id)}`),
         dagoverzicht: dag => `/dagoverzicht.html?datum=${dag}`,
         // De categoriepagina (backend/generate-categorieen.js): de slug is de vertaalde naam.
         categorie: cat => (CATEGORIEEN[cat] ? `/categories/${taal()}/${maakSlug(t(CATEGORIEEN[cat].sleutel), 'categorie')}.html` : null),
@@ -424,7 +428,7 @@
         const label = categorieLabel(artikel.category);
         if (label) tekst.appendChild(el('span', vorm === 'overlay' ? 'badge' : 'categorie-label', label));
         const titel = el(kop, 'story-card__titel');
-        const a = link(url.artikel(artikel.id), 'story-card__link', artikel.title);
+        const a = link(url.artikel(artikel.id, artikel.slug), 'story-card__link', artikel.title);
         a.addEventListener('click', () => markeerGelezen(artikel.id));
         titel.appendChild(a);
         tekst.appendChild(titel);
