@@ -103,7 +103,9 @@ async function main() {
         headers: { Authorization: `Bearer ${process.env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
         body: JSON.stringify({ from: `BrightNews <${ADRES}>`, to: [ADRES], subject: mail.onderwerp, text: mail.tekst, ...antwoord }),
     });
-    if (!res.ok) throw new Error(`Resend ${res.status}: ${(await res.text()).slice(0, 200)}`);
+    // Alleen de status: de foutmelding van Resend kan een mailadres herhalen,
+    // en dit log is openbaar.
+    if (!res.ok) throw new Error(`Resend antwoordde ${res.status}`);
 
     // Pas na het versturen afvinken: mislukt de mail, dan komt alles morgen mee.
     const nu = new Date().toISOString();

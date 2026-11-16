@@ -265,6 +265,28 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
     - directe links naar de artikelpagina's (TODO 78): `generate-articles.js`
       zet de slug in `data/news_<taal>.json`, `B.url.artikel(id, slug)`.
     - Eerste echte dagoverzicht: de nachtrun van 17 november (over 16 november).
+  - ✅ *Fase 5 op 2026-11-16:*
+    - **Live doorgelopen:** 30 pagina's × 5 talen × (computer licht +
+      mobiel donker) = 300 weergaven: geen consolefouten, geen ruwe
+      vertaalsleutels, niets te breed, geen kapotte foto's, geen Nederlands op
+      anderstalige pagina's; 819 interne links allemaal 200. Daarnaast met de
+      hand: menu, taalwissel, thema, Esc, vaste header, Premium-vinkje,
+      Contact- en Feedbackfouten, Feedback-link na taalwissel, paywall.
+    - **Review fase 1–4** (aparte reviewer) verwerkt: focus verdwijnt niet meer
+      achter het open menu; paywall-plek klein voor wie ingelogd is;
+      `data-nosnippet` op de plek; de/es: "Rubriken"/"Secciones" voor de
+      onderwerpen (los van "Wochenthemen"/"Temas de la semana"); fr "vous";
+      koppen in oudere edities zijn links; slug pas na het schrijven van de
+      pagina's; verzamelmail logt alleen de status; `permissions: contents: read`.
+    - **Dubbele foto's:** dagoverzichten krijgen overal het merkbeeld en staan
+      niet meer op de onderwerppagina's; de processor gebruikt nu alle
+      reservefoto's (Wetenschap 11 i.p.v. 4, Lifestyle 9, Milieu 10).
+      Het archief (oude Unsplash-foto's) blijft voor na de lancering.
+    - **Cache na een deploy:** sw.js v41 vraagt elk bestand na bij de server
+      (`cache: 'no-cache'`), dus HTML en JS lopen niet meer uit de pas.
+    - **Nog open:** `supabase/fase5-contactmail-zeker-2026-11-16.sql` (een
+      contactmail die Resend weigert, komt dan alsnog in de ochtendmail) wacht
+      op akkoord van Maarten; daarna de Vault-sleutel en één testbericht.
 
 - [ ] **80. Branding vóór de lancering: favicon, deelafbeelding en sociale
   media in de v5-stijl.** *(Maarten, 2026-11-12)* De site is v5, maar wat

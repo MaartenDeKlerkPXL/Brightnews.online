@@ -309,7 +309,9 @@ function paginaHtml(artikel, lang, slugsPerTaal, manifest, burenIndex) {
     const afbeelding = veiligeAfbeelding(artikel.image, reserveAfbeelding(artikel));
     // og:image en JSON-LD vereisen een absolute URL; een root-relatieve
     // reservefoto zou deel-previews (WhatsApp/LinkedIn) breken.
-    const afbeeldingAbsoluut = afbeelding.startsWith('/') ? SITE_URL + afbeelding : afbeelding;
+    // Een dagoverzicht deelt het logo, niet de foto van een van zijn verhalen.
+    const afbeeldingAbsoluut = isDigest ? `${SITE_URL}/assets/brightnews-logo-vierkant.png`
+        : afbeelding.startsWith('/') ? SITE_URL + afbeelding : afbeelding;
     const bron = artikel.source || '';
     const bronLink = veiligeUrl(artikel.link, null);
     const isoDatum = artikel.date && !Number.isNaN(new Date(artikel.date).getTime()) ? new Date(artikel.date).toISOString() : '';
@@ -359,7 +361,11 @@ function paginaHtml(artikel, lang, slugsPerTaal, manifest, burenIndex) {
 
     // Foto: de echte, anders de reservefoto die processor.js koos. Laadt hij
     // niet, dan maakt js/v5/artikel.js er het merkbeeld van (zoals in v5).
-    const beeld = `<img class="artikel__beeld" src="${escapeHtml(afbeelding)}" alt="${escapeHtml(artikel.image_alt || '')}" width="960" height="540" fetchpriority="high" decoding="async">`;
+    // Een dagoverzicht krijgt het merkbeeld: de foto van een van zijn verhalen
+    // stond er anders dubbel (UX-review fase 5).
+    const beeld = isDigest
+        ? '<div class="artikel__beeld merkbeeld" aria-hidden="true"></div>'
+        : `<img class="artikel__beeld" src="${escapeHtml(afbeelding)}" alt="${escapeHtml(artikel.image_alt || '')}" width="960" height="540" fetchpriority="high" decoding="async">`;
 
     // Dagoverzicht: de besproken artikelen, naar hun statische pagina als het
     // manifest die kent, anders de oude route (?id=).
@@ -432,7 +438,8 @@ ${header}
         <div class="artikel__tekst">
 ${alineas}
         </div>${refsHtml}${ingekort ? `
-        <div class="paywall-plek" data-paywall-plek role="status"><p data-i18n="v5_paywall_laden">${escapeHtml(t(lang, 'v5_paywall_laden'))}</p></div>` : ''}
+        <div class="paywall-plek" data-paywall-plek data-nosnippet role="status"><p data-i18n="v5_paywall_laden">${escapeHtml(t(lang, 'v5_paywall_laden'))}</p></div>
+        <script>try{if(localStorage.getItem('sb-rquuqypgaannrakdrabj-auth-token'))document.currentScript.previousElementSibling.classList.add('paywall-plek--kort')}catch(e){}</script>` : ''}
         <div data-deelbalk></div>
 ${bronBlok}
     </article>
@@ -498,21 +505,6 @@ function main() {
         teSchrijven.push([id, perTaal, slugsPerTaal]);
     }
 
-    // De slug ook in de nieuws-JSON (TODO 78): dan linken de kaarten op de
-    // site direct naar de statische pagina, zonder omweg via artikel.html.
-    for (const lang of TALEN) {
-        const pad = path.join(root, `data/news_${lang}.json`);
-        if (!fs.existsSync(pad)) continue;
-        const items = JSON.parse(fs.readFileSync(pad, 'utf8'));
-        let veranderd = false;
-        for (const a of items) {
-            const slug = a.id && manifest.articles[a.id]?.slugs?.[lang];
-            // Zelfde regel als de veilige bestandsnaam hieronder: geen pagina, geen link.
-            if (slug && /^[a-z0-9][a-z0-9-]*$/.test(`${slug}-${a.id}`) && a.slug !== slug) { a.slug = slug; veranderd = true; }
-        }
-        if (veranderd) fs.writeFileSync(pad, `${JSON.stringify(items, null, 2)}\n`);
-    }
-
     // Tweede ronde: schrijven, nu mét een complete burenindex.
     // De uitsluitlijst (punt 3) hoort ook hiér gehonoreerd te worden: een
     // uitgesloten artikel dat nog in de actuele nieuws-JSON staat wordt
@@ -548,6 +540,23 @@ function main() {
             geschreven++;
             if (!bestondAl) nieuw++;
         }
+    }
+
+    // De slug ook in de nieuws-JSON (TODO 78): dan linken de kaarten op de
+    // site direct naar de statische pagina, zonder omweg via artikel.html.
+    // Pas ná het schrijven: stopt het script halverwege, dan wijst er geen
+    // kaart naar een pagina die er nog niet is.
+    for (const lang of TALEN) {
+        const pad = path.join(root, `data/news_${lang}.json`);
+        if (!fs.existsSync(pad)) continue;
+        const items = JSON.parse(fs.readFileSync(pad, 'utf8'));
+        let veranderd = false;
+        for (const a of items) {
+            const slug = a.id && manifest.articles[a.id]?.slugs?.[lang];
+            // Zelfde regel als de veilige bestandsnaam hieronder: geen pagina, geen link.
+            if (slug && /^[a-z0-9][a-z0-9-]*$/.test(`${slug}-${a.id}`) && a.slug !== slug) { a.slug = slug; veranderd = true; }
+        }
+        if (veranderd) fs.writeFileSync(pad, `${JSON.stringify(items, null, 2)}\n`);
     }
 
     fs.mkdirSync(path.dirname(manifestPad), { recursive: true });

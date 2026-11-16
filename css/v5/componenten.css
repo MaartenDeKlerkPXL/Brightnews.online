@@ -1844,6 +1844,13 @@ body[data-pagina="bedankt"] :is(.navbar, .mobiel-menu) .btn--primary {
     text-align: center;
 }
 
+/* Ingelogd (er is een sessie, zie het scriptje in generate-articles.js): dan
+   komt er meestal geen grote paywall maar de volledige tekst of één regel. */
+.paywall-plek--kort {
+    min-height: 0;
+    padding-block: var(--spacing-md);
+}
+
 /* Paywall, type Account: e-mailadres en één primaire knop. */
 .paywall__formulier {
     display: flex;

@@ -92,9 +92,9 @@
             lijst.setAttribute('role', 'list');
             for (const v of verhalen) {
                 const li = el('li');
-                // Zonder categorie: die kent het archief (nog) niet. Zonder
-                // link: oudere artikelen hebben nog geen v5-pagina.
-                li.appendChild(B.headlineItem(v.titel, null, { kop: 'h2' }));
+                // Zonder categorie: die kent het archief (nog) niet. De link
+                // gaat direct naar de artikelpagina (net als in het archief).
+                li.appendChild(B.headlineItem(v.titel, B.url.artikel(v.id, v.slug), { kop: 'h2', id: v.id }));
                 lijst.appendChild(li);
             }
             blok.appendChild(lijst);

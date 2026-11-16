@@ -271,6 +271,14 @@
             if (!isOpen()) open(zichtbareKnop());
         }));
 
+        // Tab je het open paneel uit, dan dicht: met de vaste header zou de
+        // focus anders achter het paneel verdwijnen (WCAG 2.4.11). Zonder
+        // nieuw doel (ander venster) blijft het open.
+        paneel.addEventListener('focusout', e => {
+            const doel = e.relatedTarget;
+            if (isOpen() && doel && !paneel.contains(doel) && !knoppen.includes(doel)) sluit(false);
+        });
+
         document.addEventListener('keydown', e => {
             if (e.key !== 'Escape' || !isOpen()) return;
             const binnen = paneel.contains(document.activeElement) || knoppen.includes(document.activeElement);
