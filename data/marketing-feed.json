@@ -1,10 +1,18 @@
 {
- "gegenereerd": "2026-11-16T21:44:35.833Z",
+ "gegenereerd": "2026-11-17T07:00:41.006Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "1794898793703yx23s50fp",
+     "titel": "Typhoon Project maakt van Grieks kustafval een vervuilingskaart",
+     "teaser": "Sinds juli 2019 reinigt het Typhoon Project moeilijk bereikbare Griekse kustlijnen vanaf een schip van 72 meter. Een bemanning van 20 mensen verzamelt dagelijks 500 tot 1.000 kilo afval met vijf rubberboten. Elk gevonden voorwerp wordt genoteerd, waardoor de grootste database over zeevervuiling in de Middellandse Zee is ontstaan. In totaal is al 1.140 ton afval opgeruimd. Het project, van...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/typhoon-project-maakt-van-grieks-kustafval-een-vervuilingskaart-1794898793703yx23s50fp.html"
+    },
     {
      "id": "1794854058075teinzciwt",
      "titel": "Bijna alle transgender jongeren tevreden over hormoontherapie",
@@ -36,17 +44,16 @@
      "score": 9,
      "categorie": "Health",
      "url": "https://brightnews.online/articles/nl/neupulse-polsapparaat-halveert-bijna-tourette-tics-in-britse-proef-17948161639284hg989uc1.html"
-    },
-    {
-     "id": "1794806456816y2t6lzgo5",
-     "titel": "Voyager 1 bereikt één lichtdag van de Aarde",
-     "teaser": "NASA's Voyager 1, het verst gereisde door mensen gemaakte object, bereikt woensdag om 5:16 uur ET een nieuwe mijlpaal: een afstand van één lichtdag van de Aarde, meer dan 16 miljard mijl, na 49 jaar, twee maanden en 11 dagen reizen. NASA viert dit met 'Shine Bright for Voyager's Light-Day' en vraagt het publiek om dinsdagavond de roepnaam V-G-R in...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/nl/voyager-1-bereikt-een-lichtdag-van-de-aarde-1794806456816y2t6lzgo5.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261116-dag",
+     "titel": "Verre reizen, slim afval en een liefde die standhield",
+     "categorie": null,
+     "dag": "2026-11-16",
+     "url": "https://brightnews.online/articles/nl/verre-reizen-slim-afval-en-een-liefde-die-standhield-dg-20261116-dag.html"
+    },
     {
      "id": "dg-20261115-environment",
      "titel": "Van geredde zeehondenpup tot schoner water: het milieunieuws van deze dagen",
@@ -72,6 +79,14 @@
   },
   "en": {
    "top": [
+    {
+     "id": "1794898793703yx23s50fp",
+     "titel": "Typhoon Project turns Greek coastal waste into pollution map",
+     "teaser": "Since July 2019, the Typhoon Project has been cleaning hard-to-reach Greek coastlines from a 72-meter vessel. A crew of 20 people collects 500 to 1,000 kilos of waste daily using five rubber boats. Every item found is recorded, creating the largest database on marine pollution in the Mediterranean Sea. In total, 1,140 tons of waste have been removed so far....",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/typhoon-project-turns-greek-coastal-waste-into-pollution-map-1794898793703yx23s50fp.html"
+    },
     {
      "id": "1794854058075teinzciwt",
      "titel": "Nearly all transgender youth satisfied with hormone therapy",
@@ -103,17 +118,16 @@
      "score": 9,
      "categorie": "Health",
      "url": "https://brightnews.online/articles/en/neupulse-wristband-nearly-halves-tourette-tics-in-british-trial-17948161639284hg989uc1.html"
-    },
-    {
-     "id": "1794806456816y2t6lzgo5",
-     "titel": "Voyager 1 reaches one light-day from Earth",
-     "teaser": "NASA's Voyager 1, the farthest human-made object ever to travel, reaches a new milestone on Wednesday at 5:16 a.m. ET: a distance of one light-day from Earth, more than 16 billion miles, after 49 years, two months and 11 days of travel. NASA is celebrating this with 'Shine Bright for Voyager's Light-Day' and is asking the public to signal the...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/en/voyager-1-reaches-one-light-day-from-earth-1794806456816y2t6lzgo5.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261116-dag",
+     "titel": "Distant travels, smart waste and a love that endured",
+     "categorie": null,
+     "dag": "2026-11-16",
+     "url": "https://brightnews.online/articles/en/distant-travels-smart-waste-and-a-love-that-endured-dg-20261116-dag.html"
+    },
     {
      "id": "dg-20261115-environment",
      "titel": "From rescued seal pup to cleaner water: the environmental news of these days",
@@ -139,6 +153,14 @@
   },
   "de": {
    "top": [
+    {
+     "id": "1794898793703yx23s50fp",
+     "titel": "Typhoon Project macht griechisches Küstenabfall zur Verschmutzungskarte",
+     "teaser": "Seit Juli 2019 reinigt das Typhoon Project schwer erreichbare griechische Küstenlinien von einem 72-Meter-Schiff aus. Eine Besatzung von 20 Personen sammelt täglich 500 bis 1.000 Kilogramm Abfall mit fünf Schlauchbooten. Jeder gefundene Gegenstand wird notiert, wodurch die größte Datenbank über Meeresverschmutzung im Mittelmeer entstanden ist. Insgesamt wurden bereits 1.140 Tonnen Abfall beseitigt. Das Projekt der Public Benefit Foundation Athanassios C....",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/typhoon-project-macht-griechisches-kustenabfall-zur-verschmutzungskarte-1794898793703yx23s50fp.html"
+    },
     {
      "id": "1794854058075teinzciwt",
      "titel": "Fast alle transgender Jugendlichen zufrieden mit Hormontherapie",
@@ -170,17 +192,16 @@
      "score": 9,
      "categorie": "Health",
      "url": "https://brightnews.online/articles/de/neupulse-armband-halbiert-tourette-tics-in-britischer-studie-17948161639284hg989uc1.html"
-    },
-    {
-     "id": "1794806456816y2t6lzgo5",
-     "titel": "Voyager 1 erreicht einen Lichttag Entfernung von der Erde",
-     "teaser": "NASAs Voyager 1, das am weitesten gereiste von Menschen geschaffene Objekt, erreicht am Mittwoch um 5:16 Uhr ET einen neuen Meilenstein: eine Entfernung von einem Lichttag von der Erde, mehr als 16 Milliarden Meilen, nach 49 Jahren, zwei Monaten und 11 Tagen Reise. NASA feiert dies mit »Shine Bright for Voyager's Light-Day« und fordert die Öffentlichkeit auf, am Dienstagabend den...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/de/voyager-1-erreicht-einen-lichttag-entfernung-von-der-erde-1794806456816y2t6lzgo5.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261116-dag",
+     "titel": "Weite Reisen, intelligente Abfallwirtschaft und eine Liebe, die Bestand hatte",
+     "categorie": null,
+     "dag": "2026-11-16",
+     "url": "https://brightnews.online/articles/de/weite-reisen-intelligente-abfallwirtschaft-und-eine-liebe-die-bestand-hatte-dg-20261116-dag.html"
+    },
     {
      "id": "dg-20261115-environment",
      "titel": "Von geretteter Seehundwelpe bis zu sauberem Wasser: die Umweltnachrichten dieser Tage",
@@ -206,6 +227,14 @@
   },
   "fr": {
    "top": [
+    {
+     "id": "1794898793703yx23s50fp",
+     "titel": "Le Typhoon Project transforme les déchets côtiers grecs en carte de pollution",
+     "teaser": "Depuis juillet 2019, le Typhoon Project nettoie les côtes grecques difficiles d'accès à partir d'un navire de 72 mètres. Un équipage de 20 personnes collecte quotidiennement 500 à 1.000 kilos de déchets avec cinq bateaux pneumatiques. Chaque objet trouvé est enregistré, ce qui a permis de créer la plus grande base de données sur la pollution marine en Méditerranée. Au...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/le-typhoon-project-transforme-les-dechets-cotiers-grecs-en-carte-de-pollution-1794898793703yx23s50fp.html"
+    },
     {
      "id": "1794854058075teinzciwt",
      "titel": "Presque tous les jeunes transgenres satisfaits de l'hormonothérapie",
@@ -237,17 +266,16 @@
      "score": 9,
      "categorie": "Health",
      "url": "https://brightnews.online/articles/fr/le-bracelet-neupulse-reduit-presque-de-moitie-les-tics-de-tourette-dans-un-essai-17948161639284hg989uc1.html"
-    },
-    {
-     "id": "1794806456816y2t6lzgo5",
-     "titel": "Voyager 1 atteint un jour-lumière de la Terre",
-     "teaser": "Voyager 1 de la NASA, l'objet fabriqué par l'homme ayant voyagé le plus loin, atteint mercredi à 5h16 ET une nouvelle étape : une distance d'un jour-lumière de la Terre, plus de 16 milliards de miles, après 49 ans, deux mois et 11 jours de voyage. La NASA célèbre cela avec « Shine Bright for Voyager's Light-Day » et demande...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/fr/voyager-1-atteint-un-jour-lumiere-de-la-terre-1794806456816y2t6lzgo5.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261116-dag",
+     "titel": "Des voyages lointains, des poubelles intelligentes et un amour qui a tenu bon",
+     "categorie": null,
+     "dag": "2026-11-16",
+     "url": "https://brightnews.online/articles/fr/des-voyages-lointains-des-poubelles-intelligentes-et-un-amour-qui-a-tenu-bon-dg-20261116-dag.html"
+    },
     {
      "id": "dg-20261115-environment",
      "titel": "D'un phoque sauvé à une eau plus propre : les actualités environnementales de ces jours",
@@ -273,6 +301,14 @@
   },
   "es": {
    "top": [
+    {
+     "id": "1794898793703yx23s50fp",
+     "titel": "El Proyecto Typhoon convierte los residuos costeros griegos en un mapa de contaminación",
+     "teaser": "Desde julio de 2019, el Proyecto Typhoon limpia costas griegas de difícil acceso desde un barco de 72 metros. Una tripulación de 20 personas recoge diariamente entre 500 y 1.000 kilos de residuos con cinco botes de goma. Cada objeto encontrado se registra, lo que ha originado la mayor base de datos sobre contaminación marina en el Mediterráneo. En total...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/el-proyecto-typhoon-convierte-los-residuos-costeros-griegos-en-un-mapa-de-contam-1794898793703yx23s50fp.html"
+    },
     {
      "id": "1794854058075teinzciwt",
      "titel": "Casi todos los jóvenes transgénero satisfechos con la terapia hormonal",
@@ -304,17 +340,16 @@
      "score": 9,
      "categorie": "Health",
      "url": "https://brightnews.online/articles/es/el-dispositivo-de-muneca-neupulse-reduce-casi-a-la-mitad-los-tics-de-tourette-en-17948161639284hg989uc1.html"
-    },
-    {
-     "id": "1794806456816y2t6lzgo5",
-     "titel": "Voyager 1 alcanza un día luz de distancia de la Tierra",
-     "teaser": "Voyager 1 de NASA, el objeto fabricado por humanos que ha viajado más lejos, alcanza el miércoles a las 5:16 horas ET un nuevo hito: una distancia de un día luz de la Tierra, más de 16 mil millones de millas, después de 49 años, dos meses y 11 días de viaje. NASA celebra esto con «Shine Bright for Voyager's...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/es/voyager-1-alcanza-un-dia-luz-de-distancia-de-la-tierra-1794806456816y2t6lzgo5.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261116-dag",
+     "titel": "Viajes lejanos, basura inteligente y un amor que perduró",
+     "categorie": null,
+     "dag": "2026-11-16",
+     "url": "https://brightnews.online/articles/es/viajes-lejanos-basura-inteligente-y-un-amor-que-perduro-dg-20261116-dag.html"
+    },
     {
      "id": "dg-20261115-environment",
      "titel": "De una cría de foca rescatada a aguas más limpias: las noticias ambientales de estos días",

@@ -6,13 +6,28 @@
         <atom:link href="https://brightnews.online/feed-en.xml" rel="self" type="application/rss+xml"/>
         <description>A fresh pick of good news from around the world, every day. Enjoy the read!</description>
         <language>en-us</language>
-        <lastBuildDate>Mon, 16 Nov 2026 18:36:13 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 17 Nov 2026 07:00:38 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Your Daily Dose of Positivity</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Distant travels, smart waste and a love that endured</title>
+            <link>https://brightnews.online/articles/en/distant-travels-smart-waste-and-a-love-that-endured-dg-20261116-dag.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/distant-travels-smart-waste-and-a-love-that-endured-dg-20261116-dag.html</guid>
+            <pubDate>Tue, 17 Nov 2026 07:00:38 GMT</pubDate>
+            <description>Sometimes the news is about distance, about time and about what we learn along the way. Today it&apos;s about three different journeys that all show something about perseverance. Take Voyager 1. After 49 years, two months and 11 days, this spacecraft reaches a distance of one light-day from Earth, more than 16 billion miles [1]. It once flew past Jupiter and Saturn, discovered a ring around Jupiter and</description>
+        </item>
+        <item>
+            <title>Typhoon Project turns Greek coastal waste into pollution map</title>
+            <link>https://brightnews.online/articles/en/typhoon-project-turns-greek-coastal-waste-into-pollution-map-1794898793703yx23s50fp.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/typhoon-project-turns-greek-coastal-waste-into-pollution-map-1794898793703yx23s50fp.html</guid>
+            <pubDate>Tue, 17 Nov 2026 06:59:56 GMT</pubDate>
+            <description>Since July 2019, the Typhoon Project has been cleaning hard-to-reach Greek coastlines from a 72-meter vessel. A crew of 20 people collects 500 to 1,000 kilos of waste daily using five rubber boats. Every item found is recorded, creating the largest database on marine pollution in the Mediterranean Sea. In total, 1,140 tons of waste have been removed so far....</description>
+            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/beautiful-greek-coastline-and-seascape-Depositphotos_126144814_S.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>From rescued seal pup to cleaner water: the environmental news of these days</title>
             <link>https://brightnews.online/articles/en/from-rescued-seal-pup-to-cleaner-water-the-environmental-news-of-these-days-dg-20261115-environment.html</link>
@@ -236,22 +251,6 @@
             <pubDate>Thu, 12 Nov 2026 16:24:29 GMT</pubDate>
             <description>After 100 years, Gretchen Sollo experienced her first birthday celebration, organized by employees of Lowe&apos;s in Bradley, Illinois. Following a stroke, Sollo walked through the store&apos;s aisles daily to stay dry and keep moving. Over five years, she covered an estimated 1,500 miles and built friendships with staff members who tracked her laps and sometimes even competed with her. When...</description>
             <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/fw-gretchen.png" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Los Angeles bans oil drilling permanently</title>
-            <link>https://brightnews.online/articles/en/los-angeles-bans-oil-drilling-permanently-1794463996470mjxfozzef.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/los-angeles-bans-oil-drilling-permanently-1794463996470mjxfozzef.html</guid>
-            <pubDate>Thu, 12 Nov 2026 06:13:19 GMT</pubDate>
-            <description>After more than a decade of activism by residents, the Los Angeles City Council voted on October 28 in favor of an ordinance that prohibits oil drilling within city limits. New wells are banned immediately, existing wells cannot be drilled deeper or re-drilled, and all active operations must be completely shut down within twenty years. Los Angeles is now the...</description>
-            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/oil-pump-jack-city-limits-Depositphotos_199434004_S.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>280 overlooked ice age engravings discovered in Spanish cave</title>
-            <link>https://brightnews.online/articles/en/280-overlooked-ice-age-engravings-discovered-in-spanish-cave-1794438369251cckz8f0n6.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/280-overlooked-ice-age-engravings-discovered-in-spanish-cave-1794438369251cckz8f0n6.html</guid>
-            <pubDate>Wed, 11 Nov 2026 23:06:13 GMT</pubDate>
-            <description>At the Cova de la Font Major in Catalonia, researchers have discovered 280 engravings from the Paleolithic period, the second-largest collection of ice age engravings ever found on Spain&apos;s Mediterranean coast. For more than sixty years, visitors, cave explorers and treasure hunters walked past them without recognizing their prehistoric origin. Some even carved names and dates over the images. Rese</description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/A-horse-representaion-where-cave-floor-is-used-to-represent-the-ground-credit-2026-Verges-et-al.-Antiquiry-CC-4.0.-BY-SA-e1794413594768.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

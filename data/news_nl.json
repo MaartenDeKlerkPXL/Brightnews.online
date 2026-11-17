@@ -1,5 +1,50 @@
 [
   {
+    "id": "dg-20261116-dag",
+    "type": "digest",
+    "digest_date": "2026-11-16",
+    "title": "Verre reizen, slim afval en een liefde die standhield",
+    "summary": "Soms gaat het nieuws over afstand, over tijd en over wat we onderweg leren. Vandaag draait het om drie verschillende reizen die allemaal iets laten zien over volhouden. Neem Voyager 1. Na 49 jaar, twee maanden en 11 dagen bereikt dit ruimtetuig een afstand van één lichtdag van de Aarde, meer dan 16 miljard mijl [1]. Het vloog ooit langs Jupiter en Saturnus, ontdekte een ring om Jupiter en reist sinds 2012 door de interstellaire ruimte. Aan boord zit nog altijd de Gouden Plaat, met groeten in 35 talen voor wie het ooit vindt. NASA viert de mijlpaal met een...",
+    "image_alt": "Verre reizen, slim afval en een liefde die standhield",
+    "meta_description": "Van Voyager 1 tot slimme prullenbakken in Tokio en herenigde vakantievrienden: het positieve nieuws van vandaag in één overzicht.",
+    "meta_keywords": "Science, Tech, Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": null,
+    "date": "2026-11-17T07:00:38.644Z",
+    "category": null,
+    "refs": [
+      {
+        "id": "1794806456816y2t6lzgo5",
+        "title": "Voyager 1 bereikt één lichtdag van de Aarde"
+      },
+      {
+        "id": "1794854007223k458nb764",
+        "title": "Tokio bestrijdt afvalprobleem met slimme prullenbakken"
+      },
+      {
+        "id": "1794806404503vqvyaq4s3",
+        "title": "Vakantievrienden David en Jodie na 32 jaar getrouwd"
+      }
+    ],
+    "slug": "verre-reizen-slim-afval-en-een-liefde-die-standhield"
+  },
+  {
+    "id": "1794898793703yx23s50fp",
+    "title": "Typhoon Project maakt van Grieks kustafval een vervuilingskaart",
+    "summary": "Sinds juli 2019 reinigt het Typhoon Project moeilijk bereikbare Griekse kustlijnen vanaf een schip van 72 meter. Een bemanning van 20 mensen verzamelt dagelijks 500 tot 1.000 kilo afval met vijf rubberboten. Elk gevonden voorwerp wordt genoteerd, waardoor de grootste database over zeevervuiling in de Middellandse Zee is ontstaan. In totaal is al 1.140 ton afval opgeruimd. Het project, van...",
+    "image_alt": "Vrijwilligers sorteren verzameld afval op een Grieks strand tijdens het Typhoon Project",
+    "meta_description": "Het Typhoon Project ruimt Griekse kusten op en brengt zeevervuiling in kaart met de grootste afvaldatabase van de Middellandse Zee.",
+    "meta_keywords": "Typhoon Project, Griekenland, kustopruiming, zeevervuiling, plastic afval, Middellandse Zee, Cyclone project",
+    "link": "https://www.optimistdaily.com/2026/11/the-greek-coastline-cleanup-that-turned-trash-into-a-pollution-map/",
+    "source": "OptimistDaily.com",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/beautiful-greek-coastline-and-seascape-Depositphotos_126144814_S.jpg",
+    "date": "2026-11-17T06:59:56.346Z",
+    "category": "Environment",
+    "score": 9,
+    "slug": "typhoon-project-maakt-van-grieks-kustafval-een-vervuilingskaart"
+  },
+  {
     "id": "dg-20261115-environment",
     "type": "digest",
     "digest_date": "2026-11-15",
@@ -2721,35 +2766,5 @@
     "category": "Lifestyle",
     "score": 9,
     "slug": "man-springt-op-rijdende-schoolbus-en-redt-18-kinderen"
-  },
-  {
-    "id": "1793383226387sna1ljtfg",
-    "title": "53 orang-oetans gered van bosbranden op Borneo",
-    "summary": "Op Borneo woeden al maanden bos- en veenbranden die de luchtkwaliteit aantasten en het voedselaanbod van orang-oetans vernietigen. De Indonesische non-profit YIARI, die al 18 jaar actief is in primatenbescherming, redde sinds augustus 53 orang-oetans. Veel dieren werden herwilderd in andere bosreservaten, waaronder het vijf uur verderop gelegen Gunung Palung National Park. Het team redde gestrande dieren en moeders met...",
-    "image_alt": "Dr. Karmele Llano Sanchez knuffelt de geredde jonge orang-oetan Irene",
-    "meta_description": "YIARI redde 53 orang-oetans van bosbranden op Borneo en herwilderde velen in beschermde bosgebieden.",
-    "meta_keywords": "orang-oetans, Borneo, bosbranden, YIARI, dierenredding, herwildering, Indonesië",
-    "link": "https://www.goodnewsnetwork.org/53-orangutans-rescued-from-fires-in-borneo/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Dr-Karmele-Llano-Sanchez-rescues-baby-orangutan-Credit-YIARI-BKSDA-and-International-Animal-Rescue-RELEASED.jpg",
-    "date": "2026-10-30T18:00:28.027Z",
-    "category": "Environment",
-    "score": 8,
-    "slug": "53-orang-oetans-gered-van-bosbranden-op-borneo"
-  },
-  {
-    "id": "1793383191308ektznbw95",
-    "title": "Live webcam toont vijf cheetahwelpjes bij moeder Zura",
-    "summary": "Op 5 oktober beviel cheetah Zura van vijf welpjes bij het Smithsonian’s Conservation Institute in Virginia. Via een livewebcam is dag en nacht te zien hoe de moeder voor haar jongen zorgt, compleet met geluiden van zachte chirps, piepjes en gespin terwijl de welpjes drinken, gewassen worden of stoeien. Dezelfde camera wordt gebruikt door de dierenverzorgers in Front Royal om...",
-    "image_alt": "Cheetah Zura verzorgt haar vijf pasgeboren welpjes in hun hol",
-    "meta_description": "Livewebcam toont cheetah Zura met haar vijf nieuwe welpjes bij het Smithsonian’s Conservation Institute in Virginia.",
-    "meta_keywords": "cheetah, Zura, welpjes, Smithsonian, livewebcam, natuurbehoud, Front Royal",
-    "link": "https://www.goodnewsnetwork.org/live-smithsonian-webcam-for-cheetah-den-and-5-cubs/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Cheetah-Cam-screenshot-via-Smithsonian-Conservation-Biology-Institute-.jpg",
-    "date": "2026-10-30T17:59:52.651Z",
-    "category": "Environment",
-    "score": 9,
-    "slug": "live-webcam-toont-vijf-cheetahwelpjes-bij-moeder-zura"
   }
 ]

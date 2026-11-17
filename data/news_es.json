@@ -1,5 +1,50 @@
 [
   {
+    "id": "dg-20261116-dag",
+    "type": "digest",
+    "digest_date": "2026-11-16",
+    "title": "Viajes lejanos, basura inteligente y un amor que perduró",
+    "summary": "A veces las noticias hablan de distancia, de tiempo y de lo que aprendemos en el camino. Hoy se trata de tres viajes diferentes que muestran algo sobre la perseverancia. Tomemos Voyager 1. Después de 49 años, dos meses y 11 días, esta nave espacial alcanza una distancia de un día luz de la Tierra, más de 16 mil millones de millas [1]. Alguna vez voló cerca de Júpiter y Saturno, descubrió un anillo alrededor de Júpiter y viaja por el espacio interestelar desde 2012. A bordo sigue habiendo un Disco de Oro, con saludos en 35 idiomas para quien...",
+    "image_alt": "Viajes lejanos, basura inteligente y un amor que perduró",
+    "meta_description": "De Voyager 1 a papeleras inteligentes en Tokio y amigos de vacaciones reunidos: las noticias positivas de hoy en un resumen.",
+    "meta_keywords": "Science, Tech, Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": null,
+    "date": "2026-11-17T07:00:38.644Z",
+    "category": null,
+    "refs": [
+      {
+        "id": "1794806456816y2t6lzgo5",
+        "title": "Voyager 1 alcanza un día luz de distancia de la Tierra"
+      },
+      {
+        "id": "1794854007223k458nb764",
+        "title": "Tokio combate el problema de residuos con papeleras inteligentes"
+      },
+      {
+        "id": "1794806404503vqvyaq4s3",
+        "title": "Amigos de vacaciones David y Jodie se casan tras 32 años"
+      }
+    ],
+    "slug": "viajes-lejanos-basura-inteligente-y-un-amor-que-perduro"
+  },
+  {
+    "id": "1794898793703yx23s50fp",
+    "title": "El Proyecto Typhoon convierte los residuos costeros griegos en un mapa de contaminación",
+    "summary": "Desde julio de 2019, el Proyecto Typhoon limpia costas griegas de difícil acceso desde un barco de 72 metros. Una tripulación de 20 personas recoge diariamente entre 500 y 1.000 kilos de residuos con cinco botes de goma. Cada objeto encontrado se registra, lo que ha originado la mayor base de datos sobre contaminación marina en el Mediterráneo. En total...",
+    "image_alt": "Voluntarios clasifican residuos recolectados en una playa griega durante el Proyecto Typhoon",
+    "meta_description": "El Proyecto Typhoon limpia costas griegas y cartografía la contaminación marina con la mayor base de datos de residuos del Mediterráneo.",
+    "meta_keywords": "Proyecto Typhoon, Grecia, limpieza costera, contaminación marina, residuos plásticos, Mediterráneo, proyecto Cyclone",
+    "link": "https://www.optimistdaily.com/2026/11/the-greek-coastline-cleanup-that-turned-trash-into-a-pollution-map/",
+    "source": "OptimistDaily.com",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/beautiful-greek-coastline-and-seascape-Depositphotos_126144814_S.jpg",
+    "date": "2026-11-17T06:59:56.346Z",
+    "category": "Environment",
+    "score": 9,
+    "slug": "el-proyecto-typhoon-convierte-los-residuos-costeros-griegos-en-un-mapa-de-contam"
+  },
+  {
     "id": "dg-20261115-environment",
     "type": "digest",
     "digest_date": "2026-11-15",
@@ -2721,35 +2766,5 @@
     "category": "Lifestyle",
     "score": 9,
     "slug": "hombre-salta-a-un-autobus-escolar-en-movimiento-y-rescata-a-18-ninos"
-  },
-  {
-    "id": "1793383226387sna1ljtfg",
-    "title": "53 orangutanes rescatados de incendios forestales en Borneo",
-    "summary": "En Borneo se registran incendios forestales y de turberas desde hace meses que afectan la calidad del aire y destruyen el suministro de alimento de los orangutanes. La organización sin fines de lucro indonesia YIARI, activa en protección de primates desde hace 18 años, ha rescatado 53 orangutanes desde agosto. Muchos animales fueron reintroducidos en otras reservas forestales, incluido el...",
-    "image_alt": "La Dra. Karmele Llano Sanchez abraza a la joven orangutana Irene rescatada",
-    "meta_description": "YIARI rescató 53 orangutanes de incendios forestales en Borneo y reintrodujo a muchos en áreas forestales protegidas.",
-    "meta_keywords": "orangutanes, Borneo, incendios forestales, YIARI, rescate de animales, reintroducción, Indonesia",
-    "link": "https://www.goodnewsnetwork.org/53-orangutans-rescued-from-fires-in-borneo/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Dr-Karmele-Llano-Sanchez-rescues-baby-orangutan-Credit-YIARI-BKSDA-and-International-Animal-Rescue-RELEASED.jpg",
-    "date": "2026-10-30T18:00:28.027Z",
-    "category": "Environment",
-    "score": 8,
-    "slug": "53-orangutanes-rescatados-de-incendios-forestales-en-borneo"
-  },
-  {
-    "id": "1793383191308ektznbw95",
-    "title": "Cámara en directo muestra cinco cachorros de guepardo con su madre Zura",
-    "summary": "El 5 de octubre, la gueparda Zura dio a luz a cinco cachorros en el Smithsonian's Conservation Institute en Virginia. A través de una cámara en directo es posible ver día y noche cómo la madre cuida de sus crías, con sonidos de suaves chirridos, piar y ronroneos mientras los cachorros beben, se lavan o juegan. La misma cámara es...",
-    "image_alt": "La gueparda Zura cuida a sus cinco cachorros recién nacidos en su guarida",
-    "meta_description": "Cámara en directo muestra a la gueparda Zura con sus cinco nuevos cachorros en el Smithsonian's Conservation Institute en Virginia.",
-    "meta_keywords": "guepardo, Zura, cachorros, Smithsonian, cámara en directo, conservación de la naturaleza, Front Royal",
-    "link": "https://www.goodnewsnetwork.org/live-smithsonian-webcam-for-cheetah-den-and-5-cubs/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Cheetah-Cam-screenshot-via-Smithsonian-Conservation-Biology-Institute-.jpg",
-    "date": "2026-10-30T17:59:52.652Z",
-    "category": "Environment",
-    "score": 9,
-    "slug": "camara-en-directo-muestra-cinco-cachorros-de-guepardo-con-su-madre-zura"
   }
 ]

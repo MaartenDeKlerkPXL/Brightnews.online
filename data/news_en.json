@@ -1,5 +1,50 @@
 [
   {
+    "id": "dg-20261116-dag",
+    "type": "digest",
+    "digest_date": "2026-11-16",
+    "title": "Distant travels, smart waste and a love that endured",
+    "summary": "Sometimes the news is about distance, about time and about what we learn along the way. Today it's about three different journeys that all show something about perseverance. Take Voyager 1. After 49 years, two months and 11 days, this spacecraft reaches a distance of one light-day from Earth, more than 16 billion miles [1]. It once flew past Jupiter and Saturn, discovered a ring around Jupiter and has been traveling through interstellar space since 2012. On board is still the Golden Record, with greetings in 35 languages for whoever finds it one day. NASA is celebrating the milestone with...",
+    "image_alt": "Distant travels, smart waste and a love that endured",
+    "meta_description": "From Voyager 1 to smart trash cans in Tokyo and reunited holiday friends: today's positive news in one overview.",
+    "meta_keywords": "Science, Tech, Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": null,
+    "date": "2026-11-17T07:00:38.644Z",
+    "category": null,
+    "refs": [
+      {
+        "id": "1794806456816y2t6lzgo5",
+        "title": "Voyager 1 reaches one light-day from Earth"
+      },
+      {
+        "id": "1794854007223k458nb764",
+        "title": "Tokyo tackles waste problem with smart trash bins"
+      },
+      {
+        "id": "1794806404503vqvyaq4s3",
+        "title": "Holiday friends David and Jodie married after 32 years"
+      }
+    ],
+    "slug": "distant-travels-smart-waste-and-a-love-that-endured"
+  },
+  {
+    "id": "1794898793703yx23s50fp",
+    "title": "Typhoon Project turns Greek coastal waste into pollution map",
+    "summary": "Since July 2019, the Typhoon Project has been cleaning hard-to-reach Greek coastlines from a 72-meter vessel. A crew of 20 people collects 500 to 1,000 kilos of waste daily using five rubber boats. Every item found is recorded, creating the largest database on marine pollution in the Mediterranean Sea. In total, 1,140 tons of waste have been removed so far....",
+    "image_alt": "Volunteers sort collected waste on a Greek beach during the Typhoon Project",
+    "meta_description": "The Typhoon Project cleans Greek coasts and maps marine pollution using the Mediterranean's largest waste database.",
+    "meta_keywords": "Typhoon Project, Greece, coastal cleanup, marine pollution, plastic waste, Mediterranean Sea, Cyclone project",
+    "link": "https://www.optimistdaily.com/2026/11/the-greek-coastline-cleanup-that-turned-trash-into-a-pollution-map/",
+    "source": "OptimistDaily.com",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/beautiful-greek-coastline-and-seascape-Depositphotos_126144814_S.jpg",
+    "date": "2026-11-17T06:59:56.346Z",
+    "category": "Environment",
+    "score": 9,
+    "slug": "typhoon-project-turns-greek-coastal-waste-into-pollution-map"
+  },
+  {
     "id": "dg-20261115-environment",
     "type": "digest",
     "digest_date": "2026-11-15",
@@ -2721,35 +2766,5 @@
     "category": "Lifestyle",
     "score": 9,
     "slug": "man-jumps-onto-moving-school-bus-and-saves-18-children"
-  },
-  {
-    "id": "1793383226387sna1ljtfg",
-    "title": "53 orangutans rescued from forest fires on Borneo",
-    "summary": "Forest and peatland fires have been raging on Borneo for months, damaging air quality and destroying the food supply for orangutans. The Indonesian non-profit YIARI, which has been active in primate conservation for 18 years, has rescued 53 orangutans since August. Many animals were released back into the wild in other forest reserves, including Gunung Palung National Park, located five...",
-    "image_alt": "Dr. Karmele Llano Sanchez cuddles rescued young orangutan Irene",
-    "meta_description": "YIARI rescued 53 orangutans from forest fires on Borneo and released many into protected forest areas.",
-    "meta_keywords": "orangutans, Borneo, forest fires, YIARI, animal rescue, rewilding, Indonesia",
-    "link": "https://www.goodnewsnetwork.org/53-orangutans-rescued-from-fires-in-borneo/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Dr-Karmele-Llano-Sanchez-rescues-baby-orangutan-Credit-YIARI-BKSDA-and-International-Animal-Rescue-RELEASED.jpg",
-    "date": "2026-10-30T18:00:28.027Z",
-    "category": "Environment",
-    "score": 8,
-    "slug": "53-orangutans-rescued-from-forest-fires-on-borneo"
-  },
-  {
-    "id": "1793383191308ektznbw95",
-    "title": "Live webcam shows five cheetah cubs with mother Zura",
-    "summary": "On October 5, cheetah Zura gave birth to five cubs at the Smithsonian's Conservation Institute in Virginia. Through a live webcam, viewers can watch around the clock as the mother cares for her young, complete with the sounds of soft chirps, squeaks and purring as the cubs drink, are groomed or play. The same camera is used by animal care...",
-    "image_alt": "Cheetah Zura cares for her five newborn cubs in their den",
-    "meta_description": "Live webcam shows cheetah Zura with her five new cubs at the Smithsonian's Conservation Institute in Virginia.",
-    "meta_keywords": "cheetah, Zura, cubs, Smithsonian, live webcam, wildlife conservation, Front Royal",
-    "link": "https://www.goodnewsnetwork.org/live-smithsonian-webcam-for-cheetah-den-and-5-cubs/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Cheetah-Cam-screenshot-via-Smithsonian-Conservation-Biology-Institute-.jpg",
-    "date": "2026-10-30T17:59:52.652Z",
-    "category": "Environment",
-    "score": 9,
-    "slug": "live-webcam-shows-five-cheetah-cubs-with-mother-zura"
   }
 ]

@@ -1,5 +1,50 @@
 [
   {
+    "id": "dg-20261116-dag",
+    "type": "digest",
+    "digest_date": "2026-11-16",
+    "title": "Des voyages lointains, des poubelles intelligentes et un amour qui a tenu bon",
+    "summary": "Parfois, l'actualité parle de distance, de temps et de ce que nous apprenons en chemin. Aujourd'hui, il s'agit de trois voyages différents qui montrent tous quelque chose sur la persévérance. Prenez Voyager 1. Après 49 ans, deux mois et 11 jours, cet engin spatial atteint une distance d'un jour-lumière de la Terre, plus de 16 milliards de miles [1]. Il a autrefois survolé Jupiter et Saturne, découvert un anneau autour de Jupiter et traverse l'espace interstellaire depuis 2012. À bord se trouve toujours le Disque d'or, avec des salutations en 35 langues pour celui qui le trouvera un jour. La...",
+    "image_alt": "Des voyages lointains, des poubelles intelligentes et un amour qui a tenu bon",
+    "meta_description": "De Voyager 1 aux poubelles intelligentes de Tokyo et aux amis de vacances réunis : l'actualité positive d'aujourd'hui en un seul aperçu.",
+    "meta_keywords": "Science, Tech, Lifestyle",
+    "link": "",
+    "source": "BrightNews",
+    "image": null,
+    "date": "2026-11-17T07:00:38.644Z",
+    "category": null,
+    "refs": [
+      {
+        "id": "1794806456816y2t6lzgo5",
+        "title": "Voyager 1 atteint un jour-lumière de la Terre"
+      },
+      {
+        "id": "1794854007223k458nb764",
+        "title": "Tokyo combat le problème des déchets avec des poubelles intelligentes"
+      },
+      {
+        "id": "1794806404503vqvyaq4s3",
+        "title": "Des amis de vacances, David et Jodie, mariés après 32 ans"
+      }
+    ],
+    "slug": "des-voyages-lointains-des-poubelles-intelligentes-et-un-amour-qui-a-tenu-bon"
+  },
+  {
+    "id": "1794898793703yx23s50fp",
+    "title": "Le Typhoon Project transforme les déchets côtiers grecs en carte de pollution",
+    "summary": "Depuis juillet 2019, le Typhoon Project nettoie les côtes grecques difficiles d'accès à partir d'un navire de 72 mètres. Un équipage de 20 personnes collecte quotidiennement 500 à 1.000 kilos de déchets avec cinq bateaux pneumatiques. Chaque objet trouvé est enregistré, ce qui a permis de créer la plus grande base de données sur la pollution marine en Méditerranée. Au...",
+    "image_alt": "Des bénévoles trient les déchets collectés sur une plage grecque lors du Typhoon Project",
+    "meta_description": "Le Typhoon Project nettoie les côtes grecques et cartographie la pollution marine avec la plus grande base de données de déchets de la Méditerranée.",
+    "meta_keywords": "Typhoon Project, Grèce, nettoyage côtier, pollution marine, déchets plastiques, Méditerranée, projet Cyclone",
+    "link": "https://www.optimistdaily.com/2026/11/the-greek-coastline-cleanup-that-turned-trash-into-a-pollution-map/",
+    "source": "OptimistDaily.com",
+    "image": "https://www.optimistdaily.com/wp-content/uploads/beautiful-greek-coastline-and-seascape-Depositphotos_126144814_S.jpg",
+    "date": "2026-11-17T06:59:56.346Z",
+    "category": "Environment",
+    "score": 9,
+    "slug": "le-typhoon-project-transforme-les-dechets-cotiers-grecs-en-carte-de-pollution"
+  },
+  {
     "id": "dg-20261115-environment",
     "type": "digest",
     "digest_date": "2026-11-15",
@@ -2721,35 +2766,5 @@
     "category": "Lifestyle",
     "score": 9,
     "slug": "un-homme-saute-sur-un-bus-scolaire-en-marche-et-sauve-18-enfants"
-  },
-  {
-    "id": "1793383226387sna1ljtfg",
-    "title": "53 orangs-outans sauvés des incendies de forêt à Bornéo",
-    "summary": "À Bornéo, des incendies de forêt et de tourbière font rage depuis plusieurs mois, dégradant la qualité de l'air et détruisant les sources de nourriture des orangs-outans. L'organisation à but non lucratif indonésienne YIARI, active depuis 18 ans dans la protection des primates, a secouru 53 orangs-outans depuis août. De nombreux animaux ont été réintroduits dans d'autres réserves forestières, notamment...",
-    "image_alt": "Dr. Karmele Llano Sanchez câline le jeune orang-outan Irene secouru",
-    "meta_description": "YIARI a secouru 53 orangs-outans des incendies de forêt à Bornéo et en a réintroduit beaucoup dans des zones forestières protégées.",
-    "meta_keywords": "orangs-outans, Bornéo, incendies de forêt, YIARI, sauvetage d'animaux, réintroduction, Indonésie",
-    "link": "https://www.goodnewsnetwork.org/53-orangutans-rescued-from-fires-in-borneo/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Dr-Karmele-Llano-Sanchez-rescues-baby-orangutan-Credit-YIARI-BKSDA-and-International-Animal-Rescue-RELEASED.jpg",
-    "date": "2026-10-30T18:00:28.027Z",
-    "category": "Environment",
-    "score": 8,
-    "slug": "53-orangs-outans-sauves-des-incendies-de-foret-a-borneo"
-  },
-  {
-    "id": "1793383191308ektznbw95",
-    "title": "Une webcam en direct montre cinq petits guépards auprès de leur mère Zura",
-    "summary": "Le 5 octobre, la guépardeZura a donné naissance à cinq petits au Smithsonian's Conservation Institute en Virginie. Via une webcam en direct, on peut voir jour et nuit comment la mère s'occupe de ses jeunes, avec des sons de doux gazouillis, de petits cris et de ronronnements tandis que les petits tètent, se font toiletter ou jouent. La même caméra...",
-    "image_alt": "La guépardeZura s'occupe de ses cinq petits nouveau-nés dans leur tanière",
-    "meta_description": "Une webcam en direct montre la guépardeZura avec ses cinq nouveaux petits au Smithsonian's Conservation Institute en Virginie.",
-    "meta_keywords": "guépard, Zura, petits, Smithsonian, webcam en direct, conservation de la nature, Front Royal",
-    "link": "https://www.goodnewsnetwork.org/live-smithsonian-webcam-for-cheetah-den-and-5-cubs/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Cheetah-Cam-screenshot-via-Smithsonian-Conservation-Biology-Institute-.jpg",
-    "date": "2026-10-30T17:59:52.652Z",
-    "category": "Environment",
-    "score": 9,
-    "slug": "une-webcam-en-direct-montre-cinq-petits-guepards-aupres-de-leur-mere-zura"
   }
 ]
