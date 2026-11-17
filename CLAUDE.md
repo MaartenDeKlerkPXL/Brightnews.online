@@ -36,7 +36,7 @@ verbeteringen van de één binnen een dag bij de ander landen:
   `js/betaal-config.js` → **PR aanmaken en de ander laten meekijken** in
   plaats van zelf mergen. Puur visueel werk mag na eigen check gemerged.
 - **Vóór alles, altijd**: `git pull --rebase origin master` — de nieuws-Action
-  pusht 2×/dag (0:00/12:00 UTC) datacommits naar master.
+  pusht 2×/dag (rond 0:17/12:17 UTC, GitHub kan uren uitlopen) datacommits naar master.
 
 ## Vaste conventies (duur betaald — echt doen)
 - `npx eslint .` → 0 errors is de norm (bekende warnings mogen blijven).

@@ -9,7 +9,7 @@
 // op UTC; dat gaf soms twee overzichten op één dag en soms geen.
 //
 // Draait elke Action-run maar is idempotent: bestaat er al een overzicht van
-// gisteren, dan gebeurt er niets. De nachtrun (0:00 UTC, dus 01:00 of 02:00 in
+// gisteren, dan gebeurt er niets. De nachtrun (0:17 UTC, dus 01:17 of 02:17 in
 // Nederland) maakt hem normaal; de middagrun vangt een mislukte nacht op. Prompt/tone-of-voice is itereerbaar via
 // digest-prompt.md (zelfde lus als selectie-prompt.md); elke digest logt
 // zijn prompthash in data/digest-log.json.
@@ -104,6 +104,12 @@ async function haalVolledigeTeksten(ids, lang, perTaalIndex) {
         return summary;
     });
 }
+
+// Tijdwoorden die in een dagoverzicht niet kloppen: het verschijnt pas de dag
+// erna, en de pagina toont de datum al. De prompt verbiedt ze; staat er toch
+// een in (dat gebeurde in het eerste overzicht, 2026-11-17), dan wordt de
+// tekst één keer opnieuw geschreven.
+const TIJDWOORDEN = /\b(vandaag|gisteren|morgen|vanochtend|vanmiddag|vanavond|vannacht|maandag|dinsdag|woensdag|donderdag|vrijdag|zaterdag|zondag)\b/i;
 
 // Een dag met weinig verhalen krijgt een korter overzicht: anders vult de AI
 // aan met algemeenheden. [prompt, ondergrens, bovengrens] in woorden.
@@ -209,9 +215,18 @@ async function main() {
                     titel: perTaalIndex.nl?.[id]?.title || top[i].title,
                     tekst: nlTeksten[i],
                 }));
-                await wacht(1000);
-                const moederAntwoord = await aiCall({ rol: 'schrijven', prompt: bouwPrompt('nl', nlItems) });
-                const moeder = verwerkAIResponse(moederAntwoord.tekst);
+                // Twee pogingen als er een tijdwoord in titel of tekst staat.
+                let moederAntwoord;
+                let moeder;
+                for (let poging = 0; poging < 2; poging++) {
+                    await wacht(1000);
+                    moederAntwoord = await aiCall({ rol: 'schrijven', prompt: bouwPrompt('nl', nlItems) });
+                    moeder = verwerkAIResponse(moederAntwoord.tekst);
+                    const fout = `${moeder?.titel ?? ''} ${moeder?.tekst ?? ''}`.match(TIJDWOORDEN);
+                    if (!fout) break;
+                    console.warn(`🔁 Dagoverzicht noemt "${fout[0]}" (poging ${poging + 1}).`);
+                    if (poging === 1) throw new Error(`dagoverzicht noemt een tijdwoord ("${fout[0]}")`);
+                }
                 const moederWoorden = telWoorden(moeder?.tekst);
                 if (moeder?.titel && !verwijzingenKloppen(moeder.tekst, ids.length)) {
                     console.error(`🔎 Rauwe respons (kop): ${String(moederAntwoord.tekst).replace(/\s+/g, ' ').slice(0, 300)}`);

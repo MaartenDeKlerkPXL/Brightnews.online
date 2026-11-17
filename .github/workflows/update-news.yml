@@ -2,8 +2,11 @@ name: "🚀 BrightNews: Automatische Update"
 
 on:
   schedule:
-    # Draait om 00:00 UTC (Nacht-update) en 12:00 UTC (Lunch-update)
-    - cron: '0 0,12 * * *'
+    # Twee keer per dag: rond 00:17 en 12:17 UTC. Bewust niet op het hele uur:
+    # GitHub stelt geplande runs op :00 bij drukte het langst uit. Op '0 0,12'
+    # begon de nachtrun in november 2026 pas 5 tot 7 uur later, en daarmee
+    # kwam het dagoverzicht van gisteren pas rond 08:00 (2026-11-17).
+    - cron: '17 0,12 * * *'
   workflow_dispatch: # Handmatige trigger blijft behouden
 
 jobs:
