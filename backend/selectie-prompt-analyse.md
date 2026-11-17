@@ -1531,3 +1531,130 @@ Niet bright-waardig: 1. Twijfel: 1.
 - **Gepubliceerd:** 2026-10-01 20:10 · Lifestyle · Positive.News
 - **Waar het over gaat:** Ken Banks reflecteert op dertig jaar werk in natuurbehoud, ontwikkeling en technologie en betoogt dat luisteren de belangrijkste onderschatte leiderschapsvaardigheid is, geïllustreerd met ervaringen uit Oost-Afrika.
 - **Waarom ik twijfel:** Er zit een persoonlijk, inhoudelijk verhaal in met een concrete aanleiding (zijn werk in Oost-Afrika), maar de insteek is vooral een advies-column over leiderschap zonder nieuwsgebeurtenis — dat raakt de listicle/zelfhulp-categorie uit de afwijslijst. Ik zou geneigd zijn hem te laten staan vanwege de echte ervaring erachter, maar het format trekt richting "dit moet je weten over leiderschap". Oordeel van Erik gewenst.
+
+### 2026-11-17, 11:05 Europe/Amsterdam
+
+Beoordeeld: 124 artikelen, gepubliceerd tussen 2026-10-30 18:00 en 2026-11-17 06:59.
+Niet bright-waardig: 13. Twijfel: 8.
+
+#### Sportpsycholoog Cindra Kamphoff deelt vier tips tegen faalangst
+- **Gepubliceerd:** 2026-10-30 20:20 · Health · Ww2.kqed.org/mindshift
+- **Waar het over gaat:** Een sportpsycholoog die topsporters begeleidt beschrijft technieken tegen faalangst uit haar boek, met een anekdote over haarzelf tijdens een marathon.
+- **Waarom dit niet goed genoeg is:** Dit is een zelfhulp-listicle in de vorm van "vier tips tegen...", precies het type dat de afwijslijst noemt. Het bruikbare advies maakt het nog geen verhaal.
+- **Link:** (zie artikel-id 1793384399622qvwwopnkt)
+
+#### NASA en DOE bundelen krachten voor nucleaire ruimtevaart
+- **Gepubliceerd:** 2026-10-30 18:15 · Science · Openaccessgovernment.org
+- **Waar het over gaat:** NASA en het Amerikaanse ministerie van Energie ondertekenen een samenwerkingsovereenkomst om kernenergie en nucleaire voortstuwing voor ruimtemissies te versnellen, met als doel onder meer een kernreactor op de maan in 2030.
+- **Waarom dit niet goed genoeg is:** Zuiver institutioneel beleidsnieuws zonder mensen, zonder herkenbaar verhaal en zonder warm gevoel — het leest als een persbericht over een overeenkomst, niet als iets waar een lezer blij van wordt.
+- **Link:** (zie artikel-id 17933841386518zl65dsi6)
+
+#### Symposium in Jordanië over wetenschapsdiplomatie
+- **Gepubliceerd:** 2026-10-30 18:16 · Science · Openaccessgovernment.org
+- **Waar het over gaat:** Een bijeenkomst van wetenschappers en diplomaten bij SESAME in Jordanië over de rol van onderzoeksinfrastructuur in internationale betrekkingen.
+- **Waarom dit niet goed genoeg is:** Een aankondiging van een symposium is droog beleidsnieuws; er gebeurt niets, niemand wordt geholpen, het is louter een evenement-aankondiging.
+- **Link:** (zie artikel-id 1793384161608kh30teuyg)
+
+#### Europa lanceert 13 nieuwe hubs voor open onderzoeksdata
+- **Gepubliceerd:** 2026-10-30 18:16 · Science · Openaccessgovernment.org
+- **Waar het over gaat:** De European Open Science Cloud opent de eerste tranche van datahubs die onderzoekers moeten helpen data te delen over landsgrenzen heen.
+- **Waarom dit niet goed genoeg is:** Technisch infrastructuurnieuws zonder menselijk verhaal; relevant voor onderzoekers maar niet voor een gewone lezer, en er is geen gevoel van blijdschap of hoop aan te ontlenen.
+- **Link:** (zie artikel-id 179338418713800p31bsxr)
+
+#### NASA nodigt bedrijven uit voor nieuwe generatie ruimtestations
+- **Gepubliceerd:** 2026-10-30 18:17 · Science · Openaccessgovernment.org
+- **Waar het over gaat:** NASA publiceert een aanbesteding voor Amerikaanse bedrijven om commerciële opvolgers van het ISS te ontwikkelen.
+- **Waarom dit niet goed genoeg is:** Dit is in de kern een aanbestedingsbericht over toekomstige bedrijvigheid, zonder afgerond resultaat of menselijk verhaal — meer aankondiging dan nieuws om blij van te worden.
+- **Link:** (zie artikel-id 1793384249985xjpo9zpyd)
+
+#### NASA SpaceX-missie brengt experimenten en zonnepanelen naar ISS
+- **Gepubliceerd:** 2026-10-30 18:17 · Science · Openaccessgovernment.org
+- **Waar het over gaat:** Een routinematige bevoorradingsvlucht naar het ISS met voorraden, apparatuur en zonnepanelen.
+- **Waarom dit niet goed genoeg is:** Dit is operationeel ruimtevaartnieuws zonder bijzonder verhaal; vergelijkbare vluchten gebeuren regelmatig en er zit geen hartverwarmende kern in.
+- **Link:** (zie artikel-id 1793384270563pkoj3k0wy)
+
+#### Open Research Europe breidt gratis publiceren uit naar 11 landen
+- **Gepubliceerd:** 2026-11-05 19:40 · Science · Openaccessgovernment.org
+- **Waar het over gaat:** Onderzoekers in meer Europese landen kunnen kosteloos publiceren via een platform van de Europese Commissie.
+- **Waarom dit niet goed genoeg is:** Beleidsuitbreiding voor een niche-doelgroep (onderzoekers), zonder verhaal, zonder gevoel — puur een administratieve mededeling.
+- **Link:** (zie artikel-id 1793907647245k7dr7jdjw)
+
+#### Europese Innovatie Raad krijgt 1,8 miljard voor 2027
+- **Gepubliceerd:** 2026-11-06 19:01 · Finance · Openaccessgovernment.org
+- **Waar het over gaat:** De Europese Commissie kondigt een budget aan voor de European Innovation Council om startups en technologie te ondersteunen.
+- **Waarom dit niet goed genoeg is:** Een financieringscijfer zonder verhaal of mensen; dit is beursnieuws-achtig beleid zonder bredere, voelbare maatschappelijke lading.
+- **Link:** (zie artikel-id 1793991704874mb5trfigv)
+
+#### Los Angeles verbiedt oliewinning definitief
+- **Gepubliceerd:** 2026-11-12 06:13 · Environment · OptimistDaily.com
+- **Waar het over gaat:** Na jarenlang actievoeren verbiedt de gemeenteraad van Los Angeles nieuwe en voortgezette oliewinning binnen de stadsgrenzen.
+- **Waarom dit niet goed genoeg is:** Dit is vrijwel het ijkvoorbeeld "politiek" uit de selectieprompt: alleen goed nieuws als je de olie-industrie als probleem ziet, en de kern van het verhaal is iets wat wordt afgeschaft/verboden, geen redding of herstel.
+- **Link:** (zie artikel-id 1794463996470mjxfozzef)
+
+#### Brazilië presenteert wereldwijd eerste fossiele brandstoffen-roadmap
+- **Gepubliceerd:** 2026-11-11 05:08 · Environment · OptimistDaily.com
+- **Waar het over gaat:** Brazilië zou als eerste land een plan publiceren om van fossiele brandstoffen af te stappen.
+- **Waarom dit niet goed genoeg is:** Klimaatbeleid is per definitie een onderwerp waar de waardering van afhangt van politieke opvatting, en het berichtje geeft daarnaast nauwelijks inhoud om zeker te zijn van wat er werkelijk besloten is.
+- **Link:** (zie artikel-id 1794373689644spmeqye98)
+
+#### Koolstofkredieten openen Great Koala National Park in NSW
+- **Gepubliceerd:** 2026-11-03 19:15 · Environment · OptimistDaily.com
+- **Waar het over gaat:** Koolstofkredieten zouden een rol hebben gespeeld bij het mogelijk maken van een nieuw nationaal park in Australië.
+- **Waarom dit niet goed genoeg is:** Het bericht is te kort en vaag om te beoordelen wat er precies is gebeurd — geen enkele onderbouwing van hoe, wanneer of door wie; te weinig inhoud om zeker te zijn.
+- **Link:** (zie artikel-id 1793733350635zxe818kte)
+
+#### Solar kits veranderen rampenhulp
+- **Gepubliceerd:** 2026-11-06 05:36 · General · OptimistDaily.com
+- **Waar het over gaat:** Zonne-energiekits zouden de aanpak van rampenhulp veranderen.
+- **Waarom dit niet goed genoeg is:** Twee zinnen zonder concreet voorbeeld, plaats, organisatie of mens — te weinig inhoud om als verhaal te gelden.
+- **Link:** (zie artikel-id 1793943382665j7gwcx3pt)
+
+#### New Jersey Transit maakt kunstgalerijen van stations
+- **Gepubliceerd:** 2026-10-30 18:04 · Lifestyle · OptimistDaily.com
+- **Waar het over gaat:** NJ Transit zou stations ombouwen tot kunstgalerijen.
+- **Waarom dit niet goed genoeg is:** Ook hier ontbreekt elke onderbouwing — geen voorbeeld van een station, kunstenaar of reactie van reizigers, waardoor het bericht te dun is om te beoordelen.
+- **Link:** (zie artikel-id 1793383463464p07thgddb)
+
+#### Twijfelgeval: Republikeinen en Democraten verenigd tegen datacenters
+- **Gepubliceerd:** 2026-10-30 18:02 · Environment · ReasonsToBeCheerful.world
+- **Waar het over gaat:** Bewoners van Grove City, Ohio organiseren zich over partijgrenzen heen tegen de bouw van een groot AI-datacenter wegens water- en energieverbruik.
+- **Waarom ik twijfel:** De gemeenschapszin en het bipartisane karakter pleiten ervoor, maar de kern is verzet tegen een industrieel project — dat ligt dicht tegen "politiek" aan. Ik zou het laten staan vanwege de nadruk op samenwerking, maar leg het graag aan Erik voor.
+
+#### Twijfelgeval: Victoria verbiedt onnodige operaties bij interseksekinderen
+- **Gepubliceerd:** 2026-11-09 22:04 · Health · GoodGoodGood.co
+- **Waar het over gaat:** De Australische deelstaat Victoria verbiedt niet-noodzakelijke "corrigerende" operaties bij interseks-kinderen.
+- **Waarom ik twijfel:** Het is vanuit kinderbescherming een positief verhaal, maar het onderwerp is maatschappelijk omstreden en het goede gevoel hangt sterk af van de kijk die je al hebt op medische ingrepen bij interseks-kinderen — grensgeval met de politiek-categorie.
+
+#### Twijfelgeval: Bijna alle transgender jongeren tevreden over hormoontherapie
+- **Gepubliceerd:** 2026-11-16 18:34 · Health · Sciencenews.org
+- **Waar het over gaat:** Een grote Amerikaanse enquête onder transgender jongeren laat zien dat 97% tevreden is met gender-bevestigende hormoontherapie.
+- **Waarom ik twijfel:** Het is degelijk onderzoek met een duidelijk positief cijfer, maar het onderwerp ligt politiek zeer gevoelig in de VS, waardoor het goede gevoel van de lezer kan samenhangen met een reeds ingenomen standpunt.
+
+#### Twijfelgeval: Oceaanbeschermer Stacy Jupiter vecht tegen borstkanker
+- **Gepubliceerd:** 2026-10-30 18:18 · Health · PBS.org
+- **Waar het over gaat:** Een bekende oceaanonderzoeker kreeg onverwacht een uitgezaaide borstkankerdiagnose en start een behandeltraject.
+- **Waarom ik twijfel:** Het verhaal is nog niet bij herstel of overwinning aangekomen — het beschrijft vooral de diagnose en het begin van de behandeling, wat dichter bij "ziekte als kern" dan bij "herstel als kern" ligt. Mogelijk hoort dit toch bij de afwijscategorie misdaad-of-ramp (hier: ziekte), tenzij een vervolg op herstel wacht.
+
+#### Twijfelgeval: Botero's ronde figuren geven klassieke meesterwerken nieuw leven
+- **Gepubliceerd:** 2026-10-30 18:19 · Lifestyle · BBC.com/culture
+- **Waar het over gaat:** Een cultuurhistorisch stuk over hoe de Colombiaanse kunstenaar Fernando Botero beroemde schilderijen herschiep in zijn eigen ronde stijl.
+- **Waarom ik twijfel:** Mooi en warm geschreven, maar het is geen nieuws — geen actuele aanleiding, puur een cultuurhistorisch achtergrondverhaal. Relevantie voor een breed publiek is daardoor beperkt.
+
+#### Twijfelgeval: Parijse vrouwen trotseerden broekverbod in 19e eeuw
+- **Gepubliceerd:** 2026-10-30 18:19 · Lifestyle · BBC.com/culture
+- **Waar het over gaat:** Een historisch overzicht van hoe Parijse vrouwen in de 19e eeuw een wettelijk broekverbod omzeilden.
+- **Waarom ik twijfel:** Zelfde type twijfel als bij het Botero-stuk: interessant en op zich positief van toon, maar zonder actuele nieuwswaarde is het de vraag of dit bij een nieuwssite thuishoort.
+
+#### Twijfelgeval: Maya Higa bouwt wildlife sanctuary via Twitch
+- **Gepubliceerd:** 2026-11-04 05:18 · Environment · OptimistDaily.com
+- **Waar het over gaat:** Een Twitch-streamer zou met steun van haar volgers een dierenreservaat hebben opgezet.
+- **Waarom ik twijfel:** Het concept is mooi, maar het bericht van drie zinnen geeft geen enkele concrete onderbouwing (omvang, dieren, locatie), waardoor het dicht tegen "te weinig inhoud" aanzit.
+
+#### Twijfelgeval: Gepersonaliseerde hersentherapie geeft 68 procent remissie bij PTSS
+- **Gepubliceerd:** 2026-11-05 05:39 · Health · OptimistDaily.com
+- **Waar het over gaat:** Een vorm van gepersonaliseerde hersentherapie zou 68% van PTSS-patiënten in remissie brengen.
+- **Waarom ik twijfel:** Het cijfer is indrukwekkend, maar er ontbreken basisgegevens (wie onderzocht dit, waar, hoe groot was de studie), waardoor niet te verifiëren is of dit degelijk nieuws is of een te stellig overgenomen persbericht.
+
+#### Patroon
+
+Zes van de dertien afkeuringen komen van Openaccessgovernment.org, allemaal vrijwel opeenvolgend gepubliceerd op 2026-10-30 en 2026-11-05/06: droge, institutionele berichten over subsidies, samenwerkingsovereenkomsten en aanbestedingen zonder mensen of verhaal. Dat is een sterk signaal dat deze bron standaard te weinig "goed gevoel" en te weinig verhaal levert om door de selectie te komen, en dat nieuwe artikelen van deze bron extra kritisch bekeken mogen worden. Daarnaast valt op dat OptimistDaily.com meermalen zeer korte, onderbouwingsloze berichtjes van twee of drie zinnen aanlevert (Koala park, Solar kits, NJ Transit, Maya Higa, PTSS-therapie) — telkens een idee zonder feiten erbij, wat vaker tot twijfel of afwijzing "te-weinig-inhoud" leidde dan bij andere bronnen.

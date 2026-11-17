@@ -451,3 +451,10 @@ De titel gebruikt gewone zinsstijl, de eigennamen (Central Asháninka of the Ene
 **Oordeel:** niets aangetroffen.
 
 De vertaling volgt het Nederlands nauwkeurig: geen toegevoegde feiten, eigennamen blijven staan, titelstijl is correcte Engelse zinsstijl, en de tekst loopt natuurlijk.
+
+### 2026-11-17, Duits
+
+**Artikel:** Man springt op rijdende schoolbus en redt 18 kinderen
+**Oordeel:** niets aangetroffen.
+
+Namen, cijfers en details komen overeen met het Nederlands, eigennamen (Ebro Ahmed, Ya Bricks Snacks and Tobacco, Dayton's Bluff, Battle Creek Middle School) zijn onvertaald gebleven, en de tekst loopt natuurlijk.
