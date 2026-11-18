@@ -148,7 +148,51 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
 
 ## Blokkeert de lancering
 
-- [ ] **83. Feedback uit de UX-review (2026-11-12), in vier fases.** *(Maarten
+- [ ] **84. PXL Ambassador Award: in de finale komen en winnen.** *(Maarten en
+  Claude, 2026-11-18)* Bron:
+  pxl.be/toekomstige-studenten/studeren/studentstartup/ambassador-award/.
+  Ambassador Club Hasselt en Voka Limburg. Prijs: €2.000, coaching, een bronzen
+  beeld en je naam op de sokkel op het Molenpoortplein. **Maarten doet alleen
+  mee** (besluit 2026-11-18). De werkbestanden staan lokaal in `pxl-award/`,
+  niet in de repo (die is openbaar).
+  **Tijdlijn:** inzenden vóór **zondag 22 november 23:59**; op 2 december
+  bericht of je bij de 3 finalisten zit; pitchcoaching op 7 en 8 december;
+  finale op **woensdag 9 december vanaf 15:00** in Skybar De Dialoog, Hasselt.
+  **Ronde 1, voorselectie.** De jury kijkt naar originaliteit, innovatie en of
+  het canvas volledig is.
+  1. ✅ Business Model Canvas als PDF, eigen ontwerp in de indeling van
+     Strategyzer (`pxl-award/BrightNews-Business-Model-Canvas.pdf`, 2026-11-18).
+  2. **Video van 1 minuut** (wat, voor wie, waarom het werkt). Claude schrijft
+     het script en de shotlijst. Maarten filmt zichzelf (±25 s). Claude maakt
+     schermopnames, een animatie en de montage met ondertitels.
+  3. **De vragen in het formulier** (Microsoft Forms, PXL-login). Maarten
+     plakt de vragen in de chat, Claude schrijft de antwoorden.
+  4. **Inzenden** op zondag na de lancering ("vandaag live gegaan"). Gaat er
+     iets mis, dan zaterdagavond.
+  **Tussen 22 november en 2 december: bewijs verzamelen.**
+  5. Een overzicht met echte cijfers: bezoekers, accounts, betalende abonnees,
+     talen.
+  6. De eerste lezers werven: de tester-mail met ZONNETJE30, PXL-studenten en
+     de posts uit `assets/sociale-media/teksten.md`.
+  **Finale: 10 minuten pitch en 10 minuten vragen.** Wat de jury beoordeelt:
+  de pitch, probleem en oplossing en wat er innovatief aan is, go-to-market en
+  concurrentie, de cijfers, de ondernemer en de haalbaarheid.
+  7. Een pitchdeck langs die zes punten, met een live demo op de telefoon en
+     een video als reserve.
+  8. Concurrentieonderzoek met bronnen: Good News Network, Positive News, The
+     Optimist Daily, en wat er in Nederland en België bestaat. Let op: een paar
+     daarvan zijn ook onze bronnen. Het verhaal is dat wij samenvatten en
+     terugsturen.
+  9. 30 vragen die de jury kan stellen, met antwoorden (betrouwbaarheid van
+     AI, waarom betalen, auteursrecht, wat als Google dit doet).
+  10. Oefenen: op tijd, de vragen oefenen met Claude als jury, en de coaching
+      van 7 en 8 december gebruiken.
+  Cijfers voor het verhaal: 4 op 10 mensen mijden het nieuws soms of vaak
+  (Reuters Digital News Report 2025); 1.151 berichten beoordeeld, 41% door de
+  selectie; 16 bronnen; 867 artikelen; 4.300+ pagina's; kosten €50–75 per
+  maand; break-even bij 20–28 betalende abonnees.
+
+- [x] **83. Feedback uit de UX-review (2026-11-12), in vier fases.** *(Maarten
   en Claude)* Elke fase heeft een eigen branch en PR, wordt lokaal getest
   (computer, mobiel, licht en donker) en pas na een live controle afgesloten;
   fase 4 krijgt ook een review-ronde.
@@ -317,6 +361,9 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   (iOS vindt die zelf) en `assets/deelafbeelding.png` (1200×630), de
   deelafbeelding van de home, de categorie- en themapagina's en de
   dagoverzichten. Open blijft punt 3 (sociale media).
+  **Punt 3 klaar om te plaatsen (2026-11-18):** de banners voor Facebook en
+  LinkedIn, de bio's en vier posts staan in `assets/sociale-media/`
+  (`teksten.md`). Plaatsen doet Maarten.
 
 - [ ] **81. Vóór de lancering al iets op sociale media plaatsen.**
   *(Maarten, 2026-11-12)* Zodat de kanalen niet leeg zijn als de eerste
