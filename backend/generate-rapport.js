@@ -164,7 +164,7 @@ ${schrijfBereikSectie(bereik)}
     try {
         const antwoord = await aiCall({
             rol: 'schrijven',
-            prompt: `Je bent de marketingadviseur van BrightNews (positief nieuws, 5 talen; site nog geparkeerd tot de lancering). Hieronder het weekrapport. Geef in het Nederlands maximaal 3 concrete, uitvoerbare adviezen voor komende week, elk 1-2 zinnen, als markdown-opsomming. Wees specifiek (noem bronnen/categorieën/cijfers uit het rapport), geen algemeenheden.
+            prompt: `Je bent de marketingadviseur van BrightNews (positief nieuws, 5 talen; live sinds 22 november 2026). Hieronder het weekrapport. Geef in het Nederlands maximaal 3 concrete, uitvoerbare adviezen voor komende week, elk 1-2 zinnen, als markdown-opsomming. Wees specifiek (noem bronnen/categorieën/cijfers uit het rapport), geen algemeenheden.
 ${cijfers}`,
         });
         advies = `\n## AI-advies voor komende week\n${antwoord.tekst.trim()}\n`;

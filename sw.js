@@ -2,7 +2,7 @@
 // v40 haalt de worker CSS en JS eerst van het netwerk (zie fetch hieronder),
 // dus een wijziging is zonder bump te zien, binnen de HTTP-cache van GitHub
 // Pages (max-age=600: tot tien minuten na een deploy).
-const CACHE_NAME = 'brightnews-v41'; // v41 (2026-11-16): altijd bij de server navragen (cache: 'no-cache'), zodat HTML en JS na een deploy nooit uit de pas lopen. v40 (2026-11-12): precache naar de v5-bestanden; alles netwerk-eerst, de cache is alleen nog offline terugval. v39: overstap naar redesign v5. Oudere versies: zie git log van sw.js.
+const CACHE_NAME = 'brightnews-v42'; // v42 (2026-11-22): lancering, de parkeerstand is uit index.html; anders bleef offline het parkeerbericht staan. v41 (2026-11-16): altijd bij de server navragen (cache: 'no-cache'), zodat HTML en JS na een deploy nooit uit de pas lopen. v40 (2026-11-12): precache naar de v5-bestanden; alles netwerk-eerst, de cache is alleen nog offline terugval. v39: overstap naar redesign v5. Oudere versies: zie git log van sw.js.
 // Wat de v5-home nodig heeft om offline te openen. Een bestand dat ontbreekt,
 // blokkeert de installatie niet (zie install).
 const ASSETS = [
