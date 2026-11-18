@@ -1011,8 +1011,12 @@
     color: var(--text-secondary);
 }
 
-.bedankt .gegevens__rij dt {
-    flex-basis: 144px;
+/* Alleen naast elkaar: op de telefoon staan label en waarde onder elkaar,
+   en dan maakte 144px het label 144px hoog. */
+@media (min-width: 768px) {
+    .bedankt .gegevens__rij dt {
+        flex-basis: 144px;
+    }
 }
 
 .bedankt__status {
