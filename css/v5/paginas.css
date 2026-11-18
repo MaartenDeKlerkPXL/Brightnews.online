@@ -570,6 +570,14 @@
     color: var(--text-link);
 }
 
+/* Met een statusrondje (bedankt, afmelden): rondje in het midden boven de
+   kop en de zin eronder, die dan ook gecentreerd staan (besluit Maarten,
+   2026-11-18). De kaart eronder blijft links uitgelijnd. */
+.formulier-intro:has(> .status-icoon) {
+    align-items: center;
+    text-align: center;
+}
+
 .form-card {
     display: flex;
     flex-direction: column;
