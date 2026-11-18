@@ -310,7 +310,7 @@ function paginaHtml(artikel, lang, slugsPerTaal, manifest, burenIndex) {
     // og:image en JSON-LD vereisen een absolute URL; een root-relatieve
     // reservefoto zou deel-previews (WhatsApp/LinkedIn) breken.
     // Een dagoverzicht deelt het logo, niet de foto van een van zijn verhalen.
-    const afbeeldingAbsoluut = isDigest ? `${SITE_URL}/assets/brightnews-logo-vierkant.png`
+    const afbeeldingAbsoluut = isDigest ? `${SITE_URL}/assets/deelafbeelding.png`
         : afbeelding.startsWith('/') ? SITE_URL + afbeelding : afbeelding;
     const bron = artikel.source || '';
     const bronLink = veiligeUrl(artikel.link, null);
