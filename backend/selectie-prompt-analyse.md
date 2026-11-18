@@ -1658,3 +1658,16 @@ Niet bright-waardig: 13. Twijfel: 8.
 #### Patroon
 
 Zes van de dertien afkeuringen komen van Openaccessgovernment.org, allemaal vrijwel opeenvolgend gepubliceerd op 2026-10-30 en 2026-11-05/06: droge, institutionele berichten over subsidies, samenwerkingsovereenkomsten en aanbestedingen zonder mensen of verhaal. Dat is een sterk signaal dat deze bron standaard te weinig "goed gevoel" en te weinig verhaal levert om door de selectie te komen, en dat nieuwe artikelen van deze bron extra kritisch bekeken mogen worden. Daarnaast valt op dat OptimistDaily.com meermalen zeer korte, onderbouwingsloze berichtjes van twee of drie zinnen aanlevert (Koala park, Solar kits, NJ Transit, Maya Higa, PTSS-therapie) — telkens een idee zonder feiten erbij, wat vaker tot twijfel of afwijzing "te-weinig-inhoud" leidde dan bij andere bronnen.
+
+### 2026-11-18, 10:40 Europe/Amsterdam
+
+Beoordeeld: 7 artikelen, gepubliceerd tussen 2026-11-18 07:38 en 2026-11-18 07:40.
+Niet bright-waardig: 1. Twijfel: 0.
+
+#### Verhalen overtuigen 22 keer beter dan feiten alleen, blijkt uit Stanford-onderzoek
+- **Gepubliceerd:** 2026-11-18 07:40 · Science · GoodGoodGood.co
+- **Waar het over gaat:** Gedragswetenschapper Jennifer Aaker van Stanford onderzocht waarom verhalen overtuigender zijn dan kale feiten, met als conclusie dat een verhaal 22 keer meer blijft hangen, zeker in combinatie met cijfers.
+- **Waarom dit niet goed genoeg is:** Dit is een interessant onderzoeksresultaat, maar er zit geen mens, gebeurtenis of herstel in dat een lezer oprecht blij of warm maakt — het is uitleg over hoe overtuigen werkt, geen verhaal dat zelf overtuigt. Daarmee landt het dicht bij de zelfhulp/advies-hoek uit de afwijslijst ("zo doe je iets beter") zonder dat er een concreet, persoonlijk verhaal aan hangt. Op de criteria haalt het geen hoog gevoel (vlak, technisch) en de relevantie is vooral academisch, niet herkenbaar voor een breed publiek, waardoor de som ruim onder de drempel van 8 blijft.
+- **Link:** (niet opgehaald in deze beoordeling)
+
+Verder waren alle zeven artikelen in orde: de zeeschildpadnesten aan de Amerikaanse westkust, de wederzijdse gastvrijheid tussen Lawrence en Algerije, Buffetts schenking met Thanksgiving, de elektrische schoolbussen in de Bronx, de daling van dakloosheid in de VS, en het verhaal van April Surac en haar NeuraSensa-kunstinstallaties zijn stuk voor stuk echte, persoonlijke of maatschappelijk relevante verhalen zonder product-, politiek- of verzameleditie-problematiek.

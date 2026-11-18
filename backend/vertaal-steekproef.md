@@ -458,3 +458,12 @@ De vertaling volgt het Nederlands nauwkeurig: geen toegevoegde feiten, eigenname
 **Oordeel:** niets aangetroffen.
 
 Namen, cijfers en details komen overeen met het Nederlands, eigennamen (Ebro Ahmed, Ya Bricks Snacks and Tobacco, Dayton's Bluff, Battle Creek Middle School) zijn onvertaald gebleven, en de tekst loopt natuurlijk.
+
+### 2026-11-18, Frans
+
+**Artikel:** Zeeschildpadjes voor het eerst uitgezet aan Amerikaanse westkust
+**Oordeel:** één aandachtspunt, verder in orde.
+
+- **Mogelijk weggevallen feit:** het Nederlands spreekt van "staats- en federale autoriteiten" die de eieren ophaalden, maar de Franse samenvatting noemt alleen "les autorités fédérales et..." — de verwijzing naar de staatsautoriteiten lijkt te ontbreken (het stuk is afgekapt met "...", dus dit kan niet met zekerheid worden vastgesteld, maar het valt op).
+
+Verder is de titelstijl correct (gewone zinsstijl, geen hoofdletter op elk woord), is de soortnaam "olive ridley" keurig onvertaald tussen haakjes bewezen, en dekt de titel het verhaal. Geen problemen met geslacht of eigennamen aangetroffen in het zichtbare deel.
