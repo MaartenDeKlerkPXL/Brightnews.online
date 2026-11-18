@@ -56,7 +56,8 @@
 /* Dagoverzicht bovenaan de homepage: 40 px boven en onder. */
 /* De introzin bovenaan de home, voor wie voor het eerst komt. */
 .home-intro {
-    margin: 0;
+    /* Alleen boven en onder: margin-inline: auto van .container centreert. */
+    margin-block: 0;
     padding-top: var(--section-xs);
     padding-bottom: var(--spacing-2xl);
     color: var(--text-secondary);
