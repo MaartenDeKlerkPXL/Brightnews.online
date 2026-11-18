@@ -204,7 +204,9 @@ async function main() {
         });
 
         if (DROOG) {
-            console.log(`   [droog] ${soort} → ${g.email} (${taal}) — "${sjabloon.onderwerp}"`);
+            // Het log van een Action in deze openbare repo is voor iedereen te lezen:
+            // nooit een mailadres, alleen het account-id (TODO 67, H2).
+            console.log(`   [droog] ${soort} → ${g.id} (${taal}) — "${sjabloon.onderwerp}"`);
             verstuurd++;
             continue;
         }
@@ -213,10 +215,11 @@ async function main() {
             const id = await verstuur({ naar: g.email, onderwerp: sjabloon.onderwerp, html, afmeldUrl: `${SITE}/afmelden.html?t=${vk.token}` });
             const { error } = await db.from('mail_log')
                 .insert({ uid: g.id, soort, provider_id: id });
-            if (error) console.warn(`⚠️  ${g.email}: verstuurd maar niet gelogd — ${error.message}`);
+            if (error) console.warn(`⚠️  ${g.id}: verstuurd maar niet gelogd — ${error.message}`);
             verstuurd++;
         } catch (e) {
-            console.warn(`⚠️  ${g.email}: ${e.message}`);
+            // Alleen de status: de foutmelding van Resend kan het adres herhalen.
+            console.warn(`⚠️  ${g.id}: verzenden mislukt (${/Resend (\d+)/.exec(e.message)?.[1] || 'fout'})`);
             mislukt++;
         }
     }

@@ -16,7 +16,7 @@
 // de client checkt die datum al, dus een verlopen (niet-verlengd) abonnement
 // dooft vanzelf — er is geen apart "expired"-event nodig zoals bij Lemon.
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
-import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.112.4'
 
 const TOLERANTIE_SECONDEN = 300
 
@@ -110,6 +110,12 @@ serve(async (req) => {
             // maar het abonnement start wél — premium hoort direct actief.
             // Zonder deze tak bleef stripe_customer_id leeg en strandden de
             // subscription-events eeuwig op 409 (gevonden vóór livegang).
+            // Alleen een abonnement geeft Premium; een andere betaallink later
+            // (een donatie, een losse aankoop) mag dat niet (TODO 67, L4).
+            if (obj.mode && obj.mode !== 'subscription') {
+                console.log(`↪️ Checkout met mode=${obj.mode} — geen Premium`)
+                return new Response(JSON.stringify({ message: "Geen abonnement" }), { status: 200 })
+            }
             if (obj.payment_status && !['paid', 'no_payment_required'].includes(obj.payment_status)) {
                 console.log(`↪️ Sessie voltooid maar payment_status=${obj.payment_status} — geen actie`)
                 return new Response(JSON.stringify({ message: "Nog niet betaald" }), { status: 200 })
