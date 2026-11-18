@@ -148,6 +148,45 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
 
 ## Blokkeert de lancering
 
+> **Lanceringsweek, stand woensdag 18 november (avond).** Zondag 22 november
+> gaat de site live én moet de inzending voor de award erin (vóór 23:59).
+>
+> **Maarten:**
+> - [ ] Token `github_actions_token` in de Supabase Vault (fine-grained, Actions
+>   read and write, alleen Brightnews.online). Daarna "token staat erin".
+>   De taak in Supabase staat al klaar (PR #39, TODO 69.4).
+> - [ ] Anthropic: auto-reload en een tegoedalarm (TODO 26 en 69.2).
+> - [ ] Back-up: `pg_dump` of Supabase Pro (TODO 70).
+> - [ ] Ingelogd een Premium-artikel openen, Mijn account nalopen; opzeggen
+>   vóór 17 december als je niet wilt betalen (TODO 31).
+> - [ ] Stripe: bij beide betaallinks "na betaling doorsturen" op
+>   `https://brightnews.online/bedankt.html` (niet dringend: `thanks.html`
+>   stuurt al door).
+> - [ ] Vrijdag 20 november, Search Console: sitemap indienen en de dubbele
+>   pagina laten valideren (TODO 78).
+> - [ ] De site nalopen via `/?team=1`, telefoon en computer, licht en donker.
+> - [ ] Sociale media: profielfoto, banner en bio, en de posts uit
+>   `assets/sociale-media/teksten.md` (TODO 80.3 en 81).
+> - [ ] Award: de formuliervragen in de chat plakken, jezelf filmen (A1–A3 uit
+>   `pxl-award/video-script.md`), en zondag insturen (TODO 84).
+> - [ ] Zondag: "haal de parkeerpagina weg" zeggen (PR #43, TODO 2).
+>
+> **Claude:**
+> - [ ] Beveiligingscontrole afmaken en de bevindingen in één PR (TODO 67).
+> - [ ] Lighthouse: LCP en CLS op home, artikel en archief, en verbeteren.
+> - [ ] Lanceringsbranch lokaal testen (PR #43).
+> - [ ] Award: de antwoorden op het formulier; de schermopnames, de animatie
+>   en de montage van de video met ondertitels (TODO 84).
+> - [ ] Na het token: de eerste run vanuit Supabase nakijken (204 in
+>   `net._http_response`).
+> - [ ] Zondag: PR #43 mergen, live nalopen.
+>
+> **Al gedaan op 18 november:** nieuwsrun via Supabase (PR #39), Stripe-
+> portaalmail getest (komt aan), mails van de keten getest, banners en posts
+> (PR #40), Business Model Canvas en videoscript (TODO 84), promocodes uit
+> (PR #42), lancering klaargezet (PR #43), `MISTRAL_API_KEY` was al weg, en
+> `binnenkort.html` wordt een doorstuurpagina (besluit 18 november).
+
 - [ ] **84. PXL Ambassador Award: in de finale komen en winnen.** *(Maarten en
   Claude, 2026-11-18)* Bron:
   pxl.be/toekomstige-studenten/studeren/studentstartup/ambassador-award/.
@@ -162,7 +201,8 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   het canvas volledig is.
   1. ✅ Business Model Canvas als PDF, eigen ontwerp in de indeling van
      Strategyzer (`pxl-award/BrightNews-Business-Model-Canvas.pdf`, 2026-11-18).
-  2. **Video van 1 minuut** (wat, voor wie, waarom het werkt). Claude schrijft
+  2. **Video van 1 minuut** (wat, voor wie, waarom het werkt). ✅ Script en
+     shotlijst staan in `pxl-award/video-script.md` (2026-11-18). Claude schreef
      het script en de shotlijst. Maarten filmt zichzelf (±25 s). Claude maakt
      schermopnames, een animatie en de montage met ondertitels.
   3. **De vragen in het formulier** (Microsoft Forms, PXL-login). Maarten
@@ -375,6 +415,15 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   doet Maarten met de hand zolang punt 45 (automatisch plaatsen) niet af is.
 
 - [ ] **67. 🚨 ZEER HOGE PRIORITEIT: is de site goed beschermd? Skill maken
+  en een volledige controle met alle agents.** *Stand 2026-11-18:* de controle
+  is gestart. Supabase is nagelopen: RLS staat overal aan, de functies met
+  extra rechten controleren Premium goed, en de webhook controleert de
+  handtekening. Klaargezet: `supabase/rechten-aanscherpen-2026-11-18.sql`
+  (overbodige tabelrechten intrekken, als tweede slot naast RLS). De code en
+  de live site worden nog nagelopen door een security-agent; zijn bevindingen
+  gaan in één PR met review. De skill zelf (stap 1) wacht op Maartens pdf en
+  foto en kan na de lancering.
+  **Oorspronkelijke tekst: is de site goed beschermd? Skill maken
   en een volledige controle met alle agents.**
   *(Maarten, 2026-10-30. Gaat vóór al het andere werk op deze lijst.)*
 
@@ -829,7 +878,12 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   uitvechten. Begin bij #5 — die is klein, en hoe langer hij blijft staan hoe
   erger het conflict wordt. *(Maarten)*
 
-- [ ] **2. Parkeer-gate verwijderen bij livegang.** Opnieuw nagelopen op
+- [ ] **2. Parkeer-gate verwijderen bij livegang.** ✅ *Klaargezet op
+  2026-11-18 als concept-PR #43 (branch `maarten/lancering`):* alle zes stappen
+  hieronder, met `binnenkort.html` als doorstuurpagina naar `/`. Zondag 22
+  november op het sein van Maarten mergen, live nakijken en in Search Console
+  indexering aanvragen voor `/`. Terugdraaien: `git revert -m 1` van de merge.
+  Opnieuw nagelopen op
   2026-09-20, met regelnummers erbij. Het zijn zes ingrepen, niet drie.
 
   **In `index.html` — drie blokken weg:**
@@ -2854,6 +2908,22 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      volledig zichtbaar wordt;
   5. opzeggen, en of de toegang dan op de juiste dag stopt;
   6. een promocode inwisselen.
+
+  **Stand 2026-11-18:**
+  - ✅ Stap 1 en 2 (mails): een nieuw account met inloglink en "Wachtwoord
+    vergeten" getest met een Gmail-aliasadres. Beide mails stonden binnen
+    seconden in de inbox, niet in de spam, in de v5-huisstijl. Het testaccount
+    is daarna verwijderd.
+  - ✅ Stap 3 (betalen): Maarten sloot op 17 november de proefmaand af met zijn
+    eigen kaart. De bon komt van **Link** (notifications@link.com), want
+    Managed Payments verkoopt via Link. `is_premium` staat aan.
+  - ✅ Abonnement beheren: de inlogmail van het Stripe-portaal komt aan (getest
+    18 november).
+  - Stap 6 (promocode) vervalt: er zijn geen promocodes meer (BRIGHT3 en
+    ZONNETJE30 verlopen, het veld in Mijn account is verborgen, PR #42).
+  - **Nog open (Maarten):** ingelogd een Premium-artikel volledig zien (stap 4),
+    Mijn account nalopen, en opzeggen vóór 17 december als je niet wilt betalen
+    (stap 5: kijk of Premium dan tot het einde van de proef blijft).
 
   Dat is de kern van het verdienmodel en hij is nog nooit van begin tot eind
   gelopen. Doe dit samen vóór de lancering, met één echte kaart en één
