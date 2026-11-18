@@ -284,9 +284,9 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
       Het archief (oude Unsplash-foto's) blijft voor na de lancering.
     - **Cache na een deploy:** sw.js v41 vraagt elk bestand na bij de server
       (`cache: 'no-cache'`), dus HTML en JS lopen niet meer uit de pas.
-    - **Nog open:** `supabase/fase5-contactmail-zeker-2026-11-16.sql` (een
-      contactmail die Resend weigert, komt dan alsnog in de ochtendmail) wacht
-      op akkoord van Maarten; daarna de Vault-sleutel en één testbericht.
+    - **Contactmail af (2026-11-18):** de Vault-sleutel staat erin en een
+      testbericht kwam aan; `supabase/fase5-contactmail-zeker-2026-11-16.sql`
+      is toegepast (pg_cron-taak `contactmail-bevestigen`, elke 5 minuten).
 
 - [ ] **80. Branding vóór de lancering: favicon, deelafbeelding en sociale
   media in de v5-stijl.** *(Maarten, 2026-11-12)* De site is v5, maar wat
@@ -307,6 +307,16 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      bio en de link naar brightnews.online nalopen.
   4. Het logo in de mails is nu tekst (`backend/mailopmaak.js`); dat mag zo
      blijven.
+
+  **Punt 1 en 2 af (2026-11-18)**, uit Maartens SVG's (beeldmerk en woordmerk).
+  De bestandsnamen bleven gelijk, zodat alle 4.400 pagina's zonder ombouw
+  meegingen: `brightnews-logo-faviconv5.png`, `icon-192.png` en `icon-512.png`
+  (beeldmerk op `#fff1c7`, binnen de veilige zone voor maskable),
+  `brightnews-logo.png` (woordmerk, zelfde verhouding als het oude 463×94) en
+  `brightnews-logo-vierkant.png`. Nieuw: `/apple-touch-icon.png` in de hoofdmap
+  (iOS vindt die zelf) en `assets/deelafbeelding.png` (1200×630), de
+  deelafbeelding van de home, de categorie- en themapagina's en de
+  dagoverzichten. Open blijft punt 3 (sociale media).
 
 - [ ] **81. Vóór de lancering al iets op sociale media plaatsen.**
   *(Maarten, 2026-11-12)* Zodat de kanalen niet leeg zijn als de eerste

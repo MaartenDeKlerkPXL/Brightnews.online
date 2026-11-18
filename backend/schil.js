@@ -130,7 +130,7 @@ ${rss}
     <meta property="og:description" content="${escapeAttr(beschrijving)}">
     <meta property="og:url" content="${SITE}${pad}">
     <meta property="og:type" content="${ogType}">
-    <meta property="og:image" content="${escapeAttr(ogImage || `${SITE}/assets/brightnews-logo.png`)}">
+    <meta property="og:image" content="${escapeAttr(ogImage || `${SITE}/assets/deelafbeelding.png`)}">
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#0a120d" media="(prefers-color-scheme: dark)">
     <link rel="icon" type="image/png" href="/assets/brightnews-logo-faviconv5.png">
