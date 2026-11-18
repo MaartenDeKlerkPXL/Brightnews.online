@@ -444,6 +444,13 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   3. **Fouten in de browser:** geen Sentry, want dat is een extern script
      (CSP). Na de lancering eventueel een eigen klein foutlogje naar een
      Supabase-tabel met alleen insert-rechten, zoals bij Feedback.
+  4. **Het token van de nieuwsrun verloopt** (2026-11-18, PR #39). Supabase
+     start de nieuwsrun met de Vault-secret `github_actions_token`, een
+     fine-grained token met een vervaldatum. Is het verlopen, dan geeft GitHub
+     stil een 401 en draait alleen nog de reserve-cron van GitHub (traag, soms
+     overgeslagen). Op tijd een nieuw token maken en de secret vervangen.
+     Nakijken: `select status_code, created from net._http_response order by
+     created desc limit 5;` (204 is goed).
 
 - [ ] **70. Back-ups van Supabase: het gratis plan heeft er geen die we
   kunnen terugzetten.** *(Maarten, 2026-11-03)* De volledige artikelteksten

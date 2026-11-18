@@ -6,11 +6,39 @@ on:
     # GitHub stelt geplande runs op :00 bij drukte het langst uit. Op '0 0,12'
     # begon de nachtrun in november 2026 pas 5 tot 7 uur later, en daarmee
     # kwam het dagoverzicht van gisteren pas rond 08:00 (2026-11-17).
-    - cron: '17 0,12 * * *'
+    # Sinds 2026-11-18 start Supabase de run om 00:17 en 12:17; deze cron is
+    # reserve en staat een half uur later, zodat die dispatch er dan al is.
+    - cron: '47 0,12 * * *'
   workflow_dispatch: # Handmatige trigger blijft behouden
 
 jobs:
+  # Sinds 2026-11-18 start Supabase (pg_cron, supabase/nieuwsrun-starten-2026-11-18.sql)
+  # deze run op 00:17 en 12:17 UTC via workflow_dispatch, want GitHub sloeg
+  # geplande runs over of begon ze uren later. De cron hierboven blijft als
+  # reserve: is er de laatste 11 uur al een dispatch op master geweest (ook een
+  # mislukte), dan slaat hij over. 11 uur, want GitHub begon geplande runs al
+  # 7 uur te laat. Zo kost het geen dubbele AI-run.
+  controle:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+    outputs:
+      draaien: ${{ steps.kijk.outputs.draaien }}
+    steps:
+      - id: kijk
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then echo "draaien=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          sinds=$(date -u -d '-11 hours' +%Y-%m-%dT%H:%M:%SZ)
+          aantal=$(gh run list -R "$GITHUB_REPOSITORY" --workflow update-news.yml --event workflow_dispatch --branch master \
+            --created ">=$sinds" --json databaseId --jq 'length')
+          echo "Dispatches sinds $sinds: $aantal"
+          if [ "$aantal" -gt 0 ]; then echo "draaien=false" >> "$GITHUB_OUTPUT"; else echo "draaien=true" >> "$GITHUB_OUTPUT"; fi
+
   build:
+    needs: controle
+    if: needs.controle.outputs.draaien == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 120
     # Voorkomt dat een handmatige dispatch en een cron-run tegelijk draaien
