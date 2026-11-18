@@ -217,7 +217,10 @@
                     </div>
                 </section>
 
-                <section class="form-card account__kaart--dicht" aria-labelledby="pr-promo-titel">
+                <!-- Verborgen sinds 2026-11-18 (besluit Maarten): er zijn geen
+                     promocodes meer, BRIGHT3 en ZONNETJE30 zijn verlopen. Weer
+                     tonen = `hidden` weghalen; js/v5/profiel.js werkt nog. -->
+                <section class="form-card account__kaart--dicht" aria-labelledby="pr-promo-titel" hidden>
                     <h2 class="type-heading-md" id="pr-promo-titel" data-i18n="v5_pr_promocode">Promocode</h2>
                     <p class="account__secundair" data-i18n="v5_pr_promo_tekst">Heb je een code gekregen? Vul hem hier in.</p>
                     <form class="promocode" id="pr-promo" novalidate>
