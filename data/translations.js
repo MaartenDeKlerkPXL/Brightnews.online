@@ -1242,7 +1242,7 @@ window.translations = {
     "instelling_taal_uitleg": "The language of the site and the articles.",
     "instelling_sluiten": "Close",
     "instelling_bewaard": "Your choice is saved on this device, even without an account. Logged in? You will find the same settings in your profile.",
-    "schil_tagline": "A little better news every day, in five languages.",
+    "schil_tagline": "A little brighter news every day, in five languages.",
     "schil_volg_ons": "Follow BrightNews",
     "schil_lezen": "Read",
     "schil_zo_kiezen_we": "How we choose",
