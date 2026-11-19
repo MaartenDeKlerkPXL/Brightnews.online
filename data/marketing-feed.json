@@ -1,10 +1,18 @@
 {
- "gegenereerd": "2026-11-19T13:48:09.409Z",
+ "gegenereerd": "2026-11-19T14:56:38.477Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "17951000934225jcm9yk5i",
+     "titel": "Warmtepompleasing levert Franse gezinnen korting van 9.800 euro op",
+     "teaser": "Vanaf 17 november 2026 kunnen minder draagkrachtige Franse huishoudens een warmtepomp leasen met een gemiddelde premie van 9.800 euro, gefinancierd via de CEE-regeling. Het decreet, gepubliceerd op 10 november in het Journal officiel, bundelt installatie, onderhoud en elektriciteitsverbruik in één maandbedrag, vergelijkbaar met de oude verwarmingsrekening. Na twee tot drie jaar is het toestel afbetaald en blijft alleen het stroomverbruik...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/warmtepompleasing-levert-franse-gezinnen-korting-van-9-800-euro-op-17951000934225jcm9yk5i.html"
+    },
     {
      "id": "17949876177052b92cynfk",
      "titel": "April Surac bouwt NeuraSensa, kunst die zich aanpast aan de bezoeker",
@@ -22,28 +30,20 @@
      "url": "https://brightnews.online/articles/nl/dakloosheid-in-de-verenigde-staten-daalt-sterkst-in-tien-jaar-17949875935030qs384l5l.html"
     },
     {
-     "id": "1795096084943ymndpcytv",
-     "titel": "Aardappels groeien net zo goed in maangrond",
-     "teaser": "Onderzoekers van Oregon State University hebben aangetoond dat aardappels die worden geteeld in gesimuleerde maangrond, aangevuld met 30% organische vermicompost, een opbrengst behalen die vergelijkbaar is met aardappels geteeld op aarde. De aardappels blijken bovendien volledig veilig om te eten. Deze ontdekking is een belangrijke stap voor duurzame landbouw op de maan en draagt bij aan de voorbereidingen voor NASA's...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/nl/aardappels-groeien-net-zo-goed-in-maangrond-1795096084943ymndpcytv.html"
-    },
-    {
-     "id": "1795096065649q5baxkva2",
-     "titel": "Grottengids vindt meer dan 100 holenbeerskeletten in Zuid-Tirol",
-     "teaser": "In de Italiaanse provincie Zuid-Tirol is een grot ontdekt met de skeletten van meer dan 100 uitgestorven holenberen. Berggids Kurt Walde deed de vondst in juli in de gemeente Enneberg, op zo’n 2770 meter hoogte, net boven de beroemde Conturinesgrot die ooit werd leeggeroofd voordat wetenschappers die konden onderzoeken. Om plundering te voorkomen hield de Archeologische Erfgoeddienst de vondst geheim...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/nl/grottengids-vindt-meer-dan-100-holenbeerskeletten-in-zuid-tirol-1795096065649q5baxkva2.html"
-    },
-    {
-     "id": "1795075213212kmd4qhr7y",
-     "titel": "Antarctische blauwe vinvis groeit met 1.000% na einde walvisvangst",
-     "teaser": "Het aantal Antarctische blauwe vinvissen is sinds 1973 met 1.000% toegenomen, van 418 naar 4.018 dieren, een jaarlijkse groei van gemiddeld 4,5%. De Internationale Walvisvaartcommissie verbood het doden van deze walvissen al in 1964, maar illegale jacht ging door tot 1973. De dieren, de grootste die ooit hebben bestaan, planten zich traag voort met ongeveer één kalf per drie jaar....",
+     "id": "1795100193545l88yesrjj",
+     "titel": "Chester Zoo redt bedreigde pauwfazantkuikens met pleegmoeder en rubberen handschoen",
+     "teaser": "Chester Zoo was dit jaar de enige dierentuin in Europa die een Maleise pauwfazant succesvol liet uitbroeden. Van deze bedreigde soort worden slechts 15 dieren in gevangenschap in Europese dierentuinen grootgebracht. Toen een jonge moeder haar eerste ei verliet, legden verzorgers het bij een bronskleurige pauwfazant, die als pleegmoeder optrad. Een tweede ei werd wel door de eigen moeder uitgebroed,...",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/antarctische-blauwe-vinvis-groeit-met-1-000-na-einde-walvisvangst-1795075213212kmd4qhr7y.html"
+     "url": "https://brightnews.online/articles/nl/chester-zoo-redt-bedreigde-pauwfazantkuikens-met-pleegmoeder-en-rubberen-handsch-1795100193545l88yesrjj.html"
+    },
+    {
+     "id": "1795100168904e22zdpi5t",
+     "titel": "Bloemiste in Cuincy legt onverkochte bloemen op vergeten graven",
+     "teaser": "Een bloemenwinkel in Cuincy gooit haar onverkochte bloemen van Allerheiligen niet weg. In plaats daarvan brengt de commerçante ze naar het kerkhof, waar ze de bloemen legt op graven die vergeten lijken. Het solidaire gebaar ontroert veel mensen op internet.",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/bloemiste-in-cuincy-legt-onverkochte-bloemen-op-vergeten-graven-1795100168904e22zdpi5t.html"
     }
    ],
    "dagoverzichten": [
@@ -58,6 +58,14 @@
   },
   "en": {
    "top": [
+    {
+     "id": "17951000934225jcm9yk5i",
+     "titel": "Heat pump leasing saves French families €9,800",
+     "teaser": "From November 17, 2026, lower-income French households can lease a heat pump with an average subsidy of €9,800, financed through the CEE scheme. The decree, published on November 10 in the Journal officiel, bundles installation, maintenance and electricity consumption into a single monthly payment, comparable to the old heating bill. After two to three years, the unit is paid off...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/heat-pump-leasing-saves-french-families-9-800-17951000934225jcm9yk5i.html"
+    },
     {
      "id": "17949876177052b92cynfk",
      "titel": "April Surac builds NeuraSensa, art that adapts to the visitor",
@@ -75,28 +83,20 @@
      "url": "https://brightnews.online/articles/en/homelessness-in-the-united-states-falls-most-sharply-in-a-decade-17949875935030qs384l5l.html"
     },
     {
-     "id": "1795096084943ymndpcytv",
-     "titel": "Potatoes grow just as well in lunar soil",
-     "teaser": "Researchers at Oregon State University have demonstrated that potatoes cultivated in simulated lunar soil, supplemented with 30% organic vermicompost, achieve yields comparable to potatoes grown on Earth. The potatoes also prove to be completely safe to eat. This discovery is an important step toward sustainable agriculture on the Moon and contributes to preparations for NASA's Artemis program.",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/en/potatoes-grow-just-as-well-in-lunar-soil-1795096084943ymndpcytv.html"
-    },
-    {
-     "id": "1795096065649q5baxkva2",
-     "titel": "Mountain guide discovers more than 100 cave bear skeletons in South Tyrol",
-     "teaser": "In the Italian province of South Tyrol, a cave has been discovered containing the skeletons of more than 100 extinct cave bears. Mountain guide Kurt Walde made the discovery in July in the municipality of Enneberg, at approximately 2,770 meters altitude, just above the famous Conturines Cave, which was once looted before scientists could examine it. To prevent plundering, the...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/en/mountain-guide-discovers-more-than-100-cave-bear-skeletons-in-south-tyrol-1795096065649q5baxkva2.html"
-    },
-    {
-     "id": "1795075213212kmd4qhr7y",
-     "titel": "Antarctic blue whale population grows 1,000% after end of whaling",
-     "teaser": "The number of Antarctic blue whales has increased by 1,000% since 1973, rising from 418 to 4,018 animals, representing an average annual growth rate of 4.5%. The International Whaling Commission banned the killing of these whales in 1964, but illegal hunting continued until 1973. These animals, the largest creatures ever to exist, reproduce slowly at a rate of approximately one...",
+     "id": "1795100193545l88yesrjj",
+     "titel": "Chester Zoo saves endangered Malaysian peacock pheasant chicks with foster mother and rubber glove",
+     "teaser": "Chester Zoo was the only zoo in Europe this year to successfully hatch a Malaysian peacock pheasant. Only 15 of these endangered birds are being raised in captivity across European zoos. When a young mother abandoned her first egg, keepers placed it with a bronze-coloured peacock pheasant, who took on the role of foster mother. A second egg was hatched...",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/antarctic-blue-whale-population-grows-1-000-after-end-of-whaling-1795075213212kmd4qhr7y.html"
+     "url": "https://brightnews.online/articles/en/chester-zoo-saves-endangered-malaysian-peacock-pheasant-chicks-with-foster-mothe-1795100193545l88yesrjj.html"
+    },
+    {
+     "id": "1795100168904e22zdpi5t",
+     "titel": "Florist in Cuincy places unsold flowers on forgotten graves",
+     "teaser": "A flower shop in Cuincy doesn't throw away its unsold flowers from All Saints' Day. Instead, the owner takes them to the cemetery, where she places them on graves that appear to have been forgotten. The gesture of solidarity has moved many people online.",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/florist-in-cuincy-places-unsold-flowers-on-forgotten-graves-1795100168904e22zdpi5t.html"
     }
    ],
    "dagoverzichten": [
@@ -111,6 +111,14 @@
   },
   "de": {
    "top": [
+    {
+     "id": "17951000934225jcm9yk5i",
+     "titel": "Wärmepumpenleasen spart französischen Familien 9.800 Euro",
+     "teaser": "Ab dem 17. November 2026 können einkommensschwache französische Haushalte eine Wärmepumpe mit einer durchschnittlichen Förderung von 9.800 Euro leasen, finanziert über das CEE-Programm. Das am 10. November im Journal officiel veröffentlichte Dekret fasst Installation, Wartung und Stromverbrauch in einer monatlichen Rate zusammen, vergleichbar mit der früheren Heizrechnung. Nach zwei bis drei Jahren ist das Gerät abbezahlt und es bleibt nur...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/warmepumpenleasen-spart-franzosischen-familien-9-800-euro-17951000934225jcm9yk5i.html"
+    },
     {
      "id": "17949876177052b92cynfk",
      "titel": "April Surac entwickelt NeuraSensa, Kunst die sich dem Besucher anpasst",
@@ -128,28 +136,20 @@
      "url": "https://brightnews.online/articles/de/obdachlosigkeit-in-den-usa-sinkt-starker-als-seit-zehn-jahren-17949875935030qs384l5l.html"
     },
     {
-     "id": "1795096084943ymndpcytv",
-     "titel": "Kartoffeln wachsen genauso gut in Mondregolith",
-     "teaser": "Forscher der Oregon State University haben nachgewiesen, dass Kartoffeln, die in simuliertem Mondregolith angebaut werden und mit 30 % organischem Wurmkompost angereichert sind, einen Ertrag erzielen, der mit auf der Erde angebauten Kartoffeln vergleichbar ist. Die Kartoffeln erweisen sich zudem als vollständig sicher zum Verzehr. Diese Entdeckung ist ein wichtiger Schritt für nachhaltige Landwirtschaft auf dem Mond und trägt zu...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/de/kartoffeln-wachsen-genauso-gut-in-mondregolith-1795096084943ymndpcytv.html"
-    },
-    {
-     "id": "1795096065649q5baxkva2",
-     "titel": "Höhlenführer entdeckt über 100 Höhlenbärenskelette in Südtirol",
-     "teaser": "In der italienischen Provinz Südtirol wurde eine Höhle mit den Skeletten von über 100 ausgestorbenen Höhlenbären entdeckt. Bergführer Kurt Walde machte den Fund im Juli in der Gemeinde Enneberg auf etwa 2770 Metern Höhe, knapp oberhalb der berühmten Conturinesgrot, die einst geplündert wurde, bevor Wissenschaftler sie untersuchen konnten. Um Plünderungen zu verhindern, hielt der Archäologische Dienst für Kulturdenkmäler den Fund...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/de/hohlenfuhrer-entdeckt-uber-100-hohlenbarenskelette-in-sudtirol-1795096065649q5baxkva2.html"
-    },
-    {
-     "id": "1795075213212kmd4qhr7y",
-     "titel": "Antarktischer Blauwal wächst um 1.000% nach Ende des Walfangs",
-     "teaser": "Die Anzahl der antarktischen Blauwale ist seit 1973 um 1.000% gestiegen, von 418 auf 4.018 Tiere, ein durchschnittliches jährliches Wachstum von 4,5%. Die Internationale Walfangkommission verbot die Tötung dieser Wale bereits 1964, doch illegale Jagd setzte sich bis 1973 fort. Die Tiere, die größten, die je existiert haben, pflanzen sich langsam fort mit etwa einem Kalb pro drei Jahre. Postdoktorandin...",
+     "id": "1795100193545l88yesrjj",
+     "titel": "Chester Zoo rettet bedrohte Malaysische Pauwfasanküken mit Pflegemutter und Gummihandschuh",
+     "teaser": "Chester Zoo war in diesem Jahr der einzige Zoo in Europa, der einen Malaysischen Pauwfasanen erfolgreich ausbrüten ließ. Von dieser bedrohten Art werden in europäischen Zoos nur 15 Tiere in Gefangenschaft großgezogen. Als eine junge Mutter ihr erstes Ei verließ, legten Pfleger es zu einem bronzefarbenen Pauwfasanen, der als Pflegemutter fungierte. Ein zweites Ei wurde zwar von der eigenen Mutter...",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/antarktischer-blauwal-wachst-um-1-000-nach-ende-des-walfangs-1795075213212kmd4qhr7y.html"
+     "url": "https://brightnews.online/articles/de/chester-zoo-rettet-bedrohte-malaysische-pauwfasankuken-mit-pflegemutter-und-gumm-1795100193545l88yesrjj.html"
+    },
+    {
+     "id": "1795100168904e22zdpi5t",
+     "titel": "Floristin in Cuincy legt unverkaufte Blumen auf vergessene Gräber",
+     "teaser": "Ein Blumengeschäft in Cuincy wirft seine unverkauften Blumen von Allerheiligen nicht weg. Stattdessen bringt die Geschäftsinhaberin sie auf den Friedhof, wo sie die Blumen auf Gräber legt, die vergessen zu sein scheinen. Die solidarische Geste rührt viele Menschen im Internet.",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/floristin-in-cuincy-legt-unverkaufte-blumen-auf-vergessene-graber-1795100168904e22zdpi5t.html"
     }
    ],
    "dagoverzichten": [
@@ -164,6 +164,14 @@
   },
   "fr": {
    "top": [
+    {
+     "id": "17951000934225jcm9yk5i",
+     "titel": "La location de pompes à chaleur offre une réduction de 9 800 euros aux familles françaises",
+     "teaser": "À partir du 17 novembre 2026, les ménages français aux revenus modestes pourront louer une pompe à chaleur avec une prime moyenne de 9 800 euros, financée via le dispositif CEE. Le décret, publié le 10 novembre au Journal officiel, regroupe l'installation, l'entretien et la consommation électrique en une seule mensualité, comparable à l'ancienne facture de chauffage. Après deux à...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/la-location-de-pompes-a-chaleur-offre-une-reduction-de-9-800-euros-aux-familles-17951000934225jcm9yk5i.html"
+    },
     {
      "id": "17949876177052b92cynfk",
      "titel": "April Surac crée NeuraSensa, un art qui s'adapte au visiteur",
@@ -181,28 +189,20 @@
      "url": "https://brightnews.online/articles/fr/l-itinerance-aux-etats-unis-baisse-le-plus-en-dix-ans-17949875935030qs384l5l.html"
     },
     {
-     "id": "1795096084943ymndpcytv",
-     "titel": "Les pommes de terre poussent aussi bien dans le régolithe lunaire",
-     "teaser": "Des chercheurs de Oregon State University ont démontré que les pommes de terre cultivées dans un régolithe lunaire simulé, enrichi de 30 % de vermicompost organique, produisent un rendement comparable à celui des pommes de terre cultivées sur terre. Les pommes de terre s'avèrent en outre totalement sûres à la consommation. Cette découverte constitue une étape importante pour l'agriculture durable...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/fr/les-pommes-de-terre-poussent-aussi-bien-dans-le-regolithe-lunaire-1795096084943ymndpcytv.html"
-    },
-    {
-     "id": "1795096065649q5baxkva2",
-     "titel": "Un guide de grotte découvre plus de 100 squelettes d'ours des cavernes en Tyrol du Sud",
-     "teaser": "Dans la province italienne du Tyrol du Sud, une grotte a été découverte contenant les squelettes de plus de 100 ours des cavernes disparus. Le guide de montagne Kurt Walde a fait cette découverte en juillet dans la commune d'Enneberg, à environ 2770 mètres d'altitude, juste au-dessus de la célèbre grotte de Conturines qui avait autrefois été pillée avant que...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/fr/un-guide-de-grotte-decouvre-plus-de-100-squelettes-d-ours-des-cavernes-en-tyrol-1795096065649q5baxkva2.html"
-    },
-    {
-     "id": "1795075213212kmd4qhr7y",
-     "titel": "La baleine bleue antarctique augmente de 1.000% après la fin de la chasse",
-     "teaser": "Le nombre de baleines bleues antarctiques a augmenté de 1.000% depuis 1973, passant de 418 à 4.018 individus, soit une croissance annuelle moyenne de 4,5%. La Commission baleinière internationale a interdit l'abattage de ces cétacés dès 1964, mais la chasse illégale a continué jusqu'en 1973. Ces animaux, les plus grands ayant jamais existé, se reproduisent lentement avec environ un veau...",
+     "id": "1795100193545l88yesrjj",
+     "titel": "Chester Zoo sauve des poussins de faisan-paon menacés grâce à une mère adoptive et un gant en caoutchouc",
+     "teaser": "Chester Zoo est le seul zoo d'Europe à avoir réussi cette année à faire couver un faisan-paon malais. Seulement 15 individus de cette espèce menacée sont élevés en captivité dans les zoos européens. Quand une jeune mère a abandonné son premier œuf, les soigneurs l'ont placé sous un faisan-paon couleur bronze, qui a joué le rôle de mère adoptive. Un...",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/la-baleine-bleue-antarctique-augmente-de-1-000-apres-la-fin-de-la-chasse-1795075213212kmd4qhr7y.html"
+     "url": "https://brightnews.online/articles/fr/chester-zoo-sauve-des-poussins-de-faisan-paon-menaces-grace-a-une-mere-adoptive-1795100193545l88yesrjj.html"
+    },
+    {
+     "id": "1795100168904e22zdpi5t",
+     "titel": "Une fleuriste à Cuincy dépose des fleurs invendues sur des tombes oubliées",
+     "teaser": "Une boutique de fleurs à Cuincy ne jette pas ses fleurs invendues de la Toussaint. Au lieu de cela, la commerçante les apporte au cimetière, où elle les dépose sur des tombes qui semblent oubliées. Ce geste solidaire émeut beaucoup de personnes sur internet.",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/une-fleuriste-a-cuincy-depose-des-fleurs-invendues-sur-des-tombes-oubliees-1795100168904e22zdpi5t.html"
     }
    ],
    "dagoverzichten": [
@@ -217,6 +217,14 @@
   },
   "es": {
    "top": [
+    {
+     "id": "17951000934225jcm9yk5i",
+     "titel": "El arrendamiento de bombas de calor ofrece descuentos de 9.800 euros a familias francesas",
+     "teaser": "A partir del 17 de noviembre de 2026, los hogares franceses con menos recursos podrán arrendar una bomba de calor con una prima media de 9.800 euros, financiada a través del dispositivo CEE. El decreto, publicado el 10 de noviembre en el Journal officiel, agrupa la instalación, el mantenimiento y el consumo de electricidad en una única cuota mensual, comparable...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/el-arrendamiento-de-bombas-de-calor-ofrece-descuentos-de-9-800-euros-a-familias-17951000934225jcm9yk5i.html"
+    },
     {
      "id": "17949876177052b92cynfk",
      "titel": "April Surac crea NeuraSensa, arte que se adapta al visitante",
@@ -234,28 +242,20 @@
      "url": "https://brightnews.online/articles/es/la-falta-de-vivienda-en-estados-unidos-cae-al-ritmo-mas-rapido-en-diez-anos-17949875935030qs384l5l.html"
     },
     {
-     "id": "1795096084943ymndpcytv",
-     "titel": "Las papas crecen igual de bien en suelo lunar",
-     "teaser": "Investigadores de Oregon State University han demostrado que las papas cultivadas en suelo lunar simulado, complementado con un 30% de vermicompost orgánico, logran un rendimiento comparable al de las papas cultivadas en la Tierra. Además, las papas resultan completamente seguras para el consumo. Este descubrimiento es un paso importante para la agricultura sostenible en la Luna y contribuye a los...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/es/las-papas-crecen-igual-de-bien-en-suelo-lunar-1795096084943ymndpcytv.html"
-    },
-    {
-     "id": "1795096065649q5baxkva2",
-     "titel": "Guía de cuevas descubre más de 100 esqueletos de oso de las cavernas en Tirol del Sur",
-     "teaser": "En la provincia italiana de Tirol del Sur se ha descubierto una cueva con los esqueletos de más de 100 osos de las cavernas extintos. El guía de montaña Kurt Walde realizó el hallazgo en julio en el municipio de Enneberg, a unos 2770 metros de altura, justo encima de la famosa cueva de Conturines que fue saqueada antes de...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/es/guia-de-cuevas-descubre-mas-de-100-esqueletos-de-oso-de-las-cavernas-en-tirol-de-1795096065649q5baxkva2.html"
-    },
-    {
-     "id": "1795075213212kmd4qhr7y",
-     "titel": "La ballena azul antártica crece un 1.000% tras el fin de la caza de ballenas",
-     "teaser": "El número de ballenas azules antárticas ha aumentado un 1.000% desde 1973, pasando de 418 a 4.018 animales, con un crecimiento anual promedio del 4,5%. La Comisión Ballenera Internacional prohibió la matanza de estas ballenas en 1964, pero la caza ilegal continuó hasta 1973. Estos animales, los más grandes que han existido jamás, se reproducen lentamente con aproximadamente una cría...",
+     "id": "1795100193545l88yesrjj",
+     "titel": "Chester Zoo salva polluelos de faisán pavo en peligro con madre adoptiva y guante de goma",
+     "teaser": "Chester Zoo fue este año el único zoológico de Europa que logró empollar con éxito un faisán pavo malayo. De esta especie en peligro solo se crían 15 animales en cautividad en zoológicos europeos. Cuando una madre joven abandonó su primer huevo, los cuidadores lo colocaron con un faisán pavo de color bronce, que actuó como madre adoptiva. Un segundo...",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/la-ballena-azul-antartica-crece-un-1-000-tras-el-fin-de-la-caza-de-ballenas-1795075213212kmd4qhr7y.html"
+     "url": "https://brightnews.online/articles/es/chester-zoo-salva-polluelos-de-faisan-pavo-en-peligro-con-madre-adoptiva-y-guant-1795100193545l88yesrjj.html"
+    },
+    {
+     "id": "1795100168904e22zdpi5t",
+     "titel": "Florista en Cuincy coloca flores sin vender en tumbas olvidadas",
+     "teaser": "Una floristería en Cuincy no tira sus flores sin vender del Día de Difuntos. En su lugar, la comerciante las lleva al cementerio, donde las coloca en tumbas que parecen olvidadas. El gesto solidario conmueve a muchas personas en internet.",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/florista-en-cuincy-coloca-flores-sin-vender-en-tumbas-olvidadas-1795100168904e22zdpi5t.html"
     }
    ],
    "dagoverzichten": [
