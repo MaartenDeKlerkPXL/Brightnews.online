@@ -242,8 +242,9 @@ import { tekenBeeldkaart, kaartBestandsnaam, downloadKaart } from './js/beeldkaa
             taalKnoppen.appendChild(knop);
         });
 
-        // Beeldkaart — alleen bij Instagram, want daar mag geen link in het
-        // bijschrift en hangt de post volledig van het beeld af (punt 53.1).
+        // Beeldkaart — bij Instagram (daar mag geen link in het bijschrift en
+        // hangt de post volledig van het beeld af, punt 53.1) en sinds
+        // 2026-11-19 ook bij Facebook, voor een vaste herkenbare post.
         const kaartvak = document.createElement('div');
         kaartvak.className = 'kaartvak';
         let doek = null;
@@ -285,7 +286,7 @@ import { tekenBeeldkaart, kaartBestandsnaam, downloadKaart } from './js/beeldkaa
         });
         acties.append(kopieer, goed, slecht);
 
-        if (kanaal === 'instagram') {
+        if (kanaal === 'instagram' || kanaal === 'facebook') {
             const kaartKnop = document.createElement('button');
             kaartKnop.className = 'btn btn--secondary btn--sm';
             kaartKnop.textContent = '🖼 Beeldkaart';
@@ -294,7 +295,7 @@ import { tekenBeeldkaart, kaartBestandsnaam, downloadKaart } from './js/beeldkaa
                     doek = document.createElement('canvas');
                     const uitleg = document.createElement('p');
                     uitleg.className = 'uitleg';
-                    uitleg.innerHTML = '1080 × 1080, klaar voor Instagram. '
+                    uitleg.innerHTML = '1080 × 1080, klaar voor Instagram en Facebook. '
                         + 'De kaart volgt de taalknoppen hierboven.<br><br>';
                     const download = document.createElement('button');
                     download.className = 'btn btn--primary btn--sm';
