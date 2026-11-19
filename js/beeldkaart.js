@@ -10,31 +10,27 @@
  *  - een SVG in een <img> laadt geen paginalettertypen, dus de kop zou in een
  *    systeemletter vallen — precies het merkkenmerk dat je wilt behouden;
  *  - de cockpit is toch waar Maarten de posts nakijkt en kopieert, dus de
- *    download hoort daar. Zodra de publicatielus er is (punt 45, stap 4) kan
- *    dezelfde tekenfunctie naar een server-side canvas.
+ *    download hoort daar.
  *
- * Ontwerp: lichte kaart (--light-bg) met een dikke groene baan links, kop in
- * Schibsted Grotesk ExtraBold, links uitgelijnd. Bewust niet het standaard
- * volvlak-groen met witte gecentreerde tekst: in een Instagram-feed vol
- * schreeuwerige kaarten valt een rustige, redactionele kaart juist óp, en de
- * groene baan is dezelfde streep als de dagkop in de cockpit en de accenten
- * op de site — je ziet aan de vorm dat het BrightNews is, zonder groot logo.
- * Tekst op het groene vlak is wit (huisregel, TODO punt 44).
+ * Ontwerp (2026-11-19): de v5-huisstijl, gelijk aan het Illustrator-sjabloon
+ * assets/sociale-media/post-sjabloon.svg. Wijzig je het een, wijzig dan ook
+ * het ander. Roomgele kaart, logo linksboven, groen label met witte tekst,
+ * kop in Instrument Sans SemiBold, een dunne lijn en het adres onderaan. De
+ * kop hangt aan een vaste onderrand, zodat elke kaart in de feed op dezelfde
+ * plek eindigt, hoe lang de kop ook is.
  */
 
 const KAART = {
     formaat: 1080,
-    baanBreedte: 28,
     marge: 96,
-    groen: '#32CD32',
-    achtergrond: '#F8FBF8',
-    tekst: '#1A1A1A',
-    letter: '"Schibsted Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-    // De horizontale wordmark, niet het 'vierkante' logo: dat is dezelfde
-    // wordmark op een vierkant doek met veel witruimte, en die wordt op
-    // voetmaat onleesbaar.
-    logo: '/assets/brightnews-logo.png',
-    logoBreedte: 340,
+    groen: '#186F49',
+    achtergrond: '#FFF1C7',
+    tekst: '#152019',
+    letter: '"Instrument Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+    // De wordmark als SVG: de letters zijn paden, dus geen lettertype nodig.
+    logo: '/assets/logo.svg',
+    logoBreedte: 325,
+    kopOnder: 900,
 };
 
 // De chip boven de kop. Een dagoverzicht en een los artikel zijn iets anders
@@ -78,16 +74,16 @@ function breekAf(ctx, tekst, maxBreedte) {
  * Aflopend zoeken in stappen van 4px is ruim snel genoeg (± 20 metingen). */
 function pasKop(ctx, tekst, maxBreedte, maxHoogte, maxGrootte, minGrootte) {
     for (let grootte = maxGrootte; grootte >= minGrootte; grootte -= 4) {
-        ctx.font = `800 ${grootte}px ${KAART.letter}`;
+        ctx.font = `600 ${grootte}px ${KAART.letter}`;
         const regels = breekAf(ctx, tekst, maxBreedte);
-        const regelhoogte = Math.round(grootte * 1.14);
+        const regelhoogte = Math.round(grootte * 1.16);
         if (regels.length * regelhoogte <= maxHoogte) {
             return { grootte, regels, regelhoogte };
         }
     }
-    ctx.font = `800 ${minGrootte}px ${KAART.letter}`;
+    ctx.font = `600 ${minGrootte}px ${KAART.letter}`;
     const regels = breekAf(ctx, tekst, maxBreedte);
-    return { grootte: minGrootte, regels, regelhoogte: Math.round(minGrootte * 1.14) };
+    return { grootte: minGrootte, regels, regelhoogte: Math.round(minGrootte * 1.16) };
 }
 
 function laadLogo() {
@@ -100,20 +96,25 @@ function laadLogo() {
     });
 }
 
-// De merkletter moet geladen zijn vóór de eerste measureText, anders meet je
-// de systeemletter op en klopt de afbreking niet meer met wat je tekent.
-async function wachtOpLetter() {
-    if (!document.fonts) return;
-    try {
-        await Promise.all([
-            document.fonts.load('800 120px "Schibsted Grotesk"'),
-            document.fonts.load('700 34px "Schibsted Grotesk"'),
-            document.fonts.load('500 30px "Schibsted Grotesk"'),
-        ]);
-        await document.fonts.ready;
-    } catch {
-        // Letter niet beschikbaar: de fallback in KAART.letter neemt het over.
+// De cockpit laadt de oude stylesheet zonder Instrument Sans, dus de kaart
+// registreert de letter zelf. Hij moet geladen zijn vóór de eerste
+// measureText, anders klopt de afbreking niet met wat je tekent.
+let letterGeladen = null;
+function wachtOpLetter() {
+    if (!letterGeladen) {
+        letterGeladen = (async () => {
+            if (!document.fonts || typeof FontFace === 'undefined') return;
+            try {
+                const letter = new FontFace('Instrument Sans',
+                    'url(/assets/fonts/instrument-sans-latin.woff2) format("woff2")',
+                    { weight: '500 600' });
+                document.fonts.add(await letter.load());
+            } catch {
+                // Letter niet beschikbaar: de fallback in KAART.letter neemt het over.
+            }
+        })();
     }
+    return letterGeladen;
 }
 
 /**
@@ -123,61 +124,64 @@ async function wachtOpLetter() {
  */
 export async function tekenBeeldkaart(canvas, { kop, soort, taal = 'nl' }) {
     const G = KAART.formaat;
+    const M = KAART.marge;
     canvas.width = G;
     canvas.height = G;
     const ctx = canvas.getContext('2d');
 
-    await wachtOpLetter();
+    const [, logo] = await Promise.all([wachtOpLetter(), laadLogo()]);
 
     ctx.fillStyle = KAART.achtergrond;
     ctx.fillRect(0, 0, G, G);
 
-    // De groene baan links — het herkenningspunt van de kaart.
-    ctx.fillStyle = KAART.groen;
-    ctx.fillRect(0, 0, KAART.baanBreedte, G);
-
-    const x = KAART.baanBreedte + KAART.marge;
-    const breedte = G - x - KAART.marge;
-
-    // Chip: groen vlak, witte tekst (huisregel punt 44).
-    const chipTekst = label(soort, taal).toUpperCase();
-    ctx.font = `700 30px ${KAART.letter}`;
-    const chipBreedte = ctx.measureText(chipTekst).width + 44;
-    const chipY = KAART.marge + 40;
-    ctx.fillStyle = KAART.groen;
-    ctx.beginPath();
-    ctx.roundRect(x, chipY, chipBreedte, 52, 26);
-    ctx.fill();
-    ctx.fillStyle = '#FFFFFF';
-    ctx.textBaseline = 'middle';
-    ctx.fillText(chipTekst, x + 22, chipY + 27);
-
-    // De kop krijgt alles tussen de chip en de voettekst.
-    const kopBoven = chipY + 52 + 64;
-    const voetHoogte = 190;
-    const kopOnder = G - KAART.marge - voetHoogte;
-    const { regels, regelhoogte } = pasKop(ctx, kop, breedte, kopOnder - kopBoven, 104, 48);
-
-    // De kop hangt aan de ónderkant van zijn vlak, niet aan de bovenkant: zo
-    // staat de tekst bij een kop van drie woorden op dezelfde optische plek
-    // als bij een kop van twintig, en oogt de reeks als één serie in plaats
-    // van als losse kaarten. De lucht valt dan boven de tekst, onder de chip.
-    const blokHoogte = regels.length * regelhoogte;
-    const start = kopOnder - blokHoogte;
-    ctx.fillStyle = KAART.tekst;
-    ctx.textBaseline = 'top';
-    regels.forEach((regel, i) => {
-        ctx.fillText(regel, x, start + i * regelhoogte);
-    });
-
-    // Voet: alleen de wordmark. Die bevat zelf al ".online", dus een losse
-    // regel met de domeinnaam eronder is dubbelop.
-    const logo = await laadLogo();
+    // Logo linksboven.
+    let logoOnder = M;
     if (logo && logo.naturalWidth) {
         const b = KAART.logoBreedte;
         const h = Math.round(b * (logo.naturalHeight / logo.naturalWidth));
-        ctx.drawImage(logo, x, G - KAART.marge - h, b, h);
+        ctx.drawImage(logo, M, 92, b, h);
+        logoOnder = 92 + h;
     }
+
+    // De kop eindigt altijd op KAART.kopOnder; het label staat er vlak boven.
+    const breedte = G - 2 * M;
+    const chipHoogte = 56;
+    const ruimte = KAART.kopOnder - (logoOnder + 80) - chipHoogte - 40;
+    const { grootte, regels, regelhoogte } = pasKop(ctx, kop, breedte, ruimte, 80, 48);
+    const kopBoven = KAART.kopOnder - regels.length * regelhoogte;
+
+    // Label: groen vlak, witte tekst (huisregel punt 44).
+    const chipTekst = label(soort, taal).toUpperCase();
+    ctx.font = `600 26px ${KAART.letter}`;
+    if ('letterSpacing' in ctx) ctx.letterSpacing = '2px';
+    const chipBreedte = ctx.measureText(chipTekst).width + 52;
+    const chipY = kopBoven - 40 - chipHoogte;
+    ctx.fillStyle = KAART.groen;
+    ctx.beginPath();
+    ctx.roundRect(M, chipY, chipBreedte, chipHoogte, chipHoogte / 2);
+    ctx.fill();
+    ctx.fillStyle = '#FFFFFF';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(chipTekst, M + 26, chipY + chipHoogte / 2 + 1);
+    if ('letterSpacing' in ctx) ctx.letterSpacing = '0px';
+
+    // De kop.
+    ctx.font = `600 ${grootte}px ${KAART.letter}`;
+    ctx.fillStyle = KAART.tekst;
+    ctx.textBaseline = 'top';
+    regels.forEach((regel, i) => {
+        ctx.fillText(regel, M, kopBoven + i * regelhoogte);
+    });
+
+    // Lijn en adres onderaan.
+    ctx.globalAlpha = 0.12;
+    ctx.fillStyle = KAART.tekst;
+    ctx.fillRect(M, 938, breedte, 3);
+    ctx.globalAlpha = 1;
+    ctx.font = `600 30px ${KAART.letter}`;
+    ctx.fillStyle = KAART.groen;
+    ctx.textBaseline = 'alphabetic';
+    ctx.fillText('brightnews.online', M, 994);
 
     return canvas;
 }
