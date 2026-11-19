@@ -1,5 +1,92 @@
 [
   {
+    "id": "dg-20261118-dag",
+    "type": "digest",
+    "digest_date": "2026-11-18",
+    "title": "Compassion gains ground, from the Bronx to Algeria",
+    "summary": "This day shows how people make their surroundings and each other just a little bit better. From a teenager designing art for sensitive senses to a billionaire giving away billions: it's always about paying attention to those who need it. In Florida, April Surac founded the NeuraSensa project, with installations that respond to the visitor standing before them [1]. Her experience with a sister on the autism spectrum inspired the idea: combining fabric and sensors so that light, sound and surfaces move along with whoever comes to see. Her work has already reached more than 15,000 people and provided extra...",
+    "image_alt": "Compassion gains ground, from the Bronx to Algeria",
+    "meta_description": "Day overview full of positive news: care art, clean school buses, less homelessness, a major donation and baby turtles hatching.",
+    "meta_keywords": "Science, Lifestyle, Environment, Finance",
+    "link": "",
+    "source": "BrightNews",
+    "image": null,
+    "date": "2026-11-19T08:01:17.801Z",
+    "category": null,
+    "refs": [
+      {
+        "id": "17949876177052b92cynfk",
+        "title": "April Surac builds NeuraSensa, art that adapts to the visitor"
+      },
+      {
+        "id": "17949875935030qs384l5l",
+        "title": "Homelessness in the United States falls most sharply in a decade"
+      },
+      {
+        "id": "1794987571124hzq9frrmq",
+        "title": "Electric school buses improve air quality in the Bronx"
+      },
+      {
+        "id": "17949875439091ik1w0stp",
+        "title": "Buffett donates $5.5 billion on Thanksgiving"
+      },
+      {
+        "id": "1794987519997abv74xlc4",
+        "title": "Algeria welcomes Lawrence residents after World Cup hospitality"
+      },
+      {
+        "id": "17949874966011dhnxknbj",
+        "title": "Sea turtle hatchlings released for first time on US West Coast"
+      }
+    ],
+    "slug": "compassion-gains-ground-from-the-bronx-to-algeria"
+  },
+  {
+    "id": "1795075213212kmd4qhr7y",
+    "title": "Antarctic blue whale population grows 1,000% after end of whaling",
+    "summary": "The number of Antarctic blue whales has increased by 1,000% since 1973, rising from 418 to 4,018 animals, representing an average annual growth rate of 4.5%. The International Whaling Commission banned the killing of these whales in 1964, but illegal hunting continued until 1973. These animals, the largest creatures ever to exist, reproduce slowly at a rate of approximately one...",
+    "image_alt": "An Antarctic blue whale swims through the Southern Ocean",
+    "meta_description": "Antarctic blue whale population grows 1,000% since end of whaling in 1973, new research shows.",
+    "meta_keywords": "blue whale, whaling, Antarctica, IUCN, Zoe Rand, Southern Ocean, whale population",
+    "link": "https://www.goodnewsnetwork.org/this-blue-whale-population-grew-1000-since-the-end-of-whaling/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2023/06/blue-whale-NOAA-pubdomain.jpg",
+    "date": "2026-11-19T08:00:15.383Z",
+    "category": "Environment",
+    "score": 9,
+    "slug": "antarctic-blue-whale-population-grows-1-000-after-end-of-whaling"
+  },
+  {
+    "id": "1795075182084u286z6pc8",
+    "title": "Children build 430-step staircase for their mother in Zhejiang",
+    "summary": "The children of an elderly Chinese woman have hand-built a 430-step staircase against a hillside in Zhejiang province, making it easier for their mother to reach her mountain home. Born and raised on the mountain, the woman moved to the city after her husband's death, but never adjusted to urban life and returned every year for the Qingming festival. The...",
+    "image_alt": "A handmade staircase with 430 steps against the side of a mountain in Zhejiang, China",
+    "meta_description": "Chinese children build 430-step staircase up a mountain so their mother can continue to reach her mountain village.",
+    "meta_keywords": "sky ladder, Zhejiang, filial piety, Qingming festival, China, mountain staircase, family",
+    "link": "https://www.goodnewsnetwork.org/siblings-build-430-step-sky-ladder-for-their-mother-who-refuses-to-live-in-the-city/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/86-year-old-mother-Chen-family-photo.jpg",
+    "date": "2026-11-19T07:59:44.636Z",
+    "category": "Lifestyle",
+    "score": 9,
+    "slug": "children-build-430-step-staircase-for-their-mother-in-zhejiang"
+  },
+  {
+    "id": "17950751563390ia6z5rgw",
+    "title": "Students save endangered liveforever plant in Silicon Valley",
+    "summary": "Scientists and students at Santa Clara University are working to save the Santa Clara Valley dudleya, a rare wildflower found only in the Coyote Valley region of the county. The plant, known as „liveforever\" for its ability to revive after drought, is an important food source for pollinators but is threatened by plant poachers, climate change and habitat loss. Dr....",
+    "image_alt": "Students and scientists examine the rare Santa Clara Valley liveforever plant in a laboratory",
+    "meta_description": "Students and scientists at Santa Clara University fight to save the rare, endangered liveforever plant from poachers.",
+    "meta_keywords": "dudleya, liveforever, Santa Clara Valley, endangered plant species, Santa Clara University, plant poachers, pollinators, Coyote Valley",
+    "link": "https://www.goodnewsnetwork.org/students-fighting-to-save-poached-plant-species-that-only-exists-near-their-campus/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-Santa-Clara-Valley-Habitat-Authority.jpg",
+    "date": "2026-11-19T07:59:20.055Z",
+    "category": "Environment",
+    "score": 9,
+    "slug": "students-save-endangered-liveforever-plant-in-silicon-valley"
+  },
+  {
     "id": "1794987640261m43agktoq",
     "title": "Stories convince 22 times better than facts alone, Stanford research shows",
     "summary": "Behavioral scientist Jennifer Aaker from Stanford University investigated the effect of a well-told story versus sharing facts alone. Her conclusion: stories are 22 times more persuasive than facts alone. According to Aaker, facts and stories work together even more powerfully, because a story with figures in it convinces both intellectually and emotionally. This is supported by a 2010 study in...",
@@ -1813,56 +1900,6 @@
     "slug": "portuguese-island-corvo-turns-off-lights-for-shearwaters"
   },
   {
-    "id": "dg-20261031-lifestyle",
-    "type": "digest",
-    "digest_date": "2026-10-31",
-    "title": "From barking service dogs to basketball-playing otters: the good news of this week",
-    "summary": "These days show how people and animals help each other in the most diverse ways. From a school that fills an entire football field with groceries to an otter that shoots a pumpkin into a basketball hoop: the positive news is in the details. In New Jersey, students from Howell High School collected more than a quarter million pounds of food for thirty food banks, spread across thousands of yellow bags on the school field [1]. Seventeen-year-old Vivian Ho is also making a difference for others: she built a supply network based on dignity rather than charity, and is receiving...",
-    "image_alt": "From barking service dogs to basketball-playing otters: the good news of this week",
-    "meta_description": "From rescue service dogs to basketball-playing otters: read the positive lifestyle news from late October 2026 on BrightNews.",
-    "meta_keywords": "Lifestyle",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Football-field-full-of-food-bank-donations-in-NY-Credit-Tommy-Pantaleo-for-Dermer-Dreams-submitted.jpg",
-    "date": "2026-11-01T17:46:09.595Z",
-    "category": "Lifestyle",
-    "refs": [
-      {
-        "id": "1793555084446w70x69w4f",
-        "title": "Howell High School fills football field with donations for food banks"
-      },
-      {
-        "id": "1793555114323om6utmbe0",
-        "title": "Service dog Storm saves life of deaf Sandra after her husband Gary's fall"
-      },
-      {
-        "id": "1793383690293t4rrao107",
-        "title": "Sea otters Juno, Lincoln and Uni Sushi play basketball with pumpkins"
-      },
-      {
-        "id": "1793383447754f3bib3sdq",
-        "title": "Vivian Ho (17) builds supply network based on dignity"
-      },
-      {
-        "id": "1793383257407x9i0ucuyo",
-        "title": "Man jumps onto moving school bus and saves 18 children"
-      },
-      {
-        "id": "1793382890861w6m803vdy",
-        "title": "Documentary 'Panther Pat' honors Pat Palinkas, first woman in professional football"
-      },
-      {
-        "id": "1793382864366l99apl4wk",
-        "title": "Phone number on exam question leads to friendship between student and strawberry farmer"
-      },
-      {
-        "id": "1793382839054fxzglq088",
-        "title": "Texas elementary school named after custodian Miss Marilyn"
-      }
-    ],
-    "slug": "from-barking-service-dogs-to-basketball-playing-otters-the-good-news-of-this-wee"
-  },
-  {
     "id": "1793555114323om6utmbe0",
     "title": "Service dog Storm saves life of deaf Sandra after her husband Gary's fall",
     "summary": "In Staffordshire, England, service dog Storm has saved the life of Gary, the husband of his deaf owner Sandra Donally (62). Storm jumped onto Sandra's bed shortly after midnight and stared motionless at the landing, even though Sandra thought Gary had simply gone to the toilet. Because Sandra took the dog's unusual behaviour seriously, she discovered that Gary had fallen...",
@@ -2721,50 +2758,5 @@
     "category": "Health",
     "score": 9,
     "slug": "global-girls-index-health-gains-for-girls-in-178-countries"
-  },
-  {
-    "id": "1793383483557ulc7vq97w",
-    "title": "Food banks in New York now offer pet food too",
-    "summary": "Food banks in New York City now provide pet food for families facing financial hardship. This allows households that already use food banks for their own groceries to also take home food for their pets.",
-    "image_alt": "Pet food on a shelf at a food bank in New York",
-    "meta_description": "Food banks in New York City now stock pet food for families in financial need.",
-    "meta_keywords": "food bank, New York, pet food, pets, poverty",
-    "link": "https://www.optimistdaily.com/2026/10/nyc-food-pantries-are-now-stocking-pet-food-for-struggling-households/",
-    "source": "OptimistDaily.com",
-    "image": "https://www.optimistdaily.com/wp-content/uploads/cat-food-in-scoop-on-Depositphotos_96912150_S.jpg",
-    "date": "2026-10-30T18:04:44.797Z",
-    "category": "Lifestyle",
-    "score": 10,
-    "slug": "food-banks-in-new-york-now-offer-pet-food-too"
-  },
-  {
-    "id": "1793383463464p07thgddb",
-    "title": "New Jersey Transit turns train stations into art galleries",
-    "summary": "New Jersey Transit is converting train stations into art galleries. Further details about the project are not provided in the source.",
-    "image_alt": "A train station of New Jersey Transit",
-    "meta_description": "New Jersey Transit transforms commuter stations into art galleries for travelers.",
-    "meta_keywords": "New Jersey Transit, art, train stations, public transportation",
-    "link": "https://www.optimistdaily.com/2026/10/new-jersey-transit-is-turning-commuter-stations-into-art-galleries/",
-    "source": "OptimistDaily.com",
-    "image": "https://www.optimistdaily.com/wp-content/uploads/new-jersey-transit-commuter-train-Depositphotos_473170438_S.jpg",
-    "date": "2026-10-30T18:04:24.698Z",
-    "category": "Lifestyle",
-    "score": 8,
-    "slug": "new-jersey-transit-turns-train-stations-into-art-galleries"
-  },
-  {
-    "id": "1793383447754f3bib3sdq",
-    "title": "Vivian Ho (17) builds supply network based on dignity",
-    "summary": "Vivian Ho, 17 years old, has set up a supply network based on dignity rather than charity. Her organization, All The Same Organization, is receiving an award for this initiative. Further details about the working method or background of the initiative are not provided.",
-    "image_alt": "The All The Same Organization receives an award, with Vivian Ho",
-    "meta_description": "Vivian Ho (17) built a supply network based on dignity; her organization receives an award.",
-    "meta_keywords": "Vivian Ho, All The Same Organization, dignity, supply network, award, youth initiative",
-    "link": "https://www.optimistdaily.com/2026/10/meet-vivian-ho-the-17-year-old-who-built-a-supply-network-around-dignity-not-charity/",
-    "source": "OptimistDaily.com",
-    "image": "https://www.optimistdaily.com/wp-content/uploads/Local-Changemakers-Story-Covers-10-1.png",
-    "date": "2026-10-30T18:04:09.054Z",
-    "category": "Lifestyle",
-    "score": 9,
-    "slug": "vivian-ho-17-builds-supply-network-based-on-dignity"
   }
 ]

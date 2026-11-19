@@ -1,5 +1,92 @@
 [
   {
+    "id": "dg-20261118-dag",
+    "type": "digest",
+    "digest_date": "2026-11-18",
+    "title": "La solidaridad avanza, desde el Bronx hasta Argelia",
+    "summary": "Este día muestra cómo las personas se hacen la vida un poco mejor entre sí y a su entorno. Desde una adolescente que diseña arte para sentidos sensibles hasta un multimillonario que regala miles de millones: siempre se trata de prestar atención a quienes lo necesitan. En Florida, April Surac fundó el proyecto NeuraSensa, con instalaciones que responden al visitante que se coloca frente a ellas [1]. Su experiencia con una hermana autista le dio la idea: hacer que la tela y los sensores trabajen juntos, para que la luz, el sonido y las superficies se muevan con quien viene...",
+    "image_alt": "La solidaridad avanza, desde el Bronx hasta Argelia",
+    "meta_description": "Resumen del día lleno de noticias positivas: arte solidario, autobuses limpios, menos personas sin hogar, una gran donación y tortugas que eclosionan.",
+    "meta_keywords": "Science, Lifestyle, Environment, Finance",
+    "link": "",
+    "source": "BrightNews",
+    "image": null,
+    "date": "2026-11-19T08:01:17.801Z",
+    "category": null,
+    "refs": [
+      {
+        "id": "17949876177052b92cynfk",
+        "title": "April Surac crea NeuraSensa, arte que se adapta al visitante"
+      },
+      {
+        "id": "17949875935030qs384l5l",
+        "title": "La falta de vivienda en Estados Unidos cae al ritmo más rápido en diez años"
+      },
+      {
+        "id": "1794987571124hzq9frrmq",
+        "title": "Autobuses escolares eléctricos mejoran la calidad del aire en el Bronx"
+      },
+      {
+        "id": "17949875439091ik1w0stp",
+        "title": "Buffett dona 5.500 millones de dólares en Thanksgiving"
+      },
+      {
+        "id": "1794987519997abv74xlc4",
+        "title": "Argelia recibe a habitantes de Lawrence tras la hospitalidad durante el Mundial"
+      },
+      {
+        "id": "17949874966011dhnxknbj",
+        "title": "Primeras tortugas marinas liberadas en la costa oeste estadounidense"
+      }
+    ],
+    "slug": "la-solidaridad-avanza-desde-el-bronx-hasta-argelia"
+  },
+  {
+    "id": "1795075213212kmd4qhr7y",
+    "title": "La ballena azul antártica crece un 1.000% tras el fin de la caza de ballenas",
+    "summary": "El número de ballenas azules antárticas ha aumentado un 1.000% desde 1973, pasando de 418 a 4.018 animales, con un crecimiento anual promedio del 4,5%. La Comisión Ballenera Internacional prohibió la matanza de estas ballenas en 1964, pero la caza ilegal continuó hasta 1973. Estos animales, los más grandes que han existido jamás, se reproducen lentamente con aproximadamente una cría...",
+    "image_alt": "Una ballena azul antártica nada por el Océano Austral",
+    "meta_description": "La ballena azul antártica crece un 1.000% desde el fin de la caza en 1973, según nuevo estudio.",
+    "meta_keywords": "ballena azul, caza de ballenas, Antártida, IUCN, Zoe Rand, Southern Ocean, población de ballenas",
+    "link": "https://www.goodnewsnetwork.org/this-blue-whale-population-grew-1000-since-the-end-of-whaling/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2023/06/blue-whale-NOAA-pubdomain.jpg",
+    "date": "2026-11-19T08:00:15.383Z",
+    "category": "Environment",
+    "score": 9,
+    "slug": "la-ballena-azul-antartica-crece-un-1-000-tras-el-fin-de-la-caza-de-ballenas"
+  },
+  {
+    "id": "1795075182084u286z6pc8",
+    "title": "Los hijos construyen una escalera de 430 escalones para su madre en Zhejiang",
+    "summary": "Los hijos de una mujer china mayor han construido manualmente una escalera de 430 escalones contra una ladera en la provincia de Zhejiang, para que su madre pueda acceder más fácilmente a su casa en la montaña. La mujer, nacida y criada en la montaña, se mudó a la ciudad tras la muerte de su marido, pero nunca se acostumbró...",
+    "image_alt": "Una escalera hecha a mano con 430 escalones en el lateral de una montaña en Zhejiang, China",
+    "meta_description": "Los hijos chinos construyen una escalera de 430 escalones en una montaña para que su madre pueda seguir llegando a su pueblo.",
+    "meta_keywords": "sky ladder, Zhejiang, piedad filial, festival de Qingming, China, escalera de montaña, familia",
+    "link": "https://www.goodnewsnetwork.org/siblings-build-430-step-sky-ladder-for-their-mother-who-refuses-to-live-in-the-city/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/86-year-old-mother-Chen-family-photo.jpg",
+    "date": "2026-11-19T07:59:44.636Z",
+    "category": "Lifestyle",
+    "score": 9,
+    "slug": "los-hijos-construyen-una-escalera-de-430-escalones-para-su-madre-en-zhejiang"
+  },
+  {
+    "id": "17950751563390ia6z5rgw",
+    "title": "Estudiantes salvan la planta liveforever amenazada en Silicon Valley",
+    "summary": "Científicos y estudiantes de Santa Clara University se dedican a rescatar la Santa Clara Valley dudleya, una flor silvestre rara que solo se encuentra en la región de Coyote Valley del condado. La planta, conocida como «liveforever» por su capacidad de revivir después de la sequía, es una fuente importante de alimento para los polinizadores pero está amenazada por cazadores...",
+    "image_alt": "Estudiantes y científicos examinan la rara planta Santa Clara Valley liveforever en un laboratorio",
+    "meta_description": "Estudiantes y científicos de Santa Clara University luchan por salvar la rara planta liveforever amenazada de los cazadores.",
+    "meta_keywords": "dudleya, liveforever, Santa Clara Valley, especie de planta amenazada, Santa Clara University, cazadores de plantas, polinizadores, Coyote Valley",
+    "link": "https://www.goodnewsnetwork.org/students-fighting-to-save-poached-plant-species-that-only-exists-near-their-campus/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-Santa-Clara-Valley-Habitat-Authority.jpg",
+    "date": "2026-11-19T07:59:20.055Z",
+    "category": "Environment",
+    "score": 9,
+    "slug": "estudiantes-salvan-la-planta-liveforever-amenazada-en-silicon-valley"
+  },
+  {
     "id": "1794987640261m43agktoq",
     "title": "Las historias convencen 22 veces mejor que los hechos solos, según investigación de Stanford",
     "summary": "La conductista Jennifer Aaker de Stanford University investigó el efecto de una historia bien contada frente a compartir solo hechos. Su conclusión: las historias son 22 veces más convincentes que los hechos solos. Según Aaker, los hechos y las historias funcionan juntos de manera aún más poderosa, porque una historia con cifras convence tanto intelectual como emocionalmente. Esto está respaldado...",
@@ -1813,56 +1900,6 @@
     "slug": "la-isla-portuguesa-de-corvo-apaga-las-luces-para-proteger-a-los-petreles"
   },
   {
-    "id": "dg-20261031-lifestyle",
-    "type": "digest",
-    "digest_date": "2026-10-31",
-    "title": "Del perro de asistencia que ladra al nutria que juega al baloncesto: las buenas noticias de esta semana",
-    "summary": "Estos días demuestran cómo las personas y los animales se ayudan mutuamente de las formas más variadas. Desde una escuela que llena un campo de fútbol completo con alimentos hasta una nutria que encesta una calabaza en un aro de baloncesto: las noticias positivas están en los detalles. En Nueva Jersey, estudiantes de Howell High School recopilaron más de un cuarto de millón de libras de alimentos para treinta bancos de alimentos, distribuidos en miles de bolsas amarillas en el campo escolar [1]. También Vivian Ho, de diecisiete años, se dedica a ayudar a otros: construyó una red de suministros...",
-    "image_alt": "Del perro de asistencia que ladra al nutria que juega al baloncesto: las buenas noticias de esta semana",
-    "meta_description": "Del perro de asistencia que rescata hasta la nutria que juega al baloncesto: lee las noticias positivas de estilo de vida de finales de octubre de 2026 en ",
-    "meta_keywords": "Lifestyle",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Football-field-full-of-food-bank-donations-in-NY-Credit-Tommy-Pantaleo-for-Dermer-Dreams-submitted.jpg",
-    "date": "2026-11-01T17:46:09.595Z",
-    "category": "Lifestyle",
-    "refs": [
-      {
-        "id": "1793555084446w70x69w4f",
-        "title": "Howell High School llena el campo de fútbol con donaciones para bancos de alimentos"
-      },
-      {
-        "id": "1793555114323om6utmbe0",
-        "title": "La perra de asistencia Storm salva la vida de Gary, esposo de su dueña sorda Sandra"
-      },
-      {
-        "id": "1793383690293t4rrao107",
-        "title": "Las nutrias marinas Juno, Lincoln y Uni Sushi juegan baloncesto con calabazas"
-      },
-      {
-        "id": "1793383447754f3bib3sdq",
-        "title": "Vivian Ho (17) construye una red de suministro basada en la dignidad"
-      },
-      {
-        "id": "1793383257407x9i0ucuyo",
-        "title": "Hombre salta a un autobús escolar en movimiento y rescata a 18 niños"
-      },
-      {
-        "id": "1793382890861w6m803vdy",
-        "title": "Documental «Panther Pat» rinde homenaje a Pat Palinkas, primera mujer en el fútbol profesional"
-      },
-      {
-        "id": "1793382864366l99apl4wk",
-        "title": "Un número de teléfono en un examen lleva a una amistad entre estudiante y productor de fresas"
-      },
-      {
-        "id": "1793382839054fxzglq088",
-        "title": "Escuela primaria de Texas nombrada en honor a la conserje Miss Marilyn"
-      }
-    ],
-    "slug": "del-perro-de-asistencia-que-ladra-al-nutria-que-juega-al-baloncesto-las-buenas-n"
-  },
-  {
     "id": "1793555114323om6utmbe0",
     "title": "La perra de asistencia Storm salva la vida de Gary, esposo de su dueña sorda Sandra",
     "summary": "En Staffordshire, Inglaterra, la perra de asistencia Storm ha salvado la vida de Gary, esposo de su dueña sorda Sandra Donally (62). Storm saltó a la cama de Sandra poco después de la medianoche y se quedó mirando fijamente hacia el rellano sin moverse, a pesar de que Sandra creía que Gary simplemente había ido al baño. Al tomar en...",
@@ -2721,50 +2758,5 @@
     "category": "Health",
     "score": 9,
     "slug": "indice-mundial-de-ninas-avances-sanitarios-para-ninas-en-178-paises"
-  },
-  {
-    "id": "1793383483557ulc7vq97w",
-    "title": "Los bancos de alimentos de Nueva York ahora también ofrecen comida para mascotas",
-    "summary": "Los bancos de alimentos en Nueva York ofrecen a partir de ahora comida para mascotas a las familias que atraviesan dificultades económicas. De esta manera, los hogares que ya acuden al banco de alimentos para sus propias compras también pueden llevarse alimento para sus animales domésticos.",
-    "image_alt": "Comida para mascotas en un estante de un banco de alimentos en Nueva York",
-    "meta_description": "Los bancos de alimentos en Nueva York ahora almacenan comida para mascotas para familias en situación de pobreza.",
-    "meta_keywords": "banco de alimentos, Nueva York, comida para mascotas, animales domésticos, pobreza",
-    "link": "https://www.optimistdaily.com/2026/10/nyc-food-pantries-are-now-stocking-pet-food-for-struggling-households/",
-    "source": "OptimistDaily.com",
-    "image": "https://www.optimistdaily.com/wp-content/uploads/cat-food-in-scoop-on-Depositphotos_96912150_S.jpg",
-    "date": "2026-10-30T18:04:44.797Z",
-    "category": "Lifestyle",
-    "score": 10,
-    "slug": "los-bancos-de-alimentos-de-nueva-york-ahora-tambien-ofrecen-comida-para-mascotas"
-  },
-  {
-    "id": "1793383463464p07thgddb",
-    "title": "New Jersey Transit convierte estaciones en galerías de arte",
-    "summary": "New Jersey Transit transforma sus estaciones de tren en galerías de arte. La fuente no proporciona más detalles sobre el proyecto.",
-    "image_alt": "Una estación de tren de New Jersey Transit",
-    "meta_description": "New Jersey Transit transforma estaciones de viajeros en galerías de arte para pasajeros.",
-    "meta_keywords": "New Jersey Transit, arte, estaciones de tren, transporte público",
-    "link": "https://www.optimistdaily.com/2026/10/new-jersey-transit-is-turning-commuter-stations-into-art-galleries/",
-    "source": "OptimistDaily.com",
-    "image": "https://www.optimistdaily.com/wp-content/uploads/new-jersey-transit-commuter-train-Depositphotos_473170438_S.jpg",
-    "date": "2026-10-30T18:04:24.698Z",
-    "category": "Lifestyle",
-    "score": 8,
-    "slug": "new-jersey-transit-convierte-estaciones-en-galerias-de-arte"
-  },
-  {
-    "id": "1793383447754f3bib3sdq",
-    "title": "Vivian Ho (17) construye una red de suministro basada en la dignidad",
-    "summary": "Vivian Ho, de 17 años, ha creado una red de suministro basada en la dignidad en lugar de la caridad. Su organización, All The Same Organization, recibe un premio por ello. No se proporcionan más detalles sobre la metodología o los antecedentes de la iniciativa.",
-    "image_alt": "All The Same Organization recibe un premio, con Vivian Ho",
-    "meta_description": "Vivian Ho (17) construyó una red de suministro basada en la dignidad; su organización recibe un premio.",
-    "meta_keywords": "Vivian Ho, All The Same Organization, dignidad, red de suministro, premio, iniciativa juvenil",
-    "link": "https://www.optimistdaily.com/2026/10/meet-vivian-ho-the-17-year-old-who-built-a-supply-network-around-dignity-not-charity/",
-    "source": "OptimistDaily.com",
-    "image": "https://www.optimistdaily.com/wp-content/uploads/Local-Changemakers-Story-Covers-10-1.png",
-    "date": "2026-10-30T18:04:09.054Z",
-    "category": "Lifestyle",
-    "score": 9,
-    "slug": "vivian-ho-17-construye-una-red-de-suministro-basada-en-la-dignidad"
   }
 ]

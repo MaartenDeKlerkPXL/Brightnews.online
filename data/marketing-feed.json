@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-11-18T07:40:46.826Z",
+ "gegenereerd": "2026-11-19T08:01:22.113Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -22,51 +22,37 @@
      "url": "https://brightnews.online/articles/nl/dakloosheid-in-de-verenigde-staten-daalt-sterkst-in-tien-jaar-17949875935030qs384l5l.html"
     },
     {
-     "id": "1794987571124hzq9frrmq",
-     "titel": "Elektrische schoolbussen verbeteren luchtkwaliteit in de Bronx",
-     "teaser": "In een wijk in de Zuid-Bronx, waar astma bij kinderen meer dan twee keer zo vaak voorkomt als landelijk gemiddeld, rijdt nu de grootste vloot elektrische schoolbussen van New York. Schoolbusbedrijf GVC installeerde deze zomer 23 dubbele laadpunten voor 45 nieuwe elektrische bussen, die samen jaarlijks 1 miljoen pond uitstoot voorkomen. De bussen vervoeren zo'n 800 kinderen, met gemiddeld 18...",
+     "id": "1795075213212kmd4qhr7y",
+     "titel": "Antarctische blauwe vinvis groeit met 1.000% na einde walvisvangst",
+     "teaser": "Het aantal Antarctische blauwe vinvissen is sinds 1973 met 1.000% toegenomen, van 418 naar 4.018 dieren, een jaarlijkse groei van gemiddeld 4,5%. De Internationale Walvisvaartcommissie verbood het doden van deze walvissen al in 1964, maar illegale jacht ging door tot 1973. De dieren, de grootste die ooit hebben bestaan, planten zich traag voort met ongeveer één kalf per drie jaar....",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/elektrische-schoolbussen-verbeteren-luchtkwaliteit-in-de-bronx-1794987571124hzq9frrmq.html"
+     "url": "https://brightnews.online/articles/nl/antarctische-blauwe-vinvis-groeit-met-1-000-na-einde-walvisvangst-1795075213212kmd4qhr7y.html"
     },
     {
-     "id": "17949875439091ik1w0stp",
-     "titel": "Buffett schenkt 5,5 miljard dollar met Thanksgiving",
-     "teaser": "Warren Buffett heeft met Thanksgiving opnieuw een grote liefdadigheidsgift gedaan: hij zette 6.150 Class A-aandelen om in 9.225.000 Class B-aandelen van Berkshire Hathaway, samen goed voor ongeveer 5,5 miljard dollar. De aandelen gingen naar vier stichtingen die worden geleid door de familie Buffett. Daarmee is de gift veel groter dan de circa 1,3 miljard dollar van vorig jaar, passend bij...",
-     "score": 9,
-     "categorie": "Finance",
-     "url": "https://brightnews.online/articles/nl/buffett-schenkt-5-5-miljard-dollar-met-thanksgiving-17949875439091ik1w0stp.html"
-    },
-    {
-     "id": "1794987519997abv74xlc4",
-     "titel": "Algerije verwelkomt inwoners van Lawrence na gastvrijheid tijdens WK",
-     "teaser": "Toen het Algerijnse voetbalteam Lawrence, Kansas koos als uitvalsbasis tijdens het WK, werd het onthaald door honderden leden van de Algerijnse diaspora, georganiseerd door een studente van de University of Kansas. De warme ontvangst door de lokale bevolking ging viral. Nu heeft Algerije die gastvrijheid beantwoord: op uitnodiging van de Algerijnse president reisden burgemeester Brad Finkeldei, leden van 'L'Algerie fi...",
+     "id": "1795075182084u286z6pc8",
+     "titel": "Kinderen bouwen trap van 430 treden voor hun moeder in Zhejiang",
+     "teaser": "De kinderen van een oudere Chinese vrouw hebben met de hand een trap van 430 treden tegen een berghelling gebouwd in de provincie Zhejiang, zodat hun moeder gemakkelijker haar huis op de berg kan bereiken. De vrouw, geboren en getogen op de berg, verhuisde na de dood van haar man naar de stad, maar wende nooit aan het stadsleven en...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/algerije-verwelkomt-inwoners-van-lawrence-na-gastvrijheid-tijdens-wk-1794987519997abv74xlc4.html"
+     "url": "https://brightnews.online/articles/nl/kinderen-bouwen-trap-van-430-treden-voor-hun-moeder-in-zhejiang-1795075182084u286z6pc8.html"
+    },
+    {
+     "id": "17950751563390ia6z5rgw",
+     "titel": "Studenten redden bedreigde liveforever-plant bij Silicon Valley",
+     "teaser": "Wetenschappers en studenten van Santa Clara University zetten zich in om de Santa Clara Valley dudleya te redden, een zeldzame wilde bloem die alleen voorkomt in de Coyote Valley-regio van de county. De plant, bekend als 'liveforever' vanwege haar vermogen om na droogte weer tot leven te komen, is een belangrijke voedselbron voor bestuivers maar wordt bedreigd door plantendieven, klimaatverandering...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/studenten-redden-bedreigde-liveforever-plant-bij-silicon-valley-17950751563390ia6z5rgw.html"
     }
    ],
    "dagoverzichten": [
     {
-     "id": "dg-20261116-dag",
-     "titel": "Verre reizen, slim afval en een liefde die standhield",
+     "id": "dg-20261118-dag",
+     "titel": "Zorgzaamheid wint terrein, van de Bronx tot Algerije",
      "categorie": null,
-     "dag": "2026-11-16",
-     "url": "https://brightnews.online/articles/nl/verre-reizen-slim-afval-en-een-liefde-die-standhield-dg-20261116-dag.html"
-    },
-    {
-     "id": "dg-20261115-environment",
-     "titel": "Van geredde zeehondenpup tot schoner water: het milieunieuws van deze dagen",
-     "categorie": "Environment",
-     "dag": "2026-11-15",
-     "url": "https://brightnews.online/articles/nl/van-geredde-zeehondenpup-tot-schoner-water-het-milieunieuws-van-deze-dagen-dg-20261115-environment.html"
-    },
-    {
-     "id": "dg-20261115-health",
-     "titel": "Nieuwe hoop in de zorg: tevreden jongeren, rustige tics en genezen bloed",
-     "categorie": "Health",
-     "dag": "2026-11-15",
-     "url": "https://brightnews.online/articles/nl/nieuwe-hoop-in-de-zorg-tevreden-jongeren-rustige-tics-en-genezen-bloed-dg-20261115-health.html"
+     "dag": "2026-11-18",
+     "url": "https://brightnews.online/articles/nl/zorgzaamheid-wint-terrein-van-de-bronx-tot-algerije-dg-20261118-dag.html"
     }
    ]
   },
@@ -89,51 +75,37 @@
      "url": "https://brightnews.online/articles/en/homelessness-in-the-united-states-falls-most-sharply-in-a-decade-17949875935030qs384l5l.html"
     },
     {
-     "id": "1794987571124hzq9frrmq",
-     "titel": "Electric school buses improve air quality in the Bronx",
-     "teaser": "In a South Bronx neighborhood where childhood asthma occurs more than twice as often as the national average, New York's largest fleet of electric school buses now operates. School bus company GVC installed 23 dual charging stations this summer for 45 new electric buses, which together prevent 1 million pounds of emissions annually. The buses transport approximately 800 children, with...",
+     "id": "1795075213212kmd4qhr7y",
+     "titel": "Antarctic blue whale population grows 1,000% after end of whaling",
+     "teaser": "The number of Antarctic blue whales has increased by 1,000% since 1973, rising from 418 to 4,018 animals, representing an average annual growth rate of 4.5%. The International Whaling Commission banned the killing of these whales in 1964, but illegal hunting continued until 1973. These animals, the largest creatures ever to exist, reproduce slowly at a rate of approximately one...",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/electric-school-buses-improve-air-quality-in-the-bronx-1794987571124hzq9frrmq.html"
+     "url": "https://brightnews.online/articles/en/antarctic-blue-whale-population-grows-1-000-after-end-of-whaling-1795075213212kmd4qhr7y.html"
     },
     {
-     "id": "17949875439091ik1w0stp",
-     "titel": "Buffett donates $5.5 billion on Thanksgiving",
-     "teaser": "Warren Buffett made another major charitable donation on Thanksgiving: he converted 6,150 Class A shares into 9,225,000 Class B shares of Berkshire Hathaway, worth approximately $5.5 billion in total. The shares went to four foundations led by the Buffett family. This gift is significantly larger than last year's approximately $1.3 billion donation, consistent with his goal of increasing annual donations...",
-     "score": 9,
-     "categorie": "Finance",
-     "url": "https://brightnews.online/articles/en/buffett-donates-5-5-billion-on-thanksgiving-17949875439091ik1w0stp.html"
-    },
-    {
-     "id": "1794987519997abv74xlc4",
-     "titel": "Algeria welcomes Lawrence residents after World Cup hospitality",
-     "teaser": "When the Algerian national football team chose Lawrence, Kansas as its base during the World Cup, it was greeted by hundreds of members of the Algerian diaspora, organized by a University of Kansas student. The warm reception by the local community went viral. Now Algeria has returned that hospitality: at the invitation of the Algerian president, mayor Brad Finkeldei, members...",
+     "id": "1795075182084u286z6pc8",
+     "titel": "Children build 430-step staircase for their mother in Zhejiang",
+     "teaser": "The children of an elderly Chinese woman have hand-built a 430-step staircase against a hillside in Zhejiang province, making it easier for their mother to reach her mountain home. Born and raised on the mountain, the woman moved to the city after her husband's death, but never adjusted to urban life and returned every year for the Qingming festival. The...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/algeria-welcomes-lawrence-residents-after-world-cup-hospitality-1794987519997abv74xlc4.html"
+     "url": "https://brightnews.online/articles/en/children-build-430-step-staircase-for-their-mother-in-zhejiang-1795075182084u286z6pc8.html"
+    },
+    {
+     "id": "17950751563390ia6z5rgw",
+     "titel": "Students save endangered liveforever plant in Silicon Valley",
+     "teaser": "Scientists and students at Santa Clara University are working to save the Santa Clara Valley dudleya, a rare wildflower found only in the Coyote Valley region of the county. The plant, known as „liveforever\" for its ability to revive after drought, is an important food source for pollinators but is threatened by plant poachers, climate change and habitat loss. Dr....",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/students-save-endangered-liveforever-plant-in-silicon-valley-17950751563390ia6z5rgw.html"
     }
    ],
    "dagoverzichten": [
     {
-     "id": "dg-20261116-dag",
-     "titel": "Distant travels, smart waste and a love that endured",
+     "id": "dg-20261118-dag",
+     "titel": "Compassion gains ground, from the Bronx to Algeria",
      "categorie": null,
-     "dag": "2026-11-16",
-     "url": "https://brightnews.online/articles/en/distant-travels-smart-waste-and-a-love-that-endured-dg-20261116-dag.html"
-    },
-    {
-     "id": "dg-20261115-environment",
-     "titel": "From rescued seal pup to cleaner water: the environmental news of these days",
-     "categorie": "Environment",
-     "dag": "2026-11-15",
-     "url": "https://brightnews.online/articles/en/from-rescued-seal-pup-to-cleaner-water-the-environmental-news-of-these-days-dg-20261115-environment.html"
-    },
-    {
-     "id": "dg-20261115-health",
-     "titel": "New hope in healthcare: satisfied youth, quieter tics and healed blood",
-     "categorie": "Health",
-     "dag": "2026-11-15",
-     "url": "https://brightnews.online/articles/en/new-hope-in-healthcare-satisfied-youth-quieter-tics-and-healed-blood-dg-20261115-health.html"
+     "dag": "2026-11-18",
+     "url": "https://brightnews.online/articles/en/compassion-gains-ground-from-the-bronx-to-algeria-dg-20261118-dag.html"
     }
    ]
   },
@@ -156,51 +128,37 @@
      "url": "https://brightnews.online/articles/de/obdachlosigkeit-in-den-usa-sinkt-starker-als-seit-zehn-jahren-17949875935030qs384l5l.html"
     },
     {
-     "id": "1794987571124hzq9frrmq",
-     "titel": "Elektrische Schulbusse verbessern Luftqualität in der Bronx",
-     "teaser": "In einem Stadtteil der Südbronx, wo Asthma bei Kindern mehr als doppelt so häufig auftritt wie im landesweiten Durchschnitt, betreibt das Schulbusunternehmen GVC nun die größte Flotte elektrischer Schulbusse New Yorks. GVC installierte in diesem Sommer 23 doppelte Ladepunkte für 45 neue Elektrobusse, die zusammen jährlich 1 Million Pfund Emissionen vermeiden. Die Busse befördern etwa 800 Kinder, durchschnittlich 18 Schüler...",
+     "id": "1795075213212kmd4qhr7y",
+     "titel": "Antarktischer Blauwal wächst um 1.000% nach Ende des Walfangs",
+     "teaser": "Die Anzahl der antarktischen Blauwale ist seit 1973 um 1.000% gestiegen, von 418 auf 4.018 Tiere, ein durchschnittliches jährliches Wachstum von 4,5%. Die Internationale Walfangkommission verbot die Tötung dieser Wale bereits 1964, doch illegale Jagd setzte sich bis 1973 fort. Die Tiere, die größten, die je existiert haben, pflanzen sich langsam fort mit etwa einem Kalb pro drei Jahre. Postdoktorandin...",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/elektrische-schulbusse-verbessern-luftqualitat-in-der-bronx-1794987571124hzq9frrmq.html"
+     "url": "https://brightnews.online/articles/de/antarktischer-blauwal-wachst-um-1-000-nach-ende-des-walfangs-1795075213212kmd4qhr7y.html"
     },
     {
-     "id": "17949875439091ik1w0stp",
-     "titel": "Buffett schenkt 5,5 Milliarden Dollar zu Thanksgiving",
-     "teaser": "Warren Buffett hat zu Thanksgiving erneut eine große Spende getätigt: Er wandelte 6.150 Class A-Aktien in 9.225.000 Class B-Aktien von Berkshire Hathaway um, zusammen etwa 5,5 Milliarden Dollar wert. Die Aktien gingen an vier Stiftungen, die von der Familie Buffett geleitet werden. Damit ist die Spende deutlich größer als die etwa 1,3 Milliarden Dollar des Vorjahres und entspricht seinem Ziel,...",
-     "score": 9,
-     "categorie": "Finance",
-     "url": "https://brightnews.online/articles/de/buffett-schenkt-5-5-milliarden-dollar-zu-thanksgiving-17949875439091ik1w0stp.html"
-    },
-    {
-     "id": "1794987519997abv74xlc4",
-     "titel": "Algerien begrüßt Einwohner von Lawrence nach Gastfreundschaft während WM",
-     "teaser": "Als die algerische Fußballmannschaft Lawrence, Kansas als Stützpunkt während der WM wählte, wurde sie von Hunderten Mitgliedern der algerischen Diaspora empfangen, organisiert von einer Studentin der University of Kansas. Der warme Empfang durch die lokale Bevölkerung ging viral. Nun hat Algerien diese Gastfreundschaft erwidert: Auf Einladung des algerischen Präsidenten reisten Bürgermeister Brad Finkeldei, Mitglieder von 'L'Algerie fi Kansas City', Polizeibeamte...",
+     "id": "1795075182084u286z6pc8",
+     "titel": "Kinder bauen 430-Stufen-Treppe für ihre Mutter in Zhejiang",
+     "teaser": "Die Kinder einer älteren chinesischen Frau haben mit eigenen Händen eine Treppe mit 430 Stufen gegen einen Berghang in der Provinz Zhejiang gebaut, damit ihre Mutter ihr Haus auf dem Berg leichter erreichen kann. Die Frau, auf dem Berg geboren und aufgewachsen, zog nach dem Tod ihres Mannes in die Stadt, gewöhnte sich aber nie an das Stadtleben und kehrte...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/algerien-begru-t-einwohner-von-lawrence-nach-gastfreundschaft-wahrend-wm-1794987519997abv74xlc4.html"
+     "url": "https://brightnews.online/articles/de/kinder-bauen-430-stufen-treppe-fur-ihre-mutter-in-zhejiang-1795075182084u286z6pc8.html"
+    },
+    {
+     "id": "17950751563390ia6z5rgw",
+     "titel": "Studenten retten bedrohte Liveforever-Pflanze im Silicon Valley",
+     "teaser": "Wissenschaftler und Studenten der Santa Clara University setzen sich dafür ein, die Santa Clara Valley dudleya zu retten, eine seltene Wildblume, die nur in der Coyote Valley-Region des County vorkommt. Die Pflanze, bekannt als „Liveforever\" wegen ihrer Fähigkeit, nach Trockenheit wieder zum Leben zu erwachen, ist eine wichtige Nahrungsquelle für Bestäuber, wird aber durch Pflanzenwilderer, Klimawandel und Lebensraumverlust bedroht. Dr....",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/studenten-retten-bedrohte-liveforever-pflanze-im-silicon-valley-17950751563390ia6z5rgw.html"
     }
    ],
    "dagoverzichten": [
     {
-     "id": "dg-20261116-dag",
-     "titel": "Weite Reisen, intelligente Abfallwirtschaft und eine Liebe, die Bestand hatte",
+     "id": "dg-20261118-dag",
+     "titel": "Fürsorge gewinnt an Boden – von der Bronx bis Algerien",
      "categorie": null,
-     "dag": "2026-11-16",
-     "url": "https://brightnews.online/articles/de/weite-reisen-intelligente-abfallwirtschaft-und-eine-liebe-die-bestand-hatte-dg-20261116-dag.html"
-    },
-    {
-     "id": "dg-20261115-environment",
-     "titel": "Von geretteter Seehundwelpe bis zu sauberem Wasser: die Umweltnachrichten dieser Tage",
-     "categorie": "Environment",
-     "dag": "2026-11-15",
-     "url": "https://brightnews.online/articles/de/von-geretteter-seehundwelpe-bis-zu-sauberem-wasser-die-umweltnachrichten-dieser-dg-20261115-environment.html"
-    },
-    {
-     "id": "dg-20261115-health",
-     "titel": "Neue Hoffnung im Gesundheitswesen: zufriedene Jugendliche, weniger Tics und geheiltes Blut",
-     "categorie": "Health",
-     "dag": "2026-11-15",
-     "url": "https://brightnews.online/articles/de/neue-hoffnung-im-gesundheitswesen-zufriedene-jugendliche-weniger-tics-und-geheil-dg-20261115-health.html"
+     "dag": "2026-11-18",
+     "url": "https://brightnews.online/articles/de/fursorge-gewinnt-an-boden-von-der-bronx-bis-algerien-dg-20261118-dag.html"
     }
    ]
   },
@@ -223,51 +181,37 @@
      "url": "https://brightnews.online/articles/fr/l-itinerance-aux-etats-unis-baisse-le-plus-en-dix-ans-17949875935030qs384l5l.html"
     },
     {
-     "id": "1794987571124hzq9frrmq",
-     "titel": "Les autobus scolaires électriques améliorent la qualité de l'air dans le Bronx",
-     "teaser": "Dans un quartier du sud du Bronx, où l'asthme chez les enfants est plus de deux fois plus fréquent que la moyenne nationale, circule désormais la plus grande flotte d'autobus scolaires électriques de New York. L'entreprise de transport scolaire GVC a installé cet été 23 points de recharge doubles pour 45 nouveaux autobus électriques, qui évitent ensemble 1 million de...",
+     "id": "1795075213212kmd4qhr7y",
+     "titel": "La baleine bleue antarctique augmente de 1.000% après la fin de la chasse",
+     "teaser": "Le nombre de baleines bleues antarctiques a augmenté de 1.000% depuis 1973, passant de 418 à 4.018 individus, soit une croissance annuelle moyenne de 4,5%. La Commission baleinière internationale a interdit l'abattage de ces cétacés dès 1964, mais la chasse illégale a continué jusqu'en 1973. Ces animaux, les plus grands ayant jamais existé, se reproduisent lentement avec environ un veau...",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/les-autobus-scolaires-electriques-ameliorent-la-qualite-de-l-air-dans-le-bronx-1794987571124hzq9frrmq.html"
+     "url": "https://brightnews.online/articles/fr/la-baleine-bleue-antarctique-augmente-de-1-000-apres-la-fin-de-la-chasse-1795075213212kmd4qhr7y.html"
     },
     {
-     "id": "17949875439091ik1w0stp",
-     "titel": "Buffett offre 5,5 milliards de dollars pour Thanksgiving",
-     "teaser": "Warren Buffett a renouvelé son geste philanthropique à l'occasion de Thanksgiving : il a converti 6.150 actions Classe A en 9.225.000 actions Classe B de Berkshire Hathaway, pour un montant d'environ 5,5 milliards de dollars. Les actions ont été versées à quatre fondations dirigées par la famille Buffett. Ce don dépasse largement les quelque 1,3 milliard de dollars de l'année...",
-     "score": 9,
-     "categorie": "Finance",
-     "url": "https://brightnews.online/articles/fr/buffett-offre-5-5-milliards-de-dollars-pour-thanksgiving-17949875439091ik1w0stp.html"
-    },
-    {
-     "id": "1794987519997abv74xlc4",
-     "titel": "L'Algérie accueille les habitants de Lawrence après leur hospitalité lors de la Coupe du monde",
-     "teaser": "Quand l'équipe de football algérienne a choisi Lawrence, au Kansas, comme base arrière pendant la Coupe du monde, elle a été reçue par des centaines de membres de la diaspora algérienne, organisés par une étudiante de l'University of Kansas. L'accueil chaleureux de la population locale est devenu viral. Désormais, l'Algérie a répondu à cette hospitalité : sur invitation du président...",
+     "id": "1795075182084u286z6pc8",
+     "titel": "Des enfants construisent un escalier de 430 marches pour leur mère dans le Zhejiang",
+     "teaser": "Les enfants d'une femme chinoise âgée ont construit à la main un escalier de 430 marches contre une pente de montagne dans la province du Zhejiang, afin que leur mère puisse accéder plus facilement à sa maison en montagne. La femme, née et élevée sur la montagne, a déménagé en ville après la mort de son mari, mais ne s'est...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/l-algerie-accueille-les-habitants-de-lawrence-apres-leur-hospitalite-lors-de-la-1794987519997abv74xlc4.html"
+     "url": "https://brightnews.online/articles/fr/des-enfants-construisent-un-escalier-de-430-marches-pour-leur-mere-dans-le-zheji-1795075182084u286z6pc8.html"
+    },
+    {
+     "id": "17950751563390ia6z5rgw",
+     "titel": "Des étudiants sauvent la plante liveforever menacée de Silicon Valley",
+     "teaser": "Des scientifiques et des étudiants de Santa Clara University s'engagent pour sauver la Santa Clara Valley dudleya, une fleur sauvage rare qui ne pousse que dans la région de Coyote Valley du comté. La plante, connue sous le nom de « liveforever » en raison de sa capacité à revenir à la vie après une sécheresse, est une source de...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/des-etudiants-sauvent-la-plante-liveforever-menacee-de-silicon-valley-17950751563390ia6z5rgw.html"
     }
    ],
    "dagoverzichten": [
     {
-     "id": "dg-20261116-dag",
-     "titel": "Des voyages lointains, des poubelles intelligentes et un amour qui a tenu bon",
+     "id": "dg-20261118-dag",
+     "titel": "La bienveillance gagne du terrain, du Bronx à l'Algérie",
      "categorie": null,
-     "dag": "2026-11-16",
-     "url": "https://brightnews.online/articles/fr/des-voyages-lointains-des-poubelles-intelligentes-et-un-amour-qui-a-tenu-bon-dg-20261116-dag.html"
-    },
-    {
-     "id": "dg-20261115-environment",
-     "titel": "D'un phoque sauvé à une eau plus propre : les actualités environnementales de ces jours",
-     "categorie": "Environment",
-     "dag": "2026-11-15",
-     "url": "https://brightnews.online/articles/fr/d-un-phoque-sauve-a-une-eau-plus-propre-les-actualites-environnementales-de-ces-dg-20261115-environment.html"
-    },
-    {
-     "id": "dg-20261115-health",
-     "titel": "Un nouvel espoir dans les soins : des jeunes satisfaits, des tics apaisés et un sang guéri",
-     "categorie": "Health",
-     "dag": "2026-11-15",
-     "url": "https://brightnews.online/articles/fr/un-nouvel-espoir-dans-les-soins-des-jeunes-satisfaits-des-tics-apaises-et-un-san-dg-20261115-health.html"
+     "dag": "2026-11-18",
+     "url": "https://brightnews.online/articles/fr/la-bienveillance-gagne-du-terrain-du-bronx-a-l-algerie-dg-20261118-dag.html"
     }
    ]
   },
@@ -290,51 +234,37 @@
      "url": "https://brightnews.online/articles/es/la-falta-de-vivienda-en-estados-unidos-cae-al-ritmo-mas-rapido-en-diez-anos-17949875935030qs384l5l.html"
     },
     {
-     "id": "1794987571124hzq9frrmq",
-     "titel": "Autobuses escolares eléctricos mejoran la calidad del aire en el Bronx",
-     "teaser": "En un barrio del sur del Bronx, donde el asma en niños ocurre más del doble que el promedio nacional, circula ahora la mayor flota de autobuses escolares eléctricos de Nueva York. La empresa de transporte escolar GVC instaló este verano 23 puntos de carga dobles para 45 autobuses eléctricos nuevos, que juntos evitan 1 millón de libras de emisiones...",
+     "id": "1795075213212kmd4qhr7y",
+     "titel": "La ballena azul antártica crece un 1.000% tras el fin de la caza de ballenas",
+     "teaser": "El número de ballenas azules antárticas ha aumentado un 1.000% desde 1973, pasando de 418 a 4.018 animales, con un crecimiento anual promedio del 4,5%. La Comisión Ballenera Internacional prohibió la matanza de estas ballenas en 1964, pero la caza ilegal continuó hasta 1973. Estos animales, los más grandes que han existido jamás, se reproducen lentamente con aproximadamente una cría...",
      "score": 9,
      "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/autobuses-escolares-electricos-mejoran-la-calidad-del-aire-en-el-bronx-1794987571124hzq9frrmq.html"
+     "url": "https://brightnews.online/articles/es/la-ballena-azul-antartica-crece-un-1-000-tras-el-fin-de-la-caza-de-ballenas-1795075213212kmd4qhr7y.html"
     },
     {
-     "id": "17949875439091ik1w0stp",
-     "titel": "Buffett dona 5.500 millones de dólares en Thanksgiving",
-     "teaser": "Warren Buffett ha realizado nuevamente una importante donación benéfica en Thanksgiving: convirtió 6.150 acciones Clase A en 9.225.000 acciones Clase B de Berkshire Hathaway, con un valor aproximado de 5.500 millones de dólares. Las acciones fueron destinadas a cuatro fundaciones dirigidas por la familia Buffett. Con esto, la donación es mucho mayor que los aproximadamente 1.300 millones de dólares del...",
-     "score": 9,
-     "categorie": "Finance",
-     "url": "https://brightnews.online/articles/es/buffett-dona-5-500-millones-de-dolares-en-thanksgiving-17949875439091ik1w0stp.html"
-    },
-    {
-     "id": "1794987519997abv74xlc4",
-     "titel": "Argelia recibe a habitantes de Lawrence tras la hospitalidad durante el Mundial",
-     "teaser": "Cuando el equipo de fútbol argelino eligió Lawrence, Kansas como base durante el Mundial, fue recibido por cientos de miembros de la diáspora argelina, organizados por una estudiante de la University of Kansas. La cálida acogida de la población local se hizo viral. Ahora Argelia ha correspondido esa hospitalidad: por invitación del presidente argelino, el alcalde Brad Finkeldei, miembros de...",
+     "id": "1795075182084u286z6pc8",
+     "titel": "Los hijos construyen una escalera de 430 escalones para su madre en Zhejiang",
+     "teaser": "Los hijos de una mujer china mayor han construido manualmente una escalera de 430 escalones contra una ladera en la provincia de Zhejiang, para que su madre pueda acceder más fácilmente a su casa en la montaña. La mujer, nacida y criada en la montaña, se mudó a la ciudad tras la muerte de su marido, pero nunca se acostumbró...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/argelia-recibe-a-habitantes-de-lawrence-tras-la-hospitalidad-durante-el-mundial-1794987519997abv74xlc4.html"
+     "url": "https://brightnews.online/articles/es/los-hijos-construyen-una-escalera-de-430-escalones-para-su-madre-en-zhejiang-1795075182084u286z6pc8.html"
+    },
+    {
+     "id": "17950751563390ia6z5rgw",
+     "titel": "Estudiantes salvan la planta liveforever amenazada en Silicon Valley",
+     "teaser": "Científicos y estudiantes de Santa Clara University se dedican a rescatar la Santa Clara Valley dudleya, una flor silvestre rara que solo se encuentra en la región de Coyote Valley del condado. La planta, conocida como «liveforever» por su capacidad de revivir después de la sequía, es una fuente importante de alimento para los polinizadores pero está amenazada por cazadores...",
+     "score": 9,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/estudiantes-salvan-la-planta-liveforever-amenazada-en-silicon-valley-17950751563390ia6z5rgw.html"
     }
    ],
    "dagoverzichten": [
     {
-     "id": "dg-20261116-dag",
-     "titel": "Viajes lejanos, basura inteligente y un amor que perduró",
+     "id": "dg-20261118-dag",
+     "titel": "La solidaridad avanza, desde el Bronx hasta Argelia",
      "categorie": null,
-     "dag": "2026-11-16",
-     "url": "https://brightnews.online/articles/es/viajes-lejanos-basura-inteligente-y-un-amor-que-perduro-dg-20261116-dag.html"
-    },
-    {
-     "id": "dg-20261115-environment",
-     "titel": "De una cría de foca rescatada a aguas más limpias: las noticias ambientales de estos días",
-     "categorie": "Environment",
-     "dag": "2026-11-15",
-     "url": "https://brightnews.online/articles/es/de-una-cria-de-foca-rescatada-a-aguas-mas-limpias-las-noticias-ambientales-de-es-dg-20261115-environment.html"
-    },
-    {
-     "id": "dg-20261115-health",
-     "titel": "Nueva esperanza en la sanidad: jóvenes satisfechos, tics reducidos y sangre curada",
-     "categorie": "Health",
-     "dag": "2026-11-15",
-     "url": "https://brightnews.online/articles/es/nueva-esperanza-en-la-sanidad-jovenes-satisfechos-tics-reducidos-y-sangre-curada-dg-20261115-health.html"
+     "dag": "2026-11-18",
+     "url": "https://brightnews.online/articles/es/la-solidaridad-avanza-desde-el-bronx-hasta-argelia-dg-20261118-dag.html"
     }
    ]
   }
