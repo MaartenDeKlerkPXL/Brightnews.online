@@ -158,7 +158,7 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
 >   De taak in Supabase staat al klaar (PR #39, TODO 69.4).
 > - [ ] **Erik, vrijdag 20 november:** Anthropic auto-reload en een
 >   tegoedalarm aanzetten (TODO 26 en 69.2). Maarten herinnert hem eraan.
-> - [ ] Back-up: nu zelf met `pg_dump` (naar `~/Backups/brightnews/`, nooit in
+> - [x] Back-up (19 november, 1,8 MB, 59 tabellen): nu zelf met `pg_dump` (naar `~/Backups/brightnews/`, nooit in
 >   de repo); later vervangen door Supabase Pro (TODO 70, besluit 19 november).
 > - [ ] Ingelogd een Premium-artikel openen, Mijn account nalopen; opzeggen
 >   vóór 17 december als je niet wilt betalen (TODO 31).
