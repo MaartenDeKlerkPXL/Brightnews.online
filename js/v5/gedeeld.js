@@ -622,6 +622,8 @@
 
     // Tekstlink naar het origineel, in een nieuw venster.
     function origineelLink(href, tekst, klasse) {
+        // Alleen http(s): een bronlink uit een RSS-feed mag nooit javascript: zijn.
+        if (!/^https?:\/\//i.test(String(href))) return el('span', klasse, tekst);
         const a = el('a', klasse);
         a.href = href;
         a.target = '_blank';

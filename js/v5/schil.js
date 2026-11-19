@@ -330,7 +330,8 @@
         script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
         document.head.appendChild(script);
         window.gtag('js', new Date());
-        window.gtag('config', GA_ID);
+        // Zonder querystring: anders gaat bijvoorbeeld het afmeldtoken naar Google.
+        window.gtag('config', GA_ID, { page_location: location.origin + location.pathname });
     }
 
     function bewaarCookies(keuze) {
