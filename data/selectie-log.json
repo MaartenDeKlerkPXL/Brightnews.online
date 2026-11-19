@@ -1,5 +1,53 @@
 [
  {
+  "datum": "2026-11-19T13:47:20.091Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "Over 100 Cave Bear Skeletons Found in ‘Sensational’ Discovery by Alpine Guide",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Archeologische doorbraak met wetenschappelijke betekenis, positief geformuleerd, wekt verwondering en hoopvolle anticipatie op onderzoek."
+ },
+ {
+  "datum": "2026-11-19T13:47:20.091Z",
+  "bron": "ReasonsToBeCheerful.world",
+  "titel": "The Waterless, Hyper-Efficient Machines That Clean Clothes With Carbon Dioxide",
+  "uitsluiting": "productnieuws",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Dit is een productlancering/technologie-preview zonder maatschappelijke doorbraak of echte verhaal; de kern is commercieel."
+ },
+ {
+  "datum": "2026-11-19T13:47:20.091Z",
+  "bron": "Openaccessgovernment.org",
+  "titel": "Potatoes grown in simulated lunar soil match earth-grown yields",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Wetenschappelijke doorbraak met maatschappelijke relevantie (toekomst van ruimteverkenning), volledig positief geformuleerd, wekt hoopvolle verwondering."
+ },
+ {
+  "datum": "2026-11-19T13:47:20.091Z",
+  "bron": "Openaccessgovernment.org",
+  "titel": "EU plans their next steps to lead the world in advanced materials by 2035",
+  "uitsluiting": "politiek",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Dit is een politieke agenda-aankondiging van de Europese Commissie; of dit 'goed nieuws' is hangt af van politieke voorkeur."
+ },
+ {
   "datum": "2026-11-19T07:58:50.989Z",
   "bron": "GoodNewsNetwork.org",
   "titel": "Students Fighting to Save Poached Plant Species That Only Exists in Near Their Campus",
@@ -3550,53 +3598,5 @@
   "totaal": 0,
   "besluit": "nee",
   "reden": "Weekoverzicht van ander medium; BrightNews maakt eigen dagoverzichten."
- },
- {
-  "datum": "2026-10-30T17:50:10.152Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "Over 600 households have raised $1.2M for pediatric cancer with Halloween displays. This year, they want to break $2M",
-  "uitsluiting": "geen",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 4,
-  "totaal": 10,
-  "besluit": "ja",
-  "reden": "Gemeenschapszin en miljoenencampagne voor kinderkanker; persoonlijk verhaal met grote impact."
- },
- {
-  "datum": "2026-10-30T17:50:10.152Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "Historic win: Nurses fought to secure the nation's first countywide 12-week paid parental leave policy",
-  "uitsluiting": "geen",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 4,
-  "totaal": 10,
-  "besluit": "ja",
-  "reden": "Verpleegkundigen bevechten eerste landelijke betaalde ouderschapsverlof; maatschappelijk doorbraak met persoonlijke kern."
- },
- {
-  "datum": "2026-10-30T17:50:10.152Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "In Michigan, 3 tribes are on a mission to bring back a fish that disappeared 100 years ago",
-  "uitsluiting": "geen",
-  "gevoel": 3,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 9,
-  "besluit": "ja",
-  "reden": "Drie stammen herstellen uitgestorven vissoort na 100 jaar; ecologische redding met culturele betekenis."
- },
- {
-  "datum": "2026-10-30T17:50:10.152Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "Researchers discover five new frog species in one of the most biologically diverse regions on the planet",
-  "uitsluiting": "geen",
-  "gevoel": 2,
-  "formulering": 3,
-  "relevantie": 3,
-  "totaal": 8,
-  "besluit": "ja",
-  "reden": "Ontdekking van vijf nieuwe kikkersoorten in biodiversiteitshotspot; wetenschappelijke doorbraak met conserveringsbetekenis."
  }
 ]

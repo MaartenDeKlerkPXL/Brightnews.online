@@ -6,13 +6,28 @@
         <atom:link href="https://brightnews.online/feed-en.xml" rel="self" type="application/rss+xml"/>
         <description>A fresh pick of good news from around the world, every day. Enjoy the read!</description>
         <language>en-us</language>
-        <lastBuildDate>Thu, 19 Nov 2026 08:01:17 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 19 Nov 2026 13:48:06 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Your Daily Dose of Positivity</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Potatoes grow just as well in lunar soil</title>
+            <link>https://brightnews.online/articles/en/potatoes-grow-just-as-well-in-lunar-soil-1795096084943ymndpcytv.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/potatoes-grow-just-as-well-in-lunar-soil-1795096084943ymndpcytv.html</guid>
+            <pubDate>Thu, 19 Nov 2026 13:48:06 GMT</pubDate>
+            <description>Researchers at Oregon State University have demonstrated that potatoes cultivated in simulated lunar soil, supplemented with 30% organic vermicompost, achieve yields comparable to potatoes grown on Earth. The potatoes also prove to be completely safe to eat. This discovery is an important step toward sustainable agriculture on the Moon and contributes to preparations for NASA&apos;s Artemis program.</description>
+        </item>
+        <item>
+            <title>Mountain guide discovers more than 100 cave bear skeletons in South Tyrol</title>
+            <link>https://brightnews.online/articles/en/mountain-guide-discovers-more-than-100-cave-bear-skeletons-in-south-tyrol-1795096065649q5baxkva2.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/mountain-guide-discovers-more-than-100-cave-bear-skeletons-in-south-tyrol-1795096065649q5baxkva2.html</guid>
+            <pubDate>Thu, 19 Nov 2026 13:47:48 GMT</pubDate>
+            <description>In the Italian province of South Tyrol, a cave has been discovered containing the skeletons of more than 100 extinct cave bears. Mountain guide Kurt Walde made the discovery in July in the municipality of Enneberg, at approximately 2,770 meters altitude, just above the famous Conturines Cave, which was once looted before scientists could examine it. To prevent plundering, the...</description>
+            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-USP-Ufficio-Beni-archeologici-released-e1795074752326.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Compassion gains ground, from the Bronx to Algeria</title>
             <link>https://brightnews.online/articles/en/compassion-gains-ground-from-the-bronx-to-algeria-dg-20261118-dag.html</link>
@@ -234,22 +249,6 @@
             <pubDate>Sat, 14 Nov 2026 17:45:52 GMT</pubDate>
             <description>The heroic wartime deeds of British shopkeeper Ada Le Poidevin have come to light 40 years after her death. During the Second World War, she and her husband Walter hid three British commandos — corporal Dennis Dumper, soldier Fred Drain and soldier Andrew Ross — in their garden shed on Nazi-occupied Guernsey, despite German troops living next door. All three...</description>
             <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Ada-Le-Poidevin-during-WW-and-niece-Liz-Walton-SWNS.jpeg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Atolls Bikar and Bokak become new marine reserve</title>
-            <link>https://brightnews.online/articles/en/atolls-bikar-and-bokak-become-new-marine-reserve-1794678322616t56aulc0t.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/atolls-bikar-and-bokak-become-new-marine-reserve-1794678322616t56aulc0t.html</guid>
-            <pubDate>Sat, 14 Nov 2026 17:45:25 GMT</pubDate>
-            <description>In the Marshall Islands, the coral atolls Bikar and Bokak have been designated as part of the country&apos;s first national marine reserve. Scientists describe the two remote atolls, located between Hawaii and the Philippines, as one of the last virtually pristine ecosystems in the world. Researchers conducted extensive surveys in 2023 of the sea, land and air ecosystems, including counts...</description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Shark-in-reef-habitat-at-Bikar-in-Marshall-island-in-Pacific-Ocean-by-Manu-San-Felix-via-SWNS.jpeg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Hidden treasures and old bonds come to light</title>
-            <link>https://brightnews.online/articles/en/hidden-treasures-and-old-bonds-come-to-light-dg-20261112-lifestyle.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/hidden-treasures-and-old-bonds-come-to-light-dg-20261112-lifestyle.html</guid>
-            <pubDate>Fri, 13 Nov 2026 19:22:56 GMT</pubDate>
-            <description>Sometimes it takes years before something hidden surfaces again. This week, three stories show how patience and chance combine to create something beautiful: a family that finds each other after decades, a neighbor who stands ready for his neighbors during a flood, and a painting that has been quietly waiting in a closet all this time. Rodney Anderson from England is 81 years old and never knew wh</description>
-            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Left-Charles-Blackney-holding-his-Canadian-daughter-in-1942-right-Yvonne-Anderson-holding-Rodney-in-1945-credits-Dawn-Anderson.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>
