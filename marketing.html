@@ -15,72 +15,80 @@
     <meta name="robots" content="noindex, nofollow">
     <link rel="icon" type="image/png" href="assets/brightnews-logo-faviconv5.png">
     <title>Marketing-cockpit | BrightNews</title>
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/components.css">
+    <script>
+        /* Zelfde weergavekeuze als de site (bn-thema, zie de schil van v5). */
+        try {
+            var bnThema = localStorage.getItem('bn-thema');
+            if (bnThema === 'licht' || bnThema === 'donker') {
+                document.documentElement.setAttribute('data-theme', bnThema);
+            }
+        } catch (e) { /* geen opslag: systeem volgen */ }
+    </script>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/v5/basis.css">
+    <link rel="stylesheet" href="css/v5/componenten.css">
     <script src="js/vendor/supabase-js-2.112.4.js" defer></script>
     <script src="js/supabase-init.js" defer></script>
     <style>
+        /* Huisstijl v5: alle kleuren uit css/tokens.css, dus de donkere modus
+           volgt vanzelf. */
+        body { background: var(--surface-subtle); }
         .cockpit { max-width: 860px; margin: 0 auto; padding: 24px 20px 80px; }
-        .cockpit h1 { margin: 18px 0 4px; }
-        .cockpit .sub { color: var(--medium-text); margin-bottom: 26px; }
-        .melding {
-            background: #fff; border: 1px solid var(--border-color);
-            border-radius: var(--radius-md); padding: 22px; margin-top: 30px;
+        .cockpit h1, .cockpit h2 { font-family: var(--font-family-display); font-weight: 600; }
+        .cockpit h1 { margin: 22px 0 4px; font-size: 2rem; line-height: 1.2; }
+        .cockpit .sub { color: var(--text-secondary); margin: 0 0 28px; }
+        .cockpit a:not(.logo) { color: var(--text-link); }
+        .melding, .postkaart, .rapport pre {
+            background: var(--surface-default); border: 1px solid var(--border-default);
+            border-radius: var(--radius-lg);
         }
-        .dagblok { margin-bottom: 34px; }
+        .melding { padding: 22px; margin-top: 30px; }
+        .dagblok { margin-bottom: 36px; }
         .dagkop {
             display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
-            border-bottom: 3px solid var(--bright-green); padding-bottom: 6px; margin-bottom: 14px;
+            border-bottom: 2px solid var(--text-link); padding-bottom: 6px; margin-bottom: 14px;
         }
         .dagkop h2 { margin: 0; font-size: 1.25rem; }
-        .dagkop .onderwerp { color: var(--medium-text); font-size: .95rem; }
-        .postkaart {
-            background: #fff; border: 1px solid var(--border-color);
-            border-radius: var(--radius-md); padding: 16px 18px 12px; margin-bottom: 14px;
-        }
-        .postkop { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
+        .dagkop .onderwerp { color: var(--text-secondary); font-size: .95rem; }
+        .postkaart { padding: 16px 18px 14px; margin-bottom: 14px; }
+        .postkop { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
         .kanaalchip {
-            background: var(--bright-green); color: var(--dark-text); font-weight: 700;
-            font-size: .78rem; text-transform: uppercase; letter-spacing: .05em;
-            border-radius: 999px; padding: 3px 12px;
+            background: var(--action-primary-bg); color: var(--text-on-action); font-weight: 600;
+            font-size: .75rem; text-transform: uppercase; letter-spacing: .06em;
+            border-radius: var(--radius-full); padding: 4px 12px;
         }
         .status { font-size: .85rem; font-weight: 600; }
-        .status.goed { color: #1c7c31; }
-        .status.afgewezen { color: #b3261e; }
+        .status.goed { color: var(--feedback-success-fg); }
+        .status.afgewezen { color: var(--feedback-error-fg); }
         .taalknoppen { margin-left: auto; display: flex; gap: 4px; }
         .taalknoppen button {
-            border: 1px solid var(--border-color); background: #fff; border-radius: 6px;
-            padding: 3px 8px; cursor: pointer; font-size: .8rem;
+            border: 1px solid var(--border-default); background: var(--surface-default);
+            color: var(--text-primary); border-radius: var(--radius-md);
+            padding: 3px 9px; cursor: pointer; font: inherit; font-size: .8rem;
         }
-        .taalknoppen button.actief { background: var(--bright-green); font-weight: 700; }
+        .taalknoppen button.actief {
+            background: var(--action-primary-bg); border-color: var(--action-primary-bg);
+            color: var(--text-on-action); font-weight: 600;
+        }
+        .taalknoppen button:focus-visible { outline: 2px solid var(--border-focus); outline-offset: 2px; }
         .posttekst {
-            white-space: pre-wrap; background: var(--light-bg);
-            border-radius: var(--radius-sm); padding: 12px 14px; font-size: .95rem;
+            white-space: pre-wrap; background: var(--surface-muted); color: var(--text-primary);
+            border-radius: var(--radius-md); padding: 12px 14px; font-size: .95rem;
         }
-        .acties { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
-        .kaartvak {
-            display: none; margin-top: 12px; gap: 14px; align-items: flex-start;
-        }
+        .acties { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+        .kaartvak { display: none; margin-top: 12px; gap: 14px; align-items: flex-start; flex-wrap: wrap; }
         .kaartvak.open { display: flex; }
         .kaartvak canvas {
-            width: 200px; height: 200px; border: 1px solid var(--border-color);
-            border-radius: var(--radius-sm); background: #fff;
+            width: 200px; height: 200px; border: 1px solid var(--border-default);
+            border-radius: var(--radius-md);
         }
-        .kaartvak .uitleg { font-size: .85rem; color: var(--medium-text); max-width: 340px; }
-        .acties button {
-            border: 1px solid var(--border-color); background: #fff; border-radius: 8px;
-            padding: 7px 14px; cursor: pointer; font-size: .9rem;
-        }
-        .acties .goedkeur { background: var(--bright-green); color: var(--dark-text); font-weight: 700; border-color: var(--bright-green); }
-        .acties button:focus-visible { outline: 2px solid var(--bright-green); outline-offset: 2px; }
+        .kaartvak .uitleg { font-size: .85rem; color: var(--text-secondary); max-width: 340px; margin: 0; }
         .rapport { margin-top: 40px; }
-        .rapport pre {
-            background: #fff; border: 1px solid var(--border-color); border-radius: var(--radius-md);
-            padding: 18px; white-space: pre-wrap; font-size: .88rem; overflow-x: auto;
-        }
+        .rapport pre { padding: 18px; white-space: pre-wrap; font-size: .88rem; overflow-x: auto; color: var(--text-primary); }
         .toast {
             position: fixed; bottom: 22px; left: 50%; transform: translateX(-50%);
-            background: var(--dark-text); color: #fff; border-radius: 999px;
+            background: var(--text-primary); color: var(--surface-default); border-radius: var(--radius-full);
             padding: 9px 20px; font-size: .9rem; opacity: 0; transition: opacity .25s; pointer-events: none;
         }
         .toast.zichtbaar { opacity: 1; }
@@ -88,7 +96,14 @@
 </head>
 <body>
 <main class="cockpit" id="cockpit">
-    <a href="/?team=1"><img src="assets/brightnews-logo.png" width="232" height="47" alt="BrightNews"></a>
+    <a class="logo" href="/?team=1" aria-label="BrightNews, naar de homepage">
+        <svg class="logo__beeldmerk" viewBox="0 0 39.6151 40" aria-hidden="true">
+            <path d="M9 28a11 11 0 0 1 22 0H9Z" fill="#FFC933"/>
+            <path d="M35.25 29.5H4.75a1.75 1.75 0 0 0 0 3.5h30.5a1.75 1.75 0 0 0 0-3.5Z" fill="currentColor"/>
+            <path d="M20 12.5V8M30.3 17.7l3.2-3.2M9.7 17.7l-3.2-3.2" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+        </svg>
+        <span class="logo__woordmerk">Bright<span>News</span></span>
+    </a>
     <h1>Marketing-cockpit</h1>
     <p class="sub">Concepten van de postfabriek — goedkeuren, kopiëren, plaatsen. Afwijzen mét reden maakt de volgende lichting beter. Hier vertrekt niets vanzelf.</p>
     <div id="inhoud"><div class="melding">Laden…</div></div>
@@ -101,7 +116,7 @@
 <script type="module">
 import { tekenBeeldkaart, kaartBestandsnaam, downloadKaart } from './js/beeldkaart.js';
 (function () {
-    const TALEN = ['nl', 'en', 'de', 'fr', 'es'];
+    const TALEN = ['en', 'nl', 'de', 'fr', 'es'];
     const inhoud = document.getElementById('inhoud');
     let toastTimer = null;
 
@@ -181,11 +196,11 @@ import { tekenBeeldkaart, kaartBestandsnaam, downloadKaart } from './js/beeldkaa
             h2.textContent = dagItem.dag;
             const ond = document.createElement('span');
             ond.className = 'onderwerp';
-            ond.textContent = `${dagItem.onderwerp?.soort ?? ''}: ${dagItem.onderwerp?.titel ?? ''}`;
+            ond.textContent = `${dagItem.onderwerp?.soort ?? ''}: ${dagItem.onderwerp?.titelPerTaal?.en ?? dagItem.onderwerp?.titel ?? ''}`;
             kop.append(h2, ond);
             blok.appendChild(kop);
 
-            Object.keys(dagItem.perTaal?.nl ?? {}).forEach(kanaal => {
+            Object.keys(dagItem.perTaal?.en ?? dagItem.perTaal?.nl ?? {}).forEach(kanaal => {
                 blok.appendChild(maakPostkaart(dagItem, kanaal, status, client));
             });
             inhoud.appendChild(blok);
@@ -211,7 +226,7 @@ import { tekenBeeldkaart, kaartBestandsnaam, downloadKaart } from './js/beeldkaa
 
         const tekstEl = document.createElement('div');
         tekstEl.className = 'posttekst';
-        let actieveTaal = 'nl';
+        let actieveTaal = dagItem.perTaal?.en ? 'en' : 'nl';
         function toonTaal(taal) {
             actieveTaal = taal;
             tekstEl.textContent = dagItem.perTaal?.[taal]?.[kanaal] ?? '(ontbreekt)';
@@ -246,6 +261,7 @@ import { tekenBeeldkaart, kaartBestandsnaam, downloadKaart } from './js/beeldkaa
         const acties = document.createElement('div');
         acties.className = 'acties';
         const kopieer = document.createElement('button');
+        kopieer.className = 'btn btn--secondary btn--sm';
         kopieer.textContent = '📋 Kopieer';
         kopieer.addEventListener('click', async () => {
             try {
@@ -256,10 +272,11 @@ import { tekenBeeldkaart, kaartBestandsnaam, downloadKaart } from './js/beeldkaa
             }
         });
         const goed = document.createElement('button');
-        goed.className = 'goedkeur';
+        goed.className = 'btn btn--primary btn--sm';
         goed.textContent = '✓ Goedkeuren';
         goed.addEventListener('click', () => stuurFeedback(client, postKey, 'goed', null, statusEl));
         const slecht = document.createElement('button');
+        slecht.className = 'btn btn--secondary btn--sm';
         slecht.textContent = '✗ Afwijzen';
         slecht.addEventListener('click', () => {
             const reden = window.prompt('Waarom wijs je deze af? (voedt de volgende generatie)');
@@ -270,6 +287,7 @@ import { tekenBeeldkaart, kaartBestandsnaam, downloadKaart } from './js/beeldkaa
 
         if (kanaal === 'instagram') {
             const kaartKnop = document.createElement('button');
+            kaartKnop.className = 'btn btn--secondary btn--sm';
             kaartKnop.textContent = '🖼 Beeldkaart';
             kaartKnop.addEventListener('click', async () => {
                 if (!doek) {
@@ -279,6 +297,7 @@ import { tekenBeeldkaart, kaartBestandsnaam, downloadKaart } from './js/beeldkaa
                     uitleg.innerHTML = '1080 × 1080, klaar voor Instagram. '
                         + 'De kaart volgt de taalknoppen hierboven.<br><br>';
                     const download = document.createElement('button');
+                    download.className = 'btn btn--primary btn--sm';
                     download.textContent = '⬇ Download PNG';
                     download.addEventListener('click', async () => {
                         try {
@@ -300,7 +319,7 @@ import { tekenBeeldkaart, kaartBestandsnaam, downloadKaart } from './js/beeldkaa
         }
 
         kaart.append(kop, tekstEl, acties, kaartvak);
-        toonTaal('nl');
+        toonTaal(actieveTaal);
         return kaart;
     }
 
