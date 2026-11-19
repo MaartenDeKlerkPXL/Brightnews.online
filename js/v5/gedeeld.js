@@ -423,7 +423,11 @@
     // en tijd tonen (uit op de homepage en de editiepagina's).
     function storyCard(artikel, { vorm = 'overlay', groot = false, meta = false, kop = 'h3' } = {}) {
         const kaart = el('article', `story-card story-card--${vorm}${groot ? ' story-card--groot' : ''}`);
-        kaart.appendChild(beeld(artikel.image, 'story-card__beeld'));
+        const foto = beeld(artikel.image, 'story-card__beeld');
+        // De grote kaart staat bovenaan de pagina en is meestal het grootste
+        // beeld (LCP): meteen en met voorrang laden, niet lui.
+        if (groot && foto.tagName === 'IMG') { foto.loading = 'eager'; foto.fetchPriority = 'high'; }
+        kaart.appendChild(foto);
         const tekst = el('div', 'story-card__tekst');
         const label = categorieLabel(artikel.category);
         if (label) tekst.appendChild(el('span', vorm === 'overlay' ? 'badge' : 'categorie-label', label));
