@@ -79,7 +79,8 @@
 
         // 1 Het merkbeeld, niet de foto van een van de verhalen: die staan
         // er direct onder (dubbele foto's, UX-review fase 5).
-        artikel.appendChild(B.merkbeeld('artikel__beeld'));
+        artikel.appendChild(B.terugKnop());
+        artikel.appendChild(B.merkbeeld('artikel__beeld', { label: t('digest_badge'), datum: B.hoofdletter(B.dagLang(dag)) }));
 
         // 2 Kop
         const kop = el('header', 'artikel__kop');

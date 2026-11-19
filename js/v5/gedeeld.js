@@ -400,10 +400,43 @@
         }
     }
 
-    function merkbeeld(klasse) {
-        const div = el('div', `${klasse} merkbeeld`);
+    // Met `omslag` ({ label, datum }) wordt het een omslag: het woordmerk,
+    // het label en de datum in het groene vlak (dagoverzicht, besluit Maarten
+    // 2026-11-19). aria-hidden: dezelfde tekst staat in de kop ernaast.
+    function merkbeeld(klasse, omslag) {
+        const div = el('div', `${klasse} merkbeeld${omslag ? ' merkbeeld--omslag' : ''}`);
         div.setAttribute('aria-hidden', 'true');
+        if (omslag) {
+            const merk = el('span', 'merkbeeld__merk', 'Bright');
+            merk.appendChild(el('span', null, 'News'));
+            const tekst = el('span', 'merkbeeld__tekst');
+            tekst.appendChild(el('span', 'merkbeeld__label', omslag.label));
+            tekst.appendChild(el('span', 'merkbeeld__datum', omslag.datum));
+            div.append(merk, tekst);
+        }
         return div;
+    }
+
+    // Terugknop boven een artikel of dagoverzicht (besluit Maarten
+    // 2026-11-19). Kwam je van een pagina van BrightNews, dan "Terug" naar
+    // precies die plek; anders (Google, een gedeelde link) "Naar het nieuws".
+    // Zonder argument een nieuwe knop; met een bestaande <a data-terug> (de
+    // statische artikelpagina's) wordt die ingericht.
+    function terugKnop(a) {
+        if (!a) {
+            a = el('a', 'btn btn--tertiary btn--sm artikel__terug');
+            a.append(icoon('arrow_back'), el('span'));
+        }
+        if (a.dataset.terugKlaar) return a;
+        a.dataset.terugKlaar = '1';
+        a.href = '/';
+        let vanHier = false;
+        try { vanHier = history.length > 1 && new URL(document.referrer).origin === location.origin; } catch { /* geen referrer */ }
+        const span = a.querySelector('span');
+        span.dataset.i18n = vanHier ? 'v5_terug' : 'v5_af_naar_nieuws';
+        span.textContent = t(span.dataset.i18n);
+        if (vanHier) a.addEventListener('click', e => { e.preventDefault(); history.back(); });
+        return a;
     }
 
     // Foto, of het merkbeeld als er geen is of hij niet laadt. Alt-tekst
@@ -730,7 +763,8 @@
         dagVan, vandaag, verschuif, isDagSleutel, dagLang, dagKort, dagMaand, weekdag, maandNaam, tijd, datumTijd, hoofdletter,
         aantalVerhalen, perDag, archiefPerDag, digestsVan, nieuwsteDigestDag, verhalenVanDigests, laatsteMoment,
         zonderVerwijzingen, eersteZinnen, url, metTestdag, categorieLabel,
-        el, icoon, link, knop, zinMetDelen, onderwerpLinks, beeld, merkbeeld, storyCard, headlineItem, editieRaster, digestCard,
+        el, icoon, link, knop, zinMetDelen, onderwerpLinks, beeld, merkbeeld, terugKnop, storyCard, headlineItem, editieRaster, digestCard,
         aanwijzing, bronnenRegel, leeg, gelezen, markeerGelezen, deelBalk, origineelLink, start, wachtKnop, eigenPad,
     };
+    document.querySelectorAll('[data-terug]').forEach(a => terugKnop(a));
 })();

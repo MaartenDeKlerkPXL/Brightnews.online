@@ -299,6 +299,18 @@
 
 .artikel__beeld.merkbeeld {
     border: 0;
+    /* .artikel__beeld zet een grijze achtergrond voor laden; het merkbeeld
+       hoort groen te blijven. */
+    background: var(--color-leaf-600);
+}
+
+/* Terugknop boven de foto, op de linkerkant van de foto (2026-11-19). De
+   kleine marge eronder compenseert de grote gap van .artikel. */
+.artikel__terug {
+    align-self: flex-start;
+    width: fit-content;
+    margin-left: max(0px, calc((100% - var(--layout-media-width)) / 2));
+    margin-bottom: calc(var(--spacing-md) - var(--spacing-2xl));
 }
 
 .artikel__kop {
