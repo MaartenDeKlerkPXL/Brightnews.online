@@ -371,10 +371,25 @@ function maakTeaser(tekst, maxWoorden = 60) {
 // de plaats vijf geverifieerde bronnen die zélf positief nieuws cureren.
 const FEEDS = [
     // gewijd aan positief nieuws
-    { name: 'Positive.News', url: 'https://www.positive.news/feed/' },
-    { name: 'GoodNewsNetwork.org', url: 'https://www.goodnewsnetwork.org/category/news/feed/' },
+    // Positive.News eruit op 2026-11-19: de feed weigert ons (403, botblokkade).
+    // Niet omzeilen; terug als zij ons toestemming geven.
+    // { name: 'Positive.News', url: 'https://www.positive.news/feed/' },
+    // De hele feed van GNN in plaats van alleen /category/news/ (2026-11-19):
+    // 35 in plaats van ±25 berichten per week, en 75% komt door de selectie.
+    { name: 'GoodNewsNetwork.org', url: 'https://www.goodnewsnetwork.org/feed/' },
     { name: 'ReasonsToBeCheerful.world', url: 'https://reasonstobecheerful.world/feed/' },
     { name: 'OptimistDaily.com', url: 'https://www.optimistdaily.com/feed/' },
+    // Erbij op 2026-11-19: er kwamen nog maar ±5 verhalen per dag binnen
+    // (half september ±11). Alleen bronnen die zelf goed nieuws maken, want
+    // die halen 50-75% in de selectie; gewone wetenschapssites haalden 5-7%
+    // en zijn daarom op 16 september geschrapt. Getest met deze parser:
+    // berichten in de laatste 7 dagen tussen haakjes.
+    { name: 'NiceNews.com', url: 'https://nicenews.com/feed/' },                         // (7)
+    { name: 'Upworthy.com', url: 'https://www.upworthy.com/feeds/feed.rss' },            // (10)
+    { name: 'AnthropoceneMagazine.org', url: 'https://www.anthropocenemagazine.org/feed/' }, // (7) oplossingen
+    { name: 'MyModernMet.com', url: 'https://mymodernmet.com/feed/' },                   // (10) kunst, design
+    { name: 'Positivr.fr', url: 'https://positivr.fr/feed/' },                           // (30) Frans
+    { name: 'Goodnews-magazin.de', url: 'https://goodnews-magazin.de/feed/' },          // (10) Duits
     // Squirrel-News eruit op 2026-09-29: 8 van de 8 beoordelingen afgewezen,
     // állemaal als "verzameleditie". Dat is geen pech maar bouw — die site ís
     // een linklijst-nieuwsbrief, en BrightNews maakt eigen dagoverzichten.
@@ -391,7 +406,7 @@ const FEEDS = [
     { name: 'Openaccessgovernment.org', url: 'https://www.openaccessgovernment.org/category/open-access-news/research-innovation-news/feed/' },
     { name: 'PBS.org', url: 'https://www.pbs.org/wnet/nature/blog/feed/' },
     { name: 'Theecologist.org', url: 'https://theecologist.org/whats_new/feed' },
-    { name: 'Environmentuk.net', url: 'https://www.environmentuk.net/index.php?format=feed&type=rss' },
+    // Environmentuk.net eruit op 2026-11-19: de feed bestaat niet meer (404).
     // cultuur, onderwijs & buitenleven
     { name: 'BBC.com/culture', url: 'https://www.bbc.com/culture/feed.rss' },
     { name: 'Ww2.kqed.org/mindshift', url: 'https://ww2.kqed.org/mindshift/feed/' },
