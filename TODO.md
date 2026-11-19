@@ -152,11 +152,14 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
 > gaat de site live én moet de inzending voor de award erin (vóór 23:59).
 >
 > **Maarten:**
-> - [ ] Token `github_actions_token` in de Supabase Vault (fine-grained, Actions
+> - [x] Token `github_actions_token` in de Supabase Vault (19 november; de
+>   eerste run vanuit Supabase slaagde om 13:46) (fine-grained, Actions
 >   read and write, alleen Brightnews.online). Daarna "token staat erin".
 >   De taak in Supabase staat al klaar (PR #39, TODO 69.4).
-> - [ ] Anthropic: auto-reload en een tegoedalarm (TODO 26 en 69.2).
-> - [ ] Back-up: `pg_dump` of Supabase Pro (TODO 70).
+> - [ ] **Erik, vrijdag 20 november:** Anthropic auto-reload en een
+>   tegoedalarm aanzetten (TODO 26 en 69.2). Maarten herinnert hem eraan.
+> - [ ] Back-up: nu zelf met `pg_dump` (naar `~/Backups/brightnews/`, nooit in
+>   de repo); later vervangen door Supabase Pro (TODO 70, besluit 19 november).
 > - [ ] Ingelogd een Premium-artikel openen, Mijn account nalopen; opzeggen
 >   vóór 17 december als je niet wilt betalen (TODO 31).
 > - [ ] Stripe: bij beide betaallinks "na betaling doorsturen" op
