@@ -259,6 +259,7 @@
         B.markeerGelezen(artikel.id);
 
         const blok = el('article', 'container artikel');
+        blok.appendChild(B.terugKnop());
         // 1 Foto, met alleen een alt-tekst (besluit v5 · 19: geen bijschrift).
         blok.appendChild(B.beeld(artikel.image, 'artikel__beeld', artikel.image_alt || ''));
 

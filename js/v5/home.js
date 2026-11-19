@@ -56,7 +56,7 @@
 
         // Altijd het merkbeeld: de foto van een van de verhalen stond er sinds
         // fase 2 dubbel, want die verhalen staan in hetzelfde blok (fase 5).
-        hero.appendChild(B.merkbeeld('digest-hero__beeld'));
+        hero.appendChild(B.merkbeeld('digest-hero__beeld', { label: t('digest_badge'), datum: B.hoofdletter(B.dagLang(dag)) }));
         return hero;
     }
 

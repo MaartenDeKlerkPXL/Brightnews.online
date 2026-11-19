@@ -363,8 +363,18 @@ function paginaHtml(artikel, lang, slugsPerTaal, manifest, burenIndex) {
     // niet, dan maakt js/v5/artikel.js er het merkbeeld van (zoals in v5).
     // Een dagoverzicht krijgt het merkbeeld: de foto van een van zijn verhalen
     // stond er anders dubbel (UX-review fase 5).
+    // Het merkbeeld als omslag: woordmerk, "Dagoverzicht" en de dag
+    // (2026-11-19, gelijk aan B.merkbeeld in js/v5/gedeeld.js).
+    // De dag uit digest_date, of uit het id (dg-JJJJMMDD-…) voor het archief.
+    const idDag = /^dg-(\d{4})(\d{2})(\d{2})/.exec(String(artikel.id));
+    const digestDag = /^\d{4}-\d{2}-\d{2}$/.test(String(artikel.digest_date || '')) ? artikel.digest_date
+        : idDag ? `${idDag[1]}-${idDag[2]}-${idDag[3]}` : '';
+    const omslagDag = isDigest && digestDag
+        ? new Intl.DateTimeFormat(LOCALES[lang], { timeZone: 'UTC', weekday: 'long', day: 'numeric', month: 'long' }).format(new Date(`${digestDag}T12:00:00Z`))
+        : '';
+    const omslagDatum = omslagDag ? omslagDag.charAt(0).toLocaleUpperCase(LOCALES[lang]) + omslagDag.slice(1) : '';
     const beeld = isDigest
-        ? '<div class="artikel__beeld merkbeeld" aria-hidden="true"></div>'
+        ? `<div class="artikel__beeld merkbeeld merkbeeld--omslag" aria-hidden="true"><span class="merkbeeld__merk">Bright<span>News</span></span><span class="merkbeeld__tekst"><span class="merkbeeld__label">${escapeHtml(t(lang, 'digest_badge'))}</span><span class="merkbeeld__datum">${escapeHtml(omslagDatum)}</span></span></div>`
         : `<img class="artikel__beeld" src="${escapeHtml(afbeelding)}" alt="${escapeHtml(artikel.image_alt || '')}" width="960" height="540" fetchpriority="high" decoding="async">`;
 
     // Dagoverzicht: de besproken artikelen, naar hun statische pagina als het
@@ -430,6 +440,7 @@ ${header}
 
 <main id="inhoud">
     <article class="container artikel" data-statisch-artikel data-artikel-id="${escapeHtml(String(artikel.id))}" data-artikel-taal="${lang}"${ingekort ? ' data-ingekort' : ''}${altAttrs}>
+        <a class="btn btn--tertiary btn--sm artikel__terug" href="/" data-terug><svg class="icoon" aria-hidden="true"><use href="/assets/iconen.svg#arrow_back"/></svg><span data-i18n="v5_af_naar_nieuws">${escapeHtml(t(lang, 'v5_af_naar_nieuws'))}</span></a>
         ${beeld}
         <header class="artikel__kop">
             <p class="artikel__meta">${categorie}${toonDatum ? `<time datetime="${isoDatum}">${escapeHtml(toonDatum)}</time>` : ''}</p>
