@@ -160,12 +160,12 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
 >   tegoedalarm aanzetten (TODO 26 en 69.2). Maarten herinnert hem eraan.
 > - [x] Back-up (19 november, 1,8 MB, 59 tabellen): nu zelf met `pg_dump` (naar `~/Backups/brightnews/`, nooit in
 >   de repo); later vervangen door Supabase Pro (TODO 70, besluit 19 november).
-> - [ ] Ingelogd een Premium-artikel openen, Mijn account nalopen; opzeggen
->   vóór 17 december als je niet wilt betalen (TODO 31).
+> - [ ] Ingelogd een Premium-artikel openen (TODO 31). Mijn account en
+>   opzeggen zijn op 19 november nagelopen en kloppen.
 > - [ ] Stripe: bij beide betaallinks "na betaling doorsturen" op
 >   `https://brightnews.online/bedankt.html` (niet dringend: `thanks.html`
 >   stuurt al door).
-> - [ ] Vrijdag 20 november, Search Console: sitemap indienen en de dubbele
+> - [ ] Search Console (kan al, hoeft niet op Anthropic te wachten): sitemap indienen en de dubbele
 >   pagina laten valideren (TODO 78).
 > - [ ] De site nalopen via `/?team=1`, telefoon en computer, licht en donker.
 > - [ ] Sociale media: profielfoto, banner en bio, en de posts uit
@@ -2927,9 +2927,9 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
     18 november).
   - Stap 6 (promocode) vervalt: er zijn geen promocodes meer (BRIGHT3 en
     ZONNETJE30 verlopen, het veld in Mijn account is verborgen, PR #42).
-  - **Nog open (Maarten):** ingelogd een Premium-artikel volledig zien (stap 4),
-    Mijn account nalopen, en opzeggen vóór 17 december als je niet wilt betalen
-    (stap 5: kijk of Premium dan tot het einde van de proef blijft).
+  - ✅ Stap 5 (opzeggen, 19 november): Mijn account toont "Premium · opgezegd",
+    Premium tot 17 december 2026, daarna een gratis account. Klopt.
+  - **Nog open (Maarten):** ingelogd een Premium-artikel volledig zien (stap 4).
 
   Dat is de kern van het verdienmodel en hij is nog nooit van begin tot eind
   gelopen. Doe dit samen vóór de lancering, met één echte kaart en één
