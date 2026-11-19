@@ -53,22 +53,26 @@ Elke dag (± 2 minuten):
 
 ## Posts vóór de lancering
 
-**1. Aankondiging (nu)**
+Per post: het beeld (PNG in deze map) plus de tekst eronder als bijschrift.
+Op Instagram werkt een link in het bijschrift niet; zet daar "Link in bio" in
+de plaats van het webadres. De SVG van elk beeld is bewerkbaar in Illustrator.
+
+**1. Aankondiging (19 november)** — beeld `post-1-aankondiging.png`
 > The news can be different.
 > On Sunday 22 November, BrightNews goes live: every day, a handful of stories about what is going right in the world. In English, Dutch, German, French and Spanish.
 > Follow us and be the first to know. ☀️
 
-**2. Waarom (20 november)**
+**2. Waarom (20 november)** — beeld `post-2-waarom.png`
 > A lot of people read less news because it brings them down. We get it.
 > That is why BrightNews only picks stories that show real progress: a new treatment, a river that is clean again, a village that pulls together.
 > Real news, from trusted sources. Just the good part.
 
-**3. Hoe we kiezen (21 november)**
+**3. Hoe we kiezen (21 november)** — beeld `post-3-hoe-we-kiezen.png`
 > How do you know a story is good news?
 > Every story from a trusted news source is scored on three things: does it make you feel happy or hopeful, does it tell you what is going well without crisis language, and does it matter to society? Only stories that score well on all three make it onto BrightNews. War, crime, ads and clickbait stay out.
 > See how it works: brightnews.online/zo-kiezen-we.html
 
-**4. Lancering (22 november)**
+**4. Lancering (22 november)** — beeld `post-4-lancering.png`
 > We are live! ☀️
 > From today, brightnews.online brings you a handful of hopeful stories from around the world every day, in five languages.
 > The start of every story is free. With a free account you can read five full stories a month.
