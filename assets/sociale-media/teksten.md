@@ -38,6 +38,26 @@ Elke dag (± 2 minuten):
 4. *File → Export → Export for Screens* (⌥⌘E), formaat PNG, schaal 1x →
    een vierkante PNG van 1080×1080. Die zet je op Instagram en Facebook.
 
+## Een post met foto: `post-sjabloon-foto.svg`
+
+Voor een foto vol beeld. Een donker verloop onderaan (en een lichter bovenin,
+achter het logo) houdt de witte tekst leesbaar, wat de foto ook is.
+
+1. Open `post-sjabloon-foto.svg` in Illustrator en bewaar als `.ai` (buiten
+   de repo).
+2. Open het deelvenster Lagen (*Window → Layers*). Selecteer in de groep
+   **foto** het bruine vlak en de tekst "Plaats hier je foto", en verwijder ze.
+3. Kies *File → Place*, kies je foto en sleep hem over het hele vierkant.
+   Sleep hem in Lagen in de groep **foto**, zodat hij ónder **verloop-onder**
+   en **verloop-boven** ligt. Ligt hij erboven, dan zie je het verloop niet.
+4. Is de foto bovenin erg licht en valt het logo weg? Kies **verloop-boven**
+   en zet de dekking hoger (bijv. 70%) in het deelvenster Transparantie.
+5. Kop en label aanpassen gaat zoals in het gewone sjabloon. Exporteer met
+   ⌥⌘E als PNG, 1x.
+
+Kies foto's waar onderaan iets rustigs staat (gras, water, lucht): daar komt
+de tekst.
+
 ## Bio
 
 **Instagram** (max. 150 tekens; Threads neemt deze over):
