@@ -1671,3 +1671,10 @@ Niet bright-waardig: 1. Twijfel: 0.
 - **Link:** (niet opgehaald in deze beoordeling)
 
 Verder waren alle zeven artikelen in orde: de zeeschildpadnesten aan de Amerikaanse westkust, de wederzijdse gastvrijheid tussen Lawrence en Algerije, Buffetts schenking met Thanksgiving, de elektrische schoolbussen in de Bronx, de daling van dakloosheid in de VS, en het verhaal van April Surac en haar NeuraSensa-kunstinstallaties zijn stuk voor stuk echte, persoonlijke of maatschappelijk relevante verhalen zonder product-, politiek- of verzameleditie-problematiek.
+
+### 2026-11-19, 10:49 Europe/Amsterdam
+
+Beoordeeld: 3 artikelen, gepubliceerd tussen 2026-11-19 07:59 en 2026-11-19 08:00.
+Niet bright-waardig: 0. Twijfel: 0.
+
+Alle drie de artikelen voldoen aan de maatstaf: een reddingsactie voor een zeldzame plant, een persoonlijk verhaal over kinderen die voor hun moeder een trap bouwen, en herstel van de blauwe vinvispopulatie na het einde van de walvisvangst. Stuk voor stuk gaat de kern over herstel, zorg of gemeenschapszin, positief geformuleerd en maatschappelijk relevant of herkenbaar. Geen van de afwijscategorieën is van toepassing.

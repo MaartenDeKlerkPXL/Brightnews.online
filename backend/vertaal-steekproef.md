@@ -467,3 +467,12 @@ Namen, cijfers en details komen overeen met het Nederlands, eigennamen (Ebro Ahm
 - **Mogelijk weggevallen feit:** het Nederlands spreekt van "staats- en federale autoriteiten" die de eieren ophaalden, maar de Franse samenvatting noemt alleen "les autorités fédérales et..." — de verwijzing naar de staatsautoriteiten lijkt te ontbreken (het stuk is afgekapt met "...", dus dit kan niet met zekerheid worden vastgesteld, maar het valt op).
 
 Verder is de titelstijl correct (gewone zinsstijl, geen hoofdletter op elk woord), is de soortnaam "olive ridley" keurig onvertaald tussen haakjes bewezen, en dekt de titel het verhaal. Geen problemen met geslacht of eigennamen aangetroffen in het zichtbare deel.
+
+### 2026-11-19, Spaans
+
+**Artikel:** Estudiantes salvan la planta liveforever amenazada en Silicon Valley
+**Oordeel:** één noemenswaardige fout.
+
+- **Verkeerd vertaald feit:** het Nederlands noemt "plantendieven" als bedreiging, de Spaanse tekst maakt daar "cazadores" (jagers) van. Dat is geen synoniem maar een andere dreiging, en verandert de inhoud van het verhaal.
+
+Verder blijven de eigennamen ("Santa Clara University", "Santa Clara Valley dudleya") en de merknaam "liveforever" terecht onvertaald staan, en de titel gebruikt correct gewone zinsstijl in plaats van hoofdletters per woord. De tekst loopt verder natuurlijk en de kop dekt het verhaal.
