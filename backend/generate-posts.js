@@ -1,7 +1,8 @@
 // Postfabriek (besluit Erik 2026-09-09, marketing fase M1): schrijft per dag
 // één conceptpost per kanaal (instagram/facebook/linkedin) over het beste
-// materiaal van vandaag, in het Nederlands (rol 'schrijven'), en vertaalt die
-// naar de andere vier talen (rol 'vertalen'). Concepten belanden in de
+// materiaal van vandaag, in het Engels (rol 'schrijven'; sinds 2026-11-19, de
+// accounts zijn Engelstalig, daarvóór Nederlands), en vertaalt die naar de
+// andere vier talen (rol 'vertalen'). Concepten belanden in de
 // Supabase-tabel marketing_posts (review-ronde 2026-09-26: de site en de
 // repo zijn publiek, dus conceptposts in data/ waren voor iedereen leesbaar;
 // de tabel is met RLS afgeschermd tot team_leden). Maarten keurt ze in de
@@ -19,6 +20,8 @@ const { aiCall, verwerkAIResponse } = require('./ai-adapter');
 
 const TALEN = ['nl', 'en', 'de', 'fr', 'es'];
 const TAAL_NAMEN = { nl: 'Nederlands', en: 'Engels', de: 'Duits', fr: 'Frans', es: 'Spaans' };
+// De taal waarin de fabriek schrijft; de andere vier worden vertaald.
+const BRON = 'en';
 // X is er op 2026-09-27 uit (besluit Maarten). Sinds 06-02-2026 rekent X per
 // post af en een post mét link kost $0,20 — onze posts bevatten er altijd
 // een, dus één post per dag per taal is ~$73 per jaar. X staat bovendien niet
@@ -65,11 +68,11 @@ async function haalFeedback() {
 }
 
 function bouwMateriaal(feed) {
-    const nl = feed.perTaal?.nl;
-    if (!nl) return null;
+    const bron = feed.perTaal?.[BRON];
+    if (!bron) return null;
     const items = [
-        ...nl.dagoverzichten.map(d => ({ soort: 'dagoverzicht', id: d.id, titel: d.titel, tekst: '', url: d.url })),
-        ...nl.top.map(t => ({ soort: 'artikel', id: t.id, titel: t.titel, tekst: t.teaser, url: t.url })),
+        ...bron.dagoverzichten.map(d => ({ soort: 'dagoverzicht', id: d.id, titel: d.titel, tekst: '', url: d.url })),
+        ...bron.top.map(t => ({ soort: 'artikel', id: t.id, titel: t.titel, tekst: t.teaser, url: t.url })),
     ];
     if (!items.length) return null;
     // Eén onderwerp per dag houdt de review klein: het dagoverzicht als dat
@@ -90,13 +93,13 @@ function bouwMateriaal(feed) {
     return keuze;
 }
 
-async function vertaalPosts(nlPosts, lang) {
+async function vertaalPosts(bronPosts, lang) {
     for (let poging = 0; poging < 2; poging++) {
         const antwoord = await aiCall({
             rol: 'vertalen',
-            prompt: `Vertaal deze socialmediaposts van BrightNews van het Nederlands naar het ${TAAL_NAMEN[lang]}. Behoud per post de stijl en kanaalconventies (hashtags meevertalen waar dat natuurlijk is, emoji's laten staan) en laat de placeholder {URL} exact staan. Voeg niets toe, laat niets weg; vertaal merk- en organisatienamen niet, behoud het geslacht uit het origineel, en schrijf aanhalingstekens binnen tekst als typografische tekens (nooit een kaal recht ").
+            prompt: `Vertaal deze socialmediaposts van BrightNews van het ${TAAL_NAMEN[BRON]} naar het ${TAAL_NAMEN[lang]}. Behoud per post de stijl en kanaalconventies (hashtags meevertalen waar dat natuurlijk is, emoji's laten staan) en laat de placeholder {URL} exact staan. Voeg niets toe, laat niets weg; vertaal merk- en organisatienamen niet, behoud het geslacht uit het origineel, en schrijf aanhalingstekens binnen tekst als typografische tekens (nooit een kaal recht ").
 INVOER:
-${JSON.stringify({ posts: nlPosts })}
+${JSON.stringify({ posts: bronPosts })}
 Antwoord UITSLUITEND met geldig JSON in exact dezelfde vorm: {"posts": [{"kanaal": "..", "tekst": ".."}]}`,
         });
         const data = verwerkAIResponse(antwoord.tekst);
@@ -104,7 +107,7 @@ Antwoord UITSLUITEND met geldig JSON in exact dezelfde vorm: {"posts": [{"kanaal
         const perKanaal = Object.fromEntries(posts
             .filter(p => KANALEN.includes(p.kanaal) && typeof p.tekst === 'string' && p.tekst.trim())
             .map(p => [p.kanaal, p.tekst.trim()]));
-        const linkBehouden = k => k === 'instagram' || !nlPosts.find(p => p.kanaal === k)?.tekst.includes('{URL}') || perKanaal[k]?.includes('{URL}');
+        const linkBehouden = k => k === 'instagram' || !bronPosts.find(p => p.kanaal === k)?.tekst.includes('{URL}') || perKanaal[k]?.includes('{URL}');
         if (KANALEN.every(k => perKanaal[k] && linkBehouden(k))) return { perKanaal, tokens: antwoord.tokens };
         console.error(`🔎 Postvertaling ${lang} onbruikbaar (poging ${poging + 1}): ${String(antwoord.tekst).replace(/\s+/g, ' ').slice(0, 160)}`);
         await wacht(1000);
@@ -150,9 +153,9 @@ async function main() {
 
     console.log(`📣 Postfabriek ${dag}: "${onderwerp.titel}" (${onderwerp.soort}); feedbackregels: ${feedback === '(nog geen feedback)' ? 0 : feedback.split('\n').length}`);
 
-    let nlPosts = null;
+    let bronPosts = null;
     let tokens = 0;
-    for (let poging = 0; poging < 2 && !nlPosts; poging++) {
+    for (let poging = 0; poging < 2 && !bronPosts; poging++) {
         const antwoord = await aiCall({ rol: 'schrijven', prompt });
         tokens += antwoord.tokens;
         const data = verwerkAIResponse(antwoord.tekst);
@@ -160,18 +163,18 @@ async function main() {
             .filter(p => KANALEN.includes(p.kanaal) && typeof p.tekst === 'string' && p.tekst.trim())
             .map(p => ({ kanaal: p.kanaal, tekst: p.tekst.trim() }));
         const linkOk = k => k === 'instagram' || posts.find(p => p.kanaal === k)?.tekst.includes('{URL}');
-        if (KANALEN.every(k => posts.some(p => p.kanaal === k) && linkOk(k))) nlPosts = posts;
-        else console.error(`🔎 NL-posts onbruikbaar (poging ${poging + 1}): ${String(antwoord.tekst).replace(/\s+/g, ' ').slice(0, 160)}`);
+        if (KANALEN.every(k => posts.some(p => p.kanaal === k) && linkOk(k))) bronPosts = posts;
+        else console.error(`🔎 ${BRON.toUpperCase()}-posts onbruikbaar (poging ${poging + 1}): ${String(antwoord.tekst).replace(/\s+/g, ' ').slice(0, 160)}`);
     }
-    if (!nlPosts) {
-        console.error('❌ Geen bruikbare NL-posts — volgende run opnieuw.');
+    if (!bronPosts) {
+        console.error(`❌ Geen bruikbare ${BRON.toUpperCase()}-posts — volgende run opnieuw.`);
         return;
     }
 
-    const perTaal = { nl: Object.fromEntries(nlPosts.map(p => [p.kanaal, p.tekst])) };
-    for (const lang of TALEN.filter(l => l !== 'nl')) {
+    const perTaal = { [BRON]: Object.fromEntries(bronPosts.map(p => [p.kanaal, p.tekst])) };
+    for (const lang of TALEN.filter(l => l !== BRON)) {
         await wacht(1000);
-        const vertaling = await vertaalPosts(nlPosts, lang);
+        const vertaling = await vertaalPosts(bronPosts, lang);
         if (!vertaling) {
             console.error(`❌ Vertaling ${lang} mislukt — dag overgeslagen, volgende run opnieuw.`);
             return;
