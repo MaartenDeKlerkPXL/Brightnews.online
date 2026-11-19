@@ -148,48 +148,83 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
 
 ## Blokkeert de lancering
 
-> **Lanceringsweek, stand woensdag 18 november (avond).** Zondag 22 november
+> **Lanceringsweek, stand donderdag 19 november (avond).** Zondag 22 november
 > gaat de site live én moet de inzending voor de award erin (vóór 23:59).
 >
 > **Maarten:**
-> - [x] Token `github_actions_token` in de Supabase Vault (19 november; de
->   eerste run vanuit Supabase slaagde om 13:46) (fine-grained, Actions
->   read and write, alleen Brightnews.online). Daarna "token staat erin".
->   De taak in Supabase staat al klaar (PR #39, TODO 69.4).
-> - [ ] **Erik, vrijdag 20 november:** Anthropic auto-reload en een
->   tegoedalarm aanzetten (TODO 26 en 69.2). Maarten herinnert hem eraan.
-> - [x] Back-up (19 november, 1,8 MB, 59 tabellen): nu zelf met `pg_dump` (naar `~/Backups/brightnews/`, nooit in
->   de repo); later vervangen door Supabase Pro (TODO 70, besluit 19 november).
-> - [x] Ingelogd een Premium-artikel openen (TODO 31): werkt, 19 november. Mijn account en
->   opzeggen zijn op 19 november nagelopen en kloppen.
+> - [ ] **Vrijdag 20 november: Erik herinneren** aan Anthropic auto-reload en
+>   een tegoedalarm (TODO 26 en 69.2). Erik zet het zelf aan.
+> - [ ] Posts plaatsen op Instagram, Facebook en LinkedIn: post 2 vrijdag,
+>   post 3 zaterdag, post 4 zondag (beelden gemaakt, teksten in
+>   `assets/sociale-media/teksten.md`). Post 1 staat online (19 november).
+> - [ ] Award: de video maken (script en stappen in `pxl-award/video-script.md`),
+>   en zondag insturen met het canvas als PDF (TODO 84).
+> - [ ] Zondag: "haal de parkeerpagina weg" zeggen (PR #43, TODO 2), daarna in
+>   Search Console indexering aanvragen voor `/`.
 > - [ ] Stripe: bij beide betaallinks "na betaling doorsturen" op
 >   `https://brightnews.online/bedankt.html` (niet dringend: `thanks.html`
 >   stuurt al door).
-> - [x] Search Console (19 november: sitemap ingediend, validatie gestart): sitemap indienen en de dubbele
->   pagina laten valideren (TODO 78).
-> - [ ] De site nalopen via `/?team=1`, telefoon en computer, licht en donker.
-> - [ ] Sociale media: profielfoto, banner en bio, en de posts uit
->   `assets/sociale-media/teksten.md` (TODO 80.3 en 81).
+> - [x] Supabase-geheimen nagekeken (19 november): alleen `SERVICE_ROLE_KEY`
+>   en `STRIPE_WEBHOOK_SECRET`. `STRIPE_ALLOW_TEST` en
+>   `STRIPE_WEBHOOK_SECRET_TEST` staan er niet; een testbetaling geeft dus
+>   geen Premium.
+> - [x] Sociale media (19 november): één Engelstalig account op Facebook,
+>   Instagram en LinkedIn (besluit Maarten; Threads later). Profielfoto,
+>   banners en bio's staan erop (TODO 80.3).
+> - [x] De site nagelopen via `/?team=1` (19 november). Gevonden: geen
+>   terugknop op artikelen en het dagoverzicht had geen beeld; beide
+>   opgelost (PR #53).
+> - [x] Token `github_actions_token` in de Supabase Vault (19 november; de
+>   eerste run vanuit Supabase slaagde om 13:46).
+> - [x] Back-up (19 november, 1,8 MB, 59 tabellen) met `pg_dump` (naar
+>   `~/Backups/brightnews/`, nooit in de repo); later vervangen door Supabase
+>   Pro (TODO 70).
+> - [x] Ingelogd een Premium-artikel openen (TODO 31), Mijn account en
+>   opzeggen nagelopen (19 november).
+> - [x] Search Console (19 november): sitemap ingediend, validatie gestart
+>   (TODO 78).
 > - [x] Award: het formulier ingevuld (19 november).
-> - [ ] Award: de video maken (script en stappen in `pxl-award/video-script.md`),
->   en zondag insturen met het canvas als PDF (TODO 84).
-> - [ ] Zondag: "haal de parkeerpagina weg" zeggen (PR #43, TODO 2).
 >
 > **Claude:**
-> - [ ] Beveiligingscontrole afmaken en de bevindingen in één PR (TODO 67).
-> - [ ] Lighthouse: LCP en CLS op home, artikel en archief, en verbeteren.
-> - [ ] Lanceringsbranch lokaal testen (PR #43).
-> - [x] Award: de antwoorden op het formulier (`pxl-award/formulier-antwoorden.md`).
->   De video maakt Maarten zelf (TODO 84).
-> - [ ] Na het token: de eerste run vanuit Supabase nakijken (204 in
->   `net._http_response`).
 > - [ ] Zondag: PR #43 mergen, live nalopen.
+> - [ ] De nieuwe bronnen volgen (PR #52). My Modern Met en Goodnews-magazin
+>   leverden in de testrun niets op; blijft dat zo, dan gaan ze eruit.
+> - [ ] De eerste Engelse concepten van de postfabriek nakijken (20 november,
+>   PR #57).
+> - [x] Beveiligingscontrole en de bevindingen (TODO 67, PR #45).
+> - [x] Lighthouse op home, artikel en archief; LCP van de home verbeterd
+>   (PR #47). CLS overal 0.
+> - [x] Lanceringsbranch lokaal getest (PR #43).
+> - [x] De eerste run vanuit Supabase nagekeken (204, run geslaagd).
+> - [x] Award: de antwoorden op het formulier (`pxl-award/formulier-antwoorden.md`).
+>
+> **Al gedaan op 19 november:** terugknop op elk artikel en een echte omslag
+> voor het dagoverzicht (PR #53), twee kapotte bronnen hersteld en zes nieuwe
+> erbij, 19 actief (PR #52; testrun: 23 verhalen goedgekeurd), sociale media
+> in het Engels met banners, postsjabloon en fotosjabloon voor Illustrator
+> (PR #54 en #59), de beeldkaart in de cockpit in de nieuwe stijl en ook bij
+> Facebook (PR #55 en #58), de cockpit in de v5-stijl met donkere modus
+> (PR #56), en de postfabriek schrijft voortaan in het Engels (PR #57).
 >
 > **Al gedaan op 18 november:** nieuwsrun via Supabase (PR #39), Stripe-
 > portaalmail getest (komt aan), mails van de keten getest, banners en posts
 > (PR #40), Business Model Canvas en videoscript (TODO 84), promocodes uit
 > (PR #42), lancering klaargezet (PR #43), `MISTRAL_API_KEY` was al weg, en
 > `binnenkort.html` wordt een doorstuurpagina (besluit 18 november).
+>
+> **Elke dag na de lancering (Maarten, ± 15 minuten):**
+> 1. In de cockpit (`marketing.html`) de drie concepten van de dag lezen,
+>    goedkeuren of afwijzen mét reden, de beeldkaart downloaden en plaatsen op
+>    Instagram, Facebook en LinkedIn.
+> 2. Even over de home scrollen na de nieuwsruns (rond 01:17 en 13:17): staan
+>    er nieuwe verhalen en ziet niets er raar uit?
+> 3. Reageren op berichten en reacties op de drie kanalen.
+>
+> **Elke week:** het weekrapport onderaan de cockpit, bezoekers per taal in
+> Google Analytics, Search Console, en nieuwe abonnees in Stripe. Tot Supabase
+> Pro er is ook een back-up met `pg_dump`.
+> **Vanzelf:** de nieuwsruns (2× per dag), de dagoverzichten, de
+> postconcepten, de nachtelijke controle en de mails.
 
 - [ ] **84. PXL Ambassador Award: in de finale komen en winnen.** *(Maarten en
   Claude, 2026-11-18)* Bron:
@@ -410,6 +445,8 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   **Punt 3 klaar om te plaatsen (2026-11-18):** de banners voor Facebook en
   LinkedIn, de bio's en vier posts staan in `assets/sociale-media/`
   (`teksten.md`). Plaatsen doet Maarten.
+  **Punt 3 af (2026-11-19):** profielfoto, banners en bio's staan op Facebook,
+  Instagram en LinkedIn, in het Engels (één account per kanaal).
 
 - [ ] **81. Vóór de lancering al iets op sociale media plaatsen.**
   *(Maarten, 2026-11-12)* Zodat de kanalen niet leeg zijn als de eerste
@@ -419,6 +456,8 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   ontwerp, een paar goede-nieuwsverhalen van die week (de postfabriek maakt
   daar al concepten voor, punt 30 en 45), en de lanceringspost zelf. Plaatsen
   doet Maarten met de hand zolang punt 45 (automatisch plaatsen) niet af is.
+  **Stand 2026-11-19:** post 1 staat online; posts 2 tot 4 zijn gemaakt en
+  gaan vrijdag, zaterdag en zondag online.
 
 - [ ] **67. 🚨 ZEER HOGE PRIORITEIT: is de site goed beschermd? Skill maken
   en een volledige controle met alle agents.** *Stand 2026-11-18:* de controle
