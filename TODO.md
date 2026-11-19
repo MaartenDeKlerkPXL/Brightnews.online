@@ -167,16 +167,17 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
 > - [ ] De site nalopen via `/?team=1`, telefoon en computer, licht en donker.
 > - [ ] Sociale media: profielfoto, banner en bio, en de posts uit
 >   `assets/sociale-media/teksten.md` (TODO 80.3 en 81).
-> - [ ] Award: de formuliervragen in de chat plakken, jezelf filmen (A1–A3 uit
->   `pxl-award/video-script.md`), en zondag insturen (TODO 84).
+> - [x] Award: het formulier ingevuld (19 november).
+> - [ ] Award: de video maken (script en stappen in `pxl-award/video-script.md`),
+>   en zondag insturen met het canvas als PDF (TODO 84).
 > - [ ] Zondag: "haal de parkeerpagina weg" zeggen (PR #43, TODO 2).
 >
 > **Claude:**
 > - [ ] Beveiligingscontrole afmaken en de bevindingen in één PR (TODO 67).
 > - [ ] Lighthouse: LCP en CLS op home, artikel en archief, en verbeteren.
 > - [ ] Lanceringsbranch lokaal testen (PR #43).
-> - [ ] Award: de antwoorden op het formulier; de schermopnames, de animatie
->   en de montage van de video met ondertitels (TODO 84).
+> - [x] Award: de antwoorden op het formulier (`pxl-award/formulier-antwoorden.md`).
+>   De video maakt Maarten zelf (TODO 84).
 > - [ ] Na het token: de eerste run vanuit Supabase nakijken (204 in
 >   `net._http_response`).
 > - [ ] Zondag: PR #43 mergen, live nalopen.
@@ -203,10 +204,12 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
      Strategyzer (`pxl-award/BrightNews-Business-Model-Canvas.pdf`, 2026-11-18).
   2. **Video van 1 minuut** (wat, voor wie, waarom het werkt). ✅ Script en
      shotlijst staan in `pxl-award/video-script.md` (2026-11-18). Claude schreef
-     het script en de shotlijst. Maarten filmt zichzelf (±25 s). Claude maakt
-     schermopnames, een animatie en de montage met ondertitels.
-  3. **De vragen in het formulier** (Microsoft Forms, PXL-login). Maarten
-     plakt de vragen in de chat, Claude schrijft de antwoorden.
+     het script en de shotlijst. **Maarten maakt de video zelf** (besluit
+     2026-11-19): filmen, schermopnames en montage; de stappen staan in het
+     script.
+  3. ✅ **De vragen in het formulier**: ingevuld door Maarten op 19 november
+     (antwoorden in `pxl-award/formulier-antwoorden.md`, doel 2.500 betalende
+     abonnees in drie jaar).
   4. **Inzenden** op zondag na de lancering ("vandaag live gegaan"). Gaat er
      iets mis, dan zaterdagavond.
   **Tussen 22 november en 2 december: bewijs verzamelen.**
