@@ -112,7 +112,7 @@ serve(async (req) => {
             // subscription-events eeuwig op 409 (gevonden vóór livegang).
             // Alleen een abonnement geeft Premium; een andere betaallink later
             // (een donatie, een losse aankoop) mag dat niet (TODO 67, L4).
-            if (obj.mode && obj.mode !== 'subscription') {
+            if (obj.mode !== 'subscription') {
                 console.log(`↪️ Checkout met mode=${obj.mode} — geen Premium`)
                 return new Response(JSON.stringify({ message: "Geen abonnement" }), { status: 200 })
             }

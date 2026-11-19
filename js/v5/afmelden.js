@@ -59,6 +59,9 @@
     // (ook niet of het token bestond): zo verklapt de pagina niets.
     async function meldAf() {
         const token = new URLSearchParams(window.location.search).get('t');
+        // Token uit de adresbalk, zodat het niet als referrer naar een volgende
+        // pagina (en Google Analytics) meegaat.
+        if (token) history.replaceState(null, '', window.location.pathname);
         const client = window.supabaseClient;
         if (!token || !/^[0-9a-f-]{36}$/i.test(token) || !client) return false;
         try {
