@@ -1,10 +1,18 @@
 {
- "gegenereerd": "2026-11-20T00:21:10.765Z",
+ "gegenereerd": "2026-11-20T12:21:24.759Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "17951771345607z3ri28vl",
+     "titel": "CAR-T-therapie helpt patiënten met stiff person syndrome weer lopen",
+     "teaser": "Een celtherapie die oorspronkelijk is ontwikkeld tegen kanker, blijkt ook te helpen bij stiff person syndrome, een zeldzame auto-immuunziekte waarbij het immuunsysteem het centrale zenuwstelsel aanvalt. In een vroege studie onder leiding van neurologen van Mayo Clinic kregen patiënten die eerder hulp nodig hadden om te lopen en dagelijkse taken uit te voeren, na één behandeling met CAR-T-celtherapie (mivocabtagene autoleucel)...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/nl/car-t-therapie-helpt-patienten-met-stiff-person-syndrome-weer-lopen-17951771345607z3ri28vl.html"
+    },
     {
      "id": "17951000934225jcm9yk5i",
      "titel": "Warmtepompleasing levert Franse gezinnen korting van 9.800 euro op",
@@ -14,20 +22,12 @@
      "url": "https://brightnews.online/articles/nl/warmtepompleasing-levert-franse-gezinnen-korting-van-9-800-euro-op-17951000934225jcm9yk5i.html"
     },
     {
-     "id": "17949876177052b92cynfk",
-     "titel": "April Surac bouwt NeuraSensa, kunst die zich aanpast aan de bezoeker",
-     "teaser": "De Floridaanse tiener April Surac richtte in juni 2024 NeuraSensa op, een project dat kunstinstallaties maakt die reageren op wie ervoor staat. Door haar achtergrond in de meubelwerkplaats van haar familie en haar jongere zus met autisme ontdekte ze dat de ontworpen wereld niet voor elk zenuwstelsel even goed werkt. NeuraSensa combineert stof met sensoren, zodat oppervlakken, licht en geluid...",
-     "score": 10,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/nl/april-surac-bouwt-neurasensa-kunst-die-zich-aanpast-aan-de-bezoeker-17949876177052b92cynfk.html"
-    },
-    {
-     "id": "17949875935030qs384l5l",
-     "titel": "Dakloosheid in de Verenigde Staten daalt sterkst in tien jaar",
-     "teaser": "Het aantal daklozen in de Verenigde Staten daalde in 2025 met meer dan zes procent, zo'n 49.000 mensen minder zonder woning. Het is de steilste daling in meer dan tien jaar en de tweede opeenvolgende jaarlijkse afname, na een kleinere daling in 2024. Vooral onder veteranen is de daling groot: ruim zeven procent minder dan vorig jaar en bijna 60...",
-     "score": 10,
+     "id": "1795177160841ebnlu48hv",
+     "titel": "Verzetsdaad van Ada Le Poidevin op Guernsey na 40 jaar alsnog verteld",
+     "teaser": "De moed van de Britse winkelierster Ada Le Poidevin, die tijdens de Tweede Wereldoorlog op het door de nazi's bezette Guernsey drie Britse soldaten verborg, is veertig jaar na haar dood aan het licht gekomen. Haar 79-jarige nicht Liz Walton zocht dankzij foto's, dagboeken en gegevens van Ancestry.com het verhaal uit. In 1940 verborgen Le Poidevin en haar man Walter...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/dakloosheid-in-de-verenigde-staten-daalt-sterkst-in-tien-jaar-17949875935030qs384l5l.html"
+     "url": "https://brightnews.online/articles/nl/verzetsdaad-van-ada-le-poidevin-op-guernsey-na-40-jaar-alsnog-verteld-1795177160841ebnlu48hv.html"
     },
     {
      "id": "1795133974877pzz1f9g6l",
@@ -66,6 +66,14 @@
   "en": {
    "top": [
     {
+     "id": "17951771345607z3ri28vl",
+     "titel": "CAR-T therapy helps patients with stiff person syndrome walk again",
+     "teaser": "A cell therapy originally developed against cancer is proving helpful for stiff person syndrome, a rare autoimmune disease in which the immune system attacks the central nervous system. In an early study led by neurologists at Mayo Clinic, patients who previously needed assistance to walk and perform daily tasks regained enough function after a single CAR-T cell therapy treatment (mivocabtagene...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/en/car-t-therapy-helps-patients-with-stiff-person-syndrome-walk-again-17951771345607z3ri28vl.html"
+    },
+    {
      "id": "17951000934225jcm9yk5i",
      "titel": "Heat pump leasing saves French families €9,800",
      "teaser": "From November 17, 2026, lower-income French households can lease a heat pump with an average subsidy of €9,800, financed through the CEE scheme. The decree, published on November 10 in the Journal officiel, bundles installation, maintenance and electricity consumption into a single monthly payment, comparable to the old heating bill. After two to three years, the unit is paid off...",
@@ -74,20 +82,12 @@
      "url": "https://brightnews.online/articles/en/heat-pump-leasing-saves-french-families-9-800-17951000934225jcm9yk5i.html"
     },
     {
-     "id": "17949876177052b92cynfk",
-     "titel": "April Surac builds NeuraSensa, art that adapts to the visitor",
-     "teaser": "Florida teenager April Surac founded NeuraSensa in June 2024, a project that creates art installations responding to who stands before them. Through her background in her family's furniture workshop and her younger sister's autism, she discovered that the designed world doesn't work equally well for every nervous system. NeuraSensa combines fabric with sensors, so surfaces, light and sound change under...",
-     "score": 10,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/en/april-surac-builds-neurasensa-art-that-adapts-to-the-visitor-17949876177052b92cynfk.html"
-    },
-    {
-     "id": "17949875935030qs384l5l",
-     "titel": "Homelessness in the United States falls most sharply in a decade",
-     "teaser": "The number of homeless people in the United States fell by more than six percent in 2025, some 49,000 fewer people without housing. It is the steepest decline in more than a decade and the second consecutive annual decrease, following a smaller drop in 2024. The decline is particularly pronounced among veterans: more than seven percent fewer than the previous...",
-     "score": 10,
+     "id": "1795177160841ebnlu48hv",
+     "titel": "British shopkeeper Ada Le Poidevin's wartime resistance act on Guernsey revealed 40 years later",
+     "teaser": "The courage of British shopkeeper Ada Le Poidevin, who hid three British soldiers on Nazi-occupied Guernsey during the Second World War, has come to light forty years after her death. Her 79-year-old niece Liz Walton uncovered the story thanks to photographs, diaries and data from Ancestry.com. In 1940, Le Poidevin and her husband Walter Bourgaize sheltered three stranded British servicemen...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/homelessness-in-the-united-states-falls-most-sharply-in-a-decade-17949875935030qs384l5l.html"
+     "url": "https://brightnews.online/articles/en/british-shopkeeper-ada-le-poidevin-s-wartime-resistance-act-on-guernsey-revealed-1795177160841ebnlu48hv.html"
     },
     {
      "id": "1795133974877pzz1f9g6l",
@@ -126,6 +126,14 @@
   "de": {
    "top": [
     {
+     "id": "17951771345607z3ri28vl",
+     "titel": "CAR-T-Therapie hilft Patienten mit Stiff-Person-Syndrom wieder zu laufen",
+     "teaser": "Eine Zelltherapie, die ursprünglich gegen Krebs entwickelt wurde, erweist sich auch als hilfreich bei Stiff-Person-Syndrom, einer seltenen Autoimmunerkrankung, bei der das Immunsystem das Zentralnervensystem angreift. In einer frühen Studie unter der Leitung von Neurologen der Mayo Clinic erhielten Patienten, die zuvor Hilfe beim Gehen und bei alltäglichen Aufgaben benötigten, nach einer Behandlung mit CAR-T-Zelltherapie (mivocabtagene autoleucel) genug Funktion zurück, um...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/de/car-t-therapie-hilft-patienten-mit-stiff-person-syndrom-wieder-zu-laufen-17951771345607z3ri28vl.html"
+    },
+    {
      "id": "17951000934225jcm9yk5i",
      "titel": "Wärmepumpenleasen spart französischen Familien 9.800 Euro",
      "teaser": "Ab dem 17. November 2026 können einkommensschwache französische Haushalte eine Wärmepumpe mit einer durchschnittlichen Förderung von 9.800 Euro leasen, finanziert über das CEE-Programm. Das am 10. November im Journal officiel veröffentlichte Dekret fasst Installation, Wartung und Stromverbrauch in einer monatlichen Rate zusammen, vergleichbar mit der früheren Heizrechnung. Nach zwei bis drei Jahren ist das Gerät abbezahlt und es bleibt nur...",
@@ -134,20 +142,12 @@
      "url": "https://brightnews.online/articles/de/warmepumpenleasen-spart-franzosischen-familien-9-800-euro-17951000934225jcm9yk5i.html"
     },
     {
-     "id": "17949876177052b92cynfk",
-     "titel": "April Surac entwickelt NeuraSensa, Kunst die sich dem Besucher anpasst",
-     "teaser": "Die Teenagerin April Surac aus Florida gründete im Juni 2024 NeuraSensa, ein Projekt, das Kunstinstallationen schafft, die auf den Betrachter reagieren. Durch ihren Hintergrund in der Möbelwerkstatt ihrer Familie und ihre jüngere Schwester mit Autismus entdeckte sie, dass die gestaltete Welt nicht für jedes Nervensystem gleich gut funktioniert. NeuraSensa kombiniert Stoff mit Sensoren, sodass Oberflächen, Licht und Ton unter dem...",
-     "score": 10,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/de/april-surac-entwickelt-neurasensa-kunst-die-sich-dem-besucher-anpasst-17949876177052b92cynfk.html"
-    },
-    {
-     "id": "17949875935030qs384l5l",
-     "titel": "Obdachlosigkeit in den USA sinkt stärker als seit zehn Jahren",
-     "teaser": "Die Zahl der Obdachlosen in den Vereinigten Staaten sank 2025 um mehr als sechs Prozent, etwa 49.000 Menschen weniger ohne Wohnung. Es ist der steilste Rückgang in mehr als zehn Jahren und die zweite aufeinanderfolgende jährliche Abnahme, nach einem kleineren Rückgang im Jahr 2024. Besonders unter Veteranen ist der Rückgang groß: mehr als sieben Prozent weniger als im Vorjahr und...",
-     "score": 10,
+     "id": "1795177160841ebnlu48hv",
+     "titel": "Widerstandstat von Ada Le Poidevin auf Guernsey nach 40 Jahren enthüllt",
+     "teaser": "Der Mut der britischen Ladenbesitzerin Ada Le Poidevin, die während des Zweiten Weltkriegs auf dem von den Nazis besetzten Guernsey drei britische Soldaten versteckte, ist vierzig Jahre nach ihrem Tod ans Licht gekommen. Ihre 79-jährige Nichte Liz Walton rekonstruierte die Geschichte dank Fotos, Tagebüchern und Daten von Ancestry.com. 1940 versteckten Le Poidevin und ihr Mann Walter Bourgaize drei gestrandete britische...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/obdachlosigkeit-in-den-usa-sinkt-starker-als-seit-zehn-jahren-17949875935030qs384l5l.html"
+     "url": "https://brightnews.online/articles/de/widerstandstat-von-ada-le-poidevin-auf-guernsey-nach-40-jahren-enthullt-1795177160841ebnlu48hv.html"
     },
     {
      "id": "1795133974877pzz1f9g6l",
@@ -186,6 +186,14 @@
   "fr": {
    "top": [
     {
+     "id": "17951771345607z3ri28vl",
+     "titel": "La thérapie CAR-T aide les patients atteints du syndrome de la personne raide à remarcher",
+     "teaser": "Une thérapie cellulaire initialement développée contre le cancer s'avère également efficace contre le syndrome de la personne raide, une maladie auto-immune rare au cours de laquelle le système immunitaire attaque le système nerveux central. Dans une étude précoce dirigée par des neurologues de Mayo Clinic, des patients qui avaient auparavant besoin d'aide pour marcher et accomplir les tâches quotidiennes ont...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/fr/la-therapie-car-t-aide-les-patients-atteints-du-syndrome-de-la-personne-raide-a-17951771345607z3ri28vl.html"
+    },
+    {
      "id": "17951000934225jcm9yk5i",
      "titel": "La location de pompes à chaleur offre une réduction de 9 800 euros aux familles françaises",
      "teaser": "À partir du 17 novembre 2026, les ménages français aux revenus modestes pourront louer une pompe à chaleur avec une prime moyenne de 9 800 euros, financée via le dispositif CEE. Le décret, publié le 10 novembre au Journal officiel, regroupe l'installation, l'entretien et la consommation électrique en une seule mensualité, comparable à l'ancienne facture de chauffage. Après deux à...",
@@ -194,20 +202,12 @@
      "url": "https://brightnews.online/articles/fr/la-location-de-pompes-a-chaleur-offre-une-reduction-de-9-800-euros-aux-familles-17951000934225jcm9yk5i.html"
     },
     {
-     "id": "17949876177052b92cynfk",
-     "titel": "April Surac crée NeuraSensa, un art qui s'adapte au visiteur",
-     "teaser": "L'adolescente de Floride April Surac a fondé NeuraSensa en juin 2024, un projet qui crée des installations artistiques réagissant à ceux qui les observent. Grâce à son expérience dans l'atelier de menuiserie familial et à sa jeune sœur autiste, elle a découvert que le monde conçu ne fonctionne pas aussi bien pour chaque système nerveux. NeuraSensa combine le tissu avec...",
-     "score": 10,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/fr/april-surac-cree-neurasensa-un-art-qui-s-adapte-au-visiteur-17949876177052b92cynfk.html"
-    },
-    {
-     "id": "17949875935030qs384l5l",
-     "titel": "L'itinérance aux États-Unis baisse le plus en dix ans",
-     "teaser": "Le nombre de sans-abri aux États-Unis a diminué de plus de six pour cent en 2025, soit quelque 49 000 personnes de moins sans logement. C'est la baisse la plus importante en plus de dix ans et la deuxième diminution annuelle consécutive, après une baisse plus modeste en 2024. La diminution est particulièrement importante chez les vétérans : plus de...",
-     "score": 10,
+     "id": "1795177160841ebnlu48hv",
+     "titel": "L'acte de résistance d'Ada Le Poidevin à Guernesey révélé 40 ans après sa mort",
+     "teaser": "Le courage de la commerçante britannique Ada Le Poidevin, qui a caché trois soldats britanniques à Guernesey occupée par les nazis pendant la Seconde Guerre mondiale, a été mis au jour quarante ans après son décès. Sa nièce, Liz Walton, âgée de 79 ans, a reconstitué l'histoire grâce à des photographies, des journaux intimes et des données d'Ancestry.com. En 1940,...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/l-itinerance-aux-etats-unis-baisse-le-plus-en-dix-ans-17949875935030qs384l5l.html"
+     "url": "https://brightnews.online/articles/fr/l-acte-de-resistance-d-ada-le-poidevin-a-guernesey-revele-40-ans-apres-sa-mort-1795177160841ebnlu48hv.html"
     },
     {
      "id": "1795133974877pzz1f9g6l",
@@ -246,6 +246,14 @@
   "es": {
    "top": [
     {
+     "id": "17951771345607z3ri28vl",
+     "titel": "La terapia CAR-T ayuda a pacientes con síndrome de persona rígida a volver a caminar",
+     "teaser": "Una terapia celular desarrollada originalmente contra el cáncer resulta ser también efectiva para el síndrome de persona rígida, una enfermedad autoinmune rara en la que el sistema inmunológico ataca el sistema nervioso central. En un estudio preliminar dirigido por neurólogos de Mayo Clinic, pacientes que anteriormente necesitaban ayuda para caminar y realizar tareas cotidianas recuperaron suficiente función tras un único...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/es/la-terapia-car-t-ayuda-a-pacientes-con-sindrome-de-persona-rigida-a-volver-a-cam-17951771345607z3ri28vl.html"
+    },
+    {
      "id": "17951000934225jcm9yk5i",
      "titel": "El arrendamiento de bombas de calor ofrece descuentos de 9.800 euros a familias francesas",
      "teaser": "A partir del 17 de noviembre de 2026, los hogares franceses con menos recursos podrán arrendar una bomba de calor con una prima media de 9.800 euros, financiada a través del dispositivo CEE. El decreto, publicado el 10 de noviembre en el Journal officiel, agrupa la instalación, el mantenimiento y el consumo de electricidad en una única cuota mensual, comparable...",
@@ -254,20 +262,12 @@
      "url": "https://brightnews.online/articles/es/el-arrendamiento-de-bombas-de-calor-ofrece-descuentos-de-9-800-euros-a-familias-17951000934225jcm9yk5i.html"
     },
     {
-     "id": "17949876177052b92cynfk",
-     "titel": "April Surac crea NeuraSensa, arte que se adapta al visitante",
-     "teaser": "La adolescente de Florida April Surac fundó NeuraSensa en junio de 2024, un proyecto que crea instalaciones artísticas que responden a quién está frente a ellas. A través de su experiencia en el taller de muebles de su familia y de su hermana menor con autismo, descubrió que el mundo diseñado no funciona igual para cada sistema nervioso. NeuraSensa combina...",
-     "score": 10,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/es/april-surac-crea-neurasensa-arte-que-se-adapta-al-visitante-17949876177052b92cynfk.html"
-    },
-    {
-     "id": "17949875935030qs384l5l",
-     "titel": "La falta de vivienda en Estados Unidos cae al ritmo más rápido en diez años",
-     "teaser": "El número de personas sin hogar en Estados Unidos disminuyó en 2025 en más del seis por ciento, unos 49.000 personas menos sin vivienda. Es la caída más pronunciada en más de diez años y la segunda disminución anual consecutiva, tras una reducción menor en 2024. Especialmente entre los veteranos la caída es considerable: más del siete por ciento menos...",
-     "score": 10,
+     "id": "1795177160841ebnlu48hv",
+     "titel": "El acto de resistencia de Ada Le Poidevin en Guernsey revelado 40 años después",
+     "teaser": "El valor de la comerciante británica Ada Le Poidevin, quien durante la Segunda Guerra Mundial escondió a tres soldados británicos en Guernsey, ocupada por los nazis, ha salido a la luz cuarenta años después de su muerte. Su sobrina de 79 años, Liz Walton, desenterró la historia gracias a fotografías, diarios e información de Ancestry.com. En 1940, Le Poidevin y...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/la-falta-de-vivienda-en-estados-unidos-cae-al-ritmo-mas-rapido-en-diez-anos-17949875935030qs384l5l.html"
+     "url": "https://brightnews.online/articles/es/el-acto-de-resistencia-de-ada-le-poidevin-en-guernsey-revelado-40-anos-despues-1795177160841ebnlu48hv.html"
     },
     {
      "id": "1795133974877pzz1f9g6l",
