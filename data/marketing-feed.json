@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-11-19T14:56:38.477Z",
+ "gegenereerd": "2026-11-20T00:21:10.765Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -30,23 +30,30 @@
      "url": "https://brightnews.online/articles/nl/dakloosheid-in-de-verenigde-staten-daalt-sterkst-in-tien-jaar-17949875935030qs384l5l.html"
     },
     {
-     "id": "1795100193545l88yesrjj",
-     "titel": "Chester Zoo redt bedreigde pauwfazantkuikens met pleegmoeder en rubberen handschoen",
-     "teaser": "Chester Zoo was dit jaar de enige dierentuin in Europa die een Maleise pauwfazant succesvol liet uitbroeden. Van deze bedreigde soort worden slechts 15 dieren in gevangenschap in Europese dierentuinen grootgebracht. Toen een jonge moeder haar eerste ei verliet, legden verzorgers het bij een bronskleurige pauwfazant, die als pleegmoeder optrad. Een tweede ei werd wel door de eigen moeder uitgebroed,...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/chester-zoo-redt-bedreigde-pauwfazantkuikens-met-pleegmoeder-en-rubberen-handsch-1795100193545l88yesrjj.html"
-    },
-    {
-     "id": "1795100168904e22zdpi5t",
-     "titel": "Bloemiste in Cuincy legt onverkochte bloemen op vergeten graven",
-     "teaser": "Een bloemenwinkel in Cuincy gooit haar onverkochte bloemen van Allerheiligen niet weg. In plaats daarvan brengt de commerçante ze naar het kerkhof, waar ze de bloemen legt op graven die vergeten lijken. Het solidaire gebaar ontroert veel mensen op internet.",
+     "id": "1795133974877pzz1f9g6l",
+     "titel": "Allison Raskin schrijft romcom met twee hoofdpersonen met OCD",
+     "teaser": "Schrijver en komiek Allison Raskin brengt met 'Compulsively Yours' haar zesde boek uit, waarin beide hoofdpersonen - Libi Newman en Nate Keller - leven met OCD. Ze ontmoeten elkaar via een steungroep en worden door hun therapeut aangemoedigd op elkaar te steunen tijdens een kerstreis naar Mexico. Raskin, zelf gediagnosticeerd met OCD op haar vierde, put uit eigen ervaring en...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/bloemiste-in-cuincy-legt-onverkochte-bloemen-op-vergeten-graven-1795100168904e22zdpi5t.html"
+     "url": "https://brightnews.online/articles/nl/allison-raskin-schrijft-romcom-met-twee-hoofdpersonen-met-ocd-1795133974877pzz1f9g6l.html"
+    },
+    {
+     "id": "1795133951432pjp37x70g",
+     "titel": "Jonge oehoe overleeft 70 mijl vastgeklemd in vrachtwagen in Pennsylvania",
+     "teaser": "Een jonge Grote Hoornuil werd in Lancaster County, Pennsylvania, geraakt door de truck van chauffeur Ashley Moffitt terwijl ze 65 mijl per uur reed. De vogel raakte vastgeklemd in de luchtgeleider van de vrachtwagen en bleef daar zitten tot Moffitt 70 mijl verderop stopte. Medewerkers van Old Dominion Freight Line in Carlisle bevrijdden de uil, die niet kon vliegen, en...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/jonge-oehoe-overleeft-70-mijl-vastgeklemd-in-vrachtwagen-in-pennsylvania-1795133951432pjp37x70g.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261119-dag",
+     "titel": "Schone energie, geredde kuikens en bloemen voor vergeten graven",
+     "categorie": null,
+     "dag": "2026-11-19",
+     "url": "https://brightnews.online/articles/nl/schone-energie-geredde-kuikens-en-bloemen-voor-vergeten-graven-dg-20261119-dag.html"
+    },
     {
      "id": "dg-20261118-dag",
      "titel": "Zorgzaamheid wint terrein, van de Bronx tot Algerije",
@@ -83,23 +90,30 @@
      "url": "https://brightnews.online/articles/en/homelessness-in-the-united-states-falls-most-sharply-in-a-decade-17949875935030qs384l5l.html"
     },
     {
-     "id": "1795100193545l88yesrjj",
-     "titel": "Chester Zoo saves endangered Malaysian peacock pheasant chicks with foster mother and rubber glove",
-     "teaser": "Chester Zoo was the only zoo in Europe this year to successfully hatch a Malaysian peacock pheasant. Only 15 of these endangered birds are being raised in captivity across European zoos. When a young mother abandoned her first egg, keepers placed it with a bronze-coloured peacock pheasant, who took on the role of foster mother. A second egg was hatched...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/chester-zoo-saves-endangered-malaysian-peacock-pheasant-chicks-with-foster-mothe-1795100193545l88yesrjj.html"
-    },
-    {
-     "id": "1795100168904e22zdpi5t",
-     "titel": "Florist in Cuincy places unsold flowers on forgotten graves",
-     "teaser": "A flower shop in Cuincy doesn't throw away its unsold flowers from All Saints' Day. Instead, the owner takes them to the cemetery, where she places them on graves that appear to have been forgotten. The gesture of solidarity has moved many people online.",
+     "id": "1795133974877pzz1f9g6l",
+     "titel": "Allison Raskin writes romcom with two protagonists living with OCD",
+     "teaser": "Writer and comedian Allison Raskin is releasing her sixth book, 'Compulsively Yours', featuring two main characters — Libi Newman and Nate Keller — who both live with OCD. They meet through a support group and are encouraged by their therapist to support each other during a Christmas trip to Mexico. Raskin, herself diagnosed with OCD at age four, draws on...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/florist-in-cuincy-places-unsold-flowers-on-forgotten-graves-1795100168904e22zdpi5t.html"
+     "url": "https://brightnews.online/articles/en/allison-raskin-writes-romcom-with-two-protagonists-living-with-ocd-1795133974877pzz1f9g6l.html"
+    },
+    {
+     "id": "1795133951432pjp37x70g",
+     "titel": "Young great horned owl survives 70 miles trapped in truck in Pennsylvania",
+     "teaser": "A young great horned owl was struck by the truck of driver Ashley Moffitt while she was traveling 65 miles per hour in Lancaster County, Pennsylvania. The bird became wedged in the truck's air deflector and remained there until Moffitt stopped 70 miles down the road. Employees at Old Dominion Freight Line in Carlisle freed the owl, which was unable...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/young-great-horned-owl-survives-70-miles-trapped-in-truck-in-pennsylvania-1795133951432pjp37x70g.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261119-dag",
+     "titel": "Clean energy, rescued chicks and flowers for forgotten graves",
+     "categorie": null,
+     "dag": "2026-11-19",
+     "url": "https://brightnews.online/articles/en/clean-energy-rescued-chicks-and-flowers-for-forgotten-graves-dg-20261119-dag.html"
+    },
     {
      "id": "dg-20261118-dag",
      "titel": "Compassion gains ground, from the Bronx to Algeria",
@@ -136,23 +150,30 @@
      "url": "https://brightnews.online/articles/de/obdachlosigkeit-in-den-usa-sinkt-starker-als-seit-zehn-jahren-17949875935030qs384l5l.html"
     },
     {
-     "id": "1795100193545l88yesrjj",
-     "titel": "Chester Zoo rettet bedrohte Malaysische Pauwfasanküken mit Pflegemutter und Gummihandschuh",
-     "teaser": "Chester Zoo war in diesem Jahr der einzige Zoo in Europa, der einen Malaysischen Pauwfasanen erfolgreich ausbrüten ließ. Von dieser bedrohten Art werden in europäischen Zoos nur 15 Tiere in Gefangenschaft großgezogen. Als eine junge Mutter ihr erstes Ei verließ, legten Pfleger es zu einem bronzefarbenen Pauwfasanen, der als Pflegemutter fungierte. Ein zweites Ei wurde zwar von der eigenen Mutter...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/chester-zoo-rettet-bedrohte-malaysische-pauwfasankuken-mit-pflegemutter-und-gumm-1795100193545l88yesrjj.html"
-    },
-    {
-     "id": "1795100168904e22zdpi5t",
-     "titel": "Floristin in Cuincy legt unverkaufte Blumen auf vergessene Gräber",
-     "teaser": "Ein Blumengeschäft in Cuincy wirft seine unverkauften Blumen von Allerheiligen nicht weg. Stattdessen bringt die Geschäftsinhaberin sie auf den Friedhof, wo sie die Blumen auf Gräber legt, die vergessen zu sein scheinen. Die solidarische Geste rührt viele Menschen im Internet.",
+     "id": "1795133974877pzz1f9g6l",
+     "titel": "Allison Raskin schreibt Romcom mit zwei Hauptfiguren mit OCD",
+     "teaser": "Die Schriftstellerin und Komikerin Allison Raskin bringt mit „Compulsively Yours\" ihr sechstes Buch heraus, in dem beide Hauptfiguren – Libi Newman und Nate Keller – mit OCD leben. Sie lernen sich über eine Selbsthilfegruppe kennen und werden von ihrer Therapeutin ermutigt, sich während einer Weihnachtsreise nach Mexiko gegenseitig zu unterstützen. Raskin, selbst mit vier Jahren mit OCD diagnostiziert, schöpft aus...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/floristin-in-cuincy-legt-unverkaufte-blumen-auf-vergessene-graber-1795100168904e22zdpi5t.html"
+     "url": "https://brightnews.online/articles/de/allison-raskin-schreibt-romcom-mit-zwei-hauptfiguren-mit-ocd-1795133974877pzz1f9g6l.html"
+    },
+    {
+     "id": "1795133951432pjp37x70g",
+     "titel": "Junger Uhu überlebt 70 Meilen eingeklemmt in Lastwagen in Pennsylvania",
+     "teaser": "Ein junger Uhu wurde in Lancaster County, Pennsylvania, von dem Lastwagen der Fahrerin Ashley Moffitt erfasst, während sie 65 Meilen pro Stunde fuhr. Der Vogel geriet in den Luftkanal des Lastwagens und blieb dort stecken, bis Moffitt 70 Meilen weiter entfernt anhielt. Mitarbeiter der Old Dominion Freight Line in Carlisle befreiten den flugunfähigen Uhu und riefen das Raven Ridge Wildlife...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/junger-uhu-uberlebt-70-meilen-eingeklemmt-in-lastwagen-in-pennsylvania-1795133951432pjp37x70g.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261119-dag",
+     "titel": "Saubere Energie, gerettete Küken und Blumen für vergessene Gräber",
+     "categorie": null,
+     "dag": "2026-11-19",
+     "url": "https://brightnews.online/articles/de/saubere-energie-gerettete-kuken-und-blumen-fur-vergessene-graber-dg-20261119-dag.html"
+    },
     {
      "id": "dg-20261118-dag",
      "titel": "Fürsorge gewinnt an Boden – von der Bronx bis Algerien",
@@ -189,23 +210,30 @@
      "url": "https://brightnews.online/articles/fr/l-itinerance-aux-etats-unis-baisse-le-plus-en-dix-ans-17949875935030qs384l5l.html"
     },
     {
-     "id": "1795100193545l88yesrjj",
-     "titel": "Chester Zoo sauve des poussins de faisan-paon menacés grâce à une mère adoptive et un gant en caoutchouc",
-     "teaser": "Chester Zoo est le seul zoo d'Europe à avoir réussi cette année à faire couver un faisan-paon malais. Seulement 15 individus de cette espèce menacée sont élevés en captivité dans les zoos européens. Quand une jeune mère a abandonné son premier œuf, les soigneurs l'ont placé sous un faisan-paon couleur bronze, qui a joué le rôle de mère adoptive. Un...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/chester-zoo-sauve-des-poussins-de-faisan-paon-menaces-grace-a-une-mere-adoptive-1795100193545l88yesrjj.html"
-    },
-    {
-     "id": "1795100168904e22zdpi5t",
-     "titel": "Une fleuriste à Cuincy dépose des fleurs invendues sur des tombes oubliées",
-     "teaser": "Une boutique de fleurs à Cuincy ne jette pas ses fleurs invendues de la Toussaint. Au lieu de cela, la commerçante les apporte au cimetière, où elle les dépose sur des tombes qui semblent oubliées. Ce geste solidaire émeut beaucoup de personnes sur internet.",
+     "id": "1795133974877pzz1f9g6l",
+     "titel": "Allison Raskin écrit une romcom avec deux personnages atteints de TOC",
+     "teaser": "L'écrivaine et humoriste Allison Raskin publie son sixième livre, « Compulsively Yours », dans lequel les deux protagonistes - Libi Newman et Nate Keller - vivent avec le TOC. Ils se rencontrent lors d'un groupe de soutien et sont encouragés par leur thérapeute à s'entraider lors d'un voyage de Noël au Mexique. Raskin, elle-même diagnostiquée avec le TOC à l'âge...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/une-fleuriste-a-cuincy-depose-des-fleurs-invendues-sur-des-tombes-oubliees-1795100168904e22zdpi5t.html"
+     "url": "https://brightnews.online/articles/fr/allison-raskin-ecrit-une-romcom-avec-deux-personnages-atteints-de-toc-1795133974877pzz1f9g6l.html"
+    },
+    {
+     "id": "1795133951432pjp37x70g",
+     "titel": "Jeune grand-duc survit 70 miles coincé dans un camion en Pennsylvanie",
+     "teaser": "Un jeune Grand-Duc d'Amérique a été heurté par le camion de la chauffeure Ashley Moffitt dans le comté de Lancaster, en Pennsylvanie, alors qu'elle roulait à 65 miles par heure. L'oiseau s'est coincé dans la prise d'air du camion et y est resté jusqu'à ce que Moffitt s'arrête 70 miles plus loin. Des employés de Old Dominion Freight Line à...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/jeune-grand-duc-survit-70-miles-coince-dans-un-camion-en-pennsylvanie-1795133951432pjp37x70g.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261119-dag",
+     "titel": "Énergie propre, poussins sauvés et fleurs sur les tombes oubliées",
+     "categorie": null,
+     "dag": "2026-11-19",
+     "url": "https://brightnews.online/articles/fr/energie-propre-poussins-sauves-et-fleurs-sur-les-tombes-oubliees-dg-20261119-dag.html"
+    },
     {
      "id": "dg-20261118-dag",
      "titel": "La bienveillance gagne du terrain, du Bronx à l'Algérie",
@@ -242,23 +270,30 @@
      "url": "https://brightnews.online/articles/es/la-falta-de-vivienda-en-estados-unidos-cae-al-ritmo-mas-rapido-en-diez-anos-17949875935030qs384l5l.html"
     },
     {
-     "id": "1795100193545l88yesrjj",
-     "titel": "Chester Zoo salva polluelos de faisán pavo en peligro con madre adoptiva y guante de goma",
-     "teaser": "Chester Zoo fue este año el único zoológico de Europa que logró empollar con éxito un faisán pavo malayo. De esta especie en peligro solo se crían 15 animales en cautividad en zoológicos europeos. Cuando una madre joven abandonó su primer huevo, los cuidadores lo colocaron con un faisán pavo de color bronce, que actuó como madre adoptiva. Un segundo...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/chester-zoo-salva-polluelos-de-faisan-pavo-en-peligro-con-madre-adoptiva-y-guant-1795100193545l88yesrjj.html"
-    },
-    {
-     "id": "1795100168904e22zdpi5t",
-     "titel": "Florista en Cuincy coloca flores sin vender en tumbas olvidadas",
-     "teaser": "Una floristería en Cuincy no tira sus flores sin vender del Día de Difuntos. En su lugar, la comerciante las lleva al cementerio, donde las coloca en tumbas que parecen olvidadas. El gesto solidario conmueve a muchas personas en internet.",
+     "id": "1795133974877pzz1f9g6l",
+     "titel": "Allison Raskin escribe una romcom con dos protagonistas con TOC",
+     "teaser": "La escritora y comediante Allison Raskin publica su sexto libro, «Compulsively Yours», en el que ambos protagonistas —Libi Newman y Nate Keller— viven con TOC. Se conocen a través de un grupo de apoyo y su terapeuta los anima a apoyarse mutuamente durante un viaje navideño a México. Raskin, diagnosticada con TOC a los cuatro años, se inspira en su...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/florista-en-cuincy-coloca-flores-sin-vender-en-tumbas-olvidadas-1795100168904e22zdpi5t.html"
+     "url": "https://brightnews.online/articles/es/allison-raskin-escribe-una-romcom-con-dos-protagonistas-con-toc-1795133974877pzz1f9g6l.html"
+    },
+    {
+     "id": "1795133951432pjp37x70g",
+     "titel": "Joven búho cornudo sobrevive 70 millas atrapado en camión en Pennsylvania",
+     "teaser": "Un joven Búho Cornudo fue golpeado por el camión de la conductora Ashley Moffitt en el condado de Lancaster, Pennsylvania, mientras viajaba a 65 millas por hora. El ave quedó atrapada en la toma de aire del camión y permaneció allí hasta que Moffitt se detuvo 70 millas más adelante. Los empleados de Old Dominion Freight Line en Carlisle liberaron...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/joven-buho-cornudo-sobrevive-70-millas-atrapado-en-camion-en-pennsylvania-1795133951432pjp37x70g.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261119-dag",
+     "titel": "Energía limpia, pollitos salvados y flores para tumbas olvidadas",
+     "categorie": null,
+     "dag": "2026-11-19",
+     "url": "https://brightnews.online/articles/es/energia-limpia-pollitos-salvados-y-flores-para-tumbas-olvidadas-dg-20261119-dag.html"
+    },
     {
      "id": "dg-20261118-dag",
      "titel": "La solidaridad avanza, desde el Bronx hasta Argelia",

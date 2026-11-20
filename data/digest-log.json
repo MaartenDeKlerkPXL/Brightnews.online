@@ -1,5 +1,30 @@
 [
   {
+    "datum": "2026-11-20T00:21:08.222Z",
+    "dag": "2026-11-19",
+    "categorie": null,
+    "ids": [
+      "17951000934225jcm9yk5i",
+      "1795100193545l88yesrjj",
+      "1795100168904e22zdpi5t",
+      "17951000675019oyvqdyxi",
+      "17951000397416yc2fjq6b",
+      "1795100013881yvlip9fet",
+      "17950999881791z52gfao3",
+      "1795099959660drs7m3yzm"
+    ],
+    "prompthash": "3189e6d0d48a",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 15648,
+    "woorden": {
+      "nl": 334,
+      "en": 348,
+      "de": 323,
+      "fr": 396,
+      "es": 394
+    }
+  },
+  {
     "datum": "2026-11-19T08:01:17.801Z",
     "dag": "2026-11-18",
     "categorie": null,
@@ -1248,26 +1273,6 @@
       "de": 382,
       "fr": 464,
       "es": 429
-    }
-  },
-  {
-    "datum": "2026-09-16T16:47:06.218Z",
-    "dag": "2026-09-15",
-    "categorie": "Science",
-    "ids": [
-      "1789577102747ecq0t1wdv",
-      "1789576831859ulekx38g9",
-      "1789447008594levnblqrg"
-    ],
-    "prompthash": "fd561df11314",
-    "model": "moeder+vertaal (anthropic)",
-    "tokens": 13087,
-    "woorden": {
-      "nl": 404,
-      "en": 406,
-      "de": 384,
-      "fr": 469,
-      "es": 452
     }
   }
 ]
