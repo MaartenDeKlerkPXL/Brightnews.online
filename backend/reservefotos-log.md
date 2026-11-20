@@ -186,3 +186,21 @@ Reservefoto's op 2026-11-19 — 150 artikelen op de homepage
 Totaal: 29 nodig, 43 beschikbaar.
 Geleend uit een andere categorie: 4 foto's. Knelt bij Lifestyle (2), onbekend (2).
 Aanvullen in `assets/fallback/` als `<categorie>-<nummer>.jpg`, en daarna het getal in `RESERVE_PER_CATEGORIE` in `index.js` mee ophogen.
+
+### 2026-11-20
+
+Reservefoto's op 2026-11-20 — 150 artikelen op de homepage
+
+| Categorie | Beschikbaar | Nodig | Tekort |
+|---|---|---|---|
+| Environment | 10 | 6 | — |
+| Finance | 4 | 0 | — |
+| Health | 5 | 1 | — |
+| Lifestyle | 9 | 10 | 1 |
+| Science | 11 | 3 | — |
+| Tech | 4 | 0 | — |
+| onbekend | 0 | 3 | 3 |
+
+Totaal: 23 nodig, 43 beschikbaar.
+Geleend uit een andere categorie: 4 foto's. Knelt bij onbekend (3).
+Aanvullen in `assets/fallback/` als `<categorie>-<nummer>.jpg`, en daarna het getal in `RESERVE_PER_CATEGORIE` in `index.js` mee ophogen.

@@ -1678,3 +1678,55 @@ Beoordeeld: 3 artikelen, gepubliceerd tussen 2026-11-19 07:59 en 2026-11-19 08:0
 Niet bright-waardig: 0. Twijfel: 0.
 
 Alle drie de artikelen voldoen aan de maatstaf: een reddingsactie voor een zeldzame plant, een persoonlijk verhaal over kinderen die voor hun moeder een trap bouwen, en herstel van de blauwe vinvispopulatie na het einde van de walvisvangst. Stuk voor stuk gaat de kern over herstel, zorg of gemeenschapszin, positief geformuleerd en maatschappelijk relevant of herkenbaar. Geen van de afwijscategorieën is van toepassing.
+
+### 2026-11-20, 10:36 Europe/Amsterdam
+
+Beoordeeld: 29 artikelen, gepubliceerd tussen 2026-11-19 13:47 en 2026-11-20 00:19.
+Niet bright-waardig: 5. Twijfel: 4.
+
+#### National Geographic kiest mooiste foto's van 2026
+- **Gepubliceerd:** 2026-11-19 14:50 · Lifestyle · Upworthy.com
+- **Waar het over gaat:** Een jaaroverzicht van 25 foto's die National Geographic uit meer dan een miljoen inzendingen koos, van een jagende dwergwalvis tot de 9/11 Tribute in Light.
+- **Waarom dit niet goed genoeg is:** Dit bundelt meerdere losse, niet-verwante onderwerpen in één artikel — precies het kenmerk van een verzameleditie uit de afwijslijst. Het is een jaaroverzicht van andermans redactionele selectie, geen eigen verhaal, en BrightNews maakt daar bewust geen uitzondering voor omdat het eigen dagoverzichten maakt.
+
+#### Psychologen verklaren 6 eigenschappen van vriendschappen die 20 jaar duren
+- **Gepubliceerd:** 2026-11-19 14:50 · Lifestyle · Upworthy.com
+- **Waar het over gaat:** Op basis van een studie uit 2019 somt het artikel zes gedeelde kenmerken op van vriendschappen die decennia standhouden.
+- **Waarom dit niet goed genoeg is:** Dit is een listicle in de klassieke vorm — een opsomming van eigenschappen zonder een concreet, afgebakend verhaal. De afwijslijst sluit dit type zelfhulp-opsomming expliciet uit, hoe nuttig het ook is.
+
+#### Elf bomen en struiken mogen dit najaar niet gesnoeid worden
+- **Gepubliceerd:** 2026-11-19 14:55 · Lifestyle · Positivr.fr
+- **Waar het over gaat:** Een overzicht van elf boom- en struiksoorten die beter niet in het najaar gesnoeid kunnen worden, met uitleg waarom.
+- **Waarom dit niet goed genoeg is:** Tuinadvies in listicle-vorm ("elf soorten die..."), zonder verhaal of mensen erin. Dit valt onder listicles en zelfhulp uit de afwijslijst.
+
+#### November is dé maand om wintergroenten te planten
+- **Gepubliceerd:** 2026-11-19 14:55 · Lifestyle · Positivr.fr
+- **Waar het over gaat:** Een praktische gids over welke zes wintergroenten nu gezaaid kunnen worden en hoe je dat het beste aanpakt.
+- **Waarom dit niet goed genoeg is:** Opnieuw een "zo doe je..."-tuintip zonder nieuwswaarde of verhaal, een schoolvoorbeeld van de listicle-categorie uit de afwijslijst.
+
+#### Border van aromatische kruiden fleurt moestuin op zonder geld uit te geven
+- **Gepubliceerd:** 2026-11-19 14:55 · Lifestyle · Positivr.fr
+- **Waar het over gaat:** Drie gratis trucs om een border met kruiden in de moestuin netjes en productief te houden.
+- **Waarom dit niet goed genoeg is:** Weer een zelfhulp-tiplijst ("drie trucs"), zonder concreet verhaal of mens om wie het gaat. Past precies in de listicle-categorie.
+
+#### Twijfelgeval: Reagan en Gorbatsjov ontmoeten elkaar voor het eerst in Genève
+- **Gepubliceerd:** 2026-11-19 14:47 · Lifestyle · GoodNewsNetwork.org
+- **Waar het over gaat:** Terugblik op de top van Genève in 1985, de eerste ontmoeting tussen Reagan en Gorbatsjov, als startpunt van het ontdooien van de Koude Oorlog.
+- **Waarom ik twijfel:** De kern is toenadering en vredesdiplomatie, wat voor de kernregel pleit, maar het onderwerp (kernwapens, grootmachtenpolitiek) ligt dicht tegen de politieke uitsluiting aan. Ik zou hem laten staan omdat het puur historisch is en niet polariserend aanvoelt, maar leg hem voor aan Erik.
+
+#### Twijfelgeval: Warmtepompleasing levert Franse gezinnen korting van 9.800 euro op
+- **Gepubliceerd:** 2026-11-19 14:54 · Environment · Positivr.fr
+- **Waar het over gaat:** Een nieuwe Franse overheidsregeling waarmee minder draagkrachtige huishoudens een warmtepomp kunnen leasen met een premie van gemiddeld 9.800 euro.
+- **Waarom ik twijfel:** Het is concreet en gaat om een reëel voordeel voor gezinnen, geen abstracte politiek. Maar het leunt op overheidsbeleid rond klimaatsubsidies, wat voor sommige lezers een politiek geladen thema is. Ik zou hem laten staan, maar met een kanttekening.
+
+#### Twijfelgeval: Therapeut-advies 'draai de afwasmachine twee keer' raakt snaar
+- **Gepubliceerd:** 2026-11-20 00:18 · Health · Upworthy.com
+- **Waar het over gaat:** Een vrouw vertelt hoe het advies van haar therapeut — de vaatwasser gewoon twee keer draaien in plaats van eerst schrobben — haar hielp in een zware periode.
+- **Waarom ik twijfel:** Het zit dicht tegen zelfhulp-advies aan, maar er zit een echt persoonlijk verhaal in met herkenbare worsteling, niet slechts een trucje. Ik zou hem laten staan, oordeel van Erik gewenst.
+
+#### Twijfelgeval: Allison Raskin schrijft romcom met twee hoofdpersonen met OCD
+- **Gepubliceerd:** 2026-11-20 00:19 · Lifestyle · GoodGoodGood.co
+- **Waar het over gaat:** Schrijver Allison Raskin brengt een nieuw boek uit waarin beide hoofdpersonen leven met OCD, geïnspireerd op haar eigen ervaring.
+- **Waarom ik twijfel:** Het is in de kern een boekaankondiging, wat richting productpromotie trekt, maar de maatschappelijke relevantie (representatie van OCD) en het persoonlijke verhaal van de auteur geven het meer gewicht dan een kale aankondiging. Ik zou hem laten staan, graag een tweede mening.
+
+**Patroon:** drie van de vijf afgekeurde artikelen kwamen dezelfde nacht van Positivr.fr en waren alle drie tuin-listicles ("elf soorten", "zes groenten", "drie trucs"). Dat lijkt een vast format van die bron te zijn dat structureel niet bij BrightNews past — het is wellicht het overwegen waard om deze bron kritischer te selecteren bij binnenkomst in plaats van er elke nacht losse items uit af te keuren.

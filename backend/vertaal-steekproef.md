@@ -476,3 +476,10 @@ Verder is de titelstijl correct (gewone zinsstijl, geen hoofdletter op elk woord
 - **Verkeerd vertaald feit:** het Nederlands noemt "plantendieven" als bedreiging, de Spaanse tekst maakt daar "cazadores" (jagers) van. Dat is geen synoniem maar een andere dreiging, en verandert de inhoud van het verhaal.
 
 Verder blijven de eigennamen ("Santa Clara University", "Santa Clara Valley dudleya") en de merknaam "liveforever" terecht onvertaald staan, en de titel gebruikt correct gewone zinsstijl in plaats van hoofdletters per woord. De tekst loopt verder natuurlijk en de kop dekt het verhaal.
+
+### 2026-11-20, Engels
+
+**Artikel:** Grottengids vindt meer dan 100 holenbeerskeletten in Zuid-Tirol
+**Oordeel:** niets aangetroffen.
+
+De vertaling volgt het Nederlands nauwkeurig: eigennamen (Kurt Walde, Enneberg, Conturines Cave) blijven onvertaald, het hoogtecijfer en de maand kloppen, en er zijn geen feiten toegevoegd of weggelaten. "Grottengids" is correct vertaald als "Mountain guide" en de titelstijl (gewone zinsstijl) is voor het Engels gepast. De tekst loopt natuurlijk en de kop dekt het verhaal.
