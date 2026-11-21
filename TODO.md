@@ -159,8 +159,9 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
 >   `assets/sociale-media/teksten.md`). Post 1 staat online (19 november).
 > - [ ] Award: de video maken (script en stappen in `pxl-award/video-script.md`),
 >   en zondag insturen met het canvas als PDF (TODO 84).
-> - [ ] Zondag: "haal de parkeerpagina weg" zeggen (PR #43, TODO 2), daarna in
->   Search Console indexering aanvragen voor `/`.
+> - [x] **Live op zaterdag 21 november**, een dag eerder dan gepland (PR #43,
+>   TODO 2). Nagekeken in een schone browser: echte home, geen consolefouten.
+> - [ ] In Search Console indexering aanvragen voor `/`.
 > - [ ] Stripe: bij beide betaallinks "na betaling doorsturen" op
 >   `https://brightnews.online/bedankt.html` (niet dringend: `thanks.html`
 >   stuurt al door).
@@ -186,11 +187,13 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
 > - [x] Award: het formulier ingevuld (19 november).
 >
 > **Claude:**
-> - [ ] Zondag: PR #43 mergen, live nalopen.
-> - [ ] De nieuwe bronnen volgen (PR #52). My Modern Met en Goodnews-magazin
->   leverden in de testrun niets op; blijft dat zo, dan gaan ze eruit.
-> - [ ] De eerste Engelse concepten van de postfabriek nakijken (20 november,
->   PR #57).
+> - [x] PR #43 gemerged en live nagelopen (21 november).
+> - [ ] De nieuwe bronnen volgen (PR #52). Na drie gewone runs (20 en 21
+>   november): 22 verhalen goedgekeurd, eerder ±5 per dag. Upworthy 7/13,
+>   Positivr 2/8. My Modern Met 0 van 18 over twee metingen: weghalen.
+>   Goodnews-magazin levert weinig aan (1 bericht), nog even volgen.
+> - [x] De eerste Engelse concepten nagekeken (20 en 21 november): Engels,
+>   goede toon, links met meetcode (PR #57).
 > - [x] Beveiligingscontrole en de bevindingen (TODO 67, PR #45).
 > - [x] Lighthouse op home, artikel en archief; LCP van de home verbeterd
 >   (PR #47). CLS overal 0.
