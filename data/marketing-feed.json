@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-11-21T00:22:49.246Z",
+ "gegenereerd": "2026-11-21T12:17:59.816Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -60,13 +60,6 @@
      "categorie": null,
      "dag": "2026-11-19",
      "url": "https://brightnews.online/articles/nl/schone-energie-geredde-kuikens-en-bloemen-voor-vergeten-graven-dg-20261119-dag.html"
-    },
-    {
-     "id": "dg-20261118-dag",
-     "titel": "Zorgzaamheid wint terrein, van de Bronx tot Algerije",
-     "categorie": null,
-     "dag": "2026-11-18",
-     "url": "https://brightnews.online/articles/nl/zorgzaamheid-wint-terrein-van-de-bronx-tot-algerije-dg-20261118-dag.html"
     }
    ]
   },
@@ -127,13 +120,6 @@
      "categorie": null,
      "dag": "2026-11-19",
      "url": "https://brightnews.online/articles/en/clean-energy-rescued-chicks-and-flowers-for-forgotten-graves-dg-20261119-dag.html"
-    },
-    {
-     "id": "dg-20261118-dag",
-     "titel": "Compassion gains ground, from the Bronx to Algeria",
-     "categorie": null,
-     "dag": "2026-11-18",
-     "url": "https://brightnews.online/articles/en/compassion-gains-ground-from-the-bronx-to-algeria-dg-20261118-dag.html"
     }
    ]
   },
@@ -194,13 +180,6 @@
      "categorie": null,
      "dag": "2026-11-19",
      "url": "https://brightnews.online/articles/de/saubere-energie-gerettete-kuken-und-blumen-fur-vergessene-graber-dg-20261119-dag.html"
-    },
-    {
-     "id": "dg-20261118-dag",
-     "titel": "Fürsorge gewinnt an Boden – von der Bronx bis Algerien",
-     "categorie": null,
-     "dag": "2026-11-18",
-     "url": "https://brightnews.online/articles/de/fursorge-gewinnt-an-boden-von-der-bronx-bis-algerien-dg-20261118-dag.html"
     }
    ]
   },
@@ -261,13 +240,6 @@
      "categorie": null,
      "dag": "2026-11-19",
      "url": "https://brightnews.online/articles/fr/energie-propre-poussins-sauves-et-fleurs-sur-les-tombes-oubliees-dg-20261119-dag.html"
-    },
-    {
-     "id": "dg-20261118-dag",
-     "titel": "La bienveillance gagne du terrain, du Bronx à l'Algérie",
-     "categorie": null,
-     "dag": "2026-11-18",
-     "url": "https://brightnews.online/articles/fr/la-bienveillance-gagne-du-terrain-du-bronx-a-l-algerie-dg-20261118-dag.html"
     }
    ]
   },
@@ -328,13 +300,6 @@
      "categorie": null,
      "dag": "2026-11-19",
      "url": "https://brightnews.online/articles/es/energia-limpia-pollitos-salvados-y-flores-para-tumbas-olvidadas-dg-20261119-dag.html"
-    },
-    {
-     "id": "dg-20261118-dag",
-     "titel": "La solidaridad avanza, desde el Bronx hasta Argelia",
-     "categorie": null,
-     "dag": "2026-11-18",
-     "url": "https://brightnews.online/articles/es/la-solidaridad-avanza-desde-el-bronx-hasta-argelia-dg-20261118-dag.html"
     }
    ]
   }
