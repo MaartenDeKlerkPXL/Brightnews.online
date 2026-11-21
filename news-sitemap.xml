@@ -1,6 +1,556 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://brightnews.online/articles/nl/deze-dag-draait-om-kleine-stappen-met-grote-gevolgen-dg-20261120-dag.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:22:46.089Z</news:publication_date>
+      <news:title>Deze dag draait om kleine stappen met grote gevolgen</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/this-day-is-about-small-steps-with-big-consequences-dg-20261120-dag.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:22:46.089Z</news:publication_date>
+      <news:title>This day is about small steps with big consequences</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/dieser-tag-dreht-sich-um-kleine-schritte-mit-gro-en-folgen-dg-20261120-dag.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:22:46.089Z</news:publication_date>
+      <news:title>Dieser Tag dreht sich um kleine Schritte mit großen Folgen</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/cette-journee-tourne-autour-de-petits-pas-aux-grandes-consequences-dg-20261120-dag.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:22:46.089Z</news:publication_date>
+      <news:title>Cette journée tourne autour de petits pas aux grandes conséquences</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/este-dia-gira-en-torno-a-pasos-pequenos-con-grandes-consecuencias-dg-20261120-dag.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:22:46.089Z</news:publication_date>
+      <news:title>Este día gira en torno a pasos pequeños con grandes consecuencias</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/zuid-koreaanse-scholen-omarmen-great-books-model-tegen-ai-1795220509370ur3vcrju4.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:21:51.137Z</news:publication_date>
+      <news:title>Zuid-Koreaanse scholen omarmen Great Books-model tegen AI</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/south-korean-schools-embrace-great-books-model-against-ai-1795220509370ur3vcrju4.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:21:51.137Z</news:publication_date>
+      <news:title>South Korean schools embrace Great Books model against AI</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/sudkoreanische-schulen-setzen-auf-great-books-modell-gegen-ki-1795220509370ur3vcrju4.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:21:51.137Z</news:publication_date>
+      <news:title>Südkoreanische Schulen setzen auf Great Books-Modell gegen KI</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/les-ecoles-sud-coreennes-adoptent-le-modele-great-books-face-a-l-ia-1795220509370ur3vcrju4.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:21:51.137Z</news:publication_date>
+      <news:title>Les écoles sud-coréennes adoptent le modèle Great Books face à l'IA</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/escuelas-surcoreanas-adoptan-el-modelo-great-books-contra-la-ia-1795220509370ur3vcrju4.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:21:51.137Z</news:publication_date>
+      <news:title>Escuelas surcoreanas adoptan el modelo Great Books contra la IA</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/grinch-hart-groeit-drie-maten-in-klassiek-kerstverhaal-179522048587587hw47ylw.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:21:27.386Z</news:publication_date>
+      <news:title>Grinch' hart groeit drie maten in klassiek kerstverhaal</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/grinch-s-heart-grows-three-sizes-in-classic-christmas-tale-179522048587587hw47ylw.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:21:27.386Z</news:publication_date>
+      <news:title>Grinch's heart grows three sizes in classic Christmas tale</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/grinch-herz-wachst-um-drei-nummern-in-klassischer-weihnachtsgeschichte-179522048587587hw47ylw.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:21:27.386Z</news:publication_date>
+      <news:title>Grinch' Herz wächst um drei Nummern in klassischer Weihnachtsgeschichte</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/le-c-ur-du-grincheux-s-agrandit-de-trois-tailles-dans-ce-conte-de-noel-classique-179522048587587hw47ylw.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:21:27.386Z</news:publication_date>
+      <news:title>Le cœur du Grincheux s'agrandit de trois tailles dans ce conte de Noël classique</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/el-corazon-del-grinch-crece-tres-tallas-en-el-clasico-cuento-navideno-179522048587587hw47ylw.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:21:27.386Z</news:publication_date>
+      <news:title>El corazón del Grinch crece tres tallas en el clásico cuento navideño</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/chef-goldberg-kookt-elke-dinsdag-100-maaltijden-bij-voedselbank-toronto-179522046345448rm0wjr3.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:21:05.111Z</news:publication_date>
+      <news:title>Chef Goldberg kookt elke dinsdag 100 maaltijden bij voedselbank Toronto</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/chef-goldberg-cooks-100-meals-every-tuesday-at-toronto-food-bank-179522046345448rm0wjr3.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:21:05.111Z</news:publication_date>
+      <news:title>Chef Goldberg cooks 100 meals every Tuesday at Toronto food bank</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/chef-goldberg-kocht-jeden-dienstag-100-mahlzeiten-in-der-lebensmittelbank-toront-179522046345448rm0wjr3.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:21:05.111Z</news:publication_date>
+      <news:title>Chef Goldberg kocht jeden Dienstag 100 Mahlzeiten in der Lebensmittelbank Toronto</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/la-chef-goldberg-prepare-100-repas-chaque-mardi-a-la-banque-alimentaire-de-toron-179522046345448rm0wjr3.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:21:05.111Z</news:publication_date>
+      <news:title>La chef Goldberg prépare 100 repas chaque mardi à la banque alimentaire de Toronto</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/la-chef-goldberg-cocina-100-comidas-cada-martes-en-el-banco-de-alimentos-de-toro-179522046345448rm0wjr3.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:21:05.111Z</news:publication_date>
+      <news:title>La chef Goldberg cocina 100 comidas cada martes en el banco de alimentos de Toronto</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/ora-pro-nobis-verrijkt-de-moestuin-met-eiwitrijke-bladeren-1795220440585iblrm361v.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:20:42.485Z</news:publication_date>
+      <news:title>Ora-pro-nobis verrijkt de moestuin met eiwitrijke bladeren</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/ora-pro-nobis-enriches-the-vegetable-garden-with-protein-rich-leaves-1795220440585iblrm361v.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:20:42.485Z</news:publication_date>
+      <news:title>Ora-pro-nobis enriches the vegetable garden with protein-rich leaves</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/ora-pro-nobis-bereichert-den-gemusegarten-mit-proteinreichen-blattern-1795220440585iblrm361v.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:20:42.485Z</news:publication_date>
+      <news:title>Ora-pro-nobis bereichert den Gemüsegarten mit proteinreichen Blättern</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/ora-pro-nobis-enrichit-le-potager-avec-des-feuilles-riches-en-proteines-1795220440585iblrm361v.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:20:42.485Z</news:publication_date>
+      <news:title>Ora-pro-nobis enrichit le potager avec des feuilles riches en protéines</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/ora-pro-nobis-enriquece-la-huerta-con-hojas-proteicas-1795220440585iblrm361v.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:20:42.485Z</news:publication_date>
+      <news:title>Ora-pro-nobis enriquece la huerta con hojas proteicas</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/algendieet-maakt-wilde-vis-overbodig-in-viskwekerij-1795220411744a8y6l2xat.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:20:13.527Z</news:publication_date>
+      <news:title>Algendieet maakt wilde vis overbodig in viskwekerij</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/algae-diet-makes-wild-fish-unnecessary-in-fish-farming-1795220411744a8y6l2xat.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:20:13.527Z</news:publication_date>
+      <news:title>Algae diet makes wild fish unnecessary in fish farming</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/algendiat-macht-wildfisch-in-der-fischzucht-uberflussig-1795220411744a8y6l2xat.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:20:13.527Z</news:publication_date>
+      <news:title>Algendiät macht Wildfisch in der Fischzucht überflüssig</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/un-regime-a-base-d-algues-rend-les-poissons-sauvages-inutiles-en-pisciculture-1795220411744a8y6l2xat.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:20:13.527Z</news:publication_date>
+      <news:title>Un régime à base d'algues rend les poissons sauvages inutiles en pisciculture</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/la-dieta-de-algas-hace-innecesario-el-pescado-salvaje-en-la-acuicultura-1795220411744a8y6l2xat.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:20:13.527Z</news:publication_date>
+      <news:title>La dieta de algas hace innecesario el pescado salvaje en la acuicultura</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/eendenjager-redt-bruiloft-met-crossmotor-na-snelwegsluiting-1795220387260w84f1ih3y.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:19:49.123Z</news:publication_date>
+      <news:title>Eendenjager redt bruiloft met crossmotor na snelwegsluiting</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/elk-hunter-saves-wedding-with-dirt-bike-after-highway-closure-1795220387260w84f1ih3y.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:19:49.123Z</news:publication_date>
+      <news:title>Elk hunter saves wedding with dirt bike after highway closure</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/elchjager-rettet-hochzeit-mit-crossmotor-nach-autobahnschlie-ung-1795220387260w84f1ih3y.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:19:49.123Z</news:publication_date>
+      <news:title>Elchjäger rettet Hochzeit mit Crossmotor nach Autobahnschließung</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/un-chasseur-d-elans-sauve-un-mariage-avec-un-motocross-apres-la-fermeture-de-l-a-1795220387260w84f1ih3y.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:19:49.123Z</news:publication_date>
+      <news:title>Un chasseur d'élans sauve un mariage avec un motocross après la fermeture de l'autoroute</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/cazador-de-alces-salva-boda-con-moto-de-cross-tras-cierre-de-autopista-1795220387260w84f1ih3y.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:19:49.123Z</news:publication_date>
+      <news:title>Cazador de alces salva boda con moto de cross tras cierre de autopista</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/chef-maddy-goldberg-kookt-wekelijks-voor-honderd-daklozen-met-voedselbank-ingred-1795220362623l9h7qd7dp.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:19:24.368Z</news:publication_date>
+      <news:title>Chef Maddy Goldberg kookt wekelijks voor honderd daklozen met voedselbank-ingrediënten</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/chef-maddy-goldberg-cooks-weekly-for-a-hundred-homeless-people-with-food-bank-in-1795220362623l9h7qd7dp.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:19:24.368Z</news:publication_date>
+      <news:title>Chef Maddy Goldberg cooks weekly for a hundred homeless people with food bank ingredients</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/kochin-maddy-goldberg-kocht-wochentlich-fur-hundert-obdachlose-mit-lebensmittelb-1795220362623l9h7qd7dp.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:19:24.368Z</news:publication_date>
+      <news:title>Köchin Maddy Goldberg kocht wöchentlich für hundert Obdachlose mit Lebensmittelbank-Zutaten</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/la-chef-maddy-goldberg-cuisine-chaque-semaine-pour-cent-personnes-sans-abri-1795220362623l9h7qd7dp.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:19:24.368Z</news:publication_date>
+      <news:title>La chef Maddy Goldberg cuisine chaque semaine pour cent personnes sans abri</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/la-chef-maddy-goldberg-cocina-semanalmente-para-cien-personas-sin-hogar-con-ingr-1795220362623l9h7qd7dp.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:19:24.368Z</news:publication_date>
+      <news:title>La chef Maddy Goldberg cocina semanalmente para cien personas sin hogar con ingredientes de banco de alimentos</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/neushoornmest-wordt-papier-en-beschermt-de-dieren-1795220337151t6mz7xs0u.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:18:59.192Z</news:publication_date>
+      <news:title>Neushoornmest wordt papier en beschermt de dieren</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/rhino-dung-becomes-paper-and-protects-the-animals-1795220337151t6mz7xs0u.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:18:59.192Z</news:publication_date>
+      <news:title>Rhino dung becomes paper and protects the animals</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/nashorn-mist-wird-zu-papier-und-schutzt-die-tiere-1795220337151t6mz7xs0u.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:18:59.192Z</news:publication_date>
+      <news:title>Nashorn-Mist wird zu Papier und schützt die Tiere</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/le-fumier-de-rhinoceros-devient-du-papier-et-protege-les-animaux-1795220337151t6mz7xs0u.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:18:59.192Z</news:publication_date>
+      <news:title>Le fumier de rhinocéros devient du papier et protège les animaux</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/el-estiercol-de-rinoceronte-se-convierte-en-papel-y-protege-a-los-animales-1795220337151t6mz7xs0u.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:18:59.192Z</news:publication_date>
+      <news:title>El estiércol de rinoceronte se convierte en papel y protege a los animales</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/zoon-spoort-schrijvers-op-van-troostbrieven-aan-gewonde-vietnam-veteraan-1795220311324b3iu7hu4j.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:18:33.893Z</news:publication_date>
+      <news:title>Zoon spoort schrijvers op van troostbrieven aan gewonde Vietnam-veteraan</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/son-tracks-down-writers-of-comfort-letters-to-wounded-vietnam-veteran-1795220311324b3iu7hu4j.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:18:33.893Z</news:publication_date>
+      <news:title>Son tracks down writers of comfort letters to wounded Vietnam veteran</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/sohn-spurt-verfasser-von-trostbriefen-an-verwundetem-vietnam-veteran-auf-1795220311324b3iu7hu4j.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:18:33.893Z</news:publication_date>
+      <news:title>Sohn spürt Verfasser von Trostbriefen an verwundetem Vietnam-Veteran auf</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/un-fils-retrouve-les-auteurs-de-lettres-de-reconfort-adressees-a-un-veteran-du-v-1795220311324b3iu7hu4j.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:18:33.893Z</news:publication_date>
+      <news:title>Un fils retrouve les auteurs de lettres de réconfort adressées à un vétéran du Vietnam blessé</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/hijo-localiza-a-los-autores-de-cartas-de-consuelo-para-un-veterano-de-vietnam-he-1795220311324b3iu7hu4j.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-21T00:18:33.893Z</news:publication_date>
+      <news:title>Hijo localiza a los autores de cartas de consuelo para un veterano de Vietnam herido</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://brightnews.online/articles/nl/holle-boom-biedt-vleermuizen-winterverblijf-1795177262499pb0meh8sp.html</loc>
     <news:news>
       <news:publication>

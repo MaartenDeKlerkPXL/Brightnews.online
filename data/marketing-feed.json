@@ -1,10 +1,18 @@
 {
- "gegenereerd": "2026-11-20T12:21:24.759Z",
+ "gegenereerd": "2026-11-21T00:22:49.246Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "179522046345448rm0wjr3",
+     "titel": "Chef Goldberg kookt elke dinsdag 100 maaltijden bij voedselbank Toronto",
+     "teaser": "Sinds 2021 kookt chef Maddy Goldberg elke dinsdag 100 warme maaltijden voor bezoekers van de Fort York Food Bank in Toronto. Goldberg studeerde eerst sociaal werk voordat ze de horeca in ging, maar miste het gevoel om anderen te helpen. Toen ze haar eigen private dining-bedrijf begon en voor het eerst een vrije dinsdag had, meldde ze zich als vrijwilliger...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/chef-goldberg-kookt-elke-dinsdag-100-maaltijden-bij-voedselbank-toronto-179522046345448rm0wjr3.html"
+    },
     {
      "id": "17951771345607z3ri28vl",
      "titel": "CAR-T-therapie helpt patiënten met stiff person syndrome weer lopen",
@@ -22,31 +30,30 @@
      "url": "https://brightnews.online/articles/nl/warmtepompleasing-levert-franse-gezinnen-korting-van-9-800-euro-op-17951000934225jcm9yk5i.html"
     },
     {
-     "id": "1795177160841ebnlu48hv",
-     "titel": "Verzetsdaad van Ada Le Poidevin op Guernsey na 40 jaar alsnog verteld",
-     "teaser": "De moed van de Britse winkelierster Ada Le Poidevin, die tijdens de Tweede Wereldoorlog op het door de nazi's bezette Guernsey drie Britse soldaten verborg, is veertig jaar na haar dood aan het licht gekomen. Haar 79-jarige nicht Liz Walton zocht dankzij foto's, dagboeken en gegevens van Ancestry.com het verhaal uit. In 1940 verborgen Le Poidevin en haar man Walter...",
+     "id": "1795220509370ur3vcrju4",
+     "titel": "Zuid-Koreaanse scholen omarmen Great Books-model tegen AI",
+     "teaser": "In de Zuid-Koreaanse stad Chuncheon experimenteren scholen met het 'Great Books'-onderwijsmodel van St. John's College uit de VS. Leerlingen lezen klassieke teksten, zoals Frankenstein, en debatteren erover zonder hulp van internet of AI-chatbots. Leraren geven geen les maar begeleiden alleen de discussie. Het model is een reactie op dalende leesvaardigheden, intensief gebruik van AI-chatbots door studenten en de hoge druk...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/verzetsdaad-van-ada-le-poidevin-op-guernsey-na-40-jaar-alsnog-verteld-1795177160841ebnlu48hv.html"
+     "url": "https://brightnews.online/articles/nl/zuid-koreaanse-scholen-omarmen-great-books-model-tegen-ai-1795220509370ur3vcrju4.html"
     },
     {
-     "id": "1795133974877pzz1f9g6l",
-     "titel": "Allison Raskin schrijft romcom met twee hoofdpersonen met OCD",
-     "teaser": "Schrijver en komiek Allison Raskin brengt met 'Compulsively Yours' haar zesde boek uit, waarin beide hoofdpersonen - Libi Newman en Nate Keller - leven met OCD. Ze ontmoeten elkaar via een steungroep en worden door hun therapeut aangemoedigd op elkaar te steunen tijdens een kerstreis naar Mexico. Raskin, zelf gediagnosticeerd met OCD op haar vierde, put uit eigen ervaring en...",
+     "id": "1795220387260w84f1ih3y",
+     "titel": "Eendenjager redt bruiloft met crossmotor na snelwegsluiting",
+     "teaser": "Erich Thalacker en Kyla Dickey reden op hun trouwdag de Sawtooth Mountains in Idaho in voor een fotoshoot in trouwjurk en pak. Op de terugweg bleek Highway 21 afgesloten door een dodelijk ongeval, met een wachttijd van vier uur – terwijl hun ceremonie binnen een uur begon. Elandjager Garrett Kerr, die vastzat in dezelfde file, bood hulp aan met zijn...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/allison-raskin-schrijft-romcom-met-twee-hoofdpersonen-met-ocd-1795133974877pzz1f9g6l.html"
-    },
-    {
-     "id": "1795133951432pjp37x70g",
-     "titel": "Jonge oehoe overleeft 70 mijl vastgeklemd in vrachtwagen in Pennsylvania",
-     "teaser": "Een jonge Grote Hoornuil werd in Lancaster County, Pennsylvania, geraakt door de truck van chauffeur Ashley Moffitt terwijl ze 65 mijl per uur reed. De vogel raakte vastgeklemd in de luchtgeleider van de vrachtwagen en bleef daar zitten tot Moffitt 70 mijl verderop stopte. Medewerkers van Old Dominion Freight Line in Carlisle bevrijdden de uil, die niet kon vliegen, en...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/jonge-oehoe-overleeft-70-mijl-vastgeklemd-in-vrachtwagen-in-pennsylvania-1795133951432pjp37x70g.html"
+     "url": "https://brightnews.online/articles/nl/eendenjager-redt-bruiloft-met-crossmotor-na-snelwegsluiting-1795220387260w84f1ih3y.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261120-dag",
+     "titel": "Deze dag draait om kleine stappen met grote gevolgen",
+     "categorie": null,
+     "dag": "2026-11-20",
+     "url": "https://brightnews.online/articles/nl/deze-dag-draait-om-kleine-stappen-met-grote-gevolgen-dg-20261120-dag.html"
+    },
     {
      "id": "dg-20261119-dag",
      "titel": "Schone energie, geredde kuikens en bloemen voor vergeten graven",
@@ -66,6 +73,14 @@
   "en": {
    "top": [
     {
+     "id": "179522046345448rm0wjr3",
+     "titel": "Chef Goldberg cooks 100 meals every Tuesday at Toronto food bank",
+     "teaser": "Since 2021, chef Maddy Goldberg has been cooking 100 hot meals every Tuesday for visitors to the Fort York Food Bank in Toronto. Goldberg initially studied social work before entering the hospitality industry, but missed the feeling of helping others. When she started her own private dining business and had her first free Tuesday, she volunteered at the local food...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/chef-goldberg-cooks-100-meals-every-tuesday-at-toronto-food-bank-179522046345448rm0wjr3.html"
+    },
+    {
      "id": "17951771345607z3ri28vl",
      "titel": "CAR-T therapy helps patients with stiff person syndrome walk again",
      "teaser": "A cell therapy originally developed against cancer is proving helpful for stiff person syndrome, a rare autoimmune disease in which the immune system attacks the central nervous system. In an early study led by neurologists at Mayo Clinic, patients who previously needed assistance to walk and perform daily tasks regained enough function after a single CAR-T cell therapy treatment (mivocabtagene...",
@@ -82,31 +97,30 @@
      "url": "https://brightnews.online/articles/en/heat-pump-leasing-saves-french-families-9-800-17951000934225jcm9yk5i.html"
     },
     {
-     "id": "1795177160841ebnlu48hv",
-     "titel": "British shopkeeper Ada Le Poidevin's wartime resistance act on Guernsey revealed 40 years later",
-     "teaser": "The courage of British shopkeeper Ada Le Poidevin, who hid three British soldiers on Nazi-occupied Guernsey during the Second World War, has come to light forty years after her death. Her 79-year-old niece Liz Walton uncovered the story thanks to photographs, diaries and data from Ancestry.com. In 1940, Le Poidevin and her husband Walter Bourgaize sheltered three stranded British servicemen...",
+     "id": "1795220509370ur3vcrju4",
+     "titel": "South Korean schools embrace Great Books model against AI",
+     "teaser": "In the South Korean city of Chuncheon, schools are experimenting with the 'Great Books' educational model from St. John's College in the US. Students read classic texts, such as Frankenstein, and debate them without the help of the internet or AI chatbots. Teachers do not lecture but only facilitate discussion. The model is a response to declining reading skills, intensive...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/british-shopkeeper-ada-le-poidevin-s-wartime-resistance-act-on-guernsey-revealed-1795177160841ebnlu48hv.html"
+     "url": "https://brightnews.online/articles/en/south-korean-schools-embrace-great-books-model-against-ai-1795220509370ur3vcrju4.html"
     },
     {
-     "id": "1795133974877pzz1f9g6l",
-     "titel": "Allison Raskin writes romcom with two protagonists living with OCD",
-     "teaser": "Writer and comedian Allison Raskin is releasing her sixth book, 'Compulsively Yours', featuring two main characters — Libi Newman and Nate Keller — who both live with OCD. They meet through a support group and are encouraged by their therapist to support each other during a Christmas trip to Mexico. Raskin, herself diagnosed with OCD at age four, draws on...",
+     "id": "1795220387260w84f1ih3y",
+     "titel": "Elk hunter saves wedding with dirt bike after highway closure",
+     "teaser": "Erich Thalacker and Kyla Dickey rode into the Sawtooth Mountains in Idaho on their wedding day for a bridal photoshoot in dress and suit. On the way back, Highway 21 turned out to be closed due to a fatal accident, with a four-hour wait time — while their ceremony was set to begin within an hour. Elk hunter Garrett Kerr,...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/allison-raskin-writes-romcom-with-two-protagonists-living-with-ocd-1795133974877pzz1f9g6l.html"
-    },
-    {
-     "id": "1795133951432pjp37x70g",
-     "titel": "Young great horned owl survives 70 miles trapped in truck in Pennsylvania",
-     "teaser": "A young great horned owl was struck by the truck of driver Ashley Moffitt while she was traveling 65 miles per hour in Lancaster County, Pennsylvania. The bird became wedged in the truck's air deflector and remained there until Moffitt stopped 70 miles down the road. Employees at Old Dominion Freight Line in Carlisle freed the owl, which was unable...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/young-great-horned-owl-survives-70-miles-trapped-in-truck-in-pennsylvania-1795133951432pjp37x70g.html"
+     "url": "https://brightnews.online/articles/en/elk-hunter-saves-wedding-with-dirt-bike-after-highway-closure-1795220387260w84f1ih3y.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261120-dag",
+     "titel": "This day is about small steps with big consequences",
+     "categorie": null,
+     "dag": "2026-11-20",
+     "url": "https://brightnews.online/articles/en/this-day-is-about-small-steps-with-big-consequences-dg-20261120-dag.html"
+    },
     {
      "id": "dg-20261119-dag",
      "titel": "Clean energy, rescued chicks and flowers for forgotten graves",
@@ -126,6 +140,14 @@
   "de": {
    "top": [
     {
+     "id": "179522046345448rm0wjr3",
+     "titel": "Chef Goldberg kocht jeden Dienstag 100 Mahlzeiten in der Lebensmittelbank Toronto",
+     "teaser": "Seit 2021 kocht Chef Maddy Goldberg jeden Dienstag 100 warme Mahlzeiten für Besucher der Fort York Food Bank in Toronto. Goldberg studierte zunächst Sozialarbeit, bevor sie in die Gastronomie ging, vermisste aber das Gefühl, anderen zu helfen. Als sie ihr eigenes Private-Dining-Unternehmen gründete und zum ersten Mal einen freien Dienstag hatte, meldete sie sich als Freiwillige bei der lokalen Lebensmittelbank...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/chef-goldberg-kocht-jeden-dienstag-100-mahlzeiten-in-der-lebensmittelbank-toront-179522046345448rm0wjr3.html"
+    },
+    {
      "id": "17951771345607z3ri28vl",
      "titel": "CAR-T-Therapie hilft Patienten mit Stiff-Person-Syndrom wieder zu laufen",
      "teaser": "Eine Zelltherapie, die ursprünglich gegen Krebs entwickelt wurde, erweist sich auch als hilfreich bei Stiff-Person-Syndrom, einer seltenen Autoimmunerkrankung, bei der das Immunsystem das Zentralnervensystem angreift. In einer frühen Studie unter der Leitung von Neurologen der Mayo Clinic erhielten Patienten, die zuvor Hilfe beim Gehen und bei alltäglichen Aufgaben benötigten, nach einer Behandlung mit CAR-T-Zelltherapie (mivocabtagene autoleucel) genug Funktion zurück, um...",
@@ -142,31 +164,30 @@
      "url": "https://brightnews.online/articles/de/warmepumpenleasen-spart-franzosischen-familien-9-800-euro-17951000934225jcm9yk5i.html"
     },
     {
-     "id": "1795177160841ebnlu48hv",
-     "titel": "Widerstandstat von Ada Le Poidevin auf Guernsey nach 40 Jahren enthüllt",
-     "teaser": "Der Mut der britischen Ladenbesitzerin Ada Le Poidevin, die während des Zweiten Weltkriegs auf dem von den Nazis besetzten Guernsey drei britische Soldaten versteckte, ist vierzig Jahre nach ihrem Tod ans Licht gekommen. Ihre 79-jährige Nichte Liz Walton rekonstruierte die Geschichte dank Fotos, Tagebüchern und Daten von Ancestry.com. 1940 versteckten Le Poidevin und ihr Mann Walter Bourgaize drei gestrandete britische...",
+     "id": "1795220509370ur3vcrju4",
+     "titel": "Südkoreanische Schulen setzen auf Great Books-Modell gegen KI",
+     "teaser": "In der südkoreanischen Stadt Chuncheon experimentieren Schulen mit dem „Great Books\"-Unterrichtsmodell des St. John's College aus den USA. Schüler lesen klassische Texte wie Frankenstein und diskutieren darüber ohne Hilfe des Internets oder von KI-Chatbots. Lehrer halten keinen Unterricht, sondern moderieren nur die Diskussion. Das Modell ist eine Reaktion auf sinkende Lesefähigkeiten, intensive Nutzung von KI-Chatbots durch Studenten und den hohen...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/widerstandstat-von-ada-le-poidevin-auf-guernsey-nach-40-jahren-enthullt-1795177160841ebnlu48hv.html"
+     "url": "https://brightnews.online/articles/de/sudkoreanische-schulen-setzen-auf-great-books-modell-gegen-ki-1795220509370ur3vcrju4.html"
     },
     {
-     "id": "1795133974877pzz1f9g6l",
-     "titel": "Allison Raskin schreibt Romcom mit zwei Hauptfiguren mit OCD",
-     "teaser": "Die Schriftstellerin und Komikerin Allison Raskin bringt mit „Compulsively Yours\" ihr sechstes Buch heraus, in dem beide Hauptfiguren – Libi Newman und Nate Keller – mit OCD leben. Sie lernen sich über eine Selbsthilfegruppe kennen und werden von ihrer Therapeutin ermutigt, sich während einer Weihnachtsreise nach Mexiko gegenseitig zu unterstützen. Raskin, selbst mit vier Jahren mit OCD diagnostiziert, schöpft aus...",
+     "id": "1795220387260w84f1ih3y",
+     "titel": "Elchjäger rettet Hochzeit mit Crossmotor nach Autobahnschließung",
+     "teaser": "Erich Thalacker und Kyla Dickey fuhren an ihrem Hochzeitstag in die Sawtooth Mountains in Idaho für ein Fotoshooting in Brautkleid und Anzug. Auf dem Rückweg stellte sich heraus, dass die Highway 21 wegen eines tödlichen Unfalls gesperrt war – mit einer Wartezeit von vier Stunden, während ihre Zeremonie in einer Stunde beginnen sollte. Elchjäger Garrett Kerr, der im gleichen Stau...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/allison-raskin-schreibt-romcom-mit-zwei-hauptfiguren-mit-ocd-1795133974877pzz1f9g6l.html"
-    },
-    {
-     "id": "1795133951432pjp37x70g",
-     "titel": "Junger Uhu überlebt 70 Meilen eingeklemmt in Lastwagen in Pennsylvania",
-     "teaser": "Ein junger Uhu wurde in Lancaster County, Pennsylvania, von dem Lastwagen der Fahrerin Ashley Moffitt erfasst, während sie 65 Meilen pro Stunde fuhr. Der Vogel geriet in den Luftkanal des Lastwagens und blieb dort stecken, bis Moffitt 70 Meilen weiter entfernt anhielt. Mitarbeiter der Old Dominion Freight Line in Carlisle befreiten den flugunfähigen Uhu und riefen das Raven Ridge Wildlife...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/junger-uhu-uberlebt-70-meilen-eingeklemmt-in-lastwagen-in-pennsylvania-1795133951432pjp37x70g.html"
+     "url": "https://brightnews.online/articles/de/elchjager-rettet-hochzeit-mit-crossmotor-nach-autobahnschlie-ung-1795220387260w84f1ih3y.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261120-dag",
+     "titel": "Dieser Tag dreht sich um kleine Schritte mit großen Folgen",
+     "categorie": null,
+     "dag": "2026-11-20",
+     "url": "https://brightnews.online/articles/de/dieser-tag-dreht-sich-um-kleine-schritte-mit-gro-en-folgen-dg-20261120-dag.html"
+    },
     {
      "id": "dg-20261119-dag",
      "titel": "Saubere Energie, gerettete Küken und Blumen für vergessene Gräber",
@@ -186,6 +207,14 @@
   "fr": {
    "top": [
     {
+     "id": "179522046345448rm0wjr3",
+     "titel": "La chef Goldberg prépare 100 repas chaque mardi à la banque alimentaire de Toronto",
+     "teaser": "Depuis 2021, la chef Maddy Goldberg prépare chaque mardi 100 repas chauds pour les visiteurs de la Fort York Food Bank à Toronto. Goldberg a d'abord étudié le travail social avant de se lancer dans la restauration, mais lui manquait le sentiment d'aider les autres. Quand elle a créé sa propre entreprise de restauration privée et a eu son premier...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/la-chef-goldberg-prepare-100-repas-chaque-mardi-a-la-banque-alimentaire-de-toron-179522046345448rm0wjr3.html"
+    },
+    {
      "id": "17951771345607z3ri28vl",
      "titel": "La thérapie CAR-T aide les patients atteints du syndrome de la personne raide à remarcher",
      "teaser": "Une thérapie cellulaire initialement développée contre le cancer s'avère également efficace contre le syndrome de la personne raide, une maladie auto-immune rare au cours de laquelle le système immunitaire attaque le système nerveux central. Dans une étude précoce dirigée par des neurologues de Mayo Clinic, des patients qui avaient auparavant besoin d'aide pour marcher et accomplir les tâches quotidiennes ont...",
@@ -202,31 +231,30 @@
      "url": "https://brightnews.online/articles/fr/la-location-de-pompes-a-chaleur-offre-une-reduction-de-9-800-euros-aux-familles-17951000934225jcm9yk5i.html"
     },
     {
-     "id": "1795177160841ebnlu48hv",
-     "titel": "L'acte de résistance d'Ada Le Poidevin à Guernesey révélé 40 ans après sa mort",
-     "teaser": "Le courage de la commerçante britannique Ada Le Poidevin, qui a caché trois soldats britanniques à Guernesey occupée par les nazis pendant la Seconde Guerre mondiale, a été mis au jour quarante ans après son décès. Sa nièce, Liz Walton, âgée de 79 ans, a reconstitué l'histoire grâce à des photographies, des journaux intimes et des données d'Ancestry.com. En 1940,...",
+     "id": "1795220509370ur3vcrju4",
+     "titel": "Les écoles sud-coréennes adoptent le modèle Great Books face à l'IA",
+     "teaser": "Dans la ville sud-coréenne de Chuncheon, des écoles expérimentent le modèle pédagogique « Great Books » du St. John's College américain. Les élèves lisent des textes classiques, comme Frankenstein, et en débattent sans l'aide d'Internet ni de chatbots IA. Les enseignants ne font pas cours mais encadrent uniquement la discussion. Le modèle répond à la baisse des compétences en lecture,...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/l-acte-de-resistance-d-ada-le-poidevin-a-guernesey-revele-40-ans-apres-sa-mort-1795177160841ebnlu48hv.html"
+     "url": "https://brightnews.online/articles/fr/les-ecoles-sud-coreennes-adoptent-le-modele-great-books-face-a-l-ia-1795220509370ur3vcrju4.html"
     },
     {
-     "id": "1795133974877pzz1f9g6l",
-     "titel": "Allison Raskin écrit une romcom avec deux personnages atteints de TOC",
-     "teaser": "L'écrivaine et humoriste Allison Raskin publie son sixième livre, « Compulsively Yours », dans lequel les deux protagonistes - Libi Newman et Nate Keller - vivent avec le TOC. Ils se rencontrent lors d'un groupe de soutien et sont encouragés par leur thérapeute à s'entraider lors d'un voyage de Noël au Mexique. Raskin, elle-même diagnostiquée avec le TOC à l'âge...",
+     "id": "1795220387260w84f1ih3y",
+     "titel": "Un chasseur d'élans sauve un mariage avec un motocross après la fermeture de l'autoroute",
+     "teaser": "Erich Thalacker et Kyla Dickey ont parcouru les Sawtooth Mountains en Idaho le jour de leur mariage pour une séance photo en robe et costume de mariés. Au retour, la Highway 21 s'est avérée fermée suite à un accident mortel, avec un temps d'attente de quatre heures – alors que leur cérémonie devait commencer dans une heure. Garrett Kerr, chasseur...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/allison-raskin-ecrit-une-romcom-avec-deux-personnages-atteints-de-toc-1795133974877pzz1f9g6l.html"
-    },
-    {
-     "id": "1795133951432pjp37x70g",
-     "titel": "Jeune grand-duc survit 70 miles coincé dans un camion en Pennsylvanie",
-     "teaser": "Un jeune Grand-Duc d'Amérique a été heurté par le camion de la chauffeure Ashley Moffitt dans le comté de Lancaster, en Pennsylvanie, alors qu'elle roulait à 65 miles par heure. L'oiseau s'est coincé dans la prise d'air du camion et y est resté jusqu'à ce que Moffitt s'arrête 70 miles plus loin. Des employés de Old Dominion Freight Line à...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/jeune-grand-duc-survit-70-miles-coince-dans-un-camion-en-pennsylvanie-1795133951432pjp37x70g.html"
+     "url": "https://brightnews.online/articles/fr/un-chasseur-d-elans-sauve-un-mariage-avec-un-motocross-apres-la-fermeture-de-l-a-1795220387260w84f1ih3y.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261120-dag",
+     "titel": "Cette journée tourne autour de petits pas aux grandes conséquences",
+     "categorie": null,
+     "dag": "2026-11-20",
+     "url": "https://brightnews.online/articles/fr/cette-journee-tourne-autour-de-petits-pas-aux-grandes-consequences-dg-20261120-dag.html"
+    },
     {
      "id": "dg-20261119-dag",
      "titel": "Énergie propre, poussins sauvés et fleurs sur les tombes oubliées",
@@ -246,6 +274,14 @@
   "es": {
    "top": [
     {
+     "id": "179522046345448rm0wjr3",
+     "titel": "La chef Goldberg cocina 100 comidas cada martes en el banco de alimentos de Toronto",
+     "teaser": "Desde 2021, la chef Maddy Goldberg prepara cada martes 100 comidas calientes para los visitantes de Fort York Food Bank en Toronto. Goldberg estudió primero trabajo social antes de incursionar en la gastronomía, pero echaba de menos la sensación de ayudar a otros. Cuando comenzó su propio negocio de catering privado y tuvo su primer martes libre, se ofreció como...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/la-chef-goldberg-cocina-100-comidas-cada-martes-en-el-banco-de-alimentos-de-toro-179522046345448rm0wjr3.html"
+    },
+    {
      "id": "17951771345607z3ri28vl",
      "titel": "La terapia CAR-T ayuda a pacientes con síndrome de persona rígida a volver a caminar",
      "teaser": "Una terapia celular desarrollada originalmente contra el cáncer resulta ser también efectiva para el síndrome de persona rígida, una enfermedad autoinmune rara en la que el sistema inmunológico ataca el sistema nervioso central. En un estudio preliminar dirigido por neurólogos de Mayo Clinic, pacientes que anteriormente necesitaban ayuda para caminar y realizar tareas cotidianas recuperaron suficiente función tras un único...",
@@ -262,31 +298,30 @@
      "url": "https://brightnews.online/articles/es/el-arrendamiento-de-bombas-de-calor-ofrece-descuentos-de-9-800-euros-a-familias-17951000934225jcm9yk5i.html"
     },
     {
-     "id": "1795177160841ebnlu48hv",
-     "titel": "El acto de resistencia de Ada Le Poidevin en Guernsey revelado 40 años después",
-     "teaser": "El valor de la comerciante británica Ada Le Poidevin, quien durante la Segunda Guerra Mundial escondió a tres soldados británicos en Guernsey, ocupada por los nazis, ha salido a la luz cuarenta años después de su muerte. Su sobrina de 79 años, Liz Walton, desenterró la historia gracias a fotografías, diarios e información de Ancestry.com. En 1940, Le Poidevin y...",
+     "id": "1795220509370ur3vcrju4",
+     "titel": "Escuelas surcoreanas adoptan el modelo Great Books contra la IA",
+     "teaser": "En la ciudad surcoreana de Chuncheon, las escuelas experimentan con el modelo educativo «Great Books» del St. John's College estadounidense. Los estudiantes leen textos clásicos, como Frankenstein, y debaten sobre ellos sin ayuda de internet ni chatbots de IA. Los docentes no imparten clases, sino que solo facilitan la discusión. El modelo es una respuesta a la disminución de las...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/el-acto-de-resistencia-de-ada-le-poidevin-en-guernsey-revelado-40-anos-despues-1795177160841ebnlu48hv.html"
+     "url": "https://brightnews.online/articles/es/escuelas-surcoreanas-adoptan-el-modelo-great-books-contra-la-ia-1795220509370ur3vcrju4.html"
     },
     {
-     "id": "1795133974877pzz1f9g6l",
-     "titel": "Allison Raskin escribe una romcom con dos protagonistas con TOC",
-     "teaser": "La escritora y comediante Allison Raskin publica su sexto libro, «Compulsively Yours», en el que ambos protagonistas —Libi Newman y Nate Keller— viven con TOC. Se conocen a través de un grupo de apoyo y su terapeuta los anima a apoyarse mutuamente durante un viaje navideño a México. Raskin, diagnosticada con TOC a los cuatro años, se inspira en su...",
+     "id": "1795220387260w84f1ih3y",
+     "titel": "Cazador de alces salva boda con moto de cross tras cierre de autopista",
+     "teaser": "Erich Thalacker y Kyla Dickey recorrieron las Sawtooth Mountains en Idaho el día de su boda para una sesión de fotos en traje de novia y esmoquin. En el camino de regreso, la Highway 21 estaba cerrada por un accidente mortal, con un tiempo de espera de cuatro horas, mientras que su ceremonia comenzaba en una hora. Garrett Kerr, cazador...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/allison-raskin-escribe-una-romcom-con-dos-protagonistas-con-toc-1795133974877pzz1f9g6l.html"
-    },
-    {
-     "id": "1795133951432pjp37x70g",
-     "titel": "Joven búho cornudo sobrevive 70 millas atrapado en camión en Pennsylvania",
-     "teaser": "Un joven Búho Cornudo fue golpeado por el camión de la conductora Ashley Moffitt en el condado de Lancaster, Pennsylvania, mientras viajaba a 65 millas por hora. El ave quedó atrapada en la toma de aire del camión y permaneció allí hasta que Moffitt se detuvo 70 millas más adelante. Los empleados de Old Dominion Freight Line en Carlisle liberaron...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/joven-buho-cornudo-sobrevive-70-millas-atrapado-en-camion-en-pennsylvania-1795133951432pjp37x70g.html"
+     "url": "https://brightnews.online/articles/es/cazador-de-alces-salva-boda-con-moto-de-cross-tras-cierre-de-autopista-1795220387260w84f1ih3y.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261120-dag",
+     "titel": "Este día gira en torno a pasos pequeños con grandes consecuencias",
+     "categorie": null,
+     "dag": "2026-11-20",
+     "url": "https://brightnews.online/articles/es/este-dia-gira-en-torno-a-pasos-pequenos-con-grandes-consecuencias-dg-20261120-dag.html"
+    },
     {
      "id": "dg-20261119-dag",
      "titel": "Energía limpia, pollitos salvados y flores para tumbas olvidadas",
