@@ -387,7 +387,9 @@ const FEEDS = [
     { name: 'NiceNews.com', url: 'https://nicenews.com/feed/' },                         // (7)
     { name: 'Upworthy.com', url: 'https://www.upworthy.com/feeds/feed.rss' },            // (10)
     { name: 'AnthropoceneMagazine.org', url: 'https://www.anthropocenemagazine.org/feed/' }, // (7) oplossingen
-    { name: 'MyModernMet.com', url: 'https://mymodernmet.com/feed/' },                   // (10) kunst, design
+    // MyModernMet.com eruit op 2026-11-21: 0 van 18 berichten goedgekeurd in de
+    // eerste vier runs; elk bericht kostte wel een AI-beoordeling.
+    // { name: 'MyModernMet.com', url: 'https://mymodernmet.com/feed/' },
     { name: 'Positivr.fr', url: 'https://positivr.fr/feed/' },                           // (30) Frans
     { name: 'Goodnews-magazin.de', url: 'https://goodnews-magazin.de/feed/' },          // (10) Duits
     // Squirrel-News eruit op 2026-09-29: 8 van de 8 beoordelingen afgewezen,
