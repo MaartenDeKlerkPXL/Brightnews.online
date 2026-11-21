@@ -483,3 +483,12 @@ Verder blijven de eigennamen ("Santa Clara University", "Santa Clara Valley dudl
 **Oordeel:** niets aangetroffen.
 
 De vertaling volgt het Nederlands nauwkeurig: eigennamen (Kurt Walde, Enneberg, Conturines Cave) blijven onvertaald, het hoogtecijfer en de maand kloppen, en er zijn geen feiten toegevoegd of weggelaten. "Grottengids" is correct vertaald als "Mountain guide" en de titelstijl (gewone zinsstijl) is voor het Engels gepast. De tekst loopt natuurlijk en de kop dekt het verhaal.
+
+### 2026-11-21, Duits
+
+**Artikel:** Montreal bestrijdt verkeerslawaai met rustgevend oceaangeluid
+**Oordeel:** één kleine fout.
+
+- **Grammatica:** "knirschendes Sand" is fout, het moet "knirschender Sand" zijn (der Sand, niet das Sand). Een kromme uitgang in een verder vlotte zin.
+
+Eigennamen (Les Madelinéennes, Sounds in the City, McGill University, Magdalen-Inseln) zijn correct onvertaald gelaten, en de kop dekt de inhoud zonder toegevoegde feiten.

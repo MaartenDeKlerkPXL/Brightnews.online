@@ -1730,3 +1730,27 @@ Niet bright-waardig: 5. Twijfel: 4.
 - **Waarom ik twijfel:** Het is in de kern een boekaankondiging, wat richting productpromotie trekt, maar de maatschappelijke relevantie (representatie van OCD) en het persoonlijke verhaal van de auteur geven het meer gewicht dan een kale aankondiging. Ik zou hem laten staan, graag een tweede mening.
 
 **Patroon:** drie van de vijf afgekeurde artikelen kwamen dezelfde nacht van Positivr.fr en waren alle drie tuin-listicles ("elf soorten", "zes groenten", "drie trucs"). Dat lijkt een vast format van die bron te zijn dat structureel niet bij BrightNews past — het is wellicht het overwegen waard om deze bron kritischer te selecteren bij binnenkomst in plaats van er elke nacht losse items uit af te keuren.
+
+### 2026-11-21, 10:08 Europe/Amsterdam
+
+Beoordeeld: 16 artikelen, gepubliceerd tussen 2026-11-20 12:18 en 2026-11-21 00:21.
+Niet bright-waardig: 2. Twijfel: 1.
+
+#### Audrey Hepburn weigerde haar rimpels te laten wegwerken
+- **Gepubliceerd:** 2026-11-20 12:20 · Lifestyle · Upworthy.com
+- **Waar het over gaat:** Een nostalgisch anekdote over Audrey Hepburn, die als UNICEF-ambassadeur weigerde dat een foto met lachrimpels werd geretoucheerd, als voorbeeld van gracieus ouder worden.
+- **Waarom dit niet goed genoeg is:** Dit is in de kern celebritynieuws over een anekdote van decennia geleden, zonder actuele aanleiding of bredere maatschappelijke lading — het staat met zoveel woorden in de afwijslijst onder "roddel- en celebritynieuws". Het voelt warm aan, maar er wordt niemand geholpen en er verandert niets; het is trivia, geen verhaal met gevolg.
+- **Link:** (geen directe link meegegeven in de brondata)
+
+#### 'Grinch' hart groeit drie maten in klassiek kerstverhaal
+- **Gepubliceerd:** 2026-11-21 00:21 · Lifestyle · Sciencenews.org
+- **Waar het over gaat:** Een navertelling van het bekende kinderverhaal "How the Grinch Stole Christmas", waarin de hoofdpersoon van gevoel verandert zodra hij het vreugdevolle gezang uit Whoville hoort.
+- **Waarom dit niet goed genoeg is:** Dit is een samenvatting van een fictief verhaal zonder actuele nieuwswaarde, nieuw onderzoek of maatschappelijke relevantie — het voldoet aan "te-weinig-inhoud": er wordt niets concreets verteld over echte mensen, instellingen of gebeurtenissen, alleen de plot van een klassieker herhaald.
+- **Link:** (geen directe link meegegeven in de brondata)
+
+#### Twijfelgeval: Ora-pro-nobis verrijkt de moestuin met eiwitrijke bladeren
+- **Gepubliceerd:** 2026-11-21 00:20 · Lifestyle · Positivr.fr
+- **Waar het over gaat:** Een informatief stuk over een eiwitrijke klimplant die geschikt is voor de moestuin, met cijfers over voedingswaarde en gebruikstips in de keuken.
+- **Waarom ik twijfel:** Het leunt dicht tegen een tuin-/kooktip aan ("zo verrijk je je moestuin") zonder een echt verhaal met mensen erin, wat richting listicle/zelfhulp trekt. Tegelijk zit er een concreet, verifieerbaar feit in (22% eiwit, vergelijking met andere bladgroenten) en een duidelijk milieu/voedselaspect, wat voor relevantie pleit. Ik zou hem laten staan; oordeel van Erik gewenst.
+
+**Patroon:** Twee verschillende bronnen (GoodNewsNetwork.org en GoodGoodGood.co) publiceerden vrijwel hetzelfde verhaal over chef Maddy Goldberg die wekelijks honderd maaltijden kookt voor een voedselbank in Toronto. Beide versies zijn inhoudelijk in orde en los beoordeeld geen probleem, maar het is de tweede keer deze week dat dezelfde kern-story via twee bronnen wordt binnengehaald — het is de moeite waard om te checken of de selectie hier dubbel work oplevert op de site.
