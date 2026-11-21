@@ -149,7 +149,7 @@ import { tekenBeeldkaart, kaartBestandsnaam, downloadKaart } from './js/beeldkaa
         // Teamcheck: RLS op team_leden geeft alleen je eigen rij terug.
         const { data: team } = await client.from('team_leden').select('uid').limit(1);
         if (!team || team.length === 0) {
-            location.replace('/binnenkort.html');
+            location.replace('/');
             return;
         }
 
