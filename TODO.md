@@ -257,6 +257,58 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   5. Nagaan of de home meer kan tonen dan Vandaag en Gisteren, zodat de site
      voller oogt (bijv. een rij "Eerder deze week").
 
+  **Telling voor onderdeel 1 (Erik en Claude, 2026-11-22).** Uit
+  `data/selectie-archief.jsonl` (beoordeeld, besluit) en `data/seen_links.json`
+  (status `ok` = echt gepubliceerd), dagen in Nederlandse tijd.
+
+  | Periode | Beoordeeld per dag | Gepubliceerd per dag |
+  |---|---|---|
+  | 16–30 september | 27 | 9,0 |
+  | 15–31 oktober (na de storing) | 10 | 3,6 |
+  | 1–11 november | 12 | 4,8 |
+  | 12–18 november | 10 | 4,6 |
+  | 19 november (de eerste runs met de nieuwe bronnen) | 106 | 28 |
+  | 20–22 november | 29 | 9,7 (11, 9 en 9) |
+
+  - **Het gewone niveau na PR #52 is ±10 per dag, niet ±15.** De 28 van
+    19 november waren een inhaalslag: zes nieuwe feeds met elk hun hele
+    voorraad. Van die ±10 zijn er 4 in vier dagen een dubbel verhaal (punt 86)
+    en 4 een rubriek "Good News in History" (zie hieronder).
+  - **De ±11 van half september was ook te hoog geteld.** Een goedgekeurd
+    verhaal waarvan het schrijven mislukt, wordt de volgende run opnieuw
+    beoordeeld en staat dan nog een keer in het archief (61 extra regels in
+    september, 11 in november). Echt gepubliceerd waren het er 9 per dag.
+  - **De aanvoer is de rem, niet de selectie.** In oktober en begin november
+    kwamen er maar 10 à 12 nieuwe berichten per dag binnen, en daarvan werd
+    40–54% goedgekeurd.
+  - **Per bron, 19–22 november** (beoordeeld → goedgekeurd): GoodNewsNetwork
+    20 → 15, Upworthy 26 → 12, Anthropocene 29 → 10, Positivr 41 → 7,
+    GoodGoodGood 7 → 6, NiceNews 13 → 2, Sciencenews 14 → 1,
+    Goodnews-magazin 4 → 0, My Modern Met 18 → 0 (al weg).
+  - **Veel beoordelingen, weinig opbrengst** (sinds 23 oktober): Sciencenews
+    44 → 2, Positivr 41 → 7 (13 keer een lijstje, veel tuintips), The
+    Ecologist 14 → 1, BBC Culture 18 → 3, YES! Magazine 8 → 1 (7 keer
+    politiek). Schrappen bespaart weinig: de selectie gaat per tien berichten
+    in één goedkope aanroep. Het geld zit in het schrijven en vertalen van wat
+    wél doorkomt.
+  - **"Good News in History" komt als nieuws door.** Sinds PR #52 leest de
+    pipeline de hele feed van GoodNewsNetwork, dus ook de dagelijkse rubriek
+    "op deze dag in …" (adressen met `/events06…/`). Op 19 november zijn er
+    vier gepubliceerd (UNESCO 81 jaar, het patent op de computermuis, See It
+    Now, Reagan en Gorbatsjov); die van 15 en 22 november zijn afgewezen. Het
+    model is hier dus niet vast in. Voorstel: op het adres tegenhouden, net
+    als het koopjesfilter. *(Erik, via een PR.)*
+  - **Voor onderdeel 3: de streep ligt precies bij 7.** Sinds 23 oktober zijn
+    72 berichten afgewezen met som 7 en zonder uitsluiting, altijd als 2/2/3
+    of 2/3/2; nul keer haalde een bericht 8 en strandde het op de minima. De
+    helft daarvan (36) viel in 19–22 november: Anthropocene 9, Sciencenews 8,
+    Positivr 7, NiceNews 4. De drempel naar 7 zetten laat de tuintips van
+    Positivr en "hallo in 25 talen" binnen, maar het model geeft ook
+    oplossingsverhalen een 7 terwijl de reden als een goedkeuring leest
+    ("innovatieve doorbraak met concrete milieuvoordelen"). Dat wijst op de
+    as *gevoel* in de prompt, niet op de drempel. Erik neemt dit mee in
+    `backend/selectie-prompt-analyse.md`.
+
 - [ ] **86. Hetzelfde verhaal via twee bronnen staat er twee keer.** *(Erik,
   2026-11-22)* Op 21 november kwam de chef uit Toronto die elke dinsdag voor
   de voedselbank kookt binnen via GoodGoodGood én via GoodNewsNetwork. Beide
@@ -268,6 +320,26 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   de goedkoopste poort kiezen (bijv. de selectiestap de titels van de laatste
   twee dagen meegeven, of `kiesTop()` in `backend/digest.js` één verhaal per
   onderwerp laten kiezen). Gaat als PR langs Maarten.
+
+  **Telling (Erik en Claude, 2026-11-22).** Paren gezocht op overlap in titel
+  en samenvatting en daarna met de hand nagelopen; een paar met heel andere
+  woorden kan gemist zijn.
+  - **Vóór PR #52** (5 september t/m 18 november, ±390 verhalen): één dubbel
+    verhaal via twee bronnen (de tilcayo, GoodNewsNetwork 18 september en
+    Optimist Daily 24 september). Minder dan 1%.
+  - **Sinds PR #52** (19–22 november, 57 verhalen): vier dubbele, dus 7%.
+    - de chef uit Toronto: GoodGoodGood en GoodNewsNetwork, 21 november;
+    - het walvisgenoom via een drone: NPR en GoodNewsNetwork, 22 november;
+    - Ada Le Poidevin op Guernsey: GoodNewsNetwork 14 november en NiceNews
+      20 november (zes dagen ertussen);
+    - de troostbrieven aan de Vietnamveteraan: twee keer GoodNewsNetwork, 21
+      en 22 november. De bron zette het bericht opnieuw online op een ander
+      adres (het eerste was `/__trashed-70/`), en een ander adres is voor
+      `seenLinks` een nieuw verhaal.
+  - Wat dit zegt over de poort: twee dagen terugkijken is te kort (Guernsey
+    zat er zes dagen tussen), en alleen tussen bronnen vergelijken mist het
+    geval van dezelfde bron op een nieuw adres. De titels van de laatste week
+    aan de selectie meegeven dekt alle vier.
 
 - [ ] **84. PXL Ambassador Award: in de finale komen en winnen.** *(Maarten en
   Claude, 2026-11-18)* Bron:
