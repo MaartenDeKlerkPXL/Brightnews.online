@@ -1,5 +1,77 @@
 [
  {
+  "datum": "2026-11-22T12:17:44.708Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "Good News in History, November 22",
+  "uitsluiting": "geen",
+  "gevoel": 2,
+  "formulering": 3,
+  "relevantie": 1,
+  "totaal": 6,
+  "besluit": "nee",
+  "reden": "Positief over filmgeschiedenis, maar te niche en zonder persoonlijke relevantie voor brede doelgroep."
+ },
+ {
+  "datum": "2026-11-22T12:17:44.708Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "33 Kids Wrote Letters to a Wounded Veteran. 60 Years Later, His Son Is Searching to Thank Each One",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Hartverwarmend verhaal over dankbaarheid en menselijke verbinding dat decennia overspant; kern is terugvinden en waardering."
+ },
+ {
+  "datum": "2026-11-22T12:17:44.708Z",
+  "bron": "NiceNews.com",
+  "titel": "Nice News Readers Shared Their Favorite Family Holiday Traditions — Read the Sweet Responses",
+  "uitsluiting": "geen",
+  "gevoel": 2,
+  "formulering": 3,
+  "relevantie": 2,
+  "totaal": 7,
+  "besluit": "nee",
+  "reden": "Warm familieverhaal maar beperkt maatschappelijk relevant; vooral persoonlijk en herkenbaar zonder bredere betekenis."
+ },
+ {
+  "datum": "2026-11-22T12:17:44.708Z",
+  "bron": "Positivr.fr",
+  "titel": "Champignons : cette grave erreur empoisonne vos récoltes comestibles",
+  "uitsluiting": "productnieuws",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Praktisch advies over champignonteelt zonder verhaal; zuiver consumptieve content zonder maatschappelijke kern."
+ },
+ {
+  "datum": "2026-11-22T12:17:44.708Z",
+  "bron": "Positivr.fr",
+  "titel": "Asiminier : découvrez le « manguier du froid » à adopter sans hésiter cet automne",
+  "uitsluiting": "productnieuws",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Tuinadvies over een fruitboom; geen verhaal, geen maatschappelijke betekenis, puur consumptieve tuinierinfo."
+ },
+ {
+  "datum": "2026-11-22T12:17:44.708Z",
+  "bron": "YesMagazine.org",
+  "titel": "Native Youth Programs Are Building a Different Model of Mental Health Care",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 4,
+  "totaal": 10,
+  "besluit": "ja",
+  "reden": "Hartverwarmend verhaal over cultureel gegronde mentale gezondheidszorg die levens transformeert; maatschappelijk relevant en persoonlijk herkenbaar."
+ },
+ {
   "datum": "2026-11-22T00:17:58.082Z",
   "bron": "GoodNewsNetwork.org",
   "titel": "Breath of a Whale Captured by Drone Allows Full Genome Sequencing Without Intrusion",
@@ -3526,77 +3598,5 @@
   "totaal": 7,
   "besluit": "nee",
   "reden": "Praktisch, positief advies voor een herkenbare activiteit die eigenaren en huisdieren samen kunnen doen."
- },
- {
-  "datum": "2026-11-09T05:06:33.106Z",
-  "bron": "OptimistDaily.com",
-  "titel": "Dermatologists weigh in on the eat-your-skincare TikTok trend",
-  "uitsluiting": "geen",
-  "gevoel": 2,
-  "formulering": 2,
-  "relevantie": 2,
-  "totaal": 6,
-  "besluit": "nee",
-  "reden": "Positief gezondheidsnieuws over voeding en huidverzorging met deskundige inbreng, herkenbaar voor veel lezers."
- },
- {
-  "datum": "2026-11-09T05:06:33.106Z",
-  "bron": "OptimistDaily.com",
-  "titel": "2026 midterms produced a record wave of historic governor firsts",
-  "uitsluiting": "politiek",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Verkiezingsnieuws is politiek gekleurde content, ongeacht de positieve toon van de berichtgeving."
- },
- {
-  "datum": "2026-11-09T05:06:33.106Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "These trans and nonbinary candidates just made history",
-  "uitsluiting": "politiek",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Verkiezingsnieuws over politieke kandidaten valt onder politiek gekleurde content."
- },
- {
-  "datum": "2026-11-09T05:06:33.106Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "In Minnesota and New Mexico, midterms usher in historic representation for Native women",
-  "uitsluiting": "politiek",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Verkiezingsnieuws over gouverneurs- en senaatsverkiezingen is politiek gekleurde content."
- },
- {
-  "datum": "2026-11-09T05:06:33.106Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "Keisha Lance Bottoms made history as the first Black woman to be elected governor in the US",
-  "uitsluiting": "politiek",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Verkiezingsnieuws over gouverneursverkiezing valt onder politiek gekleurde content."
- },
- {
-  "datum": "2026-11-09T05:06:33.106Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "Gina Hinojosa made history as the first Latina to be elected governor in Texas",
-  "uitsluiting": "politiek",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Verkiezingsnieuws over gouverneursverkiezing is politiek gekleurde content."
  }
 ]

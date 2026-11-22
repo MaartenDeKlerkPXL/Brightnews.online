@@ -1,10 +1,18 @@
 {
- "gegenereerd": "2026-11-22T00:22:17.558Z",
+ "gegenereerd": "2026-11-22T12:19:40.580Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "1795349915850ms2ikm7m8",
+     "titel": "Native jongerenprogramma's bouwen eigen model voor geestelijke gezondheidszorg",
+     "teaser": "In Noord-Californië biedt Two Feathers Native American Family Services cultureel verankerde geestelijke gezondheidszorg aan Indiaanse jongeren en gezinnen, ongeacht hun stamregistratie. Opgericht in 1998 groeide de organisatie onder leiding van directeur Virgil Moorehead sinds 2018 van vier naar 32 medewerkers. Roger 'Chapreges' Jones, een Yurok-jongere die als tiener worstelde met isolatie en een eetstoornis, vond via een baan bij Two...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/nl/native-jongerenprogramma-s-bouwen-eigen-model-voor-geestelijke-gezondheidszorg-1795349915850ms2ikm7m8.html"
+    },
     {
      "id": "179522046345448rm0wjr3",
      "titel": "Chef Goldberg kookt elke dinsdag 100 maaltijden bij voedselbank Toronto",
@@ -14,12 +22,12 @@
      "url": "https://brightnews.online/articles/nl/chef-goldberg-kookt-elke-dinsdag-100-maaltijden-bij-voedselbank-toronto-179522046345448rm0wjr3.html"
     },
     {
-     "id": "17951771345607z3ri28vl",
-     "titel": "CAR-T-therapie helpt patiënten met stiff person syndrome weer lopen",
-     "teaser": "Een celtherapie die oorspronkelijk is ontwikkeld tegen kanker, blijkt ook te helpen bij stiff person syndrome, een zeldzame auto-immuunziekte waarbij het immuunsysteem het centrale zenuwstelsel aanvalt. In een vroege studie onder leiding van neurologen van Mayo Clinic kregen patiënten die eerder hulp nodig hadden om te lopen en dagelijkse taken uit te voeren, na één behandeling met CAR-T-celtherapie (mivocabtagene autoleucel)...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/nl/car-t-therapie-helpt-patienten-met-stiff-person-syndrome-weer-lopen-17951771345607z3ri28vl.html"
+     "id": "1795349887995lqla9w8am",
+     "titel": "Zoon spoort schrijvers van troostbrieven aan gewonde Vietnamveteraan op",
+     "teaser": "In 1967 schreven 33 schoolkinderen uit Massachusetts brieven aan een onbekende, gewonde marinier in Vietnam. HM3 Russell Jacobson lag met 12 schotwonden en granaatscherven in een onderbezet ziekenhuis, weigerde voedsel en kon weken niet spreken. De brieven van de kinderen van St. Ann School, georganiseerd door een non via een verpleegkundige collega, hielpen hem herstellen. Bijna 60 jaar later gaat...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/zoon-spoort-schrijvers-van-troostbrieven-aan-gewonde-vietnamveteraan-op-1795349887995lqla9w8am.html"
     },
     {
      "id": "1795306791252v9u4l69hm",
@@ -36,14 +44,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/pubeigenaar-in-knaresborough-verlicht-dorp-met-kerstdisplay-van-10-000-lampjes-1795306739210yw4etc3fp.html"
-    },
-    {
-     "id": "1795306709417unxrj97k5",
-     "titel": "Drone vangt walvisadem voor genoomonderzoek zonder verstoring",
-     "teaser": "Onderzoekers van de University of St. Andrews waren onderdeel van een internationaal team dat voor het eerst een volledig genoom van een walvis heeft gesequenced op basis van uitgeademde adem, verzameld met een kleine drone. Eerdere methodes gebruikten darts en biopsieën die de dieren verstoorden. Het team bevestigde sterilie petrischaaltjes aan een drone en verzamelde 58 ademmonsters van 26 bultrugwalvissen...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/nl/drone-vangt-walvisadem-voor-genoomonderzoek-zonder-verstoring-1795306709417unxrj97k5.html"
     }
    ],
    "dagoverzichten": [
@@ -59,6 +59,14 @@
   "en": {
    "top": [
     {
+     "id": "1795349915850ms2ikm7m8",
+     "titel": "Native youth programs build their own mental health care model",
+     "teaser": "In Northern California, Two Feathers Native American Family Services provides culturally grounded mental health care to Native American youth and families, regardless of tribal enrollment status. Founded in 1998, the organization has grown under director Virgil Moorehead's leadership since 2018 from four to 32 staff members. Roger 'Chapreges' Jones, a Yurok youth who struggled with isolation and an eating disorder...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/en/native-youth-programs-build-their-own-mental-health-care-model-1795349915850ms2ikm7m8.html"
+    },
+    {
      "id": "179522046345448rm0wjr3",
      "titel": "Chef Goldberg cooks 100 meals every Tuesday at Toronto food bank",
      "teaser": "Since 2021, chef Maddy Goldberg has been cooking 100 hot meals every Tuesday for visitors to the Fort York Food Bank in Toronto. Goldberg initially studied social work before entering the hospitality industry, but missed the feeling of helping others. When she started her own private dining business and had her first free Tuesday, she volunteered at the local food...",
@@ -67,12 +75,12 @@
      "url": "https://brightnews.online/articles/en/chef-goldberg-cooks-100-meals-every-tuesday-at-toronto-food-bank-179522046345448rm0wjr3.html"
     },
     {
-     "id": "17951771345607z3ri28vl",
-     "titel": "CAR-T therapy helps patients with stiff person syndrome walk again",
-     "teaser": "A cell therapy originally developed against cancer is proving helpful for stiff person syndrome, a rare autoimmune disease in which the immune system attacks the central nervous system. In an early study led by neurologists at Mayo Clinic, patients who previously needed assistance to walk and perform daily tasks regained enough function after a single CAR-T cell therapy treatment (mivocabtagene...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/en/car-t-therapy-helps-patients-with-stiff-person-syndrome-walk-again-17951771345607z3ri28vl.html"
+     "id": "1795349887995lqla9w8am",
+     "titel": "Son tracks down writers of comfort letters to wounded Vietnam veteran",
+     "teaser": "In 1967, 33 schoolchildren from Massachusetts wrote letters to an unknown, wounded Marine in Vietnam. HM3 Russell Jacobson lay in an understaffed hospital with 12 gunshot wounds and shrapnel fragments, refused food and could not speak for weeks. The letters from children at St. Ann School, organized by a nun through a nurse colleague, helped him recover. Nearly 60 years...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/son-tracks-down-writers-of-comfort-letters-to-wounded-vietnam-veteran-1795349887995lqla9w8am.html"
     },
     {
      "id": "1795306791252v9u4l69hm",
@@ -89,14 +97,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/pub-owner-in-knaresborough-lights-up-village-with-10-000-light-christmas-display-1795306739210yw4etc3fp.html"
-    },
-    {
-     "id": "1795306709417unxrj97k5",
-     "titel": "Drone captures whale breath for genome research without disruption",
-     "teaser": "Researchers from the University of St. Andrews were part of an international team that for the first time sequenced a complete whale genome based on exhaled breath collected with a small drone. Earlier methods used darts and biopsies that disturbed the animals. The team attached sterile petri dishes to a drone and collected 58 breath samples from 26 humpback whales...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/en/drone-captures-whale-breath-for-genome-research-without-disruption-1795306709417unxrj97k5.html"
     }
    ],
    "dagoverzichten": [
@@ -112,6 +112,14 @@
   "de": {
    "top": [
     {
+     "id": "1795349915850ms2ikm7m8",
+     "titel": "Native-Jugendprogramme entwickeln eigenes Modell für psychische Gesundheit",
+     "teaser": "Im Norden Kaliforniens bietet Two Feathers Native American Family Services kulturell verankerte psychische Gesundheitsversorgung für indianische Jugendliche und Familien an, unabhängig von ihrer Stammeszugehörigkeit. Die 1998 gegründete Organisation wuchs unter der Leitung von Direktor Virgil Moorehead seit 2018 von vier auf 32 Mitarbeiter. Roger 'Chapreges' Jones, ein Yurok-Jugendlicher, der als Teenager mit Isolation und einer Essstörung kämpfte, fand durch eine...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/de/native-jugendprogramme-entwickeln-eigenes-modell-fur-psychische-gesundheit-1795349915850ms2ikm7m8.html"
+    },
+    {
      "id": "179522046345448rm0wjr3",
      "titel": "Chef Goldberg kocht jeden Dienstag 100 Mahlzeiten in der Lebensmittelbank Toronto",
      "teaser": "Seit 2021 kocht Chef Maddy Goldberg jeden Dienstag 100 warme Mahlzeiten für Besucher der Fort York Food Bank in Toronto. Goldberg studierte zunächst Sozialarbeit, bevor sie in die Gastronomie ging, vermisste aber das Gefühl, anderen zu helfen. Als sie ihr eigenes Private-Dining-Unternehmen gründete und zum ersten Mal einen freien Dienstag hatte, meldete sie sich als Freiwillige bei der lokalen Lebensmittelbank...",
@@ -120,12 +128,12 @@
      "url": "https://brightnews.online/articles/de/chef-goldberg-kocht-jeden-dienstag-100-mahlzeiten-in-der-lebensmittelbank-toront-179522046345448rm0wjr3.html"
     },
     {
-     "id": "17951771345607z3ri28vl",
-     "titel": "CAR-T-Therapie hilft Patienten mit Stiff-Person-Syndrom wieder zu laufen",
-     "teaser": "Eine Zelltherapie, die ursprünglich gegen Krebs entwickelt wurde, erweist sich auch als hilfreich bei Stiff-Person-Syndrom, einer seltenen Autoimmunerkrankung, bei der das Immunsystem das Zentralnervensystem angreift. In einer frühen Studie unter der Leitung von Neurologen der Mayo Clinic erhielten Patienten, die zuvor Hilfe beim Gehen und bei alltäglichen Aufgaben benötigten, nach einer Behandlung mit CAR-T-Zelltherapie (mivocabtagene autoleucel) genug Funktion zurück, um...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/de/car-t-therapie-hilft-patienten-mit-stiff-person-syndrom-wieder-zu-laufen-17951771345607z3ri28vl.html"
+     "id": "1795349887995lqla9w8am",
+     "titel": "Sohn spürt Verfasser von Trostbriefen an verwundetem Vietnamveteran auf",
+     "teaser": "1967 schrieben 33 Schulkinder aus Massachusetts Briefe an einen unbekannten, verwundeten Marinesoldat in Vietnam. HM3 Russell Jacobson lag mit 12 Schusswunden und Granatsplittern in einem unterbesetzten Krankenhaus, weigerte sich zu essen und konnte wochenlang nicht sprechen. Die Briefe der Kinder der St. Ann School, organisiert von einer Nonne über eine Krankenschwester-Kollegin, halfen ihm zu genesen. Fast 60 Jahre später macht...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/sohn-spurt-verfasser-von-trostbriefen-an-verwundetem-vietnamveteran-auf-1795349887995lqla9w8am.html"
     },
     {
      "id": "1795306791252v9u4l69hm",
@@ -142,14 +150,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/pubwirt-in-knaresborough-erleuchtet-dorf-mit-weihnachtsdisplay-aus-10-000-lampch-1795306739210yw4etc3fp.html"
-    },
-    {
-     "id": "1795306709417unxrj97k5",
-     "titel": "Drohne erfasst Walatemzug für Genomanalyse ohne Störung",
-     "teaser": "Forscher der University of St. Andrews waren Teil eines internationalen Teams, das erstmals ein vollständiges Walgennom auf der Grundlage von ausgeatmeter Luft sequenziert hat, die mit einer kleinen Drohne gesammelt wurde. Frühere Methoden verwendeten Pfeile und Biopsien, die die Tiere störten. Das Team befestigte sterile Petrischalen an einer Drohne und sammelte 58 Atemproben von 26 Buckelwalen im Kitimat Fjord System...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/de/drohne-erfasst-walatemzug-fur-genomanalyse-ohne-storung-1795306709417unxrj97k5.html"
     }
    ],
    "dagoverzichten": [
@@ -165,6 +165,14 @@
   "fr": {
    "top": [
     {
+     "id": "1795349915850ms2ikm7m8",
+     "titel": "Les programmes jeunesse autochtones créent leur propre modèle de santé mentale",
+     "teaser": "Dans le nord de la Californie, Two Feathers Native American Family Services offre des services de santé mentale ancrés culturellement aux jeunes et familles autochtones, indépendamment de leur inscription tribale. Fondée en 1998, l'organisation a grandi sous la direction du directeur Virgil Moorehead depuis 2018, passant de quatre à 32 employés. Roger « Chapreges » Jones, un jeune Yurok qui...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/fr/les-programmes-jeunesse-autochtones-creent-leur-propre-modele-de-sante-mentale-1795349915850ms2ikm7m8.html"
+    },
+    {
      "id": "179522046345448rm0wjr3",
      "titel": "La chef Goldberg prépare 100 repas chaque mardi à la banque alimentaire de Toronto",
      "teaser": "Depuis 2021, la chef Maddy Goldberg prépare chaque mardi 100 repas chauds pour les visiteurs de la Fort York Food Bank à Toronto. Goldberg a d'abord étudié le travail social avant de se lancer dans la restauration, mais lui manquait le sentiment d'aider les autres. Quand elle a créé sa propre entreprise de restauration privée et a eu son premier...",
@@ -173,12 +181,12 @@
      "url": "https://brightnews.online/articles/fr/la-chef-goldberg-prepare-100-repas-chaque-mardi-a-la-banque-alimentaire-de-toron-179522046345448rm0wjr3.html"
     },
     {
-     "id": "17951771345607z3ri28vl",
-     "titel": "La thérapie CAR-T aide les patients atteints du syndrome de la personne raide à remarcher",
-     "teaser": "Une thérapie cellulaire initialement développée contre le cancer s'avère également efficace contre le syndrome de la personne raide, une maladie auto-immune rare au cours de laquelle le système immunitaire attaque le système nerveux central. Dans une étude précoce dirigée par des neurologues de Mayo Clinic, des patients qui avaient auparavant besoin d'aide pour marcher et accomplir les tâches quotidiennes ont...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/fr/la-therapie-car-t-aide-les-patients-atteints-du-syndrome-de-la-personne-raide-a-17951771345607z3ri28vl.html"
+     "id": "1795349887995lqla9w8am",
+     "titel": "Le fils retrouve les auteurs de lettres de réconfort adressées à un vétéran du Vietnam blessé",
+     "teaser": "En 1967, 33 écoliers du Massachusetts ont écrit des lettres à un marin blessé inconnu au Vietnam. HM3 Russell Jacobson gisait à l'hôpital avec 12 blessures par balles et des éclats d'obus, refusait de se nourrir et ne pouvait pas parler pendant des semaines. Les lettres des enfants de St. Ann School, organisées par une religieuse via une collègue infirmière,...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/le-fils-retrouve-les-auteurs-de-lettres-de-reconfort-adressees-a-un-veteran-du-v-1795349887995lqla9w8am.html"
     },
     {
      "id": "1795306791252v9u4l69hm",
@@ -195,14 +203,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/le-proprietaire-d-un-pub-a-knaresborough-illumine-le-village-avec-10-000-petites-1795306739210yw4etc3fp.html"
-    },
-    {
-     "id": "1795306709417unxrj97k5",
-     "titel": "Un drone capture le souffle de baleine pour séquençage génomique sans perturbation",
-     "teaser": "Des chercheurs de l'University of St. Andrews faisaient partie d'une équipe internationale qui a séquencé pour la première fois un génome complet de baleine à partir d'air expiré, collecté à l'aide d'un petit drone. Les méthodes antérieures utilisaient des fléchettes et des biopsies qui perturbaient les animaux. L'équipe a fixé de petites boîtes de Pétri stériles à un drone et...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/fr/un-drone-capture-le-souffle-de-baleine-pour-sequencage-genomique-sans-perturbati-1795306709417unxrj97k5.html"
     }
    ],
    "dagoverzichten": [
@@ -218,6 +218,14 @@
   "es": {
    "top": [
     {
+     "id": "1795349915850ms2ikm7m8",
+     "titel": "Programas nativos para jóvenes construyen su propio modelo de salud mental",
+     "teaser": "En el norte de California, Two Feathers Native American Family Services ofrece atención de salud mental culturalmente arraigada a jóvenes y familias indígenas, independientemente de su registro tribal. Fundada en 1998, la organización creció bajo la dirección del director Virgil Moorehead desde 2018, pasando de cuatro a 32 empleados. Roger 'Chapreges' Jones, un joven Yurok que como adolescente luchó contra...",
+     "score": 10,
+     "categorie": "Health",
+     "url": "https://brightnews.online/articles/es/programas-nativos-para-jovenes-construyen-su-propio-modelo-de-salud-mental-1795349915850ms2ikm7m8.html"
+    },
+    {
      "id": "179522046345448rm0wjr3",
      "titel": "La chef Goldberg cocina 100 comidas cada martes en el banco de alimentos de Toronto",
      "teaser": "Desde 2021, la chef Maddy Goldberg prepara cada martes 100 comidas calientes para los visitantes de Fort York Food Bank en Toronto. Goldberg estudió primero trabajo social antes de incursionar en la gastronomía, pero echaba de menos la sensación de ayudar a otros. Cuando comenzó su propio negocio de catering privado y tuvo su primer martes libre, se ofreció como...",
@@ -226,12 +234,12 @@
      "url": "https://brightnews.online/articles/es/la-chef-goldberg-cocina-100-comidas-cada-martes-en-el-banco-de-alimentos-de-toro-179522046345448rm0wjr3.html"
     },
     {
-     "id": "17951771345607z3ri28vl",
-     "titel": "La terapia CAR-T ayuda a pacientes con síndrome de persona rígida a volver a caminar",
-     "teaser": "Una terapia celular desarrollada originalmente contra el cáncer resulta ser también efectiva para el síndrome de persona rígida, una enfermedad autoinmune rara en la que el sistema inmunológico ataca el sistema nervioso central. En un estudio preliminar dirigido por neurólogos de Mayo Clinic, pacientes que anteriormente necesitaban ayuda para caminar y realizar tareas cotidianas recuperaron suficiente función tras un único...",
-     "score": 10,
-     "categorie": "Health",
-     "url": "https://brightnews.online/articles/es/la-terapia-car-t-ayuda-a-pacientes-con-sindrome-de-persona-rigida-a-volver-a-cam-17951771345607z3ri28vl.html"
+     "id": "1795349887995lqla9w8am",
+     "titel": "Hijo localiza a los autores de cartas de consuelo para un veterano de Vietnam herido",
+     "teaser": "En 1967, 33 escolares de Massachusetts escribieron cartas a un marinero desconocido y herido en Vietnam. HM3 Russell Jacobson estaba ingresado en un hospital con falta de personal, con 12 heridas de bala y metralla, rechazaba la comida y no podía hablar durante semanas. Las cartas de los niños de St. Ann School, organizadas por una monja a través de...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/hijo-localiza-a-los-autores-de-cartas-de-consuelo-para-un-veterano-de-vietnam-he-1795349887995lqla9w8am.html"
     },
     {
      "id": "1795306791252v9u4l69hm",
@@ -248,14 +256,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/dueno-de-pub-en-knaresborough-ilumina-el-pueblo-con-decoracion-navidena-de-10-00-1795306739210yw4etc3fp.html"
-    },
-    {
-     "id": "1795306709417unxrj97k5",
-     "titel": "Dron captura aliento de ballena para análisis genómico sin perturbación",
-     "teaser": "Investigadores de la University of St. Andrews formaron parte de un equipo internacional que por primera vez secuenció un genoma completo de ballena basándose en aire exhalado, recolectado con una pequeña dron. Los métodos anteriores utilizaban dardos y biopsias que perturbaban a los animales. El equipo fijó placas de Petri estériles a una dron y recolectó 58 muestras de aliento...",
-     "score": 9,
-     "categorie": "Science",
-     "url": "https://brightnews.online/articles/es/dron-captura-aliento-de-ballena-para-analisis-genomico-sin-perturbacion-1795306709417unxrj97k5.html"
     }
    ],
    "dagoverzichten": [

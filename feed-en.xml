@@ -6,13 +6,28 @@
         <atom:link href="https://brightnews.online/feed-en.xml" rel="self" type="application/rss+xml"/>
         <description>A fresh pick of good news from around the world, every day. Enjoy the read!</description>
         <language>en-us</language>
-        <lastBuildDate>Sun, 22 Nov 2026 00:21:12 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Nov 2026 12:18:37 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Your Daily Dose of Positivity</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Native youth programs build their own mental health care model</title>
+            <link>https://brightnews.online/articles/en/native-youth-programs-build-their-own-mental-health-care-model-1795349915850ms2ikm7m8.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/native-youth-programs-build-their-own-mental-health-care-model-1795349915850ms2ikm7m8.html</guid>
+            <pubDate>Sun, 22 Nov 2026 12:18:37 GMT</pubDate>
+            <description>In Northern California, Two Feathers Native American Family Services provides culturally grounded mental health care to Native American youth and families, regardless of tribal enrollment status. Founded in 1998, the organization has grown under director Virgil Moorehead&apos;s leadership since 2018 from four to 32 staff members. Roger &apos;Chapreges&apos; Jones, a Yurok youth who struggled with isolation and a</description>
+        </item>
+        <item>
+            <title>Son tracks down writers of comfort letters to wounded Vietnam veteran</title>
+            <link>https://brightnews.online/articles/en/son-tracks-down-writers-of-comfort-letters-to-wounded-vietnam-veteran-1795349887995lqla9w8am.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/son-tracks-down-writers-of-comfort-letters-to-wounded-vietnam-veteran-1795349887995lqla9w8am.html</guid>
+            <pubDate>Sun, 22 Nov 2026 12:18:10 GMT</pubDate>
+            <description>In 1967, 33 schoolchildren from Massachusetts wrote letters to an unknown, wounded Marine in Vietnam. HM3 Russell Jacobson lay in an understaffed hospital with 12 gunshot wounds and shrapnel fragments, refused food and could not speak for weeks. The letters from children at St. Ann School, organized by a nun through a nurse colleague, helped him recover. Nearly 60 years...</description>
+            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Screenshot-2026-11-19-124524.png" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Whale genome decoded using drone and whale snot</title>
             <link>https://brightnews.online/articles/en/whale-genome-decoded-using-drone-and-whale-snot-179530687009922xq4wwch.html</link>
@@ -234,22 +249,6 @@
             <pubDate>Fri, 20 Nov 2026 00:18:47 GMT</pubDate>
             <description>A stray cat that had been fed by hospital staff in Izmir, Turkey for some time suddenly carried one of her kittens inside one morning. She walked fearlessly through the corridors, seeking help. Staff members examined the kitten and its siblings together with a veterinarian. The kittens were found to have an eye infection that prevented them from opening their...</description>
             <enclosure url="https://www.upworthy.com/wp-content/uploads/sites/2/2025/08/origin-226.jpg?w=900&amp;quality=82" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Therapist&apos;s advice &apos;run the dishwasher twice&apos; strikes a chord</title>
-            <link>https://brightnews.online/articles/en/therapist-s-advice-run-the-dishwasher-twice-strikes-a-chord-1795133899556jdl3oz2xe.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/therapist-s-advice-run-the-dishwasher-twice-strikes-a-chord-1795133899556jdl3oz2xe.html</guid>
-            <pubDate>Fri, 20 Nov 2026 00:18:22 GMT</pubDate>
-            <description>A woman shared a story on Quora about her therapist that went viral after counselor Danielle Wunker posted it on Facebook. When she was going through a difficult period and couldn&apos;t even do the dishes, her therapist advised her to simply run the dishwasher two or three times instead of scrubbing the dishes first. This advice helped her realize that...</description>
-            <enclosure url="https://www.upworthy.com/wp-content/uploads/sites/2/2025/12/origin_95b02a.png?w=1200&amp;#038;quality=80" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Chester Zoo saves endangered Malaysian peacock pheasant chicks with foster mother and rubber glove</title>
-            <link>https://brightnews.online/articles/en/chester-zoo-saves-endangered-malaysian-peacock-pheasant-chicks-with-foster-mothe-1795100193545l88yesrjj.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/chester-zoo-saves-endangered-malaysian-peacock-pheasant-chicks-with-foster-mothe-1795100193545l88yesrjj.html</guid>
-            <pubDate>Thu, 19 Nov 2026 14:56:34 GMT</pubDate>
-            <description>Chester Zoo was the only zoo in Europe this year to successfully hatch a Malaysian peacock pheasant. Only 15 of these endangered birds are being raised in captivity across European zoos. When a young mother abandoned her first egg, keepers placed it with a bronze-coloured peacock pheasant, who took on the role of foster mother. A second egg was hatched...</description>
-            <enclosure url="https://cdn.prod.website-files.com/6ac7f2e22eaacd2873850a17/6afe0d569c31ec067428cf5f_endangered-species-peacock-pheasant-chicks-featured.webp" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>
