@@ -7,7 +7,9 @@ placeholders {TAAL}, {AANTAL}, {WOORDEN} en {ITEMS} worden door
 `backend/digest.js` ingevuld; de prompt-versie (hash) staat per overzicht in
 het log, zodat zichtbaar is welke versie welk artikel schreef.
 
-Versie: v3 (2026-11-17) — de regel over datums en tijdwoorden staat nu bij de
+Versie: v4 (2026-11-22) — een vaste weekdag uit een bericht ("elke dinsdag")
+mag blijven staan; het overzicht van 21 november strandde daar drie runs op.
+v3 (2026-11-17) — de regel over datums en tijdwoorden staat nu bij de
 harde regels; het eerste v2-overzicht schreef toch "Vandaag draait het om…".
 v2 (2026-11-16, UX-review fase 4) — één overzicht per dag over alle
 onderwerpen, zonder datum in de tekst, titel in zinsstijl.
@@ -46,7 +48,9 @@ Inhoud — harde regels:
 - Noem nergens een datum, een weekdag of een tijdwoord: dus niet "vandaag",
   "gisteren", "morgen", "vanochtend", "maandag" of "rond 11 november". Het
   overzicht verschijnt pas de dag erna en de pagina toont de datum al.
-  Schrijf "deze dag" als je naar de dag wilt verwijzen.
+  Schrijf "deze dag" als je naar de dag wilt verwijzen. Enige uitzondering:
+  gebeurt iets in een bericht op een vaste weekdag, schrijf dan "elke
+  dinsdag" (met "elke" ervoor) of "wekelijks".
 - Een pakkende titel in zinsstijl: alleen het eerste woord en eigennamen met
   een hoofdletter. Zonder het woord "inspirerend", zonder datum, en zonder de
   indruk te wekken dat dit één nieuwsfeit is (het is een dagoverzicht).
