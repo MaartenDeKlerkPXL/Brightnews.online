@@ -154,11 +154,11 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
 > **Maarten:**
 > - [ ] **Vrijdag 20 november: Erik herinneren** aan Anthropic auto-reload en
 >   een tegoedalarm (TODO 26 en 69.2). Erik zet het zelf aan.
-> - [ ] Posts plaatsen op Instagram, Facebook en LinkedIn: post 2 vrijdag,
->   post 3 zaterdag, post 4 zondag (beelden gemaakt, teksten in
->   `assets/sociale-media/teksten.md`). Post 1 staat online (19 november).
-> - [ ] Award: de video maken (script en stappen in `pxl-award/video-script.md`),
->   en zondag insturen met het canvas als PDF (TODO 84).
+> - [x] Posts 1 tot 4 staan online op Instagram, Facebook en LinkedIn
+>   (19 t/m 22 november).
+> - [x] Award: video gemaakt en de inschrijving ingediend met het canvas als
+>   PDF (22 november). Op 2 december bericht of BrightNews in de finale zit
+>   (TODO 84).
 > - [x] **Live op zaterdag 21 november**, een dag eerder dan gepland (PR #43,
 >   TODO 2). Nagekeken in een schone browser: echte home, geen consolefouten.
 > - [x] In Search Console indexering aangevraagd voor `/` (22 november; de
@@ -363,8 +363,9 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   3. ✅ **De vragen in het formulier**: ingevuld door Maarten op 19 november
      (antwoorden in `pxl-award/formulier-antwoorden.md`, doel 2.500 betalende
      abonnees in drie jaar).
-  4. **Inzenden** op zondag na de lancering ("vandaag live gegaan"). Gaat er
-     iets mis, dan zaterdagavond.
+  4. ✅ **Ingediend** op zondag 22 november, met de video (door Maarten
+     gemaakt) en het canvas als PDF. **2 december: bericht of we in de
+     finale zitten.**
   **Tussen 22 november en 2 december: bewijs verzamelen.**
   5. Een overzicht met echte cijfers: bezoekers, accounts, betalende abonnees,
      talen.
@@ -563,7 +564,7 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   **Punt 3 af (2026-11-19):** profielfoto, banners en bio's staan op Facebook,
   Instagram en LinkedIn, in het Engels (één account per kanaal).
 
-- [ ] **81. Vóór de lancering al iets op sociale media plaatsen.**
+- [x] **81. Vóór de lancering al iets op sociale media plaatsen.**
   *(Maarten, 2026-11-12)* Zodat de kanalen niet leeg zijn als de eerste
   bezoekers komen kijken, en als opwarming voor de lancering en de inzending
   bij PXL StudentStartUP (Ambassador Award, vóór 22 november 23.59 uur).
@@ -571,8 +572,8 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   ontwerp, een paar goede-nieuwsverhalen van die week (de postfabriek maakt
   daar al concepten voor, punt 30 en 45), en de lanceringspost zelf. Plaatsen
   doet Maarten met de hand zolang punt 45 (automatisch plaatsen) niet af is.
-  **Stand 2026-11-19:** post 1 staat online; posts 2 tot 4 zijn gemaakt en
-  gaan vrijdag, zaterdag en zondag online.
+  **Af (2026-11-22):** posts 1 tot 4 staan online op de drie kanalen. Vanaf nu
+  komen de posts uit de cockpit (zie de dagroutine bovenaan).
 
 - [ ] **67. 🚨 ZEER HOGE PRIORITEIT: is de site goed beschermd? Skill maken
   en een volledige controle met alle agents.** *Stand 2026-11-18:* de controle
