@@ -1,6 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://brightnews.online/articles/nl/zorg-en-vindingrijkheid-op-elk-continent-dg-20261121-dag.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T14:52:09.903Z</news:publication_date>
+      <news:title>Zorg en vindingrijkheid op elk continent</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/care-and-resourcefulness-on-every-continent-dg-20261121-dag.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T14:52:09.903Z</news:publication_date>
+      <news:title>Care and resourcefulness on every continent</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/fursorge-und-erfindungsreichtum-auf-jedem-kontinent-dg-20261121-dag.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T14:52:09.903Z</news:publication_date>
+      <news:title>Fürsorge und Erfindungsreichtum auf jedem Kontinent</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/soins-et-ingeniosite-sur-tous-les-continents-dg-20261121-dag.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T14:52:09.903Z</news:publication_date>
+      <news:title>Soins et ingéniosité sur tous les continents</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/cuidado-e-ingenio-en-cada-continente-dg-20261121-dag.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T14:52:09.903Z</news:publication_date>
+      <news:title>Cuidado e ingenio en cada continente</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://brightnews.online/articles/nl/native-jongerenprogramma-s-bouwen-eigen-model-voor-geestelijke-gezondheidszorg-1795349915850ms2ikm7m8.html</loc>
     <news:news>
       <news:publication>
@@ -1043,226 +1098,6 @@
       </news:publication>
       <news:publication_date>2026-11-21T00:18:33.893Z</news:publication_date>
       <news:title>Hijo localiza a los autores de cartas de consuelo para un veterano de Vietnam herido</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/holle-boom-biedt-vleermuizen-winterverblijf-1795177262499pb0meh8sp.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T12:21:04.990Z</news:publication_date>
-      <news:title>Holle boom biedt vleermuizen winterverblijf</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/hollow-tree-offers-bats-winter-shelter-1795177262499pb0meh8sp.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T12:21:04.990Z</news:publication_date>
-      <news:title>Hollow tree offers bats winter shelter</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/hohler-baum-bietet-fledermausen-winterquartier-1795177262499pb0meh8sp.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T12:21:04.990Z</news:publication_date>
-      <news:title>Hohler Baum bietet Fledermäusen Winterquartier</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/un-arbre-creux-offre-un-refuge-hivernal-aux-chauves-souris-1795177262499pb0meh8sp.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T12:21:04.990Z</news:publication_date>
-      <news:title>Un arbre creux offre un refuge hivernal aux chauves-souris</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/un-arbol-hueco-ofrece-refugio-invernal-a-los-murcielagos-1795177262499pb0meh8sp.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T12:21:04.990Z</news:publication_date>
-      <news:title>Un árbol hueco ofrece refugio invernal a los murciélagos</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/86-jarige-carole-wade-zong-ooit-achtergrondzang-voor-elvis-imitators-1795177235782t5f8hyl7z.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T12:20:38.366Z</news:publication_date>
-      <news:title>86-jarige Carole Wade zong ooit achtergrondzang voor Elvis-imitators</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/86-year-old-carole-wade-once-sang-backup-for-elvis-impersonators-1795177235782t5f8hyl7z.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T12:20:38.366Z</news:publication_date>
-      <news:title>86-year-old Carole Wade once sang backup for Elvis impersonators</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/86-jahrige-carole-wade-sang-einst-backgroundgesang-fur-elvis-imitatoren-1795177235782t5f8hyl7z.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T12:20:38.366Z</news:publication_date>
-      <news:title>86-jährige Carole Wade sang einst Backgroundgesang für Elvis-Imitatoren</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/carole-wade-86-ans-chantait-autrefois-en-ch-ur-pour-des-imitateurs-d-elvis-1795177235782t5f8hyl7z.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T12:20:38.366Z</news:publication_date>
-      <news:title>Carole Wade, 86 ans, chantait autrefois en chœur pour des imitateurs d'Elvis</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/carole-wade-de-86-anos-canto-coros-para-imitadores-de-elvis-1795177235782t5f8hyl7z.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T12:20:38.366Z</news:publication_date>
-      <news:title>Carole Wade, de 86 años, cantó coros para imitadores de Elvis</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/audrey-hepburn-weigerde-haar-rimpels-te-laten-wegwerken-1795177210279wsefbkfj0.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T12:20:12.970Z</news:publication_date>
-      <news:title>Audrey Hepburn weigerde haar rimpels te laten wegwerken</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/audrey-hepburn-refused-to-have-her-wrinkles-removed-1795177210279wsefbkfj0.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T12:20:12.970Z</news:publication_date>
-      <news:title>Audrey Hepburn refused to have her wrinkles removed</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/audrey-hepburn-weigerte-sich-ihre-falten-entfernen-zu-lassen-1795177210279wsefbkfj0.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T12:20:12.970Z</news:publication_date>
-      <news:title>Audrey Hepburn weigerte sich, ihre Falten entfernen zu lassen</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/audrey-hepburn-refusait-de-faire-effacer-ses-rides-1795177210279wsefbkfj0.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T12:20:12.970Z</news:publication_date>
-      <news:title>Audrey Hepburn refusait de faire effacer ses rides</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/audrey-hepburn-se-nego-a-eliminar-sus-arrugas-1795177210279wsefbkfj0.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T12:20:12.970Z</news:publication_date>
-      <news:title>Audrey Hepburn se negó a eliminar sus arrugas</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/gewone-tuinvogels-herkennen-gezichten-en-geven-soms-cadeautjes-17951771876940rd3zuske.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T12:19:49.738Z</news:publication_date>
-      <news:title>Gewone tuinvogels herkennen gezichten en geven soms cadeautjes</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/common-garden-birds-recognize-faces-and-sometimes-bring-gifts-17951771876940rd3zuske.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T12:19:49.738Z</news:publication_date>
-      <news:title>Common garden birds recognize faces and sometimes bring gifts</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/gewohnliche-gartenvogel-erkennen-gesichter-und-bringen-manchmal-geschenke-17951771876940rd3zuske.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T12:19:49.738Z</news:publication_date>
-      <news:title>Gewöhnliche Gartenvögel erkennen Gesichter und bringen manchmal Geschenke</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/les-oiseaux-de-jardin-ordinaires-reconnaissent-les-visages-et-offrent-parfois-de-17951771876940rd3zuske.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T12:19:49.738Z</news:publication_date>
-      <news:title>Les oiseaux de jardin ordinaires reconnaissent les visages et offrent parfois des cadeaux</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/los-pajaros-de-jardin-comunes-reconocen-rostros-y-a-veces-dejan-regalos-17951771876940rd3zuske.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-20T12:19:49.738Z</news:publication_date>
-      <news:title>Los pájaros de jardín comunes reconocen rostros y a veces dejan regalos</news:title>
     </news:news>
   </url>
 </urlset>

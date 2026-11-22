@@ -1,5 +1,47 @@
 [
   {
+    "id": "dg-20261121-dag",
+    "type": "digest",
+    "digest_date": "2026-11-21",
+    "title": "Care and resourcefulness on every continent",
+    "summary": "This day shows how people in vastly different places go that extra mile for one another, for animals, or for the future. From a kitchen in Toronto to a classroom in South Korea, from a closed highway in Idaho to a paper mill in Assam: stories of care and resourcefulness are popping up everywhere. In Toronto, chef Maddy Goldberg cooks one hundred hot meals every Tuesday for the Fort York Food Bank [1]. She uses whatever the food bank happens to have that day: onions, carrots, potatoes, eggs, milk. From these she creates dishes like lentil fritters with caramelized onion,...",
+    "image_alt": "Care and resourcefulness on every continent",
+    "meta_description": "From a chef's kitchen to rhinoceros dung as paper: today's positive news in one overview.",
+    "meta_keywords": "Lifestyle, Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": null,
+    "date": "2026-11-22T14:52:09.903Z",
+    "category": null,
+    "refs": [
+      {
+        "id": "179522046345448rm0wjr3",
+        "title": "Chef Goldberg cooks 100 meals every Tuesday at Toronto food bank"
+      },
+      {
+        "id": "1795220509370ur3vcrju4",
+        "title": "South Korean schools embrace Great Books model against AI"
+      },
+      {
+        "id": "1795220387260w84f1ih3y",
+        "title": "Elk hunter saves wedding with dirt bike after highway closure"
+      },
+      {
+        "id": "1795220362623l9h7qd7dp",
+        "title": "Chef Maddy Goldberg cooks weekly for a hundred homeless people with food bank ingredients"
+      },
+      {
+        "id": "1795220337151t6mz7xs0u",
+        "title": "Rhino dung becomes paper and protects the animals"
+      },
+      {
+        "id": "1795220311324b3iu7hu4j",
+        "title": "Son tracks down writers of comfort letters to wounded Vietnam veteran"
+      }
+    ],
+    "slug": "care-and-resourcefulness-on-every-continent"
+  },
+  {
     "id": "1795349915850ms2ikm7m8",
     "title": "Native youth programs build their own mental health care model",
     "summary": "In Northern California, Two Feathers Native American Family Services provides culturally grounded mental health care to Native American youth and families, regardless of tribal enrollment status. Founded in 1998, the organization has grown under director Virgil Moorehead's leadership since 2018 from four to 32 staff members. Roger 'Chapreges' Jones, a Yurok youth who struggled with isolation and an eating disorder...",
@@ -2460,36 +2502,6 @@
     "slug": "student-makes-chocolate-bar-from-entirely-british-cocoa"
   },
   {
-    "id": "dg-20261103-lifestyle",
-    "type": "digest",
-    "digest_date": "2026-11-03",
-    "title": "Connection in three forms: from compassion to skateboarding and village life",
-    "summary": "These days show that progress often begins with something simple: being together with others, without fixed roles or labels. Whether it's countering extremism, relearning how to move after an accident, or rethinking what care actually means, it always comes down to people who truly see each other. Farah Pandith spent decades of her career in the counterterrorism sector, including work for three American administrations. She discovered that extremism often arises from uncertainty and a search for recognition, not from pure hatred. After 9/11, she began working at USAID and the National Security Council, where she developed an approach centered on...",
-    "image_alt": "Connection in three forms: from compassion to skateboarding and village life",
-    "meta_description": "From compassion against extremism to wheelchair skateboarding and care without labels: three stories about connection on November 3, 2026.",
-    "meta_keywords": "Lifestyle",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://reasonstobecheerful.world/wp-content/uploads/2026/11/U.S._Special_Representative_to_Muslim_Communities_Farah_Pandith_visits_Pesantren_Sirojul_Munir_in_Bekasi_6025301458.jpg",
-    "date": "2026-11-04T05:20:15.347Z",
-    "category": "Lifestyle",
-    "refs": [
-      {
-        "id": "17937694795126qpt1w8g5",
-        "title": "Counterterrorism expert Farah Pandith teaches communities to practice compassion"
-      },
-      {
-        "id": "1793733306502wvehv8k6h",
-        "title": "Xie Junwu Teaches Others Wheelchair Skateboarding in China"
-      },
-      {
-        "id": "17937332369596ss98f5gb",
-        "title": "Village Botton shows care without the 'service' label"
-      }
-    ],
-    "slug": "connection-in-three-forms-from-compassion-to-skateboarding-and-village-life"
-  },
-  {
     "id": "dg-20261103-environment",
     "type": "digest",
     "digest_date": "2026-11-03",
@@ -2597,20 +2609,5 @@
     "category": "Environment",
     "score": 9,
     "slug": "carbon-credits-open-great-koala-national-park-in-nsw"
-  },
-  {
-    "id": "1793733306502wvehv8k6h",
-    "title": "Xie Junwu Teaches Others Wheelchair Skateboarding in China",
-    "summary": "Xie Junwu, a wheelchair athlete from Nanchang, has climbed mountains, run marathons and now skateboards. At 19, he fell from a tree during a geology internship and became paralyzed from the waist down. After eight years at home, and spurred by his mother's death in 2000, he began practicing wheeling techniques through foreign videos. In 2012, he set a Guinness...",
-    "image_alt": "Xie Junwu demonstrates wheelchair skateboarding at a training center",
-    "meta_description": "Xie Junwu, paralyzed after a fall, climbed mountains and ran marathons — now he teaches others wheelchair skateboarding in China.",
-    "meta_keywords": "Xie Junwu, wheelchair skateboarding, wheelchair wheelie, Guinness World Record, Nanchang, rehabilitation, marathon, Mount Huangshan",
-    "link": "https://www.goodnewsnetwork.org/he-conquered-mountains-and-marathons-now-he-teaches-wheelchair-skateboarding-watch/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/YouTube-screengrab-credit-Xie-Junwu-.jpg",
-    "date": "2026-11-03T19:15:09.823Z",
-    "category": "Lifestyle",
-    "score": 9,
-    "slug": "xie-junwu-teaches-others-wheelchair-skateboarding-in-china"
   }
 ]

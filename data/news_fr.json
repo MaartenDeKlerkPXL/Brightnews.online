@@ -1,5 +1,47 @@
 [
   {
+    "id": "dg-20261121-dag",
+    "type": "digest",
+    "digest_date": "2026-11-21",
+    "title": "Soins et ingéniosité sur tous les continents",
+    "summary": "Cette journée montre comment des gens, en des endroits très différents, font ce petit effort supplémentaire pour autrui, pour les animaux ou pour l'avenir. D'une cuisine à Toronto à une salle de classe en Corée du Sud, d'une autoroute fermée en Idaho à une papeterie dans l'Assam : partout émergent des histoires de soins et d'ingéniosité. À Toronto, la chef Maddy Goldberg prépare chaque mardi cent repas chauds pour la Fort York Food Bank [1]. Elle utilise ce que la banque alimentaire a ce jour-là : oignons, carottes, pommes de terre, œufs, lait. Elle en fait des plats comme des...",
+    "image_alt": "Soins et ingéniosité sur tous les continents",
+    "meta_description": "D'une chef cuisinière ingénieuse au fumier de rhinocéros transformé en papier : l'actualité positive du jour en un seul aperçu.",
+    "meta_keywords": "Lifestyle, Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": null,
+    "date": "2026-11-22T14:52:09.903Z",
+    "category": null,
+    "refs": [
+      {
+        "id": "179522046345448rm0wjr3",
+        "title": "La chef Goldberg prépare 100 repas chaque mardi à la banque alimentaire de Toronto"
+      },
+      {
+        "id": "1795220509370ur3vcrju4",
+        "title": "Les écoles sud-coréennes adoptent le modèle Great Books face à l'IA"
+      },
+      {
+        "id": "1795220387260w84f1ih3y",
+        "title": "Un chasseur d'élans sauve un mariage avec un motocross après la fermeture de l'autoroute"
+      },
+      {
+        "id": "1795220362623l9h7qd7dp",
+        "title": "La chef Maddy Goldberg cuisine chaque semaine pour cent personnes sans abri"
+      },
+      {
+        "id": "1795220337151t6mz7xs0u",
+        "title": "Le fumier de rhinocéros devient du papier et protège les animaux"
+      },
+      {
+        "id": "1795220311324b3iu7hu4j",
+        "title": "Un fils retrouve les auteurs de lettres de réconfort adressées à un vétéran du Vietnam blessé"
+      }
+    ],
+    "slug": "soins-et-ingeniosite-sur-tous-les-continents"
+  },
+  {
     "id": "1795349915850ms2ikm7m8",
     "title": "Les programmes jeunesse autochtones créent leur propre modèle de santé mentale",
     "summary": "Dans le nord de la Californie, Two Feathers Native American Family Services offre des services de santé mentale ancrés culturellement aux jeunes et familles autochtones, indépendamment de leur inscription tribale. Fondée en 1998, l'organisation a grandi sous la direction du directeur Virgil Moorehead depuis 2018, passant de quatre à 32 employés. Roger « Chapreges » Jones, un jeune Yurok qui...",
@@ -2460,36 +2502,6 @@
     "slug": "une-etudiante-fabrique-une-tablette-de-chocolat-a-partir-de-cacao-entierement-br"
   },
   {
-    "id": "dg-20261103-lifestyle",
-    "type": "digest",
-    "digest_date": "2026-11-03",
-    "title": "La connexion sous trois formes : de la compassion au skateboard et à la vie villageoise",
-    "summary": "Ces jours-ci montrent que le progrès commence souvent par quelque chose de simple : être ensemble, sans rôles ni étiquettes fixes. Qu'il s'agisse de lutter contre l'extrémisme, de réapprendre à bouger après un accident ou de repenser ce que signifie vraiment prendre soin de quelqu'un, tout tourne autour de personnes qui se voient vraiment. Farah Pandith a consacré des décennies de carrière au secteur de la lutte contre le terrorisme, notamment pour trois gouvernements américains. Elle a découvert que l'extrémisme naît souvent de l'incertitude et de la quête de reconnaissance, non de la pure haine. Après le 11 septembre, elle...",
-    "image_alt": "La connexion sous trois formes : de la compassion au skateboard et à la vie villageoise",
-    "meta_description": "De la compassion contre l'extrémisme au skateboard en fauteuil roulant et aux soins sans étiquette : trois histoires de connexion le 3 novembre 2026.",
-    "meta_keywords": "Lifestyle",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://reasonstobecheerful.world/wp-content/uploads/2026/11/U.S._Special_Representative_to_Muslim_Communities_Farah_Pandith_visits_Pesantren_Sirojul_Munir_in_Bekasi_6025301458.jpg",
-    "date": "2026-11-04T05:20:15.347Z",
-    "category": "Lifestyle",
-    "refs": [
-      {
-        "id": "17937694795126qpt1w8g5",
-        "title": "L'experte en terrorisme Farah Pandith enseigne aux communautés à cultiver la compassion"
-      },
-      {
-        "id": "1793733306502wvehv8k6h",
-        "title": "Xie Junwu enseigne le skateboard en fauteuil roulant en Chine"
-      },
-      {
-        "id": "17937332369596ss98f5gb",
-        "title": "Le village de Botton montre l'aide sans l'étiquette de « service »"
-      }
-    ],
-    "slug": "la-connexion-sous-trois-formes-de-la-compassion-au-skateboard-et-a-la-vie-villag"
-  },
-  {
     "id": "dg-20261103-environment",
     "type": "digest",
     "digest_date": "2026-11-03",
@@ -2597,20 +2609,5 @@
     "category": "Environment",
     "score": 9,
     "slug": "les-credits-carbone-ouvrent-le-great-koala-national-park-en-nouvelle-galles-du-s"
-  },
-  {
-    "id": "1793733306502wvehv8k6h",
-    "title": "Xie Junwu enseigne le skateboard en fauteuil roulant en Chine",
-    "summary": "Xie Junwu, athlète en fauteuil roulant originaire de Nanchang, a gravi des montagnes, couru des marathons et pratique désormais le skateboard. À 19 ans, il est tombé d'un arbre lors d'un stage de géologie et s'est retrouvé paralysé à partir de la taille. Après huit ans à la maison, et suite au décès de sa mère en 2000 qui l'a...",
-    "image_alt": "Xie Junwu démontre le skateboard en fauteuil roulant dans un centre d'entraînement",
-    "meta_description": "Xie Junwu, paralysé après une chute, a gravi des montagnes et couru des marathons - il enseigne désormais le skateboard en fauteuil roulant en Chine.",
-    "meta_keywords": "Xie Junwu, skateboard en fauteuil roulant, wheelchair wheelie, Guinness World Record, Nanchang, réadaptation, marathon, Mount Huangshan",
-    "link": "https://www.goodnewsnetwork.org/he-conquered-mountains-and-marathons-now-he-teaches-wheelchair-skateboarding-watch/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/YouTube-screengrab-credit-Xie-Junwu-.jpg",
-    "date": "2026-11-03T19:15:09.823Z",
-    "category": "Lifestyle",
-    "score": 9,
-    "slug": "xie-junwu-enseigne-le-skateboard-en-fauteuil-roulant-en-chine"
   }
 ]

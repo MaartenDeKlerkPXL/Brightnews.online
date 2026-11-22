@@ -1,5 +1,47 @@
 [
   {
+    "id": "dg-20261121-dag",
+    "type": "digest",
+    "digest_date": "2026-11-21",
+    "title": "Zorg en vindingrijkheid op elk continent",
+    "summary": "Deze dag laat zien hoe mensen op heel verschillende plekken net dat beetje extra doen voor een ander, voor dieren of voor de toekomst. Van een keuken in Toronto tot een klaslokaal in Zuid-Korea, van een afgesloten snelweg in Idaho tot een papierfabriek in Assam: overal duiken verhalen op over zorg en vindingrijkheid. In Toronto kookt chef Maddy Goldberg elke dinsdag honderd warme maaltijden voor de Fort York Food Bank [1]. Ze gebruikt wat de voedselbank die dag toevallig heeft: uien, wortelen, aardappelen, eieren, melk. Daarvan maakt ze gerechten als linzenfritters met gekarameliseerde ui, kaneel en kerriepoeder. Goldberg stapte over...",
+    "image_alt": "Zorg en vindingrijkheid op elk continent",
+    "meta_description": "Van een kokkerellende chef tot neushoornmest als papier: het positieve nieuws van deze dag in één overzicht.",
+    "meta_keywords": "Lifestyle, Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": null,
+    "date": "2026-11-22T14:52:09.903Z",
+    "category": null,
+    "refs": [
+      {
+        "id": "179522046345448rm0wjr3",
+        "title": "Chef Goldberg kookt elke dinsdag 100 maaltijden bij voedselbank Toronto"
+      },
+      {
+        "id": "1795220509370ur3vcrju4",
+        "title": "Zuid-Koreaanse scholen omarmen Great Books-model tegen AI"
+      },
+      {
+        "id": "1795220387260w84f1ih3y",
+        "title": "Eendenjager redt bruiloft met crossmotor na snelwegsluiting"
+      },
+      {
+        "id": "1795220362623l9h7qd7dp",
+        "title": "Chef Maddy Goldberg kookt wekelijks voor honderd daklozen met voedselbank-ingrediënten"
+      },
+      {
+        "id": "1795220337151t6mz7xs0u",
+        "title": "Neushoornmest wordt papier en beschermt de dieren"
+      },
+      {
+        "id": "1795220311324b3iu7hu4j",
+        "title": "Zoon spoort schrijvers op van troostbrieven aan gewonde Vietnam-veteraan"
+      }
+    ],
+    "slug": "zorg-en-vindingrijkheid-op-elk-continent"
+  },
+  {
     "id": "1795349915850ms2ikm7m8",
     "title": "Native jongerenprogramma's bouwen eigen model voor geestelijke gezondheidszorg",
     "summary": "In Noord-Californië biedt Two Feathers Native American Family Services cultureel verankerde geestelijke gezondheidszorg aan Indiaanse jongeren en gezinnen, ongeacht hun stamregistratie. Opgericht in 1998 groeide de organisatie onder leiding van directeur Virgil Moorehead sinds 2018 van vier naar 32 medewerkers. Roger 'Chapreges' Jones, een Yurok-jongere die als tiener worstelde met isolatie en een eetstoornis, vond via een baan bij Two...",
@@ -2460,36 +2502,6 @@
     "slug": "student-maakt-chocoladereep-van-volledig-britse-cacao"
   },
   {
-    "id": "dg-20261103-lifestyle",
-    "type": "digest",
-    "digest_date": "2026-11-03",
-    "title": "Verbinding in drie vormen: van compassie tot skateboard en dorpsleven",
-    "summary": "Deze dagen laten zien dat vooruitgang vaak begint bij iets simpels: samen zijn met anderen, zonder vaste rollen of etiketten. Of het nu gaat om het tegengaan van extremisme, het opnieuw leren bewegen na een ongeluk, of het herdenken van wat zorg eigenlijk betekent, steeds draait het om mensen die elkaar echt zien. Farah Pandith bracht decennialang haar carrière door in de contraterrorisme-sector, onder meer voor drie Amerikaanse regeringen. Ze ontdekte dat extremisme vaak ontstaat uit onzekerheid en een zoektocht naar erkenning, niet uit pure haat. Na 11 september ging ze aan de slag bij USAID en de National Security...",
-    "image_alt": "Verbinding in drie vormen: van compassie tot skateboard en dorpsleven",
-    "meta_description": "Van compassie tegen extremisme tot rolstoelskateboarden en zorg zonder etiket: drie verhalen over verbinding op 3 november 2026.",
-    "meta_keywords": "Lifestyle",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://reasonstobecheerful.world/wp-content/uploads/2026/11/U.S._Special_Representative_to_Muslim_Communities_Farah_Pandith_visits_Pesantren_Sirojul_Munir_in_Bekasi_6025301458.jpg",
-    "date": "2026-11-04T05:20:15.347Z",
-    "category": "Lifestyle",
-    "refs": [
-      {
-        "id": "17937694795126qpt1w8g5",
-        "title": "Terrorisme-expert Farah Pandith leert gemeenschappen compassie toepassen"
-      },
-      {
-        "id": "1793733306502wvehv8k6h",
-        "title": "Xie Junwu Leert Anderen Rolstoelskateboarden In China"
-      },
-      {
-        "id": "17937332369596ss98f5gb",
-        "title": "Dorp Botton laat zorg zonder etiket 'service' zien"
-      }
-    ],
-    "slug": "verbinding-in-drie-vormen-van-compassie-tot-skateboard-en-dorpsleven"
-  },
-  {
     "id": "dg-20261103-environment",
     "type": "digest",
     "digest_date": "2026-11-03",
@@ -2597,20 +2609,5 @@
     "category": "Environment",
     "score": 9,
     "slug": "koolstofkredieten-openen-great-koala-national-park-in-nsw"
-  },
-  {
-    "id": "1793733306502wvehv8k6h",
-    "title": "Xie Junwu Leert Anderen Rolstoelskateboarden In China",
-    "summary": "Xie Junwu, een rolstoelgebonden atleet uit Nanchang, beklom bergen, liep marathons en skateboardt nu. Op zijn 19e viel hij tijdens een geologie-stage uit een boom en raakte verlamd vanaf zijn middel. Na acht jaar thuis, en de dood van zijn moeder in 2000 die hem aanspoorde, begon hij wielerende technieken te oefenen via buitenlandse video's. In 2012 vestigde hij een...",
-    "image_alt": "Xie Junwu demonstreert rolstoelskateboarden in een trainingscentrum",
-    "meta_description": "Xie Junwu, verlamd na een val, beklom bergen en liep marathons - nu leert hij anderen rolstoelskateboarden in China.",
-    "meta_keywords": "Xie Junwu, rolstoelskateboarden, wheelchair wheelie, Guinness World Record, Nanchang, revalidatie, marathon, Mount Huangshan",
-    "link": "https://www.goodnewsnetwork.org/he-conquered-mountains-and-marathons-now-he-teaches-wheelchair-skateboarding-watch/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/YouTube-screengrab-credit-Xie-Junwu-.jpg",
-    "date": "2026-11-03T19:15:09.823Z",
-    "category": "Lifestyle",
-    "score": 9,
-    "slug": "xie-junwu-leert-anderen-rolstoelskateboarden-in-china"
   }
 ]

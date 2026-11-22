@@ -6,13 +6,20 @@
         <atom:link href="https://brightnews.online/feed-en.xml" rel="self" type="application/rss+xml"/>
         <description>A fresh pick of good news from around the world, every day. Enjoy the read!</description>
         <language>en-us</language>
-        <lastBuildDate>Sun, 22 Nov 2026 12:18:37 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Nov 2026 14:52:09 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Your Daily Dose of Positivity</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Care and resourcefulness on every continent</title>
+            <link>https://brightnews.online/articles/en/care-and-resourcefulness-on-every-continent-dg-20261121-dag.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/care-and-resourcefulness-on-every-continent-dg-20261121-dag.html</guid>
+            <pubDate>Sun, 22 Nov 2026 14:52:09 GMT</pubDate>
+            <description>This day shows how people in vastly different places go that extra mile for one another, for animals, or for the future. From a kitchen in Toronto to a classroom in South Korea, from a closed highway in Idaho to a paper mill in Assam: stories of care and resourcefulness are popping up everywhere. In Toronto, chef Maddy Goldberg cooks one hundred hot meals every Tuesday for the Fort York Food Bank </description>
+        </item>
         <item>
             <title>Native youth programs build their own mental health care model</title>
             <link>https://brightnews.online/articles/en/native-youth-programs-build-their-own-mental-health-care-model-1795349915850ms2ikm7m8.html</link>
@@ -241,14 +248,6 @@
             <pubDate>Fri, 20 Nov 2026 00:19:13 GMT</pubDate>
             <description>A young great horned owl was struck by the truck of driver Ashley Moffitt while she was traveling 65 miles per hour in Lancaster County, Pennsylvania. The bird became wedged in the truck&apos;s air deflector and remained there until Moffitt stopped 70 miles down the road. Employees at Old Dominion Freight Line in Carlisle freed the owl, which was unable...</description>
             <enclosure url="https://www.upworthy.com/wp-content/uploads/sites/2/2026/11/owl-stuck-in-air-dam.jpg?w=1024" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Mother cat brings kittens to hospital in Izmir</title>
-            <link>https://brightnews.online/articles/en/mother-cat-brings-kittens-to-hospital-in-izmir-1795133925965a9p9azot2.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/mother-cat-brings-kittens-to-hospital-in-izmir-1795133925965a9p9azot2.html</guid>
-            <pubDate>Fri, 20 Nov 2026 00:18:47 GMT</pubDate>
-            <description>A stray cat that had been fed by hospital staff in Izmir, Turkey for some time suddenly carried one of her kittens inside one morning. She walked fearlessly through the corridors, seeking help. Staff members examined the kitten and its siblings together with a veterinarian. The kittens were found to have an eye infection that prevented them from opening their...</description>
-            <enclosure url="https://www.upworthy.com/wp-content/uploads/sites/2/2025/08/origin-226.jpg?w=900&amp;quality=82" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

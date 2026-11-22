@@ -1,5 +1,47 @@
 [
   {
+    "id": "dg-20261121-dag",
+    "type": "digest",
+    "digest_date": "2026-11-21",
+    "title": "Fürsorge und Erfindungsreichtum auf jedem Kontinent",
+    "summary": "Dieser Tag zeigt, wie Menschen an ganz unterschiedlichen Orten das kleine Extra für andere, für Tiere oder für die Zukunft aufbringen. Von einer Küche in Toronto bis zu einem Klassenzimmer in Südkorea, von einer gesperrten Autobahn in Idaho bis zu einer Papierfabrik in Assam: überall tauchen Geschichten über Fürsorge und Erfindungsreichtum auf. In Toronto kocht Chefin Maddy Goldberg jeden Dienstag hundert warme Mahlzeiten für die Fort York Food Bank [1]. Sie verwendet, was die Lebensmittelbank an diesem Tag zufällig hat: Zwiebeln, Karotten, Kartoffeln, Eier, Milch. Daraus bereitet sie Gerichte wie Linsenfritter mit karamellisierten Zwiebeln, Zimt und Currypulver zu. Goldberg wechselte...",
+    "image_alt": "Fürsorge und Erfindungsreichtum auf jedem Kontinent",
+    "meta_description": "Von einer erfinderischen Köchin bis zu Nashornmist als Papier: die positiven Nachrichten dieses Tages in einer Übersicht.",
+    "meta_keywords": "Lifestyle, Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": null,
+    "date": "2026-11-22T14:52:09.903Z",
+    "category": null,
+    "refs": [
+      {
+        "id": "179522046345448rm0wjr3",
+        "title": "Chef Goldberg kocht jeden Dienstag 100 Mahlzeiten in der Lebensmittelbank Toronto"
+      },
+      {
+        "id": "1795220509370ur3vcrju4",
+        "title": "Südkoreanische Schulen setzen auf Great Books-Modell gegen KI"
+      },
+      {
+        "id": "1795220387260w84f1ih3y",
+        "title": "Elchjäger rettet Hochzeit mit Crossmotor nach Autobahnschließung"
+      },
+      {
+        "id": "1795220362623l9h7qd7dp",
+        "title": "Köchin Maddy Goldberg kocht wöchentlich für hundert Obdachlose mit Lebensmittelbank-Zutaten"
+      },
+      {
+        "id": "1795220337151t6mz7xs0u",
+        "title": "Nashorn-Mist wird zu Papier und schützt die Tiere"
+      },
+      {
+        "id": "1795220311324b3iu7hu4j",
+        "title": "Sohn spürt Verfasser von Trostbriefen an verwundetem Vietnam-Veteran auf"
+      }
+    ],
+    "slug": "fursorge-und-erfindungsreichtum-auf-jedem-kontinent"
+  },
+  {
     "id": "1795349915850ms2ikm7m8",
     "title": "Native-Jugendprogramme entwickeln eigenes Modell für psychische Gesundheit",
     "summary": "Im Norden Kaliforniens bietet Two Feathers Native American Family Services kulturell verankerte psychische Gesundheitsversorgung für indianische Jugendliche und Familien an, unabhängig von ihrer Stammeszugehörigkeit. Die 1998 gegründete Organisation wuchs unter der Leitung von Direktor Virgil Moorehead seit 2018 von vier auf 32 Mitarbeiter. Roger 'Chapreges' Jones, ein Yurok-Jugendlicher, der als Teenager mit Isolation und einer Essstörung kämpfte, fand durch eine...",
@@ -2460,36 +2502,6 @@
     "slug": "studentin-stellt-schokoladenriegel-aus-britischem-kakao-her"
   },
   {
-    "id": "dg-20261103-lifestyle",
-    "type": "digest",
-    "digest_date": "2026-11-03",
-    "title": "Verbindung in drei Formen: von Mitgefühl bis Skateboard und Dorfleben",
-    "summary": "Diese Tage zeigen, dass Fortschritt oft bei etwas Einfachem beginnt: zusammen mit anderen sein, ohne feste Rollen oder Etiketten. Ob es um die Bekämpfung von Extremismus geht, um das Wiedererlernen von Bewegung nach einem Unfall oder um ein Überdenken dessen, was Fürsorge eigentlich bedeutet – immer dreht es sich um Menschen, die sich wirklich sehen. Farah Pandith verbrachte Jahrzehnte ihrer Karriere im Bereich Terrorismusbekämpfung, unter anderem für drei amerikanische Regierungen. Sie entdeckte, dass Extremismus oft aus Unsicherheit und der Suche nach Anerkennung entsteht, nicht aus reinem Hass. Nach dem 11. September arbeitete sie bei USAID und dem National Security Council,...",
-    "image_alt": "Verbindung in drei Formen: von Mitgefühl bis Skateboard und Dorfleben",
-    "meta_description": "Von Mitgefühl gegen Extremismus bis Rollstuhlskateboarden und Fürsorge ohne Etikett: drei Geschichten über Verbindung am 3. November 2026.",
-    "meta_keywords": "Lifestyle",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://reasonstobecheerful.world/wp-content/uploads/2026/11/U.S._Special_Representative_to_Muslim_Communities_Farah_Pandith_visits_Pesantren_Sirojul_Munir_in_Bekasi_6025301458.jpg",
-    "date": "2026-11-04T05:20:15.347Z",
-    "category": "Lifestyle",
-    "refs": [
-      {
-        "id": "17937694795126qpt1w8g5",
-        "title": "Terrorismus-Expertin Farah Pandith lehrt Gemeinden Mitgefühl"
-      },
-      {
-        "id": "1793733306502wvehv8k6h",
-        "title": "Xie Junwu lehrt andere Rollstuhlskateboardfahren in China"
-      },
-      {
-        "id": "17937332369596ss98f5gb",
-        "title": "Dorf Botton zeigt Fürsorge ohne das Etikett „Service\""
-      }
-    ],
-    "slug": "verbindung-in-drei-formen-von-mitgefuhl-bis-skateboard-und-dorfleben"
-  },
-  {
     "id": "dg-20261103-environment",
     "type": "digest",
     "digest_date": "2026-11-03",
@@ -2597,20 +2609,5 @@
     "category": "Environment",
     "score": 9,
     "slug": "kohlenstoffgutschriften-ermoglichen-great-koala-national-park-in-nsw"
-  },
-  {
-    "id": "1793733306502wvehv8k6h",
-    "title": "Xie Junwu lehrt andere Rollstuhlskateboardfahren in China",
-    "summary": "Xie Junwu, ein querschnittsgelähmter Athlet aus Nanchang, erklomm Berge, lief Marathons und skateboard nun. Mit 19 Jahren stürzte er während eines Geologie-Praktikums aus einem Baum und wurde von der Hüfte abwärts gelähmt. Nach acht Jahren zu Hause und dem Tod seiner Mutter im Jahr 2000, der ihn antrieb, begann er, Wheelie-Techniken anhand ausländischer Videos zu trainieren. 2012 stellte er einen...",
-    "image_alt": "Xie Junwu demonstriert Rollstuhlskateboardfahren in einem Trainingszentrum",
-    "meta_description": "Xie Junwu, gelähmt nach einem Sturz, erklomm Berge und lief Marathons – nun lehrt er andere Rollstuhlskateboardfahren in China.",
-    "meta_keywords": "Xie Junwu, Rollstuhlskateboardfahren, wheelchair wheelie, Guinness World Record, Nanchang, Rehabilitation, Marathon, Mount Huangshan",
-    "link": "https://www.goodnewsnetwork.org/he-conquered-mountains-and-marathons-now-he-teaches-wheelchair-skateboarding-watch/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/YouTube-screengrab-credit-Xie-Junwu-.jpg",
-    "date": "2026-11-03T19:15:09.823Z",
-    "category": "Lifestyle",
-    "score": 9,
-    "slug": "xie-junwu-lehrt-andere-rollstuhlskateboardfahren-in-china"
   }
 ]

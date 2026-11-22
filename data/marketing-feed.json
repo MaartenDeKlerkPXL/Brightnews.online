@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-11-22T12:19:40.580Z",
+ "gegenereerd": "2026-11-22T14:52:14.625Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -47,6 +47,13 @@
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261121-dag",
+     "titel": "Zorg en vindingrijkheid op elk continent",
+     "categorie": null,
+     "dag": "2026-11-21",
+     "url": "https://brightnews.online/articles/nl/zorg-en-vindingrijkheid-op-elk-continent-dg-20261121-dag.html"
+    },
     {
      "id": "dg-20261120-dag",
      "titel": "Deze dag draait om kleine stappen met grote gevolgen",
@@ -101,6 +108,13 @@
    ],
    "dagoverzichten": [
     {
+     "id": "dg-20261121-dag",
+     "titel": "Care and resourcefulness on every continent",
+     "categorie": null,
+     "dag": "2026-11-21",
+     "url": "https://brightnews.online/articles/en/care-and-resourcefulness-on-every-continent-dg-20261121-dag.html"
+    },
+    {
      "id": "dg-20261120-dag",
      "titel": "This day is about small steps with big consequences",
      "categorie": null,
@@ -153,6 +167,13 @@
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261121-dag",
+     "titel": "Fürsorge und Erfindungsreichtum auf jedem Kontinent",
+     "categorie": null,
+     "dag": "2026-11-21",
+     "url": "https://brightnews.online/articles/de/fursorge-und-erfindungsreichtum-auf-jedem-kontinent-dg-20261121-dag.html"
+    },
     {
      "id": "dg-20261120-dag",
      "titel": "Dieser Tag dreht sich um kleine Schritte mit großen Folgen",
@@ -207,6 +228,13 @@
    ],
    "dagoverzichten": [
     {
+     "id": "dg-20261121-dag",
+     "titel": "Soins et ingéniosité sur tous les continents",
+     "categorie": null,
+     "dag": "2026-11-21",
+     "url": "https://brightnews.online/articles/fr/soins-et-ingeniosite-sur-tous-les-continents-dg-20261121-dag.html"
+    },
+    {
      "id": "dg-20261120-dag",
      "titel": "Cette journée tourne autour de petits pas aux grandes conséquences",
      "categorie": null,
@@ -259,6 +287,13 @@
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261121-dag",
+     "titel": "Cuidado e ingenio en cada continente",
+     "categorie": null,
+     "dag": "2026-11-21",
+     "url": "https://brightnews.online/articles/es/cuidado-e-ingenio-en-cada-continente-dg-20261121-dag.html"
+    },
     {
      "id": "dg-20261120-dag",
      "titel": "Este día gira en torno a pasos pequeños con grandes consecuencias",

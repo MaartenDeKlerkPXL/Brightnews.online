@@ -1,5 +1,28 @@
 [
   {
+    "datum": "2026-11-22T14:52:09.903Z",
+    "dag": "2026-11-21",
+    "categorie": null,
+    "ids": [
+      "179522046345448rm0wjr3",
+      "1795220509370ur3vcrju4",
+      "1795220387260w84f1ih3y",
+      "1795220362623l9h7qd7dp",
+      "1795220337151t6mz7xs0u",
+      "1795220311324b3iu7hu4j"
+    ],
+    "prompthash": "79a025e22e8b",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 15713,
+    "woorden": {
+      "nl": 436,
+      "en": 452,
+      "de": 433,
+      "fr": 496,
+      "es": 478
+    }
+  },
+  {
     "datum": "2026-11-21T00:22:46.089Z",
     "dag": "2026-11-20",
     "categorie": null,
@@ -1255,26 +1278,6 @@
       "de": 389,
       "fr": 461,
       "es": 458
-    }
-  },
-  {
-    "datum": "2026-09-16T19:28:43.721Z",
-    "dag": "2026-09-15",
-    "categorie": "Health",
-    "ids": [
-      "1789586309732q90vwcvuu",
-      "1789533361143slogkd3i2",
-      "1789409040112vqs98u8v1"
-    ],
-    "prompthash": "fd561df11314",
-    "model": "moeder+vertaal (anthropic)",
-    "tokens": 13414,
-    "woorden": {
-      "nl": 348,
-      "en": 360,
-      "de": 339,
-      "fr": 427,
-      "es": 416
     }
   }
 ]

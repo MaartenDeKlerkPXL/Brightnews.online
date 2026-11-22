@@ -6,13 +6,20 @@
         <atom:link href="https://brightnews.online/feed-fr.xml" rel="self" type="application/rss+xml"/>
         <description>Chaque jour une sélection fraîche de bonnes nouvelles du monde entier. Bonne lecture !</description>
         <language>fr-fr</language>
-        <lastBuildDate>Sun, 22 Nov 2026 12:18:37 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Nov 2026 14:52:09 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Votre dose quotidienne de positivité</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Soins et ingéniosité sur tous les continents</title>
+            <link>https://brightnews.online/articles/fr/soins-et-ingeniosite-sur-tous-les-continents-dg-20261121-dag.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/fr/soins-et-ingeniosite-sur-tous-les-continents-dg-20261121-dag.html</guid>
+            <pubDate>Sun, 22 Nov 2026 14:52:09 GMT</pubDate>
+            <description>Cette journée montre comment des gens, en des endroits très différents, font ce petit effort supplémentaire pour autrui, pour les animaux ou pour l&apos;avenir. D&apos;une cuisine à Toronto à une salle de classe en Corée du Sud, d&apos;une autoroute fermée en Idaho à une papeterie dans l&apos;Assam : partout émergent des histoires de soins et d&apos;ingéniosité. À Toronto, la chef Maddy Goldberg prépare chaque mardi cent </description>
+        </item>
         <item>
             <title>Les programmes jeunesse autochtones créent leur propre modèle de santé mentale</title>
             <link>https://brightnews.online/articles/fr/les-programmes-jeunesse-autochtones-creent-leur-propre-modele-de-sante-mentale-1795349915850ms2ikm7m8.html</link>
@@ -241,14 +248,6 @@
             <pubDate>Fri, 20 Nov 2026 00:19:13 GMT</pubDate>
             <description>Un jeune Grand-Duc d&apos;Amérique a été heurté par le camion de la chauffeure Ashley Moffitt dans le comté de Lancaster, en Pennsylvanie, alors qu&apos;elle roulait à 65 miles par heure. L&apos;oiseau s&apos;est coincé dans la prise d&apos;air du camion et y est resté jusqu&apos;à ce que Moffitt s&apos;arrête 70 miles plus loin. Des employés de Old Dominion Freight Line à...</description>
             <enclosure url="https://www.upworthy.com/wp-content/uploads/sites/2/2026/11/owl-stuck-in-air-dam.jpg?w=1024" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Une chatte mère amène ses chatons à l&apos;hôpital d&apos;Izmir</title>
-            <link>https://brightnews.online/articles/fr/une-chatte-mere-amene-ses-chatons-a-l-hopital-d-izmir-1795133925965a9p9azot2.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/fr/une-chatte-mere-amene-ses-chatons-a-l-hopital-d-izmir-1795133925965a9p9azot2.html</guid>
-            <pubDate>Fri, 20 Nov 2026 00:18:47 GMT</pubDate>
-            <description>Une chatte errante nourrie depuis longtemps par le personnel de l&apos;hôpital d&apos;Izmir, en Turquie, a soudainement apporté l&apos;un de ses chatons à l&apos;intérieur un matin. Elle a parcouru les couloirs sans crainte, à la recherche d&apos;aide. Les employés ont examiné le petit animal et ses frères et sœurs avec un vétérinaire. Les chatons souffraient d&apos;une inflammation oculaire qui les empêchait...</description>
-            <enclosure url="https://www.upworthy.com/wp-content/uploads/sites/2/2025/08/origin-226.jpg?w=900&amp;quality=82" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

@@ -6,13 +6,20 @@
         <atom:link href="https://brightnews.online/feed-nl.xml" rel="self" type="application/rss+xml"/>
         <description>Elke dag een verse selectie goed nieuws uit de hele wereld, veel leesplezier!</description>
         <language>nl-nl</language>
-        <lastBuildDate>Sun, 22 Nov 2026 12:18:37 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Nov 2026 14:52:09 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Jouw Dagelijkse Dosis Positiviteit</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Zorg en vindingrijkheid op elk continent</title>
+            <link>https://brightnews.online/articles/nl/zorg-en-vindingrijkheid-op-elk-continent-dg-20261121-dag.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/nl/zorg-en-vindingrijkheid-op-elk-continent-dg-20261121-dag.html</guid>
+            <pubDate>Sun, 22 Nov 2026 14:52:09 GMT</pubDate>
+            <description>Deze dag laat zien hoe mensen op heel verschillende plekken net dat beetje extra doen voor een ander, voor dieren of voor de toekomst. Van een keuken in Toronto tot een klaslokaal in Zuid-Korea, van een afgesloten snelweg in Idaho tot een papierfabriek in Assam: overal duiken verhalen op over zorg en vindingrijkheid. In Toronto kookt chef Maddy Goldberg elke dinsdag honderd warme maaltijden voor d</description>
+        </item>
         <item>
             <title>Native jongerenprogramma&apos;s bouwen eigen model voor geestelijke gezondheidszorg</title>
             <link>https://brightnews.online/articles/nl/native-jongerenprogramma-s-bouwen-eigen-model-voor-geestelijke-gezondheidszorg-1795349915850ms2ikm7m8.html</link>
@@ -241,14 +248,6 @@
             <pubDate>Fri, 20 Nov 2026 00:19:13 GMT</pubDate>
             <description>Een jonge Grote Hoornuil werd in Lancaster County, Pennsylvania, geraakt door de truck van chauffeur Ashley Moffitt terwijl ze 65 mijl per uur reed. De vogel raakte vastgeklemd in de luchtgeleider van de vrachtwagen en bleef daar zitten tot Moffitt 70 mijl verderop stopte. Medewerkers van Old Dominion Freight Line in Carlisle bevrijdden de uil, die niet kon vliegen, en...</description>
             <enclosure url="https://www.upworthy.com/wp-content/uploads/sites/2/2026/11/owl-stuck-in-air-dam.jpg?w=1024" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Moederkat brengt kittens naar ziekenhuis in Izmir</title>
-            <link>https://brightnews.online/articles/nl/moederkat-brengt-kittens-naar-ziekenhuis-in-izmir-1795133925965a9p9azot2.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/nl/moederkat-brengt-kittens-naar-ziekenhuis-in-izmir-1795133925965a9p9azot2.html</guid>
-            <pubDate>Fri, 20 Nov 2026 00:18:47 GMT</pubDate>
-            <description>Een zwerfkat die in Izmir, Turkije, al langer werd gevoerd door ziekenhuispersoneel, droeg op een ochtend plotseling een van haar kittens naar binnen. Ze liep onbevreesd door de gangen, op zoek naar hulp. Medewerkers onderzochten het diertje en zijn broertjes en zusjes samen met een dierenarts. De kittens bleken een oogontsteking te hebben waardoor ze hun ogen niet konden openen....</description>
-            <enclosure url="https://www.upworthy.com/wp-content/uploads/sites/2/2025/08/origin-226.jpg?w=900&amp;quality=82" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

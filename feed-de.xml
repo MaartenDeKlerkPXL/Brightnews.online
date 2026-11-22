@@ -6,13 +6,20 @@
         <atom:link href="https://brightnews.online/feed-de.xml" rel="self" type="application/rss+xml"/>
         <description>Jeden Tag eine frische Auswahl guter Nachrichten aus aller Welt. Viel Spaß beim Lesen!</description>
         <language>de-de</language>
-        <lastBuildDate>Sun, 22 Nov 2026 12:18:37 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Nov 2026 14:52:09 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Deine tägliche Dosis Positivität</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Fürsorge und Erfindungsreichtum auf jedem Kontinent</title>
+            <link>https://brightnews.online/articles/de/fursorge-und-erfindungsreichtum-auf-jedem-kontinent-dg-20261121-dag.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/de/fursorge-und-erfindungsreichtum-auf-jedem-kontinent-dg-20261121-dag.html</guid>
+            <pubDate>Sun, 22 Nov 2026 14:52:09 GMT</pubDate>
+            <description>Dieser Tag zeigt, wie Menschen an ganz unterschiedlichen Orten das kleine Extra für andere, für Tiere oder für die Zukunft aufbringen. Von einer Küche in Toronto bis zu einem Klassenzimmer in Südkorea, von einer gesperrten Autobahn in Idaho bis zu einer Papierfabrik in Assam: überall tauchen Geschichten über Fürsorge und Erfindungsreichtum auf. In Toronto kocht Chefin Maddy Goldberg jeden Dienstag</description>
+        </item>
         <item>
             <title>Native-Jugendprogramme entwickeln eigenes Modell für psychische Gesundheit</title>
             <link>https://brightnews.online/articles/de/native-jugendprogramme-entwickeln-eigenes-modell-fur-psychische-gesundheit-1795349915850ms2ikm7m8.html</link>
@@ -241,14 +248,6 @@
             <pubDate>Fri, 20 Nov 2026 00:19:13 GMT</pubDate>
             <description>Ein junger Uhu wurde in Lancaster County, Pennsylvania, von dem Lastwagen der Fahrerin Ashley Moffitt erfasst, während sie 65 Meilen pro Stunde fuhr. Der Vogel geriet in den Luftkanal des Lastwagens und blieb dort stecken, bis Moffitt 70 Meilen weiter entfernt anhielt. Mitarbeiter der Old Dominion Freight Line in Carlisle befreiten den flugunfähigen Uhu und riefen das Raven Ridge Wildlife...</description>
             <enclosure url="https://www.upworthy.com/wp-content/uploads/sites/2/2026/11/owl-stuck-in-air-dam.jpg?w=1024" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Mutterkatze bringt Kätzchen ins Krankenhaus in Izmir</title>
-            <link>https://brightnews.online/articles/de/mutterkatze-bringt-katzchen-ins-krankenhaus-in-izmir-1795133925965a9p9azot2.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/de/mutterkatze-bringt-katzchen-ins-krankenhaus-in-izmir-1795133925965a9p9azot2.html</guid>
-            <pubDate>Fri, 20 Nov 2026 00:18:47 GMT</pubDate>
-            <description>Eine Straßenkatze, die in Izmir, Türkei, bereits länger von Krankenhauspersonal gefüttert wurde, trug an einem Morgen plötzlich eines ihrer Kätzchen hinein. Sie lief unerschrocken durch die Flure auf der Suche nach Hilfe. Mitarbeiter untersuchten das Tier und seine Geschwister zusammen mit einem Tierarzt. Die Kätzchen hatten eine Augenentzündung, durch die sie ihre Augen nicht öffnen konnten. Nach</description>
-            <enclosure url="https://www.upworthy.com/wp-content/uploads/sites/2/2025/08/origin-226.jpg?w=900&amp;quality=82" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

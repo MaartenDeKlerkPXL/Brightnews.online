@@ -6,13 +6,20 @@
         <atom:link href="https://brightnews.online/feed-es.xml" rel="self" type="application/rss+xml"/>
         <description>Cada día una selección fresca de buenas noticias de todo el mundo. ¡Feliz lectura!</description>
         <language>es-es</language>
-        <lastBuildDate>Sun, 22 Nov 2026 12:18:37 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 22 Nov 2026 14:52:09 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Tu dosis diaria de positividad</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Cuidado e ingenio en cada continente</title>
+            <link>https://brightnews.online/articles/es/cuidado-e-ingenio-en-cada-continente-dg-20261121-dag.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/es/cuidado-e-ingenio-en-cada-continente-dg-20261121-dag.html</guid>
+            <pubDate>Sun, 22 Nov 2026 14:52:09 GMT</pubDate>
+            <description>Este día muestra cómo personas en lugares muy diferentes hacen ese pequeño esfuerzo extra por otros, por animales o por el futuro. Desde una cocina en Toronto hasta un aula en Corea del Sur, desde una autopista cerrada en Idaho hasta una fábrica de papel en Assam: en todas partes surgen historias de cuidado e ingenio. En Toronto, la chef Maddy Goldberg cocina cada martes cien comidas calientes par</description>
+        </item>
         <item>
             <title>Programas nativos para jóvenes construyen su propio modelo de salud mental</title>
             <link>https://brightnews.online/articles/es/programas-nativos-para-jovenes-construyen-su-propio-modelo-de-salud-mental-1795349915850ms2ikm7m8.html</link>
@@ -241,14 +248,6 @@
             <pubDate>Fri, 20 Nov 2026 00:19:13 GMT</pubDate>
             <description>Un joven Búho Cornudo fue golpeado por el camión de la conductora Ashley Moffitt en el condado de Lancaster, Pennsylvania, mientras viajaba a 65 millas por hora. El ave quedó atrapada en la toma de aire del camión y permaneció allí hasta que Moffitt se detuvo 70 millas más adelante. Los empleados de Old Dominion Freight Line en Carlisle liberaron...</description>
             <enclosure url="https://www.upworthy.com/wp-content/uploads/sites/2/2026/11/owl-stuck-in-air-dam.jpg?w=1024" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Gata madre lleva gatitos al hospital en Esmirna</title>
-            <link>https://brightnews.online/articles/es/gata-madre-lleva-gatitos-al-hospital-en-esmirna-1795133925965a9p9azot2.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/es/gata-madre-lleva-gatitos-al-hospital-en-esmirna-1795133925965a9p9azot2.html</guid>
-            <pubDate>Fri, 20 Nov 2026 00:18:47 GMT</pubDate>
-            <description>Una gata callejera que llevaba tiempo siendo alimentada por el personal del hospital en Esmirna, Turquía, entró de repente una mañana cargando uno de sus gatitos. Caminó sin temor por los pasillos en busca de ayuda. Los empleados examinaron al pequeño felino y a sus hermanos junto con un veterinario. Los gatitos tenían una inflamación ocular que les impedía abrir...</description>
-            <enclosure url="https://www.upworthy.com/wp-content/uploads/sites/2/2025/08/origin-226.jpg?w=900&amp;quality=82" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>
