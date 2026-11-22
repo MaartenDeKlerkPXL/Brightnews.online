@@ -161,7 +161,8 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
 >   en zondag insturen met het canvas als PDF (TODO 84).
 > - [x] **Live op zaterdag 21 november**, een dag eerder dan gepland (PR #43,
 >   TODO 2). Nagekeken in een schone browser: echte home, geen consolefouten.
-> - [ ] In Search Console indexering aanvragen voor `/`.
+> - [x] In Search Console indexering aangevraagd voor `/` (22 november; de
+>   home stond al geïndexeerd, nu in de prioriteitswachtrij).
 > - [ ] Stripe: bij beide betaallinks "na betaling doorsturen" op
 >   `https://brightnews.online/bedankt.html` (niet dringend: `thanks.html`
 >   stuurt al door).
@@ -228,6 +229,33 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
 > Pro er is ook een back-up met `pg_dump`.
 > **Vanzelf:** de nieuwsruns (2× per dag), de dagoverzichten, de
 > postconcepten, de nachtelijke controle en de mails.
+
+- [ ] **85. Meer artikelen per dag (week van 23 november).** *(Maarten en
+  Claude, 2026-11-22)* Maarten: vroeger stonden er veel meer verhalen op de
+  site. Wat we al weten:
+  - Half september werden er ±11 verhalen per dag goedgekeurd, half november
+    nog ±5. Oorzaken: twee kapotte feeds (Positive News blokkeert ons, de feed
+    van Environmentuk bestaat niet meer), minder aanvoer bij de bronnen, en
+    de nieuwe home toont alleen Vandaag en Gisteren (de oude home toonde 150
+    artikelen, dus het voelde ook voller).
+  - Na PR #52 (zes nieuwe bronnen) en #63 (My Modern Met eruit): 22 verhalen
+    in de eerste drie runs, dus ±15 per dag. Beter, maar nog niet "veel".
+  - Gespecialiseerde goednieuwsbronnen worden voor 50–75% goedgekeurd,
+    algemene wetenschapsbronnen voor 5–7%. Meer goednieuwsbronnen levert dus
+    het meest op per AI-call.
+  Uitzoeken en doen:
+  1. Een week tellen: goedgekeurd per dag en per bron (`data/selectie-log.json`),
+     en welke bronnen veel kosten en niets opleveren.
+  2. Meer goednieuwsbronnen zoeken, ook in het Nederlands, Duits, Frans en
+     Spaans, met een werkende RSS-feed (testen met hetzelfde script als bij
+     PR #52). Geen botblokkades omzeilen.
+  3. Nagaan of de drempel (som ≥ 8, minima 2/2/2) of de selectieprompt te
+     streng is. Let op: `backend/selectie-prompt-analyse.md` staat nog open
+     voor Erik, dus de prompt niet wijzigen zonder hem.
+  4. Per feed worden nu de eerste 30 items bekeken (`backend/processor.js`).
+     Nagaan of er bij drukke bronnen verhalen tussen twee runs wegvallen.
+  5. Nagaan of de home meer kan tonen dan Vandaag en Gisteren, zodat de site
+     voller oogt (bijv. een rij "Eerder deze week").
 
 - [ ] **84. PXL Ambassador Award: in de finale komen en winnen.** *(Maarten en
   Claude, 2026-11-18)* Bron:
