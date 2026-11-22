@@ -492,3 +492,12 @@ De vertaling volgt het Nederlands nauwkeurig: eigennamen (Kurt Walde, Enneberg, 
 - **Grammatica:** "knirschendes Sand" is fout, het moet "knirschender Sand" zijn (der Sand, niet das Sand). Een kromme uitgang in een verder vlotte zin.
 
 Eigennamen (Les Madelinéennes, Sounds in the City, McGill University, Magdalen-Inseln) zijn correct onvertaald gelaten, en de kop dekt de inhoud zonder toegevoegde feiten.
+
+### 2026-11-22, Spaans
+
+**Artikel:** Drone vangt walvisadem voor genoomonderzoek zonder verstoring
+**Oordeel:** één taalfout.
+
+- **Grammatica:** "dron" is in het Spaans mannelijk ("el dron"), maar de vertaling gebruikt consequent "una dron" (zowel bij "una pequeña dron" als "a una dron"). Dat is een verkeerd lidwoord/geslacht bij een zelfstandig naamwoord, geen vertaalfout uit de zes categorieën maar wel een kromme zin die opvalt.
+
+Verder is "University of St. Andrews" terecht onvertaald gelaten, de titel gebruikt gewone zinsstijl zoals het hoort in het Spaans, en er zijn geen toegevoegde feiten of weggelaten details ten opzichte van het Nederlands.

@@ -1754,3 +1754,22 @@ Niet bright-waardig: 2. Twijfel: 1.
 - **Waarom ik twijfel:** Het leunt dicht tegen een tuin-/kooktip aan ("zo verrijk je je moestuin") zonder een echt verhaal met mensen erin, wat richting listicle/zelfhulp trekt. Tegelijk zit er een concreet, verifieerbaar feit in (22% eiwit, vergelijking met andere bladgroenten) en een duidelijk milieu/voedselaspect, wat voor relevantie pleit. Ik zou hem laten staan; oordeel van Erik gewenst.
 
 **Patroon:** Twee verschillende bronnen (GoodNewsNetwork.org en GoodGoodGood.co) publiceerden vrijwel hetzelfde verhaal over chef Maddy Goldberg die wekelijks honderd maaltijden kookt voor een voedselbank in Toronto. Beide versies zijn inhoudelijk in orde en los beoordeeld geen probleem, maar het is de tweede keer deze week dat dezelfde kern-story via twee bronnen wordt binnengehaald — het is de moeite waard om te checken of de selectie hier dubbel work oplevert op de site.
+
+### 2026-11-22, 10:17 Europe/Amsterdam
+
+Beoordeeld: 7 artikelen, gepubliceerd tussen 2026-11-22 01:18 en 2026-11-22 01:21.
+Niet bright-waardig: 1. Twijfel: 1.
+
+#### GTA 6 breekt met hypermasculiene traditie van de franchise
+- **Gepubliceerd:** 2026-11-22 01:20 · Tech · GoodGoodGood.co
+- **Waar het over gaat:** Bespreking van de uitgebrachte game Grand Theft Auto VI, waarin voor het eerst een vrouwelijke hoofdpersoon een vaste rol speelt en de game meer ruimte geeft aan relaties naast misdaad.
+- **Waarom dit niet goed genoeg is:** Dit is in de kern verslaggeving over de release van een commercieel product, ongeacht hoe sociaal-maatschappelijk het wordt ingekleed. De afwijslijst noemt expliciet productlanceringen en consumententech/gaming-nieuws als uitsluitingsgrond; dat hier een progressief personage wordt uitgelicht, maakt het nog geen maatschappelijk verhaal zoals bedoeld in de selectieprompt. Het blijft in essentie promotie voor een net verschenen game.
+- **Link:** (geen link opgenomen in brondata)
+
+#### Twijfelgeval: Annie Lennox verraste David Bowie tijdens repetitie Freddie Mercury-eerbetoon
+- **Gepubliceerd:** 2026-11-22 01:19 · Lifestyle · Upworthy.com
+- **Waar het over gaat:** Een anekdote uit 1992 over een ontroerend moment tijdens de repetitie van 'Under Pressure' voor het Freddie Mercury-eerbetoon op Wembley, met Bowie, Lennox en de overige Queen-leden.
+- **Waarom ik twijfel:** Het verhaal is oprecht warm en mooi verteld, maar het is in de kern een nostalgische anekdote over beroemdheden zonder duidelijke bredere maatschappelijke relevantie of herkenbaarheid voor een breed publiek — de relevantiescore zou daardoor laag uitvallen. Tegelijk voelt het niet als roddel of oppervlakkig celebritynieuws, eerder als een stukje muziekgeschiedenis met een mooi menselijk moment. Ik zou geneigd zijn hem af te keuren op relevantie, maar leg het voor aan Erik omdat de toon en kwaliteit van het verhaal wel bij BrightNews passen.
+- **Link:** (geen link opgenomen in brondata)
+
+**Vertaalsteekproef:** niet uitgevoerd in deze beoordelingsronde (buiten de toegewezen stappen 3-5 van vannacht).
