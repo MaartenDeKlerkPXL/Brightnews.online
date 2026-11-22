@@ -257,6 +257,18 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   5. Nagaan of de home meer kan tonen dan Vandaag en Gisteren, zodat de site
      voller oogt (bijv. een rij "Eerder deze week").
 
+- [ ] **86. Hetzelfde verhaal via twee bronnen staat er twee keer.** *(Erik,
+  2026-11-22)* Op 21 november kwam de chef uit Toronto die elke dinsdag voor
+  de voedselbank kookt binnen via GoodGoodGood én via GoodNewsNetwork. Beide
+  zijn gepubliceerd (score 10 en 9) en beide stonden in de top 6 van het
+  dagoverzicht. `backend/processor.js` herkent een verhaal alleen aan de link
+  (`seenLinks`), niet aan de inhoud. Met meer goednieuwsbronnen (PR #52, punt
+  85.2) gaat dit vaker gebeuren, en het telt mee in "verhalen per dag".
+  Uitzoeken: hoe vaak komt het voor in `data/selectie-archief.jsonl`, en dan
+  de goedkoopste poort kiezen (bijv. de selectiestap de titels van de laatste
+  twee dagen meegeven, of `kiesTop()` in `backend/digest.js` één verhaal per
+  onderwerp laten kiezen). Gaat als PR langs Maarten.
+
 - [ ] **84. PXL Ambassador Award: in de finale komen en winnen.** *(Maarten en
   Claude, 2026-11-18)* Bron:
   pxl.be/toekomstige-studenten/studeren/studentstartup/ambassador-award/.

@@ -109,7 +109,10 @@ async function haalVolledigeTeksten(ids, lang, perTaalIndex) {
 // erna, en de pagina toont de datum al. De prompt verbiedt ze; staat er toch
 // een in (dat gebeurde in het eerste overzicht, 2026-11-17), dan wordt de
 // tekst één keer opnieuw geschreven.
-const TIJDWOORDEN = /\b(vandaag|gisteren|morgen|vanochtend|vanmiddag|vanavond|vannacht|maandag|dinsdag|woensdag|donderdag|vrijdag|zaterdag|zondag)\b/i;
+// Uitzondering (2026-11-22): een vaste weekdag uit een bericht ("elke
+// dinsdag kookt ze…") is geen tijdsaanduiding van het overzicht zelf. Het
+// overzicht van 21 november strandde daar drie runs lang op.
+const TIJDWOORDEN = /\b(vandaag|gisteren|morgen|vanochtend|vanmiddag|vanavond|vannacht|(?<!\b(?:elke|iedere)\s+)(?:maandag|dinsdag|woensdag|donderdag|vrijdag|zaterdag|zondag))\b/i;
 
 // Een dag met weinig verhalen krijgt een korter overzicht: anders vult de AI
 // aan met algemeenheden. [prompt, ondergrens, bovengrens] in woorden.
@@ -218,14 +221,18 @@ async function main() {
                 // Twee pogingen als er een tijdwoord in titel of tekst staat.
                 let moederAntwoord;
                 let moeder;
+                // De tweede poging krijgt te horen welk woord fout was; met
+                // dezelfde prompt kwam hetzelfde woord gewoon terug.
+                let herstel = '';
                 for (let poging = 0; poging < 2; poging++) {
                     await wacht(1000);
-                    moederAntwoord = await aiCall({ rol: 'schrijven', prompt: bouwPrompt('nl', nlItems) });
+                    moederAntwoord = await aiCall({ rol: 'schrijven', prompt: bouwPrompt('nl', nlItems) + herstel });
                     moeder = verwerkAIResponse(moederAntwoord.tekst);
                     const fout = `${moeder?.titel ?? ''} ${moeder?.tekst ?? ''}`.match(TIJDWOORDEN);
                     if (!fout) break;
                     console.warn(`🔁 Dagoverzicht noemt "${fout[0]}" (poging ${poging + 1}).`);
                     if (poging === 1) throw new Error(`dagoverzicht noemt een tijdwoord ("${fout[0]}")`);
+                    herstel = `\n\nLet op: je vorige versie noemde "${fout[0]}". Dat woord mag er niet in staan. Schrijf het overzicht opnieuw zonder dat woord.`;
                 }
                 const moederWoorden = telWoorden(moeder?.tekst);
                 if (moeder?.titel && !verwijzingenKloppen(moeder.tekst, ids.length)) {
