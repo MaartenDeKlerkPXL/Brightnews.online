@@ -1,6 +1,6 @@
 # Bright News — Overdrachtsdocument / Handoff
 
-**Bijgewerkt: 2026-09-26, sessie 10 met Claude Fable 5.** (Sessies 8–10 staan in §9.0.)
+**Bijgewerkt: 2026-11-22, sessie 11-naslag met Claude Fable 5.** (Sessies 8–11 staan in §9.0. Let op: Maarten heeft tussen oktober en november zelfstandig flink doorgebouwd — redesign v5, PR's t/m #34 — en die sessies staan níét in dit document; de PR-historie en TODO.md zijn daarvoor de bron.)
 Sessies 1–2 (1–2 sep): review, fases A–G. Sessie 3 (3 sep): pipeline
 werkend (fases H+I). Sessie 4 (4 sep): logo, Stripe deel 2, E2E.
 Sessie 5 (5 sep): LIVEGANG Stripe + echte verkoop bewezen, MoR-check,
@@ -231,6 +231,32 @@ multipart `metadata` (verify_jwt:false!) + `file=@index.ts` + `file=@deno.json`.
 - GA-property `G-ZNFX3R9BQV`; Search Console: nog inrichten (Maarten)
 
 ## 9. Volgende stappen (in volgorde)
+
+0-S11. **Sessie 11 (2026-09-27/28, nageschreven 2026-11-22)**: Maartens
+   groeironde-PR's #10 t/m #14 alle gereviewd (Fable-niveau) en gemerged.
+   **#10**: X uit de postfabriek (X rekent $0,20/post-met-link; drie
+   kanalen over). **#12**: nachtelijke beoordeling als GitHub Action
+   (02:00 UTC, rol 'beoordelen'/Sonnet in de adapter; zelf mock-getest in
+   een scratch-kopie; review-fix: fetch-depth 0 voor de rebase-retry) —
+   draait in november nog steeds dagelijks. **#13**: `isKoopjesUrl()`
+   vóór de AI-call (adversarieel getest: turtle/whale-sale/wholesale
+   blijven binnen) + 5 missers op noindex via
+   `data/uitgesloten-artikelen.json`; review-fixes: noindex-specifieke
+   idempotentiecheck (botste anders met max-image-preview uit #11) en
+   generate-articles honoreert de uitsluitlijst (hergeneratie zou noindex
+   anders strippen). **#11**: 30 categoriepagina's, RSS ×5,
+   nieuwssitemap, IndexNow, max-image-preview; review-fix: nieuwssitemap
+   slaat uitgesloten ids over. **#14**: Instagram-beeldkaarten (canvas in
+   cockpit) + welkomstreeks (3 mails ×5 talen via Resend; tabellen
+   `mail_voorkeuren`/`mail_log` + `meld_af`-RPC live gezet en
+   RLS-geverifieerd; droogloop: 5 accounts correct op dag-7 per taal;
+   review-fix: Node 20→22 — createClient crasht op 20 mét service-key).
+   Afmeldpagina werkt live; toont bewust ook "afgemeld" bij een onbekend
+   token (geen account-aftasting mogelijk). RESEND_API_KEY bewust nog
+   niet gezet (inhaal-effect: 5 bestaande accounts krijgen direct hun
+   dag-7-mail). 2026-11-22: logo-assets (svg licht/donker + vierkant-PNG)
+   naar ~/Downloads geëxporteerd voor Erik; origineel bronbestand
+   BrightNews-logoV2.ai stond daar al.
 
 0-S10. **Sessie 10 (2026-09-26)**: Maartens PR #6 (stille-storing-alarm)
    en #7 (meetlus GA4/Search Console) gereviewd en gemerged — review ving
