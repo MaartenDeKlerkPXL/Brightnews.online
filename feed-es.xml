@@ -6,13 +6,29 @@
         <atom:link href="https://brightnews.online/feed-es.xml" rel="self" type="application/rss+xml"/>
         <description>Cada día una selección fresca de buenas noticias de todo el mundo. ¡Feliz lectura!</description>
         <language>es-es</language>
-        <lastBuildDate>Mon, 23 Nov 2026 00:19:29 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Nov 2026 12:18:39 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Tu dosis diaria de positividad</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Los indultos automáticos borran antecedentes por aborto en Inglaterra y Gales</title>
+            <link>https://brightnews.online/articles/es/los-indultos-automaticos-borran-antecedentes-por-aborto-en-inglaterra-y-gales-1795436317885ud9kpaqgq.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/es/los-indultos-automaticos-borran-antecedentes-por-aborto-en-inglaterra-y-gales-1795436317885ud9kpaqgq.html</guid>
+            <pubDate>Mon, 23 Nov 2026 12:18:39 GMT</pubDate>
+            <description>Las mujeres en Inglaterra y Gales que alguna vez fueron arrestadas, advertidas o condenadas por interrumpir su propio embarazo ya no tendrán antecedentes penales por ese motivo. Desde el 16 de noviembre, la policía y los tribunales deben eliminar automáticamente estos datos sin que las mujeres tengan que hacer nada. Los indultos se amparan en la Sección 242 de la...</description>
+            <enclosure url="https://www.optimistdaily.com/wp-content/uploads/royal-courts-justice-london-london-Depositphotos_507492434_S.jpg" type="image/jpeg" length="0"/>
+        </item>
+        <item>
+            <title>Nuevo implante de pulgar alivia la artrosis sin extirpación ósea</title>
+            <link>https://brightnews.online/articles/es/nuevo-implante-de-pulgar-alivia-la-artrosis-sin-extirpacion-osea-1795436293270fufjmr5hc.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/es/nuevo-implante-de-pulgar-alivia-la-artrosis-sin-extirpacion-osea-1795436293270fufjmr5hc.html</guid>
+            <pubDate>Mon, 23 Nov 2026 12:18:16 GMT</pubDate>
+            <description>Una nueva prótesis de pulgar, la CMC Touch 1, ofrece solución para personas con artrosis avanzada en el pulgar (artrosis carpometacarpiana). El implante suizo, desarrollado por KeriMedical, funciona como una articulación esférica que reemplaza la articulación de silla de montar desgastada, sin necesidad de extirpar el hueso trapecio. Esto proporciona estabilidad inmediata y un tiempo de recuperaci</description>
+            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/TOUCH-Thumb-transplant-RELEASED.jpeg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>La paciencia y el cuidado son el hilo conductor de las noticias</title>
             <link>https://brightnews.online/articles/es/la-paciencia-y-el-cuidado-son-el-hilo-conductor-de-las-noticias-dg-20261122-dag.html</link>
@@ -232,21 +248,6 @@
             <pubDate>Fri, 20 Nov 2026 12:18:57 GMT</pubDate>
             <description>Una terapia celular desarrollada originalmente contra el cáncer resulta ser también efectiva para el síndrome de persona rígida, una enfermedad autoinmune rara en la que el sistema inmunológico ataca el sistema nervioso central. En un estudio preliminar dirigido por neurólogos de Mayo Clinic, pacientes que anteriormente necesitaban ayuda para caminar y realizar tareas cotidianas recuperaron sufici</description>
             <enclosure url="https://www.optimistdaily.com/wp-content/uploads/avenue-of-stars-krakow-rmf-Depositphotos_139619212_S-1.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Montreal combate el ruido del tráfico con sonidos oceánicos relajantes</title>
-            <link>https://brightnews.online/articles/es/montreal-combate-el-ruido-del-trafico-con-sonidos-oceanicos-relajantes-1795177109845nlbr4rop7.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/es/montreal-combate-el-ruido-del-trafico-con-sonidos-oceanicos-relajantes-1795177109845nlbr4rop7.html</guid>
-            <pubDate>Fri, 20 Nov 2026 12:18:33 GMT</pubDate>
-            <description>En el Parc des Madelinots en el barrio de Verdun, Montreal, ya no se escucha solo ruido de tráfico, sino también el sonido de olas, pájaros y arena crujiente. Desde 2023, cuatro altavoces reproducen grabaciones de campo realizadas en las Islas de la Magdalena, el antiguo hogar de muchos residentes de Verdun. El proyecto, Les Madelinéennes, es una colaboración entre...</description>
-            <enclosure url="https://reasonstobecheerful.world/wp-content/uploads/2026/11/Credit-Paysages-studio-1-scaled.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Energía limpia, pollitos salvados y flores para tumbas olvidadas</title>
-            <link>https://brightnews.online/articles/es/energia-limpia-pollitos-salvados-y-flores-para-tumbas-olvidadas-dg-20261119-dag.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/es/energia-limpia-pollitos-salvados-y-flores-para-tumbas-olvidadas-dg-20261119-dag.html</guid>
-            <pubDate>Fri, 20 Nov 2026 00:21:08 GMT</pubDate>
-            <description>Este día está especialmente dedicado a las soluciones. De Francia al desierto de Gobi, de un zoológico a una floristería: en todas partes, personas y animales hacen algo pequeño que tiene un gran impacto. Es un día para reflexionar sobre lo que sí funciona. En Francia, las familias con menos recursos pueden arrendar una bomba de calor con un descuento promedio de 9.800 euros [1]. La instalación, e</description>
         </item>
     </channel>
 </rss>
