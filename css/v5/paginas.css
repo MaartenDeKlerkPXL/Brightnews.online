@@ -1507,3 +1507,16 @@ button.juridisch__link {
 .info-tekst > .onderwerp-keuze {
     max-width: none;
 }
+
+/* Eerder deze week op de home: de dagkop linkt naar de editie van die dag,
+   maar oogt als een kop, niet als een groene link. */
+.dag-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.dag-link:hover,
+.dag-link:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
