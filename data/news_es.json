@@ -1,5 +1,58 @@
 [
   {
+    "id": "dg-20261122-dag",
+    "type": "digest",
+    "digest_date": "2026-11-22",
+    "title": "La paciencia y el cuidado son el hilo conductor de las noticias",
+    "summary": "Este día gira en torno a personas que dedican tiempo y atención a otros, a veces durante décadas, y de ello surge algo hermoso. Desde un dron que permite que las ballenas respiren sin ser molestadas hasta un vestido que lleva catorce años viajando por el mundo: en todas partes la paciencia demuestra valer la pena. En Two Feathers Native American Family Services en el norte de California, un pequeño equipo creció desde 2018 hasta 32 empleados que ofrecen atención de salud mental cultural a jóvenes indígenas [1]. Roger «Chapreges» Jones encontró ayuda allí después de luchar contra el aislamiento...",
+    "image_alt": "La paciencia y el cuidado son el hilo conductor de las noticias",
+    "meta_description": "Cartas de consuelo de 1967, un vestido lleno de historias, luces navideñas y aliento de ballena: las noticias positivas de hoy sobre cuidado, paciencia y c",
+    "meta_keywords": "Health, Lifestyle, Science",
+    "link": "",
+    "source": "BrightNews",
+    "image": null,
+    "date": "2026-11-23T00:19:29.600Z",
+    "category": null,
+    "refs": [
+      {
+        "id": "1795349915850ms2ikm7m8",
+        "title": "Programas nativos para jóvenes construyen su propio modelo de salud mental"
+      },
+      {
+        "id": "1795349887995lqla9w8am",
+        "title": "Hijo localiza a los autores de cartas de consuelo para un veterano de Vietnam herido"
+      },
+      {
+        "id": "1795306791252v9u4l69hm",
+        "title": "Vestido rojo bordado por 380 mujeres de 51 países"
+      },
+      {
+        "id": "1795306739210yw4etc3fp",
+        "title": "Dueño de pub en Knaresborough ilumina el pueblo con decoración navideña de 10.000 luces"
+      },
+      {
+        "id": "1795306709417unxrj97k5",
+        "title": "Dron captura aliento de ballena para análisis genómico sin perturbación"
+      }
+    ],
+    "slug": "la-paciencia-y-el-cuidado-son-el-hilo-conductor-de-las-noticias"
+  },
+  {
+    "id": "1795393091658wvi7hphop",
+    "title": "Cascada de niebla en Mallorca gana Weather Photographer of the Year",
+    "summary": "Francisco Bailón Rodríguez ha ganado el primer premio en la competición Weather Photographer of the Year de la Royal Meteorological Society con una fotografía de una cascada de niebla que se vierte al mar cerca de Mallorca, España, capturada al amanecer. La miembro del jurado Angela Nicholson elogió el flujo en la imagen y la iluminación de las nubes. La...",
+    "image_alt": "La niebla fluye como una cascada sobre acantilados al amanecer en Mallorca, España",
+    "meta_description": "Fotografía de cascada de niebla en Mallorca gana Weather Photographer of the Year 2026 de la Royal Meteorological Society.",
+    "meta_keywords": "Weather Photographer of the Year, Royal Meteorological Society, Mallorca, fotografía meteorológica, cambio climático, Francisco Bailón Rodríguez",
+    "link": "https://nicenews.com/environment/weather-photographer-of-the-year-2026/",
+    "source": "NiceNews.com",
+    "image": "https://media.nicenews.com/s3:inbox-media-offload.nicenews.com/wp-content/uploads/2026/11/1-scottish-loch-r-1636951.jpg",
+    "date": "2026-11-23T00:18:14.982Z",
+    "category": "Environment",
+    "score": 8,
+    "slug": "cascada-de-niebla-en-mallorca-gana-weather-photographer-of-the-year"
+  },
+  {
     "id": "dg-20261121-dag",
     "type": "digest",
     "digest_date": "2026-11-21",
@@ -2594,20 +2647,5 @@
     "category": "Environment",
     "score": 9,
     "slug": "los-castores-regresan-a-loch-ness-despues-de-500-anos"
-  },
-  {
-    "id": "1793733350635zxe818kte",
-    "title": "Los créditos de carbono abren el Great Koala National Park en Nueva Gales del Sur",
-    "summary": "En Nueva Gales del Sur, Australia, los créditos de carbono han jugado un papel importante en hacer posible el Great Koala National Park. La fuente no proporciona más detalles sobre el funcionamiento o los antecedentes.",
-    "image_alt": "Koala en un árbol, símbolo del Great Koala National Park en Nueva Gales del Sur",
-    "meta_description": "Los créditos de carbono ayudaron a hacer posible el Great Koala National Park en Nueva Gales del Sur.",
-    "meta_keywords": "créditos de carbono, Great Koala National Park, Nueva Gales del Sur, Australia, conservación de la naturaleza",
-    "link": "https://www.optimistdaily.com/2026/11/how-carbon-credits-helped-unlock-the-great-koala-national-park-in-nsw/",
-    "source": "OptimistDaily.com",
-    "image": "https://www.optimistdaily.com/wp-content/uploads/koala-Depositphotos_18324133_S.jpg",
-    "date": "2026-11-03T19:15:52.627Z",
-    "category": "Environment",
-    "score": 9,
-    "slug": "los-creditos-de-carbono-abren-el-great-koala-national-park-en-nueva-gales-del-su"
   }
 ]

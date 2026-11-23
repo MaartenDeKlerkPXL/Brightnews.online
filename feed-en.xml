@@ -6,13 +6,28 @@
         <atom:link href="https://brightnews.online/feed-en.xml" rel="self" type="application/rss+xml"/>
         <description>A fresh pick of good news from around the world, every day. Enjoy the read!</description>
         <language>en-us</language>
-        <lastBuildDate>Sun, 22 Nov 2026 14:52:09 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Nov 2026 00:19:29 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Your Daily Dose of Positivity</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Patience and care form the common thread in today&apos;s news</title>
+            <link>https://brightnews.online/articles/en/patience-and-care-form-the-common-thread-in-today-s-news-dg-20261122-dag.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/patience-and-care-form-the-common-thread-in-today-s-news-dg-20261122-dag.html</guid>
+            <pubDate>Mon, 23 Nov 2026 00:19:29 GMT</pubDate>
+            <description>Today&apos;s stories revolve around people who give their time and attention to others, sometimes for decades, and something beautiful comes from it. From a drone that lets whales breathe without disturbing them to a dress that has been traveling the world for fourteen years: everywhere you look, patience proves worthwhile. At Two Feathers Native American Family Services in Northern California, a small</description>
+        </item>
+        <item>
+            <title>Mist waterfall in Mallorca wins Weather Photographer of the Year</title>
+            <link>https://brightnews.online/articles/en/mist-waterfall-in-mallorca-wins-weather-photographer-of-the-year-1795393091658wvi7hphop.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/mist-waterfall-in-mallorca-wins-weather-photographer-of-the-year-1795393091658wvi7hphop.html</guid>
+            <pubDate>Mon, 23 Nov 2026 00:18:14 GMT</pubDate>
+            <description>Francisco Bailón Rodríguez has won the top prize in the Royal Meteorological Society&apos;s Weather Photographer of the Year competition with a photograph of a mist waterfall flowing into the sea near Mallorca, Spain, captured at sunrise. Jury member Angela Nicholson praised the flow in the image and the lighting of the clouds. The competition, now in its second decade, selected...</description>
+            <enclosure url="https://media.nicenews.com/s3:inbox-media-offload.nicenews.com/wp-content/uploads/2026/11/1-scottish-loch-r-1636951.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Care and resourcefulness on every continent</title>
             <link>https://brightnews.online/articles/en/care-and-resourcefulness-on-every-continent-dg-20261121-dag.html</link>
@@ -232,22 +247,6 @@
             <guid isPermaLink="true">https://brightnews.online/articles/en/clean-energy-rescued-chicks-and-flowers-for-forgotten-graves-dg-20261119-dag.html</guid>
             <pubDate>Fri, 20 Nov 2026 00:21:08 GMT</pubDate>
             <description>This day is especially marked by solutions. From France to the Gobi Desert, from a zoo to a flower shop: everywhere people and animals are doing something small that has a big impact. It&apos;s a day to reflect on what actually works. In France, lower-income families can lease a heat pump with an average discount of 9,800 euros [1]. Installation, maintenance and electricity are covered in one monthly p</description>
-        </item>
-        <item>
-            <title>Allison Raskin writes romcom with two protagonists living with OCD</title>
-            <link>https://brightnews.online/articles/en/allison-raskin-writes-romcom-with-two-protagonists-living-with-ocd-1795133974877pzz1f9g6l.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/allison-raskin-writes-romcom-with-two-protagonists-living-with-ocd-1795133974877pzz1f9g6l.html</guid>
-            <pubDate>Fri, 20 Nov 2026 00:19:36 GMT</pubDate>
-            <description>Writer and comedian Allison Raskin is releasing her sixth book, &apos;Compulsively Yours&apos;, featuring two main characters — Libi Newman and Nate Keller — who both live with OCD. They meet through a support group and are encouraged by their therapist to support each other during a Christmas trip to Mexico. Raskin, herself diagnosed with OCD at age four, draws on...</description>
-            <enclosure url="https://cdn.prod.website-files.com/6ac7f2e22eaacd2873850a17/6aff5e8d8fa1068542a1b154_allison-raskin-compulsively-yours.png" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Young great horned owl survives 70 miles trapped in truck in Pennsylvania</title>
-            <link>https://brightnews.online/articles/en/young-great-horned-owl-survives-70-miles-trapped-in-truck-in-pennsylvania-1795133951432pjp37x70g.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/young-great-horned-owl-survives-70-miles-trapped-in-truck-in-pennsylvania-1795133951432pjp37x70g.html</guid>
-            <pubDate>Fri, 20 Nov 2026 00:19:13 GMT</pubDate>
-            <description>A young great horned owl was struck by the truck of driver Ashley Moffitt while she was traveling 65 miles per hour in Lancaster County, Pennsylvania. The bird became wedged in the truck&apos;s air deflector and remained there until Moffitt stopped 70 miles down the road. Employees at Old Dominion Freight Line in Carlisle freed the owl, which was unable...</description>
-            <enclosure url="https://www.upworthy.com/wp-content/uploads/sites/2/2026/11/owl-stuck-in-air-dam.jpg?w=1024" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

@@ -1,5 +1,77 @@
 [
  {
+  "datum": "2026-11-23T00:17:48.754Z",
+  "bron": "NiceNews.com",
+  "titel": "2026 Weather Photographer of the Year Winners Showcase Awe-Inspiring Power of Nature",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 2,
+  "totaal": 8,
+  "besluit": "ja",
+  "reden": "Hartverwarmend verhaal over natuurschoon en artistieke prestatie, volledig positief geformuleerd, matig relevant voor breed publiek."
+ },
+ {
+  "datum": "2026-11-23T00:17:48.754Z",
+  "bron": "Upworthy.com",
+  "titel": "Communication expert shares 3-2-1 trick to stop rambling when put on the spot",
+  "uitsluiting": "listicle",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Zelfhulpadvies in listicle-vorm ('3-2-1 trick') zonder echt verhaal of persoonlijke transformatie."
+ },
+ {
+  "datum": "2026-11-23T00:17:48.754Z",
+  "bron": "Upworthy.com",
+  "titel": "If you see a person and two dogs in this photo, look again. It’s an optical illusion.",
+  "uitsluiting": "geen",
+  "gevoel": 2,
+  "formulering": 3,
+  "relevantie": 1,
+  "totaal": 6,
+  "besluit": "nee",
+  "reden": "Leuk en positief geformuleerd, maar optische illusies zijn niche-entertainment zonder maatschappelijke of persoonlijke relevantie."
+ },
+ {
+  "datum": "2026-11-23T00:17:48.754Z",
+  "bron": "Upworthy.com",
+  "titel": "If you struggle with small talk, a simple acronym can make it a lot less painful",
+  "uitsluiting": "listicle",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Zelfhulpadvies in listicle-vorm ('FORD-methode') zonder verhaal of echte transformatie."
+ },
+ {
+  "datum": "2026-11-23T00:17:48.754Z",
+  "bron": "Upworthy.com",
+  "titel": "Gen X teens in 1986 predicted what life would be like today. Here’s what they got right.",
+  "uitsluiting": "geen",
+  "gevoel": 2,
+  "formulering": 3,
+  "relevantie": 2,
+  "totaal": 7,
+  "besluit": "nee",
+  "reden": "Charmant en positief over toekomstvisies van jongeren, maar vooral nostalgisch entertainment zonder maatschappelijke betekenis."
+ },
+ {
+  "datum": "2026-11-23T00:17:48.754Z",
+  "bron": "Positivr.fr",
+  "titel": "Au potager, cet insatiable glouton remplace tous vos insecticides dès cet hiver !",
+  "uitsluiting": "te-weinig-inhoud",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Titel en fragment geven onvoldoende inhoud om zeker te zijn; lijkt clickbait over tuinieren zonder volledig verhaal."
+ },
+ {
   "datum": "2026-11-22T12:17:44.708Z",
   "bron": "GoodNewsNetwork.org",
   "titel": "Good News in History, November 22",
@@ -3526,77 +3598,5 @@
   "totaal": 8,
   "besluit": "ja",
   "reden": "Onderzoek toont gezondheidsvoordelen van gemeenschap; maatschappelijk relevant, positief geformuleerd en herkenbaar voor LGBTQ+-lezers."
- },
- {
-  "datum": "2026-11-09T22:02:02.817Z",
-  "bron": "GoodGoodGood.co",
-  "titel": "What a historic 'blue wave'' midterm means for climate action",
-  "uitsluiting": "politiek",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Dit is politiek gekleurde berichtgeving over verkiezingsresultaten; het 'goed' ervan hangt af van politieke voorkeur, niet van objectieve maatschappelijke waarde."
- },
- {
-  "datum": "2026-11-09T22:02:08.358Z",
-  "bron": "Sciencenews.org",
-  "titel": "Drugs like Ozempic may help reverse chronic kidney disease",
-  "uitsluiting": "te-weinig-inhoud",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "De tekst is slechts een navigatiemenu en paginakop; de daadwerkelijke artikelinhoud ontbreekt volledig."
- },
- {
-  "datum": "2026-11-09T22:02:08.358Z",
-  "bron": "Sciencenews.org",
-  "titel": "A high-fiber diet may clear away plastic in the gut",
-  "uitsluiting": "te-weinig-inhoud",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "De tekst is slechts een navigatiemenu en paginakop; de daadwerkelijke artikelinhoud ontbreekt volledig."
- },
- {
-  "datum": "2026-11-09T22:02:08.358Z",
-  "bron": "Openaccessgovernment.org",
-  "titel": "NASA announced X-70 experimental aircraft",
-  "uitsluiting": "productnieuws",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Dit is een lanceringsaankondiging van een experimenteel vliegtuig; ondanks de technische interesse ontbreekt een maatschappelijke doorbraak die levens verbetert."
- },
- {
-  "datum": "2026-11-09T22:02:08.358Z",
-  "bron": "Openaccessgovernment.org",
-  "titel": "South Africa research funding analysis",
-  "uitsluiting": "geen",
-  "gevoel": 1,
-  "formulering": 2,
-  "relevantie": 3,
-  "totaal": 6,
-  "besluit": "nee",
-  "reden": "Maatschappelijk relevant onderzoeksbeleid, maar de tekst is technisch en bureaucratisch; het gevoel blijft vlak en afstandelijk (som = 6, onder de 8)."
- },
- {
-  "datum": "2026-11-09T05:06:33.106Z",
-  "bron": "OptimistDaily.com",
-  "titel": "Fall activities for you and your dog: a trainer’s guide",
-  "uitsluiting": "geen",
-  "gevoel": 2,
-  "formulering": 3,
-  "relevantie": 2,
-  "totaal": 7,
-  "besluit": "nee",
-  "reden": "Praktisch, positief advies voor een herkenbare activiteit die eigenaren en huisdieren samen kunnen doen."
  }
 ]

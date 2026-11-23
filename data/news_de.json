@@ -1,5 +1,58 @@
 [
   {
+    "id": "dg-20261122-dag",
+    "type": "digest",
+    "digest_date": "2026-11-22",
+    "title": "Geduld und Fürsorge sind der rote Faden in den Nachrichten",
+    "summary": "Dieser Tag dreht sich um Menschen, die Zeit und Aufmerksamkeit für andere aufbringen, manchmal schon seit Jahrzehnten, und daraus entsteht etwas Schönes. Von einer Drohne, die Wale atmen lässt, ohne sie zu stören, bis zu einem Kleid, das seit vierzehn Jahren um die Welt reist: überall zeigt sich, dass Geduld sich lohnt. Bei Two Feathers Native American Family Services in Nordkalifornien wuchs ein kleines Team seit 2018 auf 32 Mitarbeiter an, die kulturelle psychische Gesundheitsversorgung für indianische Jugendliche anbieten [1]. Roger »Chapreges« Jones fand dort selbst Hilfe, nachdem er als Teenager mit Isolation kämpfte, und wurde später Jugendbotschafter. Programme mit...",
+    "image_alt": "Geduld und Fürsorge sind der rote Faden in den Nachrichten",
+    "meta_description": "Trostbriefe aus 1967, ein Kleid voller Geschichten, Weihnachtslichter und Walatemluft: die positiven Nachrichten des Tages über Fürsorge, Geduld und Verbin",
+    "meta_keywords": "Health, Lifestyle, Science",
+    "link": "",
+    "source": "BrightNews",
+    "image": null,
+    "date": "2026-11-23T00:19:29.600Z",
+    "category": null,
+    "refs": [
+      {
+        "id": "1795349915850ms2ikm7m8",
+        "title": "Native-Jugendprogramme entwickeln eigenes Modell für psychische Gesundheit"
+      },
+      {
+        "id": "1795349887995lqla9w8am",
+        "title": "Sohn spürt Verfasser von Trostbriefen an verwundetem Vietnamveteran auf"
+      },
+      {
+        "id": "1795306791252v9u4l69hm",
+        "title": "Rotes Kleid bestickt von 380 Frauen aus 51 Ländern"
+      },
+      {
+        "id": "1795306739210yw4etc3fp",
+        "title": "Pubwirt in Knaresborough erleuchtet Dorf mit Weihnachtsdisplay aus 10.000 Lämpchen"
+      },
+      {
+        "id": "1795306709417unxrj97k5",
+        "title": "Drohne erfasst Walatemzug für Genomanalyse ohne Störung"
+      }
+    ],
+    "slug": "geduld-und-fursorge-sind-der-rote-faden-in-den-nachrichten"
+  },
+  {
+    "id": "1795393091658wvi7hphop",
+    "title": "Nebelwasserfall auf Mallorca gewinnt Weather Photographer of the Year",
+    "summary": "Francisco Bailón Rodríguez hat den Hauptpreis im Wettbewerb Weather Photographer of the Year der Royal Meteorological Society gewonnen. Seine Aufnahme zeigt einen Nebelwasserfall, der bei Sonnenaufgang bei Mallorca, Spanien, ins Meer fließt. Jurymitglied Angela Nicholson lobte die Strömung im Bild und die Beleuchtung der Wolken. Der Wettbewerb, der sich nun in seinem zweiten Jahrzehnt befindet, wählte dreißig Fotos aus mehr...",
+    "image_alt": "Nebel fließt bei Sonnenaufgang wie ein Wasserfall über Klippen auf Mallorca, Spanien",
+    "meta_description": "Foto eines Nebelwasserfalls auf Mallorca gewinnt Weather Photographer of the Year 2026 der Royal Meteorological Society.",
+    "meta_keywords": "Weather Photographer of the Year, Royal Meteorological Society, Mallorca, Weerfotografie, Klimawandel, Francisco Bailón Rodríguez",
+    "link": "https://nicenews.com/environment/weather-photographer-of-the-year-2026/",
+    "source": "NiceNews.com",
+    "image": "https://media.nicenews.com/s3:inbox-media-offload.nicenews.com/wp-content/uploads/2026/11/1-scottish-loch-r-1636951.jpg",
+    "date": "2026-11-23T00:18:14.982Z",
+    "category": "Environment",
+    "score": 8,
+    "slug": "nebelwasserfall-auf-mallorca-gewinnt-weather-photographer-of-the-year"
+  },
+  {
     "id": "dg-20261121-dag",
     "type": "digest",
     "digest_date": "2026-11-21",
@@ -2594,20 +2647,5 @@
     "category": "Environment",
     "score": 9,
     "slug": "biber-kehren-nach-500-jahren-zu-loch-ness-zuruck"
-  },
-  {
-    "id": "1793733350635zxe818kte",
-    "title": "Kohlenstoffgutschriften ermöglichen Great Koala National Park in NSW",
-    "summary": "In New South Wales, Australien, haben Kohlenstoffgutschriften eine Rolle bei der Ermöglichung des Great Koala National Park gespielt. Weitere Details über die Arbeitsweise oder den Hintergrund werden in der Quelle nicht gegeben.",
-    "image_alt": "Koala in einem Baum, Symbol für den Great Koala National Park in NSW",
-    "meta_description": "Kohlenstoffgutschriften halfen, den Great Koala National Park in New South Wales möglich zu machen.",
-    "meta_keywords": "Kohlenstoffgutschriften, Great Koala National Park, NSW, Australien, Naturschutz",
-    "link": "https://www.optimistdaily.com/2026/11/how-carbon-credits-helped-unlock-the-great-koala-national-park-in-nsw/",
-    "source": "OptimistDaily.com",
-    "image": "https://www.optimistdaily.com/wp-content/uploads/koala-Depositphotos_18324133_S.jpg",
-    "date": "2026-11-03T19:15:52.627Z",
-    "category": "Environment",
-    "score": 9,
-    "slug": "kohlenstoffgutschriften-ermoglichen-great-koala-national-park-in-nsw"
   }
 ]

@@ -6,13 +6,28 @@
         <atom:link href="https://brightnews.online/feed-es.xml" rel="self" type="application/rss+xml"/>
         <description>Cada día una selección fresca de buenas noticias de todo el mundo. ¡Feliz lectura!</description>
         <language>es-es</language>
-        <lastBuildDate>Sun, 22 Nov 2026 14:52:09 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Nov 2026 00:19:29 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Tu dosis diaria de positividad</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>La paciencia y el cuidado son el hilo conductor de las noticias</title>
+            <link>https://brightnews.online/articles/es/la-paciencia-y-el-cuidado-son-el-hilo-conductor-de-las-noticias-dg-20261122-dag.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/es/la-paciencia-y-el-cuidado-son-el-hilo-conductor-de-las-noticias-dg-20261122-dag.html</guid>
+            <pubDate>Mon, 23 Nov 2026 00:19:29 GMT</pubDate>
+            <description>Este día gira en torno a personas que dedican tiempo y atención a otros, a veces durante décadas, y de ello surge algo hermoso. Desde un dron que permite que las ballenas respiren sin ser molestadas hasta un vestido que lleva catorce años viajando por el mundo: en todas partes la paciencia demuestra valer la pena. En Two Feathers Native American Family Services en el norte de California, un pequeñ</description>
+        </item>
+        <item>
+            <title>Cascada de niebla en Mallorca gana Weather Photographer of the Year</title>
+            <link>https://brightnews.online/articles/es/cascada-de-niebla-en-mallorca-gana-weather-photographer-of-the-year-1795393091658wvi7hphop.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/es/cascada-de-niebla-en-mallorca-gana-weather-photographer-of-the-year-1795393091658wvi7hphop.html</guid>
+            <pubDate>Mon, 23 Nov 2026 00:18:14 GMT</pubDate>
+            <description>Francisco Bailón Rodríguez ha ganado el primer premio en la competición Weather Photographer of the Year de la Royal Meteorological Society con una fotografía de una cascada de niebla que se vierte al mar cerca de Mallorca, España, capturada al amanecer. La miembro del jurado Angela Nicholson elogió el flujo en la imagen y la iluminación de las nubes. La...</description>
+            <enclosure url="https://media.nicenews.com/s3:inbox-media-offload.nicenews.com/wp-content/uploads/2026/11/1-scottish-loch-r-1636951.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Cuidado e ingenio en cada continente</title>
             <link>https://brightnews.online/articles/es/cuidado-e-ingenio-en-cada-continente-dg-20261121-dag.html</link>
@@ -232,22 +247,6 @@
             <guid isPermaLink="true">https://brightnews.online/articles/es/energia-limpia-pollitos-salvados-y-flores-para-tumbas-olvidadas-dg-20261119-dag.html</guid>
             <pubDate>Fri, 20 Nov 2026 00:21:08 GMT</pubDate>
             <description>Este día está especialmente dedicado a las soluciones. De Francia al desierto de Gobi, de un zoológico a una floristería: en todas partes, personas y animales hacen algo pequeño que tiene un gran impacto. Es un día para reflexionar sobre lo que sí funciona. En Francia, las familias con menos recursos pueden arrendar una bomba de calor con un descuento promedio de 9.800 euros [1]. La instalación, e</description>
-        </item>
-        <item>
-            <title>Allison Raskin escribe una romcom con dos protagonistas con TOC</title>
-            <link>https://brightnews.online/articles/es/allison-raskin-escribe-una-romcom-con-dos-protagonistas-con-toc-1795133974877pzz1f9g6l.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/es/allison-raskin-escribe-una-romcom-con-dos-protagonistas-con-toc-1795133974877pzz1f9g6l.html</guid>
-            <pubDate>Fri, 20 Nov 2026 00:19:36 GMT</pubDate>
-            <description>La escritora y comediante Allison Raskin publica su sexto libro, «Compulsively Yours», en el que ambos protagonistas —Libi Newman y Nate Keller— viven con TOC. Se conocen a través de un grupo de apoyo y su terapeuta los anima a apoyarse mutuamente durante un viaje navideño a México. Raskin, diagnosticada con TOC a los cuatro años, se inspira en su...</description>
-            <enclosure url="https://cdn.prod.website-files.com/6ac7f2e22eaacd2873850a17/6aff5e8d8fa1068542a1b154_allison-raskin-compulsively-yours.png" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Joven búho cornudo sobrevive 70 millas atrapado en camión en Pennsylvania</title>
-            <link>https://brightnews.online/articles/es/joven-buho-cornudo-sobrevive-70-millas-atrapado-en-camion-en-pennsylvania-1795133951432pjp37x70g.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/es/joven-buho-cornudo-sobrevive-70-millas-atrapado-en-camion-en-pennsylvania-1795133951432pjp37x70g.html</guid>
-            <pubDate>Fri, 20 Nov 2026 00:19:13 GMT</pubDate>
-            <description>Un joven Búho Cornudo fue golpeado por el camión de la conductora Ashley Moffitt en el condado de Lancaster, Pennsylvania, mientras viajaba a 65 millas por hora. El ave quedó atrapada en la toma de aire del camión y permaneció allí hasta que Moffitt se detuvo 70 millas más adelante. Los empleados de Old Dominion Freight Line en Carlisle liberaron...</description>
-            <enclosure url="https://www.upworthy.com/wp-content/uploads/sites/2/2026/11/owl-stuck-in-air-dam.jpg?w=1024" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

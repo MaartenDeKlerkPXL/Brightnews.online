@@ -1,5 +1,58 @@
 [
   {
+    "id": "dg-20261122-dag",
+    "type": "digest",
+    "digest_date": "2026-11-22",
+    "title": "La patience et l'attention forment le fil rouge de l'actualité",
+    "summary": "Cette journée tourne autour de personnes qui donnent du temps et de l'attention à d'autres, parfois depuis des dizaines d'années, et il en ressort quelque chose de beau. D'un drone qui permet aux baleines de respirer sans les déranger à une robe qui voyage autour du monde depuis quatorze ans : partout, la patience s'avère utile. Chez Two Feathers Native American Family Services en Californie du Nord, une petite équipe s'est développée depuis 2018 pour atteindre 32 employés offrant des services de santé mentale culturelle aux jeunes Amérindiens [1]. Roger « Chapreges » Jones y a lui-même trouvé de l'aide...",
+    "image_alt": "La patience et l'attention forment le fil rouge de l'actualité",
+    "meta_description": "Des lettres de réconfort de 1967, une robe pleine d'histoires, des lumières de Noël et du souffle de baleine : les bonnes nouvelles du jour sur l'attention",
+    "meta_keywords": "Health, Lifestyle, Science",
+    "link": "",
+    "source": "BrightNews",
+    "image": null,
+    "date": "2026-11-23T00:19:29.600Z",
+    "category": null,
+    "refs": [
+      {
+        "id": "1795349915850ms2ikm7m8",
+        "title": "Les programmes jeunesse autochtones créent leur propre modèle de santé mentale"
+      },
+      {
+        "id": "1795349887995lqla9w8am",
+        "title": "Le fils retrouve les auteurs de lettres de réconfort adressées à un vétéran du Vietnam blessé"
+      },
+      {
+        "id": "1795306791252v9u4l69hm",
+        "title": "Robe rouge brodée par 380 femmes de 51 pays"
+      },
+      {
+        "id": "1795306739210yw4etc3fp",
+        "title": "Le propriétaire d'un pub à Knaresborough illumine le village avec 10.000 petites lumières"
+      },
+      {
+        "id": "1795306709417unxrj97k5",
+        "title": "Un drone capture le souffle de baleine pour séquençage génomique sans perturbation"
+      }
+    ],
+    "slug": "la-patience-et-l-attention-forment-le-fil-rouge-de-l-actualite"
+  },
+  {
+    "id": "1795393091658wvi7hphop",
+    "title": "Une cascade de brouillard à Majorque remporte Weather Photographer of the Year",
+    "summary": "Francisco Bailón Rodríguez a remporté le grand prix du concours Weather Photographer of the Year de la Royal Meteorological Society avec une photographie d'une cascade de brouillard s'écoulant dans la mer près de Majorque, en Espagne, capturée au lever du soleil. Le membre du jury Angela Nicholson a félicité le flux visible dans l'image et l'éclairage des nuages. Le concours,...",
+    "image_alt": "Le brouillard s'écoule comme une cascade sur les falaises au lever du soleil à Majorque, en Espagne",
+    "meta_description": "La photographie d'une cascade de brouillard à Majorque remporte le Weather Photographer of the Year 2026 de la Royal Meteorological Society.",
+    "meta_keywords": "Weather Photographer of the Year, Royal Meteorological Society, Majorque, photographie météorologique, changement climatique, Francisco Bailón Rodríguez",
+    "link": "https://nicenews.com/environment/weather-photographer-of-the-year-2026/",
+    "source": "NiceNews.com",
+    "image": "https://media.nicenews.com/s3:inbox-media-offload.nicenews.com/wp-content/uploads/2026/11/1-scottish-loch-r-1636951.jpg",
+    "date": "2026-11-23T00:18:14.982Z",
+    "category": "Environment",
+    "score": 8,
+    "slug": "une-cascade-de-brouillard-a-majorque-remporte-weather-photographer-of-the-year"
+  },
+  {
     "id": "dg-20261121-dag",
     "type": "digest",
     "digest_date": "2026-11-21",
@@ -2594,20 +2647,5 @@
     "category": "Environment",
     "score": 9,
     "slug": "les-castors-reviennent-a-loch-ness-apres-500-ans"
-  },
-  {
-    "id": "1793733350635zxe818kte",
-    "title": "Les crédits carbone ouvrent le Great Koala National Park en Nouvelle-Galles du Sud",
-    "summary": "En Nouvelle-Galles du Sud, en Australie, les crédits carbone ont joué un rôle déterminant dans la création du Great Koala National Park. La source ne fournit pas de détails supplémentaires sur le fonctionnement ou le contexte de cette initiative.",
-    "image_alt": "Koala dans un arbre, symbole du Great Koala National Park en Nouvelle-Galles du Sud",
-    "meta_description": "Les crédits carbone ont permis la création du Great Koala National Park en Nouvelle-Galles du Sud.",
-    "meta_keywords": "crédits carbone, Great Koala National Park, Nouvelle-Galles du Sud, Australie, conservation de la nature",
-    "link": "https://www.optimistdaily.com/2026/11/how-carbon-credits-helped-unlock-the-great-koala-national-park-in-nsw/",
-    "source": "OptimistDaily.com",
-    "image": "https://www.optimistdaily.com/wp-content/uploads/koala-Depositphotos_18324133_S.jpg",
-    "date": "2026-11-03T19:15:52.627Z",
-    "category": "Environment",
-    "score": 9,
-    "slug": "les-credits-carbone-ouvrent-le-great-koala-national-park-en-nouvelle-galles-du-s"
   }
 ]

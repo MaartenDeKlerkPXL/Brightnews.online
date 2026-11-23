@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-11-22T14:52:14.625Z",
+ "gegenereerd": "2026-11-23T00:19:34.207Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -47,6 +47,13 @@
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261122-dag",
+     "titel": "Geduld en zorg vormen de rode draad in het nieuws",
+     "categorie": null,
+     "dag": "2026-11-22",
+     "url": "https://brightnews.online/articles/nl/geduld-en-zorg-vormen-de-rode-draad-in-het-nieuws-dg-20261122-dag.html"
+    },
     {
      "id": "dg-20261121-dag",
      "titel": "Zorg en vindingrijkheid op elk continent",
@@ -108,6 +115,13 @@
    ],
    "dagoverzichten": [
     {
+     "id": "dg-20261122-dag",
+     "titel": "Patience and care form the common thread in today's news",
+     "categorie": null,
+     "dag": "2026-11-22",
+     "url": "https://brightnews.online/articles/en/patience-and-care-form-the-common-thread-in-today-s-news-dg-20261122-dag.html"
+    },
+    {
      "id": "dg-20261121-dag",
      "titel": "Care and resourcefulness on every continent",
      "categorie": null,
@@ -167,6 +181,13 @@
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261122-dag",
+     "titel": "Geduld und Fürsorge sind der rote Faden in den Nachrichten",
+     "categorie": null,
+     "dag": "2026-11-22",
+     "url": "https://brightnews.online/articles/de/geduld-und-fursorge-sind-der-rote-faden-in-den-nachrichten-dg-20261122-dag.html"
+    },
     {
      "id": "dg-20261121-dag",
      "titel": "Fürsorge und Erfindungsreichtum auf jedem Kontinent",
@@ -228,6 +249,13 @@
    ],
    "dagoverzichten": [
     {
+     "id": "dg-20261122-dag",
+     "titel": "La patience et l'attention forment le fil rouge de l'actualité",
+     "categorie": null,
+     "dag": "2026-11-22",
+     "url": "https://brightnews.online/articles/fr/la-patience-et-l-attention-forment-le-fil-rouge-de-l-actualite-dg-20261122-dag.html"
+    },
+    {
      "id": "dg-20261121-dag",
      "titel": "Soins et ingéniosité sur tous les continents",
      "categorie": null,
@@ -287,6 +315,13 @@
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261122-dag",
+     "titel": "La paciencia y el cuidado son el hilo conductor de las noticias",
+     "categorie": null,
+     "dag": "2026-11-22",
+     "url": "https://brightnews.online/articles/es/la-paciencia-y-el-cuidado-son-el-hilo-conductor-de-las-noticias-dg-20261122-dag.html"
+    },
     {
      "id": "dg-20261121-dag",
      "titel": "Cuidado e ingenio en cada continente",

@@ -1,5 +1,58 @@
 [
   {
+    "id": "dg-20261122-dag",
+    "type": "digest",
+    "digest_date": "2026-11-22",
+    "title": "Patience and care form the common thread in today's news",
+    "summary": "Today's stories revolve around people who give their time and attention to others, sometimes for decades, and something beautiful comes from it. From a drone that lets whales breathe without disturbing them to a dress that has been traveling the world for fourteen years: everywhere you look, patience proves worthwhile. At Two Feathers Native American Family Services in Northern California, a small team has grown since 2018 into 32 employees providing cultural mental health care to Native American youth [1]. Roger \"Chapreges\" Jones found help there himself after struggling with isolation as a teenager, and later became a youth ambassador....",
+    "image_alt": "Patience and care form the common thread in today's news",
+    "meta_description": "Comfort letters from 1967, a dress full of stories, Christmas lights and whale breath: today's positive news about care, patience and connection.",
+    "meta_keywords": "Health, Lifestyle, Science",
+    "link": "",
+    "source": "BrightNews",
+    "image": null,
+    "date": "2026-11-23T00:19:29.600Z",
+    "category": null,
+    "refs": [
+      {
+        "id": "1795349915850ms2ikm7m8",
+        "title": "Native youth programs build their own mental health care model"
+      },
+      {
+        "id": "1795349887995lqla9w8am",
+        "title": "Son tracks down writers of comfort letters to wounded Vietnam veteran"
+      },
+      {
+        "id": "1795306791252v9u4l69hm",
+        "title": "Red dress embroidered by 380 women from 51 countries"
+      },
+      {
+        "id": "1795306739210yw4etc3fp",
+        "title": "Pub owner in Knaresborough lights up village with 10,000-light Christmas display"
+      },
+      {
+        "id": "1795306709417unxrj97k5",
+        "title": "Drone captures whale breath for genome research without disruption"
+      }
+    ],
+    "slug": "patience-and-care-form-the-common-thread-in-today-s-news"
+  },
+  {
+    "id": "1795393091658wvi7hphop",
+    "title": "Mist waterfall in Mallorca wins Weather Photographer of the Year",
+    "summary": "Francisco Bailón Rodríguez has won the top prize in the Royal Meteorological Society's Weather Photographer of the Year competition with a photograph of a mist waterfall flowing into the sea near Mallorca, Spain, captured at sunrise. Jury member Angela Nicholson praised the flow in the image and the lighting of the clouds. The competition, now in its second decade, selected...",
+    "image_alt": "Mist flows like a waterfall over cliffs at sunrise in Mallorca, Spain",
+    "meta_description": "Photograph of mist waterfall in Mallorca wins Weather Photographer of the Year 2026 from the Royal Meteorological Society.",
+    "meta_keywords": "Weather Photographer of the Year, Royal Meteorological Society, Mallorca, weather photography, climate change, Francisco Bailón Rodríguez",
+    "link": "https://nicenews.com/environment/weather-photographer-of-the-year-2026/",
+    "source": "NiceNews.com",
+    "image": "https://media.nicenews.com/s3:inbox-media-offload.nicenews.com/wp-content/uploads/2026/11/1-scottish-loch-r-1636951.jpg",
+    "date": "2026-11-23T00:18:14.982Z",
+    "category": "Environment",
+    "score": 8,
+    "slug": "mist-waterfall-in-mallorca-wins-weather-photographer-of-the-year"
+  },
+  {
     "id": "dg-20261121-dag",
     "type": "digest",
     "digest_date": "2026-11-21",
@@ -2594,20 +2647,5 @@
     "category": "Environment",
     "score": 9,
     "slug": "beavers-return-to-loch-ness-after-500-years"
-  },
-  {
-    "id": "1793733350635zxe818kte",
-    "title": "Carbon credits open Great Koala National Park in NSW",
-    "summary": "In New South Wales, Australia, carbon credits have played a role in making the Great Koala National Park possible. Further details about the process or background are not provided in the source.",
-    "image_alt": "Koala in a tree, symbol for the Great Koala National Park in NSW",
-    "meta_description": "Carbon credits helped make the Great Koala National Park in New South Wales possible.",
-    "meta_keywords": "carbon credits, Great Koala National Park, NSW, Australia, nature conservation",
-    "link": "https://www.optimistdaily.com/2026/11/how-carbon-credits-helped-unlock-the-great-koala-national-park-in-nsw/",
-    "source": "OptimistDaily.com",
-    "image": "https://www.optimistdaily.com/wp-content/uploads/koala-Depositphotos_18324133_S.jpg",
-    "date": "2026-11-03T19:15:52.627Z",
-    "category": "Environment",
-    "score": 9,
-    "slug": "carbon-credits-open-great-koala-national-park-in-nsw"
   }
 ]
