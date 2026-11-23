@@ -501,3 +501,10 @@ Eigennamen (Les Madelinéennes, Sounds in the City, McGill University, Magdalen-
 - **Grammatica:** "dron" is in het Spaans mannelijk ("el dron"), maar de vertaling gebruikt consequent "una dron" (zowel bij "una pequeña dron" als "a una dron"). Dat is een verkeerd lidwoord/geslacht bij een zelfstandig naamwoord, geen vertaalfout uit de zes categorieën maar wel een kromme zin die opvalt.
 
 Verder is "University of St. Andrews" terecht onvertaald gelaten, de titel gebruikt gewone zinsstijl zoals het hoort in het Spaans, en er zijn geen toegevoegde feiten of weggelaten details ten opzichte van het Nederlands.
+
+### 2026-11-23, Engels
+
+**Artikel:** Bevers keren na 500 jaar terug naar Loch Ness
+**Oordeel:** niets aangetroffen.
+
+Titel en tekst dekken elkaar, de eigennamen (NatureScot, Trees for Life, Beaver Trust, River Ness) blijven onvertaald, er zijn geen feiten toegevoegd en de zin loopt natuurlijk.

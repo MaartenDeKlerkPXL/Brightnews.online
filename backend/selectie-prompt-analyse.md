@@ -1773,3 +1773,72 @@ Niet bright-waardig: 1. Twijfel: 1.
 - **Link:** (geen link opgenomen in brondata)
 
 **Vertaalsteekproef:** niet uitgevoerd in deze beoordelingsronde (buiten de toegewezen stappen 3-5 van vannacht).
+
+### 2026-11-23, 11:14 Europe/Amsterdam
+
+Dit is de wekelijkse volledige controle (maandag): de hele feed is beoordeeld, niet alleen het nieuwe deel.
+
+Beoordeeld: 129 artikelen, gepubliceerd tussen 2026-11-04 06:17 en 2026-11-23 01:18.
+Niet bright-waardig: 7. Twijfel: 5.
+
+#### Victoria verbiedt onnodige operaties bij interseksekinderen
+- **Gepubliceerd:** 2026-11-09 23:04 · Health · GoodGoodGood.co
+- **Waar het over gaat:** De Australische deelstaat Victoria verbiedt medisch niet-noodzakelijke "corrigerende" operaties bij interseksekinderen, een praktijk die al decennia omstreden is.
+- **Waarom dit niet goed genoeg is:** Dit is een politiek gekleurd onderwerp: het is alleen onverdeeld goed nieuws als je zelf al vindt dat dit soort operaties verkeerd zijn. Het stuk gaat bovendien in de kern over iets wat al die jaren misging bij deze kinderen, niet over herstel of redding die dat overstijgt.
+
+#### Los Angeles verbiedt oliewinning definitief
+- **Gepubliceerd:** 2026-11-12 07:13 · Environment · OptimistDaily.com
+- **Waar het over gaat:** Na jarenlange actievoering verbiedt de gemeenteraad van LA nieuwe oliewinning binnen de stadsgrenzen en laat bestaande putten binnen twintig jaar uitfaseren.
+- **Waarom dit niet goed genoeg is:** Vergelijkbaar met het ijkvoorbeeld over surveillancecamera's in de selectieprompt: een verbod op een economische activiteit is alleen onverdeeld goed nieuws als je de politieke afweging al deelt. De kern is een beleidsbeslissing over fossiele brandstoffen, geen redding of herstel.
+
+#### Psychologen verklaren 6 eigenschappen van vriendschappen die 20 jaar duren
+- **Gepubliceerd:** 2026-11-19 15:50 · Lifestyle · Upworthy.com
+- **Waar het over gaat:** Op basis van onderzoek zet het artikel zes kenmerken op een rij van vriendschappen die decennialang standhouden.
+- **Waarom dit niet goed genoeg is:** Dit is een klassieke listicle ("zes eigenschappen van…"), ook al is de onderliggende inhoud aardig. De afwijslijst sluit dit format expliciet uit, hoe bruikbaar het ook is.
+
+#### Elf bomen en struiken mogen dit najaar niet gesnoeid worden
+- **Gepubliceerd:** 2026-11-19 15:55 · Lifestyle · Positivr.fr
+- **Waar het over gaat:** Tuintips over welke soorten je in het najaar beter niet snoeit om de winter door te komen.
+- **Waarom dit niet goed genoeg is:** Zuiver zelfhulp/listicle-materiaal zonder verhaal — precies de categorie die de afwijslijst noemt.
+
+#### November is dé maand om wintergroenten te planten
+- **Gepubliceerd:** 2026-11-19 15:55 · Lifestyle · Positivr.fr
+- **Waar het over gaat:** Tuinadvies over welke wintergroenten nu gezaaid en geplant moeten worden.
+- **Waarom dit niet goed genoeg is:** Opnieuw een "zo doe je het"-tuintip zonder nieuwswaardig verhaal; listicle/zelfhulp.
+
+#### Border van aromatische kruiden fleurt moestuin op zonder geld uit te geven
+- **Gepubliceerd:** 2026-11-19 15:55 · Lifestyle · Positivr.fr
+- **Waar het over gaat:** Drie gratis trucs om een border van kruiden in de moestuin netjes en productief te houden.
+- **Waarom dit niet goed genoeg is:** Derde tuintip-artikel van dezelfde bron op dezelfde dag; zelfhulp/listicle zonder verhaal, geen nieuws.
+
+#### GTA 6 breekt met hypermasculiene traditie van de franchise
+- **Gepubliceerd:** 2026-11-22 01:20 · Tech · GoodGoodGood.co
+- **Waar het over gaat:** Bespreking van de net uitgebrachte game Grand Theft Auto VI, die voor het eerst een vrouwelijke hoofdpersoon heeft en meer op relaties inzet.
+- **Waarom dit niet goed genoeg is:** Dit is in de kern een gamelancering/-bespreking: productnieuws, ongeacht hoe sympathiek de maatschappelijke invalshoek is verpakt.
+
+#### Twijfelgeval: Gepersonaliseerde hersentherapie geeft 68 procent remissie bij PTSS
+- **Gepubliceerd:** 2026-11-05 06:39 · Health · OptimistDaily.com
+- **Waar het over gaat:** Een vorm van hersentherapie zou 68% remissie geven bij PTSS.
+- **Waarom ik twijfel:** De samenvatting geeft zelf toe dat details over methode, onderzoeksopzet en onderzoekers ontbreken. Dat raakt aan "te-weinig-inhoud" uit de afwijslijst; het kan een mooi verhaal zijn, maar zo is het niet te verifiëren. Advies: navragen bij de bron of aanvullen, anders twijfelachtig.
+
+#### Twijfelgeval: Solar kits veranderen rampenhulp
+- **Gepubliceerd:** 2026-11-06 06:36 · General · OptimistDaily.com
+- **Waar het over gaat:** Zonne-energiekits zouden de aanpak van rampenhulp veranderen.
+- **Waarom ik twijfel:** Het item is extreem summier: geen locatie, geen organisatie, geen concreet voorbeeld. Dit voelt als "te-weinig-inhoud" in plaats van een afgewogen afwijzing van een op zich sympathiek onderwerp.
+
+#### Twijfelgeval: Bijna alle transgender jongeren tevreden over hormoontherapie
+- **Gepubliceerd:** 2026-11-16 19:34 · Health · Sciencenews.org
+- **Waar het over gaat:** Een enquête onder bijna 400 transgender jongeren laat zien dat 97% tevreden is met de keuze voor hormoontherapie.
+- **Waarom ik twijfel:** Het is een op zichzelf staand, methodisch onderzoeksresultaat zonder beleidswijziging, dus niet één-op-één hetzelfde als de politieke ijkvoorbeelden. Maar het onderwerp ligt maatschappelijk gevoelig genoeg dat het voor een deel van de lezers alleen "goed nieuws" is als ze er al zo over denken. Ik zou het laten staan, met Eriks oordeel gewenst.
+
+#### Twijfelgeval: SpaceX vangt Starship met mechanische armen en schrijft geschiedenis
+- **Gepubliceerd:** 2026-11-15 06:22 · Tech · NPR.org
+- **Waar het over gaat:** SpaceX ving voor het eerst een Starship-raket op met mechanische armen, een stap richting volledige herbruikbaarheid.
+- **Waarom ik twijfel:** Het grenst aan productnieuws van een bedrijf (vergelijkbaar met het Kia-ijkvoorbeeld), maar het gaat niet om consumentenpromotie, eerder om een technische doorbraak met mogelijk bredere betekenis voor ruimtevaart. Niet eenduidig een gewone lezer "blij" makend, maar ook niet puur marketing.
+
+#### Twijfelgeval: Computermuis kreeg patent dankzij Douglas Engelbart
+- **Gepubliceerd:** 2026-11-19 15:48 · Tech · GoodNewsNetwork.org
+- **Waar het over gaat:** Een "dit gebeurde op deze dag"-stukje over het patent op de computermuis, 56 jaar geleden.
+- **Waarom ik twijfel:** Feitelijk correct en onschuldig, maar er zit geen actueel goed-nieuws-element in; het is historische trivia zonder iemand die geholpen wordt of iets dat nu beter gaat. Zie ook de Patroon-alinea hieronder.
+
+**Patroon:** Op 19 november verschenen kort na elkaar vier vergelijkbare "dit gebeurde op deze dag"-stukjes van GoodNewsNetwork.org (Reagan/Gorbatsjov in Genève, See It Now-jubileum, het computermuis-patent, en UNESCO's oprichting/minaret-herstel). Dit zijn feitelijk correcte, nette stukjes, maar ze missen stuk voor stuk een actueel "iemand wordt hier nu beter van"-element dat de selectieprompt vraagt; het voelt meer als een kalenderrubriek dan als nieuws. Verder kwamen drie van de zeven afgekeurde/twijfelachtige listicle-achtige tuinartikelen op dezelfde dag van dezelfde bron (Positivr.fr) — dat wijst eerder op een format-probleem bij die bron dan op incidentele uitglijders.
