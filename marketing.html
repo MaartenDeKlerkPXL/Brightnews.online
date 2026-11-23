@@ -248,15 +248,22 @@ import { tekenBeeldkaart, kaartBestandsnaam, downloadKaart } from './js/beeldkaa
         const kaartvak = document.createElement('div');
         kaartvak.className = 'kaartvak';
         let doek = null;
+        let fotoNoot = null;
         async function tekenVoorbeeld() {
             if (!doek) return;
             const titel = dagItem.onderwerp?.titelPerTaal?.[actieveTaal]
                 ?? dagItem.onderwerp?.titel ?? '';
-            await tekenBeeldkaart(doek, {
+            const { metFoto } = await tekenBeeldkaart(doek, {
                 kop: titel,
                 soort: dagItem.onderwerp?.soort,
                 taal: actieveTaal,
+                artikelUrl: dagItem.onderwerp?.url,
             });
+            if (fotoNoot) {
+                fotoNoot.textContent = metFoto
+                    ? 'Met de foto van het artikel.'
+                    : 'Geen bruikbare foto gevonden, dus de roomgele versie.';
+            }
         }
 
         const acties = document.createElement('div');
@@ -286,7 +293,9 @@ import { tekenBeeldkaart, kaartBestandsnaam, downloadKaart } from './js/beeldkaa
         });
         acties.append(kopieer, goed, slecht);
 
-        if (kanaal === 'instagram' || kanaal === 'facebook') {
+        // LinkedIn sinds 2026-11-23: een post met beeld valt daar meer op dan
+        // alleen een linkvoorbeeld.
+        if (kanaal === 'instagram' || kanaal === 'facebook' || kanaal === 'linkedin') {
             const kaartKnop = document.createElement('button');
             kaartKnop.className = 'btn btn--secondary btn--sm';
             kaartKnop.textContent = '🖼 Beeldkaart';
@@ -295,8 +304,10 @@ import { tekenBeeldkaart, kaartBestandsnaam, downloadKaart } from './js/beeldkaa
                     doek = document.createElement('canvas');
                     const uitleg = document.createElement('p');
                     uitleg.className = 'uitleg';
-                    uitleg.innerHTML = '1080 × 1080, klaar voor Instagram en Facebook. '
-                        + 'De kaart volgt de taalknoppen hierboven.<br><br>';
+                    uitleg.innerHTML = '1080 × 1080, klaar voor Instagram, Facebook en LinkedIn. '
+                        + 'De kaart volgt de taalknoppen hierboven. ';
+                    fotoNoot = document.createElement('span');
+                    uitleg.append(fotoNoot, document.createElement('br'), document.createElement('br'));
                     const download = document.createElement('button');
                     download.className = 'btn btn--primary btn--sm';
                     download.textContent = '⬇ Download PNG';
