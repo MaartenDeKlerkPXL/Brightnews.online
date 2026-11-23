@@ -1,6 +1,6 @@
 // Homepage van redesign v5 (Figma: v5 · Home — Normaal, Donker, Vroege
 // ochtend, Dun). Volgorde (besluit v5 · 01): dagoverzicht, Vandaag,
-// Gisteren, Per onderwerp, einde.
+// Gisteren, Eerder deze week (sinds 2026-11-23), Per onderwerp, einde.
 //
 // Welk blok compact is (alleen koppen) volgt uit het dagoverzicht bovenaan
 // (besluit v5 · 02 en 03): het blok van de dag die dat overzicht samenvat,
@@ -115,6 +115,36 @@
         }
     }
 
+    // ── Eerder deze week ─────────────────────────────────────────────────
+    // De dagen vóór gisteren die nog in de feed staan, nieuwste eerst, elk met
+    // een kop die naar de editie van die dag linkt. Zelfde kaarten als Gisteren.
+
+    function tekenEerder(dagen, dag0) {
+        const sectie = document.getElementById('eerder');
+        const blokken = [];
+        let totaal = 0;
+        for (let terug = 2; terug <= 6; terug++) {
+            const dag = B.verschuif(dag0, -terug);
+            const artikelen = dagen.get(dag) || [];
+            if (!artikelen.length) continue;
+            totaal += artikelen.length;
+            const kop = el('div', 'day-header');
+            const links = el('div');
+            const titel = el('h3', 'sectie__titel');
+            titel.appendChild(B.link(B.url.editie(dag), 'dag-link', B.hoofdletter(B.dagLang(dag))));
+            links.append(titel, el('p', 'day-header__meta', B.aantalVerhalen(artikelen.length)));
+            kop.appendChild(links);
+            blokken.push(kop, rijen(artikelen));
+        }
+        sectie.hidden = totaal === 0;
+        if (!totaal) return sectie.replaceChildren();
+        const kop = el('div', 'sectie__kop');
+        const titel = el('h2', 'day-header__titel', t('v5_eerder_deze_week'));
+        titel.id = 'kop-eerder';
+        kop.append(titel, el('p', 'sectie__uitleg', t('v5_eerder_deze_week_uitleg')));
+        sectie.replaceChildren(kop, ...blokken);
+    }
+
     // ── Per onderwerp en einde ───────────────────────────────────────────
 
     function onderwerpen() {
@@ -157,6 +187,7 @@
         blok.hidden = !aan;
         document.getElementById('home-kop').hidden = aan;
         NIEUWSBLOKKEN.forEach(id => { if (aan) document.getElementById(id).hidden = true; });
+        if (aan) document.getElementById('eerder').hidden = true;
         ['vandaag', 'gisteren', 'einde'].forEach(id => { if (!aan) document.getElementById(id).hidden = false; });
         if (aan) document.body.dataset.pagina = 'fout';
         else delete document.body.dataset.pagina;
@@ -197,6 +228,7 @@
             metVoortgang: false, digest,
             leegTitel: t('v5_geen_verhalen'), leegTekst: t('v5_geen_verhalen_tekst'),
         });
+        tekenEerder(dagen, dag0);
         onderwerpen();
         einde(vandaag.length === 0);
     }
