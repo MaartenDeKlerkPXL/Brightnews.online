@@ -392,6 +392,13 @@ const FEEDS = [
     // { name: 'MyModernMet.com', url: 'https://mymodernmet.com/feed/' },
     { name: 'Positivr.fr', url: 'https://positivr.fr/feed/' },                           // (30) Frans
     { name: 'Goodnews-magazin.de', url: 'https://goodnews-magazin.de/feed/' },          // (10) Duits
+    // Erbij op 2026-11-23 (punt 85.2): 25 goednieuwsfeeds in vijf talen getest,
+    // dit waren de enige twee die werken, actief zijn en zelf goed nieuws maken.
+    // The Better India: hoopvolle verhalen uit India, Engels, veel aanvoer.
+    { name: 'TheBetterIndia.com', url: 'https://www.thebetterindia.com/feed/' },         // (50)
+    // Sunny Skyz: de feed waar de site zelf naar linkt. Titels hebben soms een
+    // kapotte apostrof ("and#039;"); Sonnet schrijft de kop toch opnieuw.
+    { name: 'SunnySkyz.com', url: 'https://www.sunnyskyz.com/rss_tebow.php' },          // (6)
     // Squirrel-News eruit op 2026-09-29: 8 van de 8 beoordelingen afgewezen,
     // állemaal als "verzameleditie". Dat is geen pech maar bouw — die site ís
     // een linklijst-nieuwsbrief, en BrightNews maakt eigen dagoverzichten.
