@@ -257,6 +257,21 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   5. Nagaan of de home meer kan tonen dan Vandaag en Gisteren, zodat de site
      voller oogt (bijv. een rij "Eerder deze week").
 
+  **Stand 23 november (Maarten en Claude).** Maarten herinnerde zich 50+
+  artikelen in twee dagen; dat klopt alleen voor 2 en 3 september (37 en 76),
+  vóór de drempel naar 8 ging (6 september) en vóór het schrappen van de
+  nulbronnen. Besluit Maarten: de drempel blijft 8; wel meer bronnen en een
+  vollere home.
+  - **2. ✅ PR #69, wacht op Erik:** The Better India (50 per week) en Sunny
+    Skyz (6 per week). Van 25 geteste feeds in vijf talen de enige twee die
+    werken, actief zijn en zelf goed nieuws maken; Nederlands en Spaans
+    leverden niets bruikbaars op. Na een week de opbrengst per bron nakijken.
+  - **4. ✅ Geen rem.** De meeste feeds geven zelf maar 10 berichten, ruim
+    binnen de 30. Alleen Upworthy: zijn 10 dekken ±26 uur, dus bij een
+    uitgevallen run missen we daar verhalen.
+  - **5. ✅ Live (PR #70):** "Eerder deze week" onder Gisteren, met de vijf
+    dagen daarvoor. De home toont nu ±65 verhalen.
+
   **Telling voor onderdeel 1 (Erik en Claude, 2026-11-22).** Uit
   `data/selectie-archief.jsonl` (beoordeeld, besluit) en `data/seen_links.json`
   (status `ok` = echt gepubliceerd), dagen in Nederlandse tijd.
