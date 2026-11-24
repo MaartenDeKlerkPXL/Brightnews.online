@@ -508,3 +508,12 @@ Verder is "University of St. Andrews" terecht onvertaald gelaten, de titel gebru
 **Oordeel:** niets aangetroffen.
 
 Titel en tekst dekken elkaar, de eigennamen (NatureScot, Trees for Life, Beaver Trust, River Ness) blijven onvertaald, er zijn geen feiten toegevoegd en de zin loopt natuurlijk.
+
+### 2026-11-24, Duits
+
+**Artikel:** Neues Daumimplantat lindert Arthrose ohne Knochenentfernung
+**Oordeel:** verder in orde, één taalkundig steekje.
+
+- **Grammatica:** "Daumeprothese" is geen correct Duits woord; het zou "Daumenprothese" moeten zijn (en ook "das Trapeziumknochen" is fout, het hoort "der Trapeziumknochen" te zijn). Geen toegevoegd feit of vertaaloordeel, maar wel een storende fout in de tekst.
+
+Verder blijft KeriMedical onvertaald zoals het hoort, de inhoud komt overeen met het Nederlands zonder toegevoegde feiten, en de titel dekt het verhaal. De hoofdlettercapitalisatie van zelfstandige naamwoorden is normaal Duits en dus geen punt.

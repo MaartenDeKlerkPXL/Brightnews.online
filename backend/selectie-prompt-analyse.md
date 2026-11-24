@@ -1842,3 +1842,25 @@ Niet bright-waardig: 7. Twijfel: 5.
 - **Waarom ik twijfel:** Feitelijk correct en onschuldig, maar er zit geen actueel goed-nieuws-element in; het is historische trivia zonder iemand die geholpen wordt of iets dat nu beter gaat. Zie ook de Patroon-alinea hieronder.
 
 **Patroon:** Op 19 november verschenen kort na elkaar vier vergelijkbare "dit gebeurde op deze dag"-stukjes van GoodNewsNetwork.org (Reagan/Gorbatsjov in Genève, See It Now-jubileum, het computermuis-patent, en UNESCO's oprichting/minaret-herstel). Dit zijn feitelijk correcte, nette stukjes, maar ze missen stuk voor stuk een actueel "iemand wordt hier nu beter van"-element dat de selectieprompt vraagt; het voelt meer als een kalenderrubriek dan als nieuws. Verder kwamen drie van de zeven afgekeurde/twijfelachtige listicle-achtige tuinartikelen op dezelfde dag van dezelfde bron (Positivr.fr) — dat wijst eerder op een format-probleem bij die bron dan op incidentele uitglijders.
+
+### 2026-11-24, 12:57 Europe/Amsterdam
+
+Beoordeeld: 9 artikelen, gepubliceerd tussen 2026-11-23 12:18 en 2026-11-24 00:21.
+Niet bright-waardig: 1. Twijfel: 2.
+
+#### Automatische pardons wissen strafblad om abortus in Engeland en Wales
+- **Gepubliceerd:** 2026-11-23 12:18 · Health · OptimistDaily.com
+- **Waar het over gaat:** Vrouwen die ooit zijn vervolgd voor het beëindigen van hun eigen zwangerschap krijgen in Engeland en Wales automatisch een schone lei, als gevolg van nieuwe wetgeving (Section 242, Crime and Policing Act 2026).
+- **Waarom dit niet goed genoeg is:** Dit is alleen goed nieuws als je het vanuit een bepaalde politieke of morele positie over abortus bekijkt — precies de toets uit de selectieprompt voor de categorie "politiek". De kern van het verhaal is bovendien een correctie van eerder overheidsbeleid dat vervolging mogelijk maakte, niet een redding of herstelverhaal dat daarboven uitstijgt. Dit hoort niet thuis op een site die uitsluitend ongedeeld goed nieuws brengt.
+
+#### Twijfelgeval: Peggy Guggenheim redde moderne meesterwerken van de nazi's
+- **Gepubliceerd:** 2026-11-24 00:21 · Lifestyle · BBC.com/culture
+- **Waar het over gaat:** Een portret van Peggy Guggenheim, die kunstwerken van jonge avant-gardisten redde van nazi-confiscatie en kunstenaars als Rothko en Pollock een podium gaf.
+- **Waarom ik twijfel:** De kern — kunst redden van de nazi's en jong talent een kans geven — is precies het type "redding als kern" dat de kernregel juist wél toelaat, ondanks de nare aanleiding. Maar de samenvatting besteedt ook nadrukkelijk aandacht aan haar liefdesleven en hoe ze daarom vooral herinnerd werd, wat het dichter bij een biografisch profiel dan bij een nieuwsverhaal brengt. Ik zou het laten staan, maar met twijfel of het niet te veel een BBC Culture-portret is in plaats van een BrightNews-verhaal.
+
+#### Twijfelgeval: Carl Sagan legde vierde dimensie uit met een appel
+- **Gepubliceerd:** 2026-11-24 00:20 · Science · Upworthy.com
+- **Waar het over gaat:** Een terugblik op een fragment uit Cosmos (1980) waarin Carl Sagan op toegankelijke wijze de vierde dimensie uitlegt met een appel en een tesseract.
+- **Waarom ik twijfel:** Inhoudelijk warm en leuk wetenschapsweetje, geen probleem-framing, geen van de afwijscategorieën is duidelijk van toepassing. Maar het is strikt genomen geen nieuws en geen verhaal over een mens die geholpen of gered wordt — het is een terugblik op een tv-fragment, dicht tegen "leuk weetje zonder actuele relevantie" aan. Ik zou hem laten staan vanwege de maatschappelijke/educatieve waarde, maar het randje met "te weinig inhoud" is aanwezig.
+
+Verder was alles in orde: de overige zes artikelen (duimimplantaat, geredde peuter in de woestijn, beschermd walrusgebied, Ella Fitzgerald, het afscheid van Sighle Williams, en de mogelijk opgeloste Riemannhypothese) voldoen duidelijk aan de BrightNews-maatstaf.
