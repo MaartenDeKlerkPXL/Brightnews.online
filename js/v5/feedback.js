@@ -15,9 +15,11 @@
 // Versturen (TODO 66 punt 13): een insert in de Supabase-tabel
 // artikel_feedback met artikel-id, keuze, toelichting, e-mailadres en taal
 // (alleen insert-rechten; de database controleert alles nog een keer en
-// houdt een limiet per IP bij, supabase/formulieren-2026-11-12.sql). Is het
-// verborgen veld `website` ingevuld, dan doet de pagina alsof het gelukt is
-// en verstuurt niets. Om de staten te bekijken (er gaat dan niets weg):
+// houdt een limiet per IP bij, supabase/formulieren-2026-11-12.sql). Ziet
+// B.spamwacht een bot (verborgen veld gevuld, binnen 3 seconden verstuurd,
+// headless browser), dan doet de pagina alsof het gelukt is en verstuurt
+// niets; een tweede bericht binnen 30 seconden geeft een melding. Om de
+// staten te bekijken (er gaat dan niets weg):
 //   ?staat=fout        geen keuze gemaakt
 //   ?staat=verstuurd   de bevestiging (zonder e-mailadres)
 
@@ -128,6 +130,7 @@
     // samen); bij dat laatste noemt de melding het mailadres.
     function formulierFout(fout) {
         const tekst = fout?.message || '';
+        if (tekst === 'even_wachten') return 'v5_form_even_wachten';
         if (tekst.includes('te_vaak_totaal')) return 'v5_form_te_druk';
         if (tekst.includes('te_vaak')) return 'v5_form_te_vaak';
         return 'v5_in_fout_algemeen';
@@ -135,9 +138,12 @@
 
     // De keuze is een vertaalsleutel (v5_fb_k_bron); in de database staat
     // alleen het laatste deel (bron).
+    const spam = B.spamwacht($('fb-website'));
+
     async function verstuur(keuze, adres) {
         const client = window.supabaseClient;
-        if ($('fb-website').value || B.param('staat')) return;
+        if (spam.bot() || B.param('staat')) return;
+        if (spam.teSnel()) throw new Error('even_wachten');
         if (!client) throw new Error('geen verbinding met Supabase');
         const { error } = await client.from('artikel_feedback').insert({
             artikel_id: artikel ? String(artikel.id) : null,
@@ -147,6 +153,7 @@
             taal: B.taal(),
         });
         if (error) throw error;
+        spam.verstuurd();
     }
 
     function koppel() {

@@ -10,10 +10,11 @@
 // Versturen (TODO 66 punt 13): een insert in de Supabase-tabel
 // contactberichten (alleen insert-rechten; lezen doet het team in het
 // dashboard). De database controleert de velden nog een keer en houdt een
-// limiet per IP bij (supabase/formulieren-2026-11-12.sql). Is het verborgen
-// veld `website` ingevuld, dan is het een bot: de pagina doet alsof het
-// gelukt is en verstuurt niets. Om de staten te bekijken (er gaat dan niets
-// weg):
+// limiet per IP bij (supabase/formulieren-2026-11-12.sql). Ziet B.spamwacht
+// een bot (verborgen veld gevuld, binnen 3 seconden verstuurd, headless
+// browser), dan doet de pagina alsof het gelukt is en verstuurt niets. Wie
+// binnen 30 seconden een tweede bericht stuurt, krijgt een melding. Om de
+// staten te bekijken (er gaat dan niets weg):
 //   ?staat=fout        een onvolledig adres en een leeg bericht
 //   ?staat=verstuurd   de bevestiging (met ?email= het adres in de tekst)
 
@@ -84,6 +85,7 @@
     // ── Gedrag ───────────────────────────────────────────────────────────
 
     const knop = formulier.querySelector('button[type="submit"]');
+    const spam = B.spamwacht($('ct-website'));
 
     // De database meldt te_vaak (deze lezer) of te_vaak_totaal (iedereen
     // samen); bij dat laatste noemt de melding het mailadres.
@@ -103,7 +105,8 @@
 
         const adres = email.value.trim();
         const client = window.supabaseClient;
-        if ($('ct-website').value || B.param('staat')) { verstuurd(adres).focus(); return; }
+        if (spam.bot() || B.param('staat')) { verstuurd(adres).focus(); return; }
+        if (spam.teSnel()) { window.showNotification(t('v5_form_even_wachten'), 'error'); return; }
         if (!client) { window.showNotification(t('v5_in_fout_algemeen'), 'error'); return; }
 
         // aria-disabled in plaats van disabled: zo houdt de knop de focus.
@@ -118,6 +121,7 @@
                 taal: B.taal(),
             });
             if (error) throw error;
+            spam.verstuurd();
             verstuurd(adres).focus();
         } catch (fout) {
             console.warn('BrightNews v5: contactbericht', fout);
