@@ -1,17 +1,25 @@
 {
- "gegenereerd": "2026-11-24T00:22:09.409Z",
+ "gegenereerd": "2026-11-24T12:21:44.466Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
     {
-     "id": "1795349915850ms2ikm7m8",
-     "titel": "Native jongerenprogramma's bouwen eigen model voor geestelijke gezondheidszorg",
-     "teaser": "In Noord-Californië biedt Two Feathers Native American Family Services cultureel verankerde geestelijke gezondheidszorg aan Indiaanse jongeren en gezinnen, ongeacht hun stamregistratie. Opgericht in 1998 groeide de organisatie onder leiding van directeur Virgil Moorehead sinds 2018 van vier naar 32 medewerkers. Roger 'Chapreges' Jones, een Yurok-jongere die als tiener worstelde met isolatie en een eetstoornis, vond via een baan bij Two...",
+     "id": "1795522813567h293qtms6",
+     "titel": "79-jarige man leert haarstylen en make-up voor zijn slechtziende vrouw",
+     "teaser": "In april 2021 klopte een man van bijna 80 jaar aan bij Delmar College of Hair & Esthetics in Red Deer, Alberta. Zijn vrouw, met wie hij 50 jaar getrouwd was, verloor haar zicht en verbrandde zichzelf regelmatig met de krultang. Directeur Carrie Hannah koppelde hem aan studente Britney Smith, die hem op een mannequinhoofd leerde hoe hij volumekrullen kon...",
      "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/79-jarige-man-leert-haarstylen-en-make-up-voor-zijn-slechtziende-vrouw-1795522813567h293qtms6.html"
+    },
+    {
+     "id": "17955227342313cx3pnhjb",
+     "titel": "Viagra-achtige pil vertraagt achteruitgang bij Alzheimer",
+     "teaser": "Een nieuwe pil genaamd AR1001, ontwikkeld door het Zuid-Koreaanse bedrijf AriBio, vertraagde de cognitieve achteruitgang bij mensen met vroege Alzheimer met 31 procent over een jaar, zo blijkt uit fase 3-resultaten gepresenteerd op een conferentie in Boston. Het middel behoort tot dezelfde geneesmiddelfamilie als Viagra en werkt door de bloedtoevoer naar de hersenen te verbeteren. Experts noemen het bijzonder omdat...",
+     "score": 9,
      "categorie": "Health",
-     "url": "https://brightnews.online/articles/nl/native-jongerenprogramma-s-bouwen-eigen-model-voor-geestelijke-gezondheidszorg-1795349915850ms2ikm7m8.html"
+     "url": "https://brightnews.online/articles/nl/viagra-achtige-pil-vertraagt-achteruitgang-bij-alzheimer-17955227342313cx3pnhjb.html"
     },
     {
      "id": "1795479680676uk0vyzd37",
@@ -36,14 +44,6 @@
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/nl/carl-sagan-legde-vierde-dimensie-uit-met-een-appel-1795479636274xmr1udgvt.html"
-    },
-    {
-     "id": "17954796141650a3crxw7w",
-     "titel": "Sighle Williams krijgt na 37 jaar drive-thru een onvergetelijk afscheid",
-     "teaser": "In Gainesville, Florida, werkte Sighle Williams 37 jaar bij Mac's Drive Thru, waar ze bekendstond om haar warmte en haar vermogen om elke klant en diens bestelling te onthouden. Bij haar pensionering besloot eigenaar Ron DeFilippo elke dollar die op haar laatste werkdag werd uitgegeven aan haar te schenken. Het resultaat overtrof alle verwachtingen: een enorme file aan auto's vormde...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/sighle-williams-krijgt-na-37-jaar-drive-thru-een-onvergetelijk-afscheid-17954796141650a3crxw7w.html"
     }
    ],
    "dagoverzichten": [
@@ -73,12 +73,20 @@
   "en": {
    "top": [
     {
-     "id": "1795349915850ms2ikm7m8",
-     "titel": "Native youth programs build their own mental health care model",
-     "teaser": "In Northern California, Two Feathers Native American Family Services provides culturally grounded mental health care to Native American youth and families, regardless of tribal enrollment status. Founded in 1998, the organization has grown under director Virgil Moorehead's leadership since 2018 from four to 32 staff members. Roger 'Chapreges' Jones, a Yurok youth who struggled with isolation and an eating disorder...",
+     "id": "1795522813567h293qtms6",
+     "titel": "79-year-old man learns hairstyling and makeup for his visually impaired wife",
+     "teaser": "In April 2021, a man approaching 80 knocked on the door of Delmar College of Hair & Esthetics in Red Deer, Alberta. His wife, whom he had been married to for 50 years, had lost her sight and regularly burned herself with the curling iron. Director Carrie Hannah connected him with student Britney Smith, who taught him on a mannequin...",
      "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/79-year-old-man-learns-hairstyling-and-makeup-for-his-visually-impaired-wife-1795522813567h293qtms6.html"
+    },
+    {
+     "id": "17955227342313cx3pnhjb",
+     "titel": "Viagra-like pill slows cognitive decline in Alzheimer's",
+     "teaser": "A new pill called AR1001, developed by South Korean company AriBio, slowed cognitive decline in people with early Alzheimer's by 31 percent over one year, according to phase 3 results presented at a conference in Boston. The drug belongs to the same medication family as Viagra and works by improving blood flow to the brain. Experts say it is remarkable...",
+     "score": 9,
      "categorie": "Health",
-     "url": "https://brightnews.online/articles/en/native-youth-programs-build-their-own-mental-health-care-model-1795349915850ms2ikm7m8.html"
+     "url": "https://brightnews.online/articles/en/viagra-like-pill-slows-cognitive-decline-in-alzheimer-s-17955227342313cx3pnhjb.html"
     },
     {
      "id": "1795479680676uk0vyzd37",
@@ -103,14 +111,6 @@
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/en/carl-sagan-explained-the-fourth-dimension-with-an-apple-1795479636274xmr1udgvt.html"
-    },
-    {
-     "id": "17954796141650a3crxw7w",
-     "titel": "Sighle Williams gets unforgettable farewell after 37 years at drive-thru",
-     "teaser": "In Gainesville, Florida, Sighle Williams worked at Mac's Drive Thru for 37 years, where she was known for her warmth and her ability to remember every customer and their order. Upon her retirement, owner Ron DeFilippo decided to donate every dollar spent on her last working day to her. The result exceeded all expectations: a massive line of cars formed...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/sighle-williams-gets-unforgettable-farewell-after-37-years-at-drive-thru-17954796141650a3crxw7w.html"
     }
    ],
    "dagoverzichten": [
@@ -140,12 +140,20 @@
   "de": {
    "top": [
     {
-     "id": "1795349915850ms2ikm7m8",
-     "titel": "Native-Jugendprogramme entwickeln eigenes Modell für psychische Gesundheit",
-     "teaser": "Im Norden Kaliforniens bietet Two Feathers Native American Family Services kulturell verankerte psychische Gesundheitsversorgung für indianische Jugendliche und Familien an, unabhängig von ihrer Stammeszugehörigkeit. Die 1998 gegründete Organisation wuchs unter der Leitung von Direktor Virgil Moorehead seit 2018 von vier auf 32 Mitarbeiter. Roger 'Chapreges' Jones, ein Yurok-Jugendlicher, der als Teenager mit Isolation und einer Essstörung kämpfte, fand durch eine...",
+     "id": "1795522813567h293qtms6",
+     "titel": "79-jähriger Mann lernt Haarstyling und Make-up für seine sehbehinderte Frau",
+     "teaser": "Im April 2021 meldete sich ein Mann kurz vor seinem 80. Geburtstag beim Delmar College of Hair & Esthetics in Red Deer, Alberta an. Seine Frau, mit der er 50 Jahre verheiratet war, hatte ihr Augenlicht verloren und verbrannte sich regelmäßig mit dem Lockenstab. Direktorin Carrie Hannah vermittelte ihn an die Studentin Britney Smith, die ihm an einem Trainingskopf zeigte,...",
      "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/79-jahriger-mann-lernt-haarstyling-und-make-up-fur-seine-sehbehinderte-frau-1795522813567h293qtms6.html"
+    },
+    {
+     "id": "17955227342313cx3pnhjb",
+     "titel": "Viagra-ähnliche Pille verlangsamt Alzheimer-Abbau",
+     "teaser": "Eine neue Pille namens AR1001, entwickelt vom südkoreanischen Unternehmen AriBio, verlangsamte den kognitiven Abbau bei Menschen mit frühem Alzheimer um 31 Prozent über ein Jahr, wie aus Phase-3-Ergebnissen hervorgeht, die auf einer Konferenz in Boston präsentiert wurden. Das Mittel gehört zur gleichen Arzneimittelfamilie wie Viagra und wirkt, indem es die Blutversorgung des Gehirns verbessert. Experten nennen es bemerkenswert, weil es...",
+     "score": 9,
      "categorie": "Health",
-     "url": "https://brightnews.online/articles/de/native-jugendprogramme-entwickeln-eigenes-modell-fur-psychische-gesundheit-1795349915850ms2ikm7m8.html"
+     "url": "https://brightnews.online/articles/de/viagra-ahnliche-pille-verlangsamt-alzheimer-abbau-17955227342313cx3pnhjb.html"
     },
     {
      "id": "1795479680676uk0vyzd37",
@@ -170,14 +178,6 @@
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/de/carl-sagan-erklarte-die-vierte-dimension-mit-einem-apfel-1795479636274xmr1udgvt.html"
-    },
-    {
-     "id": "17954796141650a3crxw7w",
-     "titel": "Sighle Williams erhält nach 37 Jahren Drive-Thru einen unvergesslichen Abschied",
-     "teaser": "In Gainesville, Florida, arbeitete Sighle Williams 37 Jahre lang bei Mac's Drive Thru, wo sie für ihre Wärme und ihre Fähigkeit bekannt war, jeden Kunden und dessen Bestellung zu merken. Bei ihrer Pensionierung beschloss Inhaber Ron DeFilippo, jeden Dollar, der an ihrem letzten Arbeitstag ausgegeben wurde, ihr zu schenken. Das Ergebnis übertraf alle Erwartungen: Eine riesige Schlange von Autos bildete...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/sighle-williams-erhalt-nach-37-jahren-drive-thru-einen-unvergesslichen-abschied-17954796141650a3crxw7w.html"
     }
    ],
    "dagoverzichten": [
@@ -207,12 +207,20 @@
   "fr": {
    "top": [
     {
-     "id": "1795349915850ms2ikm7m8",
-     "titel": "Les programmes jeunesse autochtones créent leur propre modèle de santé mentale",
-     "teaser": "Dans le nord de la Californie, Two Feathers Native American Family Services offre des services de santé mentale ancrés culturellement aux jeunes et familles autochtones, indépendamment de leur inscription tribale. Fondée en 1998, l'organisation a grandi sous la direction du directeur Virgil Moorehead depuis 2018, passant de quatre à 32 employés. Roger « Chapreges » Jones, un jeune Yurok qui...",
+     "id": "1795522813567h293qtms6",
+     "titel": "Un homme de 79 ans apprend la coiffure et le maquillage pour son épouse malvoyante",
+     "teaser": "En avril 2021, un homme de près de 80 ans s'est présenté à Delmar College of Hair & Esthetics à Red Deer, en Alberta. Son épouse, avec qui il était marié depuis 50 ans, avait perdu la vue et se brûlait régulièrement avec le fer à boucler. La directrice Carrie Hannah l'a mis en relation avec l'étudiante Britney Smith, qui...",
      "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/un-homme-de-79-ans-apprend-la-coiffure-et-le-maquillage-pour-son-epouse-malvoyan-1795522813567h293qtms6.html"
+    },
+    {
+     "id": "17955227342313cx3pnhjb",
+     "titel": "Un comprimé de type Viagra ralentit le déclin cognitif dans l'Alzheimer",
+     "teaser": "Un nouveau comprimé appelé AR1001, développé par l'entreprise sud-coréenne AriBio, a ralenti le déclin cognitif chez les personnes atteintes d'Alzheimer précoce de 31 pour cent sur un an, selon les résultats de phase 3 présentés lors d'une conférence à Boston. Le médicament appartient à la même famille de médicaments que Viagra et fonctionne en améliorant l'apport sanguin au cerveau. Les...",
+     "score": 9,
      "categorie": "Health",
-     "url": "https://brightnews.online/articles/fr/les-programmes-jeunesse-autochtones-creent-leur-propre-modele-de-sante-mentale-1795349915850ms2ikm7m8.html"
+     "url": "https://brightnews.online/articles/fr/un-comprime-de-type-viagra-ralentit-le-declin-cognitif-dans-l-alzheimer-17955227342313cx3pnhjb.html"
     },
     {
      "id": "1795479680676uk0vyzd37",
@@ -237,14 +245,6 @@
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/fr/carl-sagan-expliquait-la-quatrieme-dimension-avec-une-pomme-1795479636274xmr1udgvt.html"
-    },
-    {
-     "id": "17954796141650a3crxw7w",
-     "titel": "Sighle Williams reçoit un adieu inoubliable après 37 ans au drive-thru",
-     "teaser": "À Gainesville, en Floride, Sighle Williams a travaillé 37 ans chez Mac's Drive Thru, où elle était connue pour sa chaleur et sa capacité à se souvenir de chaque client et de sa commande. À sa retraite, le propriétaire Ron DeFilippo a décidé de lui offrir chaque dollar dépensé lors de son dernier jour de travail. Le résultat a dépassé...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/sighle-williams-recoit-un-adieu-inoubliable-apres-37-ans-au-drive-thru-17954796141650a3crxw7w.html"
     }
    ],
    "dagoverzichten": [
@@ -274,12 +274,20 @@
   "es": {
    "top": [
     {
-     "id": "1795349915850ms2ikm7m8",
-     "titel": "Programas nativos para jóvenes construyen su propio modelo de salud mental",
-     "teaser": "En el norte de California, Two Feathers Native American Family Services ofrece atención de salud mental culturalmente arraigada a jóvenes y familias indígenas, independientemente de su registro tribal. Fundada en 1998, la organización creció bajo la dirección del director Virgil Moorehead desde 2018, pasando de cuatro a 32 empleados. Roger 'Chapreges' Jones, un joven Yurok que como adolescente luchó contra...",
+     "id": "1795522813567h293qtms6",
+     "titel": "Hombre de 79 años aprende peinado y maquillaje para su esposa con discapacidad visual",
+     "teaser": "En abril de 2021, un hombre de casi 80 años se presentó en Delmar College of Hair & Esthetics en Red Deer, Alberta. Su esposa, con quien llevaba 50 años casado, había perdido la vista y se quemaba regularmente con la rizadora. La directora Carrie Hannah lo conectó con la estudiante Britney Smith, quien le enseñó en una cabeza de...",
      "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/hombre-de-79-anos-aprende-peinado-y-maquillaje-para-su-esposa-con-discapacidad-v-1795522813567h293qtms6.html"
+    },
+    {
+     "id": "17955227342313cx3pnhjb",
+     "titel": "Píldora similar a Viagra ralentiza el deterioro en el Alzheimer",
+     "teaser": "Una nueva píldora llamada AR1001, desarrollada por la empresa surcoreana AriBio, ralentizó el deterioro cognitivo en personas con Alzheimer temprano un 31 por ciento durante un año, según resultados de fase 3 presentados en una conferencia en Boston. El fármaco pertenece a la misma familia de medicamentos que Viagra y funciona mejorando el flujo sanguíneo hacia el cerebro. Los expertos...",
+     "score": 9,
      "categorie": "Health",
-     "url": "https://brightnews.online/articles/es/programas-nativos-para-jovenes-construyen-su-propio-modelo-de-salud-mental-1795349915850ms2ikm7m8.html"
+     "url": "https://brightnews.online/articles/es/pildora-similar-a-viagra-ralentiza-el-deterioro-en-el-alzheimer-17955227342313cx3pnhjb.html"
     },
     {
      "id": "1795479680676uk0vyzd37",
@@ -304,14 +312,6 @@
      "score": 9,
      "categorie": "Science",
      "url": "https://brightnews.online/articles/es/carl-sagan-explico-la-cuarta-dimension-con-una-manzana-1795479636274xmr1udgvt.html"
-    },
-    {
-     "id": "17954796141650a3crxw7w",
-     "titel": "Sighle Williams recibe una despedida inolvidable tras 37 años en drive-thru",
-     "teaser": "En Gainesville, Florida, Sighle Williams trabajó 37 años en Mac's Drive Thru, donde era conocida por su calidez y su capacidad para recordar a cada cliente y su pedido. Al jubilarse, el propietario Ron DeFilippo decidió donarle cada dólar gastado en su último día de trabajo. El resultado superó todas las expectativas: se formó una enorme fila de autos alrededor...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/sighle-williams-recibe-una-despedida-inolvidable-tras-37-anos-en-drive-thru-17954796141650a3crxw7w.html"
     }
    ],
    "dagoverzichten": [
