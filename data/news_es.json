@@ -1,5 +1,140 @@
 [
   {
+    "id": "dg-20261123-dag",
+    "type": "digest",
+    "digest_date": "2026-11-23",
+    "title": "Justicia reparada, mano sanada y niebla capturada en cámara",
+    "summary": "Este día demuestra que el progreso puede ocurrir en lugares muy diversos: en la sala de justicia, en el quirófano e incluso sobre el mar al amanecer. Tres historias, tres mundos, pero en cada una de ellas se repara o se ilumina algo que antes pesaba mucho. En Inglaterra y Gales se borran automáticamente los antecedentes penales de las mujeres que alguna vez fueron arrestadas o condenadas por haber interrumpido su propio embarazo [1]. Desde el 16 de noviembre, la policía y los tribunales no necesitan hacer nada al respecto; los indultos se derivan de la Crime and Policing Act...",
+    "image_alt": "Justicia reparada, mano sanada y niebla capturada en cámara",
+    "meta_description": "Antecedentes borrados, un nuevo implante de pulgar y una foto meteorológica ganadora: las noticias positivas del día en BrightNews.",
+    "meta_keywords": "Health, Environment",
+    "link": "",
+    "source": "BrightNews",
+    "image": null,
+    "date": "2026-11-24T00:22:06.172Z",
+    "category": null,
+    "refs": [
+      {
+        "id": "1795436317885ud9kpaqgq",
+        "title": "Los indultos automáticos borran antecedentes por aborto en Inglaterra y Gales"
+      },
+      {
+        "id": "1795436293270fufjmr5hc",
+        "title": "Nuevo implante de pulgar alivia la artrosis sin extirpación ósea"
+      },
+      {
+        "id": "1795393091658wvi7hphop",
+        "title": "Cascada de niebla en Mallorca gana Weather Photographer of the Year"
+      }
+    ],
+    "slug": "justicia-reparada-mano-sanada-y-niebla-capturada-en-camara"
+  },
+  {
+    "id": "1795479680676uk0vyzd37",
+    "title": "Peggy Guggenheim salvó obras maestras modernas de los nazis",
+    "summary": "Peggy Guggenheim, miembro de la adinerada familia Guggenheim, salvó obras de arte moderno de la confiscación nazi e impulsó a jóvenes artistas como Mark Rothko y Jackson Pollock. A pesar de su papel pionero, fue recordada principalmente por su vida amorosa. Creció en la opulencia, pero eligió una existencia independiente, entre otras cosas a través de su trabajo en la...",
+    "image_alt": "Retrato de la coleccionista de arte Peggy Guggenheim",
+    "meta_description": "Cómo Peggy Guggenheim salvó el arte moderno e impulsó a genios como Pollock y Rothko.",
+    "meta_keywords": "Peggy Guggenheim, arte moderno, Jackson Pollock, Mark Rothko, Guggenheim Jeune, historia del arte",
+    "link": "https://www.bbc.com/culture/article/20261120-the-scandalous-heiress-who-changed-modern-art?ocid=global_culture_rss",
+    "source": "BBC.com/culture",
+    "image": "https://ychef.files.bbci.co.uk/800x450/p0pp4h7n.jpg",
+    "date": "2026-11-24T00:21:22.628Z",
+    "category": "Lifestyle",
+    "score": 9,
+    "slug": "peggy-guggenheim-salvo-obras-maestras-modernas-de-los-nazis"
+  },
+  {
+    "id": "1795479657837i6pxr6xie",
+    "title": "La hipótesis de Riemann posiblemente resuelta con ayuda de IA",
+    "summary": "Uno de los problemas sin resolver más famosos de las matemáticas, la hipótesis de Riemann, parece haber sido finalmente demostrado después de más de un siglo. El matemático Levent Alpöge de Anthropic publicó el 20 de noviembre una prueba en su sitio web, que desarrolló con la ayuda de la herramienta de IA Claude de Anthropic. La hipótesis de Riemann...",
+    "image_alt": "Fórmulas matemáticas que hacen referencia a la hipótesis de Riemann y los números primos",
+    "meta_description": "Hipótesis de Riemann posiblemente demostrada: el matemático Levent Alpöge colaboró con la herramienta de IA Claude en la prueba histórica.",
+    "meta_keywords": "hipótesis de Riemann, matemáticas, Levent Alpöge, Anthropic, Claude, números primos, IA",
+    "link": "https://www.sciencenews.org/article/riemann-hypothesis-solved-math-ai",
+    "source": "Sciencenews.org",
+    "image": "https://media.sciencenews.org/wp-content/uploads/sites/2/2026/11/112326_KHEC_Riemann_main.jpg?w=800",
+    "date": "2026-11-24T00:20:59.660Z",
+    "category": "Science",
+    "score": 9,
+    "slug": "la-hipotesis-de-riemann-posiblemente-resuelta-con-ayuda-de-ia"
+  },
+  {
+    "id": "1795479636274xmr1udgvt",
+    "title": "Carl Sagan explicó la cuarta dimensión con una manzana",
+    "summary": "Hace 46 años, Carl Sagan, reconocido comunicador científico e investigador de vida extraterrestre, explicó de manera comprensible la cuarta dimensión en el episodio 10 de la serie de PBS «Cosmos» de 1980. Para ello utilizó una manzana y un teseracto (hipercubo). Sagan explicó primero cómo un ser bidimensional en «Flatland» percibiría una manzana: solo como una superficie cambiante cuando se...",
+    "image_alt": "Carl Sagan durante una de sus conferencias sobre ciencia",
+    "meta_description": "Cómo Carl Sagan explicó en 1980 la cuarta dimensión con una manzana y un teseracto en Cosmos.",
+    "meta_keywords": "Carl Sagan, cuarta dimensión, Cosmos, teseracto, hipercubo, Flatland, comunicación científica",
+    "link": "https://www.upworthy.com/carl-sagan-beautifully-explained-fourth-dimension-using-sliced-apple-ex1/",
+    "source": "Upworthy.com",
+    "image": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/02/origin_72dc74.jpg?w=1200&#038;quality=80",
+    "date": "2026-11-24T00:20:38.703Z",
+    "category": "Science",
+    "score": 9,
+    "slug": "carl-sagan-explico-la-cuarta-dimension-con-una-manzana"
+  },
+  {
+    "id": "17954796141650a3crxw7w",
+    "title": "Sighle Williams recibe una despedida inolvidable tras 37 años en drive-thru",
+    "summary": "En Gainesville, Florida, Sighle Williams trabajó 37 años en Mac's Drive Thru, donde era conocida por su calidez y su capacidad para recordar a cada cliente y su pedido. Al jubilarse, el propietario Ron DeFilippo decidió donarle cada dólar gastado en su último día de trabajo. El resultado superó todas las expectativas: se formó una enorme fila de autos alrededor...",
+    "image_alt": "Sighle Williams en la ventanilla de Mac's Drive Thru en Gainesville, Florida",
+    "meta_description": "Tras 37 años en un drive-thru de Florida, Sighle Williams recibió una despedida inolvidable, plasmada en un documental de Netflix.",
+    "meta_keywords": "Sighle Williams, Mac's Drive Thru, Gainesville Florida, documental Netflix, One Last Order, jubilación, empleada drive-thru",
+    "link": "https://www.upworthy.com/she-worked-a-florida-drive-thru-for-37-years-on-her-last-day-her-boss-gave-her-every-dollar-customers-spent/",
+    "source": "Upworthy.com",
+    "image": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/11/261122-Event-OneLastOrder-1651-MattPendleton.jpg?w=1024",
+    "date": "2026-11-24T00:20:16.509Z",
+    "category": "Lifestyle",
+    "score": 9,
+    "slug": "sighle-williams-recibe-una-despedida-inolvidable-tras-37-anos-en-drive-thru"
+  },
+  {
+    "id": "1795479590110t1qd8qx8a",
+    "title": "Ella Fitzgerald olvida la letra y gana un Grammy",
+    "summary": "El 13 de febrero de 1960, Ella Fitzgerald subió al escenario en Berlín para cantar «Mack the Knife». A mitad de la canción, olvidó completamente la letra. En lugar de parar, improvisó durante casi dos minutos nuevas palabras que se ajustaban perfectamente a la melodía y el ritmo, e incluso incluyó bromas sobre su propio error y referencias a Bobby...",
+    "image_alt": "Ella Fitzgerald canta en el escenario durante una actuación en directo",
+    "meta_description": "Ella Fitzgerald olvidó la letra de «Mack the Knife» e improvisó una versión que ganó un Grammy.",
+    "meta_keywords": "Ella Fitzgerald, Mack the Knife, Grammy, jazz, scat, actuación en directo Berlín",
+    "link": "https://www.upworthy.com/ella-fitzgerald-forgot-the-words-to-mack-the-knife-her-improvised-version-earned-a-grammy/",
+    "source": "Upworthy.com",
+    "image": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/11/Ella-Fitzgerald-singing.jpg?w=1200&quality=82",
+    "date": "2026-11-24T00:19:52.955Z",
+    "category": "Lifestyle",
+    "score": 9,
+    "slug": "ella-fitzgerald-olvida-la-letra-y-gana-un-grammy"
+  },
+  {
+    "id": "1795479566247lhip9t3yd",
+    "title": "Paraíso de las morsas en Point Lay protegido para siempre en Alaska",
+    "summary": "Los conservacionistas estadounidenses han asegurado un ecosistema único en la costa del mar de Bering de Alaska. Las islas barrera cerca del pueblo de Point Lay albergan las mayores concentraciones de morsas del Pacífico de América del Norte. El área de 47.000 acres (74 millas cuadradas), ahora en manos de Interior Alaska Land Trust, está protegida del desarrollo industrial. También...",
+    "image_alt": "Las morsas descansan masivamente en las islas barrera cerca de Point Lay en Alaska",
+    "meta_description": "Las islas barrera cerca de Point Lay, Alaska, con 200.000 morsas reciben protección permanente tras diez años de trabajo.",
+    "meta_keywords": "morsa, Alaska, Point Lay, Conservation Fund, laguna Kasegaluk, conservación de la naturaleza, mar de Bering",
+    "link": "https://www.goodnewsnetwork.org/one-of-a-kind-refuge-to-200000-walrus-protected-forever-in-alaska/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Walruses-concentrate-at-Point-Lay-Alaska-public-domain-NOAA-e1795423753131.jpg",
+    "date": "2026-11-24T00:19:29.285Z",
+    "category": "Environment",
+    "score": 9,
+    "slug": "paraiso-de-las-morsas-en-point-lay-protegido-para-siempre-en-alaska"
+  },
+  {
+    "id": "1795479536177x7dzqewb2",
+    "title": "Voluntario rescata a niña desaparecida en el desierto de Arizona",
+    "summary": "En Eloy, Arizona, la pequeña Vella Campillo, de 2 años, se perdió en el desierto el 17 de noviembre al atardecer, vistiendo solo un pañal. La Oficina del Sheriff del Condado de Pinal y decenas de voluntarios, entre ellos el abuelo Jay Stewart, buscaron durante siete horas con temperaturas de 10°C, utilizando drones y un helicóptero que no detectaron su...",
+    "image_alt": "El voluntario Jay Stewart abraza a la pequeña Vella Campillo rescatada después de ser encontrada en el desierto de Arizona",
+    "meta_description": "El abuelo Jay Stewart rescata a la niña desaparecida Vella (2) tras una búsqueda de horas en el desierto de Arizona.",
+    "meta_keywords": "Jay Stewart, Vella Campillo, Arizona, Pinal County, niña desaparecida, operación de rescate, sheriff",
+    "link": "https://www.goodnewsnetwork.org/determined-volunteer-rescues-lost-toddler-in-the-desert-she-may-not-be-our-child-but-she-could-be/",
+    "source": "GoodNewsNetwork.org",
+    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-Pinal-County-Sheriffs-Office.jpg",
+    "date": "2026-11-24T00:19:00.163Z",
+    "category": "Lifestyle",
+    "score": 9,
+    "slug": "voluntario-rescata-a-nina-desaparecida-en-el-desierto-de-arizona"
+  },
+  {
     "id": "1795436317885ud9kpaqgq",
     "title": "Los indultos automáticos borran antecedentes por aborto en Inglaterra y Gales",
     "summary": "Las mujeres en Inglaterra y Gales que alguna vez fueron arrestadas, advertidas o condenadas por interrumpir su propio embarazo ya no tendrán antecedentes penales por ese motivo. Desde el 16 de noviembre, la policía y los tribunales deben eliminar automáticamente estos datos sin que las mujeres tengan que hacer nada. Los indultos se amparan en la Sección 242 de la...",
@@ -2405,36 +2540,6 @@
     "slug": "las-alas-de-mariposa-como-base-para-pintura-segura"
   },
   {
-    "id": "dg-20261104-science",
-    "type": "digest",
-    "digest_date": "2026-11-04",
-    "title": "Chocolate de Reading, coral que sana y publicación gratuita para toda Europa",
-    "summary": "A principios de noviembre se demuestra que la ciencia no solo ocurre en laboratorios, sino que también cobra vida en lugares inesperados. Una estudiante elabora una tableta de chocolate completamente de origen británico, investigadores descubren que el coral dañado puede recuperarse mediante simple contacto, y científicos europeos obtienen más espacio para compartir su trabajo de forma gratuita. Tres historias diferentes, pero todas ellas hablan de proteger y compartir algo valioso. Maha Khan, estudiante de máster en seguridad alimentaria en la University of Reading, cosechó vainas de cacao de los invernaderos de su universidad y elaboró con ellas, junto con leche...",
-    "image_alt": "Chocolate de Reading, coral que sana y publicación gratuita para toda Europa",
-    "meta_description": "Chocolate de cacao británico, coral sanador y publicación gratuita en Europa: las noticias científicas positivas de principios de noviembre de 2026 resumid",
-    "meta_keywords": "Science",
-    "link": "",
-    "source": "BrightNews",
-    "image": "/assets/fallback/science-2.jpg",
-    "date": "2026-11-05T19:41:38.696Z",
-    "category": "Science",
-    "refs": [
-      {
-        "id": "1793820590416jpudzw0hp",
-        "title": "Estudiante elabora una tableta de chocolate con cacao completamente británico"
-      },
-      {
-        "id": "1793769512699wwo2nsoyi",
-        "title": "El coral blanqueado se recupera al tacto"
-      },
-      {
-        "id": "1793907647245k7dr7jdjw",
-        "title": "Open Research Europe amplía la publicación gratuita a 11 países"
-      }
-    ],
-    "slug": "chocolate-de-reading-coral-que-sana-y-publicacion-gratuita-para-toda-europa"
-  },
-  {
     "id": "1793907647245k7dr7jdjw",
     "title": "Open Research Europe amplía la publicación gratuita a 11 países",
     "summary": "Los investigadores de 11 países europeos pueden publicar ahora de forma gratuita a través de Open Research Europe (ORE), la plataforma de acceso abierto de la Comisión Europea. Esta expansión del iniciativa permite que más científicos en Europa accedan a la publicación sin tener que pagar costes de publicación.",
@@ -2465,36 +2570,6 @@
     "slug": "los-charranes-mayores-regresan-a-la-costa-sur-britanica-tras-la-gripe-aviar"
   },
   {
-    "id": "dg-20261104-lifestyle",
-    "type": "digest",
-    "digest_date": "2026-11-04",
-    "title": "Llaves, piezas de puzle y olas saladas: las buenas noticias de principios de noviembre",
-    "summary": "Estos días muestran cómo las personas construyen algo de maneras muy diferentes: un oficio, una relación con la familia, o un récord en el mar. Desde un taller escolar en Houston hasta una travesía a nado por toda la costa de California, siempre se trata de perseverar y hacer algo por otro. En la Fifth Ward de Houston, estudiantes de secundaria dirigen desde hace poco su propio taller de automóviles. El Barbara Jordan Career Center, que atiende a 12 campus escolares y más de 1.200 alumnos, quiere dar a los jóvenes la oportunidad de un trabajo que realmente valga la...",
-    "image_alt": "Llaves, piezas de puzle y olas saladas: las buenas noticias de principios de noviembre",
-    "meta_description": "Desde un taller escolar en Houston hasta una travesía a nado récord por California: las buenas noticias de estilo de vida de principios de noviembre.",
-    "meta_keywords": "Lifestyle",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/YouTube-Screengrab-Houston-Independent-School-District.jpg",
-    "date": "2026-11-05T05:39:54.425Z",
-    "category": "Lifestyle",
-    "refs": [
-      {
-        "id": "17938206195450tb2nv2m9",
-        "title": "Estudiantes abren taller de automóviles al público en Houston"
-      },
-      {
-        "id": "1793857093984y8jny2obn",
-        "title": "Un puzle del castillo acerca a la nieta con su abuelo silencioso"
-      },
-      {
-        "id": "1793820648815qj0f78wz7",
-        "title": "Catherine Breed nada por primera vez toda la costa de California"
-      }
-    ],
-    "slug": "llaves-piezas-de-puzle-y-olas-saladas-las-buenas-noticias-de-principios-de-novie"
-  },
-  {
     "id": "1793857142350b36d1cek1",
     "title": "Terapia cerebral personalizada logra 68 por ciento de remisión en TEPT",
     "summary": "Una forma personalizada de terapia cerebral logra remisión en el 68 por ciento de las personas con TEPT. Este porcentaje se menciona en un artículo de The Optimist Daily, aunque faltan más detalles sobre el funcionamiento exacto, el diseño del estudio o los investigadores involucrados. La noticia se presenta como un desarrollo positivo en el campo de la salud mental...",
@@ -2523,95 +2598,5 @@
     "category": "Environment",
     "score": 9,
     "slug": "parque-nacional-pantanal-de-brasil-se-expande-significativamente"
-  },
-  {
-    "id": "1793857093984y8jny2obn",
-    "title": "Un puzle del castillo acerca a la nieta con su abuelo silencioso",
-    "summary": "La cineasta Ora DeKornfeld realizó el documental The Grandfather Puzzle para acercarse a su abuelo de 99 años, quien nunca quiso hablar sobre su vida en Hungría como barón. Fotografió el castillo donde él creció e hizo que le confeccionaran un puzle con esa imagen. Durante su visita, fue recibida en el pueblo como una baronesa que regresaba, pero nadie...",
-    "image_alt": "Un puzle con la fotografía de un castillo húngaro, realizado para un documental sobre un abuelo y su nieta",
-    "meta_description": "Documental The Grandfather Puzzle: una nieta utiliza un puzle para acercarse a su abuelo silencioso.",
-    "meta_keywords": "The Grandfather Puzzle, Ora DeKornfeld, JoyDrops, documental, Good News Network, Hungría, historia familiar",
-    "link": "https://www.goodnewsnetwork.org/the-grandfather-puzzle-pieces-together-a-family-history-one-man-wouldnt-talk-about/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Screenshot-2026-11-03-at-6.05.22-PM.png",
-    "date": "2026-11-05T05:38:16.774Z",
-    "category": "Lifestyle",
-    "score": 8,
-    "slug": "un-puzle-del-castillo-acerca-a-la-nieta-con-su-abuelo-silencioso"
-  },
-  {
-    "id": "1793820648815qj0f78wz7",
-    "title": "Catherine Breed nada por primera vez toda la costa de California",
-    "summary": "La nadadora de larga distancia Catherine Breed es la primera persona que ha recorrido a nado toda la línea costera de California: 900 millas en 111 días. Comenzó el 1 de julio en la frontera entre Oregón y California y completó el viaje el 19 de octubre, cruzando la frontera con México a más de 3 millas de la costa...",
-    "image_alt": "Catherine Breed nada en el océano frente a la costa de California",
-    "meta_description": "Catherine Breed nada por primera vez toda la costa de California: 900 millas en 111 días, llenas de tiburones y tormentas.",
-    "meta_keywords": "Catherine Breed, costa de California, travesía de récord, natación de larga distancia, Golden Gate, encuentro con tiburones, El Niño",
-    "link": "https://www.goodnewsnetwork.org/woman-becomes-first-person-to-swim-the-entire-california-coastline/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Catherine-Breed-swins-in-the-open-ocean-south-of-the-Golden-Gate-Bridge-credit-Catherine-Breed-press-photo.jpg",
-    "date": "2026-11-04T19:30:51.408Z",
-    "category": "Lifestyle",
-    "score": 8,
-    "slug": "catherine-breed-nada-por-primera-vez-toda-la-costa-de-california"
-  },
-  {
-    "id": "17938206195450tb2nv2m9",
-    "title": "Estudiantes abren taller de automóviles al público en Houston",
-    "summary": "En la Fifth Ward de Houston se ha abierto un taller de automóviles dirigido por estudiantes de secundaria. La iniciativa proviene del Barbara Jordan Career Center, parte del Houston Independent School District, que busca crear empleo y prácticas para alumnos en profesiones muy demandadas. El centro atiende a 12 campus escolares y más de 1.200 estudiantes. Cada viernes de 9.00...",
-    "image_alt": "Estudiantes trabajan en un automóvil en el nuevo taller del Barbara Jordan Career Center en Houston",
-    "meta_description": "Estudiantes de Houston abren taller de automóviles al público mediante programa escolar enfocado en experiencia práctica.",
-    "meta_keywords": "Houston, taller de automóviles, estudiantes, Barbara Jordan Career Center, educación, prácticas, mecánico de automóviles",
-    "link": "https://www.goodnewsnetwork.org/student-run-automotive-shop-opens-to-the-public-in-houston-where-every-oil-change-helps-the-next-generation/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/YouTube-Screengrab-Houston-Independent-School-District.jpg",
-    "date": "2026-11-04T19:30:22.682Z",
-    "category": "Lifestyle",
-    "score": 9,
-    "slug": "estudiantes-abren-taller-de-automoviles-al-publico-en-houston"
-  },
-  {
-    "id": "1793820590416jpudzw0hp",
-    "title": "Estudiante elabora una tableta de chocolate con cacao completamente británico",
-    "summary": "Maha Khan, estudiante de máster en seguridad alimentaria en la University of Reading, elaboró una tableta de chocolate completamente con ingredientes británicos, incluidos los granos de cacao. Cosechó vainas de cacao de los invernaderos de la universidad y las combinó con leche y azúcar británicas para crear seis tabletas, denominadas The Reading 100, en honor al centenario de la universidad....",
-    "image_alt": "Maha Khan sostiene una tableta de chocolate elaborada con cacao británico",
-    "meta_description": "Estudiante británica elabora chocolate con cacao local y llama la atención sobre investigación de plantas de cacao resistentes al clima.",
-    "meta_keywords": "cacao, chocolate, University of Reading, Maha Khan, cambio climático, International Cocoa Quarantine Centre, cultivo de cacao",
-    "link": "https://www.positive.news/society/who-needs-a-golden-ticket-the-race-to-future-proof-chocolate/",
-    "source": "Positive.News",
-    "image": "/assets/fallback/science-2.jpg",
-    "date": "2026-11-04T19:29:54.704Z",
-    "category": "Science",
-    "score": 9,
-    "slug": "estudiante-elabora-una-tableta-de-chocolate-con-cacao-completamente-britanico"
-  },
-  {
-    "id": "1793769512699wwo2nsoyi",
-    "title": "El coral blanqueado se recupera al tacto",
-    "summary": "Científicos de Stanford han descubierto que el coral blanqueado puede recuperarse mediante el contacto físico. Este hallazgo surge de investigaciones sobre la restauración coralina y ofrece posibles nuevas perspectivas para la conservación de arrecifes de coral.",
-    "image_alt": "Primer plano de coral blanqueado bajo el agua",
-    "meta_description": "Investigación de Stanford demuestra que el coral blanqueado puede recuperarse al tacto, un descubrimiento esperanzador para la restauración coralina.",
-    "meta_keywords": "coral blanqueado, restauración coralina, Stanford, arrecifes de coral, investigación oceánica",
-    "link": "https://www.optimistdaily.com/2026/11/stanford-scientists-discovered-bleached-coral-can-heal-through-touch/",
-    "source": "OptimistDaily.com",
-    "image": "https://www.optimistdaily.com/wp-content/uploads/colorful-coral-reef-with-hard-Depositphotos_18119259_S.jpg",
-    "date": "2026-11-04T05:18:33.473Z",
-    "category": "Science",
-    "score": 9,
-    "slug": "el-coral-blanqueado-se-recupera-al-tacto"
-  },
-  {
-    "id": "1793769496499udef1tpv4",
-    "title": "Maya Higa construye un santuario de vida silvestre a través de Twitch",
-    "summary": "Maya Higa ha establecido un santuario de vida silvestre financiado por las personas que la siguen en Twitch. La reserva natural es conocida como Alveus Sanctuary. Higa también compartió su historia durante una TED Talk.",
-    "image_alt": "Maya Higa durante una TED Talk, foto cortesía de Alveus Sanctuary",
-    "meta_description": "Maya Higa construyó un santuario de vida silvestre en Twitch, financiado por sus espectadores.",
-    "meta_keywords": "Maya Higa, Twitch, santuario de vida silvestre, Alveus Sanctuary, TED Talk",
-    "link": "https://www.optimistdaily.com/2026/11/maya-higa-built-a-wildlife-sanctuary-on-twitch-funded-by-the-people-who-watch-it/",
-    "source": "OptimistDaily.com",
-    "image": "https://www.optimistdaily.com/wp-content/uploads/Local-Changemakers-Story-Covers-12.png",
-    "date": "2026-11-04T05:18:17.776Z",
-    "category": "Environment",
-    "score": 9,
-    "slug": "maya-higa-construye-un-santuario-de-vida-silvestre-a-traves-de-twitch"
   }
 ]
