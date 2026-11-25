@@ -1631,6 +1631,29 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   het maanden te wachten op mensen die er nog niet zijn. *(Erik: het raakt
   Supabase en de betaallogica.)*
 
+  **Besluit Maarten 25 november: beide een maand gratis.** Ontwerp (Claude),
+  nog niet gebouwd, omdat het van één Stripe-vraag afhangt:
+  - **De vriend** komt via `?ref=<code>` binnen en krijgt een proefperiode
+    van 60 dagen in plaats van 30. Dat is geen code maar een tweede Payment
+    Link met 60 dagen proef (Maarten maakt hem in het Stripe-dashboard); de
+    site kiest die link als er een ref bewaard is. Zo loopt er geen geld
+    anders dan nu.
+  - **De verwijzer** krijgt zijn maand pas als de vriend écht betaalt (de
+    proef omgezet, eerste factuur betaald). Dat houdt nepaccounts buiten de
+    deur. Betaalt de verwijzer zelf nog niet: `premium_until` + 30 dagen,
+    zoals ZONNETJE30. **Betaalt hij al via Stripe, dan heeft een maand in
+    onze database geen zin**: Stripe factureert gewoon door. Dan moet het
+    een Stripe-tegoed of een eenmalige 100%-coupon op zijn abonnement zijn.
+  - Bijhouden: een tabel `verwijzingen` (verwijzer, vriend, status,
+    beloond_op), uniek per vriend, gevuld bij registratie (ref uit de
+    user-metadata) en afgerond door de stripe-webhook.
+  - **Open vraag voor Erik:** staat Stripe Managed Payments een
+    customer-balance-tegoed of een coupon op een lopend abonnement toe? De
+    documentatie zegt het niet duidelijk (nagezocht 25 november). Zo ja:
+    bouwen zoals hierboven. Zo nee: de verwijzer die al betaalt, krijgt een
+    terugbetaling van één maand, of alleen niet-betalende verwijzers doen
+    mee.
+
 - [ ] **49. Een nieuwsbrief.** *(Besluit Maarten 2026-09-27: bouwen.)*
 
   Nagekeken: er is geen enkele nieuwsbriefcode in de repo, alleen een
