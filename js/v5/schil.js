@@ -409,6 +409,90 @@
         if (!cookieKeuze()) open('balk');
     }
 
+    // ── Tegen spam ───────────────────────────────────────────────────────
+    // Voor contact, feedback en de nieuwsbrief, bovenop het verborgen veld
+    // `website` en de limiet per IP in de database
+    // (supabase/formulieren-2026-11-12.sql). bot(): het verborgen veld is
+    // gevuld, er is binnen 3 seconden na het laden verstuurd, of het is een
+    // headless browser; de pagina doet dan alsof het gelukt is en verstuurt
+    // niets. teSnel(): deze bezoeker verstuurde minder dan 30 seconden geleden
+    // al iets. gedeeld.js geeft hem door als BN5.spamwacht.
+    // shortcut: alles hier draait in de browser, een bot die de API direct
+    // aanspreekt omzeilt het; daarvoor is de limiet in de database.
+    const LAATST_VERSTUURD = 'bn-laatst-verstuurd';
+    function spamwacht(verborgenVeld) {
+        const geladen = Date.now();
+        return {
+            bot: () => verborgenVeld.value !== ''
+                || Date.now() - geladen < 3000
+                || navigator.webdriver === true
+                || /headless/i.test(navigator.userAgent),
+            teSnel: () => Date.now() - Number(lees(LAATST_VERSTUURD) || 0) < 30000,
+            verstuurd: () => schrijf(LAATST_VERSTUURD, String(Date.now())),
+        };
+    }
+    window.bnSpamwacht = spamwacht;
+
+    // ── Nieuwsbrief (footer) ─────────────────────────────────────────────
+    // Wekelijks (TODO 49). Inschrijven via de RPC nieuwsbrief_inschrijven,
+    // die de bevestigingsmail stuurt (supabase/nieuwsbrief-2026-11-25.sql).
+    // Het antwoord is altijd "kijk in je mail", ook als het adres al
+    // ingeschreven is. De meldingen staan als vertaalde spans in de footer
+    // (data-nb-staat); dit script zet er één van aan.
+    const VOLLEDIG = /^[^\s@]+@[^\s@.]+(\.[^\s@.]+)+$/;
+
+    function koppelNieuwsbrief() {
+        const formulier = document.getElementById('nb-formulier');
+        if (!formulier) return;
+        const veld = document.getElementById('nb-email');
+        const knop = formulier.querySelector('button[type="submit"]');
+        const spam = spamwacht(document.getElementById('nb-website'));
+        const toon = staat => formulier.querySelectorAll('[data-nb-staat]').forEach(el => {
+            el.hidden = el.dataset.nbStaat !== staat;
+        });
+        const veldFout = aan => {
+            if (aan) veld.setAttribute('aria-invalid', 'true');
+            else veld.removeAttribute('aria-invalid');
+        };
+
+        formulier.addEventListener('submit', async e => {
+            e.preventDefault();
+            if (knop.getAttribute('aria-disabled') === 'true') return;
+            const adres = veld.value.trim();
+            if (!VOLLEDIG.test(adres)) { veldFout(true); toon('fout-email'); veld.focus(); return; }
+            veldFout(false);
+            if (spam.bot()) { toon('gelukt'); formulier.reset(); return; }
+            if (spam.teSnel()) { toon('te-snel'); return; }
+            const client = window.supabaseClient;
+            if (!client) { toon('fout'); return; }
+
+            // aria-disabled in plaats van disabled: zo houdt de knop de focus.
+            knop.setAttribute('aria-disabled', 'true');
+            knop.setAttribute('aria-busy', 'true');
+            try {
+                const { error } = await client.rpc('nieuwsbrief_inschrijven', {
+                    p_email: adres,
+                    p_taal: document.documentElement.lang,
+                });
+                if (error) throw error;
+                spam.verstuurd();
+                toon('gelukt');
+                formulier.reset();
+            } catch (fout) {
+                const tekst = fout?.message || '';
+                if (tekst.includes('ongeldig_adres')) { veldFout(true); toon('fout-email'); }
+                else toon(tekst.includes('te_vaak') ? 'te-vaak' : 'fout');
+            } finally {
+                knop.removeAttribute('aria-disabled');
+                knop.removeAttribute('aria-busy');
+            }
+        });
+
+        veld.addEventListener('input', () => {
+            if (veld.hasAttribute('aria-invalid') && VOLLEDIG.test(veld.value.trim())) { veldFout(false); toon(''); }
+        });
+    }
+
     function start() {
         markeerHuidigePagina();
         zetJaartal();
@@ -420,6 +504,7 @@
         koppelPaneel();
         document.querySelectorAll('[role="radiogroup"][data-instelling]').forEach(koppelGroep);
         koppelCookiebalk();
+        koppelNieuwsbrief();
         if (cookieKeuze() === 'accepted') statistieken(true);
         // De service worker (sw.js): offline terugval. Root-scope, dus ook
         // vanaf /articles/ en /categories/.

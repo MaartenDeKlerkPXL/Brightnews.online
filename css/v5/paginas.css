@@ -646,6 +646,12 @@
     gap: var(--spacing-sm);
 }
 
+/* Onder een gecentreerde intro (nieuwsbrief.html). */
+.knoppen-rij--midden {
+    align-self: center;
+    justify-content: center;
+}
+
 .formulier-akkoord {
     color: var(--text-secondary);
     font-size: var(--font-size-14);

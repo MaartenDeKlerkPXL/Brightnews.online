@@ -1663,6 +1663,24 @@ op `brightnews.online` in de EU-regio; de DNS staat bij Strato.
   (punt 2). Bouwen mag eerder, rekenen erop niet.
   *(Erik: het raakt Supabase en een externe dienst. Ik doe de front-end.)*
 
+  **Stand 25 november (Maarten en Claude): gebouwd, wacht op Erik.**
+  Besluit Maarten: **wekelijks**, op zaterdag. De PR bevat alles:
+  - `supabase/nieuwsbrief-2026-11-25.sql`: tabellen, dubbele opt-in (de
+    bevestigingsmail gaat via pg_net en de Vault-sleutel, zoals de
+    contactmails), bevestigen en afmelden met een token, de limiet per IP,
+    en opruimen na 30 dagen. Lokaal getest op Postgres 17 met nagebootste
+    Vault, pg_net en pg_cron: twee keer draaien kan, en de limieten werken
+    (3 mails per adres, 40 per uur, 5 pogingen per IP per uur).
+  - `backend/stuur-nieuwsbrief.js` + `.github/workflows/nieuwsbrief.yml`:
+    elke ochtend 07:40 UTC, hooguit 80 per run (Resend: 100 per dag gratis),
+    de vijf best scorende verhalen van de week per taal.
+  - Het inschrijfveld in de footer (dus op elke pagina), `nieuwsbrief.html`
+    voor de links uit de mails, en het privacybeleid (versie 1.1).
+  Nog niet: een veld onder elk artikel en een vinkje bij registratie. Eerst
+  kijken of de footer iets oplevert.
+  **Volgorde:** Erik draait de SQL, daarna mergen. Andersom toont het
+  footerveld een foutmelding, omdat de functies dan nog niet bestaan.
+
 - [x] **50. IndexNow aangezet.** ✅ **2026-09-27** — `backend/indexnow.js`
   draait mee in de Action, ná de sitemap. Hij leest `news-sitemap.xml` uit
   (dat is precies "alles van de afgelopen 48 uur") en meldt die URL's plus de

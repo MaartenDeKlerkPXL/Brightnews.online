@@ -51,27 +51,6 @@
         try { localStorage.setItem(sleutel, waarde); } catch { /* geen opslag */ }
     }
 
-    // Tegen spam in contact en feedback, bovenop het verborgen veld `website`
-    // en de limiet per IP in de database (supabase/formulieren-2026-11-12.sql).
-    // bot(): het verborgen veld is gevuld, er is binnen 3 seconden na het
-    // laden verstuurd, of het is een headless browser. De pagina doet dan
-    // alsof het gelukt is en verstuurt niets. teSnel(): deze bezoeker
-    // verstuurde minder dan 30 seconden geleden al een bericht.
-    // shortcut: alles hier draait in de browser, een bot die de API direct
-    // aanspreekt omzeilt het; daarvoor is de limiet in de database.
-    const LAATST_VERSTUURD = 'bn-laatst-verstuurd';
-    function spamwacht(verborgenVeld) {
-        const geladen = Date.now();
-        return {
-            bot: () => verborgenVeld.value !== ''
-                || Date.now() - geladen < 3000
-                || navigator.webdriver === true
-                || /headless/i.test(navigator.userAgent),
-            teSnel: () => Date.now() - Number(lees(LAATST_VERSTUURD) || 0) < 30000,
-            verstuurd: () => schrijf(LAATST_VERSTUURD, String(Date.now())),
-        };
-    }
-
     // Voorbeeldparameters werken alleen lokaal (TODO 73): live zou
     // bedankt.html?staat=gelukt anders zeggen dat Premium aanstaat zonder dat
     // iemand betaalde, en ?vandaag= de dag van de site verzetten.
@@ -780,7 +759,10 @@
 
     window.BN5 = {
         CATEGORIEEN, taal, t, vertaalPagina, param, locale: () => LOCALE[taal()],
-        laadFeed, laadManifest, isDigest, maakSlug, spamwacht,
+        laadFeed, laadManifest, isDigest, maakSlug,
+        // Tegen spam: staat in de schil (js/v5/schil.js), want de nieuwsbrief
+        // in de footer heeft hem ook nodig, ook op pagina's zonder dit bestand.
+        spamwacht: window.bnSpamwacht,
         dagVan, vandaag, verschuif, isDagSleutel, dagLang, dagKort, dagMaand, weekdag, maandNaam, tijd, datumTijd, hoofdletter,
         aantalVerhalen, perDag, archiefPerDag, digestsVan, nieuwsteDigestDag, verhalenVanDigests, laatsteMoment,
         zonderVerwijzingen, eersteZinnen, url, metTestdag, categorieLabel,

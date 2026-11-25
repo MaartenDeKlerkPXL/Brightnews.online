@@ -277,6 +277,34 @@
             </nav>
         </div>
 
+        <!-- Nieuwsbrief (TODO 49): elke zaterdag, dubbele opt-in. Gedrag:
+             js/v5/schil.js (koppelNieuwsbrief). Geen pop-up, alleen hier. -->
+        <section class="nieuwsbrief-blok" aria-labelledby="nb-kop">
+            <div class="nieuwsbrief-blok__tekst">
+                <h2 class="nieuwsbrief-blok__kop" id="nb-kop" data-i18n="v5_nb_kop">Elke zaterdag het mooiste nieuws in je mail</h2>
+                <p data-i18n="v5_nb_uitleg">De vijf beste verhalen van de week. Gratis, en afmelden kan altijd.</p>
+            </div>
+            <form class="nieuwsbrief-blok__formulier" id="nb-formulier" novalidate>
+                <!-- Tegen spam: mensen zien dit veld niet en vullen het dus niet in. -->
+                <div class="visueel-verborgen" aria-hidden="true">
+                    <label for="nb-website">Website</label>
+                    <input type="text" id="nb-website" name="website" tabindex="-1" autocomplete="off">
+                </div>
+                <label class="invoer__label" for="nb-email" data-i18n="v5_in_email">E-mailadres</label>
+                <div class="nieuwsbrief-blok__rij">
+                    <input class="invoer__veld" type="email" id="nb-email" name="email" maxlength="254" autocomplete="email" required aria-describedby="nb-status">
+                    <button class="btn btn--primary" type="submit"><span data-i18n="v5_nb_knop">Inschrijven</span></button>
+                </div>
+                <p class="nieuwsbrief-blok__status" id="nb-status" role="status">
+                    <span data-nb-staat="gelukt" data-i18n="v5_nb_gelukt" hidden>Kijk in je mail: klik op de link om je inschrijving te bevestigen.</span>
+                    <span class="nieuwsbrief-blok__fout" data-nb-staat="fout-email" data-i18n="v5_nb_fout_email" hidden>Vul een volledig e-mailadres in.</span>
+                    <span class="nieuwsbrief-blok__fout" data-nb-staat="te-snel" data-i18n="v5_form_even_wachten" hidden>Je hebt net al een bericht gestuurd. Wacht een halve minuut en probeer het dan opnieuw.</span>
+                    <span class="nieuwsbrief-blok__fout" data-nb-staat="te-vaak" data-i18n="v5_form_te_vaak" hidden>Je hebt in korte tijd veel berichten gestuurd. Probeer het over een uur opnieuw.</span>
+                    <span class="nieuwsbrief-blok__fout" data-nb-staat="fout" data-i18n="v5_in_fout_algemeen" hidden>Er ging iets mis. Controleer je verbinding en probeer het opnieuw.</span>
+                </p>
+            </form>
+        </section>
+
         <div class="site-footer__onder">
             <p data-i18n="schil_copyright">© 2026 BrightNews. Samengevat met AI uit betrouwbare bronnen.</p>
             <p data-i18n="schil_bedrijfsgegevens">Vossenstraat 19, 6286 BW Nijswiller · KvK 42048341 · btw NL005455019B94</p>

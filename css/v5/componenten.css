@@ -2942,6 +2942,65 @@ body[data-pagina="bedankt"] :is(.navbar, .mobiel-menu) .btn--primary {
     text-decoration: underline;
 }
 
+/* Nieuwsbrief (TODO 49): tekst links, veld en knop rechts; op smal
+   scherm onder elkaar. De meldingen staan in een role="status". */
+.nieuwsbrief-blok {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 28rem);
+    align-items: center;
+    gap: var(--spacing-md) var(--spacing-xl);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    background: var(--surface-subtle);
+}
+
+.nieuwsbrief-blok__kop {
+    margin-bottom: var(--spacing-xs);
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-24);
+}
+
+.nieuwsbrief-blok__tekst p {
+    color: var(--text-secondary);
+}
+
+.nieuwsbrief-blok__formulier {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.nieuwsbrief-blok__rij {
+    display: flex;
+    gap: var(--spacing-xs);
+}
+
+.nieuwsbrief-blok__rij .invoer__veld {
+    flex: 1;
+    min-width: 0;
+}
+
+.nieuwsbrief-blok__status:empty,
+.nieuwsbrief-blok__status:not(:has(span:not([hidden]))) {
+    display: none;
+}
+
+.nieuwsbrief-blok__fout {
+    color: var(--feedback-error-fg);
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    .nieuwsbrief-blok {
+        grid-template-columns: minmax(0, 1fr);
+        padding: var(--spacing-lg);
+    }
+
+    .nieuwsbrief-blok__rij {
+        flex-direction: column;
+    }
+}
+
 .site-footer__onder {
     display: flex;
     flex-wrap: wrap;
