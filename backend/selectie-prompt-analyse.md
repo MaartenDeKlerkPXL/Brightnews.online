@@ -1864,3 +1864,51 @@ Niet bright-waardig: 1. Twijfel: 2.
 - **Waarom ik twijfel:** Inhoudelijk warm en leuk wetenschapsweetje, geen probleem-framing, geen van de afwijscategorieën is duidelijk van toepassing. Maar het is strikt genomen geen nieuws en geen verhaal over een mens die geholpen of gered wordt — het is een terugblik op een tv-fragment, dicht tegen "leuk weetje zonder actuele relevantie" aan. Ik zou hem laten staan vanwege de maatschappelijke/educatieve waarde, maar het randje met "te weinig inhoud" is aanwezig.
 
 Verder was alles in orde: de overige zes artikelen (duimimplantaat, geredde peuter in de woestijn, beschermd walrusgebied, Ella Fitzgerald, het afscheid van Sighle Williams, en de mogelijk opgeloste Riemannhypothese) voldoen duidelijk aan de BrightNews-maatstaf.
+
+### 2026-11-25, 11:49 Europe/Amsterdam
+
+Beoordeeld: 23 artikelen, gepubliceerd tussen 2026-11-24 13:18 en 2026-11-25 01:24.
+Niet bright-waardig: 6. Twijfel: 1.
+
+#### Darwin publiceert On the Origin of Species
+- **Gepubliceerd:** 2026-11-24 13:18 · Science · GoodNewsNetwork.org
+- **Waar het over gaat:** Een "op deze dag"-terugblik op het verschijnen van Darwins boek, 167 jaar geleden, met een opsomming van de inhoud en invloed van het werk.
+- **Waarom dit niet goed genoeg is:** Dit is een encyclopedische geschiedenisnotitie, geen nieuws en geen verhaal met een warme kern. Er gebeurt niets, niemand wordt geholpen, er is geen actuele aanleiding — het is feitelijk een kalenderfeitje uitgeschreven tot artikel. Dat valt onder "te-weinig-inhoud": het geeft onvoldoende reden om zeker te zijn dat dit meer is dan trivia.
+- **Link:** (zie data/news_nl.json, id 17955227066114lvarz131)
+
+#### Fred Astaire danste met een hoedenrek alsof het een partner was
+- **Gepubliceerd:** 2026-11-24 13:19 · Lifestyle · Upworthy.com
+- **Waar het over gaat:** Een anekdote over een dansscène uit de film Royal Wedding (1951) waarin Fred Astaire met een hoedenrek danst.
+- **Waarom dit niet goed genoeg is:** Leuke filmtrivia, maar er zit geen goed-nieuwskern in: niemand wordt geholpen, er is geen herstel of doorbraak, het is puur nostalgische amusementsgeschiedenis zonder bredere relevantie. Dit valt onder "te-weinig-inhoud" — amusant, maar geen BrightNews-verhaal.
+- **Link:** (zie data/news_nl.json, id 1795522788482p9zm8g23h)
+
+#### Componist Paul Williams schreef zowel bankjingle als Kermit's handtekeninglied
+- **Gepubliceerd:** 2026-11-25 01:21 · Lifestyle · Upworthy.com
+- **Waar het over gaat:** Een biografisch overzicht van muzikant Paul Williams' carrière in de jaren zeventig, van reclamejingles tot bekende liedjes.
+- **Waarom dit niet goed genoeg is:** Dit is celebrity- en muziekgeschiedenistrivia, geen verhaal met een positieve kern waar een lezer warm van wordt — er wordt niets opgelost, niemand geholpen. Te weinig inhoud om als BrightNews-materiaal te gelden, het leest als een Wikipedia-achtig carrièreoverzicht.
+- **Link:** (zie data/news_nl.json, id 17955660740938m9j8uk54)
+
+#### Mike Nesmith bewijst dat muziek op televisie werkt
+- **Gepubliceerd:** 2026-11-25 01:21 · Lifestyle · Upworthy.com
+- **Waar het over gaat:** Een terugblik op hoe Michael Nesmith (The Monkees) in 1977 een experimenteel muziekvideoformat op televisie bracht.
+- **Waarom dit niet goed genoeg is:** Zelfde probleem als de andere twee Upworthy-stukken vannacht: puur muziekgeschiedenis en celebritybiografie, geen actueel goed-nieuwsmoment, geen kern van hulp, herstel of gemeenschap. Te-weinig-inhoud voor de BrightNews-maatstaf.
+- **Link:** (zie data/news_nl.json, id 1795566099215j6pqt7dj9)
+
+#### Spinnen in huis weren is deze herfst geen goed idee
+- **Gepubliceerd:** 2026-11-24 13:21 · Lifestyle · Positivr.fr
+- **Waar het over gaat:** Uitleg waarom het verwijderen van spinnen uit huis ongedierte juist vrij spel geeft, met een pleidooi om ze te laten zitten.
+- **Waarom dit niet goed genoeg is:** Dit is in de kern een huishoudtip verpakt als artikel ("doe dit niet, hier is waarom") — hetzelfde patroon als de afgewezen "5-minutenregel" in de selectieprompt. Het is advies, geen verhaal, en valt onder listicle/zelfhulp.
+- **Link:** (zie data/news_nl.json, id 1795522869433tvrxfmhku)
+
+#### Radiator uitzetten in lege kamer jaagt stookkosten juist omhoog
+- **Gepubliceerd:** 2026-11-24 13:21 · Environment · Positivr.fr
+- **Waar het over gaat:** Een uitleg, met verwijzing naar het Franse ADEME, waarom het uitzetten van de radiator in een ongebruikte kamer de stookkosten juist verhoogt.
+- **Waarom dit niet goed genoeg is:** Ook dit is een praktische bespaartip in artikelvorm, geen verhaal met mensen of een positieve ontwikkeling — zuiver advies over verwarmingsgedrag. Dat is listicle/zelfhulp-materiaal, ook al komt het keurig onderbouwd over.
+- **Link:** (zie data/news_nl.json, id 1795522898005ps518y65y)
+
+#### Twijfelgeval: Bibliotheken bieden gratis duizenden films via Kanopy
+- **Gepubliceerd:** 2026-11-25 01:23 · Lifestyle · GoodGoodGood.co
+- **Waar het over gaat:** Steeds meer Amerikaanse bibliotheken bieden via een bibliotheekpas toegang tot de reclamevrije streamingdienst Kanopy, als alternatief voor dure bioscoop- en streamingabonnementen.
+- **Waarom ik twijfel:** Het heeft een prettige, toegankelijke "cultuur voor iedereen"-insteek en een maatschappelijke kant (bibliotheken, betaalbaarheid), maar het leest ook sterk als praktische consumenteninformatie zonder een echt verhaal of mensen erin. Ik zou geneigd zijn hem te laten staan vanwege de maatschappelijke relevantie, maar het scheelt weinig met een servicetip; oordeel van Erik gewenst.
+
+**Patroon:** drie van de zes afgekeurde artikelen kwamen vannacht van Upworthy.com en waren stuk voor stuk muziek- of filmgeschiedenistrivia zonder echte goed-nieuwskern (Fred Astaire, Paul Williams, Mike Nesmith) — dat lijkt een vast format bij deze bron dat de poort van de selectieprompt niet zou moeten doorkomen. Daarnaast leverde Positivr.fr twee keer een huishoudtip-artikel in verhaalvorm (spinnen, radiator), wat wijst op een terugkerend patroon van "nuttig advies" dat feitelijk zelfhulp/listicle is.

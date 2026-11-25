@@ -517,3 +517,10 @@ Titel en tekst dekken elkaar, de eigennamen (NatureScot, Trees for Life, Beaver 
 - **Grammatica:** "Daumeprothese" is geen correct Duits woord; het zou "Daumenprothese" moeten zijn (en ook "das Trapeziumknochen" is fout, het hoort "der Trapeziumknochen" te zijn). Geen toegevoegd feit of vertaaloordeel, maar wel een storende fout in de tekst.
 
 Verder blijft KeriMedical onvertaald zoals het hoort, de inhoud komt overeen met het Nederlands zonder toegevoegde feiten, en de titel dekt het verhaal. De hoofdlettercapitalisatie van zelfstandige naamwoorden is normaal Duits en dus geen punt.
+
+### 2026-11-25, Frans
+
+**Artikel:** Darwin publie On the Origin of Species
+**Oordeel:** niets aangetroffen.
+
+De titel van het boek blijft terecht onvertaald, Darwins naam en beroep zijn correct overgenomen, en de titelstijl volgt gewone Franse zinsstijl zonder hoofdletters op elk woord. Er zijn geen toegevoegde feiten te zien en de tekst loopt natuurlijk.
