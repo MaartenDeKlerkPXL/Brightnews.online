@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-11-25T00:25:46.042Z",
+ "gegenereerd": "2026-11-25T12:19:09.515Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -12,6 +12,22 @@
      "score": 10,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/79-jarige-man-leert-haarstylen-en-make-up-voor-zijn-slechtziende-vrouw-1795522813567h293qtms6.html"
+    },
+    {
+     "id": "1795609141655kh0vsk7ls",
+     "titel": "Emily bouwt stiekem publiek voor metaalwerk van haar man",
+     "teaser": "Deze zomer hield Emily een maand lang een geheim voor haar man Jonathan. Ze filmde zijn metalen sculpturen, op maat gemaakte borden en lasprojecten en plaatste de video's op een Instagram-account dat hij niet kende: @myhusbandsmetalwork. Jonathan wilde al lang van zijn metaalwerk zijn beroep maken, maar een eerdere onderneming was gesloten en zijn fulltime baan liet weinig energie over...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/emily-bouwt-stiekem-publiek-voor-metaalwerk-van-haar-man-1795609141655kh0vsk7ls.html"
+    },
+    {
+     "id": "1795609093085zeg3l9l2z",
+     "titel": "Miki Kawamura brengt PeaceCream naar Nobel-top in Rome",
+     "teaser": "Op de 20ste World Summit of Nobel Peace Laureates in Rome, van 1 tot 4 december, presenteert de 19-jarige Miki Kawamura PeaceCream. Deze pop-up, ontwikkeld via haar Youth Peace Ambassadors-programma in samenwerking met Japans Goi Peace Foundation, koppelt elke ijssmaak aan een waarde als liefde, hoop, dankbaarheid of compassie. Bezoekers denken na over wat vrede voor hen betekent en stellen...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/miki-kawamura-brengt-peacecream-naar-nobel-top-in-rome-1795609093085zeg3l9l2z.html"
     },
     {
      "id": "1795566226632e672kng07",
@@ -28,22 +44,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/bibliotheken-bieden-gratis-duizenden-films-via-kanopy-179556620494695op7a4bl.html"
-    },
-    {
-     "id": "1795566179018kxbizm0bj",
-     "titel": "Originele Avengers-cast dubt film in bedreigde Lakota-taal",
-     "teaser": "In 2024 hebben de acteurs van de originele 'Avengers'-film hun rollen opnieuw ingesproken, dit keer in het Lakota, een sterk bedreigde Indiaanse taal. Slechts 2.000 mensen spreken de taal nog, een daling van 66% in tien jaar tijd. Het project duurde meer dan 15 maanden en betrok 62 Lakota-Dakota sprekers naast de oorspronkelijke cast, waaronder Mark Ruffalo. Cyril Archambault, uitvoerend...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/originele-avengers-cast-dubt-film-in-bedreigde-lakota-taal-1795566179018kxbizm0bj.html"
-    },
-    {
-     "id": "17955661527329mxkt0xf2",
-     "titel": "BeSeen-automaat helpt daklozen dag en nacht",
-     "teaser": "Een Oklahomaanse non-profit, de BeHeard Movement, lanceerde de BeSeen Machine: 's werelds eerste vending machine voor daklozen die volledig wordt bediend door virtuele vrijwilligers. Via een scherm op de machine kunnen daklozen 's nachts contact leggen met een vrijwilliger, die op afstand een locker opent met spullen zoals snacks, water, hygiëneproducten, dekens of Narcan. Een video van de machine in...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/beseen-automaat-helpt-daklozen-dag-en-nacht-17955661527329mxkt0xf2.html"
     }
    ],
    "dagoverzichten": [
@@ -74,6 +74,22 @@
      "url": "https://brightnews.online/articles/en/79-year-old-man-learns-hairstyling-and-makeup-for-his-visually-impaired-wife-1795522813567h293qtms6.html"
     },
     {
+     "id": "1795609141655kh0vsk7ls",
+     "titel": "Emily secretly builds audience for her husband's metalwork",
+     "teaser": "This summer, Emily kept a secret from her husband Jonathan for an entire month. She filmed his metal sculptures, custom-made signs and welding projects, posting the videos to an Instagram account he didn't know about: @myhusbandsmetalwork. Jonathan had long wanted to make metalwork his profession, but a previous venture had closed and his full-time job left little energy for his...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/emily-secretly-builds-audience-for-her-husband-s-metalwork-1795609141655kh0vsk7ls.html"
+    },
+    {
+     "id": "1795609093085zeg3l9l2z",
+     "titel": "Miki Kawamura brings PeaceCream to Nobel Summit in Rome",
+     "teaser": "At the 20th World Summit of Nobel Peace Laureates in Rome, from December 1 to 4, 19-year-old Miki Kawamura will present PeaceCream. This pop-up, developed through her Youth Peace Ambassadors programme in collaboration with Japan's Goi Peace Foundation, links each ice cream flavour to a value such as love, hope, gratitude or compassion. Visitors reflect on what peace means to...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/miki-kawamura-brings-peacecream-to-nobel-summit-in-rome-1795609093085zeg3l9l2z.html"
+    },
+    {
      "id": "1795566226632e672kng07",
      "titel": "Volunteers rescue centuries-old letters with Cursive for a Cause project",
      "teaser": "Since cursive writing disappeared from American educational standards in 2010, the ability to read it has been at risk. At Bowling Green State University, AmeriCorps volunteers are fighting back with the project 'Cursive for a Cause'. They decipher handwritten letters, diaries and documents from the university archive, many written by women, and convert them into typed text. In this way,...",
@@ -88,22 +104,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/libraries-offer-thousands-of-films-for-free-via-kanopy-179556620494695op7a4bl.html"
-    },
-    {
-     "id": "1795566179018kxbizm0bj",
-     "titel": "Original Avengers cast dubs film in endangered Lakota language",
-     "teaser": "In 2024, the actors from the original 'Avengers' film re-recorded their roles, this time in Lakota, a critically endangered Native American language. Only 2,000 people still speak the language, a decline of 66% in ten years. The project took more than 15 months and involved 62 Lakota-Dakota speakers alongside the original cast, including Mark Ruffalo. Cyril Archambault, executive producer and...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/original-avengers-cast-dubs-film-in-endangered-lakota-language-1795566179018kxbizm0bj.html"
-    },
-    {
-     "id": "17955661527329mxkt0xf2",
-     "titel": "BeSeen machine helps homeless people around the clock",
-     "teaser": "An Oklahoma-based non-profit, the BeHeard Movement, launched the BeSeen Machine: the world's first vending machine for homeless people operated entirely by virtual volunteers. Through a screen on the machine, homeless individuals can connect with a volunteer at night, who remotely opens a locker containing items such as snacks, water, hygiene products, blankets or Narcan. A video of the machine in...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/beseen-machine-helps-homeless-people-around-the-clock-17955661527329mxkt0xf2.html"
     }
    ],
    "dagoverzichten": [
@@ -134,6 +134,22 @@
      "url": "https://brightnews.online/articles/de/79-jahriger-mann-lernt-haarstyling-und-make-up-fur-seine-sehbehinderte-frau-1795522813567h293qtms6.html"
     },
     {
+     "id": "1795609141655kh0vsk7ls",
+     "titel": "Emily baut heimlich Publikum für Metallarbeiten ihres Mannes auf",
+     "teaser": "Diesen Sommer hielt Emily einen Monat lang ein Geheimnis vor ihrem Mann Jonathan. Sie filmte seine Metallskulpturen, maßgefertigte Schilder und Schweißprojekte und stellte die Videos auf einem Instagram-Account ein, den er nicht kannte: @myhusbandsmetalwork. Jonathan wollte schon lange von seiner Metallarbeit leben, doch ein früheres Unternehmen war gescheitert und sein Vollzeitjob ließ wenig Energie für seine Kunst. Emily wollte daher...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/emily-baut-heimlich-publikum-fur-metallarbeiten-ihres-mannes-auf-1795609141655kh0vsk7ls.html"
+    },
+    {
+     "id": "1795609093085zeg3l9l2z",
+     "titel": "Miki Kawamura bringt PeaceCream zum Nobelgipfel nach Rom",
+     "teaser": "Auf dem 20. World Summit of Nobel Peace Laureates in Rom vom 1. bis 4. Dezember präsentiert die 19-jährige Miki Kawamura PeaceCream. Dieses Pop-up-Projekt wurde über ihr Youth Peace Ambassadors-Programm in Zusammenarbeit mit der japanischen Goi Peace Foundation entwickelt und verbindet jede Eissorte mit einem Wert wie Liebe, Hoffnung, Dankbarkeit oder Mitgefühl. Besucher reflektieren darüber, was Frieden für sie bedeutet,...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/miki-kawamura-bringt-peacecream-zum-nobelgipfel-nach-rom-1795609093085zeg3l9l2z.html"
+    },
+    {
      "id": "1795566226632e672kng07",
      "titel": "Freiwillige retten jahrhundertealte Briefe mit Projekt Cursive for a Cause",
      "teaser": "Seit die Schreibschrift 2010 aus den amerikanischen Lehrplänen verschwunden ist, droht die Fähigkeit, sie zu lesen, verloren zu gehen. An der Bowling Green State University setzen sich AmeriCorps-Freiwillige mit dem Projekt „Cursive for a Cause\" dagegen ein. Sie entziffern handgeschriebene Briefe, Tagebücher und Dokumente aus dem Universitätsarchiv, überwiegend von Frauen verfasst, und wandeln diese in getippte Texte um. So werden...",
@@ -148,22 +164,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/bibliotheken-bieten-kostenlos-tausende-filme-uber-kanopy-179556620494695op7a4bl.html"
-    },
-    {
-     "id": "1795566179018kxbizm0bj",
-     "titel": "Originale Avengers-Cast synchronisiert Film in bedrohter Lakota-Sprache",
-     "teaser": "Im Jahr 2024 haben die Schauspieler des ursprünglichen „Avengers\"-Films ihre Rollen erneut eingesprochen, diesmal in Lakota, einer stark bedrohten indigenen Sprache. Nur noch 2.000 Menschen sprechen die Sprache, ein Rückgang von 66% in zehn Jahren. Das Projekt dauerte mehr als 15 Monate und bezog 62 Lakota-Dakota-Sprecher neben dem ursprünglichen Cast ein, darunter Mark Ruffalo. Cyril Archambault, ausführender Produzent und Ratsmitglied...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/originale-avengers-cast-synchronisiert-film-in-bedrohter-lakota-sprache-1795566179018kxbizm0bj.html"
-    },
-    {
-     "id": "17955661527329mxkt0xf2",
-     "titel": "BeSeen-Automat hilft Obdachlosen rund um die Uhr",
-     "teaser": "Eine gemeinnützige Organisation aus Oklahoma, die BeHeard Movement, hat die BeSeen Machine lanciert: den weltweit ersten Verkaufsautomaten für Obdachlose, der vollständig von virtuellen Freiwilligen bedient wird. Über einen Bildschirm an der Maschine können Obdachlose nachts Kontakt mit einem Freiwilligen aufnehmen, der aus der Ferne ein Schließfach mit Artikeln wie Snacks, Wasser, Hygieneprodukte, Decken oder Narcan öffnet. Ein Video der Maschine...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/beseen-automat-hilft-obdachlosen-rund-um-die-uhr-17955661527329mxkt0xf2.html"
     }
    ],
    "dagoverzichten": [
@@ -194,6 +194,22 @@
      "url": "https://brightnews.online/articles/fr/un-homme-de-79-ans-apprend-la-coiffure-et-le-maquillage-pour-son-epouse-malvoyan-1795522813567h293qtms6.html"
     },
     {
+     "id": "1795609141655kh0vsk7ls",
+     "titel": "Emily construit discrètement un public pour le travail en métal de son mari",
+     "teaser": "Cet été, Emily a gardé un secret pendant un mois pour son mari Jonathan. Elle a filmé ses sculptures métalliques, ses panneaux sur mesure et ses projets de soudage, puis a posté les vidéos sur un compte Instagram qu'il ne connaissait pas : @myhusbandsmetalwork. Jonathan rêvait depuis longtemps de faire de son travail en métal son métier, mais une entreprise...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/emily-construit-discretement-un-public-pour-le-travail-en-metal-de-son-mari-1795609141655kh0vsk7ls.html"
+    },
+    {
+     "id": "1795609093085zeg3l9l2z",
+     "titel": "Miki Kawamura présente PeaceCream au sommet Nobel de Rome",
+     "teaser": "Lors du 20e World Summit of Nobel Peace Laureates à Rome, du 1er au 4 décembre, Miki Kawamura, 19 ans, présente PeaceCream. Ce pop-up, développé via son programme Youth Peace Ambassadors en collaboration avec la Goi Peace Foundation japonaise, associe chaque saveur de glace à une valeur comme l'amour, l'espoir, la gratitude ou la compassion. Les visiteurs réfléchissent à ce...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/miki-kawamura-presente-peacecream-au-sommet-nobel-de-rome-1795609093085zeg3l9l2z.html"
+    },
+    {
      "id": "1795566226632e672kng07",
      "titel": "Des bénévoles sauvent des lettres centenaires avec le projet Cursive for a Cause",
      "teaser": "Depuis la disparition de l'écriture cursive des programmes scolaires américains en 2010, la capacité à la lire risque de s'effacer. À Bowling Green State University, des bénévoles AmeriCorps s'y opposent avec le projet « Cursive for a Cause ». Ils déchiffrent des lettres manuscrites, des journaux intimes et des documents des archives universitaires, rédigés pour la plupart par des femmes,...",
@@ -208,22 +224,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/les-bibliotheques-proposent-gratuitement-des-milliers-de-films-via-kanopy-179556620494695op7a4bl.html"
-    },
-    {
-     "id": "1795566179018kxbizm0bj",
-     "titel": "La distribution originale d'Avengers double le film dans la langue Lakota menacée",
-     "teaser": "En 2024, les acteurs du film « Avengers » original ont réenregistré leurs rôles, cette fois en lakota, une langue amérindienne fortement menacée. Seules 2 000 personnes parlent encore cette langue, ce qui représente une baisse de 66 % en dix ans. Le projet a duré plus de 15 mois et a impliqué 62 locuteurs lakota-dakota aux côtés de la...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/la-distribution-originale-d-avengers-double-le-film-dans-la-langue-lakota-menace-1795566179018kxbizm0bj.html"
-    },
-    {
-     "id": "17955661527329mxkt0xf2",
-     "titel": "La machine BeSeen aide les sans-abri jour et nuit",
-     "teaser": "Une organisation à but non lucratif de l'Oklahoma, BeHeard Movement, a lancé la BeSeen Machine : le premier distributeur automatique au monde pour les sans-abri entièrement géré par des bénévoles virtuels. Via un écran sur la machine, les sans-abri peuvent entrer en contact la nuit avec un bénévole qui ouvre à distance un casier contenant des articles tels que des...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/la-machine-beseen-aide-les-sans-abri-jour-et-nuit-17955661527329mxkt0xf2.html"
     }
    ],
    "dagoverzichten": [
@@ -254,6 +254,22 @@
      "url": "https://brightnews.online/articles/es/hombre-de-79-anos-aprende-peinado-y-maquillaje-para-su-esposa-con-discapacidad-v-1795522813567h293qtms6.html"
     },
     {
+     "id": "1795609141655kh0vsk7ls",
+     "titel": "Emily construye en secreto una audiencia para el trabajo en metal de su marido",
+     "teaser": "Durante este verano, Emily guardó un secreto durante un mes para su marido Jonathan. Filmó sus esculturas de metal, carteles personalizados y proyectos de soldadura, y publicó los videos en una cuenta de Instagram que él desconocía: @myhusbandsmetalwork. Jonathan llevaba tiempo queriendo convertir su trabajo en metal en su profesión, pero un emprendimiento anterior había fracasado y su trabajo a...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/emily-construye-en-secreto-una-audiencia-para-el-trabajo-en-metal-de-su-marido-1795609141655kh0vsk7ls.html"
+    },
+    {
+     "id": "1795609093085zeg3l9l2z",
+     "titel": "Miki Kawamura lleva PeaceCream a la cumbre Nobel en Roma",
+     "teaser": "En la 20ª Cumbre Mundial de Premios Nobel de la Paz en Roma, del 1 al 4 de diciembre, la joven de 19 años Miki Kawamura presenta PeaceCream. Este pop-up, desarrollado a través de su programa Youth Peace Ambassadors en colaboración con la Goi Peace Foundation de Japón, vincula cada sabor de helado con un valor como el amor, la...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/miki-kawamura-lleva-peacecream-a-la-cumbre-nobel-en-roma-1795609093085zeg3l9l2z.html"
+    },
+    {
      "id": "1795566226632e672kng07",
      "titel": "Voluntarios rescatan cartas centenarias con el proyecto Cursive for a Cause",
      "teaser": "Desde que la escritura cursiva desapareció de los estándares educativos estadounidenses en 2010, la habilidad para leerla corre el riesgo de extinguirse. En Bowling Green State University, voluntarios de AmeriCorps se oponen a esto con el proyecto «Cursive for a Cause». Descifran cartas manuscritas, diarios y documentos del archivo universitario, muchos escritos por mujeres, y los convierten en texto mecanografiado....",
@@ -268,22 +284,6 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/las-bibliotecas-ofrecen-miles-de-peliculas-gratis-a-traves-de-kanopy-179556620494695op7a4bl.html"
-    },
-    {
-     "id": "1795566179018kxbizm0bj",
-     "titel": "El elenco original de Avengers dobla película en lengua Lakota amenazada",
-     "teaser": "En 2024, los actores de la película original de «Avengers» regrabar sus papeles, esta vez en lakota, una lengua indígena fuertemente amenazada. Solo 2.000 personas hablan la lengua, una caída del 66% en diez años. El proyecto duró más de 15 meses e involucró a 62 hablantes de Lakota-Dakota junto al elenco original, incluyendo a Mark Ruffalo. Cyril Archambault, productor...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/el-elenco-original-de-avengers-dobla-pelicula-en-lengua-lakota-amenazada-1795566179018kxbizm0bj.html"
-    },
-    {
-     "id": "17955661527329mxkt0xf2",
-     "titel": "La máquina BeSeen ayuda a personas sin hogar día y noche",
-     "teaser": "Una organización sin fines de lucro de Oklahoma, BeHeard Movement, lanzó la BeSeen Machine: la primera máquina expendedora del mundo para personas sin hogar operada completamente por voluntarios virtuales. A través de una pantalla en la máquina, las personas sin hogar pueden contactar a un voluntario durante la noche, quien abre de forma remota un casillero con artículos como snacks,...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/la-maquina-beseen-ayuda-a-personas-sin-hogar-dia-y-noche-17955661527329mxkt0xf2.html"
     }
    ],
    "dagoverzichten": [
