@@ -524,3 +524,10 @@ Verder blijft KeriMedical onvertaald zoals het hoort, de inhoud komt overeen met
 **Oordeel:** niets aangetroffen.
 
 De titel van het boek blijft terecht onvertaald, Darwins naam en beroep zijn correct overgenomen, en de titelstijl volgt gewone Franse zinsstijl zonder hoofdletters op elk woord. Er zijn geen toegevoegde feiten te zien en de tekst loopt natuurlijk.
+
+### 2026-11-26, Spaans
+
+**Artikel:** Miki Kawamura brengt PeaceCream naar Nobel-top in Rome
+**Oordeel:** niets aangetroffen.
+
+Eigennamen (PeaceCream, Youth Peace Ambassadors, Goi Peace Foundation) blijven correct staan, de titelstijl is gewone zinsstijl zoals het hoort in het Spaans, en er zijn geen feiten toegevoegd of weggelaten. De tekst loopt natuurlijk en de kop dekt het verhaal.

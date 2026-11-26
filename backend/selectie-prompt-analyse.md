@@ -1912,3 +1912,15 @@ Niet bright-waardig: 6. Twijfel: 1.
 - **Waarom ik twijfel:** Het heeft een prettige, toegankelijke "cultuur voor iedereen"-insteek en een maatschappelijke kant (bibliotheken, betaalbaarheid), maar het leest ook sterk als praktische consumenteninformatie zonder een echt verhaal of mensen erin. Ik zou geneigd zijn hem te laten staan vanwege de maatschappelijke relevantie, maar het scheelt weinig met een servicetip; oordeel van Erik gewenst.
 
 **Patroon:** drie van de zes afgekeurde artikelen kwamen vannacht van Upworthy.com en waren stuk voor stuk muziek- of filmgeschiedenistrivia zonder echte goed-nieuwskern (Fred Astaire, Paul Williams, Mike Nesmith) — dat lijkt een vast format bij deze bron dat de poort van de selectieprompt niet zou moeten doorkomen. Daarnaast leverde Positivr.fr twee keer een huishoudtip-artikel in verhaalvorm (spinnen, radiator), wat wijst op een terugkerend patroon van "nuttig advies" dat feitelijk zelfhulp/listicle is.
+
+### 2026-11-26, 11:23 Europe/Amsterdam
+
+Beoordeeld: 11 artikelen, gepubliceerd tussen 2026-11-25 12:18 en 2026-11-26 00:21.
+Niet bright-waardig: 0. Twijfel: 1.
+
+#### Twijfelgeval: Miki Kawamura brengt PeaceCream naar Nobel-top in Rome
+- **Gepubliceerd:** 2026-11-25 12:18 · Lifestyle · OptimistDaily.com
+- **Waar het over gaat:** Een 19-jarige vredesambassadeur presenteert op een top van Nobelprijswinnaars een ijssalon waarbij elke smaak gekoppeld is aan een waarde als hoop of dankbaarheid, om bezoekers aan het denken te zetten over vrede.
+- **Waarom ik twijfel:** Het voelt deels als aankondiging van een evenement dat nog moet plaatsvinden (1-4 december), en er zit een promotioneel randje aan ("presenteert PeaceCream"). Tegelijk is de kern een persoonlijk initiatief van een jongere rond een maatschappelijk thema, geen productlancering in commerciële zin. Ik zou hem laten staan, maar Eriks oordeel is hier welkom gezien de aankondigingsvorm.
+
+Alle overige artikelen beoordeel ik als bright-waardig: ze gaan over redding, herstel, gemeenschapszin of persoonlijke transformatie (auto's weggeven aan buren in nood, land teruggegeven aan Indigenous eigenaarschap, herbebossing met sinaasappelschillen, waterherstel met Kewiña-bomen, huisdieren in het zonnetje op Thanksgiving, terugkeer van inheems voedsel op schoolmenu's, Taylor Swift en Brenda Lee, de dierenarts-video, Emily's verrassing voor haar man, en het onderzoek naar peuters) zonder dat productnieuws, politiek, misdaad-als-kern, listicle-vorm of verzameleditie een rol speelt.
