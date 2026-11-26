@@ -1,6 +1,501 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://brightnews.online/articles/nl/stille-steun-en-bewaarde-talen-kleuren-het-nieuws-dg-20261125-dag.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:22:50.294Z</news:publication_date>
+      <news:title>Stille steun en bewaarde talen kleuren het nieuws</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/silent-support-and-preserved-languages-color-the-news-dg-20261125-dag.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:22:50.294Z</news:publication_date>
+      <news:title>Silent support and preserved languages color the news</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/stille-unterstutzung-und-bewahrte-sprachen-pragen-die-nachrichten-dg-20261125-dag.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:22:50.294Z</news:publication_date>
+      <news:title>Stille Unterstützung und bewahrte Sprachen prägen die Nachrichten</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/un-soutien-silencieux-et-des-langues-preservees-colorent-l-actualite-dg-20261125-dag.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:22:50.294Z</news:publication_date>
+      <news:title>Un soutien silencieux et des langues préservées colorent l'actualité</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/el-apoyo-silencioso-y-las-lenguas-preservadas-colorean-las-noticias-dg-20261125-dag.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:22:50.294Z</news:publication_date>
+      <news:title>El apoyo silencioso y las lenguas preservadas colorean las noticias</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/inheemse-vrouwen-herstellen-waterbronnen-met-kewina-bomen-in-bolivia-17956524933953v7n50s8k.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:21:35.774Z</news:publication_date>
+      <news:title>Inheemse vrouwen herstellen waterbronnen met Kewiña-bomen in Bolivia</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/indigenous-women-restore-water-sources-with-kewina-trees-in-bolivia-17956524933953v7n50s8k.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:21:35.774Z</news:publication_date>
+      <news:title>Indigenous women restore water sources with Kewiña trees in Bolivia</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/indigene-frauen-stellen-wasserquellen-mit-kewina-baumen-in-bolivien-wieder-her-17956524933953v7n50s8k.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:21:35.774Z</news:publication_date>
+      <news:title>Indigene Frauen stellen Wasserquellen mit Kewiña-Bäumen in Bolivien wieder her</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/des-femmes-autochtones-restaurent-les-sources-d-eau-avec-des-arbres-kewina-en-bo-17956524933953v7n50s8k.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:21:35.774Z</news:publication_date>
+      <news:title>Des femmes autochtones restaurent les sources d'eau avec des arbres Kewiña en Bolivie</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/mujeres-indigenas-restauran-fuentes-de-agua-con-arboles-kewina-en-bolivia-17956524933953v7n50s8k.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:21:35.774Z</news:publication_date>
+      <news:title>Mujeres indígenas restauran fuentes de agua con árboles Kewiña en Bolivia</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/scholen-brengen-inheems-voedsel-zoals-bizonvlees-en-blauwe-mais-terug-op-het-men-1795652460679k37poolr1.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:21:02.549Z</news:publication_date>
+      <news:title>Scholen brengen inheems voedsel zoals bizonvlees en blauwe maïs terug op het menu</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/schools-bring-indigenous-foods-like-bison-meat-and-blue-corn-back-to-menus-1795652460679k37poolr1.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:21:02.549Z</news:publication_date>
+      <news:title>Schools bring indigenous foods like bison meat and blue corn back to menus</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/schulen-bringen-indigene-lebensmittel-wie-bisonenfleisch-und-blauen-mais-zuruck-1795652460679k37poolr1.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:21:02.549Z</news:publication_date>
+      <news:title>Schulen bringen indigene Lebensmittel wie Bisonenfleisch und blauen Mais zurück auf den Speiseplan</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/les-ecoles-reintroduisent-les-aliments-autochtones-comme-la-viande-de-bison-et-l-1795652460679k37poolr1.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:21:02.549Z</news:publication_date>
+      <news:title>Les écoles réintroduisent les aliments autochtones comme la viande de bison et le maïs bleu au menu</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/las-escuelas-reintroducen-alimentos-indigenas-como-carne-de-bisonte-y-maiz-azul-1795652460679k37poolr1.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:21:02.549Z</news:publication_date>
+      <news:title>Las escuelas reintroducen alimentos indígenas como carne de bisonte y maíz azul en el menú</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/dierenasiels-trakteren-adoptiehuisdieren-op-thanksgiving-feestmaal-1795652436106s9ovp8rbp.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:20:37.664Z</news:publication_date>
+      <news:title>Dierenasiels trakteren adoptiehuisdieren op Thanksgiving-feestmaal</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/animal-shelters-treat-adoptable-pets-to-thanksgiving-feast-1795652436106s9ovp8rbp.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:20:37.664Z</news:publication_date>
+      <news:title>Animal shelters treat adoptable pets to Thanksgiving feast</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/tierheime-verwohnen-adoptionshaustiere-mit-thanksgiving-festmahl-1795652436106s9ovp8rbp.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:20:37.664Z</news:publication_date>
+      <news:title>Tierheime verwöhnen Adoptionshaustiere mit Thanksgiving-Festmahl</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/les-refuges-pour-animaux-regalent-les-animaux-de-compagnie-adoptes-d-un-festin-d-1795652436106s9ovp8rbp.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:20:37.664Z</news:publication_date>
+      <news:title>Les refuges pour animaux régalent les animaux de compagnie adoptés d'un festin de Thanksgiving</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/los-refugios-de-animales-agasajan-a-las-mascotas-adoptadas-en-la-comida-de-accio-1795652436106s9ovp8rbp.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:20:37.664Z</news:publication_date>
+      <news:title>Los refugios de animales agasajan a las mascotas adoptadas en la comida de Acción de Gracias</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/sinaasappelschillen-veranderen-kale-grond-in-costa-rica-in-bos-1795652408649vig9gr8wt.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:20:10.365Z</news:publication_date>
+      <news:title>Sinaasappelschillen veranderen kale grond in Costa Rica in bos</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/orange-peels-transform-barren-land-into-forest-in-costa-rica-1795652408649vig9gr8wt.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:20:10.365Z</news:publication_date>
+      <news:title>Orange peels transform barren land into forest in Costa Rica</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/orangenschalen-verwandeln-kahles-land-in-costa-rica-in-wald-1795652408649vig9gr8wt.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:20:10.365Z</news:publication_date>
+      <news:title>Orangenschalen verwandeln kahles Land in Costa Rica in Wald</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/des-ecorces-d-orange-transforment-des-terres-denudees-en-foret-au-costa-rica-1795652408649vig9gr8wt.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:20:10.365Z</news:publication_date>
+      <news:title>Des écorces d'orange transforment des terres dénudées en forêt au Costa Rica</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/cascaras-de-naranja-transforman-tierra-arida-en-bosque-en-costa-rica-1795652408649vig9gr8wt.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:20:10.365Z</news:publication_date>
+      <news:title>Cáscaras de naranja transforman tierra árida en bosque en Costa Rica</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/dierenarts-leert-miljoenen-hoe-je-een-kat-veilig-oppakt-1795652379073cyf9g6hei.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:19:40.870Z</news:publication_date>
+      <news:title>Dierenarts leert miljoenen hoe je een kat veilig oppakt</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/veterinarian-teaches-millions-how-to-safely-pick-up-a-cat-1795652379073cyf9g6hei.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:19:40.870Z</news:publication_date>
+      <news:title>Veterinarian teaches millions how to safely pick up a cat</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/tierarzt-lehrt-millionen-wie-man-eine-katze-sicher-hochnimmt-1795652379073cyf9g6hei.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:19:40.870Z</news:publication_date>
+      <news:title>Tierarzt lehrt Millionen, wie man eine Katze sicher hochnimmt</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/une-veterinaire-enseigne-a-des-millions-comment-tenir-un-chat-en-securite-1795652379073cyf9g6hei.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:19:40.870Z</news:publication_date>
+      <news:title>Une vétérinaire enseigne à des millions comment tenir un chat en sécurité</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/veterinaria-ensena-a-millones-como-sostener-un-gato-de-forma-segura-1795652379073cyf9g6hei.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:19:40.870Z</news:publication_date>
+      <news:title>Veterinaria enseña a millones cómo sostener un gato de forma segura</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/taylor-swift-verrast-brenda-lee-met-diamond-plaat-voor-kerstklassieker-1795652354430uf0y7welv.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:19:16.275Z</news:publication_date>
+      <news:title>Taylor Swift verrast Brenda Lee met Diamond-plaat voor kerstklassieker</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/taylor-swift-surprises-brenda-lee-with-diamond-award-for-christmas-classic-1795652354430uf0y7welv.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:19:16.275Z</news:publication_date>
+      <news:title>Taylor Swift surprises Brenda Lee with Diamond award for Christmas classic</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/taylor-swift-uberrascht-brenda-lee-mit-diamond-plakette-fur-weihnachtsklassiker-1795652354430uf0y7welv.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:19:16.275Z</news:publication_date>
+      <news:title>Taylor Swift überrascht Brenda Lee mit Diamond-Plakette für Weihnachtsklassiker</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/taylor-swift-surprend-brenda-lee-avec-un-disque-de-platine-diamond-pour-un-class-1795652354430uf0y7welv.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:19:16.275Z</news:publication_date>
+      <news:title>Taylor Swift surprend Brenda Lee avec un disque de platine Diamond pour un classique de Noël</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/taylor-swift-sorprende-a-brenda-lee-con-disco-de-diamante-por-clasico-navideno-1795652354430uf0y7welv.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:19:16.275Z</news:publication_date>
+      <news:title>Taylor Swift sorprende a Brenda Lee con disco de Diamante por clásico navideño</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/land-bij-first-encounter-beach-terug-naar-native-land-conservancy-1795652329742butudqwif.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:18:51.687Z</news:publication_date>
+      <news:title>Land bij First Encounter Beach terug naar Native Land Conservancy</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/land-at-first-encounter-beach-returned-to-native-land-conservancy-1795652329742butudqwif.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:18:51.687Z</news:publication_date>
+      <news:title>Land at First Encounter Beach returned to Native Land Conservancy</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/land-bei-first-encounter-beach-zuruck-an-native-land-conservancy-1795652329742butudqwif.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:18:51.687Z</news:publication_date>
+      <news:title>Land bei First Encounter Beach zurück an Native Land Conservancy</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/terre-restituee-a-la-native-land-conservancy-pres-de-first-encounter-beach-1795652329742butudqwif.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:18:51.687Z</news:publication_date>
+      <news:title>Terre restituée à la Native Land Conservancy près de First Encounter Beach</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/terreno-junto-a-first-encounter-beach-regresa-a-native-land-conservancy-1795652329742butudqwif.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:18:51.687Z</news:publication_date>
+      <news:title>Terreno junto a First Encounter Beach regresa a Native Land Conservancy</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/autogarage-uit-colleyville-geeft-auto-s-weg-aan-buren-in-nood-17956523057090xgknigiv.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:18:28.583Z</news:publication_date>
+      <news:title>Autogarage uit Colleyville geeft auto's weg aan buren in nood</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/auto-shop-in-colleyville-gives-away-cars-to-neighbors-in-need-17956523057090xgknigiv.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:18:28.583Z</news:publication_date>
+      <news:title>Auto shop in Colleyville gives away cars to neighbors in need</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/autowerkstatt-aus-colleyville-verschenkt-autos-an-bedurftige-nachbarn-17956523057090xgknigiv.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:18:28.583Z</news:publication_date>
+      <news:title>Autowerkstatt aus Colleyville verschenkt Autos an bedürftige Nachbarn</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/un-garage-automobile-de-colleyville-offre-des-voitures-aux-voisins-dans-le-besoi-17956523057090xgknigiv.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:18:28.583Z</news:publication_date>
+      <news:title>Un garage automobile de Colleyville offre des voitures aux voisins dans le besoin</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/taller-de-autos-de-colleyville-regala-vehiculos-a-vecinos-necesitados-17956523057090xgknigiv.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-26T00:18:28.583Z</news:publication_date>
+      <news:title>Taller de autos de Colleyville regala vehículos a vecinos necesitados</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://brightnews.online/articles/nl/emily-bouwt-stiekem-publiek-voor-metaalwerk-van-haar-man-1795609141655kh0vsk7ls.html</loc>
     <news:news>
       <news:publication>
@@ -1483,446 +1978,6 @@
       </news:publication>
       <news:publication_date>2026-11-24T12:18:30.127Z</news:publication_date>
       <news:title>Darwin publica On the Origin of Species</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/recht-gezet-hand-genezen-en-mist-gevangen-op-camera-dg-20261123-dag.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:22:06.171Z</news:publication_date>
-      <news:title>Recht gezet, hand genezen en mist gevangen op camera</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/record-set-straight-hand-healed-and-mist-captured-on-camera-dg-20261123-dag.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:22:06.171Z</news:publication_date>
-      <news:title>Record set straight, hand healed and mist captured on camera</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/gerade-geruckt-hand-geheilt-und-nebel-auf-kamera-eingefangen-dg-20261123-dag.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:22:06.171Z</news:publication_date>
-      <news:title>Gerade gerückt, Hand geheilt und Nebel auf Kamera eingefangen</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/justice-rendue-main-guerie-et-brume-capturee-a-l-objectif-dg-20261123-dag.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:22:06.171Z</news:publication_date>
-      <news:title>Justice rendue, main guérie et brume capturée à l'objectif</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/justicia-reparada-mano-sanada-y-niebla-capturada-en-camara-dg-20261123-dag.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:22:06.171Z</news:publication_date>
-      <news:title>Justicia reparada, mano sanada y niebla capturada en cámara</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/peggy-guggenheim-redde-moderne-meesterwerken-van-de-nazi-s-1795479680676uk0vyzd37.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:21:22.628Z</news:publication_date>
-      <news:title>Peggy Guggenheim redde moderne meesterwerken van de nazi's</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/peggy-guggenheim-saved-modern-masterpieces-from-the-nazis-1795479680676uk0vyzd37.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:21:22.628Z</news:publication_date>
-      <news:title>Peggy Guggenheim saved modern masterpieces from the Nazis</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/peggy-guggenheim-rettete-moderne-meisterwerke-vor-den-nazis-1795479680676uk0vyzd37.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:21:22.628Z</news:publication_date>
-      <news:title>Peggy Guggenheim rettete moderne Meisterwerke vor den Nazis</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/peggy-guggenheim-a-sauve-les-chefs-d-uvre-modernes-des-nazis-1795479680676uk0vyzd37.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:21:22.628Z</news:publication_date>
-      <news:title>Peggy Guggenheim a sauvé les chefs-d'œuvre modernes des nazis</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/peggy-guggenheim-salvo-obras-maestras-modernas-de-los-nazis-1795479680676uk0vyzd37.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:21:22.628Z</news:publication_date>
-      <news:title>Peggy Guggenheim salvó obras maestras modernas de los nazis</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/riemannhypothese-mogelijk-opgelost-met-hulp-van-ai-1795479657837i6pxr6xie.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:20:59.660Z</news:publication_date>
-      <news:title>Riemannhypothese mogelijk opgelost met hulp van AI</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/riemann-hypothesis-possibly-solved-with-help-of-ai-1795479657837i6pxr6xie.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:20:59.660Z</news:publication_date>
-      <news:title>Riemann hypothesis possibly solved with help of AI</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/riemannhypothese-moglicherweise-mit-ki-hilfe-gelost-1795479657837i6pxr6xie.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:20:59.660Z</news:publication_date>
-      <news:title>Riemannhypothese möglicherweise mit KI-Hilfe gelöst</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/l-hypothese-de-riemann-possiblement-resolue-avec-l-aide-de-l-ia-1795479657837i6pxr6xie.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:20:59.660Z</news:publication_date>
-      <news:title>L'hypothèse de Riemann possiblement résolue avec l'aide de l'IA</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/la-hipotesis-de-riemann-posiblemente-resuelta-con-ayuda-de-ia-1795479657837i6pxr6xie.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:20:59.660Z</news:publication_date>
-      <news:title>La hipótesis de Riemann posiblemente resuelta con ayuda de IA</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/carl-sagan-legde-vierde-dimensie-uit-met-een-appel-1795479636274xmr1udgvt.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:20:38.703Z</news:publication_date>
-      <news:title>Carl Sagan legde vierde dimensie uit met een appel</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/carl-sagan-explained-the-fourth-dimension-with-an-apple-1795479636274xmr1udgvt.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:20:38.703Z</news:publication_date>
-      <news:title>Carl Sagan explained the fourth dimension with an apple</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/carl-sagan-erklarte-die-vierte-dimension-mit-einem-apfel-1795479636274xmr1udgvt.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:20:38.703Z</news:publication_date>
-      <news:title>Carl Sagan erklärte die vierte Dimension mit einem Apfel</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/carl-sagan-expliquait-la-quatrieme-dimension-avec-une-pomme-1795479636274xmr1udgvt.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:20:38.703Z</news:publication_date>
-      <news:title>Carl Sagan expliquait la quatrième dimension avec une pomme</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/carl-sagan-explico-la-cuarta-dimension-con-una-manzana-1795479636274xmr1udgvt.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:20:38.703Z</news:publication_date>
-      <news:title>Carl Sagan explicó la cuarta dimensión con una manzana</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/sighle-williams-krijgt-na-37-jaar-drive-thru-een-onvergetelijk-afscheid-17954796141650a3crxw7w.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:20:16.509Z</news:publication_date>
-      <news:title>Sighle Williams krijgt na 37 jaar drive-thru een onvergetelijk afscheid</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/sighle-williams-gets-unforgettable-farewell-after-37-years-at-drive-thru-17954796141650a3crxw7w.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:20:16.509Z</news:publication_date>
-      <news:title>Sighle Williams gets unforgettable farewell after 37 years at drive-thru</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/sighle-williams-erhalt-nach-37-jahren-drive-thru-einen-unvergesslichen-abschied-17954796141650a3crxw7w.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:20:16.509Z</news:publication_date>
-      <news:title>Sighle Williams erhält nach 37 Jahren Drive-Thru einen unvergesslichen Abschied</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/sighle-williams-recoit-un-adieu-inoubliable-apres-37-ans-au-drive-thru-17954796141650a3crxw7w.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:20:16.509Z</news:publication_date>
-      <news:title>Sighle Williams reçoit un adieu inoubliable après 37 ans au drive-thru</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/sighle-williams-recibe-una-despedida-inolvidable-tras-37-anos-en-drive-thru-17954796141650a3crxw7w.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:20:16.509Z</news:publication_date>
-      <news:title>Sighle Williams recibe una despedida inolvidable tras 37 años en drive-thru</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/ella-fitzgerald-vergeet-tekst-en-wint-grammy-1795479590110t1qd8qx8a.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:19:52.955Z</news:publication_date>
-      <news:title>Ella Fitzgerald vergeet tekst en wint Grammy</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/ella-fitzgerald-forgets-lyrics-and-wins-grammy-1795479590110t1qd8qx8a.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:19:52.955Z</news:publication_date>
-      <news:title>Ella Fitzgerald forgets lyrics and wins Grammy</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/ella-fitzgerald-vergisst-sich-und-gewinnt-grammy-1795479590110t1qd8qx8a.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:19:52.955Z</news:publication_date>
-      <news:title>Ella Fitzgerald vergisst sich und gewinnt Grammy</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/ella-fitzgerald-oublie-les-paroles-et-remporte-un-grammy-1795479590110t1qd8qx8a.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:19:52.955Z</news:publication_date>
-      <news:title>Ella Fitzgerald oublie les paroles et remporte un Grammy</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/ella-fitzgerald-olvida-la-letra-y-gana-un-grammy-1795479590110t1qd8qx8a.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:19:52.955Z</news:publication_date>
-      <news:title>Ella Fitzgerald olvida la letra y gana un Grammy</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/walrussenparadijs-bij-point-lay-voor-altijd-beschermd-in-alaska-1795479566247lhip9t3yd.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:19:29.285Z</news:publication_date>
-      <news:title>Walrussenparadijs bij Point Lay voor altijd beschermd in Alaska</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/walrus-paradise-at-point-lay-permanently-protected-in-alaska-1795479566247lhip9t3yd.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:19:29.285Z</news:publication_date>
-      <news:title>Walrus paradise at Point Lay permanently protected in Alaska</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/walrossparadies-bei-point-lay-in-alaska-fur-immer-geschutzt-1795479566247lhip9t3yd.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:19:29.285Z</news:publication_date>
-      <news:title>Walrossparadies bei Point Lay in Alaska für immer geschützt</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/un-paradis-des-morses-a-point-lay-protege-a-jamais-en-alaska-1795479566247lhip9t3yd.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:19:29.285Z</news:publication_date>
-      <news:title>Un paradis des morses à Point Lay protégé à jamais en Alaska</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/paraiso-de-las-morsas-en-point-lay-protegido-para-siempre-en-alaska-1795479566247lhip9t3yd.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:19:29.285Z</news:publication_date>
-      <news:title>Paraíso de las morsas en Point Lay protegido para siempre en Alaska</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/vrijwilliger-redt-vermiste-peuter-in-woestijn-van-arizona-1795479536177x7dzqewb2.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:19:00.163Z</news:publication_date>
-      <news:title>Vrijwilliger redt vermiste peuter in woestijn van Arizona</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/volunteer-rescues-missing-toddler-in-arizona-desert-1795479536177x7dzqewb2.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:19:00.163Z</news:publication_date>
-      <news:title>Volunteer rescues missing toddler in Arizona desert</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/freiwilliger-rettet-vermisstes-kleinkind-in-arizonas-wuste-1795479536177x7dzqewb2.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:19:00.163Z</news:publication_date>
-      <news:title>Freiwilliger rettet vermisstes Kleinkind in Arizonas Wüste</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/un-benevole-sauve-une-petite-fille-disparue-dans-le-desert-de-l-arizona-1795479536177x7dzqewb2.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:19:00.163Z</news:publication_date>
-      <news:title>Un bénévole sauve une petite fille disparue dans le désert de l'Arizona</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/voluntario-rescata-a-nina-desaparecida-en-el-desierto-de-arizona-1795479536177x7dzqewb2.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T00:19:00.163Z</news:publication_date>
-      <news:title>Voluntario rescata a niña desaparecida en el desierto de Arizona</news:title>
     </news:news>
   </url>
 </urlset>

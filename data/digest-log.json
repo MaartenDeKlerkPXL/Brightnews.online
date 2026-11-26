@@ -1,5 +1,30 @@
 [
   {
+    "datum": "2026-11-26T00:22:50.295Z",
+    "dag": "2026-11-25",
+    "categorie": null,
+    "ids": [
+      "1795609141655kh0vsk7ls",
+      "1795609093085zeg3l9l2z",
+      "1795566226632e672kng07",
+      "179556620494695op7a4bl",
+      "1795566179018kxbizm0bj",
+      "17955661527329mxkt0xf2",
+      "1795566128262sn5mbj545",
+      "1795566099215j6pqt7dj9"
+    ],
+    "prompthash": "79a025e22e8b",
+    "model": "moeder+vertaal (anthropic)",
+    "tokens": 15930,
+    "woorden": {
+      "nl": 359,
+      "en": 356,
+      "de": 352,
+      "fr": 417,
+      "es": 404
+    }
+  },
+  {
     "datum": "2026-11-25T00:25:41.037Z",
     "dag": "2026-11-24",
     "categorie": null,
@@ -1258,26 +1283,6 @@
       "de": 403,
       "fr": 474,
       "es": 460
-    }
-  },
-  {
-    "datum": "2026-09-17T16:49:28.213Z",
-    "dag": "2026-09-16",
-    "categorie": "Tech",
-    "ids": [
-      "1789409398854ryk5ehwtu",
-      "1789663690801lle8wvp1r",
-      "1789577008130zs40adub8"
-    ],
-    "prompthash": "fd561df11314",
-    "model": "moeder+vertaal (anthropic)",
-    "tokens": 10087,
-    "woorden": {
-      "nl": 321,
-      "en": 330,
-      "de": 310,
-      "fr": 383,
-      "es": 370
     }
   }
 ]

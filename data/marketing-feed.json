@@ -1,10 +1,26 @@
 {
- "gegenereerd": "2026-11-25T12:19:09.515Z",
+ "gegenereerd": "2026-11-26T00:22:54.106Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
   "nl": {
    "top": [
+    {
+     "id": "17956524933953v7n50s8k",
+     "titel": "Inheemse vrouwen herstellen waterbronnen met Kewiña-bomen in Bolivia",
+     "teaser": "In Bolivia's Tunari-gebergte is nog maar 10% van de oorspronkelijke Kewiña-bossen (Polylepis) over, door houtkap, stadsuitbreiding en kleinschalige landbouw. Deze inheemse bomen creëren microklimaten die water leveren, in tegenstelling tot uitheemse soorten zoals pijnbomen en eucalyptus, die grondwater uitputten en in de jaren zestig voor conflicten met gemeenschappen zorgden. Sinds 2022 helpt de Boliviaanse organisatie Faunagua zes Quechua-gemeenschappen, waaronder Chiaraje,...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/inheemse-vrouwen-herstellen-waterbronnen-met-kewina-bomen-in-bolivia-17956524933953v7n50s8k.html"
+    },
+    {
+     "id": "1795652460679k37poolr1",
+     "titel": "Scholen brengen inheems voedsel zoals bizonvlees en blauwe maïs terug op het menu",
+     "teaser": "Scholen en tribale gemeenschappen in de VS werken samen om inheemse voedingsmiddelen terug te brengen in schoolkantines. Lisa Ansell Frazier richtte in 2018 het Buffalo Youth Nation Project op om voedselsoevereiniteit en toegang tot inheemse voedingsmiddelen te versterken. Haar organisatie teelt blauwe Hopi-maïs, Huckleberry Gold aardappelen en Jeruzalem-artisjokken op de Mitákuye Ówahe Farm in Wyoming en levert deze aan scholen...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/scholen-brengen-inheems-voedsel-zoals-bizonvlees-en-blauwe-mais-terug-op-het-men-1795652460679k37poolr1.html"
+    },
     {
      "id": "1795522813567h293qtms6",
      "titel": "79-jarige man leert haarstylen en make-up voor zijn slechtziende vrouw",
@@ -14,57 +30,57 @@
      "url": "https://brightnews.online/articles/nl/79-jarige-man-leert-haarstylen-en-make-up-voor-zijn-slechtziende-vrouw-1795522813567h293qtms6.html"
     },
     {
-     "id": "1795609141655kh0vsk7ls",
-     "titel": "Emily bouwt stiekem publiek voor metaalwerk van haar man",
-     "teaser": "Deze zomer hield Emily een maand lang een geheim voor haar man Jonathan. Ze filmde zijn metalen sculpturen, op maat gemaakte borden en lasprojecten en plaatste de video's op een Instagram-account dat hij niet kende: @myhusbandsmetalwork. Jonathan wilde al lang van zijn metaalwerk zijn beroep maken, maar een eerdere onderneming was gesloten en zijn fulltime baan liet weinig energie over...",
+     "id": "1795652436106s9ovp8rbp",
+     "titel": "Dierenasiels trakteren adoptiehuisdieren op Thanksgiving-feestmaal",
+     "teaser": "Verschillende dierenasiels in de Verenigde Staten vierden Thanksgiving met speciale feestmaaltijden voor hun adoptiehuisdieren. De Humane Society for Tacoma & Pierce County organiseerde een 'Pawsgiving' met groenten, fruit en traktaties voor konijnen, katten en honden, gesponsord door Dog is Human. Always & Furever Midwest Animal Sanctuary in Kansas hield 'Pupsgiving' met kalkoen en groenten voor senior-honden. In Utah bereidde restaurant...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/emily-bouwt-stiekem-publiek-voor-metaalwerk-van-haar-man-1795609141655kh0vsk7ls.html"
+     "url": "https://brightnews.online/articles/nl/dierenasiels-trakteren-adoptiehuisdieren-op-thanksgiving-feestmaal-1795652436106s9ovp8rbp.html"
     },
     {
-     "id": "1795609093085zeg3l9l2z",
-     "titel": "Miki Kawamura brengt PeaceCream naar Nobel-top in Rome",
-     "teaser": "Op de 20ste World Summit of Nobel Peace Laureates in Rome, van 1 tot 4 december, presenteert de 19-jarige Miki Kawamura PeaceCream. Deze pop-up, ontwikkeld via haar Youth Peace Ambassadors-programma in samenwerking met Japans Goi Peace Foundation, koppelt elke ijssmaak aan een waarde als liefde, hoop, dankbaarheid of compassie. Bezoekers denken na over wat vrede voor hen betekent en stellen...",
+     "id": "1795652408649vig9gr8wt",
+     "titel": "Sinaasappelschillen veranderen kale grond in Costa Rica in bos",
+     "teaser": "In 1997 kregen sapbedrijf Del Oro en ecologen Daniel Janzen en Winnie Hallwachs toestemming om 12.000 ton sinaasappelschillen te storten op een kaalgeslagen stuk grond naast het Área de Conservación Guanacaste in Costa Rica. Een rechtszaak van concurrent TicoFrut beëindigde het project na twee jaar. Zestien jaar later vond onderzoeker Timothy Treuer de plek terug, dichtbegroeid en nauwelijks te herkennen....",
      "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/miki-kawamura-brengt-peacecream-naar-nobel-top-in-rome-1795609093085zeg3l9l2z.html"
-    },
-    {
-     "id": "1795566226632e672kng07",
-     "titel": "Vrijwilligers redden eeuwenoude brieven met project Cursive for a Cause",
-     "teaser": "Sinds cursief schrift in 2010 uit de Amerikaanse lesstandaarden verdween, dreigt de vaardigheid om het te lezen te verdwijnen. Aan Bowling Green State University zetten AmeriCorps-vrijwilligers zich hiertegen af met het project 'Cursive for a Cause'. Zij ontcijferen handgeschreven brieven, dagboeken en documenten uit het universiteitsarchief, veelal geschreven door vrouwen, en zetten deze om in getypte tekst. Zo worden persoonlijke...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/vrijwilligers-redden-eeuwenoude-brieven-met-project-cursive-for-a-cause-1795566226632e672kng07.html"
-    },
-    {
-     "id": "179556620494695op7a4bl",
-     "titel": "Bibliotheken bieden gratis duizenden films via Kanopy",
-     "teaser": "Nu bioscoopkaartjes en streamingdiensten steeds duurder worden, zoeken mensen alternatieven en komen daarbij uit bij hun lokale bibliotheek. Volgens Filmmaker Magazine bestaat 30% van bibliotheekuitleningen uit films. Steeds meer bibliotheken, zoals Josephine Community Library in Grants Pass, Oregon, bieden leden met hun bibliotheekkaart toegang tot de streamingdienst Kanopy, die films, series, documentaires en kinderprogramma's aanbiedt zonder reclame. Kanopy ontstond in...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/bibliotheken-bieden-gratis-duizenden-films-via-kanopy-179556620494695op7a4bl.html"
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/nl/sinaasappelschillen-veranderen-kale-grond-in-costa-rica-in-bos-1795652408649vig9gr8wt.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261125-dag",
+     "titel": "Stille steun en bewaarde talen kleuren het nieuws",
+     "categorie": null,
+     "dag": "2026-11-25",
+     "url": "https://brightnews.online/articles/nl/stille-steun-en-bewaarde-talen-kleuren-het-nieuws-dg-20261125-dag.html"
+    },
     {
      "id": "dg-20261124-dag",
      "titel": "Liefde, doorbraken en een beschermd walrusparadijs kleuren deze dag",
      "categorie": null,
      "dag": "2026-11-24",
      "url": "https://brightnews.online/articles/nl/liefde-doorbraken-en-een-beschermd-walrusparadijs-kleuren-deze-dag-dg-20261124-dag.html"
-    },
-    {
-     "id": "dg-20261123-dag",
-     "titel": "Recht gezet, hand genezen en mist gevangen op camera",
-     "categorie": null,
-     "dag": "2026-11-23",
-     "url": "https://brightnews.online/articles/nl/recht-gezet-hand-genezen-en-mist-gevangen-op-camera-dg-20261123-dag.html"
     }
    ]
   },
   "en": {
    "top": [
+    {
+     "id": "17956524933953v7n50s8k",
+     "titel": "Indigenous women restore water sources with Kewiña trees in Bolivia",
+     "teaser": "In Bolivia's Tunari mountains, only 10% of the original Kewiña forests (Polylepis) remain, due to logging, urban expansion and small-scale agriculture. These indigenous trees create microclimates that provide water, unlike exotic species such as pine and eucalyptus, which deplete groundwater and caused conflicts with communities in the 1960s. Since 2022, the Bolivian organization Faunagua has been helping six Quechua communities,...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/indigenous-women-restore-water-sources-with-kewina-trees-in-bolivia-17956524933953v7n50s8k.html"
+    },
+    {
+     "id": "1795652460679k37poolr1",
+     "titel": "Schools bring indigenous foods like bison meat and blue corn back to menus",
+     "teaser": "Schools and tribal communities across the US are working together to reintroduce indigenous foods into school cafeterias. Lisa Ansell Frazier founded the Buffalo Youth Nation Project in 2018 to strengthen food sovereignty and access to indigenous foods. Her organization grows blue Hopi corn, Huckleberry Gold potatoes and Jerusalem artichokes at the Mitákuye Ówahe Farm in Wyoming and supplies these to...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/schools-bring-indigenous-foods-like-bison-meat-and-blue-corn-back-to-menus-1795652460679k37poolr1.html"
+    },
     {
      "id": "1795522813567h293qtms6",
      "titel": "79-year-old man learns hairstyling and makeup for his visually impaired wife",
@@ -74,57 +90,57 @@
      "url": "https://brightnews.online/articles/en/79-year-old-man-learns-hairstyling-and-makeup-for-his-visually-impaired-wife-1795522813567h293qtms6.html"
     },
     {
-     "id": "1795609141655kh0vsk7ls",
-     "titel": "Emily secretly builds audience for her husband's metalwork",
-     "teaser": "This summer, Emily kept a secret from her husband Jonathan for an entire month. She filmed his metal sculptures, custom-made signs and welding projects, posting the videos to an Instagram account he didn't know about: @myhusbandsmetalwork. Jonathan had long wanted to make metalwork his profession, but a previous venture had closed and his full-time job left little energy for his...",
+     "id": "1795652436106s9ovp8rbp",
+     "titel": "Animal shelters treat adoptable pets to Thanksgiving feast",
+     "teaser": "Various animal shelters across the United States celebrated Thanksgiving with special holiday meals for their adoptable pets. The Humane Society for Tacoma & Pierce County organized a 'Pawsgiving' featuring vegetables, fruit and treats for rabbits, cats and dogs, sponsored by Dog is Human. Always & Furever Midwest Animal Sanctuary in Kansas held 'Pupsgiving' with turkey and vegetables for senior dogs....",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/emily-secretly-builds-audience-for-her-husband-s-metalwork-1795609141655kh0vsk7ls.html"
+     "url": "https://brightnews.online/articles/en/animal-shelters-treat-adoptable-pets-to-thanksgiving-feast-1795652436106s9ovp8rbp.html"
     },
     {
-     "id": "1795609093085zeg3l9l2z",
-     "titel": "Miki Kawamura brings PeaceCream to Nobel Summit in Rome",
-     "teaser": "At the 20th World Summit of Nobel Peace Laureates in Rome, from December 1 to 4, 19-year-old Miki Kawamura will present PeaceCream. This pop-up, developed through her Youth Peace Ambassadors programme in collaboration with Japan's Goi Peace Foundation, links each ice cream flavour to a value such as love, hope, gratitude or compassion. Visitors reflect on what peace means to...",
+     "id": "1795652408649vig9gr8wt",
+     "titel": "Orange peels transform barren land into forest in Costa Rica",
+     "teaser": "In 1997, juice company Del Oro and ecologists Daniel Janzen and Winnie Hallwachs received permission to dump 12,000 tons of orange peels on a cleared plot of land next to the Área de Conservación Guanacaste in Costa Rica. A lawsuit from competitor TicoFrut ended the project after two years. Sixteen years later, researcher Timothy Treuer found the site again, densely...",
      "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/miki-kawamura-brings-peacecream-to-nobel-summit-in-rome-1795609093085zeg3l9l2z.html"
-    },
-    {
-     "id": "1795566226632e672kng07",
-     "titel": "Volunteers rescue centuries-old letters with Cursive for a Cause project",
-     "teaser": "Since cursive writing disappeared from American educational standards in 2010, the ability to read it has been at risk. At Bowling Green State University, AmeriCorps volunteers are fighting back with the project 'Cursive for a Cause'. They decipher handwritten letters, diaries and documents from the university archive, many written by women, and convert them into typed text. In this way,...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/volunteers-rescue-centuries-old-letters-with-cursive-for-a-cause-project-1795566226632e672kng07.html"
-    },
-    {
-     "id": "179556620494695op7a4bl",
-     "titel": "Libraries offer thousands of films for free via Kanopy",
-     "teaser": "As movie tickets and streaming services become increasingly expensive, people are seeking alternatives and turning to their local library. According to Filmmaker Magazine, 30% of library loans consist of films. More and more libraries, such as Josephine Community Library in Grants Pass, Oregon, are offering members access to the streaming service Kanopy with their library card, which provides films, series,...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/libraries-offer-thousands-of-films-for-free-via-kanopy-179556620494695op7a4bl.html"
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/en/orange-peels-transform-barren-land-into-forest-in-costa-rica-1795652408649vig9gr8wt.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261125-dag",
+     "titel": "Silent support and preserved languages color the news",
+     "categorie": null,
+     "dag": "2026-11-25",
+     "url": "https://brightnews.online/articles/en/silent-support-and-preserved-languages-color-the-news-dg-20261125-dag.html"
+    },
     {
      "id": "dg-20261124-dag",
      "titel": "Love, breakthroughs and a protected walrus paradise color this day",
      "categorie": null,
      "dag": "2026-11-24",
      "url": "https://brightnews.online/articles/en/love-breakthroughs-and-a-protected-walrus-paradise-color-this-day-dg-20261124-dag.html"
-    },
-    {
-     "id": "dg-20261123-dag",
-     "titel": "Record set straight, hand healed and mist captured on camera",
-     "categorie": null,
-     "dag": "2026-11-23",
-     "url": "https://brightnews.online/articles/en/record-set-straight-hand-healed-and-mist-captured-on-camera-dg-20261123-dag.html"
     }
    ]
   },
   "de": {
    "top": [
+    {
+     "id": "17956524933953v7n50s8k",
+     "titel": "Indigene Frauen stellen Wasserquellen mit Kewiña-Bäumen in Bolivien wieder her",
+     "teaser": "Im Tunari-Gebirge Boliviens sind noch etwa 10% der ursprünglichen Kewiña-Wälder (Polylepis) vorhanden, der Rest wurde durch Holzeinschlag, Stadtexpansion und kleinflächige Landwirtschaft zerstört. Diese indigenen Bäume schaffen Mikroklimate, die Wasser liefern, im Gegensatz zu nicht heimischen Arten wie Kiefern und Eukalyptus, die das Grundwasser erschöpfen und in den 1960er Jahren zu Konflikten mit Gemeinden führten. Seit 2022 unterstützt die bolivianische Organisation...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/indigene-frauen-stellen-wasserquellen-mit-kewina-baumen-in-bolivien-wieder-her-17956524933953v7n50s8k.html"
+    },
+    {
+     "id": "1795652460679k37poolr1",
+     "titel": "Schulen bringen indigene Lebensmittel wie Bisonenfleisch und blauen Mais zurück auf den Speiseplan",
+     "teaser": "Schulen und Stammesgemeinschaften in den USA arbeiten zusammen, um indigene Lebensmittel in Schulkantinen zurückzubringen. Lisa Ansell Frazier gründete 2018 das Buffalo Youth Nation Project, um Lebensmittelsouveränität und Zugang zu indigenen Lebensmitteln zu stärken. Ihre Organisation baut blauen Hopi-Mais, Huckleberry Gold Kartoffeln und Jerusalemartischocken auf der Mitákuye Ówahe Farm in Wyoming an und liefert diese an Schulen in der Wind River...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/schulen-bringen-indigene-lebensmittel-wie-bisonenfleisch-und-blauen-mais-zuruck-1795652460679k37poolr1.html"
+    },
     {
      "id": "1795522813567h293qtms6",
      "titel": "79-jähriger Mann lernt Haarstyling und Make-up für seine sehbehinderte Frau",
@@ -134,57 +150,57 @@
      "url": "https://brightnews.online/articles/de/79-jahriger-mann-lernt-haarstyling-und-make-up-fur-seine-sehbehinderte-frau-1795522813567h293qtms6.html"
     },
     {
-     "id": "1795609141655kh0vsk7ls",
-     "titel": "Emily baut heimlich Publikum für Metallarbeiten ihres Mannes auf",
-     "teaser": "Diesen Sommer hielt Emily einen Monat lang ein Geheimnis vor ihrem Mann Jonathan. Sie filmte seine Metallskulpturen, maßgefertigte Schilder und Schweißprojekte und stellte die Videos auf einem Instagram-Account ein, den er nicht kannte: @myhusbandsmetalwork. Jonathan wollte schon lange von seiner Metallarbeit leben, doch ein früheres Unternehmen war gescheitert und sein Vollzeitjob ließ wenig Energie für seine Kunst. Emily wollte daher...",
+     "id": "1795652436106s9ovp8rbp",
+     "titel": "Tierheime verwöhnen Adoptionshaustiere mit Thanksgiving-Festmahl",
+     "teaser": "Verschiedene Tierheime in den Vereinigten Staaten feierten Thanksgiving mit speziellen Festmahlzeiten für ihre Adoptionshaustiere. Die Humane Society for Tacoma & Pierce County organisierte ein „Pawsgiving\" mit Gemüse, Obst und Leckereien für Kaninchen, Katzen und Hunde, gesponsert von Dog is Human. Always & Furever Midwest Animal Sanctuary in Kansas veranstaltete „Pupsgiving\" mit Truthahn und Gemüse für Senior-Hunde. In Utah bereitete das...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/emily-baut-heimlich-publikum-fur-metallarbeiten-ihres-mannes-auf-1795609141655kh0vsk7ls.html"
+     "url": "https://brightnews.online/articles/de/tierheime-verwohnen-adoptionshaustiere-mit-thanksgiving-festmahl-1795652436106s9ovp8rbp.html"
     },
     {
-     "id": "1795609093085zeg3l9l2z",
-     "titel": "Miki Kawamura bringt PeaceCream zum Nobelgipfel nach Rom",
-     "teaser": "Auf dem 20. World Summit of Nobel Peace Laureates in Rom vom 1. bis 4. Dezember präsentiert die 19-jährige Miki Kawamura PeaceCream. Dieses Pop-up-Projekt wurde über ihr Youth Peace Ambassadors-Programm in Zusammenarbeit mit der japanischen Goi Peace Foundation entwickelt und verbindet jede Eissorte mit einem Wert wie Liebe, Hoffnung, Dankbarkeit oder Mitgefühl. Besucher reflektieren darüber, was Frieden für sie bedeutet,...",
+     "id": "1795652408649vig9gr8wt",
+     "titel": "Orangenschalen verwandeln kahles Land in Costa Rica in Wald",
+     "teaser": "1997 erhielten das Safunternehmen Del Oro und die Ökologen Daniel Janzen und Winnie Hallwachs die Genehmigung, 12.000 Tonnen Orangenschalen auf einem gerodeten Stück Land neben dem Área de Conservación Guanacaste in Costa Rica zu deponieren. Eine Klage des Konkurrenten TicoFrut beendete das Projekt nach zwei Jahren. Sechzehn Jahre später fand der Forscher Timothy Treuer den Ort wieder, dicht bewachsen und...",
      "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/miki-kawamura-bringt-peacecream-zum-nobelgipfel-nach-rom-1795609093085zeg3l9l2z.html"
-    },
-    {
-     "id": "1795566226632e672kng07",
-     "titel": "Freiwillige retten jahrhundertealte Briefe mit Projekt Cursive for a Cause",
-     "teaser": "Seit die Schreibschrift 2010 aus den amerikanischen Lehrplänen verschwunden ist, droht die Fähigkeit, sie zu lesen, verloren zu gehen. An der Bowling Green State University setzen sich AmeriCorps-Freiwillige mit dem Projekt „Cursive for a Cause\" dagegen ein. Sie entziffern handgeschriebene Briefe, Tagebücher und Dokumente aus dem Universitätsarchiv, überwiegend von Frauen verfasst, und wandeln diese in getippte Texte um. So werden...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/freiwillige-retten-jahrhundertealte-briefe-mit-projekt-cursive-for-a-cause-1795566226632e672kng07.html"
-    },
-    {
-     "id": "179556620494695op7a4bl",
-     "titel": "Bibliotheken bieten kostenlos tausende Filme über Kanopy",
-     "teaser": "Da Kinokarten und Streamingdienste immer teurer werden, suchen Menschen nach Alternativen und landen dabei in ihrer lokalen Bibliothek. Laut Filmmaker Magazine machen Filme 30% der Bibliotheksausleihen aus. Immer mehr Bibliotheken, wie die Josephine Community Library in Grants Pass, Oregon, bieten Mitgliedern mit ihrer Bibliothekskarte Zugang zum Streamingdienst Kanopy, der Filme, Serien, Dokumentationen und Kinderprogramme ohne Werbung anbietet. Kanopy wurde 2008...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/bibliotheken-bieten-kostenlos-tausende-filme-uber-kanopy-179556620494695op7a4bl.html"
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/de/orangenschalen-verwandeln-kahles-land-in-costa-rica-in-wald-1795652408649vig9gr8wt.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261125-dag",
+     "titel": "Stille Unterstützung und bewahrte Sprachen prägen die Nachrichten",
+     "categorie": null,
+     "dag": "2026-11-25",
+     "url": "https://brightnews.online/articles/de/stille-unterstutzung-und-bewahrte-sprachen-pragen-die-nachrichten-dg-20261125-dag.html"
+    },
     {
      "id": "dg-20261124-dag",
      "titel": "Liebe, Durchbrüche und ein geschütztes Walross-Paradies prägen diesen Tag",
      "categorie": null,
      "dag": "2026-11-24",
      "url": "https://brightnews.online/articles/de/liebe-durchbruche-und-ein-geschutztes-walross-paradies-pragen-diesen-tag-dg-20261124-dag.html"
-    },
-    {
-     "id": "dg-20261123-dag",
-     "titel": "Gerade gerückt, Hand geheilt und Nebel auf Kamera eingefangen",
-     "categorie": null,
-     "dag": "2026-11-23",
-     "url": "https://brightnews.online/articles/de/gerade-geruckt-hand-geheilt-und-nebel-auf-kamera-eingefangen-dg-20261123-dag.html"
     }
    ]
   },
   "fr": {
    "top": [
+    {
+     "id": "17956524933953v7n50s8k",
+     "titel": "Des femmes autochtones restaurent les sources d'eau avec des arbres Kewiña en Bolivie",
+     "teaser": "En Bolivie, dans la chaîne de montagnes Tunari, il ne reste que 10 % des forêts de Kewiña originales (Polylepis), en raison de l'exploitation forestière, de l'expansion urbaine et de l'agriculture à petite échelle. Ces arbres autochtones créent des microclimats qui fournissent de l'eau, contrairement aux espèces exotiques comme les pins et les eucalyptus, qui épuisent les eaux souterraines et...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/des-femmes-autochtones-restaurent-les-sources-d-eau-avec-des-arbres-kewina-en-bo-17956524933953v7n50s8k.html"
+    },
+    {
+     "id": "1795652460679k37poolr1",
+     "titel": "Les écoles réintroduisent les aliments autochtones comme la viande de bison et le maïs bleu au menu",
+     "teaser": "Des écoles et des communautés tribales aux États-Unis collaborent pour réintroduire les aliments autochtones dans les cantines scolaires. Lisa Ansell Frazier a fondé le Buffalo Youth Nation Project en 2018 pour renforcer la souveraineté alimentaire et l'accès aux aliments autochtones. Son organisation cultive le maïs bleu Hopi, les pommes de terre Huckleberry Gold et les topinambours sur la ferme Mitákuye...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/les-ecoles-reintroduisent-les-aliments-autochtones-comme-la-viande-de-bison-et-l-1795652460679k37poolr1.html"
+    },
     {
      "id": "1795522813567h293qtms6",
      "titel": "Un homme de 79 ans apprend la coiffure et le maquillage pour son épouse malvoyante",
@@ -194,57 +210,57 @@
      "url": "https://brightnews.online/articles/fr/un-homme-de-79-ans-apprend-la-coiffure-et-le-maquillage-pour-son-epouse-malvoyan-1795522813567h293qtms6.html"
     },
     {
-     "id": "1795609141655kh0vsk7ls",
-     "titel": "Emily construit discrètement un public pour le travail en métal de son mari",
-     "teaser": "Cet été, Emily a gardé un secret pendant un mois pour son mari Jonathan. Elle a filmé ses sculptures métalliques, ses panneaux sur mesure et ses projets de soudage, puis a posté les vidéos sur un compte Instagram qu'il ne connaissait pas : @myhusbandsmetalwork. Jonathan rêvait depuis longtemps de faire de son travail en métal son métier, mais une entreprise...",
+     "id": "1795652436106s9ovp8rbp",
+     "titel": "Les refuges pour animaux régalent les animaux de compagnie adoptés d'un festin de Thanksgiving",
+     "teaser": "Plusieurs refuges pour animaux aux États-Unis ont célébré Thanksgiving avec des repas festifs spéciaux pour leurs animaux de compagnie adoptés. La Humane Society for Tacoma & Pierce County a organisé un « Pawsgiving » avec des légumes, des fruits et des friandises pour les lapins, les chats et les chiens, sponsorisé par Dog is Human. Always & Furever Midwest Animal...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/emily-construit-discretement-un-public-pour-le-travail-en-metal-de-son-mari-1795609141655kh0vsk7ls.html"
+     "url": "https://brightnews.online/articles/fr/les-refuges-pour-animaux-regalent-les-animaux-de-compagnie-adoptes-d-un-festin-d-1795652436106s9ovp8rbp.html"
     },
     {
-     "id": "1795609093085zeg3l9l2z",
-     "titel": "Miki Kawamura présente PeaceCream au sommet Nobel de Rome",
-     "teaser": "Lors du 20e World Summit of Nobel Peace Laureates à Rome, du 1er au 4 décembre, Miki Kawamura, 19 ans, présente PeaceCream. Ce pop-up, développé via son programme Youth Peace Ambassadors en collaboration avec la Goi Peace Foundation japonaise, associe chaque saveur de glace à une valeur comme l'amour, l'espoir, la gratitude ou la compassion. Les visiteurs réfléchissent à ce...",
+     "id": "1795652408649vig9gr8wt",
+     "titel": "Des écorces d'orange transforment des terres dénudées en forêt au Costa Rica",
+     "teaser": "En 1997, l'entreprise de jus Del Oro et les écologues Daniel Janzen et Winnie Hallwachs ont obtenu l'autorisation de déverser 12 000 tonnes d'écorces d'orange sur un terrain déboisé adjacent à l'Área de Conservación Guanacaste au Costa Rica. Un procès intenté par le concurrent TicoFrut a mis fin au projet après deux ans. Seize ans plus tard, le chercheur Timothy...",
      "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/miki-kawamura-presente-peacecream-au-sommet-nobel-de-rome-1795609093085zeg3l9l2z.html"
-    },
-    {
-     "id": "1795566226632e672kng07",
-     "titel": "Des bénévoles sauvent des lettres centenaires avec le projet Cursive for a Cause",
-     "teaser": "Depuis la disparition de l'écriture cursive des programmes scolaires américains en 2010, la capacité à la lire risque de s'effacer. À Bowling Green State University, des bénévoles AmeriCorps s'y opposent avec le projet « Cursive for a Cause ». Ils déchiffrent des lettres manuscrites, des journaux intimes et des documents des archives universitaires, rédigés pour la plupart par des femmes,...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/des-benevoles-sauvent-des-lettres-centenaires-avec-le-projet-cursive-for-a-cause-1795566226632e672kng07.html"
-    },
-    {
-     "id": "179556620494695op7a4bl",
-     "titel": "Les bibliothèques proposent gratuitement des milliers de films via Kanopy",
-     "teaser": "Alors que les places de cinéma et les services de streaming deviennent de plus en plus chers, les gens cherchent des alternatives et se tournent vers leur bibliothèque locale. Selon Filmmaker Magazine, 30 % des emprunts en bibliothèque concernent des films. De plus en plus de bibliothèques, comme Josephine Community Library à Grants Pass, en Oregon, offrent à leurs membres...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/les-bibliotheques-proposent-gratuitement-des-milliers-de-films-via-kanopy-179556620494695op7a4bl.html"
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/fr/des-ecorces-d-orange-transforment-des-terres-denudees-en-foret-au-costa-rica-1795652408649vig9gr8wt.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261125-dag",
+     "titel": "Un soutien silencieux et des langues préservées colorent l'actualité",
+     "categorie": null,
+     "dag": "2026-11-25",
+     "url": "https://brightnews.online/articles/fr/un-soutien-silencieux-et-des-langues-preservees-colorent-l-actualite-dg-20261125-dag.html"
+    },
     {
      "id": "dg-20261124-dag",
      "titel": "L'amour, des percées et un paradis des morses protégé colorent cette journée",
      "categorie": null,
      "dag": "2026-11-24",
      "url": "https://brightnews.online/articles/fr/l-amour-des-percees-et-un-paradis-des-morses-protege-colorent-cette-journee-dg-20261124-dag.html"
-    },
-    {
-     "id": "dg-20261123-dag",
-     "titel": "Justice rendue, main guérie et brume capturée à l'objectif",
-     "categorie": null,
-     "dag": "2026-11-23",
-     "url": "https://brightnews.online/articles/fr/justice-rendue-main-guerie-et-brume-capturee-a-l-objectif-dg-20261123-dag.html"
     }
    ]
   },
   "es": {
    "top": [
+    {
+     "id": "17956524933953v7n50s8k",
+     "titel": "Mujeres indígenas restauran fuentes de agua con árboles Kewiña en Bolivia",
+     "teaser": "En la cordillera Tunari de Bolivia solo queda el 10% de los bosques originales de Kewiña (Polylepis), debido a la tala, la expansión urbana y la agricultura a pequeña escala. Estos árboles indígenas crean microclimas que suministran agua, a diferencia de especies exóticas como pinos y eucaliptos, que agotan el agua subterránea y causaron conflictos con comunidades en los años...",
+     "score": 10,
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/mujeres-indigenas-restauran-fuentes-de-agua-con-arboles-kewina-en-bolivia-17956524933953v7n50s8k.html"
+    },
+    {
+     "id": "1795652460679k37poolr1",
+     "titel": "Las escuelas reintroducen alimentos indígenas como carne de bisonte y maíz azul en el menú",
+     "teaser": "Las escuelas y comunidades tribales en Estados Unidos colaboran para reintroducir alimentos indígenas en las cafeterías escolares. Lisa Ansell Frazier fundó en 2018 el Buffalo Youth Nation Project para fortalecer la soberanía alimentaria y el acceso a alimentos indígenas. Su organización cultiva maíz azul Hopi, papas Huckleberry Gold y alcachofas de Jerusalén en la granja Mitákuye Ówahe en Wyoming y...",
+     "score": 10,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/las-escuelas-reintroducen-alimentos-indigenas-como-carne-de-bisonte-y-maiz-azul-1795652460679k37poolr1.html"
+    },
     {
      "id": "1795522813567h293qtms6",
      "titel": "Hombre de 79 años aprende peinado y maquillaje para su esposa con discapacidad visual",
@@ -254,52 +270,36 @@
      "url": "https://brightnews.online/articles/es/hombre-de-79-anos-aprende-peinado-y-maquillaje-para-su-esposa-con-discapacidad-v-1795522813567h293qtms6.html"
     },
     {
-     "id": "1795609141655kh0vsk7ls",
-     "titel": "Emily construye en secreto una audiencia para el trabajo en metal de su marido",
-     "teaser": "Durante este verano, Emily guardó un secreto durante un mes para su marido Jonathan. Filmó sus esculturas de metal, carteles personalizados y proyectos de soldadura, y publicó los videos en una cuenta de Instagram que él desconocía: @myhusbandsmetalwork. Jonathan llevaba tiempo queriendo convertir su trabajo en metal en su profesión, pero un emprendimiento anterior había fracasado y su trabajo a...",
+     "id": "1795652436106s9ovp8rbp",
+     "titel": "Los refugios de animales agasajan a las mascotas adoptadas en la comida de Acción de Gracias",
+     "teaser": "Varios refugios de animales en Estados Unidos celebraron Acción de Gracias con comidas festivas especiales para sus mascotas adoptadas. La Humane Society for Tacoma & Pierce County organizó un «Pawsgiving» con verduras, frutas y golosinas para conejos, gatos y perros, patrocinado por Dog is Human. Always & Furever Midwest Animal Sanctuary en Kansas celebró «Pupsgiving» con pavo y verduras para...",
      "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/emily-construye-en-secreto-una-audiencia-para-el-trabajo-en-metal-de-su-marido-1795609141655kh0vsk7ls.html"
+     "url": "https://brightnews.online/articles/es/los-refugios-de-animales-agasajan-a-las-mascotas-adoptadas-en-la-comida-de-accio-1795652436106s9ovp8rbp.html"
     },
     {
-     "id": "1795609093085zeg3l9l2z",
-     "titel": "Miki Kawamura lleva PeaceCream a la cumbre Nobel en Roma",
-     "teaser": "En la 20ª Cumbre Mundial de Premios Nobel de la Paz en Roma, del 1 al 4 de diciembre, la joven de 19 años Miki Kawamura presenta PeaceCream. Este pop-up, desarrollado a través de su programa Youth Peace Ambassadors en colaboración con la Goi Peace Foundation de Japón, vincula cada sabor de helado con un valor como el amor, la...",
+     "id": "1795652408649vig9gr8wt",
+     "titel": "Cáscaras de naranja transforman tierra árida en bosque en Costa Rica",
+     "teaser": "En 1997, la empresa de jugos Del Oro y los ecólogos Daniel Janzen y Winnie Hallwachs obtuvieron permiso para depositar 12.000 toneladas de cáscaras de naranja en un terreno deforestado junto al Área de Conservación Guanacaste en Costa Rica. Una demanda de la competidora TicoFrut terminó el proyecto después de dos años. Dieciséis años después, el investigador Timothy Treuer redescubrió...",
      "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/miki-kawamura-lleva-peacecream-a-la-cumbre-nobel-en-roma-1795609093085zeg3l9l2z.html"
-    },
-    {
-     "id": "1795566226632e672kng07",
-     "titel": "Voluntarios rescatan cartas centenarias con el proyecto Cursive for a Cause",
-     "teaser": "Desde que la escritura cursiva desapareció de los estándares educativos estadounidenses en 2010, la habilidad para leerla corre el riesgo de extinguirse. En Bowling Green State University, voluntarios de AmeriCorps se oponen a esto con el proyecto «Cursive for a Cause». Descifran cartas manuscritas, diarios y documentos del archivo universitario, muchos escritos por mujeres, y los convierten en texto mecanografiado....",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/voluntarios-rescatan-cartas-centenarias-con-el-proyecto-cursive-for-a-cause-1795566226632e672kng07.html"
-    },
-    {
-     "id": "179556620494695op7a4bl",
-     "titel": "Las bibliotecas ofrecen miles de películas gratis a través de Kanopy",
-     "teaser": "A medida que las entradas de cine y los servicios de streaming se vuelven cada vez más caros, las personas buscan alternativas y recurren a su biblioteca local. Según Filmmaker Magazine, el 30% de los préstamos de bibliotecas consisten en películas. Cada vez más bibliotecas, como Josephine Community Library en Grants Pass, Oregón, ofrecen a los miembros acceso a través...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/las-bibliotecas-ofrecen-miles-de-peliculas-gratis-a-traves-de-kanopy-179556620494695op7a4bl.html"
+     "categorie": "Environment",
+     "url": "https://brightnews.online/articles/es/cascaras-de-naranja-transforman-tierra-arida-en-bosque-en-costa-rica-1795652408649vig9gr8wt.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261125-dag",
+     "titel": "El apoyo silencioso y las lenguas preservadas colorean las noticias",
+     "categorie": null,
+     "dag": "2026-11-25",
+     "url": "https://brightnews.online/articles/es/el-apoyo-silencioso-y-las-lenguas-preservadas-colorean-las-noticias-dg-20261125-dag.html"
+    },
     {
      "id": "dg-20261124-dag",
      "titel": "Amor, avances y un paraíso de morsas protegido colorean este día",
      "categorie": null,
      "dag": "2026-11-24",
      "url": "https://brightnews.online/articles/es/amor-avances-y-un-paraiso-de-morsas-protegido-colorean-este-dia-dg-20261124-dag.html"
-    },
-    {
-     "id": "dg-20261123-dag",
-     "titel": "Justicia reparada, mano sanada y niebla capturada en cámara",
-     "categorie": null,
-     "dag": "2026-11-23",
-     "url": "https://brightnews.online/articles/es/justicia-reparada-mano-sanada-y-niebla-capturada-en-camara-dg-20261123-dag.html"
     }
    ]
   }
