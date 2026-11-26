@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-11-26T00:22:54.106Z",
+ "gegenereerd": "2026-11-26T12:18:55.827Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -30,20 +30,20 @@
      "url": "https://brightnews.online/articles/nl/79-jarige-man-leert-haarstylen-en-make-up-voor-zijn-slechtziende-vrouw-1795522813567h293qtms6.html"
     },
     {
+     "id": "1795695531276t56r84v8o",
+     "titel": "Portlandse chefs toveren gered voedsel om tot volwaardige maaltijden",
+     "teaser": "In Portland, Oregon, geeft de organisatie Urban Gleaners overtollig voedsel een nieuwe bestemming. Chefs zoals Bradley Cohen en Jason Howd maken met gedoneerde ingrediënten - van verse boerderijkool tot vlees - restaurantwaardige maaltijden. Het eten, vaak nog vers en niet over de datum, komt van boerderijen en supermarkten die liever doneren dan vervoeren. Urban Gleaners levert maandelijks zo'n 100.000 pond...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/portlandse-chefs-toveren-gered-voedsel-om-tot-volwaardige-maaltijden-1795695531276t56r84v8o.html"
+    },
+    {
      "id": "1795652436106s9ovp8rbp",
      "titel": "Dierenasiels trakteren adoptiehuisdieren op Thanksgiving-feestmaal",
      "teaser": "Verschillende dierenasiels in de Verenigde Staten vierden Thanksgiving met speciale feestmaaltijden voor hun adoptiehuisdieren. De Humane Society for Tacoma & Pierce County organiseerde een 'Pawsgiving' met groenten, fruit en traktaties voor konijnen, katten en honden, gesponsord door Dog is Human. Always & Furever Midwest Animal Sanctuary in Kansas hield 'Pupsgiving' met kalkoen en groenten voor senior-honden. In Utah bereidde restaurant...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/dierenasiels-trakteren-adoptiehuisdieren-op-thanksgiving-feestmaal-1795652436106s9ovp8rbp.html"
-    },
-    {
-     "id": "1795652408649vig9gr8wt",
-     "titel": "Sinaasappelschillen veranderen kale grond in Costa Rica in bos",
-     "teaser": "In 1997 kregen sapbedrijf Del Oro en ecologen Daniel Janzen en Winnie Hallwachs toestemming om 12.000 ton sinaasappelschillen te storten op een kaalgeslagen stuk grond naast het Área de Conservación Guanacaste in Costa Rica. Een rechtszaak van concurrent TicoFrut beëindigde het project na twee jaar. Zestien jaar later vond onderzoeker Timothy Treuer de plek terug, dichtbegroeid en nauwelijks te herkennen....",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/sinaasappelschillen-veranderen-kale-grond-in-costa-rica-in-bos-1795652408649vig9gr8wt.html"
     }
    ],
    "dagoverzichten": [
@@ -90,20 +90,20 @@
      "url": "https://brightnews.online/articles/en/79-year-old-man-learns-hairstyling-and-makeup-for-his-visually-impaired-wife-1795522813567h293qtms6.html"
     },
     {
+     "id": "1795695531276t56r84v8o",
+     "titel": "Portland chefs transform rescued food into full meals",
+     "teaser": "In Portland, Oregon, the organization Urban Gleaners gives surplus food a new purpose. Chefs like Bradley Cohen and Jason Howd create restaurant-quality meals with donated ingredients — from fresh farm kale to meat. The food, often still fresh and not past its expiration date, comes from farms and supermarkets that prefer to donate rather than transport. Urban Gleaners delivers roughly...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/portland-chefs-transform-rescued-food-into-full-meals-1795695531276t56r84v8o.html"
+    },
+    {
      "id": "1795652436106s9ovp8rbp",
      "titel": "Animal shelters treat adoptable pets to Thanksgiving feast",
      "teaser": "Various animal shelters across the United States celebrated Thanksgiving with special holiday meals for their adoptable pets. The Humane Society for Tacoma & Pierce County organized a 'Pawsgiving' featuring vegetables, fruit and treats for rabbits, cats and dogs, sponsored by Dog is Human. Always & Furever Midwest Animal Sanctuary in Kansas held 'Pupsgiving' with turkey and vegetables for senior dogs....",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/animal-shelters-treat-adoptable-pets-to-thanksgiving-feast-1795652436106s9ovp8rbp.html"
-    },
-    {
-     "id": "1795652408649vig9gr8wt",
-     "titel": "Orange peels transform barren land into forest in Costa Rica",
-     "teaser": "In 1997, juice company Del Oro and ecologists Daniel Janzen and Winnie Hallwachs received permission to dump 12,000 tons of orange peels on a cleared plot of land next to the Área de Conservación Guanacaste in Costa Rica. A lawsuit from competitor TicoFrut ended the project after two years. Sixteen years later, researcher Timothy Treuer found the site again, densely...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/orange-peels-transform-barren-land-into-forest-in-costa-rica-1795652408649vig9gr8wt.html"
     }
    ],
    "dagoverzichten": [
@@ -150,20 +150,20 @@
      "url": "https://brightnews.online/articles/de/79-jahriger-mann-lernt-haarstyling-und-make-up-fur-seine-sehbehinderte-frau-1795522813567h293qtms6.html"
     },
     {
+     "id": "1795695531276t56r84v8o",
+     "titel": "Portländer Köche verwandeln gerettete Lebensmittel in vollwertige Mahlzeiten",
+     "teaser": "In Portland, Oregon, gibt die Organisation Urban Gleaners überschüssigen Lebensmitteln eine neue Bestimmung. Köche wie Bradley Cohen und Jason Howd kreieren mit gespendeten Zutaten – von frischem Bauernkohl bis Fleisch – restaurantreife Mahlzeiten. Das Essen, oft noch frisch und nicht abgelaufen, stammt von Bauernhöfen und Supermärkten, die lieber spenden als transportieren. Urban Gleaners liefert monatlich etwa 100.000 Pfund Lebensmittel an...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/portlander-koche-verwandeln-gerettete-lebensmittel-in-vollwertige-mahlzeiten-1795695531276t56r84v8o.html"
+    },
+    {
      "id": "1795652436106s9ovp8rbp",
      "titel": "Tierheime verwöhnen Adoptionshaustiere mit Thanksgiving-Festmahl",
      "teaser": "Verschiedene Tierheime in den Vereinigten Staaten feierten Thanksgiving mit speziellen Festmahlzeiten für ihre Adoptionshaustiere. Die Humane Society for Tacoma & Pierce County organisierte ein „Pawsgiving\" mit Gemüse, Obst und Leckereien für Kaninchen, Katzen und Hunde, gesponsert von Dog is Human. Always & Furever Midwest Animal Sanctuary in Kansas veranstaltete „Pupsgiving\" mit Truthahn und Gemüse für Senior-Hunde. In Utah bereitete das...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/tierheime-verwohnen-adoptionshaustiere-mit-thanksgiving-festmahl-1795652436106s9ovp8rbp.html"
-    },
-    {
-     "id": "1795652408649vig9gr8wt",
-     "titel": "Orangenschalen verwandeln kahles Land in Costa Rica in Wald",
-     "teaser": "1997 erhielten das Safunternehmen Del Oro und die Ökologen Daniel Janzen und Winnie Hallwachs die Genehmigung, 12.000 Tonnen Orangenschalen auf einem gerodeten Stück Land neben dem Área de Conservación Guanacaste in Costa Rica zu deponieren. Eine Klage des Konkurrenten TicoFrut beendete das Projekt nach zwei Jahren. Sechzehn Jahre später fand der Forscher Timothy Treuer den Ort wieder, dicht bewachsen und...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/orangenschalen-verwandeln-kahles-land-in-costa-rica-in-wald-1795652408649vig9gr8wt.html"
     }
    ],
    "dagoverzichten": [
@@ -210,20 +210,20 @@
      "url": "https://brightnews.online/articles/fr/un-homme-de-79-ans-apprend-la-coiffure-et-le-maquillage-pour-son-epouse-malvoyan-1795522813567h293qtms6.html"
     },
     {
+     "id": "1795695531276t56r84v8o",
+     "titel": "Des chefs de Portland transforment les aliments sauvés en repas complets",
+     "teaser": "À Portland, en Oregon, l'organisation Urban Gleaners donne une nouvelle vie aux aliments excédentaires. Des chefs comme Bradley Cohen et Jason Howd préparent des repas dignes d'un restaurant avec des ingrédients donnés — du chou fermier frais à la viande. La nourriture, souvent encore fraîche et non périmée, provient de fermes et de supermarchés qui préfèrent donner plutôt que de...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/des-chefs-de-portland-transforment-les-aliments-sauves-en-repas-complets-1795695531276t56r84v8o.html"
+    },
+    {
      "id": "1795652436106s9ovp8rbp",
      "titel": "Les refuges pour animaux régalent les animaux de compagnie adoptés d'un festin de Thanksgiving",
      "teaser": "Plusieurs refuges pour animaux aux États-Unis ont célébré Thanksgiving avec des repas festifs spéciaux pour leurs animaux de compagnie adoptés. La Humane Society for Tacoma & Pierce County a organisé un « Pawsgiving » avec des légumes, des fruits et des friandises pour les lapins, les chats et les chiens, sponsorisé par Dog is Human. Always & Furever Midwest Animal...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/les-refuges-pour-animaux-regalent-les-animaux-de-compagnie-adoptes-d-un-festin-d-1795652436106s9ovp8rbp.html"
-    },
-    {
-     "id": "1795652408649vig9gr8wt",
-     "titel": "Des écorces d'orange transforment des terres dénudées en forêt au Costa Rica",
-     "teaser": "En 1997, l'entreprise de jus Del Oro et les écologues Daniel Janzen et Winnie Hallwachs ont obtenu l'autorisation de déverser 12 000 tonnes d'écorces d'orange sur un terrain déboisé adjacent à l'Área de Conservación Guanacaste au Costa Rica. Un procès intenté par le concurrent TicoFrut a mis fin au projet après deux ans. Seize ans plus tard, le chercheur Timothy...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/des-ecorces-d-orange-transforment-des-terres-denudees-en-foret-au-costa-rica-1795652408649vig9gr8wt.html"
     }
    ],
    "dagoverzichten": [
@@ -270,20 +270,20 @@
      "url": "https://brightnews.online/articles/es/hombre-de-79-anos-aprende-peinado-y-maquillaje-para-su-esposa-con-discapacidad-v-1795522813567h293qtms6.html"
     },
     {
+     "id": "1795695531276t56r84v8o",
+     "titel": "Chefs de Portland transforman alimentos rescatados en comidas completas",
+     "teaser": "En Portland, Oregón, la organización Urban Gleaners da una nueva vida a los alimentos excedentes. Chefs como Bradley Cohen y Jason Howd preparan comidas de calidad restaurantera con ingredientes donados —desde col fresca de granja hasta carne—. La comida, a menudo aún fresca y dentro de la fecha de vencimiento, proviene de granjas y supermercados que prefieren donar antes que...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/chefs-de-portland-transforman-alimentos-rescatados-en-comidas-completas-1795695531276t56r84v8o.html"
+    },
+    {
      "id": "1795652436106s9ovp8rbp",
      "titel": "Los refugios de animales agasajan a las mascotas adoptadas en la comida de Acción de Gracias",
      "teaser": "Varios refugios de animales en Estados Unidos celebraron Acción de Gracias con comidas festivas especiales para sus mascotas adoptadas. La Humane Society for Tacoma & Pierce County organizó un «Pawsgiving» con verduras, frutas y golosinas para conejos, gatos y perros, patrocinado por Dog is Human. Always & Furever Midwest Animal Sanctuary en Kansas celebró «Pupsgiving» con pavo y verduras para...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/los-refugios-de-animales-agasajan-a-las-mascotas-adoptadas-en-la-comida-de-accio-1795652436106s9ovp8rbp.html"
-    },
-    {
-     "id": "1795652408649vig9gr8wt",
-     "titel": "Cáscaras de naranja transforman tierra árida en bosque en Costa Rica",
-     "teaser": "En 1997, la empresa de jugos Del Oro y los ecólogos Daniel Janzen y Winnie Hallwachs obtuvieron permiso para depositar 12.000 toneladas de cáscaras de naranja en un terreno deforestado junto al Área de Conservación Guanacaste en Costa Rica. Una demanda de la competidora TicoFrut terminó el proyecto después de dos años. Dieciséis años después, el investigador Timothy Treuer redescubrió...",
-     "score": 9,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/cascaras-de-naranja-transforman-tierra-arida-en-bosque-en-costa-rica-1795652408649vig9gr8wt.html"
     }
    ],
    "dagoverzichten": [

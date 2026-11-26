@@ -6,13 +6,29 @@
         <atom:link href="https://brightnews.online/feed-en.xml" rel="self" type="application/rss+xml"/>
         <description>A fresh pick of good news from around the world, every day. Enjoy the read!</description>
         <language>en-us</language>
-        <lastBuildDate>Thu, 26 Nov 2026 00:22:50 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 26 Nov 2026 12:18:52 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Your Daily Dose of Positivity</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Portland chefs transform rescued food into full meals</title>
+            <link>https://brightnews.online/articles/en/portland-chefs-transform-rescued-food-into-full-meals-1795695531276t56r84v8o.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/portland-chefs-transform-rescued-food-into-full-meals-1795695531276t56r84v8o.html</guid>
+            <pubDate>Thu, 26 Nov 2026 12:18:52 GMT</pubDate>
+            <description>In Portland, Oregon, the organization Urban Gleaners gives surplus food a new purpose. Chefs like Bradley Cohen and Jason Howd create restaurant-quality meals with donated ingredients — from fresh farm kale to meat. The food, often still fresh and not past its expiration date, comes from farms and supermarkets that prefer to donate rather than transport. Urban Gleaners delivers roughly...</description>
+            <enclosure url="https://reasonstobecheerful.world/wp-content/uploads/2026/11/IMG_0019-rotated.jpg" type="image/jpeg" length="0"/>
+        </item>
+        <item>
+            <title>Documentary Mission: JOY shows friendship between Dalai Lama and Tutu</title>
+            <link>https://brightnews.online/articles/en/documentary-mission-joy-shows-friendship-between-dalai-lama-and-tutu-1795695506478a7iw8i0ii.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/documentary-mission-joy-shows-friendship-between-dalai-lama-and-tutu-1795695506478a7iw8i0ii.html</guid>
+            <pubDate>Thu, 26 Nov 2026 12:18:29 GMT</pubDate>
+            <description>The documentary Mission: JOY is considered the ideal Thanksgiving film. The film showcases the close, humorous friendship between the Dalai Lama and the late Archbishop Desmond Tutu, two Nobel Prize winners who both faced severe hardships. Filmmakers spent five days capturing the two in Dharamsala, India, where they laughed together frequently. Co-director Peggy Callahan emphasizes that joy, in he</description>
+            <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/mission-joy-1-1.jpg" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Silent support and preserved languages color the news</title>
             <link>https://brightnews.online/articles/en/silent-support-and-preserved-languages-color-the-news-dg-20261125-dag.html</link>
@@ -233,22 +249,6 @@
             <pubDate>Wed, 25 Nov 2026 00:18:40 GMT</pubDate>
             <description>In Belo Horizonte, Brazil, the release of mosquitoes infected with Wolbachia bacteria led to a 68.5% decline in dengue infections and 73.3% in chikungunya among schoolchildren. The four-year EVITA dengue trial tested a locally adapted wMel strain of Wolbachia that inhibits virus transmission by Aedes aegypti mosquitoes. The study encompassed 58 school clusters and 5,757 children aged 6 to 11...</description>
             <enclosure url="https://www.goodnewsnetwork.org/wp-content/uploads/2015/07/mosquito-Aedes_Albopictus-publicdomain.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Turning off radiators in empty rooms actually increases heating costs</title>
-            <link>https://brightnews.online/articles/en/turning-off-radiators-in-empty-rooms-actually-increases-heating-costs-1795522898005ps518y65y.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/turning-off-radiators-in-empty-rooms-actually-increases-heating-costs-1795522898005ps518y65y.html</guid>
-            <pubDate>Tue, 24 Nov 2026 12:21:39 GMT</pubDate>
-            <description>Many people turn off radiators in guest rooms, home offices or utility rooms to save energy, but according to French agency ADEME, this backfires. Cold air is heavier and seeps under doors and through walls into heated rooms, causing them to cool faster. Radiators elsewhere must work harder, putting greater strain on the heating system. Moreover, condensation forms on windows...</description>
-            <enclosure url="https://positivr.fr/wp-content/uploads/2026/11/Normal-2026-11-04T095543.870-768x403.jpg" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Keeping spiders in your home this autumn is a good idea</title>
-            <link>https://brightnews.online/articles/en/keeping-spiders-in-your-home-this-autumn-is-a-good-idea-1795522869433tvrxfmhku.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/keeping-spiders-in-your-home-this-autumn-is-a-good-idea-1795522869433tvrxfmhku.html</guid>
-            <pubDate>Tue, 24 Nov 2026 12:21:10 GMT</pubDate>
-            <description>Spiders in your home form a natural trap for pests. Their daily menu consists precisely of the intruders that disturb our nights and daily lives. By removing a spider, you eliminate this natural security system. That opens the door to flying and crawling pests, prompting residents to often resort to chemical sprays that are harmful to human health. The advice,...</description>
-            <enclosure url="https://positivr.fr/wp-content/uploads/2026/11/Normal-2026-11-06T072026.277-768x403.jpg" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>
