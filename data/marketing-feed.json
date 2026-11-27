@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-11-27T00:21:38.532Z",
+ "gegenereerd": "2026-11-27T12:19:07.585Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -30,20 +30,20 @@
      "url": "https://brightnews.online/articles/nl/scholen-brengen-inheems-voedsel-zoals-bizonvlees-en-blauwe-mais-terug-op-het-men-1795652460679k37poolr1.html"
     },
     {
+     "id": "1795781889522im1v7e6is",
+     "titel": "Texaanse gemeenschap schenkt Gloria Kennard nieuwe Kia na 37 jaar Thanksgiving-maaltijden",
+     "teaser": "Na 37 jaar waarin Gloria Kennard jaarlijks een Thanksgiving-maaltijd kookt voor 2.000 mensen, verraste haar gemeenschap in Texas haar met een nieuwe auto. Nadat haar truck op 29 juli total loss raakte bij een aanrijding, startte The Bridge Ministries een GoFundMe-actie met een doel van 15.000 dollar. Uiteindelijk doneerden 174 mensen samen meer dan 17.700 dollar, aangevuld met een gift...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/texaanse-gemeenschap-schenkt-gloria-kennard-nieuwe-kia-na-37-jaar-thanksgiving-m-1795781889522im1v7e6is.html"
+    },
+    {
      "id": "1795738822958g4m01okgt",
      "titel": "Ezra Frech herstelt prachtig na losraken prothese tijdens emotionele DWTS-finale",
      "teaser": "Tijdens de finale van Dancing With the Stars verloor Ezra Frech midden in zijn freestyle-routine met danspartner Daniella Karagach zijn prothesebeen. Het duo danste op Linkin Park's 'Numb' en Frech danste moeiteloos door op één been, waarbij hij zelfs Karagach optilde. Karagach raapte de prothese op en gaf hem terug, waarna Frech deze weer aandeed en ze de dans samen...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/ezra-frech-herstelt-prachtig-na-losraken-prothese-tijdens-emotionele-dwts-finale-1795738822958g4m01okgt.html"
-    },
-    {
-     "id": "1795738741600uz1gn0ae6",
-     "titel": "Texanen boeren gratis op andermans land voor studiebeurzen van vreemde kinderen",
-     "teaser": "In het Texaanse Gruver werken bijna duizend inwoners al 15 jaar onbetaald op 640 hectare schoolland om studiebeurzen te financieren voor kinderen die niet hun eigen zijn. Een voormalige landeigenaar liet de boerderij in 1984 na aan het schooldistrict Gruver, dat het land eerst verpachtte voor schoolbenodigdheden. Vijftien jaar geleden besloot het schoolbestuur groter te denken: de oogst van maïs...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/texanen-boeren-gratis-op-andermans-land-voor-studiebeurzen-van-vreemde-kinderen-1795738741600uz1gn0ae6.html"
     }
    ],
    "dagoverzichten": [
@@ -60,13 +60,6 @@
      "categorie": null,
      "dag": "2026-11-25",
      "url": "https://brightnews.online/articles/nl/stille-steun-en-bewaarde-talen-kleuren-het-nieuws-dg-20261125-dag.html"
-    },
-    {
-     "id": "dg-20261124-dag",
-     "titel": "Liefde, doorbraken en een beschermd walrusparadijs kleuren deze dag",
-     "categorie": null,
-     "dag": "2026-11-24",
-     "url": "https://brightnews.online/articles/nl/liefde-doorbraken-en-een-beschermd-walrusparadijs-kleuren-deze-dag-dg-20261124-dag.html"
     }
    ]
   },
@@ -97,20 +90,20 @@
      "url": "https://brightnews.online/articles/en/schools-bring-indigenous-foods-like-bison-meat-and-blue-corn-back-to-menus-1795652460679k37poolr1.html"
     },
     {
+     "id": "1795781889522im1v7e6is",
+     "titel": "Texas community gifts Gloria Kennard new Kia after 37 years of Thanksgiving meals",
+     "teaser": "After 37 years of cooking Thanksgiving dinner for 2,000 people annually, Gloria Kennard's Texas community surprised her with a new car. When her truck was totaled in a collision on July 29, The Bridge Ministries launched a GoFundMe campaign with a $15,000 goal. Ultimately, 174 donors contributed more than $17,700, supplemented by a $10,000 gift from Kent Moore Cabinets, totaling...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/texas-community-gifts-gloria-kennard-new-kia-after-37-years-of-thanksgiving-meal-1795781889522im1v7e6is.html"
+    },
+    {
      "id": "1795738822958g4m01okgt",
      "titel": "Ezra Frech recovers beautifully after prosthetic comes off during emotional DWTS finale",
      "teaser": "During the Dancing With the Stars finale, Ezra Frech lost his prosthetic leg mid-routine while dancing with partner Daniella Karagach. The duo performed to Linkin Park's 'Numb,' and Frech seamlessly continued dancing on one leg, even lifting Karagach. Karagach retrieved the prosthetic and handed it back, allowing Frech to reattach it and finish the dance together. The performance earned a...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/ezra-frech-recovers-beautifully-after-prosthetic-comes-off-during-emotional-dwts-1795738822958g4m01okgt.html"
-    },
-    {
-     "id": "1795738741600uz1gn0ae6",
-     "titel": "Texans farm free on others' land for scholarships for strangers' children",
-     "teaser": "In the Texan town of Gruver, nearly a thousand residents have been working unpaid for 15 years on 640 hectares of school land to finance scholarships for children who are not their own. A former landowner bequeathed the farm to the Gruver school district in 1984, which initially leased the land to fund school supplies. Fifteen years ago, the school...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/texans-farm-free-on-others-land-for-scholarships-for-strangers-children-1795738741600uz1gn0ae6.html"
     }
    ],
    "dagoverzichten": [
@@ -127,13 +120,6 @@
      "categorie": null,
      "dag": "2026-11-25",
      "url": "https://brightnews.online/articles/en/silent-support-and-preserved-languages-color-the-news-dg-20261125-dag.html"
-    },
-    {
-     "id": "dg-20261124-dag",
-     "titel": "Love, breakthroughs and a protected walrus paradise color this day",
-     "categorie": null,
-     "dag": "2026-11-24",
-     "url": "https://brightnews.online/articles/en/love-breakthroughs-and-a-protected-walrus-paradise-color-this-day-dg-20261124-dag.html"
     }
    ]
   },
@@ -164,20 +150,20 @@
      "url": "https://brightnews.online/articles/de/schulen-bringen-indigene-lebensmittel-wie-bisonenfleisch-und-blauen-mais-zuruck-1795652460679k37poolr1.html"
     },
     {
+     "id": "1795781889522im1v7e6is",
+     "titel": "Texanische Gemeinde schenkt Gloria Kennard neuen Kia nach 37 Jahren Thanksgiving-Mahlzeiten",
+     "teaser": "Nach 37 Jahren, in denen Gloria Kennard jährlich eine Thanksgiving-Mahlzeit für 2.000 Menschen kocht, überraschte ihre Gemeinde in Texas sie mit einem neuen Auto. Nachdem ihr Lastwagen am 29. Juli bei einem Unfall Totalschaden erlitt, startete The Bridge Ministries eine GoFundMe-Aktion mit einem Ziel von 15.000 Dollar. Letztendlich spendeten 174 Menschen zusammen mehr als 17.700 Dollar, ergänzt durch eine Spende...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/texanische-gemeinde-schenkt-gloria-kennard-neuen-kia-nach-37-jahren-thanksgiving-1795781889522im1v7e6is.html"
+    },
+    {
      "id": "1795738822958g4m01okgt",
      "titel": "Ezra Frech meistert emotionales DWTS-Finale meisterhaft nach Prothesenverlust",
      "teaser": "Im Finale von Dancing With the Stars verlor Ezra Frech während seiner Freestyle-Routine mit Tanzpartnerin Daniella Karagach mitten in der Performance sein Prothesenbein. Das Duo tanzte zu Linkin Parks »Numb« und Frech tanzte mühelos auf einem Bein weiter, wobei er Karagach sogar hochhob. Karagach hob die Prothese auf und gab sie ihm zurück, woraufhin Frech sie wieder anlegte und die...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/ezra-frech-meistert-emotionales-dwts-finale-meisterhaft-nach-prothesenverlust-1795738822958g4m01okgt.html"
-    },
-    {
-     "id": "1795738741600uz1gn0ae6",
-     "titel": "Texaner bauen kostenlos auf fremdem Land für Stipendien anderer Kinder",
-     "teaser": "In dem texanischen Gruver arbeiten fast tausend Einwohner seit 15 Jahren unbezahlt auf 640 Hektar Schulland, um Stipendien für Kinder zu finanzieren, die nicht ihre eigenen sind. Ein ehemaliger Landbesitzer hinterließ den Bauernhof 1984 dem Schuldistrikt Gruver, der das Land zunächst verpachtete, um Schulbedarf zu finanzieren. Vor fünfzehn Jahren beschloss die Schulleitung, größer zu denken: die Ernte von Mais und...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/texaner-bauen-kostenlos-auf-fremdem-land-fur-stipendien-anderer-kinder-1795738741600uz1gn0ae6.html"
     }
    ],
    "dagoverzichten": [
@@ -194,13 +180,6 @@
      "categorie": null,
      "dag": "2026-11-25",
      "url": "https://brightnews.online/articles/de/stille-unterstutzung-und-bewahrte-sprachen-pragen-die-nachrichten-dg-20261125-dag.html"
-    },
-    {
-     "id": "dg-20261124-dag",
-     "titel": "Liebe, Durchbrüche und ein geschütztes Walross-Paradies prägen diesen Tag",
-     "categorie": null,
-     "dag": "2026-11-24",
-     "url": "https://brightnews.online/articles/de/liebe-durchbruche-und-ein-geschutztes-walross-paradies-pragen-diesen-tag-dg-20261124-dag.html"
     }
    ]
   },
@@ -231,20 +210,20 @@
      "url": "https://brightnews.online/articles/fr/les-ecoles-reintroduisent-les-aliments-autochtones-comme-la-viande-de-bison-et-l-1795652460679k37poolr1.html"
     },
     {
+     "id": "1795781889522im1v7e6is",
+     "titel": "Une communauté du Texas offre une nouvelle Kia à Gloria Kennard après 37 ans de repas de Thanksgiving",
+     "teaser": "Après 37 ans de préparation d'un repas de Thanksgiving annuel pour 2 000 personnes, Gloria Kennard a été surprise par sa communauté au Texas qui lui a offert une nouvelle voiture. Suite à la perte totale de son camion dans un accident le 29 juillet, The Bridge Ministries a lancé une collecte GoFundMe avec un objectif de 15 000 dollars....",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/une-communaute-du-texas-offre-une-nouvelle-kia-a-gloria-kennard-apres-37-ans-de-1795781889522im1v7e6is.html"
+    },
+    {
      "id": "1795738822958g4m01okgt",
      "titel": "Ezra Frech se rétablit magnifiquement après le détachement de sa prothèse lors de la finale émouvante de DWTS",
      "teaser": "Lors de la finale de Dancing With the Stars, Ezra Frech a perdu sa prothèse au milieu de sa routine freestyle avec sa partenaire de danse Daniella Karagach. Le duo dansait sur « Numb » de Linkin Park et Frech a continué sans effort sur une seule jambe, soulevant même Karagach. Karagach a ramassé la prothèse et la lui a...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/ezra-frech-se-retablit-magnifiquement-apres-le-detachement-de-sa-prothese-lors-d-1795738822958g4m01okgt.html"
-    },
-    {
-     "id": "1795738741600uz1gn0ae6",
-     "titel": "Des Texans cultivent gratuitement des terres d'autrui pour des bourses d'études d'enfants étrangers",
-     "teaser": "À Gruver, au Texas, près de mille habitants travaillent sans rémunération depuis 15 ans sur 640 hectares de terres scolaires pour financer des bourses d'études destinées à des enfants qui ne sont pas les leurs. Un ancien propriétaire terrien a légué la ferme au district scolaire de Gruver en 1984, qui l'a d'abord louée pour les fournitures scolaires. Il y...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/des-texans-cultivent-gratuitement-des-terres-d-autrui-pour-des-bourses-d-etudes-1795738741600uz1gn0ae6.html"
     }
    ],
    "dagoverzichten": [
@@ -261,13 +240,6 @@
      "categorie": null,
      "dag": "2026-11-25",
      "url": "https://brightnews.online/articles/fr/un-soutien-silencieux-et-des-langues-preservees-colorent-l-actualite-dg-20261125-dag.html"
-    },
-    {
-     "id": "dg-20261124-dag",
-     "titel": "L'amour, des percées et un paradis des morses protégé colorent cette journée",
-     "categorie": null,
-     "dag": "2026-11-24",
-     "url": "https://brightnews.online/articles/fr/l-amour-des-percees-et-un-paradis-des-morses-protege-colorent-cette-journee-dg-20261124-dag.html"
     }
    ]
   },
@@ -298,20 +270,20 @@
      "url": "https://brightnews.online/articles/es/las-escuelas-reintroducen-alimentos-indigenas-como-carne-de-bisonte-y-maiz-azul-1795652460679k37poolr1.html"
     },
     {
+     "id": "1795781889522im1v7e6is",
+     "titel": "Comunidad texana regala un nuevo Kia a Gloria Kennard tras 37 años de comidas de Acción de Gracias",
+     "teaser": "Tras 37 años cocinando una comida de Acción de Gracias para 2.000 personas cada año, la comunidad de Gloria Kennard en Texas la sorprendió con un automóvil nuevo. Después de que su camioneta sufriera pérdida total en un accidente el 29 de julio, The Bridge Ministries lanzó una campaña en GoFundMe con un objetivo de 15.000 dólares. Finalmente, 174 personas...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/comunidad-texana-regala-un-nuevo-kia-a-gloria-kennard-tras-37-anos-de-comidas-de-1795781889522im1v7e6is.html"
+    },
+    {
      "id": "1795738822958g4m01okgt",
      "titel": "Ezra Frech se recupera brillantemente tras desprenderse de la prótesis en la final emotiva de DWTS",
      "teaser": "Durante la final de Dancing With the Stars, Ezra Frech perdió su prótesis de pierna en medio de su rutina de freestyle con su pareja de baile Daniella Karagach. El dúo bailó al ritmo de «Numb» de Linkin Park y Frech continuó bailando sin esfuerzo sobre una sola pierna, incluso levantando a Karagach. Karagach recogió la prótesis y se la...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/ezra-frech-se-recupera-brillantemente-tras-desprenderse-de-la-protesis-en-la-fin-1795738822958g4m01okgt.html"
-    },
-    {
-     "id": "1795738741600uz1gn0ae6",
-     "titel": "Texanos cultivan gratis en tierra ajena para becas de hijos ajenos",
-     "teaser": "En Gruver, Texas, casi mil habitantes trabajan sin paga durante 15 años en 640 hectáreas de tierra escolar para financiar becas de estudio. Un antiguo propietario dejó la granja al distrito escolar Gruver en 1984, que inicialmente la arrendaba para cubrir gastos escolares. Hace quince años, la junta directiva decidió ampliar sus miras: vender las cosechas de maíz y trigo...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/texanos-cultivan-gratis-en-tierra-ajena-para-becas-de-hijos-ajenos-1795738741600uz1gn0ae6.html"
     }
    ],
    "dagoverzichten": [
@@ -328,13 +300,6 @@
      "categorie": null,
      "dag": "2026-11-25",
      "url": "https://brightnews.online/articles/es/el-apoyo-silencioso-y-las-lenguas-preservadas-colorean-las-noticias-dg-20261125-dag.html"
-    },
-    {
-     "id": "dg-20261124-dag",
-     "titel": "Amor, avances y un paraíso de morsas protegido colorean este día",
-     "categorie": null,
-     "dag": "2026-11-24",
-     "url": "https://brightnews.online/articles/es/amor-avances-y-un-paraiso-de-morsas-protegido-colorean-este-dia-dg-20261124-dag.html"
     }
    ]
   }
