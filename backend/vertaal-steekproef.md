@@ -531,3 +531,10 @@ De titel van het boek blijft terecht onvertaald, Darwins naam en beroep zijn cor
 **Oordeel:** niets aangetroffen.
 
 Eigennamen (PeaceCream, Youth Peace Ambassadors, Goi Peace Foundation) blijven correct staan, de titelstijl is gewone zinsstijl zoals het hoort in het Spaans, en er zijn geen feiten toegevoegd of weggelaten. De tekst loopt natuurlijk en de kop dekt het verhaal.
+
+### 2026-11-27, Engels
+
+**Artikel:** Documentaire Mission: JOY toont vriendschap tussen Dalai Lama en Tutu
+**Oordeel:** niets aangetroffen.
+
+Namen, feiten en toon komen overeen met het Nederlands; de titelstijl is voor het Engels gepast, en de tekst loopt natuurlijk.

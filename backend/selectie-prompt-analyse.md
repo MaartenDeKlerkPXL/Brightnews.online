@@ -1924,3 +1924,32 @@ Niet bright-waardig: 0. Twijfel: 1.
 - **Waarom ik twijfel:** Het voelt deels als aankondiging van een evenement dat nog moet plaatsvinden (1-4 december), en er zit een promotioneel randje aan ("presenteert PeaceCream"). Tegelijk is de kern een persoonlijk initiatief van een jongere rond een maatschappelijk thema, geen productlancering in commerciële zin. Ik zou hem laten staan, maar Eriks oordeel is hier welkom gezien de aankondigingsvorm.
 
 Alle overige artikelen beoordeel ik als bright-waardig: ze gaan over redding, herstel, gemeenschapszin of persoonlijke transformatie (auto's weggeven aan buren in nood, land teruggegeven aan Indigenous eigenaarschap, herbebossing met sinaasappelschillen, waterherstel met Kewiña-bomen, huisdieren in het zonnetje op Thanksgiving, terugkeer van inheems voedsel op schoolmenu's, Taylor Swift en Brenda Lee, de dierenarts-video, Emily's verrassing voor haar man, en het onderzoek naar peuters) zonder dat productnieuws, politiek, misdaad-als-kern, listicle-vorm of verzameleditie een rol speelt.
+
+### 2026-11-27, 11:29 Europe/Amsterdam
+
+Beoordeeld: 8 artikelen, gepubliceerd tussen 2026-11-26 12:18 en 2026-11-27 00:20.
+Niet bright-waardig: 2. Twijfel: 2.
+
+#### Mr. Feeny nam afscheid van een lege klas in Boy Meets World
+- **Gepubliceerd:** 2026-11-27 00:19 · Lifestyle · Upworthy.com
+- **Waar het over gaat:** Een terugblik op de slotscène van de sitcom Boy Meets World uit 2000, waarin het personage Mr. Feeny zijn leerlingen toespreekt en acteur William Daniels de beroemde slotzin uitspreekt.
+- **Waarom dit niet goed genoeg is:** Dit is pure entertainment-nostalgie zonder actueel nieuwsfeit, redding, herstel of maatschappelijke lading — er gebeurt niets, er wordt niemand geholpen, het is een stukje terugblik op een tv-aflevering van 25 jaar geleden. Er is te weinig inhoud om op de drie criteria te scoren; het past bij de afwijscategorie "te-weinig-inhoud".
+- **Link:** (niet opgenomen in aanlevering)
+
+#### AU en EU lanceren routekaart voor landbouw
+- **Gepubliceerd:** 2026-11-27 00:20 · Environment · Openaccessgovernment.org
+- **Waar het over gaat:** De Afrikaanse Unie en de Europese Unie presenteren een tienjarige samenwerkingsroutekaart voor onderzoek, voedselzekerheid en duurzame landbouw.
+- **Waarom dit niet goed genoeg is:** Dit is droog beleids- en instellingennieuws over een intentieverklaring tussen twee bureaucratische blokken, zonder concreet menselijk verhaal, redding of herstel. Het voelt eerder als politiek-institutioneel procesnieuws dan als iets waar een lezer warm van wordt — geen gevoel-3-materiaal, geen persoonlijke herkenbaarheid, en de kern is een plan, geen resultaat.
+- **Link:** (niet opgenomen in aanlevering)
+
+#### Twijfelgeval: Documentaire Mission: JOY toont vriendschap tussen Dalai Lama en Tutu
+- **Gepubliceerd:** 2026-11-26 12:18 · Lifestyle · GoodNewsNetwork.org
+- **Waar het over gaat:** Een artikel dat de documentaire Mission: JOY aanprijst als ideale Thanksgiving-film, over de vriendschap tussen de Dalai Lama en de overleden Desmond Tutu.
+- **Waarom ik twijfel:** De kern — vreugde en vriendschap ondanks tegenslag — is oprecht warm en relevant, maar de vorm is in feite een filmaanbeveling/recensie, dicht tegen productpromotie voor een documentaire aan. Ik zou hem laten staan omdat de inhoud (vriendschap, veerkracht) de kern vormt en niet de film zelf, maar het scheelt weinig met een reviewachtige aanprijzing; oordeel van Erik gewenst.
+
+#### Twijfelgeval: Moeder bakt allergievriendelijk Girl Scout-koekje, haalt 30 miljoen op
+- **Gepubliceerd:** 2026-11-27 00:20 · Lifestyle · Upworthy.com
+- **Waar het over gaat:** Denise Woodard richtte na de allergische noodsituatie van haar dochter het bedrijf Partake op, dat inmiddels 30 miljoen dollar aan investeringen heeft opgehaald.
+- **Waarom ik twijfel:** Het persoonlijke verhaal van een moeder die voor haar kind een oplossing zoekt is precies het soort herkenbaarheid dat BrightNews zoekt, maar de ontknoping draait om een investeringsronde en bedrijfsgroei — dat is dicht tegen "bedrijfs- of beursnieuws" aan uit de afwijslijst. Ik zou hem laten staan vanwege de sterke persoonlijke kern, maar meld het omdat het financieringsnieuws de boventoon begint te voeren; oordeel van Erik gewenst.
+
+De overige vier artikelen (gered-voedsel-initiatief in Portland, de genezen baby via St. Jude, de Texaanse boeren voor studiebeurzen, en Ezra Frech die ondanks het losraken van zijn prothese de dans afmaakt) zijn stuk voor stuk voorbeelden van redding, herstel of gemeenschapszin als kern en voldoen ruim aan de maatstaf.
