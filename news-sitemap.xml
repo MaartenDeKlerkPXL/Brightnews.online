@@ -1,6 +1,391 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://brightnews.online/articles/nl/teruggeven-aan-land-dier-en-buren-staat-centraal-dg-20261126-dag.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:21:33.880Z</news:publication_date>
+      <news:title>Teruggeven aan land, dier en buren staat centraal</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/giving-back-to-land-animals-and-neighbors-takes-center-stage-dg-20261126-dag.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:21:33.880Z</news:publication_date>
+      <news:title>Giving back to land, animals and neighbors takes center stage</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/zuruckgeben-an-land-tier-und-nachbarn-steht-im-mittelpunkt-dg-20261126-dag.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:21:33.880Z</news:publication_date>
+      <news:title>Zurückgeben an Land, Tier und Nachbarn steht im Mittelpunkt</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/redonner-a-la-terre-aux-animaux-et-aux-voisins-est-au-c-ur-de-l-actualite-dg-20261126-dag.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:21:33.880Z</news:publication_date>
+      <news:title>Redonner à la terre, aux animaux et aux voisins est au cœur de l'actualité</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/devolver-a-la-tierra-los-animales-y-los-vecinos-es-lo-central-dg-20261126-dag.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:21:33.880Z</news:publication_date>
+      <news:title>Devolver a la tierra, los animales y los vecinos es lo central</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/au-en-eu-lanceren-routekaart-voor-landbouw-1795738841998rx9tegbtd.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:20:43.770Z</news:publication_date>
+      <news:title>AU en EU lanceren routekaart voor landbouw</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/au-and-eu-launch-roadmap-for-agriculture-1795738841998rx9tegbtd.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:20:43.770Z</news:publication_date>
+      <news:title>AU and EU launch roadmap for agriculture</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/au-und-eu-prasentieren-roadmap-fur-landwirtschaft-1795738841998rx9tegbtd.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:20:43.770Z</news:publication_date>
+      <news:title>AU und EU präsentieren Roadmap für Landwirtschaft</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/au-et-ue-lancent-une-feuille-de-route-pour-l-agriculture-1795738841998rx9tegbtd.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:20:43.770Z</news:publication_date>
+      <news:title>AU et UE lancent une feuille de route pour l'agriculture</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/au-y-ue-lanzan-hoja-de-ruta-para-la-agricultura-1795738841998rx9tegbtd.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:20:43.770Z</news:publication_date>
+      <news:title>AU y UE lanzan hoja de ruta para la agricultura</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/ezra-frech-herstelt-prachtig-na-losraken-prothese-tijdens-emotionele-dwts-finale-1795738822958g4m01okgt.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:20:24.768Z</news:publication_date>
+      <news:title>Ezra Frech herstelt prachtig na losraken prothese tijdens emotionele DWTS-finale</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/ezra-frech-recovers-beautifully-after-prosthetic-comes-off-during-emotional-dwts-1795738822958g4m01okgt.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:20:24.768Z</news:publication_date>
+      <news:title>Ezra Frech recovers beautifully after prosthetic comes off during emotional DWTS finale</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/ezra-frech-meistert-emotionales-dwts-finale-meisterhaft-nach-prothesenverlust-1795738822958g4m01okgt.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:20:24.768Z</news:publication_date>
+      <news:title>Ezra Frech meistert emotionales DWTS-Finale meisterhaft nach Prothesenverlust</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/ezra-frech-se-retablit-magnifiquement-apres-le-detachement-de-sa-prothese-lors-d-1795738822958g4m01okgt.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:20:24.768Z</news:publication_date>
+      <news:title>Ezra Frech se rétablit magnifiquement après le détachement de sa prothèse lors de la finale émouvante de DWTS</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/ezra-frech-se-recupera-brillantemente-tras-desprenderse-de-la-protesis-en-la-fin-1795738822958g4m01okgt.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:20:24.768Z</news:publication_date>
+      <news:title>Ezra Frech se recupera brillantemente tras desprenderse de la prótesis en la final emotiva de DWTS</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/moeder-bakt-allergievriendelijk-girl-scout-koekje-haalt-30-miljoen-op-1795738798564stcv9igjd.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:20:00.243Z</news:publication_date>
+      <news:title>Moeder bakt allergievriendelijk Girl Scout-koekje, haalt 30 miljoen op</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/mother-bakes-allergy-friendly-girl-scout-cookie-raises-30-million-1795738798564stcv9igjd.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:20:00.243Z</news:publication_date>
+      <news:title>Mother bakes allergy-friendly Girl Scout cookie, raises 30 million</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/mutter-backt-allergievertragliches-girl-scout-keks-sammelt-30-millionen-ein-1795738798564stcv9igjd.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:20:00.243Z</news:publication_date>
+      <news:title>Mutter backt allergieverträgliches Girl Scout-Keks, sammelt 30 Millionen ein</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/mere-fabrique-des-biscuits-girl-scout-sans-allergenes-leve-30-millions-1795738798564stcv9igjd.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:20:00.243Z</news:publication_date>
+      <news:title>Mère fabrique des biscuits Girl Scout sans allergènes, lève 30 millions</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/madre-hornea-galleta-girl-scout-sin-alergenos-y-recauda-30-millones-1795738798564stcv9igjd.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:20:00.243Z</news:publication_date>
+      <news:title>Madre hornea galleta Girl Scout sin alérgenos y recauda 30 millones</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/mr-feeny-nam-afscheid-van-een-lege-klas-in-boy-meets-world-1795738765882eaxavgbet.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:19:27.552Z</news:publication_date>
+      <news:title>Mr. Feeny nam afscheid van een lege klas in Boy Meets World</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/mr-feeny-said-goodbye-to-an-empty-classroom-in-boy-meets-world-1795738765882eaxavgbet.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:19:27.552Z</news:publication_date>
+      <news:title>Mr. Feeny said goodbye to an empty classroom in Boy Meets World</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/mr-feeny-verabschiedete-sich-von-einem-leeren-klassenzimmer-in-boy-meets-world-1795738765882eaxavgbet.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:19:27.552Z</news:publication_date>
+      <news:title>Mr. Feeny verabschiedete sich von einem leeren Klassenzimmer in Boy Meets World</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/mr-feeny-a-dit-au-revoir-a-une-classe-vide-dans-boy-meets-world-1795738765882eaxavgbet.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:19:27.552Z</news:publication_date>
+      <news:title>Mr. Feeny a dit au revoir à une classe vide dans Boy Meets World</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/mr-feeny-se-despidio-de-una-clase-vacia-en-boy-meets-world-1795738765882eaxavgbet.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:19:27.552Z</news:publication_date>
+      <news:title>Mr. Feeny se despidió de una clase vacía en Boy Meets World</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/texanen-boeren-gratis-op-andermans-land-voor-studiebeurzen-van-vreemde-kinderen-1795738741600uz1gn0ae6.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:19:03.573Z</news:publication_date>
+      <news:title>Texanen boeren gratis op andermans land voor studiebeurzen van vreemde kinderen</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/texans-farm-free-on-others-land-for-scholarships-for-strangers-children-1795738741600uz1gn0ae6.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:19:03.573Z</news:publication_date>
+      <news:title>Texans farm free on others' land for scholarships for strangers' children</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/texaner-bauen-kostenlos-auf-fremdem-land-fur-stipendien-anderer-kinder-1795738741600uz1gn0ae6.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:19:03.573Z</news:publication_date>
+      <news:title>Texaner bauen kostenlos auf fremdem Land für Stipendien anderer Kinder</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/des-texans-cultivent-gratuitement-des-terres-d-autrui-pour-des-bourses-d-etudes-1795738741600uz1gn0ae6.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:19:03.573Z</news:publication_date>
+      <news:title>Des Texans cultivent gratuitement des terres d'autrui pour des bourses d'études d'enfants étrangers</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/texanos-cultivan-gratis-en-tierra-ajena-para-becas-de-hijos-ajenos-1795738741600uz1gn0ae6.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:19:03.573Z</news:publication_date>
+      <news:title>Texanos cultivan gratis en tierra ajena para becas de hijos ajenos</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/baby-geneest-van-agressieve-hersenkanker-na-studie-st-jude-children-s-hospital-1795738698231acdlyavvr.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:18:28.986Z</news:publication_date>
+      <news:title>Baby geneest van agressieve hersenkanker na studie St. Jude Children's Hospital</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/baby-recovers-from-aggressive-brain-cancer-after-st-jude-children-s-hospital-stu-1795738698231acdlyavvr.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:18:28.986Z</news:publication_date>
+      <news:title>Baby recovers from aggressive brain cancer after St. Jude Children's Hospital study</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/baby-heilt-von-aggressivem-gehirntumor-nach-studie-von-st-jude-children-s-hospit-1795738698231acdlyavvr.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:18:28.986Z</news:publication_date>
+      <news:title>Baby heilt von aggressivem Gehirntumor nach Studie von St. Jude Children's Hospital</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/un-bebe-gueri-d-un-cancer-du-cerveau-agressif-apres-etude-st-jude-children-s-hos-1795738698231acdlyavvr.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:18:28.986Z</news:publication_date>
+      <news:title>Un bébé guéri d'un cancer du cerveau agressif après étude St. Jude Children's Hospital</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/bebe-se-cura-del-cancer-cerebral-agresivo-tras-estudio-de-st-jude-children-s-hos-1795738698231acdlyavvr.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27T00:18:28.986Z</news:publication_date>
+      <news:title>Bebé se cura del cáncer cerebral agresivo tras estudio de St. Jude Children's Hospital</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://brightnews.online/articles/nl/portlandse-chefs-toveren-gered-voedsel-om-tot-volwaardige-maaltijden-1795695531276t56r84v8o.html</loc>
     <news:news>
       <news:publication>
@@ -1208,776 +1593,6 @@
       </news:publication>
       <news:publication_date>2026-11-25T00:22:09.665Z</news:publication_date>
       <news:title>Pescadores jubilados custodian las poblaciones de peces en la bahía de Gökova</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/mike-nesmith-bewijst-dat-muziek-op-televisie-werkt-1795566099215j6pqt7dj9.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:21:41.109Z</news:publication_date>
-      <news:title>Mike Nesmith bewijst dat muziek op televisie werkt</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/mike-nesmith-proves-that-music-on-television-works-1795566099215j6pqt7dj9.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:21:41.109Z</news:publication_date>
-      <news:title>Mike Nesmith proves that music on television works</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/mike-nesmith-beweist-dass-musik-im-fernsehen-funktioniert-1795566099215j6pqt7dj9.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:21:41.109Z</news:publication_date>
-      <news:title>Mike Nesmith beweist, dass Musik im Fernsehen funktioniert</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/mike-nesmith-prouve-que-la-musique-fonctionne-a-la-television-1795566099215j6pqt7dj9.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:21:41.109Z</news:publication_date>
-      <news:title>Mike Nesmith prouve que la musique fonctionne à la télévision</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/mike-nesmith-demuestra-que-la-musica-en-television-funciona-1795566099215j6pqt7dj9.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:21:41.109Z</news:publication_date>
-      <news:title>Mike Nesmith demuestra que la música en televisión funciona</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/componist-paul-williams-schreef-zowel-bankjingle-als-kermit-s-handtekeninglied-17955660740938m9j8uk54.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:21:15.838Z</news:publication_date>
-      <news:title>Componist Paul Williams schreef zowel bankjingle als Kermit's handtekeninglied</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/composer-paul-williams-wrote-both-a-bank-jingle-and-kermit-s-signature-song-17955660740938m9j8uk54.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:21:15.838Z</news:publication_date>
-      <news:title>Composer Paul Williams wrote both a bank jingle and Kermit's signature song</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/komponist-paul-williams-schrieb-sowohl-bankjingle-als-auch-kermits-erkennungslie-17955660740938m9j8uk54.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:21:15.838Z</news:publication_date>
-      <news:title>Komponist Paul Williams schrieb sowohl Bankjingle als auch Kermits Erkennungslied</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/le-compositeur-paul-williams-a-ecrit-a-la-fois-un-jingle-bancaire-et-la-chanson-17955660740938m9j8uk54.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:21:15.838Z</news:publication_date>
-      <news:title>Le compositeur Paul Williams a écrit à la fois un jingle bancaire et la chanson signature de Kermit</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/el-compositor-paul-williams-escribio-tanto-un-jingle-bancario-como-la-cancion-de-17955660740938m9j8uk54.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:21:15.838Z</news:publication_date>
-      <news:title>El compositor Paul Williams escribió tanto un jingle bancario como la canción de firma de Kermit</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/modekennis-van-rellou-ontrafelt-eeuwenoud-faberge-raadsel-1795566052703xeg6l4pgi.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:20:53.889Z</news:publication_date>
-      <news:title>Modekennis van Rellou ontrafelt eeuwenoud Fabergé-raadsel</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/fashion-expertise-of-rellou-unravels-centuries-old-faberge-mystery-1795566052703xeg6l4pgi.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:20:53.889Z</news:publication_date>
-      <news:title>Fashion expertise of Rellou unravels centuries-old Fabergé mystery</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/modekenntnis-von-rellou-entratselt-jahrhundertealtes-faberge-ratsel-1795566052703xeg6l4pgi.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:20:53.889Z</news:publication_date>
-      <news:title>Modekenntnis von Rellou enträtselt jahrhundertealtes Fabergé-Rätsel</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/les-connaissances-en-mode-de-rellou-resolvent-une-enigme-faberge-centenaire-1795566052703xeg6l4pgi.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:20:53.889Z</news:publication_date>
-      <news:title>Les connaissances en mode de Rellou résolvent une énigme Fabergé centenaire</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/el-conocimiento-de-moda-de-rellou-resuelve-un-misterio-faberge-centenario-1795566052703xeg6l4pgi.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:20:53.889Z</news:publication_date>
-      <news:title>El conocimiento de moda de Rellou resuelve un misterio Fabergé centenario</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/zee-egels-zetten-schelpen-op-als-hoedje-1795566024685fzq54bsuq.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:20:26.313Z</news:publication_date>
-      <news:title>Zee-egels zetten schelpen op als hoedje</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/sea-urchins-wear-shells-like-little-hats-1795566024685fzq54bsuq.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:20:26.313Z</news:publication_date>
-      <news:title>Sea urchins wear shells like little hats</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/seeigel-setzen-sich-muscheln-wie-ein-hutchen-auf-1795566024685fzq54bsuq.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:20:26.313Z</news:publication_date>
-      <news:title>Seeigel setzen sich Muscheln wie ein Hütchen auf</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/les-oursins-se-coiffent-de-coquilles-1795566024685fzq54bsuq.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:20:26.313Z</news:publication_date>
-      <news:title>Les oursins se coiffent de coquilles</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/los-erizos-de-mar-se-ponen-conchas-como-sombrero-1795566024685fzq54bsuq.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:20:26.313Z</news:publication_date>
-      <news:title>Los erizos de mar se ponen conchas como sombrero</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/faith-christian-academy-op-yap-accepteert-kokosnoten-als-lesgeld-17955659999337v6703uuk.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:20:01.637Z</news:publication_date>
-      <news:title>Faith Christian Academy op Yap accepteert kokosnoten als lesgeld</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/faith-christian-academy-on-yap-accepts-coconuts-as-tuition-17955659999337v6703uuk.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:20:01.637Z</news:publication_date>
-      <news:title>Faith Christian Academy on Yap accepts coconuts as tuition</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/faith-christian-academy-auf-yap-akzeptiert-kokosnusse-als-schulgeld-17955659999337v6703uuk.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:20:01.637Z</news:publication_date>
-      <news:title>Faith Christian Academy auf Yap akzeptiert Kokosnüsse als Schulgeld</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/faith-christian-academy-a-yap-accepte-les-noix-de-coco-comme-frais-de-scolarite-17955659999337v6703uuk.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:20:01.637Z</news:publication_date>
-      <news:title>Faith Christian Academy à Yap accepte les noix de coco comme frais de scolarité</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/faith-christian-academy-en-yap-acepta-cocos-como-matricula-escolar-17955659999337v6703uuk.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:20:01.637Z</news:publication_date>
-      <news:title>Faith Christian Academy en Yap acepta cocos como matrícula escolar</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/kinderbelofte-groeit-uit-tot-thanksgiving-heroes-voor-duizenden-gezinnen-1795565976734qru1um1uq.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:19:39.511Z</news:publication_date>
-      <news:title>Kinderbelofte groeit uit tot Thanksgiving Heroes voor duizenden gezinnen</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/child-s-promise-grows-into-thanksgiving-heroes-for-thousands-of-families-1795565976734qru1um1uq.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:19:39.511Z</news:publication_date>
-      <news:title>Child's promise grows into Thanksgiving Heroes for thousands of families</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/kinderversprechen-wachst-zu-thanksgiving-heroes-fur-tausende-familien-1795565976734qru1um1uq.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:19:39.511Z</news:publication_date>
-      <news:title>Kinderversprechen wächst zu Thanksgiving Heroes für tausende Familien</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/la-promesse-d-un-enfant-devient-thanksgiving-heroes-pour-des-milliers-de-famille-1795565976734qru1um1uq.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:19:39.511Z</news:publication_date>
-      <news:title>La promesse d'un enfant devient Thanksgiving Heroes pour des milliers de familles</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/la-promesa-infantil-se-convierte-en-thanksgiving-heroes-para-miles-de-familias-1795565976734qru1um1uq.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:19:39.511Z</news:publication_date>
-      <news:title>La promesa infantil se convierte en Thanksgiving Heroes para miles de familias</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/gepensioneerde-leraar-maakt-vogelvoederhuis-van-oude-muziekinstrumenten-1795565950533orf7aj8ak.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:19:12.882Z</news:publication_date>
-      <news:title>Gepensioneerde leraar maakt vogelvoederhuis van oude muziekinstrumenten</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/retired-teacher-builds-bird-feeder-from-old-musical-instruments-1795565950533orf7aj8ak.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:19:12.882Z</news:publication_date>
-      <news:title>Retired teacher builds bird feeder from old musical instruments</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/pensionierter-lehrer-baut-vogelfutterhaus-aus-alten-musikinstrumenten-1795565950533orf7aj8ak.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:19:12.882Z</news:publication_date>
-      <news:title>Pensionierter Lehrer baut Vogelfutterhaus aus alten Musikinstrumenten</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/un-professeur-retraite-fabrique-une-mangeoire-pour-oiseaux-avec-de-vieux-instrum-1795565950533orf7aj8ak.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:19:12.882Z</news:publication_date>
-      <news:title>Un professeur retraité fabrique une mangeoire pour oiseaux avec de vieux instruments de musique</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/profesor-jubilado-crea-comedero-para-pajaros-con-instrumentos-musicales-antiguos-1795565950533orf7aj8ak.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:19:12.882Z</news:publication_date>
-      <news:title>Profesor jubilado crea comedero para pájaros con instrumentos musicales antiguos</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/wolbachia-muggen-verminderen-virusinfecties-in-brazilie-1795565917891yie16z091.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:18:40.920Z</news:publication_date>
-      <news:title>Wolbachia-muggen verminderen virusinfecties in Brazilië</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/wolbachia-mosquitoes-reduce-virus-infections-in-brazil-1795565917891yie16z091.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:18:40.920Z</news:publication_date>
-      <news:title>Wolbachia mosquitoes reduce virus infections in Brazil</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/wolbachia-mucken-verringern-virusinfektionen-in-brasilien-1795565917891yie16z091.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:18:40.920Z</news:publication_date>
-      <news:title>Wolbachia-Mücken verringern Virusinfektionen in Brasilien</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/les-moustiques-wolbachia-reduisent-les-infections-virales-au-bresil-1795565917891yie16z091.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:18:40.920Z</news:publication_date>
-      <news:title>Les moustiques Wolbachia réduisent les infections virales au Brésil</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/mosquitos-wolbachia-reducen-infecciones-virales-en-brasil-1795565917891yie16z091.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T00:18:40.920Z</news:publication_date>
-      <news:title>Mosquitos Wolbachia reducen infecciones virales en Brasil</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/radiator-uitzetten-in-lege-kamer-jaagt-stookkosten-juist-omhoog-1795522898005ps518y65y.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:21:39.165Z</news:publication_date>
-      <news:title>Radiator uitzetten in lege kamer jaagt stookkosten juist omhoog</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/turning-off-radiators-in-empty-rooms-actually-increases-heating-costs-1795522898005ps518y65y.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:21:39.165Z</news:publication_date>
-      <news:title>Turning off radiators in empty rooms actually increases heating costs</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/heizkorper-in-leerem-zimmer-ausschalten-treibt-heizkosten-in-die-hohe-1795522898005ps518y65y.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:21:39.165Z</news:publication_date>
-      <news:title>Heizkörper in leerem Zimmer ausschalten treibt Heizkosten in die Höhe</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/eteindre-le-radiateur-dans-une-piece-vide-fait-monter-les-frais-de-chauffage-1795522898005ps518y65y.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:21:39.165Z</news:publication_date>
-      <news:title>Éteindre le radiateur dans une pièce vide fait monter les frais de chauffage</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/apagar-el-radiador-en-una-habitacion-vacia-aumenta-los-gastos-de-calefaccion-1795522898005ps518y65y.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:21:39.165Z</news:publication_date>
-      <news:title>Apagar el radiador en una habitación vacía aumenta los gastos de calefacción</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/spinnen-in-huis-weren-is-deze-herfst-geen-goed-idee-1795522869433tvrxfmhku.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:21:10.973Z</news:publication_date>
-      <news:title>Spinnen in huis weren is deze herfst geen goed idee</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/keeping-spiders-in-your-home-this-autumn-is-a-good-idea-1795522869433tvrxfmhku.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:21:10.973Z</news:publication_date>
-      <news:title>Keeping spiders in your home this autumn is a good idea</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/spinnen-im-haus-zu-vertreiben-ist-dieser-herbst-keine-gute-idee-1795522869433tvrxfmhku.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:21:10.973Z</news:publication_date>
-      <news:title>Spinnen im Haus zu vertreiben ist dieser Herbst keine gute Idee</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/chasser-les-araignees-de-la-maison-n-est-pas-une-bonne-idee-cet-automne-1795522869433tvrxfmhku.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:21:10.973Z</news:publication_date>
-      <news:title>Chasser les araignées de la maison n'est pas une bonne idée cet automne</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/ahuyentar-aranas-en-casa-no-es-buena-idea-este-otono-1795522869433tvrxfmhku.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:21:10.973Z</news:publication_date>
-      <news:title>Ahuyentar arañas en casa no es buena idea este otoño</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/begraven-onderbroeken-leveren-zwitserland-ig-nobelprijs-op-17955228473034xuy1d71f.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:20:49.969Z</news:publication_date>
-      <news:title>Begraven onderbroeken leveren Zwitserland Ig Nobelprijs op</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/buried-underwear-earns-switzerland-ig-nobel-prize-17955228473034xuy1d71f.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:20:49.969Z</news:publication_date>
-      <news:title>Buried underwear earns Switzerland Ig Nobel Prize</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/begrabene-unterwasche-beschert-der-schweiz-ig-nobelpreis-17955228473034xuy1d71f.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:20:49.969Z</news:publication_date>
-      <news:title>Begrabene Unterwäsche beschert der Schweiz Ig-Nobelpreis</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/des-sous-vetements-enfouis-valent-a-la-suisse-un-prix-ig-nobel-17955228473034xuy1d71f.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:20:49.969Z</news:publication_date>
-      <news:title>Des sous-vêtements enfouis valent à la Suisse un prix Ig Nobel</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/ropa-interior-enterrada-le-da-a-suiza-el-premio-ig-nobel-17955228473034xuy1d71f.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:20:49.969Z</news:publication_date>
-      <news:title>Ropa interior enterrada le da a Suiza el Premio Ig Nobel</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/79-jarige-man-leert-haarstylen-en-make-up-voor-zijn-slechtziende-vrouw-1795522813567h293qtms6.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:20:15.889Z</news:publication_date>
-      <news:title>79-jarige man leert haarstylen en make-up voor zijn slechtziende vrouw</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/79-year-old-man-learns-hairstyling-and-makeup-for-his-visually-impaired-wife-1795522813567h293qtms6.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:20:15.889Z</news:publication_date>
-      <news:title>79-year-old man learns hairstyling and makeup for his visually impaired wife</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/79-jahriger-mann-lernt-haarstyling-und-make-up-fur-seine-sehbehinderte-frau-1795522813567h293qtms6.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:20:15.889Z</news:publication_date>
-      <news:title>79-jähriger Mann lernt Haarstyling und Make-up für seine sehbehinderte Frau</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/un-homme-de-79-ans-apprend-la-coiffure-et-le-maquillage-pour-son-epouse-malvoyan-1795522813567h293qtms6.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:20:15.889Z</news:publication_date>
-      <news:title>Un homme de 79 ans apprend la coiffure et le maquillage pour son épouse malvoyante</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/hombre-de-79-anos-aprende-peinado-y-maquillaje-para-su-esposa-con-discapacidad-v-1795522813567h293qtms6.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:20:15.889Z</news:publication_date>
-      <news:title>Hombre de 79 años aprende peinado y maquillaje para su esposa con discapacidad visual</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/fred-astaire-danste-met-een-hoedenrek-alsof-het-een-partner-was-1795522788482p9zm8g23h.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:19:49.892Z</news:publication_date>
-      <news:title>Fred Astaire danste met een hoedenrek alsof het een partner was</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/fred-astaire-danced-with-a-hat-rack-as-if-it-were-a-partner-1795522788482p9zm8g23h.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:19:49.892Z</news:publication_date>
-      <news:title>Fred Astaire danced with a hat rack as if it were a partner</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/fred-astaire-tanzte-mit-einem-hutstander-wie-mit-einem-partner-1795522788482p9zm8g23h.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:19:49.892Z</news:publication_date>
-      <news:title>Fred Astaire tanzte mit einem Hutständer wie mit einem Partner</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/fred-astaire-dansa-avec-un-porte-chapeaux-comme-s-il-etait-un-partenaire-1795522788482p9zm8g23h.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:19:49.892Z</news:publication_date>
-      <news:title>Fred Astaire dansa avec un porte-chapeaux comme s'il était un partenaire</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/fred-astaire-bailo-con-un-perchero-como-si-fuera-una-pareja-1795522788482p9zm8g23h.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:19:49.892Z</news:publication_date>
-      <news:title>Fred Astaire bailó con un perchero como si fuera una pareja</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/bioloog-hoort-een-zeepok-klikken-bij-laagwater-1795522765362sxa4yoq12.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:19:27.537Z</news:publication_date>
-      <news:title>Bioloog hoort een zeepok klikken bij laagwater</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/biologist-hears-a-barnacle-click-at-low-tide-1795522765362sxa4yoq12.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:19:27.537Z</news:publication_date>
-      <news:title>Biologist hears a barnacle click at low tide</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/biologe-hort-eine-seepocke-bei-niedrigwasser-klicken-1795522765362sxa4yoq12.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:19:27.537Z</news:publication_date>
-      <news:title>Biologe hört eine Seepocke bei Niedrigwasser klicken</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/un-biologiste-entend-une-balane-claquer-a-maree-basse-1795522765362sxa4yoq12.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:19:27.537Z</news:publication_date>
-      <news:title>Un biologiste entend une balane claquer à marée basse</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/biologo-escucha-el-chasquido-de-una-balana-en-bajamar-1795522765362sxa4yoq12.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-24T12:19:27.537Z</news:publication_date>
-      <news:title>Biólogo escucha el chasquido de una balana en bajamar</news:title>
     </news:news>
   </url>
 </urlset>
