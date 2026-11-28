@@ -1,6 +1,6 @@
 {
-  "laatsteRun": "2026-11-27T10:29:07.767Z",
-  "laatsteArtikelDatum": "2026-11-27T00:20:43.770Z",
-  "aantalBeoordeeld": 8,
-  "reservefotosTabel": "| Categorie | Beschikbaar | Nodig | Tekort |\n|---|---|---|---|\n| Environment | 10 | 1 | — |\n| Finance | 4 | 0 | — |\n| Health | 5 | 1 | — |\n| Lifestyle | 9 | 3 | — |\n| Science | 11 | 0 | — |\n| Tech | 4 | 0 | — |\n| onbekend | 0 | 10 | 10 |\n\nTotaal: 15 nodig, 43 beschikbaar.\nGeleend uit een andere categorie: 10 foto's. Knelt bij onbekend (10).\nAanvullen in `assets/fallback/` als `<categorie>-<nummer>.jpg`, en daarna het getal in `RESERVE_PER_CATEGORIE` in `index.js` mee ophogen."
+  "laatsteRun": "2026-11-28T09:44:45.089Z",
+  "laatsteArtikelDatum": "2026-11-28T00:18:11.632Z",
+  "aantalBeoordeeld": 4,
+  "reservefotosTabel": "| Categorie | Beschikbaar | Nodig | Tekort |\n|---|---|---|---|\n| Environment | 10 | 1 | — |\n| Finance | 4 | 0 | — |\n| Health | 5 | 1 | — |\n| Lifestyle | 9 | 2 | — |\n| Science | 11 | 0 | — |\n| Tech | 4 | 0 | — |\n| onbekend | 0 | 11 | 11 |\n\nTotaal: 15 nodig, 43 beschikbaar.\nGeleend uit een andere categorie: 11 foto's. Knelt bij onbekend (11).\nAanvullen in `assets/fallback/` als `<categorie>-<nummer>.jpg`, en daarna het getal in `RESERVE_PER_CATEGORIE` in `index.js` mee ophogen."
 }

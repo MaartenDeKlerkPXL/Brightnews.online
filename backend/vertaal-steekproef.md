@@ -538,3 +538,10 @@ Eigennamen (PeaceCream, Youth Peace Ambassadors, Goi Peace Foundation) blijven c
 **Oordeel:** niets aangetroffen.
 
 Namen, feiten en toon komen overeen met het Nederlands; de titelstijl is voor het Engels gepast, en de tekst loopt natuurlijk.
+
+### 2026-11-28, Duits
+
+**Artikel:** Texanische Gemeinde schenkt Gloria Kennard neuen Kia nach 37 Jahren Thanksgiving-Mahlzeiten
+**Oordeel:** niets aangetroffen.
+
+Geslacht, eigennamen (Gloria Kennard, The Bridge Ministries, GoFundMe, Kia), cijfers en productnaam komen overeen met het Nederlandse origineel, de titelstijl met hoofdletters per zelfstandig naamwoord is in het Duits correct, en de tekst loopt natuurlijk.

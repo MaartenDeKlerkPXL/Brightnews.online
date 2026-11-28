@@ -1953,3 +1953,7 @@ Niet bright-waardig: 2. Twijfel: 2.
 - **Waarom ik twijfel:** Het persoonlijke verhaal van een moeder die voor haar kind een oplossing zoekt is precies het soort herkenbaarheid dat BrightNews zoekt, maar de ontknoping draait om een investeringsronde en bedrijfsgroei — dat is dicht tegen "bedrijfs- of beursnieuws" aan uit de afwijslijst. Ik zou hem laten staan vanwege de sterke persoonlijke kern, maar meld het omdat het financieringsnieuws de boventoon begint te voeren; oordeel van Erik gewenst.
 
 De overige vier artikelen (gered-voedsel-initiatief in Portland, de genezen baby via St. Jude, de Texaanse boeren voor studiebeurzen, en Ezra Frech die ondanks het losraken van zijn prothese de dans afmaakt) zijn stuk voor stuk voorbeelden van redding, herstel of gemeenschapszin als kern en voldoen ruim aan de maatstaf.
+
+### 2026-11-28, 10:44 Europe/Amsterdam
+
+Beoordeeld: 4 artikelen, gepubliceerd tussen 2026-11-27 12:18 en 2026-11-28 00:18. Niets aangetroffen: alle vier voldoen aan de maatstaf (warme, persoonlijke verhalen over gemeenschapszin, hulp en herstel, zonder product-, politiek- of verzameleditie-kenmerken).
