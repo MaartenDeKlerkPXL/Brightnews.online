@@ -1,0 +1,56 @@
+# De wekelijkse nieuwsbrief (TODO 49).
+#
+# Draait elke ochtend, maar een editie hoort bij een zaterdag: op zaterdag
+# gaan de eerste (hooguit 80) mails weg, de dagen erna de rest. Zo blijft het
+# binnen de gratis 100 mails per dag van Resend. Het script houdt in de
+# Supabase-tabel nieuwsbrief_log bij wie welke editie had, dus twee keer
+# draaien stuurt niets dubbel. Op een dag zonder werk is de run binnen
+# seconden klaar.
+#
+# 07:40 UTC = 08:40 Amsterdamse tijd in de winter, ná de welkomstreeks
+# (07:10), zodat die als eerste uit de daglimiet put.
+#
+# Zonder de secret RESEND_API_KEY doet de run niets en stopt hij groen.
+
+name: Nieuwsbrief
+
+on:
+  schedule:
+    - cron: '40 7 * * *'
+  workflow_dispatch:
+    inputs:
+      droog:
+        description: 'Droogloop: laat zien hoeveel mails er weg zouden gaan, verstuur niets'
+        type: boolean
+        default: true
+
+concurrency:
+  group: nieuwsbrief
+  cancel-in-progress: false
+
+jobs:
+  versturen:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          # 22, niet 20: zie welkomstreeks.yml (supabase-js op Node 20).
+          node-version: '22'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - name: Nieuwsbrief versturen
+        env:
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: |
+          if [ "${{ inputs.droog }}" = "true" ]; then
+            node backend/stuur-nieuwsbrief.js --droog
+          else
+            node backend/stuur-nieuwsbrief.js
+          fi
