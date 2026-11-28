@@ -1,6 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://brightnews.online/articles/nl/doorzetters-en-gulle-gemeenschappen-bepalen-het-nieuws-dg-20261127-dag.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T00:19:12.415Z</news:publication_date>
+      <news:title>Doorzetters en gulle gemeenschappen bepalen het nieuws</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/perseverance-and-generous-communities-shape-the-news-dg-20261127-dag.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T00:19:12.415Z</news:publication_date>
+      <news:title>Perseverance and generous communities shape the news</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/durchhaltevermogen-und-gro-zugige-gemeinschaften-bestimmen-die-nachrichten-dg-20261127-dag.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T00:19:12.415Z</news:publication_date>
+      <news:title>Durchhaltevermögen und großzügige Gemeinschaften bestimmen die Nachrichten</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/les-perseverants-et-les-communautes-genereuses-font-l-actualite-dg-20261127-dag.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T00:19:12.415Z</news:publication_date>
+      <news:title>Les persévérants et les communautés généreuses font l'actualité</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/los-perseverantes-y-comunidades-generosas-definen-las-noticias-del-dia-dg-20261127-dag.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T00:19:12.415Z</news:publication_date>
+      <news:title>Los perseverantes y comunidades generosas definen las noticias del día</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/nl/janis-ian-schreef-met-at-seventeen-een-lied-dat-generaties-troostte-1795825089054pe86wukr5.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T00:18:11.632Z</news:publication_date>
+      <news:title>Janis Ian schreef met At Seventeen een lied dat generaties troostte</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/janis-ian-wrote-at-seventeen-a-song-that-comforted-generations-1795825089054pe86wukr5.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T00:18:11.632Z</news:publication_date>
+      <news:title>Janis Ian wrote At Seventeen, a song that comforted generations</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/janis-ian-schrieb-mit-at-seventeen-einen-song-der-generationen-trostete-1795825089054pe86wukr5.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T00:18:11.632Z</news:publication_date>
+      <news:title>Janis Ian schrieb mit At Seventeen einen Song, der Generationen tröstete</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/janis-ian-a-ecrit-at-seventeen-une-chanson-qui-a-reconforte-des-generations-1795825089054pe86wukr5.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T00:18:11.632Z</news:publication_date>
+      <news:title>Janis Ian a écrit « At Seventeen », une chanson qui a réconforté des générations</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/janis-ian-escribio-at-seventeen-una-cancion-que-consolo-a-generaciones-1795825089054pe86wukr5.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T00:18:11.632Z</news:publication_date>
+      <news:title>Janis Ian escribió «At Seventeen», una canción que consoló a generaciones</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://brightnews.online/articles/nl/pubeigenaar-versiert-blind-jack-s-met-kerstspektakel-voor-dorpsgenoten-1795781940427q3dmliw1v.html</loc>
     <news:news>
       <news:publication>
@@ -933,226 +1043,6 @@
       </news:publication>
       <news:publication_date>2026-11-26T00:20:10.365Z</news:publication_date>
       <news:title>Cáscaras de naranja transforman tierra árida en bosque en Costa Rica</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/dierenarts-leert-miljoenen-hoe-je-een-kat-veilig-oppakt-1795652379073cyf9g6hei.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:19:40.870Z</news:publication_date>
-      <news:title>Dierenarts leert miljoenen hoe je een kat veilig oppakt</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/veterinarian-teaches-millions-how-to-safely-pick-up-a-cat-1795652379073cyf9g6hei.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:19:40.870Z</news:publication_date>
-      <news:title>Veterinarian teaches millions how to safely pick up a cat</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/tierarzt-lehrt-millionen-wie-man-eine-katze-sicher-hochnimmt-1795652379073cyf9g6hei.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:19:40.870Z</news:publication_date>
-      <news:title>Tierarzt lehrt Millionen, wie man eine Katze sicher hochnimmt</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/une-veterinaire-enseigne-a-des-millions-comment-tenir-un-chat-en-securite-1795652379073cyf9g6hei.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:19:40.870Z</news:publication_date>
-      <news:title>Une vétérinaire enseigne à des millions comment tenir un chat en sécurité</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/veterinaria-ensena-a-millones-como-sostener-un-gato-de-forma-segura-1795652379073cyf9g6hei.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:19:40.870Z</news:publication_date>
-      <news:title>Veterinaria enseña a millones cómo sostener un gato de forma segura</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/taylor-swift-verrast-brenda-lee-met-diamond-plaat-voor-kerstklassieker-1795652354430uf0y7welv.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:19:16.275Z</news:publication_date>
-      <news:title>Taylor Swift verrast Brenda Lee met Diamond-plaat voor kerstklassieker</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/taylor-swift-surprises-brenda-lee-with-diamond-award-for-christmas-classic-1795652354430uf0y7welv.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:19:16.275Z</news:publication_date>
-      <news:title>Taylor Swift surprises Brenda Lee with Diamond award for Christmas classic</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/taylor-swift-uberrascht-brenda-lee-mit-diamond-plakette-fur-weihnachtsklassiker-1795652354430uf0y7welv.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:19:16.275Z</news:publication_date>
-      <news:title>Taylor Swift überrascht Brenda Lee mit Diamond-Plakette für Weihnachtsklassiker</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/taylor-swift-surprend-brenda-lee-avec-un-disque-de-platine-diamond-pour-un-class-1795652354430uf0y7welv.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:19:16.275Z</news:publication_date>
-      <news:title>Taylor Swift surprend Brenda Lee avec un disque de platine Diamond pour un classique de Noël</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/taylor-swift-sorprende-a-brenda-lee-con-disco-de-diamante-por-clasico-navideno-1795652354430uf0y7welv.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:19:16.275Z</news:publication_date>
-      <news:title>Taylor Swift sorprende a Brenda Lee con disco de Diamante por clásico navideño</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/land-bij-first-encounter-beach-terug-naar-native-land-conservancy-1795652329742butudqwif.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:18:51.687Z</news:publication_date>
-      <news:title>Land bij First Encounter Beach terug naar Native Land Conservancy</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/land-at-first-encounter-beach-returned-to-native-land-conservancy-1795652329742butudqwif.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:18:51.687Z</news:publication_date>
-      <news:title>Land at First Encounter Beach returned to Native Land Conservancy</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/land-bei-first-encounter-beach-zuruck-an-native-land-conservancy-1795652329742butudqwif.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:18:51.687Z</news:publication_date>
-      <news:title>Land bei First Encounter Beach zurück an Native Land Conservancy</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/terre-restituee-a-la-native-land-conservancy-pres-de-first-encounter-beach-1795652329742butudqwif.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:18:51.687Z</news:publication_date>
-      <news:title>Terre restituée à la Native Land Conservancy près de First Encounter Beach</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/terreno-junto-a-first-encounter-beach-regresa-a-native-land-conservancy-1795652329742butudqwif.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:18:51.687Z</news:publication_date>
-      <news:title>Terreno junto a First Encounter Beach regresa a Native Land Conservancy</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/autogarage-uit-colleyville-geeft-auto-s-weg-aan-buren-in-nood-17956523057090xgknigiv.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:18:28.583Z</news:publication_date>
-      <news:title>Autogarage uit Colleyville geeft auto's weg aan buren in nood</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/auto-shop-in-colleyville-gives-away-cars-to-neighbors-in-need-17956523057090xgknigiv.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:18:28.583Z</news:publication_date>
-      <news:title>Auto shop in Colleyville gives away cars to neighbors in need</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/autowerkstatt-aus-colleyville-verschenkt-autos-an-bedurftige-nachbarn-17956523057090xgknigiv.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:18:28.583Z</news:publication_date>
-      <news:title>Autowerkstatt aus Colleyville verschenkt Autos an bedürftige Nachbarn</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/un-garage-automobile-de-colleyville-offre-des-voitures-aux-voisins-dans-le-besoi-17956523057090xgknigiv.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:18:28.583Z</news:publication_date>
-      <news:title>Un garage automobile de Colleyville offre des voitures aux voisins dans le besoin</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/taller-de-autos-de-colleyville-regala-vehiculos-a-vecinos-necesitados-17956523057090xgknigiv.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:18:28.583Z</news:publication_date>
-      <news:title>Taller de autos de Colleyville regala vehículos a vecinos necesitados</news:title>
     </news:news>
   </url>
 </urlset>

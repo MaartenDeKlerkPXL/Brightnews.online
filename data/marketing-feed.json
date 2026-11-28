@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-11-27T12:19:07.585Z",
+ "gegenereerd": "2026-11-28T00:19:16.322Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -30,23 +30,30 @@
      "url": "https://brightnews.online/articles/nl/scholen-brengen-inheems-voedsel-zoals-bizonvlees-en-blauwe-mais-terug-op-het-men-1795652460679k37poolr1.html"
     },
     {
+     "id": "1795825089054pe86wukr5",
+     "titel": "Janis Ian schreef met At Seventeen een lied dat generaties troostte",
+     "teaser": "Janis Ian schreef in 1975 het nummer 'At Seventeen', geïnspireerd door een artikel over een vrouw die op haar achttiende de waarheid leerde. Ian paste de leeftijd aan naar zeventien en schreef drie maanden lang aan het nummer, dat ging over het gevoel een lelijk eendje te zijn. Het lied werd nummer 1 op de Billboard Adult Contemporary chart en...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/janis-ian-schreef-met-at-seventeen-een-lied-dat-generaties-troostte-1795825089054pe86wukr5.html"
+    },
+    {
      "id": "1795781889522im1v7e6is",
      "titel": "Texaanse gemeenschap schenkt Gloria Kennard nieuwe Kia na 37 jaar Thanksgiving-maaltijden",
      "teaser": "Na 37 jaar waarin Gloria Kennard jaarlijks een Thanksgiving-maaltijd kookt voor 2.000 mensen, verraste haar gemeenschap in Texas haar met een nieuwe auto. Nadat haar truck op 29 juli total loss raakte bij een aanrijding, startte The Bridge Ministries een GoFundMe-actie met een doel van 15.000 dollar. Uiteindelijk doneerden 174 mensen samen meer dan 17.700 dollar, aangevuld met een gift...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/texaanse-gemeenschap-schenkt-gloria-kennard-nieuwe-kia-na-37-jaar-thanksgiving-m-1795781889522im1v7e6is.html"
-    },
-    {
-     "id": "1795738822958g4m01okgt",
-     "titel": "Ezra Frech herstelt prachtig na losraken prothese tijdens emotionele DWTS-finale",
-     "teaser": "Tijdens de finale van Dancing With the Stars verloor Ezra Frech midden in zijn freestyle-routine met danspartner Daniella Karagach zijn prothesebeen. Het duo danste op Linkin Park's 'Numb' en Frech danste moeiteloos door op één been, waarbij hij zelfs Karagach optilde. Karagach raapte de prothese op en gaf hem terug, waarna Frech deze weer aandeed en ze de dans samen...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/ezra-frech-herstelt-prachtig-na-losraken-prothese-tijdens-emotionele-dwts-finale-1795738822958g4m01okgt.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261127-dag",
+     "titel": "Doorzetters en gulle gemeenschappen bepalen het nieuws",
+     "categorie": null,
+     "dag": "2026-11-27",
+     "url": "https://brightnews.online/articles/nl/doorzetters-en-gulle-gemeenschappen-bepalen-het-nieuws-dg-20261127-dag.html"
+    },
     {
      "id": "dg-20261126-dag",
      "titel": "Teruggeven aan land, dier en buren staat centraal",
@@ -90,23 +97,30 @@
      "url": "https://brightnews.online/articles/en/schools-bring-indigenous-foods-like-bison-meat-and-blue-corn-back-to-menus-1795652460679k37poolr1.html"
     },
     {
+     "id": "1795825089054pe86wukr5",
+     "titel": "Janis Ian wrote At Seventeen, a song that comforted generations",
+     "teaser": "Janis Ian wrote the song 'At Seventeen' in 1975, inspired by an article about a woman who learned the truth at eighteen. Ian adjusted the age to seventeen and spent three months writing the number, which dealt with the feeling of being an ugly duckling. The song reached number 1 on the Billboard Adult Contemporary chart and number 3 on...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/janis-ian-wrote-at-seventeen-a-song-that-comforted-generations-1795825089054pe86wukr5.html"
+    },
+    {
      "id": "1795781889522im1v7e6is",
      "titel": "Texas community gifts Gloria Kennard new Kia after 37 years of Thanksgiving meals",
      "teaser": "After 37 years of cooking Thanksgiving dinner for 2,000 people annually, Gloria Kennard's Texas community surprised her with a new car. When her truck was totaled in a collision on July 29, The Bridge Ministries launched a GoFundMe campaign with a $15,000 goal. Ultimately, 174 donors contributed more than $17,700, supplemented by a $10,000 gift from Kent Moore Cabinets, totaling...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/texas-community-gifts-gloria-kennard-new-kia-after-37-years-of-thanksgiving-meal-1795781889522im1v7e6is.html"
-    },
-    {
-     "id": "1795738822958g4m01okgt",
-     "titel": "Ezra Frech recovers beautifully after prosthetic comes off during emotional DWTS finale",
-     "teaser": "During the Dancing With the Stars finale, Ezra Frech lost his prosthetic leg mid-routine while dancing with partner Daniella Karagach. The duo performed to Linkin Park's 'Numb,' and Frech seamlessly continued dancing on one leg, even lifting Karagach. Karagach retrieved the prosthetic and handed it back, allowing Frech to reattach it and finish the dance together. The performance earned a...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/ezra-frech-recovers-beautifully-after-prosthetic-comes-off-during-emotional-dwts-1795738822958g4m01okgt.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261127-dag",
+     "titel": "Perseverance and generous communities shape the news",
+     "categorie": null,
+     "dag": "2026-11-27",
+     "url": "https://brightnews.online/articles/en/perseverance-and-generous-communities-shape-the-news-dg-20261127-dag.html"
+    },
     {
      "id": "dg-20261126-dag",
      "titel": "Giving back to land, animals and neighbors takes center stage",
@@ -150,23 +164,30 @@
      "url": "https://brightnews.online/articles/de/schulen-bringen-indigene-lebensmittel-wie-bisonenfleisch-und-blauen-mais-zuruck-1795652460679k37poolr1.html"
     },
     {
+     "id": "1795825089054pe86wukr5",
+     "titel": "Janis Ian schrieb mit At Seventeen einen Song, der Generationen tröstete",
+     "teaser": "Janis Ian schrieb 1975 den Song „At Seventeen\", inspiriert durch einen Artikel über eine Frau, die mit achtzehn Jahren die Wahrheit lernte. Ian passte das Alter auf siebzehn an und arbeitete drei Monate lang an dem Lied, das vom Gefühl handelte, ein hässliches Entlein zu sein. Der Song wurde Nummer 1 in der Billboard Adult Contemporary Chart und Nummer 3...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/janis-ian-schrieb-mit-at-seventeen-einen-song-der-generationen-trostete-1795825089054pe86wukr5.html"
+    },
+    {
      "id": "1795781889522im1v7e6is",
      "titel": "Texanische Gemeinde schenkt Gloria Kennard neuen Kia nach 37 Jahren Thanksgiving-Mahlzeiten",
      "teaser": "Nach 37 Jahren, in denen Gloria Kennard jährlich eine Thanksgiving-Mahlzeit für 2.000 Menschen kocht, überraschte ihre Gemeinde in Texas sie mit einem neuen Auto. Nachdem ihr Lastwagen am 29. Juli bei einem Unfall Totalschaden erlitt, startete The Bridge Ministries eine GoFundMe-Aktion mit einem Ziel von 15.000 Dollar. Letztendlich spendeten 174 Menschen zusammen mehr als 17.700 Dollar, ergänzt durch eine Spende...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/texanische-gemeinde-schenkt-gloria-kennard-neuen-kia-nach-37-jahren-thanksgiving-1795781889522im1v7e6is.html"
-    },
-    {
-     "id": "1795738822958g4m01okgt",
-     "titel": "Ezra Frech meistert emotionales DWTS-Finale meisterhaft nach Prothesenverlust",
-     "teaser": "Im Finale von Dancing With the Stars verlor Ezra Frech während seiner Freestyle-Routine mit Tanzpartnerin Daniella Karagach mitten in der Performance sein Prothesenbein. Das Duo tanzte zu Linkin Parks »Numb« und Frech tanzte mühelos auf einem Bein weiter, wobei er Karagach sogar hochhob. Karagach hob die Prothese auf und gab sie ihm zurück, woraufhin Frech sie wieder anlegte und die...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/ezra-frech-meistert-emotionales-dwts-finale-meisterhaft-nach-prothesenverlust-1795738822958g4m01okgt.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261127-dag",
+     "titel": "Durchhaltevermögen und großzügige Gemeinschaften bestimmen die Nachrichten",
+     "categorie": null,
+     "dag": "2026-11-27",
+     "url": "https://brightnews.online/articles/de/durchhaltevermogen-und-gro-zugige-gemeinschaften-bestimmen-die-nachrichten-dg-20261127-dag.html"
+    },
     {
      "id": "dg-20261126-dag",
      "titel": "Zurückgeben an Land, Tier und Nachbarn steht im Mittelpunkt",
@@ -210,23 +231,30 @@
      "url": "https://brightnews.online/articles/fr/les-ecoles-reintroduisent-les-aliments-autochtones-comme-la-viande-de-bison-et-l-1795652460679k37poolr1.html"
     },
     {
+     "id": "1795825089054pe86wukr5",
+     "titel": "Janis Ian a écrit « At Seventeen », une chanson qui a réconforté des générations",
+     "teaser": "Janis Ian a écrit en 1975 le titre « At Seventeen », inspirée par un article sur une femme qui a découvert la vérité à dix-huit ans. Ian a adapté l'âge à dix-sept ans et a travaillé trois mois durant sur la chanson, qui parlait du sentiment d'être un vilain petit canard. La chanson a atteint la première place du...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/janis-ian-a-ecrit-at-seventeen-une-chanson-qui-a-reconforte-des-generations-1795825089054pe86wukr5.html"
+    },
+    {
      "id": "1795781889522im1v7e6is",
      "titel": "Une communauté du Texas offre une nouvelle Kia à Gloria Kennard après 37 ans de repas de Thanksgiving",
      "teaser": "Après 37 ans de préparation d'un repas de Thanksgiving annuel pour 2 000 personnes, Gloria Kennard a été surprise par sa communauté au Texas qui lui a offert une nouvelle voiture. Suite à la perte totale de son camion dans un accident le 29 juillet, The Bridge Ministries a lancé une collecte GoFundMe avec un objectif de 15 000 dollars....",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/une-communaute-du-texas-offre-une-nouvelle-kia-a-gloria-kennard-apres-37-ans-de-1795781889522im1v7e6is.html"
-    },
-    {
-     "id": "1795738822958g4m01okgt",
-     "titel": "Ezra Frech se rétablit magnifiquement après le détachement de sa prothèse lors de la finale émouvante de DWTS",
-     "teaser": "Lors de la finale de Dancing With the Stars, Ezra Frech a perdu sa prothèse au milieu de sa routine freestyle avec sa partenaire de danse Daniella Karagach. Le duo dansait sur « Numb » de Linkin Park et Frech a continué sans effort sur une seule jambe, soulevant même Karagach. Karagach a ramassé la prothèse et la lui a...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/ezra-frech-se-retablit-magnifiquement-apres-le-detachement-de-sa-prothese-lors-d-1795738822958g4m01okgt.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261127-dag",
+     "titel": "Les persévérants et les communautés généreuses font l'actualité",
+     "categorie": null,
+     "dag": "2026-11-27",
+     "url": "https://brightnews.online/articles/fr/les-perseverants-et-les-communautes-genereuses-font-l-actualite-dg-20261127-dag.html"
+    },
     {
      "id": "dg-20261126-dag",
      "titel": "Redonner à la terre, aux animaux et aux voisins est au cœur de l'actualité",
@@ -270,23 +298,30 @@
      "url": "https://brightnews.online/articles/es/las-escuelas-reintroducen-alimentos-indigenas-como-carne-de-bisonte-y-maiz-azul-1795652460679k37poolr1.html"
     },
     {
+     "id": "1795825089054pe86wukr5",
+     "titel": "Janis Ian escribió «At Seventeen», una canción que consoló a generaciones",
+     "teaser": "Janis Ian escribió en 1975 el tema «At Seventeen», inspirado por un artículo sobre una mujer que aprendió la verdad a los dieciocho años. Ian ajustó la edad a diecisiete y trabajó durante tres meses en la canción, que trataba sobre el sentimiento de ser un patito feo. La canción llegó al número 1 en la lista Billboard Adult Contemporary...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/janis-ian-escribio-at-seventeen-una-cancion-que-consolo-a-generaciones-1795825089054pe86wukr5.html"
+    },
+    {
      "id": "1795781889522im1v7e6is",
      "titel": "Comunidad texana regala un nuevo Kia a Gloria Kennard tras 37 años de comidas de Acción de Gracias",
      "teaser": "Tras 37 años cocinando una comida de Acción de Gracias para 2.000 personas cada año, la comunidad de Gloria Kennard en Texas la sorprendió con un automóvil nuevo. Después de que su camioneta sufriera pérdida total en un accidente el 29 de julio, The Bridge Ministries lanzó una campaña en GoFundMe con un objetivo de 15.000 dólares. Finalmente, 174 personas...",
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/comunidad-texana-regala-un-nuevo-kia-a-gloria-kennard-tras-37-anos-de-comidas-de-1795781889522im1v7e6is.html"
-    },
-    {
-     "id": "1795738822958g4m01okgt",
-     "titel": "Ezra Frech se recupera brillantemente tras desprenderse de la prótesis en la final emotiva de DWTS",
-     "teaser": "Durante la final de Dancing With the Stars, Ezra Frech perdió su prótesis de pierna en medio de su rutina de freestyle con su pareja de baile Daniella Karagach. El dúo bailó al ritmo de «Numb» de Linkin Park y Frech continuó bailando sin esfuerzo sobre una sola pierna, incluso levantando a Karagach. Karagach recogió la prótesis y se la...",
-     "score": 9,
-     "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/ezra-frech-se-recupera-brillantemente-tras-desprenderse-de-la-protesis-en-la-fin-1795738822958g4m01okgt.html"
     }
    ],
    "dagoverzichten": [
+    {
+     "id": "dg-20261127-dag",
+     "titel": "Los perseverantes y comunidades generosas definen las noticias del día",
+     "categorie": null,
+     "dag": "2026-11-27",
+     "url": "https://brightnews.online/articles/es/los-perseverantes-y-comunidades-generosas-definen-las-noticias-del-dia-dg-20261127-dag.html"
+    },
     {
      "id": "dg-20261126-dag",
      "titel": "Devolver a la tierra, los animales y los vecinos es lo central",

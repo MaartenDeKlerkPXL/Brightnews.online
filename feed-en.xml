@@ -6,13 +6,28 @@
         <atom:link href="https://brightnews.online/feed-en.xml" rel="self" type="application/rss+xml"/>
         <description>A fresh pick of good news from around the world, every day. Enjoy the read!</description>
         <language>en-us</language>
-        <lastBuildDate>Fri, 27 Nov 2026 12:19:02 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 28 Nov 2026 00:19:12 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Your Daily Dose of Positivity</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Perseverance and generous communities shape the news</title>
+            <link>https://brightnews.online/articles/en/perseverance-and-generous-communities-shape-the-news-dg-20261127-dag.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/perseverance-and-generous-communities-shape-the-news-dg-20261127-dag.html</guid>
+            <pubDate>Sat, 28 Nov 2026 00:19:12 GMT</pubDate>
+            <description>This day is about people who don&apos;t give up, and communities that stand by each other. From a mother who built a business after a medical scare, to a city that surprised a woman with a new car, and a dancer who finished the show despite a setback. Denise Woodard started baking after her daughter Vivienne had to go to the emergency room due to an allergic reaction. She founded Partake, finally got i</description>
+        </item>
+        <item>
+            <title>Janis Ian wrote At Seventeen, a song that comforted generations</title>
+            <link>https://brightnews.online/articles/en/janis-ian-wrote-at-seventeen-a-song-that-comforted-generations-1795825089054pe86wukr5.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/janis-ian-wrote-at-seventeen-a-song-that-comforted-generations-1795825089054pe86wukr5.html</guid>
+            <pubDate>Sat, 28 Nov 2026 00:18:11 GMT</pubDate>
+            <description>Janis Ian wrote the song &apos;At Seventeen&apos; in 1975, inspired by an article about a woman who learned the truth at eighteen. Ian adjusted the age to seventeen and spent three months writing the number, which dealt with the feeling of being an ugly duckling. The song reached number 1 on the Billboard Adult Contemporary chart and number 3 on...</description>
+            <enclosure url="https://s.w.org/images/core/emoji/17.0.2/72x72/1f914.png" type="image/jpeg" length="0"/>
+        </item>
         <item>
             <title>Pub owner decks out Blind Jack&apos;s with Christmas spectacle for villagers</title>
             <link>https://brightnews.online/articles/en/pub-owner-decks-out-blind-jack-s-with-christmas-spectacle-for-villagers-1795781940427q3dmliw1v.html</link>
@@ -230,22 +245,6 @@
             <pubDate>Wed, 25 Nov 2026 00:23:47 GMT</pubDate>
             <description>Since cursive writing disappeared from American educational standards in 2010, the ability to read it has been at risk. At Bowling Green State University, AmeriCorps volunteers are fighting back with the project &apos;Cursive for a Cause&apos;. They decipher handwritten letters, diaries and documents from the university archive, many written by women, and convert them into typed text. In this way,...</description>
             <enclosure url="https://cdn.prod.website-files.com/6ac7f2e22eaacd2873850a17/6b04b0c258e39764804b40f7_6b04b0c1208d13d06c68736f_cursive-dying-art-form-volunteers-letters-featured.webp" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Libraries offer thousands of films for free via Kanopy</title>
-            <link>https://brightnews.online/articles/en/libraries-offer-thousands-of-films-for-free-via-kanopy-179556620494695op7a4bl.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/libraries-offer-thousands-of-films-for-free-via-kanopy-179556620494695op7a4bl.html</guid>
-            <pubDate>Wed, 25 Nov 2026 00:23:26 GMT</pubDate>
-            <description>As movie tickets and streaming services become increasingly expensive, people are seeking alternatives and turning to their local library. According to Filmmaker Magazine, 30% of library loans consist of films. More and more libraries, such as Josephine Community Library in Grants Pass, Oregon, are offering members access to the streaming service Kanopy with their library card, which provides film</description>
-            <enclosure url="https://cdn.prod.website-files.com/6ac7f2e22eaacd2873850a17/6b05af711cdd28a9aca65f94_6b05af7000ebaf7a6ecb7d1c_local-libraries-streaming-costs-free-movies-featured-2.webp" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Original Avengers cast dubs film in endangered Lakota language</title>
-            <link>https://brightnews.online/articles/en/original-avengers-cast-dubs-film-in-endangered-lakota-language-1795566179018kxbizm0bj.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/original-avengers-cast-dubs-film-in-endangered-lakota-language-1795566179018kxbizm0bj.html</guid>
-            <pubDate>Wed, 25 Nov 2026 00:23:00 GMT</pubDate>
-            <description>In 2024, the actors from the original &apos;Avengers&apos; film re-recorded their roles, this time in Lakota, a critically endangered Native American language. Only 2,000 people still speak the language, a decline of 66% in ten years. The project took more than 15 months and involved 62 Lakota-Dakota speakers alongside the original cast, including Mark Ruffalo. Cyril Archambault, executive producer and...</description>
-            <enclosure url="https://cdn.prod.website-files.com/6ac7f2e22eaacd2873850a17/6b05cbccb6e6fedebdf0b15c_6b05cbcb914187ab7d91ac24_screenshot-2026-11-24-at-11-46-37-am-featured.webp" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

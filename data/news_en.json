@@ -1,5 +1,58 @@
 [
   {
+    "id": "dg-20261127-dag",
+    "type": "digest",
+    "digest_date": "2026-11-27",
+    "title": "Perseverance and generous communities shape the news",
+    "summary": "This day is about people who don't give up, and communities that stand by each other. From a mother who built a business after a medical scare, to a city that surprised a woman with a new car, and a dancer who finished the show despite a setback. Denise Woodard started baking after her daughter Vivienne had to go to the emergency room due to an allergic reaction. She founded Partake, finally got investors like the fund of Jay-Z, Rihanna and H.E.R. after 86 rejections, and ultimately raised 30 million dollars. Her cookies are now in thousands of stores. This...",
+    "image_alt": "Perseverance and generous communities shape the news",
+    "meta_description": "A day's overview full of perseverance: allergy-friendly cookies, a recovered baby, a dancer without a prosthetic and generous communities in Texas.",
+    "meta_keywords": "Lifestyle, Health",
+    "link": "",
+    "source": "BrightNews",
+    "image": null,
+    "date": "2026-11-28T00:19:12.415Z",
+    "category": null,
+    "refs": [
+      {
+        "id": "1795738798564stcv9igjd",
+        "title": "Mother bakes allergy-friendly Girl Scout cookie, raises 30 million"
+      },
+      {
+        "id": "1795781889522im1v7e6is",
+        "title": "Texas community gifts Gloria Kennard new Kia after 37 years of Thanksgiving meals"
+      },
+      {
+        "id": "1795738822958g4m01okgt",
+        "title": "Ezra Frech recovers beautifully after prosthetic comes off during emotional DWTS finale"
+      },
+      {
+        "id": "1795738741600uz1gn0ae6",
+        "title": "Texans farm free on others' land for scholarships for strangers' children"
+      },
+      {
+        "id": "1795738698231acdlyavvr",
+        "title": "Baby recovers from aggressive brain cancer after St. Jude Children's Hospital study"
+      }
+    ],
+    "slug": "perseverance-and-generous-communities-shape-the-news"
+  },
+  {
+    "id": "1795825089054pe86wukr5",
+    "title": "Janis Ian wrote At Seventeen, a song that comforted generations",
+    "summary": "Janis Ian wrote the song 'At Seventeen' in 1975, inspired by an article about a woman who learned the truth at eighteen. Ian adjusted the age to seventeen and spent three months writing the number, which dealt with the feeling of being an ugly duckling. The song reached number 1 on the Billboard Adult Contemporary chart and number 3 on...",
+    "image_alt": "Janis Ian with guitar, singer of the song At Seventeen",
+    "meta_description": "How Janis Ian's 'At Seventeen' from 1975 became a timeless hit about insecurity and recognition.",
+    "meta_keywords": "Janis Ian, At Seventeen, folk-pop, Saturday Night Live, Billboard Hot 100, music history",
+    "link": "https://www.upworthy.com/janis-ian-wrote-about-being-17-the-letters-that-came-back-told-her-who-had-been-listening/",
+    "source": "Upworthy.com",
+    "image": "https://s.w.org/images/core/emoji/17.0.2/72x72/1f914.png",
+    "date": "2026-11-28T00:18:11.632Z",
+    "category": "Lifestyle",
+    "score": 9,
+    "slug": "janis-ian-wrote-at-seventeen-a-song-that-comforted-generations"
+  },
+  {
     "id": "1795781940427q3dmliw1v",
     "title": "Pub owner decks out Blind Jack's with Christmas spectacle for villagers",
     "summary": "Christian Ogley, owner of pub Blind Jack's in the English town of Knaresborough, spent over $6,500 on a festive Christmas display to brighten the spirits of locals after a tough year marked by rising cost of living. Together with seven staff members and regular customers, he spent a week building the design, centred around a 16-foot-tall tree surrounded by red...",
@@ -2509,36 +2562,6 @@
     "slug": "atolls-bikar-and-bokak-become-new-marine-reserve"
   },
   {
-    "id": "dg-20261112-lifestyle",
-    "type": "digest",
-    "digest_date": "2026-11-12",
-    "title": "Hidden treasures and old bonds come to light",
-    "summary": "Sometimes it takes years before something hidden surfaces again. This week, three stories show how patience and chance combine to create something beautiful: a family that finds each other after decades, a neighbor who stands ready for his neighbors during a flood, and a painting that has been quietly waiting in a closet all this time. Rodney Anderson from England is 81 years old and never knew who his real father was [1]. His mother had him in 1945, after a relationship with a Canadian soldier during the war. In Canada, his cousin Bethany Allen had been searching for this...",
-    "image_alt": "Hidden treasures and old bonds come to light",
-    "meta_description": "A family secret solved after 80 years, a neighbor who rescues during a flood, and a lost O'Keeffe painting recovered.",
-    "meta_keywords": "Lifestyle",
-    "link": "",
-    "source": "BrightNews",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Left-Charles-Blackney-holding-his-Canadian-daughter-in-1942-right-Yvonne-Anderson-holding-Rodney-in-1945-credits-Dawn-Anderson.jpg",
-    "date": "2026-11-13T19:22:56.128Z",
-    "category": "Lifestyle",
-    "refs": [
-      {
-        "id": "1794597697977w9jqwal0r",
-        "title": "DNA test solves 80-year-old family secret after WWII romance"
-      },
-      {
-        "id": "1794597672167ip5gkm2wn",
-        "title": "Man rescues vulnerable neighbors from 'biblical' Florida flooding"
-      },
-      {
-        "id": "17945977229611snnbca6a",
-        "title": "Lost Georgia O'Keeffe painting rediscovered in closet"
-      }
-    ],
-    "slug": "hidden-treasures-and-old-bonds-come-to-light"
-  },
-  {
     "id": "17945977229611snnbca6a",
     "title": "Lost Georgia O'Keeffe painting rediscovered in closet",
     "summary": "A woman introducing herself as Betsy discovered an oil painting in a closet of her East Village apartment four years after a remark from her deceased aunt. It turned out to be 'Near Abiquiu, New Mexico I', painted by Georgia O'Keeffe in 1930. The work was given to the aunt in 1963 by O'Keeffe's art dealer in Manhattan as a...",
@@ -2552,35 +2575,5 @@
     "category": "Lifestyle",
     "score": 8,
     "slug": "lost-georgia-o-keeffe-painting-rediscovered-in-closet"
-  },
-  {
-    "id": "1794597697977w9jqwal0r",
-    "title": "DNA test solves 80-year-old family secret after WWII romance",
-    "summary": "Rodney Anderson (81) from England never knew who his real father was. His mother Yvonne had him in 1945 in Farnham, following a relationship with Canadian soldier Charles Blakney during World War II. In Canada, Bethany Allen had been searching since 2008 for this mysterious uncle, after discovering through divorce papers that her grandfather Blakney had fathered a child in...",
-    "image_alt": "Elderly English man looks at old family photos after discovering his Canadian roots",
-    "meta_description": "DNA test reunites 81-year-old Brit with Canadian family, 80 years after WWII romance between his mother and a Canadian soldier.",
-    "meta_keywords": "DNA test, World War II, family reunion, Ancestry, Canada, England, long-lost family",
-    "link": "https://www.goodnewsnetwork.org/canadian-family-finally-identifies-grandfathers-long-lost-wwii-baby-in-england-after-80-years/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/Left-Charles-Blackney-holding-his-Canadian-daughter-in-1942-right-Yvonne-Anderson-holding-Rodney-in-1945-credits-Dawn-Anderson.jpg",
-    "date": "2026-11-13T19:21:39.552Z",
-    "category": "Lifestyle",
-    "score": 9,
-    "slug": "dna-test-solves-80-year-old-family-secret-after-wwii-romance"
-  },
-  {
-    "id": "1794597672167ip5gkm2wn",
-    "title": "Man rescues vulnerable neighbors from 'biblical' Florida flooding",
-    "summary": "Rick Addante from Palm Bay, Florida, rescued his vulnerable neighbors during a flood he himself described as 'biblical'. On Monday, between 16 and 22 inches of rain fell in a single day, part of what is being called a 1,000-year rainfall event. Addante helped his 80-year-old neighbor Terry, who had recently undergone open-heart surgery and was struggling to breathe, from...",
-    "image_alt": "Rescue workers with airboat assist residents during flooding in Palm Bay, Florida",
-    "meta_description": "Rick Addante rescued his vulnerable neighbors during a 'biblical' flood in Palm Bay, Florida, with the help of airboats.",
-    "meta_keywords": "Florida flooding, Palm Bay, rescue operation, Rick Addante, airboat, ALS, helping neighbors",
-    "link": "https://www.goodnewsnetwork.org/update-stories-of-daring-rescues-continue-to-surface-from-flooded-florida-communities/",
-    "source": "GoodNewsNetwork.org",
-    "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/11/credit-@rickaddante-via-X.jpg",
-    "date": "2026-11-13T19:21:14.645Z",
-    "category": "Lifestyle",
-    "score": 9,
-    "slug": "man-rescues-vulnerable-neighbors-from-biblical-florida-flooding"
   }
 ]
