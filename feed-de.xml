@@ -6,13 +6,20 @@
         <atom:link href="https://brightnews.online/feed-de.xml" rel="self" type="application/rss+xml"/>
         <description>Jeden Tag eine frische Auswahl guter Nachrichten aus aller Welt. Viel Spaß beim Lesen!</description>
         <language>de-de</language>
-        <lastBuildDate>Sat, 28 Nov 2026 00:19:12 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 28 Nov 2026 12:18:20 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Deine tägliche Dosis Positivität</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Farbiges Straßenasphalt macht Verkehr sicherer</title>
+            <link>https://brightnews.online/articles/de/farbiges-stra-enasphalt-macht-verkehr-sicherer-1795868290147kmi5ltr8n.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/de/farbiges-stra-enasphalt-macht-verkehr-sicherer-1795868290147kmi5ltr8n.html</guid>
+            <pubDate>Sat, 28 Nov 2026 12:18:20 GMT</pubDate>
+            <description>Neue Studien zu amerikanischen Kreuzungen zeigen, dass farbige Straßenkunst in Kombination mit anderen Sicherheitsmaßnahmen Autofahrer sicherer fahren lässt. So sorgten farbige Zebrastreifen und Fahrradspuren für 32% weniger Autounfälle und 52% weniger Unfälle mit Fußgängern und Radfahrern. Eine der Studien fand darüber hinaus etwas Auffälliges über das Fahrverhalten von Autofahrern.</description>
+        </item>
         <item>
             <title>Durchhaltevermögen und großzügige Gemeinschaften bestimmen die Nachrichten</title>
             <link>https://brightnews.online/articles/de/durchhaltevermogen-und-gro-zugige-gemeinschaften-bestimmen-die-nachrichten-dg-20261127-dag.html</link>
@@ -237,14 +244,6 @@
             <pubDate>Wed, 25 Nov 2026 00:24:10 GMT</pubDate>
             <description>Vor fast 100 Millionen Jahren liefen Heuschrecken mit langen, dünnen Beinen möglicherweise über Wasser, ähnlich wie heutige Wasserläufer. Das zeigen wunderbar erhaltene fossile Insekten in Bernstein. Ihre Beine und Füße weisen besondere Härchen und blattförmige Fortsätze auf, die Forschern zufolge beim Gleichgewicht halfen und es ermöglichten, über die Wasseroberfläche zu gleiten, indem sie die Ob</description>
             <enclosure url="https://media.sciencenews.org/wp-content/uploads/sites/2/2026/11/112426_JB_grasshoppers_main.jpg?w=800" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Freiwillige retten jahrhundertealte Briefe mit Projekt Cursive for a Cause</title>
-            <link>https://brightnews.online/articles/de/freiwillige-retten-jahrhundertealte-briefe-mit-projekt-cursive-for-a-cause-1795566226632e672kng07.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/de/freiwillige-retten-jahrhundertealte-briefe-mit-projekt-cursive-for-a-cause-1795566226632e672kng07.html</guid>
-            <pubDate>Wed, 25 Nov 2026 00:23:47 GMT</pubDate>
-            <description>Seit die Schreibschrift 2010 aus den amerikanischen Lehrplänen verschwunden ist, droht die Fähigkeit, sie zu lesen, verloren zu gehen. An der Bowling Green State University setzen sich AmeriCorps-Freiwillige mit dem Projekt „Cursive for a Cause&quot; dagegen ein. Sie entziffern handgeschriebene Briefe, Tagebücher und Dokumente aus dem Universitätsarchiv, überwiegend von Frauen verfasst, und wandeln die</description>
-            <enclosure url="https://cdn.prod.website-files.com/6ac7f2e22eaacd2873850a17/6b04b0c258e39764804b40f7_6b04b0c1208d13d06c68736f_cursive-dying-art-form-volunteers-letters-featured.webp" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

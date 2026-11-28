@@ -1,5 +1,41 @@
 [
  {
+  "datum": "2026-11-28T12:17:45.509Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "Your Positive Weekly Horoscope: ‘Free Will Astrology’ by Rob Brezsny",
+  "uitsluiting": "listicle",
+  "gevoel": 0,
+  "formulering": 0,
+  "relevantie": 0,
+  "totaal": 0,
+  "besluit": "nee",
+  "reden": "Horoscopen vallen onder de afwijslijst als zelfhulp-clickbait zonder echt verhaal."
+ },
+ {
+  "datum": "2026-11-28T12:17:45.509Z",
+  "bron": "GoodNewsNetwork.org",
+  "titel": "Asphalt Artworks Are Making People Drive More Safely, New Studies Find",
+  "uitsluiting": "geen",
+  "gevoel": 3,
+  "formulering": 3,
+  "relevantie": 3,
+  "totaal": 9,
+  "besluit": "ja",
+  "reden": "Onderzoek toont aan dat kunstzinnige veiligheidsmaatregelen levens redden — hartverwarmend, positief geformuleerd en maatschappelijk relevant."
+ },
+ {
+  "datum": "2026-11-28T12:17:45.509Z",
+  "bron": "Positivr.fr",
+  "titel": "Quel est le type de chauffage le moins coûteux en 2026 ?",
+  "uitsluiting": "geen",
+  "gevoel": 1,
+  "formulering": 1,
+  "relevantie": 2,
+  "totaal": 4,
+  "besluit": "nee",
+  "reden": "Technisch artikel over verwarmingsopties zonder verhaal; informatie is nuttig maar niet positief geformuleerd en voelt vlak en afstandelijk aan."
+ },
+ {
   "datum": "2026-11-28T00:17:47.566Z",
   "bron": "Upworthy.com",
   "titel": "People once needed the pope’s permission to put butter in this beloved Christmas bread",
@@ -3562,41 +3598,5 @@
   "totaal": 0,
   "besluit": "nee",
   "reden": "Tekst is onvolledig en bevat alleen een kop en 'READ'-link zonder werkelijke inhoud."
- },
- {
-  "datum": "2026-11-19T14:46:21.136Z",
-  "bron": "MyModernMet.com",
-  "titel": "Study Reveals That Your Cat Isn’t Just Meowing for Fun, They Want You To Fix Their Problems",
-  "uitsluiting": "te-weinig-inhoud",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Tekst is onvolledig en bevat alleen een kop en 'READ'-link zonder werkelijke inhoud."
- },
- {
-  "datum": "2026-11-19T14:46:29.862Z",
-  "bron": "MyModernMet.com",
-  "titel": "Claude Monet’s ‘Iris’ Sells for Record-Breaking $56.2M at Sotheby’s Paris Auction",
-  "uitsluiting": "productnieuws",
-  "gevoel": 0,
-  "formulering": 0,
-  "relevantie": 0,
-  "totaal": 0,
-  "besluit": "nee",
-  "reden": "Dit is een veilingbericht over een kunstverkoop zonder maatschappelijke betekenis of persoonlijke relevantie voor lezers."
- },
- {
-  "datum": "2026-11-19T14:46:29.862Z",
-  "bron": "MyModernMet.com",
-  "titel": "Stencil and Hand Letter Your Way To Happier Holiday Cards",
-  "uitsluiting": "geen",
-  "gevoel": 2,
-  "formulering": 3,
-  "relevantie": 2,
-  "totaal": 7,
-  "besluit": "nee",
-  "reden": "Positief, praktisch DIY-advies dat lezers inspireert tot creatieve activiteit met familie; warm en toegankelijk geformuleerd."
  }
 ]

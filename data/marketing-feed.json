@@ -1,5 +1,5 @@
 {
- "gegenereerd": "2026-11-28T00:19:16.322Z",
+ "gegenereerd": "2026-11-28T12:18:24.937Z",
  "site": "https://brightnews.online",
  "toelichting": "Input voor de marketing-agent: beste artikelen (score ≥ 8) en dagoverzichten van de afgelopen 48 uur, per taal, met kant-en-klare links.",
  "perTaal": {
@@ -14,20 +14,12 @@
      "url": "https://brightnews.online/articles/nl/moeder-bakt-allergievriendelijk-girl-scout-koekje-haalt-30-miljoen-op-1795738798564stcv9igjd.html"
     },
     {
-     "id": "17956524933953v7n50s8k",
-     "titel": "Inheemse vrouwen herstellen waterbronnen met Kewiña-bomen in Bolivia",
-     "teaser": "In Bolivia's Tunari-gebergte is nog maar 10% van de oorspronkelijke Kewiña-bossen (Polylepis) over, door houtkap, stadsuitbreiding en kleinschalige landbouw. Deze inheemse bomen creëren microklimaten die water leveren, in tegenstelling tot uitheemse soorten zoals pijnbomen en eucalyptus, die grondwater uitputten en in de jaren zestig voor conflicten met gemeenschappen zorgden. Sinds 2022 helpt de Boliviaanse organisatie Faunagua zes Quechua-gemeenschappen, waaronder Chiaraje,...",
-     "score": 10,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/nl/inheemse-vrouwen-herstellen-waterbronnen-met-kewina-bomen-in-bolivia-17956524933953v7n50s8k.html"
-    },
-    {
-     "id": "1795652460679k37poolr1",
-     "titel": "Scholen brengen inheems voedsel zoals bizonvlees en blauwe maïs terug op het menu",
-     "teaser": "Scholen en tribale gemeenschappen in de VS werken samen om inheemse voedingsmiddelen terug te brengen in schoolkantines. Lisa Ansell Frazier richtte in 2018 het Buffalo Youth Nation Project op om voedselsoevereiniteit en toegang tot inheemse voedingsmiddelen te versterken. Haar organisatie teelt blauwe Hopi-maïs, Huckleberry Gold aardappelen en Jeruzalem-artisjokken op de Mitákuye Ówahe Farm in Wyoming en levert deze aan scholen...",
-     "score": 10,
+     "id": "1795868290147kmi5ltr8n",
+     "titel": "Kleurrijk wegasfalt maakt verkeer veiliger",
+     "teaser": "Nieuwe studies naar Amerikaanse kruispunten tonen aan dat kleurrijke wegkunst, gecombineerd met andere veiligheidsmaatregelen, automobilisten veiliger laat rijden. Zo zorgden kleurrijke zebrapaden en fietsstroken voor 32% minder auto-ongelukken en 52% minder ongevallen waarbij voetgangers en fietsers betrokken waren. Een van de studies vond daarnaast iets opvallends over het rijgedrag van automobilisten.",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/nl/scholen-brengen-inheems-voedsel-zoals-bizonvlees-en-blauwe-mais-terug-op-het-men-1795652460679k37poolr1.html"
+     "url": "https://brightnews.online/articles/nl/kleurrijk-wegasfalt-maakt-verkeer-veiliger-1795868290147kmi5ltr8n.html"
     },
     {
      "id": "1795825089054pe86wukr5",
@@ -44,6 +36,14 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/nl/texaanse-gemeenschap-schenkt-gloria-kennard-nieuwe-kia-na-37-jaar-thanksgiving-m-1795781889522im1v7e6is.html"
+    },
+    {
+     "id": "1795738822958g4m01okgt",
+     "titel": "Ezra Frech herstelt prachtig na losraken prothese tijdens emotionele DWTS-finale",
+     "teaser": "Tijdens de finale van Dancing With the Stars verloor Ezra Frech midden in zijn freestyle-routine met danspartner Daniella Karagach zijn prothesebeen. Het duo danste op Linkin Park's 'Numb' en Frech danste moeiteloos door op één been, waarbij hij zelfs Karagach optilde. Karagach raapte de prothese op en gaf hem terug, waarna Frech deze weer aandeed en ze de dans samen...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/nl/ezra-frech-herstelt-prachtig-na-losraken-prothese-tijdens-emotionele-dwts-finale-1795738822958g4m01okgt.html"
     }
    ],
    "dagoverzichten": [
@@ -60,13 +60,6 @@
      "categorie": null,
      "dag": "2026-11-26",
      "url": "https://brightnews.online/articles/nl/teruggeven-aan-land-dier-en-buren-staat-centraal-dg-20261126-dag.html"
-    },
-    {
-     "id": "dg-20261125-dag",
-     "titel": "Stille steun en bewaarde talen kleuren het nieuws",
-     "categorie": null,
-     "dag": "2026-11-25",
-     "url": "https://brightnews.online/articles/nl/stille-steun-en-bewaarde-talen-kleuren-het-nieuws-dg-20261125-dag.html"
     }
    ]
   },
@@ -81,20 +74,12 @@
      "url": "https://brightnews.online/articles/en/mother-bakes-allergy-friendly-girl-scout-cookie-raises-30-million-1795738798564stcv9igjd.html"
     },
     {
-     "id": "17956524933953v7n50s8k",
-     "titel": "Indigenous women restore water sources with Kewiña trees in Bolivia",
-     "teaser": "In Bolivia's Tunari mountains, only 10% of the original Kewiña forests (Polylepis) remain, due to logging, urban expansion and small-scale agriculture. These indigenous trees create microclimates that provide water, unlike exotic species such as pine and eucalyptus, which deplete groundwater and caused conflicts with communities in the 1960s. Since 2022, the Bolivian organization Faunagua has been helping six Quechua communities,...",
-     "score": 10,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/en/indigenous-women-restore-water-sources-with-kewina-trees-in-bolivia-17956524933953v7n50s8k.html"
-    },
-    {
-     "id": "1795652460679k37poolr1",
-     "titel": "Schools bring indigenous foods like bison meat and blue corn back to menus",
-     "teaser": "Schools and tribal communities across the US are working together to reintroduce indigenous foods into school cafeterias. Lisa Ansell Frazier founded the Buffalo Youth Nation Project in 2018 to strengthen food sovereignty and access to indigenous foods. Her organization grows blue Hopi corn, Huckleberry Gold potatoes and Jerusalem artichokes at the Mitákuye Ówahe Farm in Wyoming and supplies these to...",
-     "score": 10,
+     "id": "1795868290147kmi5ltr8n",
+     "titel": "Colorful road asphalt makes traffic safer",
+     "teaser": "New studies of American intersections show that colorful road art, combined with other safety measures, helps motorists drive more safely. Colorful crosswalks and bike lanes resulted in 32% fewer car accidents and 52% fewer accidents involving pedestrians and cyclists. One of the studies also found something striking about driver behavior.",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/en/schools-bring-indigenous-foods-like-bison-meat-and-blue-corn-back-to-menus-1795652460679k37poolr1.html"
+     "url": "https://brightnews.online/articles/en/colorful-road-asphalt-makes-traffic-safer-1795868290147kmi5ltr8n.html"
     },
     {
      "id": "1795825089054pe86wukr5",
@@ -111,6 +96,14 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/en/texas-community-gifts-gloria-kennard-new-kia-after-37-years-of-thanksgiving-meal-1795781889522im1v7e6is.html"
+    },
+    {
+     "id": "1795738822958g4m01okgt",
+     "titel": "Ezra Frech recovers beautifully after prosthetic comes off during emotional DWTS finale",
+     "teaser": "During the Dancing With the Stars finale, Ezra Frech lost his prosthetic leg mid-routine while dancing with partner Daniella Karagach. The duo performed to Linkin Park's 'Numb,' and Frech seamlessly continued dancing on one leg, even lifting Karagach. Karagach retrieved the prosthetic and handed it back, allowing Frech to reattach it and finish the dance together. The performance earned a...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/en/ezra-frech-recovers-beautifully-after-prosthetic-comes-off-during-emotional-dwts-1795738822958g4m01okgt.html"
     }
    ],
    "dagoverzichten": [
@@ -127,13 +120,6 @@
      "categorie": null,
      "dag": "2026-11-26",
      "url": "https://brightnews.online/articles/en/giving-back-to-land-animals-and-neighbors-takes-center-stage-dg-20261126-dag.html"
-    },
-    {
-     "id": "dg-20261125-dag",
-     "titel": "Silent support and preserved languages color the news",
-     "categorie": null,
-     "dag": "2026-11-25",
-     "url": "https://brightnews.online/articles/en/silent-support-and-preserved-languages-color-the-news-dg-20261125-dag.html"
     }
    ]
   },
@@ -148,20 +134,12 @@
      "url": "https://brightnews.online/articles/de/mutter-backt-allergievertragliches-girl-scout-keks-sammelt-30-millionen-ein-1795738798564stcv9igjd.html"
     },
     {
-     "id": "17956524933953v7n50s8k",
-     "titel": "Indigene Frauen stellen Wasserquellen mit Kewiña-Bäumen in Bolivien wieder her",
-     "teaser": "Im Tunari-Gebirge Boliviens sind noch etwa 10% der ursprünglichen Kewiña-Wälder (Polylepis) vorhanden, der Rest wurde durch Holzeinschlag, Stadtexpansion und kleinflächige Landwirtschaft zerstört. Diese indigenen Bäume schaffen Mikroklimate, die Wasser liefern, im Gegensatz zu nicht heimischen Arten wie Kiefern und Eukalyptus, die das Grundwasser erschöpfen und in den 1960er Jahren zu Konflikten mit Gemeinden führten. Seit 2022 unterstützt die bolivianische Organisation...",
-     "score": 10,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/de/indigene-frauen-stellen-wasserquellen-mit-kewina-baumen-in-bolivien-wieder-her-17956524933953v7n50s8k.html"
-    },
-    {
-     "id": "1795652460679k37poolr1",
-     "titel": "Schulen bringen indigene Lebensmittel wie Bisonenfleisch und blauen Mais zurück auf den Speiseplan",
-     "teaser": "Schulen und Stammesgemeinschaften in den USA arbeiten zusammen, um indigene Lebensmittel in Schulkantinen zurückzubringen. Lisa Ansell Frazier gründete 2018 das Buffalo Youth Nation Project, um Lebensmittelsouveränität und Zugang zu indigenen Lebensmitteln zu stärken. Ihre Organisation baut blauen Hopi-Mais, Huckleberry Gold Kartoffeln und Jerusalemartischocken auf der Mitákuye Ówahe Farm in Wyoming an und liefert diese an Schulen in der Wind River...",
-     "score": 10,
+     "id": "1795868290147kmi5ltr8n",
+     "titel": "Farbiges Straßenasphalt macht Verkehr sicherer",
+     "teaser": "Neue Studien zu amerikanischen Kreuzungen zeigen, dass farbige Straßenkunst in Kombination mit anderen Sicherheitsmaßnahmen Autofahrer sicherer fahren lässt. So sorgten farbige Zebrastreifen und Fahrradspuren für 32% weniger Autounfälle und 52% weniger Unfälle mit Fußgängern und Radfahrern. Eine der Studien fand darüber hinaus etwas Auffälliges über das Fahrverhalten von Autofahrern.",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/de/schulen-bringen-indigene-lebensmittel-wie-bisonenfleisch-und-blauen-mais-zuruck-1795652460679k37poolr1.html"
+     "url": "https://brightnews.online/articles/de/farbiges-stra-enasphalt-macht-verkehr-sicherer-1795868290147kmi5ltr8n.html"
     },
     {
      "id": "1795825089054pe86wukr5",
@@ -178,6 +156,14 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/de/texanische-gemeinde-schenkt-gloria-kennard-neuen-kia-nach-37-jahren-thanksgiving-1795781889522im1v7e6is.html"
+    },
+    {
+     "id": "1795738822958g4m01okgt",
+     "titel": "Ezra Frech meistert emotionales DWTS-Finale meisterhaft nach Prothesenverlust",
+     "teaser": "Im Finale von Dancing With the Stars verlor Ezra Frech während seiner Freestyle-Routine mit Tanzpartnerin Daniella Karagach mitten in der Performance sein Prothesenbein. Das Duo tanzte zu Linkin Parks »Numb« und Frech tanzte mühelos auf einem Bein weiter, wobei er Karagach sogar hochhob. Karagach hob die Prothese auf und gab sie ihm zurück, woraufhin Frech sie wieder anlegte und die...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/de/ezra-frech-meistert-emotionales-dwts-finale-meisterhaft-nach-prothesenverlust-1795738822958g4m01okgt.html"
     }
    ],
    "dagoverzichten": [
@@ -194,13 +180,6 @@
      "categorie": null,
      "dag": "2026-11-26",
      "url": "https://brightnews.online/articles/de/zuruckgeben-an-land-tier-und-nachbarn-steht-im-mittelpunkt-dg-20261126-dag.html"
-    },
-    {
-     "id": "dg-20261125-dag",
-     "titel": "Stille Unterstützung und bewahrte Sprachen prägen die Nachrichten",
-     "categorie": null,
-     "dag": "2026-11-25",
-     "url": "https://brightnews.online/articles/de/stille-unterstutzung-und-bewahrte-sprachen-pragen-die-nachrichten-dg-20261125-dag.html"
     }
    ]
   },
@@ -215,20 +194,12 @@
      "url": "https://brightnews.online/articles/fr/mere-fabrique-des-biscuits-girl-scout-sans-allergenes-leve-30-millions-1795738798564stcv9igjd.html"
     },
     {
-     "id": "17956524933953v7n50s8k",
-     "titel": "Des femmes autochtones restaurent les sources d'eau avec des arbres Kewiña en Bolivie",
-     "teaser": "En Bolivie, dans la chaîne de montagnes Tunari, il ne reste que 10 % des forêts de Kewiña originales (Polylepis), en raison de l'exploitation forestière, de l'expansion urbaine et de l'agriculture à petite échelle. Ces arbres autochtones créent des microclimats qui fournissent de l'eau, contrairement aux espèces exotiques comme les pins et les eucalyptus, qui épuisent les eaux souterraines et...",
-     "score": 10,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/fr/des-femmes-autochtones-restaurent-les-sources-d-eau-avec-des-arbres-kewina-en-bo-17956524933953v7n50s8k.html"
-    },
-    {
-     "id": "1795652460679k37poolr1",
-     "titel": "Les écoles réintroduisent les aliments autochtones comme la viande de bison et le maïs bleu au menu",
-     "teaser": "Des écoles et des communautés tribales aux États-Unis collaborent pour réintroduire les aliments autochtones dans les cantines scolaires. Lisa Ansell Frazier a fondé le Buffalo Youth Nation Project en 2018 pour renforcer la souveraineté alimentaire et l'accès aux aliments autochtones. Son organisation cultive le maïs bleu Hopi, les pommes de terre Huckleberry Gold et les topinambours sur la ferme Mitákuye...",
-     "score": 10,
+     "id": "1795868290147kmi5ltr8n",
+     "titel": "L'asphalte coloré rend la circulation plus sûre",
+     "teaser": "De nouvelles études menées sur des carrefours américains montrent que l'art routier coloré, combiné à d'autres mesures de sécurité, permet aux automobilistes de circuler plus en sécurité. Ainsi, les passages pour piétons colorés et les pistes cyclables colorées ont entraîné une réduction de 32 % des accidents automobiles et de 52 % des accidents impliquant des piétons et des cyclistes....",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/fr/les-ecoles-reintroduisent-les-aliments-autochtones-comme-la-viande-de-bison-et-l-1795652460679k37poolr1.html"
+     "url": "https://brightnews.online/articles/fr/l-asphalte-colore-rend-la-circulation-plus-sure-1795868290147kmi5ltr8n.html"
     },
     {
      "id": "1795825089054pe86wukr5",
@@ -245,6 +216,14 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/fr/une-communaute-du-texas-offre-une-nouvelle-kia-a-gloria-kennard-apres-37-ans-de-1795781889522im1v7e6is.html"
+    },
+    {
+     "id": "1795738822958g4m01okgt",
+     "titel": "Ezra Frech se rétablit magnifiquement après le détachement de sa prothèse lors de la finale émouvante de DWTS",
+     "teaser": "Lors de la finale de Dancing With the Stars, Ezra Frech a perdu sa prothèse au milieu de sa routine freestyle avec sa partenaire de danse Daniella Karagach. Le duo dansait sur « Numb » de Linkin Park et Frech a continué sans effort sur une seule jambe, soulevant même Karagach. Karagach a ramassé la prothèse et la lui a...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/fr/ezra-frech-se-retablit-magnifiquement-apres-le-detachement-de-sa-prothese-lors-d-1795738822958g4m01okgt.html"
     }
    ],
    "dagoverzichten": [
@@ -261,13 +240,6 @@
      "categorie": null,
      "dag": "2026-11-26",
      "url": "https://brightnews.online/articles/fr/redonner-a-la-terre-aux-animaux-et-aux-voisins-est-au-c-ur-de-l-actualite-dg-20261126-dag.html"
-    },
-    {
-     "id": "dg-20261125-dag",
-     "titel": "Un soutien silencieux et des langues préservées colorent l'actualité",
-     "categorie": null,
-     "dag": "2026-11-25",
-     "url": "https://brightnews.online/articles/fr/un-soutien-silencieux-et-des-langues-preservees-colorent-l-actualite-dg-20261125-dag.html"
     }
    ]
   },
@@ -282,20 +254,12 @@
      "url": "https://brightnews.online/articles/es/madre-hornea-galleta-girl-scout-sin-alergenos-y-recauda-30-millones-1795738798564stcv9igjd.html"
     },
     {
-     "id": "17956524933953v7n50s8k",
-     "titel": "Mujeres indígenas restauran fuentes de agua con árboles Kewiña en Bolivia",
-     "teaser": "En la cordillera Tunari de Bolivia solo queda el 10% de los bosques originales de Kewiña (Polylepis), debido a la tala, la expansión urbana y la agricultura a pequeña escala. Estos árboles indígenas crean microclimas que suministran agua, a diferencia de especies exóticas como pinos y eucaliptos, que agotan el agua subterránea y causaron conflictos con comunidades en los años...",
-     "score": 10,
-     "categorie": "Environment",
-     "url": "https://brightnews.online/articles/es/mujeres-indigenas-restauran-fuentes-de-agua-con-arboles-kewina-en-bolivia-17956524933953v7n50s8k.html"
-    },
-    {
-     "id": "1795652460679k37poolr1",
-     "titel": "Las escuelas reintroducen alimentos indígenas como carne de bisonte y maíz azul en el menú",
-     "teaser": "Las escuelas y comunidades tribales en Estados Unidos colaboran para reintroducir alimentos indígenas en las cafeterías escolares. Lisa Ansell Frazier fundó en 2018 el Buffalo Youth Nation Project para fortalecer la soberanía alimentaria y el acceso a alimentos indígenas. Su organización cultiva maíz azul Hopi, papas Huckleberry Gold y alcachofas de Jerusalén en la granja Mitákuye Ówahe en Wyoming y...",
-     "score": 10,
+     "id": "1795868290147kmi5ltr8n",
+     "titel": "El asfalto colorido hace el tráfico más seguro",
+     "teaser": "Nuevos estudios sobre cruces estadounidenses demuestran que el arte vial colorido, combinado con otras medidas de seguridad, permite que los automovilistas conduzcan de manera más segura. Los pasos de peatones y carriles para bicicletas coloridos redujeron los accidentes automovilísticos en un 32% y los accidentes que involucraban a peatones y ciclistas en un 52%. Uno de los estudios encontró además...",
+     "score": 9,
      "categorie": "Lifestyle",
-     "url": "https://brightnews.online/articles/es/las-escuelas-reintroducen-alimentos-indigenas-como-carne-de-bisonte-y-maiz-azul-1795652460679k37poolr1.html"
+     "url": "https://brightnews.online/articles/es/el-asfalto-colorido-hace-el-trafico-mas-seguro-1795868290147kmi5ltr8n.html"
     },
     {
      "id": "1795825089054pe86wukr5",
@@ -312,6 +276,14 @@
      "score": 9,
      "categorie": "Lifestyle",
      "url": "https://brightnews.online/articles/es/comunidad-texana-regala-un-nuevo-kia-a-gloria-kennard-tras-37-anos-de-comidas-de-1795781889522im1v7e6is.html"
+    },
+    {
+     "id": "1795738822958g4m01okgt",
+     "titel": "Ezra Frech se recupera brillantemente tras desprenderse de la prótesis en la final emotiva de DWTS",
+     "teaser": "Durante la final de Dancing With the Stars, Ezra Frech perdió su prótesis de pierna en medio de su rutina de freestyle con su pareja de baile Daniella Karagach. El dúo bailó al ritmo de «Numb» de Linkin Park y Frech continuó bailando sin esfuerzo sobre una sola pierna, incluso levantando a Karagach. Karagach recogió la prótesis y se la...",
+     "score": 9,
+     "categorie": "Lifestyle",
+     "url": "https://brightnews.online/articles/es/ezra-frech-se-recupera-brillantemente-tras-desprenderse-de-la-protesis-en-la-fin-1795738822958g4m01okgt.html"
     }
    ],
    "dagoverzichten": [
@@ -328,13 +300,6 @@
      "categorie": null,
      "dag": "2026-11-26",
      "url": "https://brightnews.online/articles/es/devolver-a-la-tierra-los-animales-y-los-vecinos-es-lo-central-dg-20261126-dag.html"
-    },
-    {
-     "id": "dg-20261125-dag",
-     "titel": "El apoyo silencioso y las lenguas preservadas colorean las noticias",
-     "categorie": null,
-     "dag": "2026-11-25",
-     "url": "https://brightnews.online/articles/es/el-apoyo-silencioso-y-las-lenguas-preservadas-colorean-las-noticias-dg-20261125-dag.html"
     }
    ]
   }

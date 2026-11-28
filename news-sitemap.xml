@@ -1,6 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://brightnews.online/articles/nl/kleurrijk-wegasfalt-maakt-verkeer-veiliger-1795868290147kmi5ltr8n.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>nl</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T12:18:20.905Z</news:publication_date>
+      <news:title>Kleurrijk wegasfalt maakt verkeer veiliger</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/en/colorful-road-asphalt-makes-traffic-safer-1795868290147kmi5ltr8n.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T12:18:20.905Z</news:publication_date>
+      <news:title>Colorful road asphalt makes traffic safer</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/de/farbiges-stra-enasphalt-macht-verkehr-sicherer-1795868290147kmi5ltr8n.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>de</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T12:18:20.905Z</news:publication_date>
+      <news:title>Farbiges Straßenasphalt macht Verkehr sicherer</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/fr/l-asphalte-colore-rend-la-circulation-plus-sure-1795868290147kmi5ltr8n.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>fr</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T12:18:20.905Z</news:publication_date>
+      <news:title>L'asphalte coloré rend la circulation plus sûre</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://brightnews.online/articles/es/el-asfalto-colorido-hace-el-trafico-mas-seguro-1795868290147kmi5ltr8n.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>BrightNews</news:name>
+        <news:language>es</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28T12:18:20.905Z</news:publication_date>
+      <news:title>El asfalto colorido hace el tráfico más seguro</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://brightnews.online/articles/nl/doorzetters-en-gulle-gemeenschappen-bepalen-het-nieuws-dg-20261127-dag.html</loc>
     <news:news>
       <news:publication>
@@ -768,281 +823,6 @@
       </news:publication>
       <news:publication_date>2026-11-26T12:18:29.030Z</news:publication_date>
       <news:title>Documental Mission: JOY muestra la amistad entre el Dalái Lama y Tutu</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/stille-steun-en-bewaarde-talen-kleuren-het-nieuws-dg-20261125-dag.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:22:50.294Z</news:publication_date>
-      <news:title>Stille steun en bewaarde talen kleuren het nieuws</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/silent-support-and-preserved-languages-color-the-news-dg-20261125-dag.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:22:50.294Z</news:publication_date>
-      <news:title>Silent support and preserved languages color the news</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/stille-unterstutzung-und-bewahrte-sprachen-pragen-die-nachrichten-dg-20261125-dag.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:22:50.294Z</news:publication_date>
-      <news:title>Stille Unterstützung und bewahrte Sprachen prägen die Nachrichten</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/un-soutien-silencieux-et-des-langues-preservees-colorent-l-actualite-dg-20261125-dag.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:22:50.294Z</news:publication_date>
-      <news:title>Un soutien silencieux et des langues préservées colorent l'actualité</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/el-apoyo-silencioso-y-las-lenguas-preservadas-colorean-las-noticias-dg-20261125-dag.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:22:50.294Z</news:publication_date>
-      <news:title>El apoyo silencioso y las lenguas preservadas colorean las noticias</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/inheemse-vrouwen-herstellen-waterbronnen-met-kewina-bomen-in-bolivia-17956524933953v7n50s8k.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:21:35.774Z</news:publication_date>
-      <news:title>Inheemse vrouwen herstellen waterbronnen met Kewiña-bomen in Bolivia</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/indigenous-women-restore-water-sources-with-kewina-trees-in-bolivia-17956524933953v7n50s8k.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:21:35.774Z</news:publication_date>
-      <news:title>Indigenous women restore water sources with Kewiña trees in Bolivia</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/indigene-frauen-stellen-wasserquellen-mit-kewina-baumen-in-bolivien-wieder-her-17956524933953v7n50s8k.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:21:35.774Z</news:publication_date>
-      <news:title>Indigene Frauen stellen Wasserquellen mit Kewiña-Bäumen in Bolivien wieder her</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/des-femmes-autochtones-restaurent-les-sources-d-eau-avec-des-arbres-kewina-en-bo-17956524933953v7n50s8k.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:21:35.774Z</news:publication_date>
-      <news:title>Des femmes autochtones restaurent les sources d'eau avec des arbres Kewiña en Bolivie</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/mujeres-indigenas-restauran-fuentes-de-agua-con-arboles-kewina-en-bolivia-17956524933953v7n50s8k.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:21:35.774Z</news:publication_date>
-      <news:title>Mujeres indígenas restauran fuentes de agua con árboles Kewiña en Bolivia</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/scholen-brengen-inheems-voedsel-zoals-bizonvlees-en-blauwe-mais-terug-op-het-men-1795652460679k37poolr1.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:21:02.549Z</news:publication_date>
-      <news:title>Scholen brengen inheems voedsel zoals bizonvlees en blauwe maïs terug op het menu</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/schools-bring-indigenous-foods-like-bison-meat-and-blue-corn-back-to-menus-1795652460679k37poolr1.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:21:02.549Z</news:publication_date>
-      <news:title>Schools bring indigenous foods like bison meat and blue corn back to menus</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/schulen-bringen-indigene-lebensmittel-wie-bisonenfleisch-und-blauen-mais-zuruck-1795652460679k37poolr1.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:21:02.549Z</news:publication_date>
-      <news:title>Schulen bringen indigene Lebensmittel wie Bisonenfleisch und blauen Mais zurück auf den Speiseplan</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/les-ecoles-reintroduisent-les-aliments-autochtones-comme-la-viande-de-bison-et-l-1795652460679k37poolr1.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:21:02.549Z</news:publication_date>
-      <news:title>Les écoles réintroduisent les aliments autochtones comme la viande de bison et le maïs bleu au menu</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/las-escuelas-reintroducen-alimentos-indigenas-como-carne-de-bisonte-y-maiz-azul-1795652460679k37poolr1.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:21:02.549Z</news:publication_date>
-      <news:title>Las escuelas reintroducen alimentos indígenas como carne de bisonte y maíz azul en el menú</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/dierenasiels-trakteren-adoptiehuisdieren-op-thanksgiving-feestmaal-1795652436106s9ovp8rbp.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:20:37.664Z</news:publication_date>
-      <news:title>Dierenasiels trakteren adoptiehuisdieren op Thanksgiving-feestmaal</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/animal-shelters-treat-adoptable-pets-to-thanksgiving-feast-1795652436106s9ovp8rbp.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:20:37.664Z</news:publication_date>
-      <news:title>Animal shelters treat adoptable pets to Thanksgiving feast</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/tierheime-verwohnen-adoptionshaustiere-mit-thanksgiving-festmahl-1795652436106s9ovp8rbp.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:20:37.664Z</news:publication_date>
-      <news:title>Tierheime verwöhnen Adoptionshaustiere mit Thanksgiving-Festmahl</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/les-refuges-pour-animaux-regalent-les-animaux-de-compagnie-adoptes-d-un-festin-d-1795652436106s9ovp8rbp.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:20:37.664Z</news:publication_date>
-      <news:title>Les refuges pour animaux régalent les animaux de compagnie adoptés d'un festin de Thanksgiving</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/los-refugios-de-animales-agasajan-a-las-mascotas-adoptadas-en-la-comida-de-accio-1795652436106s9ovp8rbp.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:20:37.664Z</news:publication_date>
-      <news:title>Los refugios de animales agasajan a las mascotas adoptadas en la comida de Acción de Gracias</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/nl/sinaasappelschillen-veranderen-kale-grond-in-costa-rica-in-bos-1795652408649vig9gr8wt.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>nl</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:20:10.365Z</news:publication_date>
-      <news:title>Sinaasappelschillen veranderen kale grond in Costa Rica in bos</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/en/orange-peels-transform-barren-land-into-forest-in-costa-rica-1795652408649vig9gr8wt.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:20:10.365Z</news:publication_date>
-      <news:title>Orange peels transform barren land into forest in Costa Rica</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/de/orangenschalen-verwandeln-kahles-land-in-costa-rica-in-wald-1795652408649vig9gr8wt.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>de</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:20:10.365Z</news:publication_date>
-      <news:title>Orangenschalen verwandeln kahles Land in Costa Rica in Wald</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/fr/des-ecorces-d-orange-transforment-des-terres-denudees-en-foret-au-costa-rica-1795652408649vig9gr8wt.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>fr</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:20:10.365Z</news:publication_date>
-      <news:title>Des écorces d'orange transforment des terres dénudées en forêt au Costa Rica</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://brightnews.online/articles/es/cascaras-de-naranja-transforman-tierra-arida-en-bosque-en-costa-rica-1795652408649vig9gr8wt.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>BrightNews</news:name>
-        <news:language>es</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26T00:20:10.365Z</news:publication_date>
-      <news:title>Cáscaras de naranja transforman tierra árida en bosque en Costa Rica</news:title>
     </news:news>
   </url>
 </urlset>

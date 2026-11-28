@@ -6,13 +6,20 @@
         <atom:link href="https://brightnews.online/feed-fr.xml" rel="self" type="application/rss+xml"/>
         <description>Chaque jour une sélection fraîche de bonnes nouvelles du monde entier. Bonne lecture !</description>
         <language>fr-fr</language>
-        <lastBuildDate>Sat, 28 Nov 2026 00:19:12 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 28 Nov 2026 12:18:20 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Votre dose quotidienne de positivité</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>L&apos;asphalte coloré rend la circulation plus sûre</title>
+            <link>https://brightnews.online/articles/fr/l-asphalte-colore-rend-la-circulation-plus-sure-1795868290147kmi5ltr8n.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/fr/l-asphalte-colore-rend-la-circulation-plus-sure-1795868290147kmi5ltr8n.html</guid>
+            <pubDate>Sat, 28 Nov 2026 12:18:20 GMT</pubDate>
+            <description>De nouvelles études menées sur des carrefours américains montrent que l&apos;art routier coloré, combiné à d&apos;autres mesures de sécurité, permet aux automobilistes de circuler plus en sécurité. Ainsi, les passages pour piétons colorés et les pistes cyclables colorées ont entraîné une réduction de 32 % des accidents automobiles et de 52 % des accidents impliquant des piétons et des cyclistes....</description>
+        </item>
         <item>
             <title>Les persévérants et les communautés généreuses font l&apos;actualité</title>
             <link>https://brightnews.online/articles/fr/les-perseverants-et-les-communautes-genereuses-font-l-actualite-dg-20261127-dag.html</link>
@@ -237,14 +244,6 @@
             <pubDate>Wed, 25 Nov 2026 00:24:10 GMT</pubDate>
             <description>Il y a près de 100 millions d&apos;années, des sauterelles aux pattes longues et fines ont peut-être marché sur l&apos;eau, comme les patineurs d&apos;aujourd&apos;hui. C&apos;est ce que révèlent des insectes fossiles magnifiquement préservés dans l&apos;ambre. Leurs pattes et leurs pieds présentent des poils particuliers et des excroissances en forme de feuille qui, selon les chercheurs, les aidaient à maintenir l&apos;équilibre..</description>
             <enclosure url="https://media.sciencenews.org/wp-content/uploads/sites/2/2026/11/112426_JB_grasshoppers_main.jpg?w=800" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Des bénévoles sauvent des lettres centenaires avec le projet Cursive for a Cause</title>
-            <link>https://brightnews.online/articles/fr/des-benevoles-sauvent-des-lettres-centenaires-avec-le-projet-cursive-for-a-cause-1795566226632e672kng07.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/fr/des-benevoles-sauvent-des-lettres-centenaires-avec-le-projet-cursive-for-a-cause-1795566226632e672kng07.html</guid>
-            <pubDate>Wed, 25 Nov 2026 00:23:47 GMT</pubDate>
-            <description>Depuis la disparition de l&apos;écriture cursive des programmes scolaires américains en 2010, la capacité à la lire risque de s&apos;effacer. À Bowling Green State University, des bénévoles AmeriCorps s&apos;y opposent avec le projet « Cursive for a Cause ». Ils déchiffrent des lettres manuscrites, des journaux intimes et des documents des archives universitaires, rédigés pour la plupart par des femmes,...</description>
-            <enclosure url="https://cdn.prod.website-files.com/6ac7f2e22eaacd2873850a17/6b04b0c258e39764804b40f7_6b04b0c1208d13d06c68736f_cursive-dying-art-form-volunteers-letters-featured.webp" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

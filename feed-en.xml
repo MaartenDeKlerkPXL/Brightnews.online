@@ -6,13 +6,20 @@
         <atom:link href="https://brightnews.online/feed-en.xml" rel="self" type="application/rss+xml"/>
         <description>A fresh pick of good news from around the world, every day. Enjoy the read!</description>
         <language>en-us</language>
-        <lastBuildDate>Sat, 28 Nov 2026 00:19:12 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 28 Nov 2026 12:18:20 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Your Daily Dose of Positivity</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Colorful road asphalt makes traffic safer</title>
+            <link>https://brightnews.online/articles/en/colorful-road-asphalt-makes-traffic-safer-1795868290147kmi5ltr8n.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/en/colorful-road-asphalt-makes-traffic-safer-1795868290147kmi5ltr8n.html</guid>
+            <pubDate>Sat, 28 Nov 2026 12:18:20 GMT</pubDate>
+            <description>New studies of American intersections show that colorful road art, combined with other safety measures, helps motorists drive more safely. Colorful crosswalks and bike lanes resulted in 32% fewer car accidents and 52% fewer accidents involving pedestrians and cyclists. One of the studies also found something striking about driver behavior.</description>
+        </item>
         <item>
             <title>Perseverance and generous communities shape the news</title>
             <link>https://brightnews.online/articles/en/perseverance-and-generous-communities-shape-the-news-dg-20261127-dag.html</link>
@@ -237,14 +244,6 @@
             <pubDate>Wed, 25 Nov 2026 00:24:10 GMT</pubDate>
             <description>Nearly 100 million years ago, grasshoppers with long, spindly legs may have walked on water, much like today&apos;s water striders. This emerges from fossil insects beautifully preserved in amber. Their legs and feet display distinctive hairs and leaf-shaped protrusions that, according to researchers, helped maintain balance and glide across the water surface by exploiting surface tension. The grasshop</description>
             <enclosure url="https://media.sciencenews.org/wp-content/uploads/sites/2/2026/11/112426_JB_grasshoppers_main.jpg?w=800" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Volunteers rescue centuries-old letters with Cursive for a Cause project</title>
-            <link>https://brightnews.online/articles/en/volunteers-rescue-centuries-old-letters-with-cursive-for-a-cause-project-1795566226632e672kng07.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/en/volunteers-rescue-centuries-old-letters-with-cursive-for-a-cause-project-1795566226632e672kng07.html</guid>
-            <pubDate>Wed, 25 Nov 2026 00:23:47 GMT</pubDate>
-            <description>Since cursive writing disappeared from American educational standards in 2010, the ability to read it has been at risk. At Bowling Green State University, AmeriCorps volunteers are fighting back with the project &apos;Cursive for a Cause&apos;. They decipher handwritten letters, diaries and documents from the university archive, many written by women, and convert them into typed text. In this way,...</description>
-            <enclosure url="https://cdn.prod.website-files.com/6ac7f2e22eaacd2873850a17/6b04b0c258e39764804b40f7_6b04b0c1208d13d06c68736f_cursive-dying-art-form-volunteers-letters-featured.webp" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

@@ -6,13 +6,20 @@
         <atom:link href="https://brightnews.online/feed-es.xml" rel="self" type="application/rss+xml"/>
         <description>Cada día una selección fresca de buenas noticias de todo el mundo. ¡Feliz lectura!</description>
         <language>es-es</language>
-        <lastBuildDate>Sat, 28 Nov 2026 00:19:12 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 28 Nov 2026 12:18:20 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Tu dosis diaria de positividad</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>El asfalto colorido hace el tráfico más seguro</title>
+            <link>https://brightnews.online/articles/es/el-asfalto-colorido-hace-el-trafico-mas-seguro-1795868290147kmi5ltr8n.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/es/el-asfalto-colorido-hace-el-trafico-mas-seguro-1795868290147kmi5ltr8n.html</guid>
+            <pubDate>Sat, 28 Nov 2026 12:18:20 GMT</pubDate>
+            <description>Nuevos estudios sobre cruces estadounidenses demuestran que el arte vial colorido, combinado con otras medidas de seguridad, permite que los automovilistas conduzcan de manera más segura. Los pasos de peatones y carriles para bicicletas coloridos redujeron los accidentes automovilísticos en un 32% y los accidentes que involucraban a peatones y ciclistas en un 52%. Uno de los estudios encontró adem</description>
+        </item>
         <item>
             <title>Los perseverantes y comunidades generosas definen las noticias del día</title>
             <link>https://brightnews.online/articles/es/los-perseverantes-y-comunidades-generosas-definen-las-noticias-del-dia-dg-20261127-dag.html</link>
@@ -237,14 +244,6 @@
             <pubDate>Wed, 25 Nov 2026 00:24:10 GMT</pubDate>
             <description>Hace casi 100 millones de años, saltamontes con patas largas y delgadas posiblemente caminaban sobre el agua, como los patinadores actuales. Así lo demuestra un conjunto de insectos fósiles magníficamente conservados en ámbar. Sus patas y pies presentan pelos especiales y apéndices en forma de hoja que, según los investigadores, ayudaban a mantener el equilibrio y a deslizarse sobre la...</description>
             <enclosure url="https://media.sciencenews.org/wp-content/uploads/sites/2/2026/11/112426_JB_grasshoppers_main.jpg?w=800" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Voluntarios rescatan cartas centenarias con el proyecto Cursive for a Cause</title>
-            <link>https://brightnews.online/articles/es/voluntarios-rescatan-cartas-centenarias-con-el-proyecto-cursive-for-a-cause-1795566226632e672kng07.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/es/voluntarios-rescatan-cartas-centenarias-con-el-proyecto-cursive-for-a-cause-1795566226632e672kng07.html</guid>
-            <pubDate>Wed, 25 Nov 2026 00:23:47 GMT</pubDate>
-            <description>Desde que la escritura cursiva desapareció de los estándares educativos estadounidenses en 2010, la habilidad para leerla corre el riesgo de extinguirse. En Bowling Green State University, voluntarios de AmeriCorps se oponen a esto con el proyecto «Cursive for a Cause». Descifran cartas manuscritas, diarios y documentos del archivo universitario, muchos escritos por mujeres, y los convierten en te</description>
-            <enclosure url="https://cdn.prod.website-files.com/6ac7f2e22eaacd2873850a17/6b04b0c258e39764804b40f7_6b04b0c1208d13d06c68736f_cursive-dying-art-form-volunteers-letters-featured.webp" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>

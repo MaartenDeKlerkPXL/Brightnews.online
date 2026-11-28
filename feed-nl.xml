@@ -6,13 +6,20 @@
         <atom:link href="https://brightnews.online/feed-nl.xml" rel="self" type="application/rss+xml"/>
         <description>Elke dag een verse selectie goed nieuws uit de hele wereld, veel leesplezier!</description>
         <language>nl-nl</language>
-        <lastBuildDate>Sat, 28 Nov 2026 00:19:12 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 28 Nov 2026 12:18:20 GMT</lastBuildDate>
         <ttl>60</ttl>
         <image>
             <url>https://brightnews.online/assets/brightnews-logo.png</url>
             <title>BrightNews | Jouw Dagelijkse Dosis Positiviteit</title>
             <link>https://brightnews.online/</link>
         </image>
+        <item>
+            <title>Kleurrijk wegasfalt maakt verkeer veiliger</title>
+            <link>https://brightnews.online/articles/nl/kleurrijk-wegasfalt-maakt-verkeer-veiliger-1795868290147kmi5ltr8n.html</link>
+            <guid isPermaLink="true">https://brightnews.online/articles/nl/kleurrijk-wegasfalt-maakt-verkeer-veiliger-1795868290147kmi5ltr8n.html</guid>
+            <pubDate>Sat, 28 Nov 2026 12:18:20 GMT</pubDate>
+            <description>Nieuwe studies naar Amerikaanse kruispunten tonen aan dat kleurrijke wegkunst, gecombineerd met andere veiligheidsmaatregelen, automobilisten veiliger laat rijden. Zo zorgden kleurrijke zebrapaden en fietsstroken voor 32% minder auto-ongelukken en 52% minder ongevallen waarbij voetgangers en fietsers betrokken waren. Een van de studies vond daarnaast iets opvallends over het rijgedrag van automobi</description>
+        </item>
         <item>
             <title>Doorzetters en gulle gemeenschappen bepalen het nieuws</title>
             <link>https://brightnews.online/articles/nl/doorzetters-en-gulle-gemeenschappen-bepalen-het-nieuws-dg-20261127-dag.html</link>
@@ -237,14 +244,6 @@
             <pubDate>Wed, 25 Nov 2026 00:24:10 GMT</pubDate>
             <description>Bijna 100 miljoen jaar geleden liepen sprinkhanen met lange, spillepoterige poten mogelijk over water, net als de hedendaagse schaatsenrijders. Dat blijkt uit fossiele insecten die prachtig bewaard zijn gebleven in barnsteen. Hun poten en voeten vertonen bijzondere haartjes en bladvormige uitsteeksels, die volgens onderzoekers hielpen om evenwicht te bewaren en over het wateroppervlak te glijden d</description>
             <enclosure url="https://media.sciencenews.org/wp-content/uploads/sites/2/2026/11/112426_JB_grasshoppers_main.jpg?w=800" type="image/jpeg" length="0"/>
-        </item>
-        <item>
-            <title>Vrijwilligers redden eeuwenoude brieven met project Cursive for a Cause</title>
-            <link>https://brightnews.online/articles/nl/vrijwilligers-redden-eeuwenoude-brieven-met-project-cursive-for-a-cause-1795566226632e672kng07.html</link>
-            <guid isPermaLink="true">https://brightnews.online/articles/nl/vrijwilligers-redden-eeuwenoude-brieven-met-project-cursive-for-a-cause-1795566226632e672kng07.html</guid>
-            <pubDate>Wed, 25 Nov 2026 00:23:47 GMT</pubDate>
-            <description>Sinds cursief schrift in 2010 uit de Amerikaanse lesstandaarden verdween, dreigt de vaardigheid om het te lezen te verdwijnen. Aan Bowling Green State University zetten AmeriCorps-vrijwilligers zich hiertegen af met het project &apos;Cursive for a Cause&apos;. Zij ontcijferen handgeschreven brieven, dagboeken en documenten uit het universiteitsarchief, veelal geschreven door vrouwen, en zetten deze om in ge</description>
-            <enclosure url="https://cdn.prod.website-files.com/6ac7f2e22eaacd2873850a17/6b04b0c258e39764804b40f7_6b04b0c1208d13d06c68736f_cursive-dying-art-form-volunteers-letters-featured.webp" type="image/jpeg" length="0"/>
         </item>
     </channel>
 </rss>
